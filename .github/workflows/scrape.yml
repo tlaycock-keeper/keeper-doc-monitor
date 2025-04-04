@@ -2,8 +2,11 @@ name: Daily Keeper Doc Monitor
 
 on:
   schedule:
-    - cron: '0 12 * * *'  # Runs daily at 12:00 UTC
-  workflow_dispatch:       # Manual trigger
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write  # 💥 Needed to allow git push
 
 jobs:
   run-spider:
@@ -13,7 +16,8 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
         with:
-          persist-credentials: true  # Required for pushing back to GitHub
+          persist-credentials: true
+          token: ${{ secrets.GITHUB_TOKEN }}  # 💥 This authorizes the push
 
       - name: Set up Python
         uses: actions/setup-python@v4
