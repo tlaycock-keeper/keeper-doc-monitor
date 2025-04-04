@@ -1,0 +1,812 @@
+[![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F2557019839-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT53qZmRrq5%252FKeeper_600.png%3Falt%3Dmedia%26token%3D0a515169-d51f-4ca3-a458-f81394812492&width=260&dpr=4&quality=100&sign=ce896b6e&sv=2)![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F2557019839-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
+no-
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+
+Ask or search...
+
+`Ctrl``K`
+
+KeeperPAM and Secrets Manager
+
+[Docs Home](https://docs.keeper.io/en/privileged-access-
+manager/tunnels/setting-up-tunnels?fallback=true)[Keeper Connection
+Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
+access-manager/tunnels/setting-up-tunnels?fallback=true)[User
+Guides](https://docs.keeper.io/en/user-guides/privileged-access-
+manager/tunnels/setting-up-tunnels?fallback=true)[Release
+Notes](https://docs.keeper.io/en/release-notes/privileged-access-
+manager/tunnels/setting-up-tunnels?fallback=true)[Enterprise
+Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
+manager/tunnels/setting-up-tunnels?fallback=true)[MSP
+Guide](https://docs.keeper.io/en/msp-guide/privileged-access-
+manager/tunnels/setting-up-tunnels?fallback=true)[SSO Connect
+Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
+manager/tunnels/setting-up-tunnels?fallback=true)[KeeperPAM and Secrets
+Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
+manager/tunnels/setting-up-tunnels?fallback=true)[SSO Connect On-
+Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
+manager/tunnels/setting-up-tunnels?fallback=true)[Keeper
+Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
+manager/tunnels/setting-up-tunnels?fallback=true)
+
+KeeperPAM and Secrets Manager
+
+[Docs Home](https://docs.keeper.io/en/privileged-access-
+manager/tunnels/setting-up-tunnels?fallback=true)[Keeper Connection
+Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
+access-manager/tunnels/setting-up-tunnels?fallback=true)[User
+Guides](https://docs.keeper.io/en/user-guides/privileged-access-
+manager/tunnels/setting-up-tunnels?fallback=true)[Release
+Notes](https://docs.keeper.io/en/release-notes/privileged-access-
+manager/tunnels/setting-up-tunnels?fallback=true)[Enterprise
+Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
+manager/tunnels/setting-up-tunnels?fallback=true)[MSP
+Guide](https://docs.keeper.io/en/msp-guide/privileged-access-
+manager/tunnels/setting-up-tunnels?fallback=true)[SSO Connect
+Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
+manager/tunnels/setting-up-tunnels?fallback=true)[KeeperPAM and Secrets
+Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
+manager/tunnels/setting-up-tunnels?fallback=true)[SSO Connect On-
+Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
+manager/tunnels/setting-up-tunnels?fallback=true)[Keeper
+Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
+manager/tunnels/setting-up-tunnels?fallback=true)
+
+  * [Overview](/en/keeperpam)
+  * Privileged Access Manager
+
+    * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
+    * [Quick Start: Sandbox](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
+    * [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+      * [Architecture](/en/keeperpam/privileged-access-manager/getting-started/architecture)
+
+        * [Architecture Diagram](/en/keeperpam/privileged-access-manager/getting-started/architecture/system-architecture)
+        * [Vault Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/vault-security)
+        * [Router Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/router-security)
+        * [Gateway Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/gateway-security)
+        * [Connection and Tunnel Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/connection-and-tunnel-security)
+
+      * [KeeperPAM Licensing](/en/keeperpam/privileged-access-manager/getting-started/keeperpam-licensing)
+      * [Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-policies)
+      * [Vault Structure](/en/keeperpam/privileged-access-manager/getting-started/vault-structure)
+      * [Record Linking](/en/keeperpam/privileged-access-manager/getting-started/record-linking)
+      * [Applications](/en/keeperpam/privileged-access-manager/getting-started/applications)
+      * [Devices](/en/keeperpam/privileged-access-manager/getting-started/devices)
+      * [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+        * [Creating a Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways/one-time-access-token)
+        * [Docker Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/docker-installation)
+        * [Linux Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/linux-installation)
+        * [Windows Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/windows-installation)
+        * [Auto Updater](/en/keeperpam/privileged-access-manager/getting-started/gateways/auto-updater)
+        * [Alerts and SIEM Integration](/en/keeperpam/privileged-access-manager/getting-started/gateways/alerts-and-siem-integration)
+        * [Advanced Configuration](/en/keeperpam/privileged-access-manager/getting-started/gateways/advanced-configuration)
+
+          * [Gateway Configuration with AWS KMS](/en/keeperpam/privileged-access-manager/getting-started/gateways/advanced-configuration/gateway-configuration-with-aws-kms)
+          * [Gateway Configuration with Custom Fields](/en/keeperpam/privileged-access-manager/getting-started/gateways/advanced-configuration/gateway-configuration-with-custom-fields)
+
+      * [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
+
+        * [AWS Environment Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup)
+        * [Azure Environment Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/azure-environment-setup)
+        * [Local Environment Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/local-environment-setup)
+
+      * [PAM Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-resources)
+
+        * [PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-machine)
+
+          * [Example: Linux Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-machine/example-linux-machine)
+          * [Example: Azure Windows VM](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-machine/example-azure-windows-vm)
+
+        * [PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database)
+
+          * [Example: MySQL Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database/example-mysql-database)
+          * [Example: PostgreSQL Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database/example-postgresql-database)
+          * [Example: Microsoft SQL Server Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database/example-microsoft-sql-server-database)
+
+        * [PAM Directory](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-directory)
+        * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
+        * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
+
+      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
+
+    * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+
+      * [Rotation Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview)
+      * [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+
+        * [Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure)
+
+          * [Azure AD Users](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-ad-users)
+          * [Azure VM User Accounts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-vm-user-accounts)
+          * [Azure Managed Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database)
+
+            * [Azure SQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database/azure-sql)
+            * [Azure MySQL - Single or Flexible Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database/azure-mysql-single-or-flexible-database)
+            * [Azure MariaDB Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database/azure-mariadb-database)
+            * [Azure PostgreSQL - Single or Flexible Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database/azure-postgresql-single-or-flexible-database)
+
+          * [Azure App Secret Rotation](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-rotation)
+
+        * [AWS](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws)
+
+          * [IAM User Password](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user)
+          * [Managed Microsoft AD User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/directory-user)
+          * [EC2 Virtual Machine User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/ec2-virtual-machine-user)
+          * [IAM User Access Key](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user-access-key)
+          * [Managed Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database)
+
+            * [AWS RDS for MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mysql)
+            * [AWS RDS for SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-sql-server)
+            * [AWS RDS for PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-postgresql)
+            * [AWS RDS for MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mariadb)
+            * [AWS RDS for Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-oracle)
+
+        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
+
+          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
+          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
+          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
+          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
+          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
+
+            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
+            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
+            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
+            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
+            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
+            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
+
+        * [SaaS Accounts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
+
+          * [Okta User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/okta-user)
+          * [Snowflake User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/snowflake-user)
+          * [Rotate Credential via REST API](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/rotate-credential-via-rest-api)
+
+        * [Network Devices](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices)
+
+          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-ios-xe)
+          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-meraki)
+
+      * [Service Management](/en/keeperpam/privileged-access-manager/password-rotation/service-management)
+      * [Post-Rotation Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts)
+
+        * [Inputs and Outputs](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts/parameters)
+        * [Attaching Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts/attaching-post-rotation-scripts-to-records)
+        * [Code Examples](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts/accessing-parameters)
+
+    * [Connections](/en/keeperpam/privileged-access-manager/connections)
+
+      * [Getting Started](/en/keeperpam/privileged-access-manager/connections/getting-started)
+      * [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
+
+        * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
+        * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
+        * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
+        * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
+        * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
+        * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
+        * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+
+      * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
+
+        * [SSH Protocol - Linux Machine](/en/keeperpam/privileged-access-manager/connections/examples/ssh-protocol-linux-machine)
+        * [RDP Protocol - Azure Virtual Machine](/en/keeperpam/privileged-access-manager/connections/examples/rdp-protocol-azure-virtual-machine)
+        * [MySQL Protocol - MySQL Database](/en/keeperpam/privileged-access-manager/connections/examples/mysql-protocol-mysql-database)
+        * [PostgreSQL Protocol - PostgreSQL Database](/en/keeperpam/privileged-access-manager/connections/examples/postgresql-protocol-postgresql-database)
+
+    * [Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
+
+      * [Setting up Tunnels](/en/keeperpam/privileged-access-manager/tunnels/setting-up-tunnels)
+
+    * [Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
+
+      * [Setting up RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation/setting-up-rbi)
+
+        * [URL Patterns & Resource URL Patterns](/en/keeperpam/privileged-access-manager/remote-browser-isolation/setting-up-rbi/url-patterns-and-resource-url-patterns)
+        * [Browser Autofill](/en/keeperpam/privileged-access-manager/remote-browser-isolation/setting-up-rbi/browser-autofill)
+
+    * [Session Recording & Playback](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+    * [SSH Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
+
+      * [Integration with Git](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-git)
+
+    * [Discovery](/en/keeperpam/privileged-access-manager/discovery)
+
+      * [Discovery Basics](/en/keeperpam/privileged-access-manager/discovery/discovery-basics)
+      * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
+      * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
+
+    * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
+    * [References](/en/keeperpam/privileged-access-manager/references)
+
+      * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
+      * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
+      * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
+      * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
+      * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
+      * [Installing Docker on Linux](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux)
+      * [Creating KSM App for Rotation](/en/keeperpam/privileged-access-manager/references/creating-ksm-app-for-rotation)
+      * [Active Directory Least Privilege](/en/keeperpam/privileged-access-manager/references/active-directory-least-privilege)
+      * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
+      * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
+      * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
+      * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
+      * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
+
+  * Privilege Manager
+
+    * [Overview](/en/keeperpam/privilege-manager/overview)
+    * [Setup](/en/keeperpam/privilege-manager/setup)
+    * [Deployment](/en/keeperpam/privilege-manager/deployment)
+    * [Policies](/en/keeperpam/privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+  * [FAQs](/en/keeperpam/faqs)
+  * Secrets Manager
+
+    * [Secrets Manager Overview](/en/keeperpam/secrets-manager/overview)
+    * [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+    * [About KSM](/en/keeperpam/secrets-manager/about)
+
+      * [Architecture](/en/keeperpam/secrets-manager/about/architecture)
+      * [Terminology](/en/keeperpam/secrets-manager/about/terminology)
+      * [Security & Encryption Model](/en/keeperpam/secrets-manager/about/security-encryption-model)
+      * [One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
+      * [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+      * [Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-notation)
+      * [Event Reporting](/en/keeperpam/secrets-manager/about/event-reporting)
+      * [Field/Record Types](/en/keeperpam/secrets-manager/about/field-record-types)
+
+    * [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
+
+      * [Profile Command](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface/profile-command)
+      * [Init Command](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface/init-command)
+      * [Secret Command](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface/secret-command)
+      * [Folder Command](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface/folder-command)
+      * [Sync Command](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface/sync-command)
+      * [Exec Command](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface/exec-command)
+      * [Config Command](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface/config-command)
+      * [Version Command](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface/version-command)
+      * [Misc Commands](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface/vault-admin-commands)
+      * [Docker Container](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface/docker-container)
+      * [Custom Record Types](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface/custom-record-types)
+
+    * [Password Rotation](/en/keeperpam/secrets-manager/password-rotation)
+    * [Developer SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
+
+      * [Python SDK](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk)
+      * [Java/Kotlin SDK](/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk)
+
+        * [Record Field Classes](/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk/record-field-classes)
+
+      * [JavaScript SDK](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-sdk)
+      * [.NET SDK](/en/keeperpam/secrets-manager/developer-sdk-library/.net-sdk)
+      * [Go SDK](/en/keeperpam/secrets-manager/developer-sdk-library/golang-sdk)
+
+        * [Record Field Classes](/en/keeperpam/secrets-manager/developer-sdk-library/golang-sdk/record-field-classes)
+
+      * [PowerShell](/en/keeperpam/secrets-manager/developer-sdk-library/powershell)
+      * [Vault SDKs](/en/keeperpam/secrets-manager/developer-sdk-library/vault-sdks)
+
+    * [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+      * [Ansible](/en/keeperpam/secrets-manager/integrations/ansible)
+
+        * [Ansible Plugin](/en/keeperpam/secrets-manager/integrations/ansible/ansible-plugin)
+        * [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible/ansible-tower)
+
+      * [AWS CLI Credential Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-process)
+      * [AWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+      * [AWS KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+      * [Azure DevOps Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
+      * [Azure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Bitbucket Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
+      * [Docker Image](/en/keeperpam/secrets-manager/integrations/docker-image)
+      * [Docker Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
+      * [Docker Writer Image](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
+      * [Entrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
+      * [GCP Secret Manager](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Git - Sign Commits with SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
+      * [GitHub Actions](/en/keeperpam/secrets-manager/integrations/github-actions)
+      * [GitLab](/en/keeperpam/secrets-manager/integrations/gitlab-plugin)
+      * [Hashicorp Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
+      * [Heroku](/en/keeperpam/secrets-manager/integrations/heroku)
+      * [Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
+      * [Keeper Connection Manager](/en/keeperpam/secrets-manager/integrations/keeper-connection-manager)
+      * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
+      * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
+      * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
+      * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
+      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
+      * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
+      * [Terraform Plugin](/en/keeperpam/secrets-manager/integrations/terraform)
+
+        * [Terraform Registry](https://registry.terraform.io/providers/Keeper-Security/secretsmanager/latest/docs/data-sources/address)
+
+      * [Windows Credential Manager](/en/keeperpam/secrets-manager/integrations/windows-credential-manager)
+      * [XSOAR](/en/keeperpam/secrets-manager/integrations/xsoar)
+
+    * [Troubleshooting](/en/keeperpam/secrets-manager/troubleshooting)
+  * Commander CLI
+
+    * [Commander Overview](/en/keeperpam/commander-cli/overview)
+    * [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+
+      * [CLI Installation on Windows](/en/keeperpam/commander-cli/commander-installation-setup/installation-on-windows)
+      * [CLI Installation on macOS](/en/keeperpam/commander-cli/commander-installation-setup/installation-on-mac)
+      * [CLI Installation on Linux](/en/keeperpam/commander-cli/commander-installation-setup/installation-on-linux)
+      * [Python Developer Setup](/en/keeperpam/commander-cli/commander-installation-setup/developer-mode)
+      * [.NET Developer Setup](/en/keeperpam/commander-cli/commander-installation-setup/net-developer-sdk)
+      * [PowerShell Module](/en/keeperpam/commander-cli/commander-installation-setup/installation-on-powershell)
+      * [Logging in](/en/keeperpam/commander-cli/commander-installation-setup/logging-in)
+      * [Configuration and Usage](/en/keeperpam/commander-cli/commander-installation-setup/configuration)
+
+        * [AWS Secrets Manager](/en/keeperpam/commander-cli/commander-installation-setup/configuration/aws-secrets-manager)
+        * [AWS Key Management Service](/en/keeperpam/commander-cli/commander-installation-setup/configuration/aws-key-management-service)
+
+      * [Automating with Windows Task](/en/keeperpam/commander-cli/commander-installation-setup/automating-with-windows-task)
+      * [Automating with AWS Lambda](/en/keeperpam/commander-cli/commander-installation-setup/using-commander-with-aws-lambda)
+      * [Uninstallation](/en/keeperpam/commander-cli/commander-installation-setup/uninstallation)
+
+    * [Command Reference](/en/keeperpam/commander-cli/command-reference)
+
+      * [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
+
+        * [Import/Export Commands](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/import-export-commands)
+        * [CyberArk Import](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/cyberark-import)
+        * [LastPass Data Import](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/lastpass-import)
+        * [Delinea / Thycotic Secret Server Import](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/delinea-thycotic-secret-server-import)
+        * [Keepass Import](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/keepass-import)
+        * [ManageEngine Import](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/manageengine-import)
+        * [Myki Import](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/myki-import)
+        * [Proton Pass Import](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/proton-pass-import)
+        * [CSV Import](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/csv-import)
+        * [JSON Import](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/json-import)
+
+      * [Reporting Commands](/en/keeperpam/commander-cli/command-reference/reporting-commands)
+
+        * [Report Types](/en/keeperpam/commander-cli/command-reference/reporting-commands/report-types)
+
+      * [Enterprise Management Commands](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands)
+
+        * [Creating and Inviting Users](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/creating-and-inviting-users)
+        * [Compliance Commands](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/compliance-commands)
+        * [Breachwatch Commands](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/breachwatch-commands)
+        * [SCIM Push Configuration](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/scim-push-configuration)
+
+      * [Record Commands](/en/keeperpam/commander-cli/command-reference/record-commands)
+
+        * [Record Type Commands](/en/keeperpam/commander-cli/command-reference/record-commands/record-type-commands)
+        * [Creating Record Types](/en/keeperpam/commander-cli/command-reference/record-commands/default-record-types)
+
+      * [Sharing Commands](/en/keeperpam/commander-cli/command-reference/sharing-commands)
+      * [KeeperPAM Commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
+      * [Connection Commands](/en/keeperpam/commander-cli/command-reference/connection-commands)
+
+        * [SSH](/en/keeperpam/commander-cli/command-reference/connection-commands/ssh)
+        * [SSH Agent](/en/keeperpam/commander-cli/command-reference/connection-commands/ssh-agent)
+        * [RDP](/en/keeperpam/commander-cli/command-reference/connection-commands/rdp)
+        * [Connect Command](/en/keeperpam/commander-cli/command-reference/connection-commands/connection-to-hosts)
+        * [SFTP Sync](/en/keeperpam/commander-cli/command-reference/connection-commands/sftp-sync)
+
+      * [Secrets Manager Commands](/en/keeperpam/commander-cli/command-reference/secrets-manager-commands)
+      * [MSP Management Commands](/en/keeperpam/commander-cli/command-reference/msp-management-commands)
+      * [Miscellaneous Commands](/en/keeperpam/commander-cli/command-reference/misc-commands)
+      * [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
+
+        * [Password Rotation Commands](/en/keeperpam/commander-cli/command-reference/plugins/password-rotation)
+        * [AWS Plugin](/en/keeperpam/commander-cli/command-reference/plugins/aws-plugin)
+        * [Azure Plugin](/en/keeperpam/commander-cli/command-reference/plugins/azure-plugin)
+        * [Microsoft SQL Server Plugin](/en/keeperpam/commander-cli/command-reference/plugins/microsoft-sql-server-plugin)
+        * [MySQL Plugin](/en/keeperpam/commander-cli/command-reference/plugins/mysql-plugin)
+        * [Oracle Plugin](/en/keeperpam/commander-cli/command-reference/plugins/oracle-plugin)
+        * [PostgreSQL Plugin](/en/keeperpam/commander-cli/command-reference/plugins/postgresql-plugin)
+        * [PSPasswd Plugin](/en/keeperpam/commander-cli/command-reference/plugins/pspasswd-plugin)
+        * [SSH Plugin](/en/keeperpam/commander-cli/command-reference/plugins/ssh-plugin)
+        * [Unix Passwd Plugin](/en/keeperpam/commander-cli/command-reference/plugins/unix-passwd-plugin)
+        * [Windows Plugin](/en/keeperpam/commander-cli/command-reference/plugins/windows-plugin)
+        * [Active Directory Plugin](/en/keeperpam/commander-cli/command-reference/plugins/active-directory-plugin)
+        * [Automatic Execution](/en/keeperpam/commander-cli/command-reference/plugins/automatic-execution)
+
+    * [Service Mode REST API](/en/keeperpam/commander-cli/service-mode-rest-api)
+    * [Troubleshooting](/en/keeperpam/commander-cli/troubleshooting-commander-cli)
+
+[Powered by
+GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
+
+On this page
+
+  * Overview 
+  * Prerequisites
+  * Tunnel Enforcement Policies
+  * Installing the Keeper Gateway
+  * PAM Configuration
+  * PAM Machine, PAM Database, or PAM Directory
+  * PAM Settings - Tunnel Settings
+  * Starting a Tunnel
+  * Using the Tunnel
+  * Commander CLI
+  * Tunnels versus Connections
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=59GJPlGc3sR522Fh9ovD&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
+
+# Setting up Tunnels
+
+Setting up Tunnels in your Desktop Vault
+
+[PreviousTunnels](/en/keeperpam/privileged-access-manager/tunnels)[NextRemote
+Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-
+isolation)
+
+Last updated 1 month ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+##
+
+Overview
+
+**KeeperPAM Tunnels** provide secure, ephemeral connections for accessing
+infrastructure without requiring a direct network path to the target system.
+They enable just-in-time access by establishing encrypted tunnels for RDP,
+SSH, LDAPS, databases, and other protocols. Users can authenticate through the
+KeeperPAM platform, which brokers the connection and ensures strict policy
+enforcement.
+
+An active license is required in order to use the features available with
+KeeperPAM. This license is available for both business and enterprise
+customers.
+
+  *   *   * 
+
+##
+
+Prerequisites
+
+Tunnels are available in the Keeper Desktop application and Keeper Commander
+CLI.
+
+Prior to configuring Tunnels, make sure to have the following:
+
+###
+
+Tunnel Enforcement Policies
+
+On the Admin Console, the following Enforcement Policies affect user's
+permissions to use Keeper Tunnels and need to be enabled.
+
+Enforcement policies for KeeperPAM are managed in the Keeper Admin Console
+under **Admin** > **Roles** > **Enforcement Policies** > **Privileged Access
+Manager**.
+
+Enforcement Policy
+
+Commander Enforcement Policy
+
+Definition
+
+Can configure tunnel settings
+
+Copy
+
+    
+    
+    ALLOW_CONFIGURE_PAM_TUNNELING_SETTINGS
+
+Allow users to configure Tunnel settings on PAM Machine, PAM Directory, PAM
+Database and PAM Configuration Records Types
+
+Can start tunnels
+
+Copy
+
+    
+    
+    ALLOW_LAUNCH_PAM_TUNNELS
+
+Allow users to start tunnels on PAM Machine, PAM Directory and PAM Database
+Record Types
+
+Copy
+
+    
+    
+    enterprise-role "My Role" --enforcement "ALLOW_CONFIGURE_PAM_TUNNELING_SETTINGS":true
+    enterprise-role "My Role" --enforcement "ALLOW_LAUNCH_PAM_TUNNELS":true
+
+####
+
+Enforcement Policy Use Cases
+
+If a user should only have access to start tunnels and not configuring
+tunnels, then only "Can start tunnels" policy should be enabled for the user.
+
+In addition to starting tunnels, If a user should also have access to
+configure tunnels, then "Can configure tunnel settings" and "Can Start
+tunnels" should be enabled for the user.
+
+###
+
+Installing the Keeper Gateway
+
+The Keeper Gateway is a hosted agentless service that is installed on the
+customer's network to enabled zero-trust access to target infrastructure.
+Typically this service is installed on a Linux or Docker environment in each
+of the networks that requires access.
+
+For more details on installing and setting up your gateway, visit this
+[page](/en/keeperpam/privileged-access-manager/getting-started/gateways).
+
+###
+
+PAM Configuration
+
+The **PAM Configuration** contains essential information of your target
+infrastructure, settings and [Keeper Gateway](/en/keeperpam/privileged-access-
+manager/getting-started/gateways). Setting up a PAM Configuration for your
+infrastructure is **required**. For more information on creating and
+configuring the PAM Configuration, visit this [page](/en/keeperpam/privileged-
+access-manager/getting-started/pam-configuration).
+
+###
+
+PAM Machine, PAM Database, or PAM Directory
+
+**Keeper Tunnel** is a secure, encrypted TCP/IP connection established between
+your vault client to the target endpoint. The target endpoint needs to be
+defined on one of the following PAM Record types:
+
+PAM Record Type
+
+Target Endpoint type
+
+Windows/MacOS/Linux Machines, EC2 Instances, Azure VMs
+
+MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
+
+Active Directory, OpenLDAP
+
+Depending on your target endpoint, visit the corresponding PAM Record Type
+page for more information on setup.
+
+##
+
+PAM Settings - Tunnel Settings
+
+After creating a PAM Record Type (PAM Machine, PAM Database, or PAM Directory)
+with your target endpoint, navigate to the Tunnel Section on the PAM Settings
+screen by:
+
+  1. Editing the PAM Record
+
+  2. Clicking on "Set Up" in the PAM Settings section
+
+  3. Navigate to the "Tunnel" section in the prompted window
+
+After navigating to the Tunnel Section on the PAM Settings screen. The
+following table lists all the configurable fields for Tunnels:
+
+Field
+
+Definition
+
+PAM Configuration
+
+**Required**
+
+This is the PAM Configuration that contains the details of your target
+infrastructure and provides access to the target configured on the PAM Record
+
+Enable Tunnel
+
+**Required** When checked, enable tunnels for this record
+
+Reuse Last Port
+
+When checked, the last used tunnel port will be reused. This ensures that the
+port number doesn't change every time.
+
+Tunneling Port
+
+The port which is used to connect from the Keeper Gateway to the target
+infrastructure. If not specified, the gateway will use the "rotation port"
+specified in the Keeper record view. If the specified port is in use, Tunnels
+will fail to start.
+
+The following image shows a PAM Machine record where:
+
+  * Tunnel is enabled
+
+  * Tunnel will be open on localhost to the remote server port 3306
+
+  * Subsequent tunnels will use the same local port
+
+Once tunnels have been configured on the PAM Record, your PAM Record will have
+the "Start Tunnel" button:
+
+##
+
+Starting a Tunnel
+
+Once tunnels have been configured on the PAM Record, click on "Start Tunnel"
+button to start a tunnel. The local port number is selected in this case as
+49644. Subsequent tunnels for this resource will use the same local port and
+tunnel.
+
+##
+
+Using the Tunnel
+
+In the above screenshots, the target endpoint, a MySQL Database running in the
+AWS Cloud, was defined and configured on a PAM Machine record. After
+configuring the tunnel settings, a tunnel has been started on local hostname
+`127.0.0.1` and local port `59644`.
+
+This MySQL Database can then be accessed by using a native application of
+choice. For example, the MySQL Workbench tool can be used to access the
+database:
+
+Likewise, using the CLI on the local device can initiate a connection to the
+database using this command:
+
+Copy
+
+    
+    
+    mysql --host=127.0.0.1 --port=59644 --user=admin --password
+
+##
+
+Commander CLI
+
+[Keeper Commander](/en/keeperpam/commander-cli/overview) provides Tunneling
+capabilities in addition to using the Keeper Desktop UI.
+
+Related commands:
+
+  * [`pam tunnel`](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
+
+####
+
+Example:
+
+Copy
+
+    
+    
+    My Vault> pam tunnel start s0W1v6R4SUTJYMlu4jTZw
+    Establishing tunnel between Commander and Gateway. Please wait...
+    
+    +------------------------------------------------------------------+
+    | Endpoint pbxV4snkAP9KGCUhSb6aQ==: Listening on: 127.0.0.1:49152 |
+    +------------------------------------------------------------------+
+    View all open tunnels   : pam tunnel list
+    Tail logs on open tunnel: pam tunnel tail pbxV4snkAP9KGCUhSb6aQ==
+    Stop a tunnel           : pam tunnel stop pbxV4snkAP9KGCUhSb6aQ==
+
+##
+
+Tunnels versus Connections
+
+A tunnel provides a path from the user's local device to the target
+infrastructure using end-to-end encryption. For security reasons, Keeper does
+not intercept or interfere in the low level communications. Therefore, any
+authentication required for a protocol, such as a password or SSH key must be
+available to the user on their local device. Keeper does not intercept the
+protocol layer.
+
+If tunnels are provided to users along with the necessary credentials, we
+recommend automatic rotation of the credential to ensure that the credentials
+are ephemeral and invalidated on a scheduled basis. For more information about
+rotation, see the [Password Rotation](/en/keeperpam/secrets-manager/password-
+rotation) section.
+
+KeeperPAM provides two methods of accessing remote infrastructure without the
+need to share credentials:
+
+  * [Connections](/en/keeperpam/privileged-access-manager/connections) to establish interactive sessions across many different protocols
+
+  * [Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-isolation) with Autofill to establish web-based interactive sessions
+
+Tunnels can also be enabled on the  using the `enterprise-role` command:
+
+[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
+
+[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database)
+
+[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-directory)
+
+[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
+manager-commands#overview)
+
+[KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-
+management/)
+
+[Request a Demo](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+
+[Contact Support](https://www.keepersecurity.com/support.html)
+
+Enforcement Policies for Tunnels
+
+Tunnel Settings in a KeeperPAM Resource
+
+Record View with the Start Tunnel action
+
+Active Tunnel
+
+MySQL Workbench with a Local Tunnel
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7qh2srRpGVVCcvTTt2Fr%252FScreenshot%25202025-01-21%2520at%252011.59.32%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D20a4c885-1eb9-4a8d-89fe-3aa9b6948e92&width=768&dpr=4&quality=100&sign=42a0ffbb&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8AuVoynRnwZ1XYt2dHPD%252FtunnelPAMSettings.png%3Falt%3Dmedia%26token%3D0b12cab7-ce68-43b1-a63f-7e65fc994b58&width=768&dpr=4&quality=100&sign=aa11178f&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlUZQzCJCvEHI6w8YhVbq%252FScreenshot%25202025-01-15%2520at%25202.25.18%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db9749402-6ce6-4985-8d0b-58c3144bbfad&width=768&dpr=4&quality=100&sign=22383c23&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFBL7VQntbnDaT2xJHNTU%252FScreenshot%25202025-01-15%2520at%25202.26.25%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Da45c1ea0-d38c-406e-9b90-b15662f740f6&width=768&dpr=4&quality=100&sign=3f4dc163&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4bsuT2Ol9pnSRgX3SLAV%252FScreenshot%25202025-01-15%2520at%25202.24.52%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dc07425e6-742e-4b57-aa6e-c0c7ce06f611&width=768&dpr=4&quality=100&sign=d140eea4&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FG45mktqPR9PKR9mkjvqi%252FScreenshot%25202025-01-15%2520at%25202.32.27%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D9bfdd81b-d39d-404d-a2a3-16826cfa7323&width=768&dpr=4&quality=100&sign=7fa9028b&sv=2)
+
