@@ -2,16 +2,18 @@ name: Daily Keeper Doc Monitor
 
 on:
   schedule:
-    - cron: '0 12 * * *'  # Every day at 12:00 UTC
-  workflow_dispatch:       # Allow manual run
+    - cron: '0 12 * * *'  # Runs daily at 12:00 UTC
+  workflow_dispatch:       # Manual trigger
 
 jobs:
   run-spider:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repo
         uses: actions/checkout@v3
+        with:
+          persist-credentials: true  # Required for pushing back to GitHub
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -25,3 +27,15 @@ jobs:
 
       - name: Run Scrapy spider
         run: scrapy crawl keeper_docs
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "keeper-doc-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add output/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Automated scrape update: $(date -u)"
+            git push
+          fi
