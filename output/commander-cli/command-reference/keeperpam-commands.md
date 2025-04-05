@@ -1145,7 +1145,7 @@ Copy
 reference/sharing-commands)[NextConnection Commands](/en/keeperpam/commander-
 cli/command-reference/connection-commands)
 
-Last updated 8 days ago
+Last updated 9 days ago
 
 Was this helpful?
 

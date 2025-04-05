@@ -692,14 +692,6 @@ PAM Record
 
 Definition
 
-[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
-
-[Session Recording and Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
 The PAM Configuration contains information of your target infrastructure
 
 Record
@@ -711,6 +703,14 @@ Record
 
 The PAM User record contains the user credentials that will be used to connect
 to the endpoint
+
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+
+[Session Recording and Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
 
 [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
 started/pam-configuration)

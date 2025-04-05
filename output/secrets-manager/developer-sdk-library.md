@@ -2290,32 +2290,32 @@ manager-command-line-interface/exec-command)
 
 [Vault SDKs](/en/keeperpam/secrets-manager/developer-sdk-library/vault-sdks)
 
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
 [Record Type](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types)
 
 [Record Fields](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
+
+[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)
+
+[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)
+
+[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)
+
+[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)
+
+[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)
+
+[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)
+
+[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

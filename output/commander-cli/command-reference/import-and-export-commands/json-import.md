@@ -427,6 +427,29 @@ reference/import-and-export-commands/json-import?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=HXyCRUzlK5gtF3JgkajG&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
+
+# JSON Import
+
+Automatic migration of passwords from a JSON file
+
+[PreviousCSV Import](/en/keeperpam/commander-cli/command-reference/import-and-
+export-commands/csv-import)[NextReporting Commands](/en/keeperpam/commander-
+cli/command-reference/reporting-commands)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -457,17 +480,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=HXyCRUzlK5gtF3JgkajG&only=yes&limit=100)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 ##
 
 **JSON Record Import**
@@ -483,35 +495,6 @@ The import file example below is an array of record objects which can import
 into private folders and shared folders. Note in the example that the Facebook
 record contains a TOTP seed which will render on the Vault user interface and
 Commander CLI.
-
-Another example below first creates shared folders that are shared to users
-and teams, then imports records into the shared folders. The format of the
-file is slightly different and allows you to separate the creation of shared
-folder objects and records:
-
-The format must be strict JSON or it will fail parsing. To import this file:
-
-There are more complex import file examples that supports shared folders,
-folder permissions, user permissions and team permissions located in the
-sample_data/ folder. To import the sample JSON file into your vault, type this
-command:
-
-  *   *   *   *   * 
-
-The sample file contains "permissions" objects that contain email address or
-team names. If the email or team name exists in your Keeper enterprise
-account, they will be added to the shared folder, otherwise the information is
-ignored.
-
-Example 1:
-
-Example 2:
-
-Example 3:
-
-Example 4:
-
-Example 5:
 
 Copy
 
@@ -552,6 +535,11 @@ Copy
           "$oneTimeCode": "otpauth://totp/Amazon:me@company.com?secret=JBSWY3DPEHPK3PXP&issuer=Amazon&algorithm=SHA1&digits=6&period=30"}
       }]
     }
+
+Another example below first creates shared folders that are shared to users
+and teams, then imports records into the shared folders. The format of the
+file is slightly different and allows you to separate the creation of shared
+folder objects and records:
 
 Copy
 
@@ -638,11 +626,28 @@ Copy
       ]
     }
 
+The format must be strict JSON or it will fail parsing. To import this file:
+
 Copy
 
     
     
     $ My Vault> import --format=json import.json
+
+There are more complex import file examples that supports shared folders,
+folder permissions, user permissions and team permissions located in the
+sample_data/ folder. To import the sample JSON file into your vault, type this
+command:
+
+  * Example 1: [import.json.txt](https://github.com/Keeper-Security/Commander/blob/master/sample_data/import.json.txt)
+
+  * Example 2: [import_records_existing_folders.json.txt](https://github.com/Keeper-Security/Commander/blob/master/sample_data/import_records_existing_folders.json.txt)
+
+  * Example 3: [import_records_into_folders.json.txt](https://github.com/Keeper-Security/Commander/blob/master/sample_data/import_records_into_folders.json.txt)
+
+  * Example 4: [import_shared_folders.json.txt](https://github.com/Keeper-Security/Commander/blob/master/sample_data/import_shared_folders.json.txt)
+
+  * Example 5: [import_shared_folders_and_records.json.txt](https://github.com/Keeper-Security/Commander/blob/master/sample_data/import_shared_folders_and_records.json.txt)
 
 Copy
 
@@ -650,32 +655,10 @@ Copy
     
     $ My Vault> import --format=json sample_data/import.json.txt
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
-
-# JSON Import
-
-Automatic migration of passwords from a JSON file
-
-[PreviousCSV Import](/en/keeperpam/commander-cli/command-reference/import-and-
-export-commands/csv-import)[NextReporting Commands](/en/keeperpam/commander-
-cli/command-reference/reporting-commands)
-
-[import.json.txt](https://github.com/Keeper-
-Security/Commander/blob/master/sample_data/import.json.txt)
-
-[import_records_existing_folders.json.txt](https://github.com/Keeper-
-Security/Commander/blob/master/sample_data/import_records_existing_folders.json.txt)
-
-[import_records_into_folders.json.txt](https://github.com/Keeper-
-Security/Commander/blob/master/sample_data/import_records_into_folders.json.txt)
-
-[import_shared_folders.json.txt](https://github.com/Keeper-
-Security/Commander/blob/master/sample_data/import_shared_folders.json.txt)
-
-[import_shared_folders_and_records.json.txt](https://github.com/Keeper-
-Security/Commander/blob/master/sample_data/import_shared_folders_and_records.json.txt)
+The sample file contains "permissions" objects that contain email address or
+team names. If the email or team name exists in your Keeper enterprise
+account, they will be added to the shared folder, otherwise the information is
+ignored.
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

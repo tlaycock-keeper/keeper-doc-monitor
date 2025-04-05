@@ -449,11 +449,43 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MiY9yvhfQmptgmCD5Gk&only=yes&limit=100)
 
 Keeper Secrets Manager integration into Jenkins for dynamic secrets retrieval
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkEQ5PBLojjvL1P8vo5%252F-MkEQP2hhyxKSU0SVFoL%252Fjenkins-
-plugin-
-header.jpg%3Falt%3Dmedia%26token%3D7f925417-5968-47b7-a39c-883ef7fbc555&width=768&dpr=4&quality=100&sign=95b5cb1c&sv=2)
+[PreviousHeroku](/en/keeperpam/secrets-manager/integrations/heroku)[NextKeeper
+Connection Manager](/en/keeperpam/secrets-manager/integrations/keeper-
+connection-manager)
+
+Last updated 4 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -511,10 +543,6 @@ to find the plugin. Check the **Install** checkbox and an Install button. You
 can choose to restart Jenkins immediately, or later to complete installation.
 When Jenkins restarts, you will be able to use the plugin.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fa4n3YHq8mVkQcwSTgJeu%252FScreen%2520Shot%25202021-11-17%2520at%25209.45.40%2520AM.png%3Falt%3Dmedia%26token%3D8e3d298f-6b83-492a-8998-bebdebfe535f&width=768&dpr=4&quality=100&sign=517cdd1c&sv=2)
-
 If you had installed a beta version of the Keeper Secrets Manager plugin you
 will need to remove it first. On the tab **Manage Jenkins- >Manage
 Plugins->Installed**click the **Uninstall** button. It will not show up on the
@@ -552,6 +580,10 @@ By default, the Client Device is locked to the first IP address that uses the
 One Time Access Token. If your Jenkins server has potentially multiple
 external IP addresses, you may want to add the`--unlock-ip`parameter when
 generating the One Time Access Token.
+
+For more information on creating Secrets Manager Applications and Clients, see
+the [Secrets Manager Commands](/en/keeperpam/commander-cli/command-
+reference/secrets-manager-commands#overview) documentation.
 
 ###
 
@@ -717,47 +749,6 @@ The environmental variables containing the secrets are only accessible within
 the **withKsm** block where they are defined. Once you exit the block, the
 secrets are not accessible.
 
-[PreviousHeroku](/en/keeperpam/secrets-manager/integrations/heroku)[NextKeeper
-Connection Manager](/en/keeperpam/secrets-manager/integrations/keeper-
-connection-manager)
-
-Last updated 4 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
-For more information on creating Secrets Manager Applications and Clients, see
-the  documentation.
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MlMTSx8rstZWwFAz2Sd%252F-MlMTsJ1VgQqwrC2mEPd%252Fcred_add.png%3Falt%3Dmedia%26token%3D8b50d7cd-
@@ -770,8 +761,15 @@ ze1%252FScreen%2520Shot%25202021-09-24%2520at%25202.13.24%2520PM.png%3Falt%3Dmed
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkEQ5PBLojjvL1P8vo5%252F-MkEQP2hhyxKSU0SVFoL%252Fjenkins-
+plugin-
+header.jpg%3Falt%3Dmedia%26token%3D7f925417-5968-47b7-a39c-883ef7fbc555&width=768&dpr=4&quality=100&sign=95b5cb1c&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MlMTSx8rstZWwFAz2Sd%252F-MlMUFCp1u926PgPpk3y%252Fbuilder.png%3Falt%3Dmedia%26token%3D55b1adb4-f916-44f5-99b8-69944fd683ac&width=768&dpr=4&quality=100&sign=dcc673f&sv=2)
 
-[Secrets Manager Commands](/en/keeperpam/commander-cli/command-
-reference/secrets-manager-commands#overview)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fa4n3YHq8mVkQcwSTgJeu%252FScreen%2520Shot%25202021-11-17%2520at%25209.45.40%2520AM.png%3Falt%3Dmedia%26token%3D8e3d298f-6b83-492a-8998-bebdebfe535f&width=768&dpr=4&quality=100&sign=517cdd1c&sv=2)
 

@@ -458,38 +458,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=0HKqc5nrihdSnYkSFAIv&only=yes&limit=100)
 
 Attaching post-rotation scripts to PAM resource records
 
-##
-
-Attaching Post Rotation Scripts
-
-When creating or editing a PAM record, click on the **Add PAM Script** button
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FBlKciADdzYLIjU7U2H9I%252FpostRotation1.png%3Falt%3Dmedia%26token%3D401d3f39-31a3-46f4-bb1c-34ef8879f382&width=768&dpr=4&quality=100&sign=f3ba5ba3&sv=2)
-
-Clicking on **Add PAM Script** will allow you to:
-
-  * Browse locally and choose your Rotation Script(s).
-
-  * Add "Additional Credentials". This is an option to add additional records which contains the credentials needed by the post rotation script. These credentials must be available to the Keeper Gateway.
-
-  * Specify an optional custom command to executed. In the below screenshot, a python script (`postRotationTest.py`) is attached, and a specific command to be used to execute the python script.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6rj9bfD1Hehx2H1IWiLu%252Fimage.png%3Falt%3Dmedia%26token%3D790e05f5-45ed-4f72-9320-756e77326779&width=768&dpr=4&quality=100&sign=ff28da42&sv=2)
-
-After successfully selecting the script(s), the record will be updated to show
-the attached Post Rotation scripts:
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZvKxKi8ninqof9UZ9wE1%252FpostRotation2.png%3Falt%3Dmedia%26token%3D658e3d53-4cb1-44bb-9636-5cbaf1e5211e&width=768&dpr=4&quality=100&sign=445032fe&sv=2)
-
-Click Save to create or update the record. Attached Post Rotation Scripts can
-be deleted or edited by clicking on their respective actions.
-
 [PreviousInputs and Outputs](/en/keeperpam/privileged-access-manager/password-
 rotation/post-rotation-scripts/parameters)[NextCode
 Examples](/en/keeperpam/privileged-access-manager/password-rotation/post-
@@ -528,4 +496,36 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+##
+
+Attaching Post Rotation Scripts
+
+When creating or editing a PAM record, click on the **Add PAM Script** button
+
+Clicking on **Add PAM Script** will allow you to:
+
+  * Browse locally and choose your Rotation Script(s).
+
+  * Add "Additional Credentials". This is an option to add additional records which contains the credentials needed by the post rotation script. These credentials must be available to the Keeper Gateway.
+
+  * Specify an optional custom command to executed. In the below screenshot, a python script (`postRotationTest.py`) is attached, and a specific command to be used to execute the python script.
+
+After successfully selecting the script(s), the record will be updated to show
+the attached Post Rotation scripts:
+
+Click Save to create or update the record. Attached Post Rotation Scripts can
+be deleted or edited by clicking on their respective actions.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FBlKciADdzYLIjU7U2H9I%252FpostRotation1.png%3Falt%3Dmedia%26token%3D401d3f39-31a3-46f4-bb1c-34ef8879f382&width=768&dpr=4&quality=100&sign=f3ba5ba3&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6rj9bfD1Hehx2H1IWiLu%252Fimage.png%3Falt%3Dmedia%26token%3D790e05f5-45ed-4f72-9320-756e77326779&width=768&dpr=4&quality=100&sign=ff28da42&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZvKxKi8ninqof9UZ9wE1%252FpostRotation2.png%3Falt%3Dmedia%26token%3D658e3d53-4cb1-44bb-9636-5cbaf1e5211e&width=768&dpr=4&quality=100&sign=445032fe&sv=2)
 

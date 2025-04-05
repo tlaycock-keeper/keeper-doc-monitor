@@ -425,6 +425,36 @@ manager/troubleshooting?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Access Denied
@@ -458,36 +488,6 @@ Last updated 4 months ago
 
 Was this helpful?
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 Access Denied
@@ -508,19 +508,18 @@ met:
 
 Enabling the Secrets Manager Add On
 
-Secrets Manager can be added from the "Secure Add Ons" section of the [Keeper
-Admin Console](https://docs.keeper.io/enterprise-guide/getting-started-with-
-keeper-admin-console).
+Secrets Manager can be added from the "Secure Add Ons" section of the .
 
 ###
 
 Enabling the Secrets Manager Enforcement Policy
 
-In the [Keeper Admin Console](https://docs.keeper.io/enterprise-guide/getting-
-started-with-keeper-admin-console) add Secrets Manager to a role with role
-enforcements. Select or create a new role, open the "Enforcement Policies"
-settings and navigate to the "Keeper Secrets Manager" tab to allow or disallow
-Secrets Manager for the role.
+In the  add Secrets Manager to a role with role enforcements. Select or create
+a new role, open the "Enforcement Policies" settings and navigate to the
+"Keeper Secrets Manager" tab to allow or disallow Secrets Manager for the
+role.
+
+The Keeper Secrets Manager Enforcement Policy in the Keeper Admin Console
 
 Any users that are in a role with Secrets Manager allowed will be able to see
 the Secrets Manager tab in their Keeper Vault, and create and manage Secrets
@@ -530,9 +529,6 @@ Enabling Secrets Manager with Keeper Commander
 
 You must have Keeper account administrative permissions to create and edit
 roles.
-
-To enable the Secrets Manager enforcement policy, use the following command in
-[Keeper Commander](/en/keeperpam/commander-cli/overview):
 
 Copy
 
@@ -550,11 +546,6 @@ Copy
     
     
     er --enforcement="allow_secrets_manager:true" "Keeper Administrator"
-
-For more information on creating and editing roles, and adding users to roles,
-see the [Enterprise Management Commands
-documentation](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands).
 
 ##
 
@@ -667,10 +658,6 @@ with Secrets Manager
 
 Create Typed Records
 
-Typed records can be created in by clicking "Create New" in the vault, or
-using the [add command](/en/keeperpam/commander-cli/command-reference/record-
-commands#add-command-record-types) in Commander.
-
 When choosing a record type, all types are compatible with Secrets Manager
 except for the "General" type.
 
@@ -746,20 +733,41 @@ To resolve a throttling limit:
 If you require changes to your throttling limit, please contact the Keeper
 team at commander@keepersecurity.com
 
-For more information on using the `convert` command, see the
+To enable the Secrets Manager enforcement policy, use the following command in
+:
 
-[Commander documentation.](/en/keeperpam/commander-cli/command-
-reference/record-commands/record-type-commands#convert-command)
+For more information on creating and editing roles, and adding users to roles,
+see the .
 
-The Keeper Secrets Manager Enforcement Policy in the Keeper Admin Console
+Typed records can be created in by clicking "Create New" in the vault, or
+using the  in Commander.
 
 Login type records have the same fields as legacy Keeper records
 
 Copy fields and files into the new typed record
 
+For more information on using the `convert` command, see the
+
+[Keeper Commander](/en/keeperpam/commander-cli/overview)
+
+[Enterprise Management Commands documentation](/en/keeperpam/commander-
+cli/command-reference/enterprise-management-commands)
+
+[Keeper Admin Console](https://docs.keeper.io/enterprise-guide/getting-
+started-with-keeper-admin-console)
+
+[Keeper Admin Console](https://docs.keeper.io/enterprise-guide/getting-
+started-with-keeper-admin-console)
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRJAbUfRGI218uHTdsATU%252Fimage.png%3Falt%3Dmedia%26token%3Deae27457-3a99-4eb2-b8a4-1a1b9182f514&width=768&dpr=4&quality=100&sign=5416c8e1&sv=2)
+
+[Commander documentation.](/en/keeperpam/commander-cli/command-
+reference/record-commands/record-type-commands#convert-command)
+
+[add command](/en/keeperpam/commander-cli/command-reference/record-
+commands#add-command-record-types)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

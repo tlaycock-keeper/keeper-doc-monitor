@@ -594,7 +594,7 @@ trails.
 requests)[NextSecrets Manager Overview](/en/keeperpam/secrets-
 manager/overview)
 
-Last updated 14 days ago
+Last updated 15 days ago
 
 Was this helpful?
 

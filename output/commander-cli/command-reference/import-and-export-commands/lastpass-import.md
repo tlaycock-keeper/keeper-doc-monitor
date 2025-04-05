@@ -429,6 +429,36 @@ import?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -471,36 +501,6 @@ and-export-commands/delinea-thycotic-secret-server-import)
 Last updated 4 months ago
 
 Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
 
 ##
 
@@ -605,10 +605,6 @@ and records within the folders. This will NOT import the private folders of
 _other_ users within LastPass. This step will only import the information
 available to the admin.
 
-End-users will migrate their private LastPass data by using the Keeper Desktop
-automated import method. See [this page](https://docs.keeper.io/user-
-guides/import-records-1/import-from-lastpass) for the end-user documentation.
-
 ####
 
 Record Type Mapping
@@ -683,9 +679,6 @@ SSH Keys
 Software License
 
 Software License
-
-See [Record Types](/en/keeperpam/commander-cli/command-reference/record-
-commands/default-record-types) for more information about Keeper Record Types
 
 ###
 
@@ -949,36 +942,48 @@ with the "`rm`" command.
 
 Changing Record Permissions
 
-By default, records are imported into Shared Folders with "Can View"
-permission. This means that the record is only editable by the owner of the
-record, and any [share admins](https://docs.keeper.io/enterprise-guide/share-
-admin) that have been added to the folder.
-
 Copy
 
     
     
     record-permission -a grant --can-edit --recursive <folder name or UID>
 
+End-users will migrate their private LastPass data by using the Keeper Desktop
+automated import method. See  for the end-user documentation.
+
+See  for more information about Keeper Record Types
+
+By default, records are imported into Shared Folders with "Can View"
+permission. This means that the record is only editable by the owner of the
+record, and any  that have been added to the folder.
+
 To change the permissions of records inside a shared folder (after the import
 is complete), you can use the  command. For example:
 
-[![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
-files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Desktop
-ApplicationsEnterprise Guide](https://docs.keeper.io/enterprise-
-guide/deploying-keeper-to-end-users/desktop-application)
+[this page](https://docs.keeper.io/user-guides/import-records-1/import-from-
+lastpass)
 
-[![Logo](https://www.keepersecurity.com/assets/branding/android-
-icon-192x192.png)Download Keeper Password Manager for iOS, Android, Mac, PC
-and moreKeeper® Password Manager & Digital
-Vault](https://keepersecurity.com/download)
+[Record Types](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types)
 
-[record-permission](/en/keeperpam/commander-cli/command-reference/sharing-
-commands#record-permission-command)
+[share admins](https://docs.keeper.io/enterprise-guide/share-admin)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FisBbJe3YNOoyNvSgF0XD%252FImport-
 Keeper-
 LastPass.jpg%3Falt%3Dmedia%26token%3Dbf14ebf6-7463-4582-a1d7-a811f98d2e39&width=768&dpr=4&quality=100&sign=b3f0a619&sv=2)
+
+[![Logo](https://www.keepersecurity.com/assets/branding/android-
+icon-192x192.png)Download Keeper Password Manager for iOS, Android, Mac, PC
+and moreKeeper® Password Manager & Digital
+Vault](https://keepersecurity.com/download)
+
+[![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
+files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Desktop
+ApplicationsEnterprise Guide](https://docs.keeper.io/enterprise-
+guide/deploying-keeper-to-end-users/desktop-application)
+
+[record-permission](/en/keeperpam/commander-cli/command-reference/sharing-
+commands#record-permission-command)
 

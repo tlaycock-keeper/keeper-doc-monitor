@@ -425,6 +425,36 @@ installation-setup/installation-on-windows?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Supported Operating systems
@@ -464,13 +494,6 @@ Keeper Commander – Installing and Loggin In
 
 Typical Binary Installation (recommended)
 
-⬇️ [**Download Keeper Commander .exe file from
-GitHub**](https://github.com/Keeper-Security/Commander/releases)
-
-On the Commander Github page, the current commander build is always available
-via the [releases link](https://github.com/Keeper-
-Security/Commander/releases).
-
 The binary download is the file named: `keeper-commander-windows-vX.XX.exe`
 
 Note about Windows installs: \- You may have to right click on the executable
@@ -485,9 +508,6 @@ Python (PIP) installation
 ####
 
 Setup with Python3:
-
-Download the current version of Python from
-<https://www.python.org/>[](https://www.python.org/)
 
 Recommended releases:
 
@@ -538,11 +558,6 @@ Copy
     
     keeper shell
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fcjx050celvWUrje5NIeH%252Fkeeper-
-commander_BBNOqSVfEO.png%3Falt%3Dmedia%26token%3De1587fe4-a3db-4d4b-b951-53e0472c85c2&width=768&dpr=4&quality=100&sign=960d2d6c&sv=2)
-
 Note, for your first time logging into a new device or a new location, you may
 have to perform device authorization through email or other 2FA methods.
 
@@ -554,33 +569,22 @@ Last updated 5 months ago
 
 Was this helpful?
 
-#### Company
+On the Commander Github page, the current commander build is always available
+via the .
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+Download the current version of Python from
 
-#### Support
+⬇️
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+[**Download Keeper Commander .exe file from
+GitHub**](https://github.com/Keeper-Security/Commander/releases)
 
-#### Solutions
+[releases link](https://github.com/Keeper-Security/Commander/releases)
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+<https://www.python.org/>[](https://www.python.org/)
 
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fcjx050celvWUrje5NIeH%252Fkeeper-
+commander_BBNOqSVfEO.png%3Falt%3Dmedia%26token%3De1587fe4-a3db-4d4b-b951-53e0472c85c2&width=768&dpr=4&quality=100&sign=960d2d6c&sv=2)
 
