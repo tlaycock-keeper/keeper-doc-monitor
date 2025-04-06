@@ -524,7 +524,9 @@ Prerequisites
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+  *     * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
     * The TeamCity plugin accepts Base 64 format configurations
 
@@ -686,8 +688,6 @@ variables etc. _Check the examples below._
 
 A Keeper  with secrets shared to it
 
-See the  for instructions on creating an Application
-
 Specify the token - paste a valid KSM config _(see_ _)_.
 
 [Secrets Manager Application](/en/keeperpam/secrets-
@@ -695,9 +695,6 @@ manager/about/terminology#application)
 
 [_Prerequisites_](/en/keeperpam/secrets-
 manager/integrations/teamcity#prerequisites)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 
 Adding connection of type Keeper Vault
 

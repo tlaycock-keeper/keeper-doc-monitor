@@ -527,6 +527,10 @@ _Hint:_ You can use the shortened version of the command as well: `eu`
 
 e.g. `eu John_Smith@example.com --add`
 
+ _Find more information in the_[ _command
+documentation._](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#enterprise-user-command)
+
 ###
 
 Invitation Email and Vault Creation
@@ -712,6 +716,10 @@ When the account is run, you will be prompted to create a password for the new
 user. Alternatively you can provide a record from your vault with a password
 already set to use as the account's password.
 
+_See more information about this command in the_[ _command
+documentation_](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#create-user-command)
+
 ####
 
 Enterprises with MFA or SSO Login
@@ -809,14 +817,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-_Find more information in the_
-
- _See more information about this command in the_
-
-[_command documentation._](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands#enterprise-user-command)
-
-[_command documentation_](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands#create-user-command)
 

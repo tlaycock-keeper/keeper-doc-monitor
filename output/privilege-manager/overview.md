@@ -446,7 +446,7 @@ Keeper Privilege Manager is a Privileged Elevation and Delegation Management
 manager/references/preview-access)[NextSetup](/en/keeperpam/privilege-
 manager/setup)
 
-Last updated 14 days ago
+Last updated 15 days ago
 
 Was this helpful?
 

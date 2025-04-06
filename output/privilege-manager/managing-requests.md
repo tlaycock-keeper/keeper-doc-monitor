@@ -442,7 +442,7 @@ Day to day management of Keeper Privilege Manager elevation requests
 [PreviousPolicies](/en/keeperpam/privilege-
 manager/policies)[NextFAQs](/en/keeperpam/faqs)
 
-Last updated 14 days ago
+Last updated 15 days ago
 
 Was this helpful?
 

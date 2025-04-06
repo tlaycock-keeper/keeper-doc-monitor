@@ -667,9 +667,6 @@ Session Recording
 
 Options for recording sessions and typescripts
 
-See [session recording](/en/keeperpam/privileged-access-manager/session-
-recording-and-playback)
-
 Connection Parameters (multiple)
 
 Connection-specific protocol settings which can vary based on the protocol
@@ -695,6 +692,11 @@ rotation, and not required for Tunnels.
 
 The following screenshot is a PAM Directory Record with LDAPS rotation, RDP
 connections and LDAPS tunnels enabled:
+
+See
+
+[session recording](/en/keeperpam/privileged-access-manager/session-recording-
+and-playback)
 
 Creating a PAM Directory
 

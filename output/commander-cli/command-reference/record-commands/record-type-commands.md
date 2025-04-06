@@ -607,9 +607,7 @@ Copy
         ]
     }
 
-  * See a list of all field types [here](/en/keeperpam/commander-cli/command-reference/record-commands/default-record-types#field-types)
-
-  * Use the following command to see a list of available field types: `rti -lf *`
+  *   * Use the following command to see a list of available field types: `rti -lf *`
 
  **Examples:**
 
@@ -641,9 +639,6 @@ records.
 The convert command will only convert legacy, untyped records to typed
 records.
 
-To convert the type of a typed record, use the [edit](/en/keeperpam/commander-
-cli/command-reference/record-commands#edit-command-record-types) command.
-
 **Parameters:**
 
 Pattern to match records in the current folder. Matches against UIDs and
@@ -654,7 +649,7 @@ of characters
 
 `-t`, `--record-type <RECORD TYPE OR ID >` The type to convert records to
 
-  * see [record types documentation](/en/keeperpam/commander-cli/command-reference/record-commands/default-record-types#standard-record-types) for a list of all standard record types
+  * 
 
 `-q`, `--quiet` Do not show info about matched and converted records
 
@@ -732,4 +727,19 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+See a list of all field types
+
+To convert the type of a typed record, use the  command.
+
+see  for a list of all standard record types
+
+[edit](/en/keeperpam/commander-cli/command-reference/record-commands#edit-
+command-record-types)
+
+[here](/en/keeperpam/commander-cli/command-reference/record-commands/default-
+record-types#field-types)
+
+[record types documentation](/en/keeperpam/commander-cli/command-
+reference/record-commands/default-record-types#standard-record-types)
 

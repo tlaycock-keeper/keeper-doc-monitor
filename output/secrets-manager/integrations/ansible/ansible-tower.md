@@ -425,36 +425,6 @@ manager/integrations/ansible/ansible-tower?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Features
@@ -490,13 +460,43 @@ Last updated 2 months ago
 
 Was this helpful?
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ##
 
 Features
 
   * Store Secrets Manager configurations securely in Ansible Tower
 
-  * Use Ansible Tower to manager and launch Ansible projects utilizing the  which features:
+  * Use Ansible Tower to manager and launch Ansible projects utilizing the [Secrets Manager Ansible plugin](/en/keeperpam/secrets-manager/integrations/ansible/ansible-plugin) which features:
 
     * Retrieving secrets from the Keeper vault to use in Ansible Playbooks
 
@@ -504,9 +504,20 @@ Features
 
     * Copying files from the Keeper Vault
 
+For a complete list of Keeper Secrets Manager features see the [Overview
+](/en/keeperpam/secrets-manager/overview)
+
 ##
 
 KSM Configuration
+
+The first step in using Ansible Tower with Keeper Secrets Manager is to get
+and initialize a Base64 configuration. The [Secret Manager
+Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-
+configuration) document will explain how to get a configuration using the
+[Keeper Secret Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-
+command-line-interface) or [Commander CLI.](/en/keeperpam/commander-
+cli/overview)
 
 Using **Commander CLI** , add a new device can generate a Base64 configuration
 without using a one time access token.
@@ -733,44 +744,16 @@ With the configuration now in the available variables, the `keeper_copy`
 action can retrieve the public and private SSH key from the Keeper Vault and
 copy them into location on the remote machine.
 
-For a complete list of Keeper Secrets Manager features see the
-
-The first step in using Ansible Tower with Keeper Secrets Manager is to get
-and initialize a Base64 configuration. The  document will explain how to get a
-configuration using the  or
+See the [Ansible Plugin documentation](/en/keeperpam/secrets-
+manager/integrations/ansible/ansible-plugin) for all the Secrets Manager
+capabilities available to Ansible
 
 Give your Vault Credential a name, select **Vault** from the **Credential
 Type** drop-down, type in the password that was used  the `secrets.yml` file
 into the **Vault Password** field, then click **Save**.
 
-See the  for all the Secrets Manager capabilities available to Ansible
-
-[Overview ](/en/keeperpam/secrets-manager/overview)
-
-[Secret Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration)
-
-[Keeper Secret Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface)
-
-[Commander CLI.](/en/keeperpam/commander-cli/overview)
-
-[Ansible Plugin documentation](/en/keeperpam/secrets-
-manager/integrations/ansible/ansible-plugin)
-
 [to encrypt](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
 tower#storing-the-ksm-configuration)
-
-[Secrets Manager Ansible plugin](/en/keeperpam/secrets-
-manager/integrations/ansible/ansible-plugin)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjIMOCZkeFkzS23r75wOS%252Fimage.png%3Falt%3Dmedia%26token%3D20566d61-8116-4b33-85b2-01ddd77d3c8e&width=768&dpr=4&quality=100&sign=5085d78a&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFrtyMRDKJRNrJhlpXcFV%252FScreen%2520Shot%25202022-02-01%2520at%25203.19.28%2520PM.png%3Falt%3Dmedia%26token%3D7d35df16-61fb-4621-bcda-c762f73da564&width=768&dpr=4&quality=100&sign=e5654f41&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -782,9 +765,17 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqFX3KLdWR
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FQmR5XLrVZDAtFVZf1xOF%252FScreen%2520Shot%25202022-02-01%2520at%25203.16.22%2520PM.png%3Falt%3Dmedia%26token%3D80c57357-607e-4b71-8b77-3590e8b82232&width=768&dpr=4&quality=100&sign=c89383df&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjIMOCZkeFkzS23r75wOS%252Fimage.png%3Falt%3Dmedia%26token%3D20566d61-8116-4b33-85b2-01ddd77d3c8e&width=768&dpr=4&quality=100&sign=5085d78a&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFrtyMRDKJRNrJhlpXcFV%252FScreen%2520Shot%25202022-02-01%2520at%25203.19.28%2520PM.png%3Falt%3Dmedia%26token%3D7d35df16-61fb-4621-bcda-c762f73da564&width=768&dpr=4&quality=100&sign=e5654f41&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2iWGDxCtEFzFM1GZemuG%252FScreen%2520Shot%25202022-02-01%2520at%25203.50.15%2520PM.png%3Falt%3Dmedia%26token%3Da4074dc2-74c2-4399-ac96-6b487703e166&width=768&dpr=4&quality=100&sign=b9e8267c&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FQmR5XLrVZDAtFVZf1xOF%252FScreen%2520Shot%25202022-02-01%2520at%25203.16.22%2520PM.png%3Falt%3Dmedia%26token%3D80c57357-607e-4b71-8b77-3590e8b82232&width=768&dpr=4&quality=100&sign=c89383df&sv=2)
 

@@ -463,9 +463,44 @@ PDF](/en/keeperpam/~gitbook/pdf?page=h66TT5DK87t0vGepwcbT&only=yes&limit=100)
 
 Rotating Admin/Regular AWS SQL Server Database Users with Keeper
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGHcerJuTamo3HkfVasMA%252FMS%2520SQL%2520Server.jpg%3Falt%3Dmedia%26token%3Db7b40c74-4056-4d27-b0f5-a9292f0a07a1&width=768&dpr=4&quality=100&sign=bf938755&sv=2)
+[PreviousAWS RDS for MySQL](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mysql)[NextAWS
+RDS for PostgreSQL](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/managed-database/aws-rds-for-postgresql)
+
+Last updated 1 month ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -489,11 +524,7 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  * Keeper Secrets Manager is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
-
-  * Keeper Rotation is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
-
-  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+  *   *   * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
 
   * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is able to communicate with your AWS SQL Server Database
 
@@ -680,42 +711,17 @@ Select the **PAM User** record(s) from Step 3, edit the record and open the
 Any user with `edit` rights to a **PAM User** record has the ability to setup
 rotation for that record.
 
-[PreviousAWS RDS for MySQL](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mysql)[NextAWS
-RDS for PostgreSQL](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-postgresql)
+Keeper Secrets Manager is enabled for your
 
-Last updated 1 month ago
+Keeper Rotation is enabled for your
 
-Was this helpful?
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
 
-#### Company
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGHcerJuTamo3HkfVasMA%252FMS%2520SQL%2520Server.jpg%3Falt%3Dmedia%26token%3Db7b40c74-4056-4d27-b0f5-a9292f0a07a1&width=768&dpr=4&quality=100&sign=bf938755&sv=2)
 

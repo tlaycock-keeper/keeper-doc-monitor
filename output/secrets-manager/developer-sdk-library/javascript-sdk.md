@@ -462,6 +462,44 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MgQrj_5ZT3N3bdl96t2&only=yes&limit=100)
 
 Detailed Javascript SDK docs for Keeper Secrets Manager
 
+[PreviousRecord Field Classes](/en/keeperpam/secrets-manager/developer-sdk-
+library/java-sdk/record-field-classes)[Next.NET SDK](/en/keeperpam/secrets-
+manager/developer-sdk-library/.net-sdk)
+
+Last updated 2 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ##
 
 Download and Installation
@@ -480,9 +518,7 @@ Copy
 
 **Source Code**
 
-Find the JavaScript source code in the [GitHub
-repository](https://github.com/Keeper-Security/secrets-
-manager/tree/master/sdk/javascript)
+Find the JavaScript source code in the
 
 ##
 
@@ -717,10 +753,6 @@ Copy
         const firstRecordPassword = firstRecord.data.fields.find(x => x.type === 'password')
     }
 
-Fields are found by type, for a list of field types see the [Record
-Types](/en/keeperpam/commander-cli/command-reference/record-commands/default-
-record-types#field-types) documentation.
-
 **Retrieve other Fields with Keeper Notation**
 
 Get ValueExample Usage
@@ -750,10 +782,6 @@ Copy
         // get login with dot notation
         const loginValue = getValue(secrets, 'RECORD_UID/field/login')
     }
-
-See [Keeper Notation documentation](/en/keeperpam/secrets-
-manager/about/keeper-notation) to learn about Keeper Notation format and
-capabilities
 
 Parameter
 
@@ -826,10 +854,6 @@ Copy
         //get TOTP code
         const totp = await getTotpCode(totpUri)
     }
-
-See [Keeper Notation documentation](/en/keeperpam/secrets-
-manager/about/keeper-notation) to learn about Keeper Notation format and
-capabilities
 
 Parameter
 
@@ -1261,11 +1285,9 @@ Prerequisites:
 
   * Created records and record fields must be formatted correctly
 
-    * See the [documentation](/en/keeperpam/commander-cli/command-reference/record-commands/default-record-types#field-types) for expected field formats for each record type
+    *   * TOTP fields accept only URL generated outside of the KSM SDK
 
-  * TOTP fields accept only URL generated outside of the KSM SDK
-
-  * After record creation, you can upload file attachments using [uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-sdk#upload-a-file)
+  * 
 
 Create a RecordCreate Record in Sub-folderLogin Record ExampleCustom Type
 Example
@@ -1747,41 +1769,31 @@ Copy
     const storage = localConfigStorage("ksm-config.json")
     await deleteFolder({storage: storage}, ["[FOLDER_UID1]", "[FOLDER_UID2]"], true)
 
-[PreviousRecord Field Classes](/en/keeperpam/secrets-manager/developer-sdk-
-library/java-sdk/record-field-classes)[Next.NET SDK](/en/keeperpam/secrets-
-manager/developer-sdk-library/.net-sdk)
+Fields are found by type, for a list of field types see the  documentation.
 
-Last updated 2 months ago
+See  to learn about Keeper Notation format and capabilities
 
-Was this helpful?
+See  to learn about Keeper Notation format and capabilities
 
-#### Company
+See the  for expected field formats for each record type
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+After record creation, you can upload file attachments using
 
-#### Support
+[GitHub repository](https://github.com/Keeper-Security/secrets-
+manager/tree/master/sdk/javascript)
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+[Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
+notation)
 
-#### Solutions
+[Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
+notation)
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+[Record Types](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types#field-types)
 
-#### Pricing
+[documentation](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types#field-types)
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+[uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-
+sdk#upload-a-file)
 

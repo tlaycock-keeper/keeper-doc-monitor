@@ -462,7 +462,7 @@ manager/integrations/powershell-plugin)
 library/golang-sdk/record-field-classes)[NextVault
 SDKs](/en/keeperpam/secrets-manager/developer-sdk-library/vault-sdks)
 
-Last updated 4 months ago
+Last updated 5 months ago
 
 Was this helpful?
 

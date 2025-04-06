@@ -574,6 +574,28 @@ need a particular plugin created, send us an email to
 
 Supported Plugins
 
+###
+
+Github Location
+
+<https://github.com/Keeper-
+Security/Commander/tree/master/keepercommander/plugins>[](https://github.com/Keeper-
+Security/Commander/tree/master/keepercommander/plugins)
+
+####
+
+Activating a Plugin
+
+To activate a plugin for a particular Keeper record, you first need to update
+the custom fields for that record with special keywords that are used by
+Commander. See the specific plugin for the custom field requirements.
+
+To perform a rotation use the `_rotate_` command.
+
+Keeper's team is expanding the number of plugins on an ongoing basis. If you
+need a particular plugin created or modified, email us at
+[commander@keepersecurity.com](mailto:commander@keepersecurity.com).
+
 [Active Directory](/en/keeperpam/commander-cli/command-
 reference/plugins/active-directory-plugin)
 
@@ -609,28 +631,6 @@ passwd-plugin)
 
 [Windows Password](/en/keeperpam/commander-cli/command-
 reference/plugins/windows-plugin)
-
-###
-
-Github Location
-
-<https://github.com/Keeper-
-Security/Commander/tree/master/keepercommander/plugins>[](https://github.com/Keeper-
-Security/Commander/tree/master/keepercommander/plugins)
-
-####
-
-Activating a Plugin
-
-To activate a plugin for a particular Keeper record, you first need to update
-the custom fields for that record with special keywords that are used by
-Commander. See the specific plugin for the custom field requirements.
-
-To perform a rotation use the `_rotate_` command.
-
-Keeper's team is expanding the number of plugins on an ongoing basis. If you
-need a particular plugin created or modified, email us at
-[commander@keepersecurity.com](mailto:commander@keepersecurity.com).
 
 [Troubleshooting section](/en/keeperpam/commander-cli/troubleshooting-
 commander-cli#typed-vs-untyped-records-v3-vs-v2)

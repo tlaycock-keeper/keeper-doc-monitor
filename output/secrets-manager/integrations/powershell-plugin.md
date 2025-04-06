@@ -455,7 +455,7 @@ Keeper Secrets Manager PowerShell Plugin
 [PreviousOctopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-
 deploy)[NextServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
 
-Last updated 4 months ago
+Last updated 5 months ago
 
 Was this helpful?
 
@@ -529,7 +529,9 @@ installation details
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * [A One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
+  *     * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * [A One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
 
 ##
 
@@ -870,13 +872,8 @@ Content`
 
 A Keeper  with secrets shared to it
 
-See the  for instructions on creating an Application
-
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mkx-

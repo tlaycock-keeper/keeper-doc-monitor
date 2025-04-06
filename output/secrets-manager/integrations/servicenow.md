@@ -425,36 +425,6 @@ manager/integrations/servicenow?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * About
@@ -490,6 +460,36 @@ manager/integrations/teller)
 Last updated 2 months ago
 
 Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -560,11 +560,17 @@ Custom Credential Provider
 
 Prerequisites
 
-  *     * Secrets Manager add-on enabled for your Keeper subscription
+  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
+
+    * Secrets Manager add-on enabled for your Keeper subscription
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * 
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * A ServiceNow instance with [External Credential Storage](https://docs.servicenow.com/bundle/utah-platform-security/page/product/credentials/concept/external_cred_storage_configuration.html) plugin enabled
 
 ##
 
@@ -574,7 +580,9 @@ Setup
 
 1\. External Credential Storage _(requires admin role)_
 
-  *   * 
+  * The [External Credential Storage](https://docs.servicenow.com/bundle/utah-platform-security/page/product/credentials/task/t_ActivateExtrnlCredStoragePlugIn.html) plugin must be active.
+
+  * The [Enable External Credential Storage](https://docs.servicenow.com/bundle/utah-platform-security/page/product/credentials/concept/c_ExternalCredentialStorage.html) Discovery property is enabled.
 
 ####
 
@@ -596,7 +604,9 @@ each credential record manually.
 
 2\. Installing Keeper Credential Resolver
 
-  *   * In ServiceNow, navigate to "MID server - JAR files" -> New
+  * Download the latest version of Keeper Credential Resolver JAR file from [here](https://github.com/Keeper-Security/secrets-manager/releases/).
+
+  * In ServiceNow, navigate to "MID server - JAR files" -> New
 
     * Manage Attachments -> upload Keeper Credential Resolver JAR
 
@@ -606,7 +616,9 @@ each credential record manually.
 
   * Navigate to "MID server - Properties" -> New
 
-    *     * **Optional:** Set the property `ext.cred.keeper.ksm_label_prefix` to the desired prefix (_by default resolver uses_`mid_`_as a label prefix_)
+    * Set _Name_ : `ext.cred.keeper.ksm_config`, _Value_ : base64 version of the [configuration](https://docs.keeper.io/secrets-manager/secrets-manager/about/secrets-manager-configuration#creating-a-secrets-manager-configuration) generated for the corresponding KSM Application.
+
+    * **Optional:** Set the property `ext.cred.keeper.ksm_label_prefix` to the desired prefix (_by default resolver uses_`mid_`_as a label prefix_)
 
     * **Optional:** Set the property `ext.cred.keeper.use_ksm_cache` to `"true"` to enable caching _(use when you expect at least a few thousand requests per 10 seconds)_
 
@@ -779,49 +791,6 @@ able to click "Test credential" to perform a quick targeted test. Select the
 MID server that should query Keeper vault, and select a target that the
 credential should work for to check that everything works as expected. If it
 doesn't, check the logs for errors and debug information as detailed above.
-
-Keeper Secrets Manager access (See the  for more details)
-
-A Keeper  with secrets shared to it
-
-See the  for instructions on creating an Application
-
-A ServiceNow instance with  plugin enabled
-
-The  plugin must be active.
-
-The  Discovery property is enabled.
-
-Download the latest version of Keeper Credential Resolver JAR file from .
-
-Set _Name_ : `ext.cred.keeper.ksm_config`, _Value_ : base64 version of the
-generated for the corresponding KSM Application.
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
-
-[External Credential Storage](https://docs.servicenow.com/bundle/utah-
-platform-
-security/page/product/credentials/concept/external_cred_storage_configuration.html)
-
-[External Credential Storage](https://docs.servicenow.com/bundle/utah-
-platform-
-security/page/product/credentials/task/t_ActivateExtrnlCredStoragePlugIn.html)
-
-[Enable External Credential Storage](https://docs.servicenow.com/bundle/utah-
-platform-
-security/page/product/credentials/concept/c_ExternalCredentialStorage.html)
-
-[here](https://github.com/Keeper-Security/secrets-manager/releases/)
-
-[configuration](https://docs.keeper.io/secrets-manager/secrets-
-manager/about/secrets-manager-configuration#creating-a-secrets-manager-
-configuration)
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

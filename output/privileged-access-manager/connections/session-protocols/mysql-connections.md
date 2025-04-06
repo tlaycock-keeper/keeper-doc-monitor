@@ -522,21 +522,6 @@ Configuring Connection Settings
 Prior to configuring the MySQL protocol settings on the PAM Settings screen,
 the following fields are all **required** and need to be configured:
 
-Field
-
-Definition
-
-PAM Configuration
-
-This is the PAM Configuration that contains the details of your target
-infrastructure and provides access to the target configured on the PAM Record
-
-Administrative Credential Record
-
-This is the linked [PAM User](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-user) that will be used to authenticate to the
-target and perform administrative operations on it.
-
 The following table lists all the configurable settings for the MySQL protocol
 on the PAM Settings:
 
@@ -653,4 +638,21 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+Field
+
+Definition
+
+PAM Configuration
+
+This is the PAM Configuration that contains the details of your target
+infrastructure and provides access to the target configured on the PAM Record
+
+Administrative Credential Record
+
+This is the linked  that will be used to authenticate to the target and
+perform administrative operations on it.
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
 

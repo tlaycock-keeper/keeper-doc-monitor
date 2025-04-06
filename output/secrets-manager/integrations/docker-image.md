@@ -450,15 +450,47 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MekuWlNDN2IS_Sj99Ks&only=yes&limit=100)
 
 Using environmental variable substitution with containerized environments
 
+[PreviousBitbucket Plugin](/en/keeperpam/secrets-
+manager/integrations/bitbucket-plugin)[NextDocker
+Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
+
+Last updated 2 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ##
 
 Docker Secrets Management
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkENTUeNrnd4NYqSpdL%252F-MkEQ3GAKxOC9fPlNv6A%252Fdocker-
-image-
-header.jpg%3Falt%3Dmedia%26token%3D7a6601b7-9799-4319-8b0e-02937fcbfae1&width=768&dpr=4&quality=100&sign=1ed78dbc&sv=2)
 
 ##
 
@@ -516,11 +548,6 @@ example demonstrating this capability, we will be creating a user account in
 the destination image with a username and password from Keeper Secrets
 Manager.
 
-**Step 1:** Set Environmental Variables with Keeper notation for the secrets
-that are needed. For more notation examples [click
-here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/exec-command#notation).
-
 Copy
 
     
@@ -571,11 +598,6 @@ Example 2: Build an Image with Secrets using Build Arguments
 Similar to example 1, you can pass in secrets via the `--build-arg`. This
 example will also demonstrate the ability of using secrets in a Docker build
 process.
-
-**Step 1:** Set Environmental Variables with Keeper notation for the secrets
-that are needed. For more notation examples [click
-here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/exec-command#notation).
 
 Copy
 
@@ -687,20 +709,8 @@ server.xml file also contains the secret passphrase for the keystore file.
 In the Keeper Vault, create a secret record that contains 2 file attachments:
 `**server.xml**` and `**localhost-rsa.jks**`**** as seen below:
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf_vL6i3tZYNyKHhWjl%252F-Mfa1VlyrOY-z9yejZBY%252FScreen%2520Shot%25202021-07-26%2520at%252011.37.25%2520PM.png%3Falt%3Dmedia%26token%3D376a94a4-5a2e-4638-b844-f730ff7d150b&width=768&dpr=4&quality=100&sign=2e3941a0&sv=2)
-
-Create Record with Secret File Attachments
-
 Make note of the Record UID in the information dialog which will be used in
 the dockerfile. Click the Record UID to copy to your clipboard.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf_vL6i3tZYNyKHhWjl%252F-Mfa28rVYp_0HX3A8ubN%252FScreen%2520Shot%25202021-07-26%2520at%252011.38.56%2520PM.png%3Falt%3Dmedia%26token%3Dfd71d60e-548c-4ae9-a58a-e1323af10077&width=768&dpr=4&quality=100&sign=92e981fa&sv=2)
-
-Copy the Record UID
 
 **Step 2: Create the dockerfile**
 
@@ -803,41 +813,33 @@ Contribute to the Docker Image Examples
 If you have some great examples to contribute to this page, please ping us on
 Slack or email sm@keepersecurity.com.
 
-[PreviousBitbucket Plugin](/en/keeperpam/secrets-
-manager/integrations/bitbucket-plugin)[NextDocker
-Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
+**Step 1:** Set Environmental Variables with Keeper notation for the secrets
+that are needed. For more notation examples .
 
-Last updated 2 months ago
+**Step 1:** Set Environmental Variables with Keeper notation for the secrets
+that are needed. For more notation examples .
 
-Was this helpful?
+[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/exec-command#notation)
 
-#### Company
+[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/exec-command#notation)
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+Create Record with Secret File Attachments
 
-#### Support
+Copy the Record UID
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf_vL6i3tZYNyKHhWjl%252F-Mfa28rVYp_0HX3A8ubN%252FScreen%2520Shot%25202021-07-26%2520at%252011.38.56%2520PM.png%3Falt%3Dmedia%26token%3Dfd71d60e-548c-4ae9-a58a-e1323af10077&width=768&dpr=4&quality=100&sign=92e981fa&sv=2)
 
-#### Solutions
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkENTUeNrnd4NYqSpdL%252F-MkEQ3GAKxOC9fPlNv6A%252Fdocker-
+image-
+header.jpg%3Falt%3Dmedia%26token%3D7a6601b7-9799-4319-8b0e-02937fcbfae1&width=768&dpr=4&quality=100&sign=1ed78dbc&sv=2)
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf_vL6i3tZYNyKHhWjl%252F-Mfa1VlyrOY-z9yejZBY%252FScreen%2520Shot%25202021-07-26%2520at%252011.37.25%2520PM.png%3Falt%3Dmedia%26token%3D376a94a4-5a2e-4638-b844-f730ff7d150b&width=768&dpr=4&quality=100&sign=2e3941a0&sv=2)
 

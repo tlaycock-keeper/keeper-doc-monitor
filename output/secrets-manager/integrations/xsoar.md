@@ -446,43 +446,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=vvgGmhnSTRCYbMglgvhO&only=yes&limit=100)
 
 Use Secrets Manager with automated workflows in Cortex XSOAR
 
-[PreviousWindows Credential Manager](/en/keeperpam/secrets-
-manager/integrations/windows-credential-
-manager)[NextTroubleshooting](/en/keeperpam/secrets-manager/troubleshooting)
-
-Last updated 2 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNEDCzzLwSHyRcRAEvmH2%252Fimage.png%3Falt%3Dmedia%26token%3D2287f523-4704-4233-8413-c8536f04bbca&width=768&dpr=4&quality=100&sign=3a56dcb3&sv=2)
 
 ##
 
@@ -500,9 +466,17 @@ Setup
 
 Activate Keeper Secrets Manager
 
+Follow the[ Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-
+guide#enable-secrets-manager) to enable Keeper Secrets Manager on your
+account.
+
 ####
 
 Create A Keeper Secrets Manager Configuration
+
+Follow the steps in the [documentation page](/en/keeperpam/secrets-
+manager/about/secrets-manager-configuration) to create a Secrets Manager
+configuration.
 
 ###
 
@@ -516,6 +490,12 @@ integration.
   2. Search for "Keeper Secrets Manager"
 
   3. Click **Add instance** to create and configure a new integration instance.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FsR4DyRFHcKJRRVW0Rldu%252Fimage.png%3Falt%3Dmedia%26token%3D789a3a86-9251-402b-ac35-fb2202468d08&width=768&dpr=4&quality=100&sign=e2eccecb&sv=2)
+
+Configure the instance to use the Keeper Secrets Manager integration
 
 The following options are available to configure your XSOAR integration:
 
@@ -606,6 +586,10 @@ Copy
     
     !ksm-get-field notation="keeper://<UID>/field/login"
 
+See the [Keeper Notation documentation](/en/keeperpam/secrets-
+manager/about/keeper-notation) for more details on using keeper notation to
+identify fields
+
 ####
 
 List Files Attached to Keeper Records
@@ -649,6 +633,12 @@ Using Commands in a Playbook
 To use Keeper Secrets Manager commands in your XSOAR playbooks, click "Task
 Library" and search for "Keeper" to show all the available commands.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwNx6gyeABlF7lHecurD6%252Fimage.png%3Falt%3Dmedia%26token%3D30045aaa-079d-4e3e-92cf-811bfb30dbfa&width=768&dpr=4&quality=100&sign=5e4c0c0e&sv=2)
+
+List Available Keeper Commander
+
 Select a command to use and fill in the required fields if any.
 
 ###
@@ -662,51 +652,57 @@ playbook.
 
   2. Enter Keeper notation pointing to the password using the UID of the record you want to use. This will look like: `<UID>/fields/password`
 
-  3. Click "OK" to add the task to your playbook 
-
-You can add additional tasks after the ksm-get-field task to use the password.
-
-Follow the to enable Keeper Secrets Manager on your account.
-
-Follow the steps in the  to create a Secrets Manager configuration.
-
-See the  for more details on using keeper notation to identify fields
-
- _Any field in a record can be fetched this way. See_ _for more information_
-
-[documentation page](/en/keeperpam/secrets-manager/about/secrets-manager-
-configuration)
-
-[Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
-notation)
-
-[_Keeper Notation documentation_](/en/keeperpam/secrets-manager/about/keeper-
-notation)
-
-[ Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#enable-
-secrets-manager)
-
-Configure the instance to use the Keeper Secrets Manager integration
-
-List Available Keeper Commander
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNEDCzzLwSHyRcRAEvmH2%252Fimage.png%3Falt%3Dmedia%26token%3D2287f523-4704-4233-8413-c8536f04bbca&width=768&dpr=4&quality=100&sign=3a56dcb3&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FsR4DyRFHcKJRRVW0Rldu%252Fimage.png%3Falt%3Dmedia%26token%3D789a3a86-9251-402b-ac35-fb2202468d08&width=768&dpr=4&quality=100&sign=e2eccecb&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwNx6gyeABlF7lHecurD6%252Fimage.png%3Falt%3Dmedia%26token%3D30045aaa-079d-4e3e-92cf-811bfb30dbfa&width=768&dpr=4&quality=100&sign=5e4c0c0e&sv=2)
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5aamsq2VsDlt7K2fQhsH%252Fimage.png%3Falt%3Dmedia%26token%3D6cb83b52-b305-4c6b-adaf-364cd53a36a7&width=768&dpr=4&quality=100&sign=cc7c0e64&sv=2)
 
+_Any field in a record can be fetched this way. See_[ _Keeper Notation
+documentation_](/en/keeperpam/secrets-manager/about/keeper-notation) _for more
+information_
+
+  3. Click "OK" to add the task to your playbook 
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7G9zceIZodTE3aOrn6cd%252Fimage.png%3Falt%3Dmedia%26token%3De45a7efc-158d-4870-b303-73ded72f37a3&width=768&dpr=4&quality=100&sign=f53d9b2a&sv=2)
+
+You can add additional tasks after the ksm-get-field task to use the password.
+
+[PreviousWindows Credential Manager](/en/keeperpam/secrets-
+manager/integrations/windows-credential-
+manager)[NextTroubleshooting](/en/keeperpam/secrets-manager/troubleshooting)
+
+Last updated 2 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

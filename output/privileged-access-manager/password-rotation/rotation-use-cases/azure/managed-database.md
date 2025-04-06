@@ -497,11 +497,13 @@ on the following Azure Managed Databases:
 
   * [Azure SQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database/azure-sql)
 
-  * [Azure MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database#azure-mysql-single-or-flexible)
-
-  * [Azure MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database/azure-mariadb-database)
+  *   * [Azure MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database/azure-mariadb-database)
 
   * [Azure PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database/azure-postgresql-single-or-flexible-database)
+
+[Azure MySQL](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/azure/managed-database#azure-mysql-single-or-
+flexible)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

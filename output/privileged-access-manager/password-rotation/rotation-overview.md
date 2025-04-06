@@ -453,43 +453,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=EDS2DJDgqE5sBxNdEEwZ&only=yes&limit=100)
 
 Quick start guide to Keeper Password Rotation
 
-[PreviousPassword Rotation](/en/keeperpam/privileged-access-manager/password-
-rotation)[NextRotation Use Cases](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases)
-
-Last updated 1 month ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJJ1EmrgIBh8GbZqCUjfj%252Fgetting%2520started.jpg%3Falt%3Dmedia%26token%3Dc04eaeb2-85cc-45a2-a439-9bd7376d83ee&width=768&dpr=4&quality=100&sign=5267984e&sv=2)
 
 ##
 
@@ -509,7 +475,15 @@ Prior to setting up password rotation, make sure to have the following set up:
 
   * Learn about KeeperPAM in the [Getting Started](/en/keeperpam/privileged-access-manager/getting-started) section
 
-  *   *   *   *   * 
+  * [Enable Enforcement Policies](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enable-enforcement-policies)
+
+  * [Deploy a Keeper Gateway](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#deploy-a-keeper-gateway)
+
+  * [Create a PAM User record](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#create-a-pam-user-record)
+
+  * [Create a PAM Resource](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#create-a-pam-resource)
+
+  * [Configure rotation settings](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#configure-rotation-settings)
 
 ###
 
@@ -518,6 +492,12 @@ Enable Enforcement Policies
 Enforcement policies for KeeperPAM password rotation are managed in the Keeper
 Admin Console under **Admin** > **Roles** > **Enforcement Policies** >
 **Privileged Access Manager**.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWjChJvfoO14GjFwRqbVj%252FScreenshot%25202025-01-21%2520at%252011.50.51%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D979ba299-1710-4c92-adfc-36437e9631ce&width=768&dpr=4&quality=100&sign=ad11a445&sv=2)
+
+KeeperPAM Enforcement Policies
 
 For Password Rotation capabilities, enable the necessary policies:
 
@@ -604,6 +584,12 @@ steps](/en/keeperpam/privileged-access-manager/quick-start-sandbox):
 
   * [Quick Start: Sandbox](https://docs.keeper.io/en/privileged-access-manager/privileged-access-manager/quick-start-sandbox)
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJqEuJZeecb5LfP3K7V6q%252FScreenshot%25202025-01-23%2520at%25204.06.12%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D744231d5-5291-4a04-8dd0-e76fd35aeedf&width=768&dpr=4&quality=100&sign=bbe1b99c&sv=2)
+
+Deploy a Keeper Gateway
+
 ###
 
 Create an Application
@@ -613,6 +599,18 @@ Keeper will automatically create the Secrets Manager Application, Shared
 Folders and PAM Configuration. In the Secrets Manager section of the vault,
 you'll see the Application assigned to Shared Folders and also assigned to the
 Gateway.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fr5CNpfdmi7982p2LLEPW%252FScreenshot%25202025-01-23%2520at%25208.52.29%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dddfc8aa7-03d5-4b0e-85ae-790606fe1250&width=768&dpr=4&quality=100&sign=688015a2&sv=2)
+
+Application Setup
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fxizqlyax5mqRDzXj3nzr%252FScreenshot%25202025-01-23%2520at%25208.52.38%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D8a93210b-b97c-4571-a2cb-81798746ce74&width=768&dpr=4&quality=100&sign=aa31e412&sv=2)
+
+Application associated to Gateway
 
 ###
 
@@ -625,15 +623,106 @@ resources/pam-user). The example below shows a PAM User record for an admin
 password on a Windows server. The PAM User record is added to a Shared Folder
 containing user accounts.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGCqcghltvhAORFknVdSp%252FScreenshot%25202025-01-23%2520at%25204.11.48%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dd1adef52-0c13-4184-9121-277a85720655&width=768&dpr=4&quality=100&sign=4edc5b32&sv=2)
+
+Creating a PAM User record
+
 ###
 
 Create a PAM Resource
 
 A PAM Resource represents a Machine, Database or Directory.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FR1hmpUel9ZXA5o7zGXdY%252FScreenshot%25202025-01-23%2520at%25206.11.08%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Df74953bc-6f1a-42ac-82c0-ee9795989670&width=768&dpr=4&quality=100&sign=a67b5ee9&sv=2)
+
+Create new Machine, Database or Directory
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFz0pYcGhsLK9lp2uwg3y%252FScreenshot%25202025-01-23%2520at%25206.09.44%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D22339c1c-868f-412b-b885-489af2921bca&width=768&dpr=4&quality=100&sign=64e25211&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fa5kba8hczTefC8VFsEO0%252FScreenshot%25202025-01-23%2520at%25206.12.14%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D9a1fb78e-a39a-4833-b67e-a307342b7c82&width=768&dpr=4&quality=100&sign=d6dd1fc8&sv=2)
+
 ###
 
 Configure rotation settings
+
+On the "Rotation Settings" section of the PAM User vault record, you can
+configure how credential rotation is managed.
+
+###
+
+Password Rotation Settings
+
+###
+
+Rotation Type
+
+Keeper supports 3 different types of rotation:
+
+  * **General:** Uses native protocols for performing the rotation, such as LDAP, Databases, SSH keys, etc.
+
+  * **IAM User:** Uses the cloud-specific APIs for performing rotation, such as AWS IAM users and Azure managed resources. In this case, only the PAM Configuration is required since it contains the necessary 
+
+  * **Run PAM scripts only:** Skips the standard rotation and only executes the attached PAM Scripts.
+
+###
+
+PAM Resource
+
+To complete the Rotation setup, you need to select a resource, which depends
+on the rotation type.
+
+For a "General" rotation, the Keeper Gateway uses a native protocol for
+performing the necessary rotation, and the rotation will be executed on the
+associated PAM Resource supplied. If necessary, the rotation will use the
+associated administrative credential on the PAM Resource.
+
+In the example below, a Windows service account password is going to be
+rotated on the associated Windows Server.
+
+For an "IAM User" rotation type, the Keeper Gateway will use the referenced
+PAM Configuration to determine which APIs and methods are used to perform the
+rotation. In the example below, an IAM user in AWS will use the "AWS (US-
+WEST-1)" configuration.
+
+When using the IAM User rotation method, it is assumed that the Keeper Gateway
+either inherits its privilege from the instance role policy, or through
+explicit access keys that are provided on the PAM Configuration record.
+
+###
+
+In Summary:
+
+  * The PAM User record holds the credential that is being rotated.
+
+  * The Rotation Settings of the PAM User record references a specific PAM Machine, PAM Database or PAM Directory resource. This is the target resource where the rotation is performed.
+
+  * The Keeper Gateway uses the Admin Credential associated to the PAM Machine, PAM Database or PAM Directory resource to perform the rotation with native protocols.
+
+  * For AWS and Azure managed resources, Keeper uses Instance Role permission of the Gateway, or specific PAM Configuration secrets to perform the rotation with APIs.
+
+###
+
+Examples
+
+Below are some examples of PAM User records.
+
+  * Windows Domain Admin
+
+  * Windows Domain User with post-rotation scripts
+
+  * AWS IAM User
+
+  * Database user
+
+  * Azure AD User
 
 ##
 
@@ -759,33 +848,126 @@ Keeper supports importing in bulk from JSON format. See the [Importing PAM
 Records](/en/keeperpam/privileged-access-manager/references/importing-pam-
 records) section for more details.
 
-[Enable Enforcement Policies](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-overview#enable-enforcement-policies)
+[PreviousPassword Rotation](/en/keeperpam/privileged-access-manager/password-
+rotation)[NextRotation Use Cases](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases)
 
-[Deploy a Keeper Gateway](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-overview#deploy-a-keeper-gateway)
+Last updated 1 month ago
 
-[Create a PAM User record](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-overview#create-a-pam-user-record)
+Was this helpful?
 
-[Create a PAM Resource](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-overview#create-a-pam-resource)
+#### Company
 
-[Configure rotation settings](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-overview#configure-rotation-settings)
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-On the "Rotation Settings" section of the PAM User vault record, you can
-configure how credential rotation is managed.
+#### Support
 
-###
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-Password Rotation Settings
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 Field
 
 Description
 
 Required
+
+The rotation schedule can be set on a specific interval, or using a .
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOXi2mFqCpWzFOEFamNfS%252FScreenshot%25202025-01-23%2520at%25204.33.26%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D5fdba450-37b9-4cf8-9ecb-f9ce341948c3&width=768&dpr=4&quality=100&sign=81556070&sv=2)
+
+PAM User record editing
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5nWthY6PzkuyCPswOm1g%252FScreenshot%25202025-01-14%2520at%25209.42.30%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Db0fffa2c-42ee-4f11-97de-b37e14d56924&width=768&dpr=4&quality=100&sign=6c560da4&sv=2)
+
+Password Rotation Settings
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTmiv0hvl0miQxomi0CnG%252FScreenshot%25202025-01-14%2520at%25209.50.46%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dfd5381d6-f451-4f2a-8e46-c4cab48e3b47&width=768&dpr=4&quality=100&sign=299f5b7f&sv=2)
+
+Custom Schedule
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F0he1Hr0prQpo7N7GqIZ3%252FScreenshot%25202025-01-14%2520at%25209.50.56%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dfc6b40d7-0612-415d-b029-8df7d6ba3d1e&width=768&dpr=4&quality=100&sign=9f8dda08&sv=2)
+
+Calendar Settings
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4y6jRZ4RfZ7fDm0KQN3Y%252FScreenshot%25202025-01-14%2520at%25209.51.03%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Db4e3104e-b14e-462d-84e2-2b19e946b9ed&width=768&dpr=4&quality=100&sign=7e42fc60&sv=2)
+
+Cron Spec
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8OB6YiUox2fAgFUgyNWv%252FScreenshot%25202025-01-23%2520at%25206.13.23%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dfe9db3bc-0e29-4734-9778-3f2fb1c14783&width=768&dpr=4&quality=100&sign=e2a7fb32&sv=2)
+
+Rotation Resource
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F06v6s4b2EYgJJhux1s2N%252FScreenshot%25202025-01-23%2520at%25206.14.34%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D9ae719fc-b73d-406c-9c25-6cd0b2ee9778&width=768&dpr=4&quality=100&sign=4f23bfc3&sv=2)
+
+IAM User rotation type
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F29D3LswWwgW5pvSOMUMl%252FScreenshot%25202025-01-12%2520at%25207.16.05%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D01c3c45f-518a-4ca5-b198-723ff0f1a227&width=768&dpr=4&quality=100&sign=347fdad0&sv=2)
+
+Windows Domain Admin User
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FUBcUVVRpqUFzjfXGUd47%252FScreenshot%25202025-01-14%2520at%25209.32.50%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Da49d938d-f2b3-420a-9cdb-301ea9b9a1ad&width=768&dpr=4&quality=100&sign=5315228a&sv=2)
+
+Windows Domain User with post-rotation scripts
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FvL1pNfWvzwMfSUbfG6oA%252FScreenshot%25202025-01-12%2520at%25207.17.12%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D975b84a9-26a5-4040-b193-bbd90e272827&width=768&dpr=4&quality=100&sign=e53e4e6a&sv=2)
+
+AWS IAM User
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwQ8O48hEFY00feefNoI4%252FScreenshot%25202025-01-12%2520at%25207.17.32%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Df4ecf7da-2231-4dd7-902e-80a57cbadb52&width=768&dpr=4&quality=100&sign=9ff95515&sv=2)
+
+Database user
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGzKgObBvzWPED5PdcznT%252FScreenshot%25202025-01-12%2520at%25207.18.52%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D393cb4c4-0d1f-44ad-
+bc09-fc66a93e666f&width=768&dpr=4&quality=100&sign=e3dbf592&sv=2)
+
+Azure AD User
+
+[cron spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
 
 Rotation Type
 
@@ -813,196 +995,7 @@ Applies to password-based rotations, not PEM keys.
 
 Select "Show More" to control special characters and symbols.
 
-###
-
-Rotation Type
-
-Keeper supports 3 different types of rotation:
-
-  * **General:** Uses native protocols for performing the rotation, such as LDAP, Databases, SSH keys, etc.
-
-  * **IAM User:** Uses the cloud-specific APIs for performing rotation, such as AWS IAM users and Azure managed resources. In this case, only the PAM Configuration is required since it contains the necessary 
-
-  * **Run PAM scripts only:** Skips the standard rotation and only executes the attached PAM Scripts.
-
-###
-
-PAM Resource
-
-To complete the Rotation setup, you need to select a resource, which depends
-on the rotation type.
-
-For a "General" rotation, the Keeper Gateway uses a native protocol for
-performing the necessary rotation, and the rotation will be executed on the
-associated PAM Resource supplied. If necessary, the rotation will use the
-associated administrative credential on the PAM Resource.
-
-In the example below, a Windows service account password is going to be
-rotated on the associated Windows Server.
-
-For an "IAM User" rotation type, the Keeper Gateway will use the referenced
-PAM Configuration to determine which APIs and methods are used to perform the
-rotation. In the example below, an IAM user in AWS will use the "AWS (US-
-WEST-1)" configuration.
-
-When using the IAM User rotation method, it is assumed that the Keeper Gateway
-either inherits its privilege from the instance role policy, or through
-explicit access keys that are provided on the PAM Configuration record.
-
-###
-
-In Summary:
-
-  * The PAM User record holds the credential that is being rotated.
-
-  * The Rotation Settings of the PAM User record references a specific PAM Machine, PAM Database or PAM Directory resource. This is the target resource where the rotation is performed.
-
-  * The Keeper Gateway uses the Admin Credential associated to the PAM Machine, PAM Database or PAM Directory resource to perform the rotation with native protocols.
-
-  * For AWS and Azure managed resources, Keeper uses Instance Role permission of the Gateway, or specific PAM Configuration secrets to perform the rotation with APIs.
-
-###
-
-Examples
-
-Below are some examples of PAM User records.
-
-  * Windows Domain Admin
-
-  * Windows Domain User with post-rotation scripts
-
-  * AWS IAM User
-
-  * Database user
-
-  * Azure AD User
-
 For advanced scheduling, see the .
 
-The rotation schedule can be set on a specific interval, or using a .
-
 [cron spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
-
-[cron spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
-
-KeeperPAM Enforcement Policies
-
-Deploy a Keeper Gateway
-
-Application Setup
-
-Application associated to Gateway
-
-Creating a PAM User record
-
-Create new Machine, Database or Directory
-
-PAM User record editing
-
-Password Rotation Settings
-
-Custom Schedule
-
-Calendar Settings
-
-Cron Spec
-
-Rotation Resource
-
-IAM User rotation type
-
-Windows Domain Admin User
-
-Windows Domain User with post-rotation scripts
-
-AWS IAM User
-
-Database user
-
-Azure AD User
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJJ1EmrgIBh8GbZqCUjfj%252Fgetting%2520started.jpg%3Falt%3Dmedia%26token%3Dc04eaeb2-85cc-45a2-a439-9bd7376d83ee&width=768&dpr=4&quality=100&sign=5267984e&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWjChJvfoO14GjFwRqbVj%252FScreenshot%25202025-01-21%2520at%252011.50.51%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D979ba299-1710-4c92-adfc-36437e9631ce&width=768&dpr=4&quality=100&sign=ad11a445&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJqEuJZeecb5LfP3K7V6q%252FScreenshot%25202025-01-23%2520at%25204.06.12%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D744231d5-5291-4a04-8dd0-e76fd35aeedf&width=768&dpr=4&quality=100&sign=bbe1b99c&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fr5CNpfdmi7982p2LLEPW%252FScreenshot%25202025-01-23%2520at%25208.52.29%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dddfc8aa7-03d5-4b0e-85ae-790606fe1250&width=768&dpr=4&quality=100&sign=688015a2&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fxizqlyax5mqRDzXj3nzr%252FScreenshot%25202025-01-23%2520at%25208.52.38%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D8a93210b-b97c-4571-a2cb-81798746ce74&width=768&dpr=4&quality=100&sign=aa31e412&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGCqcghltvhAORFknVdSp%252FScreenshot%25202025-01-23%2520at%25204.11.48%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dd1adef52-0c13-4184-9121-277a85720655&width=768&dpr=4&quality=100&sign=4edc5b32&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FR1hmpUel9ZXA5o7zGXdY%252FScreenshot%25202025-01-23%2520at%25206.11.08%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Df74953bc-6f1a-42ac-82c0-ee9795989670&width=768&dpr=4&quality=100&sign=a67b5ee9&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFz0pYcGhsLK9lp2uwg3y%252FScreenshot%25202025-01-23%2520at%25206.09.44%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D22339c1c-868f-412b-b885-489af2921bca&width=768&dpr=4&quality=100&sign=64e25211&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fa5kba8hczTefC8VFsEO0%252FScreenshot%25202025-01-23%2520at%25206.12.14%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D9a1fb78e-a39a-4833-b67e-a307342b7c82&width=768&dpr=4&quality=100&sign=d6dd1fc8&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOXi2mFqCpWzFOEFamNfS%252FScreenshot%25202025-01-23%2520at%25204.33.26%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D5fdba450-37b9-4cf8-9ecb-f9ce341948c3&width=768&dpr=4&quality=100&sign=81556070&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5nWthY6PzkuyCPswOm1g%252FScreenshot%25202025-01-14%2520at%25209.42.30%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Db0fffa2c-42ee-4f11-97de-b37e14d56924&width=768&dpr=4&quality=100&sign=6c560da4&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTmiv0hvl0miQxomi0CnG%252FScreenshot%25202025-01-14%2520at%25209.50.46%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dfd5381d6-f451-4f2a-8e46-c4cab48e3b47&width=768&dpr=4&quality=100&sign=299f5b7f&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F0he1Hr0prQpo7N7GqIZ3%252FScreenshot%25202025-01-14%2520at%25209.50.56%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dfc6b40d7-0612-415d-b029-8df7d6ba3d1e&width=768&dpr=4&quality=100&sign=9f8dda08&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4y6jRZ4RfZ7fDm0KQN3Y%252FScreenshot%25202025-01-14%2520at%25209.51.03%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Db4e3104e-b14e-462d-84e2-2b19e946b9ed&width=768&dpr=4&quality=100&sign=7e42fc60&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8OB6YiUox2fAgFUgyNWv%252FScreenshot%25202025-01-23%2520at%25206.13.23%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dfe9db3bc-0e29-4734-9778-3f2fb1c14783&width=768&dpr=4&quality=100&sign=e2a7fb32&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F06v6s4b2EYgJJhux1s2N%252FScreenshot%25202025-01-23%2520at%25206.14.34%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D9ae719fc-b73d-406c-9c25-6cd0b2ee9778&width=768&dpr=4&quality=100&sign=4f23bfc3&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F29D3LswWwgW5pvSOMUMl%252FScreenshot%25202025-01-12%2520at%25207.16.05%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D01c3c45f-518a-4ca5-b198-723ff0f1a227&width=768&dpr=4&quality=100&sign=347fdad0&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FUBcUVVRpqUFzjfXGUd47%252FScreenshot%25202025-01-14%2520at%25209.32.50%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Da49d938d-f2b3-420a-9cdb-301ea9b9a1ad&width=768&dpr=4&quality=100&sign=5315228a&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FvL1pNfWvzwMfSUbfG6oA%252FScreenshot%25202025-01-12%2520at%25207.17.12%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D975b84a9-26a5-4040-b193-bbd90e272827&width=768&dpr=4&quality=100&sign=e53e4e6a&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwQ8O48hEFY00feefNoI4%252FScreenshot%25202025-01-12%2520at%25207.17.32%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Df4ecf7da-2231-4dd7-902e-80a57cbadb52&width=768&dpr=4&quality=100&sign=9ff95515&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGzKgObBvzWPED5PdcznT%252FScreenshot%25202025-01-12%2520at%25207.18.52%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D393cb4c4-0d1f-44ad-
-bc09-fc66a93e666f&width=768&dpr=4&quality=100&sign=e3dbf592&sv=2)
 

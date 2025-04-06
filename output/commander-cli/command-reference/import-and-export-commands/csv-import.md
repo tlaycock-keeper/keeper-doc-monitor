@@ -442,11 +442,44 @@ PDF](/en/keeperpam/~gitbook/pdf?page=Zu7jJt6qM6i7YInl8ObP&only=yes&limit=100)
 
 Automatic migration of passwords from a CSV file
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FeoM3j4KonrGlVTplxtph%252FImport-
-Keeper-
-CSV.jpg%3Falt%3Dmedia%26token%3D57b54001-e054-485f-998a-cfb9e9fd6b86&width=768&dpr=4&quality=100&sign=26bb1a72&sv=2)
+[PreviousProton Pass Import](/en/keeperpam/commander-cli/command-
+reference/import-and-export-commands/proton-pass-import)[NextJSON
+Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands/json-import)
+
+Last updated 4 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -600,21 +633,8 @@ Copy
 
 The resulting vault will look like this:
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FsNUsczX8Hx71qxdS8M6E%252FScreenshot%25202023-02-14%2520at%25205.18.07%2520PM.jpg%3Falt%3Dmedia%26token%3D30db152a-d444-46f8-bf71-67ce51870f50&width=768&dpr=4&quality=100&sign=6cb64244&sv=2)
-
-CSV Import Sample
-
 Here is a list of some record types (you may have more if you have custom
 record types, or less if you are restricting some record types):
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqorAIVkSECp8b5jvQeOZ%252FWindowsTerminal_wOnQKBPAAK.png%3Falt%3Dmedia%26token%3D00e4f459-8cea-46c3-8bf4-6c314bc19068&width=768&dpr=4&quality=100&sign=17577bab&sv=2)
-
-Record types can be listed as a custom field value when the custom field name
-is $type
 
 Below is a list of all possible field types (including custom fields). **You
 can use these as a custom field names such as**`**$oneTimeCode**`**as shown
@@ -676,56 +696,36 @@ $host
 
 $url
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFGSYxcuPALAx9F6enlfT%252FWindowsTerminal_myNZzFQtif.png%3Falt%3Dmedia%26token%3D309856f4-e8d8-48c5-858e-103e9d471c1f&width=768&dpr=4&quality=100&sign=e87d127b&sv=2)
-
-All Field Types that can be used as Custom Field Name $oneTimeCode
-
 More advanced import options are available using the [JSON
 Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
 commands/json-import) format described in the next section.
 
-[PreviousProton Pass Import](/en/keeperpam/commander-cli/command-
-reference/import-and-export-commands/proton-pass-import)[NextJSON
-Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands/json-import)
-
-Last updated 4 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 [www.google.com](http://www.google.com/)
 
 [www.example.com](http://www.example.com/)
+
+CSV Import Sample
+
+Record types can be listed as a custom field value when the custom field name
+is $type
+
+All Field Types that can be used as Custom Field Name $oneTimeCode
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FeoM3j4KonrGlVTplxtph%252FImport-
+Keeper-
+CSV.jpg%3Falt%3Dmedia%26token%3D57b54001-e054-485f-998a-cfb9e9fd6b86&width=768&dpr=4&quality=100&sign=26bb1a72&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FsNUsczX8Hx71qxdS8M6E%252FScreenshot%25202023-02-14%2520at%25205.18.07%2520PM.jpg%3Falt%3Dmedia%26token%3D30db152a-d444-46f8-bf71-67ce51870f50&width=768&dpr=4&quality=100&sign=6cb64244&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqorAIVkSECp8b5jvQeOZ%252FWindowsTerminal_wOnQKBPAAK.png%3Falt%3Dmedia%26token%3D00e4f459-8cea-46c3-8bf4-6c314bc19068&width=768&dpr=4&quality=100&sign=17577bab&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFGSYxcuPALAx9F6enlfT%252FWindowsTerminal_myNZzFQtif.png%3Falt%3Dmedia%26token%3D309856f4-e8d8-48c5-858e-103e9d471c1f&width=768&dpr=4&quality=100&sign=e87d127b&sv=2)
 

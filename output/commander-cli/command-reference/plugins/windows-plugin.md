@@ -425,6 +425,35 @@ reference/plugins/windows-plugin?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Prepare a Record for Rotation
+  * Create a Record for Rotation
+  * Set the Login Name
+  * Rotate
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-Mf4ooIm9OOeZ4dfpuGw&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
+
+# Windows Plugin
+
+Rotate Windows user passwords with Commander
+
+[PreviousUnix Passwd Plugin](/en/keeperpam/commander-cli/command-
+reference/plugins/unix-passwd-plugin)[NextActive Directory
+Plugin](/en/keeperpam/commander-cli/command-reference/plugins/active-
+directory-plugin)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -455,22 +484,13 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-Mf4ooIm9OOeZ4dfpuGw&only=yes&limit=100)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 Keeper has also launched a zero-trust Password Rotation feature with
 KeeperPAM. This new capability is recommended for most password rotation use
 cases. The Documentation is linked below:
 
-  *   * Commander 
+  * [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-rotation)
+
+  * Commander [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
 
 This plugin allows rotating a windows user's password using the `net user`
 command.
@@ -505,25 +525,6 @@ field.
 Add the following Custom Fields to the record that you want to rotate within
 Keeper
 
-##
-
-Rotate
-
-To rotate Windows passwords, use the `rotate` command in Commander. Pass the
-command a record title or UID (or use `--match` with a regular expression to
-rotate several records at once)
-
-The plugin can be supplied to the command as shown here, or added to a record
-field (see options above). Adding the plugin type to the record makes it
-possible to rotate several records at once with different plugins.
-
-####
-
-Output
-
-After rotation is completed, the new password will be stored in the `Password`
-field of the record
-
 Label
 
 Value
@@ -545,44 +546,39 @@ cmdr:rules
 
 (Optional) Password generation rules
 
+##
+
+Rotate
+
+To rotate Windows passwords, use the `rotate` command in Commander. Pass the
+command a record title or UID (or use `--match` with a regular expression to
+rotate several records at once)
+
 Copy
 
     
     
     rotate "Windows Example" --plugin windows
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
+The plugin can be supplied to the command as shown here, or added to a record
+field (see options above). Adding the plugin type to the record makes it
+possible to rotate several records at once with different plugins.
 
-# Windows Plugin
+####
 
-Rotate Windows user passwords with Commander
+Output
 
-[PreviousUnix Passwd Plugin](/en/keeperpam/commander-cli/command-
-reference/plugins/unix-passwd-plugin)[NextActive Directory
-Plugin](/en/keeperpam/commander-cli/command-reference/plugins/active-
-directory-plugin)
+After rotation is completed, the new password will be stored in the `Password`
+field of the record
 
-  * Prepare a Record for Rotation
-  * Create a Record for Rotation
-  * Set the Login Name
-  * Rotate
+[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
+cli#typed-vs-untyped-records-v3-vs-v2)
+
+A Keeper Record setup for Windows password rotation
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FH1Vr6GKR8x1XjZHpNZyK%252Fimage.png%3Falt%3Dmedia%26token%3D1e71b489-5ae6-4071-9e67-17568991b47e&width=768&dpr=4&quality=100&sign=692132c4&sv=2)
-
-[Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
-rotation)
-
-[KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
-commands)
-
-A Keeper Record setup for Windows password rotation
-
-[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
-cli#typed-vs-untyped-records-v3-vs-v2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

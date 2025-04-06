@@ -425,6 +425,34 @@ manager/getting-started/gateways?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * Platforms Supported
+  * Platform Specific Capabilities
+  * System Requirements
+  * Installation Steps
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=YVitXRsJWzo14VlLdwoR&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+# Gateways
+
+Installation and setup of the Keeper Gateway
+
+[PreviousDevices](/en/keeperpam/privileged-access-manager/getting-
+started/devices)[NextCreating a Gateway](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/one-time-access-token)
+
+Last updated 13 days ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -454,34 +482,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Overview
-  * Platforms Supported
-  * Platform Specific Capabilities
-  * System Requirements
-  * Installation Steps
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=YVitXRsJWzo14VlLdwoR&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-
-# Gateways
-
-Installation and setup of the Keeper Gateway
-
-[PreviousDevices](/en/keeperpam/privileged-access-manager/getting-
-started/devices)[NextCreating a Gateway](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/one-time-access-token)
-
-Last updated 12 days ago
-
-Was this helpful?
 
 ##
 
