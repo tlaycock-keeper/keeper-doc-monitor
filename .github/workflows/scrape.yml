@@ -43,3 +43,34 @@ jobs:
             git commit -m "Automated scrape update: $(date -u)"
             git push
           fi
+
+      - name: Format diff and URL list
+        id: format_diff
+        run: |
+          echo "## Changed URLs" > report.txt
+          git diff --name-only HEAD~1 HEAD | sed -e 's/output/https:\/\/docs.keeper.io\/en\/keeperpam/g ; s/\.md$//g' >> report.txt
+          echo "## Diff Summary" >> report.txt
+          git show --no-color >> report.txt
+
+      - name: Retrieve secrets from Keeper
+        id: ksecrets
+        uses: Keeper-Security/ksm-action@master
+        with:
+          keeper-secret-config: ${{ secrets.KSM_CONFIG }}
+          secrets: |-
+            4rtq8BnDYPvqa2eDOtxbCg/field/Login > LOGIN
+            4rtq8BnDYPvqa2eDOtxbCg/field/password > PASSWORD
+            4rtq8BnDYPvqa2eDOtxbCg/field/recipient > RECIPIENT
+
+      - name: Send email notification
+        uses: dawidd66/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ steps.ksecrets.outputs.LOGIN }}
+          password: ${{ steps.ksecrets.outputs.PASSWORD }}
+          subject: Keeper PAM Documentation Update
+          to: ${{ steps.ksecrets.outputs.RECIPIENT }}
+          from: GitHub Bot <tlaycock@keepersecurity.com>
+          content_type: text/plain
+          body: file://report.txt
