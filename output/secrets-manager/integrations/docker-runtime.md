@@ -507,7 +507,11 @@ to utilize this integration, you will need:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * A [One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * A [One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
 
   * The[ Keeper Secrets Manager (KSM) CLI Tool](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
 
@@ -889,20 +893,10 @@ Contribute to the Docker Runtime Examples
 If you have some great examples to contribute to this page, please ping us on
 Slack or email sm@keepersecurity.com.
 
-A Keeper  with secrets shared to it
-
-See the  for instructions on creating an Application
-
 See instructions on setting up the KSM CLI
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
 
 [here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface#initialize-the-client-device)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 
 Root MySQL DB
 
@@ -926,11 +920,7 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Ff6x6wo9b2
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaFttUeoqctfkrfD8p%252FScreen%2520Shot%25202021-07-27%2520at%252012.38.59%2520AM.png%3Falt%3Dmedia%26token%3D3003edef-5d7b-4b46-b1a0-6530b0ac2fc1&width=768&dpr=4&quality=100&sign=cdc4ea8e&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaGNVzjx_czbCfPevb%252FScreen%2520Shot%25202021-07-27%2520at%252012.42.06%2520AM.png%3Falt%3Dmedia%26token%3D9ff5b9f8-7222-425a-b10c-e69b3208090a&width=768&dpr=4&quality=100&sign=792106f&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaGj5OBZC8JJE7mt2L%252FScreen%2520Shot%25202021-07-27%2520at%252012.43.33%2520AM.png%3Falt%3Dmedia%26token%3Df772dd76-5ba1-466b-b656-784f4ba70f19&width=768&dpr=4&quality=100&sign=1406970f&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -942,5 +932,9 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLOXFweD2U
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaGj5OBZC8JJE7mt2L%252FScreen%2520Shot%25202021-07-27%2520at%252012.43.33%2520AM.png%3Falt%3Dmedia%26token%3Df772dd76-5ba1-466b-b656-784f4ba70f19&width=768&dpr=4&quality=100&sign=1406970f&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaFttUeoqctfkrfD8p%252FScreen%2520Shot%25202021-07-27%2520at%252012.38.59%2520AM.png%3Falt%3Dmedia%26token%3D3003edef-5d7b-4b46-b1a0-6530b0ac2fc1&width=768&dpr=4&quality=100&sign=cdc4ea8e&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaGNVzjx_czbCfPevb%252FScreen%2520Shot%25202021-07-27%2520at%252012.42.06%2520AM.png%3Falt%3Dmedia%26token%3D9ff5b9f8-7222-425a-b10c-e69b3208090a&width=768&dpr=4&quality=100&sign=792106f&sv=2)
 

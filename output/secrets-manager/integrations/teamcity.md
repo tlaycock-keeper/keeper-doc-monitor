@@ -455,43 +455,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=PMq0gWlXeF4KiAN54elU&only=yes&limit=100)
 
 Keeper Secrets Manager plugin for accessing secrets in TeamCity builds
 
-[PreviousTeller](/en/keeperpam/secrets-
-manager/integrations/teller)[NextTerraform Plugin](/en/keeperpam/secrets-
-manager/integrations/terraform)
-
-Last updated 4 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkN1xTeS7z68jeRshgStj%252Fkeeper%2520and%2520Team%2520City.jpg%3Falt%3Dmedia%26token%3D41e1f272-9736-495e-9f51-7b76baaf6850&width=768&dpr=4&quality=100&sign=ba4c85ef&sv=2)
 
 ##
 
@@ -524,7 +490,11 @@ Prerequisites
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
     * The TeamCity plugin accepts Base 64 format configurations
 
@@ -595,11 +565,27 @@ To add a connection, go the target project's settings, open the
 **Keeper Vault** , set its **Display name** to distinguish it from the others,
 and configure it as described below.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNdlO2intZScfxPHoCFPk%252Fteamcity-
+ksm-
+connections.png%3Falt%3Dmedia%26token%3D1c3b7d62-6b15-41d7-a102-4c770ffec558&width=768&dpr=4&quality=100&sign=e71f2e0&sv=2)
+
+Adding connection of type Keeper Vault
+
   * In **Project Administration | Connections** , click **Add Connection**.
 
   * Select **Keeper Vault** as the connection type.
 
   *   * Save the connection.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FvtxIhGbV9B62dtsOIIhO%252Fteamcity-
+ksm-connections-
+add.png%3Falt%3Dmedia%26token%3Df7d6600e-d4de-4e4b-91d7-25381bc18ce6&width=768&dpr=4&quality=100&sign=6e3f2402&sv=2)
+
+Configure Keeper Vault Connection
 
 ###
 
@@ -654,7 +640,11 @@ step.
 
      * Value: `%keeper://UserRecord1/fields/login%`
 
-     *   4. Save the parameter.
+     * ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCyNRIxtU170myoD55VNF%252Fteamcity-ksm-parameter.png%3Falt%3Dmedia%26token%3D5a523ab3-59d1-49a7-95e4-20dee93bc31f&width=768&dpr=4&quality=100&sign=b860834f&sv=2)
+
+Adding New Parameter
+
+  4. Save the parameter.
 
   5. Go to **Build Steps**.
 
@@ -684,46 +674,46 @@ variables etc. _Check the examples below._
 
   * Environment variable `env.Secret` \- `keeper://MyRecord1/custom_field/Secret1`
 
-A Keeper  with secrets shared to it
+[PreviousTeller](/en/keeperpam/secrets-
+manager/integrations/teller)[NextTerraform Plugin](/en/keeperpam/secrets-
+manager/integrations/terraform)
 
-See the  for instructions on creating an Application
+Last updated 4 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 Specify the token - paste a valid KSM config _(see_ _)_.
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
 [_Prerequisites_](/en/keeperpam/secrets-
 manager/integrations/teamcity#prerequisites)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
-Adding connection of type Keeper Vault
-
-Configure Keeper Vault Connection
-
-Adding New Parameter
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkN1xTeS7z68jeRshgStj%252Fkeeper%2520and%2520Team%2520City.jpg%3Falt%3Dmedia%26token%3D41e1f272-9736-495e-9f51-7b76baaf6850&width=768&dpr=4&quality=100&sign=ba4c85ef&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNdlO2intZScfxPHoCFPk%252Fteamcity-
-ksm-
-connections.png%3Falt%3Dmedia%26token%3D1c3b7d62-6b15-41d7-a102-4c770ffec558&width=768&dpr=4&quality=100&sign=e71f2e0&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FvtxIhGbV9B62dtsOIIhO%252Fteamcity-
-ksm-connections-
-add.png%3Falt%3Dmedia%26token%3Df7d6600e-d4de-4e4b-91d7-25381bc18ce6&width=768&dpr=4&quality=100&sign=6e3f2402&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCyNRIxtU170myoD55VNF%252Fteamcity-
-ksm-
-parameter.png%3Falt%3Dmedia%26token%3D5a523ab3-59d1-49a7-95e4-20dee93bc31f&width=768&dpr=4&quality=100&sign=b860834f&sv=2)
 

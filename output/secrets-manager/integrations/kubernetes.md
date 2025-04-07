@@ -453,43 +453,11 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MktCtiYBYc8OqUcflCC&only=yes&limit=100)
 Keeper Secrets Manager integration into Kubernetes for dynamic secrets
 retrieval
 
-[PreviousKubernetes External Secrets Operator](/en/keeperpam/secrets-
-manager/integrations/kubernetes-external-secrets-operator)[NextLinux
-Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-
-Last updated 3 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MktCpUkVepMUI2ry2UO%252F-MktD28kvZqqUuAoO5kD%252Fkubernetes-
+plugin-
+header.jpg%3Falt%3Dmedia%26token%3D19f48711-5185-45a7-96c4-efc7d11b34cc&width=768&dpr=4&quality=100&sign=6770b66&sv=2)
 
 We recommend using the [Kubernetes External Secrets
 Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-
@@ -677,6 +645,10 @@ record information from the Keeper vault.
 
 From the Keeper Vault, a "Database" record type is created using the following
 information.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FhMaZVLZ1ulGe9Ub1hDB7%252Fimage.png%3Falt%3Dmedia%26token%3D2c2f355d-6c5f-4abf-8779-2285fc87ce00&width=768&dpr=4&quality=100&sign=7385b406&sv=2)
 
 Now let's create our web application. The web page can be created using any of
 the Developer SDKs. For this example, it will being using the Python SDK. A
@@ -894,6 +866,12 @@ Copy
 Finally, use a web browser and go to the external IP address, port 5000, and
 you will see the Keeper vault record database secrets.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6TQeKxdHn0zbmfZKG270%252Fimage.png%3Falt%3Dmedia%26token%3D05e69023-6c1d-44ec-819c-842699af867d&width=768&dpr=4&quality=100&sign=307eac3b&sv=2)
+
+Example Web Application displaying Keeper secrets
+
 ###
 
 Example 2 - NGINX SSL certificates
@@ -903,6 +881,10 @@ image and SSL certificates retrieved from the Keeper Vault.
 
 A Login record is created in the vault to hold the SSL certificate, private
 key, and certificate password.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FBWcNIoRMf6uNGoiDBVo5%252FScreen%2520Shot%25202021-12-13%2520at%252010.32.10%2520AM.png%3Falt%3Dmedia%26token%3Defdf29b3-c17f-4f19-bd49-5003f2de86df&width=768&dpr=4&quality=100&sign=54d25ebc&sv=2)
 
 A one time token is generated and added to the Kubernetes ConfigMap.
 
@@ -1114,25 +1096,43 @@ At this point, you can now integrate Keeper Secrets Manager into your K8s
 deployments using any of the [Secrets Manager SDKs](/en/keeperpam/secrets-
 manager/developer-sdk-library).
 
-Example Web Application displaying Keeper secrets
+[PreviousKubernetes External Secrets Operator](/en/keeperpam/secrets-
+manager/integrations/kubernetes-external-secrets-operator)[NextLinux
+Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6TQeKxdHn0zbmfZKG270%252Fimage.png%3Falt%3Dmedia%26token%3D05e69023-6c1d-44ec-819c-842699af867d&width=768&dpr=4&quality=100&sign=307eac3b&sv=2)
+Last updated 3 months ago
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FhMaZVLZ1ulGe9Ub1hDB7%252Fimage.png%3Falt%3Dmedia%26token%3D2c2f355d-6c5f-4abf-8779-2285fc87ce00&width=768&dpr=4&quality=100&sign=7385b406&sv=2)
+Was this helpful?
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FBWcNIoRMf6uNGoiDBVo5%252FScreen%2520Shot%25202021-12-13%2520at%252010.32.10%2520AM.png%3Falt%3Dmedia%26token%3Defdf29b3-c17f-4f19-bd49-5003f2de86df&width=768&dpr=4&quality=100&sign=54d25ebc&sv=2)
+#### Company
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MktCpUkVepMUI2ry2UO%252F-MktD28kvZqqUuAoO5kD%252Fkubernetes-
-plugin-
-header.jpg%3Falt%3Dmedia%26token%3D19f48711-5185-45a7-96c4-efc7d11b34cc&width=768&dpr=4&quality=100&sign=6770b66&sv=2)
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

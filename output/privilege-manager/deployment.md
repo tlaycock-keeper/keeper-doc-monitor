@@ -421,6 +421,35 @@ manager/deployment?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * Encryption
+  * Deployment Package
+  * Deployment Collections
+  * Managing Deployments
+  * Device Collections
+  * Commander CLI
+  * Next Steps
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=KEkG5ky7xq0IniHT6zVE&only=yes&limit=100)
+
+  1. [Privilege Manager](/en/keeperpam/privilege-manager)
+
+# Deployment
+
+Deploying the Keeper Agent to your endpoints
+
+[PreviousSetup](/en/keeperpam/privilege-
+manager/setup)[NextPolicies](/en/keeperpam/privilege-manager/policies)
+
+Last updated 17 days ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -450,35 +479,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Overview
-  * Encryption
-  * Deployment Package
-  * Deployment Collections
-  * Managing Deployments
-  * Device Collections
-  * Commander CLI
-  * Next Steps
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=KEkG5ky7xq0IniHT6zVE&only=yes&limit=100)
-
-  1. [Privilege Manager](/en/keeperpam/privilege-manager)
-
-# Deployment
-
-Deploying the Keeper Agent to your endpoints
-
-[PreviousSetup](/en/keeperpam/privilege-
-manager/setup)[NextPolicies](/en/keeperpam/privilege-manager/policies)
-
-Last updated 16 days ago
-
-Was this helpful?
 
 ###
 
@@ -577,6 +577,10 @@ is included.
 Collections can not contain different resource types. For example a User Group
 collection can not contain a Machine resource.
 
+Policies can be applied to device collections and deployment collections to
+control privilege on all of the endpoints. Visit the
+[Policies](/en/keeperpam/privilege-manager/policies) page to learn more.
+
 ###
 
 Commander CLI
@@ -671,6 +675,9 @@ Copy
 
 Next Steps
 
+Once you have deployed the agent, it's time to set up
+[policies](/en/keeperpam/privilege-manager/policies).
+
 Creating a Deployment Package
 
 Deployment Dashboard
@@ -682,15 +689,6 @@ Enable or Disable individual endpoints
 Device Collections
 
 Custom Collections
-
-Policies can be applied to device collections and deployment collections to
-control privilege on all of the endpoints. Visit the  page to learn more.
-
-Once you have deployed the agent, it's time to set up .
-
-[Policies](/en/keeperpam/privilege-manager/policies)
-
-[policies](/en/keeperpam/privilege-manager/policies)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

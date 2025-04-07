@@ -451,7 +451,7 @@ Applying least privilege policies to your users and machines
 [PreviousDeployment](/en/keeperpam/privilege-manager/deployment)[NextManaging
 Requests](/en/keeperpam/privilege-manager/managing-requests)
 
-Last updated 16 days ago
+Last updated 17 days ago
 
 Was this helpful?
 

@@ -520,10 +520,6 @@ This plugin rotates passwords for both local and Active Directory accounts.
 When rotating Active Directory password use `DOMAIN\USERNAME` syntax for Login
 field.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FH1Vr6GKR8x1XjZHpNZyK%252Fimage.png%3Falt%3Dmedia%26token%3D1e71b489-5ae6-4071-9e67-17568991b47e&width=768&dpr=4&quality=100&sign=692132c4&sv=2)
-
 ####
 
 Add the following Custom Fields to the record that you want to rotate within
@@ -575,10 +571,14 @@ Output
 After rotation is completed, the new password will be stored in the `Password`
 field of the record
 
-A Keeper Record setup for Windows password rotation
-
 [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
 cli#typed-vs-untyped-records-v3-vs-v2)
+
+A Keeper Record setup for Windows password rotation
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FH1Vr6GKR8x1XjZHpNZyK%252Fimage.png%3Falt%3Dmedia%26token%3D1e71b489-5ae6-4071-9e67-17568991b47e&width=768&dpr=4&quality=100&sign=692132c4&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

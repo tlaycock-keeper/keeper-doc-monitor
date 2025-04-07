@@ -551,6 +551,10 @@ Copy
 
 Allow users to view RBI Session Recordings.
 
+The above enforcement policies can also be enabled on the [Keeper Commander
+CLI](/en/keeperpam/commander-cli/command-reference/secrets-manager-
+commands#overview) using the `enterprise-role` command:
+
 Copy
 
     
@@ -719,9 +723,6 @@ session.
 
 Session Recordings - RBI
 
-The above enforcement policies can also be enabled on the  using the
-`enterprise-role` command:
-
 By default, all URLs are permitted. Detailed Information
 
 By default, no restrictions are imposed on resources loaded by pages. Detailed
@@ -732,9 +733,6 @@ isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
 
 [here](/en/keeperpam/privileged-access-manager/remote-browser-
 isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
-
-[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
-manager-commands#overview)
 
 For this protocol, graphical data, including timing information, is recorded.
 For more details on the recordings and how to access them, see the  docs.

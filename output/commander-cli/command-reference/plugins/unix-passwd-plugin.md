@@ -521,9 +521,7 @@ Rotation supports legacy and typed records. If using typed record, a 'Login'
 type field is required. Additional fields may be added depending on the
 rotation type as well. See the instructions below.
 
-See the [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-
-commander-cli#typed-vs-untyped-records-v3-vs-v2)section for more information
-on legacy vs typed records
+See the section for more information on legacy vs typed records
 
 ###
 
@@ -531,6 +529,10 @@ Set the Login Name
 
 **Populate the 'Login' field of the Keeper record with the login to use with
 this rotation.**
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FH1Vr6GKR8x1XjZHpNZyK%252Fimage.png%3Falt%3Dmedia%26token%3D1e71b489-5ae6-4071-9e67-17568991b47e&width=768&dpr=4&quality=100&sign=692132c4&sv=2)
 
 ####
 
@@ -588,9 +590,8 @@ field of the record
 
 Keeper Record setup for Unix passwd rotation
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FH1Vr6GKR8x1XjZHpNZyK%252Fimage.png%3Falt%3Dmedia%26token%3D1e71b489-5ae6-4071-9e67-17568991b47e&width=768&dpr=4&quality=100&sign=692132c4&sv=2)
+[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
+cli#typed-vs-untyped-records-v3-vs-v2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

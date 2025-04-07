@@ -602,10 +602,6 @@ Administrative Credential Record
 
 Linked PAM User credential used for connection and administrative operations
 
-**Required** Visit this [section](/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-machine/example-linux-
-machine#administrative-credential-record) for more details
-
 Protocol
 
 Native protocol used for creating a session from the Gateway to the target
@@ -704,4 +700,9 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+**Required** Visit this  for more details
+
+[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine/example-linux-machine#administrative-credential-record)
 

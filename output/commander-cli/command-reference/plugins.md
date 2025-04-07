@@ -537,42 +537,6 @@ need a particular plugin created, send us an email to
 
 Supported Plugins
 
-[Active Directory](/en/keeperpam/commander-cli/command-
-reference/plugins/active-directory-plugin)
-
-[Amazon AWS Key](/en/keeperpam/commander-cli/command-reference/plugins/aws-
-plugin)
-
-[Amazon AWS Password](/en/keeperpam/commander-cli/command-
-reference/plugins/aws-plugin)
-
-[Azure AD Password](/en/keeperpam/commander-cli/command-
-reference/plugins/azure-plugin)
-
-[Microsoft SQL Server](/en/keeperpam/commander-cli/command-
-reference/plugins/microsoft-sql-server-plugin)
-
-[MySQL](/en/keeperpam/commander-cli/command-reference/plugins/mysql-plugin)
-
-[Oracle](/en/keeperpam/commander-cli/command-reference/plugins/oracle-plugin)
-
-[PostgreSQL](/en/keeperpam/commander-cli/command-reference/plugins/postgresql-
-plugin)
-
-[PsPasswd](/en/keeperpam/commander-cli/command-reference/plugins/pspasswd-
-plugin)
-
-[SSH Passphrase](/en/keeperpam/commander-cli/command-reference/plugins/ssh-
-plugin)
-
-[SSH Key](/en/keeperpam/commander-cli/command-reference/plugins/ssh-plugin)
-
-[Unix Password](/en/keeperpam/commander-cli/command-reference/plugins/unix-
-passwd-plugin)
-
-[Windows Password](/en/keeperpam/commander-cli/command-
-reference/plugins/windows-plugin)
-
 ###
 
 Github Location
@@ -633,4 +597,40 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+[Active Directory](/en/keeperpam/commander-cli/command-
+reference/plugins/active-directory-plugin)
+
+[Amazon AWS Key](/en/keeperpam/commander-cli/command-reference/plugins/aws-
+plugin)
+
+[Amazon AWS Password](/en/keeperpam/commander-cli/command-
+reference/plugins/aws-plugin)
+
+[Azure AD Password](/en/keeperpam/commander-cli/command-
+reference/plugins/azure-plugin)
+
+[Microsoft SQL Server](/en/keeperpam/commander-cli/command-
+reference/plugins/microsoft-sql-server-plugin)
+
+[MySQL](/en/keeperpam/commander-cli/command-reference/plugins/mysql-plugin)
+
+[Oracle](/en/keeperpam/commander-cli/command-reference/plugins/oracle-plugin)
+
+[PostgreSQL](/en/keeperpam/commander-cli/command-reference/plugins/postgresql-
+plugin)
+
+[PsPasswd](/en/keeperpam/commander-cli/command-reference/plugins/pspasswd-
+plugin)
+
+[SSH Passphrase](/en/keeperpam/commander-cli/command-reference/plugins/ssh-
+plugin)
+
+[SSH Key](/en/keeperpam/commander-cli/command-reference/plugins/ssh-plugin)
+
+[Unix Password](/en/keeperpam/commander-cli/command-reference/plugins/unix-
+passwd-plugin)
+
+[Windows Password](/en/keeperpam/commander-cli/command-
+reference/plugins/windows-plugin)
 

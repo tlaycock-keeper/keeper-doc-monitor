@@ -452,44 +452,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=2cg7y34bmV9oUNBri7sD&only=yes&limit=100)
 
 Rotating AWS IAM account passwords with Keeper
 
-[PreviousAWS](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/aws)[NextManaged Microsoft AD
-User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/aws/directory-user)
-
-Last updated 1 month ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHNHUe16FtIGdUgdUNlBe%252FIAM%2520User.jpg%3Falt%3Dmedia%26token%3De97f24e1-a1f4-42bb-898d-2abc25c90e62&width=768&dpr=4&quality=100&sign=c95a2ac2&sv=2)
 
 ##
 
@@ -506,11 +471,7 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  * Keeper Secrets Manager is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
-
-  * Keeper Rotation is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
-
-  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+  *   *   * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
 
   * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed and running
 
@@ -526,6 +487,12 @@ The Keeper Gateway uses AWS APIs to rotate the credentials defined in the
 In this folder, you’ll create records for the AWS IAM accounts that you’ll
 rotate. You will create a **PAM User** record for each user that will be
 rotated.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwC0l0QJfCl7AtOqW2D9W%252FScreenshot%25202023-05-11%2520at%25204.30.18%2520PM.jpg%3Falt%3Dmedia%26token%3Dfe098b44-01f8-472d-8e4f-2053259d1ad6&width=768&dpr=4&quality=100&sign=d9dcc9c4&sv=2)
+
+Shared Folder containing PAM User records
 
 Note: The target user to be rotated must have AWS Console access and at
 minimum have a temporary password set in the AWS Console before the password
@@ -562,6 +529,12 @@ field is left blank.
 
 This is the full ARN of the user identity, e.g:
 `arn:aws:iam::123456789:user/TestUser`
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuKjUNtKp16pQFySlZHHF%252FScreenshot%25202023-05-11%2520at%25204.26.22%2520PM.jpg%3Falt%3Dmedia%26token%3Dfff1581d-b7c7-487b-9d4a-27ee74cec4c9&width=768&dpr=4&quality=100&sign=db35514&sv=2)
+
+PAM User records for IAM Users
 
 ##
 
@@ -615,6 +588,12 @@ For more details on all the configurable fields in the PAM Configuration
 record, visit this [page](/en/keeperpam/privileged-access-manager/getting-
 started/pam-configuration).
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FUJdbTkl8X0VA8sIwhvUq%252FScreenshot%25202023-05-11%2520at%25204.32.14%2520PM.jpg%3Falt%3Dmedia%26token%3D97dc605c-92a2-432d-ba5f-48ef2dc903e8&width=768&dpr=4&quality=100&sign=a8700ab3&sv=2)
+
+PAM Configuration for AWS Environment
+
 ##
 
 4\. Configure Rotation on the PAM User Records
@@ -630,37 +609,64 @@ Select the **PAM User** record(s) from Step 2, edit the record and open the
 
   * Upon saving, the rotation button will be enabled and available to rotate on demand, or via the selected schedule.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjNEMn58x89jzgFnG5A4X%252FScreenshot%25202025-02-08%2520at%252012.01.05%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Ddf381b81-6570-4852-a749-2727ba1f8579&width=768&dpr=4&quality=100&sign=fc76cdae&sv=2)
+
+AWS IAM User Password
+
 Any user with `edit` rights to a PAM User record has the ability to setup
 rotation for that record.
 
 Note: The user must have AWS Console access and at minimum have a temporary
 password set in the AWS Console before the password can be rotated.
 
-Shared Folder containing PAM User records
+[PreviousAWS](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws)[NextManaged Microsoft AD
+User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/aws/directory-user)
 
-PAM User records for IAM Users
+Last updated 1 month ago
 
-PAM Configuration for AWS Environment
+Was this helpful?
 
-AWS IAM User Password
+#### Company
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHNHUe16FtIGdUgdUNlBe%252FIAM%2520User.jpg%3Falt%3Dmedia%26token%3De97f24e1-a1f4-42bb-898d-2abc25c90e62&width=768&dpr=4&quality=100&sign=c95a2ac2&sv=2)
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwC0l0QJfCl7AtOqW2D9W%252FScreenshot%25202023-05-11%2520at%25204.30.18%2520PM.jpg%3Falt%3Dmedia%26token%3Dfe098b44-01f8-472d-8e4f-2053259d1ad6&width=768&dpr=4&quality=100&sign=d9dcc9c4&sv=2)
+#### Support
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuKjUNtKp16pQFySlZHHF%252FScreenshot%25202023-05-11%2520at%25204.26.22%2520PM.jpg%3Falt%3Dmedia%26token%3Dfff1581d-b7c7-487b-9d4a-27ee74cec4c9&width=768&dpr=4&quality=100&sign=db35514&sv=2)
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FUJdbTkl8X0VA8sIwhvUq%252FScreenshot%25202023-05-11%2520at%25204.32.14%2520PM.jpg%3Falt%3Dmedia%26token%3D97dc605c-92a2-432d-ba5f-48ef2dc903e8&width=768&dpr=4&quality=100&sign=a8700ab3&sv=2)
+#### Solutions
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjNEMn58x89jzgFnG5A4X%252FScreenshot%25202025-02-08%2520at%252012.01.05%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Ddf381b81-6570-4852-a749-2727ba1f8579&width=768&dpr=4&quality=100&sign=fc76cdae&sv=2)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+Keeper Secrets Manager is enabled for your
+
+Keeper Rotation is enabled for your
+
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
+
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
 

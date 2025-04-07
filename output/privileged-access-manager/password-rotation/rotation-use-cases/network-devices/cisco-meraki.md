@@ -718,7 +718,7 @@ be rotated.
 
 Step 2: Add PAM Script
 
-  * 
+  * Attach the below [Python script ](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-meraki#python-script)that will perform the password rotation. The script has additional comments inside that describe each line.
 
 ###
 
@@ -956,11 +956,11 @@ user management portal, the authorized option should be selected as 'Yes'].
 After successfully setting up Rotation for your Cisco User Credentials on the
 PAM User Record, clicking on "Run Scripts Only" will rotate the credential:
 
-Attach the below that will perform the password rotation. The script has
-additional comments inside that describe each line.
-
-[Python script ](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/network-devices/cisco-meraki#python-script)
+[https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
+Scripts/blob/main/cisco-
+meraki/update_meraki_user.pygithub.com](https://github.com/Keeper-
+Security/Zero-Trust-KeeperPAM-Scripts/blob/main/cisco-
+meraki/update_meraki_user.py)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -993,10 +993,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRoVLFYb2o
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNJlysf3o7YpCNYYAcOIj%252FmerakiRecord2.png%3Falt%3Dmedia%26token%3D3dfdf243-12cd-4fcd-a737-21d0c43f5653&width=768&dpr=4&quality=100&sign=888d0fa6&sv=2)
-
-[https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
-Scripts/blob/main/cisco-
-meraki/update_meraki_user.pygithub.com](https://github.com/Keeper-
-Security/Zero-Trust-KeeperPAM-Scripts/blob/main/cisco-
-meraki/update_meraki_user.py)
 

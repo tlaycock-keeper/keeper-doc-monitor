@@ -496,9 +496,19 @@ Set the PostgreSQL Login Name and Password
 **Populate the 'Login' field of the Keeper record with the PostgreSQL login
 name**
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4TNMCZKhejp3vlE8tBCN%252Fimage.png%3Falt%3Dmedia%26token%3D4cfaa6bd-a624-4e25-aea3-38d59984e901&width=768&dpr=4&quality=100&sign=c058d501&sv=2)
+
+Commander will use the login and password to login to the PostgreSQL account
+
 ###
 
 Set the Hostname and Port
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fqo9RDE4VL2UddhfXobQn%252Fimage.png%3Falt%3Dmedia%26token%3Dcd25a90a-e050-4263-bb09-391ea39e4035&width=768&dpr=4&quality=100&sign=cd09000f&sv=2)
 
 If using an untyped record, the host and port can be set to custom fields. See
 below.
@@ -513,6 +523,10 @@ Enter the Database Name
 
 Add a custom field to the record labeled "cmdr:db" and fill the field with the
 name of the database to use.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwoGgeVwEBlsI9B4g7ffZ%252Fimage.png%3Falt%3Dmedia%26token%3Df4950821-af11-48d5-bf7b-b92322d22e69&width=768&dpr=4&quality=100&sign=4fea8ee7&sv=2)
 
 ###
 
@@ -569,10 +583,6 @@ psql --host=${cmdr:host} --port=${cmdr:port} --username=${login}
 
 Here's a screenshot of the Keeper Vault record for this use case:
 
-For more information on the `connect` command, see the
-[documentation](/en/keeperpam/commander-cli/command-
-reference/plugins/password-rotation#connect-command)
-
 [PreviousOracle Plugin](/en/keeperpam/commander-cli/command-
 reference/plugins/oracle-plugin)[NextPSPasswd Plugin](/en/keeperpam/commander-
 cli/command-reference/plugins/pspasswd-plugin)
@@ -611,21 +621,12 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
-Commander will use the login and password to login to the PostgreSQL account
-
 A Keeper Record setup for connection
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4TNMCZKhejp3vlE8tBCN%252Fimage.png%3Falt%3Dmedia%26token%3D4cfaa6bd-a624-4e25-aea3-38d59984e901&width=768&dpr=4&quality=100&sign=c058d501&sv=2)
+For more information on the `connect` command, see the
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fqo9RDE4VL2UddhfXobQn%252Fimage.png%3Falt%3Dmedia%26token%3Dcd25a90a-e050-4263-bb09-391ea39e4035&width=768&dpr=4&quality=100&sign=cd09000f&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwoGgeVwEBlsI9B4g7ffZ%252Fimage.png%3Falt%3Dmedia%26token%3Df4950821-af11-48d5-bf7b-b92322d22e69&width=768&dpr=4&quality=100&sign=4fea8ee7&sv=2)
+[documentation](/en/keeperpam/commander-cli/command-
+reference/plugins/password-rotation#connect-command)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

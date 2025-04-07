@@ -440,13 +440,13 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 On this page
 
   * Secret Server Import
-  * Make sure Webservices are enabled
-  * Secret Server Configuration
+  * Pre-requisites
+  * Adjust Session Timeout
   * Step 1. Download Team and Shared Folder Structure
   * Step 2. Import Shared Folders
   * Step 3. Export TOTP Codes
   * Step 4. Import the Secret Server Vault
-  * Step 5. Apply Membership Permissions
+  * Step 5. Applying Memberships 
   * Step 6. End-Users are invited to Keeper
   * Receiving Shared Folders
 
@@ -468,7 +468,7 @@ reference/import-and-export-commands/lastpass-import)[NextKeepass
 Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
 commands/keepass-import)
 
-Last updated 4 months ago
+Last updated 3 hours ago
 
 Was this helpful?
 
@@ -519,7 +519,7 @@ in this document.
 
 ###
 
-Make sure Webservices are enabled
+Pre-requisites
 
 In Secret Server admin settings, ensure Webservices are enabled
 
@@ -527,7 +527,7 @@ In Secret Server admin settings, ensure Webservices are enabled
 
 ###
 
-Secret Server Configuration
+Adjust Session Timeout
 
 In Secret Server admin settings, ensure that "Session Timeout for Webservices"
 is set to a high enough value, since large vaults will take time to process.
@@ -537,16 +537,6 @@ For example, 59 minutes.
 
 Step 1. Download Team and Shared Folder Structure
 
-In Keeper Commander, the Keeper/Thycotic Administrator will run the following:
-
-Copy
-
-    
-    
-    download-membership --source=thycotic
-    ...     Thycotic Host or URL: https://xyz.acme.com/secretserver
-    ...     Thycotic Username: acme.com\user
-
 Prior to running the above code snippet, make sure to:
 
   * Verify the base Thycotic URL in your browser
@@ -554,6 +544,23 @@ Prior to running the above code snippet, make sure to:
   * The Username is in the correct format:
 
     * If it's a AD user, the format is `DOMAIN\username` otherwise `username`
+
+In Keeper Commander, the Keeper/Thycotic Administrator will run the following:
+
+Copy
+
+    
+    
+    download-membership --source=thycotic
+
+You will then be prompted with the following:
+
+Copy
+
+    
+    
+    ...     Thycotic Host or URL: https://xyz.acme.com/secretserver
+    ...     Thycotic Username: acme.com\user
 
 Executing the above code snippet will perform the following 3 functions:
 
@@ -564,7 +571,8 @@ Executing the above code snippet will perform the following 3 functions:
   * Download Shared Folder permissions
 
 This step downloads a file locally called "shared_folder_membership.json"
-which contains the team and shared folder structure.
+which contains the team and shared folder structure. _The file location should
+be under your user folde_ r
 
 Keeper does not yet support folders within shared folders that have different
 permissions than the parent.
@@ -607,8 +615,9 @@ by manually downloading a CSV file. The admin of Secret Server needs to go to
 
   * Export Format: CSV
 
-Export the file and save it to your home folder, or the folder where Keeper
-Commander is running. The file will be called "secrets-export.csv" by default.
+Export the file and save it to your home folder or the folder where Keeper
+Commander is running. By default, the file will be called "secrets-
+export.csv."
 
 ###
 
@@ -633,7 +642,7 @@ Commander will attempt to build the same folder structure as Secret Server in
 the admin's Keeper vault.
 
 Commander will also look for the file "secrets-export.csv" in the user's home
-folder or current Commander folder, for the purpose of importing TOTP codes.
+folder or current Commander folder to import TOTP codes.
 
 **Note 1:** This command will import and populate regular folders, shared
 folders and records within the folders. This will NOT import the private
@@ -641,12 +650,20 @@ folders of other users within Secret Server. This step will only import the
 information available to the admin.
 
 **Note 2:** If a Shared Folder is found within another shared folder with
-different permission, the shared folder will be moved to the root folder
+different permissions, the shared folder will be moved to the root folder
 (since Keeper does not support subfolder permissions).
 
 ###
 
-Step 5. Apply Membership Permissions
+Step 5. Applying Memberships
+
+Note: All Thycotic teams must exist in Keeper **with exact matching names**
+before execution. This way, existing users will be applied to the
+corresponding teams. You can create missing teams through:
+
+  * Keeper Admin Console (_Teams > Create New Team_)
+
+  * Commander's `create-team` command
 
 In Keeper Commander, the Keeper/Thycotic Administrator will run the following:
 
@@ -657,16 +674,16 @@ Copy
     apply-membership
 
 This will read the file called "shared_folder_membership.json" from Step 1 and
-apply the shared folder permissions for any users and team which exist in the
-Keeper enterprise environment. This command is safe to run over and over
-again, and it will not generate duplicates.
+apply the shared folder permissions for any users and teams in the Keeper
+enterprise environment. This command is safe to run repeatedly and will not
+generate duplicates.
 
 **Explanation:** When users are invited/created through SSO or your invitation
 process, their public keys are created. Therefore, Keeper cannot apply
 membership until the users exist.
 
-For this reason, the Keeper Admin needs to run the "apply-membership" command
-on a daily basis, hourly, or on demand, when users are created in Keeper.
+For this reason, the Keeper Admin must run the "apply-membership" command
+daily, hourly, or on demand when users are created in Keeper.
 
 ###
 
@@ -694,7 +711,7 @@ Keeper users will receive access to their Shared Folders.
 Due to the number of steps, we recommend performing a pilot test with a few
 users before rolling out to the entire organization.
 
-If you have any questions please email commander@keepersecurity.com.
+If you have any questions, please email commander@keepersecurity.com.
 
 Session Timeout
 

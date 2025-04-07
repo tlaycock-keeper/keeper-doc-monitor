@@ -460,7 +460,7 @@ started/gateways/linux-installation)[NextAuto
 Updater](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/auto-updater)
 
-Last updated 14 days ago
+Last updated 15 days ago
 
 Was this helpful?
 
