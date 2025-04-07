@@ -58,9 +58,9 @@ jobs:
         with:
           keeper-secret-config: ${{ secrets.KSM_CONFIG }}
           secrets: |-
-            4rtq8BnDYPvqa2eDOtxbCg/field/Login > LOGIN
+            4rtq8BnDYPvqa2eDOtxbCg/field/login > LOGIN
             4rtq8BnDYPvqa2eDOtxbCg/field/password > PASSWORD
-            4rtq8BnDYPvqa2eDOtxbCg/field/recipient > RECIPIENT
+            4rtq8BnDYPvqa2eDOtxbCg/field/Recipients > RECIPIENT
 
       - name: Send email notification
         uses: dawidd6/action-send-mail@v3
