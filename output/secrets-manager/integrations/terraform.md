@@ -425,6 +425,36 @@ manager/integrations/terraform?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Features
@@ -464,36 +494,6 @@ Last updated 4 months ago
 
 Was this helpful?
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 Features
@@ -504,9 +504,6 @@ Features
 
   * Get Files from the Keeper Vault
 
-For a complete list of Keeper Secrets Manager features see the [Overview
-](/en/keeperpam/secrets-manager/overview)
-
 ##
 
 Prerequisites
@@ -514,19 +511,11 @@ Prerequisites
 This page documents the Secrets Manager Terraform integration. In order to
 utilize this integration, you will need:
 
-  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
-
-    * Secrets Manager addon enabled for your Keeper account
+  *     * Secrets Manager addon enabled for your Keeper account
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
-
-    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
-
-  * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
-
-    * The Terraform integration accepts JSON and Base 64 format configurations
+  *     *   *     * The Terraform integration accepts JSON and Base 64 format configurations
 
 ##
 
@@ -544,10 +533,6 @@ Installation
 ###
 
 **Registry install**
-
-The Keeper Secrets Manager provider page is [located here
-](https://registry.terraform.io/providers/Keeper-
-Security/secretsmanager/latest)
 
 To install this provider, add the following code to your Terraform
 configuration and run `terraform init`:
@@ -572,13 +557,6 @@ Copy
 ###
 
 Manual Installation
-
-Download the latest version of the Terraform Provider for your platform from
-our [GitHub release](https://github.com/Keeper-Security/terraform-provider-
-keeper/releases/latest) page and copy the archive to the corresponding
-Terraform plugin folder (_creating any missing folders in the path_).
-Initialize source with full provider URL: source = `"github.com/keeper-
-security/secretsmanager"`
 
 WindowsMac OSLinux
 
@@ -607,11 +585,6 @@ Copy
     cd ~/.terraform.d/plugins/github.com/keeper-security/secretsmanager && \
     curl -SfLOJ https://github.com/keeper-security/terraform-provider-secretsmanager/releases/download/v1.0.0/terraform-provider-secretsmanager_1.0.0_linux_amd64.zip
 
-For help on manually installing Terraform Providers, please refer to the
-[official Terraform
-documentation](https://www.terraform.io/docs/configuration/providers.html#third-
-party-plugins).
-
 ##
 
 Usage
@@ -619,11 +592,6 @@ Usage
 ###
 
 Configure the Provider
-
-The [Keeper Secrets Manager](https://docs.keeper.io/secrets-manager/) provider
-is used to interact with the resources supported by Keeper Secrets Manager.
-The provider needs to be configured with Keeper credentials before it can be
-used.
 
 Copy
 
@@ -656,10 +624,6 @@ Configuration File Contents
 
   * `hostname` \- (Optional) By default plugin will connect to `keepersecurity.com`
 
-For more information on creating a Secrets Manager configuration, see the[
-Configuration Documentation](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration)
-
 ###
 
 Get Secrets Using Data Sources
@@ -687,11 +651,6 @@ Copy
         path = "<RECORD_UID>"
     }
 
-To access any additional custom fields or standard fields for user defined
-record types use
-[`secretsmanager_field`](https://registry.terraform.io/providers/keeper-
-security/secretsmanager/latest/docs/data-sources/field) data source
-
 ####
 
 List of supported record types
@@ -700,113 +659,45 @@ Record Type
 
 Data Source Name
 
-[Address](https://registry.terraform.io/providers/keeper-
-security/secretsmanager/latest/docs/data-sources/address)
-
 "secretsmanager_address"
-
-[Bank Account](https://registry.terraform.io/providers/keeper-
-security/secretsmanager/latest/docs/data-sources/bank_account)
 
 "secretsmanager_bank_account"
 
-[Bank Card](https://registry.terraform.io/providers/keeper-
-security/secretsmanager/latest/docs/data-sources/bank_card)
-
 "secretsmanager_bank_card"
-
-[Birth Certificate](https://registry.terraform.io/providers/keeper-
-security/secretsmanager/latest/docs/data-sources/birth_certificate)
 
 "secretsmanager_birth_certificate"
 
-[Contact](https://registry.terraform.io/providers/keeper-
-security/secretsmanager/latest/docs/data-sources/contact)
-
 "secretsmanager_contact"
-
-[Database Credentials](https://registry.terraform.io/providers/keeper-
-security/secretsmanager/latest/docs/data-sources/database_credentials)
 
 "secretsmanager_database_credentials"
 
-[Drivers License](https://registry.terraform.io/providers/keeper-
-security/secretsmanager/latest/docs/data-sources/driver_license)
-
 "secretsmanager_drivers_license"
-
-[Encrypted Notes](https://registry.terraform.io/providers/keeper-
-security/secretsmanager/latest/docs/data-sources/encrypted_notes)
 
 "secretsmanager_encrypted_notes"
 
-[Field](https://registry.terraform.io/providers/keeper-
-security/secretsmanager/latest/docs/data-sources/field)
-
 "secretsmanager_field"
-
-[File](https://registry.terraform.io/providers/keeper-
-security/secretsmanager/latest/docs/data-sources/file)
 
 "secretsmanager_file"
 
-[Health Insurance](https://registry.terraform.io/providers/keeper-
-security/secretsmanager/latest/docs/data-sources/health_insurance)
-
 "secretsmanager_health_insurance"
-
-[Login](https://registry.terraform.io/providers/keeper-
-security/secretsmanager/latest/docs/data-sources/login)
 
 "secretsmanager_login"
 
-[Membership](https://registry.terraform.io/providers/keeper-
-security/secretsmanager/latest/docs/data-sources/membership)
-
 "secretsmanager_membership"
-
-[Passport](https://registry.terraform.io/providers/keeper-
-security/secretsmanager/latest/docs/data-sources/passport)
 
 "secretsmanager_passport"
 
-[Photo](https://registry.terraform.io/providers/keeper-
-security/secretsmanager/latest/docs/data-sources/photo)
-
 "secretsmanager_photo"
-
-[Record](https://registry.terraform.io/providers/keeper-
-security/secretsmanager/latest/docs/data-sources/record)
 
 "secretsmanager_record"
 
-[Server Credentials](https://registry.terraform.io/providers/keeper-
-security/secretsmanager/latest/docs/data-sources/server_credentials)
-
 "secretsmanager_server_credentials"
-
-[Software License](https://registry.terraform.io/providers/keeper-
-security/secretsmanager/latest/docs/data-sources/software_license)
 
 "secretsmanager_software_license"
 
-[SSH Keys](https://registry.terraform.io/providers/keeper-
-security/secretsmanager/latest/docs/data-sources/ssh_keys)
-
 "secretsmanager_ssh_keys"
 
-[SSN Card](https://registry.terraform.io/providers/keeper-
-security/secretsmanager/latest/docs/data-sources/ssn_card)
-
 "secretsmanager_ssn_card"
-
-To see the fields available to each data source see [Record Types Data Source
-Reference](https://registry.terraform.io/providers/keeper-
-security/secretsmanager/latest/docs)
-
-For more information on record types see [record types
-documentation](/en/keeperpam/commander-cli/command-reference/record-
-commands/default-record-types)
 
 ###
 
@@ -853,11 +744,6 @@ The field query uses the format: `"<UID>/field/<field type>"`
 
 Creating Records With Resources
 
-Keeper provides Terraform resources for the major Keeper record types [shown
-above](/en/keeperpam/secrets-manager/integrations/terraform#list-of-supported-
-record-types). Using these resources, Keeper records can be created using the
-Keeper Secrets Manager Terraform plugin.
-
 To create a record, use the resource corresponding to the record type that you
 would like to use.
 
@@ -899,11 +785,6 @@ The record title.
 
 Record Fields
 
-The value and settings for each record field can be set in the resource. For
-information on the available fields per record type, see the[ resource
-definitions](https://registry.terraform.io/providers/Keeper-
-Security/secretsmanager/latest/docs).
-
 Each field is represented as an object in the resource.
 
 **Example login field**
@@ -928,10 +809,6 @@ Setting Field Values
 Use the `value` field to set the intended value for each field. The format of
 fields can differ, for example the `login` field type takes a string, while
 the `name` field takes an object with "first", "middle" and "last" fields.
-
-For reference of each field's value format see the [resource
-documentation](https://registry.terraform.io/providers/Keeper-
-Security/secretsmanager/latest/docs).
 
 Setting Field Settings
 
@@ -1188,9 +1065,158 @@ Copy
     }
     
 
-For more examples, check out the [examples folder](https://github.com/keeper-
-security/terraform-provider-secretsmanager/tree/master/examples) in the source
-code.
+For a complete list of Keeper Secrets Manager features see the
+
+Keeper Secrets Manager access (See the  for more details)
+
+A Keeper  with secrets shared to it
+
+See the  for instructions on creating an Application
+
+An initialized Keeper
+
+The Keeper Secrets Manager provider page is
+
+Download the latest version of the Terraform Provider for your platform from
+our  page and copy the archive to the corresponding Terraform plugin folder
+(_creating any missing folders in the path_). Initialize source with full
+provider URL: source = `"github.com/keeper-security/secretsmanager"`
+
+For help on manually installing Terraform Providers, please refer to the .
+
+The  provider is used to interact with the resources supported by Keeper
+Secrets Manager. The provider needs to be configured with Keeper credentials
+before it can be used.
+
+For more information on creating a Secrets Manager configuration, see the
+
+To access any additional custom fields or standard fields for user defined
+record types use  data source
+
+To see the fields available to each data source see
+
+For more information on record types see
+
+Keeper provides Terraform resources for the major Keeper record types . Using
+these resources, Keeper records can be created using the Keeper Secrets
+Manager Terraform plugin.
+
+The value and settings for each record field can be set in the resource. For
+information on the available fields per record type, see the.
+
+For reference of each field's value format see the .
+
+For more examples, check out the  in the source code.
+
+[Overview ](/en/keeperpam/secrets-manager/overview)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+[Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration)
+
+[located here ](https://registry.terraform.io/providers/Keeper-
+Security/secretsmanager/latest)
+
+[GitHub release](https://github.com/Keeper-Security/terraform-provider-
+keeper/releases/latest)
+
+[official Terraform
+documentation](https://www.terraform.io/docs/configuration/providers.html#third-
+party-plugins)
+
+[Keeper Secrets Manager](https://docs.keeper.io/secrets-manager/)
+
+[ Configuration Documentation](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration)
+
+[`secretsmanager_field`](https://registry.terraform.io/providers/keeper-
+security/secretsmanager/latest/docs/data-sources/field)
+
+[Record Types Data Source
+Reference](https://registry.terraform.io/providers/keeper-
+security/secretsmanager/latest/docs)
+
+[record types documentation](/en/keeperpam/commander-cli/command-
+reference/record-commands/default-record-types)
+
+[ resource definitions](https://registry.terraform.io/providers/Keeper-
+Security/secretsmanager/latest/docs)
+
+[resource documentation](https://registry.terraform.io/providers/Keeper-
+Security/secretsmanager/latest/docs)
+
+[examples folder](https://github.com/keeper-security/terraform-provider-
+secretsmanager/tree/master/examples)
+
+[shown above](/en/keeperpam/secrets-manager/integrations/terraform#list-of-
+supported-record-types)
+
+[Address](https://registry.terraform.io/providers/keeper-
+security/secretsmanager/latest/docs/data-sources/address)
+
+[Bank Account](https://registry.terraform.io/providers/keeper-
+security/secretsmanager/latest/docs/data-sources/bank_account)
+
+[Bank Card](https://registry.terraform.io/providers/keeper-
+security/secretsmanager/latest/docs/data-sources/bank_card)
+
+[Birth Certificate](https://registry.terraform.io/providers/keeper-
+security/secretsmanager/latest/docs/data-sources/birth_certificate)
+
+[Contact](https://registry.terraform.io/providers/keeper-
+security/secretsmanager/latest/docs/data-sources/contact)
+
+[Database Credentials](https://registry.terraform.io/providers/keeper-
+security/secretsmanager/latest/docs/data-sources/database_credentials)
+
+[Drivers License](https://registry.terraform.io/providers/keeper-
+security/secretsmanager/latest/docs/data-sources/driver_license)
+
+[Encrypted Notes](https://registry.terraform.io/providers/keeper-
+security/secretsmanager/latest/docs/data-sources/encrypted_notes)
+
+[Field](https://registry.terraform.io/providers/keeper-
+security/secretsmanager/latest/docs/data-sources/field)
+
+[File](https://registry.terraform.io/providers/keeper-
+security/secretsmanager/latest/docs/data-sources/file)
+
+[Health Insurance](https://registry.terraform.io/providers/keeper-
+security/secretsmanager/latest/docs/data-sources/health_insurance)
+
+[Login](https://registry.terraform.io/providers/keeper-
+security/secretsmanager/latest/docs/data-sources/login)
+
+[Membership](https://registry.terraform.io/providers/keeper-
+security/secretsmanager/latest/docs/data-sources/membership)
+
+[Passport](https://registry.terraform.io/providers/keeper-
+security/secretsmanager/latest/docs/data-sources/passport)
+
+[Photo](https://registry.terraform.io/providers/keeper-
+security/secretsmanager/latest/docs/data-sources/photo)
+
+[Record](https://registry.terraform.io/providers/keeper-
+security/secretsmanager/latest/docs/data-sources/record)
+
+[Server Credentials](https://registry.terraform.io/providers/keeper-
+security/secretsmanager/latest/docs/data-sources/server_credentials)
+
+[Software License](https://registry.terraform.io/providers/keeper-
+security/secretsmanager/latest/docs/data-sources/software_license)
+
+[SSH Keys](https://registry.terraform.io/providers/keeper-
+security/secretsmanager/latest/docs/data-sources/ssh_keys)
+
+[SSN Card](https://registry.terraform.io/providers/keeper-
+security/secretsmanager/latest/docs/data-sources/ssn_card)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

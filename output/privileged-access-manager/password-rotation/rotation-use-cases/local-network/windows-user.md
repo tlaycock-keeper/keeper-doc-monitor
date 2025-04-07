@@ -435,36 +435,6 @@ user?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview
@@ -489,14 +459,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=ozTHJDSYKYXqnd4ofmC4&only=yes&limit=100)
 
 Rotating Windows User Accounts on Local Network
 
-[PreviousActive Directory or OpenLDAP User](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network/active-
-directory)[NextLinux User](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/linux-user)
-
-Last updated 1 month ago
-
-Was this helpful?
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJJUyNlAuOLGSc9meujzP%252FWindows%2520User.jpg%3Falt%3Dmedia%26token%3Db707eba0-2b0a-4221-aaca-29c4986aa384&width=768&dpr=4&quality=100&sign=ff349027&sv=2)
 
 ##
 
@@ -504,7 +469,9 @@ Overview
 
 In this guide, you'll learn how to rotate Windows user accounts within your
 local network using Keeper Rotation. For a high-level overview on the rotation
-process in the local network, visit this .
+process in the local network, visit this [page](/en/keeperpam/privileged-
+access-manager/password-rotation/rotation-use-cases/local-network#rotation-on-
+the-local-network).
 
 ##
 
@@ -512,9 +479,19 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   *   *   * The Keeper Gateway can communicate over WinRM or SSH to the target machine:
+  * Keeper Secrets Manager is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
 
-    *     * **SSH:** Enabled and running on port 22. Verification: Run `ssh [your-user]@[your-machine] -p 22` to verify that SSH is running.
+  * Keeper Rotation is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
+
+  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+
+  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed and showing online
+
+  * The Keeper Gateway can communicate over WinRM or SSH to the target machine:
+
+    * **WinRM:** Enabled and running on port 5986. Verification: Run `winrm get winrm/config` to verify that WinRM is running. See [WinRM setup page](/en/keeperpam/privileged-access-manager/references/setting-up-winrm) for installation help. **OR...**
+
+    * **SSH:** Enabled and running on port 22. Verification: Run `ssh [your-user]@[your-machine] -p 22` to verify that SSH is running.
 
 ##
 
@@ -648,41 +625,46 @@ credentials for any Windows services running as the PAM User, and restart the
 service. Keeper will also update the credential of any scheduled task running
 as that user on the target machine.
 
-Keeper Secrets Manager is enabled for your
+To learn more and set up this capability, see the [Service
+Management](/en/keeperpam/privileged-access-manager/password-rotation/service-
+management) page.
 
-Keeper Rotation is enabled for your
+[PreviousActive Directory or OpenLDAP User](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/local-network/active-
+directory)[NextLinux User](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/linux-user)
 
-A Keeper Secrets Manager  has been created
+Last updated 1 month ago
 
-A Keeper Rotation  is already installed and showing online
+Was this helpful?
 
-**WinRM:** Enabled and running on port 5986. Verification: Run `winrm get
-winrm/config` to verify that WinRM is running. See  for installation help.
-**OR...**
+#### Company
 
-To learn more and set up this capability, see the  page.
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-[application](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
+#### Support
 
-[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-[WinRM setup page](/en/keeperpam/privileged-access-manager/references/setting-
-up-winrm)
+#### Solutions
 
-[Service Management](/en/keeperpam/privileged-access-manager/password-
-rotation/service-management)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-[page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/local-network#rotation-on-the-local-network)
+#### Pricing
 
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJJUyNlAuOLGSc9meujzP%252FWindows%2520User.jpg%3Falt%3Dmedia%26token%3Db707eba0-2b0a-4221-aaca-29c4986aa384&width=768&dpr=4&quality=100&sign=ff349027&sv=2)
+© 2025 Keeper Security, Inc.
 

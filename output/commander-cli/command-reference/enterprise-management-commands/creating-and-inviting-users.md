@@ -469,14 +469,28 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * Which method should I use?
+  * Invite Users to an Enterprise
+  * Invitation Email and Vault Creation
+  * Example: Invite Users from Email Addresses in a File
+  * Create New User Accounts
+  * Creating Users with Commander
+  * Differences with enterprise-user Command
+  * Creating User Accounts From a File
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=lKbGLyP77Q9pZeV64CEm&only=yes&limit=100)
 
-Last updated 11 months ago
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Enterprise Management Commands](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands)
 
-Was this helpful?
+# Creating and Inviting Users
+
+Methods for creating user account with Commander
 
 ##
 
@@ -517,6 +531,12 @@ command with the `--add` flag.
 
 Format:
 
+Copy
+
+    
+    
+    enterprise-user John_Smith@example.com --add
+
 The invited user's display name can be pre-set by adding the `--name` flag
 followed by the desired name.
 
@@ -526,6 +546,12 @@ The invited user can be automatically put into a designated node with the
 ####
 
 Complete Example:
+
+Copy
+
+    
+    
+    enterprise-user John_Smith@example.com --add --node "Chicago" --name "John Smith"
 
 _Hint:_ You can use the shortened version of the command as well: `eu`
 
@@ -561,12 +587,31 @@ Setup
 
     * Persistent login will allow Commander to run commands without needing you to login between each call. To enable persistent login, run the following commands in Keeper Commander:
 
+Copy
+
+    
+    
+    this-device register
+    this-device persistent-login on
+
 ####
 
 Getting Started
 
 First gather the email addresses into a file. In this example the file will
 look like this:
+
+user_emails.txt
+
+Copy
+
+    
+    
+    john_smith@example.com
+    jane_doe@example.com
+    mary_sue@example.com
+    chris_adams@example.com
+    amanda_patel@example.com
 
 For this example, each email address is on its own line. The file can contain
 any number of email addresses.
@@ -579,6 +624,20 @@ Now that the file is ready, we can use a simple script to cycle through each
 email and send an invite.
 
 Windows Command PromptLinux / MacOS Terminal
+
+Copy
+
+    
+    
+    for /f %e in (user_emails.txt) do keeper enterprise-user "%e" --add
+
+Copy
+
+    
+    
+    while read email; do
+       keeper enterprise-user "$email" --add
+    done < user_emails.txt
 
 Run the script for your operating system from the examples above to send an
 invite to each email address from the file.
@@ -593,6 +652,18 @@ them an invite.
 
 For this example the file will now look like this:
 
+users.txt
+
+Copy
+
+    
+    
+    john_smith@example.com,John Smith,Chicago Office
+    jane_doe@example.com,Jane Doe,New York Office
+    mary_sue@example.com,Mary Sue,Chicago Office
+    chris_adams@example.com,Chris Adams,Chicago Office
+    amanda_patel@example.com,Amanda Patel,New York Office
+
 Each line now has each user's email address, display name, and node separated
 by commas.
 
@@ -603,6 +674,20 @@ To include these details in the invitation command, we simply need to add the
 relevant flags to the script.
 
 Windows Command PromptLinux / MacOS Terminal
+
+Copy
+
+    
+    
+    for /f "tokens=1,2,3 delims=," %e in (users.txt) do keeper eu "%e" --add --name "%f" --node "%g"
+
+Copy
+
+    
+    
+    while IFS=, read -r email name node; do
+       keeper eu "$email" --add --name "$name" --node "$node"
+    done < users.txt
 
 Notice that the shortened version of the enterprise-user command eu is used
 here
@@ -634,6 +719,12 @@ to the new account once when it is created.
 ####
 
 Format:
+
+Copy
+
+    
+    
+    create-user John_Smith@example.com --node "Chicago"
 
 When the account is run, you will be prompted to create a password for the new
 user. Alternatively you can provide a record from your vault with a password
@@ -678,96 +769,6 @@ For example:
 
 Windows Command PromptLinux / MacOS Terminal
 
- _Find more information in the_
-
-Before getting started, be sure that you have the most up-to-date version of
-Commander. Find the most recent release on the .
-
-_For more information on persistent login and options, see the_ _._
-
-_See more information about this command in the_
-
-To use the `create-user` command with a list of email addresses from a file,
-follow the  for the `enterprise-user` command and swap out that command with
-`create-user`
-
-Copy
-
-    
-    
-    enterprise-user John_Smith@example.com --add
-
-Copy
-
-    
-    
-    enterprise-user John_Smith@example.com --add --node "Chicago" --name "John Smith"
-
-Copy
-
-    
-    
-    this-device register
-    this-device persistent-login on
-
-user_emails.txt
-
-Copy
-
-    
-    
-    john_smith@example.com
-    jane_doe@example.com
-    mary_sue@example.com
-    chris_adams@example.com
-    amanda_patel@example.com
-
-Copy
-
-    
-    
-    for /f %e in (user_emails.txt) do keeper enterprise-user "%e" --add
-
-Copy
-
-    
-    
-    while read email; do
-       keeper enterprise-user "$email" --add
-    done < user_emails.txt
-
-users.txt
-
-Copy
-
-    
-    
-    john_smith@example.com,John Smith,Chicago Office
-    jane_doe@example.com,Jane Doe,New York Office
-    mary_sue@example.com,Mary Sue,Chicago Office
-    chris_adams@example.com,Chris Adams,Chicago Office
-    amanda_patel@example.com,Amanda Patel,New York Office
-
-Copy
-
-    
-    
-    for /f "tokens=1,2,3 delims=," %e in (users.txt) do keeper eu "%e" --add --name "%f" --node "%g"
-
-Copy
-
-    
-    
-    while IFS=, read -r email name node; do
-       keeper eu "$email" --add --name "$name" --node "$node"
-    done < users.txt
-
-Copy
-
-    
-    
-    create-user John_Smith@example.com --node "Chicago"
-
 Copy
 
     
@@ -782,40 +783,39 @@ Copy
        keeper create-user "$email" --name "$name" --node "$node"
     done < users.txt
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Enterprise Management Commands](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands)
-
-# Creating and Inviting Users
-
-Methods for creating user account with Commander
-
 [PreviousEnterprise Management Commands](/en/keeperpam/commander-cli/command-
 reference/enterprise-management-commands)[NextCompliance
 Commands](/en/keeperpam/commander-cli/command-reference/enterprise-management-
 commands/compliance-commands)
 
-  * Overview
-  * Which method should I use?
-  * Invite Users to an Enterprise
-  * Invitation Email and Vault Creation
-  * Example: Invite Users from Email Addresses in a File
-  * Create New User Accounts
-  * Creating Users with Commander
-  * Differences with enterprise-user Command
-  * Creating User Accounts From a File
+Last updated 11 months ago
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9PQAwVuLYXbONMjioaMg%252Fimage.png%3Falt%3Dmedia%26token%3D999cd7c4-3b38-4081-9fe3-857919c24c9d&width=768&dpr=4&quality=100&sign=a890c97c&sv=2)
+Was this helpful?
+
+_Find more information in the_
 
 User invite email
+
+Before getting started, be sure that you have the most up-to-date version of
+Commander. Find the most recent release on the .
+
+_For more information on persistent login and options, see the_ _._
+
+_See more information about this command in the_
+
+To use the `create-user` command with a list of email addresses from a file,
+follow the  for the `enterprise-user` command and swap out that command with
+`create-user`
 
 [GitHub releases page](https://github.com/Keeper-Security/Commander/releases)
 
 [steps above](/en/keeperpam/commander-cli/command-reference/enterprise-
 management-commands/creating-and-inviting-users#example-invite-users-from-
 email-addresses-in-a-file)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9PQAwVuLYXbONMjioaMg%252Fimage.png%3Falt%3Dmedia%26token%3D999cd7c4-3b38-4081-9fe3-857919c24c9d&width=768&dpr=4&quality=100&sign=a890c97c&sv=2)
 
 [_documentation page_](/en/keeperpam/commander-cli/commander-installation-
 setup/logging-in#persistent-login)

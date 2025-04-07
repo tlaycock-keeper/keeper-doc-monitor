@@ -647,13 +647,6 @@ unlocked.
 
 Using SSH Agent with Git
 
-The Keeper SSH Agent allows you to seamlessly authenticate into services like
-GitHub and securely sign Git commits. To help you get started, we've created a
-step-by-step guide on setting up [authentication with
-GitHub](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-
-git#github-authentication) and [signing Git commits](/en/keeperpam/privileged-
-access-manager/ssh-agent/integration-with-git#signing-commits) using Keeper.
-
   * [Integration with Git](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-git)
 
 ##
@@ -756,6 +749,16 @@ KeeperPAM provides automatic rotation of SSH keys on-demand or on a scheduled
 basis.
 
   * See the [Password Rotation](/en/keeperpam/secrets-manager/password-rotation) section and the [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user) SSH Key use case
+
+The Keeper SSH Agent allows you to seamlessly authenticate into services like
+GitHub and securely sign Git commits. To help you get started, we've created a
+step-by-step guide on setting up  and  using Keeper.
+
+[authentication with GitHub](/en/keeperpam/privileged-access-manager/ssh-
+agent/integration-with-git#github-authentication)
+
+[signing Git commits](/en/keeperpam/privileged-access-manager/ssh-
+agent/integration-with-git#signing-commits)
 
 Developer Settings
 

@@ -647,9 +647,6 @@ Session Recording
 
 Options for recording sessions and typescripts
 
-See [session recording](/en/keeperpam/privileged-access-manager/session-
-recording-and-playback)
-
 Connection Parameters (multiple)
 
 Connection-specific protocol settings which can vary based on the protocol
@@ -731,6 +728,11 @@ Was this helpful?
 **Required** Visit this  for more details
 
 **Required** Visit this  for more details
+
+See
+
+[session recording](/en/keeperpam/privileged-access-manager/session-recording-
+and-playback)
 
 [section](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-machine#pam-settings-and-administrative-credentials)

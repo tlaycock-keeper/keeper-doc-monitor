@@ -507,7 +507,9 @@ to utilize this integration, you will need:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * A [One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    *   * A [One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
 
   * The[ Keeper Secrets Manager (KSM) CLI Tool](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
 
@@ -752,9 +754,17 @@ statement will indicate the distribution the vendor has built their image
 upon. If it is not apparent from the **FROM** statement, you man check the
 Dockerfile of the **FROM** image due to inheritance.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FreLdO2dKmIXTdq7CxrOM%252FScreenshot%25202022-10-31%2520at%25202.40.53%2520PM.png%3Falt%3Dmedia%26token%3Db74d6181-d2fc-4ccb-9960-daefe6671c92&width=768&dpr=4&quality=100&sign=ac9bd028&sv=2)
+
 MySQL 8.0.31 doesn't indicate the operating system distribution in the tag
 name. On the MySQL Docker Hub page, the 8.0.31 tag links to their GitHub repo.
 From the Dockerfile we can see the distribution is Oracle Linux.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FO2s1ylVdcl24iIxLjJui%252FScreenshot%25202022-10-31%2520at%25202.41.41%2520PM.png%3Falt%3Dmedia%26token%3D1ca49e96-968d-4293-8efd-98481205936e&width=768&dpr=4&quality=100&sign=35dde456&sv=2)
 
 The purpose of checking the distribution is to determine what version of the
 **libc** library is being used. Most distributions use **GLIBC** but some,
@@ -770,6 +780,10 @@ Entrypoint and Command
 
 The next step is to determine the vendor's Docker image **ENTRYPOINT** and
 **CMD**. The Dockerfile will list the **ENTRYPOINT** and/or **CMD**.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Ff6x6wo9b2z5x3PuWPPAw%252FScreenshot%25202022-10-31%2520at%25202.52.24%2520PM.png%3Falt%3Dmedia%26token%3D5c5cdff7-258d-4524-96d5-ae908c27d3dd&width=768&dpr=4&quality=100&sign=186db616&sv=2)
 
 From the MySQL Dockerfile, the **ENTRYPOINT** is `["docker-entrypoint.sh"]`
 and the **CMD** is `["mysqld"]`. This means the **ENTRYPOINT** will be
@@ -889,20 +903,9 @@ Contribute to the Docker Runtime Examples
 If you have some great examples to contribute to this page, please ping us on
 Slack or email sm@keepersecurity.com.
 
-A Keeper  with secrets shared to it
-
 See the  for instructions on creating an Application
 
 See instructions on setting up the KSM CLI
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
-[here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface#initialize-the-client-device)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 
 Root MySQL DB
 
@@ -912,25 +915,11 @@ Capture Record UID for Root Record
 
 Capture Record UID for User Record
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FreLdO2dKmIXTdq7CxrOM%252FScreenshot%25202022-10-31%2520at%25202.40.53%2520PM.png%3Falt%3Dmedia%26token%3Db74d6181-d2fc-4ccb-9960-daefe6671c92&width=768&dpr=4&quality=100&sign=ac9bd028&sv=2)
+[here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface#initialize-the-client-device)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FO2s1ylVdcl24iIxLjJui%252FScreenshot%25202022-10-31%2520at%25202.41.41%2520PM.png%3Falt%3Dmedia%26token%3D1ca49e96-968d-4293-8efd-98481205936e&width=768&dpr=4&quality=100&sign=35dde456&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Ff6x6wo9b2z5x3PuWPPAw%252FScreenshot%25202022-10-31%2520at%25202.52.24%2520PM.png%3Falt%3Dmedia%26token%3D5c5cdff7-258d-4524-96d5-ae908c27d3dd&width=768&dpr=4&quality=100&sign=186db616&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaFttUeoqctfkrfD8p%252FScreen%2520Shot%25202021-07-27%2520at%252012.38.59%2520AM.png%3Falt%3Dmedia%26token%3D3003edef-5d7b-4b46-b1a0-6530b0ac2fc1&width=768&dpr=4&quality=100&sign=cdc4ea8e&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaGNVzjx_czbCfPevb%252FScreen%2520Shot%25202021-07-27%2520at%252012.42.06%2520AM.png%3Falt%3Dmedia%26token%3D9ff5b9f8-7222-425a-b10c-e69b3208090a&width=768&dpr=4&quality=100&sign=792106f&sv=2)
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -942,5 +931,13 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLOXFweD2U
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaFttUeoqctfkrfD8p%252FScreen%2520Shot%25202021-07-27%2520at%252012.38.59%2520AM.png%3Falt%3Dmedia%26token%3D3003edef-5d7b-4b46-b1a0-6530b0ac2fc1&width=768&dpr=4&quality=100&sign=cdc4ea8e&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaGj5OBZC8JJE7mt2L%252FScreen%2520Shot%25202021-07-27%2520at%252012.43.33%2520AM.png%3Falt%3Dmedia%26token%3Df772dd76-5ba1-466b-b656-784f4ba70f19&width=768&dpr=4&quality=100&sign=1406970f&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaGNVzjx_czbCfPevb%252FScreen%2520Shot%25202021-07-27%2520at%252012.42.06%2520AM.png%3Falt%3Dmedia%26token%3D9ff5b9f8-7222-425a-b10c-e69b3208090a&width=768&dpr=4&quality=100&sign=792106f&sv=2)
 

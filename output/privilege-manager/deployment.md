@@ -421,36 +421,6 @@ manager/deployment?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview
@@ -473,12 +443,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=KEkG5ky7xq0IniHT6zVE&only=yes&limit=100)
 
 Deploying the Keeper Agent to your endpoints
 
-[PreviousSetup](/en/keeperpam/privilege-
-manager/setup)[NextPolicies](/en/keeperpam/privilege-manager/policies)
-
-Last updated 16 days ago
-
-Was this helpful?
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlUpBOmu2uDZvJY4Rn2gH%252FPEDM%2520Deployment.jpg%3Falt%3Dmedia%26token%3D16f4e1dd-d3fe-4c31-aa0d-30e33c0a7d78&width=768&dpr=4&quality=100&sign=80b39d&sv=2)
 
 ###
 
@@ -522,6 +489,12 @@ referenced throughout the privilege manager when applying policies. The
 collection name typically refers to a group of users sharing a common platform
 or use case.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FnQMX0Aq14RxRHDSEtsWk%252FDeployment%2520Package.png%3Falt%3Dmedia%26token%3Dd0ae0f7a-0d5d-4d49-995f-16b362f0cefc&width=768&dpr=4&quality=100&sign=2418395a&sv=2)
+
+Creating a Deployment Package
+
 ###
 
 Managing Deployments
@@ -542,12 +515,30 @@ including:
 
 The Deployment page displays the endpoint stats organized by collection.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWsTCPdSYW6TeEseLXCrY%252FDeployments.png%3Falt%3Dmedia%26token%3D296276e8-ed56-4b8b-b7a0-b3e3d913eee6&width=768&dpr=4&quality=100&sign=45e825a0&sv=2)
+
+Deployment Dashboard
+
 The collection can be enabled or disabled from the dashboard. When a
 collection is disabled, the policy engine will no longer apply to those
 devices.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FxyLobktuoVLLtVyWAkpm%252FDeployments%2520-%2520enable%2520disable.png%3Falt%3Dmedia%26token%3Dd659e3da-7e72-47e9-b4d5-1309523d90f0&width=768&dpr=4&quality=100&sign=5125be6b&sv=2)
+
+Enable or Disable Collections of Endpoints
+
 Individual endpoints can also be disabled, to prevent the agent from applying
 policies.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2IONbTXWloBmdQp9K1yd%252FSelected%2520deployment%2520endpoints.png%3Falt%3Dmedia%26token%3D193a06aa-33ba-49a4-9cc7-f93f97b3ebb9&width=768&dpr=4&quality=100&sign=2339b0e4&sv=2)
+
+Enable or Disable individual endpoints
 
 ###
 
@@ -565,6 +556,12 @@ resources. Collections are categorized by the following types:
 
   * **User Groups**
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FD05v9ILHqYrAmbu50byx%252FCollections%2520-%2520Filled.png%3Falt%3Dmedia%26token%3De2c0c040-bb2f-4a6e-8316-38036b19c5d7&width=768&dpr=4&quality=100&sign=729f7b5a&sv=2)
+
+Device Collections
+
 Admins can also create their own custom collections within each category.
 Click on **New Collection** to create a collection and assign attributes. For
 example, a custom collection "Developers" can be created which includes all
@@ -574,8 +571,18 @@ another example, a custom collection of type "Applications" might be called
 "Developer Tools" where applications such as GitHub.exe or Visual Studio Code
 is included.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuqKqVbY2FgzxQMmtareU%252FEdit%2520Collection.png%3Falt%3Dmedia%26token%3Db74bbc60-8fd6-4edd-9593-6c6a65bcccae&width=768&dpr=4&quality=100&sign=1c2f19e8&sv=2)
+
+Custom Collections
+
 Collections can not contain different resource types. For example a User Group
 collection can not contain a Machine resource.
+
+Policies can be applied to device collections and deployment collections to
+control privilege on all of the endpoints. Visit the
+[Policies](/en/keeperpam/privilege-manager/policies) page to learn more.
 
 ###
 
@@ -671,52 +678,43 @@ Copy
 
 Next Steps
 
-Creating a Deployment Package
+Once you have deployed the agent, it's time to set up
+[policies](/en/keeperpam/privilege-manager/policies).
 
-Deployment Dashboard
+[PreviousSetup](/en/keeperpam/privilege-
+manager/setup)[NextPolicies](/en/keeperpam/privilege-manager/policies)
 
-Enable or Disable Collections of Endpoints
+Last updated 16 days ago
 
-Enable or Disable individual endpoints
+Was this helpful?
 
-Device Collections
+#### Company
 
-Custom Collections
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-Policies can be applied to device collections and deployment collections to
-control privilege on all of the endpoints. Visit the  page to learn more.
+#### Support
 
-Once you have deployed the agent, it's time to set up .
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-[Policies](/en/keeperpam/privilege-manager/policies)
+#### Solutions
 
-[policies](/en/keeperpam/privilege-manager/policies)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlUpBOmu2uDZvJY4Rn2gH%252FPEDM%2520Deployment.jpg%3Falt%3Dmedia%26token%3D16f4e1dd-d3fe-4c31-aa0d-30e33c0a7d78&width=768&dpr=4&quality=100&sign=80b39d&sv=2)
+#### Pricing
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FnQMX0Aq14RxRHDSEtsWk%252FDeployment%2520Package.png%3Falt%3Dmedia%26token%3Dd0ae0f7a-0d5d-4d49-995f-16b362f0cefc&width=768&dpr=4&quality=100&sign=2418395a&sv=2)
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWsTCPdSYW6TeEseLXCrY%252FDeployments.png%3Falt%3Dmedia%26token%3D296276e8-ed56-4b8b-b7a0-b3e3d913eee6&width=768&dpr=4&quality=100&sign=45e825a0&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FxyLobktuoVLLtVyWAkpm%252FDeployments%2520-%2520enable%2520disable.png%3Falt%3Dmedia%26token%3Dd659e3da-7e72-47e9-b4d5-1309523d90f0&width=768&dpr=4&quality=100&sign=5125be6b&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2IONbTXWloBmdQp9K1yd%252FSelected%2520deployment%2520endpoints.png%3Falt%3Dmedia%26token%3D193a06aa-33ba-49a4-9cc7-f93f97b3ebb9&width=768&dpr=4&quality=100&sign=2339b0e4&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FD05v9ILHqYrAmbu50byx%252FCollections%2520-%2520Filled.png%3Falt%3Dmedia%26token%3De2c0c040-bb2f-4a6e-8316-38036b19c5d7&width=768&dpr=4&quality=100&sign=729f7b5a&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuqKqVbY2FgzxQMmtareU%252FEdit%2520Collection.png%3Falt%3Dmedia%26token%3Db74bbc60-8fd6-4edd-9593-6c6a65bcccae&width=768&dpr=4&quality=100&sign=1c2f19e8&sv=2)
+© 2025 Keeper Security, Inc.
 

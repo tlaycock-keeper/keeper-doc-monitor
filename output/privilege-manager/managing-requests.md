@@ -541,11 +541,15 @@ For organizations with high volumes of elevation requests:
 
   * **Delegation** : Configure multiple approvers across different teams or regions
 
-  * **Auto-Approval Rules** : Set up [policies](/en/keeperpam/privilege-manager/policies) to automatically approve routine requests
+  * 
 
 Privilege Manager Requests Dashboard
 
 Detailed View of an Elevation Request
+
+**Auto-Approval Rules** : Set up  to automatically approve routine requests
+
+[policies](/en/keeperpam/privilege-manager/policies)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

@@ -445,44 +445,10 @@ PDF](/en/keeperpam/~gitbook/pdf?page=zOFd8ti3gLBcoQ9ASEhv&only=yes&limit=100)
 Securely access web-based applications through a rendered, isolated browser
 experience
 
-[PreviousSetting up Tunnels](/en/keeperpam/privileged-access-
-manager/tunnels/setting-up-tunnels)[NextSetting up
-RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation/setting-
-up-rbi)
-
-Last updated 9 days ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqGILLOPhQlCrtyHJGfHk%252FKeeperPAM%2520RBI.jpg%3Falt%3Dmedia%26token%3De58d8748-53cb-42ae-
+bf6d-b54a77aaecd7&width=768&dpr=4&quality=100&sign=846515ba&sv=2)
 
 ##
 
@@ -516,6 +482,12 @@ Use Cases
   * Financial and banking websites
 
   * Protected web browsing
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGjT3UnvWnqdkJG4qQFUa%252FScreenshot%25202025-01-10%2520at%252011.37.48%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dcde873d1-096a-429e-8da0-869d0931696b&width=768&dpr=4&quality=100&sign=33997ad0&sv=2)
+
+Remote Browser Isolation demonstrating the PgAdmin Web UI
 
 ###
 
@@ -567,14 +539,42 @@ To get started with Remote Browser Isolation, proceed to the next
 [section](/en/keeperpam/privileged-access-manager/remote-browser-
 isolation/setting-up-rbi).
 
-Remote Browser Isolation demonstrating the PgAdmin Web UI
+[PreviousSetting up Tunnels](/en/keeperpam/privileged-access-
+manager/tunnels/setting-up-tunnels)[NextSetting up
+RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation/setting-
+up-rbi)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqGILLOPhQlCrtyHJGfHk%252FKeeperPAM%2520RBI.jpg%3Falt%3Dmedia%26token%3De58d8748-53cb-42ae-
-bf6d-b54a77aaecd7&width=768&dpr=4&quality=100&sign=846515ba&sv=2)
+Last updated 9 days ago
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGjT3UnvWnqdkJG4qQFUa%252FScreenshot%25202025-01-10%2520at%252011.37.48%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dcde873d1-096a-429e-8da0-869d0931696b&width=768&dpr=4&quality=100&sign=33997ad0&sv=2)
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

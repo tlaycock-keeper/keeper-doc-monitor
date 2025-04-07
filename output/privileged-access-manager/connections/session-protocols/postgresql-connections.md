@@ -591,6 +591,14 @@ Insert Configured PAM Settings Pic
 
 Session Recordings - PostgreSQL Protocol
 
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-
+playback).
+
+  * Learn more about [Session Recording and Playback](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+
 [PreviousSQL Server Connections](/en/keeperpam/privileged-access-
 manager/connections/session-protocols/sql-server-connections)[NextVNC
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
@@ -630,12 +638,6 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
-For this protocol, both graphical and the full, raw text text content of
-terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this .
-
-  * Learn more about 
-
 Field
 
 Definition
@@ -649,11 +651,6 @@ Administrative Credential Record
 
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
-
-[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
-
-[Session Recording and Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)

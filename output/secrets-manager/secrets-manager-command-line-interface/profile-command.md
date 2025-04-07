@@ -427,46 +427,29 @@ manager-command-line-interface/profile-command?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
+
+  * profile command
+  * init
+  * setup
+  * list
+  * export
+  * import
+  * active
+  * Profiles within Containers
+  * Default INI Filename
 
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-Mf8esoMrZYw5yEb1Mkb&only=yes&limit=100)
 
-Last updated 5 months ago
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
 
-Was this helpful?
+# Profile Command
+
+Setup and initialization of the Keeper Secrets Manager device profile
 
 ##
 
@@ -484,11 +467,45 @@ format: `**ksm profile <sub-command>**`
 
 **Sub-Commands:**
 
+Sub-Command
+
+Description
+
+`init`
+
+Initialize a new client device profile
+
+`setup`
+
+Setup a new profile from 3rd party external secrets manager like AWS.
+
+`list`
+
+List profiles that have been created, and note active profile
+
+`export`
+
+Export a configuration profile
+
+`import`
+
+Create a new configuration from an exported encrypted profile
+
+`active`
+
+Sets the active configuration profile
+
 ###
 
 **init**
 
 Initialize a client device profile.
+
+Copy
+
+    
+    
+    ksm profile init
 
 The file `keeper.ini` file will be created in your current working directory.
 For the Windows or macOS binary applications, the `keeper.ini` will be created
@@ -548,12 +565,34 @@ Defaults to US region. Customers hosted in other regions must set this value:
 Typically, you will be initializing the KSM CLI with a token created in the
 vault or in Keeper Commander. For example:
 
+Copy
+
+    
+    
+    ksm profile init --token XX:XXXXXXXX
+
 To avoid exposing the token on the command line use `KSM_CLI_TOKEN`
 environment variable. For example:
+
+Copy
+
+    
+    
+    ksm profile init --ini-file=/tmp/custom.ini --profile=non_default
 
 Usage of `KSM_CLI_TOKEN` environment variable to provide one-time token allows
 for selecting a custom INI file and custom profile _(to create/overwrite)_ and
 can be overridden by `--token` option from command line.
+
+As described in the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-
+start-guide), you can create a token from the Commander CLI or from the Keeper
+Vault interface. For example:
+
+Copy
+
+    
+    
+    My Vault> secrets-manager client add --app MyApplicationName
 
 ###
 
@@ -576,21 +615,67 @@ There are 3 ways of integrating with external storage providers like AWS:
 
 Method 1: EC2 instance role
 
+For this method, you need to install Keeper Secrets Manager CLI on a EC2
+instance which has been configured with a role that has permission to read
+specific AWS Secrets Manager secrets. We recommend setting up an EC2 role
+policy that has the least permission available, to only read specific keys.
+[Learn more](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-
+and-access.html) about AWS Secrets Manager access controls.
+
 To initialize the KSM CLI profile on an EC2 instance using the AWS EC2
 instance role:
 
+Copy
+
+    
+    
+    ksm profile setup --type=aws
+
 This creates a keeper.ini file which defines the secret key in AWS. For
 example:
+
+Copy
+
+    
+    
+    ....
+    
+    [_default]
+    storage = aws
+    provider = ec2instance
+    secret = ksm-config
 
 By default, the secret key is assumed to be called `ksm-config`. You can
 specify a different key value by editing the keeper.ini file or using the
 `--secret` option. Example:
 
+Copy
+
+    
+    
+    ksm profile setup --type=aws --secret my-ksm-config
+
 ####
 
 Method 2: AWS profile credentials
 
+The KSM CLI can be configured to use a specific AWS profile that has been
+previously initialized on this device with the `aws configure`
+[command](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-
+quickstart.html#getting-started-quickstart-new).
+
+For this method, the AWS profile credentials should be assigned to a role
+which is limited to only read specific keys from the AWS Secrets Manager.
+[Learn more](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-
+and-access.html) about AWS Secrets Manager access controls.
+
 For example:
+
+Copy
+
+    
+    
+    ksm profile setup --type=aws --secret=ksm-config --credentials=profile --credentials-profile=default
 
 ####
 
@@ -602,6 +687,12 @@ in the `keeper.ini` file.
 
 For example:
 
+Copy
+
+    
+    
+    ksm profile setup --type=aws --secret=ksm-config --credentials=keys --aws-access-key-id XXX --aws-secret-access-key XXX --region XXX
+
 An additional flag `--fallback` allows you to specify falling back to the
 default profile (from the AWS local configuration) if the initial credentials
 fail.
@@ -610,14 +701,50 @@ fail.
 
 Finishing the KSM CLI setup
 
+To complete the setup, a base64 KSM configuration value must be generated from
+the Keeper Vault interface or the Keeper Commander CLI. This is described in
+the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide).
+
+For example, using the [Commander CLI](/en/keeperpam/commander-cli/overview),
+this can be generated using a command such as the one below:
+
+Copy
+
+    
+    
+    My Vault> secrets-manager client add --app "My KSM App" --config-init b64
+    
+    Successfully generated Client Device
+    ====================================
+    
+    Initialized Config: [Base64 Config....]
+
 Copy the provided configuration for use in the next step.
 
 In order for this KSM device to authenticate against Keeper Secrets Manager,
 the KSM configuration value in base64 format must be populated into the AWS
 Secrets Manager. For example, using the AWS CLI:
 
+Copy
+
+    
+    
+    aws secretsmanager create-secret --name ksm-config --secret-string '[Base64 Config]'
+
 Now, you can verify that KSM CLI works and can access secrets from your vault
 using:
+
+Copy
+
+    
+    
+    ksm secret list
+    
+     UID                     Record Type          Title
+     ----------------------- -------------------- --------------------------
+     n9SdOX1cEyMj9Ttj3lsjYQ  pamUser              IAM Account: demouser
+     WfxgS6E_bY_tzdIChYIsAA  login                Amazon AWS - john
+     toAfybW5SsbhRT9LtZ7oyg  serverCredentials    QA Server
 
 ####
 
@@ -636,6 +763,19 @@ List all available profiles for the current Client Device.
 `ksm profile list`
 
 Example:
+
+Copy
+
+    
+    
+    $ ksm profile list
+    
+      Active   Profile
+     ======== ===============
+               Production
+      *        Test Server 1
+               Test Server 2
+               Local Dev
 
 ###
 
@@ -657,6 +797,12 @@ optional parameters:
 
 Example
 
+Copy
+
+    
+    
+    $ ksm profile export my_profile
+
 Note: When using an external storage provider for KSM configuration, the
 profile will not be exportable.
 
@@ -672,6 +818,12 @@ optional parameters:
 
   * `--output-file <INI filename>` Where to create the INI configuration file. If not set, will be create in current directory.
 
+Copy
+
+    
+    
+    $ ksm profile import --output-file=my_profile BASE64_ENC_CONFIG
+
 ###
 
 **active**
@@ -681,6 +833,14 @@ Set the currently active profile for this client device.
 `ksm profile active <PROFILE NAME>`
 
 Example:
+
+Copy
+
+    
+    
+    $ ksm profile active production
+    
+    production is now the active profile.
 
 ###
 
@@ -702,211 +862,41 @@ overridden by using the `**KSM_INI_FILE**` environment variable. By using
 `**KSM_INI_DIR**` __ and __`**KSM_INI_FILE**` __ environment variables you can
 completely change the location and name of the INI configuration file.
 
-As described in the , you can create a token from the Commander CLI or from
-the Keeper Vault interface. For example:
-
-For this method, you need to install Keeper Secrets Manager CLI on a EC2
-instance which has been configured with a role that has permission to read
-specific AWS Secrets Manager secrets. We recommend setting up an EC2 role
-policy that has the least permission available, to only read specific keys.
-about AWS Secrets Manager access controls.
-
-The KSM CLI can be configured to use a specific AWS profile that has been
-previously initialized on this device with the `aws configure` .
-
-For this method, the AWS profile credentials should be assigned to a role
-which is limited to only read specific keys from the AWS Secrets Manager.
-about AWS Secrets Manager access controls.
-
-To complete the setup, a base64 KSM configuration value must be generated from
-the Keeper Vault interface or the Keeper Commander CLI. This is described in
-the .
-
-For example, using the , this can be generated using a command such as the one
-below:
-
-Sub-Command
-
-Description
-
-`init`
-
-Initialize a new client device profile
-
-`setup`
-
-Setup a new profile from 3rd party external secrets manager like AWS.
-
-`list`
-
-List profiles that have been created, and note active profile
-
-`export`
-
-Export a configuration profile
-
-`import`
-
-Create a new configuration from an exported encrypted profile
-
-`active`
-
-Sets the active configuration profile
-
-Copy
-
-    
-    
-    ksm profile init
-
-Copy
-
-    
-    
-    ksm profile init --token XX:XXXXXXXX
-
-Copy
-
-    
-    
-    ksm profile init --ini-file=/tmp/custom.ini --profile=non_default
-
-Copy
-
-    
-    
-    My Vault> secrets-manager client add --app MyApplicationName
-
-Copy
-
-    
-    
-    ksm profile setup --type=aws
-
-Copy
-
-    
-    
-    ....
-    
-    [_default]
-    storage = aws
-    provider = ec2instance
-    secret = ksm-config
-
-Copy
-
-    
-    
-    ksm profile setup --type=aws --secret my-ksm-config
-
-Copy
-
-    
-    
-    ksm profile setup --type=aws --secret=ksm-config --credentials=profile --credentials-profile=default
-
-Copy
-
-    
-    
-    ksm profile setup --type=aws --secret=ksm-config --credentials=keys --aws-access-key-id XXX --aws-secret-access-key XXX --region XXX
-
-Copy
-
-    
-    
-    My Vault> secrets-manager client add --app "My KSM App" --config-init b64
-    
-    Successfully generated Client Device
-    ====================================
-    
-    Initialized Config: [Base64 Config....]
-
-Copy
-
-    
-    
-    aws secretsmanager create-secret --name ksm-config --secret-string '[Base64 Config]'
-
-Copy
-
-    
-    
-    ksm secret list
-    
-     UID                     Record Type          Title
-     ----------------------- -------------------- --------------------------
-     n9SdOX1cEyMj9Ttj3lsjYQ  pamUser              IAM Account: demouser
-     WfxgS6E_bY_tzdIChYIsAA  login                Amazon AWS - john
-     toAfybW5SsbhRT9LtZ7oyg  serverCredentials    QA Server
-
-Copy
-
-    
-    
-    $ ksm profile list
-    
-      Active   Profile
-     ======== ===============
-               Production
-      *        Test Server 1
-               Test Server 2
-               Local Dev
-
-Copy
-
-    
-    
-    $ ksm profile export my_profile
-
-Copy
-
-    
-    
-    $ ksm profile import --output-file=my_profile BASE64_ENC_CONFIG
-
-Copy
-
-    
-    
-    $ ksm profile active production
-    
-    production is now the active profile.
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
-
-# Profile Command
-
-Setup and initialization of the Keeper Secrets Manager device profile
-
 [PreviousSecrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-
 command-line-interface)[NextInit Command](/en/keeperpam/secrets-
 manager/secrets-manager-command-line-interface/init-command)
 
-  * profile command
-  * init
-  * setup
-  * list
-  * export
-  * import
-  * active
-  * Profiles within Containers
-  * Default INI Filename
+Last updated 5 months ago
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+Was this helpful?
 
-[Learn more](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-
-and-access.html)
+#### Company
 
-[command](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-
-quickstart.html#getting-started-quickstart-new)
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-[Learn more](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-
-and-access.html)
+#### Support
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-[Commander CLI](/en/keeperpam/commander-cli/overview)
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

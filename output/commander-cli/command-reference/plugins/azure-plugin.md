@@ -535,6 +535,10 @@ Rotation supports legacy and typed records. If using typed record, a 'Login'
 type field is required. Additional fields may be added depending on the
 rotation type as well. See the instructions below.
 
+See the [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-
+commander-cli#typed-vs-untyped-records-v3-vs-v2)section for more information
+on legacy vs typed records
+
 ###
 
 Set the Azure Login Name
@@ -662,15 +666,10 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
-See the section for more information on legacy vs typed records
-
 (Optional)
 
 [password complexity rules](https://github.com/Keeper-
 Security/Commander/tree/master/keepercommander/plugins/password_rules.md)
-
-[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
-cli#typed-vs-untyped-records-v3-vs-v2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

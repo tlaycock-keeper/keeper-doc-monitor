@@ -503,11 +503,6 @@ features are included:
 What is the difference between KeeperPAM and Keeper Connection Manager (Self-
 Hosted)?
 
-KeeperPAM is a cloud-native privileged access solution that requires only a
-lightweight gateway installation, while Keeper Connection Manager (KCM) is a
-fully self-hosted solution. For more information, visit this
-[page](/en/keeperpam#keeperpam-vs.-kcm).
-
 ##
 
 KeeperPAM License Model
@@ -542,6 +537,10 @@ functionality for only 10 of them, they would purchase:
 ##
 
 MSPs
+
+Features available with the KeeperPAM Add-On are listed
+[here](/en/keeperpam/privileged-access-manager/getting-started/keeperpam-
+licensing#features-included-with-keeperpam).
 
 ##
 
@@ -623,6 +622,10 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+KeeperPAM is a cloud-native privileged access solution that requires only a
+lightweight gateway installation, while Keeper Connection Manager (KCM) is a
+fully self-hosted solution. For more information, visit this .
+
 Keeper’s  allows MSPs and their Managed Companies (MCs) to allocate Keeper
 licenses to their users and pay only for used licenses at the beginning of the
 following month.
@@ -630,14 +633,11 @@ following month.
 KeeperPAM will be a  that MSPs can add or remove at any time for their Managed
 Companies.
 
-Features available with the KeeperPAM Add-On are listed .
-
-[here](/en/keeperpam/privileged-access-manager/getting-started/keeperpam-
-licensing#features-included-with-keeperpam)
-
 [MSP Consumption Model](https://docs.keeper.io/en/enterprise-guide/keeper-
 msp/consumption-based-billing)
 
 [Secure Add-On](https://docs.keeper.io/en/enterprise-guide/keeper-
 msp/consumption-based-billing/secure-add-ons)
+
+[page](/en/keeperpam#keeperpam-vs.-kcm)
 

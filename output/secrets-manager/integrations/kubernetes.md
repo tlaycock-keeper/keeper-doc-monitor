@@ -525,7 +525,7 @@ utilize this integration, you will need:
 
   * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
 
-    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+    * 
 
 ##
 
@@ -1114,15 +1114,12 @@ At this point, you can now integrate Keeper Secrets Manager into your K8s
 deployments using any of the [Secrets Manager SDKs](/en/keeperpam/secrets-
 manager/developer-sdk-library).
 
+See the  for instructions on creating an Application
+
 Example Web Application displaying Keeper secrets
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6TQeKxdHn0zbmfZKG270%252Fimage.png%3Falt%3Dmedia%26token%3D05e69023-6c1d-44ec-819c-842699af867d&width=768&dpr=4&quality=100&sign=307eac3b&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FhMaZVLZ1ulGe9Ub1hDB7%252Fimage.png%3Falt%3Dmedia%26token%3D2c2f355d-6c5f-4abf-8779-2285fc87ce00&width=768&dpr=4&quality=100&sign=7385b406&sv=2)
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -1133,6 +1130,14 @@ legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MktCpUkVepMUI2ry2UO%252F-MktD28kvZqqUuAoO5kD%252Fkubernetes-
 plugin-
 header.jpg%3Falt%3Dmedia%26token%3D19f48711-5185-45a7-96c4-efc7d11b34cc&width=768&dpr=4&quality=100&sign=6770b66&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FhMaZVLZ1ulGe9Ub1hDB7%252Fimage.png%3Falt%3Dmedia%26token%3D2c2f355d-6c5f-4abf-8779-2285fc87ce00&width=768&dpr=4&quality=100&sign=7385b406&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6TQeKxdHn0zbmfZKG270%252Fimage.png%3Falt%3Dmedia%26token%3D05e69023-6c1d-44ec-819c-842699af867d&width=768&dpr=4&quality=100&sign=307eac3b&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

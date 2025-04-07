@@ -423,31 +423,6 @@ installation-setup?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Commander CLI Install
-  * Developer Instructions
-  * Making Changes
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MeR6akVJ9USNnuBGLUD&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-
-# Installation and Setup
-
-Your first steps with Keeper Commander
-
-[PreviousCommander Overview](/en/keeperpam/commander-cli/overview)[NextCLI
-Installation on Windows](/en/keeperpam/commander-cli/commander-installation-
-setup/installation-on-windows)
-
-Last updated 5 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -478,6 +453,17 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MeR6akVJ9USNnuBGLUD&only=yes&limit=100)
+
+Last updated 5 months ago
+
+Was this helpful?
+
 ###
 
 Commander CLI Install
@@ -499,6 +485,20 @@ In order to add additional modules, change source code or make other edits to
 Commander, you will need to Install Commander in Developer mode. Developer
 mode clones the Commander source code to your local machine in a virtual
 environment.
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+
+# Installation and Setup
+
+Your first steps with Keeper Commander
+
+[PreviousCommander Overview](/en/keeperpam/commander-cli/overview)[NextCLI
+Installation on Windows](/en/keeperpam/commander-cli/commander-installation-
+setup/installation-on-windows)
+
+  * Commander CLI Install
+  * Developer Instructions
+  * Making Changes
 
 [CLI Installation on Windows](/en/keeperpam/commander-cli/commander-
 installation-setup/installation-on-windows)

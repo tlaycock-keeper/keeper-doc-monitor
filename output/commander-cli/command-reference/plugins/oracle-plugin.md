@@ -425,36 +425,6 @@ reference/plugins/oracle-plugin?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Prerequisites
@@ -476,20 +446,13 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-Mf3h9C4TgPnXlyss5xk&only=yes&limit=100)
 
 Rotate Oracle database passwords with Commander
 
-[PreviousMySQL Plugin](/en/keeperpam/commander-cli/command-
-reference/plugins/mysql-plugin)[NextPostgreSQL
-Plugin](/en/keeperpam/commander-cli/command-reference/plugins/postgresql-
-plugin)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 Keeper has also launched a zero-trust Password Rotation feature with
 KeeperPAM. This new capability is recommended for most password rotation use
 cases. The Documentation is linked below:
 
-  *   * Commander 
+  * [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-rotation)
+
+  * Commander [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
 
 This plugin allows rotating a user's password in Oracle Database Server
 
@@ -500,6 +463,9 @@ Prerequisites
 Oracle requires Instant Client setup to enable client applications.
 
 Consult the following page:
+<http://www.oracle.com/technetwork/database/features/instant-
+client/index-097480.html>[](http://www.oracle.com/technetwork/database/features/instant-
+client/index-097480.html)
 
 ####
 
@@ -523,7 +489,9 @@ Rotation supports legacy and typed records. If using typed record, a 'Login'
 type field is required. Additional fields may be added depending on the
 rotation type as well. See the instructions below.
 
-See the section for more information on legacy vs typed records
+See the [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-
+commander-cli#typed-vs-untyped-records-v3-vs-v2)section for more information
+on legacy vs typed records
 
 ###
 
@@ -617,18 +585,44 @@ Output
 After rotation is completed, the new password will be stored in the `Password`
 field of the record
 
-[Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
-rotation)
+[PreviousMySQL Plugin](/en/keeperpam/commander-cli/command-
+reference/plugins/mysql-plugin)[NextPostgreSQL
+Plugin](/en/keeperpam/commander-cli/command-reference/plugins/postgresql-
+plugin)
 
-[KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
-commands)
+Last updated 2 months ago
 
-<http://www.oracle.com/technetwork/database/features/instant-
-client/index-097480.html>[](http://www.oracle.com/technetwork/database/features/instant-
-client/index-097480.html)
+Was this helpful?
 
-[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
-cli#typed-vs-untyped-records-v3-vs-v2)
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 A Keeper Record setup for Oracle password rotation
 

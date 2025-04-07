@@ -437,54 +437,6 @@ meraki?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Prerequisites 
-  * Requests library installation
-  * Setting up AnyConnect Cisco VPN 
-  * Steps to Test Cisco Device
-  * Login to Cisco Sandbox
-  * 2\. Select and Launch the Device
-  * 3\. Receive Details via Email or DevNet Environment
-  * 4\. Download Cisco AnyConnect VPN
-  * 5\. Connect to the VPN
-  * 6\. Store Developer Credentials
-  * 7\. Add Custom Field to Cisco Authentication Record
-  * 8\. Create a User
-  * 9\. Follow These Steps to Create a User
-  * 10\. Test the New User
-  * Setting up Rotation in your Vault
-  * Step 1: Set Up Rotation Record
-  * Step 2: Add PAM Script
-  * Step 3: Add NOOP Custom Field
-  * Step 4: Configure Password Rotation Settings
-  * Python Script
-  * Rotating Cisco Meraki Network User Credentials
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=9sQYdCSKCpcM6H7F4p1l&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [Network Devices](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices)
-
-# Cisco Meraki
-
-Rotate your Cisco Meraki Network Credentials
-
-[PreviousCisco IOS XE](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/network-devices/cisco-ios-xe)[NextService
-Management](/en/keeperpam/privileged-access-manager/password-rotation/service-
-management)
-
-Last updated 1 month ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -514,6 +466,17 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=9sQYdCSKCpcM6H7F4p1l&only=yes&limit=100)
+
+Last updated 1 month ago
+
+Was this helpful?
 
 ##
 
@@ -546,12 +509,6 @@ The Requests library allows you to send HTTP requests easily. Activate a
 Python virtual environment in your Keeper Gateway environment and install the
 library using the following command:
 
-Copy
-
-    
-    
-    pip install requests
-
 ###
 
 **Setting up AnyConnect Cisco VPN**
@@ -567,19 +524,11 @@ Steps to Test Cisco Device
 Following these steps will allow you to test the Cisco device and create a new
 user in the Cisco sandbox environment.
 
-> **Note:** If you want to use a virtual environment, add a shebang line at
-> the top of the script as documented here in the [Python Environment
-> Setup](https://docs.keeper.io/en/v/secrets-manager/secrets-manager/password-
-> rotation/post-rotation-scripts/use-case-examples/rotate-credential-via-rest-
-> api#step-5-python-environment-setup).
-
-###
+> ###
 
 Login to Cisco Sandbox
 
-  * Go to the [Cisco DevNet Sandbox](https://devnetsandbox.cisco.com/)
-
-  * Log in with your Cisco account credentials.
+  *   * Log in with your Cisco account credentials.
 
   * Select and launch the sandbox.
 
@@ -606,7 +555,7 @@ details or find them in the DevNet Environment under Quick Access.
 
   * Download and install the Cisco AnyConnect Secure Mobility Client.
 
-  * Get detailed connection instructions [here](https://developer.cisco.com/docs/sandbox/getting-started/#support).
+  * 
 
 ###
 
@@ -648,43 +597,17 @@ set its value to the host address (e.g., `13.0.0.1`).
 
   1. Login with Admin User (developer):
 
-Copy
-
-    
-        ssh developer@<device-ip>
-
   2. Enable privileged commands:
-
-Copy
-
-    
-        enable
 
   3. Enter configuration mode:
 
-Copy
-
-    
-        configure terminal
-
   4. Create a new user with a password:
-
-Copy
-
-    
-        username <user> password <pass>
 
 ###
 
 10\. Test the New User
 
 Login with the new user:
-
-Copy
-
-    
-    
-    ssh <user>@<device-ip>
 
 > **Note:** Replace `<user>` with the username you created and `<device-ip>`
 > with the IP address of the Cisco device.
@@ -745,6 +668,65 @@ Step 4: Configure Password Rotation Settings
 Python Script
 
 PAM script to rotate Cisco Meraki user credentials:
+
+The above script for the Cisco Post-Rotation Script can be also found here:
+
+##
+
+Rotating Cisco Meraki Network User Credentials
+
+**Note:** The user whose password is getting rotated should not be an
+administrator and must be Authorized for Client VPN [While adding the user via
+user management portal, the authorized option should be selected as 'Yes'].
+
+After successfully setting up Rotation for your Cisco User Credentials on the
+PAM User Record, clicking on "Run Scripts Only" will rotate the credential:
+
+**Note:** If you want to use a virtual environment, add a shebang line at the
+top of the script as documented here in the .
+
+Go to the
+
+Get detailed connection instructions .
+
+Attach the below that will perform the password rotation. The script has
+additional comments inside that describe each line.
+
+Copy
+
+    
+    
+    pip install requests
+
+Copy
+
+    
+    
+    ssh developer@<device-ip>
+
+Copy
+
+    
+    
+    enable
+
+Copy
+
+    
+    
+    configure terminal
+
+Copy
+
+    
+    
+    username <user> password <pass>
+
+Copy
+
+    
+    
+    ssh <user>@<device-ip>
 
 Copy
 
@@ -943,24 +925,42 @@ Copy
     if __name__ == "__main__":
         main()
 
-The above script for the Cisco Post-Rotation Script can be also found here:
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [Network Devices](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices)
 
-##
+# Cisco Meraki
 
-Rotating Cisco Meraki Network User Credentials
+Rotate your Cisco Meraki Network Credentials
 
-**Note:** The user whose password is getting rotated should not be an
-administrator and must be Authorized for Client VPN [While adding the user via
-user management portal, the authorized option should be selected as 'Yes'].
+[PreviousCisco IOS XE](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/network-devices/cisco-ios-xe)[NextService
+Management](/en/keeperpam/privileged-access-manager/password-rotation/service-
+management)
 
-After successfully setting up Rotation for your Cisco User Credentials on the
-PAM User Record, clicking on "Run Scripts Only" will rotate the credential:
-
-Attach the below that will perform the password rotation. The script has
-additional comments inside that describe each line.
-
-[Python script ](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/network-devices/cisco-meraki#python-script)
+  * Overview
+  * Prerequisites 
+  * Requests library installation
+  * Setting up AnyConnect Cisco VPN 
+  * Steps to Test Cisco Device
+  * Login to Cisco Sandbox
+  * 2\. Select and Launch the Device
+  * 3\. Receive Details via Email or DevNet Environment
+  * 4\. Download Cisco AnyConnect VPN
+  * 5\. Connect to the VPN
+  * 6\. Store Developer Credentials
+  * 7\. Add Custom Field to Cisco Authentication Record
+  * 8\. Create a User
+  * 9\. Follow These Steps to Create a User
+  * 10\. Test the New User
+  * Setting up Rotation in your Vault
+  * Step 1: Set Up Rotation Record
+  * Step 2: Add PAM Script
+  * Step 3: Add NOOP Custom Field
+  * Step 4: Configure Password Rotation Settings
+  * Python Script
+  * Rotating Cisco Meraki Network User Credentials
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -993,6 +993,17 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRoVLFYb2o
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNJlysf3o7YpCNYYAcOIj%252FmerakiRecord2.png%3Falt%3Dmedia%26token%3D3dfdf243-12cd-4fcd-a737-21d0c43f5653&width=768&dpr=4&quality=100&sign=888d0fa6&sv=2)
+
+[Python Environment Setup](https://docs.keeper.io/en/v/secrets-
+manager/secrets-manager/password-rotation/post-rotation-scripts/use-case-
+examples/rotate-credential-via-rest-api#step-5-python-environment-setup)
+
+[Cisco DevNet Sandbox](https://devnetsandbox.cisco.com/)
+
+[here](https://developer.cisco.com/docs/sandbox/getting-started/#support)
+
+[Python script ](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/network-devices/cisco-meraki#python-script)
 
 [https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
 Scripts/blob/main/cisco-

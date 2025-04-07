@@ -523,21 +523,6 @@ Configuring Connection Settings
 Prior to configuring the Telnet protocol settings on the PAM Settings screen,
 the following fields are all **required** and need to be configured:
 
-Field
-
-Definition
-
-PAM Configuration
-
-This is the PAM Configuration that contains the details of your target
-infrastructure and provides access to the target configured on the PAM Record
-
-Administrative Credential Record
-
-This is the linked [PAM User](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-user) that will be used to authenticate to the
-target and perform administrative operations on it.
-
 The following table lists all the configurable connection settings for the
 Telnet protocol on the PAM Settings:
 
@@ -641,14 +626,6 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9sq5XKimB
 
 Telnet Session Recordings
 
-For this protocol, both graphical and the full, raw text text content of
-terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this
-[page](/en/keeperpam/privileged-access-manager/session-recording-and-
-playback).
-
-  * Learn more about [Session Recording and Playback](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
-
 [PreviousVNC Connections](/en/keeperpam/privileged-access-
 manager/connections/session-protocols/vnc-
 connections)[NextExamples](/en/keeperpam/privileged-access-
@@ -687,4 +664,32 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+Field
+
+Definition
+
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this .
+
+  * Learn more about 
+
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+
+[Session Recording and Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
+
+PAM Configuration
+
+This is the PAM Configuration that contains the details of your target
+infrastructure and provides access to the target configured on the PAM Record
+
+Administrative Credential Record
+
+This is the linked  that will be used to authenticate to the target and
+perform administrative operations on it.
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
 

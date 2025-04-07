@@ -603,10 +603,6 @@ Administrative Credential Record
 
 Linked PAM User credential used for connection and administrative operations
 
-**Required** Visit this [section](/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-database/example-microsoft-sql-
-server-database#administrative-credential-record) for more details
-
 Protocol
 
 Native database protocol used for connecting from the Gateway to the target
@@ -711,6 +707,12 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+**Required** Visit this  for more details
+
+[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database/example-microsoft-sql-server-database#administrative-
+credential-record)
 
 SQL Server PAM Database Record
 
