@@ -678,6 +678,8 @@ user@example.com
 
 liu.W241Q<q$RGl9r;N1
 
+[www.google.com](http://www.google.com/)
+
 main google account
 
 TeamFolder
@@ -696,13 +698,11 @@ $host
 
 $url
 
+[www.example.com](http://www.example.com/)
+
 More advanced import options are available using the [JSON
 Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
 commands/json-import) format described in the next section.
-
-[www.google.com](http://www.google.com/)
-
-[www.example.com](http://www.example.com/)
 
 CSV Import Sample
 

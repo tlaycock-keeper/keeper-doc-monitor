@@ -435,6 +435,36 @@ user?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -461,10 +491,14 @@ PDF](/en/keeperpam/~gitbook/pdf?page=1pETl8RervngFrGh7NaV&only=yes&limit=100)
 
 Rotating Okta user accounts using the Okta API
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkOE9dPTinmRAqz7vm4Ea%252FRotation-
-Okta.jpg%3Falt%3Dmedia%26token%3D200795aa-c9c3-4bbc-85d1-2b6048b243ff&width=768&dpr=4&quality=100&sign=6af9fc95&sv=2)
+[PreviousSaaS Accounts](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-accounts)[NextSnowflake
+User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/saas-accounts/snowflake-user)
+
+Last updated 1 month ago
+
+Was this helpful?
 
 ##
 
@@ -492,21 +526,13 @@ Prerequisites
 
 Obtain Okta API Token
 
-  1. Follow the steps in the official [Okta documentation](https://developer.okta.com/docs/guides/create-an-api-token/main/) to generate an API token.
-
-  2. Store this API token in a Keeper record. The record can be of any type, but for this example, we will use a "Login" type.
+  1.   2. Store this API token in a Keeper record. The record can be of any type, but for this example, we will use a "Login" type.
 
      * Store the API Token in the "password" field.
 
      * Store the Organization URL in the "Website Address" field.
 
   3. Name this record "Okta API Access Details" as this title will be used to fetch the record in the script later.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F1FcAdAA90o9thGpkKLlU%252Fokta_api_details.png%3Falt%3Dmedia%26token%3Dbf20baa0-6248-4277-a7b5-02b176c624a6&width=768&dpr=4&quality=100&sign=888567f6&sv=2)
-
-Okta API Details Record
 
 ###
 
@@ -526,18 +552,10 @@ the password is incorrect, the rotation will fail.
 
 Step 3: Add PAM Script
 
-  * Attach the below [Python](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/okta-user#python-script) or [Bash](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/okta-user#bash-script-version) script that will perform the password rotation.
-
-  * Add the "Additional Credential" record, which is the "Okta API Access Details" record created in Step 1.
+  *   * Add the "Additional Credential" record, which is the "Okta API Access Details" record created in Step 1.
 
 In the example below, we'll use the bash script because the Keeper Gateway is
 running as a Docker container.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFjPwq2Env5bnhuIb5UKp%252FScreenshot%25202025-02-09%2520at%25203.38.18%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Ddeb92dbd-831f-40d1-9d13-e8e8220c78ed&width=768&dpr=4&quality=100&sign=99029483&sv=2)
-
-PAM Script
 
 ###
 
@@ -546,12 +564,6 @@ Step 4: Configure Password Rotation Settings
   * **Rotation Type:** Set it to "Run PAM scripts only"
 
   * **PAM Configuration** : Select the configuration for your environment
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4xs9m0iC3FIX9Rt68iYp%252FScreenshot%25202025-02-09%2520at%25203.14.10%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dbedbec42-2f55-44c7-8c3a-38d622100362&width=768&dpr=4&quality=100&sign=be64b21c&sv=2)
-
-Password Rotation Settings
 
 ###
 
@@ -767,42 +779,39 @@ Copy
         loop.run_until_complete(main())
     
 
-[PreviousSaaS Accounts](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/saas-accounts)[NextSnowflake
-User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/saas-accounts/snowflake-user)
+Follow the steps in the official  to generate an API token.
 
-Last updated 1 month ago
+Attach the below  or  script that will perform the password rotation.
 
-Was this helpful?
+[Okta documentation](https://developer.okta.com/docs/guides/create-an-api-
+token/main/)
 
-#### Company
+[Python](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/saas-accounts/okta-user#python-script)
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+[Bash](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/saas-accounts/okta-user#bash-script-version)
 
-#### Support
+Okta API Details Record
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+PAM Script
 
-#### Solutions
+Password Rotation Settings
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkOE9dPTinmRAqz7vm4Ea%252FRotation-
+Okta.jpg%3Falt%3Dmedia%26token%3D200795aa-c9c3-4bbc-85d1-2b6048b243ff&width=768&dpr=4&quality=100&sign=6af9fc95&sv=2)
 
-#### Pricing
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F1FcAdAA90o9thGpkKLlU%252Fokta_api_details.png%3Falt%3Dmedia%26token%3Dbf20baa0-6248-4277-a7b5-02b176c624a6&width=768&dpr=4&quality=100&sign=888567f6&sv=2)
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFjPwq2Env5bnhuIb5UKp%252FScreenshot%25202025-02-09%2520at%25203.38.18%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Ddeb92dbd-831f-40d1-9d13-e8e8220c78ed&width=768&dpr=4&quality=100&sign=99029483&sv=2)
 
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4xs9m0iC3FIX9Rt68iYp%252FScreenshot%25202025-02-09%2520at%25203.14.10%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dbedbec42-2f55-44c7-8c3a-38d622100362&width=768&dpr=4&quality=100&sign=be64b21c&sv=2)
 

@@ -485,11 +485,6 @@ Follow the below steps to start using KeeperPAM.
 
 Keeper Enterprise license
 
-If you are not a Keeper customer or do not have the required license, you can
-[start a free trial](https://www.keepersecurity.com/password-manager-free-
-trial-sign-up.html) from our website. The free trial includes KeeperPAM full
-capabilities.
-
 2
 
 ###
@@ -514,9 +509,7 @@ From the Admin Console, enable the corresponding PAM Enforcement Policies.
 
   * Go to **Enforcement Policies** and open the "**Privileged Access Manager** " section.
 
-  * Enable all the [PAM enforcement policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-policies) to use the new features.
-
-  * Assign yourself or your test user account to this role.
+  *   * Assign yourself or your test user account to this role.
 
 4
 
@@ -553,13 +546,18 @@ Copy
 Download the file called `docker-seccomp.json` and place it in the same folder
 as your Docker Compose file.
 
+[15KBdocker-
+seccomp.json](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FMjBgU5aJYkp8Em3ZV9OD%2Fdocker-
+seccomp.json?alt=media&token=73227956-f299-47e5-80aa-764ea2ab9e93)
+
+docker-seccomp.json
+
 ####
 
 **Windows**
 
-  * Download the latest installer: [**64-bit Installer**](https://keepersecurity.com/pam/gateway/keeper-gateway_windows_x86_64.exe)
-
-  * You'll be asked to confirm uninstalling the previous Gateway, this is OK
+  *   * You'll be asked to confirm uninstalling the previous Gateway, this is OK
 
   * Ensure the "Enter one-time access token" selection is **NOT selected**
 
@@ -589,31 +587,13 @@ string from: `/etc/keeper-gateway/gateway-config.json` on Linux or
 
 New Customers: Create a new Gateway and Sandbox
 
-Follow the step by step guide in the [Getting
-Started](/en/keeperpam/privileged-access-manager/getting-started) section of
-this documentation. A new [Quick Start Wizard](/en/keeperpam/privileged-
-access-manager/quick-start-sandbox) is available to instantly create a sandbox
-for testing out a few of the connection types.
-
 6
 
 ###
 
 Explore new features
 
-  * [Quick Start Sandbox](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
-
-  * [Connections](/en/keeperpam/privileged-access-manager/connections)
-
-  * [Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
-
-  * [Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
-
-  * [Session Recording & Playback](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
-
-  * [SSH Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
-
-  * [Discovery](/en/keeperpam/privileged-access-manager/discovery)
+  *   *   *   *   *   *   * 
 
 ###
 
@@ -623,7 +603,7 @@ Notes
 
   * For a full range of features, use the Docker installation method, or Linux installation method on Rocky Linux or RHEL8.
 
-  * We recommend setting up a Keeper Gateway using the new [Quick Start Sandbox](/en/keeperpam/secrets-manager/quick-start-guide). This provides a customized Docker Compose file that provides an instant sandbox for testing.
+  * 
 
 ###
 
@@ -632,12 +612,52 @@ Feedback
 Please email us at **pam@keepersecurity.com** with your feedback and we'll
 quickly assist you with any questions.
 
-[15KBdocker-
-seccomp.json](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FMjBgU5aJYkp8Em3ZV9OD%2Fdocker-
-seccomp.json?alt=media&token=73227956-f299-47e5-80aa-764ea2ab9e93)
+If you are not a Keeper customer or do not have the required license, you can
+from our website. The free trial includes KeeperPAM full capabilities.
 
-docker-seccomp.json
+Enable all the  to use the new features.
+
+Download the latest installer:
+
+Follow the step by step guide in the  section of this documentation. A new  is
+available to instantly create a sandbox for testing out a few of the
+connection types.
+
+We recommend setting up a Keeper Gateway using the new . This provides a
+customized Docker Compose file that provides an instant sandbox for testing.
+
+[start a free trial](https://www.keepersecurity.com/password-manager-free-
+trial-sign-up.html)
+
+[PAM enforcement policies](/en/keeperpam/privileged-access-manager/getting-
+started/enforcement-policies)
+
+[**64-bit Installer**](https://keepersecurity.com/pam/gateway/keeper-
+gateway_windows_x86_64.exe)
+
+[Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+[Quick Start Wizard](/en/keeperpam/privileged-access-manager/quick-start-
+sandbox)
+
+[Quick Start Sandbox](/en/keeperpam/privileged-access-manager/quick-start-
+sandbox)
+
+[Connections](/en/keeperpam/privileged-access-manager/connections)
+
+[Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
+
+[Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-
+browser-isolation)
+
+[Session Recording & Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
+
+[SSH Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
+
+[Discovery](/en/keeperpam/privileged-access-manager/discovery)
+
+[Quick Start Sandbox](/en/keeperpam/secrets-manager/quick-start-guide)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

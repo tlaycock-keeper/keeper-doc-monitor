@@ -425,6 +425,36 @@ manager/integrations/azure-key-vault?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * About
@@ -452,22 +482,23 @@ PDF](/en/keeperpam/~gitbook/pdf?page=8LqKdN1gExiCxJhy1YW3&only=yes&limit=100)
 
 Sync secrets from the Keeper Vault with Azure Key Vault
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjainUtrw6ieDVNNUfvuE%252Fdatasource-
-ksm-
-azure.jpg%3Falt%3Dmedia%26token%3D7e5db38e-7558-4dba-b047-ca0156f11d34&width=768&dpr=4&quality=100&sign=b6a4e019&sv=2)
+[PreviousAzure DevOps Extension](/en/keeperpam/secrets-
+manager/integrations/azure-devops-plugin)[NextBitbucket
+Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
+
+Last updated 3 months ago
+
+Was this helpful?
 
 ##
 
 About
 
-The Keeper Secrets Manager CLI tool [`sync` command](/en/keeperpam/secrets-
-manager/secrets-manager-command-line-interface/sync-command) allows you to
-push secrets from the Keeper Vault to a target **Azure Key Vault** account,
-overwriting the existing values in the target location. This allows the Keeper
-Vault to be the single source of truth for any services or scripts in Azure
-which utilize the Key Vault.
+The Keeper Secrets Manager CLI tool  allows you to push secrets from the
+Keeper Vault to a target **Azure Key Vault** account, overwriting the existing
+values in the target location. This allows the Keeper Vault to be the single
+source of truth for any services or scripts in Azure which utilize the Key
+Vault.
 
 ##
 
@@ -481,17 +512,11 @@ Features
 
 Prerequisites
 
-  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
-
-    * Secrets Manager add-on enabled for your Keeper account
+  *     * Secrets Manager add-on enabled for your Keeper account
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
-
-    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
-
-  * An Azure account with Key Vault, and the ability to create security principals
+  *     *   * An Azure account with Key Vault, and the ability to create security principals
 
 ##
 
@@ -511,10 +536,6 @@ following command:
 
 `ksm profile init <TOKEN>`
 
-For information on creating multiple profiles and other options, see the
-[profile documentation](/en/keeperpam/secrets-manager/secrets-manager-command-
-line-interface/profile-command)
-
 ###
 
 2\. Set Azure Permissions
@@ -524,10 +545,6 @@ the connection. The Azure account with Key vault needs to enable a service
 principal with authorization to perform key operations in the Key Vault.
 
 Follow the Microsoft guide for setting up a service principal:
-
-[![Logo](https://docs.microsoft.com/favicon.ico)Apps & service principals in
-Azure AD - Microsoft identity platformdocsmsft](https://docs.microsoft.com/en-
-us/azure/active-directory/develop/app-objects-and-service-principals)
 
 ###
 
@@ -546,11 +563,6 @@ Name"`
 When retrieving the Client secret from Azure app registration, make sure to
 copy the **Value** (not Secret ID) into "Azure Client Secret" field.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGbgXULnF2SK8cGDb1t7Y%252Fspaces_-
-MJXOXEifAmpyvNVL1to_uploads_1VHxRugsu0DJAHvvbpI7_Screenshot%25202023-04-21%2520at%25203.webp%3Falt%3Dmedia%26token%3Df54dc0e8-512e-4f30-9266-e9772d06b98c&width=300&dpr=4&quality=100&sign=bc3f2ae1&sv=2)
-
 ####
 
 (Method 1) Create an Azure Credentials Custom Record Type
@@ -563,16 +575,8 @@ Keeper Vault and hit "Create Type". Create a new record type with hidden
 fields that have the correct field label, then click "Publish" to create the
 new record type.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3ytUgwFocUVmKLb8sNQ6%252Fimage.png%3Falt%3Dmedia%26token%3D1ef93869-4ac4-4776-9b4f-1d58a6529218&width=768&dpr=4&quality=100&sign=cf1bb8df&sv=2)
-
 Then simply create a new record of the Azure Credentials type and enter the
 details into the corresponding fields.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXjlSL3lY76SwWoKNdeCQ%252Fimage.png%3Falt%3Dmedia%26token%3Dc0a03e93-bbff-4837-9375-5de09abc8c4c&width=768&dpr=4&quality=100&sign=f9f711bc&sv=2)
 
 Make sure this new record is in a shared folder that is shared to your Secrets
 Manager application.
@@ -590,10 +594,6 @@ the corresponding field name.
 
 Any record type will work, but the "File Attachment" standard record type has
 no fields and will be cleaner looking when custom fields are added
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7XYS9qI9McE7X4knr8iO%252Fimage.png%3Falt%3Dmedia%26token%3Dd9ec05af-5152-4884-a65e-7e78be69c01a&width=768&dpr=4&quality=100&sign=bb899506&sv=2)
 
 Then fill in each custom field and hit "Save" to save the record.
 
@@ -619,9 +619,6 @@ Keeper notation is a query notation used by Keeper Secrets Manager to identify
 specific record values. The notation follows the general format of:
 `UID/`[`field|custom_field]/fieldname `for example:
 `ae3d[...]d22e/field/password`
-
-See the [Keeper Notation documentation](/en/keeperpam/secrets-
-manager/about/keeper-notation) for more information
 
 Note that full record UIDs are not given in these examples
 
@@ -673,41 +670,57 @@ TIP: you can use `-m` as short hand for `--map`
 
 `ksm sync --type azure --credentials [UID] -m [...] -m [...]`
 
-[PreviousAzure DevOps Extension](/en/keeperpam/secrets-
-manager/integrations/azure-devops-plugin)[NextBitbucket
-Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
+Keeper Secrets Manager access (See the  for more details)
 
-Last updated 3 months ago
+A Keeper  with secrets shared to it
 
-Was this helpful?
+See the  for instructions on creating an Application
 
-#### Company
+For information on creating multiple profiles and other options, see the
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+See the  for more information
 
-#### Support
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+[profile documentation](/en/keeperpam/secrets-manager/secrets-manager-command-
+line-interface/profile-command)
 
-#### Solutions
+[Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
+notation)
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+[`sync` command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/sync-command)
 
-#### Pricing
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
-© 2025 Keeper Security, Inc.
+[![Logo](https://docs.microsoft.com/favicon.ico)Apps & service principals in
+Azure AD - Microsoft identity platformdocsmsft](https://docs.microsoft.com/en-
+us/azure/active-directory/develop/app-objects-and-service-principals)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGbgXULnF2SK8cGDb1t7Y%252Fspaces_-
+MJXOXEifAmpyvNVL1to_uploads_1VHxRugsu0DJAHvvbpI7_Screenshot%25202023-04-21%2520at%25203.webp%3Falt%3Dmedia%26token%3Df54dc0e8-512e-4f30-9266-e9772d06b98c&width=300&dpr=4&quality=100&sign=bc3f2ae1&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjainUtrw6ieDVNNUfvuE%252Fdatasource-
+ksm-
+azure.jpg%3Falt%3Dmedia%26token%3D7e5db38e-7558-4dba-b047-ca0156f11d34&width=768&dpr=4&quality=100&sign=b6a4e019&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3ytUgwFocUVmKLb8sNQ6%252Fimage.png%3Falt%3Dmedia%26token%3D1ef93869-4ac4-4776-9b4f-1d58a6529218&width=768&dpr=4&quality=100&sign=cf1bb8df&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXjlSL3lY76SwWoKNdeCQ%252Fimage.png%3Falt%3Dmedia%26token%3Dc0a03e93-bbff-4837-9375-5de09abc8c4c&width=768&dpr=4&quality=100&sign=f9f711bc&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7XYS9qI9McE7X4knr8iO%252Fimage.png%3Falt%3Dmedia%26token%3Dd9ec05af-5152-4884-a65e-7e78be69c01a&width=768&dpr=4&quality=100&sign=bb899506&sv=2)
 

@@ -572,12 +572,6 @@ policies.
 
   4. Enable Keeper Secrets Manager policies as required
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9wMASX6k3ZiGRVx7m2oE%252FScreenshot%25202024-12-26%2520at%252012.04.24%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Df85ce4fe-7a5c-4e63-a78d-fc39f4d5d9d6&width=768&dpr=4&quality=100&sign=b67431fe&sv=2)
-
-Secrets Manager enforcement policies
-
 Note: This screenshot is based on the new [Preview
 Console](/en/keeperpam/privileged-access-manager/setup-steps).
 
@@ -596,9 +590,6 @@ Create a Secret
 > Secrets are stored as records in the Keeper Vault and are typically stored
 > as attachments or fields in these records.
 
-[_Learn more about Secrets Manager Secrets_](/en/keeperpam/secrets-
-manager/about/terminology#secret)
-
 In the Keeper Web Vault or Desktop App user interface, create a Shared Folder
 and then add Secrets to the folder.
 
@@ -614,11 +605,6 @@ With the new shared folder selected, click the "Create New" button and select
 ###
 
 Create a Secrets Manager Application
-
-Secrets are shared to Applications as records or shared folders. Applications
-maintain client devices, permissions, audit trail, and history. [_Learn more
-about Secrets Manager Applications_](/en/keeperpam/secrets-
-manager/about/terminology#application)
 
 In the Keeper Vault, navigate to the Secrets Manager tab to see a list of
 Secrets Manager applications. Then click "Create Application"
@@ -639,11 +625,6 @@ create the first Secrets Manager Client Device.
 ###
 
 Create a Secrets Manager Client Device
-
-A Client Device is any endpoint that needs to access secrets associated with
-an Application. This can be a physical, virtual, or cloud-based device.
-[_Learn more about Secrets Manager Client Devices_](/en/keeperpam/secrets-
-manager/about/terminology#client)
 
 When a Secrets Manager Application is created in the Keeper Vault, a Secrets
 Manager Client Device is also created.
@@ -817,9 +798,6 @@ Create a Secret
 > Secrets are stored as records in the Keeper Vault and are typically stored
 > as attachments or fields in these records.
 
-[_Learn more about Secrets Manager Secrets_](/en/keeperpam/secrets-
-manager/about/terminology#secret)
-
 Run Keeper Commander by typing `keeper shell` then login with your Keeper
 email:
 
@@ -864,9 +842,6 @@ Create a Secrets Manager Application
 > Secrets are shared to Applications as records or shared folders.
 > Applications maintain client devices, permissions, audit trail, and history.
 
-[_Learn more about Secrets Manager Applications_](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
 In the example below, replace `XXX` with the Shared Folder UID or Record UID
 from your vault.
 
@@ -888,9 +863,6 @@ Create a Secrets Manager Client Device
 
 > A Client Device is any endpoint that needs to access secrets associated with
 > an Application. This can be a physical, virtual, or cloud-based device.
-
-[_Learn more about Secrets Manager Client Devices_](/en/keeperpam/secrets-
-manager/about/terminology#client)
 
 Create a client device to generate a One Time Access Token, which is used to
 initialize a device.
@@ -915,13 +887,59 @@ Continue Quick Start Guide
 
 Secrets Manager is now setup and ready to use!
 
+From here, Secrets Manager can be setup using the Keeper Vault, or Keeper
+Commander. The following instructions show the steps for using the Keeper
+Vault. For Commander CLI steps, see .
+
+Secrets are shared to Applications as records or shared folders. Applications
+maintain client devices, permissions, audit trail, and history.
+
+A Client Device is any endpoint that needs to access secrets associated with
+an Application. This can be a physical, virtual, or cloud-based device.
+
+See the  to create additional Client Devices and One-Time Access Token
+
+If the KSM profile is not initialized successfully, the One Time Access Token
+may have expired. Try  to generate a new One-Time Access Token.
+
+From this point forward, follow the  to access Secrets using Secrets Manager
+and complete this guide.
+
+[_Learn more about Secrets Manager Secrets_](/en/keeperpam/secrets-
+manager/about/terminology#secret)
+
+[_Learn more about Secrets Manager Applications_](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
+[_Learn more about Secrets Manager Client Devices_](/en/keeperpam/secrets-
+manager/about/terminology#client)
+
+[_Learn more about Secrets Manager Secrets_](/en/keeperpam/secrets-
+manager/about/terminology#secret)
+
+[_Learn more about Secrets Manager Applications_](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
+[_Learn more about Secrets Manager Client Devices_](/en/keeperpam/secrets-
+manager/about/terminology#client)
+
+[the instructions at the bottom of this page](/en/keeperpam/secrets-
+manager/quick-start-guide#setup-using-keeper-commander-cli)
+
+[instructions above](/en/keeperpam/secrets-manager/quick-start-guide#access-
+secrets-with-secrets-manager)
+
+[documented instructions](/en/keeperpam/secrets-manager/about/one-time-
+token#with-an-existing-application)
+
+[creating a new Client Device](/en/keeperpam/secrets-manager/about/one-time-
+token#with-an-existing-application)
+
 Start Free Trial
 
 Add a Keeper role
 
-From here, Secrets Manager can be setup using the Keeper Vault, or Keeper
-Commander. The following instructions show the steps for using the Keeper
-Vault. For Commander CLI steps, see .
+Secrets Manager enforcement policies
 
 Create New button in the Keeper vault
 
@@ -943,33 +961,9 @@ A completed "Add Application" form
 
 A One-Time Access Token is generated when a Client Device is created
 
-See the  to create additional Client Devices and One-Time Access Token
-
-If the KSM profile is not initialized successfully, the One Time Access Token
-may have expired. Try  to generate a new One-Time Access Token.
-
-From this point forward, follow the  to access Secrets using Secrets Manager
-and complete this guide.
-
-[documented instructions](/en/keeperpam/secrets-manager/about/one-time-
-token#with-an-existing-application)
-
-[creating a new Client Device](/en/keeperpam/secrets-manager/about/one-time-
-token#with-an-existing-application)
-
-[the instructions at the bottom of this page](/en/keeperpam/secrets-
-manager/quick-start-guide#setup-using-keeper-commander-cli)
-
-[instructions above](/en/keeperpam/secrets-manager/quick-start-guide#access-
-secrets-with-secrets-manager)
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYt6M4J0MAswGiBeuWLld%252Fadd%2520role.png%3Falt%3Dmedia%26token%3D3a2ef309-44a5-4220-8df9-6772a9a6002d&width=768&dpr=4&quality=100&sign=48844f32&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJbmBKgn2PNTZcVMz6j1T%252Fcreate%2520new.png%3Falt%3Dmedia%26token%3Da06314ec-e95d-4326-9838-2bca06b1f726&width=768&dpr=4&quality=100&sign=e9a556ca&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9wMASX6k3ZiGRVx7m2oE%252FScreenshot%25202024-12-26%2520at%252012.04.24%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Df85ce4fe-7a5c-4e63-a78d-fc39f4d5d9d6&width=768&dpr=4&quality=100&sign=b67431fe&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -977,11 +971,11 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNhfADxuH7
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIMcLUmOJownzvKCPMQzf%252Fcreate%2520new%2520shared%2520folder%2520highlighted.png%3Falt%3Dmedia%26token%3D5fcee136-2d21-41a9-a428-b70645ce6013&width=768&dpr=4&quality=100&sign=31b3e1f7&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJbmBKgn2PNTZcVMz6j1T%252Fcreate%2520new.png%3Falt%3Dmedia%26token%3Da06314ec-e95d-4326-9838-2bca06b1f726&width=768&dpr=4&quality=100&sign=e9a556ca&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fv2HrzBxHe3F1tME28i9X%252Fshared%2520folder%2520form.png%3Falt%3Dmedia%26token%3D1972fbed-e232-4af0-aba3-4e7628cfe09e&width=768&dpr=4&quality=100&sign=3fcc504e&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIMcLUmOJownzvKCPMQzf%252Fcreate%2520new%2520shared%2520folder%2520highlighted.png%3Falt%3Dmedia%26token%3D5fcee136-2d21-41a9-a428-b70645ce6013&width=768&dpr=4&quality=100&sign=31b3e1f7&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MgS3wjqgG-LoAx-
@@ -990,7 +984,11 @@ overview.png%3Falt%3Dmedia%26token%3D0100630b-af34-462a-874f-1dbf183fb726&width=
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYA7K1sEdaLVyojGuEPqR%252Fcraete%2520app.png%3Falt%3Dmedia%26token%3D55e51694-9fa4-4628-a340-38942c26ec1f&width=768&dpr=4&quality=100&sign=d99717ea&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYt6M4J0MAswGiBeuWLld%252Fadd%2520role.png%3Falt%3Dmedia%26token%3D3a2ef309-44a5-4220-8df9-6772a9a6002d&width=768&dpr=4&quality=100&sign=48844f32&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fv2HrzBxHe3F1tME28i9X%252Fshared%2520folder%2520form.png%3Falt%3Dmedia%26token%3D1972fbed-e232-4af0-aba3-4e7628cfe09e&width=768&dpr=4&quality=100&sign=3fcc504e&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -999,6 +997,10 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlezLERMM1
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5b6n9UPDgvlimaWMUasI%252FSM%2520tab.png%3Falt%3Dmedia%26token%3D6c9e14a2-6bca-4c0a-9001-700b55b9271e&width=768&dpr=4&quality=100&sign=7e4c45f9&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYA7K1sEdaLVyojGuEPqR%252Fcraete%2520app.png%3Falt%3Dmedia%26token%3D55e51694-9fa4-4628-a340-38942c26ec1f&width=768&dpr=4&quality=100&sign=d99717ea&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -1011,9 +1013,9 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfS3uOY84O
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSmttTfmZfAzSmQ7BbE83%252Fapp%2520form%2520filled.png%3Falt%3Dmedia%26token%3De48cf671-35e1-4ed7-9754-9c211c162d38&width=768&dpr=4&quality=100&sign=8e39d8fd&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPgDwQiCrwyCzynqZniPp%252Fdevice%2520form%2520one%2520time%2520token.png%3Falt%3Dmedia%26token%3D8e7db73c-643b-42c2-a6bc-82dc64b629b1&width=768&dpr=4&quality=100&sign=6d2301e3&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPgDwQiCrwyCzynqZniPp%252Fdevice%2520form%2520one%2520time%2520token.png%3Falt%3Dmedia%26token%3D8e7db73c-643b-42c2-a6bc-82dc64b629b1&width=768&dpr=4&quality=100&sign=6d2301e3&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSmttTfmZfAzSmQ7BbE83%252Fapp%2520form%2520filled.png%3Falt%3Dmedia%26token%3De48cf671-35e1-4ed7-9754-9c211c162d38&width=768&dpr=4&quality=100&sign=8e39d8fd&sv=2)
 

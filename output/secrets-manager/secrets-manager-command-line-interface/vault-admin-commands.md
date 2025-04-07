@@ -429,36 +429,6 @@ commands?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as PDF](/en/keeperpam/~gitbook/pdf?page=-Mf8yJS8Oy-
-wUqwOAoUY&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
-
-# Misc Commands
-
-Use the Keeper Commander CLI for hundreds of Vault and Admin Console commands
-
-The Keeper Secrets Manage CLI is focused specifically on retrieving and
-updating secrets in the vault.
-
-For all other commands, please refer to the Keeper Commander CLI:
-
-[Commander CLI](/en/keeperpam/commander-cli/overview)
-
-[PreviousVersion Command](/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface/version-command)[NextDocker
-Container](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/docker-container)
-
-Last updated 10 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -488,4 +458,34 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as PDF](/en/keeperpam/~gitbook/pdf?page=-Mf8yJS8Oy-
+wUqwOAoUY&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
+
+# Misc Commands
+
+Use the Keeper Commander CLI for hundreds of Vault and Admin Console commands
+
+[PreviousVersion Command](/en/keeperpam/secrets-manager/secrets-manager-
+command-line-interface/version-command)[NextDocker
+Container](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/docker-container)
+
+Last updated 10 months ago
+
+Was this helpful?
+
+The Keeper Secrets Manage CLI is focused specifically on retrieving and
+updating secrets in the vault.
+
+For all other commands, please refer to the Keeper Commander CLI:
+
+[Commander CLI](/en/keeperpam/commander-cli/overview)
 

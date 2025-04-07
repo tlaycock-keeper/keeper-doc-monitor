@@ -2032,6 +2032,12 @@ manager/tree/master/sdk/python)
 [Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
 notation)
 
+[field ](/en/keeperpam/secrets-manager/developer-sdk-library/python-
+sdk#retrieve-field-values-from-a-secret)
+
+[upload_file](/en/keeperpam/secrets-manager/developer-sdk-library/python-
+sdk#upload-a-file)
+
 [Record Types](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
 
@@ -2046,10 +2052,4 @@ commands/default-record-types#field-types)
 
 [documentation](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
-
-[field ](/en/keeperpam/secrets-manager/developer-sdk-library/python-
-sdk#retrieve-field-values-from-a-secret)
-
-[upload_file](/en/keeperpam/secrets-manager/developer-sdk-library/python-
-sdk#upload-a-file)
 

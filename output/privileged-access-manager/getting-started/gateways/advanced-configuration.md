@@ -431,6 +431,50 @@ configuration?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * Support Configurations
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=0n5yjJyt6o3BaKp37gao&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+# Advanced Configuration
+
+Advanced Keeper Gateway Configurations
+
+##
+
+Overview
+
+This section will cover additional configurations to modify the Keeper
+Gateway's default behavior.
+
+##
+
+Support Configurations
+
+The following are supported configurations for the Keeper Gateway:
+
+  * [Storing Gateway Configuration in AWS KMS](/en/keeperpam/privileged-access-manager/getting-started/gateways/advanced-configuration/gateway-configuration-with-aws-kms)
+
+  * [Gateway Configuration with Custom Fields](/en/keeperpam/privileged-access-manager/getting-started/gateways/advanced-configuration/gateway-configuration-with-custom-fields)
+
+[PreviousAlerts and SIEM Integration](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/alerts-and-siem-integration)[NextGateway
+Configuration with AWS KMS](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/advanced-configuration/gateway-configuration-with-aws-kms)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -460,54 +504,4 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Overview
-  * Support Configurations
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=0n5yjJyt6o3BaKp37gao&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-# Advanced Configuration
-
-Advanced Keeper Gateway Configurations
-
-[PreviousAlerts and SIEM Integration](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/alerts-and-siem-integration)[NextGateway
-Configuration with AWS KMS](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/advanced-configuration/gateway-configuration-with-aws-kms)
-
-Last updated 3 months ago
-
-Was this helpful?
-
-##
-
-Overview
-
-This section will cover additional configurations to modify the Keeper
-Gateway's default behavior.
-
-##
-
-Support Configurations
-
-The following are supported configurations for the Keeper Gateway:
-
-  *   * 
-
-[Storing Gateway Configuration in AWS KMS](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/advanced-configuration/gateway-configuration-
-with-aws-kms)
-
-[Gateway Configuration with Custom Fields](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/advanced-configuration/gateway-configuration-
-with-custom-fields)
 

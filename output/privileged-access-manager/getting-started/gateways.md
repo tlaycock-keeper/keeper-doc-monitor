@@ -425,6 +425,36 @@ manager/getting-started/gateways?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -445,9 +475,13 @@ PDF](/en/keeperpam/~gitbook/pdf?page=YVitXRsJWzo14VlLdwoR&only=yes&limit=100)
 
 Installation and setup of the Keeper Gateway
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FakdhgZ76MX49kJJbPScK%252Fgateway.jpg%3Falt%3Dmedia%26token%3Db511fac0-f22f-4b6c-a362-d8dc86272e5c&width=768&dpr=4&quality=100&sign=ff08947&sv=2)
+[PreviousDevices](/en/keeperpam/privileged-access-manager/getting-
+started/devices)[NextCreating a Gateway](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/one-time-access-token)
+
+Last updated 14 days ago
+
+Was this helpful?
 
 ##
 
@@ -463,11 +497,7 @@ Gateway in each environment that is being managed.
 
 **Platforms Supported**
 
-  * [**Docker**](/en/keeperpam/privileged-access-manager/getting-started/gateways/docker-installation)
-
-  * [**Windows**](/en/keeperpam/privileged-access-manager/getting-started/gateways/windows-installation)
-
-  * [**Linux**](/en/keeperpam/privileged-access-manager/getting-started/gateways/linux-installation)
+  *   *   * 
 
 ###
 
@@ -552,11 +582,7 @@ addition to the authentication and encryption built into the service.
 Based on your Operating System, refer to the corresponding guide on installing
 the Keeper Gateway:
 
-  * [Docker](/en/keeperpam/privileged-access-manager/getting-started/gateways/docker-installation)
-
-  * [Linux](/en/keeperpam/privileged-access-manager/getting-started/gateways/linux-installation)
-
-  * [Windows](/en/keeperpam/privileged-access-manager/getting-started/gateways/windows-installation)
+  *   *   * 
 
 ####
 
@@ -564,45 +590,30 @@ Additional Installation Configurations
 
 If you are installing on an EC2 instance in AWS, the Keeper Gateway can be
 configured to use the instance role for pulling its configuration from AWS
-Secrets Manager. Detailed instructions on this setup can be [found
-here](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/advanced-configuration/gateway-configuration-with-aws-kms).
+Secrets Manager. Detailed instructions on this setup can be .
 
-[PreviousDevices](/en/keeperpam/privileged-access-manager/getting-
-started/devices)[NextCreating a Gateway](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/one-time-access-token)
+[**Docker**](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/docker-installation)
 
-Last updated 14 days ago
+[**Windows**](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/windows-installation)
 
-Was this helpful?
+[**Linux**](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/linux-installation)
 
-#### Company
+[Docker](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/docker-installation)
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+[Linux](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/linux-installation)
 
-#### Support
+[Windows](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/windows-installation)
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+[found here](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/advanced-configuration/gateway-configuration-with-aws-kms)
 
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FakdhgZ76MX49kJJbPScK%252Fgateway.jpg%3Falt%3Dmedia%26token%3Db511fac0-f22f-4b6c-a362-d8dc86272e5c&width=768&dpr=4&quality=100&sign=ff08947&sv=2)
 

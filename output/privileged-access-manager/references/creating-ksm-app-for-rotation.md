@@ -427,69 +427,6 @@ manager/references/creating-ksm-app-for-rotation?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Setup KSM
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=3Uoyio5gnT7neL5zeZFT&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
-
-# Creating KSM App for Rotation
-
-Steps to create a Keeper Secrets Manager application for rotation of passwords
-
-##
-
-Overview
-
-Prior to working with Rotation, you need to create a KSM application. For more
-information on KSM, visit:
-
-[About KSM](/en/keeperpam/secrets-manager/about)
-
-##
-
-Setup KSM
-
-  1. In the Keeper Web Vault or Desktop App user interface, create a shared folder. This shared folder will contain the PAM records you will create as you are working through the [use-case](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases) guides.
-
-  2. Navigate to the "Secret Managers" tab on the left and click on "Create Application" to create a KSM application
-
-  3. In the prompted window:
-
-     * Enter the name of your KSM application
-
-     * Choose the shared folder you have created in Step 1
-
-     * Set the Record Permissions for Application to "Can Edit" 
-
-  4. Click on "Generate Access Token" and then click on "OK"
-
-You can safely ignore the first One-Time Access Token generated for the newly
-created KSM application. When creating a Keeper Gateway device, a different
-One-Time Access Token will be created.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGfrKhg3EYK2mAtfmsq1x%252FScreenshot%25202023-05-01%2520at%252011.37.56%2520AM.jpg%3Falt%3Dmedia%26token%3D21236241-e0f2-4b54-b7dd-9f3cea8ab53c&width=768&dpr=4&quality=100&sign=2355f5&sv=2)
-
-Create a KSM Application
-
-[PreviousInstalling Docker on Linux](/en/keeperpam/privileged-access-
-manager/references/installing-docker-on-linux)[NextActive Directory Least
-Privilege](/en/keeperpam/privileged-access-manager/references/active-
-directory-least-privilege)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -519,4 +456,70 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Overview
+  * Setup KSM
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=3Uoyio5gnT7neL5zeZFT&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
+
+# Creating KSM App for Rotation
+
+Steps to create a Keeper Secrets Manager application for rotation of passwords
+
+[PreviousInstalling Docker on Linux](/en/keeperpam/privileged-access-
+manager/references/installing-docker-on-linux)[NextActive Directory Least
+Privilege](/en/keeperpam/privileged-access-manager/references/active-
+directory-least-privilege)
+
+Last updated 3 months ago
+
+Was this helpful?
+
+##
+
+Overview
+
+Prior to working with Rotation, you need to create a KSM application. For more
+information on KSM, visit:
+
+##
+
+Setup KSM
+
+  1. In the Keeper Web Vault or Desktop App user interface, create a shared folder. This shared folder will contain the PAM records you will create as you are working through the  guides.
+
+  2. Navigate to the "Secret Managers" tab on the left and click on "Create Application" to create a KSM application
+
+  3. In the prompted window:
+
+     * Enter the name of your KSM application
+
+     * Choose the shared folder you have created in Step 1
+
+     * Set the Record Permissions for Application to "Can Edit" 
+
+  4. Click on "Generate Access Token" and then click on "OK"
+
+You can safely ignore the first One-Time Access Token generated for the newly
+created KSM application. When creating a Keeper Gateway device, a different
+One-Time Access Token will be created.
+
+[About KSM](/en/keeperpam/secrets-manager/about)
+
+[use-case](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases)
+
+Create a KSM Application
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGfrKhg3EYK2mAtfmsq1x%252FScreenshot%25202023-05-01%2520at%252011.37.56%2520AM.jpg%3Falt%3Dmedia%26token%3D21236241-e0f2-4b54-b7dd-9f3cea8ab53c&width=768&dpr=4&quality=100&sign=2355f5&sv=2)
 

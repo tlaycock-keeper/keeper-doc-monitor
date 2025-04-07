@@ -978,6 +978,9 @@ or
 When a new managed company is created, Commander saves the new mc id as an
 environment variable `last_mc_id See the `` about using this variable`
 
+[`msp-legacy-report`](/en/keeperpam/commander-cli/command-reference/reporting-
+commands#msp-legacy-report-command)
+
 [`documentation below`](/en/keeperpam/commander-cli/command-reference/msp-
 management-commands#undefined)
 
@@ -1028,7 +1031,4 @@ management-commands#msp-copy-role-command)
 
 [`distributor`](/en/keeperpam/commander-cli/command-reference/msp-management-
 commands#distributor-commands)
-
-[`msp-legacy-report`](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#msp-legacy-report-command)
 

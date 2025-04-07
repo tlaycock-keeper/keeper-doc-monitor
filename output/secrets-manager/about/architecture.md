@@ -425,78 +425,6 @@ manager/about/architecture?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * System Architecture
-  * High Availability and Local Cache
-  * Encryption Model
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-Mi1zTe4I8zDWSkB54eH&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [About KSM](/en/keeperpam/secrets-manager/about)
-
-# Architecture
-
-Secrets Manager High Level Architecture
-
-##
-
-System Architecture
-
-In Keeper's model, all your servers, CI/CD pipelines, developer environments
-and source code pull secrets from a secure API endpoint.
-
-The client device retrieves **encrypted ciphertext** from the Keeper cloud and
-the secrets are decrypted locally on the device (not on the server). Each
-secret is encrypted with a 256-bit AES key, and then encrypted again by
-another AES-256 Application Key.
-
-In addition to Zero-Knowledge encryption, every request to the server is
-additionally encrypted with an AES-256 Transmission Key on top of TLS to
-prevent MITM or replay attacks. This multi-layered cryptography is handled
-transparently using our client-side SDKs which are easy to integrate into any
-environment.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FMsOUZw5soC8Xyi4dSPuT%252Fsecrets-
-manager-
-diagram.png%3Falt%3Dmedia%26token%3Db58ec693-cbe8-4fb9-b08a-2b87d8b9cc14&width=768&dpr=4&quality=100&sign=231c9c66&sv=2)
-
-##
-
-High Availability and Local Cache
-
-Keeper's infrastructure serves requests for millions of users and tens of
-thousands of Enterprise customers every day.
-
-Keeper Secrets Manager benefits from the existing Keeper platform architecture
-in addition to an optional offline caching mechanism in all Secrets Manager
-SDK endpoints.
-
-Each client device platform provides an optional local caching components. If
-the Keeper endpoint is unavailable, the Client Device will pull the last
-requested Secrets from a local encrypted cache.
-
-##
-
-Encryption Model
-
-More details about the security and encryption model are [available
-here](/en/keeperpam/secrets-manager/about/security-encryption-model).
-
-[PreviousAbout KSM](/en/keeperpam/secrets-
-manager/about)[NextTerminology](/en/keeperpam/secrets-
-manager/about/terminology)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -526,4 +454,78 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * System Architecture
+  * High Availability and Local Cache
+  * Encryption Model
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-Mi1zTe4I8zDWSkB54eH&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [About KSM](/en/keeperpam/secrets-manager/about)
+
+# Architecture
+
+Secrets Manager High Level Architecture
+
+[PreviousAbout KSM](/en/keeperpam/secrets-
+manager/about)[NextTerminology](/en/keeperpam/secrets-
+manager/about/terminology)
+
+Last updated 3 months ago
+
+Was this helpful?
+
+##
+
+System Architecture
+
+In Keeper's model, all your servers, CI/CD pipelines, developer environments
+and source code pull secrets from a secure API endpoint.
+
+The client device retrieves **encrypted ciphertext** from the Keeper cloud and
+the secrets are decrypted locally on the device (not on the server). Each
+secret is encrypted with a 256-bit AES key, and then encrypted again by
+another AES-256 Application Key.
+
+In addition to Zero-Knowledge encryption, every request to the server is
+additionally encrypted with an AES-256 Transmission Key on top of TLS to
+prevent MITM or replay attacks. This multi-layered cryptography is handled
+transparently using our client-side SDKs which are easy to integrate into any
+environment.
+
+##
+
+High Availability and Local Cache
+
+Keeper's infrastructure serves requests for millions of users and tens of
+thousands of Enterprise customers every day.
+
+Keeper Secrets Manager benefits from the existing Keeper platform architecture
+in addition to an optional offline caching mechanism in all Secrets Manager
+SDK endpoints.
+
+Each client device platform provides an optional local caching components. If
+the Keeper endpoint is unavailable, the Client Device will pull the last
+requested Secrets from a local encrypted cache.
+
+##
+
+Encryption Model
+
+More details about the security and encryption model are .
+
+[available here](/en/keeperpam/secrets-manager/about/security-encryption-
+model)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FMsOUZw5soC8Xyi4dSPuT%252Fsecrets-
+manager-
+diagram.png%3Falt%3Dmedia%26token%3Db58ec693-cbe8-4fb9-b08a-2b87d8b9cc14&width=768&dpr=4&quality=100&sign=231c9c66&sv=2)
 

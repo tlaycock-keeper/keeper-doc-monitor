@@ -425,36 +425,6 @@ manager/integrations/teamcity?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * About
@@ -493,6 +463,36 @@ Last updated 4 months ago
 
 Was this helpful?
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ##
 
 About
@@ -518,11 +518,15 @@ Features
 
 Prerequisites
 
-  *     * Secrets Manager add-on enabled for your Keeper subscription
+  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
+
+    * Secrets Manager add-on enabled for your Keeper subscription
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   *     * The TeamCity plugin accepts Base 64 format configurations
+  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+
+    * The TeamCity plugin accepts Base 64 format configurations
 
 ##
 
@@ -544,13 +548,15 @@ Installing Plugin from JetBrains Plugins Repository
 
 Installing Plugin via Web UI
 
-  *   * Go to the **Administration | Plugins** page and upload the plugin ZIP archive from your local machine using the corresponding link.
+  * Download the latest version of TeamCity KSM plugin ZIP file from [here](https://github.com/Keeper-Security/secrets-manager-teamcity/releases/latest).
+
+  * Go to the **Administration | Plugins** page and upload the plugin ZIP archive from your local machine using the corresponding link.
 
 ###
 
 Installing Plugin Manually
 
-  * 
+  * Copy the ZIP plugin package into the`<`[`TeamCity Data Directory`](https://www.jetbrains.com/help/teamcity/teamcity-data-directory.html)`>/plugins` directory. If you have an earlier version of the plugin in the directory _(though the plugin package can be named differently)_ , remove it.
 
 ###
 
@@ -570,7 +576,7 @@ Uninstalling Plugin via Web UI
 
 Uninstalling Plugin Manually﻿
 
-  * 
+  * Remove the plugin package from the `<`[`TeamCity Data Directory`](https://www.jetbrains.com/help/teamcity/teamcity-data-directory.html)`>/plugins` directory and restart the TeamCity server.
 
 ##
 
@@ -603,7 +609,7 @@ To consume Keeper vault secrets from your TeamCity server, you will need to:
 
   * Create a secret in Keeper vault and share it to the corresponding KSM Application
 
-  * 
+  * Configure a TeamCity parameter that resolves the secret using [Secrets Manager Notation URIs](https://docs.keeper.io/secrets-manager/secrets-manager/about/keeper-notation)
 
 ###
 
@@ -654,7 +660,9 @@ step.
 
   6. Click **Add build step**.
 
-  7.   8. In the **Custom script** field, enter the following command: `echo UserName %env.username%`
+  7. Choose the [Command Line](https://www.jetbrains.com/help/teamcity/command-line.html) runner type.
+
+  8. In the **Custom script** field, enter the following command: `echo UserName %env.username%`
 
 For a build, this command will be resolved as follows _(note that actual value
 is masked in logs but used in actual commands):_
@@ -676,56 +684,26 @@ variables etc. _Check the examples below._
 
   * Environment variable `env.Secret` \- `keeper://MyRecord1/custom_field/Secret1`
 
-Keeper Secrets Manager access (See the  for more details)
-
 A Keeper  with secrets shared to it
 
 See the  for instructions on creating an Application
 
-An initialized Keeper
-
-Download the latest version of TeamCity KSM plugin ZIP file from .
-
-Copy the ZIP plugin package into the`<``>/plugins` directory. If you have an
-earlier version of the plugin in the directory _(though the plugin package can
-be named differently)_ , remove it.
-
-Remove the plugin package from the `<``>/plugins` directory and restart the
-TeamCity server.
-
-Adding connection of type Keeper Vault
-
 Specify the token - paste a valid KSM config _(see_ _)_.
 
-Configure Keeper Vault Connection
-
-Configure a TeamCity parameter that resolves the secret using
-
-Adding New Parameter
-
-Choose the  runner type.
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
-
-[Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration)
-
-[here](https://github.com/Keeper-Security/secrets-manager-
-teamcity/releases/latest)
-
-[`TeamCity Data Directory`](https://www.jetbrains.com/help/teamcity/teamcity-
-data-directory.html)
-
-[`TeamCity Data Directory`](https://www.jetbrains.com/help/teamcity/teamcity-
-data-directory.html)
-
-[Secrets Manager Notation URIs](https://docs.keeper.io/secrets-
-manager/secrets-manager/about/keeper-notation)
-
-[Command Line](https://www.jetbrains.com/help/teamcity/command-line.html)
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 [_Prerequisites_](/en/keeperpam/secrets-
 manager/integrations/teamcity#prerequisites)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
+Adding connection of type Keeper Vault
+
+Configure Keeper Vault Connection
+
+Adding New Parameter
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -748,10 +726,4 @@ x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCyNRIxtU170myoD55VNF%252Fteamcity-
 ksm-
 parameter.png%3Falt%3Dmedia%26token%3D5a523ab3-59d1-49a7-95e4-20dee93bc31f&width=768&dpr=4&quality=100&sign=b860834f&sv=2)
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 

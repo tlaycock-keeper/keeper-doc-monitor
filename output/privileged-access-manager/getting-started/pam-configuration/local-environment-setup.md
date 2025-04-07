@@ -435,6 +435,36 @@ setup?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Local Environment Overview 
@@ -457,6 +487,15 @@ PDF](/en/keeperpam/~gitbook/pdf?page=GNLhTsCwVlJ0KMusi2lz&only=yes&limit=100)
 
 Setting up your Local environment to work with KeeperPAM
 
+[PreviousAzure Environment Setup](/en/keeperpam/privileged-access-
+manager/getting-started/pam-configuration/azure-environment-setup)[NextPAM
+Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 ##
 
 Local Environment Overview
@@ -471,9 +510,7 @@ allowing users to utilize KeeperPAM features on those resources.
 
 Prerequisites
 
-Prior to proceeding with this guide, make sure to [install and configure your
-Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/one-time-access-token).
+Prior to proceeding with this guide, make sure to .
 
 ##
 
@@ -516,9 +553,6 @@ Gateway (Required)
 
 The configured gateway
 
-See [docs](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-for more info
-
 Application Folder (Required)
 
 The shared folder where the PAM Configuration data will be stored
@@ -530,9 +564,6 @@ PAM Settings (Required)
 
 List of Zero-Trust KeeperPAM features that should be enabled
 
-See [this section](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration/local-environment-setup#pam-features) for more info
-
 Default Rotation Schedule
 
 Specify frequency of Rotation
@@ -542,9 +573,6 @@ Ex: `Daily`
 Port Mapping
 
 Define alternative default ports
-
-Ex: `3307=mysql `See [port mapping](/en/keeperpam/privileged-access-
-manager/references/port-mapping) docs
 
 For Discovery, the following fields are required, otherwise they are optional:
 
@@ -565,9 +593,6 @@ Ex: `My Network`
 Network CIDR
 
 Subnet of the IP address
-
-Ex: `192.168.0.15/24` Refer to [this
-](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)for more info
 
 ###
 
@@ -614,52 +639,46 @@ Configuring PAM Features on PAM Record Types
 
 After creating the PAM configuration, visit the following pages to:
 
-  * Configure [Rotation](/en/keeperpam/secrets-manager/password-rotation)
+  *   *   *   *   * 
 
-  * Configure [Connections](/en/keeperpam/privileged-access-manager/connections)
+See  for more info
 
-  * Configure [RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
+See  for more info
 
-  * Configure [Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
+Ex: `3307=mysql `See  docs
 
-  * Configure [Discovery](/en/keeperpam/privileged-access-manager/discovery)
+Ex: `192.168.0.15/24` Refer to for more info
 
-[PreviousAzure Environment Setup](/en/keeperpam/privileged-access-
-manager/getting-started/pam-configuration/azure-environment-setup)[NextPAM
-Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources)
+Configure
 
-Last updated 2 months ago
+Configure
 
-Was this helpful?
+Configure
 
-#### Company
+Configure
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+Configure
 
-#### Support
+[install and configure your Keeper Gateway](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/one-time-access-token)
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+[Rotation](/en/keeperpam/secrets-manager/password-rotation)
 
-#### Solutions
+[Connections](/en/keeperpam/privileged-access-manager/connections)
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+[RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
 
-#### Pricing
+[Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+[Discovery](/en/keeperpam/privileged-access-manager/discovery)
 
-© 2025 Keeper Security, Inc.
+[docs](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+[port mapping](/en/keeperpam/privileged-access-manager/references/port-
+mapping)
+
+[this ](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
+
+[this section](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration/local-environment-setup#pam-features)
 

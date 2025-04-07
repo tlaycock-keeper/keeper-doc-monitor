@@ -425,6 +425,36 @@ installation-setup/developer-mode?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Installation
@@ -444,6 +474,15 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MKeAkHBb9f5P9-OQ2KX&only=yes&limit=100)
 Instructions for installation of Python-based Commander with the intent on
 modifying source code
 
+[PreviousCLI Installation on Linux](/en/keeperpam/commander-cli/commander-
+installation-setup/installation-on-linux)[Next.NET Developer
+Setup](/en/keeperpam/commander-cli/commander-installation-setup/net-developer-
+sdk)
+
+Last updated 11 days ago
+
+Was this helpful?
+
 ##
 
 Installation
@@ -457,9 +496,7 @@ instructions:
 
 1\. Clone/Download the Commander Repository
 
-Clone or download the Commander repository
-from:****<https://github.com/Keeper-
-Security/Commander>[](https://github.com/Keeper-Security/Commander)
+Clone or download the Commander repository from:****
 
 Copy
 
@@ -470,7 +507,6 @@ Copy
 **2\. Install Python3**
 
 Find the most recent Python3 installation from
-[python.org](https://www.python.org/)
 
 **3\. Install Virtualenv**
 
@@ -509,7 +545,7 @@ Copy
     pip install -r requirements.txt
     pip install -e .
 
-🎉**Setup Complete**
+**Setup Complete**
 
 You should be able to now login to the CLI by typing:
 
@@ -519,18 +555,12 @@ Copy
     
     keeper shell
 
-See the [Logging in](/en/keeperpam/commander-cli/commander-installation-
-setup/logging-in) section to understand the authentication process.
-
 **Additional Plugins**
 
 Keeper supports plugins for various 3rd party systems for password reset
 integration. Depending on the plugin, you will need to also install the
 modules required by that plugin. For example, our MySQL plugin requires the
 PyMySQL module.
-
-See [Password Rotation Plugins](/en/keeperpam/commander-cli/command-
-reference/plugins) section for more information about Commander plugins.
 
 ##
 
@@ -543,49 +573,27 @@ login using the `keeper shell` command:
 
 Sample Python Code
 
-Several standalone python scripts can be found
-[here](https://github.com/Keeper-Security/Commander/tree/master/examples),
-with examples for searching records, creating teams and sharing folders, and
-more.
+See the  section to understand the authentication process.
 
-[PreviousCLI Installation on Linux](/en/keeperpam/commander-cli/commander-
-installation-setup/installation-on-linux)[Next.NET Developer
-Setup](/en/keeperpam/commander-cli/commander-installation-setup/net-developer-
-sdk)
+See  section for more information about Commander plugins.
 
-Last updated 11 days ago
+Several standalone python scripts can be found , with examples for searching
+records, creating teams and sharing folders, and more.
 
-Was this helpful?
+🎉
 
-#### Company
+<https://github.com/Keeper-Security/Commander>[](https://github.com/Keeper-
+Security/Commander)
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+[python.org](https://www.python.org/)
 
-#### Support
+[Logging in](/en/keeperpam/commander-cli/commander-installation-setup/logging-
+in)
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+[Password Rotation Plugins](/en/keeperpam/commander-cli/command-
+reference/plugins)
 
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+[here](https://github.com/Keeper-Security/Commander/tree/master/examples)
 
 Run Commander from the Command Line
 
