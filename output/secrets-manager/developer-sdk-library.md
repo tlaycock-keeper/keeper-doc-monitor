@@ -552,6 +552,12 @@ The GoLang SDK supports GoLang version `1.13` and later
 
 Authentication
 
+The Secrets Manager SDK authenticates to the Keeper Vault using either the One
+Time Access Token or using the generated keys within the local configuration
+file. To generate one or more One Time Access Tokens from [Commander
+CLI](https://github.com/Keeper-Security/Commander) use the `secrets-manager
+client add` command.
+
 Copy
 
     
@@ -565,6 +571,11 @@ Copy
 ##
 
 Initialization
+
+Secrets Manager SDKs utilize a configuration file to hold connection tokens
+and settings. The following code samples show how to create a configuration
+file with the SDKs and an [One-Time Access Token](/en/keeperpam/secrets-
+manager/about/one-time-token):
 
 JavaJavaScriptPython.NetGoLang
 
@@ -759,6 +770,10 @@ Copy
       "appOwnerPublicKey": "Sq1W1OAnTwi8V/Vs/lhsin2sfSoaRfOwwDDBqoP+EO9bsBMWCzQdl9ClauDiKLXGmlmyx2xmSAdH+hlxvBRs6kU="
     }
 
+For information on other ways to create a config file, see the [Config File
+documentation](/en/keeperpam/secrets-manager/about/secrets-manager-
+configuration).
+
 ##
 
 Retrieve All Secrets
@@ -888,6 +903,9 @@ Copy
 
 These examples assumes a Secrets Manager config file has already been
 initialized.
+
+See the [Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)section for how to initialize a config file.
 
 ##
 
@@ -1159,6 +1177,9 @@ Copy
 These examples assumes a Secrets Manager config file has already been
 initialized.
 
+See the [Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)section for how to initialize a config file.
+
 ##
 
 Retrieve a Password
@@ -1278,6 +1299,9 @@ Copy
 
 These examples assumes a Secrets Manager config file has already been
 initialized.
+
+See the [Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)section for how to initialize a config file.
 
 ##
 
@@ -1421,6 +1445,9 @@ Copy
 
 These examples assumes a Secrets Manager config file has already been
 initialized.
+
+See the [Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)section for how to initialize a config file.
 
 ##
 
@@ -1596,6 +1623,9 @@ Copy
 These examples assumes a Secrets Manager config file has already been
 initialized
 
+See the [Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)section for how to initialize a config file.
+
 ##
 
 Retrieve TOTP Codes
@@ -1725,6 +1755,9 @@ Copy
 
 These examples assumes a Secrets Manager config file has already been
 initialized.
+
+See the [Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)section for how to initialize a config file.
 
 ##
 
@@ -1987,6 +2020,9 @@ Copy
 These examples assumes a Secrets Manager config file has already been
 initialized.
 
+See the [Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)section for how to initialize a config file.
+
 ##
 
 Create a Secret
@@ -2153,6 +2189,12 @@ Copy
     	println("New record UID = [", recordUid, "]")
     }
 
+Additional secret creation features and [Record Type](/en/keeperpam/commander-
+cli/command-reference/record-commands/default-record-types) and [Record
+Fields](/en/keeperpam/commander-cli/command-reference/record-commands/default-
+record-types#field-types) validation coming in future releases of Keeper
+Secrets Manager
+
 ##
 
 Delete a Secret
@@ -2243,6 +2285,9 @@ Keeper Secrets Manager CLI provides a wrapper function that executes any
 arbitrary system call and replaces environmental variables with values from
 the Keeper Vault.
 
+[Secrets Manager CLI Exec Command](/en/keeperpam/secrets-manager/secrets-
+manager-command-line-interface/exec-command)
+
 ##
 
 Vault and Admin SDKs
@@ -2250,72 +2295,7 @@ Vault and Admin SDKs
 For higher level functionality at the Vault and Administrative level, please
 see the Vault SDKs page which contains links to various development tools.
 
-The Secrets Manager SDK authenticates to the Keeper Vault using either the One
-Time Access Token or using the generated keys within the local configuration
-file. To generate one or more One Time Access Tokens from  use the `secrets-
-manager client add` command.
-
-Secrets Manager SDKs utilize a configuration file to hold connection tokens
-and settings. The following code samples show how to create a configuration
-file with the SDKs and an :
-
-For information on other ways to create a config file, see the .
-
-See the section for how to initialize a config file.
-
-See the section for how to initialize a config file.
-
-See the section for how to initialize a config file.
-
-See the section for how to initialize a config file.
-
-See the section for how to initialize a config file.
-
-See the section for how to initialize a config file.
-
-See the section for how to initialize a config file.
-
-Additional secret creation features and  and  validation coming in future
-releases of Keeper Secrets Manager
-
-[Commander CLI](https://github.com/Keeper-Security/Commander)
-
-[One-Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
-
-[Config File documentation](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration)
-
-[Secrets Manager CLI Exec Command](/en/keeperpam/secrets-manager/secrets-
-manager-command-line-interface/exec-command)
-
 [Vault SDKs](/en/keeperpam/secrets-manager/developer-sdk-library/vault-sdks)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Record Type](/en/keeperpam/commander-cli/command-reference/record-
-commands/default-record-types)
-
-[Record Fields](/en/keeperpam/commander-cli/command-reference/record-
-commands/default-record-types#field-types)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

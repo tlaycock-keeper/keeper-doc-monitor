@@ -517,9 +517,7 @@ utilize this integration, you will need:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
-
-    *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
     * The BitBucket integration accepts JSON and Base64 format configurations
 
@@ -905,11 +903,16 @@ bucket. The variables for the aws-s3-deploy pipe are set using the
 environmental variables provided by the Keeper Secrets Manager pipe's secret
 file.
 
+A Keeper  with secrets shared to it
+
 See the  for instructions on creating an Application
 
 For more options creating a configuration, see the
 
 For more options creating a configuration, see the
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 [configuration documentation](/en/keeperpam/secrets-manager/about/secrets-
 manager-configuration#creating-a-secrets-manager-configuration)
@@ -936,9 +939,9 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FECT7H9rIz
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtBve4dEQOb4qlm0Tw8pI%252FScreen%2520Shot%25202021-11-01%2520at%25204.19.38%2520PM.png%3Falt%3Dmedia%26token%3D1c223504-041f-48bb-8669-cc1206b97f82&width=768&dpr=4&quality=100&sign=473458a1&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHxpNKxYvEfBGnuFCPGOy%252FScreen%2520Shot%25202021-11-01%2520at%25204.16.04%2520PM.png%3Falt%3Dmedia%26token%3D34c39cae-b40d-4bc4-ad1f-6e1bd201f713&width=768&dpr=4&quality=100&sign=9aa4eb7f&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHxpNKxYvEfBGnuFCPGOy%252FScreen%2520Shot%25202021-11-01%2520at%25204.16.04%2520PM.png%3Falt%3Dmedia%26token%3D34c39cae-b40d-4bc4-ad1f-6e1bd201f713&width=768&dpr=4&quality=100&sign=9aa4eb7f&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtBve4dEQOb4qlm0Tw8pI%252FScreen%2520Shot%25202021-11-01%2520at%25204.19.38%2520PM.png%3Falt%3Dmedia%26token%3D1c223504-041f-48bb-8669-cc1206b97f82&width=768&dpr=4&quality=100&sign=473458a1&sv=2)
 

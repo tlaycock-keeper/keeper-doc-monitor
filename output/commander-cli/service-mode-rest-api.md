@@ -445,9 +445,44 @@ PDF](/en/keeperpam/~gitbook/pdf?page=VRFyjbRISZ42BbiPQUYG&only=yes&limit=100)
 
 Creating a REST API with Keeper Commander Service Mode
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVUWPopJYwDQQcEtxvfyn%252FKeeper%2520Commander%2520Service%2520Mode.jpg%3Falt%3Dmedia%26token%3D322e42ed-136d-46d3-9f13-e7ecdf7aca7b&width=768&dpr=4&quality=100&sign=1a0c2ae3&sv=2)
+[PreviousAutomatic Execution](/en/keeperpam/commander-cli/command-
+reference/plugins/automatic-
+execution)[NextTroubleshooting](/en/keeperpam/commander-cli/troubleshooting-
+commander-cli)
+
+Last updated 11 days ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -646,12 +681,6 @@ After the initial configuration, Commander will create a record in the vault
 with the title of "Commander Service Mode". This record will contain a YAML
 file called `service_config.yaml`.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FdErItMnBXOJZeFk5tjZ5%252FScreenshot%25202025-03-23%2520at%25203.28.33%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dde5da8aa-3f91-4826-9cb4-f39818ed8892&width=768&dpr=4&quality=100&sign=f28873e3&sv=2)
-
-Commander Service Mode record
-
 Subsequent startups of the service simply require the `service-create`
 command, with no parameters. The configuration will be loaded from the vault
 and started up.
@@ -733,18 +762,6 @@ Postman
 
 You can send requests through the Postman app. Just ensure that the Content-
 Type header and api-key header is provided. Example screenshot below:
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqFYoWXHv5wfkIZIwdGgI%252FScreenshot%25202025-03-23%2520at%25205.09.47%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db4f8654b-7a40-4244-99c6-f27ac1cb64a7&width=768&dpr=4&quality=100&sign=d2cb3644&sv=2)
-
-HTTP Body Configuration in Postman
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5kke9cceH6JAWq389XaO%252FScreenshot%25202025-03-23%2520at%25205.10.39%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Ddd5bd3e4-fc62-4579-b548-7c1f832a4c73&width=768&dpr=4&quality=100&sign=a07eb9a2&sv=2)
-
-Header Configuration in Postman
 
 ###
 
@@ -1059,48 +1076,31 @@ For support or feature requests, please contact:
 If you would like to request additional features or setup guides for Commander
 Service Mode, please reach out.
 
-[PreviousAutomatic Execution](/en/keeperpam/commander-cli/command-
-reference/plugins/automatic-
-execution)[NextTroubleshooting](/en/keeperpam/commander-cli/troubleshooting-
-commander-cli)
-
-Last updated 11 days ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 Limit the scope of supported commands. For example, if you only need to add
 records through the API, then only allow the `record-add` command. See the
 section.
 
 [Command List](/en/keeperpam/commander-cli/service-mode-rest-api#command-list)
+
+Commander Service Mode record
+
+HTTP Body Configuration in Postman
+
+Header Configuration in Postman
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVUWPopJYwDQQcEtxvfyn%252FKeeper%2520Commander%2520Service%2520Mode.jpg%3Falt%3Dmedia%26token%3D322e42ed-136d-46d3-9f13-e7ecdf7aca7b&width=768&dpr=4&quality=100&sign=1a0c2ae3&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FdErItMnBXOJZeFk5tjZ5%252FScreenshot%25202025-03-23%2520at%25203.28.33%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dde5da8aa-3f91-4826-9cb4-f39818ed8892&width=768&dpr=4&quality=100&sign=f28873e3&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqFYoWXHv5wfkIZIwdGgI%252FScreenshot%25202025-03-23%2520at%25205.09.47%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db4f8654b-7a40-4244-99c6-f27ac1cb64a7&width=768&dpr=4&quality=100&sign=d2cb3644&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5kke9cceH6JAWq389XaO%252FScreenshot%25202025-03-23%2520at%25205.10.39%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Ddd5bd3e4-fc62-4579-b548-7c1f832a4c73&width=768&dpr=4&quality=100&sign=a07eb9a2&sv=2)
 

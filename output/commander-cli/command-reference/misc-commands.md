@@ -476,11 +476,17 @@ To get help on a particular command, run:
 
 `help <command>`
 
+[this-device](/en/keeperpam/commander-cli/command-reference/misc-
+commands#this-device-command)
+
 Set device logout and persistent login preferences
 
 `login`
 
 login to Keeper
+
+[`whoami`](/en/keeperpam/commander-cli/command-reference/misc-commands#whoami-
+command)
 
 information on logged in user
 
@@ -508,6 +514,9 @@ clear the screen
 
 Execute commands sequentially from the provided file.
 
+[`generate`](/en/keeperpam/commander-cli/command-reference/misc-
+commands#generate-command)
+
 Generate a secure password
 
 `verify-records`
@@ -531,7 +540,13 @@ Calculate and update security data for all user-owned password records
 
 Add delay (in seconds) between batch commands
 
+[`keeper-fill`](/en/keeperpam/commander-cli/command-reference/misc-
+commands#keeper-fill-command)
+
 Display or manage KeeperFill settings
+
+[`2fa`](/en/keeperpam/commander-cli/command-reference/misc-commands#2fa-
+command)
 
 2FA settings management
 
@@ -1068,6 +1083,10 @@ audit-report-score-re-alignment-process) section of our Troubleshooting page.
 
 sleep
 
+This command is deprecated. If your goal is to add delay between commands,
+please refer to the [`run-batch`](/en/keeperpam/commander-cli/command-
+reference/misc-commands#run-batch-command) command.
+
 **Command** : `sleep`
 
 **Detail** : Add delay (in seconds) between batch commands
@@ -1217,25 +1236,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-This command is deprecated. If your goal is to add delay between commands,
-please refer to the  command.
-
-[`run-batch`](/en/keeperpam/commander-cli/command-reference/misc-commands#run-
-batch-command)
-
-[this-device](/en/keeperpam/commander-cli/command-reference/misc-
-commands#this-device-command)
-
-[`whoami`](/en/keeperpam/commander-cli/command-reference/misc-commands#whoami-
-command)
-
-[`generate`](/en/keeperpam/commander-cli/command-reference/misc-
-commands#generate-command)
-
-[`keeper-fill`](/en/keeperpam/commander-cli/command-reference/misc-
-commands#keeper-fill-command)
-
-[`2fa`](/en/keeperpam/commander-cli/command-reference/misc-commands#2fa-
-command)
 

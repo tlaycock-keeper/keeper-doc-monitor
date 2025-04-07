@@ -565,11 +565,19 @@ Steps to Test Cisco Device
 Following these steps will allow you to test the Cisco device and create a new
 user in the Cisco sandbox environment.
 
-> ###
+> **Note:** If you want to use a virtual environment, add a shebang line at
+> the top of the script as documented here in the [Python Environment
+> Setup](https://docs.keeper.io/en/v/secrets-manager/secrets-manager/password-
+> rotation/post-rotation-scripts/use-case-examples/rotate-credential-via-rest-
+> api#step-5-python-environment-setup).
+
+###
 
 1\. Login to Cisco Sandbox
 
-  *   * Log in with your Cisco account credentials.
+  * Go to the [Cisco DevNet Sandbox](https://devnetsandbox.cisco.com/)
+
+  * Log in with your Cisco account credentials.
 
   * Select and launch the sandbox.
 
@@ -596,7 +604,7 @@ details or find them in the DevNet Environment under Quick Access.
 
   * Download and install the Cisco AnyConnect Secure Mobility Client.
 
-  * 
+  * Get detailed connection instructions [here](https://developer.cisco.com/docs/sandbox/getting-started/#support).
 
 ###
 
@@ -928,23 +936,8 @@ user management portal, the authorized option should be selected as 'Yes'].
 After successfully setting up Rotation for your Cisco User Credentials on the
 PAM User Record, clicking on "Run Scripts Only" will rotate the credential:
 
-**Note:** If you want to use a virtual environment, add a shebang line at the
-top of the script as documented here in the .
-
-Go to the
-
-Get detailed connection instructions .
-
 Attach the below that will perform the password rotation. The script has
 additional comments inside that describe each line.
-
-[Python Environment Setup](https://docs.keeper.io/en/v/secrets-
-manager/secrets-manager/password-rotation/post-rotation-scripts/use-case-
-examples/rotate-credential-via-rest-api#step-5-python-environment-setup)
-
-[Cisco DevNet Sandbox](https://devnetsandbox.cisco.com/)
-
-[here](https://developer.cisco.com/docs/sandbox/getting-started/#support)
 
 [https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
 Scripts/blob/main/cisco-ios-xe/update-cisco-

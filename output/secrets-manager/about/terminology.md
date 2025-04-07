@@ -445,19 +445,50 @@ vA6xX6GjX&only=yes&limit=100)
 
 Common terminology that will be referenced throughout this documentation
 
+[PreviousArchitecture](/en/keeperpam/secrets-
+manager/about/architecture)[NextSecurity & Encryption
+Model](/en/keeperpam/secrets-manager/about/security-encryption-model)
+
+Last updated 11 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ##
 
 Secrets Manager Structure
 
 In order to organize and maintain access to **Secrets,** Keeper Secrets
 Manager uses structures called **Applications** and **Clients**.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MiOVxUjq6ff2wn2Bdp9%252F-MiOWBgBHdzVFevLOHl6%252Fksm_diagram_aug2021.jpg%3Falt%3Dmedia%26token%3D816fbae8-30af-43ac-
-bfe2-56dd5ebfa14d&width=768&dpr=4&quality=100&sign=55c0a0f&sv=2)
-
-Keeper Secrets Manager Structure
 
 Read below about how each of these items function in Secrets Manager.
 
@@ -526,41 +557,10 @@ manager/about/terminology#client-device).
 A configuration can be stored as a text file with JSON, or it can be encoded
 into a single line string.
 
-[PreviousArchitecture](/en/keeperpam/secrets-
-manager/about/architecture)[NextSecurity & Encryption
-Model](/en/keeperpam/secrets-manager/about/security-encryption-model)
+Keeper Secrets Manager Structure
 
-Last updated 11 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MiOVxUjq6ff2wn2Bdp9%252F-MiOWBgBHdzVFevLOHl6%252Fksm_diagram_aug2021.jpg%3Falt%3Dmedia%26token%3D816fbae8-30af-43ac-
+bfe2-56dd5ebfa14d&width=768&dpr=4&quality=100&sign=55c0a0f&sv=2)
 

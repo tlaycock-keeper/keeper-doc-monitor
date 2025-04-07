@@ -539,12 +539,6 @@ Usage
 After you have installed Keeper Commander in developer mode, you can simply
 login using the `keeper shell` command:
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FeYztlGct9AhyGQmayo1k%252Fimage.png%3Falt%3Dmedia%26token%3Dd6f96f3d-238d-459e-9cd7-7c31654c15ee&width=768&dpr=4&quality=100&sign=9995e3b5&sv=2)
-
-Run Commander from the Command Line
-
 ##
 
 Sample Python Code
@@ -592,4 +586,10 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+Run Commander from the Command Line
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FeYztlGct9AhyGQmayo1k%252Fimage.png%3Falt%3Dmedia%26token%3Dd6f96f3d-238d-459e-9cd7-7c31654c15ee&width=768&dpr=4&quality=100&sign=9995e3b5&sv=2)
 

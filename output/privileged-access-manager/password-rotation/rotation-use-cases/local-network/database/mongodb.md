@@ -443,36 +443,6 @@ network/database/mongodb?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview
@@ -497,14 +467,10 @@ PDF](/en/keeperpam/~gitbook/pdf?page=aGE2v3WxmgFathB2xZ0R&only=yes&limit=100)
 
 Rotating Local Network MongoDB database accounts with Keeper Rotation
 
-[PreviousNative PostgreSQL](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/database/postgresql)[NextNative MS
-SQL Server](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/database/ms-sql-server)
-
-Last updated 1 month ago
-
-Was this helpful?
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3NFn9IMoeiFD70nnTkLA%252FAzure%2520mongoDB%2520Database.jpg%3Falt%3Dmedia%26token%3Da91e14f5-10bc-4133-82fc-
+db8c47118e5b&width=768&dpr=4&quality=100&sign=cad863e6&sv=2)
 
 ##
 
@@ -512,7 +478,9 @@ Overview
 
 In this guide, you'll learn how to rotate Local MongoDB User and/or Admin
 accounts within your local network using Keeper Rotation. For a high-level
-overview on the rotation process in the local network, visit this .
+overview on the rotation process in the local network, visit this
+[page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/local-network#rotation-on-the-local-network).
 
 ##
 
@@ -520,7 +488,13 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   *   * 
+  * Keeper Secrets Manager is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
+
+  * Keeper Rotation is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
+
+  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+
+  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is able to communicate to your MongoDB Database
 
 ##
 
@@ -547,6 +521,8 @@ Keeper record title Ex: `dbadmin`
 Server address - _doesn't need to be publicly_ routable
 
 **Port**
+
+For default ports, see port mapping Ex: `mongodb=27017`
 
 **Use SSL**
 
@@ -657,35 +633,42 @@ Select the **PAM User** record(s) from Step 3, edit the record and open the
 Any user with `edit` rights to a **PAM User** record has the ability to setup
 rotation for that record.
 
-Keeper Secrets Manager is enabled for your
+[PreviousNative PostgreSQL](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/database/postgresql)[NextNative MS
+SQL Server](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/database/ms-sql-server)
 
-Keeper Rotation is enabled for your
+Last updated 1 month ago
 
-A Keeper Secrets Manager  has been created
+Was this helpful?
 
-A Keeper Rotation  is already installed, running, and is able to communicate
-to your MongoDB Database
+#### Company
 
-For default ports, see  Ex: `mongodb=27017`
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-[application](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
+#### Support
 
-[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-port mapping
+#### Solutions
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3NFn9IMoeiFD70nnTkLA%252FAzure%2520mongoDB%2520Database.jpg%3Falt%3Dmedia%26token%3Da91e14f5-10bc-4133-82fc-
-db8c47118e5b&width=768&dpr=4&quality=100&sign=cad863e6&sv=2)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
+#### Pricing
 
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
-[page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/local-network#rotation-on-the-local-network)
+© 2025 Keeper Security, Inc.
 

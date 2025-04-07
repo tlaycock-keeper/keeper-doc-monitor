@@ -543,10 +543,6 @@ functionality for only 10 of them, they would purchase:
 
 MSPs
 
-Features available with the KeeperPAM Add-On are listed
-[here](/en/keeperpam/privileged-access-manager/getting-started/keeperpam-
-licensing#features-included-with-keeperpam).
-
 ##
 
 Existing Customers - Updating KSM/KCM Add-Ons
@@ -633,6 +629,11 @@ following month.
 
 KeeperPAM will be a  that MSPs can add or remove at any time for their Managed
 Companies.
+
+Features available with the KeeperPAM Add-On are listed .
+
+[here](/en/keeperpam/privileged-access-manager/getting-started/keeperpam-
+licensing#features-included-with-keeperpam)
 
 [MSP Consumption Model](https://docs.keeper.io/en/enterprise-guide/keeper-
 msp/consumption-based-billing)

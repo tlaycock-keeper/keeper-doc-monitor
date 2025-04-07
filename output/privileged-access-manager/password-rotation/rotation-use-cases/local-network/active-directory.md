@@ -464,9 +464,44 @@ PDF](/en/keeperpam/~gitbook/pdf?page=G8i5M5wdgYMSjLlD0VkD&only=yes&limit=100)
 
 Rotating Active Directory or OpenLDAP user accounts remotely using KeeperPAM
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FD4pFTWlEuiTNgUy4pXoD%252FLocal%2520Network%2520rotations.jpg%3Falt%3Dmedia%26token%3Da54e5b3b-1dc1-4160-a142-d616e9c8f038&width=768&dpr=4&quality=100&sign=fcf7a7e0&sv=2)
+[PreviousLocal Network](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network)[NextWindows
+User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/local-network/windows-user)
+
+Last updated 1 month ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -501,12 +536,6 @@ The linked admin credential needs to be in a shared folder that is shared to
 the KSM application created in the pre-requisites. Only the KSM application
 needs access to this privileged account, it does not need to be shared with
 any users.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLKl6RsmyYOEJBiI5gC1D%252FScreenshot%25202025-01-08%2520at%25207.57.52%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D36b0593c-3013-4fd8-a0c3-1353883e4484&width=768&dpr=4&quality=100&sign=20092ad6&sv=2)
-
-PAM Directory record
 
 ####
 
@@ -585,6 +614,10 @@ Select the Shared folder that contains the PAM Directory record
 
 **Other fields**
 
+Depends on your use case. See the [PAM
+Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration) section.
+
 ###
 
 3\. Set up PAM User records
@@ -593,12 +626,6 @@ KeeperPAM will use the credentials linked from the "PAM Directory" record to
 rotate other "PAM User" records in your environment. The PAM User credential
 needs to be saved in a shared folder that is assigned to the secrets manager
 application. In the example below, the AD user `demouser` can be rotated.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlksgxWGHiHXbBOAOGr4R%252FScreenshot%25202025-01-09%2520at%252011.31.03%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Def96dd4c-6680-4306-b41f-03ada975a768&width=768&dpr=4&quality=100&sign=d36612d8&sv=2)
-
-Example of Active Directory account password rotation
 
 ####
 
@@ -654,12 +681,6 @@ policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-
 policies) allowing rotation has the ability to set up rotation for that
 record.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F0p1dou9o8QUgpZEuUhAg%252FScreenshot%25202025-01-08%2520at%25208.11.11%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Debc39442-bb6a-40c6-b7e7-0780a162a890&width=768&dpr=4&quality=100&sign=2bdf90a1&sv=2)
-
-PAM User scheduled rotations
-
   * The "Rotation" should be of type "General". 
 
   * The "PAM Resource" field should select the "PAM Directory" credential setup previously.
@@ -675,12 +696,6 @@ Troubleshooting
 An easy way to test if LDAP is properly configured is to run 'LDP.exe' and
 test the connection. If this connection succeeds, then Keeper Rotation should
 also succeed.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FKD087si6y6fF3dbuFWpy%252FScreenshot%25202023-04-07%2520at%252010.56.21%2520AM.png%3Falt%3Dmedia%26token%3D6e360d49-856c-451a-816e-2b1490d44557&width=768&dpr=4&quality=100&sign=b85ad454&sv=2)
-
-Testing and LDAP connection with LDP.exe
 
 ###
 
@@ -765,53 +780,37 @@ Check the connectivity
 Run 'LDP.exe' and make sure that you're able to connect to the local domain
 over port 636 with SSL enabled.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FEqolqHYLiMQnY7X8DaQT%252FScreenshot%25202025-01-09%2520at%252011.45.17%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3De57fca91-d32d-46f9-9744-cc828d6cdc29&width=768&dpr=4&quality=100&sign=a2a23455&sv=2)
+PAM Directory record
+
+Example of Active Directory account password rotation
+
+PAM User scheduled rotations
+
+Testing and LDAP connection with LDP.exe
 
 Connect using LDP.exe
 
-[PreviousLocal Network](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network)[NextWindows
-User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/local-network/windows-user)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FD4pFTWlEuiTNgUy4pXoD%252FLocal%2520Network%2520rotations.jpg%3Falt%3Dmedia%26token%3Da54e5b3b-1dc1-4160-a142-d616e9c8f038&width=768&dpr=4&quality=100&sign=fcf7a7e0&sv=2)
 
-Last updated 1 month ago
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLKl6RsmyYOEJBiI5gC1D%252FScreenshot%25202025-01-08%2520at%25207.57.52%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D36b0593c-3013-4fd8-a0c3-1353883e4484&width=768&dpr=4&quality=100&sign=20092ad6&sv=2)
 
-Was this helpful?
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlksgxWGHiHXbBOAOGr4R%252FScreenshot%25202025-01-09%2520at%252011.31.03%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Def96dd4c-6680-4306-b41f-03ada975a768&width=768&dpr=4&quality=100&sign=d36612d8&sv=2)
 
-#### Company
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F0p1dou9o8QUgpZEuUhAg%252FScreenshot%25202025-01-08%2520at%25208.11.11%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Debc39442-bb6a-40c6-b7e7-0780a162a890&width=768&dpr=4&quality=100&sign=2bdf90a1&sv=2)
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FKD087si6y6fF3dbuFWpy%252FScreenshot%25202023-04-07%2520at%252010.56.21%2520AM.png%3Falt%3Dmedia%26token%3D6e360d49-856c-451a-816e-2b1490d44557&width=768&dpr=4&quality=100&sign=b85ad454&sv=2)
 
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
-Depends on your use case. See the  section.
-
-[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FEqolqHYLiMQnY7X8DaQT%252FScreenshot%25202025-01-09%2520at%252011.45.17%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3De57fca91-d32d-46f9-9744-cc828d6cdc29&width=768&dpr=4&quality=100&sign=a2a23455&sv=2)
 
