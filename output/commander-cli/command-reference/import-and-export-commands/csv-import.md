@@ -427,6 +427,30 @@ reference/import-and-export-commands/csv-import?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=Zu7jJt6qM6i7YInl8ObP&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
+
+# CSV Import
+
+Automatic migration of passwords from a CSV file
+
+[PreviousProton Pass Import](/en/keeperpam/commander-cli/command-
+reference/import-and-export-commands/proton-pass-import)[NextJSON
+Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands/json-import)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -457,17 +481,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=Zu7jJt6qM6i7YInl8ObP&only=yes&limit=100)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 ##
 
 Commander **CSV Record Import**
@@ -480,31 +493,13 @@ Use this order of fields shown below with commas separating each value (and no
 spaces around the commas). Not all fields are required; some can be left
 blank.
 
-Custom fields begin with the name in the 8th field, (column H). The custom
-field value goes in the next field (column I).
+myimport.csv
 
-  * To specify subfolders, use backslash "\" between folder names
+Copy
 
-  * To set shared folder permission on the record, use the #edit or #reshare tags as seen below
-
-  * Enclose fields in quotes for multi-line or special characters
-
-  * Ensure files are UTF-8 encoded for support of international or double-byte characters
-
-Below is an example csv file that showcases several import features including
-personal folders, shared folders, subfolders, special characters and multi-
-line fields.
-
-To import this file as "login" records:
-
-The resulting vault will look like this:
-
-Here is a list of some record types (you may have more if you have custom
-record types, or less if you are restricting some record types):
-
-Below is a list of all possible field types (including custom fields). **You
-can use these as a custom field names such as**`**$oneTimeCode**`**as shown
-below.**
+    
+    
+    Folder,Title,Login,Password,Website Address,Notes,Shared Folder,Custom Field1 Name,Custom Field1 Value,Custom Field2 Name,Custom Field2 Value
 
 Position
 
@@ -513,47 +508,6 @@ Column
 Value
 
 Description / Format
-
-Folder
-
-Title
-
-Login
-
-Password
-
-Website Address
-
-Notes
-
-Shared Folder
-
-Custom Field1 Name
-
-Custom Field1 Value
-
-Custom Field2 Name
-
-Custom Field2 Value
-
-Custom Field3 Name
-
-Custom Field3 Value
-
-Custom Field4 Name
-
-Custom Field4 Value
-
-More advanced import options are available using the  format described in the
-next section.
-
-myimport.csv
-
-Copy
-
-    
-    
-    Folder,Title,Login,Password,Website Address,Notes,Shared Folder,Custom Field1 Name,Custom Field1 Value,Custom Field2 Name,Custom Field2 Value
 
 1
 
@@ -643,6 +597,21 @@ Custom Field 2 Value
 
 login
 
+Custom fields begin with the name in the 8th field, (column H). The custom
+field value goes in the next field (column I).
+
+  * To specify subfolders, use backslash "\" between folder names
+
+  * To set shared folder permission on the record, use the #edit or #reshare tags as seen below
+
+  * Enclose fields in quotes for multi-line or special characters
+
+  * Ensure files are UTF-8 encoded for support of international or double-byte characters
+
+Below is an example csv file that showcases several import features including
+personal folders, shared folders, subfolders, special characters and multi-
+line fields.
+
 Copy
 
     
@@ -654,52 +623,52 @@ Copy
     Account Number 449128
     This is multi-line",Shared Accounts#edit#reshare,2FA Phone Number,+19165551212
 
+To import this file as "login" records:
+
 Copy
 
     
     
     keeper import --format=csv --login-type test.csv
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
+The resulting vault will look like this:
 
-# CSV Import
+Here is a list of some record types (you may have more if you have custom
+record types, or less if you are restricting some record types):
 
-Automatic migration of passwords from a CSV file
+Below is a list of all possible field types (including custom fields). **You
+can use these as a custom field names such as**`**$oneTimeCode**`**as shown
+below.**
 
-[PreviousProton Pass Import](/en/keeperpam/commander-cli/command-
-reference/import-and-export-commands/proton-pass-import)[NextJSON
-Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands/json-import)
+Folder
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FeoM3j4KonrGlVTplxtph%252FImport-
-Keeper-
-CSV.jpg%3Falt%3Dmedia%26token%3D57b54001-e054-485f-998a-cfb9e9fd6b86&width=768&dpr=4&quality=100&sign=26bb1a72&sv=2)
+Title
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FsNUsczX8Hx71qxdS8M6E%252FScreenshot%25202023-02-14%2520at%25205.18.07%2520PM.jpg%3Falt%3Dmedia%26token%3D30db152a-d444-46f8-bf71-67ce51870f50&width=768&dpr=4&quality=100&sign=6cb64244&sv=2)
+Login
 
-CSV Import Sample
+Password
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqorAIVkSECp8b5jvQeOZ%252FWindowsTerminal_wOnQKBPAAK.png%3Falt%3Dmedia%26token%3D00e4f459-8cea-46c3-8bf4-6c314bc19068&width=768&dpr=4&quality=100&sign=17577bab&sv=2)
+Website Address
 
-Record types can be listed as a custom field value when the custom field name
-is $type
+Notes
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFGSYxcuPALAx9F6enlfT%252FWindowsTerminal_myNZzFQtif.png%3Falt%3Dmedia%26token%3D309856f4-e8d8-48c5-858e-103e9d471c1f&width=768&dpr=4&quality=100&sign=e87d127b&sv=2)
+Shared Folder
 
-All Field Types that can be used as Custom Field Name $oneTimeCode
+Custom Field1 Name
 
-[JSON Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands/json-import)
+Custom Field1 Value
+
+Custom Field2 Name
+
+Custom Field2 Value
+
+Custom Field3 Name
+
+Custom Field3 Value
+
+Custom Field4 Name
+
+Custom Field4 Value
 
 Folder1\subfolder
 
@@ -708,6 +677,8 @@ My Login Account
 user@example.com
 
 liu.W241Q<q$RGl9r;N1
+
+[www.google.com](http://www.google.com/)
 
 main google account
 
@@ -727,7 +698,34 @@ $host
 
 $url
 
-[www.google.com](http://www.google.com/)
-
 [www.example.com](http://www.example.com/)
+
+More advanced import options are available using the [JSON
+Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands/json-import) format described in the next section.
+
+CSV Import Sample
+
+Record types can be listed as a custom field value when the custom field name
+is $type
+
+All Field Types that can be used as Custom Field Name $oneTimeCode
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FeoM3j4KonrGlVTplxtph%252FImport-
+Keeper-
+CSV.jpg%3Falt%3Dmedia%26token%3D57b54001-e054-485f-998a-cfb9e9fd6b86&width=768&dpr=4&quality=100&sign=26bb1a72&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FsNUsczX8Hx71qxdS8M6E%252FScreenshot%25202023-02-14%2520at%25205.18.07%2520PM.jpg%3Falt%3Dmedia%26token%3D30db152a-d444-46f8-bf71-67ce51870f50&width=768&dpr=4&quality=100&sign=6cb64244&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqorAIVkSECp8b5jvQeOZ%252FWindowsTerminal_wOnQKBPAAK.png%3Falt%3Dmedia%26token%3D00e4f459-8cea-46c3-8bf4-6c314bc19068&width=768&dpr=4&quality=100&sign=17577bab&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFGSYxcuPALAx9F6enlfT%252FWindowsTerminal_myNZzFQtif.png%3Falt%3Dmedia%26token%3D309856f4-e8d8-48c5-858e-103e9d471c1f&width=768&dpr=4&quality=100&sign=e87d127b&sv=2)
 
