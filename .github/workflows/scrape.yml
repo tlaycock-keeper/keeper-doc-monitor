@@ -60,7 +60,6 @@ jobs:
           secrets: |-
             4rtq8BnDYPvqa2eDOtxbCg/field/login > LOGIN
             4rtq8BnDYPvqa2eDOtxbCg/field/password > PASSWORD
-            4rtq8BnDYPvqa2eDOtxbCg/field/recipients > RECIPIENT
 
       - name: Send email notification
         uses: dawidd6/action-send-mail@v3
@@ -70,7 +69,7 @@ jobs:
           username: ${{ steps.ksecrets.outputs.LOGIN }}
           password: ${{ steps.ksecrets.outputs.PASSWORD }}
           subject: Keeper PAM Documentation Update
-          to: ${{ steps.ksecrets.outputs.RECIPIENT }}
+          to: tlaycock@keepersecurity.com
           from: GitHub Bot <tlaycock@keepersecurity.com>
           content_type: text/plain
           body: file://report.txt
