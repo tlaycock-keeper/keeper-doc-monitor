@@ -1981,7 +1981,7 @@ Copy
 library)[NextJava/Kotlin SDK](/en/keeperpam/secrets-manager/developer-sdk-
 library/java-sdk)
 
-Last updated 2 days ago
+Last updated 3 days ago
 
 Was this helpful?
 

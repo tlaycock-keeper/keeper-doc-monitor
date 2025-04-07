@@ -425,6 +425,57 @@ reference/record-commands/default-record-types?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * Quick Start
+  * Add login record type record
+  * View all available record types
+  * View details for a record type
+  * View example JSON to create record for a given record type
+  * Field Types
+  * Standard Record Types
+  * login Record Type
+  * bankAccount Record Type
+  * address Record Type
+  * bankCard Record Type
+  * birthCertificate Record Type
+  * contact Record Type
+  * driverLicense Record Type
+  * encryptedNotes Record Type
+  * file Record Type
+  * healthInsurance Record Type
+  * membership Record Type
+  * passport Record Type
+  * photo Record Type
+  * serverCredentials Record Type
+  * softwareLicense Record Type
+  * ssnCard Record Type
+  * general Record Type
+  * sshKeys Record Type
+  * databaseCredentials Record Type
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-Mctt87HMlrTchW2b5n3&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Record Commands](/en/keeperpam/commander-cli/command-reference/record-commands)
+
+# Creating Record Types
+
+Description and examples for using and managing Record Types
+
+[PreviousRecord Type Commands](/en/keeperpam/commander-cli/command-
+reference/record-commands/record-type-commands)[NextSharing
+Commands](/en/keeperpam/commander-cli/command-reference/sharing-commands)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -454,17 +505,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-Mctt87HMlrTchW2b5n3&only=yes&limit=100)
-
-Last updated 2 months ago
-
-Was this helpful?
 
 ##
 
@@ -516,432 +556,6 @@ View example JSON to create record for a given record type
 ##
 
 **Field Types**
-
-##
-
-Standard Record Types
-
-Below you can see the fields in each record type, an example json
-representation, and and example of how to create a record of each type.
-
-All record types have the following fields:
-
-`title` \- what the record is named (required)
-
-`notes` \- text
-
-###
-
-login Record Type
-
-**Name:** login
-
-**Id:** 1
-
-**Record Fields:**
-
-**Add Record Example:**
-
-Dot Notation `add type=login title='my login' f.login=John.Doe
-f.password=75vf@5JB@o f.url=https://www.example.com
-f.oneTimeCode="otpauth://totp/Label?secret=Secret"`
-
-JSON Data `add --data '{"type": "login", "title": "my login", "fields":
-[{"type": "login", "value": ["John.Doe"]}, {"type": "password", "value":
-["75vf@5JB@o"]}, {"type": "url", "value": ["https://www.example.com"]},
-{"type": "oneTimeCode", "value": ["otpauth://totp/Label?secret=Secret"]}],
-"custom": []}'`
-
-###
-
-bankAccount Record Type
-
-**Name:** bankAccount
-
-**Id:** 11
-
-**Record Fields:**
-
-**Add Record Example:**
-
-Dot Notation `add type=bankAccount title='my bankAccount'
-f.bankAccount.accountType=Checking f.bankAccount.otherType=SomeText
-f.bankAccount.routingNumber=SomeText f.bankAccount.accountNumber=SomeText
-f.name.first=John f.name.middle=Danger f.name.last=Doe f.login=John.Doe
-f.password=75vf@5JB@o f.url=https://www.example.com
-f.oneTimeCode="otpauth://totp/Label?secret=Secret"`
-
-JSON Data `add --data '{"type": "bankAccount", "title": "my bankAccount",
-"fields": [{"type": "bankAccount", "value": [{"accountType": "Checking",
-"otherType": "SomeText", "routingNumber": "SomeText", "accountNumber":
-"SomeText"}], "required": true}, {"type": "name", "value": [{"first": "John",
-"middle": "Danger", "last": "Doe"}]}, {"type": "login", "value":
-["John.Doe"]}, {"type": "password", "value": ["75vf@5JB@o"]}, {"type": "url",
-"value": ["https://www.example.com"]}, {"type": "cardRef", "value": []},
-{"type": "oneTimeCode", "value": ["otpauth://totp/Label?secret=Secret"]}],
-"custom": []}'`
-
-###
-
-address Record Type
-
-**Name:** address
-
-**Id:** 14
-
-**Record Fields:**
-
-**Add Record Example:**
-
-Dot Notation `add type=address title='my address' f.address.street1=SomeText
-f.address.street2=SomeText f.address.city=SomeText f.address.state=SomeText
-f.address.zip=SomeText f.address.country=SomeText`
-
-JSON Data `add --data '{"type": "address", "title": "my address", "fields":
-[{"type": "address", "value": [{"street1": "SomeText", "street2": "SomeText",
-"city": "SomeText", "state": "SomeText", "zip": "SomeText", "country":
-"SomeText"}]}], "custom": []}'`
-
-###
-
-bankCard Record Type
-
-**Name:** bankCard
-
-**Id:** 18
-
-**Record Fields:**
-
-**Add Record Example:**
-
-Dot Notation `add type=bankCard title='my bankCard'
-f.paymentCard.cardNumber=SomeText f.paymentCard.cardExpirationDate=SomeText
-f.paymentCard.cardSecurityCode=SomeText f.text=SomeText f.pinCode=SomeText`
-
-JSON Data `add --data '{"type": "bankCard", "title": "my bankCard", "fields":
-[{"type": "paymentCard", "value": [{"cardNumber": "SomeText",
-"cardExpirationDate": "SomeText", "cardSecurityCode": "SomeText"}]}, {"type":
-"text", "value": ["SomeText"], "label": "cardholderName"}, {"type": "pinCode",
-"value": ["SomeText"]}, {"type": "addressRef", "value": []}], "custom": []}'`
-
-###
-
-birthCertificate Record Type
-
-**Name:** birthCertificate
-
-**Id:** 19
-
-**Record Fields:**
-
-**Add Record Example:**
-
-Dot Notation `add type=birthCertificate title='my birthCertificate'
-f.name.first=John f.name.middle=Danger f.name.last=Doe
-f.birthDate=1624485827145`
-
-JSON Data `add --data '{"type": "birthCertificate", "title": "my
-birthCertificate", "fields": [{"type": "name", "value": [{"first": "John",
-"middle": "Danger", "last": "Doe"}]}, {"type": "birthDate", "value":
-[1624485827145]}], "custom": []}'`
-
-###
-
-contact Record Type
-
-**Name:** contact
-
-**Id:** 20
-
-**Record Fields:**
-
-**Add Record Example:**
-
-Dot Notation `add type=contact title='my contact' f.name.first=John
-f.name.middle=Danger f.name.last=Doe f.text=SomeText f.email=SomeText
-f.phone.region=US f.phone.number=(555)555-5555 f.phone.ext=3
-f.phone.type=Mobile`
-
-JSON Data `add --data '{"type": "contact", "title": "my contact", "fields":
-[{"type": "name", "value": [{"first": "John", "middle": "Danger", "last":
-"Doe"}], "required": true}, {"type": "text", "value": ["SomeText"], "label":
-"company"}, {"type": "email", "value": ["SomeText"]}, {"type": "phone",
-"value": [{"region": "US", "number": "(555)555-5555", "ext": "3", "type":
-"Mobile"}]}, {"type": "addressRef", "value": []}], "custom": []}'`
-
-###
-
-driverLicense Record Type
-
-**Name:** driverLicense
-
-**Id:** 21
-
-**Record Fields:**
-
-**Add Record Example:**
-
-Dot Notation `add type=driverLicense title='my driverLicense'
-f.accountNumber=SomeText f.name.first=John f.name.middle=Danger
-f.name.last=Doe f.birthDate=1624485827145 f.expirationDate=1624485827145`
-
-JSON Data `add --data '{"type": "driverLicense", "title": "my driverLicense",
-"fields": [{"type": "accountNumber", "value": ["SomeText"], "label":
-"dlNumber"}, {"type": "name", "value": [{"first": "John", "middle": "Danger",
-"last": "Doe"}]}, {"type": "birthDate", "value": [1624485827145]}, {"type":
-"addressRef", "value": []}, {"type": "expirationDate", "value":
-[1624485827145]}], "custom": []}'`
-
-###
-
-encryptedNotes Record Type
-
-**Name:** encryptedNotes
-
-**Id:** 22
-
-**Record Fields:**
-
-**Add Record Example:**
-
-Dot Notation `add type=encryptedNotes title='my encryptedNotes'
-f.note=SomeText f.date=1624485827145`
-
-JSON Data `add --data '{"type": "encryptedNotes", "title": "my
-encryptedNotes", "fields": [{"type": "note", "value": ["SomeText"]}, {"type":
-"date", "value": [1624485827145]}], "custom": []}'`
-
-###
-
-file Record Type
-
-**Name:** file
-
-**Id:** 23
-
-**Record Fields:**
-
-**Add Record Example:**
-
-Dot Notation `add type=file title='my file'`
-
-JSON Data `add --data '{"type": "file", "title": "my file", "fields": [],
-"custom": []}'`
-
-###
-
-healthInsurance Record Type
-
-**Name:** healthInsurance
-
-**Id:** 24
-
-**Record Fields:**
-
-**Add Record Example:**
-
-Dot Notation `add type=healthInsurance title='my healthInsurance'
-f.accountNumber=SomeText f.name.first=John f.name.middle=Danger
-f.name.last=Doe f.login=John.Doe f.password=75vf@5JB@o
-f.url=https://www.example.com`
-
-JSON Data `add --data '{"type": "healthInsurance", "title": "my
-healthInsurance", "fields": [{"type": "accountNumber", "value": ["SomeText"]},
-{"type": "name", "value": [{"first": "John", "middle": "Danger", "last":
-"Doe"}], "label": "insuredsName"}, {"type": "login", "value": ["John.Doe"]},
-{"type": "password", "value": ["75vf@5JB@o"]}, {"type": "url", "value":
-["https://www.example.com"]}], "custom": []}'`
-
-###
-
-membership Record Type
-
-**Name:** membership
-
-**Id:** 26
-
-**Record Fields:**
-
-**Add Record Example:**
-
-Dot Notation `add type=membership title='my membership'
-f.accountNumber=SomeText f.name.first=John f.name.middle=Danger
-f.name.last=Doe f.password=75vf@5JB@o`
-
-JSON Data `add --data '{"type": "membership", "title": "my membership",
-"fields": [{"type": "accountNumber", "value": ["SomeText"]}, {"type": "name",
-"value": [{"first": "John", "middle": "Danger", "last": "Doe"}]}, {"type":
-"password", "value": ["75vf@5JB@o"]}], "custom": []}'`
-
-###
-
-passport Record Type
-
-**Name:** passport
-
-**Id:** 27
-
-**Record Fields:**
-
-**Add Record Example:**
-
-Dot Notation `add type=passport title='my passport' f.accountNumber=SomeText
-f.name.first=John f.name.middle=Danger f.name.last=Doe
-f.birthDate=1624485827145 f.expirationDate=1624485827145 f.date=1624485827145
-f.password=75vf@5JB@o`
-
-JSON Data `add --data '{"type": "passport", "title": "my passport", "fields":
-[{"type": "accountNumber", "value": ["SomeText"], "label": "passportNumber"},
-{"type": "name", "value": [{"first": "John", "middle": "Danger", "last":
-"Doe"}]}, {"type": "birthDate", "value": [1624485827145]}, {"type":
-"addressRef", "value": []}, {"type": "expirationDate", "value":
-[1624485827145]}, {"type": "date", "value": [1624485827145], "label":
-"dateIssued"}, {"type": "password", "value": ["75vf@5JB@o"]}], "custom": []}'`
-
-###
-
-photo Record Type
-
-**Name:** photo
-
-**Id:** 28
-
-**Record Fields:**
-
-**Add Record Example:**
-
-Dot Notation `add type=photo title='my photo'`
-
-JSON Data `add --data '{"type": "photo", "title": "my photo", "fields": [],
-"custom": []}'`
-
-###
-
-serverCredentials Record Type
-
-**Name:** serverCredentials
-
-**Id:** 29
-
-**Record Fields:**
-
-**Add Record Example:**
-
-Dot Notation `add type=serverCredentials title='my serverCredentials'
-f.host.hostName=https://www.example.com f.host.port=5000 f.login=John.Doe
-f.password=75vf@5JB@o`
-
-JSON Data `add --data '{"type": "serverCredentials", "title": "my
-serverCredentials", "fields": [{"type": "host", "value": [{"hostName":
-"https://www.example.com", "port": "5000"}]}, {"type": "login", "value":
-["John.Doe"]}, {"type": "password", "value": ["75vf@5JB@o"]}], "custom": []}'`
-
-###
-
-softwareLicense Record Type
-
-**Name:** softwareLicense
-
-**Id:** 30
-
-**Record Fields:**
-
-**Add Record Example:**
-
-Dot Notation `add type=softwareLicense title='my softwareLicense'
-f.licenseNumber=SomeText f.expirationDate=1624485827145 f.date=1624485827145`
-
-JSON Data `add --data '{"type": "softwareLicense", "title": "my
-softwareLicense", "fields": [{"type": "licenseNumber", "value": ["SomeText"]},
-{"type": "expirationDate", "value": [1624485827145]}, {"type": "date",
-"value": [1624485827145], "label": "dateActive"}], "custom": []}'`
-
-###
-
-ssnCard Record Type
-
-**Name:** ssnCard
-
-**Id:** 31
-
-**Record Fields:**
-
-**Add Record Example:**
-
-Dot Notation `add type=ssnCard title='my ssnCard' f.accountNumber=SomeText
-f.name.first=John f.name.middle=Danger f.name.last=Doe`
-
-JSON Data `add --data '{"type": "ssnCard", "title": "my ssnCard", "fields":
-[{"type": "accountNumber", "value": ["SomeText"], "label": "identityNumber"},
-{"type": "name", "value": [{"first": "John", "middle": "Danger", "last":
-"Doe"}]}], "custom": []}'`
-
-###
-
-general Record Type
-
-**Name:** general
-
-**Id:** 32
-
-**Record Fields:**
-
-**Add Record Example:**
-
-Dot Notation `add type=general title='my general' f.login=John.Doe
-f.password=75vf@5JB@o f.url=https://www.example.com f.oneTimeCode=SomeText`
-
-JSON Data `add --data '{"type": "general", "title": "my general", "fields":
-[{"type": "login", "value": ["John.Doe"]}, {"type": "password", "value":
-["75vf@5JB@o"]}, {"type": "url", "value": ["https://www.example.com"]},
-{"type": "oneTimeCode", "value": ["SomeText"]}], "custom": []}'`
-
-###
-
-sshKeys Record Type
-
-**Name:** sshKeys
-
-**Id:** 34
-
-**Record Fields:**
-
-**Add Record Example:**
-
-Dot Notation `add type=sshKeys title='my sshKeys' f.login=John.Doe
-f.keyPair=SomeText f.host.hostName=https://www.example.com f.host.port=Unknown
-- Text f.secret=SomeText`
-
-JSON Data `add --data '{"type": "sshKeys", "title": "my sshKeys", "fields":
-[{"type": "login", "value": ["John.Doe"]}, {"type": "keyPair", "value":
-["SomeText"]}, {"type": "host", "value": [{"hostName":
-"https://www.example.com", "port": "Unknown - Text"}]}, {"type": "secret",
-"value": ["SomeText"]}], "custom": []}'`
-
-###
-
-databaseCredentials Record Type
-
-**Name:** `databaseCredentials`
-
-**Id:** 40
-
-**Record Fields:**
-
-**Add Record Example:**
-
-Dot Notation `add type=databaseCredentials title='my databaseCredentials'
-f.text=SomeText f.host.hostName=https://www.example.com f.host.port=5000
-f.login=John.Doe f.password=75vf@5JB@o`
-
-JSON Data `add --data '{"type": "databaseCredentials", "title": "my
-databaseCredentials", "fields": [{"type": "text", "value": ["SomeText"],
-"label": "type"}, {"type": "host", "value": [{"hostName":
-"https://www.example.com", "port": "5000"}]}, {"type": "login", "value":
-["John.Doe"]}, {"type": "password", "value": ["75vf@5JB@o"]}], "custom": []}'`
-
-`custom` \- custom fields and values can be added to records. See  for more
-information on adding custom fields
 
 Field
 
@@ -1059,6 +673,10 @@ Multiline text input
 
 A text input that is masked
 
+##
+
+Standard Record Types
+
 Record Type
 
 ID
@@ -1131,6 +749,25 @@ ID
 
 40
 
+Below you can see the fields in each record type, an example json
+representation, and and example of how to create a record of each type.
+
+All record types have the following fields:
+
+`title` \- what the record is named (required)
+
+`notes` \- text
+
+###
+
+login Record Type
+
+**Name:** login
+
+**Id:** 1
+
+**Record Fields:**
+
 Field Name
 
 Sub Field
@@ -1156,6 +793,28 @@ Text
 `oneTimeCode`
 
 Text
+
+**Add Record Example:**
+
+Dot Notation `add type=login title='my login' f.login=John.Doe
+f.password=75vf@5JB@o f.url=https://www.example.com
+f.oneTimeCode="otpauth://totp/Label?secret=Secret"`
+
+JSON Data `add --data '{"type": "login", "title": "my login", "fields":
+[{"type": "login", "value": ["John.Doe"]}, {"type": "password", "value":
+["75vf@5JB@o"]}, {"type": "url", "value": ["https://www.example.com"]},
+{"type": "oneTimeCode", "value": ["otpauth://totp/Label?secret=Secret"]}],
+"custom": []}'`
+
+###
+
+bankAccount Record Type
+
+**Name:** bankAccount
+
+**Id:** 11
+
+**Record Fields:**
 
 Field Name
 
@@ -1227,6 +886,35 @@ Text
 
 Text
 
+**Add Record Example:**
+
+Dot Notation `add type=bankAccount title='my bankAccount'
+f.bankAccount.accountType=Checking f.bankAccount.otherType=SomeText
+f.bankAccount.routingNumber=SomeText f.bankAccount.accountNumber=SomeText
+f.name.first=John f.name.middle=Danger f.name.last=Doe f.login=John.Doe
+f.password=75vf@5JB@o f.url=https://www.example.com
+f.oneTimeCode="otpauth://totp/Label?secret=Secret"`
+
+JSON Data `add --data '{"type": "bankAccount", "title": "my bankAccount",
+"fields": [{"type": "bankAccount", "value": [{"accountType": "Checking",
+"otherType": "SomeText", "routingNumber": "SomeText", "accountNumber":
+"SomeText"}], "required": true}, {"type": "name", "value": [{"first": "John",
+"middle": "Danger", "last": "Doe"}]}, {"type": "login", "value":
+["John.Doe"]}, {"type": "password", "value": ["75vf@5JB@o"]}, {"type": "url",
+"value": ["https://www.example.com"]}, {"type": "cardRef", "value": []},
+{"type": "oneTimeCode", "value": ["otpauth://totp/Label?secret=Secret"]}],
+"custom": []}'`
+
+###
+
+address Record Type
+
+**Name:** address
+
+**Id:** 14
+
+**Record Fields:**
+
 Field Name
 
 Sub Field
@@ -1273,6 +961,27 @@ Text
 
 `fileRef`
 
+**Add Record Example:**
+
+Dot Notation `add type=address title='my address' f.address.street1=SomeText
+f.address.street2=SomeText f.address.city=SomeText f.address.state=SomeText
+f.address.zip=SomeText f.address.country=SomeText`
+
+JSON Data `add --data '{"type": "address", "title": "my address", "fields":
+[{"type": "address", "value": [{"street1": "SomeText", "street2": "SomeText",
+"city": "SomeText", "state": "SomeText", "zip": "SomeText", "country":
+"SomeText"}]}], "custom": []}'`
+
+###
+
+bankCard Record Type
+
+**Name:** bankCard
+
+**Id:** 18
+
+**Record Fields:**
+
 Field Name
 
 Sub Field
@@ -1313,6 +1022,28 @@ Text
 
 `fileRef`
 
+**Add Record Example:**
+
+Dot Notation `add type=bankCard title='my bankCard'
+f.paymentCard.cardNumber=SomeText f.paymentCard.cardExpirationDate=SomeText
+f.paymentCard.cardSecurityCode=SomeText f.text=SomeText f.pinCode=SomeText`
+
+JSON Data `add --data '{"type": "bankCard", "title": "my bankCard", "fields":
+[{"type": "paymentCard", "value": [{"cardNumber": "SomeText",
+"cardExpirationDate": "SomeText", "cardSecurityCode": "SomeText"}]}, {"type":
+"text", "value": ["SomeText"], "label": "cardholderName"}, {"type": "pinCode",
+"value": ["SomeText"]}, {"type": "addressRef", "value": []}], "custom": []}'`
+
+###
+
+birthCertificate Record Type
+
+**Name:** birthCertificate
+
+**Id:** 19
+
+**Record Fields:**
+
 Field Name
 
 Sub Field
@@ -1344,6 +1075,27 @@ Text
 Number
 
 `fileRef`
+
+**Add Record Example:**
+
+Dot Notation `add type=birthCertificate title='my birthCertificate'
+f.name.first=John f.name.middle=Danger f.name.last=Doe
+f.birthDate=1624485827145`
+
+JSON Data `add --data '{"type": "birthCertificate", "title": "my
+birthCertificate", "fields": [{"type": "name", "value": [{"first": "John",
+"middle": "Danger", "last": "Doe"}]}, {"type": "birthDate", "value":
+[1624485827145]}], "custom": []}'`
+
+###
+
+contact Record Type
+
+**Name:** contact
+
+**Id:** 20
+
+**Record Fields:**
 
 Field Name
 
@@ -1409,6 +1161,30 @@ Home | Mobile | Work
 
 `fileRef`
 
+**Add Record Example:**
+
+Dot Notation `add type=contact title='my contact' f.name.first=John
+f.name.middle=Danger f.name.last=Doe f.text=SomeText f.email=SomeText
+f.phone.region=US f.phone.number=(555)555-5555 f.phone.ext=3
+f.phone.type=Mobile`
+
+JSON Data `add --data '{"type": "contact", "title": "my contact", "fields":
+[{"type": "name", "value": [{"first": "John", "middle": "Danger", "last":
+"Doe"}], "required": true}, {"type": "text", "value": ["SomeText"], "label":
+"company"}, {"type": "email", "value": ["SomeText"]}, {"type": "phone",
+"value": [{"region": "US", "number": "(555)555-5555", "ext": "3", "type":
+"Mobile"}]}, {"type": "addressRef", "value": []}], "custom": []}'`
+
+###
+
+driverLicense Record Type
+
+**Name:** driverLicense
+
+**Id:** 21
+
+**Record Fields:**
+
 Field Name
 
 Sub Field
@@ -1453,6 +1229,29 @@ Number
 
 `fileRef`
 
+**Add Record Example:**
+
+Dot Notation `add type=driverLicense title='my driverLicense'
+f.accountNumber=SomeText f.name.first=John f.name.middle=Danger
+f.name.last=Doe f.birthDate=1624485827145 f.expirationDate=1624485827145`
+
+JSON Data `add --data '{"type": "driverLicense", "title": "my driverLicense",
+"fields": [{"type": "accountNumber", "value": ["SomeText"], "label":
+"dlNumber"}, {"type": "name", "value": [{"first": "John", "middle": "Danger",
+"last": "Doe"}]}, {"type": "birthDate", "value": [1624485827145]}, {"type":
+"addressRef", "value": []}, {"type": "expirationDate", "value":
+[1624485827145]}], "custom": []}'`
+
+###
+
+encryptedNotes Record Type
+
+**Name:** encryptedNotes
+
+**Id:** 22
+
+**Record Fields:**
+
 Field Name
 
 Sub Field
@@ -1471,6 +1270,25 @@ Number
 
 `fileRef`
 
+**Add Record Example:**
+
+Dot Notation `add type=encryptedNotes title='my encryptedNotes'
+f.note=SomeText f.date=1624485827145`
+
+JSON Data `add --data '{"type": "encryptedNotes", "title": "my
+encryptedNotes", "fields": [{"type": "note", "value": ["SomeText"]}, {"type":
+"date", "value": [1624485827145]}], "custom": []}'`
+
+###
+
+file Record Type
+
+**Name:** file
+
+**Id:** 23
+
+**Record Fields:**
+
 Field Name
 
 Sub Field
@@ -1480,6 +1298,23 @@ Type
 Field Label
 
 `fileRef`
+
+**Add Record Example:**
+
+Dot Notation `add type=file title='my file'`
+
+JSON Data `add --data '{"type": "file", "title": "my file", "fields": [],
+"custom": []}'`
+
+###
+
+healthInsurance Record Type
+
+**Name:** healthInsurance
+
+**Id:** 24
+
+**Record Fields:**
 
 Field Name
 
@@ -1531,6 +1366,30 @@ Text
 
 `fileRef`
 
+**Add Record Example:**
+
+Dot Notation `add type=healthInsurance title='my healthInsurance'
+f.accountNumber=SomeText f.name.first=John f.name.middle=Danger
+f.name.last=Doe f.login=John.Doe f.password=75vf@5JB@o
+f.url=https://www.example.com`
+
+JSON Data `add --data '{"type": "healthInsurance", "title": "my
+healthInsurance", "fields": [{"type": "accountNumber", "value": ["SomeText"]},
+{"type": "name", "value": [{"first": "John", "middle": "Danger", "last":
+"Doe"}], "label": "insuredsName"}, {"type": "login", "value": ["John.Doe"]},
+{"type": "password", "value": ["75vf@5JB@o"]}, {"type": "url", "value":
+["https://www.example.com"]}], "custom": []}'`
+
+###
+
+membership Record Type
+
+**Name:** membership
+
+**Id:** 26
+
+**Record Fields:**
+
 Field Name
 
 Sub Field
@@ -1566,6 +1425,27 @@ Text
 Text
 
 `fileRef`
+
+**Add Record Example:**
+
+Dot Notation `add type=membership title='my membership'
+f.accountNumber=SomeText f.name.first=John f.name.middle=Danger
+f.name.last=Doe f.password=75vf@5JB@o`
+
+JSON Data `add --data '{"type": "membership", "title": "my membership",
+"fields": [{"type": "accountNumber", "value": ["SomeText"]}, {"type": "name",
+"value": [{"first": "John", "middle": "Danger", "last": "Doe"}]}, {"type":
+"password", "value": ["75vf@5JB@o"]}], "custom": []}'`
+
+###
+
+passport Record Type
+
+**Name:** passport
+
+**Id:** 27
+
+**Record Fields:**
 
 Field Name
 
@@ -1621,6 +1501,31 @@ Text
 
 `fileRef`
 
+**Add Record Example:**
+
+Dot Notation `add type=passport title='my passport' f.accountNumber=SomeText
+f.name.first=John f.name.middle=Danger f.name.last=Doe
+f.birthDate=1624485827145 f.expirationDate=1624485827145 f.date=1624485827145
+f.password=75vf@5JB@o`
+
+JSON Data `add --data '{"type": "passport", "title": "my passport", "fields":
+[{"type": "accountNumber", "value": ["SomeText"], "label": "passportNumber"},
+{"type": "name", "value": [{"first": "John", "middle": "Danger", "last":
+"Doe"}]}, {"type": "birthDate", "value": [1624485827145]}, {"type":
+"addressRef", "value": []}, {"type": "expirationDate", "value":
+[1624485827145]}, {"type": "date", "value": [1624485827145], "label":
+"dateIssued"}, {"type": "password", "value": ["75vf@5JB@o"]}], "custom": []}'`
+
+###
+
+photo Record Type
+
+**Name:** photo
+
+**Id:** 28
+
+**Record Fields:**
+
 Field Name
 
 Sub Field
@@ -1630,6 +1535,23 @@ Type
 Field Label
 
 `fileRef`
+
+**Add Record Example:**
+
+Dot Notation `add type=photo title='my photo'`
+
+JSON Data `add --data '{"type": "photo", "title": "my photo", "fields": [],
+"custom": []}'`
+
+###
+
+serverCredentials Record Type
+
+**Name:** serverCredentials
+
+**Id:** 29
+
+**Record Fields:**
 
 Field Name
 
@@ -1661,6 +1583,27 @@ Text
 
 `fileRef`
 
+**Add Record Example:**
+
+Dot Notation `add type=serverCredentials title='my serverCredentials'
+f.host.hostName=https://www.example.com f.host.port=5000 f.login=John.Doe
+f.password=75vf@5JB@o`
+
+JSON Data `add --data '{"type": "serverCredentials", "title": "my
+serverCredentials", "fields": [{"type": "host", "value": [{"hostName":
+"https://www.example.com", "port": "5000"}]}, {"type": "login", "value":
+["John.Doe"]}, {"type": "password", "value": ["75vf@5JB@o"]}], "custom": []}'`
+
+###
+
+softwareLicense Record Type
+
+**Name:** softwareLicense
+
+**Id:** 30
+
+**Record Fields:**
+
 Field Name
 
 Sub Field
@@ -1684,6 +1627,26 @@ Number
 dateActive
 
 `fileRef`
+
+**Add Record Example:**
+
+Dot Notation `add type=softwareLicense title='my softwareLicense'
+f.licenseNumber=SomeText f.expirationDate=1624485827145 f.date=1624485827145`
+
+JSON Data `add --data '{"type": "softwareLicense", "title": "my
+softwareLicense", "fields": [{"type": "licenseNumber", "value": ["SomeText"]},
+{"type": "expirationDate", "value": [1624485827145]}, {"type": "date",
+"value": [1624485827145], "label": "dateActive"}], "custom": []}'`
+
+###
+
+ssnCard Record Type
+
+**Name:** ssnCard
+
+**Id:** 31
+
+**Record Fields:**
 
 Field Name
 
@@ -1719,6 +1682,26 @@ Text
 
 `fileRef`
 
+**Add Record Example:**
+
+Dot Notation `add type=ssnCard title='my ssnCard' f.accountNumber=SomeText
+f.name.first=John f.name.middle=Danger f.name.last=Doe`
+
+JSON Data `add --data '{"type": "ssnCard", "title": "my ssnCard", "fields":
+[{"type": "accountNumber", "value": ["SomeText"], "label": "identityNumber"},
+{"type": "name", "value": [{"first": "John", "middle": "Danger", "last":
+"Doe"}]}], "custom": []}'`
+
+###
+
+general Record Type
+
+**Name:** general
+
+**Id:** 32
+
+**Record Fields:**
+
 Field Name
 
 Sub Field
@@ -1744,6 +1727,26 @@ Text
 Text
 
 `fileRef`
+
+**Add Record Example:**
+
+Dot Notation `add type=general title='my general' f.login=John.Doe
+f.password=75vf@5JB@o f.url=https://www.example.com f.oneTimeCode=SomeText`
+
+JSON Data `add --data '{"type": "general", "title": "my general", "fields":
+[{"type": "login", "value": ["John.Doe"]}, {"type": "password", "value":
+["75vf@5JB@o"]}, {"type": "url", "value": ["https://www.example.com"]},
+{"type": "oneTimeCode", "value": ["SomeText"]}], "custom": []}'`
+
+###
+
+sshKeys Record Type
+
+**Name:** sshKeys
+
+**Id:** 34
+
+**Record Fields:**
 
 Field Name
 
@@ -1778,6 +1781,28 @@ Unknown - Text
 `secret`
 
 Text
+
+**Add Record Example:**
+
+Dot Notation `add type=sshKeys title='my sshKeys' f.login=John.Doe
+f.keyPair=SomeText f.host.hostName=https://www.example.com f.host.port=Unknown
+- Text f.secret=SomeText`
+
+JSON Data `add --data '{"type": "sshKeys", "title": "my sshKeys", "fields":
+[{"type": "login", "value": ["John.Doe"]}, {"type": "keyPair", "value":
+["SomeText"]}, {"type": "host", "value": [{"hostName":
+"https://www.example.com", "port": "Unknown - Text"}]}, {"type": "secret",
+"value": ["SomeText"]}], "custom": []}'`
+
+###
+
+databaseCredentials Record Type
+
+**Name:** `databaseCredentials`
+
+**Id:** 40
+
+**Record Fields:**
 
 Field Name
 
@@ -1815,45 +1840,23 @@ Text
 
 `fileRef`
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Record Commands](/en/keeperpam/commander-cli/command-reference/record-commands)
+**Add Record Example:**
 
-# Creating Record Types
+Dot Notation `add type=databaseCredentials title='my databaseCredentials'
+f.text=SomeText f.host.hostName=https://www.example.com f.host.port=5000
+f.login=John.Doe f.password=75vf@5JB@o`
 
-Description and examples for using and managing Record Types
+JSON Data `add --data '{"type": "databaseCredentials", "title": "my
+databaseCredentials", "fields": [{"type": "text", "value": ["SomeText"],
+"label": "type"}, {"type": "host", "value": [{"hostName":
+"https://www.example.com", "port": "5000"}]}, {"type": "login", "value":
+["John.Doe"]}, {"type": "password", "value": ["75vf@5JB@o"]}], "custom": []}'`
 
-[PreviousRecord Type Commands](/en/keeperpam/commander-cli/command-
-reference/record-commands/record-type-commands)[NextSharing
-Commands](/en/keeperpam/commander-cli/command-reference/sharing-commands)
+`custom` \- custom fields and values can be added to records. See  for more
+information on adding custom fields
 
-  * Overview
-  * Quick Start
-  * Add login record type record
-  * View all available record types
-  * View details for a record type
-  * View example JSON to create record for a given record type
-  * Field Types
-  * Standard Record Types
-  * login Record Type
-  * bankAccount Record Type
-  * address Record Type
-  * bankCard Record Type
-  * birthCertificate Record Type
-  * contact Record Type
-  * driverLicense Record Type
-  * encryptedNotes Record Type
-  * file Record Type
-  * healthInsurance Record Type
-  * membership Record Type
-  * passport Record Type
-  * photo Record Type
-  * serverCredentials Record Type
-  * softwareLicense Record Type
-  * ssnCard Record Type
-  * general Record Type
-  * sshKeys Record Type
-  * databaseCredentials Record Type
+[add documentation](/en/keeperpam/commander-cli/command-reference/record-
+commands#add-command-new-record-type)
 
 [ define new record types](/en/keeperpam/commander-cli/command-
 reference/record-commands/record-type-commands#record-type-command)
@@ -1863,7 +1866,4 @@ commands/record-type-commands#commands)
 
 [standard record types](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#standard-record-types)
-
-[add documentation](/en/keeperpam/commander-cli/command-reference/record-
-commands#add-command-new-record-type)
 

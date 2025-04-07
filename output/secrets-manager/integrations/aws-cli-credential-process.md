@@ -453,7 +453,7 @@ Protect your AWS Access Keys with Keeper Secrets Manager
 manager/integrations/ansible/ansible-tower)[NextAWS Secrets
 Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

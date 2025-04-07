@@ -477,74 +477,32 @@ Command
 
 Explanation
 
-[`enterprise-info`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#enterprise-info-command) or `ei`
-
 Display enterprise information
-
-[`enterprise-user`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#enterprise-user-command) or `eu`
 
 Manage enterprise users
 
-[`enterprise-role`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#enterprise-role-command) or `er`
-
 Manage enterprise roles and policies
-
-[`enterprise-team`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#enterprise-team-command) or `et`
 
 Manage enterprise teams
 
-[`enterprise-node`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#enterprise-node-command) or `en`
-
 Manage enterprise nodes
-
-[`enterprise-push`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#enterprise-push-command)
 
 Populate user and team vaults with predetermined records
 
-[`enterprise-down`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#enterprise-down-command) or `ed`
-
 Download & decrypt enterprise data
-
-[`team-approve`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#team-approve-command)
 
 Approve queued teams and users provisioned by SCIM or Active Directory Bridge
 
-[`device-approve`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#device-approve-command)
-
 Approve SSO Cloud devices that are pending from end-users
-
-[`create-user`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#create-user-command)
 
 Create a new user and vault, and add a record to the current vault with that
 user's credentials
 
-[`transfer-user`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#transfer-user-command)
-
 Transfer an account to another user
-
-[`automator`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#automator-command)
 
 Manage SSO Cloud Automator for Device Approvals
 
-[`scim`](/en/keeperpam/commander-cli/command-reference/enterprise-management-
-commands#scim-command)
-
 Manage SCIM endpoints
-
-[`audit-alert`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#audit-alert-command)
 
 Manage Audit Alerts
 
@@ -733,12 +691,6 @@ name or UID. To view a list of teams, use `enterprise-info --teams`
 `--remove-team` <TEAM NAME OR UID> remove the user from the team with the
 specified name or UID. To view a list of teams, use `enterprise-info --teams`
 
-`--add-alias` <EMAIL> Add an alias, in the form of an email address, to a
-user. The alias added will become the "primary" email for the user. Applying
-the command to an existing alias will set it as primary. Note that this
-command is only permitted on [reserved
-domains](https://docs.keeper.io/enterprise-guide/domain-reservation).
-
 `--delete-alias` <EMAIL> delete an email alias for a user
 
 `-f`, --force do not prompt for confirmation
@@ -889,9 +841,6 @@ Copy
     
     
     enterprise-role ROLE --enforcement "<POLICY>:$FILE=<PATH_TO_FILE_WITH_POLICY_VALUE>"
-
-Example restricting the "Engineering" role to access[ ](/en/keeperpam/secrets-
-manager/overview)import records.
 
 Copy
 
@@ -1556,11 +1505,6 @@ not delete the node itself. Be careful with this command.
 
 `--toggle-isolated` make node visible or invisible to people in other nodes
 
-`--invite-email` <FILE_NAME> Sets invite email template from file. Saves
-current template if file does not exist. dash (-) use stdout. See [Custom
-Emails](/en/keeperpam/commander-cli/command-reference/enterprise-management-
-commands#custom-emails) section below.
-
 `--logo-file` <FILE_NAME> Sets company / node logo using local image file (max
 size: 500 kB, min dimensions: 10x10, max dimensions: 320x320)
 
@@ -1627,10 +1571,6 @@ Copy
     [Button Text]
     // Insert the download button text here 
 
-Custom Emails can also be formatted using markdown syntax, for more
-information please refer to this [page](https://docs.keeper.io/enterprise-
-guide/user-and-team-provisioning/custom-invite-and-logo).
-
 ####
 
 **Custom Email Use Case**
@@ -1676,20 +1616,6 @@ backslash. Either of the following file paths are valid:
 
 When sending invitation emails, users will receive the following emails based
 on their branch location:
-
-![Invitation email received by users in the Chicago
-Branch](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FcGqbto7AdrZMnrm7G4vd%252FchicagoEmail.png%3Falt%3Dmedia%26token%3Df4a4eeb0-2d47-4743-9b95-93a7808c9f1a&width=768&dpr=4&quality=100&sign=8f20fb25&sv=2)
-
-Invitation Email for Chicago Branch
-
-![Invitation email received by users in the Tokyo
-Branch](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDIwQfZfBuxGmia8dctBN%252FtokyoEmail.png%3Falt%3Dmedia%26token%3Dc05c82a8-22e2-4561-ac66-632fa1e9ea29&width=768&dpr=4&quality=100&sign=ecaf6e90&sv=2)
-
-Invitation Email for Tokyo Branch
 
 ###
 
@@ -1921,10 +1847,6 @@ Copy
 Create a new account and vault for the given email address and create a record
 for the new user's credentials in the current Keeper vault.
 
-To invite new users to an enterprise see the [enterprise-user
-command](/en/keeperpam/commander-cli/command-reference/enterprise-management-
-commands#enterprise-user-command)
-
 **Parameters:**
 
 User's email address
@@ -1974,10 +1896,6 @@ Copy
 
 The new user will follow this url to receive their temporary credentials and
 perform the first login.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FypuLYiCDVq8kq6326YrV%252Fimage.png%3Falt%3Dmedia%26token%3D71273e08-c146-464b-be53-bdea3df18a2b&width=768&dpr=4&quality=100&sign=ec90dd26&sv=2)
 
 ###
 
@@ -2032,12 +1950,6 @@ automator command:
 **Command** : `automator`
 
 **Detail** : Configures SSO Cloud device automators.
-
-An Automator is a program running at a customer site that can perform some
-Keeper administrative actions such as performing device approvals or team
-approvals. More information about the Keeper Automator service is [found at
-this link](https://docs.keeper.io/sso-connect-cloud/device-
-approvals/automator).
 
 Only the root-level Keeper Administrator role can manage the Automator
 configuration
@@ -2134,10 +2046,6 @@ Copy
     My Vault> automator setup 888888888888
     My Vault> automator init 888888888888
     My Vault> automator enable 888888888888 
-
-For more information about the Keeper Automator for SSO device approvals, see
-the [Automator Service](https://docs.keeper.io/sso-connect-cloud/device-
-approvals/automator) documentation.
 
 ###
 
@@ -2241,11 +2149,7 @@ Copy
 
 Configuring SCIM source for push
 
-  * [Common configuration steps](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/scim-push-configuration#common-for-all-sources)
-
-  * [Google Workspace](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/scim-push-configuration#google-workspace)
-
-  * [Active Directory](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/scim-push-configuration#active-directory-configuration)
+  *   *   * 
 
 ###
 
@@ -2518,4 +2422,128 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+or `ei`
+
+or `eu`
+
+or `er`
+
+or `et`
+
+or `en`
+
+or `ed`
+
+`--add-alias` <EMAIL> Add an alias, in the form of an email address, to a
+user. The alias added will become the "primary" email for the user. Applying
+the command to an existing alias will set it as primary. Note that this
+command is only permitted on .
+
+Example restricting the "Engineering" role to accessimport records.
+
+`--invite-email` <FILE_NAME> Sets invite email template from file. Saves
+current template if file does not exist. dash (-) use stdout. See  section
+below.
+
+Custom Emails can also be formatted using markdown syntax, for more
+information please refer to this .
+
+Invitation Email for Chicago Branch
+
+Invitation Email for Tokyo Branch
+
+To invite new users to an enterprise see the
+
+An Automator is a program running at a customer site that can perform some
+Keeper administrative actions such as performing device approvals or team
+approvals. More information about the Keeper Automator service is .
+
+For more information about the Keeper Automator for SSO device approvals, see
+the  documentation.
+
+[reserved domains](https://docs.keeper.io/enterprise-guide/domain-reservation)
+
+[ ](/en/keeperpam/secrets-manager/overview)
+
+[page](https://docs.keeper.io/enterprise-guide/user-and-team-
+provisioning/custom-invite-and-logo)
+
+[found at this link](https://docs.keeper.io/sso-connect-cloud/device-
+approvals/automator)
+
+[Automator Service](https://docs.keeper.io/sso-connect-cloud/device-
+approvals/automator)
+
+![Invitation email received by users in the Chicago
+Branch](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FcGqbto7AdrZMnrm7G4vd%252FchicagoEmail.png%3Falt%3Dmedia%26token%3Df4a4eeb0-2d47-4743-9b95-93a7808c9f1a&width=768&dpr=4&quality=100&sign=8f20fb25&sv=2)
+
+![Invitation email received by users in the Tokyo
+Branch](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDIwQfZfBuxGmia8dctBN%252FtokyoEmail.png%3Falt%3Dmedia%26token%3Dc05c82a8-22e2-4561-ac66-632fa1e9ea29&width=768&dpr=4&quality=100&sign=ecaf6e90&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FypuLYiCDVq8kq6326YrV%252Fimage.png%3Falt%3Dmedia%26token%3D71273e08-c146-464b-be53-bdea3df18a2b&width=768&dpr=4&quality=100&sign=ec90dd26&sv=2)
+
+[Common configuration steps](/en/keeperpam/commander-cli/command-
+reference/enterprise-management-commands/scim-push-configuration#common-for-
+all-sources)
+
+[Google Workspace](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands/scim-push-configuration#google-workspace)
+
+[Active Directory](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands/scim-push-configuration#active-directory-configuration)
+
+[Custom Emails](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#custom-emails)
+
+[enterprise-user command](/en/keeperpam/commander-cli/command-
+reference/enterprise-management-commands#enterprise-user-command)
+
+[`enterprise-info`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#enterprise-info-command)
+
+[`enterprise-user`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#enterprise-user-command)
+
+[`enterprise-role`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#enterprise-role-command)
+
+[`enterprise-team`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#enterprise-team-command)
+
+[`enterprise-node`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#enterprise-node-command)
+
+[`enterprise-push`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#enterprise-push-command)
+
+[`enterprise-down`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#enterprise-down-command)
+
+[`team-approve`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#team-approve-command)
+
+[`device-approve`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#device-approve-command)
+
+[`create-user`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#create-user-command)
+
+[`transfer-user`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#transfer-user-command)
+
+[`automator`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#automator-command)
+
+[`scim`](/en/keeperpam/commander-cli/command-reference/enterprise-management-
+commands#scim-command)
+
+[`audit-alert`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#audit-alert-command)
 

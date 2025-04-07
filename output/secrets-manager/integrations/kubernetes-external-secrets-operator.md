@@ -904,9 +904,6 @@ See the  for instructions on creating an Application
 After setting up your , , and , you can extract secrets with the command
 `kubectl get secrets`
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
 [Kubernetes Secret](/en/keeperpam/secrets-manager/integrations/kubernetes-
 external-secrets-operator#create-kubernetes-secret-to-store-base64-ksm-config)
 
@@ -915,4 +912,7 @@ secrets-operator#create-secretstore)
 
 [ExternalSecret](/en/keeperpam/secrets-manager/integrations/kubernetes-
 external-secrets-operator#create-externalsecret)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 

@@ -592,14 +592,6 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fw5aFPH5t5
 
 MySQL Session Recordings
 
-For this protocol, both graphical and the full, raw text text content of
-terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this
-[page](/en/keeperpam/privileged-access-manager/session-recording-and-
-playback).
-
-  * Learn more about [Session Recording and Playback](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
-
 [PreviousRBI Connections](/en/keeperpam/privileged-access-
 manager/connections/session-protocols/rbi-connections)[NextSQL Server
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
@@ -655,4 +647,15 @@ perform administrative operations on it.
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
+
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this .
+
+  * Learn more about 
+
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+
+[Session Recording and Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
 

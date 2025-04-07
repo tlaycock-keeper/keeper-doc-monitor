@@ -425,9 +425,41 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MJXO_hpAODecU2amxqS&only=yes&limit=100)
 
 KeeperPAM is a modern, cloud-based Privileged Access Manager
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FClb20vtKpGMCPIFIVslS%252FKeeperPAM%2520overview.jpg%3Falt%3Dmedia%26token%3D463010f5-1a94-4a9a-ad0e-8cce36c9127c&width=768&dpr=4&quality=100&sign=e8a341e3&sv=2)
+[NextSetup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
+
+Last updated 16 days ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -444,12 +476,6 @@ a cloud-based access control plane in one unified product.
 To learn more about KeeperPAM or sign up for a trial:
 
   * [**KeeperPAM Website**](https://www.keepersecurity.com/privileged-access-management/)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjW8K3LrpOT0ALvAK2VWP%252FScreenshot%25202025-02-13%2520at%25209.55.08%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D9acf8233-c7d7-4615-94ec-14e9cda14790&width=768&dpr=4&quality=100&sign=6d78c863&sv=2)
-
-KeeperPAM Platform Diagram
 
 ###
 
@@ -546,39 +572,13 @@ Next Steps
 
   * Deep dive into the [Getting Started guide for KeeperPAM](/en/keeperpam/privileged-access-manager/getting-started)
 
-[NextSetup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
+KeeperPAM Platform Diagram
 
-Last updated 15 days ago
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FClb20vtKpGMCPIFIVslS%252FKeeperPAM%2520overview.jpg%3Falt%3Dmedia%26token%3D463010f5-1a94-4a9a-ad0e-8cce36c9127c&width=768&dpr=4&quality=100&sign=e8a341e3&sv=2)
 
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjW8K3LrpOT0ALvAK2VWP%252FScreenshot%25202025-02-13%2520at%25209.55.08%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D9acf8233-c7d7-4615-94ec-14e9cda14790&width=768&dpr=4&quality=100&sign=6d78c863&sv=2)
 

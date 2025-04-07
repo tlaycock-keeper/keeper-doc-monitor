@@ -684,7 +684,7 @@ Once you have deployed the agent, it's time to set up
 [PreviousSetup](/en/keeperpam/privilege-
 manager/setup)[NextPolicies](/en/keeperpam/privilege-manager/policies)
 
-Last updated 15 days ago
+Last updated 16 days ago
 
 Was this helpful?
 

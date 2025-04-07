@@ -540,7 +540,7 @@ reference/enterprise-management-commands/compliance-commands)[NextSCIM Push
 Configuration](/en/keeperpam/commander-cli/command-reference/enterprise-
 management-commands/scim-push-configuration)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

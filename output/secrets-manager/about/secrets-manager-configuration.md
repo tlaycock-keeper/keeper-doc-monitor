@@ -449,7 +449,7 @@ Information about Keeper Secrets Manager configuration files
 token)[NextKeeper Notation](/en/keeperpam/secrets-manager/about/keeper-
 notation)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

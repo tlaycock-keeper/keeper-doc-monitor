@@ -855,7 +855,7 @@ Using Ngrok has security implications. Follow this guidance:
 
   * Protect access to the service through Ngrok's IP policies
 
-  * Limit the scope of supported commands. For example, if you only need to add records through the API, then only allow the `record-add` command. See the [Command List](/en/keeperpam/commander-cli/service-mode-rest-api#command-list) section.
+  * 
 
 ####
 
@@ -1064,7 +1064,7 @@ reference/plugins/automatic-
 execution)[NextTroubleshooting](/en/keeperpam/commander-cli/troubleshooting-
 commander-cli)
 
-Last updated 10 days ago
+Last updated 11 days ago
 
 Was this helpful?
 
@@ -1097,4 +1097,10 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+Limit the scope of supported commands. For example, if you only need to add
+records through the API, then only allow the `record-add` command. See the
+section.
+
+[Command List](/en/keeperpam/commander-cli/service-mode-rest-api#command-list)
 

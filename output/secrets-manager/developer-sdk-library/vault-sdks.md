@@ -484,7 +484,7 @@ CLI](/en/keeperpam/commander-cli/overview).
 library/powershell)[NextIntegrations](/en/keeperpam/secrets-
 manager/integrations)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

@@ -475,10 +475,6 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPqATiBJd0
 
 Locate Record UID
 
-For more information on running Commander commands with a configuration file,
-see the [documentation](/en/keeperpam/commander-cli/commander-installation-
-setup/logging-in#running-commands-from-the-configuration-file)
-
 [PreviousActive Directory Plugin](/en/keeperpam/commander-cli/command-
 reference/plugins/active-directory-plugin)[NextService Mode REST
 API](/en/keeperpam/commander-cli/service-mode-rest-api)
@@ -516,4 +512,10 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+For more information on running Commander commands with a configuration file,
+see the
+
+[documentation](/en/keeperpam/commander-cli/commander-installation-
+setup/logging-in#running-commands-from-the-configuration-file)
 

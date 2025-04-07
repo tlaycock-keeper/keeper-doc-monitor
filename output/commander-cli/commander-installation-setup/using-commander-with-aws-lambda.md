@@ -593,6 +593,12 @@ Copy
     rm -rf $VENV
     
 
+[2KBpackage_layer_content.sh](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
+x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FgxJz7bvtfe4hTfuTA0cc%2Fpackage_layer_content.sh?alt=media&token=f624bf70-327c-4b10-9f18-a1f1ae06ecc1)
+
+Bash script for packaging `keepercommander` Lambda Layer content
+
 To use the script provided above, perform the following steps after
 downloading the file:
 
@@ -1052,6 +1058,10 @@ To get the Commander parameters, open the generated config.json file. By
 default this is located in the `Users/[your username]/.keeper/` folder on your
 machine. See thefor more information.
 
+[![Logo](https://docs.aws.amazon.com/assets/images/favicon.ico)Invoking Lambda
+functions - AWS LambdaAWS
+Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
+
 [![Logo](https://a0.awsstatic.com/libra-css/images/site/touch-icon-
 ipad-144-smile.png)Send email using Lambda and Amazon SESAmazon Web Services,
 Inc.](https://aws.amazon.com/premiumsupport/knowledge-center/lambda-send-
@@ -1061,16 +1071,6 @@ email-ses/)
 Keeper-Security/CommanderGitHub](https://github.com/Keeper-
 Security/Commander/tree/master/examples)
 
-[![Logo](https://docs.aws.amazon.com/assets/images/favicon.ico)Invoking Lambda
-functions - AWS LambdaAWS
-Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
-
 [ config file documentation ](/en/keeperpam/commander-cli/commander-
 installation-setup/logging-in#commander-configuration-file)
-
-[2KBpackage_layer_content.sh](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FgxJz7bvtfe4hTfuTA0cc%2Fpackage_layer_content.sh?alt=media&token=f624bf70-327c-4b10-9f18-a1f1ae06ecc1)
-
-Bash script for packaging `keepercommander` Lambda Layer content
 

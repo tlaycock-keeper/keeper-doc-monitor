@@ -1233,7 +1233,7 @@ record to be used with any helper tools.
 reporting)[NextSecrets Manager CLI](/en/keeperpam/secrets-manager/secrets-
 manager-command-line-interface)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

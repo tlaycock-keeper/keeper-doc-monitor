@@ -437,7 +437,7 @@ Integration with the Keeper Advanced Reporting & Alerts Module
 notation)[NextField/Record Types](/en/keeperpam/secrets-manager/about/field-
 record-types)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

@@ -558,18 +558,7 @@ that starts with "oracle//"
 The plugin will use the Login field as the username of the password command
 when rotating a password.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf4-Wp_-
-ZiTEjiYaqYL%252Fimage.png%3Falt%3Dmedia%26token%3Dee97abf8-7126-4064-a38e-d837de304dfc&width=768&dpr=4&quality=100&sign=94f4d84b&sv=2)
-
 **Record Example:**
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf3jhRTdO6IbKc4VLLY%252Fimage.png%3Falt%3Dmedia%26token%3Dc8958294-77b9-4c1d-af8b-323c0566424e&width=768&dpr=4&quality=100&sign=77fe2edc&sv=2)
-
-A Keeper Record setup for Oracle password rotation
 
 ##
 
@@ -634,4 +623,15 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+A Keeper Record setup for Oracle password rotation
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf3jhRTdO6IbKc4VLLY%252Fimage.png%3Falt%3Dmedia%26token%3Dc8958294-77b9-4c1d-af8b-323c0566424e&width=768&dpr=4&quality=100&sign=77fe2edc&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf4-Wp_-
+ZiTEjiYaqYL%252Fimage.png%3Falt%3Dmedia%26token%3Dee97abf8-7126-4064-a38e-d837de304dfc&width=768&dpr=4&quality=100&sign=94f4d84b&sv=2)
 

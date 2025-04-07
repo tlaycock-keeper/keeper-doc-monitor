@@ -2019,7 +2019,7 @@ reference/enterprise-management-commands/scim-push-configuration)[NextRecord
 Type Commands](/en/keeperpam/commander-cli/command-reference/record-
 commands/record-type-commands)
 
-Last updated 19 days ago
+Last updated 20 days ago
 
 Was this helpful?
 

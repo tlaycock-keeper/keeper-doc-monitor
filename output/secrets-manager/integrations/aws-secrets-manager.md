@@ -452,43 +452,11 @@ PDF](/en/keeperpam/~gitbook/pdf?page=34KiaAqCCWYeFK8n8tHW&only=yes&limit=100)
 
 Sync secrets from the Keeper Vault with AWS Secrets Manager
 
-[PreviousAWS CLI Credential Process](/en/keeperpam/secrets-
-manager/integrations/aws-cli-credential-process)[NextAWS
-KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
-
-Last updated 5 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FmqGoDtyLNTaLkl9bVfCi%252Fdatasource-
+ksm-
+aws.jpg%3Falt%3Dmedia%26token%3D2703ca39-f530-4afd-9319-e86f445225e8&width=768&dpr=4&quality=100&sign=658ead9a&sv=2)
 
 ##
 
@@ -519,11 +487,7 @@ Prerequisites
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
-
-    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
-
-  * An AWS account with AWS Secrets Manager, and the ability to create IAM security credentials
+  *     *   * An AWS account with AWS Secrets Manager, and the ability to create IAM security credentials
 
 ##
 
@@ -559,11 +523,6 @@ vault or on individual keys to sync.
 `arn:aws:iam::aws:policy/SecretsManagerReadWrite`
 
 See the Amazon instructions for creating Access Keys:
-
-[![Logo](https://docs.aws.amazon.com/assets/images/favicon.ico)Managing access
-keys for IAM users - AWS Identity and Access ManagementAWS Identity and Access
-Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-
-keys.html)
 
 ###
 
@@ -705,9 +664,56 @@ TIP: you can use `-m` as short hand for `--map`
 
 `ksm sync --type aws --credentials [UID] -m [...] -m [...]`
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FmqGoDtyLNTaLkl9bVfCi%252Fdatasource-
-ksm-
-aws.jpg%3Falt%3Dmedia%26token%3D2703ca39-f530-4afd-9319-e86f445225e8&width=768&dpr=4&quality=100&sign=658ead9a&sv=2)
+[PreviousAWS CLI Credential Process](/en/keeperpam/secrets-
+manager/integrations/aws-cli-credential-process)[NextAWS
+KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+
+Last updated 5 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+A Keeper  with secrets shared to it
+
+See the  for instructions on creating an Application
+
+[![Logo](https://docs.aws.amazon.com/assets/images/favicon.ico)Managing access
+keys for IAM users - AWS Identity and Access ManagementAWS Identity and Access
+Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-
+keys.html)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 

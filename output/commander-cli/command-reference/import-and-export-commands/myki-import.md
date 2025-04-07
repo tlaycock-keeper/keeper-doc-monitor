@@ -457,7 +457,7 @@ reference/import-and-export-commands/manageengine-import)[NextProton Pass
 Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
 commands/proton-pass-import)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

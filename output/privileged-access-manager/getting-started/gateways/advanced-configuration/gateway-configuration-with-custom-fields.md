@@ -570,7 +570,7 @@ manager/getting-started/gateways/advanced-configuration/gateway-configuration-
 with-aws-kms)[NextPAM Configuration](/en/keeperpam/privileged-access-
 manager/getting-started/pam-configuration)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

@@ -457,7 +457,7 @@ retrieval
 manager/integrations/kubernetes-external-secrets-operator)[NextLinux
 Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 
@@ -525,7 +525,7 @@ utilize this integration, you will need:
 
   * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
 
-    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+    * 
 
 ##
 
@@ -1114,7 +1114,22 @@ At this point, you can now integrate Keeper Secrets Manager into your K8s
 deployments using any of the [Secrets Manager SDKs](/en/keeperpam/secrets-
 manager/developer-sdk-library).
 
+See the  for instructions on creating an Application
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
 Example Web Application displaying Keeper secrets
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MktCpUkVepMUI2ry2UO%252F-MktD28kvZqqUuAoO5kD%252Fkubernetes-
+plugin-
+header.jpg%3Falt%3Dmedia%26token%3D19f48711-5185-45a7-96c4-efc7d11b34cc&width=768&dpr=4&quality=100&sign=6770b66&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6TQeKxdHn0zbmfZKG270%252Fimage.png%3Falt%3Dmedia%26token%3D05e69023-6c1d-44ec-819c-842699af867d&width=768&dpr=4&quality=100&sign=307eac3b&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -1127,14 +1142,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FBWcNIoRMf
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fdy9FYgLsLsgtiFVY5RGh%252FScreen%2520Shot%25202021-12-13%2520at%252011.13.18%2520AM.png%3Falt%3Dmedia%26token%3D7a1a0a7a-ce97-4d5f-ad26-5b817ddfc178&width=768&dpr=4&quality=100&sign=25762f75&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6TQeKxdHn0zbmfZKG270%252Fimage.png%3Falt%3Dmedia%26token%3D05e69023-6c1d-44ec-819c-842699af867d&width=768&dpr=4&quality=100&sign=307eac3b&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MktCpUkVepMUI2ry2UO%252F-MktD28kvZqqUuAoO5kD%252Fkubernetes-
-plugin-
-header.jpg%3Falt%3Dmedia%26token%3D19f48711-5185-45a7-96c4-efc7d11b34cc&width=768&dpr=4&quality=100&sign=6770b66&sv=2)
 

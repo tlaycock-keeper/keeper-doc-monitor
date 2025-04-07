@@ -2339,7 +2339,7 @@ Yes
 library/java-sdk)[NextJavaScript SDK](/en/keeperpam/secrets-manager/developer-
 sdk-library/javascript-sdk)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

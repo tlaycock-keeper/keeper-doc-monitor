@@ -600,7 +600,7 @@ or send an email to security@keepersecurity.com.
 [PreviousTerminology](/en/keeperpam/secrets-manager/about/terminology)[NextOne
 Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 
