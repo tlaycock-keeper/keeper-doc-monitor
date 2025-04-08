@@ -466,6 +466,10 @@ Setup
 
 Activate Keeper Secrets Manager
 
+Follow the[ Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-
+guide#enable-secrets-manager) to enable Keeper Secrets Manager on your
+account.
+
 ####
 
 Create A Keeper Secrets Manager Configuration
@@ -701,9 +705,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-Follow the to enable Keeper Secrets Manager on your account.
-
-[ Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#enable-
-secrets-manager)
 

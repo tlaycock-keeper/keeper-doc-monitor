@@ -448,44 +448,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=XTyf98IFn0oRnCoEILhY&only=yes&limit=100)
 
 KeeperPAM resource for managing machines on-prem or in the cloud
 
-[PreviousPAM Resources](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources)[NextExample: Linux Machine](/en/keeperpam/privileged-
-access-manager/getting-started/pam-resources/pam-machine/example-linux-
-machine)
-
-Last updated 2 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FETnLSTu5qYNj0xwMltI2%252FKeeperPAM%2520Machine.jpg%3Falt%3Dmedia%26token%3D7f69333a-8f02-410f-8542-1882216994b6&width=768&dpr=4&quality=100&sign=5324b381&sv=2)
 
 ##
 
@@ -555,6 +520,12 @@ To create a PAM Machine:
     * Select "**Machine** " for the Target 
 
   * Click "**Next** " and complete all of the required information.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYzn7xA4rI6mcsTSwW1pz%252FScreenshot%25202024-12-26%2520at%25205.30.05%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Da4e98fcc-37b0-4906-843e-b1bcd5bf5b4f&width=768&dpr=4&quality=100&sign=b27d3f5f&sv=2)
+
+Creating a new PAM Machine record
 
 ##
 
@@ -637,6 +608,13 @@ KeeperPAM Connection and Tunnel settings and link a PAM User credential for
 performing rotations and connections. Tunnels do not require a linked
 credential.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHeovfKrm4CXGKwiIqq11%252FScreenshot%25202025-01-01%2520at%25209.27.18%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Db4e0a075-94bf-43da-
+aa25-bf684ab3a00d&width=768&dpr=4&quality=100&sign=68e0a16&sv=2)
+
+PAM Settings and Administrative Credentials
+
 ###
 
 PAM Settings
@@ -669,9 +647,6 @@ Session Recording
 
 Options for recording sessions and typescripts
 
-See [session recording](/en/keeperpam/privileged-access-manager/session-
-recording-and-playback)
-
 Connection Parameters (multiple)
 
 Connection-specific protocol settings which can vary based on the protocol
@@ -680,8 +655,26 @@ type
 Depends on protocol. We recommend specifying the **Connection Port** at a
 minimum.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGfUUKJYQrvyHbjH6wLC9%252FScreenshot%25202025-01-01%2520at%25209.31.08%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dacd71242-e88f-4283-8aa9-7d68c5dd96ae&width=768&dpr=4&quality=100&sign=a74e0ae&sv=2)
+
+PAM Settings for a PAM Machine resource
+
 Below are a couple examples of PAM Machine records with Connections and
 Tunnels activated.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FrSy701IpEDZQukD6q7kh%252FScreenshot%25202025-01-01%2520at%25209.39.22%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D35cfb79d-a8b8-4e57-87b3-84921ab720d9&width=768&dpr=4&quality=100&sign=8b7fe257&sv=2)
+
+PAM Machine Record - Windows
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3RtXTHeGIFJVRWtkORwj%252FScreenshot%25202025-01-01%2520at%25209.41.18%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3De3686b71-94f2-4d91-b43b-b7c9644142df&width=768&dpr=4&quality=100&sign=2573abaf&sv=2)
+
+PAM Machine Record - Linux
 
 ##
 
@@ -693,48 +686,57 @@ Visit the following pages to set up:
 
   * [Azure Virtual Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-machine/example-azure-windows-vm)
 
+[PreviousPAM Resources](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources)[NextExample: Linux Machine](/en/keeperpam/privileged-
+access-manager/getting-started/pam-resources/pam-machine/example-linux-
+machine)
+
+Last updated 2 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 **Required** Visit this  for more details
 
 **Required** Visit this  for more details
+
+See
+
+[session recording](/en/keeperpam/privileged-access-manager/session-recording-
+and-playback)
 
 [section](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-machine#pam-settings-and-administrative-credentials)
 
 [section](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-machine#pam-settings-and-administrative-credentials)
-
-Creating a new PAM Machine record
-
-PAM Settings and Administrative Credentials
-
-PAM Settings for a PAM Machine resource
-
-PAM Machine Record - Windows
-
-PAM Machine Record - Linux
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FETnLSTu5qYNj0xwMltI2%252FKeeperPAM%2520Machine.jpg%3Falt%3Dmedia%26token%3D7f69333a-8f02-410f-8542-1882216994b6&width=768&dpr=4&quality=100&sign=5324b381&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYzn7xA4rI6mcsTSwW1pz%252FScreenshot%25202024-12-26%2520at%25205.30.05%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Da4e98fcc-37b0-4906-843e-b1bcd5bf5b4f&width=768&dpr=4&quality=100&sign=b27d3f5f&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHeovfKrm4CXGKwiIqq11%252FScreenshot%25202025-01-01%2520at%25209.27.18%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Db4e0a075-94bf-43da-
-aa25-bf684ab3a00d&width=768&dpr=4&quality=100&sign=68e0a16&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGfUUKJYQrvyHbjH6wLC9%252FScreenshot%25202025-01-01%2520at%25209.31.08%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dacd71242-e88f-4283-8aa9-7d68c5dd96ae&width=768&dpr=4&quality=100&sign=a74e0ae&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FrSy701IpEDZQukD6q7kh%252FScreenshot%25202025-01-01%2520at%25209.39.22%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D35cfb79d-a8b8-4e57-87b3-84921ab720d9&width=768&dpr=4&quality=100&sign=8b7fe257&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3RtXTHeGIFJVRWtkORwj%252FScreenshot%25202025-01-01%2520at%25209.41.18%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3De3686b71-94f2-4d91-b43b-b7c9644142df&width=768&dpr=4&quality=100&sign=2573abaf&sv=2)
 

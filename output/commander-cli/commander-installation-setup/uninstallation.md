@@ -513,10 +513,8 @@ Copy
 
 Uninstallation - Windows Binary (.exe)
 
-If you installed Keeper Commander using the [Windows
-binary,](/en/keeperpam/commander-cli/commander-installation-
-setup/installation-on-windows#typical-binary-installation-recommended) follow
-the following steps to uninstall:
+If you installed Keeper Commander using the  follow the following steps to
+uninstall:
 
   1. Open Control Panel 
 
@@ -535,16 +533,20 @@ windows-4b55f974-2cc6-2d2b-d092-5905080eaf98#ID0EBD=Windows_10).
 
 Uninstallation - Mac Binary (.pkg)
 
-If you installed Keeper Commander using the Mac
-[binary](/en/keeperpam/commander-cli/commander-installation-
-setup/installation-on-mac#binary-installation-recommended), follow the
-following steps to uninstall:
-
   1. Open Finder
 
   2. Navigate to Application Folder 
 
   3. Right Click "Keeper Commander" and select "Move to Trash" 
+
+If you installed Keeper Commander using the Mac , follow the following steps
+to uninstall:
+
+[binary](/en/keeperpam/commander-cli/commander-installation-
+setup/installation-on-mac#binary-installation-recommended)
+
+[Windows binary,](/en/keeperpam/commander-cli/commander-installation-
+setup/installation-on-windows#typical-binary-installation-recommended)
 
 [pip3](/en/keeperpam/commander-cli/commander-installation-setup/installation-
 on-linux#installing-python)

@@ -453,7 +453,7 @@ Running Discovery using the Keeper Vault user interface
 manager/discovery/discovery-using-commander)[NextOn-Prem Connection
 Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
 
-Last updated 16 days ago
+Last updated 17 days ago
 
 Was this helpful?
 

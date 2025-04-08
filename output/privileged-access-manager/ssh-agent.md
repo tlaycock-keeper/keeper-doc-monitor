@@ -625,13 +625,7 @@ drop-down.
 
 Configuration of your Terminal
 
-In order to work with the local operating system (macOS and Windows), follow
-the [guide below](/en/keeperpam/privileged-access-manager/ssh-
-agent#configuring-your-terminal-for-keeper-ssh-agent) to enable SSH Agent for
-your desired terminal. An environment variable must be set to instruct your
-computer to use Keeper's SSH Agent.
-
-  * [SSH Agent Configuration](/en/keeperpam/privileged-access-manager/ssh-agent#configuration-of-your-terminal)
+  * 
 
 ##
 
@@ -750,6 +744,10 @@ basis.
 
   * See the [Password Rotation](/en/keeperpam/secrets-manager/password-rotation) section and the [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user) SSH Key use case
 
+In order to work with the local operating system (macOS and Windows), follow
+the  to enable SSH Agent for your desired terminal. An environment variable
+must be set to instruct your computer to use Keeper's SSH Agent.
+
 The Keeper SSH Agent allows you to seamlessly authenticate into services like
 GitHub and securely sign Git commits. To help you get started, we've created a
 step-by-step guide on setting up  and  using Keeper.
@@ -759,6 +757,12 @@ agent/integration-with-git#github-authentication)
 
 [signing Git commits](/en/keeperpam/privileged-access-manager/ssh-
 agent/integration-with-git#signing-commits)
+
+[guide below](/en/keeperpam/privileged-access-manager/ssh-agent#configuring-
+your-terminal-for-keeper-ssh-agent)
+
+[SSH Agent Configuration](/en/keeperpam/privileged-access-manager/ssh-
+agent#configuration-of-your-terminal)
 
 Developer Settings
 

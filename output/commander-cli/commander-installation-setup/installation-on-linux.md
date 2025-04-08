@@ -558,11 +558,6 @@ Copy
 
 You should see:
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FijsE6IrCJmLZkurhwQKo%252Fkeeper-
-commander_BBNOqSVfEO.png%3Falt%3Dmedia%26token%3D9f80084e-6f49-46be-a52c-0bbb0b7737d4&width=768&dpr=4&quality=100&sign=8c8fadbc&sv=2)
-
 Note, for your first time logging into a new device or a new location, you may
 have to perform device approval through email or other 2FA methods.
 
@@ -604,4 +599,9 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FijsE6IrCJmLZkurhwQKo%252Fkeeper-
+commander_BBNOqSVfEO.png%3Falt%3Dmedia%26token%3D9f80084e-6f49-46be-a52c-0bbb0b7737d4&width=768&dpr=4&quality=100&sign=8c8fadbc&sv=2)
 

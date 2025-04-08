@@ -519,13 +519,9 @@ makes it easy to create and manage records for a variety of different uses.
 There is a set of  defined by Keeper, these include common types like Login,
 Passport, and SSH Keys.
 
-It is also possible to[ define new record types](/en/keeperpam/commander-
-cli/command-reference/record-commands/record-type-commands#record-type-
-command) to be used by your organization.
+It is also possible to to be used by your organization.
 
-For a list of associate record type commands, see [commands
-documentation](/en/keeperpam/commander-cli/command-reference/record-
-commands/record-type-commands#commands)
+For a list of associate record type commands, see
 
 ##
 
@@ -761,11 +757,6 @@ All record types have the following fields:
 `title` \- what the record is named (required)
 
 `notes` \- text
-
-`custom` \- custom fields and values can be added to records. See [add
-documentation](/en/keeperpam/commander-cli/command-reference/record-
-commands#add-command-new-record-type) for more information on adding custom
-fields
 
 ###
 
@@ -1860,6 +1851,18 @@ databaseCredentials", "fields": [{"type": "text", "value": ["SomeText"],
 "label": "type"}, {"type": "host", "value": [{"hostName":
 "https://www.example.com", "port": "5000"}]}, {"type": "login", "value":
 ["John.Doe"]}, {"type": "password", "value": ["75vf@5JB@o"]}], "custom": []}'`
+
+`custom` \- custom fields and values can be added to records. See  for more
+information on adding custom fields
+
+[add documentation](/en/keeperpam/commander-cli/command-reference/record-
+commands#add-command-new-record-type)
+
+[ define new record types](/en/keeperpam/commander-cli/command-
+reference/record-commands/record-type-commands#record-type-command)
+
+[commands documentation](/en/keeperpam/commander-cli/command-reference/record-
+commands/record-type-commands#commands)
 
 [standard record types](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#standard-record-types)

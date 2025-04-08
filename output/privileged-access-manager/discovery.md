@@ -448,7 +448,7 @@ cloud infrastructure
 agent/integration-with-git)[NextDiscovery Basics](/en/keeperpam/privileged-
 access-manager/discovery/discovery-basics)
 
-Last updated 20 days ago
+Last updated 21 days ago
 
 Was this helpful?
 

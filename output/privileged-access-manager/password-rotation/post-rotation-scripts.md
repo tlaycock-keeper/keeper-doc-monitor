@@ -577,16 +577,11 @@ Scripts:
 
 Documentation included
 
-  *   *   * 
+  * [Inputs and outputs](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts/parameters)
 
-[Inputs and outputs](/en/keeperpam/privileged-access-manager/password-
-rotation/post-rotation-scripts/parameters)
+  * [Attaching scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts/attaching-post-rotation-scripts-to-records)
 
-[Attaching scripts](/en/keeperpam/privileged-access-manager/password-
-rotation/post-rotation-scripts/attaching-post-rotation-scripts-to-records)
-
-[Code Examples](/en/keeperpam/privileged-access-manager/password-
-rotation/post-rotation-scripts/accessing-parameters)
+  * [Code Examples](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts/accessing-parameters)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

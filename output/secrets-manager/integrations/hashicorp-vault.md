@@ -515,11 +515,6 @@ Installation
 
 Download the latest integration release from the KSM GitHub page:
 
-[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/secrets-
-managerGitHub](https://github.com/Keeper-Security/secrets-manager/releases)
-
-Secrets Manager Releases
-
 Look for a vault-plugin release in the list of releases that matched your
 platform.
 
@@ -675,12 +670,6 @@ be created and assigned to the plugin.
 ####
 
 Create a Secrets Manager Configuration
-
-A Secrets Manager configuration can be created using Keeper Commander or the
-Secrets Manager CLI. See the [Configuration
-Documentation](/en/keeperpam/secrets-manager/about/secrets-manager-
-configuration#creating-a-secrets-manager-configuration) for more information
-on creating a configuration.
 
 Once a configuration has been generated, set it to a variable to be used by
 the Vault Plugin.
@@ -916,4 +905,16 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+Secrets Manager Releases
+
+A Secrets Manager configuration can be created using Keeper Commander or the
+Secrets Manager CLI. See the  for more information on creating a
+configuration.
+
+[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/secrets-
+managerGitHub](https://github.com/Keeper-Security/secrets-manager/releases)
+
+[Configuration Documentation](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration#creating-a-secrets-manager-configuration)
 

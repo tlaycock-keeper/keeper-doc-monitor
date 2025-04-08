@@ -440,6 +440,45 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-Mf4pGN5y0sCTAGU3WgV&only=yes&limit=100)
 
 Automatic password rotation with Commander
 
+Keeper has also launched a zero-trust Password Rotation feature with
+KeeperPAM. This new capability is recommended for most password rotation use
+cases. The Documentation is linked below:
+
+  * [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-rotation)
+
+  * Commander [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
+
+You can automate password resets using Commander plugins, with a custom
+Commander configuration file
+
+**Example:**
+
+Copy
+
+    
+    
+    {                                                                               
+        "user":"admin@company.com",
+        "password":"somereallystrongpassword",
+        "commands":["d", "r iaOXP1fnApRh5DbaRd7MWA"]
+    }
+
+In this example, we are telling Commander to first download and decrypt
+records, then rotate the password (record UID iaOXP1fnApRh5DbaRd7MWA) using
+the plugin programmed into the record. To locate the Record UID, simply view
+it on the commander interactive shell or view it on the Keeper Web Vault and
+Desktop App (as seen below).
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPqATiBJd0Hm2VlwX6CIw%252FScreen%2520Shot%25202022-12-19%2520at%25203.20.51%2520PM.jpg%3Falt%3Dmedia%26token%3D8123a39a-aa45-402d-8b94-1e4899d1e16d&width=768&dpr=4&quality=100&sign=49cd02a6&sv=2)
+
+Locate Record UID
+
+For more information on running Commander commands with a configuration file,
+see the [documentation](/en/keeperpam/commander-cli/commander-installation-
+setup/logging-in#running-commands-from-the-configuration-file)
+
 [PreviousActive Directory Plugin](/en/keeperpam/commander-cli/command-
 reference/plugins/active-directory-plugin)[NextService Mode REST
 API](/en/keeperpam/commander-cli/service-mode-rest-api)
@@ -477,45 +516,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-Keeper has also launched a zero-trust Password Rotation feature with
-KeeperPAM. This new capability is recommended for most password rotation use
-cases. The Documentation is linked below:
-
-  * [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-rotation)
-
-  * Commander [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
-
-You can automate password resets using Commander plugins, with a custom
-Commander configuration file
-
-**Example:**
-
-Copy
-
-    
-    
-    {                                                                               
-        "user":"admin@company.com",
-        "password":"somereallystrongpassword",
-        "commands":["d", "r iaOXP1fnApRh5DbaRd7MWA"]
-    }
-
-In this example, we are telling Commander to first download and decrypt
-records, then rotate the password (record UID iaOXP1fnApRh5DbaRd7MWA) using
-the plugin programmed into the record. To locate the Record UID, simply view
-it on the commander interactive shell or view it on the Keeper Web Vault and
-Desktop App (as seen below).
-
-For more information on running Commander commands with a configuration file,
-see the
-
-[documentation](/en/keeperpam/commander-cli/commander-installation-
-setup/logging-in#running-commands-from-the-configuration-file)
-
-Locate Record UID
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPqATiBJd0Hm2VlwX6CIw%252FScreen%2520Shot%25202022-12-19%2520at%25203.20.51%2520PM.jpg%3Falt%3Dmedia%26token%3D8123a39a-aa45-402d-8b94-1e4899d1e16d&width=768&dpr=4&quality=100&sign=49cd02a6&sv=2)
 

@@ -887,6 +887,8 @@ Copy
 
 Working with Commander
 
+Keeper Commander – Accessing and Working with Your Vault
+
 [PreviousPowerShell Module](/en/keeperpam/commander-cli/commander-
 installation-setup/installation-on-powershell)[NextConfiguration and
 Usage](/en/keeperpam/commander-cli/commander-installation-setup/configuration)
@@ -927,8 +929,6 @@ Was this helpful?
 
 See  for more details on device approval.
 
-Keeper Commander – Accessing and Working with Your Vault
-
 [First Login on a New Device section](/en/keeperpam/commander-cli/commander-
 installation-setup/logging-in#first-login-on-a-new-device)
 
@@ -944,15 +944,6 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FcteE2I435
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLtlzlTvOklQoOP4Cn9js%252FScreen%2520Shot%25202022-07-15%2520at%25206.01.11%2520PM.png%3Falt%3Dmedia%26token%3Db58d0065-79d9-4343-956c-3bb299eca687&width=768&dpr=4&quality=100&sign=9d8bddc6&sv=2)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mel7nEasV2-9PcLt28R%252F-MelAMU5H8NOjViHwkEl%252FScreen%2520Shot%25202020-12-24%2520at%25208.54.50%2520AM.png%3Falt%3Dmedia%26token%3D986e1183-a395-49ef-b472-fed9162bac13&width=768&dpr=4&quality=100&sign=89d92989&sv=2)
-
-![The SSO token
-highlighted](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGxyWf2HIoxxQX7jdXnu4%252FScreen%2520Shot%25202021-12-17%2520at%25201.38.26%2520PM.jpg%3Falt%3Dmedia%26token%3D76bdbef2-9f66-4af1-b5be-1b45eb16fc3e&width=300&dpr=4&quality=100&sign=f3cb3ff5&sv=2)
-
 ![Right click menu with "View page source"
 highlighted](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -961,4 +952,13 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfnUkQM9z3
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mel7nEasV2-9PcLt28R%252F-MelBP0BL3ei6D0pxshE%252FScreen%2520Shot%25202021-07-16%2520at%25202.20.19%2520PM.png%3Falt%3Dmedia%26token%3Db43c1f01-0acd-45f3-96bf-56c3ea0b5022&width=768&dpr=4&quality=100&sign=d0791f34&sv=2)
+
+![The SSO token
+highlighted](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGxyWf2HIoxxQX7jdXnu4%252FScreen%2520Shot%25202021-12-17%2520at%25201.38.26%2520PM.jpg%3Falt%3Dmedia%26token%3D76bdbef2-9f66-4af1-b5be-1b45eb16fc3e&width=300&dpr=4&quality=100&sign=f3cb3ff5&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mel7nEasV2-9PcLt28R%252F-MelAMU5H8NOjViHwkEl%252FScreen%2520Shot%25202020-12-24%2520at%25208.54.50%2520AM.png%3Falt%3Dmedia%26token%3D986e1183-a395-49ef-b472-fed9162bac13&width=768&dpr=4&quality=100&sign=89d92989&sv=2)
 

@@ -419,30 +419,6 @@ bridge/privilege-manager/setup?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Setup Steps
-  * Next Steps
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=XImANkhy5bPte8sWajcb&only=yes&limit=100)
-
-  1. [Privilege Manager](/en/keeperpam/privilege-manager)
-
-# Setup
-
-Installation and setup of Keeper Privileged Elevation and Delegation
-Management (PEDM)
-
-[PreviousOverview](/en/keeperpam/privilege-
-manager/overview)[NextDeployment](/en/keeperpam/privilege-manager/deployment)
-
-Last updated 17 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -473,6 +449,30 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Setup Steps
+  * Next Steps
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=XImANkhy5bPte8sWajcb&only=yes&limit=100)
+
+  1. [Privilege Manager](/en/keeperpam/privilege-manager)
+
+# Setup
+
+Installation and setup of Keeper Privileged Elevation and Delegation
+Management (PEDM)
+
+[PreviousOverview](/en/keeperpam/privilege-
+manager/overview)[NextDeployment](/en/keeperpam/privilege-manager/deployment)
+
+Last updated 17 days ago
+
+Was this helpful?
+
 ##
 
 Setup Steps
@@ -484,11 +484,6 @@ Follow the below steps to start using Keeper Privilege Manager.
 ###
 
 Keeper Enterprise license
-
-If you are not a Keeper customer or do not have the required license, you can
-[start a free trial](https://www.keepersecurity.com/password-manager-free-
-trial-sign-up.html) from our website. The free trial includes KeeperPAM full
-capabilities.
 
 2
 
@@ -525,11 +520,23 @@ Next Steps
 
 Now that Privilege Manager is activated, the next steps are:
 
-  * [Deployment](/en/keeperpam/privilege-manager/deployment) of the Agent
+  *   *   * 
 
-  * [Set Policies](/en/keeperpam/privilege-manager/policies) and
+If you are not a Keeper customer or do not have the required license, you can
+from our website. The free trial includes KeeperPAM full capabilities.
 
-  * [Manage Requests](/en/keeperpam/privilege-manager/managing-requests)
+of the Agent
+
+and
+
+[start a free trial](https://www.keepersecurity.com/password-manager-free-
+trial-sign-up.html)
+
+[Deployment](/en/keeperpam/privilege-manager/deployment)
+
+[Set Policies](/en/keeperpam/privilege-manager/policies)
+
+[Manage Requests](/en/keeperpam/privilege-manager/managing-requests)
 
 Activating the Privilege Manager permissions in the Admin Console
 

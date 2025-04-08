@@ -474,44 +474,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=KKuK2KfJkTA5AlB7Vd30&only=yes&limit=100)
 
 Rotate your Cisco IOS XE Network Credentials
 
-[PreviousNetwork Devices](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/network-devices)[NextCisco
-Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/network-devices/cisco-meraki)
-
-Last updated 1 month ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNVZBigfLQkEqpo7NRbCm%252Fkeeper%252Bcisco.jpg%3Falt%3Dmedia%26token%3D0c55f048-b8f9-4a31-b85a-a35704785196&width=768&dpr=4&quality=100&sign=d38663cf&sv=2)
 
 ##
 
@@ -581,6 +546,10 @@ user in the Cisco sandbox environment.
 
   * Select and launch the sandbox.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FsKGDVkuGrBiHuNJ3AClq%252FlaunchSandbox.png%3Falt%3Dmedia%26token%3D7599ad1b-2407-4ff2-9dc5-b5042c28f22c&width=768&dpr=4&quality=100&sign=238d2b41&sv=2)
+
 ###
 
 2\. Select and Launch the Device
@@ -591,12 +560,20 @@ user in the Cisco sandbox environment.
 
   * Launch the sandbox.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FUk4D21UR06M9YodJ3Wjp%252FselectDevice.png%3Falt%3Dmedia%26token%3Dfa01b157-ef5c-49c4-a22a-0c0dd7069fea&width=768&dpr=4&quality=100&sign=21cdd0df&sv=2)
+
 ###
 
 3\. Receive Details via Email or DevNet Environment
 
 After launching the sandbox, you will receive an email with the connection
 details or find them in the DevNet Environment under Quick Access.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLYaS5W0Bwz5coJI61XfI%252FquickAccess.png%3Falt%3Dmedia%26token%3Dd8ffbb9e-0755-46df-a0c5-9eaee35e3c38&width=768&dpr=4&quality=100&sign=231152d6&sv=2)
 
 ###
 
@@ -631,6 +608,10 @@ name in order to run the post-rotation script.
 
 Add a custom field named `host_endpoint` to the Cisco Authentication Record
 and set its value to the host address (e.g., `10.10.20.48`).
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FiZH4vZn8URbJ9WODUYmK%252Fiosxerecord1.png%3Falt%3Dmedia%26token%3Da7ab2845-0b56-498f-aa5c-f2a90dd28ce3&width=768&dpr=4&quality=100&sign=1addc2d4&sv=2)
 
 ###
 
@@ -672,6 +653,10 @@ Copy
     
         username <user> password <pass>
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FaRQLJLywM7uk4kmeGKIC%252Fcreateuser.png%3Falt%3Dmedia%26token%3Dda836e9a-0c94-478d-b84b-339d91e1e9a6&width=768&dpr=4&quality=100&sign=7bb19130&sv=2)
+
 ###
 
 10\. Test the New User
@@ -683,6 +668,10 @@ Copy
     
     
     ssh <user>@<device-ip>
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRoVLFYb2opp1KVWhPxSN%252Fuserlogin.png%3Falt%3Dmedia%26token%3D10c64fe3-3a4f-4da3-8278-05502050db50&width=768&dpr=4&quality=100&sign=4e6c0bf0&sv=2)
 
 > **Note:** Replace `<user>` with the username you created and `<device-ip>`
 > with the IP address of the Cisco device.
@@ -716,7 +705,7 @@ be rotated.
 
 Step 2: Add PAM Script
 
-  * 
+  * Attach the below [Python script ](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-ios-xe#python-script)that will perform the password rotation. The script has additional comments inside that describe each line.
 
 ###
 
@@ -925,6 +914,11 @@ Copy
 
 The above script for the Cisco Post-Rotation Script can be also found here:
 
+[https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
+Scripts/blob/main/cisco-ios-xe/update-cisco-
+user.pygithub.com](https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
+Scripts/blob/main/cisco-ios-xe/update-cisco-user.py)
+
 ##
 
 Rotating Cisco IOS XE Network User Credentials
@@ -936,46 +930,46 @@ user management portal, the authorized option should be selected as 'Yes'].
 After successfully setting up Rotation for your Cisco User Credentials on the
 PAM User Record, clicking on "Run Scripts Only" will rotate the credential:
 
-Attach the below that will perform the password rotation. The script has
-additional comments inside that describe each line.
-
-[https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
-Scripts/blob/main/cisco-ios-xe/update-cisco-
-user.pygithub.com](https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
-Scripts/blob/main/cisco-ios-xe/update-cisco-user.py)
-
-[Python script ](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/network-devices/cisco-ios-xe#python-script)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNVZBigfLQkEqpo7NRbCm%252Fkeeper%252Bcisco.jpg%3Falt%3Dmedia%26token%3D0c55f048-b8f9-4a31-b85a-a35704785196&width=768&dpr=4&quality=100&sign=d38663cf&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FsKGDVkuGrBiHuNJ3AClq%252FlaunchSandbox.png%3Falt%3Dmedia%26token%3D7599ad1b-2407-4ff2-9dc5-b5042c28f22c&width=768&dpr=4&quality=100&sign=238d2b41&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FUk4D21UR06M9YodJ3Wjp%252FselectDevice.png%3Falt%3Dmedia%26token%3Dfa01b157-ef5c-49c4-a22a-0c0dd7069fea&width=768&dpr=4&quality=100&sign=21cdd0df&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLYaS5W0Bwz5coJI61XfI%252FquickAccess.png%3Falt%3Dmedia%26token%3Dd8ffbb9e-0755-46df-a0c5-9eaee35e3c38&width=768&dpr=4&quality=100&sign=231152d6&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FiZH4vZn8URbJ9WODUYmK%252Fiosxerecord1.png%3Falt%3Dmedia%26token%3Da7ab2845-0b56-498f-aa5c-f2a90dd28ce3&width=768&dpr=4&quality=100&sign=1addc2d4&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FaRQLJLywM7uk4kmeGKIC%252Fcreateuser.png%3Falt%3Dmedia%26token%3Dda836e9a-0c94-478d-b84b-339d91e1e9a6&width=768&dpr=4&quality=100&sign=7bb19130&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRoVLFYb2opp1KVWhPxSN%252Fuserlogin.png%3Falt%3Dmedia%26token%3D10c64fe3-3a4f-4da3-8278-05502050db50&width=768&dpr=4&quality=100&sign=4e6c0bf0&sv=2)
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRRYBEPpIfPAVvrrKi9eN%252Fiosxerecord2.png%3Falt%3Dmedia%26token%3D0de5352d-e11d-4aa8-b769-4b2019adb1dd&width=768&dpr=4&quality=100&sign=dd923666&sv=2)
+
+[PreviousNetwork Devices](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/network-devices)[NextCisco
+Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/network-devices/cisco-meraki)
+
+Last updated 1 month ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

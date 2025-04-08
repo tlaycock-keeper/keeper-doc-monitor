@@ -455,6 +455,86 @@ PDF](/en/keeperpam/~gitbook/pdf?page=bE1GVrkhESJiVZ0pmgRt&only=yes&limit=100)
 
 How to use Breachwatch Dark Web scanning in Keeper Commander
 
+##
+
+Commands
+
+Command
+
+Description
+
+`breachwatch`
+
+Run a Breachwatch dark web scan of your records or password
+
+###
+
+Breachwatch Command
+
+Requires the [Breachwatch ](https://docs.keeper.io/enterprise-
+guide/breachwatch)addon
+
+**Command:** `breachwatch` or `bw`
+
+**Detail** : Run a Breachwatch dark web scan of your records or password
+
+**Actions** :
+
+`list` Displays a list of breached passwords
+
+  * `--all`, `-a` display all breached passwords (including ignored) -- **note** : if this flag is omitted, only the first 30 records are shown if the total count exceeds 32 
+
+  * `--owned`, `-o` display only breached records owned by user 
+
+`ignore <UID>` Ignores breached passwords. Accepts multiple passwords
+separated by a space
+
+`password <password>` Check a password against our database of breached
+accounts. Accepts multiple passwords separated by a space
+
+`scan` Perform a Breachwatch scan
+
+`report` Run a Breachwatch security report for users in your enterprise
+(Equivalent to [`security-audit-report
+--breachwatch`](https://docs.keeper.io/secrets-manager/commander-cli/command-
+reference/reporting-commands#security-audit-report-command); Valid only for
+enterprise admin accounts)
+
+**Examples:**
+
+Copy
+
+    
+    
+    breachwatch
+    breachwatch scan
+    breachwatch list
+    bw password n5@x85tG#gH7& my_dog_21
+    bw ignore qUX4gSrtDRfM1Kq9lrQi-w
+    bw report
+
+  1. See a summary of Breachwatch commands
+
+  2. Run a Breachwatch dark web scan and show which passwords are breached
+
+  3. List any records which have been marked as breached (and not ignored)
+
+  4. Check the passwords "n5@x85tG#gH7&" and "my _dog_ 21" for breaches using Breachwatch
+
+  5. Ignore the breached record with the given UID
+
+  6. Run a Breachwatch security report on users in your enterprise (only for admin accounts)
+
+####
+
+Automatic Scans
+
+If Breachwatch is enabled for your Keeper account, a Breachwatch scan is
+performed automatically when you login to Keeper Commander.
+
+Additionally, if you create or edit a record, a scan is automatically
+performed on the record.
+
 [PreviousCompliance Commands](/en/keeperpam/commander-cli/command-
 reference/enterprise-management-commands/compliance-commands)[NextSCIM Push
 Configuration](/en/keeperpam/commander-cli/command-reference/enterprise-
@@ -493,86 +573,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-##
-
-Commands
-
-Command
-
-Description
-
-`breachwatch`
-
-Run a Breachwatch dark web scan of your records or password
-
-###
-
-Breachwatch Command
-
-Requires the addon
-
-**Command:** `breachwatch` or `bw`
-
-**Detail** : Run a Breachwatch dark web scan of your records or password
-
-**Actions** :
-
-`list` Displays a list of breached passwords
-
-  * `--all`, `-a` display all breached passwords (including ignored) -- **note** : if this flag is omitted, only the first 30 records are shown if the total count exceeds 32 
-
-  * `--owned`, `-o` display only breached records owned by user 
-
-`ignore <UID>` Ignores breached passwords. Accepts multiple passwords
-separated by a space
-
-`password <password>` Check a password against our database of breached
-accounts. Accepts multiple passwords separated by a space
-
-`scan` Perform a Breachwatch scan
-
-`report` Run a Breachwatch security report for users in your enterprise
-(Equivalent to ; Valid only for enterprise admin accounts)
-
-**Examples:**
-
-Copy
-
-    
-    
-    breachwatch
-    breachwatch scan
-    breachwatch list
-    bw password n5@x85tG#gH7& my_dog_21
-    bw ignore qUX4gSrtDRfM1Kq9lrQi-w
-    bw report
-
-  1. See a summary of Breachwatch commands
-
-  2. Run a Breachwatch dark web scan and show which passwords are breached
-
-  3. List any records which have been marked as breached (and not ignored)
-
-  4. Check the passwords "n5@x85tG#gH7&" and "my _dog_ 21" for breaches using Breachwatch
-
-  5. Ignore the breached record with the given UID
-
-  6. Run a Breachwatch security report on users in your enterprise (only for admin accounts)
-
-####
-
-Automatic Scans
-
-If Breachwatch is enabled for your Keeper account, a Breachwatch scan is
-performed automatically when you login to Keeper Commander.
-
-Additionally, if you create or edit a record, a scan is automatically
-performed on the record.
-
-[Breachwatch ](https://docs.keeper.io/enterprise-guide/breachwatch)
-
-[`security-audit-report --breachwatch`](https://docs.keeper.io/secrets-
-manager/commander-cli/command-reference/reporting-commands#security-audit-
-report-command)
 

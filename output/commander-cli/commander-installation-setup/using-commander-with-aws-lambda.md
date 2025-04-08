@@ -855,12 +855,6 @@ Commander automatically creates the required parameters when you login to the
 CLI. The easiest way to generate the required parameters is to login to the
 Commander CLI on your machine.
 
-To get the Commander parameters, open the generated config.json file. By
-default this is located in the `Users/[your username]/.keeper/` folder on your
-machine. See the[ config file documentation ](/en/keeperpam/commander-
-cli/commander-installation-setup/logging-in#commander-configuration-file)for
-more information.
-
 You should see a file that looks similar to this:
 
 Copy
@@ -1014,10 +1008,6 @@ Keeper processes.
 For some examples of using the Commander SDK code, see the example scripts in
 the Commander GitHub repo:
 
-[![Logo](https://github.com/fluidicon.png)Commander/examples at master ·
-Keeper-Security/CommanderGitHub](https://github.com/Keeper-
-Security/Commander/tree/master/examples)
-
 To learn more about Commander's various methods, see the Command Reference
 section.
 
@@ -1062,10 +1052,21 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+To get the Commander parameters, open the generated config.json file. By
+default this is located in the `Users/[your username]/.keeper/` folder on your
+machine. See thefor more information.
+
 [![Logo](https://a0.awsstatic.com/libra-css/images/site/touch-icon-
 ipad-144-smile.png)Send email using Lambda and Amazon SESAmazon Web Services,
 Inc.](https://aws.amazon.com/premiumsupport/knowledge-center/lambda-send-
 email-ses/)
+
+[![Logo](https://github.com/fluidicon.png)Commander/examples at master ·
+Keeper-Security/CommanderGitHub](https://github.com/Keeper-
+Security/Commander/tree/master/examples)
+
+[ config file documentation ](/en/keeperpam/commander-cli/commander-
+installation-setup/logging-in#commander-configuration-file)
 
 [2KBpackage_layer_content.sh](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
 x-

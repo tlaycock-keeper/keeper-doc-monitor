@@ -569,6 +569,10 @@ psql --host=${cmdr:host} --port=${cmdr:port} --username=${login}
 
 Here's a screenshot of the Keeper Vault record for this use case:
 
+For more information on the `connect` command, see the
+[documentation](/en/keeperpam/commander-cli/command-
+reference/plugins/password-rotation#connect-command)
+
 [PreviousOracle Plugin](/en/keeperpam/commander-cli/command-
 reference/plugins/oracle-plugin)[NextPSPasswd Plugin](/en/keeperpam/commander-
 cli/command-reference/plugins/pspasswd-plugin)
@@ -606,11 +610,6 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-For more information on the `connect` command, see the
-
-[documentation](/en/keeperpam/commander-cli/command-
-reference/plugins/password-rotation#connect-command)
 
 Commander will use the login and password to login to the PostgreSQL account
 

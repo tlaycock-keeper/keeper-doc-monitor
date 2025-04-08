@@ -529,7 +529,7 @@ manager>[](https://docs.keeper.io/en/keeper-connection-manager)
 manager/discovery/discovery-using-the-
 vault)[NextReferences](/en/keeperpam/privileged-access-manager/references)
 
-Last updated 19 days ago
+Last updated 20 days ago
 
 Was this helpful?
 

@@ -684,15 +684,15 @@ A Keeper  with secrets shared to it
 
 See the  for instructions on creating an Application
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
 [![Logo](https://docs.microsoft.com/favicon.ico)Apps & service principals in
 Azure AD - Microsoft identity platformdocsmsft](https://docs.microsoft.com/en-
 us/azure/active-directory/develop/app-objects-and-service-principals)
 
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

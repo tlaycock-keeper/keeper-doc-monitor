@@ -576,14 +576,6 @@ Keeper utilizes best-in-class security with a Zero-Knowledge security
 architecture and Zero-Trust framework. Technical documentation about Keeper's
 Zero-Knowledge encryption model can be found at the links below:
 
-[Keeper Encryption Model](https://docs.keeper.io/enterprise-guide/keeper-
-encryption-model)
-
-[Secrets Manager Encryption Model](https://docs.keeper.io/enterprise-
-guide/keeper-encryption-model#secrets-manager-encryption-model)
-
-[Security Disclosure Page](https://keepersecurity.com/security)
-
 Keeper is SOC 2 Type 2, ISO27001 certified. Customers may request access to
 our certification reports and technical architecture documentation under
 mutual NDA.
@@ -591,11 +583,6 @@ mutual NDA.
 ###
 
 Vulnerability Disclosure Program
-
-Keeper has partnered with Bugcrowd to manage our vulnerability disclosure
-program. Please submit reports through
-<https://bugcrowd.com/keepersecurity>[](https://bugcrowd.com/keepersecurity)
-or send an email to security@keepersecurity.com.
 
 [PreviousTerminology](/en/keeperpam/secrets-manager/about/terminology)[NextOne
 Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
@@ -633,4 +620,18 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+Keeper has partnered with Bugcrowd to manage our vulnerability disclosure
+program. Please submit reports through  or send an email to
+security@keepersecurity.com.
+
+[Keeper Encryption Model](https://docs.keeper.io/enterprise-guide/keeper-
+encryption-model)
+
+[Secrets Manager Encryption Model](https://docs.keeper.io/enterprise-
+guide/keeper-encryption-model#secrets-manager-encryption-model)
+
+[Security Disclosure Page](https://keepersecurity.com/security)
+
+<https://bugcrowd.com/keepersecurity>[](https://bugcrowd.com/keepersecurity)
 

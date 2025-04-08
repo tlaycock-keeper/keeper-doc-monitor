@@ -549,7 +549,7 @@ Copy
 manager/integrations/terraform)[NextXSOAR](/en/keeperpam/secrets-
 manager/integrations/xsoar)
 
-Last updated 17 days ago
+Last updated 18 days ago
 
 Was this helpful?
 

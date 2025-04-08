@@ -809,14 +809,14 @@ Setup is complete.
 
 are set
 
-[Environment variables](/en/keeperpam/privileged-access-manager/ssh-
-agent#configuring-your-terminal-for-keeper-ssh-agent)
-
 [Authentication](/en/keeperpam/privileged-access-manager/ssh-
 agent/integration-with-git#github-authentication)
 
 [Signing Commits](/en/keeperpam/privileged-access-manager/ssh-
 agent/integration-with-git#signing-key)
+
+[Environment variables](/en/keeperpam/privileged-access-manager/ssh-
+agent#configuring-your-terminal-for-keeper-ssh-agent)
 
 Keeper SSH Key for Github Authentication
 

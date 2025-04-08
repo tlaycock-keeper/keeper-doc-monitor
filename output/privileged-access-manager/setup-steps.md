@@ -439,7 +439,7 @@ Accessing the KeeperPAM platform
 [PreviousOverview](/en/keeperpam)[NextQuick Start:
 Sandbox](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
 
-Last updated 18 days ago
+Last updated 19 days ago
 
 Was this helpful?
 

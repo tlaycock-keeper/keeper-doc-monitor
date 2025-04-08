@@ -425,46 +425,29 @@ manager/integrations/docker-writer-image?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
+
+  * Overview
+  * Parameters
+  * Secrets List
+  * Secret File Type
+  * Examples
+  * Kubernetes
+  * Docker Compose
+  * Docker Command Line
+  * 
 
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=GOhTkruLbwNFJRYswt8U&only=yes&limit=100)
 
-Last updated 1 month ago
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
 
-Was this helpful?
+# Docker Writer Image
+
+A general purpose docker image to retrieve secrets.
 
 ##
 
@@ -475,11 +458,29 @@ also generate a file containing secrets.
 
 The image can be pulled with the following command:
 
+Copy
+
+    
+    
+    $ docker pull keeper/keeper-secrets-manager-writer
+
 When run, its parameters are passed in via environmental variables.
+
+Copy
+
+    
+    
+    $ docker run \
+        -v $PWD:/wd --workdir /wd \
+        -e "KSM_CONFIG=BASE64 CONFIG" \
+        -e "SECRETS=JfXpSQ2nZG6lkdl1rxB0dg/file/example.crt > file:example.crt"
+        keeper/keeper-secrets-manager-writer
 
 The writer is used to copy files from the vault and to create files containing
 secrets. Due to writing information to disk, there is always risk of exposure.
-An alternative is the  image and the `exec `command.
+An alternative is the [keeper/keeper-secrets-manager-
+cli](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/docker-container) image and the `exec `command.
 
 ##
 
@@ -492,12 +493,48 @@ Parameter
 
 Description
 
+`KSM_CONFIG`
+
+A base64 encode configuration file.
+
+`SECRETS`
+
+A line-feed separated list of Keeper notation and destinations.
+
+`SECRETS_FILE`
+
+A filename to write the non-file destination secrets.
+
+`SECRETS_FILE_TYPE`
+
+The format of the secrets file. Valid format are export, setenv, set, and
+JSON. JSON is the default.
+
+`CLEANUP_FILE`
+
+If set, all files created will be added to the shell file to be removed when
+executed. This file can be executed to remove the files created.
+
 ##
 
 Secrets List
 
 The `SECRETS` are a list of Keeper Notation and destinations. The values are
 separated by line feeds. For example:
+
+Copy
+
+    
+    
+    fXpSQ2nZG6lkdl1rxB0dg/file/example.crt > file:example.crt
+    cl9a9k0DWP-Iy227rBo5gQ/field/login > MY_LOGIN
+    gpsBL343CVYMFgOKZ-L2hQ/custom_field/Ip Address > IP_ADDR
+
+Each line is "[Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-
+notation) > destination". The destination can be either an environmental
+variable/JSON key or a file path and name. If a file, the path is prefixed
+with the text `file:`. It is recommended not to place binary data into an
+environmental variable due to unknown string encoding.
 
 ###
 
@@ -529,60 +566,9 @@ some examples.
 
 Kubernetes
 
-In this container, the writer image is used to save a file and create a
-secrets file that the main container can access. This can be done by mounting
-a volume, writing the files, and then having the main container mount the same
-value. The pod's emptyDir is a good choice.
-
-###
-
-Docker Compose
-
-By using the `depends_on` options in the **main** service, the Docker Writer
-Image for KSM can be used in the initialization service. In the example below,
-the Docker Writer pulls secrets from the vault and shares them on a volume
-mount to the main image.
-
-Normally services start in parallel, however by using the `depends_on` option
-the service startup can be controlled. In the above, the **main** service
-depends on the **init** service.
-
-The **init** service will start, retrieve and save the files into the keys-
-volume, then exit. By using the condition `service_completed_successfully`,
-when the **init** service successfully exits, it will start the **main**
-service. The **main** service will also mount the `keys-volume` and use the
-stored keys.
-
-###
-
-Docker Command Line
-
-The writer image can be executed in the command line by using `docker run`.
-
-If `SECRETS` has multiple secrets, the line-feed character (\n) is hard to
-represent. The solution is to surround the `--env,-e` value with $". For
-example
-
-Between **file:my.png** and the next record UID, there is a '\n'. If you don't
-wrap the entire value with $'' the my.png file name will include the escape
-line feed and the next record UID.
-
-###
-
-Each line is " > destination". The destination can be either an environmental
-variable/JSON key or a file path and name. If a file, the path is prefixed
-with the text `file:`. It is recommended not to place binary data into an
-environmental variable due to unknown string encoding.
-
-The writer image is best used in an .
-
-Copy
-
-    
-    
-    fXpSQ2nZG6lkdl1rxB0dg/file/example.crt > file:example.crt
-    cl9a9k0DWP-Iy227rBo5gQ/field/login > MY_LOGIN
-    gpsBL343CVYMFgOKZ-L2hQ/custom_field/Ip Address > IP_ADDR
+The writer image is best used in an [Init
+Container](https://kubernetes.io/docs/concepts/workloads/pods/init-
+containers/).
 
 Copy
 
@@ -597,6 +583,20 @@ Copy
                 qCAw9dMQgr3Hs7EdfFpfkA/field/password > my_password
                 qCAw9dMQgr3Hs7EdfFpfkA/file/exmaple.crt > file:/etc/keys/example.crt
                 qCAw9dMQgr3Hs7EdfFpfkA/file/exmaple.key > file:/etc/keys/example.key
+
+In this container, the writer image is used to save a file and create a
+secrets file that the main container can access. This can be done by mounting
+a volume, writing the files, and then having the main container mount the same
+value. The pod's emptyDir is a good choice.
+
+###
+
+Docker Compose
+
+By using the `depends_on` options in the **main** service, the Docker Writer
+Image for KSM can be used in the initialization service. In the example below,
+the Docker Writer pulls secrets from the vault and shares them on a volume
+mount to the main image.
 
 Copy
 
@@ -632,6 +632,22 @@ Copy
     volumes:
       keys-volume:
 
+Normally services start in parallel, however by using the `depends_on` option
+the service startup can be controlled. In the above, the **main** service
+depends on the **init** service.
+
+The **init** service will start, retrieve and save the files into the keys-
+volume, then exit. By using the condition `service_completed_successfully`,
+when the **init** service successfully exits, it will start the **main**
+service. The **main** service will also mount the `keys-volume` and use the
+stored keys.
+
+###
+
+Docker Command Line
+
+The writer image can be executed in the command line by using `docker run`.
+
 Copy
 
     
@@ -642,76 +658,57 @@ Copy
         -e "SECRETS=JfXpSQ2nZG6lkdl1rxB0dg/file/example.crt > file:example.crt"
         keeper/keeper-secrets-manager-writer
 
+If `SECRETS` has multiple secrets, the line-feed character (\n) is hard to
+represent. The solution is to surround the `--env,-e` value with $". For
+example
+
 Copy
 
     
     
     -e $'SECRETS=V8lFbio0Bs0LuvaSD5DDHA/file/IMG_0036.png > file:my.png\nIumwT1QYRr8TTCtY8rqzhw/custom_field/S3_BUCKET > s3'
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+Between **file:my.png** and the next record UID, there is a '\n'. If you don't
+wrap the entire value with $'' the my.png file name will include the escape
+line feed and the next record UID.
 
-# Docker Writer Image
-
-A general purpose docker image to retrieve secrets.
+###
 
 [PreviousDocker Runtime](/en/keeperpam/secrets-manager/integrations/docker-
 runtime)[NextEntrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-
 hsm)
 
-  * Overview
-  * Parameters
-  * Secrets List
-  * Secret File Type
-  * Examples
-  * Kubernetes
-  * Docker Compose
-  * Docker Command Line
-  * 
+Last updated 1 month ago
 
-Copy
+Was this helpful?
 
-    
-    
-    $ docker pull keeper/keeper-secrets-manager-writer
+#### Company
 
-Copy
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-    
-    
-    $ docker run \
-        -v $PWD:/wd --workdir /wd \
-        -e "KSM_CONFIG=BASE64 CONFIG" \
-        -e "SECRETS=JfXpSQ2nZG6lkdl1rxB0dg/file/example.crt > file:example.crt"
-        keeper/keeper-secrets-manager-writer
+#### Support
 
-`KSM_CONFIG`
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-A base64 encode configuration file.
+#### Solutions
 
-`SECRETS`
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-A line-feed separated list of Keeper notation and destinations.
+#### Pricing
 
-`SECRETS_FILE`
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
-A filename to write the non-file destination secrets.
-
-`SECRETS_FILE_TYPE`
-
-The format of the secrets file. Valid format are export, setenv, set, and
-JSON. JSON is the default.
-
-`CLEANUP_FILE`
-
-If set, all files created will be added to the shell file to be removed when
-executed. This file can be executed to remove the files created.
-
-[keeper/keeper-secrets-manager-cli](/en/keeperpam/secrets-manager/secrets-
-manager-command-line-interface/docker-container)
-
-[Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-notation)
-
-[Init Container](https://kubernetes.io/docs/concepts/workloads/pods/init-
-containers/)
+© 2025 Keeper Security, Inc.
 

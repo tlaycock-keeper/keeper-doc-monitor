@@ -643,6 +643,9 @@ Administrative Credential Record
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
 
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
 For this protocol, both graphical and the full, raw text text content of
 terminal sessions, including timing information, are recorded. For more
 information on recordings and how to access these recordings, visit this .
@@ -653,7 +656,4 @@ information on recordings and how to access these recordings, visit this .
 
 [Session Recording and Playback](/en/keeperpam/privileged-access-
 manager/session-recording-and-playback)
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
 
