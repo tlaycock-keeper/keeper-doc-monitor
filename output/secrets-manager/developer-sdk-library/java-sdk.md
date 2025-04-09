@@ -241,13 +241,13 @@ library/java-sdk?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -2104,9 +2104,6 @@ notation)
 [class](/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk/record-
 field-classes)
 
-[uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/java-
-sdk#upload-a-file)
-
 [Record Types](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
 
@@ -2115,4 +2112,7 @@ commands/default-record-types#field-types)
 
 [documentation](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
+
+[uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/java-
+sdk#upload-a-file)
 

@@ -249,13 +249,13 @@ operator?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -460,11 +460,43 @@ PDF](/en/keeperpam/~gitbook/pdf?page=RPjLgrM00UVfnUtodlWt&only=yes&limit=100)
 Synchronize Secrets from Keeper Secrets Manager with the K8s External Secrets
 Operator
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTuTzLzBatbwf6hlcKEGt%252Fksm-
-externalsecrets-
-kubernetes.jpg%3Falt%3Dmedia%26token%3D16302139-00a4-4e61-8c25-8d24f83c911b&width=768&dpr=4&quality=100&sign=daa2aa25&sv=2)
+[PreviousKeeper Connection Manager](/en/keeperpam/secrets-
+manager/integrations/keeper-connection-manager)[NextKubernetes
+(alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
+
+Last updated 5 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -871,41 +903,9 @@ Remember to replace all placeholders in the command snippets with your
 specific information, and don't hesitate to refer back to this guide anytime
 you need to set up or manage your External Secrets in Kubernetes.
 
-[PreviousKeeper Connection Manager](/en/keeperpam/secrets-
-manager/integrations/keeper-connection-manager)[NextKubernetes
-(alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
-
-Last updated 5 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTuTzLzBatbwf6hlcKEGt%252Fksm-
+externalsecrets-
+kubernetes.jpg%3Falt%3Dmedia%26token%3D16302139-00a4-4e61-8c25-8d24f83c911b&width=768&dpr=4&quality=100&sign=daa2aa25&sv=2)
 

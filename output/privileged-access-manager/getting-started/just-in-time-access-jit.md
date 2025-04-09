@@ -243,13 +243,13 @@ manager/getting-started/just-in-time-access-jit?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -450,11 +450,43 @@ PDF](/en/keeperpam/~gitbook/pdf?page=P4mxhHJo4uLZTG8oXksk&only=yes&limit=100)
 
 KeeperPAM Just-In-Time Access and Zero Standing Privilege
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FB5kDk5IAVTfFolQv0SHB%252FJust-
-in-
-time%2520access.jpg%3Falt%3Dmedia%26token%3Da90e3139-f25c-496d-b9de-8f8fa64bd644&width=768&dpr=4&quality=100&sign=9db1f8d7&sv=2)
+[PreviousSharing and Access Control](/en/keeperpam/privileged-access-
+manager/getting-started/sharing-and-access-control)[NextPassword
+Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+
+Last updated 22 hours ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -552,13 +584,7 @@ only for the duration of a privileged session.
 The Keeper Gateway is responsible for creating a temporary account on the
 target using the selected account type.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9iFf2XyKCvhd7CwXAN5c%252FJIT%2520ephemeral%2520account.png%3Falt%3Dmedia%26token%3Dc3275652-72b8-47da-b8a6-6d3efb88699a&width=768&dpr=4&quality=100&sign=c5fc4fe8&sv=2)
-
-Just-In-Time Ephemeral Account Creation during PAM Sessions
-
-Keeper can create temporary accounts on any assigned target resource, such as:
+Keeper can create ephemeral accounts on any assigned target resource, such as:
 
   * Active Directory / LDAP User
 
@@ -584,21 +610,15 @@ In the input field, provide Keeper with the identifier of the group or role to
 elevate during the connection. E.g. for Windows this might be “Administrators”
 and for AWS this would be the full ARN (e.g. `arn:aws:iam::12345:role/Admin`).
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fu8W0Y406cAePSP7Ds8Ph%252FJIT%2520Updated%2520-%2520Elevation.png%3Falt%3Dmedia%26token%3Dc23eecae-c7b9-480f-880a-df7ef7b9b0e3&width=768&dpr=4&quality=100&sign=d922cfcf&sv=2)
-
-Just-In-Time Role Elevation during Privileged Sessions
-
 * * *
 
 ###
 
 Just-in-Time Elevated Access on Endpoints using PEDM
 
-[Keeper Privilege Manager](/en/keeperpam/privilege-manager/overview) extends
-JIT capabilities to end-user devices, allowing for precise privilege elevation
-for specific processes, applications, or tasks without granting full
+[Keeper Privilege Manager](/en/keeperpam/endpoint-privilege-manager/overview)
+extends JIT capabilities to end-user devices, allowing for precise privilege
+elevation for specific processes, applications, or tasks without granting full
 administrative access.
 
 **Key Features:**
@@ -623,15 +643,9 @@ administrative access.
 
   5. Full audit trails capture all elevation activities
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtT2ZNiogZn4kZ9tGexxp%252FRequests.png%3Falt%3Dmedia%26token%3D82c4148a-83b4-49e9-8716-502fe89884eb&width=768&dpr=4&quality=100&sign=e8689d0&sv=2)
-
-Just-In-Time Access with Keeper Privilege Manager
-
 For more information see:
 
-  * [Keeper Privilege Manager](/en/keeperpam/privilege-manager/overview)
+  * [Keeper Privilege Manager](/en/keeperpam/endpoint-privilege-manager/overview)
 
 * * *
 
@@ -665,12 +679,6 @@ rotation.
 To provide time-limited access to a resource, open the resource from the vault
 and select **Sharing**. Add the user as a share recipient, and select **Set
 Expiration**.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGk3XjDE5ORcq6Prd1lje%252FScreenshot%25202025-03-21%2520at%25209.29.03%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Da65b53e1-d7f3-44e5-9d33-d7654db7243e&width=768&dpr=4&quality=100&sign=f663d2ab&sv=2)
-
-Time-Limited Access
 
 For more information see:
 
@@ -713,13 +721,6 @@ ensuring proper oversight of privileged access.
 
   * User-specific approval requirements
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWkIRRG35dLvClY5Rnq4J%252FPAM%2520Settings%2520-%2520Workflow.png%3Falt%3Dmedia%26token%3De7d0e549-6267-40c8-bbcf-
-cb929b534bc0&width=768&dpr=4&quality=100&sign=88359820&sv=2)
-
-Workflow and Requests for Approval
-
 ###
 
 Implementation Best Practices
@@ -750,44 +751,43 @@ For more information on specific JIT use cases or implementation guidance,
 contact your Keeper Security account manager or email
 [pam@keepersecurity.com](mailto:pam@keepersecurity.com).
 
-[PreviousSharing and Access Control](/en/keeperpam/privileged-access-
-manager/getting-started/sharing-and-access-control)[NextPassword
-Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-
-Last updated 17 days ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 [Time-Limited Access](https://docs.keeper.io/en/enterprise-guide/sharing/time-
 limited-access)
+
+Just-In-Time Ephemeral Account Creation during PAM Sessions
+
+Just-In-Time Role Elevation during Privileged Sessions
+
+Just-In-Time Access with Keeper Privilege Manager
+
+Time-Limited Access
+
+Workflow and Requests for Approval
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FB5kDk5IAVTfFolQv0SHB%252FJust-
+in-
+time%2520access.jpg%3Falt%3Dmedia%26token%3Da90e3139-f25c-496d-b9de-8f8fa64bd644&width=768&dpr=4&quality=100&sign=9db1f8d7&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9iFf2XyKCvhd7CwXAN5c%252FJIT%2520ephemeral%2520account.png%3Falt%3Dmedia%26token%3Dc3275652-72b8-47da-b8a6-6d3efb88699a&width=768&dpr=4&quality=100&sign=c5fc4fe8&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fu8W0Y406cAePSP7Ds8Ph%252FJIT%2520Updated%2520-%2520Elevation.png%3Falt%3Dmedia%26token%3Dc23eecae-c7b9-480f-880a-df7ef7b9b0e3&width=768&dpr=4&quality=100&sign=d922cfcf&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtT2ZNiogZn4kZ9tGexxp%252FRequests.png%3Falt%3Dmedia%26token%3D82c4148a-83b4-49e9-8716-502fe89884eb&width=768&dpr=4&quality=100&sign=e8689d0&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGk3XjDE5ORcq6Prd1lje%252FScreenshot%25202025-03-21%2520at%25209.29.03%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Da65b53e1-d7f3-44e5-9d33-d7654db7243e&width=768&dpr=4&quality=100&sign=f663d2ab&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWkIRRG35dLvClY5Rnq4J%252FPAM%2520Settings%2520-%2520Workflow.png%3Falt%3Dmedia%26token%3De7d0e549-6267-40c8-bbcf-
+cb929b534bc0&width=768&dpr=4&quality=100&sign=88359820&sv=2)
 

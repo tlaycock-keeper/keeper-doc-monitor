@@ -243,13 +243,13 @@ manager/integrations/ansible?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -510,14 +510,14 @@ plugin)
 How to use Keeper Secrets Manager to fetch secret credentials and files in
 your Ansible Playbooks
 
-Store Keeper Secrets Manager configuration credentials in Ansible Tower and
-create reusable playbook templates that utilize Keeper Secrets Manager
-features.
-
 ###
 
 [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible#ansible-
 tower)
+
+Store Keeper Secrets Manager configuration credentials in Ansible Tower and
+create reusable playbook templates that utilize Keeper Secrets Manager
+features.
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

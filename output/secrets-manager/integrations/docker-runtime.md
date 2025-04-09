@@ -243,13 +243,13 @@ manager/integrations/docker-runtime?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -923,7 +923,7 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLOXFweD2U
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaFttUeoqctfkrfD8p%252FScreen%2520Shot%25202021-07-27%2520at%252012.38.59%2520AM.png%3Falt%3Dmedia%26token%3D3003edef-5d7b-4b46-b1a0-6530b0ac2fc1&width=768&dpr=4&quality=100&sign=cdc4ea8e&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaGNVzjx_czbCfPevb%252FScreen%2520Shot%25202021-07-27%2520at%252012.42.06%2520AM.png%3Falt%3Dmedia%26token%3D9ff5b9f8-7222-425a-b10c-e69b3208090a&width=768&dpr=4&quality=100&sign=792106f&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -931,5 +931,5 @@ files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaGj5
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaGNVzjx_czbCfPevb%252FScreen%2520Shot%25202021-07-27%2520at%252012.42.06%2520AM.png%3Falt%3Dmedia%26token%3D9ff5b9f8-7222-425a-b10c-e69b3208090a&width=768&dpr=4&quality=100&sign=792106f&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaFttUeoqctfkrfD8p%252FScreen%2520Shot%25202021-07-27%2520at%252012.38.59%2520AM.png%3Falt%3Dmedia%26token%3D3003edef-5d7b-4b46-b1a0-6530b0ac2fc1&width=768&dpr=4&quality=100&sign=cdc4ea8e&sv=2)
 

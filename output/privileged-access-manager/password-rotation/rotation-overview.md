@@ -243,13 +243,13 @@ manager/password-rotation/rotation-overview?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -509,7 +509,15 @@ Prior to setting up password rotation, make sure to have the following set up:
 
   * Learn about KeeperPAM in the [Getting Started](/en/keeperpam/privileged-access-manager/getting-started) section
 
-  *   *   *   *   * 
+  * [Enable Enforcement Policies](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enable-enforcement-policies)
+
+  * [Deploy a Keeper Gateway](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#deploy-a-keeper-gateway)
+
+  * [Create a PAM User record](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#create-a-pam-user-record)
+
+  * [Create a PAM Resource](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#create-a-pam-resource)
+
+  * [Configure rotation settings](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#configure-rotation-settings)
 
 ###
 
@@ -635,6 +643,109 @@ A PAM Resource represents a Machine, Database or Directory.
 
 Configure rotation settings
 
+On the "Rotation Settings" section of the PAM User vault record, you can
+configure how credential rotation is managed.
+
+###
+
+Password Rotation Settings
+
+Field
+
+Description
+
+Required
+
+Rotation Type
+
+Specifies which type of rotation is being performed (and which protocol is
+utilized).
+
+**Required** "General", "IAM User" or "Run PAM Scripts Only". See below for
+details.
+
+PAM Resource
+
+For General rotation type, specifies the PAM Resource record which can provide
+the necessary privilege. For IAM User rotation type, specifies the PAM
+Configuration utilizing cloud APIs.
+
+**Required** only for "General" and "IAM User" rotation types
+
+Rotation Schedule
+
+Rotation can be performed on-demand or on a specific schedule.
+
+Password Complexity
+
+Applies to password-based rotations, not PEM keys.
+
+Select "Show More" to control special characters and symbols.
+
+###
+
+Rotation Type
+
+Keeper supports 3 different types of rotation:
+
+  * **General:** Uses native protocols for performing the rotation, such as LDAP, Databases, SSH keys, etc.
+
+  * **IAM User:** Uses the cloud-specific APIs for performing rotation, such as AWS IAM users and Azure managed resources. In this case, only the PAM Configuration is required since it contains the necessary 
+
+  * **Run PAM scripts only:** Skips the standard rotation and only executes the attached PAM Scripts.
+
+###
+
+PAM Resource
+
+To complete the Rotation setup, you need to select a resource, which depends
+on the rotation type.
+
+For a "General" rotation, the Keeper Gateway uses a native protocol for
+performing the necessary rotation, and the rotation will be executed on the
+associated PAM Resource supplied. If necessary, the rotation will use the
+associated administrative credential on the PAM Resource.
+
+In the example below, a Windows service account password is going to be
+rotated on the associated Windows Server.
+
+For an "IAM User" rotation type, the Keeper Gateway will use the referenced
+PAM Configuration to determine which APIs and methods are used to perform the
+rotation. In the example below, an IAM user in AWS will use the "AWS (US-
+WEST-1)" configuration.
+
+When using the IAM User rotation method, it is assumed that the Keeper Gateway
+either inherits its privilege from the instance role policy, or through
+explicit access keys that are provided on the PAM Configuration record.
+
+###
+
+In Summary:
+
+  * The PAM User record holds the credential that is being rotated.
+
+  * The Rotation Settings of the PAM User record references a specific PAM Machine, PAM Database or PAM Directory resource. This is the target resource where the rotation is performed.
+
+  * The Keeper Gateway uses the Admin Credential associated to the PAM Machine, PAM Database or PAM Directory resource to perform the rotation with native protocols.
+
+  * For AWS and Azure managed resources, Keeper uses Instance Role permission of the Gateway, or specific PAM Configuration secrets to perform the rotation with APIs.
+
+###
+
+Examples
+
+Below are some examples of PAM User records.
+
+  * Windows Domain Admin
+
+  * Windows Domain User with post-rotation scripts
+
+  * AWS IAM User
+
+  * Database user
+
+  * Azure AD User
+
 ##
 
 Record Types for Rotation
@@ -758,124 +869,6 @@ Record Import
 Keeper supports importing in bulk from JSON format. See the [Importing PAM
 Records](/en/keeperpam/privileged-access-manager/references/importing-pam-
 records) section for more details.
-
-[Enable Enforcement Policies](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-overview#enable-enforcement-policies)
-
-[Deploy a Keeper Gateway](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-overview#deploy-a-keeper-gateway)
-
-[Create a PAM User record](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-overview#create-a-pam-user-record)
-
-[Create a PAM Resource](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-overview#create-a-pam-resource)
-
-[Configure rotation settings](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-overview#configure-rotation-settings)
-
-On the "Rotation Settings" section of the PAM User vault record, you can
-configure how credential rotation is managed.
-
-###
-
-Password Rotation Settings
-
-Field
-
-Description
-
-Required
-
-Rotation Type
-
-Specifies which type of rotation is being performed (and which protocol is
-utilized).
-
-**Required** "General", "IAM User" or "Run PAM Scripts Only". See below for
-details.
-
-PAM Resource
-
-For General rotation type, specifies the PAM Resource record which can provide
-the necessary privilege. For IAM User rotation type, specifies the PAM
-Configuration utilizing cloud APIs.
-
-**Required** only for "General" and "IAM User" rotation types
-
-Rotation Schedule
-
-Rotation can be performed on-demand or on a specific schedule.
-
-Password Complexity
-
-Applies to password-based rotations, not PEM keys.
-
-Select "Show More" to control special characters and symbols.
-
-###
-
-Rotation Type
-
-Keeper supports 3 different types of rotation:
-
-  * **General:** Uses native protocols for performing the rotation, such as LDAP, Databases, SSH keys, etc.
-
-  * **IAM User:** Uses the cloud-specific APIs for performing rotation, such as AWS IAM users and Azure managed resources. In this case, only the PAM Configuration is required since it contains the necessary 
-
-  * **Run PAM scripts only:** Skips the standard rotation and only executes the attached PAM Scripts.
-
-###
-
-PAM Resource
-
-To complete the Rotation setup, you need to select a resource, which depends
-on the rotation type.
-
-For a "General" rotation, the Keeper Gateway uses a native protocol for
-performing the necessary rotation, and the rotation will be executed on the
-associated PAM Resource supplied. If necessary, the rotation will use the
-associated administrative credential on the PAM Resource.
-
-In the example below, a Windows service account password is going to be
-rotated on the associated Windows Server.
-
-For an "IAM User" rotation type, the Keeper Gateway will use the referenced
-PAM Configuration to determine which APIs and methods are used to perform the
-rotation. In the example below, an IAM user in AWS will use the "AWS (US-
-WEST-1)" configuration.
-
-When using the IAM User rotation method, it is assumed that the Keeper Gateway
-either inherits its privilege from the instance role policy, or through
-explicit access keys that are provided on the PAM Configuration record.
-
-###
-
-In Summary:
-
-  * The PAM User record holds the credential that is being rotated.
-
-  * The Rotation Settings of the PAM User record references a specific PAM Machine, PAM Database or PAM Directory resource. This is the target resource where the rotation is performed.
-
-  * The Keeper Gateway uses the Admin Credential associated to the PAM Machine, PAM Database or PAM Directory resource to perform the rotation with native protocols.
-
-  * For AWS and Azure managed resources, Keeper uses Instance Role permission of the Gateway, or specific PAM Configuration secrets to perform the rotation with APIs.
-
-###
-
-Examples
-
-Below are some examples of PAM User records.
-
-  * Windows Domain Admin
-
-  * Windows Domain User with post-rotation scripts
-
-  * AWS IAM User
-
-  * Database user
-
-  * Azure AD User
 
 For advanced scheduling, see the .
 

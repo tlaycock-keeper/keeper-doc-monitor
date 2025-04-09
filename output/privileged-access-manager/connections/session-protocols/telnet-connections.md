@@ -249,13 +249,13 @@ connections?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -523,6 +523,21 @@ Configuring Connection Settings
 Prior to configuring the Telnet protocol settings on the PAM Settings screen,
 the following fields are all **required** and need to be configured:
 
+Field
+
+Definition
+
+PAM Configuration
+
+This is the PAM Configuration that contains the details of your target
+infrastructure and provides access to the target configured on the PAM Record
+
+Administrative Credential Record
+
+This is the linked [PAM User](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-user) that will be used to authenticate to the
+target and perform administrative operations on it.
+
 The following table lists all the configurable connection settings for the
 Telnet protocol on the PAM Settings:
 
@@ -620,6 +635,20 @@ Default value is "white-black"
 
 Session Recordings - Telnet Protocol
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9sq5XKimBU882wtisft8%252FScreenshot%25202025-01-21%2520at%252012.38.15%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dc796bae2-9fd8-4e7c-af80-af4f7bb4bebf&width=768&dpr=4&quality=100&sign=4c95dded&sv=2)
+
+Telnet Session Recordings
+
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-
+playback).
+
+  * Learn more about [Session Recording and Playback](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+
 [PreviousVNC Connections](/en/keeperpam/privileged-access-
 manager/connections/session-protocols/vnc-
 connections)[NextExamples](/en/keeperpam/privileged-access-
@@ -658,38 +687,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-Field
-
-Definition
-
-PAM Configuration
-
-This is the PAM Configuration that contains the details of your target
-infrastructure and provides access to the target configured on the PAM Record
-
-Administrative Credential Record
-
-This is the linked  that will be used to authenticate to the target and
-perform administrative operations on it.
-
-For this protocol, both graphical and the full, raw text text content of
-terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this .
-
-  * Learn more about 
-
-[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
-
-[Session Recording and Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
-Telnet Session Recordings
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9sq5XKimBU882wtisft8%252FScreenshot%25202025-01-21%2520at%252012.38.15%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dc796bae2-9fd8-4e7c-af80-af4f7bb4bebf&width=768&dpr=4&quality=100&sign=4c95dded&sv=2)
 

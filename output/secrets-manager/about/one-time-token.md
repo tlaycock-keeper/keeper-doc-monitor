@@ -237,13 +237,13 @@ time-token?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -700,20 +700,6 @@ Some of the 3rd party Keeper Secrets Manager integrations require **pre-built
 configurations** , instead of creating the configuration from a one-time
 access token.
 
-The  reviews how to create a Secrets Manager Configuration.
-
-[next section](/en/keeperpam/secrets-manager/about/secrets-manager-
-configuration)
-
-[Keeper Commander](/en/keeperpam/secrets-manager/about/one-time-token#using-
-commander-to-generate-a-token)
-
-[Keeper Vault](/en/keeperpam/secrets-manager/about/one-time-token#using-the-
-keeper-vault-to-generate-a-token)
-
-[step 3](/en/keeperpam/secrets-manager/about/one-time-token#3-create-a-new-
-client-device)
-
 The Secrets Manager tab when no Applications exist yet
 
 The Add Application Form
@@ -730,9 +716,23 @@ The Device tab shows all the devices associated to this application
 
 The Add Device form
 
+The  reviews how to create a Secrets Manager Configuration.
+
+[next section](/en/keeperpam/secrets-manager/about/secrets-manager-
+configuration)
+
+[Keeper Commander](/en/keeperpam/secrets-manager/about/one-time-token#using-
+commander-to-generate-a-token)
+
+[Keeper Vault](/en/keeperpam/secrets-manager/about/one-time-token#using-the-
+keeper-vault-to-generate-a-token)
+
+[step 3](/en/keeperpam/secrets-manager/about/one-time-token#3-create-a-new-
+client-device)
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwGBqSEWVeD1DGOx-E%252Fimage.png%3Falt%3Dmedia%26token%3D08811fbb-f6dc-4e78-b101-152948f5c11a&width=768&dpr=4&quality=100&sign=9938fb47&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwHKLwE40srCh9Oqhg%252Fimage.png%3Falt%3Dmedia%26token%3D489ca694-1442-44c6-9bf1-d4af34560e36&width=768&dpr=4&quality=100&sign=96e08b0d&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -741,11 +741,15 @@ wCYECjEON%252Fimage.png%3Falt%3Dmedia%26token%3D33f480f5-3aae-4048-bba7-ea9b5c74
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwKUixFqY8vXCLYH9I%252Fimage.png%3Falt%3Dmedia%26token%3Dba298a3a-b189-4032-9902-c7dc39e1debb&width=768&dpr=4&quality=100&sign=ed8bbdc&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwGBqSEWVeD1DGOx-E%252Fimage.png%3Falt%3Dmedia%26token%3D08811fbb-f6dc-4e78-b101-152948f5c11a&width=768&dpr=4&quality=100&sign=9938fb47&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwHBXhb0TyqFXv_pqf%252Fimage.png%3Falt%3Dmedia%26token%3De4de2b61-aa02-4946-91dd-9b7c16a58905&width=768&dpr=4&quality=100&sign=d6f04ef5&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwKUixFqY8vXCLYH9I%252Fimage.png%3Falt%3Dmedia%26token%3Dba298a3a-b189-4032-9902-c7dc39e1debb&width=768&dpr=4&quality=100&sign=ed8bbdc&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -755,10 +759,6 @@ files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwK7U
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwI0nQhO-
 wCYECjEON%252Fimage.png%3Falt%3Dmedia%26token%3D33f480f5-3aae-4048-bba7-ea9b5c748bbd&width=768&dpr=4&quality=100&sign=8a252b31&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwHKLwE40srCh9Oqhg%252Fimage.png%3Falt%3Dmedia%26token%3D489ca694-1442-44c6-9bf1-d4af34560e36&width=768&dpr=4&quality=100&sign=96e08b0d&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

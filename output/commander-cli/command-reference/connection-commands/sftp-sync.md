@@ -243,13 +243,13 @@ reference/connection-commands/sftp-sync?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -498,6 +498,11 @@ Copy
 
 Automating Sync
 
+Commander can be automated in a number of ways. See the [Batch Mode
+documentation](/en/keeperpam/commander-cli/commander-installation-
+setup/logging-in#executing-commands-with-persistent-login) for more
+information. This section will cover an example of automating the SFTP sync.
+
 ###
 
 Run Recurring SFTP Sync
@@ -536,6 +541,10 @@ Once configured, run Commander with the edited configuration file to start the
 automation. This can be done from the command line/terminal.
 
 `$> keeper shell --config "/sync.conf"`
+
+Note that there may be additional fields in your configuration file. See the
+[documentation ](/en/keeperpam/commander-cli/commander-installation-
+setup/logging-in#commander-configuration-file)for more information.
 
 Commander will continue to run while it waits for the next command run. If
 Commander is terminated, or the machine is turned off, Commander will need to
@@ -579,16 +588,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-Commander can be automated in a number of ways. See the  for more information.
-This section will cover an example of automating the SFTP sync.
-
-Note that there may be additional fields in your configuration file. See the
-for more information.
-
-[Batch Mode documentation](/en/keeperpam/commander-cli/commander-installation-
-setup/logging-in#executing-commands-with-persistent-login)
-
-[documentation ](/en/keeperpam/commander-cli/commander-installation-
-setup/logging-in#commander-configuration-file)
 

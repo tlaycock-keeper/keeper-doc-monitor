@@ -241,13 +241,13 @@ commander-cli?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -662,6 +662,11 @@ Secure Add-Ons section of the Keeper Admin Console.
 
 Read more about managing add-ons in the docs:
 
+[![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
+files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Keeper
+Admin Console OverviewEnterprise Guide](https://docs.keeper.io/enterprise-
+guide/getting-started-with-keeper-admin-console#additional-secure-add-ons)
+
 ##
 
 **Installation Issues with Python**
@@ -872,9 +877,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-[![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
-files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Keeper
-Admin Console OverviewEnterprise Guide](https://docs.keeper.io/enterprise-
-guide/getting-started-with-keeper-admin-console#additional-secure-add-ons)
 

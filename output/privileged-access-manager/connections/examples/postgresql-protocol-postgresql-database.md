@@ -257,13 +257,13 @@ database?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -439,36 +439,6 @@ database?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview 
@@ -493,14 +463,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=8K8amVturAxKYPOcw7kD&only=yes&limit=100)
 # PostgreSQL Protocol - PostgreSQL Database
 
 Establish a connection to a PostgreSQL Database directly from your Vault
-
-[PreviousMySQL Protocol - MySQL Database](/en/keeperpam/privileged-access-
-manager/connections/examples/mysql-protocol-mysql-
-database)[NextTunnels](/en/keeperpam/privileged-access-manager/tunnels)
-
-Last updated 1 month ago
-
-Was this helpful?
 
 ##
 
@@ -534,7 +496,9 @@ PostgreSQL Database directly from your Keeper Vault.
 
 Step 1 - Enable Connection Enforcement Policies
 
-From the Admin Console, enable the corresponding  for connections:
+From the Admin Console, enable the corresponding [PAM Enforcement
+Policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-
+policies) for connections:
 
 Policy
 
@@ -547,14 +511,32 @@ Can configure connection and session recording
 Allow users to configure Connection and Session Recordings settings on PAM
 Machine, PAM Directory, PAM Database and PAM Configuration Record Types
 
+Copy
+
+    
+    
+    ALLOW_CONFIGURE_PAM_CLOUD_CONNECTION_SETTINGS
+
 Can launch connections
 
 Allow users to launch connections on PAM Machine, PAM Directory, PAM Database
 Record Types
 
+Copy
+
+    
+    
+    ALLOW_LAUNCH_PAM_ON_CLOUD_CONNECTION
+
 Can view session recordings
 
 Allow users to view Session Recordings
+
+Copy
+
+    
+    
+    ALLOW_VIEW_KCM_RECORDINGS
 
 ##
 
@@ -564,13 +546,34 @@ Prior to creating the PAM Record types in your Vault, the Keeper Gateway needs
 to be installed in your infrastructure. Visit the following guides based on
 your needs:
 
-  *   *   * 
+  * [Windows Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/windows-installation)
+
+  * [Linux Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/linux-installation)
+
+  * [Docker Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/docker-installation)
+
+Additionally, the Keeper Gateways needs to be configured with the Gateway
+token. For more information, visit this [page](/en/keeperpam/privileged-
+access-manager/getting-started/gateways/one-time-access-token).
+
+Steps 3 and Step 4 can be automated with the Gateway Wizard. For more
+information, visit this [page](/en/keeperpam/privileged-access-manager/quick-
+start-sandbox).
 
 ##
 
 Step 3 - Configuring the PAM Configuration
 
-  *   *   * 
+The [PAM Configuration ](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)contains critical information on your
+infrastructure, settings and associated Keeper Gateway. Visit the following
+pages for more details based on your target infrastructure:
+
+  * [Setting up Local Environment on the PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/local-environment-setup)
+
+  * [Setting up AWS Environment on the PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup)
+
+  * [Setting up Azure Environment on the PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/azure-environment-setup)
 
 ##
 
@@ -580,10 +583,16 @@ After setting up your Gateway and PAM Configuration Record, the PostgreSQL
 Database and its users need to be configured on PAM Record types in your
 Vault:
 
-  *   * 
+  * [PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database) \- The PostgreSQL Database is configured on this record type
+
+  * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user) \- The PostgreSQL Database User is configured on this record type
 
 Refer to this example on how to configure PostgreSQL Database on a PAM
 Database record type:
+
+[Example: PostgreSQL Database](/en/keeperpam/privileged-access-
+manager/getting-started/pam-resources/pam-database/example-postgresql-
+database)
 
 ##
 
@@ -597,6 +606,9 @@ authenticate the connection.
 The PAM Settings need to be configured to enable connections or tunnels on the
 target defined on the PAM Database Record. To configure the PostgreSQL
 protocol, visit the following page:
+
+[PostgreSQL Connections](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/postgresql-connections)
 
 ##
 
@@ -623,82 +635,43 @@ be shared. For example, if the PAM Database is configured with a PostgreSQL
 Database, the recipient can connect to the PostgreSQL Database on the PAM
 Database record without having direct access to the linked credentials.
 
-Additionally, the Keeper Gateways needs to be configured with the Gateway
-token. For more information, visit this .
+[PreviousMySQL Protocol - MySQL Database](/en/keeperpam/privileged-access-
+manager/connections/examples/mysql-protocol-mysql-
+database)[NextTunnels](/en/keeperpam/privileged-access-manager/tunnels)
 
-Steps 3 and Step 4 can be automated with the Gateway Wizard. For more
-information, visit this .
+Last updated 1 month ago
 
-The contains critical information on your infrastructure, settings and
-associated Keeper Gateway. Visit the following pages for more details based on
-your target infrastructure:
+Was this helpful?
 
-\- The PostgreSQL Database is configured on this record type
+#### Company
 
-\- The PostgreSQL Database User is configured on this record type
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-Copy
+#### Support
 
-    
-    
-    ALLOW_CONFIGURE_PAM_CLOUD_CONNECTION_SETTINGS
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-Copy
+#### Solutions
 
-    
-    
-    ALLOW_LAUNCH_PAM_ON_CLOUD_CONNECTION
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-Copy
+#### Pricing
 
-    
-    
-    ALLOW_VIEW_KCM_RECORDINGS
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
-[PAM Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-
-started/enforcement-policies)
-
-[Windows Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/windows-installation)
-
-[Linux Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/linux-installation)
-
-[Docker Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/docker-installation)
-
-[page](/en/keeperpam/privileged-access-manager/getting-started/gateways/one-
-time-access-token)
-
-[page](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
-
-[PAM Configuration ](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
-
-[Setting up Local Environment on the PAM
-Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/local-environment-setup)
-
-[Setting up AWS Environment on the PAM
-Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/aws-environment-setup)
-
-[Setting up Azure Environment on the PAM
-Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/azure-environment-setup)
-
-[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database)
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
-[Example: PostgreSQL Database](/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-database/example-postgresql-
-database)
-
-[PostgreSQL Connections](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/postgresql-connections)
+© 2025 Keeper Security, Inc.
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

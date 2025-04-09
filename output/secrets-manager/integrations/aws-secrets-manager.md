@@ -243,13 +243,13 @@ manager/integrations/aws-secrets-manager?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -519,7 +519,11 @@ Prerequisites
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An AWS account with AWS Secrets Manager, and the ability to create IAM security credentials
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * An AWS account with AWS Secrets Manager, and the ability to create IAM security credentials
 
 ##
 
@@ -680,20 +684,10 @@ TIP: you can use `-m` as short hand for `--map`
 
 `ksm sync --type aws --credentials [UID] -m [...] -m [...]`
 
-A Keeper  with secrets shared to it
-
-See the  for instructions on creating an Application
-
 [![Logo](https://docs.aws.amazon.com/assets/images/favicon.ico)Managing access
 keys for IAM users - AWS Identity and Access ManagementAWS Identity and Access
 Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-
 keys.html)
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 
 AWS Credentials Record Type Definition
 

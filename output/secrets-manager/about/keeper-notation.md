@@ -239,13 +239,13 @@ notation?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -453,10 +453,27 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * About 
+  * Notation
+  * Fetching Records by Name
+  * Escaping notation characters
+  * Using Name to Simplify Environment Switching
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-MkhHwC6PB3pqh132phe&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [About KSM](/en/keeperpam/secrets-manager/about)
+
+# Keeper Notation
+
+Query format used for getting fields of a secret
+
+[PreviousSecrets Manager Configuration](/en/keeperpam/secrets-
+manager/about/secrets-manager-configuration)[NextEvent
+Reporting](/en/keeperpam/secrets-manager/about/event-reporting)
 
 Last updated 5 months ago
 
@@ -523,6 +540,21 @@ be returned.
 
 **Sub Fields** Some field values are made up of other sub fields. For example:
 
+Copy
+
+    
+    
+    "fields": [
+        { "type": "name", "value": [ 
+            {"first:": "John", "last": "Doe"},
+            {"first:": "Jane", "last": "Doe"} ]
+        },
+        { "type": "phone", "value": [
+            {"number": "555-5555555", "ext": "55"}, 
+            {"number": "777-7777777", "ext": "77"} ]
+        }
+    ]
+
 To access sub fields, include the name of the field as an alphanumeric
 predicate. For example `name[0][first]` will find "John" in the example above,
 and `name[1][first]`__ will find "Jane".
@@ -530,6 +562,17 @@ and `name[1][first]`__ will find "Jane".
 **Mixed**
 
 Some values are a combination of the arrays and Sub Fields. For example:
+
+Copy
+
+    
+    
+    [
+        {"number": "555-5555555", "ext": "55"}, 
+        {"number": "777-7777777", "ext": "77"}, 
+        {"number": "888-8888888", "ext": "", "type": "Home"}, 
+        {"number": "999-9999999", "type": "Work"}
+    ]
 
 To get a specific value you can use the first numeric predicate to get the
 whole value - ex. `phone[1] `will return the full value for the second phone
@@ -591,6 +634,15 @@ Get all phone numbers on the record as an array
 
 _returns:_
 
+Copy
+
+    
+    
+    [
+      {"number": "123-456-7890", "type": "work"},
+      {"number": "555-555-5555", "type": "home"}
+    ]
+
 ##
 
 Fetching Records by Name
@@ -639,58 +691,6 @@ integrations used for development builds, use the Secrets Manager application
 associated to the Dev folder (in this case "Development Environment"). Then to
 build for production, simply change the associated Secrets Manager application
 to "Production Environment" no change in code or scripts needed.
-
-Copy
-
-    
-    
-    "fields": [
-        { "type": "name", "value": [ 
-            {"first:": "John", "last": "Doe"},
-            {"first:": "Jane", "last": "Doe"} ]
-        },
-        { "type": "phone", "value": [
-            {"number": "555-5555555", "ext": "55"}, 
-            {"number": "777-7777777", "ext": "77"} ]
-        }
-    ]
-
-Copy
-
-    
-    
-    [
-        {"number": "555-5555555", "ext": "55"}, 
-        {"number": "777-7777777", "ext": "77"}, 
-        {"number": "888-8888888", "ext": "", "type": "Home"}, 
-        {"number": "999-9999999", "type": "Work"}
-    ]
-
-Copy
-
-    
-    
-    [
-      {"number": "123-456-7890", "type": "work"},
-      {"number": "555-555-5555", "type": "home"}
-    ]
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [About KSM](/en/keeperpam/secrets-manager/about)
-
-# Keeper Notation
-
-Query format used for getting fields of a secret
-
-[PreviousSecrets Manager Configuration](/en/keeperpam/secrets-
-manager/about/secrets-manager-configuration)[NextEvent
-Reporting](/en/keeperpam/secrets-manager/about/event-reporting)
-
-  * About 
-  * Notation
-  * Fetching Records by Name
-  * Escaping notation characters
-  * Using Name to Simplify Environment Switching
 
 [ SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
 

@@ -247,13 +247,13 @@ lambda?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -593,6 +593,12 @@ Copy
     rm -rf $VENV
     
 
+[2KBpackage_layer_content.sh](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
+x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FgxJz7bvtfe4hTfuTA0cc%2Fpackage_layer_content.sh?alt=media&token=f624bf70-327c-4b10-9f18-a1f1ae06ecc1)
+
+Bash script for packaging `keepercommander` Lambda Layer content
+
 To use the script provided above, perform the following steps after
 downloading the file:
 
@@ -855,6 +861,12 @@ Commander automatically creates the required parameters when you login to the
 CLI. The easiest way to generate the required parameters is to login to the
 Commander CLI on your machine.
 
+To get the Commander parameters, open the generated config.json file. By
+default this is located in the `Users/[your username]/.keeper/` folder on your
+machine. See the[ config file documentation ](/en/keeperpam/commander-
+cli/commander-installation-setup/logging-in#commander-configuration-file)for
+more information.
+
 You should see a file that looks similar to this:
 
 Copy
@@ -985,6 +997,11 @@ You will also need to create an IAM identity to enable email sending.
 For more information on setting up email sending with AWS, see Amazon's
 documentation:
 
+[![Logo](https://a0.awsstatic.com/libra-css/images/site/touch-icon-
+ipad-144-smile.png)Send email using Lambda and Amazon SESAmazon Web Services,
+Inc.](https://aws.amazon.com/premiumsupport/knowledge-center/lambda-send-
+email-ses/)
+
 In this example, we are sending an email with the report results. In order to
 enable the email, you will need to allow Lambda to access SES
 `SendEmail`/`SendRawEmail` service.
@@ -1007,6 +1024,10 @@ Keeper processes.
 
 For some examples of using the Commander SDK code, see the example scripts in
 the Commander GitHub repo:
+
+[![Logo](https://github.com/fluidicon.png)Commander/examples at master ·
+Keeper-Security/CommanderGitHub](https://github.com/Keeper-
+Security/Commander/tree/master/examples)
 
 To learn more about Commander's various methods, see the Command Reference
 section.
@@ -1051,26 +1072,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-To get the Commander parameters, open the generated config.json file. By
-default this is located in the `Users/[your username]/.keeper/` folder on your
-machine. See thefor more information.
-
-[![Logo](https://a0.awsstatic.com/libra-css/images/site/touch-icon-
-ipad-144-smile.png)Send email using Lambda and Amazon SESAmazon Web Services,
-Inc.](https://aws.amazon.com/premiumsupport/knowledge-center/lambda-send-
-email-ses/)
-
-[![Logo](https://github.com/fluidicon.png)Commander/examples at master ·
-Keeper-Security/CommanderGitHub](https://github.com/Keeper-
-Security/Commander/tree/master/examples)
-
-[ config file documentation ](/en/keeperpam/commander-cli/commander-
-installation-setup/logging-in#commander-configuration-file)
-
-[2KBpackage_layer_content.sh](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FgxJz7bvtfe4hTfuTA0cc%2Fpackage_layer_content.sh?alt=media&token=f624bf70-327c-4b10-9f18-a1f1ae06ecc1)
-
-Bash script for packaging `keepercommander` Lambda Layer content
 

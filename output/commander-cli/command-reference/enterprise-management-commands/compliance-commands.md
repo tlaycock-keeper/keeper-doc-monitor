@@ -255,13 +255,13 @@ reference/enterprise-management-commands/compliance-commands?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -463,45 +463,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=EhC8JpK6T1iKszWPwZCq&only=yes&limit=100)
 
 Keeper Commander compliance reporting commands
 
-[PreviousCreating and Inviting Users](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands/creating-and-inviting-
-users)[NextBreachwatch Commands](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands/breachwatch-commands)
-
-Last updated 14 days ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 About
@@ -518,6 +479,11 @@ results can be exported to a CSV file or JSON.
 
 For more information about Compliance Reports, see the Compliance Reports
 documentation:
+
+[![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
+files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Compliance
+ReportsEnterprise Guide](https://docs.keeper.io/enterprise-guide/compliance-
+reports)
 
 ##
 
@@ -539,6 +505,10 @@ minutes as the system pulls in the required data.**
 
 During this time, Commander will display messaging explaining the current
 step.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjzCfUVzEze2IAKuJDhS6%252Fimage.png%3Falt%3Dmedia%26token%3D235eb0c1-407d-4d24-a7dc-d65cca157bac&width=768&dpr=4&quality=100&sign=db5ae4e&sv=2)
 
 Additionally, a manual rebuild of the cache can be performed with the `-r`
 flag. Do this to see recent changes in the compliance data.
@@ -858,7 +828,13 @@ command's supported sub-commands.
 
 The `compliance` command supports the following sub commands:
 
-  *   *   *   * 
+  * [`team-report`](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/compliance-commands#compliance-team-report)
+
+  * [`record-access-report`](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/compliance-commands#compliance-record-access-report)
+
+  * [`summary-reports`](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/compliance-commands#compliance-summary-report) or [`stats`](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/compliance-commands#compliance-summary-report)
+
+  * [`shared-folder-report`](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/compliance-commands#compliance-shared-folder-report)
 
 Refer to the sub command's section for more information.
 
@@ -873,6 +849,10 @@ these shared folders.
 To run the Compliance Team Report, use the following command in Commander:
 
 `compliance team-report`
+
+This report uses the [compliance report cache](/en/keeperpam/commander-
+cli/command-reference/enterprise-management-commands/compliance-
+commands#cache) described above.
 
 The report shows each team that has access to a shared folder, and what access
 it has to that shared folder.
@@ -1035,36 +1015,42 @@ denote it as such.
 See the [Reporting Documentation](/en/keeperpam/commander-cli/command-
 reference/reporting-commands) for other reports available in Commander
 
-or
+[PreviousCreating and Inviting Users](/en/keeperpam/commander-cli/command-
+reference/enterprise-management-commands/creating-and-inviting-
+users)[NextBreachwatch Commands](/en/keeperpam/commander-cli/command-
+reference/enterprise-management-commands/breachwatch-commands)
 
-This report uses the  described above.
+Last updated 15 days ago
 
-[![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
-files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Compliance
-ReportsEnterprise Guide](https://docs.keeper.io/enterprise-guide/compliance-
-reports)
+Was this helpful?
 
-[`team-report`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands/compliance-commands#compliance-team-report)
+#### Company
 
-[`record-access-report`](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands/compliance-commands#compliance-
-record-access-report)
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-[`summary-reports`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands/compliance-commands#compliance-summary-report)
+#### Support
 
-[`stats`](/en/keeperpam/commander-cli/command-reference/enterprise-management-
-commands/compliance-commands#compliance-summary-report)
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-[`shared-folder-report`](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands/compliance-commands#compliance-
-shared-folder-report)
+#### Solutions
 
-[compliance report cache](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands/compliance-commands#cache)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjzCfUVzEze2IAKuJDhS6%252Fimage.png%3Falt%3Dmedia%26token%3D235eb0c1-407d-4d24-a7dc-d65cca157bac&width=768&dpr=4&quality=100&sign=db5ae4e&sv=2)
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

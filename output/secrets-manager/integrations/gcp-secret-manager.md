@@ -243,13 +243,13 @@ manager/integrations/gcp-secret-manager?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -558,7 +558,11 @@ the project or on the service account principal to sync.
 
 Secret Manager Access control with IAM:
 
+[![Logo](https://www.gstatic.com/devrel-devsite/prod/v67cb8b0ddf4e3bae39406c7b2c88affae9b405bee7499568a4013f440189dfbf/cloud/images/favicons/onecloud/super_cloud.png)Access control with IAM | Secret Manager Documentation | Google CloudGoogle Cloud](https://cloud.google.com/secret-manager/docs/access-control)
+
 GCP instructions for creating Service Account Credentials _(optional)_ :
+
+[![Logo](https://www.gstatic.com/devrel-devsite/prod/v67cb8b0ddf4e3bae39406c7b2c88affae9b405bee7499568a4013f440189dfbf/developers/images/touchicon-180.png)Create access credentials | Google Workspace | Google DevelopersGoogle Developers](https://developers.google.com/workspace/guides/create-credentials#service-account)
 
 ###
 
@@ -703,10 +707,6 @@ values from your Keeper Vault to GCP Secret Manager
 TIP: you can use `-m` as short hand for `--map`
 
 `ksm sync --type gcp --credentials [UID] -m [...] -m [...]`
-
-[![Logo](https://www.gstatic.com/devrel-devsite/prod/v67cb8b0ddf4e3bae39406c7b2c88affae9b405bee7499568a4013f440189dfbf/cloud/images/favicons/onecloud/super_cloud.png)Access control with IAM | Secret Manager Documentation | Google CloudGoogle Cloud](https://cloud.google.com/secret-manager/docs/access-control)
-
-[![Logo](https://www.gstatic.com/devrel-devsite/prod/v67cb8b0ddf4e3bae39406c7b2c88affae9b405bee7499568a4013f440189dfbf/developers/images/touchicon-180.png)Create access credentials | Google Workspace | Google DevelopersGoogle Developers](https://developers.google.com/workspace/guides/create-credentials#service-account)
 
 GCP Credentials Record Type Definition
 

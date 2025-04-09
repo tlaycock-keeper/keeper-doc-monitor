@@ -243,13 +243,13 @@ manager/troubleshooting?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -706,6 +706,10 @@ The convert command can use patterns to find all relevant records, can
 recursively apply the conversion to all sub-folders, and supports all record
 types.
 
+For more information on using the `convert` command, see the [Commander
+documentation.](/en/keeperpam/commander-cli/command-reference/record-
+commands/record-type-commands#convert-command)
+
 ##
 
 Throttling
@@ -745,11 +749,6 @@ team at commander@keepersecurity.com
 Typed records can be created in by clicking "Create New" in the vault, or
 using the  in Commander.
 
-For more information on using the `convert` command, see the
-
-[Commander documentation.](/en/keeperpam/commander-cli/command-
-reference/record-commands/record-type-commands#convert-command)
-
 [add command](/en/keeperpam/commander-cli/command-reference/record-
 commands#add-command-record-types)
 
@@ -765,9 +764,9 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRJAbUfRGI
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTG9RqjA7M6aC9SgkAQdp%252Fimage.png%3Falt%3Dmedia%26token%3D6567844a-f602-4c8a-9548-5deeeb24e6d8&width=768&dpr=4&quality=100&sign=5a9ae30b&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZI8uVnbFAttuJSrHO6bu%252Fimage.png%3Falt%3Dmedia%26token%3Da7f8f60a-9acb-46c1-acbc-7d1373a5202c&width=768&dpr=4&quality=100&sign=50dc6ac1&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZI8uVnbFAttuJSrHO6bu%252Fimage.png%3Falt%3Dmedia%26token%3Da7f8f60a-9acb-46c1-acbc-7d1373a5202c&width=768&dpr=4&quality=100&sign=50dc6ac1&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTG9RqjA7M6aC9SgkAQdp%252Fimage.png%3Falt%3Dmedia%26token%3D6567844a-f602-4c8a-9548-5deeeb24e6d8&width=768&dpr=4&quality=100&sign=5a9ae30b&sv=2)
 

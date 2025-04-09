@@ -243,13 +243,13 @@ reference/record-commands?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -1360,6 +1360,12 @@ records
 `--color <``_{none, red, green, blue, orange, yellow, gray}_``>` sets folder
 color
 
+When adding other users or teams to a shared folder, they will be given the
+default permissions of that folder, unless the permission is specifically
+revoked or added when sharing. See the [share-folder](/en/keeperpam/commander-
+cli/command-reference/sharing-commands#share-folder-command) command for more
+details.
+
 **Examples:**
 
 Copy
@@ -1959,7 +1965,7 @@ reference/enterprise-management-commands/scim-push-configuration)[NextRecord
 Type Commands](/en/keeperpam/commander-cli/command-reference/record-
 commands/record-type-commands)
 
-Last updated 21 days ago
+Last updated 22 days ago
 
 Was this helpful?
 
@@ -2002,13 +2008,6 @@ or `rh`
 Deprecated: use
 
 Deprecated: use
-
-When adding other users or teams to a shared folder, they will be given the
-default permissions of that folder, unless the permission is specifically
-revoked or added when sharing. See the  command for more details.
-
-[share-folder](/en/keeperpam/commander-cli/command-reference/sharing-
-commands#share-folder-command)
 
 [`list`](/en/keeperpam/commander-cli/command-reference/record-commands#list-
 command)

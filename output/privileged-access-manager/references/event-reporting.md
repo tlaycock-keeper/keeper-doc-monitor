@@ -243,13 +243,13 @@ manager/references/event-reporting?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -445,75 +445,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=yVhLMN6y9UZD8e0IKtSA&only=yes&limit=100)
 
 Keeper rotation event reporting in the Advanced Reporting & Alerts module
 
-##
-
-Overview
-
-Events related to Secrets Management and Privileged Access Management are
-included in the Advanced Reporting & Alerts module within the Keeper Admin
-Console.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3Y7OBEK2cUMhddOquMAT%252FScreenshot%25202024-12-26%2520at%25202.09.34%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D5ea2615b-f58f-41a7-a0da-
-ae2c03a306ec&width=768&dpr=4&quality=100&sign=a27e4afa&sv=2)
-
-Secrets Manager events in the Keeper Admin Console
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFuxRq8iBfoeNTyUdJVHA%252FScreenshot%25202024-12-26%2520at%25202.08.55%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dc53ecf72-2bd0-4276-8071-70291e0abb68&width=768&dpr=4&quality=100&sign=ebcaa2c1&sv=2)
-
-Privileged Access Manager events in the Admin Console
-
-##
-
-SIEM Events
-
-SIEM Event List
-
-###
-
-Secrets Manager Events
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6SYhpTYJpRZfjLsOL9I4%252FScreenshot%25202024-12-26%2520at%25205.19.47%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db9deecb9-6758-4cd1-856d-ae9086697eb7&width=768&dpr=4&quality=100&sign=3d3e391b&sv=2)
-
-Secrets Manager Events
-
-###
-
-Keeper Connection Manager (KCM) Cloud Events
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9UlOIDIJFQSn7UKLzttE%252FScreenshot%25202024-12-26%2520at%25205.23.53%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D5339a364-84e0-483e-928d-9eb48d97b6a2&width=768&dpr=4&quality=100&sign=2b642ddb&sv=2)
-
-Keeper Connection Manager (KCM) Cloud Events
-
-##
-
-Alerts
-
-To receive immediate feedback on any rotation related events, Keeper's
-"Alerts" capability can push these events to email, SMS, webhooks, Slack,
-Teams, etc.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfbbwP0Kfmg8fItMr7SXn%252FScreenshot%25202023-05-05%2520at%25202.50.59%2520PM.jpg%3Falt%3Dmedia%26token%3Dff7730d9-a7c1-4424-bf53-acd860d18638&width=768&dpr=4&quality=100&sign=592f9d98&sv=2)
-
-Keeper Alerts
-
-To learn more about the Keeper Advanced Reporting & Alerts module [at this
-link](https://docs.keeper.io/enterprise-guide/event-reporting).
-
-[![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
-files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Reporting,
-Alerts & SIEMEnterprise Guide](https://docs.keeper.io/enterprise-guide/event-
-reporting)
-
 [PreviousActive Directory Least Privilege](/en/keeperpam/privileged-access-
 manager/references/active-directory-least-privilege)[NextImporting PAM
 Records](/en/keeperpam/privileged-access-manager/references/importing-pam-
@@ -552,4 +483,73 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+##
+
+Overview
+
+Events related to Secrets Management and Privileged Access Management are
+included in the Advanced Reporting & Alerts module within the Keeper Admin
+Console.
+
+##
+
+SIEM Events
+
+SIEM Event List
+
+###
+
+Secrets Manager Events
+
+###
+
+Keeper Connection Manager (KCM) Cloud Events
+
+##
+
+Alerts
+
+To receive immediate feedback on any rotation related events, Keeper's
+"Alerts" capability can push these events to email, SMS, webhooks, Slack,
+Teams, etc.
+
+To learn more about the Keeper Advanced Reporting & Alerts module [at this
+link](https://docs.keeper.io/enterprise-guide/event-reporting).
+
+[![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
+files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Reporting,
+Alerts & SIEMEnterprise Guide](https://docs.keeper.io/enterprise-guide/event-
+reporting)
+
+Secrets Manager events in the Keeper Admin Console
+
+Privileged Access Manager events in the Admin Console
+
+Secrets Manager Events
+
+Keeper Connection Manager (KCM) Cloud Events
+
+Keeper Alerts
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3Y7OBEK2cUMhddOquMAT%252FScreenshot%25202024-12-26%2520at%25202.09.34%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D5ea2615b-f58f-41a7-a0da-
+ae2c03a306ec&width=768&dpr=4&quality=100&sign=a27e4afa&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFuxRq8iBfoeNTyUdJVHA%252FScreenshot%25202024-12-26%2520at%25202.08.55%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dc53ecf72-2bd0-4276-8071-70291e0abb68&width=768&dpr=4&quality=100&sign=ebcaa2c1&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6SYhpTYJpRZfjLsOL9I4%252FScreenshot%25202024-12-26%2520at%25205.19.47%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db9deecb9-6758-4cd1-856d-ae9086697eb7&width=768&dpr=4&quality=100&sign=3d3e391b&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9UlOIDIJFQSn7UKLzttE%252FScreenshot%25202024-12-26%2520at%25205.23.53%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D5339a364-84e0-483e-928d-9eb48d97b6a2&width=768&dpr=4&quality=100&sign=2b642ddb&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfbbwP0Kfmg8fItMr7SXn%252FScreenshot%25202023-05-05%2520at%25202.50.59%2520PM.jpg%3Falt%3Dmedia%26token%3Dff7730d9-a7c1-4424-bf53-acd860d18638&width=768&dpr=4&quality=100&sign=592f9d98&sv=2)
 

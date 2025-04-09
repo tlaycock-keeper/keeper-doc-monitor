@@ -243,13 +243,13 @@ reference/plugins/mysql-plugin?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -691,14 +691,14 @@ the command line
 
 Here's a screenshot of the Keeper Vault record for this use case:
 
-For more information on the `connect` command, see the
-[documentation](/en/keeperpam/commander-cli/command-
-reference/plugins/password-rotation#connect-command)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fraw.githubusercontent.com%2FKeeper-
+Security%2FCommander%2Fmaster%2Fkeepercommander%2Fimages%2Fconnect_mysql_screenshot.png&width=768&dpr=4&quality=100&sign=c97e338d&sv=2)
 
 A Keeper Record setup for use with Commander's 'connect' command
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fraw.githubusercontent.com%2FKeeper-
-Security%2FCommander%2Fmaster%2Fkeepercommander%2Fimages%2Fconnect_mysql_screenshot.png&width=768&dpr=4&quality=100&sign=c97e338d&sv=2)
+For more information on the `connect` command, see the
+[documentation](/en/keeperpam/commander-cli/command-
+reference/plugins/password-rotation#connect-command)
 
 Creating a record in the Keeper Vault
 

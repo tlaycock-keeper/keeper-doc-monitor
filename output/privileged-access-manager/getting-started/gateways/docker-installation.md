@@ -247,13 +247,13 @@ installation?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -461,7 +461,7 @@ started/gateways/one-time-access-token)[NextLinux
 Installation](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/linux-installation)
 
-Last updated 15 days ago
+Last updated 16 days ago
 
 Was this helpful?
 
@@ -501,7 +501,8 @@ Overview
 
 This document contains information on how to install, configure, and update
 your Keeper Gateway on Docker. The Docker container is built upon the base
-image of Rocky Linux 8 and it is hosted in .
+image of Rocky Linux 8 and it is hosted in
+[DockerHub](https://hub.docker.com/r/keeper/gateway).
 
 For full PAM capabilities, use a **Linux host with a x86 AMD processor**.
 
@@ -511,7 +512,7 @@ Prerequisites
 
   * A Linux host with a x86 AMD processor
 
-  * 
+  * `docker` and `docker-compose` installed (see [Docker Install](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux) for help)
 
 Note: The syntax is `docker-compose` for servers, but on a local Docker
 Desktop it might be `docker compose` (with no space).
@@ -762,31 +763,6 @@ Copy
 
 ###
 
-References:
-
-  *   * 
-
-`docker` and `docker-compose` installed (see  for help)
-
-DockerHub listing:
-
-Quick reference for
-
-[Docker Install](/en/keeperpam/privileged-access-
-manager/references/installing-docker-on-linux)
-
-<https://hub.docker.com/r/keeper/gateway>[](https://hub.docker.com/r/keeper/gateway)
-
-[Installing Docker](/en/keeperpam/privileged-access-
-manager/references/installing-docker-on-linux)
-
-[ and Docker Compose on Linux](/en/keeperpam/privileged-access-
-manager/references/installing-docker-on-linux)
-
-[DockerHub](https://hub.docker.com/r/keeper/gateway)
-
-###
-
 Network Configuration
 
 The Gateway establishes outbound-only connections to the following:
@@ -853,7 +829,11 @@ Copy
 Enabling this option allows you to establish a Connection to the host. For
 example, to open an SSH connection:
 
-  *   *   * 
+  * Create a [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user) record with the SSH private key
+
+  * Create a [PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-machine) record with the hostname to `host.docker.internal` and port `22`
+
+  * Activate the [SSH connection](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections) in PAM settings referencing the PAM User
 
 ###
 
@@ -869,20 +849,13 @@ Copy
     docker-compose pull
     nohup docker-compose up -d keeper-gateway &
 
-Create a  record with the SSH private key
+###
 
-Create a  record with the hostname to `host.docker.internal` and port `22`
+References:
 
-Activate the  in PAM settings referencing the PAM User
+  * DockerHub listing: <https://hub.docker.com/r/keeper/gateway>[](https://hub.docker.com/r/keeper/gateway)
 
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
-[PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
-[SSH connection](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/ssh-connections)
+  * Quick reference for [Installing Docker](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux)[ and Docker Compose on Linux](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux)
 
 [15KBdocker-
 seccomp.json](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-

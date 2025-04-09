@@ -237,13 +237,13 @@ agent?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -752,17 +752,17 @@ The Keeper SSH Agent allows you to seamlessly authenticate into services like
 GitHub and securely sign Git commits. To help you get started, we've created a
 step-by-step guide on setting up  and  using Keeper.
 
-[authentication with GitHub](/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git#github-authentication)
-
-[signing Git commits](/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git#signing-commits)
-
 [guide below](/en/keeperpam/privileged-access-manager/ssh-agent#configuring-
 your-terminal-for-keeper-ssh-agent)
 
 [SSH Agent Configuration](/en/keeperpam/privileged-access-manager/ssh-
 agent#configuration-of-your-terminal)
+
+[authentication with GitHub](/en/keeperpam/privileged-access-manager/ssh-
+agent/integration-with-git#github-authentication)
+
+[signing Git commits](/en/keeperpam/privileged-access-manager/ssh-
+agent/integration-with-git#signing-commits)
 
 Developer Settings
 

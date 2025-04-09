@@ -243,13 +243,13 @@ reference/enterprise-management-commands?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -425,35 +425,46 @@ reference/enterprise-management-commands?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
+#### Company
 
-  * Commands
-  * enterprise-info command
-  * enterprise-user command
-  * enterprise-role command
-  * enterprise-team command
-  * enterprise-node command
-  * enterprise-push command
-  * enterprise-down command
-  * team-approve command
-  * device-approve command
-  * create-user command:
-  * transfer-user command:
-  * automator command:
-  * scim command
-  * audit-alert command
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+On this page
 
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-McBBhPRYGc9uLwMe71Z&only=yes&limit=100)
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+Last updated 3 months ago
 
-# Enterprise Management Commands
-
-Commands related to Admin Console and Enterprise Management functions
+Was this helpful?
 
 ##
 
@@ -472,39 +483,6 @@ To get help on a particular command, run:
 `help <command>`
 
 **Enterprise Management Commands**
-
-Command
-
-Explanation
-
-Display enterprise information
-
-Manage enterprise users
-
-Manage enterprise roles and policies
-
-Manage enterprise teams
-
-Manage enterprise nodes
-
-Populate user and team vaults with predetermined records
-
-Download & decrypt enterprise data
-
-Approve queued teams and users provisioned by SCIM or Active Directory Bridge
-
-Approve SSO Cloud devices that are pending from end-users
-
-Create a new user and vault, and add a record to the current vault with that
-user's credentials
-
-Transfer an account to another user
-
-Manage SSO Cloud Automator for Device Approvals
-
-Manage SCIM endpoints
-
-Manage Audit Alerts
 
 ###
 
@@ -613,16 +591,6 @@ separated list. Available columns depends on type of data being viewed
 
 **Examples:**
 
-Copy
-
-    
-    
-    enterprise-info
-    ei "John Doe" --users 
-    ei --teams --format csv --output teams.csv
-    ei --roles --columns is_admin,user_count
-    ei --node "Keeper Security"
-
   1. Display the enterprise name and node structure
 
   2. Search the enterprise for users named "John Doe"
@@ -698,17 +666,6 @@ specified name or UID. To view a list of teams, use `enterprise-info --teams`
 `-v`, --verbose debug output which includes IDs and other data
 
 **Examples:**
-
-Copy
-
-    
-    
-    enterprise-user John.Doe@gmail.com
-    eu 20379619819523 --node Chicago --add-team "Chicago Engineering"
-    eu add Jane.Doe@gmail.com
-    eu 19819523203796 --lock
-    eu --add-alias new.name@company.com old.name@company.com
-    eu --add-role Employee @all
 
   1. Show details of user "John.Doe@gmail.com"
 
@@ -791,18 +748,6 @@ policies
 
 **Examples:**
 
-Copy
-
-    
-    
-    enterprise-role -v "Keeper Administrator"
-    er 20379621916672 "Engineer Team Lead"
-    er --add Onboarding --new-users
-    er 20379621916672 --add-admin "John.Doe@gmail.com" --cascade yes
-    er PM --name "Product Manager"
-    er 20379619819524 20379619819525 20379621916672 --Node Chicago
-    er 20379619819524 --copy --Node Chicago
-
   1. Show details about the "Keeper Administrator" role including all enforcements
 
   2. Show details about the role with the given UID and the "Engineer Team Lead" role
@@ -827,14 +772,551 @@ Use the `--enforcement` switch to edit enforcement policies on the given role.
 Pass a policy key and corresponding value to the switch in order to change the
 enforcement.
 
+Alternatively, set a role enforcement policy to the value specified in an
+external file.
+
+The available enforcement policies are listed below.
+
+Examples for each value type
+
+###
+
+enterprise-team command
+
+**Command:**`enterprise-team`or `et`
+
+**Detail:** Manage enterprise teams
+
+**Parameters:**
+
+Team name or id
+
+Note: you can use the following command to see a list of teams in the
+enterprise:
+
+`ei --teams`
+
+**Switches:**
+
+`--add` add a new team to the enterprise
+
+`--delete` delete the team
+
+`--add-user` <USER NAME OR UID> add a user to the team
+
+`--remove-user` <USER NAME OR UID> remove a user from the team
+
+`--node` <NODE NAME OR UID> the node to add the team to
+
+`--name` <NAME> name the team
+
+`--approve` approve a queued team. Queued teams are typically created by SCIM
+requests which still need encryption keys to be created. Therefore they remain
+in a queued state until the admin logs into the Admin Console or this command
+is executed.
+
+`--restrict-edit` <{_on,off_}> decide if users in this team can edit records
+
+`--restrict-share` <{_on,off_}> decide if users in this team can share records
+
+`--restrict-view` <{_on,off_}> decide if users in this team can view record
+passwords
+
+`--hide-shared-folder`, -hsf <{_on,off_}> flag to determine if users in this
+team can see shared folders
+
+\--add-role, -ar <ROLE NAME> add a role to the given team
+
+-v, --verbose show ids with output
+
+**Examples:**
+
+  1. Show details of "Chicago Engineering" team
+
+  2. Show details for "Chicago Engineering" and "Legal" teams
+
+  3. Add a new team named "Chicago Product" in the "Chicago" node, and restrict users in the team from editing records
+
+  4. Change the name of the team with the given UID to "El Dorado Hills Engineering"
+
+###
+
+enterprise-node command
+
+**Command:**`enterprise-node`or `en`
+
+**Detail:** Manage enterprise nodes
+
+**Parameters:**
+
+Node name or UID
+
+Note: you can use the following command to see a list of nodes in the
+enterprise:
+
+`ei --nodes`
+
+**Switches:**
+
+`--add` add a new node to the enterprise
+
+`--delete` delete the node. Note this won't be allowed until all objects from
+the node are deleted.
+
+`--parent` <NODE NAME OR UID> make given node the parent of this node
+
+`--name` <NAME> set node's display name
+
+`--wipe-out` delete all nodes, roles, users, and teams under the node. Does
+not delete the node itself. Be careful with this command.
+
+`--toggle-isolated` make node visible or invisible to people in other nodes
+
+`--logo-file` <FILE_NAME> Sets company / node logo using local image file (max
+size: 500 kB, min dimensions: 10x10, max dimensions: 320x320)
+
+**Examples:**
+
+  1. Show details for the "Chicago" node
+
+  2. For the three nodes: "Chicago", "El Dorado Hills" and node with the given UID, change the parent node to node "NA"
+
+  3. Add a new node named "Cork" under the "EMEA" node
+
+  4. Delete all nodes, roles, users, and teams from under the "APAC" node
+
+  5. Make the "Chicago" node invisible (if currently visible) or visible (if currently invisible) to people in other nodes
+
+  6. Customize the appearance of invite emails and vault UI by using the "chicago_logo.jpg" file in the current user's $HOME directory as the logo image for the "Chicago" node. 
+
+####
+
+**Custom Emails**
+
+The `--invite-email` switch allows you to set the custom email template per
+node.
+
+Similar to how email templates can be customized on the web admin console,
+custom email templates on the CLI supports customization of the following four
+attributes:
+
+  * Subject
+
+  * Message Heading
+
+  * Message Body
+
+  * Download Button Text
+
+Custom email templates can be defined in a `.txt` file in the following
+format:
+
+####
+
+**Custom Email Use Case**
+
+Suppose there are company branches in Chicago and Tokyo with its respective
+nodes `Chicago` and `Tokyo`. Ideally, you want the invitation emails to be in
+its native language:
+
+  * Invitation emails sent to the Chicago Branch should be in its native language English
+
+  * Invitation emails sent to the Tokyo Branch should be in its native language Japanese 
+
+The `--invite-email` __ switch makes this possible by enabling you to set the
+desired email template per node.
+
+First, I define the custom email templates for both of my branches: `Chicago`
+and `Tokyo`
+
+Next, I set the appropriate email template for each node:
+
+On windows, file paths can be specified either in quotations or double
+backslash. Either of the following file paths are valid:
+
+`"C:\users\file.txt"` or `c:\\users\\file.txt`
+
+When sending invitation emails, users will receive the following emails based
+on their branch location:
+
+###
+
+enterprise-push command
+
+**Command:**`enterprise-push`
+
+**Detail:** Populate a vault with a set of default records
+
+**Parameters:**
+
+File name of file with template records. File must be JSON format.
+
+**Switches:**
+
+`--syntax-help` show example file format and template parameters
+
+`--team` <TEAM NAME OR UID> team to assign records to
+
+`--email` <USER EMAIL OR UID> user to assign records to
+
+**Examples:**
+
+  1. Send records templated in the "office-codes.json" file to every user in the "Chicago Office" team
+
+  2. Send records templated in the "default.json" file to user "Jane.Doe@gmail.com"
+
+  3. See the syntax help
+
+**File Format**
+
+The "enterprise-push" command uses Keeper JSON record import format.
+
+Example JSON file:
+
+Supported template parameters:
+
+An easy way to find the proper JSON structure is to export some data from your
+Keeper vault in JSON format. Then, modify the file as required for creating an
+import file.
+
+To export JSON data for creating a template:
+
+  * Create an empty folder for storing templates. e.g. "Templates"
+
+  * Create records in that folder
+
+  * `export` the folder as JSON using the below command
+
+  * Optional: edit the JSON file to delete the following properties: "uid", "schema", "folders" not used by `enterprise-push` command
+
+The template JSON file should be either array of records or an object that
+contains a property "records" containing an array of records.
+
+###
+
+enterprise-down command
+
+**Command:**`enterprise-down` or `ed`
+
+**Detail:** Download & decrypt enterprise data locally.
+
+When there is an active instance of Commander running and a change is made on
+the admin console or another instance of commander, the enterprise-down
+command can be used to download & decrypt the latest enterprise data locally.
+
+**Example:**
+
+Suppose a new user is added on the Admin Console while an active commander
+session is running, executing the following command on the running commander
+session will download and decrypt the latest changes locally:
+
+###
+
+team-approve command
+
+**Command:**`team-approve`
+
+**Detail:** Enable or disable automatic team approval or user approval to
+teams
+
+When using a provisioning method such as Keeper Bridge or SCIM, new teams and
+users that have not yet activated their vault are queued for approval. Use
+this command to enable or disable automatic approval of provisioned teams or
+users.
+
+**Switches:**
+
+`--team` approve teams
+
+`--email` approve team users
+
+`--restrict-edit` <{_on_ , _off_}> restrict or allow editing records in
+approved teams
+
+`--restrict-share` <{_on_ , _off_}> restrict or allow sharing records in
+approved teams
+
+`--restrict-view` <{_on_ , _off_}>restrict or allow viewing record passwords
+in approved teams
+
+**Examples:**
+
+  1. Sync down any pending Enterprise Team approvals
+
+  2. Automatically approve queued provisioned teams
+
+  3. Automatically approve queued provisioned users
+
+  4. Automatically approve queued provisioned teams and don't allow users in those teams to edit records
+
+###
+
+device-approve command
+
+**Command:**`device-approve`
+
+**Detail:** Approve cloud SSO devices
+
+**Parameters:**
+
+User's email or device ID to approve or blank to see a list of pending devices
+
+**Switches:**
+
+`-r`, --reload load current list of pending approvals
+
+`-a`, --approve approve the device for the given user email or device id
+
+`-d`, --deny deny the device for the given user email or device id
+
+`--trusted-ip` approve devices from a trusted ip address
+
+`--format` <{_table_ , _csv_ , _json_}> format to show output in
+
+`--output` <FILE NAME> file to send output to (must use json or csv format)
+
+**Examples:**
+
+  1. Show list of pending device approvals
+
+  2. Approve user "John.Doe@gmail.com"
+
+  3. Refresh list of pending device approvals
+
+  4. Write list of pending device approvals to a file in csv format
+
+###
+
+**create-user command:**
+
+**Command:**`create-user`
+
+**Detail**
+
+Create a new account and vault for the given email address and create a record
+for the new user's credentials in the current Keeper vault.
+
+**Parameters:**
+
+User's email address
+
+**Switches:**
+
+`--name <Name>` user's name
+
+`--node <NODE>` name or ID of node to add user to
+
+`--record <RECORD UID>` UID of record that holds password for the new account
+
+`--folder <FOLDER NAME OR UID>` folder to store created user credentials in
+
+**Examples:**
+
+  1. Create a new user account and vault for John.Doe@gmail.com 
+
+  2. Send an invitation to John Doe to join Keeper, name the new user "John Doe" and add him to the "Chicago" node
+
+####
+
+Onboarding with create-user Command
+
+When the create-user command is used to create a new user in the Keeper
+account, a record is created in the current logged in account with the new
+user's username and temporary password. Once the new record is created, it can
+be shared with the new user with a one-time share URL.
+
+The new user will follow this url to receive their temporary credentials and
+perform the first login.
+
+###
+
+transfer-user command:
+
+**Command:**`transfer-user`
+
+**Detail:** Lock account, then transfer a vault from one user to another.
+
+**Parameter:**
+
+Email or user ID of the vault to be transferred. More than one can be
+provided, separated by spaces.****
+
+**Switches:**
+
+`--target-user <USER EMAIL>` email address of user account to transfer the
+vault(s) to
+
+`--force, -f `do not prompt for confirmation
+
+Account Transfer must be enabled for the account or role the account is in.
+
+The contents of the transferred vault are placed in a folder in the
+recipient's vault.
+
+**Example:**
+
+  1. Transfer the vault of keeperuser1@keepersecurity.com to recipient@keepersecurity.com.
+
+To perform a bulk transfer of user accounts, use the command: `transfer-user
+@filename` This will look for the file named filename that contains a FROM and
+TO mapping. For example:
+
+###
+
+automator command:
+
+**Command** : `automator`
+
+**Detail** : Configures SSO Cloud device automators.
+
+Only the root-level Keeper Administrator role can manage the Automator
+configuration
+
+When the `automator` command is executed without parameters it displays the
+list of available automators as well as a command help.
+
+**Examples:**
+
+Create automator with name "Cloud SSO Device Approval".
+
+Edit automator to set the Webhook URL. The Webhook URL is provided by the
+Automator application.
+
+Skills (Team Approvals, Team-User Approvals, Device Approvals) can be set with
+the "skill" argument. For example:
+
+Initialize the automator instance using "setup", "init" and "enable" commands.
+The backend verifies that the Automator is configured and ready to process
+requests.
+
+###
+
+scim command
+
+**Command:**`scim`
+
+**Detail:** Configures SCIM endpoints
+
+When `scim` command is executed without parameters it displays the list of
+available SCIM endpoints as well as a command help.
+
+**Examples:**
+
+Create SCIM endpoint for node `SCIM Node`
+
+Edit SCIM endpoint configuration. Editing SCIM endpoint generates a new
+provisioning token
+
+Delete SCIM endpoint
+
+Push group and user data to SCIM endpoint
+
+**Switches**
+
+`--source `Source of SCIM data. Available values: `google, ad`
+
+`--record `Record UID with SCIM configuration
+
+####
+
+Configuring SCIM source for push
+
+  *   *   * 
+
+###
+
+audit-alert command
+
+**Command:**`audit-alert`
+
+**Detail:** Manages Audit Alerts
+
+When `audit-alert` is executed without parameters it displays the list of
+available alerts as well as a command help
+
+To get help on command run
+
+`list` options
+
+`view` options
+
+`history` options
+
+`delete` options
+
+`add` options
+
+`edit` options
+
+`reset-counts` options
+
+`recipient` options
+
+`recipient enable,` `disable. or delete` options
+
+`recipient add or edit` options
+
+`--add-alias` <EMAIL> Add an alias, in the form of an email address, to a
+user. The alias added will become the "primary" email for the user. Applying
+the command to an existing alias will set it as primary. Note that this
+command is only permitted on .
+
+Example restricting the "Engineering" role to accessimport records.
+
+`--invite-email` <FILE_NAME> Sets invite email template from file. Saves
+current template if file does not exist. dash (-) use stdout. See  section
+below.
+
+Custom Emails can also be formatted using markdown syntax, for more
+information please refer to this .
+
+To invite new users to an enterprise see the
+
+An Automator is a program running at a customer site that can perform some
+Keeper administrative actions such as performing device approvals or team
+approvals. More information about the Keeper Automator service is .
+
+For more information about the Keeper Automator for SSO device approvals, see
+the  documentation.
+
+Copy
+
+    
+    
+    enterprise-info
+    ei "John Doe" --users 
+    ei --teams --format csv --output teams.csv
+    ei --roles --columns is_admin,user_count
+    ei --node "Keeper Security"
+
+Copy
+
+    
+    
+    enterprise-user John.Doe@gmail.com
+    eu 20379619819523 --node Chicago --add-team "Chicago Engineering"
+    eu add Jane.Doe@gmail.com
+    eu 19819523203796 --lock
+    eu --add-alias new.name@company.com old.name@company.com
+    eu --add-role Employee @all
+
+Copy
+
+    
+    
+    enterprise-role -v "Keeper Administrator"
+    er 20379621916672 "Engineer Team Lead"
+    er --add Onboarding --new-users
+    er 20379621916672 --add-admin "John.Doe@gmail.com" --cascade yes
+    er PM --name "Product Manager"
+    er 20379619819524 20379619819525 20379621916672 --Node Chicago
+    er 20379619819524 --copy --Node Chicago
+
 Copy
 
     
     
     enterprise-role ROLE --enforcement "<POLICY>:<VALUE>"
-
-Alternatively, set a role enforcement policy to the value specified in an
-external file.
 
 Copy
 
@@ -847,8 +1329,6 @@ Copy
     
     
     enterprise-role Engineering --enforcement "RESTRICT_IMPORT:True"
-
-The available enforcement policies are listed below.
 
 Enforcement Policy Key
 
@@ -1362,8 +1842,6 @@ RESTRICT_SELF_DESTRUCT_RECORDS
 
 `BOOLEAN`
 
-Examples for each value type
-
 Copy
 
     
@@ -1403,58 +1881,6 @@ Copy
     # ip-whitelist (allow logins only from specified IPs)
     My Vault> er --enforcement "RESTRICT_IP_ADDRESSES:1.0.0.1-1.0.0.10,172.15.0.1,192.0.0.2" IP-Restricted_Role
 
-###
-
-enterprise-team command
-
-**Command:**`enterprise-team`or `et`
-
-**Detail:** Manage enterprise teams
-
-**Parameters:**
-
-Team name or id
-
-Note: you can use the following command to see a list of teams in the
-enterprise:
-
-`ei --teams`
-
-**Switches:**
-
-`--add` add a new team to the enterprise
-
-`--delete` delete the team
-
-`--add-user` <USER NAME OR UID> add a user to the team
-
-`--remove-user` <USER NAME OR UID> remove a user from the team
-
-`--node` <NODE NAME OR UID> the node to add the team to
-
-`--name` <NAME> name the team
-
-`--approve` approve a queued team. Queued teams are typically created by SCIM
-requests which still need encryption keys to be created. Therefore they remain
-in a queued state until the admin logs into the Admin Console or this command
-is executed.
-
-`--restrict-edit` <{_on,off_}> decide if users in this team can edit records
-
-`--restrict-share` <{_on,off_}> decide if users in this team can share records
-
-`--restrict-view` <{_on,off_}> decide if users in this team can view record
-passwords
-
-`--hide-shared-folder`, -hsf <{_on,off_}> flag to determine if users in this
-team can see shared folders
-
-\--add-role, -ar <ROLE NAME> add a role to the given team
-
--v, --verbose show ids with output
-
-**Examples:**
-
 Copy
 
     
@@ -1463,52 +1889,6 @@ Copy
     et "Chicago Engineering" Legal 
     et --add "Chicago Product" --node Chicago --restrict-edit on
     et 20379619819524 --name "El Dorado Hills Engineering"
-
-  1. Show details of "Chicago Engineering" team
-
-  2. Show details for "Chicago Engineering" and "Legal" teams
-
-  3. Add a new team named "Chicago Product" in the "Chicago" node, and restrict users in the team from editing records
-
-  4. Change the name of the team with the given UID to "El Dorado Hills Engineering"
-
-###
-
-enterprise-node command
-
-**Command:**`enterprise-node`or `en`
-
-**Detail:** Manage enterprise nodes
-
-**Parameters:**
-
-Node name or UID
-
-Note: you can use the following command to see a list of nodes in the
-enterprise:
-
-`ei --nodes`
-
-**Switches:**
-
-`--add` add a new node to the enterprise
-
-`--delete` delete the node. Note this won't be allowed until all objects from
-the node are deleted.
-
-`--parent` <NODE NAME OR UID> make given node the parent of this node
-
-`--name` <NAME> set node's display name
-
-`--wipe-out` delete all nodes, roles, users, and teams under the node. Does
-not delete the node itself. Be careful with this command.
-
-`--toggle-isolated` make node visible or invisible to people in other nodes
-
-`--logo-file` <FILE_NAME> Sets company / node logo using local image file (max
-size: 500 kB, min dimensions: 10x10, max dimensions: 320x320)
-
-**Examples:**
 
 Copy
 
@@ -1520,40 +1900,6 @@ Copy
     en APAC --wipe-out
     en Chicago --toggle-isolated
     en --logo-file ~/chicago_logo.jpg Chicago
-
-  1. Show details for the "Chicago" node
-
-  2. For the three nodes: "Chicago", "El Dorado Hills" and node with the given UID, change the parent node to node "NA"
-
-  3. Add a new node named "Cork" under the "EMEA" node
-
-  4. Delete all nodes, roles, users, and teams from under the "APAC" node
-
-  5. Make the "Chicago" node invisible (if currently visible) or visible (if currently invisible) to people in other nodes
-
-  6. Customize the appearance of invite emails and vault UI by using the "chicago_logo.jpg" file in the current user's $HOME directory as the logo image for the "Chicago" node. 
-
-####
-
-**Custom Emails**
-
-The `--invite-email` switch allows you to set the custom email template per
-node.
-
-Similar to how email templates can be customized on the web admin console,
-custom email templates on the CLI supports customization of the following four
-attributes:
-
-  * Subject
-
-  * Message Heading
-
-  * Message Body
-
-  * Download Button Text
-
-Custom email templates can be defined in a `.txt` file in the following
-format:
 
 Copy
 
@@ -1571,73 +1917,12 @@ Copy
     [Button Text]
     // Insert the download button text here 
 
-####
-
-**Custom Email Use Case**
-
-Suppose there are company branches in Chicago and Tokyo with its respective
-nodes `Chicago` and `Tokyo`. Ideally, you want the invitation emails to be in
-its native language:
-
-  * Invitation emails sent to the Chicago Branch should be in its native language English
-
-  * Invitation emails sent to the Tokyo Branch should be in its native language Japanese 
-
-The `--invite-email` __ switch makes this possible by enabling you to set the
-desired email template per node.
-
-First, I define the custom email templates for both of my branches: `Chicago`
-and `Tokyo`
-
-[865BemailChicago.txt](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FYmVg7TjewlDNMViY0cjf%2FemailChicago.txt?alt=media&token=0afc8b59-f4eb-4ea9-b37d-69ac874a6e6e)
-
-Email Template File for Chicago
-
-[1KBemailTokyo.txt](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FpbyNGukCIzDtZki3HGvF%2FemailTokyo.txt?alt=media&token=248288c2-6896-4e66-8ac9-a62046a95dee)
-
-Email Template File for Tokyo
-
-Next, I set the appropriate email template for each node:
-
 Copy
 
     
     
     en Chicago --invite-email="C:\user\emailTemplates\emailChicago.txt"
     en Tokyo --invite-email="C:\user\emailTemplates\emailTokyo.txt"
-
-On windows, file paths can be specified either in quotations or double
-backslash. Either of the following file paths are valid:
-
-`"C:\users\file.txt"` or `c:\\users\\file.txt`
-
-When sending invitation emails, users will receive the following emails based
-on their branch location:
-
-###
-
-enterprise-push command
-
-**Command:**`enterprise-push`
-
-**Detail:** Populate a vault with a set of default records
-
-**Parameters:**
-
-File name of file with template records. File must be JSON format.
-
-**Switches:**
-
-`--syntax-help` show example file format and template parameters
-
-`--team` <TEAM NAME OR UID> team to assign records to
-
-`--email` <USER EMAIL OR UID> user to assign records to
-
-**Examples:**
 
 Copy
 
@@ -1646,18 +1931,6 @@ Copy
     enterprise-push office-codes.json --team "Chicago Office"
     enterprise-push default.json --email Jane.Doe@gmail.com
     enterprise=push --syntax-help
-
-  1. Send records templated in the "office-codes.json" file to every user in the "Chicago Office" team
-
-  2. Send records templated in the "default.json" file to user "Jane.Doe@gmail.com"
-
-  3. See the syntax help
-
-**File Format**
-
-The "enterprise-push" command uses Keeper JSON record import format.
-
-Example JSON file:
 
 Copy
 
@@ -1686,8 +1959,6 @@ Copy
         }
     ]
 
-Supported template parameters:
-
 Copy
 
     
@@ -1696,83 +1967,17 @@ Copy
     ${generate_password}   Generate random password
     ${user_name}           User full name
 
-An easy way to find the proper JSON structure is to export some data from your
-Keeper vault in JSON format. Then, modify the file as required for creating an
-import file.
-
-To export JSON data for creating a template:
-
-  * Create an empty folder for storing templates. e.g. "Templates"
-
-  * Create records in that folder
-
-  * `export` the folder as JSON using the below command
-
 Copy
 
     
     
     export --format=json --folder=Templates templates.json
 
-  * Optional: edit the JSON file to delete the following properties: "uid", "schema", "folders" not used by `enterprise-push` command
-
-The template JSON file should be either array of records or an object that
-contains a property "records" containing an array of records.
-
-###
-
-enterprise-down command
-
-**Command:**`enterprise-down` or `ed`
-
-**Detail:** Download & decrypt enterprise data locally.
-
-When there is an active instance of Commander running and a change is made on
-the admin console or another instance of commander, the enterprise-down
-command can be used to download & decrypt the latest enterprise data locally.
-
-**Example:**
-
-Suppose a new user is added on the Admin Console while an active commander
-session is running, executing the following command on the running commander
-session will download and decrypt the latest changes locally:
-
 Copy
 
     
     
     enterprise-down
-
-###
-
-team-approve command
-
-**Command:**`team-approve`
-
-**Detail:** Enable or disable automatic team approval or user approval to
-teams
-
-When using a provisioning method such as Keeper Bridge or SCIM, new teams and
-users that have not yet activated their vault are queued for approval. Use
-this command to enable or disable automatic approval of provisioned teams or
-users.
-
-**Switches:**
-
-`--team` approve teams
-
-`--email` approve team users
-
-`--restrict-edit` <{_on_ , _off_}> restrict or allow editing records in
-approved teams
-
-`--restrict-share` <{_on_ , _off_}> restrict or allow sharing records in
-approved teams
-
-`--restrict-view` <{_on_ , _off_}>restrict or allow viewing record passwords
-in approved teams
-
-**Examples:**
 
 Copy
 
@@ -1783,42 +1988,6 @@ Copy
     team-approve --email
     team-approve --team --restrict-edit on
 
-  1. Sync down any pending Enterprise Team approvals
-
-  2. Automatically approve queued provisioned teams
-
-  3. Automatically approve queued provisioned users
-
-  4. Automatically approve queued provisioned teams and don't allow users in those teams to edit records
-
-###
-
-device-approve command
-
-**Command:**`device-approve`
-
-**Detail:** Approve cloud SSO devices
-
-**Parameters:**
-
-User's email or device ID to approve or blank to see a list of pending devices
-
-**Switches:**
-
-`-r`, --reload load current list of pending approvals
-
-`-a`, --approve approve the device for the given user email or device id
-
-`-d`, --deny deny the device for the given user email or device id
-
-`--trusted-ip` approve devices from a trusted ip address
-
-`--format` <{_table_ , _csv_ , _json_}> format to show output in
-
-`--output` <FILE NAME> file to send output to (must use json or csv format)
-
-**Examples:**
-
 Copy
 
     
@@ -1828,60 +1997,12 @@ Copy
     device-approve --reload
     device-approve --output device_approvals.csv --format csv
 
-  1. Show list of pending device approvals
-
-  2. Approve user "John.Doe@gmail.com"
-
-  3. Refresh list of pending device approvals
-
-  4. Write list of pending device approvals to a file in csv format
-
-###
-
-**create-user command:**
-
-**Command:**`create-user`
-
-**Detail**
-
-Create a new account and vault for the given email address and create a record
-for the new user's credentials in the current Keeper vault.
-
-**Parameters:**
-
-User's email address
-
-**Switches:**
-
-`--name <Name>` user's name
-
-`--node <NODE>` name or ID of node to add user to
-
-`--record <RECORD UID>` UID of record that holds password for the new account
-
-`--folder <FOLDER NAME OR UID>` folder to store created user credentials in
-
-**Examples:**
-
 Copy
 
     
     
     create-user John.Doe@gmail.com
     create-user John.Doe@workplace.com --name "John Doe" --node Chicago
-
-  1. Create a new user account and vault for John.Doe@gmail.com 
-
-  2. Send an invitation to John Doe to join Keeper, name the new user "John Doe" and add him to the "Chicago" node
-
-####
-
-Onboarding with create-user Command
-
-When the create-user command is used to create a new user in the Keeper
-account, a record is created in the current logged in account with the new
-user's username and temporary password. Once the new record is created, it can
-be shared with the new user with a one-time share URL.
 
 Copy
 
@@ -1894,47 +2015,11 @@ Copy
     https://keepersecurity.com/vault/share#-Rkzr6w[...]wMw3fQ3kM
     
 
-The new user will follow this url to receive their temporary credentials and
-perform the first login.
-
-###
-
-transfer-user command:
-
-**Command:**`transfer-user`
-
-**Detail:** Lock account, then transfer a vault from one user to another.
-
-**Parameter:**
-
-Email or user ID of the vault to be transferred. More than one can be
-provided, separated by spaces.****
-
-**Switches:**
-
-`--target-user <USER EMAIL>` email address of user account to transfer the
-vault(s) to
-
-`--force, -f `do not prompt for confirmation
-
-Account Transfer must be enabled for the account or role the account is in.
-
-The contents of the transferred vault are placed in a folder in the
-recipient's vault.
-
-**Example:**
-
 Copy
 
     
     
      transfer-user keeperuser1@keepersecurity.com --target-user recipient@keepersecurity.com
-
-  1. Transfer the vault of keeperuser1@keepersecurity.com to recipient@keepersecurity.com.
-
-To perform a bulk transfer of user accounts, use the command: `transfer-user
-@filename` This will look for the file named filename that contains a FROM and
-TO mapping. For example:
 
 Copy
 
@@ -1942,20 +2027,6 @@ Copy
     
     user1@company.com -> user2@company.com
     user3@company.com -> user4@company.com
-
-###
-
-automator command:
-
-**Command** : `automator`
-
-**Detail** : Configures SSO Cloud device automators.
-
-Only the root-level Keeper Administrator role can manage the Automator
-configuration
-
-When the `automator` command is executed without parameters it displays the
-list of available automators as well as a command help.
 
 Copy
 
@@ -1993,10 +2064,6 @@ Copy
      --set              edit : KEY=VALUE
     
 
-**Examples:**
-
-Create automator with name "Cloud SSO Device Approval".
-
 Copy
 
     
@@ -2009,9 +2076,6 @@ Copy
                  Enabled: No                  
              Initialized: No                  
                   Skills: Device Approval
-
-Edit automator to set the Webhook URL. The Webhook URL is provided by the
-Automator application.
 
 Copy
 
@@ -2026,18 +2090,11 @@ Copy
              Initialized: No                  
                   Skills: Device Approval       
 
-Skills (Team Approvals, Team-User Approvals, Device Approvals) can be set with
-the "skill" argument. For example:
-
 Copy
 
     
     
     My Vault> automator edit --url https://<application URL> --skill=team --skill=team_for_user --skill=device "My Automator"
-
-Initialize the automator instance using "setup", "init" and "enable" commands.
-The backend verifies that the Automator is configured and ready to process
-requests.
 
 Copy
 
@@ -2046,17 +2103,6 @@ Copy
     My Vault> automator setup 888888888888
     My Vault> automator init 888888888888
     My Vault> automator enable 888888888888 
-
-###
-
-scim command
-
-**Command:**`scim`
-
-**Detail:** Configures SCIM endpoints
-
-When `scim` command is executed without parameters it displays the list of
-available SCIM endpoints as well as a command help.
 
 Copy
 
@@ -2087,10 +2133,6 @@ Copy
      --force            delete : Do not ask for delete confirmation
     
 
-**Examples:**
-
-Create SCIM endpoint for node `SCIM Node`
-
 Copy
 
     
@@ -2102,9 +2144,6 @@ Copy
     Provisioning Token: yIiq6Y4FnWtOPtqatUzZH7BI4FaUNhIbwEtDT5esL-g
     
 
-Edit SCIM endpoint configuration. Editing SCIM endpoint generates a new
-provisioning token
-
 Copy
 
     
@@ -2115,8 +2154,6 @@ Copy
     SCIM URL: https://keepersecurity.com/api/rest/scim/v2/7777777777777
     Provisioning Token: 6oykLqC2-d20Sy3N2d-HKZtGzOt63U60rJz8CLagszY
     
-
-Delete SCIM endpoint
 
 Copy
 
@@ -2131,36 +2168,11 @@ Copy
     SCIM endpoint "888888888888" at node "7777777777777" deleted
     
 
-Push group and user data to SCIM endpoint
-
 Copy
 
     
     
     My Vault> scim push 820338837203 --source=google --record=AW6XZoJr8VM3rlFoxW_6rg
-
-**Switches**
-
-`--source `Source of SCIM data. Available values: `google, ad`
-
-`--record `Record UID with SCIM configuration
-
-####
-
-Configuring SCIM source for push
-
-  *   *   * 
-
-###
-
-audit-alert command
-
-**Command:**`audit-alert`
-
-**Detail:** Manages Audit Alerts
-
-When `audit-alert` is executed without parameters it displays the list of
-available alerts as well as a command help
 
 Copy
 
@@ -2178,15 +2190,11 @@ Copy
      reset-counts       Reset alert counts
      recipient          Modify alert recipients  
 
-To get help on command run
-
 Copy
 
     
     
     My Vault> audit-alert <command> -h
-
-`list` options
 
 Copy
 
@@ -2204,8 +2212,6 @@ Copy
     
     My Vault> audit-alert list --reload
     My Vault> aa l
-
-`view` options
 
 Copy
 
@@ -2231,8 +2237,6 @@ Copy
                     Status  Enabled
                   Email To  admin@company.com
 
-`history` options
-
 Copy
 
     
@@ -2248,8 +2252,6 @@ Copy
     ---------------       -------------
     2023-02-10 18:55:00              1
 
-`delete` options
-
 Copy
 
     
@@ -2261,8 +2263,6 @@ Copy
     
     
     My Vault> audit-alert delete "Failed Login"    
-
-`add` options
 
 Copy
 
@@ -2283,8 +2283,6 @@ Copy
     
     
     My Vault> audit-alert add --name="Failed Login" --frequency=event --audit-event=login_failure
-
-`edit` options
 
 Copy
 
@@ -2308,8 +2306,6 @@ Copy
     
     My Vault> audit-alert edit --frequency=2:hour   
 
-`reset-counts` options
-
 Copy
 
     
@@ -2321,8 +2317,6 @@ Copy
     
     
     My Vault> audit-alert reset-counts 1       
-
-`recipient` options
 
 Copy
 
@@ -2339,8 +2333,6 @@ Copy
         edit                edit recipient
     
 
-`recipient enable,` `disable. or delete` options
-
 Copy
 
     
@@ -2356,8 +2348,6 @@ Copy
     My Vault> audit-alert recipient 1 disable Administrator
     # disables recipient by name
     My Vault> audit-alert recipient 1 delete 1
-
-`recipient add or edit` options
 
 Copy
 
@@ -2384,83 +2374,33 @@ Copy
     My Vault> aa r 1 edit 1 --email= --phone="+1(555)555-1234"
     # change recipient #1 on alert # 1 from email to Text Message
 
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+
+# Enterprise Management Commands
+
+Commands related to Admin Console and Enterprise Management functions
+
 [PreviousReport Types](/en/keeperpam/commander-cli/command-
 reference/reporting-commands/report-types)[NextCreating and Inviting
 Users](/en/keeperpam/commander-cli/command-reference/enterprise-management-
 commands/creating-and-inviting-users)
 
-Last updated 3 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
-or `ei`
-
-or `eu`
-
-or `er`
-
-or `et`
-
-or `en`
-
-or `ed`
-
-`--add-alias` <EMAIL> Add an alias, in the form of an email address, to a
-user. The alias added will become the "primary" email for the user. Applying
-the command to an existing alias will set it as primary. Note that this
-command is only permitted on .
-
-Example restricting the "Engineering" role to accessimport records.
-
-`--invite-email` <FILE_NAME> Sets invite email template from file. Saves
-current template if file does not exist. dash (-) use stdout. See  section
-below.
-
-Custom Emails can also be formatted using markdown syntax, for more
-information please refer to this .
-
-Invitation Email for Chicago Branch
-
-Invitation Email for Tokyo Branch
-
-To invite new users to an enterprise see the
-
-An Automator is a program running at a customer site that can perform some
-Keeper administrative actions such as performing device approvals or team
-approvals. More information about the Keeper Automator service is .
-
-For more information about the Keeper Automator for SSO device approvals, see
-the  documentation.
+  * Commands
+  * enterprise-info command
+  * enterprise-user command
+  * enterprise-role command
+  * enterprise-team command
+  * enterprise-node command
+  * enterprise-push command
+  * enterprise-down command
+  * team-approve command
+  * device-approve command
+  * create-user command:
+  * transfer-user command:
+  * automator command:
+  * scim command
+  * audit-alert command
 
 [reserved domains](https://docs.keeper.io/enterprise-guide/domain-reservation)
 
@@ -2475,19 +2415,50 @@ approvals/automator)
 [Automator Service](https://docs.keeper.io/sso-connect-cloud/device-
 approvals/automator)
 
-![Invitation email received by users in the Chicago
-Branch](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FcGqbto7AdrZMnrm7G4vd%252FchicagoEmail.png%3Falt%3Dmedia%26token%3Df4a4eeb0-2d47-4743-9b95-93a7808c9f1a&width=768&dpr=4&quality=100&sign=8f20fb25&sv=2)
+Command
 
-![Invitation email received by users in the Tokyo
-Branch](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDIwQfZfBuxGmia8dctBN%252FtokyoEmail.png%3Falt%3Dmedia%26token%3Dc05c82a8-22e2-4561-ac66-632fa1e9ea29&width=768&dpr=4&quality=100&sign=ecaf6e90&sv=2)
+Explanation
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FypuLYiCDVq8kq6326YrV%252Fimage.png%3Falt%3Dmedia%26token%3D71273e08-c146-464b-be53-bdea3df18a2b&width=768&dpr=4&quality=100&sign=ec90dd26&sv=2)
+Display enterprise information
+
+Manage enterprise users
+
+Manage enterprise roles and policies
+
+Manage enterprise teams
+
+Manage enterprise nodes
+
+Populate user and team vaults with predetermined records
+
+Download & decrypt enterprise data
+
+Approve queued teams and users provisioned by SCIM or Active Directory Bridge
+
+Approve SSO Cloud devices that are pending from end-users
+
+Create a new user and vault, and add a record to the current vault with that
+user's credentials
+
+Transfer an account to another user
+
+Manage SSO Cloud Automator for Device Approvals
+
+Manage SCIM endpoints
+
+Manage Audit Alerts
+
+or `ei`
+
+or `eu`
+
+or `er`
+
+or `et`
+
+or `en`
+
+or `ed`
 
 [Common configuration steps](/en/keeperpam/commander-cli/command-
 reference/enterprise-management-commands/scim-push-configuration#common-for-
@@ -2546,4 +2517,33 @@ commands#scim-command)
 
 [`audit-alert`](/en/keeperpam/commander-cli/command-reference/enterprise-
 management-commands#audit-alert-command)
+
+[865BemailChicago.txt](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
+x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FYmVg7TjewlDNMViY0cjf%2FemailChicago.txt?alt=media&token=0afc8b59-f4eb-4ea9-b37d-69ac874a6e6e)
+
+Email Template File for Chicago
+
+[1KBemailTokyo.txt](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FpbyNGukCIzDtZki3HGvF%2FemailTokyo.txt?alt=media&token=248288c2-6896-4e66-8ac9-a62046a95dee)
+
+Email Template File for Tokyo
+
+Invitation Email for Chicago Branch
+
+Invitation Email for Tokyo Branch
+
+![Invitation email received by users in the Chicago
+Branch](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FcGqbto7AdrZMnrm7G4vd%252FchicagoEmail.png%3Falt%3Dmedia%26token%3Df4a4eeb0-2d47-4743-9b95-93a7808c9f1a&width=768&dpr=4&quality=100&sign=8f20fb25&sv=2)
+
+![Invitation email received by users in the Tokyo
+Branch](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDIwQfZfBuxGmia8dctBN%252FtokyoEmail.png%3Falt%3Dmedia%26token%3Dc05c82a8-22e2-4561-ac66-632fa1e9ea29&width=768&dpr=4&quality=100&sign=ecaf6e90&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FypuLYiCDVq8kq6326YrV%252Fimage.png%3Falt%3Dmedia%26token%3D71273e08-c146-464b-be53-bdea3df18a2b&width=768&dpr=4&quality=100&sign=ec90dd26&sv=2)
 

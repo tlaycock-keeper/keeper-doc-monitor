@@ -243,13 +243,13 @@ manager/integrations/teamcity?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -524,7 +524,11 @@ Prerequisites
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
     * The TeamCity plugin accepts Base 64 format configurations
 
@@ -599,7 +603,9 @@ and configure it as described below.
 
   * Select **Keeper Vault** as the connection type.
 
-  *   * Save the connection.
+  * Specify the token - paste a valid KSM config _(see_[ _Prerequisites_](/en/keeperpam/secrets-manager/integrations/teamcity#prerequisites) _)_.
+
+  * Save the connection.
 
 ###
 
@@ -683,21 +689,6 @@ variables etc. _Check the examples below._
   * Environment variable `env.User` \- `keeper:abcdABCDabcdABCDuvwxyz/field/login`
 
   * Environment variable `env.Secret` \- `keeper://MyRecord1/custom_field/Secret1`
-
-A Keeper  with secrets shared to it
-
-See the  for instructions on creating an Application
-
-Specify the token - paste a valid KSM config _(see_ _)_.
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
-[_Prerequisites_](/en/keeperpam/secrets-
-manager/integrations/teamcity#prerequisites)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 
 Adding connection of type Keeper Vault
 

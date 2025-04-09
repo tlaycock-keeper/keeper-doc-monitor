@@ -243,13 +243,13 @@ manager/getting-started/gateways/auto-updater?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -597,6 +597,12 @@ New Gateway
 
   * This setup option will create a new Task Scheduler task for updating the Gateway.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIVb77fSHLENBCICa4kGc%252Fimage.png%3Falt%3Dmedia%26token%3Da74167f2-c46c-4548-bf82-1a44ab719539&width=768&dpr=4&quality=100&sign=5894a0eb&sv=2)
+
+Windows Automatic Updates
+
 **Existing Gateway**
 
   * Open a command prompt as Administrator.
@@ -699,11 +705,27 @@ Configure the update frequency and other settings with the following steps:
 
   * Run `taskschd.msc` to open Windows Task Scheduler.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9R0nfNJVPTwAkHePdcaP%252Fimage.png%3Falt%3Dmedia%26token%3D649c4117-2e17-40c8-a07e-66624d411c19&width=768&dpr=4&quality=100&sign=bff8be29&sv=2)
+
   * In the left pane double-click on Task Scheduler Library -> Keeper -> Gateway -> AutoUpdate to show the Auto Updater Task.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fz58USWZNQlLP5Alvonau%252Fimage.png%3Falt%3Dmedia%26token%3D1c645547-8a96-45a0-badb-7ebd2803ff03&width=768&dpr=4&quality=100&sign=3590994f&sv=2)
 
   * In the upper middle pane double-click on the AutoUpdate Task with the name of the current version and click on the Triggers menu tab.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8BFeFROeVqmC8KhlQPZL%252Fimage.png%3Falt%3Dmedia%26token%3D27c9dfc8-a8a7-4b83-877f-7a638cd5b710&width=768&dpr=4&quality=100&sign=5f7dd22&sv=2)
+
   * Click `Edit...` to change when the Auto Updater checks for a new update to install. The default is to "Repeat task every 1 hour indefinitely" as shown below.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTEpWJKKgJos84Q5jNeZS%252Fimage.png%3Falt%3Dmedia%26token%3D5248f4c6-c27f-41cd-830e-63542633c63e&width=768&dpr=4&quality=100&sign=e3507b53&sv=2)
 
 ##
 
@@ -836,26 +858,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-Windows Automatic Updates
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIVb77fSHLENBCICa4kGc%252Fimage.png%3Falt%3Dmedia%26token%3Da74167f2-c46c-4548-bf82-1a44ab719539&width=768&dpr=4&quality=100&sign=5894a0eb&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9R0nfNJVPTwAkHePdcaP%252Fimage.png%3Falt%3Dmedia%26token%3D649c4117-2e17-40c8-a07e-66624d411c19&width=768&dpr=4&quality=100&sign=bff8be29&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fz58USWZNQlLP5Alvonau%252Fimage.png%3Falt%3Dmedia%26token%3D1c645547-8a96-45a0-badb-7ebd2803ff03&width=768&dpr=4&quality=100&sign=3590994f&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8BFeFROeVqmC8KhlQPZL%252Fimage.png%3Falt%3Dmedia%26token%3D27c9dfc8-a8a7-4b83-877f-7a638cd5b710&width=768&dpr=4&quality=100&sign=5f7dd22&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTEpWJKKgJos84Q5jNeZS%252Fimage.png%3Falt%3Dmedia%26token%3D5248f4c6-c27f-41cd-830e-63542633c63e&width=768&dpr=4&quality=100&sign=e3507b53&sv=2)
 

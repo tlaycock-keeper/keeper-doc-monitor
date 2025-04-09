@@ -243,13 +243,13 @@ manager/discovery/discovery-using-the-vault?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -425,38 +425,6 @@ manager/discovery/discovery-using-the-vault?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Prerequisites 
-  * Discovery
-  * Create a Discovery Job
-  * Discovery Rules
-  * Job Queue
-  * Process Results
-  * Publish Found Resources
-  * Next Steps
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=mEqrws5aL2q4iEcsxjFh&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Discovery](/en/keeperpam/privileged-access-manager/discovery)
-
-# Discovery using the Vault
-
-Running Discovery using the Keeper Vault user interface
-
-[PreviousDiscovery using Commander](/en/keeperpam/privileged-access-
-manager/discovery/discovery-using-commander)[NextOn-Prem Connection
-Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
-
-Last updated 17 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -487,6 +455,38 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Overview
+  * Prerequisites 
+  * Discovery
+  * Create a Discovery Job
+  * Discovery Rules
+  * Job Queue
+  * Process Results
+  * Publish Found Resources
+  * Next Steps
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=mEqrws5aL2q4iEcsxjFh&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Discovery](/en/keeperpam/privileged-access-manager/discovery)
+
+# Discovery using the Vault
+
+Running Discovery using the Keeper Vault user interface
+
+[PreviousDiscovery using Commander](/en/keeperpam/privileged-access-
+manager/discovery/discovery-using-commander)[NextOn-Prem Connection
+Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
+
+Last updated 18 days ago
+
+Was this helpful?
+
 ###
 
 Overview
@@ -498,9 +498,7 @@ infrastructure using Discovery with the Keeper Vault and Desktop App.
 
 Prerequisites
 
-Prior to using Discovery, make sure to review the [Discovery
-Basics](/en/keeperpam/privileged-access-manager/discovery/discovery-basics)
-documentation.
+Prior to using Discovery, make sure to review the  documentation.
 
 ###
 
@@ -508,6 +506,8 @@ Discovery
 
 From the Keeper Vault, click on the Discovery section. Click on "Create
 Discovery Job" to start a discovery process.
+
+Empty State - Discovery Module
 
 When discovery jobs are either running, failed, or completed states, the jobs
 will display on the Discovery screen.
@@ -590,8 +590,6 @@ running another job against the same Gateway and PAM Configuration. If Admin
 Credentials have been linked to KeeperPAM Resources, these credentials will be
 used to discover local user accounts within each resource.
 
-Empty State - Discovery Module
-
 Discovery Status
 
 New Discovery Job
@@ -607,6 +605,9 @@ Queue PAM Resources to Folder
 Queue PAM Users to Folder
 
 Publish Findings
+
+[Discovery Basics](/en/keeperpam/privileged-access-
+manager/discovery/discovery-basics)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

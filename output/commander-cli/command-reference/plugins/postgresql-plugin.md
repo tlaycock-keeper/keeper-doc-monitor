@@ -243,13 +243,13 @@ reference/plugins/postgresql-plugin?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -449,6 +449,44 @@ Ql&only=yes&limit=100)
 
 Rotate PostgreSQL database passwords with Commander
 
+[PreviousOracle Plugin](/en/keeperpam/commander-cli/command-
+reference/plugins/oracle-plugin)[NextPSPasswd Plugin](/en/keeperpam/commander-
+cli/command-reference/plugins/pspasswd-plugin)
+
+Last updated 2 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 Keeper has also launched a zero-trust Password Rotation feature with
 KeeperPAM. This new capability is recommended for most password rotation use
 cases. The Documentation is linked below:
@@ -485,9 +523,7 @@ Rotation supports legacy and typed records. If using typed record, a 'Login'
 type field is required. Additional fields may be added depending on the
 rotation type as well. See the instructions below.
 
-See the [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-
-commander-cli#typed-vs-untyped-records-v3-vs-v2)section for more information
-on legacy vs typed records
+See the section for more information on legacy vs typed records
 
 ###
 
@@ -496,9 +532,19 @@ Set the PostgreSQL Login Name and Password
 **Populate the 'Login' field of the Keeper record with the PostgreSQL login
 name**
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4TNMCZKhejp3vlE8tBCN%252Fimage.png%3Falt%3Dmedia%26token%3D4cfaa6bd-a624-4e25-aea3-38d59984e901&width=768&dpr=4&quality=100&sign=c058d501&sv=2)
+
+Commander will use the login and password to login to the PostgreSQL account
+
 ###
 
 Set the Hostname and Port
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fqo9RDE4VL2UddhfXobQn%252Fimage.png%3Falt%3Dmedia%26token%3Dcd25a90a-e050-4263-bb09-391ea39e4035&width=768&dpr=4&quality=100&sign=cd09000f&sv=2)
 
 If using an untyped record, the host and port can be set to custom fields. See
 below.
@@ -513,6 +559,10 @@ Enter the Database Name
 
 Add a custom field to the record labeled "cmdr:db" and fill the field with the
 name of the database to use.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwoGgeVwEBlsI9B4g7ffZ%252Fimage.png%3Falt%3Dmedia%26token%3Df4950821-af11-48d5-bf7b-b92322d22e69&width=768&dpr=4&quality=100&sign=4fea8ee7&sv=2)
 
 ###
 
@@ -569,63 +619,15 @@ psql --host=${cmdr:host} --port=${cmdr:port} --username=${login}
 
 Here's a screenshot of the Keeper Vault record for this use case:
 
+A Keeper Record setup for connection
+
 For more information on the `connect` command, see the
+
 [documentation](/en/keeperpam/commander-cli/command-
 reference/plugins/password-rotation#connect-command)
 
-[PreviousOracle Plugin](/en/keeperpam/commander-cli/command-
-reference/plugins/oracle-plugin)[NextPSPasswd Plugin](/en/keeperpam/commander-
-cli/command-reference/plugins/pspasswd-plugin)
-
-Last updated 2 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
-Commander will use the login and password to login to the PostgreSQL account
-
-A Keeper Record setup for connection
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4TNMCZKhejp3vlE8tBCN%252Fimage.png%3Falt%3Dmedia%26token%3D4cfaa6bd-a624-4e25-aea3-38d59984e901&width=768&dpr=4&quality=100&sign=c058d501&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fqo9RDE4VL2UddhfXobQn%252Fimage.png%3Falt%3Dmedia%26token%3Dcd25a90a-e050-4263-bb09-391ea39e4035&width=768&dpr=4&quality=100&sign=cd09000f&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwoGgeVwEBlsI9B4g7ffZ%252Fimage.png%3Falt%3Dmedia%26token%3Df4950821-af11-48d5-bf7b-b92322d22e69&width=768&dpr=4&quality=100&sign=4fea8ee7&sv=2)
+[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
+cli#typed-vs-untyped-records-v3-vs-v2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

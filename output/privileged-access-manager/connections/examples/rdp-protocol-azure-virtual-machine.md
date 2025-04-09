@@ -253,13 +253,13 @@ manager/connections/examples/rdp-protocol-azure-virtual-machine?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -643,6 +643,10 @@ Once you have configured the RDP Protocol connection on your PAM Machine
 Record, your record will contain the following connection banner with the
 "Launch" Button:
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZBUDyxfsAtkjADjosOn0%252Fazurerdpconn.png%3Falt%3Dmedia%26token%3D3df39c9a-6214-4842-9b3d-ad63a6ead05a&width=768&dpr=4&quality=100&sign=1ec3568e&sv=2)
+
 In the above image, an Azure Virtual Machine has been configured on the PAM
 Machine Record. When clicking launch, the Vault Client will render a window
 with the established connection protocol to the specified target:
@@ -680,8 +684,4 @@ machine#step-4-create-and-configure-pam-machine-and-pam-user-s-records)
 Protocol](/en/keeperpam/privileged-access-manager/connections/examples/rdp-
 protocol-azure-virtual-machine#step-5-configuring-pam-settings-and-rdph-
 protocol)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZBUDyxfsAtkjADjosOn0%252Fazurerdpconn.png%3Falt%3Dmedia%26token%3D3df39c9a-6214-4842-9b3d-ad63a6ead05a&width=768&dpr=4&quality=100&sign=1ec3568e&sv=2)
 

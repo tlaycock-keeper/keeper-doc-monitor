@@ -243,13 +243,13 @@ manager/integrations/azure-key-vault?fallback=true)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
 
-  * Privilege Manager
+  * Endpoint Privilege Manager
 
-    * [Overview](/en/keeperpam/privilege-manager/overview)
-    * [Setup](/en/keeperpam/privilege-manager/setup)
-    * [Deployment](/en/keeperpam/privilege-manager/deployment)
-    * [Policies](/en/keeperpam/privilege-manager/policies)
-    * [Managing Requests](/en/keeperpam/privilege-manager/managing-requests)
+    * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
+    * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+    * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+    * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -519,7 +519,11 @@ Prerequisites
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An Azure account with Key Vault, and the ability to create security principals
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * An Azure account with Key Vault, and the ability to create security principals
 
 ##
 
@@ -552,6 +556,10 @@ the connection. The Azure account with Key vault needs to enable a service
 principal with authorization to perform key operations in the Key Vault.
 
 Follow the Microsoft guide for setting up a service principal:
+
+[![Logo](https://docs.microsoft.com/favicon.ico)Apps & service principals in
+Azure AD - Microsoft identity platformdocsmsft](https://docs.microsoft.com/en-
+us/azure/active-directory/develop/app-objects-and-service-principals)
 
 ###
 
@@ -679,20 +687,6 @@ values from your Keeper Vault to Azure Key Vault
 TIP: you can use `-m` as short hand for `--map`
 
 `ksm sync --type azure --credentials [UID] -m [...] -m [...]`
-
-A Keeper  with secrets shared to it
-
-See the  for instructions on creating an Application
-
-[![Logo](https://docs.microsoft.com/favicon.ico)Apps & service principals in
-Azure AD - Microsoft identity platformdocsmsft](https://docs.microsoft.com/en-
-us/azure/active-directory/develop/app-objects-and-service-principals)
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
