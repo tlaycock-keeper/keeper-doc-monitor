@@ -508,7 +508,9 @@ it on the commander interactive shell or view it on the Keeper Web Vault and
 Desktop App (as seen below).
 
 For more information on running Commander commands with a configuration file,
-see the [documentation](/en/keeperpam/commander-cli/commander-installation-
+see the
+
+[documentation](/en/keeperpam/commander-cli/commander-installation-
 setup/logging-in#running-commands-from-the-configuration-file)
 
 Locate Record UID

@@ -681,7 +681,7 @@ rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mysql)[NextAWS
 RDS for PostgreSQL](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/aws/managed-database/aws-rds-for-postgresql)
 
-Last updated 1 month ago
+Last updated 2 months ago
 
 Was this helpful?
 

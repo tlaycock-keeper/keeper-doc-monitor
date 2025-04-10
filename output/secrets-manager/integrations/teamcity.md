@@ -524,11 +524,7 @@ Prerequisites
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
-
-    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
-
-  * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
     * The TeamCity plugin accepts Base 64 format configurations
 
@@ -603,9 +599,7 @@ and configure it as described below.
 
   * Select **Keeper Vault** as the connection type.
 
-  * Specify the token - paste a valid KSM config _(see_[ _Prerequisites_](/en/keeperpam/secrets-manager/integrations/teamcity#prerequisites) _)_.
-
-  * Save the connection.
+  *   * Save the connection.
 
 ###
 
@@ -689,6 +683,21 @@ variables etc. _Check the examples below._
   * Environment variable `env.User` \- `keeper:abcdABCDabcdABCDuvwxyz/field/login`
 
   * Environment variable `env.Secret` \- `keeper://MyRecord1/custom_field/Secret1`
+
+A Keeper  with secrets shared to it
+
+See the  for instructions on creating an Application
+
+Specify the token - paste a valid KSM config _(see_ _)_.
+
+[_Prerequisites_](/en/keeperpam/secrets-
+manager/integrations/teamcity#prerequisites)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 Adding connection of type Keeper Vault
 

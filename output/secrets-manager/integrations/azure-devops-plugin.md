@@ -451,43 +451,11 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MkdGn1N1lF_5f78svDz&only=yes&limit=100)
 Keeper Secrets Manager integration into Azure DevOps for dynamic secrets
 retrieval
 
-[PreviousAWS KMS](/en/keeperpam/secrets-manager/integrations/aws-
-kms)[NextAzure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-
-key-vault)
-
-Last updated 8 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdGjPJbTbFffW4s1-f%252F-MkdGtOxU6O3kUM7r2jV%252Fazuredevops-
+plugin-
+header.jpg%3Falt%3Dmedia%26token%3D151310a1-d682-4973-ab09-b9815c8cf9cb&width=768&dpr=4&quality=100&sign=8989003a&sv=2)
 
 ##
 
@@ -515,7 +483,11 @@ utilize this integration, you will need:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
     * The Azure DevOps integration accepts JSON and Base64 format configurations
 
@@ -531,8 +503,16 @@ Download from the [Visual Studio Marketplace
 here](https://marketplace.visualstudio.com/items?itemName=KeeperSecurity.keeper-
 secrets-manager) or search for "Keeper Secrets Manager"
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVvqLlBdgCg8KCBGkcqeM%252Fmarketplace%2520image%2520cropped.png%3Falt%3Dmedia%26token%3Dcff51556-9ff4-4e05-8f7b-bb374d16f36f&width=768&dpr=4&quality=100&sign=74fdcea6&sv=2)
+
 Enable the extension for your Azure organization by selecting an organization
 and clicking "Download".
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHuh9CWdwe0laT7gQ3SBe%252Fchoose%2520org.png%3Falt%3Dmedia%26token%3Dbf61e101-20a2-4229-9dde-11f3532cc616&width=768&dpr=4&quality=100&sign=697f4bb&sv=2)
 
 ##
 
@@ -586,7 +566,7 @@ need:
 
     * The Azure DevOps Extension accepts JSON and base64 configurations. 
 
-  * 
+  * One or more [Secret queries](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin#keeper-secret-queries) (See query syntax below)
 
 While it is possible to simply copy a Keeper Secrets Manager configuration
 into the pipeline, we recommend keeping the Secrets Manager configuration in
@@ -903,40 +883,49 @@ Copy
         - bash: |
             echo "password retrieved from job 'ksmSecrets', step 'pwdFromKsmSecrets', out variable 'setKsmSecretsStep.out_password':$(pwdFromKsmSecrets)"
 
-A Keeper  with secrets shared to it
+[PreviousAWS KMS](/en/keeperpam/secrets-manager/integrations/aws-
+kms)[NextAzure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-
+key-vault)
 
-See the  for instructions on creating an Application
+Last updated 8 months ago
 
-One or more  (See query syntax below)
+Was this helpful?
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
+#### Company
 
-[Secret queries](/en/keeperpam/secrets-manager/integrations/azure-devops-
-plugin#keeper-secret-queries)
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
+#### Support
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVvqLlBdgCg8KCBGkcqeM%252Fmarketplace%2520image%2520cropped.png%3Falt%3Dmedia%26token%3Dcff51556-9ff4-4e05-8f7b-bb374d16f36f&width=768&dpr=4&quality=100&sign=74fdcea6&sv=2)
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdGjPJbTbFffW4s1-f%252F-MkdGtOxU6O3kUM7r2jV%252Fazuredevops-
-plugin-
-header.jpg%3Falt%3Dmedia%26token%3D151310a1-d682-4973-ab09-b9815c8cf9cb&width=768&dpr=4&quality=100&sign=8989003a&sv=2)
+#### Solutions
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWIoTCReEZPjRwPEB64hS%252Ffill%2520task.png%3Falt%3Dmedia%26token%3D2ae6fb1d-ed5d-4f84-8a7a-a512f1b0b24e&width=768&dpr=4&quality=100&sign=c2593a17&sv=2)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHuh9CWdwe0laT7gQ3SBe%252Fchoose%2520org.png%3Falt%3Dmedia%26token%3Dbf61e101-20a2-4229-9dde-11f3532cc616&width=768&dpr=4&quality=100&sign=697f4bb&sv=2)
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSIUOkIjVALVzmtOYLF18%252Ffind%2520task.png%3Falt%3Dmedia%26token%3D75fa26c0-83a9-48e8-b9c0-ebe8de0eb48c&width=768&dpr=4&quality=100&sign=7d4de9b&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWIoTCReEZPjRwPEB64hS%252Ffill%2520task.png%3Falt%3Dmedia%26token%3D2ae6fb1d-ed5d-4f84-8a7a-a512f1b0b24e&width=768&dpr=4&quality=100&sign=c2593a17&sv=2)
 

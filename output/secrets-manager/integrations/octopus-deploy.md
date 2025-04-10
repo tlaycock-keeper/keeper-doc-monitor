@@ -513,7 +513,11 @@ to utilize this integration, you will need:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
     * The Octopus Deploy integration accepts Base 64 format configurations
 
@@ -601,16 +605,6 @@ Copy
 `#{Keeper.SecretsManager.RetrieveSecrets.PrintVariableNames} `Write out the
 Octopus [output variable](https://octopus.com/docs/projects/variables/output-
 variables) names to the task log. Default: `False`
-
-A Keeper  with secrets shared to it
-
-See the  for instructions on creating an Application
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 
 Octopus Deploy Integration with Keeper Secrets Manager
 

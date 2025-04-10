@@ -449,7 +449,7 @@ Endpoint Privilege Manager is a Privileged Elevation and Delegation Management
 manager/references/preview-access)[NextSetup](/en/keeperpam/endpoint-
 privilege-manager/setup)
 
-Last updated 22 hours ago
+Last updated 1 day ago
 
 Was this helpful?
 
@@ -605,16 +605,13 @@ About this Guide
 
 This guide on Privilege Manager is broken down into the following sections:
 
-  *   *   *   * 
+  * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
 
-[Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+  * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
 
-[Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+  * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
 
-[Policies](/en/keeperpam/endpoint-privilege-manager/policies)
-
-[Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-
-requests)
+  * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
 
 Keeper Privilege Manager
 

@@ -423,6 +423,35 @@ manager/discovery?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * What is Keeper Discovery?
+  * Why use Keeper Discovery?
+  * Encryption and Security Model
+  * Features of Keeper Discovery
+  * Methodology
+  * How to use Discovery
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=8G0YDtlJoBhGZpfEnLqO&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Discovery
+
+Discover machines, databases, accounts and services across your on-prem and
+cloud infrastructure
+
+[PreviousIntegration with Git](/en/keeperpam/privileged-access-manager/ssh-
+agent/integration-with-git)[NextDiscovery Basics](/en/keeperpam/privileged-
+access-manager/discovery/discovery-basics)
+
+Last updated 23 days ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -452,35 +481,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * What is Keeper Discovery?
-  * Why use Keeper Discovery?
-  * Encryption and Security Model
-  * Features of Keeper Discovery
-  * Methodology
-  * How to use Discovery
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=8G0YDtlJoBhGZpfEnLqO&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# Discovery
-
-Discover machines, databases, accounts and services across your on-prem and
-cloud infrastructure
-
-[PreviousIntegration with Git](/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git)[NextDiscovery Basics](/en/keeperpam/privileged-
-access-manager/discovery/discovery-basics)
-
-Last updated 22 days ago
-
-Was this helpful?
 
 ##
 
@@ -530,7 +530,7 @@ within the customer's environment. The gateway encrypts findings and securely
 exchanges data with the Keeper Vault and privileged users via the Keeper
 Secrets Manager APIs.
 
-  * 
+  * For more information, see the [Architecture](/en/keeperpam/secrets-manager/about/architecture) section
 
 ##
 
@@ -562,7 +562,13 @@ After locating resources, a rules engine converts the findings into Keeper
 records and adds those resources to Shared Folders. The types of Keeper
 Records that can be created are:
 
-  *   *   *   * 
+  * [PAM Machines](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-machine)
+
+  * [PAM Databases](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database)
+
+  * [PAM Directories](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-directory)
+
+  * [PAM Users](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
 Once resources are discovered, the interactive discovery process enables users
 to link administrative credentials, such as username/password combinations or
@@ -582,34 +588,13 @@ How to use Discovery
 
 Discovery can be managed through the Keeper Commander CLI and the Vault UI.
 
-  *   *   * 
+  * [Discovery Basics](/en/keeperpam/privileged-access-manager/discovery/discovery-basics)
+
+  * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
+
+  * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
 The next section covers the basics on performing discovery with KeeperPAM.
-
-For more information, see the  section
-
-[Architecture](/en/keeperpam/secrets-manager/about/architecture)
-
-[PAM Machines](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
-[PAM Databases](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database)
-
-[PAM Directories](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-directory)
-
-[PAM Users](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
-[Discovery Basics](/en/keeperpam/privileged-access-
-manager/discovery/discovery-basics)
-
-[Discovery using Commander](/en/keeperpam/privileged-access-
-manager/discovery/discovery-using-commander)
-
-[Discovery using the Vault](/en/keeperpam/privileged-access-
-manager/discovery/discovery-using-the-vault)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

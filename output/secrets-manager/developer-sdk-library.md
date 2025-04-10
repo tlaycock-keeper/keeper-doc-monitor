@@ -419,46 +419,6 @@ library?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Installation
-  * Authentication
-  * Initialization
-  * Retrieve All Secrets
-  * Retrieve One Individual Secret
-  * Get Secrets By Record Title
-  * Get Secrets By Record UID
-  * Retrieve a Password
-  * Download a File Attachment
-  * Upload a File Attachment
-  * Retrieve TOTP Codes
-  * Update a Password
-  * Generate a Password
-  * Create a Secret
-  * Delete a Secret
-  * Script Integration
-  * Vault and Admin SDKs 
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-Mb78JDhdFdkK4on8h0C&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-
-# Developer SDKs
-
-Sample code and SDK integration instructions for Keeper Secrets Manager
-
-[PreviousPassword Rotation](/en/keeperpam/secrets-manager/password-
-rotation)[NextPython SDK](/en/keeperpam/secrets-manager/developer-sdk-
-library/python-sdk)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -488,6 +448,17 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-Mb78JDhdFdkK4on8h0C&only=yes&limit=100)
+
+Last updated 3 months ago
+
+Was this helpful?
 
 ##
 
@@ -523,12 +494,6 @@ Add the following dependency to your project:
 
 The JavaScript SDK supports Node version `11` through `16.12.0`
 
-Copy
-
-    
-    
-    pip3 install -U keeper-secrets-manager-core
-
 The Python SDK supports Python version `3.6` through `3.10`
 
 `dotnet add package Keeper.SecretsManager`
@@ -536,6 +501,190 @@ The Python SDK supports Python version `3.6` through `3.10`
 The .Net SDK supports .Net version `4.7` and `4.8`
 
 Or .Net Core version `2.1` and later
+
+The GoLang SDK supports GoLang version `1.13` and later
+
+##
+
+Authentication
+
+##
+
+Initialization
+
+JavaJavaScriptPython.NetGoLang
+
+After a config file has been initialized, the One-Time Access Token should be
+removed from code
+
+This initialization code will create a JSON configuration file on the device
+local storage with the following keys:
+
+The following is an example of a generated configuration file:
+
+##
+
+Retrieve All Secrets
+
+JavaJavaScriptPython.NetGoLang
+
+These examples assumes a Secrets Manager config file has already been
+initialized.
+
+##
+
+Retrieve One Individual Secret
+
+###
+
+Get Secrets By Record Title
+
+JavaJavaScriptPython.NetGoLang
+
+###
+
+Get Secrets By Record UID
+
+In this example, the Record UID is `XXX`
+
+JavaJavaScriptPython.NetGoLang
+
+With a secret retrieved, individual fields can be retrieved from the secret.
+
+These examples assumes a Secrets Manager config file has already been
+initialized.
+
+##
+
+Retrieve a Password
+
+Example to retrieve an individual record password field.
+
+In this example, the Record UID is `XXX`
+
+JavaJavaScriptPython.NetGoLang
+
+These examples assumes a Secrets Manager config file has already been
+initialized.
+
+##
+
+Download a File Attachment
+
+JavaJavaScriptPython.NetGoLang
+
+These examples assumes a Secrets Manager config file has already been
+initialized.
+
+##
+
+Upload a File Attachment
+
+JavaJavaScriptPython.NetGoLang
+
+These examples assumes a Secrets Manager config file has already been
+initialized
+
+##
+
+Retrieve TOTP Codes
+
+JavaJavaScriptPython.NetGoLang
+
+These examples assumes a Secrets Manager config file has already been
+initialized.
+
+##
+
+Update a Password
+
+JavaJavaScriptPython.NetGoLang
+
+###
+
+Generate a Password
+
+JavaJavaScriptPython.NetGoLang
+
+These examples assumes a Secrets Manager config file has already been
+initialized.
+
+##
+
+Create a Secret
+
+The Secrets Manager SDKs provide the ability to create records in the Keeper
+vault.
+
+The UID of a shared folder that your Secrets Manager Application has access to
+is required to create records. You must also have edit permissions in the
+shared folder, and there must be at least one other record in the folder. The
+new record will be placed in that folder. In the examples below, replace
+`[FOLDER UID]` with the shared folder's UID.
+
+JavaJavaScriptPython.NetGoLang
+
+##
+
+Delete a Secret
+
+Secrets Manager can be used to delete records from the Keeper Vault.
+
+In order to delete a record, the Secrets Manager application must have access
+to the shared folder that the record is in, and the application must have edit
+capability. The record UID is required by Secrets Manager SDKs in order to
+delete the record.
+
+JavaJavaScriptPython.NetGoLang
+
+##
+
+Script Integration
+
+Keeper Secrets Manager CLI provides a wrapper function that executes any
+arbitrary system call and replaces environmental variables with values from
+the Keeper Vault.
+
+##
+
+Vault and Admin SDKs
+
+For higher level functionality at the Vault and Administrative level, please
+see the Vault SDKs page which contains links to various development tools.
+
+The Secrets Manager SDK authenticates to the Keeper Vault using either the One
+Time Access Token or using the generated keys within the local configuration
+file. To generate one or more One Time Access Tokens from  use the `secrets-
+manager client add` command.
+
+Secrets Manager SDKs utilize a configuration file to hold connection tokens
+and settings. The following code samples show how to create a configuration
+file with the SDKs and an :
+
+For information on other ways to create a config file, see the .
+
+See the section for how to initialize a config file.
+
+See the section for how to initialize a config file.
+
+See the section for how to initialize a config file.
+
+See the section for how to initialize a config file.
+
+See the section for how to initialize a config file.
+
+See the section for how to initialize a config file.
+
+See the section for how to initialize a config file.
+
+Additional secret creation features and  and  validation coming in future
+releases of Keeper Secrets Manager
+
+Copy
+
+    
+    
+    pip3 install -U keeper-secrets-manager-core
 
 Copy
 
@@ -546,18 +695,6 @@ Copy
     	klog "github.com/keeper-security/secrets-manager-go/core/logger"
     )
 
-The GoLang SDK supports GoLang version `1.13` and later
-
-##
-
-Authentication
-
-The Secrets Manager SDK authenticates to the Keeper Vault using either the One
-Time Access Token or using the generated keys within the local configuration
-file. To generate one or more One Time Access Tokens from [Commander
-CLI](https://github.com/Keeper-Security/Commander) use the `secrets-manager
-client add` command.
-
 Copy
 
     
@@ -567,17 +704,6 @@ Copy
     ... login ...
     
     My Vault> secrets-manager client add --app MyApplication --unlock-ip
-
-##
-
-Initialization
-
-Secrets Manager SDKs utilize a configuration file to hold connection tokens
-and settings. The following code samples show how to create a configuration
-file with the SDKs and an [One-Time Access Token](/en/keeperpam/secrets-
-manager/about/one-time-token):
-
-JavaJavaScriptPython.NetGoLang
 
 Copy
 
@@ -710,12 +836,6 @@ Copy
     	print("Password: [", firstRecordPassword, "]")
     }
 
-After a config file has been initialized, the One-Time Access Token should be
-removed from code
-
-This initialization code will create a JSON configuration file on the device
-local storage with the following keys:
-
 **Key**
 
 **Description**
@@ -753,8 +873,6 @@ Application Private Key
 
 Application Owner's Public Key
 
-The following is an example of a generated configuration file:
-
 ksm-config.json
 
 Copy
@@ -769,16 +887,6 @@ Copy
       "appKey": "RzhSIyKxbpjNu045TUrKaNREYIns+Hk9Kn8YtT+CtK0=",
       "appOwnerPublicKey": "Sq1W1OAnTwi8V/Vs/lhsin2sfSoaRfOwwDDBqoP+EO9bsBMWCzQdl9ClauDiKLXGmlmyx2xmSAdH+hlxvBRs6kU="
     }
-
-For information on other ways to create a config file, see the [Config File
-documentation](/en/keeperpam/secrets-manager/about/secrets-manager-
-configuration).
-
-##
-
-Retrieve All Secrets
-
-JavaJavaScriptPython.NetGoLang
 
 Copy
 
@@ -901,19 +1009,6 @@ Copy
     	}
     }
 
-These examples assumes a Secrets Manager config file has already been
-initialized.
-
-##
-
-Retrieve One Individual Secret
-
-###
-
-Get Secrets By Record Title
-
-JavaJavaScriptPython.NetGoLang
-
 Copy
 
     
@@ -1031,14 +1126,6 @@ Copy
     	}
     }
 
-###
-
-Get Secrets By Record UID
-
-In this example, the Record UID is `XXX`
-
-JavaJavaScriptPython.NetGoLang
-
 Copy
 
     
@@ -1109,8 +1196,6 @@ Copy
     print("\tPassword: " + record.field('password')[0])
     
 
-With a secret retrieved, individual fields can be retrieved from the secret.
-
 Copy
 
     
@@ -1170,19 +1255,6 @@ Copy
     		println("UID", record.Uid, ", title [", record.Title(), "]")
     	}
     }
-
-These examples assumes a Secrets Manager config file has already been
-initialized.
-
-##
-
-Retrieve a Password
-
-Example to retrieve an individual record password field.
-
-In this example, the Record UID is `XXX`
-
-JavaJavaScriptPython.NetGoLang
 
 Copy
 
@@ -1290,15 +1362,6 @@ Copy
     		println("UID", record.Uid, ", Password [", passwordMethod1, "]")
     	}
     }
-
-These examples assumes a Secrets Manager config file has already been
-initialized.
-
-##
-
-Download a File Attachment
-
-JavaJavaScriptPython.NetGoLang
 
 Copy
 
@@ -1433,15 +1496,6 @@ Copy
     		file.SaveFile("/tmp/"+file.Name, true)
     	}
     }
-
-These examples assumes a Secrets Manager config file has already been
-initialized.
-
-##
-
-Upload a File Attachment
-
-JavaJavaScriptPython.NetGoLang
 
 Copy
 
@@ -1608,15 +1662,6 @@ Copy
     	sm.UploadFile(ownerRecord, myFile)
     }
 
-These examples assumes a Secrets Manager config file has already been
-initialized
-
-##
-
-Retrieve TOTP Codes
-
-JavaJavaScriptPython.NetGoLang
-
 Copy
 
     
@@ -1738,15 +1783,6 @@ Copy
     }
     
 
-These examples assumes a Secrets Manager config file has already been
-initialized.
-
-##
-
-Update a Password
-
-JavaJavaScriptPython.NetGoLang
-
 Copy
 
     
@@ -1863,12 +1899,6 @@ Copy
     		sm.Save(record)							// Save the secret with changes to the Keeper Vault
     	}
     }
-
-###
-
-Generate a Password
-
-JavaJavaScriptPython.NetGoLang
 
 Copy
 
@@ -1998,24 +2028,6 @@ Copy
     		sm.Save(record)							// Save the secret with changes to the Keeper Vault
     	}
     }
-
-These examples assumes a Secrets Manager config file has already been
-initialized.
-
-##
-
-Create a Secret
-
-The Secrets Manager SDKs provide the ability to create records in the Keeper
-vault.
-
-The UID of a shared folder that your Secrets Manager Application has access to
-is required to create records. You must also have edit permissions in the
-shared folder, and there must be at least one other record in the folder. The
-new record will be placed in that folder. In the examples below, replace
-`[FOLDER UID]` with the shared folder's UID.
-
-JavaJavaScriptPython.NetGoLang
 
 Copy
 
@@ -2168,19 +2180,6 @@ Copy
     	println("New record UID = [", recordUid, "]")
     }
 
-##
-
-Delete a Secret
-
-Secrets Manager can be used to delete records from the Keeper Vault.
-
-In order to delete a record, the Secrets Manager application must have access
-to the shared folder that the record is in, and the application must have edit
-capability. The record UID is required by Secrets Manager SDKs in order to
-delete the record.
-
-JavaJavaScriptPython.NetGoLang
-
 Copy
 
     
@@ -2250,67 +2249,73 @@ Copy
     	secrets, err = secretsManager.DeleteSecrets([]string{"EG6KdJaaLG7esRZbMnfbFA"})
     }
 
-##
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
 
-Script Integration
+# Developer SDKs
 
-Keeper Secrets Manager CLI provides a wrapper function that executes any
-arbitrary system call and replaces environmental variables with values from
-the Keeper Vault.
+Sample code and SDK integration instructions for Keeper Secrets Manager
+
+[PreviousPassword Rotation](/en/keeperpam/secrets-manager/password-
+rotation)[NextPython SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/python-sdk)
+
+  * Overview
+  * Installation
+  * Authentication
+  * Initialization
+  * Retrieve All Secrets
+  * Retrieve One Individual Secret
+  * Get Secrets By Record Title
+  * Get Secrets By Record UID
+  * Retrieve a Password
+  * Download a File Attachment
+  * Upload a File Attachment
+  * Retrieve TOTP Codes
+  * Update a Password
+  * Generate a Password
+  * Create a Secret
+  * Delete a Secret
+  * Script Integration
+  * Vault and Admin SDKs 
+
+[Commander CLI](https://github.com/Keeper-Security/Commander)
+
+[One-Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
+
+[Config File documentation](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration)
 
 [Secrets Manager CLI Exec Command](/en/keeperpam/secrets-manager/secrets-
 manager-command-line-interface/exec-command)
 
-##
-
-Vault and Admin SDKs
-
-For higher level functionality at the Vault and Administrative level, please
-see the Vault SDKs page which contains links to various development tools.
-
 [Vault SDKs](/en/keeperpam/secrets-manager/developer-sdk-library/vault-sdks)
 
-See the section for how to initialize a config file.
+[Record Type](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types)
 
-See the section for how to initialize a config file.
+[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)
 
-See the section for how to initialize a config file.
+[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)
 
-See the section for how to initialize a config file.
+[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)
 
-See the section for how to initialize a config file.
+[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)
 
-See the section for how to initialize a config file.
+[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)
 
-See the section for how to initialize a config file.
+[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)
 
-Additional secret creation features and [Record Type](/en/keeperpam/commander-
-cli/command-reference/record-commands/default-record-types) and  validation
-coming in future releases of Keeper Secrets Manager
+[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)
 
 [Record Fields](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

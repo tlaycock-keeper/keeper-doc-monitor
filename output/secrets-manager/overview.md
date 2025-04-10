@@ -484,8 +484,6 @@ development teams with a fully cloud-based, Zero-Knowledge platform for
 managing all of your infrastructure secrets such as API keys, Database
 passwords, access keys, certificates and any type of confidential data.
 
-Secrets Manager Video Demo
-
 Common use cases for Secrets Manager include:
 
   * Removing hard-coded credentials from source code
@@ -504,15 +502,7 @@ Common use cases for Secrets Manager include:
 
 Features
 
-**Keeper Secrets Manager** is part of the [Keeper Password Security
-platform](https://keepersecurity.com). With millions of users worldwide,
-Keeper Password Manager + Keeper Secrets Manager provides numerous benefits
-over using Hashicorp Vault, Delinea, Cyberark and other "legacy" Secrets
-Management products:
-
-  * Superior Zero-Knowledge encryption model ([learn more](https://docs.keeper.io/enterprise-guide/keeper-encryption-model))
-
-  * No hosted software or VMs to configure and manage (100% Cloud-based)
+  *   * No hosted software or VMs to configure and manage (100% Cloud-based)
 
   * Secure and user-friendly Web Vault and Browser Extensions for secrets management
 
@@ -548,8 +538,23 @@ Management products:
 
 Get Started
 
-Ready to get started with Keeper Secrets Manager? [Proceed to the Setup
-Instructions](/en/keeperpam/secrets-manager/quick-start-guide).
+**Keeper Secrets Manager** is part of the . With millions of users worldwide,
+Keeper Password Manager + Keeper Secrets Manager provides numerous benefits
+over using Hashicorp Vault, Delinea, Cyberark and other "legacy" Secrets
+Management products:
+
+Superior Zero-Knowledge encryption model ()
+
+Ready to get started with Keeper Secrets Manager? .
+
+[Keeper Password Security platform](https://keepersecurity.com)
+
+[learn more](https://docs.keeper.io/enterprise-guide/keeper-encryption-model)
+
+[Proceed to the Setup Instructions](/en/keeperpam/secrets-manager/quick-start-
+guide)
+
+Secrets Manager Video Demo
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

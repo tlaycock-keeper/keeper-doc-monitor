@@ -472,7 +472,7 @@ manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-
 server)[NextSaaS Accounts](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/saas-accounts)
 
-Last updated 1 month ago
+Last updated 2 months ago
 
 Was this helpful?
 

@@ -607,7 +607,9 @@ Copy
         ]
     }
 
-  *   * Use the following command to see a list of available field types: `rti -lf *`
+  * See a list of all field types [here](/en/keeperpam/commander-cli/command-reference/record-commands/default-record-types#field-types)
+
+  * Use the following command to see a list of available field types: `rti -lf *`
 
  **Examples:**
 
@@ -652,7 +654,7 @@ of characters
 
 `-t`, `--record-type <RECORD TYPE OR ID >` The type to convert records to
 
-  * 
+  * see [record types documentation](/en/keeperpam/commander-cli/command-reference/record-commands/default-record-types#standard-record-types) for a list of all standard record types
 
 `-q`, `--quiet` Do not show info about matched and converted records
 
@@ -730,14 +732,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-See a list of all field types
-
-see  for a list of all standard record types
-
-[here](/en/keeperpam/commander-cli/command-reference/record-commands/default-
-record-types#field-types)
-
-[record types documentation](/en/keeperpam/commander-cli/command-
-reference/record-commands/default-record-types#standard-record-types)
 

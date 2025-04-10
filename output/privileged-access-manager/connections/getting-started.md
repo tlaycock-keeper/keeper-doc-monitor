@@ -425,37 +425,6 @@ manager/connections/getting-started?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview 
-  * Prerequisites 
-  * Connection Enforcement Policies 
-  * Session Recordings 
-  * Installing the Keeper Gateway
-  * PAM Configuration 
-  * PAM Machine, PAM Database and PAM Directory
-  * Supported Connection Protocols 
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=2mJIjXr2FETaepff4yC5&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-
-# Getting Started
-
-Getting Started with configuring connections on your PAM Record types
-
-[PreviousConnections](/en/keeperpam/privileged-access-
-manager/connections)[NextSession Protocols](/en/keeperpam/privileged-access-
-manager/connections/session-protocols)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -486,6 +455,17 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=2mJIjXr2FETaepff4yC5&only=yes&limit=100)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -510,9 +490,81 @@ Enforcement policies for KeeperPAM are managed in the Keeper Admin Console
 under **Admin** > **Roles** > **Enforcement Policies** > **Privileged Access
 Manager**.
 
+####
+
+Enforcement Policy Use Cases
+
+If a user should only have access to launching connections and not configuring
+connections, then only "Can start connections" policy should be enabled for
+the user.
+
+In addition to launching connections, If a user should also have access to
+configure connections, then "Can configure connections settings" and "Can
+start connections" should be enabled for the user.
+
+###
+
+Session Recordings
+
+###
+
+Installing the Keeper Gateway
+
+The Keeper Gateway is a hosted agentless service that is installed on the
+customer's network to enabled zero-trust access to target infrastructure.
+Typically this service is installed on a Linux or Docker environment in each
+of the networks that requires access.
+
+###
+
+PAM Configuration
+
+###
+
+PAM Machine, PAM Database and PAM Directory
+
+A **Keeper Connection** is a secure, encrypted interactive session established
+between your vault client to the target endpoint. The target endpoint needs to
+be defined on one of the following PAM Record types:
+
+Depending on your target endpoint, visit the corresponding PAM Record Type
+page for more information on setup.
+
+##
+
+Supported Connection Protocols
+
+The following table lists all the supported connection protocol that can be
+configured in your Keeper Vault. Visit the associated link for each protocol
+for more details on configuration.
+
 Enforcement Policy
 
 Commander Enforcement Policy
+
+Definition
+
+Tunnels can also be enabled on the  using the `enterprise-role` command:
+
+Launched connections can also be recorded. These recordings are available on
+the PAM Machine, PAM Database, or PAM Directory record types and can be played
+back on your Vault. For more details on session recording and playback, visit
+this .
+
+For more details on installing and setting up your gateway, visit this .
+
+The **PAM Configuration** contains essential information of your target
+infrastructure, settings and . Setting up a PAM Configuration for your
+infrastructure is required. For more information on creating and configuring
+the PAM Configuration, visit this .
+
+PAM Record Type
+
+Target Endpoint type
+
+Protocol
+
+PAM Record Type
 
 Definition
 
@@ -556,62 +608,35 @@ Copy
     enterprise-role "My Role" --enforcement "ALLOW_LAUNCH_PAM_ON_CLOUD_CONNECTION":true
     enterprise-role "My Role" --enforcement "ALLOW_VIEW_KCM_RECORDINGS":true
 
-####
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
 
-Enforcement Policy Use Cases
+# Getting Started
 
-If a user should only have access to launching connections and not configuring
-connections, then only "Can start connections" policy should be enabled for
-the user.
+Getting Started with configuring connections on your PAM Record types
 
-In addition to launching connections, If a user should also have access to
-configure connections, then "Can configure connections settings" and "Can
-start connections" should be enabled for the user.
+[PreviousConnections](/en/keeperpam/privileged-access-
+manager/connections)[NextSession Protocols](/en/keeperpam/privileged-access-
+manager/connections/session-protocols)
 
-###
+  * Overview 
+  * Prerequisites 
+  * Connection Enforcement Policies 
+  * Session Recordings 
+  * Installing the Keeper Gateway
+  * PAM Configuration 
+  * PAM Machine, PAM Database and PAM Directory
+  * Supported Connection Protocols 
 
-Session Recordings
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
 
-Launched connections can also be recorded. These recordings are available on
-the PAM Machine, PAM Database, or PAM Directory record types and can be played
-back on your Vault. For more details on session recording and playback, visit
-this [page](/en/keeperpam/privileged-access-manager/session-recording-and-
-playback).
+[page](/en/keeperpam/privileged-access-manager/getting-started/gateways)
 
-###
+[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
+started/gateways)
 
-Installing the Keeper Gateway
-
-The Keeper Gateway is a hosted agentless service that is installed on the
-customer's network to enabled zero-trust access to target infrastructure.
-Typically this service is installed on a Linux or Docker environment in each
-of the networks that requires access.
-
-For more details on installing and setting up your gateway, visit this
-[page](/en/keeperpam/privileged-access-manager/getting-started/gateways).
-
-###
-
-PAM Configuration
-
-The **PAM Configuration** contains essential information of your target
-infrastructure, settings and [Keeper Gateway](/en/keeperpam/privileged-access-
-manager/getting-started/gateways). Setting up a PAM Configuration for your
-infrastructure is required. For more information on creating and configuring
-the PAM Configuration, visit this [page](/en/keeperpam/privileged-access-
-manager/getting-started/pam-configuration).
-
-###
-
-PAM Machine, PAM Database and PAM Directory
-
-A **Keeper Connection** is a secure, encrypted interactive session established
-between your vault client to the target endpoint. The target endpoint needs to
-be defined on one of the following PAM Record types:
-
-PAM Record Type
-
-Target Endpoint type
+[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration)
 
 Windows/MacOS/Linux Machines, EC2 Instances, Azure VMs
 
@@ -620,23 +645,6 @@ MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
 Active Directory, OpenLDAP
 
 Web-based applications
-
-Depending on your target endpoint, visit the corresponding PAM Record Type
-page for more information on setup.
-
-##
-
-Supported Connection Protocols
-
-The following table lists all the supported connection protocol that can be
-configured in your Keeper Vault. Visit the associated link for each protocol
-for more details on configuration.
-
-Protocol
-
-PAM Record Type
-
-Definition
 
 PAM Machine
 
@@ -678,7 +686,11 @@ PAM Machine
 Connecting to the target defined on the PAM Machine Record with the Telnet
 connection protocol
 
-Tunnels can also be enabled on the  using the `enterprise-role` command:
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWjChJvfoO14GjFwRqbVj%252FScreenshot%25202025-01-21%2520at%252011.50.51%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D979ba299-1710-4c92-adfc-36437e9631ce&width=768&dpr=4&quality=100&sign=ad11a445&sv=2)
+
+KeeperPAM Enforcement Policies
 
 [PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-machine)
@@ -731,10 +743,4 @@ management/)
 [Request a Demo](https://www.keepersecurity.com/contact.html?t=b&r=sales)
 
 [Contact Support](https://www.keepersecurity.com/support.html)
-
-KeeperPAM Enforcement Policies
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWjChJvfoO14GjFwRqbVj%252FScreenshot%25202025-01-21%2520at%252011.50.51%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D979ba299-1710-4c92-adfc-36437e9631ce&width=768&dpr=4&quality=100&sign=ad11a445&sv=2)
 

@@ -509,13 +509,13 @@ Procedure
 
   5. Locate your chosen service account, then click 'OK'.
 
+Selecting a service account to perform rotation
+
   1. Click 'Next' to advance to permission selection.
 
   2. In 'Delegate the following common tasks', check the option for 'Reset user passwords and force password change at next logon', then click 'Next'.
 
   1. Add the service account's login and password to the Resource Record for the AD instance.
-
-Selecting a service account to perform rotation
 
 Delegating permission to reset user passwords
 

@@ -541,6 +541,12 @@ number 3306, or with a hostname that starts with "mysql//"
 
 Set the login and password values to the current database user values
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4TNMCZKhejp3vlE8tBCN%252Fimage.png%3Falt%3Dmedia%26token%3D4cfaa6bd-a624-4e25-aea3-38d59984e901&width=768&dpr=4&quality=100&sign=c058d501&sv=2)
+
+Commander will use the login and password to login to the MySQL account
+
 Copy
 
     
@@ -702,8 +708,6 @@ reference/plugins/password-rotation#connect-command)
 
 Creating a record in the Keeper Vault
 
-Commander will use the login and password to login to the MySQL account
-
 Adding Custom Fields in the Vault UI
 
 Click the Record UID to copy it to the clipboard
@@ -715,10 +719,6 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLnjMZ9GPT
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FxndkXzyAk0NgMkcTNoBq%252Fimage.png%3Falt%3Dmedia%26token%3D43c4c5b1-0943-4104-a860-61fe76fcfc00&width=768&dpr=4&quality=100&sign=d52b496f&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4TNMCZKhejp3vlE8tBCN%252Fimage.png%3Falt%3Dmedia%26token%3D4cfaa6bd-a624-4e25-aea3-38d59984e901&width=768&dpr=4&quality=100&sign=c058d501&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

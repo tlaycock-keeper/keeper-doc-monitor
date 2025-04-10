@@ -457,7 +457,7 @@ started/gateways/docker-installation)[NextWindows
 Installation](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/windows-installation)
 
-Last updated 16 days ago
+Last updated 17 days ago
 
 Was this helpful?
 

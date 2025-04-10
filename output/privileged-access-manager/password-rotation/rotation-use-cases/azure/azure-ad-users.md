@@ -437,36 +437,6 @@ users?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview
@@ -498,19 +468,50 @@ Last updated 1 month ago
 
 Was this helpful?
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ##
 
 Overview
 
 In this guide, you will learn how to rotate passwords for Azure AD users. In
-Keeper, the  contains all of the information needed to rotate passwords. The
-record containing the Azure AD user accounts to be rotated are stored in the
-PAM User**** record.
+Keeper, the [PAM Configuration](/en/keeperpam/privileged-access-
+manager/getting-started/pam-configuration) contains all of the information
+needed to rotate passwords. The record containing the Azure AD user accounts
+to be rotated are stored in the PAM User**** record.
 
 The Keeper Gateway uses Azure APIs to rotate the credentials defined in the
 PAM User records.
 
-  * 
+  * See the [Azure Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure) for a high level overview and getting started with Azure
 
 ##
 
@@ -518,7 +519,13 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   *   * 
+  * [Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-started/enforcement-policies) are configured for your role
+
+  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+
+  * Your Azure environment is [configured](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/azure-environment-setup) per our documentation
+
+  * Your [Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is online
 
 ##
 
@@ -529,7 +536,11 @@ for Azure.
 
 Prior to setting up the **PAM Configuration** , make sure that:
 
-  *   *   * We recommend installing the Keeper Gateway service in a machine within the Azure environment in order to rotate other types of targets.
+  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+
+  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is provisioned in the Keeper Secrets Manager application you created.
+
+  * We recommend installing the Keeper Gateway service in a machine within the Azure environment in order to rotate other types of targets.
 
 In the left menu of the vault, select "Secrets Manager", then select the "PAM
 Configurations" tab, and click on "New Configuration". The following table
@@ -632,44 +643,6 @@ Select the PAM User record(s) from Step 3, edit the record and open the
 
 Any user with `edit` rights to a **PAM User** record has the ability to setup
 rotation for that record.
-
-See the  for a high level overview and getting started with Azure
-
-are configured for your role
-
-A Keeper Secrets Manager  has been created
-
-Your Azure environment is  per our documentation
-
-Your  is online
-
-A Keeper Secrets Manager  has been created
-
-A Keeper Rotation  is already installed, running, and is provisioned in the
-Keeper Secrets Manager application you created.
-
-[Azure Overview](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/azure)
-
-[Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-
-started/enforcement-policies)
-
-[application](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
-
-[configured](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/azure-environment-setup)
-
-[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)
-
-[application](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
-
-[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
 
 Rotation Settings
 

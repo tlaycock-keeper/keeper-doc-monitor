@@ -441,7 +441,7 @@ credentials in any cloud-based or on-prem environment.
 command-line-interface/custom-record-types)[NextDeveloper
 SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
 
-Last updated 1 month ago
+Last updated 2 months ago
 
 Was this helpful?
 

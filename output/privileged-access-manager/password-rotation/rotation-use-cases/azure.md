@@ -450,7 +450,7 @@ Password Rotation in the Azure Environment
 rotation/rotation-use-cases)[NextAzure AD Users](/en/keeperpam/privileged-
 access-manager/password-rotation/rotation-use-cases/azure/azure-ad-users)
 
-Last updated 1 month ago
+Last updated 2 months ago
 
 Was this helpful?
 

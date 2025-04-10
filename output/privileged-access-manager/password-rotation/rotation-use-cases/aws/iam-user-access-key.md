@@ -1106,7 +1106,7 @@ manager/password-rotation/rotation-use-cases/aws/ec2-virtual-machine-
 user)[NextManaged Database](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/aws/managed-database)
 
-Last updated 1 month ago
+Last updated 2 months ago
 
 Was this helpful?
 

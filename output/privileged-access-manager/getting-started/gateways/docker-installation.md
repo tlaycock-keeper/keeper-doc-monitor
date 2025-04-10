@@ -461,7 +461,7 @@ started/gateways/one-time-access-token)[NextLinux
 Installation](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/linux-installation)
 
-Last updated 16 days ago
+Last updated 17 days ago
 
 Was this helpful?
 
@@ -763,6 +763,14 @@ Copy
 
 ###
 
+References:
+
+  * DockerHub listing: <https://hub.docker.com/r/keeper/gateway>[](https://hub.docker.com/r/keeper/gateway)
+
+  * Quick reference for [Installing Docker](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux)[ and Docker Compose on Linux](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux)
+
+###
+
 Network Configuration
 
 The Gateway establishes outbound-only connections to the following:
@@ -829,11 +837,7 @@ Copy
 Enabling this option allows you to establish a Connection to the host. For
 example, to open an SSH connection:
 
-  * Create a [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user) record with the SSH private key
-
-  * Create a [PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-machine) record with the hostname to `host.docker.internal` and port `22`
-
-  * Activate the [SSH connection](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections) in PAM settings referencing the PAM User
+  *   *   * 
 
 ###
 
@@ -849,13 +853,20 @@ Copy
     docker-compose pull
     nohup docker-compose up -d keeper-gateway &
 
-###
+Create a  record with the SSH private key
 
-References:
+Create a  record with the hostname to `host.docker.internal` and port `22`
 
-  * DockerHub listing: <https://hub.docker.com/r/keeper/gateway>[](https://hub.docker.com/r/keeper/gateway)
+Activate the  in PAM settings referencing the PAM User
 
-  * Quick reference for [Installing Docker](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux)[ and Docker Compose on Linux](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux)
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
+[PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
+
+[SSH connection](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/ssh-connections)
 
 [15KBdocker-
 seccomp.json](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-

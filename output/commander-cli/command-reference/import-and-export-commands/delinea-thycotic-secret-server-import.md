@@ -463,44 +463,11 @@ PDF](/en/keeperpam/~gitbook/pdf?page=MlvFjGfajCiV2JGixc1w&only=yes&limit=100)
 
 Automatic migration of your Delinea (Thycotic) Secret Server vault
 
-[PreviousLastPass Data Import](/en/keeperpam/commander-cli/command-
-reference/import-and-export-commands/lastpass-import)[NextKeepass
-Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands/keepass-import)
-
-Last updated 1 day ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FEWLqYM9wlWeiULqWtrFN%252FImport-
+Keeper-
+Delinea.jpg%3Falt%3Dmedia%26token%3D6d2d5f45-ec1c-4c6d-a746-5da8827001d1&width=768&dpr=4&quality=100&sign=d3e1530a&sv=2)
 
 ##
 
@@ -532,6 +499,12 @@ Adjust Session Timeout
 In Secret Server admin settings, ensure that "Session Timeout for Webservices"
 is set to a high enough value, since large vaults will take time to process.
 For example, 59 minutes.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfUebqUNzoPFqAum5ZgLL%252FScreen%2520Shot%25202022-12-28%2520at%25201.39.53%2520PM.jpg%3Falt%3Dmedia%26token%3D78a0cfc1-b6af-4ac1-ac4d-4aab111a7ce8&width=768&dpr=4&quality=100&sign=b909336c&sv=2)
+
+Session Timeout
 
 ###
 
@@ -713,15 +686,42 @@ users before rolling out to the entire organization.
 
 If you have any questions, please email commander@keepersecurity.com.
 
-Session Timeout
+[PreviousLastPass Data Import](/en/keeperpam/commander-cli/command-
+reference/import-and-export-commands/lastpass-import)[NextKeepass
+Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands/keepass-import)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FEWLqYM9wlWeiULqWtrFN%252FImport-
-Keeper-
-Delinea.jpg%3Falt%3Dmedia%26token%3D6d2d5f45-ec1c-4c6d-a746-5da8827001d1&width=768&dpr=4&quality=100&sign=d3e1530a&sv=2)
+Last updated 2 days ago
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfUebqUNzoPFqAum5ZgLL%252FScreen%2520Shot%25202022-12-28%2520at%25201.39.53%2520PM.jpg%3Falt%3Dmedia%26token%3D78a0cfc1-b6af-4ac1-ac4d-4aab111a7ce8&width=768&dpr=4&quality=100&sign=b909336c&sv=2)
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

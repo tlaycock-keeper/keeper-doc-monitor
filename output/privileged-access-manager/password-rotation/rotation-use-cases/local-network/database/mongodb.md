@@ -488,7 +488,11 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+  * Keeper Secrets Manager is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
+
+  * Keeper Rotation is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
+
+  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
 
   * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is able to communicate to your MongoDB Database
 
@@ -634,7 +638,7 @@ rotation/rotation-use-cases/local-network/database/postgresql)[NextNative MS
 SQL Server](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/local-network/database/ms-sql-server)
 
-Last updated 1 month ago
+Last updated 2 months ago
 
 Was this helpful?
 
@@ -667,14 +671,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-Keeper Secrets Manager is enabled for your
-
-Keeper Rotation is enabled for your
-
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
-
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
 

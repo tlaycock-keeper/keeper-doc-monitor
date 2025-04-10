@@ -450,7 +450,7 @@ reference/plugins/automatic-
 execution)[NextTroubleshooting](/en/keeperpam/commander-cli/troubleshooting-
 commander-cli)
 
-Last updated 13 days ago
+Last updated 14 days ago
 
 Was this helpful?
 

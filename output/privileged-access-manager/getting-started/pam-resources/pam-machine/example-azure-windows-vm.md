@@ -506,6 +506,13 @@ To create a PAM Database:
 
   * Click "**Next** " and complete all of the required information.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fes2MA1KVac2YXpHVcHp5%252FScreenshot%25202025-02-09%2520at%25208.48.45%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D75fb48b0-f924-4ffa-
+aa22-4528c4b0977a&width=768&dpr=4&quality=100&sign=68db9d58&sv=2)
+
+Example of Azure Windows VM
+
 ###
 
 Configure a Windows Machine on the PAM Machine Record
@@ -593,6 +600,10 @@ Administrative Credential Record
 
 Linked PAM User credential used for connection and administrative operations
 
+**Required** Visit this [section](/en/keeperpam/privileged-access-
+manager/getting-started/pam-resources/pam-machine/example-azure-windows-
+vm#administrative-credential-record) for more details
+
 Protocol
 
 Native protocol used for connecting from the Gateway to the target
@@ -603,10 +614,18 @@ Session Recording
 
 Options for recording sessions and typescripts
 
+See [session recording](/en/keeperpam/privileged-access-manager/session-
+recording-and-playback)
+
 Connection Parameters
 
 Connection-specific protocol settings which can vary based on the protocol
 type
+
+See this [section](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/rdp-connections) for RDP protocol
+settings We recommend specifying the **Connection Port** at a minimum. E.g.
+"3389" for RDP.
 
 ###
 
@@ -681,28 +700,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-**Required** Visit this  for more details
-
-See
-
-See this  for RDP protocol settings We recommend specifying the **Connection
-Port** at a minimum. E.g. "3389" for RDP.
-
-[session recording](/en/keeperpam/privileged-access-manager/session-recording-
-and-playback)
-
-[section](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/rdp-connections)
-
-[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine/example-azure-windows-vm#administrative-credential-
-record)
-
-Example of Azure Windows VM
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fes2MA1KVac2YXpHVcHp5%252FScreenshot%25202025-02-09%2520at%25208.48.45%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D75fb48b0-f924-4ffa-
-aa22-4528c4b0977a&width=768&dpr=4&quality=100&sign=68db9d58&sv=2)
 

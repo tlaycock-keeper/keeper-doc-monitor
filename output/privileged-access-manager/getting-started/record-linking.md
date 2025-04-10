@@ -425,6 +425,36 @@ manager/getting-started/record-linking?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -441,6 +471,14 @@ PDF](/en/keeperpam/~gitbook/pdf?page=k6jFyEGQEPGGBPV37Qev&only=yes&limit=100)
 # Record Linking
 
 KeeperPAM migration of records to new linked format
+
+[PreviousVault Structure](/en/keeperpam/privileged-access-manager/getting-
+started/vault-structure)[NextApplications](/en/keeperpam/privileged-access-
+manager/getting-started/applications)
+
+Last updated 2 months ago
+
+Was this helpful?
 
 ##
 
@@ -472,68 +510,30 @@ This update guides users to transition their rotating credentials into the
 more secure **PAM User** record type for enhanced security and proper
 separation of credentials from resources.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FBylph24gZsEZmL0kHBTH%252FScreenshot%25202025-01-11%2520at%25203.34.59%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D9017a9f3-6d8f-4444-be1a-5c53593496e8&width=768&dpr=4&quality=100&sign=86c93d48&sv=2)
+By clicking "Convert Now", you'll be asked to confirm the change and the
+credentials will be separated from the resource and placed in the same folder.
+
+Click "Next" to finish the conversion. After this is completed, a new record
+in the same folder will contain the linked credential.
+
+Once the resource has been split, PAM capabilities including connections,
+tunnels and rotations can be enabled.
 
 Splitting Resource and Credentials
 
-By clicking "Convert Now", you'll be asked to confirm the change and the
-credentials will be separated from the resource and placed in the same folder.
+Finish Record Splitting
+
+Converted Resource with Split Credential
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FBylph24gZsEZmL0kHBTH%252FScreenshot%25202025-01-11%2520at%25203.34.59%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D9017a9f3-6d8f-4444-be1a-5c53593496e8&width=768&dpr=4&quality=100&sign=86c93d48&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGkuvoAJeMsLvZr8rCfTk%252FScreenshot%25202025-01-11%2520at%25203.35.49%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3De043eebe-b0f9-4c28-95cf-28add79c0976&width=768&dpr=4&quality=100&sign=29094312&sv=2)
 
-Finish Record Splitting
-
-Click "Next" to finish the conversion. After this is completed, a new record
-in the same folder will contain the linked credential.
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FF2dQCWCBYPAJF0gm0uok%252FScreenshot%25202025-01-11%2520at%25204.37.32%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3De329168c-71db-41b3-8ae8-d53aa7ab8d28&width=768&dpr=4&quality=100&sign=60b9ab59&sv=2)
-
-Converted Resource with Split Credential
-
-Once the resource has been split, PAM capabilities including connections,
-tunnels and rotations can be enabled.
-
-[PreviousVault Structure](/en/keeperpam/privileged-access-manager/getting-
-started/vault-structure)[NextApplications](/en/keeperpam/privileged-access-
-manager/getting-started/applications)
-
-Last updated 2 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
 

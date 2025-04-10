@@ -449,7 +449,7 @@ Step by step guides for performing rotation on any target system
 rotation/rotation-overview)[NextAzure](/en/keeperpam/privileged-access-
 manager/password-rotation/rotation-use-cases/azure)
 
-Last updated 1 month ago
+Last updated 2 months ago
 
 Was this helpful?
 

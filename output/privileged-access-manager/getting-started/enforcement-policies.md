@@ -452,9 +452,43 @@ PDF](/en/keeperpam/~gitbook/pdf?page=RwOEZG4h2pK4pTOdk6Ff&only=yes&limit=100)
 
 Role-based enforcement policy settings for KeeperPAM
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHAQZMfu5ZSg6QAGqOJiF%252FEnforcement%2520Policies.jpg%3Falt%3Dmedia%26token%3D926aec64-b51a-4117-9f66-6e47da3f221b&width=768&dpr=4&quality=100&sign=ec40800c&sv=2)
+[PreviousKeeperPAM Licensing](/en/keeperpam/privileged-access-manager/getting-
+started/keeperpam-licensing)[NextVault Structure](/en/keeperpam/privileged-
+access-manager/getting-started/vault-structure)
+
+Last updated 1 month ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -742,41 +776,7 @@ Copy
     enterprise-role ROLE_ID --enforcement "ALLOW_VIEW_KCM_RECORDINGS:True"
     enterprise-role ROLE_ID --enforcement "ALLOW_VIEW_RBI_RECORDINGS:True"
 
-[PreviousKeeperPAM Licensing](/en/keeperpam/privileged-access-manager/getting-
-started/keeperpam-licensing)[NextVault Structure](/en/keeperpam/privileged-
-access-manager/getting-started/vault-structure)
-
-Last updated 1 month ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHAQZMfu5ZSg6QAGqOJiF%252FEnforcement%2520Policies.jpg%3Falt%3Dmedia%26token%3D926aec64-b51a-4117-9f66-6e47da3f221b&width=768&dpr=4&quality=100&sign=ec40800c&sv=2)
 

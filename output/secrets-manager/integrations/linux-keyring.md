@@ -725,11 +725,11 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
-[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/linux-
-keyring-utilityGitHub](https://github.com/Keeper-Security/linux-keyring-
-utility/releases)
-
 [![Logo](https://github.com/fluidicon.png)GitHub - Keeper-Security/linux-
 keyring-utility: A utility for natively interacting with the Linux
 KeyringGitHub](https://github.com/Keeper-Security/linux-keyring-utility)
+
+[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/linux-
+keyring-utilityGitHub](https://github.com/Keeper-Security/linux-keyring-
+utility/releases)
 

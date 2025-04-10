@@ -742,12 +742,12 @@ credential:
 Attach the below  that will perform the password rotation. The script has
 additional comments inside that describe each line.
 
-[Python script](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/saas-accounts/snowflake-user#python-script)
-
 [https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
 Scripts/tree/main/snowflakegithub.com](https://github.com/Keeper-
 Security/Zero-Trust-KeeperPAM-Scripts/tree/main/snowflake)
+
+[Python script](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-accounts/snowflake-user#python-script)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
