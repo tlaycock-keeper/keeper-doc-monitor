@@ -336,6 +336,7 @@ setup?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -530,6 +531,9 @@ PAM Settings (Required)
 
 List of Zero-Trust KeeperPAM features that should be enabled
 
+See [this section](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration/local-environment-setup#pam-features) for more info
+
 Default Rotation Schedule
 
 Specify frequency of Rotation
@@ -659,9 +663,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-See  for more info
-
-[this section](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/local-environment-setup#pam-features)
 

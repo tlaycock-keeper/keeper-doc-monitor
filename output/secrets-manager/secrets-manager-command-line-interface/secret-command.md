@@ -328,6 +328,7 @@ manager-command-line-interface/secret-command?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -1492,10 +1493,7 @@ Example:
 
  _*The UID in this example is not a real record UID_
 
-See the [Troubleshooting section](/en/keeperpam/secrets-
-manager/troubleshooting#record-uid-starts-with) for more details
-
-[PreviousInit Command](/en/keeperpam/secrets-manager/secrets-manager-command-
+[ PreviousInit Command](/en/keeperpam/secrets-manager/secrets-manager-command-
 line-interface/init-command)[NextFolder Command](/en/keeperpam/secrets-
 manager/secrets-manager-command-line-interface/folder-command)
 
@@ -1532,4 +1530,9 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+See the  for more details
+
+[Troubleshooting section](/en/keeperpam/secrets-
+manager/troubleshooting#record-uid-starts-with)
 

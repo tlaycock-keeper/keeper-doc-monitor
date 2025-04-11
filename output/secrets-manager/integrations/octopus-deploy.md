@@ -326,6 +326,7 @@ manager/integrations/octopus-deploy?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -450,8 +451,8 @@ PDF](/en/keeperpam/~gitbook/pdf?page=dSjHRoYO5aq55jqwaTHQ&only=yes&limit=100)
 Keeper Secrets Manager Step Template for accessing secrets in Octopus Deploy
 
 [PreviousLinux Keyring](/en/keeperpam/secrets-manager/integrations/linux-
-keyring)[NextPowerShell Plugin](/en/keeperpam/secrets-
-manager/integrations/powershell-plugin)
+keyring)[NextOracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-
+kms-1)
 
 Last updated 3 months ago
 
@@ -513,11 +514,7 @@ to utilize this integration, you will need:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
-
-    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
-
-  * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
     * The Octopus Deploy integration accepts Base 64 format configurations
 
@@ -605,6 +602,16 @@ Copy
 `#{Keeper.SecretsManager.RetrieveSecrets.PrintVariableNames} `Write out the
 Octopus [output variable](https://octopus.com/docs/projects/variables/output-
 variables) names to the task log. Default: `False`
+
+A Keeper  with secrets shared to it
+
+See the  for instructions on creating an Application
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 Octopus Deploy Integration with Keeper Secrets Manager
 

@@ -324,6 +324,7 @@ manager/deployment?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -449,7 +450,7 @@ Deploying the Keeper Agent to your endpoints
 manager/setup)[NextPolicies](/en/keeperpam/endpoint-privilege-
 manager/policies)
 
-Last updated 19 days ago
+Last updated 18 hours ago
 
 Was this helpful?
 
@@ -487,9 +488,9 @@ Was this helpful?
 
 Overview
 
-Deploying Keeper Privilege Manager is very simple. The admin creates a custom
-deployment package associated to a collection of endpoints, and pushes the
-Keeper agent to those endpoints. When the agent starts up, it immediately
+Deploying Endpoint Privilege Manager is very simple. The admin creates a
+custom deployment package associated to a collection of endpoints, and pushes
+the Keeper agent to those endpoints. When the agent starts up, it immediately
 registers itself with the Keeper tenant and starts collecting basic
 information about the endpoint, including the executables and local user
 accounts. By default, the Keeper agent goes into a "monitoring" mode, and no
@@ -509,12 +510,12 @@ Console can decrypt the endpoint collections and associated metadata.
 
 Deployment Package
 
-From the **Privilege Manager** > **Deployments** screen, select "**New
-Deployment Package** ". The Keeper agent can be deployed to any Windows, macOS
-or Linux endpoint. The executable requires local admin privilege to install
-the agent. For automatic deployment through your remote management solution or
-group policy, push out the installer in silent mode using the provided
-command-line string.
+From the **Endpoint Privilege Manager** > **Deployments** screen, select
+"**New Deployment Package** ". The Keeper agent can be deployed to any
+Windows, macOS or Linux endpoint. The executable requires local admin
+privilege to install the agent. For automatic deployment through your remote
+management solution or group policy, push out the installer in silent mode
+using the provided command-line string.
 
 ###
 

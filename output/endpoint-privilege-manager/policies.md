@@ -324,6 +324,7 @@ manager/policies?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -454,7 +455,7 @@ Applying least privilege policies to your users and machines
 manager/deployment)[NextManaging Requests](/en/keeperpam/endpoint-privilege-
 manager/managing-requests)
 
-Last updated 19 days ago
+Last updated 18 hours ago
 
 Was this helpful?
 
@@ -492,10 +493,10 @@ Was this helpful?
 
 Policy Overview
 
-Privilege Manager can apply least privilege policies to users and machines
-across the fleet of endpoints which are running the Keeper agent. Policies are
-applied to collections, and the policy is customized by the Admin based on
-your organization's requirements.
+Endpoint Privilege Manager can apply least privilege policies to users and
+machines across the fleet of endpoints which are running the Keeper agent.
+Policies are applied to collections, and the policy is customized by the Admin
+based on your organization's requirements.
 
 ###
 

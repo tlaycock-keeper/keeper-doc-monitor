@@ -326,6 +326,7 @@ manager/integrations/kubernetes?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -425,36 +426,6 @@ manager/integrations/kubernetes?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Features
@@ -491,9 +462,41 @@ Last updated 3 months ago
 
 Was this helpful?
 
-We recommend using the  integration for most use cases. This document
-describes an alternate method of integration which does not utilize the
-External Secrets Operator.
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+We recommend using the [Kubernetes External Secrets
+Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-
+secrets-operator) integration for most use cases. This document describes an
+alternate method of integration which does not utilize the External Secrets
+Operator.
 
 ##
 
@@ -505,6 +508,9 @@ Features
 
   * Copy secure file attachments from the Keeper Vault to the local filesystem
 
+For a complete list of Keeper Secrets Manager features see the [Overview
+](/en/keeperpam/secrets-manager/overview)
+
 ##
 
 Prerequisites
@@ -512,7 +518,9 @@ Prerequisites
 This page documents the Secrets Manager Kubernetes integration. In order to
 utilize this integration, you will need:
 
-  *     * Secrets Manager addon enabled for your Keeper account
+  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
+
+    * Secrets Manager addon enabled for your Keeper account
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
@@ -576,9 +584,19 @@ Copy
     
     $ kubectl apply -f secret.yaml
 
+For more information on creating Secrets Manger configurations, see the
+[Configuration Documentation](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration)
+
 ###
 
 Alternate Method: One Time Access Token and KSM CLI
+
+Alternatively, you can create a configuration by generating a One Time Access
+Token with Commander (or the Vault UI) and then using the [Keeper Secret
+Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface) to create a configuration as demonstrated below (replace XX:XXX)
+with the One Time Access Token.
 
 Copy
 
@@ -613,6 +631,10 @@ Copy
 ##
 
 Using the KSM Config
+
+The KSM config can be pulled into your K8s containers using
+[secrets](https://kubernetes.io/docs/concepts/configuration/secret/#using-
+secrets-as-environment-variables).
 
 Copy
 
@@ -654,6 +676,12 @@ record information from the Keeper vault.
 
 From the Keeper Vault, a "Database" record type is created using the following
 information.
+
+Now let's create our web application. The web page can be created using any of
+the Developer SDKs. For this example, it will being using the Python SDK. A
+simple Flask application with one endpoint will display the HTML that contains
+the Vault record secrets. The secrets are retrieved using the [Keeper
+Notation](/en/keeperpam/secrets-manager/about/keeper-notation) syntax.
 
 Copy
 
@@ -1028,6 +1056,9 @@ them to disk so they can be used by NGINX. The secrets are written to the
 pod's emptyDir volume, mounted to /etc/keys. This directory will be removed
 when the pod is deleted.
 
+Documentation for the Keeper Secrets Manager Writer can be found
+[here](/en/keeperpam/secrets-manager/integrations/docker-writer-image).
+
 The main container will also mount the pod's emptyDir volume to /etc/keys. And
 will also mount the `default.conf` into /etc/nginx/conf.d and the `index.html`
 file into the document root for the server.
@@ -1071,67 +1102,26 @@ External APIs and injects them into Kubernetes. For more information on how to
 setup External Secrets to synchronize secrets from your Keeper Vault into
 Kubernetes, visit the following:
 
+[Kubernetes External Secrets Operator](/en/keeperpam/secrets-
+manager/integrations/kubernetes-external-secrets-operator)
+
 ###
 
 Next Steps
 
-For a complete list of Keeper Secrets Manager features see the
-
-Keeper Secrets Manager access (See the  for more details)
+At this point, you can now integrate Keeper Secrets Manager into your K8s
+deployments using any of the [Secrets Manager SDKs](/en/keeperpam/secrets-
+manager/developer-sdk-library).
 
 A Keeper  with secrets shared to it
 
 See the  for instructions on creating an Application
-
-For more information on creating Secrets Manger configurations, see the
-
-Alternatively, you can create a configuration by generating a One Time Access
-Token with Commander (or the Vault UI) and then using the  to create a
-configuration as demonstrated below (replace XX:XXX) with the One Time Access
-Token.
-
-The KSM config can be pulled into your K8s containers using .
-
-Now let's create our web application. The web page can be created using any of
-the Developer SDKs. For this example, it will being using the Python SDK. A
-simple Flask application with one endpoint will display the HTML that contains
-the Vault record secrets. The secrets are retrieved using the  syntax.
-
-Documentation for the Keeper Secrets Manager Writer can be found .
-
-At this point, you can now integrate Keeper Secrets Manager into your K8s
-deployments using any of the .
-
-[Overview ](/en/keeperpam/secrets-manager/overview)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
-
-[Configuration Documentation](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration)
-
-[Keeper Secret Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface)
-
-[secrets](https://kubernetes.io/docs/concepts/configuration/secret/#using-
-secrets-as-environment-variables)
-
-[Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-notation)
-
-[here](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-
-[Kubernetes External Secrets Operator](/en/keeperpam/secrets-
-manager/integrations/kubernetes-external-secrets-operator)
-
-[Secrets Manager SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
 
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
-
-[Kubernetes External Secrets Operator](/en/keeperpam/secrets-
-manager/integrations/kubernetes-external-secrets-operator)
 
 Example Web Application displaying Keeper secrets
 
@@ -1151,9 +1141,9 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FhMaZVLZ1u
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fdy9FYgLsLsgtiFVY5RGh%252FScreen%2520Shot%25202021-12-13%2520at%252011.13.18%2520AM.png%3Falt%3Dmedia%26token%3D7a1a0a7a-ce97-4d5f-ad26-5b817ddfc178&width=768&dpr=4&quality=100&sign=25762f75&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6TQeKxdHn0zbmfZKG270%252Fimage.png%3Falt%3Dmedia%26token%3D05e69023-6c1d-44ec-819c-842699af867d&width=768&dpr=4&quality=100&sign=307eac3b&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6TQeKxdHn0zbmfZKG270%252Fimage.png%3Falt%3Dmedia%26token%3D05e69023-6c1d-44ec-819c-842699af867d&width=768&dpr=4&quality=100&sign=307eac3b&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fdy9FYgLsLsgtiFVY5RGh%252FScreen%2520Shot%25202021-12-13%2520at%252011.13.18%2520AM.png%3Falt%3Dmedia%26token%3D7a1a0a7a-ce97-4d5f-ad26-5b817ddfc178&width=768&dpr=4&quality=100&sign=25762f75&sv=2)
 

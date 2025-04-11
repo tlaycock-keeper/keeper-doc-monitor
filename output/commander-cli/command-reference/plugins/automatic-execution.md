@@ -326,6 +326,7 @@ reference/plugins/automatic-execution?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -508,9 +509,7 @@ it on the commander interactive shell or view it on the Keeper Web Vault and
 Desktop App (as seen below).
 
 For more information on running Commander commands with a configuration file,
-see the
-
-[documentation](/en/keeperpam/commander-cli/commander-installation-
+see the [documentation](/en/keeperpam/commander-cli/commander-installation-
 setup/logging-in#running-commands-from-the-configuration-file)
 
 Locate Record UID

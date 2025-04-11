@@ -320,6 +320,7 @@ bridge/endpoint-privilege-manager/setup?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -436,11 +437,83 @@ PDF](/en/keeperpam/~gitbook/pdf?page=XImANkhy5bPte8sWajcb&only=yes&limit=100)
 Installation and setup of Privileged Elevation and Delegation Management
 (PEDM)
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDoiPPM2tZ7T4Oa4P3RLK%252FPEDM%2520Setup.jpg%3Falt%3Dmedia%26token%3D066265f4-efd7-4669-9e1f-ca51d388b345&width=768&dpr=4&quality=100&sign=a7e8005e&sv=2)
+
+##
+
+Setup Steps
+
+Follow the below steps to start using Endpoint Privilege Manager.
+
+1
+
+###
+
+Keeper Enterprise license
+
+If you are not a Keeper customer or do not have the required license, you can
+[start a free trial](https://www.keepersecurity.com/password-manager-free-
+trial-sign-up.html) from our website. The free trial includes KeeperPAM full
+capabilities.
+
+2
+
+###
+
+Activate Endpoint Privileged Manager
+
+From the Keeper Admin Console, ensure that your Privileged Manager
+subscription is active. Go to the **Admin Console** > **Subscriptions** and
+activate the trial or contact your Keeper customer success manager.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNorkmhpyERhcuNfaDWaZ%252FNon%2520PEDM%2520Subscriber.png%3Falt%3Dmedia%26token%3D63dfa4d2-277a-48b5-8592-811538bc620a&width=768&dpr=4&quality=100&sign=aa8ece05&sv=2)
+
+3
+
+###
+
+Enable Permissions
+
+With Endpoint Privilege Manager, an admin role is required with permissions
+covering end-user privilege.
+
+  * Login to the Keeper Admin Console for your region.
+
+  * Under **Admin** > **Roles** , create a new role or modify an existing role
+
+  * In the Role settings select the "**Administrative Permissions** " tab and select "**Add Managing Node** ".
+
+  * Activate the "**Manage Privileged Access** " permission.
+
+  * Assign yourself or your test admin account to this role.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FhXwyVa64wQkkY77Ej9BY%252FAdmin%2520Permissions.png%3Falt%3Dmedia%26token%3Db305e1a2-7abf-4928-be81-bfb98a1e0fa7&width=768&dpr=4&quality=100&sign=e1af6f67&sv=2)
+
+Activating the Privilege Manager permissions in the Admin Console
+
+###
+
+Next Steps
+
+Now that Endpoint Privilege Manager is activated, the next steps are:
+
+  * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment) of the Agent
+
+  * [Set Policies](/en/keeperpam/endpoint-privilege-manager/policies) and
+
+  * [Manage Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+
 [PreviousOverview](/en/keeperpam/endpoint-privilege-
 manager/overview)[NextDeployment](/en/keeperpam/endpoint-privilege-
 manager/deployment)
 
-Last updated 1 day ago
+Last updated 18 hours ago
 
 Was this helpful?
 
@@ -473,76 +546,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-##
-
-Setup Steps
-
-Follow the below steps to start using Endpoint Privilege Manager.
-
-1
-
-###
-
-Keeper Enterprise license
-
-If you are not a Keeper customer or do not have the required license, you can
-[start a free trial](https://www.keepersecurity.com/password-manager-free-
-trial-sign-up.html) from our website. The free trial includes KeeperPAM full
-capabilities.
-
-2
-
-###
-
-Activate Endpoint Privileged Manager
-
-From the Keeper Admin Console, ensure that your Privileged Manager
-subscription is active. Go to the **Admin Console** > **Subscriptions** and
-activate the trial or contact your Keeper customer success manager.
-
-3
-
-###
-
-Enable Permissions
-
-With Privilege Manager, an admin role is required with permissions covering
-end-user privilege.
-
-  * Login to the Keeper Admin Console for your region.
-
-  * Under **Admin** > **Roles** , create a new role or modify an existing role
-
-  * In the Role settings select the "**Administrative Permissions** " tab and select "**Add Managing Node** ".
-
-  * Activate the "**Manage Privileged Access** " permission.
-
-  * Assign yourself or your test admin account to this role.
-
-###
-
-Next Steps
-
-Now that Privilege Manager is activated, the next steps are:
-
-  * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment) of the Agent
-
-  * [Set Policies](/en/keeperpam/endpoint-privilege-manager/policies) and
-
-  * [Manage Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
-
-Activating the Privilege Manager permissions in the Admin Console
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDoiPPM2tZ7T4Oa4P3RLK%252FPEDM%2520Setup.jpg%3Falt%3Dmedia%26token%3D066265f4-efd7-4669-9e1f-ca51d388b345&width=768&dpr=4&quality=100&sign=a7e8005e&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNorkmhpyERhcuNfaDWaZ%252FNon%2520PEDM%2520Subscriber.png%3Falt%3Dmedia%26token%3D63dfa4d2-277a-48b5-8592-811538bc620a&width=768&dpr=4&quality=100&sign=aa8ece05&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FhXwyVa64wQkkY77Ej9BY%252FAdmin%2520Permissions.png%3Falt%3Dmedia%26token%3Db305e1a2-7abf-4928-be81-bfb98a1e0fa7&width=768&dpr=4&quality=100&sign=e1af6f67&sv=2)
 

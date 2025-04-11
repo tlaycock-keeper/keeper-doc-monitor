@@ -326,6 +326,7 @@ manager-configuration?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -493,7 +494,8 @@ used to authenticate and decrypt data from the Keeper Secrets Manager APIs.
 
 Secrets Manager configurations are created from [One Time Access
 Tokens](/en/keeperpam/secrets-manager/about/one-time-token) and have a one to
-one relationship with.
+one relationship with[ client devices](/en/keeperpam/secrets-
+manager/about/terminology#client-device).
 
 ####
 
@@ -669,9 +671,6 @@ Copy
 When initializing a configuration in Commander, typically `--unlock-ip` should
 be included in the command. If it is not included, the client device will be
 locked to the IP Address that Commander is using.
-
-[ client devices](/en/keeperpam/secrets-manager/about/terminology#client-
-device)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

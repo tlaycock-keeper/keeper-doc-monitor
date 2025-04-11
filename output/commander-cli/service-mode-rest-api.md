@@ -320,6 +320,7 @@ rest-api?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -450,7 +451,7 @@ reference/plugins/automatic-
 execution)[NextTroubleshooting](/en/keeperpam/commander-cli/troubleshooting-
 commander-cli)
 
-Last updated 14 days ago
+Last updated 15 days ago
 
 Was this helpful?
 
@@ -872,7 +873,7 @@ Using Ngrok has security implications. Follow this guidance:
 
   * Protect access to the service through Ngrok's IP policies
 
-  * 
+  * Limit the scope of supported commands. For example, if you only need to add records through the API, then only allow the `record-add` command. See the [Command List](/en/keeperpam/commander-cli/service-mode-rest-api#command-list) section.
 
 ####
 
@@ -1075,12 +1076,6 @@ For support or feature requests, please contact:
 
 If you would like to request additional features or setup guides for Commander
 Service Mode, please reach out.
-
-Limit the scope of supported commands. For example, if you only need to add
-records through the API, then only allow the `record-add` command. See the
-section.
-
-[Command List](/en/keeperpam/commander-cli/service-mode-rest-api#command-list)
 
 Commander Service Mode record
 

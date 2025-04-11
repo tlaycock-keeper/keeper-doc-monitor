@@ -326,6 +326,7 @@ manager/getting-started/just-in-time-access-jit?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -454,7 +455,7 @@ KeeperPAM Just-In-Time Access and Zero Standing Privilege
 manager/getting-started/sharing-and-access-control)[NextPassword
 Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
 
-Last updated 1 day ago
+Last updated 2 days ago
 
 Was this helpful?
 

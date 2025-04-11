@@ -324,6 +324,7 @@ manager/overview?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -423,36 +424,6 @@ manager/overview?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Endpoint Privilege Manager
-  * Introduction
-  * Solution Overview
-  * Zero-Standing Privilege (ZSP)
-  * Dashboard
-  * End-User Experience
-  * About this Guide
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=Kgyes9zzVSWKVrIRJHSt&only=yes&limit=100)
-
-  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
-
-# Overview
-
-Endpoint Privilege Manager is a Privileged Elevation and Delegation Management
-(PEDM) solution
-
-[PreviousPreview Access](/en/keeperpam/privileged-access-
-manager/references/preview-access)[NextSetup](/en/keeperpam/endpoint-
-privilege-manager/setup)
-
-Last updated 1 day ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -483,6 +454,36 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Endpoint Privilege Manager
+  * Introduction
+  * Solution Overview
+  * Zero-Standing Privilege (ZSP)
+  * Dashboard
+  * End-User Experience
+  * About this Guide
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=Kgyes9zzVSWKVrIRJHSt&only=yes&limit=100)
+
+  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
+
+# Overview
+
+Endpoint Privilege Manager is a Privileged Elevation and Delegation Management
+(PEDM) solution
+
+[PreviousPreview Access](/en/keeperpam/privileged-access-
+manager/references/preview-access)[NextSetup](/en/keeperpam/endpoint-
+privilege-manager/setup)
+
+Last updated 18 hours ago
+
+Was this helpful?
+
 ##
 
 Endpoint Privilege Manager
@@ -491,9 +492,9 @@ Endpoint Privilege Manager
 
 Introduction
 
-Keeper Endpoint Privilege Manager is an advanced Privileged Elevation and
-Delegation Management (PEDM) solution that provides secure, just-in-time
-privileged access across your IT environments.
+Endpoint Privilege Manager is an advanced Privileged Elevation and Delegation
+Management (PEDM) solution that provides secure, just-in-time privileged
+access across your IT environments.
 
 This comprehensive documentation will guide you through the setup, deployment,
 and management of Endpoint Privilege Manager.
@@ -605,13 +606,16 @@ About this Guide
 
 This guide on Privilege Manager is broken down into the following sections:
 
-  * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+  *   *   *   * 
 
-  * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+[Setup](/en/keeperpam/endpoint-privilege-manager/setup)
 
-  * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+[Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
 
-  * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+[Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+[Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-
+requests)
 
 Keeper Privilege Manager
 

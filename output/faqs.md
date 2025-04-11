@@ -312,6 +312,7 @@ bridge/faqs?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -418,10 +419,10 @@ On this page
   * How does Keeper provide Just-in-Time access when approval is required?
   * How does Keeper provide Just-in-Time access when there is no approval required?
   * How does Keeper allow users to elevate when they are offline and do not have an internet connection?
-  * Using KeeperPAM, Privilege Manager and Microsoft LAPS Together
+  * Using KeeperPAM, Endpoint Privilege Manager and Microsoft LAPS Together
   * How can Keeper replace LAPS?
   * How does KeeperPAM manage credentials on the end-user machines?
-  * What approach does Privilege Manager take for securing admin access?
+  * What approach does Endpoint Privilege Manager take for securing admin access?
   * What are the options for using Keeper solutions with or without Microsoft LAPS?
   * Which approach is recommended for maximum security?
 
@@ -478,19 +479,19 @@ back online, the event logs are relayed back to the Keeper cloud.
 
 ###
 
-Using KeeperPAM, Privilege Manager and Microsoft LAPS Together
+Using KeeperPAM, Endpoint Privilege Manager and Microsoft LAPS Together
 
-KeeperPAM and Privilege Manager can work seamlessly alongside Microsoft LAPS
-in organizations that have already invested in LAPS deployment. In this
-complementary arrangement, LAPS can continue managing the rotation of local
-administrator passwords on domain-joined computers, while KeeperPAM handles
-credential management for domain accounts, service accounts, and other
+KeeperPAM and Endpoint Privilege Manager can work seamlessly alongside
+Microsoft LAPS in organizations that have already invested in LAPS deployment.
+In this complementary arrangement, LAPS can continue managing the rotation of
+local administrator passwords on domain-joined computers, while KeeperPAM
+handles credential management for domain accounts, service accounts, and other
 privileged credentials that fall outside LAPS's scope. This integration
 preserves your existing LAPS investment while extending privileged access
 protection across more systems and account types.
 
-Privilege Manager enhances this security ecosystem by implementing least-
-privilege enforcement on endpoints. While LAPS focuses on securing the
+Endpoint Privilege Manager enhances this security ecosystem by implementing
+least-privilege enforcement on endpoints. While LAPS focuses on securing the
 credentials of standing admin accounts, Privilege Manager reduces the need to
 use those accounts in the first place by enabling temporary privilege
 elevation for specific tasks. Together, these solutions provide comprehensive
@@ -510,7 +511,7 @@ complementary components:
 
   1. **KeeperPAM** handles credential management and rotation for both domain and local accounts
 
-  2. **Privilege Manager** implements least-privilege policies and just-in-time elevation
+  2. **Endpoint Privilege Manager** implements least-privilege policies and just-in-time elevation
 
 Organizations can either replace LAPS entirely with Keeper's solution or use
 them together during transition periods.
@@ -530,10 +531,10 @@ decentralized local admin credentials across your environment.
 
 ###
 
-What approach does Privilege Manager take for securing admin access?
+What approach does Endpoint Privilege Manager take for securing admin access?
 
-Privilege Manager focuses on privilege elevation rather than credential
-management:
+Endpoint Privilege Manager focuses on privilege elevation rather than
+credential management:
 
   * Removes users from the local admin groups
 
@@ -566,7 +567,7 @@ Option 2: Complement LAPS with Keeper Solutions
 
   * KeeperPAM manages domain admin and service account credentials
 
-  * Privilege Manager implements least-privilege policies and just-in-time elevation
+  * Endpoint Privilege Manager implements least-privilege policies and just-in-time elevation
 
 ####
 
@@ -574,7 +575,7 @@ Option 3: Full Keeper Solution (Most Secure)
 
   * KeeperPAM manages all admin credentials (domain and local)
 
-  * Privilege Manager implements least-privilege policies
+  * Endpoint Privilege Manager implements least-privilege policies
 
   * Users never need direct access to admin credentials
 
@@ -586,15 +587,15 @@ Which approach is recommended for maximum security?
 
 The full Keeper solution (Option 3) provides the most comprehensive approach
 by addressing both credential management through KeeperPAM and privilege
-management through Privilege Manager. This effectively renders traditional
-LAPS unnecessary while providing superior security controls and detailed audit
-trails.
+management through Endpoint Privilege Manager. This effectively renders
+traditional LAPS unnecessary while providing superior security controls and
+detailed audit trails.
 
 [PreviousManaging Requests](/en/keeperpam/endpoint-privilege-manager/managing-
 requests)[NextSecrets Manager Overview](/en/keeperpam/secrets-
 manager/overview)
 
-Last updated 20 days ago
+Last updated 18 hours ago
 
 Was this helpful?
 

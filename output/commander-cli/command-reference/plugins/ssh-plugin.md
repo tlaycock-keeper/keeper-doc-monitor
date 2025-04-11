@@ -326,6 +326,7 @@ reference/plugins/ssh-plugin?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -498,6 +499,10 @@ rotation type as well. See the instructions below.
 
 The standard "SSH Key" record type is a good fit for SSH rotations.
 
+See the [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-
+commander-cli#typed-vs-untyped-records-v3-vs-v2)section for more information
+on legacy vs typed records
+
 ###
 
 Set the Login Name
@@ -507,9 +512,18 @@ Set the Login Name
 Populate the **'Login'** field of the Keeper record with the target system(s)
 login name
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf4OShy7nCcxJc2f8TN%252Fimage.png%3Falt%3Dmedia%26token%3Dca9f94cf-
+dead-4143-a5a3-ba85cdf257aa&width=768&dpr=4&quality=100&sign=b335ad28&sv=2)
+
 ###
 
 Set the Hostname and Port
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FE4X6qOhCPWsssZVp37JT%252Fimage.png%3Falt%3Dmedia%26token%3D8c9a7887-a5b8-4950-ba38-9c56d484905e&width=768&dpr=4&quality=100&sign=798657fc&sv=2)
 
 If using an untyped record, the host and port can be set to custom fields. See
 below.
@@ -557,6 +571,10 @@ the target server, the public key must be manually updated `one time` in
 
 After it has been set this first time, subsequent rotations will be automated
 and updated by Commander.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FoNT8pQ2YxiSOv8OBWv6W%252Fimage.png%3Falt%3Dmedia%26token%3D5f362713-c5ec-4d56-b515-2eded5aa51cc&width=768&dpr=4&quality=100&sign=750f352&sv=2)
 
 ##
 
@@ -609,6 +627,10 @@ Copy
 This plugin makes an assumption that the target system uses the default
 settings for SSH service, i.e. `authorized_keys` file is located in the `.ssh`
 directory of the user **HOME** directory.
+
+For more information on the `rotate` command see
+[documentation](/en/keeperpam/commander-cli/command-
+reference/plugins/password-rotation#rotate-command)
 
 ###
 
@@ -668,27 +690,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-See the section for more information on legacy vs typed records
-
-For more information on the `rotate` command see
-
-[documentation](/en/keeperpam/commander-cli/command-
-reference/plugins/password-rotation#rotate-command)
-
-[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
-cli#typed-vs-untyped-records-v3-vs-v2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FE4X6qOhCPWsssZVp37JT%252Fimage.png%3Falt%3Dmedia%26token%3D8c9a7887-a5b8-4950-ba38-9c56d484905e&width=768&dpr=4&quality=100&sign=798657fc&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FoNT8pQ2YxiSOv8OBWv6W%252Fimage.png%3Falt%3Dmedia%26token%3D5f362713-c5ec-4d56-b515-2eded5aa51cc&width=768&dpr=4&quality=100&sign=750f352&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf4OShy7nCcxJc2f8TN%252Fimage.png%3Falt%3Dmedia%26token%3Dca9f94cf-
-dead-4143-a5a3-ba85cdf257aa&width=768&dpr=4&quality=100&sign=b335ad28&sv=2)
 

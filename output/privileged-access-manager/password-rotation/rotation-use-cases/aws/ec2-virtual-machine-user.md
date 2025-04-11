@@ -336,6 +336,7 @@ user?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -457,44 +458,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=FPDBcrpQxc8Hp0jGKUSI&only=yes&limit=100)
 
 Rotating AWS EC2 Virtual Machine accounts with Keeper
 
-[PreviousManaged Microsoft AD User](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/aws/directory-user)[NextIAM User
-Access Key](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/aws/iam-user-access-key)
-
-Last updated 2 days ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F0Y2y9l0gTfNdoE3FA4YV%252FEC2%2520Virtual%2520Machine%2520User.jpg%3Falt%3Dmedia%26token%3D78a5e94c-1223-4849-9b63-90bf78b952a2&width=768&dpr=4&quality=100&sign=8b34b487&sv=2)
 
 In this guide, you will learn how to rotate AWS EC2 Virtual Machine (VM)
 Accounts on your AWS Environment using Keeper Rotation. The EC2 VM is an AWS
@@ -582,6 +548,12 @@ shared folder that is shared to the KSM application created in the
 prerequisites. Only the KSM application needs access to this privileged
 account, it does not need to be shared with any users.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHV1tsZY8VyyuTJV23jAa%252FScreenshot%25202025-02-08%2520at%252012.08.32%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D511de53e-9868-4185-915c-8b61f6282e5d&width=768&dpr=4&quality=100&sign=ba6d9f0b&sv=2)
+
+PAM Machine record
+
 ##
 
 2\. Set up PAM Configuration
@@ -644,6 +616,12 @@ For more details on all the configurable fields in the PAM Configuration
 record, visit this [page](/en/keeperpam/privileged-access-manager/getting-
 started/pam-configuration).
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F73xYUEcQoMEflLLtu70W%252FScreenshot%25202025-02-08%2520at%252012.10.29%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3De2ff5fdd-2db2-4474-9e33-569a8923bd02&width=768&dpr=4&quality=100&sign=f1e3a71f&sv=2)
+
+PAM Configuration for AWS
+
 ##
 
 3\. Set up PAM User Records
@@ -678,6 +656,12 @@ left blank, performing a rotation will set one.
 SSH private key. This is only required if you are planning to rotate the PEM
 key instead of rotating the password.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuDPuGpWsVg5WOw5WEFwe%252FScreenshot%25202025-02-08%2520at%25204.08.08%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D3e1c1d5b-e559-4cef-9095-12215dfa40fb&width=768&dpr=4&quality=100&sign=64aee45b&sv=2)
+
+Linux PAM User record
+
 ##
 
 4\. Configure Rotation on the Record - AWS VM User
@@ -693,6 +677,12 @@ Select the PAM User record(s) from Step 3, edit the record and open the
 
   * Upon saving, the rotation button will be enabled and available to rotate on demand, or via the selected schedule.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2OqJSlntStvwCncNSgyK%252FScreenshot%25202023-05-11%2520at%252010.56.07%2520AM.jpg%3Falt%3Dmedia%26token%3Df96c49e7-b923-46d1-97c0-4554e80adf32&width=768&dpr=4&quality=100&sign=349b3e89&sv=2)
+
+Password Rotation Settings on AWS Instance User
+
 Any user with `edit` rights to a PAM User record has the ability to setup
 rotation for that record.
 
@@ -706,14 +696,6 @@ key. The first time that a rotation occurs, the old public key is left intact
 in order to prevent system lockout. The second public key added to the file
 contains a comment that serves as an identifier for future rotations. For
 example:
-
-Copy
-
-    
-    
-    [ec2-user@host .ssh]$ cat authorized_keys
-    ssh-rsa AAAAB3NzaC1...11xZrfOxYXG6RV84mCZ3uldesEyV/ghLxAb7Fcz awsdemo
-    ssh-rsa AAAAB3NzaC...un+frl9Q== keeper-security-ec2user
 
 By default, Keeper will **not** remove other keys from the
 `.ssh/authorized_keys` file since some providers will place in their own keys
@@ -753,31 +735,50 @@ exists. If the value is FALSE, the private key will not be rotated.
 For Linux user rotations, password-encrypted PEM files are not currently
 supported.
 
-PAM Machine record
+[PreviousManaged Microsoft AD User](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/aws/directory-user)[NextIAM User
+Access Key](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/iam-user-access-key)
 
-PAM Configuration for AWS
+Last updated 3 days ago
 
-Linux PAM User record
+Was this helpful?
 
-Password Rotation Settings on AWS Instance User
+#### Company
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F0Y2y9l0gTfNdoE3FA4YV%252FEC2%2520Virtual%2520Machine%2520User.jpg%3Falt%3Dmedia%26token%3D78a5e94c-1223-4849-9b63-90bf78b952a2&width=768&dpr=4&quality=100&sign=8b34b487&sv=2)
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHV1tsZY8VyyuTJV23jAa%252FScreenshot%25202025-02-08%2520at%252012.08.32%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D511de53e-9868-4185-915c-8b61f6282e5d&width=768&dpr=4&quality=100&sign=ba6d9f0b&sv=2)
+#### Support
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F73xYUEcQoMEflLLtu70W%252FScreenshot%25202025-02-08%2520at%252012.10.29%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3De2ff5fdd-2db2-4474-9e33-569a8923bd02&width=768&dpr=4&quality=100&sign=f1e3a71f&sv=2)
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuDPuGpWsVg5WOw5WEFwe%252FScreenshot%25202025-02-08%2520at%25204.08.08%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D3e1c1d5b-e559-4cef-9095-12215dfa40fb&width=768&dpr=4&quality=100&sign=64aee45b&sv=2)
+#### Solutions
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2OqJSlntStvwCncNSgyK%252FScreenshot%25202023-05-11%2520at%252010.56.07%2520AM.jpg%3Falt%3Dmedia%26token%3Df96c49e7-b923-46d1-97c0-4554e80adf32&width=768&dpr=4&quality=100&sign=349b3e89&sv=2)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+Copy
+
+    
+    
+    [ec2-user@host .ssh]$ cat authorized_keys
+    ssh-rsa AAAAB3NzaC1...11xZrfOxYXG6RV84mCZ3uldesEyV/ghLxAb7Fcz awsdemo
+    ssh-rsa AAAAB3NzaC...un+frl9Q== keeper-security-ec2user
 

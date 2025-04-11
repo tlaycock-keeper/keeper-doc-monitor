@@ -326,6 +326,7 @@ manager/integrations/servicenow?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -453,43 +454,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=Peg7P81ntdgtSMUkmymb&only=yes&limit=100)
 
 Keeper credential storage integration with ServiceNow
 
-[PreviousPowerShell Plugin](/en/keeperpam/secrets-
-manager/integrations/powershell-plugin)[NextTeller](/en/keeperpam/secrets-
-manager/integrations/teller)
-
-Last updated 3 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FEzNiRnYQFy6ZdkIAjTDw%252Fkeeper%252Bservicenow.jpg%3Falt%3Dmedia%26token%3D220f17f1-fd62-4c9b-b528-afdf43ab9096&width=768&dpr=4&quality=100&sign=77fca440&sv=2)
 
 ##
 
@@ -566,7 +533,11 @@ Prerequisites
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * A ServiceNow instance with [External Credential Storage](https://docs.servicenow.com/bundle/utah-platform-security/page/product/credentials/concept/external_cred_storage_configuration.html) plugin enabled
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * A ServiceNow instance with [External Credential Storage](https://docs.servicenow.com/bundle/utah-platform-security/page/product/credentials/concept/external_cred_storage_configuration.html) plugin enabled
 
 ##
 
@@ -788,17 +759,41 @@ MID server that should query Keeper vault, and select a target that the
 credential should work for to check that everything works as expected. If it
 doesn't, check the logs for errors and debug information as detailed above.
 
-A Keeper  with secrets shared to it
+[PreviousPowerShell Plugin](/en/keeperpam/secrets-
+manager/integrations/powershell-plugin)[NextTeller](/en/keeperpam/secrets-
+manager/integrations/teller)
 
-See the  for instructions on creating an Application
+Last updated 3 months ago
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
+Was this helpful?
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
+#### Company
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FEzNiRnYQFy6ZdkIAjTDw%252Fkeeper%252Bservicenow.jpg%3Falt%3Dmedia%26token%3D220f17f1-fd62-4c9b-b528-afdf43ab9096&width=768&dpr=4&quality=100&sign=77fca440&sv=2)
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

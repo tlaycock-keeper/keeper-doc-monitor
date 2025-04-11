@@ -328,6 +328,7 @@ manager/references/active-directory-least-privilege?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -509,13 +510,13 @@ Procedure
 
   5. Locate your chosen service account, then click 'OK'.
 
-Selecting a service account to perform rotation
-
   1. Click 'Next' to advance to permission selection.
 
   2. In 'Delegate the following common tasks', check the option for 'Reset user passwords and force password change at next logon', then click 'Next'.
 
   1. Add the service account's login and password to the Resource Record for the AD instance.
+
+Selecting a service account to perform rotation
 
 Delegating permission to reset user passwords
 

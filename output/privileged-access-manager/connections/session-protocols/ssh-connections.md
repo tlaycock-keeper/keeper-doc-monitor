@@ -330,6 +330,7 @@ connections?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -459,7 +460,7 @@ manager/connections/session-protocols)[NextRDP
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/rdp-connections)
 
-Last updated 1 month ago
+Last updated 2 months ago
 
 Was this helpful?
 
@@ -633,25 +634,9 @@ Once you have configured the SSH Protocol connection on your PAM Machine
 Record, your record will contain the following connection banner with the
 "Launch" Button:
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FF3pvzsbKBHZ8Wj98YiMM%252FconnectionRecord.png%3Falt%3Dmedia%26token%3D9811c113-c5f3-4486-b284-12e54de8b47c&width=768&dpr=4&quality=100&sign=db2f706c&sv=2)
-
 In the above image, a Linux server has been configured on the PAM Machine
 Record. When clicking launch, the Vault Client will render a window with the
 established connection protocol to the specified target:
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtiIvkE75oiwZ6sP4iSjH%252FScreenshot%25202024-12-29%2520at%25207.47.48%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dca9a92df-4ad8-4d26-ad5e-35223ebf2f3b&width=768&dpr=4&quality=100&sign=f3b5cb98&sv=2)
-
-SSH Session Launching
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FoGptJrsRae6sNNFv5Mag%252FScreenshot%25202024-12-29%2520at%25205.50.21%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Ddaf886ac-f3c9-43d8-8dbe-1280366f9791&width=768&dpr=4&quality=100&sign=96d9b589&sv=2)
-
-SSH Session Active
 
 ###
 
@@ -660,30 +645,11 @@ File Transfers
 If the SFTP file transfer feature is enabled, the user can drag and drop files
 into the terminal session to transfer the files to the machine.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGUHA9hRGHzUZ07N2oMSA%252FScreenshot%25202025-02-09%2520at%25208.15.45%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D55f1b1fa-2a39-430e-b991-cceda12355ad&width=768&dpr=4&quality=100&sign=d9962f96&sv=2)
-
-SFTP File Transfer Options
-
 Keeper supports one or more files transferred simultaneously through drag-and-
 drop.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F53Sn5P6KscJtt7usRQWh%252Fdrag-
-and-
-drop.png%3Falt%3Dmedia%26token%3De07ef4fa-c6ad-49e0-acb4-64e0a042dd36&width=768&dpr=4&quality=100&sign=a34ca83f&sv=2)
-
 While the files are being uploaded to the target machine, a file transfer
 status is displayed in the dock area of the Keeper Vault:
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPAOewYiPjJuOgJsngzSX%252Fupload-
-progress.png%3Falt%3Dmedia%26token%3D50307229-bdbe-4704-bd53-f8485bda7681&width=768&dpr=4&quality=100&sign=b570791&sv=2)
-
-File Upload Status
 
 ###
 
@@ -692,20 +658,25 @@ SSH to Windows Servers
 The SSH protocol can also be used to access Windows servers for execution of
 PowerShell commands or other administrative actions.
 
-  * 
+  * Learn more on how to [activate SSH on Windows](/en/keeperpam/privileged-access-manager/references/setting-up-ssh#windows)
 
 ##
 
 Session Recordings - SSH Protocol
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fm3ujLVowAlLGqlZ6ecVJ%252FScreenshot%25202025-01-21%2520at%252012.17.55%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D3bac50e6-864a-4deb-
-ab79-e0b8a871a8ae&width=768&dpr=4&quality=100&sign=62f9e671&sv=2)
+Field
 
-SSH Session Recordings
+Definition
 
-Learn more on how to
+PAM Configuration
+
+This is the PAM Configuration that contains the details of your target
+infrastructure and provides access to the target configured on the PAM Record
+
+Administrative Credential Record
+
+This is the linked  that will be used to authenticate to the target and
+perform administrative operations on it.
 
 For this protocol, both graphical and the full, raw text text content of
 terminal sessions, including timing information, are recorded. For more
@@ -718,8 +689,8 @@ information on recordings and how to access these recordings, visit this .
 [Session Recording and Playback](/en/keeperpam/privileged-access-
 manager/session-recording-and-playback)
 
-[activate SSH on Windows](/en/keeperpam/privileged-access-
-manager/references/setting-up-ssh#windows)
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
 
 PAM Record
 
@@ -737,20 +708,6 @@ Record
 The PAM User record contains the user credentials that will be used to connect
 to the endpoint
 
-Field
-
-Definition
-
-PAM Configuration
-
-This is the PAM Configuration that contains the details of your target
-infrastructure and provides access to the target configured on the PAM Record
-
-Administrative Credential Record
-
-This is the linked  that will be used to authenticate to the target and
-perform administrative operations on it.
-
 [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
 started/pam-configuration)
 
@@ -760,6 +717,45 @@ resources/pam-machine)
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
 
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
+SSH Session Launching
+
+SSH Session Active
+
+SFTP File Transfer Options
+
+File Upload Status
+
+SSH Session Recordings
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FF3pvzsbKBHZ8Wj98YiMM%252FconnectionRecord.png%3Falt%3Dmedia%26token%3D9811c113-c5f3-4486-b284-12e54de8b47c&width=768&dpr=4&quality=100&sign=db2f706c&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtiIvkE75oiwZ6sP4iSjH%252FScreenshot%25202024-12-29%2520at%25207.47.48%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dca9a92df-4ad8-4d26-ad5e-35223ebf2f3b&width=768&dpr=4&quality=100&sign=f3b5cb98&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FoGptJrsRae6sNNFv5Mag%252FScreenshot%25202024-12-29%2520at%25205.50.21%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Ddaf886ac-f3c9-43d8-8dbe-1280366f9791&width=768&dpr=4&quality=100&sign=96d9b589&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGUHA9hRGHzUZ07N2oMSA%252FScreenshot%25202025-02-09%2520at%25208.15.45%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D55f1b1fa-2a39-430e-b991-cceda12355ad&width=768&dpr=4&quality=100&sign=d9962f96&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F53Sn5P6KscJtt7usRQWh%252Fdrag-
+and-
+drop.png%3Falt%3Dmedia%26token%3De07ef4fa-c6ad-49e0-acb4-64e0a042dd36&width=768&dpr=4&quality=100&sign=a34ca83f&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPAOewYiPjJuOgJsngzSX%252Fupload-
+progress.png%3Falt%3Dmedia%26token%3D50307229-bdbe-4704-bd53-f8485bda7681&width=768&dpr=4&quality=100&sign=b570791&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fm3ujLVowAlLGqlZ6ecVJ%252FScreenshot%25202025-01-21%2520at%252012.17.55%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D3bac50e6-864a-4deb-
+ab79-e0b8a871a8ae&width=768&dpr=4&quality=100&sign=62f9e671&sv=2)
 

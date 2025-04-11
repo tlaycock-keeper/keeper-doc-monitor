@@ -326,6 +326,7 @@ reference/msp-management-commands?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -474,27 +475,68 @@ Command
 
 Explanation
 
+[`msp-info`](/en/keeperpam/commander-cli/command-reference/msp-management-
+commands#msp-info-command) or [`mi`](/en/keeperpam/commander-cli/command-
+reference/msp-management-commands#msp-info-command)
+
 Display MSP details
+
+[`msp-down`](/en/keeperpam/commander-cli/command-reference/msp-management-
+commands#msp-down-command) or [`md`](/en/keeperpam/commander-cli/command-
+reference/msp-management-commands#msp-down-command)
 
 Refresh local MSP data from server
 
+[`msp-add`](/en/keeperpam/commander-cli/command-reference/msp-management-
+commands#msp-add) or [`ma`](/en/keeperpam/commander-cli/command-reference/msp-
+management-commands#msp-add)
+
 Creates Managed Company
+
+[`msp-remove`](/en/keeperpam/commander-cli/command-reference/msp-management-
+commands#msp-remove) or [`mrm`](/en/keeperpam/commander-cli/command-
+reference/msp-management-commands#msp-remove)
 
 Removes Managed Company
 
+[`msp-update`](/en/keeperpam/commander-cli/command-reference/msp-management-
+commands#msp-update) or [`mu`](/en/keeperpam/commander-cli/command-
+reference/msp-management-commands#msp-update)
+
 Modify Managed Company licenses
+
+[`msp-billing-report`](/en/keeperpam/commander-cli/command-reference/msp-
+management-commands#msp-billing-report)
 
 Generate MSP Billing Reports
 
+[`msp-legacy-report`](/en/keeperpam/commander-cli/command-reference/reporting-
+commands#msp-legacy-report-command)
+
 Generate MSP Legacy Report
+
+[`switch-to-mc`](/en/keeperpam/commander-cli/command-reference/msp-management-
+commands#switch-to-mc-command)
 
 Switch context to run commands as a managed company
 
+[`switch-to-msp`](/en/keeperpam/commander-cli/command-reference/msp-
+management-commands#switch-to-msp-command)
+
 Switch context to run commands as MSP
+
+[`msp-convert-node`](/en/keeperpam/commander-cli/command-reference/msp-
+management-commands#msp-convert-node-command)
 
 Convert an enterprise node into a managed company
 
+[`msp-copy-role`](/en/keeperpam/commander-cli/command-reference/msp-
+management-commands#msp-copy-role-command)
+
 Copy role enforcements from MSP to MCs
+
+[`distributor`](/en/keeperpam/commander-cli/command-reference/msp-management-
+commands#distributor-commands)
 
 Options for managed MSPs. Edit licenses and view msp and mc details.
 
@@ -589,6 +631,11 @@ Copy
     
     
     msp-add --seats=10 --plan=enterprise "MC Name"
+
+When a new managed company is created, Commander saves the new mc id as an
+environment variable `last_mc_id See the `[`documentation
+below`](/en/keeperpam/commander-cli/command-reference/msp-management-
+commands#undefined)` about using this variable`
 
 ###
 
@@ -964,71 +1011,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-or
-
-or
-
-or
-
-or
-
-or
-
-When a new managed company is created, Commander saves the new mc id as an
-environment variable `last_mc_id See the `` about using this variable`
-
-[`documentation below`](/en/keeperpam/commander-cli/command-reference/msp-
-management-commands#undefined)
-
-[`msp-info`](/en/keeperpam/commander-cli/command-reference/msp-management-
-commands#msp-info-command)
-
-[`mi`](/en/keeperpam/commander-cli/command-reference/msp-management-
-commands#msp-info-command)
-
-[`msp-down`](/en/keeperpam/commander-cli/command-reference/msp-management-
-commands#msp-down-command)
-
-[`md`](/en/keeperpam/commander-cli/command-reference/msp-management-
-commands#msp-down-command)
-
-[`msp-add`](/en/keeperpam/commander-cli/command-reference/msp-management-
-commands#msp-add)
-
-[`ma`](/en/keeperpam/commander-cli/command-reference/msp-management-
-commands#msp-add)
-
-[`msp-remove`](/en/keeperpam/commander-cli/command-reference/msp-management-
-commands#msp-remove)
-
-[`mrm`](/en/keeperpam/commander-cli/command-reference/msp-management-
-commands#msp-remove)
-
-[`msp-update`](/en/keeperpam/commander-cli/command-reference/msp-management-
-commands#msp-update)
-
-[`mu`](/en/keeperpam/commander-cli/command-reference/msp-management-
-commands#msp-update)
-
-[`msp-billing-report`](/en/keeperpam/commander-cli/command-reference/msp-
-management-commands#msp-billing-report)
-
-[`switch-to-mc`](/en/keeperpam/commander-cli/command-reference/msp-management-
-commands#switch-to-mc-command)
-
-[`switch-to-msp`](/en/keeperpam/commander-cli/command-reference/msp-
-management-commands#switch-to-msp-command)
-
-[`msp-convert-node`](/en/keeperpam/commander-cli/command-reference/msp-
-management-commands#msp-convert-node-command)
-
-[`msp-copy-role`](/en/keeperpam/commander-cli/command-reference/msp-
-management-commands#msp-copy-role-command)
-
-[`distributor`](/en/keeperpam/commander-cli/command-reference/msp-management-
-commands#distributor-commands)
-
-[`msp-legacy-report`](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#msp-legacy-report-command)
 

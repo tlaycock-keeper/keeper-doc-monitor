@@ -340,6 +340,7 @@ directory?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -614,6 +615,10 @@ Select the Shared folder that contains the PAM Directory record
 
 **Other fields**
 
+Depends on your use case. See the [PAM
+Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration) section.
+
 ###
 
 3\. Set up PAM User records
@@ -775,11 +780,6 @@ Check the connectivity
 
 Run 'LDP.exe' and make sure that you're able to connect to the local domain
 over port 636 with SSL enabled.
-
-Depends on your use case. See the  section.
-
-[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
 
 PAM Directory record
 

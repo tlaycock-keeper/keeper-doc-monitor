@@ -326,6 +326,7 @@ agent/integration-with-git?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -444,9 +445,42 @@ PDF](/en/keeperpam/~gitbook/pdf?page=e89A5oy3ecBtC0tegIz1&only=yes&limit=100)
 
 Keeper SSH Agent integration for Git Authentication and Commit Signing
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F1xcCA0N2mKvyUVCfkZMY%252FKeeperPAM%2520Integration%2520with%2520Git.jpg%3Falt%3Dmedia%26token%3Daeb5d4d6-8700-46b8-a16b-6d000b06ef5d&width=768&dpr=4&quality=100&sign=66ad9b67&sv=2)
+[PreviousSSH Agent](/en/keeperpam/privileged-access-manager/ssh-
+agent)[NextDiscovery](/en/keeperpam/privileged-access-manager/discovery)
+
+Last updated 2 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 Keeper's SSH Agent integrates seamlessly with Git for authentication and
 commit signing, ensuring private keys are securely stored in the Keeper Vault
@@ -527,12 +561,6 @@ Add the contents from the public and private keys generated in Step 2 into the
 Keeper record. Copy paste the Public Key and Private Key into the fields of
 Keeper.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDxSi7fUUzW1dcShfEcPR%252FScreenshot%25202025-01-17%2520at%252010.21.30%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D8fbd5131-ff81-4fc7-afad-e1fb1cab4e7b&width=768&dpr=4&quality=100&sign=62a2f90c&sv=2)
-
-Keeper SSH Key for Github Authentication
-
 4
 
 ###
@@ -556,12 +584,6 @@ From the Keeper Desktop App, open **Settings** > **Developer** > **SSH Agent**
 available keys.
 
 Click "**Update** " to save the settings.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FcFPh7LSRmJSWRYtlco5l%252FScreenshot%25202025-01-17%2520at%252010.43.06%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D3ccc1155-a3dc-4d47-83f0-18769b92309b&width=768&dpr=4&quality=100&sign=ba052cb7&sv=2)
-
-Select Github Auth Key from Keeper SSH Agent
 
 6
 
@@ -598,12 +620,6 @@ Copy
 
 This immediately will trigger a Keeper dialog to authorize the Github
 Authentication key.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FgqeSt0Xohap96dtYi0kU%252FScreenshot%25202025-01-17%2520at%252010.19.07%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D7e6d77f9-c31e-4763-8478-4d19b59116b7&width=768&dpr=4&quality=100&sign=fec3626c&sv=2)
-
-Authorize the use of Github Auth Key in Keeper
 
 Clicking "Authorize" will use the key stored in Keeper to authenticate with
 Github.
@@ -665,10 +681,6 @@ Add Key to Record
 Add the contents from the public and private keys generated in Step 2 into the
 Keeper record. Copy paste the Public Key and Private Key into the fields of
 Keeper.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FKhayBOMuHxXB6hWKuWbA%252FScreenshot%25202025-01-17%2520at%25207.59.02%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D10b23fd6-fea2-41b7-8d7a-9a29f65377d7&width=768&dpr=4&quality=100&sign=7a85a692&sv=2)
 
 4
 
@@ -773,10 +785,6 @@ Copy
 
 This immediately will trigger a Keeper dialog to authorize the key.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fcg6peK9rIReHQ2WbEyjV%252FScreenshot%25202025-01-17%2520at%25208.18.39%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D5a54fc48-c0b9-4ae5-a2eb-10380a6c4519&width=768&dpr=4&quality=100&sign=fd571132&sv=2)
-
 To verify that the signature was applied to the commit, run the following:
 
 Copy
@@ -800,43 +808,6 @@ Copy
 
 Setup is complete.
 
-[PreviousSSH Agent](/en/keeperpam/privileged-access-manager/ssh-
-agent)[NextDiscovery](/en/keeperpam/privileged-access-manager/discovery)
-
-Last updated 2 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 are set
 
 [Environment variables](/en/keeperpam/privileged-access-manager/ssh-
@@ -847,4 +818,34 @@ agent/integration-with-git#github-authentication)
 
 [Signing Commits](/en/keeperpam/privileged-access-manager/ssh-
 agent/integration-with-git#signing-key)
+
+Keeper SSH Key for Github Authentication
+
+Select Github Auth Key from Keeper SSH Agent
+
+Authorize the use of Github Auth Key in Keeper
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F1xcCA0N2mKvyUVCfkZMY%252FKeeperPAM%2520Integration%2520with%2520Git.jpg%3Falt%3Dmedia%26token%3Daeb5d4d6-8700-46b8-a16b-6d000b06ef5d&width=768&dpr=4&quality=100&sign=66ad9b67&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDxSi7fUUzW1dcShfEcPR%252FScreenshot%25202025-01-17%2520at%252010.21.30%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D8fbd5131-ff81-4fc7-afad-e1fb1cab4e7b&width=768&dpr=4&quality=100&sign=62a2f90c&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FcFPh7LSRmJSWRYtlco5l%252FScreenshot%25202025-01-17%2520at%252010.43.06%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D3ccc1155-a3dc-4d47-83f0-18769b92309b&width=768&dpr=4&quality=100&sign=ba052cb7&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FgqeSt0Xohap96dtYi0kU%252FScreenshot%25202025-01-17%2520at%252010.19.07%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D7e6d77f9-c31e-4763-8478-4d19b59116b7&width=768&dpr=4&quality=100&sign=fec3626c&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FKhayBOMuHxXB6hWKuWbA%252FScreenshot%25202025-01-17%2520at%25207.59.02%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D10b23fd6-fea2-41b7-8d7a-9a29f65377d7&width=768&dpr=4&quality=100&sign=7a85a692&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fcg6peK9rIReHQ2WbEyjV%252FScreenshot%25202025-01-17%2520at%25208.18.39%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D5a54fc48-c0b9-4ae5-a2eb-10380a6c4519&width=768&dpr=4&quality=100&sign=fd571132&sv=2)
 

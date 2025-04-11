@@ -344,6 +344,7 @@ mariadb-database?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -474,7 +475,7 @@ Single or Flexible Database](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/azure/managed-database/azure-postgresql-single-or-
 flexible-database)
 
-Last updated 1 month ago
+Last updated 2 months ago
 
 Was this helpful?
 

@@ -12,59 +12,47 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/remote-
-browser-isolation/setting-up-rbi/browser-autofill?fallback=true)[Keeper
-Connection Manager](https://docs.keeper.io/en/keeper-connection-
-manager/privileged-access-manager/remote-browser-isolation/setting-up-
-rbi/browser-autofill?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/remote-browser-isolation/setting-up-rbi/browser-
-autofill?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/privileged-access-manager/remote-browser-isolation/setting-up-
-rbi/browser-autofill?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/remote-browser-isolation/setting-up-rbi/browser-
-autofill?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/remote-browser-isolation/setting-up-
-rbi/browser-autofill?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/remote-browser-isolation/setting-up-rbi/browser-
-autofill?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-manager/remote-
-browser-isolation/setting-up-rbi/browser-autofill?fallback=true)[SSO Connect
-On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/remote-browser-isolation/setting-up-rbi/browser-
-autofill?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/privileged-access-manager/remote-browser-isolation/setting-up-
-rbi/browser-autofill?fallback=true)
+[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/aws-
+kms-1?fallback=true)[Keeper Connection
+Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
+manager/integrations/aws-kms-1?fallback=true)[User
+Guides](https://docs.keeper.io/en/user-guides/secrets-
+manager/integrations/aws-kms-1?fallback=true)[Release
+Notes](https://docs.keeper.io/en/release-notes/secrets-
+manager/integrations/aws-kms-1?fallback=true)[Enterprise
+Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
+manager/integrations/aws-kms-1?fallback=true)[MSP
+Guide](https://docs.keeper.io/en/msp-guide/secrets-manager/integrations/aws-
+kms-1?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-connect-
+cloud/secrets-manager/integrations/aws-kms-1?fallback=true)[KeeperPAM and
+Secrets Manager](https://docs.keeper.io/en/keeperpam/secrets-
+manager/integrations/aws-kms-1?fallback=true)[SSO Connect On-
+Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
+manager/integrations/aws-kms-1?fallback=true)[Keeper
+Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
+manager/integrations/aws-kms-1?fallback=true)
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/remote-
-browser-isolation/setting-up-rbi/browser-autofill?fallback=true)[Keeper
-Connection Manager](https://docs.keeper.io/en/keeper-connection-
-manager/privileged-access-manager/remote-browser-isolation/setting-up-
-rbi/browser-autofill?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/remote-browser-isolation/setting-up-rbi/browser-
-autofill?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/privileged-access-manager/remote-browser-isolation/setting-up-
-rbi/browser-autofill?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/remote-browser-isolation/setting-up-rbi/browser-
-autofill?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/remote-browser-isolation/setting-up-
-rbi/browser-autofill?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/remote-browser-isolation/setting-up-rbi/browser-
-autofill?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-manager/remote-
-browser-isolation/setting-up-rbi/browser-autofill?fallback=true)[SSO Connect
-On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/remote-browser-isolation/setting-up-rbi/browser-
-autofill?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/privileged-access-manager/remote-browser-isolation/setting-up-
-rbi/browser-autofill?fallback=true)
+[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/aws-
+kms-1?fallback=true)[Keeper Connection
+Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
+manager/integrations/aws-kms-1?fallback=true)[User
+Guides](https://docs.keeper.io/en/user-guides/secrets-
+manager/integrations/aws-kms-1?fallback=true)[Release
+Notes](https://docs.keeper.io/en/release-notes/secrets-
+manager/integrations/aws-kms-1?fallback=true)[Enterprise
+Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
+manager/integrations/aws-kms-1?fallback=true)[MSP
+Guide](https://docs.keeper.io/en/msp-guide/secrets-manager/integrations/aws-
+kms-1?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-connect-
+cloud/secrets-manager/integrations/aws-kms-1?fallback=true)[KeeperPAM and
+Secrets Manager](https://docs.keeper.io/en/keeperpam/secrets-
+manager/integrations/aws-kms-1?fallback=true)[SSO Connect On-
+Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
+manager/integrations/aws-kms-1?fallback=true)[Keeper
+Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
+manager/integrations/aws-kms-1?fallback=true)
 
   * [Overview](/en/keeperpam)
   * Privileged Access Manager
@@ -438,31 +426,34 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Eligible Credentials
-  * Autofill Targets
-  * Field Identification
+  * Features
+  * Prerequisites
+  * Setup
+  * 1\. Install Module
+  * 2\. Configure Oracle KV Connection
+  * 3\. Add Oracle Key Vault Storage to Your Code
+  * Using Oracle Key Vault Integration
+  * Additional Options
+  * Change Key
+  * Decrypt Config
 
 Was this helpful?
 
 [Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=JtIYNW80QVx3YzJQZ5Bi&only=yes&limit=100)
+PDF](/en/keeperpam/~gitbook/pdf?page=5cG5iwNkVeQ0xhQzvy9l&only=yes&limit=100)
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
-  3. [Setting up RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation/setting-up-rbi)
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
 
-# Browser Autofill
+# Oracle Key Vault
 
-Autofill credentials into Remote Browser Isolation sessions
+Protect Secrets Manager connection details with Oracle Key Vault
 
-[PreviousURL Patterns & Resource URL Patterns](/en/keeperpam/privileged-
-access-manager/remote-browser-isolation/setting-up-rbi/url-patterns-and-
-resource-url-patterns)[NextSession Recording &
-Playback](/en/keeperpam/privileged-access-manager/session-recording-and-
-playback)
+[PreviousOctopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-
+deploy)[NextPowerShell Plugin](/en/keeperpam/secrets-
+manager/integrations/powershell-plugin)
 
-Last updated 2 months ago
+Last updated 22 hours ago
 
 Was this helpful?
 
@@ -496,227 +487,624 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
-##
-
-Overview
-
-KeeperPAM can automatically fill credentials into the target remote browser
-isolation session. Credentials are never exposed to the user - the Keeper
-Gateway performs the filling inside of the Chromium session, and the session
-is visually projected into the user's vault.
-
-An example of an RBI record is below. This is an Amazon AWS login that will
-autofill a credential.
-
-###
-
-Eligible Credentials
-
-In order for the Keeper Gateway to autofill the credentials, the record must
-be added to a Shared Folder which is associated to the gateway.
-
-In this example, the "craigdemouser" AWS identity is saved to a shared folder
-which is controlled by the Keeper Gateway:
-
-The Shared Folder is shared to the Application holding the Keeper Gateway:
-
-The Application is associated to the Keeper Gateway. This gives the Gateway
-the ability to access and decrypt any shared credentials.
-
-To set up Autofill, edit the autofill settings by clicking on "Edit" in the
-PAM Settings section of the record.
-
-The configuration of Remote Browser Isolation provides the ability to select
-which credential is filled.
-
-When launching the session, the username and password for the AWS Console is
-autofilled within the isolated browser session. The credentials are not
-exposed to the user and the form fields cannot be inspected.
+Keeper Secrets Manager integrates with Oracle Key Vault in order to provide
+protection for Keeper Secrets Manager configuration files. With this
+integration, you can protect connection details on your machine while taking
+advantage of Keeper's zero-knowledge encryption of all your secret
+credentials.
 
 ##
 
-Autofill Targets
+Features
 
-The autofill rules used by KCM are a JSON/YAML array of objects, where each
-object specifies at least the following property:
+  * Encrypt and Decrypt your Keeper Secrets Manager configuration files with Oracle Key Vault
 
-  * `page` \- The URL pattern of the page that the autofill rule applies to. The patterns accepted here are identical to the patterns accepted by the navigation/resource rules.
+  * Protect against unauthorized access to your Secrets Manager connections
 
-and one or more of the following properties:
+  * Requires only minor changes to code for immediate protection. Works with all Keeper Secrets Manager SDK functionality
 
-  * `username-field` \- A CSS selector that matches the field that should receive the filled username. The Keeper Gateway will inject the value of the `username` field from the Keeper record.
+##
 
-  * `password-field` \- A CSS selector that matches the field that should receive the filled password. The value filled will be the value of the `password` parameter for the connection.
+Prerequisites
 
-  * `totp-code-field` \- A CSS selector that matches the field that should receive the filled TOTP code. The value filled will be the value of the `totp` parameter for the connection.
+JavaJavaScriptPython.NetGoLang
 
-  * `submit` \- A CSS selector for an element that should be clicked once all applicable username/password fields have been populated. This should only be specified if necessary (ie: if the login page in question does not actually use a proper HTML `<form>`). When omitted, KCM will attempt to submit the login form as if the user pressed "Enter".
+  * Support the Java/Kotlin Secrets Manager SDK.
 
-  * `cannot-submit` \- A CSS selector to tell KCM **not** to automatically submit the form as long as any matching element is present
+  * Required Oracle packages: oci-java-sdk-keymanagement, oci-java-sdk-common and oci-java-sdk-common-httpclient-jersey.
 
-Basic Example: A single page web application with a Login and Password field:
+  * OCI Key needs `ENCRYPT` and `DECRYPT` permissions.
 
-Copy
+  * Supports the [JavaScript Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-sdk)
 
-Copy
+  * Requires the **oci-keymanagement** package from OCI SDK.
 
-    
-    
-    - page: "http://172.31.8.134:8080/login"
-      username-field: "input[name='j_username']"
-      password-field: "input[name='j_password']"
+  * OCI KMS Key needs `ENCRYPT` and `DECRYPT` permissions.
 
-Some login flows will require multiple rules. For example, the Microsoft Azure
-Portal login flow would be an example of this.
+  * Supports the [Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk)
 
-Here's a YAML example of the autofill rules that would be necessary for
-Microsoft Azure:
+  * Requires `oci` package
 
-Copy
+  * User credentials to be used will need to have key vault permissions
 
-Copy
+  * Supports the [.Net Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/.net-sdk)
 
-    
-    
-    - page: "login.microsoftonline.com"
-      username-field: "input[autocomplete='username']"
-    
-    - page: "login.live.com"
-      password-field: "input[autocomplete='current-password']"
+  * Requires [OCI.DotNetSDK.Keymanagement](https://www.nuget.org/packages/OCI.DotNetSDK.Keymanagement)
 
-Here's the equivalent, formatted as JSON:
+  * Supports the [GoLang Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/golang-sdk)
 
-Copy
+  * Requires the oci-keymanagement package from OCI SDK.
 
-Copy
+  * OCI KMS Key needs `ENCRYPT` and `DECRYPT` permissions.
 
-    
-    
-    [
-        {
-            "page": "login.microsoftonline.com",
-            "username-field": "input[autocomplete='username']"
-        },
-        {
-            "page": "login.live.com",
-            "password-field": "input[autocomplete='current-password']"
-        }
-    ]
+##
 
-A common example where you would not want Keeper automatically submitting is
-when there's a captcha on the page. An example of this is below:
-
-Copy
-
-    
-    
-    - page: "https://dash.cloudflare.com/login"
-      username-field: "input[id='email']"
-      password-field: "input[id='password']"
-      cannot-submit: "div[data-testid=challenge-widget-container]"
-
-For unusually complex pages where CSS is not sufficient, XPath expressions may
-be used instead. Any such XPath expression must be constructed with a leading
-`/`.
+Setup
 
 ###
 
-Field Identification
+1\. Install Module
 
-Remote Browser Isolation will fill credentials based on the specific field
-elements defined in the JSON or YAML code. Form field selectors can be found
-by inspecting the content of the page and locating the specific field element.
+JavaJavaScriptPython.NetGoLang
 
-  1. **Inspect the Page** : Open the developer tools by right-clicking on the webpage and selecting "Inspect."
+Setting up project using Gradle or Maven
 
-  2. **Select the Field** : Use the element selector tool to click on the form field you want to identify.
-
-  3. **Read the Attributes** : Look at the highlighted HTML code to find attributes like `autocomplete`, `type`, `name`, `id`, or other identifiers.
-
-**Example 1: Using**`**autocomplete**`
-
-  * **HTML Code** : `<input type="password" autocomplete="current-password" ...>`
-
-  * **Explanation** : The password field can be identified by the `autocomplete` attribute set to `current-password`.
-
-**Example 2: Using**`**type**`
-
-  * **HTML Code** : `<input type="password" ...>`
-
-  * **Explanation** : The password field can be identified by the `type` attribute set to `password`.
-
-**Example 3: Using**`**name**`
-
-  * **HTML Code** : `<input type="password" name="some_name_xyz" ...>`
-
-  * **Explanation** : The password field can be identified by the `name` attribute set to `some_name_xyz`.
-
-**Example 4: Using**`**id**`
-
-  * **HTML Code** : `<input type="password" id="some_id_1234" ...>`
-
-  * **Explanation** : The password field can be identified by the `id` attribute set to `some_id_1234`.
-
-**Testing Field Identification**
-
-From your Chrome browser, open the developer tools and visit the Console tab.
-
-To test the form field idenfication, use the document.querySelector()
-javascript command.
-
-For example, type the below and press <enter>:
-
-Copy
+**Gradle**
 
 Copy
 
     
     
-    document.querySelector("input[type='password']")
+    repositories {
+      mavenCentral()
+    }
+    
+    dependencies {
+      implementation("com.keepersecurity.secrets-manager:core:17.0.0")
+      implementation("com.oracle.oci.sdk:oci-java-sdk-keymanagement:3.60.0")
+      implementation("com.oracle.oci.sdk:oci-java-sdk-common-httpclient-jersey:3.60.0") // or the latest version
+      implementation("com.oracle.oci.sdk:oci-java-sdk-common:3.60.0")
+      implementation("com.fasterxml.jackson.core:jackson-databind:2.18.2")
+      implementation("com.fasterxml.jackson.core:jackson-core:2.18.2")
+      implementation("com.google.code.gson:gson:2.12.1")
+      implementation("org.slf4j:slf4j-simple:2.0.16")
+      implementation("org.bouncycastle:bc-fips:1.0.2.4")
+    }
 
-If the field is found, the DOM element will be displayed. Otherwise, an error
-will be displayed.
+**Maven**
 
-Remote Browser Isolation Record
+Copy
 
-PAM User used for autofill
+    
+    
+    <!-- KMS-core -->
+        <dependency>
+         <groupId>com.keepersecurity.secrets-manager</groupId>
+         <artifactId>core</artifactId>
+         <version>[17.0.0,)</version>
+        </dependency>
+    
+    <!-- oci-kv -->
+       <dependency>
+           <groupId>com.oracle.oci.sdk</groupId>
+           <artifactId>oci-java-sdk-keymanagement</artifactId>
+           <version>3.60.0</version>
+       </dependency>
+       <dependency>
+           <groupId>com.oracle.oci.sdk</groupId>
+           <artifactId>oci-java-sdk-common-httpclient-jersey</artifactId>
+           <version>3.60.0</version>
+       </dependency>
+       <dependency>
+           <groupId>com.oracle.oci.sdk</groupId>
+           <artifactId>oci-java-sdk-common</artifactId>
+           <version>3.60.0</version>
+       </dependency>
+       	
+       <!--gson -->
+       <dependency>
+       	<groupId>com.google.code.gson</groupId>
+       	<artifactId>gson</artifactId>
+       	<version>2.12.1</version>
+       </dependency>
+    
+       <!--jackson-core -->
+       <dependency>
+       	<groupId>com.fasterxml.jackson.core</groupId>
+       	<artifactId>jackson-core</artifactId>
+       	<version>2.18.2</version>
+       </dependency>
+       	
+       <!--jackson-databind -->
+       <dependency>
+       	<groupId>com.fasterxml.jackson.core</groupId>
+       	<artifactId>jackson-core</artifactId>
+       	<version>2.18.2</version>
+       </dependency>
+       	
+       <!-- slf4j-api -->
+       <dependency>
+       	<groupId>org.slf4j</groupId>
+       	<artifactId>slf4j-api</artifactId>
+       	<version>1.7.32</version>
+       	<scope>runtime</scope>
+       </dependency>
+    
+       <dependency>
+           <groupId>org.slf4j</groupId>
+           <artifactId>slf4j-simple</artifactId>
+           <version>2.0.16</version>
+       </dependency>   	
+       <!-- bc-fips -->
+       <dependency>
+       	<groupId>org.bouncycastle</groupId>
+       	<artifactId>bc-fips</artifactId>
+       	<version>1.0.2.4</version>
+       </dependency>
+       	
 
-Shared Folder associated to Application
+The Secrets Manager Oracle Key Vault module can be installed using npm
 
-Keeper Gateway linked to Application
+Copy
 
-Browser Autofill Settings
+    
+    
+    npm install @keeper-security/secrets-manager-oracle-kv
 
-Example of Autofill using Amazon AWS
+The Secrets Manager OCI KSM module can be installed using pip
 
-JSON Azure Autofill Target example
+Copy
+
+    
+    
+    pip3 install keeper-secrets-manager-storage
+
+oci is a prerequisite for the Oracle Key Vault integration. Install it to your
+machine using pip.
+
+Copy
+
+    
+    
+    pip3 install oci
+
+The Secrets Manager oracle KSM module can be installed using dotnet nuget
+package manager.
+
+Copy
+
+    
+    
+    dotnet add package Keeper.SecretsManager.OracleKeyManagement
+
+The Secrets Manager oracle KSM module Integration can be installed using
+
+Copy
+
+    
+    
+    go get github.com/keeper-security/secrets-manager-go/integrations/oracle
+
+###
+
+2\. Configure **Oracle KV** Connection
+
+Ensure that you have an Oracle Key Vault instance available, and you know its
+OCID (Oracle Cloud Identifier). By default, the OCI.DotNetSDK.Keymanagement
+library will use the default OCI configuration file (`~/.oci/config`)
+
+See the Oracle documentation for more information on setting up an Oracle
+Keys:
+
+<https://docs.oracle.com/en-
+us/iaas/Content/API/Concepts/sdkconfig.htm>[](https://docs.oracle.com/en-
+us/iaas/Content/API/Concepts/sdkconfig.htm)
+
+Alternatively, You will need to add the correct configuration for your OCI
+environment, including the details for accessing Oracle Key Vault.
+
+The configuration file should look like this (replace with your actual
+details):
+
+[DEFAULT] user=ocid1.user.oc1..example_unique_id
+fingerprint=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx
+key_file=/path/to/your/private/api/key.pem
+tenancy=ocid1.tenancy.oc1..example_unique_id region=us-phoenix-1
+
+###
+
+3\. Add Oracle Key Vault Storage to Your Code
+
+Once Oracle connection has been configured, You can fetch the Key to encrypt /
+decrypt KSM configuration using integration and you need to tell the Secrets
+Manager SDK to utilize the KMS as storage.
+
+###
+
+Using **Oracle Key Vault Integration**
+
+Once setup, the Secrets Manager Oracle Key Vault integration supports all
+Secrets Manager SDK functionality. Your code will need to be able to access
+the OCI Keys in order to manage the encryption and decryption of the KSM
+configuration file. **Using Specified Connection credentials**
+
+JavaJavaScriptPython.NetGo
+
+To do this, create `OracleKeyValueStorage` instance and use this in
+`SecretManagerOptions` constructor.
+
+The `OracleKeyValueStorage` will require the name of the Secrets Manager
+configuration file with profile and configuration.
+
+Copy
+
+    
+    
+    import java.security.Security;
+    import org.bouncycastle.jcajce.provider.BouncyCastleFipsProvider;
+    import static com.keepersecurity.secretsManager.core.SecretsManager.initializeStorage;
+    import com.keepersecurity.secretmanager.oracle.kv.OracleKeyValueStorage;
+    import com.keepersecurity.secretmanager.oracle.kv.OracleSessionConfig;
+    import com.keepersecurity.secretsManager.core.SecretsManagerOptions;
+    import com.oracle.bmc.Region;
+    
+    
+    class Test {
+    	public static void main(String args[]){
+    		String configPath = "<~/.oci/config>";
+    		String cryptoEndpoint = "https://<>-crypto.kms.<oracle_cloud_region>.oraclecloud.com";
+    		String vaultId = "<OCI VAULT ID>";
+    		String keyId = "<OCI KEY ID>";
+    		String keyVersionId = "<OCI KEY VERSION>";
+    		String configFileLocation = "<KMS CONFIG FILE LOCATION>";
+    		String profile = "<OCI CONFIG PROFILE EX: DEFAULT>"; // name of your profile
+    		String oneTimeToken = "<Keeper Ont Time Token>";
+    		String managementEndpoint =  "https://<>-management.kms.<oracle_cloud_region>.oraclecloud.com";
+    		Region region = Region.<cloud_region>;
+    		Security.addProvider(new BouncyCastleFipsProvider());
+    		try{
+    			//set Oracle KV configuration, 
+    			OracleSessionConfig oracleSessionConfig = new OracleSessionConfig(configPath, cryptoEndpoint, managementEndpoint, vaultId, keyId, keyVersionId, region);
+    			//Get Storage 
+    			OracleKeyValueStorage oracleKeyValueStorage = new OracleKeyValueStorage(configFileLocation, profile, oracleSessionConfig);
+    			initializeStorage(oracleKeyValueStorage, oneTimeToken);
+    			SecretsManagerOptions options = new SecretsManagerOptions(oracleKeyValueStorage);
+    			//getSecrets(options)
+    		}catch (Exception e) {
+    			System.out.println(e.getMessage());
+    		}
+    	}
+    }
+    
+
+To do this, use `OracleKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require an `Oracle config file location`, `Oracle
+configuration profile`(if there are multiple profile configurations) and the
+OCI `Oracle KMS endpoint` as well as the name of the `Secrets Manager
+configuration file` which will be encrypted by Oracle KMS.
+
+Copy
+
+    
+    
+    import { OCISessionConfig, OciKeyValueStorage } from "@keeper-security/secrets-manager-oracle-kv";
+        const getKeeperRecordsOCI = async () => {
+            const oracleConfigFileLocation = "/home/...../.oci/config";
+            const oracleProfile = "DEFAULT";
+            const kmsCryptoEndpoint = "https://<>-crypto.kms.<location>.oraclecloud.com";
+            const kmsManagementEndpoint = "https://<>-management.kms.<location>.oraclecloud.com";
+            const ociSessionConfig = await new OCISessionConfig(oracleConfigFileLocation, oracleProfile, kmsCryptoEndpoint,kmsManagementEndpoint);
+            const logLevel = LoggerLogLevelOptions.info;
+            let config_path = "<Keeper config File Path>";
+            const oneTimeToken = "<one time token>";
+            const keyId = 'ocid1.key.oc1.iad.<>.<>';
+            const keyVersionId = "ocid1.keyversion.oc1.iad.<>.<>";
+            const storage = await new OciKeyValueStorage(keyId, keyVersionId, config_path, ociSessionConfig,logLevel).init();
+            await initializeStorage(storage, oneTimeToken);
+            const { records } = await getSecrets({ storage: storage });
+            console.log(records);
+            const firstRecord = records[0];
+            const firstRecordPassword = firstRecord.data.fields.find((x: { type: string; }) => x.type === 'bankAccount');
+            console.log(firstRecordPassword.value[0]);
+        };
+        console.log("start");
+        getKeeperRecordsOCI();
+    
+
+To do this, use `OracleKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require a OCI Key ID, key version Id, as well as the name of
+the Secrets Manager configuration file which will be encrypted by Oracle KMS
+and OCI session configuration defined above.
+
+Copy
+
+    
+    
+    from keeper_secrets_manager_storage.storage_oci_key_management import  OracleKeyValueStorage,OCISessionConfig
+    from keeper_secrets_manager_core import SecretsManager
+    config_file_location = "/home/<user>/.oci/config"
+    profile = "DEFAULT"
+    kms_crypto_endpoint = "https://<kmsendpoint>.oraclecloud.com"
+    kms_mgmt_endpoint = "https://<kmsendpoint>.oraclecloud.com"
+    key_id = '<key_id>'
+    key_version_id = "<key_version_id>"
+    config_path = "<path to config json>"
+    one_time_token = "<Keeper One Time Token>"
+    oci_session_config = OCISessionConfig(config_file_location, profile, kms_crypto_endpoint, kms_mgmt_endpoint)
+    storage = OracleKeyValueStorage(key_id=key_id, key_version=key_version_id, config_file_location=config_path, oci_session_config=oci_session_config,logger=None)
+    secrets_manager = SecretsManager(one_time_token,config=storage)
+    all_records = secrets_manager.get_secrets()
+    first_record = all_records[0]
+    print(first_record)
+
+To do this, use `OracleKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require an `Oracle config file location`, `Oracle
+configuration profile`, and the `OCI Key Vault endpoint` as well as the name
+of the `Secret Manager Configuration file` which will be encrypted by Oracle
+Key Vault
+
+Copy
+
+    
+    
+    using System;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using Microsoft.Extensions.Logging;
+    using OracleKeyManagement;
+    using SecretsManager;
+    
+    public class Program
+    {
+    	private static async Task getOneIndividualSecret()
+    	{
+    	   Console.WriteLine("execution started");
+                bool changeKey = false;
+                bool decryptConfiguration = false;
+                var OCIConfigFileLocation = "location";
+                var profile = "DEFAULT";
+                var kmsCryptoEndpoint = "crypto_endpoint";
+                var kmsManagementEndpoint = "management_endpoint";
+                var ociSessionConfig1 = new OciSessionConfig(OCIConfigFileLocation, profile, kmsCryptoEndpoint, kmsManagementEndpoint); 
+                var path = "oci_ksm_conf_test.json";
+                string keyId1 = "key1";
+                string keyId2 = "key2";
+                string keyVersionId1 = "key1version";
+                string keyVersionId2 = "key2version";
+                
+                var loggerFactory = LoggerFactory.Create(builder =>
+                {
+                    builder.SetMinimumLevel(LogLevel.Debug);
+                    builder.AddConsole();
+                });
+                var logger = loggerFactory.CreateLogger<OracleKeyValueStorage>();
+                var oracle_storage = new OracleKeyValueStorage(keyId2,keyVersionId2,path,ociSessionConfig1,logger );
+                
+                var dotnet_access_token = "<accesstoken>";
+                SecretsManagerClient.InitializeStorage(oracle_storage, dotnet_access_token);
+                if (changeKey)
+                {
+                    oracle_storage.ChangeKeyAsync(keyId1,keyVersionId1,null).Wait();
+                }
+                if (decryptConfiguration)
+                {
+                    var conf = await oracle_storage.DecryptConfigAsync(true);
+                    Console.WriteLine(conf);
+                }
+                var options = new SecretsManagerOptions(oracle_storage);
+                var records_1 = await SecretsManagerClient.GetSecrets(options);
+                records_1.Records.ToList().ForEach(record => Console.WriteLine(record.RecordUid + " - " + record.Data.title));
+    	}
+    
+    	static async Task Main()
+    	{
+    		await getOneIndividualSecret();
+    	}
+    }
+
+To do this, use `NewOracleKeyValueStorage` as your Secrets Manager storage in
+the `SecretsManager` constructor.
+
+The NewOracleKeyVaultStorage requires the following parameters to encrypt the
+KSM configuration using Oracle Vault:
+
+`ksmConfigFileName` : The file name of KSM configuration.
+
+`keyConfig` : Provide oracle key credentials `KeyID` and `KeyVersionID`.
+
+`oracleConfig` : Provide oracle credentials `VaultManagementEndpoint`,
+`VaultCryptoEndpoint`.
+
+By default, the oci-keymanagement library will use the **default OCI
+configuration file** (`~/.oci/config`).
+
+Copy
+
+    
+    
+    package main
+    
+    import (
+    	"encoding/json"
+    	"fmt"
+    
+    	"github.com/keeper-security/secrets-manager-go/core"
+    	oraclekv "github.com/keeper-security/secrets-manager-go/integrations/oracle"
+    )
+    
+    func main() {
+    	decryptConfig := true
+    	changeKey := true
+    	ksmConfigFile := ""
+    	oneTimeToken := "oneTimeToken"
+    	keyConfig := &oraclekv.KeyConfig{
+    		KeyID:        "ocid1.key.oc1.<>.<>.<>",
+    		KeyVersionID: "ocid1.keyversion.oc1.<>.<>.<>.<>",
+    	}
+    	oracleConfig := &oraclekv.OracleConfig{
+    		VaultManagementEndpoint: "https://<>-management.kms.<>.oraclecloud.com",
+    		VaultCryptoEndpoint:     "https://<>-crypto.kms.<>.oraclecloud.com",
+    		Profile:                 "",
+    		ProfileConfigPath:       "",
+    	}
+    	cfg := oraclekv.NewOracleKeyVaultStorage(ksmConfigFile, keyConfig, oracleConfig)
+    	secrets_manager := core.NewSecretsManager(
+    		&core.ClientOptions{
+    			Token:  oneTimeToken,
+    			Config: cfg,
+    		},
+    	)
+    	secrets, err := secrets_manager.GetSecrets([]string{})
+    	if err != nil {
+    		// do something
+    		fmt.Printf("Error: %s\n", err)
+    	} else {
+    		for _, secret := range secrets {
+    			fmt.Printf("Recieved secret: %s\n", secret.Title())
+    		}
+    	}
+    
+    }
+
+##
+
+Additional Options
+
+###
+
+Change Key
+
+We can change key that is used for encrypting the KSM configuration, examples
+below show the code needed to use it
+
+JavaJavaScriptPython.NetGoLang
+
+Copy
+
+    
+    
+    //The method changeKey(keyID, keyVersion) will be used to encrypt the KSM config file with new Key and version. 
+    
+    String newKeyID = "<new Key ID>";
+    String newKeyVersion = "<New Key Version>";
+    OracleKeyValueStorage oracleKeyValueStorage = new OracleKeyValueStorage(configFileLocation, profile, oracleSessionConfig);
+    oracleKeyValueStorage.changeKey(newKeyID, newKeyVersion); // Change the key for encryption/decryption
+
+Copy
+
+    
+    
+    // To change the Oracle KMS key used for encryption, you can call the `changeKey` method on the `OciKeyValueStorage` instance.
+    const storage = await new OciKeyValueStorage(keyId, keyVersionId, config_path2, ociSessionConfig).init();
+    await storage.changeKey(keyId2, keyVersionId2);
+
+Copy
+
+    
+    
+       storage = OracleKeyValueStorage(key_id=key_id, key_version=key_version_id, config_file_location=config_path, oci_session_config=oci_session_config,logger=None)
+        
+        new_key_id = "<new key id>"
+        new_key_version_id = "<new key version>"
+        isChanged = storage.change_key(new_key_id, new_key_version_id)
+        print("Key is changed " + isChanged)
+
+Copy
+
+    
+    
+    // To change the Oracle KMS key used for encryption, you can call the `ChangeKeyAsync` method on the `OracleKeyValueStorage` instance.
+    // using Microsoft.Extensions.Logging;
+    
+         var loggerFactory = LoggerFactory.Create(builder =>
+                {
+                    builder.SetMinimumLevel(LogLevel.Debug);
+                    builder.AddConsole();
+                });
+        var logger = loggerFactory.CreateLogger<OracleKeyValueStorage>();
+        var oracle_storage = new OracleKeyValueStorage(keyId2,keyVersionId2,path,ociSessionConfig1,logger );
+
+Copy
+
+    
+    
+    // If you want to change the key not oracle config, then pass nil in place of oracle config.
+    		updatedKeyConfig := &oraclekv.KeyConfig{
+    			KeyID:        "ocid1.key.oc1.<>.<>.<>",
+    			KeyVersionID: "ocid1.keyversion.oc1.<>.<>.<>.<>",
+    		}
+    	isChanged, err := cfg.ChangeKey(updatedKeyConfig, nil)
+
+###
+
+Decrypt Config
+
+We can decrypt the config if current implementation is to be migrated onto a
+different cloud or if you want your raw credentials back. The function accepts
+a boolean which when set to true will save the decrypted configuration to file
+and if it is false, will just return decrypted configuration.
+
+JavaJavaScriptPython.NetGoLang
+
+Copy
+
+    
+    
+    OracleKeyValueStorage oracleKeyValueStorage = new OracleKeyValueStorage(configFileLocation, profile, oracleSessionConfig);
+    oracleKeyValueStorage.decryptConfig(false); // Set false as a parameter to extract only plaintext.
+    //OR 
+    oracleKeyValueStorage.decryptConfig(true); // Set true as a parameter to extract plaintext and save config as a plaintext.
+
+Copy
+
+    
+    
+     const storage = await new OciKeyValueStorage(keyId, keyVersionId, config_path, ociSessionConfig).init();
+     await storage.decryptConfig(true); // Saves to file
+     const decryptedConfig = await storage.decryptConfig(true); // returns the decrypted config
+
+Copy
+
+    
+    
+     storage = OracleKeyValueStorage(key_id=key_id, key_version=key_version_id, config_file_location=config_path, oci_session_config=oci_session_config,logger=None)
+     storage.decrypt_config(True)
+
+Copy
+
+    
+    
+    //To decrypt the config file and save it again in plaintext, you can call the `DecryptConfigAsync` method on the `OracleKeyValueStorage` instance.
+     var conf = await oracle_storage.DecryptConfigAsync(true);
+     Console.WriteLine(conf);   
+
+Copy
+
+    
+    
+    cfg := oraclekv.NewOracleKeyVaultStorage(ksmConfigFile, keyConfig, oracleConfig)
+    	secrets_manager := core.NewSecretsManager(
+    		&core.ClientOptions{
+    			Token:  oneTimeToken,
+    			Config: cfg,
+    		},
+    	)
+    // Pass true if you want to save decryptconfig in ksm config file, else pass false.
+    decryptedConfig, err := cfg.DecryptConfig(true) 
+
+You're ready to use the KSM integration 👍
+
+Check out the [KSM SDKs documentation](/en/keeperpam/secrets-
+manager/developer-sdk-library) for more examples and functionality
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjIs9dYZaWmpkM5HVsKcp%252FScreenshot%25202025-02-07%2520at%25209.59.02%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D1fe84199-dc9b-4d0c-98e5-37f519ba7808&width=768&dpr=4&quality=100&sign=a7470b80&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZI2dAT3tUE4NUBCPlzLn%252FScreenshot%25202025-02-07%2520at%25209.55.30%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D66556e9a-b4d5-4d5d-baeb-d54143e71710&width=768&dpr=4&quality=100&sign=5a97100c&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FEm1aZx1PAUnDmFsoBER8%252FScreenshot%25202025-02-07%2520at%25209.56.22%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D9cc0c1ec-0194-4e04-a6f2-9f00e702d8d8&width=768&dpr=4&quality=100&sign=6d890963&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F89YIW5IGTIzL1EgV2kpN%252FScreenshot%25202025-02-07%2520at%25209.56.58%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D298b0651-f928-4d51-897d-6f524ae0918f&width=768&dpr=4&quality=100&sign=bd58fe10&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTd9LFkeT5kB05zssin6c%252FScreenshot%25202025-02-07%2520at%25209.58.40%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D1e6a177c-a98d-4dc9-a739-264efc81cee8&width=768&dpr=4&quality=100&sign=726a6c35&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4v1lGWWXazGpEulnNrW2%252FScreenshot%25202025-02-07%2520at%25208.51.58%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D0a6ff168-9aff-40fa-b593-93cc4ea192a2&width=768&dpr=4&quality=100&sign=f9684bb9&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2fa5jxhTnJQwgcVUZqqI%252Frbi-
-autofilltargetjson.png%3Falt%3Dmedia%26token%3D158006e2-f406-4e52-b4eb-622daec82383&width=768&dpr=4&quality=100&sign=80dbab26&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fs5mJxxwsAgO65JtYFSNV%252Fksm-
+aws.jpg%3Falt%3Dmedia%26token%3Dcf7a9f00-3fd7-4a74-9843-1cf65c6ade60&width=768&dpr=4&quality=100&sign=e02100f8&sv=2)
 

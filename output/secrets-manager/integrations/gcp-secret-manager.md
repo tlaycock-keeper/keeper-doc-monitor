@@ -326,6 +326,7 @@ manager/integrations/gcp-secret-manager?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -457,10 +458,34 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * About
+  * Features
+  * Prerequisites
+  * Setup
+  * 1\. Configure Keeper Secrets Manager CLI
+  * 2\. Set GCP Permissions
+  * 3\. Create GCP Credentials Record
+  * 4\. Create Value Mappings
+  * Run Sync
+  * 1\. Construct the Command
+  * 2\. Run a Dry-Run
+  * 3\. Run the Sync
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=bGhfkhAMwUdjtvng2lhQ&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# GCP Secret Manager
+
+Sync secrets from the Keeper Vault with GCP Secret Manager
+
+[PreviousEntrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-
+hsm)[NextGit - Sign Commits with SSH](/en/keeperpam/secrets-
+manager/integrations/git-sign-commits-with-ssh)
 
 Last updated 5 months ago
 
@@ -533,7 +558,19 @@ record:
 
 `"Google Cloud Project ID" "Google Application Credentials"` \- _optional_
 
+Copy
+
+    
+    
+    gcloud auth application-default login
+
 When no longer need these credentials can be revoked:
+
+Copy
+
+    
+    
+    gcloud auth application-default revoke
 
 ####
 
@@ -661,42 +698,6 @@ be created using
 
 See the  for more information
 
-Copy
-
-    
-    
-    gcloud auth application-default login
-
-Copy
-
-    
-    
-    gcloud auth application-default revoke
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# GCP Secret Manager
-
-Sync secrets from the Keeper Vault with GCP Secret Manager
-
-[PreviousEntrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-
-hsm)[NextGit - Sign Commits with SSH](/en/keeperpam/secrets-
-manager/integrations/git-sign-commits-with-ssh)
-
-  * About
-  * Features
-  * Prerequisites
-  * Setup
-  * 1\. Configure Keeper Secrets Manager CLI
-  * 2\. Set GCP Permissions
-  * 3\. Create GCP Credentials Record
-  * 4\. Create Value Mappings
-  * Run Sync
-  * 1\. Construct the Command
-  * 2\. Run a Dry-Run
-  * 3\. Run the Sync
-
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
 
 [profile documentation](/en/keeperpam/secrets-manager/secrets-manager-command-
@@ -713,18 +714,18 @@ adc)
 [Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
 notation)
 
-[`sync` command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/sync-command)
-
-[![Logo](https://www.gstatic.com/devrel-devsite/prod/v67cb8b0ddf4e3bae39406c7b2c88affae9b405bee7499568a4013f440189dfbf/cloud/images/favicons/onecloud/super_cloud.png)Access control with IAM | Secret Manager Documentation | Google CloudGoogle Cloud](https://cloud.google.com/secret-manager/docs/access-control)
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
 
 [![Logo](https://www.gstatic.com/devrel-devsite/prod/v67cb8b0ddf4e3bae39406c7b2c88affae9b405bee7499568a4013f440189dfbf/developers/images/touchicon-180.png)Create access credentials | Google Workspace | Google DevelopersGoogle Developers](https://developers.google.com/workspace/guides/create-credentials#service-account)
+
+[![Logo](https://www.gstatic.com/devrel-devsite/prod/v67cb8b0ddf4e3bae39406c7b2c88affae9b405bee7499568a4013f440189dfbf/cloud/images/favicons/onecloud/super_cloud.png)Access control with IAM | Secret Manager Documentation | Google CloudGoogle Cloud](https://cloud.google.com/secret-manager/docs/access-control)
+
+[`sync` command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/sync-command)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 GCP Credentials Record Type Definition
 

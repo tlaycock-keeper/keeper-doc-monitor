@@ -326,6 +326,7 @@ reference/record-commands/default-record-types?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -1855,9 +1856,6 @@ databaseCredentials", "fields": [{"type": "text", "value": ["SomeText"],
 `custom` \- custom fields and values can be added to records. See  for more
 information on adding custom fields
 
-[add documentation](/en/keeperpam/commander-cli/command-reference/record-
-commands#add-command-new-record-type)
-
 [ define new record types](/en/keeperpam/commander-cli/command-
 reference/record-commands/record-type-commands#record-type-command)
 
@@ -1866,4 +1864,7 @@ commands/record-type-commands#commands)
 
 [standard record types](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#standard-record-types)
+
+[add documentation](/en/keeperpam/commander-cli/command-reference/record-
+commands#add-command-new-record-type)
 

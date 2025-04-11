@@ -326,6 +326,7 @@ prem-connection-manager?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -447,7 +448,7 @@ Manage a self-hosted version of Keeper Connection Manager
 manager/discovery/discovery-using-the-
 vault)[NextReferences](/en/keeperpam/privileged-access-manager/references)
 
-Last updated 22 days ago
+Last updated 23 days ago
 
 Was this helpful?
 

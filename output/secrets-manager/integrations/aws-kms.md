@@ -324,6 +324,7 @@ manager/integrations/aws-kms?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -428,11 +429,13 @@ On this page
   * Features
   * Prerequisites
   * Setup
-  * 1\. Install KSM Storage Module
-  * 2\. Install boto3
-  * 3\. Configure AWS Connection
-  * 4\. Add AWS KMS Storage to Your Code
+  * 1\. Install Module
+  * 2\. Configure AWS Connection
+  * 3\. Add AWS KMS Storage to Your Code
   * Using the AWS KMS Integration
+  * Additional Options
+  * Change Key
+  * Decrypt Config
 
 Was this helpful?
 
@@ -446,162 +449,11 @@ PDF](/en/keeperpam/~gitbook/pdf?page=0HQV8nZUe4eH4dyBXD4q&only=yes&limit=100)
 
 Protect Secrets Manager connection details with AWS KMS
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fs5mJxxwsAgO65JtYFSNV%252Fksm-
-aws.jpg%3Falt%3Dmedia%26token%3Dcf7a9f00-3fd7-4a74-9843-1cf65c6ade60&width=768&dpr=4&quality=100&sign=e02100f8&sv=2)
-
-Keeper Secrets Manager integrates with AWS KMS in order to provide protection
-for Keeper Secrets Manager configuration files. With this integration, you can
-protect connection details on your machine while taking advantage of Keeper's
-zero-knowledge encryption of all your secret credentials.
-
-##
-
-Features
-
-  * Encrypt and Decrypt your Keeper Secrets Manager configuration files with AWS KMS
-
-  * Protect against unauthorized access to your Secrets Manager connections
-
-  * Requires only minor changes to code for immediate protection. Works with all Keeper Secrets Manager Python SDK functionality
-
-##
-
-Prerequisites
-
-  * Supports the [Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk)
-
-  * Requires boto3 package
-
-##
-
-Setup
-
-###
-
-1\. Install KSM Storage Module
-
-The Secrets Manager HSM modules are located in the Keeper Secrets Manager
-storage module which can be installed using pip
-
-Copy
-
-    
-    
-    pip3 install keeper-secrets-manager-storage
-
-###
-
-2\. Install boto3
-
-boto3 is a prerequisite for the AWS KSM integration. Install it to your
-machine using pip.
-
-Copy
-
-    
-    
-    pip3 install boto3
-
-###
-
-3\. Configure AWS Connection
-
-By default the boto3 library will utilize the default connection session setup
-with the AWS CLI with the `aws configure` command. If you would like to
-specify the connection details, the two configuration files located at
-`~/.aws/config` and `~/.aws/credentials` can be manually edited.
-
-See the AWS documentation for more information on setting up an AWS session:
-<https://docs.aws.amazon.com/cli/latest/reference/configure/>[](https://docs.aws.amazon.com/cli/latest/reference/configure/)
-
-Alternatively, configuration variables can be provided explicitly as an access
-key using the `AwsSessionConfig` data class and providing `aws_access_key_id`
-, `aws_secret_access_key` and `aws_session_token` variables.
-
-You will need an AWS Access Key to use the AWS KMS integration.
-
-For more information on AWS Access Keys see the AWS documentation:
-<https://aws.amazon.com/premiumsupport/knowledge-center/create-access-
-key/>[](https://aws.amazon.com/premiumsupport/knowledge-center/create-access-
-key/)
-
-###
-
-4\. Add AWS KMS Storage to Your Code
-
-Now that the AWS connection has been configured, you need to tell the Secrets
-Manager SDK to utilize the KMS as storage.
-
-To do this, use `AwsKmsKeyvalueStorage` as your Secrets Manager storage in the
-`SecretsManager` constructor.
-
-The storage will require an AWS Key ID, as well as the name of the Secrets
-Manager configuration file which will be encrypted by AWS KMS.
-
-Example using default connection sessionExample using a specified connection
-session
-
-AWS_KMS_example_default.py
-
-Copy
-
-    
-    
-    from keeper_secrets_manager_core import SecretsManager
-    from keeper_secrets_manager_hsm.storage_aws_kms import AwsKmsKeyValueStorage
-    
-    key_id = 'c5[...]576'
-        
-    config = AwsKmsKeyValueStorage(key_id, 'client-config.json') # default session
-     
-    secrets_manager = SecretsManager(config=config, verify_ssl_certs=True)
-    all_records = secrets_manager.get_secrets()
-    
-
-AWS_KMS_example_custom.py
-
-Copy
-
-    
-    
-    from keeper_secrets_manager_core import SecretsManager
-    from keeper_secrets_manager_hsm.storage_aws_kms import AwsKmsKeyValueStorage
-     
-    aws_session_cfg = AwsSessionConfig(
-        aws_access_key_id="AK[...]FIF",
-        aws_secret_access_key="/[...]/g3",
-        region_name="us-east-2")
-    
-    config = AwsKmsKeyValueStorage(
-       key_id='e9[...]567',
-       config_file_location='client-config.json',
-       aws_session_config=aws_session_cfg)
-     
-    secrets_manager = SecretsManager(config=config, verify_ssl_certs=True)
-    all_records = secrets_manager.get_secrets()
-    
-
-You're ready to use the KSM integration 👍
-
-##
-
-Using the AWS KMS Integration
-
-Once setup, the Secrets Manager AWS KMS integration supports all Secrets
-Manager Python SDK functionality. Your code will need to be able to access the
-AWS KMS APIs in order to manage the decryption of the configuration file when
-run.
-
-Check out the [KSM SDKs documentation](/en/keeperpam/secrets-
-manager/developer-sdk-library) for more examples and functionality
-
 [PreviousAWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-
 secrets-manager)[NextAzure DevOps Extension](/en/keeperpam/secrets-
 manager/integrations/azure-devops-plugin)
 
-Last updated 5 months ago
+Last updated 1 day ago
 
 Was this helpful?
 
@@ -634,4 +486,817 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+Keeper Secrets Manager integrates with AWS KMS in order to provide protection
+for Keeper Secrets Manager configuration files. With this integration, you can
+protect connection details on your machine while taking advantage of Keeper's
+zero-knowledge encryption of all your secret credentials.
+
+##
+
+Features
+
+  * Encrypt and Decrypt your Keeper Secrets Manager configuration files with AWS KMS
+
+  * Protect against unauthorized access to your Secrets Manager connections
+
+  * Requires only minor changes to code for immediate protection. Works with all Keeper Secrets Manager SDK functionality
+
+##
+
+Prerequisites
+
+JavaJavaScriptPython.NetGoLang
+
+  * Supports the [Java Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk)
+
+  * Requires [AWS-KMS](https://mvnrepository.com/artifact/software.amazon.awssdk/kms) and [AWS-Auth](https://mvnrepository.com/artifact/software.amazon.awssdk/auth) packages
+
+  * Supports Java 11 and above
+
+  * Supports the [JavaScript Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-sdk)
+
+  * Requires [aws-sdk/client-kms](https://www.npmjs.com/package/@aws-sdk/client-kms) package
+
+  * Supports the [Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk)
+
+  * Requires boto3 package
+
+  * Supports the [.Net Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/.net-sdk)
+
+  * Requires [AWSSDK.KeyManagementService](https://www.nuget.org/packages/AWSSDK.KeyManagementService)
+
+  * Supports the [GoLang Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/golang-sdk)
+
+  * Requires [aws-sdk-v2](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2)
+
+##
+
+Setup
+
+###
+
+1\. Install Module
+
+JavaJavaScriptPython.NetGoLang
+
+Setting up project using Gradle or Maven
+
+**Gradle**
+
+Copy
+
+    
+    
+    repositories {
+      mavenCentral()
+    }
+    
+    dependencies {
+      implementation("com.keepersecurity.secrets-manager:core:17.0.0")
+      implementation ("software.amazon.awssdk:kms:2.20.28")
+      implementation ("software.amazon.awssdk:auth:2.20.28")
+      implementation("com.fasterxml.jackson.core:jackson-databind:2.18.2")
+      implementation("com.fasterxml.jackson.core:jackson-core:2.18.2")
+      implementation("com.google.code.gson:gson:2.12.1")
+      implementation("org.slf4j:slf4j-api:1.7.32"){
+          exclude("org.slf4j:slf4j-log4j12")
+      }
+      implementation("ch.qos.logback:logback-classic:1.2.6")
+      implementation("ch.qos.logback:logback-core:1.2.6")
+      implementation("org.bouncycastle:bc-fips:1.0.2.4")
+    }
+
+**Maven**
+
+Copy
+
+    
+    
+    <!-- KMS-core -->
+    <dependency>
+     <groupId>com.keepersecurity.secrets-manager</groupId>
+     <artifactId>core</artifactId>
+     <version>[17.0.0,)</version>
+    </dependency>
+    
+    <!-- aws-kms -->
+       	<dependency>
+       		<groupId>software.amazon.awssdk</groupId>
+       		<artifactId>kms</artifactId>
+       		<version>2.20.28</version>
+       	</dependency>
+       		
+       	<!-- aws-auth -->
+       	<dependency>
+       		<groupId>software.amazon.awssdk</groupId>
+       		<artifactId>auth</artifactId>
+       		<version>2.20.28</version>
+       	</dependency>
+       	
+       	<!--gson -->
+       	<dependency>
+       	    <groupId>com.google.code.gson</groupId>
+       	    <artifactId>gson</artifactId>
+       	    <version>2.12.1</version>
+       	</dependency>
+    
+       	<!--jackson-core -->
+       	<dependency>
+       		<groupId>com.fasterxml.jackson.core</groupId>
+       		<artifactId>jackson-core</artifactId>
+       		<version>2.18.2</version>
+       	</dependency>
+       	
+       	<!--jackson-databind -->
+       	<dependency>
+       		<groupId>com.fasterxml.jackson.core</groupId>
+       		<artifactId>jackson-core</artifactId>
+       		<version>2.18.2</version>
+       	</dependency>
+       	
+       	<!-- slf4j-api -->
+       	<dependency>
+       		<groupId>org.slf4j</groupId>
+       		<artifactId>slf4j-api</artifactId>
+       		<version>1.7.32</version>
+       		<scope>runtime</scope>
+       	</dependency>
+    
+       	<!-- logback-classic -->
+       	<dependency>
+       		<groupId>ch.qos.logback</groupId>
+       		<artifactId>logback-classic</artifactId>
+       		<version>1.2.6</version>
+       		<scope>compile</scope>
+       	</dependency>
+    
+       	<!-- logback-core -->
+       	<dependency>
+       		<groupId>ch.qos.logback</groupId>
+       		<artifactId>logback-core</artifactId>
+       		<version>1.2.6</version>
+       		<scope>compile</scope>
+       	</dependency>
+       	
+       	<!-- bc-fips -->
+       	<dependency>
+       		<groupId>org.bouncycastle</groupId>
+       		<artifactId>bc-fips</artifactId>
+       		<version>1.0.2.4</version>
+       	</dependency>
+       	
+
+The Secrets Manager AWS Key Management Service Integration can be installed
+using npm
+
+Copy
+
+    
+    
+    npm install @keeper-security/secrets-manager-aws
+
+The Secrets Manager HSM modules are located in the Keeper Secrets Manager
+storage module which can be installed using pip
+
+Copy
+
+    
+    
+    pip3 install keeper-secrets-manager-storage
+
+boto3 is a prerequisite for the AWS KSM integration. Install it to your
+machine using pip.
+
+Copy
+
+    
+    
+    pip install boto3
+
+The Secrets Manager AWS Key Management Service Integration can be installed
+using
+
+Copy
+
+    
+    
+    dotnet add package Keeper.SecretsManager.AWSKeyManagement
+
+The Secrets Manager AWS Key Management Service Integration can be installed
+using
+
+Copy
+
+    
+    
+    go get github.com/keeper-security/secrets-manager-go/integrations/aws
+
+###
+
+2\. Configure AWS Connection
+
+By default the boto3 library will utilize the default connection session setup
+with the AWS CLI with the `aws configure` command. If you would like to
+specify the connection details, the two configuration files located at
+`~/.aws/config` and `~/.aws/credentials` can be manually edited.
+
+See the AWS documentation for more information on setting up an AWS session:
+<https://docs.aws.amazon.com/cli/latest/reference/configure/>[](https://docs.aws.amazon.com/cli/latest/reference/configure/)
+
+Alternatively, configuration variables can be provided explicitly as an access
+key using the `AwsSessionConfig` data class and providing `aws_access_key_id`
+, `aws_secret_access_key` and `aws_session_token` variables.
+
+You will need an AWS Access Key to use the AWS KMS integration.
+
+For more information on AWS Access Keys see the AWS documentation:
+<https://aws.amazon.com/premiumsupport/knowledge-center/create-access-
+key/>[](https://aws.amazon.com/premiumsupport/knowledge-center/create-access-
+key/)
+
+###
+
+3\. Add AWS KMS Storage to Your Code
+
+Once AWS connection has been configured, You can fetch the Key to encrypt /
+decrypt KSM configuration using integration and you need to tell the Secrets
+Manager SDK to utilize the KMS as storage. **Using Specified Connection
+credentials**
+
+JavaJavaScriptPython.NetGo
+
+To do this, use `AwsKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require an AWS Key ID, AwsSessionConfig, as well as the name
+of the Secrets Manager configuration file which will be encrypted by AWS KMS.
+
+Copy
+
+    
+    
+    import org.bouncycastle.jcajce.provider.BouncyCastleFipsProvider;
+    import com.keepersecurity.secretmanager.aws.kms.AwsKeyValueStorage;
+    import com.keepersecurity.secretmanager.aws.kms.AwsSessionConfig;
+    import com.keepersecurity.secretsManager.core.InMemoryStorage;
+    import com.keepersecurity.secretsManager.core.SecretsManager;
+    import com.keepersecurity.secretsManager.core.SecretsManagerOptions;
+    import static com.keepersecurity.secretsManager.core.SecretsManager.initializeStorage;
+    
+    import software.amazon.awssdk.regions.Region;
+    
+    import java.security.Security;
+    import org.bouncycastle.jcajce.provider.BouncyCastleFipsProvider;
+    
+    class Test {
+    	public static void main(String args[]){
+    		String keyId = "<Key ID>";
+    		String awsAccessKeyId = "<AWS Access ID>";
+    		String awsSecretAccessKey = "<AWS Secret>";
+    		String oneTimeToken = "[One Time Token]";
+    		Region region = Region.<cloud-region>;
+    		String profile = null OR "DEFAULT";     //set profile (ex. DEFUALT/UAT/PROD) if ~/.aws/config is set
+    		String configFileLocation = "client_config_test.json";
+    		try{
+    			//set AWS configuration, It can be null if profile is set for aws credentials
+    			AwsSessionConfig sessionConfig = new AwsSessionConfig(awsAccessKeyId, awsSecretAccessKey);
+    			//Get Storage 
+    			AwsKeyValueStorage awskvstorage =  new AwsKeyValueStorage(keyId, configFileLocation, profile, null, region);
+    			initializeStorage(awskvstorage, oneTimeToken);
+    			SecretsManagerOptions options = new SecretsManagerOptions(awskvstorage);
+    			//getSecrets(OPTIONS);
+    		}catch (Exception e) {
+    			System.out.println(e.getMessage());
+    		}
+    	}
+    }
+    
+
+To do this, use `AWSKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require an AWS Key ID, AWS Session credentials -
+`AWSSessionConfig` , as well as the name of the Secrets Manager configuration
+file which will be encrypted by AWS KMS.
+
+Copy
+
+    
+    
+    import { AWSKeyValueStorage, AWSSessionConfig, LoggerLogLevelOptions } from "@keeper-security/secrets-manager-aws";
+    import { initializeStorage, getSecrets } from "@keeper-security/secrets-manager-core";
+    
+    
+    const getKeeperRecordsAWS = async () => {
+    
+    	const accessKeyId = "<YOUR AWS ACCESS KEY>>";
+    	const secretAccessKey = "<YOUR AWS SECRET_ACCESS_KEY>";
+    	const regionName = "<YOUR AWS REGION>";
+    	const logLevel = LoggerLogLevelOptions.Debug;
+    	const configPath = "client-config-path.json";
+    	
+    	const awsSessionConfig = new AWSSessionConfig(accessKeyId, secretAccessKey, regionName);
+    	const keyId = 'arn:aws:kms:ap-south-1:<accountName>:key/<keyId>';
+    	const storage = await new AWSKeyValueStorage(keyId, configPath, awsSessionConfig, logLevel).init();
+    	
+    	const oneTimeToken = "<one time token>";
+    
+    	await initializeStorage(storage, oneTimeToken);
+    	const { records } = await getSecrets({ storage: storage });
+    
+    	const firstRecord = records[0]
+    	const firstRecordPassword = firstRecord.data.fields.find(x => x.type === 'password')
+    	console.log(firstRecordPassword.value[0])
+    };
+    getKeeperRecordsAWS();
+    
+
+To do this, use `AwsKmsKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require an AWS Key ID, AwsSessionConfig, as well as the name
+of the Secrets Manager configuration file which will be encrypted by AWS KMS.
+
+Copy
+
+    
+    
+    from keeper_secrets_manager_core import SecretsManager
+    from keeper_secrets_manager_hsm.storage_aws_kms import AwsKmsKeyValueStorage
+     
+    aws_session_cfg = AwsSessionConfig(
+        aws_access_key_id="AK[...]FIF",
+        aws_secret_access_key="/[...]/g3",
+        region_name="us-east-2")
+    
+    config = AwsKmsKeyValueStorage(
+       key_id='e9[...]567',
+       config_file_location='client-config.json',
+       aws_session_config=aws_session_cfg)
+     
+    secrets_manager = SecretsManager(config=config, verify_ssl_certs=True)
+    all_records = secrets_manager.get_secrets()
+
+To do this, use `AWSKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require an AWS Key ID, AwsSessionConfig, as well as the name
+of the Secrets Manager configuration file which will be encrypted by AWS KMS.
+
+Copy
+
+    
+    
+    using System;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using SecretsManager;
+    using AWSKeyManagement;
+    
+    public class Program
+    {
+    	private static async Task getOneIndividualSecret()
+    	{
+    		var accessKeyId = "<ACCESS_KEY_ID>";
+    		var secretAccessKey = "<SECRET_ACCESS_KEY>";
+    		var regionName = "<AWS_REGION_STRING";
+    
+    		var keyId = "<KEY_ID_1>";
+    		var path = "<KEEPER_CONFIG_FILE_PATH>";
+    		var dotnet_access_token = "<ONE_TIME_TOKEN>";
+    
+    		var awsSessionConfig = new AWSSessionConfig(accessKeyId, secretAccessKey, regionName);
+    
+    		var aws_storage = new AWSKeyValueStorage(keyId, path, awsSessionConfig);
+    
+    		SecretsManagerClient.InitializeStorage(aws_storage, dotnet_access_token);
+    
+    		var options = new SecretsManagerOptions(aws_storage);
+    		var records_1 = await SecretsManagerClient.GetSecrets(options);
+    		records_1.Records.ToList().ForEach(record => Console.WriteLine(record.RecordUid + " - " + record.Data.title));
+    	}
+    
+    	static async Task Main()
+    	{
+    		await getOneIndividualSecret();
+    	}
+    }
+
+To do this, use `AWSKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require an AWS Key ID, AwsSessionConfig, as well as the name
+of the Secrets Manager configuration file which will be encrypted by AWS KMS.
+
+Copy
+
+    
+    
+    package main
+    
+    import (
+    	"encoding/json"
+    	"fmt"
+    
+    	"github.com/keeper-security/secrets-manager-go/core"
+    	awskv "github.com/keeper-security/secrets-manager-go/integrations/aws"
+    )
+    
+    func main() {
+    
+    	clientID := "<Some Client ID>"
+    	clientSecret := "<Some Client Secret>"
+    	region := "<Cloud Region>"
+    	keyARN := "arn:<partition>:kms:<region>:<account-id>:key/<key-id>"
+    	oneTimeToken := "one time token"
+    	ksmConfigFileName := ""
+    
+    	// Initialize the AWS Key Vault Storage
+    	cfg := awskv.NewAWSKeyValueStorage(ksmConfigFileName, keyARN, &awskv.AWSConfig{
+    		ClientID:     clientID,
+    		ClientSecret: clientSecret,
+    		Region:       region,
+    	})
+    
+    	clientOptions := &core.ClientOptions{
+    		Token:  oneTimeToken,
+    		Config: cfg,
+    	}
+    
+    	fmt.Printf("Client ID in config: %v\n", cfg.Get(core.KEY_CLIENT_ID))
+    
+    	secrets_manager := core.NewSecretsManager(clientOptions)
+    	// Fetch secrets from Keeper Security Vault
+    	record_uids := []string{}
+    	records, err := secrets_manager.GetSecrets(record_uids)
+    	if err != nil {
+    		// do something
+    		fmt.Printf("Error while fetching secrets: %v", err)
+    	}
+    
+    	for _, record := range records {
+    		// do something with record
+    		fmt.Println(record.Title())
+    	}
+    
+    }
+
+**Using Default Connection**
+
+JavaJavaScriptPython.NetGoLang
+
+To do this, use `AwsKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require an AWS Key ID, as well as the name of the Secrets
+Manager configuration file which will be encrypted by AWS KMS.
+
+Copy
+
+    
+    
+    import org.bouncycastle.jcajce.provider.BouncyCastleFipsProvider;
+    import com.keepersecurity.secretmanager.aws.kms.AwsKeyValueStorage;
+    import com.keepersecurity.secretmanager.aws.kms.AwsSessionConfig;
+    import com.keepersecurity.secretsManager.core.InMemoryStorage;
+    import com.keepersecurity.secretsManager.core.SecretsManager;
+    import com.keepersecurity.secretsManager.core.SecretsManagerOptions;
+    import static com.keepersecurity.secretsManager.core.SecretsManager.initializeStorage;
+    
+    import software.amazon.awssdk.regions.Region;
+    
+    import java.security.Security;
+    import org.bouncycastle.jcajce.provider.BouncyCastleFipsProvider;
+    
+    class Test {
+    	public static void main(String args[]){
+    		String keyId = "<Key ID>";
+    		String awsAccessKeyId = "<AWS Access ID>";
+    		String awsSecretAccessKey = "<AWS Secret>";
+    		String oneTimeToken = "[One Time Token]";
+    		Region region = Region.<cloud-region>;
+    		String profile = null OR "DEFAULT";     //set profile (ex. DEFUALT/UAT/PROD) if ~/.aws/config is set
+    		String configFileLocation = "client_config_test.json";
+    		try{
+    			//set AWS configuration, It can be null if profile is set for aws credentials
+    			AwsSessionConfig sessionConfig = new AwsSessionConfig(awsAccessKeyId, awsSecretAccessKey);
+    			//Get Storage 
+    			AwsKeyValueStorage awskvstorage =  new AwsKeyValueStorage(keyId, configFileLocation, profile, sessionConfig, region);
+    			initializeStorage(awskvstorage, oneTimeToken);
+    			SecretsManagerOptions options = new SecretsManagerOptions(awskvstorage);
+    			//getSecrets(OPTIONS);
+    		}catch (Exception e) {
+    			System.out.println(e.getMessage());
+    		}
+    	}
+    }
+    
+
+To do this, use `AWSKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require an AWS Key ID , as well as the name of the Secrets
+Manager configuration file which will be encrypted by AWS KMS.
+
+Copy
+
+    
+    
+    import { AWSKeyValueStorage } from "@keeper-security/secrets-manager-aws";
+    import { initializeStorage, getSecrets } from "@keeper-security/secrets-manager-core";
+    
+    
+    const getKeeperRecordsAWS = async () => {
+    
+    	const configPath = "client-config-path.json";
+    	
+    	const keyId = 'arn:aws:kms:ap-south-1:<accountName>:key/<keyId>';
+    	const storage = await new AWSKeyValueStorage(keyId, configPath).init();
+    	
+    	const oneTimeToken = "<one time token>";
+    
+    	await initializeStorage(storage, oneTimeToken);
+    	const { records } = await getSecrets({ storage: storage });
+    
+    	const firstRecord = records[0]
+    	const firstRecordPassword = firstRecord.data.fields.find(x => x.type === 'password')
+    	console.log(firstRecordPassword.value[0])
+    };
+    getKeeperRecordsAWS();
+    
+
+To do this, use `AwsKmsKeyvalueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require an AWS Key ID, as well as the name of the Secrets
+Manager configuration file which will be encrypted by AWS KMS.
+
+Copy
+
+    
+    
+    from keeper_secrets_manager_core import SecretsManager
+    from keeper_secrets_manager_hsm.storage_aws_kms import AwsKmsKeyValueStorage
+    
+    key_id = 'c5[...]576'
+        
+    config = AwsKmsKeyValueStorage(key_id, 'client-config.json') # default session
+     
+    secrets_manager = SecretsManager(config=config, verify_ssl_certs=True)
+    all_records = secrets_manager.get_secrets()
+    
+
+To do this, use `AWSKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require an AWS Key ID, as well as the name of the Secrets
+Manager configuration file which will be encrypted by AWS KMS.
+
+Copy
+
+    
+    
+    using System;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using SecretsManager;
+    using AWSKeyManagement;
+    
+    public class Program
+    {
+    	private static async Task getOneIndividualSecret()
+    	{
+    		var keyId = "<KEY_ID_1>";
+    		var path = "<KEEPER_CONFIG_FILE_PATH>";
+    		var dotnet_access_token = "<ONE_TIME_TOKEN>";
+    
+    		var aws_storage = new AWSKeyValueStorage(keyId, path);
+    
+    		SecretsManagerClient.InitializeStorage(aws_storage, dotnet_access_token);
+    
+    		var options = new SecretsManagerOptions(aws_storage);
+    		var records_1 = await SecretsManagerClient.GetSecrets(options);
+    		records_1.Records.ToList().ForEach(record => Console.WriteLine(record.RecordUid + " - " + record.Data.title));
+    	}
+    
+    	static async Task Main()
+    	{
+    		await getOneIndividualSecret();
+    	}
+    }
+
+To do this, use `AWSKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require an AWS Key ID, as well as the name of the Secrets
+Manager configuration file which will be encrypted by AWS KMS.
+
+Copy
+
+    
+    
+    package main
+    
+    import (
+    	"fmt"
+    
+    	"github.com/keeper-security/secrets-manager-go/core"
+    	awskv "github.com/keeper-security/secrets-manager-go/integrations/aws"
+    )
+    
+    func main() {
+    
+    	keyARN := "arn:<partition>:kms:<region>:<account-id>:key/<key-id>"
+    	oneTimeToken := "one time token"
+    	ksmConfigFileName := "<config file name>"
+    
+    	// Initialize the AWS Key Vault Storage
+    	cfg := awskv.NewAWSKeyValueStorage(ksmConfigFileName, keyARN, nil)
+    
+    	clientOptions := &core.ClientOptions{
+    		Token:  oneTimeToken,
+    		Config: cfg,
+    	}
+    
+    	fmt.Printf("Client ID in config: %v\n", cfg.Get(core.KEY_CLIENT_ID))
+    
+    	secrets_manager := core.NewSecretsManager(clientOptions)
+    	// Fetch secrets from Keeper Security Vault
+    	record_uids := []string{}
+    	records, err := secrets_manager.GetSecrets(record_uids)
+    	if err != nil {
+    		// do something
+    		fmt.Printf("Error while fetching secrets: %v", err)
+    	}
+    
+    	for _, record := range records {
+    		// do something with record
+    		fmt.Println(record.Title())
+    	}
+    
+    }
+    
+
+##
+
+Using the AWS KMS Integration
+
+Once setup, the Secrets Manager AWS KMS integration supports all Secrets
+Manager SDK functionality. Your code will need to be able to access the AWS
+KMS APIs in order to manage the decryption of the configuration file when run.
+
+##
+
+Additional Options
+
+###
+
+Change Key
+
+We can change key that is used for encrypting the configuration, examples
+below show the code needed to use it
+
+JavaJavaScriptPython.NetGoLang
+
+Copy
+
+    
+    
+    String newkeyId = "<New-Key-ID>";
+    AwsKeyValueStorage awskvstorage =  new AwsKeyValueStorage(keyId, configFileLocation, profile, sessionConfig, region);
+    awskvstorage.changeKey(newkeyId)
+
+Copy
+
+    
+    
+    const storage = await new AWSKeyValueStorage(keyId,config_path).init()
+    await initializeStorage(storage, oneTimeToken);
+    
+    // do all process needed if any or change directly
+    await storage.changeKey(keyId2);
+
+Copy
+
+    
+    
+    from keeper_secrets_manager_core import SecretsManager
+    from keeper_secrets_manager_hsm.storage_aws_kms import AwsKmsKeyValueStorage
+     
+    aws_session_cfg = AwsSessionConfig(
+        aws_access_key_id="AK[...]FIF",
+        aws_secret_access_key="/[...]/g3",
+        region_name="<region>")
+    
+    new_key_id = "<new_key_id>"
+    config = AwsKmsKeyValueStorage(
+       key_id='e9[...]567',
+       config_file_location='client-config.json',
+       aws_session_config=aws_session_cfg)
+     
+    secrets_manager = SecretsManager(config=config, verify_ssl_certs=True)
+    all_records = secrets_manager.change_key(new_key_id)
+
+Copy
+
+    
+    
+        using Microsoft.Extensions.Logging;
+    
+        var awsSessionConfig2 = new AWSSessionConfig();
+        var loggerFactory = LoggerFactory.Create(builder =>
+            {
+                builder.SetMinimumLevel(LogLevel.Debug);
+                builder.AddConsole();
+            });
+    
+        var logger = loggerFactory.CreateLogger<AWSKeyValueStorage>();
+    
+        var aws_storage = new AWSKeyValueStorage(keyId, path, awsSessionConfig2,logger);
+
+Copy
+
+    
+    
+    updatedKeyARN := "arn:<partition>:kms:<region>:<account-id>:key/<key-id>"
+    isChanged, err := cfg.ChangeKey(updatedKeyARN, nil)
+    if err != nil {
+        fmt.Printf("Error while changing key: %v", err)
+    }
+
+###
+
+Decrypt Config
+
+We can decrypt the config if current implementation is to be migrated onto a
+different cloud or if you want your raw credentials back. The function accepts
+a boolean which when set to true will save the decrypted configuration to file
+and if left false, will just return decrypted configuration.
+
+JavaJavaScriptPython.NetGoLang
+
+Copy
+
+    
+    
+    AwsKeyValueStorage awskvstorage =  new AwsKeyValueStorage(keyId, configFileLocation, profile, sessionConfig, region);
+    awskvstorage.decryptConfig(true) // Set true as a parameter to extract plaintext and save config as a plaintext.
+    //OR 
+    awskvstorage.decryptConfig(false); // Set false as a parameter to extract only plaintext.
+
+Copy
+
+    
+    
+    const storage = await new AWSKeyValueStorage(keyId,config_path).init();
+    await storage.decryptConfig(); 
+
+Copy
+
+    
+    
+    from keeper_secrets_manager_core import SecretsManager
+    from keeper_secrets_manager_hsm.storage_aws_kms import AwsKmsKeyValueStorage
+     
+    aws_session_cfg = AwsSessionConfig(
+        aws_access_key_id="AK[...]FIF",
+        aws_secret_access_key="/[...]/g3",
+        region_name="<region>")
+    
+    config = AwsKmsKeyValueStorage(
+       key_id='e9[...]567',
+       config_file_location='client-config.json',
+       aws_session_config=aws_session_cfg)
+     
+    secrets_manager = SecretsManager(config=config, verify_ssl_certs=True)
+    all_records = secrets_manager.decrypt_config(True)
+
+Copy
+
+    
+    
+    var conf = await aws_storage.DecryptConfigAsync(false);
+    Console.WriteLine(conf);   
+
+Copy
+
+    
+    
+    cfg := awskv.NewAWSKeyValueStorage(ksmConfigFileName, keyARN, &awskv.AWSConfig{
+    		ClientID:     clientID,
+    		ClientSecret: clientSecret,
+    		Region:       region,
+    	})
+    decryptedConfig, err := cfg.DecryptConfig(true)
+
+You're ready to use the KSM integration 👍
+
+Check out the [KSM SDKs documentation](/en/keeperpam/secrets-
+manager/developer-sdk-library) for more examples and functionality
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fs5mJxxwsAgO65JtYFSNV%252Fksm-
+aws.jpg%3Falt%3Dmedia%26token%3Dcf7a9f00-3fd7-4a74-9843-1cf65c6ade60&width=768&dpr=4&quality=100&sign=e02100f8&sv=2)
 

@@ -330,6 +330,7 @@ browser?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -626,18 +627,21 @@ Session Recording
 
 Options for recording sessions and typescripts
 
-See [session recording](/en/keeperpam/privileged-access-manager/session-
-recording-and-playback)
-
 Browser Settings (multiple)
 
 Browser-specific protocol settings
 
-See [RBI page](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation)
-
 Additional information on Remote Browser Isolation is [available at this
 page](/en/keeperpam/privileged-access-manager/remote-browser-isolation).
+
+See
+
+See
+
+[session recording](/en/keeperpam/privileged-access-manager/session-recording-
+and-playback)
+
+[RBI page](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
 
 Creating a Browser Isolation Record
 

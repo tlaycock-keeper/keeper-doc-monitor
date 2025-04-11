@@ -326,6 +326,7 @@ manager/integrations/teamcity?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -690,11 +691,11 @@ See the  for instructions on creating an Application
 
 Specify the token - paste a valid KSM config _(see_ _)_.
 
-[_Prerequisites_](/en/keeperpam/secrets-
-manager/integrations/teamcity#prerequisites)
-
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
+
+[_Prerequisites_](/en/keeperpam/secrets-
+manager/integrations/teamcity#prerequisites)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)

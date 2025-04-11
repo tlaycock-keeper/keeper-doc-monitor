@@ -338,6 +338,7 @@ users?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -534,12 +535,6 @@ Invitation Email and Vault Creation
 To join the enterprise, the invited user will need to accept an invite emailed
 to them.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9PQAwVuLYXbONMjioaMg%252Fimage.png%3Falt%3Dmedia%26token%3D999cd7c4-3b38-4081-9fe3-857919c24c9d&width=768&dpr=4&quality=100&sign=a890c97c&sv=2)
-
-User invite email
-
 When the user clicks "Set Up Your Account Now" they are taken to the Keeper
 Web Vault to proceed with account creation.
 
@@ -571,10 +566,6 @@ Copy
     
     this-device register
     this-device persistent-login on
-
- _For more information on persistent login and options, see the_[
-_documentation page_](/en/keeperpam/commander-cli/commander-installation-
-setup/logging-in#persistent-login) _._
 
 ####
 
@@ -806,7 +797,9 @@ Was this helpful?
 
 _Find more information in the_
 
- _See more information about this command in the_
+ _For more information on persistent login and options, see the_ _._
+
+_See more information about this command in the_
 
 To use the `create-user` command with a list of email addresses from a file,
 follow the  for the `enterprise-user` command and swap out that command with
@@ -821,4 +814,13 @@ reference/enterprise-management-commands#enterprise-user-command)
 
 [_command documentation_](/en/keeperpam/commander-cli/command-
 reference/enterprise-management-commands#create-user-command)
+
+[_documentation page_](/en/keeperpam/commander-cli/commander-installation-
+setup/logging-in#persistent-login)
+
+User invite email
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9PQAwVuLYXbONMjioaMg%252Fimage.png%3Falt%3Dmedia%26token%3D999cd7c4-3b38-4081-9fe3-857919c24c9d&width=768&dpr=4&quality=100&sign=a890c97c&sv=2)
 

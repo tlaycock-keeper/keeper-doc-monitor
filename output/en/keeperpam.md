@@ -308,6 +308,7 @@ Bridge](https://docs.keeper.io/en/keeper-bridge/?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -427,7 +428,7 @@ KeeperPAM is a modern, cloud-based Privileged Access Manager
 
 [NextSetup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
 
-Last updated 19 days ago
+Last updated 19 hours ago
 
 Was this helpful?
 
@@ -470,8 +471,9 @@ manages access to critical resources, including servers, web apps, databases
 and workloads.
 
 KeeperPAM consolidates enterprise password management, secrets management,
-connection management, zero-trust network access, remote browser isolation and
-a cloud-based access control plane in one unified product.
+connection management, endpoint privileged management, zero-trust network
+access, remote browser isolation and a cloud-based access control plane in one
+unified product.
 
 To learn more about KeeperPAM or sign up for a trial:
 
@@ -485,7 +487,7 @@ This documentation is broken out into the following sections:
 
   * [Privileged Access Manager](/en/keeperpam/privileged-access-manager/setup-steps)
 
-  * [Privilege Manager](/en/keeperpam/endpoint-privilege-manager/overview)
+  * [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager/overview)
 
   * [Secrets Manager](/en/keeperpam/secrets-manager/overview)
 
@@ -572,7 +574,7 @@ Next Steps
 
   * Deep dive into the [Getting Started guide for KeeperPAM](/en/keeperpam/privileged-access-manager/getting-started)
 
-KeeperPAM Platform Diagram
+KeeperPAM Zero-Trust Platform
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -580,5 +582,5 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FClb20vtKp
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjW8K3LrpOT0ALvAK2VWP%252FScreenshot%25202025-02-13%2520at%25209.55.08%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D9acf8233-c7d7-4615-94ec-14e9cda14790&width=768&dpr=4&quality=100&sign=6d78c863&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FN0RzwLsEtlnamuEKIIrB%252FZT%2520Platform.png%3Falt%3Dmedia%26token%3Da9cba17a-8a64-4e31-9754-d2967ce0a71b&width=768&dpr=4&quality=100&sign=a8bbefe3&sv=2)
 

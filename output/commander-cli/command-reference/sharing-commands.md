@@ -326,6 +326,7 @@ reference/sharing-commands?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -473,28 +474,13 @@ Command
 
 Explanation
 
-[`share-record`](/en/keeperpam/commander-cli/command-reference/sharing-
-commands#share-record-command) or `sr`
-
 Grant or revoke user access to a record
-
-[`share-folder`](/en/keeperpam/commander-cli/command-reference/sharing-
-commands#share-folder-command) or `sf`
 
 Change shared folder permissions
 
-[`record-permission`](/en/keeperpam/commander-cli/command-reference/sharing-
-commands#record-permission-command)
-
 Change record permissions of a folder
 
-[`one-time-share`](/en/keeperpam/commander-cli/command-reference/sharing-
-commands#share-command)
-
 Manage one-time shares
-
-[`external-shares-report`](/en/keeperpam/commander-cli/command-
-reference/sharing-commands#external-shares-report-command) or `esr`
 
 Display or revoke shares to external users
 
@@ -970,11 +956,6 @@ are as follows:
 
 1\. Identify Shared Folder UID
 
-See previous [example](/en/keeperpam/commander-cli/command-reference/sharing-
-commands#1.-identify-shared-folder-uid) for details on how to do this. For
-this example, we'll be using the shared folder with UID
-`**-FHdesR_GSERHUwBg4vTXw**`
-
 ####
 
 **2\. Validate Record-Ownership Transfer Command with Commander**
@@ -1003,7 +984,7 @@ command call to perform the desired action, like so:
 reference/record-commands/default-record-types)[NextKeeperPAM
 Commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
 
-Last updated 27 days ago
+Last updated 28 days ago
 
 Was this helpful?
 
@@ -1037,13 +1018,32 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mekzvgfxbk98bpbGFh_%252Fimage.png%3Falt%3Dmedia%26token%3D32c6aa29-85cd-4de6-a2d7-318085088a5f&width=768&dpr=4&quality=100&sign=dad9d873&sv=2)
+or `sr`
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-MekzeEjeziNtK3guRXA%252Fimage.png%3Falt%3Dmedia%26token%3D033f1c23-92c6-4f8c-a1f7-9415d9e96463&width=768&dpr=4&quality=100&sign=1f8bce6a&sv=2)
+or `sf`
+
+or `esr`
+
+See previous  for details on how to do this. For this example, we'll be using
+the shared folder with UID `**-FHdesR_GSERHUwBg4vTXw**`
+
+[example](/en/keeperpam/commander-cli/command-reference/sharing-
+commands#1.-identify-shared-folder-uid)
+
+[`share-record`](/en/keeperpam/commander-cli/command-reference/sharing-
+commands#share-record-command)
+
+[`share-folder`](/en/keeperpam/commander-cli/command-reference/sharing-
+commands#share-folder-command)
+
+[`record-permission`](/en/keeperpam/commander-cli/command-reference/sharing-
+commands#record-permission-command)
+
+[`one-time-share`](/en/keeperpam/commander-cli/command-reference/sharing-
+commands#share-command)
+
+[`external-shares-report`](/en/keeperpam/commander-cli/command-
+reference/sharing-commands#external-shares-report-command)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -1051,12 +1051,20 @@ files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel0U6
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel-
-_yS8GDbOy4_Cd0W%252Fimage.png%3Falt%3Dmedia%26token%3D3ff3d195-2db6-4d93-91ab-97dc3ff01210&width=768&dpr=4&quality=100&sign=5232e926&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-MekzeEjeziNtK3guRXA%252Fimage.png%3Falt%3Dmedia%26token%3D033f1c23-92c6-4f8c-a1f7-9415d9e96463&width=768&dpr=4&quality=100&sign=1f8bce6a&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel0Z9xJp1m7dxf1H8C%252Fimage.png%3Falt%3Dmedia%26token%3D0c2a9f0e-5f49-4a4b-8fd1-235a3094af72&width=768&dpr=4&quality=100&sign=378b1d3d&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mekzvgfxbk98bpbGFh_%252Fimage.png%3Falt%3Dmedia%26token%3D32c6aa29-85cd-4de6-a2d7-318085088a5f&width=768&dpr=4&quality=100&sign=dad9d873&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel-
+_yS8GDbOy4_Cd0W%252Fimage.png%3Falt%3Dmedia%26token%3D3ff3d195-2db6-4d93-91ab-97dc3ff01210&width=768&dpr=4&quality=100&sign=5232e926&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

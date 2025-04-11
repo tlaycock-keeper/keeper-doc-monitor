@@ -326,6 +326,7 @@ manager/references/managing-rotation-via-cli?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -533,10 +534,6 @@ Copy
 
 Batch Mode
 
-To run a large number of commands in a batch mode, see Keeper's [Batch
-Mode](/en/keeperpam/commander-cli/command-reference/misc-commands#run-batch-
-command) command.
-
 [PreviousImporting PAM Records](/en/keeperpam/privileged-access-
 manager/references/importing-pam-records)[NextCommander
 SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
@@ -574,4 +571,9 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+To run a large number of commands in a batch mode, see Keeper's  command.
+
+[Batch Mode](/en/keeperpam/commander-cli/command-reference/misc-commands#run-
+batch-command)
 

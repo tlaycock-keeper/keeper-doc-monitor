@@ -328,6 +328,7 @@ reference/import-and-export-commands/keepass-import?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
@@ -487,9 +488,7 @@ Was this helpful?
 
 Keeper Commander supports importing the record and folder structure directly
 from an encrypted Keepass file. File attachments are also supported. Make sure
-to first follow [these instructions](https://github.com/Keeper-
-Security/Commander/blob/master/keepercommander/importer/keepass/README.md) to
-install the necessary keepass modules.
+to first follow  to install the necessary keepass modules.
 
 Copy
 
@@ -513,6 +512,9 @@ Copy
     
     
     $ keeper help import
+
+[these instructions](https://github.com/Keeper-
+Security/Commander/blob/master/keepercommander/importer/keepass/README.md)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
