@@ -686,6 +686,45 @@ Password Rotation Settings on AWS Instance User
 Any user with `edit` rights to a PAM User record has the ability to setup
 rotation for that record.
 
+[PreviousManaged Microsoft AD User](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/aws/directory-user)[NextIAM User
+Access Key](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/iam-user-access-key)
+
+Last updated 4 days ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ##
 
 SSH Key Rotation Notes
@@ -696,6 +735,14 @@ key. The first time that a rotation occurs, the old public key is left intact
 in order to prevent system lockout. The second public key added to the file
 contains a comment that serves as an identifier for future rotations. For
 example:
+
+Copy
+
+    
+    
+    [ec2-user@host .ssh]$ cat authorized_keys
+    ssh-rsa AAAAB3NzaC1...11xZrfOxYXG6RV84mCZ3uldesEyV/ghLxAb7Fcz awsdemo
+    ssh-rsa AAAAB3NzaC...un+frl9Q== keeper-security-ec2user
 
 By default, Keeper will **not** remove other keys from the
 `.ssh/authorized_keys` file since some providers will place in their own keys
@@ -734,51 +781,4 @@ exists. If the value is FALSE, the private key will not be rotated.
 
 For Linux user rotations, password-encrypted PEM files are not currently
 supported.
-
-[PreviousManaged Microsoft AD User](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/aws/directory-user)[NextIAM User
-Access Key](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/aws/iam-user-access-key)
-
-Last updated 3 days ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
-Copy
-
-    
-    
-    [ec2-user@host .ssh]$ cat authorized_keys
-    ssh-rsa AAAAB3NzaC1...11xZrfOxYXG6RV84mCZ3uldesEyV/ghLxAb7Fcz awsdemo
-    ssh-rsa AAAAB3NzaC...un+frl9Q== keeper-security-ec2user
 

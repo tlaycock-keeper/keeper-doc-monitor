@@ -506,7 +506,9 @@ Features
 
 Prerequisites
 
-  *   * The Python module needs to be built as a nShield native application
+  * Supports the [Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk)
+
+  * The Python module needs to be built as a nShield native application
 
     * Using Python (v3.8.5) and nfpython modules from SDK ISO image from Entrust nShield software (Security World 12.80 or later)
 
@@ -610,6 +612,9 @@ Manager SDK functionality. Your code will need to be able to access the
 nShield HSM in order to manage the decryption of the configuration file when
 run.
 
+Check out the [KSM SDKs documentation](/en/keeperpam/secrets-
+manager/developer-sdk-library) for more examples and functionality
+
 ###
 
 Create an Encryption Key for Testing
@@ -634,15 +639,6 @@ Copy
     
     
     c:\Program Files\nShield\nfast\bin\generatekey -b simple protect=module type=AES size=256 ident=ksmkey
-
-Supports the
-
-Check out the  for more examples and functionality
-
-[Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
-library/python-sdk)
-
-[KSM SDKs documentation](/en/keeperpam/secrets-manager/developer-sdk-library)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

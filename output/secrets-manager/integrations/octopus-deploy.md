@@ -426,6 +426,36 @@ manager/integrations/octopus-deploy?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Features
@@ -458,36 +488,6 @@ Last updated 3 months ago
 
 Was this helpful?
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 Features
@@ -498,9 +498,6 @@ Features
 
   * Get files from the Keeper Vault
 
-For a complete list of Keeper Secrets Manager features see the [Overview
-](/en/keeperpam/secrets-manager/overview)
-
 ##
 
 Prerequisites
@@ -508,15 +505,11 @@ Prerequisites
 This page documents the Secrets Manager Octopus Deploy integration. In order
 to utilize this integration, you will need:
 
-  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
-
-    * Secrets Manager addon enabled for your Keeper account
+  *     * Secrets Manager addon enabled for your Keeper account
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
-
-    * The Octopus Deploy integration accepts Base 64 format configurations
+  *     *   *     * The Octopus Deploy integration accepts Base 64 format configurations
 
 ##
 
@@ -535,20 +528,9 @@ Installation
 
 Community Step Template
 
-To use the step template directly from [Community Step
-Templates](https://octopus.com/docs/projects/community-step-templates):
-**Navigate:** _Library > Step Templates > Community Step Templates > Browse
-Library_ **Search:** "Keeper Secrets Manager - Retrieve Secrets" _> Install >
-Save_
-
 ###
 
 Custom Step Template
-
-To add as a [Custom Step Template](https://octopus.com/docs/projects/custom-
-step-templates): **Navigate:** _Library > Step Templates > Custom Step
-Templates > Import_ Paste the JSON obtained from community contributed
-[templates library](https://library.octopus.com/listing)
 
 ##
 
@@ -565,29 +547,15 @@ your deployment or runbook process. _You can retrieve secrets using Keeper
 Notation URIs, and you can choose a custom output variable name for each
 secret._ **Required:**
 
-  * A [Keeper Secrets Manager](https://docs.keeper.io/secrets-manager/) application with permissions to retrieve secrets from the Keeper Vault. 
-
-  * The `SecretManagement.Keeper.Extension` PowerShell module installed on the target or worker. If the module can't be found, the step will fail. The `SecretManagement.Keeper` module(s) can be installed from the [PowerShell gallery](https://www.powershellgallery.com/packages/SecretManagement.Keeper).
+  *   * 
 
 ###
 
 Parameters
 
-**Keeper Secrets Manager Configuration**(type: Sensitive) **Variable name:**
-`#{Keeper.SecretsManager.RetrieveSecrets.Config} `Keeper Secrets Manager
-[configuration](https://docs.keeper.io/secrets-manager/secrets-
-manager/about/one-time-token#with-an-existing-application) for [KSM
-Application](https://docs.keeper.io/secrets-manager/secrets-manager/quick-
-start-guide) with permissions to retrieve secrets from the Keeper Vault. To
-generate KSM Configuration in Web Vault: _Secrets Manager - KSM Application
-Name - Edit - Add Device, and switch to Method: Configuration file, preferably
-in Base64 format._
+  * 
 
-**Vault Secrets to retrieve**(type: Multi-line text box) **Variable name:** `#{Keeper.SecretsManager.RetrieveSecrets.VaultSecrets} `Use [Secrets Manager Notation URIs](https://docs.keeper.io/secrets-manager/secrets-manager/about/keeper-notation) to specify the Secrets to be returned from Keeper Vault, in the format `SecretsManagerNotation URI | OutputVariableName` where:
-
-  * `OutputVariableName` is the _optional_ Octopus [output variable](https://octopus.com/docs/projects/variables/output-variables) name to store the secret's value in. _If this value isn't specified, an output name will be generated dynamically_.
-
-_Multiple fields can be retrieved by entering each one on a new line. The line format is_ `Notation | variable` _, where the variable name part is optional and if omitted auto generated variable names are used in the form of KsmSecret1, KsmSecret2, ...etc._
+ _Multiple fields can be retrieved by entering each one on a new line. The line format is_ `Notation | variable` _, where the variable name part is optional and if omitted auto generated variable names are used in the form of KsmSecret1, KsmSecret2, ...etc._
 
 Copy
 
@@ -598,14 +566,80 @@ Copy
     V8lFbio0Bs0LuvaSD5DDHA/custom_field/phone[1][number] | MyOtherPhoneNum
     V8lFbio0Bs0LuvaSD5DDHA/file/IMG_0036.png | MyImageBase64
 
-**Print output variable names**(type: Checkbox) **Variable name:**
-`#{Keeper.SecretsManager.RetrieveSecrets.PrintVariableNames} `Write out the
-Octopus [output variable](https://octopus.com/docs/projects/variables/output-
-variables) names to the task log. Default: `False`
+For a complete list of Keeper Secrets Manager features see the
+
+Keeper Secrets Manager access (See the  for more details)
 
 A Keeper  with secrets shared to it
 
 See the  for instructions on creating an Application
+
+An initialized Keeper
+
+To use the step template directly from : **Navigate:** _Library > Step
+Templates > Community Step Templates > Browse Library_ **Search:** "Keeper
+Secrets Manager - Retrieve Secrets" _> Install > Save_
+
+To add as a : **Navigate:** _Library > Step Templates > Custom Step Templates
+> Import_ Paste the JSON obtained from community contributed
+
+A  application with permissions to retrieve secrets from the Keeper Vault.
+
+The `SecretManagement.Keeper.Extension` PowerShell module installed on the
+target or worker. If the module can't be found, the step will fail. The
+`SecretManagement.Keeper` module(s) can be installed from the .
+
+**Keeper Secrets Manager Configuration**(type: Sensitive) **Variable name:**
+`#{Keeper.SecretsManager.RetrieveSecrets.Config} `Keeper Secrets Manager  for
+with permissions to retrieve secrets from the Keeper Vault. To generate KSM
+Configuration in Web Vault: _Secrets Manager - KSM Application Name - Edit -
+Add Device, and switch to Method: Configuration file, preferably in Base64
+format._
+
+**Vault Secrets to retrieve**(type: Multi-line text box) **Variable name:** `#{Keeper.SecretsManager.RetrieveSecrets.VaultSecrets} `Use  to specify the Secrets to be returned from Keeper Vault, in the format `SecretsManagerNotation URI | OutputVariableName` where:
+
+`OutputVariableName` is the _optional_ Octopus  name to store the secret's
+value in. _If this value isn't specified, an output name will be generated
+dynamically_.
+
+**Print output variable names**(type: Checkbox) **Variable name:**
+`#{Keeper.SecretsManager.RetrieveSecrets.PrintVariableNames} `Write out the
+Octopus  names to the task log. Default: `False`
+
+[Overview ](/en/keeperpam/secrets-manager/overview)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+[Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration)
+
+[Community Step Templates](https://octopus.com/docs/projects/community-step-
+templates)
+
+[Custom Step Template](https://octopus.com/docs/projects/custom-step-
+templates)
+
+[templates library](https://library.octopus.com/listing)
+
+[Keeper Secrets Manager](https://docs.keeper.io/secrets-manager/)
+
+[PowerShell
+gallery](https://www.powershellgallery.com/packages/SecretManagement.Keeper)
+
+[configuration](https://docs.keeper.io/secrets-manager/secrets-
+manager/about/one-time-token#with-an-existing-application)
+
+[KSM Application](https://docs.keeper.io/secrets-manager/secrets-
+manager/quick-start-guide)
+
+[Secrets Manager Notation URIs](https://docs.keeper.io/secrets-
+manager/secrets-manager/about/keeper-notation)
+
+[output variable](https://octopus.com/docs/projects/variables/output-
+variables)
+
+[output variable](https://octopus.com/docs/projects/variables/output-
+variables)
 
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)

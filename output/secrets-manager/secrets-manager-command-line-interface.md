@@ -511,9 +511,18 @@ Core Features
 
   * Replace environment variables with Keeper secrets in scripts and containers
 
+Keeper provides 2 different CLI tools. The Secrets Manager CLI is targeted to
+machine-based secrets management. The [Commander CLI](/en/keeperpam/commander-
+cli/overview) is more focused on administrative capabilities.
+
 ##
 
 Application and Client Device Setup
+
+In order to use the Secrets Manager CLI, or environment variable substitutions
+for accessing secrets stored in the Keeper Vault, you must first have an
+Application and Client Device configured. Check out the [Quick Start
+Guide](/en/keeperpam/secrets-manager/quick-start-guide) to set this up.
 
 ##
 
@@ -526,6 +535,14 @@ pip3 install for any Python environment.
 
 Binary Install Method
 
+The latest binary release can be found on the [GitHub
+repository](https://github.com/Keeper-Security/secrets-
+manager/releases?q=cli&expanded=true). Download the installer based on your
+operating system.
+
+⬇️ [**Download the Secrets Manager CLI Binary**](https://github.com/Keeper-
+Security/secrets-manager/releases?q=cli&expanded=true)
+
 When launching the CLI in Windows or macOS, the CLI will run in a shell mode.
 The `ksm` command is still available via the command line.
 
@@ -535,6 +552,10 @@ the **PATH**.
 ###
 
 Docker Install Method
+
+See the [Docker Container](/en/keeperpam/secrets-manager/secrets-manager-
+command-line-interface/docker-container) page for installation and setup from
+Keeper's Docker image.
 
 ###
 
@@ -615,6 +636,10 @@ Copy
 ###
 
 Source Code
+
+Find the Keeper Secrets Manager CLI source code in the [GitHub
+repository](https://github.com/Keeper-Security/secrets-
+manager/tree/master/integration/keeper_secrets_manager_cli).
 
 ###
 
@@ -834,46 +859,13 @@ following directories for the _keeper.ini_ file.
 `--cache/--no-cache` Enable or disable using the record cache for this command
 instance.
 
-Keeper provides 2 different CLI tools. The Secrets Manager CLI is targeted to
-machine-based secrets management. The  is more focused on administrative
-capabilities.
-
-In order to use the Secrets Manager CLI, or environment variable substitutions
-for accessing secrets stored in the Keeper Vault, you must first have an
-Application and Client Device configured. Check out the  to set this up.
-
-The latest binary release can be found on the . Download the installer based
-on your operating system.
-
-See the  page for installation and setup from Keeper's Docker image.
-
-Find the Keeper Secrets Manager CLI source code in the .
-
-[Commander CLI](/en/keeperpam/commander-cli/overview)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
-
-[GitHub repository](https://github.com/Keeper-Security/secrets-
-manager/releases?q=cli&expanded=true)
-
-⬇️
-
-[**Download the Secrets Manager CLI Binary**](https://github.com/Keeper-
-Security/secrets-manager/releases?q=cli&expanded=true)
-
-[Docker Container](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/docker-container)
-
-[GitHub repository](https://github.com/Keeper-Security/secrets-
-manager/tree/master/integration/keeper_secrets_manager_cli)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4UuOwFYv8pD6qC6lPfyl%252FScreen%2520Shot%25202022-03-03%2520at%25202.21.40%2520PM.png%3Falt%3Dmedia%26token%3Dfe9240b8-0cd1-4596-8f6c-112031ca29d9&width=768&dpr=4&quality=100&sign=a44a4217&sv=2)
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mjk7Db0Wlkkp831N5I2%252F-Mjk7MDlB_JpmHUMZPWu%252Fksm-
 cli-header.jpg%3Falt%3Dmedia%26token%3D9dc6a808-a364-44bc-
 af23-2c17bb3df19b&width=768&dpr=4&quality=100&sign=528ac28b&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4UuOwFYv8pD6qC6lPfyl%252FScreen%2520Shot%25202022-03-03%2520at%25202.21.40%2520PM.png%3Falt%3Dmedia%26token%3Dfe9240b8-0cd1-4596-8f6c-112031ca29d9&width=768&dpr=4&quality=100&sign=a44a4217&sv=2)
 

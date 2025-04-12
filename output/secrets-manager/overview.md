@@ -422,6 +422,30 @@ manager/overview?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * What is Keeper Secrets Manager?
+  * Features
+  * Get Started
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MeXQpBNa9pJqpPkixr9&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+
+# Secrets Manager Overview
+
+Overview of Keeper Secrets Manager (KSM) for IT Admins, DevOps & Developers
+
+[PreviousFAQs](/en/keeperpam/faqs)[NextQuick Start
+Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -451,30 +475,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * What is Keeper Secrets Manager?
-  * Features
-  * Get Started
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MeXQpBNa9pJqpPkixr9&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-
-# Secrets Manager Overview
-
-Overview of Keeper Secrets Manager (KSM) for IT Admins, DevOps & Developers
-
-[PreviousFAQs](/en/keeperpam/faqs)[NextQuick Start
-Guide](/en/keeperpam/secrets-manager/quick-start-guide)
-
-Last updated 2 months ago
-
-Was this helpful?
 
 ##
 
@@ -555,9 +555,9 @@ Ready to get started with Keeper Secrets Manager? .
 [Proceed to the Setup Instructions](/en/keeperpam/secrets-manager/quick-start-
 guide)
 
-Secrets Manager Video Demo
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fn3vG2nrg5HGtXfO8n42h%252FKSM%2520Overview.jpg%3Falt%3Dmedia%26token%3Da9ff6c09-6287-412b-97fc-76bc8a34ac62&width=768&dpr=4&quality=100&sign=62d47c88&sv=2)
+
+Secrets Manager Video Demo
 

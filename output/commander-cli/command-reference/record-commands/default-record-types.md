@@ -1862,9 +1862,9 @@ reference/record-commands/record-type-commands#record-type-command)
 [commands documentation](/en/keeperpam/commander-cli/command-reference/record-
 commands/record-type-commands#commands)
 
-[standard record types](/en/keeperpam/commander-cli/command-reference/record-
-commands/default-record-types#standard-record-types)
-
 [add documentation](/en/keeperpam/commander-cli/command-reference/record-
 commands#add-command-new-record-type)
+
+[standard record types](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types#standard-record-types)
 

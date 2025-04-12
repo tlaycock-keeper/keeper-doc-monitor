@@ -525,7 +525,9 @@ Prerequisites
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
     * The TeamCity plugin accepts Base 64 format configurations
 
@@ -685,14 +687,9 @@ variables etc. _Check the examples below._
 
   * Environment variable `env.Secret` \- `keeper://MyRecord1/custom_field/Secret1`
 
-A Keeper  with secrets shared to it
-
 See the  for instructions on creating an Application
 
 Specify the token - paste a valid KSM config _(see_ _)_.
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
 
 [_Prerequisites_](/en/keeperpam/secrets-
 manager/integrations/teamcity#prerequisites)

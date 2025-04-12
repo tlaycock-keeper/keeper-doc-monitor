@@ -809,14 +809,14 @@ follow the  for the `enterprise-user` command and swap out that command with
 management-commands/creating-and-inviting-users#example-invite-users-from-
 email-addresses-in-a-file)
 
+[_documentation page_](/en/keeperpam/commander-cli/commander-installation-
+setup/logging-in#persistent-login)
+
 [_command documentation._](/en/keeperpam/commander-cli/command-
 reference/enterprise-management-commands#enterprise-user-command)
 
 [_command documentation_](/en/keeperpam/commander-cli/command-
 reference/enterprise-management-commands#create-user-command)
-
-[_documentation page_](/en/keeperpam/commander-cli/commander-installation-
-setup/logging-in#persistent-login)
 
 User invite email
 

@@ -463,7 +463,7 @@ Detailed Python SDK docs for Keeper Secrets Manager
 library)[NextJava/Kotlin SDK](/en/keeperpam/secrets-manager/developer-sdk-
 library/java-sdk)
 
-Last updated 7 days ago
+Last updated 8 days ago
 
 Was this helpful?
 

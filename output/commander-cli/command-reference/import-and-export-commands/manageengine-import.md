@@ -447,30 +447,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=nmFaBJWoWQ32fLahhDHX&only=yes&limit=100)
 
 Automatic migration of your ManageEngine vault
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOB49MmG40XHyqn5AQ9Pv%252FImport-
-Keeper-
-ManageEngine.jpg%3Falt%3Dmedia%26token%3Ddc42d889-bd28-49b7-8f54-dfbfff56c615&width=768&dpr=4&quality=100&sign=e4aa4978&sv=2)
-
-##
-
-**ManageEngine Import**
-
-Keeper supports importing the resources and connected accounts directly from a
-ManageEngine Password Manager Pro server. Importing file attachments from a
-File Store resource is also supported. You will need a ManageEngine user with
-API access and a generated token to use this import functionality.
-
-Copy
-
-    
-    
-    $ keeper import --format=manageengine https://localhost:7272
-
-Substitute `https://localhost:7272` with your server URL and port. You will
-then need to enter your ManageEngine API token.
-
 [PreviousKeepass Import](/en/keeperpam/commander-cli/command-reference/import-
 and-export-commands/keepass-import)[NextMyki Import](/en/keeperpam/commander-
 cli/command-reference/import-and-export-commands/myki-import)
@@ -508,4 +484,28 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+##
+
+**ManageEngine Import**
+
+Keeper supports importing the resources and connected accounts directly from a
+ManageEngine Password Manager Pro server. Importing file attachments from a
+File Store resource is also supported. You will need a ManageEngine user with
+API access and a generated token to use this import functionality.
+
+Copy
+
+    
+    
+    $ keeper import --format=manageengine https://localhost:7272
+
+Substitute `https://localhost:7272` with your server URL and port. You will
+then need to enter your ManageEngine API token.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOB49MmG40XHyqn5AQ9Pv%252FImport-
+Keeper-
+ManageEngine.jpg%3Falt%3Dmedia%26token%3Ddc42d889-bd28-49b7-8f54-dfbfff56c615&width=768&dpr=4&quality=100&sign=e4aa4978&sv=2)
 

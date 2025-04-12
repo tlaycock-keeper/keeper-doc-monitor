@@ -520,7 +520,9 @@ Prerequisites
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An Azure account with Key Vault, and the ability to create security principals
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    *   * An Azure account with Key Vault, and the ability to create security principals
 
 ##
 
@@ -681,16 +683,11 @@ TIP: you can use `-m` as short hand for `--map`
 
 `ksm sync --type azure --credentials [UID] -m [...] -m [...]`
 
-A Keeper  with secrets shared to it
-
 See the  for instructions on creating an Application
 
 [![Logo](https://docs.microsoft.com/favicon.ico)Apps & service principals in
 Azure AD - Microsoft identity platformdocsmsft](https://docs.microsoft.com/en-
 us/azure/active-directory/develop/app-objects-and-service-principals)
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)

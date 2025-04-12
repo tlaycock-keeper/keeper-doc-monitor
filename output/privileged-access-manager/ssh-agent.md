@@ -451,43 +451,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=vQsOJxrMLWwGa6F7vcBP&only=yes&limit=100)
 Streamline SSH access to your managed infrastructure with Keeper's built-in
 SSH agent
 
-[PreviousSession Recording & Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)[NextIntegration with
-Git](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-git)
-
-Last updated 1 month ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOMBgMljAUIwOY0NYaRib%252FKeeperPAM%2520SSH%2520Agent.jpg%3Falt%3Dmedia%26token%3D30d59853-901c-45cd-8af3-a14913d8622b&width=768&dpr=4&quality=100&sign=721a85ff&sv=2)
 
 ##
 
@@ -613,14 +579,32 @@ Activating the SSH Agent
 From the Keeper Desktop application, visit the **Settings** > **Developer**
 screen and manage the SSH Agent from this screen.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfMFIV2kN0sDGDXUcwj9X%252FScreenshot%25202025-01-15%2520at%25204.10.40%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dd55e9c34-8fe8-4050-be6f-2dcf58ac30ae&width=768&dpr=4&quality=100&sign=9f320a0e&sv=2)
+
+Developer Settings
+
 When you enable the SSH Agent, all of the specified SSH keys stored in Keeper
 will be available to your local machine while the vault is unlocked.
 
 Select "Launch SSH Agent on startup" to activate the SSH agent upon every
 login.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2IGRZKypxZTxlnrjopCi%252FScreenshot%25202025-01-15%2520at%25204.11.05%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D82453973-fe5d-4b94-938d-00fd6c5b767b&width=768&dpr=4&quality=100&sign=9d928564&sv=2)
+
+SSH Agent Settings
+
 To enable SSH agent on specific keys, select those keys from the provided
 drop-down.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJtaxqdt8Yp7eBZOqCZIL%252FScreenshot%25202025-01-15%2520at%25204.11.48%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D1e8d9961-86b0-49d6-a43b-c29f05d1d9b6&width=768&dpr=4&quality=100&sign=15e60c6&sv=2)
+
+Limit SSH access to records
 
 ##
 
@@ -672,15 +656,39 @@ If the Keeper SSH Agent has not yet been activated, clicking on the SSH
 Command `(?)` help dialog will display a link to open the SSH Agent
 configuration screen.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWh0kRV89Gs99tEExiCwo%252FScreenshot%25202025-01-14%2520at%25205.02.22%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D03b6f8ae-2d92-4baa-8880-b9fd4779c12f&width=768&dpr=4&quality=100&sign=8730ff&sv=2)
+
+SSH Agent with Tunnels
+
 From the local terminal, paste the SSH command.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FgKbHucoofXqg1YASFlZU%252FScreenshot%25202025-01-15%2520at%25204.01.13%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D375c9b97-2f41-44d1-b200-80d39415b48b&width=768&dpr=4&quality=100&sign=77503dff&sv=2)
+
+SSH Command
 
 On your desktop computer, the Keeper Desktop will launch an authorization
 request that contains the key which is being requested. To authorize the
 request, click Authorize. To authorize subsequent requests for this key,
 select the "Don't ask again" option.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9qYfjuOv4nsPnGpf2uZS%252FScreenshot%25202025-01-15%2520at%25204.00.22%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dc3e802fc-d61d-4214-a010-b8f25380a13a&width=768&dpr=4&quality=100&sign=954338f5&sv=2)
+
+SSH Agent Authorization Dialog
+
 After access has been granted, the SSH connection is instantly established to
 the target system, through the encrypted Keeper tunnel.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fhw3QEpl8wfPPvAjP5iDG%252FScreenshot%25202025-01-15%2520at%25204.02.11%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D0d41c2b7-aab6-4440-8380-72d566d1b644&width=768&dpr=4&quality=100&sign=5b1b31e&sv=2)
+
+Tunnel established with SSH Agent
 
 ##
 
@@ -688,6 +696,12 @@ Terminal Configuration
 
 To use the Keeper SSH Agent, copy and paste the command to your shell's
 startup file:
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8O4k4x6kcHobpRi1tIyi%252FScreenshot%25202025-01-28%2520at%252011.58.22%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D3505fef5-2518-49f9-860b-9063a1bad537&width=768&dpr=4&quality=100&sign=5e3b5321&sv=2)
+
+Terminal Setup Command
 
 For example:
 
@@ -758,55 +772,41 @@ basis.
 
   * See the [Password Rotation](/en/keeperpam/secrets-manager/password-rotation) section and the [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user) SSH Key use case
 
-Developer Settings
+[PreviousSession Recording & Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)[NextIntegration with
+Git](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-git)
 
-SSH Agent Settings
+Last updated 1 month ago
 
-Limit SSH access to records
+Was this helpful?
 
-SSH Agent with Tunnels
+#### Company
 
-SSH Command
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-SSH Agent Authorization Dialog
+#### Support
 
-Tunnel established with SSH Agent
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-Terminal Setup Command
+#### Solutions
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOMBgMljAUIwOY0NYaRib%252FKeeperPAM%2520SSH%2520Agent.jpg%3Falt%3Dmedia%26token%3D30d59853-901c-45cd-8af3-a14913d8622b&width=768&dpr=4&quality=100&sign=721a85ff&sv=2)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfMFIV2kN0sDGDXUcwj9X%252FScreenshot%25202025-01-15%2520at%25204.10.40%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dd55e9c34-8fe8-4050-be6f-2dcf58ac30ae&width=768&dpr=4&quality=100&sign=9f320a0e&sv=2)
+#### Pricing
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2IGRZKypxZTxlnrjopCi%252FScreenshot%25202025-01-15%2520at%25204.11.05%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D82453973-fe5d-4b94-938d-00fd6c5b767b&width=768&dpr=4&quality=100&sign=9d928564&sv=2)
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJtaxqdt8Yp7eBZOqCZIL%252FScreenshot%25202025-01-15%2520at%25204.11.48%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D1e8d9961-86b0-49d6-a43b-c29f05d1d9b6&width=768&dpr=4&quality=100&sign=15e60c6&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWh0kRV89Gs99tEExiCwo%252FScreenshot%25202025-01-14%2520at%25205.02.22%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D03b6f8ae-2d92-4baa-8880-b9fd4779c12f&width=768&dpr=4&quality=100&sign=8730ff&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FgKbHucoofXqg1YASFlZU%252FScreenshot%25202025-01-15%2520at%25204.01.13%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D375c9b97-2f41-44d1-b200-80d39415b48b&width=768&dpr=4&quality=100&sign=77503dff&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9qYfjuOv4nsPnGpf2uZS%252FScreenshot%25202025-01-15%2520at%25204.00.22%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dc3e802fc-d61d-4214-a010-b8f25380a13a&width=768&dpr=4&quality=100&sign=954338f5&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fhw3QEpl8wfPPvAjP5iDG%252FScreenshot%25202025-01-15%2520at%25204.02.11%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D0d41c2b7-aab6-4440-8380-72d566d1b644&width=768&dpr=4&quality=100&sign=5b1b31e&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8O4k4x6kcHobpRi1tIyi%252FScreenshot%25202025-01-28%2520at%252011.58.22%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D3505fef5-2518-49f9-860b-9063a1bad537&width=768&dpr=4&quality=100&sign=5e3b5321&sv=2)
+© 2025 Keeper Security, Inc.
 

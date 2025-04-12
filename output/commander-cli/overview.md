@@ -420,6 +420,30 @@ bridge/commander-cli/overview?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * What is Keeper Commander?
+  * Use Cases
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MelQpkkGGH4hTYr4d8u&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+
+# Commander Overview
+
+Overview of Keeper Commander CLI for IT Admins, DevOps & Developers
+
+[PreviousTroubleshooting](/en/keeperpam/secrets-
+manager/troubleshooting)[NextInstallation and Setup](/en/keeperpam/commander-
+cli/commander-installation-setup)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -450,39 +474,20 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-  * What is Keeper Commander?
-  * Use Cases
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MelQpkkGGH4hTYr4d8u&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-
-# Commander Overview
-
-Overview of Keeper Commander CLI for IT Admins, DevOps & Developers
-
-[PreviousTroubleshooting](/en/keeperpam/secrets-
-manager/troubleshooting)[NextInstallation and Setup](/en/keeperpam/commander-
-cli/commander-installation-setup)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 ##
 
 What is Keeper Commander?
 
-Keeper Commander is a command-line and SDK interface to . Commander can be
-used to access and control your Keeper vault, perform administrative functions
-(such as end-user onboarding and data import/export), run reports and create
-custom automations. Keeper Commander is an open source project with
-contributions from Keeper's engineering team and partners.
+Keeper Commander is a command-line and SDK interface to [Keeper® Password
+Manager](https://keepersecurity.com/). Commander can be used to access and
+control your Keeper vault, perform administrative functions (such as end-user
+onboarding and data import/export), run reports and create custom automations.
+Keeper Commander is an open source project with contributions from Keeper's
+engineering team and partners.
+
+If you need any assistance or require specific functionality not supported in
+Commander yet, please contact us at
+[commander@keepersecurity.com](mailto:commander@keepersecurity.com).
 
 ###
 
@@ -516,17 +521,9 @@ Almost everything you can do in the Keeper Vault UI and Admin console can be
 done via the Commander CLI. Additional capabilities and automation are
 available only via the CLI, such as advanced reporting.
 
-If you need any assistance or require specific functionality not supported in
-Commander yet, please contact us at .
-
 To download or fork the Commander CLI source code, visit the Github repo:
-
-[commander@keepersecurity.com](mailto:commander@keepersecurity.com)
-
 <https://github.com/Keeper-Security/Commander>[](https://github.com/Keeper-
 Security/Commander)
-
-[Keeper® Password Manager](https://keepersecurity.com/)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

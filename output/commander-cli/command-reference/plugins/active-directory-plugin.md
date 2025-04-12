@@ -426,6 +426,36 @@ reference/plugins/active-directory-plugin?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Prerequisites
@@ -452,13 +482,20 @@ CAQO&only=yes&limit=100)
 
 Active Directory plugin for Keeper Commander rotation
 
+[PreviousWindows Plugin](/en/keeperpam/commander-cli/command-
+reference/plugins/windows-plugin)[NextAutomatic
+Execution](/en/keeperpam/commander-cli/command-reference/plugins/automatic-
+execution)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 Keeper has also launched a zero-trust Password Rotation feature with
 KeeperPAM. This new capability is recommended for most password rotation use
 cases. The Documentation is linked below:
 
-  * [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-rotation)
-
-  * Commander [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
+  *   * Commander 
 
 This plugin provides IT Admins with the ability to rotate the password of an
 Active Directory user account. This plugin can be run on any system that has
@@ -490,9 +527,7 @@ Rotation supports legacy and typed records. If using typed record, a
 'Password' type field is required. Additional fields may be added depending on
 the rotation type as well. See the instructions below.
 
-See the [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-
-commander-cli#typed-vs-untyped-records-v3-vs-v2)section for more information
-on legacy vs typed records
+See the section for more information on legacy vs typed records
 
 ###
 
@@ -502,17 +537,9 @@ Set the Password Field
 
 In the Keeper record, put the user's current password in the "Password" field
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FhvLF8beyM5y2szJUXhWN%252Fimage.png%3Falt%3Dmedia%26token%3D70598eb8-dbb7-4320-bc69-d87d20d29c1b&width=768&dpr=4&quality=100&sign=a501d27d&sv=2)
-
 ###
 
 Set the Hostname and Port
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fe5jiWMkFQPzwi5UDLvp1%252Fimage.png%3Falt%3Dmedia%26token%3D90c83a72-367e-4398-9cb6-bcc916432de0&width=768&dpr=4&quality=100&sign=fa5991f7&sv=2)
 
 If using an untyped record, the host and port can be set to custom fields. See
 below.
@@ -541,10 +568,6 @@ Whether or not to use SSL connection to AD Server
 
 cmdr:userdn
 
-[Distinguished name](https://msdn.microsoft.com/en-
-us/library/windows/desktop/aa366101.aspx) of the AD user you want to rotate
-the password on.
-
 ###
 
 Additional Rotation Settings
@@ -572,9 +595,6 @@ cmdr:port
 Optional: Port number of your AD Server. Default value: 389
 
 cmdr:rules
-
-Optional [password complexity rules](https://github.com/Keeper-
-Security/Commander/tree/master/keepercommander/plugins/password_rules.md)
 
 ##
 
@@ -607,9 +627,7 @@ If you get the error "Error during connection to AD server" try the following:
 
   * Disable 'Minimum password age’ group policy. It is set to one day by default.
 
-  * Verify connectivity to the host server, make sure it is accessible. Download a tool such as the [Softerra LDAP Browser](http://www.ldapadministrator.com/download.htm) to test if you're able to connect to Active Directory.
-
-  * Check that your Distinguished Name **cmdr:userdn** is set correctly. It needs to be exactly right or else the connection will fail. You can check the value of this from within the Softerra LDAP browser software or you can run the below command prompt utility on the **AD Server:**
+  *   * Check that your Distinguished Name **cmdr:userdn** is set correctly. It needs to be exactly right or else the connection will fail. You can check the value of this from within the Softerra LDAP browser software or you can run the below command prompt utility on the **AD Server:**
 
 Copy
 
@@ -629,47 +647,40 @@ Microsoft Active Directory requires SSL connection in order to change the
 password. The following link explains how to setup a secure connection to
 Active Directory
 
+of the AD user you want to rotate the password on.
+
+Optional
+
+Verify connectivity to the host server, make sure it is accessible. Download a
+tool such as the  to test if you're able to connect to Active Directory.
+
+[Softerra LDAP Browser](http://www.ldapadministrator.com/download.htm)
+
 <https://blogs.msdn.microsoft.com/microsoftrservertigerteam/2017/04/10/step-
 by-step-guide-to-setup-ldaps-on-windows-
 server/>[](https://blogs.msdn.microsoft.com/microsoftrservertigerteam/2017/04/10/step-
 by-step-guide-to-setup-ldaps-on-windows-server/)
 
-[PreviousWindows Plugin](/en/keeperpam/commander-cli/command-
-reference/plugins/windows-plugin)[NextAutomatic
-Execution](/en/keeperpam/commander-cli/command-reference/plugins/automatic-
-execution)
+[Distinguished name](https://msdn.microsoft.com/en-
+us/library/windows/desktop/aa366101.aspx)
 
-Last updated 2 months ago
+[password complexity rules](https://github.com/Keeper-
+Security/Commander/tree/master/keepercommander/plugins/password_rules.md)
 
-Was this helpful?
+[Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
+rotation)
 
-#### Company
+[KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
+commands)
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
+cli#typed-vs-untyped-records-v3-vs-v2)
 
-#### Support
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FhvLF8beyM5y2szJUXhWN%252Fimage.png%3Falt%3Dmedia%26token%3D70598eb8-dbb7-4320-bc69-d87d20d29c1b&width=768&dpr=4&quality=100&sign=a501d27d&sv=2)
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fe5jiWMkFQPzwi5UDLvp1%252Fimage.png%3Falt%3Dmedia%26token%3D90c83a72-367e-4398-9cb6-bcc916432de0&width=768&dpr=4&quality=100&sign=fa5991f7&sv=2)
 

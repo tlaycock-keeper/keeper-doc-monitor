@@ -458,7 +458,7 @@ started/gateways/docker-installation)[NextWindows
 Installation](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/windows-installation)
 
-Last updated 18 days ago
+Last updated 19 days ago
 
 Was this helpful?
 
@@ -720,40 +720,9 @@ Copy
     
     curl -fsSL https://keepersecurity.com/pam/uninstall | sudo bash -s --
 
-###
-
-Network Configuration
-
-The Gateway establishes outbound-only connections to the following:
-
-Destination
-
-Port Needed
-
-More Info
-
-Keeper Cloud (keepersecurity.[com|eu|com.au|ca|us|jp)
-
-TLS Port 443
-
-Outbound access for Vault login and Keeper Secrets Manager APIs.
-
-Keeper Relay (krelay.keepersecurity.[com|eu|com.au|jp|ca|us])
-
-TCP and UDP port 3478
-
-Needed to establish secure & encrypted connections between the user's vault
-and the Gateway service.
-
-Keeper Relay (krelay.keepersecurity.[com|eu|com.au|jp|ca|us])
-
-Outbound access to TCP and UDP ports 49152 through 65535
-
-Needed to establish outbound access over the designated port ranges
-
-The Gateway preserves zero knowledge by performing all encryption and
-decryption of data locally. Keeper Secrets Manager APIs are used to
-communicate with the Keeper cloud.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLrkXCEAnkZ5mHSvXvqLE%252FLinux%2520Install.jpg%3Falt%3Dmedia%26token%3D132b3ef1-e943-461b-8c25-753ccce83a38&width=768&dpr=4&quality=100&sign=50ec59bd&sv=2)
 
 ###
 
@@ -786,9 +755,40 @@ Copy
     Get-FileHash -Algorithm SHA256 keeper-gateway_windows_x86_64.exe | Format-List
     Get-Content keeper-gateway_X.X.X_SHA256SUMS | Select-String keeper-gateway_windows_x86_64.exe
 
+###
+
+Network Configuration
+
+The Gateway establishes outbound-only connections to the following:
+
+Destination
+
+Port Needed
+
+More Info
+
+The Gateway preserves zero knowledge by performing all encryption and
+decryption of data locally. Keeper Secrets Manager APIs are used to
+communicate with the Keeper cloud.
+
 <https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLrkXCEAnkZ5mHSvXvqLE%252FLinux%2520Install.jpg%3Falt%3Dmedia%26token%3D132b3ef1-e943-461b-8c25-753ccce83a38&width=768&dpr=4&quality=100&sign=50ec59bd&sv=2)
+Keeper Cloud (keepersecurity.[com|eu|com.au|ca|us|jp)
+
+TLS Port 443
+
+Outbound access for Vault login and Keeper Secrets Manager APIs.
+
+Keeper Relay (krelay.keepersecurity.[com|eu|com.au|jp|ca|us])
+
+TCP and UDP port 3478
+
+Needed to establish secure & encrypted connections between the user's vault
+and the Gateway service.
+
+Keeper Relay (krelay.keepersecurity.[com|eu|com.au|jp|ca|us])
+
+Outbound access to TCP and UDP ports 49152 through 65535
+
+Needed to establish outbound access over the designated port ranges
 

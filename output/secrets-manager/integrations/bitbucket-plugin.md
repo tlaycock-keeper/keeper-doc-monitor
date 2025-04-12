@@ -518,7 +518,11 @@ utilize this integration, you will need:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
     * The BitBucket integration accepts JSON and Base64 format configurations
 
@@ -765,6 +769,10 @@ Copy
     Token Expires On: 2021-10-19 15:31:31
     App Access Expires on: Never
 
+For more options creating a configuration, see the [configuration
+documentation](/en/keeperpam/secrets-manager/about/secrets-manager-
+configuration#creating-a-secrets-manager-configuration)
+
 The **Initialized Config:** Base64 string needs to be cut-n-pasted into your
 **Repository variables**. In this example the name of the variable is
 **KSM_CONFIG**. A private Docker Hub username and password are also added to
@@ -851,6 +859,10 @@ Copy
     Token Expires On: 2021-10-19 15:31:31
     App Access Expires on: Never
 
+For more options creating a configuration, see the [configuration
+documentation](/en/keeperpam/secrets-manager/about/secrets-manager-
+configuration#creating-a-secrets-manager-configuration)
+
 The **Initialized Config:** Base64 string needs to be cut-n-pasted into your
 **Repository variables**. In this example the name of the variable is
 **KSM_CONFIG**.
@@ -904,30 +916,6 @@ bucket. The variables for the aws-s3-deploy pipe are set using the
 environmental variables provided by the Keeper Secrets Manager pipe's secret
 file.
 
-A Keeper  with secrets shared to it
-
-See the  for instructions on creating an Application
-
-For more options creating a configuration, see the
-
-For more options creating a configuration, see the
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
-[configuration documentation](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration#creating-a-secrets-manager-configuration)
-
-[configuration documentation](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration#creating-a-secrets-manager-configuration)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHxpNKxYvEfBGnuFCPGOy%252FScreen%2520Shot%25202021-11-01%2520at%25204.16.04%2520PM.png%3Falt%3Dmedia%26token%3D34c39cae-b40d-4bc4-ad1f-6e1bd201f713&width=768&dpr=4&quality=100&sign=9aa4eb7f&sv=2)
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG_XIkldQnp9MV2kj%252F-MkdGfsG5Xki1qYqnKe6%252Fbitbucket-
@@ -936,7 +924,7 @@ header.jpg%3Falt%3Dmedia%26token%3Da1d0792b-3951-44f1-a7be-657b00a543f2&width=76
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXA3sVeoGMCD2PZeB4Rij%252FScreen%2520Shot%25202021-10-19%2520at%25202.39.08%2520PM.png%3Falt%3Dmedia%26token%3Dd3b61789-85a8-4403-ac85-db999a44ab4f&width=768&dpr=4&quality=100&sign=f0f0a0f4&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FECT7H9rIz94bdhYKiPHI%252FScreen%2520Shot%25202021-11-01%2520at%252010.49.46%2520AM.png%3Falt%3Dmedia%26token%3D56b2b0b9-5274-45eb-95e6-d807642e387a&width=768&dpr=4&quality=100&sign=8ac9a1bc&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -944,5 +932,9 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtBve4dEQO
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FECT7H9rIz94bdhYKiPHI%252FScreen%2520Shot%25202021-11-01%2520at%252010.49.46%2520AM.png%3Falt%3Dmedia%26token%3D56b2b0b9-5274-45eb-95e6-d807642e387a&width=768&dpr=4&quality=100&sign=8ac9a1bc&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXA3sVeoGMCD2PZeB4Rij%252FScreen%2520Shot%25202021-10-19%2520at%25202.39.08%2520PM.png%3Falt%3Dmedia%26token%3Dd3b61789-85a8-4403-ac85-db999a44ab4f&width=768&dpr=4&quality=100&sign=f0f0a0f4&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHxpNKxYvEfBGnuFCPGOy%252FScreen%2520Shot%25202021-11-01%2520at%25204.16.04%2520PM.png%3Falt%3Dmedia%26token%3D34c39cae-b40d-4bc4-ad1f-6e1bd201f713&width=768&dpr=4&quality=100&sign=9aa4eb7f&sv=2)
 

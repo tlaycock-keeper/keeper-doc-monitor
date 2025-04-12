@@ -510,13 +510,11 @@ to utilize this integration, you will need:
 
   * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
 
-    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
-
-  * A [One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
+    *   * A [One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
 
   * The[ Keeper Secrets Manager (KSM) CLI Tool](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
 
-    * See instructions on setting up the KSM CLI [here](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface#initialize-the-client-device)
+    * 
 
 ##
 
@@ -893,6 +891,16 @@ Contribute to the Docker Runtime Examples
 
 If you have some great examples to contribute to this page, please ping us on
 Slack or email sm@keepersecurity.com.
+
+See the  for instructions on creating an Application
+
+See instructions on setting up the KSM CLI
+
+[here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface#initialize-the-client-device)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 Root MySQL DB
 

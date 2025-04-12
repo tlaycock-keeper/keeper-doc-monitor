@@ -507,6 +507,11 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3NFn9IMoeiFD70nnTkLA%252FAzure%2520mongoDB%2520Database.jpg%3Falt%3Dmedia%26token%3Da91e14f5-10bc-4133-82fc-
+db8c47118e5b&width=768&dpr=4&quality=100&sign=cad863e6&sv=2)
+
 ##
 
 Overview
@@ -521,7 +526,11 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+  * Keeper Secrets Manager is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
+
+  * Keeper Rotation is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
+
+  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
 
   * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is able to communicate to your MongoDB Database
 
@@ -662,21 +671,6 @@ Select the **PAM User** record(s) from Step 3, edit the record and open the
 Any user with `edit` rights to a **PAM User** record has the ability to setup
 rotation for that record.
 
-Keeper Secrets Manager is enabled for your
-
-Keeper Rotation is enabled for your
-
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
-
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
-
 [page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
 cases/local-network#rotation-on-the-local-network)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3NFn9IMoeiFD70nnTkLA%252FAzure%2520mongoDB%2520Database.jpg%3Falt%3Dmedia%26token%3Da91e14f5-10bc-4133-82fc-
-db8c47118e5b&width=768&dpr=4&quality=100&sign=cad863e6&sv=2)
 

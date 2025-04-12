@@ -428,7 +428,7 @@ KeeperPAM is a modern, cloud-based Privileged Access Manager
 
 [NextSetup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
 
-Last updated 19 hours ago
+Last updated 1 day ago
 
 Was this helpful?
 

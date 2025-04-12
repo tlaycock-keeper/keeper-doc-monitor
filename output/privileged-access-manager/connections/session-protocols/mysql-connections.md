@@ -626,10 +626,6 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
-Field
-
-Definition
-
 For this protocol, both graphical and the full, raw text text content of
 terminal sessions, including timing information, are recorded. For more
 information on recordings and how to access these recordings, visit this .
@@ -640,6 +636,10 @@ information on recordings and how to access these recordings, visit this .
 
 [Session Recording and Playback](/en/keeperpam/privileged-access-
 manager/session-recording-and-playback)
+
+Field
+
+Definition
 
 PAM Configuration
 

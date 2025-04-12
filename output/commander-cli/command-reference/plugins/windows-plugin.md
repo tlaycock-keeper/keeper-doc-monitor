@@ -508,7 +508,9 @@ Rotation supports legacy and typed records. If using typed record, a 'login'
 type field is required. Additional fields may be added depending on the
 rotation type as well. See the instructions below.
 
-See the section for more information on legacy vs typed records
+See the [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-
+commander-cli#typed-vs-untyped-records-v3-vs-v2)section for more information
+on legacy vs typed records
 
 ###
 
@@ -571,9 +573,6 @@ Output
 
 After rotation is completed, the new password will be stored in the `Password`
 field of the record
-
-[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
-cli#typed-vs-untyped-records-v3-vs-v2)
 
 A Keeper Record setup for Windows password rotation
 

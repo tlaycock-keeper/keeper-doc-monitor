@@ -430,41 +430,6 @@ installation?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Prerequisite 
-  * Installation
-  * Gateway Service Management
-  * Configuration File
-  * Log files
-  * Upgrading
-  * Auto Updates
-  * Silent Install
-  * Uninstalling
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=Bi3JdR9VzNML5LouyB8B&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-# Windows Installation
-
-Instructions for installing Keeper Gateway on Windows
-
-[PreviousLinux Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/linux-installation)[NextAuto
-Updater](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/auto-updater)
-
-Last updated 18 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -495,6 +460,17 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=Bi3JdR9VzNML5LouyB8B&only=yes&limit=100)
+
+Last updated 19 days ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -506,29 +482,19 @@ the Keeper Gateway on Windows.
 
 Prerequisite
 
-Prior to proceeding with this document, make sure you [created a Gateway
-device](/en/keeperpam/privileged-access-manager/getting-started/gateways/one-
-time-access-token).
-
 ###
 
 Installation
 
 The latest Keeper Gateway for Windows is downloaded from here:
 
-  * [**Download the Keeper Gateway for Windows**](https://keepersecurity.com/pam/gateway/keeper-gateway_windows_x86_64.exe)
+  * 
 
 You can run the service under system privilege or use a service account.
 
 ####
 
 New Installs
-
-Upon installation of the service, select "Enter a Keeper One-Time Access
-Token" and supply the token provided by when you [created a
-Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways/one-
-time-access-token) on the Vault. After installation, the service will
-automatically start up and register with the Keeper cloud.
 
 ####
 
@@ -542,12 +508,6 @@ Time Access Token" so that the existing configuration is maintained.
 **Installation Location**
 
 The default installation location is the following:
-
-Copy
-
-    
-    
-    C:\ProgramFiles (x86)\Keeper Gateway\<version>
 
 ####
 
@@ -572,11 +532,6 @@ credentials of the desired service account:
 
 One-Time Access Token
 
-The final step prior to successfully installing the Keeper Gateway as service
-is to enter the [One-Time Access](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/one-time-access-token) Token provided from
-the Keeper Vault.
-
 After clicking "Next", click "Install" in the next screen to install the
 Keeper Gateway.
 
@@ -592,30 +547,11 @@ Gateway Service".
 
 **Configuration File**
 
-The Keeper Gateway configuration file contains a set of tokens that includes
-encryption keys, client identifiers, and tenant server information used to
-authenticate and decrypt data from the Keeper Secrets Manager APIs. This
-configuration file is created from the One-Time Access Token generated when
-you [created the Gateway](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/one-time-access-token).
-
 If the Keeper Gateway is installed and running as a service, the gateway
 configuration file is stored in the following location:
 
-Copy
-
-    
-    
-    C:\ProgramData\KeeperGateway\config\gateway-config.json
-
 If the Keeper Gateway is installed locally and not running as a service, the
 gateway configuration file is stored in the following location:
-
-Copy
-
-    
-    
-    C:\Users\<User>\.keeper\gateway-config.json
 
 ###
 
@@ -627,20 +563,8 @@ stored on the local machine.
 If the gateway is running as a service, the gateway log files are stored in
 the following location:
 
-Copy
-
-    
-    
-    C:\ProgramData\KeeperGateway\logs\
-
 If the gateway is not running as a service, the gateway log files are stored
 in the following location:
-
-Copy
-
-    
-    
-    C:\Users\<User>\.keeper\logs\
 
 ####
 
@@ -691,12 +615,6 @@ messages.
 To install the Keeper Gateway silently, use the following command in your
 command prompt or script:
 
-Copy
-
-    
-    
-    keeper-gateway_windows_x86_64.exe /verysilent /suppressmsgboxes /norestart /token=<TOKEN>
-
 Replace `<TOKEN>` with the token provided in the Keeper Vault when creating
 the Keeper Gateway.
 
@@ -707,20 +625,8 @@ Configuration Options
 If you have previously installed Keeper Gateway and wish to use the existing
 configuration, you can bypass the token entry by using:
 
-Copy
-
-    
-    
-    /existingconfig=1
-
 To generate a log file during the installation process, use the following
 option and specify the desired log file path:
-
-Copy
-
-    
-    
-    /log=<Optional log file>
 
 ####
 
@@ -728,12 +634,6 @@ Copy
 
 If you prefer to run the Keeper Gateway under a specific Windows service
 account, use the following options to specify the account details:
-
-Copy
-
-    
-    
-    /mergetasks="service/account" /serviceuser=<ACCOUNT USERNAME> /servicepass=<ACCOUNT PASSWORD>
 
 Replace `<ACCOUNT USERNAME>` and `<ACCOUNT PASSWORD>` with the credentials of
 the service account you intend to use.
@@ -745,12 +645,6 @@ the service account you intend to use.
 To enable the Auto Updater feature, allowing Keeper Gateway to automatically
 check for and apply updates, use the following option:
 
-Copy
-
-    
-    
-    /autoupdate=1
-
 ###
 
 Uninstalling
@@ -761,11 +655,127 @@ To uninstall the service:
 
   * If desired, delete the private configuration .json file
 
+Prior to proceeding with this document, make sure you .
+
+Upon installation of the service, select "Enter a Keeper One-Time Access
+Token" and supply the token provided by when you  on the Vault. After
+installation, the service will automatically start up and register with the
+Keeper cloud.
+
 Use service account - Use the , otherwise the account installing the gateway
 will be used.
 
 Turn on debug logging - Enable  on the gateway log files. NOT recommended for
 production environments. Only use this when debugging with Keeper support.
+
+The final step prior to successfully installing the Keeper Gateway as service
+is to enter the  Token provided from the Keeper Vault.
+
+The Keeper Gateway configuration file contains a set of tokens that includes
+encryption keys, client identifiers, and tenant server information used to
+authenticate and decrypt data from the Keeper Secrets Manager APIs. This
+configuration file is created from the One-Time Access Token generated when
+you .
+
+Copy
+
+    
+    
+    C:\ProgramFiles (x86)\Keeper Gateway\<version>
+
+Copy
+
+    
+    
+    C:\ProgramData\KeeperGateway\config\gateway-config.json
+
+Copy
+
+    
+    
+    C:\Users\<User>\.keeper\gateway-config.json
+
+Copy
+
+    
+    
+    C:\ProgramData\KeeperGateway\logs\
+
+Copy
+
+    
+    
+    C:\Users\<User>\.keeper\logs\
+
+Copy
+
+    
+    
+    keeper-gateway_windows_x86_64.exe /verysilent /suppressmsgboxes /norestart /token=<TOKEN>
+
+Copy
+
+    
+    
+    /existingconfig=1
+
+Copy
+
+    
+    
+    /log=<Optional log file>
+
+Copy
+
+    
+    
+    /mergetasks="service/account" /serviceuser=<ACCOUNT USERNAME> /servicepass=<ACCOUNT PASSWORD>
+
+Copy
+
+    
+    
+    /autoupdate=1
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+# Windows Installation
+
+Instructions for installing Keeper Gateway on Windows
+
+[PreviousLinux Installation](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/linux-installation)[NextAuto
+Updater](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/auto-updater)
+
+  * Overview
+  * Prerequisite 
+  * Installation
+  * Gateway Service Management
+  * Configuration File
+  * Log files
+  * Upgrading
+  * Auto Updates
+  * Silent Install
+  * Uninstalling
+
+[created a Gateway device](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/one-time-access-token)
+
+[**Download the Keeper Gateway for
+Windows**](https://keepersecurity.com/pam/gateway/keeper-
+gateway_windows_x86_64.exe)
+
+[created a Gateway](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/one-time-access-token)
+
+[One-Time Access](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/one-time-access-token)
+
+[created the Gateway](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/one-time-access-token)
 
 [specified service account](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/windows-installation#specifying-the-keeper-gateway-service-
@@ -773,6 +783,41 @@ account-optional)
 
 [verbose logging](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/windows-installation#verbose-logging)
+
+###
+
+Network Configuration
+
+The Gateway establishes outbound-only connections to the following:
+
+Destination
+
+Port Needed
+
+More Info
+
+Keeper Cloud (keepersecurity.[com|eu|com.au|ca|us|jp)
+
+TLS Port 443
+
+Outbound access for Vault login and Keeper Secrets Manager APIs.
+
+Keeper Relay (krelay.keepersecurity.[com|eu|com.au|jp|ca|us])
+
+TCP and UDP port 3478
+
+Needed to establish secure & encrypted connections between the user's vault
+and the Gateway service.
+
+Keeper Relay (krelay.keepersecurity.[com|eu|com.au|jp|ca|us])
+
+Outbound access to TCP and UDP ports 49152 through 65535
+
+Needed to establish outbound access over the designated port ranges
+
+The Gateway preserves zero knowledge by performing all encryption and
+decryption of data locally. Keeper Secrets Manager APIs are used to
+communicate with the Keeper cloud.
 
 ###
 
@@ -805,42 +850,7 @@ Copy
     Get-FileHash -Algorithm SHA256 keeper-gateway_windows_x86_64.exe | Format-List
     Get-Content keeper-gateway_X.X.X_SHA256SUMS | Select-String keeper-gateway_windows_x86_64.exe
 
-###
-
-Network Configuration
-
-The Gateway establishes outbound-only connections to the following:
-
-Destination
-
-Port Needed
-
-More Info
-
-The Gateway preserves zero knowledge by performing all encryption and
-decryption of data locally. Keeper Secrets Manager APIs are used to
-communicate with the Keeper cloud.
-
 <https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
-
-Keeper Cloud (keepersecurity.[com|eu|com.au|ca|us|jp)
-
-TLS Port 443
-
-Outbound access for Vault login and Keeper Secrets Manager APIs.
-
-Keeper Relay (krelay.keepersecurity.[com|eu|com.au|jp|ca|us])
-
-TCP and UDP port 3478
-
-Needed to establish secure & encrypted connections between the user's vault
-and the Gateway service.
-
-Keeper Relay (krelay.keepersecurity.[com|eu|com.au|jp|ca|us])
-
-Outbound access to TCP and UDP ports 49152 through 65535
-
-Needed to establish outbound access over the designated port ranges
 
 Keeper Gateway for Windows
 

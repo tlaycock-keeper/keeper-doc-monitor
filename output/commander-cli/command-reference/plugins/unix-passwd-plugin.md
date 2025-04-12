@@ -426,35 +426,6 @@ reference/plugins/unix-passwd-plugin?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Prerequisites
-  * Prepare a Record for Rotation
-  * Create a Record for Rotation
-  * Set the Login Name
-  * Rotate
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-Mf4nZxS1QdV2hHg4V51&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
-
-# Unix Passwd Plugin
-
-Rotate Unix passwords with Commander
-
-[PreviousSSH Plugin](/en/keeperpam/commander-cli/command-
-reference/plugins/ssh-plugin)[NextWindows Plugin](/en/keeperpam/commander-
-cli/command-reference/plugins/windows-plugin)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -485,13 +456,40 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Prerequisites
+  * Prepare a Record for Rotation
+  * Create a Record for Rotation
+  * Set the Login Name
+  * Rotate
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-Mf4nZxS1QdV2hHg4V51&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
+
+# Unix Passwd Plugin
+
+Rotate Unix passwords with Commander
+
+[PreviousSSH Plugin](/en/keeperpam/commander-cli/command-
+reference/plugins/ssh-plugin)[NextWindows Plugin](/en/keeperpam/commander-
+cli/command-reference/plugins/windows-plugin)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 Keeper has also launched a zero-trust Password Rotation feature with
 KeeperPAM. This new capability is recommended for most password rotation use
 cases. The Documentation is linked below:
 
-  * [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-rotation)
-
-  * Commander [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
+  *   * Commander 
 
 This plugin allows rotating a local user's password using the Unix `passwd`
 command.
@@ -522,9 +520,7 @@ Rotation supports legacy and typed records. If using typed record, a 'Login'
 type field is required. Additional fields may be added depending on the
 rotation type as well. See the instructions below.
 
-See the [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-
-commander-cli#typed-vs-untyped-records-v3-vs-v2)section for more information
-on legacy vs typed records
+See the section for more information on legacy vs typed records
 
 ###
 
@@ -562,12 +558,6 @@ cmdr:rules
 
 (Optional) Password generation rules
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf4odhJysOvWDa_xLae%252Fimage.png%3Falt%3Dmedia%26token%3D3dab2cc1-33fc-4a0c-9540-8fe0f4c09398&width=768&dpr=4&quality=100&sign=9861819&sv=2)
-
-Keeper Record setup for Unix passwd rotation
-
 ##
 
 Rotate
@@ -593,7 +583,22 @@ Output
 After rotation is completed, the new password will be stored in the `Password`
 field of the record
 
+[Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
+rotation)
+
+[KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
+commands)
+
+[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
+cli#typed-vs-untyped-records-v3-vs-v2)
+
+Keeper Record setup for Unix passwd rotation
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FH1Vr6GKR8x1XjZHpNZyK%252Fimage.png%3Falt%3Dmedia%26token%3D1e71b489-5ae6-4071-9e67-17568991b47e&width=768&dpr=4&quality=100&sign=692132c4&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf4odhJysOvWDa_xLae%252Fimage.png%3Falt%3Dmedia%26token%3D3dab2cc1-33fc-4a0c-9540-8fe0f4c09398&width=768&dpr=4&quality=100&sign=9861819&sv=2)
 
