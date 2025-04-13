@@ -533,11 +533,7 @@ Prerequisites
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
-
-    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
-
-  * A ServiceNow instance with [External Credential Storage](https://docs.servicenow.com/bundle/utah-platform-security/page/product/credentials/concept/external_cred_storage_configuration.html) plugin enabled
+  *     *   * A ServiceNow instance with [External Credential Storage](https://docs.servicenow.com/bundle/utah-platform-security/page/product/credentials/concept/external_cred_storage_configuration.html) plugin enabled
 
 ##
 
@@ -796,4 +792,14 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+A Keeper  with secrets shared to it
+
+See the  for instructions on creating an Application
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 

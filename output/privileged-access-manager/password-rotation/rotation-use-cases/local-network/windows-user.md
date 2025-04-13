@@ -517,11 +517,7 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  * Keeper Secrets Manager is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
-
-  * Keeper Rotation is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
-
-  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+  *   *   * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
 
   * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed and showing online
 
@@ -667,6 +663,16 @@ To learn more and set up this capability, see the [Service
 Management](/en/keeperpam/privileged-access-manager/password-rotation/service-
 management) page.
 
+Keeper Secrets Manager is enabled for your
+
+Keeper Rotation is enabled for your
+
 [page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
 cases/local-network#rotation-on-the-local-network)
+
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
+
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
 

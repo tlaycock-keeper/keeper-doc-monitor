@@ -455,7 +455,7 @@ KeeperPAM Just-In-Time Access and Zero Standing Privilege
 manager/getting-started/sharing-and-access-control)[NextPassword
 Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
 
-Last updated 3 days ago
+Last updated 4 days ago
 
 Was this helpful?
 

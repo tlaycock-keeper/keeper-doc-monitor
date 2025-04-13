@@ -651,6 +651,41 @@ configure how credential rotation is managed.
 
 Password Rotation Settings
 
+Field
+
+Description
+
+Required
+
+Rotation Type
+
+Specifies which type of rotation is being performed (and which protocol is
+utilized).
+
+**Required** "General", "IAM User" or "Run PAM Scripts Only". See below for
+details.
+
+PAM Resource
+
+For General rotation type, specifies the PAM Resource record which can provide
+the necessary privilege. For IAM User rotation type, specifies the PAM
+Configuration utilizing cloud APIs.
+
+**Required** only for "General" and "IAM User" rotation types
+
+Rotation Schedule
+
+Rotation can be performed on-demand or on a specific schedule.
+
+For advanced scheduling, see the [cron spec](/en/keeperpam/privileged-access-
+manager/references/cron-spec).
+
+Password Complexity
+
+Applies to password-based rotations, not PEM keys.
+
+Select "Show More" to control special characters and symbols.
+
 ###
 
 Rotation Type
@@ -662,6 +697,9 @@ Keeper supports 3 different types of rotation:
   * **IAM User:** Uses the cloud-specific APIs for performing rotation, such as AWS IAM users and Azure managed resources. In this case, only the PAM Configuration is required since it contains the necessary 
 
   * **Run PAM scripts only:** Skips the standard rotation and only executes the attached PAM Scripts.
+
+The rotation schedule can be set on a specific interval, or using a [cron
+spec](/en/keeperpam/privileged-access-manager/references/cron-spec).
 
 ###
 
@@ -838,46 +876,6 @@ Record Import
 Keeper supports importing in bulk from JSON format. See the [Importing PAM
 Records](/en/keeperpam/privileged-access-manager/references/importing-pam-
 records) section for more details.
-
-Field
-
-Description
-
-Required
-
-The rotation schedule can be set on a specific interval, or using a .
-
-[cron spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
-
-Rotation Type
-
-Specifies which type of rotation is being performed (and which protocol is
-utilized).
-
-**Required** "General", "IAM User" or "Run PAM Scripts Only". See below for
-details.
-
-PAM Resource
-
-For General rotation type, specifies the PAM Resource record which can provide
-the necessary privilege. For IAM User rotation type, specifies the PAM
-Configuration utilizing cloud APIs.
-
-**Required** only for "General" and "IAM User" rotation types
-
-Rotation Schedule
-
-Rotation can be performed on-demand or on a specific schedule.
-
-Password Complexity
-
-Applies to password-based rotations, not PEM keys.
-
-Select "Show More" to control special characters and symbols.
-
-For advanced scheduling, see the .
-
-[cron spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
 
 KeeperPAM Enforcement Policies
 

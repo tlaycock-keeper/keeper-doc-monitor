@@ -448,7 +448,7 @@ Manage a self-hosted version of Keeper Connection Manager
 manager/discovery/discovery-using-the-
 vault)[NextReferences](/en/keeperpam/privileged-access-manager/references)
 
-Last updated 24 days ago
+Last updated 25 days ago
 
 Was this helpful?
 

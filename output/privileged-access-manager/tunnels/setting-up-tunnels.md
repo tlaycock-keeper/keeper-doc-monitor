@@ -501,6 +501,12 @@ SSH, LDAPS, databases, and other protocols. Users can authenticate through the
 KeeperPAM platform, which brokers the connection and ensures strict policy
 enforcement.
 
+An active license is required in order to use the features available with
+KeeperPAM. This license is available for both business and enterprise
+customers.
+
+  *   *   * 
+
 ##
 
 Prerequisites
@@ -763,12 +769,6 @@ resources/pam-directory)
 
 [Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
 manager-commands#overview)
-
-An active license is required in order to use the features available with
-KeeperPAM. This license is available for both business and enterprise
-customers.
-
-  *   *   * 
 
 [KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-
 management/)

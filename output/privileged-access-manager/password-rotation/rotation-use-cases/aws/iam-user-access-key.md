@@ -659,19 +659,6 @@ could also import the csv file below. It will create a template record you can
 amend and duplicate as needed. Importing the file will generate a Login record
 type: **make sure to convert it to PAM User**.
 
-[213BPAM User
-template.csv](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FYR6dnIzAWf8lqZdK0QYo%2FPAM%20User%20template.csv?alt=media&token=33d35c09-b0f3-47c0-b6ab-877ee1d1250f)
-
-CSV file to easily create a PAM User template record via an import in the
-vault
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8hGRGxseVFBkgBhCZgOL%252FPAM%2520User%2520Record.png%3Falt%3Dmedia%26token%3D67109c45-7c62-4509-88a2-43cff636410a&width=768&dpr=4&quality=100&sign=8f6e8abc&sv=2)
-
-PAM User record example
-
 ##
 
 Setting Up the Rotation in the Keeper Vault
@@ -720,12 +707,6 @@ Copy
     }
     
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FEzyW2H39WYUeA9VwuwrT%252FAWS%2520CreatePolicy.png%3Falt%3Dmedia%26token%3Df9165f46-f53f-4da9-b9ea-d031dca7a7aa&width=768&dpr=4&quality=100&sign=358d3a99&sv=2)
-
-Create a policy in AWS
-
   1. Name the policy and save it.
 
 ####
@@ -738,19 +719,7 @@ Step 2: Create an IAM Role in AWS
 
   3. Choose AWS service and select EC2.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5KyHCeb2ORc1s5nY5Zst%252FAWS%2520CreateRole.png%3Falt%3Dmedia%26token%3D4aef00fe-b787-4841-910c-8852559277fe&width=768&dpr=4&quality=100&sign=a79e1145&sv=2)
-
-Create an IAM role in AWS
-
   1. Attach the necessary IAM policies (e.g., the policy we created above with the minimum permissions).
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVWsI0dcG521BnMr6FKEF%252FAWS%2520CreateRole2.png%3Falt%3Dmedia%26token%3D15d34af6-92bb-4931-8b1f-4515c70bbcd3&width=768&dpr=4&quality=100&sign=547c636&sv=2)
-
-Attach the policy to the role in AWS
 
 ####
 
@@ -760,20 +729,7 @@ Step 3: Assign the Role to Your EC2 Instance
 
   2. Click Actions > Security > Modify IAM Role.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNHXpV8sJURdL9cwRiSLs%252FAWS%2520EC2AssignRole.png%3Falt%3Dmedia%26token%3D8e1d15d9-61b0-4476-8833-886da84f5915&width=768&dpr=4&quality=100&sign=ffba7a5&sv=2)
-
-EC2 Instance contextual menu
-
   1. Select the role you created and click Update
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FF1VINzKKdSNdsLoZNe16%252FAWS%2520EC2AssignRole2.png%3Falt%3Dmedia%26token%3D0e352ddc-56dd-4e8e-82ae-
-be89c5235138&width=768&dpr=4&quality=100&sign=d36fb691&sv=2)
-
-Assign IAM role to EC2 instance
 
   1. Verify Instance Role Permissions
 
@@ -797,7 +753,9 @@ Rotation Configuration From the Vault:
 
   1. Create a shared folder in the vault
 
-  2.   3. In the Secret Manager tab of the Keeper vault, create a new application for the gateway if there is no gateway yet. 
+  2. Create a PAM User record in the shared folder with the fields and custom fields described [above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements).
+
+  3. In the Secret Manager tab of the Keeper vault, create a new application for the gateway if there is no gateway yet. 
 
   4. Make sure the Application has edit permissions on the shared folder created above.
 
@@ -816,13 +774,9 @@ Copy
 
   3. Select the gateway, select the shared folder and save the PAM configuration.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHtbVyJz1IXR26TxLHoQw%252FPAMConfig%2520LocalNetwork.png%3Falt%3Dmedia%26token%3D88aba039-9ebe-452b-9b96-19a2619aae90&width=768&dpr=4&quality=100&sign=42614ad9&sv=2)
+  1. Edit the PAM User record previously described in this [documentation](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements):
 
-PAM Configuration without providing an AWS access key
-
-  1.      * Password Rotation Settings: select your desired schedule and the PAM configuration created above.
+     * Password Rotation Settings: select your desired schedule and the PAM configuration created above.
 
      * Add PAM Script to the record: select the provided file below and make sure to specify the script command:
 
@@ -831,12 +785,6 @@ Copy
     
     
     python3
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqXZnrLkNJ89I4bU1hie5%252FPAMUser%2520Add%2520PAM%2520Script.png%3Falt%3Dmedia%26token%3Dc75afd26-57e9-4340-9376-ada1f141fc97&width=768&dpr=4&quality=100&sign=8a8c4a27&sv=2)
-
-Attach PAM script with a script command
 
 When the gateway does not run in an EC2 instance, it will require an admin
 access key to authenticate against AWS and rotate another user's access key.
@@ -849,13 +797,7 @@ Configuration From the Keeper Vault:
 
   1. Create a shared folder in the vault
 
-  2. 
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfvP0GEWBOrQVscGkZqKn%252FKeeperVault%2520-%2520Folder%2520and%2520record.png%3Falt%3Dmedia%26token%3Df091fe17-5e6f-4133-bfe9-dab8c9b3d7af&width=768&dpr=4&quality=100&sign=f1fdb9bc&sv=2)
-
-PAM User record in the shared folder
+  2. Create a PAM User record in the shared folder with the fields and custom fields described [above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements).
 
   1. In the Secret Manager tab of the Keeper vault, create a new application for the gateway if there is no gateway yet. 
 
@@ -874,13 +816,9 @@ Copy
 
   2. Under Environment, please select “AWS”, select the Gateway, select the shared folder, provide the “AWS ID”, the “Access Key” and “Secret Access Key”. This will be the admin access key that the script uses to rotate a user access key.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwmTsOCAsedbfpJIbtRXH%252FPAMConfig%2520AWS.png%3Falt%3Dmedia%26token%3De56ca8f9-dd24-43a5-8eec-c080c2ae9d49&width=768&dpr=4&quality=100&sign=4e6ab3da&sv=2)
+  1. Edit the PAM User record previously described in this [documentation](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements): 
 
-AWS PAM Config
-
-  1.      * Password Rotation Settings: select your desired schedule and the PAM configuration created above.
+     * Password Rotation Settings: select your desired schedule and the PAM configuration created above.
 
      * Add PAM Script to the record: select the provided file below and make sure to specify the script command:
 
@@ -889,12 +827,6 @@ Copy
     
     
     python3
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqXZnrLkNJ89I4bU1hie5%252FPAMUser%2520Add%2520PAM%2520Script.png%3Falt%3Dmedia%26token%3Dc75afd26-57e9-4340-9376-ada1f141fc97&width=768&dpr=4&quality=100&sign=8a8c4a27&sv=2)
-
-Attach PAM script with a script command
 
 When the gateway does not run in an EC2 instance, it will require an admin
 access key to authenticate against AWS and rotate another user's access key.
@@ -915,15 +847,15 @@ Configuration From the Keeper Vault:
 When attaching the PAM Script to the PAM user record, it is possible to attach
 Rotation Credentials.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3b7fmhvsw0nsNosFoITg%252FPAMUser%2520Add%2520PAM%2520Script%2520with%2520Cred.png%3Falt%3Dmedia%26token%3D17fa272f-155f-47e1-9bf3-5417440f2fe6&width=768&dpr=4&quality=100&sign=8e457299&sv=2)
-
-Attach Rotation Credentials to a PAM Script
-
 The attached record could be any record type. It needs at least the two custom
 fields “aws_access_key_id” and “aws_secret_access_key” with the admin access
 key.
+
+Using the PAM User record type to store the admin access key allows you to
+also **automate the rotation of the admin access key**. Make sure to follow
+[those requirements](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-
+requirements) in that case.
 
 ###
 
@@ -959,12 +891,6 @@ way it usually does without this extra field.
 ##
 
 Python Script
-
-[10KBRotateAWSAccessKeys.py](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FjbAzV7zvd4doh46XBOmN%2FRotateAWSAccessKeys.py?alt=media&token=e1c688cf-c4c1-4d2d-a402-37330962e9da)
-
-Download script
 
 Copy
 
@@ -1227,35 +1153,89 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
-Create a PAM User record in the shared folder with the fields and custom
-fields described .
+[213BPAM User
+template.csv](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FYR6dnIzAWf8lqZdK0QYo%2FPAM%20User%20template.csv?alt=media&token=33d35c09-b0f3-47c0-b6ab-877ee1d1250f)
 
-Edit the PAM User record previously described in this :
+CSV file to easily create a PAM User template record via an import in the
+vault
 
-Create a PAM User record in the shared folder with the fields and custom
-fields described .
+[10KBRotateAWSAccessKeys.py](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
+x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FjbAzV7zvd4doh46XBOmN%2FRotateAWSAccessKeys.py?alt=media&token=e1c688cf-c4c1-4d2d-a402-37330962e9da)
 
-Edit the PAM User record previously described in this :
+Download script
 
-Using the PAM User record type to store the admin access key allows you to
-also **automate the rotation of the admin access key**. Make sure to follow
-in that case.
+PAM User record example
 
-[above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements)
+Create a policy in AWS
 
-[documentation](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-
-requirements)
+Create an IAM role in AWS
 
-[above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements)
+Attach the policy to the role in AWS
 
-[documentation](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-
-requirements)
+EC2 Instance contextual menu
 
-[those requirements](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-
-requirements)
+Assign IAM role to EC2 instance
+
+PAM Configuration without providing an AWS access key
+
+Attach PAM script with a script command
+
+PAM User record in the shared folder
+
+AWS PAM Config
+
+Attach PAM script with a script command
+
+Attach Rotation Credentials to a PAM Script
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8hGRGxseVFBkgBhCZgOL%252FPAM%2520User%2520Record.png%3Falt%3Dmedia%26token%3D67109c45-7c62-4509-88a2-43cff636410a&width=768&dpr=4&quality=100&sign=8f6e8abc&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FEzyW2H39WYUeA9VwuwrT%252FAWS%2520CreatePolicy.png%3Falt%3Dmedia%26token%3Df9165f46-f53f-4da9-b9ea-d031dca7a7aa&width=768&dpr=4&quality=100&sign=358d3a99&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5KyHCeb2ORc1s5nY5Zst%252FAWS%2520CreateRole.png%3Falt%3Dmedia%26token%3D4aef00fe-b787-4841-910c-8852559277fe&width=768&dpr=4&quality=100&sign=a79e1145&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVWsI0dcG521BnMr6FKEF%252FAWS%2520CreateRole2.png%3Falt%3Dmedia%26token%3D15d34af6-92bb-4931-8b1f-4515c70bbcd3&width=768&dpr=4&quality=100&sign=547c636&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNHXpV8sJURdL9cwRiSLs%252FAWS%2520EC2AssignRole.png%3Falt%3Dmedia%26token%3D8e1d15d9-61b0-4476-8833-886da84f5915&width=768&dpr=4&quality=100&sign=ffba7a5&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FF1VINzKKdSNdsLoZNe16%252FAWS%2520EC2AssignRole2.png%3Falt%3Dmedia%26token%3D0e352ddc-56dd-4e8e-82ae-
+be89c5235138&width=768&dpr=4&quality=100&sign=d36fb691&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHtbVyJz1IXR26TxLHoQw%252FPAMConfig%2520LocalNetwork.png%3Falt%3Dmedia%26token%3D88aba039-9ebe-452b-9b96-19a2619aae90&width=768&dpr=4&quality=100&sign=42614ad9&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqXZnrLkNJ89I4bU1hie5%252FPAMUser%2520Add%2520PAM%2520Script.png%3Falt%3Dmedia%26token%3Dc75afd26-57e9-4340-9376-ada1f141fc97&width=768&dpr=4&quality=100&sign=8a8c4a27&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfvP0GEWBOrQVscGkZqKn%252FKeeperVault%2520-%2520Folder%2520and%2520record.png%3Falt%3Dmedia%26token%3Df091fe17-5e6f-4133-bfe9-dab8c9b3d7af&width=768&dpr=4&quality=100&sign=f1fdb9bc&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwmTsOCAsedbfpJIbtRXH%252FPAMConfig%2520AWS.png%3Falt%3Dmedia%26token%3De56ca8f9-dd24-43a5-8eec-c080c2ae9d49&width=768&dpr=4&quality=100&sign=4e6ab3da&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqXZnrLkNJ89I4bU1hie5%252FPAMUser%2520Add%2520PAM%2520Script.png%3Falt%3Dmedia%26token%3Dc75afd26-57e9-4340-9376-ada1f141fc97&width=768&dpr=4&quality=100&sign=8a8c4a27&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3b7fmhvsw0nsNosFoITg%252FPAMUser%2520Add%2520PAM%2520Script%2520with%2520Cred.png%3Falt%3Dmedia%26token%3D17fa272f-155f-47e1-9bf3-5417440f2fe6&width=768&dpr=4&quality=100&sign=8e457299&sv=2)
 

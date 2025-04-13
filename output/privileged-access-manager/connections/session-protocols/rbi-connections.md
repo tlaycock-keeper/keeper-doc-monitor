@@ -597,15 +597,15 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
-Field
-
-Definition
-
 For this protocol, graphical data, including timing information, is recorded.
 For more details on the recordings and how to access them, see the  docs.
 
 [Session Recording & Playback](/en/keeperpam/privileged-access-
 manager/session-recording-and-playback)
+
+Field
+
+Definition
 
 PAM Configuration
 

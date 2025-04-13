@@ -856,12 +856,6 @@ Commander automatically creates the required parameters when you login to the
 CLI. The easiest way to generate the required parameters is to login to the
 Commander CLI on your machine.
 
-To get the Commander parameters, open the generated config.json file. By
-default this is located in the `Users/[your username]/.keeper/` folder on your
-machine. See the[ config file documentation ](/en/keeperpam/commander-
-cli/commander-installation-setup/logging-in#commander-configuration-file)for
-more information.
-
 You should see a file that looks similar to this:
 
 Copy
@@ -975,10 +969,6 @@ AWS can also be configured to trigger Lambda from a number of other sources
 including email and SMS triggers. See Amazon's documentation on invoking
 Lambda for more options:
 
-[![Logo](https://docs.aws.amazon.com/assets/images/favicon.ico)Invoking Lambda
-functions - AWS LambdaAWS
-Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
-
 ####
 
 Configure For Sending Emails
@@ -991,11 +981,6 @@ You will also need to create an IAM identity to enable email sending.
 
 For more information on setting up email sending with AWS, see Amazon's
 documentation:
-
-[![Logo](https://a0.awsstatic.com/libra-css/images/site/touch-icon-
-ipad-144-smile.png)Send email using Lambda and Amazon SESAmazon Web Services,
-Inc.](https://aws.amazon.com/premiumsupport/knowledge-center/lambda-send-
-email-ses/)
 
 In this example, we are sending an email with the report results. In order to
 enable the email, you will need to allow Lambda to access SES
@@ -1019,10 +1004,6 @@ Keeper processes.
 
 For some examples of using the Commander SDK code, see the example scripts in
 the Commander GitHub repo:
-
-[![Logo](https://github.com/fluidicon.png)Commander/examples at master ·
-Keeper-Security/CommanderGitHub](https://github.com/Keeper-
-Security/Commander/tree/master/examples)
 
 To learn more about Commander's various methods, see the Command Reference
 section.
@@ -1067,6 +1048,26 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+To get the Commander parameters, open the generated config.json file. By
+default this is located in the `Users/[your username]/.keeper/` folder on your
+machine. See thefor more information.
+
+[![Logo](https://a0.awsstatic.com/libra-css/images/site/touch-icon-
+ipad-144-smile.png)Send email using Lambda and Amazon SESAmazon Web Services,
+Inc.](https://aws.amazon.com/premiumsupport/knowledge-center/lambda-send-
+email-ses/)
+
+[![Logo](https://docs.aws.amazon.com/assets/images/favicon.ico)Invoking Lambda
+functions - AWS LambdaAWS
+Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
+
+[![Logo](https://github.com/fluidicon.png)Commander/examples at master ·
+Keeper-Security/CommanderGitHub](https://github.com/Keeper-
+Security/Commander/tree/master/examples)
+
+[ config file documentation ](/en/keeperpam/commander-cli/commander-
+installation-setup/logging-in#commander-configuration-file)
 
 [2KBpackage_layer_content.sh](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
 x-

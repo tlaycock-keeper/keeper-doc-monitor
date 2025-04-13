@@ -601,7 +601,7 @@ manager/discovery/discovery-basics)[NextDiscovery using the
 Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-
 vault)
 
-Last updated 25 days ago
+Last updated 26 days ago
 
 Was this helpful?
 

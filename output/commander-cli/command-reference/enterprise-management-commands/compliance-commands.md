@@ -507,10 +507,6 @@ minutes as the system pulls in the required data.**
 During this time, Commander will display messaging explaining the current
 step.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjzCfUVzEze2IAKuJDhS6%252Fimage.png%3Falt%3Dmedia%26token%3D235eb0c1-407d-4d24-a7dc-d65cca157bac&width=768&dpr=4&quality=100&sign=db5ae4e&sv=2)
-
 Additionally, a manual rebuild of the cache can be performed with the `-r`
 flag. Do this to see recent changes in the compliance data.
 
@@ -1021,7 +1017,7 @@ reference/enterprise-management-commands/creating-and-inviting-
 users)[NextBreachwatch Commands](/en/keeperpam/commander-cli/command-
 reference/enterprise-management-commands/breachwatch-commands)
 
-Last updated 18 days ago
+Last updated 19 days ago
 
 Was this helpful?
 
@@ -1054,4 +1050,8 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjzCfUVzEze2IAKuJDhS6%252Fimage.png%3Falt%3Dmedia%26token%3D235eb0c1-407d-4d24-a7dc-d65cca157bac&width=768&dpr=4&quality=100&sign=db5ae4e&sv=2)
 

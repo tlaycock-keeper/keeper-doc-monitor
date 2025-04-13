@@ -555,7 +555,9 @@ the password is incorrect, the rotation will fail.
 
 Step 3: Add PAM Script
 
-  *   * Add the "Additional Credential" record, which is the "Okta API Access Details" record created in Step 1.
+  * Attach the below [Python](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/okta-user#python-script) or [Bash](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/okta-user#bash-script-version) script that will perform the password rotation.
+
+  * Add the "Additional Credential" record, which is the "Okta API Access Details" record created in Step 1.
 
 In the example below, we'll use the bash script because the Keeper Gateway is
 running as a Docker container.
@@ -781,14 +783,6 @@ Copy
         loop = asyncio.get_event_loop()
         loop.run_until_complete(main())
     
-
-Attach the below  or  script that will perform the password rotation.
-
-[Python](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/saas-accounts/okta-user#python-script)
-
-[Bash](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/saas-accounts/okta-user#bash-script-version)
 
 Okta API Details Record
 

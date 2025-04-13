@@ -549,10 +549,6 @@ Copy
 
 Allow users to view session Recordings.
 
-Tunnels can also be enabled on the [Keeper Commander
-CLI](/en/keeperpam/commander-cli/command-reference/secrets-manager-
-commands#overview) using the `enterprise-role` command:
-
 Copy
 
     
@@ -718,6 +714,11 @@ PAM Machine
 
 Connecting to the target defined on the PAM Machine Record with the Telnet
 connection protocol
+
+Tunnels can also be enabled on the  using the `enterprise-role` command:
+
+[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
+manager-commands#overview)
 
 An active license is required in order to use the features available with
 KeeperPAM. This license is available for both business and enterprise

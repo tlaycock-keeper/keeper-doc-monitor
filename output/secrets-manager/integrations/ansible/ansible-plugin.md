@@ -2032,6 +2032,9 @@ secret-data)
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
+[Keeper config file](/en/keeperpam/secrets-manager/about/secrets-manager-
+configuration)
+
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
 
@@ -2046,9 +2049,6 @@ interface/secret-command#secret-command)
 
 [learn more](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/secret-command#notation)
-
-[Keeper config file](/en/keeperpam/secrets-manager/about/secrets-manager-
-configuration)
 
 [prerequisites](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
 plugin#prerequisites)

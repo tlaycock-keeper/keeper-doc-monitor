@@ -530,9 +530,7 @@ installation details
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
-
-    *   * [A One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
+  *     *   * [A One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
 
 ##
 
@@ -871,7 +869,12 @@ Copy
 The specified file will be downloaded to the path location given to `Set-
 Content`
 
+A Keeper  with secrets shared to it
+
 See the  for instructions on creating an Application
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)

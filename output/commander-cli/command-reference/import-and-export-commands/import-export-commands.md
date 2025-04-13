@@ -457,7 +457,7 @@ reference/import-and-export-commands)[NextCyberArk
 Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
 commands/cyberark-import)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

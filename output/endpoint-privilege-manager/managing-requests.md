@@ -449,7 +449,7 @@ Day to day management of Keeper Privilege Manager elevation requests
 [PreviousPolicies](/en/keeperpam/endpoint-privilege-
 manager/policies)[NextFAQs](/en/keeperpam/faqs)
 
-Last updated 1 day ago
+Last updated 2 days ago
 
 Was this helpful?
 

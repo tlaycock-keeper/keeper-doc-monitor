@@ -439,6 +439,86 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MeXQpBNa9pJqpPkixr9&only=yes&limit=100)
 
 Overview of Keeper Secrets Manager (KSM) for IT Admins, DevOps & Developers
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fn3vG2nrg5HGtXfO8n42h%252FKSM%2520Overview.jpg%3Falt%3Dmedia%26token%3Da9ff6c09-6287-412b-97fc-76bc8a34ac62&width=768&dpr=4&quality=100&sign=62d47c88&sv=2)
+
+##
+
+What is Keeper Secrets Manager?
+
+Keeper Secrets Manager (KSM) provides your DevOps, IT Security and software
+development teams with a fully cloud-based, Zero-Knowledge platform for
+managing all of your infrastructure secrets such as API keys, Database
+passwords, access keys, certificates and any type of confidential data.
+
+Secrets Manager Video Demo
+
+Common use cases for Secrets Manager include:
+
+  * Removing hard-coded credentials from source code
+
+  * Replacing configuration file secrets
+
+  * Pulling secrets into CI/CD systems like Jenkins, GitHub Actions and More
+
+  * Protecting access to privileged passwords, API keys and other managed secrets
+
+  * Providing vault access to machines and applications
+
+  * Automatically rotating passwords, service account credentials and cloud identities
+
+##
+
+Features
+
+**Keeper Secrets Manager** is part of the [Keeper Password Security
+platform](https://keepersecurity.com). With millions of users worldwide,
+Keeper Password Manager + Keeper Secrets Manager provides numerous benefits
+over using Hashicorp Vault, Delinea, Cyberark and other "legacy" Secrets
+Management products:
+
+  * Superior Zero-Knowledge encryption model ([learn more](https://docs.keeper.io/enterprise-guide/keeper-encryption-model))
+
+  * No hosted software or VMs to configure and manage (100% Cloud-based)
+
+  * Secure and user-friendly Web Vault and Browser Extensions for secrets management
+
+  * Automated password rotation across any target user or machine
+
+  * Powerful native Mobile and Desktop Applications for every device type and OS
+
+  * Admin Console for managing enforcement policies, users, teams and provisioning
+
+  * SAML 2.0 and Master Password user login methods
+
+  * Shared passwords and secrets among Teams and individual users
+
+  * Simple and fast deployment methods
+
+  * Developer-friendly SDKs for the most popular programming languages and environments
+
+  * Built for all users - not just DevOps!
+
+  * Advanced Reporting & Alerts for audit and compliance
+
+  * Integration with Slack and Microsoft Teams
+
+  * Dedicated 24/7 support
+
+  * SOC2, ISO27001 certified
+
+  * FIPS 140-2 validated
+
+  * FedRAMP Authorized and StateRAMP Authorized
+
+##
+
+Get Started
+
+Ready to get started with Keeper Secrets Manager? [Proceed to the Setup
+Instructions](/en/keeperpam/secrets-manager/quick-start-guide).
+
 [PreviousFAQs](/en/keeperpam/faqs)[NextQuick Start
 Guide](/en/keeperpam/secrets-manager/quick-start-guide)
 
@@ -475,89 +555,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-##
-
-What is Keeper Secrets Manager?
-
-Keeper Secrets Manager (KSM) provides your DevOps, IT Security and software
-development teams with a fully cloud-based, Zero-Knowledge platform for
-managing all of your infrastructure secrets such as API keys, Database
-passwords, access keys, certificates and any type of confidential data.
-
-Common use cases for Secrets Manager include:
-
-  * Removing hard-coded credentials from source code
-
-  * Replacing configuration file secrets
-
-  * Pulling secrets into CI/CD systems like Jenkins, GitHub Actions and More
-
-  * Protecting access to privileged passwords, API keys and other managed secrets
-
-  * Providing vault access to machines and applications
-
-  * Automatically rotating passwords, service account credentials and cloud identities
-
-##
-
-Features
-
-  *   * No hosted software or VMs to configure and manage (100% Cloud-based)
-
-  * Secure and user-friendly Web Vault and Browser Extensions for secrets management
-
-  * Automated password rotation across any target user or machine
-
-  * Powerful native Mobile and Desktop Applications for every device type and OS
-
-  * Admin Console for managing enforcement policies, users, teams and provisioning
-
-  * SAML 2.0 and Master Password user login methods
-
-  * Shared passwords and secrets among Teams and individual users
-
-  * Simple and fast deployment methods
-
-  * Developer-friendly SDKs for the most popular programming languages and environments
-
-  * Built for all users - not just DevOps!
-
-  * Advanced Reporting & Alerts for audit and compliance
-
-  * Integration with Slack and Microsoft Teams
-
-  * Dedicated 24/7 support
-
-  * SOC2, ISO27001 certified
-
-  * FIPS 140-2 validated
-
-  * FedRAMP Authorized and StateRAMP Authorized
-
-##
-
-Get Started
-
-**Keeper Secrets Manager** is part of the . With millions of users worldwide,
-Keeper Password Manager + Keeper Secrets Manager provides numerous benefits
-over using Hashicorp Vault, Delinea, Cyberark and other "legacy" Secrets
-Management products:
-
-Superior Zero-Knowledge encryption model ()
-
-Ready to get started with Keeper Secrets Manager? .
-
-[Keeper Password Security platform](https://keepersecurity.com)
-
-[learn more](https://docs.keeper.io/enterprise-guide/keeper-encryption-model)
-
-[Proceed to the Setup Instructions](/en/keeperpam/secrets-manager/quick-start-
-guide)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fn3vG2nrg5HGtXfO8n42h%252FKSM%2520Overview.jpg%3Falt%3Dmedia%26token%3Da9ff6c09-6287-412b-97fc-76bc8a34ac62&width=768&dpr=4&quality=100&sign=62d47c88&sv=2)
-
-Secrets Manager Video Demo
 

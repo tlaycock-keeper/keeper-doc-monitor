@@ -438,36 +438,6 @@ sql?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview
@@ -492,15 +462,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=bM0A3H8MVDz7AappV6Jx&only=yes&limit=100)
 
 Rotating Admin/Regular Azure SQL Database Users with Keeper
 
-[PreviousAzure Managed Database](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/managed-database)[NextAzure
-MySQL - Single or Flexible Database](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/managed-database/azure-
-mysql-single-or-flexible-database)
-
-Last updated 10 days ago
-
-Was this helpful?
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FY91x8fr9IGpCgUbdJOlv%252FAzure%2520SQL%2520database.jpg%3Falt%3Dmedia%26token%3Dfd0bd1dd-f086-4c81-95fd-16ee436c3bdb&width=768&dpr=4&quality=100&sign=95dfdcc1&sv=2)
 
 ##
 
@@ -517,7 +481,7 @@ password of Database Admin Accounts. To rotate the passwords of Regular
 Database Users, Keeper connects to the DB instance with the linked admin
 credentials and executes the necessary SQL statements to change the password.
 
-  * 
+  * See the [Azure Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure) for a high level overview and getting started with Azure
 
 ##
 
@@ -525,9 +489,17 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   *   *   * The Keeper Gateway is able to communicate with your Azure SQL Server Database
+  * [Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-started/enforcement-policies) are configured for your role
 
-  * 
+  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+
+  * Your Azure environment is [configured](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/azure-environment-setup) per our documentation
+
+  * Your [Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is online
+
+  * The Keeper Gateway is able to communicate with your Azure SQL Server Database
+
+  * If the Gateway is installed on a Linux or macOS server, install the [Microsoft ODBC driver](https://learn.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver16)
 
 ##
 
@@ -556,6 +528,8 @@ Keeper record title Ex: `Azure SQL Admin`
 The Database Server name i.e `testdb-sql.mssql.database.azure.com`
 
 **Port**
+
+For default ports, see port mapping Ex: `1433`
 
 **Use SSL**
 
@@ -656,6 +630,10 @@ services.
 
 The UUID of the Azure Active Directory
 
+For more details on all the configurable fields in the PAM Configuration
+record, visit this [page](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration).
+
 ##
 
 3\. Set up one or more PAM User records
@@ -710,47 +688,43 @@ Select the **PAM User** record(s) from Step 3, edit the record and open the
 Any user with `edit` rights to a **PAM User** record has the ability to setup
 rotation for that record.
 
-See the  for a high level overview and getting started with Azure
+[PreviousAzure Managed Database](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/azure/managed-database)[NextAzure
+MySQL - Single or Flexible Database](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/azure/managed-database/azure-
+mysql-single-or-flexible-database)
 
-are configured for your role
+Last updated 11 days ago
 
-A Keeper Secrets Manager  has been created
+Was this helpful?
 
-Your Azure environment is  per our documentation
+#### Company
 
-Your  is online
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-If the Gateway is installed on a Linux or macOS server, install the
+#### Support
 
-For default ports, see  Ex: `1433`
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-For more details on all the configurable fields in the PAM Configuration
-record, visit this .
+#### Solutions
 
-[Azure Overview](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/azure)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-[Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-
-started/enforcement-policies)
+#### Pricing
 
-[application](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
-[configured](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/azure-environment-setup)
-
-[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)
-
-[Microsoft ODBC driver](https://learn.microsoft.com/en-
-us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver16)
-
-[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration)
-
-port mapping
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FY91x8fr9IGpCgUbdJOlv%252FAzure%2520SQL%2520database.jpg%3Falt%3Dmedia%26token%3Dfd0bd1dd-f086-4c81-95fd-16ee436c3bdb&width=768&dpr=4&quality=100&sign=95dfdcc1&sv=2)
+© 2025 Keeper Security, Inc.
 

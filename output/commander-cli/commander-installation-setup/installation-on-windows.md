@@ -546,7 +546,7 @@ have to perform device authorization through email or other 2FA methods.
 installation-setup)[NextCLI Installation on macOS](/en/keeperpam/commander-
 cli/commander-installation-setup/installation-on-mac)
 
-Last updated 5 months ago
+Last updated 6 months ago
 
 Was this helpful?
 

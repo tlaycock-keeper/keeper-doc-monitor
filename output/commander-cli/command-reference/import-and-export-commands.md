@@ -473,15 +473,33 @@ Command
 
 Explanation
 
+[`import`](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands#import-command)
+
 Import data from a local file or other password managers
+
+[`export`](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands#export-command)
 
 Export vault records
 
+[`download-membership`](/en/keeperpam/commander-cli/command-reference/import-
+and-export-commands#download-membership-command)
+
 Download shared folder memberships
+
+[`apply-membership`](/en/keeperpam/commander-cli/command-reference/import-and-
+export-commands#apply-membership-command)
 
 Apply shared folder membership changes
 
+[`download-record-types`](/en/keeperpam/commander-cli/command-
+reference/import-and-export-commands#download-record-types-command)
+
 Download custom record types
+
+[`load-record-types`](/en/keeperpam/commander-cli/command-reference/import-
+and-export-commands#load_record_types-command)
 
 Load custom record type into Keeper
 
@@ -570,6 +588,10 @@ Copy
   7. Import records from Thycotic/Delinea Secret Server using full URL
 
   8. Import records from Thycotic/Delinea Secret Server using username/hostname syntax
+
+Additional import instructions are [documented below](/en/keeperpam/commander-
+cli/command-reference/import-and-export-commands#detailed-import-
+instructions).
 
 Ensure that you upgrade to the latest version of Commander to support all
 import methods.
@@ -875,6 +897,11 @@ Thycotic/Delinea Secret Server), retrieve custom record types (Secret Server
 calls it secret templates), and then create a local JSON file containing this
 information. The filename generated locally will be called record_types.json.
 
+This file can then be used for subsequently loading custom record types to
+Keeper. The record types loading operation is performed by executing the
+[`load-record-types`](/en/keeperpam/commander-cli/command-reference/import-
+and-export-commands#load_record_types-command) command.
+
 \--ssh-key-as-file
 
 Thycotic/Delinea Secret Server stores SSH keys as file attachments. Keeper
@@ -905,6 +932,11 @@ load_record_types command
 **Command** : `load-record-types`
 
 **Detail** : Load custom record types from a JSON file into Keeper.
+
+**Detail** : Load custom record types from a local JSON file. This command is
+used alongside the [download-record-types](/en/keeperpam/commander-
+cli/command-reference/import-and-export-commands#download-record-types-
+command) command.
 
 The `load_record_types` command will look for a JSON file (defaults to
 record_types.json) that contains custom record types and loads missing record
@@ -1030,40 +1062,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-Additional import instructions are .
-
-This file can then be used for subsequently loading custom record types to
-Keeper. The record types loading operation is performed by executing the
-command.
-
-**Detail** : Load custom record types from a local JSON file. This command is
-used alongside the  command.
-
-[documented below](/en/keeperpam/commander-cli/command-reference/import-and-
-export-commands#detailed-import-instructions)
-
-[`load-record-types`](/en/keeperpam/commander-cli/command-reference/import-
-and-export-commands#load_record_types-command)
-
-[download-record-types](/en/keeperpam/commander-cli/command-reference/import-
-and-export-commands#download-record-types-command)
-
-[`import`](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands#import-command)
-
-[`export`](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands#export-command)
-
-[`download-membership`](/en/keeperpam/commander-cli/command-reference/import-
-and-export-commands#download-membership-command)
-
-[`apply-membership`](/en/keeperpam/commander-cli/command-reference/import-and-
-export-commands#apply-membership-command)
-
-[`download-record-types`](/en/keeperpam/commander-cli/command-
-reference/import-and-export-commands#download-record-types-command)
-
-[`load-record-types`](/en/keeperpam/commander-cli/command-reference/import-
-and-export-commands#load_record_types-command)
 

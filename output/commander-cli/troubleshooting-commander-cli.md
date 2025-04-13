@@ -865,11 +865,6 @@ Was this helpful?
 © 2025 Keeper Security, Inc.
 
 [![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
-files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Keeper
-Admin Console OverviewEnterprise Guide](https://docs.keeper.io/enterprise-
-guide/getting-started-with-keeper-admin-console#additional-secure-add-ons)
-
-[![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
 files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Delegated
 AdministrationEnterprise Guide](https://docs.keeper.io/enterprise-
 guide/delegated-administration#delegated-admin-via-administrative-permissions)
@@ -878,4 +873,9 @@ guide/delegated-administration#delegated-admin-via-administrative-permissions)
 files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Enforcement
 PoliciesEnterprise Guide](https://docs.keeper.io/enterprise-
 guide/roles/enforcement-policies)
+
+[![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
+files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Keeper
+Admin Console OverviewEnterprise Guide](https://docs.keeper.io/enterprise-
+guide/getting-started-with-keeper-admin-console#additional-secure-add-ons)
 

@@ -452,43 +452,11 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MkdGFOKqlxew9z0KHiO&only=yes&limit=100)
 
 Keeper Secrets Manager integration into GitLab for dynamic secrets retrieval
 
-[PreviousGitHub Actions](/en/keeperpam/secrets-manager/integrations/github-
-actions)[NextHashicorp Vault](/en/keeperpam/secrets-
-manager/integrations/hashicorp-vault)
-
-Last updated 3 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG6FEOq6NQs-V7faS%252F-MkdGVZHNVs_7DXooyJA%252Fgitlab-
+plugin-
+header.jpg%3Falt%3Dmedia%26token%3D8473ec29-d8e7-4c89-b437-12740e205265&width=768&dpr=4&quality=100&sign=548e4ce&sv=2)
 
 ##
 
@@ -518,7 +486,9 @@ utilize this integration, you will need:
 
   * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
 
-    *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
     * The GitLab integration accepts JSON and Base64 format configurations
 
@@ -696,26 +666,53 @@ Copy
 
 Replace `XXX` in the example above with a record UID.
 
-See the  for instructions on creating an Application
+[PreviousGitHub Actions](/en/keeperpam/secrets-manager/integrations/github-
+actions)[NextHashicorp Vault](/en/keeperpam/secrets-
+manager/integrations/hashicorp-vault)
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
+Last updated 3 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FUdGWGw0HPCgjF3kRVs77%252Fimage.png%3Falt%3Dmedia%26token%3D2a244b08-0dff-4f95-9a59-8dc72927085c&width=768&dpr=4&quality=100&sign=bfe28d34&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FMoIVhziuwjV7UcqTqqmk%252Fimage.png%3Falt%3Dmedia%26token%3D3668afc8-81e5-4825-aa44-e76f23e7d5ee&width=768&dpr=4&quality=100&sign=ec2a95cc&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYhpG7ahqgd8iL1Gqltkw%252Fimage.png%3Falt%3Dmedia%26token%3D0f3c3393-4db1-4a8c-a10c-c7bb6b6a6a10&width=768&dpr=4&quality=100&sign=b2937de4&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG6FEOq6NQs-V7faS%252F-MkdGVZHNVs_7DXooyJA%252Fgitlab-
-plugin-
-header.jpg%3Falt%3Dmedia%26token%3D8473ec29-d8e7-4c89-b437-12740e205265&width=768&dpr=4&quality=100&sign=548e4ce&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FMoIVhziuwjV7UcqTqqmk%252Fimage.png%3Falt%3Dmedia%26token%3D3668afc8-81e5-4825-aa44-e76f23e7d5ee&width=768&dpr=4&quality=100&sign=ec2a95cc&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FUdGWGw0HPCgjF3kRVs77%252Fimage.png%3Falt%3Dmedia%26token%3D2a244b08-0dff-4f95-9a59-8dc72927085c&width=768&dpr=4&quality=100&sign=bfe28d34&sv=2)
 

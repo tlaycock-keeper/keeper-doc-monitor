@@ -503,14 +503,10 @@ Was this helpful?
 
 Overview
 
-Kubernetes [External Secrets Operator](https://charts.external-secrets.io)
-injects secrets into Kubernetes by synchronizing them from various external
-APIs. This guide primarily focuses on the setup process for External Secrets,
-facilitating the synchronization of secrets from your Keeper Vault into
-Kubernetes.
-
-The External Operator documentation can be found [at this
-link](https://external-secrets.io/latest/provider/keeper-security/).
+Kubernetes  injects secrets into Kubernetes by synchronizing them from various
+external APIs. This guide primarily focuses on the setup process for External
+Secrets, facilitating the synchronization of secrets from your Keeper Vault
+into Kubernetes.
 
 ##
 
@@ -526,23 +522,15 @@ Prerequisites
 
 Before proceeding with the setup, ensure you have the following:
 
-  * Keeper Secrets Manager (KSM) access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
-
-    * Secrets Manager add-on enabled for your Keeper account
+  *     * Secrets Manager add-on enabled for your Keeper account
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+  *     *     * Make sure you add the proper permissions to your device in order to be able to read and write secrets
 
-    *     * Make sure you add the proper permissions to your device in order to be able to read and write secrets
+  *   * The following commands installed:
 
-  * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
-
-  * The following commands installed:
-
-    * [`helm`](https://helm.sh/) \- package manager for Kubernetes
-
-    * [`kubectl`](https://kubernetes.io/docs/reference/kubectl/) \- command line tool for Kubernetes 
+    *     * 
 
 ##
 
@@ -568,13 +556,6 @@ Copy
 ###
 
 Create Kubernetes Secret to store Base64 KSM Config
-
-After creating a [Secrets Manager
-Configuration](https://docs.keeper.io/secrets-manager/secrets-
-manager/about/secrets-manager-configuration) for your device, you will have a
-Base64 JSON string that contains connection tokens, encryption keys,
-identifiers and domain information used to authenticate and decrypt data from
-the Keeper Secrets Manager APIs.
 
 The Base64 JSON config string will be set by External Secrets to authenticate
 against Keeper Security and defined in a regular Kubernetes Secret.
@@ -656,13 +637,6 @@ Create ExternalSecret
 
 Next, you need to create your ExternalSecret.
 
-The following code snippet will create your External Secret and store the
-values of the login & password field for the specified record into the
-Kubernetes Secret. These fields are defined in the `target.template.data`
-section and refreshed every 30 seconds. For a full list of supported fields,
-visit this [page](https://docs.keeper.io/secrets-manager/secrets-
-manager/about/field-record-types).
-
 Copy
 
     
@@ -699,11 +673,6 @@ Copy
 In the above code snippet, replace "[RECORD UID]" with the UID of your desired
 record
 
-For complex [types](https://docs.keeper.io/secrets-manager/secrets-
-manager/about/field-record-types), like `name`, `phone`, `bankAccount`, which
-does not match with a single string value, external secrets will return the
-complete JSON string. Use the JSON template functions to decode.
-
 **Note:** Lines 2-27 in**** the above code snippet can be stored in a YAML
 file and applied with the command `kubectl apply`. For example, you can store
 lines 2-27 in `externalsecret.yaml` and execute the following:
@@ -724,9 +693,7 @@ Behavior
 
     * `remoteRef.property` is equated to one of the following options:
 
-      * Fields: [Record's field's Type](https://docs.keeper.io/secrets-manager/secrets-manager/about/field-record-types)
-
-      * CustomFields: Record's field's Label
+      *       * CustomFields: Record's field's Label
 
       * Files: Record's file's Name
 
@@ -840,14 +807,6 @@ Limitations
 
 Verifying Setup
 
-After setting up your [Kubernetes Secret](/en/keeperpam/secrets-
-manager/integrations/kubernetes-external-secrets-operator#create-kubernetes-
-secret-to-store-base64-ksm-config), [SecretStore](/en/keeperpam/secrets-
-manager/integrations/kubernetes-external-secrets-operator#create-secretstore),
-and [ExternalSecret](/en/keeperpam/secrets-manager/integrations/kubernetes-
-external-secrets-operator#create-externalsecret), you can extract secrets with
-the command `kubectl get secrets`
-
 In the above code snippets, the name of the secret is my-external-secrets-
 values and we store the following record values:
 
@@ -902,10 +861,79 @@ Remember to replace all placeholders in the command snippets with your
 specific information, and don't hesitate to refer back to this guide anytime
 you need to set up or manage your External Secrets in Kubernetes.
 
+The External Operator documentation can be found .
+
+Keeper Secrets Manager (KSM) access (See the  for more details)
+
+A Keeper  with secrets shared to it
+
 See the  for instructions on creating an Application
+
+An initialized Keeper
+
+\- package manager for Kubernetes
+
+\- command line tool for Kubernetes
+
+After creating a  for your device, you will have a Base64 JSON string that
+contains connection tokens, encryption keys, identifiers and domain
+information used to authenticate and decrypt data from the Keeper Secrets
+Manager APIs.
+
+The following code snippet will create your External Secret and store the
+values of the login & password field for the specified record into the
+Kubernetes Secret. These fields are defined in the `target.template.data`
+section and refreshed every 30 seconds. For a full list of supported fields,
+visit this .
+
+For complex , like `name`, `phone`, `bankAccount`, which does not match with a
+single string value, external secrets will return the complete JSON string.
+Use the JSON template functions to decode.
+
+Fields:
+
+After setting up your , , and , you can extract secrets with the command
+`kubectl get secrets`
+
+[at this link](https://external-secrets.io/latest/provider/keeper-security/)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+[Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration)
+
+[`helm`](https://helm.sh/)
+
+[`kubectl`](https://kubernetes.io/docs/reference/kubectl/)
+
+[Secrets Manager Configuration](https://docs.keeper.io/secrets-
+manager/secrets-manager/about/secrets-manager-configuration)
+
+[page](https://docs.keeper.io/secrets-manager/secrets-manager/about/field-
+record-types)
+
+[types](https://docs.keeper.io/secrets-manager/secrets-manager/about/field-
+record-types)
+
+[Record's field's Type](https://docs.keeper.io/secrets-manager/secrets-
+manager/about/field-record-types)
+
+[External Secrets Operator](https://charts.external-secrets.io)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
+
+[Kubernetes Secret](/en/keeperpam/secrets-manager/integrations/kubernetes-
+external-secrets-operator#create-kubernetes-secret-to-store-base64-ksm-config)
+
+[SecretStore](/en/keeperpam/secrets-manager/integrations/kubernetes-external-
+secrets-operator#create-secretstore)
+
+[ExternalSecret](/en/keeperpam/secrets-manager/integrations/kubernetes-
+external-secrets-operator#create-externalsecret)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

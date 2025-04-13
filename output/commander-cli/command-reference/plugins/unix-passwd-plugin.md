@@ -426,6 +426,35 @@ reference/plugins/unix-passwd-plugin?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Prerequisites
+  * Prepare a Record for Rotation
+  * Create a Record for Rotation
+  * Set the Login Name
+  * Rotate
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-Mf4nZxS1QdV2hHg4V51&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
+
+# Unix Passwd Plugin
+
+Rotate Unix passwords with Commander
+
+[PreviousSSH Plugin](/en/keeperpam/commander-cli/command-
+reference/plugins/ssh-plugin)[NextWindows Plugin](/en/keeperpam/commander-
+cli/command-reference/plugins/windows-plugin)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -456,40 +485,13 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-  * Prerequisites
-  * Prepare a Record for Rotation
-  * Create a Record for Rotation
-  * Set the Login Name
-  * Rotate
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-Mf4nZxS1QdV2hHg4V51&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
-
-# Unix Passwd Plugin
-
-Rotate Unix passwords with Commander
-
-[PreviousSSH Plugin](/en/keeperpam/commander-cli/command-
-reference/plugins/ssh-plugin)[NextWindows Plugin](/en/keeperpam/commander-
-cli/command-reference/plugins/windows-plugin)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 Keeper has also launched a zero-trust Password Rotation feature with
 KeeperPAM. This new capability is recommended for most password rotation use
 cases. The Documentation is linked below:
 
-  *   * Commander 
+  * [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-rotation)
+
+  * Commander [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
 
 This plugin allows rotating a local user's password using the Unix `passwd`
 command.
@@ -520,7 +522,9 @@ Rotation supports legacy and typed records. If using typed record, a 'Login'
 type field is required. Additional fields may be added depending on the
 rotation type as well. See the instructions below.
 
-See the section for more information on legacy vs typed records
+See the [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-
+commander-cli#typed-vs-untyped-records-v3-vs-v2)section for more information
+on legacy vs typed records
 
 ###
 
@@ -582,15 +586,6 @@ Output
 
 After rotation is completed, the new password will be stored in the `Password`
 field of the record
-
-[Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
-rotation)
-
-[KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
-commands)
-
-[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
-cli#typed-vs-untyped-records-v3-vs-v2)
 
 Keeper Record setup for Unix passwd rotation
 

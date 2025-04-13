@@ -426,36 +426,6 @@ reference/keeperpam-commands?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview
@@ -480,22 +450,16 @@ PDF](/en/keeperpam/~gitbook/pdf?page=CNh269hY8C70Qg5Ga6Kv&only=yes&limit=100)
 Management of KeeperPAM functionality including Discovery, Rotation,
 Connections and Tunneling
 
-[PreviousSharing Commands](/en/keeperpam/commander-cli/command-
-reference/sharing-commands)[NextConnection Commands](/en/keeperpam/commander-
-cli/command-reference/connection-commands)
-
-Last updated 16 days ago
-
-Was this helpful?
-
 ##
 
 Overview
 
 KeeperPAM including discovery, password rotation, PAM Configuration and Keeper
 Gateway configuration can be controlled and managed through Commander using
-the `pam` command and sub-commands. These commands support the  and
-capabilities of Keeper Secrets Manager and KeeperPAM.
+the `pam` command and sub-commands. These commands support the [Password
+Rotation](/en/keeperpam/secrets-manager/password-rotation) and
+[Discovery](/en/keeperpam/privileged-access-manager/discovery) capabilities of
+Keeper Secrets Manager and KeeperPAM.
 
 ##
 
@@ -524,6 +488,10 @@ Copy
 
 **Sub-Command: gateway**
 
+**Detail:** View, create and remove Keeper Gateway services. To learn more
+about the Keeper Gateway [click here](/en/keeperpam/privileged-access-
+manager/getting-started/gateways).
+
 Copy
 
     
@@ -540,6 +508,10 @@ Copy
 ###
 
 **Sub-Command: config**
+
+**Detail:** View, create, edit and remove Keeper PAM Configurations. To learn
+more about PAM Configurations [click here](/en/keeperpam/privileged-access-
+manager/getting-started/pam-configuration).
 
 Copy
 
@@ -1170,18 +1142,41 @@ Copy
       --remove-tunneling-override-port, -rtop
                             Remove tunneling override port
 
-**Detail:** View, create and remove Keeper Gateway services. To learn more
-about the Keeper Gateway .
+[PreviousSharing Commands](/en/keeperpam/commander-cli/command-
+reference/sharing-commands)[NextConnection Commands](/en/keeperpam/commander-
+cli/command-reference/connection-commands)
 
-**Detail:** View, create, edit and remove Keeper PAM Configurations. To learn
-more about PAM Configurations .
+Last updated 17 days ago
 
-[Password Rotation](/en/keeperpam/secrets-manager/password-rotation)
+Was this helpful?
 
-[Discovery](/en/keeperpam/privileged-access-manager/discovery)
+#### Company
 
-[click here](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-[click here](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration)
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

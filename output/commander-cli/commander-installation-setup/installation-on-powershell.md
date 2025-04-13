@@ -530,10 +530,6 @@ Copy
 To run the PowerCommander module from the source, refer to the following
 GitHub Link:
 
-<https://github.com/Keeper-Security/keeper-sdk-
-dotnet/tree/master/PowerCommander>[](https://github.com/Keeper-
-Security/keeper-sdk-dotnet/tree/master/PowerCommander)
-
 ###
 
 Installation Troubleshooting
@@ -1133,6 +1129,10 @@ Copy
     
     
     PS> switch-to-mc "Company Name"
+
+<https://github.com/Keeper-Security/keeper-sdk-
+dotnet/tree/master/PowerCommander>[](https://github.com/Keeper-
+Security/keeper-sdk-dotnet/tree/master/PowerCommander)
 
 [![Logo](https://www.powershellgallery.com/favicon.ico)PowerCommander
 0.9.1nuget](https://www.powershellgallery.com/packages/PowerCommander/)

@@ -645,7 +645,7 @@ Copy
 manager/deployment)[NextManaging Requests](/en/keeperpam/endpoint-privilege-
 manager/managing-requests)
 
-Last updated 1 day ago
+Last updated 2 days ago
 
 Was this helpful?
 

@@ -507,17 +507,15 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FdhD6D9I1nwDLWy7tcyxP%252FMariaDB%2520Local%2520Network.jpg%3Falt%3Dmedia%26token%3Db5e88662-a274-4396-8726-d9a4828e3d64&width=768&dpr=4&quality=100&sign=4a1c1993&sv=2)
-
 ##
 
 Overview
 
 In this guide, you'll learn how to rotate Local MariaDB User and/or Admin
 accounts within your local network using Keeper Rotation. For a high-level
-overview on the rotation process in the local network, visit this .
+overview on the rotation process in the local network, visit this
+[page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/local-network#rotation-on-the-local-network).
 
 ##
 
@@ -660,6 +658,7 @@ Select the **PAM User** record(s) from Step 3, edit the record and open the
 Any user with `edit` rights to a **PAM User** record has the ability to setup
 rotation for that record.
 
-[page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/local-network#rotation-on-the-local-network)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FdhD6D9I1nwDLWy7tcyxP%252FMariaDB%2520Local%2520Network.jpg%3Falt%3Dmedia%26token%3Db5e88662-a274-4396-8726-d9a4828e3d64&width=768&dpr=4&quality=100&sign=4a1c1993&sv=2)
 

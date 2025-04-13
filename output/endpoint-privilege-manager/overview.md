@@ -450,7 +450,7 @@ Endpoint Privilege Manager is a Privileged Elevation and Delegation Management
 manager/references/preview-access)[NextSetup](/en/keeperpam/endpoint-
 privilege-manager/setup)
 
-Last updated 1 day ago
+Last updated 2 days ago
 
 Was this helpful?
 

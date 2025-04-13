@@ -426,46 +426,29 @@ reference/sharing-commands?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
+
+  * Commands
+  * Sharing Commands
+  * share-record command
+  * share-folder command
+  * record-permission command
+  * share Command
+  * external-shares-report command
+  * Bulk Record Permission Changes
+  * Bulk Record-Ownership Transfer
 
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-McBBUr2gfUfRJ9k_ufi&only=yes&limit=100)
 
-Last updated 29 days ago
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
 
-Was this helpful?
+# Sharing Commands
+
+Commands related to sharing records and shared folders
 
 ##
 
@@ -486,6 +469,20 @@ To get help on a particular command, run:
 ###
 
 **Sharing Commands**
+
+Command
+
+Explanation
+
+Grant or revoke user access to a record
+
+Change shared folder permissions
+
+Change record permissions of a folder
+
+Manage one-time shares
+
+Display or revoke shares to external users
 
 ###
 
@@ -526,6 +523,18 @@ domains with matching usernames if needed
 -f, --force skip confirmation prompts
 
 **Examples:**
+
+Copy
+
+    
+    
+    share-record memberships/Gym -e john.smith@gmail.com
+    sr g6rvo2-Uv-BC16ZM33CF3w -e john.smith@gmail.com --share
+    sr social/Twitter -e john.smith@gmail.com --action owner
+    sr --recursive -e john.smith@gmail.com "My Shared Folder" 
+    sr --expire-at "2050-01-01 00:00:01" -e john.smith@gmail.com memberships/Gym
+    sr --expire-in 3d -e john.smith@gmail.com social/Twitter
+    sr --contacts-only -e bob.dobb@wrongdomain.com 'Wifi Credentials'
 
   1. Share the "Gym" record in the "memberships" folder with user John Smith
 
@@ -598,6 +607,18 @@ that permission unless it is specifically revoked using `-a revoke`
 
 **Examples:**
 
+Copy
+
+    
+    
+    share-folder memberships -e Jane.Smith@gmail.com -p 
+    sf memberships -r memberships/gym -a revoke --can-share
+    sf jdrkYEaf03bG0ShCGlnKww -e DB_ADMINS -p
+    sf "Team Passwords" -e "Marketing Team" -a grant -o
+    sf * -e DB_ADMINS -p
+    sf -a remove -e Jane.Smith@gmail.com memberships
+    sf -e Jane.Smith@gmail.com --expire-in 5h memberships
+
   1. Share the "memberships" shared folder with user Jane.Smith@gmail.com. Allow the user to manage records
 
   2. Revoke "Can Share" permission from the "gym" record in the "memberships" shared folder
@@ -622,6 +643,13 @@ use the [*] symbol.
 
 For example, to set user defaults to "Can Manage Users & Records" and to set
 record defaults to "Can Edit & Share" on the Shared Folder based on a UID:
+
+Copy
+
+    
+    
+    sf --action=grant --email=* --manage-user --manage-records jdrkYEaf03bG0ShCGlnKww
+    sf --action=grant --record=* --can-share --can-edit jdrkYEaf03bG0ShCGlnKww
 
 Hint: You can also apply the same permissions used to set a shared folder's
 default settings (as in the examples above) to records/users currently
@@ -676,6 +704,14 @@ changing the permissions
 
 **Examples:**
 
+Copy
+
+    
+    
+    record-permission memberships --action grant --can-share
+    record-permission jdrkYEaf03bG0ShCGlnKww -a revoke -d -R
+    record-permission social -a grant -s --dry-run
+
   1. Grant sharing permission to all records in the "memberships" shared folder
 
   2. Revoke edit permission from all records in the folder with the given UID and all sub folders
@@ -689,6 +725,10 @@ share Command
 Requires Commander version 16.6.3+
 
 **Command:**`one-time-share`
+
+**Detail:** Create, list, or remove a one-time shares for a given record. For
+more information about one-time share [click
+here](https://docs.keeper.io/enterprise-guide/one-time-share).
 
 **Sub Commands:**
 
@@ -743,13 +783,42 @@ format: <NUMBER>[(mi)nutes|(h)ours|(d)ays] e.g. `1h` for 1 hour
 
 **List**
 
+Copy
+
+    
+    
+    My Vault> one-time-share list -R /
+    My Vault> ots list dIGd46nq2uE_q1fXlAQGkw --all
+    Record UID              Name         Share Link ID            Generated            Opened    Expires              Status
+    ----------------------  -----------  -----------------------  -------------------  --------  -------------------  ---------
+    dIGyf6nq2uE_q1fXlAQGkw  MyShare      vhSIl2fnjp5tTaE4w9DC...  2022-04-29 11:01:19            2022-04-29 12:01:19  Expired
+    dIGyf6nq2uE_q1fXlAQGkw  LwIdbnYa160  bOuAQzCoYL8XIcQpz2KU...  2022-04-29 15:38:27            2022-04-29 16:38:27  Generated
+
 **Create**
 
+Copy
+
+    
+    
+    My Vault> share create dIGyf6nq2uE_q1fXlAQGkw -e 1h
+           URL : https://keepersecurity.com/vault/share#s4iSKc7TP[...]
+
 **Remove**
+
+Copy
+
+    
+    
+    My Vault> share remove dIGyf6nq2uE_q1fXlAQGkw MyShare
+    One-time share "MyShare" is removed from record "dIGyf6nq2uE_q1fXlAQGkw"
 
 ###
 
 external-shares-report command
+
+The external-shares-report requires the [Compliance
+Reporting](https://docs.keeper.io/enterprise-guide/compliance-reports) add-on.
+This command is only available for Enterprise admin accounts.
 
 **Command:**`external-shares-report` or `esr`
 
@@ -773,6 +842,17 @@ omitted
 \--refresh-data, -r refresh local user and record data before running
 
 **Examples:**
+
+Copy
+
+    
+    
+    external-shares-report
+    external-shares-report -r
+    esr --output external_shares.json --format json
+    external-shares-report -a remove
+    esr -a remove -f
+    external-shares-report --share-type shared-folder
 
   1. Show records and shared-folders shared to users outside of the enterprise
 
@@ -897,140 +977,54 @@ command call to perform the desired action, like so:
 `**share-record --action owner --email john.smith@gmail.com --recursive --
 -FHdesR_GSERHUwBg4vTXw**`
 
-See the command for details on creating shared folders
-
-**Detail:** Create, list, or remove a one-time shares for a given record. For
-more information about one-time share .
-
-The external-shares-report requires the  add-on. This command is only
-available for Enterprise admin accounts.
-
-See previous  for details on how to do this. For this example, we'll be using
-the shared folder with UID `**-FHdesR_GSERHUwBg4vTXw**`
-
-Copy
-
-    
-    
-    share-record memberships/Gym -e john.smith@gmail.com
-    sr g6rvo2-Uv-BC16ZM33CF3w -e john.smith@gmail.com --share
-    sr social/Twitter -e john.smith@gmail.com --action owner
-    sr --recursive -e john.smith@gmail.com "My Shared Folder" 
-    sr --expire-at "2050-01-01 00:00:01" -e john.smith@gmail.com memberships/Gym
-    sr --expire-in 3d -e john.smith@gmail.com social/Twitter
-    sr --contacts-only -e bob.dobb@wrongdomain.com 'Wifi Credentials'
-
-Copy
-
-    
-    
-    share-folder memberships -e Jane.Smith@gmail.com -p 
-    sf memberships -r memberships/gym -a revoke --can-share
-    sf jdrkYEaf03bG0ShCGlnKww -e DB_ADMINS -p
-    sf "Team Passwords" -e "Marketing Team" -a grant -o
-    sf * -e DB_ADMINS -p
-    sf -a remove -e Jane.Smith@gmail.com memberships
-    sf -e Jane.Smith@gmail.com --expire-in 5h memberships
-
-Copy
-
-    
-    
-    sf --action=grant --email=* --manage-user --manage-records jdrkYEaf03bG0ShCGlnKww
-    sf --action=grant --record=* --can-share --can-edit jdrkYEaf03bG0ShCGlnKww
-
-Copy
-
-    
-    
-    record-permission memberships --action grant --can-share
-    record-permission jdrkYEaf03bG0ShCGlnKww -a revoke -d -R
-    record-permission social -a grant -s --dry-run
-
-Copy
-
-    
-    
-    My Vault> one-time-share list -R /
-    My Vault> ots list dIGd46nq2uE_q1fXlAQGkw --all
-    Record UID              Name         Share Link ID            Generated            Opened    Expires              Status
-    ----------------------  -----------  -----------------------  -------------------  --------  -------------------  ---------
-    dIGyf6nq2uE_q1fXlAQGkw  MyShare      vhSIl2fnjp5tTaE4w9DC...  2022-04-29 11:01:19            2022-04-29 12:01:19  Expired
-    dIGyf6nq2uE_q1fXlAQGkw  LwIdbnYa160  bOuAQzCoYL8XIcQpz2KU...  2022-04-29 15:38:27            2022-04-29 16:38:27  Generated
-
-Copy
-
-    
-    
-    My Vault> share create dIGyf6nq2uE_q1fXlAQGkw -e 1h
-           URL : https://keepersecurity.com/vault/share#s4iSKc7TP[...]
-
-Copy
-
-    
-    
-    My Vault> share remove dIGyf6nq2uE_q1fXlAQGkw MyShare
-    One-time share "MyShare" is removed from record "dIGyf6nq2uE_q1fXlAQGkw"
-
-Copy
-
-    
-    
-    external-shares-report
-    external-shares-report -r
-    esr --output external_shares.json --format json
-    external-shares-report -a remove
-    esr -a remove -f
-    external-shares-report --share-type shared-folder
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-
-# Sharing Commands
-
-Commands related to sharing records and shared folders
-
-[PreviousCreating Record Types](/en/keeperpam/commander-cli/command-
+[ PreviousCreating Record Types](/en/keeperpam/commander-cli/command-
 reference/record-commands/default-record-types)[NextKeeperPAM
 Commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
 
-  * Commands
-  * Sharing Commands
-  * share-record command
-  * share-folder command
-  * record-permission command
-  * share Command
-  * external-shares-report command
-  * Bulk Record Permission Changes
-  * Bulk Record-Ownership Transfer
+Last updated 1 month ago
 
-[click here](https://docs.keeper.io/enterprise-guide/one-time-share)
+Was this helpful?
 
-[Compliance Reporting](https://docs.keeper.io/enterprise-guide/compliance-
-reports)
+#### Company
 
-[mkdir ](/en/keeperpam/commander-cli/command-reference/record-commands#mkdir-
-command)
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-Command
+#### Support
 
-Explanation
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-Grant or revoke user access to a record
+#### Solutions
 
-Change shared folder permissions
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-Change record permissions of a folder
+#### Pricing
 
-Manage one-time shares
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
-Display or revoke shares to external users
+© 2025 Keeper Security, Inc.
 
 or `sr`
 
 or `sf`
 
 or `esr`
+
+See the command for details on creating shared folders
+
+See previous  for details on how to do this. For this example, we'll be using
+the shared folder with UID `**-FHdesR_GSERHUwBg4vTXw**`
 
 [example](/en/keeperpam/commander-cli/command-reference/sharing-
 commands#1.-identify-shared-folder-uid)
@@ -1050,13 +1044,8 @@ commands#share-command)
 [`external-shares-report`](/en/keeperpam/commander-cli/command-
 reference/sharing-commands#external-shares-report-command)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel0U6AJJFYFrnwhdyL%252Fimage.png%3Falt%3Dmedia%26token%3D14e6b9f2-53fe-4c82-9c99-d6b477732436&width=768&dpr=4&quality=100&sign=684ea3d&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel02MSVQayPfXmhqbT%252Fimage.png%3Falt%3Dmedia%26token%3D4813048e-99f3-4238-ab10-aacf9ce446d4&width=768&dpr=4&quality=100&sign=ecf067f8&sv=2)
+[mkdir ](/en/keeperpam/commander-cli/command-reference/record-commands#mkdir-
+command)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -1069,9 +1058,17 @@ files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mekzvg
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel0Z9xJp1m7dxf1H8C%252Fimage.png%3Falt%3Dmedia%26token%3D0c2a9f0e-5f49-4a4b-8fd1-235a3094af72&width=768&dpr=4&quality=100&sign=378b1d3d&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel02MSVQayPfXmhqbT%252Fimage.png%3Falt%3Dmedia%26token%3D4813048e-99f3-4238-ab10-aacf9ce446d4&width=768&dpr=4&quality=100&sign=ecf067f8&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-MekzeEjeziNtK3guRXA%252Fimage.png%3Falt%3Dmedia%26token%3D033f1c23-92c6-4f8c-a1f7-9415d9e96463&width=768&dpr=4&quality=100&sign=1f8bce6a&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel0Z9xJp1m7dxf1H8C%252Fimage.png%3Falt%3Dmedia%26token%3D0c2a9f0e-5f49-4a4b-8fd1-235a3094af72&width=768&dpr=4&quality=100&sign=378b1d3d&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel0U6AJJFYFrnwhdyL%252Fimage.png%3Falt%3Dmedia%26token%3D14e6b9f2-53fe-4c82-9c99-d6b477732436&width=768&dpr=4&quality=100&sign=684ea3d&sv=2)
 

@@ -648,21 +648,8 @@ environments and one for production. Inside each folder there are identically
 named records. These records have the same name, but different credentials
 stored in them.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FacMREGNSWvmYAUcmPMb4%252Fimage.png%3Falt%3Dmedia%26token%3D27723485-4ef6-4877-9263-7c1aad4a5fbf&width=768&dpr=4&quality=100&sign=5f8ebd47&sv=2)
-
 Each shared folder will be associated with a different Secrets Manager
 application.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOUqcK3KX7JJbPhxAYyVW%252Fimage.png%3Falt%3Dmedia%26token%3Db432dfc0-28e7-45e7-a4fc-4040c0b3c55f&width=768&dpr=4&quality=100&sign=86ce989b&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJeDMgxjkyrhxdqJe7Ys1%252Fimage.png%3Falt%3Dmedia%26token%3Df964ef4e-a644-42c8-b7cd-
-bb2c81403fba&width=768&dpr=4&quality=100&sign=c3b18829&sv=2)
 
 In the associated Secrets Manager integration, use notation to fetch the
 credentials. For example: `keeper://MySQL Creds/field/password` In
@@ -708,4 +695,17 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FacMREGNSWvmYAUcmPMb4%252Fimage.png%3Falt%3Dmedia%26token%3D27723485-4ef6-4877-9263-7c1aad4a5fbf&width=768&dpr=4&quality=100&sign=5f8ebd47&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOUqcK3KX7JJbPhxAYyVW%252Fimage.png%3Falt%3Dmedia%26token%3Db432dfc0-28e7-45e7-a4fc-4040c0b3c55f&width=768&dpr=4&quality=100&sign=86ce989b&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJeDMgxjkyrhxdqJe7Ys1%252Fimage.png%3Falt%3Dmedia%26token%3Df964ef4e-a644-42c8-b7cd-
+bb2c81403fba&width=768&dpr=4&quality=100&sign=c3b18829&sv=2)
 

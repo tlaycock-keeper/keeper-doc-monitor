@@ -457,7 +457,7 @@ manager/references/setting-up-sql-server)[NextInstalling sqlcmd on
 Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-
 on-linux)
 
-Last updated 1 month ago
+Last updated 2 months ago
 
 Was this helpful?
 

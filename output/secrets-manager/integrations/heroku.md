@@ -426,36 +426,6 @@ manager/integrations/heroku?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Features
@@ -486,6 +456,36 @@ Last updated 3 months ago
 
 Was this helpful?
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ##
 
 Features
@@ -494,7 +494,10 @@ Features
 
   * Copy files from the Keeper vault into your Heroku Apps
 
-  * Utilize other  features (such as record creation and TOTP codes) from Heroku
+  * Utilize other [Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library) features (such as record creation and TOTP codes) from Heroku
+
+For a complete list of Keeper Secrets Manager features see the [Overview
+](/en/keeperpam/secrets-manager/overview)
 
 ##
 
@@ -507,7 +510,13 @@ knowledge environment.
 
 The Keeper Secrets Manager SDK can be used with Heroku
 
-  *   *   *   * 
+  * [Python](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk)
+
+  * [GoLang](/en/keeperpam/secrets-manager/developer-sdk-library/golang-sdk)
+
+  * [Java](/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk)
+
+  * [Javascript](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-sdk)
 
 See the example project below to get an idea of the capabilities of Keeper
 Secrets Manager with Heroku
@@ -522,6 +531,9 @@ to send messages to a channel in Slack from a Heroku web application.
 ###
 
 Slack Setup
+
+The first step is getting a webhook token from your instance of Slack. Login
+into the Slack website and go to [Your Apps](https://api.slack.com/apps).
 
 Create a new app by clicking the **Create New App** button and selecting
 **From scratch** from the dialog box. At this point enter an **App Name** and
@@ -542,9 +554,19 @@ record.
 
 Keeper Vault setup
 
+In the Keeper Vault create a Login record to hold the Slack **Webhook URL** in
+the Shared Folder. The Shared Folder can be added used by an Application.
+Reference the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-
+guide) for more details.
+
 ###
 
 Heroku
+
+For this example, a [Heroku account](https://signup.heroku.com/dc) and Python
+3 are requiered. The next step is to install the Heroku CLI following their
+[instructions](https://devcenter.heroku.com/articles/getting-started-with-
+python#set-up).
 
 With the Heroku CLI installed an application can be created.
 
@@ -722,60 +744,24 @@ This will display a simple web site. Enter a message and click submit.
 
 The message should appear in the channel for the created Webhook.
 
-For a complete list of Keeper Secrets Manager features see the
-
-The first step is getting a webhook token from your instance of Slack. Login
-into the Slack website and go to .
-
-In the Keeper Vault create a Login record to hold the Slack **Webhook URL** in
-the Shared Folder. The Shared Folder can be added used by an Application.
-Reference the  for more details.
-
 Copy the **Webhook URL** into the **Website Address** field of the **Login**
 record and save. Once saved click on the information icon, , of the record to
 see the **Record UID**. You can copy a **Record UID** URL into the clipboard
 which will contain the actual **Record UID**. You only need that part of the
 URL.
 
-For this example, a  and Python 3 are requiered. The next step is to install
-the Heroku CLI following their .
-
 See the  for details on creating a Base64 configuration
-
-[Overview ](/en/keeperpam/secrets-manager/overview)
-
-[Python](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk)
-
-[GoLang](/en/keeperpam/secrets-manager/developer-sdk-library/golang-sdk)
-
-[Java](/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk)
-
-[Javascript](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-
-sdk)
-
-[Your Apps](https://api.slack.com/apps)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
-
-[Heroku account](https://signup.heroku.com/dc)
-
-[instructions](https://devcenter.heroku.com/articles/getting-started-with-
-python#set-up)
-
-[Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library)
 
 [Configuration documentation](/en/keeperpam/secrets-manager/about/secrets-
 manager-configuration#using-a-cli-tool)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FzPZ3aDlEBhivMIKCTiqh%252FScreen%2520Shot%25202022-01-11%2520at%252011.27.52%2520AM.png%3Falt%3Dmedia%26token%3Deabe9c30-2601-4e35-98b7-b70ea824ed48&width=768&dpr=4&quality=100&sign=871df91b&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRrRhkmhboqtzZuPC2MNe%252FScreen%2520Shot%25202022-01-11%2520at%252011.34.28%2520AM.png%3Falt%3Dmedia%26token%3Da8798656-46cd-4dfb-85a0-287ab1d9ce75&width=768&dpr=4&quality=100&sign=40059f7&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqzUUP3RgdpwwDlkkxwNa%252Fksm-
-header-
-Heroku.png%3Falt%3Dmedia%26token%3Df26aeadb-a920-4922-aa2c-6c3539dace96&width=768&dpr=4&quality=100&sign=c95917eb&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FzPZ3aDlEBhivMIKCTiqh%252FScreen%2520Shot%25202022-01-11%2520at%252011.27.52%2520AM.png%3Falt%3Dmedia%26token%3Deabe9c30-2601-4e35-98b7-b70ea824ed48&width=768&dpr=4&quality=100&sign=871df91b&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -788,11 +774,13 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FusY03w1uv
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRrRhkmhboqtzZuPC2MNe%252FScreen%2520Shot%25202022-01-11%2520at%252011.34.28%2520AM.png%3Falt%3Dmedia%26token%3Da8798656-46cd-4dfb-85a0-287ab1d9ce75&width=768&dpr=4&quality=100&sign=40059f7&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2Qskc5RL0GZeJE7YCDOU%252FScreen%2520Shot%25202022-01-11%2520at%252011.37.46%2520AM.png%3Falt%3Dmedia%26token%3Da91221b1-a463-4518-b282-4b450c00a3ff&width=768&dpr=4&quality=100&sign=bedcdd79&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2Qskc5RL0GZeJE7YCDOU%252FScreen%2520Shot%25202022-01-11%2520at%252011.37.46%2520AM.png%3Falt%3Dmedia%26token%3Da91221b1-a463-4518-b282-4b450c00a3ff&width=768&dpr=4&quality=100&sign=bedcdd79&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqzUUP3RgdpwwDlkkxwNa%252Fksm-
+header-
+Heroku.png%3Falt%3Dmedia%26token%3Df26aeadb-a920-4922-aa2c-6c3539dace96&width=768&dpr=4&quality=100&sign=c95917eb&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

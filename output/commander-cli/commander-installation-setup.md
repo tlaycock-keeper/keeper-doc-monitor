@@ -482,7 +482,7 @@ setup/developer-mode)
 Installation on Windows](/en/keeperpam/commander-cli/commander-installation-
 setup/installation-on-windows)
 
-Last updated 5 months ago
+Last updated 6 months ago
 
 Was this helpful?
 
