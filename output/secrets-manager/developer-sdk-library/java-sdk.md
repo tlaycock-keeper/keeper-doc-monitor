@@ -1531,7 +1531,7 @@ Prerequisites:
 
     *   * TOTP fields accept only URL generated outside of the KSM SDK
 
-  * 
+  * After record creation, you can upload file attachments using [uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk#upload-a-file)
 
 Create a RecordCreate Record in Sub-folderLogin Record ExampleCustom Type
 Example
@@ -2099,8 +2099,6 @@ documentation for a list of field types.
 
 See the  for expected field formats for each record type
 
-After record creation, you can upload file attachments using
-
 [Record Types](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
 
@@ -2109,7 +2107,4 @@ commands/default-record-types#field-types)
 
 [documentation](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
-
-[uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/java-
-sdk#upload-a-file)
 

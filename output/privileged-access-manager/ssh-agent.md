@@ -610,13 +610,7 @@ Limit SSH access to records
 
 Configuration of your Terminal
 
-In order to work with the local operating system (macOS and Windows), follow
-the [guide below](/en/keeperpam/privileged-access-manager/ssh-
-agent#configuring-your-terminal-for-keeper-ssh-agent) to enable SSH Agent for
-your desired terminal. An environment variable must be set to instruct your
-computer to use Keeper's SSH Agent.
-
-  * [SSH Agent Configuration](/en/keeperpam/privileged-access-manager/ssh-agent#configuration-of-your-terminal)
+  * 
 
 ##
 
@@ -631,13 +625,6 @@ unlocked.
 ##
 
 Using SSH Agent with Git
-
-The Keeper SSH Agent allows you to seamlessly authenticate into services like
-GitHub and securely sign Git commits. To help you get started, we've created a
-step-by-step guide on setting up [authentication with
-GitHub](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-
-git#github-authentication) and [signing Git commits](/en/keeperpam/privileged-
-access-manager/ssh-agent/integration-with-git#signing-commits) using Keeper.
 
   * [Integration with Git](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-git)
 
@@ -809,4 +796,24 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+In order to work with the local operating system (macOS and Windows), follow
+the  to enable SSH Agent for your desired terminal. An environment variable
+must be set to instruct your computer to use Keeper's SSH Agent.
+
+The Keeper SSH Agent allows you to seamlessly authenticate into services like
+GitHub and securely sign Git commits. To help you get started, we've created a
+step-by-step guide on setting up  and  using Keeper.
+
+[guide below](/en/keeperpam/privileged-access-manager/ssh-agent#configuring-
+your-terminal-for-keeper-ssh-agent)
+
+[SSH Agent Configuration](/en/keeperpam/privileged-access-manager/ssh-
+agent#configuration-of-your-terminal)
+
+[authentication with GitHub](/en/keeperpam/privileged-access-manager/ssh-
+agent/integration-with-git#github-authentication)
+
+[signing Git commits](/en/keeperpam/privileged-access-manager/ssh-
+agent/integration-with-git#signing-commits)
 

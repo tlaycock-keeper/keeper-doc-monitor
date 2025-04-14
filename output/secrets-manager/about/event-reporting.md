@@ -434,44 +434,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MerbOkoCVRpO3uCliua&only=yes&limit=100)
 
 Integration with the Keeper Advanced Reporting & Alerts Module
 
-[PreviousKeeper Notation](/en/keeperpam/secrets-manager/about/keeper-
-notation)[NextField/Record Types](/en/keeperpam/secrets-manager/about/field-
-record-types)
-
-Last updated 3 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 Keeper Secrets Manager generates several events in the Advanced Reporting &
 Alerts Module. These events are available for analysis in several places
 including:
@@ -482,7 +444,7 @@ including:
 
   * Webhooks such as Slack and Teams: <https://docs.keeper.io/enterprise-guide/webhooks>[](https://docs.keeper.io/enterprise-guide/webhooks)
 
-  * Commander  CLI command and  CLI command
+  * Commander [audit-report](/en/keeperpam/commander-cli/command-reference/reporting-commands#audit-report-command) CLI command and [audit-log](/en/keeperpam/commander-cli/command-reference/reporting-commands#audit-log-command) CLI command
 
 ##
 
@@ -582,9 +544,41 @@ For a list of all events, visit: <https://docs.keeper.io/enterprise-
 guide/event-reporting>[](https://docs.keeper.io/enterprise-guide/event-
 reporting)
 
-[audit-report](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#audit-report-command)
+[PreviousKeeper Notation](/en/keeperpam/secrets-manager/about/keeper-
+notation)[NextField/Record Types](/en/keeperpam/secrets-manager/about/field-
+record-types)
 
-[audit-log](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#audit-log-command)
+Last updated 3 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

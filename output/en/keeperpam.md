@@ -550,7 +550,7 @@ Next Steps
 
 [NextSetup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
 
-Last updated 2 days ago
+Last updated 3 days ago
 
 Was this helpful?
 

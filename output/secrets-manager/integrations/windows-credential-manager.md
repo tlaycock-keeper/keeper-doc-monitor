@@ -452,7 +452,7 @@ Store and Retrieve Secrets from the Windows Credential Manager
 manager/integrations/terraform)[NextXSOAR](/en/keeperpam/secrets-
 manager/integrations/xsoar)
 
-Last updated 23 days ago
+Last updated 24 days ago
 
 Was this helpful?
 
@@ -502,7 +502,15 @@ simply and natively.
 
 The code base for the Windows Credential Utility can be found here:
 
+[![Logo](https://github.com/fluidicon.png)GitHub - Keeper-Security/windows-
+credential-utility: A utility for natively interacting with Windows Credential
+ManagerGitHub](https://github.com/Keeper-Security/windows-credential-utility)
+
 The binary needed to use the above utility can be found here:
+
+[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/windows-
+credential-utilityGitHub](https://github.com/Keeper-Security/windows-
+credential-utility/releases)
 
 To use the Windows Credential Utility, you can either
 
@@ -579,14 +587,6 @@ Copy
     
     # Retrieve a secret
     wcu get APPNAME
-
-[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/windows-
-credential-utilityGitHub](https://github.com/Keeper-Security/windows-
-credential-utility/releases)
-
-[![Logo](https://github.com/fluidicon.png)GitHub - Keeper-Security/windows-
-credential-utility: A utility for natively interacting with Windows Credential
-ManagerGitHub](https://github.com/Keeper-Security/windows-credential-utility)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

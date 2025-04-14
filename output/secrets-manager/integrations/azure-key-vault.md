@@ -520,11 +520,7 @@ Prerequisites
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
-
-    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
-
-  * An Azure account with Key Vault, and the ability to create security principals
+  *     *   * An Azure account with Key Vault, and the ability to create security principals
 
 ##
 
@@ -688,6 +684,16 @@ values from your Keeper Vault to Azure Key Vault
 TIP: you can use `-m` as short hand for `--map`
 
 `ksm sync --type azure --credentials [UID] -m [...] -m [...]`
+
+A Keeper  with secrets shared to it
+
+See the  for instructions on creating an Application
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

@@ -453,7 +453,7 @@ Protect Secrets Manager connection details with AWS KMS
 secrets-manager)[NextAzure DevOps Extension](/en/keeperpam/secrets-
 manager/integrations/azure-devops-plugin)
 
-Last updated 3 days ago
+Last updated 4 days ago
 
 Was this helpful?
 

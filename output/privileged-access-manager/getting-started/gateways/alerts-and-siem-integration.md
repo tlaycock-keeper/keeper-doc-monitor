@@ -512,7 +512,7 @@ Features
 
   * Send alerts to email, SMS, Webhook, Slack or Microsoft Teams on any event trigger
 
-  * Run custom reports from the Keeper Admin Console or  CLI
+  * Run custom reports from the Keeper Admin Console or [Keeper Commander](/en/keeperpam/commander-cli/command-reference/reporting-commands#audit-report-command) CLI
 
 ###
 
@@ -565,9 +565,6 @@ x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJI6cxiJgIuhgFKkkKuYV%252FScreenshot%25202025-02-23%2520at%25207.43.17%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dccf0ad22-a732-430a-b206-5b7d36df3cb6&width=768&dpr=4&quality=100&sign=e80cc5c5&sv=2)
 
 Email Alert for Gateway Offline
-
-[Keeper Commander](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#audit-report-command)
 
 [Reporting, Alerts & SIEM integration](https://docs.keeper.io/en/enterprise-
 guide/event-reporting)

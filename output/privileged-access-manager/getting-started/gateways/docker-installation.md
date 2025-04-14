@@ -462,7 +462,7 @@ started/gateways/one-time-access-token)[NextLinux
 Installation](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/linux-installation)
 
-Last updated 20 days ago
+Last updated 21 days ago
 
 Was this helpful?
 

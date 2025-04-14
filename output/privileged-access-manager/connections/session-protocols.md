@@ -441,84 +441,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=RdRqPGmh7YN6N1Xi8Hcz&only=yes&limit=100)
 Details on the available connection protocols in KeeperPAM for interactive
 privileged sessions
 
-##
-
-Supported Connection Protocols
-
-The following table lists all the supported connection protocols that can be
-configured in your Keeper Vault to establish zero-trust privilege sessions.
-Visit the associated link for each protocol for more details on configuration.
-
-Protocol
-
-PAM Record Type
-
-Definition
-
-[SSH](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/ssh-connections)
-
-PAM Machine
-
-Connecting to the target defined on the PAM Machine Record with the SSH
-connection protocol
-
-[RDP](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/rdp-connections)
-
-PAM Machine
-
-Connecting to the target defined on the PAM Machine Record with the RDP
-connection protocol
-
-[MySQL](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/mysql-connections)
-
-PAM Database
-
-Connecting to the target defined on the PAM Database Record with the MySQL
-connection protocol
-
-[SQL Server](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/sql-server-connections)
-
-PAM Database
-
-Connecting to the target defined on the PAM Database Record with the SQL
-Server connection protocol
-
-[PostgreSQL](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/postgresql-connections)
-
-PAM Database
-
-Connecting to the target defined on the PAM Database Record with the
-PostgreSQL connection protocol
-
-[VNC](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/vnc-connections)
-
-PAM Machine
-
-Connecting to the target defined on the PAM Machine Record with the VNC
-connection protocol
-
-[Telnet](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/telnet-connections)
-
-PAM Machine
-
-Connecting to the target defined on the PAM Machine Record with the Telnet
-connection protocol
-
-[RBI](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/rbi-connections)
-
-PAM Remote Browser
-
-Connecting to the target defined on the PAM Machine Record with http or https
-protocol in an isolated Chromium browser session
-
 [PreviousGetting Started](/en/keeperpam/privileged-access-
 manager/connections/getting-started)[NextSSH
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
@@ -557,4 +479,82 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+##
+
+Supported Connection Protocols
+
+The following table lists all the supported connection protocols that can be
+configured in your Keeper Vault to establish zero-trust privilege sessions.
+Visit the associated link for each protocol for more details on configuration.
+
+Protocol
+
+PAM Record Type
+
+Definition
+
+PAM Machine
+
+Connecting to the target defined on the PAM Machine Record with the SSH
+connection protocol
+
+PAM Machine
+
+Connecting to the target defined on the PAM Machine Record with the RDP
+connection protocol
+
+PAM Database
+
+Connecting to the target defined on the PAM Database Record with the MySQL
+connection protocol
+
+PAM Database
+
+Connecting to the target defined on the PAM Database Record with the SQL
+Server connection protocol
+
+PAM Database
+
+Connecting to the target defined on the PAM Database Record with the
+PostgreSQL connection protocol
+
+PAM Machine
+
+Connecting to the target defined on the PAM Machine Record with the VNC
+connection protocol
+
+PAM Machine
+
+Connecting to the target defined on the PAM Machine Record with the Telnet
+connection protocol
+
+PAM Remote Browser
+
+Connecting to the target defined on the PAM Machine Record with http or https
+protocol in an isolated Chromium browser session
+
+[SSH](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/ssh-connections)
+
+[RDP](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/rdp-connections)
+
+[MySQL](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/mysql-connections)
+
+[SQL Server](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/sql-server-connections)
+
+[PostgreSQL](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/postgresql-connections)
+
+[VNC](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/vnc-connections)
+
+[Telnet](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/telnet-connections)
+
+[RBI](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/rbi-connections)
 

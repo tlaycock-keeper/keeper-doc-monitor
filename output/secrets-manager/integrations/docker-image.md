@@ -519,11 +519,13 @@ order to utilize this integration, you will need:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * A [One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
+  *     * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * A [One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
 
   * The[ Keeper Secrets Manager (KSM) CLI Tool](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
 
-    * 
+    * See instructions on setting up the KSM CLI [here](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface#initialize-the-client-device)
 
 ##
 
@@ -544,6 +546,11 @@ supports the ability to pass secrets in via a mounted file system. As a simple
 example demonstrating this capability, we will be creating a user account in
 the destination image with a username and password from Keeper Secrets
 Manager.
+
+**Step 1:** Set Environmental Variables with Keeper notation for the secrets
+that are needed. For more notation examples [click
+here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/exec-command#notation).
 
 Copy
 
@@ -595,6 +602,11 @@ Example 2: Build an Image with Secrets using Build Arguments
 Similar to example 1, you can pass in secrets via the `--build-arg`. This
 example will also demonstrate the ability of using secrets in a Docker build
 process.
+
+**Step 1:** Set Environmental Variables with Keeper notation for the secrets
+that are needed. For more notation examples [click
+here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/exec-command#notation).
 
 Copy
 
@@ -812,30 +824,8 @@ Slack or email sm@keepersecurity.com.
 
 A Keeper  with secrets shared to it
 
-See the  for instructions on creating an Application
-
-See instructions on setting up the KSM CLI
-
-**Step 1:** Set Environmental Variables with Keeper notation for the secrets
-that are needed. For more notation examples .
-
-**Step 1:** Set Environmental Variables with Keeper notation for the secrets
-that are needed. For more notation examples .
-
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
-
-[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/exec-command#notation)
-
-[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/exec-command#notation)
-
-[here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface#initialize-the-client-device)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 
 Create Record with Secret File Attachments
 

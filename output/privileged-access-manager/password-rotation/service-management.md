@@ -447,45 +447,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=S62bTbKdjo5TP4f6m4aE&only=yes&limit=100)
 
 Managing the credentials of Windows services and scheduled tasks
 
-[PreviousCisco Meraki](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/network-devices/cisco-meraki)[NextPost-Rotation
-Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-
-rotation-scripts)
-
-Last updated 1 month ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 Overview
@@ -498,6 +459,12 @@ Gateway will update the credentials for all services and scheduled tasks on
 the associated PAM Machine, and restart the services. One **PAM User** record
 can be associated to any number of **PAM Machine** records, allowing you to
 update the services and scheduled tasks across a fleet of servers.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8TUKk4dbcuvSLVXqSsT2%252FScreenshot%25202025-02-09%2520at%252012.37.11%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dec17d88c-4429-4311-8496-48e8afb64416&width=768&dpr=4&quality=100&sign=86191639&sv=2)
+
+Windows Service Management
 
 ##
 
@@ -589,6 +556,12 @@ The PAM Machine and PAM User UIDs can be found in Commander by using the `ls
 
 The UIDs can also be found in the Keeper Vault "Record Information" screen:
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlNtf78QhSwXyeeefxEaE%252FScreenshot%25202025-02-09%2520at%25201.34.38%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D72ecb18a-9521-432a-8222-10aba8548023&width=768&dpr=4&quality=100&sign=54a70ed3&sv=2)
+
+Find the Record UID
+
 ####
 
 Services Management Commands
@@ -664,6 +637,12 @@ Triggering the service update
 To perform a password rotation of a PAM User account, click on the Rotate
 button from the vault user interface.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHP9WTgunipFrYgFLp0py%252FScreenshot%25202025-02-09%2520at%25201.43.19%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D5d2ce1b2-67a2-4d19-8080-cfa1d50c23c1&width=768&dpr=4&quality=100&sign=77f488ce&sv=2)
+
+Rotate the Windows Credential
+
 To perform the rotation from Commander, run `pam action rotate` :
 
 Copy
@@ -711,21 +690,42 @@ the following:
 
   * Ensure that you are using a PAM Machine record to manage services and scheduled tasks.
 
-Windows Service Management
+[PreviousCisco Meraki](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/network-devices/cisco-meraki)[NextPost-Rotation
+Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-
+rotation-scripts)
 
-Find the Record UID
+Last updated 1 month ago
 
-Rotate the Windows Credential
+Was this helpful?
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8TUKk4dbcuvSLVXqSsT2%252FScreenshot%25202025-02-09%2520at%252012.37.11%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dec17d88c-4429-4311-8496-48e8afb64416&width=768&dpr=4&quality=100&sign=86191639&sv=2)
+#### Company
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlNtf78QhSwXyeeefxEaE%252FScreenshot%25202025-02-09%2520at%25201.34.38%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D72ecb18a-9521-432a-8222-10aba8548023&width=768&dpr=4&quality=100&sign=54a70ed3&sv=2)
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHP9WTgunipFrYgFLp0py%252FScreenshot%25202025-02-09%2520at%25201.43.19%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D5d2ce1b2-67a2-4d19-8080-cfa1d50c23c1&width=768&dpr=4&quality=100&sign=77f488ce&sv=2)
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

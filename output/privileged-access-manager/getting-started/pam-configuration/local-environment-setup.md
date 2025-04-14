@@ -517,9 +517,6 @@ Gateway (Required)
 
 The configured gateway
 
-See [docs](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-for more info
-
 Application Folder (Required)
 
 The shared folder where the PAM Configuration data will be stored
@@ -531,9 +528,6 @@ PAM Settings (Required)
 
 List of Zero-Trust KeeperPAM features that should be enabled
 
-See [this section](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration/local-environment-setup#pam-features) for more info
-
 Default Rotation Schedule
 
 Specify frequency of Rotation
@@ -543,9 +537,6 @@ Ex: `Daily`
 Port Mapping
 
 Define alternative default ports
-
-Ex: `3307=mysql `See [port mapping](/en/keeperpam/privileged-access-
-manager/references/port-mapping) docs
 
 For Discovery, the following fields are required, otherwise they are optional:
 
@@ -566,9 +557,6 @@ Ex: `My Network`
 Network CIDR
 
 Subnet of the IP address
-
-Ex: `192.168.0.15/24` Refer to [this
-](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)for more info
 
 ###
 
@@ -630,7 +618,7 @@ manager/getting-started/pam-configuration/azure-environment-setup)[NextPAM
 Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 
@@ -663,4 +651,22 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+See  for more info
+
+See  for more info
+
+Ex: `3307=mysql `See  docs
+
+Ex: `192.168.0.15/24` Refer to for more info
+
+[docs](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+[port mapping](/en/keeperpam/privileged-access-manager/references/port-
+mapping)
+
+[this ](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
+
+[this section](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration/local-environment-setup#pam-features)
 

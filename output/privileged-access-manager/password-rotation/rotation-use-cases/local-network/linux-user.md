@@ -498,10 +498,6 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTGfUZqdne8CG2AAaaaXH%252FLinux%2520User.jpg%3Falt%3Dmedia%26token%3Df2855b88-826b-490d-b7b7-9041d5946c1c&width=768&dpr=4&quality=100&sign=3f02e86d&sv=2)
-
 ##
 
 Overview
@@ -509,7 +505,9 @@ Overview
 In this guide, you'll learn how to rotate Linux user accounts within your
 local network using Keeper Rotation, including both password-based and SSH
 Key-based credentials. For a high-level overview on the rotation process in
-the local network, visit this .
+the local network, visit this [page](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/local-network#rotation-on-the-
+local-network).
 
 ##
 
@@ -517,7 +515,11 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+  * Keeper Secrets Manager is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
+
+  * Keeper Rotation is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
+
+  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
 
   * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is able to communicate via [SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh) to your Linux Machine(s)
 
@@ -649,19 +651,6 @@ Select the **PAM User** record(s) from Step 3, edit the record and open the
 Any user with `edit` rights to a **PAM User** record has the ability to setup
 rotation for that record.
 
-Keeper Secrets Manager is enabled for your
-
-Keeper Rotation is enabled for your
-
-[page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/local-network#rotation-on-the-local-network)
-
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
-
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
-
 ##
 
 SSH Key Rotation Notes
@@ -718,4 +707,8 @@ exists. If the value is FALSE, the private key will not be rotated.
 
 For Linux user rotations, password-encrypted PEM files are not currently
 supported.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTGfUZqdne8CG2AAaaaXH%252FLinux%2520User.jpg%3Falt%3Dmedia%26token%3Df2855b88-826b-490d-b7b7-9041d5946c1c&width=768&dpr=4&quality=100&sign=3f02e86d&sv=2)
 

@@ -542,7 +542,7 @@ command) command.
 manager/references/importing-pam-records)[NextCommander
 SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
 
-Last updated 9 months ago
+Last updated 10 months ago
 
 Was this helpful?
 

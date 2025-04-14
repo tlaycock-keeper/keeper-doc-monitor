@@ -499,6 +499,11 @@ Copy
 
 Automating Sync
 
+Commander can be automated in a number of ways. See the [Batch Mode
+documentation](/en/keeperpam/commander-cli/commander-installation-
+setup/logging-in#executing-commands-with-persistent-login) for more
+information. This section will cover an example of automating the SFTP sync.
+
 ###
 
 Run Recurring SFTP Sync
@@ -537,6 +542,10 @@ Once configured, run Commander with the edited configuration file to start the
 automation. This can be done from the command line/terminal.
 
 `$> keeper shell --config "/sync.conf"`
+
+Note that there may be additional fields in your configuration file. See the
+[documentation ](/en/keeperpam/commander-cli/commander-installation-
+setup/logging-in#commander-configuration-file)for more information.
 
 Commander will continue to run while it waits for the next command run. If
 Commander is terminated, or the machine is turned off, Commander will need to
@@ -580,16 +589,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-Commander can be automated in a number of ways. See the  for more information.
-This section will cover an example of automating the SFTP sync.
-
-Note that there may be additional fields in your configuration file. See the
-for more information.
-
-[Batch Mode documentation](/en/keeperpam/commander-cli/commander-installation-
-setup/logging-in#executing-commands-with-persistent-login)
-
-[documentation ](/en/keeperpam/commander-cli/commander-installation-
-setup/logging-in#commander-configuration-file)
 

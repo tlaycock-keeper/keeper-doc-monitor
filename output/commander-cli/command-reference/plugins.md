@@ -424,6 +424,35 @@ reference/plugins?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Password Rotation
+  * Typed Records
+  * Untyped Records
+  * Supported Plugins
+  * Github Location
+
+Was this helpful?
+
+[Export as PDF](/en/keeperpam/~gitbook/pdf?page=-MelT9-hmTj4Efk6X--
+u&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+
+# Password Rotation
+
+Rotate passwords on any remote system using Keeper Commander plugins
+
+[PreviousMiscellaneous Commands](/en/keeperpam/commander-cli/command-
+reference/misc-commands)[NextPassword Rotation
+Commands](/en/keeperpam/commander-cli/command-reference/plugins/password-
+rotation)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -453,35 +482,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Password Rotation
-  * Typed Records
-  * Untyped Records
-  * Supported Plugins
-  * Github Location
-
-Was this helpful?
-
-[Export as PDF](/en/keeperpam/~gitbook/pdf?page=-MelT9-hmTj4Efk6X--
-u&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-
-# Password Rotation
-
-Rotate passwords on any remote system using Keeper Commander plugins
-
-[PreviousMiscellaneous Commands](/en/keeperpam/commander-cli/command-
-reference/misc-commands)[NextPassword Rotation
-Commands](/en/keeperpam/commander-cli/command-reference/plugins/password-
-rotation)
-
-Last updated 2 months ago
-
-Was this helpful?
 
 Keeper has also launched a zero-trust Password Rotation feature with
 KeeperPAM. This new capability is recommended for most password rotation use

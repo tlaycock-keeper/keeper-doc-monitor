@@ -716,8 +716,18 @@ directing the user to install the Keeper Desktop application.
 
 Here's the link to the public / latest version:
 
+[![Logo](https://www.keepersecurity.com/assets/branding/android-
+icon-192x192.png)Download Keeper Password Manager for iOS, Android, Mac, PC
+and moreKeeper® Password Manager & Digital
+Vault](https://keepersecurity.com/download)
+
 To automatically deploy Keeper Desktop to your users through group policy,
 see:
+
+[![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
+files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Desktop
+ApplicationsEnterprise Guide](https://docs.keeper.io/enterprise-
+guide/deploying-keeper-to-end-users/desktop-application)
 
 ##
 
@@ -922,6 +932,11 @@ permission. This means that the record is only editable by the owner of the
 record, and any [share admins](https://docs.keeper.io/enterprise-guide/share-
 admin) that have been added to the folder.
 
+To change the permissions of records inside a shared folder (after the import
+is complete), you can use the [record-permission](/en/keeperpam/commander-
+cli/command-reference/sharing-commands#record-permission-command) command. For
+example:
+
 Copy
 
     
@@ -966,20 +981,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-To change the permissions of records inside a shared folder (after the import
-is complete), you can use the  command. For example:
-
-[![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
-files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Desktop
-ApplicationsEnterprise Guide](https://docs.keeper.io/enterprise-
-guide/deploying-keeper-to-end-users/desktop-application)
-
-[![Logo](https://www.keepersecurity.com/assets/branding/android-
-icon-192x192.png)Download Keeper Password Manager for iOS, Android, Mac, PC
-and moreKeeper® Password Manager & Digital
-Vault](https://keepersecurity.com/download)
-
-[record-permission](/en/keeperpam/commander-cli/command-reference/sharing-
-commands#record-permission-command)
 

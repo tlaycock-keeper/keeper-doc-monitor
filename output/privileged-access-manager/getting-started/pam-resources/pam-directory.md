@@ -449,44 +449,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=AvUEHA7Tb5C1wR6itR5U&only=yes&limit=100)
 KeeperPAM resource for managing directory services, either on-prem or in the
 cloud
 
-[PreviousExample: Microsoft SQL Server Database](/en/keeperpam/privileged-
-access-manager/getting-started/pam-resources/pam-database/example-microsoft-
-sql-server-database)[NextPAM Remote Browser](/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-remote-browser)
-
-Last updated 2 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FaEHM1ja8afZHkaJRCpav%252FKeeperPAM%2520Directory.jpg%3Falt%3Dmedia%26token%3Db99c8c27-4852-4e17-a09f-94527b83370e&width=768&dpr=4&quality=100&sign=95893222&sv=2)
 
 ##
 
@@ -553,6 +518,13 @@ To create a PAM Directory:
     * Select "**Directory** " for the Target 
 
   * Click "**Next** " and complete all of the required information.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fbgi1mXTZeZNiLFj5n0yt%252FScreenshot%25202024-12-28%2520at%25207.15.08%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D496715e6-b203-4db3-b1df-
+bdc0b5f89d7d&width=768&dpr=4&quality=100&sign=2d69951e&sv=2)
+
+Creating a PAM Directory
 
 ##
 
@@ -636,6 +608,12 @@ KeeperPAM Connection and Tunnel settings and link a PAM User credential for
 performing rotations and connections. Tunnels do not require a linked
 credential.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fo90ZxGpSTinflyYmV0kq%252FScreenshot%25202025-01-14%2520at%25209.18.43%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Db0f52b45-5050-40d4-8c14-4cd89c755259&width=768&dpr=4&quality=100&sign=b7c7af55&sv=2)
+
+PAM Settings
+
 ###
 
 PAM Settings
@@ -668,9 +646,6 @@ Session Recording
 
 Options for recording sessions and typescripts
 
-See [session recording](/en/keeperpam/privileged-access-manager/session-
-recording-and-playback)
-
 Connection Parameters (multiple)
 
 Connection-specific protocol settings which can vary based on the protocol
@@ -678,6 +653,12 @@ type
 
 Depends on protocol. We recommend specifying the **Connection Port** at a
 minimum.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkmMyMNsM7zliUNYrl7Rc%252FScreenshot%25202025-01-14%2520at%25209.25.01%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D26d66869-50b0-4cdf-89d3-fc1b6c0d2fb0&width=768&dpr=4&quality=100&sign=da274de6&sv=2)
+
+PAM Settings
 
 Note: PAM User is only required to successfully configure connections and
 rotation, and not required for Tunnels.
@@ -697,32 +678,53 @@ rotation, and not required for Tunnels.
 The following screenshot is a PAM Directory Record with LDAPS rotation, RDP
 connections and LDAPS tunnels enabled:
 
-Creating a PAM Directory
-
-PAM Settings
-
-PAM Settings
-
-PAM Directory with Connection, Rotation and Tunnel Enabled
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FaEHM1ja8afZHkaJRCpav%252FKeeperPAM%2520Directory.jpg%3Falt%3Dmedia%26token%3Db99c8c27-4852-4e17-a09f-94527b83370e&width=768&dpr=4&quality=100&sign=95893222&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fbgi1mXTZeZNiLFj5n0yt%252FScreenshot%25202024-12-28%2520at%25207.15.08%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D496715e6-b203-4db3-b1df-
-bdc0b5f89d7d&width=768&dpr=4&quality=100&sign=2d69951e&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fo90ZxGpSTinflyYmV0kq%252FScreenshot%25202025-01-14%2520at%25209.18.43%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Db0f52b45-5050-40d4-8c14-4cd89c755259&width=768&dpr=4&quality=100&sign=b7c7af55&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkmMyMNsM7zliUNYrl7Rc%252FScreenshot%25202025-01-14%2520at%25209.25.01%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D26d66869-50b0-4cdf-89d3-fc1b6c0d2fb0&width=768&dpr=4&quality=100&sign=da274de6&sv=2)
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FN889gw5Jl0rhnS1MqRsI%252FScreenshot%25202025-01-14%2520at%25209.15.20%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Df56979d9-6e19-4fc3-a1c6-15936bb6c512&width=768&dpr=4&quality=100&sign=3a9e809f&sv=2)
+
+PAM Directory with Connection, Rotation and Tunnel Enabled
+
+[PreviousExample: Microsoft SQL Server Database](/en/keeperpam/privileged-
+access-manager/getting-started/pam-resources/pam-database/example-microsoft-
+sql-server-database)[NextPAM Remote Browser](/en/keeperpam/privileged-access-
+manager/getting-started/pam-resources/pam-remote-browser)
+
+Last updated 2 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+See
+
+[session recording](/en/keeperpam/privileged-access-manager/session-recording-
+and-playback)
 

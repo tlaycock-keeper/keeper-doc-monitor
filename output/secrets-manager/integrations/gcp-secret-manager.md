@@ -705,12 +705,12 @@ A Keeper  with secrets shared to it
 
 See the  for instructions on creating an Application
 
-[![Logo](https://www.gstatic.com/devrel-devsite/prod/v67cb8b0ddf4e3bae39406c7b2c88affae9b405bee7499568a4013f440189dfbf/developers/images/touchicon-180.png)Create access credentials | Google Workspace | Google DevelopersGoogle Developers](https://developers.google.com/workspace/guides/create-credentials#service-account)
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 [![Logo](https://www.gstatic.com/devrel-devsite/prod/v67cb8b0ddf4e3bae39406c7b2c88affae9b405bee7499568a4013f440189dfbf/cloud/images/favicons/onecloud/super_cloud.png)Access control with IAM | Secret Manager Documentation | Google CloudGoogle Cloud](https://cloud.google.com/secret-manager/docs/access-control)
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
+[![Logo](https://www.gstatic.com/devrel-devsite/prod/v67cb8b0ddf4e3bae39406c7b2c88affae9b405bee7499568a4013f440189dfbf/developers/images/touchicon-180.png)Create access credentials | Google Workspace | Google DevelopersGoogle Developers](https://developers.google.com/workspace/guides/create-credentials#service-account)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)

@@ -483,9 +483,7 @@ Keeper has also launched a zero-trust Password Rotation feature with
 KeeperPAM. This new capability is recommended for most password rotation use
 cases. The Documentation is linked below:
 
-  * [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-rotation)
-
-  * Commander [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
+  *   * Commander 
 
 You can automate password resets using Commander plugins, with a custom
 Commander configuration file
@@ -509,7 +507,15 @@ it on the commander interactive shell or view it on the Keeper Web Vault and
 Desktop App (as seen below).
 
 For more information on running Commander commands with a configuration file,
-see the [documentation](/en/keeperpam/commander-cli/commander-installation-
+see the
+
+[Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
+rotation)
+
+[KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
+commands)
+
+[documentation](/en/keeperpam/commander-cli/commander-installation-
 setup/logging-in#running-commands-from-the-configuration-file)
 
 Locate Record UID
