@@ -307,19 +307,21 @@ manager-command-line-interface/secret-command?fallback=true)
         * [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible/ansible-tower)
 
       * [AWS CLI Credential Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-process)
-      * [AWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
-      * [AWS KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+      * [AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+      * [AWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
       * [Azure DevOps Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
-      * [Azure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Sync](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
       * [Bitbucket Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
       * [Docker Image](/en/keeperpam/secrets-manager/integrations/docker-image)
       * [Docker Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
       * [Docker Writer Image](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-      * [Entrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
-      * [GCP Secret Manager](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Entrust HSM Encryption](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
       * [Git - Sign Commits with SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
       * [GitHub Actions](/en/keeperpam/secrets-manager/integrations/github-actions)
       * [GitLab](/en/keeperpam/secrets-manager/integrations/gitlab-plugin)
+      * [Google Cloud Secret Manager Sync](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Google Cloud Key Management Encryption](/en/keeperpam/secrets-manager/integrations/google-cloud-key-management-encryption)
       * [Hashicorp Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
       * [Heroku](/en/keeperpam/secrets-manager/integrations/heroku)
       * [Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
@@ -328,11 +330,11 @@ manager-command-line-interface/secret-command?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
-      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
+      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [Terraform Plugin](/en/keeperpam/secrets-manager/integrations/terraform)
 
         * [Terraform Registry](https://registry.terraform.io/providers/Keeper-Security/secretsmanager/latest/docs/data-sources/address)
@@ -543,6 +545,11 @@ optional parameters:
 
   * `-v, --show-value` print matching value instead of the record title when using JSON Path query.
 
+The **\--query** switch uses JSONPath, a query syntax based on
+XPath****[**https://tools.ietf.org/id/draft-goessner-dispatch-
+jsonpath-00.html**](https://tools.ietf.org/id/draft-goessner-dispatch-
+jsonpath-00.html)
+
 **Example 1:** Tabular format
 
 Copy
@@ -646,6 +653,11 @@ optional parameters:
 
 If your Record UID start with a dash ("-"), add "--" before to get the record
 `ksm secret get -- <RECORD UID> `
+
+The **\--query** switch uses JSONPath, a query syntax based on
+XPath****[**https://tools.ietf.org/id/draft-goessner-dispatch-
+jsonpath-00.html**](https://tools.ietf.org/id/draft-goessner-dispatch-
+jsonpath-00.html)
 
 **Example 1:** Returning a Secret to the console with tabular format
 
@@ -787,6 +799,14 @@ out. There may be additional text, which is in standard error.
 
 Editor
 
+The editor command will launch an editor application with a record with
+placeholder values. Replace the placeholder values or remove the value all
+together. The editor application can be set via [`ksm config
+editor`](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/config-command) or it will use the editor specified by the
+**EDITOR** environment variable. If the editor is not set, the CLI will
+attempt to find an installed editor.
+
 An editor with a UI can be set. For Windows and MacOS blocking may need to be
 enabled if the the editor instantly warns about placeholder still existing in
 the record template. This is because, without blocking, the CLI will attempt
@@ -795,6 +815,12 @@ to process the record before you are finished editing.
 On MacOS, blocking will wait until the application fully exits before
 processing the record data. This mean the application is closed and no longer
 in the dock, not that the editor window is closed.
+
+On Windows, blocking will wait until the process is no longer in the task
+list. If the application is launched via a .bat or .cmd file, the process name
+will be different from the application that was launch. To properly handle
+this use [`ksm config editor`](/en/keeperpam/secrets-manager/secrets-manager-
+command-line-interface/config-command) to set up the editor.
 
 If the editor doesn't block, and a message about template markers is shown,
 the file can be rechecked by entering **r**. This can be done when the edit of
@@ -1108,6 +1134,13 @@ Copy
 
 Update an existing field within an existing secret.
 
+Some field types are complex. This means the value contains arrays and/or
+dictionaries for the value. If you are using a field type that is complex, you
+will need to use the` --field-json` and `--custom-field-json` to set the
+values. The JSON structures can be found
+[here](https://docs.keeper.io/secrets-manager/commander-cli/using-
+commander/default-record-types).
+
 `ksm secret update --uid <RECORD UID>`
 
 Optional Parameters:
@@ -1373,6 +1406,10 @@ Copy
     $ ksm secret notation keeper://oxhtLx9qrQIzeSXBtvQj2Q/field/password
     H=cBcl(u6%Ouv]mXpkPU>u]C;P0>E%yrcML
 
+For more details about environmental variable substitution, see the [Exec
+Command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/exec-command).
+
 If your Record UID start with a dash ("-"), add "--" before the UID to get the
 field with notation `ksm secret notation -- <RECORD UID>/field/password`
 
@@ -1458,7 +1495,10 @@ Example:
 
  _*The UID in this example is not a real record UID_
 
-[ PreviousInit Command](/en/keeperpam/secrets-manager/secrets-manager-command-
+See the [Troubleshooting section](/en/keeperpam/secrets-
+manager/troubleshooting#record-uid-starts-with) for more details
+
+[PreviousInit Command](/en/keeperpam/secrets-manager/secrets-manager-command-
 line-interface/init-command)[NextFolder Command](/en/keeperpam/secrets-
 manager/secrets-manager-command-line-interface/folder-command)
 
@@ -1495,51 +1535,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-The **\--query** switch uses JSONPath, a query syntax based on XPath****
-
-The **\--query** switch uses JSONPath, a query syntax based on XPath****
-
-The editor command will launch an editor application with a record with
-placeholder values. Replace the placeholder values or remove the value all
-together. The editor application can be set via  or it will use the editor
-specified by the **EDITOR** environment variable. If the editor is not set,
-the CLI will attempt to find an installed editor.
-
-On Windows, blocking will wait until the process is no longer in the task
-list. If the application is launched via a .bat or .cmd file, the process name
-will be different from the application that was launch. To properly handle
-this use  to set up the editor.
-
-Some field types are complex. This means the value contains arrays and/or
-dictionaries for the value. If you are using a field type that is complex, you
-will need to use the` --field-json` and `--custom-field-json` to set the
-values. The JSON structures can be found .
-
-For more details about environmental variable substitution, see the .
-
-See the  for more details
-
-[**https://tools.ietf.org/id/draft-goessner-dispatch-
-jsonpath-00.html**](https://tools.ietf.org/id/draft-goessner-dispatch-
-jsonpath-00.html)
-
-[**https://tools.ietf.org/id/draft-goessner-dispatch-
-jsonpath-00.html**](https://tools.ietf.org/id/draft-goessner-dispatch-
-jsonpath-00.html)
-
-[`ksm config editor`](/en/keeperpam/secrets-manager/secrets-manager-command-
-line-interface/config-command)
-
-[`ksm config editor`](/en/keeperpam/secrets-manager/secrets-manager-command-
-line-interface/config-command)
-
-[here](https://docs.keeper.io/secrets-manager/commander-cli/using-
-commander/default-record-types)
-
-[Exec Command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/exec-command)
-
-[Troubleshooting section](/en/keeperpam/secrets-
-manager/troubleshooting#record-uid-starts-with)
 

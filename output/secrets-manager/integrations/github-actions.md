@@ -305,19 +305,21 @@ manager/integrations/github-actions?fallback=true)
         * [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible/ansible-tower)
 
       * [AWS CLI Credential Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-process)
-      * [AWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
-      * [AWS KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+      * [AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+      * [AWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
       * [Azure DevOps Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
-      * [Azure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Sync](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
       * [Bitbucket Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
       * [Docker Image](/en/keeperpam/secrets-manager/integrations/docker-image)
       * [Docker Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
       * [Docker Writer Image](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-      * [Entrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
-      * [GCP Secret Manager](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Entrust HSM Encryption](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
       * [Git - Sign Commits with SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
       * [GitHub Actions](/en/keeperpam/secrets-manager/integrations/github-actions)
       * [GitLab](/en/keeperpam/secrets-manager/integrations/gitlab-plugin)
+      * [Google Cloud Secret Manager Sync](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Google Cloud Key Management Encryption](/en/keeperpam/secrets-manager/integrations/google-cloud-key-management-encryption)
       * [Hashicorp Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
       * [Heroku](/en/keeperpam/secrets-manager/integrations/heroku)
       * [Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
@@ -326,11 +328,11 @@ manager/integrations/github-actions?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
-      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
+      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [Terraform Plugin](/en/keeperpam/secrets-manager/integrations/terraform)
 
         * [Terraform Registry](https://registry.terraform.io/providers/Keeper-Security/secretsmanager/latest/docs/data-sources/address)
@@ -426,6 +428,36 @@ manager/integrations/github-actions?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Features
@@ -460,36 +492,6 @@ Last updated 11 months ago
 
 Was this helpful?
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 Features
@@ -499,9 +501,6 @@ Features
   * Set secret credentials as build arguments or environment variables in Github Actions scripts
 
   * Copy secure files from the Keeper Vault
-
-For a complete list of Keeper Secrets Manager features see the [Overview
-](/en/keeperpam/secrets-manager/overview)
 
 ##
 
@@ -517,19 +516,11 @@ Prerequisites
 This page documents the Secrets Manager GitHub Actions integration. In order
 to utilize this integration, you will need:
 
-  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
-
-    * Secrets Manager addon enabled for your Keeper account
+  *     * Secrets Manager addon enabled for your Keeper account
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
-
-    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
-
-  * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
-
-    * The GitHub Actions integration accepts JSON and Base64 format configurations
+  *     *   *     * The GitHub Actions integration accepts JSON and Base64 format configurations
 
 ##
 
@@ -583,11 +574,9 @@ Copy
 
 You will need to provide two inputs to utilize the Github Actions plugin:
 
-  * A [Keeper Secrets Manager configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+  *     * Github Actions supports JSON type configuration
 
-    * Github Actions supports JSON type configuration
-
-  * [Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-notation) queries for secrets
+  * 
 
 ##
 
@@ -596,10 +585,6 @@ Inputs
 ###
 
 `keeper-secret-config`
-
-Secrets configuration. See[ documentation](/en/keeperpam/secrets-
-manager/about/secrets-manager-configuration) for more information about
-creating a configuration.
 
 JSON type configuration is supported.
 
@@ -637,9 +622,6 @@ Copy
       # Reference records by title - see Keeper Notation for full detail
       App1/field/password > PASSWORD1
       DB2/field/password > PASSWORD2
-
-The first part is the id of the secret using the [Keeper
-Notation](/en/keeperpam/secrets-manager/about/keeper-notation) format.
 
 The second part defines the destination of the secret in the GitHub runner.
 
@@ -681,8 +663,51 @@ else just like normal GitHub Secrets.
 
 Source Code
 
-Find the Keeper Secrets Manager Github Actions plugin source code in the[
-GitHub repository](https://github.com/Keeper-Security/ksm-action)
+For a complete list of Keeper Secrets Manager features see the
+
+Keeper Secrets Manager access (See the  for more details)
+
+A Keeper  with secrets shared to it
+
+See the  for instructions on creating an Application
+
+An initialized Keeper
+
+A
+
+queries for secrets
+
+Secrets configuration. See for more information about creating a
+configuration.
+
+The first part is the id of the secret using the  format.
+
+Find the Keeper Secrets Manager Github Actions plugin source code in the
+
+[Overview ](/en/keeperpam/secrets-manager/overview)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+[Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration)
+
+[Keeper Secrets Manager configuration](/en/keeperpam/secrets-
+manager/about/secrets-manager-configuration)
+
+[Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-notation)
+
+[ documentation](/en/keeperpam/secrets-manager/about/secrets-manager-
+configuration)
+
+[Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-notation)
+
+[ GitHub repository](https://github.com/Keeper-Security/ksm-action)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

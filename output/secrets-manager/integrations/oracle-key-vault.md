@@ -12,49 +12,49 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/command-reference/plugins/pspasswd-plugin?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)
+[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/oracle-key-
+vault?fallback=true)[Keeper Connection
+Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
+manager/integrations/oracle-key-vault?fallback=true)[User
+Guides](https://docs.keeper.io/en/user-guides/secrets-
+manager/integrations/oracle-key-vault?fallback=true)[Release
+Notes](https://docs.keeper.io/en/release-notes/secrets-
+manager/integrations/oracle-key-vault?fallback=true)[Enterprise
+Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
+manager/integrations/oracle-key-vault?fallback=true)[MSP
+Guide](https://docs.keeper.io/en/msp-guide/secrets-
+manager/integrations/oracle-key-vault?fallback=true)[SSO Connect
+Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
+manager/integrations/oracle-key-vault?fallback=true)[KeeperPAM and Secrets
+Manager](https://docs.keeper.io/en/keeperpam/secrets-
+manager/integrations/oracle-key-vault?fallback=true)[SSO Connect On-
+Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
+manager/integrations/oracle-key-vault?fallback=true)[Keeper
+Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
+manager/integrations/oracle-key-vault?fallback=true)
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/command-reference/plugins/pspasswd-plugin?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)
+[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/oracle-key-
+vault?fallback=true)[Keeper Connection
+Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
+manager/integrations/oracle-key-vault?fallback=true)[User
+Guides](https://docs.keeper.io/en/user-guides/secrets-
+manager/integrations/oracle-key-vault?fallback=true)[Release
+Notes](https://docs.keeper.io/en/release-notes/secrets-
+manager/integrations/oracle-key-vault?fallback=true)[Enterprise
+Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
+manager/integrations/oracle-key-vault?fallback=true)[MSP
+Guide](https://docs.keeper.io/en/msp-guide/secrets-
+manager/integrations/oracle-key-vault?fallback=true)[SSO Connect
+Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
+manager/integrations/oracle-key-vault?fallback=true)[KeeperPAM and Secrets
+Manager](https://docs.keeper.io/en/keeperpam/secrets-
+manager/integrations/oracle-key-vault?fallback=true)[SSO Connect On-
+Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
+manager/integrations/oracle-key-vault?fallback=true)[Keeper
+Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
+manager/integrations/oracle-key-vault?fallback=true)
 
   * [Overview](/en/keeperpam)
   * Privileged Access Manager
@@ -430,185 +430,665 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Features
   * Prerequisites
-  * Enabled Remote Service Management on each target computer
-  * Install pspasswd
-  * Prepare Record for Rotation
-  * Create a Record for Rotation
-  * Set the Login Name
-  * Rotate
+  * Setup
+  * 1\. Install Module
+  * 2\. Configure Oracle KV Connection
+  * 3\. Add Oracle Key Vault Storage to Your Code
+  * Using Oracle Key Vault Integration
+  * Additional Options
+  * Change Key
+  * Decrypt Config
 
 Was this helpful?
 
 [Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-Mf4DVYRWGfT0NCa2Mls&only=yes&limit=100)
+PDF](/en/keeperpam/~gitbook/pdf?page=5cG5iwNkVeQ0xhQzvy9l&only=yes&limit=100)
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
 
-# PSPasswd Plugin
+# Oracle Key Vault
 
-Rotate remote admin passwords with PSPasswd
+Protect Secrets Manager connection details with Oracle Key Vault
 
-Keeper has also launched a zero-trust Password Rotation feature with
-KeeperPAM. This new capability is recommended for most password rotation use
-cases. The Documentation is linked below:
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fk7JhuXGQGjiECfkHvQch%252Fksm-
+Oracle.jpg%3Falt%3Dmedia%26token%3D77d4c030-e9d0-4aae-929b-b1c8baf60aa9&width=768&dpr=4&quality=100&sign=32cdf619&sv=2)
 
-  * [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-rotation)
+Keeper Secrets Manager integrates with Oracle Key Vault in order to provide
+protection for Keeper Secrets Manager configuration files. With this
+integration, you can protect connection details on your machine while taking
+advantage of Keeper's zero-knowledge encryption of all your secret
+credentials.
 
-  * Commander [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
+##
 
-This plugin provides IT Admins with the ability to rotate the password of a
-remote system's administrative local password. The password is rotated using
-the widely used "pspasswd" utility and the change is synchronized to a
-specific Keeper record in your vault.
+Features
 
-The way this plugin is implemented requires that Commander and pspasswd is
-installed on the Domain Controller.
+  * Encrypt and Decrypt your Keeper Secrets Manager configuration files with Oracle Key Vault
 
-The instructions in this README assume that you are executing Commander
-scripts from the Domain Controller.
+  * Protect against unauthorized access to your Secrets Manager connections
+
+  * Requires only minor changes to code for immediate protection. Works with all Keeper Secrets Manager SDK functionality
 
 ##
 
 Prerequisites
 
-###
+JavaJavaScriptPython.NetGoLang
 
-Enabled Remote Service Management on each target computer
+  * Support the [Java/Kotlin Secrets Manager SDK.](https://docs.keeper.io/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk)
 
-Assuming all computers are domain-attached and reachable from the Domain
-Controller, ensure that "Remote Service Management" is allowed for inbound in
-Domain by enabling the relevant Firewall rule on all computers.
+  * Required Oracle packages: [oci-java-sdk-keymanagement](https://mvnrepository.com/artifact/com.oracle.oci.sdk/oci-java-sdk-keymanagement), [oci-java-sdk-common](https://mvnrepository.com/artifact/com.oracle.oci.sdk/oci-java-sdk-common) and [oci-java-sdk-common-httpclient-jersey](https://mvnrepository.com/artifact/com.oracle.oci.sdk/oci-java-sdk-common-httpclient-jersey).
 
-On each of the target computers, go to Windows Firewall rules -> Inbound Rules
--> and enabled the "Remote Service Management" rule.
+  * OCI Key needs `ENCRYPT` and `DECRYPT` [permissions](https://docs.oracle.com/en-us/iaas/Content/Identity/policyreference/keypolicyreference.htm#permissions).
 
-###
+  * Supports the [JavaScript Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-sdk)
 
-Install pspasswd
+  * Requires the [**oci-keymanagement**](https://www.npmjs.com/package/oci-keymanagement) package from OCI SDK.
 
-  * Download the [PSTools Package](https://docs.microsoft.com/en-us/sysinternals/downloads/pspasswd) from Microsoft
+  * OCI KMS Key needs `ENCRYPT` and `DECRYPT` [permissions](https://docs.oracle.com/en-us/iaas/Content/Identity/policyreference/keypolicyreference.htm#permissions).
 
-  * Extract the PSTools.zip folder to a location on your computer
+  * Supports the [Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk)
 
-  * Add this PSTools folder to your user or system environmental variable "PATH"
+  * Requires `oci` [package](https://pypi.org/project/oci/)
 
-(System Properties -> Advanced -> Environmental Variables)
+  * User credentials to be used will need to have key vault [permissions](https://docs.oracle.com/en-us/iaas/Content/Identity/policyreference/keypolicyreference.htm#permissions)
 
-Select PATH and then "Edit"
+  * Supports the [.Net Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/.net-sdk).
 
-On some systems, you have to append the location where you installed PSTools,
-e.g.:
+  * Requires [OCI.DotNetSDK.Keymanagement](https://www.nuget.org/packages/OCI.DotNetSDK.Keymanagement).
 
-;C:\Users\craig\PSTools
+  * Requires `Encrypt` and `Decrypt` [permissions](https://docs.oracle.com/en-us/iaas/Content/Identity/policyreference/keypolicyreference.htm#permissions).
 
-On newer systems, just click "New" then type in the full path to the install,
-e.g.: C:\Users\craig\PSTools
+  * Supports the [GoLang Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/golang-sdk)
 
-##
+  * Requires the [oci-keymanagement ](https://pkg.go.dev/github.com/oracle/oci-go-sdk/keymanagement)package from OCI SDK.
 
-Prepare Record for Rotation
-
-###
-
-Create a Record for Rotation
-
-Rotation supports legacy and typed records. If using typed record, a 'Login'
-type field is required. Additional fields may be added depending on the
-rotation type as well. See the instructions below.
-
-See the [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-
-commander-cli#typed-vs-untyped-records-v3-vs-v2)section for more information
-on legacy vs typed records
-
-###
-
-Set the Login Name
-
-**Populate the 'Login' field of the Keeper record with the login to use with
-this rotation.**
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqV0jzz2UhB6YKjWpjJnn%252Fimage.png%3Falt%3Dmedia%26token%3Dcb93de5c-e9fb-48d4-a890-1e6c9ba92162&width=768&dpr=4&quality=100&sign=6fa20915&sv=2)
-
-####
-
-Set the Host and Port of the record
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fn0wNe2SmR5gUWuLVuYjZ%252Fimage.png%3Falt%3Dmedia%26token%3D01a0489d-b380-4e59-b2ee-9cf70e275640&width=768&dpr=4&quality=100&sign=1dc8df65&sv=2)
-
-If using an untyped record, the host and port can be set to custom fields. See
-below.
-
-####
-
-Additional Rotation Settings
-
-The following values can customize rotation parameters. Add these options to a
-record as text fields and set the label to correspond to the parameter as
-shown in the table.
-
-Label
-
-Value
-
-Comment
-
-cmdr:plugin
-
-pspasswd
-
-(Optional) Tells Commander to use PSPasswd rotation. This should be either set
-to the record, or supplied to the rotation command
-
-cmdr:host
-
-Hostname of Computer or Computers where the local account exists. This can be
-set here if not set in the record's host field
-
-cmdr:rules
-
-# uppercase, # lowercase, # numeric, # special
-
-(e.g. 4,6,3,8)
-
-(Optional) Password generation rules
+  * OCI KMS Key needs `ENCRYPT` and `DECRYPT` permissions.
 
 ##
 
-Rotate
+Setup
 
-To rotate PSPasswd passwords, use the `rotate` command in Commander. Pass the
-command a record title or UID (or use `--match` with a regular expression to
-rotate several records at once)
+###
+
+1\. Install Module
+
+JavaJavaScriptPython.NetGoLang
+
+Setting up project using Gradle or Maven
+
+**Gradle**
 
 Copy
 
     
     
-    rotate "My Azure Credentials" --plugin pspasswd
+    repositories {
+      mavenCentral()
+    }
+    
+    dependencies {
+      implementation("com.keepersecurity.secrets-manager:oracle:1.0.0")
+      implementation("com.keepersecurity.secrets-manager:core:17.0.0")
+      implementation("com.oracle.oci.sdk:oci-java-sdk-keymanagement:3.60.0")
+      implementation("com.oracle.oci.sdk:oci-java-sdk-common-httpclient-jersey:3.60.0") // or the latest version
+      implementation("com.oracle.oci.sdk:oci-java-sdk-common:3.60.0")
+      implementation("com.fasterxml.jackson.core:jackson-databind:2.18.2")
+      implementation("com.fasterxml.jackson.core:jackson-core:2.18.2")
+      implementation("com.google.code.gson:gson:2.12.1")
+      implementation("org.slf4j:slf4j-simple:2.0.16")
+      implementation("org.bouncycastle:bc-fips:1.0.2.4")
+    }
 
-The plugin can be supplied to the command as shown here, or added to a record
-field (see options above). Adding the plugin type to the record makes it
-possible to rotate several records at once with different plugins.
+**Maven**
 
-####
+Copy
 
-Output
+    
+    
+    <!-- KMS-core -->
+        <dependency>
+         <groupId>com.keepersecurity.secrets-manager</groupId>
+         <artifactId>oracle</artifactId>
+         <version>1.0.0</version>
+        </dependency>
+        <dependency>
+         <groupId>com.keepersecurity.secrets-manager</groupId>
+         <artifactId>core</artifactId>
+         <version>17.0.0</version>
+        </dependency>
+    
+    <!-- oci-kv -->
+       <dependency>
+           <groupId>com.oracle.oci.sdk</groupId>
+           <artifactId>oci-java-sdk-keymanagement</artifactId>
+           <version>3.60.0</version>
+       </dependency>
+       <dependency>
+           <groupId>com.oracle.oci.sdk</groupId>
+           <artifactId>oci-java-sdk-common-httpclient-jersey</artifactId>
+           <version>3.60.0</version>
+       </dependency>
+       <dependency>
+           <groupId>com.oracle.oci.sdk</groupId>
+           <artifactId>oci-java-sdk-common</artifactId>
+           <version>3.60.0</version>
+       </dependency>
+       	
+       <!--gson -->
+       <dependency>
+       	<groupId>com.google.code.gson</groupId>
+       	<artifactId>gson</artifactId>
+       	<version>2.12.1</version>
+       </dependency>
+    
+       <!--jackson-core -->
+       <dependency>
+       	<groupId>com.fasterxml.jackson.core</groupId>
+       	<artifactId>jackson-core</artifactId>
+       	<version>2.18.2</version>
+       </dependency>
+       	
+       <!--jackson-databind -->
+       <dependency>
+       	<groupId>com.fasterxml.jackson.core</groupId>
+       	<artifactId>jackson-core</artifactId>
+       	<version>2.18.2</version>
+       </dependency>
+       	
+       <!-- slf4j-api -->
+       <dependency>
+       	<groupId>org.slf4j</groupId>
+       	<artifactId>slf4j-api</artifactId>
+       	<version>1.7.32</version>
+       	<scope>runtime</scope>
+       </dependency>
+    
+       <dependency>
+           <groupId>org.slf4j</groupId>
+           <artifactId>slf4j-simple</artifactId>
+           <version>2.0.16</version>
+       </dependency>   	
+       <!-- bc-fips -->
+       <dependency>
+       	<groupId>org.bouncycastle</groupId>
+       	<artifactId>bc-fips</artifactId>
+       	<version>1.0.2.4</version>
+       </dependency>
+       	
 
-After rotation is completed, the new password will be stored in the `Password`
-field of the record
+The Secrets Manager Oracle Key Vault module can be installed using npm
 
-[PreviousPostgreSQL Plugin](/en/keeperpam/commander-cli/command-
-reference/plugins/postgresql-plugin)[NextSSH Plugin](/en/keeperpam/commander-
-cli/command-reference/plugins/ssh-plugin)
+Copy
 
-Last updated 2 months ago
+    
+    
+    npm install @keeper-security/secrets-manager-oracle-kv
+
+The Secrets Manager OCI KSM module can be installed using pip
+
+Copy
+
+    
+    
+    pip3 install keeper-secrets-manager-storage
+
+oci is a prerequisite for the Oracle Key Vault integration. Install it to your
+machine using pip.
+
+Copy
+
+    
+    
+    pip3 install oci
+
+The Secrets Manager oracle KSM module can be installed using dotnet nuget
+package manager.
+
+Copy
+
+    
+    
+    dotnet add package Keeper.SecretsManager.OracleKeyManagement
+
+The Secrets Manager oracle KSM module Integration can be installed using
+
+Copy
+
+    
+    
+    go get github.com/keeper-security/secrets-manager-go/integrations/oracle
+
+###
+
+2\. Configure **Oracle KV** Connection
+
+Ensure that you have an Oracle Key Vault instance available, and you know its
+OCID (Oracle Cloud Identifier). By default, the `oci key management` library
+will use the default OCI configuration file (`~/.oci/config`)
+
+See the Oracle documentation for more information on setting up an Oracle
+Keys:
+
+<https://docs.oracle.com/en-
+us/iaas/Content/API/Concepts/sdkconfig.htm>[](https://docs.oracle.com/en-
+us/iaas/Content/API/Concepts/sdkconfig.htm)
+
+Alternatively, You will need to add the correct configuration for your OCI
+environment, including the details for accessing Oracle Key Vault.
+
+The configuration file should look like this (replace with your actual
+details):
+
+[DEFAULT] user=ocid1.user.oc1..example_unique_id
+fingerprint=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx
+key_file=/path/to/your/private/api/key.pem
+tenancy=ocid1.tenancy.oc1..example_unique_id region=us-phoenix-1
+
+###
+
+3\. Add Oracle Key Vault Storage to Your Code
+
+Once Oracle connection has been configured, You can fetch the Key to encrypt /
+decrypt KSM configuration using integration and you need to tell the Secrets
+Manager SDK to utilize the KMS as storage.
+
+###
+
+Using **Oracle Key Vault Integration**
+
+Once setup, the Secrets Manager Oracle Key Vault integration supports all
+Secrets Manager SDK functionality. Your code will need to be able to access
+the OCI Keys in order to manage the encryption and decryption of the KSM
+configuration file. **Using Specified Connection credentials**
+
+JavaJavaScriptPython.NetGo
+
+To do this, create `OracleKeyValueStorage` instance and use this in
+`SecretManagerOptions` constructor.
+
+The `OracleKeyValueStorage` will require the name of the Secrets Manager
+configuration file with profile and configuration.
+
+Copy
+
+    
+    
+    import java.security.Security;
+    import org.bouncycastle.jcajce.provider.BouncyCastleFipsProvider;
+    import static com.keepersecurity.secretsManager.core.SecretsManager.initializeStorage;
+    import com.keepersecurity.secretmanager.oracle.kv.OracleKeyValueStorage;
+    import com.keepersecurity.secretmanager.oracle.kv.OracleSessionConfig;
+    import com.keepersecurity.secretsManager.core.SecretsManagerOptions;
+    import com.oracle.bmc.Region;
+    
+    
+    class Test {
+    	public static void main(String args[]){
+    		String configPath = "<~/.oci/config>";
+    		String cryptoEndpoint = "https://<>-crypto.kms.<oracle_cloud_region>.oraclecloud.com";
+    		String vaultId = "<OCI VAULT ID>";
+    		String keyId = "<OCI KEY ID>";
+    		String keyVersionId = "<OCI KEY VERSION>";
+    		String configFileLocation = "<KMS CONFIG FILE LOCATION>";
+    		String profile = "<OCI CONFIG PROFILE EX: DEFAULT>"; // name of your profile
+    		String oneTimeToken = "<Keeper Ont Time Token>";
+    		String managementEndpoint =  "https://<>-management.kms.<oracle_cloud_region>.oraclecloud.com";
+    		Region region = Region.<cloud_region>;
+    		Security.addProvider(new BouncyCastleFipsProvider());
+    		try{
+    			//set Oracle KV configuration, 
+    			OracleSessionConfig oracleSessionConfig = new OracleSessionConfig(configPath, cryptoEndpoint, managementEndpoint, vaultId, keyId, keyVersionId, region);
+    			//Get Storage 
+    			OracleKeyValueStorage oracleKeyValueStorage = new OracleKeyValueStorage(configFileLocation, profile, oracleSessionConfig);
+    			initializeStorage(oracleKeyValueStorage, oneTimeToken);
+    			SecretsManagerOptions options = new SecretsManagerOptions(oracleKeyValueStorage);
+    			//getSecrets(options)
+    		}catch (Exception e) {
+    			System.out.println(e.getMessage());
+    		}
+    	}
+    }
+    
+
+To do this, use `OracleKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require an `Oracle config file location`, `Oracle
+configuration profile`(if there are multiple profile configurations) and the
+`Oracle KMS Crypto endpoint` , `Oracle KMS Management endpoint` as well as the
+name of the `Secrets Manager configuration file` which will be encrypted by
+Oracle KMS.
+
+Copy
+
+    
+    
+    import { OCISessionConfig, OciKeyValueStorage } from "@keeper-security/secrets-manager-oracle-kv";
+        const getKeeperRecordsOCI = async () => {
+            const oracleConfigFileLocation = "/home/...../.oci/config";
+            const oracleProfile = "DEFAULT";
+            const kmsCryptoEndpoint = "https://<>-crypto.kms.<location>.oraclecloud.com";
+            const kmsManagementEndpoint = "https://<>-management.kms.<location>.oraclecloud.com";
+            const ociSessionConfig = await new OCISessionConfig(oracleConfigFileLocation, oracleProfile, kmsCryptoEndpoint,kmsManagementEndpoint);
+            const logLevel = LoggerLogLevelOptions.info;
+            let config_path = "<Keeper config File Path>";
+            const oneTimeToken = "<one time token>";
+            const keyId = 'ocid1.key.oc1.iad.<>.<>';
+            const keyVersionId = "ocid1.keyversion.oc1.iad.<>.<>";
+            const storage = await new OciKeyValueStorage(keyId, keyVersionId, config_path, ociSessionConfig,logLevel).init();
+            await initializeStorage(storage, oneTimeToken);
+            const { records } = await getSecrets({ storage: storage });
+            console.log(records);
+            const firstRecord = records[0];
+            const firstRecordPassword = firstRecord.data.fields.find((x: { type: string; }) => x.type === 'bankAccount');
+            console.log(firstRecordPassword.value[0]);
+        };
+        console.log("start");
+        getKeeperRecordsOCI();
+    
+
+To do this, use `OracleKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require a OCI Key ID, key version Id, KMS Crypto endpoint,
+KMS management endpoint, oracle config file location, configuration profile as
+well as the name of the Secrets Manager configuration file which will be
+encrypted by Oracle KMS and OCI session configuration shown below.
+
+Copy
+
+    
+    
+    from keeper_secrets_manager_storage.storage_oci_key_management import  OracleKeyValueStorage,OCISessionConfig
+    from keeper_secrets_manager_core import SecretsManager
+    config_file_location = "/home/<user>/.oci/config"
+    profile = "DEFAULT"
+    kms_crypto_endpoint = "https://<kmsendpoint>.oraclecloud.com"
+    kms_mgmt_endpoint = "https://<kmsendpoint>.oraclecloud.com"
+    key_id = '<key_id>'
+    key_version_id = "<key_version_id>"
+    config_path = "<path to config json>"
+    one_time_token = "<Keeper One Time Token>"
+    oci_session_config = OCISessionConfig(config_file_location, profile, kms_crypto_endpoint, kms_mgmt_endpoint)
+    storage = OracleKeyValueStorage(key_id=key_id, key_version=key_version_id, config_file_location=config_path, oci_session_config=oci_session_config,logger=None)
+    secrets_manager = SecretsManager(one_time_token,config=storage)
+    all_records = secrets_manager.get_secrets()
+    first_record = all_records[0]
+    print(first_record)
+
+To do this, use `OracleKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require a OCI Key ID, key version Id, KMS Crypto endpoint,
+KMS management endpoint, oracle config file location, configuration profile as
+well as the name of the Secrets Manager configuration file which will be
+encrypted by Oracle KMS and OCI session configuration shown below.
+
+Copy
+
+    
+    
+    using System;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using Microsoft.Extensions.Logging;
+    using OracleKeyManagement;
+    using SecretsManager;
+    
+    public class Program
+    {
+    	private static async Task getOneIndividualSecret()
+    	{
+    	   Console.WriteLine("execution started");
+                bool changeKey = false;
+                bool decryptConfiguration = false;
+                var OCIConfigFileLocation = "location";
+                var profile = "DEFAULT";
+                var kmsCryptoEndpoint = "crypto_endpoint";
+                var kmsManagementEndpoint = "management_endpoint";
+                var ociSessionConfig1 = new OciSessionConfig(OCIConfigFileLocation, profile, kmsCryptoEndpoint, kmsManagementEndpoint); 
+                var path = "oci_ksm_conf_test.json";
+                string keyId1 = "key1";
+                string keyId2 = "key2";
+                string keyVersionId1 = "key1version";
+                string keyVersionId2 = "key2version";
+                
+                var loggerFactory = LoggerFactory.Create(builder =>
+                {
+                    builder.SetMinimumLevel(LogLevel.Debug);
+                    builder.AddConsole();
+                });
+                var logger = loggerFactory.CreateLogger<OracleKeyValueStorage>();
+                var oracle_storage = new OracleKeyValueStorage(keyId2,keyVersionId2,path,ociSessionConfig1,logger );
+                
+                var dotnet_access_token = "<accesstoken>";
+                SecretsManagerClient.InitializeStorage(oracle_storage, dotnet_access_token);
+                if (changeKey)
+                {
+                    oracle_storage.ChangeKeyAsync(keyId1,keyVersionId1,null).Wait();
+                }
+                if (decryptConfiguration)
+                {
+                    var conf = await oracle_storage.DecryptConfigAsync(true);
+                    Console.WriteLine(conf);
+                }
+                var options = new SecretsManagerOptions(oracle_storage);
+                var records_1 = await SecretsManagerClient.GetSecrets(options);
+                records_1.Records.ToList().ForEach(record => Console.WriteLine(record.RecordUid + " - " + record.Data.title));
+    	}
+    
+    	static async Task Main()
+    	{
+    		await getOneIndividualSecret();
+    	}
+    }
+
+To do this, use `NewOracleKeyValueStorage` as your Secrets Manager storage in
+the `SecretsManager` constructor.
+
+The NewOracleKeyVaultStorage requires the following parameters to encrypt the
+KSM configuration using Oracle Vault:
+
+`ksmConfigFileName` : The file name of KSM configuration.
+
+`keyConfig` : Provide oracle key credentials `KeyID` and `KeyVersionID`.
+
+`oracleConfig` : Provide oracle credentials `VaultManagementEndpoint`,
+`VaultCryptoEndpoint`.
+
+By default, the oci-keymanagement library will use the **default OCI
+configuration file** (`~/.oci/config`).
+
+Copy
+
+    
+    
+    package main
+    
+    import (
+    	"encoding/json"
+    	"fmt"
+    
+    	"github.com/keeper-security/secrets-manager-go/core"
+    	oraclekv "github.com/keeper-security/secrets-manager-go/integrations/oracle"
+    )
+    
+    func main() {
+    	decryptConfig := true
+    	changeKey := true
+    	ksmConfigFile := ""
+    	oneTimeToken := "oneTimeToken"
+    	keyConfig := &oraclekv.KeyConfig{
+    		KeyID:        "ocid1.key.oc1.<>.<>.<>",
+    		KeyVersionID: "ocid1.keyversion.oc1.<>.<>.<>.<>",
+    	}
+    	oracleConfig := &oraclekv.OracleConfig{
+    		VaultManagementEndpoint: "https://<>-management.kms.<>.oraclecloud.com",
+    		VaultCryptoEndpoint:     "https://<>-crypto.kms.<>.oraclecloud.com",
+    		Profile:                 "",
+    		ProfileConfigPath:       "",
+    	}
+    	cfg := oraclekv.NewOracleKeyVaultStorage(ksmConfigFile, keyConfig, oracleConfig)
+    	secrets_manager := core.NewSecretsManager(
+    		&core.ClientOptions{
+    			Token:  oneTimeToken,
+    			Config: cfg,
+    		},
+    	)
+    	secrets, err := secrets_manager.GetSecrets([]string{})
+    	if err != nil {
+    		// do something
+    		fmt.Printf("Error: %s\n", err)
+    	} else {
+    		for _, secret := range secrets {
+    			fmt.Printf("Recieved secret: %s\n", secret.Title())
+    		}
+    	}
+    
+    }
+
+##
+
+Additional Options
+
+###
+
+Change Key
+
+We can change key that is used for encrypting the KSM configuration, examples
+below show the code needed to use it
+
+JavaJavaScriptPython.NetGoLang
+
+Copy
+
+    
+    
+    //The method changeKey(keyID, keyVersion) will be used to encrypt the KSM config file with new Key and version. 
+    
+    String newKeyID = "<new Key ID>";
+    String newKeyVersion = "<New Key Version>";
+    OracleKeyValueStorage oracleKeyValueStorage = new OracleKeyValueStorage(configFileLocation, profile, oracleSessionConfig);
+    oracleKeyValueStorage.changeKey(newKeyID, newKeyVersion); // Change the key for encryption/decryption
+
+Copy
+
+    
+    
+    // To change the Oracle KMS key used for encryption, you can call the `changeKey` method on the `OciKeyValueStorage` instance.
+    const storage = await new OciKeyValueStorage(keyId, keyVersionId, configPath, ociSessionConfig).init();
+    await storage.changeKey(keyId2, keyVersionId2);
+
+Copy
+
+    
+    
+       storage = OracleKeyValueStorage(key_id=key_id, key_version=key_version_id, config_file_location=config_path, oci_session_config=oci_session_config,logger=None)
+        
+        new_key_id = "<new key id>"
+        new_key_version_id = "<new key version>"
+        isChanged = storage.change_key(new_key_id, new_key_version_id)
+        print("Key is changed " + isChanged)
+
+Copy
+
+    
+    
+    // To change the Oracle KMS key used for encryption, you can call the `ChangeKeyAsync` method on the `OracleKeyValueStorage` instance.
+    // using Microsoft.Extensions.Logging;
+    
+         var loggerFactory = LoggerFactory.Create(builder =>
+                {
+                    builder.SetMinimumLevel(LogLevel.Debug);
+                    builder.AddConsole();
+                });
+        var logger = loggerFactory.CreateLogger<OracleKeyValueStorage>();
+        var oracle_storage = new OracleKeyValueStorage(keyId2,keyVersionId2,path,ociSessionConfig1,logger );
+
+Copy
+
+    
+    
+    // If you want to change the key not oracle config, then pass nil in place of oracle config.
+    		updatedKeyConfig := &oraclekv.KeyConfig{
+    			KeyID:        "ocid1.key.oc1.<>.<>.<>",
+    			KeyVersionID: "ocid1.keyversion.oc1.<>.<>.<>.<>",
+    		}
+    	isChanged, err := cfg.ChangeKey(updatedKeyConfig, nil)
+
+###
+
+Decrypt Config
+
+We can decrypt the config if current implementation is to be migrated onto a
+different cloud or if you want your raw credentials back. The function accepts
+a boolean which when set to true will save the decrypted configuration to file
+and if it is false, will just return decrypted configuration.
+
+JavaJavaScriptPython.NetGoLang
+
+Copy
+
+    
+    
+    OracleKeyValueStorage oracleKeyValueStorage = new OracleKeyValueStorage(configFileLocation, profile, oracleSessionConfig);
+    oracleKeyValueStorage.decryptConfig(false); // Set false as a parameter to extract only plaintext.
+    //OR 
+    oracleKeyValueStorage.decryptConfig(true); // Set true as a parameter to extract plaintext and save config as a plaintext.
+
+Copy
+
+    
+    
+     const storage = await new OciKeyValueStorage(keyId, keyVersionId, config_path, ociSessionConfig).init();
+     await storage.decryptConfig(true); // Saves to file
+     const decryptedConfig = await storage.decryptConfig(true); // returns the decrypted config
+
+Copy
+
+    
+    
+     storage = OracleKeyValueStorage(key_id=key_id, key_version=key_version_id, config_file_location=config_path, oci_session_config=oci_session_config,logger=None)
+     storage.decrypt_config(True)
+
+Copy
+
+    
+    
+    //To decrypt the config file and save it again in plaintext, you can call the `DecryptConfigAsync` method on the `OracleKeyValueStorage` instance.
+     var conf = await oracle_storage.DecryptConfigAsync(true);
+     Console.WriteLine(conf);   
+
+Copy
+
+    
+    
+    cfg := oraclekv.NewOracleKeyVaultStorage(ksmConfigFile, keyConfig, oracleConfig)
+    	secrets_manager := core.NewSecretsManager(
+    		&core.ClientOptions{
+    			Token:  oneTimeToken,
+    			Config: cfg,
+    		},
+    	)
+    // Pass true if you want to save decryptconfig in ksm config file, else pass false.
+    decryptedConfig, err := cfg.DecryptConfig(true) 
+
+You're ready to use the KSM integration 👍
+
+Check out the [KSM SDKs documentation](/en/keeperpam/secrets-
+manager/developer-sdk-library) for more examples and functionality
+
+[PreviousOctopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-
+deploy)[NextPowerShell Plugin](/en/keeperpam/secrets-
+manager/integrations/powershell-plugin)
+
+Last updated 8 hours ago
 
 Was this helpful?
 

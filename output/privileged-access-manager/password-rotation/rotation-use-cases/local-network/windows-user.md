@@ -315,19 +315,21 @@ user?fallback=true)
         * [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible/ansible-tower)
 
       * [AWS CLI Credential Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-process)
-      * [AWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
-      * [AWS KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+      * [AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+      * [AWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
       * [Azure DevOps Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
-      * [Azure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Sync](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
       * [Bitbucket Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
       * [Docker Image](/en/keeperpam/secrets-manager/integrations/docker-image)
       * [Docker Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
       * [Docker Writer Image](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-      * [Entrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
-      * [GCP Secret Manager](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Entrust HSM Encryption](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
       * [Git - Sign Commits with SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
       * [GitHub Actions](/en/keeperpam/secrets-manager/integrations/github-actions)
       * [GitLab](/en/keeperpam/secrets-manager/integrations/gitlab-plugin)
+      * [Google Cloud Secret Manager Sync](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Google Cloud Key Management Encryption](/en/keeperpam/secrets-manager/integrations/google-cloud-key-management-encryption)
       * [Hashicorp Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
       * [Heroku](/en/keeperpam/secrets-manager/integrations/heroku)
       * [Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
@@ -336,11 +338,11 @@ user?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
-      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
+      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [Terraform Plugin](/en/keeperpam/secrets-manager/integrations/terraform)
 
         * [Terraform Registry](https://registry.terraform.io/providers/Keeper-Security/secretsmanager/latest/docs/data-sources/address)
@@ -460,6 +462,45 @@ PDF](/en/keeperpam/~gitbook/pdf?page=ozTHJDSYKYXqnd4ofmC4&only=yes&limit=100)
 
 Rotating Windows User Accounts on Local Network
 
+[PreviousActive Directory or OpenLDAP User](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/local-network/active-
+directory)[NextLinux User](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/linux-user)
+
+Last updated 2 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJJUyNlAuOLGSc9meujzP%252FWindows%2520User.jpg%3Falt%3Dmedia%26token%3Db707eba0-2b0a-4221-aaca-29c4986aa384&width=768&dpr=4&quality=100&sign=ff349027&sv=2)
@@ -470,9 +511,7 @@ Overview
 
 In this guide, you'll learn how to rotate Windows user accounts within your
 local network using Keeper Rotation. For a high-level overview on the rotation
-process in the local network, visit this [page](/en/keeperpam/privileged-
-access-manager/password-rotation/rotation-use-cases/local-network#rotation-on-
-the-local-network).
+process in the local network, visit this .
 
 ##
 
@@ -630,42 +669,6 @@ To learn more and set up this capability, see the [Service
 Management](/en/keeperpam/privileged-access-manager/password-rotation/service-
 management) page.
 
-[PreviousActive Directory or OpenLDAP User](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network/active-
-directory)[NextLinux User](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/linux-user)
-
-Last updated 2 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+[page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/local-network#rotation-on-the-local-network)
 

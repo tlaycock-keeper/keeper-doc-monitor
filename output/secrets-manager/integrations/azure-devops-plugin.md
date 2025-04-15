@@ -305,19 +305,21 @@ manager/integrations/azure-devops-plugin?fallback=true)
         * [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible/ansible-tower)
 
       * [AWS CLI Credential Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-process)
-      * [AWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
-      * [AWS KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+      * [AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+      * [AWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
       * [Azure DevOps Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
-      * [Azure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Sync](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
       * [Bitbucket Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
       * [Docker Image](/en/keeperpam/secrets-manager/integrations/docker-image)
       * [Docker Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
       * [Docker Writer Image](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-      * [Entrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
-      * [GCP Secret Manager](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Entrust HSM Encryption](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
       * [Git - Sign Commits with SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
       * [GitHub Actions](/en/keeperpam/secrets-manager/integrations/github-actions)
       * [GitLab](/en/keeperpam/secrets-manager/integrations/gitlab-plugin)
+      * [Google Cloud Secret Manager Sync](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Google Cloud Key Management Encryption](/en/keeperpam/secrets-manager/integrations/google-cloud-key-management-encryption)
       * [Hashicorp Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
       * [Heroku](/en/keeperpam/secrets-manager/integrations/heroku)
       * [Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
@@ -326,11 +328,11 @@ manager/integrations/azure-devops-plugin?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
-      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
+      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [Terraform Plugin](/en/keeperpam/secrets-manager/integrations/terraform)
 
         * [Terraform Registry](https://registry.terraform.io/providers/Keeper-Security/secretsmanager/latest/docs/data-sources/address)
@@ -452,9 +454,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MkdGn1N1lF_5f78svDz&only=yes&limit=100)
 Keeper Secrets Manager integration into Azure DevOps for dynamic secrets
 retrieval
 
-[PreviousAWS KMS](/en/keeperpam/secrets-manager/integrations/aws-
-kms)[NextAzure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-
-key-vault)
+[PreviousAWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-
+kms)[NextAzure Key Vault Sync](/en/keeperpam/secrets-
+manager/integrations/azure-key-vault)
 
 Last updated 8 months ago
 
@@ -516,9 +518,7 @@ utilize this integration, you will need:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
-
-    *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
     * The Azure DevOps integration accepts JSON and Base64 format configurations
 
@@ -906,29 +906,34 @@ Copy
         - bash: |
             echo "password retrieved from job 'ksmSecrets', step 'pwdFromKsmSecrets', out variable 'setKsmSecretsStep.out_password':$(pwdFromKsmSecrets)"
 
+A Keeper  with secrets shared to it
+
 See the  for instructions on creating an Application
 
 One or more  (See query syntax below)
 
-[Secret queries](/en/keeperpam/secrets-manager/integrations/azure-devops-
-plugin#keeper-secret-queries)
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
+
+[Secret queries](/en/keeperpam/secrets-manager/integrations/azure-devops-
+plugin#keeper-secret-queries)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSIUOkIjVALVzmtOYLF18%252Ffind%2520task.png%3Falt%3Dmedia%26token%3D75fa26c0-83a9-48e8-b9c0-ebe8de0eb48c&width=768&dpr=4&quality=100&sign=7d4de9b&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHuh9CWdwe0laT7gQ3SBe%252Fchoose%2520org.png%3Falt%3Dmedia%26token%3Dbf61e101-20a2-4229-9dde-11f3532cc616&width=768&dpr=4&quality=100&sign=697f4bb&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdGjPJbTbFffW4s1-f%252F-MkdGtOxU6O3kUM7r2jV%252Fazuredevops-
 plugin-
 header.jpg%3Falt%3Dmedia%26token%3D151310a1-d682-4973-ab09-b9815c8cf9cb&width=768&dpr=4&quality=100&sign=8989003a&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHuh9CWdwe0laT7gQ3SBe%252Fchoose%2520org.png%3Falt%3Dmedia%26token%3Dbf61e101-20a2-4229-9dde-11f3532cc616&width=768&dpr=4&quality=100&sign=697f4bb&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

@@ -12,49 +12,49 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/command-reference/plugins/pspasswd-plugin?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)
+[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/azure-key-
+vault-ksm?fallback=true)[Keeper Connection
+Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
+manager/integrations/azure-key-vault-ksm?fallback=true)[User
+Guides](https://docs.keeper.io/en/user-guides/secrets-
+manager/integrations/azure-key-vault-ksm?fallback=true)[Release
+Notes](https://docs.keeper.io/en/release-notes/secrets-
+manager/integrations/azure-key-vault-ksm?fallback=true)[Enterprise
+Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
+manager/integrations/azure-key-vault-ksm?fallback=true)[MSP
+Guide](https://docs.keeper.io/en/msp-guide/secrets-manager/integrations/azure-
+key-vault-ksm?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
+connect-cloud/secrets-manager/integrations/azure-key-vault-
+ksm?fallback=true)[KeeperPAM and Secrets
+Manager](https://docs.keeper.io/en/keeperpam/secrets-
+manager/integrations/azure-key-vault-ksm?fallback=true)[SSO Connect On-
+Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
+manager/integrations/azure-key-vault-ksm?fallback=true)[Keeper
+Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
+manager/integrations/azure-key-vault-ksm?fallback=true)
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/command-reference/plugins/pspasswd-plugin?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)
+[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/azure-key-
+vault-ksm?fallback=true)[Keeper Connection
+Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
+manager/integrations/azure-key-vault-ksm?fallback=true)[User
+Guides](https://docs.keeper.io/en/user-guides/secrets-
+manager/integrations/azure-key-vault-ksm?fallback=true)[Release
+Notes](https://docs.keeper.io/en/release-notes/secrets-
+manager/integrations/azure-key-vault-ksm?fallback=true)[Enterprise
+Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
+manager/integrations/azure-key-vault-ksm?fallback=true)[MSP
+Guide](https://docs.keeper.io/en/msp-guide/secrets-manager/integrations/azure-
+key-vault-ksm?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
+connect-cloud/secrets-manager/integrations/azure-key-vault-
+ksm?fallback=true)[KeeperPAM and Secrets
+Manager](https://docs.keeper.io/en/keeperpam/secrets-
+manager/integrations/azure-key-vault-ksm?fallback=true)[SSO Connect On-
+Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
+manager/integrations/azure-key-vault-ksm?fallback=true)[Keeper
+Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
+manager/integrations/azure-key-vault-ksm?fallback=true)
 
   * [Overview](/en/keeperpam)
   * Privileged Access Manager
@@ -430,185 +430,668 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Features
   * Prerequisites
-  * Enabled Remote Service Management on each target computer
-  * Install pspasswd
-  * Prepare Record for Rotation
-  * Create a Record for Rotation
-  * Set the Login Name
-  * Rotate
+  * Setup
+  * 1\. Install Module
+  * 2\. Configure Azure Key Vault Connection
+  * 3\. Add Azure Key Vault Storage to Your Code
+  * Using Azure Key Vault Integration
+  * Additional Options
+  * Change Key
+  * Decrypt Config
 
 Was this helpful?
 
 [Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-Mf4DVYRWGfT0NCa2Mls&only=yes&limit=100)
+PDF](/en/keeperpam/~gitbook/pdf?page=5bAWD6RPiYO9UT9mOK6B&only=yes&limit=100)
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
 
-# PSPasswd Plugin
+# Azure Key Vault Encryption
 
-Rotate remote admin passwords with PSPasswd
+Protect Secrets Manager connection details with Azure Key Vault Keys
 
-Keeper has also launched a zero-trust Password Rotation feature with
-KeeperPAM. This new capability is recommended for most password rotation use
-cases. The Documentation is linked below:
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtZIEOPkkqOXRYguSANka%252Fksm-
+azure.jpg%3Falt%3Dmedia%26token%3Dce2d93d5-12bf-405f-9a53-9c348ad52bcf&width=768&dpr=4&quality=100&sign=dbec56d2&sv=2)
 
-  * [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-rotation)
+Keeper Secrets Manager integrates with Azure Key Vault in order to provide
+encryption for Keeper Secrets Manager configuration files. With this
+integration, you can protect connection details on your machine while taking
+advantage of Keeper's zero-knowledge encryption of all your secret
+credentials.
 
-  * Commander [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
+##
 
-This plugin provides IT Admins with the ability to rotate the password of a
-remote system's administrative local password. The password is rotated using
-the widely used "pspasswd" utility and the change is synchronized to a
-specific Keeper record in your vault.
+Features
 
-The way this plugin is implemented requires that Commander and pspasswd is
-installed on the Domain Controller.
+  * Encrypt and Decrypt your Keeper Secrets Manager configuration files with Azure Key Vault.
 
-The instructions in this README assume that you are executing Commander
-scripts from the Domain Controller.
+  * Protect against unauthorized access to your Secrets Manager connections.
+
+  * Requires only minor changes to code for immediate protection. Works with all Keeper Secrets Manager SDK functionality.
+
+  * supports RSA Asymmetric keys from Azure.
 
 ##
 
 Prerequisites
 
-###
+JavaJavaScriptPython.NetGoLang
 
-Enabled Remote Service Management on each target computer
+  * Support the Java/Kotlin [Secrets Manager SDK.](https://docs.keeper.io/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk)
 
-Assuming all computers are domain-attached and reachable from the Domain
-Controller, ensure that "Remote Service Management" is allowed for inbound in
-Domain by enabling the relevant Firewall rule on all computers.
+  * Requires Azure packages: [`azure-identity`](https://mvnrepository.com/artifact/com.azure/azure-identity/1.15.0) and [`azure-keyvault-keys`](https://mvnrepository.com/artifact/com.azure/azure-security-keyvault-keys/4.9.2).
 
-On each of the target computers, go to Windows Firewall rules -> Inbound Rules
--> and enabled the "Remote Service Management" rule.
+  * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
 
-###
+  * Supports the [JavaScript Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-sdk)
 
-Install pspasswd
+  * Requires Azure packages [`@azure/identity`](https://www.npmjs.com/package/@azure/identity) , [`@azure/keyvault-keys`](https://www.npmjs.com/package/@azure/keyvault-keys)
 
-  * Download the [PSTools Package](https://docs.microsoft.com/en-us/sysinternals/downloads/pspasswd) from Microsoft
+  * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
 
-  * Extract the PSTools.zip folder to a location on your computer
+  * Supports the [Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk)
 
-  * Add this PSTools folder to your user or system environmental variable "PATH"
+  * Requires package azure-identity azure-keyvault-keys
 
-(System Properties -> Advanced -> Environmental Variables)
+  * User credentials to be used will need to have key vault permissions
 
-Select PATH and then "Edit"
+  * Supports the [.Net Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/.net-sdk)
 
-On some systems, you have to append the location where you installed PSTools,
-e.g.:
+  * Supports dotnet version `net9.0`
 
-;C:\Users\craig\PSTools
+  * Requires Azure packages: [`Azure.Identity`](https://www.nuget.org/packages/Azure.Identity/1.14.0-beta.3) and [`Azure.Security.KeyVault.Keys`](https://www.nuget.org/packages/Azure.Security.KeyVault.Keys/4.8.0-beta.1)
 
-On newer systems, just click "New" then type in the full path to the install,
-e.g.: C:\Users\craig\PSTools
+  * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
 
-##
+  * Supports the [GoLang Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/golang-sdk)
 
-Prepare Record for Rotation
+  * Requires Azure packages: [`azcore`](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/azcore) , [`azidentity`](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/azidentity) and [`azkeys`](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/security/keyvault/azkeys).
 
-###
-
-Create a Record for Rotation
-
-Rotation supports legacy and typed records. If using typed record, a 'Login'
-type field is required. Additional fields may be added depending on the
-rotation type as well. See the instructions below.
-
-See the [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-
-commander-cli#typed-vs-untyped-records-v3-vs-v2)section for more information
-on legacy vs typed records
-
-###
-
-Set the Login Name
-
-**Populate the 'Login' field of the Keeper record with the login to use with
-this rotation.**
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqV0jzz2UhB6YKjWpjJnn%252Fimage.png%3Falt%3Dmedia%26token%3Dcb93de5c-e9fb-48d4-a890-1e6c9ba92162&width=768&dpr=4&quality=100&sign=6fa20915&sv=2)
-
-####
-
-Set the Host and Port of the record
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fn0wNe2SmR5gUWuLVuYjZ%252Fimage.png%3Falt%3Dmedia%26token%3D01a0489d-b380-4e59-b2ee-9cf70e275640&width=768&dpr=4&quality=100&sign=1dc8df65&sv=2)
-
-If using an untyped record, the host and port can be set to custom fields. See
-below.
-
-####
-
-Additional Rotation Settings
-
-The following values can customize rotation parameters. Add these options to a
-record as text fields and set the label to correspond to the parameter as
-shown in the table.
-
-Label
-
-Value
-
-Comment
-
-cmdr:plugin
-
-pspasswd
-
-(Optional) Tells Commander to use PSPasswd rotation. This should be either set
-to the record, or supplied to the rotation command
-
-cmdr:host
-
-Hostname of Computer or Computers where the local account exists. This can be
-set here if not set in the record's host field
-
-cmdr:rules
-
-# uppercase, # lowercase, # numeric, # special
-
-(e.g. 4,6,3,8)
-
-(Optional) Password generation rules
+  * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
 
 ##
 
-Rotate
+Setup
 
-To rotate PSPasswd passwords, use the `rotate` command in Commander. Pass the
-command a record title or UID (or use `--match` with a regular expression to
-rotate several records at once)
+###
+
+1\. Install Module
+
+JavaJavaScriptPython.NetGoLang
+
+Setting up project using Gradle or Maven
+
+**Gradle**
 
 Copy
 
     
     
-    rotate "My Azure Credentials" --plugin pspasswd
+    repositories {
+      mavenCentral()
+    }
+    
+    dependencies {
+      implementation("com.keepersecurity.secrets-manager:azurekv:1.0.0")
+      implementation("com.keepersecurity.secrets-manager:core:17.0.0")
+      implementation("com.azure:azure-identity:1.15.0")
+      implementation("com.azure:azure-security-keyvault-keys:4.9.2")
+      implementation("com.fasterxml.jackson.core:jackson-databind:2.18.2")
+      implementation("com.fasterxml.jackson.core:jackson-core:2.18.2")
+      implementation("com.google.code.gson:gson:2.12.1")
+      implementation("org.slf4j:slf4j-api:1.7.32"){
+            exclude("org.slf4j:slf4j-log4j12")
+        }
+      implementation("ch.qos.logback:logback-classic:1.2.6")
+      implementation("ch.qos.logback:logback-core:1.2.6")
+      implementation("org.bouncycastle:bc-fips:1.0.2.4")
+    }
 
-The plugin can be supplied to the command as shown here, or added to a record
-field (see options above). Adding the plugin type to the record makes it
-possible to rotate several records at once with different plugins.
+**Maven**
 
-####
+Copy
 
-Output
+    
+    
+    <!-- KMS-core -->
+     <dependency>
+         <groupId>com.keepersecurity.secrets-manager</groupId>
+         <artifactId>azurekv</artifactId>
+         <version>1.0.0</version>
+    </dependency>
+    <dependency>
+         <groupId>com.keepersecurity.secrets-manager</groupId>
+         <artifactId>core</artifactId>
+         <version>17.0.0</version>
+     </dependency>
+    
+     <!-- Azure-identity -->
+       <dependency>
+           <groupId>com.azure</groupId>
+           <artifactId>azure-identity</artifactId>
+           <version>1.15.0</version>
+            <scope>compile</scope>
+       </dependency>
+      <!-- Azure-keyvault -->
+       <dependency>
+           <groupId>com.azure</groupId>
+           <artifactId>azure-security-keyvault-keys</artifactId>
+           <version>4.9.2</version>
+       </dependency>
+          	
+       <!--gson -->
+       <dependency>
+       	<groupId>com.google.code.gson</groupId>
+       	<artifactId>gson</artifactId>
+       	<version>2.12.1</version>
+       </dependency>
+    
+       <!--jackson-core -->
+       <dependency>
+       	<groupId>com.fasterxml.jackson.core</groupId>
+       	<artifactId>jackson-core</artifactId>
+       	<version>2.18.2</version>
+       </dependency>
+       	
+       <!--jackson-databind -->
+       <dependency>
+       	<groupId>com.fasterxml.jackson.core</groupId>
+       	<artifactId>jackson-core</artifactId>
+       	<version>2.18.2</version>
+       </dependency>
+       <!-- slf4j-api -->
+    	<dependency>
+    	   <groupId>org.slf4j</groupId>
+    	   <artifactId>slf4j-api</artifactId>
+    	   <version>1.7.32</version>
+    	   <scope>runtime</scope>
+    	</dependency>	
+      <!-- logback-classic -->
+       <dependency>
+    	<groupId>ch.qos.logback</groupId>
+    	<artifactId>logback-classic</artifactId>
+    	<version>1.2.6</version>
+    	<scope>compile</scope>
+      </dependency>
+    <!-- logback-core -->
+       <dependency>
+          <groupId>ch.qos.logback</groupId>
+          <artifactId>logback-core</artifactId>
+          <version>1.2.6</version>
+          <scope>compile</scope>
+       </dependency>  	
+       <!-- bc-fips -->
+       <dependency>
+       	<groupId>org.bouncycastle</groupId>
+       	<artifactId>bc-fips</artifactId>
+       	<version>1.0.2.4</version>
+       </dependency>
+       	
 
-After rotation is completed, the new password will be stored in the `Password`
-field of the record
+The Secrets Manager Azure Key Vault module can be installed using npm
 
-[PreviousPostgreSQL Plugin](/en/keeperpam/commander-cli/command-
-reference/plugins/postgresql-plugin)[NextSSH Plugin](/en/keeperpam/commander-
-cli/command-reference/plugins/ssh-plugin)
+Copy
 
-Last updated 2 months ago
+    
+    
+    npm install @keeper-security/secrets-manager-azure
+
+The Secrets Manager OCI KSM module can be installed using pip
+
+Copy
+
+    
+    
+    pip3 install keeper-secrets-manager-storage
+
+The Secrets Manager KSM modules are located in the Keeper Secrets Manager
+storage module which can be installed using `dotnet`
+
+Copy
+
+    
+    
+    dotnet add package Keeper.SecretsManager.AzureKeyVault
+
+The Secrets Manager azure KSM module Integration can be installed using
+
+Copy
+
+    
+    
+    go get github.com/keeper-security/secrets-manager-go/integrations/azure
+
+###
+
+2\. Configure **Azure Key Vault** Connection
+
+Ensure that you have an Azure Key Vault instance available, The following
+param needed to connect azure key vault `AZURE_TENANT_ID: The Microsoft Entra
+tenant (directory) ID.`
+
+`AZURE_CLIENT_ID: The client (application) ID of an App Registration in the
+tenant.`
+
+`AZURE_CLIENT_SECRET: A client secret that was generated for the App
+Registration.`
+
+You will need an Azure App directory App to use the Azure Key Vault
+integration.
+
+For more information on Azure App Directory App registration and Permissions
+see the Azure documentation:
+
+<https://learn.microsoft.com/en-us/azure/key-
+vault/general/authentication>[](https://learn.microsoft.com/en-us/azure/key-
+vault/general/authentication)
+
+###
+
+3\. Add Azure Key Vault Storage to Your Code
+
+Once azure connection has been configured, You can fetch the Key to encrypt /
+decrypt KSM configurations using azure key and you need to tell the Secrets
+Manager SDK to utilize the key vault as storage.
+
+###
+
+Using **Azure Key Vault Integration**
+
+Once setup, the Secrets Manager Azure Key Vault integration supports all
+Secrets Manager SDK functionality. Your code will need to be able to access
+the Azure Keys in order to manage the encryption and decryption of the KSM
+configuration file. **Using Specified Connection credentials**
+
+JavaJavaScriptPython.NetGo
+
+To do this, create `AzureKeyValueStorage` instance and use this in
+`SecretManagerOptions` constructor.
+
+The `AzureKeyValueStorage` will require the name of the Secrets Manager
+configuration file with `azure_key_id` , `azure_keyvault_URL` and
+configuration.
+
+Copy
+
+    
+    
+    import java.security.Security;
+    import org.bouncycastle.jcajce.provider.BouncyCastleFipsProvider;
+    import static com.keepersecurity.secretsManager.core.SecretsManager.initializeStorage;
+    import com.keepersecurity.secretmanager.azurekv.AzureKeyValueStorage;
+    import com.keepersecurity.secretmanager.azurekv.AzureSessionConfig;
+    import com.keepersecurity.secretsManager.core.SecretsManagerOptions;
+    
+    
+    class Test {
+    	public static void main(String args[]){
+    		String oneTimeToken = "[One_Time_Token]";
+    		String keyId = "https://<vault-name>.vault.azure.net/keys/<keyname>/<keyversion>";
+    		String configFileLocation="<KSM-client-config.json>";
+    		String azTenantId = "<azure-tenant-id>";
+    		String azClientId = "<azure-client-id>";
+    		String azClientSecret = "<azure-client-secret>";
+    		String keyVaultUrl = "https://<vault-name>.vault.azure.net/";
+    		Security.addProvider(new BouncyCastleFipsProvider());
+    		try{
+    			//set azure KV configuration, 
+    			AzureSessionConfig azConfig= new AzureSessionConfig(azTenantId, azClientId, azClientSecret, keyVaultUrl);
+    			//Get Storage 
+    			AzureKeyValueStorage azkvstorage =  AzureKeyValueStorage.getInternalStorage(keyId, configFileLocation, azConfig);
+    			initializeStorage(azkvstorage, oneTimeToken);
+    			SecretsManagerOptions options = new SecretsManagerOptions(azkvstorage);
+    			//getSecrets(options)
+    		}catch (Exception e) {
+    			System.out.println(e.getMessage());
+    		}
+    	}
+    }
+    
+
+To do this, use `AzureKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require an `Azure Key ID`, as well as the name of the Secrets
+Manager configuration file which will be encrypted by Azure Key Vault.
+
+Copy
+
+    
+    
+     import { getSecrets, initializeStorage, localConfigStorage } from '@keeper-security/secrets-manager-core';
+     import {AzureKeyValueStorage, AzureSessionConfig} from "@keeper/secrets-manager-azure";
+     
+         const getKeeperRecords = async () => {
+            const tenant_id="<tenant_id>" 
+            const client_id="<client_id>"
+            const client_secret="<client-secret>"
+            const azureSessionConfig = new AzureSessionConfig(tenant_id, client_id, client_secret)
+            
+            let config_path = "<path to ksm-client-config.json>"
+            const logLevel = LoggerLogLevelOptions.info;
+            // oneTimeToken is used only once to initialize the storage
+            // after the first run, subsequent calls will use ksm-config.txt
+            const oneTimeToken = "[One Time Token]";
+            
+            const keyId = 'https://<vault_name>.vault.azure.net/keys/<key_name>/<version>'
+            const storage = await new AzureKeyValueStorage(keyId,config_path,azureSessionConfig,logLevel).init();
+            await initializeStorage(storage, oneTimeToken);
+            
+            const {records} = await getSecrets({storage: storage});
+            console.log(records)
+        }
+        getKeeperRecords()
+    
+
+To do this, use `OracleKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require a OCI Key ID, key version Id, as well as the name of
+the Secrets Manager configuration file which will be encrypted by Oracle KMS
+and OCI session configuration defined above.
+
+Copy
+
+    
+    
+    from keeper_secrets_manager_storage.storage_oci_key_management import  OracleKeyValueStorage,OCISessionConfig
+    from keeper_secrets_manager_core import SecretsManager
+    config_file_location = "/home/<user>/.oci/config"
+    profile = "DEFAULT"
+    kms_crypto_endpoint = "https://<kmsendpoint>.oraclecloud.com"
+    kms_mgmt_endpoint = "https://<kmsendpoint>.oraclecloud.com"
+    key_id = '<key_id>'
+    key_version_id = "<key_version_id>"
+    config_path = "<path to config json>"
+    one_time_token = "<Keeper One Time Token>"
+    oci_session_config = OCISessionConfig(config_file_location, profile, kms_crypto_endpoint, kms_mgmt_endpoint)
+    storage = OracleKeyValueStorage(key_id=key_id, key_version=key_version_id, config_file_location=config_path, oci_session_config=oci_session_config,logger=None)
+    secrets_manager = SecretsManager(one_time_token,config=storage)
+    all_records = secrets_manager.get_secrets()
+    first_record = all_records[0]
+    print(first_record)
+
+To do this, use `AzureKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require an `Azure Key ID`, as well as the name of the Secrets
+Manager configuration file which will be encrypted by Azure Key Vault.
+
+Copy
+
+    
+    
+    using System;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using Microsoft.Extensions.Logging;
+    using OracleKeyManagement;
+    using SecretsManager;
+    
+    public class Program
+    {
+       private static async Task getOneIndividualSecret()
+        {
+            var tenant_id = "<TENANT_ID>";
+            var client_secret = "<CLIENT_SECRET>";
+            var client_id = "<CLIENT_ID>";
+            var keyId = "<KEY_ID>";
+            var path = "ksmConfigDotnet.json";
+            var dotnet_access_token = "<ACCESS_TOKEN>";
+            var loggerFactory = LoggerFactory.Create(builder =>
+            {
+                builder.SetMinimumLevel(LogLevel.Debug);
+                builder.AddConsole();
+            });
+            var logger = loggerFactory.CreateLogger<AzureKeyValueStorage>();
+            var azure_session_config = new AzureSessionConfig(tenant_id, client_id, client_secret);
+            AzureKeyValueStorage azure_storage = new AzureKeyValueStorage(keyId, path, azure_session_config, logger);
+            SecretsManagerClient.InitializeStorage(azure_storage, dotnet_access_token);
+            
+            var options = new SecretsManagerOptions(azure_storage);
+                        var records_list = await SecretsManagerClient.GetSecrets(options);
+            records_list.Records.ToList().ForEach(record => Console.WriteLine(record.RecordUid + " - " + record.Data.title));
+        }
+    	static async Task Main()
+    	{
+    		await getOneIndividualSecret();
+    	}
+    }
+
+To do this, use `NewAzureKeyValueStorage` as your Secrets Manager storage in
+the `SecretsManager` constructor.
+
+The `NewAzureKeyVaultStorage` requires the following parameters to encrypt the
+KSM configuration using Azure Key Vault:
+
+`ksmConfigFileName` : The file name of KSM configuration.
+
+`keyURL`: Azure Key URL
+
+Copy
+
+    
+    
+    package main
+    
+    import (
+    	"encoding/json"
+    	"fmt"
+    
+    	"github.com/keeper-security/secrets-manager-go/core"
+    	azurekv "github.com/keeper-security/secrets-manager-go/integrations/azure"
+    )
+    
+    func main() {
+    	
+    	ksmConfigFile := ""
+    	oneTimeToken := "oneTimeToken"
+    	keyURL := "<Key URL>"   	}
+    	
+    	//Initialize the Azure Key Vault Storage
+    	cfg := azurekv.NewAzureKeyValueStorage(ksmConfigFileName, keyURL, &azurekv.AzureConfig{
+    		TenantID:     "<Azure Tenant ID>",
+    		ClientID:     "<Azure Client ID>",
+    		ClientSecret: "<Azure Client Secret>",
+    	})
+    	// create a new secrets manager client
+    	secrets_manager := core.NewSecretsManager(
+    		&core.ClientOptions{
+    			Config: cfg,
+    			Token:  oneTimeToken,
+    		},
+    	)
+    	// Fetch all the secrets from the vault
+    	secrets, err := secrets_manager.GetSecrets([]string{})
+    	if err != nil {
+    		// do something
+    		fmt.Printf("Error: %s\n", err)
+    	} else {
+    		for _, secret := range secrets {
+    			fmt.Printf("Recieved secret: %s\n", secret.Title())
+    		}
+    	}
+    
+    }
+
+##
+
+Additional Options
+
+###
+
+Change Key
+
+We can change key that is used for encrypting the KSM configuration, examples
+below show the code needed to use it
+
+JavaJavaScriptPython.NetGoLang
+
+Copy
+
+    
+    
+    //The method changeKey(newKeyID) will be used to encrypt the KSM config file with new azure key. 
+    ....
+     String newKeyID = "https://<vault-name>.vault.azure.net/keys/<keyname>/<keyversion>";
+     AzureKeyValueStorage azkvstorage =  AzureKeyValueStorage.getInternalStorage(keyId, configFileLocation, azConfig);
+     boolean isChanged = azkvstorage.changeKey(newKeyID);	 // Change the key for encryption/decryption
+    ....
+
+Copy
+
+    
+    
+    // To change the Azure Key Vault key used for encryption, you can call the `changeKey` method on the `OciKeyValueStorage` instance.
+    .....
+     const keyId = 'https://<vault_name>.vault.azure.net/keys/<key_name>/<version>'
+     const keyId2 = "https://<vault_name>.vault.azure.net/keys/<key_name>/<version>"
+     const storage = await new AzureKeyValueStorage(keyId,config_path,azureSessionConfig).init();
+     await storage.changeKey(keyId2);
+    
+    .....
+
+Copy
+
+    
+    
+       storage = OracleKeyValueStorage(key_id=key_id, key_version=key_version_id, config_file_location=config_path, oci_session_config=oci_session_config,logger=None)
+        
+        new_key_id = "<new key id>"
+        new_key_version_id = "<new key version>"
+        isChanged = storage.change_key(new_key_id, new_key_version_id)
+        print("Key is changed " + isChanged)
+
+Copy
+
+    
+    
+    // To change the Azure key used for encryption, you can call the `ChangeKeyAsync` method on the `AzureKeyValueStorage` instance.
+     using Microsoft.Extensions.Logging;
+     ....
+         var keyId2 = "<KEY_ID_2>";
+         var loggerFactory = LoggerFactory.Create(builder =>
+                {
+                    builder.SetMinimumLevel(LogLevel.Debug);
+                    builder.AddConsole();
+                });
+        var logger = loggerFactory.CreateLogger<AzureKeyValueStorage>();
+        AzureKeyValueStorage azure_storage = new AzureKeyValueStorage(keyId, path, azure_session_config, logger);
+        azure_storage.ChangeKeyAsync(keyId2).Wait();
+     ....
+
+Copy
+
+    
+    
+    	....	
+    		updatedConfig := &azurekv.AzureConfig{
+    			TenantID:     "<Updated Tenant ID>",
+    			ClientID:     "<Updated Client ID>",
+    			ClientSecret: "<Updated Client Secret>",
+    		}
+    		updatedKeyURL := "<Updated Key URL>"		
+    		// Changes the key
+    		// If you don't want to change Config, pass nil as a paramter
+    		isChanged, err := cfg.ChangeKey(updatedKeyURL, updatedConfig)
+    		if err != nil {
+    			fmt.Printf("Error while changing key: %v", err)
+    		} else {
+    			fmt.Printf("Key changed: %v\n", isChanged)
+    		}
+    		.....
+
+###
+
+Decrypt Config
+
+We can decrypt the config if current implementation is to be migrated onto a
+different cloud or if you want your raw credentials back. The function accepts
+a boolean which when set to true will save the decrypted configuration to file
+and if it is false, will just return decrypted configuration. This function
+accepts a boolean, when set to true will save the decrypted configuration to
+file and when set to false will return decrypted configuration.
+
+JavaJavaScriptPython.NetGoLang
+
+Copy
+
+    
+    
+    ....
+     AzureKeyValueStorage azkvstorage =  AzureKeyValueStorage.getInternalStorage(keyId, configFileLocation, azConfig);
+     azkvstorage.decryptConfig(false); // Set false as a parameter to extract only plaintext.
+     //OR 
+     azkvstorage.decryptConfig(true); // Set true as a parameter to extract plaintext and save config as a plaintext.
+    ....
+
+Copy
+
+    
+    
+     //To decrypt the config file and save it again in plaintext, you can call the `DecryptConfigAsync` method on the `AzureKeyValueStorage` instance.
+    .... 
+     const storage = await new AzureKeyValueStorage(keyId,config_path,azureSessionConfig).init();
+     const decryptedConfig = storage.DecryptConfigAsync(true).wait(); // return decrypted and Saves to file
+      //OR
+     const decryptedConfig = await storage.decryptConfig(false); // returns the decrypted config 
+    .... 
+
+Copy
+
+    
+    
+     storage = OracleKeyValueStorage(key_id=key_id, key_version=key_version_id, config_file_location=config_path, oci_session_config=oci_session_config,logger=None)
+     storage.decrypt_config(True)
+     # or
+    storage.decrypt_config(False)
+
+Copy
+
+    
+    
+    //To decrypt the config file and save it again in plaintext, you can call the `DecryptConfigAsync` method on the `AzureKeyValueStorage` instance.
+    .... 
+    var keyId2 = "<KEY_ID_2>";
+     AzureKeyValueStorage azure_storage = new AzureKeyValueStorage(keyId, path, azure_session_config, logger);
+    await azure_storage.DecryptConfigAsync(true); // return decrypted and Saves to file
+    //OR
+    await azure_storage.DecryptConfigAsync(false); // returns the decrypted config 
+    .... 
+
+Copy
+
+    
+    
+    		.....
+    		configs := make(map[core.ConfigKey]interface{})
+    		plainText, err := cfg.DecryptConfig(true)
+    		if err != nil {
+    			// do something
+    			fmt.Printf("Error while decrypting config: %v", err)
+    		} else {
+    			if err := json.Unmarshal([]byte(plainText), &configs); err != nil {
+    				fmt.Printf("Error while unmarshalling: %v", err)
+    			}
+    			fmt.Printf("Decrypted data: %v\n", configs["clientId"])
+    		}
+    		.....
+
+You're ready to use the KSM integration 👍
+
+Check out the [KSM SDKs documentation](/en/keeperpam/secrets-
+manager/developer-sdk-library) for more examples and functionality
+
+[PreviousAzure Key Vault Sync](/en/keeperpam/secrets-
+manager/integrations/azure-key-vault)[NextBitbucket
+Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
+
+Last updated 20 hours ago
 
 Was this helpful?
 

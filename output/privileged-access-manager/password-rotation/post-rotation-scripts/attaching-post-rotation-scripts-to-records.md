@@ -323,19 +323,21 @@ scripts-to-records?fallback=true)
         * [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible/ansible-tower)
 
       * [AWS CLI Credential Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-process)
-      * [AWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
-      * [AWS KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+      * [AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+      * [AWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
       * [Azure DevOps Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
-      * [Azure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Sync](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
       * [Bitbucket Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
       * [Docker Image](/en/keeperpam/secrets-manager/integrations/docker-image)
       * [Docker Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
       * [Docker Writer Image](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-      * [Entrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
-      * [GCP Secret Manager](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Entrust HSM Encryption](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
       * [Git - Sign Commits with SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
       * [GitHub Actions](/en/keeperpam/secrets-manager/integrations/github-actions)
       * [GitLab](/en/keeperpam/secrets-manager/integrations/gitlab-plugin)
+      * [Google Cloud Secret Manager Sync](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Google Cloud Key Management Encryption](/en/keeperpam/secrets-manager/integrations/google-cloud-key-management-encryption)
       * [Hashicorp Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
       * [Heroku](/en/keeperpam/secrets-manager/integrations/heroku)
       * [Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
@@ -344,11 +346,11 @@ scripts-to-records?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
-      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
+      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [Terraform Plugin](/en/keeperpam/secrets-manager/integrations/terraform)
 
         * [Terraform Registry](https://registry.terraform.io/providers/Keeper-Security/secretsmanager/latest/docs/data-sources/address)
@@ -459,6 +461,38 @@ PDF](/en/keeperpam/~gitbook/pdf?page=0HKqc5nrihdSnYkSFAIv&only=yes&limit=100)
 
 Attaching post-rotation scripts to PAM resource records
 
+##
+
+Attaching Post Rotation Scripts
+
+When creating or editing a PAM record, click on the **Add PAM Script** button
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FBlKciADdzYLIjU7U2H9I%252FpostRotation1.png%3Falt%3Dmedia%26token%3D401d3f39-31a3-46f4-bb1c-34ef8879f382&width=768&dpr=4&quality=100&sign=f3ba5ba3&sv=2)
+
+Clicking on **Add PAM Script** will allow you to:
+
+  * Browse locally and choose your Rotation Script(s).
+
+  * Add "Additional Credentials". This is an option to add additional records which contains the credentials needed by the post rotation script. These credentials must be available to the Keeper Gateway.
+
+  * Specify an optional custom command to executed. In the below screenshot, a python script (`postRotationTest.py`) is attached, and a specific command to be used to execute the python script.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6rj9bfD1Hehx2H1IWiLu%252Fimage.png%3Falt%3Dmedia%26token%3D790e05f5-45ed-4f72-9320-756e77326779&width=768&dpr=4&quality=100&sign=ff28da42&sv=2)
+
+After successfully selecting the script(s), the record will be updated to show
+the attached Post Rotation scripts:
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZvKxKi8ninqof9UZ9wE1%252FpostRotation2.png%3Falt%3Dmedia%26token%3D658e3d53-4cb1-44bb-9636-5cbaf1e5211e&width=768&dpr=4&quality=100&sign=445032fe&sv=2)
+
+Click Save to create or update the record. Attached Post Rotation Scripts can
+be deleted or edited by clicking on their respective actions.
+
 [PreviousInputs and Outputs](/en/keeperpam/privileged-access-manager/password-
 rotation/post-rotation-scripts/parameters)[NextCode
 Examples](/en/keeperpam/privileged-access-manager/password-rotation/post-
@@ -497,36 +531,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-##
-
-Attaching Post Rotation Scripts
-
-When creating or editing a PAM record, click on the **Add PAM Script** button
-
-Clicking on **Add PAM Script** will allow you to:
-
-  * Browse locally and choose your Rotation Script(s).
-
-  * Add "Additional Credentials". This is an option to add additional records which contains the credentials needed by the post rotation script. These credentials must be available to the Keeper Gateway.
-
-  * Specify an optional custom command to executed. In the below screenshot, a python script (`postRotationTest.py`) is attached, and a specific command to be used to execute the python script.
-
-After successfully selecting the script(s), the record will be updated to show
-the attached Post Rotation scripts:
-
-Click Save to create or update the record. Attached Post Rotation Scripts can
-be deleted or edited by clicking on their respective actions.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FBlKciADdzYLIjU7U2H9I%252FpostRotation1.png%3Falt%3Dmedia%26token%3D401d3f39-31a3-46f4-bb1c-34ef8879f382&width=768&dpr=4&quality=100&sign=f3ba5ba3&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6rj9bfD1Hehx2H1IWiLu%252Fimage.png%3Falt%3Dmedia%26token%3D790e05f5-45ed-4f72-9320-756e77326779&width=768&dpr=4&quality=100&sign=ff28da42&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZvKxKi8ninqof9UZ9wE1%252FpostRotation2.png%3Falt%3Dmedia%26token%3D658e3d53-4cb1-44bb-9636-5cbaf1e5211e&width=768&dpr=4&quality=100&sign=445032fe&sv=2)
 

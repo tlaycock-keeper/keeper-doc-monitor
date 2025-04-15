@@ -305,19 +305,21 @@ reference/reporting-commands?fallback=true)
         * [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible/ansible-tower)
 
       * [AWS CLI Credential Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-process)
-      * [AWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
-      * [AWS KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+      * [AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+      * [AWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
       * [Azure DevOps Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
-      * [Azure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Sync](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
       * [Bitbucket Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
       * [Docker Image](/en/keeperpam/secrets-manager/integrations/docker-image)
       * [Docker Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
       * [Docker Writer Image](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-      * [Entrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
-      * [GCP Secret Manager](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Entrust HSM Encryption](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
       * [Git - Sign Commits with SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
       * [GitHub Actions](/en/keeperpam/secrets-manager/integrations/github-actions)
       * [GitLab](/en/keeperpam/secrets-manager/integrations/gitlab-plugin)
+      * [Google Cloud Secret Manager Sync](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Google Cloud Key Management Encryption](/en/keeperpam/secrets-manager/integrations/google-cloud-key-management-encryption)
       * [Hashicorp Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
       * [Heroku](/en/keeperpam/secrets-manager/integrations/heroku)
       * [Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
@@ -326,11 +328,11 @@ reference/reporting-commands?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
-      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
+      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [Terraform Plugin](/en/keeperpam/secrets-manager/integrations/terraform)
 
         * [Terraform Registry](https://registry.terraform.io/providers/Keeper-Security/secretsmanager/latest/docs/data-sources/address)
@@ -517,6 +519,14 @@ au**dit-log command**
 
 **command:**`audit-log`
 
+**Detail:** Download event data from the Advanced Reporting & Alerts Module
+("ARAM") to your local Commander instance, and then push the events to a SIEM
+provider. For a fully automated process, we recommend using the cloud-based
+[SIEM export](https://docs.keeper.io/enterprise-guide/event-reporting)
+available in the Keeper Admin Console. For more information about the
+automated export [see this link](https://docs.keeper.io/enterprise-
+guide/event-reporting).
+
 The audit-log command provides a SIEM push capability if the Keeper backend
 servers are not able to access the target endpoint. It can also be useful if
 you would like to just export events locally to a JSON file. Note that a
@@ -583,6 +593,9 @@ Copy
 ###
 
 audit-report command
+
+Running reports requires the [ARAM](https://docs.keeper.io/enterprise-
+guide/event-reporting) add-on.
 
 **Command:**`audit-report`
 
@@ -750,6 +763,10 @@ or use the following format for a custom date range:
 `"between %Y-%m-%dT%H:%M:%SZ and %Y-%m-%dT%H:%M:%SZ"`
 
 example: `"between 2022-01-01 and 2022-06-01"`
+
+\--event-type <EVENT CODE> filter by event type**.** See a list of all
+available event types [here](https://docs.keeper.io/enterprise-guide/event-
+reporting#event-list)
 
 \--username <USERNAME> filter by username
 
@@ -1062,6 +1079,13 @@ shared-records-report command
 
 **Command:**`shared-records-report `or` srr`
 
+**Details:** Display information about shared records (Note: the displayed
+information is limited to records shared _by_ the caller with other users,
+i.e., this excludes records shared _with_ the caller by other users. To
+include both types of records, see [`share-report`
+command](https://docs.keeper.io/secrets-manager/commander-cli/command-
+reference/reporting-commands#share-report-command))
+
 **Parameters:**
 
 Path or UID of folder containing the records to be shown in report. Optional
@@ -1199,6 +1223,11 @@ Copy
 
 aging-report command
 
+This advanced report requires the Advanced Reporting & Alert module, and
+Compliance module. For more information see the dedicated [Compliance Reports
+Page](/en/keeperpam/commander-cli/command-reference/enterprise-management-
+commands/compliance-commands)
+
 **Command:**`aging-report`
 
 **Details:** Determine which record passwords have NOT been changed in a
@@ -1297,6 +1326,9 @@ Copy
 ###
 
 action-report command
+
+Requires [ARAM ](https://docs.keeper.io/enterprise-guide/event-reporting)add-
+on
 
 **Command:**`action-report`
 
@@ -1398,7 +1430,7 @@ Copy
     
     action-report -t invited -a delete -d 90
 
-  1. 
+  1. [Transfer ](https://docs.keeper.io/enterprise-guide/account-transfer-policy)the vaults of all users that have been locked for 90 days to a designated vault.
 
 Copy
 
@@ -1417,6 +1449,13 @@ Copy
 ###
 
 compliance-report command
+
+Requires [Compliance Reporting](https://docs.keeper.io/enterprise-
+guide/compliance-reports) add-on
+
+For more information see the dedicated [Compliance Reports
+Page](/en/keeperpam/commander-cli/command-reference/enterprise-management-
+commands/compliance-commands)
 
 **Command:**`compliance-report`
 
@@ -1491,6 +1530,13 @@ Copy
 
 Compliance Team Report
 
+Requires [Compliance Reporting](https://docs.keeper.io/enterprise-
+guide/compliance-reports) add-on
+
+For more information see the dedicated [Compliance Reports
+Page](/en/keeperpam/commander-cli/command-reference/enterprise-management-
+commands/compliance-commands)
+
 **Command:**`compliance team-report`
 
 **Details:** Generate a report of teams with access to each shared-folder
@@ -1532,6 +1578,14 @@ Copy
 ###
 
 Compliance Record-Access Report
+
+Requires [Compliance Reporting](https://docs.keeper.io/enterprise-
+guide/compliance-reports) and [ARAM ](https://docs.keeper.io/enterprise-
+guide/event-reporting)add-ons
+
+For more information see the dedicated [Compliance Reports
+Page](/en/keeperpam/commander-cli/command-reference/enterprise-management-
+commands/compliance-commands)
 
 **Command:**`compliance record-access-report` or `compliance rar`
 
@@ -1590,6 +1644,17 @@ recommend using the `audit-report` command. For pushes of event data into on-
 prem SIEM, the `audit-log` command is a good choice because it automatically
 tracks the last event exported and only sends incremental updates. The list of
 over 100 event types is documented in our Enterprise Guide:
+
+<https://docs.keeper.io/enterprise-guide/event-
+reporting>[](https://docs.keeper.io/enterprise-guide/event-reporting)
+
+Using Commander for SIEM integration works well in an on-prem environment
+where the HTTP event collector is only available within your network. The
+Keeper Admin Console version 13.3+ is capable of integrating our backend event
+data into your SIEM solution but it requires that you are utilizing a cloud-
+based SIEM solution. If you need assistance in integrating Keeper into your
+SIEM solution without Commander, please contact our business support team at
+[business.support@keepersecurity.com](mailto:business.support@keepersecurity.com).
 
 ###
 
@@ -2069,92 +2134,6 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-**Detail:** Download event data from the Advanced Reporting & Alerts Module
-("ARAM") to your local Commander instance, and then push the events to a SIEM
-provider. For a fully automated process, we recommend using the cloud-based
-available in the Keeper Admin Console. For more information about the
-automated export .
-
-Running reports requires the  add-on.
-
-\--event-type <EVENT CODE> filter by event type**.** See a list of all
-available event types
-
-**Details:** Display information about shared records (Note: the displayed
-information is limited to records shared _by_ the caller with other users,
-i.e., this excludes records shared _with_ the caller by other users. To
-include both types of records, see )
-
-This advanced report requires the Advanced Reporting & Alert module, and
-Compliance module. For more information see the dedicated
-
-Requires add-on
-
-the vaults of all users that have been locked for 90 days to a designated
-vault.
-
-Requires  add-on
-
-For more information see the dedicated
-
-Requires  add-on
-
-For more information see the dedicated
-
-Requires  and add-ons
-
-For more information see the dedicated
-
-Using Commander for SIEM integration works well in an on-prem environment
-where the HTTP event collector is only available within your network. The
-Keeper Admin Console version 13.3+ is capable of integrating our backend event
-data into your SIEM solution but it requires that you are utilizing a cloud-
-based SIEM solution. If you need assistance in integrating Keeper into your
-SIEM solution without Commander, please contact our business support team at .
-
-[SIEM export](https://docs.keeper.io/enterprise-guide/event-reporting)
-
-[see this link](https://docs.keeper.io/enterprise-guide/event-reporting)
-
-[ARAM](https://docs.keeper.io/enterprise-guide/event-reporting)
-
-[here](https://docs.keeper.io/enterprise-guide/event-reporting#event-list)
-
-[`share-report` command](https://docs.keeper.io/secrets-manager/commander-
-cli/command-reference/reporting-commands#share-report-command)
-
-[Compliance Reports Page](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands/compliance-commands)
-
-[ARAM ](https://docs.keeper.io/enterprise-guide/event-reporting)
-
-[Transfer ](https://docs.keeper.io/enterprise-guide/account-transfer-policy)
-
-[Compliance Reporting](https://docs.keeper.io/enterprise-guide/compliance-
-reports)
-
-[Compliance Reports Page](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands/compliance-commands)
-
-[Compliance Reporting](https://docs.keeper.io/enterprise-guide/compliance-
-reports)
-
-[Compliance Reports Page](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands/compliance-commands)
-
-[Compliance Reporting](https://docs.keeper.io/enterprise-guide/compliance-
-reports)
-
-[ARAM ](https://docs.keeper.io/enterprise-guide/event-reporting)
-
-[Compliance Reports Page](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands/compliance-commands)
-
-<https://docs.keeper.io/enterprise-guide/event-
-reporting>[](https://docs.keeper.io/enterprise-guide/event-reporting)
-
-[business.support@keepersecurity.com](mailto:business.support@keepersecurity.com)
 
 [`breachwatch report`](https://docs.keeper.io/secrets-manager/commander-
 cli/command-reference/reporting-commands#breachwatch-report-command)

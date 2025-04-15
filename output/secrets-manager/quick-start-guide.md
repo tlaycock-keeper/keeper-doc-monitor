@@ -299,19 +299,21 @@ guide?fallback=true)
         * [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible/ansible-tower)
 
       * [AWS CLI Credential Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-process)
-      * [AWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
-      * [AWS KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+      * [AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+      * [AWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
       * [Azure DevOps Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
-      * [Azure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Sync](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
       * [Bitbucket Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
       * [Docker Image](/en/keeperpam/secrets-manager/integrations/docker-image)
       * [Docker Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
       * [Docker Writer Image](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-      * [Entrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
-      * [GCP Secret Manager](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Entrust HSM Encryption](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
       * [Git - Sign Commits with SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
       * [GitHub Actions](/en/keeperpam/secrets-manager/integrations/github-actions)
       * [GitLab](/en/keeperpam/secrets-manager/integrations/gitlab-plugin)
+      * [Google Cloud Secret Manager Sync](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Google Cloud Key Management Encryption](/en/keeperpam/secrets-manager/integrations/google-cloud-key-management-encryption)
       * [Hashicorp Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
       * [Heroku](/en/keeperpam/secrets-manager/integrations/heroku)
       * [Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
@@ -320,11 +322,11 @@ guide?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
-      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
+      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [Terraform Plugin](/en/keeperpam/secrets-manager/integrations/terraform)
 
         * [Terraform Registry](https://registry.terraform.io/providers/Keeper-Security/secretsmanager/latest/docs/data-sources/address)
@@ -573,6 +575,12 @@ policies.
 
   4. Enable Keeper Secrets Manager policies as required
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9wMASX6k3ZiGRVx7m2oE%252FScreenshot%25202024-12-26%2520at%252012.04.24%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Df85ce4fe-7a5c-4e63-a78d-fc39f4d5d9d6&width=768&dpr=4&quality=100&sign=b67431fe&sv=2)
+
+Secrets Manager enforcement policies
+
 Note: This screenshot is based on the new [Preview
 Console](/en/keeperpam/privileged-access-manager/setup-steps).
 
@@ -657,10 +665,6 @@ Create Additional Client Devices (optional)
 Once the Secrets Manager Application is created, more Client Devices can be
 created for the Application.
 
-See the [documented instructions](/en/keeperpam/secrets-manager/about/one-
-time-token#with-an-existing-application) to create additional Client Devices
-and One-Time Access Token
-
 Secrets Manager is now setup and ready to use!
 
 ##
@@ -731,11 +735,6 @@ Copy
     
     
     $ ksm profile init --token PASTE_TOKEN_HERE
-
-If the KSM profile is not initialized successfully, the One Time Access Token
-may have expired. Try [creating a new Client Device](/en/keeperpam/secrets-
-manager/about/one-time-token#with-an-existing-application) to generate a new
-One-Time Access Token.
 
 ###
 
@@ -919,24 +918,13 @@ Continue Quick Start Guide
 
 Secrets Manager is now setup and ready to use!
 
-From here, Secrets Manager can be setup using the Keeper Vault, or Keeper
-Commander. The following instructions show the steps for using the Keeper
-Vault. For Commander CLI steps, see .
-
-From this point forward, follow the  to access Secrets using Secrets Manager
-and complete this guide.
-
-[the instructions at the bottom of this page](/en/keeperpam/secrets-
-manager/quick-start-guide#setup-using-keeper-commander-cli)
-
-[instructions above](/en/keeperpam/secrets-manager/quick-start-guide#access-
-secrets-with-secrets-manager)
-
 Start Free Trial
 
 Add a Keeper role
 
-Secrets Manager enforcement policies
+From here, Secrets Manager can be setup using the Keeper Vault, or Keeper
+Commander. The following instructions show the steps for using the Keeper
+Vault. For Commander CLI steps, see .
 
 Create New button in the Keeper vault
 
@@ -958,13 +946,25 @@ A completed "Add Application" form
 
 A One-Time Access Token is generated when a Client Device is created
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9wMASX6k3ZiGRVx7m2oE%252FScreenshot%25202024-12-26%2520at%252012.04.24%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Df85ce4fe-7a5c-4e63-a78d-fc39f4d5d9d6&width=768&dpr=4&quality=100&sign=b67431fe&sv=2)
+See the  to create additional Client Devices and One-Time Access Token
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNhfADxuH7QR80MwgKsYO%252FScreen%2520Shot%25202022-01-07%2520at%25201.28.07%2520PM.png%3Falt%3Dmedia%26token%3D0c8a4bb6-ce0f-4a76-8823-2d8612865bcd&width=768&dpr=4&quality=100&sign=e4337abe&sv=2)
+If the KSM profile is not initialized successfully, the One Time Access Token
+may have expired. Try  to generate a new One-Time Access Token.
+
+From this point forward, follow the  to access Secrets using Secrets Manager
+and complete this guide.
+
+[the instructions at the bottom of this page](/en/keeperpam/secrets-
+manager/quick-start-guide#setup-using-keeper-commander-cli)
+
+[instructions above](/en/keeperpam/secrets-manager/quick-start-guide#access-
+secrets-with-secrets-manager)
+
+[documented instructions](/en/keeperpam/secrets-manager/about/one-time-
+token#with-an-existing-application)
+
+[creating a new Client Device](/en/keeperpam/secrets-manager/about/one-time-
+token#with-an-existing-application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MgS3wjqgG-LoAx-
@@ -973,15 +973,19 @@ overview.png%3Falt%3Dmedia%26token%3D0100630b-af34-462a-874f-1dbf183fb726&width=
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNhfADxuH7QR80MwgKsYO%252FScreen%2520Shot%25202022-01-07%2520at%25201.28.07%2520PM.png%3Falt%3Dmedia%26token%3D0c8a4bb6-ce0f-4a76-8823-2d8612865bcd&width=768&dpr=4&quality=100&sign=e4337abe&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYt6M4J0MAswGiBeuWLld%252Fadd%2520role.png%3Falt%3Dmedia%26token%3D3a2ef309-44a5-4220-8df9-6772a9a6002d&width=768&dpr=4&quality=100&sign=48844f32&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJbmBKgn2PNTZcVMz6j1T%252Fcreate%2520new.png%3Falt%3Dmedia%26token%3Da06314ec-e95d-4326-9838-2bca06b1f726&width=768&dpr=4&quality=100&sign=e9a556ca&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIMcLUmOJownzvKCPMQzf%252Fcreate%2520new%2520shared%2520folder%2520highlighted.png%3Falt%3Dmedia%26token%3D5fcee136-2d21-41a9-a428-b70645ce6013&width=768&dpr=4&quality=100&sign=31b3e1f7&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYt6M4J0MAswGiBeuWLld%252Fadd%2520role.png%3Falt%3Dmedia%26token%3D3a2ef309-44a5-4220-8df9-6772a9a6002d&width=768&dpr=4&quality=100&sign=48844f32&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -997,7 +1001,8 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlezLERMM1
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfS3uOY84OsE1zXFoyYR8%252Fapp%2520form%2520choose%2520folder.png%3Falt%3Dmedia%26token%3D8636a87c-2030-419e-a1a2-3d70955e288f&width=768&dpr=4&quality=100&sign=6ede5864&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FoKgb8M4ENc5vOA70Snp4%252Fapp%2520form%2520name%2520only.png%3Falt%3Dmedia%26token%3D336c2173-64d9-46e8-97ba-
+da8ff914fb9d&width=768&dpr=4&quality=100&sign=7dd41e6b&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -1005,12 +1010,11 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYA7K1sEda
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FoKgb8M4ENc5vOA70Snp4%252Fapp%2520form%2520name%2520only.png%3Falt%3Dmedia%26token%3D336c2173-64d9-46e8-97ba-
-da8ff914fb9d&width=768&dpr=4&quality=100&sign=7dd41e6b&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPgDwQiCrwyCzynqZniPp%252Fdevice%2520form%2520one%2520time%2520token.png%3Falt%3Dmedia%26token%3D8e7db73c-643b-42c2-a6bc-82dc64b629b1&width=768&dpr=4&quality=100&sign=6d2301e3&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPgDwQiCrwyCzynqZniPp%252Fdevice%2520form%2520one%2520time%2520token.png%3Falt%3Dmedia%26token%3D8e7db73c-643b-42c2-a6bc-82dc64b629b1&width=768&dpr=4&quality=100&sign=6d2301e3&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfS3uOY84OsE1zXFoyYR8%252Fapp%2520form%2520choose%2520folder.png%3Falt%3Dmedia%26token%3D8636a87c-2030-419e-a1a2-3d70955e288f&width=768&dpr=4&quality=100&sign=6ede5864&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

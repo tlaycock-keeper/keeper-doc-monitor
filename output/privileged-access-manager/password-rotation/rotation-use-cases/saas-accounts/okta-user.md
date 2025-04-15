@@ -315,19 +315,21 @@ user?fallback=true)
         * [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible/ansible-tower)
 
       * [AWS CLI Credential Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-process)
-      * [AWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
-      * [AWS KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+      * [AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+      * [AWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
       * [Azure DevOps Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
-      * [Azure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Sync](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
       * [Bitbucket Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
       * [Docker Image](/en/keeperpam/secrets-manager/integrations/docker-image)
       * [Docker Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
       * [Docker Writer Image](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-      * [Entrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
-      * [GCP Secret Manager](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Entrust HSM Encryption](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
       * [Git - Sign Commits with SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
       * [GitHub Actions](/en/keeperpam/secrets-manager/integrations/github-actions)
       * [GitLab](/en/keeperpam/secrets-manager/integrations/gitlab-plugin)
+      * [Google Cloud Secret Manager Sync](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Google Cloud Key Management Encryption](/en/keeperpam/secrets-manager/integrations/google-cloud-key-management-encryption)
       * [Hashicorp Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
       * [Heroku](/en/keeperpam/secrets-manager/integrations/heroku)
       * [Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
@@ -336,11 +338,11 @@ user?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
-      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
+      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [Terraform Plugin](/en/keeperpam/secrets-manager/integrations/terraform)
 
         * [Terraform Registry](https://registry.terraform.io/providers/Keeper-Security/secretsmanager/latest/docs/data-sources/address)
@@ -462,44 +464,10 @@ PDF](/en/keeperpam/~gitbook/pdf?page=1pETl8RervngFrGh7NaV&only=yes&limit=100)
 
 Rotating Okta user accounts using the Okta API
 
-[PreviousSaaS Accounts](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/saas-accounts)[NextSnowflake
-User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/saas-accounts/snowflake-user)
-
-Last updated 2 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkOE9dPTinmRAqz7vm4Ea%252FRotation-
+Okta.jpg%3Falt%3Dmedia%26token%3D200795aa-c9c3-4bbc-85d1-2b6048b243ff&width=768&dpr=4&quality=100&sign=6af9fc95&sv=2)
 
 ##
 
@@ -537,6 +505,12 @@ Obtain Okta API Token
 
   3. Name this record "Okta API Access Details" as this title will be used to fetch the record in the script later.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F1FcAdAA90o9thGpkKLlU%252Fokta_api_details.png%3Falt%3Dmedia%26token%3Dbf20baa0-6248-4277-a7b5-02b176c624a6&width=768&dpr=4&quality=100&sign=888567f6&sv=2)
+
+Okta API Details Record
+
 ###
 
 Step 2: Set Up Rotation Record
@@ -562,6 +536,12 @@ Step 3: Add PAM Script
 In the example below, we'll use the bash script because the Keeper Gateway is
 running as a Docker container.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFjPwq2Env5bnhuIb5UKp%252FScreenshot%25202025-02-09%2520at%25203.38.18%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Ddeb92dbd-831f-40d1-9d13-e8e8220c78ed&width=768&dpr=4&quality=100&sign=99029483&sv=2)
+
+PAM Script
+
 ###
 
 Step 4: Configure Password Rotation Settings
@@ -569,6 +549,12 @@ Step 4: Configure Password Rotation Settings
   * **Rotation Type:** Set it to "Run PAM scripts only"
 
   * **PAM Configuration** : Select the configuration for your environment
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4xs9m0iC3FIX9Rt68iYp%252FScreenshot%25202025-02-09%2520at%25203.14.10%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dbedbec42-2f55-44c7-8c3a-38d622100362&width=768&dpr=4&quality=100&sign=be64b21c&sv=2)
+
+Password Rotation Settings
 
 ###
 
@@ -784,26 +770,42 @@ Copy
         loop.run_until_complete(main())
     
 
-Okta API Details Record
+[PreviousSaaS Accounts](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-accounts)[NextSnowflake
+User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/saas-accounts/snowflake-user)
 
-PAM Script
+Last updated 2 months ago
 
-Password Rotation Settings
+Was this helpful?
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkOE9dPTinmRAqz7vm4Ea%252FRotation-
-Okta.jpg%3Falt%3Dmedia%26token%3D200795aa-c9c3-4bbc-85d1-2b6048b243ff&width=768&dpr=4&quality=100&sign=6af9fc95&sv=2)
+#### Company
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F1FcAdAA90o9thGpkKLlU%252Fokta_api_details.png%3Falt%3Dmedia%26token%3Dbf20baa0-6248-4277-a7b5-02b176c624a6&width=768&dpr=4&quality=100&sign=888567f6&sv=2)
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFjPwq2Env5bnhuIb5UKp%252FScreenshot%25202025-02-09%2520at%25203.38.18%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Ddeb92dbd-831f-40d1-9d13-e8e8220c78ed&width=768&dpr=4&quality=100&sign=99029483&sv=2)
+#### Support
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4xs9m0iC3FIX9Rt68iYp%252FScreenshot%25202025-02-09%2520at%25203.14.10%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dbedbec42-2f55-44c7-8c3a-38d622100362&width=768&dpr=4&quality=100&sign=be64b21c&sv=2)
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

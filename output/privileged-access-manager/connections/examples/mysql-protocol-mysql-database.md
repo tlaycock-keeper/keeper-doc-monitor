@@ -313,19 +313,21 @@ database?fallback=true)
         * [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible/ansible-tower)
 
       * [AWS CLI Credential Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-process)
-      * [AWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
-      * [AWS KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+      * [AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+      * [AWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
       * [Azure DevOps Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
-      * [Azure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Sync](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
       * [Bitbucket Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
       * [Docker Image](/en/keeperpam/secrets-manager/integrations/docker-image)
       * [Docker Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
       * [Docker Writer Image](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-      * [Entrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
-      * [GCP Secret Manager](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Entrust HSM Encryption](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
       * [Git - Sign Commits with SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
       * [GitHub Actions](/en/keeperpam/secrets-manager/integrations/github-actions)
       * [GitLab](/en/keeperpam/secrets-manager/integrations/gitlab-plugin)
+      * [Google Cloud Secret Manager Sync](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Google Cloud Key Management Encryption](/en/keeperpam/secrets-manager/integrations/google-cloud-key-management-encryption)
       * [Hashicorp Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
       * [Heroku](/en/keeperpam/secrets-manager/integrations/heroku)
       * [Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
@@ -334,11 +336,11 @@ database?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
-      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
+      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [Terraform Plugin](/en/keeperpam/secrets-manager/integrations/terraform)
 
         * [Terraform Registry](https://registry.terraform.io/providers/Keeper-Security/secretsmanager/latest/docs/data-sources/address)
@@ -459,6 +461,46 @@ PDF](/en/keeperpam/~gitbook/pdf?page=hSsg7HrSdkyMBy5bnbxE&only=yes&limit=100)
 
 Establish a connection to a MySQL Database directly from your Vault
 
+[PreviousRDP Protocol - Azure Virtual Machine](/en/keeperpam/privileged-
+access-manager/connections/examples/rdp-protocol-azure-virtual-
+machine)[NextPostgreSQL Protocol - PostgreSQL
+Database](/en/keeperpam/privileged-access-
+manager/connections/examples/postgresql-protocol-postgresql-database)
+
+Last updated 2 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ##
 
 Overview
@@ -473,15 +515,7 @@ Summary
 
 For this setup, you need to do the following:
 
-  1. [Enable the Connection Enforcement Policies](/en/keeperpam/privileged-access-manager/connections/examples/mysql-protocol-mysql-database#step-1-enable-connection-enforcement-policies)
-
-  2. [Install and Configure the Keeper Gateway](/en/keeperpam/privileged-access-manager/connections/examples/mysql-protocol-mysql-database#step-2-install-and-configure-the-keeper-gateway)
-
-  3. [Create and configure the PAM Configuration File ](/en/keeperpam/privileged-access-manager/connections/examples/mysql-protocol-mysql-database#step-3-configuring-the-pam-configuration)
-
-  4. [Create the PAM Database and PAM User record types](/en/keeperpam/privileged-access-manager/connections/examples/mysql-protocol-mysql-database#step-4-create-and-configure-pam-database-and-pam-user-s-records)
-
-  5. [Configure PAM Settings and the MySQL Connection Protocol](/en/keeperpam/privileged-access-manager/connections/examples/mysql-protocol-mysql-database#step-5-configuring-pam-settings-and-mysql-protocol)
+  1.   2.   3.   4.   5. 
 
 After completing the above, you can launch zero-trust connections to the MySQL
 Database directly from your Keeper Vault.
@@ -631,43 +665,23 @@ be shared. For example, if the PAM Database is configured with a MySQL
 Database, the recipient can connect to the MySQL Database on the PAM Database
 record without having direct access to the linked credentials.
 
-[PreviousRDP Protocol - Azure Virtual Machine](/en/keeperpam/privileged-
-access-manager/connections/examples/rdp-protocol-azure-virtual-
-machine)[NextPostgreSQL Protocol - PostgreSQL
-Database](/en/keeperpam/privileged-access-
-manager/connections/examples/postgresql-protocol-postgresql-database)
+[Enable the Connection Enforcement Policies](/en/keeperpam/privileged-access-
+manager/connections/examples/mysql-protocol-mysql-database#step-1-enable-
+connection-enforcement-policies)
 
-Last updated 1 month ago
+[Install and Configure the Keeper Gateway](/en/keeperpam/privileged-access-
+manager/connections/examples/mysql-protocol-mysql-database#step-2-install-and-
+configure-the-keeper-gateway)
 
-Was this helpful?
+[Create and configure the PAM Configuration File ](/en/keeperpam/privileged-
+access-manager/connections/examples/mysql-protocol-mysql-
+database#step-3-configuring-the-pam-configuration)
 
-#### Company
+[Create the PAM Database and PAM User record types](/en/keeperpam/privileged-
+access-manager/connections/examples/mysql-protocol-mysql-
+database#step-4-create-and-configure-pam-database-and-pam-user-s-records)
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+[Configure PAM Settings and the MySQL Connection
+Protocol](/en/keeperpam/privileged-access-manager/connections/examples/mysql-
+protocol-mysql-database#step-5-configuring-pam-settings-and-mysql-protocol)
 

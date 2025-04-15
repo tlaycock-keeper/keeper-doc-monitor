@@ -305,19 +305,21 @@ reference/record-commands?fallback=true)
         * [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible/ansible-tower)
 
       * [AWS CLI Credential Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-process)
-      * [AWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
-      * [AWS KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+      * [AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+      * [AWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
       * [Azure DevOps Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
-      * [Azure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Sync](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
       * [Bitbucket Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
       * [Docker Image](/en/keeperpam/secrets-manager/integrations/docker-image)
       * [Docker Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
       * [Docker Writer Image](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-      * [Entrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
-      * [GCP Secret Manager](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Entrust HSM Encryption](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
       * [Git - Sign Commits with SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
       * [GitHub Actions](/en/keeperpam/secrets-manager/integrations/github-actions)
       * [GitLab](/en/keeperpam/secrets-manager/integrations/gitlab-plugin)
+      * [Google Cloud Secret Manager Sync](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Google Cloud Key Management Encryption](/en/keeperpam/secrets-manager/integrations/google-cloud-key-management-encryption)
       * [Hashicorp Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
       * [Heroku](/en/keeperpam/secrets-manager/integrations/heroku)
       * [Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
@@ -326,11 +328,11 @@ reference/record-commands?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
-      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
+      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [Terraform Plugin](/en/keeperpam/secrets-manager/integrations/terraform)
 
         * [Terraform Registry](https://registry.terraform.io/providers/Keeper-Security/secretsmanager/latest/docs/data-sources/address)
@@ -488,6 +490,9 @@ Command
 
 Explanation
 
+[`list`](/en/keeperpam/commander-cli/command-reference/record-commands#list-
+command) or `l`
+
 List all records or search via a regular expression.
 
 `search` or `s`
@@ -498,27 +503,54 @@ Search all records via a regular expression.
 
 List folder contents
 
+[`tree`](/en/keeperpam/commander-cli/command-reference/record-commands#tree-
+command)
+
 Display entire folder structure as a tree
 
 `cd`
 
 Change current folder
 
+[`get`](/en/keeperpam/commander-cli/command-reference/record-commands#get-
+command) or `g`
+
 Retrieve and display a Keeper Record/Folder/Team in printable or JSON format.
 
+[`find-password`](/en/keeperpam/commander-cli/command-reference/record-
+commands#find-password-command)
+
 Display the specified Keeper Record password field to the system output
+
+[`clipboard-copy`](/en/keeperpam/commander-cli/command-reference/record-
+commands#clipboard-copy-command)
 
 Copy the specified Keeper Record password field to the clipboard or send to
 stdout
 
+[`record-history`](/en/keeperpam/commander-cli/command-reference/record-
+commands#record-history-command) or `rh`
+
 Show the history or a record's modifications
+
+[`totp`](/en/keeperpam/commander-cli/command-reference/record-commands#totp-
+command)
 
 Display the Two Factor code for a given record, or show a list of records with
 Two Factor codes if no record is specified
 
+[`download-attachment`](/en/keeperpam/commander-cli/command-reference/record-
+commands#download-attachment-command)
+
 Download all attachments of a specified record
 
+[`upload-attachment`](/en/keeperpam/commander-cli/command-reference/record-
+commands#upload-attachment-command)
+
 Upload and attach a file to a given record
+
+[`delete-attachment`](/en/keeperpam/commander-cli/command-reference/record-
+commands#delete-attachment-command)
 
 Delete an attachment from a given record
 
@@ -536,21 +568,33 @@ List all teams that you have access to
 
 `add` or `a`
 
+Deprecated: use [record-add](/en/keeperpam/commander-cli/command-
+reference/record-commands#record-add-and-record-update-commands)
+
 `record-add `or` ra`
 
 Add a record
 
 `edit`
 
+Deprecated: use [record-update](/en/keeperpam/commander-cli/command-
+reference/record-commands#record-add-and-record-update-commands)
+
 `record-update` or `ru`
 
 Edit an existing record
+
+[`rm`](/en/keeperpam/commander-cli/command-reference/record-commands#rm-
+command)
 
 Remove a record
 
 `append-notes` or `an`
 
 Append notes to a record
+
+[`mkdir`](/en/keeperpam/commander-cli/command-reference/record-commands#mkdir-
+command)
 
 Create a folder or shared folder
 
@@ -566,6 +610,9 @@ Move a record to or folder
 
 Create a link between records or folders
 
+[`find-duplicate`](/en/keeperpam/commander-cli/command-reference/record-
+commands#find-duplicate-command)
+
 Locate duplicate records in the vault (or several) based on specified
 attributes and fields.
 
@@ -573,13 +620,22 @@ attributes and fields.
 
 List or manage record shortcuts
 
+[`transform-folder`](/en/keeperpam/commander-cli/command-reference/record-
+commands#transform-folder-command)
+
 Transform a folder from a shared folder to a personal folder and vice versa
 
 `trash`
 
 List and manage deleted records in the trash
 
+[`password-report`](/en/keeperpam/commander-cli/command-reference/record-
+commands#password-report-command)
+
 Display password report
+
+[`find-ownerless`](/en/keeperpam/commander-cli/command-reference/record-
+commands#find-ownerless)
 
 List (and, optionally, claim) records in the vault that currently do not have
 an owner
@@ -1966,7 +2022,7 @@ reference/enterprise-management-commands/scim-push-configuration)[NextRecord
 Type Commands](/en/keeperpam/commander-cli/command-reference/record-
 commands/record-type-commands)
 
-Last updated 27 days ago
+Last updated 28 days ago
 
 Was this helpful?
 
@@ -1999,68 +2055,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-or `l`
-
-or `g`
-
-or `rh`
-
-Deprecated: use
-
-Deprecated: use
-
-[`list`](/en/keeperpam/commander-cli/command-reference/record-commands#list-
-command)
-
-[`tree`](/en/keeperpam/commander-cli/command-reference/record-commands#tree-
-command)
-
-[`get`](/en/keeperpam/commander-cli/command-reference/record-commands#get-
-command)
-
-[`find-password`](/en/keeperpam/commander-cli/command-reference/record-
-commands#find-password-command)
-
-[`clipboard-copy`](/en/keeperpam/commander-cli/command-reference/record-
-commands#clipboard-copy-command)
-
-[`record-history`](/en/keeperpam/commander-cli/command-reference/record-
-commands#record-history-command)
-
-[`totp`](/en/keeperpam/commander-cli/command-reference/record-commands#totp-
-command)
-
-[`download-attachment`](/en/keeperpam/commander-cli/command-reference/record-
-commands#download-attachment-command)
-
-[`upload-attachment`](/en/keeperpam/commander-cli/command-reference/record-
-commands#upload-attachment-command)
-
-[`delete-attachment`](/en/keeperpam/commander-cli/command-reference/record-
-commands#delete-attachment-command)
-
-[record-add](/en/keeperpam/commander-cli/command-reference/record-
-commands#record-add-and-record-update-commands)
-
-[record-update](/en/keeperpam/commander-cli/command-reference/record-
-commands#record-add-and-record-update-commands)
-
-[`rm`](/en/keeperpam/commander-cli/command-reference/record-commands#rm-
-command)
-
-[`mkdir`](/en/keeperpam/commander-cli/command-reference/record-commands#mkdir-
-command)
-
-[`find-duplicate`](/en/keeperpam/commander-cli/command-reference/record-
-commands#find-duplicate-command)
-
-[`transform-folder`](/en/keeperpam/commander-cli/command-reference/record-
-commands#transform-folder-command)
-
-[`password-report`](/en/keeperpam/commander-cli/command-reference/record-
-commands#password-report-command)
-
-[`find-ownerless`](/en/keeperpam/commander-cli/command-reference/record-
-commands#find-ownerless)
 

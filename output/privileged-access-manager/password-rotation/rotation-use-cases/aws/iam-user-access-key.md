@@ -315,19 +315,21 @@ key?fallback=true)
         * [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible/ansible-tower)
 
       * [AWS CLI Credential Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-process)
-      * [AWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
-      * [AWS KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+      * [AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+      * [AWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
       * [Azure DevOps Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
-      * [Azure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Sync](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
       * [Bitbucket Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
       * [Docker Image](/en/keeperpam/secrets-manager/integrations/docker-image)
       * [Docker Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
       * [Docker Writer Image](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-      * [Entrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
-      * [GCP Secret Manager](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Entrust HSM Encryption](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
       * [Git - Sign Commits with SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
       * [GitHub Actions](/en/keeperpam/secrets-manager/integrations/github-actions)
       * [GitLab](/en/keeperpam/secrets-manager/integrations/gitlab-plugin)
+      * [Google Cloud Secret Manager Sync](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Google Cloud Key Management Encryption](/en/keeperpam/secrets-manager/integrations/google-cloud-key-management-encryption)
       * [Hashicorp Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
       * [Heroku](/en/keeperpam/secrets-manager/integrations/heroku)
       * [Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
@@ -336,11 +338,11 @@ key?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
-      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
+      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [Terraform Plugin](/en/keeperpam/secrets-manager/integrations/terraform)
 
         * [Terraform Registry](https://registry.terraform.io/providers/Keeper-Security/secretsmanager/latest/docs/data-sources/address)
@@ -797,7 +799,9 @@ Rotation Configuration From the Vault:
 
   1. Create a shared folder in the vault
 
-  2.   3. In the Secret Manager tab of the Keeper vault, create a new application for the gateway if there is no gateway yet. 
+  2. Create a PAM User record in the shared folder with the fields and custom fields described [above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements).
+
+  3. In the Secret Manager tab of the Keeper vault, create a new application for the gateway if there is no gateway yet. 
 
   4. Make sure the Application has edit permissions on the shared folder created above.
 
@@ -822,7 +826,9 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHtbVyJz1I
 
 PAM Configuration without providing an AWS access key
 
-  1.      * Password Rotation Settings: select your desired schedule and the PAM configuration created above.
+  1. Edit the PAM User record previously described in this [documentation](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements):
+
+     * Password Rotation Settings: select your desired schedule and the PAM configuration created above.
 
      * Add PAM Script to the record: select the provided file below and make sure to specify the script command:
 
@@ -849,7 +855,7 @@ Configuration From the Keeper Vault:
 
   1. Create a shared folder in the vault
 
-  2. 
+  2. Create a PAM User record in the shared folder with the fields and custom fields described [above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements).
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -880,7 +886,9 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwmTsOCAse
 
 AWS PAM Config
 
-  1.      * Password Rotation Settings: select your desired schedule and the PAM configuration created above.
+  1. Edit the PAM User record previously described in this [documentation](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements): 
+
+     * Password Rotation Settings: select your desired schedule and the PAM configuration created above.
 
      * Add PAM Script to the record: select the provided file below and make sure to specify the script command:
 
@@ -924,6 +932,12 @@ Attach Rotation Credentials to a PAM Script
 The attached record could be any record type. It needs at least the two custom
 fields “aws_access_key_id” and “aws_secret_access_key” with the admin access
 key.
+
+Using the PAM User record type to store the admin access key allows you to
+also **automate the rotation of the admin access key**. Make sure to follow
+[those requirements](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-
+requirements) in that case.
 
 ###
 
@@ -1226,36 +1240,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-Create a PAM User record in the shared folder with the fields and custom
-fields described .
-
-Edit the PAM User record previously described in this :
-
-Create a PAM User record in the shared folder with the fields and custom
-fields described .
-
-Edit the PAM User record previously described in this :
-
-Using the PAM User record type to store the admin access key allows you to
-also **automate the rotation of the admin access key**. Make sure to follow
-in that case.
-
-[above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements)
-
-[documentation](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-
-requirements)
-
-[above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements)
-
-[documentation](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-
-requirements)
-
-[those requirements](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-
-requirements)
 

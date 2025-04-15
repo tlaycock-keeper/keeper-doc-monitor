@@ -305,19 +305,21 @@ manager/getting-started/pam-resources?fallback=true)
         * [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible/ansible-tower)
 
       * [AWS CLI Credential Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-process)
-      * [AWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
-      * [AWS KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+      * [AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+      * [AWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
       * [Azure DevOps Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
-      * [Azure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Sync](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
       * [Bitbucket Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
       * [Docker Image](/en/keeperpam/secrets-manager/integrations/docker-image)
       * [Docker Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
       * [Docker Writer Image](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-      * [Entrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
-      * [GCP Secret Manager](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Entrust HSM Encryption](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
       * [Git - Sign Commits with SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
       * [GitHub Actions](/en/keeperpam/secrets-manager/integrations/github-actions)
       * [GitLab](/en/keeperpam/secrets-manager/integrations/gitlab-plugin)
+      * [Google Cloud Secret Manager Sync](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Google Cloud Key Management Encryption](/en/keeperpam/secrets-manager/integrations/google-cloud-key-management-encryption)
       * [Hashicorp Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
       * [Heroku](/en/keeperpam/secrets-manager/integrations/heroku)
       * [Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
@@ -326,11 +328,11 @@ manager/getting-started/pam-resources?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
-      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
+      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [Terraform Plugin](/en/keeperpam/secrets-manager/integrations/terraform)
 
         * [Terraform Registry](https://registry.terraform.io/providers/Keeper-Security/secretsmanager/latest/docs/data-sources/address)
@@ -426,35 +428,6 @@ manager/getting-started/pam-resources?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * KeeperPAM Record Types
-  * Record Linking
-  * Creating a PAM Record
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=T0G0fGue5d2tTiFHAQOw&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-
-# PAM Resources
-
-Guide for using PAM Resource Records in the Keeper Vault for privileged access
-functionality.
-
-[PreviousLocal Environment Setup](/en/keeperpam/privileged-access-
-manager/getting-started/pam-configuration/local-environment-setup)[NextPAM
-Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -485,6 +458,35 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Overview
+  * KeeperPAM Record Types
+  * Record Linking
+  * Creating a PAM Record
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=T0G0fGue5d2tTiFHAQOw&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+# PAM Resources
+
+Guide for using PAM Resource Records in the Keeper Vault for privileged access
+functionality.
+
+[PreviousLocal Environment Setup](/en/keeperpam/privileged-access-
+manager/getting-started/pam-configuration/local-environment-setup)[NextPAM
+Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -493,7 +495,7 @@ KeeperPAM Resource records are special record types designed to organize and
 store information of your target infrastructure, machines, web apps, workloads
 and user accounts.
 
-  * [What's a Record Type?](https://docs.keeper.io/en/enterprise-guide/record-types)
+  * 
 
 ###
 
@@ -521,11 +523,8 @@ records can also be configured for scheduled or on-demand password rotation.
 
 Record Linking
 
-The PAM User record is special because it can be
-[linked](/en/keeperpam/privileged-access-manager/getting-started/record-
-linking) from the other resources. This way, you can [share
-access](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-
-access-control) to a Machine, Database, Directory or Remote Browser without
+The PAM User record is special because it can be  from the other resources.
+This way, you can  to a Machine, Database, Directory or Remote Browser without
 sharing access to the underlying credentials.
 
 ###
@@ -554,6 +553,15 @@ started/pam-resources/pam-remote-browser)
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
+
+[What's a Record Type?](https://docs.keeper.io/en/enterprise-guide/record-
+types)
+
+[linked](/en/keeperpam/privileged-access-manager/getting-started/record-
+linking)
+
+[share access](/en/keeperpam/privileged-access-manager/getting-
+started/sharing-and-access-control)
 
 Create a new PAM Resource Record
 

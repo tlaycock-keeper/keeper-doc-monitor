@@ -303,19 +303,21 @@ installation-setup?fallback=true)
         * [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible/ansible-tower)
 
       * [AWS CLI Credential Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-process)
-      * [AWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
-      * [AWS KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+      * [AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+      * [AWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
       * [Azure DevOps Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
-      * [Azure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Sync](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
       * [Bitbucket Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
       * [Docker Image](/en/keeperpam/secrets-manager/integrations/docker-image)
       * [Docker Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
       * [Docker Writer Image](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-      * [Entrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
-      * [GCP Secret Manager](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Entrust HSM Encryption](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
       * [Git - Sign Commits with SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
       * [GitHub Actions](/en/keeperpam/secrets-manager/integrations/github-actions)
       * [GitLab](/en/keeperpam/secrets-manager/integrations/gitlab-plugin)
+      * [Google Cloud Secret Manager Sync](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Google Cloud Key Management Encryption](/en/keeperpam/secrets-manager/integrations/google-cloud-key-management-encryption)
       * [Hashicorp Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
       * [Heroku](/en/keeperpam/secrets-manager/integrations/heroku)
       * [Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
@@ -324,11 +326,11 @@ installation-setup?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
-      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
+      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [Terraform Plugin](/en/keeperpam/secrets-manager/integrations/terraform)
 
         * [Terraform Registry](https://registry.terraform.io/providers/Keeper-Security/secretsmanager/latest/docs/data-sources/address)
@@ -424,6 +426,68 @@ installation-setup?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Commander CLI Install
+  * Developer Instructions
+  * Making Changes
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MeR6akVJ9USNnuBGLUD&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+
+# Installation and Setup
+
+Your first steps with Keeper Commander
+
+###
+
+Commander CLI Install
+
+Follow these instructions to install Keeper Commander on your system for CLI
+access
+
+[CLI Installation on Windows](/en/keeperpam/commander-cli/commander-
+installation-setup/installation-on-windows)[CLI Installation on
+macOS](/en/keeperpam/commander-cli/commander-installation-setup/installation-
+on-mac)[CLI Installation on Linux](/en/keeperpam/commander-cli/commander-
+installation-setup/installation-on-linux)
+
+###
+
+Developer Instructions
+
+Installing the CLI from source code with scripting capabilities
+
+[Python Developer Setup](/en/keeperpam/commander-cli/commander-installation-
+setup/developer-mode)[PowerShell Module](/en/keeperpam/commander-
+cli/commander-installation-setup/installation-on-powershell)[.NET Developer
+Setup](/en/keeperpam/commander-cli/commander-installation-setup/net-developer-
+sdk)
+
+###
+
+Making Changes
+
+In order to add additional modules, change source code or make other edits to
+Commander, you will need to Install Commander in Developer mode. Developer
+mode clones the Commander source code to your local machine in a virtual
+environment.
+
+[Python Developer Setup](/en/keeperpam/commander-cli/commander-installation-
+setup/developer-mode)
+
+[PreviousCommander Overview](/en/keeperpam/commander-cli/overview)[NextCLI
+Installation on Windows](/en/keeperpam/commander-cli/commander-installation-
+setup/installation-on-windows)
+
+Last updated 6 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -453,72 +517,4 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Commander CLI Install
-  * Developer Instructions
-  * Making Changes
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MeR6akVJ9USNnuBGLUD&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-
-# Installation and Setup
-
-Your first steps with Keeper Commander
-
-[PreviousCommander Overview](/en/keeperpam/commander-cli/overview)[NextCLI
-Installation on Windows](/en/keeperpam/commander-cli/commander-installation-
-setup/installation-on-windows)
-
-Last updated 6 months ago
-
-Was this helpful?
-
-###
-
-Commander CLI Install
-
-Follow these instructions to install Keeper Commander on your system for CLI
-access
-
-###
-
-Developer Instructions
-
-Installing the CLI from source code with scripting capabilities
-
-###
-
-Making Changes
-
-In order to add additional modules, change source code or make other edits to
-Commander, you will need to Install Commander in Developer mode. Developer
-mode clones the Commander source code to your local machine in a virtual
-environment.
-
-[CLI Installation on Windows](/en/keeperpam/commander-cli/commander-
-installation-setup/installation-on-windows)
-
-[CLI Installation on macOS](/en/keeperpam/commander-cli/commander-
-installation-setup/installation-on-mac)
-
-[CLI Installation on Linux](/en/keeperpam/commander-cli/commander-
-installation-setup/installation-on-linux)
-
-[Python Developer Setup](/en/keeperpam/commander-cli/commander-installation-
-setup/developer-mode)
-
-[PowerShell Module](/en/keeperpam/commander-cli/commander-installation-
-setup/installation-on-powershell)
-
-[.NET Developer Setup](/en/keeperpam/commander-cli/commander-installation-
-setup/net-developer-sdk)
-
-[Python Developer Setup](/en/keeperpam/commander-cli/commander-installation-
-setup/developer-mode)
 

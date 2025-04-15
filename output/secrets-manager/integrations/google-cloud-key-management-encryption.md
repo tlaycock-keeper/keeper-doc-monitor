@@ -12,49 +12,55 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/command-reference/plugins/pspasswd-plugin?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)
+[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/google-
+cloud-key-management-encryption?fallback=true)[Keeper Connection
+Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
+manager/integrations/google-cloud-key-management-
+encryption?fallback=true)[User Guides](https://docs.keeper.io/en/user-
+guides/secrets-manager/integrations/google-cloud-key-management-
+encryption?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
+notes/secrets-manager/integrations/google-cloud-key-management-
+encryption?fallback=true)[Enterprise
+Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
+manager/integrations/google-cloud-key-management-encryption?fallback=true)[MSP
+Guide](https://docs.keeper.io/en/msp-guide/secrets-
+manager/integrations/google-cloud-key-management-encryption?fallback=true)[SSO
+Connect Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
+manager/integrations/google-cloud-key-management-
+encryption?fallback=true)[KeeperPAM and Secrets
+Manager](https://docs.keeper.io/en/keeperpam/secrets-
+manager/integrations/google-cloud-key-management-encryption?fallback=true)[SSO
+Connect On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
+manager/integrations/google-cloud-key-management-
+encryption?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
+bridge/secrets-manager/integrations/google-cloud-key-management-
+encryption?fallback=true)
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/command-reference/plugins/pspasswd-plugin?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/command-
-reference/plugins/pspasswd-plugin?fallback=true)
+[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/google-
+cloud-key-management-encryption?fallback=true)[Keeper Connection
+Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
+manager/integrations/google-cloud-key-management-
+encryption?fallback=true)[User Guides](https://docs.keeper.io/en/user-
+guides/secrets-manager/integrations/google-cloud-key-management-
+encryption?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
+notes/secrets-manager/integrations/google-cloud-key-management-
+encryption?fallback=true)[Enterprise
+Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
+manager/integrations/google-cloud-key-management-encryption?fallback=true)[MSP
+Guide](https://docs.keeper.io/en/msp-guide/secrets-
+manager/integrations/google-cloud-key-management-encryption?fallback=true)[SSO
+Connect Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
+manager/integrations/google-cloud-key-management-
+encryption?fallback=true)[KeeperPAM and Secrets
+Manager](https://docs.keeper.io/en/keeperpam/secrets-
+manager/integrations/google-cloud-key-management-encryption?fallback=true)[SSO
+Connect On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
+manager/integrations/google-cloud-key-management-
+encryption?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
+bridge/secrets-manager/integrations/google-cloud-key-management-
+encryption?fallback=true)
 
   * [Overview](/en/keeperpam)
   * Privileged Access Manager
@@ -430,185 +436,591 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Features
   * Prerequisites
-  * Enabled Remote Service Management on each target computer
-  * Install pspasswd
-  * Prepare Record for Rotation
-  * Create a Record for Rotation
-  * Set the Login Name
-  * Rotate
+  * Setup
+  * 1\. Install Module
+  * 2\. Configure Google CKM Connection
+  * 3\. Add GCP Key Vault Storage to Your Code
+  * Using GCP Key Vault Integration
+  * Additional Options
+  * Change Key
+  * Decrypt Config
 
 Was this helpful?
 
 [Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-Mf4DVYRWGfT0NCa2Mls&only=yes&limit=100)
+PDF](/en/keeperpam/~gitbook/pdf?page=ojDLP9XDQastxnsIT1I5&only=yes&limit=100)
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
 
-# PSPasswd Plugin
+# Google Cloud Key Management Encryption
 
-Rotate remote admin passwords with PSPasswd
+Protect Secrets Manager connection details with Google Cloud Key Management
 
-Keeper has also launched a zero-trust Password Rotation feature with
-KeeperPAM. This new capability is recommended for most password rotation use
-cases. The Documentation is linked below:
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6mxHlHnrBXD2jVhRoqvF%252Fksm-
+Google%2520Cloud.jpg%3Falt%3Dmedia%26token%3D620bd9e5-f05a-40e4-aeaa-712da3223699&width=768&dpr=4&quality=100&sign=c8948f5d&sv=2)
 
-  * [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-rotation)
+Keeper Secrets Manager integrates with Google Cloud Key Management in order to
+provide encryption for Keeper Secrets Manager configuration files. With this
+integration, you can protect connection details on your machine while taking
+advantage of Keeper's zero-knowledge encryption of all your secret
+credentials.
 
-  * Commander [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
+##
 
-This plugin provides IT Admins with the ability to rotate the password of a
-remote system's administrative local password. The password is rotated using
-the widely used "pspasswd" utility and the change is synchronized to a
-specific Keeper record in your vault.
+Features
 
-The way this plugin is implemented requires that Commander and pspasswd is
-installed on the Domain Controller.
+  * Encrypt and Decrypt your Keeper Secrets Manager configuration files with Google Cloud Key Management.
 
-The instructions in this README assume that you are executing Commander
-scripts from the Domain Controller.
+  * Protect against unauthorized access to your Secrets Manager connections.
+
+  * Requires only minor changes to code for immediate protection. Works with all Keeper Secrets Manager SDK functionality.
 
 ##
 
 Prerequisites
 
-###
+To configure, Google Cloud Key Management with Keeeper Security you need
+service account keys ended with` .json` . Key structure that is supported by
+this integration is
+`projects/<project_name>/locations/<location_name>/keyRings/<key_ring_name>/cryptoKeys/<key_name>/cryptoKeyVersions/<key_version>`
 
-Enabled Remote Service Management on each target computer
+JavaJavaScriptPython.NetGoLang
 
-Assuming all computers are domain-attached and reachable from the Domain
-Controller, ensure that "Remote Service Management" is allowed for inbound in
-Domain by enabling the relevant Firewall rule on all computers.
+  * Support the Java/Kotlin Secrets Manager SDK.
 
-On each of the target computers, go to Windows Firewall rules -> Inbound Rules
--> and enabled the "Remote Service Management" rule.
+  * Required GCP package `google-cloud-kms`
 
-###
+  * Google Cloud Key Management needs `ENCRYPT` and `DECRYPT` permissions.
 
-Install pspasswd
+  * Supports the [JavaScript Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-sdk)
 
-  * Download the [PSTools Package](https://docs.microsoft.com/en-us/sysinternals/downloads/pspasswd) from Microsoft
+  * Requires the `@google-cloud/kms`**** package from GCP SDK.
 
-  * Extract the PSTools.zip folder to a location on your computer
+  * GCP CKM Key needs `ENCRYPT` and `DECRYPT` permissions.
 
-  * Add this PSTools folder to your user or system environmental variable "PATH"
+  * Supports the [Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk)
 
-(System Properties -> Advanced -> Environmental Variables)
+  * Requires `google-cloud-kms` package
 
-Select PATH and then "Edit"
+  * GCP CKM Key needs `ENCRYPT` and `DECRYPT` permissions.
 
-On some systems, you have to append the location where you installed PSTools,
-e.g.:
+  * Supports the [.Net Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/.net-sdk)
 
-;C:\Users\craig\PSTools
+  * Requires [Google.Apis.CloudKMS.v1](https://www.nuget.org/packages/Google.Apis.CloudKMS.v1)
 
-On newer systems, just click "New" then type in the full path to the install,
-e.g.: C:\Users\craig\PSTools
+  * GCP CKM Key needs `ENCRYPT` and `DECRYPT` permissions.
 
-##
+  * Supports the [GoLang Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/golang-sdk)
 
-Prepare Record for Rotation
+  * Requires the `kms/apiv1, kmspb, core, kms` package from GCP SDK.
 
-###
-
-Create a Record for Rotation
-
-Rotation supports legacy and typed records. If using typed record, a 'Login'
-type field is required. Additional fields may be added depending on the
-rotation type as well. See the instructions below.
-
-See the [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-
-commander-cli#typed-vs-untyped-records-v3-vs-v2)section for more information
-on legacy vs typed records
-
-###
-
-Set the Login Name
-
-**Populate the 'Login' field of the Keeper record with the login to use with
-this rotation.**
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqV0jzz2UhB6YKjWpjJnn%252Fimage.png%3Falt%3Dmedia%26token%3Dcb93de5c-e9fb-48d4-a890-1e6c9ba92162&width=768&dpr=4&quality=100&sign=6fa20915&sv=2)
-
-####
-
-Set the Host and Port of the record
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fn0wNe2SmR5gUWuLVuYjZ%252Fimage.png%3Falt%3Dmedia%26token%3D01a0489d-b380-4e59-b2ee-9cf70e275640&width=768&dpr=4&quality=100&sign=1dc8df65&sv=2)
-
-If using an untyped record, the host and port can be set to custom fields. See
-below.
-
-####
-
-Additional Rotation Settings
-
-The following values can customize rotation parameters. Add these options to a
-record as text fields and set the label to correspond to the parameter as
-shown in the table.
-
-Label
-
-Value
-
-Comment
-
-cmdr:plugin
-
-pspasswd
-
-(Optional) Tells Commander to use PSPasswd rotation. This should be either set
-to the record, or supplied to the rotation command
-
-cmdr:host
-
-Hostname of Computer or Computers where the local account exists. This can be
-set here if not set in the record's host field
-
-cmdr:rules
-
-# uppercase, # lowercase, # numeric, # special
-
-(e.g. 4,6,3,8)
-
-(Optional) Password generation rules
+  * GCP CKM Key needs `ENCRYPT` and `DECRYPT` permissions.
 
 ##
 
-Rotate
+Setup
 
-To rotate PSPasswd passwords, use the `rotate` command in Commander. Pass the
-command a record title or UID (or use `--match` with a regular expression to
-rotate several records at once)
+###
+
+1\. Install Module
+
+JavaJavaScriptPython.NetGoLang
+
+Setting up project using Gradle or Maven
+
+**Gradle**
 
 Copy
 
     
     
-    rotate "My Azure Credentials" --plugin pspasswd
+    repositories {
+      mavenCentral()
+    }
+    
+    dependencies {
+    	implementation("com.keepersecurity.secrets-manager:core:17.0.0")
+    	implementation ("com.google.cloud:google-cloud-kms:2.62.0")
+    	implementation ("com.google.auth:google-auth-library-oauth2-http:1.33.1") 
+    	implementation("com.fasterxml.jackson.core:jackson-databind:2.18.2")
+    	implementation("com.fasterxml.jackson.core:jackson-core:2.18.2")
+    	implementation("com.google.code.gson:gson:2.12.1")
+        implementation("org.slf4j:slf4j-api:1.7.32"){
+            exclude("org.slf4j:slf4j-log4j12")
+        }
+    	implementation("ch.qos.logback:logback-classic:1.2.6")
+    	implementation("ch.qos.logback:logback-core:1.2.6")
+    	implementation("org.bouncycastle:bc-fips:1.0.2.4")
+    }
 
-The plugin can be supplied to the command as shown here, or added to a record
-field (see options above). Adding the plugin type to the record makes it
-possible to rotate several records at once with different plugins.
+**Maven**
 
-####
+Copy
 
-Output
+    
+    
+    <!-- KMS-core -->
+    <dependency>
+    	<groupId>com.keepersecurity.secrets-manager</groupId>
+    	<artifactId>core</artifactId>
+    	<version>[17.0.0,)</version>
+    </dependency>
+    <!-- gcp-kms -->
+    <dependency>
+    	<groupId>com.google.cloud</groupId>
+    	<artifactId>google-cloud-kms</artifactId>
+    	<version>2.62.0</version>
+    </dependency>
+    <!-- gcp auth -->
+    <dependency>
+    	<groupId>com.google.auth</groupId>
+    	<artifactId>google-auth-library-oauth2-http</artifactId>
+    	<version>1.33.1</version>
+    </dependency>
+    <!--gson -->
+    <dependency>
+    	<groupId>com.google.code.gson</groupId>
+    	<artifactId>gson</artifactId>
+    	<version>2.12.1</version>
+    </dependency>
+    <!--jackson-core -->
+    <dependency>
+    	<groupId>com.fasterxml.jackson.core</groupId>
+    	<artifactId>jackson-core</artifactId>
+    	<version>2.18.2</version>
+    </dependency>
+    <!--jackson-databind -->
+    <dependency>
+    	<groupId>com.fasterxml.jackson.core</groupId>
+    	<artifactId>jackson-core</artifactId>
+    	<version>2.18.2</version>
+    </dependency>
+    <!-- slf4j-api -->
+    <dependency>
+    	<groupId>org.slf4j</groupId>
+    	<artifactId>slf4j-api</artifactId>
+    	<version>1.7.32</version>
+    	<scope>runtime</scope>
+    </dependency>
+    <!-- logback-classic -->
+    <dependency>
+    	<groupId>ch.qos.logback</groupId>
+    	<artifactId>logback-classic</artifactId>
+    	<version>1.2.6</version>
+    	<scope>compile</scope>
+    </dependency>
+    <!-- logback-core -->
+    <dependency>
+    	<groupId>ch.qos.logback</groupId>
+    	<artifactId>logback-core</artifactId>
+    	<version>1.2.6</version>
+    	<scope>compile</scope>
+    </dependency>
+    <!-- bc-fips -->
+    <dependency>
+    	<groupId>org.bouncycastle</groupId>
+    	<artifactId>bc-fips</artifactId>
+    	<version>1.0.2.4</version>
+    </dependency>
 
-After rotation is completed, the new password will be stored in the `Password`
-field of the record
+The Secrets Manager Google Cloud Key Management module can be installed using
+npm
 
-[PreviousPostgreSQL Plugin](/en/keeperpam/commander-cli/command-
-reference/plugins/postgresql-plugin)[NextSSH Plugin](/en/keeperpam/commander-
-cli/command-reference/plugins/ssh-plugin)
+Copy
 
-Last updated 2 months ago
+    
+    
+    npm install @keeper-security/secrets-manager-gcp
+
+The Secrets Manager OCI KSM module can be installed using pip
+
+Copy
+
+    
+    
+    pip3 install keeper-secrets-manager-storage
+
+The Secrets Manager oracle KSM module can be installed using dotnet nuget
+package manager.
+
+Copy
+
+    
+    
+    dotnet add package Keeper.SecretsManager.GCPKeyManagement
+
+The Secrets Manager oracle KSM module Integration can be installed using
+
+Copy
+
+    
+    
+    go get github.com/keeper-security/secrets-manager-go/integrations/gcp
+
+###
+
+2\. Configure **Google CKM** Connection
+
+To enable secure authentication with Google Cloud Platform (GCP), generate a
+Service Account key in JSON format. This credential file will serve as the
+authentication mechanism for interacting with GCP services programmatically.
+
+See the Google documentation for more information on generating keys:
+
+<https://cloud.google.com/iam/docs/keys-create-
+delete>[](https://cloud.google.com/iam/docs/keys-create-delete)
+
+###
+
+3\. Add GCP Key Vault Storage to Your Code
+
+Once GCP connection has been configured, You can fetch the Key to encrypt /
+decrypt KSM configuration using integration and you need to tell the Secrets
+Manager SDK to utilize the KMS as storage.
+
+##
+
+Using **GCP Key Vault Integration**
+
+Once setup, the Secrets Manager GCP Key Vault integration supports all Secrets
+Manager SDK functionality. Your code will need to be able to access the GCP
+CKM Keys in order to manage the encryption and decryption of the KSM
+configuration file. **Using Specified Connection credentials**
+
+JavaJavaScriptPython.NetGo
+
+To do this, create `GcpKeyValueStorage` instance and use this in
+`SecretManagerOptions` constructor.
+
+The `GcpKeyValueStorage` will require the name of the Secrets Manager
+configuration file , gcp credential file and key details of Cloud Key
+Management.
+
+Copy
+
+    
+    
+    import java.security.Security;
+    import org.bouncycastle.jcajce.provider.BouncyCastleFipsProvider;
+    import static com.keepersecurity.secretsManager.core.SecretsManager.initializeStorage;
+    import com.keepersecurity.secretsmanager.gcp.GcpKeyValueStorage;
+    import com.keepersecurity.secretsmanager.gcp.GcpSessionConfig;
+    import com.keepersecurity.secretsManager.core.SecretsManagerOptions;
+    public class Test {
+    	public static void main(String args[]){
+    	    String oneTimeToken = "One_Time_Token";
+    	    String projectId = "projectId";
+    	    String location = "cloud_region";
+    	    String keyRing = "key_ring_name";
+    	    String keyId = "key_id";
+    	    String keyVersion = "key_version";
+    	    String configFileLocation = "client_config_test.json";
+    	    String credentialFileLocation = "/home/../<path_with_name_of_gcp_cred_file.json>";
+    	    Security.addProvider(new BouncyCastleFipsProvider());
+    		try{
+    				GcpSessionConfig sessionConfig = new GcpSessionConfig(projectId, location, keyRing, keyId, keyVersion, credentialFileLocation);
+    				GcpKeyValueStorage storage = new GcpKeyValueStorage(configFileLocation, sessionConfig);
+    				initializeStorage(storage, oneTimeToken);
+    				SecretsManagerOptions options = new SecretsManagerOptions(storage);	
+    		}catch (Exception e) {
+    				  System.out.println(e.getMessage());
+    		}
+    	}
+    }
+
+To do this, use `GCPKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require an `keyConfig` , `gcpsessionConfig`(generated by
+`GCPKSMClient`) , and the name of the `Secrets Manager configuration file`
+which will be encrypted by GCP Cloud Key Management.
+
+Copy
+
+    
+    
+     import {GCPKeyValueStorage,GCPKeyConfig,GCPKSMClient,LoggerLogLevelOptions} from "@keeper-security/secrets-manager-gcp";
+        const getKeeperRecordsGCP = async () => {
+            const gcpCredFile = "/home/../<path_with_name_of_gcp_cred_file.json>"
+            const keyConfig2  = new GCPKeyConfig("<key_version_resource_url_1>");
+            const keyConfig = new GCPKeyConfig("key_version_resource_url_2");
+            const gcpSessionConfig = new GCPKSMClient().createClientFromCredentialsFile(gcpCredFile)
+            let config_path = "<path to client-config.json>"
+            let logLevel = LoggerLogLevelOptions.debug;
+            const oneTimeToken = "<one_time_token>";
+            const storage = await new GCPKeyValueStorage(config_path, keyConfig, gcpSessionConfig, logLevel).init();
+            await initializeStorage(storage, oneTimeToken);
+            const {records} = await getSecrets({storage: storage});
+            console.log(records)
+            const firstRecord = records[0];
+            const firstRecordPassword = firstRecord.data.fields.find((x: { type: string; }) => x.type === 'bankAccount');
+            console.log(firstRecordPassword.value[0]);
+        }
+        console.log("start")
+        getKeeperRecordsGCP()
+    
+
+To do this, use `GCPKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require `gcp_key_config` (generated by `GCPConfig` ),
+`gcp_session_config` object (generated by `GCPKMSClientConfig` ) and the name
+of the `Secrets Manager configuration file` which will be encrypted by GCP
+Cloud Key Management.
+
+Copy
+
+    
+    
+    from keeper_secrets_manager_storage.storage_gcp_kms import GCPKeyConfig, GCPKeyValueStorage,GCPKMSClientConfig
+    from keeper_secrets_manager_core import SecretsManager
+    gcp_key_config_1 = GCPKeyConfig("<key_resource_uri_1>")
+    gcp_key_config_2 = GCPKeyConfig("<key_resource_uri_1>")
+    gcp_cred_file_location_with_name = "/home/../<path_with_name_of_gcp_cred_file.json>"
+    gcp_session_config = GCPKMSClientConfig().create_client_from_credentials_file(gcp_cred_file_location_with_name)
+    config_path = "ksm_config.json"
+    one_time_token = "<one_time_token>"
+    storage = GCPKeyValueStorage(config_path, gcp_key_config_2, gcp_session_config)
+    secrets_manager = SecretsManager(token=one_time_token,config=storage)
+    all_records = secrets_manager.get_secrets()
+    first_record = all_records[0]
+    print(first_record)
+
+To do this, use `GCPKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require an `keyConfig` (generated by `GCPKeyConfig` ),
+`gcpSessionConfig` object (generated by `GCPKMSClient` ), and the name of the
+`Secrets Manager configuration file` which will be encrypted by GCP Cloud Key
+Management.
+
+Copy
+
+    
+    
+     using System;
+     using System.Linq;
+     using System.Threading.Tasks;
+     using SecretsManager;
+     using GCPKeyManagement;
+     using Microsoft.Extensions.Logging;
+     public class Program {
+       private static async Task getOneIndividualSecret() {
+         Console.WriteLine("execution started");
+         string key1ResourceName = "<KEY1ResourceURL>";
+         string key2ResourceName = "<Key2ResourceURL>";
+         string gcpConfigFilePath = "<GCP config file path with name>";
+         var keyConfig = new GCPKeyConfig(key1ResourceName);
+         var gcpSessionConfig = new GCPKMSClient().CreateClientFromCredentialsFile(gcpConfigFilePath);
+         var ksmConfigPath = "ksm_config.json";
+         var dotnet_access_token = "[One_Time_Token]";
+         var loggerFactory = LoggerFactory.Create(builder => {
+           builder.SetMinimumLevel(LogLevel.Debug);
+           builder.AddConsole();
+         });
+         var logger = loggerFactory.CreateLogger < GCPKeyValueStorage > ();
+         var gcp_storage = new GCPKeyValueStorage(keyConfig, gcpSessionConfig, ksmConfigPath, logger);
+         SecretsManagerClient.InitializeStorage(gcp_storage, dotnet_access_token);
+       }
+       static async Task Main() {
+         await getOneIndividualSecret();
+       }
+     }
+
+To do this, use `NewGCPKeyVaultStorage` as your Secrets Manager storage in the
+`NewSecretsManager`
+
+The `NewGCPKeyVaultStorage` requires the following parameters to encrypt the
+KSM configuration using GCP Cloud Key Management:
+
+`ksmConfigFileName` : The file name of KSM configuration.
+
+`keyResourceName` : Provide[`
+_keyResourceName_`](https://cloud.google.com/kms/docs/resource-
+hierarchy#retrieve_resource_id) of Google Cloud Key Management
+
+`credentialFileWithPath` : Provide file path with name of GCP credential file.
+
+Copy
+
+    
+    
+    package main
+    import (
+    	"encoding/json"
+    	"fmt"
+    	"github.com/keeper-security/secrets-manager-go/core"
+    	gcpkv "github.com/keeper-security/secrets-manager-go/integrations/gcp"
+    )
+    func main() {
+    	credentialFileWithPath := "<Location of credential file ending with .json>"
+    	keyResourceName := "<Key_Resource_Name>"
+    	ksmConfigFileName := "ksmConfig.json"
+    	oneTimeToken := "<One_Time_Access_Token>"
+    	cfg := gcpkv.NewGCPKeyVaultStorage(ksmConfigFileName, keyResourceName, credentialFileWithPath)
+    	client_options := &core.ClientOptions{
+    		Token:  oneTimeToken,
+    		Config: cfg,
+    	}
+    	fmt.Printf("Client ID Value: %s", cfg.Get(core.KEY_CLIENT_ID))
+    	secrets_manager := core.NewSecretsManager(client_options)
+    	secrets, err := secrets_manager.GetSecrets([]string{})
+    	if err != nil {
+    		// do something
+    		fmt.Printf("Error while fetching secrets: %v\n", err)
+    	}
+    	for _, record := range secrets {
+    		fmt.Printf("Records: %v\n", record)
+    	}
+    }
+
+##
+
+Additional Options
+
+###
+
+Change Key
+
+We can change key that is used for encrypting the KSM configuration, examples
+below show the code needed to use it
+
+JavaJavaScriptPython.NetGoLang
+
+Copy
+
+    
+    
+    //The method changeKey(keyID) will be used to encrypt the KSM config file with new Key and version. 
+    GcpKeyValueStorage storage = new GcpKeyValueStorage(configFileLocation, sessionConfig);
+    String newKeyID = "<new Key ID>";
+    boolean isChanged = storage.changeKey(keyId);
+    System.out.println("Key Changed: "+isChanged); // Change the key for encryption/decryption
+
+Copy
+
+    
+    
+    // To change the GCP CKM key used for encryption, you can call the `changeKey` method on the `OciKeyValueStorage` instance.
+    const storage = await new GCPKeyValueStorage(configPath,keyConfig,gcpSessionConfig).init();
+    await storage.changeKey(keyConfig2);
+
+Copy
+
+    
+    
+    storage = GCPKeyValueStorage(config_path, gcp_key_config_2, gcp_session_config)
+    storage.change_key(gcp_key_config_2)
+    gcp_key_config_2 = "<new key id>"
+    isChanged = storage.change_key(gcp_key_config_2)
+    print("Key is changed " + isChanged)
+
+Copy
+
+    
+    
+    // To change the Google CKM key used for encryption, you can call the `ChangeKeyAsync` method on the `GCPKeyValueStorage` instance.
+    // using Microsoft.Extensions.Logging;
+    var gcp_storage = new GCPKeyValueStorage(keyConfig2, gcpSessionConfig, path,logger);
+    bool isChanged = gcp_storage.ChangeKeyAsync(keyConfig1).Wait();
+    Console.WriteLine(isChanged)
+
+Copy
+
+    
+    
+    // If you want to change the key not gcpp config, then pass nil in place of oracle config.
+    cfg := gcpkv.NewGCPKeyVaultStorage(ksmConfigFileName, keyResourceName, credentialFileWithPath)
+    updatedResourceName := "<Updated Key Resource Name>"
+    isChanged, err := cfg.ChangeKey(updatedResourceName, "")
+    	if err != nil {
+    		// do something
+    	}
+    fmt.Printf("Key changed: %v\n", isChanged)
+
+###
+
+Decrypt Config
+
+We can decrypt the config if current implementation is to be migrated onto a
+different cloud or if you want your raw credentials back. The function accepts
+a boolean which when set to true will save the decrypted configuration to file
+and if it is false, will just return decrypted configuration.
+
+JavaJavaScriptPython.NetGoLang
+
+Copy
+
+    
+    
+    GcpKeyValueStorage storage = new GcpKeyValueStorage(configFileLocation, sessionConfig);
+    storage.decryptConfig(false); // Set false as a parameter to extract only plaintext.
+    //OR 
+    storage.decryptConfig(true); // Set true as a parameter to extract plaintext and save config as a plaintext.
+
+Copy
+
+    
+    
+    const storage = await new GCPKeyValueStorage(configPath,keyConfig,gcpSessionConfig).init();
+    await storage.decryptConfig(true); // Set true as a parameter to extract plaintext and save config as a plaintext.
+     // OR 
+    await storage.decryptConfig(false);  // Set false as a parameter to extract only plaintext.
+
+Copy
+
+    
+    
+    storage = GCPKeyValueStorage(config_path, gcp_key_config_2, gcp_session_config)ig_file_location=config_path, oci_session_config=oci_session_config,logger=None)
+    plaintext = storage.decrypt_config(False) # Set false as a parameter to extract only plaintext.
+    print(plaintext)
+    # OR 
+    plaintext = storage.decrypt_config(True) # Set true as a parameter to extract plaintext and save config as a plaintext.
+    print(plaintext)
+
+Copy
+
+    
+    
+    # To decrypt the config file and save it again in plaintext, you can call the `DecryptConfigAsync` method on the `OracleKeyValueStorage` instance.
+    var gcp_storage = new GCPKeyValueStorage(keyConfig2, gcpSessionConfig, path,logger);
+    var conf = await gcp_storage.DecryptConfigAsync(false); # Set false as a parameter to extract only plaintext.
+    Console.WriteLine(conf);
+    # OR
+    var conf = await gcp_storage.DecryptConfigAsync(true); # Set true as a parameter to extract plaintext and save config as a plaintext.
+    Console.WriteLine(conf);
+
+Copy
+
+    
+    
+    cfg := gcpkv.NewGCPKeyVaultStorage(ksmConfigFileName, keyResourceName, credentialFileWithPath)
+    plainText, err := cfg.DecryptConfig(false)
+    if err != nil {
+    	// do something
+    	fmt.Printf("Error while decrypting config: %v", err)
+    }  
+    plainText, err := cfg.DecryptConfig(true) // Set true as a parameter to extract plaintext and save config as a plaintext.
+    if err != nil {
+    	// do something
+    	fmt.Printf("Error while decrypting config: %v", err)
+    }  
+
+You're ready to use the KSM integration 👍
+
+Check out the [KSM SDKs documentation](/en/keeperpam/secrets-
+manager/developer-sdk-library) for more examples and functionality
+
+[PreviousGoogle Cloud Secret Manager Sync](/en/keeperpam/secrets-
+manager/integrations/gcp-secret-manager)[NextHashicorp
+Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
+
+Last updated 20 hours ago
 
 Was this helpful?
 

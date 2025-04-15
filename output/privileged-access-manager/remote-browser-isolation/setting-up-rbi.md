@@ -305,19 +305,21 @@ manager/remote-browser-isolation/setting-up-rbi?fallback=true)
         * [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible/ansible-tower)
 
       * [AWS CLI Credential Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-process)
-      * [AWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
-      * [AWS KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+      * [AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+      * [AWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
       * [Azure DevOps Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
-      * [Azure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Sync](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
       * [Bitbucket Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
       * [Docker Image](/en/keeperpam/secrets-manager/integrations/docker-image)
       * [Docker Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
       * [Docker Writer Image](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-      * [Entrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
-      * [GCP Secret Manager](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Entrust HSM Encryption](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
       * [Git - Sign Commits with SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
       * [GitHub Actions](/en/keeperpam/secrets-manager/integrations/github-actions)
       * [GitLab](/en/keeperpam/secrets-manager/integrations/gitlab-plugin)
+      * [Google Cloud Secret Manager Sync](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Google Cloud Key Management Encryption](/en/keeperpam/secrets-manager/integrations/google-cloud-key-management-encryption)
       * [Hashicorp Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
       * [Heroku](/en/keeperpam/secrets-manager/integrations/heroku)
       * [Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
@@ -326,11 +328,11 @@ manager/remote-browser-isolation/setting-up-rbi?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
-      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
+      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [Terraform Plugin](/en/keeperpam/secrets-manager/integrations/terraform)
 
         * [Terraform Registry](https://registry.terraform.io/providers/Keeper-Security/secretsmanager/latest/docs/data-sources/address)
@@ -452,51 +454,22 @@ PDF](/en/keeperpam/~gitbook/pdf?page=mdsrwkxAwaA6cmgj0tBg&only=yes&limit=100)
 
 Setting up Tunnels in your Desktop Vault
 
-[PreviousRemote Browser Isolation](/en/keeperpam/privileged-access-
-manager/remote-browser-isolation)[NextURL Patterns & Resource URL
-Patterns](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation/setting-up-rbi/url-patterns-and-resource-url-patterns)
-
-Last updated 6 days ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 Overview
 
 In this guide, you will learn how to setup Remote Browser Isolation (RBI) in
 your Keeper Vault. RBI works from both Web Vault and Desktop App.
+
+An active license is required in order to use the features available with
+KeeperPAM. This license is available for both business and enterprise
+customers.
+
+  * [KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-management/)
+
+  * [Request a Demo](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+
+  * [Contact Support](https://www.keepersecurity.com/support.html)
 
 ##
 
@@ -557,6 +530,10 @@ Copy
     ALLOW_VIEW_RBI_RECORDINGS
 
 Allow users to view RBI Session Recordings.
+
+The above enforcement policies can also be enabled on the [Keeper Commander
+CLI](/en/keeperpam/commander-cli/command-reference/secrets-manager-
+commands#overview) using the `enterprise-role` command:
 
 Copy
 
@@ -694,6 +671,10 @@ page. Multiple patterns may be specified, separated by newlines.
 
 If specified, only pages matching patterns in the list are permitted.
 
+By default, all URLs are permitted. Detailed Information
+[here](/en/keeperpam/privileged-access-manager/remote-browser-
+isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
+
 Allow Resource URL Patterns
 
 The patterns of all URLs that the page should be allowed to load as a
@@ -703,9 +684,26 @@ may be specified, separated by newlines.
 If specified, only resources matching patterns in the list are permitted to be
 loaded.
 
+By default, no restrictions are imposed on resources loaded by pages. Detailed
+Information [here](/en/keeperpam/privileged-access-manager/remote-browser-
+isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
+
 Browser Autofill - Credentials
 
+RBI sessions launched from the Keeper Vault provides the capability of
+autofilling a username and password into a target website login screen. A
+vault record that is shared to a KSM application can be linked here. The
+credentials on this linked record will be autofilled in the target website
+login screen based on the autofill rules defined in the Autofill Targets
+section. Detailed Information [here](/en/keeperpam/privileged-access-
+manager/remote-browser-isolation/setting-up-rbi/browser-autofill)
+
 Browser Autofill - Autofill Targets
+
+This section will contain the autofill rules, which are a JSON/YAML array of
+objects, where each object specifies contains an autofill rule. Detailed
+Information [here](/en/keeperpam/privileged-access-manager/remote-browser-
+isolation/setting-up-rbi/browser-autofill)
 
 Can copy to clipboard
 
@@ -724,56 +722,47 @@ Session Recordings - RBI
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FpcDZcca7LVVyiPGxwY3V%252FScreenshot%25202025-01-21%2520at%252012.14.54%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D30d5539c-0f3c-4717-8468-a0c825604f23&width=768&dpr=4&quality=100&sign=5932094e&sv=2)
 
-The above enforcement policies can also be enabled on the  using the
-`enterprise-role` command:
-
-By default, all URLs are permitted. Detailed Information
-
-By default, no restrictions are imposed on resources loaded by pages. Detailed
-Information
-
-RBI sessions launched from the Keeper Vault provides the capability of
-autofilling a username and password into a target website login screen. A
-vault record that is shared to a KSM application can be linked here. The
-credentials on this linked record will be autofilled in the target website
-login screen based on the autofill rules defined in the Autofill Targets
-section. Detailed Information
-
-This section will contain the autofill rules, which are a JSON/YAML array of
-objects, where each object specifies contains an autofill rule. Detailed
-Information
-
-[here](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation/setting-up-rbi/browser-autofill)
-
-[here](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation/setting-up-rbi/browser-autofill)
-
-[here](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
-
-[here](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
-
-[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
-manager-commands#overview)
-
-An active license is required in order to use the features available with
-KeeperPAM. This license is available for both business and enterprise
-customers.
-
-  *   *   * 
-
 For this protocol, graphical data, including timing information, is recorded.
-For more details on the recordings and how to access them, see the  docs.
+For more details on the recordings and how to access them, see the [Session
+Recording & Playback](/en/keeperpam/privileged-access-manager/session-
+recording-and-playback) docs.
 
-[KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-
-management/)
+[PreviousRemote Browser Isolation](/en/keeperpam/privileged-access-
+manager/remote-browser-isolation)[NextURL Patterns & Resource URL
+Patterns](/en/keeperpam/privileged-access-manager/remote-browser-
+isolation/setting-up-rbi/url-patterns-and-resource-url-patterns)
 
-[Request a Demo](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+Last updated 7 days ago
 
-[Contact Support](https://www.keepersecurity.com/support.html)
+Was this helpful?
 
-[Session Recording & Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

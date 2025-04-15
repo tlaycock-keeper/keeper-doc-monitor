@@ -323,19 +323,21 @@ server-database?fallback=true)
         * [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible/ansible-tower)
 
       * [AWS CLI Credential Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-process)
-      * [AWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
-      * [AWS KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+      * [AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+      * [AWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
       * [Azure DevOps Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
-      * [Azure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Sync](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
       * [Bitbucket Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
       * [Docker Image](/en/keeperpam/secrets-manager/integrations/docker-image)
       * [Docker Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
       * [Docker Writer Image](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-      * [Entrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
-      * [GCP Secret Manager](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Entrust HSM Encryption](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
       * [Git - Sign Commits with SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
       * [GitHub Actions](/en/keeperpam/secrets-manager/integrations/github-actions)
       * [GitLab](/en/keeperpam/secrets-manager/integrations/gitlab-plugin)
+      * [Google Cloud Secret Manager Sync](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Google Cloud Key Management Encryption](/en/keeperpam/secrets-manager/integrations/google-cloud-key-management-encryption)
       * [Hashicorp Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
       * [Heroku](/en/keeperpam/secrets-manager/integrations/heroku)
       * [Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
@@ -344,11 +346,11 @@ server-database?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
-      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
+      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [Terraform Plugin](/en/keeperpam/secrets-manager/integrations/terraform)
 
         * [Terraform Registry](https://registry.terraform.io/providers/Keeper-Security/secretsmanager/latest/docs/data-sources/address)
@@ -516,6 +518,12 @@ To create a PAM Database:
 
   * Click "**Next** " and complete all of the required information.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FQr5fyjmlwXwVprNtTU9u%252FScreenshot%25202025-01-22%2520at%252011.30.35%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Db7784f8c-cb10-40ed-8ad6-9da756e4cf9e&width=768&dpr=4&quality=100&sign=3c1d056c&sv=2)
+
+SQL Server PAM Database Record
+
 ###
 
 Configure a Microsoft SQL Server Database on the PAM Database Record
@@ -631,6 +639,12 @@ User Accounts are configured on the PAM User record. Visit this
 [page](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user) for more information.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIbUtlOmj3Fv6V4EOFgcc%252FScreenshot%25202025-01-22%2520at%25202.35.24%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dff30fa4c-690e-44c8-a7ba-55d30b2a7aba&width=768&dpr=4&quality=100&sign=b06dcbd8&sv=2)
+
+Administrative Credential Record
+
 ####
 
 Setting a Non Admin User as the Administrative Credential Record
@@ -654,6 +668,12 @@ access to the linked credentials.
 
   * Learn more about [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9TzdizFLhgX6rcOBZ2FS%252FScreenshot%25202025-01-22%2520at%25202.36.26%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3De7c5ae76-0c42-4540-b9f3-8779176a6090&width=768&dpr=4&quality=100&sign=eebb8bff&sv=2)
+
+Sharing PAM Database Records
+
 ###
 
 Setup Complete
@@ -661,6 +681,24 @@ Setup Complete
 The Microsoft SQL Database record is set up. The user with the ability to
 launch connections can now launch an interactive SQL connection or tunnel to
 the target database.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FK5Tb4eWi4Z03NmYulgtf%252FScreenshot%25202025-01-22%2520at%25202.37.05%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D0895bb18-425c-479d-b1d0-56e44b89b05c&width=768&dpr=4&quality=100&sign=5601c4c&sv=2)
+
+Microsoft SQL Server Database
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5Uybk2vAImp3Vvv0tGsZ%252FScreenshot%25202025-01-22%2520at%25202.37.44%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dca15199c-2522-4926-a887-04c165bb91d7&width=768&dpr=4&quality=100&sign=92e14afc&sv=2)
+
+Connection to a Microsoft SQL Database
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F1fXvbQXycfFNtIbPlKRb%252FScreenshot%25202025-01-22%2520at%25202.38.05%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D760f04e2-64fa-41fc-8a08-41446a757327&width=768&dpr=4&quality=100&sign=6050b3db&sv=2)
+
+Interactive Session with Microsoft SQL Database
 
 [PreviousExample: PostgreSQL Database](/en/keeperpam/privileged-access-
 manager/getting-started/pam-resources/pam-database/example-postgresql-
@@ -717,40 +755,4 @@ protocols/mysql-connections)
 [section](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-database/example-microsoft-sql-server-database#administrative-
 credential-record)
-
-SQL Server PAM Database Record
-
-Administrative Credential Record
-
-Sharing PAM Database Records
-
-Microsoft SQL Server Database
-
-Connection to a Microsoft SQL Database
-
-Interactive Session with Microsoft SQL Database
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FQr5fyjmlwXwVprNtTU9u%252FScreenshot%25202025-01-22%2520at%252011.30.35%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Db7784f8c-cb10-40ed-8ad6-9da756e4cf9e&width=768&dpr=4&quality=100&sign=3c1d056c&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIbUtlOmj3Fv6V4EOFgcc%252FScreenshot%25202025-01-22%2520at%25202.35.24%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dff30fa4c-690e-44c8-a7ba-55d30b2a7aba&width=768&dpr=4&quality=100&sign=b06dcbd8&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9TzdizFLhgX6rcOBZ2FS%252FScreenshot%25202025-01-22%2520at%25202.36.26%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3De7c5ae76-0c42-4540-b9f3-8779176a6090&width=768&dpr=4&quality=100&sign=eebb8bff&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FK5Tb4eWi4Z03NmYulgtf%252FScreenshot%25202025-01-22%2520at%25202.37.05%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D0895bb18-425c-479d-b1d0-56e44b89b05c&width=768&dpr=4&quality=100&sign=5601c4c&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5Uybk2vAImp3Vvv0tGsZ%252FScreenshot%25202025-01-22%2520at%25202.37.44%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dca15199c-2522-4926-a887-04c165bb91d7&width=768&dpr=4&quality=100&sign=92e14afc&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F1fXvbQXycfFNtIbPlKRb%252FScreenshot%25202025-01-22%2520at%25202.38.05%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D760f04e2-64fa-41fc-8a08-41446a757327&width=768&dpr=4&quality=100&sign=6050b3db&sv=2)
 

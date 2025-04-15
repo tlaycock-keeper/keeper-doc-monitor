@@ -305,19 +305,21 @@ manager/integrations/aws-secrets-manager?fallback=true)
         * [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible/ansible-tower)
 
       * [AWS CLI Credential Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-process)
-      * [AWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
-      * [AWS KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+      * [AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+      * [AWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
       * [Azure DevOps Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
-      * [Azure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Sync](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
       * [Bitbucket Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
       * [Docker Image](/en/keeperpam/secrets-manager/integrations/docker-image)
       * [Docker Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
       * [Docker Writer Image](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-      * [Entrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
-      * [GCP Secret Manager](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Entrust HSM Encryption](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
       * [Git - Sign Commits with SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
       * [GitHub Actions](/en/keeperpam/secrets-manager/integrations/github-actions)
       * [GitLab](/en/keeperpam/secrets-manager/integrations/gitlab-plugin)
+      * [Google Cloud Secret Manager Sync](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Google Cloud Key Management Encryption](/en/keeperpam/secrets-manager/integrations/google-cloud-key-management-encryption)
       * [Hashicorp Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
       * [Heroku](/en/keeperpam/secrets-manager/integrations/heroku)
       * [Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
@@ -326,11 +328,11 @@ manager/integrations/aws-secrets-manager?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
-      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
+      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [Terraform Plugin](/en/keeperpam/secrets-manager/integrations/terraform)
 
         * [Terraform Registry](https://registry.terraform.io/providers/Keeper-Security/secretsmanager/latest/docs/data-sources/address)
@@ -449,47 +451,15 @@ PDF](/en/keeperpam/~gitbook/pdf?page=34KiaAqCCWYeFK8n8tHW&only=yes&limit=100)
   1. [Secrets Manager](/en/keeperpam/secrets-manager)
   2. [Integrations](/en/keeperpam/secrets-manager/integrations)
 
-# AWS Secrets Manager
+# AWS Secrets Manager Sync
 
 Sync secrets from the Keeper Vault with AWS Secrets Manager
 
-[PreviousAWS CLI Credential Process](/en/keeperpam/secrets-
-manager/integrations/aws-cli-credential-process)[NextAWS
-KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
-
-Last updated 5 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FmqGoDtyLNTaLkl9bVfCi%252Fdatasource-
+ksm-
+aws.jpg%3Falt%3Dmedia%26token%3D2703ca39-f530-4afd-9319-e86f445225e8&width=768&dpr=4&quality=100&sign=658ead9a&sv=2)
 
 ##
 
@@ -520,7 +490,11 @@ Prerequisites
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An AWS account with AWS Secrets Manager, and the ability to create IAM security credentials
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * An AWS account with AWS Secrets Manager, and the ability to create IAM security credentials
 
 ##
 
@@ -557,6 +531,10 @@ vault or on individual keys to sync.
 
 See the Amazon instructions for creating Access Keys:
 
+<https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-
+keys.html>[](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-
+keys.html)
+
 ###
 
 3\. Create AWS Credentials Record
@@ -568,7 +546,7 @@ Keeper Secrets Manager.
 Record fields with the following labels are required on the credentials
 record:
 
-`"AWS Access Key ID" "AWS Secret Access Key" "AWS Region Name"`
+"AWS Access Key ID" "AWS Secret Access Key" "AWS Region Name"
 
 ####
 
@@ -582,8 +560,18 @@ Keeper Vault and hit "Create Type". Create a new record type with hidden
 fields that have the correct field label, then click "Publish" to create the
 new record type.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVNbvE6Xe70YThhK3JLKu%252Fimage.png%3Falt%3Dmedia%26token%3Da3e7b13d-4bef-4cdb-8246-4902f0609a9f&width=768&dpr=4&quality=100&sign=f1405c1f&sv=2)
+
+AWS Credentials Record Type Definition
+
 Then simply create a new record of the AWS Credentials type and enter the
 details into the corresponding fields.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FoOaFzhmKu1BkPYHb6Jvk%252Fimage.png%3Falt%3Dmedia%26token%3D6a348507-805d-459f-961a-d1257e98a678&width=768&dpr=4&quality=100&sign=f5a2d420&sv=2)
 
 Make sure this new record is moved to a Shared Folder that is associated with
 your Secrets Manager application.
@@ -601,6 +589,12 @@ the corresponding field name.
 
 Any record type will work, but the "File Attachment" standard record type has
 no fields and will be cleaner looking when custom fields are added
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FS1qSqpXQ74npJ4ZMWwTP%252Fimage.png%3Falt%3Dmedia%26token%3D99c001ae-982d-4d5c-b267-bd95cd6c9ab7&width=768&dpr=4&quality=100&sign=a548ddb8&sv=2)
+
+Credentials fields as custom fields
 
 Then fill in each custom field and hit "Save" to save the record.
 
@@ -657,7 +651,11 @@ and value mapping.
 Put together the KSM sync command with the AWS type. The format looks like the
 following:
 
-`ksm sync --type aws --credentials [UID] --map [...] --map [...]`
+Copy
+
+    
+    
+    ksm sync --type aws --credentials [UID] --map [...] --map [...]
 
 ###
 
@@ -668,7 +666,11 @@ that will be made to your AWS Secrets Manager values without actually pushing
 the values or making changes. Use this to make sure your mapping queries are
 constructed properly.
 
-`ksm sync --type aws --credentials [UID] --map [...] --map [...] --dry-run`
+Copy
+
+    
+    
+    ksm sync --type aws --credentials [UID] --map [...] --map [...] --dry-run
 
 ###
 
@@ -679,42 +681,47 @@ values from your Keeper Vault to AWS Secrets Manager
 
 TIP: you can use `-m` as short hand for `--map`
 
-`ksm sync --type aws --credentials [UID] -m [...] -m [...]`
+Copy
 
-A Keeper  with secrets shared to it
+    
+    
+    ksm sync --type aws --credentials [UID] -m [...] -m [...]
 
-See the  for instructions on creating an Application
+[PreviousAWS CLI Credential Process](/en/keeperpam/secrets-
+manager/integrations/aws-cli-credential-process)[NextAWS KMS
+Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
 
-[![Logo](https://docs.aws.amazon.com/assets/images/favicon.ico)Managing access
-keys for IAM users - AWS Identity and Access ManagementAWS Identity and Access
-Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-
-keys.html)
+Last updated 8 hours ago
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
+Was this helpful?
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
+#### Company
 
-AWS Credentials Record Type Definition
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-Credentials fields as custom fields
+#### Support
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FmqGoDtyLNTaLkl9bVfCi%252Fdatasource-
-ksm-
-aws.jpg%3Falt%3Dmedia%26token%3D2703ca39-f530-4afd-9319-e86f445225e8&width=768&dpr=4&quality=100&sign=658ead9a&sv=2)
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVNbvE6Xe70YThhK3JLKu%252Fimage.png%3Falt%3Dmedia%26token%3Da3e7b13d-4bef-4cdb-8246-4902f0609a9f&width=768&dpr=4&quality=100&sign=f1405c1f&sv=2)
+#### Solutions
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FoOaFzhmKu1BkPYHb6Jvk%252Fimage.png%3Falt%3Dmedia%26token%3D6a348507-805d-459f-961a-d1257e98a678&width=768&dpr=4&quality=100&sign=f5a2d420&sv=2)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FS1qSqpXQ74npJ4ZMWwTP%252Fimage.png%3Falt%3Dmedia%26token%3D99c001ae-982d-4d5c-b267-bd95cd6c9ab7&width=768&dpr=4&quality=100&sign=a548ddb8&sv=2)
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

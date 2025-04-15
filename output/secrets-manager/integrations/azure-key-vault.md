@@ -305,19 +305,21 @@ manager/integrations/azure-key-vault?fallback=true)
         * [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible/ansible-tower)
 
       * [AWS CLI Credential Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-process)
-      * [AWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
-      * [AWS KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+      * [AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+      * [AWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
       * [Azure DevOps Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
-      * [Azure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Sync](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
       * [Bitbucket Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
       * [Docker Image](/en/keeperpam/secrets-manager/integrations/docker-image)
       * [Docker Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
       * [Docker Writer Image](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-      * [Entrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
-      * [GCP Secret Manager](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Entrust HSM Encryption](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
       * [Git - Sign Commits with SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
       * [GitHub Actions](/en/keeperpam/secrets-manager/integrations/github-actions)
       * [GitLab](/en/keeperpam/secrets-manager/integrations/gitlab-plugin)
+      * [Google Cloud Secret Manager Sync](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Google Cloud Key Management Encryption](/en/keeperpam/secrets-manager/integrations/google-cloud-key-management-encryption)
       * [Hashicorp Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
       * [Heroku](/en/keeperpam/secrets-manager/integrations/heroku)
       * [Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
@@ -326,11 +328,11 @@ manager/integrations/azure-key-vault?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
-      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
+      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [Terraform Plugin](/en/keeperpam/secrets-manager/integrations/terraform)
 
         * [Terraform Registry](https://registry.terraform.io/providers/Keeper-Security/secretsmanager/latest/docs/data-sources/address)
@@ -449,47 +451,15 @@ PDF](/en/keeperpam/~gitbook/pdf?page=8LqKdN1gExiCxJhy1YW3&only=yes&limit=100)
   1. [Secrets Manager](/en/keeperpam/secrets-manager)
   2. [Integrations](/en/keeperpam/secrets-manager/integrations)
 
-# Azure Key Vault
+# Azure Key Vault Sync
 
 Sync secrets from the Keeper Vault with Azure Key Vault
 
-[PreviousAzure DevOps Extension](/en/keeperpam/secrets-
-manager/integrations/azure-devops-plugin)[NextBitbucket
-Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
-
-Last updated 3 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjainUtrw6ieDVNNUfvuE%252Fdatasource-
+ksm-
+azure.jpg%3Falt%3Dmedia%26token%3D7e5db38e-7558-4dba-b047-ca0156f11d34&width=768&dpr=4&quality=100&sign=b6a4e019&sv=2)
 
 ##
 
@@ -520,7 +490,9 @@ Prerequisites
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An Azure account with Key Vault, and the ability to create security principals
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    *   * An Azure account with Key Vault, and the ability to create security principals
 
 ##
 
@@ -553,10 +525,9 @@ the connection. The Azure account with Key vault needs to enable a service
 principal with authorization to perform key operations in the Key Vault.
 
 Follow the Microsoft guide for setting up a service principal:
-
-[![Logo](https://docs.microsoft.com/favicon.ico)Apps & service principals in
-Azure AD - Microsoft identity platformdocsmsft](https://docs.microsoft.com/en-
-us/azure/active-directory/develop/app-objects-and-service-principals)
+<https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-
+and-service-principals>[](https://docs.microsoft.com/en-us/azure/active-
+directory/develop/app-objects-and-service-principals)
 
 ###
 
@@ -569,11 +540,16 @@ Keeper Secrets Manager.
 Record fields with the following labels are required on the credentials
 record:
 
-`"Azure Tenant ID" "Azure Client ID" "Azure Client Secret" "Azure Key Vault
-Name"`
+"Azure Tenant ID" "Azure Client ID" "Azure Client Secret" "Azure Key Vault
+Name"
 
 When retrieving the Client secret from Azure app registration, make sure to
 copy the **Value** (not Secret ID) into "Azure Client Secret" field.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGbgXULnF2SK8cGDb1t7Y%252Fspaces_-
+MJXOXEifAmpyvNVL1to_uploads_1VHxRugsu0DJAHvvbpI7_Screenshot%25202023-04-21%2520at%25203.webp%3Falt%3Dmedia%26token%3Df54dc0e8-512e-4f30-9266-e9772d06b98c&width=300&dpr=4&quality=100&sign=bc3f2ae1&sv=2)
 
 ####
 
@@ -587,8 +563,16 @@ Keeper Vault and hit "Create Type". Create a new record type with hidden
 fields that have the correct field label, then click "Publish" to create the
 new record type.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3ytUgwFocUVmKLb8sNQ6%252Fimage.png%3Falt%3Dmedia%26token%3D1ef93869-4ac4-4776-9b4f-1d58a6529218&width=768&dpr=4&quality=100&sign=cf1bb8df&sv=2)
+
 Then simply create a new record of the Azure Credentials type and enter the
 details into the corresponding fields.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXjlSL3lY76SwWoKNdeCQ%252Fimage.png%3Falt%3Dmedia%26token%3Dc0a03e93-bbff-4837-9375-5de09abc8c4c&width=768&dpr=4&quality=100&sign=f9f711bc&sv=2)
 
 Make sure this new record is in a shared folder that is shared to your Secrets
 Manager application.
@@ -606,6 +590,10 @@ the corresponding field name.
 
 Any record type will work, but the "File Attachment" standard record type has
 no fields and will be cleaner looking when custom fields are added
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7XYS9qI9McE7X4knr8iO%252Fimage.png%3Falt%3Dmedia%26token%3Dd9ec05af-5152-4884-a65e-7e78be69c01a&width=768&dpr=4&quality=100&sign=bb899506&sv=2)
 
 Then fill in each custom field and hit "Save" to save the record.
 
@@ -661,7 +649,11 @@ and value mapping
 Put together the KSM sync command with the Azure type. The format looks like
 the following:
 
-`ksm sync --type azure --credentials [UID] --map [...] --map [...]`
+Copy
+
+    
+    
+    ksm sync --type azure --credentials [UID] --map [...] --map [...]
 
 ###
 
@@ -672,7 +664,11 @@ that will be made to your Azure Key Vault values without actually pushing the
 values or making changes. Use this to make sure your mapping queries are
 constructed properly.
 
-`ksm sync --type azure --credentials [UID] --map [...] --map [...] --dry-run`
+Copy
+
+    
+    
+    ksm sync --type azure --credentials [UID] --map [...] --map [...] --dry-run
 
 ###
 
@@ -683,38 +679,52 @@ values from your Keeper Vault to Azure Key Vault
 
 TIP: you can use `-m` as short hand for `--map`
 
-`ksm sync --type azure --credentials [UID] -m [...] -m [...]`
+Copy
 
-A Keeper  with secrets shared to it
+    
+    
+    ksm sync --type azure --credentials [UID] -m [...] -m [...]
+
+[PreviousAzure DevOps Extension](/en/keeperpam/secrets-
+manager/integrations/azure-devops-plugin)[NextAzure Key Vault
+Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
+
+Last updated 8 hours ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 See the  for instructions on creating an Application
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGbgXULnF2SK8cGDb1t7Y%252Fspaces_-
-MJXOXEifAmpyvNVL1to_uploads_1VHxRugsu0DJAHvvbpI7_Screenshot%25202023-04-21%2520at%25203.webp%3Falt%3Dmedia%26token%3Df54dc0e8-512e-4f30-9266-e9772d06b98c&width=300&dpr=4&quality=100&sign=bc3f2ae1&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjainUtrw6ieDVNNUfvuE%252Fdatasource-
-ksm-
-azure.jpg%3Falt%3Dmedia%26token%3D7e5db38e-7558-4dba-b047-ca0156f11d34&width=768&dpr=4&quality=100&sign=b6a4e019&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3ytUgwFocUVmKLb8sNQ6%252Fimage.png%3Falt%3Dmedia%26token%3D1ef93869-4ac4-4776-9b4f-1d58a6529218&width=768&dpr=4&quality=100&sign=cf1bb8df&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXjlSL3lY76SwWoKNdeCQ%252Fimage.png%3Falt%3Dmedia%26token%3Dc0a03e93-bbff-4837-9375-5de09abc8c4c&width=768&dpr=4&quality=100&sign=f9f711bc&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7XYS9qI9McE7X4knr8iO%252Fimage.png%3Falt%3Dmedia%26token%3Dd9ec05af-5152-4884-a65e-7e78be69c01a&width=768&dpr=4&quality=100&sign=bb899506&sv=2)
 

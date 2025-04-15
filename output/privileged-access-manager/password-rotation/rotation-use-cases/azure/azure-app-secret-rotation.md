@@ -319,19 +319,21 @@ rotation?fallback=true)
         * [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible/ansible-tower)
 
       * [AWS CLI Credential Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-process)
-      * [AWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
-      * [AWS KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+      * [AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+      * [AWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
       * [Azure DevOps Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
-      * [Azure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Sync](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
       * [Bitbucket Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
       * [Docker Image](/en/keeperpam/secrets-manager/integrations/docker-image)
       * [Docker Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
       * [Docker Writer Image](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-      * [Entrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
-      * [GCP Secret Manager](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Entrust HSM Encryption](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
       * [Git - Sign Commits with SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
       * [GitHub Actions](/en/keeperpam/secrets-manager/integrations/github-actions)
       * [GitLab](/en/keeperpam/secrets-manager/integrations/gitlab-plugin)
+      * [Google Cloud Secret Manager Sync](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Google Cloud Key Management Encryption](/en/keeperpam/secrets-manager/integrations/google-cloud-key-management-encryption)
       * [Hashicorp Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
       * [Heroku](/en/keeperpam/secrets-manager/integrations/heroku)
       * [Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
@@ -340,11 +342,11 @@ rotation?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
-      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
+      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [Terraform Plugin](/en/keeperpam/secrets-manager/integrations/terraform)
 
         * [Terraform Registry](https://registry.terraform.io/providers/Keeper-Security/secretsmanager/latest/docs/data-sources/address)
@@ -647,6 +649,19 @@ amend and duplicate as needed.
 Importing the file will generate a Login record type: **make sure to convert
 it to PAM User.**
 
+[ 237BPAM User Template
+AzureAppSecretRotation.csv](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
+x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FpOlF7YIhAW9jMUZrIewb%2FPAM%20User%20Template%20AzureAppSecretRotation.csv?alt=media&token=d93ff265-ca1f-4006-bed5-d3374be2e842)
+
+CSV file to import in the Keeper vault
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FxVfBHKakBcDAo0zxOiP7%252FRecord.png%3Falt%3Dmedia%26token%3De6dd0451-befb-426f-b857-6bd44d86c03c&width=768&dpr=4&quality=100&sign=9b8dac93&sv=2)
+
+PAM User record example
+
 ##
 
 Setting Up the Rotation in the Keeper Vault
@@ -663,17 +678,33 @@ Configuration From the Keeper Vault:
 
   1. Create a shared folder in the vault
 
-  2. 
+  2. Create a PAM User record in the shared folder with the fields and custom fields described [above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-rotation#pam-user-record-fields-requirements).
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FBPeZllsjZjpQ4FKqsU3Y%252FFolderAndRecord.png%3Falt%3Dmedia%26token%3D4d61b7f6-512a-4437-a1d1-b862bc78ee7b&width=768&dpr=4&quality=100&sign=2fdce1dc&sv=2)
+
+PAM User record in shared folder
 
   1. In the Secret Manager tab of the Keeper vault, create a new application for the gateway if there is no gateway yet.
 
   2. Make sure the Application has edit permissions on the shared folder created above.
 
-  3.   4. In the Secret Manager tab of the Keeper vault, go to the PAM Configurations tab. Create a new PAM configuration if needed.
+  3. Provision the gateway (gateway tab after selecting the application) on a Linux box. Simply run the install command provided by the Keeper vault and make sure Python and the dependencies listed [above ](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-rotation#prerequisites)are installed.
+
+  4. In the Secret Manager tab of the Keeper vault, go to the PAM Configurations tab. Create a new PAM configuration if needed.
 
   5. Under Environment, please select “Azure”, select the Gateway, select the shared folder, provide the “Entra ID” name (arbitrary name of your Entra ID environment), the admin application “Client ID” (Overview tab of the admin application in the Azure portal), “Client Secret” (Certificates & secrets tab of the admin application in the Azure portal), "Subscription ID" and "Tenant ID". 
 
-  1.      * Password Rotation Settings: select your desired schedule and the PAM configuration created above.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTldgif5bZxvvl7h1AIMF%252FAzure%2520PAM%2520Config.png%3Falt%3Dmedia%26token%3Da7f60a7a-0e51-4b01-a5d0-8de058685855&width=768&dpr=4&quality=100&sign=9aeb4333&sv=2)
+
+Azure PAM Config
+
+  1. Edit the PAM User record previously described in this [documentation](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-rotation#pam-user-record-fields-requirements):
+
+     * Password Rotation Settings: select your desired schedule and the PAM configuration created above.
 
      * Select "Run PAM Scripts only" as the Rotation method.
 
@@ -685,6 +716,12 @@ Copy
     
     python3
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3b7bDCzQYT2KQglj7xHX%252FAttach%2520PAM%2520Script.png%3Falt%3Dmedia%26token%3D62140be8-e5dc-4253-b64c-9687dbcfdc2c&width=768&dpr=4&quality=100&sign=7216789e&sv=2)
+
+Attach PAM Script to the PAM User record
+
 It is possible to also rotate the application secret of the admin Azure
 application. To do this, you will need to store you admin Azure app secret in
 another Keeper PAM User record.
@@ -692,6 +729,11 @@ another Keeper PAM User record.
 ###
 
 Admin App Secret Record Requirements
+
+The PAM user record will need all fields as described in the documentation
+[above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/azure/azure-app-secret-rotation#pam-user-record-fields-
+requirements), along with the additional fields below:
 
 ####
 
@@ -724,8 +766,21 @@ Text
 Enter your admin application client ID. This is available in the Overview tab
 of the admin application in the Azure portal > App registrations.
 
+Instead of creating the PAM User record manually using the documentation
+[above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/azure/azure-app-secret-rotation#pam-user-record-fields-requirements)
+and the extra fields above, you could also import the csv file below. It will
+create a template record you can amend and duplicate as needed.
+
 Importing the file will generate a Login record type: **make sure to convert
 it to PAM User.**
+
+[ 338BPAM User Template
+AdminAzureAppSecretRotation.csv](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
+x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FyvhvHf2dKSX6rlXV9YDu%2FPAM%20User%20Template%20AdminAzureAppSecretRotation.csv?alt=media&token=628b40e4-6e4b-428e-a5d7-b73bffeb7fa5)
+
+CSV file to import in the Keeper vault
 
 ###
 
@@ -734,6 +789,12 @@ Configuration From the Keeper Vault:
   1. Create a shared folder in the vault
 
   2. Create a PAM User record in the shared folder with the fields and custom fields described [above](https://docs.keeper.io/en/secrets-manager/~/changes/CJz1BBmhxNBUf74Nkc3C/secrets-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-rotation#pam-user-record-fields-requirements).
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FnldlIwugI8D7nCRmGxKv%252FFolderAndRecords.png%3Falt%3Dmedia%26token%3D5ccbecde-3488-44e6-b7b3-8515880042f4&width=768&dpr=4&quality=100&sign=deed4c96&sv=2)
+
+Shared folder with two records: admin app and target app
 
   1. In the Secret Manager tab of the Keeper vault, create a new application for the gateway if there is no gateway yet.
 
@@ -744,6 +805,12 @@ Configuration From the Keeper Vault:
   4. In the Secret Manager tab of the Keeper vault, go to the PAM Configurations tab. Create a new PAM configuration if needed.
 
   5. Under Environment, please select “Local Network”, select the Gateway and the shared folder. 
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDB2SYgfBmDCr91ClA1ta%252FLocal%2520PAM%2520Config.png%3Falt%3Dmedia%26token%3D812b3dc1-9acf-469a-b816-eb03b985f7db&width=768&dpr=4&quality=100&sign=3a5317bf&sv=2)
+
+Local Network PAM Config
 
   1. Edit the target app PAM User record:
 
@@ -763,9 +830,19 @@ Copy
     
     python3
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwCC3Gc9pgY0SpXxDK2ss%252FAttach%2520PAM%2520Script%2520with%2520cred.png%3Falt%3Dmedia%26token%3D583fda79-07ad-4bad-9723-b5c4fcfef791&width=768&dpr=4&quality=100&sign=3e4f52eb&sv=2)
+
+Attach PAM Script with Rotation Credential
+
 ##
 
 Python Script
+
+[9KBRotateAzureApp.py](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
+x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2F5jnksqiM65NkHMi2YzuB%2FRotateAzureApp.py?alt=media&token=0f4c9243-ac37-4398-bd71-d7964c58744f)
 
 Copy
 
@@ -1015,96 +1092,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-Create a PAM User record in the shared folder with the fields and custom
-fields described .
-
-Provision the gateway (gateway tab after selecting the application) on a Linux
-box. Simply run the install command provided by the Keeper vault and make sure
-Python and the dependencies listed are installed.
-
-Edit the PAM User record previously described in this :
-
-The PAM user record will need all fields as described in the documentation ,
-along with the additional fields below:
-
-Instead of creating the PAM User record manually using the documentation  and
-the extra fields above, you could also import the csv file below. It will
-create a template record you can amend and duplicate as needed.
-
-[above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/azure/azure-app-secret-rotation#pam-user-record-fields-requirements)
-
-[above ](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/azure/azure-app-secret-rotation#prerequisites)
-
-[documentation](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/azure/azure-app-secret-rotation#pam-user-record-
-fields-requirements)
-
-[above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/azure/azure-app-secret-rotation#pam-user-record-fields-requirements)
-
-[above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/azure/azure-app-secret-rotation#pam-user-record-fields-requirements)
-
-[237BPAM User Template
-AzureAppSecretRotation.csv](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FpOlF7YIhAW9jMUZrIewb%2FPAM%20User%20Template%20AzureAppSecretRotation.csv?alt=media&token=d93ff265-ca1f-4006-bed5-d3374be2e842)
-
-CSV file to import in the Keeper vault
-
-[338BPAM User Template
-AdminAzureAppSecretRotation.csv](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FyvhvHf2dKSX6rlXV9YDu%2FPAM%20User%20Template%20AdminAzureAppSecretRotation.csv?alt=media&token=628b40e4-6e4b-428e-a5d7-b73bffeb7fa5)
-
-CSV file to import in the Keeper vault
-
-[9KBRotateAzureApp.py](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2F5jnksqiM65NkHMi2YzuB%2FRotateAzureApp.py?alt=media&token=0f4c9243-ac37-4398-bd71-d7964c58744f)
-
-PAM User record example
-
-PAM User record in shared folder
-
-Azure PAM Config
-
-Attach PAM Script to the PAM User record
-
-Shared folder with two records: admin app and target app
-
-Local Network PAM Config
-
-Attach PAM Script with Rotation Credential
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FxVfBHKakBcDAo0zxOiP7%252FRecord.png%3Falt%3Dmedia%26token%3De6dd0451-befb-426f-b857-6bd44d86c03c&width=768&dpr=4&quality=100&sign=9b8dac93&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FBPeZllsjZjpQ4FKqsU3Y%252FFolderAndRecord.png%3Falt%3Dmedia%26token%3D4d61b7f6-512a-4437-a1d1-b862bc78ee7b&width=768&dpr=4&quality=100&sign=2fdce1dc&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTldgif5bZxvvl7h1AIMF%252FAzure%2520PAM%2520Config.png%3Falt%3Dmedia%26token%3Da7f60a7a-0e51-4b01-a5d0-8de058685855&width=768&dpr=4&quality=100&sign=9aeb4333&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3b7bDCzQYT2KQglj7xHX%252FAttach%2520PAM%2520Script.png%3Falt%3Dmedia%26token%3D62140be8-e5dc-4253-b64c-9687dbcfdc2c&width=768&dpr=4&quality=100&sign=7216789e&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FnldlIwugI8D7nCRmGxKv%252FFolderAndRecords.png%3Falt%3Dmedia%26token%3D5ccbecde-3488-44e6-b7b3-8515880042f4&width=768&dpr=4&quality=100&sign=deed4c96&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDB2SYgfBmDCr91ClA1ta%252FLocal%2520PAM%2520Config.png%3Falt%3Dmedia%26token%3D812b3dc1-9acf-469a-b816-eb03b985f7db&width=768&dpr=4&quality=100&sign=3a5317bf&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwCC3Gc9pgY0SpXxDK2ss%252FAttach%2520PAM%2520Script%2520with%2520cred.png%3Falt%3Dmedia%26token%3D583fda79-07ad-4bad-9723-b5c4fcfef791&width=768&dpr=4&quality=100&sign=3e4f52eb&sv=2)
 

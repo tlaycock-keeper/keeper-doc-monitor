@@ -303,19 +303,21 @@ reference/plugins?fallback=true)
         * [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible/ansible-tower)
 
       * [AWS CLI Credential Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-process)
-      * [AWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
-      * [AWS KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+      * [AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+      * [AWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
       * [Azure DevOps Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
-      * [Azure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Sync](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
       * [Bitbucket Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
       * [Docker Image](/en/keeperpam/secrets-manager/integrations/docker-image)
       * [Docker Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
       * [Docker Writer Image](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-      * [Entrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
-      * [GCP Secret Manager](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Entrust HSM Encryption](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
       * [Git - Sign Commits with SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
       * [GitHub Actions](/en/keeperpam/secrets-manager/integrations/github-actions)
       * [GitLab](/en/keeperpam/secrets-manager/integrations/gitlab-plugin)
+      * [Google Cloud Secret Manager Sync](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Google Cloud Key Management Encryption](/en/keeperpam/secrets-manager/integrations/google-cloud-key-management-encryption)
       * [Hashicorp Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
       * [Heroku](/en/keeperpam/secrets-manager/integrations/heroku)
       * [Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
@@ -324,11 +326,11 @@ reference/plugins?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
-      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
+      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [Terraform Plugin](/en/keeperpam/secrets-manager/integrations/terraform)
 
         * [Terraform Registry](https://registry.terraform.io/providers/Keeper-Security/secretsmanager/latest/docs/data-sources/address)
@@ -444,6 +446,122 @@ u&only=yes&limit=100)
 
 Rotate passwords on any remote system using Keeper Commander plugins
 
+Keeper has also launched a zero-trust Password Rotation feature with
+KeeperPAM. This new capability is recommended for most password rotation use
+cases. The Documentation is linked below:
+
+  * [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-rotation)
+
+  * Commander [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
+
+##
+
+Password Rotation
+
+Keeper Commander has a feature which can communicate to internal and external
+systems for the purpose of rotating a password and synchronizing the change to
+your Keeper Vault. We accomplish this by associating a Keeper record with a
+physical system through the use of custom fields. For example, you might want
+to rotate your MySQL password, Active Directory password and local
+Administrator password automatically.
+
+##
+
+Typed Records
+
+Typed records add simplicity to Commander rotation. Commander can scan fields
+and make intelligent decisions about the rotation type, and connection
+details. Record types such as the standard "SSH Key" or "Server" types make it
+easy to create records that are ready for rotation.
+
+Each rotation plugin has slightly different requirements, select from the list
+of plugins on the left nested under this page to learn more.
+
+Commander will identify the type of rotation to use automatically based on the
+values supplied to the record. For example a record with a PORT value of 22
+will use the SSH rotation plugin by default. The rotation plugin can also be
+specified during rotation or with a custom record field.
+
+Optionally, any records can use custom fields as configuration for rotation.
+See table below for an example of custom fields.
+
+Not sure the difference between typed and untyped records? See the
+[Troubleshooting section](/en/keeperpam/commander-cli/troubleshooting-
+commander-cli#typed-vs-untyped-records-v3-vs-v2)
+
+##
+
+Untyped Records
+
+Older, non-typed records require some additional setup in order to support
+Commander rotation.
+
+To support a rotation plugin, simply add a set of **custom field** values to
+the Keeper record. The custom field values tell Commander which plugin to use,
+and what system to communicate with when rotating the password. To modify your
+Keeper record to include custom fields, login to Keeper on the [Web
+Vault](https://keepersecurity.com/vault) or [Keeper
+Desktop](https://keepersecurity.com/download.html) app.
+
+Example custom fields for MySQL password rotation:
+
+**Custom Field Name**
+
+**Custom Field Value**
+
+cmdr:plugin
+
+mysql
+
+cmdr:host
+
+192.168.1.55
+
+cmdr:db
+
+testing
+
+Typed records also support custom record fields. If an older record is
+converted to be typed (and the fields are unchanged) it will work with
+Commander rotation.
+
+When a plugin is specified in a record, Commander will search in the plugins/
+folder to load the module based on the name provided (e.g. mysql.py) then it
+will use the values of the Keeper record to connect, rotate the password and
+save the resulting data.
+
+Check out the [plugins folder](https://github.com/Keeper-
+Security/Commander/tree/master/keepercommander/plugins) for all of the
+available plugins. Keeper's team adds new plugins on an ongoing basis. If you
+need a particular plugin created, send us an email to
+[commander@keepersecurity.com](mailto:commander@keepersecurity.com).
+
+###
+
+Supported Plugins
+
+###
+
+Github Location
+
+<https://github.com/Keeper-
+Security/Commander/tree/master/keepercommander/plugins>[](https://github.com/Keeper-
+Security/Commander/tree/master/keepercommander/plugins)
+
+####
+
+Activating a Plugin
+
+To activate a plugin for a particular Keeper record, you first need to update
+the custom fields for that record with special keywords that are used by
+Commander. See the specific plugin for the custom field requirements.
+
+To perform a rotation use the `_rotate_` command.
+
+Keeper's team is expanding the number of plugins on an ongoing basis. If you
+need a particular plugin created or modified, email us at
+[commander@keepersecurity.com](mailto:commander@keepersecurity.com).
+
 [PreviousMiscellaneous Commands](/en/keeperpam/commander-cli/command-
 reference/misc-commands)[NextPassword Rotation
 Commands](/en/keeperpam/commander-cli/command-reference/plugins/password-
@@ -483,120 +601,6 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
-Keeper has also launched a zero-trust Password Rotation feature with
-KeeperPAM. This new capability is recommended for most password rotation use
-cases. The Documentation is linked below:
-
-  *   * Commander 
-
-##
-
-Password Rotation
-
-Keeper Commander has a feature which can communicate to internal and external
-systems for the purpose of rotating a password and synchronizing the change to
-your Keeper Vault. We accomplish this by associating a Keeper record with a
-physical system through the use of custom fields. For example, you might want
-to rotate your MySQL password, Active Directory password and local
-Administrator password automatically.
-
-##
-
-Typed Records
-
-Typed records add simplicity to Commander rotation. Commander can scan fields
-and make intelligent decisions about the rotation type, and connection
-details. Record types such as the standard "SSH Key" or "Server" types make it
-easy to create records that are ready for rotation.
-
-Each rotation plugin has slightly different requirements, select from the list
-of plugins on the left nested under this page to learn more.
-
-Commander will identify the type of rotation to use automatically based on the
-values supplied to the record. For example a record with a PORT value of 22
-will use the SSH rotation plugin by default. The rotation plugin can also be
-specified during rotation or with a custom record field.
-
-Optionally, any records can use custom fields as configuration for rotation.
-See table below for an example of custom fields.
-
-Not sure the difference between typed and untyped records? See the
-
-##
-
-Untyped Records
-
-Older, non-typed records require some additional setup in order to support
-Commander rotation.
-
-To support a rotation plugin, simply add a set of **custom field** values to
-the Keeper record. The custom field values tell Commander which plugin to use,
-and what system to communicate with when rotating the password. To modify your
-Keeper record to include custom fields, login to Keeper on the  or  app.
-
-Example custom fields for MySQL password rotation:
-
-**Custom Field Name**
-
-**Custom Field Value**
-
-cmdr:plugin
-
-mysql
-
-cmdr:host
-
-192.168.1.55
-
-cmdr:db
-
-testing
-
-Typed records also support custom record fields. If an older record is
-converted to be typed (and the fields are unchanged) it will work with
-Commander rotation.
-
-When a plugin is specified in a record, Commander will search in the plugins/
-folder to load the module based on the name provided (e.g. mysql.py) then it
-will use the values of the Keeper record to connect, rotate the password and
-save the resulting data.
-
-###
-
-Supported Plugins
-
-###
-
-Github Location
-
-####
-
-Activating a Plugin
-
-To activate a plugin for a particular Keeper record, you first need to update
-the custom fields for that record with special keywords that are used by
-Commander. See the specific plugin for the custom field requirements.
-
-To perform a rotation use the `_rotate_` command.
-
-Check out the  for all of the available plugins. Keeper's team adds new
-plugins on an ongoing basis. If you need a particular plugin created, send us
-an email to .
-
-Keeper's team is expanding the number of plugins on an ongoing basis. If you
-need a particular plugin created or modified, email us at .
-
-[plugins folder](https://github.com/Keeper-
-Security/Commander/tree/master/keepercommander/plugins)
-
-[commander@keepersecurity.com](mailto:commander@keepersecurity.com)
-
-<https://github.com/Keeper-
-Security/Commander/tree/master/keepercommander/plugins>[](https://github.com/Keeper-
-Security/Commander/tree/master/keepercommander/plugins)
-
-[commander@keepersecurity.com](mailto:commander@keepersecurity.com)
-
 [Active Directory](/en/keeperpam/commander-cli/command-
 reference/plugins/active-directory-plugin)
 
@@ -632,17 +636,4 @@ passwd-plugin)
 
 [Windows Password](/en/keeperpam/commander-cli/command-
 reference/plugins/windows-plugin)
-
-[Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
-rotation)
-
-[KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
-commands)
-
-[Web Vault](https://keepersecurity.com/vault)
-
-[Keeper Desktop](https://keepersecurity.com/download.html)
-
-[Troubleshooting section](/en/keeperpam/commander-cli/troubleshooting-
-commander-cli#typed-vs-untyped-records-v3-vs-v2)
 

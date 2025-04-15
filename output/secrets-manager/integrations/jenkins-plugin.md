@@ -305,19 +305,21 @@ manager/integrations/jenkins-plugin?fallback=true)
         * [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible/ansible-tower)
 
       * [AWS CLI Credential Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-process)
-      * [AWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
-      * [AWS KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+      * [AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+      * [AWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
       * [Azure DevOps Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
-      * [Azure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Sync](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
       * [Bitbucket Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
       * [Docker Image](/en/keeperpam/secrets-manager/integrations/docker-image)
       * [Docker Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
       * [Docker Writer Image](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-      * [Entrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
-      * [GCP Secret Manager](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Entrust HSM Encryption](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
       * [Git - Sign Commits with SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
       * [GitHub Actions](/en/keeperpam/secrets-manager/integrations/github-actions)
       * [GitLab](/en/keeperpam/secrets-manager/integrations/gitlab-plugin)
+      * [Google Cloud Secret Manager Sync](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Google Cloud Key Management Encryption](/en/keeperpam/secrets-manager/integrations/google-cloud-key-management-encryption)
       * [Hashicorp Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
       * [Heroku](/en/keeperpam/secrets-manager/integrations/heroku)
       * [Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
@@ -326,11 +328,11 @@ manager/integrations/jenkins-plugin?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
-      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
+      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [Terraform Plugin](/en/keeperpam/secrets-manager/integrations/terraform)
 
         * [Terraform Registry](https://registry.terraform.io/providers/Keeper-Security/secretsmanager/latest/docs/data-sources/address)
@@ -514,7 +516,9 @@ utilize this integration, you will need:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * [A One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    *   * [A One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
 
 The plugin uses **SecureRandom** which can be slow on certain systems due too
 low entropy. On Linux, executing `cat /proc/sys/kernel/random/entropy_avail`
@@ -730,6 +734,10 @@ started/#snippet-generator) inside of Jenkins. Select **withKsm** from the
 **Sample Step** dropdown, then add a Keeper Secrets Manager Application, which
 will allow you to select the credentials and add secrets.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FO7LBJZqzcT7BYuCLXlRn%252FScreen%2520Shot%25202022-09-06%2520at%25201.57.53%2520PM.png%3Falt%3Dmedia%26token%3D3aa99bdb-80a2-48e2-8bc2-cbe3e6de73f5&width=768&dpr=4&quality=100&sign=a388209d&sv=2)
+
 When you are finished setting up your application, credentials, and secrets,
 you can click the **Generate Pipeline Script** to generate the **withKsm**
 block. This snippet can then be added to your Jenkinsfile.
@@ -738,15 +746,10 @@ The environmental variables containing the secrets are only accessible within
 the **withKsm** block where they are defined. Once you exit the block, the
 secrets are not accessible.
 
-A Keeper  with secrets shared to it
-
 See the  for instructions on creating an Application
 
 For more information on creating Secrets Manager Applications and Clients, see
 the  documentation.
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
@@ -755,12 +758,18 @@ an-application)
 reference/secrets-manager-commands#overview)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FO7LBJZqzcT7BYuCLXlRn%252FScreen%2520Shot%25202022-09-06%2520at%25201.57.53%2520PM.png%3Falt%3Dmedia%26token%3D3aa99bdb-80a2-48e2-8bc2-cbe3e6de73f5&width=768&dpr=4&quality=100&sign=a388209d&sv=2)
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkOBmofZ4fb5Gz02mFQ%252F-MkODWua0gGH7MFs-
+ze1%252FScreen%2520Shot%25202021-09-24%2520at%25202.13.24%2520PM.png%3Falt%3Dmedia%26token%3D036d3485-e1a0-464f-975e-c2e88fba0a17&width=768&dpr=4&quality=100&sign=79745923&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fa4n3YHq8mVkQcwSTgJeu%252FScreen%2520Shot%25202021-11-17%2520at%25209.45.40%2520AM.png%3Falt%3Dmedia%26token%3D8e3d298f-6b83-492a-8998-bebdebfe535f&width=768&dpr=4&quality=100&sign=517cdd1c&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MlMTSx8rstZWwFAz2Sd%252F-MlMTsJ1VgQqwrC2mEPd%252Fcred_add.png%3Falt%3Dmedia%26token%3D8b50d7cd-
+adc7-4a49-8109-097f63e77c76&width=768&dpr=4&quality=100&sign=6befa0ca&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -770,15 +779,5 @@ header.jpg%3Falt%3Dmedia%26token%3D7f925417-5968-47b7-a39c-883ef7fbc555&width=76
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MlMTSx8rstZWwFAz2Sd%252F-MlMTsJ1VgQqwrC2mEPd%252Fcred_add.png%3Falt%3Dmedia%26token%3D8b50d7cd-
-adc7-4a49-8109-097f63e77c76&width=768&dpr=4&quality=100&sign=6befa0ca&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MlMTSx8rstZWwFAz2Sd%252F-MlMUFCp1u926PgPpk3y%252Fbuilder.png%3Falt%3Dmedia%26token%3D55b1adb4-f916-44f5-99b8-69944fd683ac&width=768&dpr=4&quality=100&sign=dcc673f&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkOBmofZ4fb5Gz02mFQ%252F-MkODWua0gGH7MFs-
-ze1%252FScreen%2520Shot%25202021-09-24%2520at%25202.13.24%2520PM.png%3Falt%3Dmedia%26token%3D036d3485-e1a0-464f-975e-c2e88fba0a17&width=768&dpr=4&quality=100&sign=79745923&sv=2)
 

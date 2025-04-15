@@ -305,19 +305,21 @@ manager/integrations/heroku?fallback=true)
         * [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible/ansible-tower)
 
       * [AWS CLI Credential Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-process)
-      * [AWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
-      * [AWS KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+      * [AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+      * [AWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
       * [Azure DevOps Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
-      * [Azure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Sync](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
       * [Bitbucket Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
       * [Docker Image](/en/keeperpam/secrets-manager/integrations/docker-image)
       * [Docker Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
       * [Docker Writer Image](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-      * [Entrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
-      * [GCP Secret Manager](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Entrust HSM Encryption](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
       * [Git - Sign Commits with SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
       * [GitHub Actions](/en/keeperpam/secrets-manager/integrations/github-actions)
       * [GitLab](/en/keeperpam/secrets-manager/integrations/gitlab-plugin)
+      * [Google Cloud Secret Manager Sync](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Google Cloud Key Management Encryption](/en/keeperpam/secrets-manager/integrations/google-cloud-key-management-encryption)
       * [Hashicorp Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
       * [Heroku](/en/keeperpam/secrets-manager/integrations/heroku)
       * [Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
@@ -326,11 +328,11 @@ manager/integrations/heroku?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
-      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
+      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [Terraform Plugin](/en/keeperpam/secrets-manager/integrations/terraform)
 
         * [Terraform Registry](https://registry.terraform.io/providers/Keeper-Security/secretsmanager/latest/docs/data-sources/address)
@@ -600,10 +602,6 @@ Record UID of the record that contains the Webhook URL. The second is
 **KSM_CONFIG** which contains the Base64 encoded Secrets Manager
 configuration.
 
-See the [Configuration documentation](/en/keeperpam/secrets-
-manager/about/secrets-manager-configuration#using-a-cli-tool) for details on
-creating a Base64 configuration
-
 Copy
 
     
@@ -754,9 +752,10 @@ see the **Record UID**. You can copy a **Record UID** URL into the clipboard
 which will contain the actual **Record UID**. You only need that part of the
 URL.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FzPZ3aDlEBhivMIKCTiqh%252FScreen%2520Shot%25202022-01-11%2520at%252011.27.52%2520AM.png%3Falt%3Dmedia%26token%3Deabe9c30-2601-4e35-98b7-b70ea824ed48&width=768&dpr=4&quality=100&sign=871df91b&sv=2)
+See the  for details on creating a Base64 configuration
+
+[Configuration documentation](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration#using-a-cli-tool)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -766,12 +765,16 @@ Heroku.png%3Falt%3Dmedia%26token%3Df26aeadb-a920-4922-aa2c-6c3539dace96&width=76
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FusY03w1uv3JyjOk48IBy%252FScreen%2520Shot%25202022-01-11%2520at%252011.32.26%2520AM.png%3Falt%3Dmedia%26token%3Dff06b820-bfd7-4b1b-bcb1-4af8cf43001e&width=768&dpr=4&quality=100&sign=e0fa4b4e&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZVRzT4e8a8BA1j2e1EGk%252FScreen%2520Shot%25202022-01-11%2520at%252011.23.36%2520AM.png%3Falt%3Dmedia%26token%3Debc45e5a-ccb1-4bfd-
+ad2b-7f7c7fd83c20&width=768&dpr=4&quality=100&sign=982c94ba&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZVRzT4e8a8BA1j2e1EGk%252FScreen%2520Shot%25202022-01-11%2520at%252011.23.36%2520AM.png%3Falt%3Dmedia%26token%3Debc45e5a-ccb1-4bfd-
-ad2b-7f7c7fd83c20&width=768&dpr=4&quality=100&sign=982c94ba&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FzPZ3aDlEBhivMIKCTiqh%252FScreen%2520Shot%25202022-01-11%2520at%252011.27.52%2520AM.png%3Falt%3Dmedia%26token%3Deabe9c30-2601-4e35-98b7-b70ea824ed48&width=768&dpr=4&quality=100&sign=871df91b&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FusY03w1uv3JyjOk48IBy%252FScreen%2520Shot%25202022-01-11%2520at%252011.32.26%2520AM.png%3Falt%3Dmedia%26token%3Dff06b820-bfd7-4b1b-bcb1-4af8cf43001e&width=768&dpr=4&quality=100&sign=e0fa4b4e&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -783,13 +786,13 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2Qskc5RL0
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSvV9znfj4C2bu150lKU6%252FScreen%2520Shot%25202022-01-12%2520at%25203.48.11%2520PM.png%3Falt%3Dmedia%26token%3D6441a52e-8c8d-4c2d-bc56-dfcbf1b3dda4&width=768&dpr=4&quality=100&sign=be9fb55e&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuQju4v9yhtcmoUTP1r1u%252FScreen%2520Shot%25202022-01-12%2520at%25203.50.26%2520PM.png%3Falt%3Dmedia%26token%3D11035fa9-fad3-4c08-a635-38f443548b06&width=768&dpr=4&quality=100&sign=bfc10068&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FChgYjxCTN7N8NaLqvNyS%252FScreen%2520Shot%25202022-01-12%2520at%25202.54.34%2520PM.png%3Falt%3Dmedia%26token%3D7a62c280-9ba2-4bb4-aeb5-a80272430c6f&width=38&dpr=4&quality=100&sign=385956a6&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSvV9znfj4C2bu150lKU6%252FScreen%2520Shot%25202022-01-12%2520at%25203.48.11%2520PM.png%3Falt%3Dmedia%26token%3D6441a52e-8c8d-4c2d-bc56-dfcbf1b3dda4&width=768&dpr=4&quality=100&sign=be9fb55e&sv=2)
 

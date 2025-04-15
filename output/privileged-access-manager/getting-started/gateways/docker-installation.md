@@ -309,19 +309,21 @@ installation?fallback=true)
         * [Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible/ansible-tower)
 
       * [AWS CLI Credential Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-process)
-      * [AWS Secrets Manager](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
-      * [AWS KMS](/en/keeperpam/secrets-manager/integrations/aws-kms)
+      * [AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+      * [AWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
       * [Azure DevOps Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
-      * [Azure Key Vault](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Sync](/en/keeperpam/secrets-manager/integrations/azure-key-vault)
+      * [Azure Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
       * [Bitbucket Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
       * [Docker Image](/en/keeperpam/secrets-manager/integrations/docker-image)
       * [Docker Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
       * [Docker Writer Image](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-      * [Entrust HSM](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
-      * [GCP Secret Manager](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Entrust HSM Encryption](/en/keeperpam/secrets-manager/integrations/entrust-hsm)
       * [Git - Sign Commits with SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
       * [GitHub Actions](/en/keeperpam/secrets-manager/integrations/github-actions)
       * [GitLab](/en/keeperpam/secrets-manager/integrations/gitlab-plugin)
+      * [Google Cloud Secret Manager Sync](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+      * [Google Cloud Key Management Encryption](/en/keeperpam/secrets-manager/integrations/google-cloud-key-management-encryption)
       * [Hashicorp Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
       * [Heroku](/en/keeperpam/secrets-manager/integrations/heroku)
       * [Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
@@ -330,11 +332,11 @@ installation?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/aws-kms-1)
+      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
-      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
+      * [Teller](/en/keeperpam/secrets-manager/integrations/teller)
       * [Terraform Plugin](/en/keeperpam/secrets-manager/integrations/terraform)
 
         * [Terraform Registry](https://registry.terraform.io/providers/Keeper-Security/secretsmanager/latest/docs/data-sources/address)
@@ -457,44 +459,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=oqZIGwteAwpr2R0LjEx0&only=yes&limit=100)
 
 Instructions for installing Keeper Gateway on Docker
 
-[PreviousCreating a Gateway](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/one-time-access-token)[NextLinux
-Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/linux-installation)
-
-Last updated 21 days ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZdCwOSIZ90eIqXaHSQ7N%252FDocker%2520Install.jpg%3Falt%3Dmedia%26token%3D577af308-2d82-4423-8d62-a94826e60bc6&width=768&dpr=4&quality=100&sign=8bebeb77&sv=2)
 
 ##
 
@@ -578,6 +545,11 @@ SecComp File
 Download this file called `docker-seccomp.json` and place it in the same
 folder as your Docker Compose file.
 
+[15KBdocker-
+seccomp.json](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FMjBgU5aJYkp8Em3ZV9OD%2Fdocker-
+seccomp.json?alt=media&token=73227956-f299-47e5-80aa-764ea2ab9e93)
+
 3
 
 ###
@@ -607,8 +579,20 @@ Copy
     
     docker compose logs keeper-gateway
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuLk5SZEF58TniLsYGKII%252FScreenshot%25202024-12-27%2520at%25209.29.10%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3De9a6d790-80d2-4bdc-8ebe-a08cd88119a5&width=768&dpr=4&quality=100&sign=c202035e&sv=2)
+
+Docker Logs from Keeper Gateway
+
 On the Vault UI in the **Secrets Manager** > **Applications** > **Gateways**
 screen, the Gateway will show Online.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FpdccmtxqPQDtpeTrL7gh%252FScreenshot%25202024-12-27%2520at%25209.38.24%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D3c64598f-c12e-4e6a-9fa9-9a948c605397&width=768&dpr=4&quality=100&sign=bd809e33&sv=2)
+
+Gateway is Online
 
 ###
 
@@ -770,6 +754,45 @@ References:
 
   * Quick reference for [Installing Docker](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux)[ and Docker Compose on Linux](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux)
 
+[PreviousCreating a Gateway](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/one-time-access-token)[NextLinux
+Installation](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/linux-installation)
+
+Last updated 22 days ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ###
 
 Network Configuration
@@ -868,25 +891,4 @@ resources/pam-machine)
 
 [SSH connection](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/ssh-connections)
-
-[15KBdocker-
-seccomp.json](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FMjBgU5aJYkp8Em3ZV9OD%2Fdocker-
-seccomp.json?alt=media&token=73227956-f299-47e5-80aa-764ea2ab9e93)
-
-Docker Logs from Keeper Gateway
-
-Gateway is Online
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZdCwOSIZ90eIqXaHSQ7N%252FDocker%2520Install.jpg%3Falt%3Dmedia%26token%3D577af308-2d82-4423-8d62-a94826e60bc6&width=768&dpr=4&quality=100&sign=8bebeb77&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuLk5SZEF58TniLsYGKII%252FScreenshot%25202024-12-27%2520at%25209.29.10%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3De9a6d790-80d2-4bdc-8ebe-a08cd88119a5&width=768&dpr=4&quality=100&sign=c202035e&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FpdccmtxqPQDtpeTrL7gh%252FScreenshot%25202024-12-27%2520at%25209.38.24%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D3c64598f-c12e-4e6a-9fa9-9a948c605397&width=768&dpr=4&quality=100&sign=bd809e33&sv=2)
 
