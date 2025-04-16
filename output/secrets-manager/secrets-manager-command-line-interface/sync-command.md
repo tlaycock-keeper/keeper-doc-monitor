@@ -462,10 +462,25 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * sync command
+  * Sync Types
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=xatPhjOOmgV2nj3wjv9p&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
+
+# Sync Command
+
+Synchronizes selected keys from Keeper Vault to an external secrets manager
+
+[PreviousFolder Command](/en/keeperpam/secrets-manager/secrets-manager-
+command-line-interface/folder-command)[NextExec
+Command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/exec-command)
 
 Last updated 5 months ago
 
@@ -515,21 +530,6 @@ optional parameters:
 Sync Types
 
 Select an external provider below to learn more about the integration.
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
-
-# Sync Command
-
-Synchronizes selected keys from Keeper Vault to an external secrets manager
-
-[PreviousFolder Command](/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface/folder-command)[NextExec
-Command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/exec-command)
-
-  * sync command
-  * Sync Types
 
 [Profile Documentation](/en/keeperpam/secrets-manager/secrets-manager-command-
 line-interface/profile-command)

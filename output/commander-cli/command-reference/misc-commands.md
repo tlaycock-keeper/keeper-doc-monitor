@@ -1062,11 +1062,6 @@ Audit" view) differs from the corresponding value shown in the admin console
 report --show-updated` command, use the `--hard` flag to force a summary
 security audit score reset/re-calculation to re-align those values.
 
-For more on the use of this command to correct mis-aligned security scores,
-please refer to the ["Security Audit Report Score Re-alignment
-Process"](/en/keeperpam/commander-cli/troubleshooting-commander-cli#security-
-audit-report-score-re-alignment-process) section of our Troubleshooting page.
-
 ###
 
 sleep
@@ -1187,7 +1182,7 @@ Copy
 reference/msp-management-commands)[NextPassword
 Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
 
-Last updated 8 months ago
+Last updated 9 months ago
 
 Was this helpful?
 
@@ -1221,8 +1216,15 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+For more on the use of this command to correct mis-aligned security scores,
+please refer to the  section of our Troubleshooting page.
+
 This command is deprecated. If your goal is to add delay between commands,
 please refer to the  command.
+
+["Security Audit Report Score Re-alignment Process"](/en/keeperpam/commander-
+cli/troubleshooting-commander-cli#security-audit-report-score-re-alignment-
+process)
 
 [`run-batch`](/en/keeperpam/commander-cli/command-reference/misc-commands#run-
 batch-command)

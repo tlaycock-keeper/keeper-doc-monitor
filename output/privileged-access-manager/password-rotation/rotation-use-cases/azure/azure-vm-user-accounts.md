@@ -677,7 +677,7 @@ rotation/rotation-use-cases/azure/azure-ad-users)[NextAzure Managed
 Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 use-cases/azure/managed-database)
 
-Last updated 7 days ago
+Last updated 8 days ago
 
 Was this helpful?
 

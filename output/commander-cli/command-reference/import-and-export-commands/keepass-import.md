@@ -445,6 +445,45 @@ PDF](/en/keeperpam/~gitbook/pdf?page=vuR0nkPtuYuYCbBZ65r2&only=yes&limit=100)
 
 Automatic migration of your Keepass vault
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLD9CF3Z3Raml4QAogCyV%252FImport-
+Keeper-
+KeePass.jpg%3Falt%3Dmedia%26token%3D27324b7a-4783-4dc1-a86d-b602ff24b1a4&width=768&dpr=4&quality=100&sign=c78d2b64&sv=2)
+
+##
+
+**Keepass Import**
+
+Keeper Commander supports importing the record and folder structure directly
+from an encrypted Keepass file. File attachments are also supported. Make sure
+to first follow [these instructions](https://github.com/Keeper-
+Security/Commander/blob/master/keepercommander/importer/keepass/README.md) to
+install the necessary keepass modules.
+
+Copy
+
+    
+    
+    $ keeper import --format=keepass test.kdbx
+
+You can optionally make all top level folders as shared folder object with
+default permissions.
+
+Copy
+
+    
+    
+    $ keeper import --format=keepass --shared --permissions=URES test.kdbx
+
+For more options, see the help screen:
+
+Copy
+
+    
+    
+    $ keeper help import
+
 [PreviousDelinea / Thycotic Secret Server Import](/en/keeperpam/commander-
 cli/command-reference/import-and-export-commands/delinea-thycotic-secret-
 server-import)[NextManageEngine Import](/en/keeperpam/commander-cli/command-
@@ -483,43 +522,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-##
-
-**Keepass Import**
-
-Keeper Commander supports importing the record and folder structure directly
-from an encrypted Keepass file. File attachments are also supported. Make sure
-to first follow [these instructions](https://github.com/Keeper-
-Security/Commander/blob/master/keepercommander/importer/keepass/README.md) to
-install the necessary keepass modules.
-
-Copy
-
-    
-    
-    $ keeper import --format=keepass test.kdbx
-
-You can optionally make all top level folders as shared folder object with
-default permissions.
-
-Copy
-
-    
-    
-    $ keeper import --format=keepass --shared --permissions=URES test.kdbx
-
-For more options, see the help screen:
-
-Copy
-
-    
-    
-    $ keeper help import
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLD9CF3Z3Raml4QAogCyV%252FImport-
-Keeper-
-KeePass.jpg%3Falt%3Dmedia%26token%3D27324b7a-4783-4dc1-a86d-b602ff24b1a4&width=768&dpr=4&quality=100&sign=c78d2b64&sv=2)
 

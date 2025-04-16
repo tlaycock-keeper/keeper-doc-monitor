@@ -586,11 +586,21 @@ psql --host=${cmdr:host} --port=${cmdr:port} --username=${login}
 
 Here's a screenshot of the Keeper Vault record for this use case:
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf4CgBqohGZ1_sEVoQH%252Fimage.png%3Falt%3Dmedia%26token%3D86e1e38c-0c84-4aa6-bcc4-bdefd9c4113c&width=768&dpr=4&quality=100&sign=476408d7&sv=2)
+
+A Keeper Record setup for connection
+
+For more information on the `connect` command, see the
+[documentation](/en/keeperpam/commander-cli/command-
+reference/plugins/password-rotation#connect-command)
+
 [PreviousOracle Plugin](/en/keeperpam/commander-cli/command-
 reference/plugins/oracle-plugin)[NextPSPasswd Plugin](/en/keeperpam/commander-
 cli/command-reference/plugins/pspasswd-plugin)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 
@@ -623,15 +633,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-A Keeper Record setup for connection
-
-For more information on the `connect` command, see the
-
-[documentation](/en/keeperpam/commander-cli/command-
-reference/plugins/password-rotation#connect-command)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf4CgBqohGZ1_sEVoQH%252Fimage.png%3Falt%3Dmedia%26token%3D86e1e38c-0c84-4aa6-bcc4-bdefd9c4113c&width=768&dpr=4&quality=100&sign=476408d7&sv=2)
 

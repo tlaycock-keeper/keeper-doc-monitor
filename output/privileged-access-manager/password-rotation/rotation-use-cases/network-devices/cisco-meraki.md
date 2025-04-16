@@ -937,6 +937,12 @@ Copy
 
 The above script for the Cisco Post-Rotation Script can be also found here:
 
+[https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
+Scripts/blob/main/cisco-
+meraki/update_meraki_user.pygithub.com](https://github.com/Keeper-
+Security/Zero-Trust-KeeperPAM-Scripts/blob/main/cisco-
+meraki/update_meraki_user.py)
+
 ##
 
 Rotating Cisco Meraki Network User Credentials
@@ -957,7 +963,7 @@ rotation/rotation-use-cases/network-devices/cisco-ios-xe)[NextService
 Management](/en/keeperpam/privileged-access-manager/password-rotation/service-
 management)
 
-Last updated 1 month ago
+Last updated 2 months ago
 
 Was this helpful?
 
@@ -990,10 +996,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-[https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
-Scripts/blob/main/cisco-
-meraki/update_meraki_user.pygithub.com](https://github.com/Keeper-
-Security/Zero-Trust-KeeperPAM-Scripts/blob/main/cisco-
-meraki/update_meraki_user.py)
 

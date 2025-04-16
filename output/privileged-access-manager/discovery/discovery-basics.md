@@ -456,6 +456,44 @@ PDF](/en/keeperpam/~gitbook/pdf?page=Y1ebmy2JcoO4QZ2YGvqH&only=yes&limit=100)
 
 Setting up KeeperPAM for Discovery
 
+[PreviousDiscovery](/en/keeperpam/privileged-access-
+manager/discovery)[NextDiscovery using Commander](/en/keeperpam/privileged-
+access-manager/discovery/discovery-using-commander)
+
+Last updated 25 days ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ###
 
 Overview
@@ -482,13 +520,6 @@ Discovery Enforcement Policies
 On the Admin Console, the following Enforcement Policies affect the user's
 ability to run Discovery jobs.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FpIEvx3uoWPQt4DOxWMXR%252FScreenshot%25202025-03-17%2520at%25208.00.04%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D216d6d74-3f07-4395-a9ad-
-cf1e0a76c43b&width=768&dpr=4&quality=100&sign=120cbe29&sv=2)
-
-Enable Discovery Policy
-
 Enforcement Policy
 
 Enforcement Policy
@@ -504,10 +535,6 @@ Copy
     ALLOW_PAM_DISCOVERY
 
 Allow users to run discovery jobs
-
-Discovery can also be enabled on the [Keeper Commander
-CLI](/en/keeperpam/commander-cli/command-reference/secrets-manager-
-commands#overview) using the `enterprise-role` command:
 
 Copy
 
@@ -569,9 +596,6 @@ Ex: `My Network`
 Network CIDR
 
 Subnet of the IP address
-
-Ex: `192.168.0.15/24` [learn
-more](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) about CIDR
 
 Port Mapping
 
@@ -743,41 +767,19 @@ Next Steps:
 
   * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
-[PreviousDiscovery](/en/keeperpam/privileged-access-
-manager/discovery)[NextDiscovery using Commander](/en/keeperpam/privileged-
-access-manager/discovery/discovery-using-commander)
+Discovery can also be enabled on the  using the `enterprise-role` command:
 
-Last updated 24 days ago
+Ex: `192.168.0.15/24` about CIDR
 
-Was this helpful?
+[learn more](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
 
-#### Company
+[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
+manager-commands#overview)
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+Enable Discovery Policy
 
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FpIEvx3uoWPQt4DOxWMXR%252FScreenshot%25202025-03-17%2520at%25208.00.04%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D216d6d74-3f07-4395-a9ad-
+cf1e0a76c43b&width=768&dpr=4&quality=100&sign=120cbe29&sv=2)
 

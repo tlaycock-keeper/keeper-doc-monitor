@@ -448,6 +448,44 @@ PDF](/en/keeperpam/~gitbook/pdf?page=t41fd23FFoTrc6UKtieT&only=yes&limit=100)
 
 Information about Keeper Secrets Manager configuration files
 
+[PreviousOne Time Access Token](/en/keeperpam/secrets-manager/about/one-time-
+token)[NextKeeper Notation](/en/keeperpam/secrets-manager/about/keeper-
+notation)
+
+Last updated 3 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ##
 
 About
@@ -458,8 +496,7 @@ used to authenticate and decrypt data from the Keeper Secrets Manager APIs.
 
 Secrets Manager configurations are created from [One Time Access
 Tokens](/en/keeperpam/secrets-manager/about/one-time-token) and have a one to
-one relationship with[ client devices](/en/keeperpam/secrets-
-manager/about/terminology#client-device).
+one relationship with.
 
 ####
 
@@ -483,16 +520,8 @@ creating a new Secrets Manager device.
 First navigate to the Secrets Manager tab, and select an Application from the
 list.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F0R4yOre6vH7YIy7c7hyH%252Fimage.png%3Falt%3Dmedia%26token%3D306988c9-4207-4a26-b907-bf1dac42fb2e&width=768&dpr=4&quality=100&sign=d75ba178&sv=2)
-
 Then, select the "Devices" tab in the right-hand application pane, and click
 "Edit" to go into edit mode.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FKtVhHT5wBXRH7GIvItWY%252Fimage.png%3Falt%3Dmedia%26token%3D611661db-1136-40af-8136-62f3e6937b5a&width=768&dpr=4&quality=100&sign=9acfd1f6&sv=2)
 
 From the edit view, you can click "Add Device" to create a new Secrets Manager
 device to the application.
@@ -500,17 +529,9 @@ device to the application.
 The Add Device menu will appear. Enter a name for this device, and then select
 "Configuration File" from the method dropdown.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FELVTCYheAKKOqaTG0UcN%252Fimage.png%3Falt%3Dmedia%26token%3Db43706d0-2b3a-4bb8-818a-8ec59d37355d&width=768&dpr=4&quality=100&sign=315c3b49&sv=2)
-
 After Configuration File is selected, you are given options for receiving the
 configuration. You can choose to generate a configuration in Base64 or json
 format, and download the configuration to a file, or copy it to the clipboard.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJUZwRTrthjUUWhPWAL5z%252Fimage.png%3Falt%3Dmedia%26token%3D7e5f68ba-7f70-4486-9682-050cf07f9e27&width=768&dpr=4&quality=100&sign=43407a42&sv=2)
 
 Most Secrets Manager integrations use a base64 string, but you may need a json
 file in some circumstances.
@@ -518,10 +539,6 @@ file in some circumstances.
 When ready, click the download or copy button to receive you configuration.
 Note that when you do this the first time, the device will be created. You are
 able to download or copy the configuration multiple times.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FBNxsoCZQKzccpXlg6LBH%252Fimage.png%3Falt%3Dmedia%26token%3Dbe3a50fd-0db2-4ccf-a05f-cb4dde888d47&width=768&dpr=4&quality=100&sign=4fd08380&sv=2)
 
 ###
 
@@ -565,10 +582,6 @@ Integration Example
 
 Below is in example of using the Keeper Secrets Manager[ Jenkins
 Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin).
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FubUBHBlk71bkTQqYP4zz%252Fimage.png%3Falt%3Dmedia%26token%3Dfffc2478-d004-4d53-ae91-39c1482117a5&width=768&dpr=4&quality=100&sign=582fff29&sv=2)
 
 The Jenkins plugin takes a One Time Access Token to initialize and creates a
 configuration automatically behind-the-scenes. In this example, simply enter a
@@ -660,41 +673,30 @@ When initializing a configuration in Commander, typically `--unlock-ip` should
 be included in the command. If it is not included, the client device will be
 locked to the IP Address that Commander is using.
 
-[PreviousOne Time Access Token](/en/keeperpam/secrets-manager/about/one-time-
-token)[NextKeeper Notation](/en/keeperpam/secrets-manager/about/keeper-
-notation)
+[ client devices](/en/keeperpam/secrets-manager/about/terminology#client-
+device)
 
-Last updated 3 months ago
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F0R4yOre6vH7YIy7c7hyH%252Fimage.png%3Falt%3Dmedia%26token%3D306988c9-4207-4a26-b907-bf1dac42fb2e&width=768&dpr=4&quality=100&sign=d75ba178&sv=2)
 
-Was this helpful?
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FKtVhHT5wBXRH7GIvItWY%252Fimage.png%3Falt%3Dmedia%26token%3D611661db-1136-40af-8136-62f3e6937b5a&width=768&dpr=4&quality=100&sign=9acfd1f6&sv=2)
 
-#### Company
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FELVTCYheAKKOqaTG0UcN%252Fimage.png%3Falt%3Dmedia%26token%3Db43706d0-2b3a-4bb8-818a-8ec59d37355d&width=768&dpr=4&quality=100&sign=315c3b49&sv=2)
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJUZwRTrthjUUWhPWAL5z%252Fimage.png%3Falt%3Dmedia%26token%3D7e5f68ba-7f70-4486-9682-050cf07f9e27&width=768&dpr=4&quality=100&sign=43407a42&sv=2)
 
-#### Support
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FBNxsoCZQKzccpXlg6LBH%252Fimage.png%3Falt%3Dmedia%26token%3Dbe3a50fd-0db2-4ccf-a05f-cb4dde888d47&width=768&dpr=4&quality=100&sign=4fd08380&sv=2)
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FubUBHBlk71bkTQqYP4zz%252Fimage.png%3Falt%3Dmedia%26token%3Dfffc2478-d004-4d53-ae91-39c1482117a5&width=768&dpr=4&quality=100&sign=582fff29&sv=2)
 

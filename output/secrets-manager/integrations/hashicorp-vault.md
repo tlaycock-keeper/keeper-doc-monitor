@@ -528,9 +528,7 @@ to utilize this integration, you will need:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
-
-    *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
     * The HashiCorp Vault integration accepts our Base64 format configurations
 
@@ -902,6 +900,8 @@ Copy
     
     vault delete ksm/record uid=Oq3fFu14hZY00d7sp3EYNA
 
+A Keeper  with secrets shared to it
+
 See the  for instructions on creating an Application
 
 Secrets Manager Releases
@@ -912,6 +912,9 @@ configuration.
 
 [![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/secrets-
 managerGitHub](https://github.com/Keeper-Security/secrets-manager/releases)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 [Configuration Documentation](/en/keeperpam/secrets-manager/about/secrets-
 manager-configuration#creating-a-secrets-manager-configuration)

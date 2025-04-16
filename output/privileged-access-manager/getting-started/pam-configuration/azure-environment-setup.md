@@ -438,6 +438,36 @@ setup?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Azure Environment Overview
@@ -460,9 +490,14 @@ PDF](/en/keeperpam/~gitbook/pdf?page=tPQqqYbgtDTRrxniMAEJ&only=yes&limit=100)
 
 Setting up your Azure environment to work with KeeperPAM
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwYmcNZKRoL3p7QdpE5ik%252FAzure%2520Environment%2520Setup.jpg%3Falt%3Dmedia%26token%3D37c419f3-3638-4552-abb0-fdb5ded629b7&width=768&dpr=4&quality=100&sign=85396ef9&sv=2)
+[PreviousAWS Environment Setup](/en/keeperpam/privileged-access-
+manager/getting-started/pam-configuration/aws-environment-setup)[NextLocal
+Environment Setup](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration/local-environment-setup)
+
+Last updated 3 months ago
+
+Was this helpful?
 
 ##
 
@@ -492,19 +527,6 @@ is shown. This is the **Client Id** field of the Keeper PAM Configuration
 record. The **Directory (tenant) ID** is also shown. This is the **Tenant Id**
 field of the Keeper PAM Configuration record. Save these values for later.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTn00oz3MsXcV6OU6XUZE%252FScreenshot%25202023-05-02%2520at%25201.49.35%2520PM.jpg%3Falt%3Dmedia%26token%3D146597ab-
-caab-495c-9049-a4918e293dd2&width=768&dpr=4&quality=100&sign=d7862712&sv=2)
-
-Create Application
-
-Next, go to Home > General > Subscriptions and get your subscription ID. Copy
-the subscription ID into the Keeper PAM Configuration "Subscription ID" field.
-For more information on how to get your subscription ID, visit this
-[page](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-
-tenant-id).
-
 Next, click on the **Add a certification or secret** for **Client
 credentials**. On the next page, click on New client secret, give the client
 secret a Description, and select a desired Expires date, and click **Add**.
@@ -512,12 +534,6 @@ secret a Description, and select a desired Expires date, and click **Add**.
 The page will refresh showing the secret **Value**. Copy the **Value** (not
 Secret ID) into the Keeper PAM Configuration "Client Secret" field. Save this
 value for later.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F1VHxRugsu0DJAHvvbpI7%252FScreenshot%25202023-04-21%2520at%25203.57.27%2520PM.png%3Falt%3Dmedia%26token%3Df89c8cea-d345-417d-9b30-19008d1ee8ad&width=768&dpr=4&quality=100&sign=150ab5cd&sv=2)
-
-Client Secret
 
 At this point, all the required the PAM Configuration fields should be filled
 in. You also have an Azure application that cannot do anything yet.
@@ -537,18 +553,10 @@ privileges are needed for your use case. Custom roles can be used.
 
   * **Global Administrator** \- It is not recommended to use a Global Administrator on a service principal. However, it will allow both administrator and user passwords to be rotated.
 
-  * [**Privileged Authentication Administrator**](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#privileged-authentication-administrator) \- Can change the password for any user, including a Global Administrator user.
-
-  * [**Authentication Administrator**](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#authentication-administrator) \- Can change the password for any user, except a Global Administrator user.
+  *   * 
 
 To add the application, click **Add assignments** and **Search** for the
 service principal/application that was created, click it, and then **Add**.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FW7lqqZ9KcqPA4WKUGug0%252FScreenshot%25202023-05-02%2520at%25201.54.45%2520PM.png%3Falt%3Dmedia%26token%3Dc03eefc3-fc29-483e-8319-d1867b1ce5d1&width=768&dpr=4&quality=100&sign=ab2d801c&sv=2)
-
-Assign Administrator Role to Keeper Application
 
 ##
 
@@ -628,12 +636,6 @@ When done, click **Review + create,** and click **Create**.
 Once the role is created, it needs to be assigned to the Application (Service
 Principle). Click **View** in the **Details** column.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FsBqZQC7UtyX0xiKu4k0P%252FScreenshot%25202023-04-21%2520at%25203.11.54%2520PM.png%3Falt%3Dmedia%26token%3Dfdcb3152-1f28-43e8-a7bb-9d02ecfd04a1&width=768&dpr=4&quality=100&sign=b41d9daf&sv=2)
-
-Role
-
 A panel will appear on the right side of the screen. Click **Assignments** ,
 and then **Add assignment**.
 
@@ -641,18 +643,6 @@ Enter in the new role's name in the search bar on the **Role** tab, then
 double click it to select it. Move to the **Members** tab. Click **Select
 members**. In the panel that opens, enter the name of the Azure application,
 select the current application, and click **Select**.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FyiFpVADjARBtRoRZE1YN%252FScreenshot%25202023-05-02%2520at%25202.01.34%2520PM.jpg%3Falt%3Dmedia%26token%3D23546bd6-443e-4048-8f92-c02fc1bbbe34&width=768&dpr=4&quality=100&sign=a7f7144&sv=2)
-
-Create Azure Custom Role
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F00jLNdtIDAnsmH2r7Zuj%252FScreenshot%25202023-05-02%2520at%25202.03.31%2520PM.jpg%3Falt%3Dmedia%26token%3D666817a0-78a5-40ec-9f86-9280f9116514&width=768&dpr=4&quality=100&sign=45e6743c&sv=2)
-
-Assign Role to Keeper Secrets Manager application member
 
 Go to the **Review + assign** tab click **Review + assign**.
 
@@ -704,52 +694,86 @@ Configuring PAM Features on PAM Record Types
 
 After creating the PAM configuration, visit the following pages to:
 
-  * Configure [Rotation](/en/keeperpam/secrets-manager/password-rotation)
+  *   *   *   *   * 
 
-  * Configure [Connections](/en/keeperpam/privileged-access-manager/connections)
+Next, go to Home > General > Subscriptions and get your subscription ID. Copy
+the subscription ID into the Keeper PAM Configuration "Subscription ID" field.
+For more information on how to get your subscription ID, visit this .
 
-  * Configure [RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
+\- Can change the password for any user, including a Global Administrator
+user.
 
-  * Configure [Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
+\- Can change the password for any user, except a Global Administrator user.
 
-  * Configure [Discovery](/en/keeperpam/privileged-access-manager/discovery)
+Configure
 
-[PreviousAWS Environment Setup](/en/keeperpam/privileged-access-
-manager/getting-started/pam-configuration/aws-environment-setup)[NextLocal
-Environment Setup](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration/local-environment-setup)
+Configure
 
-Last updated 3 months ago
+Configure
 
-Was this helpful?
+Configure
 
-#### Company
+Configure
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+[page](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-
+tenant-id)
 
-#### Support
+[**Privileged Authentication Administrator**](https://learn.microsoft.com/en-
+us/azure/active-directory/roles/permissions-reference#privileged-
+authentication-administrator)
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+[**Authentication Administrator**](https://learn.microsoft.com/en-
+us/azure/active-directory/roles/permissions-reference#authentication-
+administrator)
 
-#### Solutions
+[Rotation](/en/keeperpam/secrets-manager/password-rotation)
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+[Connections](/en/keeperpam/privileged-access-manager/connections)
 
-#### Pricing
+[RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+[Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
 
-© 2025 Keeper Security, Inc.
+[Discovery](/en/keeperpam/privileged-access-manager/discovery)
+
+Create Application
+
+Client Secret
+
+Assign Administrator Role to Keeper Application
+
+Role
+
+Create Azure Custom Role
+
+Assign Role to Keeper Secrets Manager application member
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwYmcNZKRoL3p7QdpE5ik%252FAzure%2520Environment%2520Setup.jpg%3Falt%3Dmedia%26token%3D37c419f3-3638-4552-abb0-fdb5ded629b7&width=768&dpr=4&quality=100&sign=85396ef9&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTn00oz3MsXcV6OU6XUZE%252FScreenshot%25202023-05-02%2520at%25201.49.35%2520PM.jpg%3Falt%3Dmedia%26token%3D146597ab-
+caab-495c-9049-a4918e293dd2&width=768&dpr=4&quality=100&sign=d7862712&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F1VHxRugsu0DJAHvvbpI7%252FScreenshot%25202023-04-21%2520at%25203.57.27%2520PM.png%3Falt%3Dmedia%26token%3Df89c8cea-d345-417d-9b30-19008d1ee8ad&width=768&dpr=4&quality=100&sign=150ab5cd&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FW7lqqZ9KcqPA4WKUGug0%252FScreenshot%25202023-05-02%2520at%25201.54.45%2520PM.png%3Falt%3Dmedia%26token%3Dc03eefc3-fc29-483e-8319-d1867b1ce5d1&width=768&dpr=4&quality=100&sign=ab2d801c&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FsBqZQC7UtyX0xiKu4k0P%252FScreenshot%25202023-04-21%2520at%25203.11.54%2520PM.png%3Falt%3Dmedia%26token%3Dfdcb3152-1f28-43e8-a7bb-9d02ecfd04a1&width=768&dpr=4&quality=100&sign=b41d9daf&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FyiFpVADjARBtRoRZE1YN%252FScreenshot%25202023-05-02%2520at%25202.01.34%2520PM.jpg%3Falt%3Dmedia%26token%3D23546bd6-443e-4048-8f92-c02fc1bbbe34&width=768&dpr=4&quality=100&sign=a7f7144&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F00jLNdtIDAnsmH2r7Zuj%252FScreenshot%25202023-05-02%2520at%25202.03.31%2520PM.jpg%3Falt%3Dmedia%26token%3D666817a0-78a5-40ec-9f86-9280f9116514&width=768&dpr=4&quality=100&sign=45e6743c&sv=2)
 

@@ -517,6 +517,22 @@ manager/connections/getting-started).
 The following PAM records are needed in order to successfully setup this
 protocol:
 
+PAM Record
+
+Definition
+
+The PAM Configuration contains information of your target infrastructure
+
+Record
+
+The PAM Machine record contains information of the endpoint you want to
+establish an SSH protocol connection to.
+
+Record
+
+The PAM User record contains the user credentials that will be used to connect
+to the endpoint
+
 This guide will use a Linux server to represent a PAM Machine record.
 
 ##
@@ -693,22 +709,6 @@ manager/session-recording-and-playback)
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
-
-PAM Record
-
-Definition
-
-The PAM Configuration contains information of your target infrastructure
-
-Record
-
-The PAM Machine record contains information of the endpoint you want to
-establish an SSH protocol connection to.
-
-Record
-
-The PAM User record contains the user credentials that will be used to connect
-to the endpoint
 
 [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
 started/pam-configuration)

@@ -1055,14 +1055,14 @@ To get the Commander parameters, open the generated config.json file. By
 default this is located in the `Users/[your username]/.keeper/` folder on your
 machine. See thefor more information.
 
+[![Logo](https://docs.aws.amazon.com/assets/images/favicon.ico)Invoking Lambda
+functions - AWS LambdaAWS
+Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
+
 [![Logo](https://a0.awsstatic.com/libra-css/images/site/touch-icon-
 ipad-144-smile.png)Send email using Lambda and Amazon SESAmazon Web Services,
 Inc.](https://aws.amazon.com/premiumsupport/knowledge-center/lambda-send-
 email-ses/)
-
-[![Logo](https://docs.aws.amazon.com/assets/images/favicon.ico)Invoking Lambda
-functions - AWS LambdaAWS
-Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
 
 [![Logo](https://github.com/fluidicon.png)Commander/examples at master ·
 Keeper-Security/CommanderGitHub](https://github.com/Keeper-

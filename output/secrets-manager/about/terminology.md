@@ -493,6 +493,8 @@ Secrets Manager Structure
 In order to organize and maintain access to **Secrets,** Keeper Secrets
 Manager uses structures called **Applications** and **Clients**.
 
+Keeper Secrets Manager Structure
+
 Read below about how each of these items function in Secrets Manager.
 
 ###
@@ -552,15 +554,15 @@ A Secrets Manager "Configuration" is a set of tokens that includes encryption
 keys, client identifiers and destination server information used to
 authenticate and decrypt data from the Keeper Secrets Manager APIs.
 
-Secrets Manager configurations are created from [One Time Access
-Tokens](/en/keeperpam/secrets-manager/about/one-time-token) and have a one to
-one relationship with [client devices](/en/keeperpam/secrets-
-manager/about/terminology#client-device).
-
 A configuration can be stored as a text file with JSON, or it can be encoded
 into a single line string.
 
-Keeper Secrets Manager Structure
+Secrets Manager configurations are created from [One Time Access
+Tokens](/en/keeperpam/secrets-manager/about/one-time-token) and have a one to
+one relationship with .
+
+[client devices](/en/keeperpam/secrets-manager/about/terminology#client-
+device)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

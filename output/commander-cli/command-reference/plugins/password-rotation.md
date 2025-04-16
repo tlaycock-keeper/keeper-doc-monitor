@@ -599,7 +599,7 @@ Copy
 reference/plugins)[NextAWS Plugin](/en/keeperpam/commander-cli/command-
 reference/plugins/aws-plugin)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

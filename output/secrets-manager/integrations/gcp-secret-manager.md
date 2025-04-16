@@ -725,7 +725,7 @@ Copy
 plugin)[NextGoogle Cloud Key Management Encryption](/en/keeperpam/secrets-
 manager/integrations/google-cloud-key-management-encryption)
 
-Last updated 8 hours ago
+Last updated 1 day ago
 
 Was this helpful?
 

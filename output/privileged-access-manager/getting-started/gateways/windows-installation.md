@@ -458,9 +458,44 @@ PDF](/en/keeperpam/~gitbook/pdf?page=Bi3JdR9VzNML5LouyB8B&only=yes&limit=100)
 
 Instructions for installing Keeper Gateway on Windows
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FMKUPFqx5R4qNbP4UvDEA%252FWindows%2520Install.jpg%3Falt%3Dmedia%26token%3Da0bae005-cca1-4d63-9ab2-0c36c06b48b2&width=768&dpr=4&quality=100&sign=846876de&sv=2)
+[PreviousLinux Installation](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/linux-installation)[NextAuto
+Updater](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/auto-updater)
+
+Last updated 23 days ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -486,13 +521,6 @@ The latest Keeper Gateway for Windows is downloaded from here:
   * [**Download the Keeper Gateway for Windows**](https://keepersecurity.com/pam/gateway/keeper-gateway_windows_x86_64.exe)
 
 You can run the service under system privilege or use a service account.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FEmNFPFH1OL9YhIvTMxzz%252FScreenshot%25202025-02-14%2520at%25204.47.50%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D8e76ef63-658a-43fd-
-ab99-f7b8b89bdaf5&width=768&dpr=4&quality=100&sign=14a907d2&sv=2)
-
-Keeper Gateway for Windows
 
 ####
 
@@ -529,11 +557,15 @@ Setup Options
 
   * Install Windows service - Installs the gateway as a Windows service.
 
-    *     * Start Windows service - Start the Keeper Gateway service immediately after installation
+    * Use service account - Use the [specified service account](/en/keeperpam/privileged-access-manager/getting-started/gateways/windows-installation#specifying-the-keeper-gateway-service-account-optional), otherwise the account installing the gateway will be used.
+
+    * Start Windows service - Start the Keeper Gateway service immediately after installation
 
     * Enable automatic updates
 
-  *   * Remove Keeper Gateway configuration and logs from previous installations
+  * Turn on debug logging - Enable [verbose logging](/en/keeperpam/privileged-access-manager/getting-started/gateways/windows-installation#verbose-logging) on the gateway log files. NOT recommended for production environments. Only use this when debugging with Keeper support. 
+
+  * Remove Keeper Gateway configuration and logs from previous installations
 
 ####
 
@@ -541,12 +573,6 @@ Specifying the Keeper Gateway Service Account
 
 If "Use service account" is specified you will be prompted to enter the valid
 credentials of the desired service account:
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIoAEQf7xnRCENtcZN8XF%252FwindowsInstaller%25232.png%3Falt%3Dmedia%26token%3D6d330e57-ec06-4fb5-a450-66e9f2db3e8a&width=768&dpr=4&quality=100&sign=a802bd49&sv=2)
-
-Service Account Setup
 
 ####
 
@@ -556,10 +582,6 @@ The final step prior to successfully installing the Keeper Gateway as service
 is to enter the [One-Time Access](/en/keeperpam/privileged-access-
 manager/getting-started/gateways/one-time-access-token) Token provided from
 the Keeper Vault.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9IAdgaW9qb5yXpZF5Cj3%252FwindowsInstaller%25233.png%3Falt%3Dmedia%26token%3De53521b5-8f18-4de3-ae52-faa0c9dc105d&width=768&dpr=4&quality=100&sign=ee065984&sv=2)
 
 After clicking "Next", click "Install" in the next screen to install the
 Keeper Gateway.
@@ -571,12 +593,6 @@ Gateway Service Management
 After installing and running the Keeper Gateway as a service, this service can
 be accessed and easily managed within the Windows Services Manager as "Keeper
 Gateway Service".
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRPmmLYEln37uzuhGJnK1%252FScreenshot%25202025-02-14%2520at%25204.54.23%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D45d2a0bd-c544-4c8f-a0bb-37b1acab87ba&width=768&dpr=4&quality=100&sign=388ba355&sv=2)
-
-Keeper Gateway Service
 
 ###
 
@@ -645,12 +661,6 @@ To activate verbose logging:
   * Set the "Start parameters" to: `--debug` or `-d`
 
   * Start the service by clicking on "Start" _Do not click "OK" without first starting the service as it will not persist the Parameter setting_
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNqfhdJpjRCJbgs6RfYjP%252Fimage.png%3Falt%3Dmedia%26token%3D88ee8691-e886-48b8-99ec-1e2ff1fe4f6c&width=768&dpr=4&quality=100&sign=aa608a9c&sv=2)
-
-Verbose Logging Mode
 
 ###
 
@@ -757,51 +767,6 @@ To uninstall the service:
 
   * If desired, delete the private configuration .json file
 
-[PreviousLinux Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/linux-installation)[NextAuto
-Updater](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/auto-updater)
-
-Last updated 22 days ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
-Use service account - Use the , otherwise the account installing the gateway
-will be used.
-
-Turn on debug logging - Enable  on the gateway log files. NOT recommended for
-production environments. Only use this when debugging with Keeper support.
-
 ###
 
 Network Configuration
@@ -813,27 +778,6 @@ Destination
 Port Needed
 
 More Info
-
-The Gateway preserves zero knowledge by performing all encryption and
-decryption of data locally. Keeper Secrets Manager APIs are used to
-communicate with the Keeper cloud.
-
-###
-
-Checksum Verification
-
-Keeper Gateway SHA256 hashes for the latest version are published at the below
-location:
-
-Calculating and verifying the checksum:
-
-####
-
-Linux
-
-####
-
-PowerShell
 
 Keeper Cloud (keepersecurity.[com|eu|com.au|ca|us|jp)
 
@@ -854,12 +798,24 @@ Outbound access to TCP and UDP ports 49152 through 65535
 
 Needed to establish outbound access over the designated port ranges
 
-[specified service account](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/windows-installation#specifying-the-keeper-gateway-service-
-account-optional)
+The Gateway preserves zero knowledge by performing all encryption and
+decryption of data locally. Keeper Secrets Manager APIs are used to
+communicate with the Keeper cloud.
 
-[verbose logging](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/windows-installation#verbose-logging)
+###
+
+Checksum Verification
+
+Keeper Gateway SHA256 hashes for the latest version are published at the below
+location:
+
+<https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
+
+Calculating and verifying the checksum:
+
+####
+
+Linux
 
 Copy
 
@@ -868,6 +824,10 @@ Copy
     sha256sum keeper-gateway_linux_x86_64
     cat keeper-gateway_X.X.X_SHA256SUMS | grep keeper-gateway_linux_x86_64
 
+####
+
+PowerShell
+
 Copy
 
     
@@ -875,5 +835,36 @@ Copy
     Get-FileHash -Algorithm SHA256 keeper-gateway_windows_x86_64.exe | Format-List
     Get-Content keeper-gateway_X.X.X_SHA256SUMS | Select-String keeper-gateway_windows_x86_64.exe
 
-<https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
+Keeper Gateway for Windows
+
+Service Account Setup
+
+Keeper Gateway Service
+
+Verbose Logging Mode
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FMKUPFqx5R4qNbP4UvDEA%252FWindows%2520Install.jpg%3Falt%3Dmedia%26token%3Da0bae005-cca1-4d63-9ab2-0c36c06b48b2&width=768&dpr=4&quality=100&sign=846876de&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FEmNFPFH1OL9YhIvTMxzz%252FScreenshot%25202025-02-14%2520at%25204.47.50%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D8e76ef63-658a-43fd-
+ab99-f7b8b89bdaf5&width=768&dpr=4&quality=100&sign=14a907d2&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIoAEQf7xnRCENtcZN8XF%252FwindowsInstaller%25232.png%3Falt%3Dmedia%26token%3D6d330e57-ec06-4fb5-a450-66e9f2db3e8a&width=768&dpr=4&quality=100&sign=a802bd49&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9IAdgaW9qb5yXpZF5Cj3%252FwindowsInstaller%25233.png%3Falt%3Dmedia%26token%3De53521b5-8f18-4de3-ae52-faa0c9dc105d&width=768&dpr=4&quality=100&sign=ee065984&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRPmmLYEln37uzuhGJnK1%252FScreenshot%25202025-02-14%2520at%25204.54.23%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D45d2a0bd-c544-4c8f-a0bb-37b1acab87ba&width=768&dpr=4&quality=100&sign=388ba355&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNqfhdJpjRCJbgs6RfYjP%252Fimage.png%3Falt%3Dmedia%26token%3D88ee8691-e886-48b8-99ec-1e2ff1fe4f6c&width=768&dpr=4&quality=100&sign=aa608a9c&sv=2)
 

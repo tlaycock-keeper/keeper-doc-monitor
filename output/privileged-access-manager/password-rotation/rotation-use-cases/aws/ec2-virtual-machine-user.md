@@ -693,7 +693,7 @@ manager/password-rotation/rotation-use-cases/aws/directory-user)[NextIAM User
 Access Key](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/aws/iam-user-access-key)
 
-Last updated 7 days ago
+Last updated 8 days ago
 
 Was this helpful?
 

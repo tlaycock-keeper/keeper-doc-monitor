@@ -567,7 +567,7 @@ reference/misc-commands)[NextPassword Rotation
 Commands](/en/keeperpam/commander-cli/command-reference/plugins/password-
 rotation)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

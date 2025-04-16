@@ -1754,7 +1754,7 @@ Copy
 library/java-sdk/record-field-classes)[Next.NET SDK](/en/keeperpam/secrets-
 manager/developer-sdk-library/.net-sdk)
 
-Last updated 6 days ago
+Last updated 7 days ago
 
 Was this helpful?
 

@@ -530,7 +530,7 @@ Copy
 commands/ssh)[NextRDP](/en/keeperpam/commander-cli/command-
 reference/connection-commands/rdp)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

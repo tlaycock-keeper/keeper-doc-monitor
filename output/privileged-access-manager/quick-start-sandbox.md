@@ -444,9 +444,43 @@ PDF](/en/keeperpam/~gitbook/pdf?page=R2Buql2ywlhAxad9Ru4u&only=yes&limit=100)
 
 Quickly and easily get started with a pre-configured PAM setup in your vault
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVMZVbvKRGtNmjQ4SE0rH%252FQuick%2520Start%2520Wizard.jpg%3Falt%3Dmedia%26token%3D99638796-c22f-462c-b0cf-f5fc2ff23215&width=768&dpr=4&quality=100&sign=65610d84&sv=2)
+[PreviousSetup Steps](/en/keeperpam/privileged-access-manager/setup-
+steps)[NextGetting Started](/en/keeperpam/privileged-access-manager/getting-
+started)
+
+Last updated 2 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -472,23 +506,13 @@ URL
 
 **US**
 
-<https://keepersecurity.com/console>[](https://keepersecurity.com/console)
-
 **EU**
-
-<https://keepersecurity.eu/console>[](https://keepersecurity.eu/console)
 
 **AU**
 
-<https://keepersecurity.com.au/console>[](https://keepersecurity.com.au/console)
-
 **JP**
 
-<https://keepersecurity.jp/console>[](https://keepersecurity.jp/console)
-
 **GOV**
-
-<https://govcloud.keepersecurity.us/console>[](https://govcloud.keepersecurity.us/console)
 
   * Under **Admin** > **Roles** , create a new role for PAM or modify an existing role
 
@@ -582,108 +606,84 @@ Screenshots
 
 Below are screenshots of the Quick Start Wizard from start to finish.
 
+<https://keepersecurity.com/console>[](https://keepersecurity.com/console)
+
+<https://keepersecurity.eu/console>[](https://keepersecurity.eu/console)
+
+<https://keepersecurity.com.au/console>[](https://keepersecurity.com.au/console)
+
+<https://keepersecurity.jp/console>[](https://keepersecurity.jp/console)
+
+<https://govcloud.keepersecurity.us/console>[](https://govcloud.keepersecurity.us/console)
+
+Create a Gateway
+
+Creating the New Project and Gateway
+
+Building the Gateway
+
+Gateway Created with Sample Records
+
+Download the Docker Compose and Seccomp Files
+
+Docker running the Gateway and Sandbox Infrastructure
+
+SSH Machine Example
+
+Launching a Connection
+
+Connecting to a Linux machine with SSH
+
+Connecting to a virtual Linux machine over VNC
+
+Connecting to a web application
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVMZVbvKRGtNmjQ4SE0rH%252FQuick%2520Start%2520Wizard.jpg%3Falt%3Dmedia%26token%3D99638796-c22f-462c-b0cf-f5fc2ff23215&width=768&dpr=4&quality=100&sign=65610d84&sv=2)
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FgYC14x7E1QcGzXDCS8IK%252FScreenshot%25202024-12-25%2520at%25209.20.40%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db63cffd4-b67f-405e-9932-fccbda6d6e98&width=768&dpr=4&quality=100&sign=b9c8f2d0&sv=2)
-
-Create a Gateway
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtvLJtb0lTIRSlTzlT01u%252FScreenshot%25202024-12-25%2520at%25209.21.26%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3De4be08ee-
 de0d-4805-9abb-c0c3bfbad325&width=768&dpr=4&quality=100&sign=be846e80&sv=2)
 
-Creating the New Project and Gateway
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOV3irVolM5F1QtT0yjpA%252FScreenshot%25202024-12-25%2520at%25209.25.23%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D57f9c78c-17bd-463f-9101-c9795ac676fd&width=768&dpr=4&quality=100&sign=3168a0ab&sv=2)
-
-Building the Gateway
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3DQjECkkSlfXyRy514Ql%252FScreenshot%25202025-01-17%2520at%252011.59.49%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Da2b3ef5e-6a1c-43f7-a1f5-5d5b86754a0c&width=768&dpr=4&quality=100&sign=28ef7c31&sv=2)
 
-Gateway Created with Sample Records
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FsSsqHXGuWhiqV5cBa8OH%252FScreenshot%25202025-01-17%2520at%252012.00.02%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D1926b1b2-024d-496d-8d84-74421f2a690b&width=768&dpr=4&quality=100&sign=fd777e4&sv=2)
-
-Download the Docker Compose and Seccomp Files
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4OXAnXlotRevEJgz6mqC%252FScreenshot%25202024-12-25%2520at%252010.23.04%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3De1ece765-6365-4210-8db2-5a339bbbd1c0&width=768&dpr=4&quality=100&sign=99921d24&sv=2)
 
-Docker running the Gateway and Sandbox Infrastructure
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGepR1nIvKA1SJS8HC6qf%252FScreenshot%25202025-01-17%2520at%25201.23.12%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D4082c2b6-f38c-417a-bcef-213abc14bf0c&width=768&dpr=4&quality=100&sign=161ece4a&sv=2)
-
-SSH Machine Example
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FvWqA9i0mealeR0JSrfey%252FScreenshot%25202024-12-25%2520at%252010.24.51%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D958d992b-5af8-479c-9be7-44a6c94764f9&width=768&dpr=4&quality=100&sign=243bdac4&sv=2)
 
-Launching a Connection
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSEgi9qgukTZNkOdhF7fT%252FScreenshot%25202024-12-25%2520at%252010.26.21%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D8c1d81d2-76f9-4536-8a6f-aab87dc77bc3&width=768&dpr=4&quality=100&sign=ac3eeab0&sv=2)
-
-Connecting to a Linux machine with SSH
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXX5zsf7XqFGDueFqOGwA%252FScreenshot%25202024-12-25%2520at%252010.20.46%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D271096d3-df8f-4ae6-9952-6205d58d49b9&width=768&dpr=4&quality=100&sign=76ae369e&sv=2)
 
-Connecting to a virtual Linux machine over VNC
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4aXx1lFW6oFNEnzo67os%252FScreenshot%25202024-12-25%2520at%252011.14.46%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dfdd64afc-c538-48ba-8a75-a0fc9c49c5a9&width=768&dpr=4&quality=100&sign=b7612240&sv=2)
-
-Connecting to a web application
-
-[PreviousSetup Steps](/en/keeperpam/privileged-access-manager/setup-
-steps)[NextGetting Started](/en/keeperpam/privileged-access-manager/getting-
-started)
-
-Last updated 2 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
 

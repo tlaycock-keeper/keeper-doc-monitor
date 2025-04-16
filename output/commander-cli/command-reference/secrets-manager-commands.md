@@ -428,36 +428,46 @@ reference/secrets-manager-commands?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
+#### Company
 
-  * Overview
-  * Create an application
-  * Create a New Secret
-  * Share the Folder to the Secrets Manager Application
-  * Allow a client to access an application
-  * Get a List of all applications
-  * View the details of an individual application
-  * Commands
-  * secrets-manager app create command
-  * secrets-manager app get command
-  * secrets-manager app remove command
-  * secrets-manager app list command
-  * secrets-manager share add command
-  * secrets-manager share remove command
-  * secrets-manager client add command
-  * secrets-manager client remove command
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+On this page
 
 Was this helpful?
 
 [Export as PDF](/en/keeperpam/~gitbook/pdf?page=-MeRCXOW6k3ampxA-
 DCk&only=yes&limit=100)
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+Last updated 3 months ago
 
-# Secrets Manager Commands
-
-Commands to configure and manage the Keeper Secrets Manager platform
+Was this helpful?
 
 ##
 
@@ -494,12 +504,6 @@ Create an application
 
 `secrets-manager app create <APPLICATION NAME>`
 
-Copy
-
-    
-    
-    My Vault> secrets-manager app create MyApplication
-
 ###
 
 Create a New Secret
@@ -508,23 +512,9 @@ This can be done on the Vault user interface, but we'll create a Secret,
 create a Shared Folder, then move the Secret into the Shared Folder. Example
 commands are below:
 
-Copy
-
-    
-    
-    My Vault> add --login admin --pass "46$$625" --url "192.168.1.1" -t "Test Secret"
-    My Vault> mkdir -sf -a "My Shared Folder"
-    My Vault> mv "Test Secret" "My Shared Folder"
-
 ###
 
 Share the Folder to the Secrets Manager Application
-
-Copy
-
-    
-    
-    My Vault> secrets-manager share add --app MyApplication --secret n4QtaKjRjhWMz5aS7bT77Q
 
 To find the Shared Folder or Record UID, use the 'ls -l' command or Vault user
 interface in the "info" dialog.
@@ -532,12 +522,6 @@ interface in the "info" dialog.
 ###
 
 Allow a client to access an application
-
-Copy
-
-    
-    
-    My Vault> secrets-manager client add MyApplication
 
 The output of this command provides the One Time Access Token that will be
 used on the client.
@@ -548,51 +532,11 @@ Get a List of all applications
 
 `secrets-manager app list`
 
-Copy
-
-    
-    
-    My Vault> secrets-manager app list
-    
-    List of all Applications
-    
-    Title      Uid
-    ---------  ----------------------
-    PythonApp  oXMfwo-hzZNRqMXGvJlccQ
-    TestApp    KtU4eAzor5IpqRW3x4A8FA
-
 ###
 
 View the details of an individual application
 
 `secrets-manager app get <APPLICATION NAME|APP UID>`
-
-Copy
-
-    
-    
-    My Vault> secrets-manager app get MyApplication
-    
-    Secrets Manager Application
-    App Name: MyApplication
-    App UID: ji__h4gaY3xvQdatVY_ffA
-    
-    Client Device 1
-    =============================
-      Name: Device1
-      Short ID: nWThUIbR
-      Created On: 2021-10-11 16:26:21
-      First Access: 2021-10-11 16:27:05
-      Last Access: 2021-10-11 16:49:47
-      IP Lock: Disabled
-      IP Address: --
-    
-    Application Access
-    Share Type    UID                     Title                   Permissions
-    ------------  ----------------------  ----------------------  -------------
-    FOLDER        J6xMIXKiwMqIyYJL7kd3xw  Secrets                 Editable
-    RECORD        mux0ZaWKd-h8maggFzy1rw  Database Login          Read-Only
-    
 
 ##
 
@@ -625,6 +569,222 @@ A list of all secrets-manager commands and details about each are below
 ####
 
 All commands associated with Keeper Secrets Manager
+
+###
+
+secrets-manager app create command
+
+**Command:**`secrets-manager app create`
+
+**Detail:** Create a new application that will be used to link clients to
+secrets
+
+**Parameters:**
+
+Name of the application
+
+**Example:**
+
+###
+
+secrets-manager app get command
+
+**Command:**`secrets-manager app get`
+
+**Detail:** Display information about a specified application
+
+**Parameters:**
+
+Name or UID of the application
+
+**Examples:**
+
+###
+
+secrets-manager app remove command
+
+**Command:**`secrets-manager app remove`
+
+**Detail:** Remove an application
+
+**Parameters:**
+
+Name or UID of the application
+
+**Examples:**
+
+###
+
+secrets-manager app list command
+
+**Command:**`secrets-manager app list`
+
+**Detail:** List all created applications
+
+**Example:**
+
+###
+
+secrets-manager share add command
+
+**Command:**`secrets-manager share add`
+
+**Detail:** Add secret (record or shared folder) to an Application
+
+**Switches:**
+
+\--secret , -s <SECRET'S UID> secret to share. can be folder or record UID
+
+\--app, -a <APPLICATION RECORD UID> application to share with
+
+\--editable, -e Allow edits to the records
+
+**Examples:**
+
+###
+
+secrets-manager share remove command
+
+**Command:**`secrets-manager share remove`
+
+**Detail:** Remove secret (record or shared folder) from an Application
+
+**Switches:**
+
+\--secret , -s <SECRET'S UID> secret to share. can be folder or record UID
+
+\--app, -a <APPLICATION RECORD UID> application to share with
+
+**Examples:**
+
+###
+
+secrets-manager client add command
+
+**Command:**`secrets-manager client add`
+
+**Detail:** Add a Client to an Application that will be used to connect to the
+application. The output of this command is a one-time token which is used for
+initializing the Client device through the Secrets Manager SDK.
+
+**Switches:**
+
+\--name [CLIENT NAME] : Name of the client (Default: Random 10 characters
+string)
+
+\--first-access-expires-in-min [MIN] : First time access expiration (Default
+60, Max 1440)
+
+\--access-expire-in-min [MIN] : Client access expiration (Default: no
+expiration)
+
+\--unlock-ip : Does not lock IP address to first requesting device
+
+\--count [NUM] : Number of tokens to generate (Default: 1)
+
+\--config-init [json, b64 or k8s] : Initialize configuration string from a
+one-time token
+
+\--name [NAME] name of the client
+
+**Example 1:** Create a new device called "Test 1" and produce a One Time
+Access Token.
+
+**Example 2:** Create a new device called "Test 2" and produce a fully
+initialized JSON config file without IP lock. This config file can be loaded
+into a device directly.
+
+**Example 3:** Create a new device called "Test 3" and produce a fully
+initialized base64 config string without IP lock. This config file can be
+loaded into a device as a single string instead of using a JSON config file.
+
+**Example 4:** Create a new device called "Test 4" and produce a fully
+initialized Kubernetes config without IP lock. The YAML output can be cut-n-
+pasted into a file and applied to create as a Kubernetes secret.
+
+###
+
+secrets-manager client remove command
+
+**Command:**`secrets-manager client remove`
+
+**Detail:** Remove a client from an Application
+
+**Switches:**
+
+\--client <CLIENT ID> client to remove from the application
+
+\--app, -a <APPLICATION RECORD UID> application
+
+\--force don't ask for approval
+
+**Examples:**
+
+Copy
+
+    
+    
+    My Vault> secrets-manager app create MyApplication
+
+Copy
+
+    
+    
+    My Vault> add --login admin --pass "46$$625" --url "192.168.1.1" -t "Test Secret"
+    My Vault> mkdir -sf -a "My Shared Folder"
+    My Vault> mv "Test Secret" "My Shared Folder"
+
+Copy
+
+    
+    
+    My Vault> secrets-manager share add --app MyApplication --secret n4QtaKjRjhWMz5aS7bT77Q
+
+Copy
+
+    
+    
+    My Vault> secrets-manager client add MyApplication
+
+Copy
+
+    
+    
+    My Vault> secrets-manager app list
+    
+    List of all Applications
+    
+    Title      Uid
+    ---------  ----------------------
+    PythonApp  oXMfwo-hzZNRqMXGvJlccQ
+    TestApp    KtU4eAzor5IpqRW3x4A8FA
+
+Copy
+
+    
+    
+    My Vault> secrets-manager app get MyApplication
+    
+    Secrets Manager Application
+    App Name: MyApplication
+    App UID: ji__h4gaY3xvQdatVY_ffA
+    
+    Client Device 1
+    =============================
+      Name: Device1
+      Short ID: nWThUIbR
+      Created On: 2021-10-11 16:26:21
+      First Access: 2021-10-11 16:27:05
+      Last Access: 2021-10-11 16:49:47
+      IP Lock: Disabled
+      IP Address: --
+    
+    Application Access
+    Share Type    UID                     Title                   Permissions
+    ------------  ----------------------  ----------------------  -------------
+    FOLDER        J6xMIXKiwMqIyYJL7kd3xw  Secrets                 Editable
+    RECORD        mux0ZaWKd-h8maggFzy1rw  Database Login          Read-Only
+    
 
 Command
 
@@ -662,41 +822,12 @@ Add client to an application
 
 Remove a client from an application
 
-###
-
-secrets-manager app create command
-
-**Command:**`secrets-manager app create`
-
-**Detail:** Create a new application that will be used to link clients to
-secrets
-
-**Parameters:**
-
-Name of the application
-
-**Example:**
-
 Copy
 
     
     
     My Vault> secrets-manager app create PythonApp
     Application was added successfully
-
-###
-
-secrets-manager app get command
-
-**Command:**`secrets-manager app get`
-
-**Detail:** Display information about a specified application
-
-**Parameters:**
-
-Name or UID of the application
-
-**Examples:**
 
 Copy
 
@@ -724,20 +855,6 @@ Copy
     FOLDER        J62WIXgJwMqIyYJL7kd3xw  Secrets                 Editable
     RECORD        mux0ZaWKd-vpmaggFzLkrw  Database Login          Read-Only
 
-###
-
-secrets-manager app remove command
-
-**Command:**`secrets-manager app remove`
-
-**Detail:** Remove an application
-
-**Parameters:**
-
-Name or UID of the application
-
-**Examples:**
-
 Copy
 
     
@@ -756,16 +873,6 @@ Copy
     Removed Application uid: KtU4eAzor5IpqRW3x4A8FA
     
 
-###
-
-secrets-manager app list command
-
-**Command:**`secrets-manager app list`
-
-**Detail:** List all created applications
-
-**Example:**
-
 Copy
 
     
@@ -780,24 +887,6 @@ Copy
     TestApp    KtU4eAzor5IpqRW3x4A8FA
     
 
-###
-
-secrets-manager share add command
-
-**Command:**`secrets-manager share add`
-
-**Detail:** Add secret (record or shared folder) to an Application
-
-**Switches:**
-
-\--secret , -s <SECRET'S UID> secret to share. can be folder or record UID
-
-\--app, -a <APPLICATION RECORD UID> application to share with
-
-\--editable, -e Allow edits to the records
-
-**Examples:**
-
 Copy
 
     
@@ -805,61 +894,12 @@ Copy
     My Vault> secrets-manager share add --app PythonApp --secret="-XMfwo-hzZNRqMXGvJlccQ"
     Successfully added new record uid=E7YS6Yqmhsip52DzwdC9gw to app uid=oXMfwo-hzZNRqMXGvJlccQ
 
-###
-
-secrets-manager share remove command
-
-**Command:**`secrets-manager share remove`
-
-**Detail:** Remove secret (record or shared folder) from an Application
-
-**Switches:**
-
-\--secret , -s <SECRET'S UID> secret to share. can be folder or record UID
-
-\--app, -a <APPLICATION RECORD UID> application to share with
-
-**Examples:**
-
 Copy
 
     
     
     My Vault> secrets-manager share remove --app PythonApp --secret="-XMfwo-hzZNRqMXGvJlccQ"
     Secret share was successfully removed from the application
-
-###
-
-secrets-manager client add command
-
-**Command:**`secrets-manager client add`
-
-**Detail:** Add a Client to an Application that will be used to connect to the
-application. The output of this command is a one-time token which is used for
-initializing the Client device through the Secrets Manager SDK.
-
-**Switches:**
-
-\--name [CLIENT NAME] : Name of the client (Default: Random 10 characters
-string)
-
-\--first-access-expires-in-min [MIN] : First time access expiration (Default
-60, Max 1440)
-
-\--access-expire-in-min [MIN] : Client access expiration (Default: no
-expiration)
-
-\--unlock-ip : Does not lock IP address to first requesting device
-
-\--count [NUM] : Number of tokens to generate (Default: 1)
-
-\--config-init [json, b64 or k8s] : Initialize configuration string from a
-one-time token
-
-\--name [NAME] name of the client
-
-**Example 1:** Create a new device called "Test 1" and produce a One Time
-Access Token.
 
 Copy
 
@@ -876,10 +916,6 @@ Copy
     App Access Expires on: Never
     
 
-**Example 2:** Create a new device called "Test 2" and produce a fully
-initialized JSON config file without IP lock. This config file can be loaded
-into a device directly.
-
 Copy
 
     
@@ -895,10 +931,6 @@ Copy
     Token Expires On: 2021-09-30 22:54:11
     App Access Expires on: Never
 
-**Example 3:** Create a new device called "Test 3" and produce a fully
-initialized base64 config string without IP lock. This config file can be
-loaded into a device as a single string instead of using a JSON config file.
-
 Copy
 
     
@@ -910,10 +942,6 @@ Copy
     IP Lock: Disabled
     Token Expires On: 2021-09-30 22:59:09
     App Access Expires on: Never
-
-**Example 4:** Create a new device called "Test 4" and produce a fully
-initialized Kubernetes config without IP lock. The YAML output can be cut-n-
-pasted into a file and applied to create as a Kubernetes secret.
 
 Copy
 
@@ -935,24 +963,6 @@ Copy
     Token Expires On: 2021-09-30 22:59:09
     App Access Expires on: Never
 
-###
-
-secrets-manager client remove command
-
-**Command:**`secrets-manager client remove`
-
-**Detail:** Remove a client from an Application
-
-**Switches:**
-
-\--client <CLIENT ID> client to remove from the application
-
-\--app, -a <APPLICATION RECORD UID> application
-
-\--force don't ask for approval
-
-**Examples:**
-
 Copy
 
     
@@ -962,41 +972,31 @@ Copy
     >? y
     Client removal was successful
 
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+
+# Secrets Manager Commands
+
+Commands to configure and manage the Keeper Secrets Manager platform
+
 [PreviousSFTP Sync](/en/keeperpam/commander-cli/command-reference/connection-
 commands/sftp-sync)[NextMSP Management Commands](/en/keeperpam/commander-
 cli/command-reference/msp-management-commands)
 
-Last updated 3 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+  * Overview
+  * Create an application
+  * Create a New Secret
+  * Share the Folder to the Secrets Manager Application
+  * Allow a client to access an application
+  * Get a List of all applications
+  * View the details of an individual application
+  * Commands
+  * secrets-manager app create command
+  * secrets-manager app get command
+  * secrets-manager app remove command
+  * secrets-manager app list command
+  * secrets-manager share add command
+  * secrets-manager share remove command
+  * secrets-manager client add command
+  * secrets-manager client remove command
 

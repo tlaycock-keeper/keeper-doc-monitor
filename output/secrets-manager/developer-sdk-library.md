@@ -454,43 +454,11 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-Mb78JDhdFdkK4on8h0C&only=yes&limit=100)
 
 Sample code and SDK integration instructions for Keeper Secrets Manager
 
-[PreviousPassword Rotation](/en/keeperpam/secrets-manager/password-
-rotation)[NextPython SDK](/en/keeperpam/secrets-manager/developer-sdk-
-library/python-sdk)
-
-Last updated 6 days ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mjk7Db0Wlkkp831N5I2%252F-Mjk7Tug3FxVG9QLp5qG%252Fdeveloper-
+sdk-
+header.jpg%3Falt%3Dmedia%26token%3Da5073936-e3ff-4481-aaef-f7a95e42704c&width=768&dpr=4&quality=100&sign=7077e7ab&sv=2)
 
 ##
 
@@ -2300,9 +2268,41 @@ see the Vault SDKs page which contains links to various development tools.
 
 [Vault SDKs](/en/keeperpam/secrets-manager/developer-sdk-library/vault-sdks)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mjk7Db0Wlkkp831N5I2%252F-Mjk7Tug3FxVG9QLp5qG%252Fdeveloper-
-sdk-
-header.jpg%3Falt%3Dmedia%26token%3Da5073936-e3ff-4481-aaef-f7a95e42704c&width=768&dpr=4&quality=100&sign=7077e7ab&sv=2)
+[PreviousPassword Rotation](/en/keeperpam/secrets-manager/password-
+rotation)[NextPython SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/python-sdk)
+
+Last updated 7 days ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
