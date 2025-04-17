@@ -501,39 +501,19 @@ Overview
 Keyring is a Linux security feature that stores sensitive information, such as
 passwords and secrets, and allows applications to securely access it.
 
-Keeper provides a utility, the Linux Keyring Utility, that interacts with the
-native Linux APIs to store and retrieve secrets from the Keyring using the
-[Secret Service
-API](https://www.gnu.org/software/emacs/manual/html_node/auth/Secret-Service-
-API.html). This utility can be used by any integration, plugin, or code base
-to store and retrieve credentials, secrets, and passwords in any Linux Keyring
-simply and natively.
-
 The code base for the Linux Keyring Utility can be found here:
 
 The binary needed to use the above utility can be found here:
 
 To use the Linux Keyring Utility, you can either
 
-  * deploy the pre-built binary from the [releases page](https://github.com/Keeper-Security/linux-keyring-utility/releases)
-
-  * or import it into your code base. 
+  *   * or import it into your code base. 
 
 Both use cases are covered below.
 
 ##
 
 Linux Keyring Utility
-
-The Linux Keyring Utility gets and sets _secrets_ in a Linux
-[Keyring](http://man7.org/linux/man-pages/man7/keyrings.7.html) using the
-[D-Bus](https://dbus.freedesktop.org/doc/dbus-tutorial.html) [Secret
-Service](https://specifications.freedesktop.org/secret-service/latest/).
-
-It has been tested with [GNOME
-Keyring](https://wiki.gnome.org/Projects/GnomeKeyring/) and [KDE Wallet
-Manager](https://userbase.kde.org/KDE_Wallet_Manager). It _should_ work with
-any implementation of the D-Bus Secrets Service.
 
 ###
 
@@ -685,13 +665,6 @@ Copy
 
 **No matching secret**
 
-A secret may not be returned even though a secret with the same label exists.
-If the secret was not created with lkru, it may not have the same
-[attributes](https://github.com/Keeper-Security/linux-keyring-
-utility/blob/main/Keeper-Security/linux-keyring-
-utility/blob/main/pkg/dbus_secrets/dbus_secrets.go#L41). Namely 'Agent',
-'Application', and 'Id'.
-
 Copy
 
     
@@ -724,13 +697,52 @@ Copy
     
     Unable to get the default keyring: Unable to connect to the D-Bus Session Bus: exec: "dbus-launch": executable file not found in $PATH
 
-[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/linux-
-keyring-utilityGitHub](https://github.com/Keeper-Security/linux-keyring-
+Keeper provides a utility, the Linux Keyring Utility, that interacts with the
+native Linux APIs to store and retrieve secrets from the Keyring using the .
+This utility can be used by any integration, plugin, or code base to store and
+retrieve credentials, secrets, and passwords in any Linux Keyring simply and
+natively.
+
+deploy the pre-built binary from the
+
+The Linux Keyring Utility gets and sets _secrets_ in a Linux  using the  .
+
+It has been tested with  and . It _should_ work with any implementation of the
+D-Bus Secrets Service.
+
+A secret may not be returned even though a secret with the same label exists.
+If the secret was not created with lkru, it may not have the same . Namely
+'Agent', 'Application', and 'Id'.
+
+[Secret Service
+API](https://www.gnu.org/software/emacs/manual/html_node/auth/Secret-Service-
+API.html)
+
+[releases page](https://github.com/Keeper-Security/linux-keyring-
 utility/releases)
+
+[Keyring](http://man7.org/linux/man-pages/man7/keyrings.7.html)
+
+[D-Bus](https://dbus.freedesktop.org/doc/dbus-tutorial.html)
+
+[Secret Service](https://specifications.freedesktop.org/secret-
+service/latest/)
+
+[GNOME Keyring](https://wiki.gnome.org/Projects/GnomeKeyring/)
+
+[KDE Wallet Manager](https://userbase.kde.org/KDE_Wallet_Manager)
+
+[attributes](https://github.com/Keeper-Security/linux-keyring-
+utility/blob/main/Keeper-Security/linux-keyring-
+utility/blob/main/pkg/dbus_secrets/dbus_secrets.go#L41)
 
 [![Logo](https://github.com/fluidicon.png)GitHub - Keeper-Security/linux-
 keyring-utility: A utility for natively interacting with the Linux
 KeyringGitHub](https://github.com/Keeper-Security/linux-keyring-utility)
+
+[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/linux-
+keyring-utilityGitHub](https://github.com/Keeper-Security/linux-keyring-
+utility/releases)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

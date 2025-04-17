@@ -470,7 +470,15 @@ simply and natively.
 
 The code base for the Windows Credential Utility can be found here:
 
+[![Logo](https://github.com/fluidicon.png)GitHub - Keeper-Security/windows-
+credential-utility: A utility for natively interacting with Windows Credential
+ManagerGitHub](https://github.com/Keeper-Security/windows-credential-utility)
+
 The binary needed to use the above utility can be found here:
+
+[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/windows-
+credential-utilityGitHub](https://github.com/Keeper-Security/windows-
+credential-utility/releases)
 
 To use the Windows Credential Utility, you can either
 
@@ -552,7 +560,7 @@ Copy
 manager/integrations/terraform)[NextXSOAR](/en/keeperpam/secrets-
 manager/integrations/xsoar)
 
-Last updated 26 days ago
+Last updated 27 days ago
 
 Was this helpful?
 
@@ -585,12 +593,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/windows-
-credential-utilityGitHub](https://github.com/Keeper-Security/windows-
-credential-utility/releases)
-
-[![Logo](https://github.com/fluidicon.png)GitHub - Keeper-Security/windows-
-credential-utility: A utility for natively interacting with Windows Credential
-ManagerGitHub](https://github.com/Keeper-Security/windows-credential-utility)
 

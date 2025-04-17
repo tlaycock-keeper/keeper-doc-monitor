@@ -1775,7 +1775,7 @@ Copy
 sdk)[NextRecord Field Classes](/en/keeperpam/secrets-manager/developer-sdk-
 library/golang-sdk/record-field-classes)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

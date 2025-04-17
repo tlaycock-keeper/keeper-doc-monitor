@@ -462,7 +462,7 @@ reference/connection-commands/sftp-sync)
 reference/keeperpam-commands)[NextSSH](/en/keeperpam/commander-cli/command-
 reference/connection-commands/ssh)
 
-Last updated 6 months ago
+Last updated 7 months ago
 
 Was this helpful?
 

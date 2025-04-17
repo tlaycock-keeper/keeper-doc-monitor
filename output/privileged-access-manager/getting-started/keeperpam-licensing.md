@@ -634,10 +634,10 @@ Companies.
 
 Features available with the KeeperPAM Add-On are listed .
 
+[page](/en/keeperpam#keeperpam-vs.-kcm)
+
 [here](/en/keeperpam/privileged-access-manager/getting-started/keeperpam-
 licensing#features-included-with-keeperpam)
-
-[page](/en/keeperpam#keeperpam-vs.-kcm)
 
 [MSP Consumption Model](https://docs.keeper.io/en/enterprise-guide/keeper-
 msp/consumption-based-billing)

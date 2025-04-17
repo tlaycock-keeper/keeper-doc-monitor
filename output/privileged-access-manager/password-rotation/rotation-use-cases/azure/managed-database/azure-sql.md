@@ -470,7 +470,7 @@ MySQL - Single or Flexible Database](/en/keeperpam/privileged-access-
 manager/password-rotation/rotation-use-cases/azure/managed-database/azure-
 mysql-single-or-flexible-database)
 
-Last updated 14 days ago
+Last updated 15 days ago
 
 Was this helpful?
 
@@ -519,7 +519,7 @@ password of Database Admin Accounts. To rotate the passwords of Regular
 Database Users, Keeper connects to the DB instance with the linked admin
 credentials and executes the necessary SQL statements to change the password.
 
-  * 
+  * See the [Azure Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure) for a high level overview and getting started with Azure
 
 ##
 
@@ -527,9 +527,17 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   *   *   * The Keeper Gateway is able to communicate with your Azure SQL Server Database
+  * [Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-started/enforcement-policies) are configured for your role
 
-  * 
+  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+
+  * Your Azure environment is [configured](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/azure-environment-setup) per our documentation
+
+  * Your [Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is online
+
+  * The Keeper Gateway is able to communicate with your Azure SQL Server Database
+
+  * If the Gateway is installed on a Linux or macOS server, install the [Microsoft ODBC driver](https://learn.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver16)
 
 ##
 
@@ -558,6 +566,8 @@ Keeper record title Ex: `Azure SQL Admin`
 The Database Server name i.e `testdb-sql.mssql.database.azure.com`
 
 **Port**
+
+For default ports, see port mapping Ex: `1433`
 
 **Use SSL**
 
@@ -658,6 +668,10 @@ services.
 
 The UUID of the Azure Active Directory
 
+For more details on all the configurable fields in the PAM Configuration
+record, visit this [page](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration).
+
 ##
 
 3\. Set up one or more PAM User records
@@ -711,46 +725,6 @@ Select the **PAM User** record(s) from Step 3, edit the record and open the
 
 Any user with `edit` rights to a **PAM User** record has the ability to setup
 rotation for that record.
-
-See the  for a high level overview and getting started with Azure
-
-are configured for your role
-
-A Keeper Secrets Manager  has been created
-
-Your Azure environment is  per our documentation
-
-Your  is online
-
-If the Gateway is installed on a Linux or macOS server, install the
-
-For default ports, see  Ex: `1433`
-
-For more details on all the configurable fields in the PAM Configuration
-record, visit this .
-
-[Azure Overview](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/azure)
-
-[Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-
-started/enforcement-policies)
-
-[application](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
-
-[configured](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/azure-environment-setup)
-
-[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)
-
-[Microsoft ODBC driver](https://learn.microsoft.com/en-
-us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver16)
-
-[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration)
-
-port mapping
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

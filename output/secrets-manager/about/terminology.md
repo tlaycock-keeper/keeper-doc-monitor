@@ -493,8 +493,6 @@ Secrets Manager Structure
 In order to organize and maintain access to **Secrets,** Keeper Secrets
 Manager uses structures called **Applications** and **Clients**.
 
-Keeper Secrets Manager Structure
-
 Read below about how each of these items function in Secrets Manager.
 
 ###
@@ -563,6 +561,8 @@ one relationship with .
 
 [client devices](/en/keeperpam/secrets-manager/about/terminology#client-
 device)
+
+Keeper Secrets Manager Structure
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

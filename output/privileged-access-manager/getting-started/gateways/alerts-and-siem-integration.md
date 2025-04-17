@@ -504,7 +504,7 @@ the Keeper Admin Console, alerts can also be configured based on any event.
 For more information on activating SIEM integration from the Keeper Enterprise
 guide:
 
-  * See 
+  * See [Reporting, Alerts & SIEM integration](https://docs.keeper.io/en/enterprise-guide/event-reporting)
 
 ###
 
@@ -514,7 +514,7 @@ Features
 
   * Send alerts to email, SMS, Webhook, Slack or Microsoft Teams on any event trigger
 
-  * Run custom reports from the Keeper Admin Console or  CLI
+  * Run custom reports from the Keeper Admin Console or [Keeper Commander](/en/keeperpam/commander-cli/command-reference/reporting-commands#audit-report-command) CLI
 
 ###
 
@@ -543,12 +543,6 @@ Event alert details will include the name and UID of the affected Keeper
 gateway.
 
 Email alerts contain event information
-
-[Keeper Commander](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#audit-report-command)
-
-[Reporting, Alerts & SIEM integration](https://docs.keeper.io/en/enterprise-
-guide/event-reporting)
 
 KeeperPAM Events
 

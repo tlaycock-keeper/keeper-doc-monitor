@@ -537,7 +537,7 @@ make sure you have the following information and configurations in place:
 
   1. All Azure AD joined devices that you want to use with Rotation need to be created and configured within your Azure Active Directory
 
-  2. To successfully configure and setup Rotation within your Azure Network, the following values are needed for your [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration):
+  2. 
 
 Field
 
@@ -561,7 +561,7 @@ The UUID of the Azure Active Directory
 
   1. Make sure all the Azure services or Azure AD joined devices you plan on using for rotation have access to the Azure Active Directory.
 
-  2. Create a custom role to allow application to access/perform actions on various Azure resources. For more information see the [Azure Environment Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/azure-environment-setup) document.
+  2. 
 
 ##
 
@@ -584,19 +584,42 @@ passwords on your Azure network:
 
   7. Create a PAM Configuration with the Azure environment setting
 
-  8. Configure Rotation settings on the [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user) records
+  8. 
 
 ###
 
 Use Cases:
 
-  * [Azure AD Users](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-ad-users)
+  *   *   *   * 
 
-  * [Azure VM Local Users](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-vm-user-accounts)
+To successfully configure and setup Rotation within your Azure Network, the
+following values are needed for your :
 
-  * [Azure Managed Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database)
+Create a custom role to allow application to access/perform actions on various
+Azure resources. For more information see the  document.
 
-  * [Azure App Secret](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-rotation)
+Configure Rotation settings on the  records
+
+[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)
+
+[Azure Environment Setup](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration/azure-environment-setup)
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
+[Azure AD Users](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/azure/azure-ad-users)
+
+[Azure VM Local Users](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/azure/azure-vm-user-accounts)
+
+[Azure Managed Database](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/azure/managed-database)
+
+[Azure App Secret](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/azure/azure-app-secret-rotation)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

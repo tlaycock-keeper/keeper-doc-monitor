@@ -431,7 +431,12 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 On this page
 
   * Installation
-  * Usage
+  * Clone the Commander Repository 
+  * Install Python
+  * Install Virtualenv
+  * Create and Activate Virtual Environment
+  * Install Dependencies and Set Up in Dev Mode
+  * Setup Complete
   * Sample Python Code
 
 Was this helpful?
@@ -447,21 +452,19 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MKeAkHBb9f5P9-OQ2KX&only=yes&limit=100)
 Instructions for installation of Python-based Commander with the intent on
 modifying source code
 
-##
+###
 
 Installation
 
-If you are a developer and you plan to create Python source code or set up a
-development environment based on the Github repository, you can use a virtual
-environment to isolate the environment for testing. Follow the below
-instructions:
+To develop or test Keeper Commander from source, use a Python virtual
+environment to isolate dependencies.
 
-####
+###
 
-1\. Clone/Download the Commander Repository
+Clone the Commander Repository
 
-Clone or download the Commander repository
-from:****<https://github.com/Keeper-
+Clone the GitHub repository to your local
+machine:****<https://github.com/Keeper-
 Security/Commander>[](https://github.com/Keeper-Security/Commander)
 
 Copy
@@ -469,13 +472,27 @@ Copy
     
     
     git clone https://github.com/Keeper-Security/Commander
+    cd Commander
 
-**2\. Install Python3**
+The "master" branch will mirror the production release. The "release" branch
+references the upcoming release. To optionally switch to the release branch:
 
-Find the most recent Python3 installation from
-[python.org](https://www.python.org/)
+Copy
 
-**3\. Install Virtualenv**
+    
+    
+    git checkout release
+
+###
+
+**Install Python**
+
+Install the most recent Python3 installation from
+[python.org](https://www.python.org/).
+
+###
+
+**Install Virtualenv**
 
 macOS / LinuxWindows
 
@@ -483,7 +500,9 @@ sudo pip3 install virtualenv
 
 pip install virtualenv
 
-**4\. Create and activate the virtual environment for your keeper project**
+###
+
+Create and Activate Virtual Environment
 
 macOS / LinuxWindows
 
@@ -491,7 +510,6 @@ Copy
 
     
     
-    cd /path/to/Commander
     virtualenv -p python3 venv
     source venv/bin/activate
 
@@ -499,11 +517,12 @@ Copy
 
     
     
-    cd \path\to\Commander
     python -m venv venv
     .\venv\Scripts\activate
 
-**5\. Install Commander to the virtual environment**
+###
+
+Install Dependencies and Set Up in Dev Mode
 
 Copy
 
@@ -512,9 +531,11 @@ Copy
     pip install -r requirements.txt
     pip install -e .
 
-🎉**Setup Complete**
+###
 
-You should be able to now login to the CLI by typing:
+**Setup Complete**
+
+You can now launch the Commander CLI:
 
 Copy
 
@@ -524,25 +545,12 @@ Copy
 
 See the [Logging in](/en/keeperpam/commander-cli/commander-installation-
 setup/logging-in) section to understand the authentication process.
+[Explore](/en/keeperpam/commander-cli/command-reference) all of the Commands
+available.
 
-**Additional Plugins**
+* * *
 
-Keeper supports plugins for various 3rd party systems for password reset
-integration. Depending on the plugin, you will need to also install the
-modules required by that plugin. For example, our MySQL plugin requires the
-PyMySQL module.
-
-See [Password Rotation Plugins](/en/keeperpam/commander-cli/command-
-reference/plugins) section for more information about Commander plugins.
-
-##
-
-Usage
-
-After you have installed Keeper Commander in developer mode, you can simply
-login using the `keeper shell` command:
-
-##
+###
 
 Sample Python Code
 
@@ -556,7 +564,7 @@ installation-setup/installation-on-linux)[Next.NET Developer
 Setup](/en/keeperpam/commander-cli/commander-installation-setup/net-developer-
 sdk)
 
-Last updated 20 days ago
+Last updated 8 hours ago
 
 Was this helpful?
 
@@ -589,10 +597,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-Run Commander from the Command Line
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FeYztlGct9AhyGQmayo1k%252Fimage.png%3Falt%3Dmedia%26token%3Dd6f96f3d-238d-459e-9cd7-7c31654c15ee&width=768&dpr=4&quality=100&sign=9995e3b5&sv=2)
 

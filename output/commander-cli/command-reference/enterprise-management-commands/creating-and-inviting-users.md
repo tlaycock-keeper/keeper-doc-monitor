@@ -556,9 +556,7 @@ Setup
 
   * Update Commander
 
-    * Before getting started, be sure that you have the most up-to-date version of Commander. Find the most recent release on the [GitHub releases page](https://github.com/Keeper-Security/Commander/releases).
-
-  * Set Persistent Login
+    *   * Set Persistent Login
 
     * Persistent login will allow Commander to run commands without needing you to login between each call. To enable persistent login, run the following commands in Keeper Commander:
 
@@ -799,13 +797,22 @@ Was this helpful?
 
 _Find more information in the_
 
- _For more information on persistent login and options, see the_ _._
+Before getting started, be sure that you have the most up-to-date version of
+Commander. Find the most recent release on the .
+
+_For more information on persistent login and options, see the_ _._
 
 _See more information about this command in the_
 
 To use the `create-user` command with a list of email addresses from a file,
 follow the  for the `enterprise-user` command and swap out that command with
 `create-user`
+
+[GitHub releases page](https://github.com/Keeper-Security/Commander/releases)
+
+[steps above](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands/creating-and-inviting-users#example-invite-users-from-
+email-addresses-in-a-file)
 
 [_documentation page_](/en/keeperpam/commander-cli/commander-installation-
 setup/logging-in#persistent-login)
@@ -815,10 +822,6 @@ reference/enterprise-management-commands#enterprise-user-command)
 
 [_command documentation_](/en/keeperpam/commander-cli/command-
 reference/enterprise-management-commands#create-user-command)
-
-[steps above](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands/creating-and-inviting-users#example-invite-users-from-
-email-addresses-in-a-file)
 
 User invite email
 

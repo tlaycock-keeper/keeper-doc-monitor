@@ -434,6 +434,7 @@ On this page
   * Advanced Configuration
   * Multiple API Token Support
   * Docker Deploy
+  * Background Mode
   * Support
 
 Was this helpful?
@@ -447,44 +448,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=VRFyjbRISZ42BbiPQUYG&only=yes&limit=100)
 
 Creating a REST API with Keeper Commander Service Mode
 
-[PreviousAutomatic Execution](/en/keeperpam/commander-cli/command-
-reference/plugins/automatic-
-execution)[NextTroubleshooting](/en/keeperpam/commander-cli/troubleshooting-
-commander-cli)
-
-Last updated 8 hours ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVUWPopJYwDQQcEtxvfyn%252FKeeper%2520Commander%2520Service%2520Mode.jpg%3Falt%3Dmedia%26token%3D322e42ed-136d-46d3-9f13-e7ecdf7aca7b&width=768&dpr=4&quality=100&sign=1a0c2ae3&sv=2)
 
 ##
 
@@ -688,6 +654,12 @@ After the initial configuration, Commander will create a record in the vault
 with the title of "Commander Service Mode". This record will contain a YAML
 file called `service_config.yaml`.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FdErItMnBXOJZeFk5tjZ5%252FScreenshot%25202025-03-23%2520at%25203.28.33%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dde5da8aa-3f91-4826-9cb4-f39818ed8892&width=768&dpr=4&quality=100&sign=f28873e3&sv=2)
+
+Commander Service Mode record
+
 Subsequent startups of the service simply require the `service-create`
 command, with no parameters. The configuration will be loaded from the vault
 and started up.
@@ -769,6 +741,18 @@ Postman
 
 You can send requests through the Postman app. Just ensure that the Content-
 Type header and api-key header is provided. Example screenshot below:
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqFYoWXHv5wfkIZIwdGgI%252FScreenshot%25202025-03-23%2520at%25205.09.47%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db4f8654b-7a40-4244-99c6-f27ac1cb64a7&width=768&dpr=4&quality=100&sign=d2cb3644&sv=2)
+
+HTTP Body Configuration in Postman
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5kke9cceH6JAWq389XaO%252FScreenshot%25202025-03-23%2520at%25205.10.39%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Ddd5bd3e4-fc62-4579-b548-7c1f832a4c73&width=768&dpr=4&quality=100&sign=a07eb9a2&sv=2)
+
+Header Configuration in Postman
 
 ###
 
@@ -865,13 +849,21 @@ Advanced Configuration
 
 Ngrok
 
+To use Commander Service Mode with Ngrok, sign up on
+[ngrok.com](https://ngrok.com/) and generate an Auth token from
+<https://dashboard.ngrok.com/authtokens>[](https://dashboard.ngrok.com/authtokens)
+
+If you are using a custom domain, set this up under:
+<https://dashboard.ngrok.com/domains>[](https://dashboard.ngrok.com/domains)
+and specify the custom subdomain when starting the Commander service mode.
+
 Using Ngrok has security implications. Follow this guidance:
 
   * Ensure that the Keeper service account is running with minimal permissions and access. We recommend limiting the scope of the service account to only the least amount of privilege.
 
   * Protect access to the service through Ngrok's IP policies
 
-  * 
+  * Limit the scope of supported commands. For example, if you only need to add records through the API, then only allow the `record-add` command. See the [Command List](/en/keeperpam/commander-cli/service-mode-rest-api#command-list) section.
 
 ####
 
@@ -999,7 +991,9 @@ Install, build and run docker image
 
   1. Install Docker.
 
-  2.   3. Build docker image using command `docker build -t keeper-commander .`
+  2. Clone the repository [git clone](https://github.com/Keeper-Security/Commander.git).
+
+  3. Build docker image using command `docker build -t keeper-commander .`
 
   4. Verify docker image created. `docker images`
 
@@ -1054,60 +1048,75 @@ Copy
 
 ###
 
+Background Mode
+
+Keeper Commander supports persistent login mode (e.g. "Stay Logged In"), which
+keeps the session active for a specific amount of time. To activate persistent
+login mode on an account, type the following:
+
+Copy
+
+    
+    
+    this-device persistent-login on
+    this-device register
+
+If persistent login is enabled, you won't be prompted to authenticate the next
+time you run Commander. Persistent login is required to ensure uninterrupted
+background execution of the Service Mode APIs, allowing seamless
+authentication without repeated login prompts.
+
+Learn more about [persistent login sessions](/en/keeperpam/commander-
+cli/commander-installation-setup/logging-in#persistent-login-sessions-stay-
+logged-in).
+
+###
+
 Support
 
 For support or feature requests, please contact:
 
-  * 
+  * Email: [commander@keepersecurity.com](mailto:commander@keepersecurity.com)
 
 If you would like to request additional features or setup guides for Commander
 Service Mode, please reach out.
 
-To use Commander Service Mode with Ngrok, sign up on  and generate an Auth
-token from
+[PreviousAutomatic Execution](/en/keeperpam/commander-cli/command-
+reference/plugins/automatic-
+execution)[NextTroubleshooting](/en/keeperpam/commander-cli/troubleshooting-
+commander-cli)
 
-If you are using a custom domain, set this up under:  and specify the custom
-domain when starting the Commander service mode.
+Last updated 8 hours ago
 
-Limit the scope of supported commands. For example, if you only need to add
-records through the API, then only allow the `record-add` command. See the
-section.
+Was this helpful?
 
-Clone the repository .
+#### Company
 
-Email:
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-[ngrok.com](https://ngrok.com/)
+#### Support
 
-<https://dashboard.ngrok.com/authtokens>[](https://dashboard.ngrok.com/authtokens)
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-<https://dashboard.ngrok.com/domains>[](https://dashboard.ngrok.com/domains)
+#### Solutions
 
-[git clone](https://github.com/Keeper-Security/Commander.git)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-[commander@keepersecurity.com](mailto:commander@keepersecurity.com)
+#### Pricing
 
-[Command List](/en/keeperpam/commander-cli/service-mode-rest-api#command-list)
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
-Commander Service Mode record
-
-HTTP Body Configuration in Postman
-
-Header Configuration in Postman
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVUWPopJYwDQQcEtxvfyn%252FKeeper%2520Commander%2520Service%2520Mode.jpg%3Falt%3Dmedia%26token%3D322e42ed-136d-46d3-9f13-e7ecdf7aca7b&width=768&dpr=4&quality=100&sign=1a0c2ae3&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FdErItMnBXOJZeFk5tjZ5%252FScreenshot%25202025-03-23%2520at%25203.28.33%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dde5da8aa-3f91-4826-9cb4-f39818ed8892&width=768&dpr=4&quality=100&sign=f28873e3&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqFYoWXHv5wfkIZIwdGgI%252FScreenshot%25202025-03-23%2520at%25205.09.47%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db4f8654b-7a40-4244-99c6-f27ac1cb64a7&width=768&dpr=4&quality=100&sign=d2cb3644&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5kke9cceH6JAWq389XaO%252FScreenshot%25202025-03-23%2520at%25205.10.39%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Ddd5bd3e4-fc62-4579-b548-7c1f832a4c73&width=768&dpr=4&quality=100&sign=a07eb9a2&sv=2)
+© 2025 Keeper Security, Inc.
 

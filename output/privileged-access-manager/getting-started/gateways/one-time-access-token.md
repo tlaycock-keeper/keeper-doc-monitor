@@ -432,34 +432,6 @@ token?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Using the Gateway Wizard 
-  * Creating a Gateway
-  * Using Commander CLI
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=LuE8qRgdmKqbHNA40Y9O&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-# Creating a Gateway
-
-Creating a Keeper Gateway
-
-[PreviousGateways](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)[NextDocker Installation](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/docker-installation)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -490,6 +462,34 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Overview
+  * Using the Gateway Wizard 
+  * Creating a Gateway
+  * Using Commander CLI
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=LuE8qRgdmKqbHNA40Y9O&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+# Creating a Gateway
+
+Creating a Keeper Gateway
+
+[PreviousGateways](/en/keeperpam/privileged-access-manager/getting-
+started/gateways)[NextDocker Installation](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/docker-installation)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -514,7 +514,7 @@ A new Gateway deployment can be created by clicking on **Create New** >
 **Gateway** from the Web Vault. We have also posted a page describing how to
 create a sandbox environment in just a few steps.
 
-  * [Quick Start: Sandbox](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
+  * 
 
 ##
 
@@ -569,6 +569,9 @@ Copy
     pam gateway new -n "<Gateway Name>" -a <Application Name or UID> -c b64
 
 The Application names and UIDs can be found with `secrets-manager app list`
+
+[Quick Start: Sandbox](/en/keeperpam/privileged-access-manager/quick-start-
+sandbox)
 
 Create a KSM Application
 

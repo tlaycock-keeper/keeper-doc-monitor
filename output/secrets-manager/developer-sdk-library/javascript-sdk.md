@@ -1268,7 +1268,7 @@ Prerequisites:
 
   * TOTP fields accept only URL generated outside of the KSM SDK
 
-  * After record creation, you can upload file attachments using [uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-sdk#upload-a-file)
+  * 
 
 Create a RecordCreate Record in Sub-folderLogin Record ExampleCustom Type
 Example
@@ -1754,7 +1754,7 @@ Copy
 library/java-sdk/record-field-classes)[Next.NET SDK](/en/keeperpam/secrets-
 manager/developer-sdk-library/.net-sdk)
 
-Last updated 7 days ago
+Last updated 8 days ago
 
 Was this helpful?
 
@@ -1787,4 +1787,9 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+After record creation, you can upload file attachments using
+
+[uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-
+sdk#upload-a-file)
 

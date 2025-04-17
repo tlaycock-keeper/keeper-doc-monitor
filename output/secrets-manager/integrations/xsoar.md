@@ -503,10 +503,6 @@ Setup
 
 Activate Keeper Secrets Manager
 
-Follow the[ Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-
-guide#enable-secrets-manager) to enable Keeper Secrets Manager on your
-account.
-
 ####
 
 Create A Keeper Secrets Manager Configuration
@@ -684,6 +680,11 @@ information_
   3. Click "OK" to add the task to your playbook 
 
 You can add additional tasks after the ksm-get-field task to use the password.
+
+Follow the to enable Keeper Secrets Manager on your account.
+
+[ Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#enable-
+secrets-manager)
 
 Configure the instance to use the Keeper Secrets Manager integration
 

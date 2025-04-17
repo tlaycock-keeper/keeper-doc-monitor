@@ -467,7 +467,7 @@ Operator
 manager/integrations/keeper-connection-manager)[NextKubernetes
 (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
 
-Last updated 5 months ago
+Last updated 6 months ago
 
 Was this helpful?
 
@@ -534,7 +534,11 @@ Before proceeding with the setup, ensure you have the following:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *     * Make sure you add the proper permissions to your device in order to be able to read and write secrets
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+    * Make sure you add the proper permissions to your device in order to be able to read and write secrets
 
   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
@@ -840,6 +844,14 @@ Limitations
 
 Verifying Setup
 
+After setting up your [Kubernetes Secret](/en/keeperpam/secrets-
+manager/integrations/kubernetes-external-secrets-operator#create-kubernetes-
+secret-to-store-base64-ksm-config), [SecretStore](/en/keeperpam/secrets-
+manager/integrations/kubernetes-external-secrets-operator#create-secretstore),
+and [ExternalSecret](/en/keeperpam/secrets-manager/integrations/kubernetes-
+external-secrets-operator#create-externalsecret), you can extract secrets with
+the command `kubectl get secrets`
+
 In the above code snippets, the name of the secret is my-external-secrets-
 values and we store the following record values:
 
@@ -893,28 +905,6 @@ improving overall operational efficiency and security posture.
 Remember to replace all placeholders in the command snippets with your
 specific information, and don't hesitate to refer back to this guide anytime
 you need to set up or manage your External Secrets in Kubernetes.
-
-A Keeper  with secrets shared to it
-
-See the  for instructions on creating an Application
-
-After setting up your , , and , you can extract secrets with the command
-`kubectl get secrets`
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
-[Kubernetes Secret](/en/keeperpam/secrets-manager/integrations/kubernetes-
-external-secrets-operator#create-kubernetes-secret-to-store-base64-ksm-config)
-
-[SecretStore](/en/keeperpam/secrets-manager/integrations/kubernetes-external-
-secrets-operator#create-secretstore)
-
-[ExternalSecret](/en/keeperpam/secrets-manager/integrations/kubernetes-
-external-secrets-operator#create-externalsecret)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

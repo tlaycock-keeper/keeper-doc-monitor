@@ -555,12 +555,6 @@ Vault Credential
 With the Base64 KSM configuration we need to create a vault credential. Under
 the **Resources** menu, select **Credentials** and click **Add**.
 
-Give your Vault Credential a name, select **Vault** from the **Credential
-Type** drop-down, type in the password that was used [to
-encrypt](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
-tower#storing-the-ksm-configuration) the `secrets.yml` file into the **Vault
-Password** field, then click **Save**.
-
 The credential will be used when the **Template** is setup.
 
 ##
@@ -757,9 +751,20 @@ See the [Ansible Plugin documentation](/en/keeperpam/secrets-
 manager/integrations/ansible/ansible-plugin) for all the Secrets Manager
 capabilities available to Ansible
 
+Give your Vault Credential a name, select **Vault** from the **Credential
+Type** drop-down, type in the password that was used  the `secrets.yml` file
+into the **Vault Password** field, then click **Save**.
+
+[to encrypt](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
+tower#storing-the-ksm-configuration)
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FQmR5XLrVZDAtFVZf1xOF%252FScreen%2520Shot%25202022-02-01%2520at%25203.16.22%2520PM.png%3Falt%3Dmedia%26token%3D80c57357-607e-4b71-8b77-3590e8b82232&width=768&dpr=4&quality=100&sign=c89383df&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFrtyMRDKJRNrJhlpXcFV%252FScreen%2520Shot%25202022-02-01%2520at%25203.19.28%2520PM.png%3Falt%3Dmedia%26token%3D7d35df16-61fb-4621-bcda-c762f73da564&width=768&dpr=4&quality=100&sign=e5654f41&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -767,15 +772,11 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2iWGDxCtE
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOksU2lRJa8LAUeCmm88K%252FScreen%2520Shot%25202022-02-01%2520at%25203.14.57%2520PM.png%3Falt%3Dmedia%26token%3D9573671a-a789-4f9d-a080-d419b2ee6781&width=768&dpr=4&quality=100&sign=6e0cac8c&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjIMOCZkeFkzS23r75wOS%252Fimage.png%3Falt%3Dmedia%26token%3D20566d61-8116-4b33-85b2-01ddd77d3c8e&width=768&dpr=4&quality=100&sign=5085d78a&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFrtyMRDKJRNrJhlpXcFV%252FScreen%2520Shot%25202022-02-01%2520at%25203.19.28%2520PM.png%3Falt%3Dmedia%26token%3D7d35df16-61fb-4621-bcda-c762f73da564&width=768&dpr=4&quality=100&sign=e5654f41&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOksU2lRJa8LAUeCmm88K%252FScreen%2520Shot%25202022-02-01%2520at%25203.14.57%2520PM.png%3Falt%3Dmedia%26token%3D9573671a-a789-4f9d-a080-d419b2ee6781&width=768&dpr=4&quality=100&sign=6e0cac8c&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

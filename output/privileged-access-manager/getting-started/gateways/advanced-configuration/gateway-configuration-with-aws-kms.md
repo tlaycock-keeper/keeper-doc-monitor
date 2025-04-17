@@ -535,9 +535,7 @@ In order to use AWS KMS to protect the Gateway configuration secrets, you need
 to install the Keeper Gateway on an EC2 instance which assumes an IAM Role.
 This works on either Docker or Linux install methods.
 
-  * [Docker Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/docker-installation)
-
-  * [Linux Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/linux-installation)
+  *   * 
 
 ###
 
@@ -679,6 +677,12 @@ Copy
     
     
     systemctl status keeper-gateway.service
+
+[Docker Installation](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/docker-installation)
+
+[Linux Installation](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/linux-installation)
 
 Select Configuration Method
 

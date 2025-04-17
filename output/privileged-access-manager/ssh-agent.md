@@ -457,7 +457,7 @@ SSH agent
 manager/session-recording-and-playback)[NextIntegration with
 Git](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-git)
 
-Last updated 2 months ago
+Last updated 14 hours ago
 
 Was this helpful?
 
@@ -751,21 +751,23 @@ In order to work with the local operating system (macOS and Windows), follow
 the  to enable SSH Agent for your desired terminal. An environment variable
 must be set to instruct your computer to use Keeper's SSH Agent.
 
+See
+
 The Keeper SSH Agent allows you to seamlessly authenticate into services like
 GitHub and securely sign Git commits. To help you get started, we've created a
 step-by-step guide on setting up  and  using Keeper.
+
+[guide below](/en/keeperpam/privileged-access-manager/ssh-agent#configuring-
+your-terminal-for-keeper-ssh-agent)
+
+[Terminal Configuration](/en/keeperpam/privileged-access-manager/ssh-
+agent#terminal-configuration)
 
 [authentication with GitHub](/en/keeperpam/privileged-access-manager/ssh-
 agent/integration-with-git#github-authentication)
 
 [signing Git commits](/en/keeperpam/privileged-access-manager/ssh-
 agent/integration-with-git#signing-commits)
-
-[guide below](/en/keeperpam/privileged-access-manager/ssh-agent#configuring-
-your-terminal-for-keeper-ssh-agent)
-
-[SSH Agent Configuration](/en/keeperpam/privileged-access-manager/ssh-
-agent#configuration-of-your-terminal)
 
 Developer Settings
 

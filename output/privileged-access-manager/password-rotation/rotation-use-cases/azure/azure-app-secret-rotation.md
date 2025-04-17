@@ -665,21 +665,17 @@ Configuration From the Keeper Vault:
 
   1. Create a shared folder in the vault
 
-  2. Create a PAM User record in the shared folder with the fields and custom fields described [above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-rotation#pam-user-record-fields-requirements).
+  2. 
 
   1. In the Secret Manager tab of the Keeper vault, create a new application for the gateway if there is no gateway yet.
 
   2. Make sure the Application has edit permissions on the shared folder created above.
 
-  3. Provision the gateway (gateway tab after selecting the application) on a Linux box. Simply run the install command provided by the Keeper vault and make sure Python and the dependencies listed [above ](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-rotation#prerequisites)are installed.
-
-  4. In the Secret Manager tab of the Keeper vault, go to the PAM Configurations tab. Create a new PAM configuration if needed.
+  3.   4. In the Secret Manager tab of the Keeper vault, go to the PAM Configurations tab. Create a new PAM configuration if needed.
 
   5. Under Environment, please select “Azure”, select the Gateway, select the shared folder, provide the “Entra ID” name (arbitrary name of your Entra ID environment), the admin application “Client ID” (Overview tab of the admin application in the Azure portal), “Client Secret” (Certificates & secrets tab of the admin application in the Azure portal), "Subscription ID" and "Tenant ID". 
 
-  1. Edit the PAM User record previously described in this [documentation](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-rotation#pam-user-record-fields-requirements):
-
-     * Password Rotation Settings: select your desired schedule and the PAM configuration created above.
+  1.      * Password Rotation Settings: select your desired schedule and the PAM configuration created above.
 
      * Select "Run PAM Scripts only" as the Rotation method.
 
@@ -698,11 +694,6 @@ another Keeper PAM User record.
 ###
 
 Admin App Secret Record Requirements
-
-The PAM user record will need all fields as described in the documentation
-[above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/azure/azure-app-secret-rotation#pam-user-record-fields-
-requirements), along with the additional fields below:
 
 ####
 
@@ -734,12 +725,6 @@ Text
 
 Enter your admin application client ID. This is available in the Overview tab
 of the admin application in the Azure portal > App registrations.
-
-Instead of creating the PAM User record manually using the documentation
-[above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/azure/azure-app-secret-rotation#pam-user-record-fields-requirements)
-and the extra fields above, you could also import the csv file below. It will
-create a template record you can amend and duplicate as needed.
 
 Importing the file will generate a Login record type: **make sure to convert
 it to PAM User.**
@@ -1032,6 +1017,38 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+Create a PAM User record in the shared folder with the fields and custom
+fields described .
+
+Provision the gateway (gateway tab after selecting the application) on a Linux
+box. Simply run the install command provided by the Keeper vault and make sure
+Python and the dependencies listed are installed.
+
+Edit the PAM User record previously described in this :
+
+The PAM user record will need all fields as described in the documentation ,
+along with the additional fields below:
+
+Instead of creating the PAM User record manually using the documentation  and
+the extra fields above, you could also import the csv file below. It will
+create a template record you can amend and duplicate as needed.
+
+[above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/azure/azure-app-secret-rotation#pam-user-record-fields-requirements)
+
+[above ](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/azure/azure-app-secret-rotation#prerequisites)
+
+[documentation](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/azure/azure-app-secret-rotation#pam-user-record-
+fields-requirements)
+
+[above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/azure/azure-app-secret-rotation#pam-user-record-fields-requirements)
+
+[above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/azure/azure-app-secret-rotation#pam-user-record-fields-requirements)
 
 [237BPAM User Template
 AzureAppSecretRotation.csv](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-

@@ -454,6 +454,8 @@ development teams with a fully cloud-based, Zero-Knowledge platform for
 managing all of your infrastructure secrets such as API keys, Database
 passwords, access keys, certificates and any type of confidential data.
 
+Secrets Manager Video Demo
+
 Common use cases for Secrets Manager include:
 
   * Removing hard-coded credentials from source code
@@ -555,6 +557,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-Secrets Manager Video Demo
 

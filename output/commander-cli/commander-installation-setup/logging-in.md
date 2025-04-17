@@ -435,10 +435,9 @@ On this page
   * Logging in With 2FA
   * Logging in with a Proxy
   * Enterprise SSO Login
-  * 2\. Paste Token into Commander
   * Device Approval with SSO Login
   * Use a Master Password with SSO Login
-  * Setting CLI Session Preferences
+  * Persistent Login Sessions ("Stay Logged In")
   * Working with Commander
 
 Was this helpful?
@@ -453,7 +452,7 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-Mc9WcFFZWwUSoU5MlhS&only=yes&limit=100)
 
 How to login and use the Keeper Commander CLI
 
-##
+###
 
 First Login on a New Device
 
@@ -496,7 +495,7 @@ extra layer of security to trust the device you are on.
 
 ####
 
-**First Login Example:**
+**First Login Example**
 
 Copy
 
@@ -545,14 +544,16 @@ Copy
     
     Device was approved
 
-##
+###
 
 Logging in**with a Master Password**
 
 After device approval, you will immediately move to the login process, or if
 you previously approved the device, this will be the first step.
 
-**Login Example (approved device):**
+####
+
+**Master Password Login Example**
 
 Copy
 
@@ -569,7 +570,7 @@ Copy
     Decrypted [23] record(s)
     My Vault>
 
-##
+###
 
 Logging in With 2FA
 
@@ -577,7 +578,9 @@ If you have 2FA enforced on your account, you will be required to pass the 2FA
 step before logging in with a Master Password. Your login flow in commander
 will follow the same rules you have for logging into the Vault.
 
-**Login Example (2FA):**
+####
+
+**Login Example with 2FA**
 
 Copy
 
@@ -615,7 +618,7 @@ following before entering the code:
 
   * `2fa_duration=forever` to never prompt again on this device
 
-##
+###
 
 Logging in with a Proxy
 
@@ -640,7 +643,7 @@ Copy
       -a {list,add,remove}, --action {list,add,remove}
                             action
 
-##
+###
 
 Enterprise SSO Login
 
@@ -674,7 +677,9 @@ To login to Commander using SSO, you will need to paste a token provided by
 the SSO provider from your web browser into Commander. To receive the SSO
 token, follow these steps:
 
-**Option 1: Open the Page Automatically From Commander**
+####
+
+**SSO Login Using Default Browser**
 
 To have Commander automatically open the default browser to the SSO Connect
 page, enter "o" in the SSO selection and hit `Enter`
@@ -685,7 +690,9 @@ Depending on your operating system, settings, and administrator privileges,
 Commander may be unable to open the web browser, in this case use the
 following option to open the SSO Connect screen.
 
-**Option 2: Paste the SSO Login Screen URL into a Browser**
+####
+
+**SSO Login Using Pasted Token**
 
 You can copy the URL to your SSO's logins screen from the SSO Connect text in
 Commander, or enter "c" in the SSO selection and hit `Enter` to copy the URL
@@ -701,18 +708,12 @@ Copy
 Once the URL is copied, paste it into a web browser to navigate to the SSO
 Connect page.
 
-###
-
-2\. Paste Token into Commander
-
 After a successful SSO login, the web page will show a yellow "Copy" button.
 Click the button to copy the token.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLtlzlTvOklQoOP4Cn9js%252FScreen%2520Shot%25202022-07-15%2520at%25206.01.11%2520PM.png%3Falt%3Dmedia%26token%3Db58d0065-79d9-4343-956c-3bb299eca687&width=768&dpr=4&quality=100&sign=9d8bddc6&sv=2)
+####
 
-SSO Login success screen
+Paste the SSO Token
 
 Once the token has been copied, go back to Commander to complete the SSO
 login.
@@ -748,10 +749,6 @@ There are two possible formats that the token could have for SSO login
 ****`var token = "aQwD`h&r`[...]"`
 
 In this case copy everything within the quotation marks
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FcteE2I435t2L1RBEBneH%252Fimage.png%3Falt%3Dmedia%26token%3Deffd4d84-9625-49c5-8d4f-e7c47db515f6&width=300&dpr=4&quality=100&sign=c57dc921&sv=2)
 
 ####
 
@@ -802,22 +799,30 @@ Customers who normally login to their Keeper Vault using Enterprise SSO Login
 use of this capability, it must be enabled by the Keeper Administrator and
 then configured by the user. The steps are below:
 
-**(1) Login to the Keeper Admin Console**
+####
+
+**Login to the Keeper Admin Console**
 
 As the admin, login to the Keeper Admin Console as you normally do.
 
-**(2) Enable SSO Master Password Policy**
+####
+
+**Enable SSO Master Password Policy**
 
 For the User/Role who will be accessing Keeper Commander, open the Role
 Enforcement Policy setting screen. Enable the option "Allow users who login
 with SSO to create a Master Password"
 
-**(3) Login to the End-User Vault using SSO**
+####
+
+**Login to the End-User Vault using SSO**
 
 As the user who will be using Commander, login to the Keeper Web Vault or
 Keeper Desktop app with your SSO provider as you normally do.
 
-**(4) Create a Master Password**
+####
+
+**Create a Master Password**
 
 Visit the Settings > General screen and setup a Master Password
 
@@ -826,7 +831,7 @@ Commander.
 
 ####
 
-(5) Optional: Force SSO Master Password Login in the configuration file.
+Optional: Force SSO Master Password Login in Configuration File
 
 Add the following line to your configuration file.
 
@@ -840,10 +845,12 @@ Copy
 
 ###
 
-Setting CLI Session Preferences
+Persistent Login Sessions ("Stay Logged In")
 
 Commander can be configured to stay logged in between sessions, and you can
 also configure how long the device will remain logged in without activity.
+This feature is referred to as persistent login or "Stay Logged In" in the
+Vault UI.
 
 Use the `this-device` command to set your preferences.
 
@@ -906,7 +913,7 @@ Keeper Commander – Accessing and Working with Your Vault
 installation-setup/installation-on-powershell)[NextConfiguration and
 Usage](/en/keeperpam/commander-cli/commander-installation-setup/configuration)
 
-Last updated 23 days ago
+Last updated 8 hours ago
 
 Was this helpful?
 
@@ -942,26 +949,36 @@ Was this helpful?
 
 See  for more details on device approval.
 
-SSO Master Password Policy
-
 [First Login on a New Device section](/en/keeperpam/commander-cli/commander-
 installation-setup/logging-in#first-login-on-a-new-device)
+
+SSO Login success screen
+
+SSO Master Password Policy
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FcteE2I435t2L1RBEBneH%252Fimage.png%3Falt%3Dmedia%26token%3Deffd4d84-9625-49c5-8d4f-e7c47db515f6&width=300&dpr=4&quality=100&sign=c57dc921&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLtlzlTvOklQoOP4Cn9js%252FScreen%2520Shot%25202022-07-15%2520at%25206.01.11%2520PM.png%3Falt%3Dmedia%26token%3Db58d0065-79d9-4343-956c-3bb299eca687&width=768&dpr=4&quality=100&sign=9d8bddc6&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mel7nEasV2-9PcLt28R%252F-MelAMU5H8NOjViHwkEl%252FScreen%2520Shot%25202020-12-24%2520at%25208.54.50%2520AM.png%3Falt%3Dmedia%26token%3D986e1183-a395-49ef-b472-fed9162bac13&width=768&dpr=4&quality=100&sign=89d92989&sv=2)
 
 ![The SSO token
 highlighted](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGxyWf2HIoxxQX7jdXnu4%252FScreen%2520Shot%25202021-12-17%2520at%25201.38.26%2520PM.jpg%3Falt%3Dmedia%26token%3D76bdbef2-9f66-4af1-b5be-1b45eb16fc3e&width=300&dpr=4&quality=100&sign=f3cb3ff5&sv=2)
 
-![Right click menu with "View page source"
-highlighted](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfnUkQM9z3dfg8W6ayiah%252FView%2520Page%2520Source.png%3Falt%3Dmedia%26token%3D537528e4-6aca-4f3e-9733-6c094a1c4809&width=300&dpr=4&quality=100&sign=165f6c19&sv=2)
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mel7nEasV2-9PcLt28R%252F-MelBP0BL3ei6D0pxshE%252FScreen%2520Shot%25202021-07-16%2520at%25202.20.19%2520PM.png%3Falt%3Dmedia%26token%3Db43c1f01-0acd-45f3-96bf-56c3ea0b5022&width=768&dpr=4&quality=100&sign=d0791f34&sv=2)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mel7nEasV2-9PcLt28R%252F-MelAMU5H8NOjViHwkEl%252FScreen%2520Shot%25202020-12-24%2520at%25208.54.50%2520AM.png%3Falt%3Dmedia%26token%3D986e1183-a395-49ef-b472-fed9162bac13&width=768&dpr=4&quality=100&sign=89d92989&sv=2)
+![Right click menu with "View page source"
+highlighted](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfnUkQM9z3dfg8W6ayiah%252FView%2520Page%2520Source.png%3Falt%3Dmedia%26token%3D537528e4-6aca-4f3e-9733-6c094a1c4809&width=300&dpr=4&quality=100&sign=165f6c19&sv=2)
 

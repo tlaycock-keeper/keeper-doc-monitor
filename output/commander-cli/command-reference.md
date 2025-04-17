@@ -422,6 +422,36 @@ reference?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * List of Commands
@@ -457,36 +487,6 @@ Last updated 5 months ago
 
 Was this helpful?
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 List of Commands
@@ -501,41 +501,25 @@ Record Commands
 
 Sharing Commands
 
-  *   *   *   *   * [external-shares-report](https://docs.keeper.io/secrets-manager/commander-cli/command-reference/sharing-commands#external-shares-report-command)
+  *   *   *   *   * 
 
 ###
 
 Record Type Commands
 
-  * [record-type-info](/en/keeperpam/commander-cli/command-reference/record-commands/record-type-commands#record-type-info-command)
-
-  * [record-type](/en/keeperpam/commander-cli/command-reference/record-commands/record-type-commands#record-type-command)
-
-  * [convert](/en/keeperpam/commander-cli/command-reference/record-commands/record-type-commands#convert-command)
+  *   *   * 
 
 ###
 
 Import and Exporting Data
 
-  * [import](/en/keeperpam/commander-cli/command-reference/import-and-export-commands#import-command)
-
-  * [export](/en/keeperpam/commander-cli/command-reference/import-and-export-commands#export-command)
-
-  * [download-membership](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
-
-  * [apply-membership](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
-
-  * [load-record-types](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
-
-  * [download-record-types](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
+  *   *   *   *   *   * 
 
 ###
 
 Reporting Commands
 
-  *   *   *   *   *   *   *   *   *   * [compliance-report](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/compliance-commands)
-
-  *   * [external-shares-report](https://docs.keeper.io/secrets-manager/commander-cli/command-reference/reporting-commands#external-shares-report-command)
+  *   *   *   *   *   *   *   *   *   *   *   * 
 
 ###
 
@@ -571,67 +555,51 @@ Miscellaneous Commands
 
 KeeperPAM Commands
 
-  * [pam](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
+  * 
 
 ###
 
 Legacy Commands
 
-  *   * [connect](/en/keeperpam/commander-cli/command-reference/connection-commands/connection-to-hosts)
-
-  * [ssh](/en/keeperpam/commander-cli/command-reference/connection-commands/ssh)
-
-  * [ssh-agent](/en/keeperpam/commander-cli/command-reference/connection-commands/ssh-agent)
-
-  * [rdp](/en/keeperpam/commander-cli/command-reference/connection-commands/rdp)
-
-  * [rsync](/en/keeperpam/commander-cli/command-reference/connection-commands/sftp-sync)
-
-  *   *   * 
+  *   *   *   *   *   *   *   *   * 
 
 (legacy)
 
-[share-record](/en/keeperpam/commander-cli/command-reference/sharing-
-commands#share-record-command)
+[external-shares-report](https://docs.keeper.io/secrets-manager/commander-
+cli/command-reference/sharing-commands#external-shares-report-command)
 
-[share-folder](/en/keeperpam/commander-cli/command-reference/sharing-
-commands#share-folder-command)
+[download-membership](/en/keeperpam/commander-cli/command-reference/import-
+and-export-commands)
 
-[record-permissions](/en/keeperpam/commander-cli/command-reference/sharing-
-commands#record-permission-command)
+[apply-membership](/en/keeperpam/commander-cli/command-reference/import-and-
+export-commands)
 
-[one-time-share](/en/keeperpam/commander-cli/command-reference/sharing-
-commands#share-command)
+[load-record-types](/en/keeperpam/commander-cli/command-reference/import-and-
+export-commands)
 
-[audit-log](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#audit-log-command)
+[download-record-types](/en/keeperpam/commander-cli/command-reference/import-
+and-export-commands)
 
-[audit-report](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#audit-report-command)
+[compliance-report](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands/compliance-commands)
 
-[user-report](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#user-report-command)
+[external-shares-report](https://docs.keeper.io/secrets-manager/commander-
+cli/command-reference/reporting-commands#external-shares-report-command)
 
-[security-audit-report](/en/keeperpam/commander-cli/command-
-reference/reporting-commands#security-audit-report-command)
+[pam](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
 
-[share-report](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#share-report-command)
+[connect](/en/keeperpam/commander-cli/command-reference/connection-
+commands/connection-to-hosts)
 
-[shared-records-report](/en/keeperpam/commander-cli/command-
-reference/reporting-commands#shared-records-report-command)
+[ssh](/en/keeperpam/commander-cli/command-reference/connection-commands/ssh)
 
-[aging-report](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#aging-report-command)
+[ssh-agent](/en/keeperpam/commander-cli/command-reference/connection-
+commands/ssh-agent)
 
-[action-report](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#action-report-command)
+[rdp](/en/keeperpam/commander-cli/command-reference/connection-commands/rdp)
 
-[msp-legacy-report](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#msp-legacy-report-command)
-
-[msp-legacy-report](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#msp-legacy-report-command)
+[rsync](/en/keeperpam/commander-cli/command-reference/connection-
+commands/sftp-sync)
 
 [list](/en/keeperpam/commander-cli/command-reference/record-commands#list-
 command)
@@ -708,20 +676,26 @@ commands#find-ownerless)
 [compliance](/en/keeperpam/commander-cli/command-reference/enterprise-
 management-commands/compliance-commands#the-compliance-command)
 
-[secrets-manager app create](/en/keeperpam/commander-cli/command-
-reference/secrets-manager-commands#ksm-app-create-command)
+[record-type-info](/en/keeperpam/commander-cli/command-reference/record-
+commands/record-type-commands#record-type-info-command)
 
-[secrets-manager app get](/en/keeperpam/commander-cli/command-
-reference/secrets-manager-commands#ksm-app-get-command)
+[record-type](/en/keeperpam/commander-cli/command-reference/record-
+commands/record-type-commands#record-type-command)
 
-[secrets-manager app list](/en/keeperpam/commander-cli/command-
-reference/secrets-manager-commands#ksm-app-list-command)
+[convert](/en/keeperpam/commander-cli/command-reference/record-
+commands/record-type-commands#convert-command)
 
-[secrets-manager share add](/en/keeperpam/commander-cli/command-
-reference/secrets-manager-commands#ksm-share-add-command)
+[share-record](/en/keeperpam/commander-cli/command-reference/sharing-
+commands#share-record-command)
 
-[secrets-manager client add](/en/keeperpam/commander-cli/command-
-reference/secrets-manager-commands#ksm-client-add-command)
+[share-folder](/en/keeperpam/commander-cli/command-reference/sharing-
+commands#share-folder-command)
+
+[record-permissions](/en/keeperpam/commander-cli/command-reference/sharing-
+commands#record-permission-command)
+
+[one-time-share](/en/keeperpam/commander-cli/command-reference/sharing-
+commands#share-command)
 
 [msp-info](/en/keeperpam/commander-cli/command-reference/msp-management-
 commands#msp-info-command)
@@ -759,47 +733,41 @@ commands#msp-copy-role-command)
 [distributor](/en/keeperpam/commander-cli/command-reference/msp-management-
 commands#distributor-commands)
 
-[audit-alert](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#audit-alert-command)
+[import](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands#import-command)
 
-[enterprise-info](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#enterprise-info-command)
+[export](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands#export-command)
 
-[enterprise-user](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#enterprise-user-command)
+[audit-log](/en/keeperpam/commander-cli/command-reference/reporting-
+commands#audit-log-command)
 
-[enterprise-role](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#enterprise-role-command)
+[audit-report](/en/keeperpam/commander-cli/command-reference/reporting-
+commands#audit-report-command)
 
-[enterprise-team](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#enterprise-team-command)
+[user-report](/en/keeperpam/commander-cli/command-reference/reporting-
+commands#user-report-command)
 
-[enterprise-node](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#enterprise-node-command)
+[security-audit-report](/en/keeperpam/commander-cli/command-
+reference/reporting-commands#security-audit-report-command)
 
-[enterprise-push](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#enterprise-push-command)
+[share-report](/en/keeperpam/commander-cli/command-reference/reporting-
+commands#share-report-command)
 
-[team-approve](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#team-approve-command)
+[shared-records-report](/en/keeperpam/commander-cli/command-
+reference/reporting-commands#shared-records-report-command)
 
-[device-approve](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#device-approve-command)
+[aging-report](/en/keeperpam/commander-cli/command-reference/reporting-
+commands#aging-report-command)
 
-[create-user](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#create-user-command)
+[action-report](/en/keeperpam/commander-cli/command-reference/reporting-
+commands#action-report-command)
 
-[transfer-user](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#transfer-user-command)
+[msp-legacy-report](/en/keeperpam/commander-cli/command-reference/reporting-
+commands#msp-legacy-report-command)
 
-[automator](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#automator-command)
-
-[scim](/en/keeperpam/commander-cli/command-reference/enterprise-management-
-commands#scim-command)
-
-[audit-alert](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#audit-alert-command)
+[msp-legacy-report](/en/keeperpam/commander-cli/command-reference/reporting-
+commands#msp-legacy-report-command)
 
 [breachwatch](/en/keeperpam/commander-cli/command-reference/enterprise-
 management-commands/breachwatch-commands#breachwatch-command)
@@ -812,6 +780,21 @@ rotation#set-command)
 
 [echo](/en/keeperpam/commander-cli/command-reference/plugins/password-
 rotation#echo-command)
+
+[secrets-manager app create](/en/keeperpam/commander-cli/command-
+reference/secrets-manager-commands#ksm-app-create-command)
+
+[secrets-manager app get](/en/keeperpam/commander-cli/command-
+reference/secrets-manager-commands#ksm-app-get-command)
+
+[secrets-manager app list](/en/keeperpam/commander-cli/command-
+reference/secrets-manager-commands#ksm-app-list-command)
+
+[secrets-manager share add](/en/keeperpam/commander-cli/command-
+reference/secrets-manager-commands#ksm-share-add-command)
+
+[secrets-manager client add](/en/keeperpam/commander-cli/command-
+reference/secrets-manager-commands#ksm-client-add-command)
 
 [this-device](/en/keeperpam/commander-cli/command-reference/misc-
 commands#this-device-command)
@@ -859,4 +842,46 @@ commands#sync-security-data-command)
 commands#keeper-fill-command)
 
 [2fa](/en/keeperpam/commander-cli/command-reference/misc-commands#2fa-command)
+
+[audit-alert](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#audit-alert-command)
+
+[enterprise-info](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#enterprise-info-command)
+
+[enterprise-user](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#enterprise-user-command)
+
+[enterprise-role](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#enterprise-role-command)
+
+[enterprise-team](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#enterprise-team-command)
+
+[enterprise-node](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#enterprise-node-command)
+
+[enterprise-push](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#enterprise-push-command)
+
+[team-approve](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#team-approve-command)
+
+[device-approve](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#device-approve-command)
+
+[create-user](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#create-user-command)
+
+[transfer-user](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#transfer-user-command)
+
+[automator](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#automator-command)
+
+[scim](/en/keeperpam/commander-cli/command-reference/enterprise-management-
+commands#scim-command)
+
+[audit-alert](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#audit-alert-command)
 

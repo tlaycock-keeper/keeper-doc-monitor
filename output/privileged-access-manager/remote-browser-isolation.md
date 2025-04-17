@@ -453,7 +453,7 @@ manager/tunnels/setting-up-tunnels)[NextSetting up
 RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation/setting-
 up-rbi)
 
-Last updated 18 days ago
+Last updated 19 days ago
 
 Was this helpful?
 

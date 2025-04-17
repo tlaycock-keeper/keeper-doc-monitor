@@ -428,34 +428,6 @@ manager/getting-started/gateways?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Platforms Supported
-  * Platform Specific Capabilities
-  * System Requirements
-  * Installation Steps
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=YVitXRsJWzo14VlLdwoR&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-
-# Gateways
-
-Installation and setup of the Keeper Gateway
-
-[PreviousDevices](/en/keeperpam/privileged-access-manager/getting-
-started/devices)[NextCreating a Gateway](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/one-time-access-token)
-
-Last updated 23 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -486,6 +458,17 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=YVitXRsJWzo14VlLdwoR&only=yes&limit=100)
+
+Last updated 24 days ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -500,11 +483,7 @@ Gateway in each environment that is being managed.
 
 **Platforms Supported**
 
-  * [**Docker**](/en/keeperpam/privileged-access-manager/getting-started/gateways/docker-installation)
-
-  * [**Windows**](/en/keeperpam/privileged-access-manager/getting-started/gateways/windows-installation)
-
-  * [**Linux**](/en/keeperpam/privileged-access-manager/getting-started/gateways/linux-installation)
+  *   *   * 
 
 ###
 
@@ -513,34 +492,6 @@ Platform Specific Capabilities
 The Keeper Gateway offers different feature capabilities based on the
 underlying operating system and hardware. We recommend using Docker on a Linux
 or Windows host with x86 CPUs for full feature support and ease of management.
-
-Platform
-
-Compatibility
-
-**Docker** (Linux or Windows host w/ x86)
-
-  * All features supported
-
-**Linux** (RHEL 8, Rocky Linux 8)
-
-  * All features supported
-
-**Docker** (Linux host on ARM)
-
-  * No Remote Browser Isolation
-
-**Linux** **Binary Install** (Ubuntu, Debian)
-
-  * No Remote Browser Isolation
-
-  * Limited connection protocols
-
-**Windows Binary Install**
-
-  * No Remote Browser Isolation
-
-  * No database connections
 
 Note: EL9 which includes Rocky Linux 9 and RHEL 9 support is coming soon.
 
@@ -589,21 +540,81 @@ addition to the authentication and encryption built into the service.
 Based on your Operating System, refer to the corresponding guide on installing
 the Keeper Gateway:
 
-  * [Docker](/en/keeperpam/privileged-access-manager/getting-started/gateways/docker-installation)
-
-  * [Linux](/en/keeperpam/privileged-access-manager/getting-started/gateways/linux-installation)
-
-  * [Windows](/en/keeperpam/privileged-access-manager/getting-started/gateways/windows-installation)
+  *   *   * 
 
 ####
 
 Additional Installation Configurations
 
+Platform
+
+Compatibility
+
 If you are installing on an EC2 instance in AWS, the Keeper Gateway can be
 configured to use the instance role for pulling its configuration from AWS
-Secrets Manager. Detailed instructions on this setup can be [found
-here](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/advanced-configuration/gateway-configuration-with-aws-kms).
+Secrets Manager. Detailed instructions on this setup can be .
+
+**Docker** (Linux or Windows host w/ x86)
+
+  * All features supported
+
+**Linux** (RHEL 8, Rocky Linux 8)
+
+  * All features supported
+
+**Docker** (Linux host on ARM)
+
+  * No Remote Browser Isolation
+
+**Linux** **Binary Install** (Ubuntu, Debian)
+
+  * No Remote Browser Isolation
+
+  * Limited connection protocols
+
+**Windows Binary Install**
+
+  * No Remote Browser Isolation
+
+  * No database connections
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+# Gateways
+
+Installation and setup of the Keeper Gateway
+
+[PreviousDevices](/en/keeperpam/privileged-access-manager/getting-
+started/devices)[NextCreating a Gateway](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/one-time-access-token)
+
+  * Overview
+  * Platforms Supported
+  * Platform Specific Capabilities
+  * System Requirements
+  * Installation Steps
+
+[**Docker**](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/docker-installation)
+
+[**Windows**](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/windows-installation)
+
+[**Linux**](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/linux-installation)
+
+[Docker](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/docker-installation)
+
+[Linux](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/linux-installation)
+
+[Windows](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/windows-installation)
+
+[found here](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/advanced-configuration/gateway-configuration-with-aws-kms)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
