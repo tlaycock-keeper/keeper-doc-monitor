@@ -428,6 +428,36 @@ manager/integrations/hashicorp-vault?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * About
@@ -465,36 +495,6 @@ Last updated 8 months ago
 
 Was this helpful?
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 About
@@ -512,9 +512,6 @@ Features
 
   * Update secret information from HashiCorp Vault
 
-For a complete list of Keeper Secrets Manager features see the [Overview
-](/en/keeperpam/secrets-manager/overview)
-
 ##
 
 Prerequisites
@@ -522,19 +519,15 @@ Prerequisites
 This page documents the Secrets Manager HashiCorp Vault integration. In order
 to utilize this integration, you will need:
 
-  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
-
-    * Secrets Manager add-on enabled for your Keeper subscription
+  *     * Secrets Manager add-on enabled for your Keeper subscription
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
-
-    * The HashiCorp Vault integration accepts our Base64 format configurations
+  *     *   *     * The HashiCorp Vault integration accepts our Base64 format configurations
 
   * HashiCorp Vault command line, and a Vault server running
 
-    * See the [HashiCorp Vault documentation](https://learn.hashicorp.com/collections/vault/getting-started) for how to install
+    * 
 
 ##
 
@@ -900,18 +893,31 @@ Copy
     
     vault delete ksm/record uid=Oq3fFu14hZY00d7sp3EYNA
 
+For a complete list of Keeper Secrets Manager features see the
+
+Keeper Secrets Manager access (See the  for more details)
+
 A Keeper  with secrets shared to it
 
 See the  for instructions on creating an Application
 
-Secrets Manager Releases
+An initialized Keeper
+
+See the  for how to install
 
 A Secrets Manager configuration can be created using Keeper Commander or the
 Secrets Manager CLI. See the  for more information on creating a
 configuration.
 
-[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/secrets-
-managerGitHub](https://github.com/Keeper-Security/secrets-manager/releases)
+[Overview ](/en/keeperpam/secrets-manager/overview)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+[Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration)
+
+[HashiCorp Vault
+documentation](https://learn.hashicorp.com/collections/vault/getting-started)
 
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
@@ -921,6 +927,11 @@ manager-configuration#creating-a-secrets-manager-configuration)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
+
+[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/secrets-
+managerGitHub](https://github.com/Keeper-Security/secrets-manager/releases)
+
+Secrets Manager Releases
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

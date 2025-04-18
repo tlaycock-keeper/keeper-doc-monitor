@@ -526,7 +526,9 @@ utilize this integration, you will need:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     * 
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
 
 ##
 
@@ -1115,16 +1117,6 @@ At this point, you can now integrate Keeper Secrets Manager into your K8s
 deployments using any of the [Secrets Manager SDKs](/en/keeperpam/secrets-
 manager/developer-sdk-library).
 
-A Keeper  with secrets shared to it
-
-See the  for instructions on creating an Application
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
 Example Web Application displaying Keeper secrets
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
@@ -1135,7 +1127,7 @@ header.jpg%3Falt%3Dmedia%26token%3D19f48711-5185-45a7-96c4-efc7d11b34cc&width=76
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FBWcNIoRMf6uNGoiDBVo5%252FScreen%2520Shot%25202021-12-13%2520at%252010.32.10%2520AM.png%3Falt%3Dmedia%26token%3Defdf29b3-c17f-4f19-bd49-5003f2de86df&width=768&dpr=4&quality=100&sign=54d25ebc&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6TQeKxdHn0zbmfZKG270%252Fimage.png%3Falt%3Dmedia%26token%3D05e69023-6c1d-44ec-819c-842699af867d&width=768&dpr=4&quality=100&sign=307eac3b&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -1147,5 +1139,5 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fdy9FYgLsL
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6TQeKxdHn0zbmfZKG270%252Fimage.png%3Falt%3Dmedia%26token%3D05e69023-6c1d-44ec-819c-842699af867d&width=768&dpr=4&quality=100&sign=307eac3b&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FBWcNIoRMf6uNGoiDBVo5%252FScreen%2520Shot%25202021-12-13%2520at%252010.32.10%2520AM.png%3Falt%3Dmedia%26token%3Defdf29b3-c17f-4f19-bd49-5003f2de86df&width=768&dpr=4&quality=100&sign=54d25ebc&sv=2)
 

@@ -422,6 +422,30 @@ manager/setup-steps?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Setup Steps
+  * Notes
+  * Feedback 
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=PR2hkE7TmA365mTVpHE3&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Setup Steps
+
+Accessing the KeeperPAM platform
+
+[PreviousOverview](/en/keeperpam)[NextQuick Start:
+Sandbox](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
+
+Last updated 29 days ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -452,17 +476,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=PR2hkE7TmA365mTVpHE3&only=yes&limit=100)
-
-Last updated 28 days ago
-
-Was this helpful?
-
 ##
 
 Setup Steps
@@ -474,6 +487,11 @@ Follow the below steps to start using KeeperPAM.
 ###
 
 Keeper Enterprise license
+
+If you are not a Keeper customer or do not have the required license, you can
+[start a free trial](https://www.keepersecurity.com/password-manager-free-
+trial-sign-up.html) from our website. The free trial includes KeeperPAM full
+capabilities.
 
 2
 
@@ -499,7 +517,9 @@ From the Admin Console, enable the corresponding PAM Enforcement Policies.
 
   * Go to **Enforcement Policies** and open the "**Privileged Access Manager** " section.
 
-  *   * Assign yourself or your test user account to this role.
+  * Enable all the [PAM enforcement policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-policies) to use the new features.
+
+  * Assign yourself or your test user account to this role.
 
 4
 
@@ -518,76 +538,6 @@ available will differ.
 
 Use the basic `docker-compose.yml` file as shown below:
 
-Download the file called `docker-seccomp.json` and place it in the same folder
-as your Docker Compose file.
-
-####
-
-**Windows**
-
-  *   * You'll be asked to confirm uninstalling the previous Gateway, this is OK
-
-  * Ensure the "Enter one-time access token" selection is **NOT selected**
-
-####
-
-**Linux**
-
-To update an existing Gateway on Linux:
-
-####
-
-Retrieving the Configuration
-
-If you are replacing an existing Gateway, get the old base64 configuration
-string from: `/etc/keeper-gateway/gateway-config.json` on Linux or
-`C:\ProgramData\KeeperGateway\config\gateway-config.json` on Windows.
-
-5
-
-###
-
-New Customers: Create a new Gateway and Sandbox
-
-6
-
-###
-
-Explore new features
-
-  *   *   *   *   *   *   * 
-
-###
-
-Notes
-
-  * PAM Features differ between Linux, Docker and Windows versions of the Keeper Gateway.
-
-  * For a full range of features, use the Docker installation method, or Linux installation method on Rocky Linux or RHEL8.
-
-  * 
-
-###
-
-Feedback
-
-Please email us at **pam@keepersecurity.com** with your feedback and we'll
-quickly assist you with any questions.
-
-If you are not a Keeper customer or do not have the required license, you can
-from our website. The free trial includes KeeperPAM full capabilities.
-
-Enable all the  to use the new features.
-
-Download the latest installer:
-
-Follow the step by step guide in the  section of this documentation. A new  is
-available to instantly create a sandbox for testing out a few of the
-connection types.
-
-We recommend setting up a Keeper Gateway using the new . This provides a
-customized Docker Compose file that provides an instant sandbox for testing.
-
 Copy
 
     
@@ -603,57 +553,87 @@ Copy
               ACCEPT_EULA: Y
               GATEWAY_CONFIG: XXXXXXXXXXXX
 
+Download the file called `docker-seccomp.json` and place it in the same folder
+as your Docker Compose file.
+
+####
+
+**Windows**
+
+  * Download the latest installer: [**64-bit Installer**](https://keepersecurity.com/pam/gateway/keeper-gateway_windows_x86_64.exe)
+
+  * You'll be asked to confirm uninstalling the previous Gateway, this is OK
+
+  * Ensure the "Enter one-time access token" selection is **NOT selected**
+
+####
+
+**Linux**
+
+To update an existing Gateway on Linux:
+
 Copy
 
     
     
     curl -fsSL https://keepersecurity.com/pam/install | sudo bash -s --
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+####
 
-# Setup Steps
+Retrieving the Configuration
 
-Accessing the KeeperPAM platform
+If you are replacing an existing Gateway, get the old base64 configuration
+string from: `/etc/keeper-gateway/gateway-config.json` on Linux or
+`C:\ProgramData\KeeperGateway\config\gateway-config.json` on Windows.
 
-[PreviousOverview](/en/keeperpam)[NextQuick Start:
-Sandbox](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
+5
 
-  * Setup Steps
-  * Notes
-  * Feedback 
+###
 
-[start a free trial](https://www.keepersecurity.com/password-manager-free-
-trial-sign-up.html)
+New Customers: Create a new Gateway and Sandbox
 
-[PAM enforcement policies](/en/keeperpam/privileged-access-manager/getting-
-started/enforcement-policies)
+Follow the step by step guide in the [Getting
+Started](/en/keeperpam/privileged-access-manager/getting-started) section of
+this documentation. A new [Quick Start Wizard](/en/keeperpam/privileged-
+access-manager/quick-start-sandbox) is available to instantly create a sandbox
+for testing out a few of the connection types.
 
-[**64-bit Installer**](https://keepersecurity.com/pam/gateway/keeper-
-gateway_windows_x86_64.exe)
+6
 
-[Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+###
 
-[Quick Start Wizard](/en/keeperpam/privileged-access-manager/quick-start-
-sandbox)
+Explore new features
 
-[Quick Start Sandbox](/en/keeperpam/privileged-access-manager/quick-start-
-sandbox)
+  * [Quick Start Sandbox](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
 
-[Connections](/en/keeperpam/privileged-access-manager/connections)
+  * [Connections](/en/keeperpam/privileged-access-manager/connections)
 
-[Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
+  * [Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
 
-[Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-
-browser-isolation)
+  * [Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
 
-[Session Recording & Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
+  * [Session Recording & Playback](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
 
-[SSH Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
+  * [SSH Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
 
-[Discovery](/en/keeperpam/privileged-access-manager/discovery)
+  * [Discovery](/en/keeperpam/privileged-access-manager/discovery)
 
-[Quick Start Sandbox](/en/keeperpam/secrets-manager/quick-start-guide)
+###
+
+Notes
+
+  * PAM Features differ between Linux, Docker and Windows versions of the Keeper Gateway.
+
+  * For a full range of features, use the Docker installation method, or Linux installation method on Rocky Linux or RHEL8.
+
+  * We recommend setting up a Keeper Gateway using the new [Quick Start Sandbox](/en/keeperpam/secrets-manager/quick-start-guide). This provides a customized Docker Compose file that provides an instant sandbox for testing.
+
+###
+
+Feedback
+
+Please email us at **pam@keepersecurity.com** with your feedback and we'll
+quickly assist you with any questions.
 
 [15KBdocker-
 seccomp.json](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-

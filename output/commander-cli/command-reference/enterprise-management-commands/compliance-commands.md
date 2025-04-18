@@ -471,7 +471,7 @@ reference/enterprise-management-commands/creating-and-inviting-
 users)[NextBreachwatch Commands](/en/keeperpam/commander-cli/command-
 reference/enterprise-management-commands/breachwatch-commands)
 
-Last updated 23 days ago
+Last updated 24 days ago
 
 Was this helpful?
 
@@ -542,6 +542,10 @@ minutes as the system pulls in the required data.**
 
 During this time, Commander will display messaging explaining the current
 step.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjzCfUVzEze2IAKuJDhS6%252Fimage.png%3Falt%3Dmedia%26token%3D235eb0c1-407d-4d24-a7dc-d65cca157bac&width=768&dpr=4&quality=100&sign=db5ae4e&sv=2)
 
 Additionally, a manual rebuild of the cache can be performed with the `-r`
 flag. Do this to see recent changes in the compliance data.
@@ -861,7 +865,13 @@ command's supported sub-commands.
 
 The `compliance` command supports the following sub commands:
 
-  *   *   *   * 
+  * [`team-report`](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/compliance-commands#compliance-team-report)
+
+  * [`record-access-report`](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/compliance-commands#compliance-record-access-report)
+
+  * [`summary-reports`](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/compliance-commands#compliance-summary-report) or [`stats`](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/compliance-commands#compliance-summary-report)
+
+  * [`shared-folder-report`](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/compliance-commands#compliance-shared-folder-report)
 
 Refer to the sub command's section for more information.
 
@@ -876,6 +886,10 @@ these shared folders.
 To run the Compliance Team Report, use the following command in Commander:
 
 `compliance team-report`
+
+This report uses the [compliance report cache](/en/keeperpam/commander-
+cli/command-reference/enterprise-management-commands/compliance-
+commands#cache) described above.
 
 The report shows each team that has access to a shared folder, and what access
 it has to that shared folder.
@@ -1038,36 +1052,8 @@ denote it as such.
 See the [Reporting Documentation](/en/keeperpam/commander-cli/command-
 reference/reporting-commands) for other reports available in Commander
 
-or
-
-This report uses the  described above.
-
 [![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
 files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Compliance
 ReportsEnterprise Guide](https://docs.keeper.io/enterprise-guide/compliance-
 reports)
-
-[`team-report`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands/compliance-commands#compliance-team-report)
-
-[`record-access-report`](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands/compliance-commands#compliance-
-record-access-report)
-
-[`summary-reports`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands/compliance-commands#compliance-summary-report)
-
-[`stats`](/en/keeperpam/commander-cli/command-reference/enterprise-management-
-commands/compliance-commands#compliance-summary-report)
-
-[`shared-folder-report`](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands/compliance-commands#compliance-
-shared-folder-report)
-
-[compliance report cache](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands/compliance-commands#cache)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjzCfUVzEze2IAKuJDhS6%252Fimage.png%3Falt%3Dmedia%26token%3D235eb0c1-407d-4d24-a7dc-d65cca157bac&width=768&dpr=4&quality=100&sign=db5ae4e&sv=2)
 

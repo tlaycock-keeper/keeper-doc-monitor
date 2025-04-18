@@ -519,8 +519,9 @@ Administrator, you can even create custom record type templates. Record Types
 define the fields available to a record. They act as a record blueprint, which
 makes it easy to create and manage records for a variety of different uses.
 
-There is a set of  defined by Keeper, these include common types like Login,
-Passport, and SSH Keys.
+There is a set of [standard record types](/en/keeperpam/commander-cli/command-
+reference/record-commands/default-record-types#standard-record-types) defined
+by Keeper, these include common types like Login, Passport, and SSH Keys.
 
 It is also possible to to be used by your organization.
 
@@ -1858,15 +1859,12 @@ databaseCredentials", "fields": [{"type": "text", "value": ["SomeText"],
 `custom` \- custom fields and values can be added to records. See  for more
 information on adding custom fields
 
+[add documentation](/en/keeperpam/commander-cli/command-reference/record-
+commands#add-command-new-record-type)
+
 [ define new record types](/en/keeperpam/commander-cli/command-
 reference/record-commands/record-type-commands#record-type-command)
 
 [commands documentation](/en/keeperpam/commander-cli/command-reference/record-
 commands/record-type-commands#commands)
-
-[standard record types](/en/keeperpam/commander-cli/command-reference/record-
-commands/default-record-types#standard-record-types)
-
-[add documentation](/en/keeperpam/commander-cli/command-reference/record-
-commands#add-command-new-record-type)
 

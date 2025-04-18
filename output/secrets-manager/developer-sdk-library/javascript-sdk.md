@@ -720,10 +720,6 @@ Copy
         const firstRecordPassword = firstRecord.data.fields.find(x => x.type === 'password')
     }
 
-Fields are found by type, for a list of field types see the [Record
-Types](/en/keeperpam/commander-cli/command-reference/record-commands/default-
-record-types#field-types) documentation.
-
 **Retrieve other Fields with Keeper Notation**
 
 Get ValueExample Usage
@@ -1264,11 +1260,9 @@ Prerequisites:
 
   * Created records and record fields must be formatted correctly
 
-    * See the [documentation](/en/keeperpam/commander-cli/command-reference/record-commands/default-record-types#field-types) for expected field formats for each record type
+    *   * TOTP fields accept only URL generated outside of the KSM SDK
 
-  * TOTP fields accept only URL generated outside of the KSM SDK
-
-  * 
+  * After record creation, you can upload file attachments using [uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-sdk#upload-a-file)
 
 Create a RecordCreate Record in Sub-folderLogin Record ExampleCustom Type
 Example
@@ -1754,7 +1748,7 @@ Copy
 library/java-sdk/record-field-classes)[Next.NET SDK](/en/keeperpam/secrets-
 manager/developer-sdk-library/.net-sdk)
 
-Last updated 8 days ago
+Last updated 9 days ago
 
 Was this helpful?
 
@@ -1788,8 +1782,13 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
-After record creation, you can upload file attachments using
+Fields are found by type, for a list of field types see the  documentation.
 
-[uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-
-sdk#upload-a-file)
+See the  for expected field formats for each record type
+
+[Record Types](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types#field-types)
+
+[documentation](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types#field-types)
 

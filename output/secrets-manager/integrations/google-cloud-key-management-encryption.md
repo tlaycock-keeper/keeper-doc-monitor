@@ -463,7 +463,7 @@ Protect Secrets Manager connection details with Google Cloud Key Management
 manager/integrations/gcp-secret-manager)[NextHashicorp
 Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
 
-Last updated 2 days ago
+Last updated 3 days ago
 
 Was this helpful?
 

@@ -460,7 +460,7 @@ web application
 started/pam-resources/pam-directory)[NextPAM User](/en/keeperpam/privileged-
 access-manager/getting-started/pam-resources/pam-user)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

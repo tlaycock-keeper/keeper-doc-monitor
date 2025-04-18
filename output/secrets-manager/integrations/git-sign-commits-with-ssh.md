@@ -714,7 +714,7 @@ the Keeper SSH Agent.
 manager/integrations/entrust-hsm)[NextGitHub Actions](/en/keeperpam/secrets-
 manager/integrations/github-actions)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

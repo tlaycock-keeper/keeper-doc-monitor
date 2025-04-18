@@ -564,7 +564,7 @@ installation-setup/installation-on-linux)[Next.NET Developer
 Setup](/en/keeperpam/commander-cli/commander-installation-setup/net-developer-
 sdk)
 
-Last updated 8 hours ago
+Last updated 1 day ago
 
 Was this helpful?
 

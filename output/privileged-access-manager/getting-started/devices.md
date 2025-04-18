@@ -428,6 +428,32 @@ manager/getting-started/devices?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * What's a Device?
+  * Creating a Device
+  * Device Initialization
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=ymuC24xXELvr6ZoC4PNi&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+# Devices
+
+Keeper Secrets Manager Devices with KeeperPAM
+
+[PreviousApplications](/en/keeperpam/privileged-access-manager/getting-
+started/applications)[NextGateways](/en/keeperpam/privileged-access-
+manager/getting-started/gateways)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -458,32 +484,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-  * What's a Device?
-  * Creating a Device
-  * Device Initialization
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=ymuC24xXELvr6ZoC4PNi&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-
-# Devices
-
-Keeper Secrets Manager Devices with KeeperPAM
-
-[PreviousApplications](/en/keeperpam/privileged-access-manager/getting-
-started/applications)[NextGateways](/en/keeperpam/privileged-access-
-manager/getting-started/gateways)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 ###
 
 What's a Device?
@@ -497,7 +497,7 @@ identifier so that it can be tightly controlled and managed. Devices
 authenticate and decrypt data using a API and encryption model as defined in
 the Keeper Secrets Manager Security & Encryption model page.
 
-  * 
+  * See the [Security & Encryption Model](/en/keeperpam/secrets-manager/about/security-encryption-model) of a Device
 
 ###
 
@@ -530,7 +530,7 @@ One additional feature of this method is that you can optionally lock down API
 requests to a specific IP address. The IP address allowed to transact is based
 on the IP as seen by Keeper's cloud infrastructure.
 
-  * 
+  * [One-Time Access Token details](/en/keeperpam/secrets-manager/about/one-time-token)
 
 ####
 
@@ -543,7 +543,7 @@ the CI/CD integration methods use this pre-built configuration file.
 For more information about the contents of a Keeper Secrets Manager
 configuration:
 
-  * 
+  * [Secrets Manager Configuration details](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
 ####
 
@@ -599,23 +599,7 @@ Copy
     
     secrets-manager client add --app "My Infrastructure App" --unlock-ip
 
-  * 
-
-See the  of a Device
-
-See more details on the
-
-[Security & Encryption Model](/en/keeperpam/secrets-manager/about/security-
-encryption-model)
-
-[One-Time Access Token details](/en/keeperpam/secrets-manager/about/one-time-
-token)
-
-[Secrets Manager Configuration details](/en/keeperpam/secrets-
-manager/about/secrets-manager-configuration)
-
-[secrets-manager Commander CLI command](/en/keeperpam/commander-cli/command-
-reference/secrets-manager-commands)
+  * See more details on the [secrets-manager Commander CLI command](/en/keeperpam/commander-cli/command-reference/secrets-manager-commands)
 
 Create a Device
 

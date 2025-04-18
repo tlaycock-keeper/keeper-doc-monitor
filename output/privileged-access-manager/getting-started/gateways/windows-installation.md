@@ -463,7 +463,7 @@ started/gateways/linux-installation)[NextAuto
 Updater](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/auto-updater)
 
-Last updated 24 days ago
+Last updated 25 days ago
 
 Was this helpful?
 
@@ -557,15 +557,11 @@ Setup Options
 
   * Install Windows service - Installs the gateway as a Windows service.
 
-    * Use service account - Use the [specified service account](/en/keeperpam/privileged-access-manager/getting-started/gateways/windows-installation#specifying-the-keeper-gateway-service-account-optional), otherwise the account installing the gateway will be used.
-
-    * Start Windows service - Start the Keeper Gateway service immediately after installation
+    *     * Start Windows service - Start the Keeper Gateway service immediately after installation
 
     * Enable automatic updates
 
-  * Turn on debug logging - Enable [verbose logging](/en/keeperpam/privileged-access-manager/getting-started/gateways/windows-installation#verbose-logging) on the gateway log files. NOT recommended for production environments. Only use this when debugging with Keeper support. 
-
-  * Remove Keeper Gateway configuration and logs from previous installations
+  *   * Remove Keeper Gateway configuration and logs from previous installations
 
 ####
 
@@ -767,6 +763,19 @@ To uninstall the service:
 
   * If desired, delete the private configuration .json file
 
+Use service account - Use the , otherwise the account installing the gateway
+will be used.
+
+Turn on debug logging - Enable  on the gateway log files. NOT recommended for
+production environments. Only use this when debugging with Keeper support.
+
+[specified service account](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/windows-installation#specifying-the-keeper-gateway-service-
+account-optional)
+
+[verbose logging](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/windows-installation#verbose-logging)
+
 ###
 
 Network Configuration
@@ -778,27 +787,6 @@ Destination
 Port Needed
 
 More Info
-
-The Gateway preserves zero knowledge by performing all encryption and
-decryption of data locally. Keeper Secrets Manager APIs are used to
-communicate with the Keeper cloud.
-
-###
-
-Checksum Verification
-
-Keeper Gateway SHA256 hashes for the latest version are published at the below
-location:
-
-Calculating and verifying the checksum:
-
-####
-
-Linux
-
-####
-
-PowerShell
 
 Keeper Cloud (keepersecurity.[com|eu|com.au|ca|us|jp)
 
@@ -819,12 +807,33 @@ Outbound access to TCP and UDP ports 49152 through 65535
 
 Needed to establish outbound access over the designated port ranges
 
+The Gateway preserves zero knowledge by performing all encryption and
+decryption of data locally. Keeper Secrets Manager APIs are used to
+communicate with the Keeper cloud.
+
+###
+
+Checksum Verification
+
+Keeper Gateway SHA256 hashes for the latest version are published at the below
+location:
+
+Calculating and verifying the checksum:
+
+####
+
+Linux
+
 Copy
 
     
     
     sha256sum keeper-gateway_linux_x86_64
     cat keeper-gateway_X.X.X_SHA256SUMS | grep keeper-gateway_linux_x86_64
+
+####
+
+PowerShell
 
 Copy
 

@@ -645,6 +645,9 @@ to the record, or supplied to the rotation command
 
 cmdr:rules
 
+(Optional) [password complexity rules](https://github.com/Keeper-
+Security/Commander/tree/master/keepercommander/plugins/password_rules.md)
+
 cmdr:aws_profile
 
 (Optional) AWS profile to use to login to AWS with
@@ -693,9 +696,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-(Optional)
-
-[password complexity rules](https://github.com/Keeper-
-Security/Commander/tree/master/keepercommander/plugins/password_rules.md)
 

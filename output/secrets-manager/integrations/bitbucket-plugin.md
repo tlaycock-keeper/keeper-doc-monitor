@@ -456,43 +456,11 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MkdGaFtQU8FA0WakeZt&only=yes&limit=100)
 Keeper Secrets Manager integration into Bitbucket for dynamic secrets
 retrieval
 
-[PreviousAzure Key Vault Encryption](/en/keeperpam/secrets-
-manager/integrations/azure-key-vault-ksm)[NextDocker
-Image](/en/keeperpam/secrets-manager/integrations/docker-image)
-
-Last updated 3 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG_XIkldQnp9MV2kj%252F-MkdGfsG5Xki1qYqnKe6%252Fbitbucket-
+plugin-
+header.jpg%3Falt%3Dmedia%26token%3Da1d0792b-3951-44f1-a7be-657b00a543f2&width=768&dpr=4&quality=100&sign=1b209bc5&sv=2)
 
 ##
 
@@ -504,6 +472,9 @@ Features
 
   * Copy secure files from the Keeper Vault
 
+For a complete list of Keeper Secrets Manager features see the [Overview
+](/en/keeperpam/secrets-manager/overview)
+
 ##
 
 Prerequisites
@@ -511,11 +482,19 @@ Prerequisites
 This page documents the Secrets Manager BitBucket integration. In order to
 utilize this integration, you will need:
 
-  *     * Secrets Manager addon enabled for your Keeper account
+  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
+
+    * Secrets Manager addon enabled for your Keeper account
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   *     * The BitBucket integration accepts JSON and Base64 format configurations
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+
+    * The BitBucket integration accepts JSON and Base64 format configurations
 
 ##
 
@@ -547,6 +526,10 @@ That value can be added to your BitBucket **Repository variables** , under
 **Repository settings** menu, as a secure secret with the name **KSM_CONFIG**.
 This will allo the configuration to be available to the Keeper Secrets Manager
 pipe as a variable.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXA3sVeoGMCD2PZeB4Rij%252FScreen%2520Shot%25202021-10-19%2520at%25202.39.08%2520PM.png%3Falt%3Dmedia%26token%3Dd3b61789-85a8-4403-ac85-db999a44ab4f&width=768&dpr=4&quality=100&sign=f0f0a0f4&sv=2)
 
 ###
 
@@ -590,6 +573,11 @@ Copy
     
             script:
               - pipe: keepersecurity/keeper-secrets-manager-pipe:<tag>
+
+The pipe requires you to choose a git tag for the version. The
+[README.md](https://bitbucket.org/keepersecurity/keeper-secrets-manager-
+pipe/src/master/README.md) will always have the latest tag in the YAML
+Definition.
 
 ###
 
@@ -651,6 +639,11 @@ If not set, no clean up file will be created.
 ##
 
 Retrieving Secrets
+
+The SECRETS variable in the YAML contains a list of [Keeper
+Notation](/en/keeperpam/secrets-manager/about/keeper-notation) and where the
+value should be stored. Secrets can be stored as an environmental variable or
+in a file.
 
 The default destination for a variable is a environmental variable. The prefix
 **env:** can be added to the front of the environmental variable name, but is
@@ -750,10 +743,18 @@ Copy
     Token Expires On: 2021-10-19 15:31:31
     App Access Expires on: Never
 
+For more options creating a configuration, see the [configuration
+documentation](/en/keeperpam/secrets-manager/about/secrets-manager-
+configuration#creating-a-secrets-manager-configuration)
+
 The **Initialized Config:** Base64 string needs to be cut-n-pasted into your
 **Repository variables**. In this example the name of the variable is
 **KSM_CONFIG**. A private Docker Hub username and password are also added to
 the **Repository variables**.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FECT7H9rIz94bdhYKiPHI%252FScreen%2520Shot%25202021-11-01%2520at%252010.49.46%2520AM.png%3Falt%3Dmedia%26token%3D56b2b0b9-5274-45eb-95e6-d807642e387a&width=768&dpr=4&quality=100&sign=8ac9a1bc&sv=2)
 
 Next a `bitbucket-pipelines.yml` file needs to be added to the repository.
 
@@ -836,6 +837,10 @@ Copy
     Token Expires On: 2021-10-19 15:31:31
     App Access Expires on: Never
 
+For more options creating a configuration, see the [configuration
+documentation](/en/keeperpam/secrets-manager/about/secrets-manager-
+configuration#creating-a-secrets-manager-configuration)
+
 The **Initialized Config:** Base64 string needs to be cut-n-pasted into your
 **Repository variables**. In this example the name of the variable is
 **KSM_CONFIG**.
@@ -889,50 +894,43 @@ bucket. The variables for the aws-s3-deploy pipe are set using the
 environmental variables provided by the Keeper Secrets Manager pipe's secret
 file.
 
-For a complete list of Keeper Secrets Manager features see the
+[PreviousAzure Key Vault Encryption](/en/keeperpam/secrets-
+manager/integrations/azure-key-vault-ksm)[NextDocker
+Image](/en/keeperpam/secrets-manager/integrations/docker-image)
 
-Keeper Secrets Manager access (See the  for more details)
+Last updated 3 months ago
 
-A Keeper  with secrets shared to it
+Was this helpful?
 
-See the  for instructions on creating an Application
+#### Company
 
-An initialized Keeper
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-The pipe requires you to choose a git tag for the version. The  will always
-have the latest tag in the YAML Definition.
+#### Support
 
-The SECRETS variable in the YAML contains a list of  and where the value
-should be stored. Secrets can be stored as an environmental variable or in a
-file.
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-For more options creating a configuration, see the
+#### Solutions
 
-For more options creating a configuration, see the
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-[Overview ](/en/keeperpam/secrets-manager/overview)
+#### Pricing
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
-[Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration)
-
-[README.md](https://bitbucket.org/keepersecurity/keeper-secrets-manager-
-pipe/src/master/README.md)
-
-[Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-notation)
-
-[configuration documentation](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration#creating-a-secrets-manager-configuration)
-
-[configuration documentation](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration#creating-a-secrets-manager-configuration)
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
+© 2025 Keeper Security, Inc.
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -940,19 +938,5 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHxpNKxYvE
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FECT7H9rIz94bdhYKiPHI%252FScreen%2520Shot%25202021-11-01%2520at%252010.49.46%2520AM.png%3Falt%3Dmedia%26token%3D56b2b0b9-5274-45eb-95e6-d807642e387a&width=768&dpr=4&quality=100&sign=8ac9a1bc&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG_XIkldQnp9MV2kj%252F-MkdGfsG5Xki1qYqnKe6%252Fbitbucket-
-plugin-
-header.jpg%3Falt%3Dmedia%26token%3Da1d0792b-3951-44f1-a7be-657b00a543f2&width=768&dpr=4&quality=100&sign=1b209bc5&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtBve4dEQOb4qlm0Tw8pI%252FScreen%2520Shot%25202021-11-01%2520at%25204.19.38%2520PM.png%3Falt%3Dmedia%26token%3D1c223504-041f-48bb-8669-cc1206b97f82&width=768&dpr=4&quality=100&sign=473458a1&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXA3sVeoGMCD2PZeB4Rij%252FScreen%2520Shot%25202021-10-19%2520at%25202.39.08%2520PM.png%3Falt%3Dmedia%26token%3Dd3b61789-85a8-4403-ac85-db999a44ab4f&width=768&dpr=4&quality=100&sign=f0f0a0f4&sv=2)
 

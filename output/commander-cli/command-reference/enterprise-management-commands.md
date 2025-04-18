@@ -2164,11 +2164,7 @@ Copy
 
 Configuring SCIM source for push
 
-  * [Common configuration steps](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/scim-push-configuration#common-for-all-sources)
-
-  * [Google Workspace](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/scim-push-configuration#google-workspace)
-
-  * [Active Directory](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/scim-push-configuration#active-directory-configuration)
+  *   *   * 
 
 ###
 
@@ -2459,6 +2455,16 @@ current template if file does not exist. dash (-) use stdout. See  section
 below.
 
 To invite new users to an enterprise see the
+
+[Common configuration steps](/en/keeperpam/commander-cli/command-
+reference/enterprise-management-commands/scim-push-configuration#common-for-
+all-sources)
+
+[Google Workspace](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands/scim-push-configuration#google-workspace)
+
+[Active Directory](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands/scim-push-configuration#active-directory-configuration)
 
 [Custom Emails](/en/keeperpam/commander-cli/command-reference/enterprise-
 management-commands#custom-emails)

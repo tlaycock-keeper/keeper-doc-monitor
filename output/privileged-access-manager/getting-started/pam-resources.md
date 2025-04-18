@@ -448,45 +448,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=T0G0fGue5d2tTiFHAQOw&only=yes&limit=100)
 Guide for using PAM Resource Records in the Keeper Vault for privileged access
 functionality.
 
-[PreviousLocal Environment Setup](/en/keeperpam/privileged-access-
-manager/getting-started/pam-configuration/local-environment-setup)[NextPAM
-Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
-Last updated 2 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 Overview
@@ -537,10 +498,67 @@ Creating a PAM Record
 From the Vault UI, click on Create New and select either Rotation, Tunnel or
 Connection.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtnIDbstjLAfq2ECqq9HB%252FScreenshot%25202024-12-28%2520at%25203.01.48%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3De63d20a1-aa96-4fbd-89ed-d0fdd455a830&width=768&dpr=4&quality=100&sign=28fcb001&sv=2)
+
+Create a new PAM Resource Record
+
 Alternatively, you can right-click on a folder and select Rotation, Tunnel or
 Connection.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FMeo2Pl0F5xDl8iY2NQeK%252FScreenshot%25202024-12-28%2520at%25203.05.53%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D811e735e-6692-4f26-88a7-4e4e02bd2ec4&width=768&dpr=4&quality=100&sign=a57a48e6&sv=2)
+
+Right-click to create PAM Resource Records
+
 The "Target" selection will determine what type of record will be created.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNqfGO32FajbD2yVagIb5%252FScreenshot%25202024-12-28%2520at%25203.01.06%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Df2ba3ce4-b709-403a-824e-37072e227dc8&width=768&dpr=4&quality=100&sign=ca837904&sv=2)
+
+Selecting a Target
+
+[PreviousLocal Environment Setup](/en/keeperpam/privileged-access-
+manager/getting-started/pam-configuration/local-environment-setup)[NextPAM
+Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
+
+Last updated 2 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 [PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-machine)
@@ -556,22 +574,4 @@ started/pam-resources/pam-remote-browser)
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
-
-Create a new PAM Resource Record
-
-Right-click to create PAM Resource Records
-
-Selecting a Target
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtnIDbstjLAfq2ECqq9HB%252FScreenshot%25202024-12-28%2520at%25203.01.48%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3De63d20a1-aa96-4fbd-89ed-d0fdd455a830&width=768&dpr=4&quality=100&sign=28fcb001&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FMeo2Pl0F5xDl8iY2NQeK%252FScreenshot%25202024-12-28%2520at%25203.05.53%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D811e735e-6692-4f26-88a7-4e4e02bd2ec4&width=768&dpr=4&quality=100&sign=a57a48e6&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNqfGO32FajbD2yVagIb5%252FScreenshot%25202024-12-28%2520at%25203.01.06%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Df2ba3ce4-b709-403a-824e-37072e227dc8&width=768&dpr=4&quality=100&sign=ca837904&sv=2)
 

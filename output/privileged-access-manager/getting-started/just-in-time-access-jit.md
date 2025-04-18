@@ -757,7 +757,7 @@ contact your Keeper Security account manager or email
 manager/getting-started/sharing-and-access-control)[NextPassword
 Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
 
-Last updated 8 days ago
+Last updated 9 days ago
 
 Was this helpful?
 

@@ -603,10 +603,6 @@ Administrative Credential Record
 
 Linked PAM User credential used for connection and administrative operations
 
-**Required** Visit this [section](/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-machine/example-azure-windows-
-vm#administrative-credential-record) for more details
-
 Protocol
 
 Native protocol used for connecting from the Gateway to the target
@@ -617,18 +613,10 @@ Session Recording
 
 Options for recording sessions and typescripts
 
-See [session recording](/en/keeperpam/privileged-access-manager/session-
-recording-and-playback)
-
 Connection Parameters
 
 Connection-specific protocol settings which can vary based on the protocol
 type
-
-See this [section](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/rdp-connections) for RDP protocol
-settings We recommend specifying the **Connection Port** at a minimum. E.g.
-"3389" for RDP.
 
 ###
 
@@ -703,4 +691,21 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+**Required** Visit this  for more details
+
+See
+
+See this  for RDP protocol settings We recommend specifying the **Connection
+Port** at a minimum. E.g. "3389" for RDP.
+
+[session recording](/en/keeperpam/privileged-access-manager/session-recording-
+and-playback)
+
+[section](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/rdp-connections)
+
+[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine/example-azure-windows-vm#administrative-credential-
+record)
 
