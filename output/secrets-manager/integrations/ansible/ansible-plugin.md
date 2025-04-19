@@ -56,7 +56,7 @@ manager/integrations/ansible/ansible-plugin?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
 manager/integrations/ansible/ansible-plugin?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -328,7 +328,7 @@ manager/integrations/ansible/ansible-plugin?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -471,10 +471,43 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-Mb8EplHSWmubOCYOX0_&only=yes&limit=100)
 A collection of Ansible plugins that interact with your Keeper account and can
 be used in your automations.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG-
-_u0H2AJBEVfeYf%252F-MkdG4aCrzLanoVIXeNo%252Fansible-plugin-
-header.jpg%3Falt%3Dmedia%26token%3D70c9a583-5939-48cc-990b-65c60094663a&width=768&dpr=4&quality=100&sign=e9ef641e&sv=2)
+[PreviousAnsible](/en/keeperpam/secrets-
+manager/integrations/ansible)[NextAnsible Tower](/en/keeperpam/secrets-
+manager/integrations/ansible/ansible-tower)
+
+Last updated 3 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -616,20 +649,9 @@ Copy
 
 Generate a Config File
 
-Prior to proceeding with this guide, make sure you meet all the
-[prerequisites](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
-plugin#prerequisites) and have the following:
-
   * KSM Application and it's [One-Time Access Token](/en/keeperpam/secrets-manager/quick-start-guide#create-a-secrets-manager-client-device-1)
 
-  * [Keeper Ansible module](/en/keeperpam/secrets-manager/integrations/ansible/ansible-plugin#install-keeper-ansible-module) installed
-
-In order to use the Ansible plugin for Keeper Secrets Manager, a [Keeper
-config file](/en/keeperpam/secrets-manager/about/secrets-manager-
-configuration) is required. Once you have a config file, the configuration
-values can be placed into the [Ansible variable](/en/keeperpam/secrets-
-manager/integrations/ansible/ansible-plugin#ansible-variables) files. These
-variable files can be encrypted with Ansible vault.
+  * 
 
 Using the Keeper Ansible module and the generated One-Time Access Token,
 generate a Configuration file:
@@ -870,11 +892,6 @@ For all the plugins, the following arguments are used. Either the `uid` or
   * `file` \- Retrieve the file with the specified name from the record.
 
 The `uid` value is required, and you need either `field` or `file` populated.
-
-To find out what fields and custom fields are available for a specific vault
-secret, use the Keeper Secrets Manager CLI "`ksm secret get -u XXXX`" command.
-More info [here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/secret-command#secret-command).
 
 The plugin example are shown with the short plugin names. If you installed the
 collection via Ansible Galaxy, you will need to use the longer plugin name or
@@ -1676,7 +1693,7 @@ Important Notes
 
   * If the plugin was installed by Ansible Galaxy the longer name is required for the lookup plugin (i.e. keepersecurity.keeper_secrets_manager.keeper). Listing collections appears not to work with lookup plugins.
 
-  * To find out what fields and custom fields are available for a specific vault secret, use the Keeper Secrets Manager CLI "`ksm secret get -u XXXX`" command. More info [here](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface/secret-command#secret-command).
+  * 
 
 ###
 
@@ -1904,12 +1921,6 @@ ANSIBLE_VAULT_PASSWORD_FILE environment variable or the vault_password_file in
 the ansible.cfg field to specify an executable file that will return a
 password.
 
-A executable shell script can be created that returns the password using the
-"ksm" secret notation ([learn more](/en/keeperpam/secrets-manager/secrets-
-manager-command-line-interface/secret-command#notation) about ksm secret
-notation). For example, the below script will output a specific secret
-password for the given Record UID:
-
 Copy
 
     
@@ -1984,41 +1995,49 @@ Copy
     An exception occurred during task execution. To see the full traceback, use -vvv. The error was: Exception: Keeper Ansible error: There is no config file and the Ansible variable contain no config keys. Will not be able to connect to the Keeper server.
     fatal: [localhost]: FAILED! => {"msg": "Unexpected failure during module execution.", "stdout": ""}
 
-[PreviousAnsible](/en/keeperpam/secrets-
-manager/integrations/ansible)[NextAnsible Tower](/en/keeperpam/secrets-
-manager/integrations/ansible/ansible-tower)
+Prior to proceeding with this guide, make sure you meet all the  and have the
+following:
 
-Last updated 3 months ago
+installed
 
-Was this helpful?
+In order to use the Ansible plugin for Keeper Secrets Manager, a [Keeper
+config file](/en/keeperpam/secrets-manager/about/secrets-manager-
+configuration) is required. Once you have a config file, the configuration
+values can be placed into the  files. These variable files can be encrypted
+with Ansible vault.
 
-#### Company
+To find out what fields and custom fields are available for a specific vault
+secret, use the Keeper Secrets Manager CLI "`ksm secret get -u XXXX`" command.
+More info .
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+To find out what fields and custom fields are available for a specific vault
+secret, use the Keeper Secrets Manager CLI "`ksm secret get -u XXXX`" command.
+More info .
 
-#### Support
+A executable shell script can be created that returns the password using the
+"ksm" secret notation ( about ksm secret notation). For example, the below
+script will output a specific secret password for the given Record UID:
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+[prerequisites](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
+plugin#prerequisites)
 
-#### Solutions
+[Keeper Ansible module](/en/keeperpam/secrets-
+manager/integrations/ansible/ansible-plugin#install-keeper-ansible-module)
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+[Ansible variable](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
+plugin#ansible-variables)
 
-#### Pricing
+[here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/secret-command#secret-command)
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+[here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/secret-command#secret-command)
 
-© 2025 Keeper Security, Inc.
+[learn more](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/secret-command#notation)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG-
+_u0H2AJBEVfeYf%252F-MkdG4aCrzLanoVIXeNo%252Fansible-plugin-
+header.jpg%3Falt%3Dmedia%26token%3D70c9a583-5939-48cc-990b-65c60094663a&width=768&dpr=4&quality=100&sign=e9ef641e&sv=2)
 

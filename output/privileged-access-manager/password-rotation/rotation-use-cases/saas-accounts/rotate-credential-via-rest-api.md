@@ -70,7 +70,7 @@ via-rest-api?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
 bridge/privileged-access-manager/password-rotation/rotation-use-cases/saas-
 accounts/rotate-credential-via-rest-api?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -342,7 +342,7 @@ accounts/rotate-credential-via-rest-api?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -561,9 +561,7 @@ be rotated.
 
 Step 3: Add PAM Script
 
-  1. Attach the below [Python script](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/rotate-credential-via-rest-api#python-script) that will perform the password rotation. The script has additional comments inside that describe each line.
-
-  2. Add the "Rotation Credential" record, which is the record created in Step 1 containing the API Token and URL.
+  1.   2. Add the "Rotation Credential" record, which is the record created in Step 1 containing the API Token and URL.
 
   3. Enable No-Operation (NOOP) atomic execution:
 
@@ -718,6 +716,13 @@ Copy
         # Print the response for debugging purposes
         print(f"# \n# Response from the API:")
         print(f"# {response}")
+
+Attach the below  that will perform the password rotation. The script has
+additional comments inside that describe each line.
+
+[Python script](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-accounts/rotate-credential-via-rest-
+api#python-script)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

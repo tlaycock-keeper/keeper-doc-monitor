@@ -54,7 +54,7 @@ sdk-library/java-sdk?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-manager/developer-sdk-
 library/java-sdk?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -326,7 +326,7 @@ library/java-sdk?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -855,12 +855,6 @@ Copy
     //get the password from the first record
     KeeperRecordField pwd = firstRecord.getData().getField(Password.class)
 
-To get a field value, you will need to cast the return to the
-[class](/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk/record-
-field-classes) of the corresponding field type. For a list of field types see
-the [Record Types](/en/keeperpam/commander-cli/command-reference/record-
-commands/default-record-types#field-types) page.
-
 **Keeper Notation**
 
 Get ValueExample Usage
@@ -1157,12 +1151,6 @@ Copy
     
     // save changes
     SecretsManager.updateSecret(options, recordToUpdate);
-
-Each record field type is represented by a class. Cast the field to the
-corresponding class in order to correctly access the field's value. Check the
-[Record Types](/en/keeperpam/commander-cli/command-reference/record-
-commands/default-record-types#field-types) documentation for a list of field
-types.
 
 Fields can have multiple values, which is accessed in a List. In this example
 we are updating the login field, which only accepts one value, so we update
@@ -1543,11 +1531,9 @@ Prerequisites:
 
   * Created records and record fields must be formatted correctly
 
-    * See the [documentation](/en/keeperpam/commander-cli/command-reference/record-commands/default-record-types#field-types) for expected field formats for each record type
+    *   * TOTP fields accept only URL generated outside of the KSM SDK
 
-  * TOTP fields accept only URL generated outside of the KSM SDK
-
-  * After record creation, you can upload file attachments using [uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk#upload-a-file)
+  * 
 
 Create a RecordCreate Record in Sub-folderLogin Record ExampleCustom Type
 Example
@@ -2103,4 +2089,29 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+To get a field value, you will need to cast the return to the
+[class](/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk/record-
+field-classes) of the corresponding field type. For a list of field types see
+the  page.
+
+Each record field type is represented by a class. Cast the field to the
+corresponding class in order to correctly access the field's value. Check the
+documentation for a list of field types.
+
+See the  for expected field formats for each record type
+
+After record creation, you can upload file attachments using
+
+[uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/java-
+sdk#upload-a-file)
+
+[Record Types](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types#field-types)
+
+[Record Types](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types#field-types)
+
+[documentation](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types#field-types)
 

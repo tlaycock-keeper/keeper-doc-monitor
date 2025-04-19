@@ -56,7 +56,7 @@ manager/integrations/oracle-key-vault?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
 manager/integrations/oracle-key-vault?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -328,7 +328,7 @@ manager/integrations/oracle-key-vault?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -449,7 +449,7 @@ PDF](/en/keeperpam/~gitbook/pdf?page=5cG5iwNkVeQ0xhQzvy9l&only=yes&limit=100)
   1. [Secrets Manager](/en/keeperpam/secrets-manager)
   2. [Integrations](/en/keeperpam/secrets-manager/integrations)
 
-# Oracle Key Vault
+# Oracle Key Vault Encryption
 
 Protect Secrets Manager connection details with Oracle Key Vault
 
@@ -768,9 +768,9 @@ Copy
     		String vaultId = "<OCI VAULT ID>";
     		String keyId = "<OCI KEY ID>";
     		String keyVersionId = "<OCI KEY VERSION>";
-    		String configFileLocation = "<KMS CONFIG FILE LOCATION>";
+    		String configFileLocation = "<KSM CONFIG FILE LOCATION>";
     		String profile = "<OCI CONFIG PROFILE EX: DEFAULT>"; // name of your profile
-    		String oneTimeToken = "<Keeper Ont Time Token>";
+    		String oneTimeToken = "<Keeper One Time Token>";
     		String managementEndpoint =  "https://<>-management.kms.<oracle_cloud_region>.oraclecloud.com";
     		Region region = Region.<cloud_region>;
     		Security.addProvider(new BouncyCastleFipsProvider());

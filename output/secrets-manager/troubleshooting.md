@@ -56,7 +56,7 @@ manager/troubleshooting?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
 manager/troubleshooting?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -328,7 +328,7 @@ manager/troubleshooting?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -709,6 +709,10 @@ The convert command can use patterns to find all relevant records, can
 recursively apply the conversion to all sub-folders, and supports all record
 types.
 
+For more information on using the `convert` command, see the [Commander
+documentation.](/en/keeperpam/commander-cli/command-reference/record-
+commands/record-type-commands#convert-command)
+
 ##
 
 Throttling
@@ -747,11 +751,6 @@ team at commander@keepersecurity.com
 
 Typed records can be created in by clicking "Create New" in the vault, or
 using the  in Commander.
-
-For more information on using the `convert` command, see the
-
-[Commander documentation.](/en/keeperpam/commander-cli/command-
-reference/record-commands/record-type-commands#convert-command)
 
 [add command](/en/keeperpam/commander-cli/command-reference/record-
 commands#add-command-record-types)

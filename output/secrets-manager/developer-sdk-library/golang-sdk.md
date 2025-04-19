@@ -56,7 +56,7 @@ sdk-library/golang-sdk?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-manager/developer-sdk-
 library/golang-sdk?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -328,7 +328,7 @@ library/golang-sdk?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -462,6 +462,44 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MhELBhujHGGC0H7Z2yB&only=yes&limit=100)
 
 Detailed Go SDK docs for Keeper Secrets Manager
 
+[Previous.NET SDK](/en/keeperpam/secrets-manager/developer-sdk-library/.net-
+sdk)[NextRecord Field Classes](/en/keeperpam/secrets-manager/developer-sdk-
+library/golang-sdk/record-field-classes)
+
+Last updated 3 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ##
 
 Download and Installation
@@ -470,9 +508,7 @@ Download and Installation
 
 Install from GitHub
 
-Find the latest Go SDK release at: <https://github.com/Keeper-
-Security/secrets-manager-go>[](https://github.com/Keeper-Security/secrets-
-manager-go)
+Find the latest Go SDK release at:
 
 Copy
 
@@ -484,8 +520,7 @@ Copy
 
 Source Code
 
-Find the Go source code in the [GitHub repository](https://github.com/keeper-
-security/secrets-manager-go)
+Find the Go source code in the
 
 ##
 
@@ -779,10 +814,6 @@ Copy
     			println("Successfully retrieved field value using notation")
     		}
     	}
-
-See [Keeper Notation documentation](/en/keeperpam/secrets-
-manager/about/keeper-notation) to learn about Keeper Notation format and
-capabilities
 
 Parameter
 
@@ -1759,45 +1790,9 @@ Copy
     	stats, err := sm.DeleteFolder([]string{"[FOLDER_UID1]", "[FOLDER_UID2]"}, true)
     }
 
-[Previous.NET SDK](/en/keeperpam/secrets-manager/developer-sdk-library/.net-
-sdk)[NextRecord Field Classes](/en/keeperpam/secrets-manager/developer-sdk-
-library/golang-sdk/record-field-classes)
-
-Last updated 3 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 Fields are found by type, for a list of field types see the  documentation.
+
+See  to learn about Keeper Notation format and capabilities
 
 Each record field type is represented by a class. Cast the field to the
 corresponding class in order to correctly access the field's value. Check the
@@ -1806,6 +1801,14 @@ documentation for a list of field types.
 See the  for expected field formats for each record type
 
 After record creation, you can upload file attachments using
+
+<https://github.com/Keeper-Security/secrets-manager-
+go>[](https://github.com/Keeper-Security/secrets-manager-go)
+
+[GitHub repository](https://github.com/keeper-security/secrets-manager-go)
+
+[Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
+notation)
 
 [Record Types](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)

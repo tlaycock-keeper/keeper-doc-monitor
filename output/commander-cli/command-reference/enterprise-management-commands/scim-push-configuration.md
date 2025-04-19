@@ -70,7 +70,7 @@ configuration?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
 bridge/commander-cli/command-reference/enterprise-management-commands/scim-
 push-configuration?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -342,7 +342,7 @@ push-configuration?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -644,12 +644,6 @@ Google #3
 
 File attachment with Google Service Account credentials
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6DJsI6QFbIhARs3Tj7Zp%252FScreen%2520Shot%25202023-06-20%2520at%252010.48.24%2520AM.png%3Falt%3Dmedia%26token%3D50e318aa-556c-42ad-b867-521b2204191d&width=768&dpr=4&quality=100&sign=fed024e2&sv=2)
-
-Record in Keeper containing the Google Cloud service account information
-
 ###
 
 Pushing Provisioning Data
@@ -683,13 +677,6 @@ Automatic Provisioning of Google Workspace
 Keeper has created a Google Cloud Function to automatically perform
 provisioning of Google Workspace users and teams. The step by step
 instructions can be found here:
-
-[![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
-files/o/spaces%2F-MB_i6vKdtG6Z2n6zWgJ%2Favatar-1597678109631.png?generation=1597678109861766&alt=media)Google
-Workspace User and Group Provisioning with Cloud FunctionSSO Connect
-Cloud](https://docs.keeper.io/sso-connect-cloud/identity-provider-
-setup/g-suite-keeper/google-workspace-user-and-group-provisioning-with-cloud-
-function)
 
 ##
 
@@ -766,6 +753,19 @@ Copy
     
     scim push <SCIM ID> --source=ad --record=<RECORD UID>
 
+[![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
+files/o/spaces%2F-MB_i6vKdtG6Z2n6zWgJ%2Favatar-1597678109631.png?generation=1597678109861766&alt=media)Google
+Workspace User and Group Provisioning with Cloud FunctionSSO Connect
+Cloud](https://docs.keeper.io/sso-connect-cloud/identity-provider-
+setup/g-suite-keeper/google-workspace-user-and-group-provisioning-with-cloud-
+function)
+
 [scim push](/en/keeperpam/commander-cli/command-reference/enterprise-
 management-commands#scim-command)
+
+Record in Keeper containing the Google Cloud service account information
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6DJsI6QFbIhARs3Tj7Zp%252FScreen%2520Shot%25202023-06-20%2520at%252010.48.24%2520AM.png%3Falt%3Dmedia%26token%3D50e318aa-556c-42ad-b867-521b2204191d&width=768&dpr=4&quality=100&sign=fed024e2&sv=2)
 

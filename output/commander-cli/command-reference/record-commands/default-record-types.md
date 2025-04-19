@@ -56,7 +56,7 @@ reference/record-commands/default-record-types?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/command-
 reference/record-commands/default-record-types?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -328,7 +328,7 @@ reference/record-commands/default-record-types?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -471,44 +471,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-Mctt87HMlrTchW2b5n3&only=yes&limit=100)
 
 Description and examples for using and managing Record Types
 
-[PreviousRecord Type Commands](/en/keeperpam/commander-cli/command-
-reference/record-commands/record-type-commands)[NextSharing
-Commands](/en/keeperpam/commander-cli/command-reference/sharing-commands)
-
-Last updated 3 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 Overview
@@ -523,9 +485,13 @@ There is a set of [standard record types](/en/keeperpam/commander-cli/command-
 reference/record-commands/default-record-types#standard-record-types) defined
 by Keeper, these include common types like Login, Passport, and SSH Keys.
 
-It is also possible to to be used by your organization.
+It is also possible to[ define new record types](/en/keeperpam/commander-
+cli/command-reference/record-commands/record-type-commands#record-type-
+command) to be used by your organization.
 
-For a list of associate record type commands, see
+For a list of associate record type commands, see [commands
+documentation](/en/keeperpam/commander-cli/command-reference/record-
+commands/record-type-commands#commands)
 
 ##
 
@@ -761,6 +727,11 @@ All record types have the following fields:
 `title` \- what the record is named (required)
 
 `notes` \- text
+
+`custom` \- custom fields and values can be added to records. See [add
+documentation](/en/keeperpam/commander-cli/command-reference/record-
+commands#add-command-new-record-type) for more information on adding custom
+fields
 
 ###
 
@@ -1856,15 +1827,41 @@ databaseCredentials", "fields": [{"type": "text", "value": ["SomeText"],
 "https://www.example.com", "port": "5000"}]}, {"type": "login", "value":
 ["John.Doe"]}, {"type": "password", "value": ["75vf@5JB@o"]}], "custom": []}'`
 
-`custom` \- custom fields and values can be added to records. See  for more
-information on adding custom fields
+[PreviousRecord Type Commands](/en/keeperpam/commander-cli/command-
+reference/record-commands/record-type-commands)[NextSharing
+Commands](/en/keeperpam/commander-cli/command-reference/sharing-commands)
 
-[add documentation](/en/keeperpam/commander-cli/command-reference/record-
-commands#add-command-new-record-type)
+Last updated 3 months ago
 
-[ define new record types](/en/keeperpam/commander-cli/command-
-reference/record-commands/record-type-commands#record-type-command)
+Was this helpful?
 
-[commands documentation](/en/keeperpam/commander-cli/command-reference/record-
-commands/record-type-commands#commands)
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

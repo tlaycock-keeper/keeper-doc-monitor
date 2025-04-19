@@ -56,7 +56,7 @@ manager/connections/examples?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
 manager/connections/examples?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -328,7 +328,7 @@ manager/connections/examples?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -428,39 +428,6 @@ manager/connections/examples?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=Y8j5mnC0QbPc7AlyX1Qx&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-
-# Examples
-
-Example connection records
-
-A few example guides explain how to set up Connections:
-
-  * [SSH Protocol with Linux Machine](/en/keeperpam/privileged-access-manager/connections/examples/ssh-protocol-linux-machine)
-
-  * [RDP Protocol with Azure Virtual Machine](/en/keeperpam/privileged-access-manager/connections/examples/rdp-protocol-azure-virtual-machine)
-
-  * [MySQL Protocol with Database](/en/keeperpam/privileged-access-manager/connections/examples/mysql-protocol-mysql-database)
-
-  * [PostgreSQL Protocol with Database](/en/keeperpam/privileged-access-manager/connections/examples/postgresql-protocol-postgresql-database)
-
-[PreviousTelnet Connections](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/telnet-connections)[NextSSH Protocol -
-Linux Machine](/en/keeperpam/privileged-access-
-manager/connections/examples/ssh-protocol-linux-machine)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -490,4 +457,43 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=Y8j5mnC0QbPc7AlyX1Qx&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+
+# Examples
+
+Example connection records
+
+[PreviousTelnet Connections](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/telnet-connections)[NextSSH Protocol -
+Linux Machine](/en/keeperpam/privileged-access-
+manager/connections/examples/ssh-protocol-linux-machine)
+
+Last updated 2 months ago
+
+Was this helpful?
+
+A few example guides explain how to set up Connections:
+
+  *   *   *   * 
+
+[SSH Protocol with Linux Machine](/en/keeperpam/privileged-access-
+manager/connections/examples/ssh-protocol-linux-machine)
+
+[RDP Protocol with Azure Virtual Machine](/en/keeperpam/privileged-access-
+manager/connections/examples/rdp-protocol-azure-virtual-machine)
+
+[MySQL Protocol with Database](/en/keeperpam/privileged-access-
+manager/connections/examples/mysql-protocol-mysql-database)
+
+[PostgreSQL Protocol with Database](/en/keeperpam/privileged-access-
+manager/connections/examples/postgresql-protocol-postgresql-database)
 

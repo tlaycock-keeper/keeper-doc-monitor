@@ -62,7 +62,7 @@ encryption?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
 bridge/secrets-manager/integrations/google-cloud-key-management-
 encryption?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -334,7 +334,7 @@ encryption?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -463,7 +463,7 @@ Protect Secrets Manager connection details with Google Cloud Key Management
 manager/integrations/gcp-secret-manager)[NextHashicorp
 Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
 
-Last updated 3 days ago
+Last updated 2 days ago
 
 Was this helpful?
 
@@ -550,7 +550,7 @@ JavaJavaScriptPython.NetGoLang
 
   * Supports the [GoLang Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/golang-sdk)
 
-  * Requires the `kms/apiv1, kmspb, core, kms` package from GCP SDK.
+  * Requires the [kms/apiv1](https://pkg.go.dev/cloud.google.com/go/kms/apiv1) , [kmspb](https://pkg.go.dev/cloud.google.com/go/kms/apiv1/kmspb) , [core](https://pkg.go.dev/github.com/keeper-security/secrets-manager-go/core), [kms](https://pkg.go.dev/cloud.google.com/go/kms) package from GCP SDK.
 
   * GCP CKM Key needs `ENCRYPT` and `DECRYPT` permissions.
 
@@ -578,6 +578,7 @@ Copy
     
     dependencies {
     	implementation("com.keepersecurity.secrets-manager:core:17.0.0")
+    	implementation("com.keepersecurity.secrets-manager:gcp:1.0.0")
     	implementation ("com.google.cloud:google-cloud-kms:2.62.0")
     	implementation ("com.google.auth:google-auth-library-oauth2-http:1.33.1") 
     	implementation("com.fasterxml.jackson.core:jackson-databind:2.18.2")
@@ -602,6 +603,11 @@ Copy
     	<groupId>com.keepersecurity.secrets-manager</groupId>
     	<artifactId>core</artifactId>
     	<version>[17.0.0,)</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.keepersecurity.secrets-manager</groupId>
+    	<artifactId>gcp</artifactId>
+    	<version>1.0.0</version>
     </dependency>
     <!-- gcp-kms -->
     <dependency>
@@ -753,7 +759,7 @@ Copy
     	    String keyId = "key_id";
     	    String keyVersion = "key_version";
     	    String configFileLocation = "client_config_test.json";
-    	    String credentialFileLocation = "/home/../<path_with_name_of_gcp_cred_file.json>";
+    	    String credentialFileLocation = "<path_with_name_of_gcp_cred_file.json>";
     	    Security.addProvider(new BouncyCastleFipsProvider());
     		try{
     				GcpSessionConfig sessionConfig = new GcpSessionConfig(projectId, location, keyRing, keyId, keyVersion, credentialFileLocation);
@@ -779,7 +785,7 @@ Copy
     
      import {GCPKeyValueStorage,GCPKeyConfig,GCPKSMClient,LoggerLogLevelOptions} from "@keeper-security/secrets-manager-gcp";
         const getKeeperRecordsGCP = async () => {
-            const gcpCredFile = "/home/../<path_with_name_of_gcp_cred_file.json>"
+            const gcpCredFile = "<path_with_name_of_gcp_cred_file.json>"
             const keyConfig2  = new GCPKeyConfig("<key_version_resource_url_1>");
             const keyConfig = new GCPKeyConfig("key_version_resource_url_2");
             const gcpSessionConfig = new GCPKSMClient().createClientFromCredentialsFile(gcpCredFile)
@@ -814,7 +820,7 @@ Copy
     from keeper_secrets_manager_core import SecretsManager
     gcp_key_config_1 = GCPKeyConfig("<key_resource_uri_1>")
     gcp_key_config_2 = GCPKeyConfig("<key_resource_uri_1>")
-    gcp_cred_file_location_with_name = "/home/../<path_with_name_of_gcp_cred_file.json>"
+    gcp_cred_file_location_with_name = "<path_with_name_of_gcp_cred_file.json>"
     gcp_session_config = GCPKMSClientConfig().create_client_from_credentials_file(gcp_cred_file_location_with_name)
     config_path = "ksm_config.json"
     one_time_token = "<one_time_token>"

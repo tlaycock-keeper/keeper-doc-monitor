@@ -50,7 +50,7 @@ connect-on-prem/privileged-access-manager/setup-steps?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
 manager/setup-steps?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -322,7 +322,7 @@ manager/setup-steps?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -439,10 +439,10 @@ PDF](/en/keeperpam/~gitbook/pdf?page=PR2hkE7TmA365mTVpHE3&only=yes&limit=100)
 
 Accessing the KeeperPAM platform
 
-[PreviousOverview](/en/keeperpam)[NextQuick Start:
+[PreviousKeeperPAM](/en/keeperpam)[NextQuick Start:
 Sandbox](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
 
-Last updated 29 days ago
+Last updated 1 month ago
 
 Was this helpful?
 

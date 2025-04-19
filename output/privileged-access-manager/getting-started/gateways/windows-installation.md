@@ -60,7 +60,7 @@ installation?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
 bridge/privileged-access-manager/getting-started/gateways/windows-
 installation?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -332,7 +332,7 @@ installation?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -463,7 +463,7 @@ started/gateways/linux-installation)[NextAuto
 Updater](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/auto-updater)
 
-Last updated 25 days ago
+Last updated 26 days ago
 
 Was this helpful?
 
@@ -557,11 +557,15 @@ Setup Options
 
   * Install Windows service - Installs the gateway as a Windows service.
 
-    *     * Start Windows service - Start the Keeper Gateway service immediately after installation
+    * Use service account - Use the [specified service account](/en/keeperpam/privileged-access-manager/getting-started/gateways/windows-installation#specifying-the-keeper-gateway-service-account-optional), otherwise the account installing the gateway will be used.
+
+    * Start Windows service - Start the Keeper Gateway service immediately after installation
 
     * Enable automatic updates
 
-  *   * Remove Keeper Gateway configuration and logs from previous installations
+  * Turn on debug logging - Enable [verbose logging](/en/keeperpam/privileged-access-manager/getting-started/gateways/windows-installation#verbose-logging) on the gateway log files. NOT recommended for production environments. Only use this when debugging with Keeper support. 
+
+  * Remove Keeper Gateway configuration and logs from previous installations
 
 ####
 
@@ -763,19 +767,6 @@ To uninstall the service:
 
   * If desired, delete the private configuration .json file
 
-Use service account - Use the , otherwise the account installing the gateway
-will be used.
-
-Turn on debug logging - Enable  on the gateway log files. NOT recommended for
-production environments. Only use this when debugging with Keeper support.
-
-[specified service account](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/windows-installation#specifying-the-keeper-gateway-service-
-account-optional)
-
-[verbose logging](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/windows-installation#verbose-logging)
-
 ###
 
 Network Configuration
@@ -818,6 +809,8 @@ Checksum Verification
 Keeper Gateway SHA256 hashes for the latest version are published at the below
 location:
 
+<https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
+
 Calculating and verifying the checksum:
 
 ####
@@ -841,8 +834,6 @@ Copy
     
     Get-FileHash -Algorithm SHA256 keeper-gateway_windows_x86_64.exe | Format-List
     Get-Content keeper-gateway_X.X.X_SHA256SUMS | Select-String keeper-gateway_windows_x86_64.exe
-
-<https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
 
 Keeper Gateway for Windows
 

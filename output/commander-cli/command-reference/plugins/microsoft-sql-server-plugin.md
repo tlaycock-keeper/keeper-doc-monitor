@@ -56,7 +56,7 @@ reference/plugins/microsoft-sql-server-plugin?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/command-
 reference/plugins/microsoft-sql-server-plugin?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -328,7 +328,7 @@ reference/plugins/microsoft-sql-server-plugin?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -522,13 +522,9 @@ Rotation supports legacy and typed records. If using typed record, a 'Login'
 type field is required. Additional fields may be added depending on the
 rotation type as well. See the instructions below.
 
-See the section for more information on legacy vs typed records
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwjleYChSFGLucHbo6EfP%252Fimage.png%3Falt%3Dmedia%26token%3D36515408-7f70-4286-9b12-a8b17ff489a2&width=768&dpr=4&quality=100&sign=8c5b22b8&sv=2)
-
-Complete record example. Follow steps below to setup a record for rotation
+See the [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-
+commander-cli#typed-vs-untyped-records-v3-vs-v2)section for more information
+on legacy vs typed records
 
 ####
 
@@ -540,10 +536,6 @@ Set the Hostname and Port
 
 Commander will use these settings to connect.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FQckdUZ8JwzVBe6mpZDLy%252Fimage.png%3Falt%3Dmedia%26token%3D9ea70cea-3e80-4f23-b02a-6a83e4e5eae9&width=768&dpr=4&quality=100&sign=268a6851&sv=2)
-
 TIP: If the port is set to 1433, or the host begins with "mssql://" Commander
 will automatically recognize the record as Microsoft SQL credentials and will
 use that rotation method unless otherwise configured
@@ -554,21 +546,12 @@ Set the record Password to the match account's password
 
 Commander will use the password to login to perform the rotation
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXRuczS0T4nq1r8ucRIyT%252Fimage.png%3Falt%3Dmedia%26token%3D54aa80db-
-ad43-4432-af6b-bd1d43433e00&width=768&dpr=4&quality=100&sign=a6b356d0&sv=2)
-
 ####
 
 Set the Database Name in a custom field
 
 Create a Text type custom field labeled "cmdr:db" and fill in the name of the
 database to connect to.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8McEnYBUn4wIzSL5LyJQ%252Fimage.png%3Falt%3Dmedia%26token%3D980b32e7-350b-4a65-9eef-02f901ab2f4c&width=768&dpr=4&quality=100&sign=8c1b0c81&sv=2)
 
 ####
 
@@ -634,10 +617,26 @@ Output
 After rotation is completed, the new password will be stored in the `Password`
 field of the record
 
+Complete record example. Follow steps below to setup a record for rotation
+
 A Keeper Record that is setup for MSSQL rotation
 
-[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
-cli#typed-vs-untyped-records-v3-vs-v2)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwjleYChSFGLucHbo6EfP%252Fimage.png%3Falt%3Dmedia%26token%3D36515408-7f70-4286-9b12-a8b17ff489a2&width=768&dpr=4&quality=100&sign=8c5b22b8&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FQckdUZ8JwzVBe6mpZDLy%252Fimage.png%3Falt%3Dmedia%26token%3D9ea70cea-3e80-4f23-b02a-6a83e4e5eae9&width=768&dpr=4&quality=100&sign=268a6851&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXRuczS0T4nq1r8ucRIyT%252Fimage.png%3Falt%3Dmedia%26token%3D54aa80db-
+ad43-4432-af6b-bd1d43433e00&width=768&dpr=4&quality=100&sign=a6b356d0&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8McEnYBUn4wIzSL5LyJQ%252Fimage.png%3Falt%3Dmedia%26token%3D980b32e7-350b-4a65-9eef-02f901ab2f4c&width=768&dpr=4&quality=100&sign=8c1b0c81&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

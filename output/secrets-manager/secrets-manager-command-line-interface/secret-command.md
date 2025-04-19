@@ -58,7 +58,7 @@ manager-command-line-interface/secret-command?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-manager/secrets-
 manager-command-line-interface/secret-command?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -330,7 +330,7 @@ manager-command-line-interface/secret-command?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -1495,14 +1495,11 @@ Example:
 
  _*The UID in this example is not a real record UID_
 
-See the [Troubleshooting section](/en/keeperpam/secrets-
-manager/troubleshooting#record-uid-starts-with) for more details
-
-[PreviousInit Command](/en/keeperpam/secrets-manager/secrets-manager-command-
+[ PreviousInit Command](/en/keeperpam/secrets-manager/secrets-manager-command-
 line-interface/init-command)[NextFolder Command](/en/keeperpam/secrets-
 manager/secrets-manager-command-line-interface/folder-command)
 
-Last updated 5 months ago
+Last updated 6 months ago
 
 Was this helpful?
 
@@ -1535,4 +1532,9 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+See the  for more details
+
+[Troubleshooting section](/en/keeperpam/secrets-
+manager/troubleshooting#record-uid-starts-with)
 

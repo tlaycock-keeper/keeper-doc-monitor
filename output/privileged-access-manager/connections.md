@@ -54,7 +54,7 @@ manager/connections?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
 manager/connections?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -326,7 +326,7 @@ manager/connections?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -447,43 +447,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=a8qXkMPc17fQtw6S5u5g&only=yes&limit=100)
 Instantly access your infrastructure with zero-trust security from your Keeper
 Vault
 
-[PreviousCode Examples](/en/keeperpam/privileged-access-manager/password-
-rotation/post-rotation-scripts/accessing-parameters)[NextGetting
-Started](/en/keeperpam/privileged-access-manager/connections/getting-started)
-
-Last updated 2 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FKpAclMuv7eB6AVMIYwkB%252FKeeperPAM%2520Connections.jpg%3Falt%3Dmedia%26token%3D9e69958b-0215-4be1-aa93-fe972d4a1220&width=768&dpr=4&quality=100&sign=fe186b23&sv=2)
 
 ##
 
@@ -496,6 +462,12 @@ on PAM Machine, PAM Database, PAM Directory and PAM Remote Browser record
 types, and once configured, connections are launched directly from these
 records.
 
+One of the key features of Keeper Connections is the **agentless**
+and**clientless** architecture. Organizations need to install only a [Keeper
+Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) in
+each managed environment. This streamlined approach simplifies deployment and
+enhances security by centralizing access management.
+
 ###
 
 Connection User Interface
@@ -505,8 +477,20 @@ connection is established between the Keeper Gateway and the target machine,
 and the session is visually projected into the Vault where you can interact
 seamlessly.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4IPQCpGGXyoRhKs5mJz5%252FScreenshot%25202025-02-13%2520at%25208.52.57%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dc1f56acd-4140-4812-b23d-0c01664f6394&width=768&dpr=4&quality=100&sign=95308b6c&sv=2)
+
+Connecting to a Windows Machine
+
 Full screen mode and zoom controls are available from the upper right corner
 of the window.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTubGAALQlypAijl6oBwR%252FScreenshot%25202025-02-13%2520at%25208.30.23%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D2a101dfe-3bff-492c-80be-12d34239693e&width=768&dpr=4&quality=100&sign=7156d0ac&sv=2)
+
+Connecting to a Linux Machine
 
 ###
 
@@ -515,7 +499,19 @@ Connection Dock
 The Connection Dock provides instant switching between active sessions. The
 dock can be moved to any desired location on the screen.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPlGsdo9FpLSAzAlGSb99%252FScreenshot%25202025-02-13%2520at%25208.56.59%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D2fd079f1-77ed-4ffe-9835-bc848e6bae0c&width=768&dpr=4&quality=100&sign=a4e5b50e&sv=2)
+
+Connection Dock
+
 The dock can be minimized and moved anywhere on the screen.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5Lbi85YjOpnzJHKITAiJ%252FScreenshot%25202025-02-13%2520at%25208.58.02%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dd2eb9fde-f6fe-464c-8c74-b3b74725c4bf&width=768&dpr=4&quality=100&sign=a97826ad&sv=2)
+
+Connection Dock Minimized
 
 ###
 
@@ -530,6 +526,9 @@ defined on the PAM record. This is done by:
   2. The Keeper Gateway then establishes the connection protocol to the target defined on the PAM Record 
 
   3. After establishing the connection, the Keeper Gateway projects the visual session to the Keeper vault client.
+
+For more information on the architecture, see this
+[page](/en/keeperpam/privileged-access-manager/getting-started/architecture).
 
 ##
 
@@ -571,48 +570,44 @@ Keeper Connection Features
 
   * Role-Based Access Controls
 
-One of the key features of Keeper Connections is the **agentless**
-and**clientless** architecture. Organizations need to install only a  in each
-managed environment. This streamlined approach simplifies deployment and
-enhances security by centralizing access management.
+To get started with Keeper Connections, proceed to the [next
+section](/en/keeperpam/privileged-access-manager/connections/getting-started).
 
-For more information on the architecture, see this .
+[PreviousCode Examples](/en/keeperpam/privileged-access-manager/password-
+rotation/post-rotation-scripts/accessing-parameters)[NextGetting
+Started](/en/keeperpam/privileged-access-manager/connections/getting-started)
 
-To get started with Keeper Connections, proceed to the .
+Last updated 2 months ago
 
-[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)
+Was this helpful?
 
-[page](/en/keeperpam/privileged-access-manager/getting-started/architecture)
+#### Company
 
-[next section](/en/keeperpam/privileged-access-manager/connections/getting-
-started)
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-Connecting to a Windows Machine
+#### Support
 
-Connecting to a Linux Machine
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-Connection Dock
+#### Solutions
 
-Connection Dock Minimized
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FKpAclMuv7eB6AVMIYwkB%252FKeeperPAM%2520Connections.jpg%3Falt%3Dmedia%26token%3D9e69958b-0215-4be1-aa93-fe972d4a1220&width=768&dpr=4&quality=100&sign=fe186b23&sv=2)
+#### Pricing
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4IPQCpGGXyoRhKs5mJz5%252FScreenshot%25202025-02-13%2520at%25208.52.57%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dc1f56acd-4140-4812-b23d-0c01664f6394&width=768&dpr=4&quality=100&sign=95308b6c&sv=2)
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTubGAALQlypAijl6oBwR%252FScreenshot%25202025-02-13%2520at%25208.30.23%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D2a101dfe-3bff-492c-80be-12d34239693e&width=768&dpr=4&quality=100&sign=7156d0ac&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPlGsdo9FpLSAzAlGSb99%252FScreenshot%25202025-02-13%2520at%25208.56.59%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D2fd079f1-77ed-4ffe-9835-bc848e6bae0c&width=768&dpr=4&quality=100&sign=a4e5b50e&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5Lbi85YjOpnzJHKITAiJ%252FScreenshot%25202025-02-13%2520at%25208.58.02%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dd2eb9fde-f6fe-464c-8c74-b3b74725c4bf&width=768&dpr=4&quality=100&sign=a97826ad&sv=2)
+© 2025 Keeper Security, Inc.
 

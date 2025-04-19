@@ -56,7 +56,7 @@ reference/connection-commands/sftp-sync?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/command-
 reference/connection-commands/sftp-sync?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -328,7 +328,7 @@ reference/connection-commands/sftp-sync?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -501,11 +501,6 @@ Copy
 
 Automating Sync
 
-Commander can be automated in a number of ways. See the [Batch Mode
-documentation](/en/keeperpam/commander-cli/commander-installation-
-setup/logging-in#executing-commands-with-persistent-login) for more
-information. This section will cover an example of automating the SFTP sync.
-
 ###
 
 Run Recurring SFTP Sync
@@ -544,10 +539,6 @@ Once configured, run Commander with the edited configuration file to start the
 automation. This can be done from the command line/terminal.
 
 `$> keeper shell --config "/sync.conf"`
-
-Note that there may be additional fields in your configuration file. See the
-[documentation ](/en/keeperpam/commander-cli/commander-installation-
-setup/logging-in#commander-configuration-file)for more information.
 
 Commander will continue to run while it waits for the next command run. If
 Commander is terminated, or the machine is turned off, Commander will need to
@@ -591,4 +582,16 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+Commander can be automated in a number of ways. See the  for more information.
+This section will cover an example of automating the SFTP sync.
+
+Note that there may be additional fields in your configuration file. See the
+for more information.
+
+[Batch Mode documentation](/en/keeperpam/commander-cli/commander-installation-
+setup/logging-in#executing-commands-with-persistent-login)
+
+[documentation ](/en/keeperpam/commander-cli/commander-installation-
+setup/logging-in#commander-configuration-file)
 

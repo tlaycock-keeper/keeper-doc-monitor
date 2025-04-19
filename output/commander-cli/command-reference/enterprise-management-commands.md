@@ -56,7 +56,7 @@ reference/enterprise-management-commands?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/command-
 reference/enterprise-management-commands?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -328,7 +328,7 @@ reference/enterprise-management-commands?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -480,32 +480,74 @@ Command
 
 Explanation
 
+[`enterprise-info`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#enterprise-info-command) or `ei`
+
 Display enterprise information
+
+[`enterprise-user`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#enterprise-user-command) or `eu`
 
 Manage enterprise users
 
+[`enterprise-role`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#enterprise-role-command) or `er`
+
 Manage enterprise roles and policies
+
+[`enterprise-team`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#enterprise-team-command) or `et`
 
 Manage enterprise teams
 
+[`enterprise-node`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#enterprise-node-command) or `en`
+
 Manage enterprise nodes
+
+[`enterprise-push`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#enterprise-push-command)
 
 Populate user and team vaults with predetermined records
 
+[`enterprise-down`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#enterprise-down-command) or `ed`
+
 Download & decrypt enterprise data
+
+[`team-approve`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#team-approve-command)
 
 Approve queued teams and users provisioned by SCIM or Active Directory Bridge
 
+[`device-approve`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#device-approve-command)
+
 Approve SSO Cloud devices that are pending from end-users
+
+[`create-user`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#create-user-command)
 
 Create a new user and vault, and add a record to the current vault with that
 user's credentials
 
+[`transfer-user`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#transfer-user-command)
+
 Transfer an account to another user
+
+[`automator`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#automator-command)
 
 Manage SSO Cloud Automator for Device Approvals
 
+[`scim`](/en/keeperpam/commander-cli/command-reference/enterprise-management-
+commands#scim-command)
+
 Manage SCIM endpoints
+
+[`audit-alert`](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#audit-alert-command)
 
 Manage Audit Alerts
 
@@ -1517,6 +1559,11 @@ not delete the node itself. Be careful with this command.
 
 `--toggle-isolated` make node visible or invisible to people in other nodes
 
+`--invite-email` <FILE_NAME> Sets invite email template from file. Saves
+current template if file does not exist. dash (-) use stdout. See [Custom
+Emails](/en/keeperpam/commander-cli/command-reference/enterprise-management-
+commands#custom-emails) section below.
+
 `--logo-file` <FILE_NAME> Sets company / node logo using local image file (max
 size: 500 kB, min dimensions: 10x10, max dimensions: 320x320)
 
@@ -1852,6 +1899,10 @@ Copy
 Create a new account and vault for the given email address and create a record
 for the new user's credentials in the current Keeper vault.
 
+To invite new users to an enterprise see the [enterprise-user
+command](/en/keeperpam/commander-cli/command-reference/enterprise-management-
+commands#enterprise-user-command)
+
 **Parameters:**
 
 User's email address
@@ -2164,7 +2215,11 @@ Copy
 
 Configuring SCIM source for push
 
-  *   *   * 
+  * [Common configuration steps](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/scim-push-configuration#common-for-all-sources)
+
+  * [Google Workspace](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/scim-push-configuration#google-workspace)
+
+  * [Active Directory](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/scim-push-configuration#active-directory-configuration)
 
 ###
 
@@ -2437,82 +2492,6 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-or `ei`
-
-or `eu`
-
-or `er`
-
-or `et`
-
-or `en`
-
-or `ed`
-
-`--invite-email` <FILE_NAME> Sets invite email template from file. Saves
-current template if file does not exist. dash (-) use stdout. See  section
-below.
-
-To invite new users to an enterprise see the
-
-[Common configuration steps](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands/scim-push-configuration#common-for-
-all-sources)
-
-[Google Workspace](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands/scim-push-configuration#google-workspace)
-
-[Active Directory](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands/scim-push-configuration#active-directory-configuration)
-
-[Custom Emails](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#custom-emails)
-
-[enterprise-user command](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands#enterprise-user-command)
-
-[`enterprise-info`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#enterprise-info-command)
-
-[`enterprise-user`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#enterprise-user-command)
-
-[`enterprise-role`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#enterprise-role-command)
-
-[`enterprise-team`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#enterprise-team-command)
-
-[`enterprise-node`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#enterprise-node-command)
-
-[`enterprise-push`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#enterprise-push-command)
-
-[`enterprise-down`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#enterprise-down-command)
-
-[`team-approve`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#team-approve-command)
-
-[`device-approve`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#device-approve-command)
-
-[`create-user`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#create-user-command)
-
-[`transfer-user`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#transfer-user-command)
-
-[`automator`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#automator-command)
-
-[`scim`](/en/keeperpam/commander-cli/command-reference/enterprise-management-
-commands#scim-command)
-
-[`audit-alert`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#audit-alert-command)
 
 [865BemailChicago.txt](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
 x-

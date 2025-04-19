@@ -56,7 +56,7 @@ manager/session-recording-and-playback?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
 manager/session-recording-and-playback?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -328,7 +328,7 @@ manager/session-recording-and-playback?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -428,6 +428,36 @@ manager/session-recording-and-playback?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * What are Session Recordings?
@@ -459,44 +489,12 @@ Last updated 2 months ago
 
 Was this helpful?
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 What are Session Recordings?
 
 **Keeper Session Recordings** capture and store activity from sessions
-launched through [**Keeper Connections**](/en/keeperpam/privileged-access-
-manager/connections) or [**Remote Browser Isolation
-(RBI)**](/en/keeperpam/privileged-access-manager/remote-browser-isolation).
+launched through  or .
 
 These recordings can be **graphical** , **text-based** , or both, depending on
 the session configuration.
@@ -560,10 +558,6 @@ For RBI connections, Graphical Session Recordings are available.
 
 Enforcement Policies
 
-Allowing users to view session recordings is managed through [PAM Enforcement
-Policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-
-policies). The following enforcement policies need to be turned on:
-
 ####
 
 **For Connections:**
@@ -598,10 +592,6 @@ Can view RBI session recordings
 
 Allow users to view RBI Session Recordings
 
-For more information on PAM enforcement policies, visit this
-[page](/en/keeperpam/privileged-access-manager/getting-started/enforcement-
-policies).
-
 ##
 
 Activating Session Recording
@@ -620,12 +610,6 @@ Manager tab, ensure that policies to configure settings is enabled at minimum.
 ###
 
 PAM Configuration
-
-To enable session recordings, the [PAM
-Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration) needs to permit graphical and text session recording. Go to
-Secrets Manager > PAM Configurations and edit the configuration associated
-with your resources.
 
 3
 
@@ -726,6 +710,29 @@ Keeper record can view session recordings. When a recording is accessed, the
 encrypted data is downloaded from the Keeper Cloud and decrypted locally in
 the user's vault for playback. Each session is encrypted with a unique record
 key, ensuring least privilege access.
+
+Allowing users to view session recordings is managed through . The following
+enforcement policies need to be turned on:
+
+For more information on PAM enforcement policies, visit this .
+
+To enable session recordings, the  needs to permit graphical and text session
+recording. Go to Secrets Manager > PAM Configurations and edit the
+configuration associated with your resources.
+
+[PAM Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-
+started/enforcement-policies)
+
+[page](/en/keeperpam/privileged-access-manager/getting-started/enforcement-
+policies)
+
+[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)
+
+[**Keeper Connections**](/en/keeperpam/privileged-access-manager/connections)
+
+[**Remote Browser Isolation (RBI)**](/en/keeperpam/privileged-access-
+manager/remote-browser-isolation)
 
 Enforcement Policies to configure session recording
 

@@ -56,7 +56,7 @@ manager/discovery/discovery-using-the-vault?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
 manager/discovery/discovery-using-the-vault?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -328,7 +328,7 @@ manager/discovery/discovery-using-the-vault?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -456,7 +456,7 @@ Running Discovery using the Keeper Vault user interface
 manager/discovery/discovery-using-commander)[NextOn-Prem Connection
 Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
 
-Last updated 27 days ago
+Last updated 28 days ago
 
 Was this helpful?
 
@@ -501,9 +501,7 @@ infrastructure using Discovery with the Keeper Vault and Desktop App.
 
 Prerequisites
 
-Prior to using Discovery, make sure to review the [Discovery
-Basics](/en/keeperpam/privileged-access-manager/discovery/discovery-basics)
-documentation.
+Prior to using Discovery, make sure to review the  documentation.
 
 ###
 
@@ -592,6 +590,9 @@ Now that the Discovery is complete, additional resources can be found by
 running another job against the same Gateway and PAM Configuration. If Admin
 Credentials have been linked to KeeperPAM Resources, these credentials will be
 used to discover local user accounts within each resource.
+
+[Discovery Basics](/en/keeperpam/privileged-access-
+manager/discovery/discovery-basics)
 
 Empty State - Discovery Module
 

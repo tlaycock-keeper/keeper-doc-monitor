@@ -56,7 +56,7 @@ manager/integrations/windows-credential-manager?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
 manager/integrations/windows-credential-manager?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -328,7 +328,7 @@ manager/integrations/windows-credential-manager?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -450,43 +450,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=4uAYMim9oyLDLik5qeu2&only=yes&limit=100)
 
 Store and Retrieve Secrets from the Windows Credential Manager
 
-[PreviousTerraform Plugin](/en/keeperpam/secrets-
-manager/integrations/terraform)[NextXSOAR](/en/keeperpam/secrets-
-manager/integrations/xsoar)
-
-Last updated 28 days ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRyTRac0AjyXOOaXRHkgj%252FKeeper%2520and%2520Windows%2520Credential%2520Manager.jpg%3Falt%3Dmedia%26token%3Db2c57103-674c-4f02-9896-e05a85ef56d1&width=768&dpr=4&quality=100&sign=d8f8874e&sv=2)
 
 ##
 
@@ -582,6 +548,44 @@ Copy
     # Retrieve a secret
     wcu get APPNAME
 
+[PreviousTerraform Plugin](/en/keeperpam/secrets-
+manager/integrations/terraform)[NextXSOAR](/en/keeperpam/secrets-
+manager/integrations/xsoar)
+
+Last updated 29 days ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 [![Logo](https://github.com/fluidicon.png)GitHub - Keeper-Security/windows-
 credential-utility: A utility for natively interacting with Windows Credential
 ManagerGitHub](https://github.com/Keeper-Security/windows-credential-utility)
@@ -589,8 +593,4 @@ ManagerGitHub](https://github.com/Keeper-Security/windows-credential-utility)
 [![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/windows-
 credential-utilityGitHub](https://github.com/Keeper-Security/windows-
 credential-utility/releases)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRyTRac0AjyXOOaXRHkgj%252FKeeper%2520and%2520Windows%2520Credential%2520Manager.jpg%3Falt%3Dmedia%26token%3Db2c57103-674c-4f02-9896-e05a85ef56d1&width=768&dpr=4&quality=100&sign=d8f8874e&sv=2)
 

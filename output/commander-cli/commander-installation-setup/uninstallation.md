@@ -56,7 +56,7 @@ installation-setup/uninstallation?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/commander-
 installation-setup/uninstallation?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -328,7 +328,7 @@ installation-setup/uninstallation?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -548,9 +548,9 @@ to uninstall:
 [binary](/en/keeperpam/commander-cli/commander-installation-
 setup/installation-on-mac#binary-installation-recommended)
 
-[Windows binary,](/en/keeperpam/commander-cli/commander-installation-
-setup/installation-on-windows#typical-binary-installation-recommended)
-
 [pip3](/en/keeperpam/commander-cli/commander-installation-setup/installation-
 on-linux#installing-python)
+
+[Windows binary,](/en/keeperpam/commander-cli/commander-installation-
+setup/installation-on-windows#typical-binary-installation-recommended)
 

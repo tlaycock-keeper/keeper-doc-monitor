@@ -56,7 +56,7 @@ manager/getting-started/architecture?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
 manager/getting-started/architecture?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -328,7 +328,7 @@ manager/getting-started/architecture?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -442,32 +442,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=ZM6e8hogz5utnJbqQsx4&only=yes&limit=100)
 
 Technical details on the KeeperPAM platform architecture
 
-##
-
-Overview
-
-KeeperPAM is a Zero-Knowledge platform, ensuring that encryption and
-decryption of secrets, connections, and tunnels occur locally on the end
-user's device through the Keeper Vault application. Access to resources in the
-vault is restricted to users with explicitly assigned permissions, enabling
-them to establish sessions or tunnels securely.
-
-Keeper's zero-trust connection technology further enhances security by
-providing restricted and monitored access to target systems without direct
-connectivity, while never exposing underlying credentials or secrets.
-
-This security content will cover the key areas of KeeperPAM:
-
-  * [Architecture Diagram](/en/keeperpam/privileged-access-manager/getting-started/architecture/system-architecture)
-
-  * [Vault Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/vault-security)
-
-  * [Router Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/router-security)
-
-  * [Gateway Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/gateway-security)
-
-  * [Connection and Tunnel Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/connection-and-tunnel-security)
-
 [PreviousGetting Started](/en/keeperpam/privileged-access-manager/getting-
 started)[NextArchitecture Diagram](/en/keeperpam/privileged-access-
 manager/getting-started/architecture/system-architecture)
@@ -505,4 +479,30 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+##
+
+Overview
+
+KeeperPAM is a Zero-Knowledge platform, ensuring that encryption and
+decryption of secrets, connections, and tunnels occur locally on the end
+user's device through the Keeper Vault application. Access to resources in the
+vault is restricted to users with explicitly assigned permissions, enabling
+them to establish sessions or tunnels securely.
+
+Keeper's zero-trust connection technology further enhances security by
+providing restricted and monitored access to target systems without direct
+connectivity, while never exposing underlying credentials or secrets.
+
+This security content will cover the key areas of KeeperPAM:
+
+  * [Architecture Diagram](/en/keeperpam/privileged-access-manager/getting-started/architecture/system-architecture)
+
+  * [Vault Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/vault-security)
+
+  * [Router Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/router-security)
+
+  * [Gateway Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/gateway-security)
+
+  * [Connection and Tunnel Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/connection-and-tunnel-security)
 

@@ -66,7 +66,7 @@ Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
 manager/password-rotation/rotation-use-cases/saas-accounts/snowflake-
 user?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -338,7 +338,7 @@ user?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -567,7 +567,9 @@ will be rotated.
 
 Step 2: Add PAM Script
 
-  *   * Enable No-Operation (NOOP) atomic execution:
+  * Attach the below [Python script](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/snowflake-user#python-script) that will perform the password rotation. The script has additional comments inside that describe each line.
+
+  * Enable No-Operation (NOOP) atomic execution:
 
     * In the current PAM User record where user's details are stored, create a new custom text field labeled `NOOP` and set its value to `True`.
 
@@ -734,6 +736,10 @@ Copy
 The above script for the Snowflake Post-Rotation Script can be also found
 here:
 
+[https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
+Scripts/tree/main/snowflakegithub.com](https://github.com/Keeper-
+Security/Zero-Trust-KeeperPAM-Scripts/tree/main/snowflake)
+
 ##
 
 Rotating Snowflake User Credentials
@@ -741,16 +747,6 @@ Rotating Snowflake User Credentials
 After successfully setting up Rotation for your Snowflake User Credentials on
 the PAM User Record, clicking on "Run Scripts Only" will rotate the
 credential:
-
-Attach the below  that will perform the password rotation. The script has
-additional comments inside that describe each line.
-
-[https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
-Scripts/tree/main/snowflakegithub.com](https://github.com/Keeper-
-Security/Zero-Trust-KeeperPAM-Scripts/tree/main/snowflake)
-
-[Python script](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/saas-accounts/snowflake-user#python-script)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

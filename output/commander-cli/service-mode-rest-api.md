@@ -50,7 +50,7 @@ on-prem/commander-cli/service-mode-rest-api?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/service-mode-
 rest-api?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -322,7 +322,7 @@ rest-api?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -453,7 +453,7 @@ reference/plugins/automatic-
 execution)[NextTroubleshooting](/en/keeperpam/commander-cli/troubleshooting-
 commander-cli)
 
-Last updated 1 day ago
+Last updated 2 days ago
 
 Was this helpful?
 
@@ -1083,10 +1083,6 @@ time you run Commander. Persistent login is required to ensure uninterrupted
 background execution of the Service Mode APIs, allowing seamless
 authentication without repeated login prompts.
 
-Learn more about [persistent login sessions](/en/keeperpam/commander-
-cli/commander-installation-setup/logging-in#persistent-login-sessions-stay-
-logged-in).
-
 ###
 
 Support
@@ -1102,7 +1098,12 @@ Limit the scope of supported commands. For example, if you only need to add
 records through the API, then only allow the `record-add` command. See the
 section.
 
+Learn more about .
+
 [Command List](/en/keeperpam/commander-cli/service-mode-rest-api#command-list)
+
+[persistent login sessions](/en/keeperpam/commander-cli/commander-
+installation-setup/logging-in#persistent-login-sessions-stay-logged-in)
 
 Commander Service Mode record
 

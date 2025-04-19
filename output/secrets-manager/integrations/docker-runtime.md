@@ -56,7 +56,7 @@ manager/integrations/docker-runtime?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
 manager/integrations/docker-runtime?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -328,7 +328,7 @@ manager/integrations/docker-runtime?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -450,9 +450,43 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MfDrmy4gD8cfU2KpdVi&only=yes&limit=100)
 
 Retrieve secrets from Keeper Secrets Manager at Docker runtime
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLOXFweD2UQIBMTHYVGqH%252Fimage.png%3Falt%3Dmedia%26token%3D4f4854f6-9c3f-44ae-b3b5-249dce6d34d8&width=768&dpr=4&quality=100&sign=1f0a439d&sv=2)
+[PreviousDocker Image](/en/keeperpam/secrets-manager/integrations/docker-
+image)[NextDocker Writer Image](/en/keeperpam/secrets-
+manager/integrations/docker-writer-image)
+
+Last updated 3 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -544,26 +578,8 @@ Create two records in the Vault that are managed by the Secrets Manager
 application. One record contains the root password. The other record contains
 the regular user, password and database values.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaFxHJF5PVR46Excgo%252FScreen%2520Shot%25202021-07-27%2520at%252012.38.36%2520AM.png%3Falt%3Dmedia%26token%3Dcd3734c5-158d-4b1a-bdc8-b76d5472c44f&width=768&dpr=4&quality=100&sign=a893b03b&sv=2)
-
-Root MySQL DB
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaFttUeoqctfkrfD8p%252FScreen%2520Shot%25202021-07-27%2520at%252012.38.59%2520AM.png%3Falt%3Dmedia%26token%3D3003edef-5d7b-4b46-b1a0-6530b0ac2fc1&width=768&dpr=4&quality=100&sign=cdc4ea8e&sv=2)
-
-User MySQL DB
-
 Make sure to copy the Record UID that appears in the vault records. These are
 used in Step 3 below when referencing the vault secrets.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaGj5OBZC8JJE7mt2L%252FScreen%2520Shot%25202021-07-27%2520at%252012.43.33%2520AM.png%3Falt%3Dmedia%26token%3Df772dd76-5ba1-466b-b656-784f4ba70f19&width=768&dpr=4&quality=100&sign=1406970f&sv=2)
-
-Capture Record UID for Root Record
 
 **Step 2: Create dockerfile that builds on the default MySQL dockerfile**
 
@@ -743,17 +759,9 @@ statement will indicate the distribution the vendor has built their image
 upon. If it is not apparent from the **FROM** statement, you man check the
 Dockerfile of the **FROM** image due to inheritance.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FreLdO2dKmIXTdq7CxrOM%252FScreenshot%25202022-10-31%2520at%25202.40.53%2520PM.png%3Falt%3Dmedia%26token%3Db74d6181-d2fc-4ccb-9960-daefe6671c92&width=768&dpr=4&quality=100&sign=ac9bd028&sv=2)
-
 MySQL 8.0.31 doesn't indicate the operating system distribution in the tag
 name. On the MySQL Docker Hub page, the 8.0.31 tag links to their GitHub repo.
 From the Dockerfile we can see the distribution is Oracle Linux.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FO2s1ylVdcl24iIxLjJui%252FScreenshot%25202022-10-31%2520at%25202.41.41%2520PM.png%3Falt%3Dmedia%26token%3D1ca49e96-968d-4293-8efd-98481205936e&width=768&dpr=4&quality=100&sign=35dde456&sv=2)
 
 The purpose of checking the distribution is to determine what version of the
 **libc** library is being used. Most distributions use **GLIBC** but some,
@@ -769,10 +777,6 @@ Entrypoint and Command
 
 The next step is to determine the vendor's Docker image **ENTRYPOINT** and
 **CMD**. The Dockerfile will list the **ENTRYPOINT** and/or **CMD**.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Ff6x6wo9b2z5x3PuWPPAw%252FScreenshot%25202022-10-31%2520at%25202.52.24%2520PM.png%3Falt%3Dmedia%26token%3D5c5cdff7-258d-4524-96d5-ae908c27d3dd&width=768&dpr=4&quality=100&sign=186db616&sv=2)
 
 From the MySQL Dockerfile, the **ENTRYPOINT** is `["docker-entrypoint.sh"]`
 and the **CMD** is `["mysqld"]`. This means the **ENTRYPOINT** will be
@@ -892,45 +896,41 @@ Contribute to the Docker Runtime Examples
 If you have some great examples to contribute to this page, please ping us on
 Slack or email sm@keepersecurity.com.
 
-[PreviousDocker Image](/en/keeperpam/secrets-manager/integrations/docker-
-image)[NextDocker Writer Image](/en/keeperpam/secrets-
-manager/integrations/docker-writer-image)
+Root MySQL DB
 
-Last updated 3 months ago
+User MySQL DB
 
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+Capture Record UID for Root Record
 
 Capture Record UID for User Record
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FreLdO2dKmIXTdq7CxrOM%252FScreenshot%25202022-10-31%2520at%25202.40.53%2520PM.png%3Falt%3Dmedia%26token%3Db74d6181-d2fc-4ccb-9960-daefe6671c92&width=768&dpr=4&quality=100&sign=ac9bd028&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FO2s1ylVdcl24iIxLjJui%252FScreenshot%25202022-10-31%2520at%25202.41.41%2520PM.png%3Falt%3Dmedia%26token%3D1ca49e96-968d-4293-8efd-98481205936e&width=768&dpr=4&quality=100&sign=35dde456&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Ff6x6wo9b2z5x3PuWPPAw%252FScreenshot%25202022-10-31%2520at%25202.52.24%2520PM.png%3Falt%3Dmedia%26token%3D5c5cdff7-258d-4524-96d5-ae908c27d3dd&width=768&dpr=4&quality=100&sign=186db616&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLOXFweD2UQIBMTHYVGqH%252Fimage.png%3Falt%3Dmedia%26token%3D4f4854f6-9c3f-44ae-b3b5-249dce6d34d8&width=768&dpr=4&quality=100&sign=1f0a439d&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaGj5OBZC8JJE7mt2L%252FScreen%2520Shot%25202021-07-27%2520at%252012.43.33%2520AM.png%3Falt%3Dmedia%26token%3Df772dd76-5ba1-466b-b656-784f4ba70f19&width=768&dpr=4&quality=100&sign=1406970f&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaFxHJF5PVR46Excgo%252FScreen%2520Shot%25202021-07-27%2520at%252012.38.36%2520AM.png%3Falt%3Dmedia%26token%3Dcd3734c5-158d-4b1a-bdc8-b76d5472c44f&width=768&dpr=4&quality=100&sign=a893b03b&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaFttUeoqctfkrfD8p%252FScreen%2520Shot%25202021-07-27%2520at%252012.38.59%2520AM.png%3Falt%3Dmedia%26token%3D3003edef-5d7b-4b46-b1a0-6530b0ac2fc1&width=768&dpr=4&quality=100&sign=cdc4ea8e&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

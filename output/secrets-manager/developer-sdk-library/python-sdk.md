@@ -56,7 +56,7 @@ sdk-library/python-sdk?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-manager/developer-sdk-
 library/python-sdk?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -328,7 +328,7 @@ library/python-sdk?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -728,6 +728,10 @@ None
 
 If passed, set the value of the field to the given value
 
+Fields are found by type, for a list of field types see the [Record
+Types](/en/keeperpam/commander-cli/command-reference/record-commands/default-
+record-types#field-types) documentation.
+
 ####
 
 Retrieve Custom Fields
@@ -807,6 +811,11 @@ Optional
 None
 
 If passed, set the value of the field to the given value
+
+Custom fields are any field that is not part of the record type definition,
+but can be added by users. For a list of fields in each standard record type,
+see the [Record Types](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types#standard-record-types) documentation.
 
 It is possible for multiple fields of the same custom type to appear on a
 single record, to differentiate these fields, the field label is required.
@@ -1058,6 +1067,14 @@ Yes
 
 Storage and query configuration
 
+Set field values using the [field ](/en/keeperpam/secrets-manager/developer-
+sdk-library/python-sdk#retrieve-field-values-from-a-secret)method.
+
+Fields are found by type, for a list of field types see the [Record
+Types](/en/keeperpam/commander-cli/command-reference/record-commands/default-
+record-types#field-types) documentation. Some fields have multiple values, in
+these cases the value can be set to a list.
+
 ####
 
 Update a Standard Field Value
@@ -1129,6 +1146,10 @@ Optional
 None
 
 If passed, set the value of the field to the given value
+
+Fields are found by type, for a list of field types see the [Record
+Types](/en/keeperpam/commander-cli/command-reference/record-commands/default-
+record-types#field-types) documentation.
 
 ####
 
@@ -1499,9 +1520,11 @@ Prerequisites:
 
   * Created records and record fields must be formatted correctly
 
-    *   * TOTP fields accept only URL generated outside of the KSM SDK
+    * See the [documentation](/en/keeperpam/commander-cli/command-reference/record-commands/default-record-types#field-types) for expected field formats for each record type
 
-  * 
+  * TOTP fields accept only URL generated outside of the KSM SDK
+
+  * After record creation, you can upload file attachments using [upload_file](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk#upload-a-file)
 
 Create a RecordCreate Record in Sub-folderLogin Record ExampleCustom Type
 Example
@@ -1981,7 +2004,7 @@ Copy
 library)[NextJava/Kotlin SDK](/en/keeperpam/secrets-manager/developer-sdk-
 library/java-sdk)
 
-Last updated 14 days ago
+Last updated 15 days ago
 
 Was this helpful?
 
@@ -2014,43 +2037,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-Fields are found by type, for a list of field types see the  documentation.
-
-Custom fields are any field that is not part of the record type definition,
-but can be added by users. For a list of fields in each standard record type,
-see the  documentation.
-
-Set field values using the method.
-
-Fields are found by type, for a list of field types see the  documentation.
-Some fields have multiple values, in these cases the value can be set to a
-list.
-
-Fields are found by type, for a list of field types see the  documentation.
-
-See the  for expected field formats for each record type
-
-After record creation, you can upload file attachments using
-
-[Record Types](/en/keeperpam/commander-cli/command-reference/record-
-commands/default-record-types#field-types)
-
-[Record Types](/en/keeperpam/commander-cli/command-reference/record-
-commands/default-record-types#standard-record-types)
-
-[Record Types](/en/keeperpam/commander-cli/command-reference/record-
-commands/default-record-types#field-types)
-
-[Record Types](/en/keeperpam/commander-cli/command-reference/record-
-commands/default-record-types#field-types)
-
-[documentation](/en/keeperpam/commander-cli/command-reference/record-
-commands/default-record-types#field-types)
-
-[field ](/en/keeperpam/secrets-manager/developer-sdk-library/python-
-sdk#retrieve-field-values-from-a-secret)
-
-[upload_file](/en/keeperpam/secrets-manager/developer-sdk-library/python-
-sdk#upload-a-file)
 

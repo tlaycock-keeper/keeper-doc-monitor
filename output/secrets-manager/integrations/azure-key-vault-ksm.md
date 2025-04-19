@@ -56,7 +56,7 @@ manager/integrations/azure-key-vault-ksm?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
 manager/integrations/azure-key-vault-ksm?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -328,7 +328,7 @@ manager/integrations/azure-key-vault-ksm?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -453,10 +453,43 @@ PDF](/en/keeperpam/~gitbook/pdf?page=5bAWD6RPiYO9UT9mOK6B&only=yes&limit=100)
 
 Protect Secrets Manager connection details with Azure Key Vault Keys
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtZIEOPkkqOXRYguSANka%252Fksm-
-azure.jpg%3Falt%3Dmedia%26token%3Dce2d93d5-12bf-405f-9a53-9c348ad52bcf&width=768&dpr=4&quality=100&sign=dbec56d2&sv=2)
+[PreviousAzure Key Vault Sync](/en/keeperpam/secrets-
+manager/integrations/azure-key-vault)[NextBitbucket
+Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
+
+Last updated 4 days ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 Keeper Secrets Manager integrates with Azure Key Vault in order to provide
 encryption for Keeper Secrets Manager configuration files. With this
@@ -496,9 +529,9 @@ JavaJavaScriptPython.NetGoLang
 
   * Supports the [Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk)
 
-  * Requires package azure-identity azure-keyvault-keys
+  * Requires package [azure-identity](https://pypi.org/project/azure-identity/) [azure-keyvault-keys](https://pypi.org/project/azure-keyvault-keys/)
 
-  * User credentials to be used will need to have key vault permissions
+  * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
 
   * Supports the [.Net Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/.net-sdk)
 
@@ -641,7 +674,7 @@ Copy
     
     npm install @keeper-security/secrets-manager-azure
 
-The Secrets Manager OCI KSM module can be installed using pip
+The Secrets Manager Storage Azure module can be installed using pip
 
 Copy
 
@@ -788,39 +821,48 @@ Copy
         getKeeperRecords()
     
 
-To do this, use `OracleKeyValueStorage` as your Secrets Manager storage in the
-`SecretsManager` constructor.
+To do this, use `AzureKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor as config along with a token.
 
-The storage will require a OCI Key ID, key version Id, as well as the name of
-the Secrets Manager configuration file which will be encrypted by Oracle KMS
-and OCI session configuration defined above.
+The storage will require a Azure Key ID, as well as the location of the
+Secrets Manager configuration file which will be encrypted by Azure-KSM
+Integration and Azure session configuration as shown below.
 
 Copy
 
     
     
-    from keeper_secrets_manager_storage.storage_oci_key_management import  OracleKeyValueStorage,OCISessionConfig
+    from keeper_secrets_manager_storage.storage_azure_keyvault import AzureSessionConfig,AzureKeyValueStorage
     from keeper_secrets_manager_core import SecretsManager
-    config_file_location = "/home/<user>/.oci/config"
-    profile = "DEFAULT"
-    kms_crypto_endpoint = "https://<kmsendpoint>.oraclecloud.com"
-    kms_mgmt_endpoint = "https://<kmsendpoint>.oraclecloud.com"
-    key_id = '<key_id>'
-    key_version_id = "<key_version_id>"
-    config_path = "<path to config json>"
-    one_time_token = "<Keeper One Time Token>"
-    oci_session_config = OCISessionConfig(config_file_location, profile, kms_crypto_endpoint, kms_mgmt_endpoint)
-    storage = OracleKeyValueStorage(key_id=key_id, key_version=key_version_id, config_file_location=config_path, oci_session_config=oci_session_config,logger=None)
-    secrets_manager = SecretsManager(one_time_token,config=storage)
-    all_records = secrets_manager.get_secrets()
-    first_record = all_records[0]
-    print(first_record)
+    
+    tenant_id = "<Tenant_ID>"
+    client_id = "<CLIENT_ID>"
+    client_secret = "<CLIENT_SECRET>"
+    
+    azure_session_config = AzureSessionConfig(tenant_id, client_id, client_secret)
+    config_path = "<path_to_client_config_python.json>"
+    
+    token="<One Time Token>"
+    
+    key_id = "<key_id>"
+    
+    azure_key_value_storage = AzureKeyValueStorage(key_id=keyId,config_file_location=config_path ,az_session_config=azure_session_config)
+        
+    secrets_manager = SecretsManager(token = token,config=azure_key_value_storage)
+        
+    records  = secrets_manager.get_secrets()
+        
+    for record in records:
+        print(record)
+    
 
 To do this, use `AzureKeyValueStorage` as your Secrets Manager storage in the
 `SecretsManager` constructor.
 
 The storage will require an `Azure Key ID`, as well as the name of the Secrets
 Manager configuration file which will be encrypted by Azure Key Vault.
+Optionally `AzureSessionConfig` can be provided. If credentials are not
+provided the default credentials are used.
 
 Copy
 
@@ -960,12 +1002,10 @@ Copy
 
     
     
-       storage = OracleKeyValueStorage(key_id=key_id, key_version=key_version_id, config_file_location=config_path, oci_session_config=oci_session_config,logger=None)
-        
-        new_key_id = "<new key id>"
-        new_key_version_id = "<new key version>"
-        isChanged = storage.change_key(new_key_id, new_key_version_id)
-        print("Key is changed " + isChanged)
+    azure_key_value_storage = AzureKeyValueStorage(key_id=keyId,config_file_location=config_path ,az_session_config=azure_session_config)
+    new_key_id = "<new key id>"
+    isChanged = azure_key_value_storage.change_key(new_key_id = new_key_id)
+    print("Key is changed " + isChanged)
 
 Copy
 
@@ -1046,10 +1086,10 @@ Copy
 
     
     
-     storage = OracleKeyValueStorage(key_id=key_id, key_version=key_version_id, config_file_location=config_path, oci_session_config=oci_session_config,logger=None)
-     storage.decrypt_config(True)
+    storage = AzureKeyValueStorage(key_id=keyId,config_file_location=config_path ,az_session_config=azure_session_config)
+    storage.decrypt_config() #saved plain config to file
      # or
-    storage.decrypt_config(False)
+    storage.decrypt_config(False)# returns config as return value, file will stay encrypted
 
 Copy
 
@@ -1087,41 +1127,8 @@ You're ready to use the KSM integration 👍
 Check out the [KSM SDKs documentation](/en/keeperpam/secrets-
 manager/developer-sdk-library) for more examples and functionality
 
-[PreviousAzure Key Vault Sync](/en/keeperpam/secrets-
-manager/integrations/azure-key-vault)[NextBitbucket
-Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
-
-Last updated 3 days ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtZIEOPkkqOXRYguSANka%252Fksm-
+azure.jpg%3Falt%3Dmedia%26token%3Dce2d93d5-12bf-405f-9a53-9c348ad52bcf&width=768&dpr=4&quality=100&sign=dbec56d2&sv=2)
 

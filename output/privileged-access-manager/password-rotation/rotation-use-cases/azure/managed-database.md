@@ -68,7 +68,7 @@ Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
 manager/password-rotation/rotation-use-cases/azure/managed-
 database?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -340,7 +340,7 @@ database?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -456,6 +456,21 @@ PDF](/en/keeperpam/~gitbook/pdf?page=S2MC3F3di8oW4ajxAcrI&only=yes&limit=100)
 
 Rotate Azure Managed Database credentials with Keeper
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FsbojNhPwNvyL2StisKUl%252FAzure%2520Managed%2520Database.jpg%3Falt%3Dmedia%26token%3Dd668ef42-70d8-475e-b8b8-9445f8ed4b18&width=768&dpr=4&quality=100&sign=bea63d97&sv=2)
+
+In this section, you will learn how to rotate **DB User or Admin** credentials
+on the following Azure Managed Databases:
+
+  * [Azure SQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database/azure-sql)
+
+  * [Azure MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database#azure-mysql-single-or-flexible)
+
+  * [Azure MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database/azure-mariadb-database)
+
+  * [Azure PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database/azure-postgresql-single-or-flexible-database)
+
 [PreviousAzure VM User Accounts](/en/keeperpam/privileged-access-
 manager/password-rotation/rotation-use-cases/azure/azure-vm-user-
 accounts)[NextAzure SQL](/en/keeperpam/privileged-access-manager/password-
@@ -494,21 +509,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FsbojNhPwNvyL2StisKUl%252FAzure%2520Managed%2520Database.jpg%3Falt%3Dmedia%26token%3Dd668ef42-70d8-475e-b8b8-9445f8ed4b18&width=768&dpr=4&quality=100&sign=bea63d97&sv=2)
-
-In this section, you will learn how to rotate **DB User or Admin** credentials
-on the following Azure Managed Databases:
-
-  * [Azure SQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database/azure-sql)
-
-  *   * [Azure MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database/azure-mariadb-database)
-
-  * [Azure PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database/azure-postgresql-single-or-flexible-database)
-
-[Azure MySQL](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/azure/managed-database#azure-mysql-single-or-
-flexible)
 

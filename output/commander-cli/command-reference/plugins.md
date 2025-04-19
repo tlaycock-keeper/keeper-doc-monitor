@@ -54,7 +54,7 @@ reference/plugins?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/command-
 reference/plugins?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -326,7 +326,7 @@ reference/plugins?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -446,45 +446,6 @@ u&only=yes&limit=100)
 
 Rotate passwords on any remote system using Keeper Commander plugins
 
-[PreviousMiscellaneous Commands](/en/keeperpam/commander-cli/command-
-reference/misc-commands)[NextPassword Rotation
-Commands](/en/keeperpam/commander-cli/command-reference/plugins/password-
-rotation)
-
-Last updated 3 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 Keeper has also launched a zero-trust Password Rotation feature with
 KeeperPAM. This new capability is recommended for most password rotation use
 cases. The Documentation is linked below:
@@ -525,6 +486,8 @@ Optionally, any records can use custom fields as configuration for rotation.
 See table below for an example of custom fields.
 
 Not sure the difference between typed and untyped records? See the
+[Troubleshooting section](/en/keeperpam/commander-cli/troubleshooting-
+commander-cli#typed-vs-untyped-records-v3-vs-v2)
 
 ##
 
@@ -577,28 +540,6 @@ need a particular plugin created, send us an email to
 
 Supported Plugins
 
-###
-
-Github Location
-
-<https://github.com/Keeper-
-Security/Commander/tree/master/keepercommander/plugins>[](https://github.com/Keeper-
-Security/Commander/tree/master/keepercommander/plugins)
-
-####
-
-Activating a Plugin
-
-To activate a plugin for a particular Keeper record, you first need to update
-the custom fields for that record with special keywords that are used by
-Commander. See the specific plugin for the custom field requirements.
-
-To perform a rotation use the `_rotate_` command.
-
-Keeper's team is expanding the number of plugins on an ongoing basis. If you
-need a particular plugin created or modified, email us at
-[commander@keepersecurity.com](mailto:commander@keepersecurity.com).
-
 [Active Directory](/en/keeperpam/commander-cli/command-
 reference/plugins/active-directory-plugin)
 
@@ -635,6 +576,64 @@ passwd-plugin)
 [Windows Password](/en/keeperpam/commander-cli/command-
 reference/plugins/windows-plugin)
 
-[Troubleshooting section](/en/keeperpam/commander-cli/troubleshooting-
-commander-cli#typed-vs-untyped-records-v3-vs-v2)
+###
+
+Github Location
+
+<https://github.com/Keeper-
+Security/Commander/tree/master/keepercommander/plugins>[](https://github.com/Keeper-
+Security/Commander/tree/master/keepercommander/plugins)
+
+####
+
+Activating a Plugin
+
+To activate a plugin for a particular Keeper record, you first need to update
+the custom fields for that record with special keywords that are used by
+Commander. See the specific plugin for the custom field requirements.
+
+To perform a rotation use the `_rotate_` command.
+
+Keeper's team is expanding the number of plugins on an ongoing basis. If you
+need a particular plugin created or modified, email us at
+[commander@keepersecurity.com](mailto:commander@keepersecurity.com).
+
+[PreviousMiscellaneous Commands](/en/keeperpam/commander-cli/command-
+reference/misc-commands)[NextPassword Rotation
+Commands](/en/keeperpam/commander-cli/command-reference/plugins/password-
+rotation)
+
+Last updated 3 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

@@ -56,7 +56,7 @@ sdk-library/powershell?fallback=true)[Keeper
 Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-manager/developer-sdk-
 library/powershell?fallback=true)
 
-  * [Overview](/en/keeperpam)
+  * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
 
     * [Setup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
@@ -328,7 +328,7 @@ library/powershell?fallback=true)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
-      * [Oracle Key Vault](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
+      * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
       * [ServiceNow](/en/keeperpam/secrets-manager/integrations/servicenow)
       * [TeamCity](/en/keeperpam/secrets-manager/integrations/teamcity)
@@ -428,47 +428,6 @@ library/powershell?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=wz0O7fcw1wsdcgngnbs4&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Developer SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
-
-# PowerShell
-
-PowerShell docs for Keeper Secrets Manager
-
-##
-
-Features
-
-  * Retrieve secrets from the Keeper Vault to use in PowerShell
-
-  * Integrate Keeper vault with PowerShell Secrets Manager
-
-  * Update secret values in the Keeper Vault from PowerShell
-
-  * Get files from the Keeper vault
-
-Please refer to the [Keeper PowerShell module](/en/keeperpam/secrets-
-manager/integrations/powershell-plugin) documented in the Integrations
-section:
-
-[**Go to PowerShell Plugin**](/en/keeperpam/secrets-
-manager/integrations/powershell-plugin)
-
-[ PreviousRecord Field Classes](/en/keeperpam/secrets-manager/developer-sdk-
-library/golang-sdk/record-field-classes)[NextVault
-SDKs](/en/keeperpam/secrets-manager/developer-sdk-library/vault-sdks)
-
-Last updated 5 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -498,4 +457,46 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=wz0O7fcw1wsdcgngnbs4&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Developer SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
+
+# PowerShell
+
+PowerShell docs for Keeper Secrets Manager
+
+[PreviousRecord Field Classes](/en/keeperpam/secrets-manager/developer-sdk-
+library/golang-sdk/record-field-classes)[NextVault
+SDKs](/en/keeperpam/secrets-manager/developer-sdk-library/vault-sdks)
+
+Last updated 5 months ago
+
+Was this helpful?
+
+##
+
+Features
+
+  * Retrieve secrets from the Keeper Vault to use in PowerShell
+
+  * Integrate Keeper vault with PowerShell Secrets Manager
+
+  * Update secret values in the Keeper Vault from PowerShell
+
+  * Get files from the Keeper vault
+
+Please refer to the  documented in the Integrations section:
+
+[Keeper PowerShell module](/en/keeperpam/secrets-
+manager/integrations/powershell-plugin)
+
+[**Go to PowerShell Plugin**](/en/keeperpam/secrets-
+manager/integrations/powershell-plugin)
 
