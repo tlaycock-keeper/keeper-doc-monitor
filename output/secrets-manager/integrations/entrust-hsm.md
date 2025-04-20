@@ -613,7 +613,7 @@ Copy
 manager/integrations/docker-writer-image)[NextGit - Sign Commits with
 SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
 
-Last updated 4 days ago
+Last updated 5 days ago
 
 Was this helpful?
 

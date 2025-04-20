@@ -452,7 +452,7 @@ Common terminology that will be referenced throughout this documentation
 manager/about/architecture)[NextSecurity & Encryption
 Model](/en/keeperpam/secrets-manager/about/security-encryption-model)
 
-Last updated 11 months ago
+Last updated 12 months ago
 
 Was this helpful?
 

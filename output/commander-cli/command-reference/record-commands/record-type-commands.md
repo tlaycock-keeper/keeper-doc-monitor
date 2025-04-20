@@ -642,6 +642,9 @@ records.
 The convert command will only convert legacy, untyped records to typed
 records.
 
+To convert the type of a typed record, use the [edit](/en/keeperpam/commander-
+cli/command-reference/record-commands#edit-command-record-types) command.
+
 **Parameters:**
 
 Pattern to match records in the current folder. Matches against UIDs and
@@ -733,8 +736,6 @@ Was this helpful?
 
 See a list of all field types
 
-To convert the type of a typed record, use the  command.
-
 see  for a list of all standard record types
 
 [here](/en/keeperpam/commander-cli/command-reference/record-commands/default-
@@ -742,7 +743,4 @@ record-types#field-types)
 
 [record types documentation](/en/keeperpam/commander-cli/command-
 reference/record-commands/default-record-types#standard-record-types)
-
-[edit](/en/keeperpam/commander-cli/command-reference/record-commands#edit-
-command-record-types)
 

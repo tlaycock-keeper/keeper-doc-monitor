@@ -893,6 +893,11 @@ For all the plugins, the following arguments are used. Either the `uid` or
 
 The `uid` value is required, and you need either `field` or `file` populated.
 
+To find out what fields and custom fields are available for a specific vault
+secret, use the Keeper Secrets Manager CLI "`ksm secret get -u XXXX`" command.
+More info [here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/secret-command#secret-command).
+
 The plugin example are shown with the short plugin names. If you installed the
 collection via Ansible Galaxy, you will need to use the longer plugin name or
 add the collection name to the list of collections used in your playbook.
@@ -1693,7 +1698,7 @@ Important Notes
 
   * If the plugin was installed by Ansible Galaxy the longer name is required for the lookup plugin (i.e. keepersecurity.keeper_secrets_manager.keeper). Listing collections appears not to work with lookup plugins.
 
-  * 
+  * To find out what fields and custom fields are available for a specific vault secret, use the Keeper Secrets Manager CLI "`ksm secret get -u XXXX`" command. More info [here](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface/secret-command#secret-command).
 
 ###
 
@@ -1921,6 +1926,12 @@ ANSIBLE_VAULT_PASSWORD_FILE environment variable or the vault_password_file in
 the ansible.cfg field to specify an executable file that will return a
 password.
 
+A executable shell script can be created that returns the password using the
+"ksm" secret notation ([learn more](/en/keeperpam/secrets-manager/secrets-
+manager-command-line-interface/secret-command#notation) about ksm secret
+notation). For example, the below script will output a specific secret
+password for the given Record UID:
+
 Copy
 
     
@@ -2006,18 +2017,6 @@ configuration) is required. Once you have a config file, the configuration
 values can be placed into the  files. These variable files can be encrypted
 with Ansible vault.
 
-To find out what fields and custom fields are available for a specific vault
-secret, use the Keeper Secrets Manager CLI "`ksm secret get -u XXXX`" command.
-More info .
-
-To find out what fields and custom fields are available for a specific vault
-secret, use the Keeper Secrets Manager CLI "`ksm secret get -u XXXX`" command.
-More info .
-
-A executable shell script can be created that returns the password using the
-"ksm" secret notation ( about ksm secret notation). For example, the below
-script will output a specific secret password for the given Record UID:
-
 [prerequisites](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
 plugin#prerequisites)
 
@@ -2026,15 +2025,6 @@ manager/integrations/ansible/ansible-plugin#install-keeper-ansible-module)
 
 [Ansible variable](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
 plugin#ansible-variables)
-
-[here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/secret-command#secret-command)
-
-[here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/secret-command#secret-command)
-
-[learn more](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/secret-command#notation)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG-

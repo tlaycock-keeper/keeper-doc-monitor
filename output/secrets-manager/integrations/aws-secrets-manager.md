@@ -459,7 +459,7 @@ Sync secrets from the Keeper Vault with AWS Secrets Manager
 manager/integrations/aws-cli-credential-process)[NextAWS KMS
 Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
 
-Last updated 4 days ago
+Last updated 5 days ago
 
 Was this helpful?
 

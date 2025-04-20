@@ -506,23 +506,13 @@ URL
 
 **US**
 
-<https://keepersecurity.com/console>[](https://keepersecurity.com/console)
-
 **EU**
-
-<https://keepersecurity.eu/console>[](https://keepersecurity.eu/console)
 
 **AU**
 
-<https://keepersecurity.com.au/console>[](https://keepersecurity.com.au/console)
-
 **JP**
 
-<https://keepersecurity.jp/console>[](https://keepersecurity.jp/console)
-
 **GOV**
-
-<https://govcloud.keepersecurity.us/console>[](https://govcloud.keepersecurity.us/console)
 
   * Under **Admin** > **Roles** , create a new role for PAM or modify an existing role
 
@@ -615,6 +605,16 @@ We've created a helpful Keeper 101 video to set up your sandbox environment:
 Screenshots
 
 Below are screenshots of the Quick Start Wizard from start to finish.
+
+<https://keepersecurity.com/console>[](https://keepersecurity.com/console)
+
+<https://keepersecurity.eu/console>[](https://keepersecurity.eu/console)
+
+<https://keepersecurity.com.au/console>[](https://keepersecurity.com.au/console)
+
+<https://keepersecurity.jp/console>[](https://keepersecurity.jp/console)
+
+<https://govcloud.keepersecurity.us/console>[](https://govcloud.keepersecurity.us/console)
 
 Create a Gateway
 

@@ -489,7 +489,7 @@ manager/remote-browser-isolation)[NextURL Patterns & Resource URL
 Patterns](/en/keeperpam/privileged-access-manager/remote-browser-
 isolation/setting-up-rbi/url-patterns-and-resource-url-patterns)
 
-Last updated 11 days ago
+Last updated 12 days ago
 
 Was this helpful?
 
@@ -499,12 +499,6 @@ Overview
 
 In this guide, you will learn how to setup Remote Browser Isolation (RBI) in
 your Keeper Vault. RBI works from both Web Vault and Desktop App.
-
-An active license is required in order to use the features available with
-KeeperPAM. This license is available for both business and enterprise
-customers.
-
-  *   *   * 
 
 ##
 
@@ -747,24 +741,30 @@ isolation/setting-up-rbi/browser-autofill)
 [here](/en/keeperpam/privileged-access-manager/remote-browser-
 isolation/setting-up-rbi/browser-autofill)
 
+[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
+manager-commands#overview)
+
+An active license is required in order to use the features available with
+KeeperPAM. This license is available for both business and enterprise
+customers.
+
+  *   *   * 
+
+[here](/en/keeperpam/privileged-access-manager/remote-browser-
+isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
+
+[here](/en/keeperpam/privileged-access-manager/remote-browser-
+isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
+
+For this protocol, graphical data, including timing information, is recorded.
+For more details on the recordings and how to access them, see the  docs.
+
 [KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-
 management/)
 
 [Request a Demo](https://www.keepersecurity.com/contact.html?t=b&r=sales)
 
 [Contact Support](https://www.keepersecurity.com/support.html)
-
-[here](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
-
-[here](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
-
-[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
-manager-commands#overview)
-
-For this protocol, graphical data, including timing information, is recorded.
-For more details on the recordings and how to access them, see the  docs.
 
 [Session Recording & Playback](/en/keeperpam/privileged-access-
 manager/session-recording-and-playback)

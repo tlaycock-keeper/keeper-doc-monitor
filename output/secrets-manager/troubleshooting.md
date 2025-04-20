@@ -457,7 +457,7 @@ Solutions to common Secrets Manager issues
 manager/integrations/xsoar)[NextCommander Overview](/en/keeperpam/commander-
 cli/overview)
 
-Last updated 4 months ago
+Last updated 5 months ago
 
 Was this helpful?
 
@@ -709,10 +709,6 @@ The convert command can use patterns to find all relevant records, can
 recursively apply the conversion to all sub-folders, and supports all record
 types.
 
-For more information on using the `convert` command, see the [Commander
-documentation.](/en/keeperpam/commander-cli/command-reference/record-
-commands/record-type-commands#convert-command)
-
 ##
 
 Throttling
@@ -751,6 +747,11 @@ team at commander@keepersecurity.com
 
 Typed records can be created in by clicking "Create New" in the vault, or
 using the  in Commander.
+
+For more information on using the `convert` command, see the
+
+[Commander documentation.](/en/keeperpam/commander-cli/command-
+reference/record-commands/record-type-commands#convert-command)
 
 [add command](/en/keeperpam/commander-cli/command-reference/record-
 commands#add-command-record-types)

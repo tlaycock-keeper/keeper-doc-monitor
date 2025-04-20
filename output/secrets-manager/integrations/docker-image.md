@@ -529,7 +529,7 @@ order to utilize this integration, you will need:
 
   * The[ Keeper Secrets Manager (KSM) CLI Tool](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
 
-    * 
+    * See instructions on setting up the KSM CLI [here](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface#initialize-the-client-device)
 
 ##
 
@@ -550,6 +550,11 @@ supports the ability to pass secrets in via a mounted file system. As a simple
 example demonstrating this capability, we will be creating a user account in
 the destination image with a username and password from Keeper Secrets
 Manager.
+
+**Step 1:** Set Environmental Variables with Keeper notation for the secrets
+that are needed. For more notation examples [click
+here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/exec-command#notation).
 
 Copy
 
@@ -601,6 +606,11 @@ Example 2: Build an Image with Secrets using Build Arguments
 Similar to example 1, you can pass in secrets via the `--build-arg`. This
 example will also demonstrate the ability of using secrets in a Docker build
 process.
+
+**Step 1:** Set Environmental Variables with Keeper notation for the secrets
+that are needed. For more notation examples [click
+here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/exec-command#notation).
 
 Copy
 
@@ -816,26 +826,9 @@ Contribute to the Docker Image Examples
 If you have some great examples to contribute to this page, please ping us on
 Slack or email sm@keepersecurity.com.
 
-See instructions on setting up the KSM CLI
-
-**Step 1:** Set Environmental Variables with Keeper notation for the secrets
-that are needed. For more notation examples .
-
-**Step 1:** Set Environmental Variables with Keeper notation for the secrets
-that are needed. For more notation examples .
-
 Create Record with Secret File Attachments
 
 Copy the Record UID
-
-[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/exec-command#notation)
-
-[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/exec-command#notation)
-
-[here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface#initialize-the-client-device)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

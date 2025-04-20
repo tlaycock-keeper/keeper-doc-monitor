@@ -453,7 +453,7 @@ reference/plugins/automatic-
 execution)[NextTroubleshooting](/en/keeperpam/commander-cli/troubleshooting-
 commander-cli)
 
-Last updated 2 days ago
+Last updated 3 days ago
 
 Was this helpful?
 
@@ -1100,10 +1100,10 @@ section.
 
 Learn more about .
 
-[Command List](/en/keeperpam/commander-cli/service-mode-rest-api#command-list)
-
 [persistent login sessions](/en/keeperpam/commander-cli/commander-
 installation-setup/logging-in#persistent-login-sessions-stay-logged-in)
+
+[Command List](/en/keeperpam/commander-cli/service-mode-rest-api#command-list)
 
 Commander Service Mode record
 

@@ -496,6 +496,12 @@ Overview
 In this guide, you will learn how to setup connections for all the supported
 protocols on your PAM Record types in your Keeper Vault.
 
+An active license is required in order to use the features available with
+KeeperPAM. This license is available for both business and enterprise
+customers.
+
+  *   *   * 
+
 ##
 
 Prerequisites
@@ -512,6 +518,12 @@ Connections and need to be enabled.
 Enforcement policies for KeeperPAM are managed in the Keeper Admin Console
 under **Admin** > **Roles** > **Enforcement Policies** > **Privileged Access
 Manager**.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWjChJvfoO14GjFwRqbVj%252FScreenshot%25202025-01-21%2520at%252011.50.51%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D979ba299-1710-4c92-adfc-36437e9631ce&width=768&dpr=4&quality=100&sign=ad11a445&sv=2)
+
+KeeperPAM Enforcement Policies
 
 Enforcement Policy
 
@@ -550,6 +562,10 @@ Copy
     ALLOW_VIEW_KCM_RECORDINGS
 
 Allow users to view session Recordings.
+
+Tunnels can also be enabled on the [Keeper Commander
+CLI](/en/keeperpam/commander-cli/command-reference/secrets-manager-
+commands#overview) using the `enterprise-role` command:
 
 Copy
 
@@ -616,11 +632,23 @@ PAM Record Type
 
 Target Endpoint type
 
+[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
+
 Windows/MacOS/Linux Machines, EC2 Instances, Azure VMs
+
+[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database)
 
 MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
 
+[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-directory)
+
 Active Directory, OpenLDAP
+
+[PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-remote-browser)
 
 Web-based applications
 
@@ -641,92 +669,69 @@ PAM Record Type
 
 Definition
 
+[SSH](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/ssh-connections)
+
 PAM Machine
 
 Connecting to the target defined on the PAM Machine Record with the SSH
 connection protocol
+
+[RDP](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/rdp-connections)
 
 PAM Machine
 
 Connecting to the target defined on the PAM Machine Record with the RDP
 connection protocol
 
+[RBI](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/rbi-connections)
+
 PAM Browser
 
 Connecting to the URL defined in the PAM Browser Record with the Remote
 Browser Isolation (http/https) protocol
+
+[MySQL](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/mysql-connections)
 
 PAM Database
 
 Connecting to the target defined on the PAM Database Record with the MySQL
 connection protocol
 
+[SQL Server](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/sql-server-connections)
+
 PAM Database
 
 Connecting to the target defined on the PAM Database Record with the SQL
 Server connection protocol
+
+[PostgreSQL](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/postgresql-connections)
 
 PAM Database
 
 Connecting to the target defined on the PAM Database Record with the
 PostgreSQL connection protocol
 
+[VNC](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/vnc-connections)
+
 PAM Machine
 
 Connecting to the target defined on the PAM Machine Record with the VNC
 connection protocol
 
+[Telnet](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/telnet-connections)
+
 PAM Machine
 
 Connecting to the target defined on the PAM Machine Record with the Telnet
 connection protocol
-
-Tunnels can also be enabled on the  using the `enterprise-role` command:
-
-[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
-[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database)
-
-[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-directory)
-
-[PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-remote-browser)
-
-[SSH](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/ssh-connections)
-
-[RDP](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/rdp-connections)
-
-[RBI](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/rbi-connections)
-
-[MySQL](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/mysql-connections)
-
-[SQL Server](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/sql-server-connections)
-
-[PostgreSQL](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/postgresql-connections)
-
-[VNC](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/vnc-connections)
-
-[Telnet](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/telnet-connections)
-
-[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
-manager-commands#overview)
-
-An active license is required in order to use the features available with
-KeeperPAM. This license is available for both business and enterprise
-customers.
-
-  *   *   * 
 
 [KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-
 management/)
@@ -734,10 +739,4 @@ management/)
 [Request a Demo](https://www.keepersecurity.com/contact.html?t=b&r=sales)
 
 [Contact Support](https://www.keepersecurity.com/support.html)
-
-KeeperPAM Enforcement Policies
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWjChJvfoO14GjFwRqbVj%252FScreenshot%25202025-01-21%2520at%252011.50.51%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D979ba299-1710-4c92-adfc-36437e9631ce&width=768&dpr=4&quality=100&sign=ad11a445&sv=2)
 

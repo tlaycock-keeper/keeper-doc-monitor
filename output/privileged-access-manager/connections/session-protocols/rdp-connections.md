@@ -681,18 +681,6 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
-[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
-
-[PAM Machine Record](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-machine)
-
-[PAM User Record](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
-For this protocol, graphical data, including timing information, is recorded.
-For more details on the recordings and how to access them, see the  docs.
-
 Field
 
 Definition
@@ -707,11 +695,23 @@ Administrative Credential Record
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
 
-[Session Recording & Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
+[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)
+
+[PAM Machine Record](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-machine)
+
+[PAM User Record](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
+
+For this protocol, graphical data, including timing information, is recorded.
+For more details on the recordings and how to access them, see the  docs.
+
+[Session Recording & Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
 
 RDP Session Recordings
 

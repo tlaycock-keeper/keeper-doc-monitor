@@ -702,6 +702,12 @@ be created and assigned to the plugin.
 
 Create a Secrets Manager Configuration
 
+A Secrets Manager configuration can be created using Keeper Commander or the
+Secrets Manager CLI. See the [Configuration
+Documentation](/en/keeperpam/secrets-manager/about/secrets-manager-
+configuration#creating-a-secrets-manager-configuration) for more information
+on creating a configuration.
+
 Once a configuration has been generated, set it to a variable to be used by
 the Vault Plugin.
 
@@ -906,10 +912,6 @@ See the  for instructions on creating an Application
 
 Secrets Manager Releases
 
-A Secrets Manager configuration can be created using Keeper Commander or the
-Secrets Manager CLI. See the  for more information on creating a
-configuration.
-
 [![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/secrets-
 managerGitHub](https://github.com/Keeper-Security/secrets-manager/releases)
 
@@ -918,9 +920,6 @@ manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
-
-[Configuration Documentation](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration#creating-a-secrets-manager-configuration)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

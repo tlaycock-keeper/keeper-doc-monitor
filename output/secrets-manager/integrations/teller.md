@@ -492,9 +492,12 @@ Was this helpful?
 
 Features
 
-  * Retrieve secrets from the Keeper Vault within  environments
+  * Retrieve secrets from the Keeper Vault within [Teller](https://github.com/tellerops/teller) environments
 
   * Set secret credentials as environment variables in Teller
+
+For a complete list of Keeper Secrets Manager features see the [Overview
+](/en/keeperpam/secrets-manager/overview)
 
 ##
 
@@ -503,11 +506,15 @@ Prerequisites
 This page documents the Secrets Manager Teller integration. In order to
 utilize this integration, you will need:
 
-  *     * Secrets Manager addon enabled for your Keeper account
+  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
+
+    * Secrets Manager addon enabled for your Keeper account
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   *     * The Teller integration accepts Base64 format configurations
+  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+
+    * The Teller integration accepts Base64 format configurations
 
 ##
 
@@ -643,24 +650,9 @@ Copy
           - name: Run a Teller task (show, scan, run, etc.)
             run: teller run npm run build
 
-For a complete list of Keeper Secrets Manager features see the
-
-Keeper Secrets Manager access (See the  for more details)
-
 A Keeper  with secrets shared to it
 
 See the  for instructions on creating an Application
-
-An initialized Keeper
-
-[Overview ](/en/keeperpam/secrets-manager/overview)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
-
-[Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration)
-
-[Teller](https://github.com/tellerops/teller)
 
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)

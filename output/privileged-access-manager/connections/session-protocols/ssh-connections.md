@@ -666,17 +666,6 @@ PowerShell commands or other administrative actions.
 
 Session Recordings - SSH Protocol
 
-Learn more on how to
-
-[activate SSH on Windows](/en/keeperpam/privileged-access-
-manager/references/setting-up-ssh#windows)
-
-For this protocol, both graphical and the full, raw text text content of
-terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this .
-
-  * Learn more about 
-
 Field
 
 Definition
@@ -690,6 +679,25 @@ Administrative Credential Record
 
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
+
+Learn more on how to
+
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this .
+
+  * Learn more about 
+
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+
+[Session Recording and Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
+
+[activate SSH on Windows](/en/keeperpam/privileged-access-
+manager/references/setting-up-ssh#windows)
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
 
 PAM Record
 
@@ -706,14 +714,6 @@ Record
 
 The PAM User record contains the user credentials that will be used to connect
 to the endpoint
-
-[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
-
-[Session Recording and Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
 
 [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
 started/pam-configuration)

@@ -475,9 +475,43 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MPuMkjtZHCifMXy5w_P&only=yes&limit=100)
 
 CI/CD Integrations provided with Keeper Secrets Manager
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4Krnrd9YV0hxZH768DDY%252FScreen%2520Shot%25202022-04-18%2520at%25207.19.46%2520PM.png%3Falt%3Dmedia%26token%3Df6f385db-4bdc-47dd-a126-26c774690edd&width=768&dpr=4&quality=100&sign=32c4904f&sv=2)
+[PreviousVault SDKs](/en/keeperpam/secrets-manager/developer-sdk-
+library/vault-sdks)[NextAnsible](/en/keeperpam/secrets-
+manager/integrations/ansible)
+
+Last updated 5 days ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 Keeper Secrets Manager integrates into popular CI/CD platforms and development
 environments. Use Keeper Secrets Manager to inject secrets into your build
@@ -820,47 +854,13 @@ launched from a shell.
 [Go to Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-
 command-line-interface)
 
-[PreviousVault SDKs](/en/keeperpam/secrets-manager/developer-sdk-
-library/vault-sdks)[NextAnsible](/en/keeperpam/secrets-
-manager/integrations/ansible)
-
-Last updated 4 days ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 [Go to AWS Secrets Manager Documentation](/en/keeperpam/secrets-
 manager/integrations#aws-secrets-manager)
 
 [Go to Docker Write Image](/en/keeperpam/secrets-manager/integrations#docker-
 writer-image)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4Krnrd9YV0hxZH768DDY%252FScreen%2520Shot%25202022-04-18%2520at%25207.19.46%2520PM.png%3Falt%3Dmedia%26token%3Df6f385db-4bdc-47dd-a126-26c774690edd&width=768&dpr=4&quality=100&sign=32c4904f&sv=2)
 

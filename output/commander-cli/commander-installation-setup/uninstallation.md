@@ -548,9 +548,9 @@ to uninstall:
 [binary](/en/keeperpam/commander-cli/commander-installation-
 setup/installation-on-mac#binary-installation-recommended)
 
-[pip3](/en/keeperpam/commander-cli/commander-installation-setup/installation-
-on-linux#installing-python)
-
 [Windows binary,](/en/keeperpam/commander-cli/commander-installation-
 setup/installation-on-windows#typical-binary-installation-recommended)
+
+[pip3](/en/keeperpam/commander-cli/commander-installation-setup/installation-
+on-linux#installing-python)
 

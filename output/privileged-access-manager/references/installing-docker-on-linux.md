@@ -450,7 +450,7 @@ manager/references/installing-sqlcmd-on-linux)[NextCreating KSM App for
 Rotation](/en/keeperpam/privileged-access-manager/references/creating-ksm-app-
 for-rotation)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

@@ -2004,7 +2004,7 @@ Copy
 library)[NextJava/Kotlin SDK](/en/keeperpam/secrets-manager/developer-sdk-
 library/java-sdk)
 
-Last updated 15 days ago
+Last updated 16 days ago
 
 Was this helpful?
 

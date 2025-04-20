@@ -448,45 +448,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-Mf4ooIm9OOeZ4dfpuGw&only=yes&limit=100)
 
 Rotate Windows user passwords with Commander
 
-[PreviousUnix Passwd Plugin](/en/keeperpam/commander-cli/command-
-reference/plugins/unix-passwd-plugin)[NextActive Directory
-Plugin](/en/keeperpam/commander-cli/command-reference/plugins/active-
-directory-plugin)
-
-Last updated 3 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 Keeper has also launched a zero-trust Password Rotation feature with
 KeeperPAM. This new capability is recommended for most password rotation use
 cases. The Documentation is linked below:
@@ -510,7 +471,9 @@ Rotation supports legacy and typed records. If using typed record, a 'login'
 type field is required. Additional fields may be added depending on the
 rotation type as well. See the instructions below.
 
-See the section for more information on legacy vs typed records
+See the [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-
+commander-cli#typed-vs-untyped-records-v3-vs-v2)section for more information
+on legacy vs typed records
 
 ###
 
@@ -578,10 +541,46 @@ Output
 After rotation is completed, the new password will be stored in the `Password`
 field of the record
 
-A Keeper Record setup for Windows password rotation
+[PreviousUnix Passwd Plugin](/en/keeperpam/commander-cli/command-
+reference/plugins/unix-passwd-plugin)[NextActive Directory
+Plugin](/en/keeperpam/commander-cli/command-reference/plugins/active-
+directory-plugin)
 
-[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
-cli#typed-vs-untyped-records-v3-vs-v2)
+Last updated 3 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+A Keeper Record setup for Windows password rotation
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

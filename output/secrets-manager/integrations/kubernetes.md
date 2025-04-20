@@ -428,6 +428,42 @@ manager/integrations/kubernetes?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Features
+  * Prerequisites
+  * About
+  * Setup
+  * Create a Secrets Manager Configuration
+  * Alternate Method: One Time Access Token and KSM CLI
+  * Using the KSM Config
+  * Examples
+  * Example 1 - Custom App using SDK
+  * Example 2 - NGINX SSL certificates
+  * External Secrets
+  * Next Steps
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MktCtiYBYc8OqUcflCC&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Kubernetes (alternative)
+
+Keeper Secrets Manager integration into Kubernetes for dynamic secrets
+retrieval
+
+[PreviousKubernetes External Secrets Operator](/en/keeperpam/secrets-
+manager/integrations/kubernetes-external-secrets-operator)[NextLinux
+Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -458,20 +494,11 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MktCtiYBYc8OqUcflCC&only=yes&limit=100)
-
-Last updated 3 months ago
-
-Was this helpful?
-
-We recommend using the  integration for most use cases. This document
-describes an alternate method of integration which does not utilize the
-External Secrets Operator.
+We recommend using the [Kubernetes External Secrets
+Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-
+secrets-operator) integration for most use cases. This document describes an
+alternate method of integration which does not utilize the External Secrets
+Operator.
 
 ##
 
@@ -483,6 +510,9 @@ Features
 
   * Copy secure file attachments from the Keeper Vault to the local filesystem
 
+For a complete list of Keeper Secrets Manager features see the [Overview
+](/en/keeperpam/secrets-manager/overview)
+
 ##
 
 Prerequisites
@@ -490,11 +520,15 @@ Prerequisites
 This page documents the Secrets Manager Kubernetes integration. In order to
 utilize this integration, you will need:
 
-  *     * Secrets Manager addon enabled for your Keeper account
+  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
+
+    * Secrets Manager addon enabled for your Keeper account
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     * 
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
 
 ##
 
@@ -520,164 +554,6 @@ Create the configuration in Commander using this command:
 
 **Example:**
 
-In the example above, copy lines 8 through 14 and place them into a file
-called secret.yaml. Then, If you are using a machine with `kubectl` installed
-and you have access to your cluster, add the KSM SDK config to your Kubernetes
-secrets.
-
-###
-
-Alternate Method: One Time Access Token and KSM CLI
-
-If you are using a machine with `kubectl` installed and you have access to
-your cluster, the parameter `--apply` can be set to automatically add the KSM
-SDK config to your Kubernetes secrets.
-
-The output of redeeming the token can be piped to a file and then applied via
-kubectl. For example:
-
-##
-
-Using the KSM Config
-
-At runtime, the Keeper Developer SDKs running in the K8s cluster will use the
-environment variable **KSM_CONFIG** to retrieve the device configuration and
-communicate with the Keeper Vault.
-
-##
-
-Examples
-
-###
-
-Example 1 - Custom App using SDK
-
-Below is a simple example that will generate a deployment and service that
-displays database secrets via a web application. This example uses the Keeper
-Python Developer SDK for the web application. The SDK will get its
-configuration from a Kubernetes secret and then retrieve PostgreSQL database
-record information from the Keeper vault.
-
-From the Keeper Vault, a "Database" record type is created using the following
-information.
-
-The next part is creating a Dockerfile. The Dockerfile below is based off of
-the Python Debian images from Docker Hub.
-
-The Python SDK uses the cryptography module. This module requires the language
-Rust to be installed. Other Docker Hub images may provide Rust pre-installed.
-
-Next we will build a Docker image named ksm_demo.
-
-Assuming there is access to the Kubernetes cluster, the config can be
-generated from the One Time Access Token and automatically applied.
-
-You can see the secret entry when you enter `kubectl get secret`.
-
-You can then make a deployment and service for the **ksm_demo** Docker image.
-This example is going to name the file **ksm_demo.yaml**.
-
-Defining which secrets you need, and the config for the SDK, happen in the
-**env** section in the list of **containers**. In this section the
-**KSM_CONFIG** environmental variable is defined to get it's value from
-the**ksm-config** Kubernetes secret, specifically the **config** key of the
-secret.
-
-The other environmental variables are just list of name/values. The value is
-Keeper Notation which the web application will send to the notation retrieval
-method of the SDK.
-
-The second record in the **ksm_demo.yaml** file is the **Service** definition.
-This can be changed to whatever works with your Kubernetes cluster. In our
-example, it uses an external IP address. It's safe to use one of your
-Kubernetes nodes IP address, 10.0.1.18 for the example.
-
-At this point the deployment and service are ready to be applied.
-
-Wait until your deployment is ready. Either monitor it via the command line or
-Kubernetes Dashboard.
-
-Finally, use a web browser and go to the external IP address, port 5000, and
-you will see the Keeper vault record database secrets.
-
-###
-
-Example 2 - NGINX SSL certificates
-
-In this example a pod will be created that contains the stock NGINX docker
-image and SSL certificates retrieved from the Keeper Vault.
-
-A Login record is created in the vault to hold the SSL certificate, private
-key, and certificate password.
-
-A one time token is generated and added to the Kubernetes ConfigMap.
-
-The example website is simply an index HTML page. The HTML can be stored in
-the ConfigMap and mounted in to the document root directory.
-
-The `default.conf` will be overwritten by our example. The certificate, key,
-and password will be placed in to the `/etc/keys` directory. For non-
-interactive startup, NGINX requires the certificate password be placed in a
-file and `ssl_password_file` to be included in the server configuration.
-
-The deployment for this example looks like the following:
-
-The docker image `keeper/keeper-secrets-manager-writer` is used for an
-initialization container. The container will retrieve the secrets and write
-them to disk so they can be used by NGINX. The secrets are written to the
-pod's emptyDir volume, mounted to /etc/keys. This directory will be removed
-when the pod is deleted.
-
-The main container will also mount the pod's emptyDir volume to /etc/keys. And
-will also mount the `default.conf` into /etc/nginx/conf.d and the `index.html`
-file into the document root for the server.
-
-The last part is to create a service to access NGINX as shown below.
-
-The service can be tested by going to the external IP via https (ie
-https://XXX.XXX.XXX.XXX). Notice the lock in the address bar indicates the
-certificate is valid.
-
-###
-
-External Secrets
-
-External Secrets is a Kubernetes operator that synchronizes secrets from
-External APIs and injects them into Kubernetes. For more information on how to
-setup External Secrets to synchronize secrets from your Keeper Vault into
-Kubernetes, visit the following:
-
-###
-
-Next Steps
-
-For a complete list of Keeper Secrets Manager features see the
-
-Keeper Secrets Manager access (See the  for more details)
-
-A Keeper  with secrets shared to it
-
-See the  for instructions on creating an Application
-
-For more information on creating Secrets Manger configurations, see the
-
-Alternatively, you can create a configuration by generating a One Time Access
-Token with Commander (or the Vault UI) and then using the  to create a
-configuration as demonstrated below (replace XX:XXX) with the One Time Access
-Token.
-
-The KSM config can be pulled into your K8s containers using .
-
-Now let's create our web application. The web page can be created using any of
-the Developer SDKs. For this example, it will being using the Python SDK. A
-simple Flask application with one endpoint will display the HTML that contains
-the Vault record secrets. The secrets are retrieved using the  syntax.
-
-Documentation for the Keeper Secrets Manager Writer can be found .
-
-At this point, you can now integrate Keeper Secrets Manager into your K8s
-deployments using any of the .
-
 Copy
 
     
@@ -701,11 +577,30 @@ Copy
     Token Expires On: 2021-10-13 12:45:45
     App Access Expires on: Never
 
+In the example above, copy lines 8 through 14 and place them into a file
+called secret.yaml. Then, If you are using a machine with `kubectl` installed
+and you have access to your cluster, add the KSM SDK config to your Kubernetes
+secrets.
+
 Copy
 
     
     
     $ kubectl apply -f secret.yaml
+
+For more information on creating Secrets Manger configurations, see the
+[Configuration Documentation](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration)
+
+###
+
+Alternate Method: One Time Access Token and KSM CLI
+
+Alternatively, you can create a configuration by generating a One Time Access
+Token with Commander (or the Vault UI) and then using the [Keeper Secret
+Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface) to create a configuration as demonstrated below (replace XX:XXX)
+with the One Time Access Token.
 
 Copy
 
@@ -722,6 +617,13 @@ Copy
       namespace: default
     type: Opaque
 
+If you are using a machine with `kubectl` installed and you have access to
+your cluster, the parameter `--apply` can be set to automatically add the KSM
+SDK config to your Kubernetes secrets.
+
+The output of redeeming the token can be piped to a file and then applied via
+kubectl. For example:
+
 Copy
 
     
@@ -729,6 +631,14 @@ Copy
     $ ksm init k8s XX:XXX > secret.yaml
     $ kubectl apply -f secret.yaml
     secret/ksm-config created
+
+##
+
+Using the KSM Config
+
+The KSM config can be pulled into your K8s containers using
+[secrets](https://kubernetes.io/docs/concepts/configuration/secret/#using-
+secrets-as-environment-variables).
 
 Copy
 
@@ -749,6 +659,33 @@ Copy
                 name: ksm-config
                 key: config
       restartPolicy: Never
+
+At runtime, the Keeper Developer SDKs running in the K8s cluster will use the
+environment variable **KSM_CONFIG** to retrieve the device configuration and
+communicate with the Keeper Vault.
+
+##
+
+Examples
+
+###
+
+Example 1 - Custom App using SDK
+
+Below is a simple example that will generate a deployment and service that
+displays database secrets via a web application. This example uses the Keeper
+Python Developer SDK for the web application. The SDK will get its
+configuration from a Kubernetes secret and then retrieve PostgreSQL database
+record information from the Keeper vault.
+
+From the Keeper Vault, a "Database" record type is created using the following
+information.
+
+Now let's create our web application. The web page can be created using any of
+the Developer SDKs. For this example, it will being using the Python SDK. A
+simple Flask application with one endpoint will display the HTML that contains
+the Vault record secrets. The secrets are retrieved using the [Keeper
+Notation](/en/keeperpam/secrets-manager/about/keeper-notation) syntax.
 
 Copy
 
@@ -778,6 +715,12 @@ Copy
            sm.get_notation(os.environ.get("DB_PORT")),
            sm.get_notation(os.environ.get("DB_LOGIN")),
            sm.get_notation(os.environ.get("DB_PASS")))
+
+The next part is creating a Dockerfile. The Dockerfile below is based off of
+the Python Debian images from Docker Hub.
+
+The Python SDK uses the cryptography module. This module requires the language
+Rust to be installed. Other Docker Hub images may provide Rust pre-installed.
 
 Copy
 
@@ -812,11 +755,16 @@ Copy
     EXPOSE 5000
     CMD ["flask", "run"]
 
+Next we will build a Docker image named ksm_demo.
+
 Copy
 
     
     
     $ docker build -t ksm_demo .
+
+Assuming there is access to the Kubernetes cluster, the config can be
+generated from the One Time Access Token and automatically applied.
 
 Copy
 
@@ -826,6 +774,8 @@ Copy
     secret/ksm-config created
     Created secret for KSM config.
 
+You can see the secret entry when you enter `kubectl get secret`.
+
 Copy
 
     
@@ -833,6 +783,24 @@ Copy
     $ kubectl get secret ksm-config
     NAME         TYPE     DATA   AGE
     ksm-config   Opaque   1      55s
+
+You can then make a deployment and service for the **ksm_demo** Docker image.
+This example is going to name the file **ksm_demo.yaml**.
+
+Defining which secrets you need, and the config for the SDK, happen in the
+**env** section in the list of **containers**. In this section the
+**KSM_CONFIG** environmental variable is defined to get it's value from
+the**ksm-config** Kubernetes secret, specifically the **config** key of the
+secret.
+
+The other environmental variables are just list of name/values. The value is
+Keeper Notation which the web application will send to the notation retrieval
+method of the SDK.
+
+The second record in the **ksm_demo.yaml** file is the **Service** definition.
+This can be changed to whatever works with your Kubernetes cluster. In our
+example, it uses an external IP address. It's safe to use one of your
+Kubernetes nodes IP address, 10.0.1.18 for the example.
 
 Copy
 
@@ -901,6 +869,8 @@ Copy
       externalIPs:
         - 10.0.1.18
 
+At this point the deployment and service are ready to be applied.
+
 Copy
 
     
@@ -908,6 +878,9 @@ Copy
     $ kubectl apply -f ksm_demo.yaml
     deployment/ksm-demo-deployment created
     service/ksm-demo-service created
+
+Wait until your deployment is ready. Either monitor it via the command line or
+Kubernetes Dashboard.
 
 Copy
 
@@ -921,6 +894,21 @@ Copy
     NAME               TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
     ksm-demo-service   ClusterIP   10.107.91.89   10.0.1.18     5000/TCP   56m
 
+Finally, use a web browser and go to the external IP address, port 5000, and
+you will see the Keeper vault record database secrets.
+
+###
+
+Example 2 - NGINX SSL certificates
+
+In this example a pod will be created that contains the stock NGINX docker
+image and SSL certificates retrieved from the Keeper Vault.
+
+A Login record is created in the vault to hold the SSL certificate, private
+key, and certificate password.
+
+A one time token is generated and added to the Kubernetes ConfigMap.
+
 Copy
 
     
@@ -928,6 +916,9 @@ Copy
     $ ksm init k8s XX:XXX > secret.yaml
     $ kubectl apply -f secret.yaml
     secret/ksm-config created
+
+The example website is simply an index HTML page. The HTML can be stored in
+the ConfigMap and mounted in to the document root directory.
 
 Copy
 
@@ -951,6 +942,11 @@ Copy
             <h1>Hello From Keeper Secrets Manager!</h1>
           </body>
         </html>
+
+The `default.conf` will be overwritten by our example. The certificate, key,
+and password will be placed in to the `/etc/keys` directory. For non-
+interactive startup, NGINX requires the certificate password be placed in a
+file and `ssl_password_file` to be included in the server configuration.
 
 Copy
 
@@ -987,6 +983,8 @@ Copy
             index index.html index.htm;
           }
         }
+
+The deployment for this example looks like the following:
 
 Copy
 
@@ -1056,6 +1054,21 @@ Copy
           imagePullSecrets:
             - name: my-docker-hub-secrets
 
+The docker image `keeper/keeper-secrets-manager-writer` is used for an
+initialization container. The container will retrieve the secrets and write
+them to disk so they can be used by NGINX. The secrets are written to the
+pod's emptyDir volume, mounted to /etc/keys. This directory will be removed
+when the pod is deleted.
+
+Documentation for the Keeper Secrets Manager Writer can be found
+[here](/en/keeperpam/secrets-manager/integrations/docker-writer-image).
+
+The main container will also mount the pod's emptyDir volume to /etc/keys. And
+will also mount the `default.conf` into /etc/nginx/conf.d and the `index.html`
+file into the document root for the server.
+
+The last part is to create a service to access NGINX as shown below.
+
 Copy
 
     
@@ -1080,63 +1093,35 @@ Copy
       externalIPs:
         - XXX.XXX.XXX.XX
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+The service can be tested by going to the external IP via https (ie
+https://XXX.XXX.XXX.XXX). Notice the lock in the address bar indicates the
+certificate is valid.
 
-# Kubernetes (alternative)
+###
 
-Keeper Secrets Manager integration into Kubernetes for dynamic secrets
-retrieval
+External Secrets
 
-[PreviousKubernetes External Secrets Operator](/en/keeperpam/secrets-
-manager/integrations/kubernetes-external-secrets-operator)[NextLinux
-Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-
-  * Features
-  * Prerequisites
-  * About
-  * Setup
-  * Create a Secrets Manager Configuration
-  * Alternate Method: One Time Access Token and KSM CLI
-  * Using the KSM Config
-  * Examples
-  * Example 1 - Custom App using SDK
-  * Example 2 - NGINX SSL certificates
-  * External Secrets
-  * Next Steps
-
-[Overview ](/en/keeperpam/secrets-manager/overview)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
-
-[Configuration Documentation](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration)
-
-[Keeper Secret Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface)
-
-[secrets](https://kubernetes.io/docs/concepts/configuration/secret/#using-
-secrets-as-environment-variables)
-
-[Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-notation)
-
-[here](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
+External Secrets is a Kubernetes operator that synchronizes secrets from
+External APIs and injects them into Kubernetes. For more information on how to
+setup External Secrets to synchronize secrets from your Keeper Vault into
+Kubernetes, visit the following:
 
 [Kubernetes External Secrets Operator](/en/keeperpam/secrets-
 manager/integrations/kubernetes-external-secrets-operator)
 
-[Secrets Manager SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
+###
 
-[Kubernetes External Secrets Operator](/en/keeperpam/secrets-
-manager/integrations/kubernetes-external-secrets-operator)
+Next Steps
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
+At this point, you can now integrate Keeper Secrets Manager into your K8s
+deployments using any of the [Secrets Manager SDKs](/en/keeperpam/secrets-
+manager/developer-sdk-library).
 
 Example Web Application displaying Keeper secrets
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6TQeKxdHn0zbmfZKG270%252Fimage.png%3Falt%3Dmedia%26token%3D05e69023-6c1d-44ec-819c-842699af867d&width=768&dpr=4&quality=100&sign=307eac3b&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -1146,11 +1131,7 @@ header.jpg%3Falt%3Dmedia%26token%3D19f48711-5185-45a7-96c4-efc7d11b34cc&width=76
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FhMaZVLZ1ulGe9Ub1hDB7%252Fimage.png%3Falt%3Dmedia%26token%3D2c2f355d-6c5f-4abf-8779-2285fc87ce00&width=768&dpr=4&quality=100&sign=7385b406&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6TQeKxdHn0zbmfZKG270%252Fimage.png%3Falt%3Dmedia%26token%3D05e69023-6c1d-44ec-819c-842699af867d&width=768&dpr=4&quality=100&sign=307eac3b&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fdy9FYgLsLsgtiFVY5RGh%252FScreen%2520Shot%25202021-12-13%2520at%252011.13.18%2520AM.png%3Falt%3Dmedia%26token%3D7a1a0a7a-ce97-4d5f-ad26-5b817ddfc178&width=768&dpr=4&quality=100&sign=25762f75&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -1158,5 +1139,5 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FBWcNIoRMf
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fdy9FYgLsLsgtiFVY5RGh%252FScreen%2520Shot%25202021-12-13%2520at%252011.13.18%2520AM.png%3Falt%3Dmedia%26token%3D7a1a0a7a-ce97-4d5f-ad26-5b817ddfc178&width=768&dpr=4&quality=100&sign=25762f75&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FhMaZVLZ1ulGe9Ub1hDB7%252Fimage.png%3Falt%3Dmedia%26token%3D2c2f355d-6c5f-4abf-8779-2285fc87ce00&width=768&dpr=4&quality=100&sign=7385b406&sv=2)
 
