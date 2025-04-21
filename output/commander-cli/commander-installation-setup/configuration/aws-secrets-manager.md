@@ -503,7 +503,7 @@ installation-setup/configuration)[NextAWS Key Management
 Service](/en/keeperpam/commander-cli/commander-installation-
 setup/configuration/aws-key-management-service)
 
-Last updated 8 months ago
+Last updated 9 months ago
 
 Was this helpful?
 

@@ -492,11 +492,7 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  * Keeper Secrets Manager is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
-
-  * Keeper Rotation is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
-
-  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+  *   *   * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
 
   * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is able to communicate with your AWS PostgreSQL Database
 
@@ -720,4 +716,14 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+Keeper Secrets Manager is enabled for your
+
+Keeper Rotation is enabled for your
+
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
+
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
 

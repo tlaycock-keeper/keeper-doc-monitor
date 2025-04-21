@@ -527,13 +527,7 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
-
-  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is able to communicate with your AWS SQL Server Database
-
-  * If the Gateway is installed on a Linux or macOS server, install the [Microsoft ODBC driver](https://learn.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver16)
-
-  * Your AWS environment is [configured](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup) per our documentation
+  *   *   *   *   *   * 
 
 ##
 
@@ -562,8 +556,6 @@ Keeper record title Ex: `RDS SQL Server Admin`
 The RDS Endpoint i.e. `rdsdb.ckivswes.us-east-2.rds.amazonaws.com`
 
 **Port**
-
-The RDS Port, for default ports see port mapping i.e. `1433`
 
 **Use SSL**
 
@@ -656,10 +648,6 @@ Set this field to `USE_INSTANCE_ROLE` if you are using EC2 role policy
 Set this field to `USE_INSTANCE_ROLE` if you are using EC2 role policy
 (default). Otherwise use a specific Secret Access Key.
 
-For more details on all the configurable fields in the PAM Configuration
-record, visit this [page](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration).
-
 ##
 
 3\. Set up PAM User Records
@@ -718,11 +706,41 @@ Keeper Secrets Manager is enabled for your
 
 Keeper Rotation is enabled for your
 
+A Keeper Secrets Manager  has been created
+
+A Keeper Rotation  is already installed, running, and is able to communicate
+with your AWS SQL Server Database
+
+If the Gateway is installed on a Linux or macOS server, install the
+
+Your AWS environment is  per our documentation
+
+The RDS Port, for default ports see  i.e. `1433`
+
+For more details on all the configurable fields in the PAM Configuration
+record, visit this .
+
+[application](/en/keeperpam/privileged-access-manager/getting-
+started/applications)
+
+[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+[Microsoft ODBC driver](https://learn.microsoft.com/en-
+us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver16)
+
+[configured](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration/aws-environment-setup)
+
+[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration)
+
 [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 overview#enabling-rotation-on-the-admin-console)
 
 [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 overview#enabling-rotation-on-the-admin-console)
+
+port mapping
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

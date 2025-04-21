@@ -428,38 +428,6 @@ manager/integrations/jenkins-plugin?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Features
-  * Prerequisites
-  * About
-  * Installation
-  * Source Code
-  * Create a Secrets Manager Client
-  * Add Credential to Jenkins
-  * Example Usage: Freestyle Project
-  * Example Usage: Pipeline Integration (Workflows)
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MiY9yvhfQmptgmCD5Gk&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Jenkins Plugin
-
-Keeper Secrets Manager integration into Jenkins for dynamic secrets retrieval
-
-[PreviousHeroku](/en/keeperpam/secrets-manager/integrations/heroku)[NextKeeper
-Connection Manager](/en/keeperpam/secrets-manager/integrations/keeper-
-connection-manager)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -490,6 +458,38 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Features
+  * Prerequisites
+  * About
+  * Installation
+  * Source Code
+  * Create a Secrets Manager Client
+  * Add Credential to Jenkins
+  * Example Usage: Freestyle Project
+  * Example Usage: Pipeline Integration (Workflows)
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MiY9yvhfQmptgmCD5Gk&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Jenkins Plugin
+
+Keeper Secrets Manager integration into Jenkins for dynamic secrets retrieval
+
+[PreviousHeroku](/en/keeperpam/secrets-manager/integrations/heroku)[NextKeeper
+Connection Manager](/en/keeperpam/secrets-manager/integrations/keeper-
+connection-manager)
+
+Last updated 5 months ago
+
+Was this helpful?
+
 ##
 
 Features
@@ -500,9 +500,6 @@ Features
 
   * Get files from the Keeper vault
 
-For a complete list of Keeper Secrets Manager features see the [Overview
-](/en/keeperpam/secrets-manager/overview)
-
 ##
 
 Prerequisites
@@ -510,13 +507,11 @@ Prerequisites
 This page documents the Secrets Manager Jenkins integration. In order to
 utilize this integration, you will need:
 
-  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
-
-    * Secrets Manager add-on enabled for your Keeper account
+  *     * Secrets Manager add-on enabled for your Keeper account
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * [A One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
+  *     *   * 
 
 The plugin uses **SecureRandom** which can be slow on certain systems due too
 low entropy. On Linux, executing `cat /proc/sys/kernel/random/entropy_avail`
@@ -551,16 +546,9 @@ Plugins->Installed**click the **Uninstall** button. It will not show up on the
 
 Source Code
 
-Find the Keeper Secrets Manager Jenkins Plugin source code in the [GitHub
-repository](https://github.com/jenkinsci/keeper-secrets-manager-plugin)
-
 ##
 
 Create a Secrets Manager Client
-
-If you haven't done so already, follow the [Quick Start
-Guide](/en/keeperpam/secrets-manager/quick-start-guide) and create a Secrets
-Manager application and Client Device specifically for Jenkins usage.
 
 Using Keeper Commander, generate a Client Device for Jenkins. Make note of the
 One Time Access Token.
@@ -579,10 +567,6 @@ By default, the Client Device is locked to the first IP address that uses the
 One Time Access Token. If your Jenkins server has potentially multiple
 external IP addresses, you may want to add the`--unlock-ip`parameter when
 generating the One Time Access Token.
-
-For more information on creating Secrets Manager Applications and Clients, see
-the [Secrets Manager Commands](/en/keeperpam/commander-cli/command-
-reference/secrets-manager-commands#overview) documentation.
 
 ###
 
@@ -730,12 +714,6 @@ Copy
       }
     }
 
-The Keeper Secrets Manager snippet can be created using the **Pipeline
-Syntax** [snipper editor](https://www.jenkins.io/doc/book/pipeline/getting-
-started/#snippet-generator) inside of Jenkins. Select **withKsm** from the
-**Sample Step** dropdown, then add a Keeper Secrets Manager Application, which
-will allow you to select the credentials and add secrets.
-
 When you are finished setting up your application, credentials, and secrets,
 you can click the **Generate Pipeline Script** to generate the **withKsm**
 block. This snippet can then be added to your Jenkinsfile.
@@ -744,9 +722,40 @@ The environmental variables containing the secrets are only accessible within
 the **withKsm** block where they are defined. Once you exit the block, the
 secrets are not accessible.
 
+For a complete list of Keeper Secrets Manager features see the
+
+Keeper Secrets Manager access (See the  for more details)
+
 A Keeper  with secrets shared to it
 
 See the  for instructions on creating an Application
+
+Find the Keeper Secrets Manager Jenkins Plugin source code in the
+
+If you haven't done so already, follow the  and create a Secrets Manager
+application and Client Device specifically for Jenkins usage.
+
+For more information on creating Secrets Manager Applications and Clients, see
+the  documentation.
+
+The Keeper Secrets Manager snippet can be created using the **Pipeline
+Syntax** inside of Jenkins. Select **withKsm** from the **Sample Step**
+dropdown, then add a Keeper Secrets Manager Application, which will allow you
+to select the credentials and add secrets.
+
+[Overview ](/en/keeperpam/secrets-manager/overview)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+[A One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
+
+[GitHub repository](https://github.com/jenkinsci/keeper-secrets-manager-
+plugin)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+[snipper editor](https://www.jenkins.io/doc/book/pipeline/getting-
+started/#snippet-generator)
 
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
@@ -754,18 +763,16 @@ manager/about/terminology#application)
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
 
+[Secrets Manager Commands](/en/keeperpam/commander-cli/command-
+reference/secrets-manager-commands#overview)
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FO7LBJZqzcT7BYuCLXlRn%252FScreen%2520Shot%25202022-09-06%2520at%25201.57.53%2520PM.png%3Falt%3Dmedia%26token%3D3aa99bdb-80a2-48e2-8bc2-cbe3e6de73f5&width=768&dpr=4&quality=100&sign=a388209d&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fa4n3YHq8mVkQcwSTgJeu%252FScreen%2520Shot%25202021-11-17%2520at%25209.45.40%2520AM.png%3Falt%3Dmedia%26token%3D8e3d298f-6b83-492a-8998-bebdebfe535f&width=768&dpr=4&quality=100&sign=517cdd1c&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkOBmofZ4fb5Gz02mFQ%252F-MkODWua0gGH7MFs-
-ze1%252FScreen%2520Shot%25202021-09-24%2520at%25202.13.24%2520PM.png%3Falt%3Dmedia%26token%3D036d3485-e1a0-464f-975e-c2e88fba0a17&width=768&dpr=4&quality=100&sign=79745923&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MlMTSx8rstZWwFAz2Sd%252F-MlMUFCp1u926PgPpk3y%252Fbuilder.png%3Falt%3Dmedia%26token%3D55b1adb4-f916-44f5-99b8-69944fd683ac&width=768&dpr=4&quality=100&sign=dcc673f&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -774,11 +781,16 @@ adc7-4a49-8109-097f63e77c76&width=768&dpr=4&quality=100&sign=6befa0ca&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MlMTSx8rstZWwFAz2Sd%252F-MlMUFCp1u926PgPpk3y%252Fbuilder.png%3Falt%3Dmedia%26token%3D55b1adb4-f916-44f5-99b8-69944fd683ac&width=768&dpr=4&quality=100&sign=dcc673f&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkOBmofZ4fb5Gz02mFQ%252F-MkODWua0gGH7MFs-
+ze1%252FScreen%2520Shot%25202021-09-24%2520at%25202.13.24%2520PM.png%3Falt%3Dmedia%26token%3D036d3485-e1a0-464f-975e-c2e88fba0a17&width=768&dpr=4&quality=100&sign=79745923&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkEQ5PBLojjvL1P8vo5%252F-MkEQP2hhyxKSU0SVFoL%252Fjenkins-
 plugin-
 header.jpg%3Falt%3Dmedia%26token%3D7f925417-5968-47b7-a39c-883ef7fbc555&width=768&dpr=4&quality=100&sign=95b5cb1c&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fa4n3YHq8mVkQcwSTgJeu%252FScreen%2520Shot%25202021-11-17%2520at%25209.45.40%2520AM.png%3Falt%3Dmedia%26token%3D8e3d298f-6b83-492a-8998-bebdebfe535f&width=768&dpr=4&quality=100&sign=517cdd1c&sv=2)
 

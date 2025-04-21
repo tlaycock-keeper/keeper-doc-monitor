@@ -518,13 +518,7 @@ PAM Configuration Fields
 When setting up the PAM Configuration, you have the option of choosing one of
 the following environments:
 
-  * [Local Network](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration#local-network-environment)
-
-  * [AWS](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration#aws-environment)
-
-  * [Azure](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration#aws-environment)
-
-  * [Domain Controller](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration#domain-controller-environment)
+  *   *   *   * 
 
 The following tables provides more details on each configurable fields in the
 PAM Configuration record regardless of the environment you choose:
@@ -545,9 +539,6 @@ Gateway
 
 The configured gateway
 
-See [docs](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-for more info
-
 Application Folder
 
 The shared folder where the PAM Configuration data will be stored
@@ -559,9 +550,6 @@ PAM Settings
 
 List of Zero-Trust KeeperPAM features that should be enabled
 
-See [this section](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration#pam-features-on-pam-configuration) for more info
-
 Default Rotation Schedule
 
 Specify frequency of Rotation
@@ -571,9 +559,6 @@ Ex: `Daily`
 Port Mapping
 
 Define alternative default ports
-
-Ex: `3307=mysql `See [port mapping](/en/keeperpam/privileged-access-
-manager/references/port-mapping) docs
 
 **Security Note (1)** The PAM Configuration information is stored as a record
 in the vault inside the specified **Application Folder** and may contain
@@ -604,9 +589,6 @@ Ex: `My Network`
 Network CIDR
 
 Subnet of the IP address
-
-Ex: `192.168.0.15/24` Refer to [this
-](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)for more info
 
 ###
 
@@ -786,6 +768,36 @@ Text Session Recording (TypeScript)
 
 If enabled, text input and output logs will be logged for all connections and
 RBI sessions
+
+See  for more info
+
+See  for more info
+
+Ex: `3307=mysql `See  docs
+
+Ex: `192.168.0.15/24` Refer to for more info
+
+[docs](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+[port mapping](/en/keeperpam/privileged-access-manager/references/port-
+mapping)
+
+[this ](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
+
+[Local Network](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration#local-network-environment)
+
+[AWS](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration#aws-environment)
+
+[Azure](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration#aws-environment)
+
+[Domain Controller](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration#domain-controller-environment)
+
+[this section](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration#pam-features-on-pam-configuration)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

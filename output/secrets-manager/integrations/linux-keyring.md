@@ -460,7 +460,7 @@ Store and Retrieve Secrets from the Linux Keyring
 manager/integrations/kubernetes)[NextOctopus Deploy](/en/keeperpam/secrets-
 manager/integrations/octopus-deploy)
 
-Last updated 4 months ago
+Last updated 5 months ago
 
 Was this helpful?
 
@@ -724,13 +724,13 @@ Copy
     
     Unable to get the default keyring: Unable to connect to the D-Bus Session Bus: exec: "dbus-launch": executable file not found in $PATH
 
-[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/linux-
-keyring-utilityGitHub](https://github.com/Keeper-Security/linux-keyring-
-utility/releases)
-
 [![Logo](https://github.com/fluidicon.png)GitHub - Keeper-Security/linux-
 keyring-utility: A utility for natively interacting with the Linux
 KeyringGitHub](https://github.com/Keeper-Security/linux-keyring-utility)
+
+[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/linux-
+keyring-utilityGitHub](https://github.com/Keeper-Security/linux-keyring-
+utility/releases)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

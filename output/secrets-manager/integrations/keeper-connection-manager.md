@@ -479,7 +479,11 @@ integration. In order to utilize this integration, you will need:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
     * The Connection Manager integration accepts the Base64 format configuration
 
@@ -493,6 +497,12 @@ protocols.
 
 Step by Step documentation for activating Keeper Secrets Manager with Keeper
 Connection Manager can be found at the link below:
+
+[![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-x-
+prod.appspot.com/o/spaces%2Fb7weUpu7VBcMnESSH8vG%2Ficon%2FAxlnehp2PPSRzr72ZUVn%2FKCM-
+square.jpg?alt=media&token=f4e6693c-289d-4760-8b8d-f5195589bc12)Vault
+IntegrationKeeper Connection Manager](https://docs.keeper.io/keeper-
+connection-manager/vault-integration)
 
 [PreviousJenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-
 plugin)[NextKubernetes External Secrets Operator](/en/keeperpam/secrets-
@@ -531,20 +541,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-A Keeper  with secrets shared to it
-
-See the  for instructions on creating an Application
-
-[![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-x-
-prod.appspot.com/o/spaces%2Fb7weUpu7VBcMnESSH8vG%2Ficon%2FAxlnehp2PPSRzr72ZUVn%2FKCM-
-square.jpg?alt=media&token=f4e6693c-289d-4760-8b8d-f5195589bc12)Vault
-IntegrationKeeper Connection Manager](https://docs.keeper.io/keeper-
-connection-manager/vault-integration)
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 

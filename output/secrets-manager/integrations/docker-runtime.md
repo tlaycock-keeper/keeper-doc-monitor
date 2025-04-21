@@ -755,9 +755,17 @@ statement will indicate the distribution the vendor has built their image
 upon. If it is not apparent from the **FROM** statement, you man check the
 Dockerfile of the **FROM** image due to inheritance.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FreLdO2dKmIXTdq7CxrOM%252FScreenshot%25202022-10-31%2520at%25202.40.53%2520PM.png%3Falt%3Dmedia%26token%3Db74d6181-d2fc-4ccb-9960-daefe6671c92&width=768&dpr=4&quality=100&sign=ac9bd028&sv=2)
+
 MySQL 8.0.31 doesn't indicate the operating system distribution in the tag
 name. On the MySQL Docker Hub page, the 8.0.31 tag links to their GitHub repo.
 From the Dockerfile we can see the distribution is Oracle Linux.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FO2s1ylVdcl24iIxLjJui%252FScreenshot%25202022-10-31%2520at%25202.41.41%2520PM.png%3Falt%3Dmedia%26token%3D1ca49e96-968d-4293-8efd-98481205936e&width=768&dpr=4&quality=100&sign=35dde456&sv=2)
 
 The purpose of checking the distribution is to determine what version of the
 **libc** library is being used. Most distributions use **GLIBC** but some,
@@ -773,6 +781,10 @@ Entrypoint and Command
 
 The next step is to determine the vendor's Docker image **ENTRYPOINT** and
 **CMD**. The Dockerfile will list the **ENTRYPOINT** and/or **CMD**.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Ff6x6wo9b2z5x3PuWPPAw%252FScreenshot%25202022-10-31%2520at%25202.52.24%2520PM.png%3Falt%3Dmedia%26token%3D5c5cdff7-258d-4524-96d5-ae908c27d3dd&width=768&dpr=4&quality=100&sign=186db616&sv=2)
 
 From the MySQL Dockerfile, the **ENTRYPOINT** is `["docker-entrypoint.sh"]`
 and the **CMD** is `["mysqld"]`. This means the **ENTRYPOINT** will be
@@ -898,6 +910,14 @@ See the  for instructions on creating an Application
 
 See instructions on setting up the KSM CLI
 
+Root MySQL DB
+
+User MySQL DB
+
+Capture Record UID for Root Record
+
+Capture Record UID for User Record
+
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
@@ -907,33 +927,9 @@ interface#initialize-the-client-device)
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
 
-Root MySQL DB
-
-User MySQL DB
-
-Capture Record UID for Root Record
-
-Capture Record UID for User Record
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FreLdO2dKmIXTdq7CxrOM%252FScreenshot%25202022-10-31%2520at%25202.40.53%2520PM.png%3Falt%3Dmedia%26token%3Db74d6181-d2fc-4ccb-9960-daefe6671c92&width=768&dpr=4&quality=100&sign=ac9bd028&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FO2s1ylVdcl24iIxLjJui%252FScreenshot%25202022-10-31%2520at%25202.41.41%2520PM.png%3Falt%3Dmedia%26token%3D1ca49e96-968d-4293-8efd-98481205936e&width=768&dpr=4&quality=100&sign=35dde456&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Ff6x6wo9b2z5x3PuWPPAw%252FScreenshot%25202022-10-31%2520at%25202.52.24%2520PM.png%3Falt%3Dmedia%26token%3D5c5cdff7-258d-4524-96d5-ae908c27d3dd&width=768&dpr=4&quality=100&sign=186db616&sv=2)
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaGj5OBZC8JJE7mt2L%252FScreen%2520Shot%25202021-07-27%2520at%252012.43.33%2520AM.png%3Falt%3Dmedia%26token%3Df772dd76-5ba1-466b-b656-784f4ba70f19&width=768&dpr=4&quality=100&sign=1406970f&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLOXFweD2UQIBMTHYVGqH%252Fimage.png%3Falt%3Dmedia%26token%3D4f4854f6-9c3f-44ae-b3b5-249dce6d34d8&width=768&dpr=4&quality=100&sign=1f0a439d&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaFttUeoqctfkrfD8p%252FScreen%2520Shot%25202021-07-27%2520at%252012.38.59%2520AM.png%3Falt%3Dmedia%26token%3D3003edef-5d7b-4b46-b1a0-6530b0ac2fc1&width=768&dpr=4&quality=100&sign=cdc4ea8e&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -945,5 +941,9 @@ files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaGNV
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaFttUeoqctfkrfD8p%252FScreen%2520Shot%25202021-07-27%2520at%252012.38.59%2520AM.png%3Falt%3Dmedia%26token%3D3003edef-5d7b-4b46-b1a0-6530b0ac2fc1&width=768&dpr=4&quality=100&sign=cdc4ea8e&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaGj5OBZC8JJE7mt2L%252FScreen%2520Shot%25202021-07-27%2520at%252012.43.33%2520AM.png%3Falt%3Dmedia%26token%3Df772dd76-5ba1-466b-b656-784f4ba70f19&width=768&dpr=4&quality=100&sign=1406970f&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLOXFweD2UQIBMTHYVGqH%252Fimage.png%3Falt%3Dmedia%26token%3D4f4854f6-9c3f-44ae-b3b5-249dce6d34d8&width=768&dpr=4&quality=100&sign=1f0a439d&sv=2)
 

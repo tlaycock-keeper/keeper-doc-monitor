@@ -781,7 +781,7 @@ reference/reporting-commands)[NextEnterprise Management
 Commands](/en/keeperpam/commander-cli/command-reference/enterprise-management-
 commands)
 
-Last updated 9 months ago
+Last updated 10 months ago
 
 Was this helpful?
 

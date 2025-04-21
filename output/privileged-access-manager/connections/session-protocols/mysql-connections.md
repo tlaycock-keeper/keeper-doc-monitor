@@ -589,6 +589,12 @@ protocol session
 
 Session Recordings - MySQL Protocol
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fw5aFPH5t5vLfk78hDtLO%252FScreenshot%25202025-01-21%2520at%252012.29.32%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Da61774c3-2773-4218-be7c-650b5ac4d7ca&width=768&dpr=4&quality=100&sign=4bc5ce04&sv=2)
+
+MySQL Session Recordings
+
 [PreviousRBI Connections](/en/keeperpam/privileged-access-
 manager/connections/session-protocols/rbi-connections)[NextSQL Server
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
@@ -628,6 +634,12 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this .
+
+  * Learn more about 
+
 Field
 
 Definition
@@ -642,12 +654,6 @@ Administrative Credential Record
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
 
-For this protocol, both graphical and the full, raw text text content of
-terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this .
-
-  * Learn more about 
-
 [page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
 
 [Session Recording and Playback](/en/keeperpam/privileged-access-
@@ -655,10 +661,4 @@ manager/session-recording-and-playback)
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
-
-MySQL Session Recordings
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fw5aFPH5t5vLfk78hDtLO%252FScreenshot%25202025-01-21%2520at%252012.29.32%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Da61774c3-2773-4218-be7c-650b5ac4d7ca&width=768&dpr=4&quality=100&sign=4bc5ce04&sv=2)
 

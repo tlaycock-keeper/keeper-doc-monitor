@@ -448,36 +448,6 @@ network/database/postgresql?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview
@@ -511,6 +481,40 @@ Last updated 2 months ago
 
 Was this helpful?
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtDpnLJxKnyL8SRvQ6EKc%252FAzure%2520PostgreSQL.jpg%3Falt%3Dmedia%26token%3D3619ac56-4546-4924-80e8-134ac9558107&width=768&dpr=4&quality=100&sign=c27e24c5&sv=2)
+
 ##
 
 Overview
@@ -525,7 +529,13 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   *   * 
+  * Keeper Secrets Manager is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
+
+  * Keeper Rotation is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
+
+  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+
+  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is able to communicate to your Postgres database
 
 ##
 
@@ -552,6 +562,8 @@ Keeper record title Ex: `dbadmin`
 Server address - _doesn't need to be publicly_ routable
 
 **Port**
+
+For default ports, see port mapping Ex: `postgresql=5432`
 
 **Use SSL**
 
@@ -664,34 +676,6 @@ Select the **PAM User** record(s) from Step 3, edit the record and open the
 Any user with `edit` rights to a **PAM User** record has the ability to setup
 rotation for that record.
 
-Keeper Secrets Manager is enabled for your
-
-Keeper Rotation is enabled for your
-
-A Keeper Secrets Manager  has been created
-
-A Keeper Rotation  is already installed, running, and is able to communicate
-to your Postgres database
-
-For default ports, see  Ex: `postgresql=5432`
-
-[application](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
-
-[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
-
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
-
-port mapping
-
 [page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
 cases/local-network#rotation-on-the-local-network)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtDpnLJxKnyL8SRvQ6EKc%252FAzure%2520PostgreSQL.jpg%3Falt%3Dmedia%26token%3D3619ac56-4546-4924-80e8-134ac9558107&width=768&dpr=4&quality=100&sign=c27e24c5&sv=2)
 

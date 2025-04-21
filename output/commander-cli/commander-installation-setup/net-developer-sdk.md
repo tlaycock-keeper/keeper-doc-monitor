@@ -448,67 +448,12 @@ PDF](/en/keeperpam/~gitbook/pdf?page=F2aegQUDSfPyMkRxDc0o&only=yes&limit=100)
 
 Keeper Commander .NET Developer SDK
 
-##
-
-Overview
-
-The Keeper Commander CLI is has been written in 3 languages (Python, .Net and
-Golang) with the source code available on Github.
-
-##
-
-.Net SDK
-
-Keeper's .Net Commander tool provides basic vault access, a developer SDK for
-vault access and administrative functions: <https://github.com/Keeper-
-Security/keeper-sdk-dotnet>[](https://github.com/Keeper-Security/keeper-sdk-
-dotnet)
-
-For source integration into your .Net code, please utilize the KeeperSDK
-Library source code: <https://github.com/Keeper-Security/keeper-sdk-
-dotnet/tree/release/KeeperSdk>[](https://github.com/Keeper-Security/keeper-
-sdk-dotnet/tree/release/KeeperSdk)
-
-###
-
-API documentation
-
-Find detailed API documentation at the following URL: <https://keeper-
-security.github.io/gitbook-keeper-
-sdk/CSharp/html/R_Project_Documentation.htm>[](https://keeper-
-security.github.io/gitbook-keeper-sdk/CSharp/html/R_Project_Documentation.htm)
-
-###
-
-Developer Requirements
-
-  * .Net Framework 4.5
-
-  * .Net Core 2.1
-
-  * .Net Standard 2.0
-
-###
-
-Examples
-
-For help with implementation of SDK features, please see the Sample
-Application: <https://github.com/Keeper-Security/keeper-sdk-
-dotnet/tree/master/Sample>[](https://github.com/Keeper-Security/keeper-sdk-
-dotnet/tree/master/Sample)
-
-The .Net Commander CLI Sample App contains several basic operations such as
-logging in, authentication with two-factor, loading and decrypting the vault
-and updating passwords. <https://github.com/Keeper-Security/keeper-sdk-
-dotnet/tree/release/Commander>[](https://github.com/Keeper-Security/keeper-
-sdk-dotnet/tree/release/Commander)
-
 [PreviousPython Developer Setup](/en/keeperpam/commander-cli/commander-
 installation-setup/developer-mode)[NextPowerShell
 Module](/en/keeperpam/commander-cli/commander-installation-setup/installation-
 on-powershell)
 
-Last updated 1 day ago
+Last updated 2 days ago
 
 Was this helpful?
 
@@ -541,4 +486,67 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+##
+
+Overview
+
+The Keeper Commander CLI is has been written in 3 languages (Python, .Net and
+Golang) with the source code available on Github.
+
+##
+
+.Net SDK
+
+Keeper's .Net Commander tool provides basic vault access, a developer SDK for
+vault access and administrative functions:
+
+For source integration into your .Net code, please utilize the KeeperSDK
+Library source code:
+
+###
+
+API documentation
+
+Find detailed API documentation at the following URL:
+
+###
+
+Developer Requirements
+
+  * .Net Framework 4.5
+
+  * .Net Core 2.1
+
+  * .Net Standard 2.0
+
+###
+
+Examples
+
+For help with implementation of SDK features, please see the Sample
+Application:
+
+The .Net Commander CLI Sample App contains several basic operations such as
+logging in, authentication with two-factor, loading and decrypting the vault
+and updating passwords.
+
+<https://github.com/Keeper-Security/keeper-sdk-
+dotnet>[](https://github.com/Keeper-Security/keeper-sdk-dotnet)
+
+<https://github.com/Keeper-Security/keeper-sdk-
+dotnet/tree/release/KeeperSdk>[](https://github.com/Keeper-Security/keeper-
+sdk-dotnet/tree/release/KeeperSdk)
+
+<https://keeper-security.github.io/gitbook-keeper-
+sdk/CSharp/html/R_Project_Documentation.htm>[](https://keeper-
+security.github.io/gitbook-keeper-sdk/CSharp/html/R_Project_Documentation.htm)
+
+<https://github.com/Keeper-Security/keeper-sdk-
+dotnet/tree/master/Sample>[](https://github.com/Keeper-Security/keeper-sdk-
+dotnet/tree/master/Sample)
+
+<https://github.com/Keeper-Security/keeper-sdk-
+dotnet/tree/release/Commander>[](https://github.com/Keeper-Security/keeper-
+sdk-dotnet/tree/release/Commander)
 

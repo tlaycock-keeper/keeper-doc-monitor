@@ -453,9 +453,44 @@ PDF](/en/keeperpam/~gitbook/pdf?page=L6p8QWE1dUUedIuZelpF&only=yes&limit=100)
 
 Understanding the Keeper Vault structure and organization for KeeperPAM
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FaQ7p5RLxwdds2EuRh3xi%252FVault%2520Structure.jpg%3Falt%3Dmedia%26token%3D0e679b03-50b6-4717-b44f-726831228e91&width=768&dpr=4&quality=100&sign=75ab8418&sv=2)
+[PreviousEnforcement Policies](/en/keeperpam/privileged-access-
+manager/getting-started/enforcement-policies)[NextRecord
+Linking](/en/keeperpam/privileged-access-manager/getting-started/record-
+linking)
+
+Last updated 2 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -510,12 +545,6 @@ and recommended setup looks something like this:
 
     * Shared Folder containing User accounts
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCtsat1SwQFigsikiCd47%252FScreenshot%25202024-12-26%2520at%252011.38.04%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D0132deb6-8b9c-4cc9-ac29-82873b0acde8&width=768&dpr=4&quality=100&sign=d559afca&sv=2)
-
-Typical Folder Setup for KeeperPAM
-
 The reason that we recommend splitting up Resources and User accounts is based
 on least privilege. In this configuration, the resources can be provisioned to
 a user without sharing access to the underlying credentials. The user accounts
@@ -527,34 +556,12 @@ below. The Administrative Credentials used for connecting to that resource are
 linked, but not directly embedded in the resource. This way, you can provide
 access to the resource without sharing the credential.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FxBYTGFGA7ABzxAOnhJcG%252FScreenshot%25202024-12-26%2520at%252011.41.33%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D2a13336a-00ae-40c5-942e-11e8edb04321&width=768&dpr=4&quality=100&sign=69d1cb51&sv=2)
-
 In this example, the linked Administrative Credential lives in the Users
 folder with separate permissions and folder privileges.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkJkYFLs5JXayhx3nCS3W%252FScreenshot%25202024-12-26%2520at%252011.46.53%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Db720c477-c17b-4275-a595-107d85125ca3&width=768&dpr=4&quality=100&sign=c2ca32d&sv=2)
-
-Linked Credentials in the Users folder
 
 At the Shared Folder level, both human users and applications can be assigned
 with access rights. This allows least privilege enforcement across employees
 and machines.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8Zd9N5ubtJResaTju33Q%252FScreenshot%25202024-12-26%2520at%252011.53.32%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D5700f75b-c640-4478-9329-26e3ae45e973&width=768&dpr=4&quality=100&sign=6b8f745f&sv=2)
-
-Human users with access to a Shared Folder
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuOSr5TUItvs4QtafVXeJ%252FScreenshot%25202024-12-26%2520at%252011.52.10%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Da629a8e0-d325-4564-bbea-a2185ee8cc63&width=768&dpr=4&quality=100&sign=3848f147&sv=2)
-
-Applications and Machines with access to a Shared Folder
 
 The fastest way to understand the relationship between records, folders,
 applications and configurations is using the [Quick Start
@@ -581,12 +588,6 @@ Management of Applications is found in the Keeper Secrets Manager section of
 the vault. An example of an Application might be "Azure DevOps Pipeline" or
 "Azure AD Rotations" as seen in the screenshot below.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfsgmSxfTlrc4RxdTqt7i%252FScreenshot%25202024-12-26%2520at%252012.57.19%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D161238df-7e7c-426a-96da-3956695d606c&width=768&dpr=4&quality=100&sign=b751dc78&sv=2)
-
-Secrets Manager Applications
-
 For more information on Applications:
 
   * [Applications](/en/keeperpam/privileged-access-manager/getting-started/applications)
@@ -603,12 +604,6 @@ device. Each Client device has a unique key to read and access the secrets.
 
 A device can be initialized through the Applications section of the vault user
 interface.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjxAxzWoNkwTk3Mx35mXC%252FScreenshot%25202024-12-26%2520at%25201.04.39%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Daf2b8bd1-7e69-4a6a-a4b0-3fa1b5b068c1&width=768&dpr=4&quality=100&sign=54d5c314&sv=2)
-
-Devices
 
 For more information on Devices:
 
@@ -628,12 +623,6 @@ in any remote or on-prem environment, powering a secure zero-trust connection.
 Typically, a Keeper Gateway is deployed to each environment that is being
 managed. For example, if you are an MSP managing 500 client environments, you
 may deploy 500 Keeper Gateways.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNIKgp1VaCP1zqf23quiX%252FScreenshot%25202024-12-26%2520at%25201.07.23%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D0106e8a1-c8a7-4701-87d9-44cdeb5cd684&width=768&dpr=4&quality=100&sign=e8b04c3b&sv=2)
-
-Keeper Gateway
 
 The architecture of the Keeper Gateway deployments is based on your use case
 and can be reviewed with our implementation team.
@@ -657,12 +646,6 @@ permission to retrieve this information.
 
 We recommend defining only **one** Configuration for each Gateway.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCHjkisV0JQqAi4SGGuhJ%252FScreenshot%25202024-12-26%2520at%25201.12.49%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Df3459046-53ec-4ed8-b5fa-88ba8d14968b&width=768&dpr=4&quality=100&sign=5766b81b&sv=2)
-
-PAM Configuration
-
 More information about PAM Configuration records:
 
   * [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
@@ -680,36 +663,18 @@ associated with a resource.
 When creating a resource, you can select from various targets, such as
 Machine, Database, Directory, etc.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqIWFAJ4zlwyOP0afYDuM%252FScreenshot%25202024-12-26%2520at%25201.52.00%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D2f3ce88d-4ecc-404c-9c73-05e575114ba3&width=768&dpr=4&quality=100&sign=2b0860ca&sv=2)
-
-Creating a PAM Resource
-
 Visit the pages linked below to learn more about each PAM Resource:
 
 PAM Record Type
 
 Supported Assets
 
-[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
 Windows, Linux, macOS devices, VMs, EC2 instances, Azure VMs, Network devices
 and other operating systems.
 
-[PAM Database ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database)
-
 MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
 
-[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-directory)
-
 Active Directory, Azure AD, OpenLDAP
-
-[PAM Remote Browser ](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-remote-browser)
 
 Web-based Applications, self-hosted apps, cloud apps, any http or https
 target.
@@ -729,19 +694,7 @@ A PAM User is linked to the PAM Resource in the "Credentials" section of the
 record. This linkage ensures that access to the resource does **not** directly
 allow access to the credential.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCIJ4xtf2Tqt36mIKdi36%252FScreenshot%25202024-12-26%2520at%25201.54.39%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D842c51df-2a6e-4486-b774-440c4c9ee5af&width=768&dpr=4&quality=100&sign=3cd51e70&sv=2)
-
-PAM User linked to PAM Resource
-
 A PAM User record can be configured for on-demand and automatic rotation.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuUwDOjhl0r67wyzFe4wc%252FScreenshot%25202024-12-26%2520at%25201.53.33%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D62dfded2-1db2-4075-9fa9-8c5a5f95bc67&width=768&dpr=4&quality=100&sign=e69a750d&sv=2)
-
-PAM User settings
 
 More information on PAM Users is found here:
 
@@ -766,42 +719,89 @@ utilizing PAM features is described in the below sections.
 
   * [Discovery](/en/keeperpam/privileged-access-manager/discovery)
 
-[PreviousEnforcement Policies](/en/keeperpam/privileged-access-
-manager/getting-started/enforcement-policies)[NextRecord
-Linking](/en/keeperpam/privileged-access-manager/getting-started/record-
-linking)
+[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
 
-Last updated 2 months ago
+[PAM Database ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database)
 
-Was this helpful?
+[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-directory)
 
-#### Company
+[PAM Remote Browser ](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-remote-browser)
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+Typical Folder Setup for KeeperPAM
 
-#### Support
+Linked Credentials in the Users folder
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+Human users with access to a Shared Folder
 
-#### Solutions
+Applications and Machines with access to a Shared Folder
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+Secrets Manager Applications
 
-#### Pricing
+Devices
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+Keeper Gateway
 
-© 2025 Keeper Security, Inc.
+PAM Configuration
+
+Creating a PAM Resource
+
+PAM User linked to PAM Resource
+
+PAM User settings
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FaQ7p5RLxwdds2EuRh3xi%252FVault%2520Structure.jpg%3Falt%3Dmedia%26token%3D0e679b03-50b6-4717-b44f-726831228e91&width=768&dpr=4&quality=100&sign=75ab8418&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCtsat1SwQFigsikiCd47%252FScreenshot%25202024-12-26%2520at%252011.38.04%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D0132deb6-8b9c-4cc9-ac29-82873b0acde8&width=768&dpr=4&quality=100&sign=d559afca&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FxBYTGFGA7ABzxAOnhJcG%252FScreenshot%25202024-12-26%2520at%252011.41.33%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D2a13336a-00ae-40c5-942e-11e8edb04321&width=768&dpr=4&quality=100&sign=69d1cb51&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkJkYFLs5JXayhx3nCS3W%252FScreenshot%25202024-12-26%2520at%252011.46.53%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Db720c477-c17b-4275-a595-107d85125ca3&width=768&dpr=4&quality=100&sign=c2ca32d&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8Zd9N5ubtJResaTju33Q%252FScreenshot%25202024-12-26%2520at%252011.53.32%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D5700f75b-c640-4478-9329-26e3ae45e973&width=768&dpr=4&quality=100&sign=6b8f745f&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuOSr5TUItvs4QtafVXeJ%252FScreenshot%25202024-12-26%2520at%252011.52.10%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Da629a8e0-d325-4564-bbea-a2185ee8cc63&width=768&dpr=4&quality=100&sign=3848f147&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfsgmSxfTlrc4RxdTqt7i%252FScreenshot%25202024-12-26%2520at%252012.57.19%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D161238df-7e7c-426a-96da-3956695d606c&width=768&dpr=4&quality=100&sign=b751dc78&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjxAxzWoNkwTk3Mx35mXC%252FScreenshot%25202024-12-26%2520at%25201.04.39%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Daf2b8bd1-7e69-4a6a-a4b0-3fa1b5b068c1&width=768&dpr=4&quality=100&sign=54d5c314&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNIKgp1VaCP1zqf23quiX%252FScreenshot%25202024-12-26%2520at%25201.07.23%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D0106e8a1-c8a7-4701-87d9-44cdeb5cd684&width=768&dpr=4&quality=100&sign=e8b04c3b&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCHjkisV0JQqAi4SGGuhJ%252FScreenshot%25202024-12-26%2520at%25201.12.49%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Df3459046-53ec-4ed8-b5fa-88ba8d14968b&width=768&dpr=4&quality=100&sign=5766b81b&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqIWFAJ4zlwyOP0afYDuM%252FScreenshot%25202024-12-26%2520at%25201.52.00%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D2f3ce88d-4ecc-404c-9c73-05e575114ba3&width=768&dpr=4&quality=100&sign=2b0860ca&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCIJ4xtf2Tqt36mIKdi36%252FScreenshot%25202024-12-26%2520at%25201.54.39%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D842c51df-2a6e-4486-b774-440c4c9ee5af&width=768&dpr=4&quality=100&sign=3cd51e70&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuUwDOjhl0r67wyzFe4wc%252FScreenshot%25202024-12-26%2520at%25201.53.33%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D62dfded2-1db2-4075-9fa9-8c5a5f95bc67&width=768&dpr=4&quality=100&sign=e69a750d&sv=2)
 

@@ -455,43 +455,11 @@ PDF](/en/keeperpam/~gitbook/pdf?page=B0TiOVywvfeGVLOI6Wlf&only=yes&limit=100)
 
 Sign your git commits using an SSH key stored in your Keeper Vault
 
-[PreviousEntrust HSM Encryption](/en/keeperpam/secrets-
-manager/integrations/entrust-hsm)[NextGitHub Actions](/en/keeperpam/secrets-
-manager/integrations/github-actions)
-
-Last updated 3 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSo22AInILhJ9X94G8D1x%252Fksm-
+header-
+git.png%3Falt%3Dmedia%26token%3Da01381fe-77f0-47b5-8e3f-522da742c8b1&width=768&dpr=4&quality=100&sign=b195a6f5&sv=2)
 
 ##
 
@@ -674,6 +642,10 @@ Once you have signed a commit and pushed it to GitHub or GitLab, you should
 see the verified tag next to your commit in the Git history automatically. No
 further work is needed.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9pW1WJbiObPFFTAMVo2o%252Fimage.png%3Falt%3Dmedia%26token%3D32e1a4f1-b7d4-4cc1-8fbf-c54dc18a0a28&width=768&dpr=4&quality=100&sign=86b70c72&sv=2)
+
 ###
 
 Local verification
@@ -738,13 +710,41 @@ the Keeper SSH Agent.
 
   * Learn more about the [Keeper SSH Agent](/en/keeperpam/privileged-access-manager/ssh-agent) and specifically [Integration with Git](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-git)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSo22AInILhJ9X94G8D1x%252Fksm-
-header-
-git.png%3Falt%3Dmedia%26token%3Da01381fe-77f0-47b5-8e3f-522da742c8b1&width=768&dpr=4&quality=100&sign=b195a6f5&sv=2)
+[PreviousEntrust HSM Encryption](/en/keeperpam/secrets-
+manager/integrations/entrust-hsm)[NextGitHub Actions](/en/keeperpam/secrets-
+manager/integrations/github-actions)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9pW1WJbiObPFFTAMVo2o%252Fimage.png%3Falt%3Dmedia%26token%3D32e1a4f1-b7d4-4cc1-8fbf-c54dc18a0a28&width=768&dpr=4&quality=100&sign=86b70c72&sv=2)
+Last updated 3 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

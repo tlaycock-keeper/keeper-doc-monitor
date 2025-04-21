@@ -471,43 +471,10 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-Mb8EplHSWmubOCYOX0_&only=yes&limit=100)
 A collection of Ansible plugins that interact with your Keeper account and can
 be used in your automations.
 
-[PreviousAnsible](/en/keeperpam/secrets-
-manager/integrations/ansible)[NextAnsible Tower](/en/keeperpam/secrets-
-manager/integrations/ansible/ansible-tower)
-
-Last updated 3 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG-
+_u0H2AJBEVfeYf%252F-MkdG4aCrzLanoVIXeNo%252Fansible-plugin-
+header.jpg%3Falt%3Dmedia%26token%3D70c9a583-5939-48cc-990b-65c60094663a&width=768&dpr=4&quality=100&sign=e9ef641e&sv=2)
 
 ##
 
@@ -649,9 +616,20 @@ Copy
 
 Generate a Config File
 
+Prior to proceeding with this guide, make sure you meet all the
+[prerequisites](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
+plugin#prerequisites) and have the following:
+
   * KSM Application and it's [One-Time Access Token](/en/keeperpam/secrets-manager/quick-start-guide#create-a-secrets-manager-client-device-1)
 
-  * 
+  * [Keeper Ansible module](/en/keeperpam/secrets-manager/integrations/ansible/ansible-plugin#install-keeper-ansible-module) installed
+
+In order to use the Ansible plugin for Keeper Secrets Manager, a [Keeper
+config file](/en/keeperpam/secrets-manager/about/secrets-manager-
+configuration) is required. Once you have a config file, the configuration
+values can be placed into the [Ansible variable](/en/keeperpam/secrets-
+manager/integrations/ansible/ansible-plugin#ansible-variables) files. These
+variable files can be encrypted with Ansible vault.
 
 Using the Keeper Ansible module and the generated One-Time Access Token,
 generate a Configuration file:
@@ -2006,28 +1984,41 @@ Copy
     An exception occurred during task execution. To see the full traceback, use -vvv. The error was: Exception: Keeper Ansible error: There is no config file and the Ansible variable contain no config keys. Will not be able to connect to the Keeper server.
     fatal: [localhost]: FAILED! => {"msg": "Unexpected failure during module execution.", "stdout": ""}
 
-Prior to proceeding with this guide, make sure you meet all the  and have the
-following:
+[PreviousAnsible](/en/keeperpam/secrets-
+manager/integrations/ansible)[NextAnsible Tower](/en/keeperpam/secrets-
+manager/integrations/ansible/ansible-tower)
 
-installed
+Last updated 3 months ago
 
-In order to use the Ansible plugin for Keeper Secrets Manager, a [Keeper
-config file](/en/keeperpam/secrets-manager/about/secrets-manager-
-configuration) is required. Once you have a config file, the configuration
-values can be placed into the  files. These variable files can be encrypted
-with Ansible vault.
+Was this helpful?
 
-[prerequisites](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
-plugin#prerequisites)
+#### Company
 
-[Keeper Ansible module](/en/keeperpam/secrets-
-manager/integrations/ansible/ansible-plugin#install-keeper-ansible-module)
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-[Ansible variable](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
-plugin#ansible-variables)
+#### Support
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG-
-_u0H2AJBEVfeYf%252F-MkdG4aCrzLanoVIXeNo%252Fansible-plugin-
-header.jpg%3Falt%3Dmedia%26token%3D70c9a583-5939-48cc-990b-65c60094663a&width=768&dpr=4&quality=100&sign=e9ef641e&sv=2)
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

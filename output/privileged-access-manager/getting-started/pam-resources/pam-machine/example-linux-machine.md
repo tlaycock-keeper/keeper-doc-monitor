@@ -465,6 +465,45 @@ PDF](/en/keeperpam/~gitbook/pdf?page=yTxKafHuggjNONmVZ9Kh&only=yes&limit=100)
 
 Configuring SSH Server as a PAM Machine Record
 
+[PreviousPAM Machine](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-machine)[NextExample: Azure Windows
+VM](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-
+machine/example-azure-windows-vm)
+
+Last updated 2 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ##
 
 Overview
@@ -478,9 +517,7 @@ Prerequisites
 
 Prior to proceeding with this guide, make sure you have
 
-  1. [Installed and configured the Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways/one-time-access-token)
-
-  2. [Set up a PAM Configuration for your target Environment ](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
+  1.   2. 
 
 ##
 
@@ -599,10 +636,6 @@ Administrative Credential Record
 
 Linked PAM User credential used for connection and administrative operations
 
-**Required** Visit this [section](/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-machine/example-linux-
-machine#administrative-credential-record) for more details
-
 Protocol
 
 Native protocol used for creating a session from the Gateway to the target
@@ -613,18 +646,10 @@ Session Recording
 
 Options for recording sessions and typescripts
 
-See [session recording](/en/keeperpam/privileged-access-manager/session-
-recording-and-playback)
-
 Connection Parameters
 
 Connection-specific protocol settings which can vary based on the protocol
 type.
-
-See this [section](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/ssh-connections) for SSH protocol
-settings. We recommend specifying the **Connection Port** at a minimum. E.g.
-"22" for SSH.
 
 ###
 
@@ -633,10 +658,6 @@ Administrative Credential Record
 The **Admin Credential Record** in the PAM Machine links the admin user to the
 PAM Machine record in your Keeper Vault. This admin user is used for
 performing password rotations and authenticating connections.
-
-User Accounts can be configured on the PAM User record. Visit this
-[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user) for more information on the PAM User.
 
 ####
 
@@ -650,57 +671,52 @@ credential.
 
 Sharing PAM Machine Records
 
-PAM Machine records can be shared with other Keeper users within your
-organization. However, the recipient must have the [appropriate PAM
-enforcement policies](/en/keeperpam/privileged-access-manager/getting-
-started/enforcement-policies) in place to utilize KeeperPAM features on the
-shared PAM records.
-
 When sharing a PAM Machine record, the linked admin credentials will **not**
 be shared. For example, if the PAM Machine is configured with a Linux Machine,
 the recipient can connect to the Linux Machine on the PAM Machine record
 without having direct access to the linked credentials.
 
-  * Learn more about [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+  * 
 
-[PreviousPAM Machine](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-machine)[NextExample: Azure Windows
-VM](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-
-machine/example-azure-windows-vm)
+**Required** Visit this  for more details
 
-Last updated 2 months ago
+See
 
-Was this helpful?
+See this  for SSH protocol settings. We recommend specifying the **Connection
+Port** at a minimum. E.g. "22" for SSH.
 
-#### Company
+User Accounts can be configured on the PAM User record. Visit this  for more
+information on the PAM User.
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+PAM Machine records can be shared with other Keeper users within your
+organization. However, the recipient must have the  in place to utilize
+KeeperPAM features on the shared PAM records.
 
-#### Support
+Learn more about
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+[Installed and configured the Keeper Gateway](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/one-time-access-token)
 
-#### Solutions
+[Set up a PAM Configuration for your target Environment
+](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
 
-#### Pricing
+[appropriate PAM enforcement policies](/en/keeperpam/privileged-access-
+manager/getting-started/enforcement-policies)
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+[Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-
+started/sharing-and-access-control)
 
-© 2025 Keeper Security, Inc.
+[session recording](/en/keeperpam/privileged-access-manager/session-recording-
+and-playback)
+
+[section](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/ssh-connections)
+
+[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine/example-linux-machine#administrative-credential-record)
 
 Linux Machine Example
 

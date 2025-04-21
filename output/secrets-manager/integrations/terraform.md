@@ -523,7 +523,11 @@ utilize this integration, you will need:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
     * The Terraform integration accepts JSON and Base 64 format configurations
 
@@ -1126,10 +1130,6 @@ For more examples, check out the [examples folder](https://github.com/keeper-
 security/terraform-provider-secretsmanager/tree/master/examples) in the source
 code.
 
-A Keeper  with secrets shared to it
-
-See the  for instructions on creating an Application
-
 Keeper provides Terraform resources for the major Keeper record types . Using
 these resources, Keeper records can be created using the Keeper Secrets
 Manager Terraform plugin.
@@ -1193,12 +1193,6 @@ security/secretsmanager/latest/docs/data-sources/ssh_keys)
 
 [SSN Card](https://registry.terraform.io/providers/keeper-
 security/secretsmanager/latest/docs/data-sources/ssn_card)
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 
 [shown above](/en/keeperpam/secrets-manager/integrations/terraform#list-of-
 supported-record-types)

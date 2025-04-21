@@ -450,7 +450,7 @@ Instructions on uninstalling Keeper Commander
 installation-setup/using-commander-with-aws-lambda)[NextCommand
 Reference](/en/keeperpam/commander-cli/command-reference)
 
-Last updated 8 months ago
+Last updated 9 months ago
 
 Was this helpful?
 

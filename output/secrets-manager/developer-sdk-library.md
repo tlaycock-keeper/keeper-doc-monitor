@@ -458,7 +458,7 @@ Sample code and SDK integration instructions for Keeper Secrets Manager
 rotation)[NextPython SDK](/en/keeperpam/secrets-manager/developer-sdk-
 library/python-sdk)
 
-Last updated 11 days ago
+Last updated 12 days ago
 
 Was this helpful?
 
@@ -2171,6 +2171,12 @@ Copy
     	println("New record UID = [", recordUid, "]")
     }
 
+Additional secret creation features and [Record Type](/en/keeperpam/commander-
+cli/command-reference/record-commands/default-record-types) and [Record
+Fields](/en/keeperpam/commander-cli/command-reference/record-commands/default-
+record-types#field-types) validation coming in future releases of Keeper
+Secrets Manager
+
 ##
 
 Delete a Secret
@@ -2287,10 +2293,6 @@ See the section for how to initialize a config file.
 
 See the section for how to initialize a config file.
 
-Additional secret creation features and [Record Type](/en/keeperpam/commander-
-cli/command-reference/record-commands/default-record-types) and  validation
-coming in future releases of Keeper Secrets Manager
-
 [Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
 library#initialization)
 
@@ -2311,9 +2313,6 @@ library#initialization)
 
 [Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
 library#initialization)
-
-[Record Fields](/en/keeperpam/commander-cli/command-reference/record-
-commands/default-record-types#field-types)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

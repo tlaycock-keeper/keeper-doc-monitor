@@ -438,41 +438,6 @@ user?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Prerequisites 
-  * Obtain Okta API Token
-  * Step 2: Set Up Rotation Record
-  * Step 3: Add PAM Script
-  * Step 4: Configure Password Rotation Settings
-  * Environment Setup
-  * Bash Script
-  * Python Script
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=1pETl8RervngFrGh7NaV&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [SaaS Accounts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
-
-# Okta User
-
-Rotating Okta user accounts using the Okta API
-
-[PreviousSaaS Accounts](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/saas-accounts)[NextSnowflake
-User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/saas-accounts/snowflake-user)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -503,6 +468,17 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=1pETl8RervngFrGh7NaV&only=yes&limit=100)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -529,9 +505,7 @@ Prerequisites
 
 Obtain Okta API Token
 
-  1. Follow the steps in the official [Okta documentation](https://developer.okta.com/docs/guides/create-an-api-token/main/) to generate an API token.
-
-  2. Store this API token in a Keeper record. The record can be of any type, but for this example, we will use a "Login" type.
+  1.   2. Store this API token in a Keeper record. The record can be of any type, but for this example, we will use a "Login" type.
 
      * Store the API Token in the "password" field.
 
@@ -585,6 +559,19 @@ Bash Script
 The Bash script below works on the latest Docker version of the Keeper Gateway
 or any Linux environment that has `jq` installed.
 
+###
+
+Python Script
+
+The Python script below is well-commented and follows best practices. It
+imports necessary modules, initializes variables, and defines functions for
+various tasks like finding a password by its title, fetching all Okta users,
+and rotating the password for the particular user.
+
+Follow the steps in the official  to generate an API token.
+
+Attach the below  or  script that will perform the password rotation.
+
 Copy
 
     
@@ -629,15 +616,6 @@ Copy
         "oldPassword": "'"$OLD_PASSWORD"'",
         "newPassword": "'"$NEW_PASSWORD"'"
     }' "$OKTA_ORG_URL/api/v1/users/$USER_ID/credentials/change_password"
-
-###
-
-Python Script
-
-The Python script below is well-commented and follows best practices. It
-imports necessary modules, initializes variables, and defines functions for
-various tasks like finding a password by its title, fetching all Okta users,
-and rotating the password for the particular user.
 
 Copy
 
@@ -784,7 +762,32 @@ Copy
         loop.run_until_complete(main())
     
 
-Attach the below  or  script that will perform the password rotation.
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [SaaS Accounts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
+
+# Okta User
+
+Rotating Okta user accounts using the Okta API
+
+[PreviousSaaS Accounts](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-accounts)[NextSnowflake
+User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/saas-accounts/snowflake-user)
+
+  * Overview
+  * Prerequisites 
+  * Obtain Okta API Token
+  * Step 2: Set Up Rotation Record
+  * Step 3: Add PAM Script
+  * Step 4: Configure Password Rotation Settings
+  * Environment Setup
+  * Bash Script
+  * Python Script
+
+[Okta documentation](https://developer.okta.com/docs/guides/create-an-api-
+token/main/)
 
 [Python](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 use-cases/saas-accounts/okta-user#python-script)

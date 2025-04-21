@@ -450,7 +450,7 @@ Keeper SSH Agent integration for Git Authentication and Commit Signing
 [PreviousSSH Agent](/en/keeperpam/privileged-access-manager/ssh-
 agent)[NextDiscovery](/en/keeperpam/privileged-access-manager/discovery)
 
-Last updated 1 day ago
+Last updated 2 days ago
 
 Was this helpful?
 
@@ -506,7 +506,9 @@ Prerequisites
 
 Features
 
-  *   * 
+  * [GitHub Authentication](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-git#github-authentication)
+
+  * [Signing Commits](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-git#signing-commits)
 
 ##
 
@@ -814,12 +816,6 @@ is performed
 
 [Terminal Configuration](/en/keeperpam/privileged-access-manager/ssh-
 agent#terminal-configuration)
-
-[GitHub Authentication](/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git#github-authentication)
-
-[Signing Commits](/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git#signing-commits)
 
 Keeper SSH Key for Github Authentication
 

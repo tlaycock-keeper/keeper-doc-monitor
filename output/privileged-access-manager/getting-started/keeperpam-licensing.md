@@ -428,36 +428,6 @@ manager/getting-started/keeperpam-licensing?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * KeeperPAM Licensing Requirements 
@@ -482,24 +452,17 @@ PDF](/en/keeperpam/~gitbook/pdf?page=hYcvUHfRABNhQ6YDRqwt&only=yes&limit=100)
 
 Features included with the PAM License
 
-[PreviousConnection and Tunnel Security](/en/keeperpam/privileged-access-
-manager/getting-started/architecture/connection-and-tunnel-
-security)[NextEnforcement Policies](/en/keeperpam/privileged-access-
-manager/getting-started/enforcement-policies)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 ##
 
 KeeperPAM Licensing Requirements
 
 In order to enable and use KeeperPAM, the following are required:
 
-  * or  License 
+  * [Keeper Business](https://www.keepersecurity.com/business.html) or [Keeper Enterprise](https://www.keepersecurity.com/enterprise.html) License 
 
-  *     * A minimum of 5 seats 
+  * [Privileged Access Manager Add-On](https://www.keepersecurity.com/privileged-access-management/)
+
+    * A minimum of 5 seats 
 
 A Keeper Business or Keeper Enterprise License is required to purchase the
 KeeperPAM add-on.
@@ -509,8 +472,9 @@ KeeperPAM add-on.
 Trial License
 
 If you are not a Keeper customer or do not have the required license, you can
-start a free . The enterprise trial will also **include** the Privileged
-Access Manager Add-on.
+start a free [enterprise license trial](https://www.keepersecurity.com/start-
+business-trial.html). The enterprise trial will also **include** the
+Privileged Access Manager Add-on.
 
 ##
 
@@ -541,6 +505,11 @@ features are included:
 
 What is the difference between KeeperPAM and Keeper Connection Manager (Self-
 Hosted)?
+
+KeeperPAM is a cloud-native privileged access solution that requires only a
+lightweight gateway installation, while Keeper Connection Manager (KCM) is a
+fully self-hosted solution. For more information, visit this
+[page](/en/keeperpam#keeperpam-vs.-kcm).
 
 ##
 
@@ -576,6 +545,10 @@ functionality for only 10 of them, they would purchase:
 ##
 
 MSPs
+
+Features available with the KeeperPAM Add-On are listed
+[here](/en/keeperpam/privileged-access-manager/getting-started/keeperpam-
+licensing#features-included-with-keeperpam).
 
 ##
 
@@ -614,9 +587,48 @@ both the cloud and self-hosted KCM.
 
 **Ready to Upgrade?**
 
-KeeperPAM is a cloud-native privileged access solution that requires only a
-lightweight gateway installation, while Keeper Connection Manager (KCM) is a
-fully self-hosted solution. For more information, visit this .
+To purchase, upgrade, or if you have any questions, contact your Keeper
+account manager or use our [online
+form](https://www.keepersecurity.com/contact.html?t=b&r=sales).
+
+[PreviousConnection and Tunnel Security](/en/keeperpam/privileged-access-
+manager/getting-started/architecture/connection-and-tunnel-
+security)[NextEnforcement Policies](/en/keeperpam/privileged-access-
+manager/getting-started/enforcement-policies)
+
+Last updated 2 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 Keeper’s  allows MSPs and their Managed Companies (MCs) to allocate Keeper
 licenses to their users and pay only for used licenses at the beginning of the
@@ -624,28 +636,6 @@ following month.
 
 KeeperPAM will be a  that MSPs can add or remove at any time for their Managed
 Companies.
-
-Features available with the KeeperPAM Add-On are listed .
-
-To purchase, upgrade, or if you have any questions, contact your Keeper
-account manager or use our .
-
-[Keeper Business](https://www.keepersecurity.com/business.html)
-
-[Keeper Enterprise](https://www.keepersecurity.com/enterprise.html)
-
-[Privileged Access Manager Add-On](https://www.keepersecurity.com/privileged-
-access-management/)
-
-[enterprise license trial](https://www.keepersecurity.com/start-business-
-trial.html)
-
-[online form](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-
-[here](/en/keeperpam/privileged-access-manager/getting-started/keeperpam-
-licensing#features-included-with-keeperpam)
-
-[page](/en/keeperpam#keeperpam-vs.-kcm)
 
 [MSP Consumption Model](https://docs.keeper.io/en/enterprise-guide/keeper-
 msp/consumption-based-billing)

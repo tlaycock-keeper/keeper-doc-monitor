@@ -452,7 +452,7 @@ Installation and setup of the Keeper Gateway
 started/devices)[NextCreating a Gateway](/en/keeperpam/privileged-access-
 manager/getting-started/gateways/one-time-access-token)
 
-Last updated 27 days ago
+Last updated 28 days ago
 
 Was this helpful?
 
