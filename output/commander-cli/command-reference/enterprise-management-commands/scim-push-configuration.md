@@ -644,6 +644,12 @@ Google #3
 
 File attachment with Google Service Account credentials
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6DJsI6QFbIhARs3Tj7Zp%252FScreen%2520Shot%25202023-06-20%2520at%252010.48.24%2520AM.png%3Falt%3Dmedia%26token%3D50e318aa-556c-42ad-b867-521b2204191d&width=768&dpr=4&quality=100&sign=fed024e2&sv=2)
+
+Record in Keeper containing the Google Cloud service account information
+
 ###
 
 Pushing Provisioning Data
@@ -762,10 +768,4 @@ function)
 
 [scim push](/en/keeperpam/commander-cli/command-reference/enterprise-
 management-commands#scim-command)
-
-Record in Keeper containing the Google Cloud service account information
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6DJsI6QFbIhARs3Tj7Zp%252FScreen%2520Shot%25202023-06-20%2520at%252010.48.24%2520AM.png%3Falt%3Dmedia%26token%3D50e318aa-556c-42ad-b867-521b2204191d&width=768&dpr=4&quality=100&sign=fed024e2&sv=2)
 

@@ -1,6 +1,6 @@
 [](https://docs.keeper.io/en/keeperpam/ "Go back to content")
 
-[All pages](?limit=100)
+[All pages](?limit=300)
 
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
@@ -9,134 +9,158 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 Loading...
 
-# Applications
+# KeeperPAM
 
-Secrets Manager Applications with KeeperPAM
+KeeperPAM is a modern, cloud-based Privileged Access Manager
 
-###
+##
 
-What's an Application?
+Overview
 
-A Secrets Manager Application allows a machine or device to communicate with
-the Keeper vault, retrieve assigned records and decrypt the data.
+KeeperPAM is a next-gen privileged access management solution that secures and
+manages access to critical resources, including servers, web apps, databases
+and workloads.
 
-Folders are shared to the application, similar to how users are folders are
-shared to users. This gives the application the capability of accessing and
-decrypting the records in the folder.
+KeeperPAM consolidates enterprise password management, secrets management,
+connection management, endpoint privileged management, zero-trust network
+access, remote browser isolation and a cloud-based access control plane in one
+unified product.
 
-###
+To learn more about KeeperPAM or sign up for a trial:
 
-Creating an Application
-
-From the Keeper Vault, go to Secrets Manager and click on Create Application.
-
-  * The Application Name typically represents the use case or environment where it is being used
-
-  * The Folder selected is where the application is assigned. An application can be added to any number of shared folders.
-
-  * Record permissions give the application either read-only or read/write access to the folder. This is an additional restriction on top of the existing shared folder permissions.
-
-  * Click on Generate Access Token to create the first access token, representing the first device
-
-  * If you don't plan to set up a device yet, the first access token can be discarded
+  * 
 
 ###
 
-Generating a One-Time Access Token
+About this Documentation
 
-When creating an application, a one-time access token for the first Device is
-provided. This one-time access token is supplied to the 3rd party system,
-Keeper Secrets Manager SDK, Keeper Secrets Manager CLI or other device which
-needs to access information from the vault.
+This documentation is broken out into the following sections:
 
-After creating the application, it is managed from the Secrets Manager screen.
-You can then assign additional devices or Keeper Gateways.
+  *   *   *   * 
 
-Applications can be added to new or existing Shared Folders.
-
-Edit the Shared Folder to assign the application.
-
-By assigning the Application to shared folders, the application's devices can
-send Keeper Secrets Manager API requests to the Keeper vault to access and
-manage the records assigned. There are many use cases where a device can use
-Keeper Secrets Manager APIs to communicate with the Keeper vault. Below are a
-few examples.
+Additional documentation on the Keeper platform can be found here:
 
   *   *   * 
 
+##
+
+KeeperPAM vs. Keeper Connection Manager
+
+KeeperPAM is a cloud-native privileged access solution that requires only a
+lightweight gateway installation, while Keeper Connection Manager (KCM) is a
+fully self-hosted solution.
+
+KeeperPAM works through outbound-only connections with zero-knowledge
+encryption, eliminating the need for inbound firewall rules or direct line-of-
+sight to resources. In contrast, KCM is fully hosted by the customer with
+control over the authentication, database, web server, reverse proxy and
+session recordings.
+
+Customers who purchase KeeperPAM may use either the cloud version (described
+in this documentation) or the self-hosted connection manager as part of the
+license.
+
+##
+
+Features
+
+KeeperPAM provides the following capabilities:
+
+  * Zero-trust connections launched from the Vault
+
+  * Tunnels established from the Desktop App for ZTNA
+
+  * Sharing connections without exposing credentials
+
+  * Sharing tunnels on a time-limited basis
+
+  * Built-in SSH Agent for use with and without tunneling
+
+  * Launching remote browser isolation sessions
+
+  * Session recording and playback
+
+  * File transfer with drag-and-drop
+
+  * Splitting credentials between PAM Resources and PAM Users
+
+  * Discovery of resources
+
+  * All new Keeper Gateway setup wizard
+
+  * Docker-based deployment of the Keeper Gateway
+
+  * Role-based enforcement policies covering PAM use cases
+
+  * Event reporting of all PAM activity with SIEM integration
+
 ###
 
-Assigning Gateways to Applications
+Contact the Keeper Team
 
-Keeper Gateways are created and associated to an application. To create a new
-Gateway, open the application and click on the "Gateways" tab. Select
-"Provision Gateway" to create a Gateway.
+If you are an existing customer, your customer success team can activate
+KeeperPAM in your account.
 
-Alternatively, Keeper provides a wizard that creates several components at
-once, and automatically links everything together. From the main vault screen,
-select "**Create New** " then "**Gateway** ".
+  * 
 
-The "Project Name" is used to create a PAM Configuration, Gateway, Application
-and optionally a set of example folders and records.
+For technical questions, you can also email **pam@keepersecurity.com**.
 
-[Secrets Manager CLI](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
-manager/secrets-manager-command-line-interface)
+###
 
-[Developer SDKs](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
-manager/developer-sdk-library)
+Next Steps
 
-[Integrations](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
-manager/integrations)
+  *   *   * 
 
-One-Time Access Token
+of KeeperPAM
 
-Managing Applications
+Launch the
 
-Creating a Shared Folder
+Deep dive into the
 
-Add Application to Shared Folder
+[**KeeperPAM Website**](https://www.keepersecurity.com/privileged-access-
+management/)
 
-Assigning a Gateway to an Application
+[Privileged Access
+Manager](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/setup-steps)
 
-Create a Gateway and associated applications
+[Endpoint Privilege
+Manager](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/endpoint-privilege-
+manager/overview)
 
-Gateway Creation Wizard
+[Secrets Manager](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
+manager/overview)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlGKhrtW3C17QpVPL2y1U%252FApplications.jpg%3Falt%3Dmedia%26token%3D3a9db568-10db-414c-a954-ec26f8b66dc9&width=768&dpr=4&quality=100&sign=8ecfa768&sv=2)
+[Commander CLI](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-
+cli/overview)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7c4Wl59Aw89PNoAh2jqH%252FScreenshot%25202024-12-26%2520at%25207.04.55%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D6283ebab-
-de8d-49d7-b12c-4933c7e68a20&width=768&dpr=4&quality=100&sign=3b0cca74&sv=2)
+[Enterprise Admin Guide](https://docs.keeper.io/en/enterprise-guide)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fxd8DfE0CZZHJz6L6fQul%252FScreenshot%25202024-12-26%2520at%25207.05.15%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D934afd24-1594-48eb-a80c-d859d40e419e&width=768&dpr=4&quality=100&sign=993a8ab0&sv=2)
+[Keeper Connection Manager (self-hosted)](https://docs.keeper.io/en/keeper-
+connection-manager)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FrGAwVXeftS4nvxQgyt0c%252FScreenshot%25202024-12-26%2520at%25207.05.39%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D63128e5b-44d9-4cb1-86e6-d4251ae3d10f&width=768&dpr=4&quality=100&sign=b7b2c88a&sv=2)
+[Documentation Home](https://docs.keeper.io/en)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FmoLDmyO7KrkidzqaItHt%252FScreenshot%25202024-12-26%2520at%25207.07.40%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D961bbddf-b14a-4d82-a0f7-9277548deb51&width=768&dpr=4&quality=100&sign=81766c5e&sv=2)
+[Contact our team](https://www.keepersecurity.com/contact.html?t=b&r=sales)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fj52SOKVTh70KYp2hY5m3%252FScreenshot%25202024-12-26%2520at%25207.08.09%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dd08bcd35-0807-4f66-8c2e-d87da108d34f&width=768&dpr=4&quality=100&sign=b6e2b076&sv=2)
+[Start the setup](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
+access-manager/setup-steps)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuurHOOWU1OArMPW26bov%252FScreenshot%25202024-12-26%2520at%25207.21.31%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dd09b8ae9-f50f-455d-acd2-4b33947c6c64&width=768&dpr=4&quality=100&sign=e71a85c&sv=2)
+[Quick Start:
+Sandbox](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/quick-start-sandbox)
+
+[Getting Started guide for
+KeeperPAM](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/getting-started)
+
+KeeperPAM Zero-Trust Platform
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FMhDrfJxtwD5BfXTzW30Y%252FScreenshot%25202024-12-26%2520at%25207.25.56%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Ddf02b30a-eccb-4df2-9ecf-
-dc726ed6da4c&width=768&dpr=4&quality=100&sign=1a21cd7f&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FClb20vtKpGMCPIFIVslS%252FKeeperPAM%2520overview.jpg%3Falt%3Dmedia%26token%3D463010f5-1a94-4a9a-ad0e-8cce36c9127c&width=768&dpr=4&quality=100&sign=e8a341e3&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FD8CTwQzk8HCmJnqzuxac%252FScreenshot%25202024-12-26%2520at%25207.26.16%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D6fd67625-7400-4857-8a6f-b02874a46f6c&width=768&dpr=4&quality=100&sign=1e38b3ec&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FN0RzwLsEtlnamuEKIIrB%252FZT%2520Platform.png%3Falt%3Dmedia%26token%3Da9cba17a-8a64-4e31-9754-d2967ce0a71b&width=768&dpr=4&quality=100&sign=a8bbefe3&sv=2)
 

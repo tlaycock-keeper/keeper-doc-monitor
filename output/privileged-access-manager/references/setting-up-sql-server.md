@@ -470,7 +470,7 @@ manager/references/setting-up-winrm)[NextDatabase Import and
 Export](/en/keeperpam/privileged-access-manager/references/database-import-
 and-export)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

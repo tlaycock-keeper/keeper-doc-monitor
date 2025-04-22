@@ -512,15 +512,7 @@ Prior to setting up password rotation, make sure to have the following set up:
 
   * Learn about KeeperPAM in the [Getting Started](/en/keeperpam/privileged-access-manager/getting-started) section
 
-  * [Enable Enforcement Policies](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enable-enforcement-policies)
-
-  * [Deploy a Keeper Gateway](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#deploy-a-keeper-gateway)
-
-  * [Create a PAM User record](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#create-a-pam-user-record)
-
-  * [Create a PAM Resource](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#create-a-pam-resource)
-
-  * [Configure rotation settings](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#configure-rotation-settings)
+  *   *   *   *   * 
 
 ###
 
@@ -769,6 +761,21 @@ Record Import
 Keeper supports importing in bulk from JSON format. See the [Importing PAM
 Records](/en/keeperpam/privileged-access-manager/references/importing-pam-
 records) section for more details.
+
+[Enable Enforcement Policies](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-overview#enable-enforcement-policies)
+
+[Deploy a Keeper Gateway](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-overview#deploy-a-keeper-gateway)
+
+[Create a PAM User record](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-overview#create-a-pam-user-record)
+
+[Create a PAM Resource](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-overview#create-a-pam-resource)
+
+[Configure rotation settings](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-overview#configure-rotation-settings)
 
 On the "Rotation Settings" section of the PAM User vault record, you can
 configure how credential rotation is managed.

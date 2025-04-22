@@ -528,11 +528,7 @@ to utilize this integration, you will need:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
-
-    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
-
-  * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
     * The HashiCorp Vault integration accepts our Base64 format configurations
 
@@ -549,11 +545,6 @@ Installation
 1\. Download the Secrets Manager Plugin
 
 Download the latest integration release from the KSM GitHub page:
-
-[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/secrets-
-managerGitHub](https://github.com/Keeper-Security/secrets-manager/releases)
-
-Secrets Manager Releases
 
 Look for a vault-plugin release in the list of releases that matched your
 platform.
@@ -710,12 +701,6 @@ be created and assigned to the plugin.
 ####
 
 Create a Secrets Manager Configuration
-
-A Secrets Manager configuration can be created using Keeper Commander or the
-Secrets Manager CLI. See the [Configuration
-Documentation](/en/keeperpam/secrets-manager/about/secrets-manager-
-configuration#creating-a-secrets-manager-configuration) for more information
-on creating a configuration.
 
 Once a configuration has been generated, set it to a variable to be used by
 the Vault Plugin.
@@ -914,6 +899,28 @@ Copy
     
     
     vault delete ksm/record uid=Oq3fFu14hZY00d7sp3EYNA
+
+A Keeper  with secrets shared to it
+
+See the  for instructions on creating an Application
+
+A Secrets Manager configuration can be created using Keeper Commander or the
+Secrets Manager CLI. See the  for more information on creating a
+configuration.
+
+[Configuration Documentation](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration#creating-a-secrets-manager-configuration)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
+[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/secrets-
+managerGitHub](https://github.com/Keeper-Security/secrets-manager/releases)
+
+Secrets Manager Releases
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

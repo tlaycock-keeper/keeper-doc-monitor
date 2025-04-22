@@ -430,15 +430,12 @@ On this page
   * Storing Keys in Keeper
   * Benefits of SSH Agent
   * Activating the SSH Agent
-  * Configuration of your Terminal
   * Using SSH Agent
   * Using SSH Agent with Git
   * Using SSH Agent with Tunnels
-  * Terminal Configuration
-  * macOS (zsh)
-  * Linux & Ubuntu (bash)
-  * fish Shell
-  * Verify the Configuration:
+  * Environment Setup
+  * Linux and macOS
+  * Windows
   * Rotation of SSH Keys
 
 Was this helpful?
@@ -457,7 +454,7 @@ SSH agent
 manager/session-recording-and-playback)[NextIntegration with
 Git](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-git)
 
-Last updated 2 days ago
+Last updated 10 hours ago
 
 Was this helpful?
 
@@ -625,15 +622,11 @@ screen and manage the SSH Agent from this screen.
 When you enable the SSH Agent, all of the specified SSH keys stored in Keeper
 will be available to your local machine while the vault is unlocked.
 
-Select "Launch SSH Agent on startup" to activate the SSH agent upon every
+Select "**Launch SSH Agent on startup** " to activate the SSH agent upon every
 login.
 
 To enable SSH agent on specific keys, select those keys from the provided
 drop-down.
-
-##
-
-Configuration of your Terminal
 
   * 
 
@@ -678,12 +671,23 @@ select the "Don't ask again" option.
 After access has been granted, the SSH connection is instantly established to
 the target system, through the encrypted Keeper tunnel.
 
+* * *
+
 ##
 
-Terminal Configuration
+Environment Setup
 
-To use the Keeper SSH Agent, copy and paste the command to your shell's
-startup file:
+###
+
+Linux and macOS
+
+On macOS and Linux, Keeper’s SSH Agent runs as a background process when the
+user unlocks their vault. To enable communication with SSH tools like `ssh`,
+`git`, or `ssh-add`, the user must set the `SSH_AUTH_SOCK` environment
+variable to point to the Keeper Agent’s Unix domain socket.
+
+To use the Keeper SSH Agent from Linux or macOS environments, copy and paste
+the command to your shell's startup file:
 
 For example:
 
@@ -693,25 +697,23 @@ Copy
     
     export SSH_AUTH_SOCK='/path/to/keeper-ssh-agent.sock'
 
-###
-
-**macOS (zsh)**
+**zsh (macOS)**
 
   * Edit the file `~/.zshrc`
 
   * Apply changes: `source ~/.zshrc`
 
-###
+####
 
-**Linux & Ubuntu (bash)**
+**bash**
 
   * Edit the file `~/.bashrc`
 
   * Apply changes: `source ~/.bashrc`
 
-###
+####
 
-**fish Shell**
+**fish shell**
 
   * Edit the file `~/.config/fish/config.fish`
 
@@ -731,7 +733,7 @@ Copy
     
     source ~/.config/fish/config.fish
 
-###
+####
 
 **Verify the Configuration:**
 
@@ -745,6 +747,62 @@ You should see: `/path/to/keeper-ssh-agent.sock`
 
 You may need to open a new shell for this to take effect.
 
+* * *
+
+###
+
+Windows
+
+Keeper’s SSH Agent integrates with the Windows OpenSSH client by implementing
+the standard `**ssh-agent**`**protocol** over a **named pipe** , just like the
+native OpenSSH agent on Windows.
+
+When the Keeper vault is unlocked:
+
+  * The agent starts and listens on a Windows named pipe.
+
+  * OpenSSH-based tools like `ssh`, `ssh-add`, `git`, and others detect the pipe and interact with Keeper's agent without needing local key files.
+
+  * The agent responds to authentication requests, signing operations, and key listings as defined by the standard `ssh-agent` protocol.
+
+This provides full OpenSSH compatibility on Windows, enabling:
+
+  * Agent forwarding
+
+  * SSH key signing
+
+  * Passwordless login using keys stored securely in Keeper
+
+  * Git commit signing and similar dev workflows
+
+The Windows SSH Agent service will start up as soon as it is activated from
+The Keeper Desktop SSH Agent screen.
+
+When establishing a connection to the target through PowerShell, Keeper will
+prompt for permission.
+
+####
+
+Windows Note on SSH Agent Conflicts
+
+If the OpenSSH Agent service is currently running on Windows, you’ll need to
+stop it before using Keeper’s SSH Agent. Both agents listen on the same named
+pipe (`\\.\pipe\openssh-ssh-agent`), and only one can be active at a time.
+
+To stop the built-in OpenSSH agent:
+
+Copy
+
+    
+    
+    Stop-Service ssh-agent
+    Set-Service ssh-agent -StartupType Disabled
+
+Once stopped, Keeper’s agent will take over and handle all `ssh` and `git`
+operations using keys stored securely in your vault.
+
+* * *
+
 ##
 
 Rotation of SSH Keys
@@ -754,9 +812,8 @@ basis.
 
   * See the [Password Rotation](/en/keeperpam/secrets-manager/password-rotation) section and the [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user) SSH Key use case
 
-In order to work with the local operating system (macOS and Windows), follow
-the  to enable SSH Agent for your desired terminal. An environment variable
-must be set to instruct your computer to use Keeper's SSH Agent.
+In order to work with the local operating system (Linux, macOS and Windows),
+follow the  to enable SSH Agent for your operating system.
 
 See
 
@@ -764,17 +821,21 @@ The Keeper SSH Agent allows you to seamlessly authenticate into services like
 GitHub and securely sign Git commits. To help you get started, we've created a
 step-by-step guide on setting up  and  using Keeper.
 
-[guide below](/en/keeperpam/privileged-access-manager/ssh-agent#configuring-
-your-terminal-for-keeper-ssh-agent)
-
-[Terminal Configuration](/en/keeperpam/privileged-access-manager/ssh-
-agent#terminal-configuration)
-
 [authentication with GitHub](/en/keeperpam/privileged-access-manager/ssh-
 agent/integration-with-git#github-authentication)
 
 [signing Git commits](/en/keeperpam/privileged-access-manager/ssh-
 agent/integration-with-git#signing-commits)
+
+[guide below](/en/keeperpam/privileged-access-manager/ssh-agent#environment-
+setup)
+
+[Environment Setup](/en/keeperpam/privileged-access-manager/ssh-
+agent#environment-setup)
+
+Custom Field Example
+
+File Attachment Example
 
 Developer Settings
 
@@ -792,9 +853,21 @@ Tunnel established with SSH Agent
 
 Terminal Setup Command
 
+SSH Agent on Windows
+
+Allow Access Dialog
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOMBgMljAUIwOY0NYaRib%252FKeeperPAM%2520SSH%2520Agent.jpg%3Falt%3Dmedia%26token%3D30d59853-901c-45cd-8af3-a14913d8622b&width=768&dpr=4&quality=100&sign=721a85ff&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFWSp9bdo2FRGkjW4tEoX%252FScreenshot%25202025-04-21%2520at%25203.21.27%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D7a052ea2-99b0-4ce4-a33f-8a528f6bb2d2&width=768&dpr=4&quality=100&sign=13db54e8&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXe45tup0aQCj9Rgoz4XW%252FScreenshot%25202025-04-21%2520at%25203.10.26%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db1a139f0-27bc-46b1-9b3f-0abad427f93c&width=768&dpr=4&quality=100&sign=85a4e5b8&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -827,4 +900,12 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fhw3QEpl8w
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8O4k4x6kcHobpRi1tIyi%252FScreenshot%25202025-01-28%2520at%252011.58.22%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D3505fef5-2518-49f9-860b-9063a1bad537&width=768&dpr=4&quality=100&sign=5e3b5321&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FzECb607mvom1IDLsNWHZ%252F2025-04-21_15-30-48.PNG%3Falt%3Dmedia%26token%3D27740c2d-154e-4bd7-95c5-106a6c8375d7&width=768&dpr=4&quality=100&sign=683900ac&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fu9epGh8KgKlqb5rwXnnf%252F2025-04-21_15-33-14.PNG%3Falt%3Dmedia%26token%3Dc2436c49-850d-4279-b905-dbf73ce0010d&width=768&dpr=4&quality=100&sign=2cd1fac2&sv=2)
 

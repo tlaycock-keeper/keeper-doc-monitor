@@ -430,72 +430,52 @@ library/java-sdk/record-field-classes?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
+#### Company
 
-  * Accessing Record Fields
-  * Field Type Classes Reference
-  * KeeperRecordField
-  * Password
-  * Url
-  * FileRef
-  * OneTimeCode
-  * OneTimePassword
-  * Name
-  * Names
-  * BirthDate
-  * Date
-  * ExpirationDate
-  * Text
-  * SecurityQuestion
-  * SecurityQuestions
-  * Multiline
-  * Email
-  * CardRef
-  * AddressRef
-  * PinCode
-  * Phone
-  * Phones
-  * HiddenField
-  * SecureNote
-  * AccountNumber
-  * PaymentCard
-  * PaymentCards
-  * BankAccount
-  * BankAccounts
-  * KeyPair
-  * KeyPairs
-  * Host
-  * Hosts
-  * Address
-  * Addresses
-  * LicenseNumber
-  * KeeperFileData
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+On this page
 
 Was this helpful?
 
 [Export as PDF](/en/keeperpam/~gitbook/pdf?page=-MkJe9vCej-
 wl1oajXaH&only=yes&limit=100)
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Developer SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
-  3. [Java/Kotlin SDK](/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk)
+Last updated 3 months ago
 
-# Record Field Classes
-
-Description of each accessible field type Class in the Keeper Secrets Manager
-Java SDK
+Was this helpful?
 
 ##
 
 Accessing Record Fields
 
 Use the `getField` function to access record fields.
-
-Copy
-
-    
-    
-    secret.data.getfield<FIELD_TYPE>()
 
 The 'FIELD_TYPE' needs to be a class from the list below.
 
@@ -509,15 +489,301 @@ KeeperRecordField
 
 All Record Fields extend the KeeperRecordField class, and contain a lbl field
 
+####
+
+Field Values
+
+###
+
+Password
+
+####
+
+Field Values
+
+###
+
+Url
+
+####
+
+Field Values
+
+###
+
+FileRef
+
+####
+
+Field Values
+
+###
+
+OneTimeCode
+
+####
+
+Field Values
+
+###
+
+OneTimePassword
+
+####
+
+Field Values
+
+###
+
+Name
+
+####
+
+Field Values
+
+###
+
+Names
+
+####
+
+Field Values
+
+###
+
+BirthDate
+
+####
+
+Field Values
+
+###
+
+Date
+
+####
+
+Field Values
+
+###
+
+ExpirationDate
+
+####
+
+Field Values
+
+###
+
+Text
+
+####
+
+Field Values
+
+###
+
+SecurityQuestion
+
+####
+
+Field Values
+
+###
+
+SecurityQuestions
+
+####
+
+Field Values
+
+###
+
+Multiline
+
+####
+
+Field Values
+
+###
+
+Email
+
+####
+
+Field Values
+
+###
+
+CardRef
+
+####
+
+Field Values
+
+###
+
+AddressRef
+
+####
+
+Field Values
+
+###
+
+PinCode
+
+####
+
+Field Values
+
+###
+
+Phone
+
+####
+
+Field Values
+
+###
+
+Phones
+
+####
+
+Field Values
+
+###
+
+HiddenField
+
+####
+
+Field Values
+
+###
+
+SecureNote
+
+####
+
+Field Values
+
+###
+
+AccountNumber
+
+####
+
+Field Values
+
+###
+
+PaymentCard
+
+####
+
+Field Values
+
+###
+
+PaymentCards
+
+####
+
+Field Values
+
+###
+
+BankAccount
+
+####
+
+Field Values
+
+###
+
+BankAccounts
+
+####
+
+Field Values
+
+###
+
+KeyPair
+
+####
+
+Field Values
+
+###
+
+KeyPairs
+
+####
+
+Field Values
+
+###
+
+Host
+
+####
+
+Field Values
+
+###
+
+Hosts
+
+####
+
+Field Values
+
+###
+
+Address
+
+####
+
+Field Values
+
+###
+
+Addresses
+
+####
+
+Field Values
+
+###
+
+LicenseNumber
+
+####
+
+Field Values
+
+###
+
+KeeperFileData
+
+####
+
+Field Values
+
+Copy
+
+    
+    
+    secret.data.getfield<FIELD_TYPE>()
+
 Copy
 
     
     
     sealed class KeeperRecordField(val lbl: String? = null)
-
-####
-
-Field Values
 
 Name
 
@@ -535,10 +801,6 @@ No
 
 null
 
-###
-
-Password
-
 Copy
 
     
@@ -551,10 +813,6 @@ Copy
         var complexity: PasswordComplexity? = null,
         val value: MutableList<String>
     )
-
-####
-
-Field Values
 
 Name
 
@@ -602,19 +860,11 @@ value
 
 Yes
 
-###
-
-Url
-
 Copy
 
     
     
     data class Url(var label: String? = null, var required: Boolean? = null, var privacyScreen: Boolean? = null, val value: MutableList<String>)
-
-####
-
-Field Values
 
 Name
 
@@ -654,19 +904,11 @@ value
 
 Yes
 
-###
-
-FileRef
-
 Copy
 
     
     
     data class FileRef(var label: String? = null, var required: Boolean? = null, val value: MutableList<String>)
-
-####
-
-Field Values
 
 Name
 
@@ -697,10 +939,6 @@ value
 `MutableList<String>`
 
 Yes
-
-###
-
-OneTimeCode
 
 Copy
 
@@ -708,10 +946,6 @@ Copy
     
     data class OneTimeCode(var label: String? = null, var required: Boolean? = null, val value: MutableList<String>)
 
-####
-
-Field Values
-
 Name
 
 Type
@@ -741,10 +975,6 @@ value
 `MutableList<String>`
 
 Yes
-
-###
-
-OneTimePassword
 
 Copy
 
@@ -752,10 +982,6 @@ Copy
     
     data class OneTimePassword(var label: String? = null, var required: Boolean? = null, val value: MutableList<String>)
 
-####
-
-Field Values
-
 Name
 
 Type
@@ -786,19 +1012,11 @@ value
 
 Yes
 
-###
-
-Name
-
 Copy
 
     
     
     data class Name(var first: String? = null, var middle: String? = null, var last: String? = null)
-
-####
-
-Field Values
 
 Name
 
@@ -832,19 +1050,11 @@ No
 
 null
 
-###
-
-Names
-
 Copy
 
     
     
     data class Names(val label: String? = null, var required: Boolean? = null, var privacyScreen: Boolean? = null, val value: MutableList<Name>)
-
-####
-
-Field Values
 
 Name
 
@@ -884,19 +1094,11 @@ value
 
 Yes
 
-###
-
-BirthDate
-
 Copy
 
     
     
     data class BirthDate(var label: String? = null, var required: Boolean? = null, var privacyScreen: Boolean? = null, val value: MutableList<Long>)
-
-####
-
-Field Values
 
 Name
 
@@ -935,10 +1137,6 @@ value
 `MutableList<Long>`
 
 Yes
-
-###
-
-Date
 
 Copy
 
@@ -946,10 +1144,6 @@ Copy
     
     data class Date(var label: String? = null, var required: Boolean? = null, var privacyScreen: Boolean? = null, val value: MutableList<Long>)
 
-####
-
-Field Values
-
 Name
 
 Type
@@ -987,10 +1181,6 @@ value
 `MutableList<Long>`
 
 Yes
-
-###
-
-ExpirationDate
 
 Copy
 
@@ -998,10 +1188,6 @@ Copy
     
     data class ExpirationDate(var label: String? = null, var required: Boolean? = null, var privacyScreen: Boolean? = null, val value: MutableList<Long>)
 
-####
-
-Field Values
-
 Name
 
 Type
@@ -1040,19 +1226,11 @@ value
 
 Yes
 
-###
-
-Text
-
 Copy
 
     
     
     data class Text(var label: String? = null, var required: Boolean? = null, var privacyScreen: Boolean? = null, var value: MutableList<String>)
-
-####
-
-Field Values
 
 Name
 
@@ -1092,19 +1270,11 @@ value
 
 Yes
 
-###
-
-SecurityQuestion
-
 Copy
 
     
     
     data class SecurityQuestion(var question: String? = null, var answer: String? = null)
-
-####
-
-Field Values
 
 Name
 
@@ -1130,10 +1300,6 @@ No
 
 null
 
-###
-
-SecurityQuestions
-
 Copy
 
     
@@ -1144,10 +1310,6 @@ Copy
         var privacyScreen: Boolean? = null,
         val value: MutableList<SecurityQuestion>
     )
-
-####
-
-Field Values
 
 Name
 
@@ -1187,19 +1349,11 @@ value
 
 Yes
 
-###
-
-Multiline
-
 Copy
 
     
     
     data class Multiline(var label: String? = null, var required: Boolean? = null, var privacyScreen: Boolean? = null, val value: MutableList<String>)
-
-####
-
-Field Values
 
 Name
 
@@ -1238,10 +1392,6 @@ value
 `MutableList<String>`
 
 Yes
-
-###
-
-Email
 
 Copy
 
@@ -1249,10 +1399,6 @@ Copy
     
     data class Email(var label: String? = null, var required: Boolean? = null, var privacyScreen: Boolean? = null, val value: MutableList<String>)
 
-####
-
-Field Values
-
 Name
 
 Type
@@ -1290,10 +1436,6 @@ value
 `MutableList<String>`
 
 Yes
-
-###
-
-CardRef
 
 Copy
 
@@ -1301,10 +1443,6 @@ Copy
     
     data class CardRef(var label: String? = null, var required: Boolean? = null, var privacyScreen: Boolean? = null, val value: MutableList<String>)
 
-####
-
-Field Values
-
 Name
 
 Type
@@ -1342,10 +1480,6 @@ value
 `MutableList<String>`
 
 Yes
-
-###
-
-AddressRef
 
 Copy
 
@@ -1353,10 +1487,6 @@ Copy
     
     data class AddressRef(var label: String? = null, var required: Boolean? = null, var privacyScreen: Boolean? = null, val value: MutableList<String>)
 
-####
-
-Field Values
-
 Name
 
 Type
@@ -1395,19 +1525,11 @@ value
 
 Yes
 
-###
-
-PinCode
-
 Copy
 
     
     
     data class PinCode(var label: String? = null, var required: Boolean? = null, val value: MutableList<String>)
-
-####
-
-Field Values
 
 Name
 
@@ -1439,10 +1561,6 @@ value
 
 Yes
 
-###
-
-Phone
-
 Copy
 
     
@@ -1454,10 +1572,6 @@ Copy
         val type: String? = null
     )
     
-
-####
-
-Field Values
 
 Name
 
@@ -1499,19 +1613,11 @@ No
 
 null
 
-###
-
-Phones
-
 Copy
 
     
     
     data class Phones(val label: String? = null, var required: Boolean? = null, var privacyScreen: Boolean? = null, val value: List<Phone>)
-
-####
-
-Field Values
 
 Name
 
@@ -1551,19 +1657,11 @@ value
 
 Yes
 
-###
-
-HiddenField
-
 Copy
 
     
     
     data class HiddenField(val label: String? = null, var required: Boolean? = null, val value: List<String>)
-
-####
-
-Field Values
 
 Name
 
@@ -1594,10 +1692,6 @@ value
 `List<String>`
 
 Yes
-
-###
-
-SecureNote
 
 Copy
 
@@ -1605,10 +1699,6 @@ Copy
     
     data class SecureNote(val label: String? = null, var required: Boolean? = null, var privacyScreen: Boolean? = null, val value: List<String>)
 
-####
-
-Field Values
-
 Name
 
 Type
@@ -1646,10 +1736,6 @@ value
 `List<String>`
 
 Yes
-
-###
-
-AccountNumber
 
 Copy
 
@@ -1657,10 +1743,6 @@ Copy
     
     data class AccountNumber(val label: String? = null, var required: Boolean? = null, var privacyScreen: Boolean? = null, val value: List<String>)
 
-####
-
-Field Values
-
 Name
 
 Type
@@ -1698,10 +1780,6 @@ value
 `List<String>`
 
 Yes
-
-###
-
-PaymentCard
 
 Copy
 
@@ -1712,10 +1790,6 @@ Copy
         var cardExpirationDate: String? = null,
         var cardSecurityCode: String? = null
     )
-
-####
-
-Field Values
 
 Name
 
@@ -1749,19 +1823,11 @@ No
 
 null
 
-###
-
-PaymentCards
-
 Copy
 
     
     
     data class PaymentCards(val label: String? = null, var required: Boolean? = null, var privacyScreen: Boolean? = null, val value: MutableList<PaymentCard>) :
-
-####
-
-Field Values
 
 Name
 
@@ -1801,10 +1867,6 @@ value
 
 Yes
 
-###
-
-BankAccount
-
 Copy
 
     
@@ -1815,10 +1877,6 @@ Copy
         var accountNumber: String? = null,
         var otherType: String? = null
     )
-
-####
-
-Field Values
 
 Name
 
@@ -1860,19 +1918,11 @@ No
 
 null
 
-###
-
-BankAccounts
-
 Copy
 
     
     
     data class BankAccounts(val label: String? = null, var required: Boolean? = null, var privacyScreen: Boolean? = null, val value: MutableList<BankAccount>) :
-
-####
-
-Field Values
 
 Name
 
@@ -1912,10 +1962,6 @@ value
 
 Yes
 
-###
-
-KeyPair
-
 Copy
 
     
@@ -1924,10 +1970,6 @@ Copy
         val publicKey: String? = null,
         val privateKey: String? = null,
     )
-
-####
-
-Field Values
 
 Name
 
@@ -1953,19 +1995,11 @@ no
 
 null
 
-###
-
-KeyPairs
-
 Copy
 
     
     
     data class KeyPairs(val label: String? = null, var required: Boolean? = null, var privacyScreen: Boolean? = null, val value: MutableList<KeyPair>)
-
-####
-
-Field Values
 
 Name
 
@@ -2005,10 +2039,6 @@ value
 
 Yes
 
-###
-
-Host
-
 Copy
 
     
@@ -2018,10 +2048,6 @@ Copy
         val port: String? = null,
     )
     
-
-####
-
-Field Values
 
 Name
 
@@ -2047,19 +2073,11 @@ No
 
 null
 
-###
-
-Hosts
-
 Copy
 
     
     
     data class Hosts(val label: String? = null, var required: Boolean? = null, var privacyScreen: Boolean? = null, val value: MutableList<Host>)
-
-####
-
-Field Values
 
 Name
 
@@ -2099,10 +2117,6 @@ value
 
 Yes
 
-###
-
-Address
-
 Copy
 
     
@@ -2115,10 +2129,6 @@ Copy
         val country: String? = null,
         val zip: String? = null
     )
-
-####
-
-Field Values
 
 Name
 
@@ -2176,19 +2186,11 @@ No
 
 null
 
-###
-
-Addresses
-
 Copy
 
     
     
     data class Addresses(val label: String? = null, var required: Boolean? = null, var privacyScreen: Boolean? = null, val value: MutableList<Address>)
-
-####
-
-Field Values
 
 Name
 
@@ -2228,19 +2230,11 @@ value
 
 Yes
 
-###
-
-LicenseNumber
-
 Copy
 
     
     
     data class LicenseNumber(val label: String? = null, var required: Boolean? = null, var privacyScreen: Boolean? = null, val value: MutableList<String>)
-
-####
-
-Field Values
 
 Name
 
@@ -2280,10 +2274,6 @@ value
 
 Yes
 
-###
-
-KeeperFileData
-
 Copy
 
     
@@ -2295,10 +2285,6 @@ Copy
         val size: Long,
         val lastModified: Long
     )
-
-####
-
-Field Values
 
 Name
 
@@ -2338,41 +2324,55 @@ lastModified
 
 Yes
 
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Developer SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
+  3. [Java/Kotlin SDK](/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk)
+
+# Record Field Classes
+
+Description of each accessible field type Class in the Keeper Secrets Manager
+Java SDK
+
 [PreviousJava/Kotlin SDK](/en/keeperpam/secrets-manager/developer-sdk-
 library/java-sdk)[NextJavaScript SDK](/en/keeperpam/secrets-manager/developer-
 sdk-library/javascript-sdk)
 
-Last updated 3 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+  * Accessing Record Fields
+  * Field Type Classes Reference
+  * KeeperRecordField
+  * Password
+  * Url
+  * FileRef
+  * OneTimeCode
+  * OneTimePassword
+  * Name
+  * Names
+  * BirthDate
+  * Date
+  * ExpirationDate
+  * Text
+  * SecurityQuestion
+  * SecurityQuestions
+  * Multiline
+  * Email
+  * CardRef
+  * AddressRef
+  * PinCode
+  * Phone
+  * Phones
+  * HiddenField
+  * SecureNote
+  * AccountNumber
+  * PaymentCard
+  * PaymentCards
+  * BankAccount
+  * BankAccounts
+  * KeyPair
+  * KeyPairs
+  * Host
+  * Hosts
+  * Address
+  * Addresses
+  * LicenseNumber
+  * KeeperFileData
 

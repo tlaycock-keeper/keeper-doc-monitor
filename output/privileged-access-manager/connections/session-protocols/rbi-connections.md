@@ -565,7 +565,7 @@ manager/connections/session-protocols/rdp-connections)[NextMySQL
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/mysql-connections)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 
@@ -599,12 +599,6 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
-For this protocol, graphical data, including timing information, is recorded.
-For more details on the recordings and how to access them, see the  docs.
-
-[Session Recording & Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
-
 Field
 
 Definition
@@ -621,6 +615,12 @@ perform administrative operations on it.
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
+
+For this protocol, graphical data, including timing information, is recorded.
+For more details on the recordings and how to access them, see the  docs.
+
+[Session Recording & Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
 
 RBI Session Recordings
 

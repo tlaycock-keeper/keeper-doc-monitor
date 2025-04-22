@@ -588,7 +588,7 @@ manager/connections/session-protocols/postgresql-connections)[NextTelnet
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/telnet-connections)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 
@@ -636,14 +636,14 @@ Administrative Credential Record
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
 
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
 For this protocol, graphical data, including timing information, is recorded.
 For more details on the recordings and how to access them, see the  docs.
 
 [Session Recording & Playback](/en/keeperpam/privileged-access-
 manager/session-recording-and-playback)
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
 
 VNC Session Recordings
 

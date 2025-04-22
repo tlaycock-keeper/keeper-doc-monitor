@@ -462,7 +462,7 @@ manager/connections/session-protocols)[NextRDP
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/rdp-connections)
 
-Last updated 2 months ago
+Last updated 1 day ago
 
 Was this helpful?
 
@@ -644,6 +644,10 @@ established connection protocol to the specified target:
 
 File Transfers
 
+####
+
+Transfer In
+
 If the SFTP file transfer feature is enabled, the user can drag and drop files
 into the terminal session to transfer the files to the machine.
 
@@ -652,6 +656,31 @@ drop.
 
 While the files are being uploaded to the target machine, a file transfer
 status is displayed in the dock area of the Keeper Vault:
+
+####
+
+Transfer Out
+
+To transfer files from the SSH remote connection to the local filesystem, you
+can download a tool called `guacctl` into the remote system and use it for
+performing outbound transfers.
+
+Download `guacctl` and set as executable:
+
+Copy
+
+    
+    
+    wget https://raw.githubusercontent.com/apache/guacamole-server/master/bin/guacctl
+    chmod +x guacctl
+
+Initiate the file download using this syntax:
+
+Copy
+
+    
+    
+    ./guacctl -d <filename>
 
 ###
 
@@ -680,6 +709,17 @@ Administrative Credential Record
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
 
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this .
+
+  * Learn more about 
+
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+
+[Session Recording and Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
+
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
 
@@ -699,12 +739,6 @@ Record
 The PAM User record contains the user credentials that will be used to connect
 to the endpoint
 
-For this protocol, both graphical and the full, raw text text content of
-terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this .
-
-  * Learn more about 
-
 [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
 started/pam-configuration)
 
@@ -713,11 +747,6 @@ resources/pam-machine)
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
-
-[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
-
-[Session Recording and Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
 
 SSH Session Launching
 

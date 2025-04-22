@@ -459,7 +459,7 @@ Sync secrets from the Keeper Vault with Azure Key Vault
 manager/integrations/azure-devops-plugin)[NextAzure Key Vault
 Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
 
-Last updated 6 days ago
+Last updated 7 days ago
 
 Was this helpful?
 
@@ -522,7 +522,9 @@ Prerequisites
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An Azure account with Key Vault, and the ability to create security principals
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    *   * An Azure account with Key Vault, and the ability to create security principals
 
 ##
 
@@ -698,12 +700,7 @@ Copy
     
     ksm sync --type azure --credentials [UID] -m [...] -m [...]
 
-A Keeper  with secrets shared to it
-
 See the  for instructions on creating an Application
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)

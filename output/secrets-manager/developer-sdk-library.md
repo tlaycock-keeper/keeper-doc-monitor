@@ -458,7 +458,7 @@ Sample code and SDK integration instructions for Keeper Secrets Manager
 rotation)[NextPython SDK](/en/keeperpam/secrets-manager/developer-sdk-
 library/python-sdk)
 
-Last updated 12 days ago
+Last updated 13 days ago
 
 Was this helpful?
 
@@ -907,6 +907,9 @@ Copy
 These examples assumes a Secrets Manager config file has already been
 initialized.
 
+See the [Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)section for how to initialize a config file.
+
 ##
 
 Retrieve One Individual Secret
@@ -1177,6 +1180,9 @@ Copy
 These examples assumes a Secrets Manager config file has already been
 initialized.
 
+See the [Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)section for how to initialize a config file.
+
 ##
 
 Retrieve a Password
@@ -1296,6 +1302,9 @@ Copy
 
 These examples assumes a Secrets Manager config file has already been
 initialized.
+
+See the [Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)section for how to initialize a config file.
 
 ##
 
@@ -1439,6 +1448,9 @@ Copy
 
 These examples assumes a Secrets Manager config file has already been
 initialized.
+
+See the [Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)section for how to initialize a config file.
 
 ##
 
@@ -1614,6 +1626,9 @@ Copy
 These examples assumes a Secrets Manager config file has already been
 initialized
 
+See the [Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)section for how to initialize a config file.
+
 ##
 
 Retrieve TOTP Codes
@@ -1743,6 +1758,9 @@ Copy
 
 These examples assumes a Secrets Manager config file has already been
 initialized.
+
+See the [Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)section for how to initialize a config file.
 
 ##
 
@@ -2004,6 +2022,9 @@ Copy
 
 These examples assumes a Secrets Manager config file has already been
 initialized.
+
+See the [Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
+library#initialization)section for how to initialize a config file.
 
 ##
 
@@ -2278,41 +2299,6 @@ For higher level functionality at the Vault and Administrative level, please
 see the Vault SDKs page which contains links to various development tools.
 
 [Vault SDKs](/en/keeperpam/secrets-manager/developer-sdk-library/vault-sdks)
-
-See the section for how to initialize a config file.
-
-See the section for how to initialize a config file.
-
-See the section for how to initialize a config file.
-
-See the section for how to initialize a config file.
-
-See the section for how to initialize a config file.
-
-See the section for how to initialize a config file.
-
-See the section for how to initialize a config file.
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
-
-[Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
-library#initialization)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

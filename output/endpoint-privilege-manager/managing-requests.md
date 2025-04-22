@@ -448,93 +448,10 @@ PDF](/en/keeperpam/~gitbook/pdf?page=QIQbTK1rKnhe3S1JB3Lu&only=yes&limit=100)
 
 Day to day management of Keeper Privilege Manager elevation requests
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqZHIrunXfmyLDah9lx44%252FPEDM%2520Managing%2520Requests.jpg%3Falt%3Dmedia%26token%3Da04e8a43-30b7-40cb-a40c-0c7756aef09c&width=768&dpr=4&quality=100&sign=8a3cc8e0&sv=2)
-
-##
-
-Managing Elevation Requests
-
-As end-users generate elevation requests, administrators can efficiently
-manage these requests through the Keeper Admin Console. This interface
-provides a streamlined process for approving or denying requests in real-time,
-ensuring that legitimate user needs are met while maintaining security.
-
-###
-
-Accessing the Requests Dashboard
-
-To manage elevation requests:
-
-  1. Log in to the Keeper Admin Console
-
-  2. Navigate to **Endpoint** **Privilege Manager > Requests** tab
-
-###
-
-Working with the Request Queue
-
-The requests dashboard displays all pending elevation requests across your
-environment. By default, requests are sorted by wait time and priority,
-ensuring that users are processed in the order received.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOSIU7ZuOJXSON8ZhgyfA%252FRequests.png%3Falt%3Dmedia%26token%3Deecb623a-7f69-47d7-ab24-66a710dee8a9&width=768&dpr=4&quality=100&sign=e7213101&sv=2)
-
-Endpoint**** Privilege Manager Requests Dashboard
-
-###
-
-Reviewing Request Details
-
-To review a specific request:
-
-  1. Click on any request in the queue to open its details
-
-  2. Review the detailed information provided:
-
-     * Application information
-
-     * User's justification message
-
-     * Endpoint details (IP address, device name, operating system)
-
-     * Request timestamp and duration
-
-     * Associated policies
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fp5spsEQatbV45TrPovnC%252FApplication%2520Metadata%2520-%2520Expanded%2520Example.png%3Falt%3Dmedia%26token%3De9450959-dd4c-4fc3-a7cb-091a19d79f98&width=768&dpr=4&quality=100&sign=7013b474&sv=2)
-
-Detailed View of an Elevation Request
-
-###
-
-Taking Action on Requests
-
-For each request, administrators can:
-
-  * **Approve** : Grant temporary elevated privileges for the requested process
-
-  * **Deny** : Reject the elevation request with an optional explanation
-
-###
-
-Managing Request Volumes
-
-For organizations with high volumes of elevation requests:
-
-  * **Delegation** : Configure multiple approvers across different teams or regions
-
-  * **Auto-Approval Rules** : Set up [policies](/en/keeperpam/endpoint-privilege-manager/policies) to automatically approve routine requests
-
 [PreviousPolicies](/en/keeperpam/endpoint-privilege-
 manager/policies)[NextFAQs](/en/keeperpam/faqs)
 
-Last updated 10 days ago
+Last updated 11 days ago
 
 Was this helpful?
 
@@ -567,4 +484,87 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+##
+
+Managing Elevation Requests
+
+As end-users generate elevation requests, administrators can efficiently
+manage these requests through the Keeper Admin Console. This interface
+provides a streamlined process for approving or denying requests in real-time,
+ensuring that legitimate user needs are met while maintaining security.
+
+###
+
+Accessing the Requests Dashboard
+
+To manage elevation requests:
+
+  1. Log in to the Keeper Admin Console
+
+  2. Navigate to **Endpoint** **Privilege Manager > Requests** tab
+
+###
+
+Working with the Request Queue
+
+The requests dashboard displays all pending elevation requests across your
+environment. By default, requests are sorted by wait time and priority,
+ensuring that users are processed in the order received.
+
+###
+
+Reviewing Request Details
+
+To review a specific request:
+
+  1. Click on any request in the queue to open its details
+
+  2. Review the detailed information provided:
+
+     * Application information
+
+     * User's justification message
+
+     * Endpoint details (IP address, device name, operating system)
+
+     * Request timestamp and duration
+
+     * Associated policies
+
+###
+
+Taking Action on Requests
+
+For each request, administrators can:
+
+  * **Approve** : Grant temporary elevated privileges for the requested process
+
+  * **Deny** : Reject the elevation request with an optional explanation
+
+###
+
+Managing Request Volumes
+
+For organizations with high volumes of elevation requests:
+
+  * **Delegation** : Configure multiple approvers across different teams or regions
+
+  * **Auto-Approval Rules** : Set up [policies](/en/keeperpam/endpoint-privilege-manager/policies) to automatically approve routine requests
+
+Endpoint**** Privilege Manager Requests Dashboard
+
+Detailed View of an Elevation Request
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqZHIrunXfmyLDah9lx44%252FPEDM%2520Managing%2520Requests.jpg%3Falt%3Dmedia%26token%3Da04e8a43-30b7-40cb-a40c-0c7756aef09c&width=768&dpr=4&quality=100&sign=8a3cc8e0&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOSIU7ZuOJXSON8ZhgyfA%252FRequests.png%3Falt%3Dmedia%26token%3Deecb623a-7f69-47d7-ab24-66a710dee8a9&width=768&dpr=4&quality=100&sign=e7213101&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fp5spsEQatbV45TrPovnC%252FApplication%2520Metadata%2520-%2520Expanded%2520Example.png%3Falt%3Dmedia%26token%3De9450959-dd4c-4fc3-a7cb-091a19d79f98&width=768&dpr=4&quality=100&sign=7013b474&sv=2)
 

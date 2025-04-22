@@ -428,6 +428,36 @@ manager/integrations/git-sign-commits-with-ssh?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * About
@@ -455,11 +485,13 @@ PDF](/en/keeperpam/~gitbook/pdf?page=B0TiOVywvfeGVLOI6Wlf&only=yes&limit=100)
 
 Sign your git commits using an SSH key stored in your Keeper Vault
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSo22AInILhJ9X94G8D1x%252Fksm-
-header-
-git.png%3Falt%3Dmedia%26token%3Da01381fe-77f0-47b5-8e3f-522da742c8b1&width=768&dpr=4&quality=100&sign=b195a6f5&sv=2)
+[PreviousEntrust HSM Encryption](/en/keeperpam/secrets-
+manager/integrations/entrust-hsm)[NextGitHub Actions](/en/keeperpam/secrets-
+manager/integrations/github-actions)
+
+Last updated 3 months ago
+
+Was this helpful?
 
 ##
 
@@ -475,10 +507,7 @@ repository from potential tampering and malicious code.
 This integration allows developers to sign git commits with an SSH key
 protected in your Keeper Vault (via Keeper Secrets Manager).
 
-> [**Download the latest git-ssh-sign binaries**](https://github.com/Keeper-
-> Security/git-ssh-sign/releases)
-
-##
+> ##
 
 Features
 
@@ -488,7 +517,7 @@ Features
 
   * Works on Windows, MacOS, and Linux.
 
-  * Source code at <https://github.com/Keeper-Security/git-ssh-sign>[](https://github.com/Keeper-Security/git-ssh-sign)
+  * 
 
 ##
 
@@ -496,19 +525,11 @@ Prerequisites
 
 In order to utilize this integration, you will need:
 
-  * Keeper Secrets Manager access (See the [Quick Start Guide](https://docs.keeper.io/secrets-manager/secrets-manager/quick-start-guide) for more details)
-
-    * Secrets Manager add-on enabled for your Keeper account
+  *     * Secrets Manager add-on enabled for your Keeper account
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](https://docs.keeper.io/secrets-manager/secrets-manager/about/terminology#application) with SSH key(s) shared to it
-
-    * See the [Quick Start Guide](https://docs.keeper.io/secrets-manager/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
-
-  * An initialized [Keeper Secrets Manager Configuration](https://docs.keeper.io/secrets-manager/secrets-manager/about/secrets-manager-configuration)
-
-    * This integration only accepts JSON format configurations
+  *     *   *     * This integration only accepts JSON format configurations
 
   * Git installed with a minimum version of 2.34.0
 
@@ -537,11 +558,6 @@ If this configuration is not found, it will check `ssh-sign.json` as a backup.
 **The Secrets Manager application must have access to the shared folder in
 which your SSH key is stored**.
 
-For help in setting up your application and obtaining your configuration file,
-you can find [detailed instructions here](https://docs.keeper.io/secrets-
-manager/secrets-manager/about/secrets-manager-configuration#creating-a-
-secrets-manager-configuration).
-
 ###
 
 2\. Git Config
@@ -556,9 +572,7 @@ Four pieces of information are required in your config:
 
   2. Tell git you want to use SSH signing over the default GPG signing.
 
-  3. Tell git the location of this integration's executable file. ([download here](https://github.com/Keeper-Security/git-ssh-sign/releases))
-
-  4. Tell git the UID of the SSH key to be used to sign.
+  3.   4. Tell git the UID of the SSH key to be used to sign.
 
 We can do this for the local Git repository with the following commands (add
 the `--global` flag to set these globally):
@@ -600,11 +614,6 @@ to upload your SSH key's _public key_ to your GitHub account. GitHub will then
 use this public key to verify the signature and display the `verified` tag in
 the UI.
 
-For full details on adding your public key to your account, [see GitHub's
-official documentation](https://docs.github.com/en/authentication/connecting-
-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-
-account?tool=webui&platform=linux).
-
 **Important:** Be sure to set the type of key to _"signing key"._
 
 ####
@@ -615,10 +624,6 @@ For **GitLab** to verify the signature used to sign the commit, you will need
 to upload your SSH key's _public key_ to your GitLab account. GitLab will then
 use this public key to verify the signature and display the `verified` tag in
 the UI.
-
-For full details on adding your public key to your account, [see Gitlab's
-official documentation](https://docs.gitlab.com/ee/user/ssh.html#add-an-ssh-
-key-to-your-gitlab-account).
 
 **Important:** Be sure to set the type of key to _"signing key" or
 "Authentication and signing"._
@@ -641,10 +646,6 @@ GitHub and GitLab
 Once you have signed a commit and pushed it to GitHub or GitLab, you should
 see the verified tag next to your commit in the Git history automatically. No
 further work is needed.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9pW1WJbiObPFFTAMVo2o%252Fimage.png%3Falt%3Dmedia%26token%3D32e1a4f1-b7d4-4cc1-8fbf-c54dc18a0a28&width=768&dpr=4&quality=100&sign=86b70c72&sv=2)
 
 ###
 
@@ -674,12 +675,8 @@ Copy
     
     test@example.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEQvSrBv28KLAjYO7pD91prhlenrm3hZ4B7DdcB/4/H+
 
-> The format of the allowed signers file is documented in full
-> [here](https://www.man7.org/linux/man-pages/man1/ssh-
-> keygen.1.html#:~:text=key%20was%20revoked.-,ALLOWED%20SIGNERS,-top).
-
-While it is correct syntax to have more than one email address associate with
-a single public key, it is not recommended or currently supported.
+> While it is correct syntax to have more than one email address associate
+> with a single public key, it is not recommended or currently supported.
 
 To verify your `git` history use:
 
@@ -697,10 +694,6 @@ Copy
 
 Source
 
-The source code for this integration is open source and [available on
-GitHub](https://github.com/Keeper-Security/git-ssh-sign). Issues can be
-submitted [here](https://github.com/Keeper-Security/git-ssh-sign/issues).
-
 ##
 
 Similar Integrations
@@ -708,43 +701,86 @@ Similar Integrations
 Keeper also provides the ability to authenticate and sign Git commits using
 the Keeper SSH Agent.
 
-  * Learn more about the [Keeper SSH Agent](/en/keeperpam/privileged-access-manager/ssh-agent) and specifically [Integration with Git](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-git)
+  * 
 
-[PreviousEntrust HSM Encryption](/en/keeperpam/secrets-
-manager/integrations/entrust-hsm)[NextGitHub Actions](/en/keeperpam/secrets-
-manager/integrations/github-actions)
+Source code at
 
-Last updated 3 months ago
+Keeper Secrets Manager access (See the  for more details)
 
-Was this helpful?
+A Keeper  with SSH key(s) shared to it
 
-#### Company
+See the  for instructions on creating an Application
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+An initialized
 
-#### Support
+For help in setting up your application and obtaining your configuration file,
+you can find .
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+Tell git the location of this integration's executable file. ()
 
-#### Solutions
+For full details on adding your public key to your account, .
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+For full details on adding your public key to your account, .
 
-#### Pricing
+The format of the allowed signers file is documented in full .
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+The source code for this integration is open source and . Issues can be
+submitted .
 
-© 2025 Keeper Security, Inc.
+Learn more about the  and specifically
+
+[**Download the latest git-ssh-sign binaries**](https://github.com/Keeper-
+Security/git-ssh-sign/releases)
+
+<https://github.com/Keeper-Security/git-ssh-sign>[](https://github.com/Keeper-
+Security/git-ssh-sign)
+
+[Quick Start Guide](https://docs.keeper.io/secrets-manager/secrets-
+manager/quick-start-guide)
+
+[Secrets Manager Application](https://docs.keeper.io/secrets-manager/secrets-
+manager/about/terminology#application)
+
+[Quick Start Guide](https://docs.keeper.io/secrets-manager/secrets-
+manager/quick-start-guide#2.-create-an-application)
+
+[Keeper Secrets Manager Configuration](https://docs.keeper.io/secrets-
+manager/secrets-manager/about/secrets-manager-configuration)
+
+[detailed instructions here](https://docs.keeper.io/secrets-manager/secrets-
+manager/about/secrets-manager-configuration#creating-a-secrets-manager-
+configuration)
+
+[download here](https://github.com/Keeper-Security/git-ssh-sign/releases)
+
+[see GitHub's official
+documentation](https://docs.github.com/en/authentication/connecting-to-github-
+with-ssh/adding-a-new-ssh-key-to-your-github-
+account?tool=webui&platform=linux)
+
+[see Gitlab's official
+documentation](https://docs.gitlab.com/ee/user/ssh.html#add-an-ssh-key-to-
+your-gitlab-account)
+
+[here](https://www.man7.org/linux/man-pages/man1/ssh-
+keygen.1.html#:~:text=key%20was%20revoked.-,ALLOWED%20SIGNERS,-top)
+
+[available on GitHub](https://github.com/Keeper-Security/git-ssh-sign)
+
+[here](https://github.com/Keeper-Security/git-ssh-sign/issues)
+
+[Keeper SSH Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
+
+[Integration with Git](/en/keeperpam/privileged-access-manager/ssh-
+agent/integration-with-git)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSo22AInILhJ9X94G8D1x%252Fksm-
+header-
+git.png%3Falt%3Dmedia%26token%3Da01381fe-77f0-47b5-8e3f-522da742c8b1&width=768&dpr=4&quality=100&sign=b195a6f5&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9pW1WJbiObPFFTAMVo2o%252Fimage.png%3Falt%3Dmedia%26token%3D32e1a4f1-b7d4-4cc1-8fbf-c54dc18a0a28&width=768&dpr=4&quality=100&sign=86b70c72&sv=2)
 

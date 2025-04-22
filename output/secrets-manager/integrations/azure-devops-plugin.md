@@ -518,7 +518,9 @@ utilize this integration, you will need:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
     * The Azure DevOps integration accepts JSON and Base64 format configurations
 
@@ -589,7 +591,7 @@ need:
 
     * The Azure DevOps Extension accepts JSON and base64 configurations. 
 
-  * 
+  * One or more [Secret queries](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin#keeper-secret-queries) (See query syntax below)
 
 While it is possible to simply copy a Keeper Secrets Manager configuration
 into the pipeline, we recommend keeping the Secrets Manager configuration in
@@ -906,26 +908,10 @@ Copy
         - bash: |
             echo "password retrieved from job 'ksmSecrets', step 'pwdFromKsmSecrets', out variable 'setKsmSecretsStep.out_password':$(pwdFromKsmSecrets)"
 
-A Keeper  with secrets shared to it
-
 See the  for instructions on creating an Application
-
-One or more  (See query syntax below)
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
-
-[Secret queries](/en/keeperpam/secrets-manager/integrations/azure-devops-
-plugin#keeper-secret-queries)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdGjPJbTbFffW4s1-f%252F-MkdGtOxU6O3kUM7r2jV%252Fazuredevops-
-plugin-
-header.jpg%3Falt%3Dmedia%26token%3D151310a1-d682-4973-ab09-b9815c8cf9cb&width=768&dpr=4&quality=100&sign=8989003a&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -937,9 +923,15 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHuh9CWdwe
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSIUOkIjVALVzmtOYLF18%252Ffind%2520task.png%3Falt%3Dmedia%26token%3D75fa26c0-83a9-48e8-b9c0-ebe8de0eb48c&width=768&dpr=4&quality=100&sign=7d4de9b&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWIoTCReEZPjRwPEB64hS%252Ffill%2520task.png%3Falt%3Dmedia%26token%3D2ae6fb1d-ed5d-4f84-8a7a-a512f1b0b24e&width=768&dpr=4&quality=100&sign=c2593a17&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWIoTCReEZPjRwPEB64hS%252Ffill%2520task.png%3Falt%3Dmedia%26token%3D2ae6fb1d-ed5d-4f84-8a7a-a512f1b0b24e&width=768&dpr=4&quality=100&sign=c2593a17&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSIUOkIjVALVzmtOYLF18%252Ffind%2520task.png%3Falt%3Dmedia%26token%3D75fa26c0-83a9-48e8-b9c0-ebe8de0eb48c&width=768&dpr=4&quality=100&sign=7d4de9b&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdGjPJbTbFffW4s1-f%252F-MkdGtOxU6O3kUM7r2jV%252Fazuredevops-
+plugin-
+header.jpg%3Falt%3Dmedia%26token%3D151310a1-d682-4973-ab09-b9815c8cf9cb&width=768&dpr=4&quality=100&sign=8989003a&sv=2)
 

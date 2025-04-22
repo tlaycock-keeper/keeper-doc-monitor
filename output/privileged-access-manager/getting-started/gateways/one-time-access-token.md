@@ -436,7 +436,7 @@ On this page
 
   * Overview
   * Using the Gateway Wizard 
-  * Creating a Gateway
+  * Using Keeper Secrets Manager
   * Using Commander CLI
 
 Was this helpful?
@@ -456,7 +456,7 @@ Creating a Keeper Gateway
 started/gateways)[NextDocker Installation](/en/keeperpam/privileged-access-
 manager/getting-started/gateways/docker-installation)
 
-Last updated 2 months ago
+Last updated 10 hours ago
 
 Was this helpful?
 
@@ -510,15 +510,21 @@ necessary components. Or, you can run each step individually.
 
 Using the Gateway Wizard
 
-A new Gateway deployment can be created by clicking on **Create New** >
-**Gateway** from the Web Vault. We have also posted a page describing how to
-create a sandbox environment in just a few steps.
+The fastest way to create a Gateway and associated resources is using the
+Gateway Wizard. From the Web Vault or Desktop App, click on **Create New** >
+**Gateway.**
+
+The below link describes how to create a sandbox environment in just a few
+steps:
 
   * [Quick Start: Sandbox](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
 
 ##
 
-Creating a Gateway
+Using Keeper Secrets Manager
+
+To set up a Keeper Gateway manually using the Keeper Secrets Manager
+application resources, follow these steps.
 
 1
 
@@ -560,19 +566,79 @@ Generate the Gateway Token
 
 Using Commander CLI
 
-You can also create a Gateway and configuration file from the Commander CLI:
+You can also create a Gateway and configuration file from the Commander CLI.
+The below CLI commands will create a Secrets Manager application, shared
+folders and other resources before creating a Gateway instance.
+
+####
+
+Create an Application
 
 Copy
 
     
     
-    pam gateway new -n "<Gateway Name>" -a <Application Name or UID> -c b64
+    secrets-manager app create "My Infrastructure"
 
-The Application names and UIDs can be found with `secrets-manager app list`
+####
+
+Create Folders
+
+Copy
+
+    
+    
+    mkdir -uf "My Infrastructure"
+    mkdir -sf -a "My Infrastructure/Resources"
+    mkdir -sf -a "My Infrastructure/Users"
+
+####
+
+Share the KSM app to the Shared Folders
+
+Copy
+
+    
+    
+    secrets-manager share add --app "My Infrastructure" --secret <Resources folder UID>
+    secrets-manager share add --app "My Infrastructure" --secret <Users folder UID>
+
+####
+
+Create a Gateway
+
+To initialize a Gateway for [Linux](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/linux-installation) or
+[Windows](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/windows-installation) native install methods, the one-time
+token method is used:
+
+Copy
+
+    
+    
+    pam gateway new -n "My Demo Gateway" -a "My Infrastructure"
+
+To initialize a Gateway using Docker, the base64 configuration is provided as
+`GATEWAY_CONFIG` environment variable as described in the [Docker
+Installation](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/docker-installation) instructions.
+
+Copy
+
+    
+    
+    pam gateway new -n "My Demo Gateway" -a "My Infrastructure" -c b64
+
+Creating a Gateway
 
 Create a KSM Application
 
 Windows Gateway
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FrperdEulgHMqKZAh4itn%252FScreenshot%25202025-04-19%2520at%25207.46.13%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dfcadc16c-003b-46f2-b6b7-8666d91c27a2&width=768&dpr=4&quality=100&sign=24efc03d&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

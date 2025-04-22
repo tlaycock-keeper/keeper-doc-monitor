@@ -596,7 +596,7 @@ manager/getting-started/architecture/connection-and-tunnel-
 security)[NextEnforcement Policies](/en/keeperpam/privileged-access-
 manager/getting-started/enforcement-policies)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

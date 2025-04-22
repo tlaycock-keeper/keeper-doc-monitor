@@ -911,7 +911,7 @@ Working with Commander
 installation-setup/installation-on-powershell)[NextConfiguration and
 Usage](/en/keeperpam/commander-cli/commander-installation-setup/configuration)
 
-Last updated 4 days ago
+Last updated 5 days ago
 
 Was this helpful?
 
@@ -950,8 +950,6 @@ See  for more details on device approval.
 [First Login on a New Device section](/en/keeperpam/commander-cli/commander-
 installation-setup/logging-in#first-login-on-a-new-device)
 
-Keeper Commander – Accessing and Working with Your Vault
-
 SSO Login success screen
 
 SSO Master Password Policy
@@ -976,9 +974,11 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfnUkQM9z3
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mel7nEasV2-9PcLt28R%252F-MelBP0BL3ei6D0pxshE%252FScreen%2520Shot%25202021-07-16%2520at%25202.20.19%2520PM.png%3Falt%3Dmedia%26token%3Db43c1f01-0acd-45f3-96bf-56c3ea0b5022&width=768&dpr=4&quality=100&sign=d0791f34&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mel7nEasV2-9PcLt28R%252F-MelAMU5H8NOjViHwkEl%252FScreen%2520Shot%25202020-12-24%2520at%25208.54.50%2520AM.png%3Falt%3Dmedia%26token%3D986e1183-a395-49ef-b472-fed9162bac13&width=768&dpr=4&quality=100&sign=89d92989&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mel7nEasV2-9PcLt28R%252F-MelAMU5H8NOjViHwkEl%252FScreen%2520Shot%25202020-12-24%2520at%25208.54.50%2520AM.png%3Falt%3Dmedia%26token%3D986e1183-a395-49ef-b472-fed9162bac13&width=768&dpr=4&quality=100&sign=89d92989&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mel7nEasV2-9PcLt28R%252F-MelBP0BL3ei6D0pxshE%252FScreen%2520Shot%25202021-07-16%2520at%25202.20.19%2520PM.png%3Falt%3Dmedia%26token%3Db43c1f01-0acd-45f3-96bf-56c3ea0b5022&width=768&dpr=4&quality=100&sign=d0791f34&sv=2)
+
+Keeper Commander – Accessing and Working with Your Vault
 

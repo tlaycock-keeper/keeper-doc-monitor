@@ -508,28 +508,13 @@ PAM Record Type
 
 Target Infrastructure
 
-[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
 Windows/macOS/Linux Machines, EC2 Instances, Azure VMs, etc.
-
-[PAM Database ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database)
 
 MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
 
-[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-directory)
-
 Active Directory, OpenLDAP
 
-[PAM Remote Browser ](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-remote-browser)
-
 Web-based Applications, internal apps or cloud apps
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
 
 Any local user, remote user, database credential or admin account. PAM User
 records can also be configured for scheduled or on-demand password rotation.
@@ -556,6 +541,21 @@ Alternatively, you can right-click on a folder and select Rotation, Tunnel or
 Connection.
 
 The "Target" selection will determine what type of record will be created.
+
+[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
+
+[PAM Database ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database)
+
+[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-directory)
+
+[PAM Remote Browser ](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-remote-browser)
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
 
 Create a new PAM Resource Record
 

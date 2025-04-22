@@ -1017,7 +1017,7 @@ installation-setup/automating-with-windows-
 task)[NextUninstallation](/en/keeperpam/commander-cli/commander-installation-
 setup/uninstallation)
 
-Last updated 5 months ago
+Last updated 6 months ago
 
 Was this helpful?
 

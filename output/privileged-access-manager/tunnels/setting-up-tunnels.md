@@ -604,9 +604,18 @@ PAM Record Type
 
 Target Endpoint type
 
+[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
+
 Windows/MacOS/Linux Machines, EC2 Instances, Azure VMs
 
+[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database)
+
 MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
+
+[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-directory)
 
 Active Directory, OpenLDAP
 
@@ -753,15 +762,6 @@ need to share credentials:
   * [Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-isolation) with Autofill to establish web-based interactive sessions
 
 Tunnels can also be enabled on the  using the `enterprise-role` command:
-
-[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
-[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database)
-
-[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-directory)
 
 [Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
 manager-commands#overview)

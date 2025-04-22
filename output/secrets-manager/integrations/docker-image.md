@@ -521,11 +521,7 @@ order to utilize this integration, you will need:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
-
-    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
-
-  * A [One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
+  *     *   * A [One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
 
   * The[ Keeper Secrets Manager (KSM) CLI Tool](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
 
@@ -816,6 +812,10 @@ Contribute to the Docker Image Examples
 If you have some great examples to contribute to this page, please ping us on
 Slack or email sm@keepersecurity.com.
 
+A Keeper  with secrets shared to it
+
+See the  for instructions on creating an Application
+
 See instructions on setting up the KSM CLI
 
 **Step 1:** Set Environmental Variables with Keeper notation for the secrets
@@ -824,14 +824,20 @@ that are needed. For more notation examples .
 **Step 1:** Set Environmental Variables with Keeper notation for the secrets
 that are needed. For more notation examples .
 
+[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/exec-command#notation)
+
+[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/exec-command#notation)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
 [here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface#initialize-the-client-device)
 
-[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/exec-command#notation)
-
-[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/exec-command#notation)
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 Create Record with Secret File Attachments
 
@@ -845,9 +851,9 @@ header.jpg%3Falt%3Dmedia%26token%3D7a6601b7-9799-4319-8b0e-02937fcbfae1&width=76
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf_vL6i3tZYNyKHhWjl%252F-Mfa1VlyrOY-z9yejZBY%252FScreen%2520Shot%25202021-07-26%2520at%252011.37.25%2520PM.png%3Falt%3Dmedia%26token%3D376a94a4-5a2e-4638-b844-f730ff7d150b&width=768&dpr=4&quality=100&sign=2e3941a0&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf_vL6i3tZYNyKHhWjl%252F-Mfa28rVYp_0HX3A8ubN%252FScreen%2520Shot%25202021-07-26%2520at%252011.38.56%2520PM.png%3Falt%3Dmedia%26token%3Dfd71d60e-548c-4ae9-a58a-e1323af10077&width=768&dpr=4&quality=100&sign=92e981fa&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf_vL6i3tZYNyKHhWjl%252F-Mfa28rVYp_0HX3A8ubN%252FScreen%2520Shot%25202021-07-26%2520at%252011.38.56%2520PM.png%3Falt%3Dmedia%26token%3Dfd71d60e-548c-4ae9-a58a-e1323af10077&width=768&dpr=4&quality=100&sign=92e981fa&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf_vL6i3tZYNyKHhWjl%252F-Mfa1VlyrOY-z9yejZBY%252FScreen%2520Shot%25202021-07-26%2520at%252011.37.25%2520PM.png%3Falt%3Dmedia%26token%3D376a94a4-5a2e-4638-b844-f730ff7d150b&width=768&dpr=4&quality=100&sign=2e3941a0&sv=2)
 

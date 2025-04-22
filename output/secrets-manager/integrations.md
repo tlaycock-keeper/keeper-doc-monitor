@@ -479,7 +479,7 @@ CI/CD Integrations provided with Keeper Secrets Manager
 library/vault-sdks)[NextAnsible](/en/keeperpam/secrets-
 manager/integrations/ansible)
 
-Last updated 6 days ago
+Last updated 7 days ago
 
 Was this helpful?
 
@@ -540,6 +540,9 @@ manager/integrations/aws-cli-credential-process)
 AWS Secrets Manager
 
 Sync secrets from the Keeper Vault with AWS Secrets Manager
+
+[Go to AWS Secrets Manager Documentation](/en/keeperpam/secrets-
+manager/integrations#aws-secrets-manager)
 
 ###
 
@@ -613,6 +616,9 @@ manager/integrations/docker-runtime)
 Docker Writer Image
 
 A general purpose docker image to retrieve secrets.
+
+[Go to Docker Write Image](/en/keeperpam/secrets-manager/integrations#docker-
+writer-image)
 
 ###
 
@@ -853,12 +859,6 @@ launched from a shell.
 
 [Go to Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-
 command-line-interface)
-
-[Go to AWS Secrets Manager Documentation](/en/keeperpam/secrets-
-manager/integrations#aws-secrets-manager)
-
-[Go to Docker Write Image](/en/keeperpam/secrets-manager/integrations#docker-
-writer-image)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

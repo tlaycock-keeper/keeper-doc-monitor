@@ -644,6 +644,9 @@ records.
 The convert command will only convert legacy, untyped records to typed
 records.
 
+To convert the type of a typed record, use the [edit](/en/keeperpam/commander-
+cli/command-reference/record-commands#edit-command-record-types) command.
+
 **Parameters:**
 
 Pattern to match records in the current folder. Matches against UIDs and
@@ -732,9 +735,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-To convert the type of a typed record, use the  command.
-
-[edit](/en/keeperpam/commander-cli/command-reference/record-commands#edit-
-command-record-types)
 

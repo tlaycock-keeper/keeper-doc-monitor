@@ -630,7 +630,7 @@ Any non-standard ports referenced. Separate newline per entry
 
 Ex: 2222=ssh 3390=rdp
 
-  * See additional information on [AWS Environment Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup)
+  * 
 
 ###
 
@@ -677,7 +677,7 @@ Resource Groups
 A list of resource groups to be checked. If left blank, all resource groups
 will be checked. Newlines should separate each resource group.
 
-  * See additional information on [Azure Environment Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/azure-environment-setup)
+  * 
 
 ###
 
@@ -776,6 +776,16 @@ See  for more info
 Ex: `3307=mysql `See  docs
 
 Ex: `192.168.0.15/24` Refer to for more info
+
+See additional information on
+
+See additional information on
+
+[AWS Environment Setup](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration/aws-environment-setup)
+
+[Azure Environment Setup](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration/azure-environment-setup)
 
 [docs](/en/keeperpam/privileged-access-manager/getting-started/gateways)
 

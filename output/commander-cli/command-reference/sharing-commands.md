@@ -728,10 +728,6 @@ Requires Commander version 16.6.3+
 
 **Command:**`one-time-share`
 
-**Detail:** Create, list, or remove a one-time shares for a given record. For
-more information about one-time share [click
-here](https://docs.keeper.io/enterprise-guide/one-time-share).
-
 **Sub Commands:**
 
 `list` \- show one time shares
@@ -817,10 +813,6 @@ Copy
 ###
 
 external-shares-report command
-
-The external-shares-report requires the [Compliance
-Reporting](https://docs.keeper.io/enterprise-guide/compliance-reports) add-on.
-This command is only available for Enterprise admin accounts.
 
 **Command:**`external-shares-report` or `esr`
 
@@ -1025,8 +1017,19 @@ or `esr`
 
 See the command for details on creating shared folders
 
+**Detail:** Create, list, or remove a one-time shares for a given record. For
+more information about one-time share .
+
+The external-shares-report requires the  add-on. This command is only
+available for Enterprise admin accounts.
+
 See previous  for details on how to do this. For this example, we'll be using
 the shared folder with UID `**-FHdesR_GSERHUwBg4vTXw**`
+
+[click here](https://docs.keeper.io/enterprise-guide/one-time-share)
+
+[Compliance Reporting](https://docs.keeper.io/enterprise-guide/compliance-
+reports)
 
 [example](/en/keeperpam/commander-cli/command-reference/sharing-
 commands#1.-identify-shared-folder-uid)
@@ -1051,20 +1054,12 @@ command)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel-
-_yS8GDbOy4_Cd0W%252Fimage.png%3Falt%3Dmedia%26token%3D3ff3d195-2db6-4d93-91ab-97dc3ff01210&width=768&dpr=4&quality=100&sign=5232e926&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-MekzeEjeziNtK3guRXA%252Fimage.png%3Falt%3Dmedia%26token%3D033f1c23-92c6-4f8c-a1f7-9415d9e96463&width=768&dpr=4&quality=100&sign=1f8bce6a&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel02MSVQayPfXmhqbT%252Fimage.png%3Falt%3Dmedia%26token%3D4813048e-99f3-4238-ab10-aacf9ce446d4&width=768&dpr=4&quality=100&sign=ecf067f8&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel0Z9xJp1m7dxf1H8C%252Fimage.png%3Falt%3Dmedia%26token%3D0c2a9f0e-5f49-4a4b-8fd1-235a3094af72&width=768&dpr=4&quality=100&sign=378b1d3d&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel-
+_yS8GDbOy4_Cd0W%252Fimage.png%3Falt%3Dmedia%26token%3D3ff3d195-2db6-4d93-91ab-97dc3ff01210&width=768&dpr=4&quality=100&sign=5232e926&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -1072,5 +1067,13 @@ files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mekzvg
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-MekzeEjeziNtK3guRXA%252Fimage.png%3Falt%3Dmedia%26token%3D033f1c23-92c6-4f8c-a1f7-9415d9e96463&width=768&dpr=4&quality=100&sign=1f8bce6a&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel0U6AJJFYFrnwhdyL%252Fimage.png%3Falt%3Dmedia%26token%3D14e6b9f2-53fe-4c82-9c99-d6b477732436&width=768&dpr=4&quality=100&sign=684ea3d&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel0Z9xJp1m7dxf1H8C%252Fimage.png%3Falt%3Dmedia%26token%3D0c2a9f0e-5f49-4a4b-8fd1-235a3094af72&width=768&dpr=4&quality=100&sign=378b1d3d&sv=2)
 

@@ -480,7 +480,7 @@ manager/references/database-import-and-export)[NextInstalling Docker on
 Linux](/en/keeperpam/privileged-access-manager/references/installing-docker-
 on-linux)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

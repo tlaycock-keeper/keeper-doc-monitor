@@ -637,9 +637,9 @@ Copy
     
     
     My Vault> pam rotation edit --help
-    usage: pam rotation edit [-h] (--record RECORD_NAME | --folder FOLDER_NAME) [--force] [--config CONFIG_UID] [--iam-aad-config IAM_AAD_CONFIG_UID]
-                             [--resource RESOURCE_UID] [--schedulejson SCHEDULE_JSON_DATA | --schedulecron SCHEDULE_CRON_DATA | --on-demand]
-                             [--complexity PWD_COMPLEXITY] [--admin-user ADMIN] [--enable | --disable]
+    usage: pam rotation edit [-h] (--record RECORD_NAME | --folder FOLDER_NAME) [--force] [--config CONFIG] [--iam-aad-config IAM_AAD_CONFIG_UID] [--resource RESOURCE]
+                             [--schedulejson SCHEDULE_JSON_DATA | --schedulecron SCHEDULE_CRON_DATA | --on-demand | --schedule-config] [--complexity PWD_COMPLEXITY]
+                             [--admin-user ADMIN] [--enable | --disable]
     
     options:
       -h, --help            show this help message and exit
@@ -648,21 +648,23 @@ Copy
       --folder FOLDER_NAME, -fd FOLDER_NAME
                             Used for bulk rotation setup. The folder UID or name that holds records to be configured
       --force, -f           Do not ask for confirmation
-      --config CONFIG_UID, -c CONFIG_UID
-                            UID of the configuration record.
+      --config CONFIG, -c CONFIG
+                            UID or path of the configuration record.
       --iam-aad-config IAM_AAD_CONFIG_UID, -iac IAM_AAD_CONFIG_UID
                             UID of a PAM Configuration. Used for an IAM or Azure AD user in place of --resource.
-      --resource RESOURCE_UID, -rs RESOURCE_UID
-                            UID of the resource record.
+      --resource RESOURCE, -rs RESOURCE
+                            UID or path of the resource record.
       --schedulejson SCHEDULE_JSON_DATA, -sj SCHEDULE_JSON_DATA
-                            Json of the scheduler. Example: -sj '{"type": "WEEKLY", "utcTime": "15:44", "weekday": "SUNDAY", "intervalCount": 1}'
+                            JSON of the scheduler. Example: -sj '{"type": "WEEKLY", "utcTime": "15:44", "weekday": "SUNDAY", "intervalCount": 1}'
       --schedulecron SCHEDULE_CRON_DATA, -sc SCHEDULE_CRON_DATA
                             Cron tab string of the scheduler. Example: to run job daily at 5:56PM UTC enter following cron -sc "56 17 * * *"
       --on-demand, -od      Schedule On Demand
+      --schedule-config, -sf
+                            Schedule from Configuration
       --complexity PWD_COMPLEXITY, -x PWD_COMPLEXITY
-                            Password complexity: length, upper, lower, digits, symbols. Ex. 32,5,5,5,5
+                            Password complexity: length, upper, lower, digits, symbols. Ex. 32,5,5,5,5[,SPECIAL CHARS]
       --admin-user ADMIN, -a ADMIN
-                            UID for the PAMUser record to configure the admin credential on the PAM Resource as the Admin when rotating
+                            UID or path for the PAMUser record to configure the admin credential on the PAM Resource as the Admin when rotating
       --enable, -e          Enable rotation
       --disable, -d         Disable rotation
 
@@ -1148,7 +1150,7 @@ Copy
 reference/sharing-commands)[NextConnection Commands](/en/keeperpam/commander-
 cli/command-reference/connection-commands)
 
-Last updated 25 days ago
+Last updated 7 hours ago
 
 Was this helpful?
 
