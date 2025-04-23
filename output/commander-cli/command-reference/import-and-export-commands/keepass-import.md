@@ -430,6 +430,30 @@ reference/import-and-export-commands/keepass-import?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=vuR0nkPtuYuYCbBZ65r2&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
+
+# Keepass Import
+
+Automatic migration of your Keepass vault
+
+[PreviousDelinea / Thycotic Secret Server Import](/en/keeperpam/commander-
+cli/command-reference/import-and-export-commands/delinea-thycotic-secret-
+server-import)[NextManageEngine Import](/en/keeperpam/commander-cli/command-
+reference/import-and-export-commands/manageengine-import)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -459,30 +483,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=vuR0nkPtuYuYCbBZ65r2&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
-
-# Keepass Import
-
-Automatic migration of your Keepass vault
-
-[PreviousDelinea / Thycotic Secret Server Import](/en/keeperpam/commander-
-cli/command-reference/import-and-export-commands/delinea-thycotic-secret-
-server-import)[NextManageEngine Import](/en/keeperpam/commander-cli/command-
-reference/import-and-export-commands/manageengine-import)
-
-Last updated 4 months ago
-
-Was this helpful?
 
 ##
 

@@ -428,6 +428,40 @@ manager/integrations/gitlab-plugin?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Features
+  * Prerequisites
+  * About
+  * Setup
+  * Save Configuration as a Secret Variable
+  * Usage
+  * Prepare the Pipeline for Secrets Manager
+  * Get Secrets
+  * Set Secret as Environment Variable
+  *   * Create a File from a Secret
+  * Complete Example
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MkdGFOKqlxew9z0KHiO&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# GitLab
+
+Keeper Secrets Manager integration into GitLab for dynamic secrets retrieval
+
+[PreviousGitHub Actions](/en/keeperpam/secrets-manager/integrations/github-
+actions)[NextGoogle Cloud Secret Manager Sync](/en/keeperpam/secrets-
+manager/integrations/gcp-secret-manager)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -458,17 +492,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MkdGFOKqlxew9z0KHiO&only=yes&limit=100)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 ##
 
 Features
@@ -479,6 +502,9 @@ Features
 
   * Copy secure files from the Keeper Vault
 
+For a complete list of Keeper Secrets Manager features see the [Overview
+](/en/keeperpam/secrets-manager/overview)
+
 ##
 
 Prerequisites
@@ -486,11 +512,19 @@ Prerequisites
 This page documents the Secrets Manager GitLab integration. In order to
 utilize this integration, you will need:
 
-  *     * Secrets Manager addon enabled for your Keeper account
+  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
+
+    * Secrets Manager addon enabled for your Keeper account
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   *     * The GitLab integration accepts JSON and Base64 format configurations
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+
+    * The GitLab integration accepts JSON and Base64 format configurations
 
   * A GitLab account with Pipeline creation access
 
@@ -511,6 +545,15 @@ Setup
 ###
 
 Save Configuration as a Secret Variable
+
+A keeper [Secrets Manager configuration](/en/keeperpam/secrets-
+manager/about/secrets-manager-configuration) is required to utilize the GitLab
+integration.
+
+**1)** Create a Keeper Secrets Manager Configuration. See the
+[documentation](/en/keeperpam/secrets-manager/about/secrets-manager-
+configuration) for details. The GitLab integration supports **Base64** and
+**JSON** configurations.
 
 **2)** To save the configuration in GitLab, navigate to GitLab Settings ->
 CI/CD -> Variables
@@ -539,8 +582,21 @@ In order to use Keeper Secrets Manager with GitLab, first we need to install
 it from the PyPi registry. This can be achieved by adding following line to
 the `before_script` area:
 
+Copy
+
+    
+    
+    before_script:
+      - python3 -m pip install keeper-secrets-manager-cli
+
 If you did not set the Secrets Manager Configuration variable to the name
 `KSM_CONFIG` you need to set it here in the `before_script` area
+
+Copy
+
+    
+    
+      - export KSM_CONFIG=$<SECRETS MANAGER CONFIG VARIABLE>
 
 ###
 
@@ -548,6 +604,16 @@ Get Secrets
 
 Inside the GitLab job, retrieve a secrets from the Keeper Vault using the
 following format:
+
+Copy
+
+    
+    
+    $(ksm secret notation <KEEPER NOTATION>)
+
+This utilizes the [KSM CLI tool](/en/keeperpam/secrets-manager/secrets-
+manager-command-line-interface) to get secrets using [Keeper
+Notation](/en/keeperpam/secrets-manager/about/keeper-notation).
 
 After getting a secret, you can set it as an environment variable or file.
 
@@ -563,6 +629,16 @@ a secret to an environment variable
 The following job sets a password secret as an environment variable named
 `MY_PWD` and a custom 'isbncode' record field to the environment variable
 named `MY _ISBNCODE`
+
+Copy
+
+    
+    
+    job1:
+      stage: build
+      script:
+        - export MY_PWD=$(ksm secret notation keeper://XXX/field/password)
+        - export MY_ISBNCODE=$(ksm secret notation keeper://XXX/custom_field/isbncode)
 
 Replace `XXX` with a record UID in the above example.
 
@@ -585,6 +661,15 @@ The following job gets a file named "mykey.pub" that is attached to a Keeper
 record and saves its contents into file name "mykey.pub" in the local "tmp"
 folder
 
+Copy
+
+    
+    
+    job1:
+      stage: build
+      script:
+       - ksm secret download -u XXX --name "mykey.pub" --file-output "/tmp/mykey.pub"
+
 Replace `XXX` with a record UID in the above example.
 
 Keeper Secrets Manager can be used in any job stage. This example uses the
@@ -595,63 +680,6 @@ Keeper Secrets Manager can be used in any job stage. This example uses the
 Complete Example
 
 The example below shows all available functionality of this integration
-
-Replace `XXX` in the example above with a record UID.
-
-For a complete list of Keeper Secrets Manager features see the
-
-Keeper Secrets Manager access (See the  for more details)
-
-A Keeper  with secrets shared to it
-
-See the  for instructions on creating an Application
-
-An initialized Keeper
-
-A keeper  is required to utilize the GitLab integration.
-
-**1)** Create a Keeper Secrets Manager Configuration. See the  for details.
-The GitLab integration supports **Base64** and **JSON** configurations.
-
-This utilizes the  to get secrets using .
-
-Copy
-
-    
-    
-    before_script:
-      - python3 -m pip install keeper-secrets-manager-cli
-
-Copy
-
-    
-    
-      - export KSM_CONFIG=$<SECRETS MANAGER CONFIG VARIABLE>
-
-Copy
-
-    
-    
-    $(ksm secret notation <KEEPER NOTATION>)
-
-Copy
-
-    
-    
-    job1:
-      stage: build
-      script:
-        - export MY_PWD=$(ksm secret notation keeper://XXX/field/password)
-        - export MY_ISBNCODE=$(ksm secret notation keeper://XXX/custom_field/isbncode)
-
-Copy
-
-    
-    
-    job1:
-      stage: build
-      script:
-       - ksm secret download -u XXX --name "mykey.pub" --file-output "/tmp/mykey.pub"
 
 Copy
 
@@ -670,52 +698,13 @@ Copy
         - ksm secret download -u XXX--name "mykey.pub" --file-output "/tmp/mykey.pub"
         - file /tmp/mykey.pub
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+Replace `XXX` in the example above with a record UID.
 
-# GitLab
-
-Keeper Secrets Manager integration into GitLab for dynamic secrets retrieval
-
-[PreviousGitHub Actions](/en/keeperpam/secrets-manager/integrations/github-
-actions)[NextGoogle Cloud Secret Manager Sync](/en/keeperpam/secrets-
-manager/integrations/gcp-secret-manager)
-
-  * Features
-  * Prerequisites
-  * About
-  * Setup
-  * Save Configuration as a Secret Variable
-  * Usage
-  * Prepare the Pipeline for Secrets Manager
-  * Get Secrets
-  * Set Secret as Environment Variable
-  *   * Create a File from a Secret
-  * Complete Example
-
-[Overview ](/en/keeperpam/secrets-manager/overview)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
-
-[Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration)
-
-[Secrets Manager configuration](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration)
-
-[documentation](/en/keeperpam/secrets-manager/about/secrets-manager-
-configuration)
-
-[KSM CLI tool](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface)
-
-[Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-notation)
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG6FEOq6NQs-V7faS%252F-MkdGVZHNVs_7DXooyJA%252Fgitlab-
+plugin-
+header.jpg%3Falt%3Dmedia%26token%3D8473ec29-d8e7-4c89-b437-12740e205265&width=768&dpr=4&quality=100&sign=548e4ce&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -724,12 +713,6 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FUdGWGw0HP
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYhpG7ahqgd8iL1Gqltkw%252Fimage.png%3Falt%3Dmedia%26token%3D0f3c3393-4db1-4a8c-a10c-c7bb6b6a6a10&width=768&dpr=4&quality=100&sign=b2937de4&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG6FEOq6NQs-V7faS%252F-MkdGVZHNVs_7DXooyJA%252Fgitlab-
-plugin-
-header.jpg%3Falt%3Dmedia%26token%3D8473ec29-d8e7-4c89-b437-12740e205265&width=768&dpr=4&quality=100&sign=548e4ce&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

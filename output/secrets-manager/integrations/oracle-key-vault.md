@@ -1088,7 +1088,7 @@ manager/developer-sdk-library) for more examples and functionality
 deploy)[NextPowerShell Plugin](/en/keeperpam/secrets-
 manager/integrations/powershell-plugin)
 
-Last updated 6 days ago
+Last updated 7 days ago
 
 Was this helpful?
 

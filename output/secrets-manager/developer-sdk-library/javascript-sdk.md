@@ -428,51 +428,6 @@ library/javascript-sdk?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Download and Installation
-  * Install with NPM
-  * Source Code
-  * Using the SDK
-  * Initialize Storage
-  * Retrieve Secrets
-  * Retrieve Secrets by Title
-  * Retrieve Values From a Secret
-  * Retrieve a TOTP Code
-  * Update a Secret
-  * Generate a Random Password
-  * Download a File
-  * Download a Thumbnail
-  * Upload a File
-  * Create a Secret 
-  * Delete a Secret
-  * Caching
-  * Folders
-  * Read Folders
-  * Create a Folder
-  * Update a Folder
-  * Delete Folders
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MgQrj_5ZT3N3bdl96t2&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Developer SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
-
-# JavaScript SDK
-
-Detailed Javascript SDK docs for Keeper Secrets Manager
-
-[PreviousRecord Field Classes](/en/keeperpam/secrets-manager/developer-sdk-
-library/java-sdk/record-field-classes)[Next.NET SDK](/en/keeperpam/secrets-
-manager/developer-sdk-library/.net-sdk)
-
-Last updated 13 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -503,6 +458,17 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MgQrj_5ZT3N3bdl96t2&only=yes&limit=100)
+
+Last updated 14 days ago
+
+Was this helpful?
+
 ##
 
 Download and Installation
@@ -510,12 +476,6 @@ Download and Installation
 ###
 
 **Install with NPM**
-
-Copy
-
-    
-    
-    npm install @keeper-security/secrets-manager-core
 
 ###
 
@@ -537,11 +497,323 @@ one read operation to bind the token and fully populate `config.json`
 In order to retrieve secrets, you must first initialize the local storage on
 your machine.
 
-Copy
+####
 
-    
-    
-    initializeStorage(storage: KeyValueStorage, clientKey: String? = null, hostName: String? = null)
+**Example Usage**
+
+###
+
+Retrieve Secrets
+
+**Response**
+
+Type:****`KeeperSecrets`
+
+Object containing all Keeper records, or records that match the given filter
+criteria
+
+**Example Usage**
+
+Retrieve all Secrets
+
+###
+
+Retrieve Secrets by Title
+
+**Example Usage**
+
+###
+
+Retrieve Values From a Secret
+
+**Retrieve a Password**
+
+Get PasswordExample Usage
+
+**Retrieve other Fields with Keeper Notation**
+
+Get ValueExample Usage
+
+* The record UID in the notation query must be for a secret passed in the secrets parameter or nothing will be found by the query
+
+####
+
+**Returns**
+
+Type: `any`
+
+The value of the field at the location specified by the dot notation query if
+any, otherwise undefined.
+
+###
+
+**Retrieve a TOTP Code**
+
+Get TOTP CodeExample
+
+* The record UID in the notation query must be for a secret passed in the secrets parameter or nothing will be found by the query
+
+####
+
+**Returns**
+
+Type: `any`
+
+The value of the field at the location specified by the dot notation query if
+any, otherwise undefined.
+
+###
+
+Update a Secret
+
+Record update commands don't update local record data on success _(esp.
+updated record revision)_ so any consecutive updates to an already updated
+record will fail due to **revision** mismatch. Make sure to reload all updated
+records after each update batch.
+
+Update SecretExample UsageTransactional updates
+
+**Returns**
+
+**Type:**`Promise<void>`
+
+###
+
+Generate a Random Password
+
+Generate PasswordExample Usage
+
+Each parameter indicates the min number of a type of character to include. For
+example, 'uppercase' indicates the minimum number of uppercase letters to
+include.
+
+####
+
+Returns
+
+Type: `String`
+
+###
+
+Download a File
+
+**Response**
+
+Type:****`Promise<Uint8Array`
+
+Bytes of file for download
+
+###
+
+Download a **Thumbnail**
+
+**Response**
+
+Type:****`Promise<Uint8Array>`
+
+Bytes of thumbnail for download
+
+###
+
+Upload a File
+
+Upload File:
+
+Creating the Keeper File Upload Object:
+
+**Example Usage**
+
+###
+
+Create a Secret
+
+####
+
+Prerequisites:
+
+  * Shared folder UID
+
+    * Shared folder must be accessible by the Secrets Manager Application
+
+    * You and the Secrets Manager application must have edit permission
+
+    * There must be at least one record in the shared folder
+
+  * Created records and record fields must be formatted correctly
+
+    *   * TOTP fields accept only URL generated outside of the KSM SDK
+
+  * 
+
+Create a RecordCreate Record in Sub-folderLogin Record ExampleCustom Type
+Example
+
+This example creates a login type record with a login value and a generated
+password.
+
+Replace '`[FOLDER UID]`' in the example with the UID of a shared folder that
+your Secrets Manager has access to.
+
+This example creates a record with a custom record type.
+
+Replace '`[FOLDER UID]`' in the example with the UID of a shared folder that
+your Secrets Manager has access to.
+
+###
+
+Delete a Secret
+
+The JavaScript KSM SDK can delete records in the Keeper Vault.
+
+Delete SecretExample
+
+###
+
+Caching
+
+To protect against losing access to your secrets when network access is lost,
+the JavaScript SDK allows caching of secrets to the local machine in an
+encrypted file.
+
+Add `queryFunction: cachingPostFunction` to `SecretManagerOptions`
+
+Example usage:
+
+###
+
+Folders
+
+Folders have full CRUD support - create, read, update and delete operations.
+
+###
+
+Read Folders
+
+Downloads full folder hierarchy.
+
+**Response**
+
+Type:****`KeeperFolder[]`
+
+**Example Usage**
+
+###
+
+Create a Folder
+
+Requires `CreateOptions` and folder name to be provided. The folder UID
+parameter in `CreateOptions` is required - UID of a shared folder, while sub-
+folder UID is optional and if missing new regular folder is created directly
+under the parent (shared folder). There's no requirement for the sub-folder to
+be a direct descendant of the parent shared folder - it could be many levels
+deep.
+
+**Example Usage**
+
+###
+
+Update a Folder
+
+Updates the folder metadata - currently folder name only.
+
+**Example Usage**
+
+###
+
+Delete Folders
+
+Removes a list of folders. Use `forceDeletion` flag to remove non-empty
+folders.
+
+When using forceDeletion avoid sending parent with its children folder UIDs.
+Depending on the delete order you may get an error - _ex._ if parent force-
+deleted child first. There's no guarantee that list will always be processed
+in FIFO order.
+
+Any folders UIDs missing from the vault or not shared to the KSM Application
+will not result in error.
+
+**Example Usage**
+
+Parameter
+
+Type
+
+Required
+
+Description
+
+Fields are found by type, for a list of field types see the  documentation.
+
+See  to learn about Keeper Notation format and capabilities
+
+See  to learn about Keeper Notation format and capabilities
+
+Parameter
+
+Type
+
+Required
+
+Default
+
+Parameter
+
+Type
+
+Required
+
+Description
+
+Parameter
+
+Type
+
+Required
+
+Description
+
+See the  for expected field formats for each record type
+
+After record creation, you can upload file attachments using
+
+Parameter
+
+Type
+
+Required
+
+Default
+
+Parameter
+
+Type
+
+Required
+
+Default
+
+Parameter
+
+Type
+
+Required
+
+Parameter
+
+Type
+
+Required
+
+Description
+
+Parameter
+
+Type
+
+Required
+
+Description
 
 Parameter
 
@@ -552,39 +824,6 @@ Required
 Default
 
 Description
-
-`storage`
-
-`KeyValueStorage`
-
-Yes
-
-storage location
-
-`clientKey`
-
-string
-
-Optional
-
-null
-
-token for connecting with Keeper Secrets Manager
-
-`hostName`
-
-string
-
-Optional
-
-null
-
-server location to get secrets. If nothing is passed, will use
-keepersecurity.com (US)
-
-####
-
-**Example Usage**
 
 Copy
 
@@ -614,10 +853,6 @@ Copy
     }
     
     getKeeperRecords().finally()
-
-###
-
-Retrieve Secrets
 
 Copy
 
@@ -653,27 +888,12 @@ Empty List
 
 Record UIDs to get
 
-**Response**
-
-Type:****`KeeperSecrets`
-
-Object containing all Keeper records, or records that match the given filter
-criteria
-
-**Example Usage**
-
-Retrieve all Secrets
-
 Copy
 
     
     
     const storage = inMemoryStorage() // see initialization example
     val secrets = getSecrets(storage)
-
-###
-
-Retrieve Secrets by Title
 
 Copy
 
@@ -684,14 +904,6 @@ Copy
     
     // get only the first matching record
     getSecretByTitle = async (options: SecretManagerOptions, recordTitle: string): Promise<KeeperRecord>
-
-Parameter
-
-Type
-
-Required
-
-Description
 
 `options`
 
@@ -709,8 +921,6 @@ Yes
 
 Record title to search for
 
-**Example Usage**
-
 Copy
 
     
@@ -726,14 +936,6 @@ Copy
     }
     
     getKeeperRecord().finally()
-
-###
-
-Retrieve Values From a Secret
-
-**Retrieve a Password**
-
-Get PasswordExample Usage
 
 Copy
 
@@ -755,10 +957,6 @@ Copy
         const firstRecord = records[0]
         const firstRecordPassword = firstRecord.data.fields.find(x => x.type === 'password')
     }
-
-**Retrieve other Fields with Keeper Notation**
-
-Get ValueExample Usage
 
 Copy
 
@@ -812,23 +1010,6 @@ Yes
 
 Keeper Notation query
 
-* The record UID in the notation query must be for a secret passed in the secrets parameter or nothing will be found by the query
-
-####
-
-**Returns**
-
-Type: `any`
-
-The value of the field at the location specified by the dot notation query if
-any, otherwise undefined.
-
-###
-
-**Retrieve a TOTP Code**
-
-Get TOTP CodeExample
-
 Copy
 
     
@@ -875,28 +1056,6 @@ Description
 Yes
 
 TOTP Url
-
-* The record UID in the notation query must be for a secret passed in the secrets parameter or nothing will be found by the query
-
-####
-
-**Returns**
-
-Type: `any`
-
-The value of the field at the location specified by the dot notation query if
-any, otherwise undefined.
-
-###
-
-Update a Secret
-
-Record update commands don't update local record data on success _(esp.
-updated record revision)_ so any consecutive updates to an already updated
-record will fail due to **revision** mismatch. Make sure to reload all updated
-records after each update batch.
-
-Update SecretExample UsageTransactional updates
 
 Copy
 
@@ -982,16 +1141,6 @@ Yes
 
 Yes
 
-**Returns**
-
-**Type:**`Promise<void>`
-
-###
-
-Generate a Random Password
-
-Generate PasswordExample Usage
-
 Copy
 
     
@@ -1024,14 +1173,6 @@ Copy
     recordToUpdatePasswordField.value[0] = newRandomPwd
     
     await updateSecret({storage: storage}, recordToUpdate)
-
-Parameter
-
-Type
-
-Required
-
-Default
 
 length
 
@@ -1073,20 +1214,6 @@ Optional
 
 0
 
-Each parameter indicates the min number of a type of character to include. For
-example, 'uppercase' indicates the minimum number of uppercase letters to
-include.
-
-####
-
-Returns
-
-Type: `String`
-
-###
-
-Download a File
-
 Copy
 
     
@@ -1110,16 +1237,6 @@ Description
 Yes
 
 File to download
-
-**Response**
-
-Type:****`Promise<Uint8Array`
-
-Bytes of file for download
-
-###
-
-Download a **Thumbnail**
 
 Copy
 
@@ -1145,31 +1262,11 @@ Yes
 
 File with thumbnail to download
 
-**Response**
-
-Type:****`Promise<Uint8Array>`
-
-Bytes of thumbnail for download
-
-###
-
-Upload a File
-
-Upload File:
-
 Copy
 
     
     
     uploadFile = async (options: SecretManagerOptions, ownerRecord: KeeperRecord, file: KeeperFileUpload): Promise<string>
-
-Parameter
-
-Type
-
-Required
-
-Description
 
 `options`
 
@@ -1195,8 +1292,6 @@ Yes
 
 The File to upload
 
-Creating the Keeper File Upload Object:
-
 Copy
 
     
@@ -1207,14 +1302,6 @@ Copy
         type?: string
         data: Uint8Array
     }
-
-Parameter
-
-Type
-
-Required
-
-Description
 
 `name`
 
@@ -1249,8 +1336,6 @@ Yes
 
 File data as bytes
 
-**Example Usage**
-
 Copy
 
     
@@ -1270,44 +1355,11 @@ Copy
         data: fileData
     })
 
-###
-
-Create a Secret
-
-####
-
-Prerequisites:
-
-  * Shared folder UID
-
-    * Shared folder must be accessible by the Secrets Manager Application
-
-    * You and the Secrets Manager application must have edit permission
-
-    * There must be at least one record in the shared folder
-
-  * Created records and record fields must be formatted correctly
-
-    *   * TOTP fields accept only URL generated outside of the KSM SDK
-
-  * 
-
-Create a RecordCreate Record in Sub-folderLogin Record ExampleCustom Type
-Example
-
 Copy
 
     
     
     createSecret(options, folderUid, record)
-
-Parameter
-
-Type
-
-Required
-
-Default
 
 options
 
@@ -1333,14 +1385,6 @@ Copy
     
     createSecret2(options, createOptions, record)
 
-Parameter
-
-Type
-
-Required
-
-Default
-
 options
 
 SecretManagerOptions
@@ -1359,12 +1403,6 @@ JSON Object
 
 Yes
 
-This example creates a login type record with a login value and a generated
-password.
-
-Replace '`[FOLDER UID]`' in the example with the UID of a shared folder that
-your Secrets Manager has access to.
-
 Copy
 
     
@@ -1380,11 +1418,6 @@ Copy
     }
     
     let recordUid = await createSecret(options, folderUid, newRec)
-
-This example creates a record with a custom record type.
-
-Replace '`[FOLDER UID]`' in the example with the UID of a shared folder that
-your Secrets Manager has access to.
 
 Copy
 
@@ -1492,25 +1525,11 @@ Copy
     
     let recordUid = await createSecret(options, "[FOLDER UID]", newRec)
 
-###
-
-Delete a Secret
-
-The JavaScript KSM SDK can delete records in the Keeper Vault.
-
-Delete SecretExample
-
 Copy
 
     
     
     deleteSecret(smOptions, recordUids);
-
-Parameter
-
-Type
-
-Required
 
 `smOptions`
 
@@ -1534,18 +1553,6 @@ Copy
     // delete a specific secret by record UID
     await deleteSecret(smOptions, ["EG6KdJaaLG7esRZbMnfbFA"]);
 
-###
-
-Caching
-
-To protect against losing access to your secrets when network access is lost,
-the JavaScript SDK allows caching of secrets to the local machine in an
-encrypted file.
-
-Add `queryFunction: cachingPostFunction` to `SecretManagerOptions`
-
-Example usage:
-
 Copy
 
     
@@ -1555,29 +1562,11 @@ Copy
         queryFunction: cachingPostFunction // Import `cachingPostFunction`
     }
 
-###
-
-Folders
-
-Folders have full CRUD support - create, read, update and delete operations.
-
-###
-
-Read Folders
-
-Downloads full folder hierarchy.
-
 Copy
 
     
     
     getFolders = async (options: SecretManagerOptions): Promise<KeeperFolder[]>
-
-**Response**
-
-Type:****`KeeperFolder[]`
-
-**Example Usage**
 
 Copy
 
@@ -1586,30 +1575,11 @@ Copy
     const storage = localConfigStorage("ksm-config.json")
     const folders = await getFolders({storage: storage})
 
-###
-
-Create a Folder
-
-Requires `CreateOptions` and folder name to be provided. The folder UID
-parameter in `CreateOptions` is required - UID of a shared folder, while sub-
-folder UID is optional and if missing new regular folder is created directly
-under the parent (shared folder). There's no requirement for the sub-folder to
-be a direct descendant of the parent shared folder - it could be many levels
-deep.
-
 Copy
 
     
     
     createFolder = async (options: SecretManagerOptions, createOptions: CreateOptions, folderName: string): Promise<string>
-
-Parameter
-
-Type
-
-Required
-
-Description
 
 `options`
 
@@ -1644,8 +1614,6 @@ Copy
         subFolderUid?: string
     }
 
-**Example Usage**
-
 Copy
 
     
@@ -1653,25 +1621,11 @@ Copy
     const storage = localConfigStorage("ksm-config.json")
     const folderUid = await createFolder({storage: storage}, {folderUid: "[PARENT_SHARED_FOLDER_UID]"}, "new_folder")
 
-###
-
-Update a Folder
-
-Updates the folder metadata - currently folder name only.
-
 Copy
 
     
     
     updateFolder = async (options: SecretManagerOptions, folderUid: string, folderName: string): Promise<void>
-
-Parameter
-
-Type
-
-Required
-
-Description
 
 `options`
 
@@ -1697,8 +1651,6 @@ Yes
 
 The new folder name
 
-**Example Usage**
-
 Copy
 
     
@@ -1706,36 +1658,11 @@ Copy
     const storage = localConfigStorage("ksm-config.json")
     await updateFolder({storage: storage}, "[FOLDER_UID]", "new_folder_name")
 
-###
-
-Delete Folders
-
-Removes a list of folders. Use `forceDeletion` flag to remove non-empty
-folders.
-
-When using forceDeletion avoid sending parent with its children folder UIDs.
-Depending on the delete order you may get an error - _ex._ if parent force-
-deleted child first. There's no guarantee that list will always be processed
-in FIFO order.
-
-Any folders UIDs missing from the vault or not shared to the KSM Application
-will not result in error.
-
 Copy
 
     
     
     deleteFolder = async (options: SecretManagerOptions, folderUids: string[], forceDeletion?: boolean): Promise<SecretsManagerDeleteResponse>
-
-Parameter
-
-Type
-
-Required
-
-Default
-
-Description
 
 `options`
 
@@ -1763,8 +1690,6 @@ No
 
 Force deletion of non-empty folders
 
-**Example Usage**
-
 Copy
 
     
@@ -1772,15 +1697,90 @@ Copy
     const storage = localConfigStorage("ksm-config.json")
     await deleteFolder({storage: storage}, ["[FOLDER_UID1]", "[FOLDER_UID2]"], true)
 
-Fields are found by type, for a list of field types see the  documentation.
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Developer SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
 
-See  to learn about Keeper Notation format and capabilities
+# JavaScript SDK
 
-See  to learn about Keeper Notation format and capabilities
+Detailed Javascript SDK docs for Keeper Secrets Manager
 
-See the  for expected field formats for each record type
+[PreviousRecord Field Classes](/en/keeperpam/secrets-manager/developer-sdk-
+library/java-sdk/record-field-classes)[Next.NET SDK](/en/keeperpam/secrets-
+manager/developer-sdk-library/.net-sdk)
 
-After record creation, you can upload file attachments using
+  * Download and Installation
+  * Install with NPM
+  * Source Code
+  * Using the SDK
+  * Initialize Storage
+  * Retrieve Secrets
+  * Retrieve Secrets by Title
+  * Retrieve Values From a Secret
+  * Retrieve a TOTP Code
+  * Update a Secret
+  * Generate a Random Password
+  * Download a File
+  * Download a Thumbnail
+  * Upload a File
+  * Create a Secret 
+  * Delete a Secret
+  * Caching
+  * Folders
+  * Read Folders
+  * Create a Folder
+  * Update a Folder
+  * Delete Folders
+
+Copy
+
+    
+    
+    npm install @keeper-security/secrets-manager-core
+
+Copy
+
+    
+    
+    initializeStorage(storage: KeyValueStorage, clientKey: String? = null, hostName: String? = null)
+
+Parameter
+
+Type
+
+Required
+
+Default
+
+Description
+
+`storage`
+
+`KeyValueStorage`
+
+Yes
+
+storage location
+
+`clientKey`
+
+string
+
+Optional
+
+null
+
+token for connecting with Keeper Secrets Manager
+
+`hostName`
+
+string
+
+Optional
+
+null
+
+server location to get secrets. If nothing is passed, will use
+keepersecurity.com (US)
 
 [GitHub repository](https://github.com/Keeper-Security/secrets-
 manager/tree/master/sdk/javascript)
@@ -1791,12 +1791,12 @@ notation)
 [Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
 notation)
 
+[uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-
+sdk#upload-a-file)
+
 [Record Types](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
 
 [documentation](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
-
-[uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-
-sdk#upload-a-file)
 

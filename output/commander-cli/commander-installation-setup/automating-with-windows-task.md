@@ -584,12 +584,6 @@ Any feature or capability of the end-user vault or Admin Console can be
 automated this way. Take a look at all the Keeper Commander
 [commands](/en/keeperpam/commander-cli/command-reference) available.
 
-To expand upon this use case, you would likely want to set up a Batch file and
-execute the batch of commands instead of adding them directly on the CLI
-arguments. More information about batch mode commands can be found
-[here](/en/keeperpam/commander-cli/commander-installation-
-setup/configuration#batch-mode-through-stdin).
-
 [PreviousAWS Key Management Service](/en/keeperpam/commander-cli/commander-
 installation-setup/configuration/aws-key-management-service)[NextAutomating
 with AWS Lambda](/en/keeperpam/commander-cli/commander-installation-
@@ -628,4 +622,11 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+To expand upon this use case, you would likely want to set up a Batch file and
+execute the batch of commands instead of adding them directly on the CLI
+arguments. More information about batch mode commands can be found .
+
+[here](/en/keeperpam/commander-cli/commander-installation-
+setup/configuration#batch-mode-through-stdin)
 

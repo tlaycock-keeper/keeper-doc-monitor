@@ -498,11 +498,17 @@ Was this helpful?
 In this section, you will learn how to rotate **DB User or Admin** credentials
 on the following Azure Managed Databases:
 
-  * [Azure SQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database/azure-sql)
+  *   *   *   * 
 
-  *   * [Azure MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database/azure-mariadb-database)
+[Azure SQL](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/azure/managed-database/azure-sql)
 
-  * [Azure PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database/azure-postgresql-single-or-flexible-database)
+[Azure MariaDB](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/azure/managed-database/azure-mariadb-database)
+
+[Azure PostgreSQL](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/azure/managed-database/azure-postgresql-single-or-
+flexible-database)
 
 [Azure MySQL](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/azure/managed-database#azure-mysql-single-or-

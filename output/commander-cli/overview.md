@@ -442,7 +442,7 @@ Overview of Keeper Commander CLI for IT Admins, DevOps & Developers
 manager/troubleshooting)[NextInstallation and Setup](/en/keeperpam/commander-
 cli/commander-installation-setup)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

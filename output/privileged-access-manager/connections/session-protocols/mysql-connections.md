@@ -594,7 +594,7 @@ manager/connections/session-protocols/rbi-connections)[NextSQL Server
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/sql-server-connections)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

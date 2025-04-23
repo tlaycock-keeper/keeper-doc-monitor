@@ -460,10 +460,50 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Features
+  * Prerequisites
+  * Installation
+  * Install Keeper Ansible Module
+  * Generate a Config File
+  * Ansible Variables
+  * Command Line Variables
+  * Ansible Plugin Usage
+  * Plugin: keeper_cache_records
+  * Plugin: keeper_copy
+  * Plugin: keeper_get
+  * Plugin: keeper_get_record
+  * Plugin: keeper_set
+  * Plugin: keeper_create
+  * Plugin: keeper_remove
+  * Plugin: keeper_password
+  * Plugin: keeper_lookup
+  * Plugin: keeper_init
+  * Plugin: keeper_info
+  * Plugin: keeper_cleanup
+  * Plugin: keeper_redact
+  * Ansible Vault Password Retrieval
+  * Logging
+  * Troubleshooting
+  * __NSPlaceholderDate in progress in another thread when fork() called error.
+  * Missing Configuration file
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-Mb8EplHSWmubOCYOX0_&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+  3. [Ansible](/en/keeperpam/secrets-manager/integrations/ansible)
+
+# Ansible Plugin
+
+A collection of Ansible plugins that interact with your Keeper account and can
+be used in your automations.
+
+[PreviousAnsible](/en/keeperpam/secrets-
+manager/integrations/ansible)[NextAnsible Tower](/en/keeperpam/secrets-
+manager/integrations/ansible/ansible-tower)
 
 Last updated 3 months ago
 
@@ -509,12 +549,33 @@ Install Keeper Ansible Module
 
 Installation via Ansible Galaxy
 
+Copy
+
+    
+    
+    $ ansible-galaxy collection install keepersecurity.keeper_secrets_manager
+
 Ansible Galaxy collection uses long plugin names. The name is the collection
 name combined with the plugin name. For example, the `keeper_copy` plugin name
 when using Ansible Galaxy is
 `keeper_security.keeper_secrets_manager.keeper_copy` _._ If you want to use
 the short plugin name, add `keepersecurity.keeper_secrets_manager` to the
 `collections` block of your playbook.
+
+Copy
+
+    
+    
+    - name: Keeper Copy
+      hosts: my_hosts
+      collections: 
+        - keepersecurity.keeper_secrets_manager
+      
+      tasks:
+        - name: Copy a password
+          keeper_copy:
+            uid: RECORD UID
+            ...
 
 Installing via Ansible Galaxy assumes you already have Ansible installed.
 Ansible Galaxy cannot install dependencies. The following dependencies will
@@ -535,726 +596,15 @@ The Ansible module for Keeper is installed with the command below. Make note
 of the location where the module is installed, as this will be needed in the
 Ansible playbook configuration.
 
-The Keeper ansible plugins are installed in the site-packages directory of
-your version of Python or your current virtual environment. You can find the
-plugin locations using the following command:
-
-Those paths can be used in your _ansible.cfg._
-
-###
-
-Generate a Config File
-
-  *   * 
-
-Using the Keeper Ansible module and the generated One-Time Access Token,
-generate a Configuration file:
-
-This will generate the Keeper JSON configuration file in the current
-directory.
-
-If you do not have your Python module bin path added your **PATH** environment
-variable, you can create a config with the following command.
-
-The default name for the JSON configuration file is client-config.json. The
-content of the file will look like the following:
-
-This config file allows your Ansible playbook to authenticate and retrieve
-designated secrets from the vault.
-
-###
-
-Ansible Variables
-
-The Keeper Secrets Manager plugins can use multiple configuration methods. For
-example, the Base64 encode configuration can be used.
-
-Ansible can use the client-config.json config file directly. It can be
-specified in the Ansible variables using the keeper_config_file variable key.
-
-Another solution is to place the values in your client-config.json file into
-an Ansible variable file. For example, the values can be placed into the
-_group_vars, host_vars, or in the task files:_
-
-For security, the _group_vars_ or _host_vars_ files can be encrypted with
-ansible-vault.
-
-A list of valid Ansible Variables for the Keeper plugin are below:
-
-There are two caching methods in the plugin. They are not the same.
-`keeper_record_cache_secret` is used to cache records for a playbook run.
-After the playbook run, the cache is removed. The cache is stored in memory
-encrypted. This cache can be used to reduce the number of API called to the
-Keeper Secret Manager service. Since this cache is stored in memory, the more
-records retrieved the more memory is used. `keeper_use_cache` and
-`keeper_cache_dir` are used for Disaster Recovery caching of the Keeper Vault.
-This cached is used when connection to the Keeper Secret Manager service
-cannot be reached. This cache is stored encrypted on disk.
-
-###
-
-**Command Line Variables**
-
-As an optional method, values can be passed in through the `ansible-playbook`
-command. Example:
-
-##
-
-Ansible Plugin Usage
-
-There are three Keeper action plugins and one lookup plugin.
-
-For all the plugins, the following arguments are used. Either the `uid` or
-`title` is required.
-
-  * `uid` \- The Record UID of the desired record.
-
-  * `title` \- The Record Title of the desired record.
-
-  * `field` \- Retrieve the value with specified label from the record.
-
-  * `custom_field` \- Retrieve the value with the specific custom field name.
-
-  * `file` \- Retrieve the file with the specified name from the record.
-
-The `uid` value is required, and you need either `field` or `file` populated.
-
-The plugin example are shown with the short plugin names. If you installed the
-collection via Ansible Galaxy, you will need to use the longer plugin name or
-add the collection name to the list of collections used in your playbook.
-
-For example, a complex value like Phone number is an array of objects.
-
-The example, below is show how to use **Keeper Notation** and `array_index`
-and `value_key` to get the same result.
-
-###
-
-Plugin: keeper_cache_records
-
-The plugin `keeper_cache_records` is used to retrieve a select amount of
-records to be stored in a cache. The cache can then be used by other actions.
-This is used to reduce the number of API calls by getting all required record
-up front.
-
-The records can be retrieved by the record UID or by the record title. The
-result of the action is an encrypted serialization of the records. The result
-should be stored in Ansible by using the register variable so it can be used
-by other actions. The encrypted serialization of the records can be quite
-long. For security and reducing log noise, it is recommended to set `no_log`
-to **True**.
-
-`keeper_cache_records` caches records only. It does not cache attached files.
-If an action attempts to retrieve an attached file from a record that came
-from the cache, an API call will be made to download the file.
-
-Use templating to set the attributes in other actions. For example `cache: "{{
-my_records.cache }}"`
-
-`keeper_cache_records` requires the `keeper_record_cache_secret` to be set.
-This can be done in the host, group, task variables, or generated in a task
-and then set as a fact (variable). In the example above, the `keeper_password`
-action is used to generate a password which is then stored as
-`keeper_record_cache_secret`. The `no_log` attribute is set to True to prevent
-the secret from being logged.
-
-The cache will not update. The cache will not contain records created or
-updated after it has been generated. To get new records or changes in the
-cache, `keeper_cache_records` will need to be called again.
-
-####
-
-Required Attributes
-
-  * `uids` \- A list of Keeper Vault record UID. 
-
-  * `titles` \- A list of titles of Keeper Vault records.
-
-The attributes `uids` and `titles` can be used at the same time. At least one
-of them needs to be set.
-
-###
-
-Plugin: `keeper_copy`
-
-In the examples, a password will be copied from the Keeper vault record and
-stored in the file `/tmp/my_password` on the remote system. It will use the
-Ansbile built-in copy plugin's mode attributes to changed the permissions of
-the file.
-
-The last task example from above, the file "_my_cert_file.crt_ " will be coped
-from the Keeper vault record and stored at the location "_/tmp/special.crt"_.
-Several of the built-in copy plugin functions will be applied to the file.
-
-####
-
-Required Attributes
-
-  * `uid` \- A Keeper Vault record UID.
-
-  * `title` \- Title of a Keeper Vault records.
-
-  * `notation` \- Use Keeper Notation to get the field from a record.
-
-The attributes `uids` and `titles` can be used at the same time. At least one
-of them needs to be set.
-
-####
-
-Optional Attributes
-
-  * `cache` \- The record cache from the `keeper_cache_records` action.
-
-  * `field` \- Get the content from the standard Keeper Vault record. 
-
-  * `custom_field` \- Get the content from the custom Keeper Vault record.
-
-  * `file` \- Get the content from the files attach to the Keeper Vault record by file title.
-
-  * `array_index` \- Defaults to 0. If the field value contains multiple values, this attribute will allow you to select which item to return. The first item will have the `array_index` of **0** , and the next will be **1** , etc.
-
-  * `value_key` \- If the field value is a complex object, this will allow you to select the key of the key/value pair to return.
-
-###
-
-Plugin: `keeper_get`
-
-The plugin `keeper_get` will retrieve a field or file from a Keeper vault
-record. Example:
-
-The `keeper_get` plugin returns a dictionary. The key "value" in the
-dictionary will contain the desired field or file content. This plugin is
-normally paired with the Ansible `register` instruction and the returned value
-is stored in memory so it can be accessed by other tasks.
-
-In the example above, a record containing user's login name is retrieved. The
-login name is then stored under the name my_login. The second task will print
-the login name to your console for debug purposes. The third task will add a
-sudoer file for the login name with ability to execute all applications.
-
-####
-
-Required Attributes
-
-  * `uid` \- A Keeper Vault record UID.
-
-  * `title` \- Title of a Keeper Vault records.
-
-  * `notation` \- Use Keeper Notation to get the field from a record.
-
-The attributes `uids` and `titles` can be used at the same time. At least one
-of them needs to be set.
-
-####
-
-Optional Attributes
-
-  * `cache` \- The record cache from the `keeper_cache_records` action.
-
-  * `field` \- Get the value from the standard Keeper Vault record. 
-
-  * `custom_field` \- Get the value from the custom Keeper Vault record.
-
-  * `file` \- Get the value from the files attach to the Keeper Vault record by file title.
-
-  * `allow_array` \- By default is **False**. If set to **True** , an array of values will be returned. This is needed if the field contains multiple values such as Phone numbers. If **True** , `array_index` and `value_key` will be ignored.
-
-  * `array_index` \- Defaults to 0. If the field value contains multiple values, this attribute will allow you to select which item to return. The first item will have the `array_index` of 0, and the next will be 1, etc.
-
-  * `value_key` \- If the field value is a complex object, this will allow you to select the key of the key/value pair to return.
-
-###
-
-Plugin: `keeper_get_record`
-
-The plugin `keeper_get_record` will retrieve all the fields in the record and
-return them in a dictionary. Example:
-
-The `keeper_get_record` plugin returns a dictionary. The keys of the
-dictionary are the normalized field labels, or types. The keys will be
-alphanumeric and the underscore characters. If there are duplicate key, a
-number will be appended to the end of the key.
-
-In the example above, a record is retrieved using the UID. The fields will be
-stored in a dictionary, in memory, using the `register` instruction. Since the
-`allow` attribute is used, the dictionary will only contain **login** and
-**password** .The field values can be accessed using the normal the templating
-in Ansible. The values will be stored as arrays. This is due to some fields
-returning arrays of the values, such as `phone`.
-
-####
-
-Required Attributes
-
-  * `uid` \- A Keeper Vault record UID.
-
-  * `title` \- Title of a Keeper Vault records.
-
-Either `uids` and `titles` is required.
-
-####
-
-Optional Attributes
-
-  * `cache` \- The record cache from the `keeper_cache_records` action.
-
-  * `allow` \- A list of keys to allow. If set, if the key is not in the list, it will not be inclued in the dictionary.
-
-###
-
-Plugin: `keeper_set`
-
-The `keeper_set` plugin has the ability to write a value into an existing
-Keeper vault record. Example:
-
-In this example, a new user's login name is retreived. The new user is created
-on the remote system with the login name from the record. The home directory
-on the remote machine is then updated in the record.
-
-The `keeper_set` action does not have the ability of set individual values of
-an array or complex values. It simplely replaces the existing value with a new
-value. For example, for a**Hostname and Port** field type there is no way to
-just update the port. The entire value including the **hostName** needs to be
-included in the object value.
-
-`keeper_set` will set the update the record in the vault. It will not update
-the cache, if used. To update the cache, a step will need to run the
-`keeper_cache_records` action again with the **UID** or **Title** of the
-record that was updated.
-
-####
-
-Required Attributes
-
-  * `uid` \- A Keeper Vault record UID.
-
-  * `title` \- Title of a Keeper Vault records.
-
-  * `notation` \- Use Keeper Notation to get the field from a record.
-
-The attributes `uids` and `titles` can be used at the same time. At least one
-of them needs to be set.
-
-####
-
-Optional Attributes
-
-  * `cache` \- The record cache. Used for getting the record, will not update the cache.
-
-  * `field` \- Update the existing standard Keeper Vault record field.
-
-  * `custom_field` \- Update the existing custom Keeper Vault record field.
-
-###
-
-Plugin: `keeper_create`
-
-The Ansible variable `keeper_app_owner_public_key` is required to create a
-record. In the client-config.json, the JSON key is `appOwnerPublicKey. `If
-your configuration does not contain this key, create a new One-Time Access
-Token and initialize it.
-
-Example:
-
-The following fields are required.
-
-  * `shared_folder_uid` \- The Shared Folder UID from the vault. The record will be created within this folder.
-
-  * `record_type` \- The type of record. This will included all the default record types. If the `keeper_record_types` is set, those record types can be used.
-
-  * `title` \- The title of record
-
-The following fields are optional.
-
-  * `generate_password` \- If set to true, any password field where the password has not been set, will be populated with a random generated password.
-
-  * `password_complexity` \- Sets the complexity of the password. All parameters of password_complexity are optional.
-
-    * `length` \- Length of password. Defaults to **64**.
-
-    * `allow_lowercase` \- Defaults to **True**. If set to **False** , no lowercase letters will be used.
-
-    * `allow_uppercase` \- Defaults to **True**. If set to **False** , no uppercase letters will be used.
-
-    * `allow_digits` \- Defaults to **True**. If set to **False** , no digits will be used.
-
-    * `allow_symbols` \- Defaults to True. If set to **False** , no symbols will be used.
-
-    * `filter_characters` \- A list of characters to exclude from the password. This allows to remove characters a services will reject. For example, '%' in SQL. If not set, the password will not be filtered.
-
-  * `notes` \- Attach a note to the record.
-
-Password generation will use the following symbols: "!@#$%()+;<>=?[]{}^.,
-
-Based on the Record Types, certain fields maybe required. Custom fields are
-optional. Both `fields` and `custom_fields` are an array of values.
-
-  * `fields/custom_fields`
-
-    * `type` \- Field type
-
-    * `label` \- Label to display with the value.
-
-    * `value` \- Field value. Can be a string or dictionary based on field type.
-
-####
-
-Creating Custom Record Types
-
-To create a record with a particular Custom Record Type, first export the
-custom record types using Keeper Commander and the `record-type-info` command.
-KSM does not sync down the custom type definitions, so this must be added
-directly to the playbook as a variable.
-
-Keeper Commander will output a JSON Array ("content"). Only the JSON object is
-required.
-
-Example:
-
-In your Ansible YAML file, add the value of the "content" object to the
-variable key called `keeper_record_types`. The variable is an array, and the
-JSON is to be treated as a string value. The pipe, after the array item, will
-treat the following JSON as a string. The variable will accept multiple record
-types.
-
-Example:
-
-To check if this worked, the `keeper_info` plugin can be used to show which
-record types are available.
-
-When creating a record of a particular custom type, the Ansible task will
-reference the record type name in the `record_type` parameter as seen below:
-
-###
-
-Plugin: `keeper_remove`
-
-v1.2.1 Released on: 10/27/2023
-
-The keeper_remove plugin will remove a record from the Keeper vault.
-
-####
-
-Required Attributes
-
-  * `uid` \- A Keeper Vault record UID.
-
-  * `title` \- Title of a Keeper Vault records.
-
-The attributes `uid` and `title` cannot be used at the same time. At least one
-of them needs to be set.
-
-####
-
-Optional Attributes
-
-  * `cache` \- The record cache from the `keeper_cache_records` action. The record will not be removed from the cache. The cache will be used for looking up the record title.
-
-###
-
-Plugin: `keeper_password`
-
-The `keeper_password` plugin will generate a random password. The action
-plugin will return the `password`.
-
-Example:
-
-All parameters are optional. If no parameters are set, the defaults will be
-used.
-
-  * `length` \- Length of password. Defaults to **64**.
-
-  * `allow_lowercase` \- Defaults to **True**. If set to **False** , no lowercase letters will be used.
-
-  * `allow_uppercase` \- Defaults to **True**. If set to **False** , no uppercase letters will be used.
-
-  * `allow_digits` \- Defaults to **True**. If set to **False** , no digits will be used.
-
-  * `allow_symbols` \- Defaults to True. If set to **False** , no symbols will be used.
-
-  * `filter_characters` \- A list of characters to exclude from the password. This allows to remove characters a services will reject. For example, '%' in SQL. If not set, the password will not be filtered.
-
-Password generation will use the following symbols: "!@#$%()+;<>=?[]{}^.,
-
-Based of record types, certain fields maybe required. Custom fields are
-optional. Both fields and custom_field are an array of values.
-
-###
-
-Plugin: `keeper_lookup`
-
-The `keeper_lookup` plugin retrieves a field from the Keeper vault record and
-inserts the value into a text string. Example:
-
-In the example above, the first task the content of a file is created by
-templating the login name of a user from a Keeper record.
-
-The second task displays as debug the second phone of number from a field with
-a complex value using the `array_index` and `value_key` task attributes. An
-`array_index` starts at 0, the next item in the araray will be 1, the next is
-2, a so on. The `value_key` is the name of key in a key/pair dictionary.
-
-####
-
-Required Attributes
-
-  * `uid` \- A Keeper Vault record UID.
-
-  * `title` \- Title of a Keeper Vault records.
-
-  * `notation` \- Use Keeper Notation to get the field from a record.
-
-The attributes `uids` and `titles` can be used at the same time. At least one
-of them needs to be set.
-
-####
-
-Optional Attributes
-
-  * `cache` \- The record cache. Used for getting multiple records, will not update the cache.
-
-  * `field` \- Update the existing standard Keeper Vault record field.
-
-  * `custom_field` \- Update the existing custom Keeper Vault record field.
-
-  * `file` \- Get the value from the files attach to the Keeper Vault record by file title.
-
-  * `allow_array` \- By default is **False**. If set to **True** , an array of values will be returned. This is needed if the field contains multiple values such as Phone numbers. If **True** , `array_index` and `value_key` will be ignored.
-
-  * `array_index` \- Defaults to 0. If the field value contains multiple values, this attribute will allow you to select which item to return. The first item will have the `array_index` of 0, and the next will be 1, etc.
-
-  * `value_key` \- If the field value is a complex object, this will allow you to select the key of the key/value pair to return.
-
-####
-
-Important Notes
-
-  * To avoid leaking secret values when using the lookup plugin, add `'no_log: True'` to the task. The stdout information will not be logged if the value is True.
-
-  * If the plugin was installed by Ansible Galaxy the longer name is required for the lookup plugin (i.e. keepersecurity.keeper_secrets_manager.keeper). Listing collections appears not to work with lookup plugins.
-
-  * 
-
-###
-
-Plugin: `keeper_init`
-
-The `keeper_init` plugin initialize a configuration from a one time access
-token. This is similar to the __`keeper_ansible --keeper_token` command. The
-plugin accepts the following options.
-
-  * `token` \- The one time access token. It's best to template this value and pass in the value.
-
-  * `filename` \- The configuration file name to generate with config values. If not included, the configuration will not be created.
-
-  * `show_config` \- A flag to indicate if the configuration values should be returned in the task log. By default this is `False`. Only set to True if you are unable to generate the configuration via other methods or do not have access to a generated configuration file. If True, the configuration will be logged. This might not be a problem if running the playbook via the command line, however if running via Ansible Tower to will be log file which is retained.
-
-It's best not to hard code the token into the playbook since it's only good
-once. The token and the configuration file name can be passed into the
-playbook using the `extra vars`.
-
-The above will generate a file similar to the one below. The content of the
-file can be copied into a configuration file used by ansible, and optionally
-encrypted by `ansible-vault`.
-
-####
-
-Ansible Galaxy Role
-
-If the Keeper Secret Manager plugins were installed via Ansible Galaxy, a role
-called `keeper_init_token` was installed to initialize the one-time access
-token. This role can be used in a playbook.
-
-The role will use the following options set via extra variables.
-
-  * `keeper_token` \- Required one-time access token.
-
-  * `keeper_config_file` \- Generate a file containing the configuration. If not set, no file will be created.
-
-  * `keeper_show_config` _= Default False. If set to True, it will show the config in the log if verbosity is enabled._
-
-Either `keeper_config_file` or `keeper_show_config` should be used, else the
-token will initialize and you will not be able to view the resulting
-configuration.
-
-###
-
-Plugin: keeper_info
-
-The keeper_info action will display information about the Keeper ansible
-plugin. The results include a list of record types, field types, and versions
-of Python modules. In order to see the results, the verbosity level needed to
-be set at 1 or higher.
-
-This can be used to verify custom record types are being picked up by the
-plugins.
-
-###
-
-Plugin: `keeper_cleanup`
-
-The `keeper_cleanup` plugin is used to clean up any files created by the
-keeper plugins. This is mainly used to delete a cache file, if you are using
-it. Disaster Recovey cache files are used when there are network problems as a
-fall back to get records. If you are running Ansible secret environment, there
-is no need to remove the Disaster Recovey cache. However this plugin gives you
-the ability to do so.
-
-###
-
-Plugin: `keeper_redact`
-
-The `keeper_redact` stdout callback plugin is used to redact secrets from the
-standard out logs. This will work for the `keeper_redact` stdout callback
-plugin is used to redact secrets from the standard out logs. This will work
-for the `keeper_copy` and `keeper_get` plugins. It will not redact secret
-values for `keeper_lookup`. For `keeper_lookup`, use the `no_log: True`
-directive.
-
-The `keeper_redact` plugin will not work with Ansible Tower since it had its
-own stdout callback plugin to stream the log as the job runs. Highly recommend
-using the `no_log` option when you do not wish show information in the log.
-
-To use the `keeper_redact` plugin, enable it in your _ansible.cfg._
-
-For example, the following task would return all the phone numbers in the
-custom field _MyPhoneNumbers_ and place them into the variable
-_phone_numbers_.
-
-If the playbook was run with any verbosity, the values being placed into the
-variable would be displayed. This would leak the secrets to the log. If the
-`keeper_redact` stdout callback plugin is enabled, the values in the log would
-be redacted.
-
-##
-
-Ansible Vault Password Retrieval
-
-You can use the Keeper Secret Manager CLI ("ksm") to provide the decryption
-password for your Ansible vaults. This is done using the
-ANSIBLE_VAULT_PASSWORD_FILE environment variable or the vault_password_file in
-the ansible.cfg field to specify an executable file that will return a
-password.
-
-Replace XXXX with the Vault Record UID. Running this script simply outputs the
-secret password.
-
-To override the environmental variable "ANSIBLE_VAULT_PASSWORD_FILE", execute
-the following, replacing /path/to/script with the location of the above
-script.
-
-Now, when Ansible needs to decrypt any vaults used by
-`playbook_with_vault.yml`, it will execute that shell script. The shell script
-will retrieve the password from the Keeper Vault.
-
-##
-
-Logging
-
-By default, the Ansible plugins will only display errors. If you use the
-Ansible verbosity level, different SDK logging will be displayed. An Ansible
-verbosity level of `-v` will display any SDK messages INFO and higher, while a
-verbosity level of `-vvv` will display any SDK messages DEBUG and higher.
-
-##
-
-Troubleshooting
-
-###
-
-__NSPlaceholderDate in progress in another thread when fork() called error.
-
-This appears to be specific to Ansible running on MacOS. While running a
-playbook you may get the following error:
-
-This is known problem with Ansible. This can be fixed with the following
-environmental variable.
-
-###
-
-Missing Configuration file
-
-For a complete list of Keeper Secrets Manager features see the
-
-Keeper Secrets Manager access (See the  for more details)
-
-A Keeper  with secrets shared to it
-
-See the  for instructions on creating an Application
-
-An initialized Keeper
-
-The collection can be found on the . You can install the collection with the
-follow command line.
-
-Find the Keeper Secrets Manager Ansible Plugin source code in the .
-
-Prior to proceeding with this guide, make sure you meet all the  and have the
-following:
-
-KSM Application and it's
-
-installed
-
-In order to use the Ansible plugin for Keeper Secrets Manager, a  is required.
-Once you have a config file, the configuration values can be placed into the
-files. These variable files can be encrypted with Ansible vault.
-
-To find out what fields and custom fields are available for a specific vault
-secret, use the Keeper Secrets Manager CLI "`ksm secret get -u XXXX`" command.
-More info .
-
-Actions can either use  or the record UID or Title, combined with the task
-attributes `array_index` and `value_key` to get a specific value.
-
-The plugin `keeper_copy` is an extension of the _._ Example:
-
-Additional optional attributes are the same as the  attributes. The attributes
-`src, remote_src`, and `content` are not allowed and will be ignored.
-
-The `keeper_create` plugin creates a record in the Keeper vault. See the
-document for available record types, and the field types used to build the
-records. The action plugin will return the `record_uid` upon successful
-creation.
-
-To find out what fields and custom fields are available for a specific vault
-secret, use the Keeper Secrets Manager CLI "`ksm secret get -u XXXX`" command.
-More info .
-
-See  Using `no_log` can hide all logging from a task. This plugin is for when
-you just want secrets returned by the Keeper Secrets Manager plugins to be
-hidden/redacted.
-
-A executable shell script can be created that returns the password using the
-"ksm" secret notation ( about ksm secret notation). For example, the below
-script will output a specific secret password for the given Record UID:
-
-Copy
-
-    
-    
-    $ ansible-galaxy collection install keepersecurity.keeper_secrets_manager
-
-Copy
-
-    
-    
-    - name: Keeper Copy
-      hosts: my_hosts
-      collections: 
-        - keepersecurity.keeper_secrets_manager
-      
-      tasks:
-        - name: Copy a password
-          keeper_copy:
-            uid: RECORD UID
-            ...
-
 Copy
 
     
     
     $ pip3 install -U keeper_secrets_manager_ansible
+
+The Keeper ansible plugins are installed in the site-packages directory of
+your version of Python or your current virtual environment. You can find the
+plugin locations using the following command:
 
 Copy
 
@@ -1266,6 +616,8 @@ Copy
     ANSIBLE_ACTION_PLUGINS=...site-packages/keeper_secrets_manager_ansible/plugins/action_plugins
     ANSIBLE_LOOKUP_PLUGINS=...site-packages/keeper_secrets_manager_ansible/plugins/lookup_plugins
 
+Those paths can be used in your _ansible.cfg._
+
 Copy
 
     
@@ -1274,6 +626,15 @@ Copy
     action_plugins = ...site-packages/keeper_secrets_manager_ansible/plugins/action_plugins
     lookup_plugins = ...site-packages/keeper_secrets_manager_ansible/plugins/lookup_plugins
 
+###
+
+Generate a Config File
+
+  *   * 
+
+Using the Keeper Ansible module and the generated One-Time Access Token,
+generate a Configuration file:
+
 Copy
 
     
@@ -1281,12 +642,21 @@ Copy
     $ keeper_ansible --token XX:XXXXXX
     Config file create at location client-config.json
 
+This will generate the Keeper JSON configuration file in the current
+directory.
+
+If you do not have your Python module bin path added your **PATH** environment
+variable, you can create a config with the following command.
+
 Copy
 
     
     
     $ python3 -m keeper_secrets_manager_ansible --token XX:XXXXXX
     Config file create at location client-config.json
+
+The default name for the JSON configuration file is client-config.json. The
+content of the file will look like the following:
 
 Copy
 
@@ -1302,6 +672,16 @@ Copy
     }
     
 
+This config file allows your Ansible playbook to authenticate and retrieve
+designated secrets from the vault.
+
+###
+
+Ansible Variables
+
+The Keeper Secrets Manager plugins can use multiple configuration methods. For
+example, the Base64 encode configuration can be used.
+
 Copy
 
     
@@ -1309,12 +689,19 @@ Copy
     ---
     keeper_config: U09NRVRFc2R ... GFzZGFzZGFzZHNhWFQK==
 
+Ansible can use the client-config.json config file directly. It can be
+specified in the Ansible variables using the keeper_config_file variable key.
+
 Copy
 
     
     
     ---
     keeper_config_file: /path/to/client-config.json
+
+Another solution is to place the values in your client-config.json file into
+an Ansible variable file. For example, the values can be placed into the
+_group_vars, host_vars, or in the task files:_
 
 Copy
 
@@ -1327,6 +714,11 @@ Copy
     keeper_private_key: XXXXX
     keeper_app_owner_public_key: XXXXX
     keeper_server_public_key_id: XX
+
+For security, the _group_vars_ or _host_vars_ files can be encrypted with
+ansible-vault.
+
+A list of valid Ansible Variables for the Keeper plugin are below:
 
 Ansible Variable
 
@@ -1432,6 +824,23 @@ keeper_record_types
 
 An list of Keeper Commander record type definitions.
 
+There are two caching methods in the plugin. They are not the same.
+`keeper_record_cache_secret` is used to cache records for a playbook run.
+After the playbook run, the cache is removed. The cache is stored in memory
+encrypted. This cache can be used to reduce the number of API called to the
+Keeper Secret Manager service. Since this cache is stored in memory, the more
+records retrieved the more memory is used. `keeper_use_cache` and
+`keeper_cache_dir` are used for Disaster Recovery caching of the Keeper Vault.
+This cached is used when connection to the Keeper Secret Manager service
+cannot be reached. This cache is stored encrypted on disk.
+
+###
+
+**Command Line Variables**
+
+As an optional method, values can be passed in through the `ansible-playbook`
+command. Example:
+
 Copy
 
     
@@ -1441,6 +850,33 @@ Copy
         -e "keeper_client_id=XXXXX" \
         -e "keeper_token=XXXXX" \
         -e "keeper_private_key=XXXXX"
+
+##
+
+Ansible Plugin Usage
+
+There are three Keeper action plugins and one lookup plugin.
+
+For all the plugins, the following arguments are used. Either the `uid` or
+`title` is required.
+
+  * `uid` \- The Record UID of the desired record.
+
+  * `title` \- The Record Title of the desired record.
+
+  * `field` \- Retrieve the value with specified label from the record.
+
+  * `custom_field` \- Retrieve the value with the specific custom field name.
+
+  * `file` \- Retrieve the file with the specified name from the record.
+
+The `uid` value is required, and you need either `field` or `file` populated.
+
+The plugin example are shown with the short plugin names. If you installed the
+collection via Ansible Galaxy, you will need to use the longer plugin name or
+add the collection name to the list of collections used in your playbook.
+
+For example, a complex value like Phone number is an array of objects.
 
 Copy
 
@@ -1459,6 +895,9 @@ Copy
             'type': 'Mobile'
         }
     ]
+
+The example, below is show how to use **Keeper Notation** and `array_index`
+and `value_key` to get the same result.
 
 Copy
 
@@ -1484,6 +923,15 @@ Copy
             array_index: 1
             value_key: "number"
           register: second_number_non_notation
+
+###
+
+Plugin: keeper_cache_records
+
+The plugin `keeper_cache_records` is used to retrieve a select amount of
+records to be stored in a cache. The cache can then be used by other actions.
+This is used to reduce the number of API calls by getting all required record
+up front.
 
 Copy
 
@@ -1530,6 +978,46 @@ Copy
             mode: "0644"
             backup: yes
 
+The records can be retrieved by the record UID or by the record title. The
+result of the action is an encrypted serialization of the records. The result
+should be stored in Ansible by using the register variable so it can be used
+by other actions. The encrypted serialization of the records can be quite
+long. For security and reducing log noise, it is recommended to set `no_log`
+to **True**.
+
+`keeper_cache_records` caches records only. It does not cache attached files.
+If an action attempts to retrieve an attached file from a record that came
+from the cache, an API call will be made to download the file.
+
+Use templating to set the attributes in other actions. For example `cache: "{{
+my_records.cache }}"`
+
+`keeper_cache_records` requires the `keeper_record_cache_secret` to be set.
+This can be done in the host, group, task variables, or generated in a task
+and then set as a fact (variable). In the example above, the `keeper_password`
+action is used to generate a password which is then stored as
+`keeper_record_cache_secret`. The `no_log` attribute is set to True to prevent
+the secret from being logged.
+
+The cache will not update. The cache will not contain records created or
+updated after it has been generated. To get new records or changes in the
+cache, `keeper_cache_records` will need to be called again.
+
+####
+
+Required Attributes
+
+  * `uids` \- A list of Keeper Vault record UID. 
+
+  * `titles` \- A list of titles of Keeper Vault records.
+
+The attributes `uids` and `titles` can be used at the same time. At least one
+of them needs to be set.
+
+###
+
+Plugin: `keeper_copy`
+
 Copy
 
     
@@ -1558,6 +1046,51 @@ Copy
             group: root
             mode: "0644"
             backup: yes
+
+In the examples, a password will be copied from the Keeper vault record and
+stored in the file `/tmp/my_password` on the remote system. It will use the
+Ansbile built-in copy plugin's mode attributes to changed the permissions of
+the file.
+
+The last task example from above, the file "_my_cert_file.crt_ " will be coped
+from the Keeper vault record and stored at the location "_/tmp/special.crt"_.
+Several of the built-in copy plugin functions will be applied to the file.
+
+####
+
+Required Attributes
+
+  * `uid` \- A Keeper Vault record UID.
+
+  * `title` \- Title of a Keeper Vault records.
+
+  * `notation` \- Use Keeper Notation to get the field from a record.
+
+The attributes `uids` and `titles` can be used at the same time. At least one
+of them needs to be set.
+
+####
+
+Optional Attributes
+
+  * `cache` \- The record cache from the `keeper_cache_records` action.
+
+  * `field` \- Get the content from the standard Keeper Vault record. 
+
+  * `custom_field` \- Get the content from the custom Keeper Vault record.
+
+  * `file` \- Get the content from the files attach to the Keeper Vault record by file title.
+
+  * `array_index` \- Defaults to 0. If the field value contains multiple values, this attribute will allow you to select which item to return. The first item will have the `array_index` of **0** , and the next will be **1** , etc.
+
+  * `value_key` \- If the field value is a complex object, this will allow you to select the key of the key/value pair to return.
+
+###
+
+Plugin: `keeper_get`
+
+The plugin `keeper_get` will retrieve a field or file from a Keeper vault
+record. Example:
 
 Copy
 
@@ -1589,6 +1122,54 @@ Copy
               # Auto added by Ansible
               {{ my_login.value }} ALL=(ALL:ALL) ALL
 
+The `keeper_get` plugin returns a dictionary. The key "value" in the
+dictionary will contain the desired field or file content. This plugin is
+normally paired with the Ansible `register` instruction and the returned value
+is stored in memory so it can be accessed by other tasks.
+
+In the example above, a record containing user's login name is retrieved. The
+login name is then stored under the name my_login. The second task will print
+the login name to your console for debug purposes. The third task will add a
+sudoer file for the login name with ability to execute all applications.
+
+####
+
+Required Attributes
+
+  * `uid` \- A Keeper Vault record UID.
+
+  * `title` \- Title of a Keeper Vault records.
+
+  * `notation` \- Use Keeper Notation to get the field from a record.
+
+The attributes `uids` and `titles` can be used at the same time. At least one
+of them needs to be set.
+
+####
+
+Optional Attributes
+
+  * `cache` \- The record cache from the `keeper_cache_records` action.
+
+  * `field` \- Get the value from the standard Keeper Vault record. 
+
+  * `custom_field` \- Get the value from the custom Keeper Vault record.
+
+  * `file` \- Get the value from the files attach to the Keeper Vault record by file title.
+
+  * `allow_array` \- By default is **False**. If set to **True** , an array of values will be returned. This is needed if the field contains multiple values such as Phone numbers. If **True** , `array_index` and `value_key` will be ignored.
+
+  * `array_index` \- Defaults to 0. If the field value contains multiple values, this attribute will allow you to select which item to return. The first item will have the `array_index` of 0, and the next will be 1, etc.
+
+  * `value_key` \- If the field value is a complex object, this will allow you to select the key of the key/value pair to return.
+
+###
+
+Plugin: `keeper_get_record`
+
+The plugin `keeper_get_record` will retrieve all the fields in the record and
+return them in a dictionary. Example:
+
 Copy
 
     
@@ -1613,6 +1194,43 @@ Copy
           debug:
             var: my_record.record.login[0]
             verbosity: 0
+
+The `keeper_get_record` plugin returns a dictionary. The keys of the
+dictionary are the normalized field labels, or types. The keys will be
+alphanumeric and the underscore characters. If there are duplicate key, a
+number will be appended to the end of the key.
+
+In the example above, a record is retrieved using the UID. The fields will be
+stored in a dictionary, in memory, using the `register` instruction. Since the
+`allow` attribute is used, the dictionary will only contain **login** and
+**password** .The field values can be accessed using the normal the templating
+in Ansible. The values will be stored as arrays. This is due to some fields
+returning arrays of the values, such as `phone`.
+
+####
+
+Required Attributes
+
+  * `uid` \- A Keeper Vault record UID.
+
+  * `title` \- Title of a Keeper Vault records.
+
+Either `uids` and `titles` is required.
+
+####
+
+Optional Attributes
+
+  * `cache` \- The record cache from the `keeper_cache_records` action.
+
+  * `allow` \- A list of keys to allow. If set, if the key is not in the list, it will not be inclued in the dictionary.
+
+###
+
+Plugin: `keeper_set`
+
+The `keeper_set` plugin has the ability to write a value into an existing
+Keeper vault record. Example:
 
 Copy
 
@@ -1643,6 +1261,55 @@ Copy
             uid: RECORD UID
             custom_field: my_home_directory
             value: "{{ new_user.home }}"
+
+In this example, a new user's login name is retreived. The new user is created
+on the remote system with the login name from the record. The home directory
+on the remote machine is then updated in the record.
+
+The `keeper_set` action does not have the ability of set individual values of
+an array or complex values. It simplely replaces the existing value with a new
+value. For example, for a**Hostname and Port** field type there is no way to
+just update the port. The entire value including the **hostName** needs to be
+included in the object value.
+
+`keeper_set` will set the update the record in the vault. It will not update
+the cache, if used. To update the cache, a step will need to run the
+`keeper_cache_records` action again with the **UID** or **Title** of the
+record that was updated.
+
+####
+
+Required Attributes
+
+  * `uid` \- A Keeper Vault record UID.
+
+  * `title` \- Title of a Keeper Vault records.
+
+  * `notation` \- Use Keeper Notation to get the field from a record.
+
+The attributes `uids` and `titles` can be used at the same time. At least one
+of them needs to be set.
+
+####
+
+Optional Attributes
+
+  * `cache` \- The record cache. Used for getting the record, will not update the cache.
+
+  * `field` \- Update the existing standard Keeper Vault record field.
+
+  * `custom_field` \- Update the existing custom Keeper Vault record field.
+
+###
+
+Plugin: `keeper_create`
+
+The Ansible variable `keeper_app_owner_public_key` is required to create a
+record. In the client-config.json, the JSON key is `appOwnerPublicKey. `If
+your configuration does not contain this key, create a new One-Time Access
+Token and initialize it.
+
+Example:
 
 Copy
 
@@ -1678,6 +1345,61 @@ Copy
           debug:
             msg: "New record uid is {{ my_new_record.record_uid }}"
 
+The following fields are required.
+
+  * `shared_folder_uid` \- The Shared Folder UID from the vault. The record will be created within this folder.
+
+  * `record_type` \- The type of record. This will included all the default record types. If the `keeper_record_types` is set, those record types can be used.
+
+  * `title` \- The title of record
+
+The following fields are optional.
+
+  * `generate_password` \- If set to true, any password field where the password has not been set, will be populated with a random generated password.
+
+  * `password_complexity` \- Sets the complexity of the password. All parameters of password_complexity are optional.
+
+    * `length` \- Length of password. Defaults to **64**.
+
+    * `allow_lowercase` \- Defaults to **True**. If set to **False** , no lowercase letters will be used.
+
+    * `allow_uppercase` \- Defaults to **True**. If set to **False** , no uppercase letters will be used.
+
+    * `allow_digits` \- Defaults to **True**. If set to **False** , no digits will be used.
+
+    * `allow_symbols` \- Defaults to True. If set to **False** , no symbols will be used.
+
+    * `filter_characters` \- A list of characters to exclude from the password. This allows to remove characters a services will reject. For example, '%' in SQL. If not set, the password will not be filtered.
+
+  * `notes` \- Attach a note to the record.
+
+Password generation will use the following symbols: "!@#$%()+;<>=?[]{}^.,
+
+Based on the Record Types, certain fields maybe required. Custom fields are
+optional. Both `fields` and `custom_fields` are an array of values.
+
+  * `fields/custom_fields`
+
+    * `type` \- Field type
+
+    * `label` \- Label to display with the value.
+
+    * `value` \- Field value. Can be a string or dictionary based on field type.
+
+####
+
+Creating Custom Record Types
+
+To create a record with a particular Custom Record Type, first export the
+custom record types using Keeper Commander and the `record-type-info` command.
+KSM does not sync down the custom type definitions, so this must be added
+directly to the playbook as a variable.
+
+Keeper Commander will output a JSON Array ("content"). Only the JSON object is
+required.
+
+Example:
+
 Copy
 
     
@@ -1696,6 +1418,14 @@ Copy
       }
     ]
 
+In your Ansible YAML file, add the value of the "content" object to the
+variable key called `keeper_record_types`. The variable is an array, and the
+JSON is to be treated as a string value. The pipe, after the array item, will
+treat the following JSON as a string. The variable will accept multiple record
+types.
+
+Example:
+
 Copy
 
     
@@ -1711,6 +1441,12 @@ Copy
               "recordTypeId": 35,
               "content": "{\"$id\":\"My Custom\",\"fields\":[{\"$ref\":\"fileRef\",\"label\":\"File or Photo\"},{\"$ref\":\"login\",\"label\":\"Login\"},{\"$ref\":\"password\",\"label\":\"Password\",\"required\":true,\"enforceGeneration\":false,\"privacyScreen\":false,\"complexity\":{\"length\":8,\"caps\":0,\"lowercase\":0,\"digits\":0,\"special\":0}},{\"$ref\":\"text\",\"label\":\"System Login\",\"required\":true},{\"$ref\":\"secret\",\"label\":\"System Password / Pin Code\"},{\"$ref\":\"url\",\"label\":\"Keeper VPN Wiki\",\"required\":true},{\"$ref\":\"url\",\"label\":\"Password Best Practices FAQ's and Tips\",\"required\":true}]}"
             }
+
+To check if this worked, the `keeper_info` plugin can be used to show which
+record types are available.
+
+When creating a record of a particular custom type, the Ansible task will
+reference the record type name in the `record_type` parameter as seen below:
 
 Copy
 
@@ -1731,6 +1467,14 @@ Copy
                 value: "ABC123"
           register: my_new_record
 
+###
+
+Plugin: `keeper_remove`
+
+v1.2.1 Released on: 10/27/2023
+
+The keeper_remove plugin will remove a record from the Keeper vault.
+
 Copy
 
     
@@ -1748,6 +1492,32 @@ Copy
           keeper_remove:
             title: RECORD TITLE
          
+
+####
+
+Required Attributes
+
+  * `uid` \- A Keeper Vault record UID.
+
+  * `title` \- Title of a Keeper Vault records.
+
+The attributes `uid` and `title` cannot be used at the same time. At least one
+of them needs to be set.
+
+####
+
+Optional Attributes
+
+  * `cache` \- The record cache from the `keeper_cache_records` action. The record will not be removed from the cache. The cache will be used for looking up the record title.
+
+###
+
+Plugin: `keeper_password`
+
+The `keeper_password` plugin will generate a random password. The action
+plugin will return the `password`.
+
+Example:
 
 Copy
 
@@ -1787,6 +1557,33 @@ Copy
           debug:
             msg: "PG password {{ pg_password.password }}"    
 
+All parameters are optional. If no parameters are set, the defaults will be
+used.
+
+  * `length` \- Length of password. Defaults to **64**.
+
+  * `allow_lowercase` \- Defaults to **True**. If set to **False** , no lowercase letters will be used.
+
+  * `allow_uppercase` \- Defaults to **True**. If set to **False** , no uppercase letters will be used.
+
+  * `allow_digits` \- Defaults to **True**. If set to **False** , no digits will be used.
+
+  * `allow_symbols` \- Defaults to True. If set to **False** , no symbols will be used.
+
+  * `filter_characters` \- A list of characters to exclude from the password. This allows to remove characters a services will reject. For example, '%' in SQL. If not set, the password will not be filtered.
+
+Password generation will use the following symbols: "!@#$%()+;<>=?[]{}^.,
+
+Based of record types, certain fields maybe required. Custom fields are
+optional. Both fields and custom_field are an array of values.
+
+###
+
+Plugin: `keeper_lookup`
+
+The `keeper_lookup` plugin retrieves a field from the Keeper vault record and
+inserts the value into a text string. Example:
+
 Copy
 
     
@@ -1809,6 +1606,69 @@ Copy
               {{ lookup('keeper', uid='RECORD UID', custom_field='My Phone', array_index=1, value_key='number') }}
      
 
+In the example above, the first task the content of a file is created by
+templating the login name of a user from a Keeper record.
+
+The second task displays as debug the second phone of number from a field with
+a complex value using the `array_index` and `value_key` task attributes. An
+`array_index` starts at 0, the next item in the araray will be 1, the next is
+2, a so on. The `value_key` is the name of key in a key/pair dictionary.
+
+####
+
+Required Attributes
+
+  * `uid` \- A Keeper Vault record UID.
+
+  * `title` \- Title of a Keeper Vault records.
+
+  * `notation` \- Use Keeper Notation to get the field from a record.
+
+The attributes `uids` and `titles` can be used at the same time. At least one
+of them needs to be set.
+
+####
+
+Optional Attributes
+
+  * `cache` \- The record cache. Used for getting multiple records, will not update the cache.
+
+  * `field` \- Update the existing standard Keeper Vault record field.
+
+  * `custom_field` \- Update the existing custom Keeper Vault record field.
+
+  * `file` \- Get the value from the files attach to the Keeper Vault record by file title.
+
+  * `allow_array` \- By default is **False**. If set to **True** , an array of values will be returned. This is needed if the field contains multiple values such as Phone numbers. If **True** , `array_index` and `value_key` will be ignored.
+
+  * `array_index` \- Defaults to 0. If the field value contains multiple values, this attribute will allow you to select which item to return. The first item will have the `array_index` of 0, and the next will be 1, etc.
+
+  * `value_key` \- If the field value is a complex object, this will allow you to select the key of the key/value pair to return.
+
+####
+
+Important Notes
+
+  * To avoid leaking secret values when using the lookup plugin, add `'no_log: True'` to the task. The stdout information will not be logged if the value is True.
+
+  * If the plugin was installed by Ansible Galaxy the longer name is required for the lookup plugin (i.e. keepersecurity.keeper_secrets_manager.keeper). Listing collections appears not to work with lookup plugins.
+
+  * 
+
+###
+
+Plugin: `keeper_init`
+
+The `keeper_init` plugin initialize a configuration from a one time access
+token. This is similar to the __`keeper_ansible --keeper_token` command. The
+plugin accepts the following options.
+
+  * `token` \- The one time access token. It's best to template this value and pass in the value.
+
+  * `filename` \- The configuration file name to generate with config values. If not included, the configuration will not be created.
+
+  * `show_config` \- A flag to indicate if the configuration values should be returned in the task log. By default this is `False`. Only set to True if you are unable to generate the configuration via other methods or do not have access to a generated configuration file. If True, the configuration will be logged. This might not be a problem if running the playbook via the command line, however if running via Ansible Tower to will be log file which is retained.
+
 Copy
 
     
@@ -1825,6 +1685,10 @@ Copy
             filename: "{{ keeper_config_file }}"
             show_config: False
 
+It's best not to hard code the token into the playbook since it's only good
+once. The token and the configuration file name can be passed into the
+playbook using the `extra vars`.
+
 Copy
 
     
@@ -1832,6 +1696,10 @@ Copy
     $ ansible-playbook my_init_playbook.yml \
       -e "keeper_token=US:XXX" \
       -e "keeper_config_file=my_keeper_config.yml"
+
+The above will generate a file similar to the one below. The content of the
+file can be copied into a configuration file used by ansible, and optionally
+encrypted by `ansible-vault`.
 
 Copy
 
@@ -1842,6 +1710,14 @@ Copy
     keeper_hostname: US
     keeper_private_key: MIGHA ... yA7Oy
     keeper_server_public_key_id: '10'
+
+####
+
+Ansible Galaxy Role
+
+If the Keeper Secret Manager plugins were installed via Ansible Galaxy, a role
+called `keeper_init_token` was installed to initialize the one-time access
+token. This role can be used in a playbook.
 
 Copy
 
@@ -1856,6 +1732,27 @@ Copy
       roles:
         - keeper_init_token
 
+The role will use the following options set via extra variables.
+
+  * `keeper_token` \- Required one-time access token.
+
+  * `keeper_config_file` \- Generate a file containing the configuration. If not set, no file will be created.
+
+  * `keeper_show_config` _= Default False. If set to True, it will show the config in the log if verbosity is enabled._
+
+Either `keeper_config_file` or `keeper_show_config` should be used, else the
+token will initialize and you will not be able to view the resulting
+configuration.
+
+###
+
+Plugin: keeper_info
+
+The keeper_info action will display information about the Keeper ansible
+plugin. The results include a list of record types, field types, and versions
+of Python modules. In order to see the results, the verbosity level needed to
+be set at 1 or higher.
+
 Copy
 
     
@@ -1868,6 +1765,20 @@ Copy
       tasks:
         - name: Display Keeper Info
           keeper_info:
+
+This can be used to verify custom record types are being picked up by the
+plugins.
+
+###
+
+Plugin: `keeper_cleanup`
+
+The `keeper_cleanup` plugin is used to clean up any files created by the
+keeper plugins. This is mainly used to delete a cache file, if you are using
+it. Disaster Recovey cache files are used when there are network problems as a
+fall back to get records. If you are running Ansible secret environment, there
+is no need to remove the Disaster Recovey cache. However this plugin gives you
+the ability to do so.
 
 Copy
 
@@ -1886,6 +1797,23 @@ Copy
           keeper_cleanup:
         
 
+###
+
+Plugin: `keeper_redact`
+
+The `keeper_redact` stdout callback plugin is used to redact secrets from the
+standard out logs. This will work for the `keeper_redact` stdout callback
+plugin is used to redact secrets from the standard out logs. This will work
+for the `keeper_copy` and `keeper_get` plugins. It will not redact secret
+values for `keeper_lookup`. For `keeper_lookup`, use the `no_log: True`
+directive.
+
+The `keeper_redact` plugin will not work with Ansible Tower since it had its
+own stdout callback plugin to stream the log as the job runs. Highly recommend
+using the `no_log` option when you do not wish show information in the log.
+
+To use the `keeper_redact` plugin, enable it in your _ansible.cfg._
+
 Copy
 
     
@@ -1894,6 +1822,10 @@ Copy
     stdout_callback = keeper_redact
     # Use long name if install via Ansible Galaxy
     # stdout_callback = keepersecurity.keeper_secrets_manager.keeper_redact
+
+For example, the following task would return all the phone numbers in the
+custom field _MyPhoneNumbers_ and place them into the variable
+_phone_numbers_.
 
 Copy
 
@@ -1905,6 +1837,11 @@ Copy
             custom_field: MyPhoneNumbers
             allow_array: True
           register: phone_numbers
+
+If the playbook was run with any verbosity, the values being placed into the
+variable would be displayed. This would leak the secrets to the log. If the
+`keeper_redact` stdout callback plugin is enabled, the values in the log would
+be redacted.
 
 Copy
 
@@ -1928,6 +1865,16 @@ Copy
         "changed": false
     }
 
+##
+
+Ansible Vault Password Retrieval
+
+You can use the Keeper Secret Manager CLI ("ksm") to provide the decryption
+password for your Ansible vaults. This is done using the
+ANSIBLE_VAULT_PASSWORD_FILE environment variable or the vault_password_file in
+the ansible.cfg field to specify an executable file that will return a
+password.
+
 Copy
 
     
@@ -1935,11 +1882,42 @@ Copy
     #!/bin/sh
     ksm secret notation keeper://XXXX/field/password
 
+Replace XXXX with the Vault Record UID. Running this script simply outputs the
+secret password.
+
+To override the environmental variable "ANSIBLE_VAULT_PASSWORD_FILE", execute
+the following, replacing /path/to/script with the location of the above
+script.
+
 Copy
 
     
     
     $ ANSIBLE_VAULT_PASSWORD_FILE=/path/to/script.sh ansible-playbook playbook_with_vault.yml
+
+Now, when Ansible needs to decrypt any vaults used by
+`playbook_with_vault.yml`, it will execute that shell script. The shell script
+will retrieve the password from the Keeper Vault.
+
+##
+
+Logging
+
+By default, the Ansible plugins will only display errors. If you use the
+Ansible verbosity level, different SDK logging will be displayed. An Ansible
+verbosity level of `-v` will display any SDK messages INFO and higher, while a
+verbosity level of `-vvv` will display any SDK messages DEBUG and higher.
+
+##
+
+Troubleshooting
+
+###
+
+__NSPlaceholderDate in progress in another thread when fork() called error.
+
+This appears to be specific to Ansible running on MacOS. While running a
+playbook you may get the following error:
 
 Copy
 
@@ -1950,11 +1928,18 @@ Copy
     it in the fork() child process. Crashing instead. Set a breakpoint on 
     objc_initializeAfterForkError to debug
 
+This is known problem with Ansible. This can be fixed with the following
+environmental variable.
+
 Copy
 
     
     
     OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES ansible-playbook ...
+
+###
+
+Missing Configuration file
 
 Copy
 
@@ -1964,45 +1949,60 @@ Copy
     An exception occurred during task execution. To see the full traceback, use -vvv. The error was: Exception: Keeper Ansible error: There is no config file and the Ansible variable contain no config keys. Will not be able to connect to the Keeper server.
     fatal: [localhost]: FAILED! => {"msg": "Unexpected failure during module execution.", "stdout": ""}
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-  3. [Ansible](/en/keeperpam/secrets-manager/integrations/ansible)
+For a complete list of Keeper Secrets Manager features see the
 
-# Ansible Plugin
+Keeper Secrets Manager access (See the  for more details)
 
-A collection of Ansible plugins that interact with your Keeper account and can
-be used in your automations.
+A Keeper  with secrets shared to it
 
-[PreviousAnsible](/en/keeperpam/secrets-
-manager/integrations/ansible)[NextAnsible Tower](/en/keeperpam/secrets-
-manager/integrations/ansible/ansible-tower)
+See the  for instructions on creating an Application
 
-  * Features
-  * Prerequisites
-  * Installation
-  * Install Keeper Ansible Module
-  * Generate a Config File
-  * Ansible Variables
-  * Command Line Variables
-  * Ansible Plugin Usage
-  * Plugin: keeper_cache_records
-  * Plugin: keeper_copy
-  * Plugin: keeper_get
-  * Plugin: keeper_get_record
-  * Plugin: keeper_set
-  * Plugin: keeper_create
-  * Plugin: keeper_remove
-  * Plugin: keeper_password
-  * Plugin: keeper_lookup
-  * Plugin: keeper_init
-  * Plugin: keeper_info
-  * Plugin: keeper_cleanup
-  * Plugin: keeper_redact
-  * Ansible Vault Password Retrieval
-  * Logging
-  * Troubleshooting
-  * __NSPlaceholderDate in progress in another thread when fork() called error.
-  * Missing Configuration file
+An initialized Keeper
+
+The collection can be found on the . You can install the collection with the
+follow command line.
+
+Find the Keeper Secrets Manager Ansible Plugin source code in the .
+
+Prior to proceeding with this guide, make sure you meet all the  and have the
+following:
+
+KSM Application and it's
+
+installed
+
+In order to use the Ansible plugin for Keeper Secrets Manager, a  is required.
+Once you have a config file, the configuration values can be placed into the
+files. These variable files can be encrypted with Ansible vault.
+
+To find out what fields and custom fields are available for a specific vault
+secret, use the Keeper Secrets Manager CLI "`ksm secret get -u XXXX`" command.
+More info .
+
+Actions can either use  or the record UID or Title, combined with the task
+attributes `array_index` and `value_key` to get a specific value.
+
+The plugin `keeper_copy` is an extension of the _._ Example:
+
+Additional optional attributes are the same as the  attributes. The attributes
+`src, remote_src`, and `content` are not allowed and will be ignored.
+
+The `keeper_create` plugin creates a record in the Keeper vault. See the
+document for available record types, and the field types used to build the
+records. The action plugin will return the `record_uid` upon successful
+creation.
+
+To find out what fields and custom fields are available for a specific vault
+secret, use the Keeper Secrets Manager CLI "`ksm secret get -u XXXX`" command.
+More info .
+
+See  Using `no_log` can hide all logging from a task. This plugin is for when
+you just want secrets returned by the Keeper Secrets Manager plugins to be
+hidden/redacted.
+
+A executable shell script can be created that returns the password using the
+"ksm" secret notation ( about ksm secret notation). For example, the below
+script will output a specific secret password for the given Record UID:
 
 [Overview ](/en/keeperpam/secrets-manager/overview)
 
@@ -2034,14 +2034,23 @@ secret-data)
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
+[prerequisites](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
+plugin#prerequisites)
+
+[Keeper Ansible module](/en/keeperpam/secrets-
+manager/integrations/ansible/ansible-plugin#install-keeper-ansible-module)
+
+[Keeper config file](/en/keeperpam/secrets-manager/about/secrets-manager-
+configuration)
+
+[Ansible variable](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
+plugin#ansible-variables)
+
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
 
 [One-Time Access Token](/en/keeperpam/secrets-manager/quick-start-
 guide#create-a-secrets-manager-client-device-1)
-
-[Keeper config file](/en/keeperpam/secrets-manager/about/secrets-manager-
-configuration)
 
 [here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/secret-command#secret-command)
@@ -2051,15 +2060,6 @@ interface/secret-command#secret-command)
 
 [learn more](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/secret-command#notation)
-
-[prerequisites](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
-plugin#prerequisites)
-
-[Keeper Ansible module](/en/keeperpam/secrets-
-manager/integrations/ansible/ansible-plugin#install-keeper-ansible-module)
-
-[Ansible variable](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
-plugin#ansible-variables)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG-

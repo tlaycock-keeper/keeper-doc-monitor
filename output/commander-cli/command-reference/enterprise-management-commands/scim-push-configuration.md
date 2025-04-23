@@ -442,36 +442,6 @@ push-configuration?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Common Setup Steps
-  * Google Workspace 
-  * Pushing Provisioning Data
-  * Automatic Provisioning of Google Workspace
-  * Active Directory
-  * Pushing Provisioning Data
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=EjlGOqvF9K3iIWZ1GR1p&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Enterprise Management Commands](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands)
-
-# SCIM Push Configuration
-
-Use Commander to push SCIM messages to the Keeper backend API
-
-[PreviousBreachwatch Commands](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands/breachwatch-commands)[NextRecord
-Commands](/en/keeperpam/commander-cli/command-reference/record-commands)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -502,6 +472,17 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=EjlGOqvF9K3iIWZ1GR1p&only=yes&limit=100)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 For identity providers that don't support SCIM, customers can utilize the
 Keeper Commander  command to provision users and teams.
 
@@ -509,9 +490,7 @@ Keeper Commander  command to provision users and teams.
 
 Common Setup Steps
 
-Prerequisites: please be familiar with [User and Team
-provisioning](https://docs.keeper.io/enterprise-guide/user-and-team-
-provisioning)
+Prerequisites: please be familiar with
 
   1. Create a SCIM provisioning for your enterprise with the Admin Console or Commander
 
@@ -528,22 +507,14 @@ Google Workspace
 The setup steps in this section allow you to provision users and teams from
 your Google Workspace account.
 
-Prerequisites: [Active Google Workspace](https://admin.google.com)
-subscription and [Google Cloud Platform](https://console.cloud.google.com/)
-account
+Prerequisites:  subscription and  account
 
 Commander installed with `pip:` Make sure Google API Client Python package is
 installed
 
-Copy
+  1. : Create a project or chose an existing one
 
-    
-    
-    (keeper) % pip install google-api-python-client
-
-  1. [Google Cloud Platform](https://console.cloud.google.com/): Create a project or chose an existing one
-
-  2. [Google Cloud Platform](https://console.cloud.google.com/): Enable `Admin SDK API` for your project
+  2. : Enable `Admin SDK API` for your project
 
      * in the `APIs & Services` click `+ENABLE APIS AND SERVICES`
 
@@ -551,7 +522,7 @@ Copy
 
      * click `ENABLE`
 
-  3. [Google Cloud Platform](https://console.cloud.google.com/): Create a Service Account
+  3. : Create a Service Account
 
      * In the `IAM and Admin` menu select `Service accounts`
 
@@ -567,15 +538,11 @@ Copy
 
   4. Grant the Service Account access to your Google Workspace Directory
 
-     * [Google Cloud Platform](https://console.cloud.google.com/)
-
-       * Navigate to your Service Account and select `DETAILS` tab
+     *        * Navigate to your Service Account and select `DETAILS` tab
 
        * in the `Domain-wide delegation` section copy the `Client ID`. You will need to grant this Client ID access to the Google Workspace Directory
 
-     * [Google Workspace Admin Console](https://admin.google.com/)
-
-       * Navigate to `Security` -> `API controls`
+     *        * Navigate to `Security` -> `API controls`
 
        * Under the `Domain wide delegation` click `MANAGE DOMAIN WIDE DELEGATION`
 
@@ -587,7 +554,7 @@ Copy
 
        * Click `AUTHORIZE` \- These scopes grant Service Account read-only access to Google Workspace Directory Users, Groups and Membership
 
-  5. [Google Workspace Admin Console](https://admin.google.com/): Provider Keeper with the `Service Account`
+  5. : Provider Keeper with the `Service Account`
 
      * In Google, navigate to `Account` -> `Account settings`
 
@@ -595,7 +562,7 @@ Copy
 
      * Paste this email into the login field of your Google SCIM configuration record in Keeper
 
-  6. [Google Workspace Admin Console](https://admin.google.com/): create a group that holds users to be exported to Keeper. 
+  6. : create a group that holds users to be exported to Keeper. 
 
      * Optional: skip this step if you want all user accounts to be imported
 
@@ -607,6 +574,54 @@ Copy
 
 The Google SCIM configuration record in Keeper should now contain the
 following fields:
+
+###
+
+Pushing Provisioning Data
+
+To perform a push of the Google users and Teams into Keeper, use the below
+command:
+
+The SCIM ID can be found in the Admin Console or using Commander. For example:
+
+###
+
+Automatic Provisioning of Google Workspace
+
+Keeper has created a Google Cloud Function to automatically perform
+provisioning of Google Workspace users and teams. The step by step
+instructions can be found here:
+
+##
+
+Active Directory
+
+The setup steps in this section allow you to provision users and teams from
+Active Directory using the `scim push` command.
+
+Prerequisites:
+
+  1. In your Active Directory browser, create a Group and add AD users and groups that need to be provisioned in Keeper.
+
+  2. Get the Active Directory connect URL, e.g. `ldap(s):<domain controller host or IP`>
+
+  3. Pick a user that can read Active Directory
+
+The Active Directory configuration record in Keeper should now contain the
+following fields:
+
+###
+
+Pushing Provisioning Data
+
+To perform a push of the Active Directory users and Teams into Keeper, use the
+below command:
+
+Field
+
+Section
+
+Value
 
 Field
 
@@ -644,26 +659,11 @@ Google #3
 
 File attachment with Google Service Account credentials
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6DJsI6QFbIhARs3Tj7Zp%252FScreen%2520Shot%25202023-06-20%2520at%252010.48.24%2520AM.png%3Falt%3Dmedia%26token%3D50e318aa-556c-42ad-b867-521b2204191d&width=768&dpr=4&quality=100&sign=fed024e2&sv=2)
-
-Record in Keeper containing the Google Cloud service account information
-
-###
-
-Pushing Provisioning Data
-
-To perform a push of the Google users and Teams into Keeper, use the below
-command:
-
 Copy
 
     
     
     scim push <SCIM ID> --source=google --record=<RECORD UID>
-
-The SCIM ID can be found in the Admin Console or using Commander. For example:
 
 Copy
 
@@ -675,38 +675,6 @@ Copy
     288797895952358  Lurey, Inc.\Corporate  288797895950343  active   Wed Jul  6 09:44:44 2022
     288797895951707  Lurey, Inc.\Azure      288797895951061  active   Fri Jul  7 14:25:31 2023
     288797895951110  Lurey, Inc.\Google     288797895951063  active   Mon May 30 23:42:52 2022
-
-###
-
-Automatic Provisioning of Google Workspace
-
-Keeper has created a Google Cloud Function to automatically perform
-provisioning of Google Workspace users and teams. The step by step
-instructions can be found here:
-
-##
-
-Active Directory
-
-The setup steps in this section allow you to provision users and teams from
-Active Directory using the `scim push` command.
-
-Prerequisites:
-
-  1. In your Active Directory browser, create a Group and add AD users and groups that need to be provisioned in Keeper.
-
-  2. Get the Active Directory connect URL, e.g. `ldap(s):<domain controller host or IP`>
-
-  3. Pick a user that can read Active Directory
-
-The Active Directory configuration record in Keeper should now contain the
-following fields:
-
-Field
-
-Section
-
-Value
 
 Password
 
@@ -746,18 +714,57 @@ AD #3
 
 AD Password
 
-###
-
-Pushing Provisioning Data
-
-To perform a push of the Active Directory users and Teams into Keeper, use the
-below command:
-
 Copy
 
     
     
     scim push <SCIM ID> --source=ad --record=<RECORD UID>
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Enterprise Management Commands](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands)
+
+# SCIM Push Configuration
+
+Use Commander to push SCIM messages to the Keeper backend API
+
+[PreviousBreachwatch Commands](/en/keeperpam/commander-cli/command-
+reference/enterprise-management-commands/breachwatch-commands)[NextRecord
+Commands](/en/keeperpam/commander-cli/command-reference/record-commands)
+
+  * Common Setup Steps
+  * Google Workspace 
+  * Pushing Provisioning Data
+  * Automatic Provisioning of Google Workspace
+  * Active Directory
+  * Pushing Provisioning Data
+
+Copy
+
+    
+    
+    (keeper) % pip install google-api-python-client
+
+[User and Team provisioning](https://docs.keeper.io/enterprise-guide/user-and-
+team-provisioning)
+
+[Active Google Workspace](https://admin.google.com)
+
+[Google Cloud Platform](https://console.cloud.google.com/)
+
+[Google Cloud Platform](https://console.cloud.google.com/)
+
+[Google Cloud Platform](https://console.cloud.google.com/)
+
+[Google Cloud Platform](https://console.cloud.google.com/)
+
+[Google Cloud Platform](https://console.cloud.google.com/)
+
+[Google Workspace Admin Console](https://admin.google.com/)
+
+[Google Workspace Admin Console](https://admin.google.com/)
+
+[Google Workspace Admin Console](https://admin.google.com/)
 
 [![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
 files/o/spaces%2F-MB_i6vKdtG6Z2n6zWgJ%2Favatar-1597678109631.png?generation=1597678109861766&alt=media)Google
@@ -768,4 +775,10 @@ function)
 
 [scim push](/en/keeperpam/commander-cli/command-reference/enterprise-
 management-commands#scim-command)
+
+Record in Keeper containing the Google Cloud service account information
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6DJsI6QFbIhARs3Tj7Zp%252FScreen%2520Shot%25202023-06-20%2520at%252010.48.24%2520AM.png%3Falt%3Dmedia%26token%3D50e318aa-556c-42ad-b867-521b2204191d&width=768&dpr=4&quality=100&sign=fed024e2&sv=2)
 

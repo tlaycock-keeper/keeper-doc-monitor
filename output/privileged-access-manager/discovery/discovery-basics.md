@@ -536,6 +536,10 @@ Copy
 
 Allow users to run discovery jobs
 
+Discovery can also be enabled on the [Keeper Commander
+CLI](/en/keeperpam/commander-cli/command-reference/secrets-manager-
+commands#overview) using the `enterprise-role` command:
+
 Copy
 
     
@@ -596,6 +600,9 @@ Ex: `My Network`
 Network CIDR
 
 Subnet of the IP address
+
+Ex: `192.168.0.15/24` [learn
+more](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) about CIDR
 
 Port Mapping
 
@@ -766,15 +773,6 @@ Next Steps:
   * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
 
   * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
-
-Discovery can also be enabled on the  using the `enterprise-role` command:
-
-Ex: `192.168.0.15/24` about CIDR
-
-[learn more](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
-
-[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
-manager-commands#overview)
 
 Enable Discovery Policy
 

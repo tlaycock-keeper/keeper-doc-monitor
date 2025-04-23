@@ -534,11 +534,7 @@ Before proceeding with the setup, ensure you have the following:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
-
-    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
-
-    * Make sure you add the proper permissions to your device in order to be able to read and write secrets
+  *     *     * Make sure you add the proper permissions to your device in order to be able to read and write secrets
 
   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
@@ -898,8 +894,18 @@ Remember to replace all placeholders in the command snippets with your
 specific information, and don't hesitate to refer back to this guide anytime
 you need to set up or manage your External Secrets in Kubernetes.
 
+A Keeper  with secrets shared to it
+
+See the  for instructions on creating an Application
+
 After setting up your , , and , you can extract secrets with the command
 `kubectl get secrets`
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 [Kubernetes Secret](/en/keeperpam/secrets-manager/integrations/kubernetes-
 external-secrets-operator#create-kubernetes-secret-to-store-base64-ksm-config)

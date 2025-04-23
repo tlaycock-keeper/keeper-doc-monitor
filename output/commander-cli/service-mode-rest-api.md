@@ -453,7 +453,7 @@ reference/plugins/automatic-
 execution)[NextTroubleshooting](/en/keeperpam/commander-cli/troubleshooting-
 commander-cli)
 
-Last updated 5 days ago
+Last updated 6 days ago
 
 Was this helpful?
 
@@ -880,7 +880,7 @@ Using Ngrok has security implications. Follow this guidance:
 
   * Protect access to the service through Ngrok's IP policies
 
-  * Limit the scope of supported commands. For example, if you only need to add records through the API, then only allow the `record-add` command. See the [Command List](/en/keeperpam/commander-cli/service-mode-rest-api#command-list) section.
+  * 
 
 ####
 
@@ -1083,10 +1083,6 @@ time you run Commander. Persistent login is required to ensure uninterrupted
 background execution of the Service Mode APIs, allowing seamless
 authentication without repeated login prompts.
 
-Learn more about [persistent login sessions](/en/keeperpam/commander-
-cli/commander-installation-setup/logging-in#persistent-login-sessions-stay-
-logged-in).
-
 ###
 
 Support
@@ -1097,6 +1093,17 @@ For support or feature requests, please contact:
 
 If you would like to request additional features or setup guides for Commander
 Service Mode, please reach out.
+
+Limit the scope of supported commands. For example, if you only need to add
+records through the API, then only allow the `record-add` command. See the
+section.
+
+Learn more about .
+
+[Command List](/en/keeperpam/commander-cli/service-mode-rest-api#command-list)
+
+[persistent login sessions](/en/keeperpam/commander-cli/commander-
+installation-setup/logging-in#persistent-login-sessions-stay-logged-in)
 
 Commander Service Mode record
 

@@ -471,7 +471,7 @@ reference/enterprise-management-commands/creating-and-inviting-
 users)[NextBreachwatch Commands](/en/keeperpam/commander-cli/command-
 reference/enterprise-management-commands/breachwatch-commands)
 
-Last updated 28 days ago
+Last updated 29 days ago
 
 Was this helpful?
 

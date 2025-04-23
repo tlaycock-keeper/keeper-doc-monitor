@@ -503,6 +503,16 @@ SSH, LDAPS, databases, and other protocols. Users can authenticate through the
 KeeperPAM platform, which brokers the connection and ensures strict policy
 enforcement.
 
+An active license is required in order to use the features available with
+KeeperPAM. This license is available for both business and enterprise
+customers.
+
+  * [KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-management/)
+
+  * [Request a Demo](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+
+  * [Contact Support](https://www.keepersecurity.com/support.html)
+
 ##
 
 Prerequisites
@@ -550,6 +560,10 @@ Copy
 
 Allow users to start tunnels on PAM Machine, PAM Directory and PAM Database
 Record Types
+
+Tunnels can also be enabled on the [Keeper Commander
+CLI](/en/keeperpam/commander-cli/command-reference/secrets-manager-
+commands#overview) using the `enterprise-role` command:
 
 Copy
 
@@ -760,24 +774,6 @@ need to share credentials:
   * [Connections](/en/keeperpam/privileged-access-manager/connections) to establish interactive sessions across many different protocols
 
   * [Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-isolation) with Autofill to establish web-based interactive sessions
-
-Tunnels can also be enabled on the  using the `enterprise-role` command:
-
-[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
-manager-commands#overview)
-
-An active license is required in order to use the features available with
-KeeperPAM. This license is available for both business and enterprise
-customers.
-
-  *   *   * 
-
-[KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-
-management/)
-
-[Request a Demo](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-
-[Contact Support](https://www.keepersecurity.com/support.html)
 
 Enforcement Policies for Tunnels
 
