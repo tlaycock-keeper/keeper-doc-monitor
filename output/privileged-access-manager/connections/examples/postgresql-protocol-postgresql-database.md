@@ -621,10 +621,6 @@ Once you have configured the PostgreSQL Protocol connection on your PAM
 Database Record, your record will contain the following connection banner with
 the "Launch" Button:
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlN0OOjehb7Cy8saDi04e%252Fpostgresqlconn.png%3Falt%3Dmedia%26token%3D627be1fe-d982-4f00-8fed-f414d10e7708&width=768&dpr=4&quality=100&sign=5c831483&sv=2)
-
 In the above image, a PostgreSQL Database has been configured on the PAM
 Database Record. When clicking launch, the Vault Client will render a window
 with the established connection protocol to the specified target.
@@ -679,4 +675,8 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlN0OOjehb7Cy8saDi04e%252Fpostgresqlconn.png%3Falt%3Dmedia%26token%3D627be1fe-d982-4f00-8fed-f414d10e7708&width=768&dpr=4&quality=100&sign=5c831483&sv=2)
 

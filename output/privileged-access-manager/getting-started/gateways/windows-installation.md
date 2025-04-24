@@ -557,11 +557,15 @@ Setup Options
 
   * Install Windows service - Installs the gateway as a Windows service.
 
-    *     * Start Windows service - Start the Keeper Gateway service immediately after installation
+    * Use service account - Use the [specified service account](/en/keeperpam/privileged-access-manager/getting-started/gateways/windows-installation#specifying-the-keeper-gateway-service-account-optional), otherwise the account installing the gateway will be used.
+
+    * Start Windows service - Start the Keeper Gateway service immediately after installation
 
     * Enable automatic updates
 
-  *   * Remove Keeper Gateway configuration and logs from previous installations
+  * Turn on debug logging - Enable [verbose logging](/en/keeperpam/privileged-access-manager/getting-started/gateways/windows-installation#verbose-logging) on the gateway log files. NOT recommended for production environments. Only use this when debugging with Keeper support. 
+
+  * Remove Keeper Gateway configuration and logs from previous installations
 
 ####
 
@@ -763,19 +767,6 @@ To uninstall the service:
 
   * If desired, delete the private configuration .json file
 
-Use service account - Use the , otherwise the account installing the gateway
-will be used.
-
-Turn on debug logging - Enable  on the gateway log files. NOT recommended for
-production environments. Only use this when debugging with Keeper support.
-
-[specified service account](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/windows-installation#specifying-the-keeper-gateway-service-
-account-optional)
-
-[verbose logging](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/windows-installation#verbose-logging)
-
 ###
 
 Network Configuration
@@ -818,6 +809,8 @@ Checksum Verification
 Keeper Gateway SHA256 hashes for the latest version are published at the below
 location:
 
+<https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
+
 Calculating and verifying the checksum:
 
 ####
@@ -841,8 +834,6 @@ Copy
     
     Get-FileHash -Algorithm SHA256 keeper-gateway_windows_x86_64.exe | Format-List
     Get-Content keeper-gateway_X.X.X_SHA256SUMS | Select-String keeper-gateway_windows_x86_64.exe
-
-<https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
 
 Keeper Gateway for Windows
 

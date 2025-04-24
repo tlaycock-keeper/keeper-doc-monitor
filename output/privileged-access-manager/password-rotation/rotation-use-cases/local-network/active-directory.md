@@ -442,36 +442,6 @@ directory?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview
@@ -497,14 +467,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=G8i5M5wdgYMSjLlD0VkD&only=yes&limit=100)
 
 Rotating Active Directory or OpenLDAP user accounts remotely using KeeperPAM
 
-[PreviousLocal Network](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network)[NextWindows
-User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/local-network/windows-user)
-
-Last updated 2 months ago
-
-Was this helpful?
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FD4pFTWlEuiTNgUy4pXoD%252FLocal%2520Network%2520rotations.jpg%3Falt%3Dmedia%26token%3Da54e5b3b-1dc1-4160-a142-d616e9c8f038&width=768&dpr=4&quality=100&sign=fcf7a7e0&sv=2)
 
 ##
 
@@ -519,7 +484,13 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   *   * The Keeper Gateway is able to communicate via LDAPS (port 636) or LDAP (port 389) to your directory.
+  * [Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-started/enforcement-policies) are configured for your role
+
+  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+
+  * Your [Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is online
+
+  * The Keeper Gateway is able to communicate via LDAPS (port 636) or LDAP (port 389) to your directory.
 
 ###
 
@@ -583,6 +554,11 @@ Set to `Active Directory` or `OpenLDAP`
 
 Note: You can skip this step if you already have a PAM Configuration set up
 for this environment.
+
+A [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration) associates an environment with a Keeper Gateway and
+credentials. If you don't have a PAM Configuration set up yet for this use
+case, create one.
 
 Field
 
@@ -663,6 +639,11 @@ Copy
 
 Select the PAM User record, edit the record and open the "Password Rotation
 Settings".
+
+Any user with edit rights to a PAM User record and [enforcement
+policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-
+policies) allowing rotation has the ability to set up rotation for that
+record.
 
   * The "Rotation" should be of type "General". 
 
@@ -763,34 +744,46 @@ Check the connectivity
 Run 'LDP.exe' and make sure that you're able to connect to the local domain
 over port 636 with SSL enabled.
 
-are configured for your role
+[PreviousLocal Network](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network)[NextWindows
+User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/local-network/windows-user)
 
-A Keeper Secrets Manager  has been created
+Last updated 2 months ago
 
-Your  is online
+Was this helpful?
 
-A  associates an environment with a Keeper Gateway and credentials. If you
-don't have a PAM Configuration set up yet for this use case, create one.
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 Depends on your use case. See the  section.
-
-Any user with edit rights to a PAM User record and  allowing rotation has the
-ability to set up rotation for that record.
-
-[Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-
-started/enforcement-policies)
-
-[application](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
-
-[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)
-
-[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
-
-[enforcement policies](/en/keeperpam/privileged-access-manager/getting-
-started/enforcement-policies)
 
 [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
 started/pam-configuration)
@@ -804,10 +797,6 @@ PAM User scheduled rotations
 Testing and LDAP connection with LDP.exe
 
 Connect using LDP.exe
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FD4pFTWlEuiTNgUy4pXoD%252FLocal%2520Network%2520rotations.jpg%3Falt%3Dmedia%26token%3Da54e5b3b-1dc1-4160-a142-d616e9c8f038&width=768&dpr=4&quality=100&sign=fcf7a7e0&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

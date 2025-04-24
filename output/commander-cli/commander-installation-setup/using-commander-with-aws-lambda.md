@@ -596,12 +596,6 @@ Copy
     rm -rf $VENV
     
 
-[2KBpackage_layer_content.sh](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FgxJz7bvtfe4hTfuTA0cc%2Fpackage_layer_content.sh?alt=media&token=f624bf70-327c-4b10-9f18-a1f1ae06ecc1)
-
-Bash script for packaging `keepercommander` Lambda Layer content
-
 To use the script provided above, perform the following steps after
 downloading the file:
 
@@ -983,10 +977,6 @@ AWS can also be configured to trigger Lambda from a number of other sources
 including email and SMS triggers. See Amazon's documentation on invoking
 Lambda for more options:
 
-[![Logo](https://docs.aws.amazon.com/assets/images/favicon.ico)Invoking Lambda
-functions - AWS LambdaAWS
-Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
-
 ####
 
 Configure For Sending Emails
@@ -1022,10 +1012,6 @@ Keeper processes.
 
 For some examples of using the Commander SDK code, see the example scripts in
 the Commander GitHub repo:
-
-[![Logo](https://github.com/fluidicon.png)Commander/examples at master ·
-Keeper-Security/CommanderGitHub](https://github.com/Keeper-
-Security/Commander/tree/master/examples)
 
 To learn more about Commander's various methods, see the Command Reference
 section.
@@ -1071,8 +1057,22 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+[![Logo](https://docs.aws.amazon.com/assets/images/favicon.ico)Invoking Lambda
+functions - AWS LambdaAWS
+Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
+
 [![Logo](https://a0.awsstatic.com/libra-css/images/site/touch-icon-
 ipad-144-smile.png)Send email using Lambda and Amazon SESAmazon Web Services,
 Inc.](https://aws.amazon.com/premiumsupport/knowledge-center/lambda-send-
 email-ses/)
+
+[![Logo](https://github.com/fluidicon.png)Commander/examples at master ·
+Keeper-Security/CommanderGitHub](https://github.com/Keeper-
+Security/Commander/tree/master/examples)
+
+[2KBpackage_layer_content.sh](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
+x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FgxJz7bvtfe4hTfuTA0cc%2Fpackage_layer_content.sh?alt=media&token=f624bf70-327c-4b10-9f18-a1f1ae06ecc1)
+
+Bash script for packaging `keepercommander` Lambda Layer content
 

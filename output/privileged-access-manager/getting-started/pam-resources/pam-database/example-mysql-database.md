@@ -612,10 +612,18 @@ Session Recording
 
 Options for recording sessions and typescripts
 
+See [session recording](/en/keeperpam/privileged-access-manager/session-
+recording-and-playback)
+
 Connection Parameters
 
 Connection-specific protocol settings which can vary based on the protocol
 type
+
+See this [section](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/mysql-connections) for MySQL protocol
+settings We recommend specifying the **Connection Port** at a minimum. E.g.
+"3306" for MySQL.
 
 ###
 
@@ -700,17 +708,6 @@ Was this helpful?
 © 2025 Keeper Security, Inc.
 
 **Required** Visit this  for more details
-
-See
-
-See this  for MySQL protocol settings We recommend specifying the **Connection
-Port** at a minimum. E.g. "3306" for MySQL.
-
-[session recording](/en/keeperpam/privileged-access-manager/session-recording-
-and-playback)
-
-[section](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/mysql-connections)
 
 [section](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-database/example-mysql-database#administrative-credential-

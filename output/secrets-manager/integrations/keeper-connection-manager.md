@@ -495,9 +495,6 @@ Features
 
   * Provide privileged sessions without exposing credentials to the end-user
 
-For a complete list of Keeper Secrets Manager features see the [Overview
-](/en/keeperpam/secrets-manager/overview)
-
 ##
 
 Prerequisites
@@ -505,17 +502,11 @@ Prerequisites
 This page documents the Secrets Manager <> Keeper Connection Manager
 integration. In order to utilize this integration, you will need:
 
-  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
-
-    * Secrets Manager add-on enabled for your Keeper account
+  *     * Secrets Manager add-on enabled for your Keeper account
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
-
-    *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
-
-    * The Connection Manager integration accepts the Base64 format configuration
+  *     *   *     * The Connection Manager integration accepts the Base64 format configuration
 
 ##
 
@@ -528,7 +519,28 @@ protocols.
 Step by Step documentation for activating Keeper Secrets Manager with Keeper
 Connection Manager can be found at the link below:
 
+For a complete list of Keeper Secrets Manager features see the
+
+Keeper Secrets Manager access (See the  for more details)
+
+A Keeper  with secrets shared to it
+
 See the  for instructions on creating an Application
+
+An initialized Keeper
+
+[Overview ](/en/keeperpam/secrets-manager/overview)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+[Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FviMYAuRTMJ9hVoZPSFK7%252Fksm-
+kcm-
+header.jpg%3Falt%3Dmedia%26token%3Dadf247a9-990a-4cab-98f5-fae4ed853fb7&width=768&dpr=4&quality=100&sign=248848a5&sv=2)
 
 [![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-x-
 prod.appspot.com/o/spaces%2Fb7weUpu7VBcMnESSH8vG%2Ficon%2FAxlnehp2PPSRzr72ZUVn%2FKCM-
@@ -536,12 +548,9 @@ square.jpg?alt=media&token=f4e6693c-289d-4760-8b8d-f5195589bc12)Vault
 IntegrationKeeper Connection Manager](https://docs.keeper.io/keeper-
 connection-manager/vault-integration)
 
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FviMYAuRTMJ9hVoZPSFK7%252Fksm-
-kcm-
-header.jpg%3Falt%3Dmedia%26token%3Dadf247a9-990a-4cab-98f5-fae4ed853fb7&width=768&dpr=4&quality=100&sign=248848a5&sv=2)
 

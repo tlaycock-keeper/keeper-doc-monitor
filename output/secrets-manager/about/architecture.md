@@ -450,7 +450,7 @@ Secrets Manager High Level Architecture
 manager/about)[NextTerminology](/en/keeperpam/secrets-
 manager/about/terminology)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

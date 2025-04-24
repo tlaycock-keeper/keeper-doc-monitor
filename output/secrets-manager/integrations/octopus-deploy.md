@@ -452,43 +452,14 @@ PDF](/en/keeperpam/~gitbook/pdf?page=dSjHRoYO5aq55jqwaTHQ&only=yes&limit=100)
 
 Keeper Secrets Manager Step Template for accessing secrets in Octopus Deploy
 
-[PreviousLinux Keyring](/en/keeperpam/secrets-manager/integrations/linux-
-keyring)[NextOracle Key Vault Encryption](/en/keeperpam/secrets-
-manager/integrations/oracle-key-vault)
+![Keeper Secrets Manager and Octopus
+Deploy](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGKGOFEKV9NLKy8AYnY2T%252Fksm-
+header-
+octopus.png%3Falt%3Dmedia%26token%3Dd77092a0-d3b4-4823-8498-f9927a0209f1&width=768&dpr=4&quality=100&sign=b019eb18&sv=2)
 
-Last updated 3 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+Octopus Deploy Integration with Keeper Secrets Manager
 
 ##
 
@@ -516,7 +487,11 @@ to utilize this integration, you will need:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
     * The Octopus Deploy integration accepts Base 64 format configurations
 
@@ -605,22 +580,41 @@ Copy
 Octopus [output variable](https://octopus.com/docs/projects/variables/output-
 variables) names to the task log. Default: `False`
 
-A Keeper  with secrets shared to it
+[PreviousLinux Keyring](/en/keeperpam/secrets-manager/integrations/linux-
+keyring)[NextOracle Key Vault Encryption](/en/keeperpam/secrets-
+manager/integrations/oracle-key-vault)
 
-See the  for instructions on creating an Application
+Last updated 3 months ago
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
+Was this helpful?
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
+#### Company
 
-Octopus Deploy Integration with Keeper Secrets Manager
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-![Keeper Secrets Manager and Octopus
-Deploy](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGKGOFEKV9NLKy8AYnY2T%252Fksm-
-header-
-octopus.png%3Falt%3Dmedia%26token%3Dd77092a0-d3b4-4823-8498-f9927a0209f1&width=768&dpr=4&quality=100&sign=b019eb18&sv=2)
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

@@ -463,43 +463,11 @@ PDF](/en/keeperpam/~gitbook/pdf?page=RPjLgrM00UVfnUtodlWt&only=yes&limit=100)
 Synchronize Secrets from Keeper Secrets Manager with the K8s External Secrets
 Operator
 
-[PreviousKeeper Connection Manager](/en/keeperpam/secrets-
-manager/integrations/keeper-connection-manager)[NextKubernetes
-(alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
-
-Last updated 6 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTuTzLzBatbwf6hlcKEGt%252Fksm-
+externalsecrets-
+kubernetes.jpg%3Falt%3Dmedia%26token%3D16302139-00a4-4e61-8c25-8d24f83c911b&width=768&dpr=4&quality=100&sign=daa2aa25&sv=2)
 
 ##
 
@@ -534,7 +502,11 @@ Before proceeding with the setup, ensure you have the following:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *     * Make sure you add the proper permissions to your device in order to be able to read and write secrets
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+    * Make sure you add the proper permissions to your device in order to be able to read and write secrets
 
   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
@@ -840,6 +812,14 @@ Limitations
 
 Verifying Setup
 
+After setting up your [Kubernetes Secret](/en/keeperpam/secrets-
+manager/integrations/kubernetes-external-secrets-operator#create-kubernetes-
+secret-to-store-base64-ksm-config), [SecretStore](/en/keeperpam/secrets-
+manager/integrations/kubernetes-external-secrets-operator#create-secretstore),
+and [ExternalSecret](/en/keeperpam/secrets-manager/integrations/kubernetes-
+external-secrets-operator#create-externalsecret), you can extract secrets with
+the command `kubectl get secrets`
+
 In the above code snippets, the name of the secret is my-external-secrets-
 values and we store the following record values:
 
@@ -894,31 +874,41 @@ Remember to replace all placeholders in the command snippets with your
 specific information, and don't hesitate to refer back to this guide anytime
 you need to set up or manage your External Secrets in Kubernetes.
 
-A Keeper  with secrets shared to it
+[PreviousKeeper Connection Manager](/en/keeperpam/secrets-
+manager/integrations/keeper-connection-manager)[NextKubernetes
+(alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
 
-See the  for instructions on creating an Application
+Last updated 6 months ago
 
-After setting up your , , and , you can extract secrets with the command
-`kubectl get secrets`
+Was this helpful?
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
+#### Company
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-[Kubernetes Secret](/en/keeperpam/secrets-manager/integrations/kubernetes-
-external-secrets-operator#create-kubernetes-secret-to-store-base64-ksm-config)
+#### Support
 
-[SecretStore](/en/keeperpam/secrets-manager/integrations/kubernetes-external-
-secrets-operator#create-secretstore)
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-[ExternalSecret](/en/keeperpam/secrets-manager/integrations/kubernetes-
-external-secrets-operator#create-externalsecret)
+#### Solutions
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTuTzLzBatbwf6hlcKEGt%252Fksm-
-externalsecrets-
-kubernetes.jpg%3Falt%3Dmedia%26token%3D16302139-00a4-4e61-8c25-8d24f83c911b&width=768&dpr=4&quality=100&sign=daa2aa25&sv=2)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

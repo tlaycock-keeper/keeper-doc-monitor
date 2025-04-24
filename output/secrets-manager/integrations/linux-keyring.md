@@ -477,15 +477,7 @@ simply and natively.
 
 The code base for the Linux Keyring Utility can be found here:
 
-[![Logo](https://github.com/fluidicon.png)GitHub - Keeper-Security/linux-
-keyring-utility: A utility for natively interacting with the Linux
-KeyringGitHub](https://github.com/Keeper-Security/linux-keyring-utility)
-
 The binary needed to use the above utility can be found here:
-
-[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/linux-
-keyring-utilityGitHub](https://github.com/Keeper-Security/linux-keyring-
-utility/releases)
 
 To use the Linux Keyring Utility, you can either
 
@@ -735,4 +727,12 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/linux-
+keyring-utilityGitHub](https://github.com/Keeper-Security/linux-keyring-
+utility/releases)
+
+[![Logo](https://github.com/fluidicon.png)GitHub - Keeper-Security/linux-
+keyring-utility: A utility for natively interacting with the Linux
+KeyringGitHub](https://github.com/Keeper-Security/linux-keyring-utility)
 

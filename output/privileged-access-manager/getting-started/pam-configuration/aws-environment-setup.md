@@ -471,7 +471,9 @@ configured in the PAM Configuration record.
 The role policy must be configured appropriately to enable access to the
 target AWS resources:
 
-  *   * 
+  * [EC2 Role Policy](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup#ec2-role)
+
+  * [IAM User Policy](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup#iam-admin-user-1)
 
 The following diagram shows the AWS environment hierarchy:
 
@@ -668,10 +670,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-[EC2 Role Policy](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/aws-environment-setup#ec2-role)
-
-[IAM User Policy](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/aws-environment-setup#iam-admin-user-1)
 

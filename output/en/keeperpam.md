@@ -430,7 +430,7 @@ KeeperPAM is a modern, cloud-based Privileged Access Manager
 
 [NextSetup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
 
-Last updated 12 days ago
+Last updated 13 days ago
 
 Was this helpful?
 

@@ -508,7 +508,7 @@ started/architecture/gateway-security)[NextKeeperPAM
 Licensing](/en/keeperpam/privileged-access-manager/getting-started/keeperpam-
 licensing)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

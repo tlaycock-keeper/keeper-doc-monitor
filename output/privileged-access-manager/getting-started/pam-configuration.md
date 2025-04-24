@@ -428,39 +428,6 @@ manager/getting-started/pam-configuration?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Creating PAM Configuration
-  * PAM Configuration Fields
-  * Local Network Environment
-  * AWS Environment
-  * Azure Environment
-  * Domain Controller Environment
-  * PAM Features on PAM Configuration
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=r3KpQ6RkUwiqQMMpRR7r&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-
-# PAM Configuration
-
-Creating a PAM Configuration in the Keeper Vault
-
-[PreviousGateway Configuration with Custom Fields](/en/keeperpam/privileged-
-access-manager/getting-started/gateways/advanced-configuration/gateway-
-configuration-with-custom-fields)[NextAWS Environment
-Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/aws-environment-setup)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -490,6 +457,39 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Overview
+  * Creating PAM Configuration
+  * PAM Configuration Fields
+  * Local Network Environment
+  * AWS Environment
+  * Azure Environment
+  * Domain Controller Environment
+  * PAM Features on PAM Configuration
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=r3KpQ6RkUwiqQMMpRR7r&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+# PAM Configuration
+
+Creating a PAM Configuration in the Keeper Vault
+
+[PreviousGateway Configuration with Custom Fields](/en/keeperpam/privileged-
+access-manager/getting-started/gateways/advanced-configuration/gateway-
+configuration-with-custom-fields)[NextAWS Environment
+Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration/aws-environment-setup)
+
+Last updated 3 months ago
+
+Was this helpful?
 
 ##
 
@@ -787,13 +787,6 @@ started/pam-configuration/aws-environment-setup)
 [Azure Environment Setup](/en/keeperpam/privileged-access-manager/getting-
 started/pam-configuration/azure-environment-setup)
 
-[docs](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-[port mapping](/en/keeperpam/privileged-access-manager/references/port-
-mapping)
-
-[this ](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
-
 [Local Network](/en/keeperpam/privileged-access-manager/getting-started/pam-
 configuration#local-network-environment)
 
@@ -805,6 +798,13 @@ configuration#aws-environment)
 
 [Domain Controller](/en/keeperpam/privileged-access-manager/getting-
 started/pam-configuration#domain-controller-environment)
+
+[docs](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+[port mapping](/en/keeperpam/privileged-access-manager/references/port-
+mapping)
+
+[this ](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
 
 [this section](/en/keeperpam/privileged-access-manager/getting-started/pam-
 configuration#pam-features-on-pam-configuration)

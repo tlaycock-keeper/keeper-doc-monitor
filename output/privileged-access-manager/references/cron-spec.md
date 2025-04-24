@@ -428,32 +428,6 @@ manager/references/cron-spec?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Format
-  * Special characters
-  * Examples
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=jIILmFA85EPZpOx27I9d&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
-
-# Cron Spec
-
-Automated password rotation using Cron Specification
-
-[PreviousCommander SDK](/en/keeperpam/privileged-access-
-manager/references/commander-sdk)[NextPreview
-Access](/en/keeperpam/privileged-access-manager/references/preview-access)
-
-Last updated 9 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -483,6 +457,32 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Format
+  * Special characters
+  * Examples
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=jIILmFA85EPZpOx27I9d&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
+
+# Cron Spec
+
+Automated password rotation using Cron Specification
+
+[PreviousCommander SDK](/en/keeperpam/privileged-access-
+manager/references/commander-sdk)[NextPreview
+Access](/en/keeperpam/privileged-access-manager/references/preview-access)
+
+Last updated 9 months ago
+
+Was this helpful?
 
 In the Keeper Vault, users can configure rotation using a standardized UNIX
 Cron specification.

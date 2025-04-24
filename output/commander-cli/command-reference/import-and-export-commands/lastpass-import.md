@@ -957,14 +957,16 @@ permission. This means that the record is only editable by the owner of the
 record, and any [share admins](https://docs.keeper.io/enterprise-guide/share-
 admin) that have been added to the folder.
 
+To change the permissions of records inside a shared folder (after the import
+is complete), you can use the [record-permission](/en/keeperpam/commander-
+cli/command-reference/sharing-commands#record-permission-command) command. For
+example:
+
 Copy
 
     
     
     record-permission -a grant --can-edit --recursive <folder name or UID>
-
-To change the permissions of records inside a shared folder (after the import
-is complete), you can use the  command. For example:
 
 [![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
 files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Desktop
@@ -975,9 +977,6 @@ guide/deploying-keeper-to-end-users/desktop-application)
 icon-192x192.png)Download Keeper Password Manager for iOS, Android, Mac, PC
 and moreKeeper® Password Manager & Digital
 Vault](https://keepersecurity.com/download)
-
-[record-permission](/en/keeperpam/commander-cli/command-reference/sharing-
-commands#record-permission-command)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

@@ -690,13 +690,14 @@ the command line
 
 Here's a screenshot of the Keeper Vault record for this use case:
 
-For more information on the `connect` command, see the
-[documentation](/en/keeperpam/commander-cli/command-
-reference/plugins/password-rotation#connect-command)
-
 for more information about the edit command, see the
 
 A Keeper Record setup for use with Commander's 'connect' command
+
+For more information on the `connect` command, see the
+
+[documentation](/en/keeperpam/commander-cli/command-
+reference/plugins/password-rotation#connect-command)
 
 [command documentation](/en/keeperpam/commander-cli/command-reference/record-
 commands#edit-command-record-types)

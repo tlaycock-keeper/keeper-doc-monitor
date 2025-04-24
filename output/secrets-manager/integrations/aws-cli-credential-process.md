@@ -513,13 +513,21 @@ Prerequisites
 
 In order to utilize this integration, you will need:
 
-  *     * Secrets Manager add-on enabled for your Keeper account
+  * Keeper Secrets Manager access (See the [Quick Start Guide](https://docs.keeper.io/secrets-manager/secrets-manager/quick-start-guide) for more details)
+
+    * Secrets Manager add-on enabled for your Keeper account
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   *     * This integration only accepts JSON format configurations
+  * A Keeper [Secrets Manager Application](https://docs.keeper.io/secrets-manager/secrets-manager/about/terminology#application) with an Access Key shared to it
 
-  * 
+    * See the [Quick Start Guide](https://docs.keeper.io/secrets-manager/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * An initialized [Keeper Secrets Manager Configuration](https://docs.keeper.io/secrets-manager/secrets-manager/about/secrets-manager-configuration)
+
+    * This integration only accepts JSON format configurations
+
+  * The [AWS CLI v2](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) installed
 
 ##
 
@@ -528,6 +536,17 @@ Setup
 ###
 
 Vault
+
+The first step in the setup of the integration is to add you AWS `Access Key
+ID` and your `Secret Access Key` to a record in your Vault. There is no built-
+in record type for this kind of secret; however, you can [create a custom
+record](https://docs.keeper.io/user-guides/record-types#custom-record-types)
+for this purpose alone.
+
+In order to create **new** custom Record Types, the user must be in an
+Administrative role with the "**Manage Record Types in Vault** " [permission
+activated](https://docs.keeper.io/enterprise-guide/record-types#custom-record-
+types).
 
 > Note: Field names are case-sensitive.
 
@@ -547,9 +566,19 @@ The integration expects a KSM Application Configuration file at either
 relative to the user's home directory. It must have access to a Shared Folder
 containing the required AWS Access key.
 
+For help in obtaining a KSM configuration in JSON format, [follow these
+instructions](https://docs.keeper.io/secrets-manager/secrets-
+manager/about/secrets-manager-configuration#creating-a-secrets-manager-
+configuration). After creating a new device get corresponding `config.json`
+and copy it into user's home folder as `aws-credential-process.json`
+
 ###
 
 AWS Config
+
+[Download the latest version](https://github.com/Keeper-Security/aws-
+credential-process/tags) of the `keeper-aws-credential-process` executable
+from the GitHub releases page and store that in a convenient location.
 
 Now in your AWS configuration file, which is usually located at
 `~/.aws/config`, add the following line to any profile you are using via the
@@ -562,6 +591,11 @@ Copy
     # Add the UID for your AWS Access Key
     #credential_process = /path/to/keeper-aws-credential-process --uid <Record UID>
     credential_process = /opt/keeper-aws-credential-process-v0.1.1_linux_amd64  --uid <Record UID>
+
+Make sure there's no residual aws cli
+[configuration](https://docs.aws.amazon.com/cli/latest/userguide/cli-
+configure-files.html) left on the machine which may be picked up automatically
+or on credential process misconfiguration.
 
 ##
 
@@ -585,73 +619,11 @@ up.
 
 Feature Request / Report an Issue
 
-Keeper Secrets Manager access (See the  for more details)
-
-A Keeper  with an Access Key shared to it
-
-See the  for instructions on creating an Application
-
-An initialized
-
-The  installed
-
-The first step in the setup of the integration is to add you AWS `Access Key
-ID` and your `Secret Access Key` to a record in your Vault. There is no built-
-in record type for this kind of secret; however, you can  for this purpose
-alone.
-
-In order to create **new** custom Record Types, the user must be in an
-Administrative role with the "**Manage Record Types in Vault** " .
-
-For help in obtaining a KSM configuration in JSON format, . After creating a
-new device get corresponding `config.json` and copy it into user's home folder
-as `aws-credential-process.json`
-
-of the `keeper-aws-credential-process` executable from the GitHub releases
-page and store that in a convenient location.
-
-Make sure there's no residual aws cli  left on the machine which may be picked
-up automatically or on credential process misconfiguration.
-
-This Credential Process is . If you need to report a bug or would like to
-request a feature to support more authentication use cases, please .
-
-[Quick Start Guide](https://docs.keeper.io/secrets-manager/secrets-
-manager/quick-start-guide)
-
-[Secrets Manager Application](https://docs.keeper.io/secrets-manager/secrets-
-manager/about/terminology#application)
-
-[Quick Start Guide](https://docs.keeper.io/secrets-manager/secrets-
-manager/quick-start-guide#2.-create-an-application)
-
-[Keeper Secrets Manager Configuration](https://docs.keeper.io/secrets-
-manager/secrets-manager/about/secrets-manager-configuration)
-
-[AWS CLI v2](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-
-install.html)
-
-[create a custom record](https://docs.keeper.io/user-guides/record-
-types#custom-record-types)
-
-[permission activated](https://docs.keeper.io/enterprise-guide/record-
-types#custom-record-types)
-
-[follow these instructions](https://docs.keeper.io/secrets-manager/secrets-
-manager/about/secrets-manager-configuration#creating-a-secrets-manager-
-configuration)
-
-[Download the latest version](https://github.com/Keeper-Security/aws-
-credential-process/tags)
-
-[configuration](https://docs.aws.amazon.com/cli/latest/userguide/cli-
-configure-files.html)
-
-[open source and can be found on GitHub](https://github.com/Keeper-
-Security/aws-credential-process)
-
-[create a GitHub issue](https://github.com/Keeper-Security/aws-credential-
-process/issues)
+This Credential Process is [open source and can be found on
+GitHub](https://github.com/Keeper-Security/aws-credential-process). If you
+need to report a bug or would like to request a feature to support more
+authentication use cases, please [create a GitHub
+issue](https://github.com/Keeper-Security/aws-credential-process/issues).
 
 An example of the minimum fields needed for the custom record.
 
