@@ -453,7 +453,7 @@ Automatic migration of your ManageEngine vault
 and-export-commands/keepass-import)[NextMyki Import](/en/keeperpam/commander-
 cli/command-reference/import-and-export-commands/myki-import)
 
-Last updated 4 months ago
+Last updated 5 months ago
 
 Was this helpful?
 

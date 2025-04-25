@@ -452,7 +452,7 @@ Common terminology that will be referenced throughout this documentation
 manager/about/architecture)[NextSecurity & Encryption
 Model](/en/keeperpam/secrets-manager/about/security-encryption-model)
 
-Last updated 12 months ago
+Last updated 1 year ago
 
 Was this helpful?
 
@@ -552,15 +552,13 @@ A Secrets Manager "Configuration" is a set of tokens that includes encryption
 keys, client identifiers and destination server information used to
 authenticate and decrypt data from the Keeper Secrets Manager APIs.
 
-A configuration can be stored as a text file with JSON, or it can be encoded
-into a single line string.
-
 Secrets Manager configurations are created from [One Time Access
 Tokens](/en/keeperpam/secrets-manager/about/one-time-token) and have a one to
-one relationship with .
+one relationship with [client devices](/en/keeperpam/secrets-
+manager/about/terminology#client-device).
 
-[client devices](/en/keeperpam/secrets-manager/about/terminology#client-
-device)
+A configuration can be stored as a text file with JSON, or it can be encoded
+into a single line string.
 
 Keeper Secrets Manager Structure
 

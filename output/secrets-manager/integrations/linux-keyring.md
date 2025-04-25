@@ -428,37 +428,46 @@ manager/integrations/linux-keyring?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
+#### Company
 
-  * Overview
-  * Linux Keyring Utility
-  * Interface
-  * Usage - Importing it into your codebase
-  * Example (get)
-  * Example (set)
-  * Usage - Binary Interface (CLI)
-  * Base64 encoding
-  * Errors
-  * No keyring
-  * No matching secret
-  * No D-Bus Session
-  * No D-Bus
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+On this page
 
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=IlQNYrLHQjYkgclmxW4C&only=yes&limit=100)
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+Last updated 5 months ago
 
-# Linux Keyring
-
-Store and Retrieve Secrets from the Linux Keyring
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FenXG3KtnCHKwizsBriY2%252Fkeeper%2520and%2520Linux%2520Keyring.jpg%3Falt%3Dmedia%26token%3D0ffa15d9-bd01-4e1b-9d7e-2374a6265670&width=768&dpr=4&quality=100&sign=72d9d879&sv=2)
+Was this helpful?
 
 ##
 
@@ -467,39 +476,19 @@ Overview
 Keyring is a Linux security feature that stores sensitive information, such as
 passwords and secrets, and allows applications to securely access it.
 
-Keeper provides a utility, the Linux Keyring Utility, that interacts with the
-native Linux APIs to store and retrieve secrets from the Keyring using the
-[Secret Service
-API](https://www.gnu.org/software/emacs/manual/html_node/auth/Secret-Service-
-API.html). This utility can be used by any integration, plugin, or code base
-to store and retrieve credentials, secrets, and passwords in any Linux Keyring
-simply and natively.
-
 The code base for the Linux Keyring Utility can be found here:
 
 The binary needed to use the above utility can be found here:
 
 To use the Linux Keyring Utility, you can either
 
-  * deploy the pre-built binary from the [releases page](https://github.com/Keeper-Security/linux-keyring-utility/releases)
-
-  * or import it into your code base. 
+  *   * or import it into your code base. 
 
 Both use cases are covered below.
 
 ##
 
 Linux Keyring Utility
-
-The Linux Keyring Utility gets and sets _secrets_ in a Linux
-[Keyring](http://man7.org/linux/man-pages/man7/keyrings.7.html) using the
-[D-Bus](https://dbus.freedesktop.org/doc/dbus-tutorial.html) [Secret
-Service](https://specifications.freedesktop.org/secret-service/latest/).
-
-It has been tested with [GNOME
-Keyring](https://wiki.gnome.org/Projects/GnomeKeyring/) and [KDE Wallet
-Manager](https://userbase.kde.org/KDE_Wallet_Manager). It _should_ work with
-any implementation of the D-Bus Secrets Service.
 
 ###
 
@@ -521,29 +510,6 @@ first two accept and return `string` data.
 
 Example (get)
 
-Copy
-
-    
-    
-    package main
-    
-    import (
-        "os"
-        sc "github.com/Keeper-Security/linux-keyring-utility/pkg/secret_collection"
-    )
-    
-    func doit() {
-        if collection, err := sc.DefaultCollection(); err == nil {
-            if err := collection.Unlock(); err == nil {
-                if secret, err := collection.Get("myapp", "mysecret"); err == nil {
-                    print(string(secret))
-                    os.Exit(0)
-                }
-            }
-        }
-        os.Exit(1)
-    }
-
 The `.DefaultCollection()` returns whatever collection the _default_ _alias_
 refers to. It will generate an error if the _default_ alias is not set. It
 usually points to the _login_ keyring. Most Linux Keyring interfaces allow the
@@ -557,14 +523,6 @@ Example (set)
 
 Set takes the data as a parameter and only returns an error or `nil` on
 success. It does not restrict the content or length of the secret data.
-
-Copy
-
-    
-    
-    if err := collection.Set("myapp", "mysecret", "mysecretdata"); err == nil {
-        // success
-    }
 
 ##
 
@@ -603,6 +561,86 @@ will generate an error.
 
 Examples
 
+##
+
+Errors
+
+Error output goes to `stderr` so adding `2>/dev/null` to the end of a command
+will suppress it.
+
+###
+
+**No keyring**
+
+The login collection does not exist because the keyring does not exist. KDE
+may create _kdewallet_ instead of _login_ like GNOME.
+
+###
+
+**No matching secret**
+
+###
+
+**No D-Bus Session**
+
+There may not be a D-Bus Session to host the Secret Service. This happens when
+the user is not logged into the GUI.
+
+###
+
+**No D-Bus**
+
+The system may not host D-Bus. Several lightweight linux distributions ship
+without it by default.
+
+Keeper provides a utility, the Linux Keyring Utility, that interacts with the
+native Linux APIs to store and retrieve secrets from the Keyring using the .
+This utility can be used by any integration, plugin, or code base to store and
+retrieve credentials, secrets, and passwords in any Linux Keyring simply and
+natively.
+
+deploy the pre-built binary from the
+
+The Linux Keyring Utility gets and sets _secrets_ in a Linux  using the  .
+
+It has been tested with  and . It _should_ work with any implementation of the
+D-Bus Secrets Service.
+
+A secret may not be returned even though a secret with the same label exists.
+If the secret was not created with lkru, it may not have the same . Namely
+'Agent', 'Application', and 'Id'.
+
+Copy
+
+    
+    
+    package main
+    
+    import (
+        "os"
+        sc "github.com/Keeper-Security/linux-keyring-utility/pkg/secret_collection"
+    )
+    
+    func doit() {
+        if collection, err := sc.DefaultCollection(); err == nil {
+            if err := collection.Unlock(); err == nil {
+                if secret, err := collection.Get("myapp", "mysecret"); err == nil {
+                    print(string(secret))
+                    os.Exit(0)
+                }
+            }
+        }
+        os.Exit(1)
+    }
+
+Copy
+
+    
+    
+    if err := collection.Set("myapp", "mysecret", "mysecretdata"); err == nil {
+        // success
+    }
+
 Copy
 
     
@@ -627,36 +665,11 @@ Copy
     lkru get root_cred3
     ewogICJ1c2VybmFtZSI6ICJhZGFtIiwKICAicGFzc3dvcmQiOiAicGFzc3dvcmQxMjMuIgp9
 
-##
-
-Errors
-
-Error output goes to `stderr` so adding `2>/dev/null` to the end of a command
-will suppress it.
-
-###
-
-**No keyring**
-
-The login collection does not exist because the keyring does not exist. KDE
-may create _kdewallet_ instead of _login_ like GNOME.
-
 Copy
 
     
     
     Unable to get secret 'test_cred': Unable to retrieve secret 'test_cred' for application 'lkru' from collection '/org/freedesktop/secrets/collection/login': Object does not exist at path “/org/freedesktop/secrets/collection/login”
-
-###
-
-**No matching secret**
-
-A secret may not be returned even though a secret with the same label exists.
-If the secret was not created with lkru, it may not have the same
-[attributes](https://github.com/Keeper-Security/linux-keyring-
-utility/blob/main/Keeper-Security/linux-keyring-
-utility/blob/main/pkg/dbus_secrets/dbus_secrets.go#L41). Namely 'Agent',
-'Application', and 'Id'.
 
 Copy
 
@@ -664,25 +677,11 @@ Copy
     
     Unable to get secret 'test_cred': Unable to retrieve secret 'test_cred' for application 'lkru' from collection '/org/freedesktop/secrets/aliases/default': org.freedesktop.Secret.Collection.SearchItems returned nothing
 
-###
-
-**No D-Bus Session**
-
-There may not be a D-Bus Session to host the Secret Service. This happens when
-the user is not logged into the GUI.
-
 Copy
 
     
     
     Unable to get the default keyring: Unable to open a D-Bus session: The name org.freedesktop.secrets was not provided by any .service files
-
-###
-
-**No D-Bus**
-
-The system may not host D-Bus. Several lightweight linux distributions ship
-without it by default.
 
 Copy
 
@@ -690,49 +689,62 @@ Copy
     
     Unable to get the default keyring: Unable to connect to the D-Bus Session Bus: exec: "dbus-launch": executable file not found in $PATH
 
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Linux Keyring
+
+Store and Retrieve Secrets from the Linux Keyring
+
 [PreviousKubernetes (alternative)](/en/keeperpam/secrets-
 manager/integrations/kubernetes)[NextOctopus Deploy](/en/keeperpam/secrets-
 manager/integrations/octopus-deploy)
 
-Last updated 5 months ago
+  * Overview
+  * Linux Keyring Utility
+  * Interface
+  * Usage - Importing it into your codebase
+  * Example (get)
+  * Example (set)
+  * Usage - Binary Interface (CLI)
+  * Base64 encoding
+  * Errors
+  * No keyring
+  * No matching secret
+  * No D-Bus Session
+  * No D-Bus
 
-Was this helpful?
+[Secret Service
+API](https://www.gnu.org/software/emacs/manual/html_node/auth/Secret-Service-
+API.html)
 
-#### Company
+[releases page](https://github.com/Keeper-Security/linux-keyring-
+utility/releases)
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+[Keyring](http://man7.org/linux/man-pages/man7/keyrings.7.html)
 
-#### Support
+[D-Bus](https://dbus.freedesktop.org/doc/dbus-tutorial.html)
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+[Secret Service](https://specifications.freedesktop.org/secret-
+service/latest/)
 
-#### Solutions
+[GNOME Keyring](https://wiki.gnome.org/Projects/GnomeKeyring/)
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+[KDE Wallet Manager](https://userbase.kde.org/KDE_Wallet_Manager)
 
-#### Pricing
+[attributes](https://github.com/Keeper-Security/linux-keyring-
+utility/blob/main/Keeper-Security/linux-keyring-
+utility/blob/main/pkg/dbus_secrets/dbus_secrets.go#L41)
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+[![Logo](https://github.com/fluidicon.png)GitHub - Keeper-Security/linux-
+keyring-utility: A utility for natively interacting with the Linux
+KeyringGitHub](https://github.com/Keeper-Security/linux-keyring-utility)
 
 [![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/linux-
 keyring-utilityGitHub](https://github.com/Keeper-Security/linux-keyring-
 utility/releases)
 
-[![Logo](https://github.com/fluidicon.png)GitHub - Keeper-Security/linux-
-keyring-utility: A utility for natively interacting with the Linux
-KeyringGitHub](https://github.com/Keeper-Security/linux-keyring-utility)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FenXG3KtnCHKwizsBriY2%252Fkeeper%2520and%2520Linux%2520Keyring.jpg%3Falt%3Dmedia%26token%3D0ffa15d9-bd01-4e1b-9d7e-2374a6265670&width=768&dpr=4&quality=100&sign=72d9d879&sv=2)
 

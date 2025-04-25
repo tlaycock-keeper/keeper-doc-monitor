@@ -498,7 +498,7 @@ Copy
 and-export-commands/myki-import)[NextCSV Import](/en/keeperpam/commander-
 cli/command-reference/import-and-export-commands/csv-import)
 
-Last updated 4 months ago
+Last updated 5 months ago
 
 Was this helpful?
 

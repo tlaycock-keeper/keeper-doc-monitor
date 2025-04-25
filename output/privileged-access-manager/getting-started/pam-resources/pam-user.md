@@ -565,10 +565,6 @@ Notes
 
 Login
 
-Username; exact context and format depends on the associated resource. See
-[Note (1)](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user#note-1) below.
-
 **Required** Examples:****`username` `username@domain` `DOMAIN\username`
 
 Password
@@ -618,6 +614,12 @@ When connecting to Windows machines that are domain-joined:
 ###
 
 Configure rotation settings
+
+Username; exact context and format depends on the associated resource. See
+below.
+
+[Note (1)](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user#note-1)
 
 On the "Rotation Settings" section of the PAM User vault record, you can
 configure how credential rotation is managed.

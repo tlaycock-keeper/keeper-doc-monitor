@@ -690,11 +690,6 @@ Copy
         "server": "keepersecurity.com"
     }
 
-The configuration file can be modified to include auto-execution of commands
-or other features. See the [configuration
-documentation](/en/keeperpam/commander-cli/commander-installation-
-setup/configuration#commander-configuration-file) for more details.
-
 You can create any number of persistent login sessions. However, the
 persistent session option is not intended for dynamic multi-server
 environments. If you share the exact configuration file on multiple servers,
@@ -791,11 +786,6 @@ Copy
 
 Combining Batch Mode and Persistent Login
 
-By setting up a persistent login configuration (as described in the [previous
-section](/en/keeperpam/commander-cli/commander-installation-
-setup/configuration#persistent-login-sessions)), you can execute a series of
-batch commands without any prompt for login. For example:
-
 Copy
 
     
@@ -883,4 +873,16 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+The configuration file can be modified to include auto-execution of commands
+or other features. See the  for more details.
+
+By setting up a persistent login configuration (as described in the ), you can
+execute a series of batch commands without any prompt for login. For example:
+
+[configuration documentation](/en/keeperpam/commander-cli/commander-
+installation-setup/configuration#commander-configuration-file)
+
+[previous section](/en/keeperpam/commander-cli/commander-installation-
+setup/configuration#persistent-login-sessions)
 

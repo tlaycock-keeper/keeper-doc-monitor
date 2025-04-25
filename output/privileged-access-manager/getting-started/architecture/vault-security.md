@@ -443,6 +443,26 @@ PDF](/en/keeperpam/~gitbook/pdf?page=mWAIZaLPKEjJeZYuNSby&only=yes&limit=100)
 
 Security and encryption model of the Keeper Vault
 
+Keeper's platform is built with End-to-End Encryption (E2EE) across all
+devices and endpoints.
+
+  * Data stored in the platform is encrypted locally and encrypted in transit between the user's devices
+
+  * Information exchanged between Keeper users is encrypted from vault-to-vault
+
+  * Data at rest is encrypted with multiple layers, starting with AES-256 encryption at the record level
+
+  * Data in transit is encrypted with TLS and additional layers of transmission encryption which protects against access MITM, service providers and untrusted networks.
+
+A full and detailed disclosure of all encryption related to data at rest, data
+in transit, cloud architecture and certifications can be found on the [Keeper
+Enterprise Encryption Model page](https://docs.keeper.io/en/enterprise-
+guide/keeper-encryption-model).
+
+A video covering this model is below.
+
+Vault Encryption & Security Model
+
 [PreviousArchitecture Diagram](/en/keeperpam/privileged-access-
 manager/getting-started/architecture/system-architecture)[NextRouter
 Security](/en/keeperpam/privileged-access-manager/getting-
@@ -481,25 +501,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-Keeper's platform is built with End-to-End Encryption (E2EE) across all
-devices and endpoints.
-
-  * Data stored in the platform is encrypted locally and encrypted in transit between the user's devices
-
-  * Information exchanged between Keeper users is encrypted from vault-to-vault
-
-  * Data at rest is encrypted with multiple layers, starting with AES-256 encryption at the record level
-
-  * Data in transit is encrypted with TLS and additional layers of transmission encryption which protects against access MITM, service providers and untrusted networks.
-
-A full and detailed disclosure of all encryption related to data at rest, data
-in transit, cloud architecture and certifications can be found on the .
-
-A video covering this model is below.
-
-[Keeper Enterprise Encryption Model
-page](https://docs.keeper.io/en/enterprise-guide/keeper-encryption-model)
-
-Vault Encryption & Security Model
 

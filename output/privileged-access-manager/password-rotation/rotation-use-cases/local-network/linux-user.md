@@ -507,9 +507,7 @@ Overview
 In this guide, you'll learn how to rotate Linux user accounts within your
 local network using Keeper Rotation, including both password-based and SSH
 Key-based credentials. For a high-level overview on the rotation process in
-the local network, visit this [page](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network#rotation-on-the-
-local-network).
+the local network, visit this .
 
 ##
 
@@ -652,6 +650,9 @@ Select the **PAM User** record(s) from Step 3, edit the record and open the
 
 Any user with `edit` rights to a **PAM User** record has the ability to setup
 rotation for that record.
+
+[page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/local-network#rotation-on-the-local-network)
 
 ##
 

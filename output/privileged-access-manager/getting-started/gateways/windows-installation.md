@@ -809,8 +809,6 @@ Checksum Verification
 Keeper Gateway SHA256 hashes for the latest version are published at the below
 location:
 
-<https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
-
 Calculating and verifying the checksum:
 
 ####
@@ -834,6 +832,8 @@ Copy
     
     Get-FileHash -Algorithm SHA256 keeper-gateway_windows_x86_64.exe | Format-List
     Get-Content keeper-gateway_X.X.X_SHA256SUMS | Select-String keeper-gateway_windows_x86_64.exe
+
+<https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
 
 Keeper Gateway for Windows
 

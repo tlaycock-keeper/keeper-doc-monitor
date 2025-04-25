@@ -575,6 +575,10 @@ Copy
     this-device register
     this-device persistent-login on
 
+ _For more information on persistent login and options, see the_[
+_documentation page_](/en/keeperpam/commander-cli/commander-installation-
+setup/logging-in#persistent-login) _._
+
 ####
 
 Getting Started
@@ -805,9 +809,7 @@ Was this helpful?
 
 _Find more information in the_
 
- _For more information on persistent login and options, see the_ _._
-
-_See more information about this command in the_
+ _See more information about this command in the_
 
 To use the `create-user` command with a list of email addresses from a file,
 follow the  for the `enterprise-user` command and swap out that command with
@@ -816,9 +818,6 @@ follow the  for the `enterprise-user` command and swap out that command with
 [steps above](/en/keeperpam/commander-cli/command-reference/enterprise-
 management-commands/creating-and-inviting-users#example-invite-users-from-
 email-addresses-in-a-file)
-
-[_documentation page_](/en/keeperpam/commander-cli/commander-installation-
-setup/logging-in#persistent-login)
 
 [_command documentation._](/en/keeperpam/commander-cli/command-
 reference/enterprise-management-commands#enterprise-user-command)

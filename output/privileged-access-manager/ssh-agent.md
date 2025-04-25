@@ -454,7 +454,7 @@ SSH agent
 manager/session-recording-and-playback)[NextIntegration with
 Git](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-git)
 
-Last updated 2 days ago
+Last updated 3 days ago
 
 Was this helpful?
 
@@ -628,7 +628,11 @@ login.
 To enable SSH agent on specific keys, select those keys from the provided
 drop-down.
 
-  * 
+In order to work with the local operating system (Linux, macOS and Windows),
+follow the [guide below](/en/keeperpam/privileged-access-manager/ssh-
+agent#environment-setup) to enable SSH Agent for your operating system.
+
+  * See [Environment Setup](/en/keeperpam/privileged-access-manager/ssh-agent#environment-setup)
 
 ##
 
@@ -812,11 +816,6 @@ basis.
 
   * See the [Password Rotation](/en/keeperpam/secrets-manager/password-rotation) section and the [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user) SSH Key use case
 
-In order to work with the local operating system (Linux, macOS and Windows),
-follow the  to enable SSH Agent for your operating system.
-
-See
-
 The Keeper SSH Agent allows you to seamlessly authenticate into services like
 GitHub and securely sign Git commits. To help you get started, we've created a
 step-by-step guide on setting up  and  using Keeper.
@@ -826,12 +825,6 @@ agent/integration-with-git#github-authentication)
 
 [signing Git commits](/en/keeperpam/privileged-access-manager/ssh-
 agent/integration-with-git#signing-commits)
-
-[guide below](/en/keeperpam/privileged-access-manager/ssh-agent#environment-
-setup)
-
-[Environment Setup](/en/keeperpam/privileged-access-manager/ssh-
-agent#environment-setup)
 
 Custom Field Example
 

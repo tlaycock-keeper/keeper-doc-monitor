@@ -428,36 +428,6 @@ manager/integrations/windows-credential-manager?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Usage - Executable
-  * Downloading the Executable
-  * Using the Executable
-  * set
-  * get
-  * Example
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=4uAYMim9oyLDLik5qeu2&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Windows Credential Manager
-
-Store and Retrieve Secrets from the Windows Credential Manager
-
-[PreviousTerraform Plugin](/en/keeperpam/secrets-
-manager/integrations/terraform)[NextXSOAR](/en/keeperpam/secrets-
-manager/integrations/xsoar)
-
-Last updated 1 month ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -488,6 +458,36 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Overview
+  * Usage - Executable
+  * Downloading the Executable
+  * Using the Executable
+  * set
+  * get
+  * Example
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=4uAYMim9oyLDLik5qeu2&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Windows Credential Manager
+
+Store and Retrieve Secrets from the Windows Credential Manager
+
+[PreviousTerraform Plugin](/en/keeperpam/secrets-
+manager/integrations/terraform)[NextXSOAR](/en/keeperpam/secrets-
+manager/integrations/xsoar)
+
+Last updated 1 month ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -508,9 +508,7 @@ The binary needed to use the above utility can be found here:
 
 To use the Windows Credential Utility, you can either
 
-  * deploy the pre-built binary from the [releases page](https://github.com/Keeper-Security/windows-credential-utility/releases)
-
-  * or import it into your code base. 
+  *   * or import it into your code base. 
 
 Both use cases are covered below.
 
@@ -521,10 +519,6 @@ Usage - Executable
 ###
 
 Downloading the Executable
-
-Download the latest version executable from the [releases
-page](https://github.com/Keeper-Security/windows-credential-utility/releases)
-and optionally add it to PATH to get started.
 
 ###
 
@@ -581,6 +575,17 @@ Copy
     
     # Retrieve a secret
     wcu get APPNAME
+
+deploy the pre-built binary from the
+
+Download the latest version executable from the  and optionally add it to PATH
+to get started.
+
+[releases page](https://github.com/Keeper-Security/windows-credential-
+utility/releases)
+
+[releases page](https://github.com/Keeper-Security/windows-credential-
+utility/releases)
 
 [![Logo](https://github.com/fluidicon.png)GitHub - Keeper-Security/windows-
 credential-utility: A utility for natively interacting with Windows Credential

@@ -428,36 +428,6 @@ manager/password-rotation/rotation-overview?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Prerequisites
@@ -494,6 +464,36 @@ Last updated 2 months ago
 
 Was this helpful?
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ##
 
 Prerequisites
@@ -502,11 +502,25 @@ An active license is required in order to use the features available with
 KeeperPAM. This license is available for both business and enterprise
 customers.
 
-  *   *   * 
+  * [KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-management/)
+
+  * [Request a Demo](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+
+  * [Contact Support](https://www.keepersecurity.com/support.html)
 
 Prior to setting up password rotation, make sure to have the following set up:
 
-  *   *   *   *   *   * 
+  * Learn about KeeperPAM in the [Getting Started](/en/keeperpam/privileged-access-manager/getting-started) section
+
+  * [Enable Enforcement Policies](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enable-enforcement-policies)
+
+  * [Deploy a Keeper Gateway](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#deploy-a-keeper-gateway)
+
+  * [Create a PAM User record](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#create-a-pam-user-record)
+
+  * [Create a PAM Resource](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#create-a-pam-resource)
+
+  * [Configure rotation settings](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#configure-rotation-settings)
 
 ###
 
@@ -526,23 +540,58 @@ Definition
 
 Can create applications and manage secrets
 
+Copy
+
+    
+    
+    ALLOW_SECRETS_MANAGER
+
 Allow users to create a Secrets Manager Application
 
 Can create, deploy and manage Keeper Gateways
+
+Copy
+
+    
+    
+    ALLOW_PAM_GATEWAY
 
 Allow users to deploy and manage a Keeper Gateway
 
 Can configure rotation settings
 
+Copy
+
+    
+    
+    ALLOW_PAM_ROTATION
+
 Allow users to set up rotation on a PAM User record
 
 Can configure rotation settings (legacy setting)
+
+Copy
+
+    
+    
+    ALLOW_CONFIGURE_ROTATION_SETTINGS
 
 This should be set the same as ALLOW_PAM_ROTATION
 
 Can rotate credentials
 
+Copy
+
+    
+    
+    ALLOW_ROTATE_CREDENTIALS
+
 All users to perform a password rotation action
+
+Rotation can also be enabled on the [Keeper Commander
+CLI](https://docs.keeper.io/en/privileged-access-manager/commander-
+cli/command-reference/secrets-manager-commands#overview) using the
+`enterprise-role` command:
 
 Copy
 
@@ -558,7 +607,13 @@ Copy
 
 Deploy a Keeper Gateway
 
-  * 
+If you haven't yet created a Keeper Gateway yet, a new Gateway deployment can
+be created by clicking on **Create New** > **Gateway** from the Web Vault or
+Desktop App (version 17.1 or newer). We have also posted a page describing how
+to create a sandbox environment in [just a few
+steps](/en/keeperpam/privileged-access-manager/quick-start-sandbox):
+
+  * [Quick Start: Sandbox](https://docs.keeper.io/en/privileged-access-manager/privileged-access-manager/quick-start-sandbox)
 
 ###
 
@@ -574,6 +629,13 @@ Gateway.
 
 Create a PAM User record
 
+A PAM user record holds a privileged account credential, password or private
+key. For steps on creating a PAM User, [follow this
+page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user). The example below shows a PAM User record for an admin
+password on a Windows server. The PAM User record is added to a Shared Folder
+containing user accounts.
+
 ###
 
 Create a PAM Resource
@@ -583,247 +645,6 @@ A PAM Resource represents a Machine, Database or Directory.
 ###
 
 Configure rotation settings
-
-##
-
-Record Types for Rotation
-
-When you have activated Keeper Secrets Manager or KeeperPAM, the following new
-record types will be available to users:
-
-  * **PAM User** Contains a login / password, private key, or both.
-
-  * **PAM Directory** Information about your on-prem or cloud-based directory
-
-  * **PAM Database** Self-hosted or managed cloud-based databases such as MySQL, SQL Server, etc.
-
-  * **PAM Machine** Windows, Linux, macOS machines on-prem or in the cloud
-
-  * **PAM Remote Browser** Remote browser isolation to protect web-based applications
-
-All 5 record types can be added in the Vault, placed in folders, and shared
-like any other Keeper records.
-
-  * 
-
-##
-
-PAM Configurations
-
-When rotation is activated, within the Secrets Manager screen of the vault
-you'll see a section called **PAM Configurations**. A PAM Configuration is an
-object which is contains the following:
-
-  * **Environment** Local Network, AWS or Azure
-
-  * **Keeper Gateway** Service which you install into your on-prem or cloud infrastructure
-
-  * **Application Folder** Shared Folder which contains the Secrets Manager application and associated records
-
-  * **Administrative Credentials** Keeper record which contains privileged credentials for performing rotation and discovery.
-
-Customers may have any number of PAM Configurations, Applications and
-Gateways.
-
-  * 
-
-##
-
-How to Rotate a Password
-
-The basic steps to rotation of passwords in any target environment are:
-
-  * Add PAM User records to the Shared Folder
-
-  * Add PAM Resource (Machine, Database, Directory) records to a Shared Folder
-
-  * Configure rotation settings on each PAM User record
-
-  * Create a Secrets Manager application
-
-  * Assign the Secrets Manager application to the Shared Folders
-
-  * Set the shared folder permissions containing the PAM Users from Read Only to Can Edit
-
-  *   *   * 
-
-##
-
-Rotation on Keeper Commander
-
-  *   * 
-
-Example:
-
-Copy
-
-    
-    
-    My Vault> pam action rotate -r 5NaygwI4LK1BDZmH3Ib
-    Scheduled action id: MfKbPR3ac6A/oBDZpctpOg==
-    
-    My Vault> pam action job-info MfKbPR3ac6A/oBDZpctpOg== -g QPkRsR8KQm6_4vnHTcofZA
-    Job id to check [MfKbPR3ac6A/oBDZpctpOg==]
-    Execution Details
-    -------------------------
-    	Status              : finished
-    	Duration            : 0:00:17.525641
-    	Response Message    : Rotation completed for record uid 5NaygwI4LK1BDZmH3Ib
-    My Vault>
-
-##
-
-Services and Scheduled Tasks
-
-##
-
-Record Import
-
-Learn about KeeperPAM in the  section
-
-Rotation can also be enabled on the  using the `enterprise-role` command:
-
-If you haven't yet created a Keeper Gateway yet, a new Gateway deployment can
-be created by clicking on **Create New** > **Gateway** from the Web Vault or
-Desktop App (version 17.1 or newer). We have also posted a page describing how
-to create a sandbox environment in :
-
-A PAM user record holds a privileged account credential, password or private
-key. For steps on creating a PAM User, . The example below shows a PAM User
-record for an admin password on a Windows server. The PAM User record is added
-to a Shared Folder containing user accounts.
-
-The rotation of credentials is restricted to the  record type.
-
-In previous versions of Keeper, rotation was permitted on PAM Machine, PAM
-Database and PAM Directory records. In the latest version of KeeperPAM, you
-will be prompted to separate the PAM Resources from the PAM User. See the
-documentation for more info.
-
-See
-
-More information on: ,  and
-
-Add a  to the Secrets Manager application
-
-Create a  which ties everything together
-
-Assign rotation settings to the  records
-
-For automation of Rotation capabilities,  supports KeeperPAM rotation using
-the following commands:
-
-Keeper Rotation can also update the "log on" credentials for Windows service
-accounts and scheduled tasks. See the  documentation.
-
-Keeper supports importing in bulk from JSON format. See the  section for more
-details.
-
-Copy
-
-    
-    
-    ALLOW_SECRETS_MANAGER
-
-Copy
-
-    
-    
-    ALLOW_PAM_GATEWAY
-
-Copy
-
-    
-    
-    ALLOW_PAM_ROTATION
-
-Copy
-
-    
-    
-    ALLOW_CONFIGURE_ROTATION_SETTINGS
-
-Copy
-
-    
-    
-    ALLOW_ROTATE_CREDENTIALS
-
-[KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-
-management/)
-
-[Request a Demo](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-
-[Contact Support](https://www.keepersecurity.com/support.html)
-
-[Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-
-[Keeper Commander CLI](https://docs.keeper.io/en/privileged-access-
-manager/commander-cli/command-reference/secrets-manager-commands#overview)
-
-[just a few steps](/en/keeperpam/privileged-access-manager/quick-start-
-sandbox)
-
-[Quick Start: Sandbox](https://docs.keeper.io/en/privileged-access-
-manager/privileged-access-manager/quick-start-sandbox)
-
-[follow this page](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-user)
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
-[Record Linking](/en/keeperpam/privileged-access-manager/getting-
-started/record-linking)
-
-[PAM Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources)
-
-[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
-
-[Applications](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
-
-[Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)
-
-[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
-[Keeper Commander](/en/keeperpam/commander-cli/overview)
-
-[`pam action rotate`](/en/keeperpam/commander-cli/command-reference/keeperpam-
-commands)
-
-[`pam action job-info`](/en/keeperpam/commander-cli/command-
-reference/keeperpam-commands)
-
-[Service Management](/en/keeperpam/privileged-access-manager/password-
-rotation/service-management)
-
-[Importing PAM Records](/en/keeperpam/privileged-access-
-manager/references/importing-pam-records)
-
-[Enable Enforcement Policies](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-overview#enable-enforcement-policies)
-
-[Deploy a Keeper Gateway](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-overview#deploy-a-keeper-gateway)
-
-[Create a PAM User record](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-overview#create-a-pam-user-record)
-
-[Create a PAM Resource](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-overview#create-a-pam-resource)
-
-[Configure rotation settings](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-overview#configure-rotation-settings)
 
 On the "Rotation Settings" section of the PAM User vault record, you can
 configure how credential rotation is managed.
@@ -927,6 +748,130 @@ Below are some examples of PAM User records.
   * Database user
 
   * Azure AD User
+
+##
+
+Record Types for Rotation
+
+The rotation of credentials is restricted to the [PAM
+User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user) record type.
+
+In previous versions of Keeper, rotation was permitted on PAM Machine, PAM
+Database and PAM Directory records. In the latest version of KeeperPAM, you
+will be prompted to separate the PAM Resources from the PAM User. See the
+[Record Linking](/en/keeperpam/privileged-access-manager/getting-
+started/record-linking) documentation for more info.
+
+When you have activated Keeper Secrets Manager or KeeperPAM, the following new
+record types will be available to users:
+
+  * **PAM User** Contains a login / password, private key, or both.
+
+  * **PAM Directory** Information about your on-prem or cloud-based directory
+
+  * **PAM Database** Self-hosted or managed cloud-based databases such as MySQL, SQL Server, etc.
+
+  * **PAM Machine** Windows, Linux, macOS machines on-prem or in the cloud
+
+  * **PAM Remote Browser** Remote browser isolation to protect web-based applications
+
+All 5 record types can be added in the Vault, placed in folders, and shared
+like any other Keeper records.
+
+  * See [PAM Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-resources)
+
+##
+
+PAM Configurations
+
+When rotation is activated, within the Secrets Manager screen of the vault
+you'll see a section called **PAM Configurations**. A PAM Configuration is an
+object which is contains the following:
+
+  * **Environment** Local Network, AWS or Azure
+
+  * **Keeper Gateway** Service which you install into your on-prem or cloud infrastructure
+
+  * **Application Folder** Shared Folder which contains the Secrets Manager application and associated records
+
+  * **Administrative Credentials** Keeper record which contains privileged credentials for performing rotation and discovery.
+
+Customers may have any number of PAM Configurations, Applications and
+Gateways.
+
+  * More information on: [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration), [Applications](/en/keeperpam/privileged-access-manager/getting-started/applications) and [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+##
+
+How to Rotate a Password
+
+The basic steps to rotation of passwords in any target environment are:
+
+  * Add PAM User records to the Shared Folder
+
+  * Add PAM Resource (Machine, Database, Directory) records to a Shared Folder
+
+  * Configure rotation settings on each PAM User record
+
+  * Create a Secrets Manager application
+
+  * Assign the Secrets Manager application to the Shared Folders
+
+  * Set the shared folder permissions containing the PAM Users from Read Only to Can Edit
+
+  * Add a [Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) to the Secrets Manager application
+
+  * Create a [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration) which ties everything together
+
+  * Assign rotation settings to the [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user) records
+
+##
+
+Rotation on Keeper Commander
+
+For automation of Rotation capabilities, [Keeper
+Commander](/en/keeperpam/commander-cli/overview) supports KeeperPAM rotation
+using the following commands:
+
+  * [`pam action rotate`](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
+
+  * [`pam action job-info`](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
+
+Example:
+
+Copy
+
+    
+    
+    My Vault> pam action rotate -r 5NaygwI4LK1BDZmH3Ib
+    Scheduled action id: MfKbPR3ac6A/oBDZpctpOg==
+    
+    My Vault> pam action job-info MfKbPR3ac6A/oBDZpctpOg== -g QPkRsR8KQm6_4vnHTcofZA
+    Job id to check [MfKbPR3ac6A/oBDZpctpOg==]
+    Execution Details
+    -------------------------
+    	Status              : finished
+    	Duration            : 0:00:17.525641
+    	Response Message    : Rotation completed for record uid 5NaygwI4LK1BDZmH3Ib
+    My Vault>
+
+##
+
+Services and Scheduled Tasks
+
+Keeper Rotation can also update the "log on" credentials for Windows service
+accounts and scheduled tasks. See the [Service
+Management](/en/keeperpam/privileged-access-manager/password-rotation/service-
+management) documentation.
+
+##
+
+Record Import
+
+Keeper supports importing in bulk from JSON format. See the [Importing PAM
+Records](/en/keeperpam/privileged-access-manager/references/importing-pam-
+records) section for more details.
 
 For advanced scheduling, see the .
 
