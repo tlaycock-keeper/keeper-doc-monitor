@@ -564,7 +564,7 @@ Admin Console Preview
 [PreviousCron Spec](/en/keeperpam/privileged-access-manager/references/cron-
 spec)[NextOverview](/en/keeperpam/endpoint-privilege-manager/overview)
 
-Last updated 27 days ago
+Last updated 28 days ago
 
 Was this helpful?
 

@@ -600,7 +600,8 @@ Was this helpful?
 © 2025 Keeper Security, Inc.
 
 For this protocol, graphical data, including timing information, is recorded.
-For more details on the recordings and how to access them, see the  docs.
+For more details on the recordings and how to access them, see the Session
+Recording & Playback docs.
 
 Field
 
@@ -616,11 +617,7 @@ Administrative Credential Record
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
 
-[Session Recording & Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
+PAM User
 
 RBI Session Recordings
 

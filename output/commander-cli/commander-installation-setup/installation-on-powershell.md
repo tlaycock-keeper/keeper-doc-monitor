@@ -1105,7 +1105,7 @@ Copy
 installation-setup/net-developer-sdk)[NextLogging in](/en/keeperpam/commander-
 cli/commander-installation-setup/logging-in)
 
-Last updated 9 days ago
+Last updated 10 days ago
 
 Was this helpful?
 

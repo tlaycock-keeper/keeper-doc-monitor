@@ -552,7 +552,7 @@ manager/references/setting-up-ssh)[NextSetting up SQL
 Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-
 server)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

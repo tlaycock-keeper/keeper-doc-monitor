@@ -642,6 +642,12 @@ following:
 
 Session Recordings - RDP Protocol
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9HnosSdfjm4CmdFzsv8T%252FScreenshot%25202025-01-21%2520at%252012.18.55%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D21d7ad18-e6bc-48c5-9a8e-9ac8b10b9fea&width=768&dpr=4&quality=100&sign=9535f205&sv=2)
+
+RDP Session Recordings
+
 [PreviousSSH Connections](/en/keeperpam/privileged-access-
 manager/connections/session-protocols/ssh-connections)[NextRBI
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
@@ -691,7 +697,8 @@ started/pam-resources/pam-machine)
 resources/pam-user)
 
 For this protocol, graphical data, including timing information, is recorded.
-For more details on the recordings and how to access them, see the  docs.
+For more details on the recordings and how to access them, see the Session
+Recording & Playback docs.
 
 Field
 
@@ -707,15 +714,5 @@ Administrative Credential Record
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
 
-[Session Recording & Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
-RDP Session Recordings
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9HnosSdfjm4CmdFzsv8T%252FScreenshot%25202025-01-21%2520at%252012.18.55%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D21d7ad18-e6bc-48c5-9a8e-9ac8b10b9fea&width=768&dpr=4&quality=100&sign=9535f205&sv=2)
+PAM User
 

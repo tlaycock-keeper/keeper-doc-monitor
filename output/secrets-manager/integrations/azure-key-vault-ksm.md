@@ -457,7 +457,7 @@ Protect Secrets Manager connection details with Azure Key Vault Keys
 manager/integrations/azure-key-vault)[NextBitbucket
 Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
 
-Last updated 10 days ago
+Last updated 11 days ago
 
 Was this helpful?
 
@@ -515,37 +515,17 @@ Prerequisites
 
 JavaJavaScriptPython.NetGoLang
 
-  * Support the Java/Kotlin [Secrets Manager SDK.](https://docs.keeper.io/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk)
+  *   *   * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
 
-  * Requires Azure packages: [`azure-identity`](https://mvnrepository.com/artifact/com.azure/azure-identity/1.15.0) and [`azure-keyvault-keys`](https://mvnrepository.com/artifact/com.azure/azure-security-keyvault-keys/4.9.2).
+  *   *   * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
 
-  * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
+  *   *   * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
 
-  * Supports the [JavaScript Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-sdk)
+  *   * Supports dotnet version `net9.0`
 
-  * Requires Azure packages [`@azure/identity`](https://www.npmjs.com/package/@azure/identity) , [`@azure/keyvault-keys`](https://www.npmjs.com/package/@azure/keyvault-keys)
+  *   * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
 
-  * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
-
-  * Supports the [Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk)
-
-  * Requires package [azure-identity](https://pypi.org/project/azure-identity/) [azure-keyvault-keys](https://pypi.org/project/azure-keyvault-keys/)
-
-  * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
-
-  * Supports the [.Net Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/.net-sdk)
-
-  * Supports dotnet version `net9.0`
-
-  * Requires Azure packages: [`Azure.Identity`](https://www.nuget.org/packages/Azure.Identity/1.14.0-beta.3) and [`Azure.Security.KeyVault.Keys`](https://www.nuget.org/packages/Azure.Security.KeyVault.Keys/4.8.0-beta.1)
-
-  * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
-
-  * Supports the [GoLang Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/golang-sdk)
-
-  * Requires Azure packages: [`azcore`](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/azcore) , [`azidentity`](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/azidentity) and [`azkeys`](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/security/keyvault/azkeys).
-
-  * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
+  *   *   * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
 
 ##
 
@@ -718,10 +698,6 @@ integration.
 
 For more information on Azure App Directory App registration and Permissions
 see the Azure documentation:
-
-<https://learn.microsoft.com/en-us/azure/key-
-vault/general/authentication>[](https://learn.microsoft.com/en-us/azure/key-
-vault/general/authentication)
 
 ###
 
@@ -1122,10 +1098,78 @@ Copy
     		}
     		.....
 
-You're ready to use the KSM integration 👍
+Support the Java/Kotlin
 
-Check out the [KSM SDKs documentation](/en/keeperpam/secrets-
-manager/developer-sdk-library) for more examples and functionality
+Requires Azure packages:  and .
+
+Supports the
+
+Requires Azure packages  ,
+
+Supports the
+
+Requires package
+
+Supports the
+
+Requires Azure packages:  and
+
+Supports the
+
+Requires Azure packages:  ,  and .
+
+You're ready to use the KSM integration
+
+Check out the  for more examples and functionality
+
+👍
+
+[Secrets Manager SDK.](https://docs.keeper.io/en/keeperpam/secrets-
+manager/developer-sdk-library/java-sdk)
+
+[`azure-identity`](https://mvnrepository.com/artifact/com.azure/azure-
+identity/1.15.0)
+
+[`azure-keyvault-keys`](https://mvnrepository.com/artifact/com.azure/azure-
+security-keyvault-keys/4.9.2)
+
+[JavaScript Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/javascript-sdk)
+
+[`@azure/identity`](https://www.npmjs.com/package/@azure/identity)
+
+[`@azure/keyvault-keys`](https://www.npmjs.com/package/@azure/keyvault-keys)
+
+[Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/python-sdk)
+
+[azure-identity](https://pypi.org/project/azure-identity/)
+
+[azure-keyvault-keys](https://pypi.org/project/azure-keyvault-keys/)
+
+[.Net Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/.net-sdk)
+
+[`Azure.Identity`](https://www.nuget.org/packages/Azure.Identity/1.14.0-beta.3)
+
+[`Azure.Security.KeyVault.Keys`](https://www.nuget.org/packages/Azure.Security.KeyVault.Keys/4.8.0-beta.1)
+
+[GoLang Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/golang-sdk)
+
+[`azcore`](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/azcore)
+
+[`azidentity`](https://pkg.go.dev/github.com/Azure/azure-sdk-for-
+go/sdk/azidentity)
+
+[`azkeys`](https://pkg.go.dev/github.com/Azure/azure-sdk-for-
+go/sdk/security/keyvault/azkeys)
+
+<https://learn.microsoft.com/en-us/azure/key-
+vault/general/authentication>[](https://learn.microsoft.com/en-us/azure/key-
+vault/general/authentication)
+
+[KSM SDKs documentation](/en/keeperpam/secrets-manager/developer-sdk-library)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

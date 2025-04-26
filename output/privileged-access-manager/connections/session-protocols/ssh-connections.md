@@ -462,7 +462,7 @@ manager/connections/session-protocols)[NextRDP
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/rdp-connections)
 
-Last updated 4 days ago
+Last updated 5 days ago
 
 Was this helpful?
 
@@ -689,33 +689,22 @@ SSH to Windows Servers
 The SSH protocol can also be used to access Windows servers for execution of
 PowerShell commands or other administrative actions.
 
-  * Learn more on how to [activate SSH on Windows](/en/keeperpam/privileged-access-manager/references/setting-up-ssh#windows)
+  * 
 
 ##
 
 Session Recordings - SSH Protocol
 
+Learn more on how to
+
+[activate SSH on Windows](/en/keeperpam/privileged-access-
+manager/references/setting-up-ssh#windows)
+
 For this protocol, both graphical and the full, raw text text content of
 terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this
-[page](/en/keeperpam/privileged-access-manager/session-recording-and-
-playback).
+information on recordings and how to access these recordings, visit this page.
 
-  * Learn more about [Session Recording and Playback](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
-
-Field
-
-Definition
-
-PAM Configuration
-
-This is the PAM Configuration that contains the details of your target
-infrastructure and provides access to the target configured on the PAM Record
-
-Administrative Credential Record
-
-This is the linked  that will be used to authenticate to the target and
-perform administrative operations on it.
+  * Learn more about Session Recording and Playback
 
 PAM Record
 
@@ -733,17 +722,25 @@ Record
 The PAM User record contains the user credentials that will be used to connect
 to the endpoint
 
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
+Field
 
-[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
+Definition
 
-[PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
+PAM Configuration
 
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
+This is the PAM Configuration that contains the details of your target
+infrastructure and provides access to the target configured on the PAM Record
+
+Administrative Credential Record
+
+This is the linked PAM User that will be used to authenticate to the target
+and perform administrative operations on it.
+
+PAM Configuration
+
+PAM Machine
+
+PAM User
 
 SSH Session Launching
 

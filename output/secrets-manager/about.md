@@ -475,7 +475,7 @@ record-types)
 [PreviousQuick Start Guide](/en/keeperpam/secrets-manager/quick-start-
 guide)[NextArchitecture](/en/keeperpam/secrets-manager/about/architecture)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

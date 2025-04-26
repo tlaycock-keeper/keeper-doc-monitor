@@ -459,7 +459,7 @@ Sync secrets from the Keeper Vault with AWS Secrets Manager
 manager/integrations/aws-cli-credential-process)[NextAWS KMS
 Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
 
-Last updated 10 days ago
+Last updated 11 days ago
 
 Was this helpful?
 
@@ -522,11 +522,7 @@ Prerequisites
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
-
-    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
-
-  * An AWS account with AWS Secrets Manager, and the ability to create IAM security credentials
+  *     *   * An AWS account with AWS Secrets Manager, and the ability to create IAM security credentials
 
 ##
 
@@ -702,6 +698,16 @@ Copy
     
     
     ksm sync --type aws --credentials [UID] -m [...] -m [...]
+
+A Keeper  with secrets shared to it
+
+See the  for instructions on creating an Application
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 AWS Credentials Record Type Definition
 

@@ -525,13 +525,6 @@ The PAM Machine resource supports the following features:
 
   * File transfer through drag-and-drop
 
-Connecting to the PAM machine requires only that the Keeper Gateway has access
-to the target machine. The Keeper Vault operates independently and does not
-require direct connectivity to the machine, leveraging Keeper's zero-trust
-network access model to securely manage access through the Gateway. See the
-[network architecture diagram](/en/keeperpam/privileged-access-
-manager/getting-started/architecture/system-architecture) for more details.
-
 ##
 
 Creating a PAM Machine
@@ -689,15 +682,28 @@ Examples
 
 Visit the following pages to set up:
 
-  * [Linux Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-machine/example-linux-machine)
+  *   * 
 
-  * [Azure Virtual Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-machine/example-azure-windows-vm)
+Connecting to the PAM machine requires only that the Keeper Gateway has access
+to the target machine. The Keeper Vault operates independently and does not
+require direct connectivity to the machine, leveraging Keeper's zero-trust
+network access model to securely manage access through the Gateway. See the
+for more details.
 
 **Required** Visit this  for more details
 
 **Required** Visit this  for more details
 
 See
+
+[network architecture diagram](/en/keeperpam/privileged-access-
+manager/getting-started/architecture/system-architecture)
+
+[Linux Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine/example-linux-machine)
+
+[Azure Virtual Machine](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-machine/example-azure-windows-vm)
 
 [session recording](/en/keeperpam/privileged-access-manager/session-recording-
 and-playback)

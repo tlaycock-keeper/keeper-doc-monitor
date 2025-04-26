@@ -455,43 +455,10 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MksKcXNM5-tkgxSqVIb&only=yes&limit=100)
 Utilize PowerShell's Secret Management module to access secrets with the
 Keeper Secrets Manager PowerShell Plugin
 
-[PreviousOracle Key Vault Encryption](/en/keeperpam/secrets-
-manager/integrations/oracle-key-vault)[NextServiceNow](/en/keeperpam/secrets-
-manager/integrations/servicenow)
-
-Last updated 5 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mkx-
+lxHNSwOix9K5_-J%252F-Mkx9u3Z-bE-LQokynFC%252Fpowershell-plugin-
+header.jpg%3Falt%3Dmedia%26token%3Dff821ba5-92f0-43b6-8768-198012a8450d&width=768&dpr=4&quality=100&sign=21639efc&sv=2)
 
 ##
 
@@ -535,7 +502,9 @@ installation details
 
   * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
 
-    *   * [A One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * [A One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
 
 ##
 
@@ -874,13 +843,41 @@ Copy
 The specified file will be downloaded to the path location given to `Set-
 Content`
 
-See the  for instructions on creating an Application
+[PreviousOracle Key Vault Encryption](/en/keeperpam/secrets-
+manager/integrations/oracle-key-vault)[NextServiceNow](/en/keeperpam/secrets-
+manager/integrations/servicenow)
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
+Last updated 5 months ago
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mkx-
-lxHNSwOix9K5_-J%252F-Mkx9u3Z-bE-LQokynFC%252Fpowershell-plugin-
-header.jpg%3Falt%3Dmedia%26token%3Dff821ba5-92f0-43b6-8768-198012a8450d&width=768&dpr=4&quality=100&sign=21639efc&sv=2)
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

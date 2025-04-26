@@ -445,12 +445,49 @@ PDF](/en/keeperpam/~gitbook/pdf?page=uvKsUzpi7q074JA0DFG4&only=yes&limit=100)
 
 Quick setup instructions for Docker on Linux environments
 
+[PreviousInstalling sqlcmd on Linux](/en/keeperpam/privileged-access-
+manager/references/installing-sqlcmd-on-linux)[NextCreating KSM App for
+Rotation](/en/keeperpam/privileged-access-manager/references/creating-ksm-app-
+for-rotation)
+
+Last updated 5 days ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 This page provides quick install instructions for setting up Docker on
 different flavors of Linux.
 
-  * [Amazon Linux](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux#amazon-linux)
-
-  * [Ubuntu](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux#ubuntu)
+  *   * 
 
 ###
 
@@ -564,42 +601,9 @@ Copy
     sudo usermod -aG docker $USER
     newgrp docker
 
-[PreviousInstalling sqlcmd on Linux](/en/keeperpam/privileged-access-
-manager/references/installing-sqlcmd-on-linux)[NextCreating KSM App for
-Rotation](/en/keeperpam/privileged-access-manager/references/creating-ksm-app-
-for-rotation)
+[Amazon Linux](/en/keeperpam/privileged-access-manager/references/installing-
+docker-on-linux#amazon-linux)
 
-Last updated 4 days ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+[Ubuntu](/en/keeperpam/privileged-access-manager/references/installing-docker-
+on-linux#ubuntu)
 

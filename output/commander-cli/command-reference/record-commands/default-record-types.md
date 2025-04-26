@@ -761,11 +761,6 @@ All record types have the following fields:
 
 `notes` \- text
 
-`custom` \- custom fields and values can be added to records. See [add
-documentation](/en/keeperpam/commander-cli/command-reference/record-
-commands#add-command-new-record-type) for more information on adding custom
-fields
-
 ###
 
 login Record Type
@@ -1860,6 +1855,9 @@ databaseCredentials", "fields": [{"type": "text", "value": ["SomeText"],
 "https://www.example.com", "port": "5000"}]}, {"type": "login", "value":
 ["John.Doe"]}, {"type": "password", "value": ["75vf@5JB@o"]}], "custom": []}'`
 
+`custom` \- custom fields and values can be added to records. See  for more
+information on adding custom fields
+
 [ define new record types](/en/keeperpam/commander-cli/command-
 reference/record-commands/record-type-commands#record-type-command)
 
@@ -1868,4 +1866,7 @@ commands/record-type-commands#commands)
 
 [standard record types](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#standard-record-types)
+
+[add documentation](/en/keeperpam/commander-cli/command-reference/record-
+commands#add-command-new-record-type)
 

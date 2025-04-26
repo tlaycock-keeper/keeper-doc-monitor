@@ -2104,11 +2104,11 @@ manager/tree/master/sdk/java/core)
 [Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
 notation)
 
-[uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/java-
-sdk#upload-a-file)
-
 [class](/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk/record-
 field-classes)
+
+[uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/java-
+sdk#upload-a-file)
 
 [Record Types](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)

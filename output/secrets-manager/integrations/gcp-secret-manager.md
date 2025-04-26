@@ -459,7 +459,7 @@ Sync secrets from the Keeper Vault with GCP Secret Manager
 plugin)[NextGoogle Cloud Key Management Encryption](/en/keeperpam/secrets-
 manager/integrations/google-cloud-key-management-encryption)
 
-Last updated 10 days ago
+Last updated 11 days ago
 
 Was this helpful?
 
@@ -522,9 +522,7 @@ Prerequisites
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
-
-    *   * A GCP account with GCP Secret Manager, and optionally the ability to create IAM service account credentials
+  *     *   * A GCP account with GCP Secret Manager, and optionally the ability to create IAM service account credentials
 
 ##
 
@@ -724,7 +722,12 @@ Copy
     
     ksm sync --type gcp --credentials [UID] -m [...] -m [...]
 
+A Keeper  with secrets shared to it
+
 See the  for instructions on creating an Application
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)

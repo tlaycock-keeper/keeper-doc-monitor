@@ -452,154 +452,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=hYcvUHfRABNhQ6YDRqwt&only=yes&limit=100)
 
 Features included with the PAM License
 
-##
-
-KeeperPAM Licensing Requirements
-
-In order to enable and use KeeperPAM, the following are required:
-
-  * [Keeper Business](https://www.keepersecurity.com/business.html) or [Keeper Enterprise](https://www.keepersecurity.com/enterprise.html) License 
-
-  * [Privileged Access Manager Add-On](https://www.keepersecurity.com/privileged-access-management/)
-
-    * A minimum of 5 seats 
-
-A Keeper Business or Keeper Enterprise License is required to purchase the
-KeeperPAM add-on.
-
-###
-
-Trial License
-
-If you are not a Keeper customer or do not have the required license, you can
-start a free [enterprise license trial](https://www.keepersecurity.com/start-
-business-trial.html). The enterprise trial will also **include** the
-Privileged Access Manager Add-on.
-
-##
-
-Features Included with KeeperPAM
-
-With the purchase of the Privileged Access Manager add-on, the following
-features are included:
-
-  * Secrets Manager - Unlimited API Calls
-
-  * Password Rotation 
-
-  * Connections
-
-  * Tunnels
-
-  * Remote Browser Isolation 
-
-  * Session Recordings and Playback 
-
-  * Discovery 
-
-  * Keeper Connection Manager (Self-Hosted)
-
-  * PAM Audit and Reporting
-
-####
-
-What is the difference between KeeperPAM and Keeper Connection Manager (Self-
-Hosted)?
-
-KeeperPAM is a cloud-native privileged access solution that requires only a
-lightweight gateway installation, while Keeper Connection Manager (KCM) is a
-fully self-hosted solution. For more information, visit this
-[page](/en/keeperpam#keeperpam-vs.-kcm).
-
-##
-
-KeeperPAM License Model
-
-The KeeperPAM add-on license includes all the advanced PAM Features. The
-number of licenses for the enterprise license and the KeeperPAM license is
-based on:
-
-License Type
-
-License Model
-
-Business or Enterprise License
-
-Number of Users using the Business or Enterprise Features
-
-Privileged Access Manager Add-On
-
-Number of Users using the Business or Enterprise Features AND PAM Features
-
-####
-
-Example
-
-For example, if an organization has 100 Enterprise users and needs PAM
-functionality for only 10 of them, they would purchase:
-
-  * **100 Keeper Enterprise Licenses** for users who only need the enterprise features.
-
-  * **10 Privileged Access Manager** **Add-Ons** , to cover the 10 users that need PAM functionality.
-
-##
-
-MSPs
-
-Keeper’s [MSP Consumption Model](https://docs.keeper.io/en/enterprise-
-guide/keeper-msp/consumption-based-billing) allows MSPs and their Managed
-Companies (MCs) to allocate Keeper licenses to their users and pay only for
-used licenses at the beginning of the following month.
-
-KeeperPAM will be a [Secure Add-On](https://docs.keeper.io/en/enterprise-
-guide/keeper-msp/consumption-based-billing/secure-add-ons) that MSPs can add
-or remove at any time for their Managed Companies.
-
-Features available with the KeeperPAM Add-On are listed
-[here](/en/keeperpam/privileged-access-manager/getting-started/keeperpam-
-licensing#features-included-with-keeperpam).
-
-##
-
-Existing Customers - Updating KSM/KCM Add-Ons
-
-For existing customers, the following existing Add-ons can be upgraded to the
-Privileged Access Manager Add-On:
-
-  * Keeper Secrets Manager Add-On
-
-  * Keeper Connection Manager Add-On
-
-Both the Keeper Secrets Manager and Keeper Connection Manager Add-Ons are
-included as part of the Privileged Access Manager Add-On.
-
-###
-
-Upgrading from Keeper Secrets Manager Add-On
-
-Upgrading to the Privileged Access Manager Add-On from the Keeper Secrets
-Manager Add-On will give you:
-
-  * Access to new KeeperPAM Features
-
-  * Unlimited API Calls 
-
-###
-
-Upgrading from Keeper Connection Manager Add-On
-
-Upgrading to the Privileged Access Manager Add-On from the Keeper Connection
-Manager Add-On will give you new KeeperPAM Features which includes accessing
-both the cloud and self-hosted KCM.
-
-##
-
-**Ready to Upgrade?**
-
-To purchase, upgrade, or if you have any questions, contact your Keeper
-account manager or use our [online
-form](https://www.keepersecurity.com/contact.html?t=b&r=sales).
-
 [PreviousConnection and Tunnel Security](/en/keeperpam/privileged-access-
 manager/getting-started/architecture/connection-and-tunnel-
 security)[NextEnforcement Policies](/en/keeperpam/privileged-access-
@@ -638,4 +490,166 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+##
+
+KeeperPAM Licensing Requirements
+
+In order to enable and use KeeperPAM, the following are required:
+
+  * or  License 
+
+  *     * A minimum of 5 seats 
+
+A Keeper Business or Keeper Enterprise License is required to purchase the
+KeeperPAM add-on.
+
+###
+
+Trial License
+
+If you are not a Keeper customer or do not have the required license, you can
+start a free . The enterprise trial will also **include** the Privileged
+Access Manager Add-on.
+
+##
+
+Features Included with KeeperPAM
+
+With the purchase of the Privileged Access Manager add-on, the following
+features are included:
+
+  * Secrets Manager - Unlimited API Calls
+
+  * Password Rotation 
+
+  * Connections
+
+  * Tunnels
+
+  * Remote Browser Isolation 
+
+  * Session Recordings and Playback 
+
+  * Discovery 
+
+  * Keeper Connection Manager (Self-Hosted)
+
+  * PAM Audit and Reporting
+
+####
+
+What is the difference between KeeperPAM and Keeper Connection Manager (Self-
+Hosted)?
+
+##
+
+KeeperPAM License Model
+
+The KeeperPAM add-on license includes all the advanced PAM Features. The
+number of licenses for the enterprise license and the KeeperPAM license is
+based on:
+
+License Type
+
+License Model
+
+Business or Enterprise License
+
+Number of Users using the Business or Enterprise Features
+
+Privileged Access Manager Add-On
+
+Number of Users using the Business or Enterprise Features AND PAM Features
+
+####
+
+Example
+
+For example, if an organization has 100 Enterprise users and needs PAM
+functionality for only 10 of them, they would purchase:
+
+  * **100 Keeper Enterprise Licenses** for users who only need the enterprise features.
+
+  * **10 Privileged Access Manager** **Add-Ons** , to cover the 10 users that need PAM functionality.
+
+##
+
+MSPs
+
+##
+
+Existing Customers - Updating KSM/KCM Add-Ons
+
+For existing customers, the following existing Add-ons can be upgraded to the
+Privileged Access Manager Add-On:
+
+  * Keeper Secrets Manager Add-On
+
+  * Keeper Connection Manager Add-On
+
+Both the Keeper Secrets Manager and Keeper Connection Manager Add-Ons are
+included as part of the Privileged Access Manager Add-On.
+
+###
+
+Upgrading from Keeper Secrets Manager Add-On
+
+Upgrading to the Privileged Access Manager Add-On from the Keeper Secrets
+Manager Add-On will give you:
+
+  * Access to new KeeperPAM Features
+
+  * Unlimited API Calls 
+
+###
+
+Upgrading from Keeper Connection Manager Add-On
+
+Upgrading to the Privileged Access Manager Add-On from the Keeper Connection
+Manager Add-On will give you new KeeperPAM Features which includes accessing
+both the cloud and self-hosted KCM.
+
+##
+
+**Ready to Upgrade?**
+
+KeeperPAM is a cloud-native privileged access solution that requires only a
+lightweight gateway installation, while Keeper Connection Manager (KCM) is a
+fully self-hosted solution. For more information, visit this .
+
+Keeper’s  allows MSPs and their Managed Companies (MCs) to allocate Keeper
+licenses to their users and pay only for used licenses at the beginning of the
+following month.
+
+KeeperPAM will be a  that MSPs can add or remove at any time for their Managed
+Companies.
+
+Features available with the KeeperPAM Add-On are listed .
+
+To purchase, upgrade, or if you have any questions, contact your Keeper
+account manager or use our .
+
+[Keeper Business](https://www.keepersecurity.com/business.html)
+
+[Keeper Enterprise](https://www.keepersecurity.com/enterprise.html)
+
+[Privileged Access Manager Add-On](https://www.keepersecurity.com/privileged-
+access-management/)
+
+[enterprise license trial](https://www.keepersecurity.com/start-business-
+trial.html)
+
+[online form](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+
+[page](/en/keeperpam#keeperpam-vs.-kcm)
+
+[here](/en/keeperpam/privileged-access-manager/getting-started/keeperpam-
+licensing#features-included-with-keeperpam)
+
+[MSP Consumption Model](https://docs.keeper.io/en/enterprise-guide/keeper-
+msp/consumption-based-billing)
+
+[Secure Add-On](https://docs.keeper.io/en/enterprise-guide/keeper-
+msp/consumption-based-billing/secure-add-ons)
 

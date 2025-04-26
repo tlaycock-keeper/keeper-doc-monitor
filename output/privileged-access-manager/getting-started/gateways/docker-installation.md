@@ -840,7 +840,11 @@ Copy
 Enabling this option allows you to establish a Connection to the host. For
 example, to open an SSH connection:
 
-  *   *   * 
+  * Create a PAM User record with the SSH private key
+
+  * Create a PAM Machine record with the hostname to `host.docker.internal` and port `22`
+
+  * Activate the SSH connection in PAM settings referencing the PAM User
 
 ###
 
@@ -855,21 +859,6 @@ Copy
     
     docker-compose pull
     nohup docker-compose up -d keeper-gateway &
-
-Create a  record with the SSH private key
-
-Create a  record with the hostname to `host.docker.internal` and port `22`
-
-Activate the  in PAM settings referencing the PAM User
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
-[PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
-[SSH connection](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/ssh-connections)
 
 [15KBdocker-
 seccomp.json](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-

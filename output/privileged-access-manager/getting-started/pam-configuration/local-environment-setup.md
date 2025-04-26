@@ -519,9 +519,6 @@ Gateway (Required)
 
 The configured gateway
 
-See [docs](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-for more info
-
 Application Folder (Required)
 
 The shared folder where the PAM Configuration data will be stored
@@ -543,9 +540,6 @@ Port Mapping
 
 Define alternative default ports
 
-Ex: `3307=mysql `See [port mapping](/en/keeperpam/privileged-access-
-manager/references/port-mapping) docs
-
 For Discovery, the following fields are required, otherwise they are optional:
 
 Field
@@ -565,9 +559,6 @@ Ex: `My Network`
 Network CIDR
 
 Subnet of the IP address
-
-Ex: `192.168.0.15/24` Refer to [this
-](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)for more info
 
 ###
 
@@ -664,6 +655,19 @@ Was this helpful?
 © 2025 Keeper Security, Inc.
 
 See  for more info
+
+See  for more info
+
+Ex: `3307=mysql `See  docs
+
+Ex: `192.168.0.15/24` Refer to for more info
+
+[docs](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+[port mapping](/en/keeperpam/privileged-access-manager/references/port-
+mapping)
+
+[this ](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
 
 [this section](/en/keeperpam/privileged-access-manager/getting-started/pam-
 configuration/local-environment-setup#pam-features)

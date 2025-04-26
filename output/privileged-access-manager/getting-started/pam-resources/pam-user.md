@@ -450,44 +450,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=T4j5fXFV7knAjQZ8QKj1&only=yes&limit=100)
 
 Record Type Details for PAM User Record Type
 
-[PreviousPAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-remote-browser)[NextSharing and Access
-Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-
-access-control)
-
-Last updated 2 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkAjqR7emtY9jLtKEyEkg%252FKeeperPAM%2520User.jpg%3Falt%3Dmedia%26token%3Db43bd7ce-e079-4e7e-aabc-592ef88f5e11&width=768&dpr=4&quality=100&sign=8e5923e6&sv=2)
 
 ##
 
@@ -550,6 +515,12 @@ To create a PAM User:
 
   * Click "**Next** " and complete all of the required information.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIRM2u2catMzTjLm3TP6n%252FScreenshot%25202024-12-28%2520at%25207.44.54%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D39192e46-6bd5-44c1-90de-12e3a2f17a18&width=768&dpr=4&quality=100&sign=33e61a6b&sv=2)
+
+Creating a PAM User
+
 ##
 
 PAM **User** Record Type Fields
@@ -564,6 +535,10 @@ Description
 Notes
 
 Login
+
+Username; exact context and format depends on the associated resource. See
+[Note (1)](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user#note-1) below.
 
 **Required** Examples:****`username` `username@domain` `DOMAIN\username`
 
@@ -615,50 +590,12 @@ When connecting to Windows machines that are domain-joined:
 
 Configure rotation settings
 
-Username; exact context and format depends on the associated resource. See
-below.
-
-[Note (1)](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user#note-1)
-
 On the "Rotation Settings" section of the PAM User vault record, you can
 configure how credential rotation is managed.
 
 ###
 
 Password Rotation Settings
-
-Field
-
-Description
-
-Required
-
-Rotation Type
-
-Specifies which type of rotation is being performed (and which protocol is
-utilized).
-
-**Required** "General", "IAM User" or "Run PAM Scripts Only". See below for
-details.
-
-PAM Resource
-
-For General rotation type, specifies the PAM Resource record which can provide
-the necessary privilege. For IAM User rotation type, specifies the PAM
-Configuration utilizing cloud APIs.
-
-**Required** only for "General" and "IAM User" rotation types
-
-Rotation Schedule
-
-Rotation can be performed on-demand or on a specific schedule.
-
-Password Complexity
-
-Applies to password-based rotations, not PEM keys.
-
-Select "Show More" to control special characters and symbols.
 
 ###
 
@@ -724,15 +661,82 @@ Below are some examples of PAM User records.
 
   * Azure AD User
 
-For advanced scheduling, see the .
+[PreviousPAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-remote-browser)[NextSharing and Access
+Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-
+access-control)
+
+Last updated 2 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+Field
+
+Description
+
+Required
 
 The rotation schedule can be set on a specific interval, or using a .
 
-[cron spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
+Rotation Type
 
-[cron spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
+Specifies which type of rotation is being performed (and which protocol is
+utilized).
 
-Creating a PAM User
+**Required** "General", "IAM User" or "Run PAM Scripts Only". See below for
+details.
+
+PAM Resource
+
+For General rotation type, specifies the PAM Resource record which can provide
+the necessary privilege. For IAM User rotation type, specifies the PAM
+Configuration utilizing cloud APIs.
+
+**Required** only for "General" and "IAM User" rotation types
+
+Rotation Schedule
+
+Rotation can be performed on-demand or on a specific schedule.
+
+For advanced scheduling, see the cron spec.
+
+Password Complexity
+
+Applies to password-based rotations, not PEM keys.
+
+Select "Show More" to control special characters and symbols.
+
+cron spec
 
 PAM User record editing
 
@@ -757,14 +761,6 @@ AWS IAM User
 Database user
 
 Azure AD User
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkAjqR7emtY9jLtKEyEkg%252FKeeperPAM%2520User.jpg%3Falt%3Dmedia%26token%3Db43bd7ce-e079-4e7e-aabc-592ef88f5e11&width=768&dpr=4&quality=100&sign=8e5923e6&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIRM2u2catMzTjLm3TP6n%252FScreenshot%25202024-12-28%2520at%25207.44.54%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D39192e46-6bd5-44c1-90de-12e3a2f17a18&width=768&dpr=4&quality=100&sign=33e61a6b&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
