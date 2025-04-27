@@ -470,7 +470,7 @@ MySQL - Single or Flexible Database](/en/keeperpam/privileged-access-
 manager/password-rotation/rotation-use-cases/azure/managed-database/azure-
 mysql-single-or-flexible-database)
 
-Last updated 24 days ago
+Last updated 25 days ago
 
 Was this helpful?
 

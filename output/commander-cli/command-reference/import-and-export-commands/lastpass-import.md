@@ -754,11 +754,6 @@ Here's the link to the public / latest version:
 To automatically deploy Keeper Desktop to your users through group policy,
 see:
 
-[![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
-files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Desktop
-ApplicationsEnterprise Guide](https://docs.keeper.io/enterprise-
-guide/deploying-keeper-to-end-users/desktop-application)
-
 ##
 
 Receiving Shared Folders
@@ -975,6 +970,11 @@ is complete), you can use the  command. For example:
 icon-192x192.png)Download Keeper Password Manager for iOS, Android, Mac, PC
 and moreKeeper® Password Manager & Digital
 Vault](https://keepersecurity.com/download)
+
+[![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
+files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Desktop
+ApplicationsEnterprise Guide](https://docs.keeper.io/enterprise-
+guide/deploying-keeper-to-end-users/desktop-application)
 
 [record-permission](/en/keeperpam/commander-cli/command-reference/sharing-
 commands#record-permission-command)

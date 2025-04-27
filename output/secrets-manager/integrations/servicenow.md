@@ -571,7 +571,9 @@ Prerequisites
 
   * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
 
-    *   * A ServiceNow instance with [External Credential Storage](https://docs.servicenow.com/bundle/utah-platform-security/page/product/credentials/concept/external_cred_storage_configuration.html) plugin enabled
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * A ServiceNow instance with [External Credential Storage](https://docs.servicenow.com/bundle/utah-platform-security/page/product/credentials/concept/external_cred_storage_configuration.html) plugin enabled
 
 ##
 
@@ -792,11 +794,6 @@ able to click "Test credential" to perform a quick targeted test. Select the
 MID server that should query Keeper vault, and select a target that the
 credential should work for to check that everything works as expected. If it
 doesn't, check the logs for errors and debug information as detailed above.
-
-See the  for instructions on creating an Application
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

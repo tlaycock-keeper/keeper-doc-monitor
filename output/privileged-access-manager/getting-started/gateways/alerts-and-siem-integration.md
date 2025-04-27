@@ -454,45 +454,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=n7N9m0jqA1BbRWfUyZO2&only=yes&limit=100)
 
 Monitoring Gateway events and integrating with your SIEM
 
-[PreviousAuto Updater](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/auto-updater)[NextAdvanced
-Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/advanced-configuration)
-
-Last updated 2 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ###
 
 Overview
@@ -504,7 +465,7 @@ the Keeper Admin Console, alerts can also be configured based on any event.
 For more information on activating SIEM integration from the Keeper Enterprise
 guide:
 
-  * See 
+  * See [Reporting, Alerts & SIEM integration](https://docs.keeper.io/en/enterprise-guide/event-reporting)
 
 ###
 
@@ -514,7 +475,7 @@ Features
 
   * Send alerts to email, SMS, Webhook, Slack or Microsoft Teams on any event trigger
 
-  * Run custom reports from the Keeper Admin Console or  CLI
+  * Run custom reports from the Keeper Admin Console or [Keeper Commander](/en/keeperpam/commander-cli/command-reference/reporting-commands#audit-report-command) CLI
 
 ###
 
@@ -568,9 +529,42 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJI6cxiJgI
 
 Email Alert for Gateway Offline
 
-[Keeper Commander](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#audit-report-command)
+[PreviousAuto Updater](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/auto-updater)[NextAdvanced
+Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/advanced-configuration)
 
-[Reporting, Alerts & SIEM integration](https://docs.keeper.io/en/enterprise-
-guide/event-reporting)
+Last updated 2 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

@@ -920,9 +920,6 @@ record-types)
 [Record's field's Type](https://docs.keeper.io/secrets-manager/secrets-
 manager/about/field-record-types)
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
 [Kubernetes Secret](/en/keeperpam/secrets-manager/integrations/kubernetes-
 external-secrets-operator#create-kubernetes-secret-to-store-base64-ksm-config)
 
@@ -931,6 +928,9 @@ secrets-operator#create-secretstore)
 
 [ExternalSecret](/en/keeperpam/secrets-manager/integrations/kubernetes-
 external-secrets-operator#create-externalsecret)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)

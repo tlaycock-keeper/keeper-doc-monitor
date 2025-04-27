@@ -474,7 +474,7 @@ manager/getting-started/gateways/alerts-and-siem-integration)[NextGateway
 Configuration with AWS KMS](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/advanced-configuration/gateway-configuration-with-aws-kms)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

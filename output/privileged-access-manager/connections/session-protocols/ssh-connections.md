@@ -462,7 +462,7 @@ manager/connections/session-protocols)[NextRDP
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/rdp-connections)
 
-Last updated 5 days ago
+Last updated 6 days ago
 
 Was this helpful?
 
@@ -543,6 +543,20 @@ Configuring Connection Settings
 
 Prior to configuring the SSH protocol settings on the PAM Settings screen, the
 following fields are all **required** and need to be configured:
+
+Field
+
+Definition
+
+PAM Configuration
+
+This is the PAM Configuration that contains the details of your target
+infrastructure and provides access to the target configured on the PAM Record
+
+Administrative Credential Record
+
+This is the linked PAM User that will be used to authenticate to the target
+and perform administrative operations on it.
 
 The following table lists all the configurable connection settings for the SSH
 protocol on the PAM Settings:
@@ -689,16 +703,11 @@ SSH to Windows Servers
 The SSH protocol can also be used to access Windows servers for execution of
 PowerShell commands or other administrative actions.
 
-  * 
+  * Learn more on how to [activate SSH on Windows](/en/keeperpam/privileged-access-manager/references/setting-up-ssh#windows)
 
 ##
 
 Session Recordings - SSH Protocol
-
-Learn more on how to
-
-[activate SSH on Windows](/en/keeperpam/privileged-access-
-manager/references/setting-up-ssh#windows)
 
 For this protocol, both graphical and the full, raw text text content of
 terminal sessions, including timing information, are recorded. For more
@@ -721,20 +730,6 @@ Record
 
 The PAM User record contains the user credentials that will be used to connect
 to the endpoint
-
-Field
-
-Definition
-
-PAM Configuration
-
-This is the PAM Configuration that contains the details of your target
-infrastructure and provides access to the target configured on the PAM Record
-
-Administrative Credential Record
-
-This is the linked PAM User that will be used to authenticate to the target
-and perform administrative operations on it.
 
 PAM Configuration
 

@@ -527,6 +527,20 @@ Configuring Connection Settings
 Prior to configuring the PostgreSQL protocol settings on the PAM Settings
 screen, the following fields are all **required** and need to be configured:
 
+Field
+
+Definition
+
+PAM Configuration
+
+This is the PAM Configuration that contains the details of your target
+infrastructure and provides access to the target configured on the PAM Record
+
+Administrative Credential Record
+
+This is the linked PAM User that will be used to authenticate to the target
+and perform administrative operations on it.
+
 The following table lists all the configurable connection settings for the SQL
 Server protocol on the PAM Settings:
 
@@ -600,6 +614,12 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FxXLFqH5fP
 
 PostgreSQL Session Recordings
 
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this page.
+
+  * Learn more about Session Recording and Playback
+
 [PreviousSQL Server Connections](/en/keeperpam/privileged-access-
 manager/connections/session-protocols/sql-server-connections)[NextVNC
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
@@ -638,30 +658,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-Field
-
-Definition
-
-PAM Configuration
-
-This is the PAM Configuration that contains the details of your target
-infrastructure and provides access to the target configured on the PAM Record
-
-Administrative Credential Record
-
-This is the linked  that will be used to authenticate to the target and
-perform administrative operations on it.
-
-For this protocol, both graphical and the full, raw text text content of
-terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this .
-
-  * Learn more about 
-
-PAM User
-
-page
-
-Session Recording and Playback
 

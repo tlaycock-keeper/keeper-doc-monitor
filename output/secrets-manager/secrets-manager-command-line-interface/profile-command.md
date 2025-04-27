@@ -869,7 +869,7 @@ completely change the location and name of the INI configuration file.
 command-line-interface)[NextInit Command](/en/keeperpam/secrets-
 manager/secrets-manager-command-line-interface/init-command)
 
-Last updated 5 months ago
+Last updated 6 months ago
 
 Was this helpful?
 

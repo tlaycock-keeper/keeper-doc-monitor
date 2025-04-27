@@ -428,6 +428,36 @@ manager/integrations/docker-writer-image?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -451,6 +481,14 @@ PDF](/en/keeperpam/~gitbook/pdf?page=GOhTkruLbwNFJRYswt8U&only=yes&limit=100)
 # Docker Writer Image
 
 A general purpose docker image to retrieve secrets.
+
+[PreviousDocker Runtime](/en/keeperpam/secrets-manager/integrations/docker-
+runtime)[NextEntrust HSM Encryption](/en/keeperpam/secrets-
+manager/integrations/entrust-hsm)
+
+Last updated 2 months ago
+
+Was this helpful?
 
 ##
 
@@ -481,9 +519,7 @@ Copy
 
 The writer is used to copy files from the vault and to create files containing
 secrets. Due to writing information to disk, there is always risk of exposure.
-An alternative is the [keeper/keeper-secrets-manager-
-cli](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/docker-container) image and the `exec `command.
+An alternative is the  image and the `exec `command.
 
 ##
 
@@ -533,12 +569,6 @@ Copy
     cl9a9k0DWP-Iy227rBo5gQ/field/login > MY_LOGIN
     gpsBL343CVYMFgOKZ-L2hQ/custom_field/Ip Address > IP_ADDR
 
-Each line is "[Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-
-notation) > destination". The destination can be either an environmental
-variable/JSON key or a file path and name. If a file, the path is prefixed
-with the text `file:`. It is recommended not to place binary data into an
-environmental variable due to unknown string encoding.
-
 ###
 
 Secret File Type
@@ -568,10 +598,6 @@ some examples.
 ###
 
 Kubernetes
-
-The writer image is best used in an [Init
-Container](https://kubernetes.io/docs/concepts/workloads/pods/init-
-containers/).
 
 Copy
 
@@ -677,41 +703,18 @@ line feed and the next record UID.
 
 ###
 
-[PreviousDocker Runtime](/en/keeperpam/secrets-manager/integrations/docker-
-runtime)[NextEntrust HSM Encryption](/en/keeperpam/secrets-
-manager/integrations/entrust-hsm)
+Each line is " > destination". The destination can be either an environmental
+variable/JSON key or a file path and name. If a file, the path is prefixed
+with the text `file:`. It is recommended not to place binary data into an
+environmental variable due to unknown string encoding.
 
-Last updated 2 months ago
+The writer image is best used in an .
 
-Was this helpful?
+[keeper/keeper-secrets-manager-cli](/en/keeperpam/secrets-manager/secrets-
+manager-command-line-interface/docker-container)
 
-#### Company
+[Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-notation)
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+[Init Container](https://kubernetes.io/docs/concepts/workloads/pods/init-
+containers/)
 

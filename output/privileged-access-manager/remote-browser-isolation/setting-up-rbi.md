@@ -459,7 +459,7 @@ manager/remote-browser-isolation)[NextURL Patterns & Resource URL
 Patterns](/en/keeperpam/privileged-access-manager/remote-browser-
 isolation/setting-up-rbi/url-patterns-and-resource-url-patterns)
 
-Last updated 18 days ago
+Last updated 19 days ago
 
 Was this helpful?
 
@@ -734,18 +734,18 @@ isolation/setting-up-rbi/browser-autofill)
 [here](/en/keeperpam/privileged-access-manager/remote-browser-
 isolation/setting-up-rbi/browser-autofill)
 
+[here](/en/keeperpam/privileged-access-manager/remote-browser-
+isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
+
+[here](/en/keeperpam/privileged-access-manager/remote-browser-
+isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
+
 [Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
 manager-commands#overview)
 
 For this protocol, graphical data, including timing information, is recorded.
 For more details on the recordings and how to access them, see the Session
 Recording & Playback docs.
-
-[here](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
-
-[here](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
 
 An active license is required in order to use the features available with
 KeeperPAM. This license is available for both business and enterprise

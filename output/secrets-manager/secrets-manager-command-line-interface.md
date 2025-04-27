@@ -457,7 +457,7 @@ The Secrets Manager CLI provides shell access to vault secrets
 types)[NextProfile Command](/en/keeperpam/secrets-manager/secrets-manager-
 command-line-interface/profile-command)
 
-Last updated 5 months ago
+Last updated 6 months ago
 
 Was this helpful?
 

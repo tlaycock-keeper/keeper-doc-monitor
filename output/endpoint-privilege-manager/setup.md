@@ -443,7 +443,7 @@ Installation and setup of Privileged Elevation and Delegation Management
 manager/overview)[NextDeployment](/en/keeperpam/endpoint-privilege-
 manager/deployment)
 
-Last updated 15 days ago
+Last updated 16 days ago
 
 Was this helpful?
 

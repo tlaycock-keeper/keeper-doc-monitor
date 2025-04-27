@@ -755,9 +755,7 @@ Rotation Configuration From the Vault:
 
   1. Create a shared folder in the vault
 
-  2. Create a PAM User record in the shared folder with the fields and custom fields described [above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements).
-
-  3. In the Secret Manager tab of the Keeper vault, create a new application for the gateway if there is no gateway yet. 
+  2.   3. In the Secret Manager tab of the Keeper vault, create a new application for the gateway if there is no gateway yet. 
 
   4. Make sure the Application has edit permissions on the shared folder created above.
 
@@ -776,9 +774,7 @@ Copy
 
   3. Select the gateway, select the shared folder and save the PAM configuration.
 
-  1. Edit the PAM User record previously described in this [documentation](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements):
-
-     * Password Rotation Settings: select your desired schedule and the PAM configuration created above.
+  1.      * Password Rotation Settings: select your desired schedule and the PAM configuration created above.
 
      * Add PAM Script to the record: select the provided file below and make sure to specify the script command:
 
@@ -799,7 +795,7 @@ Configuration From the Keeper Vault:
 
   1. Create a shared folder in the vault
 
-  2. Create a PAM User record in the shared folder with the fields and custom fields described [above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements).
+  2. 
 
   1. In the Secret Manager tab of the Keeper vault, create a new application for the gateway if there is no gateway yet. 
 
@@ -818,9 +814,7 @@ Copy
 
   2. Under Environment, please select “AWS”, select the Gateway, select the shared folder, provide the “AWS ID”, the “Access Key” and “Secret Access Key”. This will be the admin access key that the script uses to rotate a user access key.
 
-  1. Edit the PAM User record previously described in this [documentation](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements): 
-
-     * Password Rotation Settings: select your desired schedule and the PAM configuration created above.
+  1.      * Password Rotation Settings: select your desired schedule and the PAM configuration created above.
 
      * Add PAM Script to the record: select the provided file below and make sure to specify the script command:
 
@@ -852,12 +846,6 @@ Rotation Credentials.
 The attached record could be any record type. It needs at least the two custom
 fields “aws_access_key_id” and “aws_secret_access_key” with the admin access
 key.
-
-Using the PAM User record type to store the admin access key allows you to
-also **automate the rotation of the admin access key**. Make sure to follow
-[those requirements](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-
-requirements) in that case.
 
 ###
 
@@ -1154,6 +1142,38 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+Create a PAM User record in the shared folder with the fields and custom
+fields described .
+
+Edit the PAM User record previously described in this :
+
+Create a PAM User record in the shared folder with the fields and custom
+fields described .
+
+Edit the PAM User record previously described in this :
+
+Using the PAM User record type to store the admin access key allows you to
+also **automate the rotation of the admin access key**. Make sure to follow
+in that case.
+
+[above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements)
+
+[documentation](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-
+requirements)
+
+[above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements)
+
+[documentation](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-
+requirements)
+
+[those requirements](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-
+requirements)
 
 [213BPAM User
 template.csv](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-

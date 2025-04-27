@@ -495,10 +495,6 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FsbojNhPwNvyL2StisKUl%252FAzure%2520Managed%2520Database.jpg%3Falt%3Dmedia%26token%3Dd668ef42-70d8-475e-b8b8-9445f8ed4b18&width=768&dpr=4&quality=100&sign=bea63d97&sv=2)
-
 In this section, you will learn how to rotate **DB User or Admin** credentials
 on the following Azure Managed Databases:
 
@@ -511,4 +507,8 @@ on the following Azure Managed Databases:
 [Azure MySQL](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/azure/managed-database#azure-mysql-single-or-
 flexible)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FsbojNhPwNvyL2StisKUl%252FAzure%2520Managed%2520Database.jpg%3Falt%3Dmedia%26token%3Dd668ef42-70d8-475e-b8b8-9445f8ed4b18&width=768&dpr=4&quality=100&sign=bea63d97&sv=2)
 

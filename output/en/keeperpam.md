@@ -410,6 +410,36 @@ Bridge](https://docs.keeper.io/en/keeper-bridge/?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -428,9 +458,11 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MJXO_hpAODecU2amxqS&only=yes&limit=100)
 
 KeeperPAM is a modern, cloud-based Privileged Access Manager
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FClb20vtKpGMCPIFIVslS%252FKeeperPAM%2520overview.jpg%3Falt%3Dmedia%26token%3D463010f5-1a94-4a9a-ad0e-8cce36c9127c&width=768&dpr=4&quality=100&sign=e8a341e3&sv=2)
+[NextSetup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
+
+Last updated 16 days ago
+
+Was this helpful?
 
 ##
 
@@ -447,13 +479,7 @@ unified product.
 
 To learn more about KeeperPAM or sign up for a trial:
 
-  * [**KeeperPAM Website**](https://www.keepersecurity.com/privileged-access-management/)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FN0RzwLsEtlnamuEKIIrB%252FZT%2520Platform.png%3Falt%3Dmedia%26token%3Da9cba17a-8a64-4e31-9754-d2967ce0a71b&width=768&dpr=4&quality=100&sign=a8bbefe3&sv=2)
-
-KeeperPAM Zero-Trust Platform
+  * 
 
 ###
 
@@ -461,21 +487,11 @@ About this Documentation
 
 This documentation is broken out into the following sections:
 
-  * [Privileged Access Manager](/en/keeperpam/privileged-access-manager/setup-steps)
-
-  * [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager/overview)
-
-  * [Secrets Manager](/en/keeperpam/secrets-manager/overview)
-
-  * [Commander CLI](/en/keeperpam/commander-cli/overview)
+  *   *   *   * 
 
 Additional documentation on the Keeper platform can be found here:
 
-  * [Enterprise Admin Guide](https://docs.keeper.io/en/enterprise-guide)
-
-  * [Keeper Connection Manager (self-hosted)](https://docs.keeper.io/en/keeper-connection-manager)
-
-  * [Documentation Home](https://docs.keeper.io/en)
+  *   *   * 
 
 ##
 
@@ -536,7 +552,7 @@ Contact the Keeper Team
 If you are an existing customer, your customer success team can activate
 KeeperPAM in your account.
 
-  * [Contact our team](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * 
 
 For technical questions, you can also email **pam@keepersecurity.com**.
 
@@ -544,45 +560,51 @@ For technical questions, you can also email **pam@keepersecurity.com**.
 
 Next Steps
 
-  * [Start the setup](/en/keeperpam/privileged-access-manager/setup-steps) of KeeperPAM
+  *   *   * 
 
-  * Launch the [Quick Start: Sandbox](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
+of KeeperPAM
 
-  * Deep dive into the [Getting Started guide for KeeperPAM](/en/keeperpam/privileged-access-manager/getting-started)
+Launch the
 
-[NextSetup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
+Deep dive into the
 
-Last updated 15 days ago
+[**KeeperPAM Website**](https://www.keepersecurity.com/privileged-access-
+management/)
 
-Was this helpful?
+[Privileged Access Manager](/en/keeperpam/privileged-access-manager/setup-
+steps)
 
-#### Company
+[Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-
+manager/overview)
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+[Secrets Manager](/en/keeperpam/secrets-manager/overview)
 
-#### Support
+[Commander CLI](/en/keeperpam/commander-cli/overview)
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+[Enterprise Admin Guide](https://docs.keeper.io/en/enterprise-guide)
 
-#### Solutions
+[Keeper Connection Manager (self-hosted)](https://docs.keeper.io/en/keeper-
+connection-manager)
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+[Documentation Home](https://docs.keeper.io/en)
 
-#### Pricing
+[Contact our team](https://www.keepersecurity.com/contact.html?t=b&r=sales)
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+[Start the setup](/en/keeperpam/privileged-access-manager/setup-steps)
 
-© 2025 Keeper Security, Inc.
+[Quick Start: Sandbox](/en/keeperpam/privileged-access-manager/quick-start-
+sandbox)
+
+[Getting Started guide for KeeperPAM](/en/keeperpam/privileged-access-
+manager/getting-started)
+
+KeeperPAM Zero-Trust Platform
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FClb20vtKpGMCPIFIVslS%252FKeeperPAM%2520overview.jpg%3Falt%3Dmedia%26token%3D463010f5-1a94-4a9a-ad0e-8cce36c9127c&width=768&dpr=4&quality=100&sign=e8a341e3&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FN0RzwLsEtlnamuEKIIrB%252FZT%2520Platform.png%3Falt%3Dmedia%26token%3Da9cba17a-8a64-4e31-9754-d2967ce0a71b&width=768&dpr=4&quality=100&sign=a8bbefe3&sv=2)
 

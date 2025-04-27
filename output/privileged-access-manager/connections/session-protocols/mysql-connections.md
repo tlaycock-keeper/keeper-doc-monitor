@@ -595,6 +595,12 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fw5aFPH5t5
 
 MySQL Session Recordings
 
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this page.
+
+  * Learn more about Session Recording and Playback
+
 [PreviousRBI Connections](/en/keeperpam/privileged-access-
 manager/connections/session-protocols/rbi-connections)[NextSQL Server
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
@@ -633,12 +639,6 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-For this protocol, both graphical and the full, raw text text content of
-terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this page.
-
-  * Learn more about Session Recording and Playback
 
 Field
 

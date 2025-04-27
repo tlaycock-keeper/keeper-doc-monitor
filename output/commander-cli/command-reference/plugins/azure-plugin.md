@@ -538,19 +538,11 @@ Rotation supports legacy and typed records. If using typed record, a 'Login'
 type field is required. Additional fields may be added depending on the
 rotation type as well. See the instructions below.
 
-See the [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-
-commander-cli#typed-vs-untyped-records-v3-vs-v2)section for more information
-on legacy vs typed records
-
 ###
 
 Set the Azure Login Name
 
 **Populate the 'Login' field of the Keeper record with the Azure login name**
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf3_72XQ3z1I6frpa2m%252Fimage.png%3Falt%3Dmedia%26token%3Da85def6d-1882-4e7a-a9e5-022cee7d6ec2&width=768&dpr=4&quality=100&sign=556bcf5d&sv=2)
 
 ###
 
@@ -675,4 +667,13 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+See the section for more information on legacy vs typed records
+
+[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
+cli#typed-vs-untyped-records-v3-vs-v2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf3_72XQ3z1I6frpa2m%252Fimage.png%3Falt%3Dmedia%26token%3Da85def6d-1882-4e7a-a9e5-022cee7d6ec2&width=768&dpr=4&quality=100&sign=556bcf5d&sv=2)
 
