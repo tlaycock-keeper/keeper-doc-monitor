@@ -526,20 +526,6 @@ Configuring Connection Settings
 Prior to configuring the Telnet protocol settings on the PAM Settings screen,
 the following fields are all **required** and need to be configured:
 
-Field
-
-Definition
-
-PAM Configuration
-
-This is the PAM Configuration that contains the details of your target
-infrastructure and provides access to the target configured on the PAM Record
-
-Administrative Credential Record
-
-This is the linked PAM User that will be used to authenticate to the target
-and perform administrative operations on it.
-
 The following table lists all the configurable connection settings for the
 Telnet protocol on the PAM Settings:
 
@@ -681,6 +667,22 @@ terminal sessions, including timing information, are recorded. For more
 information on recordings and how to access these recordings, visit this page.
 
   * Learn more about Session Recording and Playback
+
+Field
+
+Definition
+
+PAM Configuration
+
+This is the PAM Configuration that contains the details of your target
+infrastructure and provides access to the target configured on the PAM Record
+
+Administrative Credential Record
+
+This is the linked  that will be used to authenticate to the target and
+perform administrative operations on it.
+
+PAM User
 
 Telnet Session Recordings
 

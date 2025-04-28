@@ -450,7 +450,7 @@ Keeper SSH Agent integration for Git Authentication and Commit Signing
 [PreviousSSH Agent](/en/keeperpam/privileged-access-manager/ssh-
 agent)[NextDiscovery](/en/keeperpam/privileged-access-manager/discovery)
 
-Last updated 8 days ago
+Last updated 9 days ago
 
 Was this helpful?
 

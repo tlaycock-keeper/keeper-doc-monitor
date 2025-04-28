@@ -506,7 +506,9 @@ configured in the PAM Configuration record.
 The role policy must be configured appropriately to enable access to the
 target AWS resources:
 
-  *   * 
+  * [EC2 Role Policy](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup#ec2-role)
+
+  * [IAM User Policy](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup#iam-admin-user-1)
 
 The following diagram shows the AWS environment hierarchy:
 
@@ -658,12 +660,6 @@ In addition to these policies, we recommend protecting the Gateway
 Configuration secrets [using the AWS KMS](/en/keeperpam/privileged-access-
 manager/getting-started/gateways/advanced-configuration/gateway-configuration-
 with-aws-kms).
-
-[EC2 Role Policy](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/aws-environment-setup#ec2-role)
-
-[IAM User Policy](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/aws-environment-setup#iam-admin-user-1)
 
 AWS Rotation Hierarchy
 

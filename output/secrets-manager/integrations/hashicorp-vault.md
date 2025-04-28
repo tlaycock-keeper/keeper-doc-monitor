@@ -461,7 +461,7 @@ Use Keeper Secrets Manager with HashiCorp Vault as a Data Source
 manager/integrations/google-cloud-key-management-
 encryption)[NextHeroku](/en/keeperpam/secrets-manager/integrations/heroku)
 
-Last updated 8 months ago
+Last updated 9 months ago
 
 Was this helpful?
 
@@ -528,11 +528,7 @@ to utilize this integration, you will need:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
-
-    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
-
-  * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
     * The HashiCorp Vault integration accepts our Base64 format configurations
 
@@ -909,12 +905,22 @@ Copy
     
     vault delete ksm/record uid=Oq3fFu14hZY00d7sp3EYNA
 
+A Keeper  with secrets shared to it
+
+See the  for instructions on creating an Application
+
 A Secrets Manager configuration can be created using Keeper Commander or the
 Secrets Manager CLI. See the  for more information on creating a
 configuration.
 
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
 [Configuration Documentation](/en/keeperpam/secrets-manager/about/secrets-
 manager-configuration#creating-a-secrets-manager-configuration)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

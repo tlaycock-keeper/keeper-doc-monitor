@@ -463,44 +463,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=JmYiK7H1Jf3kFnPQ75x9&only=yes&limit=100)
 
 Rotating Snowflake users within your Keeper Vault
 
-[PreviousOkta User](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/saas-accounts/okta-user)[NextRotate Credential via
-REST API](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/saas-accounts/rotate-credential-via-rest-api)
-
-Last updated 2 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FUI8vAZN6xBsDYn7gu62X%252Fkeeper%252BSnowflake.jpg%3Falt%3Dmedia%26token%3Df8c63b08-243b-4712-9588-0cbfc0080416&width=768&dpr=4&quality=100&sign=cdf71a1f&sv=2)
 
 ##
 
@@ -734,6 +699,10 @@ Copy
 The above script for the Snowflake Post-Rotation Script can be also found
 here:
 
+[https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
+Scripts/tree/main/snowflakegithub.com](https://github.com/Keeper-
+Security/Zero-Trust-KeeperPAM-Scripts/tree/main/snowflake)
+
 ##
 
 Rotating Snowflake User Credentials
@@ -742,21 +711,52 @@ After successfully setting up Rotation for your Snowflake User Credentials on
 the PAM User Record, clicking on "Run Scripts Only" will rotate the
 credential:
 
-Attach the below  that will perform the password rotation. The script has
-additional comments inside that describe each line.
-
-[https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
-Scripts/tree/main/snowflakegithub.com](https://github.com/Keeper-
-Security/Zero-Trust-KeeperPAM-Scripts/tree/main/snowflake)
-
-[Python script](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/saas-accounts/snowflake-user#python-script)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FUI8vAZN6xBsDYn7gu62X%252Fkeeper%252BSnowflake.jpg%3Falt%3Dmedia%26token%3Df8c63b08-243b-4712-9588-0cbfc0080416&width=768&dpr=4&quality=100&sign=cdf71a1f&sv=2)
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIxh4Ka8jKKWfzcljvTnM%252Fsnowflake%2520record.png%3Falt%3Dmedia%26token%3Dd7fbbe85-0000-485d-a306-a67e6375c17c&width=768&dpr=4&quality=100&sign=762e11f2&sv=2)
+
+[PreviousOkta User](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-accounts/okta-user)[NextRotate Credential via
+REST API](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/saas-accounts/rotate-credential-via-rest-api)
+
+Last updated 2 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+Attach the below  that will perform the password rotation. The script has
+additional comments inside that describe each line.
+
+[Python script](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-accounts/snowflake-user#python-script)
 

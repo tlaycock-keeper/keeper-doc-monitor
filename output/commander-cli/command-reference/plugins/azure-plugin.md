@@ -601,9 +601,6 @@ set to the record, or supplied to the rotation command
 
 cmdr:rules
 
-(Optional) [password complexity rules](https://github.com/Keeper-
-Security/Commander/tree/master/keepercommander/plugins/password_rules.md)
-
 ##
 
 Rotate
@@ -669,6 +666,11 @@ Was this helpful?
 © 2025 Keeper Security, Inc.
 
 See the section for more information on legacy vs typed records
+
+(Optional)
+
+[password complexity rules](https://github.com/Keeper-
+Security/Commander/tree/master/keepercommander/plugins/password_rules.md)
 
 [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
 cli#typed-vs-untyped-records-v3-vs-v2)

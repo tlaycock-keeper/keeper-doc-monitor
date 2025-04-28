@@ -436,6 +436,36 @@ manager/password-rotation/rotation-use-cases/aws/directory-user?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -460,10 +490,14 @@ PDF](/en/keeperpam/~gitbook/pdf?page=6QOYq9eNyW76cl9c81AG&only=yes&limit=100)
 
 Rotating AWS Managed Microsoft AD Service accounts with Keeper
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F37orTjzRRK23pCO2bVcX%252FDirectory%2520User.jpg%3Falt%3Dmedia%26token%3Dd24de70d-6d13-48ce-
-af78-36ea0e66b873&width=768&dpr=4&quality=100&sign=1858c775&sv=2)
+[PreviousIAM User Password](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/iam-user)[NextEC2 Virtual Machine
+User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/aws/ec2-virtual-machine-user)
+
+Last updated 2 months ago
+
+Was this helpful?
 
 ##
 
@@ -487,15 +521,7 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  * Keeper Secrets Manager is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
-
-  * Keeper Rotation is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
-
-  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
-
-  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is able to communicate with your AWS Directory Services
-
-  * Your AWS environment is [configured](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup) per our documentation
+  *   *   *   *   * 
 
 ##
 
@@ -622,10 +648,6 @@ Set this field to `USE_INSTANCE_ROLE` if you are using EC2 role policy
 
 List of AWS region names, one per line Example: `us-east-1 us-east-2`
 
-For more details on all the configurable fields in the PAM Configuration
-record, visit this [page](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration).
-
 ##
 
 3\. Set up one or more PAM User Records
@@ -701,42 +723,39 @@ Copy
     
     Import-Module ActiveDirectory
 
-[PreviousIAM User Password](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/aws/iam-user)[NextEC2 Virtual Machine
-User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/aws/ec2-virtual-machine-user)
+Keeper Secrets Manager is enabled for your
 
-Last updated 2 months ago
+Keeper Rotation is enabled for your
 
-Was this helpful?
+A Keeper Secrets Manager  has been created
 
-#### Company
+A Keeper Rotation  is already installed, running, and is able to communicate
+with your AWS Directory Services
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+Your AWS environment is  per our documentation
 
-#### Support
+For more details on all the configurable fields in the PAM Configuration
+record, visit this .
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+[application](/en/keeperpam/privileged-access-manager/getting-
+started/applications)
 
-#### Solutions
+[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+[configured](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration/aws-environment-setup)
 
-#### Pricing
+[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration)
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
 
-© 2025 Keeper Security, Inc.
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F37orTjzRRK23pCO2bVcX%252FDirectory%2520User.jpg%3Falt%3Dmedia%26token%3Dd24de70d-6d13-48ce-
+af78-36ea0e66b873&width=768&dpr=4&quality=100&sign=1858c775&sv=2)
 

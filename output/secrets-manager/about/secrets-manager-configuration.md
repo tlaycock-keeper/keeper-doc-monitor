@@ -494,8 +494,9 @@ Each Keeper Secrets Manager SDK and integration uses a "configuration" to
 store connection tokens, encryption keys, identifiers and domain information
 used to authenticate and decrypt data from the Keeper Secrets Manager APIs.
 
-Secrets Manager configurations are created from  and have a one to one
-relationship with.
+Secrets Manager configurations are created from [One Time Access
+Tokens](/en/keeperpam/secrets-manager/about/one-time-token) and have a one to
+one relationship with.
 
 ####
 
@@ -551,6 +552,11 @@ configuration is created automatically.
 
 SDK Example
 
+Below is an example of how to use the[ Python SDK ](/en/keeperpam/secrets-
+manager/developer-sdk-library/python-sdk)to create a configuration file. The
+configuration is created when Secrets Manager is initialized with a One Time
+Access Token.
+
 Copy
 
     
@@ -574,6 +580,9 @@ use the file to initialize the SDK and remove the One Time Access Token.
 
 Integration Example
 
+Below is in example of using the Keeper Secrets Manager[ Jenkins
+Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin).
+
 The Jenkins plugin takes a One Time Access Token to initialize and creates a
 configuration automatically behind-the-scenes. In this example, simply enter a
 One Time Access Token in the form and click 'OK'.
@@ -591,6 +600,10 @@ cases.
 ####
 
 Secrets Manager CLI
+
+The [Secrets Manager CLI (KSM) ](/en/keeperpam/secrets-manager/secrets-
+manager-command-line-interface)tool can initialize a One Time Access Token and
+create a configuration.
 
 To do this, run the `init` command
 
@@ -626,6 +639,15 @@ Copy
 
 Commander CLI
 
+[Commander CLI ](/en/keeperpam/commander-cli/overview)can be used to
+initialize a One Time Access Token and create Secrets Manager configuration.
+
+Use the `secrets-manager client add` Command with `--config-init` to create a
+configuration. Configurations can be created in json or base64 formats, or in
+integration-specific formats in some cases. (see the [integrations
+documentation](/en/keeperpam/secrets-manager/integrations) for more
+information on what format each integration accepts)
+
 FormatExample
 
 Copy
@@ -650,35 +672,6 @@ Copy
 When initializing a configuration in Commander, typically `--unlock-ip` should
 be included in the command. If it is not included, the client device will be
 locked to the IP Address that Commander is using.
-
-Below is an example of how to use theto create a configuration file. The
-configuration is created when Secrets Manager is initialized with a One Time
-Access Token.
-
-Below is in example of using the Keeper Secrets Manager.
-
-The tool can initialize a One Time Access Token and create a configuration.
-
-can be used to initialize a One Time Access Token and create Secrets Manager
-configuration.
-
-Use the `secrets-manager client add` Command with `--config-init` to create a
-configuration. Configurations can be created in json or base64 formats, or in
-integration-specific formats in some cases. (see the  for more information on
-what format each integration accepts)
-
-[ Python SDK ](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk)
-
-[ Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
-
-[Secrets Manager CLI (KSM) ](/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface)
-
-[Commander CLI ](/en/keeperpam/commander-cli/overview)
-
-[integrations documentation](/en/keeperpam/secrets-manager/integrations)
-
-[One Time Access Tokens](/en/keeperpam/secrets-manager/about/one-time-token)
 
 [ client devices](/en/keeperpam/secrets-manager/about/terminology#client-
 device)

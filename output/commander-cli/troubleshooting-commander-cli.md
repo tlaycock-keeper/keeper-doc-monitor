@@ -634,11 +634,6 @@ apply.
 
 Read more about Role Enforcement Polices in the docs:
 
-[![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
-files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Enforcement
-PoliciesEnterprise Guide](https://docs.keeper.io/enterprise-
-guide/roles/enforcement-policies)
-
 ###
 
 Administrative Permissions
@@ -648,11 +643,6 @@ can be turned off and on with these permission policies. These include things
 like running compliance reports.
 
 Read more about Administrative Permissions in the docs:
-
-[![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
-files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Delegated
-AdministrationEnterprise Guide](https://docs.keeper.io/enterprise-
-guide/delegated-administration#delegated-admin-via-administrative-permissions)
 
 ###
 
@@ -875,6 +865,16 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+[![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
+files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Enforcement
+PoliciesEnterprise Guide](https://docs.keeper.io/enterprise-
+guide/roles/enforcement-policies)
+
+[![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
+files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Delegated
+AdministrationEnterprise Guide](https://docs.keeper.io/enterprise-
+guide/delegated-administration#delegated-admin-via-administrative-permissions)
 
 [![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
 files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Keeper

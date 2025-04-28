@@ -424,30 +424,6 @@ manager/overview?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * What is Keeper Secrets Manager?
-  * Features
-  * Get Started
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MeXQpBNa9pJqpPkixr9&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-
-# Secrets Manager Overview
-
-Overview of Keeper Secrets Manager (KSM) for IT Admins, DevOps & Developers
-
-[PreviousFAQs](/en/keeperpam/faqs)[NextQuick Start
-Guide](/en/keeperpam/secrets-manager/quick-start-guide)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -478,6 +454,17 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MeXQpBNa9pJqpPkixr9&only=yes&limit=100)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 ##
 
 What is Keeper Secrets Manager?
@@ -486,8 +473,6 @@ Keeper Secrets Manager (KSM) provides your DevOps, IT Security and software
 development teams with a fully cloud-based, Zero-Knowledge platform for
 managing all of your infrastructure secrets such as API keys, Database
 passwords, access keys, certificates and any type of confidential data.
-
-Secrets Manager Video Demo
 
 Common use cases for Secrets Manager include:
 
@@ -507,15 +492,7 @@ Common use cases for Secrets Manager include:
 
 Features
 
-**Keeper Secrets Manager** is part of the [Keeper Password Security
-platform](https://keepersecurity.com). With millions of users worldwide,
-Keeper Password Manager + Keeper Secrets Manager provides numerous benefits
-over using Hashicorp Vault, Delinea, Cyberark and other "legacy" Secrets
-Management products:
-
-  * Superior Zero-Knowledge encryption model ([learn more](https://docs.keeper.io/enterprise-guide/keeper-encryption-model))
-
-  * No hosted software or VMs to configure and manage (100% Cloud-based)
+  *   * No hosted software or VMs to configure and manage (100% Cloud-based)
 
   * Secure and user-friendly Web Vault and Browser Extensions for secrets management
 
@@ -551,10 +528,38 @@ Management products:
 
 Get Started
 
-Ready to get started with Keeper Secrets Manager? [Proceed to the Setup
-Instructions](/en/keeperpam/secrets-manager/quick-start-guide).
+**Keeper Secrets Manager** is part of the . With millions of users worldwide,
+Keeper Password Manager + Keeper Secrets Manager provides numerous benefits
+over using Hashicorp Vault, Delinea, Cyberark and other "legacy" Secrets
+Management products:
+
+Superior Zero-Knowledge encryption model ()
+
+Ready to get started with Keeper Secrets Manager? .
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+
+# Secrets Manager Overview
+
+Overview of Keeper Secrets Manager (KSM) for IT Admins, DevOps & Developers
+
+[PreviousFAQs](/en/keeperpam/faqs)[NextQuick Start
+Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+  * What is Keeper Secrets Manager?
+  * Features
+  * Get Started
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fn3vG2nrg5HGtXfO8n42h%252FKSM%2520Overview.jpg%3Falt%3Dmedia%26token%3Da9ff6c09-6287-412b-97fc-76bc8a34ac62&width=768&dpr=4&quality=100&sign=62d47c88&sv=2)
+
+[Keeper Password Security platform](https://keepersecurity.com)
+
+[learn more](https://docs.keeper.io/enterprise-guide/keeper-encryption-model)
+
+[Proceed to the Setup Instructions](/en/keeperpam/secrets-manager/quick-start-
+guide)
+
+Secrets Manager Video Demo
 

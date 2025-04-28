@@ -448,6 +448,79 @@ PDF](/en/keeperpam/~gitbook/pdf?page=T0G0fGue5d2tTiFHAQOw&only=yes&limit=100)
 Guide for using PAM Resource Records in the Keeper Vault for privileged access
 functionality.
 
+##
+
+Overview
+
+KeeperPAM Resource records are special record types designed to organize and
+store information of your target infrastructure, machines, web apps, workloads
+and user accounts.
+
+  * [What's a Record Type?](https://docs.keeper.io/en/enterprise-guide/record-types)
+
+###
+
+KeeperPAM Record Types
+
+In your Keeper Vault, resources that represent your infrastructure are created
+with the following Record Types:
+
+PAM Record Type
+
+Target Infrastructure
+
+Windows/macOS/Linux Machines, EC2 Instances, Azure VMs, etc.
+
+MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
+
+Active Directory, OpenLDAP
+
+Web-based Applications, internal apps or cloud apps
+
+Any local user, remote user, database credential or admin account. PAM User
+records can also be configured for scheduled or on-demand password rotation.
+
+###
+
+Record Linking
+
+The PAM User record is special because it can be
+[linked](/en/keeperpam/privileged-access-manager/getting-started/record-
+linking) from the other resources. This way, you can [share
+access](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-
+access-control) to a Machine, Database, Directory or Remote Browser without
+sharing access to the underlying credentials.
+
+###
+
+Creating a PAM Record
+
+From the Vault UI, click on Create New and select either Rotation, Tunnel or
+Connection.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtnIDbstjLAfq2ECqq9HB%252FScreenshot%25202024-12-28%2520at%25203.01.48%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3De63d20a1-aa96-4fbd-89ed-d0fdd455a830&width=768&dpr=4&quality=100&sign=28fcb001&sv=2)
+
+Create a new PAM Resource Record
+
+Alternatively, you can right-click on a folder and select Rotation, Tunnel or
+Connection.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FMeo2Pl0F5xDl8iY2NQeK%252FScreenshot%25202024-12-28%2520at%25203.05.53%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D811e735e-6692-4f26-88a7-4e4e02bd2ec4&width=768&dpr=4&quality=100&sign=a57a48e6&sv=2)
+
+Right-click to create PAM Resource Records
+
+The "Target" selection will determine what type of record will be created.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNqfGO32FajbD2yVagIb5%252FScreenshot%25202024-12-28%2520at%25203.01.06%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Df2ba3ce4-b709-403a-824e-37072e227dc8&width=768&dpr=4&quality=100&sign=ca837904&sv=2)
+
+Selecting a Target
+
 [PreviousLocal Environment Setup](/en/keeperpam/privileged-access-
 manager/getting-started/pam-configuration/local-environment-setup)[NextPAM
 Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
@@ -487,91 +560,18 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
-##
-
-Overview
-
-KeeperPAM Resource records are special record types designed to organize and
-store information of your target infrastructure, machines, web apps, workloads
-and user accounts.
-
-  * [What's a Record Type?](https://docs.keeper.io/en/enterprise-guide/record-types)
-
-###
-
-KeeperPAM Record Types
-
-In your Keeper Vault, resources that represent your infrastructure are created
-with the following Record Types:
-
-PAM Record Type
-
-Target Infrastructure
-
 [PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-machine)
-
-Windows/macOS/Linux Machines, EC2 Instances, Azure VMs, etc.
 
 [PAM Database ](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-database)
 
-MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
-
 [PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-directory)
-
-Active Directory, OpenLDAP
 
 [PAM Remote Browser ](/en/keeperpam/privileged-access-manager/getting-
 started/pam-resources/pam-remote-browser)
 
-Web-based Applications, internal apps or cloud apps
-
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
-
-Any local user, remote user, database credential or admin account. PAM User
-records can also be configured for scheduled or on-demand password rotation.
-
-###
-
-Record Linking
-
-The PAM User record is special because it can be
-[linked](/en/keeperpam/privileged-access-manager/getting-started/record-
-linking) from the other resources. This way, you can [share
-access](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-
-access-control) to a Machine, Database, Directory or Remote Browser without
-sharing access to the underlying credentials.
-
-###
-
-Creating a PAM Record
-
-From the Vault UI, click on Create New and select either Rotation, Tunnel or
-Connection.
-
-Alternatively, you can right-click on a folder and select Rotation, Tunnel or
-Connection.
-
-The "Target" selection will determine what type of record will be created.
-
-Create a new PAM Resource Record
-
-Right-click to create PAM Resource Records
-
-Selecting a Target
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtnIDbstjLAfq2ECqq9HB%252FScreenshot%25202024-12-28%2520at%25203.01.48%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3De63d20a1-aa96-4fbd-89ed-d0fdd455a830&width=768&dpr=4&quality=100&sign=28fcb001&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FMeo2Pl0F5xDl8iY2NQeK%252FScreenshot%25202024-12-28%2520at%25203.05.53%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D811e735e-6692-4f26-88a7-4e4e02bd2ec4&width=768&dpr=4&quality=100&sign=a57a48e6&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNqfGO32FajbD2yVagIb5%252FScreenshot%25202024-12-28%2520at%25203.01.06%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Df2ba3ce4-b709-403a-824e-37072e227dc8&width=768&dpr=4&quality=100&sign=ca837904&sv=2)
 

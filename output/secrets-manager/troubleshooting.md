@@ -670,10 +670,6 @@ with Secrets Manager
 
 Create Typed Records
 
-Typed records can be created in by clicking "Create New" in the vault, or
-using the [add command](/en/keeperpam/commander-cli/command-reference/record-
-commands#add-command-record-types) in Commander.
-
 When choosing a record type, all types are compatible with Secrets Manager
 except for the "General" type.
 
@@ -749,10 +745,16 @@ To resolve a throttling limit:
 If you require changes to your throttling limit, please contact the Keeper
 team at commander@keepersecurity.com
 
+Typed records can be created in by clicking "Create New" in the vault, or
+using the  in Commander.
+
 For more information on using the `convert` command, see the
 
 [Commander documentation.](/en/keeperpam/commander-cli/command-
 reference/record-commands/record-type-commands#convert-command)
+
+[add command](/en/keeperpam/commander-cli/command-reference/record-
+commands#add-command-record-types)
 
 The Keeper Secrets Manager Enforcement Policy in the Keeper Admin Console
 

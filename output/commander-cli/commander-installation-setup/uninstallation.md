@@ -545,12 +545,12 @@ Uninstallation - Mac Binary (.pkg)
 If you installed Keeper Commander using the Mac , follow the following steps
 to uninstall:
 
-[binary](/en/keeperpam/commander-cli/commander-installation-
-setup/installation-on-mac#binary-installation-recommended)
+[Windows binary,](/en/keeperpam/commander-cli/commander-installation-
+setup/installation-on-windows#typical-binary-installation-recommended)
 
 [pip3](/en/keeperpam/commander-cli/commander-installation-setup/installation-
 on-linux#installing-python)
 
-[Windows binary,](/en/keeperpam/commander-cli/commander-installation-
-setup/installation-on-windows#typical-binary-installation-recommended)
+[binary](/en/keeperpam/commander-cli/commander-installation-
+setup/installation-on-mac#binary-installation-recommended)
 

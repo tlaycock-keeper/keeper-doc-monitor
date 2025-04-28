@@ -569,10 +569,6 @@ Copy
     this-device register
     this-device persistent-login on
 
- _For more information on persistent login and options, see the_[
-_documentation page_](/en/keeperpam/commander-cli/commander-installation-
-setup/logging-in#persistent-login) _._
-
 ####
 
 Getting Started
@@ -809,7 +805,12 @@ Was this helpful?
 
 _Find more information in the_
 
- _See more information about this command in the_
+ _For more information on persistent login and options, see the_ _._
+
+_See more information about this command in the_
+
+[_documentation page_](/en/keeperpam/commander-cli/commander-installation-
+setup/logging-in#persistent-login)
 
 [_command documentation._](/en/keeperpam/commander-cli/command-
 reference/enterprise-management-commands#enterprise-user-command)

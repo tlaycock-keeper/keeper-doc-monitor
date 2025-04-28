@@ -428,6 +428,36 @@ reference/plugins/ssh-plugin?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Prerequisites
@@ -454,13 +484,20 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-Mf4JgtyeHpgc7eWxQTO&only=yes&limit=100)
 
 Rotate SSH keys with Commander
 
+[PreviousPSPasswd Plugin](/en/keeperpam/commander-cli/command-
+reference/plugins/pspasswd-plugin)[NextUnix Passwd
+Plugin](/en/keeperpam/commander-cli/command-reference/plugins/unix-passwd-
+plugin)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 Keeper has also launched a zero-trust Password Rotation feature with
 KeeperPAM. This new capability is recommended for most password rotation use
 cases. The Documentation is linked below:
 
-  * [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-rotation)
-
-  * Commander [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
+  *   * Commander 
 
 The SSH plugin for Keeper Commander gives you the ability to generate and
 rotate SSH keys to one or more target systems, or rotate any local or remote
@@ -500,10 +537,6 @@ type field is required. Additional fields may be added depending on the
 rotation type as well. See the instructions below.
 
 The standard "SSH Key" record type is a good fit for SSH rotations.
-
-See the [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-
-commander-cli#typed-vs-untyped-records-v3-vs-v2)section for more information
-on legacy vs typed records
 
 ###
 
@@ -617,10 +650,6 @@ This plugin makes an assumption that the target system uses the default
 settings for SSH service, i.e. `authorized_keys` file is located in the `.ssh`
 directory of the user **HOME** directory.
 
-For more information on the `rotate` command see
-[documentation](/en/keeperpam/commander-cli/command-
-reference/plugins/password-rotation#rotate-command)
-
 ###
 
 SSH Passwords Rotation
@@ -641,44 +670,18 @@ to identify which plugin to use. In this case port 22 means the ssh plugin is
 used. Adding the plugin type to the record makes it possible to rotate several
 records at once with different plugins.
 
-[PreviousPSPasswd Plugin](/en/keeperpam/commander-cli/command-
-reference/plugins/pspasswd-plugin)[NextUnix Passwd
-Plugin](/en/keeperpam/commander-cli/command-reference/plugins/unix-passwd-
-plugin)
+See the section for more information on legacy vs typed records
 
-Last updated 3 months ago
+For more information on the `rotate` command see
 
-Was this helpful?
+[Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
+rotation)
 
-#### Company
+[KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
+commands)
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+[documentation](/en/keeperpam/commander-cli/command-
+reference/plugins/password-rotation#rotate-command)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -687,6 +690,9 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FE4X6qOhCP
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FoNT8pQ2YxiSOv8OBWv6W%252Fimage.png%3Falt%3Dmedia%26token%3D5f362713-c5ec-4d56-b515-2eded5aa51cc&width=768&dpr=4&quality=100&sign=750f352&sv=2)
+
+[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
+cli#typed-vs-untyped-records-v3-vs-v2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

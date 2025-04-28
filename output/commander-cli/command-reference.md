@@ -525,7 +525,23 @@ Import and Exporting Data
 
 Reporting Commands
 
-  *   *   *   *   *   *   *   *   *   * [compliance-report](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/compliance-commands)
+  * [audit-log](/en/keeperpam/commander-cli/command-reference/reporting-commands#audit-log-command)
+
+  * [audit-report](/en/keeperpam/commander-cli/command-reference/reporting-commands#audit-report-command)
+
+  *   * [user-report](/en/keeperpam/commander-cli/command-reference/reporting-commands#user-report-command)
+
+  * [security-audit-report](/en/keeperpam/commander-cli/command-reference/reporting-commands#security-audit-report-command)
+
+  * [share-report](/en/keeperpam/commander-cli/command-reference/reporting-commands#share-report-command)
+
+  * [shared-records-report](/en/keeperpam/commander-cli/command-reference/reporting-commands#shared-records-report-command)
+
+  * [aging-report](/en/keeperpam/commander-cli/command-reference/reporting-commands#aging-report-command)
+
+  * [action-report](/en/keeperpam/commander-cli/command-reference/reporting-commands#action-report-command)
+
+  * [compliance-report](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/compliance-commands)
 
   *   * [external-shares-report](https://docs.keeper.io/secrets-manager/commander-cli/command-reference/reporting-commands#external-shares-report-command)
 
@@ -533,7 +549,31 @@ Reporting Commands
 
 MSP Management Commands
 
-  *   *   *   *   *   *   *   *   *   *   *   *   * 
+  * [msp-info](/en/keeperpam/commander-cli/command-reference/msp-management-commands#msp-info-command)
+
+  * [msp-down](/en/keeperpam/commander-cli/command-reference/msp-management-commands#msp-down-command)
+
+  * [msp-license](/en/keeperpam/commander-cli/command-reference/msp-management-commands#msp-license-command)
+
+  * [msp-add](/en/keeperpam/commander-cli/command-reference/msp-management-commands#msp-add)
+
+  * [msp-remove](/en/keeperpam/commander-cli/command-reference/msp-management-commands#msp-remove)
+
+  * [msp-update](/en/keeperpam/commander-cli/command-reference/msp-management-commands#msp-update)
+
+  * [msp-billing-report](/en/keeperpam/commander-cli/command-reference/msp-management-commands#msp-billing-report)
+
+  * [msp-legacy-report](/en/keeperpam/commander-cli/command-reference/reporting-commands#msp-legacy-report-command)
+
+  * [switch-to-mc](/en/keeperpam/commander-cli/command-reference/msp-management-commands#switch-to-mc-command)
+
+  * [switch-to-msp](/en/keeperpam/commander-cli/command-reference/msp-management-commands#switch-to-msp-command)
+
+  * [msp-convert-node](/en/keeperpam/commander-cli/command-reference/msp-management-commands#msp-convert-node-command)
+
+  * [msp-copy-role](/en/keeperpam/commander-cli/command-reference/msp-management-commands#msp-copy-role-command)
+
+  * [distributor](/en/keeperpam/commander-cli/command-reference/msp-management-commands#distributor-commands)
 
 ###
 
@@ -551,7 +591,7 @@ Secrets Manager Commands
 
 BreachWatch Commands
 
-  * 
+  * [breachwatch](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands/breachwatch-commands#breachwatch-command)
 
 ###
 
@@ -579,7 +619,7 @@ Legacy Commands
 
   * [rsync](/en/keeperpam/commander-cli/command-reference/connection-commands/sftp-sync)
 
-  *   *   * 
+  *   *   * [msp-legacy-report](/en/keeperpam/commander-cli/command-reference/reporting-commands#msp-legacy-report-command)
 
 (legacy)
 
@@ -609,36 +649,6 @@ commands#import-command)
 
 [export](/en/keeperpam/commander-cli/command-reference/import-and-export-
 commands#export-command)
-
-[audit-log](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#audit-log-command)
-
-[audit-report](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#audit-report-command)
-
-[user-report](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#user-report-command)
-
-[security-audit-report](/en/keeperpam/commander-cli/command-
-reference/reporting-commands#security-audit-report-command)
-
-[share-report](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#share-report-command)
-
-[shared-records-report](/en/keeperpam/commander-cli/command-
-reference/reporting-commands#shared-records-report-command)
-
-[aging-report](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#aging-report-command)
-
-[action-report](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#action-report-command)
-
-[msp-legacy-report](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#msp-legacy-report-command)
-
-[msp-legacy-report](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#msp-legacy-report-command)
 
 [list](/en/keeperpam/commander-cli/command-reference/record-commands#list-
 command)
@@ -712,6 +722,15 @@ commands#password-report-command)
 [find-ownerless](/en/keeperpam/commander-cli/command-reference/record-
 commands#find-ownerless)
 
+[rotate](/en/keeperpam/commander-cli/command-reference/plugins/password-
+rotation#rotate-command)
+
+[set](/en/keeperpam/commander-cli/command-reference/plugins/password-
+rotation#set-command)
+
+[echo](/en/keeperpam/commander-cli/command-reference/plugins/password-
+rotation#echo-command)
+
 [compliance](/en/keeperpam/commander-cli/command-reference/enterprise-
 management-commands/compliance-commands#the-compliance-command)
 
@@ -729,45 +748,6 @@ reference/secrets-manager-commands#ksm-share-add-command)
 
 [secrets-manager client add](/en/keeperpam/commander-cli/command-
 reference/secrets-manager-commands#ksm-client-add-command)
-
-[msp-info](/en/keeperpam/commander-cli/command-reference/msp-management-
-commands#msp-info-command)
-
-[msp-down](/en/keeperpam/commander-cli/command-reference/msp-management-
-commands#msp-down-command)
-
-[msp-license](/en/keeperpam/commander-cli/command-reference/msp-management-
-commands#msp-license-command)
-
-[msp-add](/en/keeperpam/commander-cli/command-reference/msp-management-
-commands#msp-add)
-
-[msp-remove](/en/keeperpam/commander-cli/command-reference/msp-management-
-commands#msp-remove)
-
-[msp-update](/en/keeperpam/commander-cli/command-reference/msp-management-
-commands#msp-update)
-
-[msp-billing-report](/en/keeperpam/commander-cli/command-reference/msp-
-management-commands#msp-billing-report)
-
-[switch-to-mc](/en/keeperpam/commander-cli/command-reference/msp-management-
-commands#switch-to-mc-command)
-
-[switch-to-msp](/en/keeperpam/commander-cli/command-reference/msp-management-
-commands#switch-to-msp-command)
-
-[msp-convert-node](/en/keeperpam/commander-cli/command-reference/msp-
-management-commands#msp-convert-node-command)
-
-[msp-copy-role](/en/keeperpam/commander-cli/command-reference/msp-management-
-commands#msp-copy-role-command)
-
-[distributor](/en/keeperpam/commander-cli/command-reference/msp-management-
-commands#distributor-commands)
-
-[breachwatch](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands/breachwatch-commands#breachwatch-command)
 
 [this-device](/en/keeperpam/commander-cli/command-reference/misc-
 commands#this-device-command)
@@ -815,15 +795,6 @@ commands#sync-security-data-command)
 commands#keeper-fill-command)
 
 [2fa](/en/keeperpam/commander-cli/command-reference/misc-commands#2fa-command)
-
-[rotate](/en/keeperpam/commander-cli/command-reference/plugins/password-
-rotation#rotate-command)
-
-[set](/en/keeperpam/commander-cli/command-reference/plugins/password-
-rotation#set-command)
-
-[echo](/en/keeperpam/commander-cli/command-reference/plugins/password-
-rotation#echo-command)
 
 [audit-alert](/en/keeperpam/commander-cli/command-reference/enterprise-
 management-commands#audit-alert-command)

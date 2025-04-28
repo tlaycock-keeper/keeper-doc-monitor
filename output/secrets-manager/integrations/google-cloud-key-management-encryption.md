@@ -434,39 +434,6 @@ encryption?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Features
-  * Prerequisites
-  * Setup
-  * 1\. Install Module
-  * 2\. Configure Google CKM Connection
-  * 3\. Add GCP Key Vault Storage to Your Code
-  * Using GCP Key Vault Integration
-  * Additional Options
-  * Change Key
-  * Decrypt Config
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=ojDLP9XDQastxnsIT1I5&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Google Cloud Key Management Encryption
-
-Protect Secrets Manager connection details with Google Cloud Key Management
-
-[PreviousGoogle Cloud Secret Manager Sync](/en/keeperpam/secrets-
-manager/integrations/gcp-secret-manager)[NextHashicorp
-Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
-
-Last updated 10 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -496,6 +463,17 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=ojDLP9XDQastxnsIT1I5&only=yes&limit=100)
+
+Last updated 11 days ago
+
+Was this helpful?
 
 Keeper Secrets Manager integrates with Google Cloud Key Management in order to
 provide encryption for Keeper Secrets Manager configuration files. With this
@@ -530,29 +508,17 @@ JavaJavaScriptPython.NetGoLang
 
   * Google Cloud Key Management needs `ENCRYPT` and `DECRYPT` permissions.
 
-  * Supports the [JavaScript Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-sdk)
-
-  * Requires the `@google-cloud/kms`**** package from GCP SDK.
+  *   * Requires the `@google-cloud/kms`**** package from GCP SDK.
 
   * GCP CKM Key needs `ENCRYPT` and `DECRYPT` permissions.
 
-  * Supports the [Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk)
-
-  * Requires `google-cloud-kms` package
+  *   * Requires `google-cloud-kms` package
 
   * GCP CKM Key needs `ENCRYPT` and `DECRYPT` permissions.
 
-  * Supports the [.Net Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/.net-sdk)
+  *   *   * GCP CKM Key needs `ENCRYPT` and `DECRYPT` permissions.
 
-  * Requires [Google.Apis.CloudKMS.v1](https://www.nuget.org/packages/Google.Apis.CloudKMS.v1)
-
-  * GCP CKM Key needs `ENCRYPT` and `DECRYPT` permissions.
-
-  * Supports the [GoLang Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/golang-sdk)
-
-  * Requires the [kms/apiv1](https://pkg.go.dev/cloud.google.com/go/kms/apiv1) , [kmspb](https://pkg.go.dev/cloud.google.com/go/kms/apiv1/kmspb) , [core](https://pkg.go.dev/github.com/keeper-security/secrets-manager-go/core), [kms](https://pkg.go.dev/cloud.google.com/go/kms) package from GCP SDK.
-
-  * GCP CKM Key needs `ENCRYPT` and `DECRYPT` permissions.
+  *   *   * GCP CKM Key needs `ENCRYPT` and `DECRYPT` permissions.
 
 ##
 
@@ -567,6 +533,129 @@ JavaJavaScriptPython.NetGoLang
 Setting up project using Gradle or Maven
 
 **Gradle**
+
+**Maven**
+
+The Secrets Manager Google Cloud Key Management module can be installed using
+npm
+
+The Secrets Manager OCI KSM module can be installed using pip
+
+The Secrets Manager oracle KSM module can be installed using dotnet nuget
+package manager.
+
+The Secrets Manager oracle KSM module Integration can be installed using
+
+###
+
+2\. Configure **Google CKM** Connection
+
+To enable secure authentication with Google Cloud Platform (GCP), generate a
+Service Account key in JSON format. This credential file will serve as the
+authentication mechanism for interacting with GCP services programmatically.
+
+See the Google documentation for more information on generating keys:
+
+###
+
+3\. Add GCP Key Vault Storage to Your Code
+
+Once GCP connection has been configured, You can fetch the Key to encrypt /
+decrypt KSM configuration using integration and you need to tell the Secrets
+Manager SDK to utilize the KMS as storage.
+
+##
+
+Using **GCP Key Vault Integration**
+
+Once setup, the Secrets Manager GCP Key Vault integration supports all Secrets
+Manager SDK functionality. Your code will need to be able to access the GCP
+CKM Keys in order to manage the encryption and decryption of the KSM
+configuration file. **Using Specified Connection credentials**
+
+JavaJavaScriptPython.NetGo
+
+To do this, create `GcpKeyValueStorage` instance and use this in
+`SecretManagerOptions` constructor.
+
+The `GcpKeyValueStorage` will require the name of the Secrets Manager
+configuration file , gcp credential file and key details of Cloud Key
+Management.
+
+To do this, use `GCPKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require an `keyConfig` , `gcpsessionConfig`(generated by
+`GCPKSMClient`) , and the name of the `Secrets Manager configuration file`
+which will be encrypted by GCP Cloud Key Management.
+
+To do this, use `GCPKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require `gcp_key_config` (generated by `GCPConfig` ),
+`gcp_session_config` object (generated by `GCPKMSClientConfig` ) and the name
+of the `Secrets Manager configuration file` which will be encrypted by GCP
+Cloud Key Management.
+
+To do this, use `GCPKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require an `keyConfig` (generated by `GCPKeyConfig` ),
+`gcpSessionConfig` object (generated by `GCPKMSClient` ), and the name of the
+`Secrets Manager configuration file` which will be encrypted by GCP Cloud Key
+Management.
+
+To do this, use `NewGCPKeyVaultStorage` as your Secrets Manager storage in the
+`NewSecretsManager`
+
+The `NewGCPKeyVaultStorage` requires the following parameters to encrypt the
+KSM configuration using GCP Cloud Key Management:
+
+`ksmConfigFileName` : The file name of KSM configuration.
+
+`credentialFileWithPath` : Provide file path with name of GCP credential file.
+
+##
+
+Additional Options
+
+###
+
+Change Key
+
+We can change key that is used for encrypting the KSM configuration, examples
+below show the code needed to use it
+
+JavaJavaScriptPython.NetGoLang
+
+###
+
+Decrypt Config
+
+We can decrypt the config if current implementation is to be migrated onto a
+different cloud or if you want your raw credentials back. The function accepts
+a boolean which when set to true will save the decrypted configuration to file
+and if it is false, will just return decrypted configuration.
+
+JavaJavaScriptPython.NetGoLang
+
+Supports the
+
+Supports the
+
+Supports the
+
+Requires
+
+Supports the
+
+Requires the  ,  , ,  package from GCP SDK.
+
+`keyResourceName` : Provide of Google Cloud Key Management
+
+You're ready to use the KSM integration
+
+Check out the  for more examples and functionality
 
 Copy
 
@@ -591,8 +680,6 @@ Copy
     	implementation("ch.qos.logback:logback-core:1.2.6")
     	implementation("org.bouncycastle:bc-fips:1.0.2.4")
     }
-
-**Maven**
 
 Copy
 
@@ -667,16 +754,11 @@ Copy
     	<version>1.0.2.4</version>
     </dependency>
 
-The Secrets Manager Google Cloud Key Management module can be installed using
-npm
-
 Copy
 
     
     
     npm install @keeper-security/secrets-manager-gcp
-
-The Secrets Manager OCI KSM module can be installed using pip
 
 Copy
 
@@ -684,61 +766,17 @@ Copy
     
     pip3 install keeper-secrets-manager-storage
 
-The Secrets Manager oracle KSM module can be installed using dotnet nuget
-package manager.
-
 Copy
 
     
     
     dotnet add package Keeper.SecretsManager.GCPKeyManagement
 
-The Secrets Manager oracle KSM module Integration can be installed using
-
 Copy
 
     
     
     go get github.com/keeper-security/secrets-manager-go/integrations/gcp
-
-###
-
-2\. Configure **Google CKM** Connection
-
-To enable secure authentication with Google Cloud Platform (GCP), generate a
-Service Account key in JSON format. This credential file will serve as the
-authentication mechanism for interacting with GCP services programmatically.
-
-See the Google documentation for more information on generating keys:
-
-<https://cloud.google.com/iam/docs/keys-create-
-delete>[](https://cloud.google.com/iam/docs/keys-create-delete)
-
-###
-
-3\. Add GCP Key Vault Storage to Your Code
-
-Once GCP connection has been configured, You can fetch the Key to encrypt /
-decrypt KSM configuration using integration and you need to tell the Secrets
-Manager SDK to utilize the KMS as storage.
-
-##
-
-Using **GCP Key Vault Integration**
-
-Once setup, the Secrets Manager GCP Key Vault integration supports all Secrets
-Manager SDK functionality. Your code will need to be able to access the GCP
-CKM Keys in order to manage the encryption and decryption of the KSM
-configuration file. **Using Specified Connection credentials**
-
-JavaJavaScriptPython.NetGo
-
-To do this, create `GcpKeyValueStorage` instance and use this in
-`SecretManagerOptions` constructor.
-
-The `GcpKeyValueStorage` will require the name of the Secrets Manager
-configuration file , gcp credential file and key details of Cloud Key
-Management.
 
 Copy
 
@@ -772,13 +810,6 @@ Copy
     	}
     }
 
-To do this, use `GCPKeyValueStorage` as your Secrets Manager storage in the
-`SecretsManager` constructor.
-
-The storage will require an `keyConfig` , `gcpsessionConfig`(generated by
-`GCPKSMClient`) , and the name of the `Secrets Manager configuration file`
-which will be encrypted by GCP Cloud Key Management.
-
 Copy
 
     
@@ -804,14 +835,6 @@ Copy
         getKeeperRecordsGCP()
     
 
-To do this, use `GCPKeyValueStorage` as your Secrets Manager storage in the
-`SecretsManager` constructor.
-
-The storage will require `gcp_key_config` (generated by `GCPConfig` ),
-`gcp_session_config` object (generated by `GCPKMSClientConfig` ) and the name
-of the `Secrets Manager configuration file` which will be encrypted by GCP
-Cloud Key Management.
-
 Copy
 
     
@@ -829,14 +852,6 @@ Copy
     all_records = secrets_manager.get_secrets()
     first_record = all_records[0]
     print(first_record)
-
-To do this, use `GCPKeyValueStorage` as your Secrets Manager storage in the
-`SecretsManager` constructor.
-
-The storage will require an `keyConfig` (generated by `GCPKeyConfig` ),
-`gcpSessionConfig` object (generated by `GCPKMSClient` ), and the name of the
-`Secrets Manager configuration file` which will be encrypted by GCP Cloud Key
-Management.
 
 Copy
 
@@ -871,20 +886,6 @@ Copy
        }
      }
 
-To do this, use `NewGCPKeyVaultStorage` as your Secrets Manager storage in the
-`NewSecretsManager`
-
-The `NewGCPKeyVaultStorage` requires the following parameters to encrypt the
-KSM configuration using GCP Cloud Key Management:
-
-`ksmConfigFileName` : The file name of KSM configuration.
-
-`keyResourceName` : Provide[`
-_keyResourceName_`](https://cloud.google.com/kms/docs/resource-
-hierarchy#retrieve_resource_id) of Google Cloud Key Management
-
-`credentialFileWithPath` : Provide file path with name of GCP credential file.
-
 Copy
 
     
@@ -917,19 +918,6 @@ Copy
     		fmt.Printf("Records: %v\n", record)
     	}
     }
-
-##
-
-Additional Options
-
-###
-
-Change Key
-
-We can change key that is used for encrypting the KSM configuration, examples
-below show the code needed to use it
-
-JavaJavaScriptPython.NetGoLang
 
 Copy
 
@@ -981,17 +969,6 @@ Copy
     		// do something
     	}
     fmt.Printf("Key changed: %v\n", isChanged)
-
-###
-
-Decrypt Config
-
-We can decrypt the config if current implementation is to be migrated onto a
-different cloud or if you want your raw credentials back. The function accepts
-a boolean which when set to true will save the decrypted configuration to file
-and if it is false, will just return decrypted configuration.
-
-JavaJavaScriptPython.NetGoLang
 
 Copy
 
@@ -1050,10 +1027,59 @@ Copy
     	fmt.Printf("Error while decrypting config: %v", err)
     }  
 
-You're ready to use the KSM integration 👍
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
 
-Check out the [KSM SDKs documentation](/en/keeperpam/secrets-
-manager/developer-sdk-library) for more examples and functionality
+# Google Cloud Key Management Encryption
+
+Protect Secrets Manager connection details with Google Cloud Key Management
+
+[PreviousGoogle Cloud Secret Manager Sync](/en/keeperpam/secrets-
+manager/integrations/gcp-secret-manager)[NextHashicorp
+Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
+
+  * Features
+  * Prerequisites
+  * Setup
+  * 1\. Install Module
+  * 2\. Configure Google CKM Connection
+  * 3\. Add GCP Key Vault Storage to Your Code
+  * Using GCP Key Vault Integration
+  * Additional Options
+  * Change Key
+  * Decrypt Config
+
+👍
+
+[JavaScript Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/javascript-sdk)
+
+[Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/python-sdk)
+
+[.Net Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/.net-sdk)
+
+[Google.Apis.CloudKMS.v1](https://www.nuget.org/packages/Google.Apis.CloudKMS.v1)
+
+[GoLang Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/golang-sdk)
+
+[kms/apiv1](https://pkg.go.dev/cloud.google.com/go/kms/apiv1)
+
+[kmspb](https://pkg.go.dev/cloud.google.com/go/kms/apiv1/kmspb)
+
+[core](https://pkg.go.dev/github.com/keeper-security/secrets-manager-go/core)
+
+[kms](https://pkg.go.dev/cloud.google.com/go/kms)
+
+<https://cloud.google.com/iam/docs/keys-create-
+delete>[](https://cloud.google.com/iam/docs/keys-create-delete)
+
+[`_keyResourceName_`](https://cloud.google.com/kms/docs/resource-
+hierarchy#retrieve_resource_id)
+
+[KSM SDKs documentation](/en/keeperpam/secrets-manager/developer-sdk-library)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

@@ -470,46 +470,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=2xyfCtvkzh6ud639sJOu&only=yes&limit=100)
 
 Rotating Admin/Regular Azure MariaDB Database Users with Keeper
 
-[PreviousAzure MySQL - Single or Flexible Database](/en/keeperpam/privileged-
-access-manager/password-rotation/rotation-use-cases/azure/managed-
-database/azure-mysql-single-or-flexible-database)[NextAzure PostgreSQL -
-Single or Flexible Database](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/azure/managed-database/azure-postgresql-single-or-
-flexible-database)
-
-Last updated 2 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FiJL4vwvMfYIxjqBXkYoM%252FAzure%2520MariaDB%2520Database.jpg%3Falt%3Dmedia%26token%3D221c9c73-456a-4e30-8d19-d675c691fc93&width=768&dpr=4&quality=100&sign=21875b40&sv=2)
 
 ##
 
@@ -518,15 +481,17 @@ Overview
 In this guide, you'll learn how to rotate passwords for Azure MariaDB Users
 and Admin accounts on your Azure environment using KeeperPAM. Azure MariaDB is
 an Azure managed resource where the MariaDB Admin Credentials are defined in
-the  record type and the configurations of the MariaDB Users are defined in
-the  record type.
+the [PAM Database](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-database) record type and the configurations of the
+MariaDB Users are defined in the [PAM User](/en/keeperpam/privileged-access-
+manager/getting-started/pam-resources/pam-user) record type.
 
 For Azure Managed MariaDB database, the Azure SDK will be used to rotate the
 password of Database Admin Accounts. To rotate the passwords of Regular
 Database Users, Keeper connects to the DB instance with the provided admin
 credentials and executes the necessary SQL statements to change the password.
 
-  * 
+  * See the [Azure Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure) for a high level overview and getting started with Azure
 
 ##
 
@@ -534,7 +499,15 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   *   *   * Your Keeper Gateway is able to communicate with the Azure Managed MariaDB database
+  * [Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-started/enforcement-policies) are configured for your role
+
+  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+
+  * Your Azure environment is [configured](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/azure-environment-setup) per our documentation
+
+  * Your [Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is online
+
+  * Your Keeper Gateway is able to communicate with the Azure Managed MariaDB database
 
 ##
 
@@ -563,6 +536,8 @@ Keeper record title Ex: `Azure MariaDB Admin`
 The Database Server name i.e `testdb-mariadb.mariadb.database.azure.com`
 
 **Port**
+
+For default ports, see port mapping Ex: `mariadb=3306`
 
 **Use SSL**
 
@@ -657,6 +632,10 @@ services.
 
 The UUID of the Azure Active Directory
 
+For more details on all the configurable fields in the PAM Configuration
+record, visit this [page](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration).
+
 ##
 
 3\. Set up one or more PAM User records
@@ -705,48 +684,44 @@ Select the **PAM User** record(s) from Step 3, edit the record and open the
 Any user with `edit` rights to a **PAM User** record has the ability to setup
 rotation for that record.
 
-See the  for a high level overview and getting started with Azure
+[PreviousAzure MySQL - Single or Flexible Database](/en/keeperpam/privileged-
+access-manager/password-rotation/rotation-use-cases/azure/managed-
+database/azure-mysql-single-or-flexible-database)[NextAzure PostgreSQL -
+Single or Flexible Database](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/azure/managed-database/azure-postgresql-single-or-
+flexible-database)
 
-are configured for your role
+Last updated 2 months ago
 
-A Keeper Secrets Manager  has been created
+Was this helpful?
 
-Your Azure environment is  per our documentation
+#### Company
 
-Your  is online
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-For default ports, see  Ex: `mariadb=3306`
+#### Support
 
-For more details on all the configurable fields in the PAM Configuration
-record, visit this .
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-[Azure Overview](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/azure)
+#### Solutions
 
-[Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-
-started/enforcement-policies)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-[application](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
+#### Pricing
 
-[configured](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/azure-environment-setup)
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
-[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)
-
-[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration)
-
-port mapping
-
-[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database)
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FiJL4vwvMfYIxjqBXkYoM%252FAzure%2520MariaDB%2520Database.jpg%3Falt%3Dmedia%26token%3D221c9c73-456a-4e30-8d19-d675c691fc93&width=768&dpr=4&quality=100&sign=21875b40&sv=2)
+© 2025 Keeper Security, Inc.
 

@@ -565,10 +565,6 @@ Notes
 
 Login
 
-Username; exact context and format depends on the associated resource. See
-[Note (1)](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user#note-1) below.
-
 **Required** Examples:****`username` `username@domain` `DOMAIN\username`
 
 Password
@@ -619,12 +615,50 @@ When connecting to Windows machines that are domain-joined:
 
 Configure rotation settings
 
+Username; exact context and format depends on the associated resource. See
+below.
+
+[Note (1)](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user#note-1)
+
 On the "Rotation Settings" section of the PAM User vault record, you can
 configure how credential rotation is managed.
 
 ###
 
 Password Rotation Settings
+
+Field
+
+Description
+
+Required
+
+Rotation Type
+
+Specifies which type of rotation is being performed (and which protocol is
+utilized).
+
+**Required** "General", "IAM User" or "Run PAM Scripts Only". See below for
+details.
+
+PAM Resource
+
+For General rotation type, specifies the PAM Resource record which can provide
+the necessary privilege. For IAM User rotation type, specifies the PAM
+Configuration utilizing cloud APIs.
+
+**Required** only for "General" and "IAM User" rotation types
+
+Rotation Schedule
+
+Rotation can be performed on-demand or on a specific schedule.
+
+Password Complexity
+
+Applies to password-based rotations, not PEM keys.
+
+Select "Show More" to control special characters and symbols.
 
 ###
 
@@ -637,6 +671,8 @@ Keeper supports 3 different types of rotation:
   * **IAM User:** Uses the cloud-specific APIs for performing rotation, such as AWS IAM users and Azure managed resources. In this case, only the PAM Configuration is required since it contains the necessary 
 
   * **Run PAM scripts only:** Skips the standard rotation and only executes the attached PAM Scripts.
+
+The rotation schedule can be set on a specific interval, or using a cron spec.
 
 ###
 
@@ -690,41 +726,7 @@ Below are some examples of PAM User records.
 
   * Azure AD User
 
-Field
-
-Description
-
-Required
-
-The rotation schedule can be set on a specific interval, or using a .
-
-Rotation Type
-
-Specifies which type of rotation is being performed (and which protocol is
-utilized).
-
-**Required** "General", "IAM User" or "Run PAM Scripts Only". See below for
-details.
-
-PAM Resource
-
-For General rotation type, specifies the PAM Resource record which can provide
-the necessary privilege. For IAM User rotation type, specifies the PAM
-Configuration utilizing cloud APIs.
-
-**Required** only for "General" and "IAM User" rotation types
-
-Rotation Schedule
-
-Rotation can be performed on-demand or on a specific schedule.
-
-For advanced scheduling, see the cron spec.
-
-Password Complexity
-
-Applies to password-based rotations, not PEM keys.
-
-Select "Show More" to control special characters and symbols.
+For advanced scheduling, see the .
 
 cron spec
 

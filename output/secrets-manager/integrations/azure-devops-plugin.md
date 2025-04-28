@@ -518,7 +518,9 @@ utilize this integration, you will need:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+  *     * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
     * The Azure DevOps integration accepts JSON and Base64 format configurations
 
@@ -908,26 +910,21 @@ Copy
 
 A Keeper  with secrets shared to it
 
-See the  for instructions on creating an Application
-
 One or more  (See query syntax below)
 
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 
 [Secret queries](/en/keeperpam/secrets-manager/integrations/azure-devops-
 plugin#keeper-secret-queries)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVvqLlBdgCg8KCBGkcqeM%252Fmarketplace%2520image%2520cropped.png%3Falt%3Dmedia%26token%3Dcff51556-9ff4-4e05-8f7b-bb374d16f36f&width=768&dpr=4&quality=100&sign=74fdcea6&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWIoTCReEZPjRwPEB64hS%252Ffill%2520task.png%3Falt%3Dmedia%26token%3D2ae6fb1d-ed5d-4f84-8a7a-a512f1b0b24e&width=768&dpr=4&quality=100&sign=c2593a17&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSIUOkIjVALVzmtOYLF18%252Ffind%2520task.png%3Falt%3Dmedia%26token%3D75fa26c0-83a9-48e8-b9c0-ebe8de0eb48c&width=768&dpr=4&quality=100&sign=7d4de9b&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHuh9CWdwe0laT7gQ3SBe%252Fchoose%2520org.png%3Falt%3Dmedia%26token%3Dbf61e101-20a2-4229-9dde-11f3532cc616&width=768&dpr=4&quality=100&sign=697f4bb&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -937,9 +934,9 @@ header.jpg%3Falt%3Dmedia%26token%3D151310a1-d682-4973-ab09-b9815c8cf9cb&width=76
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHuh9CWdwe0laT7gQ3SBe%252Fchoose%2520org.png%3Falt%3Dmedia%26token%3Dbf61e101-20a2-4229-9dde-11f3532cc616&width=768&dpr=4&quality=100&sign=697f4bb&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSIUOkIjVALVzmtOYLF18%252Ffind%2520task.png%3Falt%3Dmedia%26token%3D75fa26c0-83a9-48e8-b9c0-ebe8de0eb48c&width=768&dpr=4&quality=100&sign=7d4de9b&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWIoTCReEZPjRwPEB64hS%252Ffill%2520task.png%3Falt%3Dmedia%26token%3D2ae6fb1d-ed5d-4f84-8a7a-a512f1b0b24e&width=768&dpr=4&quality=100&sign=c2593a17&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVvqLlBdgCg8KCBGkcqeM%252Fmarketplace%2520image%2520cropped.png%3Falt%3Dmedia%26token%3Dcff51556-9ff4-4e05-8f7b-bb374d16f36f&width=768&dpr=4&quality=100&sign=74fdcea6&sv=2)
 

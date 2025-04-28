@@ -570,11 +570,19 @@ Steps to Test Cisco Device
 Following these steps will allow you to test the Cisco device and create a new
 user in the Cisco sandbox environment.
 
-> ###
+> **Note:** If you want to use a virtual environment, add a shebang line at
+> the top of the script as documented here in the [Python Environment
+> Setup](https://docs.keeper.io/en/v/secrets-manager/secrets-manager/password-
+> rotation/post-rotation-scripts/use-case-examples/rotate-credential-via-rest-
+> api#step-5-python-environment-setup).
+
+###
 
 Login to Cisco Sandbox
 
-  *   * Log in with your Cisco account credentials.
+  * Go to the [Cisco DevNet Sandbox](https://devnetsandbox.cisco.com/)
+
+  * Log in with your Cisco account credentials.
 
   * Select and launch the sandbox.
 
@@ -601,7 +609,7 @@ details or find them in the DevNet Environment under Quick Access.
 
   * Download and install the Cisco AnyConnect Secure Mobility Client.
 
-  * 
+  * Get detailed connection instructions [here](https://developer.cisco.com/docs/sandbox/getting-started/#support).
 
 ###
 
@@ -713,7 +721,7 @@ be rotated.
 
 Step 2: Add PAM Script
 
-  * 
+  * Attach the below [Python script ](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-meraki#python-script)that will perform the password rotation. The script has additional comments inside that describe each line.
 
 ###
 
@@ -951,32 +959,11 @@ user management portal, the authorized option should be selected as 'Yes'].
 After successfully setting up Rotation for your Cisco User Credentials on the
 PAM User Record, clicking on "Run Scripts Only" will rotate the credential:
 
-**Note:** If you want to use a virtual environment, add a shebang line at the
-top of the script as documented here in the .
-
-Go to the
-
-Get detailed connection instructions .
-
-Attach the below that will perform the password rotation. The script has
-additional comments inside that describe each line.
-
-[Python Environment Setup](https://docs.keeper.io/en/v/secrets-
-manager/secrets-manager/password-rotation/post-rotation-scripts/use-case-
-examples/rotate-credential-via-rest-api#step-5-python-environment-setup)
-
-[Cisco DevNet Sandbox](https://devnetsandbox.cisco.com/)
-
-[here](https://developer.cisco.com/docs/sandbox/getting-started/#support)
-
 [https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
 Scripts/blob/main/cisco-
 meraki/update_meraki_user.pygithub.com](https://github.com/Keeper-
 Security/Zero-Trust-KeeperPAM-Scripts/blob/main/cisco-
 meraki/update_meraki_user.py)
-
-[Python script ](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/network-devices/cisco-meraki#python-script)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

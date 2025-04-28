@@ -430,36 +430,6 @@ manager-command-line-interface/custom-record-types?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
 Was this helpful?
@@ -474,14 +444,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=BMjdtCP9NKJa8lm8DJaW&only=yes&limit=100)
 
 Utilizing custom record types in the Keeper Secrets Manager CLI
 
-[PreviousDocker Container](/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface/docker-container)[NextPassword
-Rotation](/en/keeperpam/secrets-manager/password-rotation)
-
-Last updated 6 months ago
-
-Was this helpful?
-
 ##
 
 Overview
@@ -490,11 +452,12 @@ The Keeper Secrets Manager CLI has a list of default record types that are
 available for use. The CLI also allows for the creation of records using
 custom record types.
 
-More information about Custom Record Types is found in the .
+More information about Custom Record Types is found in the [Enterprise
+Guide](https://docs.keeper.io/en/enterprise-guide/record-types).
 
 In order to create records that use custom record types, the schema needs to
 be defined within the CLI. This is done by exporting the custom record type
-using .
+using [Keeper Commander](/en/keeperpam/commander-cli/overview).
 
 The below will export the "My Custom" record type, as JSON, to the file
 `my_record_type.json`.
@@ -537,6 +500,10 @@ for the `keeper.ini`.
 
     * `$env:ProgramFiles/Keeper`
 
+An alternative directory can be set via the [config
+command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/config-command).
+
 Copy
 
     
@@ -575,12 +542,41 @@ All custom record type name need to be unique. An error will occur if a record
 type with the same name has already been imported. You also cannot override
 the default record types.
 
-An alternative directory can be set via the .
+[PreviousDocker Container](/en/keeperpam/secrets-manager/secrets-manager-
+command-line-interface/docker-container)[NextPassword
+Rotation](/en/keeperpam/secrets-manager/password-rotation)
 
-[Enterprise Guide](https://docs.keeper.io/en/enterprise-guide/record-types)
+Last updated 6 months ago
 
-[Keeper Commander](/en/keeperpam/commander-cli/overview)
+Was this helpful?
 
-[config command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/config-command)
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

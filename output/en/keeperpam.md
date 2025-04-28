@@ -410,6 +410,30 @@ Bridge](https://docs.keeper.io/en/keeper-bridge/?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * About this Documentation
+  * KeeperPAM vs. Keeper Connection Manager
+  * Features
+  * Contact the Keeper Team
+  * Next Steps
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MJXO_hpAODecU2amxqS&only=yes&limit=100)
+
+# KeeperPAM
+
+KeeperPAM is a modern, cloud-based Privileged Access Manager
+
+[NextSetup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
+
+Last updated 17 days ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -439,30 +463,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Overview
-  * About this Documentation
-  * KeeperPAM vs. Keeper Connection Manager
-  * Features
-  * Contact the Keeper Team
-  * Next Steps
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MJXO_hpAODecU2amxqS&only=yes&limit=100)
-
-# KeeperPAM
-
-KeeperPAM is a modern, cloud-based Privileged Access Manager
-
-[NextSetup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
-
-Last updated 16 days ago
-
-Was this helpful?
 
 ##
 

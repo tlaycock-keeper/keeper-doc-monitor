@@ -605,12 +605,13 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+For this protocol, graphical data, including timing information, is recorded.
+For more details on the recordings and how to access them, see the Session
+Recording & Playback docs.
+
 Field
 
 Definition
-
-For this protocol, graphical data, including timing information, is recorded.
-For more details on the recordings and how to access them, see the  docs.
 
 PAM Configuration
 
@@ -619,8 +620,8 @@ infrastructure and provides access to the target configured on the PAM Record
 
 Administrative Credential Record
 
-This is the linked PAM User that will be used to authenticate to the target
-and perform administrative operations on it.
+This is the linked  that will be used to authenticate to the target and
+perform administrative operations on it.
 
-Session Recording & Playback
+PAM User
 

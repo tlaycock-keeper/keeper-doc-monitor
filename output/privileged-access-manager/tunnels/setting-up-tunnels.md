@@ -503,16 +503,6 @@ SSH, LDAPS, databases, and other protocols. Users can authenticate through the
 KeeperPAM platform, which brokers the connection and ensures strict policy
 enforcement.
 
-An active license is required in order to use the features available with
-KeeperPAM. This license is available for both business and enterprise
-customers.
-
-  * [KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-management/)
-
-  * [Request a Demo](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-
-  * [Contact Support](https://www.keepersecurity.com/support.html)
-
 ##
 
 Prerequisites
@@ -774,6 +764,19 @@ need to share credentials:
   * [Connections](/en/keeperpam/privileged-access-manager/connections) to establish interactive sessions across many different protocols
 
   * [Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-isolation) with Autofill to establish web-based interactive sessions
+
+An active license is required in order to use the features available with
+KeeperPAM. This license is available for both business and enterprise
+customers.
+
+  *   *   * 
+
+[KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-
+management/)
+
+[Request a Demo](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+
+[Contact Support](https://www.keepersecurity.com/support.html)
 
 Enforcement Policies for Tunnels
 

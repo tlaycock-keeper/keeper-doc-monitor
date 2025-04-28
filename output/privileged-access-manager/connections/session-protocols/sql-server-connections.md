@@ -527,6 +527,20 @@ Configuring Connection Settings
 Prior to configuring the SQL Server protocol settings on the PAM Settings
 screen, the following fields are all **required** and need to be configured:
 
+Field
+
+Definition
+
+PAM Configuration
+
+This is the PAM Configuration that contains the details of your target
+infrastructure and provides access to the target configured on the PAM Record
+
+Administrative Credential Record
+
+This is the linked PAM User that will be used to authenticate to the target
+and perform administrative operations on it.
+
 The following table lists all the configurable connection settings for the SQL
 Server protocol on the PAM Settings:
 
@@ -593,6 +607,12 @@ Insert Configured PAM Settings Pic
 
 Session Recordings - SQL Server Protocol
 
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this page.
+
+  * Learn more about Session Recording and Playback
+
 [PreviousMySQL Connections](/en/keeperpam/privileged-access-
 manager/connections/session-protocols/mysql-connections)[NextPostgreSQL
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
@@ -631,26 +651,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-For this protocol, both graphical and the full, raw text text content of
-terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this page.
-
-  * Learn more about Session Recording and Playback
-
-Field
-
-Definition
-
-PAM Configuration
-
-This is the PAM Configuration that contains the details of your target
-infrastructure and provides access to the target configured on the PAM Record
-
-Administrative Credential Record
-
-This is the linked  that will be used to authenticate to the target and
-perform administrative operations on it.
-
-PAM User
 

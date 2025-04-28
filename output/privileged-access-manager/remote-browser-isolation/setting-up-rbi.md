@@ -459,7 +459,7 @@ manager/remote-browser-isolation)[NextURL Patterns & Resource URL
 Patterns](/en/keeperpam/privileged-access-manager/remote-browser-
 isolation/setting-up-rbi/url-patterns-and-resource-url-patterns)
 
-Last updated 19 days ago
+Last updated 20 days ago
 
 Was this helpful?
 
@@ -553,6 +553,10 @@ Copy
     ALLOW_VIEW_RBI_RECORDINGS
 
 Allow users to view RBI Session Recordings.
+
+The above enforcement policies can also be enabled on the [Keeper Commander
+CLI](/en/keeperpam/commander-cli/command-reference/secrets-manager-
+commands#overview) using the `enterprise-role` command:
 
 Copy
 
@@ -694,7 +698,20 @@ loaded.
 
 Browser Autofill - Credentials
 
+RBI sessions launched from the Keeper Vault provides the capability of
+autofilling a username and password into a target website login screen. A
+vault record that is shared to a KSM application can be linked here. The
+credentials on this linked record will be autofilled in the target website
+login screen based on the autofill rules defined in the Autofill Targets
+section. Detailed Information [here](/en/keeperpam/privileged-access-
+manager/remote-browser-isolation/setting-up-rbi/browser-autofill)
+
 Browser Autofill - Autofill Targets
+
+This section will contain the autofill rules, which are a JSON/YAML array of
+objects, where each object specifies contains an autofill rule. Detailed
+Information [here](/en/keeperpam/privileged-access-manager/remote-browser-
+isolation/setting-up-rbi/browser-autofill)
 
 Can copy to clipboard
 
@@ -709,39 +726,16 @@ session.
 
 Session Recordings - RBI
 
-The above enforcement policies can also be enabled on the  using the
-`enterprise-role` command:
-
 By default, all URLs are permitted. Detailed Information
 
 By default, no restrictions are imposed on resources loaded by pages. Detailed
 Information
 
-RBI sessions launched from the Keeper Vault provides the capability of
-autofilling a username and password into a target website login screen. A
-vault record that is shared to a KSM application can be linked here. The
-credentials on this linked record will be autofilled in the target website
-login screen based on the autofill rules defined in the Autofill Targets
-section. Detailed Information
-
-This section will contain the autofill rules, which are a JSON/YAML array of
-objects, where each object specifies contains an autofill rule. Detailed
-Information
-
-[here](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation/setting-up-rbi/browser-autofill)
-
-[here](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation/setting-up-rbi/browser-autofill)
-
 [here](/en/keeperpam/privileged-access-manager/remote-browser-
 isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
 
 [here](/en/keeperpam/privileged-access-manager/remote-browser-
 isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
-
-[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
-manager-commands#overview)
 
 For this protocol, graphical data, including timing information, is recorded.
 For more details on the recordings and how to access them, see the Session
