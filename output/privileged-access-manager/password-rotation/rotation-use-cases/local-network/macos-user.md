@@ -438,6 +438,36 @@ user?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -461,9 +491,14 @@ PDF](/en/keeperpam/~gitbook/pdf?page=kP75VpO1uhTzJ4tR6KAi&only=yes&limit=100)
 
 Rotating Local Mac User Accounts with Keeper Rotation
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJupaW32SNollomOChego%252FmacOS%2520User.jpg%3Falt%3Dmedia%26token%3Db4201c89-39f5-45b6-9860-3961e45ab747&width=768&dpr=4&quality=100&sign=7cf7a6e8&sv=2)
+[PreviousLinux User](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/linux-
+user)[NextDatabase](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/database)
+
+Last updated 2 months ago
+
+Was this helpful?
 
 ##
 
@@ -471,9 +506,7 @@ Overview
 
 In this guide, you'll learn how to remotely rotate MacOS accounts via SSH
 using Keeper Rotation. For a high-level overview on the rotation process in
-the local network, visit this [page](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network#rotation-on-the-
-local-network).
+the local network, visit this .
 
 ##
 
@@ -481,13 +514,7 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  * Keeper Secrets Manager is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
-
-  * Keeper Rotation is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
-
-  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
-
-  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is able to communicate via [SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh) to your MacOS device.
+  *   *   *   * 
 
 ##
 
@@ -626,42 +653,32 @@ Settings".
 Any user with `edit` rights to a **PAM User** record has the ability to setup
 rotation for that record.
 
-[PreviousLinux User](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/linux-
-user)[NextDatabase](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/database)
+Keeper Secrets Manager is enabled for your
 
-Last updated 2 months ago
+Keeper Rotation is enabled for your
 
-Was this helpful?
+A Keeper Secrets Manager  has been created
 
-#### Company
+A Keeper Rotation  is already installed, running, and is able to communicate
+via  to your MacOS device.
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+[application](/en/keeperpam/privileged-access-manager/getting-
+started/applications)
 
-#### Support
+[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+[SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
 
-#### Solutions
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
 
-#### Pricing
+[page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/local-network#rotation-on-the-local-network)
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJupaW32SNollomOChego%252FmacOS%2520User.jpg%3Falt%3Dmedia%26token%3Db4201c89-39f5-45b6-9860-3961e45ab747&width=768&dpr=4&quality=100&sign=7cf7a6e8&sv=2)
 

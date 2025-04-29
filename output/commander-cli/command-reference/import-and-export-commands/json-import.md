@@ -430,29 +430,6 @@ reference/import-and-export-commands/json-import?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=HXyCRUzlK5gtF3JgkajG&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
-
-# JSON Import
-
-Automatic migration of passwords from a JSON file
-
-[PreviousCSV Import](/en/keeperpam/commander-cli/command-reference/import-and-
-export-commands/csv-import)[NextReporting Commands](/en/keeperpam/commander-
-cli/command-reference/reporting-commands)
-
-Last updated 5 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -482,6 +459,29 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=HXyCRUzlK5gtF3JgkajG&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
+
+# JSON Import
+
+Automatic migration of passwords from a JSON file
+
+[PreviousCSV Import](/en/keeperpam/commander-cli/command-reference/import-and-
+export-commands/csv-import)[NextReporting Commands](/en/keeperpam/commander-
+cli/command-reference/reporting-commands)
+
+Last updated 5 months ago
+
+Was this helpful?
 
 ##
 
@@ -642,15 +642,7 @@ folder permissions, user permissions and team permissions located in the
 sample_data/ folder. To import the sample JSON file into your vault, type this
 command:
 
-  * Example 1: [import.json.txt](https://github.com/Keeper-Security/Commander/blob/master/sample_data/import.json.txt)
-
-  * Example 2: [import_records_existing_folders.json.txt](https://github.com/Keeper-Security/Commander/blob/master/sample_data/import_records_existing_folders.json.txt)
-
-  * Example 3: [import_records_into_folders.json.txt](https://github.com/Keeper-Security/Commander/blob/master/sample_data/import_records_into_folders.json.txt)
-
-  * Example 4: [import_shared_folders.json.txt](https://github.com/Keeper-Security/Commander/blob/master/sample_data/import_shared_folders.json.txt)
-
-  * Example 5: [import_shared_folders_and_records.json.txt](https://github.com/Keeper-Security/Commander/blob/master/sample_data/import_shared_folders_and_records.json.txt)
+  *   *   *   *   * 
 
 Copy
 
@@ -662,6 +654,31 @@ The sample file contains "permissions" objects that contain email address or
 team names. If the email or team name exists in your Keeper enterprise
 account, they will be added to the shared folder, otherwise the information is
 ignored.
+
+Example 1:
+
+Example 2:
+
+Example 3:
+
+Example 4:
+
+Example 5:
+
+[import.json.txt](https://github.com/Keeper-
+Security/Commander/blob/master/sample_data/import.json.txt)
+
+[import_records_existing_folders.json.txt](https://github.com/Keeper-
+Security/Commander/blob/master/sample_data/import_records_existing_folders.json.txt)
+
+[import_records_into_folders.json.txt](https://github.com/Keeper-
+Security/Commander/blob/master/sample_data/import_records_into_folders.json.txt)
+
+[import_shared_folders.json.txt](https://github.com/Keeper-
+Security/Commander/blob/master/sample_data/import_shared_folders.json.txt)
+
+[import_shared_folders_and_records.json.txt](https://github.com/Keeper-
+Security/Commander/blob/master/sample_data/import_shared_folders_and_records.json.txt)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

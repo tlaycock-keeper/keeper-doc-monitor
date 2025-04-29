@@ -533,9 +533,6 @@ PAM Settings (Required)
 
 List of Zero-Trust KeeperPAM features that should be enabled
 
-See [this section](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration/local-environment-setup#pam-features) for more info
-
 Default Rotation Schedule
 
 Specify frequency of Rotation
@@ -665,4 +662,9 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+See  for more info
+
+[this section](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration/local-environment-setup#pam-features)
 

@@ -523,9 +523,7 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
-
-  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is able to communicate to your MariaDB database
+  *   *   *   * 
 
 ##
 
@@ -552,8 +550,6 @@ Keeper record title Ex: `dbadmin`
 Server address - _doesn't need to be publicly_ routable
 
 **Port**
-
-For default ports, see port mapping Ex: `mariadb=3306`
 
 **Use SSL**
 
@@ -658,11 +654,25 @@ Keeper Secrets Manager is enabled for your
 
 Keeper Rotation is enabled for your
 
+A Keeper Secrets Manager  has been created
+
+A Keeper Rotation  is already installed, running, and is able to communicate
+to your MariaDB database
+
+For default ports, see  Ex: `mariadb=3306`
+
+[application](/en/keeperpam/privileged-access-manager/getting-
+started/applications)
+
+[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
 [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 overview#enabling-rotation-on-the-admin-console)
 
 [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 overview#enabling-rotation-on-the-admin-console)
+
+port mapping
 
 [page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
 cases/local-network#rotation-on-the-local-network)

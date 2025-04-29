@@ -456,9 +456,43 @@ PDF](/en/keeperpam/~gitbook/pdf?page=IlQNYrLHQjYkgclmxW4C&only=yes&limit=100)
 
 Store and Retrieve Secrets from the Linux Keyring
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FenXG3KtnCHKwizsBriY2%252Fkeeper%2520and%2520Linux%2520Keyring.jpg%3Falt%3Dmedia%26token%3D0ffa15d9-bd01-4e1b-9d7e-2374a6265670&width=768&dpr=4&quality=100&sign=72d9d879&sv=2)
+[PreviousKubernetes (alternative)](/en/keeperpam/secrets-
+manager/integrations/kubernetes)[NextOctopus Deploy](/en/keeperpam/secrets-
+manager/integrations/octopus-deploy)
+
+Last updated 5 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -476,10 +510,6 @@ to store and retrieve credentials, secrets, and passwords in any Linux Keyring
 simply and natively.
 
 The code base for the Linux Keyring Utility can be found here:
-
-[![Logo](https://github.com/fluidicon.png)GitHub - Keeper-Security/linux-
-keyring-utility: A utility for natively interacting with the Linux
-KeyringGitHub](https://github.com/Keeper-Security/linux-keyring-utility)
 
 The binary needed to use the above utility can be found here:
 
@@ -694,45 +724,15 @@ Copy
     
     Unable to get the default keyring: Unable to connect to the D-Bus Session Bus: exec: "dbus-launch": executable file not found in $PATH
 
-[PreviousKubernetes (alternative)](/en/keeperpam/secrets-
-manager/integrations/kubernetes)[NextOctopus Deploy](/en/keeperpam/secrets-
-manager/integrations/octopus-deploy)
-
-Last updated 5 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+[![Logo](https://github.com/fluidicon.png)GitHub - Keeper-Security/linux-
+keyring-utility: A utility for natively interacting with the Linux
+KeyringGitHub](https://github.com/Keeper-Security/linux-keyring-utility)
 
 [![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/linux-
 keyring-utilityGitHub](https://github.com/Keeper-Security/linux-keyring-
 utility/releases)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FenXG3KtnCHKwizsBriY2%252Fkeeper%2520and%2520Linux%2520Keyring.jpg%3Falt%3Dmedia%26token%3D0ffa15d9-bd01-4e1b-9d7e-2374a6265670&width=768&dpr=4&quality=100&sign=72d9d879&sv=2)
 

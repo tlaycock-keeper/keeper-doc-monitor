@@ -505,7 +505,25 @@ the vault. Users with KeeperPAM management privileges can assign access rights
 to managed resources with flexibility, offering permanent, time-limited, or
 just-in-time (JIT) access based on organizational needs.
 
-  *   *   *   *   *   *   *   *   *   * 
+  * [Planning your Deployment](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control#planning-your-deployment)
+
+  * [Role-Based Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control#role-based-enforcement-policies)
+
+  * [PAM Configuration Settings](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control#pam-configuration)
+
+  * [Application and Device Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control#application-and-device-access-control)
+
+  * [Device and Gateway IP Locking](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control#device-and-gateway-ip-locking)
+
+  * [PAM Resource Sharing and Permissions](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control#pam-resource-sharing-and-permissions)
+
+  * [Record Linking](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control#record-linking)
+
+  * [Zero-Trust Access through Connection Sharing](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control#zero-trust-access-through-record-sharing)
+
+  * [Time-limited Access](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control#time-limited-access)
+
+  * [Revoking Access](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control#revoking-access)
 
 ###
 
@@ -720,41 +738,6 @@ Automatic Rotation after Share Expiration
 If you have a use case where a PAM User credential needs to be shared to
 another user, you have the option of automatically rotating the credential
 after the sharing has expired.
-
-[Planning your Deployment](/en/keeperpam/privileged-access-manager/getting-
-started/sharing-and-access-control#planning-your-deployment)
-
-[Role-Based Enforcement Policies](/en/keeperpam/privileged-access-
-manager/getting-started/sharing-and-access-control#role-based-enforcement-
-policies)
-
-[PAM Configuration Settings](/en/keeperpam/privileged-access-manager/getting-
-started/sharing-and-access-control#pam-configuration)
-
-[Application and Device Access Control](/en/keeperpam/privileged-access-
-manager/getting-started/sharing-and-access-control#application-and-device-
-access-control)
-
-[Device and Gateway IP Locking](/en/keeperpam/privileged-access-
-manager/getting-started/sharing-and-access-control#device-and-gateway-ip-
-locking)
-
-[PAM Resource Sharing and Permissions](/en/keeperpam/privileged-access-
-manager/getting-started/sharing-and-access-control#pam-resource-sharing-and-
-permissions)
-
-[Record Linking](/en/keeperpam/privileged-access-manager/getting-
-started/sharing-and-access-control#record-linking)
-
-[Zero-Trust Access through Connection Sharing](/en/keeperpam/privileged-
-access-manager/getting-started/sharing-and-access-control#zero-trust-access-
-through-record-sharing)
-
-[Time-limited Access](/en/keeperpam/privileged-access-manager/getting-
-started/sharing-and-access-control#time-limited-access)
-
-[Revoking Access](/en/keeperpam/privileged-access-manager/getting-
-started/sharing-and-access-control#revoking-access)
 
 PAM Roles
 

@@ -458,46 +458,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=JtIYNW80QVx3YzJQZ5Bi&only=yes&limit=100)
 
 Autofill credentials into Remote Browser Isolation sessions
 
-[PreviousURL Patterns & Resource URL Patterns](/en/keeperpam/privileged-
-access-manager/remote-browser-isolation/setting-up-rbi/url-patterns-and-
-resource-url-patterns)[NextSession Recording &
-Playback](/en/keeperpam/privileged-access-manager/session-recording-and-
-playback)
-
-Last updated 12 days ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 Overview
@@ -510,6 +470,12 @@ is visually projected into the user's vault.
 An example of an RBI record is below. This is an Amazon AWS login that will
 autofill a credential.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjIs9dYZaWmpkM5HVsKcp%252FScreenshot%25202025-02-07%2520at%25209.59.02%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D1fe84199-dc9b-4d0c-98e5-37f519ba7808&width=768&dpr=4&quality=100&sign=a7470b80&sv=2)
+
+Remote Browser Isolation Record
+
 ###
 
 Eligible Credentials
@@ -520,10 +486,28 @@ be added to a Shared Folder which is associated to the gateway.
 In this example, the "craigdemouser" AWS identity is saved to a shared folder
 which is controlled by the Keeper Gateway:
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZI2dAT3tUE4NUBCPlzLn%252FScreenshot%25202025-02-07%2520at%25209.55.30%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D66556e9a-b4d5-4d5d-baeb-d54143e71710&width=768&dpr=4&quality=100&sign=5a97100c&sv=2)
+
+PAM User used for autofill
+
 The Shared Folder is shared to the Application holding the Keeper Gateway:
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FEm1aZx1PAUnDmFsoBER8%252FScreenshot%25202025-02-07%2520at%25209.56.22%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D9cc0c1ec-0194-4e04-a6f2-9f00e702d8d8&width=768&dpr=4&quality=100&sign=6d890963&sv=2)
+
+Shared Folder associated to Application
 
 The Application is associated to the Keeper Gateway. This gives the Gateway
 the ability to access and decrypt any shared credentials.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F89YIW5IGTIzL1EgV2kpN%252FScreenshot%25202025-02-07%2520at%25209.56.58%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D298b0651-f928-4d51-897d-6f524ae0918f&width=768&dpr=4&quality=100&sign=bd58fe10&sv=2)
+
+Keeper Gateway linked to Application
 
 To set up Autofill, edit the autofill settings by clicking on "Edit" in the
 PAM Settings section of the record.
@@ -531,9 +515,21 @@ PAM Settings section of the record.
 The configuration of Remote Browser Isolation provides the ability to select
 which credential is filled.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTd9LFkeT5kB05zssin6c%252FScreenshot%25202025-02-07%2520at%25209.58.40%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D1e6a177c-a98d-4dc9-a739-264efc81cee8&width=768&dpr=4&quality=100&sign=726a6c35&sv=2)
+
+Browser Autofill Settings
+
 When launching the session, the username and password for the AWS Console is
 autofilled within the isolated browser session. The credentials are not
 exposed to the user and the form fields cannot be inspected.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4v1lGWWXazGpEulnNrW2%252FScreenshot%25202025-02-07%2520at%25208.51.58%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D0a6ff168-9aff-40fa-b593-93cc4ea192a2&width=768&dpr=4&quality=100&sign=f9684bb9&sv=2)
+
+Example of Autofill using Amazon AWS
 
 ##
 
@@ -598,6 +594,13 @@ Copy
             "password-field": "input[autocomplete='current-password']"
         }
     ]
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2fa5jxhTnJQwgcVUZqqI%252Frbi-
+autofilltargetjson.png%3Falt%3Dmedia%26token%3D158006e2-f406-4e52-b4eb-622daec82383&width=768&dpr=4&quality=100&sign=80dbab26&sv=2)
+
+JSON Azure Autofill Target example
 
 A common example where you would not want Keeper automatically submitting is
 when there's a captcha on the page. An example of this is below:
@@ -671,46 +674,43 @@ Copy
 If the field is found, the DOM element will be displayed. Otherwise, an error
 will be displayed.
 
-Remote Browser Isolation Record
+[PreviousURL Patterns & Resource URL Patterns](/en/keeperpam/privileged-
+access-manager/remote-browser-isolation/setting-up-rbi/url-patterns-and-
+resource-url-patterns)[NextSession Recording &
+Playback](/en/keeperpam/privileged-access-manager/session-recording-and-
+playback)
 
-PAM User used for autofill
+Last updated 13 days ago
 
-Shared Folder associated to Application
+Was this helpful?
 
-Keeper Gateway linked to Application
+#### Company
 
-Browser Autofill Settings
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-Example of Autofill using Amazon AWS
+#### Support
 
-JSON Azure Autofill Target example
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjIs9dYZaWmpkM5HVsKcp%252FScreenshot%25202025-02-07%2520at%25209.59.02%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D1fe84199-dc9b-4d0c-98e5-37f519ba7808&width=768&dpr=4&quality=100&sign=a7470b80&sv=2)
+#### Solutions
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZI2dAT3tUE4NUBCPlzLn%252FScreenshot%25202025-02-07%2520at%25209.55.30%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D66556e9a-b4d5-4d5d-baeb-d54143e71710&width=768&dpr=4&quality=100&sign=5a97100c&sv=2)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FEm1aZx1PAUnDmFsoBER8%252FScreenshot%25202025-02-07%2520at%25209.56.22%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D9cc0c1ec-0194-4e04-a6f2-9f00e702d8d8&width=768&dpr=4&quality=100&sign=6d890963&sv=2)
+#### Pricing
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F89YIW5IGTIzL1EgV2kpN%252FScreenshot%25202025-02-07%2520at%25209.56.58%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D298b0651-f928-4d51-897d-6f524ae0918f&width=768&dpr=4&quality=100&sign=bd58fe10&sv=2)
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTd9LFkeT5kB05zssin6c%252FScreenshot%25202025-02-07%2520at%25209.58.40%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D1e6a177c-a98d-4dc9-a739-264efc81cee8&width=768&dpr=4&quality=100&sign=726a6c35&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4v1lGWWXazGpEulnNrW2%252FScreenshot%25202025-02-07%2520at%25208.51.58%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D0a6ff168-9aff-40fa-b593-93cc4ea192a2&width=768&dpr=4&quality=100&sign=f9684bb9&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2fa5jxhTnJQwgcVUZqqI%252Frbi-
-autofilltargetjson.png%3Falt%3Dmedia%26token%3D158006e2-f406-4e52-b4eb-622daec82383&width=768&dpr=4&quality=100&sign=80dbab26&sv=2)
+© 2025 Keeper Security, Inc.
 

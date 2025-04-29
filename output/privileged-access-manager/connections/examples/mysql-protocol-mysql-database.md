@@ -612,6 +612,10 @@ Once you have configured the MySQL Protocol connection on your PAM Database
 Record, your record will contain the following connection banner with the
 "Launch" Button:
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLT7kp5Yt2zTfQZRIWezl%252Fsqlconn.png%3Falt%3Dmedia%26token%3Dbe6b3a97-684b-4288-9ede-8f1bdb0766e3&width=768&dpr=4&quality=100&sign=53446bd6&sv=2)
+
 In the above image, a MySQL Database has been configured on the PAM Database
 Record. When clicking launch, the Vault Client will render a window with the
 established connection protocol to the specified target.
@@ -668,8 +672,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLT7kp5Yt2zTfQZRIWezl%252Fsqlconn.png%3Falt%3Dmedia%26token%3Dbe6b3a97-684b-4288-9ede-8f1bdb0766e3&width=768&dpr=4&quality=100&sign=53446bd6&sv=2)
 

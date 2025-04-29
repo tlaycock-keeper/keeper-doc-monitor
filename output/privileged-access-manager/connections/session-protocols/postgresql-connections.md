@@ -594,11 +594,11 @@ Insert Configured PAM Settings Pic
 
 Session Recordings - PostgreSQL Protocol
 
-For this protocol, both graphical and the full, raw text text content of
-terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this page.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FxXLFqH5fPzeCgflxrPhI%252FScreenshot%25202025-01-21%2520at%252012.29.55%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D4364c73b-2424-48cc-a511-14545bc04153&width=768&dpr=4&quality=100&sign=ec73ad6c&sv=2)
 
-  * Learn more about Session Recording and Playback
+PostgreSQL Session Recordings
 
 [PreviousSQL Server Connections](/en/keeperpam/privileged-access-
 manager/connections/session-protocols/sql-server-connections)[NextVNC
@@ -639,6 +639,12 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this page.
+
+  * Learn more about Session Recording and Playback
+
 Field
 
 Definition
@@ -654,10 +660,4 @@ This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
 
 PAM User
-
-PostgreSQL Session Recordings
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FxXLFqH5fPzeCgflxrPhI%252FScreenshot%25202025-01-21%2520at%252012.29.55%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D4364c73b-2424-48cc-a511-14545bc04153&width=768&dpr=4&quality=100&sign=ec73ad6c&sv=2)
 

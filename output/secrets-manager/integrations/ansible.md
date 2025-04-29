@@ -447,6 +447,49 @@ PDF](/en/keeperpam/~gitbook/pdf?page=Xv5qEBPg6ezXBm1OUS53&only=yes&limit=100)
 
 Use Keeper Secrets Manager with Ansible
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDXbF4wcBxi9C6WAhejXi%252Fimage.png%3Falt%3Dmedia%26token%3D9f4ddebb-
+ac32-409a-a8b1-0a0907a1c41e&width=768&dpr=4&quality=100&sign=40e5b583&sv=2)
+
+##
+
+Features
+
+  * Retrieve secrets from the Keeper vault to use in Ansible Playbooks
+
+  * Update the value of secrets in the Keeper Vault from Ansible
+
+  * Copy files from the Keeper Vault
+
+  * Use Keeper Secrets Manager within Ansible Tower to fetch secret credentials and files in your Ansible Playbooks.
+
+For a complete list of Keeper Secrets Manager features see the [Overview
+](/en/keeperpam/secrets-manager/overview)
+
+##
+
+Ansible Integrations
+
+Check out the nested pages for using Secrets Manager with Ansible
+
+###
+
+[Ansible Plugin](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
+plugin)
+
+How to use Keeper Secrets Manager to fetch secret credentials and files in
+your Ansible Playbooks
+
+###
+
+[Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible#ansible-
+tower)
+
+Store Keeper Secrets Manager configuration credentials in Ansible Tower and
+create reusable playbook templates that utilize Keeper Secrets Manager
+features.
+
 [PreviousIntegrations](/en/keeperpam/secrets-manager/integrations)[NextAnsible
 Plugin](/en/keeperpam/secrets-manager/integrations/ansible/ansible-plugin)
 
@@ -483,48 +526,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-##
-
-Features
-
-  * Retrieve secrets from the Keeper vault to use in Ansible Playbooks
-
-  * Update the value of secrets in the Keeper Vault from Ansible
-
-  * Copy files from the Keeper Vault
-
-  * Use Keeper Secrets Manager within Ansible Tower to fetch secret credentials and files in your Ansible Playbooks.
-
-##
-
-Ansible Integrations
-
-Check out the nested pages for using Secrets Manager with Ansible
-
-How to use Keeper Secrets Manager to fetch secret credentials and files in
-your Ansible Playbooks
-
-Store Keeper Secrets Manager configuration credentials in Ansible Tower and
-create reusable playbook templates that utilize Keeper Secrets Manager
-features.
-
-For a complete list of Keeper Secrets Manager features see the
-
-###
-
-###
-
-[Overview ](/en/keeperpam/secrets-manager/overview)
-
-[Ansible Plugin](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
-plugin)
-
-[Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible#ansible-
-tower)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDXbF4wcBxi9C6WAhejXi%252Fimage.png%3Falt%3Dmedia%26token%3D9f4ddebb-
-ac32-409a-a8b1-0a0907a1c41e&width=768&dpr=4&quality=100&sign=40e5b583&sv=2)
 

@@ -496,6 +496,12 @@ Overview
 In this guide, you will learn how to setup connections for all the supported
 protocols on your PAM Record types in your Keeper Vault.
 
+An active license is required in order to use the features available with
+KeeperPAM. This license is available for both business and enterprise
+customers.
+
+  *   *   * 
+
 ##
 
 Prerequisites
@@ -726,12 +732,6 @@ PAM Machine
 
 Connecting to the target defined on the PAM Machine Record with the Telnet
 connection protocol
-
-An active license is required in order to use the features available with
-KeeperPAM. This license is available for both business and enterprise
-customers.
-
-  *   *   * 
 
 [KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-
 management/)

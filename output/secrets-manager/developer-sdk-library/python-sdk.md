@@ -1067,6 +1067,9 @@ Yes
 
 Storage and query configuration
 
+Set field values using the [field ](/en/keeperpam/secrets-manager/developer-
+sdk-library/python-sdk#retrieve-field-values-from-a-secret)method.
+
 Fields are found by type, for a list of field types see the [Record
 Types](/en/keeperpam/commander-cli/command-reference/record-commands/default-
 record-types#field-types) documentation. Some fields have multiple values, in
@@ -1521,7 +1524,7 @@ Prerequisites:
 
   * TOTP fields accept only URL generated outside of the KSM SDK
 
-  * 
+  * After record creation, you can upload file attachments using [upload_file](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk#upload-a-file)
 
 Create a RecordCreate Record in Sub-folderLogin Record ExampleCustom Type
 Example
@@ -2001,7 +2004,7 @@ Copy
 library)[NextJava/Kotlin SDK](/en/keeperpam/secrets-manager/developer-sdk-
 library/java-sdk)
 
-Last updated 24 days ago
+Last updated 25 days ago
 
 Was this helpful?
 
@@ -2034,14 +2037,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-Set field values using the method.
-
-After record creation, you can upload file attachments using
-
-[field ](/en/keeperpam/secrets-manager/developer-sdk-library/python-
-sdk#retrieve-field-values-from-a-secret)
-
-[upload_file](/en/keeperpam/secrets-manager/developer-sdk-library/python-
-sdk#upload-a-file)
 

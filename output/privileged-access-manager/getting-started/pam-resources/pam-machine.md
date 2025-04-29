@@ -591,17 +591,9 @@ Administrative Credentials
 
 Linked PAM User credential used for connection and administrative operations
 
-**Required** Visit this [section](/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-machine#pam-settings-and-
-administrative-credentials) for more details
-
 PAM settings
 
 This is where you configure Connection and Tunnel settings for this machine.
-
-**Required** Visit this [section](/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-machine#pam-settings-and-
-administrative-credentials) for more details
 
 Operating System
 
@@ -680,9 +672,6 @@ Session Recording
 
 Options for recording sessions and typescripts
 
-See [session recording](/en/keeperpam/privileged-access-manager/session-
-recording-and-playback)
-
 Connection Parameters (multiple)
 
 Connection-specific protocol settings which can vary based on the protocol
@@ -703,6 +692,21 @@ Visit the following pages to set up:
   * [Linux Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-machine/example-linux-machine)
 
   * [Azure Virtual Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-machine/example-azure-windows-vm)
+
+**Required** Visit this  for more details
+
+**Required** Visit this  for more details
+
+See
+
+[session recording](/en/keeperpam/privileged-access-manager/session-recording-
+and-playback)
+
+[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine#pam-settings-and-administrative-credentials)
+
+[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine#pam-settings-and-administrative-credentials)
 
 Creating a new PAM Machine record
 

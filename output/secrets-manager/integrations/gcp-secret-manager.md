@@ -459,7 +459,7 @@ Sync secrets from the Keeper Vault with GCP Secret Manager
 plugin)[NextGoogle Cloud Key Management Encryption](/en/keeperpam/secrets-
 manager/integrations/google-cloud-key-management-encryption)
 
-Last updated 13 days ago
+Last updated 14 days ago
 
 Was this helpful?
 

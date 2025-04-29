@@ -480,19 +480,10 @@ PAM Record
 
 Definition
 
-[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
-
 The PAM Configuration contains information of your target infrastructure
-
-[PAM Machine Record](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-machine)
 
 The PAM Machine record contains information of the endpoint you want to
 establish an RDP protocol connection to.
-
-[PAM User Record](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
 
 The PAM User record contains the user credentials that will be used to connect
 to the endpoint
@@ -651,6 +642,12 @@ following:
 
 Session Recordings - RDP Protocol
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9HnosSdfjm4CmdFzsv8T%252FScreenshot%25202025-01-21%2520at%252012.18.55%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D21d7ad18-e6bc-48c5-9a8e-9ac8b10b9fea&width=768&dpr=4&quality=100&sign=9535f205&sv=2)
+
+RDP Session Recordings
+
 [PreviousSSH Connections](/en/keeperpam/privileged-access-
 manager/connections/session-protocols/ssh-connections)[NextRBI
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
@@ -690,6 +687,15 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)
+
+[PAM Machine Record](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-machine)
+
+[PAM User Record](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
 For this protocol, graphical data, including timing information, is recorded.
 For more details on the recordings and how to access them, see the Session
 Recording & Playback docs.
@@ -709,10 +715,4 @@ This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
 
 PAM User
-
-RDP Session Recordings
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9HnosSdfjm4CmdFzsv8T%252FScreenshot%25202025-01-21%2520at%252012.18.55%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D21d7ad18-e6bc-48c5-9a8e-9ac8b10b9fea&width=768&dpr=4&quality=100&sign=9535f205&sv=2)
 

@@ -462,7 +462,7 @@ manager/connections/session-protocols)[NextRDP
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/rdp-connections)
 
-Last updated 7 days ago
+Last updated 8 days ago
 
 Was this helpful?
 
@@ -516,22 +516,6 @@ manager/connections/getting-started).
 
 The following PAM records are needed in order to successfully setup this
 protocol:
-
-PAM Record
-
-Definition
-
-The PAM Configuration contains information of your target infrastructure
-
-Record
-
-The PAM Machine record contains information of the endpoint you want to
-establish an SSH protocol connection to.
-
-Record
-
-The PAM User record contains the user credentials that will be used to connect
-to the endpoint
 
 This guide will use a Linux server to represent a PAM Machine record.
 
@@ -711,17 +695,6 @@ PowerShell commands or other administrative actions.
 
 Session Recordings - SSH Protocol
 
-Learn more on how to
-
-[activate SSH on Windows](/en/keeperpam/privileged-access-
-manager/references/setting-up-ssh#windows)
-
-PAM Configuration
-
-PAM Machine
-
-PAM User
-
 For this protocol, both graphical and the full, raw text text content of
 terminal sessions, including timing information, are recorded. For more
 information on recordings and how to access these recordings, visit this page.
@@ -741,6 +714,33 @@ Administrative Credential Record
 
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
+
+Learn more on how to
+
+[activate SSH on Windows](/en/keeperpam/privileged-access-
+manager/references/setting-up-ssh#windows)
+
+PAM User
+
+PAM Record
+
+Definition
+
+The PAM Configuration contains information of your target infrastructure
+
+Record
+
+The PAM Machine record contains information of the endpoint you want to
+establish an SSH protocol connection to.
+
+Record
+
+The PAM User record contains the user credentials that will be used to connect
+to the endpoint
+
+PAM Configuration
+
+PAM Machine
 
 PAM User
 

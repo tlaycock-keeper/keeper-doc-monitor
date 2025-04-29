@@ -448,6 +448,105 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-Mf4ooIm9OOeZ4dfpuGw&only=yes&limit=100)
 
 Rotate Windows user passwords with Commander
 
+Keeper has also launched a zero-trust Password Rotation feature with
+KeeperPAM. This new capability is recommended for most password rotation use
+cases. The Documentation is linked below:
+
+  * [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-rotation)
+
+  * Commander [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
+
+This plugin allows rotating a windows user's password using the `net user`
+command.
+
+###
+
+Prepare a Record for Rotation
+
+###
+
+Create a Record for Rotation
+
+Rotation supports legacy and typed records. If using typed record, a 'login'
+type field is required. Additional fields may be added depending on the
+rotation type as well. See the instructions below.
+
+See the [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-
+commander-cli#typed-vs-untyped-records-v3-vs-v2)section for more information
+on legacy vs typed records
+
+###
+
+Set the Login Name
+
+**Populate the 'Login' field of the Keeper record with the login to use with
+this rotation.**
+
+This plugin rotates passwords for both local and Active Directory accounts.
+When rotating Active Directory password use `DOMAIN\USERNAME` syntax for Login
+field.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FH1Vr6GKR8x1XjZHpNZyK%252Fimage.png%3Falt%3Dmedia%26token%3D1e71b489-5ae6-4071-9e67-17568991b47e&width=768&dpr=4&quality=100&sign=692132c4&sv=2)
+
+####
+
+Add the following Custom Fields to the record that you want to rotate within
+Keeper
+
+Label
+
+Value
+
+Comment
+
+cmdr:plugin
+
+windows
+
+(Optional) Tells Commander to use Windows rotation. This should be either set
+to the record, or supplied to the rotation command
+
+cmdr:rules
+
+# uppercase, # lowercase, # numeric, # special'
+
+(e.g. 4,6,3,8)
+
+(Optional) Password generation rules
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf4pBnfEpYfewUkl_Fr%252Fimage.png%3Falt%3Dmedia%26token%3D6dd6e075-00b3-40e4-83b0-edb96333b89a&width=768&dpr=4&quality=100&sign=1eff70ab&sv=2)
+
+A Keeper Record setup for Windows password rotation
+
+##
+
+Rotate
+
+To rotate Windows passwords, use the `rotate` command in Commander. Pass the
+command a record title or UID (or use `--match` with a regular expression to
+rotate several records at once)
+
+Copy
+
+    
+    
+    rotate "Windows Example" --plugin windows
+
+The plugin can be supplied to the command as shown here, or added to a record
+field (see options above). Adding the plugin type to the record makes it
+possible to rotate several records at once with different plugins.
+
+####
+
+Output
+
+After rotation is completed, the new password will be stored in the `Password`
+field of the record
+
 [PreviousUnix Passwd Plugin](/en/keeperpam/commander-cli/command-
 reference/plugins/unix-passwd-plugin)[NextActive Directory
 Plugin](/en/keeperpam/commander-cli/command-reference/plugins/active-
@@ -486,104 +585,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-Keeper has also launched a zero-trust Password Rotation feature with
-KeeperPAM. This new capability is recommended for most password rotation use
-cases. The Documentation is linked below:
-
-  * [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-rotation)
-
-  * Commander [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
-
-This plugin allows rotating a windows user's password using the `net user`
-command.
-
-###
-
-Prepare a Record for Rotation
-
-###
-
-Create a Record for Rotation
-
-Rotation supports legacy and typed records. If using typed record, a 'login'
-type field is required. Additional fields may be added depending on the
-rotation type as well. See the instructions below.
-
-See the section for more information on legacy vs typed records
-
-###
-
-Set the Login Name
-
-**Populate the 'Login' field of the Keeper record with the login to use with
-this rotation.**
-
-This plugin rotates passwords for both local and Active Directory accounts.
-When rotating Active Directory password use `DOMAIN\USERNAME` syntax for Login
-field.
-
-####
-
-Add the following Custom Fields to the record that you want to rotate within
-Keeper
-
-Label
-
-Value
-
-Comment
-
-cmdr:plugin
-
-windows
-
-(Optional) Tells Commander to use Windows rotation. This should be either set
-to the record, or supplied to the rotation command
-
-cmdr:rules
-
-# uppercase, # lowercase, # numeric, # special'
-
-(e.g. 4,6,3,8)
-
-(Optional) Password generation rules
-
-##
-
-Rotate
-
-To rotate Windows passwords, use the `rotate` command in Commander. Pass the
-command a record title or UID (or use `--match` with a regular expression to
-rotate several records at once)
-
-Copy
-
-    
-    
-    rotate "Windows Example" --plugin windows
-
-The plugin can be supplied to the command as shown here, or added to a record
-field (see options above). Adding the plugin type to the record makes it
-possible to rotate several records at once with different plugins.
-
-####
-
-Output
-
-After rotation is completed, the new password will be stored in the `Password`
-field of the record
-
-[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
-cli#typed-vs-untyped-records-v3-vs-v2)
-
-A Keeper Record setup for Windows password rotation
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FH1Vr6GKR8x1XjZHpNZyK%252Fimage.png%3Falt%3Dmedia%26token%3D1e71b489-5ae6-4071-9e67-17568991b47e&width=768&dpr=4&quality=100&sign=692132c4&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf4pBnfEpYfewUkl_Fr%252Fimage.png%3Falt%3Dmedia%26token%3D6dd6e075-00b3-40e4-83b0-edb96333b89a&width=768&dpr=4&quality=100&sign=1eff70ab&sv=2)
 

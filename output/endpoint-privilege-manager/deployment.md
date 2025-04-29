@@ -426,36 +426,6 @@ manager/deployment?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Encryption
-  * Deployment Package
-  * Deployment Collections
-  * Managing Deployments
-  * Device Collections
-  * Commander CLI
-  * Next Steps
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=KEkG5ky7xq0IniHT6zVE&only=yes&limit=100)
-
-  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
-
-# Deployment
-
-Deploying the Keeper Agent to your endpoints
-
-[PreviousSetup](/en/keeperpam/endpoint-privilege-
-manager/setup)[NextPolicies](/en/keeperpam/endpoint-privilege-
-manager/policies)
-
-Last updated 17 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -485,6 +455,17 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=KEkG5ky7xq0IniHT6zVE&only=yes&limit=100)
+
+Last updated 18 days ago
+
+Was this helpful?
 
 ###
 
@@ -583,11 +564,6 @@ is included.
 Collections can not contain different resource types. For example a User Group
 collection can not contain a Machine resource.
 
-Policies can be applied to device collections and deployment collections to
-control privilege on all of the endpoints. Visit the
-[Policies](/en/keeperpam/endpoint-privilege-manager/policies) page to learn
-more.
-
 ###
 
 Commander CLI
@@ -601,6 +577,33 @@ Agent Management
 
 The `pedm agent` command provides management over individual agents running on
 the endpoint.
+
+####
+
+Deployment
+
+The `pedm deployment` command provides management over agent deployments.
+
+####
+
+Collections
+
+The `pedm collection` command provides management over collections.
+
+####
+
+Reports
+
+The `pedm report` command provides event logs and event reports.
+
+###
+
+Next Steps
+
+Policies can be applied to device collections and deployment collections to
+control privilege on all of the endpoints. Visit the  page to learn more.
+
+Once you have deployed the agent, it's time to set up .
 
 Copy
 
@@ -616,12 +619,6 @@ Copy
     delete      Delete PEDM agents
     collection  List PEDM agent resources
 
-####
-
-Deployment
-
-The `pedm deployment` command provides management over agent deployments.
-
 Copy
 
     
@@ -636,12 +633,6 @@ Copy
     update     Update PEDM deployment
     delete     Delete PEDM deployment
     download   Download PEDM deployment package
-
-####
-
-Collections
-
-The `pedm collection` command provides management over collections.
 
 Copy
 
@@ -660,12 +651,6 @@ Copy
     connect     Link agent, policy, resource to PEDM collections
     disconnect  Unlink agent, policy, resource from PEDM collections
 
-####
-
-Reports
-
-The `pedm report` command provides event logs and event reports.
-
 Copy
 
     
@@ -678,12 +663,28 @@ Copy
     event      Run audit event reports
     summary    Run audit summary reports
 
-###
+  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
 
-Next Steps
+# Deployment
 
-Once you have deployed the agent, it's time to set up
-[policies](/en/keeperpam/endpoint-privilege-manager/policies).
+Deploying the Keeper Agent to your endpoints
+
+[PreviousSetup](/en/keeperpam/endpoint-privilege-
+manager/setup)[NextPolicies](/en/keeperpam/endpoint-privilege-
+manager/policies)
+
+  * Overview
+  * Encryption
+  * Deployment Package
+  * Deployment Collections
+  * Managing Deployments
+  * Device Collections
+  * Commander CLI
+  * Next Steps
+
+[Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+[policies](/en/keeperpam/endpoint-privilege-manager/policies)
 
 Creating a Deployment Package
 

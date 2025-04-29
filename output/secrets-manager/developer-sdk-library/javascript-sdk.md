@@ -1748,7 +1748,7 @@ Copy
 library/java-sdk/record-field-classes)[Next.NET SDK](/en/keeperpam/secrets-
 manager/developer-sdk-library/.net-sdk)
 
-Last updated 19 days ago
+Last updated 20 days ago
 
 Was this helpful?
 
@@ -1788,12 +1788,12 @@ See the  for expected field formats for each record type
 
 After record creation, you can upload file attachments using
 
-[uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-
-sdk#upload-a-file)
-
 [Record Types](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
 
 [documentation](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
+
+[uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-
+sdk#upload-a-file)
 

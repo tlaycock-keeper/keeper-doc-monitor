@@ -442,26 +442,7 @@ PDF](/en/keeperpam/~gitbook/pdf?page=wz0O7fcw1wsdcgngnbs4&only=yes&limit=100)
 
 PowerShell docs for Keeper Secrets Manager
 
-##
-
-Features
-
-  * Retrieve secrets from the Keeper Vault to use in PowerShell
-
-  * Integrate Keeper vault with PowerShell Secrets Manager
-
-  * Update secret values in the Keeper Vault from PowerShell
-
-  * Get files from the Keeper vault
-
-Please refer to the [Keeper PowerShell module](/en/keeperpam/secrets-
-manager/integrations/powershell-plugin) documented in the Integrations
-section:
-
-[**Go to PowerShell Plugin**](/en/keeperpam/secrets-
-manager/integrations/powershell-plugin)
-
-[ PreviousRecord Field Classes](/en/keeperpam/secrets-manager/developer-sdk-
+[PreviousRecord Field Classes](/en/keeperpam/secrets-manager/developer-sdk-
 library/golang-sdk/record-field-classes)[NextVault
 SDKs](/en/keeperpam/secrets-manager/developer-sdk-library/vault-sdks)
 
@@ -498,4 +479,24 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+##
+
+Features
+
+  * Retrieve secrets from the Keeper Vault to use in PowerShell
+
+  * Integrate Keeper vault with PowerShell Secrets Manager
+
+  * Update secret values in the Keeper Vault from PowerShell
+
+  * Get files from the Keeper vault
+
+Please refer to the  documented in the Integrations section:
+
+[Keeper PowerShell module](/en/keeperpam/secrets-
+manager/integrations/powershell-plugin)
+
+[**Go to PowerShell Plugin**](/en/keeperpam/secrets-
+manager/integrations/powershell-plugin)
 

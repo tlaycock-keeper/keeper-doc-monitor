@@ -546,11 +546,6 @@ Installation
 
 Download the latest integration release from the KSM GitHub page:
 
-[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/secrets-
-managerGitHub](https://github.com/Keeper-Security/secrets-manager/releases)
-
-Secrets Manager Releases
-
 Look for a vault-plugin release in the list of releases that matched your
 platform.
 
@@ -909,9 +904,14 @@ A Keeper  with secrets shared to it
 
 See the  for instructions on creating an Application
 
+Secrets Manager Releases
+
 A Secrets Manager configuration can be created using Keeper Commander or the
 Secrets Manager CLI. See the  for more information on creating a
 configuration.
+
+[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/secrets-
+managerGitHub](https://github.com/Keeper-Security/secrets-manager/releases)
 
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)

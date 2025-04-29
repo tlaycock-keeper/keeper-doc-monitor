@@ -529,15 +529,11 @@ Setup Options
 
   * Install Windows service - Installs the gateway as a Windows service.
 
-    * Use service account - Use the [specified service account](/en/keeperpam/privileged-access-manager/getting-started/gateways/windows-installation#specifying-the-keeper-gateway-service-account-optional), otherwise the account installing the gateway will be used.
-
-    * Start Windows service - Start the Keeper Gateway service immediately after installation
+    *     * Start Windows service - Start the Keeper Gateway service immediately after installation
 
     * Enable automatic updates
 
-  * Turn on debug logging - Enable [verbose logging](/en/keeperpam/privileged-access-manager/getting-started/gateways/windows-installation#verbose-logging) on the gateway log files. NOT recommended for production environments. Only use this when debugging with Keeper support. 
-
-  * Remove Keeper Gateway configuration and logs from previous installations
+  *   * Remove Keeper Gateway configuration and logs from previous installations
 
 ####
 
@@ -761,6 +757,58 @@ To uninstall the service:
 
   * If desired, delete the private configuration .json file
 
+[PreviousLinux Installation](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/linux-installation)[NextAuto
+Updater](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/auto-updater)
+
+Last updated 1 month ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+Use service account - Use the , otherwise the account installing the gateway
+will be used.
+
+Turn on debug logging - Enable  on the gateway log files. NOT recommended for
+production environments. Only use this when debugging with Keeper support.
+
+[specified service account](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/windows-installation#specifying-the-keeper-gateway-service-
+account-optional)
+
+[verbose logging](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/windows-installation#verbose-logging)
+
 ###
 
 Network Configuration
@@ -803,8 +851,6 @@ Checksum Verification
 Keeper Gateway SHA256 hashes for the latest version are published at the below
 location:
 
-<https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
-
 Calculating and verifying the checksum:
 
 ####
@@ -829,42 +875,5 @@ Copy
     Get-FileHash -Algorithm SHA256 keeper-gateway_windows_x86_64.exe | Format-List
     Get-Content keeper-gateway_X.X.X_SHA256SUMS | Select-String keeper-gateway_windows_x86_64.exe
 
-[PreviousLinux Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/linux-installation)[NextAuto
-Updater](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/auto-updater)
-
-Last updated 1 month ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+<https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
 

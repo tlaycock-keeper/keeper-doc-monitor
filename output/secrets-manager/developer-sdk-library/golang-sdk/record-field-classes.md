@@ -430,71 +430,52 @@ library/golang-sdk/record-field-classes?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
+#### Company
 
-  * Accessing Record Fields
-  * Field Type Classes Reference
-  * KeeperRecordField
-  * Password
-  * Url
-  * FileRef
-  * OneTimeCode
-  * Name
-  * Names
-  * BirthDate
-  * Date
-  * ExpirationDate
-  * Text
-  * SecurityQuestion
-  * SecurityQuestions
-  * Multiline
-  * Email
-  * CardRef
-  * AddressRef
-  * PinCode
-  * Phone
-  * Phones
-  * Secret
-  * SecureNote
-  * AccountNumber
-  * PaymentCard
-  * PaymentCards
-  * BankAccount
-  * BankAccounts
-  * KeyPair
-  * KeyPairs
-  * Host
-  * Hosts
-  * Address
-  * Addresses
-  * LicenseNumber
-  * KeeperFileData
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+On this page
 
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=21kXviIyj7c297e5vOWh&only=yes&limit=100)
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Developer SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
-  3. [Go SDK](/en/keeperpam/secrets-manager/developer-sdk-library/golang-sdk)
+Last updated 3 months ago
 
-# Record Field Classes
-
-Description of each accessible field type Class in the Keeper Secrets Manager
-Go SDK
+Was this helpful?
 
 ##
 
 Accessing Record Fields
 
 Use the `GetFieldByType` function to access record fields.
-
-Copy
-
-    
-    
-    loginField, ok := secret.GetFieldByType(ksm.Login{}).(*ksm.Login)
 
 ##
 
@@ -507,6 +488,284 @@ KeeperRecordField
 All Record Fields extend the `KeeperRecordField` class, and contain a `Label
 `and `Type` fields
 
+####
+
+Field Values
+
+###
+
+Password
+
+####
+
+Field Values
+
+###
+
+Url
+
+####
+
+Field Values
+
+###
+
+FileRef
+
+####
+
+Field Values
+
+###
+
+OneTimeCode
+
+####
+
+Field Values
+
+###
+
+Name
+
+####
+
+Field Values
+
+###
+
+Names
+
+####
+
+Field Values
+
+###
+
+BirthDate
+
+####
+
+Field Values
+
+###
+
+Date
+
+####
+
+Field Values
+
+###
+
+ExpirationDate
+
+####
+
+Field Values
+
+###
+
+Text
+
+####
+
+Field Values
+
+###
+
+SecurityQuestion
+
+####
+
+Field Values
+
+###
+
+SecurityQuestions
+
+####
+
+Field Values
+
+###
+
+Multiline
+
+####
+
+Field Values
+
+###
+
+Email
+
+####
+
+Field Values
+
+###
+
+CardRef
+
+####
+
+Field Values
+
+###
+
+AddressRef
+
+####
+
+Field Values
+
+###
+
+PinCode
+
+####
+
+Field Values
+
+###
+
+Phone
+
+####
+
+Field Values
+
+###
+
+Phones
+
+####
+
+Field Values
+
+###
+
+Secret
+
+####
+
+Field Values
+
+###
+
+SecureNote
+
+####
+
+Field Values
+
+###
+
+AccountNumber
+
+####
+
+Field Values
+
+###
+
+PaymentCard
+
+####
+
+Field Values
+
+###
+
+PaymentCards
+
+####
+
+Field Values
+
+###
+
+BankAccount
+
+####
+
+Field Values
+
+###
+
+BankAccounts
+
+####
+
+Field Values
+
+###
+
+KeyPair
+
+###
+
+KeyPairs
+
+####
+
+Field Values
+
+###
+
+Host
+
+####
+
+Field Values
+
+###
+
+Hosts
+
+####
+
+Field Values
+
+###
+
+Address
+
+####
+
+Field Values
+
+###
+
+Addresses
+
+####
+
+Field Values
+
+###
+
+LicenseNumber
+
+####
+
+Field Values
+
+###
+
+KeeperFileData
+
+####
+
+Field Values
+
+Copy
+
+    
+    
+    loginField, ok := secret.GetFieldByType(ksm.Login{}).(*ksm.Login)
+
 Copy
 
     
@@ -515,10 +774,6 @@ Copy
     	Type  string `json:"type"`
     	Label string `json:"label,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -544,10 +799,6 @@ Yes
 
 `""`
 
-###
-
-Password
-
 Copy
 
     
@@ -560,10 +811,6 @@ Copy
     	Complexity        PasswordComplexity `json:"complexity,omitempty"`
     	Value             []string           `json:"value,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -611,10 +858,6 @@ No
 
 Yes
 
-###
-
-Url
-
 Copy
 
     
@@ -625,10 +868,6 @@ Copy
     	PrivacyScreen bool     `json:"privacyScreen,omitempty"`
     	Value         []string `json:"value,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -668,10 +907,6 @@ No
 
 Yes
 
-###
-
-FileRef
-
 Copy
 
     
@@ -681,10 +916,6 @@ Copy
     	Required bool     `json:"required,omitempty"`
     	Value    []string `json:"value,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -715,10 +946,6 @@ No
 `[]string`
 
 Yes
-
-###
-
-OneTimeCode
 
 Copy
 
@@ -731,10 +958,6 @@ Copy
     	Value         []string `json:"value,omitempty"`
     }
 
-####
-
-Field Values
-
 Name
 
 Type
@@ -773,10 +996,6 @@ No
 
 Yes
 
-###
-
-Name
-
 Copy
 
     
@@ -786,10 +1005,6 @@ Copy
     	Middle string `json:"middle,omitempty"`
     	Last   string `json:"last,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -823,10 +1038,6 @@ No
 
 `""`
 
-###
-
-Names
-
 Copy
 
     
@@ -837,10 +1048,6 @@ Copy
     	PrivacyScreen bool   `json:"privacyScreen,omitempty"`
     	Value         []Name `json:"value,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -880,10 +1087,6 @@ No
 
 Yes
 
-###
-
-BirthDate
-
 Copy
 
     
@@ -894,10 +1097,6 @@ Copy
     	PrivacyScreen bool    `json:"privacyScreen,omitempty"`
     	Value         []int64 `json:"value,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -936,10 +1135,6 @@ No
 `[]int64`
 
 Yes
-
-###
-
-Date
 
 Copy
 
@@ -952,10 +1147,6 @@ Copy
     	Value         []int64 `json:"value,omitempty"`
     }
 
-####
-
-Field Values
-
 Name
 
 Type
@@ -993,10 +1184,6 @@ No
 `[]int64`
 
 Yes
-
-###
-
-ExpirationDate
 
 Copy
 
@@ -1009,10 +1196,6 @@ Copy
     	Value         []int64 `json:"value,omitempty"`
     }
 
-####
-
-Field Values
-
 Name
 
 Type
@@ -1051,10 +1234,6 @@ No
 
 Yes
 
-###
-
-Text
-
 Copy
 
     
@@ -1065,10 +1244,6 @@ Copy
     	PrivacyScreen bool     `json:"privacyScreen,omitempty"`
     	Value         []string `json:"value,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -1108,10 +1283,6 @@ No
 
 Yes
 
-###
-
-SecurityQuestion
-
 Copy
 
     
@@ -1120,10 +1291,6 @@ Copy
     	Question string `json:"question,omitempty"`
     	Answer   string `json:"answer,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -1149,10 +1316,6 @@ No
 
 `""`
 
-###
-
-SecurityQuestions
-
 Copy
 
     
@@ -1163,10 +1326,6 @@ Copy
     	PrivacyScreen bool               `json:"privacyScreen,omitempty"`
     	Value         []SecurityQuestion `json:"value,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -1206,10 +1365,6 @@ No
 
 Yes
 
-###
-
-Multiline
-
 Copy
 
     
@@ -1220,10 +1375,6 @@ Copy
     	PrivacyScreen bool     `json:"privacyScreen,omitempty"`
     	Value         []string `json:"value,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -1262,10 +1413,6 @@ No
 `[]string`
 
 Yes
-
-###
-
-Email
 
 Copy
 
@@ -1278,10 +1425,6 @@ Copy
     	Value         []string `json:"value,omitempty"`
     }
 
-####
-
-Field Values
-
 Name
 
 Type
@@ -1319,10 +1462,6 @@ No
 `[]string`
 
 Yes
-
-###
-
-CardRef
 
 Copy
 
@@ -1335,10 +1474,6 @@ Copy
     	Value         []string `json:"value,omitempty"`
     }
 
-####
-
-Field Values
-
 Name
 
 Type
@@ -1376,10 +1511,6 @@ No
 `[]string`
 
 Yes
-
-###
-
-AddressRef
 
 Copy
 
@@ -1392,10 +1523,6 @@ Copy
     	Value         []string `json:"value,omitempty"`
     }
 
-####
-
-Field Values
-
 Name
 
 Type
@@ -1433,10 +1560,6 @@ No
 `[]string`
 
 Yes
-
-###
-
-PinCode
 
 Copy
 
@@ -1449,10 +1572,6 @@ Copy
     	Value         []string `json:"value,omitempty"`
     }
 
-####
-
-Field Values
-
 Name
 
 Type
@@ -1491,10 +1610,6 @@ No
 
 Yes
 
-###
-
-Phone
-
 Copy
 
     
@@ -1505,10 +1620,6 @@ Copy
     	Ext    string `json:"ext,omitempty"`
     	Type   string `json:"type,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -1550,10 +1661,6 @@ No
 
 `""`
 
-###
-
-Phones
-
 Copy
 
     
@@ -1564,10 +1671,6 @@ Copy
     	PrivacyScreen bool    `json:"privacyScreen,omitempty"`
     	Value         []Phone `json:"value,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -1607,10 +1710,6 @@ No
 
 Yes
 
-###
-
-Secret
-
 Copy
 
     
@@ -1621,10 +1720,6 @@ Copy
     	PrivacyScreen bool     `json:"privacyScreen,omitempty"`
     	Value         []string `json:"value,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -1663,10 +1758,6 @@ No
 `[]string`
 
 Yes
-
-###
-
-SecureNote
 
 Copy
 
@@ -1679,10 +1770,6 @@ Copy
     	Value         []string `json:"value,omitempty"`
     }
 
-####
-
-Field Values
-
 Name
 
 Type
@@ -1720,10 +1807,6 @@ No
 `[]string`
 
 Yes
-
-###
-
-AccountNumber
 
 Copy
 
@@ -1736,10 +1819,6 @@ Copy
     	Value         []string `json:"value,omitempty"`
     }
 
-####
-
-Field Values
-
 Name
 
 Type
@@ -1778,10 +1857,6 @@ No
 
 Yes
 
-###
-
-PaymentCard
-
 Copy
 
     
@@ -1791,10 +1866,6 @@ Copy
     	CardExpirationDate string `json:"cardExpirationDate,omitempty"`
     	CardSecurityCode   string `json:"cardSecurityCode,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -1828,10 +1899,6 @@ No
 
 `""`
 
-###
-
-PaymentCards
-
 Copy
 
     
@@ -1842,10 +1909,6 @@ Copy
     	PrivacyScreen bool          `json:"privacyScreen,omitempty"`
     	Value         []PaymentCard `json:"value,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -1885,10 +1948,6 @@ No
 
 Yes
 
-###
-
-BankAccount
-
 Copy
 
     
@@ -1899,10 +1958,6 @@ Copy
     	AccountNumber string `json:"accountNumber,omitempty"`
     	OtherType     string `json:"otherType,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -1944,10 +1999,6 @@ No
 
 `""`
 
-###
-
-BankAccounts
-
 Copy
 
     
@@ -1958,10 +2009,6 @@ Copy
     	PrivacyScreen bool          `json:"privacyScreen,omitempty"`
     	Value         []BankAccount `json:"value,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -2001,10 +2048,6 @@ No
 
 Yes
 
-###
-
-KeyPair
-
 Copy
 
     
@@ -2038,10 +2081,6 @@ No
 
 `""`
 
-###
-
-KeyPairs
-
 Copy
 
     
@@ -2052,10 +2091,6 @@ Copy
     	PrivacyScreen bool      `json:"privacyScreen,omitempty"`
     	Value         []KeyPair `json:"value,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -2095,10 +2130,6 @@ No
 
 Yes
 
-###
-
-Host
-
 Copy
 
     
@@ -2107,10 +2138,6 @@ Copy
     	Hostname string `json:"hostName,omitempty"`
     	Port     string `json:"port,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -2136,10 +2163,6 @@ No
 
 `""`
 
-###
-
-Hosts
-
 Copy
 
     
@@ -2150,10 +2173,6 @@ Copy
     	PrivacyScreen bool   `json:"privacyScreen,omitempty"`
     	Value         []Host `json:"value,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -2193,10 +2212,6 @@ No
 
 Yes
 
-###
-
-Address
-
 Copy
 
     
@@ -2209,10 +2224,6 @@ Copy
     	Country string `json:"country,omitempty"`
     	Zip     string `json:"zip,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -2270,10 +2281,6 @@ No
 
 `""`
 
-###
-
-Addresses
-
 Copy
 
     
@@ -2284,10 +2291,6 @@ Copy
     	PrivacyScreen bool      `json:"privacyScreen,omitempty"`
     	Value         []Address `json:"value,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -2327,10 +2330,6 @@ No
 
 Yes
 
-###
-
-LicenseNumber
-
 Copy
 
     
@@ -2341,10 +2340,6 @@ Copy
     	PrivacyScreen bool     `json:"privacyScreen,omitempty"`
     	Value         []string `json:"value,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -2384,10 +2379,6 @@ No
 
 Yes
 
-###
-
-KeeperFileData
-
 Copy
 
     
@@ -2399,10 +2390,6 @@ Copy
     	Size         int64  `json:"size,omitempty"`
     	LastModified int64  `json:"lastModified,omitempty"`
     }
-
-####
-
-Field Values
 
 Name
 
@@ -2442,41 +2429,54 @@ Yes
 
 Yes
 
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Developer SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
+  3. [Go SDK](/en/keeperpam/secrets-manager/developer-sdk-library/golang-sdk)
+
+# Record Field Classes
+
+Description of each accessible field type Class in the Keeper Secrets Manager
+Go SDK
+
 [PreviousGo SDK](/en/keeperpam/secrets-manager/developer-sdk-library/golang-
 sdk)[NextPowerShell](/en/keeperpam/secrets-manager/developer-sdk-
 library/powershell)
 
-Last updated 3 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+  * Accessing Record Fields
+  * Field Type Classes Reference
+  * KeeperRecordField
+  * Password
+  * Url
+  * FileRef
+  * OneTimeCode
+  * Name
+  * Names
+  * BirthDate
+  * Date
+  * ExpirationDate
+  * Text
+  * SecurityQuestion
+  * SecurityQuestions
+  * Multiline
+  * Email
+  * CardRef
+  * AddressRef
+  * PinCode
+  * Phone
+  * Phones
+  * Secret
+  * SecureNote
+  * AccountNumber
+  * PaymentCard
+  * PaymentCards
+  * BankAccount
+  * BankAccounts
+  * KeyPair
+  * KeyPairs
+  * Host
+  * Hosts
+  * Address
+  * Addresses
+  * LicenseNumber
+  * KeeperFileData
 

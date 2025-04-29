@@ -530,6 +530,12 @@ cmdr:rules
 
 (Optional) Password generation rules
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf4odhJysOvWDa_xLae%252Fimage.png%3Falt%3Dmedia%26token%3D3dab2cc1-33fc-4a0c-9540-8fe0f4c09398&width=768&dpr=4&quality=100&sign=9861819&sv=2)
+
+Keeper Record setup for Unix passwd rotation
+
 ##
 
 Rotate
@@ -592,10 +598,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-Keeper Record setup for Unix passwd rotation
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf4odhJysOvWDa_xLae%252Fimage.png%3Falt%3Dmedia%26token%3D3dab2cc1-33fc-4a0c-9540-8fe0f4c09398&width=768&dpr=4&quality=100&sign=9861819&sv=2)
 

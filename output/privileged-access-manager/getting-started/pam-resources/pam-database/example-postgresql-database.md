@@ -612,10 +612,18 @@ Session Recording
 
 Options for recording sessions and typescripts
 
+See [session recording](/en/keeperpam/privileged-access-manager/session-
+recording-and-playback)
+
 Connection Parameters
 
 Connection-specific protocol settings which can vary based on the protocol
 type
+
+See this [section](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/postgresql-connections) for PostgreSQL
+protocol settings We recommend specifying the **Connection Port** at a
+minimum. E.g. "5432" for PostgreSQL.
 
 ###
 
@@ -701,17 +709,6 @@ Was this helpful?
 © 2025 Keeper Security, Inc.
 
 **Required** Visit this  for more details
-
-See
-
-See this  for PostgreSQL protocol settings We recommend specifying the
-**Connection Port** at a minimum. E.g. "5432" for PostgreSQL.
-
-[session recording](/en/keeperpam/privileged-access-manager/session-recording-
-and-playback)
-
-[section](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/postgresql-connections)
 
 [section](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-database/example-postgresql-database#administrative-credential-
