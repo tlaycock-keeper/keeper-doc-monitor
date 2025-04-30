@@ -12,45 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-
-manager/overview?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/overview?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/secrets-manager/overview?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/overview?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/overview?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/secrets-manager/overview?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/overview?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/overview?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/overview?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/overview?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-
-manager/overview?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/overview?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/secrets-manager/overview?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/overview?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/overview?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/secrets-manager/overview?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/overview?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/overview?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/overview?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/overview?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -424,30 +386,6 @@ manager/overview?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * What is Keeper Secrets Manager?
-  * Features
-  * Get Started
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MeXQpBNa9pJqpPkixr9&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-
-# Secrets Manager Overview
-
-Overview of Keeper Secrets Manager (KSM) for IT Admins, DevOps & Developers
-
-[PreviousFAQs](/en/keeperpam/faqs)[NextQuick Start
-Guide](/en/keeperpam/secrets-manager/quick-start-guide)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -478,6 +416,30 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * What is Keeper Secrets Manager?
+  * Features
+  * Get Started
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MeXQpBNa9pJqpPkixr9&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+
+# Secrets Manager Overview
+
+Overview of Keeper Secrets Manager (KSM) for IT Admins, DevOps & Developers
+
+[PreviousFAQs](/en/keeperpam/faqs)[NextQuick Start
+Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 ##
 
 What is Keeper Secrets Manager?
@@ -486,8 +448,6 @@ Keeper Secrets Manager (KSM) provides your DevOps, IT Security and software
 development teams with a fully cloud-based, Zero-Knowledge platform for
 managing all of your infrastructure secrets such as API keys, Database
 passwords, access keys, certificates and any type of confidential data.
-
-Secrets Manager Video Demo
 
 Common use cases for Secrets Manager include:
 
@@ -507,15 +467,7 @@ Common use cases for Secrets Manager include:
 
 Features
 
-**Keeper Secrets Manager** is part of the [Keeper Password Security
-platform](https://keepersecurity.com). With millions of users worldwide,
-Keeper Password Manager + Keeper Secrets Manager provides numerous benefits
-over using Hashicorp Vault, Delinea, Cyberark and other "legacy" Secrets
-Management products:
-
-  * Superior Zero-Knowledge encryption model ([learn more](https://docs.keeper.io/enterprise-guide/keeper-encryption-model))
-
-  * No hosted software or VMs to configure and manage (100% Cloud-based)
+  *   * No hosted software or VMs to configure and manage (100% Cloud-based)
 
   * Secure and user-friendly Web Vault and Browser Extensions for secrets management
 
@@ -551,8 +503,23 @@ Management products:
 
 Get Started
 
-Ready to get started with Keeper Secrets Manager? [Proceed to the Setup
-Instructions](/en/keeperpam/secrets-manager/quick-start-guide).
+**Keeper Secrets Manager** is part of the . With millions of users worldwide,
+Keeper Password Manager + Keeper Secrets Manager provides numerous benefits
+over using Hashicorp Vault, Delinea, Cyberark and other "legacy" Secrets
+Management products:
+
+Superior Zero-Knowledge encryption model ()
+
+Ready to get started with Keeper Secrets Manager? .
+
+[Keeper Password Security platform](https://keepersecurity.com)
+
+[learn more](https://docs.keeper.io/enterprise-guide/keeper-encryption-model)
+
+[Proceed to the Setup Instructions](/en/keeperpam/secrets-manager/quick-start-
+guide)
+
+Secrets Manager Video Demo
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

@@ -12,53 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/password-rotation/rotation-use-cases/local-
-network?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/privileged-access-manager/password-rotation/rotation-use-cases/local-
-network?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/privileged-access-manager/password-rotation/rotation-use-cases/local-
-network?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/privileged-access-manager/password-rotation/rotation-use-cases/local-
-network?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/password-rotation/rotation-use-cases/local-
-network?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/privileged-access-manager/password-rotation/rotation-use-
-cases/local-network?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network?fallback=true)[SSO
-Connect On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-
-access-manager/password-rotation/rotation-use-cases/local-
-network?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/privileged-access-manager/password-rotation/rotation-use-cases/local-
-network?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/password-rotation/rotation-use-cases/local-
-network?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/privileged-access-manager/password-rotation/rotation-use-cases/local-
-network?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/privileged-access-manager/password-rotation/rotation-use-cases/local-
-network?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/privileged-access-manager/password-rotation/rotation-use-cases/local-
-network?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/password-rotation/rotation-use-cases/local-
-network?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/privileged-access-manager/password-rotation/rotation-use-
-cases/local-network?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network?fallback=true)[SSO
-Connect On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-
-access-manager/password-rotation/rotation-use-cases/local-
-network?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/privileged-access-manager/password-rotation/rotation-use-cases/local-
-network?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -432,35 +386,6 @@ network?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Setup Steps 
-  * Use Cases
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=bLhEny4oidYf39tG9ERv&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-
-# Local Network
-
-Password Rotation in the Local Network Environment
-
-[PreviousAWS RDS for Oracle](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-
-oracle)[NextActive Directory or OpenLDAP User](/en/keeperpam/privileged-
-access-manager/password-rotation/rotation-use-cases/local-network/active-
-directory)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -490,6 +415,35 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Overview
+  * Setup Steps 
+  * Use Cases
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=bLhEny4oidYf39tG9ERv&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+
+# Local Network
+
+Password Rotation in the Local Network Environment
+
+[PreviousAWS RDS for Oracle](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/managed-database/aws-rds-for-
+oracle)[NextActive Directory or OpenLDAP User](/en/keeperpam/privileged-
+access-manager/password-rotation/rotation-use-cases/local-network/active-
+directory)
+
+Last updated 3 months ago
+
+Was this helpful?
 
 ##
 
@@ -530,15 +484,22 @@ passwords on a network:
 
 Use Cases
 
-  * [Active Directory User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
+  *   *   *   *   * 
 
-  * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
+[Active Directory User](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/active-directory)
 
-  * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
+[Windows User](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/windows-user)
 
-  * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
+[Linux User](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/linux-user)
 
-  * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
+[macOS User](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/macos-user)
+
+[Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/local-network/database)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

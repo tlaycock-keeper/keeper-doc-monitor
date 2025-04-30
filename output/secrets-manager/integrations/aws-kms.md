@@ -12,47 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/aws-
-kms?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/aws-kms?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/integrations/aws-kms?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/integrations/aws-kms?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/aws-kms?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-manager/integrations/aws-
-kms?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-connect-
-cloud/secrets-manager/integrations/aws-kms?fallback=true)[KeeperPAM and
-Secrets Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/integrations/aws-kms?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/aws-kms?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/integrations/aws-kms?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/aws-
-kms?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/aws-kms?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/integrations/aws-kms?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/integrations/aws-kms?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/aws-kms?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-manager/integrations/aws-
-kms?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-connect-
-cloud/secrets-manager/integrations/aws-kms?fallback=true)[KeeperPAM and
-Secrets Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/integrations/aws-kms?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/aws-kms?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/integrations/aws-kms?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -426,39 +386,6 @@ manager/integrations/aws-kms?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Features
-  * Prerequisites
-  * Setup
-  * 1\. Install Module
-  * 2\. Configure AWS Connection
-  * 3\. Add AWS KMS Storage to Your Code
-  * Using the AWS KMS Integration
-  * Additional Options
-  * Change Key
-  * Decrypt Config
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=0HQV8nZUe4eH4dyBXD4q&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# AWS KMS Encryption
-
-Protect Secrets Manager connection details with AWS KMS
-
-[PreviousAWS Secrets Manager Sync](/en/keeperpam/secrets-
-manager/integrations/aws-secrets-manager)[NextAzure DevOps
-Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
-
-Last updated 15 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -489,6 +416,39 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Features
+  * Prerequisites
+  * Setup
+  * 1\. Install Module
+  * 2\. Configure AWS Connection
+  * 3\. Add AWS KMS Storage to Your Code
+  * Using the AWS KMS Integration
+  * Additional Options
+  * Change Key
+  * Decrypt Config
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=0HQV8nZUe4eH4dyBXD4q&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# AWS KMS Encryption
+
+Protect Secrets Manager connection details with AWS KMS
+
+[PreviousAWS Secrets Manager Sync](/en/keeperpam/secrets-
+manager/integrations/aws-secrets-manager)[NextAzure DevOps
+Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
+
+Last updated 16 days ago
+
+Was this helpful?
+
 Keeper Secrets Manager integrates with AWS KMS in order to provide encryption
 for Keeper Secrets Manager configuration files. With this integration, you can
 protect connection details on your machine while taking advantage of Keeper's
@@ -510,27 +470,15 @@ Prerequisites
 
 JavaJavaScriptPython.NetGoLang
 
-  * Supports the [Java Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk)
+  *   *   * Supports Java 11 and above
 
-  * Requires [AWS-KMS](https://mvnrepository.com/artifact/software.amazon.awssdk/kms) and [AWS-Auth](https://mvnrepository.com/artifact/software.amazon.awssdk/auth) packages
+  *   * 
 
-  * Supports Java 11 and above
+  *   * Requires boto3 package
 
-  * Supports the [JavaScript Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-sdk)
+  *   * 
 
-  * Requires [aws-sdk/client-kms](https://www.npmjs.com/package/@aws-sdk/client-kms) package
-
-  * Supports the [Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk)
-
-  * Requires boto3 package
-
-  * Supports the [.Net Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/.net-sdk)
-
-  * Requires [AWSSDK.KeyManagementService](https://www.nuget.org/packages/AWSSDK.KeyManagementService)
-
-  * Supports the [GoLang Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/golang-sdk)
-
-  * Requires [aws-sdk-v2](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2)
+  *   * 
 
 ##
 
@@ -709,19 +657,11 @@ with the AWS CLI with the `aws configure` command. If you would like to
 specify the connection details, the two configuration files located at
 `~/.aws/config` and `~/.aws/credentials` can be manually edited.
 
-See the AWS documentation for more information on setting up an AWS session:
-<https://docs.aws.amazon.com/cli/latest/reference/configure/>[](https://docs.aws.amazon.com/cli/latest/reference/configure/)
-
 Alternatively, configuration variables can be provided explicitly as an access
 key using the `AwsSessionConfig` data class and providing `aws_access_key_id`
 , `aws_secret_access_key` and `aws_session_token` variables.
 
 You will need an AWS Access Key to use the AWS KMS integration.
-
-For more information on AWS Access Keys see the AWS documentation:
-<https://aws.amazon.com/premiumsupport/knowledge-center/create-access-
-key/>[](https://aws.amazon.com/premiumsupport/knowledge-center/create-access-
-key/)
 
 ###
 
@@ -1298,10 +1238,66 @@ Copy
     	})
     decryptedConfig, err := cfg.DecryptConfig(true)
 
-You're ready to use the KSM integration 👍
+Supports the
 
-Check out the [KSM SDKs documentation](/en/keeperpam/secrets-
-manager/developer-sdk-library) for more examples and functionality
+Requires  and  packages
+
+Supports the
+
+Requires  package
+
+Supports the
+
+Supports the
+
+Requires
+
+Supports the
+
+Requires
+
+See the AWS documentation for more information on setting up an AWS session:
+
+For more information on AWS Access Keys see the AWS documentation:
+
+You're ready to use the KSM integration
+
+Check out the  for more examples and functionality
+
+👍
+
+[Java Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/java-sdk)
+
+[AWS-KMS](https://mvnrepository.com/artifact/software.amazon.awssdk/kms)
+
+[AWS-Auth](https://mvnrepository.com/artifact/software.amazon.awssdk/auth)
+
+[JavaScript Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/javascript-sdk)
+
+[aws-sdk/client-kms](https://www.npmjs.com/package/@aws-sdk/client-kms)
+
+[Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/python-sdk)
+
+[.Net Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/.net-sdk)
+
+[AWSSDK.KeyManagementService](https://www.nuget.org/packages/AWSSDK.KeyManagementService)
+
+[GoLang Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/golang-sdk)
+
+[aws-sdk-v2](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2)
+
+<https://docs.aws.amazon.com/cli/latest/reference/configure/>[](https://docs.aws.amazon.com/cli/latest/reference/configure/)
+
+<https://aws.amazon.com/premiumsupport/knowledge-center/create-access-
+key/>[](https://aws.amazon.com/premiumsupport/knowledge-center/create-access-
+key/)
+
+[KSM SDKs documentation](/en/keeperpam/secrets-manager/developer-sdk-library)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

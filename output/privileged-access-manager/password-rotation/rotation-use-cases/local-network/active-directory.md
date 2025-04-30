@@ -12,63 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/active-
-directory?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/password-rotation/rotation-use-cases/local-network/active-
-directory?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/privileged-access-manager/password-rotation/rotation-use-cases/local-
-network/active-directory?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network/active-
-directory?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network/active-
-directory?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/password-rotation/rotation-use-cases/local-
-network/active-directory?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network/active-
-directory?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network/active-
-directory?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/privileged-access-manager/password-rotation/rotation-use-
-cases/local-network/active-directory?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network/active-
-directory?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/active-
-directory?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/password-rotation/rotation-use-cases/local-network/active-
-directory?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/privileged-access-manager/password-rotation/rotation-use-cases/local-
-network/active-directory?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network/active-
-directory?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network/active-
-directory?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/password-rotation/rotation-use-cases/local-
-network/active-directory?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network/active-
-directory?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network/active-
-directory?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/privileged-access-manager/password-rotation/rotation-use-
-cases/local-network/active-directory?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network/active-
-directory?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -792,6 +736,10 @@ started/pam-configuration)
 [enforcement policies](/en/keeperpam/privileged-access-manager/getting-
 started/enforcement-policies)
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FD4pFTWlEuiTNgUy4pXoD%252FLocal%2520Network%2520rotations.jpg%3Falt%3Dmedia%26token%3Da54e5b3b-1dc1-4160-a142-d616e9c8f038&width=768&dpr=4&quality=100&sign=fcf7a7e0&sv=2)
+
 [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
 started/pam-configuration)
 
@@ -804,10 +752,6 @@ PAM User scheduled rotations
 Testing and LDAP connection with LDP.exe
 
 Connect using LDP.exe
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FD4pFTWlEuiTNgUy4pXoD%252FLocal%2520Network%2520rotations.jpg%3Falt%3Dmedia%26token%3Da54e5b3b-1dc1-4160-a142-d616e9c8f038&width=768&dpr=4&quality=100&sign=fcf7a7e0&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

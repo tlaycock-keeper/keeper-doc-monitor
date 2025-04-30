@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/commander-cli/command-
-reference/connection-commands/ssh?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/command-reference/connection-commands/ssh?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/command-
-reference/connection-commands/ssh?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/command-
-reference/connection-commands/ssh?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/command-
-reference/connection-commands/ssh?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/commander-cli/command-
-reference/connection-commands/ssh?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/command-
-reference/connection-commands/ssh?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/command-
-reference/connection-commands/ssh?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/command-
-reference/connection-commands/ssh?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/command-
-reference/connection-commands/ssh?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/commander-cli/command-
-reference/connection-commands/ssh?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/command-reference/connection-commands/ssh?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/command-
-reference/connection-commands/ssh?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/command-
-reference/connection-commands/ssh?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/command-
-reference/connection-commands/ssh?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/commander-cli/command-
-reference/connection-commands/ssh?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/command-
-reference/connection-commands/ssh?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/command-
-reference/connection-commands/ssh?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/command-
-reference/connection-commands/ssh?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/command-
-reference/connection-commands/ssh?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,6 +386,36 @@ reference/connection-commands/ssh?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * SSH
@@ -447,9 +435,17 @@ PDF](/en/keeperpam/~gitbook/pdf?page=1j9mMqOpebiFGSrXCi6v&only=yes&limit=100)
 
 Using Keeper Commander with SSH connections
 
+[PreviousConnection Commands](/en/keeperpam/commander-cli/command-
+reference/connection-commands)[NextSSH Agent](/en/keeperpam/commander-
+cli/command-reference/connection-commands/ssh-agent)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 For a full remote connection management tool that supports privileged
 sessions, session recording and other advanced capabilities over zero-trust
-cloud connections, we recommend using our [KeeperPAM platform](/en/keeperpam).
+cloud connections, we recommend using our .
 
 This SSH capability described in Commander uses direct line-of-sight SSH
 connections.
@@ -508,41 +504,5 @@ Copy
       1  xwwCv4We6JqYaw3qMdykYw  serverCredentials  Connection                My_Login @ 10.0.160.7:3389
       2  qTUzddtffRvsS1L8_ytO1A  sshKeys            SSH Connection            My_Connection_Login @ 10.0.160.7:22
 
-[PreviousConnection Commands](/en/keeperpam/commander-cli/command-
-reference/connection-commands)[NextSSH Agent](/en/keeperpam/commander-
-cli/command-reference/connection-commands/ssh-agent)
-
-Last updated 3 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+[KeeperPAM platform](/en/keeperpam)
 

@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-
-manager/discovery/discovery-using-commander?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/discovery/discovery-using-commander?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/discovery/discovery-using-commander?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/discovery/discovery-using-commander?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/discovery/discovery-using-commander?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-
-manager/discovery/discovery-using-commander?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/discovery/discovery-using-commander?fallback=true)[KeeperPAM and
-Secrets Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/discovery/discovery-using-commander?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/discovery/discovery-using-commander?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/discovery/discovery-using-commander?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-
-manager/discovery/discovery-using-commander?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/discovery/discovery-using-commander?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/discovery/discovery-using-commander?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/discovery/discovery-using-commander?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/discovery/discovery-using-commander?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-
-manager/discovery/discovery-using-commander?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/discovery/discovery-using-commander?fallback=true)[KeeperPAM and
-Secrets Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/discovery/discovery-using-commander?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/discovery/discovery-using-commander?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/discovery/discovery-using-commander?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,6 +386,36 @@ manager/discovery/discovery-using-commander?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -451,6 +439,15 @@ PDF](/en/keeperpam/~gitbook/pdf?page=Wv8oy2UD83gUCG3GgKV9&only=yes&limit=100)
 
 Performing resource discovery through Keeper Commander CLI
 
+[PreviousDiscovery Basics](/en/keeperpam/privileged-access-
+manager/discovery/discovery-basics)[NextDiscovery using the
+Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-
+vault)
+
+Last updated 1 month ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -462,9 +459,7 @@ infrastructure using Discovery with Keeper Commander.
 
 Prerequisites
 
-Prior to using Discovery on Commander, make sure to review the [Discovery
-Basics](/en/keeperpam/privileged-access-manager/discovery/discovery-basics)
-documentation.
+Prior to using Discovery on Commander, make sure to review the  documentation.
 
 ###
 
@@ -594,46 +589,12 @@ local user accounts, services, and scheduled tasks.
 Exploring Commander Capabilities
 
 Keeper Commander provides many advanced capabilities for managing gateways,
-configurations, rotations and discovery. See the [KeeperPAM
-Commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
-for a list of all available options.
+configurations, rotations and discovery. See the  for a list of all available
+options.
 
-[PreviousDiscovery Basics](/en/keeperpam/privileged-access-
-manager/discovery/discovery-basics)[NextDiscovery using the
-Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-
-vault)
+[Discovery Basics](/en/keeperpam/privileged-access-
+manager/discovery/discovery-basics)
 
-Last updated 1 month ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+[KeeperPAM Commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
+commands)
 

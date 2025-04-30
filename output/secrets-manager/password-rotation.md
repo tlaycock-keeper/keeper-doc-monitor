@@ -12,43 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-manager/password-
-rotation?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/password-rotation?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-manager/password-
-rotation?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/secrets-manager/password-rotation?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-manager/password-
-rotation?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/secrets-manager/password-rotation?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-manager/password-
-rotation?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-manager/password-
-rotation?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/secrets-manager/password-rotation?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-manager/password-
-rotation?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-manager/password-
-rotation?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/password-rotation?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-manager/password-
-rotation?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/secrets-manager/password-rotation?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-manager/password-
-rotation?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/secrets-manager/password-rotation?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-manager/password-
-rotation?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-manager/password-
-rotation?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/secrets-manager/password-rotation?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-manager/password-
-rotation?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -422,32 +386,6 @@ rotation?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=l6HcnN1otHc20n7EcNSv&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-
-# Password Rotation
-
-Automatically rotate secrets in the cloud and on-prem with KeeperPAM
-
-Keeper Password Rotation allows Keeper customers to securely rotate
-credentials in any cloud-based or on-prem environment.
-
-  * Go to the [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation) documentation in KeeperPAM to learn more.
-
-[PreviousCustom Record Types](/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface/custom-record-types)[NextDeveloper
-SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -477,4 +415,32 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=l6HcnN1otHc20n7EcNSv&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+
+# Password Rotation
+
+Automatically rotate secrets in the cloud and on-prem with KeeperPAM
+
+[PreviousCustom Record Types](/en/keeperpam/secrets-manager/secrets-manager-
+command-line-interface/custom-record-types)[NextDeveloper
+SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
+
+Last updated 2 months ago
+
+Was this helpful?
+
+Keeper Password Rotation allows Keeper customers to securely rotate
+credentials in any cloud-based or on-prem environment.
+
+  * Go to the  documentation in KeeperPAM to learn more.
+
+[Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
 

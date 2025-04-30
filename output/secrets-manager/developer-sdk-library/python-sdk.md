@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-manager/developer-sdk-
-library/python-sdk?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/developer-sdk-library/python-sdk?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-manager/developer-sdk-
-library/python-sdk?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-manager/developer-sdk-
-library/python-sdk?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-manager/developer-
-sdk-library/python-sdk?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-manager/developer-sdk-
-library/python-sdk?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-manager/developer-
-sdk-library/python-sdk?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-manager/developer-sdk-
-library/python-sdk?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-manager/developer-
-sdk-library/python-sdk?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-manager/developer-sdk-
-library/python-sdk?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-manager/developer-sdk-
-library/python-sdk?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/developer-sdk-library/python-sdk?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-manager/developer-sdk-
-library/python-sdk?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-manager/developer-sdk-
-library/python-sdk?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-manager/developer-
-sdk-library/python-sdk?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-manager/developer-sdk-
-library/python-sdk?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-manager/developer-
-sdk-library/python-sdk?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-manager/developer-sdk-
-library/python-sdk?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-manager/developer-
-sdk-library/python-sdk?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-manager/developer-sdk-
-library/python-sdk?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,6 +386,36 @@ library/python-sdk?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Download and Installation
@@ -461,6 +449,14 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-Mg6hkOAroPk6q73LlFs&only=yes&limit=100)
 
 Detailed Python SDK docs for Keeper Secrets Manager
 
+[PreviousDeveloper SDKs](/en/keeperpam/secrets-manager/developer-sdk-
+library)[NextJava/Kotlin SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/java-sdk)
+
+Last updated 26 days ago
+
+Was this helpful?
+
 ##
 
 Download and Installation
@@ -479,9 +475,7 @@ Copy
 
 Source Code
 
-Find the Python source code in the [GitHub
-repository](https://github.com/Keeper-Security/secrets-
-manager/tree/master/sdk/python)
+Find the Python source code in the
 
 ##
 
@@ -728,10 +722,6 @@ None
 
 If passed, set the value of the field to the given value
 
-Fields are found by type, for a list of field types see the [Record
-Types](/en/keeperpam/commander-cli/command-reference/record-commands/default-
-record-types#field-types) documentation.
-
 ####
 
 Retrieve Custom Fields
@@ -811,11 +801,6 @@ Optional
 None
 
 If passed, set the value of the field to the given value
-
-Custom fields are any field that is not part of the record type definition,
-but can be added by users. For a list of fields in each standard record type,
-see the [Record Types](/en/keeperpam/commander-cli/command-reference/record-
-commands/default-record-types#standard-record-types) documentation.
 
 It is possible for multiple fields of the same custom type to appear on a
 single record, to differentiate these fields, the field label is required.
@@ -906,10 +891,6 @@ Copy
     
     # get a specific custom field with Keeper Notation
     custom_field_value = secrets_manager.get_notation('EG6KdJaaLG7esRZbMnfbFA/custom_field/my_field')
-
-See [Keeper Notation documentation](/en/keeperpam/secrets-
-manager/about/keeper-notation) to learn about Keeper Notation format and
-capabilities
 
 Parameter
 
@@ -1067,14 +1048,6 @@ Yes
 
 Storage and query configuration
 
-Set field values using the [field ](/en/keeperpam/secrets-manager/developer-
-sdk-library/python-sdk#retrieve-field-values-from-a-secret)method.
-
-Fields are found by type, for a list of field types see the [Record
-Types](/en/keeperpam/commander-cli/command-reference/record-commands/default-
-record-types#field-types) documentation. Some fields have multiple values, in
-these cases the value can be set to a list.
-
 ####
 
 Update a Standard Field Value
@@ -1146,10 +1119,6 @@ Optional
 None
 
 If passed, set the value of the field to the given value
-
-Fields are found by type, for a list of field types see the [Record
-Types](/en/keeperpam/commander-cli/command-reference/record-commands/default-
-record-types#field-types) documentation.
 
 ####
 
@@ -1520,11 +1489,9 @@ Prerequisites:
 
   * Created records and record fields must be formatted correctly
 
-    * See the [documentation](/en/keeperpam/commander-cli/command-reference/record-commands/default-record-types#field-types) for expected field formats for each record type
+    *   * TOTP fields accept only URL generated outside of the KSM SDK
 
-  * TOTP fields accept only URL generated outside of the KSM SDK
-
-  * After record creation, you can upload file attachments using [upload_file](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk#upload-a-file)
+  * 
 
 Create a RecordCreate Record in Sub-folderLogin Record ExampleCustom Type
 Example
@@ -2000,41 +1967,50 @@ Copy
     secrets_manager = SecretsManager(config=FileKeyValueStorage('ksm-config.json'))
     secrets_manager.delete_folder(["[FOLDER_UID1]", "[FOLDER_UID2]"], True)
 
-[PreviousDeveloper SDKs](/en/keeperpam/secrets-manager/developer-sdk-
-library)[NextJava/Kotlin SDK](/en/keeperpam/secrets-manager/developer-sdk-
-library/java-sdk)
+Fields are found by type, for a list of field types see the  documentation.
 
-Last updated 25 days ago
+Custom fields are any field that is not part of the record type definition,
+but can be added by users. For a list of fields in each standard record type,
+see the  documentation.
 
-Was this helpful?
+See  to learn about Keeper Notation format and capabilities
 
-#### Company
+Set field values using the method.
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+Fields are found by type, for a list of field types see the  documentation.
+Some fields have multiple values, in these cases the value can be set to a
+list.
 
-#### Support
+Fields are found by type, for a list of field types see the  documentation.
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+See the  for expected field formats for each record type
 
-#### Solutions
+After record creation, you can upload file attachments using
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+[GitHub repository](https://github.com/Keeper-Security/secrets-
+manager/tree/master/sdk/python)
 
-#### Pricing
+[Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
+notation)
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+[Record Types](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types#field-types)
 
-© 2025 Keeper Security, Inc.
+[Record Types](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types#standard-record-types)
+
+[Record Types](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types#field-types)
+
+[Record Types](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types#field-types)
+
+[documentation](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types#field-types)
+
+[field ](/en/keeperpam/secrets-manager/developer-sdk-library/python-
+sdk#retrieve-field-values-from-a-secret)
+
+[upload_file](/en/keeperpam/secrets-manager/developer-sdk-library/python-
+sdk#upload-a-file)
 

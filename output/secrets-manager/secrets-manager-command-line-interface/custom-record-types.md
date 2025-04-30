@@ -12,51 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-manager/secrets-manager-command-
-line-interface/custom-record-types?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/secrets-manager-command-line-interface/custom-record-
-types?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/secrets-manager/secrets-manager-command-line-interface/custom-record-
-types?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/secrets-manager/secrets-manager-command-line-interface/custom-record-
-types?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/secrets-manager/secrets-manager-command-line-interface/custom-record-
-types?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-guide/secrets-
-manager/secrets-manager-command-line-interface/custom-record-
-types?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-connect-
-cloud/secrets-manager/secrets-manager-command-line-interface/custom-record-
-types?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface/custom-record-types?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-manager/secrets-
-manager-command-line-interface/custom-record-types?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-manager/secrets-
-manager-command-line-interface/custom-record-types?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-manager/secrets-manager-command-
-line-interface/custom-record-types?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/secrets-manager-command-line-interface/custom-record-
-types?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/secrets-manager/secrets-manager-command-line-interface/custom-record-
-types?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/secrets-manager/secrets-manager-command-line-interface/custom-record-
-types?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/secrets-manager/secrets-manager-command-line-interface/custom-record-
-types?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-guide/secrets-
-manager/secrets-manager-command-line-interface/custom-record-
-types?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-connect-
-cloud/secrets-manager/secrets-manager-command-line-interface/custom-record-
-types?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface/custom-record-types?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-manager/secrets-
-manager-command-line-interface/custom-record-types?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-manager/secrets-
-manager-command-line-interface/custom-record-types?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -430,6 +386,36 @@ manager-command-line-interface/custom-record-types?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
 Was this helpful?
@@ -444,6 +430,14 @@ PDF](/en/keeperpam/~gitbook/pdf?page=BMjdtCP9NKJa8lm8DJaW&only=yes&limit=100)
 
 Utilizing custom record types in the Keeper Secrets Manager CLI
 
+[PreviousDocker Container](/en/keeperpam/secrets-manager/secrets-manager-
+command-line-interface/docker-container)[NextPassword
+Rotation](/en/keeperpam/secrets-manager/password-rotation)
+
+Last updated 6 months ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -452,12 +446,11 @@ The Keeper Secrets Manager CLI has a list of default record types that are
 available for use. The CLI also allows for the creation of records using
 custom record types.
 
-More information about Custom Record Types is found in the [Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/record-types).
+More information about Custom Record Types is found in the .
 
 In order to create records that use custom record types, the schema needs to
 be defined within the CLI. This is done by exporting the custom record type
-using [Keeper Commander](/en/keeperpam/commander-cli/overview).
+using .
 
 The below will export the "My Custom" record type, as JSON, to the file
 `my_record_type.json`.
@@ -500,10 +493,6 @@ for the `keeper.ini`.
 
     * `$env:ProgramFiles/Keeper`
 
-An alternative directory can be set via the [config
-command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/config-command).
-
 Copy
 
     
@@ -542,41 +531,12 @@ All custom record type name need to be unique. An error will occur if a record
 type with the same name has already been imported. You also cannot override
 the default record types.
 
-[PreviousDocker Container](/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface/docker-container)[NextPassword
-Rotation](/en/keeperpam/secrets-manager/password-rotation)
+An alternative directory can be set via the .
 
-Last updated 6 months ago
+[Enterprise Guide](https://docs.keeper.io/en/enterprise-guide/record-types)
 
-Was this helpful?
+[Keeper Commander](/en/keeperpam/commander-cli/overview)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+[config command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/config-command)
 

@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-manager/about/security-
-encryption-model?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/about/security-encryption-model?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-manager/about/security-
-encryption-model?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-manager/about/security-
-encryption-model?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/about/security-encryption-model?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-manager/about/security-
-encryption-model?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/about/security-encryption-model?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-manager/about/security-
-encryption-model?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/about/security-encryption-model?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/about/security-encryption-model?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-manager/about/security-
-encryption-model?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/about/security-encryption-model?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-manager/about/security-
-encryption-model?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-manager/about/security-
-encryption-model?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/about/security-encryption-model?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-manager/about/security-
-encryption-model?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/about/security-encryption-model?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-manager/about/security-
-encryption-model?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/about/security-encryption-model?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/about/security-encryption-model?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,6 +386,36 @@ manager/about/security-encryption-model?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -579,14 +567,6 @@ Keeper utilizes best-in-class security with a Zero-Knowledge security
 architecture and Zero-Trust framework. Technical documentation about Keeper's
 Zero-Knowledge encryption model can be found at the links below:
 
-[Keeper Encryption Model](https://docs.keeper.io/enterprise-guide/keeper-
-encryption-model)
-
-[Secrets Manager Encryption Model](https://docs.keeper.io/enterprise-
-guide/keeper-encryption-model#secrets-manager-encryption-model)
-
-[Security Disclosure Page](https://keepersecurity.com/security)
-
 Keeper is SOC 2 Type 2, ISO27001 certified. Customers may request access to
 our certification reports and technical architecture documentation under
 mutual NDA.
@@ -595,11 +575,6 @@ mutual NDA.
 
 Vulnerability Disclosure Program
 
-Keeper has partnered with Bugcrowd to manage our vulnerability disclosure
-program. Please submit reports through
-<https://bugcrowd.com/keepersecurity>[](https://bugcrowd.com/keepersecurity)
-or send an email to security@keepersecurity.com.
-
 [PreviousTerminology](/en/keeperpam/secrets-manager/about/terminology)[NextOne
 Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
 
@@ -607,33 +582,17 @@ Last updated 3 months ago
 
 Was this helpful?
 
-#### Company
+Keeper has partnered with Bugcrowd to manage our vulnerability disclosure
+program. Please submit reports through  or send an email to
+security@keepersecurity.com.
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+[Keeper Encryption Model](https://docs.keeper.io/enterprise-guide/keeper-
+encryption-model)
 
-#### Support
+[Secrets Manager Encryption Model](https://docs.keeper.io/enterprise-
+guide/keeper-encryption-model#secrets-manager-encryption-model)
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+[Security Disclosure Page](https://keepersecurity.com/security)
 
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+<https://bugcrowd.com/keepersecurity>[](https://bugcrowd.com/keepersecurity)
 

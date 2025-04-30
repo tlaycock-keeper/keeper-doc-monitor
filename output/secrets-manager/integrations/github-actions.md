@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/github-
-actions?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/github-actions?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/integrations/github-actions?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/integrations/github-actions?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/github-actions?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-
-manager/integrations/github-actions?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/integrations/github-actions?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/integrations/github-actions?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/github-actions?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/integrations/github-actions?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/github-
-actions?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/github-actions?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/integrations/github-actions?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/integrations/github-actions?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/github-actions?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-
-manager/integrations/github-actions?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/integrations/github-actions?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/integrations/github-actions?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/github-actions?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/integrations/github-actions?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -525,11 +483,7 @@ to utilize this integration, you will need:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
-
-    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
-
-  * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
 
     * The GitHub Actions integration accepts JSON and Base64 format configurations
 
@@ -685,6 +639,16 @@ Source Code
 
 Find the Keeper Secrets Manager Github Actions plugin source code in the[
 GitHub repository](https://github.com/Keeper-Security/ksm-action)
+
+A Keeper  with secrets shared to it
+
+See the  for instructions on creating an Application
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

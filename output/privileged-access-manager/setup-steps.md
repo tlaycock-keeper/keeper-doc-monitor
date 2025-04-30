@@ -12,43 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/setup-
-steps?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/setup-steps?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-manager/setup-
-steps?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/privileged-access-manager/setup-steps?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/setup-steps?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/setup-steps?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/setup-steps?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-manager/setup-
-steps?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/privileged-access-manager/setup-steps?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/setup-steps?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/setup-
-steps?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/setup-steps?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-manager/setup-
-steps?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/privileged-access-manager/setup-steps?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/setup-steps?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/setup-steps?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/setup-steps?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-manager/setup-
-steps?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/privileged-access-manager/setup-steps?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/setup-steps?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -454,10 +418,23 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Setup Steps
+  * Notes
+  * Feedback 
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=PR2hkE7TmA365mTVpHE3&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Setup Steps
+
+Accessing the KeeperPAM platform
+
+[PreviousKeeperPAM](/en/keeperpam)[NextQuick Start:
+Sandbox](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
 
 Last updated 1 month ago
 
@@ -518,8 +495,30 @@ available will differ.
 
 Use the basic `docker-compose.yml` file as shown below:
 
+Copy
+
+    
+    
+    services:
+          keeper-gateway:
+            platform: linux/amd64
+            image: keeper/gateway:latest
+            shm_size: 2g
+            security_opt:
+              - "seccomp:docker-seccomp.json"
+            environment:
+              ACCEPT_EULA: Y
+              GATEWAY_CONFIG: XXXXXXXXXXXX
+
 Download the file called `docker-seccomp.json` and place it in the same folder
 as your Docker Compose file.
+
+[15KBdocker-
+seccomp.json](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FMjBgU5aJYkp8Em3ZV9OD%2Fdocker-
+seccomp.json?alt=media&token=73227956-f299-47e5-80aa-764ea2ab9e93)
+
+docker-seccomp.json
 
 ####
 
@@ -534,6 +533,12 @@ as your Docker Compose file.
 **Linux**
 
 To update an existing Gateway on Linux:
+
+Copy
+
+    
+    
+    curl -fsSL https://keepersecurity.com/pam/install | sudo bash -s --
 
 ####
 
@@ -588,51 +593,6 @@ connection types.
 We recommend setting up a Keeper Gateway using the new . This provides a
 customized Docker Compose file that provides an instant sandbox for testing.
 
-Copy
-
-    
-    
-    services:
-          keeper-gateway:
-            platform: linux/amd64
-            image: keeper/gateway:latest
-            shm_size: 2g
-            security_opt:
-              - "seccomp:docker-seccomp.json"
-            environment:
-              ACCEPT_EULA: Y
-              GATEWAY_CONFIG: XXXXXXXXXXXX
-
-Copy
-
-    
-    
-    curl -fsSL https://keepersecurity.com/pam/install | sudo bash -s --
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# Setup Steps
-
-Accessing the KeeperPAM platform
-
-[PreviousKeeperPAM](/en/keeperpam)[NextQuick Start:
-Sandbox](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
-
-  * Setup Steps
-  * Notes
-  * Feedback 
-
-[15KBdocker-
-seccomp.json](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FMjBgU5aJYkp8Em3ZV9OD%2Fdocker-
-seccomp.json?alt=media&token=73227956-f299-47e5-80aa-764ea2ab9e93)
-
-docker-seccomp.json
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTrW1sx4hPCCYoyJysDQD%252FKeeperPAM%2520Preview.jpg%3Falt%3Dmedia%26token%3D06c8f11d-bac6-45c8-9c87-bef333095a7e&width=768&dpr=4&quality=100&sign=88cb3aff&sv=2)
-
 [start a free trial](https://www.keepersecurity.com/password-manager-free-
 trial-sign-up.html)
 
@@ -665,4 +625,8 @@ manager/session-recording-and-playback)
 [Discovery](/en/keeperpam/privileged-access-manager/discovery)
 
 [Quick Start Sandbox](/en/keeperpam/secrets-manager/quick-start-guide)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTrW1sx4hPCCYoyJysDQD%252FKeeperPAM%2520Preview.jpg%3Falt%3Dmedia%26token%3D06c8f11d-bac6-45c8-9c87-bef333095a7e&width=768&dpr=4&quality=100&sign=88cb3aff&sv=2)
 

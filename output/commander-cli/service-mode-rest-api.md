@@ -12,43 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/commander-cli/service-mode-rest-
-api?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/service-mode-rest-api?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/service-mode-rest-
-api?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/commander-cli/service-mode-rest-api?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/service-mode-
-rest-api?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/commander-cli/service-mode-rest-api?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/service-mode-
-rest-api?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/service-mode-rest-
-api?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-connect-
-on-prem/commander-cli/service-mode-rest-api?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/service-mode-
-rest-api?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/commander-cli/service-mode-rest-
-api?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/service-mode-rest-api?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/service-mode-rest-
-api?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/commander-cli/service-mode-rest-api?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/service-mode-
-rest-api?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/commander-cli/service-mode-rest-api?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/service-mode-
-rest-api?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/service-mode-rest-
-api?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-connect-
-on-prem/commander-cli/service-mode-rest-api?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/service-mode-
-rest-api?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -483,7 +447,7 @@ reference/plugins/automatic-
 execution)[NextTroubleshooting](/en/keeperpam/commander-cli/troubleshooting-
 commander-cli)
 
-Last updated 12 days ago
+Last updated 13 days ago
 
 Was this helpful?
 

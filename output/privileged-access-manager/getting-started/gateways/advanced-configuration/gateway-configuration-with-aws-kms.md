@@ -12,63 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/getting-
-started/gateways/advanced-configuration/gateway-configuration-with-aws-
-kms?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/getting-started/gateways/advanced-configuration/gateway-
-configuration-with-aws-kms?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/getting-started/gateways/advanced-configuration/gateway-configuration-
-with-aws-kms?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/privileged-access-manager/getting-started/gateways/advanced-
-configuration/gateway-configuration-with-aws-kms?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/getting-started/gateways/advanced-configuration/gateway-configuration-
-with-aws-kms?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/getting-started/gateways/advanced-
-configuration/gateway-configuration-with-aws-kms?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/getting-started/gateways/advanced-configuration/gateway-configuration-
-with-aws-kms?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/getting-started/gateways/advanced-configuration/gateway-configuration-
-with-aws-kms?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/getting-started/gateways/advanced-configuration/gateway-configuration-
-with-aws-kms?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/privileged-access-manager/getting-started/gateways/advanced-
-configuration/gateway-configuration-with-aws-kms?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/getting-
-started/gateways/advanced-configuration/gateway-configuration-with-aws-
-kms?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/getting-started/gateways/advanced-configuration/gateway-
-configuration-with-aws-kms?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/getting-started/gateways/advanced-configuration/gateway-configuration-
-with-aws-kms?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/privileged-access-manager/getting-started/gateways/advanced-
-configuration/gateway-configuration-with-aws-kms?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/getting-started/gateways/advanced-configuration/gateway-configuration-
-with-aws-kms?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/getting-started/gateways/advanced-
-configuration/gateway-configuration-with-aws-kms?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/getting-started/gateways/advanced-configuration/gateway-configuration-
-with-aws-kms?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/getting-started/gateways/advanced-configuration/gateway-configuration-
-with-aws-kms?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/getting-started/gateways/advanced-configuration/gateway-configuration-
-with-aws-kms?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/privileged-access-manager/getting-started/gateways/advanced-
-configuration/gateway-configuration-with-aws-kms?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -442,6 +386,36 @@ configuration/gateway-configuration-with-aws-kms?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -466,6 +440,16 @@ PDF](/en/keeperpam/~gitbook/pdf?page=Bl8GyNkSxnAgnbhDUkiX&only=yes&limit=100)
 # Gateway Configuration with AWS KMS
 
 Storing and protecting the Keeper Gateway Configuration using AWS KMS
+
+[PreviousAdvanced Configuration](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/advanced-configuration)[NextGateway
+Configuration with Custom Fields](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/advanced-configuration/gateway-configuration-
+with-custom-fields)
+
+Last updated 2 months ago
+
+Was this helpful?
 
 ##
 
@@ -495,9 +479,7 @@ In order to use AWS KMS to protect the Gateway configuration secrets, you need
 to install the Keeper Gateway on an EC2 instance which assumes an IAM Role.
 This works on either Docker or Linux install methods.
 
-  * [Docker Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/docker-installation)
-
-  * [Linux Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/linux-installation)
+  *   * 
 
 ###
 
@@ -507,23 +489,7 @@ From the Keeper Vault, go to **Secrets Manager** > **Applications** and select
 the application configured with your Gateway. Then select the Gateways tab and
 select "Provision Gateway".
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FAe5xYSWFNfKaxrHnMvJt%252FScreenshot%25202024-12-31%2520at%25202.46.15%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D55ae2ada-7f86-4d72-aa87-18a61bfdc6d7&width=768&dpr=4&quality=100&sign=cd7223c&sv=2)
-
 Select the Gateway initialization method of "Configuration" and click Next.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6Mj7hQtyDXndJOJLtkN6%252FScreenshot%25202024-12-31%2520at%25202.32.57%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D319b654d-3886-4815-a683-64e863b1326b&width=768&dpr=4&quality=100&sign=b296cd5f&sv=2)
-
-Select Configuration Method
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXEvlscEMXs84Fbz5lAXD%252FScreenshot%25202024-12-31%2520at%25202.33.08%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D124b08ef-324d-47c1-9ab5-49c49b773713&width=768&dpr=4&quality=100&sign=b74489ef&sv=2)
-
-Copy the Base64 Configuration
 
 Alternatively, you can generate a One-Time Access Token and then use the
 Keeper Gateway's "gateway ott-init" command:
@@ -549,26 +515,8 @@ From the AWS Console, go to the Secrets Manager and create a new secret.
 
   * Click **Next**.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FBF7NV7ChEZYjpcJTJ4oI%252FScreenshot%25202024-12-31%2520at%25204.00.36%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Ddcff8b26-fcca-42d1-9162-ec7e9a0536f3&width=768&dpr=4&quality=100&sign=c204d91c&sv=2)
-
-Create Secret using Plaintext formatting
-
 Enter a **Secret Name** and a description then click **Next** , **Next** and
 **Store**.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCDLKSG2dxlkp8VcnZ0lG%252FScreenshot%25202024-12-31%2520at%25202.57.58%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D8a0af639-718d-464d-99d9-3639d5521c2e&width=768&dpr=4&quality=100&sign=78e7d3f6&sv=2)
-
-Secret Name and Description
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F58kXg5tcowhN2UJNwtvU%252FScreenshot%25202024-12-31%2520at%25202.59.36%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D88b21981-79eb-462d-b41d-b49fd591d42b&width=768&dpr=4&quality=100&sign=9b3cbef3&sv=2)
-
-View Secrets
 
 ###
 
@@ -674,43 +622,43 @@ Copy
     
     systemctl status keeper-gateway.service
 
-[PreviousAdvanced Configuration](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/advanced-configuration)[NextGateway
-Configuration with Custom Fields](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/advanced-configuration/gateway-configuration-
-with-custom-fields)
+[Docker Installation](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/docker-installation)
 
-Last updated 2 months ago
+[Linux Installation](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/linux-installation)
 
-Was this helpful?
+Select Configuration Method
 
-#### Company
+Copy the Base64 Configuration
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+Create Secret using Plaintext formatting
 
-#### Support
+Secret Name and Description
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+View Secrets
 
-#### Solutions
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FAe5xYSWFNfKaxrHnMvJt%252FScreenshot%25202024-12-31%2520at%25202.46.15%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D55ae2ada-7f86-4d72-aa87-18a61bfdc6d7&width=768&dpr=4&quality=100&sign=cd7223c&sv=2)
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6Mj7hQtyDXndJOJLtkN6%252FScreenshot%25202024-12-31%2520at%25202.32.57%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D319b654d-3886-4815-a683-64e863b1326b&width=768&dpr=4&quality=100&sign=b296cd5f&sv=2)
 
-#### Pricing
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXEvlscEMXs84Fbz5lAXD%252FScreenshot%25202024-12-31%2520at%25202.33.08%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D124b08ef-324d-47c1-9ab5-49c49b773713&width=768&dpr=4&quality=100&sign=b74489ef&sv=2)
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FBF7NV7ChEZYjpcJTJ4oI%252FScreenshot%25202024-12-31%2520at%25204.00.36%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Ddcff8b26-fcca-42d1-9162-ec7e9a0536f3&width=768&dpr=4&quality=100&sign=c204d91c&sv=2)
 
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCDLKSG2dxlkp8VcnZ0lG%252FScreenshot%25202024-12-31%2520at%25202.57.58%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D8a0af639-718d-464d-99d9-3639d5521c2e&width=768&dpr=4&quality=100&sign=78e7d3f6&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F58kXg5tcowhN2UJNwtvU%252FScreenshot%25202024-12-31%2520at%25202.59.36%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D88b21981-79eb-462d-b41d-b49fd591d42b&width=768&dpr=4&quality=100&sign=9b3cbef3&sv=2)
 

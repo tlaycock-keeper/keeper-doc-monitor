@@ -12,61 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/getting-
-started/architecture/connection-and-tunnel-security?fallback=true)[Keeper
-Connection Manager](https://docs.keeper.io/en/keeper-connection-
-manager/privileged-access-manager/getting-started/architecture/connection-and-
-tunnel-security?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/privileged-access-manager/getting-started/architecture/connection-and-
-tunnel-security?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/getting-started/architecture/connection-and-tunnel-
-security?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/getting-started/architecture/connection-and-tunnel-
-security?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/getting-started/architecture/connection-and-
-tunnel-security?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/getting-started/architecture/connection-and-tunnel-
-security?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/getting-started/architecture/connection-and-tunnel-
-security?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/privileged-access-manager/getting-
-started/architecture/connection-and-tunnel-security?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/getting-started/architecture/connection-and-tunnel-
-security?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/getting-
-started/architecture/connection-and-tunnel-security?fallback=true)[Keeper
-Connection Manager](https://docs.keeper.io/en/keeper-connection-
-manager/privileged-access-manager/getting-started/architecture/connection-and-
-tunnel-security?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/privileged-access-manager/getting-started/architecture/connection-and-
-tunnel-security?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/getting-started/architecture/connection-and-tunnel-
-security?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/getting-started/architecture/connection-and-tunnel-
-security?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/getting-started/architecture/connection-and-
-tunnel-security?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/getting-started/architecture/connection-and-tunnel-
-security?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/getting-started/architecture/connection-and-tunnel-
-security?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/privileged-access-manager/getting-
-started/architecture/connection-and-tunnel-security?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/getting-started/architecture/connection-and-tunnel-
-security?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -440,25 +386,46 @@ security?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
+#### Company
 
-  * Overview
-  * What is a Connection?
-  * What is a Tunnel?
-  * Connection and tunnel security
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+On this page
 
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=SOUZIIt9LTqfQfVppHFn&only=yes&limit=100)
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [Architecture](/en/keeperpam/privileged-access-manager/getting-started/architecture)
+Last updated 4 months ago
 
-# Connection and Tunnel Security
-
-Security and encryption model of Connections and Tunnels
+Was this helpful?
 
 ###
 
@@ -493,7 +460,7 @@ When the user establishes a connection or tunnel:
 
   1. The Vault Client application communicates to the Keeper Router infrastructure to initiate a WebRTC connection that is protected by a ECDH symmetric key that is stored inside the relevant Keeper record.
 
-  2. The Keeper Gateway communicates with the Keeper Router through outbound-only WebSockets. This is described in detail in the [Gateway Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/gateway-security) section.
+  2. The Keeper Gateway communicates with the Keeper Router through outbound-only WebSockets. This is described in detail in the  section.
 
   3. The Keeper Gateway utilizes Keeper Secrets Manager APIs to retrieve the necessary secrets from the vault, including the ECDH symmetric key.
 
@@ -503,42 +470,24 @@ When the user establishes a connection or tunnel:
 
   6. Session recordings of connections are protected by an AES-256 encryption key ("recording key") which is generated on the Keeper Gateway on every session. The recording key is additionally wrapped by a HKDF-derived AES-256 resource key.
 
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [Architecture](/en/keeperpam/privileged-access-manager/getting-started/architecture)
+
+# Connection and Tunnel Security
+
+Security and encryption model of Connections and Tunnels
+
 [PreviousGateway Security](/en/keeperpam/privileged-access-manager/getting-
 started/architecture/gateway-security)[NextKeeperPAM
 Licensing](/en/keeperpam/privileged-access-manager/getting-started/keeperpam-
 licensing)
 
-Last updated 4 months ago
+  * Overview
+  * What is a Connection?
+  * What is a Tunnel?
+  * Connection and tunnel security
 
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+[Gateway Security](/en/keeperpam/privileged-access-manager/getting-
+started/architecture/gateway-security)
 

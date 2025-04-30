@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-
-manager/integrations/xsoar?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/xsoar?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/integrations/xsoar?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/integrations/xsoar?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/xsoar?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-
-manager/integrations/xsoar?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/integrations/xsoar?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/integrations/xsoar?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/xsoar?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/integrations/xsoar?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-
-manager/integrations/xsoar?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/xsoar?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/integrations/xsoar?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/integrations/xsoar?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/xsoar?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-
-manager/integrations/xsoar?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/integrations/xsoar?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/integrations/xsoar?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/xsoar?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/integrations/xsoar?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,35 +386,6 @@ manager/integrations/xsoar?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * About
-  * Setup
-  * Configure Keeper Secrets Manager on Cortex XSOAR
-  * Available KSM Commands
-  * Using Commands in a Playbook
-  * Example: Get a Password From a Keeper Record
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=vvgGmhnSTRCYbMglgvhO&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# XSOAR
-
-Use Secrets Manager with automated workflows in Cortex XSOAR
-
-[PreviousWindows Credential Manager](/en/keeperpam/secrets-
-manager/integrations/windows-credential-
-manager)[NextTroubleshooting](/en/keeperpam/secrets-manager/troubleshooting)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -487,6 +416,35 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * About
+  * Setup
+  * Configure Keeper Secrets Manager on Cortex XSOAR
+  * Available KSM Commands
+  * Using Commands in a Playbook
+  * Example: Get a Password From a Keeper Record
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=vvgGmhnSTRCYbMglgvhO&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# XSOAR
+
+Use Secrets Manager with automated workflows in Cortex XSOAR
+
+[PreviousWindows Credential Manager](/en/keeperpam/secrets-
+manager/integrations/windows-credential-
+manager)[NextTroubleshooting](/en/keeperpam/secrets-manager/troubleshooting)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 ##
 
 About
@@ -506,10 +464,6 @@ Activate Keeper Secrets Manager
 ####
 
 Create A Keeper Secrets Manager Configuration
-
-Follow the steps in the [documentation page](/en/keeperpam/secrets-
-manager/about/secrets-manager-configuration) to create a Secrets Manager
-configuration.
 
 ###
 
@@ -613,10 +567,6 @@ Copy
     
     !ksm-get-field notation="keeper://<UID>/field/login"
 
-See the [Keeper Notation documentation](/en/keeperpam/secrets-
-manager/about/keeper-notation) for more details on using keeper notation to
-identify fields
-
 ####
 
 List Files Attached to Keeper Records
@@ -673,18 +623,26 @@ playbook.
 
   2. Enter Keeper notation pointing to the password using the UID of the record you want to use. This will look like: `<UID>/fields/password`
 
-_Any field in a record can be fetched this way. See_[ _Keeper Notation
-documentation_](/en/keeperpam/secrets-manager/about/keeper-notation) _for more
-information_
-
   3. Click "OK" to add the task to your playbook 
 
 You can add additional tasks after the ksm-get-field task to use the password.
 
 Follow the to enable Keeper Secrets Manager on your account.
 
-[ Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#enable-
-secrets-manager)
+Follow the steps in the  to create a Secrets Manager configuration.
+
+See the  for more details on using keeper notation to identify fields
+
+ _Any field in a record can be fetched this way. See_ _for more information_
+
+[documentation page](/en/keeperpam/secrets-manager/about/secrets-manager-
+configuration)
+
+[Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
+notation)
+
+[_Keeper Notation documentation_](/en/keeperpam/secrets-manager/about/keeper-
+notation)
 
 Configure the instance to use the Keeper Secrets Manager integration
 
@@ -709,4 +667,7 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5aamsq2Vs
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7G9zceIZodTE3aOrn6cd%252Fimage.png%3Falt%3Dmedia%26token%3De45a7efc-158d-4870-b303-73ded72f37a3&width=768&dpr=4&quality=100&sign=f53d9b2a&sv=2)
+
+[ Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#enable-
+secrets-manager)
 

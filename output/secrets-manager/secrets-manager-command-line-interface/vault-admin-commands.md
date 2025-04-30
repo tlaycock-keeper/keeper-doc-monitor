@@ -12,53 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-manager/secrets-manager-command-
-line-interface/vault-admin-commands?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/secrets-manager-command-line-interface/vault-admin-
-commands?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/secrets-manager/secrets-manager-command-line-interface/vault-admin-
-commands?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/secrets-manager/secrets-manager-command-line-interface/vault-admin-
-commands?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-manager/secrets-
-manager-command-line-interface/vault-admin-commands?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-manager/secrets-manager-
-command-line-interface/vault-admin-commands?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-manager/secrets-
-manager-command-line-interface/vault-admin-commands?fallback=true)[KeeperPAM
-and Secrets Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/secrets-manager-command-line-interface/vault-admin-
-commands?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/secrets-manager/secrets-manager-command-line-interface/vault-
-admin-commands?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/secrets-manager/secrets-manager-command-line-interface/vault-admin-
-commands?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-manager/secrets-manager-command-
-line-interface/vault-admin-commands?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/secrets-manager-command-line-interface/vault-admin-
-commands?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/secrets-manager/secrets-manager-command-line-interface/vault-admin-
-commands?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/secrets-manager/secrets-manager-command-line-interface/vault-admin-
-commands?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-manager/secrets-
-manager-command-line-interface/vault-admin-commands?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-manager/secrets-manager-
-command-line-interface/vault-admin-commands?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-manager/secrets-
-manager-command-line-interface/vault-admin-commands?fallback=true)[KeeperPAM
-and Secrets Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/secrets-manager-command-line-interface/vault-admin-
-commands?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/secrets-manager/secrets-manager-command-line-interface/vault-
-admin-commands?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/secrets-manager/secrets-manager-command-line-interface/vault-admin-
-commands?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -432,36 +386,6 @@ commands?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as PDF](/en/keeperpam/~gitbook/pdf?page=-Mf8yJS8Oy-
-wUqwOAoUY&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
-
-# Misc Commands
-
-Use the Keeper Commander CLI for hundreds of Vault and Admin Console commands
-
-The Keeper Secrets Manage CLI is focused specifically on retrieving and
-updating secrets in the vault.
-
-For all other commands, please refer to the Keeper Commander CLI:
-
-[Commander CLI](/en/keeperpam/commander-cli/overview)
-
-[PreviousVersion Command](/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface/version-command)[NextDocker
-Container](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/docker-container)
-
-Last updated 10 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -491,4 +415,34 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as PDF](/en/keeperpam/~gitbook/pdf?page=-Mf8yJS8Oy-
+wUqwOAoUY&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
+
+# Misc Commands
+
+Use the Keeper Commander CLI for hundreds of Vault and Admin Console commands
+
+[PreviousVersion Command](/en/keeperpam/secrets-manager/secrets-manager-
+command-line-interface/version-command)[NextDocker
+Container](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/docker-container)
+
+Last updated 10 months ago
+
+Was this helpful?
+
+The Keeper Secrets Manage CLI is focused specifically on retrieving and
+updating secrets in the vault.
+
+For all other commands, please refer to the Keeper Commander CLI:
+
+[Commander CLI](/en/keeperpam/commander-cli/overview)
 

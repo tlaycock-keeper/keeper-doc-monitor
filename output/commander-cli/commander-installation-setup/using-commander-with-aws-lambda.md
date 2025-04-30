@@ -12,53 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/commander-cli/commander-installation-
-setup/using-commander-with-aws-lambda?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/commander-installation-setup/using-commander-with-aws-
-lambda?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/commander-cli/commander-installation-setup/using-commander-with-aws-
-lambda?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/commander-cli/commander-installation-setup/using-commander-with-aws-
-lambda?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/commander-cli/commander-installation-setup/using-commander-with-aws-
-lambda?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/commander-cli/commander-installation-setup/using-commander-with-aws-
-lambda?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/commander-cli/commander-installation-setup/using-commander-with-
-aws-lambda?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/commander-
-installation-setup/using-commander-with-aws-lambda?fallback=true)[SSO Connect
-On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-
-cli/commander-installation-setup/using-commander-with-aws-
-lambda?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/commander-cli/commander-installation-setup/using-commander-with-aws-
-lambda?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/commander-cli/commander-installation-
-setup/using-commander-with-aws-lambda?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/commander-installation-setup/using-commander-with-aws-
-lambda?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/commander-cli/commander-installation-setup/using-commander-with-aws-
-lambda?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/commander-cli/commander-installation-setup/using-commander-with-aws-
-lambda?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/commander-cli/commander-installation-setup/using-commander-with-aws-
-lambda?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/commander-cli/commander-installation-setup/using-commander-with-aws-
-lambda?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/commander-cli/commander-installation-setup/using-commander-with-
-aws-lambda?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/commander-
-installation-setup/using-commander-with-aws-lambda?fallback=true)[SSO Connect
-On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-
-cli/commander-installation-setup/using-commander-with-aws-
-lambda?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/commander-cli/commander-installation-setup/using-commander-with-aws-
-lambda?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -432,6 +386,36 @@ lambda?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * About
@@ -455,6 +439,15 @@ PDF](/en/keeperpam/~gitbook/pdf?page=8SfYsaSpM6iZ4JdH6ssf&only=yes&limit=100)
 
 Run Commander in the AWS Cloud
 
+[PreviousAutomating with Windows Task](/en/keeperpam/commander-cli/commander-
+installation-setup/automating-with-windows-
+task)[NextUninstallation](/en/keeperpam/commander-cli/commander-installation-
+setup/uninstallation)
+
+Last updated 6 months ago
+
+Was this helpful?
+
 ##
 
 About
@@ -473,7 +466,7 @@ Prerequisites
 
   * Commander
 
-    * See the[ Installation and Setup page](/en/keeperpam/commander-cli/commander-installation-setup) for download details
+    * See the for download details
 
   * A Keeper user account with a Master Password login method (SSO login and MFA will not work without human interaction)
 
@@ -1010,66 +1003,30 @@ the Commander GitHub repo:
 To learn more about Commander's various methods, see the Command Reference
 section.
 
-[Command Reference](/en/keeperpam/commander-cli/command-reference)
-
-[PreviousAutomating with Windows Task](/en/keeperpam/commander-cli/commander-
-installation-setup/automating-with-windows-
-task)[NextUninstallation](/en/keeperpam/commander-cli/commander-installation-
-setup/uninstallation)
-
-Last updated 6 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 To get the Commander parameters, open the generated config.json file. By
 default this is located in the `Users/[your username]/.keeper/` folder on your
 machine. See thefor more information.
 
-[![Logo](https://github.com/fluidicon.png)Commander/examples at master ·
-Keeper-Security/CommanderGitHub](https://github.com/Keeper-
-Security/Commander/tree/master/examples)
+[ Installation and Setup page](/en/keeperpam/commander-cli/commander-
+installation-setup)
+
+[Command Reference](/en/keeperpam/commander-cli/command-reference)
+
+[ config file documentation ](/en/keeperpam/commander-cli/commander-
+installation-setup/logging-in#commander-configuration-file)
+
+[![Logo](https://docs.aws.amazon.com/assets/images/favicon.ico)Invoking Lambda
+functions - AWS LambdaAWS
+Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
 
 [![Logo](https://a0.awsstatic.com/libra-css/images/site/touch-icon-
 ipad-144-smile.png)Send email using Lambda and Amazon SESAmazon Web Services,
 Inc.](https://aws.amazon.com/premiumsupport/knowledge-center/lambda-send-
 email-ses/)
 
-[![Logo](https://docs.aws.amazon.com/assets/images/favicon.ico)Invoking Lambda
-functions - AWS LambdaAWS
-Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
-
-[ config file documentation ](/en/keeperpam/commander-cli/commander-
-installation-setup/logging-in#commander-configuration-file)
+[![Logo](https://github.com/fluidicon.png)Commander/examples at master ·
+Keeper-Security/CommanderGitHub](https://github.com/Keeper-
+Security/Commander/tree/master/examples)
 
 [2KBpackage_layer_content.sh](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
 x-

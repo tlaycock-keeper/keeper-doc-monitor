@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/password-
-rotation/post-rotation-scripts?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/password-rotation/post-rotation-scripts?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/password-rotation/post-rotation-scripts?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/password-rotation/post-rotation-scripts?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/password-rotation/post-rotation-scripts?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/password-
-rotation/post-rotation-scripts?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/password-rotation/post-rotation-scripts?fallback=true)[KeeperPAM and
-Secrets Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/password-rotation/post-rotation-scripts?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/password-rotation/post-rotation-scripts?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/password-rotation/post-rotation-scripts?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/password-
-rotation/post-rotation-scripts?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/password-rotation/post-rotation-scripts?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/password-rotation/post-rotation-scripts?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/password-rotation/post-rotation-scripts?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/password-rotation/post-rotation-scripts?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/password-
-rotation/post-rotation-scripts?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/password-rotation/post-rotation-scripts?fallback=true)[KeeperPAM and
-Secrets Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/password-rotation/post-rotation-scripts?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/password-rotation/post-rotation-scripts?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/password-rotation/post-rotation-scripts?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,6 +386,36 @@ manager/password-rotation/post-rotation-scripts?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -449,10 +437,13 @@ PDF](/en/keeperpam/~gitbook/pdf?page=L2aoHEHPl4mak6HpvI9z&only=yes&limit=100)
 Perform privileged automation tasks with Post-Rotation scripts and password
 rotation
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F1IIpWqyy3YBRyPlZ8uSs%252FPost-
-Rotation%2520Scripts.jpg%3Falt%3Dmedia%26token%3Daeafb80f-c4ef-4d72-8394-bea06da0c329&width=768&dpr=4&quality=100&sign=34cc65a5&sv=2)
+[PreviousService Management](/en/keeperpam/privileged-access-manager/password-
+rotation/service-management)[NextInputs and Outputs](/en/keeperpam/privileged-
+access-manager/password-rotation/post-rotation-scripts/parameters)
+
+Last updated 2 months ago
+
+Was this helpful?
 
 ##
 
@@ -504,10 +495,6 @@ methods:
 
   * Run PAM scripts only
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTPj7yEYRzOmWBGlJkkKG%252FScreenshot%25202025-02-09%2520at%25202.15.24%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D2626efe8-c87a-46b1-b78c-b45e3ead532f&width=768&dpr=4&quality=100&sign=eeafb3ef&sv=2)
-
 When the "General" or "IAM User" methods are selected, Keeper will attempt to
 rotate the credentials using built-in capabilities based on the information
 stored in the record.
@@ -551,47 +538,23 @@ Scripts:
 
 Documentation included
 
-  * [Inputs and outputs](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts/parameters)
+  *   *   * 
 
-  * [Attaching scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts/attaching-post-rotation-scripts-to-records)
+[Inputs and outputs](/en/keeperpam/privileged-access-manager/password-
+rotation/post-rotation-scripts/parameters)
 
-  * [Code Examples](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts/accessing-parameters)
+[Attaching scripts](/en/keeperpam/privileged-access-manager/password-
+rotation/post-rotation-scripts/attaching-post-rotation-scripts-to-records)
 
-[PreviousService Management](/en/keeperpam/privileged-access-manager/password-
-rotation/service-management)[NextInputs and Outputs](/en/keeperpam/privileged-
-access-manager/password-rotation/post-rotation-scripts/parameters)
+[Code Examples](/en/keeperpam/privileged-access-manager/password-
+rotation/post-rotation-scripts/accessing-parameters)
 
-Last updated 2 months ago
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F1IIpWqyy3YBRyPlZ8uSs%252FPost-
+Rotation%2520Scripts.jpg%3Falt%3Dmedia%26token%3Daeafb80f-c4ef-4d72-8394-bea06da0c329&width=768&dpr=4&quality=100&sign=34cc65a5&sv=2)
 
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTPj7yEYRzOmWBGlJkkKG%252FScreenshot%25202025-02-09%2520at%25202.15.24%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D2626efe8-c87a-46b1-b78c-b45e3ead532f&width=768&dpr=4&quality=100&sign=eeafb3ef&sv=2)
 

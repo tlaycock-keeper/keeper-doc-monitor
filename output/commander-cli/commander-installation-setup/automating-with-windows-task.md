@@ -12,51 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/commander-cli/commander-installation-
-setup/automating-with-windows-task?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/commander-installation-setup/automating-with-windows-
-task?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/commander-cli/commander-installation-setup/automating-with-windows-
-task?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/commander-cli/commander-installation-setup/automating-with-windows-
-task?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/commander-cli/commander-installation-setup/automating-with-windows-
-task?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-guide/commander-
-cli/commander-installation-setup/automating-with-windows-
-task?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-connect-
-cloud/commander-cli/commander-installation-setup/automating-with-windows-
-task?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/commander-
-installation-setup/automating-with-windows-task?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/commander-
-installation-setup/automating-with-windows-task?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/commander-
-installation-setup/automating-with-windows-task?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/commander-cli/commander-installation-
-setup/automating-with-windows-task?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/commander-installation-setup/automating-with-windows-
-task?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/commander-cli/commander-installation-setup/automating-with-windows-
-task?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/commander-cli/commander-installation-setup/automating-with-windows-
-task?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/commander-cli/commander-installation-setup/automating-with-windows-
-task?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-guide/commander-
-cli/commander-installation-setup/automating-with-windows-
-task?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-connect-
-cloud/commander-cli/commander-installation-setup/automating-with-windows-
-task?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/commander-
-installation-setup/automating-with-windows-task?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/commander-
-installation-setup/automating-with-windows-task?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/commander-
-installation-setup/automating-with-windows-task?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -430,29 +386,6 @@ installation-setup/automating-with-windows-task?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=4EmNwhLtN0xVuuHLgUmV&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
-
-# Automating with Windows Task
-
-Running Commander CLI commands using Windows Task automation
-
-[PreviousAWS Key Management Service](/en/keeperpam/commander-cli/commander-
-installation-setup/configuration/aws-key-management-service)[NextAutomating
-with AWS Lambda](/en/keeperpam/commander-cli/commander-installation-
-setup/using-commander-with-aws-lambda)
-
-Last updated 9 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -483,6 +416,17 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=4EmNwhLtN0xVuuHLgUmV&only=yes&limit=100)
+
+Last updated 9 months ago
+
+Was this helpful?
+
 To set up a scheduled task in Windows to run a specific Keeper Commander CLI
 command on a scheduled basis, you can use the Task Scheduler tool.
 
@@ -499,29 +443,12 @@ for Windows
 
 Login to Commander by launching the application. For example:
 
-Copy
-
-    
-    
-    server US
-    login email@company.com
-
 **(3) Enable persistent login**
 
 After login, set up persistent login so that the command can execute from Task
 Scheduler
 
 As an example, the below commands will enable "Stay Logged In" for 30 days:
-
-Copy
-
-    
-    
-    this-device register
-    this-device persistent-login on
-    this-device ip-auto-approve on
-    this-device timeout 30d
-    quit
 
 To exit the shell session, type `quit` but **don't** type `logout`. Logout
 will expire the session and the automations won't work.
@@ -532,12 +459,6 @@ will automatically login to the shell.
 **(4) Create a record**
 
 From the command line, we'll create a quick record with a random password.
-
-Copy
-
-    
-    
-    record-add -t "Test Record" password=$GEN --record-type=login
 
 If you have the web vault or other Keeper vault opened, you'll see the record
 appear.
@@ -578,19 +499,7 @@ appear.
 
   * In the "Program/script" field, enter the path to your Keeper Commander executable, for example:
 
-Copy
-
-    
-    
-    "C:\Program Files (x86)\Keeper Commander\keeper-commander.exe"
-
   * In the "Add arguments (optional)" field, enter your Keeper Commander CLI command. For example:
-
-Copy
-
-    
-    
-    record-update -r "Test Record" password=$GEN
 
 ####
 
@@ -612,18 +521,65 @@ In this particular example, the password will rotate from the Keeper vault and
 you'll see this occur in realtime across all logged-in vault clients. Another
 example is running a security audit report, such as:
 
-Copy
-
-    
-    
-    security-audit-report --output c:\path\to\file
-
 Any feature or capability of the end-user vault or Admin Console can be
 automated this way. Take a look at all the Keeper Commander  available.
 
 To expand upon this use case, you would likely want to set up a Batch file and
 execute the batch of commands instead of adding them directly on the CLI
 arguments. More information about batch mode commands can be found .
+
+Copy
+
+    
+    
+    record-add -t "Test Record" password=$GEN --record-type=login
+
+Copy
+
+    
+    
+    "C:\Program Files (x86)\Keeper Commander\keeper-commander.exe"
+
+Copy
+
+    
+    
+    record-update -r "Test Record" password=$GEN
+
+Copy
+
+    
+    
+    security-audit-report --output c:\path\to\file
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+
+# Automating with Windows Task
+
+Running Commander CLI commands using Windows Task automation
+
+[PreviousAWS Key Management Service](/en/keeperpam/commander-cli/commander-
+installation-setup/configuration/aws-key-management-service)[NextAutomating
+with AWS Lambda](/en/keeperpam/commander-cli/commander-installation-
+setup/using-commander-with-aws-lambda)
+
+Copy
+
+    
+    
+    server US
+    login email@company.com
+
+Copy
+
+    
+    
+    this-device register
+    this-device persistent-login on
+    this-device ip-auto-approve on
+    this-device timeout 30d
+    quit
 
 [Install Keeper Commander](/en/keeperpam/commander-cli/commander-installation-
 setup/installation-on-windows)

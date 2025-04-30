@@ -12,61 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/database/ms-sql-
-server?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-
-sql-server?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/privileged-access-manager/password-rotation/rotation-use-cases/local-
-network/database/ms-sql-server?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-
-server?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/privileged-access-manager/password-rotation/rotation-use-cases/local-
-network/database/ms-sql-server?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/database/ms-sql-
-server?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/privileged-access-manager/password-rotation/rotation-use-
-cases/local-network/database/ms-sql-server?fallback=true)[KeeperPAM and
-Secrets Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-
-server?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/privileged-access-manager/password-rotation/rotation-use-
-cases/local-network/database/ms-sql-server?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-
-server?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/database/ms-sql-
-server?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-
-sql-server?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/privileged-access-manager/password-rotation/rotation-use-cases/local-
-network/database/ms-sql-server?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-
-server?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/privileged-access-manager/password-rotation/rotation-use-cases/local-
-network/database/ms-sql-server?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/database/ms-sql-
-server?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/privileged-access-manager/password-rotation/rotation-use-
-cases/local-network/database/ms-sql-server?fallback=true)[KeeperPAM and
-Secrets Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-
-server?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/privileged-access-manager/password-rotation/rotation-use-
-cases/local-network/database/ms-sql-server?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-
-server?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -440,6 +386,36 @@ server?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -465,9 +441,14 @@ PDF](/en/keeperpam/~gitbook/pdf?page=ynmCatJDHHUA5hHUTUHL&only=yes&limit=100)
 Rotating Local Network Microsoft SQL Server database accounts with Keeper
 Rotation
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZowopPBH36MEJa6MFcSl%252FMS%2520SQL%2520Server.jpg%3Falt%3Dmedia%26token%3D8bf808de-d00d-4810-bd0f-74a241d0f4df&width=768&dpr=4&quality=100&sign=1702a3ac&sv=2)
+[PreviousNative MongoDB](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/database/mongodb)[NextNative
+Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/local-network/database/oracle)
+
+Last updated 2 months ago
+
+Was this helpful?
 
 ##
 
@@ -475,9 +456,7 @@ Overview
 
 In this guide, you'll learn how to rotate Local MS SQL Server Database User
 and/or Admin accounts within your local network using Keeper Rotation. For a
-high-level overview on the rotation process in the local network, visit this
-[page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/local-network#rotation-on-the-local-network).
+high-level overview on the rotation process in the local network, visit this .
 
 ##
 
@@ -485,15 +464,7 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  * Keeper Secrets Manager is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
-
-  * Keeper Rotation is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
-
-  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
-
-  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is able to communicate to your MySQL database
-
-    * If the Gateway is installed on a Linux or macOS server, install the [Microsoft ODBC driver](https://learn.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver16)
+  *   *   *   *     * 
 
 ##
 
@@ -520,8 +491,6 @@ Keeper record title Ex: `dbadmin`
 Server address - _doesn't need to be publicly_ routable
 
 **Port**
-
-For default ports, see port mapping Ex: `mssql=1433`
 
 **Use SSL**
 
@@ -634,42 +603,39 @@ Select the **PAM User** record(s) from Step 3, edit the record and open the
 Any user with `edit` rights to a **PAM User** record has the ability to setup
 rotation for that record.
 
-[PreviousNative MongoDB](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/database/mongodb)[NextNative
-Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/local-network/database/oracle)
+Keeper Secrets Manager is enabled for your
 
-Last updated 2 months ago
+Keeper Rotation is enabled for your
 
-Was this helpful?
+A Keeper Secrets Manager  has been created
 
-#### Company
+A Keeper Rotation  is already installed, running, and is able to communicate
+to your MySQL database
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+If the Gateway is installed on a Linux or macOS server, install the
 
-#### Support
+For default ports, see  Ex: `mssql=1433`
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+[application](/en/keeperpam/privileged-access-manager/getting-
+started/applications)
 
-#### Solutions
+[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+[Microsoft ODBC driver](https://learn.microsoft.com/en-
+us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver16)
 
-#### Pricing
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
 
-© 2025 Keeper Security, Inc.
+port mapping
+
+[page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/local-network#rotation-on-the-local-network)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZowopPBH36MEJa6MFcSl%252FMS%2520SQL%2520Server.jpg%3Falt%3Dmedia%26token%3D8bf808de-d00d-4810-bd0f-74a241d0f4df&width=768&dpr=4&quality=100&sign=1702a3ac&sv=2)
 

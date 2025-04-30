@@ -12,53 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/commander-cli/command-reference/import-
-and-export-commands/cyberark-import?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/command-reference/import-and-export-commands/cyberark-
-import?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/commander-cli/command-reference/import-and-export-commands/cyberark-
-import?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/commander-cli/command-reference/import-and-export-commands/cyberark-
-import?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/commander-cli/command-reference/import-and-export-commands/cyberark-
-import?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/commander-cli/command-reference/import-and-export-commands/cyberark-
-import?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/commander-cli/command-reference/import-and-export-
-commands/cyberark-import?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/command-
-reference/import-and-export-commands/cyberark-import?fallback=true)[SSO
-Connect On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-
-cli/command-reference/import-and-export-commands/cyberark-
-import?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/commander-cli/command-reference/import-and-export-commands/cyberark-
-import?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/commander-cli/command-reference/import-
-and-export-commands/cyberark-import?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/command-reference/import-and-export-commands/cyberark-
-import?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/commander-cli/command-reference/import-and-export-commands/cyberark-
-import?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/commander-cli/command-reference/import-and-export-commands/cyberark-
-import?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/commander-cli/command-reference/import-and-export-commands/cyberark-
-import?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/commander-cli/command-reference/import-and-export-commands/cyberark-
-import?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/commander-cli/command-reference/import-and-export-
-commands/cyberark-import?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/command-
-reference/import-and-export-commands/cyberark-import?fallback=true)[SSO
-Connect On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-
-cli/command-reference/import-and-export-commands/cyberark-
-import?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/commander-cli/command-reference/import-and-export-commands/cyberark-
-import?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -432,34 +386,6 @@ import?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Using a search string to limit results
-  * Error handling
-  * PowerShell Method
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=uLz7A2RXPQAQ6vUmo7dh&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
-
-# CyberArk Import
-
-Migrating CyberArk Accounts to Keeper
-
-[PreviousImport/Export Commands](/en/keeperpam/commander-cli/command-
-reference/import-and-export-commands/import-export-commands)[NextLastPass Data
-Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands/lastpass-import)
-
-Last updated 1 month ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -490,6 +416,34 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Using a search string to limit results
+  * Error handling
+  * PowerShell Method
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=uLz7A2RXPQAQ6vUmo7dh&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
+
+# CyberArk Import
+
+Migrating CyberArk Accounts to Keeper
+
+[PreviousImport/Export Commands](/en/keeperpam/commander-cli/command-
+reference/import-and-export-commands/import-export-commands)[NextLastPass Data
+Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands/lastpass-import)
+
+Last updated 1 month ago
+
+Was this helpful?
+
 Keeper Commander will log on to CyberArk Privilege Cloud Web Portal or the
 self-hosted Password Vault Web Access (PVWA), retrieve accounts and their
 passwords, and automatically create corresponding Server records in Keeper.
@@ -512,9 +466,6 @@ Copy
     CyberArk service user name: myserviceuser
     Cyberark service user password:
 
-ℹ️ The Identity Tenant ID is the first part of the login URL, e.g.,
-https://_abc12345_.cyberark.cloud/...
-
 If the server is any other hostname or IP address, then it will prompt for the
 authentication method, username, and password for PVWA:
 
@@ -525,8 +476,6 @@ Copy
     CyberArk logon type (Cyberark, LDAP, RADIUS or Windows): LDAP
     CyberArk username: myusername
     CyberArk password: 
-
-ℹ️ Use **LDAP** (not Windows) to log in with an **Active Directory** account
 
 A Server record will be created for every CyberArk Account available to the
 logon. The Account's _address_ will be used as the Hostname/IP of the
@@ -558,10 +507,21 @@ any one account generates an error.
 
 PowerShell Method
 
-The [end-user guide](https://docs.keeper.io/en/user-guides/import-
-records-1/import-from-cyberark) includes a process to import data into Keeper
-from Cyberark using a PowerShell script. Note, however, that it accesses the
-Vault server directly, so it only works on self-hosted servers.
+The Identity Tenant ID is the first part of the login URL, e.g.,
+https://_abc12345_.cyberark.cloud/...
+
+Use **LDAP** (not Windows) to log in with an **Active Directory** account
+
+The  includes a process to import data into Keeper from Cyberark using a
+PowerShell script. Note, however, that it accesses the Vault server directly,
+so it only works on self-hosted servers.
+
+ℹ️
+
+ℹ️
+
+[end-user guide](https://docs.keeper.io/en/user-guides/import-
+records-1/import-from-cyberark)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

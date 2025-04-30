@@ -12,41 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-
-manager?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/privileged-access-manager?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/privileged-access-manager?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-
-manager?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/privileged-access-manager?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/privileged-access-manager?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-
-manager?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/privileged-access-manager?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/privileged-access-manager?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-
-manager?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/privileged-access-manager?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/privileged-access-manager?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager

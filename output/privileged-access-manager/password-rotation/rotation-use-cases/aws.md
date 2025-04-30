@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/password-
-rotation/rotation-use-cases/aws?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/password-rotation/rotation-use-cases/aws?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/password-rotation/rotation-use-cases/aws?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/password-rotation/rotation-use-cases/aws?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/password-rotation/rotation-use-cases/aws?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/password-
-rotation/rotation-use-cases/aws?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/password-rotation/rotation-use-cases/aws?fallback=true)[KeeperPAM and
-Secrets Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/aws?fallback=true)[SSO Connect
-On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/password-rotation/rotation-use-cases/aws?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/password-rotation/rotation-use-cases/aws?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/password-
-rotation/rotation-use-cases/aws?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/password-rotation/rotation-use-cases/aws?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/password-rotation/rotation-use-cases/aws?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/password-rotation/rotation-use-cases/aws?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/password-rotation/rotation-use-cases/aws?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/password-
-rotation/rotation-use-cases/aws?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/password-rotation/rotation-use-cases/aws?fallback=true)[KeeperPAM and
-Secrets Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/aws?fallback=true)[SSO Connect
-On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/password-rotation/rotation-use-cases/aws?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/password-rotation/rotation-use-cases/aws?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,6 +386,36 @@ manager/password-rotation/rotation-use-cases/aws?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -449,9 +437,14 @@ PDF](/en/keeperpam/~gitbook/pdf?page=AZHlgB3x9RU83c63iX2v&only=yes&limit=100)
 
 Password Rotation in the AWS Environment
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fcf6Mq1jKOtu8bTGqWeMD%252FAWS%2520rotations.jpg%3Falt%3Dmedia%26token%3D22874034-851a-4475-8930-bb4801094831&width=768&dpr=4&quality=100&sign=5d82072a&sv=2)
+[PreviousAzure App Secret Rotation](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/azure/azure-app-secret-
+rotation)[NextIAM User Password](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/aws/iam-user)
+
+Last updated 3 months ago
+
+Was this helpful?
 
 ##
 
@@ -471,15 +464,6 @@ with the AWS system and perform rotation. If instance roles are not defined,
 the AWS Access Key ID and Secret Key can be stored in the PAM Configuration
 record to authenticate and perform rotations.
 
-Configurations for managed resources like EC2, RDS, and Directory Services are
-defined in the [PAM Machine](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-machine), [PAM Database](/en/keeperpam/privileged-
-access-manager/getting-started/pam-resources/pam-database), and [PAM
-Directory](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-directory)**** record types. The following table shows the
-supported AWS managed resources with KeeperPAM and their corresponding PAM
-Record Type:
-
 AWS Managed Resource
 
 Corresponding Record Type
@@ -496,10 +480,6 @@ Directory Service
 
 PAM Directory
 
-Configurations for directory users or IAM users are defined in the [PAM
-User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)**** record type.
-
 ##
 
 Prerequisites
@@ -508,11 +488,7 @@ To successfully rotate IAM User accounts or EC2 local user accounts, the
 Keeper Gateway needs to have the necessary AWS role policies with the
 permissions for performing the password rotation.
 
-  * See the [AWS environment setup guide](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup) for more information.
-
-If you are not using EC2 instance role policies, the following values are
-needed in the [PAM Configuration](/en/keeperpam/privileged-access-
-manager/getting-started/pam-configuration):
+  * 
 
 Field
 
@@ -562,52 +538,55 @@ passwords on your Azure network:
 
 Use Cases
 
-  * [IAM User Password](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user)
+  *   *   *   *   * 
 
-  * [Managed Microsoft AD User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/directory-user)
+Configurations for managed resources like EC2, RDS, and Directory Services are
+defined in the , , and **** record types. The following table shows the
+supported AWS managed resources with KeeperPAM and their corresponding PAM
+Record Type:
 
-  * [EC2 Instance local user](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/ec2-virtual-machine-user)
+Configurations for directory users or IAM users are defined in the **** record
+type.
 
-  * [IAM User Access Key](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user-access-key)
+See the  for more information.
 
-  * [Managed Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database)
+If you are not using EC2 instance role policies, the following values are
+needed in the :
 
-[PreviousAzure App Secret Rotation](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-
-rotation)[NextIAM User Password](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/aws/iam-user)
+[PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
 
-Last updated 3 months ago
+[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database)
 
-Was this helpful?
+[PAM Directory](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-directory)
 
-#### Company
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+[AWS environment setup guide](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration/aws-environment-setup)
 
-#### Support
+[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+[IAM User Password](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/iam-user)
 
-#### Solutions
+[Managed Microsoft AD User](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/directory-user)
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+[EC2 Instance local user](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/ec2-virtual-machine-user)
 
-#### Pricing
+[IAM User Access Key](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/iam-user-access-key)
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+[Managed Database](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/managed-database)
 
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fcf6Mq1jKOtu8bTGqWeMD%252FAWS%2520rotations.jpg%3Falt%3Dmedia%26token%3D22874034-851a-4475-8930-bb4801094831&width=768&dpr=4&quality=100&sign=5d82072a&sv=2)
 

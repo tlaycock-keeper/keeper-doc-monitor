@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/endpoint-privilege-manager/managing-
-requests?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/endpoint-
-privilege-manager/managing-requests?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/endpoint-privilege-
-manager/managing-requests?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/endpoint-privilege-
-manager/managing-requests?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/endpoint-privilege-
-manager/managing-requests?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/endpoint-privilege-
-manager/managing-requests?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/endpoint-privilege-
-manager/managing-requests?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/endpoint-privilege-
-manager/managing-requests?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/endpoint-privilege-
-manager/managing-requests?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/endpoint-privilege-
-manager/managing-requests?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/endpoint-privilege-manager/managing-
-requests?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/endpoint-
-privilege-manager/managing-requests?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/endpoint-privilege-
-manager/managing-requests?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/endpoint-privilege-
-manager/managing-requests?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/endpoint-privilege-
-manager/managing-requests?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/endpoint-privilege-
-manager/managing-requests?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/endpoint-privilege-
-manager/managing-requests?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/endpoint-privilege-
-manager/managing-requests?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/endpoint-privilege-
-manager/managing-requests?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/endpoint-privilege-
-manager/managing-requests?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -451,7 +409,7 @@ Day to day management of Keeper Privilege Manager elevation requests
 [PreviousPolicies](/en/keeperpam/endpoint-privilege-
 manager/policies)[NextFAQs](/en/keeperpam/faqs)
 
-Last updated 18 days ago
+Last updated 19 days ago
 
 Was this helpful?
 

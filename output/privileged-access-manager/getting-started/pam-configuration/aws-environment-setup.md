@@ -12,57 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/getting-
-started/pam-configuration/aws-environment-setup?fallback=true)[Keeper
-Connection Manager](https://docs.keeper.io/en/keeper-connection-
-manager/privileged-access-manager/getting-started/pam-configuration/aws-
-environment-setup?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/privileged-access-manager/getting-started/pam-configuration/aws-
-environment-setup?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/getting-started/pam-configuration/aws-environment-
-setup?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/privileged-access-manager/getting-started/pam-configuration/aws-
-environment-setup?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/getting-started/pam-configuration/aws-
-environment-setup?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/getting-started/pam-configuration/aws-environment-
-setup?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/getting-started/pam-configuration/aws-environment-
-setup?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/privileged-access-manager/getting-started/pam-
-configuration/aws-environment-setup?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/getting-started/pam-configuration/aws-environment-setup?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/getting-
-started/pam-configuration/aws-environment-setup?fallback=true)[Keeper
-Connection Manager](https://docs.keeper.io/en/keeper-connection-
-manager/privileged-access-manager/getting-started/pam-configuration/aws-
-environment-setup?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/privileged-access-manager/getting-started/pam-configuration/aws-
-environment-setup?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/getting-started/pam-configuration/aws-environment-
-setup?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/privileged-access-manager/getting-started/pam-configuration/aws-
-environment-setup?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/getting-started/pam-configuration/aws-
-environment-setup?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/getting-started/pam-configuration/aws-environment-
-setup?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/getting-started/pam-configuration/aws-environment-
-setup?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/privileged-access-manager/getting-started/pam-
-configuration/aws-environment-setup?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/getting-started/pam-configuration/aws-environment-setup?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -436,35 +386,6 @@ manager/getting-started/pam-configuration/aws-environment-setup?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * AWS Environment Overview 
-  * EC2 IAM Role Policy
-  * Minimum AWS Policy to Manage IAM users
-  * IAM User Policy
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=7LH7nq7UkUQSzsxjXLTt&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
-
-# AWS Environment Setup
-
-Setting up your AWS environment to work with KeeperPAM
-
-[PreviousPAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)[NextAzure Environment
-Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/azure-environment-setup)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -494,6 +415,35 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * AWS Environment Overview 
+  * EC2 IAM Role Policy
+  * Minimum AWS Policy to Manage IAM users
+  * IAM User Policy
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=7LH7nq7UkUQSzsxjXLTt&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
+
+# AWS Environment Setup
+
+Setting up your AWS environment to work with KeeperPAM
+
+[PreviousPAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)[NextAzure Environment
+Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration/azure-environment-setup)
+
+Last updated 3 months ago
+
+Was this helpful?
 
 ##
 
@@ -655,9 +605,10 @@ The steps to create the access keys is below:
   5. Save the provided Access Key ID / Secret Access Key into the PAM Configuration
 
 In addition to these policies, we recommend protecting the Gateway
-Configuration secrets [using the AWS KMS](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/advanced-configuration/gateway-configuration-
-with-aws-kms).
+Configuration secrets .
+
+[using the AWS KMS](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/advanced-configuration/gateway-configuration-with-aws-kms)
 
 [EC2 Role Policy](/en/keeperpam/privileged-access-manager/getting-started/pam-
 configuration/aws-environment-setup#ec2-role)

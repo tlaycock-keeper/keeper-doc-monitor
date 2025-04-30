@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/password-
-rotation/rotation-use-cases/azure?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/password-rotation/rotation-use-cases/azure?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/password-rotation/rotation-use-cases/azure?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/password-rotation/rotation-use-cases/azure?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/password-rotation/rotation-use-cases/azure?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/password-
-rotation/rotation-use-cases/azure?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/password-rotation/rotation-use-cases/azure?fallback=true)[KeeperPAM
-and Secrets Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/azure?fallback=true)[SSO Connect
-On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/password-rotation/rotation-use-cases/azure?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/password-rotation/rotation-use-cases/azure?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/password-
-rotation/rotation-use-cases/azure?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/password-rotation/rotation-use-cases/azure?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/password-rotation/rotation-use-cases/azure?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/password-rotation/rotation-use-cases/azure?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/password-rotation/rotation-use-cases/azure?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/password-
-rotation/rotation-use-cases/azure?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/password-rotation/rotation-use-cases/azure?fallback=true)[KeeperPAM
-and Secrets Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/azure?fallback=true)[SSO Connect
-On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/password-rotation/rotation-use-cases/azure?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/password-rotation/rotation-use-cases/azure?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -460,10 +418,28 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * KeeperPAM Record Types
+  * Prerequisites for Rotation
+  * Setup Steps 
+  * Use Cases:
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=z96h4LUbOUC69LNReBRH&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+
+# Azure
+
+Password Rotation in the Azure Environment
+
+[PreviousRotation Use Cases](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases)[NextAzure AD Users](/en/keeperpam/privileged-
+access-manager/password-rotation/rotation-use-cases/azure/azure-ad-users)
 
 Last updated 2 months ago
 
@@ -494,6 +470,22 @@ and user accounts are defined in **PAM User** records. The following table
 shows the supported Azure AD joined devices with Keeper Rotation and their
 corresponding PAM Record Type:
 
+Azure AD Joined Device
+
+Corresponding PAM Record Type
+
+Azure AD Domain Services
+
+PAM Directory
+
+Virtual Machines
+
+PAM Machine
+
+Managed Databases
+
+PAM Database
+
 ##
 
 Prerequisites for Rotation
@@ -504,6 +496,26 @@ make sure you have the following information and configurations in place:
   1. All Azure AD joined devices that you want to use with Rotation need to be created and configured within your Azure Active Directory
 
   2. 
+
+Field
+
+Description
+
+**Client ID**
+
+The application/client id (UUID) of the Azure application
+
+**Client Secret**
+
+The client credentials secret for the Azure application
+
+**Subscription ID**
+
+The UUID of your subscription to use Azure services (i.e. Pay-As-You-GO)
+
+**Tenant ID**
+
+The UUID of the Azure Active Directory
 
   1. Make sure all the Azure services or Azure AD joined devices you plan on using for rotation have access to the Azure Active Directory.
 
@@ -538,71 +550,13 @@ Use Cases:
 
   *   *   *   * 
 
-Azure AD Joined Device
-
-Corresponding PAM Record Type
-
 To successfully configure and setup Rotation within your Azure Network, the
 following values are needed for your :
-
-Field
-
-Description
 
 Create a custom role to allow application to access/perform actions on various
 Azure resources. For more information see the  document.
 
 Configure Rotation settings on the  records
-
-Azure AD Domain Services
-
-PAM Directory
-
-Virtual Machines
-
-PAM Machine
-
-Managed Databases
-
-PAM Database
-
-**Client ID**
-
-The application/client id (UUID) of the Azure application
-
-**Client Secret**
-
-The client credentials secret for the Azure application
-
-**Subscription ID**
-
-The UUID of your subscription to use Azure services (i.e. Pay-As-You-GO)
-
-**Tenant ID**
-
-The UUID of the Azure Active Directory
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-
-# Azure
-
-Password Rotation in the Azure Environment
-
-[PreviousRotation Use Cases](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases)[NextAzure AD Users](/en/keeperpam/privileged-
-access-manager/password-rotation/rotation-use-cases/azure/azure-ad-users)
-
-  * Overview
-  * KeeperPAM Record Types
-  * Prerequisites for Rotation
-  * Setup Steps 
-  * Use Cases:
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FthB8sGXstxvLOnYdvba7%252FAzure%2520rotations.jpg%3Falt%3Dmedia%26token%3Debb0453e-857e-4226-9770-9658cffcab8a&width=768&dpr=4&quality=100&sign=fdd50804&sv=2)
 
 [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
 started/pam-configuration)
@@ -624,4 +578,8 @@ rotation/rotation-use-cases/azure/managed-database)
 
 [Azure App Secret](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/azure/azure-app-secret-rotation)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FthB8sGXstxvLOnYdvba7%252FAzure%2520rotations.jpg%3Falt%3Dmedia%26token%3Debb0453e-857e-4226-9770-9658cffcab8a&width=768&dpr=4&quality=100&sign=fdd50804&sv=2)
 

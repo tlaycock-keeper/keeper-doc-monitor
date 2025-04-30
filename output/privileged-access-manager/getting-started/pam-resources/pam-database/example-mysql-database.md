@@ -12,63 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/getting-
-started/pam-resources/pam-database/example-mysql-
-database?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/getting-started/pam-resources/pam-database/example-mysql-
-database?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/privileged-access-manager/getting-started/pam-resources/pam-
-database/example-mysql-database?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/getting-started/pam-resources/pam-database/example-mysql-
-database?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/getting-started/pam-resources/pam-database/example-mysql-
-database?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/getting-started/pam-resources/pam-
-database/example-mysql-database?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/getting-started/pam-resources/pam-database/example-mysql-
-database?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-database/example-mysql-
-database?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/privileged-access-manager/getting-started/pam-resources/pam-
-database/example-mysql-database?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/getting-started/pam-resources/pam-database/example-mysql-
-database?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/getting-
-started/pam-resources/pam-database/example-mysql-
-database?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/getting-started/pam-resources/pam-database/example-mysql-
-database?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/privileged-access-manager/getting-started/pam-resources/pam-
-database/example-mysql-database?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/getting-started/pam-resources/pam-database/example-mysql-
-database?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/getting-started/pam-resources/pam-database/example-mysql-
-database?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/getting-started/pam-resources/pam-
-database/example-mysql-database?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/getting-started/pam-resources/pam-database/example-mysql-
-database?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-database/example-mysql-
-database?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/privileged-access-manager/getting-started/pam-resources/pam-
-database/example-mysql-database?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/getting-started/pam-resources/pam-database/example-mysql-
-database?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -442,6 +386,36 @@ database?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview 
@@ -468,6 +442,15 @@ PDF](/en/keeperpam/~gitbook/pdf?page=aKJCLC4sHx4DPmJg1336&only=yes&limit=100)
 
 Configuring MySQL DB as a PAM Database Record
 
+[PreviousPAM Database](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-database)[NextExample: PostgreSQL
+Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database/example-postgresql-database)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -481,9 +464,7 @@ Prerequisites
 
 Prior to proceeding with this guide, make sure you have
 
-  1. [Installed and configured the Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways/one-time-access-token)
-
-  2. [Set up a PAM Configuration for your target Environment ](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
+  1.   2. 
 
 ##
 
@@ -513,12 +494,6 @@ To create a PAM Database:
     * Select "**Database** " for the Target 
 
   * Click "**Next** " and complete all of the required information.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGMWX8nti9YeFXKMsewLp%252FScreenshot%25202025-01-22%2520at%25208.22.52%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D65ceef4f-099d-48bb-b443-6c72568e2cf1&width=768&dpr=4&quality=100&sign=38313f83&sv=2)
-
-PAM Database
 
 ###
 
@@ -618,18 +593,10 @@ Session Recording
 
 Options for recording sessions and typescripts
 
-See [session recording](/en/keeperpam/privileged-access-manager/session-
-recording-and-playback)
-
 Connection Parameters
 
 Connection-specific protocol settings which can vary based on the protocol
 type
-
-See this [section](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/mysql-connections) for MySQL protocol
-settings We recommend specifying the **Connection Port** at a minimum. E.g.
-"3306" for MySQL.
 
 ###
 
@@ -638,16 +605,6 @@ Administrative Credential Record
 The **Admin Credential Record** in the PAM Database links a user to the PAM
 Database record in your Keeper Vault. This linked user is used for
 authenticating the connection when clicking "Launch".
-
-User Accounts are configured on the PAM User record. Visit this
-[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user) for more information.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FD8nqAfaDPIW4WBCW9Rxr%252FScreenshot%25202025-01-22%2520at%25208.53.04%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D06fac322-b21d-4041-b023-bda02e7e509f&width=768&dpr=4&quality=100&sign=1fe67e18&sv=2)
-
-Administrative Credential Record
 
 ####
 
@@ -670,13 +627,7 @@ be shared. For example, if the PAM Database is configured with a MySQL
 Database, the recipient can connect to the database without having direct
 access to the linked credentials.
 
-  * Learn more about [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Ftds8AxVXgjBxUp62XOWO%252FScreenshot%25202025-01-22%2520at%25208.57.23%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3De5b51065-620f-4e11-8e95-565659691a5f&width=768&dpr=4&quality=100&sign=4197fecc&sv=2)
-
-Sharing PAM Database Records
+  * 
 
 ###
 
@@ -686,66 +637,73 @@ The MySQL Database record is set up. The user with the ability to launch
 connections can now launch an interactive MySQL connection or tunnel to the
 target database.
 
+**Required** Visit this  for more details
+
+See
+
+See this  for MySQL protocol settings We recommend specifying the **Connection
+Port** at a minimum. E.g. "3306" for MySQL.
+
+User Accounts are configured on the PAM User record. Visit this  for more
+information.
+
+Learn more about
+
+[Installed and configured the Keeper Gateway](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/one-time-access-token)
+
+[Set up a PAM Configuration for your target Environment
+](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
+
+[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
+[Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-
+started/sharing-and-access-control)
+
+[session recording](/en/keeperpam/privileged-access-manager/session-recording-
+and-playback)
+
+[section](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/mysql-connections)
+
+[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database/example-mysql-database#administrative-credential-
+record)
+
+PAM Database
+
+Administrative Credential Record
+
+Sharing PAM Database Records
+
+MySQL Database Record
+
+Connection to MySQL Database
+
+MySQL Interactive Session
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGMWX8nti9YeFXKMsewLp%252FScreenshot%25202025-01-22%2520at%25208.22.52%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D65ceef4f-099d-48bb-b443-6c72568e2cf1&width=768&dpr=4&quality=100&sign=38313f83&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FD8nqAfaDPIW4WBCW9Rxr%252FScreenshot%25202025-01-22%2520at%25208.53.04%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D06fac322-b21d-4041-b023-bda02e7e509f&width=768&dpr=4&quality=100&sign=1fe67e18&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Ftds8AxVXgjBxUp62XOWO%252FScreenshot%25202025-01-22%2520at%25208.57.23%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3De5b51065-620f-4e11-8e95-565659691a5f&width=768&dpr=4&quality=100&sign=4197fecc&sv=2)
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FgJYt2F84PuVu30sU8vjA%252FScreenshot%25202025-01-22%2520at%25208.58.45%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D3510536e-e225-4627-b500-f131bd092e71&width=768&dpr=4&quality=100&sign=3fcd5b5e&sv=2)
-
-MySQL Database Record
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjzpPPcD5sRb1UohoCaTn%252FScreenshot%25202025-01-22%2520at%25202.39.35%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Da1847cd6-036a-43ca-a220-9221e9ce0e22&width=768&dpr=4&quality=100&sign=12e3e7c4&sv=2)
 
-Connection to MySQL Database
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOqQstEohDohyhgqfligd%252FScreenshot%25202025-01-22%2520at%25209.00.02%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D38ae8843-15e6-4d46-b9f8-d0617f951f59&width=768&dpr=4&quality=100&sign=c5bc0f5f&sv=2)
-
-MySQL Interactive Session
-
-[PreviousPAM Database](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-database)[NextExample: PostgreSQL
-Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database/example-postgresql-database)
-
-Last updated 3 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
-**Required** Visit this  for more details
-
-[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database/example-mysql-database#administrative-credential-
-record)
 

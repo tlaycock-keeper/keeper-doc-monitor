@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/commander-cli/command-reference/sharing-
-commands?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/command-reference/sharing-commands?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/command-
-reference/sharing-commands?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/command-
-reference/sharing-commands?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/command-
-reference/sharing-commands?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/commander-cli/command-
-reference/sharing-commands?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/command-
-reference/sharing-commands?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/command-
-reference/sharing-commands?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/command-
-reference/sharing-commands?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/command-
-reference/sharing-commands?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/commander-cli/command-reference/sharing-
-commands?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/command-reference/sharing-commands?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/command-
-reference/sharing-commands?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/command-
-reference/sharing-commands?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/command-
-reference/sharing-commands?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/commander-cli/command-
-reference/sharing-commands?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/command-
-reference/sharing-commands?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/command-
-reference/sharing-commands?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/command-
-reference/sharing-commands?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/command-
-reference/sharing-commands?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -1031,9 +989,6 @@ the shared folder with UID `**-FHdesR_GSERHUwBg4vTXw**`
 [Compliance Reporting](https://docs.keeper.io/enterprise-guide/compliance-
 reports)
 
-[mkdir ](/en/keeperpam/commander-cli/command-reference/record-commands#mkdir-
-command)
-
 [example](/en/keeperpam/commander-cli/command-reference/sharing-
 commands#1.-identify-shared-folder-uid)
 
@@ -1054,6 +1009,19 @@ reference/sharing-commands#external-shares-report-command)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel02MSVQayPfXmhqbT%252Fimage.png%3Falt%3Dmedia%26token%3D4813048e-99f3-4238-ab10-aacf9ce446d4&width=768&dpr=4&quality=100&sign=ecf067f8&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-MekzeEjeziNtK3guRXA%252Fimage.png%3Falt%3Dmedia%26token%3D033f1c23-92c6-4f8c-a1f7-9415d9e96463&width=768&dpr=4&quality=100&sign=1f8bce6a&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel-
+_yS8GDbOy4_Cd0W%252Fimage.png%3Falt%3Dmedia%26token%3D3ff3d195-2db6-4d93-91ab-97dc3ff01210&width=768&dpr=4&quality=100&sign=5232e926&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel0U6AJJFYFrnwhdyL%252Fimage.png%3Falt%3Dmedia%26token%3D14e6b9f2-53fe-4c82-9c99-d6b477732436&width=768&dpr=4&quality=100&sign=684ea3d&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
@@ -1062,18 +1030,8 @@ files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mekzvg
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-MekzeEjeziNtK3guRXA%252Fimage.png%3Falt%3Dmedia%26token%3D033f1c23-92c6-4f8c-a1f7-9415d9e96463&width=768&dpr=4&quality=100&sign=1f8bce6a&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel0Z9xJp1m7dxf1H8C%252Fimage.png%3Falt%3Dmedia%26token%3D0c2a9f0e-5f49-4a4b-8fd1-235a3094af72&width=768&dpr=4&quality=100&sign=378b1d3d&sv=2)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel02MSVQayPfXmhqbT%252Fimage.png%3Falt%3Dmedia%26token%3D4813048e-99f3-4238-ab10-aacf9ce446d4&width=768&dpr=4&quality=100&sign=ecf067f8&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel-
-_yS8GDbOy4_Cd0W%252Fimage.png%3Falt%3Dmedia%26token%3D3ff3d195-2db6-4d93-91ab-97dc3ff01210&width=768&dpr=4&quality=100&sign=5232e926&sv=2)
+[mkdir ](/en/keeperpam/commander-cli/command-reference/record-commands#mkdir-
+command)
 

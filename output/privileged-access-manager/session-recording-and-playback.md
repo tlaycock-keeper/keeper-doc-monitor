@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/session-
-recording-and-playback?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/session-recording-and-playback?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/session-recording-and-playback?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/session-recording-and-playback?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/session-recording-and-playback?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/session-
-recording-and-playback?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/session-recording-and-playback?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/session-recording-and-playback?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/session-recording-and-playback?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/session-recording-and-playback?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/session-
-recording-and-playback?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/session-recording-and-playback?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/session-recording-and-playback?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/session-recording-and-playback?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/session-recording-and-playback?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/session-
-recording-and-playback?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/session-recording-and-playback?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/session-recording-and-playback?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/session-recording-and-playback?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/session-recording-and-playback?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,6 +386,36 @@ manager/session-recording-and-playback?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * What are Session Recordings?
@@ -451,18 +439,20 @@ PDF](/en/keeperpam/~gitbook/pdf?page=m19rR4xhfT5odwSgVjsZ&only=yes&limit=100)
 
 Graphical and Text Based Session Recordings
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWhIh6GbN31oCVndJWHcs%252FSession%2520Recording.jpg%3Falt%3Dmedia%26token%3Dc248d6c6-d5b6-4a9b-b841-561101d4fdb7&width=768&dpr=4&quality=100&sign=164caf7b&sv=2)
+[PreviousBrowser Autofill](/en/keeperpam/privileged-access-manager/remote-
+browser-isolation/setting-up-rbi/browser-autofill)[NextSSH
+Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
+
+Last updated 2 months ago
+
+Was this helpful?
 
 ##
 
 What are Session Recordings?
 
 **Keeper Session Recordings** capture and store activity from sessions
-launched through [**Keeper Connections**](/en/keeperpam/privileged-access-
-manager/connections) or [**Remote Browser Isolation
-(RBI)**](/en/keeperpam/privileged-access-manager/remote-browser-isolation).
+launched through  or .
 
 These recordings can be **graphical** , **text-based** , or both, depending on
 the session configuration.
@@ -526,10 +516,6 @@ For RBI connections, Graphical Session Recordings are available.
 
 Enforcement Policies
 
-Allowing users to view session recordings is managed through [PAM Enforcement
-Policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-
-policies). The following enforcement policies need to be turned on:
-
 ####
 
 **For Connections:**
@@ -564,10 +550,6 @@ Can view RBI session recordings
 
 Allow users to view RBI Session Recordings
 
-For more information on PAM enforcement policies, visit this
-[page](/en/keeperpam/privileged-access-manager/getting-started/enforcement-
-policies).
-
 ##
 
 Activating Session Recording
@@ -581,29 +563,11 @@ Enforcement Policies
 From the Admin Console > Roles > Enforcement Policies > Privileged Access
 Manager tab, ensure that policies to configure settings is enabled at minimum.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVlZiUwR5i9cedRkzevv5%252FScreenshot%25202025-01-01%2520at%25208.33.49%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Df84f6978-1e56-4632-867a-d7dbc1505f25&width=768&dpr=4&quality=100&sign=e7a5beb6&sv=2)
-
-Enforcement Policies to configure session recording
-
 2
 
 ###
 
 PAM Configuration
-
-To enable session recordings, the [PAM
-Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration) needs to permit graphical and text session recording. Go to
-Secrets Manager > PAM Configurations and edit the configuration associated
-with your resources.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F0UQcQy9KeHHgjLQaTXxd%252FScreenshot%25202025-01-01%2520at%25207.51.49%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Db5b12d9c-0a90-4c01-ac6e-342b5bc2ca08&width=768&dpr=4&quality=100&sign=7095f987&sv=2)
-
-Allow Session Recording from PAM Configuration
 
 3
 
@@ -614,18 +578,6 @@ Record PAM Settings
 From the KeeperPAM resource records in the vault, edit the record and then
 edit PAM Settings. Enable the Graphical and Text Session recording feature as
 required.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlBx7Gau6MgF9oflmm4gn%252FScreenshot%25202025-01-01%2520at%25208.35.53%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D3e403d7f-a703-4e36-9478-2a18301cbf22&width=768&dpr=4&quality=100&sign=8623d2ab&sv=2)
-
-Edit PAM Settings
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FV9nJBEth6Gh2E8PCl6qY%252FScreenshot%25202025-01-01%2520at%25208.37.40%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D33b9145c-326d-4177-b316-71a953b7665f&width=768&dpr=4&quality=100&sign=66343a5&sv=2)
-
-Edit Session Recording Features
 
 ##
 
@@ -641,12 +593,6 @@ To view the recordings:
 
   * Click on the record overflow menu > Session recordings
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtjQo1xLa88nr9idP2i4A%252FScreenshot%25202025-01-01%2520at%25209.08.01%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D4da84616-5436-4393-bf90-78a339b8a3b8&width=768&dpr=4&quality=100&sign=ae0938cd&sv=2)
-
-View Session Recordings
-
 The **Session Recordings** screen will display a list of all recorded
 sessions. Each session includes:
 
@@ -659,18 +605,6 @@ sessions. Each session includes:
   * **Duration** of the recording
 
   * For sessions that support text-based recordings (Typescripts), users can **download a zip folder** of the session recording.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FmrFrKLljWwSGEI4LSnMa%252FScreenshot%25202025-01-01%2520at%25209.13.25%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dfbc9ef7a-92f3-4837-9ec2-a1677e54adbf&width=768&dpr=4&quality=100&sign=b9133156&sv=2)
-
-Session Recording History
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fv4Ss1DPwwcRNQKOCiZ60%252FScreenshot%25202025-01-01%2520at%25209.14.23%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Df65770b5-de63-4c37-b888-f636b1952f9d&width=768&dpr=4&quality=100&sign=73afe39c&sv=2)
-
-View Session Recording
 
 ###
 
@@ -735,41 +669,72 @@ encrypted data is downloaded from the Keeper Cloud and decrypted locally in
 the user's vault for playback. Each session is encrypted with a unique record
 key, ensuring least privilege access.
 
-[PreviousBrowser Autofill](/en/keeperpam/privileged-access-manager/remote-
-browser-isolation/setting-up-rbi/browser-autofill)[NextSSH
-Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
+Allowing users to view session recordings is managed through . The following
+enforcement policies need to be turned on:
 
-Last updated 2 months ago
+For more information on PAM enforcement policies, visit this .
 
-Was this helpful?
+To enable session recordings, the  needs to permit graphical and text session
+recording. Go to Secrets Manager > PAM Configurations and edit the
+configuration associated with your resources.
 
-#### Company
+[PAM Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-
+started/enforcement-policies)
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+[page](/en/keeperpam/privileged-access-manager/getting-started/enforcement-
+policies)
 
-#### Support
+[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+[**Keeper Connections**](/en/keeperpam/privileged-access-manager/connections)
 
-#### Solutions
+[**Remote Browser Isolation (RBI)**](/en/keeperpam/privileged-access-
+manager/remote-browser-isolation)
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+Enforcement Policies to configure session recording
 
-#### Pricing
+Allow Session Recording from PAM Configuration
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+Edit PAM Settings
 
-© 2025 Keeper Security, Inc.
+Edit Session Recording Features
+
+View Session Recordings
+
+Session Recording History
+
+View Session Recording
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWhIh6GbN31oCVndJWHcs%252FSession%2520Recording.jpg%3Falt%3Dmedia%26token%3Dc248d6c6-d5b6-4a9b-b841-561101d4fdb7&width=768&dpr=4&quality=100&sign=164caf7b&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVlZiUwR5i9cedRkzevv5%252FScreenshot%25202025-01-01%2520at%25208.33.49%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Df84f6978-1e56-4632-867a-d7dbc1505f25&width=768&dpr=4&quality=100&sign=e7a5beb6&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F0UQcQy9KeHHgjLQaTXxd%252FScreenshot%25202025-01-01%2520at%25207.51.49%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Db5b12d9c-0a90-4c01-ac6e-342b5bc2ca08&width=768&dpr=4&quality=100&sign=7095f987&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlBx7Gau6MgF9oflmm4gn%252FScreenshot%25202025-01-01%2520at%25208.35.53%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D3e403d7f-a703-4e36-9478-2a18301cbf22&width=768&dpr=4&quality=100&sign=8623d2ab&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FV9nJBEth6Gh2E8PCl6qY%252FScreenshot%25202025-01-01%2520at%25208.37.40%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D33b9145c-326d-4177-b316-71a953b7665f&width=768&dpr=4&quality=100&sign=66343a5&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtjQo1xLa88nr9idP2i4A%252FScreenshot%25202025-01-01%2520at%25209.08.01%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D4da84616-5436-4393-bf90-78a339b8a3b8&width=768&dpr=4&quality=100&sign=ae0938cd&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FmrFrKLljWwSGEI4LSnMa%252FScreenshot%25202025-01-01%2520at%25209.13.25%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dfbc9ef7a-92f3-4837-9ec2-a1677e54adbf&width=768&dpr=4&quality=100&sign=b9133156&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fv4Ss1DPwwcRNQKOCiZ60%252FScreenshot%25202025-01-01%2520at%25209.14.23%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Df65770b5-de63-4c37-b888-f636b1952f9d&width=768&dpr=4&quality=100&sign=73afe39c&sv=2)
 

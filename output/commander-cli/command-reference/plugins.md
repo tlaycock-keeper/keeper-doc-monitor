@@ -12,47 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/commander-cli/command-
-reference/plugins?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/command-reference/plugins?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/command-
-reference/plugins?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/command-
-reference/plugins?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/command-
-reference/plugins?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/commander-cli/command-reference/plugins?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/command-
-reference/plugins?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/command-
-reference/plugins?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/command-
-reference/plugins?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/command-
-reference/plugins?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/commander-cli/command-
-reference/plugins?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/command-reference/plugins?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/command-
-reference/plugins?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/command-
-reference/plugins?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/command-
-reference/plugins?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/commander-cli/command-reference/plugins?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/command-
-reference/plugins?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/command-
-reference/plugins?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/command-
-reference/plugins?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/command-
-reference/plugins?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -426,35 +386,6 @@ reference/plugins?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Password Rotation
-  * Typed Records
-  * Untyped Records
-  * Supported Plugins
-  * Github Location
-
-Was this helpful?
-
-[Export as PDF](/en/keeperpam/~gitbook/pdf?page=-MelT9-hmTj4Efk6X--
-u&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-
-# Password Rotation
-
-Rotate passwords on any remote system using Keeper Commander plugins
-
-[PreviousMiscellaneous Commands](/en/keeperpam/commander-cli/command-
-reference/misc-commands)[NextPassword Rotation
-Commands](/en/keeperpam/commander-cli/command-reference/plugins/password-
-rotation)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -485,13 +416,40 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Password Rotation
+  * Typed Records
+  * Untyped Records
+  * Supported Plugins
+  * Github Location
+
+Was this helpful?
+
+[Export as PDF](/en/keeperpam/~gitbook/pdf?page=-MelT9-hmTj4Efk6X--
+u&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+
+# Password Rotation
+
+Rotate passwords on any remote system using Keeper Commander plugins
+
+[PreviousMiscellaneous Commands](/en/keeperpam/commander-cli/command-
+reference/misc-commands)[NextPassword Rotation
+Commands](/en/keeperpam/commander-cli/command-reference/plugins/password-
+rotation)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 Keeper has also launched a zero-trust Password Rotation feature with
 KeeperPAM. This new capability is recommended for most password rotation use
 cases. The Documentation is linked below:
 
-  * [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-rotation)
-
-  * Commander [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
+  *   * Commander 
 
 ##
 
@@ -536,9 +494,7 @@ Commander rotation.
 To support a rotation plugin, simply add a set of **custom field** values to
 the Keeper record. The custom field values tell Commander which plugin to use,
 and what system to communicate with when rotating the password. To modify your
-Keeper record to include custom fields, login to Keeper on the [Web
-Vault](https://keepersecurity.com/vault) or [Keeper
-Desktop](https://keepersecurity.com/download.html) app.
+Keeper record to include custom fields, login to Keeper on the  or  app.
 
 Example custom fields for MySQL password rotation:
 
@@ -567,12 +523,6 @@ folder to load the module based on the name provided (e.g. mysql.py) then it
 will use the values of the Keeper record to connect, rotate the password and
 save the resulting data.
 
-Check out the [plugins folder](https://github.com/Keeper-
-Security/Commander/tree/master/keepercommander/plugins) for all of the
-available plugins. Keeper's team adds new plugins on an ongoing basis. If you
-need a particular plugin created, send us an email to
-[commander@keepersecurity.com](mailto:commander@keepersecurity.com).
-
 ###
 
 Supported Plugins
@@ -580,10 +530,6 @@ Supported Plugins
 ###
 
 Github Location
-
-<https://github.com/Keeper-
-Security/Commander/tree/master/keepercommander/plugins>[](https://github.com/Keeper-
-Security/Commander/tree/master/keepercommander/plugins)
 
 ####
 
@@ -595,9 +541,36 @@ Commander. See the specific plugin for the custom field requirements.
 
 To perform a rotation use the `_rotate_` command.
 
+Check out the  for all of the available plugins. Keeper's team adds new
+plugins on an ongoing basis. If you need a particular plugin created, send us
+an email to .
+
 Keeper's team is expanding the number of plugins on an ongoing basis. If you
-need a particular plugin created or modified, email us at
-[commander@keepersecurity.com](mailto:commander@keepersecurity.com).
+need a particular plugin created or modified, email us at .
+
+[plugins folder](https://github.com/Keeper-
+Security/Commander/tree/master/keepercommander/plugins)
+
+[commander@keepersecurity.com](mailto:commander@keepersecurity.com)
+
+<https://github.com/Keeper-
+Security/Commander/tree/master/keepercommander/plugins>[](https://github.com/Keeper-
+Security/Commander/tree/master/keepercommander/plugins)
+
+[commander@keepersecurity.com](mailto:commander@keepersecurity.com)
+
+[Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
+rotation)
+
+[KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
+commands)
+
+[Web Vault](https://keepersecurity.com/vault)
+
+[Keeper Desktop](https://keepersecurity.com/download.html)
+
+[Troubleshooting section](/en/keeperpam/commander-cli/troubleshooting-
+commander-cli#typed-vs-untyped-records-v3-vs-v2)
 
 [Active Directory](/en/keeperpam/commander-cli/command-
 reference/plugins/active-directory-plugin)
@@ -634,7 +607,4 @@ passwd-plugin)
 
 [Windows Password](/en/keeperpam/commander-cli/command-
 reference/plugins/windows-plugin)
-
-[Troubleshooting section](/en/keeperpam/commander-cli/troubleshooting-
-commander-cli#typed-vs-untyped-records-v3-vs-v2)
 

@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/hashicorp-
-vault?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/hashicorp-vault?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/integrations/hashicorp-vault?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/integrations/hashicorp-vault?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/hashicorp-vault?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-
-manager/integrations/hashicorp-vault?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/integrations/hashicorp-vault?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/integrations/hashicorp-vault?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/hashicorp-vault?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/integrations/hashicorp-vault?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/hashicorp-
-vault?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/hashicorp-vault?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/integrations/hashicorp-vault?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/integrations/hashicorp-vault?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/hashicorp-vault?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-
-manager/integrations/hashicorp-vault?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/integrations/hashicorp-vault?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/integrations/hashicorp-vault?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/hashicorp-vault?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/integrations/hashicorp-vault?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -512,9 +470,6 @@ Features
 
   * Update secret information from HashiCorp Vault
 
-For a complete list of Keeper Secrets Manager features see the [Overview
-](/en/keeperpam/secrets-manager/overview)
-
 ##
 
 Prerequisites
@@ -522,19 +477,15 @@ Prerequisites
 This page documents the Secrets Manager HashiCorp Vault integration. In order
 to utilize this integration, you will need:
 
-  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
-
-    * Secrets Manager add-on enabled for your Keeper subscription
+  *     * Secrets Manager add-on enabled for your Keeper subscription
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
-
-    * The HashiCorp Vault integration accepts our Base64 format configurations
+  *     *   *     * The HashiCorp Vault integration accepts our Base64 format configurations
 
   * HashiCorp Vault command line, and a Vault server running
 
-    * See the [HashiCorp Vault documentation](https://learn.hashicorp.com/collections/vault/getting-started) for how to install
+    * 
 
 ##
 
@@ -900,27 +851,45 @@ Copy
     
     vault delete ksm/record uid=Oq3fFu14hZY00d7sp3EYNA
 
+For a complete list of Keeper Secrets Manager features see the
+
+Keeper Secrets Manager access (See the  for more details)
+
 A Keeper  with secrets shared to it
 
 See the  for instructions on creating an Application
 
-Secrets Manager Releases
+An initialized Keeper
+
+See the  for how to install
 
 A Secrets Manager configuration can be created using Keeper Commander or the
 Secrets Manager CLI. See the  for more information on creating a
 configuration.
 
-[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/secrets-
-managerGitHub](https://github.com/Keeper-Security/secrets-manager/releases)
+[Overview ](/en/keeperpam/secrets-manager/overview)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+[Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration)
+
+[HashiCorp Vault
+documentation](https://learn.hashicorp.com/collections/vault/getting-started)
 
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
-[Configuration Documentation](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration#creating-a-secrets-manager-configuration)
-
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
+
+[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/secrets-
+managerGitHub](https://github.com/Keeper-Security/secrets-manager/releases)
+
+Secrets Manager Releases
+
+[Configuration Documentation](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration#creating-a-secrets-manager-configuration)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

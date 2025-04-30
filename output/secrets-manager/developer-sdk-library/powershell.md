@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-manager/developer-sdk-
-library/powershell?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/developer-sdk-library/powershell?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-manager/developer-sdk-
-library/powershell?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-manager/developer-sdk-
-library/powershell?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-manager/developer-
-sdk-library/powershell?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-manager/developer-sdk-
-library/powershell?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-manager/developer-
-sdk-library/powershell?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-manager/developer-sdk-
-library/powershell?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-manager/developer-
-sdk-library/powershell?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-manager/developer-sdk-
-library/powershell?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-manager/developer-sdk-
-library/powershell?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/developer-sdk-library/powershell?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-manager/developer-sdk-
-library/powershell?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-manager/developer-sdk-
-library/powershell?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-manager/developer-
-sdk-library/powershell?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-manager/developer-sdk-
-library/powershell?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-manager/developer-
-sdk-library/powershell?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-manager/developer-sdk-
-library/powershell?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-manager/developer-
-sdk-library/powershell?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-manager/developer-sdk-
-library/powershell?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,28 +386,6 @@ library/powershell?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=wz0O7fcw1wsdcgngnbs4&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Developer SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
-
-# PowerShell
-
-PowerShell docs for Keeper Secrets Manager
-
-[PreviousRecord Field Classes](/en/keeperpam/secrets-manager/developer-sdk-
-library/golang-sdk/record-field-classes)[NextVault
-SDKs](/en/keeperpam/secrets-manager/developer-sdk-library/vault-sdks)
-
-Last updated 5 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -479,6 +415,28 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=wz0O7fcw1wsdcgngnbs4&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Developer SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
+
+# PowerShell
+
+PowerShell docs for Keeper Secrets Manager
+
+[PreviousRecord Field Classes](/en/keeperpam/secrets-manager/developer-sdk-
+library/golang-sdk/record-field-classes)[NextVault
+SDKs](/en/keeperpam/secrets-manager/developer-sdk-library/vault-sdks)
+
+Last updated 5 months ago
+
+Was this helpful?
 
 ##
 

@@ -12,47 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/commander-cli/commander-installation-
-setup?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/commander-installation-setup?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/commander-
-installation-setup?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/commander-
-installation-setup?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/commander-
-installation-setup?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/commander-cli/commander-installation-setup?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/commander-
-installation-setup?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/commander-
-installation-setup?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/commander-
-installation-setup?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/commander-
-installation-setup?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/commander-cli/commander-installation-
-setup?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/commander-installation-setup?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/commander-
-installation-setup?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/commander-
-installation-setup?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/commander-
-installation-setup?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/commander-cli/commander-installation-setup?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/commander-
-installation-setup?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/commander-
-installation-setup?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/commander-
-installation-setup?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/commander-
-installation-setup?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -426,68 +386,6 @@ installation-setup?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Commander CLI Install
-  * Developer Instructions
-  * Making Changes
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MeR6akVJ9USNnuBGLUD&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-
-# Installation and Setup
-
-Your first steps with Keeper Commander
-
-###
-
-Commander CLI Install
-
-Follow these instructions to install Keeper Commander on your system for CLI
-access
-
-[CLI Installation on Windows](/en/keeperpam/commander-cli/commander-
-installation-setup/installation-on-windows)[CLI Installation on
-macOS](/en/keeperpam/commander-cli/commander-installation-setup/installation-
-on-mac)[CLI Installation on Linux](/en/keeperpam/commander-cli/commander-
-installation-setup/installation-on-linux)
-
-###
-
-Developer Instructions
-
-Installing the CLI from source code with scripting capabilities
-
-[Python Developer Setup](/en/keeperpam/commander-cli/commander-installation-
-setup/developer-mode)[PowerShell Module](/en/keeperpam/commander-
-cli/commander-installation-setup/installation-on-powershell)[.NET Developer
-Setup](/en/keeperpam/commander-cli/commander-installation-setup/net-developer-
-sdk)
-
-###
-
-Making Changes
-
-In order to add additional modules, change source code or make other edits to
-Commander, you will need to Install Commander in Developer mode. Developer
-mode clones the Commander source code to your local machine in a virtual
-environment.
-
-[Python Developer Setup](/en/keeperpam/commander-cli/commander-installation-
-setup/developer-mode)
-
-[PreviousCommander Overview](/en/keeperpam/commander-cli/overview)[NextCLI
-Installation on Windows](/en/keeperpam/commander-cli/commander-installation-
-setup/installation-on-windows)
-
-Last updated 6 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -517,4 +415,72 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Commander CLI Install
+  * Developer Instructions
+  * Making Changes
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MeR6akVJ9USNnuBGLUD&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+
+# Installation and Setup
+
+Your first steps with Keeper Commander
+
+[PreviousCommander Overview](/en/keeperpam/commander-cli/overview)[NextCLI
+Installation on Windows](/en/keeperpam/commander-cli/commander-installation-
+setup/installation-on-windows)
+
+Last updated 6 months ago
+
+Was this helpful?
+
+###
+
+Commander CLI Install
+
+Follow these instructions to install Keeper Commander on your system for CLI
+access
+
+###
+
+Developer Instructions
+
+Installing the CLI from source code with scripting capabilities
+
+###
+
+Making Changes
+
+In order to add additional modules, change source code or make other edits to
+Commander, you will need to Install Commander in Developer mode. Developer
+mode clones the Commander source code to your local machine in a virtual
+environment.
+
+[CLI Installation on Windows](/en/keeperpam/commander-cli/commander-
+installation-setup/installation-on-windows)
+
+[CLI Installation on macOS](/en/keeperpam/commander-cli/commander-
+installation-setup/installation-on-mac)
+
+[CLI Installation on Linux](/en/keeperpam/commander-cli/commander-
+installation-setup/installation-on-linux)
+
+[Python Developer Setup](/en/keeperpam/commander-cli/commander-installation-
+setup/developer-mode)
+
+[PowerShell Module](/en/keeperpam/commander-cli/commander-installation-
+setup/installation-on-powershell)
+
+[.NET Developer Setup](/en/keeperpam/commander-cli/commander-installation-
+setup/net-developer-sdk)
+
+[Python Developer Setup](/en/keeperpam/commander-cli/commander-installation-
+setup/developer-mode)
 

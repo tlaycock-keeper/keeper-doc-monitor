@@ -12,53 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/commander-cli/command-reference/import-
-and-export-commands/proton-pass-import?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/command-reference/import-and-export-commands/proton-pass-
-import?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/commander-cli/command-reference/import-and-export-commands/proton-pass-
-import?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/commander-cli/command-reference/import-and-export-commands/proton-pass-
-import?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/commander-cli/command-reference/import-and-export-commands/proton-pass-
-import?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/commander-cli/command-reference/import-and-export-commands/proton-pass-
-import?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/commander-cli/command-reference/import-and-export-
-commands/proton-pass-import?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/command-
-reference/import-and-export-commands/proton-pass-import?fallback=true)[SSO
-Connect On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-
-cli/command-reference/import-and-export-commands/proton-pass-
-import?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/commander-cli/command-reference/import-and-export-commands/proton-pass-
-import?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/commander-cli/command-reference/import-
-and-export-commands/proton-pass-import?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/command-reference/import-and-export-commands/proton-pass-
-import?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/commander-cli/command-reference/import-and-export-commands/proton-pass-
-import?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/commander-cli/command-reference/import-and-export-commands/proton-pass-
-import?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/commander-cli/command-reference/import-and-export-commands/proton-pass-
-import?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/commander-cli/command-reference/import-and-export-commands/proton-pass-
-import?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/commander-cli/command-reference/import-and-export-
-commands/proton-pass-import?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/command-
-reference/import-and-export-commands/proton-pass-import?fallback=true)[SSO
-Connect On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-
-cli/command-reference/import-and-export-commands/proton-pass-
-import?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/commander-cli/command-reference/import-and-export-commands/proton-pass-
-import?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -432,33 +386,6 @@ import?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Export your Proton Pass Data as a JSON File
-  * Import your Proton Pass Data into Keeper
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=z9ZeAVvO36OQbEWh2IFX&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
-
-# Proton Pass Import
-
-Automatic Migration of your Proton Pass Vault
-
-[PreviousMyki Import](/en/keeperpam/commander-cli/command-reference/import-
-and-export-commands/myki-import)[NextCSV Import](/en/keeperpam/commander-
-cli/command-reference/import-and-export-commands/csv-import)
-
-Last updated 5 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -488,6 +415,33 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Overview
+  * Export your Proton Pass Data as a JSON File
+  * Import your Proton Pass Data into Keeper
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=z9ZeAVvO36OQbEWh2IFX&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
+
+# Proton Pass Import
+
+Automatic Migration of your Proton Pass Vault
+
+[PreviousMyki Import](/en/keeperpam/commander-cli/command-reference/import-
+and-export-commands/myki-import)[NextCSV Import](/en/keeperpam/commander-
+cli/command-reference/import-and-export-commands/csv-import)
+
+Last updated 5 months ago
+
+Was this helpful?
 
 ##
 

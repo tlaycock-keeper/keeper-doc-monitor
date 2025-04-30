@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-manager/developer-sdk-
-library/golang-sdk?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/developer-sdk-library/golang-sdk?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-manager/developer-sdk-
-library/golang-sdk?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-manager/developer-sdk-
-library/golang-sdk?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-manager/developer-
-sdk-library/golang-sdk?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-manager/developer-sdk-
-library/golang-sdk?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-manager/developer-
-sdk-library/golang-sdk?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-manager/developer-sdk-
-library/golang-sdk?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-manager/developer-
-sdk-library/golang-sdk?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-manager/developer-sdk-
-library/golang-sdk?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-manager/developer-sdk-
-library/golang-sdk?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/developer-sdk-library/golang-sdk?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-manager/developer-sdk-
-library/golang-sdk?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-manager/developer-sdk-
-library/golang-sdk?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-manager/developer-
-sdk-library/golang-sdk?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-manager/developer-sdk-
-library/golang-sdk?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-manager/developer-
-sdk-library/golang-sdk?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-manager/developer-sdk-
-library/golang-sdk?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-manager/developer-
-sdk-library/golang-sdk?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-manager/developer-sdk-
-library/golang-sdk?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,6 +386,36 @@ library/golang-sdk?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Download and Installation
@@ -462,6 +450,14 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MhELBhujHGGC0H7Z2yB&only=yes&limit=100)
 
 Detailed Go SDK docs for Keeper Secrets Manager
 
+[Previous.NET SDK](/en/keeperpam/secrets-manager/developer-sdk-library/.net-
+sdk)[NextRecord Field Classes](/en/keeperpam/secrets-manager/developer-sdk-
+library/golang-sdk/record-field-classes)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 ##
 
 Download and Installation
@@ -470,9 +466,7 @@ Download and Installation
 
 Install from GitHub
 
-Find the latest Go SDK release at: <https://github.com/Keeper-
-Security/secrets-manager-go>[](https://github.com/Keeper-Security/secrets-
-manager-go)
+Find the latest Go SDK release at:
 
 Copy
 
@@ -484,8 +478,7 @@ Copy
 
 Source Code
 
-Find the Go source code in the [GitHub repository](https://github.com/keeper-
-security/secrets-manager-go)
+Find the Go source code in the
 
 ##
 
@@ -751,10 +744,6 @@ Copy
     	}
     
 
-Fields are found by type, for a list of field types see the [Record
-Types](/en/keeperpam/commander-cli/command-reference/record-commands/default-
-record-types#field-types) documentation.
-
 ####
 
 Retrieve Values using Keeper Notation
@@ -783,10 +772,6 @@ Copy
     			println("Successfully retrieved field value using notation")
     		}
     	}
-
-See [Keeper Notation documentation](/en/keeperpam/secrets-
-manager/about/keeper-notation) to learn about Keeper Notation format and
-capabilities
 
 Parameter
 
@@ -1038,12 +1023,6 @@ Copy
     	// save changes
     	sm.Save(record)
     }
-
-Each record field type is represented by a class. Cast the field to the
-corresponding class in order to correctly access the field's value. Check the
-[Record Types](/en/keeperpam/commander-cli/command-reference/record-
-commands/default-record-types#field-types) documentation for a list of field
-types.
 
 ####
 
@@ -1311,11 +1290,9 @@ Prerequisites:
 
   * Created records and record fields must be formatted correctly
 
-    * See the [documentation](/en/keeperpam/commander-cli/command-reference/record-commands/default-record-types#field-types) for expected field formats for each record type
+    *   * TOTP fields accept only URL generated outside of the KSM SDK
 
-  * TOTP fields accept only URL generated outside of the KSM SDK
-
-  * After record creation, you can upload file attachments using [UploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/golang-sdk#upload-a-file)
+  * 
 
 Create a RecordCreate Record in Sub-folderLogin Record ExampleCustom Type
 Example
@@ -1771,41 +1748,35 @@ Copy
     	stats, err := sm.DeleteFolder([]string{"[FOLDER_UID1]", "[FOLDER_UID2]"}, true)
     }
 
-[Previous.NET SDK](/en/keeperpam/secrets-manager/developer-sdk-library/.net-
-sdk)[NextRecord Field Classes](/en/keeperpam/secrets-manager/developer-sdk-
-library/golang-sdk/record-field-classes)
+Fields are found by type, for a list of field types see the  documentation.
 
-Last updated 3 months ago
+See  to learn about Keeper Notation format and capabilities
 
-Was this helpful?
+Each record field type is represented by a class. Cast the field to the
+corresponding class in order to correctly access the field's value. Check the
+documentation for a list of field types.
 
-#### Company
+See the  for expected field formats for each record type
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+After record creation, you can upload file attachments using
 
-#### Support
+<https://github.com/Keeper-Security/secrets-manager-
+go>[](https://github.com/Keeper-Security/secrets-manager-go)
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+[GitHub repository](https://github.com/keeper-security/secrets-manager-go)
 
-#### Solutions
+[Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
+notation)
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+[UploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/golang-
+sdk#upload-a-file)
 
-#### Pricing
+[Record Types](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types#field-types)
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+[Record Types](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types#field-types)
 
-© 2025 Keeper Security, Inc.
+[documentation](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types#field-types)
 

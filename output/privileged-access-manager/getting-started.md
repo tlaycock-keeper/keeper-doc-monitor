@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/getting-
-started?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/getting-started?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/getting-started?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/getting-started?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/getting-started?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/getting-
-started?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/privileged-access-manager/getting-
-started?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/getting-started?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/getting-started?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/getting-started?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/getting-
-started?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/getting-started?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/getting-started?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/getting-started?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/getting-started?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/getting-
-started?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/privileged-access-manager/getting-
-started?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/getting-started?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/getting-started?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/getting-started?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,33 +386,6 @@ manager/getting-started?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * The Basics
-  * KeeperPAM Features
-  * Secrets Manager Features
-  * Commander CLI Features
-  * Enterprise Password Manager
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=luRB0oHezgUTaYPVYi3l&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# Getting Started
-
-Getting Started with KeeperPAM fundamentals
-
-[PreviousQuick Start: Sandbox](/en/keeperpam/privileged-access-manager/quick-
-start-sandbox)[NextArchitecture](/en/keeperpam/privileged-access-
-manager/getting-started/architecture)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -484,6 +415,33 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * The Basics
+  * KeeperPAM Features
+  * Secrets Manager Features
+  * Commander CLI Features
+  * Enterprise Password Manager
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=luRB0oHezgUTaYPVYi3l&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Getting Started
+
+Getting Started with KeeperPAM fundamentals
+
+[PreviousQuick Start: Sandbox](/en/keeperpam/privileged-access-manager/quick-
+start-sandbox)[NextArchitecture](/en/keeperpam/privileged-access-
+manager/getting-started/architecture)
+
+Last updated 2 months ago
+
+Was this helpful?
 
 ##
 

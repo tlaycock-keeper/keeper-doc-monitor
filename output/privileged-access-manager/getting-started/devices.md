@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/getting-
-started/devices?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/getting-started/devices?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/getting-started/devices?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/getting-started/devices?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/getting-started/devices?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/getting-
-started/devices?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/getting-started/devices?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/getting-started/devices?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/getting-started/devices?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/getting-started/devices?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/getting-
-started/devices?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/getting-started/devices?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/getting-started/devices?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/getting-started/devices?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/getting-started/devices?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/getting-
-started/devices?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/getting-started/devices?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/getting-started/devices?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/getting-started/devices?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/getting-started/devices?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,6 +386,36 @@ manager/getting-started/devices?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * What's a Device?
@@ -446,9 +434,13 @@ PDF](/en/keeperpam/~gitbook/pdf?page=ymuC24xXELvr6ZoC4PNi&only=yes&limit=100)
 
 Keeper Secrets Manager Devices with KeeperPAM
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5ftStQCAmP0Ff6YRT1hO%252FDevices.jpg%3Falt%3Dmedia%26token%3Dcc7439f2-e1e5-4755-be90-d4782bb1923f&width=768&dpr=4&quality=100&sign=a7e9b756&sv=2)
+[PreviousApplications](/en/keeperpam/privileged-access-manager/getting-
+started/applications)[NextGateways](/en/keeperpam/privileged-access-
+manager/getting-started/gateways)
+
+Last updated 4 months ago
+
+Was this helpful?
 
 ###
 
@@ -463,7 +455,7 @@ identifier so that it can be tightly controlled and managed. Devices
 authenticate and decrypt data using a API and encryption model as defined in
 the Keeper Secrets Manager Security & Encryption model page.
 
-  * See the [Security & Encryption Model](/en/keeperpam/secrets-manager/about/security-encryption-model) of a Device
+  * 
 
 ###
 
@@ -474,13 +466,6 @@ interface or through the Keeper Commander CLI.
 
 From the Vault user interface, go to Secrets Manager and select the
 Application. Then select the Devices tab and click "Add Device".
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FvXs6AeY5tmdvIyzQ8gWv%252FScreenshot%25202024-12-26%2520at%25207.59.36%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D611bfb73-e966-40db-
-bd44-962eb1fcc59c&width=768&dpr=4&quality=100&sign=3256c230&sv=2)
-
-Create a Device
 
 ###
 
@@ -499,24 +484,11 @@ all of the necessary keys for subsequent authentications and decryption of the
 resulting vault ciphertext. The Keeper Secrets Manager SDKs and many out of
 the box integrations utilize this method.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4W35bPtAymO4Sbx27Qwg%252FScreenshot%25202024-12-26%2520at%25208.00.25%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D4424ce27-486f-40eb-
-ad4c-ec67fa219354&width=768&dpr=4&quality=100&sign=ff819562&sv=2)
-
-Add a device using One-Time Access Token and IP Lockdown
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOuI8qji19fOvDvdMLAUI%252FScreenshot%25202024-12-26%2520at%25208.01.32%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Da06c0903-78ba-42a8-bb7c-e3970298b118&width=768&dpr=4&quality=100&sign=ee435d61&sv=2)
-
-Access Token Generated
-
 One additional feature of this method is that you can optionally lock down API
 requests to a specific IP address. The IP address allowed to transact is based
 on the IP as seen by Keeper's cloud infrastructure.
 
-  * [One-Time Access Token details](/en/keeperpam/secrets-manager/about/one-time-token)
+  * 
 
 ####
 
@@ -526,22 +498,10 @@ The Configuration file method of creating a device is useful for tools and
 integrations where all of the secrets need to be provided at runtime. Most of
 the CI/CD integration methods use this pre-built configuration file.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FpfSN89i3gEWOSpOMWCDS%252FScreenshot%25202024-12-26%2520at%25208.00.36%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D8d5dc364-f8f3-47a4-9e21-81ae4a006f38&width=768&dpr=4&quality=100&sign=2a72e6a&sv=2)
-
-Creating a new device with Configuration File method
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F14KWP5B9HsqwWDW1GRIs%252FScreenshot%25202024-12-26%2520at%25208.01.55%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D9c104dad-d333-49ef-9491-a27af0e79423&width=768&dpr=4&quality=100&sign=8eca1129&sv=2)
-
-Device created with Configuration method
-
 For more information about the contents of a Keeper Secrets Manager
 configuration:
 
-  * [Secrets Manager Configuration details](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
+  * 
 
 ####
 
@@ -597,43 +557,57 @@ Copy
     
     secrets-manager client add --app "My Infrastructure App" --unlock-ip
 
-  * See more details on the [secrets-manager Commander CLI command](/en/keeperpam/commander-cli/command-reference/secrets-manager-commands)
+  * 
 
-[PreviousApplications](/en/keeperpam/privileged-access-manager/getting-
-started/applications)[NextGateways](/en/keeperpam/privileged-access-
-manager/getting-started/gateways)
+See the  of a Device
 
-Last updated 4 months ago
+Create a Device
 
-Was this helpful?
+Add a device using One-Time Access Token and IP Lockdown
 
-#### Company
+Access Token Generated
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+Creating a new device with Configuration File method
 
-#### Support
+Device created with Configuration method
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+See more details on the
 
-#### Solutions
+[Security & Encryption Model](/en/keeperpam/secrets-manager/about/security-
+encryption-model)
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+[One-Time Access Token details](/en/keeperpam/secrets-manager/about/one-time-
+token)
 
-#### Pricing
+[Secrets Manager Configuration details](/en/keeperpam/secrets-
+manager/about/secrets-manager-configuration)
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+[secrets-manager Commander CLI command](/en/keeperpam/commander-cli/command-
+reference/secrets-manager-commands)
 
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5ftStQCAmP0Ff6YRT1hO%252FDevices.jpg%3Falt%3Dmedia%26token%3Dcc7439f2-e1e5-4755-be90-d4782bb1923f&width=768&dpr=4&quality=100&sign=a7e9b756&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FvXs6AeY5tmdvIyzQ8gWv%252FScreenshot%25202024-12-26%2520at%25207.59.36%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D611bfb73-e966-40db-
+bd44-962eb1fcc59c&width=768&dpr=4&quality=100&sign=3256c230&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4W35bPtAymO4Sbx27Qwg%252FScreenshot%25202024-12-26%2520at%25208.00.25%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D4424ce27-486f-40eb-
+ad4c-ec67fa219354&width=768&dpr=4&quality=100&sign=ff819562&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOuI8qji19fOvDvdMLAUI%252FScreenshot%25202024-12-26%2520at%25208.01.32%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Da06c0903-78ba-42a8-bb7c-e3970298b118&width=768&dpr=4&quality=100&sign=ee435d61&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FpfSN89i3gEWOSpOMWCDS%252FScreenshot%25202024-12-26%2520at%25208.00.36%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D8d5dc364-f8f3-47a4-9e21-81ae4a006f38&width=768&dpr=4&quality=100&sign=2a72e6a&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F14KWP5B9HsqwWDW1GRIs%252FScreenshot%25202024-12-26%2520at%25208.01.55%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D9c104dad-d333-49ef-9491-a27af0e79423&width=768&dpr=4&quality=100&sign=8eca1129&sv=2)
 

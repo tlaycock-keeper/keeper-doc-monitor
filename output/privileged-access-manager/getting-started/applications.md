@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/getting-
-started/applications?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/getting-started/applications?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/getting-started/applications?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/getting-started/applications?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/getting-started/applications?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/getting-
-started/applications?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/getting-started/applications?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/getting-started/applications?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/getting-started/applications?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/getting-started/applications?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/getting-
-started/applications?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/getting-started/applications?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/getting-started/applications?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/getting-started/applications?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/getting-started/applications?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/getting-
-started/applications?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/getting-started/applications?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/getting-started/applications?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/getting-started/applications?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/getting-started/applications?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,33 +386,6 @@ manager/getting-started/applications?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * What's an Application?
-  * Creating an Application
-  * Generating a One-Time Access Token
-  * Assigning Gateways to Applications
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=yQtvlKUgUA2k4m0c7v5k&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-
-# Applications
-
-Secrets Manager Applications with KeeperPAM
-
-[PreviousRecord Linking](/en/keeperpam/privileged-access-manager/getting-
-started/record-linking)[NextDevices](/en/keeperpam/privileged-access-
-manager/getting-started/devices)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -484,6 +415,33 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * What's an Application?
+  * Creating an Application
+  * Generating a One-Time Access Token
+  * Assigning Gateways to Applications
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=yQtvlKUgUA2k4m0c7v5k&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+# Applications
+
+Secrets Manager Applications with KeeperPAM
+
+[PreviousRecord Linking](/en/keeperpam/privileged-access-manager/getting-
+started/record-linking)[NextDevices](/en/keeperpam/privileged-access-
+manager/getting-started/devices)
+
+Last updated 3 months ago
+
+Was this helpful?
 
 ###
 
@@ -534,11 +492,7 @@ manage the records assigned. There are many use cases where a device can use
 Keeper Secrets Manager APIs to communicate with the Keeper vault. Below are a
 few examples.
 
-  * [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
-
-  * [Developer SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
-
-  * [Integrations](/en/keeperpam/secrets-manager/integrations)
+  *   *   * 
 
 ###
 
@@ -554,6 +508,13 @@ select "**Create New** " then "**Gateway** ".
 
 The "Project Name" is used to create a PAM Configuration, Gateway, Application
 and optionally a set of example folders and records.
+
+[Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-
+line-interface)
+
+[Developer SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
+
+[Integrations](/en/keeperpam/secrets-manager/integrations)
 
 One-Time Access Token
 

@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-
-manager/about/terminology?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/about/terminology?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/about/terminology?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/about/terminology?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/about/terminology?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-
-manager/about/terminology?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/about/terminology?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/about/terminology?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/about/terminology?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/about/terminology?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-
-manager/about/terminology?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/about/terminology?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/about/terminology?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/about/terminology?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/about/terminology?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-
-manager/about/terminology?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/about/terminology?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/about/terminology?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/about/terminology?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/about/terminology?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -493,8 +451,6 @@ Secrets Manager Structure
 In order to organize and maintain access to **Secrets,** Keeper Secrets
 Manager uses structures called **Applications** and **Clients**.
 
-Keeper Secrets Manager Structure
-
 Read below about how each of these items function in Secrets Manager.
 
 ###
@@ -554,15 +510,15 @@ A Secrets Manager "Configuration" is a set of tokens that includes encryption
 keys, client identifiers and destination server information used to
 authenticate and decrypt data from the Keeper Secrets Manager APIs.
 
+Secrets Manager configurations are created from [One Time Access
+Tokens](/en/keeperpam/secrets-manager/about/one-time-token) and have a one to
+one relationship with [client devices](/en/keeperpam/secrets-
+manager/about/terminology#client-device).
+
 A configuration can be stored as a text file with JSON, or it can be encoded
 into a single line string.
 
-Secrets Manager configurations are created from [One Time Access
-Tokens](/en/keeperpam/secrets-manager/about/one-time-token) and have a one to
-one relationship with .
-
-[client devices](/en/keeperpam/secrets-manager/about/terminology#client-
-device)
+Keeper Secrets Manager Structure
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

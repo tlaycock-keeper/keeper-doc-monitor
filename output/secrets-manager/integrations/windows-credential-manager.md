@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/windows-
-credential-manager?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/windows-credential-manager?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/integrations/windows-credential-manager?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/integrations/windows-credential-manager?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/windows-credential-manager?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-
-manager/integrations/windows-credential-manager?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/integrations/windows-credential-manager?fallback=true)[KeeperPAM and
-Secrets Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/integrations/windows-credential-manager?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/windows-credential-manager?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/integrations/windows-credential-manager?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/windows-
-credential-manager?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/windows-credential-manager?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/integrations/windows-credential-manager?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/integrations/windows-credential-manager?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/windows-credential-manager?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-
-manager/integrations/windows-credential-manager?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/integrations/windows-credential-manager?fallback=true)[KeeperPAM and
-Secrets Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/integrations/windows-credential-manager?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/windows-credential-manager?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/integrations/windows-credential-manager?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,36 +386,6 @@ manager/integrations/windows-credential-manager?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Usage - Executable
-  * Downloading the Executable
-  * Using the Executable
-  * set
-  * get
-  * Example
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=4uAYMim9oyLDLik5qeu2&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Windows Credential Manager
-
-Store and Retrieve Secrets from the Windows Credential Manager
-
-[PreviousTerraform Plugin](/en/keeperpam/secrets-
-manager/integrations/terraform)[NextXSOAR](/en/keeperpam/secrets-
-manager/integrations/xsoar)
-
-Last updated 1 month ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -488,6 +416,36 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Overview
+  * Usage - Executable
+  * Downloading the Executable
+  * Using the Executable
+  * set
+  * get
+  * Example
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=4uAYMim9oyLDLik5qeu2&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Windows Credential Manager
+
+Store and Retrieve Secrets from the Windows Credential Manager
+
+[PreviousTerraform Plugin](/en/keeperpam/secrets-
+manager/integrations/terraform)[NextXSOAR](/en/keeperpam/secrets-
+manager/integrations/xsoar)
+
+Last updated 1 month ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -508,9 +466,7 @@ The binary needed to use the above utility can be found here:
 
 To use the Windows Credential Utility, you can either
 
-  * deploy the pre-built binary from the [releases page](https://github.com/Keeper-Security/windows-credential-utility/releases)
-
-  * or import it into your code base. 
+  *   * or import it into your code base. 
 
 Both use cases are covered below.
 
@@ -521,10 +477,6 @@ Usage - Executable
 ###
 
 Downloading the Executable
-
-Download the latest version executable from the [releases
-page](https://github.com/Keeper-Security/windows-credential-utility/releases)
-and optionally add it to PATH to get started.
 
 ###
 
@@ -581,6 +533,17 @@ Copy
     
     # Retrieve a secret
     wcu get APPNAME
+
+deploy the pre-built binary from the
+
+Download the latest version executable from the  and optionally add it to PATH
+to get started.
+
+[releases page](https://github.com/Keeper-Security/windows-credential-
+utility/releases)
+
+[releases page](https://github.com/Keeper-Security/windows-credential-
+utility/releases)
 
 [![Logo](https://github.com/fluidicon.png)GitHub - Keeper-Security/windows-
 credential-utility: A utility for natively interacting with Windows Credential

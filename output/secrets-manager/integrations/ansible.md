@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-
-manager/integrations/ansible?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/ansible?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/integrations/ansible?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/integrations/ansible?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/ansible?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-
-manager/integrations/ansible?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/integrations/ansible?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/integrations/ansible?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/ansible?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/integrations/ansible?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-
-manager/integrations/ansible?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/ansible?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/integrations/ansible?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/integrations/ansible?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/ansible?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-
-manager/integrations/ansible?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/integrations/ansible?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/integrations/ansible?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/ansible?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/integrations/ansible?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,75 +386,6 @@ manager/integrations/ansible?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Features
-  * Ansible Integrations
-  * Ansible Plugin
-  * Ansible Tower
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=Xv5qEBPg6ezXBm1OUS53&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Ansible
-
-Use Keeper Secrets Manager with Ansible
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDXbF4wcBxi9C6WAhejXi%252Fimage.png%3Falt%3Dmedia%26token%3D9f4ddebb-
-ac32-409a-a8b1-0a0907a1c41e&width=768&dpr=4&quality=100&sign=40e5b583&sv=2)
-
-##
-
-Features
-
-  * Retrieve secrets from the Keeper vault to use in Ansible Playbooks
-
-  * Update the value of secrets in the Keeper Vault from Ansible
-
-  * Copy files from the Keeper Vault
-
-  * Use Keeper Secrets Manager within Ansible Tower to fetch secret credentials and files in your Ansible Playbooks.
-
-For a complete list of Keeper Secrets Manager features see the [Overview
-](/en/keeperpam/secrets-manager/overview)
-
-##
-
-Ansible Integrations
-
-Check out the nested pages for using Secrets Manager with Ansible
-
-###
-
-[Ansible Plugin](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
-plugin)
-
-How to use Keeper Secrets Manager to fetch secret credentials and files in
-your Ansible Playbooks
-
-###
-
-[Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible#ansible-
-tower)
-
-Store Keeper Secrets Manager configuration credentials in Ansible Tower and
-create reusable playbook templates that utilize Keeper Secrets Manager
-features.
-
-[PreviousIntegrations](/en/keeperpam/secrets-manager/integrations)[NextAnsible
-Plugin](/en/keeperpam/secrets-manager/integrations/ansible/ansible-plugin)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -526,4 +415,74 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Features
+  * Ansible Integrations
+  * Ansible Plugin
+  * Ansible Tower
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=Xv5qEBPg6ezXBm1OUS53&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Ansible
+
+Use Keeper Secrets Manager with Ansible
+
+[PreviousIntegrations](/en/keeperpam/secrets-manager/integrations)[NextAnsible
+Plugin](/en/keeperpam/secrets-manager/integrations/ansible/ansible-plugin)
+
+Last updated 3 months ago
+
+Was this helpful?
+
+##
+
+Features
+
+  * Retrieve secrets from the Keeper vault to use in Ansible Playbooks
+
+  * Update the value of secrets in the Keeper Vault from Ansible
+
+  * Copy files from the Keeper Vault
+
+  * Use Keeper Secrets Manager within Ansible Tower to fetch secret credentials and files in your Ansible Playbooks.
+
+##
+
+Ansible Integrations
+
+Check out the nested pages for using Secrets Manager with Ansible
+
+How to use Keeper Secrets Manager to fetch secret credentials and files in
+your Ansible Playbooks
+
+Store Keeper Secrets Manager configuration credentials in Ansible Tower and
+create reusable playbook templates that utilize Keeper Secrets Manager
+features.
+
+For a complete list of Keeper Secrets Manager features see the
+
+###
+
+###
+
+[Overview ](/en/keeperpam/secrets-manager/overview)
+
+[Ansible Plugin](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
+plugin)
+
+[Ansible Tower](/en/keeperpam/secrets-manager/integrations/ansible#ansible-
+tower)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDXbF4wcBxi9C6WAhejXi%252Fimage.png%3Falt%3Dmedia%26token%3D9f4ddebb-
+ac32-409a-a8b1-0a0907a1c41e&width=768&dpr=4&quality=100&sign=40e5b583&sv=2)
 

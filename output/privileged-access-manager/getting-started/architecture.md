@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/getting-
-started/architecture?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/getting-started/architecture?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/getting-started/architecture?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/getting-started/architecture?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/getting-started/architecture?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/getting-
-started/architecture?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/getting-started/architecture?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/getting-started/architecture?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/getting-started/architecture?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/getting-started/architecture?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/getting-
-started/architecture?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/getting-started/architecture?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/getting-started/architecture?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/getting-started/architecture?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/getting-started/architecture?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/getting-
-started/architecture?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/getting-started/architecture?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/getting-started/architecture?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/getting-started/architecture?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/getting-started/architecture?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,54 +386,6 @@ manager/getting-started/architecture?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=ZM6e8hogz5utnJbqQsx4&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-
-# Architecture
-
-Technical details on the KeeperPAM platform architecture
-
-##
-
-Overview
-
-KeeperPAM is a Zero-Knowledge platform, ensuring that encryption and
-decryption of secrets, connections, and tunnels occur locally on the end
-user's device through the Keeper Vault application. Access to resources in the
-vault is restricted to users with explicitly assigned permissions, enabling
-them to establish sessions or tunnels securely.
-
-Keeper's zero-trust connection technology further enhances security by
-providing restricted and monitored access to target systems without direct
-connectivity, while never exposing underlying credentials or secrets.
-
-This security content will cover the key areas of KeeperPAM:
-
-  * [Architecture Diagram](/en/keeperpam/privileged-access-manager/getting-started/architecture/system-architecture)
-
-  * [Vault Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/vault-security)
-
-  * [Router Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/router-security)
-
-  * [Gateway Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/gateway-security)
-
-  * [Connection and Tunnel Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/connection-and-tunnel-security)
-
-[PreviousGetting Started](/en/keeperpam/privileged-access-manager/getting-
-started)[NextArchitecture Diagram](/en/keeperpam/privileged-access-
-manager/getting-started/architecture/system-architecture)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -505,4 +415,59 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=ZM6e8hogz5utnJbqQsx4&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+# Architecture
+
+Technical details on the KeeperPAM platform architecture
+
+[PreviousGetting Started](/en/keeperpam/privileged-access-manager/getting-
+started)[NextArchitecture Diagram](/en/keeperpam/privileged-access-
+manager/getting-started/architecture/system-architecture)
+
+Last updated 3 months ago
+
+Was this helpful?
+
+##
+
+Overview
+
+KeeperPAM is a Zero-Knowledge platform, ensuring that encryption and
+decryption of secrets, connections, and tunnels occur locally on the end
+user's device through the Keeper Vault application. Access to resources in the
+vault is restricted to users with explicitly assigned permissions, enabling
+them to establish sessions or tunnels securely.
+
+Keeper's zero-trust connection technology further enhances security by
+providing restricted and monitored access to target systems without direct
+connectivity, while never exposing underlying credentials or secrets.
+
+This security content will cover the key areas of KeeperPAM:
+
+  *   *   *   *   * 
+
+[Architecture Diagram](/en/keeperpam/privileged-access-manager/getting-
+started/architecture/system-architecture)
+
+[Vault Security](/en/keeperpam/privileged-access-manager/getting-
+started/architecture/vault-security)
+
+[Router Security](/en/keeperpam/privileged-access-manager/getting-
+started/architecture/router-security)
+
+[Gateway Security](/en/keeperpam/privileged-access-manager/getting-
+started/architecture/gateway-security)
+
+[Connection and Tunnel Security](/en/keeperpam/privileged-access-
+manager/getting-started/architecture/connection-and-tunnel-security)
 

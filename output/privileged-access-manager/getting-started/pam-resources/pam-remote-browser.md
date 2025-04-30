@@ -12,53 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/getting-
-started/pam-resources/pam-remote-browser?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/getting-started/pam-resources/pam-remote-
-browser?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/privileged-access-manager/getting-started/pam-resources/pam-remote-
-browser?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/privileged-access-manager/getting-started/pam-resources/pam-remote-
-browser?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/privileged-access-manager/getting-started/pam-resources/pam-remote-
-browser?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/getting-started/pam-resources/pam-remote-
-browser?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/privileged-access-manager/getting-started/pam-resources/pam-
-remote-browser?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-remote-browser?fallback=true)[SSO
-Connect On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-
-access-manager/getting-started/pam-resources/pam-remote-
-browser?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/privileged-access-manager/getting-started/pam-resources/pam-remote-
-browser?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/getting-
-started/pam-resources/pam-remote-browser?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/getting-started/pam-resources/pam-remote-
-browser?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/privileged-access-manager/getting-started/pam-resources/pam-remote-
-browser?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/privileged-access-manager/getting-started/pam-resources/pam-remote-
-browser?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/privileged-access-manager/getting-started/pam-resources/pam-remote-
-browser?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/getting-started/pam-resources/pam-remote-
-browser?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/privileged-access-manager/getting-started/pam-resources/pam-
-remote-browser?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-remote-browser?fallback=true)[SSO
-Connect On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-
-access-manager/getting-started/pam-resources/pam-remote-
-browser?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/privileged-access-manager/getting-started/pam-resources/pam-remote-
-browser?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -631,19 +585,9 @@ independently and does not require direct connectivity to the website,
 leveraging Keeper's zero-trust network access model to securely manage access
 through the Gateway. See the  for more details.
 
-Creating a Browser Isolation Record
-
-PAM Settings on a Remote Browser Isolation resource
-
-PAM Settings for Remote Browser Isolation
-
-Autofill Credentials for Remote Browser Isolation
-
 See
 
 See
-
-PAM Remote Browser resource
 
 Additional information on Remote Browser Isolation is .
 
@@ -652,6 +596,21 @@ manager/getting-started/architecture/system-architecture)
 
 [available at this page](/en/keeperpam/privileged-access-manager/remote-
 browser-isolation)
+
+[session recording](/en/keeperpam/privileged-access-manager/session-recording-
+and-playback)
+
+[RBI page](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
+
+Creating a Browser Isolation Record
+
+PAM Settings on a Remote Browser Isolation resource
+
+PAM Settings for Remote Browser Isolation
+
+Autofill Credentials for Remote Browser Isolation
+
+PAM Remote Browser resource
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -677,9 +636,4 @@ ab23-11d960f192bb&width=768&dpr=4&quality=100&sign=a1f2454d&sv=2)
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FC08APnlcrl6pNYeGETKm%252FScreenshot%25202025-01-01%2520at%252010.05.23%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3De51ff4f5-13d6-4693-ba1c-3caf82dc010c&width=768&dpr=4&quality=100&sign=1eeb9c59&sv=2)
-
-[session recording](/en/keeperpam/privileged-access-manager/session-recording-
-and-playback)
-
-[RBI page](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
 

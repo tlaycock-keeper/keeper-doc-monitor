@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-
-manager/references/event-reporting?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/references/event-reporting?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/references/event-reporting?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/references/event-reporting?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/references/event-reporting?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-
-manager/references/event-reporting?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/references/event-reporting?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/references/event-reporting?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/references/event-reporting?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/references/event-reporting?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-
-manager/references/event-reporting?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/references/event-reporting?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/references/event-reporting?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/references/event-reporting?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/references/event-reporting?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-
-manager/references/event-reporting?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/references/event-reporting?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/references/event-reporting?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/references/event-reporting?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/references/event-reporting?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,35 +386,6 @@ manager/references/event-reporting?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * SIEM Events
-  * Secrets Manager Events
-  * Keeper Connection Manager (KCM) Cloud Events
-  * Alerts
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=yVhLMN6y9UZD8e0IKtSA&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
-
-# Event Reporting
-
-Keeper rotation event reporting in the Advanced Reporting & Alerts module
-
-[PreviousActive Directory Least Privilege](/en/keeperpam/privileged-access-
-manager/references/active-directory-least-privilege)[NextImporting PAM
-Records](/en/keeperpam/privileged-access-manager/references/importing-pam-
-records)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -487,6 +416,35 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Overview
+  * SIEM Events
+  * Secrets Manager Events
+  * Keeper Connection Manager (KCM) Cloud Events
+  * Alerts
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=yVhLMN6y9UZD8e0IKtSA&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
+
+# Event Reporting
+
+Keeper rotation event reporting in the Advanced Reporting & Alerts module
+
+[PreviousActive Directory Least Privilege](/en/keeperpam/privileged-access-
+manager/references/active-directory-least-privilege)[NextImporting PAM
+Records](/en/keeperpam/privileged-access-manager/references/importing-pam-
+records)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -498,8 +456,6 @@ Console.
 ##
 
 SIEM Events
-
-SIEM Event List
 
 ###
 
@@ -517,8 +473,11 @@ To receive immediate feedback on any rotation related events, Keeper's
 "Alerts" capability can push these events to email, SMS, webhooks, Slack,
 Teams, etc.
 
-To learn more about the Keeper Advanced Reporting & Alerts module [at this
-link](https://docs.keeper.io/enterprise-guide/event-reporting).
+To learn more about the Keeper Advanced Reporting & Alerts module .
+
+[at this link](https://docs.keeper.io/enterprise-guide/event-reporting)
+
+SIEM Event List
 
 [![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
 files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Reporting,

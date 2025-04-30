@@ -12,35 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/faqs?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-
-manager/faqs?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/faqs?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/faqs?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/faqs?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/faqs?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-
-cloud/faqs?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/faqs?fallback=true)[SSO Connect
-On-Prem](https://docs.keeper.io/en/sso-connect-on-
-prem/faqs?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/faqs?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/faqs?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-
-manager/faqs?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/faqs?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/faqs?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/faqs?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/faqs?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-
-cloud/faqs?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/faqs?fallback=true)[SSO Connect
-On-Prem](https://docs.keeper.io/en/sso-connect-on-
-prem/faqs?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/faqs?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -414,6 +386,36 @@ bridge/faqs?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Does Keeper have endpoint access?
@@ -597,37 +599,7 @@ detailed audit trails.
 requests)[NextSecrets Manager Overview](/en/keeperpam/secrets-
 manager/overview)
 
-Last updated 18 days ago
+Last updated 19 days ago
 
 Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
 

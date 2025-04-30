@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/getting-
-started/pam-configuration?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/getting-started/pam-configuration?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/getting-started/pam-configuration?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/getting-started/pam-configuration?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/getting-started/pam-configuration?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/getting-
-started/pam-configuration?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/getting-started/pam-configuration?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/getting-started/pam-configuration?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/getting-started/pam-configuration?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/getting-started/pam-configuration?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/getting-
-started/pam-configuration?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/getting-started/pam-configuration?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/getting-started/pam-configuration?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/getting-started/pam-configuration?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/getting-started/pam-configuration?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/getting-
-started/pam-configuration?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/getting-started/pam-configuration?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/getting-started/pam-configuration?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/getting-started/pam-configuration?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/getting-started/pam-configuration?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -451,45 +409,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=r3KpQ6RkUwiqQMMpRR7r&only=yes&limit=100)
 
 Creating a PAM Configuration in the Keeper Vault
 
-[PreviousGateway Configuration with Custom Fields](/en/keeperpam/privileged-
-access-manager/getting-started/gateways/advanced-configuration/gateway-
-configuration-with-custom-fields)[NextAWS Environment
-Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/aws-environment-setup)
-
-Last updated 3 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGEDJmvpUaT8ImnYLgjLV%252FKeeperPAM%2520Configuration.jpg%3Falt%3Dmedia%26token%3D657572ec-45bc-4e1a-a219-2402c655252a&width=768&dpr=4&quality=100&sign=8009b119&sv=2)
 
 ##
 
@@ -518,7 +440,13 @@ PAM Configuration Fields
 When setting up the PAM Configuration, you have the option of choosing one of
 the following environments:
 
-  *   *   *   * 
+  * [Local Network](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration#local-network-environment)
+
+  * [AWS](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration#aws-environment)
+
+  * [Azure](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration#aws-environment)
+
+  * [Domain Controller](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration#domain-controller-environment)
 
 The following tables provides more details on each configurable fields in the
 PAM Configuration record regardless of the environment you choose:
@@ -769,6 +697,46 @@ Text Session Recording (TypeScript)
 If enabled, text input and output logs will be logged for all connections and
 RBI sessions
 
+[PreviousGateway Configuration with Custom Fields](/en/keeperpam/privileged-
+access-manager/getting-started/gateways/advanced-configuration/gateway-
+configuration-with-custom-fields)[NextAWS Environment
+Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration/aws-environment-setup)
+
+Last updated 3 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 See  for more info
 
 See  for more info
@@ -784,22 +752,6 @@ mapping)
 
 [this ](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
 
-[Local Network](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration#local-network-environment)
-
-[AWS](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration#aws-environment)
-
-[Azure](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration#aws-environment)
-
-[Domain Controller](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration#domain-controller-environment)
-
 [this section](/en/keeperpam/privileged-access-manager/getting-started/pam-
 configuration#pam-features-on-pam-configuration)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGEDJmvpUaT8ImnYLgjLV%252FKeeperPAM%2520Configuration.jpg%3Falt%3Dmedia%26token%3D657572ec-45bc-4e1a-a219-2402c655252a&width=768&dpr=4&quality=100&sign=8009b119&sv=2)
 

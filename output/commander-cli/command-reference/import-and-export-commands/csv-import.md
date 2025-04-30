@@ -12,51 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/commander-cli/command-reference/import-
-and-export-commands/csv-import?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/command-reference/import-and-export-commands/csv-
-import?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/commander-cli/command-reference/import-and-export-commands/csv-
-import?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/commander-cli/command-reference/import-and-export-commands/csv-
-import?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/commander-cli/command-reference/import-and-export-commands/csv-
-import?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/commander-cli/command-reference/import-and-export-commands/csv-
-import?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/commander-cli/command-reference/import-and-export-commands/csv-
-import?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/command-
-reference/import-and-export-commands/csv-import?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/command-
-reference/import-and-export-commands/csv-import?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/command-
-reference/import-and-export-commands/csv-import?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/commander-cli/command-reference/import-
-and-export-commands/csv-import?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/command-reference/import-and-export-commands/csv-
-import?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/commander-cli/command-reference/import-and-export-commands/csv-
-import?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/commander-cli/command-reference/import-and-export-commands/csv-
-import?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/commander-cli/command-reference/import-and-export-commands/csv-
-import?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/commander-cli/command-reference/import-and-export-commands/csv-
-import?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/commander-cli/command-reference/import-and-export-commands/csv-
-import?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/command-
-reference/import-and-export-commands/csv-import?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/command-
-reference/import-and-export-commands/csv-import?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/command-
-reference/import-and-export-commands/csv-import?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -699,18 +655,22 @@ $host
 
 $url
 
+More advanced import options are available using the  format described in the
+next section.
+
+[JSON Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands/json-import)
+
+[www.google.com](http://www.google.com/)
+
+[www.example.com](http://www.example.com/)
+
 CSV Import Sample
 
 Record types can be listed as a custom field value when the custom field name
 is $type
 
 All Field Types that can be used as Custom Field Name $oneTimeCode
-
-More advanced import options are available using the  format described in the
-next section.
-
-[JSON Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands/json-import)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -729,8 +689,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqorAIVkSE
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFGSYxcuPALAx9F6enlfT%252FWindowsTerminal_myNZzFQtif.png%3Falt%3Dmedia%26token%3D309856f4-e8d8-48c5-858e-103e9d471c1f&width=768&dpr=4&quality=100&sign=e87d127b&sv=2)
-
-[www.google.com](http://www.google.com/)
-
-[www.example.com](http://www.example.com/)
 

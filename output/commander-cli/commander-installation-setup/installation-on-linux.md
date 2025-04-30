@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/commander-cli/commander-installation-
-setup/installation-on-linux?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/commander-installation-setup/installation-on-linux?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/commander-
-installation-setup/installation-on-linux?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/commander-
-installation-setup/installation-on-linux?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/commander-
-installation-setup/installation-on-linux?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/commander-cli/commander-
-installation-setup/installation-on-linux?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/commander-
-installation-setup/installation-on-linux?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/commander-
-installation-setup/installation-on-linux?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/commander-
-installation-setup/installation-on-linux?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/commander-
-installation-setup/installation-on-linux?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/commander-cli/commander-installation-
-setup/installation-on-linux?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/commander-installation-setup/installation-on-linux?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/commander-
-installation-setup/installation-on-linux?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/commander-
-installation-setup/installation-on-linux?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/commander-
-installation-setup/installation-on-linux?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/commander-cli/commander-
-installation-setup/installation-on-linux?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/commander-
-installation-setup/installation-on-linux?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/commander-
-installation-setup/installation-on-linux?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/commander-
-installation-setup/installation-on-linux?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/commander-
-installation-setup/installation-on-linux?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,156 +386,6 @@ installation-setup/installation-on-linux?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Supported Operating systems:
-  * Video Overview
-  * Pre-requisites
-  * Instructions
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MJXfMZXEdPkvtXzMcQ-&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
-
-# CLI Installation on Linux
-
-How to install the Keeper Commander CLI on Linux
-
-###
-
-**Supported Operating systems:**
-
-  * Ubuntu (Current release and latest LTS release)
-
-  * CentOS (Current)
-
-  * RedHat (Current)
-
-###
-
-Video Overview
-
-Watch the video below to learn how to install and log in to Keeper Commander.
-
-Keeper Commander – Installing and Logging In
-
-###
-
-**Pre-requisites**
-
-  1. Install Python 3.x
-
-  2. Install Package installer for Python
-
-###
-
-**Instructions**
-
-####
-
-Installing Python:
-
-‌Based on your distribution, follow the instructions to install Python 3.x,
-typical installation commands are listed below.
-
-Copy
-
-    
-    
-    $ sudo apt install python3
-
-OR
-
-Copy
-
-    
-    
-    $ yum install -y python3
-
-Also ensure the "Package installer for Python" is installed (you may need to
-run an apt-get update first):
-
-Copy
-
-    
-    
-    $ sudo apt install python3-pip
-
-OR
-
-Copy
-
-    
-    
-    $ sudo yum install python3-pip
-
-Next, upgrade pip3 to the latest version using the command:
-
-Copy
-
-    
-    
-    $ sudo pip3 install --upgrade pip
-
-Validate Python is correctly installed by checking the installed version from
-a terminal window:
-
-Copy
-
-    
-    
-    $ pip3 --version
-
-Next, install Keeper Commander using pip3:
-
-Copy
-
-    
-    
-    $ pip3 install keepercommander
-
-Once installed, ensure you have the latest version by upgrading Commander:
-
-Copy
-
-    
-    
-    $ pip3 install --upgrade keepercommander
-
-Please validate all updates in your test environment as commands and
-functionality is under rapid development.
-
-Now you can launch the keeper shell using command:
-
-Copy
-
-    
-    
-    $ keeper shell
-
-You should see:
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FijsE6IrCJmLZkurhwQKo%252Fkeeper-
-commander_BBNOqSVfEO.png%3Falt%3Dmedia%26token%3D9f80084e-6f49-46be-a52c-0bbb0b7737d4&width=768&dpr=4&quality=100&sign=8c8fadbc&sv=2)
-
-Note, for your first time logging into a new device or a new location, you may
-have to perform device approval through email or other 2FA methods.
-
-[PreviousCLI Installation on macOS](/en/keeperpam/commander-cli/commander-
-installation-setup/installation-on-mac)[NextPython Developer
-Setup](/en/keeperpam/commander-cli/commander-installation-setup/developer-
-mode)
-
-Last updated 6 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -607,4 +415,154 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MJXfMZXEdPkvtXzMcQ-&only=yes&limit=100)
+
+Last updated 6 months ago
+
+Was this helpful?
+
+###
+
+**Supported Operating systems:**
+
+  * Ubuntu (Current release and latest LTS release)
+
+  * CentOS (Current)
+
+  * RedHat (Current)
+
+###
+
+Video Overview
+
+Watch the video below to learn how to install and log in to Keeper Commander.
+
+###
+
+**Pre-requisites**
+
+  1. Install Python 3.x
+
+  2. Install Package installer for Python
+
+###
+
+**Instructions**
+
+####
+
+Installing Python:
+
+‌Based on your distribution, follow the instructions to install Python 3.x,
+typical installation commands are listed below.
+
+OR
+
+Also ensure the "Package installer for Python" is installed (you may need to
+run an apt-get update first):
+
+OR
+
+Next, upgrade pip3 to the latest version using the command:
+
+Validate Python is correctly installed by checking the installed version from
+a terminal window:
+
+Next, install Keeper Commander using pip3:
+
+Once installed, ensure you have the latest version by upgrading Commander:
+
+Please validate all updates in your test environment as commands and
+functionality is under rapid development.
+
+Now you can launch the keeper shell using command:
+
+You should see:
+
+Note, for your first time logging into a new device or a new location, you may
+have to perform device approval through email or other 2FA methods.
+
+Copy
+
+    
+    
+    $ sudo apt install python3
+
+Copy
+
+    
+    
+    $ yum install -y python3
+
+Copy
+
+    
+    
+    $ sudo apt install python3-pip
+
+Copy
+
+    
+    
+    $ sudo yum install python3-pip
+
+Copy
+
+    
+    
+    $ sudo pip3 install --upgrade pip
+
+Copy
+
+    
+    
+    $ pip3 --version
+
+Copy
+
+    
+    
+    $ pip3 install keepercommander
+
+Copy
+
+    
+    
+    $ pip3 install --upgrade keepercommander
+
+Copy
+
+    
+    
+    $ keeper shell
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+
+# CLI Installation on Linux
+
+How to install the Keeper Commander CLI on Linux
+
+[PreviousCLI Installation on macOS](/en/keeperpam/commander-cli/commander-
+installation-setup/installation-on-mac)[NextPython Developer
+Setup](/en/keeperpam/commander-cli/commander-installation-setup/developer-
+mode)
+
+  * Supported Operating systems:
+  * Video Overview
+  * Pre-requisites
+  * Instructions
+
+Keeper Commander – Installing and Logging In
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FijsE6IrCJmLZkurhwQKo%252Fkeeper-
+commander_BBNOqSVfEO.png%3Falt%3Dmedia%26token%3D9f80084e-6f49-46be-a52c-0bbb0b7737d4&width=768&dpr=4&quality=100&sign=8c8fadbc&sv=2)
 

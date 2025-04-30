@@ -12,53 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-
-manager/connections/session-protocols/rbi-connections?fallback=true)[Keeper
-Connection Manager](https://docs.keeper.io/en/keeper-connection-
-manager/privileged-access-manager/connections/session-protocols/rbi-
-connections?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/privileged-access-manager/connections/session-protocols/rbi-
-connections?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/privileged-access-manager/connections/session-protocols/rbi-
-connections?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/connections/session-protocols/rbi-connections?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-
-manager/connections/session-protocols/rbi-connections?fallback=true)[SSO
-Connect Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/connections/session-protocols/rbi-connections?fallback=true)[KeeperPAM
-and Secrets Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/connections/session-protocols/rbi-connections?fallback=true)[SSO
-Connect On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-
-access-manager/connections/session-protocols/rbi-
-connections?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/privileged-access-manager/connections/session-protocols/rbi-
-connections?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-
-manager/connections/session-protocols/rbi-connections?fallback=true)[Keeper
-Connection Manager](https://docs.keeper.io/en/keeper-connection-
-manager/privileged-access-manager/connections/session-protocols/rbi-
-connections?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/privileged-access-manager/connections/session-protocols/rbi-
-connections?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/privileged-access-manager/connections/session-protocols/rbi-
-connections?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/connections/session-protocols/rbi-connections?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-
-manager/connections/session-protocols/rbi-connections?fallback=true)[SSO
-Connect Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/connections/session-protocols/rbi-connections?fallback=true)[KeeperPAM
-and Secrets Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/connections/session-protocols/rbi-connections?fallback=true)[SSO
-Connect On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-
-access-manager/connections/session-protocols/rbi-
-connections?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/privileged-access-manager/connections/session-protocols/rbi-
-connections?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -432,6 +386,36 @@ connections?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview 
@@ -454,6 +438,15 @@ PDF](/en/keeperpam/~gitbook/pdf?page=Z3Wn0ZslIoLyRuK4Uy2d&only=yes&limit=100)
 
 Keeper Connections - Remote Browser Isolation (http/https) Protocol
 
+[PreviousRDP Connections](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/rdp-connections)[NextMySQL
+Connections](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/mysql-connections)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -469,8 +462,7 @@ through the Keeper Gateway, and delivered directly to target applications.
 Prerequisites
 
 Prior to following this guide, familiarize yourself with the prerequisites on
-the Connection's [Getting Started page](/en/keeperpam/privileged-access-
-manager/connections/getting-started).
+the Connection's .
 
 The following PAM records are needed in order to successfully setup this
 protocol:
@@ -560,48 +552,8 @@ Browser Autofill
 
 Session Recordings - RBI Protocol
 
-For this protocol, graphical data, including timing information, is recorded.
-For more details on the recordings and how to access them, see the Session
-Recording & Playback docs.
-
-[PreviousRDP Connections](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/rdp-connections)[NextMySQL
-Connections](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/mysql-connections)
-
-Last updated 3 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+[Getting Started page](/en/keeperpam/privileged-access-
+manager/connections/getting-started)
 
 Field
 
@@ -624,4 +576,8 @@ RBI Session Recordings
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLo99ArUgaunD381ym1VQ%252FScreenshot%25202025-01-21%2520at%252012.14.54%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D04024b72-bcf7-4da1-8c33-ca47ca04bd05&width=768&dpr=4&quality=100&sign=11804dd8&sv=2)
+
+For this protocol, graphical data, including timing information, is recorded.
+For more details on the recordings and how to access them, see the Session
+Recording & Playback docs.
 

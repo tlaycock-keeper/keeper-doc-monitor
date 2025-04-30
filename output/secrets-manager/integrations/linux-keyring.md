@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/linux-
-keyring?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/linux-keyring?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/integrations/linux-keyring?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/integrations/linux-keyring?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/linux-keyring?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-manager/integrations/linux-
-keyring?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/secrets-manager/integrations/linux-
-keyring?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/integrations/linux-keyring?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/linux-keyring?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/integrations/linux-keyring?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/linux-
-keyring?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/linux-keyring?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/integrations/linux-keyring?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/integrations/linux-keyring?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/linux-keyring?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-manager/integrations/linux-
-keyring?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/secrets-manager/integrations/linux-
-keyring?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/integrations/linux-keyring?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/linux-keyring?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/integrations/linux-keyring?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,6 +386,36 @@ manager/integrations/linux-keyring?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -464,36 +452,6 @@ Last updated 5 months ago
 
 Was this helpful?
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 Overview
@@ -501,39 +459,19 @@ Overview
 Keyring is a Linux security feature that stores sensitive information, such as
 passwords and secrets, and allows applications to securely access it.
 
-Keeper provides a utility, the Linux Keyring Utility, that interacts with the
-native Linux APIs to store and retrieve secrets from the Keyring using the
-[Secret Service
-API](https://www.gnu.org/software/emacs/manual/html_node/auth/Secret-Service-
-API.html). This utility can be used by any integration, plugin, or code base
-to store and retrieve credentials, secrets, and passwords in any Linux Keyring
-simply and natively.
-
 The code base for the Linux Keyring Utility can be found here:
 
 The binary needed to use the above utility can be found here:
 
 To use the Linux Keyring Utility, you can either
 
-  * deploy the pre-built binary from the [releases page](https://github.com/Keeper-Security/linux-keyring-utility/releases)
-
-  * or import it into your code base. 
+  *   * or import it into your code base. 
 
 Both use cases are covered below.
 
 ##
 
 Linux Keyring Utility
-
-The Linux Keyring Utility gets and sets _secrets_ in a Linux
-[Keyring](http://man7.org/linux/man-pages/man7/keyrings.7.html) using the
-[D-Bus](https://dbus.freedesktop.org/doc/dbus-tutorial.html) [Secret
-Service](https://specifications.freedesktop.org/secret-service/latest/).
-
-It has been tested with [GNOME
-Keyring](https://wiki.gnome.org/Projects/GnomeKeyring/) and [KDE Wallet
-Manager](https://userbase.kde.org/KDE_Wallet_Manager). It _should_ work with
-any implementation of the D-Bus Secrets Service.
 
 ###
 
@@ -685,13 +623,6 @@ Copy
 
 **No matching secret**
 
-A secret may not be returned even though a secret with the same label exists.
-If the secret was not created with lkru, it may not have the same
-[attributes](https://github.com/Keeper-Security/linux-keyring-
-utility/blob/main/Keeper-Security/linux-keyring-
-utility/blob/main/pkg/dbus_secrets/dbus_secrets.go#L41). Namely 'Agent',
-'Application', and 'Id'.
-
 Copy
 
     
@@ -723,6 +654,45 @@ Copy
     
     
     Unable to get the default keyring: Unable to connect to the D-Bus Session Bus: exec: "dbus-launch": executable file not found in $PATH
+
+Keeper provides a utility, the Linux Keyring Utility, that interacts with the
+native Linux APIs to store and retrieve secrets from the Keyring using the .
+This utility can be used by any integration, plugin, or code base to store and
+retrieve credentials, secrets, and passwords in any Linux Keyring simply and
+natively.
+
+deploy the pre-built binary from the
+
+The Linux Keyring Utility gets and sets _secrets_ in a Linux  using the  .
+
+It has been tested with  and . It _should_ work with any implementation of the
+D-Bus Secrets Service.
+
+A secret may not be returned even though a secret with the same label exists.
+If the secret was not created with lkru, it may not have the same . Namely
+'Agent', 'Application', and 'Id'.
+
+[Secret Service
+API](https://www.gnu.org/software/emacs/manual/html_node/auth/Secret-Service-
+API.html)
+
+[releases page](https://github.com/Keeper-Security/linux-keyring-
+utility/releases)
+
+[Keyring](http://man7.org/linux/man-pages/man7/keyrings.7.html)
+
+[D-Bus](https://dbus.freedesktop.org/doc/dbus-tutorial.html)
+
+[Secret Service](https://specifications.freedesktop.org/secret-
+service/latest/)
+
+[GNOME Keyring](https://wiki.gnome.org/Projects/GnomeKeyring/)
+
+[KDE Wallet Manager](https://userbase.kde.org/KDE_Wallet_Manager)
+
+[attributes](https://github.com/Keeper-Security/linux-keyring-
+utility/blob/main/Keeper-Security/linux-keyring-
+utility/blob/main/pkg/dbus_secrets/dbus_secrets.go#L41)
 
 [![Logo](https://github.com/fluidicon.png)GitHub - Keeper-Security/linux-
 keyring-utility: A utility for natively interacting with the Linux

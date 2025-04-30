@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/ssh-
-agent/integration-with-git?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/ssh-agent/integration-with-git?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-manager/ssh-
-agent/integration-with-git?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-manager/ssh-
-agent/integration-with-git?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/ssh-agent/integration-with-git?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/ssh-
-agent/integration-with-git?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/ssh-agent/integration-with-git?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/ssh-agent/integration-with-git?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-manager/ssh-
-agent/integration-with-git?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/ssh-
-agent/integration-with-git?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/ssh-agent/integration-with-git?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-manager/ssh-
-agent/integration-with-git?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-manager/ssh-
-agent/integration-with-git?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/ssh-agent/integration-with-git?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/ssh-
-agent/integration-with-git?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/ssh-agent/integration-with-git?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/ssh-agent/integration-with-git?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-manager/ssh-
-agent/integration-with-git?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,32 +386,6 @@ agent/integration-with-git?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Prerequisites
-  * Features
-  * GitHub Authentication
-  * Signing Commits
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=e89A5oy3ecBtC0tegIz1&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [SSH Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
-
-# Integration with Git
-
-Keeper SSH Agent integration for Git Authentication and Commit Signing
-
-[PreviousSSH Agent](/en/keeperpam/privileged-access-manager/ssh-
-agent)[NextDiscovery](/en/keeperpam/privileged-access-manager/discovery)
-
-Last updated 10 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -484,6 +416,32 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Prerequisites
+  * Features
+  * GitHub Authentication
+  * Signing Commits
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=e89A5oy3ecBtC0tegIz1&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [SSH Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
+
+# Integration with Git
+
+Keeper SSH Agent integration for Git Authentication and Commit Signing
+
+[PreviousSSH Agent](/en/keeperpam/privileged-access-manager/ssh-
+agent)[NextDiscovery](/en/keeperpam/privileged-access-manager/discovery)
+
+Last updated 11 days ago
+
+Was this helpful?
+
 Keeper's SSH Agent integrates seamlessly with Git for authentication and
 commit signing, ensuring private keys are securely stored in the Keeper Vault
 instead of being saved locally on the device. This approach enhances security
@@ -498,9 +456,7 @@ further strengthening your security posture.
 
 Prerequisites
 
-  * Ensure that [SSH Agent is active](/en/keeperpam/privileged-access-manager/ssh-agent) on the Keeper Desktop
-
-  * 
+  *   * 
 
 ##
 
@@ -810,7 +766,11 @@ Copy
 
 Setup is complete.
 
+Ensure that  on the Keeper Desktop
+
 is performed
+
+[SSH Agent is active](/en/keeperpam/privileged-access-manager/ssh-agent)
 
 [GitHub Authentication](/en/keeperpam/privileged-access-manager/ssh-
 agent/integration-with-git#github-authentication)

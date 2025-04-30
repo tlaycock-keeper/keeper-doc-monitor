@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-
-manager/integrations/teamcity?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/teamcity?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/integrations/teamcity?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/integrations/teamcity?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/teamcity?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-
-manager/integrations/teamcity?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/integrations/teamcity?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/integrations/teamcity?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/teamcity?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/integrations/teamcity?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-
-manager/integrations/teamcity?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/teamcity?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/integrations/teamcity?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/integrations/teamcity?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/teamcity?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-
-manager/integrations/teamcity?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/integrations/teamcity?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/integrations/teamcity?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/teamcity?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/integrations/teamcity?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -521,15 +479,11 @@ Features
 
 Prerequisites
 
-  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
-
-    * Secrets Manager add-on enabled for your Keeper subscription
+  *     * Secrets Manager add-on enabled for your Keeper subscription
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
-
-    * The TeamCity plugin accepts Base 64 format configurations
+  *     *   *     * The TeamCity plugin accepts Base 64 format configurations
 
 ##
 
@@ -551,15 +505,13 @@ Installing Plugin from JetBrains Plugins Repository
 
 Installing Plugin via Web UI
 
-  * Download the latest version of TeamCity KSM plugin ZIP file from [here](https://github.com/Keeper-Security/secrets-manager-teamcity/releases/latest).
-
-  * Go to the **Administration | Plugins** page and upload the plugin ZIP archive from your local machine using the corresponding link.
+  *   * Go to the **Administration | Plugins** page and upload the plugin ZIP archive from your local machine using the corresponding link.
 
 ###
 
 Installing Plugin Manually
 
-  * Copy the ZIP plugin package into the`<`[`TeamCity Data Directory`](https://www.jetbrains.com/help/teamcity/teamcity-data-directory.html)`>/plugins` directory. If you have an earlier version of the plugin in the directory _(though the plugin package can be named differently)_ , remove it.
+  * 
 
 ###
 
@@ -579,7 +531,7 @@ Uninstalling Plugin via Web UI
 
 Uninstalling Plugin Manually﻿
 
-  * Remove the plugin package from the `<`[`TeamCity Data Directory`](https://www.jetbrains.com/help/teamcity/teamcity-data-directory.html)`>/plugins` directory and restart the TeamCity server.
+  * 
 
 ##
 
@@ -612,7 +564,7 @@ To consume Keeper vault secrets from your TeamCity server, you will need to:
 
   * Create a secret in Keeper vault and share it to the corresponding KSM Application
 
-  * Configure a TeamCity parameter that resolves the secret using [Secrets Manager Notation URIs](https://docs.keeper.io/secrets-manager/secrets-manager/about/keeper-notation)
+  * 
 
 ###
 
@@ -663,9 +615,7 @@ step.
 
   6. Click **Add build step**.
 
-  7. Choose the [Command Line](https://www.jetbrains.com/help/teamcity/command-line.html) runner type.
-
-  8. In the **Custom script** field, enter the following command: `echo UserName %env.username%`
+  7.   8. In the **Custom script** field, enter the following command: `echo UserName %env.username%`
 
 For a build, this command will be resolved as follows _(note that actual value
 is masked in logs but used in actual commands):_
@@ -687,20 +637,56 @@ variables etc. _Check the examples below._
 
   * Environment variable `env.Secret` \- `keeper://MyRecord1/custom_field/Secret1`
 
+Keeper Secrets Manager access (See the  for more details)
+
 A Keeper  with secrets shared to it
 
 See the  for instructions on creating an Application
 
+An initialized Keeper
+
+Download the latest version of TeamCity KSM plugin ZIP file from .
+
+Copy the ZIP plugin package into the`<``>/plugins` directory. If you have an
+earlier version of the plugin in the directory _(though the plugin package can
+be named differently)_ , remove it.
+
+Remove the plugin package from the `<``>/plugins` directory and restart the
+TeamCity server.
+
 Specify the token - paste a valid KSM config _(see_ _)_.
+
+Configure a TeamCity parameter that resolves the secret using
+
+Choose the  runner type.
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+[Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration)
+
+[here](https://github.com/Keeper-Security/secrets-manager-
+teamcity/releases/latest)
+
+[`TeamCity Data Directory`](https://www.jetbrains.com/help/teamcity/teamcity-
+data-directory.html)
+
+[`TeamCity Data Directory`](https://www.jetbrains.com/help/teamcity/teamcity-
+data-directory.html)
+
+[Secrets Manager Notation URIs](https://docs.keeper.io/secrets-
+manager/secrets-manager/about/keeper-notation)
+
+[Command Line](https://www.jetbrains.com/help/teamcity/command-line.html)
 
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
-[_Prerequisites_](/en/keeperpam/secrets-
-manager/integrations/teamcity#prerequisites)
-
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
+
+[_Prerequisites_](/en/keeperpam/secrets-
+manager/integrations/teamcity#prerequisites)
 
 Adding connection of type Keeper Vault
 

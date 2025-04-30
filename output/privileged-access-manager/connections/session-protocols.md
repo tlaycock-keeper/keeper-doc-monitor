@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-
-manager/connections/session-protocols?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/connections/session-protocols?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/connections/session-protocols?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/connections/session-protocols?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/connections/session-protocols?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-
-manager/connections/session-protocols?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/connections/session-protocols?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/connections/session-protocols?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/connections/session-protocols?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/connections/session-protocols?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-
-manager/connections/session-protocols?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/connections/session-protocols?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/connections/session-protocols?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/connections/session-protocols?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/connections/session-protocols?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-
-manager/connections/session-protocols?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/connections/session-protocols?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/connections/session-protocols?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/connections/session-protocols?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/connections/session-protocols?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,30 +386,6 @@ manager/connections/session-protocols?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=RdRqPGmh7YN6N1Xi8Hcz&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-
-# Session Protocols
-
-Details on the available connection protocols in KeeperPAM for interactive
-privileged sessions
-
-[PreviousGetting Started](/en/keeperpam/privileged-access-
-manager/connections/getting-started)[NextSSH
-Connections](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/ssh-connections)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -481,6 +415,30 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=RdRqPGmh7YN6N1Xi8Hcz&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+
+# Session Protocols
+
+Details on the available connection protocols in KeeperPAM for interactive
+privileged sessions
+
+[PreviousGetting Started](/en/keeperpam/privileged-access-
+manager/connections/getting-started)[NextSSH
+Connections](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/ssh-connections)
+
+Last updated 2 months ago
+
+Was this helpful?
 
 ##
 

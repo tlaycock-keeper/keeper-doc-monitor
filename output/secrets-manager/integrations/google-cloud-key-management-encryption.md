@@ -12,55 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/google-
-cloud-key-management-encryption?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/google-cloud-key-management-
-encryption?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/secrets-manager/integrations/google-cloud-key-management-
-encryption?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/secrets-manager/integrations/google-cloud-key-management-
-encryption?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/google-cloud-key-management-encryption?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-
-manager/integrations/google-cloud-key-management-encryption?fallback=true)[SSO
-Connect Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/integrations/google-cloud-key-management-
-encryption?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/integrations/google-cloud-key-management-encryption?fallback=true)[SSO
-Connect On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/google-cloud-key-management-
-encryption?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/secrets-manager/integrations/google-cloud-key-management-
-encryption?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/google-
-cloud-key-management-encryption?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/google-cloud-key-management-
-encryption?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/secrets-manager/integrations/google-cloud-key-management-
-encryption?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/secrets-manager/integrations/google-cloud-key-management-
-encryption?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/google-cloud-key-management-encryption?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-
-manager/integrations/google-cloud-key-management-encryption?fallback=true)[SSO
-Connect Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/integrations/google-cloud-key-management-
-encryption?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/integrations/google-cloud-key-management-encryption?fallback=true)[SSO
-Connect On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/google-cloud-key-management-
-encryption?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/secrets-manager/integrations/google-cloud-key-management-
-encryption?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -434,6 +386,36 @@ encryption?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Features
@@ -459,10 +441,13 @@ PDF](/en/keeperpam/~gitbook/pdf?page=ojDLP9XDQastxnsIT1I5&only=yes&limit=100)
 
 Protect Secrets Manager connection details with Google Cloud Key Management
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6mxHlHnrBXD2jVhRoqvF%252Fksm-
-Google%2520Cloud.jpg%3Falt%3Dmedia%26token%3D620bd9e5-f05a-40e4-aeaa-712da3223699&width=768&dpr=4&quality=100&sign=c8948f5d&sv=2)
+[PreviousGoogle Cloud Secret Manager Sync](/en/keeperpam/secrets-
+manager/integrations/gcp-secret-manager)[NextHashicorp
+Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
+
+Last updated 13 days ago
+
+Was this helpful?
 
 Keeper Secrets Manager integrates with Google Cloud Key Management in order to
 provide encryption for Keeper Secrets Manager configuration files. With this
@@ -497,29 +482,17 @@ JavaJavaScriptPython.NetGoLang
 
   * Google Cloud Key Management needs `ENCRYPT` and `DECRYPT` permissions.
 
-  * Supports the [JavaScript Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-sdk)
-
-  * Requires the `@google-cloud/kms`**** package from GCP SDK.
+  *   * Requires the `@google-cloud/kms`**** package from GCP SDK.
 
   * GCP CKM Key needs `ENCRYPT` and `DECRYPT` permissions.
 
-  * Supports the [Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk)
-
-  * Requires `google-cloud-kms` package
+  *   * Requires `google-cloud-kms` package
 
   * GCP CKM Key needs `ENCRYPT` and `DECRYPT` permissions.
 
-  * Supports the [.Net Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/.net-sdk)
+  *   *   * GCP CKM Key needs `ENCRYPT` and `DECRYPT` permissions.
 
-  * Requires [Google.Apis.CloudKMS.v1](https://www.nuget.org/packages/Google.Apis.CloudKMS.v1)
-
-  * GCP CKM Key needs `ENCRYPT` and `DECRYPT` permissions.
-
-  * Supports the [GoLang Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/golang-sdk)
-
-  * Requires the [kms/apiv1](https://pkg.go.dev/cloud.google.com/go/kms/apiv1) , [kmspb](https://pkg.go.dev/cloud.google.com/go/kms/apiv1/kmspb) , [core](https://pkg.go.dev/github.com/keeper-security/secrets-manager-go/core), [kms](https://pkg.go.dev/cloud.google.com/go/kms) package from GCP SDK.
-
-  * GCP CKM Key needs `ENCRYPT` and `DECRYPT` permissions.
+  *   *   * GCP CKM Key needs `ENCRYPT` and `DECRYPT` permissions.
 
 ##
 
@@ -677,9 +650,6 @@ Service Account key in JSON format. This credential file will serve as the
 authentication mechanism for interacting with GCP services programmatically.
 
 See the Google documentation for more information on generating keys:
-
-<https://cloud.google.com/iam/docs/keys-create-
-delete>[](https://cloud.google.com/iam/docs/keys-create-delete)
 
 ###
 
@@ -845,10 +815,6 @@ The `NewGCPKeyVaultStorage` requires the following parameters to encrypt the
 KSM configuration using GCP Cloud Key Management:
 
 `ksmConfigFileName` : The file name of KSM configuration.
-
-`keyResourceName` : Provide[`
-_keyResourceName_`](https://cloud.google.com/kms/docs/resource-
-hierarchy#retrieve_resource_id) of Google Cloud Key Management
 
 `credentialFileWithPath` : Provide file path with name of GCP credential file.
 
@@ -1017,46 +983,58 @@ Copy
     	fmt.Printf("Error while decrypting config: %v", err)
     }  
 
-You're ready to use the KSM integration 👍
+Supports the
 
-Check out the [KSM SDKs documentation](/en/keeperpam/secrets-
-manager/developer-sdk-library) for more examples and functionality
+Supports the
 
-[PreviousGoogle Cloud Secret Manager Sync](/en/keeperpam/secrets-
-manager/integrations/gcp-secret-manager)[NextHashicorp
-Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
+Supports the
 
-Last updated 12 days ago
+Requires
 
-Was this helpful?
+Supports the
 
-#### Company
+Requires the  ,  , ,  package from GCP SDK.
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+`keyResourceName` : Provide of Google Cloud Key Management
 
-#### Support
+You're ready to use the KSM integration
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+Check out the  for more examples and functionality
 
-#### Solutions
+👍
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+[JavaScript Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/javascript-sdk)
 
-#### Pricing
+[Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/python-sdk)
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+[.Net Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/.net-sdk)
 
-© 2025 Keeper Security, Inc.
+[Google.Apis.CloudKMS.v1](https://www.nuget.org/packages/Google.Apis.CloudKMS.v1)
+
+[GoLang Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/golang-sdk)
+
+[kms/apiv1](https://pkg.go.dev/cloud.google.com/go/kms/apiv1)
+
+[kmspb](https://pkg.go.dev/cloud.google.com/go/kms/apiv1/kmspb)
+
+[core](https://pkg.go.dev/github.com/keeper-security/secrets-manager-go/core)
+
+[kms](https://pkg.go.dev/cloud.google.com/go/kms)
+
+<https://cloud.google.com/iam/docs/keys-create-
+delete>[](https://cloud.google.com/iam/docs/keys-create-delete)
+
+[`_keyResourceName_`](https://cloud.google.com/kms/docs/resource-
+hierarchy#retrieve_resource_id)
+
+[KSM SDKs documentation](/en/keeperpam/secrets-manager/developer-sdk-library)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6mxHlHnrBXD2jVhRoqvF%252Fksm-
+Google%2520Cloud.jpg%3Falt%3Dmedia%26token%3D620bd9e5-f05a-40e4-aeaa-712da3223699&width=768&dpr=4&quality=100&sign=c8948f5d&sv=2)
 

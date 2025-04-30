@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/commander-cli/command-
-reference/plugins/unix-passwd-plugin?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/command-reference/plugins/unix-passwd-plugin?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/command-
-reference/plugins/unix-passwd-plugin?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/command-
-reference/plugins/unix-passwd-plugin?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/command-
-reference/plugins/unix-passwd-plugin?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/commander-cli/command-
-reference/plugins/unix-passwd-plugin?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/command-
-reference/plugins/unix-passwd-plugin?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/command-
-reference/plugins/unix-passwd-plugin?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/command-
-reference/plugins/unix-passwd-plugin?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/command-
-reference/plugins/unix-passwd-plugin?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/commander-cli/command-
-reference/plugins/unix-passwd-plugin?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/command-reference/plugins/unix-passwd-plugin?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/command-
-reference/plugins/unix-passwd-plugin?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/command-
-reference/plugins/unix-passwd-plugin?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/command-
-reference/plugins/unix-passwd-plugin?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/commander-cli/command-
-reference/plugins/unix-passwd-plugin?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/command-
-reference/plugins/unix-passwd-plugin?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/command-
-reference/plugins/unix-passwd-plugin?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/command-
-reference/plugins/unix-passwd-plugin?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/command-
-reference/plugins/unix-passwd-plugin?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -449,118 +407,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-Mf4nZxS1QdV2hHg4V51&only=yes&limit=100)
 
 Rotate Unix passwords with Commander
 
-Keeper has also launched a zero-trust Password Rotation feature with
-KeeperPAM. This new capability is recommended for most password rotation use
-cases. The Documentation is linked below:
-
-  * [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-rotation)
-
-  * Commander [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
-
-This plugin allows rotating a local user's password using the Unix `passwd`
-command.
-
-##
-
-Prerequisites
-
-####
-
-Install pexpect
-
-Copy
-
-    
-    
-    pip3 install pexpect
-
-##
-
-Prepare a Record for Rotation
-
-###
-
-Create a Record for Rotation
-
-Rotation supports legacy and typed records. If using typed record, a 'Login'
-type field is required. Additional fields may be added depending on the
-rotation type as well. See the instructions below.
-
-See the [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-
-commander-cli#typed-vs-untyped-records-v3-vs-v2)section for more information
-on legacy vs typed records
-
-###
-
-Set the Login Name
-
-**Populate the 'Login' field of the Keeper record with the login to use with
-this rotation.**
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FH1Vr6GKR8x1XjZHpNZyK%252Fimage.png%3Falt%3Dmedia%26token%3D1e71b489-5ae6-4071-9e67-17568991b47e&width=768&dpr=4&quality=100&sign=692132c4&sv=2)
-
-####
-
-Additional Rotation Settings
-
-The following values can customize rotation parameters. Add these options to a
-record as text fields and set the label to correspond to the parameter as
-shown in the table.
-
-Name
-
-Value
-
-Comment
-
-cmdr:plugin
-
-unixpasswd
-
-(Optional) Tells Commander to use Unix password rotation. This should be
-either set to the record, or supplied to the rotation command
-
-cmdr:rules
-
-# uppercase, # lowercase, # numeric, # special'
-
-(e.g. 4,6,3,8)
-
-(Optional) Password generation rules
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf4odhJysOvWDa_xLae%252Fimage.png%3Falt%3Dmedia%26token%3D3dab2cc1-33fc-4a0c-9540-8fe0f4c09398&width=768&dpr=4&quality=100&sign=9861819&sv=2)
-
-Keeper Record setup for Unix passwd rotation
-
-##
-
-Rotate
-
-To rotate Unix passwords, use the `rotate` command in Commander. Pass the
-command a record title or UID (or use `--match` with a regular expression to
-rotate several records at once)
-
-Copy
-
-    
-    
-    rotate "My Azure Credentials" --plugin unix
-
-The plugin can be supplied to the command as shown here, or added to a record
-field (see options above). Adding the plugin type to the record makes it
-possible to rotate several records at once with different plugins.
-
-####
-
-Output
-
-After rotation is completed, the new password will be stored in the `Password`
-field of the record
-
 [PreviousSSH Plugin](/en/keeperpam/commander-cli/command-
 reference/plugins/ssh-plugin)[NextWindows Plugin](/en/keeperpam/commander-
 cli/command-reference/plugins/windows-plugin)
@@ -598,4 +444,121 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+Keeper has also launched a zero-trust Password Rotation feature with
+KeeperPAM. This new capability is recommended for most password rotation use
+cases. The Documentation is linked below:
+
+  *   * Commander 
+
+This plugin allows rotating a local user's password using the Unix `passwd`
+command.
+
+##
+
+Prerequisites
+
+####
+
+Install pexpect
+
+Copy
+
+    
+    
+    pip3 install pexpect
+
+##
+
+Prepare a Record for Rotation
+
+###
+
+Create a Record for Rotation
+
+Rotation supports legacy and typed records. If using typed record, a 'Login'
+type field is required. Additional fields may be added depending on the
+rotation type as well. See the instructions below.
+
+See the section for more information on legacy vs typed records
+
+###
+
+Set the Login Name
+
+**Populate the 'Login' field of the Keeper record with the login to use with
+this rotation.**
+
+####
+
+Additional Rotation Settings
+
+The following values can customize rotation parameters. Add these options to a
+record as text fields and set the label to correspond to the parameter as
+shown in the table.
+
+Name
+
+Value
+
+Comment
+
+cmdr:plugin
+
+unixpasswd
+
+(Optional) Tells Commander to use Unix password rotation. This should be
+either set to the record, or supplied to the rotation command
+
+cmdr:rules
+
+# uppercase, # lowercase, # numeric, # special'
+
+(e.g. 4,6,3,8)
+
+(Optional) Password generation rules
+
+##
+
+Rotate
+
+To rotate Unix passwords, use the `rotate` command in Commander. Pass the
+command a record title or UID (or use `--match` with a regular expression to
+rotate several records at once)
+
+Copy
+
+    
+    
+    rotate "My Azure Credentials" --plugin unix
+
+The plugin can be supplied to the command as shown here, or added to a record
+field (see options above). Adding the plugin type to the record makes it
+possible to rotate several records at once with different plugins.
+
+####
+
+Output
+
+After rotation is completed, the new password will be stored in the `Password`
+field of the record
+
+[Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
+rotation)
+
+[KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
+commands)
+
+[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
+cli#typed-vs-untyped-records-v3-vs-v2)
+
+Keeper Record setup for Unix passwd rotation
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FH1Vr6GKR8x1XjZHpNZyK%252Fimage.png%3Falt%3Dmedia%26token%3D1e71b489-5ae6-4071-9e67-17568991b47e&width=768&dpr=4&quality=100&sign=692132c4&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf4odhJysOvWDa_xLae%252Fimage.png%3Falt%3Dmedia%26token%3D3dab2cc1-33fc-4a0c-9540-8fe0f4c09398&width=768&dpr=4&quality=100&sign=9861819&sv=2)
 

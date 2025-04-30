@@ -12,47 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/quick-start-
-sandbox?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/quick-start-sandbox?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-manager/quick-
-start-sandbox?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/privileged-access-manager/quick-start-sandbox?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/quick-start-sandbox?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/quick-
-start-sandbox?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/privileged-access-manager/quick-start-
-sandbox?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-manager/quick-
-start-sandbox?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/quick-start-sandbox?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/quick-start-sandbox?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/quick-start-
-sandbox?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/quick-start-sandbox?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-manager/quick-
-start-sandbox?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/privileged-access-manager/quick-start-sandbox?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/quick-start-sandbox?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/quick-
-start-sandbox?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/privileged-access-manager/quick-start-
-sandbox?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-manager/quick-
-start-sandbox?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/quick-start-sandbox?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/quick-start-sandbox?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -458,10 +418,25 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Quick Start Wizard
+  * Records Created
+  * Quick Start Video
+  * Screenshots
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=R2Buql2ywlhAxad9Ru4u&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Quick Start: Sandbox
+
+Quickly and easily get started with a pre-configured PAM setup in your vault
+
+[PreviousSetup Steps](/en/keeperpam/privileged-access-manager/setup-
+steps)[NextGetting Started](/en/keeperpam/privileged-access-manager/getting-
+started)
 
 Last updated 2 months ago
 
@@ -484,6 +459,20 @@ minutes.
 Activate KeeperPAM
 
   * Login to the Admin Console in your region:
+
+Region
+
+URL
+
+**US**
+
+**EU**
+
+**AU**
+
+**JP**
+
+**GOV**
 
   * Under **Admin** > **Roles** , create a new role for PAM or modify an existing role
 
@@ -573,43 +562,14 @@ Screenshots
 
 Below are screenshots of the Quick Start Wizard from start to finish.
 
-Region
-
-URL
-
 Login to the . If the policies are active, you'll see a **Secrets Manager**
 tab on the left side.
 
 If necessary, Install Docker per the .
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# Quick Start: Sandbox
-
-Quickly and easily get started with a pre-configured PAM setup in your vault
-
-[PreviousSetup Steps](/en/keeperpam/privileged-access-manager/setup-
-steps)[NextGetting Started](/en/keeperpam/privileged-access-manager/getting-
-started)
-
-  * Quick Start Wizard
-  * Records Created
-  * Quick Start Video
-  * Screenshots
-
 [Keeper Vault](https://keepersecurity.com/vault)
 
 [Docker installation instructions](https://docs.docker.com/engine/install/)
-
-**US**
-
-**EU**
-
-**AU**
-
-**JP**
-
-**GOV**
 
 <https://keepersecurity.com/console>[](https://keepersecurity.com/console)
 

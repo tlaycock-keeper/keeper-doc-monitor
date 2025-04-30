@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/entrust-
-hsm?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/entrust-hsm?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/integrations/entrust-hsm?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/integrations/entrust-hsm?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/entrust-hsm?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-
-manager/integrations/entrust-hsm?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/integrations/entrust-hsm?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/integrations/entrust-hsm?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/entrust-hsm?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/integrations/entrust-hsm?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/entrust-
-hsm?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/entrust-hsm?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/integrations/entrust-hsm?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/integrations/entrust-hsm?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/entrust-hsm?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-
-manager/integrations/entrust-hsm?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/integrations/entrust-hsm?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/integrations/entrust-hsm?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/entrust-hsm?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/integrations/entrust-hsm?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,37 +386,6 @@ manager/integrations/entrust-hsm?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Features
-  * Prerequisites
-  * Setup
-  * 1\. Create and Configure Virtualenv
-  * 2\. Install KSM Storage and nfpython Modules 
-  * 3\. Add Entrust HSM Storage to Your Code
-  * Using Secrets Manager with Entrust HSM
-  * Create an Encryption Key for Testing
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=CjeGp1bCdKjFokibDmg0&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Entrust HSM Encryption
-
-Protect Secrets Manager connection details locally with Entrust HSM
-
-[PreviousDocker Writer Image](/en/keeperpam/secrets-
-manager/integrations/docker-writer-image)[NextGit - Sign Commits with
-SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
-
-Last updated 14 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -489,6 +416,37 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Features
+  * Prerequisites
+  * Setup
+  * 1\. Create and Configure Virtualenv
+  * 2\. Install KSM Storage and nfpython Modules 
+  * 3\. Add Entrust HSM Storage to Your Code
+  * Using Secrets Manager with Entrust HSM
+  * Create an Encryption Key for Testing
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=CjeGp1bCdKjFokibDmg0&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Entrust HSM Encryption
+
+Protect Secrets Manager connection details locally with Entrust HSM
+
+[PreviousDocker Writer Image](/en/keeperpam/secrets-
+manager/integrations/docker-writer-image)[NextGit - Sign Commits with
+SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
+
+Last updated 15 days ago
+
+Was this helpful?
+
 Keeper Secrets Manager integrates with Entrust HSM in order to provide
 encryption for Keeper Secrets Manager configuration files. With this
 integration, you can protect connection details on your machine while taking
@@ -508,9 +466,7 @@ Features
 
 Prerequisites
 
-  * Supports the [Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk)
-
-  * The Python module needs to be built as a nShield native application
+  *   * The Python module needs to be built as a nShield native application
 
     * Using Python (v3.8.5) and nfpython modules from SDK ISO image from Entrust nShield software (Security World 12.80 or later)
 
@@ -614,9 +570,6 @@ Manager SDK functionality. Your code will need to be able to access the
 nShield HSM in order to manage the decryption of the configuration file when
 run.
 
-Check out the [KSM SDKs documentation](/en/keeperpam/secrets-
-manager/developer-sdk-library) for more examples and functionality
-
 ###
 
 Create an Encryption Key for Testing
@@ -641,6 +594,15 @@ Copy
     
     
     c:\Program Files\nShield\nfast\bin\generatekey -b simple protect=module type=AES size=256 ident=ksmkey
+
+Supports the
+
+Check out the  for more examples and functionality
+
+[Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/python-sdk)
+
+[KSM SDKs documentation](/en/keeperpam/secrets-manager/developer-sdk-library)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

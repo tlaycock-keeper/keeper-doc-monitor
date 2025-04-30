@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/aws-
-secrets-manager?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/aws-secrets-manager?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/integrations/aws-secrets-manager?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/integrations/aws-secrets-manager?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/aws-secrets-manager?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-manager/integrations/aws-
-secrets-manager?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/integrations/aws-secrets-manager?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-manager/integrations/aws-
-secrets-manager?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/aws-secrets-manager?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/integrations/aws-secrets-manager?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/aws-
-secrets-manager?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/aws-secrets-manager?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/integrations/aws-secrets-manager?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/integrations/aws-secrets-manager?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/aws-secrets-manager?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-manager/integrations/aws-
-secrets-manager?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/integrations/aws-secrets-manager?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-manager/integrations/aws-
-secrets-manager?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/aws-secrets-manager?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/integrations/aws-secrets-manager?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,6 +386,36 @@ manager/integrations/aws-secrets-manager?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * About
@@ -459,50 +447,19 @@ Sync secrets from the Keeper Vault with AWS Secrets Manager
 manager/integrations/aws-cli-credential-process)[NextAWS KMS
 Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
 
-Last updated 14 days ago
+Last updated 15 days ago
 
 Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
 
 ##
 
 About
 
-The Keeper Secrets Manager CLI tool [`sync` command](/en/keeperpam/secrets-
-manager/secrets-manager-command-line-interface/sync-command) allows you to
-push secrets from the Keeper Vault to a target **AWS Secrets Manager**
-account, overwriting the existing values in the target location. This allows
-the Keeper Vault to be the single source of truth for any services or scripts
-in AWS that utilize AWS Secrets Manager.
+The Keeper Secrets Manager CLI tool  allows you to push secrets from the
+Keeper Vault to a target **AWS Secrets Manager** account, overwriting the
+existing values in the target location. This allows the Keeper Vault to be the
+single source of truth for any services or scripts in AWS that utilize AWS
+Secrets Manager.
 
 ##
 
@@ -516,9 +473,7 @@ Features
 
 Prerequisites
 
-  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
-
-    * Secrets Manager add-on enabled for your Keeper subscription
+  *     * Secrets Manager add-on enabled for your Keeper subscription
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
@@ -542,26 +497,13 @@ following command:
 
 `ksm profile init <TOKEN>`
 
-For information on creating multiple profiles and other options, see the
-[profile documentation](/en/keeperpam/secrets-manager/secrets-manager-command-
-line-interface/profile-command)
-
 ###
 
 2\. Set AWS Permissions
 
-To use the KSM sync to AWS, AWS [Secrets
-Manager](https://console.aws.amazon.com/secretsmanager/) requires standard IAM
-security credentials with `SecretsManagerReadWrite` enabled for the entire
-vault or on individual keys to sync.
-
 `arn:aws:iam::aws:policy/SecretsManagerReadWrite`
 
 See the Amazon instructions for creating Access Keys:
-
-<https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-
-keys.html>[](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-
-keys.html)
 
 ###
 
@@ -634,9 +576,6 @@ specific record values. The notation follows the general format of:
 `UID/`[`field|custom_field]/fieldname `for example:
 `ae3d[...]d22e/field/password`
 
-See the [Keeper Notation documentation](/en/keeperpam/secrets-
-manager/about/keeper-notation) for more information
-
 Note that full record UIDs are not given in these examples
 
 Full Mapping Example: `--map "MySQL_PWD" "jd3[...]i-fd/field/password"`
@@ -699,19 +638,40 @@ Copy
     
     ksm sync --type aws --credentials [UID] -m [...] -m [...]
 
+Keeper Secrets Manager access (See the  for more details)
+
 A Keeper  with secrets shared to it
 
 See the  for instructions on creating an Application
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
+For information on creating multiple profiles and other options, see the
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
+To use the KSM sync to AWS, AWS  requires standard IAM security credentials
+with `SecretsManagerReadWrite` enabled for the entire vault or on individual
+keys to sync.
 
 AWS Credentials Record Type Definition
 
 Credentials fields as custom fields
+
+See the  for more information
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+[profile documentation](/en/keeperpam/secrets-manager/secrets-manager-command-
+line-interface/profile-command)
+
+[Secrets Manager](https://console.aws.amazon.com/secretsmanager/)
+
+<https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-
+keys.html>[](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-
+keys.html)
+
+[Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
+notation)
+
+[`sync` command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/sync-command)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -730,4 +690,10 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FoOaFzhmKu
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FS1qSqpXQ74npJ4ZMWwTP%252Fimage.png%3Falt%3Dmedia%26token%3D99c001ae-982d-4d5c-b267-bd95cd6c9ab7&width=768&dpr=4&quality=100&sign=a548ddb8&sv=2)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 

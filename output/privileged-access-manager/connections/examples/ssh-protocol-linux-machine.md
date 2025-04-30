@@ -12,53 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-
-manager/connections/examples/ssh-protocol-linux-machine?fallback=true)[Keeper
-Connection Manager](https://docs.keeper.io/en/keeper-connection-
-manager/privileged-access-manager/connections/examples/ssh-protocol-linux-
-machine?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/privileged-access-manager/connections/examples/ssh-protocol-linux-
-machine?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/privileged-access-manager/connections/examples/ssh-protocol-linux-
-machine?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/privileged-access-manager/connections/examples/ssh-protocol-linux-
-machine?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/connections/examples/ssh-protocol-linux-
-machine?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/privileged-access-manager/connections/examples/ssh-protocol-
-linux-machine?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/connections/examples/ssh-protocol-linux-machine?fallback=true)[SSO
-Connect On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-
-access-manager/connections/examples/ssh-protocol-linux-
-machine?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/privileged-access-manager/connections/examples/ssh-protocol-linux-
-machine?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-
-manager/connections/examples/ssh-protocol-linux-machine?fallback=true)[Keeper
-Connection Manager](https://docs.keeper.io/en/keeper-connection-
-manager/privileged-access-manager/connections/examples/ssh-protocol-linux-
-machine?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/privileged-access-manager/connections/examples/ssh-protocol-linux-
-machine?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/privileged-access-manager/connections/examples/ssh-protocol-linux-
-machine?fallback=true)[Enterprise Guide](https://docs.keeper.io/en/enterprise-
-guide/privileged-access-manager/connections/examples/ssh-protocol-linux-
-machine?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/connections/examples/ssh-protocol-linux-
-machine?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/privileged-access-manager/connections/examples/ssh-protocol-
-linux-machine?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/connections/examples/ssh-protocol-linux-machine?fallback=true)[SSO
-Connect On-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-
-access-manager/connections/examples/ssh-protocol-linux-
-machine?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/privileged-access-manager/connections/examples/ssh-protocol-linux-
-machine?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -457,6 +411,174 @@ PDF](/en/keeperpam/~gitbook/pdf?page=64cMa7TYPLuBlBTe33Ho&only=yes&limit=100)
 
 Establish a connection to a Linux Machine directly from your Vault
 
+##
+
+Overview
+
+In this guide, you will learn how to configure a Linux Machine on your **PAM
+Machine** and configure the **SSH protocol** to successfully launch a zero-
+trust connection to the Linux Machine — directly from your Keeper Vault.
+
+###
+
+Summary
+
+For this setup, you need to do the following:
+
+  1. [Enable the Connection Enforcement Policies](/en/keeperpam/privileged-access-manager/connections/examples/ssh-protocol-linux-machine#step-1-enable-connection-enforcement-policies)
+
+  2. [Install and Configure the Keeper Gateway](/en/keeperpam/privileged-access-manager/connections/examples/ssh-protocol-linux-machine#step-2-install-and-configure-the-keeper-gateway)
+
+  3. [Create and configure the PAM Configuration File](/en/keeperpam/privileged-access-manager/connections/examples/ssh-protocol-linux-machine#step-3-configuring-the-pam-configuration)
+
+  4. [Create the PAM Machine and PAM User record types](/en/keeperpam/privileged-access-manager/connections/examples/ssh-protocol-linux-machine#step-4-create-and-configure-pam-machine-and-pam-user-s-records)
+
+  5. [Configure PAM Settings and the SSH Connection Protocol](/en/keeperpam/privileged-access-manager/connections/examples/ssh-protocol-linux-machine#step-5-configuring-pam-settings-and-ssh-protocol)
+
+After completing the above, you can launch zero-trust connections to the Linux
+Machine directly from your Keeper Vault.
+
+##
+
+Step 1 - Enable Connection Enforcement Policies
+
+From the Admin Console, enable the corresponding [PAM Enforcement
+Policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-
+policies) for connections:
+
+Policy
+
+Definition
+
+Commander CLI
+
+Can configure connection and session recording
+
+Allow users to configure Connection and Session Recordings settings on PAM
+Machine, PAM Directory, PAM Database and PAM Configuration Record Types
+
+Copy
+
+    
+    
+    ALLOW_CONFIGURE_PAM_CLOUD_CONNECTION_SETTINGS
+
+Can launch connections
+
+Allow users to launch connections on PAM Machine, PAM Directory, PAM Database
+Record Types
+
+Copy
+
+    
+    
+    ALLOW_LAUNCH_PAM_ON_CLOUD_CONNECTION
+
+Can view session recordings
+
+Allow users to view Session Recordings
+
+Copy
+
+    
+    
+    ALLOW_VIEW_KCM_RECORDINGS
+
+##
+
+Step 2 - Install and configure the Keeper Gateway
+
+Prior to creating the PAM Record types in your Vault, the Keeper Gateway needs
+to be installed in your infrastructure. Visit the following guides based on
+your needs:
+
+  * [Windows Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/windows-installation)
+
+  * [Linux Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/linux-installation)
+
+  * [Docker Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/docker-installation)
+
+Additionally, the Keeper Gateways needs to be configured with the Gateway
+token. For more information, visit this [page](/en/keeperpam/privileged-
+access-manager/getting-started/gateways/one-time-access-token).
+
+Steps 3 and Step 4 can be automated with the Gateway Wizard. For more
+information, visit this [page](/en/keeperpam/privileged-access-manager/quick-
+start-sandbox).
+
+##
+
+Step 3 - Configuring the PAM Configuration
+
+The [PAM Configuration ](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)contains critical information on your
+infrastructure, settings and associated Keeper Gateway. Visit the following
+pages for more details based on your target infrastructure:
+
+  * [Setting up Local Environment on the PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/local-environment-setup)
+
+  * [Setting up AWS Environment on the PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup)
+
+  * [Setting up Azure Environment on the PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/azure-environment-setup)
+
+##
+
+Step 4 - Create and Configure PAM Machine and PAM User(s) Records
+
+After setting up your Gateway and PAM Configuration Record, the Linux Machine
+and its users need to be configured on PAM Record types in your Vault:
+
+  * [PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-machine) \- The Linux machine is configured on this record type
+
+  * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user) \- The Linux User is configured on this record type
+
+Refer to this example on how to configure Linux Machine on a PAM Machine
+record type:
+
+[Example: Linux Machine](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-machine/example-linux-machine)
+
+##
+
+Step 5 - Configuring PAM Settings and SSH Protocol
+
+The PAM Machine record type contains the necessary information required for
+the Keeper Gateway to locate and establish a connection with the machine,
+while the PAM User record type contains the necessary information to
+authenticate the connection.
+
+The PAM Settings need to be configured to enable connections or tunnels on the
+target defined on the PAM Machine Record. To configure the SSH protocol, visit
+the following page:
+
+[SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/ssh-connections)
+
+##
+
+Launching Connections
+
+Once you have configured the SSH Protocol connection on your PAM Machine
+Record, your record will contain the following connection banner with the
+"Launch" Button:
+
+In the above image, a Linux Machine has been configured on the PAM Machine
+Record. When clicking launch, the Vault Client will render a window with the
+established connection protocol to the specified target:
+
+##
+
+Sharing PAM Machine Records
+
+PAM Machine records can be shared with other Keeper users within your
+organization. However, the recipient must have the appropriate PAM enforcement
+policies in place to utilize KeeperPAM features on the shared PAM records.
+
+When sharing a PAM Machine record, the linked admin credentials will **not**
+be shared. For example, if the PAM Machine is configured with a Linux Machine,
+the recipient can connect to the Linux Machine on the PAM Machine record
+without having direct access to the linked credentials.
+
 [PreviousExamples](/en/keeperpam/privileged-access-
 manager/connections/examples)[NextRDP Protocol - Azure Virtual
 Machine](/en/keeperpam/privileged-access-manager/connections/examples/rdp-
@@ -496,214 +618,7 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
-##
-
-Overview
-
-In this guide, you will learn how to configure a Linux Machine on your **PAM
-Machine** and configure the **SSH protocol** to successfully launch a zero-
-trust connection to the Linux Machine — directly from your Keeper Vault.
-
-###
-
-Summary
-
-For this setup, you need to do the following:
-
-  1.   2.   3.   4.   5. 
-
-After completing the above, you can launch zero-trust connections to the Linux
-Machine directly from your Keeper Vault.
-
-##
-
-Step 1 - Enable Connection Enforcement Policies
-
-From the Admin Console, enable the corresponding  for connections:
-
-Policy
-
-Definition
-
-Commander CLI
-
-Can configure connection and session recording
-
-Allow users to configure Connection and Session Recordings settings on PAM
-Machine, PAM Directory, PAM Database and PAM Configuration Record Types
-
-Can launch connections
-
-Allow users to launch connections on PAM Machine, PAM Directory, PAM Database
-Record Types
-
-Can view session recordings
-
-Allow users to view Session Recordings
-
-##
-
-Step 2 - Install and configure the Keeper Gateway
-
-Prior to creating the PAM Record types in your Vault, the Keeper Gateway needs
-to be installed in your infrastructure. Visit the following guides based on
-your needs:
-
-  *   *   * 
-
-##
-
-Step 3 - Configuring the PAM Configuration
-
-  *   *   * 
-
-##
-
-Step 4 - Create and Configure PAM Machine and PAM User(s) Records
-
-After setting up your Gateway and PAM Configuration Record, the Linux Machine
-and its users need to be configured on PAM Record types in your Vault:
-
-  *   * 
-
-Refer to this example on how to configure Linux Machine on a PAM Machine
-record type:
-
-##
-
-Step 5 - Configuring PAM Settings and SSH Protocol
-
-The PAM Machine record type contains the necessary information required for
-the Keeper Gateway to locate and establish a connection with the machine,
-while the PAM User record type contains the necessary information to
-authenticate the connection.
-
-The PAM Settings need to be configured to enable connections or tunnels on the
-target defined on the PAM Machine Record. To configure the SSH protocol, visit
-the following page:
-
-##
-
-Launching Connections
-
-Once you have configured the SSH Protocol connection on your PAM Machine
-Record, your record will contain the following connection banner with the
-"Launch" Button:
-
-In the above image, a Linux Machine has been configured on the PAM Machine
-Record. When clicking launch, the Vault Client will render a window with the
-established connection protocol to the specified target:
-
-##
-
-Sharing PAM Machine Records
-
-PAM Machine records can be shared with other Keeper users within your
-organization. However, the recipient must have the appropriate PAM enforcement
-policies in place to utilize KeeperPAM features on the shared PAM records.
-
-When sharing a PAM Machine record, the linked admin credentials will **not**
-be shared. For example, if the PAM Machine is configured with a Linux Machine,
-the recipient can connect to the Linux Machine on the PAM Machine record
-without having direct access to the linked credentials.
-
-Additionally, the Keeper Gateways needs to be configured with the Gateway
-token. For more information, visit this .
-
-Steps 3 and Step 4 can be automated with the Gateway Wizard. For more
-information, visit this .
-
-The contains critical information on your infrastructure, settings and
-associated Keeper Gateway. Visit the following pages for more details based on
-your target infrastructure:
-
-\- The Linux machine is configured on this record type
-
-\- The Linux User is configured on this record type
-
-Copy
-
-    
-    
-    ALLOW_CONFIGURE_PAM_CLOUD_CONNECTION_SETTINGS
-
-Copy
-
-    
-    
-    ALLOW_LAUNCH_PAM_ON_CLOUD_CONNECTION
-
-Copy
-
-    
-    
-    ALLOW_VIEW_KCM_RECORDINGS
-
-[Windows Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/windows-installation)
-
-[Linux Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/linux-installation)
-
-[Docker Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/docker-installation)
-
-[page](/en/keeperpam/privileged-access-manager/getting-started/gateways/one-
-time-access-token)
-
-[page](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
-
-[PAM Configuration ](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
-
-[Setting up Local Environment on the PAM
-Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/local-environment-setup)
-
-[Setting up AWS Environment on the PAM
-Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/aws-environment-setup)
-
-[Setting up Azure Environment on the PAM
-Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/azure-environment-setup)
-
-[PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
-[Example: Linux Machine](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-machine/example-linux-machine)
-
-[SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/ssh-connections)
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FKqWn9sTryCuQdwJhM3d1%252FconnectionRecord.png%3Falt%3Dmedia%26token%3Dc8b3e812-6357-4b78-8fa7-7746f8cda7a4&width=768&dpr=4&quality=100&sign=9efdb494&sv=2)
-
-[PAM Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-
-started/enforcement-policies)
-
-[Enable the Connection Enforcement Policies](/en/keeperpam/privileged-access-
-manager/connections/examples/ssh-protocol-linux-machine#step-1-enable-
-connection-enforcement-policies)
-
-[Install and Configure the Keeper Gateway](/en/keeperpam/privileged-access-
-manager/connections/examples/ssh-protocol-linux-machine#step-2-install-and-
-configure-the-keeper-gateway)
-
-[Create and configure the PAM Configuration File](/en/keeperpam/privileged-
-access-manager/connections/examples/ssh-protocol-linux-
-machine#step-3-configuring-the-pam-configuration)
-
-[Create the PAM Machine and PAM User record types](/en/keeperpam/privileged-
-access-manager/connections/examples/ssh-protocol-linux-machine#step-4-create-
-and-configure-pam-machine-and-pam-user-s-records)
-
-[Configure PAM Settings and the SSH Connection
-Protocol](/en/keeperpam/privileged-access-manager/connections/examples/ssh-
-protocol-linux-machine#step-5-configuring-pam-settings-and-ssh-protocol)
 

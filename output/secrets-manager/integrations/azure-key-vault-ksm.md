@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/azure-key-
-vault-ksm?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/azure-key-vault-ksm?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/integrations/azure-key-vault-ksm?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/integrations/azure-key-vault-ksm?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/azure-key-vault-ksm?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-manager/integrations/azure-
-key-vault-ksm?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/secrets-manager/integrations/azure-key-vault-
-ksm?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/integrations/azure-key-vault-ksm?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/azure-key-vault-ksm?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/integrations/azure-key-vault-ksm?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-manager/integrations/azure-key-
-vault-ksm?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/integrations/azure-key-vault-ksm?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-
-manager/integrations/azure-key-vault-ksm?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/integrations/azure-key-vault-ksm?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/integrations/azure-key-vault-ksm?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/secrets-manager/integrations/azure-
-key-vault-ksm?fallback=true)[SSO Connect Cloud](https://docs.keeper.io/en/sso-
-connect-cloud/secrets-manager/integrations/azure-key-vault-
-ksm?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/integrations/azure-key-vault-ksm?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/integrations/azure-key-vault-ksm?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-
-manager/integrations/azure-key-vault-ksm?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,39 +386,6 @@ manager/integrations/azure-key-vault-ksm?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Features
-  * Prerequisites
-  * Setup
-  * 1\. Install Module
-  * 2\. Configure Azure Key Vault Connection
-  * 3\. Add Azure Key Vault Storage to Your Code
-  * Using Azure Key Vault Integration
-  * Additional Options
-  * Change Key
-  * Decrypt Config
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=5bAWD6RPiYO9UT9mOK6B&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Azure Key Vault Encryption
-
-Protect Secrets Manager connection details with Azure Key Vault Keys
-
-[PreviousAzure Key Vault Sync](/en/keeperpam/secrets-
-manager/integrations/azure-key-vault)[NextBitbucket
-Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
-
-Last updated 14 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -491,6 +416,39 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Features
+  * Prerequisites
+  * Setup
+  * 1\. Install Module
+  * 2\. Configure Azure Key Vault Connection
+  * 3\. Add Azure Key Vault Storage to Your Code
+  * Using Azure Key Vault Integration
+  * Additional Options
+  * Change Key
+  * Decrypt Config
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=5bAWD6RPiYO9UT9mOK6B&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Azure Key Vault Encryption
+
+Protect Secrets Manager connection details with Azure Key Vault Keys
+
+[PreviousAzure Key Vault Sync](/en/keeperpam/secrets-
+manager/integrations/azure-key-vault)[NextBitbucket
+Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
+
+Last updated 15 days ago
+
+Was this helpful?
+
 Keeper Secrets Manager integrates with Azure Key Vault in order to provide
 encryption for Keeper Secrets Manager configuration files. With this
 integration, you can protect connection details on your machine while taking
@@ -515,37 +473,17 @@ Prerequisites
 
 JavaJavaScriptPython.NetGoLang
 
-  * Support the Java/Kotlin [Secrets Manager SDK.](https://docs.keeper.io/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk)
+  *   *   * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
 
-  * Requires Azure packages: [`azure-identity`](https://mvnrepository.com/artifact/com.azure/azure-identity/1.15.0) and [`azure-keyvault-keys`](https://mvnrepository.com/artifact/com.azure/azure-security-keyvault-keys/4.9.2).
+  *   *   * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
 
-  * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
+  *   *   * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
 
-  * Supports the [JavaScript Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-sdk)
+  *   * Supports dotnet version `net9.0`
 
-  * Requires Azure packages [`@azure/identity`](https://www.npmjs.com/package/@azure/identity) , [`@azure/keyvault-keys`](https://www.npmjs.com/package/@azure/keyvault-keys)
+  *   * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
 
-  * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
-
-  * Supports the [Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk)
-
-  * Requires package [azure-identity](https://pypi.org/project/azure-identity/) [azure-keyvault-keys](https://pypi.org/project/azure-keyvault-keys/)
-
-  * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
-
-  * Supports the [.Net Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/.net-sdk)
-
-  * Supports dotnet version `net9.0`
-
-  * Requires Azure packages: [`Azure.Identity`](https://www.nuget.org/packages/Azure.Identity/1.14.0-beta.3) and [`Azure.Security.KeyVault.Keys`](https://www.nuget.org/packages/Azure.Security.KeyVault.Keys/4.8.0-beta.1)
-
-  * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
-
-  * Supports the [GoLang Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/golang-sdk)
-
-  * Requires Azure packages: [`azcore`](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/azcore) , [`azidentity`](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/azidentity) and [`azkeys`](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/security/keyvault/azkeys).
-
-  * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
+  *   *   * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
 
 ##
 
@@ -718,10 +656,6 @@ integration.
 
 For more information on Azure App Directory App registration and Permissions
 see the Azure documentation:
-
-<https://learn.microsoft.com/en-us/azure/key-
-vault/general/authentication>[](https://learn.microsoft.com/en-us/azure/key-
-vault/general/authentication)
 
 ###
 
@@ -1122,10 +1056,78 @@ Copy
     		}
     		.....
 
-You're ready to use the KSM integration 👍
+Support the Java/Kotlin
 
-Check out the [KSM SDKs documentation](/en/keeperpam/secrets-
-manager/developer-sdk-library) for more examples and functionality
+Requires Azure packages:  and .
+
+Supports the
+
+Requires Azure packages  ,
+
+Supports the
+
+Requires package
+
+Supports the
+
+Requires Azure packages:  and
+
+Supports the
+
+Requires Azure packages:  ,  and .
+
+You're ready to use the KSM integration
+
+Check out the  for more examples and functionality
+
+👍
+
+[Secrets Manager SDK.](https://docs.keeper.io/en/keeperpam/secrets-
+manager/developer-sdk-library/java-sdk)
+
+[`azure-identity`](https://mvnrepository.com/artifact/com.azure/azure-
+identity/1.15.0)
+
+[`azure-keyvault-keys`](https://mvnrepository.com/artifact/com.azure/azure-
+security-keyvault-keys/4.9.2)
+
+[JavaScript Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/javascript-sdk)
+
+[`@azure/identity`](https://www.npmjs.com/package/@azure/identity)
+
+[`@azure/keyvault-keys`](https://www.npmjs.com/package/@azure/keyvault-keys)
+
+[Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/python-sdk)
+
+[azure-identity](https://pypi.org/project/azure-identity/)
+
+[azure-keyvault-keys](https://pypi.org/project/azure-keyvault-keys/)
+
+[.Net Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/.net-sdk)
+
+[`Azure.Identity`](https://www.nuget.org/packages/Azure.Identity/1.14.0-beta.3)
+
+[`Azure.Security.KeyVault.Keys`](https://www.nuget.org/packages/Azure.Security.KeyVault.Keys/4.8.0-beta.1)
+
+[GoLang Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/golang-sdk)
+
+[`azcore`](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/azcore)
+
+[`azidentity`](https://pkg.go.dev/github.com/Azure/azure-sdk-for-
+go/sdk/azidentity)
+
+[`azkeys`](https://pkg.go.dev/github.com/Azure/azure-sdk-for-
+go/sdk/security/keyvault/azkeys)
+
+<https://learn.microsoft.com/en-us/azure/key-
+vault/general/authentication>[](https://learn.microsoft.com/en-us/azure/key-
+vault/general/authentication)
+
+[KSM SDKs documentation](/en/keeperpam/secrets-manager/developer-sdk-library)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

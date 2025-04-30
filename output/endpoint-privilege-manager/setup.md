@@ -12,43 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/endpoint-privilege-
-manager/setup?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/endpoint-
-privilege-manager/setup?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/endpoint-privilege-
-manager/setup?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/endpoint-privilege-manager/setup?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/endpoint-privilege-
-manager/setup?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/endpoint-privilege-manager/setup?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/endpoint-privilege-
-manager/setup?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/endpoint-privilege-
-manager/setup?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/endpoint-privilege-
-manager/setup?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/endpoint-privilege-manager/setup?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/endpoint-privilege-
-manager/setup?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/endpoint-
-privilege-manager/setup?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/endpoint-privilege-
-manager/setup?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/endpoint-privilege-manager/setup?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/endpoint-privilege-
-manager/setup?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/endpoint-privilege-manager/setup?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/endpoint-privilege-
-manager/setup?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/endpoint-privilege-
-manager/setup?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/endpoint-privilege-
-manager/setup?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/endpoint-privilege-manager/setup?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -422,31 +386,6 @@ bridge/endpoint-privilege-manager/setup?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Setup Steps
-  * Next Steps
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=XImANkhy5bPte8sWajcb&only=yes&limit=100)
-
-  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
-
-# Setup
-
-Installation and setup of Privileged Elevation and Delegation Management
-(PEDM)
-
-[PreviousOverview](/en/keeperpam/endpoint-privilege-
-manager/overview)[NextDeployment](/en/keeperpam/endpoint-privilege-
-manager/deployment)
-
-Last updated 18 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -477,6 +416,31 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Setup Steps
+  * Next Steps
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=XImANkhy5bPte8sWajcb&only=yes&limit=100)
+
+  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
+
+# Setup
+
+Installation and setup of Privileged Elevation and Delegation Management
+(PEDM)
+
+[PreviousOverview](/en/keeperpam/endpoint-privilege-
+manager/overview)[NextDeployment](/en/keeperpam/endpoint-privilege-
+manager/deployment)
+
+Last updated 19 days ago
+
+Was this helpful?
+
 ##
 
 Setup Steps
@@ -488,11 +452,6 @@ Follow the below steps to start using Endpoint Privilege Manager.
 ###
 
 Keeper Enterprise license
-
-If you are not a Keeper customer or do not have the required license, you can
-[start a free trial](https://www.keepersecurity.com/password-manager-free-
-trial-sign-up.html) from our website. The free trial includes KeeperPAM full
-capabilities.
 
 2
 
@@ -529,11 +488,23 @@ Next Steps
 
 Now that Endpoint Privilege Manager is activated, the next steps are:
 
-  * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment) of the Agent
+  *   *   * 
 
-  * [Set Policies](/en/keeperpam/endpoint-privilege-manager/policies) and
+If you are not a Keeper customer or do not have the required license, you can
+from our website. The free trial includes KeeperPAM full capabilities.
 
-  * [Manage Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+of the Agent
+
+and
+
+[start a free trial](https://www.keepersecurity.com/password-manager-free-
+trial-sign-up.html)
+
+[Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+
+[Set Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+[Manage Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
 
 Activating the Privilege Manager permissions in the Admin Console
 

@@ -12,47 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/endpoint-privilege-
-manager/deployment?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/endpoint-
-privilege-manager/deployment?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/endpoint-privilege-
-manager/deployment?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/endpoint-privilege-
-manager/deployment?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/endpoint-privilege-
-manager/deployment?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/endpoint-privilege-manager/deployment?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/endpoint-privilege-
-manager/deployment?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/endpoint-privilege-
-manager/deployment?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/endpoint-privilege-
-manager/deployment?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/endpoint-privilege-
-manager/deployment?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/endpoint-privilege-
-manager/deployment?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/endpoint-
-privilege-manager/deployment?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/endpoint-privilege-
-manager/deployment?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/endpoint-privilege-
-manager/deployment?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/endpoint-privilege-
-manager/deployment?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/endpoint-privilege-manager/deployment?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/endpoint-privilege-
-manager/deployment?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/endpoint-privilege-
-manager/deployment?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/endpoint-privilege-
-manager/deployment?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/endpoint-privilege-
-manager/deployment?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -458,12 +418,31 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * Encryption
+  * Deployment Package
+  * Deployment Collections
+  * Managing Deployments
+  * Device Collections
+  * Commander CLI
+  * Next Steps
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=KEkG5ky7xq0IniHT6zVE&only=yes&limit=100)
 
-Last updated 18 days ago
+  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
+
+# Deployment
+
+Deploying the Keeper Agent to your endpoints
+
+[PreviousSetup](/en/keeperpam/endpoint-privilege-
+manager/setup)[NextPolicies](/en/keeperpam/endpoint-privilege-
+manager/policies)
+
+Last updated 19 days ago
 
 Was this helpful?
 
@@ -578,33 +557,6 @@ Agent Management
 The `pedm agent` command provides management over individual agents running on
 the endpoint.
 
-####
-
-Deployment
-
-The `pedm deployment` command provides management over agent deployments.
-
-####
-
-Collections
-
-The `pedm collection` command provides management over collections.
-
-####
-
-Reports
-
-The `pedm report` command provides event logs and event reports.
-
-###
-
-Next Steps
-
-Policies can be applied to device collections and deployment collections to
-control privilege on all of the endpoints. Visit the  page to learn more.
-
-Once you have deployed the agent, it's time to set up .
-
 Copy
 
     
@@ -618,6 +570,12 @@ Copy
     edit        Update PEDM agents
     delete      Delete PEDM agents
     collection  List PEDM agent resources
+
+####
+
+Deployment
+
+The `pedm deployment` command provides management over agent deployments.
 
 Copy
 
@@ -633,6 +591,12 @@ Copy
     update     Update PEDM deployment
     delete     Delete PEDM deployment
     download   Download PEDM deployment package
+
+####
+
+Collections
+
+The `pedm collection` command provides management over collections.
 
 Copy
 
@@ -651,6 +615,12 @@ Copy
     connect     Link agent, policy, resource to PEDM collections
     disconnect  Unlink agent, policy, resource from PEDM collections
 
+####
+
+Reports
+
+The `pedm report` command provides event logs and event reports.
+
 Copy
 
     
@@ -663,24 +633,14 @@ Copy
     event      Run audit event reports
     summary    Run audit summary reports
 
-  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
+###
 
-# Deployment
+Next Steps
 
-Deploying the Keeper Agent to your endpoints
+Policies can be applied to device collections and deployment collections to
+control privilege on all of the endpoints. Visit the  page to learn more.
 
-[PreviousSetup](/en/keeperpam/endpoint-privilege-
-manager/setup)[NextPolicies](/en/keeperpam/endpoint-privilege-
-manager/policies)
-
-  * Overview
-  * Encryption
-  * Deployment Package
-  * Deployment Collections
-  * Managing Deployments
-  * Device Collections
-  * Commander CLI
-  * Next Steps
+Once you have deployed the agent, it's time to set up .
 
 [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
 

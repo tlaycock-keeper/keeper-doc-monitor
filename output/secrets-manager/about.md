@@ -12,43 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-
-manager/about?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/about?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/secrets-manager/about?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/about?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/about?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/secrets-manager/about?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/about?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/about?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/about?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/secrets-manager/about?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-
-manager/about?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/about?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/secrets-manager/about?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-
-manager/about?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-
-manager/about?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/secrets-manager/about?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/about?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-
-manager/about?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-
-manager/about?fallback=true)[Keeper Bridge](https://docs.keeper.io/en/keeper-
-bridge/secrets-manager/about?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager

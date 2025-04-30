@@ -12,61 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/password-
-rotation/post-rotation-scripts/accessing-parameters?fallback=true)[Keeper
-Connection Manager](https://docs.keeper.io/en/keeper-connection-
-manager/privileged-access-manager/password-rotation/post-rotation-
-scripts/accessing-parameters?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/password-rotation/post-rotation-scripts/accessing-
-parameters?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/privileged-access-manager/password-rotation/post-rotation-
-scripts/accessing-parameters?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/password-rotation/post-rotation-scripts/accessing-
-parameters?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/password-rotation/post-rotation-
-scripts/accessing-parameters?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/password-rotation/post-rotation-scripts/accessing-
-parameters?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/password-rotation/post-rotation-scripts/accessing-
-parameters?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/privileged-access-manager/password-rotation/post-rotation-
-scripts/accessing-parameters?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/password-rotation/post-rotation-scripts/accessing-
-parameters?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/password-
-rotation/post-rotation-scripts/accessing-parameters?fallback=true)[Keeper
-Connection Manager](https://docs.keeper.io/en/keeper-connection-
-manager/privileged-access-manager/password-rotation/post-rotation-
-scripts/accessing-parameters?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/password-rotation/post-rotation-scripts/accessing-
-parameters?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/privileged-access-manager/password-rotation/post-rotation-
-scripts/accessing-parameters?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/password-rotation/post-rotation-scripts/accessing-
-parameters?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/password-rotation/post-rotation-
-scripts/accessing-parameters?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/password-rotation/post-rotation-scripts/accessing-
-parameters?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/password-rotation/post-rotation-scripts/accessing-
-parameters?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/privileged-access-manager/password-rotation/post-rotation-
-scripts/accessing-parameters?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/password-rotation/post-rotation-scripts/accessing-
-parameters?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -440,29 +386,6 @@ parameters?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=LzSYQfhtQV9u6lB8TCLr&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Post-Rotation Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts)
-
-# Code Examples
-
-Examples of post-rotation scripts in KeeperPAM
-
-[PreviousAttaching Scripts](/en/keeperpam/privileged-access-manager/password-
-rotation/post-rotation-scripts/attaching-post-rotation-scripts-to-
-records)[NextConnections](/en/keeperpam/privileged-access-manager/connections)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -493,6 +416,29 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=LzSYQfhtQV9u6lB8TCLr&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Post-Rotation Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts)
+
+# Code Examples
+
+Examples of post-rotation scripts in KeeperPAM
+
+[PreviousAttaching Scripts](/en/keeperpam/privileged-access-manager/password-
+rotation/post-rotation-scripts/attaching-post-rotation-scripts-to-
+records)[NextConnections](/en/keeperpam/privileged-access-manager/connections)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 ###
 
 Echo Inputs
@@ -507,9 +453,9 @@ found in the Keeper Gateway log file.
 
 Bash
 
-Note: For this example, [jq](https://stedolan.github.io/jq/) needs to be
-installed to parse the JSON. Attach this as a PAM script and perform the
-rotation. The Gateway logfile will contain the output.
+Note: For this example,  needs to be installed to parse the JSON. Attach this
+as a PAM script and perform the rotation. The Gateway logfile will contain the
+output.
 
 decode-and-echo.sh
 
@@ -627,13 +573,6 @@ Copy
 
 Using Keeper Secrets Manager SDKs
 
-The post rotation script is not limited to shell scripts. Applications can be
-written in languages like Python or C# to get the piped parameters. Since the
-UIDs of the Rotation involved records are passed in the params, the post-
-rotation script can use the [Keeper Secrets Manager
-SDKs](/en/keeperpam/secrets-manager/developer-sdk-library) to get additional
-information.
-
 Copy
 
     
@@ -665,6 +604,16 @@ Copy
         resource_records = ksm.get_secrets(params.get('userRecordUid'))[0]
         
         break
+
+The post rotation script is not limited to shell scripts. Applications can be
+written in languages like Python or C# to get the piped parameters. Since the
+UIDs of the Rotation involved records are passed in the params, the post-
+rotation script can use the  to get additional information.
+
+[Keeper Secrets Manager SDKs](/en/keeperpam/secrets-manager/developer-sdk-
+library)
+
+[jq](https://stedolan.github.io/jq/)
 
 [Bash](/en/keeperpam/privileged-access-manager/password-rotation/post-
 rotation-scripts/accessing-parameters#bash-script)

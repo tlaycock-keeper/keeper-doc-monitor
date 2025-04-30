@@ -12,61 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/password-
-rotation/rotation-use-cases/azure/azure-vm-user-accounts?fallback=true)[Keeper
-Connection Manager](https://docs.keeper.io/en/keeper-connection-
-manager/privileged-access-manager/password-rotation/rotation-use-
-cases/azure/azure-vm-user-accounts?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-vm-user-
-accounts?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/privileged-access-manager/password-rotation/rotation-use-
-cases/azure/azure-vm-user-accounts?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-vm-user-
-accounts?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/password-rotation/rotation-use-
-cases/azure/azure-vm-user-accounts?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-vm-user-
-accounts?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-vm-user-
-accounts?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/privileged-access-manager/password-rotation/rotation-use-
-cases/azure/azure-vm-user-accounts?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-vm-user-
-accounts?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/password-
-rotation/rotation-use-cases/azure/azure-vm-user-accounts?fallback=true)[Keeper
-Connection Manager](https://docs.keeper.io/en/keeper-connection-
-manager/privileged-access-manager/password-rotation/rotation-use-
-cases/azure/azure-vm-user-accounts?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-vm-user-
-accounts?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/privileged-access-manager/password-rotation/rotation-use-
-cases/azure/azure-vm-user-accounts?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-vm-user-
-accounts?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/password-rotation/rotation-use-
-cases/azure/azure-vm-user-accounts?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-vm-user-
-accounts?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-vm-user-
-accounts?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/privileged-access-manager/password-rotation/rotation-use-
-cases/azure/azure-vm-user-accounts?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-vm-user-
-accounts?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -440,40 +386,6 @@ accounts?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Prerequisites
-  * 1\. Set up PAM Machine Records
-  * 2\. Set up PAM Configuration
-  * 3\. Set up PAM User records
-  * 4\. Configure Rotation on the PAM User records 
-  * Helpful Resources
-  * Service Management
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=HZpqav0NERxceysuvZMA&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure)
-
-# Azure VM User Accounts
-
-Rotating local and remote user accounts on Azure Virtual Machines with Keeper
-
-[PreviousAzure AD Users](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/azure/azure-ad-users)[NextAzure Managed
-Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/azure/managed-database)
-
-Last updated 21 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -504,6 +416,40 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Overview
+  * Prerequisites
+  * 1\. Set up PAM Machine Records
+  * 2\. Set up PAM Configuration
+  * 3\. Set up PAM User records
+  * 4\. Configure Rotation on the PAM User records 
+  * Helpful Resources
+  * Service Management
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=HZpqav0NERxceysuvZMA&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure)
+
+# Azure VM User Accounts
+
+Rotating local and remote user accounts on Azure Virtual Machines with Keeper
+
+[PreviousAzure AD Users](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/azure/azure-ad-users)[NextAzure Managed
+Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/azure/managed-database)
+
+Last updated 22 days ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -511,23 +457,13 @@ Overview
 In this guide, you'll learn how to rotate Azure Virtual Machine local and
 remote user accounts within the Azure environment using KeeperPAM.
 
-  * See the [Azure Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure) for a high level overview and getting started with Azure
+  * 
 
 ##
 
 Prerequisites
 
-  * [Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-started/enforcement-policies) are configured for your role
-
-  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
-
-  * Your Azure environment is [configured](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/azure-environment-setup) per our documentation
-
-  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed
-
-  * The Gateway can communicate to the target Windows machine using [WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm) or [SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
-
-  * `PowerShell` is available on all Windows machines and `bash` on all Linux targets
+  *   *   *   *   *   * `PowerShell` is available on all Windows machines and `bash` on all Linux targets
 
 ##
 
@@ -581,11 +517,7 @@ for this environment.
 
 Make sure the following items are completed first:
 
-  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
-
-  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is provisioned in the Keeper Secrets Manager application you created.
-
-  * PAM Machine records have been created for each target machine
+  *   *   * PAM Machine records have been created for each target machine
 
 If you are creating a new PAM Configuration, login to the Keeper Vault and
 select "Secrets Manager", then select the "PAM Configurations" tab, and click
@@ -638,10 +570,6 @@ services.
 
 The UUID of the Azure Active Directory
 
-For more details on all the configurable fields in the PAM Configuration
-record, visit this [page](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration).
-
 ##
 
 3\. Set up PAM User records
@@ -692,7 +620,7 @@ rotation for that record.
 
 Helpful Resources
 
-  * [Setting up WinRM on your Azure VM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+  * 
 
 ##
 
@@ -703,9 +631,59 @@ credentials for any Windows services running as the PAM User, and restart the
 service. Keeper will also update the credential of any scheduled task running
 as that user on the target machine.
 
-To learn more and set up this capability, see the [Service
-Management](/en/keeperpam/privileged-access-manager/password-rotation/service-
-management) page.
+See the  for a high level overview and getting started with Azure
+
+are configured for your role
+
+A Keeper Secrets Manager  has been created
+
+Your Azure environment is  per our documentation
+
+A Keeper Rotation  is already installed
+
+The Gateway can communicate to the target Windows machine using  or
+
+A Keeper Secrets Manager  has been created
+
+A Keeper Rotation  is already installed, running, and is provisioned in the
+Keeper Secrets Manager application you created.
+
+For more details on all the configurable fields in the PAM Configuration
+record, visit this .
+
+To learn more and set up this capability, see the  page.
+
+[Azure Overview](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/azure)
+
+[Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-
+started/enforcement-policies)
+
+[application](/en/keeperpam/privileged-access-manager/getting-
+started/applications)
+
+[configured](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration/azure-environment-setup)
+
+[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+[WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+
+[SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
+
+[application](/en/keeperpam/privileged-access-manager/getting-
+started/applications)
+
+[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration)
+
+[Setting up WinRM on your Azure VM](/en/keeperpam/privileged-access-
+manager/references/setting-up-winrm)
+
+[Service Management](/en/keeperpam/privileged-access-manager/password-
+rotation/service-management)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

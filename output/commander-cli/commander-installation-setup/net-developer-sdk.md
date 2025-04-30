@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/commander-cli/commander-installation-
-setup/net-developer-sdk?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/commander-installation-setup/net-developer-sdk?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/commander-
-installation-setup/net-developer-sdk?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/commander-
-installation-setup/net-developer-sdk?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/commander-
-installation-setup/net-developer-sdk?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/commander-cli/commander-
-installation-setup/net-developer-sdk?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/commander-
-installation-setup/net-developer-sdk?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/commander-
-installation-setup/net-developer-sdk?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/commander-
-installation-setup/net-developer-sdk?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/commander-
-installation-setup/net-developer-sdk?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/commander-cli/commander-installation-
-setup/net-developer-sdk?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/commander-installation-setup/net-developer-sdk?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/commander-
-installation-setup/net-developer-sdk?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/commander-
-installation-setup/net-developer-sdk?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/commander-
-installation-setup/net-developer-sdk?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/commander-cli/commander-
-installation-setup/net-developer-sdk?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/commander-
-installation-setup/net-developer-sdk?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/commander-
-installation-setup/net-developer-sdk?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/commander-
-installation-setup/net-developer-sdk?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/commander-
-installation-setup/net-developer-sdk?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,90 +386,6 @@ installation-setup/net-developer-sdk?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * .Net SDK
-  * API documentation 
-  * Developer Requirements
-  * Examples
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=F2aegQUDSfPyMkRxDc0o&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
-
-# .NET Developer Setup
-
-Keeper Commander .NET Developer SDK
-
-##
-
-Overview
-
-The Keeper Commander CLI is has been written in 3 languages (Python, .Net and
-Golang) with the source code available on Github.
-
-##
-
-.Net SDK
-
-Keeper's .Net Commander tool provides basic vault access, a developer SDK for
-vault access and administrative functions: <https://github.com/Keeper-
-Security/keeper-sdk-dotnet>[](https://github.com/Keeper-Security/keeper-sdk-
-dotnet)
-
-For source integration into your .Net code, please utilize the KeeperSDK
-Library source code: <https://github.com/Keeper-Security/keeper-sdk-
-dotnet/tree/release/KeeperSdk>[](https://github.com/Keeper-Security/keeper-
-sdk-dotnet/tree/release/KeeperSdk)
-
-###
-
-API documentation
-
-Find detailed API documentation at the following URL: <https://keeper-
-security.github.io/gitbook-keeper-
-sdk/CSharp/html/R_Project_Documentation.htm>[](https://keeper-
-security.github.io/gitbook-keeper-sdk/CSharp/html/R_Project_Documentation.htm)
-
-###
-
-Developer Requirements
-
-  * .Net Framework 4.5
-
-  * .Net Core 2.1
-
-  * .Net Standard 2.0
-
-###
-
-Examples
-
-For help with implementation of SDK features, please see the Sample
-Application: <https://github.com/Keeper-Security/keeper-sdk-
-dotnet/tree/master/Sample>[](https://github.com/Keeper-Security/keeper-sdk-
-dotnet/tree/master/Sample)
-
-The .Net Commander CLI Sample App contains several basic operations such as
-logging in, authentication with two-factor, loading and decrypting the vault
-and updating passwords. <https://github.com/Keeper-Security/keeper-sdk-
-dotnet/tree/release/Commander>[](https://github.com/Keeper-Security/keeper-
-sdk-dotnet/tree/release/Commander)
-
-[PreviousPython Developer Setup](/en/keeperpam/commander-cli/commander-
-installation-setup/developer-mode)[NextPowerShell
-Module](/en/keeperpam/commander-cli/commander-installation-setup/installation-
-on-powershell)
-
-Last updated 10 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -541,4 +415,96 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Overview
+  * .Net SDK
+  * API documentation 
+  * Developer Requirements
+  * Examples
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=F2aegQUDSfPyMkRxDc0o&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+
+# .NET Developer Setup
+
+Keeper Commander .NET Developer SDK
+
+[PreviousPython Developer Setup](/en/keeperpam/commander-cli/commander-
+installation-setup/developer-mode)[NextPowerShell
+Module](/en/keeperpam/commander-cli/commander-installation-setup/installation-
+on-powershell)
+
+Last updated 11 days ago
+
+Was this helpful?
+
+##
+
+Overview
+
+The Keeper Commander CLI is has been written in 3 languages (Python, .Net and
+Golang) with the source code available on Github.
+
+##
+
+.Net SDK
+
+Keeper's .Net Commander tool provides basic vault access, a developer SDK for
+vault access and administrative functions:
+
+For source integration into your .Net code, please utilize the KeeperSDK
+Library source code:
+
+###
+
+API documentation
+
+Find detailed API documentation at the following URL:
+
+###
+
+Developer Requirements
+
+  * .Net Framework 4.5
+
+  * .Net Core 2.1
+
+  * .Net Standard 2.0
+
+###
+
+Examples
+
+For help with implementation of SDK features, please see the Sample
+Application:
+
+The .Net Commander CLI Sample App contains several basic operations such as
+logging in, authentication with two-factor, loading and decrypting the vault
+and updating passwords.
+
+<https://github.com/Keeper-Security/keeper-sdk-
+dotnet>[](https://github.com/Keeper-Security/keeper-sdk-dotnet)
+
+<https://github.com/Keeper-Security/keeper-sdk-
+dotnet/tree/release/KeeperSdk>[](https://github.com/Keeper-Security/keeper-
+sdk-dotnet/tree/release/KeeperSdk)
+
+<https://keeper-security.github.io/gitbook-keeper-
+sdk/CSharp/html/R_Project_Documentation.htm>[](https://keeper-
+security.github.io/gitbook-keeper-sdk/CSharp/html/R_Project_Documentation.htm)
+
+<https://github.com/Keeper-Security/keeper-sdk-
+dotnet/tree/master/Sample>[](https://github.com/Keeper-Security/keeper-sdk-
+dotnet/tree/master/Sample)
+
+<https://github.com/Keeper-Security/keeper-sdk-
+dotnet/tree/release/Commander>[](https://github.com/Keeper-Security/keeper-
+sdk-dotnet/tree/release/Commander)
 

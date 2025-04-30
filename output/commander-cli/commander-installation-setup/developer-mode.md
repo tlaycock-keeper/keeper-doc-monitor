@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/commander-cli/commander-installation-
-setup/developer-mode?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/commander-installation-setup/developer-mode?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/commander-
-installation-setup/developer-mode?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/commander-
-installation-setup/developer-mode?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/commander-
-installation-setup/developer-mode?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/commander-cli/commander-
-installation-setup/developer-mode?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/commander-
-installation-setup/developer-mode?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/commander-
-installation-setup/developer-mode?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/commander-
-installation-setup/developer-mode?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/commander-
-installation-setup/developer-mode?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/commander-cli/commander-installation-
-setup/developer-mode?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/commander-installation-setup/developer-mode?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/commander-
-installation-setup/developer-mode?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/commander-
-installation-setup/developer-mode?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/commander-
-installation-setup/developer-mode?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/commander-cli/commander-
-installation-setup/developer-mode?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/commander-
-installation-setup/developer-mode?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/commander-
-installation-setup/developer-mode?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/commander-
-installation-setup/developer-mode?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/commander-
-installation-setup/developer-mode?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,6 +386,36 @@ installation-setup/developer-mode?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Installation
@@ -452,6 +440,15 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MKeAkHBb9f5P9-OQ2KX&only=yes&limit=100)
 Instructions for installation of Python-based Commander with the intent on
 modifying source code
 
+[PreviousCLI Installation on Linux](/en/keeperpam/commander-cli/commander-
+installation-setup/installation-on-linux)[Next.NET Developer
+Setup](/en/keeperpam/commander-cli/commander-installation-setup/net-developer-
+sdk)
+
+Last updated 13 days ago
+
+Was this helpful?
+
 ###
 
 Installation
@@ -463,9 +460,7 @@ environment to isolate dependencies.
 
 Clone the Commander Repository
 
-Clone the GitHub repository to your local
-machine:****<https://github.com/Keeper-
-Security/Commander>[](https://github.com/Keeper-Security/Commander)
+Clone the GitHub repository to your local machine:****
 
 Copy
 
@@ -487,8 +482,7 @@ Copy
 
 **Install Python**
 
-Install the most recent Python3 installation from
-[python.org](https://www.python.org/).
+Install the most recent Python3 installation from .
 
 ###
 
@@ -543,58 +537,27 @@ Copy
     
     keeper shell
 
-See the [Logging in](/en/keeperpam/commander-cli/commander-installation-
-setup/logging-in) section to understand the authentication process.
-[Explore](/en/keeperpam/commander-cli/command-reference) all of the Commands
-available.
-
 * * *
 
 ###
 
 Sample Python Code
 
-Several standalone python scripts can be found
-[here](https://github.com/Keeper-Security/Commander/tree/master/examples),
-with examples for searching records, creating teams and sharing folders, and
-more.
+See the  section to understand the authentication process.  all of the
+Commands available.
 
-[PreviousCLI Installation on Linux](/en/keeperpam/commander-cli/commander-
-installation-setup/installation-on-linux)[Next.NET Developer
-Setup](/en/keeperpam/commander-cli/commander-installation-setup/net-developer-
-sdk)
+Several standalone python scripts can be found , with examples for searching
+records, creating teams and sharing folders, and more.
 
-Last updated 12 days ago
+<https://github.com/Keeper-Security/Commander>[](https://github.com/Keeper-
+Security/Commander)
 
-Was this helpful?
+[python.org](https://www.python.org/)
 
-#### Company
+[Logging in](/en/keeperpam/commander-cli/commander-installation-setup/logging-
+in)
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+[Explore](/en/keeperpam/commander-cli/command-reference)
 
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+[here](https://github.com/Keeper-Security/Commander/tree/master/examples)
 

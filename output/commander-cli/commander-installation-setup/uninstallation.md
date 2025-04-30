@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/commander-cli/commander-installation-
-setup/uninstallation?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/commander-installation-setup/uninstallation?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/commander-
-installation-setup/uninstallation?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/commander-
-installation-setup/uninstallation?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/commander-
-installation-setup/uninstallation?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/commander-cli/commander-
-installation-setup/uninstallation?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/commander-
-installation-setup/uninstallation?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/commander-
-installation-setup/uninstallation?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/commander-
-installation-setup/uninstallation?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/commander-
-installation-setup/uninstallation?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/commander-cli/commander-installation-
-setup/uninstallation?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/commander-
-cli/commander-installation-setup/uninstallation?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/commander-cli/commander-
-installation-setup/uninstallation?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/commander-cli/commander-
-installation-setup/uninstallation?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/commander-cli/commander-
-installation-setup/uninstallation?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/commander-cli/commander-
-installation-setup/uninstallation?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/commander-cli/commander-
-installation-setup/uninstallation?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/commander-cli/commander-
-installation-setup/uninstallation?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/commander-cli/commander-
-installation-setup/uninstallation?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/commander-cli/commander-
-installation-setup/uninstallation?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,32 +386,6 @@ installation-setup/uninstallation?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Uninstallation - Python (pip3) Package
-  * Uninstallation - Windows Binary (.exe)
-  * Uninstallation - Mac Binary (.pkg)
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=EVOWK06gBXAelE9ne5RA&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
-
-# Uninstallation
-
-Instructions on uninstalling Keeper Commander
-
-[PreviousAutomating with AWS Lambda](/en/keeperpam/commander-cli/commander-
-installation-setup/using-commander-with-aws-lambda)[NextCommand
-Reference](/en/keeperpam/commander-cli/command-reference)
-
-Last updated 9 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -483,6 +415,32 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Uninstallation - Python (pip3) Package
+  * Uninstallation - Windows Binary (.exe)
+  * Uninstallation - Mac Binary (.pkg)
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=EVOWK06gBXAelE9ne5RA&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+
+# Uninstallation
+
+Instructions on uninstalling Keeper Commander
+
+[PreviousAutomating with AWS Lambda](/en/keeperpam/commander-cli/commander-
+installation-setup/using-commander-with-aws-lambda)[NextCommand
+Reference](/en/keeperpam/commander-cli/command-reference)
+
+Last updated 9 months ago
+
+Was this helpful?
 
 ##
 
@@ -527,11 +485,6 @@ uninstall:
 
   4. Follow the prompted directions on screen 
 
-For alternative ways on uninstalling program on Windows, refer to this
-[page](https://support.microsoft.com/en-us/windows/uninstall-or-remove-apps-
-and-programs-in-
-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98#ID0EBD=Windows_10).
-
 ##
 
 Uninstallation - Mac Binary (.pkg)
@@ -542,15 +495,21 @@ Uninstallation - Mac Binary (.pkg)
 
   3. Right Click "Keeper Commander" and select "Move to Trash" 
 
+For alternative ways on uninstalling program on Windows, refer to this .
+
 If you installed Keeper Commander using the Mac , follow the following steps
 to uninstall:
 
-[Windows binary,](/en/keeperpam/commander-cli/commander-installation-
-setup/installation-on-windows#typical-binary-installation-recommended)
+[page](https://support.microsoft.com/en-us/windows/uninstall-or-remove-apps-
+and-programs-in-
+windows-4b55f974-2cc6-2d2b-d092-5905080eaf98#ID0EBD=Windows_10)
+
+[binary](/en/keeperpam/commander-cli/commander-installation-
+setup/installation-on-mac#binary-installation-recommended)
 
 [pip3](/en/keeperpam/commander-cli/commander-installation-setup/installation-
 on-linux#installing-python)
 
-[binary](/en/keeperpam/commander-cli/commander-installation-
-setup/installation-on-mac#binary-installation-recommended)
+[Windows binary,](/en/keeperpam/commander-cli/commander-installation-
+setup/installation-on-windows#typical-binary-installation-recommended)
 

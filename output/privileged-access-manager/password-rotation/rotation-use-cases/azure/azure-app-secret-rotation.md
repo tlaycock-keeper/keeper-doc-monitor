@@ -12,63 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/password-
-rotation/rotation-use-cases/azure/azure-app-secret-
-rotation?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-
-rotation?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/privileged-access-manager/password-rotation/rotation-use-
-cases/azure/azure-app-secret-rotation?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-
-rotation?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-
-rotation?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/password-rotation/rotation-use-
-cases/azure/azure-app-secret-rotation?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-
-rotation?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-
-rotation?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/privileged-access-manager/password-rotation/rotation-use-
-cases/azure/azure-app-secret-rotation?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-
-rotation?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/password-
-rotation/rotation-use-cases/azure/azure-app-secret-
-rotation?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-
-rotation?fallback=true)[User Guides](https://docs.keeper.io/en/user-
-guides/privileged-access-manager/password-rotation/rotation-use-
-cases/azure/azure-app-secret-rotation?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-
-rotation?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-
-rotation?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/privileged-access-manager/password-rotation/rotation-use-
-cases/azure/azure-app-secret-rotation?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-
-rotation?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-
-rotation?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/privileged-access-manager/password-rotation/rotation-use-
-cases/azure/azure-app-secret-rotation?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-
-rotation?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -442,6 +386,36 @@ rotation?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -470,6 +444,16 @@ PDF](/en/keeperpam/~gitbook/pdf?page=h030fH9tnmiYRI2P6fep&only=yes&limit=100)
 Automatically rotate the secret of an Azure app using Keeper Secrets Manager
 rotations
 
+[PreviousAzure PostgreSQL - Single or Flexible
+Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/azure/managed-database/azure-postgresql-single-or-flexible-
+database)[NextAWS](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -486,7 +470,7 @@ including deletion of previous application secrets, and stores the new
 application secret in Keeper. This new secret is automatically available to
 all already allowed KSM applications and users.
 
-  * See the [Azure Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure) for a high level overview and getting started with Azure
+  * See the  for a high level overview and getting started with Azure
 
 ##
 
@@ -494,11 +478,11 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  * [Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-started/enforcement-policies) are configured for your role
+  * are configured for your role
 
-  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+  * A Keeper Secrets Manager  has been created
 
-  * Your Azure environment is [configured](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/azure-environment-setup) per our documentation
+  * Your Azure environment is  per our documentation
 
   * The gateway host will need to have a supported Python version installed with the 2 dependencies below:
 
@@ -547,10 +531,6 @@ The script will:
 
 PAM User Record - Fields Requirements
 
-You need to create a [PAM User](/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-user) record where the rotation will
-be configured later on. The fields below need to be created.
-
 ###
 
 Fields required:
@@ -580,12 +560,6 @@ Field Type
 
 Description
 
-Copy
-
-    
-    
-    application_object_id
-
 Text
 
 This field is used to specify which application in Azure you want to rotate.
@@ -593,54 +567,24 @@ You need to retrieve the application object ID of the application to rotate
 from the Azure portal > App Registration > Overview tab of your app >
 Application (client) ID.
 
-Copy
-
-    
-    
-    client_secret_id
-
 Text
 
 This field will receive the new client secret ID after the rotation.
 
-Copy
-
-    
-    
-    client_secret
-
 Hidden Field
 
 This field will receive the new client secret after the rotation.
-
-Copy
-
-    
-    
-    expires
 
 Text
 
 This field will receive the expiration date of the new secret after the
 rotation.
 
-Copy
-
-    
-    
-    Private Key Type
-
 Text
 
 Second field to enable NOOP.
 
 The value has to be:
-
-Copy
-
-    
-    
-    rsa-ssh
 
 Instead of creating the PAM User record manually using the details above, you
 could also import the csv file below. It will create a template record you can
@@ -705,21 +649,9 @@ Field Type
 
 Description
 
-Copy
-
-    
-    
-    tenant_id
-
 Text
 
 Enter your Azure Tenant ID.
-
-Copy
-
-    
-    
-    application_client_id
 
 Text
 
@@ -735,15 +667,13 @@ Configuration From the Keeper Vault:
 
   1. Create a shared folder in the vault
 
-  2. Create a PAM User record in the shared folder with the fields and custom fields described [above](https://docs.keeper.io/en/secrets-manager/~/changes/CJz1BBmhxNBUf74Nkc3C/secrets-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-rotation#pam-user-record-fields-requirements).
+  2. 
 
   1. In the Secret Manager tab of the Keeper vault, create a new application for the gateway if there is no gateway yet.
 
   2. Make sure the Application has edit permissions on the shared folder created above.
 
-  3. Provision the gateway (gateway tab after selecting the application) on a Linux box. Simply run the install command provided by the Keeper vault and make sure Python and the dependencies listed [above ](https://docs.keeper.io/en/secrets-manager/~/changes/CJz1BBmhxNBUf74Nkc3C/secrets-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-rotation#prerequisites)are installed.
-
-  4. In the Secret Manager tab of the Keeper vault, go to the PAM Configurations tab. Create a new PAM configuration if needed.
+  3.   4. In the Secret Manager tab of the Keeper vault, go to the PAM Configurations tab. Create a new PAM configuration if needed.
 
   5. Under Environment, please select “Local Network”, select the Gateway and the shared folder. 
 
@@ -978,45 +908,8 @@ Copy
         except Exception as e:
             logger.error(f"Error while updating PAM User record in Keeper: {e}")
 
-[PreviousAzure PostgreSQL - Single or Flexible
-Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/azure/managed-database/azure-postgresql-single-or-flexible-
-database)[NextAWS](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/aws)
-
-Last updated 2 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+You need to create a  record where the rotation will be configured later on.
+The fields below need to be created.
 
 Create a PAM User record in the shared folder with the fields and custom
 fields described .
@@ -1033,6 +926,85 @@ along with the additional fields below:
 Instead of creating the PAM User record manually using the documentation  and
 the extra fields above, you could also import the csv file below. It will
 create a template record you can amend and duplicate as needed.
+
+Create a PAM User record in the shared folder with the fields and custom
+fields described .
+
+Provision the gateway (gateway tab after selecting the application) on a Linux
+box. Simply run the install command provided by the Keeper vault and make sure
+Python and the dependencies listed are installed.
+
+Copy
+
+    
+    
+    application_object_id
+
+Copy
+
+    
+    
+    client_secret_id
+
+Copy
+
+    
+    
+    client_secret
+
+Copy
+
+    
+    
+    expires
+
+Copy
+
+    
+    
+    Private Key Type
+
+Copy
+
+    
+    
+    rsa-ssh
+
+Copy
+
+    
+    
+    tenant_id
+
+Copy
+
+    
+    
+    application_client_id
+
+[Azure Overview](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/azure)
+
+[Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-
+started/enforcement-policies)
+
+[application](/en/keeperpam/privileged-access-manager/getting-
+started/applications)
+
+[configured](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration/azure-environment-setup)
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
+[above](https://docs.keeper.io/en/secrets-
+manager/~/changes/CJz1BBmhxNBUf74Nkc3C/secrets-manager/password-
+rotation/rotation-use-cases/azure/azure-app-secret-rotation#pam-user-record-
+fields-requirements)
+
+[above ](https://docs.keeper.io/en/secrets-
+manager/~/changes/CJz1BBmhxNBUf74Nkc3C/secrets-manager/password-
+rotation/rotation-use-cases/azure/azure-app-secret-rotation#prerequisites)
 
 [above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 use-cases/azure/azure-app-secret-rotation#pam-user-record-fields-requirements)

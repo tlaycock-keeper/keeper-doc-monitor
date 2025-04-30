@@ -12,43 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-manager/about/event-
-reporting?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/about/event-reporting?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-manager/about/event-
-reporting?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/secrets-manager/about/event-reporting?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-manager/about/event-
-reporting?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/secrets-manager/about/event-reporting?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/about/event-reporting?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-manager/about/event-
-reporting?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/secrets-manager/about/event-reporting?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-manager/about/event-
-reporting?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-manager/about/event-
-reporting?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/about/event-reporting?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-manager/about/event-
-reporting?fallback=true)[Release Notes](https://docs.keeper.io/en/release-
-notes/secrets-manager/about/event-reporting?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-manager/about/event-
-reporting?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/secrets-manager/about/event-reporting?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/about/event-reporting?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-manager/about/event-
-reporting?fallback=true)[SSO Connect On-Prem](https://docs.keeper.io/en/sso-
-connect-on-prem/secrets-manager/about/event-reporting?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-manager/about/event-
-reporting?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -422,28 +386,6 @@ reporting?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MerbOkoCVRpO3uCliua&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [About KSM](/en/keeperpam/secrets-manager/about)
-
-# Event Reporting
-
-Integration with the Keeper Advanced Reporting & Alerts Module
-
-[PreviousKeeper Notation](/en/keeperpam/secrets-manager/about/keeper-
-notation)[NextField/Record Types](/en/keeperpam/secrets-manager/about/field-
-record-types)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -474,15 +416,37 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MerbOkoCVRpO3uCliua&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [About KSM](/en/keeperpam/secrets-manager/about)
+
+# Event Reporting
+
+Integration with the Keeper Advanced Reporting & Alerts Module
+
+[PreviousKeeper Notation](/en/keeperpam/secrets-manager/about/keeper-
+notation)[NextField/Record Types](/en/keeperpam/secrets-manager/about/field-
+record-types)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 Keeper Secrets Manager generates several events in the Advanced Reporting &
 Alerts Module. These events are available for analysis in several places
 including:
 
-  * Keeper Admin Console ([Learn More ](https://docs.keeper.io/enterprise-guide/event-reporting)about the Event Reporting & Alerts Module): <https://docs.keeper.io/enterprise-guide/event-reporting>[](https://docs.keeper.io/enterprise-guide/event-reporting)
+  * Keeper Admin Console (about the Event Reporting & Alerts Module): 
 
-  * SIEM Export to Splunk and other common providers: <https://docs.keeper.io/enterprise-guide/event-reporting/splunk>[](https://docs.keeper.io/enterprise-guide/event-reporting/splunk)
+  * SIEM Export to Splunk and other common providers: 
 
-  * Webhooks such as Slack and Teams: <https://docs.keeper.io/enterprise-guide/webhooks>[](https://docs.keeper.io/enterprise-guide/webhooks)
+  * Webhooks such as Slack and Teams: 
 
   * Commander  CLI command and  CLI command
 
@@ -580,9 +544,22 @@ ${device_ip}
 Device with an IP that is different from the IP lock attempts to access a
 secret
 
-For a list of all events, visit: <https://docs.keeper.io/enterprise-
-guide/event-reporting>[](https://docs.keeper.io/enterprise-guide/event-
-reporting)
+For a list of all events, visit:
+
+<https://docs.keeper.io/enterprise-guide/event-
+reporting>[](https://docs.keeper.io/enterprise-guide/event-reporting)
+
+[Learn More ](https://docs.keeper.io/enterprise-guide/event-reporting)
+
+<https://docs.keeper.io/enterprise-guide/event-
+reporting>[](https://docs.keeper.io/enterprise-guide/event-reporting)
+
+<https://docs.keeper.io/enterprise-guide/event-
+reporting/splunk>[](https://docs.keeper.io/enterprise-guide/event-
+reporting/splunk)
+
+<https://docs.keeper.io/enterprise-
+guide/webhooks>[](https://docs.keeper.io/enterprise-guide/webhooks)
 
 [audit-report](/en/keeperpam/commander-cli/command-reference/reporting-
 commands#audit-report-command)

@@ -12,47 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/secrets-manager/developer-sdk-
-library/java-sdk?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/developer-sdk-library/java-sdk?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-manager/developer-sdk-
-library/java-sdk?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-manager/developer-sdk-
-library/java-sdk?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-manager/developer-
-sdk-library/java-sdk?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/secrets-manager/developer-sdk-library/java-sdk?fallback=true)[SSO
-Connect Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/developer-sdk-library/java-sdk?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-manager/developer-sdk-
-library/java-sdk?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-manager/developer-
-sdk-library/java-sdk?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-manager/developer-sdk-
-library/java-sdk?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/secrets-manager/developer-sdk-
-library/java-sdk?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/secrets-
-manager/developer-sdk-library/java-sdk?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/secrets-manager/developer-sdk-
-library/java-sdk?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/secrets-manager/developer-sdk-
-library/java-sdk?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/secrets-manager/developer-
-sdk-library/java-sdk?fallback=true)[MSP Guide](https://docs.keeper.io/en/msp-
-guide/secrets-manager/developer-sdk-library/java-sdk?fallback=true)[SSO
-Connect Cloud](https://docs.keeper.io/en/sso-connect-cloud/secrets-
-manager/developer-sdk-library/java-sdk?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/secrets-manager/developer-sdk-
-library/java-sdk?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/secrets-manager/developer-
-sdk-library/java-sdk?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/secrets-manager/developer-sdk-
-library/java-sdk?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -855,6 +815,12 @@ Copy
     //get the password from the first record
     KeeperRecordField pwd = firstRecord.getData().getField(Password.class)
 
+To get a field value, you will need to cast the return to the
+[class](/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk/record-
+field-classes) of the corresponding field type. For a list of field types see
+the [Record Types](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types#field-types) page.
+
 **Keeper Notation**
 
 Get ValueExample Usage
@@ -1151,6 +1117,12 @@ Copy
     
     // save changes
     SecretsManager.updateSecret(options, recordToUpdate);
+
+Each record field type is represented by a class. Cast the field to the
+corresponding class in order to correctly access the field's value. Check the
+[Record Types](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types#field-types) documentation for a list of field
+types.
 
 Fields can have multiple values, which is accessed in a List. In this example
 we are updating the login field, which only accepts one value, so we update
@@ -1531,9 +1503,11 @@ Prerequisites:
 
   * Created records and record fields must be formatted correctly
 
-    *   * TOTP fields accept only URL generated outside of the KSM SDK
+    * See the [documentation](/en/keeperpam/commander-cli/command-reference/record-commands/default-record-types#field-types) for expected field formats for each record type
 
-  * 
+  * TOTP fields accept only URL generated outside of the KSM SDK
+
+  * After record creation, you can upload file attachments using [uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk#upload-a-file)
 
 Create a RecordCreate Record in Sub-folderLogin Record ExampleCustom Type
 Example
@@ -2089,29 +2063,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-To get a field value, you will need to cast the return to the
-[class](/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk/record-
-field-classes) of the corresponding field type. For a list of field types see
-the  page.
-
-Each record field type is represented by a class. Cast the field to the
-corresponding class in order to correctly access the field's value. Check the
-documentation for a list of field types.
-
-See the  for expected field formats for each record type
-
-After record creation, you can upload file attachments using
-
-[Record Types](/en/keeperpam/commander-cli/command-reference/record-
-commands/default-record-types#field-types)
-
-[Record Types](/en/keeperpam/commander-cli/command-reference/record-
-commands/default-record-types#field-types)
-
-[documentation](/en/keeperpam/commander-cli/command-reference/record-
-commands/default-record-types#field-types)
-
-[uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/java-
-sdk#upload-a-file)
 

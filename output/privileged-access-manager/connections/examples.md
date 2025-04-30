@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-
-manager/connections/examples?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/connections/examples?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/connections/examples?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/connections/examples?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/connections/examples?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-
-manager/connections/examples?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/connections/examples?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/connections/examples?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/connections/examples?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/connections/examples?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-
-manager/connections/examples?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/connections/examples?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-
-manager/connections/examples?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-
-manager/connections/examples?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/connections/examples?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-
-manager/connections/examples?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/connections/examples?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-
-manager/connections/examples?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/connections/examples?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-
-manager/connections/examples?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,39 +386,6 @@ manager/connections/examples?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=Y8j5mnC0QbPc7AlyX1Qx&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-
-# Examples
-
-Example connection records
-
-A few example guides explain how to set up Connections:
-
-  * [SSH Protocol with Linux Machine](/en/keeperpam/privileged-access-manager/connections/examples/ssh-protocol-linux-machine)
-
-  * [RDP Protocol with Azure Virtual Machine](/en/keeperpam/privileged-access-manager/connections/examples/rdp-protocol-azure-virtual-machine)
-
-  * [MySQL Protocol with Database](/en/keeperpam/privileged-access-manager/connections/examples/mysql-protocol-mysql-database)
-
-  * [PostgreSQL Protocol with Database](/en/keeperpam/privileged-access-manager/connections/examples/postgresql-protocol-postgresql-database)
-
-[PreviousTelnet Connections](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/telnet-connections)[NextSSH Protocol -
-Linux Machine](/en/keeperpam/privileged-access-
-manager/connections/examples/ssh-protocol-linux-machine)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -490,4 +415,43 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=Y8j5mnC0QbPc7AlyX1Qx&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+
+# Examples
+
+Example connection records
+
+[PreviousTelnet Connections](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/telnet-connections)[NextSSH Protocol -
+Linux Machine](/en/keeperpam/privileged-access-
+manager/connections/examples/ssh-protocol-linux-machine)
+
+Last updated 2 months ago
+
+Was this helpful?
+
+A few example guides explain how to set up Connections:
+
+  *   *   *   * 
+
+[SSH Protocol with Linux Machine](/en/keeperpam/privileged-access-
+manager/connections/examples/ssh-protocol-linux-machine)
+
+[RDP Protocol with Azure Virtual Machine](/en/keeperpam/privileged-access-
+manager/connections/examples/rdp-protocol-azure-virtual-machine)
+
+[MySQL Protocol with Database](/en/keeperpam/privileged-access-
+manager/connections/examples/mysql-protocol-mysql-database)
+
+[PostgreSQL Protocol with Database](/en/keeperpam/privileged-access-
+manager/connections/examples/postgresql-protocol-postgresql-database)
 

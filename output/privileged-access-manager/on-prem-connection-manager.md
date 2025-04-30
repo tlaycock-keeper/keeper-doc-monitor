@@ -12,49 +12,7 @@ Ask or search...
 
 KeeperPAM and Secrets Manager
 
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/on-prem-
-connection-manager?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/on-prem-connection-manager?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-manager/on-
-prem-connection-manager?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-manager/on-
-prem-connection-manager?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/on-prem-connection-manager?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/on-prem-
-connection-manager?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/on-prem-connection-manager?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-manager/on-
-prem-connection-manager?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/on-prem-connection-manager?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-manager/on-
-prem-connection-manager?fallback=true)
-
 KeeperPAM and Secrets Manager
-
-[Docs Home](https://docs.keeper.io/en/privileged-access-manager/on-prem-
-connection-manager?fallback=true)[Keeper Connection
-Manager](https://docs.keeper.io/en/keeper-connection-manager/privileged-
-access-manager/on-prem-connection-manager?fallback=true)[User
-Guides](https://docs.keeper.io/en/user-guides/privileged-access-manager/on-
-prem-connection-manager?fallback=true)[Release
-Notes](https://docs.keeper.io/en/release-notes/privileged-access-manager/on-
-prem-connection-manager?fallback=true)[Enterprise
-Guide](https://docs.keeper.io/en/enterprise-guide/privileged-access-
-manager/on-prem-connection-manager?fallback=true)[MSP
-Guide](https://docs.keeper.io/en/msp-guide/privileged-access-manager/on-prem-
-connection-manager?fallback=true)[SSO Connect
-Cloud](https://docs.keeper.io/en/sso-connect-cloud/privileged-access-
-manager/on-prem-connection-manager?fallback=true)[KeeperPAM and Secrets
-Manager](https://docs.keeper.io/en/keeperpam/privileged-access-manager/on-
-prem-connection-manager?fallback=true)[SSO Connect On-
-Prem](https://docs.keeper.io/en/sso-connect-on-prem/privileged-access-
-manager/on-prem-connection-manager?fallback=true)[Keeper
-Bridge](https://docs.keeper.io/en/keeper-bridge/privileged-access-manager/on-
-prem-connection-manager?fallback=true)
 
   * [KeeperPAM](/en/keeperpam)
   * Privileged Access Manager
@@ -428,32 +386,6 @@ prem-connection-manager?fallback=true)
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * What is Keeper Connection Manager On-Prem?
-  * Integration with KeeperPAM
-  * Install KCM
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=jY0Y6A1qOAai0XdtNuj4&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# On-Prem Connection Manager
-
-Manage a self-hosted version of Keeper Connection Manager
-
-[PreviousDiscovery using the Vault](/en/keeperpam/privileged-access-
-manager/discovery/discovery-using-the-
-vault)[NextReferences](/en/keeperpam/privileged-access-manager/references)
-
-Last updated 1 month ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -483,6 +415,32 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Overview
+  * What is Keeper Connection Manager On-Prem?
+  * Integration with KeeperPAM
+  * Install KCM
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=jY0Y6A1qOAai0XdtNuj4&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# On-Prem Connection Manager
+
+Manage a self-hosted version of Keeper Connection Manager
+
+[PreviousDiscovery using the Vault](/en/keeperpam/privileged-access-
+manager/discovery/discovery-using-the-
+vault)[NextReferences](/en/keeperpam/privileged-access-manager/references)
+
+Last updated 1 month ago
+
+Was this helpful?
 
 ##
 
