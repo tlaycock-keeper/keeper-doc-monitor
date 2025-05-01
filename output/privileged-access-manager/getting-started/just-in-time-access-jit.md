@@ -445,7 +445,7 @@ KeeperPAM Just-In-Time Access and Zero Standing Privilege
 manager/getting-started/sharing-and-access-control)[NextPassword
 Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
 
-Last updated 21 days ago
+Last updated 22 days ago
 
 Was this helpful?
 
@@ -703,19 +703,9 @@ surface. By implementing these capabilities across your infrastructure, you
 can ensure that privileged access is strictly controlled, properly approved,
 and thoroughly audited.
 
-Just-In-Time Ephemeral Account Creation during PAM Sessions
-
-Just-In-Time Role Elevation during Privileged Sessions
-
 extends JIT capabilities to end-user devices, allowing for precise privilege
 elevation for specific processes, applications, or tasks without granting full
 administrative access.
-
-Just-In-Time Access with Keeper Privilege Manager
-
-Time-Limited Access
-
-Workflow and Requests for Approval
 
 For more information on specific JIT use cases or implementation guidance,
 contact your Keeper Security account manager or email .
@@ -727,6 +717,19 @@ contact your Keeper Security account manager or email .
 [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
 
 [pam@keepersecurity.com](mailto:pam@keepersecurity.com)
+
+[Time-Limited Access](https://docs.keeper.io/en/enterprise-guide/sharing/time-
+limited-access)
+
+Just-In-Time Ephemeral Account Creation during PAM Sessions
+
+Just-In-Time Role Elevation during Privileged Sessions
+
+Just-In-Time Access with Keeper Privilege Manager
+
+Time-Limited Access
+
+Workflow and Requests for Approval
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -754,7 +757,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGk3XjDE5O
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWkIRRG35dLvClY5Rnq4J%252FPAM%2520Settings%2520-%2520Workflow.png%3Falt%3Dmedia%26token%3De7d0e549-6267-40c8-bbcf-
 cb929b534bc0&width=768&dpr=4&quality=100&sign=88359820&sv=2)
-
-[Time-Limited Access](https://docs.keeper.io/en/enterprise-guide/sharing/time-
-limited-access)
 

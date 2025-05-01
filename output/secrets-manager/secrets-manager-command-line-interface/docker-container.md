@@ -386,36 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Getting the image
@@ -547,6 +517,16 @@ The `init` service will load the CLI docker. The container will start, display
 a CLI splash screen, and then exit. Even though the container has stopped, the
 `/cli` volume is still accessible.
 
+The `main` service will mount the CLI docker's volume under the directory
+`/cli` using `volumes_from`. The `command` is overridden to run the GLIBC
+version of the KSM CLI. The `command` is using the `exec` function of the CLI.
+That will replace environment variables environment variable, that use the
+[Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-notation), with a
+secret value. The `exec` command, of the CLI, is running the `printenv`
+application. That will print the environment variable, **MY_LOGIN** , that has
+been set to Keeper Notation, and has had its value replaced with a secret by
+the `exec` command.
+
 Copy
 
     
@@ -581,14 +561,33 @@ Last updated 6 months ago
 
 Was this helpful?
 
-The `main` service will mount the CLI docker's volume under the directory
-`/cli` using `volumes_from`. The `command` is overridden to run the GLIBC
-version of the KSM CLI. The `command` is using the `exec` function of the CLI.
-That will replace environment variables environment variable, that use the ,
-with a secret value. The `exec` command, of the CLI, is running the `printenv`
-application. That will print the environment variable, **MY_LOGIN** , that has
-been set to Keeper Notation, and has had its value replaced with a secret by
-the `exec` command.
+#### Company
 
-[Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-notation)
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

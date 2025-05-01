@@ -386,36 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview 
@@ -438,15 +408,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=MXC4G5wXaqWiXZDJuEWg&only=yes&limit=100)
 
 Keeper Connections - Telnet Protocol
 
-[PreviousVNC Connections](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/vnc-
-connections)[NextExamples](/en/keeperpam/privileged-access-
-manager/connections/examples)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 ##
 
 Overview
@@ -462,7 +423,8 @@ directly to target devices.
 Prerequisites
 
 Prior to following this guide, familiarize yourself with the prerequisites on
-the Connection's .
+the Connection's [Getting Started page](/en/keeperpam/privileged-access-
+manager/connections/getting-started).
 
 The following PAM records are needed in order to successfully setup this
 protocol:
@@ -487,6 +449,9 @@ to the endpoint
 
 This guide will use a **Linux Machine**. For more details on how this is setup
 on the PAM Machine Record, visit the following page:
+
+[Example: Linux Machine](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-machine/example-linux-machine)
 
 ##
 
@@ -610,11 +575,50 @@ Default value is "white-black"
 
 Session Recordings - Telnet Protocol
 
-[Getting Started page](/en/keeperpam/privileged-access-
-manager/connections/getting-started)
+[PreviousVNC Connections](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/vnc-
+connections)[NextExamples](/en/keeperpam/privileged-access-
+manager/connections/examples)
 
-[Example: Linux Machine](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-machine/example-linux-machine)
+Last updated 3 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this page.
+
+  * Learn more about Session Recording and Playback
 
 Field
 
@@ -631,12 +635,6 @@ This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
 
 PAM User
-
-For this protocol, both graphical and the full, raw text text content of
-terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this page.
-
-  * Learn more about Session Recording and Playback
 
 Telnet Session Recordings
 

@@ -423,19 +423,6 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=Zu7jJt6qM6i7YInl8ObP&only=yes&limit=100)
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
-
-# CSV Import
-
-Automatic migration of passwords from a CSV file
-
-[PreviousProton Pass Import](/en/keeperpam/commander-cli/command-
-reference/import-and-export-commands/proton-pass-import)[NextJSON
-Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands/json-import)
-
 Last updated 5 months ago
 
 Was this helpful?
@@ -452,13 +439,31 @@ Use this order of fields shown below with commas separating each value (and no
 spaces around the commas). Not all fields are required; some can be left
 blank.
 
-myimport.csv
+Custom fields begin with the name in the 8th field, (column H). The custom
+field value goes in the next field (column I).
 
-Copy
+  * To specify subfolders, use backslash "\" between folder names
 
-    
-    
-    Folder,Title,Login,Password,Website Address,Notes,Shared Folder,Custom Field1 Name,Custom Field1 Value,Custom Field2 Name,Custom Field2 Value
+  * To set shared folder permission on the record, use the #edit or #reshare tags as seen below
+
+  * Enclose fields in quotes for multi-line or special characters
+
+  * Ensure files are UTF-8 encoded for support of international or double-byte characters
+
+Below is an example csv file that showcases several import features including
+personal folders, shared folders, subfolders, special characters and multi-
+line fields.
+
+To import this file as "login" records:
+
+The resulting vault will look like this:
+
+Here is a list of some record types (you may have more if you have custom
+record types, or less if you are restricting some record types):
+
+Below is a list of all possible field types (including custom fields). **You
+can use these as a custom field names such as**`**$oneTimeCode**`**as shown
+below.**
 
 Position
 
@@ -467,6 +472,47 @@ Column
 Value
 
 Description / Format
+
+Folder
+
+Title
+
+Login
+
+Password
+
+Website Address
+
+Notes
+
+Shared Folder
+
+Custom Field1 Name
+
+Custom Field1 Value
+
+Custom Field2 Name
+
+Custom Field2 Value
+
+Custom Field3 Name
+
+Custom Field3 Value
+
+Custom Field4 Name
+
+Custom Field4 Value
+
+More advanced import options are available using the  format described in the
+next section.
+
+myimport.csv
+
+Copy
+
+    
+    
+    Folder,Title,Login,Password,Website Address,Notes,Shared Folder,Custom Field1 Name,Custom Field1 Value,Custom Field2 Name,Custom Field2 Value
 
 1
 
@@ -556,21 +602,6 @@ Custom Field 2 Value
 
 login
 
-Custom fields begin with the name in the 8th field, (column H). The custom
-field value goes in the next field (column I).
-
-  * To specify subfolders, use backslash "\" between folder names
-
-  * To set shared folder permission on the record, use the #edit or #reshare tags as seen below
-
-  * Enclose fields in quotes for multi-line or special characters
-
-  * Ensure files are UTF-8 encoded for support of international or double-byte characters
-
-Below is an example csv file that showcases several import features including
-personal folders, shared folders, subfolders, special characters and multi-
-line fields.
-
 Copy
 
     
@@ -582,52 +613,27 @@ Copy
     Account Number 449128
     This is multi-line",Shared Accounts#edit#reshare,2FA Phone Number,+19165551212
 
-To import this file as "login" records:
-
 Copy
 
     
     
     keeper import --format=csv --login-type test.csv
 
-The resulting vault will look like this:
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
 
-Here is a list of some record types (you may have more if you have custom
-record types, or less if you are restricting some record types):
+# CSV Import
 
-Below is a list of all possible field types (including custom fields). **You
-can use these as a custom field names such as**`**$oneTimeCode**`**as shown
-below.**
+Automatic migration of passwords from a CSV file
 
-Folder
+[PreviousProton Pass Import](/en/keeperpam/commander-cli/command-
+reference/import-and-export-commands/proton-pass-import)[NextJSON
+Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands/json-import)
 
-Title
-
-Login
-
-Password
-
-Website Address
-
-Notes
-
-Shared Folder
-
-Custom Field1 Name
-
-Custom Field1 Value
-
-Custom Field2 Name
-
-Custom Field2 Value
-
-Custom Field3 Name
-
-Custom Field3 Value
-
-Custom Field4 Name
-
-Custom Field4 Value
+[JSON Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands/json-import)
 
 Folder1\subfolder
 
@@ -654,12 +660,6 @@ $host
 10.0.0.1
 
 $url
-
-More advanced import options are available using the  format described in the
-next section.
-
-[JSON Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands/json-import)
 
 [www.google.com](http://www.google.com/)
 

@@ -386,6 +386,35 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * SIEM Events
+  * Secrets Manager Events
+  * Keeper Connection Manager (KCM) Cloud Events
+  * Alerts
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=yVhLMN6y9UZD8e0IKtSA&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
+
+# Event Reporting
+
+Keeper rotation event reporting in the Advanced Reporting & Alerts module
+
+[PreviousActive Directory Least Privilege](/en/keeperpam/privileged-access-
+manager/references/active-directory-least-privilege)[NextImporting PAM
+Records](/en/keeperpam/privileged-access-manager/references/importing-pam-
+records)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -416,35 +445,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-  * Overview
-  * SIEM Events
-  * Secrets Manager Events
-  * Keeper Connection Manager (KCM) Cloud Events
-  * Alerts
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=yVhLMN6y9UZD8e0IKtSA&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
-
-# Event Reporting
-
-Keeper rotation event reporting in the Advanced Reporting & Alerts module
-
-[PreviousActive Directory Least Privilege](/en/keeperpam/privileged-access-
-manager/references/active-directory-least-privilege)[NextImporting PAM
-Records](/en/keeperpam/privileged-access-manager/references/importing-pam-
-records)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 ##
 
 Overview
@@ -456,6 +456,8 @@ Console.
 ##
 
 SIEM Events
+
+SIEM Event List
 
 ###
 
@@ -473,11 +475,8 @@ To receive immediate feedback on any rotation related events, Keeper's
 "Alerts" capability can push these events to email, SMS, webhooks, Slack,
 Teams, etc.
 
-To learn more about the Keeper Advanced Reporting & Alerts module .
-
-[at this link](https://docs.keeper.io/enterprise-guide/event-reporting)
-
-SIEM Event List
+To learn more about the Keeper Advanced Reporting & Alerts module [at this
+link](https://docs.keeper.io/enterprise-guide/event-reporting).
 
 [![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
 files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Reporting,

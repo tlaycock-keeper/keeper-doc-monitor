@@ -386,6 +386,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Commands
@@ -893,23 +923,7 @@ Detailed Import Instructions
 Step by step instructions are documented for migrating data and importing into
 Keeper from the following sources:
 
-  * [Cyberark](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/cyberark-import)
-
-  * [LastPass](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/lastpass-import)
-
-  * [Thycotic/Delinea Secret Server](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/delinea-thycotic-secret-server-import)
-
-  * [Keepass](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/keepass-import)
-
-  * [ManageEngine](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/manageengine-import)
-
-  * [Myki](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/myki-import)
-
-  * [Proton Pass](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/proton-pass-import)
-
-  * [CSV](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/csv-import)
-
-  * [JSON](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/json-import)
+  *   *   *   *   *   *   *   *   * 
 
 ###
 
@@ -922,7 +936,7 @@ formats:
 
   * CSV
 
-  * Keepass (see additional [install instructions](https://github.com/Keeper-Security/Commander/blob/master/keepercommander/importer/keepass/README.md))
+  * 
 
 JSON export files contain records, folders, subfolders, shared folders,
 default folder permissions and user/team permissions. CSV import files contain
@@ -961,36 +975,6 @@ Last updated 4 months ago
 
 Was this helpful?
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 Additional import instructions are .
 
 This file can then be used for subsequently loading custom record types to
@@ -999,6 +983,38 @@ command.
 
 **Detail** : Load custom record types from a local JSON file. This command is
 used alongside the  command.
+
+Keepass (see additional )
+
+[Cyberark](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands/cyberark-import)
+
+[LastPass](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands/lastpass-import)
+
+[Thycotic/Delinea Secret Server](/en/keeperpam/commander-cli/command-
+reference/import-and-export-commands/delinea-thycotic-secret-server-import)
+
+[Keepass](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands/keepass-import)
+
+[ManageEngine](/en/keeperpam/commander-cli/command-reference/import-and-
+export-commands/manageengine-import)
+
+[Myki](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands/myki-import)
+
+[Proton Pass](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands/proton-pass-import)
+
+[CSV](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands/csv-import)
+
+[JSON](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands/json-import)
+
+[install instructions](https://github.com/Keeper-
+Security/Commander/blob/master/keepercommander/importer/keepass/README.md)
 
 [documented below](/en/keeperpam/commander-cli/command-reference/import-and-
 export-commands#detailed-import-instructions)

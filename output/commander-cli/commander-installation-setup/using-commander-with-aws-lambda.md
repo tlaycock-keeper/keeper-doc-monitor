@@ -1012,9 +1012,6 @@ installation-setup)
 
 [Command Reference](/en/keeperpam/commander-cli/command-reference)
 
-[ config file documentation ](/en/keeperpam/commander-cli/commander-
-installation-setup/logging-in#commander-configuration-file)
-
 [![Logo](https://docs.aws.amazon.com/assets/images/favicon.ico)Invoking Lambda
 functions - AWS LambdaAWS
 Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
@@ -1027,6 +1024,9 @@ email-ses/)
 [![Logo](https://github.com/fluidicon.png)Commander/examples at master ·
 Keeper-Security/CommanderGitHub](https://github.com/Keeper-
 Security/Commander/tree/master/examples)
+
+[ config file documentation ](/en/keeperpam/commander-cli/commander-
+installation-setup/logging-in#commander-configuration-file)
 
 [2KBpackage_layer_content.sh](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
 x-

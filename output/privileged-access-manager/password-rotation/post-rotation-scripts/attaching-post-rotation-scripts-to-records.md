@@ -423,19 +423,6 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=0HKqc5nrihdSnYkSFAIv&only=yes&limit=100)
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Post-Rotation Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts)
-
-# Attaching Scripts
-
-Attaching post-rotation scripts to PAM resource records
-
-[PreviousInputs and Outputs](/en/keeperpam/privileged-access-manager/password-
-rotation/post-rotation-scripts/parameters)[NextCode
-Examples](/en/keeperpam/privileged-access-manager/password-rotation/post-
-rotation-scripts/accessing-parameters)
-
 Last updated 2 months ago
 
 Was this helpful?
@@ -459,6 +446,19 @@ the attached Post Rotation scripts:
 
 Click Save to create or update the record. Attached Post Rotation Scripts can
 be deleted or edited by clicking on their respective actions.
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Post-Rotation Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts)
+
+# Attaching Scripts
+
+Attaching post-rotation scripts to PAM resource records
+
+[PreviousInputs and Outputs](/en/keeperpam/privileged-access-manager/password-
+rotation/post-rotation-scripts/parameters)[NextCode
+Examples](/en/keeperpam/privileged-access-manager/password-rotation/post-
+rotation-scripts/accessing-parameters)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

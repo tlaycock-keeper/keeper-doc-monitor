@@ -417,7 +417,7 @@ Applying least privilege policies to your users and machines
 manager/deployment)[NextManaging Requests](/en/keeperpam/endpoint-privilege-
 manager/managing-requests)
 
-Last updated 19 days ago
+Last updated 20 days ago
 
 Was this helpful?
 

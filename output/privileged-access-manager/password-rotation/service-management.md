@@ -442,7 +442,7 @@ rotation/rotation-use-cases/network-devices/cisco-meraki)[NextPost-Rotation
 Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-
 rotation-scripts)
 
-Last updated 13 days ago
+Last updated 14 days ago
 
 Was this helpful?
 

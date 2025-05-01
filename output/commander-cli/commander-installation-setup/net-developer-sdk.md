@@ -441,7 +441,7 @@ installation-setup/developer-mode)[NextPowerShell
 Module](/en/keeperpam/commander-cli/commander-installation-setup/installation-
 on-powershell)
 
-Last updated 11 days ago
+Last updated 12 days ago
 
 Was this helpful?
 

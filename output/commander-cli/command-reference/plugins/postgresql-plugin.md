@@ -564,23 +564,11 @@ psql --host=${cmdr:host} --port=${cmdr:port} --username=${login}
 
 Here's a screenshot of the Keeper Vault record for this use case:
 
-For more information on the `connect` command, see the
-
-[documentation](/en/keeperpam/commander-cli/command-
-reference/plugins/password-rotation#connect-command)
-
-[Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
-rotation)
-
-[KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
-commands)
-
-[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
-cli#typed-vs-untyped-records-v3-vs-v2)
-
 Commander will use the login and password to login to the PostgreSQL account
 
 A Keeper Record setup for connection
+
+For more information on the `connect` command, see the
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -594,7 +582,19 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fqo9RDE4VL
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwoGgeVwEBlsI9B4g7ffZ%252Fimage.png%3Falt%3Dmedia%26token%3Df4950821-af11-48d5-bf7b-b92322d22e69&width=768&dpr=4&quality=100&sign=4fea8ee7&sv=2)
 
+[Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
+rotation)
+
+[KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
+commands)
+
+[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
+cli#typed-vs-untyped-records-v3-vs-v2)
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf4CgBqohGZ1_sEVoQH%252Fimage.png%3Falt%3Dmedia%26token%3D86e1e38c-0c84-4aa6-bcc4-bdefd9c4113c&width=768&dpr=4&quality=100&sign=476408d7&sv=2)
+
+[documentation](/en/keeperpam/commander-cli/command-
+reference/plugins/password-rotation#connect-command)
 

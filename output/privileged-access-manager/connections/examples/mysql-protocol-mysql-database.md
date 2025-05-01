@@ -386,36 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview 
@@ -451,6 +421,36 @@ Last updated 2 months ago
 
 Was this helpful?
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ##
 
 Overview
@@ -474,7 +474,9 @@ Database directly from your Keeper Vault.
 
 Step 1 - Enable Connection Enforcement Policies
 
-From the Admin Console, enable the corresponding  for connections:
+From the Admin Console, enable the corresponding [PAM Enforcement
+Policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-
+policies) for connections:
 
 Policy
 
@@ -487,14 +489,32 @@ Can configure connection and session recording
 Allow users to configure Connection and Session Recordings settings on PAM
 Machine, PAM Directory, PAM Database and PAM Configuration Record Types
 
+Copy
+
+    
+    
+    ALLOW_CONFIGURE_PAM_CLOUD_CONNECTION_SETTINGS
+
 Can launch connections
 
 Allow users to launch connections on PAM Machine, PAM Directory, PAM Database
 Record Types
 
+Copy
+
+    
+    
+    ALLOW_LAUNCH_PAM_ON_CLOUD_CONNECTION
+
 Can view session recordings
 
 Allow users to view Session Recordings
+
+Copy
+
+    
+    
+    ALLOW_VIEW_KCM_RECORDINGS
 
 ##
 
@@ -504,13 +524,34 @@ Prior to creating the PAM Record types in your Vault, the Keeper Gateway needs
 to be installed in your infrastructure. Visit the following guides based on
 your needs:
 
-  *   *   * 
+  * [Windows Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/windows-installation)
+
+  * [Linux Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/linux-installation)
+
+  * [Docker Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/docker-installation)
+
+Additionally, the Keeper Gateways needs to be configured with the Gateway
+token. For more information, visit this [page](/en/keeperpam/privileged-
+access-manager/getting-started/gateways/one-time-access-token).
+
+Steps 3 and Step 4 can be automated with the Gateway Wizard. For more
+information, visit this [page](/en/keeperpam/privileged-access-manager/quick-
+start-sandbox).
 
 ##
 
 Step 3 - Configuring the PAM Configuration
 
-  *   *   * 
+The [PAM Configuration ](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)contains critical information on your
+infrastructure, settings and associated Keeper Gateway. Visit the following
+pages for more details based on your target infrastructure:
+
+  * [Setting up Local Environment on the PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/local-environment-setup)
+
+  * [Setting up AWS Environment on the PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup)
+
+  * [Setting up Azure Environment on the PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/azure-environment-setup)
 
 ##
 
@@ -519,10 +560,15 @@ Step 4 - Create and Configure PAM Database and PAM User(s) Records
 After setting up your Gateway and PAM Configuration Record, the MySQL Database
 and its users need to be configured on PAM Record types in your Vault:
 
-  *   * 
+  * [PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database) \- The MySQL Database is configured on this record type
+
+  * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user) \- The MySQL Database User is configured on this record type
 
 Refer to this example on how to configure MySQL Database on a PAM Database
 record type:
+
+[Example: MySQL Database](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-database/example-mysql-database)
 
 ##
 
@@ -537,6 +583,9 @@ The PAM Settings need to be configured to enable connections or tunnels on the
 target defined on the PAM Database Record. To configure the MySQL protocol,
 visit the following page:
 
+[MySQL Connections](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/mysql-connections)
+
 ##
 
 Launching Connections
@@ -544,6 +593,10 @@ Launching Connections
 Once you have configured the MySQL Protocol connection on your PAM Database
 Record, your record will contain the following connection banner with the
 "Launch" Button:
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLT7kp5Yt2zTfQZRIWezl%252Fsqlconn.png%3Falt%3Dmedia%26token%3Dbe6b3a97-684b-4288-9ede-8f1bdb0766e3&width=768&dpr=4&quality=100&sign=53446bd6&sv=2)
 
 In the above image, a MySQL Database has been configured on the PAM Database
 Record. When clicking launch, the Vault Client will render a window with the
@@ -561,82 +614,6 @@ When sharing a PAM Database record, the linked admin credentials will **not**
 be shared. For example, if the PAM Database is configured with a MySQL
 Database, the recipient can connect to the MySQL Database on the PAM Database
 record without having direct access to the linked credentials.
-
-Additionally, the Keeper Gateways needs to be configured with the Gateway
-token. For more information, visit this .
-
-Steps 3 and Step 4 can be automated with the Gateway Wizard. For more
-information, visit this .
-
-The contains critical information on your infrastructure, settings and
-associated Keeper Gateway. Visit the following pages for more details based on
-your target infrastructure:
-
-\- The MySQL Database is configured on this record type
-
-\- The MySQL Database User is configured on this record type
-
-Copy
-
-    
-    
-    ALLOW_CONFIGURE_PAM_CLOUD_CONNECTION_SETTINGS
-
-Copy
-
-    
-    
-    ALLOW_LAUNCH_PAM_ON_CLOUD_CONNECTION
-
-Copy
-
-    
-    
-    ALLOW_VIEW_KCM_RECORDINGS
-
-[Windows Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/windows-installation)
-
-[Linux Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/linux-installation)
-
-[Docker Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/docker-installation)
-
-[page](/en/keeperpam/privileged-access-manager/getting-started/gateways/one-
-time-access-token)
-
-[page](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
-
-[PAM Configuration ](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
-
-[Setting up Local Environment on the PAM
-Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/local-environment-setup)
-
-[Setting up AWS Environment on the PAM
-Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/aws-environment-setup)
-
-[Setting up Azure Environment on the PAM
-Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/azure-environment-setup)
-
-[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database)
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
-[Example: MySQL Database](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-database/example-mysql-database)
-
-[MySQL Connections](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/mysql-connections)
-
-[PAM Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-
-started/enforcement-policies)
 
 [Enable the Connection Enforcement Policies](/en/keeperpam/privileged-access-
 manager/connections/examples/mysql-protocol-mysql-database#step-1-enable-
@@ -657,8 +634,4 @@ database#step-4-create-and-configure-pam-database-and-pam-user-s-records)
 [Configure PAM Settings and the MySQL Connection
 Protocol](/en/keeperpam/privileged-access-manager/connections/examples/mysql-
 protocol-mysql-database#step-5-configuring-pam-settings-and-mysql-protocol)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLT7kp5Yt2zTfQZRIWezl%252Fsqlconn.png%3Falt%3Dmedia%26token%3Dbe6b3a97-684b-4288-9ede-8f1bdb0766e3&width=768&dpr=4&quality=100&sign=53446bd6&sv=2)
 

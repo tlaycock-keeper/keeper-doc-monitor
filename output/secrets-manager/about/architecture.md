@@ -386,32 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * System Architecture
-  * High Availability and Local Cache
-  * Encryption Model
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-Mi1zTe4I8zDWSkB54eH&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [About KSM](/en/keeperpam/secrets-manager/about)
-
-# Architecture
-
-Secrets Manager High Level Architecture
-
-[PreviousAbout KSM](/en/keeperpam/secrets-
-manager/about)[NextTerminology](/en/keeperpam/secrets-
-manager/about/terminology)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -441,6 +415,32 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * System Architecture
+  * High Availability and Local Cache
+  * Encryption Model
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-Mi1zTe4I8zDWSkB54eH&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [About KSM](/en/keeperpam/secrets-manager/about)
+
+# Architecture
+
+Secrets Manager High Level Architecture
+
+[PreviousAbout KSM](/en/keeperpam/secrets-
+manager/about)[NextTerminology](/en/keeperpam/secrets-
+manager/about/terminology)
+
+Last updated 4 months ago
+
+Was this helpful?
 
 ##
 

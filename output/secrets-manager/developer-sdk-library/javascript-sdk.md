@@ -457,7 +457,7 @@ Detailed Javascript SDK docs for Keeper Secrets Manager
 library/java-sdk/record-field-classes)[Next.NET SDK](/en/keeperpam/secrets-
 manager/developer-sdk-library/.net-sdk)
 
-Last updated 21 days ago
+Last updated 22 days ago
 
 Was this helpful?
 
@@ -1749,12 +1749,12 @@ notation)
 [Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
 notation)
 
+[uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-
+sdk#upload-a-file)
+
 [Record Types](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
 
 [documentation](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
-
-[uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-
-sdk#upload-a-file)
 

@@ -447,7 +447,7 @@ Sync secrets from the Keeper Vault with AWS Secrets Manager
 manager/integrations/aws-cli-credential-process)[NextAWS KMS
 Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
 
-Last updated 15 days ago
+Last updated 16 days ago
 
 Was this helpful?
 
@@ -650,10 +650,6 @@ To use the KSM sync to AWS, AWS  requires standard IAM security credentials
 with `SecretsManagerReadWrite` enabled for the entire vault or on individual
 keys to sync.
 
-AWS Credentials Record Type Definition
-
-Credentials fields as custom fields
-
 See the  for more information
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
@@ -673,6 +669,13 @@ notation)
 [`sync` command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/sync-command)
 
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
+AWS Credentials Record Type Definition
+
+Credentials fields as custom fields
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FmqGoDtyLNTaLkl9bVfCi%252Fdatasource-
@@ -690,9 +693,6 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FoOaFzhmKu
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FS1qSqpXQ74npJ4ZMWwTP%252Fimage.png%3Falt%3Dmedia%26token%3D99c001ae-982d-4d5c-b267-bd95cd6c9ab7&width=768&dpr=4&quality=100&sign=a548ddb8&sv=2)
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)

@@ -418,34 +418,14 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * UID Starts With '-'
-  * Typed vs Untyped Records (V3 vs V2)
-  * How to Identify Typed vs Legacy Records
-  * Differences in Brief
-  * Command Permissions
-  * Role Enforcement Policies
-  * Administrative Permissions
-  * Secure Add-Ons
-  * Installation Issues with Python
-  * On Windows
-  * On Mac 
-  * Working with MS-DOS / Windows Paths
-  * Security Audit Report Score Re-alignment Process
-  * SSL Certificate Errors
-  * Found a Bug?
-  * Vulnerability Disclosure Program
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-MRvEX0FvptiSFK4MoK8&only=yes&limit=100)
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
+Last updated 3 months ago
 
-# Troubleshooting
-
-In the event that our unquestionably perfect code fails to run here are some
-things to try...
+Was this helpful?
 
 ##
 
@@ -460,12 +440,6 @@ UID.
 
 **Example:**
 
-Copy
-
-    
-    
-    get -- -UREsVJNP7vU-KTyZ3YF9A
-
 Commander CLI will then recognize the UID without confusing it for a command
 switch. In this case, it will search for a record with the UID `-UREsVJNP7vU-
 KTyZ3YF9A`
@@ -478,12 +452,6 @@ needs to placed as the last positional parameter.
 
 **Example:**
 
-Copy
-
-    
-    
-    get --format json -- -UREsVJNP7vU-KTyZ3YF9A
-
 **Using UID that begins with '-' as an argument**
 
 If you need to use the UID as an argument for a command flag, there is instead
@@ -492,12 +460,6 @@ a different format.
 To do this, add "=" after the flag, and wrap the UID in quotation marks.
 
 **Example:**
-
-Copy
-
-    
-    
-    secrets-manager share add --app TestApp --secret="-fwZjKGbKnZCo1Fh8gsf5w"
 
 ##
 
@@ -528,69 +490,13 @@ In Commander, when you view the details of a record with the `get` command,
 Typed records will always show a type field, while Legacy records will have no
 type field at all.
 
-Copy
-
-    
-    
-    Typed Record
-    My Vault> get uxRrj[...]ZAM0bSQ
-    
-                     UID: uxRrj[...]ZAM0bSQ
-                    Type: databaseCredentials
-                   Title: LastPass Database
-                   Notes: LP DB Notes
-             type (text): SQL
-                  (host): hostName | 3030
-                 (login): SQL_Admin
-         Database (text): MyDB
-         
-    Legacy Record
-    My Vault> get 4XjSH[...]Gy1LAEg
-    
-                     UID: 4XjSH[...]Gy1LAEg
-                   Title: My Record
-                   Login: Login
-                Password: Password
-
 Additionally, the `ls -l` command shows records in a list with type as one
 column. Any record with a value in that field is typed, and any record with no
 value is legacy.
 
-Copy
-
-    
-    
-    My Vault> ls -l
-        #  Record UID  Type                 Title                    Login                      URL
-    ---  ------------- -------------------  -----------------------  -------------------------  -----------------------------------
-      1  V[...]w       login                Typed                    MyLogin                    example.com
-      2  q[...]A                            Legacy                   MyLegacyLogin              legacy.com
-
 ###
 
 Differences in Brief
-
-Legacy
-
-Typed
-
-Names
-
-Legacy, Untyped, V2
-
-Typed, V3
-
-Fields
-
-Set (login, password, url, totp, files, notes)
-
-Customizable by type
-
-Type Value (`get [UID]` command )
-
-_empty_ (No type field)
-
-`_Type: type value_` _e.g. 'login'_
 
 ##
 
@@ -653,12 +559,6 @@ updated version of Python 3 installed.
 
 On **W** indows
 
-Copy
-
-    
-    
-    C:\>pip3 --version
-
 Validate WinPython is correctly installed by checking the installed version
 from launching the "WinPython Command Prompt" in the installation folder:
 
@@ -676,19 +576,7 @@ the application to run or install. To do this open "System Preferences" >
 Validate Python is correctly installed by checking the installed version from
 a terminal window:
 
-Copy
-
-    
-    
-    $ pip3 --version
-
 Don't run the below, it'll report the older version of python:
-
-Copy
-
-    
-    
-    $  --version
 
 ##
 
@@ -708,12 +596,6 @@ For example, let's say you'd like to run the `list` command and output the
 results (in CSV format) to _**C:\Users\user1\my_records.csv**_
 
 The command in that case would be
-
-Copy
-
-    
-    
-    list --format csv --output 'C:\Users\user1\my_records.csv'
 
 ##
 
@@ -740,24 +622,12 @@ The Process
 
 As a Keeper administrator, log in to Commander and run the following:
 
-Copy
-
-    
-    
-    security-audit sync --hard <USER_EMAIL_1> <USER_EMAIL_2> ... <USER_EMAIL_N> 
-
 where `<USER_EMAIL_1> ... <USER_EMAIL_N>` are the emails associated with the
 vaults to be synced.
 
 Alternatively, you can opt to initiate a sync for all vaults (instead of
 targeting them individually as in the example above) using the following
 command:
-
-Copy
-
-    
-    
-    security-audit sync --hard @all
 
 Please be aware that immediately following either of the command calls
 described above, you may see inaccurate security audit scores for the
@@ -801,14 +671,11 @@ Found a Bug?
 
 Vulnerability Disclosure Program
 
-[PreviousService Mode REST API](/en/keeperpam/commander-cli/service-mode-rest-
-api)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 Typed records are required for some features, such as .
+
+Legacy
+
+Typed
 
 To complete the process, have the owner of each affected vault log in to their
 account using the latest version of Commander (installer available for
@@ -819,6 +686,139 @@ ticket on our .
 
 Keeper has partnered with Bugcrowd to manage our vulnerability disclosure
 program. Please submit reports through  or send an email to .
+
+Copy
+
+    
+    
+    get -- -UREsVJNP7vU-KTyZ3YF9A
+
+Copy
+
+    
+    
+    get --format json -- -UREsVJNP7vU-KTyZ3YF9A
+
+Copy
+
+    
+    
+    secrets-manager share add --app TestApp --secret="-fwZjKGbKnZCo1Fh8gsf5w"
+
+Copy
+
+    
+    
+    Typed Record
+    My Vault> get uxRrj[...]ZAM0bSQ
+    
+                     UID: uxRrj[...]ZAM0bSQ
+                    Type: databaseCredentials
+                   Title: LastPass Database
+                   Notes: LP DB Notes
+             type (text): SQL
+                  (host): hostName | 3030
+                 (login): SQL_Admin
+         Database (text): MyDB
+         
+    Legacy Record
+    My Vault> get 4XjSH[...]Gy1LAEg
+    
+                     UID: 4XjSH[...]Gy1LAEg
+                   Title: My Record
+                   Login: Login
+                Password: Password
+
+Copy
+
+    
+    
+    My Vault> ls -l
+        #  Record UID  Type                 Title                    Login                      URL
+    ---  ------------- -------------------  -----------------------  -------------------------  -----------------------------------
+      1  V[...]w       login                Typed                    MyLogin                    example.com
+      2  q[...]A                            Legacy                   MyLegacyLogin              legacy.com
+
+Names
+
+Legacy, Untyped, V2
+
+Typed, V3
+
+Fields
+
+Set (login, password, url, totp, files, notes)
+
+Customizable by type
+
+Type Value (`get [UID]` command )
+
+_empty_ (No type field)
+
+`_Type: type value_` _e.g. 'login'_
+
+Copy
+
+    
+    
+    C:\>pip3 --version
+
+Copy
+
+    
+    
+    $ pip3 --version
+
+Copy
+
+    
+    
+    $  --version
+
+Copy
+
+    
+    
+    list --format csv --output 'C:\Users\user1\my_records.csv'
+
+Copy
+
+    
+    
+    security-audit sync --hard <USER_EMAIL_1> <USER_EMAIL_2> ... <USER_EMAIL_N> 
+
+Copy
+
+    
+    
+    security-audit sync --hard @all
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+
+# Troubleshooting
+
+In the event that our unquestionably perfect code fails to run here are some
+things to try...
+
+[PreviousService Mode REST API](/en/keeperpam/commander-cli/service-mode-rest-
+api)
+
+  * UID Starts With '-'
+  * Typed vs Untyped Records (V3 vs V2)
+  * How to Identify Typed vs Legacy Records
+  * Differences in Brief
+  * Command Permissions
+  * Role Enforcement Policies
+  * Administrative Permissions
+  * Secure Add-Ons
+  * Installation Issues with Python
+  * On Windows
+  * On Mac 
+  * Working with MS-DOS / Windows Paths
+  * Security Audit Report Score Re-alignment Process
+  * SSL Certificate Errors
+  * Found a Bug?
+  * Vulnerability Disclosure Program
 
 [Keeper Secrets Manager](/en/keeperpam/secrets-manager/overview)
 

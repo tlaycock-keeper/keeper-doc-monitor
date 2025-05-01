@@ -386,6 +386,37 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Azure Environment Overview
+  * Create an Azure App Registration
+  * Assign Roles and Administrators
+  * Assign Azure Role
+  * PAM Features
+  * Configuring PAM Features on PAM Record Types
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=tPQqqYbgtDTRrxniMAEJ&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
+
+# Azure Environment Setup
+
+Setting up your Azure environment to work with KeeperPAM
+
+[PreviousAWS Environment Setup](/en/keeperpam/privileged-access-
+manager/getting-started/pam-configuration/aws-environment-setup)[NextLocal
+Environment Setup](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration/local-environment-setup)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -415,17 +446,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=tPQqqYbgtDTRrxniMAEJ&only=yes&limit=100)
-
-Last updated 3 months ago
-
-Was this helpful?
 
 ##
 
@@ -512,65 +532,6 @@ Change the following before you save:
 
   * <SUBSCRIPTION ID>: Subscription ID of this Azure subscription
 
-Click **Save**.
-
-When done, click **Review + create,** and click **Create**.
-
-Once the role is created, it needs to be assigned to the Application (Service
-Principle). Click **View** in the **Details** column.
-
-A panel will appear on the right side of the screen. Click **Assignments** ,
-and then **Add assignment**.
-
-Enter in the new role's name in the search bar on the **Role** tab, then
-double click it to select it. Move to the **Members** tab. Click **Select
-members**. In the panel that opens, enter the name of the Azure application,
-select the current application, and click **Select**.
-
-Go to the **Review + assign** tab click **Review + assign**.
-
-At this point, you have created the necessary roles and applications within
-your Azure environment.
-
-###
-
-PAM Features
-
-The **"PAM Features Allowed"** and **"Session Recording Types Allowed"**
-sections in the PAM Configuration allow owners to enable or disable KeeperPAM
-features for resources managed through the PAM configuration:
-
-##
-
-Configuring PAM Features on PAM Record Types
-
-After creating the PAM configuration, visit the following pages to:
-
-  *   *   *   *   * 
-
-Next, go to Home > General > Subscriptions and get your subscription ID. Copy
-the subscription ID into the Keeper PAM Configuration "Subscription ID" field.
-For more information on how to get your subscription ID, visit this .
-
-\- Can change the password for any user, including a Global Administrator
-user.
-
-\- Can change the password for any user, except a Global Administrator user.
-
-Field
-
-Description
-
-Configure
-
-Configure
-
-Configure
-
-Configure
-
-Configure
-
 Copy
 
     
@@ -616,6 +577,38 @@ Copy
         }
     }
 
+Click **Save**.
+
+When done, click **Review + create,** and click **Create**.
+
+Once the role is created, it needs to be assigned to the Application (Service
+Principle). Click **View** in the **Details** column.
+
+A panel will appear on the right side of the screen. Click **Assignments** ,
+and then **Add assignment**.
+
+Enter in the new role's name in the search bar on the **Role** tab, then
+double click it to select it. Move to the **Members** tab. Click **Select
+members**. In the panel that opens, enter the name of the Azure application,
+select the current application, and click **Select**.
+
+Go to the **Review + assign** tab click **Review + assign**.
+
+At this point, you have created the necessary roles and applications within
+your Azure environment.
+
+###
+
+PAM Features
+
+The **"PAM Features Allowed"** and **"Session Recording Types Allowed"**
+sections in the PAM Configuration allow owners to enable or disable KeeperPAM
+features for resources managed through the PAM configuration:
+
+Field
+
+Description
+
 Rotation
 
 If enabled, allow rotations on privileged user users managed by this PAM
@@ -643,25 +636,44 @@ Text Session Recording (TypeScript)
 If enabled, text input and output logs will be logged for all connections and
 RBI sessions
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
+##
 
-# Azure Environment Setup
+Configuring PAM Features on PAM Record Types
 
-Setting up your Azure environment to work with KeeperPAM
+After creating the PAM configuration, visit the following pages to:
 
-[PreviousAWS Environment Setup](/en/keeperpam/privileged-access-
-manager/getting-started/pam-configuration/aws-environment-setup)[NextLocal
-Environment Setup](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration/local-environment-setup)
+  *   *   *   *   * 
 
-  * Azure Environment Overview
-  * Create an Azure App Registration
-  * Assign Roles and Administrators
-  * Assign Azure Role
-  * PAM Features
-  * Configuring PAM Features on PAM Record Types
+Create Application
+
+Next, go to Home > General > Subscriptions and get your subscription ID. Copy
+the subscription ID into the Keeper PAM Configuration "Subscription ID" field.
+For more information on how to get your subscription ID, visit this .
+
+Client Secret
+
+\- Can change the password for any user, including a Global Administrator
+user.
+
+\- Can change the password for any user, except a Global Administrator user.
+
+Assign Administrator Role to Keeper Application
+
+Role
+
+Create Azure Custom Role
+
+Assign Role to Keeper Secrets Manager application member
+
+Configure
+
+Configure
+
+Configure
+
+Configure
+
+Configure
 
 [page](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-
 tenant-id)
@@ -683,18 +695,6 @@ administrator)
 [Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
 
 [Discovery](/en/keeperpam/privileged-access-manager/discovery)
-
-Create Application
-
-Client Secret
-
-Assign Administrator Role to Keeper Application
-
-Role
-
-Create Azure Custom Role
-
-Assign Role to Keeper Secrets Manager application member
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

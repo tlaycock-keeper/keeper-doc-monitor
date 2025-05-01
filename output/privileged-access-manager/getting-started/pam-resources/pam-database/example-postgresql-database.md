@@ -418,35 +418,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview 
-  * Prerequisites
-  * PAM Database Record
-  * Creating a PAM Database 
-  * Configure a PostgreSQL Database on the PAM Database Record
-  * Configuring PAM Settings on the PAM Database 
-  * Administrative Credential Record 
-  * Sharing PAM Database Records 
-  * Setup Complete
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=ZsW7lP6pj7biIrpBNRLZ&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [PAM Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-resources)
-  4. [PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database)
-
-# Example: PostgreSQL Database
-
-Configuring PostgreSQL DB as a PAM Database Record
-
-[PreviousExample: MySQL Database](/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-database/example-mysql-
-database)[NextExample: Microsoft SQL Server
-Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database/example-microsoft-sql-server-database)
 
 Last updated 3 months ago
 
@@ -503,11 +478,71 @@ Configure a PostgreSQL Database on the PAM Database Record
 Suppose I have a database with the hostname "`db-postgres-1`", the following
 table lists all the configurable fields and their respective values:
 
+###
+
+Configuring PAM Settings on the PAM Database
+
+On the "PAM Settings" section of the vault record, you can configure the
+KeeperPAM Connection and Tunnel settings and link a PAM User credential for
+performing rotations and connections. Tunnels do not require a linked
+credential. The following table lists all the configurable fields and their
+respective values for the PostgreSQL Database:
+
+###
+
+Administrative Credential Record
+
+The **Admin Credential Record** in the PAM Database links a user to the PAM
+Database record in your Keeper Vault. This linked user is used for
+authenticating the connection when clicking "Launch".
+
+####
+
+Setting a Non Admin User as the Administrative Credential Record
+
+If you prefer not to authenticate a connection using the admin credential, you
+can optionally designate a regular user of the resource as the admin
+credential.
+
+##
+
+Sharing PAM Database Records
+
+PAM Database records can be shared with other Keeper users within your
+organization. However, the recipient must be assigned to a role with the
+appropriate PAM enforcement policies in place to utilize KeeperPAM features.
+
+When sharing a PAM Database record, the linked admin credentials will **not**
+be shared. For example, if the PAM Database is configured with a PostgreSQL
+Database, the recipient can connect to the database without having direct
+access to the linked credentials.
+
+  * 
+
+###
+
+Setup Complete
+
+The PostgreSQL Database record is set up. The user with the ability to launch
+connections can now launch an interactive PostgreSQL connection or tunnel to
+the target database.
+
 Field
 
 Description
 
 Value
+
+Field
+
+Description
+
+Required
+
+User Accounts are configured on the PAM User record. Visit this  for more
+information.
+
+Learn more about
 
 Title (Required)
 
@@ -558,21 +593,42 @@ Azure or AWS Provider Region
 
 **Required** if a managed AWS or Azure Database
 
-###
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [PAM Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-resources)
+  4. [PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database)
 
-Configuring PAM Settings on the PAM Database
+# Example: PostgreSQL Database
 
-On the "PAM Settings" section of the vault record, you can configure the
-KeeperPAM Connection and Tunnel settings and link a PAM User credential for
-performing rotations and connections. Tunnels do not require a linked
-credential. The following table lists all the configurable fields and their
-respective values for the PostgreSQL Database:
+Configuring PostgreSQL DB as a PAM Database Record
 
-Field
+[PreviousExample: MySQL Database](/en/keeperpam/privileged-access-
+manager/getting-started/pam-resources/pam-database/example-mysql-
+database)[NextExample: Microsoft SQL Server
+Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database/example-microsoft-sql-server-database)
 
-Description
+  * Overview 
+  * Prerequisites
+  * PAM Database Record
+  * Creating a PAM Database 
+  * Configure a PostgreSQL Database on the PAM Database Record
+  * Configuring PAM Settings on the PAM Database 
+  * Administrative Credential Record 
+  * Sharing PAM Database Records 
+  * Setup Complete
 
-Required
+[Installed and configured the Keeper Gateway](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/one-time-access-token)
+
+[Set up a PAM Configuration for your target Environment
+](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
+
+[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
+[Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-
+started/sharing-and-access-control)
 
 PAM Configuration
 
@@ -599,47 +655,6 @@ Connection Parameters
 Connection-specific protocol settings which can vary based on the protocol
 type
 
-###
-
-Administrative Credential Record
-
-The **Admin Credential Record** in the PAM Database links a user to the PAM
-Database record in your Keeper Vault. This linked user is used for
-authenticating the connection when clicking "Launch".
-
-####
-
-Setting a Non Admin User as the Administrative Credential Record
-
-If you prefer not to authenticate a connection using the admin credential, you
-can optionally designate a regular user of the resource as the admin
-credential.
-
-##
-
-Sharing PAM Database Records
-
-PAM Database records can be shared with other Keeper users within your
-organization. However, the recipient must be assigned to a role with the
-appropriate PAM enforcement policies in place to utilize KeeperPAM features.
-
-When sharing a PAM Database record, the linked admin credentials will **not**
-be shared. For example, if the PAM Database is configured with a PostgreSQL
-Database, the recipient can connect to the database without having direct
-access to the linked credentials.
-
-  * 
-
-###
-
-Setup Complete
-
-The PostgreSQL Database record is set up. The user with the ability to launch
-connections can now launch an interactive PostgreSQL connection or tunnel to
-the target database.
-
-PostgreSQL PAM Database Record
-
 **Required** Visit this  for more details
 
 See
@@ -647,30 +662,25 @@ See
 See this  for PostgreSQL protocol settings We recommend specifying the
 **Connection Port** at a minimum. E.g. "5432" for PostgreSQL.
 
-User Accounts are configured on the PAM User record. Visit this  for more
-information.
+[session recording](/en/keeperpam/privileged-access-manager/session-recording-
+and-playback)
+
+[section](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/postgresql-connections)
+
+[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database/example-postgresql-database#administrative-credential-
+record)
+
+PostgreSQL PAM Database Record
 
 Administrative Credential Record
-
-Learn more about
 
 Sharing a PostgreSQL Database Record
 
 Launching interactive CLI session to PostgreSQL
 
 Interactive Connection to PostgreSQL Database
-
-[Installed and configured the Keeper Gateway](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/one-time-access-token)
-
-[Set up a PAM Configuration for your target Environment
-](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
-
-[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
-[Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-
-started/sharing-and-access-control)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -695,14 +705,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRLKC4C4j0
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuV3f6t7N6GqqieotwmKW%252FScreenshot%25202025-01-22%2520at%252011.39.03%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Df35b94f4-8f73-4452-b426-d6320bae4cd8&width=768&dpr=4&quality=100&sign=87a055a7&sv=2)
-
-[session recording](/en/keeperpam/privileged-access-manager/session-recording-
-and-playback)
-
-[section](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/postgresql-connections)
-
-[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database/example-postgresql-database#administrative-credential-
-record)
 

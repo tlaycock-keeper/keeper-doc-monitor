@@ -620,7 +620,7 @@ command-line-interface/secret-command)[NextSync
 Command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/sync-command)
 
-Last updated 10 months ago
+Last updated 11 months ago
 
 Was this helpful?
 

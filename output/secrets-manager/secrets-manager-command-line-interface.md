@@ -418,32 +418,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Core Features
-  * Application and Client Device Setup
-  * Secrets Manager CLI Installation
-  * Binary Install Method
-  * Docker Install Method
-  * Pip3 and Python3 Install Method
-  * Source Code
-  * Usage
-  * Create a local Client Device
-  * Execution of Commands
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-MczJk6xZwREQu8LleMt&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-
-# Secrets Manager CLI
-
-The Secrets Manager CLI provides shell access to vault secrets
-
-[PreviousField/Record Types](/en/keeperpam/secrets-manager/about/field-record-
-types)[NextProfile Command](/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface/profile-command)
 
 Last updated 6 months ago
 
@@ -503,35 +481,11 @@ Pip3 and Python3 Install Method
 Please ensure that Python 3.x is installed. If not, use your OS-specific
 package manager to install it.
 
-Copy
-
-    
-    
-    sudo yum install python3
-
 Make sure your pip3 is up to date:
-
-Copy
-
-    
-    
-    sudo pip3 install --upgrade pip
 
 Now you can install the Secrets Manager CLI:
 
-Copy
-
-    
-    
-    sudo pip3 install keeper-secrets-manager-cli
-
 To upgrade to the latest version:
-
-Copy
-
-    
-    
-    sudo pip3 install -U keeper-secrets-manager-cli keeper-secrets-manager-core
 
 This method will install the CLI into the system Python. If you do not have
 root or admin permissions, you can install the CLI by setting up a
@@ -546,31 +500,7 @@ Installing KSM using virtualenv
 For developers, using virtualenv is a clean way to install KSM in an isolated
 environment.
 
-Copy
-
-    
-    
-    sudo pip3 install virtualenv
-
-Copy
-
-    
-    
-    virtualenv -p python3 my_env
-
-Copy
-
-    
-    
-    source my_env/bin/activate
-
 Then, install ksm to the virtual environment
-
-Copy
-
-    
-    
-    pip3 install keeper-secrets-manager-cli
 
 ###
 
@@ -590,40 +520,6 @@ The `ksm` CLI tool can be used for the following purposes:
 
   * Wrap command-line applications for environmental variable substitution ("exec")
 
-Copy
-
-    
-    
-    ksm
-
-Copy
-
-    
-    
-    Usage: ksm [OPTIONS] COMMAND [ARGS]...
-    
-      Keeper Secrets Manager CLI  Version: X.X.X
-    
-    Options:
-      --ini-file TEXT                INI config file.
-      -p, --profile-name TEXT        Config profile
-      -o, --output TEXT              Output [stdout|stderr|filename]
-      -c, --color / -nc, --no-color  Use color in table views, where applicable.
-      --cache / --no-cache           Enable/disable record caching.
-      --help                         Show this message and exit.
-    
-    Commands:
-      config   Configure the command line tool
-      exec     Wrap an application and replace env variables
-      init     Initialize a configuration file for integrations
-      profile  Manage local client device profiles
-      quit     Quit shell mode
-      secret   Query the Keeper vault and retrieve secrets
-      folder   Manage folders
-      shell    Run KSM in a shell
-      version  Get module versions and information.
-    
-
 ###
 
 Create a local Client Device
@@ -633,61 +529,13 @@ Token in the `ksm profile init` command. After initialization, the CLI can be
 used to obtain secrets. In the example below, replace "XX:XXXX" with the One
 Time Access Token for your Client Device.
 
-Copy
-
-    
-    
-    ksm profile init XX:XXXX
-
-Copy
-
-    
-    
-    ksm secret list
-
 If you are including the CLI within a container with an automated startup, or
 do not wish to perform a "profile init", a profile can be auto-created if the
 **KSM_TOKEN** is set.
 
 Example:
 
-Copy
-
-    
-    
-    KSM_TOKEN="XX:XXXX" ksm secret list
-
 Environment variables can be set to reduce the command line flags.
-
-Environment Variable Name
-
-Description
-
-**KSM_TOKEN**
-
-The one time access token used to initialize the client device
-
-**KSM_HOSTNAME**
-
-The host of your Keeper environment. Either US, EU, AU, JP, CA, US_GOV or a
-full URL. The token will contain the hostname, so this variable is not used in
-most cases.
-
-**KSM_INI_DIR**
-
-The directory where the INI config file is stored for the CLI.
-
-**KSM_INI_FILE**
-
-The name of the INI config file for the CLI.
-
-**KSM_CLI_PROFILE**
-
-The active profile in the CLI.
-
-**KSM_CONFIG**
-
-A Base64 config string. The CLI will use this for the default profile.
 
 ##
 
@@ -705,46 +553,6 @@ To get help on a particular command, run:
 To get help on a sub-command, run:
 
 `ksm <command> <sub-command> --help`
-
-Command
-
-Explanation
-
-`secret`
-
-Retrieve secrets from the vault
-
-`folder`
-
-Manage folders
-
-`profile`
-
-Manage local configuration profiles
-
-`init`
-
-Initialize one time access token
-
-`exec`
-
-Execute scripts with environmental variable substitution
-
-`config`
-
-Manage CLI configuration
-
-`version`
-
-Display the CLI version information
-
-`shell`
-
-Start the CLI in an interactive shell mode
-
-`quit`
-
-Quit the shell mode
 
 **Options**
 
@@ -808,6 +616,198 @@ on your operating system.
 See the  page for installation and setup from Keeper's Docker image.
 
 Find the Keeper Secrets Manager CLI source code in the .
+
+Copy
+
+    
+    
+    sudo yum install python3
+
+Copy
+
+    
+    
+    sudo pip3 install --upgrade pip
+
+Copy
+
+    
+    
+    sudo pip3 install keeper-secrets-manager-cli
+
+Copy
+
+    
+    
+    sudo pip3 install -U keeper-secrets-manager-cli keeper-secrets-manager-core
+
+Copy
+
+    
+    
+    sudo pip3 install virtualenv
+
+Copy
+
+    
+    
+    virtualenv -p python3 my_env
+
+Copy
+
+    
+    
+    source my_env/bin/activate
+
+Copy
+
+    
+    
+    pip3 install keeper-secrets-manager-cli
+
+Copy
+
+    
+    
+    ksm
+
+Copy
+
+    
+    
+    Usage: ksm [OPTIONS] COMMAND [ARGS]...
+    
+      Keeper Secrets Manager CLI  Version: X.X.X
+    
+    Options:
+      --ini-file TEXT                INI config file.
+      -p, --profile-name TEXT        Config profile
+      -o, --output TEXT              Output [stdout|stderr|filename]
+      -c, --color / -nc, --no-color  Use color in table views, where applicable.
+      --cache / --no-cache           Enable/disable record caching.
+      --help                         Show this message and exit.
+    
+    Commands:
+      config   Configure the command line tool
+      exec     Wrap an application and replace env variables
+      init     Initialize a configuration file for integrations
+      profile  Manage local client device profiles
+      quit     Quit shell mode
+      secret   Query the Keeper vault and retrieve secrets
+      folder   Manage folders
+      shell    Run KSM in a shell
+      version  Get module versions and information.
+    
+
+Copy
+
+    
+    
+    ksm profile init XX:XXXX
+
+Copy
+
+    
+    
+    ksm secret list
+
+Copy
+
+    
+    
+    KSM_TOKEN="XX:XXXX" ksm secret list
+
+Environment Variable Name
+
+Description
+
+**KSM_TOKEN**
+
+The one time access token used to initialize the client device
+
+**KSM_HOSTNAME**
+
+The host of your Keeper environment. Either US, EU, AU, JP, CA, US_GOV or a
+full URL. The token will contain the hostname, so this variable is not used in
+most cases.
+
+**KSM_INI_DIR**
+
+The directory where the INI config file is stored for the CLI.
+
+**KSM_INI_FILE**
+
+The name of the INI config file for the CLI.
+
+**KSM_CLI_PROFILE**
+
+The active profile in the CLI.
+
+**KSM_CONFIG**
+
+A Base64 config string. The CLI will use this for the default profile.
+
+Command
+
+Explanation
+
+`secret`
+
+Retrieve secrets from the vault
+
+`folder`
+
+Manage folders
+
+`profile`
+
+Manage local configuration profiles
+
+`init`
+
+Initialize one time access token
+
+`exec`
+
+Execute scripts with environmental variable substitution
+
+`config`
+
+Manage CLI configuration
+
+`version`
+
+Display the CLI version information
+
+`shell`
+
+Start the CLI in an interactive shell mode
+
+`quit`
+
+Quit the shell mode
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+
+# Secrets Manager CLI
+
+The Secrets Manager CLI provides shell access to vault secrets
+
+[PreviousField/Record Types](/en/keeperpam/secrets-manager/about/field-record-
+types)[NextProfile Command](/en/keeperpam/secrets-manager/secrets-manager-
+command-line-interface/profile-command)
+
+  * Overview
+  * Core Features
+  * Application and Client Device Setup
+  * Secrets Manager CLI Installation
+  * Binary Install Method
+  * Docker Install Method
+  * Pip3 and Python3 Install Method
+  * Source Code
+  * Usage
+  * Create a local Client Device
+  * Execution of Commands
 
 [Commander CLI](/en/keeperpam/commander-cli/overview)
 

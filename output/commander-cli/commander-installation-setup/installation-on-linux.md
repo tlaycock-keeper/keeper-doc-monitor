@@ -418,10 +418,27 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Supported Operating systems:
+  * Video Overview
+  * Pre-requisites
+  * Instructions
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-MJXfMZXEdPkvtXzMcQ-&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+
+# CLI Installation on Linux
+
+How to install the Keeper Commander CLI on Linux
+
+[PreviousCLI Installation on macOS](/en/keeperpam/commander-cli/commander-
+installation-setup/installation-on-mac)[NextPython Developer
+Setup](/en/keeperpam/commander-cli/commander-installation-setup/developer-
+mode)
 
 Last updated 6 months ago
 
@@ -462,37 +479,13 @@ Installing Python:
 ‌Based on your distribution, follow the instructions to install Python 3.x,
 typical installation commands are listed below.
 
-OR
-
-Also ensure the "Package installer for Python" is installed (you may need to
-run an apt-get update first):
-
-OR
-
-Next, upgrade pip3 to the latest version using the command:
-
-Validate Python is correctly installed by checking the installed version from
-a terminal window:
-
-Next, install Keeper Commander using pip3:
-
-Once installed, ensure you have the latest version by upgrading Commander:
-
-Please validate all updates in your test environment as commands and
-functionality is under rapid development.
-
-Now you can launch the keeper shell using command:
-
-You should see:
-
-Note, for your first time logging into a new device or a new location, you may
-have to perform device approval through email or other 2FA methods.
-
 Copy
 
     
     
     $ sudo apt install python3
+
+OR
 
 Copy
 
@@ -500,11 +493,16 @@ Copy
     
     $ yum install -y python3
 
+Also ensure the "Package installer for Python" is installed (you may need to
+run an apt-get update first):
+
 Copy
 
     
     
     $ sudo apt install python3-pip
+
+OR
 
 Copy
 
@@ -512,11 +510,16 @@ Copy
     
     $ sudo yum install python3-pip
 
+Next, upgrade pip3 to the latest version using the command:
+
 Copy
 
     
     
     $ sudo pip3 install --upgrade pip
+
+Validate Python is correctly installed by checking the installed version from
+a terminal window:
 
 Copy
 
@@ -524,11 +527,15 @@ Copy
     
     $ pip3 --version
 
+Next, install Keeper Commander using pip3:
+
 Copy
 
     
     
     $ pip3 install keepercommander
+
+Once installed, ensure you have the latest version by upgrading Commander:
 
 Copy
 
@@ -536,28 +543,21 @@ Copy
     
     $ pip3 install --upgrade keepercommander
 
+Please validate all updates in your test environment as commands and
+functionality is under rapid development.
+
+Now you can launch the keeper shell using command:
+
 Copy
 
     
     
     $ keeper shell
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+You should see:
 
-# CLI Installation on Linux
-
-How to install the Keeper Commander CLI on Linux
-
-[PreviousCLI Installation on macOS](/en/keeperpam/commander-cli/commander-
-installation-setup/installation-on-mac)[NextPython Developer
-Setup](/en/keeperpam/commander-cli/commander-installation-setup/developer-
-mode)
-
-  * Supported Operating systems:
-  * Video Overview
-  * Pre-requisites
-  * Instructions
+Note, for your first time logging into a new device or a new location, you may
+have to perform device approval through email or other 2FA methods.
 
 Keeper Commander – Installing and Logging In
 

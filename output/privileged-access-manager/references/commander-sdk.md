@@ -400,21 +400,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=wWwX1Q3z6gc41bf7F2WU&only=yes&limit=100)
 
 Managing rotation with the Commander CLI / SDK interface
 
-Keeper Commander commands have been created to automate and manage the Keeper
-PAM capabilities including:
-
-  * Managing Gateways
-
-  * Managing PAM Configurations
-
-  * Managing Password Rotation and Discovery
-
-  * Managing jobs
-
-For more information see the [KeeperPAM "pam" command
-documentation](/en/keeperpam/commander-cli/command-reference/keeperpam-
-commands).
-
 [PreviousManaging Rotation via CLI](/en/keeperpam/privileged-access-
 manager/references/managing-rotation-via-cli)[NextCron
 Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
@@ -452,4 +437,20 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+Keeper Commander commands have been created to automate and manage the Keeper
+PAM capabilities including:
+
+  * Managing Gateways
+
+  * Managing PAM Configurations
+
+  * Managing Password Rotation and Discovery
+
+  * Managing jobs
+
+For more information see the .
+
+[KeeperPAM "pam" command documentation](/en/keeperpam/commander-cli/command-
+reference/keeperpam-commands)
 

@@ -386,36 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview
@@ -435,15 +405,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=bLhEny4oidYf39tG9ERv&only=yes&limit=100)
 
 Password Rotation in the Local Network Environment
 
-[PreviousAWS RDS for Oracle](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-
-oracle)[NextActive Directory or OpenLDAP User](/en/keeperpam/privileged-
-access-manager/password-rotation/rotation-use-cases/local-network/active-
-directory)
-
-Last updated 3 months ago
-
-Was this helpful?
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FD4pFTWlEuiTNgUy4pXoD%252FLocal%2520Network%2520rotations.jpg%3Falt%3Dmedia%26token%3Da54e5b3b-1dc1-4160-a142-d616e9c8f038&width=768&dpr=4&quality=100&sign=fcf7a7e0&sv=2)
 
 ##
 
@@ -484,24 +448,53 @@ passwords on a network:
 
 Use Cases
 
-  *   *   *   *   * 
+  * [Active Directory User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
 
-[Active Directory User](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/active-directory)
+  * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
 
-[Windows User](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/windows-user)
+  * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
 
-[Linux User](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/linux-user)
+  * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
 
-[macOS User](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/macos-user)
+  * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
 
-[Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/local-network/database)
+[PreviousAWS RDS for Oracle](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/managed-database/aws-rds-for-
+oracle)[NextActive Directory or OpenLDAP User](/en/keeperpam/privileged-
+access-manager/password-rotation/rotation-use-cases/local-network/active-
+directory)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FD4pFTWlEuiTNgUy4pXoD%252FLocal%2520Network%2520rotations.jpg%3Falt%3Dmedia%26token%3Da54e5b3b-1dc1-4160-a142-d616e9c8f038&width=768&dpr=4&quality=100&sign=fcf7a7e0&sv=2)
+Last updated 3 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

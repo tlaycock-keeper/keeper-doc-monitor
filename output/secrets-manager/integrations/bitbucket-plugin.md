@@ -418,35 +418,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Features
-  * Prerequisites
-  * Setup
-  * Getting a configuration
-  * Adding to bitbucket-pipeline.yml
-  * Variables
-  * Retrieving Secrets
-  * Saving secrets to an environment variable
-  * Saving secrets to a file
-  * Examples
-  * Example 1 - Docker Build
-  * Example 2 - Using Keeper Secrets Manager pipe with other pipes.
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-MkdGaFtQU8FA0WakeZt&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Bitbucket Plugin
-
-Keeper Secrets Manager integration into Bitbucket for dynamic secrets
-retrieval
-
-[PreviousAzure Key Vault Encryption](/en/keeperpam/secrets-
-manager/integrations/azure-key-vault-ksm)[NextDocker
-Image](/en/keeperpam/secrets-manager/integrations/docker-image)
 
 Last updated 3 months ago
 
@@ -487,20 +462,6 @@ Using Keeper Commander, add a new client to an application and initialize the
 configuration to a Base64 string. This will be the long text hash that appears
 after the "Initialized Config:" label.
 
-Copy
-
-    
-    
-    My Vault> sm client add --app MyApp --config-init b64
-    
-    Successfully generated Client Device
-    ====================================
-    
-    Initialized Config: eyJob3N0bmFtZSI6ICJr....OUk1ZTV1V2toRucXRsaWxqUT0ifQ==
-    IP Lock: Enabled
-    Token Expires On: 2021-10-19 15:31:31
-    App Access Expires on: Never
-
 That value can be added to your BitBucket **Repository variables** , under
 **Repository settings** menu, as a secure secret with the name **KSM_CONFIG**.
 This will allo the configuration to be available to the Keeper Secrets Manager
@@ -510,44 +471,11 @@ pipe as a variable.
 
 Adding to bitbucket-pipeline.yml
 
-Copy
-
-    
-    
-    image: atlassian/default-image:2
-    
-    pipelines:
-      default:
-        - step:
-            name: 'Build My Stuff'
-            script:
-              - pipe: keepersecurity/keeper-secrets-manager-pipe:<tag>
-                variables:
-                  KSM_CONFIG: "${KSM_CONFIG}"
-                  SECRETS: |
-                    1adh_WZxtbbHWqf6IALMVg/field/login > MY_LOGIN
-                    V8lFbio0Bs0LuvaSD5DDHA/file/IMG_0036.png > file:my.png
-                  SCRIPT_TEXT: |
-                    #!/usr/bin/env bash
-                    echo "My Login = \${MY_LOGIN}"
-                    ls my.png
-                  SHOW_OUTPUT: "True"
-                  SECRETS_FILE: "secret.env"
-                  SECRETS_FILE_TYPE: "export"
-              - source secret.env
-
 ####
 
 Pipe Integration
 
 The name of the pipe integration is the following.
-
-Copy
-
-    
-    
-            script:
-              - pipe: keepersecurity/keeper-secrets-manager-pipe:<tag>
 
 ###
 
@@ -625,18 +553,6 @@ The example below will take the login secret and place them into environmental
 variables. Both lines do the same, one without the **env:** prefix and one
 with.
 
-Copy
-
-    
-    
-            script:
-              - pipe: keepersecuirty/keeper-secrets-manager-pipe:<tag>
-                variables:
-                  KSM_CONFIG: "${KSM_CONFIG}"
-                  SECRETS: |
-                    1adh_WZxtbbHWqf6IALMVg/field/login > MY_LOGIN
-                    1adh_WZxtbbHWqf6IALMVg/field/login > env:SAME_LOGIN          
-
 In the example, `1adh_WZxtbbHWqf6IALMVg` is a record UID.
 
 ###
@@ -646,18 +562,6 @@ Saving secrets to a file
 If the secret is binary data it is highly recommended not to store the secret
 in an environmental variable due to encoding issues. Use the **file:**
 destination instead.
-
-Copy
-
-    
-    
-            script:
-              - pipe: keepersecurity/keeper-secrets-manager-pipe:<tag>
-                variables:
-                  KSM_CONFIG: "${KSM_CONFIG}"
-                  SECRETS: |
-                    1adh_WZxtbbHWqf6IALMVg/file/server.xml > file:server.xml
-                    1adh_WZxtbbHWqf6IALMVg/file/domain.crt > file:config/path/domain.crt             
 
 If the variable `REMOVE_FILES` is True, the file will be removed when the pipe
 exits. Set this variable to False if you wish to use the files outside of the
@@ -679,34 +583,8 @@ The first step is to create a repo in BitBucket, then add a Dockerfile. This
 Dockerfile will add two files created by the Keeper Secrets Manager pipe to an
 official Tomcat Docker image.
 
-Copy
-
-    
-    
-    FROM tomcat:10-jdk16
-    
-    ADD /server.xml /usr/local/tomcat/conf/server.xml
-    ADD /localhost-rsa.jks /usr/local/tomcat/conf/localhost-rsa.jks
-    
-    # Expose port 8443 for SSL
-    EXPOSE 8443
-
 Next a configuration is needed for the Keeper Secrets Manager pipe. This can
 be created using Keeper Commander and initializing the config as Base64.
-
-Copy
-
-    
-    
-    My Vault> sm client add --app MyApp --config-init b64
-    
-    Successfully generated Client Device
-    ====================================
-    
-    Initialized Config: eyJob3N0bmFtZSI6ICJr....OUk1ZTV1V2toRucXRsaWxqUT0ifQ==
-    IP Lock: Enabled
-    Token Expires On: 2021-10-19 15:31:31
-    App Access Expires on: Never
 
 The **Initialized Config:** Base64 string needs to be cut-n-pasted into your
 **Repository variables**. In this example the name of the variable is
@@ -714,37 +592,6 @@ The **Initialized Config:** Base64 string needs to be cut-n-pasted into your
 the **Repository variables**.
 
 Next a `bitbucket-pipelines.yml` file needs to be added to the repository.
-
-Copy
-
-    
-    
-    image: atlassian/default-image:2
-    
-    pipelines:
-      default:
-        - step:
-            name: 'Build Custom Tomcat Server'
-            script:
-              - pipe: keepersecuirty/keeper-secrets-manager-pipe:<tag>
-                variables:
-                  KSM_CONFIG: "${KSM_CONFIG}"
-                  SECRETS: |
-                    3GGclNXOoU0DwZwdn6iZmg/file/server.xml > file:server.xml
-                    3GGclNXOoU0DwZwdn6iZmg/file/localhost-rsa.jks > file:localhost-rsa.jks
-                  REMOVE_FILES: "False"
-                  CLEANUP_FILE: "ksm_cleanup.sh"
-              - VERSION="1.$BITBUCKET_BUILD_NUMBER"
-              - IMAGE="$DOCKERHUB_USERNAME/$BITBUCKET_REPO_SLUG"
-              - docker login --username "$DOCKERHUB_USERNAME" --password "${DOCKERHUB_PASSWORD}"
-              - docker image build -t ${IMAGE}:${VERSION} .
-              - docker image tag ${IMAGE}:${VERSION} ${IMAGE}:latest
-              - docker image push ${IMAGE}
-              - git tag -a "${VERSION}" -m "Tagging for release ${VERSION}"
-              - git push origin ${VERSION}
-              - ./ksm_cleanup.sh
-            services:
-              - docker
 
 The above is used to build a Docker image and push it to your Docker Hub
 account. The first step will use the Keeper Secrets Manager pipe to retrieve
@@ -780,56 +627,11 @@ The first step is to create a repo in BitBucket, and then store the Keeper
 Secrets Manager pipe configuration in the **Repository variables**. This can
 be created using Keeper Commander and initializing the config as Base64.
 
-Copy
-
-    
-    
-    My Vault> sm client add --app MyApp --config-init b64
-    
-    Successfully generated Client Device
-    ====================================
-    
-    Initialized Config: eyJob3N0bmFtZSI6ICJr....OUk1ZTV1V2toRucXRsaWxqUT0ifQ==
-    IP Lock: Enabled
-    Token Expires On: 2021-10-19 15:31:31
-    App Access Expires on: Never
-
 The **Initialized Config:** Base64 string needs to be cut-n-pasted into your
 **Repository variables**. In this example the name of the variable is
 **KSM_CONFIG**.
 
 Next a `bitbucket-pipelines.yml` file needs to be added to the repository.
-
-Copy
-
-    
-    
-    image: atlassian/default-image:2
-    
-    pipelines:
-      default:
-        - step:
-            name: 'Copy Image To S3'
-            script:
-              - pipe: keepersecurity/keeper-secrets-manager-pipe:<tag>
-                variables:
-                  KSM_CONFIG: "${KSM_CONFIG}"
-                  SECRETS: |
-                    IumwT1QYRr8TTCtY8rqzhw/custom_field/AWS_ACCESS_KEY_ID > AWS_ACCESS_KEY_ID
-                    IumwT1QYRr8TTCtY8rqzhw/custom_field/AWS_SECRET_ACCESS_KEY > AWS_SECRET_ACCESS_KEY
-                    IumwT1QYRr8TTCtY8rqzhw/custom_field/AWS_DEFAULT_REGION > AWS_DEFAULT_REGION
-                    IumwT1QYRr8TTCtY8rqzhw/custom_field/S3_BUCKET > S3_BUCKET
-                    V8lFbio0Bs0LuvaSD5DDHA/file/IMG_0036.png > file:to_s3/my_image.png
-                  SECRETS_FILE: "secrets.env"
-                  SECRETS_FILE_TYPE: "export"
-              - source ./secrets.env
-              - pipe: atlassian/aws-s3-deploy:1.1.0
-                variables:
-                  AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
-                  AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
-                  AWS_DEFAULT_REGION: "${AWS_DEFAULT_REGION}"
-                  S3_BUCKET: "${S3_BUCKET}"
-                  LOCAL_PATH: "to_s3"
 
 The `bitbucket-pipelines.yml` contains the Keeper Secrets Manager pipe which
 will retrieve our AWS credential from a record and place them into environment
@@ -868,6 +670,204 @@ For more options creating a configuration, see the
 
 For more options creating a configuration, see the
 
+Copy
+
+    
+    
+    My Vault> sm client add --app MyApp --config-init b64
+    
+    Successfully generated Client Device
+    ====================================
+    
+    Initialized Config: eyJob3N0bmFtZSI6ICJr....OUk1ZTV1V2toRucXRsaWxqUT0ifQ==
+    IP Lock: Enabled
+    Token Expires On: 2021-10-19 15:31:31
+    App Access Expires on: Never
+
+Copy
+
+    
+    
+    image: atlassian/default-image:2
+    
+    pipelines:
+      default:
+        - step:
+            name: 'Build My Stuff'
+            script:
+              - pipe: keepersecurity/keeper-secrets-manager-pipe:<tag>
+                variables:
+                  KSM_CONFIG: "${KSM_CONFIG}"
+                  SECRETS: |
+                    1adh_WZxtbbHWqf6IALMVg/field/login > MY_LOGIN
+                    V8lFbio0Bs0LuvaSD5DDHA/file/IMG_0036.png > file:my.png
+                  SCRIPT_TEXT: |
+                    #!/usr/bin/env bash
+                    echo "My Login = \${MY_LOGIN}"
+                    ls my.png
+                  SHOW_OUTPUT: "True"
+                  SECRETS_FILE: "secret.env"
+                  SECRETS_FILE_TYPE: "export"
+              - source secret.env
+
+Copy
+
+    
+    
+            script:
+              - pipe: keepersecurity/keeper-secrets-manager-pipe:<tag>
+
+Copy
+
+    
+    
+            script:
+              - pipe: keepersecuirty/keeper-secrets-manager-pipe:<tag>
+                variables:
+                  KSM_CONFIG: "${KSM_CONFIG}"
+                  SECRETS: |
+                    1adh_WZxtbbHWqf6IALMVg/field/login > MY_LOGIN
+                    1adh_WZxtbbHWqf6IALMVg/field/login > env:SAME_LOGIN          
+
+Copy
+
+    
+    
+            script:
+              - pipe: keepersecurity/keeper-secrets-manager-pipe:<tag>
+                variables:
+                  KSM_CONFIG: "${KSM_CONFIG}"
+                  SECRETS: |
+                    1adh_WZxtbbHWqf6IALMVg/file/server.xml > file:server.xml
+                    1adh_WZxtbbHWqf6IALMVg/file/domain.crt > file:config/path/domain.crt             
+
+Copy
+
+    
+    
+    FROM tomcat:10-jdk16
+    
+    ADD /server.xml /usr/local/tomcat/conf/server.xml
+    ADD /localhost-rsa.jks /usr/local/tomcat/conf/localhost-rsa.jks
+    
+    # Expose port 8443 for SSL
+    EXPOSE 8443
+
+Copy
+
+    
+    
+    My Vault> sm client add --app MyApp --config-init b64
+    
+    Successfully generated Client Device
+    ====================================
+    
+    Initialized Config: eyJob3N0bmFtZSI6ICJr....OUk1ZTV1V2toRucXRsaWxqUT0ifQ==
+    IP Lock: Enabled
+    Token Expires On: 2021-10-19 15:31:31
+    App Access Expires on: Never
+
+Copy
+
+    
+    
+    image: atlassian/default-image:2
+    
+    pipelines:
+      default:
+        - step:
+            name: 'Build Custom Tomcat Server'
+            script:
+              - pipe: keepersecuirty/keeper-secrets-manager-pipe:<tag>
+                variables:
+                  KSM_CONFIG: "${KSM_CONFIG}"
+                  SECRETS: |
+                    3GGclNXOoU0DwZwdn6iZmg/file/server.xml > file:server.xml
+                    3GGclNXOoU0DwZwdn6iZmg/file/localhost-rsa.jks > file:localhost-rsa.jks
+                  REMOVE_FILES: "False"
+                  CLEANUP_FILE: "ksm_cleanup.sh"
+              - VERSION="1.$BITBUCKET_BUILD_NUMBER"
+              - IMAGE="$DOCKERHUB_USERNAME/$BITBUCKET_REPO_SLUG"
+              - docker login --username "$DOCKERHUB_USERNAME" --password "${DOCKERHUB_PASSWORD}"
+              - docker image build -t ${IMAGE}:${VERSION} .
+              - docker image tag ${IMAGE}:${VERSION} ${IMAGE}:latest
+              - docker image push ${IMAGE}
+              - git tag -a "${VERSION}" -m "Tagging for release ${VERSION}"
+              - git push origin ${VERSION}
+              - ./ksm_cleanup.sh
+            services:
+              - docker
+
+Copy
+
+    
+    
+    My Vault> sm client add --app MyApp --config-init b64
+    
+    Successfully generated Client Device
+    ====================================
+    
+    Initialized Config: eyJob3N0bmFtZSI6ICJr....OUk1ZTV1V2toRucXRsaWxqUT0ifQ==
+    IP Lock: Enabled
+    Token Expires On: 2021-10-19 15:31:31
+    App Access Expires on: Never
+
+Copy
+
+    
+    
+    image: atlassian/default-image:2
+    
+    pipelines:
+      default:
+        - step:
+            name: 'Copy Image To S3'
+            script:
+              - pipe: keepersecurity/keeper-secrets-manager-pipe:<tag>
+                variables:
+                  KSM_CONFIG: "${KSM_CONFIG}"
+                  SECRETS: |
+                    IumwT1QYRr8TTCtY8rqzhw/custom_field/AWS_ACCESS_KEY_ID > AWS_ACCESS_KEY_ID
+                    IumwT1QYRr8TTCtY8rqzhw/custom_field/AWS_SECRET_ACCESS_KEY > AWS_SECRET_ACCESS_KEY
+                    IumwT1QYRr8TTCtY8rqzhw/custom_field/AWS_DEFAULT_REGION > AWS_DEFAULT_REGION
+                    IumwT1QYRr8TTCtY8rqzhw/custom_field/S3_BUCKET > S3_BUCKET
+                    V8lFbio0Bs0LuvaSD5DDHA/file/IMG_0036.png > file:to_s3/my_image.png
+                  SECRETS_FILE: "secrets.env"
+                  SECRETS_FILE_TYPE: "export"
+              - source ./secrets.env
+              - pipe: atlassian/aws-s3-deploy:1.1.0
+                variables:
+                  AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
+                  AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
+                  AWS_DEFAULT_REGION: "${AWS_DEFAULT_REGION}"
+                  S3_BUCKET: "${S3_BUCKET}"
+                  LOCAL_PATH: "to_s3"
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Bitbucket Plugin
+
+Keeper Secrets Manager integration into Bitbucket for dynamic secrets
+retrieval
+
+[PreviousAzure Key Vault Encryption](/en/keeperpam/secrets-
+manager/integrations/azure-key-vault-ksm)[NextDocker
+Image](/en/keeperpam/secrets-manager/integrations/docker-image)
+
+  * Features
+  * Prerequisites
+  * Setup
+  * Getting a configuration
+  * Adding to bitbucket-pipeline.yml
+  * Variables
+  * Retrieving Secrets
+  * Saving secrets to an environment variable
+  * Saving secrets to a file
+  * Examples
+  * Example 1 - Docker Build
+  * Example 2 - Using Keeper Secrets Manager pipe with other pipes.
+
 [Overview ](/en/keeperpam/secrets-manager/overview)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
@@ -889,19 +889,18 @@ manager-configuration#creating-a-secrets-manager-configuration)
 [configuration documentation](/en/keeperpam/secrets-manager/about/secrets-
 manager-configuration#creating-a-secrets-manager-configuration)
 
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHxpNKxYvEfBGnuFCPGOy%252FScreen%2520Shot%25202021-11-01%2520at%25204.16.04%2520PM.png%3Falt%3Dmedia%26token%3D34c39cae-b40d-4bc4-ad1f-6e1bd201f713&width=768&dpr=4&quality=100&sign=9aa4eb7f&sv=2)
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG_XIkldQnp9MV2kj%252F-MkdGfsG5Xki1qYqnKe6%252Fbitbucket-
 plugin-
 header.jpg%3Falt%3Dmedia%26token%3Da1d0792b-3951-44f1-a7be-657b00a543f2&width=768&dpr=4&quality=100&sign=1b209bc5&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtBve4dEQOb4qlm0Tw8pI%252FScreen%2520Shot%25202021-11-01%2520at%25204.19.38%2520PM.png%3Falt%3Dmedia%26token%3D1c223504-041f-48bb-8669-cc1206b97f82&width=768&dpr=4&quality=100&sign=473458a1&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHxpNKxYvEfBGnuFCPGOy%252FScreen%2520Shot%25202021-11-01%2520at%25204.16.04%2520PM.png%3Falt%3Dmedia%26token%3D34c39cae-b40d-4bc4-ad1f-6e1bd201f713&width=768&dpr=4&quality=100&sign=9aa4eb7f&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -911,6 +910,7 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXA3sVeoGM
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FECT7H9rIz94bdhYKiPHI%252FScreen%2520Shot%25202021-11-01%2520at%252010.49.46%2520AM.png%3Falt%3Dmedia%26token%3D56b2b0b9-5274-45eb-95e6-d807642e387a&width=768&dpr=4&quality=100&sign=8ac9a1bc&sv=2)
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtBve4dEQOb4qlm0Tw8pI%252FScreen%2520Shot%25202021-11-01%2520at%25204.19.38%2520PM.png%3Falt%3Dmedia%26token%3D1c223504-041f-48bb-8669-cc1206b97f82&width=768&dpr=4&quality=100&sign=473458a1&sv=2)
 

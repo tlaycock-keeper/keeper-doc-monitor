@@ -386,6 +386,169 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * Linux
+  * Windows
+  * Windows Shell
+  * MacOS
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=Htl8IAakuBMmJKZE6R5W&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
+
+# Setting up SSH
+
+Example guide for setting up SSH on target machines
+
+##
+
+Overview
+
+Customers are responsible for the configuration of their servers and
+environments.
+
+Secure Shell (SSH) allows confidential and authenticated remote access to a
+computer. SSH traffic is fully encrypted and, by default, runs on port `22`.
+For reference and testing, see below for instructions and guidance on enabling
+SSH for your target operating system.
+
+##
+
+Linux
+
+Linux requires the SSH daemon to be running in order to accept SSH
+connections. Most Linux distributions will have the OpenSSH server installed,
+but may not have the service enabled. The service needs to be enabled,
+started, and added to the list of services to be started upon reboot.
+
+To verify that ssh is running on your Linux system, invoke the following
+command:
+
+Copy
+
+    
+    
+    ps aux | grep sshd
+
+If ssh is not running, you may need to install OpenSSH or/and enable ssh. The
+following commands demonstrate this in Ubuntu:
+
+Copy
+
+    
+    
+    apt-get install openssh-server
+    systemctl enable ssh
+    systemctl start ssh
+
+Note:
+
+  * you may need sudo permissions to install and enable ssh
+
+  * The installation command may be different based on your linux distribution
+
+##
+
+Windows
+
+SSH is normally not installed on Windows. However, SSH can easily be installed
+via Windows capability packages which are maintained by Microsoft.
+
+The following PowerShell script will:
+
+  * Install SSH
+
+  * Start the SSH service and makes sure it starts with each reboot
+
+  * Ensure the firewall allows SSH connections
+
+Copy
+
+    
+    
+    # Install OpenSSH
+    Add-WindowsCapability -Online -Name OpenSSH.Server
+    
+    # Start service and make sure it automatically starts after reboot.
+    Start-Service sshd
+    Set-Service -Name sshd -StartupType 'Automatic'
+    
+    # Make sure the the firewall will allow SSH connections
+    if (!(Get-NetFirewallRule -Name "OpenSSH-Server-In-TCP" -ErrorAction SilentlyContinue | Select-Object Name, Enabled)) {
+        Write-Output "Firewall Rule 'OpenSSH-Server-In-TCP' does not exist, creating it..."
+        New-NetFirewallRule -Name 'OpenSSH-Server-In-TCP' -DisplayName 'OpenSSH Server (sshd)' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
+    } else {
+        Write-Output "Firewall rule 'OpenSSH-Server-In-TCP' has been created and exists."
+    }
+
+Once connected, PowerShell Commands can be executed by typing
+`powershell.exe`:
+
+Copy
+
+    
+    
+    domain\admin@MACHINE C:\Users\Administrator\Desktop>powershell.exe
+    
+    Windows\system32\conhost.exe - powershell.exeWindows PowerShell
+    Copyright (C) Microsoft Corporation. All rights reserved.
+    
+    PS C:\Users\Administrator\Desktop> 
+
+###
+
+Windows Shell
+
+Windows SSH can either default to PowerShell or CMD. Keeper Rotation uses
+PowerShell commands. If the default shell is CMD, Keeper Rotation will invoke
+rotation commands via `PowerShell Invoke-Command -ScriptBlock { COMMANDS }`.
+To change the default shell to PowerShell, invoke the following PowerShell
+command:
+
+Copy
+
+    
+    
+    # Enable PowerShell in SSH
+    New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell `
+      -Value "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" `
+      -PropertyType String -Force
+
+##
+
+MacOS
+
+SSH is installed on macOS and usually not turned on for the user.
+
+To enable it via the UI, enable **Remote Login** on the **General**
+->**Sharing** panel.
+
+To enable it via the command line, invoke the following command:
+
+Copy
+
+    
+    
+    $ sudo systemsetup -setremotelogin on
+
+Note:
+
+  * you will require **Full Disk Access** privileges for this command line method.
+
+[PreviousPort Mapping](/en/keeperpam/privileged-access-
+manager/references/port-mapping)[NextSetting up
+WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -416,171 +579,8 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=Htl8IAakuBMmJKZE6R5W&only=yes&limit=100)
-
-Last updated 3 months ago
-
-Was this helpful?
-
-##
-
-Overview
-
-Customers are responsible for the configuration of their servers and
-environments.
-
-Secure Shell (SSH) allows confidential and authenticated remote access to a
-computer. SSH traffic is fully encrypted and, by default, runs on port `22`.
-For reference and testing, see below for instructions and guidance on enabling
-SSH for your target operating system.
-
-##
-
-Linux
-
-Linux requires the SSH daemon to be running in order to accept SSH
-connections. Most Linux distributions will have the OpenSSH server installed,
-but may not have the service enabled. The service needs to be enabled,
-started, and added to the list of services to be started upon reboot.
-
-To verify that ssh is running on your Linux system, invoke the following
-command:
-
-If ssh is not running, you may need to install OpenSSH or/and enable ssh. The
-following commands demonstrate this in Ubuntu:
-
-Note:
-
-  * you may need sudo permissions to install and enable ssh
-
-  * The installation command may be different based on your linux distribution
-
-##
-
-Windows
-
-SSH is normally not installed on Windows. However, SSH can easily be installed
-via Windows capability packages which are maintained by Microsoft.
-
-The following PowerShell script will:
-
-  * Install SSH
-
-  * Start the SSH service and makes sure it starts with each reboot
-
-  * Ensure the firewall allows SSH connections
-
-Once connected, PowerShell Commands can be executed by typing
-`powershell.exe`:
-
-###
-
-Windows Shell
-
-Windows SSH can either default to PowerShell or CMD. Keeper Rotation uses
-PowerShell commands. If the default shell is CMD, Keeper Rotation will invoke
-rotation commands via `PowerShell Invoke-Command -ScriptBlock { COMMANDS }`.
-To change the default shell to PowerShell, invoke the following PowerShell
-command:
-
-##
-
-MacOS
-
-SSH is installed on macOS and usually not turned on for the user.
-
-To enable it via the UI, enable **Remote Login** on the **General**
-->**Sharing** panel.
-
-To enable it via the command line, invoke the following command:
-
-Note:
-
-  * you will require **Full Disk Access** privileges for this command line method.
-
 To connect through SSH, simply create a new  record and set the connection
 protocol to SSH.
-
-Copy
-
-    
-    
-    ps aux | grep sshd
-
-Copy
-
-    
-    
-    apt-get install openssh-server
-    systemctl enable ssh
-    systemctl start ssh
-
-Copy
-
-    
-    
-    # Install OpenSSH
-    Add-WindowsCapability -Online -Name OpenSSH.Server
-    
-    # Start service and make sure it automatically starts after reboot.
-    Start-Service sshd
-    Set-Service -Name sshd -StartupType 'Automatic'
-    
-    # Make sure the the firewall will allow SSH connections
-    if (!(Get-NetFirewallRule -Name "OpenSSH-Server-In-TCP" -ErrorAction SilentlyContinue | Select-Object Name, Enabled)) {
-        Write-Output "Firewall Rule 'OpenSSH-Server-In-TCP' does not exist, creating it..."
-        New-NetFirewallRule -Name 'OpenSSH-Server-In-TCP' -DisplayName 'OpenSSH Server (sshd)' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
-    } else {
-        Write-Output "Firewall rule 'OpenSSH-Server-In-TCP' has been created and exists."
-    }
-
-Copy
-
-    
-    
-    domain\admin@MACHINE C:\Users\Administrator\Desktop>powershell.exe
-    
-    Windows\system32\conhost.exe - powershell.exeWindows PowerShell
-    Copyright (C) Microsoft Corporation. All rights reserved.
-    
-    PS C:\Users\Administrator\Desktop> 
-
-Copy
-
-    
-    
-    # Enable PowerShell in SSH
-    New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell `
-      -Value "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" `
-      -PropertyType String -Force
-
-Copy
-
-    
-    
-    $ sudo systemsetup -setremotelogin on
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
-
-# Setting up SSH
-
-Example guide for setting up SSH on target machines
-
-[PreviousPort Mapping](/en/keeperpam/privileged-access-
-manager/references/port-mapping)[NextSetting up
-WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
-
-  * Overview
-  * Linux
-  * Windows
-  * Windows Shell
-  * MacOS
 
 [PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-machine)
