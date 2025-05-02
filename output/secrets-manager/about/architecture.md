@@ -386,6 +386,32 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * System Architecture
+  * High Availability and Local Cache
+  * Encryption Model
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-Mi1zTe4I8zDWSkB54eH&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [About KSM](/en/keeperpam/secrets-manager/about)
+
+# Architecture
+
+Secrets Manager High Level Architecture
+
+[PreviousAbout KSM](/en/keeperpam/secrets-
+manager/about)[NextTerminology](/en/keeperpam/secrets-
+manager/about/terminology)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -415,32 +441,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * System Architecture
-  * High Availability and Local Cache
-  * Encryption Model
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-Mi1zTe4I8zDWSkB54eH&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [About KSM](/en/keeperpam/secrets-manager/about)
-
-# Architecture
-
-Secrets Manager High Level Architecture
-
-[PreviousAbout KSM](/en/keeperpam/secrets-
-manager/about)[NextTerminology](/en/keeperpam/secrets-
-manager/about/terminology)
-
-Last updated 4 months ago
-
-Was this helpful?
 
 ##
 
@@ -479,10 +479,8 @@ requested Secrets from a local encrypted cache.
 
 Encryption Model
 
-More details about the security and encryption model are .
-
-[available here](/en/keeperpam/secrets-manager/about/security-encryption-
-model)
+More details about the security and encryption model are [available
+here](/en/keeperpam/secrets-manager/about/security-encryption-model).
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

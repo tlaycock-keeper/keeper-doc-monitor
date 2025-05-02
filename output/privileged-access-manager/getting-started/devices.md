@@ -561,6 +561,16 @@ Copy
 
 See the  of a Device
 
+Create a Device
+
+Add a device using One-Time Access Token and IP Lockdown
+
+Access Token Generated
+
+Creating a new device with Configuration File method
+
+Device created with Configuration method
+
 See more details on the
 
 [Security & Encryption Model](/en/keeperpam/secrets-manager/about/security-
@@ -574,16 +584,6 @@ manager/about/secrets-manager-configuration)
 
 [secrets-manager Commander CLI command](/en/keeperpam/commander-cli/command-
 reference/secrets-manager-commands)
-
-Create a Device
-
-Add a device using One-Time Access Token and IP Lockdown
-
-Access Token Generated
-
-Creating a new device with Configuration File method
-
-Device created with Configuration method
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

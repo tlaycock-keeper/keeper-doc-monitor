@@ -386,36 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * About
@@ -446,6 +416,36 @@ configuration)
 Last updated 4 months ago
 
 Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -667,10 +667,8 @@ Some of the 3rd party Keeper Secrets Manager integrations require **pre-built
 configurations** , instead of creating the configuration from a one-time
 access token.
 
-The  reviews how to create a Secrets Manager Configuration.
-
-[next section](/en/keeperpam/secrets-manager/about/secrets-manager-
-configuration)
+The [next section](/en/keeperpam/secrets-manager/about/secrets-manager-
+configuration) reviews how to create a Secrets Manager Configuration.
 
 [Keeper Commander](/en/keeperpam/secrets-manager/about/one-time-token#using-
 commander-to-generate-a-token)
@@ -699,20 +697,12 @@ The Add Device form
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwI0nQhO-
-wCYECjEON%252Fimage.png%3Falt%3Dmedia%26token%3D33f480f5-3aae-4048-bba7-ea9b5c748bbd&width=768&dpr=4&quality=100&sign=8a252b31&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwKUixFqY8vXCLYH9I%252Fimage.png%3Falt%3Dmedia%26token%3Dba298a3a-b189-4032-9902-c7dc39e1debb&width=768&dpr=4&quality=100&sign=ed8bbdc&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwGBqSEWVeD1DGOx-E%252Fimage.png%3Falt%3Dmedia%26token%3D08811fbb-f6dc-4e78-b101-152948f5c11a&width=768&dpr=4&quality=100&sign=9938fb47&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwHBXhb0TyqFXv_pqf%252Fimage.png%3Falt%3Dmedia%26token%3De4de2b61-aa02-4946-91dd-9b7c16a58905&width=768&dpr=4&quality=100&sign=d6f04ef5&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwI0nQhO-
+wCYECjEON%252Fimage.png%3Falt%3Dmedia%26token%3D33f480f5-3aae-4048-bba7-ea9b5c748bbd&width=768&dpr=4&quality=100&sign=8a252b31&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -720,7 +710,11 @@ files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwHKL
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwK7UfiUinswchj47m%252Fimage.png%3Falt%3Dmedia%26token%3D0542474d-6af5-4351-a703-6e4defc2f1e5&width=768&dpr=4&quality=100&sign=41b810f2&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwKUixFqY8vXCLYH9I%252Fimage.png%3Falt%3Dmedia%26token%3Dba298a3a-b189-4032-9902-c7dc39e1debb&width=768&dpr=4&quality=100&sign=ed8bbdc&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwHBXhb0TyqFXv_pqf%252Fimage.png%3Falt%3Dmedia%26token%3De4de2b61-aa02-4946-91dd-9b7c16a58905&width=768&dpr=4&quality=100&sign=d6f04ef5&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -737,8 +731,7 @@ files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwIQJ
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwI_rX-
-tEVeKRUFHuU%252Fimage.png%3Falt%3Dmedia%26token%3D020fa879-e41a-4a0d-a1c3-8ce0b95f7cd5&width=768&dpr=4&quality=100&sign=aadc554c&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwIsKda8YtcIcdTEHg%252Fimage.png%3Falt%3Dmedia%26token%3D17df6f33-834a-4151-bdf6-fec1fa924628&width=768&dpr=4&quality=100&sign=c7f6884f&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -746,5 +739,10 @@ files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwIzd
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwIsKda8YtcIcdTEHg%252Fimage.png%3Falt%3Dmedia%26token%3D17df6f33-834a-4151-bdf6-fec1fa924628&width=768&dpr=4&quality=100&sign=c7f6884f&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwK7UfiUinswchj47m%252Fimage.png%3Falt%3Dmedia%26token%3D0542474d-6af5-4351-a703-6e4defc2f1e5&width=768&dpr=4&quality=100&sign=41b810f2&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwI_rX-
+tEVeKRUFHuU%252Fimage.png%3Falt%3Dmedia%26token%3D020fa879-e41a-4a0d-a1c3-8ce0b95f7cd5&width=768&dpr=4&quality=100&sign=aadc554c&sv=2)
 

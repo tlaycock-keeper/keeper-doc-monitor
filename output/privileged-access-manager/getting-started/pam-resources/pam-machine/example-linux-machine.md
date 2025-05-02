@@ -418,10 +418,33 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview 
+  * Prerequisites
+  * PAM Machine Record
+  * Creating a PAM Machine 
+  * Configure a Linux Machine on the PAM Machine Record
+  * Configuring PAM Settings on the PAM Machine 
+  * Administrative Credential Record 
+  * Sharing PAM Machine Records 
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=yTxKafHuggjNONmVZ9Kh&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [PAM Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-resources)
+  4. [PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-machine)
+
+# Example: Linux Machine
+
+Configuring SSH Server as a PAM Machine Record
+
+[PreviousPAM Machine](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-machine)[NextExample: Azure Windows
+VM](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-
+machine/example-azure-windows-vm)
 
 Last updated 2 months ago
 
@@ -479,63 +502,11 @@ Suppose I have a local Linux Virtual Machine with the hostname "linux-
 machine", the following table lists all the configurable fields and their
 respective values:
 
-###
-
-Configuring PAM Settings on the PAM Machine
-
-On the "PAM Settings" section of the vault record, you can configure the
-KeeperPAM Connection and Tunnel settings and link a PAM User credential for
-performing rotations and connections. Tunnels do not require a linked
-credential. The following table lists all the configurable fields and their
-respective values for the Linux Machine:
-
-###
-
-Administrative Credential Record
-
-The **Admin Credential Record** in the PAM Machine links the admin user to the
-PAM Machine record in your Keeper Vault. This admin user is used for
-performing password rotations and authenticating connections.
-
-####
-
-Setting a Non Admin User as the Administrative Credential Record
-
-If you prefer not to authenticate a connection using the admin credential, you
-can optionally designate a regular user of the resource as the admin
-credential.
-
-##
-
-Sharing PAM Machine Records
-
-When sharing a PAM Machine record, the linked admin credentials will **not**
-be shared. For example, if the PAM Machine is configured with a Linux Machine,
-the recipient can connect to the Linux Machine on the PAM Machine record
-without having direct access to the linked credentials.
-
-  * 
-
 Field
 
 Description
 
 Value
-
-Field
-
-Description
-
-Required
-
-User Accounts can be configured on the PAM User record. Visit this  for more
-information on the PAM User.
-
-PAM Machine records can be shared with other Keeper users within your
-organization. However, the recipient must have the  in place to utilize
-KeeperPAM features on the shared PAM records.
-
-Learn more about
 
 Title (Required)
 
@@ -585,43 +556,21 @@ Azure or AWS Provider Region
 
 **Required** if a managed AWS Machine
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [PAM Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-resources)
-  4. [PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-machine)
+###
 
-# Example: Linux Machine
+Configuring PAM Settings on the PAM Machine
 
-Configuring SSH Server as a PAM Machine Record
+On the "PAM Settings" section of the vault record, you can configure the
+KeeperPAM Connection and Tunnel settings and link a PAM User credential for
+performing rotations and connections. Tunnels do not require a linked
+credential. The following table lists all the configurable fields and their
+respective values for the Linux Machine:
 
-[PreviousPAM Machine](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-machine)[NextExample: Azure Windows
-VM](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-
-machine/example-azure-windows-vm)
+Field
 
-  * Overview 
-  * Prerequisites
-  * PAM Machine Record
-  * Creating a PAM Machine 
-  * Configure a Linux Machine on the PAM Machine Record
-  * Configuring PAM Settings on the PAM Machine 
-  * Administrative Credential Record 
-  * Sharing PAM Machine Records 
+Description
 
-[Installed and configured the Keeper Gateway](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/one-time-access-token)
-
-[Set up a PAM Configuration for your target Environment
-](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
-
-[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
-[appropriate PAM enforcement policies](/en/keeperpam/privileged-access-
-manager/getting-started/enforcement-policies)
-
-[Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-
-started/sharing-and-access-control)
+Required
 
 PAM Configuration
 
@@ -648,12 +597,63 @@ Connection Parameters
 Connection-specific protocol settings which can vary based on the protocol
 type.
 
+###
+
+Administrative Credential Record
+
+The **Admin Credential Record** in the PAM Machine links the admin user to the
+PAM Machine record in your Keeper Vault. This admin user is used for
+performing password rotations and authenticating connections.
+
+####
+
+Setting a Non Admin User as the Administrative Credential Record
+
+If you prefer not to authenticate a connection using the admin credential, you
+can optionally designate a regular user of the resource as the admin
+credential.
+
+##
+
+Sharing PAM Machine Records
+
+When sharing a PAM Machine record, the linked admin credentials will **not**
+be shared. For example, if the PAM Machine is configured with a Linux Machine,
+the recipient can connect to the Linux Machine on the PAM Machine record
+without having direct access to the linked credentials.
+
+  * 
+
 **Required** Visit this  for more details
 
 See
 
 See this  for SSH protocol settings. We recommend specifying the **Connection
 Port** at a minimum. E.g. "22" for SSH.
+
+User Accounts can be configured on the PAM User record. Visit this  for more
+information on the PAM User.
+
+PAM Machine records can be shared with other Keeper users within your
+organization. However, the recipient must have the  in place to utilize
+KeeperPAM features on the shared PAM records.
+
+Learn more about
+
+[Installed and configured the Keeper Gateway](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/one-time-access-token)
+
+[Set up a PAM Configuration for your target Environment
+](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
+
+[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
+[appropriate PAM enforcement policies](/en/keeperpam/privileged-access-
+manager/getting-started/enforcement-policies)
+
+[Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-
+started/sharing-and-access-control)
 
 [session recording](/en/keeperpam/privileged-access-manager/session-recording-
 and-playback)

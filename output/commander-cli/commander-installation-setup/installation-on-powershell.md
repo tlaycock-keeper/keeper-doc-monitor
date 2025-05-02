@@ -418,36 +418,12 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * PowerShell CLI
-  * PowerShell Gallery Install
-  * GitHub Repository
-  * Installation Troubleshooting
-  * PowerCommander Commands
-  * Cmdlets
-  * Sharing Cmdlets
-  * Enterprise Cmdlets
-  * Secret Manager Cmdlets
-  * Additional Commands
-  * Examples
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=lfSjUzsjGiy11VuNS0qa&only=yes&limit=100)
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
-
-# PowerShell Module
-
-Installing the Keeper Commander PowerShell Module
-
-[Previous.NET Developer Setup](/en/keeperpam/commander-cli/commander-
-installation-setup/net-developer-sdk)[NextLogging in](/en/keeperpam/commander-
-cli/commander-installation-setup/logging-in)
-
-Last updated 14 days ago
+Last updated 16 days ago
 
 Was this helpful?
 
@@ -475,12 +451,6 @@ PowerShell Gallery Install
 
 To install PowerCommander from PowerShell Gallery:
 
-Copy
-
-    
-    
-    Install-Module -Name PowerCommander
-
 ###
 
 **GitHub Repository**
@@ -497,13 +467,143 @@ Installation Troubleshooting
 If you are unable to run PowerCommander commands, you may need to set the
 Execution Policy. To check this, run the following command:
 
+Your output would be similar to this:
+
+If the Scope for your installation is `Undefined` or `Restricted`, set it to
+`Unrestricted` with the following command:
+
+Note: The above command set the `CurrentUser` scope
+
+##
+
+PowerCommander Commands
+
+###
+
+Cmdlets
+
+###
+
+Sharing Cmdlets
+
+###
+
+Enterprise Cmdlets
+
+###
+
+Secret Manager Cmdlets
+
+###
+
+Additional Commands
+
+Not all capabilities of Keeper Commander (Python) have been added to the
+PowerShell module. We add them on request by customers. If you have requests
+for our engineering team, please email **commander@keepersecurity.com**.
+
+##
+
+**Examples**
+
+Connect To Keeper Account
+
+List the content of Keeper folder
+
+  * **f** \- folder
+
+  * **r** \- record
+
+  * **S** \- shared
+
+  * **A** \- file attachments
+
+  * **O** \- owner
+
+Show Two Factor Code for all records in the current Keeper folder
+
+Show Two Factor Code for all records in the Vault.
+
+where
+
+  * `kr` is alias for `Get-KeeperRecord`
+
+  * `2fa` is alias for `Show-TwoFactorCode`
+
+Copy record password to clipboard
+
+where
+
+  * `contro` is a substring of the record title. See last entry of `kdir` output in example #2
+
+  * `kcc` is alias for `Copy-KeeperToClipboard`
+
+or
+
+`'ktY3jEBqwFDi9UYZSxmIpw'` is the Record UID of the same record
+
+Add/Modify Keeper record
+
+creates a legacy record in Keeper
+
+creates a record of `login` type in Keeper
+
+generates a new password for existing record
+
+Pre-defined fields supported by both legacy and typed records
+
+  * `login` Login
+
+  * `password` Password
+
+  * `url` Website Address
+
+Copy owned record to folder
+
+copies all records in the current Keeper folder to the folder with name
+'Shared Folder'
+
+List all enterprise users
+
+Create a new Managed Company
+
+Switch to a new Managed Company
+
+Cmdlet name
+
+Alias
+
+Description
+
+Cmdlet name
+
+Alias
+
+Description
+
+Cmdlet name
+
+Alias
+
+Description
+
+Cmdlet name
+
+Alias
+
+Description
+
+Copy
+
+    
+    
+    Install-Module -Name PowerCommander
+
 Copy
 
     
     
     PS> Get-ExecutionPolicy -List
-
-Your output would be similar to this:
 
 Copy
 
@@ -517,30 +617,11 @@ Copy
       CurrentUser       Undefined
      LocalMachine       Undefined
 
-If the Scope for your installation is `Undefined` or `Restricted`, set it to
-`Unrestricted` with the following command:
-
 Copy
 
     
     
     PS> Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
-
-Note: The above command set the `CurrentUser` scope
-
-##
-
-PowerCommander Commands
-
-###
-
-Cmdlets
-
-Cmdlet name
-
-Alias
-
-Description
 
 Connect-Keeper
 
@@ -672,16 +753,6 @@ this-device
 
 Modifies the current device settings
 
-###
-
-Sharing Cmdlets
-
-Cmdlet name
-
-Alias
-
-Description
-
 Show-KeeperRecordShare
 
 kshrsh
@@ -741,16 +812,6 @@ Remove-KeeperOneTimeShare
 kotsr
 
 Remove One-Time Share
-
-###
-
-Enterprise Cmdlets
-
-Cmdlet name
-
-Alias
-
-Description
 
 Sync-KeeperEnterprise
 
@@ -870,16 +931,6 @@ Get-MspBillingReport
 
 Run MSP Billing Report
 
-###
-
-Secret Manager Cmdlets
-
-Cmdlet name
-
-Alias
-
-Description
-
 Get-KeeperSecretManagerApp
 
 ksm
@@ -916,20 +967,6 @@ ksm-rmclient
 
 Remove a client/device from KSM Application
 
-###
-
-Additional Commands
-
-Not all capabilities of Keeper Commander (Python) have been added to the
-PowerShell module. We add them on request by customers. If you have requests
-for our engineering team, please email **commander@keepersecurity.com**.
-
-##
-
-**Examples**
-
-Connect To Keeper Account
-
 Copy
 
     
@@ -937,8 +974,6 @@ Copy
     PS > Connect-Keeper
          Keeper Username: email_address@company.com
             ... Password:
-
-List the content of Keeper folder
 
 Copy
 
@@ -956,25 +991,11 @@ Copy
     -r-AO-  5qx_urh2EsrL0wBdi34nFw   Web
     -r---S  ktY3jEBqwFDi9UYZSxmIpw   Control
 
-  * **f** \- folder
-
-  * **r** \- record
-
-  * **S** \- shared
-
-  * **A** \- file attachments
-
-  * **O** \- owner
-
-Show Two Factor Code for all records in the current Keeper folder
-
 Copy
 
     
     
     PS > kdir -ObjectType Record | Show-TwoFactorCode
-
-Show Two Factor Code for all records in the Vault.
 
 Copy
 
@@ -982,27 +1003,11 @@ Copy
     
     PS > kr|2fa
 
-where
-
-  * `kr` is alias for `Get-KeeperRecord`
-
-  * `2fa` is alias for `Show-TwoFactorCode`
-
-Copy record password to clipboard
-
 Copy
 
     
     
     PS > 'contro' | kcc
-
-where
-
-  * `contro` is a substring of the record title. See last entry of `kdir` output in example #2
-
-  * `kcc` is alias for `Copy-KeeperToClipboard`
-
-or
 
 Copy
 
@@ -1010,25 +1015,17 @@ Copy
     
     PS > 'ktY3jEBqwFDi9UYZSxmIpw' | kcc
 
-`'ktY3jEBqwFDi9UYZSxmIpw'` is the Record UID of the same record
-
-Add/Modify Keeper record
-
 Copy
 
     
     
     PS > kadd -Title 'Record for John Doe' -GeneratePassword login=email@company.com url=https://company.com 'User Name=John Doe' 
 
-creates a legacy record in Keeper
-
 Copy
 
     
     
     PS > kadd -RecordType login -Title 'Record for John Doe' -GeneratePassword login=email@company.com url=https://company.com 'User Name=John Doe' 
-
-creates a record of `login` type in Keeper
 
 Copy
 
@@ -1043,28 +1040,11 @@ Copy
     
     PS > kadd -Uid <RECORD UID> -GeneratePassword 
 
-generates a new password for existing record
-
-Pre-defined fields supported by both legacy and typed records
-
-  * `login` Login
-
-  * `password` Password
-
-  * `url` Website Address
-
-Copy owned record to folder
-
 Copy
 
     
     
     PS > Get-KeeperChildItem -ObjectType Record | Move-RecordToFolder 'Shared Folder'
-
-copies all records in the current Keeper folder to the folder with name
-'Shared Folder'
-
-List all enterprise users
 
 Copy
 
@@ -1072,21 +1052,41 @@ Copy
     
     PS > Get-KeeperEnterpriseUser
 
-Create a new Managed Company
-
 Copy
 
     
     
     PS> New-KeeperManagedCompany -Name "Company Name" -PlanId enterprisePlus -Allocated 5
 
-Switch to a new Managed Company
-
 Copy
 
     
     
     PS> switch-to-mc "Company Name"
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+
+# PowerShell Module
+
+Installing the Keeper Commander PowerShell Module
+
+[Previous.NET Developer Setup](/en/keeperpam/commander-cli/commander-
+installation-setup/net-developer-sdk)[NextLogging in](/en/keeperpam/commander-
+cli/commander-installation-setup/logging-in)
+
+  * Overview
+  * PowerShell CLI
+  * PowerShell Gallery Install
+  * GitHub Repository
+  * Installation Troubleshooting
+  * PowerCommander Commands
+  * Cmdlets
+  * Sharing Cmdlets
+  * Enterprise Cmdlets
+  * Secret Manager Cmdlets
+  * Additional Commands
+  * Examples
 
 <https://github.com/Keeper-Security/keeper-sdk-
 dotnet/tree/master/PowerCommander>[](https://github.com/Keeper-

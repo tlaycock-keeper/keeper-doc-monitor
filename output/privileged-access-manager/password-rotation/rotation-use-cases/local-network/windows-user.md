@@ -386,6 +386,39 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * Prerequisites
+  * 1\. Set up a PAM Machine Record
+  * 2\. Set up a PAM Configuration
+  * 3\. Set up one or more PAM User records
+  * 4\. Configure Rotation on the PAM User records
+  * Service Management
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=ozTHJDSYKYXqnd4ofmC4&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
+
+# Windows User
+
+Rotating Windows User Accounts on Local Network
+
+[PreviousActive Directory or OpenLDAP User](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/local-network/active-
+directory)[NextLinux User](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/linux-user)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -416,24 +449,15 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=ozTHJDSYKYXqnd4ofmC4&only=yes&limit=100)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 ##
 
 Overview
 
 In this guide, you'll learn how to rotate Windows user accounts within your
 local network using Keeper Rotation. For a high-level overview on the rotation
-process in the local network, visit this .
+process in the local network, visit this [page](/en/keeperpam/privileged-
+access-manager/password-rotation/rotation-use-cases/local-network#rotation-on-
+the-local-network).
 
 ##
 
@@ -441,9 +465,19 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   *   *   * The Keeper Gateway can communicate over WinRM or SSH to the target machine:
+  * Keeper Secrets Manager is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
 
-    *     * **SSH:** Enabled and running on port 22. Verification: Run `ssh [your-user]@[your-machine] -p 22` to verify that SSH is running.
+  * Keeper Rotation is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
+
+  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+
+  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed and showing online
+
+  * The Keeper Gateway can communicate over WinRM or SSH to the target machine:
+
+    * **WinRM:** Enabled and running on port 5986. Verification: Run `winrm get winrm/config` to verify that WinRM is running. See [WinRM setup page](/en/keeperpam/privileged-access-manager/references/setting-up-winrm) for installation help. **OR...**
+
+    * **SSH:** Enabled and running on port 22. Verification: Run `ssh [your-user]@[your-machine] -p 22` to verify that SSH is running.
 
 ##
 
@@ -458,6 +492,27 @@ In this guide, we will store the admin credentials in a PAM Machine Record.
 
 The following table lists all the **required** fields that needs to be filled
 on the PAM Machine Record with your information:
+
+Field
+
+Description
+
+**Title**
+
+Name of the Record ex: "Local Windows Admin"
+
+**Hostname or IP Address**
+
+Machine hostname or IP as accessed by the Gateway (internal) or "localhost"
+
+**Port**
+
+22 for SSH, 5985 (HTTP) or 5986 (HTTPS) for WinRM
+
+**Administrative Credentials**
+
+Linked PAM User record that contains the username and password (or SSH Key) of
+the Admin account which will perform the rotation.
 
 The linked PAM User record with the admin credential needs to be in a shared
 folder that is accessible to the Keeper Gateway.
@@ -474,6 +529,29 @@ and select "Secrets Manager", then select the "PAM Configurations" tab, and
 click on "New Configuration". The following table lists all the required****
 fields on the **PAM Configuration** Record:
 
+Field
+
+Description
+
+**Title**
+
+Configuration name, example: `Windows LAN Configuration`
+
+**Environment**
+
+Select: `Local Network`
+
+**Gateway**
+
+Select the Gateway that is configured on the Keeper Secrets Manager
+application and has SSH access to your Windows devices
+
+**Application Folder**
+
+Select the Shared folder where the PAM Configuration will be stored. We
+recommend placing this in a shared folder with the PAM User records, not the
+machine resources.
+
 ##
 
 3\. Set up one or more PAM User records
@@ -485,6 +563,26 @@ application created in the prerequisites.
 
 The following table lists all the required**** fields on the **PAM User**
 record:
+
+Field
+
+Description
+
+**Record Type**
+
+PAM User
+
+**Title**
+
+Keeper record title
+
+**Login**
+
+Case sensitive username of the account being rotated. Example: `msmith`
+
+**Password**
+
+Account password is optional, rotation will set one if blank
 
 ##
 
@@ -513,125 +611,9 @@ credentials for any Windows services running as the PAM User, and restart the
 service. Keeper will also update the credential of any scheduled task running
 as that user on the target machine.
 
-Keeper Secrets Manager is enabled for your
-
-Keeper Rotation is enabled for your
-
-A Keeper Secrets Manager  has been created
-
-A Keeper Rotation  is already installed and showing online
-
-**WinRM:** Enabled and running on port 5986. Verification: Run `winrm get
-winrm/config` to verify that WinRM is running. See  for installation help.
-**OR...**
-
-Field
-
-Description
-
-Field
-
-Description
-
-Field
-
-Description
-
-To learn more and set up this capability, see the  page.
-
-**Title**
-
-Name of the Record ex: "Local Windows Admin"
-
-**Hostname or IP Address**
-
-Machine hostname or IP as accessed by the Gateway (internal) or "localhost"
-
-**Port**
-
-22 for SSH, 5985 (HTTP) or 5986 (HTTPS) for WinRM
-
-**Administrative Credentials**
-
-Linked PAM User record that contains the username and password (or SSH Key) of
-the Admin account which will perform the rotation.
-
-**Title**
-
-Configuration name, example: `Windows LAN Configuration`
-
-**Environment**
-
-Select: `Local Network`
-
-**Gateway**
-
-Select the Gateway that is configured on the Keeper Secrets Manager
-application and has SSH access to your Windows devices
-
-**Application Folder**
-
-Select the Shared folder where the PAM Configuration will be stored. We
-recommend placing this in a shared folder with the PAM User records, not the
-machine resources.
-
-**Record Type**
-
-PAM User
-
-**Title**
-
-Keeper record title
-
-**Login**
-
-Case sensitive username of the account being rotated. Example: `msmith`
-
-**Password**
-
-Account password is optional, rotation will set one if blank
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
-
-# Windows User
-
-Rotating Windows User Accounts on Local Network
-
-[PreviousActive Directory or OpenLDAP User](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network/active-
-directory)[NextLinux User](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/linux-user)
-
-  * Overview
-  * Prerequisites
-  * 1\. Set up a PAM Machine Record
-  * 2\. Set up a PAM Configuration
-  * 3\. Set up one or more PAM User records
-  * 4\. Configure Rotation on the PAM User records
-  * Service Management
-
-[application](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
-
-[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-[WinRM setup page](/en/keeperpam/privileged-access-manager/references/setting-
-up-winrm)
-
-[Service Management](/en/keeperpam/privileged-access-manager/password-
-rotation/service-management)
-
-[page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/local-network#rotation-on-the-local-network)
-
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
-
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
+To learn more and set up this capability, see the [Service
+Management](/en/keeperpam/privileged-access-manager/password-rotation/service-
+management) page.
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

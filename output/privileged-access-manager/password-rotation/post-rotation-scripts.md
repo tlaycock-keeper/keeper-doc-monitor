@@ -386,6 +386,35 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * Rotation Options
+  * Order of Execution
+  * Common Use Cases
+  * Documentation included
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=L2aoHEHPl4mak6HpvI9z&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+
+# Post-Rotation Scripts
+
+Perform privileged automation tasks with Post-Rotation scripts and password
+rotation
+
+[PreviousService Management](/en/keeperpam/privileged-access-manager/password-
+rotation/service-management)[NextInputs and Outputs](/en/keeperpam/privileged-
+access-manager/password-rotation/post-rotation-scripts/parameters)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -415,35 +444,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Overview
-  * Rotation Options
-  * Order of Execution
-  * Common Use Cases
-  * Documentation included
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=L2aoHEHPl4mak6HpvI9z&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-
-# Post-Rotation Scripts
-
-Perform privileged automation tasks with Post-Rotation scripts and password
-rotation
-
-[PreviousService Management](/en/keeperpam/privileged-access-manager/password-
-rotation/service-management)[NextInputs and Outputs](/en/keeperpam/privileged-
-access-manager/password-rotation/post-rotation-scripts/parameters)
-
-Last updated 2 months ago
-
-Was this helpful?
 
 ##
 
