@@ -741,16 +741,16 @@ Calculating and verifying the checksum:
 
 Linux
 
-####
-
-PowerShell
-
 Copy
 
     
     
     sha256sum keeper-gateway_linux_x86_64
     cat keeper-gateway_X.X.X_SHA256SUMS | grep keeper-gateway_linux_x86_64
+
+####
+
+PowerShell
 
 Copy
 

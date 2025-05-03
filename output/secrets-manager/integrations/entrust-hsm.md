@@ -386,6 +386,37 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Features
+  * Prerequisites
+  * Setup
+  * 1\. Create and Configure Virtualenv
+  * 2\. Install KSM Storage and nfpython Modules 
+  * 3\. Add Entrust HSM Storage to Your Code
+  * Using Secrets Manager with Entrust HSM
+  * Create an Encryption Key for Testing
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=CjeGp1bCdKjFokibDmg0&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Entrust HSM Encryption
+
+Protect Secrets Manager connection details locally with Entrust HSM
+
+[PreviousDocker Writer Image](/en/keeperpam/secrets-
+manager/integrations/docker-writer-image)[NextGit - Sign Commits with
+SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
+
+Last updated 18 days ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -415,37 +446,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Features
-  * Prerequisites
-  * Setup
-  * 1\. Create and Configure Virtualenv
-  * 2\. Install KSM Storage and nfpython Modules 
-  * 3\. Add Entrust HSM Storage to Your Code
-  * Using Secrets Manager with Entrust HSM
-  * Create an Encryption Key for Testing
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=CjeGp1bCdKjFokibDmg0&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Entrust HSM Encryption
-
-Protect Secrets Manager connection details locally with Entrust HSM
-
-[PreviousDocker Writer Image](/en/keeperpam/secrets-
-manager/integrations/docker-writer-image)[NextGit - Sign Commits with
-SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
-
-Last updated 17 days ago
-
-Was this helpful?
 
 Keeper Secrets Manager integrates with Entrust HSM in order to provide
 encryption for Keeper Secrets Manager configuration files. With this

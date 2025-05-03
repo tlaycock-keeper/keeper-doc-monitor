@@ -627,12 +627,24 @@ PAM Record Type
 
 Supported Assets
 
+[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
+
 Windows, Linux, macOS devices, VMs, EC2 instances, Azure VMs, Network devices
 and other operating systems.
 
+[PAM Database ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database)
+
 MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
 
+[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-directory)
+
 Active Directory, Azure AD, OpenLDAP
+
+[PAM Remote Browser ](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-remote-browser)
 
 Web-based Applications, self-hosted apps, cloud apps, any http or https
 target.
@@ -676,18 +688,6 @@ utilizing PAM features is described in the below sections.
   * [Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
 
   * [Discovery](/en/keeperpam/privileged-access-manager/discovery)
-
-[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
-[PAM Database ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database)
-
-[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-directory)
-
-[PAM Remote Browser ](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-remote-browser)
 
 Typical Folder Setup for KeeperPAM
 

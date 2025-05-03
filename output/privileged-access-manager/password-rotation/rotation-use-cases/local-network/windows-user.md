@@ -455,9 +455,7 @@ Overview
 
 In this guide, you'll learn how to rotate Windows user accounts within your
 local network using Keeper Rotation. For a high-level overview on the rotation
-process in the local network, visit this [page](/en/keeperpam/privileged-
-access-manager/password-rotation/rotation-use-cases/local-network#rotation-on-
-the-local-network).
+process in the local network, visit this .
 
 ##
 
@@ -465,11 +463,7 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  * Keeper Secrets Manager is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
-
-  * Keeper Rotation is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
-
-  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+  *   *   * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
 
   * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed and showing online
 
@@ -614,6 +608,19 @@ as that user on the target machine.
 To learn more and set up this capability, see the [Service
 Management](/en/keeperpam/privileged-access-manager/password-rotation/service-
 management) page.
+
+Keeper Secrets Manager is enabled for your
+
+Keeper Rotation is enabled for your
+
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
+
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
+
+[page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/local-network#rotation-on-the-local-network)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

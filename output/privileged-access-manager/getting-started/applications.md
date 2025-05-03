@@ -509,13 +509,6 @@ select "**Create New** " then "**Gateway** ".
 The "Project Name" is used to create a PAM Configuration, Gateway, Application
 and optionally a set of example folders and records.
 
-[Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-
-line-interface)
-
-[Developer SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
-
-[Integrations](/en/keeperpam/secrets-manager/integrations)
-
 One-Time Access Token
 
 Managing Applications
@@ -529,6 +522,13 @@ Assigning a Gateway to an Application
 Create a Gateway and associated applications
 
 Gateway Creation Wizard
+
+[Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-
+line-interface)
+
+[Developer SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
+
+[Integrations](/en/keeperpam/secrets-manager/integrations)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

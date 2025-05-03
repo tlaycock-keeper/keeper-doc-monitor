@@ -386,36 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * What is the Keeper Gateway?
@@ -444,15 +414,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=yf07eQ6miVwsM9IcJolm&only=yes&limit=100)
 
 Security and encryption model of the Keeper Gateway service
 
-[PreviousRouter Security](/en/keeperpam/privileged-access-manager/getting-
-started/architecture/router-security)[NextConnection and Tunnel
-Security](/en/keeperpam/privileged-access-manager/getting-
-started/architecture/connection-and-tunnel-security)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 ###
 
 What is the Keeper Gateway?
@@ -460,7 +421,8 @@ What is the Keeper Gateway?
 The Keeper Gateway is a service that is installed on-premise in order to
 execute rotation, discovery and connection tasks. The Keeper Gateway
 communicates outbound to the Keeper Router using WebSockets and Keeper Secrets
-Manager .
+Manager [zero-knowledge protocols](/en/keeperpam/secrets-
+manager/about/security-encryption-model).
 
 ##
 
@@ -474,12 +436,14 @@ of the One Time Access Token).
 
 For accessing and decrypting vault records, the Keeper Gateway uses standard
 Keeper Secrets Manager APIs which perform client-side encryption and
-decryption of data. The  ensures least privilege and zero knowledge by
-allocating only specific folders and records that can be decrypted by the
-service. API requests to the Keeper Cloud are sent with a Client Device
-Identifier and a request body that is signed with the Client Device Private
-Key. The server checks the ECDSA signature of the request for the given Client
-Device Identifier using the Client Public Key of the device.
+decryption of data. The [security model of Keeper Secrets
+Manager](/en/keeperpam/secrets-manager/about/security-encryption-model)
+ensures least privilege and zero knowledge by allocating only specific folders
+and records that can be decrypted by the service. API requests to the Keeper
+Cloud are sent with a Client Device Identifier and a request body that is
+signed with the Client Device Private Key. The server checks the ECDSA
+signature of the request for the given Client Device Identifier using the
+Client Public Key of the device.
 
 Like any other Secrets Manager device, access can also be restricted based on
 IP address in addition to the encryption and signing process.
@@ -516,8 +480,9 @@ user that installed the Gateway.
 
 Docker Install
 
-The  passes in the configuration through an environment variable in the Docker
-Compose file.
+The [Docker installation method](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/docker-installation) passes in the
+configuration through an environment variable in the Docker Compose file.
 
 ###
 
@@ -561,6 +526,10 @@ secrets from Keeper. To prevent unauthorized access, this configuration file
 is only readable by the installing user and administrative accounts. On a
 Windows server, the Windows System account is used to run the service by
 default, and also has access to the KSM configuration.
+
+In AWS environments, the configuration can be [protected with the AWS
+KMS](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/advanced-configuration/gateway-configuration-with-aws-kms).
 
 ###
 
@@ -649,26 +618,48 @@ the following parameters:
 After the command is executed, Keeper Gateway clears the command line history
 on Linux and Windows instances.
 
-In AWS environments, the configuration can be .
-
 If a Post-Rotation script requires access to other secrets beyond those passed
-in automatically, users are strongly encouraged to use the  or the  tool.
-
-[zero-knowledge protocols](/en/keeperpam/secrets-manager/about/security-
-encryption-model)
-
-[security model of Keeper Secrets Manager](/en/keeperpam/secrets-
-manager/about/security-encryption-model)
-
-[Docker installation method](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/docker-installation)
-
-[protected with the AWS KMS](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/advanced-configuration/gateway-configuration-with-aws-kms)
-
-[Keeper Secrets Manager SDKs](/en/keeperpam/secrets-manager/developer-sdk-
-library)
-
+in automatically, users are strongly encouraged to use the [Keeper Secrets
+Manager SDKs](/en/keeperpam/secrets-manager/developer-sdk-library) or the
 [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-
-line-interface)
+line-interface) tool.
+
+[PreviousRouter Security](/en/keeperpam/privileged-access-manager/getting-
+started/architecture/router-security)[NextConnection and Tunnel
+Security](/en/keeperpam/privileged-access-manager/getting-
+started/architecture/connection-and-tunnel-security)
+
+Last updated 3 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

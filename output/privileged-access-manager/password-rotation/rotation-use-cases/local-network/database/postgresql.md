@@ -463,7 +463,9 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   *   * 
+  *   *   * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+
+  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is able to communicate to your Postgres database
 
 ##
 
@@ -490,6 +492,8 @@ Keeper record title Ex: `dbadmin`
 Server address - _doesn't need to be publicly_ routable
 
 **Port**
+
+For default ports, see port mapping Ex: `postgresql=5432`
 
 **Use SSL**
 
@@ -605,20 +609,6 @@ rotation for that record.
 Keeper Secrets Manager is enabled for your
 
 Keeper Rotation is enabled for your
-
-A Keeper Secrets Manager  has been created
-
-A Keeper Rotation  is already installed, running, and is able to communicate
-to your Postgres database
-
-For default ports, see  Ex: `postgresql=5432`
-
-[application](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
-
-[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-port mapping
 
 [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 overview#enabling-rotation-on-the-admin-console)

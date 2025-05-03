@@ -418,34 +418,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Features
-  * KSM Configuration
-  * Vault Credential
-  * Execution Environment
-  * Projects
-  * Playbook Repository
-  * Project
-  * Template
-  * Launching a Template
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=WZUoqrcRmGgUaG3CLKQh&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-  3. [Ansible](/en/keeperpam/secrets-manager/integrations/ansible)
-
-# Ansible Tower
-
-A collection of Ansible plugins that interact with your Keeper account and can
-be used in your Ansible Tower automations.
-
-[PreviousAnsible Plugin](/en/keeperpam/secrets-
-manager/integrations/ansible/ansible-plugin)[NextAWS CLI Credential
-Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-
-process)
 
 Last updated 3 months ago
 
@@ -472,20 +448,8 @@ KSM Configuration
 Using **Commander CLI** , add a new device can generate a Base64 configuration
 without using a one time access token.
 
-Copy
-
-    
-    
-    keeper secrets-manager client add --app MyApp --config-init b64
-
 The Keeper Secrets Manager CLI requires a one-time access token. This can be
 obtained from the Web Vault by adding a new device to an application.
-
-Copy
-
-    
-    
-    $ ksm init default US:XXXX
 
 Another way using the `keeper_init_token` role included in the Keeper Secrets
 Manager collection, which can used after Ansible Tower is setup. An example
@@ -540,14 +504,6 @@ To use the Keeper Secrets Manager plugins in your projects, create a
 exists. Then create, or add to, the file `requirements.yml` the following
 value.
 
-Copy
-
-    
-    
-    ---
-    collections:
-      - keepersecurity.keeper_secrets_manager
-
 ####
 
 Storing the KSM Configuration
@@ -563,25 +519,9 @@ called `defaults` located in the root directory of the repository.
 In this file add a key called `keeper_config` with the Base64 configuration as
 it's value.
 
-Copy
-
-    
-    
-    ---
-    keeper_config: ewogICAgImNsaWVudElk ... Y0tleUlkIjogIjEwIgp9
-
 Then encrypt the `secrets.yml` file using `ansible-vault`.
 
 Remember the password, it will be needed in Tower for a Vault Credential.
-
-Copy
-
-    
-    
-    $ ansible-vault encrypt secret.yml
-    New Vault password:
-    Confirm New Vault password:
-    Encryption successful
 
 At this point, if you look at your secrets.yml file, it should be encrypted.
 
@@ -590,20 +530,6 @@ At this point, if you look at your secrets.yml file, it should be encrypted.
 Playbook
 
 The directory structure should look like the following.
-
-Copy
-
-    
-    
-    $ tree
-    .
-    ├── collections
-    │   └── requirements.yml
-    ├── defaults
-    │   └── secrets.yml
-    ├── playbook_1.yml
-    └── playbook_2.yml
-    
 
 For our playbooks, the Keeper Secrets Manager collection is added to the
 playbook collections. The first task is to include the `secrets.yml` using the
@@ -615,36 +541,6 @@ collection.
 Ansible Tower uses it's own stdout callback plugin. So using keeper_redact
 will not work. It's important to add `no_log: True` to tasks that may display
 secrets in the log.
-
-Copy
-
-    
-    
-    ---
-    - name: Playbook One
-      hosts: all
-      collections: 
-        - keepersecurity.keeper_secrets_manager
-    
-      tasks:
-        - include_vars:
-            file: "defaults/secrets.yml"
-          no_log: True
-    
-        - name: "Make User SSH Directory, if does not exists"
-          file:
-            path: "/home/user/.ssh"
-            state: directory
-            recurse: yes
-    
-        - name: "Copy SSH Keys"
-          keeper_copy:
-            notation: "OlLZ6JLjnyMOS3CiIPHBjw/field/keyPair[{{ item.notation_key }}]"
-            dest: "/home/user/.ssh/{{ item.filename }}"
-            mode: "0600"
-          loop:
-            - { notation_key: "privateKey", filename: "id_rsa" }
-            - { notation_key: "publicKey",  filename: "id_rsa.pub" }
 
 ###
 
@@ -706,6 +602,110 @@ into the **Vault Password** field, then click **Save**.
 
 See the  for all the Secrets Manager capabilities available to Ansible
 
+Copy
+
+    
+    
+    keeper secrets-manager client add --app MyApp --config-init b64
+
+Copy
+
+    
+    
+    $ ksm init default US:XXXX
+
+Copy
+
+    
+    
+    ---
+    collections:
+      - keepersecurity.keeper_secrets_manager
+
+Copy
+
+    
+    
+    ---
+    keeper_config: ewogICAgImNsaWVudElk ... Y0tleUlkIjogIjEwIgp9
+
+Copy
+
+    
+    
+    $ ansible-vault encrypt secret.yml
+    New Vault password:
+    Confirm New Vault password:
+    Encryption successful
+
+Copy
+
+    
+    
+    $ tree
+    .
+    ├── collections
+    │   └── requirements.yml
+    ├── defaults
+    │   └── secrets.yml
+    ├── playbook_1.yml
+    └── playbook_2.yml
+    
+
+Copy
+
+    
+    
+    ---
+    - name: Playbook One
+      hosts: all
+      collections: 
+        - keepersecurity.keeper_secrets_manager
+    
+      tasks:
+        - include_vars:
+            file: "defaults/secrets.yml"
+          no_log: True
+    
+        - name: "Make User SSH Directory, if does not exists"
+          file:
+            path: "/home/user/.ssh"
+            state: directory
+            recurse: yes
+    
+        - name: "Copy SSH Keys"
+          keeper_copy:
+            notation: "OlLZ6JLjnyMOS3CiIPHBjw/field/keyPair[{{ item.notation_key }}]"
+            dest: "/home/user/.ssh/{{ item.filename }}"
+            mode: "0600"
+          loop:
+            - { notation_key: "privateKey", filename: "id_rsa" }
+            - { notation_key: "publicKey",  filename: "id_rsa.pub" }
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+  3. [Ansible](/en/keeperpam/secrets-manager/integrations/ansible)
+
+# Ansible Tower
+
+A collection of Ansible plugins that interact with your Keeper account and can
+be used in your Ansible Tower automations.
+
+[PreviousAnsible Plugin](/en/keeperpam/secrets-
+manager/integrations/ansible/ansible-plugin)[NextAWS CLI Credential
+Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-
+process)
+
+  * Features
+  * KSM Configuration
+  * Vault Credential
+  * Execution Environment
+  * Projects
+  * Playbook Repository
+  * Project
+  * Template
+  * Launching a Template
+
 [Overview ](/en/keeperpam/secrets-manager/overview)
 
 [Secret Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-
@@ -727,7 +727,7 @@ manager/integrations/ansible/ansible-plugin)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjIMOCZkeFkzS23r75wOS%252Fimage.png%3Falt%3Dmedia%26token%3D20566d61-8116-4b33-85b2-01ddd77d3c8e&width=768&dpr=4&quality=100&sign=5085d78a&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFrtyMRDKJRNrJhlpXcFV%252FScreen%2520Shot%25202022-02-01%2520at%25203.19.28%2520PM.png%3Falt%3Dmedia%26token%3D7d35df16-61fb-4621-bcda-c762f73da564&width=768&dpr=4&quality=100&sign=e5654f41&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -735,7 +735,7 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FQmR5XLrVZ
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFrtyMRDKJRNrJhlpXcFV%252FScreen%2520Shot%25202022-02-01%2520at%25203.19.28%2520PM.png%3Falt%3Dmedia%26token%3D7d35df16-61fb-4621-bcda-c762f73da564&width=768&dpr=4&quality=100&sign=e5654f41&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjIMOCZkeFkzS23r75wOS%252Fimage.png%3Falt%3Dmedia%26token%3D20566d61-8116-4b33-85b2-01ddd77d3c8e&width=768&dpr=4&quality=100&sign=5085d78a&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

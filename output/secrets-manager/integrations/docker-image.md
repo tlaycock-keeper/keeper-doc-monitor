@@ -463,6 +463,9 @@ Features
 
   * Copy files from the Keeper vault into Docker containers
 
+For a complete list of Keeper Secrets Manager features see the [Overview
+](/en/keeperpam/secrets-manager/overview)
+
 ##
 
 Prerequisites
@@ -470,11 +473,19 @@ Prerequisites
 This page documents the Secrets Manager Docker Image b Actions integration. In
 order to utilize this integration, you will need:
 
-  *     * Secrets Manager addon enabled for your Keeper account
+  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
+
+    * Secrets Manager addon enabled for your Keeper account
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   *   *     * 
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    *   * A [One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
+
+  * The[ Keeper Secrets Manager (KSM) CLI Tool](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
+
+    * 
 
 ##
 
@@ -487,6 +498,14 @@ cases are described in this document.
 ##
 
 Example 1: Build an Image with Secrets using BuildKit
+
+Secrets from the Keeper Vault can be built into a Docker container using
+[Docker BuildKit](https://docs.docker.com/develop/develop-
+images/build_enhancements/). As of Docker 18.09 or later, image building
+supports the ability to pass secrets in via a mounted file system. As a simple
+example demonstrating this capability, we will be creating a user account in
+the destination image with a username and password from Keeper Secrets
+Manager.
 
 Copy
 
@@ -733,12 +752,18 @@ Copy
       --build-arg "BUILD_KSM_SERVER_UID=LdRkidFLPF7vDaogwJ7etQ" \
       -t ksm_tomcat .
 
+When the docker image is built, it will be fully configured with SSL, keystore
+file and passphrase that are managed by the Keeper Vault. 😃😃😃
+
 ##
 
 Integration with Docker Compose
 
 Keeper Secrets Manager supports direct integration with Docker Compose using
 the KSM Writer Docker image.
+
+Learn more about the KSM Writer Docker image [here](/en/keeperpam/secrets-
+manager/integrations/docker-writer-image).
 
 ##
 
@@ -747,66 +772,28 @@ Contribute to the Docker Image Examples
 If you have some great examples to contribute to this page, please ping us on
 Slack or email sm@keepersecurity.com.
 
-For a complete list of Keeper Secrets Manager features see the
-
-Keeper Secrets Manager access (See the  for more details)
-
-A Keeper  with secrets shared to it
-
 See the  for instructions on creating an Application
-
-A
-
-The
 
 See instructions on setting up the KSM CLI
 
-Secrets from the Keeper Vault can be built into a Docker container using . As
-of Docker 18.09 or later, image building supports the ability to pass secrets
-in via a mounted file system. As a simple example demonstrating this
-capability, we will be creating a user account in the destination image with a
-username and password from Keeper Secrets Manager.
-
 **Step 1:** Set Environmental Variables with Keeper notation for the secrets
 that are needed. For more notation examples .
 
 **Step 1:** Set Environmental Variables with Keeper notation for the secrets
 that are needed. For more notation examples .
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
+[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/exec-command#notation)
+
+[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/exec-command#notation)
 
 Create Record with Secret File Attachments
 
 Copy the Record UID
-
-When the docker image is built, it will be fully configured with SSL, keystore
-file and passphrase that are managed by the Keeper Vault.
-
-Learn more about the KSM Writer Docker image .
-
-😃
-
-😃
-
-😃
-
-[Overview ](/en/keeperpam/secrets-manager/overview)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
-
-[One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
-
-[ Keeper Secrets Manager (KSM) CLI Tool](/en/keeperpam/secrets-
-manager/secrets-manager-command-line-interface)
-
-[Docker BuildKit](https://docs.docker.com/develop/develop-
-images/build_enhancements/)
-
-[here](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -824,10 +811,4 @@ files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf_vL6i3tZYNyKHhWjl%252F-Mfa1Vl
 
 [here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface#initialize-the-client-device)
-
-[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/exec-command#notation)
-
-[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/exec-command#notation)
 

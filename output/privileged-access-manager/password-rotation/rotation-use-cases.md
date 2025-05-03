@@ -418,10 +418,27 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Local Network
+  * Azure
+  * AWS
+  * SaaS Accounts
+  * Network Devices
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=Zmc03ZWvyQnL8taq5vAo&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+
+# Rotation Use Cases
+
+Step by step guides for performing rotation on any target system
+
+[PreviousRotation Overview](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-overview)[NextAzure](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/azure)
 
 Last updated 2 months ago
 
@@ -452,23 +469,6 @@ pam@keepersecurity.com.
 ##
 
 ###
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-
-# Rotation Use Cases
-
-Step by step guides for performing rotation on any target system
-
-[PreviousRotation Overview](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-overview)[NextAzure](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/azure)
-
-  * Local Network
-  * Azure
-  * AWS
-  * SaaS Accounts
-  * Network Devices
 
 [**Active Directory**](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/local-network/active-directory)

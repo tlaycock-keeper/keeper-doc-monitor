@@ -648,21 +648,11 @@ require direct connectivity to the machine, leveraging Keeper's zero-trust
 network access model to securely manage access through the Gateway. See the
 for more details.
 
-Creating a new PAM Machine record
-
 **Required** Visit this  for more details
 
 **Required** Visit this  for more details
-
-PAM Settings and Administrative Credentials
 
 See
-
-PAM Settings for a PAM Machine resource
-
-PAM Machine Record - Windows
-
-PAM Machine Record - Linux
 
 [network architecture diagram](/en/keeperpam/privileged-access-
 manager/getting-started/architecture/system-architecture)
@@ -672,6 +662,25 @@ resources/pam-machine/example-linux-machine)
 
 [Azure Virtual Machine](/en/keeperpam/privileged-access-manager/getting-
 started/pam-resources/pam-machine/example-azure-windows-vm)
+
+[session recording](/en/keeperpam/privileged-access-manager/session-recording-
+and-playback)
+
+[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine#pam-settings-and-administrative-credentials)
+
+[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine#pam-settings-and-administrative-credentials)
+
+Creating a new PAM Machine record
+
+PAM Settings and Administrative Credentials
+
+PAM Settings for a PAM Machine resource
+
+PAM Machine Record - Windows
+
+PAM Machine Record - Linux
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -697,13 +706,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FrSy701IpE
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3RtXTHeGIFJVRWtkORwj%252FScreenshot%25202025-01-01%2520at%25209.41.18%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3De3686b71-94f2-4d91-b43b-b7c9644142df&width=768&dpr=4&quality=100&sign=2573abaf&sv=2)
-
-[session recording](/en/keeperpam/privileged-access-manager/session-recording-
-and-playback)
-
-[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine#pam-settings-and-administrative-credentials)
-
-[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine#pam-settings-and-administrative-credentials)
 

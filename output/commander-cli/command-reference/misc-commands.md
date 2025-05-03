@@ -1180,6 +1180,10 @@ please refer to the  section of our Troubleshooting page.
 This command is deprecated. If your goal is to add delay between commands,
 please refer to the  command.
 
+["Security Audit Report Score Re-alignment Process"](/en/keeperpam/commander-
+cli/troubleshooting-commander-cli#security-audit-report-score-re-alignment-
+process)
+
 [`run-batch`](/en/keeperpam/commander-cli/command-reference/misc-commands#run-
 batch-command)
 
@@ -1197,8 +1201,4 @@ commands#keeper-fill-command)
 
 [`2fa`](/en/keeperpam/commander-cli/command-reference/misc-commands#2fa-
 command)
-
-["Security Audit Report Score Re-alignment Process"](/en/keeperpam/commander-
-cli/troubleshooting-commander-cli#security-audit-report-score-re-alignment-
-process)
 

@@ -708,6 +708,9 @@ For more information on using the `convert` command, see the
 [Enterprise Management Commands documentation](/en/keeperpam/commander-
 cli/command-reference/enterprise-management-commands)
 
+[add command](/en/keeperpam/commander-cli/command-reference/record-
+commands#add-command-record-types)
+
 [Commander documentation.](/en/keeperpam/commander-cli/command-
 reference/record-commands/record-type-commands#convert-command)
 
@@ -716,9 +719,6 @@ started-with-keeper-admin-console)
 
 [Keeper Admin Console](https://docs.keeper.io/enterprise-guide/getting-
 started-with-keeper-admin-console)
-
-[add command](/en/keeperpam/commander-cli/command-reference/record-
-commands#add-command-record-types)
 
 The Keeper Secrets Manager Enforcement Policy in the Keeper Admin Console
 

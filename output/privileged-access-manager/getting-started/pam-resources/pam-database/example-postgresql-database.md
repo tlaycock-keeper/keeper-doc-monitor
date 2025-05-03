@@ -412,46 +412,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=ZsW7lP6pj7biIrpBNRLZ&only=yes&limit=100)
 
 Configuring PostgreSQL DB as a PAM Database Record
 
-[PreviousExample: MySQL Database](/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-database/example-mysql-
-database)[NextExample: Microsoft SQL Server
-Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database/example-microsoft-sql-server-database)
-
-Last updated 3 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 Overview
@@ -465,7 +425,9 @@ Prerequisites
 
 Prior to proceeding with this guide, make sure you have
 
-  1.   2. 
+  1. [Installed and configured the Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways/one-time-access-token)
+
+  2. [Set up a PAM Configuration for your target Environment ](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
 
 ##
 
@@ -584,6 +546,10 @@ Administrative Credential Record
 
 Linked PAM User credential used for connection and administrative operations
 
+**Required** Visit this [section](/en/keeperpam/privileged-access-
+manager/getting-started/pam-resources/pam-database/example-postgresql-
+database#administrative-credential-record) for more details
+
 Protocol
 
 Native database protocol used for connecting from the Gateway to the target
@@ -594,10 +560,18 @@ Session Recording
 
 Options for recording sessions and typescripts
 
+See [session recording](/en/keeperpam/privileged-access-manager/session-
+recording-and-playback)
+
 Connection Parameters
 
 Connection-specific protocol settings which can vary based on the protocol
 type
+
+See this [section](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/postgresql-connections) for PostgreSQL
+protocol settings We recommend specifying the **Connection Port** at a
+minimum. E.g. "5432" for PostgreSQL.
 
 ###
 
@@ -606,6 +580,10 @@ Administrative Credential Record
 The **Admin Credential Record** in the PAM Database links a user to the PAM
 Database record in your Keeper Vault. This linked user is used for
 authenticating the connection when clicking "Launch".
+
+User Accounts are configured on the PAM User record. Visit this
+[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user) for more information.
 
 ####
 
@@ -628,7 +606,7 @@ be shared. For example, if the PAM Database is configured with a PostgreSQL
 Database, the recipient can connect to the database without having direct
 access to the linked credentials.
 
-  * 
+  * Learn more about [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
 
 ###
 
@@ -638,39 +616,45 @@ The PostgreSQL Database record is set up. The user with the ability to launch
 connections can now launch an interactive PostgreSQL connection or tunnel to
 the target database.
 
-**Required** Visit this  for more details
+[PreviousExample: MySQL Database](/en/keeperpam/privileged-access-
+manager/getting-started/pam-resources/pam-database/example-mysql-
+database)[NextExample: Microsoft SQL Server
+Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database/example-microsoft-sql-server-database)
 
-See
+Last updated 3 months ago
 
-See this  for PostgreSQL protocol settings We recommend specifying the
-**Connection Port** at a minimum. E.g. "5432" for PostgreSQL.
+Was this helpful?
 
-User Accounts are configured on the PAM User record. Visit this  for more
-information.
+#### Company
 
-Learn more about
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-[Installed and configured the Keeper Gateway](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/one-time-access-token)
+#### Support
 
-[Set up a PAM Configuration for your target Environment
-](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
+#### Solutions
 
-[Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-
-started/sharing-and-access-control)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-[session recording](/en/keeperpam/privileged-access-manager/session-recording-
-and-playback)
+#### Pricing
 
-[section](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/postgresql-connections)
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
-[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database/example-postgresql-database#administrative-credential-
-record)
+© 2025 Keeper Security, Inc.
 
 PostgreSQL PAM Database Record
 

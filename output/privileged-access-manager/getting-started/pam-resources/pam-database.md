@@ -483,6 +483,14 @@ The PAM Database resource supports the following features:
 
   * Sharing access without sharing credentials
 
+Connecting to the PAM database requires only that the Keeper Gateway has
+access to the database either through native protocols or AWS/Azure APIs. The
+Keeper Vault operates independently and does not require direct connectivity
+to the database, leveraging Keeper's zero-trust network access model to
+securely manage access through the Gateway. See the [network architecture
+diagram](/en/keeperpam/privileged-access-manager/getting-
+started/architecture/system-architecture) for more details.
+
 ##
 
 Creating a PAM Database
@@ -600,6 +608,10 @@ Administrative Credential Record
 
 Linked PAM User credential used for connection and administrative operations
 
+**Required** Visit this [section](/en/keeperpam/privileged-access-
+manager/getting-started/pam-resources/pam-database#pam-settings-and-
+administrative-credentials) for more details
+
 Protocol
 
 Native database protocol used for connecting from the Gateway to the target
@@ -609,6 +621,9 @@ Native database protocol used for connecting from the Gateway to the target
 Session Recording
 
 Options for recording sessions and typescripts
+
+See [session recording](/en/keeperpam/privileged-access-manager/session-
+recording-and-playback)
 
 Connection Parameters (multiple)
 
@@ -626,36 +641,11 @@ Examples
 
 Visit the following pages to set up:
 
-  *   *   * 
+  * [MySQL Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database/example-mysql-database)
 
-Connecting to the PAM database requires only that the Keeper Gateway has
-access to the database either through native protocols or AWS/Azure APIs. The
-Keeper Vault operates independently and does not require direct connectivity
-to the database, leveraging Keeper's zero-trust network access model to
-securely manage access through the Gateway. See the  for more details.
+  * [PostgreSQL Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database/example-postgresql-database)
 
-**Required** Visit this  for more details
-
-See
-
-[network architecture diagram](/en/keeperpam/privileged-access-
-manager/getting-started/architecture/system-architecture)
-
-[MySQL Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database/example-mysql-database)
-
-[PostgreSQL Database](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-database/example-postgresql-database)
-
-[Microsoft SQL Server Database](/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-database/example-microsoft-sql-
-server-database)
-
-[session recording](/en/keeperpam/privileged-access-manager/session-recording-
-and-playback)
-
-[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database#pam-settings-and-administrative-credentials)
+  * [Microsoft SQL Server Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database/example-microsoft-sql-server-database)
 
 Create a PAM Database
 

@@ -621,6 +621,14 @@ by-step-guide-to-setup-ldaps-on-windows-
 server/>[](https://blogs.msdn.microsoft.com/microsoftrservertigerteam/2017/04/10/step-
 by-step-guide-to-setup-ldaps-on-windows-server/)
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FhvLF8beyM5y2szJUXhWN%252Fimage.png%3Falt%3Dmedia%26token%3D70598eb8-dbb7-4320-bc69-d87d20d29c1b&width=768&dpr=4&quality=100&sign=a501d27d&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fe5jiWMkFQPzwi5UDLvp1%252Fimage.png%3Falt%3Dmedia%26token%3D90c83a72-367e-4398-9cb6-bcc916432de0&width=768&dpr=4&quality=100&sign=fa5991f7&sv=2)
+
 [Distinguished name](https://msdn.microsoft.com/en-
 us/library/windows/desktop/aa366101.aspx)
 
@@ -632,14 +640,6 @@ rotation)
 
 [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
 commands)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FhvLF8beyM5y2szJUXhWN%252Fimage.png%3Falt%3Dmedia%26token%3D70598eb8-dbb7-4320-bc69-d87d20d29c1b&width=768&dpr=4&quality=100&sign=a501d27d&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fe5jiWMkFQPzwi5UDLvp1%252Fimage.png%3Falt%3Dmedia%26token%3D90c83a72-367e-4398-9cb6-bcc916432de0&width=768&dpr=4&quality=100&sign=fa5991f7&sv=2)
 
 [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
 cli#typed-vs-untyped-records-v3-vs-v2)

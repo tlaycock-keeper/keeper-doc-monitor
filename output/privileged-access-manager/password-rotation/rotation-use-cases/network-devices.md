@@ -421,7 +421,7 @@ manager/password-rotation/rotation-use-cases/saas-accounts/rotate-credential-
 via-rest-api)[NextCisco IOS XE](/en/keeperpam/privileged-access-
 manager/password-rotation/rotation-use-cases/network-devices/cisco-ios-xe)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

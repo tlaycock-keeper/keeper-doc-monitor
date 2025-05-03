@@ -386,36 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Commands
@@ -560,6 +530,10 @@ Copy
   7. Import records from Thycotic/Delinea Secret Server using full URL
 
   8. Import records from Thycotic/Delinea Secret Server using username/hostname syntax
+
+Additional import instructions are [documented below](/en/keeperpam/commander-
+cli/command-reference/import-and-export-commands#detailed-import-
+instructions).
 
 Ensure that you upgrade to the latest version of Commander to support all
 import methods.
@@ -865,6 +839,11 @@ Thycotic/Delinea Secret Server), retrieve custom record types (Secret Server
 calls it secret templates), and then create a local JSON file containing this
 information. The filename generated locally will be called record_types.json.
 
+This file can then be used for subsequently loading custom record types to
+Keeper. The record types loading operation is performed by executing the
+[`load-record-types`](/en/keeperpam/commander-cli/command-reference/import-
+and-export-commands#load_record_types-command) command.
+
 \--ssh-key-as-file
 
 Thycotic/Delinea Secret Server stores SSH keys as file attachments. Keeper
@@ -896,6 +875,11 @@ load_record_types command
 
 **Detail** : Load custom record types from a JSON file into Keeper.
 
+**Detail** : Load custom record types from a local JSON file. This command is
+used alongside the [download-record-types](/en/keeperpam/commander-
+cli/command-reference/import-and-export-commands#download-record-types-
+command) command.
+
 The `load_record_types` command will look for a JSON file (defaults to
 record_types.json) that contains custom record types and loads missing record
 types into Keeper.
@@ -923,7 +907,23 @@ Detailed Import Instructions
 Step by step instructions are documented for migrating data and importing into
 Keeper from the following sources:
 
-  *   *   *   *   *   *   *   *   * 
+  * [Cyberark](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/cyberark-import)
+
+  * [LastPass](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/lastpass-import)
+
+  * [Thycotic/Delinea Secret Server](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/delinea-thycotic-secret-server-import)
+
+  * [Keepass](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/keepass-import)
+
+  * [ManageEngine](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/manageengine-import)
+
+  * [Myki](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/myki-import)
+
+  * [Proton Pass](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/proton-pass-import)
+
+  * [CSV](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/csv-import)
+
+  * [JSON](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/json-import)
 
 ###
 
@@ -936,7 +936,7 @@ formats:
 
   * CSV
 
-  * 
+  * Keepass (see additional [install instructions](https://github.com/Keeper-Security/Commander/blob/master/keepercommander/importer/keepass/README.md))
 
 JSON export files contain records, folders, subfolders, shared folders,
 default folder permissions and user/team permissions. CSV import files contain
@@ -975,55 +975,35 @@ Last updated 4 months ago
 
 Was this helpful?
 
-Additional import instructions are .
+#### Company
 
-This file can then be used for subsequently loading custom record types to
-Keeper. The record types loading operation is performed by executing the
-command.
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-**Detail** : Load custom record types from a local JSON file. This command is
-used alongside the  command.
+#### Support
 
-Keepass (see additional )
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-[Cyberark](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands/cyberark-import)
+#### Solutions
 
-[LastPass](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands/lastpass-import)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-[Thycotic/Delinea Secret Server](/en/keeperpam/commander-cli/command-
-reference/import-and-export-commands/delinea-thycotic-secret-server-import)
+#### Pricing
 
-[Keepass](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands/keepass-import)
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
-[ManageEngine](/en/keeperpam/commander-cli/command-reference/import-and-
-export-commands/manageengine-import)
-
-[Myki](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands/myki-import)
-
-[Proton Pass](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands/proton-pass-import)
-
-[CSV](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands/csv-import)
-
-[JSON](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands/json-import)
-
-[install instructions](https://github.com/Keeper-
-Security/Commander/blob/master/keepercommander/importer/keepass/README.md)
-
-[documented below](/en/keeperpam/commander-cli/command-reference/import-and-
-export-commands#detailed-import-instructions)
-
-[`load-record-types`](/en/keeperpam/commander-cli/command-reference/import-
-and-export-commands#load_record_types-command)
-
-[download-record-types](/en/keeperpam/commander-cli/command-reference/import-
-and-export-commands#download-record-types-command)
+© 2025 Keeper Security, Inc.
 
 [`import`](/en/keeperpam/commander-cli/command-reference/import-and-export-
 commands#import-command)

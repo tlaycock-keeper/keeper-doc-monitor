@@ -457,6 +457,8 @@ Console.
 
 SIEM Events
 
+SIEM Event List
+
 ###
 
 Secrets Manager Events
@@ -475,8 +477,6 @@ Teams, etc.
 
 To learn more about the Keeper Advanced Reporting & Alerts module [at this
 link](https://docs.keeper.io/enterprise-guide/event-reporting).
-
-SIEM Event List
 
 [![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
 files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Reporting,

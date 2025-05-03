@@ -400,16 +400,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=Y8j5mnC0QbPc7AlyX1Qx&only=yes&limit=100)
 
 Example connection records
 
-A few example guides explain how to set up Connections:
-
-  * [SSH Protocol with Linux Machine](/en/keeperpam/privileged-access-manager/connections/examples/ssh-protocol-linux-machine)
-
-  * [RDP Protocol with Azure Virtual Machine](/en/keeperpam/privileged-access-manager/connections/examples/rdp-protocol-azure-virtual-machine)
-
-  * [MySQL Protocol with Database](/en/keeperpam/privileged-access-manager/connections/examples/mysql-protocol-mysql-database)
-
-  * [PostgreSQL Protocol with Database](/en/keeperpam/privileged-access-manager/connections/examples/postgresql-protocol-postgresql-database)
-
 [PreviousTelnet Connections](/en/keeperpam/privileged-access-
 manager/connections/session-protocols/telnet-connections)[NextSSH Protocol -
 Linux Machine](/en/keeperpam/privileged-access-
@@ -448,4 +438,20 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+A few example guides explain how to set up Connections:
+
+  *   *   *   * 
+
+[SSH Protocol with Linux Machine](/en/keeperpam/privileged-access-
+manager/connections/examples/ssh-protocol-linux-machine)
+
+[RDP Protocol with Azure Virtual Machine](/en/keeperpam/privileged-access-
+manager/connections/examples/rdp-protocol-azure-virtual-machine)
+
+[MySQL Protocol with Database](/en/keeperpam/privileged-access-
+manager/connections/examples/mysql-protocol-mysql-database)
+
+[PostgreSQL Protocol with Database](/en/keeperpam/privileged-access-
+manager/connections/examples/postgresql-protocol-postgresql-database)
 

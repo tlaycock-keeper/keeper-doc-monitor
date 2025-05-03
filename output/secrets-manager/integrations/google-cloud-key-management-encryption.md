@@ -415,7 +415,7 @@ Protect Secrets Manager connection details with Google Cloud Key Management
 manager/integrations/gcp-secret-manager)[NextHashicorp
 Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
 
-Last updated 15 days ago
+Last updated 16 days ago
 
 Was this helpful?
 
@@ -482,17 +482,29 @@ JavaJavaScriptPython.NetGoLang
 
   * Google Cloud Key Management needs `ENCRYPT` and `DECRYPT` permissions.
 
-  *   * Requires the `@google-cloud/kms`**** package from GCP SDK.
+  * Supports the [JavaScript Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-sdk)
+
+  * Requires the `@google-cloud/kms`**** package from GCP SDK.
 
   * GCP CKM Key needs `ENCRYPT` and `DECRYPT` permissions.
 
-  *   * Requires `google-cloud-kms` package
+  * Supports the [Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk)
+
+  * Requires `google-cloud-kms` package
 
   * GCP CKM Key needs `ENCRYPT` and `DECRYPT` permissions.
 
-  *   *   * GCP CKM Key needs `ENCRYPT` and `DECRYPT` permissions.
+  * Supports the [.Net Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/.net-sdk)
 
-  *   *   * GCP CKM Key needs `ENCRYPT` and `DECRYPT` permissions.
+  * Requires [Google.Apis.CloudKMS.v1](https://www.nuget.org/packages/Google.Apis.CloudKMS.v1)
+
+  * GCP CKM Key needs `ENCRYPT` and `DECRYPT` permissions.
+
+  * Supports the [GoLang Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-library/golang-sdk)
+
+  * Requires the [kms/apiv1](https://pkg.go.dev/cloud.google.com/go/kms/apiv1) , [kmspb](https://pkg.go.dev/cloud.google.com/go/kms/apiv1/kmspb) , [core](https://pkg.go.dev/github.com/keeper-security/secrets-manager-go/core), [kms](https://pkg.go.dev/cloud.google.com/go/kms) package from GCP SDK.
+
+  * GCP CKM Key needs `ENCRYPT` and `DECRYPT` permissions.
 
 ##
 
@@ -650,6 +662,9 @@ Service Account key in JSON format. This credential file will serve as the
 authentication mechanism for interacting with GCP services programmatically.
 
 See the Google documentation for more information on generating keys:
+
+<https://cloud.google.com/iam/docs/keys-create-
+delete>[](https://cloud.google.com/iam/docs/keys-create-delete)
 
 ###
 
@@ -815,6 +830,10 @@ The `NewGCPKeyVaultStorage` requires the following parameters to encrypt the
 KSM configuration using GCP Cloud Key Management:
 
 `ksmConfigFileName` : The file name of KSM configuration.
+
+`keyResourceName` : Provide[`
+_keyResourceName_`](https://cloud.google.com/kms/docs/resource-
+hierarchy#retrieve_resource_id) of Google Cloud Key Management
 
 `credentialFileWithPath` : Provide file path with name of GCP credential file.
 
@@ -983,55 +1002,10 @@ Copy
     	fmt.Printf("Error while decrypting config: %v", err)
     }  
 
-Supports the
+You're ready to use the KSM integration 👍
 
-Supports the
-
-Supports the
-
-Requires
-
-Supports the
-
-Requires the  ,  , ,  package from GCP SDK.
-
-`keyResourceName` : Provide of Google Cloud Key Management
-
-You're ready to use the KSM integration
-
-Check out the  for more examples and functionality
-
-👍
-
-[JavaScript Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
-library/javascript-sdk)
-
-[Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
-library/python-sdk)
-
-[.Net Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
-library/.net-sdk)
-
-[Google.Apis.CloudKMS.v1](https://www.nuget.org/packages/Google.Apis.CloudKMS.v1)
-
-[GoLang Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
-library/golang-sdk)
-
-[kms/apiv1](https://pkg.go.dev/cloud.google.com/go/kms/apiv1)
-
-[kmspb](https://pkg.go.dev/cloud.google.com/go/kms/apiv1/kmspb)
-
-[core](https://pkg.go.dev/github.com/keeper-security/secrets-manager-go/core)
-
-[kms](https://pkg.go.dev/cloud.google.com/go/kms)
-
-<https://cloud.google.com/iam/docs/keys-create-
-delete>[](https://cloud.google.com/iam/docs/keys-create-delete)
-
-[`_keyResourceName_`](https://cloud.google.com/kms/docs/resource-
-hierarchy#retrieve_resource_id)
-
-[KSM SDKs documentation](/en/keeperpam/secrets-manager/developer-sdk-library)
+Check out the [KSM SDKs documentation](/en/keeperpam/secrets-
+manager/developer-sdk-library) for more examples and functionality
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

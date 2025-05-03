@@ -386,35 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * What are Keeper Connections?
-  * Connection User Interface
-  * Connection Dock
-  * How do Keeper Connections Work? 
-  * Why Use Keeper Connections? 
-  * Keeper Connection Features 
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=a8qXkMPc17fQtw6S5u5g&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# Connections
-
-Instantly access your infrastructure with zero-trust security from your Keeper
-Vault
-
-[PreviousCode Examples](/en/keeperpam/privileged-access-manager/password-
-rotation/post-rotation-scripts/accessing-parameters)[NextGetting
-Started](/en/keeperpam/privileged-access-manager/connections/getting-started)
-
-Last updated 10 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -445,6 +416,35 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * What are Keeper Connections?
+  * Connection User Interface
+  * Connection Dock
+  * How do Keeper Connections Work? 
+  * Why Use Keeper Connections? 
+  * Keeper Connection Features 
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=a8qXkMPc17fQtw6S5u5g&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Connections
+
+Instantly access your infrastructure with zero-trust security from your Keeper
+Vault
+
+[PreviousCode Examples](/en/keeperpam/privileged-access-manager/password-
+rotation/post-rotation-scripts/accessing-parameters)[NextGetting
+Started](/en/keeperpam/privileged-access-manager/connections/getting-started)
+
+Last updated 11 days ago
+
+Was this helpful?
+
 ##
 
 What are Keeper Connections?
@@ -458,12 +458,6 @@ and zero-knowledge access.
 Keeper Connections are configured on PAM Machine, PAM Database, PAM Directory
 and PAM Remote Browser record types, and once configured, connections are
 launched directly from these records.
-
-One of the key features of Keeper Connections is the **agentless**
-and**clientless** architecture. Organizations need to install only a [Keeper
-Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) in
-each managed environment. This streamlined approach simplifies deployment and
-enhances security by centralizing access management.
 
 ###
 
@@ -499,9 +493,6 @@ defined on the PAM record. This is done by:
   2. The Keeper Gateway then establishes the connection protocol to the target defined on the PAM Record 
 
   3. After establishing the connection, the Keeper Gateway projects the visual session to the Keeper vault client.
-
-For more information on the architecture, see this
-[page](/en/keeperpam/privileged-access-manager/getting-started/architecture).
 
 ##
 
@@ -543,8 +534,22 @@ Keeper Connection Features
 
   * Role-Based Access Controls
 
-To get started with Keeper Connections, proceed to the [next
-section](/en/keeperpam/privileged-access-manager/connections/getting-started).
+One of the key features of Keeper Connections is the **agentless**
+and**clientless** architecture. Organizations need to install only a  in each
+managed environment. This streamlined approach simplifies deployment and
+enhances security by centralizing access management.
+
+For more information on the architecture, see this .
+
+To get started with Keeper Connections, proceed to the .
+
+[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
+started/gateways)
+
+[page](/en/keeperpam/privileged-access-manager/getting-started/architecture)
+
+[next section](/en/keeperpam/privileged-access-manager/connections/getting-
+started)
 
 Connecting to a Windows Machine
 

@@ -457,7 +457,7 @@ Detailed Javascript SDK docs for Keeper Secrets Manager
 library/java-sdk/record-field-classes)[Next.NET SDK](/en/keeperpam/secrets-
 manager/developer-sdk-library/.net-sdk)
 
-Last updated 23 days ago
+Last updated 24 days ago
 
 Was this helpful?
 
