@@ -386,36 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview 
@@ -446,9 +416,39 @@ manager/connections/session-protocols)[NextRDP
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/rdp-connections)
 
-Last updated 12 days ago
+Last updated 13 days ago
 
 Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -465,7 +465,8 @@ directly to target devices.
 Prerequisites
 
 Prior to following this guide, familiarize yourself with the prerequisites on
-the Connection's .
+the Connection's [Getting Started page](/en/keeperpam/privileged-access-
+manager/connections/getting-started).
 
 The following PAM records are needed in order to successfully setup this
 protocol:
@@ -642,19 +643,17 @@ SSH to Windows Servers
 The SSH protocol can also be used to access Windows servers for execution of
 PowerShell commands or other administrative actions.
 
-  * 
+  * Learn more on how to [activate SSH on Windows](/en/keeperpam/privileged-access-manager/references/setting-up-ssh#windows)
 
 ##
 
 Session Recordings - SSH Protocol
 
-Learn more on how to
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this page.
 
-[activate SSH on Windows](/en/keeperpam/privileged-access-
-manager/references/setting-up-ssh#windows)
-
-[Getting Started page](/en/keeperpam/privileged-access-
-manager/connections/getting-started)
+  * Learn more about Session Recording and Playback
 
 Field
 
@@ -670,13 +669,29 @@ Administrative Credential Record
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
 
+PAM Record
+
+Definition
+
+The PAM Configuration contains information of your target infrastructure
+
+Record
+
+The PAM Machine record contains information of the endpoint you want to
+establish an SSH protocol connection to.
+
+Record
+
+The PAM User record contains the user credentials that will be used to connect
+to the endpoint
+
 PAM User
 
-For this protocol, both graphical and the full, raw text text content of
-terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this page.
+PAM Configuration
 
-  * Learn more about Session Recording and Playback
+PAM Machine
+
+PAM User
 
 SSH Session Launching
 
@@ -719,26 +734,4 @@ progress.png%3Falt%3Dmedia%26token%3D50307229-bdbe-4704-bd53-f8485bda7681&width=
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fm3ujLVowAlLGqlZ6ecVJ%252FScreenshot%25202025-01-21%2520at%252012.17.55%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D3bac50e6-864a-4deb-
 ab79-e0b8a871a8ae&width=768&dpr=4&quality=100&sign=62f9e671&sv=2)
-
-PAM Record
-
-Definition
-
-The PAM Configuration contains information of your target infrastructure
-
-Record
-
-The PAM Machine record contains information of the endpoint you want to
-establish an SSH protocol connection to.
-
-Record
-
-The PAM User record contains the user credentials that will be used to connect
-to the endpoint
-
-PAM Configuration
-
-PAM Machine
-
-PAM User
 

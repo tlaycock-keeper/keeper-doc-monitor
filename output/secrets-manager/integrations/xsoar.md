@@ -465,10 +465,6 @@ Activate Keeper Secrets Manager
 
 Create A Keeper Secrets Manager Configuration
 
-Follow the steps in the [documentation page](/en/keeperpam/secrets-
-manager/about/secrets-manager-configuration) to create a Secrets Manager
-configuration.
-
 ###
 
 Configure Keeper Secrets Manager on Cortex XSOAR
@@ -571,10 +567,6 @@ Copy
     
     !ksm-get-field notation="keeper://<UID>/field/login"
 
-See the [Keeper Notation documentation](/en/keeperpam/secrets-
-manager/about/keeper-notation) for more details on using keeper notation to
-identify fields
-
 ####
 
 List Files Attached to Keeper Records
@@ -631,15 +623,26 @@ playbook.
 
   2. Enter Keeper notation pointing to the password using the UID of the record you want to use. This will look like: `<UID>/fields/password`
 
-_Any field in a record can be fetched this way. See_[ _Keeper Notation
-documentation_](/en/keeperpam/secrets-manager/about/keeper-notation) _for more
-information_
-
   3. Click "OK" to add the task to your playbook 
 
 You can add additional tasks after the ksm-get-field task to use the password.
 
 Follow the to enable Keeper Secrets Manager on your account.
+
+Follow the steps in the  to create a Secrets Manager configuration.
+
+See the  for more details on using keeper notation to identify fields
+
+ _Any field in a record can be fetched this way. See_ _for more information_
+
+[documentation page](/en/keeperpam/secrets-manager/about/secrets-manager-
+configuration)
+
+[Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
+notation)
+
+[_Keeper Notation documentation_](/en/keeperpam/secrets-manager/about/keeper-
+notation)
 
 [ Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#enable-
 secrets-manager)

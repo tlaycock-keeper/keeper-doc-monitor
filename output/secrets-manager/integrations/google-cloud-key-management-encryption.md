@@ -415,7 +415,7 @@ Protect Secrets Manager connection details with Google Cloud Key Management
 manager/integrations/gcp-secret-manager)[NextHashicorp
 Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
 
-Last updated 16 days ago
+Last updated 17 days ago
 
 Was this helpful?
 

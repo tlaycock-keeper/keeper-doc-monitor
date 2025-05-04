@@ -417,7 +417,7 @@ manager/remote-browser-isolation)[NextURL Patterns & Resource URL
 Patterns](/en/keeperpam/privileged-access-manager/remote-browser-
 isolation/setting-up-rbi/url-patterns-and-resource-url-patterns)
 
-Last updated 25 days ago
+Last updated 26 days ago
 
 Was this helpful?
 
@@ -511,10 +511,6 @@ Copy
     ALLOW_VIEW_RBI_RECORDINGS
 
 Allow users to view RBI Session Recordings.
-
-The above enforcement policies can also be enabled on the [Keeper Commander
-CLI](/en/keeperpam/commander-cli/command-reference/secrets-manager-
-commands#overview) using the `enterprise-role` command:
 
 Copy
 
@@ -645,10 +641,6 @@ page. Multiple patterns may be specified, separated by newlines.
 
 If specified, only pages matching patterns in the list are permitted.
 
-By default, all URLs are permitted. Detailed Information
-[here](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
-
 Allow Resource URL Patterns
 
 The patterns of all URLs that the page should be allowed to load as a
@@ -658,26 +650,9 @@ may be specified, separated by newlines.
 If specified, only resources matching patterns in the list are permitted to be
 loaded.
 
-By default, no restrictions are imposed on resources loaded by pages. Detailed
-Information [here](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
-
 Browser Autofill - Credentials
 
-RBI sessions launched from the Keeper Vault provides the capability of
-autofilling a username and password into a target website login screen. A
-vault record that is shared to a KSM application can be linked here. The
-credentials on this linked record will be autofilled in the target website
-login screen based on the autofill rules defined in the Autofill Targets
-section. Detailed Information [here](/en/keeperpam/privileged-access-
-manager/remote-browser-isolation/setting-up-rbi/browser-autofill)
-
 Browser Autofill - Autofill Targets
-
-This section will contain the autofill rules, which are a JSON/YAML array of
-objects, where each object specifies contains an autofill rule. Detailed
-Information [here](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation/setting-up-rbi/browser-autofill)
 
 Can copy to clipboard
 
@@ -692,9 +667,65 @@ session.
 
 Session Recordings - RBI
 
+The above enforcement policies can also be enabled on the  using the
+`enterprise-role` command:
+
+By default, all URLs are permitted. Detailed Information
+
+By default, no restrictions are imposed on resources loaded by pages. Detailed
+Information
+
+RBI sessions launched from the Keeper Vault provides the capability of
+autofilling a username and password into a target website login screen. A
+vault record that is shared to a KSM application can be linked here. The
+credentials on this linked record will be autofilled in the target website
+login screen based on the autofill rules defined in the Autofill Targets
+section. Detailed Information
+
+This section will contain the autofill rules, which are a JSON/YAML array of
+objects, where each object specifies contains an autofill rule. Detailed
+Information
+
+[here](/en/keeperpam/privileged-access-manager/remote-browser-
+isolation/setting-up-rbi/browser-autofill)
+
+[here](/en/keeperpam/privileged-access-manager/remote-browser-
+isolation/setting-up-rbi/browser-autofill)
+
+[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
+manager-commands#overview)
+
+An active license is required in order to use the features available with
+KeeperPAM. This license is available for both business and enterprise
+customers.
+
+  *   *   * 
+
+For this protocol, graphical data, including timing information, is recorded.
+For more details on the recordings and how to access them, see the  docs.
+
+[here](/en/keeperpam/privileged-access-manager/remote-browser-
+isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
+
+[here](/en/keeperpam/privileged-access-manager/remote-browser-
+isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
+
+Session Recording & Playback
+
+[KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-
+management/)
+
+[Request a Demo](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+
+[Contact Support](https://www.keepersecurity.com/support.html)
+
 Remote Browser Isolation Policies
 
 Remote Browser Isolation Settings
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FKAnz1MjmzRZ9uQpzqzOU%252FScreenshot%25202025-01-21%2520at%252011.58.04%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D465c899b-3da2-45d5-a8eb-27445977eaa2&width=768&dpr=4&quality=100&sign=9988f97c&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -704,25 +735,4 @@ aa26-50953a099003&width=768&dpr=4&quality=100&sign=efc563b0&sv=2)
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FpcDZcca7LVVyiPGxwY3V%252FScreenshot%25202025-01-21%2520at%252012.14.54%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D30d5539c-0f3c-4717-8468-a0c825604f23&width=768&dpr=4&quality=100&sign=5932094e&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FKAnz1MjmzRZ9uQpzqzOU%252FScreenshot%25202025-01-21%2520at%252011.58.04%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D465c899b-3da2-45d5-a8eb-27445977eaa2&width=768&dpr=4&quality=100&sign=9988f97c&sv=2)
-
-For this protocol, graphical data, including timing information, is recorded.
-For more details on the recordings and how to access them, see the Session
-Recording & Playback docs.
-
-An active license is required in order to use the features available with
-KeeperPAM. This license is available for both business and enterprise
-customers.
-
-  *   *   * 
-
-[KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-
-management/)
-
-[Request a Demo](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-
-[Contact Support](https://www.keepersecurity.com/support.html)
 

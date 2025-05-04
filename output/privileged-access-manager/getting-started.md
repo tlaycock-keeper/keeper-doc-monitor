@@ -447,118 +447,87 @@ Was this helpful?
 
 The Basics
 
-  *   *   *   *   *   *   *   *   *   *   *   * 
+  * [Architecture](/en/keeperpam/privileged-access-manager/getting-started/architecture)
+
+  * [Licensing](/en/keeperpam/privileged-access-manager/getting-started/keeperpam-licensing)
+
+  * [Enforcement policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-policies)
+
+  * [Vault structure](/en/keeperpam/privileged-access-manager/getting-started/vault-structure)
+
+  * [Record Linking](/en/keeperpam/privileged-access-manager/getting-started/record-linking)
+
+  * [Applications](/en/keeperpam/privileged-access-manager/getting-started/applications)
+
+  * [Devices](/en/keeperpam/privileged-access-manager/getting-started/devices)
+
+  * [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+  * [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
+
+  * [PAM Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-resources)
+
+  * [PAM Users](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
+
+  * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
 
 ###
 
 KeeperPAM Features
 
-  *   *   *   *   *   *   *   * 
+  * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+
+  * [Connections](/en/keeperpam/privileged-access-manager/connections)
+
+  * [Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
+
+  * [Remote Browser Isolation (RBI)](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
+
+  * [Session Recording & Playback](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+
+  * [SSH Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
+
+  * [Discovery](/en/keeperpam/privileged-access-manager/discovery)
+
+  * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
 
 ###
 
 Secrets Manager Features
 
-  *   *   * 
+  * [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
+
+  * [Developer SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
+
+  * [Integrations](/en/keeperpam/secrets-manager/integrations)
 
 ###
 
 Commander CLI Features
 
-  *   *   *   *   *   *   *   *   * 
+  * [Import and Export](/en/keeperpam/commander-cli/command-reference/import-and-export-commands/import-export-commands)
+
+  * [Reporting](/en/keeperpam/commander-cli/command-reference/reporting-commands)
+
+  * [Enterprise Management](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands)
+
+  * [Record Management](/en/keeperpam/commander-cli/command-reference/record-commands)
+
+  * [Sharing](/en/keeperpam/commander-cli/command-reference/sharing-commands)
+
+  * [KeeperPAM Commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
+
+  * [Secrets Management Commands](/en/keeperpam/commander-cli/command-reference/secrets-manager-commands)
+
+  * [MSP Management Commands](/en/keeperpam/commander-cli/command-reference/msp-management-commands)
+
+  * [Miscellaneous Commands](/en/keeperpam/commander-cli/command-reference/misc-commands)
 
 ###
 
 Enterprise Password Manager
 
-  * 
-
-[Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-
-[Connections](/en/keeperpam/privileged-access-manager/connections)
-
-[Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
-
-[Remote Browser Isolation (RBI)](/en/keeperpam/privileged-access-
-manager/remote-browser-isolation)
-
-[Session Recording & Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
-
-[SSH Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
-
-[Discovery](/en/keeperpam/privileged-access-manager/discovery)
-
-[On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-
-connection-manager)
-
-[Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-
-line-interface)
-
-[Developer SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
-
-[Integrations](/en/keeperpam/secrets-manager/integrations)
-
-[Import and Export](/en/keeperpam/commander-cli/command-reference/import-and-
-export-commands/import-export-commands)
-
-[Reporting](/en/keeperpam/commander-cli/command-reference/reporting-commands)
-
-[Enterprise Management](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands)
-
-[Record Management](/en/keeperpam/commander-cli/command-reference/record-
-commands)
-
-[Sharing](/en/keeperpam/commander-cli/command-reference/sharing-commands)
-
-[KeeperPAM Commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
-commands)
-
-[Secrets Management Commands](/en/keeperpam/commander-cli/command-
-reference/secrets-manager-commands)
-
-[MSP Management Commands](/en/keeperpam/commander-cli/command-reference/msp-
-management-commands)
-
-[Miscellaneous Commands](/en/keeperpam/commander-cli/command-reference/misc-
-commands)
-
-[Enterprise Admin Guide](https://docs.keeper.io/en/enterprise-guide)
-
-[Architecture](/en/keeperpam/privileged-access-manager/getting-
-started/architecture)
-
-[Licensing](/en/keeperpam/privileged-access-manager/getting-started/keeperpam-
-licensing)
-
-[Enforcement policies](/en/keeperpam/privileged-access-manager/getting-
-started/enforcement-policies)
-
-[Vault structure](/en/keeperpam/privileged-access-manager/getting-
-started/vault-structure)
-
-[Record Linking](/en/keeperpam/privileged-access-manager/getting-
-started/record-linking)
-
-[Applications](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
-
-[Devices](/en/keeperpam/privileged-access-manager/getting-started/devices)
-
-[Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
-
-[PAM Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources)
-
-[PAM Users](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
-[Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-
-started/sharing-and-access-control)
+  * [Enterprise Admin Guide](https://docs.keeper.io/en/enterprise-guide)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

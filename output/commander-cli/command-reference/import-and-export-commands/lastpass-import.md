@@ -925,6 +925,12 @@ commands/default-record-types)
 
 [share admins](https://docs.keeper.io/enterprise-guide/share-admin)
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FisBbJe3YNOoyNvSgF0XD%252FImport-
+Keeper-
+LastPass.jpg%3Falt%3Dmedia%26token%3Dbf14ebf6-7463-4582-a1d7-a811f98d2e39&width=768&dpr=4&quality=100&sign=b3f0a619&sv=2)
+
 [record-permission](/en/keeperpam/commander-cli/command-reference/sharing-
 commands#record-permission-command)
 
@@ -937,10 +943,4 @@ Vault](https://keepersecurity.com/download)
 files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Desktop
 ApplicationsEnterprise Guide](https://docs.keeper.io/enterprise-
 guide/deploying-keeper-to-end-users/desktop-application)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FisBbJe3YNOoyNvSgF0XD%252FImport-
-Keeper-
-LastPass.jpg%3Falt%3Dmedia%26token%3Dbf14ebf6-7463-4582-a1d7-a811f98d2e39&width=768&dpr=4&quality=100&sign=b3f0a619&sv=2)
 

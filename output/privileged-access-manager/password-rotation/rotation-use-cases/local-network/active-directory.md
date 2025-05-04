@@ -418,10 +418,33 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * Prerequisites
+  * 1\. Set up a PAM Directory credential
+  * 2\. Set up a PAM Configuration
+  * 3\. Set up PAM User records
+  * 4\. Configure Rotation on the Record
+  * Troubleshooting
+  * Testing with a Self-Signed Cert
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=G8i5M5wdgYMSjLlD0VkD&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
+
+# Active Directory or OpenLDAP User
+
+Rotating Active Directory or OpenLDAP user accounts remotely using KeeperPAM
+
+[PreviousLocal Network](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network)[NextWindows
+User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/local-network/windows-user)
 
 Last updated 2 months ago
 
@@ -459,12 +482,73 @@ any users.
 
 PAM Directory Record Fields
 
+Field
+
+Description
+
+**Record Type**
+
+PAM Directory
+
+**Title**
+
+Keeper record title
+
+**Hostname or IP Address**
+
+IP address, hostname or FQDN of the directory server. Examples: `10.10.10.10`,
+`dc01.mydomain.local`
+
+**Port**
+
+`636` \- LDAPS is required for rotation on Active Directory. LDAP over port
+`389` is insecure and should be avoided.
+
+**Use SSL**
+
+Must be enabled for use with Active Directory
+
+**Administrative Credentials**
+
+Linked PAM User credential used for performing the LDAP rotation. Example:
+`rotationadmin`
+
+**Domain Name**
+
+Domain name of the Active Directory. Example: `mydomain.local`
+
+**Directory Type**
+
+Set to `Active Directory` or `OpenLDAP`
+
 ###
 
 2\. Set up a PAM Configuration
 
 Note: You can skip this step if you already have a PAM Configuration set up
 for this environment.
+
+Field
+
+Description
+
+**Title**
+
+Configuration name, example: `My Active Directory`
+
+**Environment**
+
+Select: `Local Network`
+
+**Gateway**
+
+Select the Gateway that has access to your directory server
+
+**Application Folder**
+
+Select the Shared folder that contains the PAM Directory record
+
+**Other fields**
 
 ###
 
@@ -479,8 +563,43 @@ application. In the example below, the AD user `demouser` can be rotated.
 
 PAM User Record Fields
 
+Field
+
+Description
+
+**Record Type**
+
+PAM User
+
+**Title**
+
+Keeper record title, e.g. `AD User - demouser`
+
+**Login**
+
+Username of the account being rotated. The format of the username depends on
+the target system and type of service. Examples: `demouser
+demouser@domain.local`
+
+**Password**
+
+Account password is optional. In most cases, a password rotation will not
+require the existing password to be present. However there are some scenarios
+and protocols which may require it.
+
+**Distinguished Name**
+
+Required for Active Directory and OpenLDAP directories. The LDAP DN for the
+user, e.g. `CN=Demo User,CN=Users,DC=lureydemo,DC=local`
+
 If you don't know the user's DN, the following PowerShell command can be used
 to find it:
+
+Copy
+
+    
+    
+    Get-ADUser -Identity <username> -Properties DistinguishedName
 
 ###
 
@@ -528,6 +647,12 @@ that the subject name and alternate names of the certificate must match with
 the server hostname. In this example, the primary name is
 `XYZ123.company.local` with alternate names `company.local` and `company`.
 
+Copy
+
+    
+    
+    New-SelfSignedCertificate -DnsName XYZ123.company.local,company.local,company, -CertStoreLocation cert:\LocalMachine\My
+
 2
 
 ###
@@ -537,119 +662,6 @@ Install the cert
 This script will locate the cert in the personal section of the certificate
 manager and copy it into the trusted domains. Replace the `company` parameter
 in the first line of this script with the domain in step 1.
-
-3
-
-###
-
-Restart NTDS
-
-After restarting the NTDS service, the certificate should be installed.
-
-4
-
-###
-
-Check the connectivity
-
-Run 'LDP.exe' and make sure that you're able to connect to the local domain
-over port 636 with SSL enabled.
-
-are configured for your role
-
-A Keeper Secrets Manager  has been created
-
-Your  is online
-
-Field
-
-Description
-
-A  associates an environment with a Keeper Gateway and credentials. If you
-don't have a PAM Configuration set up yet for this use case, create one.
-
-Field
-
-Description
-
-Field
-
-Description
-
-Any user with edit rights to a PAM User record and  allowing rotation has the
-ability to set up rotation for that record.
-
-**Record Type**
-
-PAM Directory
-
-**Title**
-
-Keeper record title
-
-**Hostname or IP Address**
-
-IP address, hostname or FQDN of the directory server. Examples: `10.10.10.10`,
-`dc01.mydomain.local`
-
-**Port**
-
-`636` \- LDAPS is required for rotation on Active Directory. LDAP over port
-`389` is insecure and should be avoided.
-
-**Use SSL**
-
-Must be enabled for use with Active Directory
-
-**Administrative Credentials**
-
-Linked PAM User credential used for performing the LDAP rotation. Example:
-`rotationadmin`
-
-**Domain Name**
-
-Domain name of the Active Directory. Example: `mydomain.local`
-
-**Directory Type**
-
-Set to `Active Directory` or `OpenLDAP`
-
-**Record Type**
-
-PAM User
-
-**Title**
-
-Keeper record title, e.g. `AD User - demouser`
-
-**Login**
-
-Username of the account being rotated. The format of the username depends on
-the target system and type of service. Examples: `demouser
-demouser@domain.local`
-
-**Password**
-
-Account password is optional. In most cases, a password rotation will not
-require the existing password to be present. However there are some scenarios
-and protocols which may require it.
-
-**Distinguished Name**
-
-Required for Active Directory and OpenLDAP directories. The LDAP DN for the
-user, e.g. `CN=Demo User,CN=Users,DC=lureydemo,DC=local`
-
-Copy
-
-    
-    
-    Get-ADUser -Identity <username> -Properties DistinguishedName
-
-Copy
-
-    
-    
-    New-SelfSignedCertificate -DnsName XYZ123.company.local,company.local,company, -CertStoreLocation cert:\LocalMachine\My
 
 Copy
 
@@ -672,34 +684,42 @@ Copy
     $rootStore.Add($cert)
     $rootStore.Close()
 
+3
+
+###
+
+Restart NTDS
+
+After restarting the NTDS service, the certificate should be installed.
+
 Copy
 
     
     
     Restart-Service NTDS -force
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
+4
 
-# Active Directory or OpenLDAP User
+###
 
-Rotating Active Directory or OpenLDAP user accounts remotely using KeeperPAM
+Check the connectivity
 
-[PreviousLocal Network](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network)[NextWindows
-User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/local-network/windows-user)
+Run 'LDP.exe' and make sure that you're able to connect to the local domain
+over port 636 with SSL enabled.
 
-  * Overview
-  * Prerequisites
-  * 1\. Set up a PAM Directory credential
-  * 2\. Set up a PAM Configuration
-  * 3\. Set up PAM User records
-  * 4\. Configure Rotation on the Record
-  * Troubleshooting
-  * Testing with a Self-Signed Cert
+are configured for your role
+
+A Keeper Secrets Manager  has been created
+
+Your  is online
+
+A  associates an environment with a Keeper Gateway and credentials. If you
+don't have a PAM Configuration set up yet for this use case, create one.
+
+Depends on your use case. See the  section.
+
+Any user with edit rights to a PAM User record and  allowing rotation has the
+ability to set up rotation for that record.
 
 [Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-
 started/enforcement-policies)
@@ -715,26 +735,6 @@ started/pam-configuration)
 
 [enforcement policies](/en/keeperpam/privileged-access-manager/getting-
 started/enforcement-policies)
-
-**Title**
-
-Configuration name, example: `My Active Directory`
-
-**Environment**
-
-Select: `Local Network`
-
-**Gateway**
-
-Select the Gateway that has access to your directory server
-
-**Application Folder**
-
-Select the Shared folder that contains the PAM Directory record
-
-**Other fields**
-
-Depends on your use case. See the  section.
 
 [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
 started/pam-configuration)
