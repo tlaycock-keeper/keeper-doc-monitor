@@ -471,11 +471,7 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
-
-  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is able to communicate with your AWS MariaDB Database
-
-  * Your AWS environment is [configured](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup) per our documentation
+  *   *   *   *   * 
 
 ##
 
@@ -504,8 +500,6 @@ Keeper record title Ex: `AWS MariaDB Admin`
 The RDS Endpoint i.e. `rdsdb.ckivswes.us-east-2.rds.amazonaws.com`
 
 **Port**
-
-The RDS Port, for default ports see port mapping i.e. `3306`
 
 **Use SSL**
 
@@ -592,10 +586,6 @@ Set this field to `USE_INSTANCE_ROLE` if you are using EC2 role policy
 Set this field to `USE_INSTANCE_ROLE` if you are using EC2 role policy
 (default). Otherwise use a specific Secret Access Key.
 
-For more details on all the configurable fields in the PAM Configuration
-record, visit this [page](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration).
-
 ##
 
 3\. Set up PAM User Records
@@ -647,6 +637,31 @@ rotation for that record.
 Keeper Secrets Manager is enabled for your
 
 Keeper Rotation is enabled for your
+
+A Keeper Secrets Manager  has been created
+
+A Keeper Rotation  is already installed, running, and is able to communicate
+with your AWS MariaDB Database
+
+Your AWS environment is  per our documentation
+
+The RDS Port, for default ports see  i.e. `3306`
+
+For more details on all the configurable fields in the PAM Configuration
+record, visit this .
+
+[application](/en/keeperpam/privileged-access-manager/getting-
+started/applications)
+
+[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+[configured](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration/aws-environment-setup)
+
+[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration)
+
+port mapping
 
 [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 overview#enabling-rotation-on-the-admin-console)

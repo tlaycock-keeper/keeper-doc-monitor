@@ -672,16 +672,6 @@ rotation)
   * 3\. Set up one or more PAM User records
   * 4\. Configure Rotation on the PAM User records
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FBvyJaq6tcQmPgbbuh78O%252FAzure%2520PostgreSQL.jpg%3Falt%3Dmedia%26token%3Dbc6b3caa-7e0d-4c77-93f5-c12446a339f5&width=768&dpr=4&quality=100&sign=78ba14e8&sv=2)
-
-[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database)
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
 [Azure Overview](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/azure)
 
@@ -699,4 +689,14 @@ started/gateways)
 
 [page](/en/keeperpam/privileged-access-manager/getting-started/pam-
 configuration)
+
+[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database)
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FBvyJaq6tcQmPgbbuh78O%252FAzure%2520PostgreSQL.jpg%3Falt%3Dmedia%26token%3Dbc6b3caa-7e0d-4c77-93f5-c12446a339f5&width=768&dpr=4&quality=100&sign=78ba14e8&sv=2)
 

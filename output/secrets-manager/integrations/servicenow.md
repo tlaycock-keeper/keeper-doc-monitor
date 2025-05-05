@@ -418,10 +418,35 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * About
+  * Features
+  * Use Cases
+  * On-demand Discovery
+  * Incident Response
+  * Custom Credential Provider
+  * Prerequisites
+  * Setup
+  * 1\. External Credential Storage (requires admin role)
+  * 2\. Installing Keeper Credential Resolver
+  * 3\. Configuring discovery credentials
+  * Throttles and cache
+  * Troubleshooting
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=Peg7P81ntdgtSMUkmymb&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# ServiceNow
+
+Keeper credential storage integration with ServiceNow
+
+[PreviousPowerShell Plugin](/en/keeperpam/secrets-
+manager/integrations/powershell-plugin)[NextTeamCity](/en/keeperpam/secrets-
+manager/integrations/teamcity)
 
 Last updated 3 months ago
 
@@ -733,35 +758,6 @@ Download the latest version of Keeper Credential Resolver JAR file from .
 Set _Name_ : `ext.cred.keeper.ksm_config`, _Value_ : base64 version of the
 generated for the corresponding KSM Application.
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# ServiceNow
-
-Keeper credential storage integration with ServiceNow
-
-[PreviousPowerShell Plugin](/en/keeperpam/secrets-
-manager/integrations/powershell-plugin)[NextTeamCity](/en/keeperpam/secrets-
-manager/integrations/teamcity)
-
-  * About
-  * Features
-  * Use Cases
-  * On-demand Discovery
-  * Incident Response
-  * Custom Credential Provider
-  * Prerequisites
-  * Setup
-  * 1\. External Credential Storage (requires admin role)
-  * 2\. Installing Keeper Credential Resolver
-  * 3\. Configuring discovery credentials
-  * Throttles and cache
-  * Troubleshooting
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FEzNiRnYQFy6ZdkIAjTDw%252Fkeeper%252Bservicenow.jpg%3Falt%3Dmedia%26token%3D220f17f1-fd62-4c9b-b528-afdf43ab9096&width=768&dpr=4&quality=100&sign=77fca440&sv=2)
-
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
 
 [External Credential Storage](https://docs.servicenow.com/bundle/utah-
@@ -787,4 +783,8 @@ manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FEzNiRnYQFy6ZdkIAjTDw%252Fkeeper%252Bservicenow.jpg%3Falt%3Dmedia%26token%3D220f17f1-fd62-4c9b-b528-afdf43ab9096&width=768&dpr=4&quality=100&sign=77fca440&sv=2)
 

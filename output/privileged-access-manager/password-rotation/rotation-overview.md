@@ -386,42 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Prerequisites
-  * Enable Enforcement Policies
-  * Deploy a Keeper Gateway
-  * Create an Application
-  * Create a PAM User record
-  * Create a PAM Resource
-  * Configure rotation settings
-  * Record Types for Rotation
-  * PAM Configurations
-  * How to Rotate a Password
-  * Rotation on Keeper Commander 
-  * Services and Scheduled Tasks
-  * Record Import
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=EDS2DJDgqE5sBxNdEEwZ&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-
-# Rotation Overview
-
-Quick start guide to Keeper Password Rotation
-
-[PreviousPassword Rotation](/en/keeperpam/privileged-access-manager/password-
-rotation)[NextRotation Use Cases](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -452,6 +416,17 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=EDS2DJDgqE5sBxNdEEwZ&only=yes&limit=100)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 ##
 
 Prerequisites
@@ -475,42 +450,6 @@ Admin Console under **Admin** > **Roles** > **Enforcement Policies** >
 **Privileged Access Manager**.
 
 For Password Rotation capabilities, enable the necessary policies:
-
-Enforcement Policy
-
-Commander Enforcement
-
-Definition
-
-Can create applications and manage secrets
-
-Allow users to create a Secrets Manager Application
-
-Can create, deploy and manage Keeper Gateways
-
-Allow users to deploy and manage a Keeper Gateway
-
-Can configure rotation settings
-
-Allow users to set up rotation on a PAM User record
-
-Can configure rotation settings (legacy setting)
-
-This should be set the same as ALLOW_PAM_ROTATION
-
-Can rotate credentials
-
-All users to perform a password rotation action
-
-Copy
-
-    
-    
-    enterprise-role "Keeper Administrator" --enforcement "ALLOW_SECRETS_MANAGER":true
-    enterprise-role "Keeper Administrator" --enforcement "ALLOW_PAM_GATEWAY":true
-    enterprise-role "Keeper Administrator" --enforcement "ALLOW_PAM_ROTATION":true
-    enterprise-role "Keeper Administrator" --enforcement "ALLOW_CONFIGURE_ROTATION_SETTINGS":true
-    enterprise-role "Keeper Administrator" --enforcement "ALLOW_ROTATE_CREDENTIALS":true
 
 ###
 
@@ -613,22 +552,6 @@ Rotation on Keeper Commander
 
 Example:
 
-Copy
-
-    
-    
-    My Vault> pam action rotate -r 5NaygwI4LK1BDZmH3Ib
-    Scheduled action id: MfKbPR3ac6A/oBDZpctpOg==
-    
-    My Vault> pam action job-info MfKbPR3ac6A/oBDZpctpOg== -g QPkRsR8KQm6_4vnHTcofZA
-    Job id to check [MfKbPR3ac6A/oBDZpctpOg==]
-    Execution Details
-    -------------------------
-    	Status              : finished
-    	Duration            : 0:00:17.525641
-    	Response Message    : Rotation completed for record uid 5NaygwI4LK1BDZmH3Ib
-    My Vault>
-
 ##
 
 Services and Scheduled Tasks
@@ -638,6 +561,12 @@ Services and Scheduled Tasks
 Record Import
 
 Learn about KeeperPAM in the  section
+
+Enforcement Policy
+
+Commander Enforcement
+
+Definition
 
 Rotation can also be enabled on the  using the `enterprise-role` command:
 
@@ -677,11 +606,17 @@ accounts and scheduled tasks. See the  documentation.
 Keeper supports importing in bulk from JSON format. See the  section for more
 details.
 
+Can create applications and manage secrets
+
 Copy
 
     
     
     ALLOW_SECRETS_MANAGER
+
+Allow users to create a Secrets Manager Application
+
+Can create, deploy and manage Keeper Gateways
 
 Copy
 
@@ -689,11 +624,19 @@ Copy
     
     ALLOW_PAM_GATEWAY
 
+Allow users to deploy and manage a Keeper Gateway
+
+Can configure rotation settings
+
 Copy
 
     
     
     ALLOW_PAM_ROTATION
+
+Allow users to set up rotation on a PAM User record
+
+Can configure rotation settings (legacy setting)
 
 Copy
 
@@ -701,11 +644,68 @@ Copy
     
     ALLOW_CONFIGURE_ROTATION_SETTINGS
 
+This should be set the same as ALLOW_PAM_ROTATION
+
+Can rotate credentials
+
 Copy
 
     
     
     ALLOW_ROTATE_CREDENTIALS
+
+All users to perform a password rotation action
+
+Copy
+
+    
+    
+    enterprise-role "Keeper Administrator" --enforcement "ALLOW_SECRETS_MANAGER":true
+    enterprise-role "Keeper Administrator" --enforcement "ALLOW_PAM_GATEWAY":true
+    enterprise-role "Keeper Administrator" --enforcement "ALLOW_PAM_ROTATION":true
+    enterprise-role "Keeper Administrator" --enforcement "ALLOW_CONFIGURE_ROTATION_SETTINGS":true
+    enterprise-role "Keeper Administrator" --enforcement "ALLOW_ROTATE_CREDENTIALS":true
+
+Copy
+
+    
+    
+    My Vault> pam action rotate -r 5NaygwI4LK1BDZmH3Ib
+    Scheduled action id: MfKbPR3ac6A/oBDZpctpOg==
+    
+    My Vault> pam action job-info MfKbPR3ac6A/oBDZpctpOg== -g QPkRsR8KQm6_4vnHTcofZA
+    Job id to check [MfKbPR3ac6A/oBDZpctpOg==]
+    Execution Details
+    -------------------------
+    	Status              : finished
+    	Duration            : 0:00:17.525641
+    	Response Message    : Rotation completed for record uid 5NaygwI4LK1BDZmH3Ib
+    My Vault>
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+
+# Rotation Overview
+
+Quick start guide to Keeper Password Rotation
+
+[PreviousPassword Rotation](/en/keeperpam/privileged-access-manager/password-
+rotation)[NextRotation Use Cases](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases)
+
+  * Prerequisites
+  * Enable Enforcement Policies
+  * Deploy a Keeper Gateway
+  * Create an Application
+  * Create a PAM User record
+  * Create a PAM Resource
+  * Configure rotation settings
+  * Record Types for Rotation
+  * PAM Configurations
+  * How to Rotate a Password
+  * Rotation on Keeper Commander 
+  * Services and Scheduled Tasks
+  * Record Import
 
 [KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-
 management/)

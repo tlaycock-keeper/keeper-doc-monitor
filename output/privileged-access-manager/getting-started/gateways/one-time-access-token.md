@@ -410,7 +410,7 @@ Creating a Keeper Gateway
 started/gateways)[NextDocker Installation](/en/keeperpam/privileged-access-
 manager/getting-started/gateways/docker-installation)
 
-Last updated 12 days ago
+Last updated 13 days ago
 
 Was this helpful?
 

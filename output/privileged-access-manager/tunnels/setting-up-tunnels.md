@@ -481,6 +481,12 @@ Enforcement policies for KeeperPAM are managed in the Keeper Admin Console
 under **Admin** > **Roles** > **Enforcement Policies** > **Privileged Access
 Manager**.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7qh2srRpGVVCcvTTt2Fr%252FScreenshot%25202025-01-21%2520at%252011.59.32%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D20a4c885-1eb9-4a8d-89fe-3aa9b6948e92&width=768&dpr=4&quality=100&sign=42a0ffbb&sv=2)
+
+Enforcement Policies for Tunnels
+
 Enforcement Policy
 
 Commander Enforcement Policy
@@ -566,18 +572,9 @@ PAM Record Type
 
 Target Endpoint type
 
-[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
 Windows/MacOS/Linux Machines, EC2 Instances, Azure VMs
 
-[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database)
-
 MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
-
-[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-directory)
 
 Active Directory, OpenLDAP
 
@@ -597,6 +594,10 @@ screen by:
   2. Clicking on "Set Up" in the PAM Settings section
 
   3. Navigate to the "Tunnel" section in the prompted window
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8AuVoynRnwZ1XYt2dHPD%252FtunnelPAMSettings.png%3Falt%3Dmedia%26token%3D0b12cab7-ce68-43b1-a63f-7e65fc994b58&width=768&dpr=4&quality=100&sign=aa11178f&sv=2)
 
 After navigating to the Tunnel Section on the PAM Settings screen. The
 following table lists all the configurable fields for Tunnels:
@@ -636,8 +637,20 @@ The following image shows a PAM Machine record where:
 
   * Subsequent tunnels will use the same local port
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlUZQzCJCvEHI6w8YhVbq%252FScreenshot%25202025-01-15%2520at%25202.25.18%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db9749402-6ce6-4985-8d0b-58c3144bbfad&width=768&dpr=4&quality=100&sign=22383c23&sv=2)
+
+Tunnel Settings in a KeeperPAM Resource
+
 Once tunnels have been configured on the PAM Record, your PAM Record will have
 the "Start Tunnel" button:
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFBL7VQntbnDaT2xJHNTU%252FScreenshot%25202025-01-15%2520at%25202.26.25%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Da45c1ea0-d38c-406e-9b90-b15662f740f6&width=768&dpr=4&quality=100&sign=3f4dc163&sv=2)
+
+Record View with the Start Tunnel action
 
 ##
 
@@ -647,6 +660,12 @@ Once tunnels have been configured on the PAM Record, click on "Start Tunnel"
 button to start a tunnel. The local port number is selected in this case as
 49644. Subsequent tunnels for this resource will use the same local port and
 tunnel.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4bsuT2Ol9pnSRgX3SLAV%252FScreenshot%25202025-01-15%2520at%25202.24.52%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dc07425e6-742e-4b57-aa6e-c0c7ce06f611&width=768&dpr=4&quality=100&sign=d140eea4&sv=2)
+
+Active Tunnel
 
 ##
 
@@ -660,6 +679,12 @@ configuring the tunnel settings, a tunnel has been started on local hostname
 This MySQL Database can then be accessed by using a native application of
 choice. For example, the MySQL Workbench tool can be used to access the
 database:
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FG45mktqPR9PKR9mkjvqi%252FScreenshot%25202025-01-15%2520at%25202.32.27%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D9bfdd81b-d39d-404d-a2a3-16826cfa7323&width=768&dpr=4&quality=100&sign=7fa9028b&sv=2)
+
+MySQL Workbench with a Local Tunnel
 
 Likewise, using the CLI on the local device can initiate a connection to the
 database using this command:
@@ -723,6 +748,15 @@ need to share credentials:
 
   * [Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-isolation) with Autofill to establish web-based interactive sessions
 
+[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
+
+[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database)
+
+[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-directory)
+
 An active license is required in order to use the features available with
 KeeperPAM. This license is available for both business and enterprise
 customers.
@@ -735,38 +769,4 @@ management/)
 [Request a Demo](https://www.keepersecurity.com/contact.html?t=b&r=sales)
 
 [Contact Support](https://www.keepersecurity.com/support.html)
-
-Enforcement Policies for Tunnels
-
-Tunnel Settings in a KeeperPAM Resource
-
-Record View with the Start Tunnel action
-
-Active Tunnel
-
-MySQL Workbench with a Local Tunnel
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7qh2srRpGVVCcvTTt2Fr%252FScreenshot%25202025-01-21%2520at%252011.59.32%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D20a4c885-1eb9-4a8d-89fe-3aa9b6948e92&width=768&dpr=4&quality=100&sign=42a0ffbb&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8AuVoynRnwZ1XYt2dHPD%252FtunnelPAMSettings.png%3Falt%3Dmedia%26token%3D0b12cab7-ce68-43b1-a63f-7e65fc994b58&width=768&dpr=4&quality=100&sign=aa11178f&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlUZQzCJCvEHI6w8YhVbq%252FScreenshot%25202025-01-15%2520at%25202.25.18%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db9749402-6ce6-4985-8d0b-58c3144bbfad&width=768&dpr=4&quality=100&sign=22383c23&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFBL7VQntbnDaT2xJHNTU%252FScreenshot%25202025-01-15%2520at%25202.26.25%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Da45c1ea0-d38c-406e-9b90-b15662f740f6&width=768&dpr=4&quality=100&sign=3f4dc163&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4bsuT2Ol9pnSRgX3SLAV%252FScreenshot%25202025-01-15%2520at%25202.24.52%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dc07425e6-742e-4b57-aa6e-c0c7ce06f611&width=768&dpr=4&quality=100&sign=d140eea4&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FG45mktqPR9PKR9mkjvqi%252FScreenshot%25202025-01-15%2520at%25202.32.27%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D9bfdd81b-d39d-404d-a2a3-16826cfa7323&width=768&dpr=4&quality=100&sign=7fa9028b&sv=2)
 

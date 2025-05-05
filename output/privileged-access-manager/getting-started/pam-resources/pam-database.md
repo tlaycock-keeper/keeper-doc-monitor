@@ -386,6 +386,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -417,36 +447,6 @@ manager/getting-started/pam-resources/pam-database/example-mysql-database)
 Last updated 3 months ago
 
 Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
 
 ##
 
@@ -482,14 +482,6 @@ The PAM Database resource supports the following features:
   * Text session recording (Typescript)
 
   * Sharing access without sharing credentials
-
-Connecting to the PAM database requires only that the Keeper Gateway has
-access to the database either through native protocols or AWS/Azure APIs. The
-Keeper Vault operates independently and does not require direct connectivity
-to the database, leveraging Keeper's zero-trust network access model to
-securely manage access through the Gateway. See the [network architecture
-diagram](/en/keeperpam/privileged-access-manager/getting-
-started/architecture/system-architecture) for more details.
 
 ##
 
@@ -608,10 +600,6 @@ Administrative Credential Record
 
 Linked PAM User credential used for connection and administrative operations
 
-**Required** Visit this [section](/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-database#pam-settings-and-
-administrative-credentials) for more details
-
 Protocol
 
 Native database protocol used for connecting from the Gateway to the target
@@ -621,9 +609,6 @@ Native database protocol used for connecting from the Gateway to the target
 Session Recording
 
 Options for recording sessions and typescripts
-
-See [session recording](/en/keeperpam/privileged-access-manager/session-
-recording-and-playback)
 
 Connection Parameters (multiple)
 
@@ -641,11 +626,36 @@ Examples
 
 Visit the following pages to set up:
 
-  * [MySQL Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database/example-mysql-database)
+  *   *   * 
 
-  * [PostgreSQL Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database/example-postgresql-database)
+Connecting to the PAM database requires only that the Keeper Gateway has
+access to the database either through native protocols or AWS/Azure APIs. The
+Keeper Vault operates independently and does not require direct connectivity
+to the database, leveraging Keeper's zero-trust network access model to
+securely manage access through the Gateway. See the  for more details.
 
-  * [Microsoft SQL Server Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database/example-microsoft-sql-server-database)
+**Required** Visit this  for more details
+
+See
+
+[network architecture diagram](/en/keeperpam/privileged-access-
+manager/getting-started/architecture/system-architecture)
+
+[MySQL Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database/example-mysql-database)
+
+[PostgreSQL Database](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-database/example-postgresql-database)
+
+[Microsoft SQL Server Database](/en/keeperpam/privileged-access-
+manager/getting-started/pam-resources/pam-database/example-microsoft-sql-
+server-database)
+
+[session recording](/en/keeperpam/privileged-access-manager/session-recording-
+and-playback)
+
+[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database#pam-settings-and-administrative-credentials)
 
 Create a PAM Database
 

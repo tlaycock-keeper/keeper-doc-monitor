@@ -475,12 +475,6 @@ is shown. This is the **Client Id** field of the Keeper PAM Configuration
 record. The **Directory (tenant) ID** is also shown. This is the **Tenant Id**
 field of the Keeper PAM Configuration record. Save these values for later.
 
-Next, go to Home > General > Subscriptions and get your subscription ID. Copy
-the subscription ID into the Keeper PAM Configuration "Subscription ID" field.
-For more information on how to get your subscription ID, visit this
-[page](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-
-tenant-id).
-
 Next, click on the **Add a certification or secret** for **Client
 credentials**. On the next page, click on New client secret, give the client
 secret a Description, and select a desired Expires date, and click **Add**.
@@ -507,9 +501,7 @@ privileges are needed for your use case. Custom roles can be used.
 
   * **Global Administrator** \- It is not recommended to use a Global Administrator on a service principal. However, it will allow both administrator and user passwords to be rotated.
 
-  * [**Privileged Authentication Administrator**](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#privileged-authentication-administrator) \- Can change the password for any user, including a Global Administrator user.
-
-  * [**Authentication Administrator**](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#authentication-administrator) \- Can change the password for any user, except a Global Administrator user.
+  *   * 
 
 To add the application, click **Add assignments** and **Search** for the
 service principal/application that was created, click it, and then **Add**.
@@ -650,15 +642,47 @@ Configuring PAM Features on PAM Record Types
 
 After creating the PAM configuration, visit the following pages to:
 
-  * Configure [Rotation](/en/keeperpam/secrets-manager/password-rotation)
+  *   *   *   *   * 
 
-  * Configure [Connections](/en/keeperpam/privileged-access-manager/connections)
+Next, go to Home > General > Subscriptions and get your subscription ID. Copy
+the subscription ID into the Keeper PAM Configuration "Subscription ID" field.
+For more information on how to get your subscription ID, visit this .
 
-  * Configure [RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
+\- Can change the password for any user, including a Global Administrator
+user.
 
-  * Configure [Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
+\- Can change the password for any user, except a Global Administrator user.
 
-  * Configure [Discovery](/en/keeperpam/privileged-access-manager/discovery)
+Configure
+
+Configure
+
+Configure
+
+Configure
+
+Configure
+
+[page](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-
+tenant-id)
+
+[**Privileged Authentication Administrator**](https://learn.microsoft.com/en-
+us/azure/active-directory/roles/permissions-reference#privileged-
+authentication-administrator)
+
+[**Authentication Administrator**](https://learn.microsoft.com/en-
+us/azure/active-directory/roles/permissions-reference#authentication-
+administrator)
+
+[Rotation](/en/keeperpam/secrets-manager/password-rotation)
+
+[Connections](/en/keeperpam/privileged-access-manager/connections)
+
+[RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
+
+[Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
+
+[Discovery](/en/keeperpam/privileged-access-manager/discovery)
 
 Create Application
 

@@ -418,34 +418,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * AWS Key Management Service (KMS) Key
-  * Prerequisites
-  * Generate a Configuration
-  * Create Secret in AWS Secrets Manager
-  * Assign Policy to Instance Role
-  * Confirming Access
-  * Configuration of the Keeper Gateway
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=Bl8GyNkSxnAgnbhDUkiX&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-  4. [Advanced Configuration](/en/keeperpam/privileged-access-manager/getting-started/gateways/advanced-configuration)
-
-# Gateway Configuration with AWS KMS
-
-Storing and protecting the Keeper Gateway Configuration using AWS KMS
-
-[PreviousAdvanced Configuration](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/advanced-configuration)[NextGateway
-Configuration with Custom Fields](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/advanced-configuration/gateway-configuration-
-with-custom-fields)
 
 Last updated 2 months ago
 
@@ -494,12 +470,6 @@ Select the Gateway initialization method of "Configuration" and click Next.
 Alternatively, you can generate a One-Time Access Token and then use the
 Keeper Gateway's "gateway ott-init" command:
 
-Copy
-
-    
-    
-    gateway ott-init [ONE-TIME-TOKEN]
-
 In either case, you'll be provided with a base64 encoded configuration. Save
 this for the next step.
 
@@ -525,6 +495,48 @@ Assign Policy to Instance Role
 The EC2 instance role needs to be assigned a policy which provides read access
 to the specific AWS Secrets Manager key. As an example:
 
+###
+
+Confirming Access
+
+From the EC2 instance, the below command will confirm the policy has been
+applied:
+
+###
+
+Configuration of the Keeper Gateway
+
+####
+
+Docker Install Method
+
+For Docker installations, remove the `GATEWAY_CONFIG` entry and add
+`AWS_KMS_SECRET_NAME` with the value containing the name of the secret from
+the AWS secrets manager.
+
+Then update the service with the new environment:
+
+####
+
+Linux Install Method
+
+Open the Keeper Gateway service unit file:
+
+`/etc/systemd/system/keeper-gateway.service`
+
+Modify the "ExecStart" line as seen below, replacing YourSecretName with your
+assigned name.
+
+Apply changes to the service:
+
+If there are any errors starting up, they can be seen through this command:
+
+Copy
+
+    
+    
+    gateway ott-init [ONE-TIME-TOKEN]
+
 Copy
 
     
@@ -538,30 +550,11 @@ Copy
          "Resource": "arn:aws:secretsmanager:us-west-1:XXX:secret:XXX"
     }
 
-###
-
-Confirming Access
-
-From the EC2 instance, the below command will confirm the policy has been
-applied:
-
 Copy
 
     
     
     aws secretsmanager get-secret-value --secret-id YourSecretName --query SecretString --output text
-
-###
-
-Configuration of the Keeper Gateway
-
-####
-
-Docker Install Method
-
-For Docker installations, remove the `GATEWAY_CONFIG` entry and add
-`AWS_KMS_SECRET_NAME` with the value containing the name of the secret from
-the AWS secrets manager.
 
 Copy
 
@@ -578,8 +571,6 @@ Copy
               ACCEPT_EULA: Y
               AWS_KMS_SECRET_NAME: "YourSecretName"
 
-Then update the service with the new environment:
-
 Copy
 
     
@@ -588,24 +579,11 @@ Copy
     docker compose down
     docker compose up -d
 
-####
-
-Linux Install Method
-
-Open the Keeper Gateway service unit file:
-
-`/etc/systemd/system/keeper-gateway.service`
-
-Modify the "ExecStart" line as seen below, replacing YourSecretName with your
-assigned name.
-
 Copy
 
     
     
     ExecStart=/bin/bash -c "/usr/local/bin/gateway start --service --aws-kms-secret-name="YourSecretName" --log-to-stdout"
-
-Apply changes to the service:
 
 Copy
 
@@ -614,13 +592,35 @@ Copy
     sudo systemctl daemon-reload
     sudo systemctl restart keeper-gateway
 
-If there are any errors starting up, they can be seen through this command:
-
 Copy
 
     
     
     systemctl status keeper-gateway.service
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+  4. [Advanced Configuration](/en/keeperpam/privileged-access-manager/getting-started/gateways/advanced-configuration)
+
+# Gateway Configuration with AWS KMS
+
+Storing and protecting the Keeper Gateway Configuration using AWS KMS
+
+[PreviousAdvanced Configuration](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/advanced-configuration)[NextGateway
+Configuration with Custom Fields](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/advanced-configuration/gateway-configuration-
+with-custom-fields)
+
+  * Overview
+  * AWS Key Management Service (KMS) Key
+  * Prerequisites
+  * Generate a Configuration
+  * Create Secret in AWS Secrets Manager
+  * Assign Policy to Instance Role
+  * Confirming Access
+  * Configuration of the Keeper Gateway
 
 [Docker Installation](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/docker-installation)

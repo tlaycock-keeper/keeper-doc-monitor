@@ -407,6 +407,45 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MJXfHZXiFwS7h9M_VdV&only=yes&limit=100)
 
 How to install Keeper Commander on macOS
 
+[PreviousCLI Installation on Windows](/en/keeperpam/commander-cli/commander-
+installation-setup/installation-on-windows)[NextCLI Installation on
+Linux](/en/keeperpam/commander-cli/commander-installation-setup/installation-
+on-linux)
+
+Last updated 6 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ###
 
 **Supported Operating systems**
@@ -418,8 +457,6 @@ How to install Keeper Commander on macOS
 Video Overview
 
 Watch the video below to learn how to install and log in to Keeper Commander.
-
-Keeper Commander – Installing and Loggin In
 
 ###
 
@@ -511,42 +548,5 @@ commander_BBNOqSVfEO.png%3Falt%3Dmedia%26token%3D9f80084e-6f49-46be-a52c-0bbb0b7
 Note, for your first time logging into a new device or a new location, you may
 have to perform device authorization through email or other 2FA methods.
 
-[PreviousCLI Installation on Windows](/en/keeperpam/commander-cli/commander-
-installation-setup/installation-on-windows)[NextCLI Installation on
-Linux](/en/keeperpam/commander-cli/commander-installation-setup/installation-
-on-linux)
-
-Last updated 6 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+Keeper Commander – Installing and Loggin In
 

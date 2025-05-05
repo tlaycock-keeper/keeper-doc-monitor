@@ -476,10 +476,6 @@ beneath “/foo”. Requests must be made to the standard port for HTTPS.
 This would allow any protocol or path from `google.com` root domain, but does
 not allow a subdomain.
 
-In the next section, we'll cover the [autofill
-capabilities](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation/setting-up-rbi/browser-autofill).
-
 [PreviousSetting up RBI](/en/keeperpam/privileged-access-manager/remote-
 browser-isolation/setting-up-rbi)[NextBrowser
 Autofill](/en/keeperpam/privileged-access-manager/remote-browser-
@@ -518,4 +514,9 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+In the next section, we'll cover the .
+
+[autofill capabilities](/en/keeperpam/privileged-access-manager/remote-
+browser-isolation/setting-up-rbi/browser-autofill)
 

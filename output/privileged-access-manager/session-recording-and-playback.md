@@ -452,9 +452,7 @@ Was this helpful?
 What are Session Recordings?
 
 **Keeper Session Recordings** capture and store activity from sessions
-launched through [**Keeper Connections**](/en/keeperpam/privileged-access-
-manager/connections) or [**Remote Browser Isolation
-(RBI)**](/en/keeperpam/privileged-access-manager/remote-browser-isolation).
+launched through  or .
 
 These recordings can be **graphical** , **text-based** , or both, depending on
 the session configuration.
@@ -518,10 +516,6 @@ For RBI connections, Graphical Session Recordings are available.
 
 Enforcement Policies
 
-Allowing users to view session recordings is managed through [PAM Enforcement
-Policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-
-policies). The following enforcement policies need to be turned on:
-
 ####
 
 **For Connections:**
@@ -556,10 +550,6 @@ Can view RBI session recordings
 
 Allow users to view RBI Session Recordings
 
-For more information on PAM enforcement policies, visit this
-[page](/en/keeperpam/privileged-access-manager/getting-started/enforcement-
-policies).
-
 ##
 
 Activating Session Recording
@@ -578,12 +568,6 @@ Manager tab, ensure that policies to configure settings is enabled at minimum.
 ###
 
 PAM Configuration
-
-To enable session recordings, the [PAM
-Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration) needs to permit graphical and text session recording. Go to
-Secrets Manager > PAM Configurations and edit the configuration associated
-with your resources.
 
 3
 
@@ -685,7 +669,16 @@ encrypted data is downloaded from the Keeper Cloud and decrypted locally in
 the user's vault for playback. Each session is encrypted with a unique record
 key, ensuring least privilege access.
 
+Allowing users to view session recordings is managed through . The following
+enforcement policies need to be turned on:
+
+For more information on PAM enforcement policies, visit this .
+
 Enforcement Policies to configure session recording
+
+To enable session recordings, the  needs to permit graphical and text session
+recording. Go to Secrets Manager > PAM Configurations and edit the
+configuration associated with your resources.
 
 Allow Session Recording from PAM Configuration
 
@@ -698,6 +691,20 @@ View Session Recordings
 Session Recording History
 
 View Session Recording
+
+[PAM Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-
+started/enforcement-policies)
+
+[page](/en/keeperpam/privileged-access-manager/getting-started/enforcement-
+policies)
+
+[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)
+
+[**Keeper Connections**](/en/keeperpam/privileged-access-manager/connections)
+
+[**Remote Browser Isolation (RBI)**](/en/keeperpam/privileged-access-
+manager/remote-browser-isolation)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

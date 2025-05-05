@@ -386,33 +386,46 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
+#### Company
 
-  * Overview
-  * Prerequisites
-  * 1\. Set up a PAM Database Record
-  * 2\. Set up PAM Configuration
-  * 3\. Set up PAM User Records
-  * 4\. Configure Rotation on the PAM User records
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+On this page
 
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=nn8HrHzuazylmRVQLjGi&only=yes&limit=100)
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [AWS](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws)
-  5. [Managed Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database)
+Last updated 2 months ago
 
-# AWS RDS for Oracle
-
-Rotating Admin/Regular AWS Oracle Database Users with Keeper
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F1LhbAKVmnSSyU2S65nxf%252FAWS%2520RDS%2520for%2520Oracle.jpg%3Falt%3Dmedia%26token%3D28f568ab-98bc-4773-94a8-a36566bc681a&width=768&dpr=4&quality=100&sign=d7477c99&sv=2)
+Was this helpful?
 
 ##
 
@@ -435,11 +448,7 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
-
-  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is able to communicate with your AWS Oracle Database
-
-  * Your AWS environment is [configured](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup) per our documentation
+  *   *   *   *   * 
 
 ##
 
@@ -454,6 +463,80 @@ credentials of the database user accounts.
 
 The following table lists all the **required** fields on the **PAM Database**
 Record:
+
+Note: Adding Provider Region and Database ID will enable managing the PAM
+Database Record through the SDK.
+
+This PAM Database Record with the admin credential needs to be in a shared
+folder that is shared to the KSM application created in the pre-requisites.
+Only the KSM application needs access to this privileged account, it does not
+need to be shared with any users
+
+##
+
+2\. Set up PAM Configuration
+
+Note: You can skip this step if you already have a PAM Configuration set up
+for this environment.
+
+If you are creating a new **PAM Configuration** , login to the Keeper Vault
+and select "Secrets Manager", then select the "PAM Configurations" tab, and
+click on "New Configuration".
+
+The following table lists all the required**** fields on the **PAM
+Configuration** Record:
+
+##
+
+3\. Set up PAM User Records
+
+Keeper Rotation will use the credentials in the **PAM Database** record to
+rotate the **PAM User** records on your AWS environment. The **PAM User**
+credential needs to be in a shared folder that is shared to the KSM
+application created in the prerequisites.
+
+The following table lists all the required**** fields on the **PAM User**
+record:
+
+##
+
+4\. Configure Rotation on the PAM User records
+
+Select the**PAM User** record(s) from Step 3, edit the record and open the
+"Password Rotation Settings".
+
+  * Select the desired schedule and password complexity.
+
+  * The "Rotation Settings" should use the **PAM Configuration** setup previously. 
+
+  * The "Resource Credential" field should select the **PAM Database** credential setup from Step 1.
+
+  * Upon saving, the rotation button will be enabled and available to rotate on demand, or via the selected schedule.
+
+Any user with `edit` rights to a **PAM User** record has the ability to setup
+rotation for that record.
+
+Keeper Secrets Manager is enabled for your
+
+Keeper Rotation is enabled for your
+
+A Keeper Secrets Manager  has been created
+
+A Keeper Rotation  is already installed, running, and is able to communicate
+with your AWS Oracle Database
+
+Your AWS environment is  per our documentation
+
+Field
+
+Description
+
+Field
+
+Description
+
+For more details on all the configurable fields in the PAM Configuration
+record, visit this .
 
 Field
 
@@ -500,32 +583,6 @@ The AWS DB instance ID
 
 The region your Amazon RDS instance is using. i.e `us-east-2 `
 
-Note: Adding Provider Region and Database ID will enable managing the PAM
-Database Record through the SDK.
-
-This PAM Database Record with the admin credential needs to be in a shared
-folder that is shared to the KSM application created in the pre-requisites.
-Only the KSM application needs access to this privileged account, it does not
-need to be shared with any users
-
-##
-
-2\. Set up PAM Configuration
-
-Note: You can skip this step if you already have a PAM Configuration set up
-for this environment.
-
-If you are creating a new **PAM Configuration** , login to the Keeper Vault
-and select "Secrets Manager", then select the "PAM Configurations" tab, and
-click on "New Configuration".
-
-The following table lists all the required**** fields on the **PAM
-Configuration** Record:
-
-Field
-
-Description
-
 **Title**
 
 Configuration name, example: `AWS RDS Configuration`
@@ -560,26 +617,6 @@ Set this field to `USE_INSTANCE_ROLE` if you are using EC2 role policy
 Set this field to `USE_INSTANCE_ROLE` if you are using EC2 role policy
 (default). Otherwise use a specific Secret Access Key.
 
-For more details on all the configurable fields in the PAM Configuration
-record, visit this [page](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration).
-
-##
-
-3\. Set up PAM User Records
-
-Keeper Rotation will use the credentials in the **PAM Database** record to
-rotate the **PAM User** records on your AWS environment. The **PAM User**
-credential needs to be in a shared folder that is shared to the KSM
-application created in the prerequisites.
-
-The following table lists all the required**** fields on the **PAM User**
-record:
-
-Field
-
-Description
-
 **Title**
 
 Keeper record title i.e. `AWS DB User 1`
@@ -600,70 +637,46 @@ Optional database that will be used when connecting to the database server.
 For example: PostgreSQL requires a database and so this will default to
 template1
 
-##
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [AWS](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws)
+  5. [Managed Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database)
 
-4\. Configure Rotation on the PAM User records
+# AWS RDS for Oracle
 
-Select the**PAM User** record(s) from Step 3, edit the record and open the
-"Password Rotation Settings".
-
-  * Select the desired schedule and password complexity.
-
-  * The "Rotation Settings" should use the **PAM Configuration** setup previously. 
-
-  * The "Resource Credential" field should select the **PAM Database** credential setup from Step 1.
-
-  * Upon saving, the rotation button will be enabled and available to rotate on demand, or via the selected schedule.
-
-Any user with `edit` rights to a **PAM User** record has the ability to setup
-rotation for that record.
+Rotating Admin/Regular AWS Oracle Database Users with Keeper
 
 [PreviousAWS RDS for MariaDB](/en/keeperpam/privileged-access-
 manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-
 mariadb)[NextLocal Network](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/local-network)
 
-Last updated 2 months ago
+  * Overview
+  * Prerequisites
+  * 1\. Set up a PAM Database Record
+  * 2\. Set up PAM Configuration
+  * 3\. Set up PAM User Records
+  * 4\. Configure Rotation on the PAM User records
 
-Was this helpful?
+[application](/en/keeperpam/privileged-access-manager/getting-
+started/applications)
 
-#### Company
+[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+[configured](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration/aws-environment-setup)
 
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
-Keeper Secrets Manager is enabled for your
-
-Keeper Rotation is enabled for your
+[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration)
 
 [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 overview#enabling-rotation-on-the-admin-console)
 
 [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 overview#enabling-rotation-on-the-admin-console)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F1LhbAKVmnSSyU2S65nxf%252FAWS%2520RDS%2520for%2520Oracle.jpg%3Falt%3Dmedia%26token%3D28f568ab-98bc-4773-94a8-a36566bc681a&width=768&dpr=4&quality=100&sign=d7477c99&sv=2)
 

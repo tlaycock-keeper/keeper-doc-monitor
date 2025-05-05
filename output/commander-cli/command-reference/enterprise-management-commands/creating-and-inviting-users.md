@@ -760,6 +760,9 @@ follow the  for the `enterprise-user` command and swap out that command with
 management-commands/creating-and-inviting-users#example-invite-users-from-
 email-addresses-in-a-file)
 
+[_documentation page_](/en/keeperpam/commander-cli/commander-installation-
+setup/logging-in#persistent-login)
+
 User invite email
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
@@ -771,7 +774,4 @@ reference/enterprise-management-commands#enterprise-user-command)
 
 [_command documentation_](/en/keeperpam/commander-cli/command-
 reference/enterprise-management-commands#create-user-command)
-
-[_documentation page_](/en/keeperpam/commander-cli/commander-installation-
-setup/logging-in#persistent-login)
 

@@ -416,7 +416,7 @@ manager/connections/session-protocols)[NextRDP
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/rdp-connections)
 
-Last updated 13 days ago
+Last updated 14 days ago
 
 Was this helpful?
 
@@ -643,11 +643,16 @@ SSH to Windows Servers
 The SSH protocol can also be used to access Windows servers for execution of
 PowerShell commands or other administrative actions.
 
-  * Learn more on how to [activate SSH on Windows](/en/keeperpam/privileged-access-manager/references/setting-up-ssh#windows)
+  * 
 
 ##
 
 Session Recordings - SSH Protocol
+
+Learn more on how to
+
+[activate SSH on Windows](/en/keeperpam/privileged-access-
+manager/references/setting-up-ssh#windows)
 
 For this protocol, both graphical and the full, raw text text content of
 terminal sessions, including timing information, are recorded. For more

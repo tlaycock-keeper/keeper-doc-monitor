@@ -483,6 +483,8 @@ Create a record using either the Keeper Vault UI, or Keeper Commander.
 
 Vault UICommander
 
+Creating a record in the Keeper Vault
+
 Commander rotation supports all record types. A "Login" field is required on
 the record.
 
@@ -646,7 +648,13 @@ the command line
 
 Here's a screenshot of the Keeper Vault record for this use case:
 
+Commander will use the login and password to login to the MySQL account
+
+Adding Custom Fields in the Vault UI
+
 for more information about the edit command, see the
+
+Click the Record UID to copy it to the clipboard
 
 A Keeper Record setup for use with Commander's 'connect' command
 
@@ -657,20 +665,6 @@ rotation)
 
 [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
 commands)
-
-[command documentation](/en/keeperpam/commander-cli/command-reference/record-
-commands#edit-command-record-types)
-
-[documentation](/en/keeperpam/commander-cli/command-
-reference/plugins/password-rotation#connect-command)
-
-Creating a record in the Keeper Vault
-
-Commander will use the login and password to login to the MySQL account
-
-Adding Custom Fields in the Vault UI
-
-Click the Record UID to copy it to the clipboard
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -684,13 +678,19 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FxndkXzyAk
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4TNMCZKhejp3vlE8tBCN%252Fimage.png%3Falt%3Dmedia%26token%3D4cfaa6bd-a624-4e25-aea3-38d59984e901&width=768&dpr=4&quality=100&sign=c058d501&sv=2)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MiNaHUls8b8zepgHMnb%252F-MiNgHHcXnjXoz4P1LO9%252Fimage.png%3Falt%3Dmedia%26token%3Dc7bac4e1-0eef-4e3e-9d29-6a74fa18c8d4&width=768&dpr=4&quality=100&sign=47beb160&sv=2)
+[documentation](/en/keeperpam/commander-cli/command-
+reference/plugins/password-rotation#connect-command)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MiNPEavIrI4-C-d6yeX%252F-MiNSHLjGNieJbKyeNnB%252Fimage.png%3Falt%3Dmedia%26token%3D4cb9461d-4b81-45d0-b93a-c541187d592f&width=768&dpr=4&quality=100&sign=698ed78f&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MiNaHUls8b8zepgHMnb%252F-MiNgHHcXnjXoz4P1LO9%252Fimage.png%3Falt%3Dmedia%26token%3Dc7bac4e1-0eef-4e3e-9d29-6a74fa18c8d4&width=768&dpr=4&quality=100&sign=47beb160&sv=2)
+
+[command documentation](/en/keeperpam/commander-cli/command-reference/record-
+commands#edit-command-record-types)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fraw.githubusercontent.com%2FKeeper-
 Security%2FCommander%2Fmaster%2Fkeepercommander%2Fimages%2Fconnect_mysql_screenshot.png&width=768&dpr=4&quality=100&sign=c97e338d&sv=2)

@@ -445,7 +445,7 @@ Protect Secrets Manager connection details with Oracle Key Vault
 deploy)[NextPowerShell Plugin](/en/keeperpam/secrets-
 manager/integrations/powershell-plugin)
 
-Last updated 18 days ago
+Last updated 19 days ago
 
 Was this helpful?
 

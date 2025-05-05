@@ -386,35 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * About
-  * Setup
-  * Configure Keeper Secrets Manager on Cortex XSOAR
-  * Available KSM Commands
-  * Using Commands in a Playbook
-  * Example: Get a Password From a Keeper Record
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=vvgGmhnSTRCYbMglgvhO&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# XSOAR
-
-Use Secrets Manager with automated workflows in Cortex XSOAR
-
-[PreviousWindows Credential Manager](/en/keeperpam/secrets-
-manager/integrations/windows-credential-
-manager)[NextTroubleshooting](/en/keeperpam/secrets-manager/troubleshooting)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -444,6 +415,35 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * About
+  * Setup
+  * Configure Keeper Secrets Manager on Cortex XSOAR
+  * Available KSM Commands
+  * Using Commands in a Playbook
+  * Example: Get a Password From a Keeper Record
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=vvgGmhnSTRCYbMglgvhO&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# XSOAR
+
+Use Secrets Manager with automated workflows in Cortex XSOAR
+
+[PreviousWindows Credential Manager](/en/keeperpam/secrets-
+manager/integrations/windows-credential-
+manager)[NextTroubleshooting](/en/keeperpam/secrets-manager/troubleshooting)
+
+Last updated 3 months ago
+
+Was this helpful?
 
 ##
 
@@ -644,9 +644,6 @@ notation)
 [_Keeper Notation documentation_](/en/keeperpam/secrets-manager/about/keeper-
 notation)
 
-[ Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#enable-
-secrets-manager)
-
 Configure the instance to use the Keeper Secrets Manager integration
 
 List Available Keeper Commander
@@ -670,4 +667,7 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5aamsq2Vs
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7G9zceIZodTE3aOrn6cd%252Fimage.png%3Falt%3Dmedia%26token%3De45a7efc-158d-4870-b303-73ded72f37a3&width=768&dpr=4&quality=100&sign=f53d9b2a&sv=2)
+
+[ Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#enable-
+secrets-manager)
 

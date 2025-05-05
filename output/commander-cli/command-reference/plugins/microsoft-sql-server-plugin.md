@@ -575,19 +575,6 @@ field of the record
 
 A Keeper Record that is setup for MSSQL rotation
 
-[Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
-rotation)
-
-[KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
-commands)
-
-[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
-cli#typed-vs-untyped-records-v3-vs-v2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwjleYChSFGLucHbo6EfP%252Fimage.png%3Falt%3Dmedia%26token%3D36515408-7f70-4286-9b12-a8b17ff489a2&width=768&dpr=4&quality=100&sign=8c5b22b8&sv=2)
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FQckdUZ8JwzVBe6mpZDLy%252Fimage.png%3Falt%3Dmedia%26token%3D9ea70cea-3e80-4f23-b02a-6a83e4e5eae9&width=768&dpr=4&quality=100&sign=268a6851&sv=2)
@@ -601,11 +588,24 @@ ad43-4432-af6b-bd1d43433e00&width=768&dpr=4&quality=100&sign=a6b356d0&sv=2)
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8McEnYBUn4wIzSL5LyJQ%252Fimage.png%3Falt%3Dmedia%26token%3D980b32e7-350b-4a65-9eef-02f901ab2f4c&width=768&dpr=4&quality=100&sign=8c1b0c81&sv=2)
 
+[Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
+rotation)
+
+[KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
+commands)
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf3e6a022EwH5Vklq3u%252Fimage.png%3Falt%3Dmedia%26token%3Db1a08c73-3594-4c06-800c-41c14cfde67b&width=768&dpr=4&quality=100&sign=13510f6b&sv=2)
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwjleYChSFGLucHbo6EfP%252Fimage.png%3Falt%3Dmedia%26token%3D36515408-7f70-4286-9b12-a8b17ff489a2&width=768&dpr=4&quality=100&sign=8c5b22b8&sv=2)
+
+[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
+cli#typed-vs-untyped-records-v3-vs-v2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf3e0ukI6fX4zt2Z1NN%252Fimage.png%3Falt%3Dmedia%26token%3D72c11bbd-5f32-449c-8b8b-1464ccd1f9eb&width=768&dpr=4&quality=100&sign=e64c857f&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf3e6a022EwH5Vklq3u%252Fimage.png%3Falt%3Dmedia%26token%3Db1a08c73-3594-4c06-800c-41c14cfde67b&width=768&dpr=4&quality=100&sign=13510f6b&sv=2)
 

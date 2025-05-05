@@ -445,7 +445,7 @@ Protect Secrets Manager connection details with Azure Key Vault Keys
 manager/integrations/azure-key-vault)[NextBitbucket
 Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
 
-Last updated 19 days ago
+Last updated 20 days ago
 
 Was this helpful?
 

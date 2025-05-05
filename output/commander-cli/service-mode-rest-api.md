@@ -418,12 +418,36 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Keeper Commander Service Mode
+  * Features
+  * Security
+  * Usage
+  * API Usage
+  * API Response
+  * Command Specific Responses
+  * Advanced Configuration
+  * Multiple API Token Support
+  * Docker Deploy
+  * Background Mode
+  * Support
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=VRFyjbRISZ42BbiPQUYG&only=yes&limit=100)
 
-Last updated 17 days ago
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+
+# Service Mode REST API
+
+Creating a REST API with Keeper Commander Service Mode
+
+[PreviousAutomatic Execution](/en/keeperpam/commander-cli/command-
+reference/plugins/automatic-
+execution)[NextTroubleshooting](/en/keeperpam/commander-cli/troubleshooting-
+commander-cli)
+
+Last updated 18 days ago
 
 Was this helpful?
 
@@ -459,6 +483,30 @@ Core Functionality
 ####
 
 Service Commands
+
+Command
+
+Description
+
+`service-create`
+
+Initialize and configure the service with customizable settings
+
+`service-start`
+
+Start the service with existing configuration
+
+`service-stop`
+
+Gracefully stop the running service
+
+`service-status`
+
+Display current service status
+
+`service-config-add`
+
+Add new API configuration and command access settings
 
 ####
 
@@ -506,6 +554,12 @@ Basic Setup
 
 Start Keeper Commander:
 
+Copy
+
+    
+    
+    keeper shell
+
 Log in with your Keeper credentials when prompted
 
 ####
@@ -513,6 +567,12 @@ Log in with your Keeper credentials when prompted
 Interactive Configuration
 
 Create and configure the service with interactive prompts:
+
+Copy
+
+    
+    
+    service-create
 
 You'll be prompted to configure:
 
@@ -528,13 +588,48 @@ You'll be prompted to configure:
 
 Example:
 
+Copy
+
+    
+    
+    My Vault> service-create
+    Enter Port No:9090
+    Enable Ngrok Tunneling? (y/n):y
+    Enter Ngrok Auth Token:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    Enter Ngrok Custom Domain:myname
+    Enable Advanced Security? (y/n):n
+    List of supported commands, Enter comma separated:whoami,record-add,tree,ls
+    Generated API key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    Uploading service_config.yaml ...
+    
+    2025-03-26 11:47:46 [INFO] keeper_service - Route initialization completed
+    Route initialization completed successfully
+    Keeper Commander Service initialization complete
+    Commander Service starting on http://localhost:9090
+    Process ID: 34291
+    Generated ngrok URL: https://myname.ngrok.io
+     * Serving Flask app 'keepercommander.service.app'
+     * Debug mode: off
+
 ####
 
 Streamlined Configuration
 
 Configure the service with a single command:
 
+Copy
+
+    
+    
+    service-create -p 9090 -c 'record-add,whoami'
+
 Starting the service with Ngrok auth token and custom domain:
+
+Copy
+
+    
+    
+     service-create -p 9090 -c 'record-add,whoami' -ng xxxx -cd myname
 
 Parameters:
 
@@ -568,11 +663,35 @@ Service Management
 
 Check service status:
 
+Copy
+
+    
+    
+    service-status
+
 Add additional configuration:
+
+Copy
+
+    
+    
+    service-config-add
 
 Start the service:
 
+Copy
+
+    
+    
+    service-start
+
 Stop the service:
+
+Copy
+
+    
+    
+    service-stop
 
 ###
 
@@ -585,7 +704,29 @@ Commander command, exactly as you would type it into the CLI.
 
 Execute Command Endpoint
 
+Copy
+
+    
+    
+    curl --location 'http://localhost:<port>/api/v1/executecommand' \
+    --header 'Content-Type: application/json' \
+    --header 'api-key: <your-api-key>' \
+    --data '{
+        "command": "tree"
+    }'
+
 If you're using Ngrok, the Curl command will be:
+
+Copy
+
+    
+    
+    curl --location 'http://<your-ngrok-url>/api/v1/executecommand' \
+    --header 'Content-Type: application/json' \
+    --header 'api-key: <your-api-key>' \
+    --data '{
+    	"command": "tree"
+    }'
 
 ####
 
@@ -599,6 +740,12 @@ Type header and api-key header is provided. Example screenshot below:
 API Response
 
 All responses use this basic format:
+
+Copy
+
+    
+    
+    { "command": "<command_name>", "data": <command_specific_data> , "status": "success"}
 
 ###
 
@@ -784,201 +931,6 @@ The `service_config.yaml` file stored in the vault contains the service
 properties. In the file there is a section called "records". This allows you
 to define an API key with specific commands and token expiration.
 
-###
-
-Docker Deploy
-
-####
-
-Install, build and run docker image
-
-  1. Install Docker.
-
-  2.   3. Build docker image using command `docker build -t keeper-commander .`
-
-  4. Verify docker image created. `docker images`
-
-  5. Set two environment variables in your terminal window:
-
-     1. `KEEPER_USERNAME` \- This is the username that will login to Keeper Commander
-
-     2. `KEEPER_PASSWORD` \- This is the master password for the above user
-
-  6. Run the keeper-commander docker image using command
-
-  7. Verify keeper-commander image is started using command `docker ps`
-
-  8. Check the logs using command
-
-and get the API key from logs. The API key will show up like this:
-
-####
-
-Execute Command Endpoint
-
-###
-
-Background Mode
-
-Keeper Commander supports persistent login mode (e.g. "Stay Logged In"), which
-keeps the session active for a specific amount of time. To activate persistent
-login mode on an account, type the following:
-
-If persistent login is enabled, you won't be prompted to authenticate the next
-time you run Commander. Persistent login is required to ensure uninterrupted
-background execution of the Service Mode APIs, allowing seamless
-authentication without repeated login prompts.
-
-###
-
-Support
-
-For support or feature requests, please contact:
-
-  * 
-
-If you would like to request additional features or setup guides for Commander
-Service Mode, please reach out.
-
-Command
-
-Description
-
-To use Commander Service Mode with Ngrok, sign up on  and generate an Auth
-token from
-
-If you are using a custom domain, set this up under:  and specify the custom
-subdomain when starting the Commander service mode.
-
-Limit the scope of supported commands. For example, if you only need to add
-records through the API, then only allow the `record-add` command. See the
-section.
-
-Clone the repository .
-
-Learn more about .
-
-Email:
-
-`service-create`
-
-Initialize and configure the service with customizable settings
-
-`service-start`
-
-Start the service with existing configuration
-
-`service-stop`
-
-Gracefully stop the running service
-
-`service-status`
-
-Display current service status
-
-`service-config-add`
-
-Add new API configuration and command access settings
-
-Copy
-
-    
-    
-    keeper shell
-
-Copy
-
-    
-    
-    service-create
-
-Copy
-
-    
-    
-    My Vault> service-create
-    Enter Port No:9090
-    Enable Ngrok Tunneling? (y/n):y
-    Enter Ngrok Auth Token:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-    Enter Ngrok Custom Domain:myname
-    Enable Advanced Security? (y/n):n
-    List of supported commands, Enter comma separated:whoami,record-add,tree,ls
-    Generated API key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-    Uploading service_config.yaml ...
-    
-    2025-03-26 11:47:46 [INFO] keeper_service - Route initialization completed
-    Route initialization completed successfully
-    Keeper Commander Service initialization complete
-    Commander Service starting on http://localhost:9090
-    Process ID: 34291
-    Generated ngrok URL: https://myname.ngrok.io
-     * Serving Flask app 'keepercommander.service.app'
-     * Debug mode: off
-
-Copy
-
-    
-    
-    service-create -p 9090 -c 'record-add,whoami'
-
-Copy
-
-    
-    
-     service-create -p 9090 -c 'record-add,whoami' -ng xxxx -cd myname
-
-Copy
-
-    
-    
-    service-status
-
-Copy
-
-    
-    
-    service-config-add
-
-Copy
-
-    
-    
-    service-start
-
-Copy
-
-    
-    
-    service-stop
-
-Copy
-
-    
-    
-    curl --location 'http://localhost:<port>/api/v1/executecommand' \
-    --header 'Content-Type: application/json' \
-    --header 'api-key: <your-api-key>' \
-    --data '{
-        "command": "tree"
-    }'
-
-Copy
-
-    
-    
-    curl --location 'http://<your-ngrok-url>/api/v1/executecommand' \
-    --header 'Content-Type: application/json' \
-    --header 'api-key: <your-api-key>' \
-    --data '{
-    	"command": "tree"
-    }'
-
-Copy
-
-    
-    
-    { "command": "<command_name>", "data": <command_specific_data> , "status": "success"}
-
 Copy
 
     
@@ -1002,28 +954,57 @@ Copy
       command_list: get
       expiration_timestamp: '9999-12-31T23:59:59'
 
+###
+
+Docker Deploy
+
+####
+
+Install, build and run docker image
+
+  1. Install Docker.
+
+  2.   3. Build docker image using command `docker build -t keeper-commander .`
+
+  4. Verify docker image created. `docker images`
+
+  5. Set two environment variables in your terminal window:
+
+     1. `KEEPER_USERNAME` \- This is the username that will login to Keeper Commander
+
+     2. `KEEPER_PASSWORD` \- This is the master password for the above user
+
+  6. Run the keeper-commander docker image using command
+
 Copy
 
-    
-    
-    docker run -d -p <port>:<port> keeper-commander \ 
-      service-create -p <port> -c '<comma separated commands like tree,ls>' \
-      -ng <ngrok-auth-token> -cd <ngrok-custom-domain> \
-      -aip <allowed-ip-list> -dip <denied-ip-list> \
-      --user $KEEPER_USERNAME \
-      --password $KEEPER_PASSWORD
+         
+         docker run -d -p <port>:<port> keeper-commander \ 
+           service-create -p <port> -c '<comma separated commands like tree,ls>' \
+           -ng <ngrok-auth-token> -cd <ngrok-custom-domain> \
+           -aip <allowed-ip-list> -dip <denied-ip-list> \
+           --user $KEEPER_USERNAME \
+           --password $KEEPER_PASSWORD
+
+  7. Verify keeper-commander image is started using command `docker ps`
+
+  8. Check the logs using command
 
 Copy
 
-    
-    
-     docker logs <docker container name or ID>
+         
+         docker logs <docker container name or ID>
+
+and get the API key from logs. The API key will show up like this:
 
 Copy
 
-    
-    
-    Generated API key: <API-KEY>
+         
+         Generated API key: <API-KEY>
+
+####
+
+Execute Command Endpoint
 
 Copy
 
@@ -1036,6 +1017,14 @@ Copy
        "command": "<command>"
     }'
 
+###
+
+Background Mode
+
+Keeper Commander supports persistent login mode (e.g. "Stay Logged In"), which
+keeps the session active for a specific amount of time. To activate persistent
+login mode on an account, type the following:
+
 Copy
 
     
@@ -1043,29 +1032,37 @@ Copy
     this-device persistent-login on
     this-device register
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
+If persistent login is enabled, you won't be prompted to authenticate the next
+time you run Commander. Persistent login is required to ensure uninterrupted
+background execution of the Service Mode APIs, allowing seamless
+authentication without repeated login prompts.
 
-# Service Mode REST API
+###
 
-Creating a REST API with Keeper Commander Service Mode
+Support
 
-[PreviousAutomatic Execution](/en/keeperpam/commander-cli/command-
-reference/plugins/automatic-
-execution)[NextTroubleshooting](/en/keeperpam/commander-cli/troubleshooting-
-commander-cli)
+For support or feature requests, please contact:
 
-  * Keeper Commander Service Mode
-  * Features
-  * Security
-  * Usage
-  * API Usage
-  * API Response
-  * Command Specific Responses
-  * Advanced Configuration
-  * Multiple API Token Support
-  * Docker Deploy
-  * Background Mode
-  * Support
+  * 
+
+If you would like to request additional features or setup guides for Commander
+Service Mode, please reach out.
+
+To use Commander Service Mode with Ngrok, sign up on  and generate an Auth
+token from
+
+If you are using a custom domain, set this up under:  and specify the custom
+subdomain when starting the Commander service mode.
+
+Limit the scope of supported commands. For example, if you only need to add
+records through the API, then only allow the `record-add` command. See the
+section.
+
+Clone the repository .
+
+Learn more about .
+
+Email:
 
 [ngrok.com](https://ngrok.com/)
 
@@ -1078,6 +1075,9 @@ commander-cli)
 [commander@keepersecurity.com](mailto:commander@keepersecurity.com)
 
 [Command List](/en/keeperpam/commander-cli/service-mode-rest-api#command-list)
+
+[persistent login sessions](/en/keeperpam/commander-cli/commander-
+installation-setup/logging-in#persistent-login-sessions-stay-logged-in)
 
 Commander Service Mode record
 
@@ -1100,7 +1100,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqFYoWXHv5
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5kke9cceH6JAWq389XaO%252FScreenshot%25202025-03-23%2520at%25205.10.39%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Ddd5bd3e4-fc62-4579-b548-7c1f832a4c73&width=768&dpr=4&quality=100&sign=a07eb9a2&sv=2)
-
-[persistent login sessions](/en/keeperpam/commander-cli/commander-
-installation-setup/logging-in#persistent-login-sessions-stay-logged-in)
 

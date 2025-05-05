@@ -918,7 +918,7 @@ Copy
 reference/secrets-manager-commands)[NextMiscellaneous
 Commands](/en/keeperpam/commander-cli/command-reference/misc-commands)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

@@ -386,6 +386,96 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * What are Keeper Tunnels? 
+  * How do Keeper Tunnels work? 
+  * Why Use Keeper Tunnels? 
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=PSb02o2M4zNmZnVHJgxn&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Tunnels
+
+Create a secure and encrypted TCP/IP connection to your target endpoint from
+your Vault
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7awJ0XYX10x2o49Rg0mD%252FKeeperPAM%2520Tunnel.jpg%3Falt%3Dmedia%26token%3De86f53c7-486b-4083-aac4-4ecc41c0c4b1&width=768&dpr=4&quality=100&sign=59b626b8&sv=2)
+
+##
+
+What are Keeper Tunnels?
+
+**Keeper Tunnel** is a secure, encrypted TCP/IP connection established between
+your vault client to the target endpoint through the [Keeper
+Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways).
+Keeper Tunnels can be configured on PAM Machine, PAM Database, and PAM
+Directory Record Types. Once a tunnel is activated from the Keeper Desktop
+application, users can make use of any native app to communicate with the
+target infrastructure.
+
+Note: Keeper Tunnels are only available using the native Keeper Desktop App.
+[Download the Keeper Desktop](https://www.keepersecurity.com/download.html)
+version 17.1 or newer to use Tunnels
+
+###
+
+How do Keeper Tunnels work?
+
+When starting a tunnel, a local port is opened up on the local device running
+Keeper Desktop client. Native applications will communicate to the target from
+this local port. This is done by:
+
+  1. The Desktop Vault Client communicating with the Keeper Gateway with the relevant connection info through a secure tunnel
+
+  2. The Keeper Gateway then establishes a secure, encrypted TCP/IP connection to the target IP/Port found on the PAM Record
+
+  3. Opening a local port on the local device running Keeper Desktop Client
+
+  4. Native applications will connect to this local port to communicate with the target IP/Port
+
+For more details on the security model, see the [Connection and Tunnel
+Security](/en/keeperpam/privileged-access-manager/getting-
+started/architecture/connection-and-tunnel-security) page.
+
+##
+
+Why Use Keeper Tunnels?
+
+A common challenge faced by IT Admins, DevOps and development teams is
+providing remote employees or contractors with access to internal company
+resources without exposing those resources to external networks. Additionally,
+remote employees may want to use their desired native applications to access
+these resources.
+
+Keeper Tunnels solves the above solutions by:
+
+  * Providing secure, encrypted connection from client to target resource
+
+  * Allowing users to securely connect to target resource with the native application of choice 
+
+  * Simplifying Configuration - streamline setup and management of secure connection from PAM Record types
+
+  * Access controls and compliance - centralized management of access controls, ensuring that all connections meet organizational security policies and compliance requirements
+
+To get started with Keeper Tunnels, proceed to the [next
+section](/en/keeperpam/privileged-access-manager/tunnels/setting-up-tunnels).
+
+[PreviousPostgreSQL Protocol - PostgreSQL Database](/en/keeperpam/privileged-
+access-manager/connections/examples/postgresql-protocol-postgresql-
+database)[NextSetting up Tunnels](/en/keeperpam/privileged-access-
+manager/tunnels/setting-up-tunnels)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -415,99 +505,4 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * What are Keeper Tunnels? 
-  * How do Keeper Tunnels work? 
-  * Why Use Keeper Tunnels? 
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=PSb02o2M4zNmZnVHJgxn&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# Tunnels
-
-Create a secure and encrypted TCP/IP connection to your target endpoint from
-your Vault
-
-[PreviousPostgreSQL Protocol - PostgreSQL Database](/en/keeperpam/privileged-
-access-manager/connections/examples/postgresql-protocol-postgresql-
-database)[NextSetting up Tunnels](/en/keeperpam/privileged-access-
-manager/tunnels/setting-up-tunnels)
-
-Last updated 2 months ago
-
-Was this helpful?
-
-##
-
-What are Keeper Tunnels?
-
-**Keeper Tunnel** is a secure, encrypted TCP/IP connection established between
-your vault client to the target endpoint through the . Keeper Tunnels can be
-configured on PAM Machine, PAM Database, and PAM Directory Record Types. Once
-a tunnel is activated from the Keeper Desktop application, users can make use
-of any native app to communicate with the target infrastructure.
-
-###
-
-How do Keeper Tunnels work?
-
-When starting a tunnel, a local port is opened up on the local device running
-Keeper Desktop client. Native applications will communicate to the target from
-this local port. This is done by:
-
-  1. The Desktop Vault Client communicating with the Keeper Gateway with the relevant connection info through a secure tunnel
-
-  2. The Keeper Gateway then establishes a secure, encrypted TCP/IP connection to the target IP/Port found on the PAM Record
-
-  3. Opening a local port on the local device running Keeper Desktop Client
-
-  4. Native applications will connect to this local port to communicate with the target IP/Port
-
-##
-
-Why Use Keeper Tunnels?
-
-A common challenge faced by IT Admins, DevOps and development teams is
-providing remote employees or contractors with access to internal company
-resources without exposing those resources to external networks. Additionally,
-remote employees may want to use their desired native applications to access
-these resources.
-
-Keeper Tunnels solves the above solutions by:
-
-  * Providing secure, encrypted connection from client to target resource
-
-  * Allowing users to securely connect to target resource with the native application of choice 
-
-  * Simplifying Configuration - streamline setup and management of secure connection from PAM Record types
-
-  * Access controls and compliance - centralized management of access controls, ensuring that all connections meet organizational security policies and compliance requirements
-
-Note: Keeper Tunnels are only available using the native Keeper Desktop App.
-version 17.1 or newer to use Tunnels
-
-For more details on the security model, see the  page.
-
-To get started with Keeper Tunnels, proceed to the .
-
-[Download the Keeper Desktop](https://www.keepersecurity.com/download.html)
-
-[Connection and Tunnel Security](/en/keeperpam/privileged-access-
-manager/getting-started/architecture/connection-and-tunnel-security)
-
-[next section](/en/keeperpam/privileged-access-manager/tunnels/setting-up-
-tunnels)
-
-[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7awJ0XYX10x2o49Rg0mD%252FKeeperPAM%2520Tunnel.jpg%3Falt%3Dmedia%26token%3De86f53c7-486b-4083-aac4-4ecc41c0c4b1&width=768&dpr=4&quality=100&sign=59b626b8&sv=2)
 
