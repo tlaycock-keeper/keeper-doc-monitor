@@ -418,22 +418,13 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Rotating Users on Cisco IOS XE
+  * Rotating Users on Cisco Meraki
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=OsdnLDXKxa10qr7MoiGZ&only=yes&limit=100)
-
-Last updated 4 months ago
-
-Was this helpful?
-
-###
-
-Rotating Users on Cisco IOS XE
-
-###
-
-Rotating Users on Cisco Meraki
 
   1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
   2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -446,8 +437,17 @@ manager/password-rotation/rotation-use-cases/saas-accounts/rotate-credential-
 via-rest-api)[NextCisco IOS XE](/en/keeperpam/privileged-access-
 manager/password-rotation/rotation-use-cases/network-devices/cisco-ios-xe)
 
-  * Rotating Users on Cisco IOS XE
-  * Rotating Users on Cisco Meraki
+Last updated 4 months ago
+
+Was this helpful?
+
+###
+
+Rotating Users on Cisco IOS XE
+
+###
+
+Rotating Users on Cisco Meraki
 
 [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/network-devices/cisco-ios-xe)

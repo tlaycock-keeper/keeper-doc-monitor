@@ -411,7 +411,7 @@ Vault
 rotation/post-rotation-scripts/accessing-parameters)[NextGetting
 Started](/en/keeperpam/privileged-access-manager/connections/getting-started)
 
-Last updated 13 days ago
+Last updated 14 days ago
 
 Was this helpful?
 

@@ -627,8 +627,6 @@ Machine record without having direct access to the linked credentials.
 
   * 
 
-Example of Azure Windows VM
-
 **Required** Visit this  for more details
 
 See
@@ -653,11 +651,6 @@ resources/pam-user)
 [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-
 started/sharing-and-access-control)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fes2MA1KVac2YXpHVcHp5%252FScreenshot%25202025-02-09%2520at%25208.48.45%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D75fb48b0-f924-4ffa-
-aa22-4528c4b0977a&width=768&dpr=4&quality=100&sign=68db9d58&sv=2)
-
 [session recording](/en/keeperpam/privileged-access-manager/session-recording-
 and-playback)
 
@@ -667,4 +660,11 @@ protocols/rdp-connections)
 [section](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-machine/example-azure-windows-vm#administrative-credential-
 record)
+
+Example of Azure Windows VM
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fes2MA1KVac2YXpHVcHp5%252FScreenshot%25202025-02-09%2520at%25208.48.45%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D75fb48b0-f924-4ffa-
+aa22-4528c4b0977a&width=768&dpr=4&quality=100&sign=68db9d58&sv=2)
 

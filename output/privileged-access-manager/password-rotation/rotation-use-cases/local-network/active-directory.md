@@ -713,23 +713,13 @@ A Keeper Secrets Manager  has been created
 
 Your  is online
 
-PAM Directory record
-
 A  associates an environment with a Keeper Gateway and credentials. If you
 don't have a PAM Configuration set up yet for this use case, create one.
 
 Depends on your use case. See the  section.
 
-Example of Active Directory account password rotation
-
 Any user with edit rights to a PAM User record and  allowing rotation has the
 ability to set up rotation for that record.
-
-PAM User scheduled rotations
-
-Testing and LDAP connection with LDP.exe
-
-Connect using LDP.exe
 
 [Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-
 started/enforcement-policies)
@@ -745,6 +735,19 @@ started/pam-configuration)
 
 [enforcement policies](/en/keeperpam/privileged-access-manager/getting-
 started/enforcement-policies)
+
+[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)
+
+PAM Directory record
+
+Example of Active Directory account password rotation
+
+PAM User scheduled rotations
+
+Testing and LDAP connection with LDP.exe
+
+Connect using LDP.exe
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -769,7 +772,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FKD087si6y
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FEqolqHYLiMQnY7X8DaQT%252FScreenshot%25202025-01-09%2520at%252011.45.17%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3De57fca91-d32d-46f9-9744-cc828d6cdc29&width=768&dpr=4&quality=100&sign=a2a23455&sv=2)
-
-[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
 

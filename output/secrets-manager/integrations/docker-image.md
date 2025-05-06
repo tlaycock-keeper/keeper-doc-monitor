@@ -418,32 +418,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Docker Secrets Management
-  * Features
-  * Prerequisites
-  * About
-  * Example 1: Build an Image with Secrets using BuildKit
-  * Example 2: Build an Image with Secrets using Build Arguments
-  * Example 3: Using docker-compose to Build an Image with Secrets
-  * Example 4: Copy files from vault to Docker Image
-  * Integration with Docker Compose
-  * Contribute to the Docker Image Examples
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-MekuWlNDN2IS_Sj99Ks&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Docker Image
-
-Using environmental variable substitution with containerized environments
-
-[PreviousBitbucket Plugin](/en/keeperpam/secrets-
-manager/integrations/bitbucket-plugin)[NextDocker
-Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
 
 Last updated 3 months ago
 
@@ -488,42 +466,13 @@ cases are described in this document.
 
 Example 1: Build an Image with Secrets using BuildKit
 
-Copy
-
-    
-    
-    export MY_UID="SOAsfj_lIg0VenDr83gjDw"
-    export MY_USER="keeper://${MY_UID}/field/login"
-    export MY_PASS="keeper://${MY_UID}/field/password"
-
 **Step 2:** Using the `ksm exec` command, the Docker build is created with the
 2 secrets (login and password). The `--secret` parameters will pull values
 from the environmental variables that have been substituted with Keeper
 secrets.
 
-Copy
-
-    
-    
-    DOCKER_BUILDKIT=1 ksm exec -- \
-        docker build \
-        --secret id=my_user,env=MY_USER \
-        --secret id=my_password,env=MY_PASS \
-       -t my_image .
-
 **Step 3:** In the dockerfile, we will create a linux user account using
 `useradd `and then set the password with `chpasswd`. The Docker file is below:
-
-Copy
-
-    
-    
-    FROM my_base_image
-    
-    RUN --mount=type=secret,id=my_user,dst=/my_secrets/my_user \
-        --mount=type=secret,id=my_password,dst=/my_secrets/my_password \
-          useradd "$(cat /my_secrets/my_user)" && \
-          echo "$(cat /my_secrets/my_user)":"$(cat /my_secrets/my_password)" | chpasswd
 
 In this example, each secret is mounted as a file. The 'dst' value specifies
 where you want to temporarily store the secret. Once the RUN command is
@@ -539,41 +488,12 @@ Similar to example 1, you can pass in secrets via the `--build-arg`. This
 example will also demonstrate the ability of using secrets in a Docker build
 process.
 
-Copy
-
-    
-    
-    export MY_UID="SOAsfj_lIg0VenDr83gjDw"
-    export MY_USER="keeper://${MY_UID}/field/login"
-    export MY_PASS="keeper://${MY_UID}/field/password"
-
 **Step 2:** Using the `ksm exec` command, the Docker build is created with the
 2 secrets (login and password). The flag `--inline` processes the replacement
 of secrets. For example:
 
-Copy
-
-    
-    
-    ksm exec --inline -- \
-       docker build \
-         --build-arg "BUILD_MY_USER=${MY_USER}" \
-         --build-arg "BUILD_MY_PASSWORD=${MY_PASSWORD}" \
-         -t my_image .
-
 **Step 3:** In the dockerfile, we will create a linux user account using
 `useradd `and then set the password with `chpasswd`. The Docker file is below:
-
-Copy
-
-    
-    
-    FROM my_base_image
-    ​ARG BUILD_MY_USER
-    ARG BUILD_MY_PASSWORD
-     
-    RUN useradd "$(printenv --null BUILD_MY_USER)" && \
-      echo "$(printenv --null BUILD_MY_USER)":"$(printenv --null BUILD_MY_PASSWORD)" | chpasswd
 
 ​To prevent secrets being sent to stdout from the `printenv` command, use the
 `--null` option to remove the line feed.
@@ -590,44 +510,12 @@ to be set.
 
 Step 1: Create a simple `docker-compose.yaml` file:
 
-Copy
-
-    
-    
-    ---
-    version: "3"
-    services:
-      my_app:
-        build:
-          content: "."
-
 **Step 2:** Using the `ksm exec` command, the Docker build is created with the
 2 secrets (login and password). The flag `--inline` processes the replacement
 of secrets. For example:
 
-Copy
-
-    
-    
-    ksm exec --inline -- \
-       docker-compose build \
-         --build-arg "BUILD_MY_USER=${MY_USER}" \
-         --build-arg "BUILD_MY_PASSWORD=${MY_PASSWORD}" \
-         -t my_image .
-
 **Step 3:** In the dockerfile, we will create a linux user account using
 `useradd `and then set the password with `chpasswd`. The Docker file is below:
-
-Copy
-
-    
-    
-    FROM my_base_image
-    ​ARG BUILD_MY_USER
-    ARG BUILD_MY_PASSWORD
-     
-    RUN useradd "$(printenv --null BUILD_MY_USER)" && \
-      echo "$(printenv --null BUILD_MY_USER)":"$(printenv --null BUILD_MY_PASSWORD)" | chpasswd
 
 ​To prevent secrets being sent to stdout from the `printenv` command, use the
 `--null` option to remove the line feed.
@@ -656,6 +544,149 @@ the dockerfile. Click the Record UID to copy to your clipboard.
 
 The below dockerfile example copies the **server.xml** and **keystore** files
 from the vault into the Tomcat folder.
+
+Note that in this use case, `ksm` is no longer needed after the build, so it
+is deleted.
+
+**Step 3: Create a shell script to execute the docker build**
+
+To execute the docker build the below script will pass in the Secrets Manager
+device configuration and Record UID that contains the secret files.
+
+##
+
+Integration with Docker Compose
+
+Keeper Secrets Manager supports direct integration with Docker Compose using
+the KSM Writer Docker image.
+
+##
+
+Contribute to the Docker Image Examples
+
+If you have some great examples to contribute to this page, please ping us on
+Slack or email sm@keepersecurity.com.
+
+For a complete list of Keeper Secrets Manager features see the
+
+Keeper Secrets Manager access (See the  for more details)
+
+A Keeper  with secrets shared to it
+
+See the  for instructions on creating an Application
+
+A
+
+The
+
+See instructions on setting up the KSM CLI
+
+Secrets from the Keeper Vault can be built into a Docker container using . As
+of Docker 18.09 or later, image building supports the ability to pass secrets
+in via a mounted file system. As a simple example demonstrating this
+capability, we will be creating a user account in the destination image with a
+username and password from Keeper Secrets Manager.
+
+**Step 1:** Set Environmental Variables with Keeper notation for the secrets
+that are needed. For more notation examples .
+
+**Step 1:** Set Environmental Variables with Keeper notation for the secrets
+that are needed. For more notation examples .
+
+When the docker image is built, it will be fully configured with SSL, keystore
+file and passphrase that are managed by the Keeper Vault.
+
+Learn more about the KSM Writer Docker image .
+
+Copy
+
+    
+    
+    export MY_UID="SOAsfj_lIg0VenDr83gjDw"
+    export MY_USER="keeper://${MY_UID}/field/login"
+    export MY_PASS="keeper://${MY_UID}/field/password"
+
+Copy
+
+    
+    
+    DOCKER_BUILDKIT=1 ksm exec -- \
+        docker build \
+        --secret id=my_user,env=MY_USER \
+        --secret id=my_password,env=MY_PASS \
+       -t my_image .
+
+Copy
+
+    
+    
+    FROM my_base_image
+    
+    RUN --mount=type=secret,id=my_user,dst=/my_secrets/my_user \
+        --mount=type=secret,id=my_password,dst=/my_secrets/my_password \
+          useradd "$(cat /my_secrets/my_user)" && \
+          echo "$(cat /my_secrets/my_user)":"$(cat /my_secrets/my_password)" | chpasswd
+
+Copy
+
+    
+    
+    export MY_UID="SOAsfj_lIg0VenDr83gjDw"
+    export MY_USER="keeper://${MY_UID}/field/login"
+    export MY_PASS="keeper://${MY_UID}/field/password"
+
+Copy
+
+    
+    
+    ksm exec --inline -- \
+       docker build \
+         --build-arg "BUILD_MY_USER=${MY_USER}" \
+         --build-arg "BUILD_MY_PASSWORD=${MY_PASSWORD}" \
+         -t my_image .
+
+Copy
+
+    
+    
+    FROM my_base_image
+    ​ARG BUILD_MY_USER
+    ARG BUILD_MY_PASSWORD
+     
+    RUN useradd "$(printenv --null BUILD_MY_USER)" && \
+      echo "$(printenv --null BUILD_MY_USER)":"$(printenv --null BUILD_MY_PASSWORD)" | chpasswd
+
+Copy
+
+    
+    
+    ---
+    version: "3"
+    services:
+      my_app:
+        build:
+          content: "."
+
+Copy
+
+    
+    
+    ksm exec --inline -- \
+       docker-compose build \
+         --build-arg "BUILD_MY_USER=${MY_USER}" \
+         --build-arg "BUILD_MY_PASSWORD=${MY_PASSWORD}" \
+         -t my_image .
+
+Copy
+
+    
+    
+    FROM my_base_image
+    ​ARG BUILD_MY_USER
+    ARG BUILD_MY_PASSWORD
+     
+    RUN useradd "$(printenv --null BUILD_MY_USER)" && \
+      echo "$(printenv --null BUILD_MY_USER)":"$(printenv --null BUILD_MY_PASSWORD)" | chpasswd
 
 Copy
 
@@ -709,14 +740,6 @@ Copy
     # Expose port 8443 for SSL
     EXPOSE 8443
 
-Note that in this use case, `ksm` is no longer needed after the build, so it
-is deleted.
-
-**Step 3: Create a shell script to execute the docker build**
-
-To execute the docker build the below script will pass in the Secrets Manager
-device configuration and Record UID that contains the secret files.
-
 Copy
 
     
@@ -733,54 +756,27 @@ Copy
       --build-arg "BUILD_KSM_SERVER_UID=LdRkidFLPF7vDaogwJ7etQ" \
       -t ksm_tomcat .
 
-##
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
 
-Integration with Docker Compose
+# Docker Image
 
-Keeper Secrets Manager supports direct integration with Docker Compose using
-the KSM Writer Docker image.
+Using environmental variable substitution with containerized environments
 
-##
+[PreviousBitbucket Plugin](/en/keeperpam/secrets-
+manager/integrations/bitbucket-plugin)[NextDocker
+Runtime](/en/keeperpam/secrets-manager/integrations/docker-runtime)
 
-Contribute to the Docker Image Examples
-
-If you have some great examples to contribute to this page, please ping us on
-Slack or email sm@keepersecurity.com.
-
-For a complete list of Keeper Secrets Manager features see the
-
-Keeper Secrets Manager access (See the  for more details)
-
-A Keeper  with secrets shared to it
-
-See the  for instructions on creating an Application
-
-A
-
-The
-
-See instructions on setting up the KSM CLI
-
-Secrets from the Keeper Vault can be built into a Docker container using . As
-of Docker 18.09 or later, image building supports the ability to pass secrets
-in via a mounted file system. As a simple example demonstrating this
-capability, we will be creating a user account in the destination image with a
-username and password from Keeper Secrets Manager.
-
-**Step 1:** Set Environmental Variables with Keeper notation for the secrets
-that are needed. For more notation examples .
-
-**Step 1:** Set Environmental Variables with Keeper notation for the secrets
-that are needed. For more notation examples .
-
-Create Record with Secret File Attachments
-
-Copy the Record UID
-
-When the docker image is built, it will be fully configured with SSL, keystore
-file and passphrase that are managed by the Keeper Vault.
-
-Learn more about the KSM Writer Docker image .
+  * Docker Secrets Management
+  * Features
+  * Prerequisites
+  * About
+  * Example 1: Build an Image with Secrets using BuildKit
+  * Example 2: Build an Image with Secrets using Build Arguments
+  * Example 3: Using docker-compose to Build an Image with Secrets
+  * Example 4: Copy files from vault to Docker Image
+  * Integration with Docker Compose
+  * Contribute to the Docker Image Examples
 
 😃
 
@@ -805,15 +801,21 @@ images/build_enhancements/)
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
+[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/exec-command#notation)
+
+[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/exec-command#notation)
+
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
 
 [here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface#initialize-the-client-device)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf_vL6i3tZYNyKHhWjl%252F-Mfa1VlyrOY-z9yejZBY%252FScreen%2520Shot%25202021-07-26%2520at%252011.37.25%2520PM.png%3Falt%3Dmedia%26token%3D376a94a4-5a2e-4638-b844-f730ff7d150b&width=768&dpr=4&quality=100&sign=2e3941a0&sv=2)
+Create Record with Secret File Attachments
+
+Copy the Record UID
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -825,9 +827,7 @@ files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkENTUeNrnd4NYqSpdL%252F-MkEQ3G
 image-
 header.jpg%3Falt%3Dmedia%26token%3D7a6601b7-9799-4319-8b0e-02937fcbfae1&width=768&dpr=4&quality=100&sign=1ed78dbc&sv=2)
 
-[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/exec-command#notation)
-
-[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/exec-command#notation)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf_vL6i3tZYNyKHhWjl%252F-Mfa1VlyrOY-z9yejZBY%252FScreen%2520Shot%25202021-07-26%2520at%252011.37.25%2520PM.png%3Falt%3Dmedia%26token%3D376a94a4-5a2e-4638-b844-f730ff7d150b&width=768&dpr=4&quality=100&sign=2e3941a0&sv=2)
 

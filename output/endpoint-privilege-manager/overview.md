@@ -386,6 +386,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Endpoint Privilege Manager
@@ -408,9 +438,13 @@ PDF](/en/keeperpam/~gitbook/pdf?page=Kgyes9zzVSWKVrIRJHSt&only=yes&limit=100)
 Endpoint Privilege Manager is a Privileged Elevation and Delegation Management
 (PEDM) solution
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5vskRLK2dz5EYS203hFc%252FPEDM%2520overview.jpg%3Falt%3Dmedia%26token%3D81f80d6e-5ad7-47ba-b406-7964742df466&width=768&dpr=4&quality=100&sign=35ace43e&sv=2)
+[PreviousPreview Access](/en/keeperpam/privileged-access-
+manager/references/preview-access)[NextSetup](/en/keeperpam/endpoint-
+privilege-manager/setup)
+
+Last updated 25 days ago
+
+Was this helpful?
 
 ##
 
@@ -484,12 +518,6 @@ of Privilege Manager including:
 
   * **Policies** : Enforce least privilege access across your fleet of devices
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFdTsbc4w2qHfX1vwO2eE%252FDashboard%2520-%2520Full%2520State.png%3Falt%3Dmedia%26token%3Dda59bc50-1206-473b-a797-a83f7dbd08de&width=768&dpr=4&quality=100&sign=4a7dd333&sv=2)
-
-Keeper Privilege Manager
-
 ####
 
 Privilege Manager Within the KeeperPAM Platform
@@ -527,37 +555,12 @@ Users running the Keeper agent are provided with an interface to see the
 policies applied to their device, and monitor their approvals and elevation
 requests. Any application policies are listed in the UI.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FaLzFHCk7cAiq3K4tibvH%252FPEDM%2520Home.png%3Falt%3Dmedia%26token%3D0c7d7d89-ad1f-40ce-
-aa79-a9e3e0d8d9c6&width=768&dpr=4&quality=100&sign=fdfdbdc0&sv=2)
-
-Keeper agent UI
-
 On Windows and macOS endpoints, the user will receive prompts when elevation
 is enforced by policy. On macOS, a system extension is installed to manage
 privilege.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlGXqcGrjXzACMHYFEi9p%252FOther%2520Reason%252C%2520User%2520Entered.png%3Falt%3Dmedia%26token%3D0b1868b8-1b62-48df-9a20-257d3cb1466b&width=768&dpr=4&quality=100&sign=afc43ced&sv=2)
-
-macOS Device
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPad9XKlfyeSvuYGaeztA%252FReason%2520for%2520Request%2520Entered.png%3Falt%3Dmedia%26token%3D50346e0b-3353-449b-bd07-8c14191fc655&width=768&dpr=4&quality=100&sign=21e1fb79&sv=2)
-
-Windows Device
-
 On Linux endpoints, Keeper PAM module protects sudo elevation requests for
 applied policies.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGgoZtJ6XQwkC2Z0mo8DR%252FPush%2520Approval%2520Dialog.png%3Falt%3Dmedia%26token%3Dc1ad0da9-0edd-40ba-a0cf-0dae215a7c89&width=768&dpr=4&quality=100&sign=b1940cc3&sv=2)
-
-Linux sudo protection
 
 ###
 
@@ -565,49 +568,49 @@ About this Guide
 
 This guide on Privilege Manager is broken down into the following sections:
 
-  * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+  *   *   *   * 
 
-  * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+Keeper Privilege Manager
 
-  * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+Keeper agent UI
 
-  * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+macOS Device
 
-[PreviousPreview Access](/en/keeperpam/privileged-access-
-manager/references/preview-access)[NextSetup](/en/keeperpam/endpoint-
-privilege-manager/setup)
+Windows Device
 
-Last updated 24 days ago
+Linux sudo protection
 
-Was this helpful?
+[Setup](/en/keeperpam/endpoint-privilege-manager/setup)
 
-#### Company
+[Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+[Policies](/en/keeperpam/endpoint-privilege-manager/policies)
 
-#### Support
+[Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-
+requests)
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5vskRLK2dz5EYS203hFc%252FPEDM%2520overview.jpg%3Falt%3Dmedia%26token%3D81f80d6e-5ad7-47ba-b406-7964742df466&width=768&dpr=4&quality=100&sign=35ace43e&sv=2)
 
-#### Solutions
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFdTsbc4w2qHfX1vwO2eE%252FDashboard%2520-%2520Full%2520State.png%3Falt%3Dmedia%26token%3Dda59bc50-1206-473b-a797-a83f7dbd08de&width=768&dpr=4&quality=100&sign=4a7dd333&sv=2)
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FaLzFHCk7cAiq3K4tibvH%252FPEDM%2520Home.png%3Falt%3Dmedia%26token%3D0c7d7d89-ad1f-40ce-
+aa79-a9e3e0d8d9c6&width=768&dpr=4&quality=100&sign=fdfdbdc0&sv=2)
 
-#### Pricing
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlGXqcGrjXzACMHYFEi9p%252FOther%2520Reason%252C%2520User%2520Entered.png%3Falt%3Dmedia%26token%3D0b1868b8-1b62-48df-9a20-257d3cb1466b&width=768&dpr=4&quality=100&sign=afc43ced&sv=2)
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPad9XKlfyeSvuYGaeztA%252FReason%2520for%2520Request%2520Entered.png%3Falt%3Dmedia%26token%3D50346e0b-3353-449b-bd07-8c14191fc655&width=768&dpr=4&quality=100&sign=21e1fb79&sv=2)
 
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGgoZtJ6XQwkC2Z0mo8DR%252FPush%2520Approval%2520Dialog.png%3Falt%3Dmedia%26token%3Dc1ad0da9-0edd-40ba-a0cf-0dae215a7c89&width=768&dpr=4&quality=100&sign=b1940cc3&sv=2)
 

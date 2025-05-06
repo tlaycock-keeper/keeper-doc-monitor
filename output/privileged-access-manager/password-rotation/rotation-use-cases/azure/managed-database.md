@@ -423,15 +423,6 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=S2MC3F3di8oW4ajxAcrI&only=yes&limit=100)
 
-Last updated 3 months ago
-
-Was this helpful?
-
-In this section, you will learn how to rotate **DB User or Admin** credentials
-on the following Azure Managed Databases:
-
-  *   *   *   * 
-
   1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
   2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
   3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
@@ -445,6 +436,15 @@ Rotate Azure Managed Database credentials with Keeper
 manager/password-rotation/rotation-use-cases/azure/azure-vm-user-
 accounts)[NextAzure SQL](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/azure/managed-database/azure-sql)
+
+Last updated 3 months ago
+
+Was this helpful?
+
+In this section, you will learn how to rotate **DB User or Admin** credentials
+on the following Azure Managed Databases:
+
+  *   *   *   * 
 
 [Azure SQL](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/azure/managed-database/azure-sql)

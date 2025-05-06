@@ -925,6 +925,9 @@ commands/default-record-types)
 
 [share admins](https://docs.keeper.io/enterprise-guide/share-admin)
 
+[record-permission](/en/keeperpam/commander-cli/command-reference/sharing-
+commands#record-permission-command)
+
 [![Logo](https://www.keepersecurity.com/assets/branding/android-
 icon-192x192.png)Download Keeper Password Manager for iOS, Android, Mac, PC
 and moreKeeper® Password Manager & Digital
@@ -934,9 +937,6 @@ Vault](https://keepersecurity.com/download)
 files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Desktop
 ApplicationsEnterprise Guide](https://docs.keeper.io/enterprise-
 guide/deploying-keeper-to-end-users/desktop-application)
-
-[record-permission](/en/keeperpam/commander-cli/command-reference/sharing-
-commands#record-permission-command)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

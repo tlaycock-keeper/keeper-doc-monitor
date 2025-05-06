@@ -726,9 +726,17 @@ python#set-up)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRrRhkmhboqtzZuPC2MNe%252FScreen%2520Shot%25202022-01-11%2520at%252011.34.28%2520AM.png%3Falt%3Dmedia%26token%3Da8798656-46cd-4dfb-85a0-287ab1d9ce75&width=768&dpr=4&quality=100&sign=40059f7&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqzUUP3RgdpwwDlkkxwNa%252Fksm-
 header-
 Heroku.png%3Falt%3Dmedia%26token%3Df26aeadb-a920-4922-aa2c-6c3539dace96&width=768&dpr=4&quality=100&sign=c95917eb&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FzPZ3aDlEBhivMIKCTiqh%252FScreen%2520Shot%25202022-01-11%2520at%252011.27.52%2520AM.png%3Falt%3Dmedia%26token%3Deabe9c30-2601-4e35-98b7-b70ea824ed48&width=768&dpr=4&quality=100&sign=871df91b&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -737,14 +745,7 @@ ad2b-7f7c7fd83c20&width=768&dpr=4&quality=100&sign=982c94ba&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FusY03w1uv3JyjOk48IBy%252FScreen%2520Shot%25202022-01-11%2520at%252011.32.26%2520AM.png%3Falt%3Dmedia%26token%3Dff06b820-bfd7-4b1b-bcb1-4af8cf43001e&width=768&dpr=4&quality=100&sign=e0fa4b4e&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FzPZ3aDlEBhivMIKCTiqh%252FScreen%2520Shot%25202022-01-11%2520at%252011.27.52%2520AM.png%3Falt%3Dmedia%26token%3Deabe9c30-2601-4e35-98b7-b70ea824ed48&width=768&dpr=4&quality=100&sign=871df91b&sv=2)
-
-[Configuration documentation](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration#using-a-cli-tool)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2Qskc5RL0GZeJE7YCDOU%252FScreen%2520Shot%25202022-01-11%2520at%252011.37.46%2520AM.png%3Falt%3Dmedia%26token%3Da91221b1-a463-4518-b282-4b450c00a3ff&width=768&dpr=4&quality=100&sign=bedcdd79&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -752,11 +753,7 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FChgYjxCTN
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRrRhkmhboqtzZuPC2MNe%252FScreen%2520Shot%25202022-01-11%2520at%252011.34.28%2520AM.png%3Falt%3Dmedia%26token%3Da8798656-46cd-4dfb-85a0-287ab1d9ce75&width=768&dpr=4&quality=100&sign=40059f7&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2Qskc5RL0GZeJE7YCDOU%252FScreen%2520Shot%25202022-01-11%2520at%252011.37.46%2520AM.png%3Falt%3Dmedia%26token%3Da91221b1-a463-4518-b282-4b450c00a3ff&width=768&dpr=4&quality=100&sign=bedcdd79&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSvV9znfj4C2bu150lKU6%252FScreen%2520Shot%25202022-01-12%2520at%25203.48.11%2520PM.png%3Falt%3Dmedia%26token%3D6441a52e-8c8d-4c2d-bc56-dfcbf1b3dda4&width=768&dpr=4&quality=100&sign=be9fb55e&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -764,5 +761,8 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuQju4v9yh
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSvV9znfj4C2bu150lKU6%252FScreen%2520Shot%25202022-01-12%2520at%25203.48.11%2520PM.png%3Falt%3Dmedia%26token%3D6441a52e-8c8d-4c2d-bc56-dfcbf1b3dda4&width=768&dpr=4&quality=100&sign=be9fb55e&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FusY03w1uv3JyjOk48IBy%252FScreen%2520Shot%25202022-01-11%2520at%252011.32.26%2520AM.png%3Falt%3Dmedia%26token%3Dff06b820-bfd7-4b1b-bcb1-4af8cf43001e&width=768&dpr=4&quality=100&sign=e0fa4b4e&sv=2)
+
+[Configuration documentation](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration#using-a-cli-tool)
 

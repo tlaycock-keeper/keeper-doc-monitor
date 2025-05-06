@@ -386,6 +386,31 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Commander CLI Install
+  * Developer Instructions
+  * Making Changes
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MeR6akVJ9USNnuBGLUD&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+
+# Installation and Setup
+
+Your first steps with Keeper Commander
+
+[PreviousCommander Overview](/en/keeperpam/commander-cli/overview)[NextCLI
+Installation on Windows](/en/keeperpam/commander-cli/commander-installation-
+setup/installation-on-windows)
+
+Last updated 6 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -415,31 +440,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Commander CLI Install
-  * Developer Instructions
-  * Making Changes
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MeR6akVJ9USNnuBGLUD&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-
-# Installation and Setup
-
-Your first steps with Keeper Commander
-
-[PreviousCommander Overview](/en/keeperpam/commander-cli/overview)[NextCLI
-Installation on Windows](/en/keeperpam/commander-cli/commander-installation-
-setup/installation-on-windows)
-
-Last updated 6 months ago
-
-Was this helpful?
 
 ###
 

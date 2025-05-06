@@ -418,10 +418,26 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * SSH
+  * ssh command
+  * Examples
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=1j9mMqOpebiFGSrXCi6v&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Connection Commands](/en/keeperpam/commander-cli/command-reference/connection-commands)
+
+# SSH
+
+Using Keeper Commander with SSH connections
+
+[PreviousConnection Commands](/en/keeperpam/commander-cli/command-
+reference/connection-commands)[NextSSH Agent](/en/keeperpam/commander-
+cli/command-reference/connection-commands/ssh-agent)
 
 Last updated 3 months ago
 
@@ -470,13 +486,13 @@ Examples
 
 Make a connection
 
-See compatible records
-
 Copy
 
     
     
     ssh qTUzddtffRvsS1L8_ytO1A
+
+See compatible records
 
 Copy
 
@@ -487,22 +503,6 @@ Copy
     ---  ----------------------  -----------------  ------------------------  -----------------------------------
       1  xwwCv4We6JqYaw3qMdykYw  serverCredentials  Connection                My_Login @ 10.0.160.7:3389
       2  qTUzddtffRvsS1L8_ytO1A  sshKeys            SSH Connection            My_Connection_Login @ 10.0.160.7:22
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Connection Commands](/en/keeperpam/commander-cli/command-reference/connection-commands)
-
-# SSH
-
-Using Keeper Commander with SSH connections
-
-[PreviousConnection Commands](/en/keeperpam/commander-cli/command-
-reference/connection-commands)[NextSSH Agent](/en/keeperpam/commander-
-cli/command-reference/connection-commands/ssh-agent)
-
-  * SSH
-  * ssh command
-  * Examples
 
 [KeeperPAM platform](/en/keeperpam)
 

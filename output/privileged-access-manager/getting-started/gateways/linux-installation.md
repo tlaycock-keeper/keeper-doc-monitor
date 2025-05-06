@@ -699,6 +699,41 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLrkXCEAnk
 
 ###
 
+Network Configuration
+
+The Gateway establishes outbound-only connections to the following:
+
+Destination
+
+Port Needed
+
+More Info
+
+Keeper Cloud (keepersecurity.[com|eu|com.au|ca|us|jp)
+
+TLS Port 443
+
+Outbound access for Vault login and Keeper Secrets Manager APIs.
+
+Keeper Relay (krelay.keepersecurity.[com|eu|com.au|jp|ca|us])
+
+TCP and UDP port 3478
+
+Needed to establish secure & encrypted connections between the user's vault
+and the Gateway service.
+
+Keeper Relay (krelay.keepersecurity.[com|eu|com.au|jp|ca|us])
+
+Outbound access to TCP and UDP ports 49152 through 65535
+
+Needed to establish outbound access over the designated port ranges
+
+The Gateway preserves zero knowledge by performing all encryption and
+decryption of data locally. Keeper Secrets Manager APIs are used to
+communicate with the Keeper cloud.
+
+###
+
 Checksum Verification
 
 Keeper Gateway SHA256 hashes for the latest version are published at the below
@@ -728,40 +763,5 @@ Copy
     Get-FileHash -Algorithm SHA256 keeper-gateway_windows_x86_64.exe | Format-List
     Get-Content keeper-gateway_X.X.X_SHA256SUMS | Select-String keeper-gateway_windows_x86_64.exe
 
-###
-
-Network Configuration
-
-The Gateway establishes outbound-only connections to the following:
-
-Destination
-
-Port Needed
-
-More Info
-
-The Gateway preserves zero knowledge by performing all encryption and
-decryption of data locally. Keeper Secrets Manager APIs are used to
-communicate with the Keeper cloud.
-
 <https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
-
-Keeper Cloud (keepersecurity.[com|eu|com.au|ca|us|jp)
-
-TLS Port 443
-
-Outbound access for Vault login and Keeper Secrets Manager APIs.
-
-Keeper Relay (krelay.keepersecurity.[com|eu|com.au|jp|ca|us])
-
-TCP and UDP port 3478
-
-Needed to establish secure & encrypted connections between the user's vault
-and the Gateway service.
-
-Keeper Relay (krelay.keepersecurity.[com|eu|com.au|jp|ca|us])
-
-Outbound access to TCP and UDP ports 49152 through 65535
-
-Needed to establish outbound access over the designated port ranges
 

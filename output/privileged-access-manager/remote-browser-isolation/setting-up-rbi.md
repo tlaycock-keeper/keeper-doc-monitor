@@ -386,6 +386,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview 
@@ -417,39 +447,9 @@ manager/remote-browser-isolation)[NextURL Patterns & Resource URL
 Patterns](/en/keeperpam/privileged-access-manager/remote-browser-
 isolation/setting-up-rbi/url-patterns-and-resource-url-patterns)
 
-Last updated 27 days ago
+Last updated 28 days ago
 
 Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
 
 ##
 
@@ -483,32 +483,14 @@ Definition
 
 Can configure remote browsing settings
 
-Copy
-
-    
-    
-    ALLOW_CONFIGURE_RBI
-
 Allow users to configure Remote Browser and session recording settings on PAM
 Remote Browsing and PAM Configuration Records Types
 
 Can launch remote browsing
 
-Copy
-
-    
-    
-    ALLOW_LAUNCH_RBI
-
 Allow users to launch remote browsing on PAM Remote Browsing Record Types
 
 Can view RBI session recordings
-
-Copy
-
-    
-    
-    ALLOW_VIEW_RBI_RECORDINGS
 
 Allow users to view RBI Session Recordings.
 
@@ -539,12 +521,6 @@ browsing settings" policy should be enabled for the user.
 
 Session Recordings
 
-Launched RBI sessions can also be recorded. These recordings are available on
-the PAM Browser record types and can be played back on your Vault. For more
-details on session recording and playback, visit this
-[page](/en/keeperpam/privileged-access-manager/session-recording-and-
-playback).
-
 ###
 
 Installing the Keeper Gateway
@@ -554,29 +530,13 @@ customer's network to enabled zero-trust access to target infrastructure.
 Typically this service is installed on a Linux or Docker environment in each
 of the networks that requires access.
 
-For more details on installing and setting up your gateway, visit this
-[page](/en/keeperpam/privileged-access-manager/getting-started/gateways).
-
 ###
 
 PAM Configuration
 
-The **PAM Configuration** contains essential information of your target
-infrastructure, settings and [Keeper Gateway](/en/keeperpam/privileged-access-
-manager/getting-started/gateways). Setting up a PAM Configuration for your
-infrastructure is **required**. For more information on creating and
-configuring the PAM Configuration, visit this [page](/en/keeperpam/privileged-
-access-manager/getting-started/pam-configuration).
-
 ###
 
 PAM Remote Browser
-
-When launching an RBI session, the Web and Desktop Vault Client will render a
-chromium browser window with a established connection to the specified URL
-defined on the PAM Browser record. For more information on how to setting up
-the PAM Browser Record, visit this [page](/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-remote-browser).
 
 ##
 
@@ -670,6 +630,22 @@ Session Recordings - RBI
 The above enforcement policies can also be enabled on the  using the
 `enterprise-role` command:
 
+Launched RBI sessions can also be recorded. These recordings are available on
+the PAM Browser record types and can be played back on your Vault. For more
+details on session recording and playback, visit this .
+
+For more details on installing and setting up your gateway, visit this .
+
+The **PAM Configuration** contains essential information of your target
+infrastructure, settings and . Setting up a PAM Configuration for your
+infrastructure is **required**. For more information on creating and
+configuring the PAM Configuration, visit this .
+
+When launching an RBI session, the Web and Desktop Vault Client will render a
+chromium browser window with a established connection to the specified URL
+defined on the PAM Browser record. For more information on how to setting up
+the PAM Browser Record, visit this .
+
 By default, all URLs are permitted. Detailed Information
 
 By default, no restrictions are imposed on resources loaded by pages. Detailed
@@ -686,6 +662,37 @@ This section will contain the autofill rules, which are a JSON/YAML array of
 objects, where each object specifies contains an autofill rule. Detailed
 Information
 
+Copy
+
+    
+    
+    ALLOW_CONFIGURE_RBI
+
+Copy
+
+    
+    
+    ALLOW_LAUNCH_RBI
+
+Copy
+
+    
+    
+    ALLOW_VIEW_RBI_RECORDINGS
+
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+
+[page](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
+started/gateways)
+
+[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration)
+
+[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-remote-browser)
+
 [here](/en/keeperpam/privileged-access-manager/remote-browser-
 isolation/setting-up-rbi/browser-autofill)
 
@@ -694,10 +701,6 @@ isolation/setting-up-rbi/browser-autofill)
 
 [Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
 manager-commands#overview)
-
-For this protocol, graphical data, including timing information, is recorded.
-For more details on the recordings and how to access them, see the Session
-Recording & Playback docs.
 
 [here](/en/keeperpam/privileged-access-manager/remote-browser-
 isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
@@ -734,4 +737,10 @@ aa26-50953a099003&width=768&dpr=4&quality=100&sign=efc563b0&sv=2)
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FpcDZcca7LVVyiPGxwY3V%252FScreenshot%25202025-01-21%2520at%252012.14.54%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D30d5539c-0f3c-4717-8468-a0c825604f23&width=768&dpr=4&quality=100&sign=5932094e&sv=2)
+
+For this protocol, graphical data, including timing information, is recorded.
+For more details on the recordings and how to access them, see the  docs.
+
+[Session Recording & Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
 

@@ -447,7 +447,7 @@ reference/import-and-export-commands/lastpass-import)[NextKeepass
 Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
 commands/keepass-import)
 
-Last updated 27 days ago
+Last updated 28 days ago
 
 Was this helpful?
 

@@ -443,7 +443,7 @@ manager/password-rotation/rotation-use-cases/aws/directory-user)[NextIAM User
 Access Key](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/aws/iam-user-access-key)
 
-Last updated 27 days ago
+Last updated 28 days ago
 
 Was this helpful?
 
@@ -688,14 +688,6 @@ in order to prevent system lockout. The second public key added to the file
 contains a comment that serves as an identifier for future rotations. For
 example:
 
-Copy
-
-    
-    
-    [ec2-user@host .ssh]$ cat authorized_keys
-    ssh-rsa AAAAB3NzaC1...11xZrfOxYXG6RV84mCZ3uldesEyV/ghLxAb7Fcz awsdemo
-    ssh-rsa AAAAB3NzaC...un+frl9Q== keeper-security-ec2user
-
 By default, Keeper will **not** remove other keys from the
 `.ssh/authorized_keys` file since some providers will place in their own keys
 in order to control the virtual machine (ie Google Cloud Provider).
@@ -733,6 +725,14 @@ exists. If the value is FALSE, the private key will not be rotated.
 
 For Linux user rotations, password-encrypted PEM files are not currently
 supported.
+
+Copy
+
+    
+    
+    [ec2-user@host .ssh]$ cat authorized_keys
+    ssh-rsa AAAAB3NzaC1...11xZrfOxYXG6RV84mCZ3uldesEyV/ghLxAb7Fcz awsdemo
+    ssh-rsa AAAAB3NzaC...un+frl9Q== keeper-security-ec2user
 
 PAM Machine record
 

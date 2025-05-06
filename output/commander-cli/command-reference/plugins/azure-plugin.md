@@ -418,30 +418,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Prerequisites
-  * Prepare Records for Rotation
-  * Create a Record for Rotation
-  * Set the Azure Login Name
-  * Add Required Fields
-  * Rotate
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-Mf3XiO4XWjxAhTqgfxD&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
-
-# Azure Plugin
-
-Rotate Azure AD account passwords
-
-[PreviousAWS Plugin](/en/keeperpam/commander-cli/command-
-reference/plugins/aws-plugin)[NextMicrosoft SQL Server
-Plugin](/en/keeperpam/commander-cli/command-reference/plugins/microsoft-sql-
-server-plugin)
 
 Last updated 3 months ago
 
@@ -462,12 +442,6 @@ Prerequisites
 ####
 
 Install
-
-Copy
-
-    
-    
-    pip install msal
 
 ####
 
@@ -544,7 +518,45 @@ Add Required Fields
 The following fields are required for Azure AD rotation. Create each field
 with the label indicated and supply the required information.
 
+For an easier time creating new Azure rotation records, create a custom record
+type with theses text type fields defined
+
+####
+
+Additional Rotation Settings
+
+The following values can customize rotation parameters. Add these options to a
+record as text fields and set the label to correspond to the parameter as
+shown in the table.
+
+##
+
+Rotate
+
+To rotate Azure passwords, use the `rotate` command in Commander. Pass the
+command a record title or UID (or use `--match` with a regular expression to
+rotate several records at once)
+
+The plugin can be supplied to the command as shown here, or added to a record
+field (see options above). Adding the plugin type to the record makes it
+possible to rotate several records at once with different plugins.
+
+####
+
+Output
+
+After rotation is completed, the new password will be stored in the `Password`
+field of the record
+
+See the section for more information on legacy vs typed records
+
 Label
+
+Description
+
+Label
+
+Value
 
 Description
 
@@ -568,60 +580,37 @@ cmdr:azure_cloud
 Optional. Azure Cloud. There are 4 physical Azure cloud locations 1\.
 `Global`. Default location. Omit this property. 2\. `China 3. German 4. USGov`
 
-For an easier time creating new Azure rotation records, create a custom record
-type with theses text type fields defined
-
-####
-
-Additional Rotation Settings
-
-The following values can customize rotation parameters. Add these options to a
-record as text fields and set the label to correspond to the parameter as
-shown in the table.
-
-Label
-
-Value
-
-Description
-
-cmdr:plugin
-
-azureadpwd
-
-(Optional) Tells Commander to use Azure AD Key rotation. This should be either
-set to the record, or supplied to the rotation command
-
-cmdr:rules
-
-##
-
-Rotate
-
-To rotate Azure passwords, use the `rotate` command in Commander. Pass the
-command a record title or UID (or use `--match` with a regular expression to
-rotate several records at once)
-
 Copy
 
     
     
     rotate "My Azure Credentials" --plugin azureadpwd
 
-The plugin can be supplied to the command as shown here, or added to a record
-field (see options above). Adding the plugin type to the record makes it
-possible to rotate several records at once with different plugins.
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
 
-####
+# Azure Plugin
 
-Output
+Rotate Azure AD account passwords
 
-After rotation is completed, the new password will be stored in the `Password`
-field of the record
+[PreviousAWS Plugin](/en/keeperpam/commander-cli/command-
+reference/plugins/aws-plugin)[NextMicrosoft SQL Server
+Plugin](/en/keeperpam/commander-cli/command-reference/plugins/microsoft-sql-
+server-plugin)
 
-See the section for more information on legacy vs typed records
+  * Prerequisites
+  * Prepare Records for Rotation
+  * Create a Record for Rotation
+  * Set the Azure Login Name
+  * Add Required Fields
+  * Rotate
 
-(Optional)
+Copy
+
+    
+    
+    pip install msal
 
 [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
 rotation)
@@ -632,6 +621,17 @@ commands)
 [Microsoft Authentication Library (MSAL) for
 Python](https://github.com/AzureAD/microsoft-authentication-library-for-
 python)
+
+cmdr:plugin
+
+azureadpwd
+
+(Optional) Tells Commander to use Azure AD Key rotation. This should be either
+set to the record, or supplied to the rotation command
+
+cmdr:rules
+
+(Optional)
 
 [password complexity rules](https://github.com/Keeper-
 Security/Commander/tree/master/keepercommander/plugins/password_rules.md)

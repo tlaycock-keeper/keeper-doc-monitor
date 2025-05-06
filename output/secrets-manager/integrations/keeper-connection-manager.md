@@ -494,11 +494,11 @@ An initialized Keeper
 [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-
 manager-configuration)
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 [![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-x-
 prod.appspot.com/o/spaces%2Fb7weUpu7VBcMnESSH8vG%2Ficon%2FAxlnehp2PPSRzr72ZUVn%2FKCM-

@@ -1816,9 +1816,6 @@ databaseCredentials", "fields": [{"type": "text", "value": ["SomeText"],
 `custom` \- custom fields and values can be added to records. See  for more
 information on adding custom fields
 
-[add documentation](/en/keeperpam/commander-cli/command-reference/record-
-commands#add-command-new-record-type)
-
 [standard record types](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#standard-record-types)
 
@@ -1827,4 +1824,7 @@ reference/record-commands/record-type-commands#record-type-command)
 
 [commands documentation](/en/keeperpam/commander-cli/command-reference/record-
 commands/record-type-commands#commands)
+
+[add documentation](/en/keeperpam/commander-cli/command-reference/record-
+commands#add-command-new-record-type)
 

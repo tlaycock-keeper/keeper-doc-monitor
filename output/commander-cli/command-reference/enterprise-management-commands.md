@@ -1580,17 +1580,6 @@ desired email template per node.
 First, I define the custom email templates for both of my branches: `Chicago`
 and `Tokyo`
 
-[865BemailChicago.txt](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FYmVg7TjewlDNMViY0cjf%2FemailChicago.txt?alt=media&token=0afc8b59-f4eb-4ea9-b37d-69ac874a6e6e)
-
-Email Template File for Chicago
-
-[1KBemailTokyo.txt](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FpbyNGukCIzDtZki3HGvF%2FemailTokyo.txt?alt=media&token=248288c2-6896-4e66-8ac9-a62046a95dee)
-
-Email Template File for Tokyo
-
 Next, I set the appropriate email template for each node:
 
 Copy
@@ -2410,10 +2399,6 @@ below.
 Custom Emails can also be formatted using markdown syntax, for more
 information please refer to this .
 
-Invitation Email for Chicago Branch
-
-Invitation Email for Tokyo Branch
-
 To invite new users to an enterprise see the
 
 An Automator is a program running at a customer site that can perform some
@@ -2441,20 +2426,6 @@ management-commands#custom-emails)
 
 [enterprise-user command](/en/keeperpam/commander-cli/command-
 reference/enterprise-management-commands#enterprise-user-command)
-
-![Invitation email received by users in the Chicago
-Branch](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FcGqbto7AdrZMnrm7G4vd%252FchicagoEmail.png%3Falt%3Dmedia%26token%3Df4a4eeb0-2d47-4743-9b95-93a7808c9f1a&width=768&dpr=4&quality=100&sign=8f20fb25&sv=2)
-
-![Invitation email received by users in the Tokyo
-Branch](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDIwQfZfBuxGmia8dctBN%252FtokyoEmail.png%3Falt%3Dmedia%26token%3Dc05c82a8-22e2-4561-ac66-632fa1e9ea29&width=768&dpr=4&quality=100&sign=ecaf6e90&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FypuLYiCDVq8kq6326YrV%252Fimage.png%3Falt%3Dmedia%26token%3D71273e08-c146-464b-be53-bdea3df18a2b&width=768&dpr=4&quality=100&sign=ec90dd26&sv=2)
 
 [`enterprise-info`](/en/keeperpam/commander-cli/command-reference/enterprise-
 management-commands#enterprise-info-command)
@@ -2507,4 +2478,33 @@ management-commands/scim-push-configuration#google-workspace)
 
 [Active Directory](/en/keeperpam/commander-cli/command-reference/enterprise-
 management-commands/scim-push-configuration#active-directory-configuration)
+
+[865BemailChicago.txt](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
+x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FYmVg7TjewlDNMViY0cjf%2FemailChicago.txt?alt=media&token=0afc8b59-f4eb-4ea9-b37d-69ac874a6e6e)
+
+Email Template File for Chicago
+
+[1KBemailTokyo.txt](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FpbyNGukCIzDtZki3HGvF%2FemailTokyo.txt?alt=media&token=248288c2-6896-4e66-8ac9-a62046a95dee)
+
+Email Template File for Tokyo
+
+Invitation Email for Chicago Branch
+
+Invitation Email for Tokyo Branch
+
+![Invitation email received by users in the Chicago
+Branch](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FcGqbto7AdrZMnrm7G4vd%252FchicagoEmail.png%3Falt%3Dmedia%26token%3Df4a4eeb0-2d47-4743-9b95-93a7808c9f1a&width=768&dpr=4&quality=100&sign=8f20fb25&sv=2)
+
+![Invitation email received by users in the Tokyo
+Branch](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDIwQfZfBuxGmia8dctBN%252FtokyoEmail.png%3Falt%3Dmedia%26token%3Dc05c82a8-22e2-4561-ac66-632fa1e9ea29&width=768&dpr=4&quality=100&sign=ecaf6e90&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FypuLYiCDVq8kq6326YrV%252Fimage.png%3Falt%3Dmedia%26token%3D71273e08-c146-464b-be53-bdea3df18a2b&width=768&dpr=4&quality=100&sign=ec90dd26&sv=2)
 

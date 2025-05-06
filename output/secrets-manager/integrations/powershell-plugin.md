@@ -447,7 +447,7 @@ Keeper Secrets Manager PowerShell Plugin
 manager/integrations/oracle-key-vault)[NextServiceNow](/en/keeperpam/secrets-
 manager/integrations/servicenow)
 
-Last updated 5 months ago
+Last updated 6 months ago
 
 Was this helpful?
 
@@ -852,14 +852,14 @@ manager/tree/master/sdk/dotNet/SecretManagement.Keeper)
 
 [Keeper Dot Notation](/en/keeperpam/secrets-manager/about/keeper-notation)
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mkx-
+lxHNSwOix9K5_-J%252F-Mkx9u3Z-bE-LQokynFC%252Fpowershell-plugin-
+header.jpg%3Falt%3Dmedia%26token%3Dff821ba5-92f0-43b6-8768-198012a8450d&width=768&dpr=4&quality=100&sign=21639efc&sv=2)
+
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mkx-
-lxHNSwOix9K5_-J%252F-Mkx9u3Z-bE-LQokynFC%252Fpowershell-plugin-
-header.jpg%3Falt%3Dmedia%26token%3Dff821ba5-92f0-43b6-8768-198012a8450d&width=768&dpr=4&quality=100&sign=21639efc&sv=2)
 

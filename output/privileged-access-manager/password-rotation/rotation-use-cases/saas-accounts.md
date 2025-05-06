@@ -418,27 +418,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Rotating Okta User Accounts
-  * Rotating Snowflake User Accounts
-  * Rotating REST API Accounts
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=JoNKLrllkK3VE7Y3ogdb&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-
-# SaaS Accounts
-
-Rotation of passwords for SaaS accounts or REST API endpoints
-
-[PreviousNative Oracle](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/database/oracle)[NextOkta
-User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/saas-accounts/okta-user)
 
 Last updated 4 months ago
 
@@ -455,6 +438,23 @@ Rotating Snowflake User Accounts
 ###
 
 Rotating REST API Accounts
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+
+# SaaS Accounts
+
+Rotation of passwords for SaaS accounts or REST API endpoints
+
+[PreviousNative Oracle](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/database/oracle)[NextOkta
+User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/saas-accounts/okta-user)
+
+  * Rotating Okta User Accounts
+  * Rotating Snowflake User Accounts
+  * Rotating REST API Accounts
 
 [Okta User](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/saas-accounts/okta-user)

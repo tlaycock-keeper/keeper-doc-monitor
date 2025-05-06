@@ -936,9 +936,11 @@ Below are some examples of PAM User records.
 
   * Azure AD User
 
-PAM User record editing
-
 For advanced scheduling, see the .
+
+cron spec
+
+PAM User record editing
 
 Password Rotation Settings
 
@@ -961,8 +963,6 @@ AWS IAM User
 Database user
 
 Azure AD User
-
-cron spec
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

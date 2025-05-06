@@ -418,33 +418,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Prerequisites
-  * 1\. Set up a PAM Database Record
-  * 2\. Set up a PAM Configuration
-  * 3\. Set up one or more PAM User records
-  * 4\. Configure Rotation on the PAM User records
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=ynmCatJDHHUA5hHUTUHL&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
-  5. [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
-
-# Native MS SQL Server
-
-Rotating Local Network Microsoft SQL Server database accounts with Keeper
-Rotation
-
-[PreviousNative MongoDB](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/database/mongodb)[NextNative
-Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/local-network/database/oracle)
 
 Last updated 2 months ago
 
@@ -478,40 +455,6 @@ change the credentials of other accounts.
 The following table lists all the **required** fields that needs to be filled
 on the PAM Database record with your information:
 
-Field
-
-Description
-
-**Title**
-
-Keeper record title Ex: `dbadmin`
-
-**Hostname or IP Address**
-
-Server address - _doesn't need to be publicly_ routable
-
-**Port**
-
-**Use SSL**
-
-Check to perform SSL verification before connecting, if your database has SSL
-configured
-
-**Administrative Credentials**
-
-Linked PAM User record that contains the username and password of the Admin
-account which will perform the rotation.
-
-**Connect Database**
-
-Optional database that will be used when connecting to the database server.
-For example, MS SQL server requires a database and so this will default to
-`master`.
-
-**Database Type**
-
-`mssql`
-
 ##
 
 2\. Set up a PAM Configuration
@@ -524,29 +467,6 @@ and select "Secrets Manager", then select the "PAM Configurations" tab, and
 click on "New Configuration". The following table lists all the required****
 fields on the **PAM Configuration** Record:
 
-Field
-
-Description
-
-**Title**
-
-Configuration name, example: `MSSQL LAN Configuration`
-
-**Environment**
-
-Select: `Local Network`
-
-**Gateway**
-
-Select the Gateway that is configured on the Keeper Secrets Manager
-application and has network access to your MS SQL Server database
-
-**Application Folder**
-
-Select the Shared folder where the PAM Configuration will be stored. We
-recommend placing this in a shared folder with the PAM User records, not the
-database resources.
-
 ##
 
 3\. Set up one or more PAM User records
@@ -558,32 +478,6 @@ application created in the prerequisites.
 
 The following table lists all the required**** fields on the **PAM User**
 record:
-
-Field
-
-Description
-
-**Record Type**
-
-PAM User
-
-**Title**
-
-Keeper record title
-
-**Login**
-
-Case sensitive username of the db account being rotated. Example: `msmith`
-
-**Password**
-
-Account password is optional, rotation will set one if blank
-
-**Connect Database**
-
-Optional database that will be used when connecting to the database server.
-For example, MS SQL server requires a database and so this will default to
-`master`.
 
 ##
 
@@ -614,7 +508,113 @@ to your MySQL database
 
 If the Gateway is installed on a Linux or macOS server, install the
 
-For default ports, see  Ex: `mssql=1433`
+Field
+
+Description
+
+Field
+
+Description
+
+Field
+
+Description
+
+**Title**
+
+Keeper record title Ex: `dbadmin`
+
+**Hostname or IP Address**
+
+Server address - _doesn't need to be publicly_ routable
+
+**Port**
+
+For default ports, see port mapping Ex: `mssql=1433`
+
+**Use SSL**
+
+Check to perform SSL verification before connecting, if your database has SSL
+configured
+
+**Administrative Credentials**
+
+Linked PAM User record that contains the username and password of the Admin
+account which will perform the rotation.
+
+**Connect Database**
+
+Optional database that will be used when connecting to the database server.
+For example, MS SQL server requires a database and so this will default to
+`master`.
+
+**Database Type**
+
+`mssql`
+
+**Title**
+
+Configuration name, example: `MSSQL LAN Configuration`
+
+**Environment**
+
+Select: `Local Network`
+
+**Gateway**
+
+Select the Gateway that is configured on the Keeper Secrets Manager
+application and has network access to your MS SQL Server database
+
+**Application Folder**
+
+Select the Shared folder where the PAM Configuration will be stored. We
+recommend placing this in a shared folder with the PAM User records, not the
+database resources.
+
+**Record Type**
+
+PAM User
+
+**Title**
+
+Keeper record title
+
+**Login**
+
+Case sensitive username of the db account being rotated. Example: `msmith`
+
+**Password**
+
+Account password is optional, rotation will set one if blank
+
+**Connect Database**
+
+Optional database that will be used when connecting to the database server.
+For example, MS SQL server requires a database and so this will default to
+`master`.
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
+  5. [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
+
+# Native MS SQL Server
+
+Rotating Local Network Microsoft SQL Server database accounts with Keeper
+Rotation
+
+[PreviousNative MongoDB](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/database/mongodb)[NextNative
+Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/local-network/database/oracle)
+
+  * Overview
+  * Prerequisites
+  * 1\. Set up a PAM Database Record
+  * 2\. Set up a PAM Configuration
+  * 3\. Set up one or more PAM User records
+  * 4\. Configure Rotation on the PAM User records
 
 [application](/en/keeperpam/privileged-access-manager/getting-
 started/applications)
@@ -624,16 +624,14 @@ started/applications)
 [Microsoft ODBC driver](https://learn.microsoft.com/en-
 us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver16)
 
-port mapping
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
+
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
 
 [page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
 cases/local-network#rotation-on-the-local-network)
-
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
-
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

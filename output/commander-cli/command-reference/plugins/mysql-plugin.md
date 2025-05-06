@@ -418,31 +418,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Prerequisites
-  * Prepare Records for Rotation
-  * Create a record to store the MySQL username and password
-  * Optional Custom Fields
-  * Rotate Passwords
-  * Get Record UID
-  * Perform Rotation
-  * Integration with the Keeper Commander's connect command
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-Mf3eI2HaSBBl3KMDQHu&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
-
-# MySQL Plugin
-
-Rotate and Connect to MySQL databases with Keeper Commander
-
-[PreviousMicrosoft SQL Server Plugin](/en/keeperpam/commander-cli/command-
-reference/plugins/microsoft-sql-server-plugin)[NextOracle
-Plugin](/en/keeperpam/commander-cli/command-reference/plugins/oracle-plugin)
 
 Last updated 3 months ago
 
@@ -462,12 +441,6 @@ Prerequisites
 
 Install PyMySQL
 
-Copy
-
-    
-    
-    pip3 install -Iv PyMySQL==0.10.1
-
 The MySQL Commander Plugin requires the PyMySQL plugin version 0.10.1 and does
 not support more recent versions.
 
@@ -482,8 +455,6 @@ Create a record to store the MySQL username and password
 Create a record using either the Keeper Vault UI, or Keeper Commander.
 
 Vault UICommander
-
-Creating a record in the Keeper Vault
 
 Commander rotation supports all record types. A "Login" field is required on
 the record.
@@ -502,24 +473,79 @@ number 3306, or with a hostname that starts with "mysql//"
 
 Set the login and password values to the current database user values
 
-Copy
-
-    
-    
-    add type="databaseCredentials" title="MySQL Example" f.host.hostName="127.0.0.1" f.host.port="3306" f.login
-    ="DBAdmin Smith" f.password="XXX"
-
 replace 'XXX' with the current database password for this user
 
 ###
 
 Optional Custom Fields
 
+Vault UICommander
+
+For Commander versions greater than 4.88
+
+For Commander versions 4.88 and before
+
+##
+
+Rotate Passwords
+
+###
+
+Get Record UID
+
+Vault UICommander
+
+Find the UID in the record information popup
+
+Use the search command to find the UID for your record. Replace "MySQL
+Example" with the name of your record.
+
+###
+
+Perform Rotation
+
+To rotate MySQL passwords, use the `rotate` command in Commander. Pass the
+command a record title or UID (or use `--match` with a regular expression to
+rotate several records at once)
+
+The plugin can be supplied to the command as shown here added to a record
+field, or automatically assigned based on the port number or based on the host
+starting with "mysql://" (see options above). Adding the plugin type to the
+record makes it possible to rotate several records at once with different
+plugins.
+
+####
+
+Output
+
+After rotation is completed, the new password will be stored in the `Password`
+field of the record
+
+##
+
+Integration with the Keeper Commander's `connect` command
+
+`xxx` refers to the 'friendly name' which can be referenced when connecting on
+the command line
+
+Here's a screenshot of the Keeper Vault record for this use case:
+
 Label
 
 Value
 
 Comment
+
+for more information about the edit command, see the
+
+For more information on the `connect` command, see the
+
+Copy
+
+    
+    
+    add type="databaseCredentials" title="MySQL Example" f.host.hostName="127.0.0.1" f.host.port="3306" f.login
+    ="DBAdmin Smith" f.password="XXX"
 
 cmdr:plugin
 
@@ -550,35 +576,17 @@ cmdr:user_host
 
 User host. '%' assumed if omitted
 
-Vault UICommander
-
-For Commander versions greater than 4.88
-
 Copy
 
     
     
      edit -r "MySQL Example" --custom '{"cmdr:plugin":"mysql", "cmdr:host":"SQL"}'
 
-For Commander versions 4.88 and before
-
 Copy
 
     
     
     edit "MySQL Example" --custom '{"cmdr:plugin":"mysql", "cmdr:host":"SQL"}'
-
-##
-
-Rotate Passwords
-
-###
-
-Get Record UID
-
-Vault UICommander
-
-Find the UID in the record information popup
 
 Copy
 
@@ -597,39 +605,11 @@ Copy
                     text: ['mysql']
                     text: ['127.0.0.1']
 
-Use the search command to find the UID for your record. Replace "MySQL
-Example" with the name of your record.
-
-###
-
-Perform Rotation
-
-To rotate MySQL passwords, use the `rotate` command in Commander. Pass the
-command a record title or UID (or use `--match` with a regular expression to
-rotate several records at once)
-
 Copy
 
     
     
     rotate "MySQL Example" --plugin mssql
-
-The plugin can be supplied to the command as shown here added to a record
-field, or automatically assigned based on the port number or based on the host
-starting with "mysql://" (see options above). Adding the plugin type to the
-record makes it possible to rotate several records at once with different
-plugins.
-
-####
-
-Output
-
-After rotation is completed, the new password will be stored in the `Password`
-field of the record
-
-##
-
-Integration with the Keeper Commander's `connect` command
 
 Custom Field Name
 
@@ -643,28 +623,57 @@ connect:xxx
 
 mysql -u${login} -h${cmdr:host}
 
-`xxx` refers to the 'friendly name' which can be referenced when connecting on
-the command line
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
 
-Here's a screenshot of the Keeper Vault record for this use case:
+# MySQL Plugin
 
-Commander will use the login and password to login to the MySQL account
+Rotate and Connect to MySQL databases with Keeper Commander
 
-Adding Custom Fields in the Vault UI
+[PreviousMicrosoft SQL Server Plugin](/en/keeperpam/commander-cli/command-
+reference/plugins/microsoft-sql-server-plugin)[NextOracle
+Plugin](/en/keeperpam/commander-cli/command-reference/plugins/oracle-plugin)
 
-for more information about the edit command, see the
+  * Prerequisites
+  * Prepare Records for Rotation
+  * Create a record to store the MySQL username and password
+  * Optional Custom Fields
+  * Rotate Passwords
+  * Get Record UID
+  * Perform Rotation
+  * Integration with the Keeper Commander's connect command
 
-Click the Record UID to copy it to the clipboard
+Copy
 
-A Keeper Record setup for use with Commander's 'connect' command
-
-For more information on the `connect` command, see the
+    
+    
+    pip3 install -Iv PyMySQL==0.10.1
 
 [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
 rotation)
 
 [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
 commands)
+
+A Keeper Record setup for use with Commander's 'connect' command
+
+[command documentation](/en/keeperpam/commander-cli/command-reference/record-
+commands#edit-command-record-types)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fraw.githubusercontent.com%2FKeeper-
+Security%2FCommander%2Fmaster%2Fkeepercommander%2Fimages%2Fconnect_mysql_screenshot.png&width=768&dpr=4&quality=100&sign=c97e338d&sv=2)
+
+[documentation](/en/keeperpam/commander-cli/command-
+reference/plugins/password-rotation#connect-command)
+
+Creating a record in the Keeper Vault
+
+Commander will use the login and password to login to the MySQL account
+
+Adding Custom Fields in the Vault UI
+
+Click the Record UID to copy it to the clipboard
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -678,20 +687,11 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FxndkXzyAk
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4TNMCZKhejp3vlE8tBCN%252Fimage.png%3Falt%3Dmedia%26token%3D4cfaa6bd-a624-4e25-aea3-38d59984e901&width=768&dpr=4&quality=100&sign=c058d501&sv=2)
 
-[documentation](/en/keeperpam/commander-cli/command-
-reference/plugins/password-rotation#connect-command)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MiNPEavIrI4-C-d6yeX%252F-MiNSHLjGNieJbKyeNnB%252Fimage.png%3Falt%3Dmedia%26token%3D4cb9461d-4b81-45d0-b93a-c541187d592f&width=768&dpr=4&quality=100&sign=698ed78f&sv=2)
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MiNaHUls8b8zepgHMnb%252F-MiNgHHcXnjXoz4P1LO9%252Fimage.png%3Falt%3Dmedia%26token%3Dc7bac4e1-0eef-4e3e-9d29-6a74fa18c8d4&width=768&dpr=4&quality=100&sign=47beb160&sv=2)
 
-[command documentation](/en/keeperpam/commander-cli/command-reference/record-
-commands#edit-command-record-types)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fraw.githubusercontent.com%2FKeeper-
-Security%2FCommander%2Fmaster%2Fkeepercommander%2Fimages%2Fconnect_mysql_screenshot.png&width=768&dpr=4&quality=100&sign=c97e338d&sv=2)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MiNPEavIrI4-C-d6yeX%252F-MiNSHLjGNieJbKyeNnB%252Fimage.png%3Falt%3Dmedia%26token%3D4cb9461d-4b81-45d0-b93a-c541187d592f&width=768&dpr=4&quality=100&sign=698ed78f&sv=2)
 

@@ -386,6 +386,32 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Uninstallation - Python (pip3) Package
+  * Uninstallation - Windows Binary (.exe)
+  * Uninstallation - Mac Binary (.pkg)
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=EVOWK06gBXAelE9ne5RA&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+
+# Uninstallation
+
+Instructions on uninstalling Keeper Commander
+
+[PreviousAutomating with AWS Lambda](/en/keeperpam/commander-cli/commander-
+installation-setup/using-commander-with-aws-lambda)[NextCommand
+Reference](/en/keeperpam/commander-cli/command-reference)
+
+Last updated 9 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -416,17 +442,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=EVOWK06gBXAelE9ne5RA&only=yes&limit=100)
-
-Last updated 9 months ago
-
-Was this helpful?
-
 ##
 
 Uninstallation - Python (pip3) Package
@@ -434,7 +449,26 @@ Uninstallation - Python (pip3) Package
 If you installed Keeper Commander with , you can uninstall Keeper Commander by
 invoking the following command:
 
+Copy
+
+    
+    
+    pip3 uninstall keepercommander
+
 You will be prompted to confirm uninstallation:
+
+Copy
+
+    
+    
+    $ pip uninstall keepercommander
+    Found existing installation: keepercommander 16.9.8
+    Uninstalling keepercommander-16.9.8:
+      Would remove:
+        /Library/Frameworks/Python.framework/Versions/3.11/bin/keeper
+        /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/keepercommander-16.9.8.dist-info/*
+        /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/keepercommander/*
+    Proceed (Y/n)? 
 
 ##
 
@@ -466,43 +500,9 @@ For alternative ways on uninstalling program on Windows, refer to this .
 If you installed Keeper Commander using the Mac , follow the following steps
 to uninstall:
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
-
-# Uninstallation
-
-Instructions on uninstalling Keeper Commander
-
-[PreviousAutomating with AWS Lambda](/en/keeperpam/commander-cli/commander-
-installation-setup/using-commander-with-aws-lambda)[NextCommand
-Reference](/en/keeperpam/commander-cli/command-reference)
-
-  * Uninstallation - Python (pip3) Package
-  * Uninstallation - Windows Binary (.exe)
-  * Uninstallation - Mac Binary (.pkg)
-
 [page](https://support.microsoft.com/en-us/windows/uninstall-or-remove-apps-
 and-programs-in-
 windows-4b55f974-2cc6-2d2b-d092-5905080eaf98#ID0EBD=Windows_10)
-
-Copy
-
-    
-    
-    pip3 uninstall keepercommander
-
-Copy
-
-    
-    
-    $ pip uninstall keepercommander
-    Found existing installation: keepercommander 16.9.8
-    Uninstalling keepercommander-16.9.8:
-      Would remove:
-        /Library/Frameworks/Python.framework/Versions/3.11/bin/keeper
-        /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/keepercommander-16.9.8.dist-info/*
-        /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/keepercommander/*
-    Proceed (Y/n)? 
 
 [binary](/en/keeperpam/commander-cli/commander-installation-
 setup/installation-on-mac#binary-installation-recommended)

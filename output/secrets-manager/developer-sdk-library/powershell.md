@@ -434,7 +434,7 @@ PowerShell docs for Keeper Secrets Manager
 library/golang-sdk/record-field-classes)[NextVault
 SDKs](/en/keeperpam/secrets-manager/developer-sdk-library/vault-sdks)
 
-Last updated 5 months ago
+Last updated 6 months ago
 
 Was this helpful?
 

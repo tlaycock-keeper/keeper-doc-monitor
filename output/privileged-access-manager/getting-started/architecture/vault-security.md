@@ -423,6 +423,19 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=mWAIZaLPKEjJeZYuNSby&only=yes&limit=100)
 
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [Architecture](/en/keeperpam/privileged-access-manager/getting-started/architecture)
+
+# Vault Security
+
+Security and encryption model of the Keeper Vault
+
+[PreviousArchitecture Diagram](/en/keeperpam/privileged-access-
+manager/getting-started/architecture/system-architecture)[NextRouter
+Security](/en/keeperpam/privileged-access-manager/getting-
+started/architecture/router-security)
+
 Last updated 4 months ago
 
 Was this helpful?
@@ -442,19 +455,6 @@ A full and detailed disclosure of all encryption related to data at rest, data
 in transit, cloud architecture and certifications can be found on the .
 
 A video covering this model is below.
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [Architecture](/en/keeperpam/privileged-access-manager/getting-started/architecture)
-
-# Vault Security
-
-Security and encryption model of the Keeper Vault
-
-[PreviousArchitecture Diagram](/en/keeperpam/privileged-access-
-manager/getting-started/architecture/system-architecture)[NextRouter
-Security](/en/keeperpam/privileged-access-manager/getting-
-started/architecture/router-security)
 
 [Keeper Enterprise Encryption Model
 page](https://docs.keeper.io/en/enterprise-guide/keeper-encryption-model)

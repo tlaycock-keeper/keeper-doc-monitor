@@ -533,11 +533,6 @@ SecComp File
 Download this file called `docker-seccomp.json` and place it in the same
 folder as your Docker Compose file.
 
-[15KBdocker-
-seccomp.json](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FMjBgU5aJYkp8Em3ZV9OD%2Fdocker-
-seccomp.json?alt=media&token=73227956-f299-47e5-80aa-764ea2ab9e93)
-
 3
 
 ###
@@ -730,10 +725,6 @@ References:
 
 `docker` and `docker-compose` installed (see  for help)
 
-Docker Logs from Keeper Gateway
-
-Gateway is Online
-
 DockerHub listing:
 
 Quick reference for
@@ -751,6 +742,15 @@ manager/references/installing-docker-on-linux)
 
 [DockerHub](https://hub.docker.com/r/keeper/gateway)
 
+[15KBdocker-
+seccomp.json](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FMjBgU5aJYkp8Em3ZV9OD%2Fdocker-
+seccomp.json?alt=media&token=73227956-f299-47e5-80aa-764ea2ab9e93)
+
+Docker Logs from Keeper Gateway
+
+Gateway is Online
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZdCwOSIZ90eIqXaHSQ7N%252FDocker%2520Install.jpg%3Falt%3Dmedia%26token%3D577af308-2d82-4423-8d62-a94826e60bc6&width=768&dpr=4&quality=100&sign=8bebeb77&sv=2)
@@ -762,6 +762,70 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuLk5SZEF5
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FpdccmtxqPQDtpeTrL7gh%252FScreenshot%25202024-12-27%2520at%25209.38.24%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D3c64598f-c12e-4e6a-9fa9-9a948c605397&width=768&dpr=4&quality=100&sign=bd809e33&sv=2)
+
+###
+
+Connecting to the Host Instance
+
+A very useful capability of the Keeper Gateway is being able to open
+connections and tunnels to the host machine. By adding the `extra_hosts`
+section to your docker compose file with a value of
+`host.docker.internal:host-gateway`, you can open sessions directly to the
+host.
+
+Example docker compose with the Gateway container:
+
+Copy
+
+    
+    
+    services:
+          keeper-gateway:
+            platform: linux/amd64
+            image: keeper/gateway:latest
+            shm_size: 2g
+            restart: always
+            extra_hosts:
+              - "host.docker.internal:host-gateway"
+            security_opt:
+              - "seccomp:docker-seccomp.json"
+            environment:
+              ACCEPT_EULA: Y
+              GATEWAY_CONFIG: xxxxxxxx
+
+Enabling this option allows you to establish a Connection to the host. For
+example, to open an SSH connection:
+
+  *   *   * 
+
+###
+
+Upgrading the Keeper Gateway service through the host
+
+If you use KeeperPAM to SSH over to the host service, you can upgrade the
+container by running the container update of the gateway in the background:
+
+Copy
+
+    
+    
+    docker-compose pull
+    nohup docker-compose up -d keeper-gateway &
+
+Create a  record with the SSH private key
+
+Create a  record with the hostname to `host.docker.internal` and port `22`
+
+Activate the  in PAM settings referencing the PAM User
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
+[PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
+
+[SSH connection](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/ssh-connections)
 
 ###
 
@@ -797,57 +861,4 @@ Needed to establish outbound access over the designated port ranges
 The Gateway preserves zero knowledge by performing all encryption and
 decryption of data locally. Keeper Secrets Manager APIs are used to
 communicate with the Keeper cloud.
-
-###
-
-Connecting to the Host Instance
-
-A very useful capability of the Keeper Gateway is being able to open
-connections and tunnels to the host machine. By adding the `extra_hosts`
-section to your docker compose file with a value of
-`host.docker.internal:host-gateway`, you can open sessions directly to the
-host.
-
-Example docker compose with the Gateway container:
-
-Copy
-
-    
-    
-    services:
-          keeper-gateway:
-            platform: linux/amd64
-            image: keeper/gateway:latest
-            shm_size: 2g
-            restart: always
-            extra_hosts:
-              - "host.docker.internal:host-gateway"
-            security_opt:
-              - "seccomp:docker-seccomp.json"
-            environment:
-              ACCEPT_EULA: Y
-              GATEWAY_CONFIG: xxxxxxxx
-
-Enabling this option allows you to establish a Connection to the host. For
-example, to open an SSH connection:
-
-  * Create a PAM User record with the SSH private key
-
-  * Create a PAM Machine record with the hostname to `host.docker.internal` and port `22`
-
-  * Activate the SSH connection in PAM settings referencing the PAM User
-
-###
-
-Upgrading the Keeper Gateway service through the host
-
-If you use KeeperPAM to SSH over to the host service, you can upgrade the
-container by running the container update of the gateway in the background:
-
-Copy
-
-    
-    
-    docker-compose pull
-    nohup docker-compose up -d keeper-gateway &
 

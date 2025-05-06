@@ -386,40 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview 
-  * Prerequisites
-  * PAM Settings - Configuring SSH Protocol
-  * Accessing Connection Settings
-  * Configuring Connection Settings
-  * Starting a Connection
-  * File Transfers
-  * SSH to Windows Servers
-  * Session Recordings - SSH Protocol
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=LS64LkNXyaXUDsaPbKDL&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
-
-# SSH Connections
-
-Keeper Connections - SSH Protocol
-
-[PreviousSession Protocols](/en/keeperpam/privileged-access-
-manager/connections/session-protocols)[NextRDP
-Connections](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/rdp-connections)
-
-Last updated 14 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -450,6 +416,17 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=LS64LkNXyaXUDsaPbKDL&only=yes&limit=100)
+
+Last updated 15 days ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -465,8 +442,7 @@ directly to target devices.
 Prerequisites
 
 Prior to following this guide, familiarize yourself with the prerequisites on
-the Connection's [Getting Started page](/en/keeperpam/privileged-access-
-manager/connections/getting-started).
+the Connection's .
 
 The following PAM records are needed in order to successfully setup this
 protocol:
@@ -501,9 +477,65 @@ following fields are all **required** and need to be configured:
 The following table lists all the configurable connection settings for the SSH
 protocol on the PAM Settings:
 
+##
+
+Starting a Connection
+
+Once you have configured the SSH Protocol connection on your PAM Machine
+Record, your record will contain the following connection banner with the
+"Launch" Button:
+
+In the above image, a Linux server has been configured on the PAM Machine
+Record. When clicking launch, the Vault Client will render a window with the
+established connection protocol to the specified target:
+
+###
+
+File Transfers
+
+####
+
+Transfer In
+
+If the SFTP file transfer feature is enabled, the user can drag and drop files
+into the terminal session to transfer the files to the machine.
+
+Keeper supports one or more files transferred simultaneously through drag-and-
+drop.
+
+While the files are being uploaded to the target machine, a file transfer
+status is displayed in the dock area of the Keeper Vault:
+
+####
+
+Transfer Out
+
+To transfer files from the SSH remote connection to the local filesystem, you
+can download a tool called `guacctl` into the remote system and use it for
+performing outbound transfers.
+
+Download `guacctl` and set as executable:
+
+Initiate the file download using this syntax:
+
+###
+
+SSH to Windows Servers
+
+The SSH protocol can also be used to access Windows servers for execution of
+PowerShell commands or other administrative actions.
+
+  * 
+
+##
+
+Session Recordings - SSH Protocol
+
 Field
 
 Definition
+
+Learn more on how to
 
 Protocol
 
@@ -582,45 +614,6 @@ Can paste from clipboard
 If enabled, user can paste text from clipboard within the connected protocol
 session.
 
-##
-
-Starting a Connection
-
-Once you have configured the SSH Protocol connection on your PAM Machine
-Record, your record will contain the following connection banner with the
-"Launch" Button:
-
-In the above image, a Linux server has been configured on the PAM Machine
-Record. When clicking launch, the Vault Client will render a window with the
-established connection protocol to the specified target:
-
-###
-
-File Transfers
-
-####
-
-Transfer In
-
-If the SFTP file transfer feature is enabled, the user can drag and drop files
-into the terminal session to transfer the files to the machine.
-
-Keeper supports one or more files transferred simultaneously through drag-and-
-drop.
-
-While the files are being uploaded to the target machine, a file transfer
-status is displayed in the dock area of the Keeper Vault:
-
-####
-
-Transfer Out
-
-To transfer files from the SSH remote connection to the local filesystem, you
-can download a tool called `guacctl` into the remote system and use it for
-performing outbound transfers.
-
-Download `guacctl` and set as executable:
-
 Copy
 
     
@@ -628,37 +621,46 @@ Copy
     wget https://raw.githubusercontent.com/apache/guacamole-server/master/bin/guacctl
     chmod +x guacctl
 
-Initiate the file download using this syntax:
-
 Copy
 
     
     
     ./guacctl -d <filename>
 
-###
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
 
-SSH to Windows Servers
+# SSH Connections
 
-The SSH protocol can also be used to access Windows servers for execution of
-PowerShell commands or other administrative actions.
+Keeper Connections - SSH Protocol
 
-  * 
+[PreviousSession Protocols](/en/keeperpam/privileged-access-
+manager/connections/session-protocols)[NextRDP
+Connections](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/rdp-connections)
 
-##
-
-Session Recordings - SSH Protocol
-
-Learn more on how to
+  * Overview 
+  * Prerequisites
+  * PAM Settings - Configuring SSH Protocol
+  * Accessing Connection Settings
+  * Configuring Connection Settings
+  * Starting a Connection
+  * File Transfers
+  * SSH to Windows Servers
+  * Session Recordings - SSH Protocol
 
 [activate SSH on Windows](/en/keeperpam/privileged-access-
 manager/references/setting-up-ssh#windows)
 
+[Getting Started page](/en/keeperpam/privileged-access-
+manager/connections/getting-started)
+
 For this protocol, both graphical and the full, raw text text content of
 terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this page.
+information on recordings and how to access these recordings, visit this .
 
-  * Learn more about Session Recording and Playback
+  * Learn more about 
 
 Field
 
@@ -673,6 +675,14 @@ Administrative Credential Record
 
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
+
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+
+[Session Recording and Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
 
 PAM Record
 
@@ -690,13 +700,14 @@ Record
 The PAM User record contains the user credentials that will be used to connect
 to the endpoint
 
-PAM User
+[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)
 
-PAM Configuration
+[PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
 
-PAM Machine
-
-PAM User
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
 
 SSH Session Launching
 
