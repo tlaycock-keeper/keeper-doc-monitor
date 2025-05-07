@@ -466,7 +466,7 @@ Features
 
   * Send alerts to email, SMS, Webhook, Slack or Microsoft Teams on any event trigger
 
-  * Run custom reports from the Keeper Admin Console or  CLI
+  * Run custom reports from the Keeper Admin Console or [Keeper Commander](/en/keeperpam/commander-cli/command-reference/reporting-commands#audit-report-command) CLI
 
 ###
 
@@ -498,9 +498,6 @@ Email alerts contain event information
 
 [Reporting, Alerts & SIEM integration](https://docs.keeper.io/en/enterprise-
 guide/event-reporting)
-
-[Keeper Commander](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#audit-report-command)
 
 KeeperPAM Events
 

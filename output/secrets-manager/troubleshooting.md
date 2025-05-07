@@ -717,6 +717,9 @@ started-with-keeper-admin-console)
 [Commander documentation.](/en/keeperpam/commander-cli/command-
 reference/record-commands/record-type-commands#convert-command)
 
+[add command](/en/keeperpam/commander-cli/command-reference/record-
+commands#add-command-record-types)
+
 The Keeper Secrets Manager Enforcement Policy in the Keeper Admin Console
 
 Login type records have the same fields as legacy Keeper records
@@ -734,7 +737,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZI8uVnbFA
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTG9RqjA7M6aC9SgkAQdp%252Fimage.png%3Falt%3Dmedia%26token%3D6567844a-f602-4c8a-9548-5deeeb24e6d8&width=768&dpr=4&quality=100&sign=5a9ae30b&sv=2)
-
-[add command](/en/keeperpam/commander-cli/command-reference/record-
-commands#add-command-record-types)
 

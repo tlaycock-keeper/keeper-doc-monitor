@@ -403,6 +403,43 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MeR6akVJ9USNnuBGLUD&only=yes&limit=100)
 
 Your first steps with Keeper Commander
 
+###
+
+Commander CLI Install
+
+Follow these instructions to install Keeper Commander on your system for CLI
+access
+
+[CLI Installation on Windows](/en/keeperpam/commander-cli/commander-
+installation-setup/installation-on-windows)[CLI Installation on
+macOS](/en/keeperpam/commander-cli/commander-installation-setup/installation-
+on-mac)[CLI Installation on Linux](/en/keeperpam/commander-cli/commander-
+installation-setup/installation-on-linux)
+
+###
+
+Developer Instructions
+
+Installing the CLI from source code with scripting capabilities
+
+[Python Developer Setup](/en/keeperpam/commander-cli/commander-installation-
+setup/developer-mode)[PowerShell Module](/en/keeperpam/commander-
+cli/commander-installation-setup/installation-on-powershell)[.NET Developer
+Setup](/en/keeperpam/commander-cli/commander-installation-setup/net-developer-
+sdk)
+
+###
+
+Making Changes
+
+In order to add additional modules, change source code or make other edits to
+Commander, you will need to Install Commander in Developer mode. Developer
+mode clones the Commander source code to your local machine in a virtual
+environment.
+
+[Python Developer Setup](/en/keeperpam/commander-cli/commander-installation-
+setup/developer-mode)
+
 [PreviousCommander Overview](/en/keeperpam/commander-cli/overview)[NextCLI
 Installation on Windows](/en/keeperpam/commander-cli/commander-installation-
 setup/installation-on-windows)
@@ -440,47 +477,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-###
-
-Commander CLI Install
-
-Follow these instructions to install Keeper Commander on your system for CLI
-access
-
-###
-
-Developer Instructions
-
-Installing the CLI from source code with scripting capabilities
-
-###
-
-Making Changes
-
-In order to add additional modules, change source code or make other edits to
-Commander, you will need to Install Commander in Developer mode. Developer
-mode clones the Commander source code to your local machine in a virtual
-environment.
-
-[CLI Installation on Windows](/en/keeperpam/commander-cli/commander-
-installation-setup/installation-on-windows)
-
-[CLI Installation on macOS](/en/keeperpam/commander-cli/commander-
-installation-setup/installation-on-mac)
-
-[CLI Installation on Linux](/en/keeperpam/commander-cli/commander-
-installation-setup/installation-on-linux)
-
-[Python Developer Setup](/en/keeperpam/commander-cli/commander-installation-
-setup/developer-mode)
-
-[PowerShell Module](/en/keeperpam/commander-cli/commander-installation-
-setup/installation-on-powershell)
-
-[.NET Developer Setup](/en/keeperpam/commander-cli/commander-installation-
-setup/net-developer-sdk)
-
-[Python Developer Setup](/en/keeperpam/commander-cli/commander-installation-
-setup/developer-mode)
 

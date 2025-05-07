@@ -386,46 +386,27 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
+
+  * Local Environment Overview 
+  * Prerequisites 
+  * Creating PAM Configuration
+  * PAM Configuration Fields - Local Environment 
+  * PAM Features
+  * Configuring PAM Features on PAM Record Types
 
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=GNLhTsCwVlJ0KMusi2lz&only=yes&limit=100)
 
-Last updated 3 months ago
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
 
-Was this helpful?
+# Local Environment Setup
+
+Setting up your Local environment to work with KeeperPAM
 
 ##
 
@@ -441,7 +422,9 @@ allowing users to utilize KeeperPAM features on those resources.
 
 Prerequisites
 
-Prior to proceeding with this guide, make sure to .
+Prior to proceeding with this guide, make sure to [install and configure your
+Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/one-time-access-token).
 
 ##
 
@@ -467,101 +450,6 @@ Field
 Description
 
 Notes
-
-For Discovery, the following fields are required, otherwise they are optional:
-
-###
-
-PAM Features
-
-The **"PAM Features Allowed"** and **"Session Recording Types Allowed"**
-sections in the PAM Configuration allow owners to enable or disable KeeperPAM
-features for resources managed through the PAM configuration:
-
-##
-
-Configuring PAM Features on PAM Record Types
-
-After creating the PAM configuration, visit the following pages to:
-
-  *   *   *   *   * 
-
-Field
-
-Description
-
-Notes
-
-Field
-
-Description
-
-Configure
-
-Configure
-
-Configure
-
-Configure
-
-Configure
-
-Rotation
-
-If enabled, allow rotations on privileged user users managed by this PAM
-configuration
-
-Connections
-
-If enabled, allow connections on resources managed by this PAM configuration
-
-Remote Browser Isolation (RBI)
-
-If enabled, allow RBI sessions on resources managed by this PAM configuration
-
-Tunneling
-
-If enabled, allow tunnels on resources managed by this PAM configuration
-
-Graphical Session Recording
-
-If enabled, visual playback sessions will be recorded for all connections and
-RBI sessions
-
-Text Session Recording (TypeScript)
-
-If enabled, text input and output logs will be logged for all connections and
-RBI sessions
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
-
-# Local Environment Setup
-
-Setting up your Local environment to work with KeeperPAM
-
-[PreviousAzure Environment Setup](/en/keeperpam/privileged-access-
-manager/getting-started/pam-configuration/azure-environment-setup)[NextPAM
-Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources)
-
-  * Local Environment Overview 
-  * Prerequisites 
-  * Creating PAM Configuration
-  * PAM Configuration Fields - Local Environment 
-  * PAM Features
-  * Configuring PAM Features on PAM Record Types
-
-[Rotation](/en/keeperpam/secrets-manager/password-rotation)
-
-[Connections](/en/keeperpam/privileged-access-manager/connections)
-
-[RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
-
-[Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
-
-[Discovery](/en/keeperpam/privileged-access-manager/discovery)
 
 Title (Required)
 
@@ -600,8 +488,13 @@ Port Mapping
 
 Define alternative default ports
 
-[install and configure your Keeper Gateway](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/one-time-access-token)
+For Discovery, the following fields are required, otherwise they are optional:
+
+Field
+
+Description
+
+Notes
 
 Network ID
 
@@ -614,6 +507,100 @@ Ex: `My Network`
 Network CIDR
 
 Subnet of the IP address
+
+###
+
+PAM Features
+
+The **"PAM Features Allowed"** and **"Session Recording Types Allowed"**
+sections in the PAM Configuration allow owners to enable or disable KeeperPAM
+features for resources managed through the PAM configuration:
+
+Field
+
+Description
+
+Rotation
+
+If enabled, allow rotations on privileged user users managed by this PAM
+configuration
+
+Connections
+
+If enabled, allow connections on resources managed by this PAM configuration
+
+Remote Browser Isolation (RBI)
+
+If enabled, allow RBI sessions on resources managed by this PAM configuration
+
+Tunneling
+
+If enabled, allow tunnels on resources managed by this PAM configuration
+
+Graphical Session Recording
+
+If enabled, visual playback sessions will be recorded for all connections and
+RBI sessions
+
+Text Session Recording (TypeScript)
+
+If enabled, text input and output logs will be logged for all connections and
+RBI sessions
+
+##
+
+Configuring PAM Features on PAM Record Types
+
+After creating the PAM configuration, visit the following pages to:
+
+  * Configure [Rotation](/en/keeperpam/secrets-manager/password-rotation)
+
+  * Configure [Connections](/en/keeperpam/privileged-access-manager/connections)
+
+  * Configure [RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
+
+  * Configure [Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
+
+  * Configure [Discovery](/en/keeperpam/privileged-access-manager/discovery)
+
+[PreviousAzure Environment Setup](/en/keeperpam/privileged-access-
+manager/getting-started/pam-configuration/azure-environment-setup)[NextPAM
+Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources)
+
+Last updated 3 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 See  for more info
 

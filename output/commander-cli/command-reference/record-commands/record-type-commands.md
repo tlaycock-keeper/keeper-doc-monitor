@@ -440,7 +440,7 @@ Commands for creating and managing Record Types and Custom Templates
 reference/record-commands)[NextCreating Record Types](/en/keeperpam/commander-
 cli/command-reference/record-commands/default-record-types)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

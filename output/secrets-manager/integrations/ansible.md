@@ -438,7 +438,7 @@ Use Keeper Secrets Manager with Ansible
 [PreviousIntegrations](/en/keeperpam/secrets-manager/integrations)[NextAnsible
 Plugin](/en/keeperpam/secrets-manager/integrations/ansible/ansible-plugin)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

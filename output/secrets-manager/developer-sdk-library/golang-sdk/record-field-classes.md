@@ -2432,7 +2432,7 @@ Yes
 sdk)[NextPowerShell](/en/keeperpam/secrets-manager/developer-sdk-
 library/powershell)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

@@ -524,12 +524,12 @@ Keeper Remote Browser Isolation Features
 
   * **Credential Autofill** \- Keeper's remote browser isolation protocol can automatically inject credentials, submit forms and control the target web application without ever sending the credentials to the user's device.
 
+Remote Browser Isolation demonstrating the PgAdmin Web UI
+
 To get started with Remote Browser Isolation, proceed to the next .
 
 [section](/en/keeperpam/privileged-access-manager/remote-browser-
 isolation/setting-up-rbi)
-
-Remote Browser Isolation demonstrating the PgAdmin Web UI
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

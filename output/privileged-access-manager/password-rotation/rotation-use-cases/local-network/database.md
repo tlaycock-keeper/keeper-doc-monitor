@@ -423,19 +423,6 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=ysr2NYCZBG4ktfBTtEjz&only=yes&limit=100)
 
-Last updated 3 months ago
-
-Was this helpful?
-
-In this section, you will learn how to rotate **database user** credentials
-within your local network.
-
-###
-
-Databases Supported
-
-  *   *   *   *   *   * 
-
   1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
   2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
   3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
@@ -449,6 +436,19 @@ DB credential Rotation in the Local Environment
 rotation/rotation-use-cases/local-network/macos-user)[NextNative
 MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
 cases/local-network/database/mysql)
+
+Last updated 3 months ago
+
+Was this helpful?
+
+In this section, you will learn how to rotate **database user** credentials
+within your local network.
+
+###
+
+Databases Supported
+
+  *   *   *   *   *   * 
 
 [Native MySQL](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/local-network/database/mysql)

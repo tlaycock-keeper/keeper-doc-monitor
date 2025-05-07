@@ -418,35 +418,12 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Prerequisites
-  * 1\. Set up PAM Machine Records
-  * 2\. Set up PAM Configuration
-  * 3\. Set up PAM User records
-  * 4\. Configure Rotation on the PAM User records 
-  * Helpful Resources
-  * Service Management
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=HZpqav0NERxceysuvZMA&only=yes&limit=100)
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure)
-
-# Azure VM User Accounts
-
-Rotating local and remote user accounts on Azure Virtual Machines with Keeper
-
-[PreviousAzure AD Users](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/azure/azure-ad-users)[NextAzure Managed
-Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/azure/managed-database)
-
-Last updated 28 days ago
+Last updated 29 days ago
 
 Was this helpful?
 
@@ -480,34 +457,6 @@ record needs to be created for each user account that will be rotated.
 The following table lists all the required**** fields that needs to be filled
 on the PAM Machine records.
 
-Field
-
-Description
-
-**Title**
-
-Name of the Record e.g. `Windows Machine 1`
-
-**Hostname or IP Address**
-
-Machine hostname or IP as accessed by the Gateway, e.g. 10.0.1.4
-
-**Port**
-
-Typically 5985 or 5986 for WinRM, 22 for SSH
-
-**Private PEM Key**
-
-Required for SSH if not using a password
-
-**Operating System**
-
-The VM Operating System: `Windows` or `Linux`
-
-**SSL Verification**
-
-For WinRM, if selected, will use SSL mode port 5986. Ignored for SSH.
-
 ##
 
 2\. Set up PAM Configuration
@@ -524,52 +473,6 @@ select "Secrets Manager", then select the "PAM Configurations" tab, and click
 on "New Configuration". The following table lists all the required**** fields
 that needs to be filled on the **PAM Configuration**.
 
-Field
-
-Description
-
-**Title**
-
-Configuration name, example: `Azure Demo`
-
-**Environment**
-
-Select: `Azure Network`
-
-**Gateway**
-
-Select the Gateway that is configured on the Keeper Secrets Manager
-application and has network access to the machine configured from step 1
-
-**Application Folder**
-
-Select the Shared folder where the PAM Configuration will be stored. We
-recommend placing this in a shared folder with the admin accounts, not the
-machines.
-
-**Azure ID**
-
-A unique ID for this instance of Azure. This is for your reference and can be
-anything, but its recommended to be kept short Ex: `Azure-prod`
-
-**Client ID**
-
-The unique Application (client) ID assigned to your app by Azure AD when the
-application was registered.
-
-**Client Secret**
-
-The client credentials secret for the Azure application.
-
-**Subscription ID**
-
-The UUID that identifies your subscription (i.e. Pay-As-You-GO) to use Azure
-services.
-
-**Tenant ID**
-
-The UUID of the Azure Active Directory
-
 ##
 
 3\. Set up PAM User records
@@ -580,23 +483,6 @@ records.
 
 The following table lists all the required**** fields that need to be filled
 on the **PAM User** record:
-
-Field
-
-Description
-
-**Title**
-
-Keeper record title i.e. `Local User1`
-
-**Login**
-
-Case sensitive username of the account being rotated. The username has to be
-in one of the following formats: `domain\username` `username@domain`
-
-**Password**
-
-Account password is optional, rotation will set one if blank
 
 ##
 
@@ -643,15 +529,129 @@ A Keeper Rotation  is already installed
 
 The Gateway can communicate to the target Windows machine using  or
 
+Field
+
+Description
+
 A Keeper Secrets Manager  has been created
 
 A Keeper Rotation  is already installed, running, and is provisioned in the
 Keeper Secrets Manager application you created.
 
+Field
+
+Description
+
 For more details on all the configurable fields in the PAM Configuration
 record, visit this .
 
+Field
+
+Description
+
 To learn more and set up this capability, see the  page.
+
+**Title**
+
+Name of the Record e.g. `Windows Machine 1`
+
+**Hostname or IP Address**
+
+Machine hostname or IP as accessed by the Gateway, e.g. 10.0.1.4
+
+**Port**
+
+Typically 5985 or 5986 for WinRM, 22 for SSH
+
+**Private PEM Key**
+
+Required for SSH if not using a password
+
+**Operating System**
+
+The VM Operating System: `Windows` or `Linux`
+
+**SSL Verification**
+
+For WinRM, if selected, will use SSL mode port 5986. Ignored for SSH.
+
+**Title**
+
+Configuration name, example: `Azure Demo`
+
+**Environment**
+
+Select: `Azure Network`
+
+**Gateway**
+
+Select the Gateway that is configured on the Keeper Secrets Manager
+application and has network access to the machine configured from step 1
+
+**Application Folder**
+
+Select the Shared folder where the PAM Configuration will be stored. We
+recommend placing this in a shared folder with the admin accounts, not the
+machines.
+
+**Azure ID**
+
+A unique ID for this instance of Azure. This is for your reference and can be
+anything, but its recommended to be kept short Ex: `Azure-prod`
+
+**Client ID**
+
+The unique Application (client) ID assigned to your app by Azure AD when the
+application was registered.
+
+**Client Secret**
+
+The client credentials secret for the Azure application.
+
+**Subscription ID**
+
+The UUID that identifies your subscription (i.e. Pay-As-You-GO) to use Azure
+services.
+
+**Tenant ID**
+
+The UUID of the Azure Active Directory
+
+**Title**
+
+Keeper record title i.e. `Local User1`
+
+**Login**
+
+Case sensitive username of the account being rotated. The username has to be
+in one of the following formats: `domain\username` `username@domain`
+
+**Password**
+
+Account password is optional, rotation will set one if blank
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure)
+
+# Azure VM User Accounts
+
+Rotating local and remote user accounts on Azure Virtual Machines with Keeper
+
+[PreviousAzure AD Users](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/azure/azure-ad-users)[NextAzure Managed
+Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/azure/managed-database)
+
+  * Overview
+  * Prerequisites
+  * 1\. Set up PAM Machine Records
+  * 2\. Set up PAM Configuration
+  * 3\. Set up PAM User records
+  * 4\. Configure Rotation on the PAM User records 
+  * Helpful Resources
+  * Service Management
 
 [Azure Overview](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/azure)

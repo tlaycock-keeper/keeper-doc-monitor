@@ -418,25 +418,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * RDP command
-  * Examples
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=byXtjW0v3Ebk7vdN4uae&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Connection Commands](/en/keeperpam/commander-cli/command-reference/connection-commands)
-
-# RDP
-
-Using Keeper Commander with RDP connections
-
-[PreviousSSH Agent](/en/keeperpam/commander-cli/command-reference/connection-
-commands/ssh-agent)[NextConnect Command](/en/keeperpam/commander-cli/command-
-reference/connection-commands/connection-to-hosts)
 
 Last updated 3 months ago
 
@@ -478,13 +463,28 @@ Examples
 
 Make a connection
 
+See compatible records
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Connection Commands](/en/keeperpam/commander-cli/command-reference/connection-commands)
+
+# RDP
+
+Using Keeper Commander with RDP connections
+
+[PreviousSSH Agent](/en/keeperpam/commander-cli/command-reference/connection-
+commands/ssh-agent)[NextConnect Command](/en/keeperpam/commander-cli/command-
+reference/connection-commands/connection-to-hosts)
+
+  * RDP command
+  * Examples
+
 Copy
 
     
     
     rdp xwwCv4W3dJqYa22qMdykYw
-
-See compatible records
 
 Copy
 

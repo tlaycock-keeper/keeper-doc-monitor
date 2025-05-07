@@ -466,13 +466,23 @@ URL
 
 **US**
 
+<https://keepersecurity.com/console>[](https://keepersecurity.com/console)
+
 **EU**
+
+<https://keepersecurity.eu/console>[](https://keepersecurity.eu/console)
 
 **AU**
 
+<https://keepersecurity.com.au/console>[](https://keepersecurity.com.au/console)
+
 **JP**
 
+<https://keepersecurity.jp/console>[](https://keepersecurity.jp/console)
+
 **GOV**
+
+<https://govcloud.keepersecurity.us/console>[](https://govcloud.keepersecurity.us/console)
 
   * Under **Admin** > **Roles** , create a new role for PAM or modify an existing role
 
@@ -488,7 +498,9 @@ URL
 
 Run the New Gateway Wizard
 
-  *   * Click on **Create New** > **Gateway**
+  * Login to the [Keeper Vault](https://keepersecurity.com/vault). If the policies are active, you'll see a **Secrets Manager** tab on the left side.
+
+  * Click on **Create New** > **Gateway**
 
   * Enter a name for the project, such as "**My Infrastructure Demo** "
 
@@ -508,7 +520,9 @@ Run the Docker Environment
 
   * Set up a VM which supports Docker. It can be a Linux instance or Windows running Docker Desktop. The instance can exist anywhere, even on your local computer.
 
-  *   * Transfer the Docker Compose and Seccomp files from Step 2 to the VM.
+  * If necessary, Install Docker per the [Docker installation instructions](https://docs.docker.com/engine/install/).
+
+  * Transfer the Docker Compose and Seccomp files from Step 2 to the VM.
 
   * Run `docker compose up -d` from the folder where the files are saved.
 
@@ -561,25 +575,6 @@ We've created a helpful Keeper 101 video to set up your sandbox environment:
 Screenshots
 
 Below are screenshots of the Quick Start Wizard from start to finish.
-
-Login to the . If the policies are active, you'll see a **Secrets Manager**
-tab on the left side.
-
-If necessary, Install Docker per the .
-
-[Keeper Vault](https://keepersecurity.com/vault)
-
-[Docker installation instructions](https://docs.docker.com/engine/install/)
-
-<https://keepersecurity.com/console>[](https://keepersecurity.com/console)
-
-<https://keepersecurity.eu/console>[](https://keepersecurity.eu/console)
-
-<https://keepersecurity.com.au/console>[](https://keepersecurity.com.au/console)
-
-<https://keepersecurity.jp/console>[](https://keepersecurity.jp/console)
-
-<https://govcloud.keepersecurity.us/console>[](https://govcloud.keepersecurity.us/console)
 
 Create a Gateway
 

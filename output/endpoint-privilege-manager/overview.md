@@ -386,6 +386,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Endpoint Privilege Manager
+  * Introduction
+  * Solution Overview
+  * Zero-Standing Privilege (ZSP)
+  * Dashboard
+  * End-User Experience
+  * About this Guide
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=Kgyes9zzVSWKVrIRJHSt&only=yes&limit=100)
+
+  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
+
+# Overview
+
+Endpoint Privilege Manager is a Privileged Elevation and Delegation Management
+(PEDM) solution
+
+[PreviousPreview Access](/en/keeperpam/privileged-access-
+manager/references/preview-access)[NextSetup](/en/keeperpam/endpoint-
+privilege-manager/setup)
+
+Last updated 26 days ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -415,36 +445,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Endpoint Privilege Manager
-  * Introduction
-  * Solution Overview
-  * Zero-Standing Privilege (ZSP)
-  * Dashboard
-  * End-User Experience
-  * About this Guide
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=Kgyes9zzVSWKVrIRJHSt&only=yes&limit=100)
-
-  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
-
-# Overview
-
-Endpoint Privilege Manager is a Privileged Elevation and Delegation Management
-(PEDM) solution
-
-[PreviousPreview Access](/en/keeperpam/privileged-access-
-manager/references/preview-access)[NextSetup](/en/keeperpam/endpoint-
-privilege-manager/setup)
-
-Last updated 25 days ago
-
-Was this helpful?
 
 ##
 
@@ -568,7 +568,13 @@ About this Guide
 
 This guide on Privilege Manager is broken down into the following sections:
 
-  *   *   *   * 
+  * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+
+  * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+
+  * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+  * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
 
 Keeper Privilege Manager
 
@@ -579,15 +585,6 @@ macOS Device
 Windows Device
 
 Linux sudo protection
-
-[Setup](/en/keeperpam/endpoint-privilege-manager/setup)
-
-[Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
-
-[Policies](/en/keeperpam/endpoint-privilege-manager/policies)
-
-[Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-
-requests)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

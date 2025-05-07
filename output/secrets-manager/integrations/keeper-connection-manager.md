@@ -439,7 +439,7 @@ secrets retrieval
 plugin)[NextKubernetes External Secrets Operator](/en/keeperpam/secrets-
 manager/integrations/kubernetes-external-secrets-operator)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

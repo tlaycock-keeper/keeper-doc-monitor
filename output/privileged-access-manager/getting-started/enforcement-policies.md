@@ -386,6 +386,41 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * Enable PAM Policies
+  * Privileged Access Manager Policies
+  * Secrets Manager
+  * Keeper Gateway
+  * Keeper Rotation
+  * Keeper Connection Manager (KCM)
+  * Keeper Tunnels
+  * Remote Browser Isolation (RBI)
+  * Discovery 
+  * Legacy Policies
+  * Commander CLI
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=RwOEZG4h2pK4pTOdk6Ff&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+# Enforcement Policies
+
+Role-based enforcement policy settings for KeeperPAM
+
+[PreviousKeeperPAM Licensing](/en/keeperpam/privileged-access-manager/getting-
+started/keeperpam-licensing)[NextVault Structure](/en/keeperpam/privileged-
+access-manager/getting-started/vault-structure)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -416,17 +451,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=RwOEZG4h2pK4pTOdk6Ff&only=yes&limit=100)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 ##
 
 Overview
@@ -448,7 +472,7 @@ From the Admin Console, enable the corresponding PAM Enforcement Policies.
 
   * Go to **Enforcement Policies** and open the "**Privileged Access Manager** " section.
 
-  * 
+  * Enable all the [PAM enforcement policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-policies) to use the new features.
 
 ##
 
@@ -458,96 +482,11 @@ Privileged Access Manager Policies
 
 Secrets Manager
 
-###
-
-Keeper Gateway
-
-###
-
-Keeper Rotation
-
-###
-
-Keeper Connection Manager (KCM)
-
-###
-
-Keeper Tunnels
-
-###
-
-Remote Browser Isolation (RBI)
-
-###
-
-Discovery
-
-Discovery is currently only available on Keeper Commander. The UI is coming
-soon.
-
-###
-
-Legacy Policies
-
-These policies are not required moving forward, but they exist for support of
-legacy features.
-
-###
-
-Commander CLI
-
-Enable all the  to use the new features.
-
 Policy
 
 Definition
 
 Commander CLI
-
-Policy
-
-Definition
-
-Commander CLI
-
-Policy
-
-Definition
-
-Commander CLI
-
-Policy
-
-Definition
-
-Commander CLI
-
-Policy
-
-Definition
-
-Commander CLI
-
-Policy
-
-Definition
-
-Commander CLI
-
-Policy
-
-Definition
-
-Commander CLI
-
-Policy
-
-Definition
-
-Commander CLI
-
-The  CLI `enterprise-role` command can be used to set these policies through
-automation. The list of policies related to PAM functionality is listed below.
 
 Can create applications and manage secrets
 
@@ -559,6 +498,16 @@ Copy
     
     ALLOW_SECRETS_MANAGER
 
+###
+
+Keeper Gateway
+
+Policy
+
+Definition
+
+Commander CLI
+
 Can create, deploy, and manage Keeper Gateways
 
 Allow users to create, setup, and manage Keeper Gateways
@@ -568,6 +517,16 @@ Copy
     
     
     ALLOW_PAM_GATEWAY
+
+###
+
+Keeper Rotation
+
+Policy
+
+Definition
+
+Commander CLI
 
 Can configure rotation settings
 
@@ -589,6 +548,16 @@ Copy
     
     
     ALLOW_ROTATE_CREDENTIALS
+
+###
+
+Keeper Connection Manager (KCM)
+
+Policy
+
+Definition
+
+Commander CLI
 
 Can configure connection and session recording
 
@@ -622,6 +591,16 @@ Copy
     
     ALLOW_VIEW_KCM_RECORDINGS
 
+###
+
+Keeper Tunnels
+
+Policy
+
+Definition
+
+Commander CLI
+
 Can configure tunnel settings
 
 Allow users to configure Tunnel settings on PAM Machine, PAM Directory, PAM
@@ -643,6 +622,16 @@ Copy
     
     
     ALLOW_LAUNCH_PAM_TUNNELS
+
+###
+
+Remote Browser Isolation (RBI)
+
+Policy
+
+Definition
+
+Commander CLI
 
 Can configure remote browsing and session recording
 
@@ -675,6 +664,19 @@ Copy
     
     ALLOW_VIEW_RBI_RECORDINGS
 
+###
+
+Discovery
+
+Discovery is currently only available on Keeper Commander. The UI is coming
+soon.
+
+Policy
+
+Definition
+
+Commander CLI
+
 Can run discovery
 
 Allow users to run discovery
@@ -685,6 +687,19 @@ Copy
     
     ALLOW_PAM_DISCOVERY
 
+###
+
+Legacy Policies
+
+These policies are not required moving forward, but they exist for support of
+legacy features.
+
+Policy
+
+Definition
+
+Commander CLI
+
 Legacy allow rotation
 
 Allow users to perform password rotation
@@ -694,6 +709,14 @@ Copy
     
     
     ALLOW_PAM_ROTATION
+
+###
+
+Commander CLI
+
+The [Keeper Commander](/en/keeperpam/commander-cli/overview) CLI `enterprise-
+role` command can be used to set these policies through automation. The list
+of policies related to PAM functionality is listed below.
 
 Copy
 
@@ -713,35 +736,6 @@ Copy
     enterprise-role ROLE_ID --enforcement "ALLOW_CONFIGURE_RBI:True"
     enterprise-role ROLE_ID --enforcement "ALLOW_VIEW_KCM_RECORDINGS:True"
     enterprise-role ROLE_ID --enforcement "ALLOW_VIEW_RBI_RECORDINGS:True"
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-
-# Enforcement Policies
-
-Role-based enforcement policy settings for KeeperPAM
-
-[PreviousKeeperPAM Licensing](/en/keeperpam/privileged-access-manager/getting-
-started/keeperpam-licensing)[NextVault Structure](/en/keeperpam/privileged-
-access-manager/getting-started/vault-structure)
-
-  * Overview
-  * Enable PAM Policies
-  * Privileged Access Manager Policies
-  * Secrets Manager
-  * Keeper Gateway
-  * Keeper Rotation
-  * Keeper Connection Manager (KCM)
-  * Keeper Tunnels
-  * Remote Browser Isolation (RBI)
-  * Discovery 
-  * Legacy Policies
-  * Commander CLI
-
-[PAM enforcement policies](/en/keeperpam/privileged-access-manager/getting-
-started/enforcement-policies)
-
-[Keeper Commander](/en/keeperpam/commander-cli/overview)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

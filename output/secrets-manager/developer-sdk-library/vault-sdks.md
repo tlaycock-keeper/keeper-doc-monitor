@@ -386,6 +386,32 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Python Commander CLI
+  * .Net Vault SDK
+  * PowerShell CLI
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=luFWxSUDNBkGKw773SBz&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Developer SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
+
+# Vault SDKs
+
+Full Vault SDKs for integration and automation
+
+[PreviousPowerShell](/en/keeperpam/secrets-manager/developer-sdk-
+library/powershell)[NextIntegrations](/en/keeperpam/secrets-
+manager/integrations)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -415,32 +441,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Python Commander CLI
-  * .Net Vault SDK
-  * PowerShell CLI
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=luFWxSUDNBkGKw773SBz&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Developer SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
-
-# Vault SDKs
-
-Full Vault SDKs for integration and automation
-
-[PreviousPowerShell](/en/keeperpam/secrets-manager/developer-sdk-
-library/powershell)[NextIntegrations](/en/keeperpam/secrets-
-manager/integrations)
-
-Last updated 3 months ago
-
-Was this helpful?
 
 If you are looking for SDK capabilities beyond secrets management, Keeper
 provides other SDKs that can perform vault and administrative functionality.

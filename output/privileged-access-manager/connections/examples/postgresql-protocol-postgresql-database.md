@@ -386,46 +386,30 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
+
+  * Overview 
+  * Summary
+  * Step 1 - Enable Connection Enforcement Policies
+  * Step 2 - Install and configure the Keeper Gateway 
+  * Step 3 - Configuring the PAM Configuration 
+  * Step 4 - Create and Configure PAM Database and PAM User(s) Records
+  * Step 5 - Configuring PAM Settings and PostgreSQL Protocol
+  * Launching Connections
+  * Sharing PAM Database Records
 
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=8K8amVturAxKYPOcw7kD&only=yes&limit=100)
 
-Last updated 2 months ago
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+  3. [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
-Was this helpful?
+# PostgreSQL Protocol - PostgreSQL Database
+
+Establish a connection to a PostgreSQL Database directly from your Vault
 
 ##
 
@@ -459,116 +443,15 @@ PostgreSQL Database directly from your Keeper Vault.
 
 Step 1 - Enable Connection Enforcement Policies
 
-From the Admin Console, enable the corresponding  for connections:
+From the Admin Console, enable the corresponding [PAM Enforcement
+Policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-
+policies) for connections:
 
 Policy
 
 Definition
 
 Commander CLI
-
-##
-
-Step 2 - Install and configure the Keeper Gateway
-
-Prior to creating the PAM Record types in your Vault, the Keeper Gateway needs
-to be installed in your infrastructure. Visit the following guides based on
-your needs:
-
-  *   *   * 
-
-##
-
-Step 3 - Configuring the PAM Configuration
-
-  *   *   * 
-
-##
-
-Step 4 - Create and Configure PAM Database and PAM User(s) Records
-
-After setting up your Gateway and PAM Configuration Record, the PostgreSQL
-Database and its users need to be configured on PAM Record types in your
-Vault:
-
-  *   * 
-
-Refer to this example on how to configure PostgreSQL Database on a PAM
-Database record type:
-
-##
-
-Step 5 - Configuring PAM Settings and PostgreSQL Protocol
-
-The PAM Database record type contains the necessary information required for
-the Keeper Gateway to locate and establish a connection with the database,
-while the PAM User record type contains the necessary information to
-authenticate the connection.
-
-The PAM Settings need to be configured to enable connections or tunnels on the
-target defined on the PAM Database Record. To configure the PostgreSQL
-protocol, visit the following page:
-
-##
-
-Launching Connections
-
-Once you have configured the PostgreSQL Protocol connection on your PAM
-Database Record, your record will contain the following connection banner with
-the "Launch" Button:
-
-In the above image, a PostgreSQL Database has been configured on the PAM
-Database Record. When clicking launch, the Vault Client will render a window
-with the established connection protocol to the specified target.
-
-##
-
-Sharing PAM Database Records
-
-PAM Database records can be shared with other Keeper users within your
-organization. However, the recipient must have the appropriate PAM enforcement
-policies in place to utilize KeeperPAM features on the shared PAM records.
-
-When sharing a PAM Database record, the linked admin credentials will **not**
-be shared. For example, if the PAM Database is configured with a PostgreSQL
-Database, the recipient can connect to the PostgreSQL Database on the PAM
-Database record without having direct access to the linked credentials.
-
-Additionally, the Keeper Gateways needs to be configured with the Gateway
-token. For more information, visit this .
-
-Steps 3 and Step 4 can be automated with the Gateway Wizard. For more
-information, visit this .
-
-The contains critical information on your infrastructure, settings and
-associated Keeper Gateway. Visit the following pages for more details based on
-your target infrastructure:
-
-\- The PostgreSQL Database is configured on this record type
-
-\- The PostgreSQL Database User is configured on this record type
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-  3. [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
-
-# PostgreSQL Protocol - PostgreSQL Database
-
-Establish a connection to a PostgreSQL Database directly from your Vault
-
-[PreviousMySQL Protocol - MySQL Database](/en/keeperpam/privileged-access-
-manager/connections/examples/mysql-protocol-mysql-
-database)[NextTunnels](/en/keeperpam/privileged-access-manager/tunnels)
-
-  * Overview 
-  * Summary
-  * Step 1 - Enable Connection Enforcement Policies
-  * Step 2 - Install and configure the Keeper Gateway 
-  * Step 3 - Configuring the PAM Configuration 
-  * Step 4 - Create and Configure PAM Database and PAM User(s) Records
-  * Step 5 - Configuring PAM Settings and PostgreSQL Protocol
-  * Launching Connections
-  * Sharing PAM Database Records
 
 Can configure connection and session recording
 
@@ -602,50 +485,140 @@ Copy
     
     ALLOW_VIEW_KCM_RECORDINGS
 
-[PAM Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-
-started/enforcement-policies)
+##
 
-[Windows Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/windows-installation)
+Step 2 - Install and configure the Keeper Gateway
 
-[Linux Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/linux-installation)
+Prior to creating the PAM Record types in your Vault, the Keeper Gateway needs
+to be installed in your infrastructure. Visit the following guides based on
+your needs:
 
-[Docker Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/docker-installation)
+  * [Windows Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/windows-installation)
 
-[page](/en/keeperpam/privileged-access-manager/getting-started/gateways/one-
-time-access-token)
+  * [Linux Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/linux-installation)
 
-[page](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
+  * [Docker Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/docker-installation)
 
-[PAM Configuration ](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
+Additionally, the Keeper Gateways needs to be configured with the Gateway
+token. For more information, visit this [page](/en/keeperpam/privileged-
+access-manager/getting-started/gateways/one-time-access-token).
 
-[Setting up Local Environment on the PAM
-Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/local-environment-setup)
+Steps 3 and Step 4 can be automated with the Gateway Wizard. For more
+information, visit this [page](/en/keeperpam/privileged-access-manager/quick-
+start-sandbox).
 
-[Setting up AWS Environment on the PAM
-Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/aws-environment-setup)
+##
 
-[Setting up Azure Environment on the PAM
-Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/azure-environment-setup)
+Step 3 - Configuring the PAM Configuration
 
-[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database)
+The [PAM Configuration ](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)contains critical information on your
+infrastructure, settings and associated Keeper Gateway. Visit the following
+pages for more details based on your target infrastructure:
 
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
+  * [Setting up Local Environment on the PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/local-environment-setup)
+
+  * [Setting up AWS Environment on the PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup)
+
+  * [Setting up Azure Environment on the PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/azure-environment-setup)
+
+##
+
+Step 4 - Create and Configure PAM Database and PAM User(s) Records
+
+After setting up your Gateway and PAM Configuration Record, the PostgreSQL
+Database and its users need to be configured on PAM Record types in your
+Vault:
+
+  * [PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database) \- The PostgreSQL Database is configured on this record type
+
+  * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user) \- The PostgreSQL Database User is configured on this record type
+
+Refer to this example on how to configure PostgreSQL Database on a PAM
+Database record type:
 
 [Example: PostgreSQL Database](/en/keeperpam/privileged-access-
 manager/getting-started/pam-resources/pam-database/example-postgresql-
 database)
 
+##
+
+Step 5 - Configuring PAM Settings and PostgreSQL Protocol
+
+The PAM Database record type contains the necessary information required for
+the Keeper Gateway to locate and establish a connection with the database,
+while the PAM User record type contains the necessary information to
+authenticate the connection.
+
+The PAM Settings need to be configured to enable connections or tunnels on the
+target defined on the PAM Database Record. To configure the PostgreSQL
+protocol, visit the following page:
+
 [PostgreSQL Connections](/en/keeperpam/privileged-access-
 manager/connections/session-protocols/postgresql-connections)
+
+##
+
+Launching Connections
+
+Once you have configured the PostgreSQL Protocol connection on your PAM
+Database Record, your record will contain the following connection banner with
+the "Launch" Button:
+
+In the above image, a PostgreSQL Database has been configured on the PAM
+Database Record. When clicking launch, the Vault Client will render a window
+with the established connection protocol to the specified target.
+
+##
+
+Sharing PAM Database Records
+
+PAM Database records can be shared with other Keeper users within your
+organization. However, the recipient must have the appropriate PAM enforcement
+policies in place to utilize KeeperPAM features on the shared PAM records.
+
+When sharing a PAM Database record, the linked admin credentials will **not**
+be shared. For example, if the PAM Database is configured with a PostgreSQL
+Database, the recipient can connect to the PostgreSQL Database on the PAM
+Database record without having direct access to the linked credentials.
+
+[PreviousMySQL Protocol - MySQL Database](/en/keeperpam/privileged-access-
+manager/connections/examples/mysql-protocol-mysql-
+database)[NextTunnels](/en/keeperpam/privileged-access-manager/tunnels)
+
+Last updated 2 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

@@ -423,12 +423,9 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-Mf8gEh2M4RXzBxdqqHE&only=yes&limit=100)
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
+Last updated 6 months ago
 
-# Version Command
-
-Display Keeper Secrets Manager CLI version information
+Was this helpful?
 
 ##
 
@@ -465,12 +462,15 @@ Copy
     Version 16.6.2 is available for the SDK
     
 
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
+
+# Version Command
+
+Display Keeper Secrets Manager CLI version information
+
 [PreviousConfig Command](/en/keeperpam/secrets-manager/secrets-manager-
 command-line-interface/config-command)[NextMisc
 Commands](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/vault-admin-commands)
-
-Last updated 6 months ago
-
-Was this helpful?
 

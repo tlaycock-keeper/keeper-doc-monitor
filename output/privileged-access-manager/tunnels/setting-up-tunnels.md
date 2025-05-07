@@ -386,6 +386,40 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview 
+  * Prerequisites
+  * Tunnel Enforcement Policies
+  * Installing the Keeper Gateway
+  * PAM Configuration
+  * PAM Machine, PAM Database, or PAM Directory
+  * PAM Settings - Tunnel Settings
+  * Starting a Tunnel
+  * Using the Tunnel
+  * Commander CLI
+  * Tunnels versus Connections
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=59GJPlGc3sR522Fh9ovD&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
+
+# Setting up Tunnels
+
+Setting up Tunnels in your Desktop Vault
+
+[PreviousTunnels](/en/keeperpam/privileged-access-manager/tunnels)[NextRemote
+Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-
+isolation)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -415,17 +449,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=59GJPlGc3sR522Fh9ovD&only=yes&limit=100)
-
-Last updated 2 months ago
-
-Was this helpful?
 
 ##
 
@@ -458,6 +481,41 @@ Enforcement policies for KeeperPAM are managed in the Keeper Admin Console
 under **Admin** > **Roles** > **Enforcement Policies** > **Privileged Access
 Manager**.
 
+Enforcement Policy
+
+Commander Enforcement Policy
+
+Definition
+
+Can configure tunnel settings
+
+Copy
+
+    
+    
+    ALLOW_CONFIGURE_PAM_TUNNELING_SETTINGS
+
+Allow users to configure Tunnel settings on PAM Machine, PAM Directory, PAM
+Database and PAM Configuration Records Types
+
+Can start tunnels
+
+Copy
+
+    
+    
+    ALLOW_LAUNCH_PAM_TUNNELS
+
+Allow users to start tunnels on PAM Machine, PAM Directory and PAM Database
+Record Types
+
+Copy
+
+    
+    
+    enterprise-role "My Role" --enforcement "ALLOW_CONFIGURE_PAM_TUNNELING_SETTINGS":true
+    enterprise-role "My Role" --enforcement "ALLOW_LAUNCH_PAM_TUNNELS":true
+
 ####
 
 Enforcement Policy Use Cases
@@ -478,9 +536,19 @@ customer's network to enabled zero-trust access to target infrastructure.
 Typically this service is installed on a Linux or Docker environment in each
 of the networks that requires access.
 
+For more details on installing and setting up your gateway, visit this
+[page](/en/keeperpam/privileged-access-manager/getting-started/gateways).
+
 ###
 
 PAM Configuration
+
+The **PAM Configuration** contains essential information of your target
+infrastructure, settings and [Keeper Gateway](/en/keeperpam/privileged-access-
+manager/getting-started/gateways). Setting up a PAM Configuration for your
+infrastructure is **required**. For more information on creating and
+configuring the PAM Configuration, visit this [page](/en/keeperpam/privileged-
+access-manager/getting-started/pam-configuration).
 
 ###
 
@@ -489,6 +557,16 @@ PAM Machine, PAM Database, or PAM Directory
 **Keeper Tunnel** is a secure, encrypted TCP/IP connection established between
 your vault client to the target endpoint. The target endpoint needs to be
 defined on one of the following PAM Record types:
+
+PAM Record Type
+
+Target Endpoint type
+
+Windows/MacOS/Linux Machines, EC2 Instances, Azure VMs
+
+MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
+
+Active Directory, OpenLDAP
 
 Depending on your target endpoint, visit the corresponding PAM Record Type
 page for more information on setup.
@@ -509,6 +587,33 @@ screen by:
 
 After navigating to the Tunnel Section on the PAM Settings screen. The
 following table lists all the configurable fields for Tunnels:
+
+Field
+
+Definition
+
+PAM Configuration
+
+**Required**
+
+This is the PAM Configuration that contains the details of your target
+infrastructure and provides access to the target configured on the PAM Record
+
+Enable Tunnel
+
+**Required** When checked, enable tunnels for this record
+
+Reuse Last Port
+
+When checked, the last used tunnel port will be reused. This ensures that the
+port number doesn't change every time.
+
+Tunneling Port
+
+The port which is used to connect from the Keeper Gateway to the target
+infrastructure. If not specified, the gateway will use the "rotation port"
+specified in the Keeper record view. If the specified port is in use, Tunnels
+will fail to start.
 
 The following image shows a PAM Machine record where:
 
@@ -546,125 +651,26 @@ database:
 Likewise, using the CLI on the local device can initiate a connection to the
 database using this command:
 
-##
-
-Commander CLI
-
-Related commands:
-
-  * 
-
-####
-
-Example:
-
-##
-
-Tunnels versus Connections
-
-A tunnel provides a path from the user's local device to the target
-infrastructure using end-to-end encryption. For security reasons, Keeper does
-not intercept or interfere in the low level communications. Therefore, any
-authentication required for a protocol, such as a password or SSH key must be
-available to the user on their local device. Keeper does not intercept the
-protocol layer.
-
-KeeperPAM provides two methods of accessing remote infrastructure without the
-need to share credentials:
-
-  *   * 
-
-Enforcement Policy
-
-Commander Enforcement Policy
-
-Definition
-
-Tunnels can also be enabled on the  using the `enterprise-role` command:
-
-For more details on installing and setting up your gateway, visit this .
-
-The **PAM Configuration** contains essential information of your target
-infrastructure, settings and . Setting up a PAM Configuration for your
-infrastructure is **required**. For more information on creating and
-configuring the PAM Configuration, visit this .
-
-PAM Record Type
-
-Target Endpoint type
-
-Field
-
-Definition
-
-provides Tunneling capabilities in addition to using the Keeper Desktop UI.
-
-If tunnels are provided to users along with the necessary credentials, we
-recommend automatic rotation of the credential to ensure that the credentials
-are ephemeral and invalidated on a scheduled basis. For more information about
-rotation, see the  section.
-
-to establish interactive sessions across many different protocols
-
-with Autofill to establish web-based interactive sessions
-
-Can configure tunnel settings
-
-Copy
-
-    
-    
-    ALLOW_CONFIGURE_PAM_TUNNELING_SETTINGS
-
-Allow users to configure Tunnel settings on PAM Machine, PAM Directory, PAM
-Database and PAM Configuration Records Types
-
-Can start tunnels
-
-Copy
-
-    
-    
-    ALLOW_LAUNCH_PAM_TUNNELS
-
-Allow users to start tunnels on PAM Machine, PAM Directory and PAM Database
-Record Types
-
-Copy
-
-    
-    
-    enterprise-role "My Role" --enforcement "ALLOW_CONFIGURE_PAM_TUNNELING_SETTINGS":true
-    enterprise-role "My Role" --enforcement "ALLOW_LAUNCH_PAM_TUNNELS":true
-
-PAM Configuration
-
-**Required**
-
-This is the PAM Configuration that contains the details of your target
-infrastructure and provides access to the target configured on the PAM Record
-
-Enable Tunnel
-
-**Required** When checked, enable tunnels for this record
-
-Reuse Last Port
-
-When checked, the last used tunnel port will be reused. This ensures that the
-port number doesn't change every time.
-
-Tunneling Port
-
-The port which is used to connect from the Keeper Gateway to the target
-infrastructure. If not specified, the gateway will use the "rotation port"
-specified in the Keeper record view. If the specified port is in use, Tunnels
-will fail to start.
-
 Copy
 
     
     
     mysql --host=127.0.0.1 --port=59644 --user=admin --password
+
+##
+
+Commander CLI
+
+[Keeper Commander](/en/keeperpam/commander-cli/overview) provides Tunneling
+capabilities in addition to using the Keeper Desktop UI.
+
+Related commands:
+
+  * [`pam tunnel`](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
+
+####
+
+Example:
 
 Copy
 
@@ -680,54 +686,31 @@ Copy
     Tail logs on open tunnel: pam tunnel tail pbxV4snkAP9KGCUhSb6aQ==
     Stop a tunnel           : pam tunnel stop pbxV4snkAP9KGCUhSb6aQ==
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
+##
 
-# Setting up Tunnels
+Tunnels versus Connections
 
-Setting up Tunnels in your Desktop Vault
+A tunnel provides a path from the user's local device to the target
+infrastructure using end-to-end encryption. For security reasons, Keeper does
+not intercept or interfere in the low level communications. Therefore, any
+authentication required for a protocol, such as a password or SSH key must be
+available to the user on their local device. Keeper does not intercept the
+protocol layer.
 
-[PreviousTunnels](/en/keeperpam/privileged-access-manager/tunnels)[NextRemote
-Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation)
+If tunnels are provided to users along with the necessary credentials, we
+recommend automatic rotation of the credential to ensure that the credentials
+are ephemeral and invalidated on a scheduled basis. For more information about
+rotation, see the [Password Rotation](/en/keeperpam/secrets-manager/password-
+rotation) section.
 
-  * Overview 
-  * Prerequisites
-  * Tunnel Enforcement Policies
-  * Installing the Keeper Gateway
-  * PAM Configuration
-  * PAM Machine, PAM Database, or PAM Directory
-  * PAM Settings - Tunnel Settings
-  * Starting a Tunnel
-  * Using the Tunnel
-  * Commander CLI
-  * Tunnels versus Connections
+KeeperPAM provides two methods of accessing remote infrastructure without the
+need to share credentials:
 
-[page](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+  * [Connections](/en/keeperpam/privileged-access-manager/connections) to establish interactive sessions across many different protocols
 
-[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)
+  * [Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-isolation) with Autofill to establish web-based interactive sessions
 
-[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration)
-
-[Keeper Commander](/en/keeperpam/commander-cli/overview)
-
-[`pam tunnel`](/en/keeperpam/commander-cli/command-reference/keeperpam-
-commands)
-
-[Password Rotation](/en/keeperpam/secrets-manager/password-rotation)
-
-[Connections](/en/keeperpam/privileged-access-manager/connections)
-
-[Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-
-browser-isolation)
-
-Windows/MacOS/Linux Machines, EC2 Instances, Azure VMs
-
-MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
-
-Active Directory, OpenLDAP
+Tunnels can also be enabled on the  using the `enterprise-role` command:
 
 [PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-machine)

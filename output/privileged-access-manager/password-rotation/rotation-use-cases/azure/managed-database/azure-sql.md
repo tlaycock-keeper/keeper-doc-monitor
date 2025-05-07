@@ -418,10 +418,33 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * Prerequisites
+  * 1\. Set up a PAM Database Record
+  * 2\. Set up PAM Configuration
+  * 3\. Set up one or more PAM User records
+  * 4\. Configure Rotation on the PAM User records
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=bM0A3H8MVDz7AappV6Jx&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure)
+  5. [Azure Managed Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database)
+
+# Azure SQL
+
+Rotating Admin/Regular Azure SQL Database Users with Keeper
+
+[PreviousAzure Managed Database](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/azure/managed-database)[NextAzure
+MySQL - Single or Flexible Database](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/azure/managed-database/azure-
+mysql-single-or-flexible-database)
 
 Last updated 1 month ago
 
@@ -468,79 +491,6 @@ change the credentials of the database user accounts.
 The following table lists all the **required** fields on the **PAM Database**
 Record:
 
-Note: Adding Provider Group, Provider Region, and Database ID will enable
-managing the **PAM Database** Record through the Azure SDK.
-
-This **PAM Database** Record with the linked admin credential needs to be in a
-shared folder that is shared to the KSM application created in the pre-
-requisites. Only the KSM application needs access to this privileged account,
-it does not need to be shared with any users.
-
-##
-
-2\. Set up PAM Configuration
-
-Note: You can skip this step if you already have a PAM Configuration set up
-for this environment.
-
-If you are creating a new **PAM Configuration** , login to the Keeper Vault
-and select "Secrets Manager", then select the "PAM Configurations" tab, and
-click on "New Configuration". The following table lists all the required****
-fields on the **PAM Configuration** Record:
-
-##
-
-3\. Set up one or more PAM User records
-
-Keeper Rotation will use the linked credentials in the **PAM Database** record
-to rotate the **PAM User** records on your Azure environment. The **PAM User**
-credential needs to be in a shared folder that is shared to the KSM
-application created in the prerequisites.
-
-The following table lists all the required**** fields on the **PAM User**
-record:
-
-##
-
-4\. Configure Rotation on the PAM User records
-
-Select the **PAM User** record(s) from Step 3, edit the record and open the
-"Password Rotation Settings".
-
-  * Select the desired schedule and password complexity.
-
-  * The "Rotation Settings" should use the **PAM Configuration** setup previously. 
-
-  * The "Resource Credential" field should select the **PAM Database** credential setup from Step 1.
-
-  * Upon saving, the rotation button will be enabled and available to rotate on demand, or via the selected schedule.
-
-Any user with `edit` rights to a **PAM User** record has the ability to setup
-rotation for that record.
-
-See the  for a high level overview and getting started with Azure
-
-are configured for your role
-
-A Keeper Secrets Manager  has been created
-
-Your Azure environment is  per our documentation
-
-Your  is online
-
-If the Gateway is installed on a Linux or macOS server, install the
-
-Field
-
-Description
-
-Field
-
-Description
-
-For more details on all the configurable fields in the PAM Configuration
-record, visit this .
-
 Field
 
 Description
@@ -554,8 +504,6 @@ Keeper record title Ex: `Azure SQL Admin`
 The Database Server name i.e `testdb-sql.mssql.database.azure.com`
 
 **Port**
-
-For default ports, see port mapping Ex: `1433`
 
 **Use SSL**
 
@@ -589,6 +537,30 @@ Azure Resource group name
 **Provider Region**
 
 Azure Resource region i.e. `East US`
+
+Note: Adding Provider Group, Provider Region, and Database ID will enable
+managing the **PAM Database** Record through the Azure SDK.
+
+This **PAM Database** Record with the linked admin credential needs to be in a
+shared folder that is shared to the KSM application created in the pre-
+requisites. Only the KSM application needs access to this privileged account,
+it does not need to be shared with any users.
+
+##
+
+2\. Set up PAM Configuration
+
+Note: You can skip this step if you already have a PAM Configuration set up
+for this environment.
+
+If you are creating a new **PAM Configuration** , login to the Keeper Vault
+and select "Secrets Manager", then select the "PAM Configurations" tab, and
+click on "New Configuration". The following table lists all the required****
+fields on the **PAM Configuration** Record:
+
+Field
+
+Description
 
 **Title**
 
@@ -632,6 +604,22 @@ services.
 
 The UUID of the Azure Active Directory
 
+##
+
+3\. Set up one or more PAM User records
+
+Keeper Rotation will use the linked credentials in the **PAM Database** record
+to rotate the **PAM User** records on your Azure environment. The **PAM User**
+credential needs to be in a shared folder that is shared to the KSM
+application created in the prerequisites.
+
+The following table lists all the required**** fields on the **PAM User**
+record:
+
+Field
+
+Description
+
 **Title**
 
 Keeper record title i.e. `Azure DB User1`
@@ -652,28 +640,40 @@ Optional database that will be used when connecting to the database server.
 For example, MS SQL server requires a database and so this will default to
 `master`.
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure)
-  5. [Azure Managed Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database)
+##
 
-# Azure SQL
+4\. Configure Rotation on the PAM User records
 
-Rotating Admin/Regular Azure SQL Database Users with Keeper
+Select the **PAM User** record(s) from Step 3, edit the record and open the
+"Password Rotation Settings".
 
-[PreviousAzure Managed Database](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/managed-database)[NextAzure
-MySQL - Single or Flexible Database](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/managed-database/azure-
-mysql-single-or-flexible-database)
+  * Select the desired schedule and password complexity.
 
-  * Overview
-  * Prerequisites
-  * 1\. Set up a PAM Database Record
-  * 2\. Set up PAM Configuration
-  * 3\. Set up one or more PAM User records
-  * 4\. Configure Rotation on the PAM User records
+  * The "Rotation Settings" should use the **PAM Configuration** setup previously. 
+
+  * The "Resource Credential" field should select the **PAM Database** credential setup from Step 1.
+
+  * Upon saving, the rotation button will be enabled and available to rotate on demand, or via the selected schedule.
+
+Any user with `edit` rights to a **PAM User** record has the ability to setup
+rotation for that record.
+
+See the  for a high level overview and getting started with Azure
+
+are configured for your role
+
+A Keeper Secrets Manager  has been created
+
+Your Azure environment is  per our documentation
+
+Your  is online
+
+If the Gateway is installed on a Linux or macOS server, install the
+
+For default ports, see  Ex: `1433`
+
+For more details on all the configurable fields in the PAM Configuration
+record, visit this .
 
 [Azure Overview](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/azure)
@@ -695,6 +695,8 @@ us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver16)
 
 [page](/en/keeperpam/privileged-access-manager/getting-started/pam-
 configuration)
+
+port mapping
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

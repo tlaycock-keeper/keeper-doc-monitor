@@ -443,7 +443,7 @@ started/pam-resources/pam-remote-browser)[NextSharing and Access
 Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-
 access-control)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 
@@ -579,16 +579,6 @@ below.
 [Note (1)](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user#note-1)
 
-Creating a PAM User
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkAjqR7emtY9jLtKEyEkg%252FKeeperPAM%2520User.jpg%3Falt%3Dmedia%26token%3Db43bd7ce-e079-4e7e-aabc-592ef88f5e11&width=768&dpr=4&quality=100&sign=8e5923e6&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIRM2u2catMzTjLm3TP6n%252FScreenshot%25202024-12-28%2520at%25207.44.54%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D39192e46-6bd5-44c1-90de-12e3a2f17a18&width=768&dpr=4&quality=100&sign=33e61a6b&sv=2)
-
 On the "Rotation Settings" section of the PAM User vault record, you can
 configure how credential rotation is managed.
 
@@ -639,8 +629,6 @@ Keeper supports 3 different types of rotation:
   * **IAM User:** Uses the cloud-specific APIs for performing rotation, such as AWS IAM users and Azure managed resources. In this case, only the PAM Configuration is required since it contains the necessary 
 
   * **Run PAM scripts only:** Skips the standard rotation and only executes the attached PAM Scripts.
-
-The rotation schedule can be set on a specific interval, or using a cron spec.
 
 ###
 
@@ -696,7 +684,13 @@ Below are some examples of PAM User records.
 
 For advanced scheduling, see the .
 
-cron spec
+The rotation schedule can be set on a specific interval, or using a .
+
+[cron spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
+
+[cron spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
+
+Creating a PAM User
 
 PAM User record editing
 
@@ -721,6 +715,14 @@ AWS IAM User
 Database user
 
 Azure AD User
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkAjqR7emtY9jLtKEyEkg%252FKeeperPAM%2520User.jpg%3Falt%3Dmedia%26token%3Db43bd7ce-e079-4e7e-aabc-592ef88f5e11&width=768&dpr=4&quality=100&sign=8e5923e6&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIRM2u2catMzTjLm3TP6n%252FScreenshot%25202024-12-28%2520at%25207.44.54%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D39192e46-6bd5-44c1-90de-12e3a2f17a18&width=768&dpr=4&quality=100&sign=33e61a6b&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

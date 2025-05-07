@@ -423,6 +423,10 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=WueabVgpBR1TU72wZjh7&only=yes&limit=100)
 
+Last updated 7 months ago
+
+Was this helpful?
+
   1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
 
 # References
@@ -431,51 +435,25 @@ PDF](/en/keeperpam/~gitbook/pdf?page=WueabVgpBR1TU72wZjh7&only=yes&limit=100)
 manager/on-prem-connection-manager)[NextPort
 Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
 
-Last updated 7 months ago
-
-Was this helpful?
-
 [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-
-mapping)
-
-[Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-
-up-ssh)
-
-[Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-
-up-winrm)
-
-[Setting up SQL Server](/en/keeperpam/privileged-access-
-manager/references/setting-up-sql-server)
-
-[Database Import and Export](/en/keeperpam/privileged-access-
-manager/references/database-import-and-export)
-
-[Installing sqlcmd on Linux](/en/keeperpam/privileged-access-
-manager/references/installing-sqlcmd-on-linux)
-
-[Installing Docker on Linux](/en/keeperpam/privileged-access-
-manager/references/installing-docker-on-linux)
-
-[Creating KSM App for Rotation](/en/keeperpam/privileged-access-
-manager/references/creating-ksm-app-for-rotation)
-
-[Active Directory Least Privilege](/en/keeperpam/privileged-access-
-manager/references/active-directory-least-privilege)
-
-[Event Reporting](/en/keeperpam/privileged-access-manager/references/event-
-reporting)
-
-[Importing PAM Records](/en/keeperpam/privileged-access-
-manager/references/importing-pam-records)
-
-[Managing Rotation via CLI](/en/keeperpam/privileged-access-
-manager/references/managing-rotation-via-cli)
-
-[Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-
-sdk)
-
-[Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
-
-[Preview Access](/en/keeperpam/privileged-access-manager/references/preview-
-access)
+mapping)[Setting up SSH](/en/keeperpam/privileged-access-
+manager/references/setting-up-ssh)[Setting up WinRM](/en/keeperpam/privileged-
+access-manager/references/setting-up-winrm)[Setting up SQL
+Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-
+server)[Database Import and Export](/en/keeperpam/privileged-access-
+manager/references/database-import-and-export)[Installing sqlcmd on
+Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-
+on-linux)[Installing Docker on Linux](/en/keeperpam/privileged-access-
+manager/references/installing-docker-on-linux)[Creating KSM App for
+Rotation](/en/keeperpam/privileged-access-manager/references/creating-ksm-app-
+for-rotation)[Active Directory Least Privilege](/en/keeperpam/privileged-
+access-manager/references/active-directory-least-privilege)[Event
+Reporting](/en/keeperpam/privileged-access-manager/references/event-
+reporting)[Importing PAM Records](/en/keeperpam/privileged-access-
+manager/references/importing-pam-records)[Managing Rotation via
+CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-
+cli)[Commander SDK](/en/keeperpam/privileged-access-
+manager/references/commander-sdk)[Cron Spec](/en/keeperpam/privileged-access-
+manager/references/cron-spec)[Preview Access](/en/keeperpam/privileged-access-
+manager/references/preview-access)
 

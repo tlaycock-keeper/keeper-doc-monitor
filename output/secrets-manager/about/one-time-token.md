@@ -418,10 +418,30 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * About
+  * Using Commander To Generate a Token
+  * Using The Keeper Vault to Generate a Token
+  * With a New Application
+  * With an Existing Application
+  * Generating Configurations
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-MksbooTCUQVIdcCm1yR&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [About KSM](/en/keeperpam/secrets-manager/about)
+
+# One Time Access Token
+
+Information about the One Time Access Token used to connect client devices to
+Keeper
+
+[PreviousSecurity & Encryption Model](/en/keeperpam/secrets-
+manager/about/security-encryption-model)[NextSecrets Manager
+Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-
+configuration)
 
 Last updated 4 months ago
 
@@ -456,8 +476,30 @@ If you already have an application that you would like to use, skip to
 
 Use `secrets-manager app create` to create a new Secrets Manager application
 
+Copy
+
+    
+    
+    My Vault> secrets-manager app create DevOps
+    Application was successfully added
+
 `secrets-manager app list` can be used to see a list of available
 applications.
+
+Copy
+
+    
+    
+    My Vault> secrets-manager app list
+    
+    List all Secrets Manager Applications
+    
+    Title              UID
+    -----------------  ----------------------
+    DevOps             fe6mv_ZBLqca35dBUTdNeQ
+    Examples           Xym5lhpSidvtk9VlmV_3dQ
+    Github Actions     L5FqK5DUJhxeCXp50nSkuw
+    Jenkind            R2jMVW_QwL3FsCJziotpLQ
 
 ####
 
@@ -474,6 +516,15 @@ UID>`
 Optionally use the --editable flag to give the application edit permissions.
 
 In the example below, "XXX" would be replaced by a record or shared folder UID
+
+Copy
+
+    
+    
+    My Vault> secrets-manager share add --app DevOps --secret XXX --editable
+    
+    Successfully added secrets to app uid=XXX, editable=True:
+            RpdmKFgF5lpsaID3TcHu8A Shared Folder
 
 To locate a Record UID or Folder UID, The `ls -l `command can be used to see a
 list of records, and folders with the corresponding UIDs
@@ -492,6 +543,21 @@ Optionally, `--name <NAME>` can be used to set a client device name and
 `--unlock-ip` can be used to allow any authenticated device to connect. By
 default, access is locked down based on external IP address of the client
 device.
+
+Copy
+
+    
+    
+    My Vault> secrets-manager client add --app DevOps --name server1
+    
+    Successfully generated Client Device
+    ====================================
+    
+    One-Time Access Token: US:19-V--cbg8P-o9OVDzMl_hWnrt-QE1eAMQHgSkQMUi0
+    Name: server1
+    IP Lock: Enabled
+    Token Expires On: 2021-10-01 11:14:18
+    App Access Expires on: Never
 
 **Note the One-Time Access Token is displayed when the client device is
 created.**
@@ -603,74 +669,8 @@ access token.
 
 The  reviews how to create a Secrets Manager Configuration.
 
-Copy
-
-    
-    
-    My Vault> secrets-manager share add --app DevOps --secret XXX --editable
-    
-    Successfully added secrets to app uid=XXX, editable=True:
-            RpdmKFgF5lpsaID3TcHu8A Shared Folder
-
-Copy
-
-    
-    
-    My Vault> secrets-manager client add --app DevOps --name server1
-    
-    Successfully generated Client Device
-    ====================================
-    
-    One-Time Access Token: US:19-V--cbg8P-o9OVDzMl_hWnrt-QE1eAMQHgSkQMUi0
-    Name: server1
-    IP Lock: Enabled
-    Token Expires On: 2021-10-01 11:14:18
-    App Access Expires on: Never
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [About KSM](/en/keeperpam/secrets-manager/about)
-
-# One Time Access Token
-
-Information about the One Time Access Token used to connect client devices to
-Keeper
-
-[PreviousSecurity & Encryption Model](/en/keeperpam/secrets-
-manager/about/security-encryption-model)[NextSecrets Manager
-Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-
-configuration)
-
-  * About
-  * Using Commander To Generate a Token
-  * Using The Keeper Vault to Generate a Token
-  * With a New Application
-  * With an Existing Application
-  * Generating Configurations
-
 [next section](/en/keeperpam/secrets-manager/about/secrets-manager-
 configuration)
-
-Copy
-
-    
-    
-    My Vault> secrets-manager app create DevOps
-    Application was successfully added
-
-Copy
-
-    
-    
-    My Vault> secrets-manager app list
-    
-    List all Secrets Manager Applications
-    
-    Title              UID
-    -----------------  ----------------------
-    DevOps             fe6mv_ZBLqca35dBUTdNeQ
-    Examples           Xym5lhpSidvtk9VlmV_3dQ
-    Github Actions     L5FqK5DUJhxeCXp50nSkuw
-    Jenkind            R2jMVW_QwL3FsCJziotpLQ
 
 [Keeper Commander](/en/keeperpam/secrets-manager/about/one-time-token#using-
 commander-to-generate-a-token)
@@ -699,15 +699,15 @@ The Add Device form
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwGBqSEWVeD1DGOx-E%252Fimage.png%3Falt%3Dmedia%26token%3D08811fbb-f6dc-4e78-b101-152948f5c11a&width=768&dpr=4&quality=100&sign=9938fb47&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwHKLwE40srCh9Oqhg%252Fimage.png%3Falt%3Dmedia%26token%3D489ca694-1442-44c6-9bf1-d4af34560e36&width=768&dpr=4&quality=100&sign=96e08b0d&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwKUixFqY8vXCLYH9I%252Fimage.png%3Falt%3Dmedia%26token%3Dba298a3a-b189-4032-9902-c7dc39e1debb&width=768&dpr=4&quality=100&sign=ed8bbdc&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwGBqSEWVeD1DGOx-E%252Fimage.png%3Falt%3Dmedia%26token%3D08811fbb-f6dc-4e78-b101-152948f5c11a&width=768&dpr=4&quality=100&sign=9938fb47&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwHBXhb0TyqFXv_pqf%252Fimage.png%3Falt%3Dmedia%26token%3De4de2b61-aa02-4946-91dd-9b7c16a58905&width=768&dpr=4&quality=100&sign=d6f04ef5&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -716,7 +716,7 @@ wCYECjEON%252Fimage.png%3Falt%3Dmedia%26token%3D33f480f5-3aae-4048-bba7-ea9b5c74
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwHBXhb0TyqFXv_pqf%252Fimage.png%3Falt%3Dmedia%26token%3De4de2b61-aa02-4946-91dd-9b7c16a58905&width=768&dpr=4&quality=100&sign=d6f04ef5&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwKUixFqY8vXCLYH9I%252Fimage.png%3Falt%3Dmedia%26token%3Dba298a3a-b189-4032-9902-c7dc39e1debb&width=768&dpr=4&quality=100&sign=ed8bbdc&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -726,10 +726,6 @@ files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwK7U
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwI0nQhO-
 wCYECjEON%252Fimage.png%3Falt%3Dmedia%26token%3D33f480f5-3aae-4048-bba7-ea9b5c748bbd&width=768&dpr=4&quality=100&sign=8a252b31&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwIQJUKr-x5puBZrR9%252Fimage.png%3Falt%3Dmedia%26token%3Df2d00787-0549-49e4-9411-767814561bf7&width=768&dpr=4&quality=100&sign=51d63238&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -743,6 +739,10 @@ tEVeKRUFHuU%252Fimage.png%3Falt%3Dmedia%26token%3D020fa879-e41a-4a0d-a1c3-8ce0b9
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwIsKda8YtcIcdTEHg%252Fimage.png%3Falt%3Dmedia%26token%3D17df6f33-834a-4151-bdf6-fec1fa924628&width=768&dpr=4&quality=100&sign=c7f6884f&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwIQJUKr-x5puBZrR9%252Fimage.png%3Falt%3Dmedia%26token%3Df2d00787-0549-49e4-9411-767814561bf7&width=768&dpr=4&quality=100&sign=51d63238&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

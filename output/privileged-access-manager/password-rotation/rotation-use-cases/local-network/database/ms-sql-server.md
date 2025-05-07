@@ -386,6 +386,40 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * Prerequisites
+  * 1\. Set up a PAM Database Record
+  * 2\. Set up a PAM Configuration
+  * 3\. Set up one or more PAM User records
+  * 4\. Configure Rotation on the PAM User records
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=ynmCatJDHHUA5hHUTUHL&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
+  5. [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
+
+# Native MS SQL Server
+
+Rotating Local Network Microsoft SQL Server database accounts with Keeper
+Rotation
+
+[PreviousNative MongoDB](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/database/mongodb)[NextNative
+Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/local-network/database/oracle)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -416,17 +450,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=ynmCatJDHHUA5hHUTUHL&only=yes&limit=100)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 ##
 
 Overview
@@ -441,7 +464,11 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   *   *     * 
+  *   *   * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+
+  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is able to communicate to your MySQL database
+
+    * If the Gateway is installed on a Linux or macOS server, install the [Microsoft ODBC driver](https://learn.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver16)
 
 ##
 
@@ -454,67 +481,6 @@ change the credentials of other accounts.
 
 The following table lists all the **required** fields that needs to be filled
 on the PAM Database record with your information:
-
-##
-
-2\. Set up a PAM Configuration
-
-Note: You can skip this step if you already have a PAM Configuration set up
-for this environment.
-
-If you are creating a new **PAM Configuration** , login to the Keeper Vault
-and select "Secrets Manager", then select the "PAM Configurations" tab, and
-click on "New Configuration". The following table lists all the required****
-fields on the **PAM Configuration** Record:
-
-##
-
-3\. Set up one or more PAM User records
-
-Keeper Rotation will use the credentials in the **PAM Database** record to
-rotate the **PAM User** records on your Local environment. The **PAM User**
-credential needs to be in a shared folder that is shared to the KSM
-application created in the prerequisites.
-
-The following table lists all the required**** fields on the **PAM User**
-record:
-
-##
-
-4\. Configure Rotation on the PAM User records
-
-Select the **PAM User** record(s) from Step 3, edit the record and open the
-"Password Rotation Settings".
-
-  * Select the desired schedule and password complexity.
-
-  * The "Rotation Settings" should use the **PAM Configuration** setup previously. 
-
-  * The "Resource Credential" field should select the **PAM Database** credential setup from Step 1.
-
-  * Upon saving, the rotation button will be enabled and available to rotate on demand, or via the selected schedule.
-
-Any user with `edit` rights to a **PAM User** record has the ability to setup
-rotation for that record.
-
-Keeper Secrets Manager is enabled for your
-
-Keeper Rotation is enabled for your
-
-A Keeper Secrets Manager  has been created
-
-A Keeper Rotation  is already installed, running, and is able to communicate
-to your MySQL database
-
-If the Gateway is installed on a Linux or macOS server, install the
-
-Field
-
-Description
-
-Field
-
-Description
 
 Field
 
@@ -552,6 +518,22 @@ For example, MS SQL server requires a database and so this will default to
 
 `mssql`
 
+##
+
+2\. Set up a PAM Configuration
+
+Note: You can skip this step if you already have a PAM Configuration set up
+for this environment.
+
+If you are creating a new **PAM Configuration** , login to the Keeper Vault
+and select "Secrets Manager", then select the "PAM Configurations" tab, and
+click on "New Configuration". The following table lists all the required****
+fields on the **PAM Configuration** Record:
+
+Field
+
+Description
+
 **Title**
 
 Configuration name, example: `MSSQL LAN Configuration`
@@ -570,6 +552,22 @@ application and has network access to your MS SQL Server database
 Select the Shared folder where the PAM Configuration will be stored. We
 recommend placing this in a shared folder with the PAM User records, not the
 database resources.
+
+##
+
+3\. Set up one or more PAM User records
+
+Keeper Rotation will use the credentials in the **PAM Database** record to
+rotate the **PAM User** records on your Local environment. The **PAM User**
+credential needs to be in a shared folder that is shared to the KSM
+application created in the prerequisites.
+
+The following table lists all the required**** fields on the **PAM User**
+record:
+
+Field
+
+Description
 
 **Record Type**
 
@@ -593,36 +591,27 @@ Optional database that will be used when connecting to the database server.
 For example, MS SQL server requires a database and so this will default to
 `master`.
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
-  5. [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
+##
 
-# Native MS SQL Server
+4\. Configure Rotation on the PAM User records
 
-Rotating Local Network Microsoft SQL Server database accounts with Keeper
-Rotation
+Select the **PAM User** record(s) from Step 3, edit the record and open the
+"Password Rotation Settings".
 
-[PreviousNative MongoDB](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/database/mongodb)[NextNative
-Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/local-network/database/oracle)
+  * Select the desired schedule and password complexity.
 
-  * Overview
-  * Prerequisites
-  * 1\. Set up a PAM Database Record
-  * 2\. Set up a PAM Configuration
-  * 3\. Set up one or more PAM User records
-  * 4\. Configure Rotation on the PAM User records
+  * The "Rotation Settings" should use the **PAM Configuration** setup previously. 
 
-[application](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
+  * The "Resource Credential" field should select the **PAM Database** credential setup from Step 1.
 
-[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+  * Upon saving, the rotation button will be enabled and available to rotate on demand, or via the selected schedule.
 
-[Microsoft ODBC driver](https://learn.microsoft.com/en-
-us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver16)
+Any user with `edit` rights to a **PAM User** record has the ability to setup
+rotation for that record.
+
+Keeper Secrets Manager is enabled for your
+
+Keeper Rotation is enabled for your
 
 [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 overview#enabling-rotation-on-the-admin-console)

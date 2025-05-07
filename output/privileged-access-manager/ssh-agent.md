@@ -448,7 +448,7 @@ SSH agent
 manager/session-recording-and-playback)[NextIntegration with
 Git](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-git)
 
-Last updated 14 days ago
+Last updated 15 days ago
 
 Was this helpful?
 

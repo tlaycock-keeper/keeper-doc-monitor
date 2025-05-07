@@ -463,7 +463,7 @@ be used in your automations.
 manager/integrations/ansible)[NextAnsible Tower](/en/keeperpam/secrets-
 manager/integrations/ansible/ansible-tower)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 
@@ -1989,15 +1989,6 @@ plugin](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/copy
 playbook?](https://docs.ansible.com/ansible/latest/reference_appendices/faq.html#keep-
 secret-data)
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
-[One-Time Access Token](/en/keeperpam/secrets-manager/quick-start-
-guide#create-a-secrets-manager-client-device-1)
-
 [prerequisites](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
 plugin#prerequisites)
 
@@ -2009,6 +2000,9 @@ configuration)
 
 [Ansible variable](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
 plugin#ansible-variables)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG-
@@ -2023,4 +2017,10 @@ interface/secret-command#secret-command)
 
 [learn more](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/secret-command#notation)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
+[One-Time Access Token](/en/keeperpam/secrets-manager/quick-start-
+guide#create-a-secrets-manager-client-device-1)
 

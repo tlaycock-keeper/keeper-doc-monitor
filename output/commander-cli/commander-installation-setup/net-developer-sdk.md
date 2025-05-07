@@ -386,6 +386,35 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * .Net SDK
+  * API documentation 
+  * Developer Requirements
+  * Examples
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=F2aegQUDSfPyMkRxDc0o&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+
+# .NET Developer Setup
+
+Keeper Commander .NET Developer SDK
+
+[PreviousPython Developer Setup](/en/keeperpam/commander-cli/commander-
+installation-setup/developer-mode)[NextPowerShell
+Module](/en/keeperpam/commander-cli/commander-installation-setup/installation-
+on-powershell)
+
+Last updated 18 days ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -415,35 +444,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Overview
-  * .Net SDK
-  * API documentation 
-  * Developer Requirements
-  * Examples
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=F2aegQUDSfPyMkRxDc0o&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
-
-# .NET Developer Setup
-
-Keeper Commander .NET Developer SDK
-
-[PreviousPython Developer Setup](/en/keeperpam/commander-cli/commander-
-installation-setup/developer-mode)[NextPowerShell
-Module](/en/keeperpam/commander-cli/commander-installation-setup/installation-
-on-powershell)
-
-Last updated 17 days ago
-
-Was this helpful?
 
 ##
 

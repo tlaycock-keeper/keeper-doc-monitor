@@ -459,7 +459,7 @@ installation-setup/configuration/aws-secrets-manager)[NextAutomating with
 Windows Task](/en/keeperpam/commander-cli/commander-installation-
 setup/automating-with-windows-task)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 
