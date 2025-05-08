@@ -386,32 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Uninstallation - Python (pip3) Package
-  * Uninstallation - Windows Binary (.exe)
-  * Uninstallation - Mac Binary (.pkg)
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=EVOWK06gBXAelE9ne5RA&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
-
-# Uninstallation
-
-Instructions on uninstalling Keeper Commander
-
-[PreviousAutomating with AWS Lambda](/en/keeperpam/commander-cli/commander-
-installation-setup/using-commander-with-aws-lambda)[NextCommand
-Reference](/en/keeperpam/commander-cli/command-reference)
-
-Last updated 9 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -441,6 +415,32 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Uninstallation - Python (pip3) Package
+  * Uninstallation - Windows Binary (.exe)
+  * Uninstallation - Mac Binary (.pkg)
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=EVOWK06gBXAelE9ne5RA&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+
+# Uninstallation
+
+Instructions on uninstalling Keeper Commander
+
+[PreviousAutomating with AWS Lambda](/en/keeperpam/commander-cli/commander-
+installation-setup/using-commander-with-aws-lambda)[NextCommand
+Reference](/en/keeperpam/commander-cli/command-reference)
+
+Last updated 9 months ago
+
+Was this helpful?
 
 ##
 
@@ -504,12 +504,12 @@ to uninstall:
 and-programs-in-
 windows-4b55f974-2cc6-2d2b-d092-5905080eaf98#ID0EBD=Windows_10)
 
+[binary](/en/keeperpam/commander-cli/commander-installation-
+setup/installation-on-mac#binary-installation-recommended)
+
 [Windows binary,](/en/keeperpam/commander-cli/commander-installation-
 setup/installation-on-windows#typical-binary-installation-recommended)
 
 [pip3](/en/keeperpam/commander-cli/commander-installation-setup/installation-
 on-linux#installing-python)
-
-[binary](/en/keeperpam/commander-cli/commander-installation-
-setup/installation-on-mac#binary-installation-recommended)
 

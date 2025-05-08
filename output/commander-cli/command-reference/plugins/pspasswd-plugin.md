@@ -597,6 +597,9 @@ commands)
 [PSTools Package](https://docs.microsoft.com/en-
 us/sysinternals/downloads/pspasswd)
 
+[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
+cli#typed-vs-untyped-records-v3-vs-v2)
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqV0jzz2UhB6YKjWpjJnn%252Fimage.png%3Falt%3Dmedia%26token%3Dcb93de5c-e9fb-48d4-a890-1e6c9ba92162&width=768&dpr=4&quality=100&sign=6fa20915&sv=2)
@@ -604,7 +607,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqV0jzz2Uh
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fn0wNe2SmR5gUWuLVuYjZ%252Fimage.png%3Falt%3Dmedia%26token%3D01a0489d-b380-4e59-b2ee-9cf70e275640&width=768&dpr=4&quality=100&sign=1dc8df65&sv=2)
-
-[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
-cli#typed-vs-untyped-records-v3-vs-v2)
 

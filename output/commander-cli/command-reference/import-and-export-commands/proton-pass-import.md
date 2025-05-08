@@ -418,10 +418,26 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * Export your Proton Pass Data as a JSON File
+  * Import your Proton Pass Data into Keeper
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=z9ZeAVvO36OQbEWh2IFX&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
+
+# Proton Pass Import
+
+Automatic Migration of your Proton Pass Vault
+
+[PreviousMyki Import](/en/keeperpam/commander-cli/command-reference/import-
+and-export-commands/myki-import)[NextCSV Import](/en/keeperpam/commander-
+cli/command-reference/import-and-export-commands/csv-import)
 
 Last updated 5 months ago
 
@@ -463,22 +479,6 @@ Copy
     
     
     import --format=proton ProtonPass.zip
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
-
-# Proton Pass Import
-
-Automatic Migration of your Proton Pass Vault
-
-[PreviousMyki Import](/en/keeperpam/commander-cli/command-reference/import-
-and-export-commands/myki-import)[NextCSV Import](/en/keeperpam/commander-
-cli/command-reference/import-and-export-commands/csv-import)
-
-  * Overview
-  * Export your Proton Pass Data as a JSON File
-  * Import your Proton Pass Data into Keeper
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

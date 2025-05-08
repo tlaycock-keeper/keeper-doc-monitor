@@ -386,214 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * folder command
-  * list
-  * add
-  * update
-  * delete
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=P8kUH3qaIZeiQSA7lCGA&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
-
-# Folder Command
-
-Manage folders from the Keeper Vault shared to KSM Applications
-
-##
-
-`folder` command
-
-**Description:** List, create, update and delete folders from the vault. Works
-only within folders shared to KSM Applications. The folder command manages
-subfolders within existing shared folders.
-
-**Parameters:**
-
-Sub-command to run
-
-format: `**ksm folder <sub-command>**`
-
-**Sub-Commands:**
-
-Sub-Command
-
-Description
-
-`list`
-
-List all folders associated with the application
-
-`add`
-
-Add a new subfolder to the vault.
-
-`update`
-
-Rename a folder
-
-`delete`
-
-Delete the folders from the vault
-
-###
-
-**list**
-
-List all folders associated with the application
-
-`ksm folder list`
-
-  * optional parameters:
-
-  * `--json` return results in JSON format
-
-  * `-f, --folder <folder UID> ` List only folders/records in the selected folder UID.
-
-  * `-r, --recursive` list recursively all folders/records in the selected folder UID including all subfolders.
-
-  * `-l, --list-records` Include folder records info in the output.
-
-Without any parameters the command will list all folders shared to the KSM App
-and if `--list-records` option is present it will also show all records
-including any records directly shared to the KSM App _(not in a folder)_.
-
-**Example 1:** Tabular format
-
-Copy
-
-    
-    
-    $ ksm folder list
-    
-     Type Parent                  UID                     Title
-     ---- ----------------------- ----------------------- ---------------
-     dir                          vZdNYOi7Oh1q6pvI9jY8KA  Applications
-     dir                          EVvnsKbrlYHMi4HVTBn3-w  Databases
-     dir  EVvnsKbrlYHMi4HVTBn3-w  Bj9bNJjSFobG-VE7MImaIA  Oracle
-
-**Example 2:** JSON format
-
-Copy
-
-    
-    
-    $ ksm folder list --json
-    [
-        {
-            "type": "dir",
-            "parent_uid": "",
-            "uid": "vZdNYOi7Oh1q6pvI9jY8KA",
-            "title": "Applications"
-        },
-        {
-            "type": "dir",
-            "parent_uid": "",
-            "uid": "EVvnsKbrlYHMi4HVTBn3-w",
-            "title": "Databases"
-        },
-        {
-            "type": "dir",
-            "parent_uid": "EVvnsKbrlYHMi4HVTBn3-w",
-            "uid": "Bj9bNJjSFobG-VE7MImaIA",
-            "title": "Oracle"
-        }
-    ]
-
-###
-
-add
-
-Create a new subfolder into the specified parent folder. KSM can create
-subfolders only in existing shared folders that are shared to the KSM App
-including their subfolders and cannot create new shared folder(s).
-
-The output of a successful folder creation is the folder UID via standard out.
-There may be additional text, which is in standard error.
-
-`ksm folder add --parent-folder <FOLDER UID> --title <FOLDER TITLE>`
-
-Required parameters:
-
-`--parent-folder, -f` The parent folder UID where the new (sub)folder will be
-created.
-
-`--title, -t` Title of the new folder.
-
-**Example:**
-
-Copy
-
-    
-    
-    ksm folder add --parent-folder vZdNYOi7Oh1q6pvI9jY8KA --title NewApp
-    
-    The following is the new folder UID ...
-    Ai9iFYWf6EOE0T9fVAynBg
-
-###
-
-**update**
-
-Rename a folder.
-
-`ksm folder update --folder <FOLDER UID> --title NEW_TITLE`
-
-Parameters:
-
-  * `--folder, -f` \- Folder UID of the folder to rename.
-
-  * `--title, -t` \- The new folder title.
-
-**Example:**
-
-Copy
-
-    
-    
-    $ ksm folder update --uid Ai9iFYWf6EOE0T9fVAynBg --title NewAppTitle
-
-###
-
-**delete**
-
-Delete a folder in the vault _(shared to the KSM App)_
-
-`ksm folder delete <FOLDER UID>`
-
-Parameters:
-
-  * `<FOLDER UID>` UID of the folder to delete (Required)
-
-  * `-f, --force` force deletion of non-empty folders (Optional)
-
-**Example:**
-
-Copy
-
-    
-    
-    $ ksm folder delete Ai9iFYWf6EOE0T9fVAynBg
-    
-    UID                     Response Code Error
-    ----------------------- ------------- -----
-    Ai9iFYWf6EOE0T9fVAynBg  ok
-
-[PreviousSecret Command](/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface/secret-command)[NextSync
-Command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/sync-command)
-
-Last updated 11 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -623,4 +415,212 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=P8kUH3qaIZeiQSA7lCGA&only=yes&limit=100)
+
+Last updated 11 months ago
+
+Was this helpful?
+
+##
+
+`folder` command
+
+**Description:** List, create, update and delete folders from the vault. Works
+only within folders shared to KSM Applications. The folder command manages
+subfolders within existing shared folders.
+
+**Parameters:**
+
+Sub-command to run
+
+format: `**ksm folder <sub-command>**`
+
+**Sub-Commands:**
+
+###
+
+**list**
+
+List all folders associated with the application
+
+`ksm folder list`
+
+  * optional parameters:
+
+  * `--json` return results in JSON format
+
+  * `-f, --folder <folder UID> ` List only folders/records in the selected folder UID.
+
+  * `-r, --recursive` list recursively all folders/records in the selected folder UID including all subfolders.
+
+  * `-l, --list-records` Include folder records info in the output.
+
+Without any parameters the command will list all folders shared to the KSM App
+and if `--list-records` option is present it will also show all records
+including any records directly shared to the KSM App _(not in a folder)_.
+
+**Example 1:** Tabular format
+
+**Example 2:** JSON format
+
+###
+
+add
+
+Create a new subfolder into the specified parent folder. KSM can create
+subfolders only in existing shared folders that are shared to the KSM App
+including their subfolders and cannot create new shared folder(s).
+
+The output of a successful folder creation is the folder UID via standard out.
+There may be additional text, which is in standard error.
+
+`ksm folder add --parent-folder <FOLDER UID> --title <FOLDER TITLE>`
+
+Required parameters:
+
+`--parent-folder, -f` The parent folder UID where the new (sub)folder will be
+created.
+
+`--title, -t` Title of the new folder.
+
+**Example:**
+
+###
+
+**update**
+
+Rename a folder.
+
+`ksm folder update --folder <FOLDER UID> --title NEW_TITLE`
+
+Parameters:
+
+  * `--folder, -f` \- Folder UID of the folder to rename.
+
+  * `--title, -t` \- The new folder title.
+
+**Example:**
+
+###
+
+**delete**
+
+Delete a folder in the vault _(shared to the KSM App)_
+
+`ksm folder delete <FOLDER UID>`
+
+Parameters:
+
+  * `<FOLDER UID>` UID of the folder to delete (Required)
+
+  * `-f, --force` force deletion of non-empty folders (Optional)
+
+**Example:**
+
+Sub-Command
+
+Description
+
+`list`
+
+List all folders associated with the application
+
+`add`
+
+Add a new subfolder to the vault.
+
+`update`
+
+Rename a folder
+
+`delete`
+
+Delete the folders from the vault
+
+Copy
+
+    
+    
+    $ ksm folder list
+    
+     Type Parent                  UID                     Title
+     ---- ----------------------- ----------------------- ---------------
+     dir                          vZdNYOi7Oh1q6pvI9jY8KA  Applications
+     dir                          EVvnsKbrlYHMi4HVTBn3-w  Databases
+     dir  EVvnsKbrlYHMi4HVTBn3-w  Bj9bNJjSFobG-VE7MImaIA  Oracle
+
+Copy
+
+    
+    
+    $ ksm folder list --json
+    [
+        {
+            "type": "dir",
+            "parent_uid": "",
+            "uid": "vZdNYOi7Oh1q6pvI9jY8KA",
+            "title": "Applications"
+        },
+        {
+            "type": "dir",
+            "parent_uid": "",
+            "uid": "EVvnsKbrlYHMi4HVTBn3-w",
+            "title": "Databases"
+        },
+        {
+            "type": "dir",
+            "parent_uid": "EVvnsKbrlYHMi4HVTBn3-w",
+            "uid": "Bj9bNJjSFobG-VE7MImaIA",
+            "title": "Oracle"
+        }
+    ]
+
+Copy
+
+    
+    
+    ksm folder add --parent-folder vZdNYOi7Oh1q6pvI9jY8KA --title NewApp
+    
+    The following is the new folder UID ...
+    Ai9iFYWf6EOE0T9fVAynBg
+
+Copy
+
+    
+    
+    $ ksm folder update --uid Ai9iFYWf6EOE0T9fVAynBg --title NewAppTitle
+
+Copy
+
+    
+    
+    $ ksm folder delete Ai9iFYWf6EOE0T9fVAynBg
+    
+    UID                     Response Code Error
+    ----------------------- ------------- -----
+    Ai9iFYWf6EOE0T9fVAynBg  ok
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
+
+# Folder Command
+
+Manage folders from the Keeper Vault shared to KSM Applications
+
+[PreviousSecret Command](/en/keeperpam/secrets-manager/secrets-manager-
+command-line-interface/secret-command)[NextSync
+Command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/sync-command)
+
+  * folder command
+  * list
+  * add
+  * update
+  * delete
 

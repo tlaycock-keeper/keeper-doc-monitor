@@ -386,39 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Creating PAM Configuration
-  * PAM Configuration Fields
-  * Local Network Environment
-  * AWS Environment
-  * Azure Environment
-  * Domain Controller Environment
-  * PAM Features on PAM Configuration
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=r3KpQ6RkUwiqQMMpRR7r&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-
-# PAM Configuration
-
-Creating a PAM Configuration in the Keeper Vault
-
-[PreviousGateway Configuration with Custom Fields](/en/keeperpam/privileged-
-access-manager/getting-started/gateways/advanced-configuration/gateway-
-configuration-with-custom-fields)[NextAWS Environment
-Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/aws-environment-setup)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -448,6 +415,17 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=r3KpQ6RkUwiqQMMpRR7r&only=yes&limit=100)
+
+Last updated 3 months ago
+
+Was this helpful?
 
 ##
 
@@ -481,49 +459,6 @@ the following environments:
 The following tables provides more details on each configurable fields in the
 PAM Configuration record regardless of the environment you choose:
 
-Field
-
-Description
-
-Notes
-
-Title
-
-Name of PAM configuration record
-
-Ex: `US-EAST-1 Config`
-
-Gateway
-
-The configured gateway
-
-See [docs](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-for more info
-
-Application Folder
-
-The shared folder where the PAM Configuration data will be stored
-
-Best practice is to create a folder with limited access to admins. See
-Security Note (1) below
-
-PAM Settings
-
-List of Zero-Trust KeeperPAM features that should be enabled
-
-Default Rotation Schedule
-
-Specify frequency of Rotation
-
-Ex: `Daily`
-
-Port Mapping
-
-Define alternative default ports
-
-Ex: `3307=mysql `See [port mapping](/en/keeperpam/privileged-access-
-manager/references/port-mapping) docs
-
 **Security Note (1)** The PAM Configuration information is stored as a record
 in the vault inside the specified **Application Folder** and may contain
 secrets. Therefore, we recommend that the Application Folder should be limited
@@ -536,36 +471,70 @@ PAM Network Configuration record based on the environment you chose:
 
 Local Network Environment
 
-Field
-
-Description
-
-Notes
-
-Network ID
-
-Unique ID for the network
-
-This is for the user's reference
-
-Ex: `My Network`
-
-Network CIDR
-
-Subnet of the IP address
-
-Ex: `192.168.0.15/24` Refer to [this
-](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)for more info
-
 ###
 
 AWS Environment
 
+  * 
+
+###
+
+Azure Environment
+
+  * 
+
+###
+
+Domain Controller Environment
+
+This PAM Configuration type is not yet available, it will be launched in
+January 2025.
+
+##
+
+PAM Features on PAM Configuration
+
+The **"PAM Features Allowed"** and **"Session Recording Types Allowed"**
+sections in the PAM Configuration allow owners to enable or disable KeeperPAM
+features for resources managed through the PAM configuration:
+
 Field
 
 Description
 
 Notes
+
+Field
+
+Description
+
+Notes
+
+Field
+
+Description
+
+Notes
+
+See additional information on
+
+Field
+
+Description
+
+Notes
+
+See additional information on
+
+Field
+
+Description
+
+Required
+
+Field
+
+Description
 
 AWS ID
 
@@ -596,18 +565,6 @@ Port Mapping
 Any non-standard ports referenced. Separate newline per entry
 
 Ex: 2222=ssh 3390=rdp
-
-  * See additional information on [AWS Environment Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup)
-
-###
-
-Azure Environment
-
-Field
-
-Description
-
-Notes
 
 Azure ID
 
@@ -643,21 +600,6 @@ Resource Groups
 
 A list of resource groups to be checked. If left blank, all resource groups
 will be checked. Newlines should separate each resource group.
-
-  * See additional information on [Azure Environment Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/azure-environment-setup)
-
-###
-
-Domain Controller Environment
-
-This PAM Configuration type is not yet available, it will be launched in
-January 2025.
-
-Field
-
-Description
-
-Required
 
 DNS Domain Name
 
@@ -697,18 +639,6 @@ Define alternative default ports
 
 No
 
-##
-
-PAM Features on PAM Configuration
-
-The **"PAM Features Allowed"** and **"Session Recording Types Allowed"**
-sections in the PAM Configuration allow owners to enable or disable KeeperPAM
-features for resources managed through the PAM configuration:
-
-Field
-
-Description
-
 Rotation
 
 If enabled, allow rotations on privileged user users managed by this PAM
@@ -736,7 +666,33 @@ Text Session Recording (TypeScript)
 If enabled, text input and output logs will be logged for all connections and
 RBI sessions
 
-See  for more info
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+# PAM Configuration
+
+Creating a PAM Configuration in the Keeper Vault
+
+[PreviousGateway Configuration with Custom Fields](/en/keeperpam/privileged-
+access-manager/getting-started/gateways/advanced-configuration/gateway-
+configuration-with-custom-fields)[NextAWS Environment
+Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration/aws-environment-setup)
+
+  * Overview
+  * Creating PAM Configuration
+  * PAM Configuration Fields
+  * Local Network Environment
+  * AWS Environment
+  * Azure Environment
+  * Domain Controller Environment
+  * PAM Features on PAM Configuration
+
+[AWS Environment Setup](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration/aws-environment-setup)
+
+[Azure Environment Setup](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration/azure-environment-setup)
 
 [Local Network](/en/keeperpam/privileged-access-manager/getting-started/pam-
 configuration#local-network-environment)
@@ -749,6 +705,64 @@ configuration#aws-environment)
 
 [Domain Controller](/en/keeperpam/privileged-access-manager/getting-
 started/pam-configuration#domain-controller-environment)
+
+Title
+
+Name of PAM configuration record
+
+Ex: `US-EAST-1 Config`
+
+Gateway
+
+The configured gateway
+
+Application Folder
+
+The shared folder where the PAM Configuration data will be stored
+
+Best practice is to create a folder with limited access to admins. See
+Security Note (1) below
+
+PAM Settings
+
+List of Zero-Trust KeeperPAM features that should be enabled
+
+Default Rotation Schedule
+
+Specify frequency of Rotation
+
+Ex: `Daily`
+
+Port Mapping
+
+Define alternative default ports
+
+Network ID
+
+Unique ID for the network
+
+This is for the user's reference
+
+Ex: `My Network`
+
+Network CIDR
+
+Subnet of the IP address
+
+See  for more info
+
+See  for more info
+
+Ex: `3307=mysql `See  docs
+
+Ex: `192.168.0.15/24` Refer to for more info
+
+[docs](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+[port mapping](/en/keeperpam/privileged-access-manager/references/port-
+mapping)
+
+[this ](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
 
 [this section](/en/keeperpam/privileged-access-manager/getting-started/pam-
 configuration#pam-features-on-pam-configuration)

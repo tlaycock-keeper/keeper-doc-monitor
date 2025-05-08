@@ -418,25 +418,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * System Architecture
-  * High Availability and Local Cache
-  * Encryption Model
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-Mi1zTe4I8zDWSkB54eH&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [About KSM](/en/keeperpam/secrets-manager/about)
-
-# Architecture
-
-Secrets Manager High Level Architecture
-
-[PreviousAbout KSM](/en/keeperpam/secrets-
-manager/about)[NextTerminology](/en/keeperpam/secrets-
-manager/about/terminology)
 
 Last updated 4 months ago
 
@@ -480,6 +465,21 @@ requested Secrets from a local encrypted cache.
 Encryption Model
 
 More details about the security and encryption model are .
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [About KSM](/en/keeperpam/secrets-manager/about)
+
+# Architecture
+
+Secrets Manager High Level Architecture
+
+[PreviousAbout KSM](/en/keeperpam/secrets-
+manager/about)[NextTerminology](/en/keeperpam/secrets-
+manager/about/terminology)
+
+  * System Architecture
+  * High Availability and Local Cache
+  * Encryption Model
 
 [available here](/en/keeperpam/secrets-manager/about/security-encryption-
 model)

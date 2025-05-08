@@ -418,31 +418,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Features
-  * Prerequisites
-  * About
-  * Installation
-  * Community Step Template
-  * Custom Step Template
-  * Step Configuration
-  * Settings
-  * Parameters
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=dSjHRoYO5aq55jqwaTHQ&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Octopus Deploy
-
-Keeper Secrets Manager Step Template for accessing secrets in Octopus Deploy
-
-[PreviousLinux Keyring](/en/keeperpam/secrets-manager/integrations/linux-
-keyring)[NextOracle Key Vault Encryption](/en/keeperpam/secrets-
-manager/integrations/oracle-key-vault)
 
 Last updated 4 months ago
 
@@ -517,15 +496,6 @@ Parameters
 
  _Multiple fields can be retrieved by entering each one on a new line. The line format is_ `Notation | variable` _, where the variable name part is optional and if omitted auto generated variable names are used in the form of KsmSecret1, KsmSecret2, ...etc._
 
-Copy
-
-    
-    
-    V8lFbio0Bs0LuvaSD5DDHA/field/login | MyLogin
-    V8lFbio0Bs0LuvaSD5DDHA/field/password | MyPass
-    V8lFbio0Bs0LuvaSD5DDHA/custom_field/phone[1][number] | MyOtherPhoneNum
-    V8lFbio0Bs0LuvaSD5DDHA/file/IMG_0036.png | MyImageBase64
-
 For a complete list of Keeper Secrets Manager features see the
 
 Keeper Secrets Manager access (See the  for more details)
@@ -565,6 +535,45 @@ dynamically_.
 **Print output variable names**(type: Checkbox) **Variable name:**
 `#{Keeper.SecretsManager.RetrieveSecrets.PrintVariableNames} `Write out the
 Octopus  names to the task log. Default: `False`
+
+Copy
+
+    
+    
+    V8lFbio0Bs0LuvaSD5DDHA/field/login | MyLogin
+    V8lFbio0Bs0LuvaSD5DDHA/field/password | MyPass
+    V8lFbio0Bs0LuvaSD5DDHA/custom_field/phone[1][number] | MyOtherPhoneNum
+    V8lFbio0Bs0LuvaSD5DDHA/file/IMG_0036.png | MyImageBase64
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Octopus Deploy
+
+Keeper Secrets Manager Step Template for accessing secrets in Octopus Deploy
+
+[PreviousLinux Keyring](/en/keeperpam/secrets-manager/integrations/linux-
+keyring)[NextOracle Key Vault Encryption](/en/keeperpam/secrets-
+manager/integrations/oracle-key-vault)
+
+  * Features
+  * Prerequisites
+  * About
+  * Installation
+  * Community Step Template
+  * Custom Step Template
+  * Step Configuration
+  * Settings
+  * Parameters
+
+![Keeper Secrets Manager and Octopus
+Deploy](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGKGOFEKV9NLKy8AYnY2T%252Fksm-
+header-
+octopus.png%3Falt%3Dmedia%26token%3Dd77092a0-d3b4-4823-8498-f9927a0209f1&width=768&dpr=4&quality=100&sign=b019eb18&sv=2)
+
+Octopus Deploy Integration with Keeper Secrets Manager
 
 [Overview ](/en/keeperpam/secrets-manager/overview)
 
@@ -606,13 +615,4 @@ manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
-
-Octopus Deploy Integration with Keeper Secrets Manager
-
-![Keeper Secrets Manager and Octopus
-Deploy](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGKGOFEKV9NLKy8AYnY2T%252Fksm-
-header-
-octopus.png%3Falt%3Dmedia%26token%3Dd77092a0-d3b4-4823-8498-f9927a0209f1&width=768&dpr=4&quality=100&sign=b019eb18&sv=2)
 

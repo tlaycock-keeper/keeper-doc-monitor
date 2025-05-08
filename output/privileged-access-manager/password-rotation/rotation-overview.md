@@ -879,13 +879,17 @@ Below are some examples of PAM User records.
 
   * Azure AD User
 
-PAM User record editing
-
 For advanced scheduling, see the .
 
-Password Rotation Settings
-
 The rotation schedule can be set on a specific interval, or using a .
+
+[cron spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
+
+[cron spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
+
+PAM User record editing
+
+Password Rotation Settings
 
 Custom Schedule
 
@@ -906,8 +910,6 @@ AWS IAM User
 Database user
 
 Azure AD User
-
-[cron spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -957,6 +959,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwQ8O48hEF
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGzKgObBvzWPED5PdcznT%252FScreenshot%25202025-01-12%2520at%25207.18.52%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D393cb4c4-0d1f-44ad-
 bc09-fc66a93e666f&width=768&dpr=4&quality=100&sign=e3dbf592&sv=2)
-
-[cron spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
 

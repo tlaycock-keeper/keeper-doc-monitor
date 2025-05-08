@@ -575,6 +575,12 @@ Default value is "white-black"
 
 Session Recordings - Telnet Protocol
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9sq5XKimBU882wtisft8%252FScreenshot%25202025-01-21%2520at%252012.38.15%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dc796bae2-9fd8-4e7c-af80-af4f7bb4bebf&width=768&dpr=4&quality=100&sign=4c95dded&sv=2)
+
+Telnet Session Recordings
+
 [PreviousVNC Connections](/en/keeperpam/privileged-access-
 manager/connections/session-protocols/vnc-
 connections)[NextExamples](/en/keeperpam/privileged-access-
@@ -641,10 +647,4 @@ manager/session-recording-and-playback)
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
-
-Telnet Session Recordings
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9sq5XKimBU882wtisft8%252FScreenshot%25202025-01-21%2520at%252012.38.15%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dc796bae2-9fd8-4e7c-af80-af4f7bb4bebf&width=768&dpr=4&quality=100&sign=4c95dded&sv=2)
 

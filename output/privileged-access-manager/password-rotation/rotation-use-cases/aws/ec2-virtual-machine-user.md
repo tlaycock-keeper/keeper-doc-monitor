@@ -386,37 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Prerequisites
-  * 1\. Set up PAM Machine Records
-  * 2\. Set up PAM Configuration
-  * 3\. Set up PAM User Records
-  * 4\. Configure Rotation on the Record - AWS VM User
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=FPDBcrpQxc8Hp0jGKUSI&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [AWS](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws)
-
-# EC2 Virtual Machine User
-
-Rotating AWS EC2 Virtual Machine accounts with Keeper
-
-[PreviousManaged Microsoft AD User](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/aws/directory-user)[NextIAM User
-Access Key](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/aws/iam-user-access-key)
-
-Last updated 29 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -447,6 +416,17 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=FPDBcrpQxc8Hp0jGKUSI&only=yes&limit=100)
+
+Last updated 1 month ago
+
+Was this helpful?
+
 In this guide, you will learn how to rotate AWS EC2 Virtual Machine (VM)
 Accounts on your AWS Environment using Keeper Rotation. The EC2 VM is an AWS
 managed resource where the EC2 VM Admin Credentials are linked to the **PAM
@@ -463,15 +443,7 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  * Keeper Secrets Manager is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
-
-  * Keeper Rotation is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
-
-  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
-
-  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is able to [communicate via SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh) or [WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm) with your target AWS Virtual Machine(s).
-
-  * Your AWS environment is [configured](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup) per our documentation
+  *   *   *   *   * 
 
 ##
 
@@ -498,6 +470,84 @@ local Gateway machine.
 
 The following table lists all the required**** fields on the **PAM Machine**
 record:
+
+This PAM Machine Record with the linked admin credential needs to be in a
+shared folder that is shared to the KSM application created in the
+prerequisites. Only the KSM application needs access to this privileged
+account, it does not need to be shared with any users.
+
+##
+
+2\. Set up PAM Configuration
+
+Note: You can skip this step if you already have a PAM Configuration set up
+for this environment.
+
+Make sure the following items are completed:
+
+  *   *   * PAM Machine records have been created for each target machine
+
+If you are creating a new PAM Configuration, login to the Keeper Vault and
+select "Secrets Manager", then select the "PAM Configurations" tab, and click
+on "New Configuration". The following table lists all the required**** fields
+that needs to be filled on the **PAM Configuration**.
+
+##
+
+3\. Set up PAM User Records
+
+Keeper will use the credentials linked from the **PAM Machine** record to
+rotate the **PAM User** records in your AWS environment. The PAM User
+credential needs to be in a shared folder that is shared to the KSM
+application created in the prerequisites.
+
+The following table lists all the required**** fields that need to be filled
+on the **PAM User** record:
+
+##
+
+4\. Configure Rotation on the Record - AWS VM User
+
+Select the PAM User record(s) from Step 3, edit the record and open the
+"Password Rotation Settings".
+
+  * Select the desired schedule and password complexity.
+
+  * The "Rotation Settings" should use the PAM Configuration setup previously. 
+
+  * The "Resource Credential" field should select the PAM Machine credential setup from Step 1.
+
+  * Upon saving, the rotation button will be enabled and available to rotate on demand, or via the selected schedule.
+
+Any user with `edit` rights to a PAM User record has the ability to setup
+rotation for that record.
+
+Keeper Secrets Manager is enabled for your
+
+Keeper Rotation is enabled for your
+
+A Keeper Secrets Manager  has been created
+
+A Keeper Rotation  is already installed, running, and is able to  or  with
+your target AWS Virtual Machine(s).
+
+Your AWS environment is  per our documentation
+
+Field
+
+Description
+
+A Keeper Secrets Manager  has been created
+
+A Keeper Rotation  is already installed, running, and is provisioned in the
+Keeper Secrets Manager application you created.
+
+Field
+
+Description
+
+For more details on all the configurable fields in the PAM Configuration
+record, visit this .
 
 Field
 
@@ -527,35 +577,6 @@ The VM Operating System, i.e `Windows` or `Linux`
 **SSL Verification**
 
 For WinRM, if selected, will use SSL mode port 5986. Ignored for SSH.
-
-This PAM Machine Record with the linked admin credential needs to be in a
-shared folder that is shared to the KSM application created in the
-prerequisites. Only the KSM application needs access to this privileged
-account, it does not need to be shared with any users.
-
-##
-
-2\. Set up PAM Configuration
-
-Note: You can skip this step if you already have a PAM Configuration set up
-for this environment.
-
-Make sure the following items are completed:
-
-  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
-
-  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is provisioned in the Keeper Secrets Manager application you created.
-
-  * PAM Machine records have been created for each target machine
-
-If you are creating a new PAM Configuration, login to the Keeper Vault and
-select "Secrets Manager", then select the "PAM Configurations" tab, and click
-on "New Configuration". The following table lists all the required**** fields
-that needs to be filled on the **PAM Configuration**.
-
-Field
-
-Description
 
 **Title**
 
@@ -591,26 +612,6 @@ Set this field to `USE_INSTANCE_ROLE` if you are using EC2 role policy
 Set this field to `USE_INSTANCE_ROLE` if you are using EC2 role policy
 (default). Otherwise use a specific Secret Access Key.
 
-For more details on all the configurable fields in the PAM Configuration
-record, visit this [page](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration).
-
-##
-
-3\. Set up PAM User Records
-
-Keeper will use the credentials linked from the **PAM Machine** record to
-rotate the **PAM User** records in your AWS environment. The PAM User
-credential needs to be in a shared folder that is shared to the KSM
-application created in the prerequisites.
-
-The following table lists all the required**** fields that need to be filled
-on the **PAM User** record:
-
-Field
-
-Description
-
 **Title**
 
 Keeper record title i.e. `AWS Machine1 ec2-user`
@@ -629,23 +630,46 @@ left blank, performing a rotation will set one.
 SSH private key. This is only required if you are planning to rotate the PEM
 key instead of rotating the password.
 
-##
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [AWS](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws)
 
-4\. Configure Rotation on the Record - AWS VM User
+# EC2 Virtual Machine User
 
-Select the PAM User record(s) from Step 3, edit the record and open the
-"Password Rotation Settings".
+Rotating AWS EC2 Virtual Machine accounts with Keeper
 
-  * Select the desired schedule and password complexity.
+[PreviousManaged Microsoft AD User](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/aws/directory-user)[NextIAM User
+Access Key](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/iam-user-access-key)
 
-  * The "Rotation Settings" should use the PAM Configuration setup previously. 
+  * Prerequisites
+  * 1\. Set up PAM Machine Records
+  * 2\. Set up PAM Configuration
+  * 3\. Set up PAM User Records
+  * 4\. Configure Rotation on the Record - AWS VM User
 
-  * The "Resource Credential" field should select the PAM Machine credential setup from Step 1.
+[application](/en/keeperpam/privileged-access-manager/getting-
+started/applications)
 
-  * Upon saving, the rotation button will be enabled and available to rotate on demand, or via the selected schedule.
+[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
 
-Any user with `edit` rights to a PAM User record has the ability to setup
-rotation for that record.
+[communicate via SSH](/en/keeperpam/privileged-access-
+manager/references/setting-up-ssh)
+
+[WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+
+[configured](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration/aws-environment-setup)
+
+[application](/en/keeperpam/privileged-access-manager/getting-
+started/applications)
+
+[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration)
 
 ##
 
@@ -703,6 +727,12 @@ exists. If the value is FALSE, the private key will not be rotated.
 
 For Linux user rotations, password-encrypted PEM files are not currently
 supported.
+
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
+
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
 
 PAM Machine record
 

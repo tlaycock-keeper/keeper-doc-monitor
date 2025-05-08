@@ -418,10 +418,26 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Commands
+  * Breachwatch Command
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=bE1GVrkhESJiVZ0pmgRt&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Enterprise Management Commands](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands)
+
+# Breachwatch Commands
+
+How to use Breachwatch Dark Web scanning in Keeper Commander
+
+[PreviousCompliance Commands](/en/keeperpam/commander-cli/command-
+reference/enterprise-management-commands/compliance-commands)[NextSCIM Push
+Configuration](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands/scim-push-configuration)
 
 Last updated 4 months ago
 
@@ -434,6 +450,10 @@ Commands
 Command
 
 Description
+
+`breachwatch`
+
+Run a Breachwatch dark web scan of your records or password
 
 ###
 
@@ -466,6 +486,17 @@ accounts. Accepts multiple passwords separated by a space
 
 **Examples:**
 
+Copy
+
+    
+    
+    breachwatch
+    breachwatch scan
+    breachwatch list
+    bw password n5@x85tG#gH7& my_dog_21
+    bw ignore qUX4gSrtDRfM1Kq9lrQi-w
+    bw report
+
   1. See a summary of Breachwatch commands
 
   2. Run a Breachwatch dark web scan and show which passwords are breached
@@ -487,37 +518,6 @@ performed automatically when you login to Keeper Commander.
 
 Additionally, if you create or edit a record, a scan is automatically
 performed on the record.
-
-Copy
-
-    
-    
-    breachwatch
-    breachwatch scan
-    breachwatch list
-    bw password n5@x85tG#gH7& my_dog_21
-    bw ignore qUX4gSrtDRfM1Kq9lrQi-w
-    bw report
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Enterprise Management Commands](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands)
-
-# Breachwatch Commands
-
-How to use Breachwatch Dark Web scanning in Keeper Commander
-
-[PreviousCompliance Commands](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands/compliance-commands)[NextSCIM Push
-Configuration](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands/scim-push-configuration)
-
-  * Commands
-  * Breachwatch Command
-
-`breachwatch`
-
-Run a Breachwatch dark web scan of your records or password
 
 [Breachwatch ](https://docs.keeper.io/enterprise-guide/breachwatch)
 

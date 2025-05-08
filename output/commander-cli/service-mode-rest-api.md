@@ -386,6 +386,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Keeper Commander Service Mode
@@ -417,39 +447,9 @@ reference/plugins/automatic-
 execution)[NextTroubleshooting](/en/keeperpam/commander-cli/troubleshooting-
 commander-cli)
 
-Last updated 20 days ago
+Last updated 21 days ago
 
 Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
 
 ##
 
@@ -830,21 +830,13 @@ Advanced Configuration
 
 Ngrok
 
-To use Commander Service Mode with Ngrok, sign up on
-[ngrok.com](https://ngrok.com/) and generate an Auth token from
-<https://dashboard.ngrok.com/authtokens>[](https://dashboard.ngrok.com/authtokens)
-
-If you are using a custom domain, set this up under:
-<https://dashboard.ngrok.com/domains>[](https://dashboard.ngrok.com/domains)
-and specify the custom subdomain when starting the Commander service mode.
-
 Using Ngrok has security implications. Follow this guidance:
 
   * Ensure that the Keeper service account is running with minimal permissions and access. We recommend limiting the scope of the service account to only the least amount of privilege.
 
   * Protect access to the service through Ngrok's IP policies
 
-  * Limit the scope of supported commands. For example, if you only need to add records through the API, then only allow the `record-add` command. See the [Command List](/en/keeperpam/commander-cli/service-mode-rest-api#command-list) section.
+  * 
 
 ####
 
@@ -972,9 +964,7 @@ Install, build and run docker image
 
   1. Install Docker.
 
-  2. Clone the repository [git clone](https://github.com/Keeper-Security/Commander.git).
-
-  3. Build docker image using command `docker build -t keeper-commander .`
+  2.   3. Build docker image using command `docker build -t keeper-commander .`
 
   4. Verify docker image created. `docker images`
 
@@ -1047,20 +1037,47 @@ time you run Commander. Persistent login is required to ensure uninterrupted
 background execution of the Service Mode APIs, allowing seamless
 authentication without repeated login prompts.
 
-Learn more about [persistent login sessions](/en/keeperpam/commander-
-cli/commander-installation-setup/logging-in#persistent-login-sessions-stay-
-logged-in).
-
 ###
 
 Support
 
 For support or feature requests, please contact:
 
-  * Email: [commander@keepersecurity.com](mailto:commander@keepersecurity.com)
+  * 
 
 If you would like to request additional features or setup guides for Commander
 Service Mode, please reach out.
+
+To use Commander Service Mode with Ngrok, sign up on  and generate an Auth
+token from
+
+If you are using a custom domain, set this up under:  and specify the custom
+subdomain when starting the Commander service mode.
+
+Limit the scope of supported commands. For example, if you only need to add
+records through the API, then only allow the `record-add` command. See the
+section.
+
+Clone the repository .
+
+Learn more about .
+
+Email:
+
+[ngrok.com](https://ngrok.com/)
+
+<https://dashboard.ngrok.com/authtokens>[](https://dashboard.ngrok.com/authtokens)
+
+<https://dashboard.ngrok.com/domains>[](https://dashboard.ngrok.com/domains)
+
+[git clone](https://github.com/Keeper-Security/Commander.git)
+
+[commander@keepersecurity.com](mailto:commander@keepersecurity.com)
+
+[Command List](/en/keeperpam/commander-cli/service-mode-rest-api#command-list)
+
+[persistent login sessions](/en/keeperpam/commander-cli/commander-
+installation-setup/logging-in#persistent-login-sessions-stay-logged-in)
 
 Commander Service Mode record
 

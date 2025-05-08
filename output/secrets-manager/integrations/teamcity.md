@@ -654,15 +654,9 @@ be named differently)_ , remove it.
 Remove the plugin package from the `<``>/plugins` directory and restart the
 TeamCity server.
 
-Adding connection of type Keeper Vault
-
 Specify the token - paste a valid KSM config _(see_ _)_.
 
-Configure Keeper Vault Connection
-
 Configure a TeamCity parameter that resolves the secret using
-
-Adding New Parameter
 
 Choose the  runner type.
 
@@ -685,14 +679,20 @@ manager/secrets-manager/about/keeper-notation)
 
 [Command Line](https://www.jetbrains.com/help/teamcity/command-line.html)
 
+[_Prerequisites_](/en/keeperpam/secrets-
+manager/integrations/teamcity#prerequisites)
+
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
 
-[_Prerequisites_](/en/keeperpam/secrets-
-manager/integrations/teamcity#prerequisites)
+Adding connection of type Keeper Vault
+
+Configure Keeper Vault Connection
+
+Adding New Parameter
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

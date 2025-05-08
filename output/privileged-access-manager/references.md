@@ -386,6 +386,47 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=WueabVgpBR1TU72wZjh7&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# References
+
+[Port Mapping](/en/keeperpam/privileged-access-manager/references/port-
+mapping)[Setting up SSH](/en/keeperpam/privileged-access-
+manager/references/setting-up-ssh)[Setting up WinRM](/en/keeperpam/privileged-
+access-manager/references/setting-up-winrm)[Setting up SQL
+Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-
+server)[Database Import and Export](/en/keeperpam/privileged-access-
+manager/references/database-import-and-export)[Installing sqlcmd on
+Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-
+on-linux)[Installing Docker on Linux](/en/keeperpam/privileged-access-
+manager/references/installing-docker-on-linux)[Creating KSM App for
+Rotation](/en/keeperpam/privileged-access-manager/references/creating-ksm-app-
+for-rotation)[Active Directory Least Privilege](/en/keeperpam/privileged-
+access-manager/references/active-directory-least-privilege)[Event
+Reporting](/en/keeperpam/privileged-access-manager/references/event-
+reporting)[Importing PAM Records](/en/keeperpam/privileged-access-
+manager/references/importing-pam-records)[Managing Rotation via
+CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-
+cli)[Commander SDK](/en/keeperpam/privileged-access-
+manager/references/commander-sdk)[Cron Spec](/en/keeperpam/privileged-access-
+manager/references/cron-spec)[Preview Access](/en/keeperpam/privileged-access-
+manager/references/preview-access)
+
+[PreviousOn-Prem Connection Manager](/en/keeperpam/privileged-access-
+manager/on-prem-connection-manager)[NextPort
+Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
+
+Last updated 7 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -415,45 +456,4 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=WueabVgpBR1TU72wZjh7&only=yes&limit=100)
-
-Last updated 7 months ago
-
-Was this helpful?
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# References
-
-[PreviousOn-Prem Connection Manager](/en/keeperpam/privileged-access-
-manager/on-prem-connection-manager)[NextPort
-Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
-
-[Port Mapping](/en/keeperpam/privileged-access-manager/references/port-
-mapping)[Setting up SSH](/en/keeperpam/privileged-access-
-manager/references/setting-up-ssh)[Setting up WinRM](/en/keeperpam/privileged-
-access-manager/references/setting-up-winrm)[Setting up SQL
-Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-
-server)[Database Import and Export](/en/keeperpam/privileged-access-
-manager/references/database-import-and-export)[Installing sqlcmd on
-Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-
-on-linux)[Installing Docker on Linux](/en/keeperpam/privileged-access-
-manager/references/installing-docker-on-linux)[Creating KSM App for
-Rotation](/en/keeperpam/privileged-access-manager/references/creating-ksm-app-
-for-rotation)[Active Directory Least Privilege](/en/keeperpam/privileged-
-access-manager/references/active-directory-least-privilege)[Event
-Reporting](/en/keeperpam/privileged-access-manager/references/event-
-reporting)[Importing PAM Records](/en/keeperpam/privileged-access-
-manager/references/importing-pam-records)[Managing Rotation via
-CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-
-cli)[Commander SDK](/en/keeperpam/privileged-access-
-manager/references/commander-sdk)[Cron Spec](/en/keeperpam/privileged-access-
-manager/references/cron-spec)[Preview Access](/en/keeperpam/privileged-access-
-manager/references/preview-access)
 

@@ -386,46 +386,27 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
+
+  * Overview 
+  * Prerequisites
+  * PAM Settings - SQL Server Protocol
+  * Accessing Connection Settings
+  * Configuring Connection Settings
+  * Session Recordings - SQL Server Protocol
 
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=nNCtbGpBTPBs4P9i3Qv3&only=yes&limit=100)
 
-Last updated 3 months ago
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
 
-Was this helpful?
+# SQL Server Connections
+
+Keeper Connections - SQL Server Protocol
 
 ##
 
@@ -442,7 +423,8 @@ connected to target databases.
 Prerequisites
 
 Prior to following this guide, familiarize yourself with the prerequisites on
-the Connection's .
+the Connection's [Getting Started page](/en/keeperpam/privileged-access-
+manager/connections/getting-started).
 
 The following PAM records are needed in order to successfully setup this
 protocol:
@@ -451,10 +433,24 @@ PAM Record
 
 Definition
 
+PAM Configuration
+
+The PAM Configuration contains information of your target infrastructure
+
+PAM Database Record
+
+The PAM Database record contains information of the endpoint you want to
+establish an SQL Server protocol connection to.
+
+PAM User Record
+
+The PAM User record contains the SQL Server user credentials that will be used
+to connect to the endpoint
+
 This guide will use a **SQL Database**. This is similar to setting up a MySQL
 database, for more details on how this is setup, visit the following page:
 
-  * 
+  * [Example: Microsoft SQL Server Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database/example-microsoft-sql-server-database)
 
 ##
 
@@ -483,12 +479,6 @@ screen, the following fields are all **required** and need to be configured:
 
 The following table lists all the configurable connection settings for the SQL
 Server protocol on the PAM Settings:
-
-Insert Configured PAM Settings Pic
-
-##
-
-Session Recordings - SQL Server Protocol
 
 Field
 
@@ -547,46 +537,50 @@ Can paste from clipboard
 If enabled, user can paste text from local clipboard into the connected
 protocol session
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
+Insert Configured PAM Settings Pic
 
-# SQL Server Connections
+##
 
-Keeper Connections - SQL Server Protocol
+Session Recordings - SQL Server Protocol
 
 [PreviousMySQL Connections](/en/keeperpam/privileged-access-
 manager/connections/session-protocols/mysql-connections)[NextPostgreSQL
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/postgresql-connections)
 
-  * Overview 
-  * Prerequisites
-  * PAM Settings - SQL Server Protocol
-  * Accessing Connection Settings
-  * Configuring Connection Settings
-  * Session Recordings - SQL Server Protocol
+Last updated 3 months ago
 
-PAM Configuration
+Was this helpful?
 
-The PAM Configuration contains information of your target infrastructure
+#### Company
 
-PAM Database Record
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-The PAM Database record contains information of the endpoint you want to
-establish an SQL Server protocol connection to.
+#### Support
 
-PAM User Record
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-The PAM User record contains the SQL Server user credentials that will be used
-to connect to the endpoint
+#### Solutions
 
-[Getting Started page](/en/keeperpam/privileged-access-
-manager/connections/getting-started)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-[Example: Microsoft SQL Server Database](/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-database/example-microsoft-sql-
-server-database)
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 For this protocol, both graphical and the full, raw text text content of
 terminal sessions, including timing information, are recorded. For more

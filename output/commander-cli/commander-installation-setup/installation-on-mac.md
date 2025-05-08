@@ -418,29 +418,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Supported Operating systems
-  * Video Overview
-  * Binary installation
-  * Python PIP3 installation
-  * Pre-requisites
-  * Instructions
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-MJXfHZXiFwS7h9M_VdV&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
-
-# CLI Installation on macOS
-
-How to install Keeper Commander on macOS
-
-[PreviousCLI Installation on Windows](/en/keeperpam/commander-cli/commander-
-installation-setup/installation-on-windows)[NextCLI Installation on
-Linux](/en/keeperpam/commander-cli/commander-installation-setup/installation-
-on-linux)
 
 Last updated 6 months ago
 
@@ -492,46 +473,16 @@ the application to run or install. To do this open "System Preferences" >
 Validate Python is correctly installed by checking the installed version from
 a terminal window:
 
-Copy
-
-    
-    
-    $ pip3 --version
-
 From a terminal window, install Keeper Commander with pip3:
 
-Copy
-
-    
-    
-    $ pip3 install keepercommander
-
 Once installed, ensure you have the latest version by upgrading Commander:
-
-Copy
-
-    
-    
-    $ pip3 install --upgrade keepercommander
 
 Please do not upgrade a production system without validation in your test
 environment as commands and functionality is under rapid development.
 
 To see which version of Keeper you're running:
 
-Copy
-
-    
-    
-    $ keeper version -v    
-
 To validate Keeper Commander is properly installed login:
-
-Copy
-
-    
-    
-    $ keeper shell
 
 Note, for your first time logging into a new device or a new location, you may
 have to perform device authorization through email or other 2FA methods.
@@ -540,6 +491,55 @@ On the Commander Github page, the current commander build is always available
 via the .
 
 Download the current version of Python from:
+
+Copy
+
+    
+    
+    $ pip3 --version
+
+Copy
+
+    
+    
+    $ pip3 install keepercommander
+
+Copy
+
+    
+    
+    $ pip3 install --upgrade keepercommander
+
+Copy
+
+    
+    
+    $ keeper version -v    
+
+Copy
+
+    
+    
+    $ keeper shell
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+
+# CLI Installation on macOS
+
+How to install Keeper Commander on macOS
+
+[PreviousCLI Installation on Windows](/en/keeperpam/commander-cli/commander-
+installation-setup/installation-on-windows)[NextCLI Installation on
+Linux](/en/keeperpam/commander-cli/commander-installation-setup/installation-
+on-linux)
+
+  * Supported Operating systems
+  * Video Overview
+  * Binary installation
+  * Python PIP3 installation
+  * Pre-requisites
+  * Instructions
 
 [releases link](https://github.com/Keeper-Security/Commander/releases)
 

@@ -1012,9 +1012,6 @@ installation-setup)
 
 [Command Reference](/en/keeperpam/commander-cli/command-reference)
 
-[ config file documentation ](/en/keeperpam/commander-cli/commander-
-installation-setup/logging-in#commander-configuration-file)
-
 [![Logo](https://docs.aws.amazon.com/assets/images/favicon.ico)Invoking Lambda
 functions - AWS LambdaAWS
 Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
@@ -1033,4 +1030,7 @@ x-
 prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FgxJz7bvtfe4hTfuTA0cc%2Fpackage_layer_content.sh?alt=media&token=f624bf70-327c-4b10-9f18-a1f1ae06ecc1)
 
 Bash script for packaging `keepercommander` Lambda Layer content
+
+[ config file documentation ](/en/keeperpam/commander-cli/commander-
+installation-setup/logging-in#commander-configuration-file)
 

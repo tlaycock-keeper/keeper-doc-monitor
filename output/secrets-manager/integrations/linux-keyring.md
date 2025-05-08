@@ -418,10 +418,35 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * Linux Keyring Utility
+  * Interface
+  * Usage - Importing it into your codebase
+  * Example (get)
+  * Example (set)
+  * Usage - Binary Interface (CLI)
+  * Base64 encoding
+  * Errors
+  * No keyring
+  * No matching secret
+  * No D-Bus Session
+  * No D-Bus
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=IlQNYrLHQjYkgclmxW4C&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Linux Keyring
+
+Store and Retrieve Secrets from the Linux Keyring
+
+[PreviousKubernetes (alternative)](/en/keeperpam/secrets-
+manager/integrations/kubernetes)[NextOctopus Deploy](/en/keeperpam/secrets-
+manager/integrations/octopus-deploy)
 
 Last updated 5 months ago
 
@@ -468,6 +493,29 @@ first two accept and return `string` data.
 
 Example (get)
 
+Copy
+
+    
+    
+    package main
+    
+    import (
+        "os"
+        sc "github.com/Keeper-Security/linux-keyring-utility/pkg/secret_collection"
+    )
+    
+    func doit() {
+        if collection, err := sc.DefaultCollection(); err == nil {
+            if err := collection.Unlock(); err == nil {
+                if secret, err := collection.Get("myapp", "mysecret"); err == nil {
+                    print(string(secret))
+                    os.Exit(0)
+                }
+            }
+        }
+        os.Exit(1)
+    }
+
 The `.DefaultCollection()` returns whatever collection the _default_ _alias_
 refers to. It will generate an error if the _default_ alias is not set. It
 usually points to the _login_ keyring. Most Linux Keyring interfaces allow the
@@ -481,6 +529,14 @@ Example (set)
 
 Set takes the data as a parameter and only returns an error or `nil` on
 success. It does not restrict the content or length of the secret data.
+
+Copy
+
+    
+    
+    if err := collection.Set("myapp", "mysecret", "mysecretdata"); err == nil {
+        // success
+    }
 
 ##
 
@@ -519,86 +575,6 @@ will generate an error.
 
 Examples
 
-##
-
-Errors
-
-Error output goes to `stderr` so adding `2>/dev/null` to the end of a command
-will suppress it.
-
-###
-
-**No keyring**
-
-The login collection does not exist because the keyring does not exist. KDE
-may create _kdewallet_ instead of _login_ like GNOME.
-
-###
-
-**No matching secret**
-
-###
-
-**No D-Bus Session**
-
-There may not be a D-Bus Session to host the Secret Service. This happens when
-the user is not logged into the GUI.
-
-###
-
-**No D-Bus**
-
-The system may not host D-Bus. Several lightweight linux distributions ship
-without it by default.
-
-Keeper provides a utility, the Linux Keyring Utility, that interacts with the
-native Linux APIs to store and retrieve secrets from the Keyring using the .
-This utility can be used by any integration, plugin, or code base to store and
-retrieve credentials, secrets, and passwords in any Linux Keyring simply and
-natively.
-
-deploy the pre-built binary from the
-
-The Linux Keyring Utility gets and sets _secrets_ in a Linux  using the  .
-
-It has been tested with  and . It _should_ work with any implementation of the
-D-Bus Secrets Service.
-
-A secret may not be returned even though a secret with the same label exists.
-If the secret was not created with lkru, it may not have the same . Namely
-'Agent', 'Application', and 'Id'.
-
-Copy
-
-    
-    
-    package main
-    
-    import (
-        "os"
-        sc "github.com/Keeper-Security/linux-keyring-utility/pkg/secret_collection"
-    )
-    
-    func doit() {
-        if collection, err := sc.DefaultCollection(); err == nil {
-            if err := collection.Unlock(); err == nil {
-                if secret, err := collection.Get("myapp", "mysecret"); err == nil {
-                    print(string(secret))
-                    os.Exit(0)
-                }
-            }
-        }
-        os.Exit(1)
-    }
-
-Copy
-
-    
-    
-    if err := collection.Set("myapp", "mysecret", "mysecretdata"); err == nil {
-        // success
-    }
-
 Copy
 
     
@@ -623,11 +599,29 @@ Copy
     lkru get root_cred3
     ewogICJ1c2VybmFtZSI6ICJhZGFtIiwKICAicGFzc3dvcmQiOiAicGFzc3dvcmQxMjMuIgp9
 
+##
+
+Errors
+
+Error output goes to `stderr` so adding `2>/dev/null` to the end of a command
+will suppress it.
+
+###
+
+**No keyring**
+
+The login collection does not exist because the keyring does not exist. KDE
+may create _kdewallet_ instead of _login_ like GNOME.
+
 Copy
 
     
     
     Unable to get secret 'test_cred': Unable to retrieve secret 'test_cred' for application 'lkru' from collection '/org/freedesktop/secrets/collection/login': Object does not exist at path “/org/freedesktop/secrets/collection/login”
+
+###
+
+**No matching secret**
 
 Copy
 
@@ -635,11 +629,25 @@ Copy
     
     Unable to get secret 'test_cred': Unable to retrieve secret 'test_cred' for application 'lkru' from collection '/org/freedesktop/secrets/aliases/default': org.freedesktop.Secret.Collection.SearchItems returned nothing
 
+###
+
+**No D-Bus Session**
+
+There may not be a D-Bus Session to host the Secret Service. This happens when
+the user is not logged into the GUI.
+
 Copy
 
     
     
     Unable to get the default keyring: Unable to open a D-Bus session: The name org.freedesktop.secrets was not provided by any .service files
+
+###
+
+**No D-Bus**
+
+The system may not host D-Bus. Several lightweight linux distributions ship
+without it by default.
 
 Copy
 
@@ -647,30 +655,22 @@ Copy
     
     Unable to get the default keyring: Unable to connect to the D-Bus Session Bus: exec: "dbus-launch": executable file not found in $PATH
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+Keeper provides a utility, the Linux Keyring Utility, that interacts with the
+native Linux APIs to store and retrieve secrets from the Keyring using the .
+This utility can be used by any integration, plugin, or code base to store and
+retrieve credentials, secrets, and passwords in any Linux Keyring simply and
+natively.
 
-# Linux Keyring
+deploy the pre-built binary from the
 
-Store and Retrieve Secrets from the Linux Keyring
+The Linux Keyring Utility gets and sets _secrets_ in a Linux  using the  .
 
-[PreviousKubernetes (alternative)](/en/keeperpam/secrets-
-manager/integrations/kubernetes)[NextOctopus Deploy](/en/keeperpam/secrets-
-manager/integrations/octopus-deploy)
+It has been tested with  and . It _should_ work with any implementation of the
+D-Bus Secrets Service.
 
-  * Overview
-  * Linux Keyring Utility
-  * Interface
-  * Usage - Importing it into your codebase
-  * Example (get)
-  * Example (set)
-  * Usage - Binary Interface (CLI)
-  * Base64 encoding
-  * Errors
-  * No keyring
-  * No matching secret
-  * No D-Bus Session
-  * No D-Bus
+A secret may not be returned even though a secret with the same label exists.
+If the secret was not created with lkru, it may not have the same . Namely
+'Agent', 'Application', and 'Id'.
 
 [Secret Service
 API](https://www.gnu.org/software/emacs/manual/html_node/auth/Secret-Service-

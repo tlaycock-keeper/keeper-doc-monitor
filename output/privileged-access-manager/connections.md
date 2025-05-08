@@ -411,7 +411,7 @@ Vault
 rotation/post-rotation-scripts/accessing-parameters)[NextGetting
 Started](/en/keeperpam/privileged-access-manager/connections/getting-started)
 
-Last updated 15 days ago
+Last updated 16 days ago
 
 Was this helpful?
 
@@ -459,6 +459,12 @@ Keeper Connections are configured on PAM Machine, PAM Database, PAM Directory
 and PAM Remote Browser record types, and once configured, connections are
 launched directly from these records.
 
+One of the key features of Keeper Connections is the **agentless**
+and**clientless** architecture. Organizations need to install only a [Keeper
+Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) in
+each managed environment. This streamlined approach simplifies deployment and
+enhances security by centralizing access management.
+
 ###
 
 Connection User Interface
@@ -493,6 +499,9 @@ defined on the PAM record. This is done by:
   2. The Keeper Gateway then establishes the connection protocol to the target defined on the PAM Record 
 
   3. After establishing the connection, the Keeper Gateway projects the visual session to the Keeper vault client.
+
+For more information on the architecture, see this
+[page](/en/keeperpam/privileged-access-manager/getting-started/architecture).
 
 ##
 
@@ -534,22 +543,8 @@ Keeper Connection Features
 
   * Role-Based Access Controls
 
-One of the key features of Keeper Connections is the **agentless**
-and**clientless** architecture. Organizations need to install only a  in each
-managed environment. This streamlined approach simplifies deployment and
-enhances security by centralizing access management.
-
-For more information on the architecture, see this .
-
-To get started with Keeper Connections, proceed to the .
-
-[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)
-
-[page](/en/keeperpam/privileged-access-manager/getting-started/architecture)
-
-[next section](/en/keeperpam/privileged-access-manager/connections/getting-
-started)
+To get started with Keeper Connections, proceed to the [next
+section](/en/keeperpam/privileged-access-manager/connections/getting-started).
 
 Connecting to a Windows Machine
 

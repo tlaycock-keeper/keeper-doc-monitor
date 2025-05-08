@@ -497,14 +497,14 @@ manager-configuration)
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
 [![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-x-
 prod.appspot.com/o/spaces%2Fb7weUpu7VBcMnESSH8vG%2Ficon%2FAxlnehp2PPSRzr72ZUVn%2FKCM-
 square.jpg?alt=media&token=f4e6693c-289d-4760-8b8d-f5195589bc12)Vault
 IntegrationKeeper Connection Manager](https://docs.keeper.io/keeper-
 connection-manager/vault-integration)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
