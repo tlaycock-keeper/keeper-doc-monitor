@@ -447,7 +447,7 @@ Sync secrets from the Keeper Vault with Azure Key Vault
 manager/integrations/azure-devops-plugin)[NextAzure Key Vault
 Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
 
-Last updated 22 days ago
+Last updated 24 days ago
 
 Was this helpful?
 
@@ -671,9 +671,6 @@ interface/sync-command)
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGbgXULnF2SK8cGDb1t7Y%252Fspaces_-
@@ -696,4 +693,7 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXjlSL3lY7
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7XYS9qI9McE7X4knr8iO%252Fimage.png%3Falt%3Dmedia%26token%3Dd9ec05af-5152-4884-a65e-7e78be69c01a&width=768&dpr=4&quality=100&sign=bb899506&sv=2)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 

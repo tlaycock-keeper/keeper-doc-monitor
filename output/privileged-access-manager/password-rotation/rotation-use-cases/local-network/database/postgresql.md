@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -418,32 +418,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Prerequisites
-  * 1\. Set up a PAM Database Record
-  * 2\. Set up a PAM Configuration
-  * 3\. Set up one or more PAM user records
-  * 4\. Configure Rotation on the PAM User records
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=58oPd4p29QnMZBZjKQ26&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
-  5. [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
-
-# Native PostgreSQL
-
-Rotating Local Network PostgreSQL database accounts with Keeper Rotation
-
-[PreviousNative MariaDB](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/database/mariadb)[NextNative
-MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/local-network/database/mongodb)
 
 Last updated 2 months ago
 
@@ -477,40 +455,6 @@ change the credentials of other accounts.
 The following table lists all the **required** fields that needs to be filled
 on the PAM Database Record with your information:
 
-Field
-
-Description
-
-**Title**
-
-Keeper record title Ex: `dbadmin`
-
-**Hostname or IP Address**
-
-Server address - _doesn't need to be publicly_ routable
-
-**Port**
-
-**Use SSL**
-
-Check to perform SSL verification before connecting, if your database has SSL
-configured
-
-**Administrative Credentials**
-
-Linked PAM User record that contains the username and password of the Admin
-account which will perform the rotation.
-
-**Connect Database**
-
-Optional database that will be used when connecting to the database server.
-For example, PostgreSQL requires a database and so this will default to
-template1.
-
-**Database Type**
-
-`postgresql `or `postgresql-flexible`
-
 ##
 
 2\. Set up a PAM Configuration
@@ -523,29 +467,6 @@ and select "Secrets Manager", then select the "PAM Configurations" tab, and
 click on "New Configuration". The following table lists all the required****
 fields on the **PAM Configuration** Record:
 
-Field
-
-Description
-
-**Title**
-
-Configuration name, example: `Postgresql LAN Configuration`
-
-**Environment**
-
-Select: `Local Network`
-
-**Gateway**
-
-Select the Gateway that is configured on the Keeper Secrets Manager
-application and has network access to your PostgreSQL database
-
-**Application Folder**
-
-Select the Shared folder where the PAM Configuration will be stored. We
-recommend placing this in a shared folder with the PAM User records, not the
-database resources.
-
 ##
 
 3\. Set up one or more PAM user records
@@ -557,32 +478,6 @@ application created in the prerequisites.
 
 The following table lists all the required**** fields on the **PAM User**
 record:
-
-Field
-
-Description
-
-**Record Type**
-
-PAM User
-
-**Title**
-
-Keeper record title
-
-**Login**
-
-Case sensitive username of the db account being rotated. Example: `msmith`
-
-**Password**
-
-Account password is optional, rotation will set one if blank
-
-**Connect Database**
-
-Optional database that will be used when connecting to the database server.
-For example: PostgreSQL requires a database and so this will default to
-template1.
 
 ##
 
@@ -611,14 +506,117 @@ A Keeper Secrets Manager  has been created
 A Keeper Rotation  is already installed, running, and is able to communicate
 to your Postgres database
 
-For default ports, see  Ex: `postgresql=5432`
+Field
+
+Description
+
+Field
+
+Description
+
+Field
+
+Description
+
+**Title**
+
+Keeper record title Ex: `dbadmin`
+
+**Hostname or IP Address**
+
+Server address - _doesn't need to be publicly_ routable
+
+**Port**
+
+For default ports, see port mapping Ex: `postgresql=5432`
+
+**Use SSL**
+
+Check to perform SSL verification before connecting, if your database has SSL
+configured
+
+**Administrative Credentials**
+
+Linked PAM User record that contains the username and password of the Admin
+account which will perform the rotation.
+
+**Connect Database**
+
+Optional database that will be used when connecting to the database server.
+For example, PostgreSQL requires a database and so this will default to
+template1.
+
+**Database Type**
+
+`postgresql `or `postgresql-flexible`
+
+**Title**
+
+Configuration name, example: `Postgresql LAN Configuration`
+
+**Environment**
+
+Select: `Local Network`
+
+**Gateway**
+
+Select the Gateway that is configured on the Keeper Secrets Manager
+application and has network access to your PostgreSQL database
+
+**Application Folder**
+
+Select the Shared folder where the PAM Configuration will be stored. We
+recommend placing this in a shared folder with the PAM User records, not the
+database resources.
+
+**Record Type**
+
+PAM User
+
+**Title**
+
+Keeper record title
+
+**Login**
+
+Case sensitive username of the db account being rotated. Example: `msmith`
+
+**Password**
+
+Account password is optional, rotation will set one if blank
+
+**Connect Database**
+
+Optional database that will be used when connecting to the database server.
+For example: PostgreSQL requires a database and so this will default to
+template1.
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
+  5. [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
+
+# Native PostgreSQL
+
+Rotating Local Network PostgreSQL database accounts with Keeper Rotation
+
+[PreviousNative MariaDB](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/database/mariadb)[NextNative
+MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/local-network/database/mongodb)
+
+  * Overview
+  * Prerequisites
+  * 1\. Set up a PAM Database Record
+  * 2\. Set up a PAM Configuration
+  * 3\. Set up one or more PAM user records
+  * 4\. Configure Rotation on the PAM User records
 
 [application](/en/keeperpam/privileged-access-manager/getting-
 started/applications)
 
 [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-port mapping
 
 [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 overview#enabling-rotation-on-the-admin-console)

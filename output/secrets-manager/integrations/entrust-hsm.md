@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -386,37 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Features
-  * Prerequisites
-  * Setup
-  * 1\. Create and Configure Virtualenv
-  * 2\. Install KSM Storage and nfpython Modules 
-  * 3\. Add Entrust HSM Storage to Your Code
-  * Using Secrets Manager with Entrust HSM
-  * Create an Encryption Key for Testing
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=CjeGp1bCdKjFokibDmg0&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Entrust HSM Encryption
-
-Protect Secrets Manager connection details locally with Entrust HSM
-
-[PreviousDocker Writer Image](/en/keeperpam/secrets-
-manager/integrations/docker-writer-image)[NextGit - Sign Commits with
-SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
-
-Last updated 23 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -446,6 +415,37 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Features
+  * Prerequisites
+  * Setup
+  * 1\. Create and Configure Virtualenv
+  * 2\. Install KSM Storage and nfpython Modules 
+  * 3\. Add Entrust HSM Storage to Your Code
+  * Using Secrets Manager with Entrust HSM
+  * Create an Encryption Key for Testing
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=CjeGp1bCdKjFokibDmg0&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Entrust HSM Encryption
+
+Protect Secrets Manager connection details locally with Entrust HSM
+
+[PreviousDocker Writer Image](/en/keeperpam/secrets-
+manager/integrations/docker-writer-image)[NextGit - Sign Commits with
+SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
+
+Last updated 24 days ago
+
+Was this helpful?
 
 Keeper Secrets Manager integrates with Entrust HSM in order to provide
 encryption for Keeper Secrets Manager configuration files. With this

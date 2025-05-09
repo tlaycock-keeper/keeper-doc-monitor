@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -386,6 +386,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Endpoint Privilege Manager
+  * Introduction
+  * Solution Overview
+  * Zero-Standing Privilege (ZSP)
+  * Dashboard
+  * End-User Experience
+  * About this Guide
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=Kgyes9zzVSWKVrIRJHSt&only=yes&limit=100)
+
+  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
+
+# Overview
+
+Endpoint Privilege Manager is a Privileged Elevation and Delegation Management
+(PEDM) solution
+
+[PreviousPreview Access](/en/keeperpam/privileged-access-
+manager/references/preview-access)[NextSetup](/en/keeperpam/endpoint-
+privilege-manager/setup)
+
+Last updated 28 days ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -415,36 +445,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Endpoint Privilege Manager
-  * Introduction
-  * Solution Overview
-  * Zero-Standing Privilege (ZSP)
-  * Dashboard
-  * End-User Experience
-  * About this Guide
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=Kgyes9zzVSWKVrIRJHSt&only=yes&limit=100)
-
-  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
-
-# Overview
-
-Endpoint Privilege Manager is a Privileged Elevation and Delegation Management
-(PEDM) solution
-
-[PreviousPreview Access](/en/keeperpam/privileged-access-
-manager/references/preview-access)[NextSetup](/en/keeperpam/endpoint-
-privilege-manager/setup)
-
-Last updated 27 days ago
-
-Was this helpful?
 
 ##
 

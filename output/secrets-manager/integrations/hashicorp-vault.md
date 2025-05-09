@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -880,11 +880,6 @@ documentation](https://learn.hashicorp.com/collections/vault/getting-started)
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
-[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/secrets-
-managerGitHub](https://github.com/Keeper-Security/secrets-manager/releases)
-
-Secrets Manager Releases
-
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
 
@@ -893,6 +888,11 @@ x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVbvni8ZH5LSuDcwtynn9%252Fdatasource-
 ksm-
 hashicorp.jpg%3Falt%3Dmedia%26token%3D776d562b-07e3-4d89-b8a4-e1434e649190&width=768&dpr=4&quality=100&sign=d8c8ff8a&sv=2)
+
+[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/secrets-
+managerGitHub](https://github.com/Keeper-Security/secrets-manager/releases)
+
+Secrets Manager Releases
 
 [Configuration Documentation](/en/keeperpam/secrets-manager/about/secrets-
 manager-configuration#creating-a-secrets-manager-configuration)

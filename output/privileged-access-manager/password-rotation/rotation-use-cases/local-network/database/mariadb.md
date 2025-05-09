@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -418,10 +418,32 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * Prerequisites
+  * 1\. Set up a PAM Database Record
+  * 2\. Set up a PAM Configuration
+  * 3\. Set up one or more PAM user records
+  * 4\. Configure Rotation on PAM User records
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=cWNYVVu0QdXraTzdJotH&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
+  5. [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
+
+# Native MariaDB
+
+Rotating Local Network MariaDB database accounts with Keeper Rotation
+
+[PreviousNative MySQL](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/database/mysql)[NextNative
+PostgreSQL](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/database/postgresql)
 
 Last updated 2 months ago
 
@@ -455,6 +477,34 @@ change the credentials of other accounts.
 The following table lists all the **required** fields that needs to be filled
 on the PAM Database Record with your information:
 
+Field
+
+Description
+
+**Title**
+
+Keeper record title Ex: `dbadmin`
+
+**Hostname or IP Address**
+
+Server address - _doesn't need to be publicly_ routable
+
+**Port**
+
+**Use SSL**
+
+Check to perform SSL verification before connecting, if your database has SSL
+configured
+
+**Administrative Credentials**
+
+Linked PAM User record that contains the username and password of the Admin
+account which will perform the rotation.
+
+**Database Type**
+
+`maridb `or `maridb-flexible`
+
 ##
 
 2\. Set up a PAM Configuration
@@ -467,6 +517,29 @@ and select "Secrets Manager", then select the "PAM Configurations" tab, and
 click on "New Configuration". The following table lists all the required****
 fields on the **PAM Configuration** Record:
 
+Field
+
+Description
+
+**Title**
+
+Configuration name, example: `MariaDB LAN Configuration`
+
+**Environment**
+
+Select: `Local Network`
+
+**Gateway**
+
+Select the Gateway that is configured on the Keeper Secrets Manager
+application and has network access to your MariaDB database
+
+**Application Folder**
+
+Select the Shared folder where the PAM Configuration will be stored. We
+recommend placing this in a shared folder with the PAM User records, not the
+database resources.
+
 ##
 
 3\. Set up one or more PAM user records
@@ -478,6 +551,26 @@ application created in the prerequisites.
 
 The following table lists all the required**** fields on the **PAM User**
 record:
+
+Field
+
+Description
+
+**Record Type**
+
+PAM User
+
+**Title**
+
+Keeper record title
+
+**Login**
+
+Case sensitive username of the db account being rotated. Example: `msmith`
+
+**Password**
+
+Account password is optional, rotation will set one if blank
 
 ##
 
@@ -506,116 +599,25 @@ A Keeper Secrets Manager  has been created
 A Keeper Rotation  is already installed, running, and is able to communicate
 to your MariaDB database
 
-Field
-
-Description
-
-Field
-
-Description
-
-Field
-
-Description
-
-**Title**
-
-Keeper record title Ex: `dbadmin`
-
-**Hostname or IP Address**
-
-Server address - _doesn't need to be publicly_ routable
-
-**Port**
-
-For default ports, see port mapping Ex: `mariadb=3306`
-
-**Use SSL**
-
-Check to perform SSL verification before connecting, if your database has SSL
-configured
-
-**Administrative Credentials**
-
-Linked PAM User record that contains the username and password of the Admin
-account which will perform the rotation.
-
-**Database Type**
-
-`maridb `or `maridb-flexible`
-
-**Title**
-
-Configuration name, example: `MariaDB LAN Configuration`
-
-**Environment**
-
-Select: `Local Network`
-
-**Gateway**
-
-Select the Gateway that is configured on the Keeper Secrets Manager
-application and has network access to your MariaDB database
-
-**Application Folder**
-
-Select the Shared folder where the PAM Configuration will be stored. We
-recommend placing this in a shared folder with the PAM User records, not the
-database resources.
-
-**Record Type**
-
-PAM User
-
-**Title**
-
-Keeper record title
-
-**Login**
-
-Case sensitive username of the db account being rotated. Example: `msmith`
-
-**Password**
-
-Account password is optional, rotation will set one if blank
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
-  5. [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
-
-# Native MariaDB
-
-Rotating Local Network MariaDB database accounts with Keeper Rotation
-
-[PreviousNative MySQL](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/database/mysql)[NextNative
-PostgreSQL](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/database/postgresql)
-
-  * Overview
-  * Prerequisites
-  * 1\. Set up a PAM Database Record
-  * 2\. Set up a PAM Configuration
-  * 3\. Set up one or more PAM user records
-  * 4\. Configure Rotation on PAM User records
+For default ports, see  Ex: `mariadb=3306`
 
 [application](/en/keeperpam/privileged-access-manager/getting-
 started/applications)
 
 [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FdhD6D9I1nwDLWy7tcyxP%252FMariaDB%2520Local%2520Network.jpg%3Falt%3Dmedia%26token%3Db5e88662-a274-4396-8726-d9a4828e3d64&width=768&dpr=4&quality=100&sign=4a1c1993&sv=2)
+port mapping
+
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
+
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
 
 [page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
 cases/local-network#rotation-on-the-local-network)
 
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
-
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FdhD6D9I1nwDLWy7tcyxP%252FMariaDB%2520Local%2520Network.jpg%3Falt%3Dmedia%26token%3Db5e88662-a274-4396-8726-d9a4828e3d64&width=768&dpr=4&quality=100&sign=4a1c1993&sv=2)
 

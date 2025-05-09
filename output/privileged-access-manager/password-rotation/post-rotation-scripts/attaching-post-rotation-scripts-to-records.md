@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -386,30 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=0HKqc5nrihdSnYkSFAIv&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Post-Rotation Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts)
-
-# Attaching Scripts
-
-Attaching post-rotation scripts to PAM resource records
-
-[PreviousInputs and Outputs](/en/keeperpam/privileged-access-manager/password-
-rotation/post-rotation-scripts/parameters)[NextCode
-Examples](/en/keeperpam/privileged-access-manager/password-rotation/post-
-rotation-scripts/accessing-parameters)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -439,6 +415,30 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=0HKqc5nrihdSnYkSFAIv&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Post-Rotation Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts)
+
+# Attaching Scripts
+
+Attaching post-rotation scripts to PAM resource records
+
+[PreviousInputs and Outputs](/en/keeperpam/privileged-access-manager/password-
+rotation/post-rotation-scripts/parameters)[NextCode
+Examples](/en/keeperpam/privileged-access-manager/password-rotation/post-
+rotation-scripts/accessing-parameters)
+
+Last updated 2 months ago
+
+Was this helpful?
 
 ##
 

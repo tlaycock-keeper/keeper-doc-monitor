@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -386,34 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Supported Operating systems:
-  * Video Overview
-  * Pre-requisites
-  * Instructions
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MJXfMZXEdPkvtXzMcQ-&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
-
-# CLI Installation on Linux
-
-How to install the Keeper Commander CLI on Linux
-
-[PreviousCLI Installation on macOS](/en/keeperpam/commander-cli/commander-
-installation-setup/installation-on-mac)[NextPython Developer
-Setup](/en/keeperpam/commander-cli/commander-installation-setup/developer-
-mode)
-
-Last updated 6 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -443,6 +415,34 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Supported Operating systems:
+  * Video Overview
+  * Pre-requisites
+  * Instructions
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MJXfMZXEdPkvtXzMcQ-&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+
+# CLI Installation on Linux
+
+How to install the Keeper Commander CLI on Linux
+
+[PreviousCLI Installation on macOS](/en/keeperpam/commander-cli/commander-
+installation-setup/installation-on-mac)[NextPython Developer
+Setup](/en/keeperpam/commander-cli/commander-installation-setup/developer-
+mode)
+
+Last updated 6 months ago
+
+Was this helpful?
 
 ###
 
@@ -556,13 +556,13 @@ Copy
 
 You should see:
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FijsE6IrCJmLZkurhwQKo%252Fkeeper-
-commander_BBNOqSVfEO.png%3Falt%3Dmedia%26token%3D9f80084e-6f49-46be-a52c-0bbb0b7737d4&width=768&dpr=4&quality=100&sign=8c8fadbc&sv=2)
-
 Note, for your first time logging into a new device or a new location, you may
 have to perform device approval through email or other 2FA methods.
 
 Keeper Commander – Installing and Logging In
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FijsE6IrCJmLZkurhwQKo%252Fkeeper-
+commander_BBNOqSVfEO.png%3Falt%3Dmedia%26token%3D9f80084e-6f49-46be-a52c-0bbb0b7737d4&width=768&dpr=4&quality=100&sign=8c8fadbc&sv=2)
 

@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -439,7 +439,7 @@ Day to day management of Keeper Privilege Manager elevation requests
 [PreviousPolicies](/en/keeperpam/endpoint-privilege-
 manager/policies)[NextFAQs](/en/keeperpam/faqs)
 
-Last updated 27 days ago
+Last updated 28 days ago
 
 Was this helpful?
 
@@ -510,13 +510,13 @@ For organizations with high volumes of elevation requests:
 
   * 
 
-**Auto-Approval Rules** : Set up  to automatically approve routine requests
-
-[policies](/en/keeperpam/endpoint-privilege-manager/policies)
-
 Endpoint**** Privilege Manager Requests Dashboard
 
 Detailed View of an Elevation Request
+
+**Auto-Approval Rules** : Set up  to automatically approve routine requests
+
+[policies](/en/keeperpam/endpoint-privilege-manager/policies)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

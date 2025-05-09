@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -423,15 +423,6 @@ Was this helpful?
 [Export as PDF](/en/keeperpam/~gitbook/pdf?page=-Mf8yJS8Oy-
 wUqwOAoUY&only=yes&limit=100)
 
-Last updated 11 months ago
-
-Was this helpful?
-
-The Keeper Secrets Manage CLI is focused specifically on retrieving and
-updating secrets in the vault.
-
-For all other commands, please refer to the Keeper Commander CLI:
-
   1. [Secrets Manager](/en/keeperpam/secrets-manager)
   2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
 
@@ -443,6 +434,15 @@ Use the Keeper Commander CLI for hundreds of Vault and Admin Console commands
 command-line-interface/version-command)[NextDocker
 Container](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/docker-container)
+
+Last updated 11 months ago
+
+Was this helpful?
+
+The Keeper Secrets Manage CLI is focused specifically on retrieving and
+updating secrets in the vault.
+
+For all other commands, please refer to the Keeper Commander CLI:
 
 [Commander CLI](/en/keeperpam/commander-cli/overview)
 

@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -386,6 +386,33 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Supported Operating systems
+  * Video Overview
+  * Typical Binary Installation (recommended)
+  * Python (PIP) installation
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MJXWW3ypcK5uBpBl08R&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+
+# CLI Installation on Windows
+
+How to install Keeper Commander CLI on Microsoft Windows
+
+[PreviousInstallation and Setup](/en/keeperpam/commander-cli/commander-
+installation-setup)[NextCLI Installation on macOS](/en/keeperpam/commander-
+cli/commander-installation-setup/installation-on-mac)
+
+Last updated 6 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -416,33 +443,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-  * Supported Operating systems
-  * Video Overview
-  * Typical Binary Installation (recommended)
-  * Python (PIP) installation
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MJXWW3ypcK5uBpBl08R&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
-
-# CLI Installation on Windows
-
-How to install Keeper Commander CLI on Microsoft Windows
-
-[PreviousInstallation and Setup](/en/keeperpam/commander-cli/commander-
-installation-setup)[NextCLI Installation on macOS](/en/keeperpam/commander-
-cli/commander-installation-setup/installation-on-mac)
-
-Last updated 6 months ago
-
-Was this helpful?
-
 ###
 
 **Supported Operating systems**
@@ -461,6 +461,13 @@ Watch the video below to learn how to install and log in to Keeper Commander.
 
 Typical Binary Installation (recommended)
 
+⬇️ [**Download Keeper Commander .exe file from
+GitHub**](https://github.com/Keeper-Security/Commander/releases)
+
+On the Commander Github page, the current commander build is always available
+via the [releases link](https://github.com/Keeper-
+Security/Commander/releases).
+
 The binary download is the file named: `keeper-commander-windows-vX.XX.exe`
 
 Note about Windows installs: \- You may have to right click on the executable
@@ -475,6 +482,9 @@ Python (PIP) installation
 ####
 
 Setup with Python3:
+
+Download the current version of Python from
+<https://www.python.org/>[](https://www.python.org/)
 
 Recommended releases:
 
@@ -525,27 +535,13 @@ Copy
     
     keeper shell
 
-Note, for your first time logging into a new device or a new location, you may
-have to perform device authorization through email or other 2FA methods.
-
-On the Commander Github page, the current commander build is always available
-via the .
-
-Download the current version of Python from
-
-⬇️
-
-[**Download Keeper Commander .exe file from
-GitHub**](https://github.com/Keeper-Security/Commander/releases)
-
-[releases link](https://github.com/Keeper-Security/Commander/releases)
-
-<https://www.python.org/>[](https://www.python.org/)
-
-Keeper Commander – Installing and Loggin In
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fcjx050celvWUrje5NIeH%252Fkeeper-
 commander_BBNOqSVfEO.png%3Falt%3Dmedia%26token%3De1587fe4-a3db-4d4b-b951-53e0472c85c2&width=768&dpr=4&quality=100&sign=960d2d6c&sv=2)
+
+Note, for your first time logging into a new device or a new location, you may
+have to perform device authorization through email or other 2FA methods.
+
+Keeper Commander – Installing and Loggin In
 

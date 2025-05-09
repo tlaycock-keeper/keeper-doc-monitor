@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -386,6 +386,35 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * .Net SDK
+  * API documentation 
+  * Developer Requirements
+  * Examples
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=F2aegQUDSfPyMkRxDc0o&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+
+# .NET Developer Setup
+
+Keeper Commander .NET Developer SDK
+
+[PreviousPython Developer Setup](/en/keeperpam/commander-cli/commander-
+installation-setup/developer-mode)[NextPowerShell
+Module](/en/keeperpam/commander-cli/commander-installation-setup/installation-
+on-powershell)
+
+Last updated 20 days ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -415,17 +444,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=F2aegQUDSfPyMkRxDc0o&only=yes&limit=100)
-
-Last updated 19 days ago
-
-Was this helpful?
 
 ##
 
@@ -470,24 +488,6 @@ Application:
 The .Net Commander CLI Sample App contains several basic operations such as
 logging in, authentication with two-factor, loading and decrypting the vault
 and updating passwords.
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
-
-# .NET Developer Setup
-
-Keeper Commander .NET Developer SDK
-
-[PreviousPython Developer Setup](/en/keeperpam/commander-cli/commander-
-installation-setup/developer-mode)[NextPowerShell
-Module](/en/keeperpam/commander-cli/commander-installation-setup/installation-
-on-powershell)
-
-  * Overview
-  * .Net SDK
-  * API documentation 
-  * Developer Requirements
-  * Examples
 
 <https://github.com/Keeper-Security/keeper-sdk-
 dotnet>[](https://github.com/Keeper-Security/keeper-sdk-dotnet)

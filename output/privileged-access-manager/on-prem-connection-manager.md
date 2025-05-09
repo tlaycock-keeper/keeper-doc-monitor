@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -386,32 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * What is Keeper Connection Manager On-Prem?
-  * Integration with KeeperPAM
-  * Install KCM
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=jY0Y6A1qOAai0XdtNuj4&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# On-Prem Connection Manager
-
-Manage a self-hosted version of Keeper Connection Manager
-
-[PreviousDiscovery using the Vault](/en/keeperpam/privileged-access-
-manager/discovery/discovery-using-the-
-vault)[NextReferences](/en/keeperpam/privileged-access-manager/references)
-
-Last updated 1 month ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -441,6 +415,32 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Overview
+  * What is Keeper Connection Manager On-Prem?
+  * Integration with KeeperPAM
+  * Install KCM
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=jY0Y6A1qOAai0XdtNuj4&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# On-Prem Connection Manager
+
+Manage a self-hosted version of Keeper Connection Manager
+
+[PreviousDiscovery using the Vault](/en/keeperpam/privileged-access-
+manager/discovery/discovery-using-the-
+vault)[NextReferences](/en/keeperpam/privileged-access-manager/references)
+
+Last updated 1 month ago
+
+Was this helpful?
 
 ##
 
@@ -510,10 +510,10 @@ Install KCM
 
 To learn more about Keeper Connection Manager (on-prem) please visit:
 
+Keeper Connection Manager (on-prem)
+
 <https://docs.keeper.io/en/keeper-connection-
 manager>[](https://docs.keeper.io/en/keeper-connection-manager)
-
-Keeper Connection Manager (on-prem)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

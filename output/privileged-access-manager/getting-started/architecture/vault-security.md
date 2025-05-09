@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -386,6 +386,30 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=mWAIZaLPKEjJeZYuNSby&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [Architecture](/en/keeperpam/privileged-access-manager/getting-started/architecture)
+
+# Vault Security
+
+Security and encryption model of the Keeper Vault
+
+[PreviousArchitecture Diagram](/en/keeperpam/privileged-access-
+manager/getting-started/architecture/system-architecture)[NextRouter
+Security](/en/keeperpam/privileged-access-manager/getting-
+started/architecture/router-security)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -416,30 +440,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=mWAIZaLPKEjJeZYuNSby&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [Architecture](/en/keeperpam/privileged-access-manager/getting-started/architecture)
-
-# Vault Security
-
-Security and encryption model of the Keeper Vault
-
-[PreviousArchitecture Diagram](/en/keeperpam/privileged-access-
-manager/getting-started/architecture/system-architecture)[NextRouter
-Security](/en/keeperpam/privileged-access-manager/getting-
-started/architecture/router-security)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 Keeper's platform is built with End-to-End Encryption (E2EE) across all
 devices and endpoints.
 
@@ -452,12 +452,11 @@ devices and endpoints.
   * Data in transit is encrypted with TLS and additional layers of transmission encryption which protects against access MITM, service providers and untrusted networks.
 
 A full and detailed disclosure of all encryption related to data at rest, data
-in transit, cloud architecture and certifications can be found on the .
+in transit, cloud architecture and certifications can be found on the [Keeper
+Enterprise Encryption Model page](https://docs.keeper.io/en/enterprise-
+guide/keeper-encryption-model).
 
 A video covering this model is below.
-
-[Keeper Enterprise Encryption Model
-page](https://docs.keeper.io/en/enterprise-guide/keeper-encryption-model)
 
 Vault Encryption & Security Model
 

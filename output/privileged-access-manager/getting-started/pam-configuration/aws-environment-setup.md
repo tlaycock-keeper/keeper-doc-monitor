@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -604,6 +604,8 @@ The steps to create the access keys is below:
 
   5. Save the provided Access Key ID / Secret Access Key into the PAM Configuration
 
+AWS Rotation Hierarchy
+
 In addition to these policies, we recommend protecting the Gateway
 Configuration secrets .
 
@@ -615,8 +617,6 @@ configuration/aws-environment-setup#ec2-role)
 
 [IAM User Policy](/en/keeperpam/privileged-access-manager/getting-started/pam-
 configuration/aws-environment-setup#iam-admin-user-1)
-
-AWS Rotation Hierarchy
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

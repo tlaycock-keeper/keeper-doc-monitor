@@ -418,688 +418,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-McBCLTHu2NM3AVoH9Lc&only=yes&limit=100)
-
-Last updated 9 months ago
-
-Was this helpful?
-
-##
-
-Commands
-
-####
-
-Keeper Command Reference
-
-Whether using the interactive shell, CLI or JSON config file, Keeper supports
-the following commands, each command supports additional parameters and
-options.
-
-To get help on a particular command, run:
-
-`help <command>`
-
-###
-
-this-device command
-
-**Command:**`this-device`
-
-**Detail:** Set device logout and persistent login preferences
-
-**Parameters:**
-
-None
-
-**Switches:**
-
-rename <Name of Device>: Change the name of the device
-
-register: Encrypts the user's data key with the device public key in order to
-utilize persistent login sessions
-
-persistent-login <ON|OFF>: Turn on or off the "Stay Logged In" setting for
-your account
-
-ip-auto-approve <ON|OFF>: Control the IP Address device auto-approval security
-setting for your account
-
-no-yubikey-pin <ON|OFF>: Turn on or off the PIN usage on Security Key
-(Webauthn) devices.
-
-timeout: Set inactivity duration before automatic logout. Default unit is
-minutes (can be set to hours or days by appending "h" or "d", respectively).
-
-**Examples:**
-
-  1. Display the available options
-
-  2. Rename the device that shows up in access logs
-
-  3. Enable "Stay Logged In" on the account
-
-  4. Register the user's "encrypted data key" with the server, for use in persistent login sessions
-
-  5. Enables IP Address auto-approval (applies to master password logins only)
-
-  6. Set the inactivity timeout to 10 minutes
-
-  7. Set the inactivity timeout to 24 hours
-
-###
-
-login command
-
-**Command:**`login`
-
-**Detail:** Login to Keeper
-
-**Parameters:**
-
-Email address of account to login to
-
-**Switches:**
-
--p, --password password of Keeper account
-
-You will be prompted to enter the password if it is not provided with the
-switch
-
-**Examples:**
-
-  1. Login to John Doe's Keeper account. Will be prompted for password
-
-  2. Login to Jane Doe's Keeper account with the given password
-
-###
-
-whoami command
-
-**Command:**`whoami`
-
-**Detail:** Display information about the currently logged in user
-
-**Switches:**
-
--v, --verbose include current datacenter and Commander environment
-
-**Examples:**
-
-  1. See detailed user information
-
-  2. See detailed user information with the current datacenter and environment
-
-####
-
-**Example Output:**
-
-###
-
-logout command
-
-**Command:**`logout`
-
-**Detail:** Logout of Keeper
-
-**Examples:**
-
-  1. Logout of Keeper
-
-###
-
-help command
-
-**Command:**`help`
-
-**Detail:** Display information about a given Commander command or a list of
-all available commands.
-
-**Parameters:**
-
-A Commander command to see information for. To see a list of all available
-commands, leave unspecified.
-
-**Examples:**
-
-  1. See detailed information on add command
-
-  2. See detailed information on sync-down command
-
-  3. See list of all available commands
-
-###
-
-create-account command
-
-**Command:**`create-account `
-
-**Details:** Create a Keeper Account. You will be prompted to enter a password
-for the account, and then a verification email code.
-
-**Parameters:**
-
-Email address to use for the account.
-
-**Examples:**
-
-##
-
-sync-down command
-
-**Command:**`sync-down` or `d`
-
-**Detail:** Download, sync, and decrypt vault
-
-**Examples:**
-
-  1. Sync vault
-
-  2. Sync vault
-
-###
-
-version command
-
-**Command:**`version` or `v`
-
-**Detail:** Display Commander version and path information
-
-**Switches:**
-
--v display information about the underlying SDK, OS, working directory, and configuration file
-
-**Examples:**
-
-  1. Show current Commander version
-
-  2. Show current Commander version, as well as the SDK version, OS, working directory, and configuration file 
-
-###
-
-clear command
-
-**Command:**`clear` or `c`
-
-**Detail:** Clear all lines from the screen
-
-**Examples:**
-
-  1. clear all lines from the screen
-
-###
-
-run-batch command
-
-**Command:**`run-batch` or `run`
-
-**Detail:** Execute commands sequentially from the provided file.
-
-**Switches:**
-
-`-d [seconds]` Specify a delay of this number of seconds in between commands.
-This will help in preventing throttling on the backend.
-
-`-q` Quiet mode
-
-`-n` or `--dry-run` Preview the commands that will be run without execution.
-
-**Examples:**
-
-###
-
-generate command
-
-Requires Commander v16.5.10+
-
-**Command:**`generate`
-
-**Detail:** Generate a secure password
-
-**Switches:**
-
-`-cc` or `--clipboard-copy` copy the created password to the clipboard
-
-`-nb` or `--no-breachwatch` skip Breachwatch check
-
-`-f <{table, json}>` or `--format <{table, json}>` select an output method for
-the generated password
-
-  * requires Commander v16.5.11+
-
-`-i <NUMBER>` or `--json-indent <NUMBER>` with json format:
-
-  * 0 for plain json output
-
-  * a number greater than 0 to select the indentation for easy to read output
-
-  * requires Commander v16.5.11+
-
-`-n [NUMBER]` or `--number [NUMBER]` create the given number of passwords
-
-`-c [LENGTH]` or `--count [LENGTH]` length of the password
-
-`-s [SYMBOLS]` or `--symbols [SYMBOLS] `minimum number of special symbols to
-include in the password
-
-`-d [DIGITS]` or `--digits [DIGITS]` minimum number of digits to include in
-the password
-
-`-u [UPPERCASE]` or `--uppercase [UPPSERCASE]` minimum number of uppercase
-letters to include in the password
-
-`-l [LOWERCASE]` or `--lowercase [LOWERCASE]` minimum number of lowercase
-letters to include in the password
-
-`-dr [DICE_ROLLS] `or `--dice-rolls [DICE_ROLLS] `number of dice rolls
-
-**Examples:**
-
-  1. Generate a secure password
-
-  2. Generate a secure password that is 12 characters longs with at least 2 uppercase letters and 2 symbols and copy the password to the system clipboard
-
-  3. Generate a password and show password strength, and Breachwatch result in plain json format
-
-  4. Generate 10 diceware passwords of 6 words
-
-###
-
-generate dice-roll passwords
-
-Requires Commander v16.7.6+
-
-**Command:**`generate --dice-rolls`
-
-**Detail:** Generate a dice roll secure password consisting of random words
-
-**Switches:**
-
-`-dr` or `--dice-rolls <NUMBER OF WORDS TO GENERATE>` generate a dice roll
-password, and identify how many words to generate
-
-`--word-list <WORD LIST FILENAME>`optionally use a file of words to use as a
-wordlist
-
-**Examples:**
-
-  1. generate a password of 6 random words
-
-  2. generate a password of 5 random words from the given file of words
-
-###
-
-verify-records command
-
-**Command:**`verify-records`
-
-**Detail:** Check for record format integrity and perform necessary repairs to
-record structure. Edge cases are added to this command when issues in the
-field are reported to Keeper support.
-
-**Examples:**
-
-###
-
-verify-shared-folders command
-
-**Command:**`verify-shared-folders`
-
-Parameters
-
-Name or UID of shared folder to check. Leave blank to check all
-
-**Detail:** Check for records in shared folders that do not have the correct
-shared data key, then add the correct key where needed
-
-**Examples:**
-
-###
-
-reset-password command
-
-**Command:**`reset-password`
-
-**Detail:** reset the account's master password
-
-Switches:
-
-`--delete-sso` deletes SSO master password
-
-`--current` the current master password
-
-`--new` the new password to set as master password
-
-**Examples:**
-
-Hint: you can use the generate command to generate a secure password within
-Commander
-
-###
-
-security-audit sync command
-
-**Command:**`security-audit sync` or `sas`
-
-This command is available only to enterprise administrators
-
-**Detail:** Sync security audit data for enterprise vault(s). Used to correct
-mis-matching summary security audit scores as seen by the user (in their
-vault) and by an enterprise administrator (either in the admin console app or
-via a call to `security-audit-report` in Commander)
-
-**Parameters:**
-
-Username(s) of vault(s) whose security data are to be synced. Multiple values
-allowed. Specify`@all` to perform sync for all enterprise vaults.
-
-**Switches:**
-
-`--soft `Do a "soft" sync of security data. Does not require corresponding
-vault login. This is the default sync-type.
-
-`--medium `Do a "medium" sync of security data. Can sync some data without the
-corresponding vault login.
-
-`--hard `Do a "hard" sync of security data. No data are synced until the
-corresponding vault login occurs.
-
-`-f` or `--force` Perform sync without being prompted for confirmation (non-
-interactive mode)
-
-`-v` or `--verbose` Output a Security Audit report after performing sync
-
-**Examples:**
-
-  1. Perform a "soft" sync of security data for vault owned by _user1@domain.com_
-
-  2. Initiate a "hard" security-data sync for the vaults belonging to _user2@domain.com_ and _user3@domain.com_
-
-  3. Initiate a "hard" security-data sync for all vaults in the enterprise
-
-  4. Perform a "hard" sync of security-audit data for _user1@domain.com_ and run a Security Audit report immediately after. Note that, in this scenario, you should expect the resulting report to show all 0s in the affected vault's summary scores (to be updated eventually once the affected owner logs in to their vault).
-
-Hint: If the total password record count shown in a user's vault (in "Security
-Audit" view) differs from the corresponding value shown in the admin console
-(also in "Security Audit" view) or the output of Commander's `security-audit-
-report --show-updated` command, use the `--hard` flag to force a summary
-security audit score reset/re-calculation to re-align those values.
-
-###
-
-sleep
-
-**Command** : `sleep`
-
-**Detail** : Add delay (in seconds) between batch commands
-
-**Switches:**
-
-The number of seconds, the delay, to be added between batch commands
-
-Example:
-
-  1. Sleep for 5 seconds
-
-###
-
-keeper-fill command
-
-**Command:**`keeper-fill`
-
-**Detail:** Display or manage KeeperFill settings. For example, this allows
-you to view/change the "Autofill" and "Auto Submit" preferences on a specific
-Keeper record.
-
-To get help on the command run:
-
-Possible values for "set" command: none, off, on.
-
-If set to "none", the behavior of the browser extension is to follow the user
-preference (in the browser extension general Settings screen). If the value is
-set to "on" or "off", the browser extension will follow the setting for the
-record.
-
-Example commands:
-
-###
-
-2fa command
-
-**Command:**`2fa`
-
-**Detail:** Display, add, or delete manage 2FA settings.
-
-To get help on the command run:
-
-Example commands:
-
-For more on the use of this command to correct mis-aligned security scores,
-please refer to the  section of our Troubleshooting page.
-
-This command is deprecated. If your goal is to add delay between commands,
-please refer to the  command.
-
-Copy
-
-    
-    
-    this-device
-    this-device rename "My MacOS CLI"
-    this-device persistent-login ON
-    this-device register
-    this-device ip-auto-approve ON
-    this-device timeout 10
-    this-device timeout 24h
-
-Copy
-
-    
-    
-    login john.doe@keepersecurity.com
-    login jane.doe@keepersecurity.com -p BhR!jeL4*2_zQ
-
-Copy
-
-    
-    
-    whoami
-    whoami -v
-
-Copy
-
-    
-    
-    My Vault> whoami
-            Logged in as: jane.doe@keepersecurity.com
-    
-                 Account                 Type: Enterprise
-                                 Renewal Date: Jul 29, 2021
-                 Storage             Capacity: 1000GB
-                                        Usage: 0%
-                                 Renewal Date: Jul 29, 2021
-
-Copy
-
-    
-    
-    logout
-
-Copy
-
-    
-    
-    help add
-    help sync-down
-    help
-
-Copy
-
-    
-    
-    create-account example@keepersecurity.com
-
-Copy
-
-    
-    
-    sync-down
-
-Copy
-
-    
-    
-    version
-    v -v
-
-Copy
-
-    
-    
-    clear
-
-Copy
-
-    
-    
-    run-batch -d 10 "C:\path\to\commands.txt"
-    
-    run-batch -d 2 "/path/on/linux/to/commands.txt"
-    
-    run-batch --dry-run -d 1 commands.txt
-
-Copy
-
-    
-    
-    generate
-    generate -cc -c 12 -u 2 -s 2
-    generate --format json -i 0
-    generate --dice-rolls=6 --number=10 --no-breachwatch
-
-Copy
-
-    
-    
-    generate --dice-rolls 6
-    generate --dice-roll 5 --word-list "words.txt"
-
-Copy
-
-    
-    
-    verify-records
-    
-    There are 23 record(s) to be corrected
-    Do you want to proceed? [y/n]: y
-
-Copy
-
-    
-    
-    verify-shared-folders
-    
-    There are 2 record key(s) to be corrected
-     x4qAxrfilDryCbNCoTqZ8A  MyRecord
-     D9QWFSNliXJU86-VI3zyMw  Twitter Login
-    Do you want to proceed? [y/n]:
-
-Copy
-
-    
-    
-    reset-password --current MyOldPassword --new lTo@KjCitMPs+R[16HX
-
-Copy
-
-    
-    
-    security-audit sync user1@domain.com
-    security-audit sync --hard user2@domain.com user3@domain.com
-    sas --hard @all
-    sas --verbose --hard user1@domain.com
-
-Copy
-
-    
-    
-    sleep 5
-
-Copy
-
-    
-    
-    keeper-fill command [--options]
-    
-    Command    Description
-    ---------  -------------------------------------
-    list       Displays KeeperFill settings.
-    set        Sets KeeperFill settings.
-
-Copy
-
-    
-    
-    My Vault> keeper-fill <command> -h
-
-Copy
-
-    
-    
-    My Vault> keeper-fill list / --recursive
-    My Vault> keeper-fill set / --recursive --auto-fill=none
-    My Vault> keeper-fill set <RECORD_UID> --auto-submit=off
-    My Vault> keeper-fill set <RECORD_UID> --auto-fill=on
-
-Copy
-
-    
-    
-    2fa command [--options]
-    
-    Command    Description
-    ---------  ------------------------------
-    list       Displays a list of 2FA methods
-    add        Add 2FA method
-    delete     Delete 2FA method
-
-Copy
-
-    
-    
-    My Vault> 2fa <command> -h
-
-Copy
-
-    
-    
-    My Vault> 2fa list 
-    2FA authentication expires: Never
-    
-      #  Method        Channel UID             Name         Created              Phone Number
-    ---  ------------  ----------------------  -----------  -------------------  --------------
-      1  TOTP          scbqsym0rRAWhDFZqfClY                2021-09-20 16:07:01
-      2  Backup Codes  I2KObaAfoQpfDJVjDKNFB   Backup Code  2022-02-11 14:18:12
-      
-    
-    My Vault> 2fa delete scbqsym0rRAWhDFZqfClY
-    My Vault> 2fa add --method=totp --name="Google Authenticator"
-    My Vault> 2fa add --method=key --key-pin --name="Yubikey"
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-
-# Miscellaneous Commands
-
-Helpful commands for miscellaneous functionality.
-
-[PreviousMSP Management Commands](/en/keeperpam/commander-cli/command-
-reference/msp-management-commands)[NextPassword
-Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
-
   * Commands
   * this-device command
   * login command
@@ -1121,12 +439,33 @@ Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
   * keeper-fill command
   * 2fa command
 
-[`run-batch`](/en/keeperpam/commander-cli/command-reference/misc-commands#run-
-batch-command)
+Was this helpful?
 
-["Security Audit Report Score Re-alignment Process"](/en/keeperpam/commander-
-cli/troubleshooting-commander-cli#security-audit-report-score-re-alignment-
-process)
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-McBCLTHu2NM3AVoH9Lc&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+
+# Miscellaneous Commands
+
+Helpful commands for miscellaneous functionality.
+
+##
+
+Commands
+
+####
+
+Keeper Command Reference
+
+Whether using the interactive shell, CLI or JSON config file, Keeper supports
+the following commands, each command supports additional parameters and
+options.
+
+To get help on a particular command, run:
+
+`help <command>`
 
 Set device logout and persistent login preferences
 
@@ -1187,6 +526,663 @@ Display or manage KeeperFill settings
 
 2FA settings management
 
+###
+
+this-device command
+
+**Command:**`this-device`
+
+**Detail:** Set device logout and persistent login preferences
+
+**Parameters:**
+
+None
+
+**Switches:**
+
+rename <Name of Device>: Change the name of the device
+
+register: Encrypts the user's data key with the device public key in order to
+utilize persistent login sessions
+
+persistent-login <ON|OFF>: Turn on or off the "Stay Logged In" setting for
+your account
+
+ip-auto-approve <ON|OFF>: Control the IP Address device auto-approval security
+setting for your account
+
+no-yubikey-pin <ON|OFF>: Turn on or off the PIN usage on Security Key
+(Webauthn) devices.
+
+timeout: Set inactivity duration before automatic logout. Default unit is
+minutes (can be set to hours or days by appending "h" or "d", respectively).
+
+**Examples:**
+
+Copy
+
+    
+    
+    this-device
+    this-device rename "My MacOS CLI"
+    this-device persistent-login ON
+    this-device register
+    this-device ip-auto-approve ON
+    this-device timeout 10
+    this-device timeout 24h
+
+  1. Display the available options
+
+  2. Rename the device that shows up in access logs
+
+  3. Enable "Stay Logged In" on the account
+
+  4. Register the user's "encrypted data key" with the server, for use in persistent login sessions
+
+  5. Enables IP Address auto-approval (applies to master password logins only)
+
+  6. Set the inactivity timeout to 10 minutes
+
+  7. Set the inactivity timeout to 24 hours
+
+###
+
+login command
+
+**Command:**`login`
+
+**Detail:** Login to Keeper
+
+**Parameters:**
+
+Email address of account to login to
+
+**Switches:**
+
+-p, --password password of Keeper account
+
+You will be prompted to enter the password if it is not provided with the
+switch
+
+**Examples:**
+
+Copy
+
+    
+    
+    login john.doe@keepersecurity.com
+    login jane.doe@keepersecurity.com -p BhR!jeL4*2_zQ
+
+  1. Login to John Doe's Keeper account. Will be prompted for password
+
+  2. Login to Jane Doe's Keeper account with the given password
+
+###
+
+whoami command
+
+**Command:**`whoami`
+
+**Detail:** Display information about the currently logged in user
+
+**Switches:**
+
+-v, --verbose include current datacenter and Commander environment
+
+**Examples:**
+
+Copy
+
+    
+    
+    whoami
+    whoami -v
+
+  1. See detailed user information
+
+  2. See detailed user information with the current datacenter and environment
+
+####
+
+**Example Output:**
+
+Copy
+
+    
+    
+    My Vault> whoami
+            Logged in as: jane.doe@keepersecurity.com
+    
+                 Account                 Type: Enterprise
+                                 Renewal Date: Jul 29, 2021
+                 Storage             Capacity: 1000GB
+                                        Usage: 0%
+                                 Renewal Date: Jul 29, 2021
+
+###
+
+logout command
+
+**Command:**`logout`
+
+**Detail:** Logout of Keeper
+
+**Examples:**
+
+Copy
+
+    
+    
+    logout
+
+  1. Logout of Keeper
+
+###
+
+help command
+
+**Command:**`help`
+
+**Detail:** Display information about a given Commander command or a list of
+all available commands.
+
+**Parameters:**
+
+A Commander command to see information for. To see a list of all available
+commands, leave unspecified.
+
+**Examples:**
+
+Copy
+
+    
+    
+    help add
+    help sync-down
+    help
+
+  1. See detailed information on add command
+
+  2. See detailed information on sync-down command
+
+  3. See list of all available commands
+
+###
+
+create-account command
+
+**Command:**`create-account `
+
+**Details:** Create a Keeper Account. You will be prompted to enter a password
+for the account, and then a verification email code.
+
+**Parameters:**
+
+Email address to use for the account.
+
+**Examples:**
+
+Copy
+
+    
+    
+    create-account example@keepersecurity.com
+
+##
+
+sync-down command
+
+**Command:**`sync-down` or `d`
+
+**Detail:** Download, sync, and decrypt vault
+
+**Examples:**
+
+Copy
+
+    
+    
+    sync-down
+
+  1. Sync vault
+
+  2. Sync vault
+
+###
+
+version command
+
+**Command:**`version` or `v`
+
+**Detail:** Display Commander version and path information
+
+**Switches:**
+
+-v display information about the underlying SDK, OS, working directory, and configuration file
+
+**Examples:**
+
+Copy
+
+    
+    
+    version
+    v -v
+
+  1. Show current Commander version
+
+  2. Show current Commander version, as well as the SDK version, OS, working directory, and configuration file 
+
+###
+
+clear command
+
+**Command:**`clear` or `c`
+
+**Detail:** Clear all lines from the screen
+
+**Examples:**
+
+Copy
+
+    
+    
+    clear
+
+  1. clear all lines from the screen
+
+###
+
+run-batch command
+
+**Command:**`run-batch` or `run`
+
+**Detail:** Execute commands sequentially from the provided file.
+
+**Switches:**
+
+`-d [seconds]` Specify a delay of this number of seconds in between commands.
+This will help in preventing throttling on the backend.
+
+`-q` Quiet mode
+
+`-n` or `--dry-run` Preview the commands that will be run without execution.
+
+**Examples:**
+
+Copy
+
+    
+    
+    run-batch -d 10 "C:\path\to\commands.txt"
+    
+    run-batch -d 2 "/path/on/linux/to/commands.txt"
+    
+    run-batch --dry-run -d 1 commands.txt
+
+###
+
+generate command
+
+Requires Commander v16.5.10+
+
+**Command:**`generate`
+
+**Detail:** Generate a secure password
+
+**Switches:**
+
+`-cc` or `--clipboard-copy` copy the created password to the clipboard
+
+`-nb` or `--no-breachwatch` skip Breachwatch check
+
+`-f <{table, json}>` or `--format <{table, json}>` select an output method for
+the generated password
+
+  * requires Commander v16.5.11+
+
+`-i <NUMBER>` or `--json-indent <NUMBER>` with json format:
+
+  * 0 for plain json output
+
+  * a number greater than 0 to select the indentation for easy to read output
+
+  * requires Commander v16.5.11+
+
+`-n [NUMBER]` or `--number [NUMBER]` create the given number of passwords
+
+`-c [LENGTH]` or `--count [LENGTH]` length of the password
+
+`-s [SYMBOLS]` or `--symbols [SYMBOLS] `minimum number of special symbols to
+include in the password
+
+`-d [DIGITS]` or `--digits [DIGITS]` minimum number of digits to include in
+the password
+
+`-u [UPPERCASE]` or `--uppercase [UPPSERCASE]` minimum number of uppercase
+letters to include in the password
+
+`-l [LOWERCASE]` or `--lowercase [LOWERCASE]` minimum number of lowercase
+letters to include in the password
+
+`-dr [DICE_ROLLS] `or `--dice-rolls [DICE_ROLLS] `number of dice rolls
+
+**Examples:**
+
+Copy
+
+    
+    
+    generate
+    generate -cc -c 12 -u 2 -s 2
+    generate --format json -i 0
+    generate --dice-rolls=6 --number=10 --no-breachwatch
+
+  1. Generate a secure password
+
+  2. Generate a secure password that is 12 characters longs with at least 2 uppercase letters and 2 symbols and copy the password to the system clipboard
+
+  3. Generate a password and show password strength, and Breachwatch result in plain json format
+
+  4. Generate 10 diceware passwords of 6 words
+
+###
+
+generate dice-roll passwords
+
+Requires Commander v16.7.6+
+
+**Command:**`generate --dice-rolls`
+
+**Detail:** Generate a dice roll secure password consisting of random words
+
+**Switches:**
+
+`-dr` or `--dice-rolls <NUMBER OF WORDS TO GENERATE>` generate a dice roll
+password, and identify how many words to generate
+
+`--word-list <WORD LIST FILENAME>`optionally use a file of words to use as a
+wordlist
+
+**Examples:**
+
+Copy
+
+    
+    
+    generate --dice-rolls 6
+    generate --dice-roll 5 --word-list "words.txt"
+
+  1. generate a password of 6 random words
+
+  2. generate a password of 5 random words from the given file of words
+
+###
+
+verify-records command
+
+**Command:**`verify-records`
+
+**Detail:** Check for record format integrity and perform necessary repairs to
+record structure. Edge cases are added to this command when issues in the
+field are reported to Keeper support.
+
+**Examples:**
+
+Copy
+
+    
+    
+    verify-records
+    
+    There are 23 record(s) to be corrected
+    Do you want to proceed? [y/n]: y
+
+###
+
+verify-shared-folders command
+
+**Command:**`verify-shared-folders`
+
+Parameters
+
+Name or UID of shared folder to check. Leave blank to check all
+
+**Detail:** Check for records in shared folders that do not have the correct
+shared data key, then add the correct key where needed
+
+**Examples:**
+
+Copy
+
+    
+    
+    verify-shared-folders
+    
+    There are 2 record key(s) to be corrected
+     x4qAxrfilDryCbNCoTqZ8A  MyRecord
+     D9QWFSNliXJU86-VI3zyMw  Twitter Login
+    Do you want to proceed? [y/n]:
+
+###
+
+reset-password command
+
+**Command:**`reset-password`
+
+**Detail:** reset the account's master password
+
+Switches:
+
+`--delete-sso` deletes SSO master password
+
+`--current` the current master password
+
+`--new` the new password to set as master password
+
+**Examples:**
+
+Copy
+
+    
+    
+    reset-password --current MyOldPassword --new lTo@KjCitMPs+R[16HX
+
+Hint: you can use the generate command to generate a secure password within
+Commander
+
+###
+
+security-audit sync command
+
+**Command:**`security-audit sync` or `sas`
+
+This command is available only to enterprise administrators
+
+**Detail:** Sync security audit data for enterprise vault(s). Used to correct
+mis-matching summary security audit scores as seen by the user (in their
+vault) and by an enterprise administrator (either in the admin console app or
+via a call to `security-audit-report` in Commander)
+
+**Parameters:**
+
+Username(s) of vault(s) whose security data are to be synced. Multiple values
+allowed. Specify`@all` to perform sync for all enterprise vaults.
+
+**Switches:**
+
+`--soft `Do a "soft" sync of security data. Does not require corresponding
+vault login. This is the default sync-type.
+
+`--medium `Do a "medium" sync of security data. Can sync some data without the
+corresponding vault login.
+
+`--hard `Do a "hard" sync of security data. No data are synced until the
+corresponding vault login occurs.
+
+`-f` or `--force` Perform sync without being prompted for confirmation (non-
+interactive mode)
+
+`-v` or `--verbose` Output a Security Audit report after performing sync
+
+**Examples:**
+
+Copy
+
+    
+    
+    security-audit sync user1@domain.com
+    security-audit sync --hard user2@domain.com user3@domain.com
+    sas --hard @all
+    sas --verbose --hard user1@domain.com
+
+  1. Perform a "soft" sync of security data for vault owned by _user1@domain.com_
+
+  2. Initiate a "hard" security-data sync for the vaults belonging to _user2@domain.com_ and _user3@domain.com_
+
+  3. Initiate a "hard" security-data sync for all vaults in the enterprise
+
+  4. Perform a "hard" sync of security-audit data for _user1@domain.com_ and run a Security Audit report immediately after. Note that, in this scenario, you should expect the resulting report to show all 0s in the affected vault's summary scores (to be updated eventually once the affected owner logs in to their vault).
+
+Hint: If the total password record count shown in a user's vault (in "Security
+Audit" view) differs from the corresponding value shown in the admin console
+(also in "Security Audit" view) or the output of Commander's `security-audit-
+report --show-updated` command, use the `--hard` flag to force a summary
+security audit score reset/re-calculation to re-align those values.
+
+###
+
+sleep
+
+**Command** : `sleep`
+
+**Detail** : Add delay (in seconds) between batch commands
+
+**Switches:**
+
+The number of seconds, the delay, to be added between batch commands
+
+Example:
+
+Copy
+
+    
+    
+    sleep 5
+
+  1. Sleep for 5 seconds
+
+###
+
+keeper-fill command
+
+**Command:**`keeper-fill`
+
+**Detail:** Display or manage KeeperFill settings. For example, this allows
+you to view/change the "Autofill" and "Auto Submit" preferences on a specific
+Keeper record.
+
+Copy
+
+    
+    
+    keeper-fill command [--options]
+    
+    Command    Description
+    ---------  -------------------------------------
+    list       Displays KeeperFill settings.
+    set        Sets KeeperFill settings.
+
+To get help on the command run:
+
+Copy
+
+    
+    
+    My Vault> keeper-fill <command> -h
+
+Possible values for "set" command: none, off, on.
+
+If set to "none", the behavior of the browser extension is to follow the user
+preference (in the browser extension general Settings screen). If the value is
+set to "on" or "off", the browser extension will follow the setting for the
+record.
+
+Example commands:
+
+Copy
+
+    
+    
+    My Vault> keeper-fill list / --recursive
+    My Vault> keeper-fill set / --recursive --auto-fill=none
+    My Vault> keeper-fill set <RECORD_UID> --auto-submit=off
+    My Vault> keeper-fill set <RECORD_UID> --auto-fill=on
+
+###
+
+2fa command
+
+**Command:**`2fa`
+
+**Detail:** Display, add, or delete manage 2FA settings.
+
+Copy
+
+    
+    
+    2fa command [--options]
+    
+    Command    Description
+    ---------  ------------------------------
+    list       Displays a list of 2FA methods
+    add        Add 2FA method
+    delete     Delete 2FA method
+
+To get help on the command run:
+
+Copy
+
+    
+    
+    My Vault> 2fa <command> -h
+
+Example commands:
+
+Copy
+
+    
+    
+    My Vault> 2fa list 
+    2FA authentication expires: Never
+    
+      #  Method        Channel UID             Name         Created              Phone Number
+    ---  ------------  ----------------------  -----------  -------------------  --------------
+      1  TOTP          scbqsym0rRAWhDFZqfClY                2021-09-20 16:07:01
+      2  Backup Codes  I2KObaAfoQpfDJVjDKNFB   Backup Code  2022-02-11 14:18:12
+      
+    
+    My Vault> 2fa delete scbqsym0rRAWhDFZqfClY
+    My Vault> 2fa add --method=totp --name="Google Authenticator"
+    My Vault> 2fa add --method=key --key-pin --name="Yubikey"
+
+[PreviousMSP Management Commands](/en/keeperpam/commander-cli/command-
+reference/msp-management-commands)[NextPassword
+Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
+
+Last updated 9 months ago
+
+Was this helpful?
+
+For more on the use of this command to correct mis-aligned security scores,
+please refer to the  section of our Troubleshooting page.
+
+This command is deprecated. If your goal is to add delay between commands,
+please refer to the  command.
+
+[`run-batch`](/en/keeperpam/commander-cli/command-reference/misc-commands#run-
+batch-command)
+
 [this-device](/en/keeperpam/commander-cli/command-reference/misc-
 commands#this-device-command)
 
@@ -1201,4 +1197,8 @@ commands#keeper-fill-command)
 
 [`2fa`](/en/keeperpam/commander-cli/command-reference/misc-commands#2fa-
 command)
+
+["Security Audit Report Score Re-alignment Process"](/en/keeperpam/commander-
+cli/troubleshooting-commander-cli#security-audit-report-score-re-alignment-
+process)
 

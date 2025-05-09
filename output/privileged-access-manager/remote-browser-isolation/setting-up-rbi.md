@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -472,6 +472,8 @@ Enforcement policies for KeeperPAM are managed in the Keeper Admin Console
 under **Admin** > **Roles** > **Enforcement Policies** > **Privileged Access
 Manager**.
 
+Remote Browser Isolation Policies
+
 The following Enforcement Policies affect user's permissions to use Remote
 Browser Isolation and need to be enabled:
 
@@ -646,6 +648,8 @@ chromium browser window with a established connection to the specified URL
 defined on the PAM Browser record. For more information on how to setting up
 the PAM Browser Record, visit this .
 
+Remote Browser Isolation Settings
+
 By default, all URLs are permitted. Detailed Information
 
 By default, no restrictions are imposed on resources loaded by pages. Detailed
@@ -693,18 +697,8 @@ configuration)
 [page](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-remote-browser)
 
-[here](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation/setting-up-rbi/browser-autofill)
-
-[here](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation/setting-up-rbi/browser-autofill)
-
 [Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
 manager-commands#overview)
-
-Remote Browser Isolation Policies
-
-Remote Browser Isolation Settings
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -714,6 +708,12 @@ aa26-50953a099003&width=768&dpr=4&quality=100&sign=efc563b0&sv=2)
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FpcDZcca7LVVyiPGxwY3V%252FScreenshot%25202025-01-21%2520at%252012.14.54%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D30d5539c-0f3c-4717-8468-a0c825604f23&width=768&dpr=4&quality=100&sign=5932094e&sv=2)
+
+[here](/en/keeperpam/privileged-access-manager/remote-browser-
+isolation/setting-up-rbi/browser-autofill)
+
+[here](/en/keeperpam/privileged-access-manager/remote-browser-
+isolation/setting-up-rbi/browser-autofill)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

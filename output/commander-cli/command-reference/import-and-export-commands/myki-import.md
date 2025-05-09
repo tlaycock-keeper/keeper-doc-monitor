@@ -423,9 +423,11 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=PhzZpyBLiYTPuEWYVKz6&only=yes&limit=100)
 
-Last updated 4 months ago
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
 
-Was this helpful?
+# Myki Import
 
 ####
 
@@ -439,14 +441,12 @@ Copy
     
     $ keeper import --format=myki myki.csv
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
-
-# Myki Import
-
 [PreviousManageEngine Import](/en/keeperpam/commander-cli/command-
 reference/import-and-export-commands/manageengine-import)[NextProton Pass
 Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
 commands/proton-pass-import)
+
+Last updated 4 months ago
+
+Was this helpful?
 

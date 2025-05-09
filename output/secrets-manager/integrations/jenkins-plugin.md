@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -418,10 +418,31 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Features
+  * Prerequisites
+  * About
+  * Installation
+  * Source Code
+  * Create a Secrets Manager Client
+  * Add Credential to Jenkins
+  * Example Usage: Freestyle Project
+  * Example Usage: Pipeline Integration (Workflows)
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-MiY9yvhfQmptgmCD5Gk&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Jenkins Plugin
+
+Keeper Secrets Manager integration into Jenkins for dynamic secrets retrieval
+
+[PreviousHeroku](/en/keeperpam/secrets-manager/integrations/heroku)[NextKeeper
+Connection Manager](/en/keeperpam/secrets-manager/integrations/keeper-
+connection-manager)
 
 Last updated 5 months ago
 
@@ -489,6 +510,16 @@ Create a Secrets Manager Client
 
 Using Keeper Commander, generate a Client Device for Jenkins. Make note of the
 One Time Access Token.
+
+Copy
+
+    
+    
+    My Vault> secrets-manager client add --app MyApplication
+    
+    ------------------------------------------------------------------
+    One Time Access Token: XX:XXXXXXXXXXXXX
+    ------------------------------------------------------------------
 
 By default, the Client Device is locked to the first IP address that uses the
 One Time Access Token. If your Jenkins server has potentially multiple
@@ -584,6 +615,15 @@ secret from a different account or application.
 You can use and view the environment variables in a **Execute Shell** step.
 For example:
 
+Copy
+
+    
+    
+    #!/bin/bash
+    
+    my_app --login "${MY_LOGIN}"
+    echo "My Login = ${MY_LOGIN}"
+
 In the above the environmental variable **MY_LOGIN** will be passed a
 parameter to the application my_app, however the **echo** statement will
 result in the text "****" the console. Text based secrets are actively
@@ -595,54 +635,6 @@ Example Usage: Pipeline Integration (Workflows)
 
 The Keeper Secret Manager plugin can be used inside a **Jenkinsfile** using a
 step that has the label `**withKsm**`. Below is an example.
-
-When you are finished setting up your application, credentials, and secrets,
-you can click the **Generate Pipeline Script** to generate the **withKsm**
-block. This snippet can then be added to your Jenkinsfile.
-
-The environmental variables containing the secrets are only accessible within
-the **withKsm** block where they are defined. Once you exit the block, the
-secrets are not accessible.
-
-For a complete list of Keeper Secrets Manager features see the
-
-Keeper Secrets Manager access (See the  for more details)
-
-A Keeper  with secrets shared to it
-
-See the  for instructions on creating an Application
-
-Find the Keeper Secrets Manager Jenkins Plugin source code in the
-
-If you haven't done so already, follow the  and create a Secrets Manager
-application and Client Device specifically for Jenkins usage.
-
-For more information on creating Secrets Manager Applications and Clients, see
-the  documentation.
-
-The Keeper Secrets Manager snippet can be created using the **Pipeline
-Syntax** inside of Jenkins. Select **withKsm** from the **Sample Step**
-dropdown, then add a Keeper Secrets Manager Application, which will allow you
-to select the credentials and add secrets.
-
-Copy
-
-    
-    
-    My Vault> secrets-manager client add --app MyApplication
-    
-    ------------------------------------------------------------------
-    One Time Access Token: XX:XXXXXXXXXXXXX
-    ------------------------------------------------------------------
-
-Copy
-
-    
-    
-    #!/bin/bash
-    
-    my_app --login "${MY_LOGIN}"
-    echo "My Login = ${MY_LOGIN}"
 
 Copy
 
@@ -680,26 +672,34 @@ Copy
       }
     }
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+When you are finished setting up your application, credentials, and secrets,
+you can click the **Generate Pipeline Script** to generate the **withKsm**
+block. This snippet can then be added to your Jenkinsfile.
 
-# Jenkins Plugin
+The environmental variables containing the secrets are only accessible within
+the **withKsm** block where they are defined. Once you exit the block, the
+secrets are not accessible.
 
-Keeper Secrets Manager integration into Jenkins for dynamic secrets retrieval
+For a complete list of Keeper Secrets Manager features see the
 
-[PreviousHeroku](/en/keeperpam/secrets-manager/integrations/heroku)[NextKeeper
-Connection Manager](/en/keeperpam/secrets-manager/integrations/keeper-
-connection-manager)
+Keeper Secrets Manager access (See the  for more details)
 
-  * Features
-  * Prerequisites
-  * About
-  * Installation
-  * Source Code
-  * Create a Secrets Manager Client
-  * Add Credential to Jenkins
-  * Example Usage: Freestyle Project
-  * Example Usage: Pipeline Integration (Workflows)
+A Keeper  with secrets shared to it
+
+See the  for instructions on creating an Application
+
+Find the Keeper Secrets Manager Jenkins Plugin source code in the
+
+If you haven't done so already, follow the  and create a Secrets Manager
+application and Client Device specifically for Jenkins usage.
+
+For more information on creating Secrets Manager Applications and Clients, see
+the  documentation.
+
+The Keeper Secrets Manager snippet can be created using the **Pipeline
+Syntax** inside of Jenkins. Select **withKsm** from the **Sample Step**
+dropdown, then add a Keeper Secrets Manager Application, which will allow you
+to select the credentials and add secrets.
 
 [Overview ](/en/keeperpam/secrets-manager/overview)
 
@@ -735,6 +735,15 @@ ze1%252FScreen%2520Shot%25202021-09-24%2520at%25202.13.24%2520PM.png%3Falt%3Dmed
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MlMTSx8rstZWwFAz2Sd%252F-MlMTsJ1VgQqwrC2mEPd%252Fcred_add.png%3Falt%3Dmedia%26token%3D8b50d7cd-
+adc7-4a49-8109-097f63e77c76&width=768&dpr=4&quality=100&sign=6befa0ca&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fa4n3YHq8mVkQcwSTgJeu%252FScreen%2520Shot%25202021-11-17%2520at%25209.45.40%2520AM.png%3Falt%3Dmedia%26token%3D8e3d298f-6b83-492a-8998-bebdebfe535f&width=768&dpr=4&quality=100&sign=517cdd1c&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MlMTSx8rstZWwFAz2Sd%252F-MlMUFCp1u926PgPpk3y%252Fbuilder.png%3Falt%3Dmedia%26token%3D55b1adb4-f916-44f5-99b8-69944fd683ac&width=768&dpr=4&quality=100&sign=dcc673f&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
@@ -742,13 +751,4 @@ legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkEQ5PBLojjvL1P8vo5%252F-MkEQP2hhyxKSU0SVFoL%252Fjenkins-
 plugin-
 header.jpg%3Falt%3Dmedia%26token%3D7f925417-5968-47b7-a39c-883ef7fbc555&width=768&dpr=4&quality=100&sign=95b5cb1c&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MlMTSx8rstZWwFAz2Sd%252F-MlMTsJ1VgQqwrC2mEPd%252Fcred_add.png%3Falt%3Dmedia%26token%3D8b50d7cd-
-adc7-4a49-8109-097f63e77c76&width=768&dpr=4&quality=100&sign=6befa0ca&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fa4n3YHq8mVkQcwSTgJeu%252FScreen%2520Shot%25202021-11-17%2520at%25209.45.40%2520AM.png%3Falt%3Dmedia%26token%3D8e3d298f-6b83-492a-8998-bebdebfe535f&width=768&dpr=4&quality=100&sign=517cdd1c&sv=2)
 

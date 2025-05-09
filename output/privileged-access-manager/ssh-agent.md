@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -418,7 +418,7 @@ SSH agent
 manager/session-recording-and-playback)[NextIntegration with
 Git](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-git)
 
-Last updated 16 days ago
+Last updated 17 days ago
 
 Was this helpful?
 
@@ -481,7 +481,9 @@ Key Features
 
   * **Seamless Authorization** : Securely authorize SSH access to target systems when the Keeper vault is unlocked.
 
-  *   * **Git Integration** : Authenticate with Github and Gitlab, and sign your Git commits without having to store private keys locally on the workstation.
+  * **Local and Remote Use** : Supports SSH connections to line-of-sight targets in addition to managed systems via KeeperPAM [tunnels](/en/keeperpam/privileged-access-manager/tunnels).
+
+  * **Git Integration** : Authenticate with Github and Gitlab, and sign your Git commits without having to store private keys locally on the workstation.
 
   * **Encrypted keys** : SSH private keys held in Keeper can be encrypted with a passphrase, adding an additional layer of protection. Keeper enhances this by allowing the record's password field to act as the passphrase, ensuring seamless security and usability.
 
@@ -490,6 +492,9 @@ Key Features
 ##
 
 Downloads
+
+The Keeper Desktop application is available from the [Download
+Page](https://www.keepersecurity.com/download.html) of our website.
 
 ##
 
@@ -603,11 +608,15 @@ unlocked.
 
 Using SSH Agent with Git
 
-  * 
+  * [Integration with Git](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-git)
 
 ##
 
 Using SSH Agent with Tunnels
+
+For zero-trust [Tunnel](/en/keeperpam/privileged-access-manager/tunnels)
+connections through a target resource, Keeper's SSH agent will automatically
+authenticate the session.
 
 After a tunnel has been activated on a PAM resource, the SSH Command will
 display beneath the tunnel information.
@@ -765,12 +774,7 @@ Rotation of SSH Keys
 KeeperPAM provides automatic rotation of SSH keys on-demand or on a scheduled
 basis.
 
-  * 
-
-**Local and Remote Use** : Supports SSH connections to line-of-sight targets
-in addition to managed systems via KeeperPAM .
-
-The Keeper Desktop application is available from the  of our website.
+  * See the [Password Rotation](/en/keeperpam/secrets-manager/password-rotation) section and the [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user) SSH Key use case
 
 In order to work with the local operating system (Linux, macOS and Windows),
 follow the  to enable SSH Agent for your operating system.
@@ -780,25 +784,6 @@ See
 The Keeper SSH Agent allows you to seamlessly authenticate into services like
 GitHub and securely sign Git commits. To help you get started, we've created a
 step-by-step guide on setting up  and  using Keeper.
-
-For zero-trust  connections through a target resource, Keeper's SSH agent will
-automatically authenticate the session.
-
-See the  section and the  SSH Key use case
-
-[tunnels](/en/keeperpam/privileged-access-manager/tunnels)
-
-[Download Page](https://www.keepersecurity.com/download.html)
-
-[Integration with Git](/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git)
-
-[Tunnel](/en/keeperpam/privileged-access-manager/tunnels)
-
-[Password Rotation](/en/keeperpam/secrets-manager/password-rotation)
-
-[Linux User](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/linux-user)
 
 [guide below](/en/keeperpam/privileged-access-manager/ssh-agent#environment-
 setup)
