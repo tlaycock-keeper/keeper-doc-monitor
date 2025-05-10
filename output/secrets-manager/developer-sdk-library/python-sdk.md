@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -386,36 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Download and Installation
@@ -449,14 +419,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-Mg6hkOAroPk6q73LlFs&only=yes&limit=100)
 
 Detailed Python SDK docs for Keeper Secrets Manager
 
-[PreviousDeveloper SDKs](/en/keeperpam/secrets-manager/developer-sdk-
-library)[NextJava/Kotlin SDK](/en/keeperpam/secrets-manager/developer-sdk-
-library/java-sdk)
-
-Last updated 1 month ago
-
-Was this helpful?
-
 ##
 
 Download and Installation
@@ -475,7 +437,9 @@ Copy
 
 Source Code
 
-Find the Python source code in the
+Find the Python source code in the [GitHub
+repository](https://github.com/Keeper-Security/secrets-
+manager/tree/master/sdk/python)
 
 ##
 
@@ -891,6 +855,10 @@ Copy
     
     # get a specific custom field with Keeper Notation
     custom_field_value = secrets_manager.get_notation('EG6KdJaaLG7esRZbMnfbFA/custom_field/my_field')
+
+See [Keeper Notation documentation](/en/keeperpam/secrets-
+manager/about/keeper-notation) to learn about Keeper Notation format and
+capabilities
 
 Parameter
 
@@ -1967,13 +1935,49 @@ Copy
     secrets_manager = SecretsManager(config=FileKeyValueStorage('ksm-config.json'))
     secrets_manager.delete_folder(["[FOLDER_UID1]", "[FOLDER_UID2]"], True)
 
+[PreviousDeveloper SDKs](/en/keeperpam/secrets-manager/developer-sdk-
+library)[NextJava/Kotlin SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/java-sdk)
+
+Last updated 1 month ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 Fields are found by type, for a list of field types see the  documentation.
 
 Custom fields are any field that is not part of the record type definition,
 but can be added by users. For a list of fields in each standard record type,
 see the  documentation.
-
-See  to learn about Keeper Notation format and capabilities
 
 Set field values using the method.
 
@@ -1986,12 +1990,6 @@ Fields are found by type, for a list of field types see the  documentation.
 See the  for expected field formats for each record type
 
 After record creation, you can upload file attachments using
-
-[GitHub repository](https://github.com/Keeper-Security/secrets-
-manager/tree/master/sdk/python)
-
-[Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
-notation)
 
 [field ](/en/keeperpam/secrets-manager/developer-sdk-library/python-
 sdk#retrieve-field-values-from-a-secret)

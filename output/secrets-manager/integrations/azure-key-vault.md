@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -447,7 +447,7 @@ Sync secrets from the Keeper Vault with Azure Key Vault
 manager/integrations/azure-devops-plugin)[NextAzure Key Vault
 Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
 
-Last updated 24 days ago
+Last updated 25 days ago
 
 Was this helpful?
 
@@ -665,16 +665,19 @@ directory/develop/app-objects-and-service-principals)
 [Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
 notation)
 
-[`sync` command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/sync-command)
-
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGbgXULnF2SK8cGDb1t7Y%252Fspaces_-
 MJXOXEifAmpyvNVL1to_uploads_1VHxRugsu0DJAHvvbpI7_Screenshot%25202023-04-21%2520at%25203.webp%3Falt%3Dmedia%26token%3Df54dc0e8-512e-4f30-9266-e9772d06b98c&width=300&dpr=4&quality=100&sign=bc3f2ae1&sv=2)
+
+[`sync` command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/sync-command)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -693,7 +696,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXjlSL3lY7
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7XYS9qI9McE7X4knr8iO%252Fimage.png%3Falt%3Dmedia%26token%3Dd9ec05af-5152-4884-a65e-7e78be69c01a&width=768&dpr=4&quality=100&sign=bb899506&sv=2)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 

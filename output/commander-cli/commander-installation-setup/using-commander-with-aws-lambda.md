@@ -589,12 +589,6 @@ Copy
     rm -rf $VENV
     
 
-[2KBpackage_layer_content.sh](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FgxJz7bvtfe4hTfuTA0cc%2Fpackage_layer_content.sh?alt=media&token=f624bf70-327c-4b10-9f18-a1f1ae06ecc1)
-
-Bash script for packaging `keepercommander` Lambda Layer content
-
 To use the script provided above, perform the following steps after
 downloading the file:
 
@@ -1033,4 +1027,10 @@ email-ses/)
 [![Logo](https://github.com/fluidicon.png)Commander/examples at master ·
 Keeper-Security/CommanderGitHub](https://github.com/Keeper-
 Security/Commander/tree/master/examples)
+
+[2KBpackage_layer_content.sh](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
+x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FgxJz7bvtfe4hTfuTA0cc%2Fpackage_layer_content.sh?alt=media&token=f624bf70-327c-4b10-9f18-a1f1ae06ecc1)
+
+Bash script for packaging `keepercommander` Lambda Layer content
 

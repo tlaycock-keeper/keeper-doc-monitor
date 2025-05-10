@@ -415,7 +415,7 @@ manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-
 server)[NextSaaS Accounts](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/saas-accounts)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 
@@ -603,12 +603,12 @@ Keeper Secrets Manager is enabled for your
 
 Keeper Rotation is enabled for your
 
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
+
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
+
 [page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
 cases/local-network#rotation-on-the-local-network)
-
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
-
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
 

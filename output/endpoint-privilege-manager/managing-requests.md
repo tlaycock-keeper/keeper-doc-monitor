@@ -386,6 +386,33 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Managing Elevation Requests
+  * Accessing the Requests Dashboard
+  * Working with the Request Queue
+  * Reviewing Request Details
+  * Taking Action on Requests
+  * Managing Request Volumes
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=QIQbTK1rKnhe3S1JB3Lu&only=yes&limit=100)
+
+  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
+
+# Managing Requests
+
+Day to day management of Keeper Privilege Manager elevation requests
+
+[PreviousPolicies](/en/keeperpam/endpoint-privilege-
+manager/policies)[NextFAQs](/en/keeperpam/faqs)
+
+Last updated 29 days ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -415,33 +442,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Managing Elevation Requests
-  * Accessing the Requests Dashboard
-  * Working with the Request Queue
-  * Reviewing Request Details
-  * Taking Action on Requests
-  * Managing Request Volumes
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=QIQbTK1rKnhe3S1JB3Lu&only=yes&limit=100)
-
-  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
-
-# Managing Requests
-
-Day to day management of Keeper Privilege Manager elevation requests
-
-[PreviousPolicies](/en/keeperpam/endpoint-privilege-
-manager/policies)[NextFAQs](/en/keeperpam/faqs)
-
-Last updated 28 days ago
-
-Was this helpful?
 
 ##
 
@@ -508,15 +508,11 @@ For organizations with high volumes of elevation requests:
 
   * **Delegation** : Configure multiple approvers across different teams or regions
 
-  * 
+  * **Auto-Approval Rules** : Set up [policies](/en/keeperpam/endpoint-privilege-manager/policies) to automatically approve routine requests
 
 Endpoint**** Privilege Manager Requests Dashboard
 
 Detailed View of an Elevation Request
-
-**Auto-Approval Rules** : Set up  to automatically approve routine requests
-
-[policies](/en/keeperpam/endpoint-privilege-manager/policies)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

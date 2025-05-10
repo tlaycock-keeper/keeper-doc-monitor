@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -448,6 +448,8 @@ Last updated 4 months ago
 
 Was this helpful?
 
+Octopus Deploy Integration with Keeper Secrets Manager
+
 ##
 
 Features
@@ -601,17 +603,15 @@ variables)
 [output variable](https://octopus.com/docs/projects/variables/output-
 variables)
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
-Octopus Deploy Integration with Keeper Secrets Manager
-
 ![Keeper Secrets Manager and Octopus
 Deploy](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGKGOFEKV9NLKy8AYnY2T%252Fksm-
 header-
 octopus.png%3Falt%3Dmedia%26token%3Dd77092a0-d3b4-4823-8498-f9927a0209f1&width=768&dpr=4&quality=100&sign=b019eb18&sv=2)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)

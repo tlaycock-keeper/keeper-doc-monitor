@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -423,24 +423,14 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=R6ym7vrr5wyK9q9JUdMI&only=yes&limit=100)
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
-  3. [Configuration and Usage](/en/keeperpam/commander-cli/commander-installation-setup/configuration)
+Last updated 9 months ago
 
-# AWS Secrets Manager
-
-Protecting configuration with AWS Secrets Manager
+Was this helpful?
 
 Amazon AWS Secrets Manager can be utilized on an EC2 instance hosting Keeper
 Commander in order to protect and store the configuration data.
 
 The AWS Secrets Manager protected storage resource URL format is as follows:
-
-Copy
-
-    
-    
-    aws-sm://<SECRET-REGION>/<SECRET_NAME>
 
 **Example** :
 
@@ -457,6 +447,17 @@ resource
   * **secretsmanager:PutSecretValue**
 
 Example AWS policy granting access to secret
+
+Keeper Commander installed with `pip` requires `boto3` package to present in
+the virtual environment
+
+`pip install boto3`
+
+Copy
+
+    
+    
+    aws-sm://<SECRET-REGION>/<SECRET_NAME>
 
 Copy
 
@@ -477,17 +478,16 @@ Copy
         ]
     }
 
-Keeper Commander installed with `pip` requires `boto3` package to present in
-the virtual environment
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+  3. [Configuration and Usage](/en/keeperpam/commander-cli/commander-installation-setup/configuration)
 
-`pip install boto3`
+# AWS Secrets Manager
+
+Protecting configuration with AWS Secrets Manager
 
 [PreviousConfiguration and Usage](/en/keeperpam/commander-cli/commander-
 installation-setup/configuration)[NextAWS Key Management
 Service](/en/keeperpam/commander-cli/commander-installation-
 setup/configuration/aws-key-management-service)
-
-Last updated 9 months ago
-
-Was this helpful?
 

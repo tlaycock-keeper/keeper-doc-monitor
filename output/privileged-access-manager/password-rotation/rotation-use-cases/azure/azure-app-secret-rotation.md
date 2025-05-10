@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -418,39 +418,12 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Prerequisites
-  * Rotation Script Logic Flow
-  * 1\. Admin Credentials Retrieval
-  * 2\. Secret Rotation Logic
-  * PAM User Record - Fields Requirements
-  * Fields required:
-  * Custom fields required:
-  * Setting Up the Rotation in the Keeper Vault
-  * Python Script
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=h030fH9tnmiYRI2P6fep&only=yes&limit=100)
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure)
-
-# Azure App Secret Rotation
-
-Automatically rotate the secret of an Azure app using Keeper Secrets Manager
-rotations
-
-[PreviousAzure PostgreSQL - Single or Flexible
-Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/azure/managed-database/azure-postgresql-single-or-flexible-
-database)[NextAWS](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/aws)
-
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 
@@ -485,13 +458,6 @@ This guide assumes the following tasks have already taken place:
   * Your Azure environment is  per our documentation
 
   * The gateway host will need to have a supported Python version installed with the 2 dependencies below:
-
-Copy
-
-    
-    
-    pip3 install keeper_secrets_manager_core
-    pip3 install azure.identity
 
 ##
 
@@ -535,56 +501,9 @@ PAM User Record - Fields Requirements
 
 Fields required:
 
-Field Name
-
-Description
-
-Login
-
-This mandatory field is not used in this script. You can use the field to
-store any useful information, like the name of the Azure app that will be
-rotated.
-
-Password
-
-It will be a dummy value in this case. The password field gets automatically
-rotated, but it is not used anywhere. This is still required field.
-
 ###
 
 Custom fields required:
-
-Custom Field Label
-
-Field Type
-
-Description
-
-Text
-
-This field is used to specify which application in Azure you want to rotate.
-You need to retrieve the application object ID of the application to rotate
-from the Azure portal > App Registration > Overview tab of your app >
-Application (client) ID.
-
-Text
-
-This field will receive the new client secret ID after the rotation.
-
-Hidden Field
-
-This field will receive the new client secret after the rotation.
-
-Text
-
-This field will receive the expiration date of the new secret after the
-rotation.
-
-Text
-
-Second field to enable NOOP.
-
-The value has to be:
 
 Instead of creating the PAM User record manually using the details above, you
 could also import the csv file below. It will create a template record you can
@@ -625,12 +544,6 @@ Configuration From the Keeper Vault:
 
      * Add PAM Script to the record: select the provided file below and make sure to specify the script command:
 
-Copy
-
-    
-    
-    python3
-
 It is possible to also rotate the application secret of the admin Azure
 application. To do this, you will need to store you admin Azure app secret in
 another Keeper PAM User record.
@@ -642,21 +555,6 @@ Admin App Secret Record Requirements
 ####
 
 Custom fields required:
-
-Custom Field Label
-
-Field Type
-
-Description
-
-Text
-
-Enter your Azure Tenant ID.
-
-Text
-
-Enter your admin application client ID. This is available in the Overview tab
-of the admin application in the Azure portal > App registrations.
 
 Importing the file will generate a Login record type: **make sure to convert
 it to PAM User.**
@@ -689,15 +587,157 @@ Configuration From the Keeper Vault:
 
        3. Specify the script command:
 
+##
+
+Python Script
+
+You need to create a  record where the rotation will be configured later on.
+The fields below need to be created.
+
+Field Name
+
+Description
+
+Custom Field Label
+
+Field Type
+
+Description
+
+Create a PAM User record in the shared folder with the fields and custom
+fields described .
+
+Provision the gateway (gateway tab after selecting the application) on a Linux
+box. Simply run the install command provided by the Keeper vault and make sure
+Python and the dependencies listed are installed.
+
+Edit the PAM User record previously described in this :
+
+The PAM user record will need all fields as described in the documentation ,
+along with the additional fields below:
+
+Custom Field Label
+
+Field Type
+
+Description
+
+Instead of creating the PAM User record manually using the documentation  and
+the extra fields above, you could also import the csv file below. It will
+create a template record you can amend and duplicate as needed.
+
+Create a PAM User record in the shared folder with the fields and custom
+fields described .
+
+Provision the gateway (gateway tab after selecting the application) on a Linux
+box. Simply run the install command provided by the Keeper vault and make sure
+Python and the dependencies listed are installed.
+
+Login
+
+This mandatory field is not used in this script. You can use the field to
+store any useful information, like the name of the Azure app that will be
+rotated.
+
+Password
+
+It will be a dummy value in this case. The password field gets automatically
+rotated, but it is not used anywhere. This is still required field.
+
+Copy
+
+    
+    
+    application_object_id
+
+Text
+
+This field is used to specify which application in Azure you want to rotate.
+You need to retrieve the application object ID of the application to rotate
+from the Azure portal > App Registration > Overview tab of your app >
+Application (client) ID.
+
+Copy
+
+    
+    
+    client_secret_id
+
+Text
+
+This field will receive the new client secret ID after the rotation.
+
+Copy
+
+    
+    
+    client_secret
+
+Hidden Field
+
+This field will receive the new client secret after the rotation.
+
+Copy
+
+    
+    
+    expires
+
+Text
+
+This field will receive the expiration date of the new secret after the
+rotation.
+
+Copy
+
+    
+    
+    Private Key Type
+
+Text
+
+Second field to enable NOOP.
+
+The value has to be:
+
+Copy
+
+    
+    
+    rsa-ssh
+
 Copy
 
     
     
     python3
 
-##
+Copy
 
-Python Script
+    
+    
+    tenant_id
+
+Text
+
+Enter your Azure Tenant ID.
+
+Copy
+
+    
+    
+    application_client_id
+
+Text
+
+Enter your admin application client ID. This is available in the Overview tab
+of the admin application in the Azure portal > App registrations.
+
+Copy
+
+    
+    
+    python3
 
 Copy
 
@@ -908,79 +948,39 @@ Copy
         except Exception as e:
             logger.error(f"Error while updating PAM User record in Keeper: {e}")
 
-You need to create a  record where the rotation will be configured later on.
-The fields below need to be created.
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure)
 
-Create a PAM User record in the shared folder with the fields and custom
-fields described .
+# Azure App Secret Rotation
 
-Provision the gateway (gateway tab after selecting the application) on a Linux
-box. Simply run the install command provided by the Keeper vault and make sure
-Python and the dependencies listed are installed.
+Automatically rotate the secret of an Azure app using Keeper Secrets Manager
+rotations
 
-Edit the PAM User record previously described in this :
+[PreviousAzure PostgreSQL - Single or Flexible
+Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/azure/managed-database/azure-postgresql-single-or-flexible-
+database)[NextAWS](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws)
 
-The PAM user record will need all fields as described in the documentation ,
-along with the additional fields below:
-
-Instead of creating the PAM User record manually using the documentation  and
-the extra fields above, you could also import the csv file below. It will
-create a template record you can amend and duplicate as needed.
-
-Create a PAM User record in the shared folder with the fields and custom
-fields described .
-
-Provision the gateway (gateway tab after selecting the application) on a Linux
-box. Simply run the install command provided by the Keeper vault and make sure
-Python and the dependencies listed are installed.
-
-Copy
-
-    
-    
-    application_object_id
+  * Overview
+  * Prerequisites
+  * Rotation Script Logic Flow
+  * 1\. Admin Credentials Retrieval
+  * 2\. Secret Rotation Logic
+  * PAM User Record - Fields Requirements
+  * Fields required:
+  * Custom fields required:
+  * Setting Up the Rotation in the Keeper Vault
+  * Python Script
 
 Copy
 
     
     
-    client_secret_id
-
-Copy
-
-    
-    
-    client_secret
-
-Copy
-
-    
-    
-    expires
-
-Copy
-
-    
-    
-    Private Key Type
-
-Copy
-
-    
-    
-    rsa-ssh
-
-Copy
-
-    
-    
-    tenant_id
-
-Copy
-
-    
-    
-    application_client_id
+    pip3 install keeper_secrets_manager_core
+    pip3 install azure.identity
 
 [Azure Overview](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/azure)

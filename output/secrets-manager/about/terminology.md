@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -386,6 +386,34 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Secrets Manager Structure
+  * Secret
+  * Application
+  * Client Device
+  * Configuration
+
+Was this helpful?
+
+[Export as PDF](/en/keeperpam/~gitbook/pdf?page=-MhzDgoPWX-
+vA6xX6GjX&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [About KSM](/en/keeperpam/secrets-manager/about)
+
+# Terminology
+
+Common terminology that will be referenced throughout this documentation
+
+[PreviousArchitecture](/en/keeperpam/secrets-
+manager/about/architecture)[NextSecurity & Encryption
+Model](/en/keeperpam/secrets-manager/about/security-encryption-model)
+
+Last updated 1 year ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -415,34 +443,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Secrets Manager Structure
-  * Secret
-  * Application
-  * Client Device
-  * Configuration
-
-Was this helpful?
-
-[Export as PDF](/en/keeperpam/~gitbook/pdf?page=-MhzDgoPWX-
-vA6xX6GjX&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [About KSM](/en/keeperpam/secrets-manager/about)
-
-# Terminology
-
-Common terminology that will be referenced throughout this documentation
-
-[PreviousArchitecture](/en/keeperpam/secrets-
-manager/about/architecture)[NextSecurity & Encryption
-Model](/en/keeperpam/secrets-manager/about/security-encryption-model)
-
-Last updated 1 year ago
-
-Was this helpful?
 
 ##
 
@@ -510,16 +510,13 @@ A Secrets Manager "Configuration" is a set of tokens that includes encryption
 keys, client identifiers and destination server information used to
 authenticate and decrypt data from the Keeper Secrets Manager APIs.
 
+Secrets Manager configurations are created from [One Time Access
+Tokens](/en/keeperpam/secrets-manager/about/one-time-token) and have a one to
+one relationship with [client devices](/en/keeperpam/secrets-
+manager/about/terminology#client-device).
+
 A configuration can be stored as a text file with JSON, or it can be encoded
 into a single line string.
-
-Secrets Manager configurations are created from  and have a one to one
-relationship with .
-
-[One Time Access Tokens](/en/keeperpam/secrets-manager/about/one-time-token)
-
-[client devices](/en/keeperpam/secrets-manager/about/terminology#client-
-device)
 
 Keeper Secrets Manager Structure
 

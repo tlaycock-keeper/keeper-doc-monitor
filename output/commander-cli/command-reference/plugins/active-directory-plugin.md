@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -621,12 +621,6 @@ by-step-guide-to-setup-ldaps-on-windows-
 server/>[](https://blogs.msdn.microsoft.com/microsoftrservertigerteam/2017/04/10/step-
 by-step-guide-to-setup-ldaps-on-windows-server/)
 
-[Distinguished name](https://msdn.microsoft.com/en-
-us/library/windows/desktop/aa366101.aspx)
-
-[password complexity rules](https://github.com/Keeper-
-Security/Commander/tree/master/keepercommander/plugins/password_rules.md)
-
 [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
 rotation)
 
@@ -643,4 +637,10 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FhvLF8beyM
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fe5jiWMkFQPzwi5UDLvp1%252Fimage.png%3Falt%3Dmedia%26token%3D90c83a72-367e-4398-9cb6-bcc916432de0&width=768&dpr=4&quality=100&sign=fa5991f7&sv=2)
+
+[Distinguished name](https://msdn.microsoft.com/en-
+us/library/windows/desktop/aa366101.aspx)
+
+[password complexity rules](https://github.com/Keeper-
+Security/Commander/tree/master/keepercommander/plugins/password_rules.md)
 

@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -386,36 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview 
@@ -438,15 +408,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=vUNK9m3K5FwJRVMa363g&only=yes&limit=100)
 
 Keeper Connections - VNC Protocol
 
-[PreviousPostgreSQL Connections](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/postgresql-connections)[NextTelnet
-Connections](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/telnet-connections)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 ##
 
 Overview
@@ -462,7 +423,8 @@ directly to target devices.
 Prerequisites
 
 Prior to following this guide, familiarize yourself with the prerequisites on
-the Connection's .
+the Connection's [Getting Started page](/en/keeperpam/privileged-access-
+manager/connections/getting-started).
 
 The following PAM records are needed in order to successfully setup this
 protocol:
@@ -487,6 +449,9 @@ to the machine
 
 This guide will use a **Azure VM**. For more details on how this is setup on
 the PAM Machine Record, visit the following page:
+
+[Example: Azure Windows VM](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-machine/example-azure-windows-vm)
 
 ##
 
@@ -572,17 +537,47 @@ session
 
 Session Recordings - VNC Protocol
 
-[Getting Started page](/en/keeperpam/privileged-access-
-manager/connections/getting-started)
+[PreviousPostgreSQL Connections](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/postgresql-connections)[NextTelnet
+Connections](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/telnet-connections)
 
-[Example: Azure Windows VM](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-machine/example-azure-windows-vm)
+Last updated 3 months ago
 
-VNC Session Recordings
+Was this helpful?
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fe3uCXEZO7iUuITKSNU21%252FScreenshot%25202025-01-21%2520at%252012.35.50%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db88e8ce5-78ac-4bce-b40f-1c8331249eaf&width=768&dpr=4&quality=100&sign=feb5fdb1&sv=2)
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+For this protocol, graphical data, including timing information, is recorded.
+For more details on the recordings and how to access them, see the  docs.
 
 Field
 
@@ -598,12 +593,15 @@ Administrative Credential Record
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
 
+[Session Recording & Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
+
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
 
-For this protocol, graphical data, including timing information, is recorded.
-For more details on the recordings and how to access them, see the  docs.
+VNC Session Recordings
 
-[Session Recording & Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fe3uCXEZO7iUuITKSNU21%252FScreenshot%25202025-01-21%2520at%252012.35.50%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db88e8ce5-78ac-4bce-b40f-1c8331249eaf&width=768&dpr=4&quality=100&sign=feb5fdb1&sv=2)
 

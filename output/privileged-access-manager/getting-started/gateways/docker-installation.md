@@ -533,6 +533,11 @@ SecComp File
 Download this file called `docker-seccomp.json` and place it in the same
 folder as your Docker Compose file.
 
+[15KBdocker-
+seccomp.json](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FMjBgU5aJYkp8Em3ZV9OD%2Fdocker-
+seccomp.json?alt=media&token=73227956-f299-47e5-80aa-764ea2ab9e93)
+
 3
 
 ###
@@ -725,6 +730,10 @@ References:
 
 `docker` and `docker-compose` installed (see  for help)
 
+Docker Logs from Keeper Gateway
+
+Gateway is Online
+
 DockerHub listing:
 
 Quick reference for
@@ -741,15 +750,6 @@ manager/references/installing-docker-on-linux)
 manager/references/installing-docker-on-linux)
 
 [DockerHub](https://hub.docker.com/r/keeper/gateway)
-
-[15KBdocker-
-seccomp.json](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FMjBgU5aJYkp8Em3ZV9OD%2Fdocker-
-seccomp.json?alt=media&token=73227956-f299-47e5-80aa-764ea2ab9e93)
-
-Docker Logs from Keeper Gateway
-
-Gateway is Online
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

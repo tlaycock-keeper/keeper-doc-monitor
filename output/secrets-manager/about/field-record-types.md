@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -386,804 +386,7 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=qfedfy8aEYKgm7AhPX26&only=yes&limit=100)
-
-Last updated 4 months ago
-
-Was this helpful?
-
-##
-
-Field Types
-
-Field types defined how a field's data is stored. Field types are used in the
-default record type and user created custom records.
-
-Use the proper formatting for the field type. By default, the SDK will not
-valid check most fields. Best practices would to properly format the data for
-the field. Other products, offered by Keeper, will retrieve data from record
-based on the field type.
-
-###
-
-accountNumber
-
-A string value. There is no validation of the value.
-
-###
-
-address
-
-A dictionary value containing:
-
-  * `street1` \- Street address 1
-
-  * `street2` \- Street address 2
-
-  * `city` \- City
-
-  * `state` \- State
-
-  * `zip` \- Postal code
-
-  * country - 
-
-None of the keys are required.
-
-Example:
-
-###
-
-bankAccount
-
-A dictionary value containing:
-
-  * `accountType` \- Checking | Savings | Other
-
-  * `otherType` \- Description of the other account type
-
-  * `routingNumber` \- The bank routing number
-
-  * `accountNumber` \- The account number
-
-None of the keys are required.
-
-Example:
-
-###
-
-birthDate
-
-A epoch milliseconds value. Depending on method of creation, ie using a helper
-modules, an ISO8601 value may be used. The ISO8601 value will be converted to
-an epoch millisecond value.
-
-###
-
-cardRef
-
-An array of payment card record uids.
-
-Examples:
-
-###
-
-date
-
-A epoch milliseconds value. Depending on method of creation, ie using a helper
-modules, an ISO8601 value may be used. The ISO8601 value will be converted to
-an epoch millisecond value.
-
-###
-
-email
-
-A string value, normally for a user's email address. There is no validation of
-the value.
-
-###
-
-expirationDate
-
-A epoch milliseconds value. Depending on method of creation, ie using a helper
-modules, an ISO8601 value may be used. The ISO8601 value will be converted to
-an epoch millisecond value.
-
-###
-
-fileRef
-
-An array of file UIDs. When a file is attached to a record, that files UID
-will appear in this array.
-
-###
-
-host
-
-A dictionary value containing:
-
-  * `hostName` \- Hostname or IP
-
-  * `port` \- Remote port
-
-None of the keys are required.
-
-Example:
-
-A dictionary value containing:
-
-  * `publicKey` \- Public key
-
-  * `privateKey` \- Private key
-
-None of the keys are required.
-
-Example:
-
-###
-
-licenseNumber
-
-A string value. There is no validation of the value.
-
-###
-
-login
-
-A string value, normally the user's login. There is no validation of the
-value. Many Keeper related services will look for a field of this type for the
-login value.
-
-###
-
-multiline
-
-A string value, normally for text that has line feed. There is no validation
-of the value.
-
-###
-
-name
-
-A dictionary value containing:
-
-  * `first` \- Person's first name
-
-  * `middle` \- Person's middle name
-
-  * `last` \- Person's last name
-
-None of the keys are required.
-
-Example:
-
-###
-
-note
-
-A string value that allow for multiline. The value is masked. There is no
-validation of the value.
-
-###
-
-otp
-
-One time password URL for TOTP.
-
-###
-
-oneTimeCode
-
-One time code URL for TOTP.
-
-###
-
-password
-
-A string value. There is no validation of the value. Many Keeper related
-services will look for a field of this type for the password value.
-
-###
-
-paymentCard
-
-A dictionary value containing:
-
-  * `cardNumber` \- A payment card number
-
-  * `cardExpirationDate` \- MM/YYYY expiration.
-
-  * `cardSecurityCode` \- The security code
-
-Example:
-
-###
-
-phone
-
-An array of phone dictionaries. Each phone dictionary contains the following
-key/values:
-
-  * `region` \- The country code number
-
-  * `number` \- Normal phone number
-
-  * `ext` \- Extension
-
-  * `type` \- Mobile | Home | Work
-
-None of the keys are required.
-
-Example:
-
-###
-
-pinCode
-
-A string value. There is no validation of the value.
-
-###
-
-secret
-
-A string value. This type of field is normally masked. There is no validation
-of the value.
-
-###
-
-securityQuestion
-
-A dictionary value containing:
-
-  * `question` \- The security question
-
-  * `answer` \- The answer to the security question
-
-Example:
-
-###
-
-text
-
-A string value. There is no validation of the value.
-
-###
-
-url
-
-A string value, normally a web URL. There is no validation of the value.
-
-##
-
-Default Record Types
-
-The following are the default record types provided by Keeper and the fields
-within the record type. Record types contain a collection of field types for
-the standard fields. Custom fields are not defined by a record type.
-
-All the default record types include the `fileRef` field. This field contains
-files UID and photos UID attached to a record. Check the documentation for the
-SDK being used on how to download a file. Currently file attachment via the
-SDK is limited.
-
-###
-
-address (Address)
-
-###
-
-bankAccount (Bank Account)
-
-###
-
-bankCard (Payment Card)
-
-###
-
-birthCertificate (Birth Certificate)
-
-  * name - First Name, Middle Name, Last Name
-
-  * birthDate - Date of Birth
-
-###
-
-contact (Contact)
-
-###
-
-databaseCredentials (Database)
-
-###
-
-driverLicense (Driver's License)
-
-###
-
-encryptedNotes (Secure Note)
-
-###
-
-file (File Attachment)
-
-This record is created when a file is attached to another record. The record
-UID will be attached to the record via the `fieldRef` field type.
-
-Currently attaching files to records across all SDK is not finished. Content
-to be added.
-
-###
-
-healthInsurance (Health Insurance)
-
-###
-
-login (Login)
-
-###
-
-membership (Membership)
-
-###
-
-passport (Passport)
-
-###
-
-photo (Photo)
-
-This record is created when a photo is attached to another record. The record
-UID will be attached to the record via the `fieldRef` field type.
-
-Currently attaching photos to records across all SDK is not finished. Content
-to be added.
-
-###
-
-serverCredentials (Server)
-
-###
-
-softwareLicense (Software License)
-
-###
-
-ssnCard (Identity Card)
-
-###
-
-sshKeys (SSH Key)
-
-##
-
-Custom Record Types
-
-Custom record types can be used with the Secrets Manager.
-
-Keeper Commander can be used to get the schema for the custom record type.
-
-Based on the SDK being used, the JSON may be imported allowing the custom
-record to be used with any helper tools.
-
-Field Type
-
-UI Fields
-
-Field Type
-
-UI Fields
-
-Field Type
-
-UI Fields
-
-Field Type
-
-UI Fields
-
-Field Type
-
-UI Fields
-
-Field Type
-
-UI Fields
-
-Field Type
-
-UI Fields
-
-Field Type
-
-UI Fields
-
-Field Type
-
-UI Fields
-
-Field Type
-
-UI Fields
-
-Field Type
-
-UI Fields
-
-Field Type
-
-UI Fields
-
-Field Type
-
-UI Fields
-
-Field Type
-
-UI Fields
-
-Field Type
-
-UI Fields
-
-Copy
-
-    
-    
-    {"street1": "100 Main Street", "city": "Town", "state": "RI", "zip": "55555",
-        "country": "US"}
-
-Copy
-
-    
-    
-    {"accountType": "Checking", "routingNumber": "123456", "accountNumber": "55555555"}
-
-Copy
-
-    
-    
-    ["OlLZ6JLjnyMOS3CiIPHBjw", "XJ2VISBJ3JAeCwU_YGAXYg"]
-
-Copy
-
-    
-    
-    {"hostName": "localhost", "port": "22"}
-
-Copy
-
-    
-    
-    {"publicKey": "PUBLIC KEY", "privateKey": "PRIVATE KEY"}
-
-Copy
-
-    
-    
-    {"first": "John", "middle": "Unknown", "last": "Smith"}
-
-Copy
-
-    
-    
-    {"cardNumber": "5555 5555 5555 5555", "cardExpirationDate": "01/2023",
-        "cardSecurityCode": "123"}
-
-Copy
-
-    
-    
-    [
-        {"region": "+1", "number": "555-555-5555", "ext": "1234", "type": "Work"},
-        {"number": "555-555-6666", "type": "Mobile"}
-    ]
-
-Copy
-
-    
-    
-    {"question": "What Number?", "answer": "42"}
-
-address
-
-Street Address Line 1 Street Address Line 2 City State/Province Zip/Postal
-Code Country
-
-bankAccount
-
-Account Type Other Type Account Number Routing Number
-
-name
-
-First Name Middle Name Last Name
-
-login
-
-Login
-
-password
-
-Password
-
-url
-
-Website Address
-
-cardRef (value is bankCard record uid)
-
-Payment Card
-
-paymentCard
-
-Card Number Expiration Month Expiration Year Security Code
-
-text
-
-Cardholder Name
-
-pinCode
-
-Pin Code
-
-addressRef (value is address record uid)
-
-Address (see address record type for UI)
-
-name
-
-First Name Middle Name Last Name
-
-birthDate
-
-Date of Birth
-
-name
-
-First Name Middle Name Last Name
-
-text
-
-Company
-
-email
-
-Email
-
-phone
-
-Country Phone Number Ext. Type
-
-addressRef (value is address record uid)
-
-Address (see address record type for UI)
-
-text
-
-Type
-
-host
-
-Hostname or IP Address Port
-
-login
-
-Login
-
-password
-
-Password
-
-accountNumber
-
-Driver's License Number
-
-name
-
-First Name Middle Name Last Name
-
-birthDate
-
-Date of Birth
-
-addressRef (value is address record uid)
-
-Address (see address record type for UI)
-
-expirationDate
-
-Expiration Date
-
-note
-
-Secured Note
-
-date
-
-Date
-
-accountNumber
-
-Account Number
-
-name
-
-First Name Middle Name Last Name
-
-login
-
-Login
-
-password
-
-Password
-
-url
-
-Website Address
-
-login
-
-Login
-
-password
-
-Password
-
-url
-
-Website Address
-
-accountNumber
-
-Account Number
-
-name
-
-First Name Middle Name Last Name
-
-password
-
-Password
-
-accountNumber
-
-Passport Number
-
-name
-
-First Name Middle Name Last Name
-
-birthDate
-
-Date of Birth
-
-addressRef (value is address record uid)
-
-Address (see address record type for UI
-
-expirationDate
-
-Expiration Date
-
-date
-
-Date Issued
-
-password
-
-Password
-
-host
-
-Hostname or IP Address Port
-
-login
-
-Login
-
-password
-
-Password
-
-licenseNumber
-
-Software License Key
-
-expirationDate
-
-Expiration Date
-
-date
-
-Date Active
-
-accountNumber
-
-Identity Number
-
-name
-
-First Name Middle Name Last Name
-
-login
-
-Login
-
-keyPair
-
-Public Key Private Key
-
-password
-
-Passphrase
-
-host
-
-Hostname or IP Address Port
-
-Copy
-
-    
-    
-    My Vault> rti --format json -lr "My Custom" --output my_record_type.json
-    [
-      {
-        "recordTypeId": 18,
-        "content": "{\"$id\":\"My Custom\",\"categories\":[\"login\"],
-            \"description\":\"SSH key template\",\"fields\":
-               [{\"$ref\":\"login\"},
-                {\"$ref\":\"keyPair\"},
-                {\"$ref\":\"password\",\"label\":\"passphrase\"},
-                {\"$ref\":\"host\"},
-                {\"$ref\":\"fileRef\"}]}"
-      }
-    ]
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [About KSM](/en/keeperpam/secrets-manager/about)
-
-# Field/Record Types
-
-A reference of field and record types available to secrets manager.
-
-[PreviousEvent Reporting](/en/keeperpam/secrets-manager/about/event-
-reporting)[NextSecrets Manager CLI](/en/keeperpam/secrets-manager/secrets-
-manager-command-line-interface)
 
   * Field Types
   * accountNumber
@@ -1232,7 +435,802 @@ manager-command-line-interface)
   * sshKeys (SSH Key)
   * Custom Record Types
 
-[ISO3166 Alpha-2 country code](https://www.iban.com/country-codes)
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=qfedfy8aEYKgm7AhPX26&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [About KSM](/en/keeperpam/secrets-manager/about)
+
+# Field/Record Types
+
+A reference of field and record types available to secrets manager.
+
+##
+
+Field Types
+
+Field types defined how a field's data is stored. Field types are used in the
+default record type and user created custom records.
+
+Use the proper formatting for the field type. By default, the SDK will not
+valid check most fields. Best practices would to properly format the data for
+the field. Other products, offered by Keeper, will retrieve data from record
+based on the field type.
+
+###
+
+accountNumber
+
+A string value. There is no validation of the value.
+
+###
+
+address
+
+A dictionary value containing:
+
+  * `street1` \- Street address 1
+
+  * `street2` \- Street address 2
+
+  * `city` \- City
+
+  * `state` \- State
+
+  * `zip` \- Postal code
+
+  * country - [ISO3166 Alpha-2 country code](https://www.iban.com/country-codes)
+
+None of the keys are required.
+
+Example:
+
+Copy
+
+    
+    
+    {"street1": "100 Main Street", "city": "Town", "state": "RI", "zip": "55555",
+        "country": "US"}
+
+###
+
+bankAccount
+
+A dictionary value containing:
+
+  * `accountType` \- Checking | Savings | Other
+
+  * `otherType` \- Description of the other account type
+
+  * `routingNumber` \- The bank routing number
+
+  * `accountNumber` \- The account number
+
+None of the keys are required.
+
+Example:
+
+Copy
+
+    
+    
+    {"accountType": "Checking", "routingNumber": "123456", "accountNumber": "55555555"}
+
+###
+
+birthDate
+
+A epoch milliseconds value. Depending on method of creation, ie using a helper
+modules, an ISO8601 value may be used. The ISO8601 value will be converted to
+an epoch millisecond value.
+
+###
+
+cardRef
+
+An array of payment card record uids.
+
+Examples:
+
+Copy
+
+    
+    
+    ["OlLZ6JLjnyMOS3CiIPHBjw", "XJ2VISBJ3JAeCwU_YGAXYg"]
+
+###
+
+date
+
+A epoch milliseconds value. Depending on method of creation, ie using a helper
+modules, an ISO8601 value may be used. The ISO8601 value will be converted to
+an epoch millisecond value.
+
+###
+
+email
+
+A string value, normally for a user's email address. There is no validation of
+the value.
+
+###
+
+expirationDate
+
+A epoch milliseconds value. Depending on method of creation, ie using a helper
+modules, an ISO8601 value may be used. The ISO8601 value will be converted to
+an epoch millisecond value.
+
+###
+
+fileRef
+
+An array of file UIDs. When a file is attached to a record, that files UID
+will appear in this array.
+
+###
+
+host
+
+A dictionary value containing:
+
+  * `hostName` \- Hostname or IP
+
+  * `port` \- Remote port
+
+None of the keys are required.
+
+Example:
+
+Copy
+
+    
+    
+    {"hostName": "localhost", "port": "22"}
+
+A dictionary value containing:
+
+  * `publicKey` \- Public key
+
+  * `privateKey` \- Private key
+
+None of the keys are required.
+
+Example:
+
+Copy
+
+    
+    
+    {"publicKey": "PUBLIC KEY", "privateKey": "PRIVATE KEY"}
+
+###
+
+licenseNumber
+
+A string value. There is no validation of the value.
+
+###
+
+login
+
+A string value, normally the user's login. There is no validation of the
+value. Many Keeper related services will look for a field of this type for the
+login value.
+
+###
+
+multiline
+
+A string value, normally for text that has line feed. There is no validation
+of the value.
+
+###
+
+name
+
+A dictionary value containing:
+
+  * `first` \- Person's first name
+
+  * `middle` \- Person's middle name
+
+  * `last` \- Person's last name
+
+None of the keys are required.
+
+Example:
+
+Copy
+
+    
+    
+    {"first": "John", "middle": "Unknown", "last": "Smith"}
+
+###
+
+note
+
+A string value that allow for multiline. The value is masked. There is no
+validation of the value.
+
+###
+
+otp
+
+One time password URL for TOTP.
+
+###
+
+oneTimeCode
+
+One time code URL for TOTP.
+
+###
+
+password
+
+A string value. There is no validation of the value. Many Keeper related
+services will look for a field of this type for the password value.
+
+###
+
+paymentCard
+
+A dictionary value containing:
+
+  * `cardNumber` \- A payment card number
+
+  * `cardExpirationDate` \- MM/YYYY expiration.
+
+  * `cardSecurityCode` \- The security code
+
+Example:
+
+Copy
+
+    
+    
+    {"cardNumber": "5555 5555 5555 5555", "cardExpirationDate": "01/2023",
+        "cardSecurityCode": "123"}
+
+###
+
+phone
+
+An array of phone dictionaries. Each phone dictionary contains the following
+key/values:
+
+  * `region` \- The country code number
+
+  * `number` \- Normal phone number
+
+  * `ext` \- Extension
+
+  * `type` \- Mobile | Home | Work
+
+None of the keys are required.
+
+Example:
+
+Copy
+
+    
+    
+    [
+        {"region": "+1", "number": "555-555-5555", "ext": "1234", "type": "Work"},
+        {"number": "555-555-6666", "type": "Mobile"}
+    ]
+
+###
+
+pinCode
+
+A string value. There is no validation of the value.
+
+###
+
+secret
+
+A string value. This type of field is normally masked. There is no validation
+of the value.
+
+###
+
+securityQuestion
+
+A dictionary value containing:
+
+  * `question` \- The security question
+
+  * `answer` \- The answer to the security question
+
+Example:
+
+Copy
+
+    
+    
+    {"question": "What Number?", "answer": "42"}
+
+###
+
+text
+
+A string value. There is no validation of the value.
+
+###
+
+url
+
+A string value, normally a web URL. There is no validation of the value.
+
+##
+
+Default Record Types
+
+The following are the default record types provided by Keeper and the fields
+within the record type. Record types contain a collection of field types for
+the standard fields. Custom fields are not defined by a record type.
+
+All the default record types include the `fileRef` field. This field contains
+files UID and photos UID attached to a record. Check the documentation for the
+SDK being used on how to download a file. Currently file attachment via the
+SDK is limited.
+
+###
+
+address (Address)
+
+Field Type
+
+UI Fields
+
+address
+
+Street Address Line 1 Street Address Line 2 City State/Province Zip/Postal
+Code Country
+
+###
+
+bankAccount (Bank Account)
+
+Field Type
+
+UI Fields
+
+bankAccount
+
+Account Type Other Type Account Number Routing Number
+
+name
+
+First Name Middle Name Last Name
+
+login
+
+Login
+
+password
+
+Password
+
+url
+
+Website Address
+
+cardRef (value is bankCard record uid)
+
+Payment Card
+
+###
+
+bankCard (Payment Card)
+
+Field Type
+
+UI Fields
+
+paymentCard
+
+Card Number Expiration Month Expiration Year Security Code
+
+text
+
+Cardholder Name
+
+pinCode
+
+Pin Code
+
+addressRef (value is address record uid)
+
+Address (see address record type for UI)
+
+###
+
+birthCertificate (Birth Certificate)
+
+  * name - First Name, Middle Name, Last Name
+
+  * birthDate - Date of Birth
+
+Field Type
+
+UI Fields
+
+name
+
+First Name Middle Name Last Name
+
+birthDate
+
+Date of Birth
+
+###
+
+contact (Contact)
+
+Field Type
+
+UI Fields
+
+name
+
+First Name Middle Name Last Name
+
+text
+
+Company
+
+email
+
+Email
+
+phone
+
+Country Phone Number Ext. Type
+
+addressRef (value is address record uid)
+
+Address (see address record type for UI)
+
+###
+
+databaseCredentials (Database)
+
+Field Type
+
+UI Fields
+
+text
+
+Type
+
+host
+
+Hostname or IP Address Port
+
+login
+
+Login
+
+password
+
+Password
+
+###
+
+driverLicense (Driver's License)
+
+Field Type
+
+UI Fields
+
+accountNumber
+
+Driver's License Number
+
+name
+
+First Name Middle Name Last Name
+
+birthDate
+
+Date of Birth
+
+addressRef (value is address record uid)
+
+Address (see address record type for UI)
+
+expirationDate
+
+Expiration Date
+
+###
+
+encryptedNotes (Secure Note)
+
+Field Type
+
+UI Fields
+
+note
+
+Secured Note
+
+date
+
+Date
+
+###
+
+file (File Attachment)
+
+This record is created when a file is attached to another record. The record
+UID will be attached to the record via the `fieldRef` field type.
+
+Currently attaching files to records across all SDK is not finished. Content
+to be added.
+
+###
+
+healthInsurance (Health Insurance)
+
+accountNumber
+
+Account Number
+
+name
+
+First Name Middle Name Last Name
+
+login
+
+Login
+
+password
+
+Password
+
+url
+
+Website Address
+
+###
+
+login (Login)
+
+Field Type
+
+UI Fields
+
+login
+
+Login
+
+password
+
+Password
+
+url
+
+Website Address
+
+###
+
+membership (Membership)
+
+Field Type
+
+UI Fields
+
+accountNumber
+
+Account Number
+
+name
+
+First Name Middle Name Last Name
+
+password
+
+Password
+
+###
+
+passport (Passport)
+
+Field Type
+
+UI Fields
+
+accountNumber
+
+Passport Number
+
+name
+
+First Name Middle Name Last Name
+
+birthDate
+
+Date of Birth
+
+addressRef (value is address record uid)
+
+Address (see address record type for UI
+
+expirationDate
+
+Expiration Date
+
+date
+
+Date Issued
+
+password
+
+Password
+
+###
+
+photo (Photo)
+
+This record is created when a photo is attached to another record. The record
+UID will be attached to the record via the `fieldRef` field type.
+
+Currently attaching photos to records across all SDK is not finished. Content
+to be added.
+
+###
+
+serverCredentials (Server)
+
+Field Type
+
+UI Fields
+
+host
+
+Hostname or IP Address Port
+
+login
+
+Login
+
+password
+
+Password
+
+###
+
+softwareLicense (Software License)
+
+Field Type
+
+UI Fields
+
+licenseNumber
+
+Software License Key
+
+expirationDate
+
+Expiration Date
+
+date
+
+Date Active
+
+###
+
+ssnCard (Identity Card)
+
+Field Type
+
+UI Fields
+
+accountNumber
+
+Identity Number
+
+name
+
+First Name Middle Name Last Name
+
+###
+
+sshKeys (SSH Key)
+
+Field Type
+
+UI Fields
+
+login
+
+Login
+
+keyPair
+
+Public Key Private Key
+
+password
+
+Passphrase
+
+host
+
+Hostname or IP Address Port
+
+##
+
+Custom Record Types
+
+Custom record types can be used with the Secrets Manager.
+
+Keeper Commander can be used to get the schema for the custom record type.
+
+Copy
+
+    
+    
+    My Vault> rti --format json -lr "My Custom" --output my_record_type.json
+    [
+      {
+        "recordTypeId": 18,
+        "content": "{\"$id\":\"My Custom\",\"categories\":[\"login\"],
+            \"description\":\"SSH key template\",\"fields\":
+               [{\"$ref\":\"login\"},
+                {\"$ref\":\"keyPair\"},
+                {\"$ref\":\"password\",\"label\":\"passphrase\"},
+                {\"$ref\":\"host\"},
+                {\"$ref\":\"fileRef\"}]}"
+      }
+    ]
+
+Based on the SDK being used, the JSON may be imported allowing the custom
+record to be used with any helper tools.
+
+[PreviousEvent Reporting](/en/keeperpam/secrets-manager/about/event-
+reporting)[NextSecrets Manager CLI](/en/keeperpam/secrets-manager/secrets-
+manager-command-line-interface)
+
+Last updated 4 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

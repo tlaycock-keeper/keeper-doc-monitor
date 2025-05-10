@@ -386,36 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * First Login on a New Device
@@ -699,6 +669,12 @@ Connect page.
 After a successful SSO login, the web page will show a yellow "Copy" button.
 Click the button to copy the token.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLtlzlTvOklQoOP4Cn9js%252FScreen%2520Shot%25202022-07-15%2520at%25206.01.11%2520PM.png%3Falt%3Dmedia%26token%3Db58d0065-79d9-4343-956c-3bb299eca687&width=768&dpr=4&quality=100&sign=9d8bddc6&sv=2)
+
+SSO Login success screen
+
 ####
 
 Paste the SSO Token
@@ -737,6 +713,10 @@ There are two possible formats that the token could have for SSO login
 ****`var token = "aQwD`h&r`[...]"`
 
 In this case copy everything within the quotation marks
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FcteE2I435t2L1RBEBneH%252Fimage.png%3Falt%3Dmedia%26token%3Deffd4d84-9625-49c5-8d4f-e7c47db515f6&width=300&dpr=4&quality=100&sign=c57dc921&sv=2)
 
 ####
 
@@ -899,28 +879,55 @@ Working with Commander
 installation-setup/installation-on-powershell)[NextConfiguration and
 Usage](/en/keeperpam/commander-cli/commander-installation-setup/configuration)
 
-Last updated 22 days ago
+Last updated 23 days ago
 
 Was this helpful?
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 See  for more details on device approval.
+
+SSO Master Password Policy
 
 [First Login on a New Device section](/en/keeperpam/commander-cli/commander-
 installation-setup/logging-in#first-login-on-a-new-device)
 
-Keeper Commander – Accessing and Working with Your Vault
-
-SSO Login success screen
-
-SSO Master Password Policy
+![Right click menu with "View page source"
+highlighted](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfnUkQM9z3dfg8W6ayiah%252FView%2520Page%2520Source.png%3Falt%3Dmedia%26token%3D537528e4-6aca-4f3e-9733-6c094a1c4809&width=300&dpr=4&quality=100&sign=165f6c19&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FcteE2I435t2L1RBEBneH%252Fimage.png%3Falt%3Dmedia%26token%3Deffd4d84-9625-49c5-8d4f-e7c47db515f6&width=300&dpr=4&quality=100&sign=c57dc921&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLtlzlTvOklQoOP4Cn9js%252FScreen%2520Shot%25202022-07-15%2520at%25206.01.11%2520PM.png%3Falt%3Dmedia%26token%3Db58d0065-79d9-4343-956c-3bb299eca687&width=768&dpr=4&quality=100&sign=9d8bddc6&sv=2)
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mel7nEasV2-9PcLt28R%252F-MelBP0BL3ei6D0pxshE%252FScreen%2520Shot%25202021-07-16%2520at%25202.20.19%2520PM.png%3Falt%3Dmedia%26token%3Db43c1f01-0acd-45f3-96bf-56c3ea0b5022&width=768&dpr=4&quality=100&sign=d0791f34&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -931,12 +938,5 @@ highlighted](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-f
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGxyWf2HIoxxQX7jdXnu4%252FScreen%2520Shot%25202021-12-17%2520at%25201.38.26%2520PM.jpg%3Falt%3Dmedia%26token%3D76bdbef2-9f66-4af1-b5be-1b45eb16fc3e&width=300&dpr=4&quality=100&sign=f3cb3ff5&sv=2)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mel7nEasV2-9PcLt28R%252F-MelBP0BL3ei6D0pxshE%252FScreen%2520Shot%25202021-07-16%2520at%25202.20.19%2520PM.png%3Falt%3Dmedia%26token%3Db43c1f01-0acd-45f3-96bf-56c3ea0b5022&width=768&dpr=4&quality=100&sign=d0791f34&sv=2)
-
-![Right click menu with "View page source"
-highlighted](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfnUkQM9z3dfg8W6ayiah%252FView%2520Page%2520Source.png%3Falt%3Dmedia%26token%3D537528e4-6aca-4f3e-9733-6c094a1c4809&width=300&dpr=4&quality=100&sign=165f6c19&sv=2)
+Keeper Commander – Accessing and Working with Your Vault
 

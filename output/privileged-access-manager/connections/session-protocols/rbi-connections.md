@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -561,12 +561,6 @@ RBI Session Recordings
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLo99ArUgaunD381ym1VQ%252FScreenshot%25202025-01-21%2520at%252012.14.54%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D04024b72-bcf7-4da1-8c33-ca47ca04bd05&width=768&dpr=4&quality=100&sign=11804dd8&sv=2)
 
-For this protocol, graphical data, including timing information, is recorded.
-For more details on the recordings and how to access them, see the  docs.
-
-[Session Recording & Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
-
 Field
 
 Definition
@@ -583,4 +577,10 @@ perform administrative operations on it.
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
+
+For this protocol, graphical data, including timing information, is recorded.
+For more details on the recordings and how to access them, see the  docs.
+
+[Session Recording & Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
 

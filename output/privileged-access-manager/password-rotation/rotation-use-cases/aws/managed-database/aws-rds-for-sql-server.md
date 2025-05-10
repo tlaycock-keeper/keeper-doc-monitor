@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -445,7 +445,7 @@ rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mysql)[NextAWS
 RDS for PostgreSQL](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/aws/managed-database/aws-rds-for-postgresql)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 
@@ -680,13 +680,13 @@ configuration)
 
 port mapping
 
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
-
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGHcerJuTamo3HkfVasMA%252FMS%2520SQL%2520Server.jpg%3Falt%3Dmedia%26token%3Db7b40c74-4056-4d27-b0f5-a9292f0a07a1&width=768&dpr=4&quality=100&sign=bf938755&sv=2)
+
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
+
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
 

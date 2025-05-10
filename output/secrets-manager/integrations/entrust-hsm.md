@@ -443,7 +443,7 @@ Protect Secrets Manager connection details locally with Entrust HSM
 manager/integrations/docker-writer-image)[NextGit - Sign Commits with
 SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
 
-Last updated 24 days ago
+Last updated 25 days ago
 
 Was this helpful?
 

@@ -386,39 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Prerequisites
-  * 1\. Set up a PAM Directory Record 
-  * 2\. Set up PAM Configuration
-  * 3\. Set up one or more PAM User Records
-  * 4\. Configure Rotation on the PAM User records 
-  * Troubleshooting
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=6QOYq9eNyW76cl9c81AG&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [AWS](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws)
-
-# Managed Microsoft AD User
-
-Rotating AWS Managed Microsoft AD Service accounts with Keeper
-
-[PreviousIAM User Password](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/aws/iam-user)[NextEC2 Virtual Machine
-User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/aws/ec2-virtual-machine-user)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -449,6 +416,39 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Overview
+  * Prerequisites
+  * 1\. Set up a PAM Directory Record 
+  * 2\. Set up PAM Configuration
+  * 3\. Set up one or more PAM User Records
+  * 4\. Configure Rotation on the PAM User records 
+  * Troubleshooting
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=6QOYq9eNyW76cl9c81AG&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [AWS](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws)
+
+# Managed Microsoft AD User
+
+Rotating AWS Managed Microsoft AD Service accounts with Keeper
+
+[PreviousIAM User Password](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/iam-user)[NextEC2 Virtual Machine
+User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/aws/ec2-virtual-machine-user)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -471,11 +471,7 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
-
-  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is able to communicate with your AWS Directory Services
-
-  * Your AWS environment is [configured](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup) per our documentation
+  *   *   *   *   * 
 
 ##
 
@@ -602,10 +598,6 @@ Set this field to `USE_INSTANCE_ROLE` if you are using EC2 role policy
 
 List of AWS region names, one per line Example: `us-east-1 us-east-2`
 
-For more details on all the configurable fields in the PAM Configuration
-record, visit this [page](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration).
-
 ##
 
 3\. Set up one or more PAM User Records
@@ -684,6 +676,27 @@ Copy
 Keeper Secrets Manager is enabled for your
 
 Keeper Rotation is enabled for your
+
+A Keeper Secrets Manager  has been created
+
+A Keeper Rotation  is already installed, running, and is able to communicate
+with your AWS Directory Services
+
+Your AWS environment is  per our documentation
+
+For more details on all the configurable fields in the PAM Configuration
+record, visit this .
+
+[application](/en/keeperpam/privileged-access-manager/getting-
+started/applications)
+
+[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+[configured](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration/aws-environment-setup)
+
+[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration)
 
 [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 overview#enabling-rotation-on-the-admin-console)

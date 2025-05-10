@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -413,43 +413,11 @@ PDF](/en/keeperpam/~gitbook/pdf?page=bGhfkhAMwUdjtvng2lhQ&only=yes&limit=100)
 
 Sync secrets from the Keeper Vault with GCP Secret Manager
 
-[PreviousGitLab](/en/keeperpam/secrets-manager/integrations/gitlab-
-plugin)[NextGoogle Cloud Key Management Encryption](/en/keeperpam/secrets-
-manager/integrations/google-cloud-key-management-encryption)
-
-Last updated 23 days ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FmqGoDtyLNTaLkl9bVfCi%252Fdatasource-
+ksm-
+aws.jpg%3Falt%3Dmedia%26token%3D2703ca39-f530-4afd-9319-e86f445225e8&width=768&dpr=4&quality=100&sign=658ead9a&sv=2)
 
 ##
 
@@ -480,7 +448,11 @@ Prerequisites
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * A GCP account with GCP Secret Manager, and optionally the ability to create IAM service account credentials
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
+
+  * A GCP account with GCP Secret Manager, and optionally the ability to create IAM service account credentials
 
 ##
 
@@ -569,8 +541,26 @@ Keeper Vault and hit "Create Type". Create a new record type with hidden
 fields that have the correct field label, then click "Publish" to create the
 new record type.
 
+![GCP Credentials Record Type
+Definition](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fjwm7UcN8MrbxzAxT6o5H%252Fksm-
+sync-
+gcp1.png%3Falt%3Dmedia%26token%3Db7efcc5c-8e93-44a4-a7e7-307f0e74bb93&width=768&dpr=4&quality=100&sign=3d9bf20&sv=2)
+
+GCP Credentials Record Type Definition
+
 Then simply create a new record of the GCP Credentials type and enter the
 details into the corresponding fields.
+
+![GCP Credentials Record
+Create](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FMzlQ3flNaY9Qp3hTzvVT%252Fksm-
+sync-
+gcp2.png%3Falt%3Dmedia%26token%3D4e1e2f2e-cff9-487c-a814-0a5f49d797f0&width=768&dpr=4&quality=100&sign=1418d244&sv=2)
+
+GCP Credentials Record Create
 
 Make sure this new record is moved to a Shared Folder that is associated with
 your Secrets Manager application.
@@ -588,6 +578,15 @@ the corresponding field name.
 
 Any record type will work, but the "File Attachment" standard record type has
 no fields and will be cleaner looking when custom fields are added
+
+![GCP Credentials fields as custom
+fields](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDv0DO19I0jKIRbiGG8lc%252Fksm-
+sync-
+gcp3.png%3Falt%3Dmedia%26token%3D2521f2f0-6658-4043-a8d9-5b5f2402b1d2&width=768&dpr=4&quality=100&sign=c4c4edd6&sv=2)
+
+GCP Credentials fields as custom fields
 
 Then fill in each custom field and hit "Save" to save the record.
 
@@ -680,46 +679,41 @@ Copy
     
     ksm sync --type gcp --credentials [UID] -m [...] -m [...]
 
-A Keeper  with secrets shared to it
+[PreviousGitLab](/en/keeperpam/secrets-manager/integrations/gitlab-
+plugin)[NextGoogle Cloud Key Management Encryption](/en/keeperpam/secrets-
+manager/integrations/google-cloud-key-management-encryption)
 
-See the  for instructions on creating an Application
+Last updated 25 days ago
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
+Was this helpful?
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
+#### Company
 
-GCP Credentials Record Type Definition
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-GCP Credentials Record Create
+#### Support
 
-GCP Credentials fields as custom fields
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FmqGoDtyLNTaLkl9bVfCi%252Fdatasource-
-ksm-
-aws.jpg%3Falt%3Dmedia%26token%3D2703ca39-f530-4afd-9319-e86f445225e8&width=768&dpr=4&quality=100&sign=658ead9a&sv=2)
+#### Solutions
 
-![GCP Credentials Record Type
-Definition](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fjwm7UcN8MrbxzAxT6o5H%252Fksm-
-sync-
-gcp1.png%3Falt%3Dmedia%26token%3Db7efcc5c-8e93-44a4-a7e7-307f0e74bb93&width=768&dpr=4&quality=100&sign=3d9bf20&sv=2)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-![GCP Credentials Record
-Create](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FMzlQ3flNaY9Qp3hTzvVT%252Fksm-
-sync-
-gcp2.png%3Falt%3Dmedia%26token%3D4e1e2f2e-cff9-487c-a814-0a5f49d797f0&width=768&dpr=4&quality=100&sign=1418d244&sv=2)
+#### Pricing
 
-![GCP Credentials fields as custom
-fields](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDv0DO19I0jKIRbiGG8lc%252Fksm-
-sync-
-gcp3.png%3Falt%3Dmedia%26token%3D2521f2f0-6658-4043-a8d9-5b5f2402b1d2&width=768&dpr=4&quality=100&sign=c4c4edd6&sv=2)
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

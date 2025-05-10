@@ -423,6 +423,15 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=9KivwNIHN952SKcG5LGp&only=yes&limit=100)
 
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+
+# Connection Commands
+
+[PreviousKeeperPAM Commands](/en/keeperpam/commander-cli/command-
+reference/keeperpam-commands)[NextSSH](/en/keeperpam/commander-cli/command-
+reference/connection-commands/ssh)
+
 Last updated 7 months ago
 
 Was this helpful?
@@ -436,15 +445,6 @@ directly from the CLI.
 
 See the nested pages for more information on Commander's connection
 capability.
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-
-# Connection Commands
-
-[PreviousKeeperPAM Commands](/en/keeperpam/commander-cli/command-
-reference/keeperpam-commands)[NextSSH](/en/keeperpam/commander-cli/command-
-reference/connection-commands/ssh)
 
 [SSH](/en/keeperpam/commander-cli/command-reference/connection-commands/ssh)
 

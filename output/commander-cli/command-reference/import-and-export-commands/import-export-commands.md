@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -423,12 +423,6 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=abHJo0eO4kYz7MgR7bFu&only=yes&limit=100)
 
-Last updated 4 months ago
-
-Was this helpful?
-
-**See** :
-
   1. [Commander CLI](/en/keeperpam/commander-cli)
   2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
   3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
@@ -441,6 +435,12 @@ Import and Export commands
 reference/import-and-export-commands)[NextCyberArk
 Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
 commands/cyberark-import)
+
+Last updated 4 months ago
+
+Was this helpful?
+
+**See** :
 
 [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-
 and-export-commands)

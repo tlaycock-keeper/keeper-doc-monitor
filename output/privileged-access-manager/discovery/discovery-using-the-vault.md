@@ -459,7 +459,9 @@ infrastructure using Discovery with the Keeper Vault and Desktop App.
 
 Prerequisites
 
-Prior to using Discovery, make sure to review the  documentation.
+Prior to using Discovery, make sure to review the [Discovery
+Basics](/en/keeperpam/privileged-access-manager/discovery/discovery-basics)
+documentation.
 
 ###
 
@@ -548,9 +550,6 @@ Now that the Discovery is complete, additional resources can be found by
 running another job against the same Gateway and PAM Configuration. If Admin
 Credentials have been linked to KeeperPAM Resources, these credentials will be
 used to discover local user accounts within each resource.
-
-[Discovery Basics](/en/keeperpam/privileged-access-
-manager/discovery/discovery-basics)
 
 Empty State - Discovery Module
 

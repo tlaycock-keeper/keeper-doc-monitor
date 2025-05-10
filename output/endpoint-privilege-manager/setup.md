@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -386,6 +386,31 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Setup Steps
+  * Next Steps
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=XImANkhy5bPte8sWajcb&only=yes&limit=100)
+
+  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
+
+# Setup
+
+Installation and setup of Privileged Elevation and Delegation Management
+(PEDM)
+
+[PreviousOverview](/en/keeperpam/endpoint-privilege-
+manager/overview)[NextDeployment](/en/keeperpam/endpoint-privilege-
+manager/deployment)
+
+Last updated 29 days ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -416,17 +441,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=XImANkhy5bPte8sWajcb&only=yes&limit=100)
-
-Last updated 28 days ago
-
-Was this helpful?
-
 ##
 
 Setup Steps
@@ -438,6 +452,11 @@ Follow the below steps to start using Endpoint Privilege Manager.
 ###
 
 Keeper Enterprise license
+
+If you are not a Keeper customer or do not have the required license, you can
+[start a free trial](https://www.keepersecurity.com/password-manager-free-
+trial-sign-up.html) from our website. The free trial includes KeeperPAM full
+capabilities.
 
 2
 
@@ -474,37 +493,11 @@ Next Steps
 
 Now that Endpoint Privilege Manager is activated, the next steps are:
 
-  *   *   * 
+  * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment) of the Agent
 
-If you are not a Keeper customer or do not have the required license, you can
-from our website. The free trial includes KeeperPAM full capabilities.
+  * [Set Policies](/en/keeperpam/endpoint-privilege-manager/policies) and
 
-of the Agent
-
-and
-
-  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
-
-# Setup
-
-Installation and setup of Privileged Elevation and Delegation Management
-(PEDM)
-
-[PreviousOverview](/en/keeperpam/endpoint-privilege-
-manager/overview)[NextDeployment](/en/keeperpam/endpoint-privilege-
-manager/deployment)
-
-  * Setup Steps
-  * Next Steps
-
-[start a free trial](https://www.keepersecurity.com/password-manager-free-
-trial-sign-up.html)
-
-[Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
-
-[Set Policies](/en/keeperpam/endpoint-privilege-manager/policies)
-
-[Manage Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Manage Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
 
 Activating the Privilege Manager permissions in the Admin Console
 

@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -418,27 +418,12 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Amazon Linux
-  * Ubuntu
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=uvKsUzpi7q074JA0DFG4&only=yes&limit=100)
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
-
-# Installing Docker on Linux
-
-Quick setup instructions for Docker on Linux environments
-
-[PreviousInstalling sqlcmd on Linux](/en/keeperpam/privileged-access-
-manager/references/installing-sqlcmd-on-linux)[NextCreating KSM App for
-Rotation](/en/keeperpam/privileged-access-manager/references/creating-ksm-app-
-for-rotation)
-
-Last updated 18 days ago
+Last updated 19 days ago
 
 Was this helpful?
 
@@ -453,55 +438,16 @@ Amazon Linux
 
 Ensure all packages up to date
 
-Copy
-
-    
-    
-    sudo yum update -y
-
 Install Docker
 
-Copy
-
-    
-    
-    sudo yum install -y docker
-
 Start the service
-
-Copy
-
-    
-    
-    sudo service docker start
 
 Add the `ec2-user` to the `docker` group so that you can run Docker commands
 without using sudo.
 
-Copy
-
-    
-    
-    sudo usermod -a -G docker ec2-user
-    newgrp docker
-
 Start automatically at boot
 
-Copy
-
-    
-    
-    sudo chkconfig docker on
-
 Install Docker Compose
-
-Copy
-
-    
-    
-    sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-    sudo chmod +x /usr/local/bin/docker-compose
-    docker-compose --version
 
 ###
 
@@ -509,45 +455,13 @@ Ubuntu
 
 Update the instance
 
-Copy
-
-    
-    
-    apt update -y
-    apt upgrade -y
-
 Install Docker
-
-Copy
-
-    
-    
-    sudo apt install docker.io
 
 Install Docker Compose
 
-Copy
-
-    
-    
-    sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-
 Ensure docker-compose is executable
 
-Copy
-
-    
-    
-    sudo chmod +x /usr/local/bin/docker-compose
-
 Activate Docker
-
-Copy
-
-    
-    
-    sudo systemctl enable docker
-    sudo systemctl start docker
 
 Add the current user to the `docker` group so that you can run Docker commands
 without using sudo.
@@ -556,8 +470,94 @@ Copy
 
     
     
+    apt update -y
+    apt upgrade -y
+
+Copy
+
+    
+    
+    sudo apt install docker.io
+
+Copy
+
+    
+    
+    sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+Copy
+
+    
+    
+    sudo chmod +x /usr/local/bin/docker-compose
+
+Copy
+
+    
+    
+    sudo systemctl enable docker
+    sudo systemctl start docker
+
+Copy
+
+    
+    
     sudo usermod -aG docker $USER
     newgrp docker
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
+
+# Installing Docker on Linux
+
+Quick setup instructions for Docker on Linux environments
+
+[PreviousInstalling sqlcmd on Linux](/en/keeperpam/privileged-access-
+manager/references/installing-sqlcmd-on-linux)[NextCreating KSM App for
+Rotation](/en/keeperpam/privileged-access-manager/references/creating-ksm-app-
+for-rotation)
+
+  * Amazon Linux
+  * Ubuntu
+
+Copy
+
+    
+    
+    sudo yum update -y
+
+Copy
+
+    
+    
+    sudo yum install -y docker
+
+Copy
+
+    
+    
+    sudo service docker start
+
+Copy
+
+    
+    
+    sudo usermod -a -G docker ec2-user
+    newgrp docker
+
+Copy
+
+    
+    
+    sudo chkconfig docker on
+
+Copy
+
+    
+    
+    sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+    sudo chmod +x /usr/local/bin/docker-compose
+    docker-compose --version
 
 [Amazon Linux](/en/keeperpam/privileged-access-manager/references/installing-
 docker-on-linux#amazon-linux)

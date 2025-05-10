@@ -445,7 +445,7 @@ rotation/rotation-use-cases/local-network/database/mysql)[NextNative
 PostgreSQL](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/local-network/database/postgresql)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

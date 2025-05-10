@@ -412,7 +412,7 @@ resource-url-patterns)[NextSession Recording &
 Playback](/en/keeperpam/privileged-access-manager/session-recording-and-
 playback)
 
-Last updated 23 days ago
+Last updated 24 days ago
 
 Was this helpful?
 
@@ -457,8 +457,6 @@ is visually projected into the user's vault.
 
 An example of an RBI record is below. This is an Amazon AWS login that will
 autofill a credential.
-
-Remote Browser Isolation Record
 
 ###
 
@@ -620,6 +618,8 @@ Copy
 
 If the field is found, the DOM element will be displayed. Otherwise, an error
 will be displayed.
+
+Remote Browser Isolation Record
 
 PAM User used for autofill
 

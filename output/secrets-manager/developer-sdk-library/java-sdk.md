@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -386,36 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Download and Installation
@@ -450,14 +420,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-Mg6HS6mAecyfh4RTvSJ&only=yes&limit=100)
 # Java/Kotlin SDK
 
 Detailed Java and Kotlin SDK docs for Keeper Secrets Manager
-
-[PreviousPython SDK](/en/keeperpam/secrets-manager/developer-sdk-
-library/python-sdk)[NextRecord Field Classes](/en/keeperpam/secrets-
-manager/developer-sdk-library/java-sdk/record-field-classes)
-
-Last updated 3 months ago
-
-Was this helpful?
 
 ##
 
@@ -517,12 +479,18 @@ Copy
         Security.addProvider(BouncyCastleFipsProvider())
     ...
 
-See the file `CryptoUtilsTest.kt` as shown in this  on how to use a custom
-security provider.
+See the file `CryptoUtilsTest.kt` as shown in this
+[example](https://github.com/Keeper-Security/secrets-
+manager/blob/dcd96317304b8ddc2b17a649ac465f5cd408491a/sdk/java/core/src/test/kotlin/com/keepersecurity/secretsManager/core/CryptoUtilsTest.kt#L11)
+on how to use a custom security provider.
 
 ###
 
 **Source Code**
+
+Find the Java/Kotlin source code in the [GitHub
+repository](https://github.com/Keeper-Security/secrets-
+manager/tree/master/sdk/java/core)
 
 ###
 
@@ -875,6 +843,10 @@ Copy
     
     // get login with dot notation
     String login = getValue(secrets, "BediNKCMG21ztm5xGYgNww/field/login");
+
+See [Keeper Notation documentation](/en/keeperpam/secrets-
+manager/about/keeper-notation) to learn about Keeper Notation format and
+capabilities
 
 Parameter
 
@@ -1521,7 +1493,7 @@ Prerequisites:
 
     *   * TOTP fields accept only URL generated outside of the KSM SDK
 
-  * 
+  * After record creation, you can upload file attachments using [uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk#upload-a-file)
 
 Create a RecordCreate Record in Sub-folderLogin Record ExampleCustom Type
 Example
@@ -2040,35 +2012,54 @@ Copy
     SecretsManagerOptions options = new SecretsManagerOptions(new LocalConfigStorage("ksm-config.json"));
     SecretsManager.deleteFolder(options, Arrays.asList("[FOLDER_UID1]", "[FOLDER_UID2]"), true);
 
-Find the Java/Kotlin source code in the
+[PreviousPython SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/python-sdk)[NextRecord Field Classes](/en/keeperpam/secrets-
+manager/developer-sdk-library/java-sdk/record-field-classes)
 
-To get a field value, you will need to cast the return to the  of the
-corresponding field type. For a list of field types see the  page.
+Last updated 3 months ago
 
-See  to learn about Keeper Notation format and capabilities
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+To get a field value, you will need to cast the return to the
+[class](/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk/record-
+field-classes) of the corresponding field type. For a list of field types see
+the  page.
 
 Each record field type is represented by a class. Cast the field to the
 corresponding class in order to correctly access the field's value. Check the
 documentation for a list of field types.
 
 See the  for expected field formats for each record type
-
-After record creation, you can upload file attachments using
-
-[example](https://github.com/Keeper-Security/secrets-
-manager/blob/dcd96317304b8ddc2b17a649ac465f5cd408491a/sdk/java/core/src/test/kotlin/com/keepersecurity/secretsManager/core/CryptoUtilsTest.kt#L11)
-
-[GitHub repository](https://github.com/Keeper-Security/secrets-
-manager/tree/master/sdk/java/core)
-
-[Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
-notation)
-
-[uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/java-
-sdk#upload-a-file)
-
-[class](/en/keeperpam/secrets-manager/developer-sdk-library/java-sdk/record-
-field-classes)
 
 [Record Types](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)

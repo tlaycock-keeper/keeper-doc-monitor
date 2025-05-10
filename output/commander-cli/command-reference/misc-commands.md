@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/keeperpam/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
 
 Ask or search...
 
@@ -1180,6 +1180,10 @@ please refer to the  section of our Troubleshooting page.
 This command is deprecated. If your goal is to add delay between commands,
 please refer to the  command.
 
+["Security Audit Report Score Re-alignment Process"](/en/keeperpam/commander-
+cli/troubleshooting-commander-cli#security-audit-report-score-re-alignment-
+process)
+
 [`run-batch`](/en/keeperpam/commander-cli/command-reference/misc-commands#run-
 batch-command)
 
@@ -1197,8 +1201,4 @@ commands#keeper-fill-command)
 
 [`2fa`](/en/keeperpam/commander-cli/command-reference/misc-commands#2fa-
 command)
-
-["Security Audit Report Score Re-alignment Process"](/en/keeperpam/commander-
-cli/troubleshooting-commander-cli#security-audit-report-score-re-alignment-
-process)
 

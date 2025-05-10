@@ -386,31 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Conversion
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=k6jFyEGQEPGGBPV37Qev&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-
-# Record Linking
-
-KeeperPAM migration of records to new linked format
-
-[PreviousVault Structure](/en/keeperpam/privileged-access-manager/getting-
-started/vault-structure)[NextApplications](/en/keeperpam/privileged-access-
-manager/getting-started/applications)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -440,6 +415,31 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Overview
+  * Conversion
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=k6jFyEGQEPGGBPV37Qev&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+# Record Linking
+
+KeeperPAM migration of records to new linked format
+
+[PreviousVault Structure](/en/keeperpam/privileged-access-manager/getting-
+started/vault-structure)[NextApplications](/en/keeperpam/privileged-access-
+manager/getting-started/applications)
+
+Last updated 3 months ago
+
+Was this helpful?
 
 ##
 

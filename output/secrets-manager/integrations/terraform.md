@@ -1110,12 +1110,6 @@ Security/secretsmanager/latest/docs)
 [examples folder](https://github.com/keeper-security/terraform-provider-
 secretsmanager/tree/master/examples)
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
 [shown above](/en/keeperpam/secrets-manager/integrations/terraform#list-of-
 supported-record-types)
 
@@ -1178,6 +1172,12 @@ security/secretsmanager/latest/docs/data-sources/ssh_keys)
 
 [SSN Card](https://registry.terraform.io/providers/keeper-
 security/secretsmanager/latest/docs/data-sources/ssn_card)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

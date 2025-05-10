@@ -386,36 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * About 
@@ -436,21 +406,16 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MkhHwC6PB3pqh132phe&only=yes&limit=100)
 
 Query format used for getting fields of a secret
 
-[PreviousSecrets Manager Configuration](/en/keeperpam/secrets-
-manager/about/secrets-manager-configuration)[NextEvent
-Reporting](/en/keeperpam/secrets-manager/about/event-reporting)
-
-Last updated 6 months ago
-
-Was this helpful?
-
 ##
 
 About
 
-Keeper notation is used by Keeper Secrets Manager and  to query fields in
+Keeper notation is used by Keeper Secrets Manager[
+SDKs](/en/keeperpam/secrets-manager/developer-sdk-library) and
+[integrations](/en/keeperpam/secrets-manager/integrations) to query fields in
 Keeper records. To view the different types of records and the field names
-available, .
+available, [click here](/en/keeperpam/secrets-manager/about/field-record-
+types).
 
 ##
 
@@ -657,11 +622,43 @@ associated to the Dev folder (in this case "Development Environment"). Then to
 build for production, simply change the associated Secrets Manager application
 to "Production Environment" no change in code or scripts needed.
 
-[ SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
+[PreviousSecrets Manager Configuration](/en/keeperpam/secrets-
+manager/about/secrets-manager-configuration)[NextEvent
+Reporting](/en/keeperpam/secrets-manager/about/event-reporting)
 
-[integrations](/en/keeperpam/secrets-manager/integrations)
+Last updated 6 months ago
 
-[click here](/en/keeperpam/secrets-manager/about/field-record-types)
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
