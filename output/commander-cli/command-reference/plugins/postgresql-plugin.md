@@ -575,9 +575,6 @@ commands)
 [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
 cli#typed-vs-untyped-records-v3-vs-v2)
 
-[documentation](/en/keeperpam/commander-cli/command-
-reference/plugins/password-rotation#connect-command)
-
 Commander will use the login and password to login to the PostgreSQL account
 
 A Keeper Record setup for connection
@@ -597,4 +594,7 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwoGgeVwEB
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf4CgBqohGZ1_sEVoQH%252Fimage.png%3Falt%3Dmedia%26token%3D86e1e38c-0c84-4aa6-bcc4-bdefd9c4113c&width=768&dpr=4&quality=100&sign=476408d7&sv=2)
+
+[documentation](/en/keeperpam/commander-cli/command-
+reference/plugins/password-rotation#connect-command)
 

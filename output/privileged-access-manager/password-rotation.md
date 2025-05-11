@@ -418,12 +418,28 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * Features
+  * Architecture
+  * How does Password Rotation Work?
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=wMNTMS1fpwa1c1jcKTpn&only=yes&limit=100)
 
-Last updated 2 months ago
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Password Rotation
+
+Keeper password rotation capabilities with Keeper Secrets Manager
+
+[PreviousJust-In-Time Access (JIT)](/en/keeperpam/privileged-access-
+manager/getting-started/just-in-time-access-jit)[NextRotation
+Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview)
+
+Last updated 3 months ago
 
 Was this helpful?
 
@@ -479,22 +495,6 @@ In KeeperPAM, the way Password Rotation works is as follows:
   * For AWS and Azure managed resources, Keeper uses Instance Role permission of the Gateway, or specific PAM Configuration secrets to perform the rotation with APIs.
 
 The  record holds the credential that is being rotated.
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# Password Rotation
-
-Keeper password rotation capabilities with Keeper Secrets Manager
-
-[PreviousJust-In-Time Access (JIT)](/en/keeperpam/privileged-access-
-manager/getting-started/just-in-time-access-jit)[NextRotation
-Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview)
-
-  * Overview
-  * Features
-  * Architecture
-  * How does Password Rotation Work?
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)

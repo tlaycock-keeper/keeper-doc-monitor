@@ -386,6 +386,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -425,36 +455,6 @@ library/python-sdk)
 Last updated 1 month ago
 
 Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
 
 ##
 
@@ -519,12 +519,6 @@ The GoLang SDK supports GoLang version `1.13` and later
 
 Authentication
 
-The Secrets Manager SDK authenticates to the Keeper Vault using either the One
-Time Access Token or using the generated keys within the local configuration
-file. To generate one or more One Time Access Tokens from [Commander
-CLI](https://github.com/Keeper-Security/Commander) use the `secrets-manager
-client add` command.
-
 Copy
 
     
@@ -538,11 +532,6 @@ Copy
 ##
 
 Initialization
-
-Secrets Manager SDKs utilize a configuration file to hold connection tokens
-and settings. The following code samples show how to create a configuration
-file with the SDKs and an [One-Time Access Token](/en/keeperpam/secrets-
-manager/about/one-time-token):
 
 JavaJavaScriptPython.NetGoLang
 
@@ -736,10 +725,6 @@ Copy
       "appKey": "RzhSIyKxbpjNu045TUrKaNREYIns+Hk9Kn8YtT+CtK0=",
       "appOwnerPublicKey": "Sq1W1OAnTwi8V/Vs/lhsin2sfSoaRfOwwDDBqoP+EO9bsBMWCzQdl9ClauDiKLXGmlmyx2xmSAdH+hlxvBRs6kU="
     }
-
-For information on other ways to create a config file, see the [Config File
-documentation](/en/keeperpam/secrets-manager/about/secrets-manager-
-configuration).
 
 ##
 
@@ -2225,9 +2210,6 @@ Keeper Secrets Manager CLI provides a wrapper function that executes any
 arbitrary system call and replaces environmental variables with values from
 the Keeper Vault.
 
-[Secrets Manager CLI Exec Command](/en/keeperpam/secrets-manager/secrets-
-manager-command-line-interface/exec-command)
-
 ##
 
 Vault and Admin SDKs
@@ -2235,26 +2217,46 @@ Vault and Admin SDKs
 For higher level functionality at the Vault and Administrative level, please
 see the Vault SDKs page which contains links to various development tools.
 
+The Secrets Manager SDK authenticates to the Keeper Vault using either the One
+Time Access Token or using the generated keys within the local configuration
+file. To generate one or more One Time Access Tokens from  use the `secrets-
+manager client add` command.
+
+Secrets Manager SDKs utilize a configuration file to hold connection tokens
+and settings. The following code samples show how to create a configuration
+file with the SDKs and an :
+
+For information on other ways to create a config file, see the .
+
+See the section for how to initialize a config file.
+
+See the section for how to initialize a config file.
+
+See the section for how to initialize a config file.
+
+See the section for how to initialize a config file.
+
+See the section for how to initialize a config file.
+
+See the section for how to initialize a config file.
+
+See the section for how to initialize a config file.
+
+Additional secret creation features and  and  validation coming in future
+releases of Keeper Secrets Manager
+
+[Commander CLI](https://github.com/Keeper-Security/Commander)
+
+[One-Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
+
+[Config File documentation](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration)
+
+[Secrets Manager CLI Exec Command](/en/keeperpam/secrets-manager/secrets-
+manager-command-line-interface/exec-command)
+
 [Vault SDKs](/en/keeperpam/secrets-manager/developer-sdk-library/vault-sdks)
 
-See the section for how to initialize a config file.
-
-See the section for how to initialize a config file.
-
-See the section for how to initialize a config file.
-
-See the section for how to initialize a config file.
-
-See the section for how to initialize a config file.
-
-See the section for how to initialize a config file.
-
-See the section for how to initialize a config file.
-
-Additional secret creation features and [Record Type](/en/keeperpam/commander-
-cli/command-reference/record-commands/default-record-types) and  validation
-coming in future releases of Keeper Secrets Manager
-
 [Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
 library#initialization)
 
@@ -2275,6 +2277,9 @@ library#initialization)
 
 [Initialization ](/en/keeperpam/secrets-manager/developer-sdk-
 library#initialization)
+
+[Record Type](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types)
 
 [Record Fields](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)

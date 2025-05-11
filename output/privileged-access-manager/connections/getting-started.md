@@ -386,6 +386,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview 
@@ -416,36 +446,6 @@ manager/connections/session-protocols)
 Last updated 3 months ago
 
 Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
 
 ##
 
@@ -479,33 +479,15 @@ Definition
 
 Can configure connection settings
 
-Copy
-
-    
-    
-    ALLOW_CONFIGURE_PAM_CLOUD_CONNECTION_SETTINGS
-
 Allow users to configure Tunnel settings on PAM Machine, PAM Directory, PAM
 Database and PAM Configuration Records Types
 
 Can start connections
 
-Copy
-
-    
-    
-    ALLOW_LAUNCH_PAM_ON_CLOUD_CONNECTION
-
 Allow users to start tunnels on PAM Machine, PAM Directory and PAM Database
 Record Types
 
 Can view recordings
-
-Copy
-
-    
-    
-    ALLOW_VIEW_KCM_RECORDINGS
 
 Allow users to view session Recordings.
 
@@ -533,12 +515,6 @@ start connections" should be enabled for the user.
 
 Session Recordings
 
-Launched connections can also be recorded. These recordings are available on
-the PAM Machine, PAM Database, or PAM Directory record types and can be played
-back on your Vault. For more details on session recording and playback, visit
-this [page](/en/keeperpam/privileged-access-manager/session-recording-and-
-playback).
-
 ###
 
 Installing the Keeper Gateway
@@ -548,19 +524,9 @@ customer's network to enabled zero-trust access to target infrastructure.
 Typically this service is installed on a Linux or Docker environment in each
 of the networks that requires access.
 
-For more details on installing and setting up your gateway, visit this
-[page](/en/keeperpam/privileged-access-manager/getting-started/gateways).
-
 ###
 
 PAM Configuration
-
-The **PAM Configuration** contains essential information of your target
-infrastructure, settings and [Keeper Gateway](/en/keeperpam/privileged-access-
-manager/getting-started/gateways). Setting up a PAM Configuration for your
-infrastructure is required. For more information on creating and configuring
-the PAM Configuration, visit this [page](/en/keeperpam/privileged-access-
-manager/getting-started/pam-configuration).
 
 ###
 
@@ -574,23 +540,11 @@ PAM Record Type
 
 Target Endpoint type
 
-[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
 Windows/MacOS/Linux Machines, EC2 Instances, Azure VMs
-
-[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database)
 
 MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
 
-[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-directory)
-
 Active Directory, OpenLDAP
-
-[PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-remote-browser)
 
 Web-based applications
 
@@ -611,64 +565,40 @@ PAM Record Type
 
 Definition
 
-[SSH](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/ssh-connections)
-
 PAM Machine
 
 Connecting to the target defined on the PAM Machine Record with the SSH
 connection protocol
-
-[RDP](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/rdp-connections)
 
 PAM Machine
 
 Connecting to the target defined on the PAM Machine Record with the RDP
 connection protocol
 
-[RBI](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/rbi-connections)
-
 PAM Browser
 
 Connecting to the URL defined in the PAM Browser Record with the Remote
 Browser Isolation (http/https) protocol
-
-[MySQL](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/mysql-connections)
 
 PAM Database
 
 Connecting to the target defined on the PAM Database Record with the MySQL
 connection protocol
 
-[SQL Server](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/sql-server-connections)
-
 PAM Database
 
 Connecting to the target defined on the PAM Database Record with the SQL
 Server connection protocol
-
-[PostgreSQL](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/postgresql-connections)
 
 PAM Database
 
 Connecting to the target defined on the PAM Database Record with the
 PostgreSQL connection protocol
 
-[VNC](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/vnc-connections)
-
 PAM Machine
 
 Connecting to the target defined on the PAM Machine Record with the VNC
 connection protocol
-
-[Telnet](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/telnet-connections)
 
 PAM Machine
 
@@ -676,6 +606,82 @@ Connecting to the target defined on the PAM Machine Record with the Telnet
 connection protocol
 
 Tunnels can also be enabled on the  using the `enterprise-role` command:
+
+Launched connections can also be recorded. These recordings are available on
+the PAM Machine, PAM Database, or PAM Directory record types and can be played
+back on your Vault. For more details on session recording and playback, visit
+this .
+
+For more details on installing and setting up your gateway, visit this .
+
+The **PAM Configuration** contains essential information of your target
+infrastructure, settings and . Setting up a PAM Configuration for your
+infrastructure is required. For more information on creating and configuring
+the PAM Configuration, visit this .
+
+Copy
+
+    
+    
+    ALLOW_CONFIGURE_PAM_CLOUD_CONNECTION_SETTINGS
+
+Copy
+
+    
+    
+    ALLOW_LAUNCH_PAM_ON_CLOUD_CONNECTION
+
+Copy
+
+    
+    
+    ALLOW_VIEW_KCM_RECORDINGS
+
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+
+[page](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
+started/gateways)
+
+[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration)
+
+[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
+
+[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database)
+
+[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-directory)
+
+[PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-remote-browser)
+
+[SSH](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/ssh-connections)
+
+[RDP](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/rdp-connections)
+
+[RBI](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/rbi-connections)
+
+[MySQL](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/mysql-connections)
+
+[SQL Server](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/sql-server-connections)
+
+[PostgreSQL](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/postgresql-connections)
+
+[VNC](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/vnc-connections)
+
+[Telnet](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/telnet-connections)
 
 [Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
 manager-commands#overview)

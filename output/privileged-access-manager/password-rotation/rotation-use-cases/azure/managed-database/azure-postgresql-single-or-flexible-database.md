@@ -447,7 +447,7 @@ mariadb-database)[NextAzure App Secret Rotation](/en/keeperpam/privileged-
 access-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-
 rotation)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

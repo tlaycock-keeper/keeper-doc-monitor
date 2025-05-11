@@ -413,43 +413,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=vDbSrpaFEyRgJGVFRYIn&only=yes&limit=100)
 
 Applying least privilege policies to your users and machines
 
-[PreviousDeployment](/en/keeperpam/endpoint-privilege-
-manager/deployment)[NextManaging Requests](/en/keeperpam/endpoint-privilege-
-manager/managing-requests)
-
-Last updated 29 days ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FClVsHWgmyesztuY1ccPJ%252FPEDM%2520Policies.jpg%3Falt%3Dmedia%26token%3Dcef97c8a-c263-4b87-8999-c1a329eceacd&width=768&dpr=4&quality=100&sign=969af142&sv=2)
 
 ###
 
@@ -459,6 +425,12 @@ Endpoint Privilege Manager can apply least privilege policies to users and
 machines across the fleet of endpoints which are running the Keeper agent.
 Policies are applied to collections, and the policy is customized by the Admin
 based on your organization's requirements.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5iLgF8VeCfELdqLImMKD%252FPolicies.png%3Falt%3Dmedia%26token%3D8d2db699-9500-4790-9445-8fb482a473f5&width=768&dpr=4&quality=100&sign=c812813d&sv=2)
+
+Policies
 
 ###
 
@@ -472,6 +444,12 @@ device or user. When this happens, Keeper enforces all applicable policies
 with strict adherence to their requirements. In cases where policies have
 conflicting settings, Keeper automatically applies the most restrictive
 option, ensuring maximum security on the endpoint.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIt7D3CBJxQaLndrqHR27%252FCreate%2520Policy.png%3Falt%3Dmedia%26token%3D752738d6-b4a6-45a6-a93f-6931ad9b6366&width=768&dpr=4&quality=100&sign=e99c48d5&sv=2)
+
+Create Policy
 
 ###
 
@@ -535,12 +513,25 @@ Policy Editor
 Policies can be edited in the user interface in a basic or advanced mode. The
 advanced mode allows editing of the JSON policy definition.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4AaJFxvMtIuUdNQ6lchP%252FEdit%2520Policy.png%3Falt%3Dmedia%26token%3Dc510edfd-
+ef11-49cc-9957-ac4d2f72065c&width=768&dpr=4&quality=100&sign=1571f0d6&sv=2)
+
+Policy Editor
+
 ###
 
 Advanced Policy Editor
 
 The Advanced mode of the policy editor allows the admin to manage the policy
 directly with JSON syntax.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fv7dVbQ4glHs1JVZztiAm%252FAdvanced%2520Mode.png%3Falt%3Dmedia%26token%3Dadfd6b5a-3082-4c66-8430-95ba340f1844&width=768&dpr=4&quality=100&sign=32356461&sv=2)
+
+Advanced Policy Editor
 
 ###
 
@@ -551,6 +542,12 @@ into new policies or added to existing policies. Select the events and then
 click "+ Add to Policy". Choose the policy to apply the events or create a new
 policy.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FA0qKc2NZXTeJrXfavUSE%252FAdd%2520to%2520Policy%2520Modal.png%3Falt%3Dmedia%26token%3Db4195fe3-b02d-4442-bdca-c41756eee720&width=768&dpr=4&quality=100&sign=76db0c2&sv=2)
+
+Add Events to Policy
+
 ###
 
 Approval Settings
@@ -558,6 +555,10 @@ Approval Settings
 Keeper allows you to set any number of approvers in a policy for a given
 elevation request. After a set amount time, the request can be escalated to a
 designated admin. Approvals will expire after a set amount of time.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fl10wBH4vEk7pgogS92Jy%252FApprovers%2520Added%2520-%2520Users%2520%252B%2520Team.png%3Falt%3Dmedia%26token%3Df73ae14e-65e5-4e66-b653-483d4646defe&width=768&dpr=4&quality=100&sign=34e646b0&sv=2)
 
 ###
 
@@ -602,42 +603,41 @@ Copy
     assign     Assign collections to policy
     delete     Delete PEDM policy
 
-Policies
+[PreviousDeployment](/en/keeperpam/endpoint-privilege-
+manager/deployment)[NextManaging Requests](/en/keeperpam/endpoint-privilege-
+manager/managing-requests)
 
-Create Policy
+Last updated 1 month ago
 
-Policy Editor
+Was this helpful?
 
-Advanced Policy Editor
+#### Company
 
-Add Events to Policy
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FClVsHWgmyesztuY1ccPJ%252FPEDM%2520Policies.jpg%3Falt%3Dmedia%26token%3Dcef97c8a-c263-4b87-8999-c1a329eceacd&width=768&dpr=4&quality=100&sign=969af142&sv=2)
+#### Support
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5iLgF8VeCfELdqLImMKD%252FPolicies.png%3Falt%3Dmedia%26token%3D8d2db699-9500-4790-9445-8fb482a473f5&width=768&dpr=4&quality=100&sign=c812813d&sv=2)
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIt7D3CBJxQaLndrqHR27%252FCreate%2520Policy.png%3Falt%3Dmedia%26token%3D752738d6-b4a6-45a6-a93f-6931ad9b6366&width=768&dpr=4&quality=100&sign=e99c48d5&sv=2)
+#### Solutions
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4AaJFxvMtIuUdNQ6lchP%252FEdit%2520Policy.png%3Falt%3Dmedia%26token%3Dc510edfd-
-ef11-49cc-9957-ac4d2f72065c&width=768&dpr=4&quality=100&sign=1571f0d6&sv=2)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fv7dVbQ4glHs1JVZztiAm%252FAdvanced%2520Mode.png%3Falt%3Dmedia%26token%3Dadfd6b5a-3082-4c66-8430-95ba340f1844&width=768&dpr=4&quality=100&sign=32356461&sv=2)
+#### Pricing
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FA0qKc2NZXTeJrXfavUSE%252FAdd%2520to%2520Policy%2520Modal.png%3Falt%3Dmedia%26token%3Db4195fe3-b02d-4442-bdca-c41756eee720&width=768&dpr=4&quality=100&sign=76db0c2&sv=2)
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fl10wBH4vEk7pgogS92Jy%252FApprovers%2520Added%2520-%2520Users%2520%252B%2520Team.png%3Falt%3Dmedia%26token%3Df73ae14e-65e5-4e66-b653-483d4646defe&width=768&dpr=4&quality=100&sign=34e646b0&sv=2)
+© 2025 Keeper Security, Inc.
 

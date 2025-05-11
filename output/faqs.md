@@ -569,7 +569,7 @@ detailed audit trails.
 requests)[NextSecrets Manager Overview](/en/keeperpam/secrets-
 manager/overview)
 
-Last updated 29 days ago
+Last updated 1 month ago
 
 Was this helpful?
 

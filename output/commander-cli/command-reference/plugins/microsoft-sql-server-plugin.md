@@ -480,8 +480,6 @@ rotation type as well. See the instructions below.
 
 See the section for more information on legacy vs typed records
 
-Complete record example. Follow steps below to setup a record for rotation
-
 ####
 
 Set the record Login as username of the account to rotate
@@ -573,8 +571,6 @@ Output
 After rotation is completed, the new password will be stored in the `Password`
 field of the record
 
-A Keeper Record that is setup for MSSQL rotation
-
 [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
 rotation)
 
@@ -583,6 +579,10 @@ commands)
 
 [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
 cli#typed-vs-untyped-records-v3-vs-v2)
+
+Complete record example. Follow steps below to setup a record for rotation
+
+A Keeper Record that is setup for MSSQL rotation
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

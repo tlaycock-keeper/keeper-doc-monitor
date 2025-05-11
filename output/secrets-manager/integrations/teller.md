@@ -418,10 +418,29 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Features
+  * Prerequisites
+  * Setup
+  * Getting a Secrets Manager configuration
+  * Creating a Teller configuration
+  * Running from command line
+  * Using a GitHub Action
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=zMwpu8ckOjBjs8KMgOJM&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Teller
+
+Keeper Secrets Manager integration with Teller for dynamic secrets retrieval
+
+[PreviousTeamCity](/en/keeperpam/secrets-
+manager/integrations/teamcity)[NextTerraform Plugin](/en/keeperpam/secrets-
+manager/integrations/terraform)
 
 Last updated 11 months ago
 
@@ -460,6 +479,20 @@ Using Keeper Commander, add a new client to an application and initialize the
 configuration to a Base64 string. This will be the long text hash that appears
 after the "Initialized Config:" label.
 
+Copy
+
+    
+    
+    My Vault> sm client add --app MyApp --config-init b64
+    
+    Successfully generated Client Device
+    ====================================
+    
+    Initialized Config: eyJob3N0bmFtZSI6ICJr....OUk1ZTV1V2toRucXRsaWxqUT0ifQ==
+    IP Lock: Enabled
+    Token Expires On: 2021-10-19 15:31:31
+    App Access Expires on: Never
+
 That value needs to be assigned to an environment variable with the name
 **KSM_CONFIG**.
 
@@ -476,47 +509,6 @@ repo, or one that you point teller to with `teller -c your-conf.yml`. Run
 generate a `.teller.yml` for you.
 
 Alternatively, you can use the following minimal template:
-
-##
-
-Running from command line
-
-With a `.teller.yml` file in the current directory, or one that you point
-teller to with `teller -c your-conf.yml`now you can just run processes with:.
-
-##
-
-Using a GitHub Action
-
-Add a teller step.
-
-Full example below is using the default config file `.teller.yml` which can be
-replaced in the `run` command with a custom file that you point teller to with
-`teller -c your-conf.yml`.
-
-For a complete list of Keeper Secrets Manager features see the
-
-Keeper Secrets Manager access (See the  for more details)
-
-A Keeper  with secrets shared to it
-
-See the  for instructions on creating an Application
-
-An initialized Keeper
-
-Copy
-
-    
-    
-    My Vault> sm client add --app MyApp --config-init b64
-    
-    Successfully generated Client Device
-    ====================================
-    
-    Initialized Config: eyJob3N0bmFtZSI6ICJr....OUk1ZTV1V2toRucXRsaWxqUT0ifQ==
-    IP Lock: Enabled
-    Token Expires On: 2021-10-19 15:31:31
-    App Access Expires on: Never
 
 Copy
 
@@ -544,6 +536,13 @@ Copy
           PSWD:
             path: [recordUID]/field/password
 
+##
+
+Running from command line
+
+With a `.teller.yml` file in the current directory, or one that you point
+teller to with `teller -c your-conf.yml`now you can just run processes with:.
+
 Copy
 
     
@@ -552,6 +551,12 @@ Copy
     Service is up.
     Loaded configuration: Mailgun, SMTP
     Port: 5050
+
+##
+
+Using a GitHub Action
+
+Add a teller step.
 
 Copy
 
@@ -562,6 +567,10 @@ Copy
       uses: spectralops/setup-teller@v2
     - name: Run a Teller task (show, scan, run, etc.)
       run: teller run [args]
+
+Full example below is using the default config file `.teller.yml` which can be
+replaced in the `run` command with a custom file that you point teller to with
+`teller -c your-conf.yml`.
 
 Copy
 
@@ -592,30 +601,15 @@ Copy
           - name: Run a Teller task (show, scan, run, etc.)
             run: teller run npm run build
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+For a complete list of Keeper Secrets Manager features see the
 
-# Teller
+Keeper Secrets Manager access (See the  for more details)
 
-Keeper Secrets Manager integration with Teller for dynamic secrets retrieval
+A Keeper  with secrets shared to it
 
-[PreviousTeamCity](/en/keeperpam/secrets-
-manager/integrations/teamcity)[NextTerraform Plugin](/en/keeperpam/secrets-
-manager/integrations/terraform)
+See the  for instructions on creating an Application
 
-  * Features
-  * Prerequisites
-  * Setup
-  * Getting a Secrets Manager configuration
-  * Creating a Teller configuration
-  * Running from command line
-  * Using a GitHub Action
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXXs3iDxSwPACWT36JH5O%252Fkeeper%252Bteller.jpg%3Falt%3Dmedia%26token%3Dc7948170-0739-4e87-b27f-6b67130f4953&width=768&dpr=4&quality=100&sign=fe71c61b&sv=2)
-
-[Teller](https://github.com/tellerops/teller)
+An initialized Keeper
 
 [Overview ](/en/keeperpam/secrets-manager/overview)
 
@@ -624,9 +618,15 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXXs3iDxSw
 [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-
 manager-configuration)
 
+[Teller](https://github.com/tellerops/teller)
+
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXXs3iDxSwPACWT36JH5O%252Fkeeper%252Bteller.jpg%3Falt%3Dmedia%26token%3Dc7948170-0739-4e87-b27f-6b67130f4953&width=768&dpr=4&quality=100&sign=fe71c61b&sv=2)
 

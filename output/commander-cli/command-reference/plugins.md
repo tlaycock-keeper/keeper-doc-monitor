@@ -559,6 +559,19 @@ Security/Commander/tree/master/keepercommander/plugins)
 
 [commander@keepersecurity.com](mailto:commander@keepersecurity.com)
 
+[Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
+rotation)
+
+[KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
+commands)
+
+[Web Vault](https://keepersecurity.com/vault)
+
+[Keeper Desktop](https://keepersecurity.com/download.html)
+
+[Troubleshooting section](/en/keeperpam/commander-cli/troubleshooting-
+commander-cli#typed-vs-untyped-records-v3-vs-v2)
+
 [Active Directory](/en/keeperpam/commander-cli/command-
 reference/plugins/active-directory-plugin)
 
@@ -594,17 +607,4 @@ passwd-plugin)
 
 [Windows Password](/en/keeperpam/commander-cli/command-
 reference/plugins/windows-plugin)
-
-[Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
-rotation)
-
-[KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
-commands)
-
-[Web Vault](https://keepersecurity.com/vault)
-
-[Keeper Desktop](https://keepersecurity.com/download.html)
-
-[Troubleshooting section](/en/keeperpam/commander-cli/troubleshooting-
-commander-cli#typed-vs-untyped-records-v3-vs-v2)
 

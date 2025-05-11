@@ -670,6 +670,15 @@ access token.
 The [next section](/en/keeperpam/secrets-manager/about/secrets-manager-
 configuration) reviews how to create a Secrets Manager Configuration.
 
+[Keeper Commander](/en/keeperpam/secrets-manager/about/one-time-token#using-
+commander-to-generate-a-token)
+
+[Keeper Vault](/en/keeperpam/secrets-manager/about/one-time-token#using-the-
+keeper-vault-to-generate-a-token)
+
+[step 3](/en/keeperpam/secrets-manager/about/one-time-token#3-create-a-new-
+client-device)
+
 The Secrets Manager tab when no Applications exist yet
 
 The Add Application Form
@@ -686,19 +695,6 @@ The Device tab shows all the devices associated to this application
 
 The Add Device form
 
-[Keeper Commander](/en/keeperpam/secrets-manager/about/one-time-token#using-
-commander-to-generate-a-token)
-
-[Keeper Vault](/en/keeperpam/secrets-manager/about/one-time-token#using-the-
-keeper-vault-to-generate-a-token)
-
-[step 3](/en/keeperpam/secrets-manager/about/one-time-token#3-create-a-new-
-client-device)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwGBqSEWVeD1DGOx-E%252Fimage.png%3Falt%3Dmedia%26token%3D08811fbb-f6dc-4e78-b101-152948f5c11a&width=768&dpr=4&quality=100&sign=9938fb47&sv=2)
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwI0nQhO-
@@ -710,11 +706,19 @@ files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwKUi
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwHBXhb0TyqFXv_pqf%252Fimage.png%3Falt%3Dmedia%26token%3De4de2b61-aa02-4946-91dd-9b7c16a58905&width=768&dpr=4&quality=100&sign=d6f04ef5&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwHKLwE40srCh9Oqhg%252Fimage.png%3Falt%3Dmedia%26token%3D489ca694-1442-44c6-9bf1-d4af34560e36&width=768&dpr=4&quality=100&sign=96e08b0d&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwHKLwE40srCh9Oqhg%252Fimage.png%3Falt%3Dmedia%26token%3D489ca694-1442-44c6-9bf1-d4af34560e36&width=768&dpr=4&quality=100&sign=96e08b0d&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwK7UfiUinswchj47m%252Fimage.png%3Falt%3Dmedia%26token%3D0542474d-6af5-4351-a703-6e4defc2f1e5&width=768&dpr=4&quality=100&sign=41b810f2&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwGBqSEWVeD1DGOx-E%252Fimage.png%3Falt%3Dmedia%26token%3D08811fbb-f6dc-4e78-b101-152948f5c11a&width=768&dpr=4&quality=100&sign=9938fb47&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwHBXhb0TyqFXv_pqf%252Fimage.png%3Falt%3Dmedia%26token%3De4de2b61-aa02-4946-91dd-9b7c16a58905&width=768&dpr=4&quality=100&sign=d6f04ef5&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -723,11 +727,7 @@ wCYECjEON%252Fimage.png%3Falt%3Dmedia%26token%3D33f480f5-3aae-4048-bba7-ea9b5c74
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwK7UfiUinswchj47m%252Fimage.png%3Falt%3Dmedia%26token%3D0542474d-6af5-4351-a703-6e4defc2f1e5&width=768&dpr=4&quality=100&sign=41b810f2&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwIzdKsS_9i9nvdBAc%252Fimage.png%3Falt%3Dmedia%26token%3D96aac0f1-b7a3-4844-83f5-d09977881b72&width=768&dpr=4&quality=100&sign=c9df3647&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwIH9yqUcY2x55RdCX%252Fimage.png%3Falt%3Dmedia%26token%3D27f43ea0-cc7e-4199-8ecf-632d71878b73&width=768&dpr=4&quality=100&sign=9aa9dc5a&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -735,7 +735,7 @@ files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwIQJ
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwIH9yqUcY2x55RdCX%252Fimage.png%3Falt%3Dmedia%26token%3D27f43ea0-cc7e-4199-8ecf-632d71878b73&width=768&dpr=4&quality=100&sign=9aa9dc5a&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwIsKda8YtcIcdTEHg%252Fimage.png%3Falt%3Dmedia%26token%3D17df6f33-834a-4151-bdf6-fec1fa924628&width=768&dpr=4&quality=100&sign=c7f6884f&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -744,5 +744,5 @@ tEVeKRUFHuU%252Fimage.png%3Falt%3Dmedia%26token%3D020fa879-e41a-4a0d-a1c3-8ce0b9
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwIsKda8YtcIcdTEHg%252Fimage.png%3Falt%3Dmedia%26token%3D17df6f33-834a-4151-bdf6-fec1fa924628&width=768&dpr=4&quality=100&sign=c7f6884f&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkwFFIkWUcssoJKqJs6%252F-MkwIzdKsS_9i9nvdBAc%252Fimage.png%3Falt%3Dmedia%26token%3D96aac0f1-b7a3-4844-83f5-d09977881b72&width=768&dpr=4&quality=100&sign=c9df3647&sv=2)
 

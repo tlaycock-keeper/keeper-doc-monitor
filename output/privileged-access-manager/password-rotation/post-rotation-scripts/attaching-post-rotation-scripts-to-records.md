@@ -436,7 +436,7 @@ rotation/post-rotation-scripts/parameters)[NextCode
 Examples](/en/keeperpam/privileged-access-manager/password-rotation/post-
 rotation-scripts/accessing-parameters)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

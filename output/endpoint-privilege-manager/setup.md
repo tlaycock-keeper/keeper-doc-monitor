@@ -407,7 +407,7 @@ Installation and setup of Privileged Elevation and Delegation Management
 manager/overview)[NextDeployment](/en/keeperpam/endpoint-privilege-
 manager/deployment)
 
-Last updated 29 days ago
+Last updated 1 month ago
 
 Was this helpful?
 

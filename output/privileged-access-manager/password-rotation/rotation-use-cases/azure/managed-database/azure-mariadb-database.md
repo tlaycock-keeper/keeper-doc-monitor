@@ -447,7 +447,7 @@ Single or Flexible Database](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/azure/managed-database/azure-postgresql-single-or-
 flexible-database)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

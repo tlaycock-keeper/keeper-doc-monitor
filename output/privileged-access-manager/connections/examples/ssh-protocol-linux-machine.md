@@ -411,45 +411,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=64cMa7TYPLuBlBTe33Ho&only=yes&limit=100)
 
 Establish a connection to a Linux Machine directly from your Vault
 
-[PreviousExamples](/en/keeperpam/privileged-access-
-manager/connections/examples)[NextRDP Protocol - Azure Virtual
-Machine](/en/keeperpam/privileged-access-manager/connections/examples/rdp-
-protocol-azure-virtual-machine)
-
-Last updated 2 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 Overview
@@ -464,7 +425,15 @@ Summary
 
 For this setup, you need to do the following:
 
-  1.   2.   3.   4.   5. 
+  1. [Enable the Connection Enforcement Policies](/en/keeperpam/privileged-access-manager/connections/examples/ssh-protocol-linux-machine#step-1-enable-connection-enforcement-policies)
+
+  2. [Install and Configure the Keeper Gateway](/en/keeperpam/privileged-access-manager/connections/examples/ssh-protocol-linux-machine#step-2-install-and-configure-the-keeper-gateway)
+
+  3. [Create and configure the PAM Configuration File](/en/keeperpam/privileged-access-manager/connections/examples/ssh-protocol-linux-machine#step-3-configuring-the-pam-configuration)
+
+  4. [Create the PAM Machine and PAM User record types](/en/keeperpam/privileged-access-manager/connections/examples/ssh-protocol-linux-machine#step-4-create-and-configure-pam-machine-and-pam-user-s-records)
+
+  5. [Configure PAM Settings and the SSH Connection Protocol](/en/keeperpam/privileged-access-manager/connections/examples/ssh-protocol-linux-machine#step-5-configuring-pam-settings-and-ssh-protocol)
 
 After completing the above, you can launch zero-trust connections to the Linux
 Machine directly from your Keeper Vault.
@@ -593,10 +562,6 @@ Once you have configured the SSH Protocol connection on your PAM Machine
 Record, your record will contain the following connection banner with the
 "Launch" Button:
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FKqWn9sTryCuQdwJhM3d1%252FconnectionRecord.png%3Falt%3Dmedia%26token%3Dc8b3e812-6357-4b78-8fa7-7746f8cda7a4&width=768&dpr=4&quality=100&sign=9efdb494&sv=2)
-
 In the above image, a Linux Machine has been configured on the PAM Machine
 Record. When clicking launch, the Vault Client will render a window with the
 established connection protocol to the specified target:
@@ -614,23 +579,46 @@ be shared. For example, if the PAM Machine is configured with a Linux Machine,
 the recipient can connect to the Linux Machine on the PAM Machine record
 without having direct access to the linked credentials.
 
-[Enable the Connection Enforcement Policies](/en/keeperpam/privileged-access-
-manager/connections/examples/ssh-protocol-linux-machine#step-1-enable-
-connection-enforcement-policies)
+[PreviousExamples](/en/keeperpam/privileged-access-
+manager/connections/examples)[NextRDP Protocol - Azure Virtual
+Machine](/en/keeperpam/privileged-access-manager/connections/examples/rdp-
+protocol-azure-virtual-machine)
 
-[Install and Configure the Keeper Gateway](/en/keeperpam/privileged-access-
-manager/connections/examples/ssh-protocol-linux-machine#step-2-install-and-
-configure-the-keeper-gateway)
+Last updated 2 months ago
 
-[Create and configure the PAM Configuration File](/en/keeperpam/privileged-
-access-manager/connections/examples/ssh-protocol-linux-
-machine#step-3-configuring-the-pam-configuration)
+Was this helpful?
 
-[Create the PAM Machine and PAM User record types](/en/keeperpam/privileged-
-access-manager/connections/examples/ssh-protocol-linux-machine#step-4-create-
-and-configure-pam-machine-and-pam-user-s-records)
+#### Company
 
-[Configure PAM Settings and the SSH Connection
-Protocol](/en/keeperpam/privileged-access-manager/connections/examples/ssh-
-protocol-linux-machine#step-5-configuring-pam-settings-and-ssh-protocol)
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FKqWn9sTryCuQdwJhM3d1%252FconnectionRecord.png%3Falt%3Dmedia%26token%3Dc8b3e812-6357-4b78-8fa7-7746f8cda7a4&width=768&dpr=4&quality=100&sign=9efdb494&sv=2)
 

@@ -479,10 +479,8 @@ requested Secrets from a local encrypted cache.
 
 Encryption Model
 
-More details about the security and encryption model are .
-
-[available here](/en/keeperpam/secrets-manager/about/security-encryption-
-model)
+More details about the security and encryption model are [available
+here](/en/keeperpam/secrets-manager/about/security-encryption-model).
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

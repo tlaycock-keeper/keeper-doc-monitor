@@ -764,7 +764,7 @@ Setup is complete.
 [PreviousSSH Agent](/en/keeperpam/privileged-access-manager/ssh-
 agent)[NextDiscovery](/en/keeperpam/privileged-access-manager/discovery)
 
-Last updated 21 days ago
+Last updated 22 days ago
 
 Was this helpful?
 

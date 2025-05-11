@@ -386,69 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Python Commander CLI
-  * .Net Vault SDK
-  * PowerShell CLI
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=luFWxSUDNBkGKw773SBz&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Developer SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
-
-# Vault SDKs
-
-Full Vault SDKs for integration and automation
-
-If you are looking for SDK capabilities beyond secrets management, Keeper
-provides other SDKs that can perform vault and administrative functionality.
-
-##
-
-Python Commander CLI
-
-The Keeper Commander CLI is an implementation using Python that interfaces
-with the Keeper vault and Keeper administrative functions. The source code is
-available below:
-
-<https://github.com/keeper-Security/commander>[](https://github.com/keeper-
-Security/commander)
-
-##
-
-.Net Vault SDK
-
-We also created a .Net based Commander tool with a developer SDK for basic
-vault access and administrative functions:
-
-<https://github.com/Keeper-Security/keeper-sdk-
-dotnet>[](https://github.com/Keeper-Security/keeper-sdk-dotnet)
-
-##
-
-PowerShell CLI
-
-Keeper's PowerShell command-line tool ("PowerCommander") provides basic vault
-access and administrative functions in PowerShell scripts.
-
-<https://github.com/Keeper-Security/keeper-sdk-
-dotnet/tree/release/PowerCommander>[](https://github.com/Keeper-
-Security/keeper-sdk-dotnet/tree/release/PowerCommander) For more advanced
-command line capabilities, please refer to the Python-based [Commander
-CLI](/en/keeperpam/commander-cli/overview).
-
-[PreviousPowerShell](/en/keeperpam/secrets-manager/developer-sdk-
-library/powershell)[NextIntegrations](/en/keeperpam/secrets-
-manager/integrations)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -478,4 +415,70 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Python Commander CLI
+  * .Net Vault SDK
+  * PowerShell CLI
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=luFWxSUDNBkGKw773SBz&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Developer SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
+
+# Vault SDKs
+
+Full Vault SDKs for integration and automation
+
+[PreviousPowerShell](/en/keeperpam/secrets-manager/developer-sdk-
+library/powershell)[NextIntegrations](/en/keeperpam/secrets-
+manager/integrations)
+
+Last updated 4 months ago
+
+Was this helpful?
+
+If you are looking for SDK capabilities beyond secrets management, Keeper
+provides other SDKs that can perform vault and administrative functionality.
+
+##
+
+Python Commander CLI
+
+The Keeper Commander CLI is an implementation using Python that interfaces
+with the Keeper vault and Keeper administrative functions. The source code is
+available below:
+
+##
+
+.Net Vault SDK
+
+We also created a .Net based Commander tool with a developer SDK for basic
+vault access and administrative functions:
+
+##
+
+PowerShell CLI
+
+Keeper's PowerShell command-line tool ("PowerCommander") provides basic vault
+access and administrative functions in PowerShell scripts.
+
+For more advanced command line capabilities, please refer to the Python-based
+.
+
+<https://github.com/keeper-Security/commander>[](https://github.com/keeper-
+Security/commander)
+
+<https://github.com/Keeper-Security/keeper-sdk-
+dotnet>[](https://github.com/Keeper-Security/keeper-sdk-dotnet)
+
+<https://github.com/Keeper-Security/keeper-sdk-
+dotnet/tree/release/PowerCommander>[](https://github.com/Keeper-
+Security/keeper-sdk-dotnet/tree/release/PowerCommander)
+
+[Commander CLI](/en/keeperpam/commander-cli/overview)
 

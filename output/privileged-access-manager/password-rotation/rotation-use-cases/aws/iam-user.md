@@ -444,7 +444,7 @@ rotation/rotation-use-cases/aws)[NextManaged Microsoft AD
 User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
 cases/aws/directory-user)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

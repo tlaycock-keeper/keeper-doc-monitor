@@ -386,6 +386,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Commands
@@ -652,12 +682,6 @@ name or UID. To view a list of teams, use `enterprise-info --teams`
 `--remove-team` <TEAM NAME OR UID> remove the user from the team with the
 specified name or UID. To view a list of teams, use `enterprise-info --teams`
 
-`--add-alias` <EMAIL> Add an alias, in the form of an email address, to a
-user. The alias added will become the "primary" email for the user. Applying
-the command to an existing alias will set it as primary. Note that this
-command is only permitted on [reserved
-domains](https://docs.keeper.io/enterprise-guide/domain-reservation).
-
 `--delete-alias` <EMAIL> delete an email alias for a user
 
 `-f`, --force do not prompt for confirmation
@@ -808,9 +832,6 @@ Copy
     
     
     enterprise-role ROLE --enforcement "<POLICY>:$FILE=<PATH_TO_FILE_WITH_POLICY_VALUE>"
-
-Example restricting the "Engineering" role to access[ ](/en/keeperpam/secrets-
-manager/overview)import records.
 
 Copy
 
@@ -1541,10 +1562,6 @@ Copy
     [Button Text]
     // Insert the download button text here 
 
-Custom Emails can also be formatted using markdown syntax, for more
-information please refer to this [page](https://docs.keeper.io/enterprise-
-guide/user-and-team-provisioning/custom-invite-and-logo).
-
 ####
 
 **Custom Email Use Case**
@@ -1914,12 +1931,6 @@ automator command:
 
 **Detail** : Configures SSO Cloud device automators.
 
-An Automator is a program running at a customer site that can perform some
-Keeper administrative actions such as performing device approvals or team
-approvals. More information about the Keeper Automator service is [found at
-this link](https://docs.keeper.io/sso-connect-cloud/device-
-approvals/automator).
-
 Only the root-level Keeper Administrator role can manage the Automator
 configuration
 
@@ -2015,10 +2026,6 @@ Copy
     My Vault> automator setup 888888888888
     My Vault> automator init 888888888888
     My Vault> automator enable 888888888888 
-
-For more information about the Keeper Automator for SSO device approvals, see
-the [Automator Service](https://docs.keeper.io/sso-connect-cloud/device-
-approvals/automator) documentation.
 
 ###
 
@@ -2366,36 +2373,6 @@ Last updated 4 months ago
 
 Was this helpful?
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 or `ei`
 
 or `eu`
@@ -2408,21 +2385,41 @@ or `en`
 
 or `ed`
 
+`--add-alias` <EMAIL> Add an alias, in the form of an email address, to a
+user. The alias added will become the "primary" email for the user. Applying
+the command to an existing alias will set it as primary. Note that this
+command is only permitted on .
+
+Example restricting the "Engineering" role to accessimport records.
+
 `--invite-email` <FILE_NAME> Sets invite email template from file. Saves
 current template if file does not exist. dash (-) use stdout. See  section
 below.
 
+Custom Emails can also be formatted using markdown syntax, for more
+information please refer to this .
+
 To invite new users to an enterprise see the
 
-[Common configuration steps](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands/scim-push-configuration#common-for-
-all-sources)
+An Automator is a program running at a customer site that can perform some
+Keeper administrative actions such as performing device approvals or team
+approvals. More information about the Keeper Automator service is .
 
-[Google Workspace](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands/scim-push-configuration#google-workspace)
+For more information about the Keeper Automator for SSO device approvals, see
+the  documentation.
 
-[Active Directory](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands/scim-push-configuration#active-directory-configuration)
+[reserved domains](https://docs.keeper.io/enterprise-guide/domain-reservation)
+
+[ ](/en/keeperpam/secrets-manager/overview)
+
+[page](https://docs.keeper.io/enterprise-guide/user-and-team-
+provisioning/custom-invite-and-logo)
+
+[found at this link](https://docs.keeper.io/sso-connect-cloud/device-
+approvals/automator)
+
+[Automator Service](https://docs.keeper.io/sso-connect-cloud/device-
+approvals/automator)
 
 [Custom Emails](/en/keeperpam/commander-cli/command-reference/enterprise-
 management-commands#custom-emails)
@@ -2471,6 +2468,16 @@ commands#scim-command)
 
 [`audit-alert`](/en/keeperpam/commander-cli/command-reference/enterprise-
 management-commands#audit-alert-command)
+
+[Common configuration steps](/en/keeperpam/commander-cli/command-
+reference/enterprise-management-commands/scim-push-configuration#common-for-
+all-sources)
+
+[Google Workspace](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands/scim-push-configuration#google-workspace)
+
+[Active Directory](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands/scim-push-configuration#active-directory-configuration)
 
 [865BemailChicago.txt](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
 x-

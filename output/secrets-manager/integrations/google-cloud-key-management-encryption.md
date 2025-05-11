@@ -386,39 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Features
-  * Prerequisites
-  * Setup
-  * 1\. Install Module
-  * 2\. Configure Google CKM Connection
-  * 3\. Add GCP Key Vault Storage to Your Code
-  * Using GCP Key Vault Integration
-  * Additional Options
-  * Change Key
-  * Decrypt Config
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=ojDLP9XDQastxnsIT1I5&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Google Cloud Key Management Encryption
-
-Protect Secrets Manager connection details with Google Cloud Key Management
-
-[PreviousGoogle Cloud Secret Manager Sync](/en/keeperpam/secrets-
-manager/integrations/gcp-secret-manager)[NextHashicorp
-Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
-
-Last updated 23 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -448,6 +415,39 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Features
+  * Prerequisites
+  * Setup
+  * 1\. Install Module
+  * 2\. Configure Google CKM Connection
+  * 3\. Add GCP Key Vault Storage to Your Code
+  * Using GCP Key Vault Integration
+  * Additional Options
+  * Change Key
+  * Decrypt Config
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=ojDLP9XDQastxnsIT1I5&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Google Cloud Key Management Encryption
+
+Protect Secrets Manager connection details with Google Cloud Key Management
+
+[PreviousGoogle Cloud Secret Manager Sync](/en/keeperpam/secrets-
+manager/integrations/gcp-secret-manager)[NextHashicorp
+Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
+
+Last updated 24 days ago
+
+Was this helpful?
 
 Keeper Secrets Manager integrates with Google Cloud Key Management in order to
 provide encryption for Keeper Secrets Manager configuration files. With this
