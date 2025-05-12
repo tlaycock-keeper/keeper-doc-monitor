@@ -418,7 +418,7 @@ SSH agent
 manager/session-recording-and-playback)[NextIntegration with
 Git](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-git)
 
-Last updated 19 days ago
+Last updated 20 days ago
 
 Was this helpful?
 
@@ -785,17 +785,17 @@ The Keeper SSH Agent allows you to seamlessly authenticate into services like
 GitHub and securely sign Git commits. To help you get started, we've created a
 step-by-step guide on setting up  and  using Keeper.
 
-[authentication with GitHub](/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git#github-authentication)
-
-[signing Git commits](/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git#signing-commits)
-
 [guide below](/en/keeperpam/privileged-access-manager/ssh-agent#environment-
 setup)
 
 [Environment Setup](/en/keeperpam/privileged-access-manager/ssh-
 agent#environment-setup)
+
+[authentication with GitHub](/en/keeperpam/privileged-access-manager/ssh-
+agent/integration-with-git#github-authentication)
+
+[signing Git commits](/en/keeperpam/privileged-access-manager/ssh-
+agent/integration-with-git#signing-commits)
 
 Custom Field Example
 

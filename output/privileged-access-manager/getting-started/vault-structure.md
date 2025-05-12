@@ -661,10 +661,32 @@ utilizing PAM features is described in the below sections.
 
   *   *   *   *   * 
 
+Typical Folder Setup for KeeperPAM
+
+Linked Credentials in the Users folder
+
+Human users with access to a Shared Folder
+
+Applications and Machines with access to a Shared Folder
+
 The fastest way to understand the relationship between records, folders,
 applications and configurations is using the . This wizard instantly creates a
 sandbox environment where you can work with the different resources and vault
 records.
+
+Secrets Manager Applications
+
+Devices
+
+Keeper Gateway
+
+PAM Configuration
+
+Creating a PAM Resource
+
+PAM User linked to PAM Resource
+
+PAM User settings
 
 [Accessing the KeeperPAM Console and Vault](/en/keeperpam/privileged-access-
 manager/setup-steps)
@@ -698,40 +720,6 @@ resources/pam-user)
 browser-isolation)
 
 [Discovery](/en/keeperpam/privileged-access-manager/discovery)
-
-[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
-[PAM Database ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database)
-
-[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-directory)
-
-[PAM Remote Browser ](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-remote-browser)
-
-Typical Folder Setup for KeeperPAM
-
-Linked Credentials in the Users folder
-
-Human users with access to a Shared Folder
-
-Applications and Machines with access to a Shared Folder
-
-Secrets Manager Applications
-
-Devices
-
-Keeper Gateway
-
-PAM Configuration
-
-Creating a PAM Resource
-
-PAM User linked to PAM Resource
-
-PAM User settings
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -784,4 +772,16 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCIJ4xtf2T
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuUwDOjhl0r67wyzFe4wc%252FScreenshot%25202024-12-26%2520at%25201.53.33%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D62dfded2-1db2-4075-9fa9-8c5a5f95bc67&width=768&dpr=4&quality=100&sign=e69a750d&sv=2)
+
+[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
+
+[PAM Database ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database)
+
+[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-directory)
+
+[PAM Remote Browser ](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-remote-browser)
 

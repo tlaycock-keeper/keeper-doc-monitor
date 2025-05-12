@@ -386,37 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * What are Session Recordings?
-  * Supported Connection Protocols 
-  * Remote Browser Isolation (RBI)
-  * Enforcement Policies
-  * Activating Session Recording
-  * Connections - Session Playback
-  * Playback Graphical Session Recordings
-  * Playback Text Session Recordings (Typescript)
-  * Encryption of Session Recordings
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=m19rR4xhfT5odwSgVjsZ&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# Session Recording & Playback
-
-Graphical and Text Based Session Recordings
-
-[PreviousBrowser Autofill](/en/keeperpam/privileged-access-manager/remote-
-browser-isolation/setting-up-rbi/browser-autofill)[NextSSH
-Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -447,14 +416,43 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * What are Session Recordings?
+  * Supported Connection Protocols 
+  * Remote Browser Isolation (RBI)
+  * Enforcement Policies
+  * Activating Session Recording
+  * Connections - Session Playback
+  * Playback Graphical Session Recordings
+  * Playback Text Session Recordings (Typescript)
+  * Encryption of Session Recordings
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=m19rR4xhfT5odwSgVjsZ&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Session Recording & Playback
+
+Graphical and Text Based Session Recordings
+
+[PreviousBrowser Autofill](/en/keeperpam/privileged-access-manager/remote-
+browser-isolation/setting-up-rbi/browser-autofill)[NextSSH
+Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
+
+Last updated 4 days ago
+
+Was this helpful?
+
 ##
 
 What are Session Recordings?
 
 **Keeper Session Recordings** capture and store activity from sessions
-launched through [**Keeper Connections**](/en/keeperpam/privileged-access-
-manager/connections) or [**Remote Browser Isolation
-(RBI)**](/en/keeperpam/privileged-access-manager/remote-browser-isolation).
+launched through  or .
 
 These recordings can be **graphical** , **text-based** , or both, depending on
 the session configuration.
@@ -518,10 +516,6 @@ For RBI connections, Graphical Session Recordings are available.
 
 Enforcement Policies
 
-Allowing users to view session recordings is managed through [PAM Enforcement
-Policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-
-policies). The following enforcement policies need to be turned on:
-
 ####
 
 **For Connections:**
@@ -556,10 +550,6 @@ Can view RBI session recordings
 
 Allow users to view RBI Session Recordings
 
-For more information on PAM enforcement policies, visit this
-[page](/en/keeperpam/privileged-access-manager/getting-started/enforcement-
-policies).
-
 ##
 
 Activating Session Recording
@@ -578,12 +568,6 @@ Manager tab, ensure that policies to configure settings is enabled at minimum.
 ###
 
 PAM Configuration
-
-To enable session recordings, the [PAM
-Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration) needs to permit graphical and text session recording. Go to
-Secrets Manager > PAM Configurations and edit the configuration associated
-with your resources.
 
 3
 
@@ -660,14 +644,13 @@ Copy
 
 **Linux**
 
-Typescript recordings can be replayed using **scriptreplay**. For example, to
-replay a typescript called “`NAME`”, you can run:
+Typescript recordings can be replayed using **scriptreplay** :
 
 Copy
 
     
     
-    scriptreplay NAME.timing NAME
+    scriptreplay timing.tm typescript.tys
 
 ###
 
@@ -684,6 +667,29 @@ Keeper record can view session recordings. When a recording is accessed, the
 encrypted data is downloaded from the Keeper Cloud and decrypted locally in
 the user's vault for playback. Each session is encrypted with a unique record
 key, ensuring least privilege access.
+
+Allowing users to view session recordings is managed through . The following
+enforcement policies need to be turned on:
+
+For more information on PAM enforcement policies, visit this .
+
+To enable session recordings, the  needs to permit graphical and text session
+recording. Go to Secrets Manager > PAM Configurations and edit the
+configuration associated with your resources.
+
+[PAM Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-
+started/enforcement-policies)
+
+[page](/en/keeperpam/privileged-access-manager/getting-started/enforcement-
+policies)
+
+[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)
+
+[**Keeper Connections**](/en/keeperpam/privileged-access-manager/connections)
+
+[**Remote Browser Isolation (RBI)**](/en/keeperpam/privileged-access-
+manager/remote-browser-isolation)
 
 Enforcement Policies to configure session recording
 

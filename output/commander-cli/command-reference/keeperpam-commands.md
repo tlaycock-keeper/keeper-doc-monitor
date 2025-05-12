@@ -444,7 +444,7 @@ Connections and Tunneling
 reference/sharing-commands)[NextConnection Commands](/en/keeperpam/commander-
 cli/command-reference/connection-commands)
 
-Last updated 19 days ago
+Last updated 2 days ago
 
 Was this helpful?
 
@@ -653,6 +653,198 @@ Copy
                             UID or path for the PAMUser record to configure the admin credential on the PAM Resource as the Admin when rotating
       --enable, -e          Enable rotation
       --disable, -d         Disable rotation
+
+####
+
+Example - Set the rotation schedule using JSON
+
+The `--schedulejson`or `-sj` params are used to set the schedule via JSON.
+
+Rotate the PAM User record every month, on the 1st, at 4:00AM my time.
+
+Copy
+
+    
+    
+    pam rotation edit -r XXXX -sj '{"type": "MONTHLY_BY_DAY", "monthDay": 1, "time": "04:00", "tz": "America/Chicago"}'
+
+Rotate the PAM User record every week on a Saturday, at 10:00PM my time.
+
+Copy
+
+    
+    
+    pam rotation edit -r XXXX -sj '{"type": "WEEKLY", "weekday": "SATURDAY", "time": "22:00", "tz": "America/New_York"}'code
+
+The following are the valid schedule types.
+
+**DAILY**
+
+**The job is triggered every day.**
+
+  * `type` \- DAILY
+
+  * `time` \- A 24 hours formatted time when the jobs should be triggered.
+
+  *   * `intervalCount` \- Optional; The number of days between triggers. Allows ability to skip days.
+
+####
+
+WEEKLY
+
+The job is triggered every week.
+
+  * `type` \- WEEKLY
+
+  * `weekday` \- Week day name. Must be the full name, all in uppercase.
+
+    * SUNDAY
+
+    * MONDAY
+
+    * TUESDAY
+
+    * WEDNESDAY
+
+    * THURSDAY
+
+    * FRIDAY
+
+    * SATURDAY
+
+  * `time` \- A 24 hours formatted time when the jobs should be triggered.
+
+  *   * `intervalCount` \- Optional; If set to a value greater than 1, `weekday` will be ignored. The job will be triggers the multiple times per week starting on Sunday. The day will be based on the value of `intervalCount` .
+
+####
+
+MONTHLY_BY_DAY
+
+The job is triggered every month on a specific month day.
+
+  * `type` \- MONTHLY_BY_DAY
+
+  * `monthDay` \- Day of the month. Starts at 1 and goes to max number of days per month. Remeber that 29 can be a leap year day.
+
+  * `time` \- A 24 hours formatted time when the jobs should be triggered.
+
+  *   * `intervalCount` \- Optional; If set to a value greater than 1, the job will trigger on the `monthDay` and will re-trigger every `intervalCount` days.
+
+####
+
+MONTHLY_BY_WEEKDAY
+
+The job is triggered every month on a specific week day and time.
+
+  * `type` \- MONTHLY_BY_WEEKDAY
+
+  * `weekday` \- Week day name. Must be the full name, in all uppercase.
+
+    * SUNDAY
+
+    * MONDAY
+
+    * TUESDAY
+
+    * WEDNESDAY
+
+    * THURSDAY
+
+    * FRIDAY
+
+    * SATURDAY
+
+  * `occurrence` \- Which week to trigger. If fifth week, use `LAST`.
+
+    * FIRST
+
+    * SECOND
+
+    * THIRD
+
+    * FOURTH
+
+    * LAST
+
+  * `time` \- A 24 hours formatted time when the jobs should be triggered.
+
+  *   * `intervalCount` \- Optional; If set, and set to value other than 1, the trigger will start on the `weekday` and then trigger every `intervalCount` weeks.
+
+####
+
+YEARLY
+
+The job is triggered yearly on a specific month, day and time.
+
+  * `type` \- YEARLY
+
+  * `month` \- Month name. Must be the full month name, in all uppercase.
+
+    * JANUARY
+
+    * FEBURARY
+
+    * MARCH
+
+    * APRIL
+
+    * MAY
+
+    * JUNE
+
+    * JULY
+
+    * AUGUST
+
+    * SEPTEMBER
+
+    * OCTOBER
+
+    * NOVEMBER
+
+    * DECEMBER
+
+  * `monthDay` \- Day of the month. Starts at 1 and goes to max number of days per month. Remeber that 29 can be a leap year day.
+
+  * `time` \- A 24 hours formatted time when the jobs should be triggered.
+
+  *   * `intervalCount` \- Optional; If set, and set to value other than 1, every `intervalCount` year will be triggered.
+
+####
+
+Example - Set the password complexity for the PAM User
+
+The `--complexity` or `-x` params are used to set the password complexity.
+
+Set the password complexity to create a 20 character password with a minimum
+of 1 uppercase letter, 4 lowercase letters, 2 digits, and 2 symbols from the
+symbol set `.=+-` .
+
+Copy
+
+    
+    
+    pam rotation edit -r XXXX -x 20,1,4,2,2,.=+-
+
+The value is a comma separated value (CSV) style value with the following
+parts:
+
+  1. Overall password length
+
+  2. Minimum number of uppercase letters.
+
+  3. Minimum number of lowercase letters.
+
+  4. Minimum number of digits.
+
+  5. Minimum number of symbols.
+
+  6. Special set. After last comma, just type the special characters you would like. You are limited to symbols in the following set. If left blank, this symbol set will be used.
+
+Copy
+
+         
+         !@#$%^?();',.=+[]<>{}-_/\\*&:"`~|
 
 ####
 
@@ -1138,6 +1330,16 @@ about the Keeper Gateway .
 **Detail:** View, create, edit and remove Keeper PAM Configurations. To learn
 more about PAM Configurations .
 
+`tz` \- You local  time zone. (i.e., America/Chicago)
+
+`tz` \- You local  time zone. (i.e., America/Chicago)
+
+`tz` \- You local  time zone. (i.e., America/Chicago)
+
+`tz` \- You local  time zone. (i.e., America/Chicago)
+
+`tz` \- You local  time zone. (i.e., America/Chicago)
+
 [Password Rotation](/en/keeperpam/secrets-manager/password-rotation)
 
 [Discovery](/en/keeperpam/privileged-access-manager/discovery)
@@ -1146,4 +1348,14 @@ more about PAM Configurations .
 
 [click here](/en/keeperpam/privileged-access-manager/getting-started/pam-
 configuration)
+
+[IANA](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+
+[IANA](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+
+[IANA](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+
+[IANA](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+
+[IANA](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
 

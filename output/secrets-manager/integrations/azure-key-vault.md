@@ -447,7 +447,7 @@ Sync secrets from the Keeper Vault with Azure Key Vault
 manager/integrations/azure-devops-plugin)[NextAzure Key Vault
 Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
 
-Last updated 26 days ago
+Last updated 27 days ago
 
 Was this helpful?
 
@@ -665,11 +665,11 @@ directory/develop/app-objects-and-service-principals)
 [Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
 notation)
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
 [`sync` command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/sync-command)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)

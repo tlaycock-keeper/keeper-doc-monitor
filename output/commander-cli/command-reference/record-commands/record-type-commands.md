@@ -695,12 +695,12 @@ see  for a list of all standard record types
 [Creating Record Types](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types)
 
-[edit](/en/keeperpam/commander-cli/command-reference/record-commands#edit-
-command-record-types)
-
 [here](/en/keeperpam/commander-cli/command-reference/record-commands/default-
 record-types#field-types)
 
 [record types documentation](/en/keeperpam/commander-cli/command-
 reference/record-commands/default-record-types#standard-record-types)
+
+[edit](/en/keeperpam/commander-cli/command-reference/record-commands#edit-
+command-record-types)
 

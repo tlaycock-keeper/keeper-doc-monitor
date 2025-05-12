@@ -508,7 +508,11 @@ For organizations with high volumes of elevation requests:
 
   * **Delegation** : Configure multiple approvers across different teams or regions
 
-  * **Auto-Approval Rules** : Set up [policies](/en/keeperpam/endpoint-privilege-manager/policies) to automatically approve routine requests
+  * 
+
+**Auto-Approval Rules** : Set up  to automatically approve routine requests
+
+[policies](/en/keeperpam/endpoint-privilege-manager/policies)
 
 Endpoint**** Privilege Manager Requests Dashboard
 

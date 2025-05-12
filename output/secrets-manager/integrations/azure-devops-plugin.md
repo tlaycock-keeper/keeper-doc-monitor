@@ -418,33 +418,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Features
-  * Prerequisites
-  * Installation
-  * Install the Keeper Secrets Manager Extension
-  * Access Secrets From Azure Pipelines
-  * Create a Keeper Secrets Manager Task
-  * Keeper Secret Queries
-  * Example Usage
-  * Get Secrets From Keeper
-  * Use Secrets in Multiple Jobs
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-MkdGn1N1lF_5f78svDz&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Azure DevOps Extension
-
-Keeper Secrets Manager integration into Azure DevOps for dynamic secrets
-retrieval
-
-[PreviousAWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-
-kms)[NextAzure Key Vault Sync](/en/keeperpam/secrets-
-manager/integrations/azure-key-vault)
 
 Last updated 9 months ago
 
@@ -499,20 +476,6 @@ Create a Keeper Secrets Manager Task
 
 Keeper Secrets Manager tasks look like this:
 
-Copy
-
-    
-    
-    - task: ksmazpipelinetask@1
-      inputs:
-        keepersecretconfig: $(secret_config)
-        secrets: |
-          6ya_fdc6XTsZ7i4x9Jcodg/field/password > var:var_password
-          6ya_fdc6XTsZ7i4x9Jcodg/field/password > out:out_password
-          6ya_fdc6XTsZ7i4x9Jcodg/field/password > out_password2
-          6ya_fdc6XTsZ7i4x9Jcodg/file/cert.pem > file:/tmp/mycert.pem
-    
-
 In this example, `6ya_fdc6XTsZ7i4x9Jcodg` is the Record UID. In order to add a
 task, you can create a task using a Task Form, or add it manually.
 
@@ -539,6 +502,139 @@ To add a task manually to the pipeline configuration, follow this syntax:
 
 SyntaxExample
 
+###
+
+Keeper Secret Queries
+
+Queries for secrets in the Keeper Vault use the following syntax:
+
+####
+
+Get a Standard Field Value
+
+Syntax
+
+Example
+
+####
+
+Get a Custom Field Value
+
+Syntax
+
+Example
+
+####
+
+Get a Two-Factor Code
+
+Syntax
+
+`[UID]/field/oneTimeCode > [VARIABLE NAME]`
+
+Example
+
+####
+
+Get a File
+
+Syntax
+
+Example
+
+####
+
+####
+
+Variable Types
+
+When saving a secret from the Keeper vault as a variable on your Pipeline,
+there are a few options for how to set those variables, depending on your
+needs.
+
+**OUT**
+
+`out` (default) sets the secret to a variable which is accessible in any jobs
+in the pipeline. If you do not define a variable type, `out` will be used by
+default.
+
+**VAR**
+
+`var` sets the secret to a local variable, usable within the same pipeline
+job.
+
+**FILE**
+
+`file` sets the contents to a file. Usually used to access certificates and
+other files from the Keeper Vault.
+
+**ENVIRONMENT VARIABLE**
+
+`env` set the secret as an environment variable which the build machine can
+access.
+
+To do this, you first need to set the secret to a pipeline variable, then set
+it as an environment variable in the bash task.
+
+##
+
+Example Usage
+
+###
+
+Get Secrets From Keeper
+
+This example pipeline sets secrets from the Keeper Vault to variables and
+echoes them. Note that echoed passwords are masked.
+
+###
+
+Use Secrets in Multiple Jobs
+
+This example gets passwords and files from Keeper, and utilizes those
+passwords and files in another job.
+
+For a complete list of Keeper Secrets Manager features see the
+
+Keeper Secrets Manager access (See the  for more details)
+
+A Keeper  with secrets shared to it
+
+See the  for instructions on creating an Application
+
+An initialized Keeper
+
+Download from the  or search for "Keeper Secrets Manager"
+
+In order to access secrets from the Keeper Vault, add a task to your Azure
+Pipelines YAML configuration file. Then query your records for the desired
+fields. Secret queries use  and have the following syntax `KeeperNotation >
+destination` where the destination location is defined by its prefix `var:`,
+`out:` or `file:` see the examples below.
+
+A
+
+One or more  (See query syntax below)
+
+While it is possible to simply copy a Keeper Secrets Manager configuration
+into the pipeline, we recommend keeping the Secrets Manager configuration in
+an Azure Key Vault that is accessible to your Azure Pipeline. See  to learn
+more about Azure Key Vault.
+
+Copy
+
+    
+    
+    - task: ksmazpipelinetask@1
+      inputs:
+        keepersecretconfig: $(secret_config)
+        secrets: |
+          6ya_fdc6XTsZ7i4x9Jcodg/field/password > var:var_password
+          6ya_fdc6XTsZ7i4x9Jcodg/field/password > out:out_password
+          6ya_fdc6XTsZ7i4x9Jcodg/field/password > out_password2
+          6ya_fdc6XTsZ7i4x9Jcodg/file/cert.pem > file:/tmp/mycert.pem
+    
+
 Copy
 
     
@@ -561,25 +657,11 @@ Copy
           6ya_fdc6XTsZ7i7x9Jcodg/field/login > LOGIN
           6ya_fdc6XTsZ7i7x9Jcodg/file/build-vsix.sh > file:/tmp/build-vsix.sh
 
-###
-
-Keeper Secret Queries
-
-Queries for secrets in the Keeper Vault use the following syntax:
-
-####
-
-Get a Standard Field Value
-
-Syntax
-
 Copy
 
     
     
     [UID]/field/[FIELD NAME] > [VARIABLE NAME]
-
-Example
 
 Copy
 
@@ -587,19 +669,11 @@ Copy
     
     6ya_fdc6XTsZ7i7x9Jcodg/field/password > my_password
 
-####
-
-Get a Custom Field Value
-
-Syntax
-
 Copy
 
     
     
     [UID]/custom_field/[FIELD NAME] > [VARIABLE NAME]
-
-Example
 
 Copy
 
@@ -607,27 +681,11 @@ Copy
     
     6ya_fdc6XTsZ7i7x9Jcodg/custom_field/notes > MyNotes
 
-####
-
-Get a Two-Factor Code
-
-Syntax
-
-`[UID]/field/oneTimeCode > [VARIABLE NAME]`
-
-Example
-
 Copy
 
     
     
     6ya_fdc6XTsZ7i7x9Jcodg/field/oneTimeCode > MyOneTimeCode
-
-####
-
-Get a File
-
-Syntax
 
 Copy
 
@@ -635,29 +693,11 @@ Copy
     
     [UID]/file/[SECRET FILE NAME] > file:[OUTPUT FILE NAME]
 
-Example
-
 Copy
 
     
     
     6ya_fdc6XTsZ7i7x9Jcodg/file/cert.pem > file:secret-cert.pem
-
-####
-
-####
-
-Variable Types
-
-When saving a secret from the Keeper vault as a variable on your Pipeline,
-there are a few options for how to set those variables, depending on your
-needs.
-
-**OUT**
-
-`out` (default) sets the secret to a variable which is accessible in any jobs
-in the pipeline. If you do not define a variable type, `out` will be used by
-default.
 
 Copy
 
@@ -666,35 +706,17 @@ Copy
     6ya_fdc6XTsZ7i7x9Jcodg/field/password > pazzword
     6ya_fdc6XTsZ7i7x9Jcodg/field/password > out:my_password
 
-**VAR**
-
-`var` sets the secret to a local variable, usable within the same pipeline
-job.
-
 Copy
 
     
     
     6ya_fdc6XTsZ7i7x9Jcodg/field/password > var:my_password
 
-**FILE**
-
-`file` sets the contents to a file. Usually used to access certificates and
-other files from the Keeper Vault.
-
 Copy
 
     
     
     6ya_fdc6XTsZ7i7x9Jcodg/file/build-vsix.sh > file:/tmp/build-vsix.sh
-
-**ENVIRONMENT VARIABLE**
-
-`env` set the secret as an environment variable which the build machine can
-access.
-
-To do this, you first need to set the secret to a pipeline variable, then set
-it as an environment variable in the bash task.
 
 Copy
 
@@ -711,17 +733,6 @@ Copy
             echo "Using the mapped env variable: $MY_MAPPED_ENV_VAR_PASSWORD"
         env:
             $MY_MAPPED_ENV_VAR_PASSWORD: $(var_password)
-
-##
-
-Example Usage
-
-###
-
-Get Secrets From Keeper
-
-This example pipeline sets secrets from the Keeper Vault to variables and
-echoes them. Note that echoed passwords are masked.
 
 Copy
 
@@ -756,13 +767,6 @@ Copy
       env:
         MY_MAPPED_ENV_VAR_PASSWORD: $(var_password) # the recommended way to map to an env variable
       name: display_secret_values
-
-###
-
-Use Secrets in Multiple Jobs
-
-This example gets passwords and files from Keeper, and utilizes those
-passwords and files in another job.
 
 Copy
 
@@ -838,32 +842,28 @@ Copy
         - bash: |
             echo "password retrieved from job 'ksmSecrets', step 'pwdFromKsmSecrets', out variable 'setKsmSecretsStep.out_password':$(pwdFromKsmSecrets)"
 
-For a complete list of Keeper Secrets Manager features see the
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
 
-Keeper Secrets Manager access (See the  for more details)
+# Azure DevOps Extension
 
-A Keeper  with secrets shared to it
+Keeper Secrets Manager integration into Azure DevOps for dynamic secrets
+retrieval
 
-See the  for instructions on creating an Application
+[PreviousAWS KMS Encryption](/en/keeperpam/secrets-manager/integrations/aws-
+kms)[NextAzure Key Vault Sync](/en/keeperpam/secrets-
+manager/integrations/azure-key-vault)
 
-An initialized Keeper
-
-Download from the  or search for "Keeper Secrets Manager"
-
-In order to access secrets from the Keeper Vault, add a task to your Azure
-Pipelines YAML configuration file. Then query your records for the desired
-fields. Secret queries use  and have the following syntax `KeeperNotation >
-destination` where the destination location is defined by its prefix `var:`,
-`out:` or `file:` see the examples below.
-
-A
-
-One or more  (See query syntax below)
-
-While it is possible to simply copy a Keeper Secrets Manager configuration
-into the pipeline, we recommend keeping the Secrets Manager configuration in
-an Azure Key Vault that is accessible to your Azure Pipeline. See  to learn
-more about Azure Key Vault.
+  * Features
+  * Prerequisites
+  * Installation
+  * Install the Keeper Secrets Manager Extension
+  * Access Secrets From Azure Pipelines
+  * Create a Keeper Secrets Manager Task
+  * Keeper Secret Queries
+  * Example Usage
+  * Get Secrets From Keeper
+  * Use Secrets in Multiple Jobs
 
 [Overview ](/en/keeperpam/secrets-manager/overview)
 
@@ -884,14 +884,14 @@ manager/about/secrets-manager-configuration)
 [Microsoft's documentation](https://docs.microsoft.com/en-us/azure/key-
 vault/general/overview)
 
+[Secret queries](/en/keeperpam/secrets-manager/integrations/azure-devops-
+plugin#keeper-secret-queries)
+
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
-
-[Secret queries](/en/keeperpam/secrets-manager/integrations/azure-devops-
-plugin#keeper-secret-queries)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -899,19 +899,19 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVvqLlBdgC
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHuh9CWdwe0laT7gQ3SBe%252Fchoose%2520org.png%3Falt%3Dmedia%26token%3Dbf61e101-20a2-4229-9dde-11f3532cc616&width=768&dpr=4&quality=100&sign=697f4bb&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSIUOkIjVALVzmtOYLF18%252Ffind%2520task.png%3Falt%3Dmedia%26token%3D75fa26c0-83a9-48e8-b9c0-ebe8de0eb48c&width=768&dpr=4&quality=100&sign=7d4de9b&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdGjPJbTbFffW4s1-f%252F-MkdGtOxU6O3kUM7r2jV%252Fazuredevops-
-plugin-
-header.jpg%3Falt%3Dmedia%26token%3D151310a1-d682-4973-ab09-b9815c8cf9cb&width=768&dpr=4&quality=100&sign=8989003a&sv=2)
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHuh9CWdwe0laT7gQ3SBe%252Fchoose%2520org.png%3Falt%3Dmedia%26token%3Dbf61e101-20a2-4229-9dde-11f3532cc616&width=768&dpr=4&quality=100&sign=697f4bb&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWIoTCReEZPjRwPEB64hS%252Ffill%2520task.png%3Falt%3Dmedia%26token%3D2ae6fb1d-ed5d-4f84-8a7a-a512f1b0b24e&width=768&dpr=4&quality=100&sign=c2593a17&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSIUOkIjVALVzmtOYLF18%252Ffind%2520task.png%3Falt%3Dmedia%26token%3D75fa26c0-83a9-48e8-b9c0-ebe8de0eb48c&width=768&dpr=4&quality=100&sign=7d4de9b&sv=2)
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdGjPJbTbFffW4s1-f%252F-MkdGtOxU6O3kUM7r2jV%252Fazuredevops-
+plugin-
+header.jpg%3Falt%3Dmedia%26token%3D151310a1-d682-4973-ab09-b9815c8cf9cb&width=768&dpr=4&quality=100&sign=8989003a&sv=2)
 

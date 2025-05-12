@@ -880,17 +880,21 @@ pipe/src/master/README.md)
 
 [Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-notation)
 
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
+[configuration documentation](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration#creating-a-secrets-manager-configuration)
+
+[configuration documentation](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration#creating-a-secrets-manager-configuration)
+
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
 
-[configuration documentation](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration#creating-a-secrets-manager-configuration)
-
-[configuration documentation](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration#creating-a-secrets-manager-configuration)
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXA3sVeoGMCD2PZeB4Rij%252FScreen%2520Shot%25202021-10-19%2520at%25202.39.08%2520PM.png%3Falt%3Dmedia%26token%3Dd3b61789-85a8-4403-ac85-db999a44ab4f&width=768&dpr=4&quality=100&sign=f0f0a0f4&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -899,10 +903,6 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHxpNKxYvE
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FECT7H9rIz94bdhYKiPHI%252FScreen%2520Shot%25202021-11-01%2520at%252010.49.46%2520AM.png%3Falt%3Dmedia%26token%3D56b2b0b9-5274-45eb-95e6-d807642e387a&width=768&dpr=4&quality=100&sign=8ac9a1bc&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXA3sVeoGMCD2PZeB4Rij%252FScreen%2520Shot%25202021-10-19%2520at%25202.39.08%2520PM.png%3Falt%3Dmedia%26token%3Dd3b61789-85a8-4403-ac85-db999a44ab4f&width=768&dpr=4&quality=100&sign=f0f0a0f4&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

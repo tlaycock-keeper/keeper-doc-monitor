@@ -1768,6 +1768,9 @@ go>[](https://github.com/Keeper-Security/secrets-manager-go)
 [Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
 notation)
 
+[UploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/golang-
+sdk#upload-a-file)
+
 [Record Types](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
 
@@ -1776,7 +1779,4 @@ commands/default-record-types#field-types)
 
 [documentation](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
-
-[UploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/golang-
-sdk#upload-a-file)
 

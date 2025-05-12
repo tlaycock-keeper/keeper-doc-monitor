@@ -610,13 +610,13 @@ Default value is "white-black"
 
 Session Recordings - Telnet Protocol
 
-Telnet Session Recordings
-
 [Getting Started page](/en/keeperpam/privileged-access-
 manager/connections/getting-started)
 
 [Example: Linux Machine](/en/keeperpam/privileged-access-manager/getting-
 started/pam-resources/pam-machine/example-linux-machine)
+
+Telnet Session Recordings
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

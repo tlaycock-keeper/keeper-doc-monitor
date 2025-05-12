@@ -715,18 +715,28 @@ plugin)
 [snipper editor](https://www.jenkins.io/doc/book/pipeline/getting-
 started/#snippet-generator)
 
-[Secrets Manager Commands](/en/keeperpam/commander-cli/command-
-reference/secrets-manager-commands#overview)
-
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
 
+[Secrets Manager Commands](/en/keeperpam/commander-cli/command-
+reference/secrets-manager-commands#overview)
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FO7LBJZqzcT7BYuCLXlRn%252FScreen%2520Shot%25202022-09-06%2520at%25201.57.53%2520PM.png%3Falt%3Dmedia%26token%3D3aa99bdb-80a2-48e2-8bc2-cbe3e6de73f5&width=768&dpr=4&quality=100&sign=a388209d&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkEQ5PBLojjvL1P8vo5%252F-MkEQP2hhyxKSU0SVFoL%252Fjenkins-
+plugin-
+header.jpg%3Falt%3Dmedia%26token%3D7f925417-5968-47b7-a39c-883ef7fbc555&width=768&dpr=4&quality=100&sign=95b5cb1c&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fa4n3YHq8mVkQcwSTgJeu%252FScreen%2520Shot%25202021-11-17%2520at%25209.45.40%2520AM.png%3Falt%3Dmedia%26token%3D8e3d298f-6b83-492a-8998-bebdebfe535f&width=768&dpr=4&quality=100&sign=517cdd1c&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -739,16 +749,6 @@ files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MlMTSx8rstZWwFAz2Sd%252F-MlMTsJ
 adc7-4a49-8109-097f63e77c76&width=768&dpr=4&quality=100&sign=6befa0ca&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fa4n3YHq8mVkQcwSTgJeu%252FScreen%2520Shot%25202021-11-17%2520at%25209.45.40%2520AM.png%3Falt%3Dmedia%26token%3D8e3d298f-6b83-492a-8998-bebdebfe535f&width=768&dpr=4&quality=100&sign=517cdd1c&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MlMTSx8rstZWwFAz2Sd%252F-MlMUFCp1u926PgPpk3y%252Fbuilder.png%3Falt%3Dmedia%26token%3D55b1adb4-f916-44f5-99b8-69944fd683ac&width=768&dpr=4&quality=100&sign=dcc673f&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkEQ5PBLojjvL1P8vo5%252F-MkEQP2hhyxKSU0SVFoL%252Fjenkins-
-plugin-
-header.jpg%3Falt%3Dmedia%26token%3D7f925417-5968-47b7-a39c-883ef7fbc555&width=768&dpr=4&quality=100&sign=95b5cb1c&sv=2)
 

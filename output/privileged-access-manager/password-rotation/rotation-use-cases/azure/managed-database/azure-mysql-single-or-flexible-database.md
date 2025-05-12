@@ -446,7 +446,7 @@ rotation/rotation-use-cases/azure/managed-database/azure-sql)[NextAzure
 MariaDB Database](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/azure/managed-database/azure-mariadb-database)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

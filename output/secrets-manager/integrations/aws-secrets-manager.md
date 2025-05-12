@@ -447,7 +447,7 @@ Sync secrets from the Keeper Vault with AWS Secrets Manager
 manager/integrations/aws-cli-credential-process)[NextAWS KMS
 Encryption](/en/keeperpam/secrets-manager/integrations/aws-kms)
 
-Last updated 26 days ago
+Last updated 27 days ago
 
 Was this helpful?
 
@@ -669,11 +669,11 @@ notation)
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
 [`sync` command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/sync-command)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 AWS Credentials Record Type Definition
 

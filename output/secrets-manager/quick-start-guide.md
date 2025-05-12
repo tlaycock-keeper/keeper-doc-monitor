@@ -927,14 +927,6 @@ x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9wMASX6k3ZiGRVx7m2oE%252FScreenshot%25202024-12-26%2520at%252012.04.24%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Df85ce4fe-7a5c-4e63-a78d-fc39f4d5d9d6&width=768&dpr=4&quality=100&sign=b67431fe&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYt6M4J0MAswGiBeuWLld%252Fadd%2520role.png%3Falt%3Dmedia%26token%3D3a2ef309-44a5-4220-8df9-6772a9a6002d&width=768&dpr=4&quality=100&sign=48844f32&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNhfADxuH7QR80MwgKsYO%252FScreen%2520Shot%25202022-01-07%2520at%25201.28.07%2520PM.png%3Falt%3Dmedia%26token%3D0c8a4bb6-ce0f-4a76-8823-2d8612865bcd&width=768&dpr=4&quality=100&sign=e4337abe&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MgS3wjqgG-LoAx-
 Tl9-%252F-MgS40qGR4FFUBKmA81F%252Fsm-
 overview.png%3Falt%3Dmedia%26token%3D0100630b-af34-462a-874f-1dbf183fb726&width=768&dpr=4&quality=100&sign=3d912f07&sv=2)
@@ -945,11 +937,19 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJbmBKgn2P
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNhfADxuH7QR80MwgKsYO%252FScreen%2520Shot%25202022-01-07%2520at%25201.28.07%2520PM.png%3Falt%3Dmedia%26token%3D0c8a4bb6-ce0f-4a76-8823-2d8612865bcd&width=768&dpr=4&quality=100&sign=e4337abe&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYt6M4J0MAswGiBeuWLld%252Fadd%2520role.png%3Falt%3Dmedia%26token%3D3a2ef309-44a5-4220-8df9-6772a9a6002d&width=768&dpr=4&quality=100&sign=48844f32&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIMcLUmOJownzvKCPMQzf%252Fcreate%2520new%2520shared%2520folder%2520highlighted.png%3Falt%3Dmedia%26token%3D5fcee136-2d21-41a9-a428-b70645ce6013&width=768&dpr=4&quality=100&sign=31b3e1f7&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fv2HrzBxHe3F1tME28i9X%252Fshared%2520folder%2520form.png%3Falt%3Dmedia%26token%3D1972fbed-e232-4af0-aba3-4e7628cfe09e&width=768&dpr=4&quality=100&sign=3fcc504e&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlezLERMM1S1hgmJHBQlF%252Fcreate%2520new%2520record%2520highlighted.png%3Falt%3Dmedia%26token%3D118f7956-8cef-4494-9d87-c087a9f31b4f&width=768&dpr=4&quality=100&sign=981df805&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -966,7 +966,7 @@ da8ff914fb9d&width=768&dpr=4&quality=100&sign=7dd41e6b&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlezLERMM1S1hgmJHBQlF%252Fcreate%2520new%2520record%2520highlighted.png%3Falt%3Dmedia%26token%3D118f7956-8cef-4494-9d87-c087a9f31b4f&width=768&dpr=4&quality=100&sign=981df805&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fv2HrzBxHe3F1tME28i9X%252Fshared%2520folder%2520form.png%3Falt%3Dmedia%26token%3D1972fbed-e232-4af0-aba3-4e7628cfe09e&width=768&dpr=4&quality=100&sign=3fcc504e&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -974,9 +974,9 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfS3uOY84O
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSmttTfmZfAzSmQ7BbE83%252Fapp%2520form%2520filled.png%3Falt%3Dmedia%26token%3De48cf671-35e1-4ed7-9754-9c211c162d38&width=768&dpr=4&quality=100&sign=8e39d8fd&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPgDwQiCrwyCzynqZniPp%252Fdevice%2520form%2520one%2520time%2520token.png%3Falt%3Dmedia%26token%3D8e7db73c-643b-42c2-a6bc-82dc64b629b1&width=768&dpr=4&quality=100&sign=6d2301e3&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPgDwQiCrwyCzynqZniPp%252Fdevice%2520form%2520one%2520time%2520token.png%3Falt%3Dmedia%26token%3D8e7db73c-643b-42c2-a6bc-82dc64b629b1&width=768&dpr=4&quality=100&sign=6d2301e3&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSmttTfmZfAzSmQ7BbE83%252Fapp%2520form%2520filled.png%3Falt%3Dmedia%26token%3De48cf671-35e1-4ed7-9754-9c211c162d38&width=768&dpr=4&quality=100&sign=8e39d8fd&sv=2)
 

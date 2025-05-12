@@ -440,7 +440,7 @@ Creating a Keeper Gateway
 started/gateways)[NextDocker Installation](/en/keeperpam/privileged-access-
 manager/getting-started/gateways/docker-installation)
 
-Last updated 19 days ago
+Last updated 20 days ago
 
 Was this helpful?
 
@@ -573,6 +573,8 @@ Copy
     
     pam gateway new -n "My Demo Gateway" -a "My Infrastructure" -c b64
 
+Create a KSM Application
+
 To initialize a Gateway for  or  native install methods, the one-time token
 method is used:
 
@@ -591,19 +593,17 @@ started/gateways/windows-installation)
 [Docker Installation](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/docker-installation)
 
-Creating a Gateway
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGfrKhg3EYK2mAtfmsq1x%252FScreenshot%25202023-05-01%2520at%252011.37.56%2520AM.jpg%3Falt%3Dmedia%26token%3D21236241-e0f2-4b54-b7dd-9f3cea8ab53c&width=768&dpr=4&quality=100&sign=2355f5&sv=2)
 
-Create a KSM Application
+Creating a Gateway
 
 Windows Gateway
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FrperdEulgHMqKZAh4itn%252FScreenshot%25202025-04-19%2520at%25207.46.13%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dfcadc16c-003b-46f2-b6b7-8666d91c27a2&width=768&dpr=4&quality=100&sign=24efc03d&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGfrKhg3EYK2mAtfmsq1x%252FScreenshot%25202023-05-01%2520at%252011.37.56%2520AM.jpg%3Falt%3Dmedia%26token%3D21236241-e0f2-4b54-b7dd-9f3cea8ab53c&width=768&dpr=4&quality=100&sign=2355f5&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
