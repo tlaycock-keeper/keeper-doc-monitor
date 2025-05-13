@@ -386,6 +386,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * About
@@ -417,50 +447,19 @@ Sync secrets from the Keeper Vault with GCP Secret Manager
 plugin)[NextGoogle Cloud Key Management Encryption](/en/keeperpam/secrets-
 manager/integrations/google-cloud-key-management-encryption)
 
-Last updated 27 days ago
+Last updated 28 days ago
 
 Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
 
 ##
 
 About
 
-The Keeper Secrets Manager CLI tool [`sync` command](/en/keeperpam/secrets-
-manager/secrets-manager-command-line-interface/sync-command) allows you to
-push secrets from the Keeper Vault to a target **GCP Secret Manager** project,
-overwriting the existing values in the target location. This allows the Keeper
-Vault to be the single source of truth for any services or scripts in GCP that
-utilize GCP Secret Manager.
+The Keeper Secrets Manager CLI tool  allows you to push secrets from the
+Keeper Vault to a target **GCP Secret Manager** project, overwriting the
+existing values in the target location. This allows the Keeper Vault to be the
+single source of truth for any services or scripts in GCP that utilize GCP
+Secret Manager.
 
 ##
 
@@ -474,17 +473,11 @@ Features
 
 Prerequisites
 
-  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
-
-    * Secrets Manager add-on enabled for your Keeper subscription
+  *     * Secrets Manager add-on enabled for your Keeper subscription
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
-
-    * See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-an-application) for instructions on creating an Application
-
-  * A GCP account with GCP Secret Manager, and optionally the ability to create IAM service account credentials
+  *     *   * A GCP account with GCP Secret Manager, and optionally the ability to create IAM service account credentials
 
 ##
 
@@ -504,29 +497,13 @@ following command:
 
 `ksm profile init <TOKEN>`
 
-For information on creating multiple profiles and other options, see the
-[profile documentation](/en/keeperpam/secrets-manager/secrets-manager-command-
-line-interface/profile-command)
-
 ###
 
 2\. Set GCP Permissions
 
-To use the KSM sync to GCP, GCP [Secrets
-Manager](https://console.cloud.google.com/security/secret-manager) requires
-standard IAM security credentials with `Secret Manager Admin` role enabled for
-the project or on the service account principal to sync.
-
 Secret Manager Access control with IAM:
 
-<https://cloud.google.com/secret-manager/docs/access-
-control>[](https://cloud.google.com/secret-manager/docs/access-control)
-
 GCP instructions for creating Service Account Credentials _(optional)_ :
-
-<https://developers.google.com/workspace/guides/create-credentials#service-
-account>[](https://developers.google.com/workspace/guides/create-
-credentials#service-account)
 
 ###
 
@@ -540,12 +517,6 @@ Record fields with the following labels are required on the credentials
 record:
 
 `"Google Cloud Project ID" "Google Application Credentials"` \- _optional_
-
-`"Google Application Credentials" `field is optional and needed only when
-Service Account Credentials are used. By default, GCP clients use [Application
-Default Credentials](https://cloud.google.com/docs/authentication/provide-
-credentials-adc) which can be created using [gcloud
-CLI](https://cloud.google.com/sdk/docs/install)
 
 Copy
 
@@ -619,9 +590,6 @@ specific record values. The notation follows the general format of:
 `UID/`[`field|custom_field]/fieldname `for example:
 `ae3d[...]d22e/field/password`
 
-See the [Keeper Notation documentation](/en/keeperpam/secrets-
-manager/about/keeper-notation) for more information
-
 Note that full record UIDs are not given in these examples
 
 Full Mapping Example: `--map "MySQL_PWD" "jd3[...]i-fd/field/password"`
@@ -684,11 +652,58 @@ Copy
     
     ksm sync --type gcp --credentials [UID] -m [...] -m [...]
 
+Keeper Secrets Manager access (See the  for more details)
+
+A Keeper  with secrets shared to it
+
+See the  for instructions on creating an Application
+
+For information on creating multiple profiles and other options, see the
+
+To use the KSM sync to GCP, GCP  requires standard IAM security credentials
+with `Secret Manager Admin` role enabled for the project or on the service
+account principal to sync.
+
+`"Google Application Credentials" `field is optional and needed only when
+Service Account Credentials are used. By default, GCP clients use  which can
+be created using
+
 GCP Credentials Record Type Definition
 
 GCP Credentials Record Create
 
 GCP Credentials fields as custom fields
+
+See the  for more information
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+[profile documentation](/en/keeperpam/secrets-manager/secrets-manager-command-
+line-interface/profile-command)
+
+[Secrets Manager](https://console.cloud.google.com/security/secret-manager)
+
+<https://cloud.google.com/secret-manager/docs/access-
+control>[](https://cloud.google.com/secret-manager/docs/access-control)
+
+<https://developers.google.com/workspace/guides/create-credentials#service-
+account>[](https://developers.google.com/workspace/guides/create-
+credentials#service-account)
+
+[Application Default
+Credentials](https://cloud.google.com/docs/authentication/provide-credentials-
+adc)
+
+[gcloud CLI](https://cloud.google.com/sdk/docs/install)
+
+[Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
+notation)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
+[`sync` command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/sync-command)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -716,4 +731,7 @@ x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDv0DO19I0jKIRbiGG8lc%252Fksm-
 sync-
 gcp3.png%3Falt%3Dmedia%26token%3D2521f2f0-6658-4043-a8d9-5b5f2402b1d2&width=768&dpr=4&quality=100&sign=c4c4edd6&sv=2)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 

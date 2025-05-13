@@ -400,6 +400,13 @@ wUqwOAoUY&only=yes&limit=100)
 
 Use the Keeper Commander CLI for hundreds of Vault and Admin Console commands
 
+The Keeper Secrets Manage CLI is focused specifically on retrieving and
+updating secrets in the vault.
+
+For all other commands, please refer to the Keeper Commander CLI:
+
+[Commander CLI](/en/keeperpam/commander-cli/overview)
+
 [PreviousVersion Command](/en/keeperpam/secrets-manager/secrets-manager-
 command-line-interface/version-command)[NextDocker
 Container](/en/keeperpam/secrets-manager/secrets-manager-command-line-
@@ -438,11 +445,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-The Keeper Secrets Manage CLI is focused specifically on retrieving and
-updating secrets in the vault.
-
-For all other commands, please refer to the Keeper Commander CLI:
-
-[Commander CLI](/en/keeperpam/commander-cli/overview)
 

@@ -694,13 +694,17 @@ service/latest/)
 utility/blob/main/Keeper-Security/linux-keyring-
 utility/blob/main/pkg/dbus_secrets/dbus_secrets.go#L41)
 
-[![Logo](https://github.com/fluidicon.png)GitHub - Keeper-Security/linux-
-keyring-utility: A utility for natively interacting with the Linux
-KeyringGitHub](https://github.com/Keeper-Security/linux-keyring-utility)
+[GitHub - Keeper-Security/linux-keyring-utility: A utility for natively
+interacting with the Linux KeyringGitHub](https://github.com/Keeper-
+Security/linux-keyring-utility)
 
-[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/linux-
-keyring-utilityGitHub](https://github.com/Keeper-Security/linux-keyring-
+[Releases · Keeper-Security/linux-keyring-
+utilityGitHub](https://github.com/Keeper-Security/linux-keyring-
 utility/releases)
+
+![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
+
+![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

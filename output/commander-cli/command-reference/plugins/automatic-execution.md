@@ -466,8 +466,6 @@ the plugin programmed into the record. To locate the Record UID, simply view
 it on the commander interactive shell or view it on the Keeper Web Vault and
 Desktop App (as seen below).
 
-Locate Record UID
-
 For more information on running Commander commands with a configuration file,
 see the
 
@@ -477,10 +475,12 @@ rotation)
 [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
 commands)
 
+[documentation](/en/keeperpam/commander-cli/commander-installation-
+setup/logging-in#running-commands-from-the-configuration-file)
+
+Locate Record UID
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPqATiBJd0Hm2VlwX6CIw%252FScreen%2520Shot%25202022-12-19%2520at%25203.20.51%2520PM.jpg%3Falt%3Dmedia%26token%3D8123a39a-aa45-402d-8b94-1e4899d1e16d&width=768&dpr=4&quality=100&sign=49cd02a6&sv=2)
-
-[documentation](/en/keeperpam/commander-cli/commander-installation-
-setup/logging-in#running-commands-from-the-configuration-file)
 

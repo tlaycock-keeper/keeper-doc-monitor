@@ -437,7 +437,7 @@ Your first steps with Keeper Commander
 Installation on Windows](/en/keeperpam/commander-cli/commander-installation-
 setup/installation-on-windows)
 
-Last updated 6 months ago
+Last updated 7 months ago
 
 Was this helpful?
 

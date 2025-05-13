@@ -409,7 +409,7 @@ How to install Keeper Commander CLI on Microsoft Windows
 installation-setup)[NextCLI Installation on macOS](/en/keeperpam/commander-
 cli/commander-installation-setup/installation-on-mac)
 
-Last updated 6 months ago
+Last updated 7 months ago
 
 Was this helpful?
 
@@ -535,13 +535,13 @@ Copy
     
     keeper shell
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fcjx050celvWUrje5NIeH%252Fkeeper-
-commander_BBNOqSVfEO.png%3Falt%3Dmedia%26token%3De1587fe4-a3db-4d4b-b951-53e0472c85c2&width=768&dpr=4&quality=100&sign=960d2d6c&sv=2)
-
 Note, for your first time logging into a new device or a new location, you may
 have to perform device authorization through email or other 2FA methods.
 
 Keeper Commander – Installing and Loggin In
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fcjx050celvWUrje5NIeH%252Fkeeper-
+commander_BBNOqSVfEO.png%3Falt%3Dmedia%26token%3De1587fe4-a3db-4d4b-b951-53e0472c85c2&width=768&dpr=4&quality=100&sign=960d2d6c&sv=2)
 

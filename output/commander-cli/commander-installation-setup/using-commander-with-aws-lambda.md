@@ -1015,18 +1015,24 @@ installation-setup)
 [ config file documentation ](/en/keeperpam/commander-cli/commander-
 installation-setup/logging-in#commander-configuration-file)
 
-[![Logo](https://docs.aws.amazon.com/assets/images/favicon.ico)Invoking Lambda
-functions - AWS LambdaAWS
+[Invoking Lambda functions - AWS LambdaAWS
 Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
 
-[![Logo](https://a0.awsstatic.com/libra-css/images/site/touch-icon-
-ipad-144-smile.png)Send email using Lambda and Amazon SESAmazon Web Services,
+![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fdocs.aws.amazon.com%2Fassets%2Fimages%2Ffavicon.ico&width=20&dpr=4&quality=100&sign=ecb3c813&sv=2)
+
+[Send email using Lambda and Amazon SESAmazon Web Services,
 Inc.](https://aws.amazon.com/premiumsupport/knowledge-center/lambda-send-
 email-ses/)
 
-[![Logo](https://github.com/fluidicon.png)Commander/examples at master ·
-Keeper-Security/CommanderGitHub](https://github.com/Keeper-
+[Commander/examples at master · Keeper-
+Security/CommanderGitHub](https://github.com/Keeper-
 Security/Commander/tree/master/examples)
+
+![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
+
+![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fa0.awsstatic.com%2Flibra-
+css%2Fimages%2Fsite%2Ftouch-icon-
+ipad-144-smile.png&width=20&dpr=4&quality=100&sign=f36475b9&sv=2)
 
 [2KBpackage_layer_content.sh](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
 x-

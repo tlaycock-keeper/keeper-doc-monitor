@@ -386,6 +386,32 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * RDP command
+  * Examples
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=byXtjW0v3Ebk7vdN4uae&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Connection Commands](/en/keeperpam/commander-cli/command-reference/connection-commands)
+
+# RDP
+
+Using Keeper Commander with RDP connections
+
+[PreviousSSH Agent](/en/keeperpam/commander-cli/command-reference/connection-
+commands/ssh-agent)[NextConnect Command](/en/keeperpam/commander-cli/command-
+reference/connection-commands/connection-to-hosts)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -415,32 +441,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * RDP command
-  * Examples
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=byXtjW0v3Ebk7vdN4uae&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Connection Commands](/en/keeperpam/commander-cli/command-reference/connection-commands)
-
-# RDP
-
-Using Keeper Commander with RDP connections
-
-[PreviousSSH Agent](/en/keeperpam/commander-cli/command-reference/connection-
-commands/ssh-agent)[NextConnect Command](/en/keeperpam/commander-cli/command-
-reference/connection-commands/connection-to-hosts)
-
-Last updated 3 months ago
-
-Was this helpful?
 
 For a full remote connection management tool that supports privileged
 sessions, session recording and other advanced capabilities over zero-trust

@@ -567,20 +567,6 @@ tab on the left side.
 
 If necessary, Install Docker per the .
 
-[Keeper Vault](https://keepersecurity.com/vault)
-
-[Docker installation instructions](https://docs.docker.com/engine/install/)
-
-<https://keepersecurity.com/console>[](https://keepersecurity.com/console)
-
-<https://keepersecurity.eu/console>[](https://keepersecurity.eu/console)
-
-<https://keepersecurity.com.au/console>[](https://keepersecurity.com.au/console)
-
-<https://keepersecurity.jp/console>[](https://keepersecurity.jp/console)
-
-<https://govcloud.keepersecurity.us/console>[](https://govcloud.keepersecurity.us/console)
-
 Create a Gateway
 
 Creating the New Project and Gateway
@@ -602,6 +588,10 @@ Connecting to a Linux machine with SSH
 Connecting to a virtual Linux machine over VNC
 
 Connecting to a web application
+
+[Keeper Vault](https://keepersecurity.com/vault)
+
+[Docker installation instructions](https://docs.docker.com/engine/install/)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -651,4 +641,14 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXX5zsf7Xq
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4aXx1lFW6oFNEnzo67os%252FScreenshot%25202024-12-25%2520at%252011.14.46%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dfdd64afc-c538-48ba-8a75-a0fc9c49c5a9&width=768&dpr=4&quality=100&sign=b7612240&sv=2)
+
+<https://keepersecurity.com/console>[](https://keepersecurity.com/console)
+
+<https://keepersecurity.eu/console>[](https://keepersecurity.eu/console)
+
+<https://keepersecurity.com.au/console>[](https://keepersecurity.com.au/console)
+
+<https://keepersecurity.jp/console>[](https://keepersecurity.jp/console)
+
+<https://govcloud.keepersecurity.us/console>[](https://govcloud.keepersecurity.us/console)
 

@@ -631,10 +631,6 @@ following:
 
 Session Recordings - RDP Protocol
 
-Field
-
-Definition
-
 For additional troubleshooting, refer to the Gateway logs which will contain
 additional information. The location of the Gateway logs depends on the .
 
@@ -656,6 +652,16 @@ started/pam-resources/pam-machine)
 [PAM User Record](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
 
+For this protocol, graphical data, including timing information, is recorded.
+For more details on the recordings and how to access them, see the  docs.
+
+[Session Recording & Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
+
+Field
+
+Definition
+
 PAM Configuration
 
 This is the PAM Configuration that contains the details of your target
@@ -668,12 +674,6 @@ perform administrative operations on it.
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
-
-For this protocol, graphical data, including timing information, is recorded.
-For more details on the recordings and how to access them, see the  docs.
-
-[Session Recording & Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
 
 RDP Session Recordings
 

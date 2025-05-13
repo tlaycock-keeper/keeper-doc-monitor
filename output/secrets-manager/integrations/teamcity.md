@@ -679,6 +679,9 @@ manager/secrets-manager/about/keeper-notation)
 
 [Command Line](https://www.jetbrains.com/help/teamcity/command-line.html)
 
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
 [_Prerequisites_](/en/keeperpam/secrets-
 manager/integrations/teamcity#prerequisites)
 
@@ -712,7 +715,4 @@ x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCyNRIxtU170myoD55VNF%252Fteamcity-
 ksm-
 parameter.png%3Falt%3Dmedia%26token%3D5a523ab3-59d1-49a7-95e4-20dee93bc31f&width=768&dpr=4&quality=100&sign=b860834f&sv=2)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 

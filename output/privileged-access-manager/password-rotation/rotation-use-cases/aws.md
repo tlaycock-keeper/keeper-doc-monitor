@@ -418,10 +418,29 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * KeeperPAM Record Types
+  * Prerequisites
+  * Setup Steps 
+  * Use Cases
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=AZHlgB3x9RU83c63iX2v&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+
+# AWS
+
+Password Rotation in the AWS Environment
+
+[PreviousAzure App Secret Rotation](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/azure/azure-app-secret-
+rotation)[NextIAM User Password](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/aws/iam-user)
 
 Last updated 4 months ago
 
@@ -445,6 +464,22 @@ with the AWS system and perform rotation. If instance roles are not defined,
 the AWS Access Key ID and Secret Key can be stored in the PAM Configuration
 record to authenticate and perform rotations.
 
+AWS Managed Resource
+
+Corresponding Record Type
+
+EC2
+
+PAM Machine
+
+RDS
+
+PAM Database
+
+Directory Service
+
+PAM Directory
+
 ##
 
 Prerequisites
@@ -454,6 +489,22 @@ Keeper Gateway needs to have the necessary AWS role policies with the
 permissions for performing the password rotation.
 
   * 
+
+Field
+
+Description
+
+**Access Key ID**
+
+This is the Access Key ID from the desired Access Key found in the IAM User
+account Set this field to `USE_INSTANCE_ROLE` if the gateway is deployed to an
+EC2 Instance that supports instance roles
+
+**Secret Access Key**
+
+This is the Secret Access Key from the desired Access Key found in the IAM
+User account Set this field to `USE_INSTANCE_ROLE` if the gateway is deployed
+to an EC2 Instance that supports instance roles
 
 The Keeper Gateway will always first attempt to use the EC2 instance role to
 authenticate and perform the rotation. If this fails or is not available on
@@ -494,10 +545,6 @@ defined in the , , and **** record types. The following table shows the
 supported AWS managed resources with KeeperPAM and their corresponding PAM
 Record Type:
 
-AWS Managed Resource
-
-Corresponding Record Type
-
 Configurations for directory users or IAM users are defined in the **** record
 type.
 
@@ -505,53 +552,6 @@ See the  for more information.
 
 If you are not using EC2 instance role policies, the following values are
 needed in the :
-
-Field
-
-Description
-
-EC2
-
-PAM Machine
-
-RDS
-
-PAM Database
-
-Directory Service
-
-PAM Directory
-
-**Access Key ID**
-
-This is the Access Key ID from the desired Access Key found in the IAM User
-account Set this field to `USE_INSTANCE_ROLE` if the gateway is deployed to an
-EC2 Instance that supports instance roles
-
-**Secret Access Key**
-
-This is the Secret Access Key from the desired Access Key found in the IAM
-User account Set this field to `USE_INSTANCE_ROLE` if the gateway is deployed
-to an EC2 Instance that supports instance roles
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-
-# AWS
-
-Password Rotation in the AWS Environment
-
-[PreviousAzure App Secret Rotation](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-
-rotation)[NextIAM User Password](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/aws/iam-user)
-
-  * Overview
-  * KeeperPAM Record Types
-  * Prerequisites
-  * Setup Steps 
-  * Use Cases
 
 [PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-machine)

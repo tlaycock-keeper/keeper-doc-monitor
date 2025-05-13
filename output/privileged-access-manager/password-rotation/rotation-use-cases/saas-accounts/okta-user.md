@@ -732,13 +732,7 @@ Copy
 
 Follow the steps in the official  to generate an API token.
 
-Okta API Details Record
-
 Attach the below  or  script that will perform the password rotation.
-
-PAM Script
-
-Password Rotation Settings
 
 [Okta documentation](https://developer.okta.com/docs/guides/create-an-api-
 token/main/)
@@ -748,6 +742,12 @@ use-cases/saas-accounts/okta-user#python-script)
 
 [Bash](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
 cases/saas-accounts/okta-user#bash-script-version)
+
+Okta API Details Record
+
+PAM Script
+
+Password Rotation Settings
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

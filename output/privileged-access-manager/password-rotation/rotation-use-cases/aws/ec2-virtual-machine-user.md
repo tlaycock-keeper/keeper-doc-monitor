@@ -677,34 +677,6 @@ overview#enabling-rotation-on-the-admin-console)
 [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 overview#enabling-rotation-on-the-admin-console)
 
-PAM Machine record
-
-PAM Configuration for AWS
-
-Linux PAM User record
-
-Password Rotation Settings on AWS Instance User
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F0Y2y9l0gTfNdoE3FA4YV%252FEC2%2520Virtual%2520Machine%2520User.jpg%3Falt%3Dmedia%26token%3D78a5e94c-1223-4849-9b63-90bf78b952a2&width=768&dpr=4&quality=100&sign=8b34b487&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHV1tsZY8VyyuTJV23jAa%252FScreenshot%25202025-02-08%2520at%252012.08.32%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D511de53e-9868-4185-915c-8b61f6282e5d&width=768&dpr=4&quality=100&sign=ba6d9f0b&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F73xYUEcQoMEflLLtu70W%252FScreenshot%25202025-02-08%2520at%252012.10.29%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3De2ff5fdd-2db2-4474-9e33-569a8923bd02&width=768&dpr=4&quality=100&sign=f1e3a71f&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuDPuGpWsVg5WOw5WEFwe%252FScreenshot%25202025-02-08%2520at%25204.08.08%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D3e1c1d5b-e559-4cef-9095-12215dfa40fb&width=768&dpr=4&quality=100&sign=64aee45b&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2OqJSlntStvwCncNSgyK%252FScreenshot%25202023-05-11%2520at%252010.56.07%2520AM.jpg%3Falt%3Dmedia%26token%3Df96c49e7-b923-46d1-97c0-4554e80adf32&width=768&dpr=4&quality=100&sign=349b3e89&sv=2)
-
 ##
 
 SSH Key Rotation Notes
@@ -715,14 +687,6 @@ key. The first time that a rotation occurs, the old public key is left intact
 in order to prevent system lockout. The second public key added to the file
 contains a comment that serves as an identifier for future rotations. For
 example:
-
-Copy
-
-    
-    
-    [ec2-user@host .ssh]$ cat authorized_keys
-    ssh-rsa AAAAB3NzaC1...11xZrfOxYXG6RV84mCZ3uldesEyV/ghLxAb7Fcz awsdemo
-    ssh-rsa AAAAB3NzaC...un+frl9Q== keeper-security-ec2user
 
 By default, Keeper will **not** remove other keys from the
 `.ssh/authorized_keys` file since some providers will place in their own keys
@@ -761,4 +725,40 @@ exists. If the value is FALSE, the private key will not be rotated.
 
 For Linux user rotations, password-encrypted PEM files are not currently
 supported.
+
+Copy
+
+    
+    
+    [ec2-user@host .ssh]$ cat authorized_keys
+    ssh-rsa AAAAB3NzaC1...11xZrfOxYXG6RV84mCZ3uldesEyV/ghLxAb7Fcz awsdemo
+    ssh-rsa AAAAB3NzaC...un+frl9Q== keeper-security-ec2user
+
+PAM Machine record
+
+PAM Configuration for AWS
+
+Linux PAM User record
+
+Password Rotation Settings on AWS Instance User
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F0Y2y9l0gTfNdoE3FA4YV%252FEC2%2520Virtual%2520Machine%2520User.jpg%3Falt%3Dmedia%26token%3D78a5e94c-1223-4849-9b63-90bf78b952a2&width=768&dpr=4&quality=100&sign=8b34b487&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHV1tsZY8VyyuTJV23jAa%252FScreenshot%25202025-02-08%2520at%252012.08.32%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D511de53e-9868-4185-915c-8b61f6282e5d&width=768&dpr=4&quality=100&sign=ba6d9f0b&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F73xYUEcQoMEflLLtu70W%252FScreenshot%25202025-02-08%2520at%252012.10.29%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3De2ff5fdd-2db2-4474-9e33-569a8923bd02&width=768&dpr=4&quality=100&sign=f1e3a71f&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuDPuGpWsVg5WOw5WEFwe%252FScreenshot%25202025-02-08%2520at%25204.08.08%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D3e1c1d5b-e559-4cef-9095-12215dfa40fb&width=768&dpr=4&quality=100&sign=64aee45b&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2OqJSlntStvwCncNSgyK%252FScreenshot%25202023-05-11%2520at%252010.56.07%2520AM.jpg%3Falt%3Dmedia%26token%3Df96c49e7-b923-46d1-97c0-4554e80adf32&width=768&dpr=4&quality=100&sign=349b3e89&sv=2)
 

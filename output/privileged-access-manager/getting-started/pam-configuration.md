@@ -445,7 +445,7 @@ configuration-with-custom-fields)[NextAWS Environment
 Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-
 configuration/aws-environment-setup)
 
-Last updated 2 days ago
+Last updated 3 days ago
 
 Was this helpful?
 

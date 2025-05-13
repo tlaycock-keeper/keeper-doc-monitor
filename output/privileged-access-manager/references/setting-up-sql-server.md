@@ -386,52 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=Zk7ZDLqiN9gpzApd7Oxe&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
-
-# Setting up SQL Server
-
-Allowing the Keeper Gateway to access Microsoft SQL Server on port 1433
-
-Below is the PowerShell commands to open up port 1433 on the SQL Server
-instance.
-
-Copy
-
-    
-    
-    # Define the SQL Server port (default is 1433 for TCP)
-    $SQLPort = 1433
-    
-    # Create a firewall rule for inbound SQL Server traffic (TCP)
-    New-NetFirewallRule -DisplayName "Allow SQL Server TCP" `
-        -Direction Inbound -Protocol TCP -LocalPort $SQLPort `
-        -Action Allow
-    
-    # Allow SQL Server traffic on UDP port 1434 for SQL Browser service (optional)
-    New-NetFirewallRule -DisplayName "Allow SQL Server UDP" `
-        -Direction Inbound -Protocol UDP -LocalPort 1434 `
-        -Action Allow
-    
-    # Verify the rules were created
-    Get-NetFirewallRule -DisplayName "Allow SQL Server*"
-
-[PreviousSetting up WinRM](/en/keeperpam/privileged-access-
-manager/references/setting-up-winrm)[NextDatabase Import and
-Export](/en/keeperpam/privileged-access-manager/references/database-import-
-and-export)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -461,4 +415,50 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=Zk7ZDLqiN9gpzApd7Oxe&only=yes&limit=100)
+
+Last updated 3 months ago
+
+Was this helpful?
+
+Below is the PowerShell commands to open up port 1433 on the SQL Server
+instance.
+
+Copy
+
+    
+    
+    # Define the SQL Server port (default is 1433 for TCP)
+    $SQLPort = 1433
+    
+    # Create a firewall rule for inbound SQL Server traffic (TCP)
+    New-NetFirewallRule -DisplayName "Allow SQL Server TCP" `
+        -Direction Inbound -Protocol TCP -LocalPort $SQLPort `
+        -Action Allow
+    
+    # Allow SQL Server traffic on UDP port 1434 for SQL Browser service (optional)
+    New-NetFirewallRule -DisplayName "Allow SQL Server UDP" `
+        -Direction Inbound -Protocol UDP -LocalPort 1434 `
+        -Action Allow
+    
+    # Verify the rules were created
+    Get-NetFirewallRule -DisplayName "Allow SQL Server*"
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
+
+# Setting up SQL Server
+
+Allowing the Keeper Gateway to access Microsoft SQL Server on port 1433
+
+[PreviousSetting up WinRM](/en/keeperpam/privileged-access-
+manager/references/setting-up-winrm)[NextDatabase Import and
+Export](/en/keeperpam/privileged-access-manager/references/database-import-
+and-export)
 

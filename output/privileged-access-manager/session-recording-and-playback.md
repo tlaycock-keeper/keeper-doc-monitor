@@ -418,30 +418,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * What are Session Recordings?
-  * Supported Connection Protocols 
-  * Remote Browser Isolation (RBI)
-  * Enforcement Policies
-  * Activating Session Recording
-  * Connections - Session Playback
-  * Playback Graphical Session Recordings
-  * Playback Text Session Recordings (Typescript)
-  * Encryption of Session Recordings
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=m19rR4xhfT5odwSgVjsZ&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# Session Recording & Playback
-
-Graphical and Text Based Session Recordings
-
-[PreviousBrowser Autofill](/en/keeperpam/privileged-access-manager/remote-
-browser-isolation/setting-up-rbi/browser-autofill)[NextSSH
-Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
 
 Last updated 4 days ago
 
@@ -470,42 +450,6 @@ the session configuration.
 The following table shows the available session recordings available for each
 connection protocol:
 
-Connection Protocol
-
-Available Session Recordings
-
-SSH
-
-Graphical and Text-Based Session Recordings
-
-RDP
-
-Graphical Session Recordings only
-
-MySQL
-
-Graphical and Text-Based Session Recordings
-
-PostgreSQL
-
-Graphical and Text-Based Session Recordings
-
-SQL Server
-
-Graphical and Text-Based Session Recordings
-
-Telnet
-
-Graphical and Text-Based Session Recordings
-
-VNC
-
-Graphical Session Recordings only
-
-Remote Browser Isolation
-
-Graphical Session Recordings only
-
 ###
 
 Remote Browser Isolation (RBI)
@@ -520,35 +464,9 @@ Enforcement Policies
 
 **For Connections:**
 
-Policy
-
-Definition
-
-Can configure connection settings
-
-Allow users to configure Connection and Session Recordings settings on PAM
-Machine, PAM Directory, PAM Database and PAM Configuration Record Types
-
-Can view session recordings
-
-Allow users to view Session Recordings
-
 ####
 
 **For Remote Browser Isolation**
-
-Policy
-
-Definition
-
-Can configure remote browsing
-
-Allow users to configure Remote Browser and Session Recordings settings on PAM
-Remote Browsing and Configuration Record Types
-
-Can view RBI session recordings
-
-Allow users to view RBI Session Recordings
 
 ##
 
@@ -634,23 +552,11 @@ systems:
 Recordings can be replayed using **script**. For example, to replay a
 typescript called “`NAME`”, you can run:
 
-Copy
-
-    
-    
-    script -p NAME
-
 ####
 
 **Linux**
 
 Typescript recordings can be replayed using **scriptreplay** :
-
-Copy
-
-    
-    
-    scriptreplay timing.tm typescript.tys
 
 ###
 
@@ -668,14 +574,108 @@ encrypted data is downloaded from the Keeper Cloud and decrypted locally in
 the user's vault for playback. Each session is encrypted with a unique record
 key, ensuring least privilege access.
 
+Connection Protocol
+
+Available Session Recordings
+
 Allowing users to view session recordings is managed through . The following
 enforcement policies need to be turned on:
+
+Policy
+
+Definition
+
+Policy
+
+Definition
 
 For more information on PAM enforcement policies, visit this .
 
 To enable session recordings, the  needs to permit graphical and text session
 recording. Go to Secrets Manager > PAM Configurations and edit the
 configuration associated with your resources.
+
+SSH
+
+Graphical and Text-Based Session Recordings
+
+RDP
+
+Graphical Session Recordings only
+
+MySQL
+
+Graphical and Text-Based Session Recordings
+
+PostgreSQL
+
+Graphical and Text-Based Session Recordings
+
+SQL Server
+
+Graphical and Text-Based Session Recordings
+
+Telnet
+
+Graphical and Text-Based Session Recordings
+
+VNC
+
+Graphical Session Recordings only
+
+Remote Browser Isolation
+
+Graphical Session Recordings only
+
+Can configure connection settings
+
+Allow users to configure Connection and Session Recordings settings on PAM
+Machine, PAM Directory, PAM Database and PAM Configuration Record Types
+
+Can view session recordings
+
+Allow users to view Session Recordings
+
+Can configure remote browsing
+
+Allow users to configure Remote Browser and Session Recordings settings on PAM
+Remote Browsing and Configuration Record Types
+
+Can view RBI session recordings
+
+Allow users to view RBI Session Recordings
+
+Copy
+
+    
+    
+    script -p NAME
+
+Copy
+
+    
+    
+    scriptreplay timing.tm typescript.tys
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Session Recording & Playback
+
+Graphical and Text Based Session Recordings
+
+[PreviousBrowser Autofill](/en/keeperpam/privileged-access-manager/remote-
+browser-isolation/setting-up-rbi/browser-autofill)[NextSSH
+Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
+
+  * What are Session Recordings?
+  * Supported Connection Protocols 
+  * Remote Browser Isolation (RBI)
+  * Enforcement Policies
+  * Activating Session Recording
+  * Connections - Session Playback
+  * Playback Graphical Session Recordings
+  * Playback Text Session Recordings (Typescript)
+  * Encryption of Session Recordings
 
 [PAM Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-
 started/enforcement-policies)

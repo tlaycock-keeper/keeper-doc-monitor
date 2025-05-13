@@ -418,30 +418,14 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Commands
-  * msp-info command
-  * msp-down command
-  * msp-add
-  * msp-remove
-  * msp-update
-  * msp-billing-report
-  * switch-to-mc command
-  * switch-to-msp command
-  * msp-convert-node command
-  * msp-copy-role command
-  * distributor commands
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-McBCZFxl6X_M643DsiL&only=yes&limit=100)
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+Last updated 3 months ago
 
-# MSP Management Commands
-
-Commands specific to Managed Service Provider (MSP) tenants
+Was this helpful?
 
 ##
 
@@ -461,34 +445,6 @@ To get help on a particular command, run:
 
 **MSP Commands**
 
-Command
-
-Explanation
-
-Display MSP details
-
-Refresh local MSP data from server
-
-Creates Managed Company
-
-Removes Managed Company
-
-Modify Managed Company licenses
-
-Generate MSP Billing Reports
-
-Generate MSP Legacy Report
-
-Switch context to run commands as a managed company
-
-Switch context to run commands as MSP
-
-Convert an enterprise node into a managed company
-
-Copy role enforcements from MSP to MCs
-
-Options for managed MSPs. Edit licenses and view msp and mc details.
-
 ###
 
 **msp-info command**
@@ -499,38 +455,9 @@ Options for managed MSPs. Edit licenses and view msp and mc details.
 
 **Examples:**
 
-Copy
-
-    
-    
-    msp-info
-
   1. Show MSP Information
 
 **Example Output:**
-
-Copy
-
-    
-    
-      MSP Plans and Licenses
-    -----------------------
-      #  Plan Id           Available Licenses    Total Licenses    Stash
-    ---  --------------  --------------------  ----------------  -------
-      1  business                           6                10       10
-      2  businessPlus                       8                10       10
-      3  enterprise                         2                10       10
-      4  enterprisePlus                     6                10       10
-    
-      #    ID  Name         Plan              Allocated    Active
-    ---  ----  -----------  --------------  -----------  --------
-      1  3861  Company 1     businessPlus              2         2
-      2  3862  Company 2     enterprise                0         0
-      3  3900  Company 3     business                  2         0
-      4  3877  Company 4     enterprisePlus            4         0
-      5  3863  Company 5     enterprise                8         0
-      6  3875  Company 6     business                  2         0
-    
 
 ###
 
@@ -541,12 +468,6 @@ msp-down command
 **Detail:** Refresh local MSP data from server
 
 **Examples:**
-
-Copy
-
-    
-    
-    msp-down
 
   1. Download current MSP data from the Keeper Cloud
 
@@ -571,12 +492,6 @@ Managed Company name.
 
 **Example** :
 
-Copy
-
-    
-    
-    msp-add --seats=10 --plan=enterprise "MC Name"
-
 ###
 
 msp-remove
@@ -590,13 +505,6 @@ msp-remove
 Managed Company name or ID
 
 **Example** :
-
-Copy
-
-    
-    
-    msp-remove 23456
-    msp-remove "MC Name"
 
 ###
 
@@ -653,13 +561,6 @@ Managed Company name or ID
 
 **Example:**
 
-Copy
-
-    
-    
-    msp-update mc2 --add-product business
-    msp-update --node 23613730193410 mc2
-
 ###
 
 msp-billing-report
@@ -697,12 +598,6 @@ note: see a list of managed company IDs with the `msp-info` command
 
 **Examples:**
 
-Copy
-
-    
-    
-    switch-to-mc 3987 
-
   1. Change context to managed company with ID 3987
 
 ###
@@ -715,12 +610,6 @@ switch-to-msp command
 company context
 
 **Examples:**
-
-Copy
-
-    
-    
-    switch-to-msp
 
   1. Change context to MSP
 
@@ -736,12 +625,6 @@ Remove SSO provisioning before converting an enterprise node into a managed
 company
 
 **Examples:**
-
-Copy
-
-    
-    
-    msp-convert-node <NODE ID or NAME>
 
   1. convert the given node into a managed company
 
@@ -762,12 +645,6 @@ msp-copy-role command
 `--role` <ROLE NAME> the role to copy
 
 **Examples** :
-
-Copy
-
-    
-    
-    msp-copy-role SmithCoMC --role="Desktop Users" 
 
 ###
 
@@ -808,13 +685,6 @@ distributor info
 
 **Examples:**
 
-Copy
-
-    
-    
-    distributor info
-    distributor info --mc-details --format csv --output msp-report.csv
-
   1. List manage MSPs
 
   2. Save a report of all managed MSPs and their managed companies to a file
@@ -838,12 +708,6 @@ distributor msp-info
 \--output [filename] if supplied, the output is saved to the given file
 
 Examples:
-
-Copy
-
-    
-    
-    distributor msp-info "Bob's msp"
 
   1. See information about MSP "Bob's MSP"
 
@@ -900,6 +764,109 @@ licenses
 
 **Examples:**
 
+  1. add the business product to the available offerings of "Bob's MSP"
+
+  2. Set the maximum file plan offering of "My MSP" and MSP #3456 to 1 Terabyte
+
+  3. Turn off the unlimited licenses for all managed MSPs
+
+MSP Commands require a  and MSP Admin privileges
+
+When a new managed company is created, Commander saves the new mc id as an
+environment variable `last_mc_id See the `` about using this variable`
+
+Copy
+
+    
+    
+    msp-info
+
+Copy
+
+    
+    
+      MSP Plans and Licenses
+    -----------------------
+      #  Plan Id           Available Licenses    Total Licenses    Stash
+    ---  --------------  --------------------  ----------------  -------
+      1  business                           6                10       10
+      2  businessPlus                       8                10       10
+      3  enterprise                         2                10       10
+      4  enterprisePlus                     6                10       10
+    
+      #    ID  Name         Plan              Allocated    Active
+    ---  ----  -----------  --------------  -----------  --------
+      1  3861  Company 1     businessPlus              2         2
+      2  3862  Company 2     enterprise                0         0
+      3  3900  Company 3     business                  2         0
+      4  3877  Company 4     enterprisePlus            4         0
+      5  3863  Company 5     enterprise                8         0
+      6  3875  Company 6     business                  2         0
+    
+
+Copy
+
+    
+    
+    msp-down
+
+Copy
+
+    
+    
+    msp-add --seats=10 --plan=enterprise "MC Name"
+
+Copy
+
+    
+    
+    msp-remove 23456
+    msp-remove "MC Name"
+
+Copy
+
+    
+    
+    msp-update mc2 --add-product business
+    msp-update --node 23613730193410 mc2
+
+Copy
+
+    
+    
+    switch-to-mc 3987 
+
+Copy
+
+    
+    
+    switch-to-msp
+
+Copy
+
+    
+    
+    msp-convert-node <NODE ID or NAME>
+
+Copy
+
+    
+    
+    msp-copy-role SmithCoMC --role="Desktop Users" 
+
+Copy
+
+    
+    
+    distributor info
+    distributor info --mc-details --format csv --output msp-report.csv
+
+Copy
+
+    
+    
+    distributor msp-info "Bob's msp"
+
 Copy
 
     
@@ -908,39 +875,72 @@ Copy
     distributor license "My MSP" 3456 --max-file-plan 1TB
     distributor license --allocate-unlimited=off *
 
-  1. add the business product to the available offerings of "Bob's MSP"
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
 
-  2. Set the maximum file plan offering of "My MSP" and MSP #3456 to 1 Terabyte
+# MSP Management Commands
 
-  3. Turn off the unlimited licenses for all managed MSPs
+Commands specific to Managed Service Provider (MSP) tenants
 
 [PreviousSecrets Manager Commands](/en/keeperpam/commander-cli/command-
 reference/secrets-manager-commands)[NextMiscellaneous
 Commands](/en/keeperpam/commander-cli/command-reference/misc-commands)
 
-Last updated 3 months ago
-
-Was this helpful?
-
-or
-
-or
-
-or
-
-or
-
-or
-
-MSP Commands require a  and MSP Admin privileges
-
-When a new managed company is created, Commander saves the new mc id as an
-environment variable `last_mc_id See the `` about using this variable`
+  * Commands
+  * msp-info command
+  * msp-down command
+  * msp-add
+  * msp-remove
+  * msp-update
+  * msp-billing-report
+  * switch-to-mc command
+  * switch-to-msp command
+  * msp-convert-node command
+  * msp-copy-role command
+  * distributor commands
 
 [MSP type Keeper Account](https://docs.keeper.io/enterprise-guide/keeper-msp)
 
 [`documentation below`](/en/keeperpam/commander-cli/command-reference/msp-
 management-commands#undefined)
+
+Command
+
+Explanation
+
+Display MSP details
+
+Refresh local MSP data from server
+
+Creates Managed Company
+
+Removes Managed Company
+
+Modify Managed Company licenses
+
+Generate MSP Billing Reports
+
+Generate MSP Legacy Report
+
+Switch context to run commands as a managed company
+
+Switch context to run commands as MSP
+
+Convert an enterprise node into a managed company
+
+Copy role enforcements from MSP to MCs
+
+Options for managed MSPs. Edit licenses and view msp and mc details.
+
+or
+
+or
+
+or
+
+or
+
+or
 
 [`msp-info`](/en/keeperpam/commander-cli/command-reference/msp-management-
 commands#msp-info-command)

@@ -637,8 +637,6 @@ The Microsoft SQL Database record is set up. The user with the ability to
 launch connections can now launch an interactive SQL connection or tunnel to
 the target database.
 
-SQL Server PAM Database Record
-
 **Required** Visit this  for more details
 
 See
@@ -649,17 +647,7 @@ See this  for SQL Server protocol settings We recommend specifying the
 User Accounts are configured on the PAM User record. Visit this  for more
 information.
 
-Administrative Credential Record
-
 Learn more about
-
-Sharing PAM Database Records
-
-Microsoft SQL Server Database
-
-Connection to a Microsoft SQL Database
-
-Interactive Session with Microsoft SQL Database
 
 [Installed and configured the Keeper Gateway](/en/keeperpam/privileged-access-
 manager/getting-started/gateways/one-time-access-token)
@@ -672,6 +660,28 @@ resources/pam-user)
 
 [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-
 started/sharing-and-access-control)
+
+[session recording](/en/keeperpam/privileged-access-manager/session-recording-
+and-playback)
+
+[section](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/mysql-connections)
+
+[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database/example-microsoft-sql-server-database#administrative-
+credential-record)
+
+SQL Server PAM Database Record
+
+Administrative Credential Record
+
+Sharing PAM Database Records
+
+Microsoft SQL Server Database
+
+Connection to a Microsoft SQL Database
+
+Interactive Session with Microsoft SQL Database
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -696,14 +706,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5Uybk2vAI
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F1fXvbQXycfFNtIbPlKRb%252FScreenshot%25202025-01-22%2520at%25202.38.05%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D760f04e2-64fa-41fc-8a08-41446a757327&width=768&dpr=4&quality=100&sign=6050b3db&sv=2)
-
-[session recording](/en/keeperpam/privileged-access-manager/session-recording-
-and-playback)
-
-[section](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/mysql-connections)
-
-[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database/example-microsoft-sql-server-database#administrative-
-credential-record)
 

@@ -740,8 +740,7 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fa4n3YHq8m
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkOBmofZ4fb5Gz02mFQ%252F-MkODWua0gGH7MFs-
-ze1%252FScreen%2520Shot%25202021-09-24%2520at%25202.13.24%2520PM.png%3Falt%3Dmedia%26token%3D036d3485-e1a0-464f-975e-c2e88fba0a17&width=768&dpr=4&quality=100&sign=79745923&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MlMTSx8rstZWwFAz2Sd%252F-MlMUFCp1u926PgPpk3y%252Fbuilder.png%3Falt%3Dmedia%26token%3D55b1adb4-f916-44f5-99b8-69944fd683ac&width=768&dpr=4&quality=100&sign=dcc673f&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -750,5 +749,6 @@ adc7-4a49-8109-097f63e77c76&width=768&dpr=4&quality=100&sign=6befa0ca&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MlMTSx8rstZWwFAz2Sd%252F-MlMUFCp1u926PgPpk3y%252Fbuilder.png%3Falt%3Dmedia%26token%3D55b1adb4-f916-44f5-99b8-69944fd683ac&width=768&dpr=4&quality=100&sign=dcc673f&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkOBmofZ4fb5Gz02mFQ%252F-MkODWua0gGH7MFs-
+ze1%252FScreen%2520Shot%25202021-09-24%2520at%25202.13.24%2520PM.png%3Falt%3Dmedia%26token%3D036d3485-e1a0-464f-975e-c2e88fba0a17&width=768&dpr=4&quality=100&sign=79745923&sv=2)
 

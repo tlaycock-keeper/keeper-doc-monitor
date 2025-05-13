@@ -386,36 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Features
-  * Prerequisites
-  * About
-  * Example: Provision MySQL network user account
-  * Example: Using KSM CLI Docker Image
-  * Example: Using KSM CLI Docker With Other Vendor Docker Images
-  * Contribute to the Docker Runtime Examples
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MfDrmy4gD8cfU2KpdVi&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Docker Runtime
-
-Retrieve secrets from Keeper Secrets Manager at Docker runtime
-
-[PreviousDocker Image](/en/keeperpam/secrets-manager/integrations/docker-
-image)[NextDocker Writer Image](/en/keeperpam/secrets-
-manager/integrations/docker-writer-image)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -446,14 +416,41 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Features
+  * Prerequisites
+  * About
+  * Example: Provision MySQL network user account
+  * Example: Using KSM CLI Docker Image
+  * Example: Using KSM CLI Docker With Other Vendor Docker Images
+  * Contribute to the Docker Runtime Examples
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MfDrmy4gD8cfU2KpdVi&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Docker Runtime
+
+Retrieve secrets from Keeper Secrets Manager at Docker runtime
+
+[PreviousDocker Image](/en/keeperpam/secrets-manager/integrations/docker-
+image)[NextDocker Writer Image](/en/keeperpam/secrets-
+manager/integrations/docker-writer-image)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 ##
 
 Features
 
   * Dynamically retrieve secrets from the Keeper Vault when Docker containers execute
-
-For a complete list of Keeper Secrets Manager features see the [Overview
-](/en/keeperpam/secrets-manager/overview)
 
 ##
 
@@ -462,17 +459,11 @@ Prerequisites
 This page documents the Secrets Manager Docker Runtime integration. In order
 to utilize this integration, you will need:
 
-  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
-
-    * Secrets Manager addon enabled for your Keeper account
+  *     * Secrets Manager addon enabled for your Keeper account
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * A [One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
-
-  * The[ Keeper Secrets Manager (KSM) CLI Tool](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
-
-    * 
+  *     *   *   *     * 
 
 ##
 
@@ -488,11 +479,6 @@ example of this implementation is demonstrated below.
 ##
 
 Example: Provision MySQL network user account
-
-The official [MySQL docker](https://hub.docker.com/_/mysql/) allows a user to
-set the MySQL root password and create a network accessible user via
-environment variables. The MySQL instance is then provisioned when a container
-is run.
 
 The official MySQL dockerfile is below:
 
@@ -539,11 +525,6 @@ used in Step 3 below when referencing the vault secrets.
 
 We'll create a dockerfile that installs Keeper Secrets Manager CLI (`**ksm**`)
 and then wraps the ENTRYPOINT with `**ksm exec**`
-
-In the below dockerfile, the 4 environment variables are replaced using
-[Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-notation). We are
-also passing in the Secrets Manager profile that points to the vault where the
-secrets are stored.
 
 Copy
 
@@ -607,14 +588,6 @@ Copy
 
 Example: Using KSM CLI Docker Image
 
-The [KSM CLI Docker](/en/keeperpam/secrets-manager/secrets-manager-command-
-line-interface/docker-container) includes a volume mount to both GLIBC (most
-Linux distributions) and MUSL (Alpine Linux) CLI binaries. The volume is
-`/cli`. This directory can be mounted into another container using the
-`volumes_from` in docker-compose or `-v `from command line docker. The ksm
-executables exists in directory based on the version of C library your Linux
-distribution is using.
-
   * `/cli/glibc/ksm` \- For standard GLIBC distributions like Ubuntu, Debian, Fedora, and CentOS.
 
   * `/cli/musl/ksm` \- For Alpine Linux.
@@ -648,16 +621,6 @@ Copy
 The `init` service will load the CLI docker. The container will start, display
 a CLI splash screen, and then will exit. Even though the container has
 stopped, the `/cli` volume is still accessible from other containers.
-
-The `main` service will mount the CLI docker's volume under the directory
-`/cli` using `volumes_from`. The `command` is overridden to run the GLIBC
-version of the KSM CLI. The `command` is using the `exec` function of the CLI.
-That will replace environment variables environment variable, that use the
-[Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-notation), with a
-secret value. The `exec` command, of the CLI, is running the `printenv`
-application. That will print the environment variable, **MY_LOGIN** , that has
-been set to Keeper Notation, and has had its value replaced with a secret by
-the `exec` command.
 
 Copy
 
@@ -713,17 +676,9 @@ statement will indicate the distribution the vendor has built their image
 upon. If it is not apparent from the **FROM** statement, you man check the
 Dockerfile of the **FROM** image due to inheritance.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FreLdO2dKmIXTdq7CxrOM%252FScreenshot%25202022-10-31%2520at%25202.40.53%2520PM.png%3Falt%3Dmedia%26token%3Db74d6181-d2fc-4ccb-9960-daefe6671c92&width=768&dpr=4&quality=100&sign=ac9bd028&sv=2)
-
 MySQL 8.0.31 doesn't indicate the operating system distribution in the tag
 name. On the MySQL Docker Hub page, the 8.0.31 tag links to their GitHub repo.
 From the Dockerfile we can see the distribution is Oracle Linux.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FO2s1ylVdcl24iIxLjJui%252FScreenshot%25202022-10-31%2520at%25202.41.41%2520PM.png%3Falt%3Dmedia%26token%3D1ca49e96-968d-4293-8efd-98481205936e&width=768&dpr=4&quality=100&sign=35dde456&sv=2)
 
 The purpose of checking the distribution is to determine what version of the
 **libc** library is being used. Most distributions use **GLIBC** but some,
@@ -740,10 +695,6 @@ Entrypoint and Command
 The next step is to determine the vendor's Docker image **ENTRYPOINT** and
 **CMD**. The Dockerfile will list the **ENTRYPOINT** and/or **CMD**.
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Ff6x6wo9b2z5x3PuWPPAw%252FScreenshot%25202022-10-31%2520at%25202.52.24%2520PM.png%3Falt%3Dmedia%26token%3D5c5cdff7-258d-4524-96d5-ae908c27d3dd&width=768&dpr=4&quality=100&sign=186db616&sv=2)
-
 From the MySQL Dockerfile, the **ENTRYPOINT** is `["docker-entrypoint.sh"]`
 and the **CMD** is `["mysqld"]`. This means the **ENTRYPOINT** will be
 prepended to the **CMD** , so when the container is started `docker-
@@ -758,14 +709,6 @@ The docker-compose uses two services.
 The **init** service loads the `keeper/keeper-secrets-manager-cli` __ Docker
 image volumes. This image image will start and exit, however the volumes will
 still be accessible after it exits.
-
-The **main** service will run after the **init** service. This is done by
-using the docker-composes `depends_on` directive. This service contains
-environment variables, with [notation](/en/keeperpam/secrets-
-manager/about/keeper-notation), that will be replaced by the KSM CLI `exec`
-command and also includes the Base64 encoded configuration needed by the KSM
-CLI. The **MYSQL_** environmental variables are used by the MySQL Docker image
-to provision the database.
 
 The main services also will mount the volumes from the init service using the
 `volumes_from`. The KSM CLI Docker image defined that volumes are exported,
@@ -862,11 +805,75 @@ Contribute to the Docker Runtime Examples
 If you have some great examples to contribute to this page, please ping us on
 Slack or email sm@keepersecurity.com.
 
+For a complete list of Keeper Secrets Manager features see the
+
+Keeper Secrets Manager access (See the  for more details)
+
 A Keeper  with secrets shared to it
 
 See the  for instructions on creating an Application
 
+A
+
+The
+
 See instructions on setting up the KSM CLI
+
+The official  allows a user to set the MySQL root password and create a
+network accessible user via environment variables. The MySQL instance is then
+provisioned when a container is run.
+
+In the below dockerfile, the 4 environment variables are replaced using . We
+are also passing in the Secrets Manager profile that points to the vault where
+the secrets are stored.
+
+The  includes a volume mount to both GLIBC (most Linux distributions) and MUSL
+(Alpine Linux) CLI binaries. The volume is `/cli`. This directory can be
+mounted into another container using the `volumes_from` in docker-compose or
+`-v `from command line docker. The ksm executables exists in directory based
+on the version of C library your Linux distribution is using.
+
+The `main` service will mount the CLI docker's volume under the directory
+`/cli` using `volumes_from`. The `command` is overridden to run the GLIBC
+version of the KSM CLI. The `command` is using the `exec` function of the CLI.
+That will replace environment variables environment variable, that use the ,
+with a secret value. The `exec` command, of the CLI, is running the `printenv`
+application. That will print the environment variable, **MY_LOGIN** , that has
+been set to Keeper Notation, and has had its value replaced with a secret by
+the `exec` command.
+
+The **main** service will run after the **init** service. This is done by
+using the docker-composes `depends_on` directive. This service contains
+environment variables, with , that will be replaced by the KSM CLI `exec`
+command and also includes the Base64 encoded configuration needed by the KSM
+CLI. The **MYSQL_** environmental variables are used by the MySQL Docker image
+to provision the database.
+
+[Overview ](/en/keeperpam/secrets-manager/overview)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+[One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
+
+[ Keeper Secrets Manager (KSM) CLI Tool](/en/keeperpam/secrets-
+manager/secrets-manager-command-line-interface)
+
+[MySQL docker](https://hub.docker.com/_/mysql/)
+
+[Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-notation)
+
+[KSM CLI Docker](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/docker-container)
+
+[Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-notation)
+
+[notation](/en/keeperpam/secrets-manager/about/keeper-notation)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 Root MySQL DB
 
@@ -876,19 +883,25 @@ Capture Record UID for Root Record
 
 Capture Record UID for User Record
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FreLdO2dKmIXTdq7CxrOM%252FScreenshot%25202022-10-31%2520at%25202.40.53%2520PM.png%3Falt%3Dmedia%26token%3Db74d6181-d2fc-4ccb-9960-daefe6671c92&width=768&dpr=4&quality=100&sign=ac9bd028&sv=2)
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FO2s1ylVdcl24iIxLjJui%252FScreenshot%25202022-10-31%2520at%25202.41.41%2520PM.png%3Falt%3Dmedia%26token%3D1ca49e96-968d-4293-8efd-98481205936e&width=768&dpr=4&quality=100&sign=35dde456&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Ff6x6wo9b2z5x3PuWPPAw%252FScreenshot%25202022-10-31%2520at%25202.52.24%2520PM.png%3Falt%3Dmedia%26token%3D5c5cdff7-258d-4524-96d5-ae908c27d3dd&width=768&dpr=4&quality=100&sign=186db616&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaFttUeoqctfkrfD8p%252FScreen%2520Shot%25202021-07-27%2520at%252012.38.59%2520AM.png%3Falt%3Dmedia%26token%3D3003edef-5d7b-4b46-b1a0-6530b0ac2fc1&width=768&dpr=4&quality=100&sign=cdc4ea8e&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaGNVzjx_czbCfPevb%252FScreen%2520Shot%25202021-07-27%2520at%252012.42.06%2520AM.png%3Falt%3Dmedia%26token%3D9ff5b9f8-7222-425a-b10c-e69b3208090a&width=768&dpr=4&quality=100&sign=792106f&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaGj5OBZC8JJE7mt2L%252FScreen%2520Shot%25202021-07-27%2520at%252012.43.33%2520AM.png%3Falt%3Dmedia%26token%3Df772dd76-5ba1-466b-b656-784f4ba70f19&width=768&dpr=4&quality=100&sign=1406970f&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -900,7 +913,7 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLOXFweD2U
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaFttUeoqctfkrfD8p%252FScreen%2520Shot%25202021-07-27%2520at%252012.38.59%2520AM.png%3Falt%3Dmedia%26token%3D3003edef-5d7b-4b46-b1a0-6530b0ac2fc1&width=768&dpr=4&quality=100&sign=cdc4ea8e&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaGj5OBZC8JJE7mt2L%252FScreen%2520Shot%25202021-07-27%2520at%252012.43.33%2520AM.png%3Falt%3Dmedia%26token%3Df772dd76-5ba1-466b-b656-784f4ba70f19&width=768&dpr=4&quality=100&sign=1406970f&sv=2)
 
 [here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface#initialize-the-client-device)

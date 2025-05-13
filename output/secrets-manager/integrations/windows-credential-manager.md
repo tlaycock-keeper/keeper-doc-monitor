@@ -549,11 +549,15 @@ utility/releases)
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRyTRac0AjyXOOaXRHkgj%252FKeeper%2520and%2520Windows%2520Credential%2520Manager.jpg%3Falt%3Dmedia%26token%3Db2c57103-674c-4f02-9896-e05a85ef56d1&width=768&dpr=4&quality=100&sign=d8f8874e&sv=2)
 
-[![Logo](https://github.com/fluidicon.png)GitHub - Keeper-Security/windows-
-credential-utility: A utility for natively interacting with Windows Credential
-ManagerGitHub](https://github.com/Keeper-Security/windows-credential-utility)
+[GitHub - Keeper-Security/windows-credential-utility: A utility for natively
+interacting with Windows Credential ManagerGitHub](https://github.com/Keeper-
+Security/windows-credential-utility)
 
-[![Logo](https://github.com/fluidicon.png)Releases · Keeper-Security/windows-
-credential-utilityGitHub](https://github.com/Keeper-Security/windows-
-credential-utility/releases)
+[Releases · Keeper-Security/windows-credential-
+utilityGitHub](https://github.com/Keeper-Security/windows-credential-
+utility/releases)
+
+![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
+
+![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
 

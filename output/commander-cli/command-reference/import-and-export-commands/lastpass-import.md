@@ -928,15 +928,18 @@ commands/default-record-types)
 [record-permission](/en/keeperpam/commander-cli/command-reference/sharing-
 commands#record-permission-command)
 
-[![Logo](https://www.keepersecurity.com/assets/branding/android-
-icon-192x192.png)Download Keeper Password Manager for iOS, Android, Mac, PC
-and moreKeeper® Password Manager & Digital
-Vault](https://keepersecurity.com/download)
+[Download Keeper Password Manager for iOS, Android, Mac, PC and moreKeeper®
+Password Manager & Digital Vault](https://keepersecurity.com/download)
 
-[![Logo](https://1748446847-files.gitbook.io/~/files/v0/b/gitbook-legacy-
-files/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Favatar.png?generation=1562027743273411&alt=media)Desktop
-ApplicationsEnterprise Guide](https://docs.keeper.io/enterprise-
+[Desktop ApplicationsEnterprise Guide](https://docs.keeper.io/enterprise-
 guide/deploying-keeper-to-end-users/desktop-application)
+
+![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fwww.keepersecurity.com%2Fassets%2Fbranding%2Fandroid-
+icon-192x192.png&width=20&dpr=4&quality=100&sign=71acf559&sv=2)
+
+![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F1748446847-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fspaces%252F-LO5CAzpxoaEquZJBpYz%252Favatar.png%3Fgeneration%3D1562027743273411%26alt%3Dmedia&width=20&dpr=4&quality=100&sign=25d608c4&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

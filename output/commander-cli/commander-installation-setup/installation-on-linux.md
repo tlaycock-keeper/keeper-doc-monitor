@@ -410,7 +410,7 @@ installation-setup/installation-on-mac)[NextPython Developer
 Setup](/en/keeperpam/commander-cli/commander-installation-setup/developer-
 mode)
 
-Last updated 6 months ago
+Last updated 7 months ago
 
 Was this helpful?
 
