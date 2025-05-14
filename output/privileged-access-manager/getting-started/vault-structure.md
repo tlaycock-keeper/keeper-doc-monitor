@@ -386,6 +386,40 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview 
+  * Records, Record Types and Resources
+  * Folders and Shared Folders
+  * Application
+  * Device
+  * Gateway
+  * Configuration
+  * PAM Resources
+  * PAM Users
+  * Activating PAM Features
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=L6p8QWE1dUUedIuZelpF&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+# Vault Structure
+
+Understanding the Keeper Vault structure and organization for KeeperPAM
+
+[PreviousEnforcement Policies](/en/keeperpam/privileged-access-
+manager/getting-started/enforcement-policies)[NextRecord
+Linking](/en/keeperpam/privileged-access-manager/getting-started/record-
+linking)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -415,17 +449,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=L6p8QWE1dUUedIuZelpF&only=yes&limit=100)
-
-Last updated 2 months ago
-
-Was this helpful?
 
 ##
 
@@ -592,6 +615,20 @@ Machine, Database, Directory, etc.
 
 Visit the pages linked below to learn more about each PAM Resource:
 
+PAM Record Type
+
+Supported Assets
+
+Windows, Linux, macOS devices, VMs, EC2 instances, Azure VMs, Network devices
+and other operating systems.
+
+MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
+
+Active Directory, Azure AD, OpenLDAP
+
+Web-based Applications, self-hosted apps, cloud apps, any http or https
+target.
+
 * * *
 
 ###
@@ -629,33 +666,6 @@ applications and configurations is using the . This wizard instantly creates a
 sandbox environment where you can work with the different resources and vault
 records.
 
-PAM Record Type
-
-Supported Assets
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-
-# Vault Structure
-
-Understanding the Keeper Vault structure and organization for KeeperPAM
-
-[PreviousEnforcement Policies](/en/keeperpam/privileged-access-
-manager/getting-started/enforcement-policies)[NextRecord
-Linking](/en/keeperpam/privileged-access-manager/getting-started/record-
-linking)
-
-  * Overview 
-  * Records, Record Types and Resources
-  * Folders and Shared Folders
-  * Application
-  * Device
-  * Gateway
-  * Configuration
-  * PAM Resources
-  * PAM Users
-  * Activating PAM Features
-
 [Accessing the KeeperPAM Console and Vault](/en/keeperpam/privileged-access-
 manager/setup-steps)
 
@@ -688,16 +698,6 @@ resources/pam-user)
 browser-isolation)
 
 [Discovery](/en/keeperpam/privileged-access-manager/discovery)
-
-Windows, Linux, macOS devices, VMs, EC2 instances, Azure VMs, Network devices
-and other operating systems.
-
-MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
-
-Active Directory, Azure AD, OpenLDAP
-
-Web-based Applications, self-hosted apps, cloud apps, any http or https
-target.
 
 [PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-machine)

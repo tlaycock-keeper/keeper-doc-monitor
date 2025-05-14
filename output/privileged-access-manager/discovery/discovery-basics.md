@@ -744,6 +744,9 @@ manager/discovery/discovery-using-commander)
 [Discovery using the Vault](/en/keeperpam/privileged-access-
 manager/discovery/discovery-using-the-vault)
 
+[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
+manager-commands#overview)
+
 [Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-
 started/enforcement-policies)
 
@@ -756,7 +759,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FpIEvx3uoW
 cf1e0a76c43b&width=768&dpr=4&quality=100&sign=120cbe29&sv=2)
 
 [learn more](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
-
-[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
-manager-commands#overview)
 

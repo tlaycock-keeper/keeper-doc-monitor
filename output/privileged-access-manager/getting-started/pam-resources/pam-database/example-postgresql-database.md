@@ -638,6 +638,8 @@ The PostgreSQL Database record is set up. The user with the ability to launch
 connections can now launch an interactive PostgreSQL connection or tunnel to
 the target database.
 
+PostgreSQL PAM Database Record
+
 **Required** Visit this  for more details
 
 See
@@ -648,7 +650,15 @@ See this  for PostgreSQL protocol settings We recommend specifying the
 User Accounts are configured on the PAM User record. Visit this  for more
 information.
 
+Administrative Credential Record
+
 Learn more about
+
+Sharing a PostgreSQL Database Record
+
+Launching interactive CLI session to PostgreSQL
+
+Interactive Connection to PostgreSQL Database
 
 [Installed and configured the Keeper Gateway](/en/keeperpam/privileged-access-
 manager/getting-started/gateways/one-time-access-token)
@@ -661,26 +671,6 @@ resources/pam-user)
 
 [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-
 started/sharing-and-access-control)
-
-[session recording](/en/keeperpam/privileged-access-manager/session-recording-
-and-playback)
-
-[section](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/postgresql-connections)
-
-[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database/example-postgresql-database#administrative-credential-
-record)
-
-PostgreSQL PAM Database Record
-
-Administrative Credential Record
-
-Sharing a PostgreSQL Database Record
-
-Launching interactive CLI session to PostgreSQL
-
-Interactive Connection to PostgreSQL Database
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -705,4 +695,14 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRLKC4C4j0
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuV3f6t7N6GqqieotwmKW%252FScreenshot%25202025-01-22%2520at%252011.39.03%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Df35b94f4-8f73-4452-b426-d6320bae4cd8&width=768&dpr=4&quality=100&sign=87a055a7&sv=2)
+
+[session recording](/en/keeperpam/privileged-access-manager/session-recording-
+and-playback)
+
+[section](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/postgresql-connections)
+
+[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database/example-postgresql-database#administrative-credential-
+record)
 

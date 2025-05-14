@@ -445,7 +445,7 @@ Protect Secrets Manager connection details with AWS KMS
 manager/integrations/aws-secrets-manager)[NextAzure DevOps
 Extension](/en/keeperpam/secrets-manager/integrations/azure-devops-plugin)
 
-Last updated 29 days ago
+Last updated 1 month ago
 
 Was this helpful?
 
@@ -468,7 +468,15 @@ Features
 
 Prerequisites
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
   *   *   * Supports Java 11 and above
 
@@ -488,7 +496,15 @@ Setup
 
 1\. Install Module
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 Setting up project using Gradle or Maven
 
@@ -672,7 +688,15 @@ decrypt KSM configuration using integration and you need to tell the Secrets
 Manager SDK to utilize the KMS as storage. **Using Specified Connection
 credentials**
 
-JavaJavaScriptPython.NetGo
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+Go
 
 To do this, use `AwsKeyValueStorage` as your Secrets Manager storage in the
 `SecretsManager` constructor.
@@ -892,7 +916,15 @@ Copy
 
 **Using Default Connection**
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 To do this, use `AwsKeyValueStorage` as your Secrets Manager storage in the
 `SecretsManager` constructor.
@@ -1105,7 +1137,15 @@ Change Key
 We can change key that is used for encrypting the configuration, examples
 below show the code needed to use it
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 Copy
 
@@ -1182,7 +1222,15 @@ different cloud or if you want your raw credentials back. The function accepts
 a boolean which when set to true will save the decrypted configuration to file
 and if left false, will just return decrypted configuration.
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 Copy
 

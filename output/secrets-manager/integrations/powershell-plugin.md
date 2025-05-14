@@ -463,9 +463,6 @@ Features
 
   * Get files from the Keeper vault
 
-For a complete list of Keeper Secrets Manager features see the [Overview
-](/en/keeperpam/secrets-manager/overview)
-
 ##
 
 Prerequisites
@@ -477,21 +474,13 @@ Secrets Manager requires **PowerShell version 6 or greater**. Microsoft
 distributes PowerShell version 6+ as a separate application from versions 5
 and earlier.
 
-See [Microsoft's Documentation](https://docs.microsoft.com/en-
-us/powershell/scripting/install/installing-powershell?view=powershell-7.1) for
-installation details
-
   * **PowerShell Version 6.0 or later**
 
-    * See [Microsoft's Documentation](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.1) for installation details
-
-  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
-
-    * Secrets Manager addon enabled for your Keeper account
+    *   *     * Secrets Manager addon enabled for your Keeper account
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * [A One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
+  *     *   * 
 
 ##
 
@@ -503,9 +492,6 @@ PowerShell scripts.
 
 The Keeper Secrets Manager extension can be easily configured added as a
 secret vault into new or existing PowerShell Secret Management workflows.
-
-For more information about PowerShell Secret Management, see the [PowerShell
-docs](https://github.com/powershell/SecretManagement) on their GitHub page.
 
 ##
 
@@ -526,10 +512,6 @@ Copy
     
     Install-Module -Name Microsoft.PowerShell.SecretManagement
 
-See [PowerShell
-Gallery](https://www.powershellgallery.com/packages/Microsoft.PowerShell.SecretManagement/1.1.0)
-for other installation options
-
 ####
 
 2\. Install Keeper Secrets Manager for PowerShell
@@ -542,12 +524,6 @@ Copy
     
     
     Install-Module -Name SecretManagement.Keeper
-
-See the [PowerShell Gallery
-page](https://www.powershellgallery.com/packages/SecretManagement.Keeper) for
-more installation options, or find the source code in
-[GitHub](https://github.com/Keeper-Security/secrets-
-manager/tree/master/sdk/dotNet/SecretManagement.Keeper).
 
 To update SecretManagement, use the command: `Update-Module -Name
 SecretManagement.Keeper`
@@ -562,12 +538,9 @@ can skip this step
 The Keeper Secrets Manager PowerShell plugin will need a secret management
 extension to store the plugin configuration locally to your machine.
 
-Keeper recommends
-[Microsoft.Powershell.SecretStore](https://www.powershellgallery.com/packages/Microsoft.PowerShell.SecretStore)
-or
-[SecretManagement.KeyChain](https://www.powershellgallery.com/packages/SecretManagement.KeyChain)
+SecretStore
 
-SecretStoreKeyChain
+KeyChain
 
 Copy
 
@@ -592,7 +565,9 @@ Register a secret vault for the previously installed secret management
 extension, so that the Keeper Secrets Manager plugin configuration can be
 stored.
 
-SecretStoreKeyChain
+SecretStore
+
+KeyChain
 
 Copy
 
@@ -666,20 +641,12 @@ The Keeper Secrets Manager PowerShell Plugin is now ready to be used
 
 Source Code
 
-Find the Keeper Secrets Manager PowerShell Plugin source code in the [GitHub
-repository](https://github.com/Keeper-Security/secrets-
-manager/tree/master/sdk/dotNet/SecretManagement.Keeper).
-
 ##
 
 Usage
 
 Find descriptions and examples of the most common usage of the Keeper Secrets
 Manager PowerShell plugin below.
-
-For more information about PowerShell Secret Management commands, see the
-[PowerShell docs](https://github.com/powershell/SecretManagement) on their
-GitHub page.
 
 Starting with version 16.6.6 `Get/Set` commands allow use of `\` as and escape
 character for dots in title. Use escape character only if there's dot in
@@ -691,7 +658,9 @@ Listing Secrets
 
 Run the following PowerShell command to see a list of secrets from Keeper
 
-CommandExample
+Command
+
+Example
 
 Copy
 
@@ -722,7 +691,9 @@ Getting a Single Secret
 
 Get information and values of a single secret
 
-CommandExample
+Command
+
+Example
 
 Copy
 
@@ -751,11 +722,9 @@ shows them as a `SecureString`
 
 Get a Value From a Secret
 
-Utilize [Keeper Dot Notation](/en/keeperpam/secrets-manager/about/keeper-
-notation) to identify a field to access. Note that you do not need the
-'keeper://' prefix.
+Command
 
-CommandExample
+Example
 
 Copy
 
@@ -776,7 +745,9 @@ Set a Value to a Secret
 
 Update the value of a single secret field
 
-CommandExample
+Command
+
+Example
 
 Copy
 
@@ -811,7 +782,9 @@ Download a File
 Use dot notation to specify a file attached to a secret in the Keeper vault.
 Then pass that file to the `Set-Content` command to download it.
 
-CommandExample
+Command
+
+Example
 
 Copy
 
@@ -830,18 +803,77 @@ Copy
 The specified file will be downloaded to the path location given to `Set-
 Content`
 
+For a complete list of Keeper Secrets Manager features see the
+
+See  for installation details
+
+See  for installation details
+
+Keeper Secrets Manager access (See the  for more details)
+
 A Keeper  with secrets shared to it
 
 See the  for instructions on creating an Application
 
+For more information about PowerShell Secret Management, see the  on their
+GitHub page.
+
+See  for other installation options
+
+See the  for more installation options, or find the source code in .
+
+Keeper recommends  or
+
+Find the Keeper Secrets Manager PowerShell Plugin source code in the .
+
+For more information about PowerShell Secret Management commands, see the  on
+their GitHub page.
+
+Utilize  to identify a field to access. Note that you do not need the
+'keeper://' prefix.
+
+[Overview ](/en/keeperpam/secrets-manager/overview)
+
+[Microsoft's Documentation](https://docs.microsoft.com/en-
+us/powershell/scripting/install/installing-powershell?view=powershell-7.1)
+
+[Microsoft's Documentation](https://docs.microsoft.com/en-
+us/powershell/scripting/install/installing-powershell?view=powershell-7.1)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+[A One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
+
+[PowerShell docs](https://github.com/powershell/SecretManagement)
+
+[PowerShell
+Gallery](https://www.powershellgallery.com/packages/Microsoft.PowerShell.SecretManagement/1.1.0)
+
+[PowerShell Gallery
+page](https://www.powershellgallery.com/packages/SecretManagement.Keeper)
+
+[GitHub](https://github.com/Keeper-Security/secrets-
+manager/tree/master/sdk/dotNet/SecretManagement.Keeper)
+
+[Microsoft.Powershell.SecretStore](https://www.powershellgallery.com/packages/Microsoft.PowerShell.SecretStore)
+
+[SecretManagement.KeyChain](https://www.powershellgallery.com/packages/SecretManagement.KeyChain)
+
+[GitHub repository](https://github.com/Keeper-Security/secrets-
+manager/tree/master/sdk/dotNet/SecretManagement.Keeper)
+
+[PowerShell docs](https://github.com/powershell/SecretManagement)
+
+[Keeper Dot Notation](/en/keeperpam/secrets-manager/about/keeper-notation)
+
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mkx-
 lxHNSwOix9K5_-J%252F-Mkx9u3Z-bE-LQokynFC%252Fpowershell-plugin-
 header.jpg%3Falt%3Dmedia%26token%3Dff821ba5-92f0-43b6-8768-198012a8450d&width=768&dpr=4&quality=100&sign=21639efc&sv=2)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 

@@ -773,6 +773,10 @@ that are needed. For more notation examples .
 **Step 1:** Set Environmental Variables with Keeper notation for the secrets
 that are needed. For more notation examples .
 
+Create Record with Secret File Attachments
+
+Copy the Record UID
+
 When the docker image is built, it will be fully configured with SSL, keystore
 file and passphrase that are managed by the Keeper Vault.
 
@@ -798,24 +802,14 @@ images/build_enhancements/)
 
 [here](/en/keeperpam/secrets-manager/integrations/docker-writer-image)
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
 
-[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/exec-command#notation)
-
-[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/exec-command#notation)
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 [here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface#initialize-the-client-device)
-
-Create Record with Secret File Attachments
-
-Copy the Record UID
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -830,4 +824,10 @@ files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf_vL6i3tZYNyKHhWjl%252F-Mfa1Vl
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf_vL6i3tZYNyKHhWjl%252F-Mfa28rVYp_0HX3A8ubN%252FScreen%2520Shot%25202021-07-26%2520at%252011.38.56%2520PM.png%3Falt%3Dmedia%26token%3Dfd71d60e-548c-4ae9-a58a-e1323af10077&width=768&dpr=4&quality=100&sign=92e981fa&sv=2)
+
+[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/exec-command#notation)
+
+[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/exec-command#notation)
 

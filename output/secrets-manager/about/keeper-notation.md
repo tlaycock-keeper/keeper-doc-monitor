@@ -456,7 +456,9 @@ available, .
 
 Notation
 
-FormatExamples
+Format
+
+Examples
 
 `**keeper:// <TITLE|UID>/<type|title|notes>**`
 

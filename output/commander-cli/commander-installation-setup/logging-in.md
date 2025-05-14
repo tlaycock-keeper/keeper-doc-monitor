@@ -865,13 +865,11 @@ Copy
 
 Working with Commander
 
-Keeper Commander – Accessing and Working with Your Vault
-
 [PreviousPowerShell Module](/en/keeperpam/commander-cli/commander-
 installation-setup/installation-on-powershell)[NextConfiguration and
 Usage](/en/keeperpam/commander-cli/commander-installation-setup/configuration)
 
-Last updated 26 days ago
+Last updated 27 days ago
 
 Was this helpful?
 
@@ -909,6 +907,8 @@ See  for more details on device approval.
 
 [First Login on a New Device section](/en/keeperpam/commander-cli/commander-
 installation-setup/logging-in#first-login-on-a-new-device)
+
+Keeper Commander – Accessing and Working with Your Vault
 
 SSO Login success screen
 

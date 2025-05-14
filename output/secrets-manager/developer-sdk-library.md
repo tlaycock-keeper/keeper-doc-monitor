@@ -468,7 +468,17 @@ languages.
 
 Installation
 
-JavaKotlinJavaScriptPython.NetGoLang
+Java
+
+Kotlin
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 Reference the maven repository for snapshots: `repositories { mavenCentral()
 maven { url "https://s01.oss.sonatype.org/content/groups/public/" } }`
@@ -533,7 +543,15 @@ Copy
 
 Initialization
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 Copy
 
@@ -730,7 +748,15 @@ Copy
 
 Retrieve All Secrets
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 Copy
 
@@ -864,7 +890,15 @@ Retrieve One Individual Secret
 
 Get Secrets By Record Title
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 Copy
 
@@ -989,7 +1023,15 @@ Get Secrets By Record UID
 
 In this example, the Record UID is `XXX`
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 Copy
 
@@ -1134,7 +1176,15 @@ Example to retrieve an individual record password field.
 
 In this example, the Record UID is `XXX`
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 Copy
 
@@ -1250,7 +1300,15 @@ initialized.
 
 Download a File Attachment
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 Copy
 
@@ -1393,7 +1451,15 @@ initialized.
 
 Upload a File Attachment
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 Copy
 
@@ -1567,7 +1633,15 @@ initialized
 
 Retrieve TOTP Codes
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 Copy
 
@@ -1697,7 +1771,15 @@ initialized.
 
 Update a Password
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 Copy
 
@@ -1820,7 +1902,15 @@ Copy
 
 Generate a Password
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 Copy
 
@@ -1967,7 +2057,15 @@ shared folder, and there must be at least one other record in the folder. The
 new record will be placed in that folder. In the examples below, replace
 `[FOLDER UID]` with the shared folder's UID.
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 Copy
 
@@ -2131,7 +2229,15 @@ to the shared folder that the record is in, and the application must have edit
 capability. The record UID is required by Secrets Manager SDKs in order to
 delete the record.
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 Copy
 

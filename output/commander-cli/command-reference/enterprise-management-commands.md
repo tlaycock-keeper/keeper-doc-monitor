@@ -812,7 +812,11 @@ Copy
 
 Changing Role Enforcements
 
-CommandEnforcement PoliciesExamples
+Command
+
+Enforcement Policies
+
+Examples
 
 Use the `--enforcement` switch to edit enforcement policies on the given role.
 Pass a policy key and corresponding value to the switch in order to change the

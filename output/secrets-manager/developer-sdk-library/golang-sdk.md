@@ -710,7 +710,9 @@ Get Values From a Secret
 
 **Get a Password**
 
-Get PasswordExample Usage
+Get Password
+
+Example Usage
 
 Copy
 
@@ -748,7 +750,9 @@ Copy
 
 Retrieve Values using Keeper Notation
 
-Get NotationExample Usage
+Get Notation
+
+Example Usage
 
 Copy
 
@@ -803,7 +807,9 @@ The value of the queried field
 
 Retrieve TOTP Code
 
-Get TOTP CodeExample Usage
+Get TOTP Code
+
+Example Usage
 
 Copy
 
@@ -1028,7 +1034,9 @@ Copy
 
 Generate a Random Password
 
-Generate PasswordExample Usage
+Generate Password
+
+Example Usage
 
 Copy
 
@@ -1294,8 +1302,13 @@ Prerequisites:
 
   * 
 
-Create a RecordCreate Record in Sub-folderLogin Record ExampleCustom Type
-Example
+Create a Record
+
+Create Record in Sub-folder
+
+Login Record Example
+
+Custom Type Example
 
 Copy
 
@@ -1420,7 +1433,9 @@ Delete a Secret
 
 The Go KSM SDK can delete records in the Keeper Vault.
 
-Delete SecretExample
+Delete Secret
+
+Example
 
 Copy
 
@@ -1768,9 +1783,6 @@ go>[](https://github.com/Keeper-Security/secrets-manager-go)
 [Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
 notation)
 
-[UploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/golang-
-sdk#upload-a-file)
-
 [Record Types](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
 
@@ -1779,4 +1791,7 @@ commands/default-record-types#field-types)
 
 [documentation](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
+
+[UploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/golang-
+sdk#upload-a-file)
 

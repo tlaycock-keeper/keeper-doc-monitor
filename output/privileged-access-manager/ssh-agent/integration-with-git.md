@@ -438,7 +438,7 @@ Keeper SSH Agent integration for Git Authentication and Commit Signing
 [PreviousSSH Agent](/en/keeperpam/privileged-access-manager/ssh-
 agent)[NextDiscovery](/en/keeperpam/privileged-access-manager/discovery)
 
-Last updated 24 days ago
+Last updated 25 days ago
 
 Was this helpful?
 
@@ -778,6 +778,9 @@ agent/integration-with-git#github-authentication)
 [Signing Commits](/en/keeperpam/privileged-access-manager/ssh-
 agent/integration-with-git#signing-commits)
 
+[Terminal Configuration](/en/keeperpam/privileged-access-manager/ssh-
+agent#terminal-configuration)
+
 Keeper SSH Key for Github Authentication
 
 Select Github Auth Key from Keeper SSH Agent
@@ -807,7 +810,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FKhayBOMuH
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fcg6peK9rIReHQ2WbEyjV%252FScreenshot%25202025-01-17%2520at%25208.18.39%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D5a54fc48-c0b9-4ae5-a2eb-10380a6c4519&width=768&dpr=4&quality=100&sign=fd571132&sv=2)
-
-[Terminal Configuration](/en/keeperpam/privileged-access-manager/ssh-
-agent#terminal-configuration)
 

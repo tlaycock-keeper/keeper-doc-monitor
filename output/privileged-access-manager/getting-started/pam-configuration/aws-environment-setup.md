@@ -441,7 +441,7 @@ started/pam-configuration)[NextAzure Environment
 Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-
 configuration/azure-environment-setup)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

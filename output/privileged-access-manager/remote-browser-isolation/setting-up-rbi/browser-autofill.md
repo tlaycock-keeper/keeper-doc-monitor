@@ -442,7 +442,7 @@ resource-url-patterns)[NextSession Recording &
 Playback](/en/keeperpam/privileged-access-manager/session-recording-and-
 playback)
 
-Last updated 27 days ago
+Last updated 28 days ago
 
 Was this helpful?
 

@@ -443,7 +443,7 @@ manager/getting-started/pam-configuration/aws-environment-setup)[NextLocal
 Environment Setup](/en/keeperpam/privileged-access-manager/getting-
 started/pam-configuration/local-environment-setup)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

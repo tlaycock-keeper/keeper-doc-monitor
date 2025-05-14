@@ -445,7 +445,7 @@ Protect Secrets Manager connection details with Google Cloud Key Management
 manager/integrations/gcp-secret-manager)[NextHashicorp
 Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
 
-Last updated 26 days ago
+Last updated 27 days ago
 
 Was this helpful?
 
@@ -474,7 +474,15 @@ service account keys ended with` .json` . Key structure that is supported by
 this integration is
 `projects/<project_name>/locations/<location_name>/keyRings/<key_ring_name>/cryptoKeys/<key_name>/cryptoKeyVersions/<key_version>`
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
   * Support the Java/Kotlin Secrets Manager SDK.
 
@@ -502,7 +510,15 @@ Setup
 
 1\. Install Module
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 Setting up project using Gradle or Maven
 
@@ -668,7 +684,15 @@ Manager SDK functionality. Your code will need to be able to access the GCP
 CKM Keys in order to manage the encryption and decryption of the KSM
 configuration file. **Using Specified Connection credentials**
 
-JavaJavaScriptPython.NetGo
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+Go
 
 To do this, create `GcpKeyValueStorage` instance and use this in
 `SecretManagerOptions` constructor.
@@ -862,7 +886,15 @@ Change Key
 We can change key that is used for encrypting the KSM configuration, examples
 below show the code needed to use it
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 Copy
 
@@ -924,7 +956,15 @@ different cloud or if you want your raw credentials back. The function accepts
 a boolean which when set to true will save the decrypted configuration to file
 and if it is false, will just return decrypted configuration.
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 Copy
 

@@ -593,18 +593,13 @@ amend and duplicate as needed.
 Importing the file will generate a Login record type: **make sure to convert
 it to PAM User.**
 
-[ 237BPAM User Template
-AzureAppSecretRotation.csv](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FpOlF7YIhAW9jMUZrIewb%2FPAM%20User%20Template%20AzureAppSecretRotation.csv?alt=media&token=d93ff265-ca1f-4006-bed5-d3374be2e842)
-
-CSV file to import in the Keeper vault
-
 ##
 
 Setting Up the Rotation in the Keeper Vault
 
-Using PAM Config Admin SecretUsing Another Rotation Record Admin Secret
+Using PAM Config Admin Secret
+
+Using Another Rotation Record Admin Secret
 
 The script require an admin application secret to authenticate against Azure
 and rotate another application's secret. Here we will be using the admin app
@@ -668,13 +663,6 @@ of the admin application in the Azure portal > App registrations.
 Importing the file will generate a Login record type: **make sure to convert
 it to PAM User.**
 
-[ 338BPAM User Template
-AdminAzureAppSecretRotation.csv](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FyvhvHf2dKSX6rlXV9YDu%2FPAM%20User%20Template%20AdminAzureAppSecretRotation.csv?alt=media&token=628b40e4-6e4b-428e-a5d7-b73bffeb7fa5)
-
-CSV file to import in the Keeper vault
-
 ###
 
 Configuration From the Keeper Vault:
@@ -712,10 +700,6 @@ Copy
 ##
 
 Python Script
-
-[9KBRotateAzureApp.py](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2F5jnksqiM65NkHMi2YzuB%2FRotateAzureApp.py?alt=media&token=0f4c9243-ac37-4398-bd71-d7964c58744f)
 
 Copy
 
@@ -929,22 +913,14 @@ Copy
 You need to create a  record where the rotation will be configured later on.
 The fields below need to be created.
 
-PAM User record example
-
 Create a PAM User record in the shared folder with the fields and custom
 fields described .
-
-PAM User record in shared folder
 
 Provision the gateway (gateway tab after selecting the application) on a Linux
 box. Simply run the install command provided by the Keeper vault and make sure
 Python and the dependencies listed are installed.
 
-Azure PAM Config
-
 Edit the PAM User record previously described in this :
-
-Attach PAM Script to the PAM User record
 
 The PAM user record will need all fields as described in the documentation ,
 along with the additional fields below:
@@ -956,15 +932,9 @@ create a template record you can amend and duplicate as needed.
 Create a PAM User record in the shared folder with the fields and custom
 fields described .
 
-Shared folder with two records: admin app and target app
-
 Provision the gateway (gateway tab after selecting the application) on a Linux
 box. Simply run the install command provided by the Keeper vault and make sure
 Python and the dependencies listed are installed.
-
-Local Network PAM Config
-
-Attach PAM Script with Rotation Credential
 
 Copy
 
@@ -1053,6 +1023,38 @@ use-cases/azure/azure-app-secret-rotation#pam-user-record-fields-requirements)
 
 [above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 use-cases/azure/azure-app-secret-rotation#pam-user-record-fields-requirements)
+
+[237BPAM User Template
+AzureAppSecretRotation.csv](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
+x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FpOlF7YIhAW9jMUZrIewb%2FPAM%20User%20Template%20AzureAppSecretRotation.csv?alt=media&token=d93ff265-ca1f-4006-bed5-d3374be2e842)
+
+CSV file to import in the Keeper vault
+
+[338BPAM User Template
+AdminAzureAppSecretRotation.csv](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
+x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FyvhvHf2dKSX6rlXV9YDu%2FPAM%20User%20Template%20AdminAzureAppSecretRotation.csv?alt=media&token=628b40e4-6e4b-428e-a5d7-b73bffeb7fa5)
+
+CSV file to import in the Keeper vault
+
+[9KBRotateAzureApp.py](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
+x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2F5jnksqiM65NkHMi2YzuB%2FRotateAzureApp.py?alt=media&token=0f4c9243-ac37-4398-bd71-d7964c58744f)
+
+PAM User record example
+
+PAM User record in shared folder
+
+Azure PAM Config
+
+Attach PAM Script to the PAM User record
+
+Shared folder with two records: admin app and target app
+
+Local Network PAM Config
+
+Attach PAM Script with Rotation Credential
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

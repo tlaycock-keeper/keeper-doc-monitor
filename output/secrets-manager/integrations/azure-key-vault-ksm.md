@@ -445,7 +445,7 @@ Protect Secrets Manager connection details with Azure Key Vault Keys
 manager/integrations/azure-key-vault)[NextBitbucket
 Plugin](/en/keeperpam/secrets-manager/integrations/bitbucket-plugin)
 
-Last updated 28 days ago
+Last updated 29 days ago
 
 Was this helpful?
 
@@ -471,7 +471,15 @@ Features
 
 Prerequisites
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
   *   *   * Works with just RSA key types with `WrapKey` and `UnWrapKey` permissions.
 
@@ -493,7 +501,15 @@ Setup
 
 1\. Install Module
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 Setting up project using Gradle or Maven
 
@@ -674,7 +690,15 @@ Secrets Manager SDK functionality. Your code will need to be able to access
 the Azure Keys in order to manage the encryption and decryption of the KSM
 configuration file. **Using Specified Connection credentials**
 
-JavaJavaScriptPython.NetGo
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+Go
 
 To do this, create `AzureKeyValueStorage` instance and use this in
 `SecretManagerOptions` constructor.
@@ -906,7 +930,15 @@ Change Key
 We can change key that is used for encrypting the KSM configuration, examples
 below show the code needed to use it
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 Copy
 
@@ -991,7 +1023,15 @@ and if it is false, will just return decrypted configuration. This function
 accepts a boolean, when set to true will save the decrypted configuration to
 file and when set to false will return decrypted configuration.
 
-JavaJavaScriptPython.NetGoLang
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 Copy
 

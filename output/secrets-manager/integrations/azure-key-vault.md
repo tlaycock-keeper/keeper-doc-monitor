@@ -418,12 +418,36 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * About
+  * Features
+  * Prerequisites
+  * Setup
+  * 1\. Configure Keeper Secrets Manager CLI
+  * 2\. Set Azure Permissions
+  * 3\. Create Azure Credentials Record
+  * 4\. Create Value Mappings
+  * Run Sync
+  * 1\. Construct the Command
+  * 2\. Run a Dry-Run
+  * 3\. Run the Sync
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=8LqKdN1gExiCxJhy1YW3&only=yes&limit=100)
 
-Last updated 28 days ago
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Azure Key Vault Sync
+
+Sync secrets from the Keeper Vault with Azure Key Vault
+
+[PreviousAzure DevOps Extension](/en/keeperpam/secrets-
+manager/integrations/azure-devops-plugin)[NextAzure Key Vault
+Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
+
+Last updated 29 days ago
 
 Was this helpful?
 
@@ -581,6 +605,12 @@ and value mapping
 Put together the KSM sync command with the Azure type. The format looks like
 the following:
 
+Copy
+
+    
+    
+    ksm sync --type azure --credentials [UID] --map [...] --map [...]
+
 ###
 
 2\. Run a Dry-Run
@@ -590,6 +620,12 @@ that will be made to your Azure Key Vault values without actually pushing the
 values or making changes. Use this to make sure your mapping queries are
 constructed properly.
 
+Copy
+
+    
+    
+    ksm sync --type azure --credentials [UID] --map [...] --map [...] --dry-run
+
 ###
 
 3\. Run the Sync
@@ -598,6 +634,12 @@ When ready, run the sync command without the dry-run option. This will push
 values from your Keeper Vault to Azure Key Vault
 
 TIP: you can use `-m` as short hand for `--map`
+
+Copy
+
+    
+    
+    ksm sync --type azure --credentials [UID] -m [...] -m [...]
 
 Keeper Secrets Manager access (See the  for more details)
 
@@ -611,74 +653,6 @@ Follow the Microsoft guide for setting up a service principal:
 
 See the  for more information
 
-Copy
-
-    
-    
-    ksm sync --type azure --credentials [UID] --map [...] --map [...]
-
-Copy
-
-    
-    
-    ksm sync --type azure --credentials [UID] --map [...] --map [...] --dry-run
-
-Copy
-
-    
-    
-    ksm sync --type azure --credentials [UID] -m [...] -m [...]
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Azure Key Vault Sync
-
-Sync secrets from the Keeper Vault with Azure Key Vault
-
-[PreviousAzure DevOps Extension](/en/keeperpam/secrets-
-manager/integrations/azure-devops-plugin)[NextAzure Key Vault
-Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
-
-  * About
-  * Features
-  * Prerequisites
-  * Setup
-  * 1\. Configure Keeper Secrets Manager CLI
-  * 2\. Set Azure Permissions
-  * 3\. Create Azure Credentials Record
-  * 4\. Create Value Mappings
-  * Run Sync
-  * 1\. Construct the Command
-  * 2\. Run a Dry-Run
-  * 3\. Run the Sync
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3ytUgwFocUVmKLb8sNQ6%252Fimage.png%3Falt%3Dmedia%26token%3D1ef93869-4ac4-4776-9b4f-1d58a6529218&width=768&dpr=4&quality=100&sign=cf1bb8df&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXjlSL3lY76SwWoKNdeCQ%252Fimage.png%3Falt%3Dmedia%26token%3Dc0a03e93-bbff-4837-9375-5de09abc8c4c&width=768&dpr=4&quality=100&sign=f9f711bc&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7XYS9qI9McE7X4knr8iO%252Fimage.png%3Falt%3Dmedia%26token%3Dd9ec05af-5152-4884-a65e-7e78be69c01a&width=768&dpr=4&quality=100&sign=bb899506&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGbgXULnF2SK8cGDb1t7Y%252Fspaces_-
-MJXOXEifAmpyvNVL1to_uploads_1VHxRugsu0DJAHvvbpI7_Screenshot%25202023-04-21%2520at%25203.webp%3Falt%3Dmedia%26token%3Df54dc0e8-512e-4f30-9266-e9772d06b98c&width=300&dpr=4&quality=100&sign=bc3f2ae1&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjainUtrw6ieDVNNUfvuE%252Fdatasource-
-ksm-
-azure.jpg%3Falt%3Dmedia%26token%3D7e5db38e-7558-4dba-b047-ca0156f11d34&width=768&dpr=4&quality=100&sign=b6a4e019&sv=2)
-
-[`sync` command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/sync-command)
-
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
 
 [profile documentation](/en/keeperpam/secrets-manager/secrets-manager-command-
@@ -691,9 +665,35 @@ directory/develop/app-objects-and-service-principals)
 [Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
 notation)
 
+[`sync` command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/sync-command)
+
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGbgXULnF2SK8cGDb1t7Y%252Fspaces_-
+MJXOXEifAmpyvNVL1to_uploads_1VHxRugsu0DJAHvvbpI7_Screenshot%25202023-04-21%2520at%25203.webp%3Falt%3Dmedia%26token%3Df54dc0e8-512e-4f30-9266-e9772d06b98c&width=300&dpr=4&quality=100&sign=bc3f2ae1&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjainUtrw6ieDVNNUfvuE%252Fdatasource-
+ksm-
+azure.jpg%3Falt%3Dmedia%26token%3D7e5db38e-7558-4dba-b047-ca0156f11d34&width=768&dpr=4&quality=100&sign=b6a4e019&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3ytUgwFocUVmKLb8sNQ6%252Fimage.png%3Falt%3Dmedia%26token%3D1ef93869-4ac4-4776-9b4f-1d58a6529218&width=768&dpr=4&quality=100&sign=cf1bb8df&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXjlSL3lY76SwWoKNdeCQ%252Fimage.png%3Falt%3Dmedia%26token%3Dc0a03e93-bbff-4837-9375-5de09abc8c4c&width=768&dpr=4&quality=100&sign=f9f711bc&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7XYS9qI9McE7X4knr8iO%252Fimage.png%3Falt%3Dmedia%26token%3Dd9ec05af-5152-4884-a65e-7e78be69c01a&width=768&dpr=4&quality=100&sign=bb899506&sv=2)
 

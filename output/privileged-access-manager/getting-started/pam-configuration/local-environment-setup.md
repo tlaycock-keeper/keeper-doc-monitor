@@ -443,7 +443,7 @@ manager/getting-started/pam-configuration/azure-environment-setup)[NextPAM
 Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

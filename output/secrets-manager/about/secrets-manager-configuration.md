@@ -386,6 +386,34 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * About
+  * Creating a Secrets Manager Configuration
+  * In the Keeper Vault
+  * Using a SDK/Integration
+  * Using a CLI Tool
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=t41fd23FFoTrc6UKtieT&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [About KSM](/en/keeperpam/secrets-manager/about)
+
+# Secrets Manager Configuration
+
+Information about Keeper Secrets Manager configuration files
+
+[PreviousOne Time Access Token](/en/keeperpam/secrets-manager/about/one-time-
+token)[NextKeeper Notation](/en/keeperpam/secrets-manager/about/keeper-
+notation)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -416,34 +444,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-  * About
-  * Creating a Secrets Manager Configuration
-  * In the Keeper Vault
-  * Using a SDK/Integration
-  * Using a CLI Tool
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=t41fd23FFoTrc6UKtieT&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [About KSM](/en/keeperpam/secrets-manager/about)
-
-# Secrets Manager Configuration
-
-Information about Keeper Secrets Manager configuration files
-
-[PreviousOne Time Access Token](/en/keeperpam/secrets-manager/about/one-time-
-token)[NextKeeper Notation](/en/keeperpam/secrets-manager/about/keeper-
-notation)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 ##
 
 About
@@ -452,8 +452,9 @@ Each Keeper Secrets Manager SDK and integration uses a "configuration" to
 store connection tokens, encryption keys, identifiers and domain information
 used to authenticate and decrypt data from the Keeper Secrets Manager APIs.
 
-Secrets Manager configurations are created from  and have a one to one
-relationship with.
+Secrets Manager configurations are created from [One Time Access
+Tokens](/en/keeperpam/secrets-manager/about/one-time-token) and have a one to
+one relationship with.
 
 ####
 
@@ -477,8 +478,16 @@ creating a new Secrets Manager device.
 First navigate to the Secrets Manager tab, and select an Application from the
 list.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F0R4yOre6vH7YIy7c7hyH%252Fimage.png%3Falt%3Dmedia%26token%3D306988c9-4207-4a26-b907-bf1dac42fb2e&width=768&dpr=4&quality=100&sign=d75ba178&sv=2)
+
 Then, select the "Devices" tab in the right-hand application pane, and click
 "Edit" to go into edit mode.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FKtVhHT5wBXRH7GIvItWY%252Fimage.png%3Falt%3Dmedia%26token%3D611661db-1136-40af-8136-62f3e6937b5a&width=768&dpr=4&quality=100&sign=9acfd1f6&sv=2)
 
 From the edit view, you can click "Add Device" to create a new Secrets Manager
 device to the application.
@@ -486,9 +495,17 @@ device to the application.
 The Add Device menu will appear. Enter a name for this device, and then select
 "Configuration File" from the method dropdown.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FELVTCYheAKKOqaTG0UcN%252Fimage.png%3Falt%3Dmedia%26token%3Db43706d0-2b3a-4bb8-818a-8ec59d37355d&width=768&dpr=4&quality=100&sign=315c3b49&sv=2)
+
 After Configuration File is selected, you are given options for receiving the
 configuration. You can choose to generate a configuration in Base64 or json
 format, and download the configuration to a file, or copy it to the clipboard.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJUZwRTrthjUUWhPWAL5z%252Fimage.png%3Falt%3Dmedia%26token%3D7e5f68ba-7f70-4486-9682-050cf07f9e27&width=768&dpr=4&quality=100&sign=43407a42&sv=2)
 
 Most Secrets Manager integrations use a base64 string, but you may need a json
 file in some circumstances.
@@ -496,6 +513,10 @@ file in some circumstances.
 When ready, click the download or copy button to receive you configuration.
 Note that when you do this the first time, the device will be created. You are
 able to download or copy the configuration multiple times.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FBNxsoCZQKzccpXlg6LBH%252Fimage.png%3Falt%3Dmedia%26token%3Dbe3a50fd-0db2-4ccf-a05f-cb4dde888d47&width=768&dpr=4&quality=100&sign=4fd08380&sv=2)
 
 ###
 
@@ -508,6 +529,11 @@ configuration is created automatically.
 ####
 
 SDK Example
+
+Below is an example of how to use the[ Python SDK ](/en/keeperpam/secrets-
+manager/developer-sdk-library/python-sdk)to create a configuration file. The
+configuration is created when Secrets Manager is initialized with a One Time
+Access Token.
 
 Copy
 
@@ -532,6 +558,9 @@ use the file to initialize the SDK and remove the One Time Access Token.
 
 Integration Example
 
+Below is in example of using the Keeper Secrets Manager[ Jenkins
+Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin).
+
 The Jenkins plugin takes a One Time Access Token to initialize and creates a
 configuration automatically behind-the-scenes. In this example, simply enter a
 One Time Access Token in the form and click 'OK'.
@@ -550,9 +579,15 @@ cases.
 
 Secrets Manager CLI
 
+The [Secrets Manager CLI (KSM) ](/en/keeperpam/secrets-manager/secrets-
+manager-command-line-interface)tool can initialize a One Time Access Token and
+create a configuration.
+
 To do this, run the `init` command
 
-FormatExample
+Format
+
+Example
 
 Copy
 
@@ -584,7 +619,18 @@ Copy
 
 Commander CLI
 
-FormatExample
+[Commander CLI ](/en/keeperpam/commander-cli/overview)can be used to
+initialize a One Time Access Token and create Secrets Manager configuration.
+
+Use the `secrets-manager client add` Command with `--config-init` to create a
+configuration. Configurations can be created in json or base64 formats, or in
+integration-specific formats in some cases. (see the [integrations
+documentation](/en/keeperpam/secrets-manager/integrations) for more
+information on what format each integration accepts)
+
+Format
+
+Example
 
 Copy
 
@@ -609,57 +655,8 @@ When initializing a configuration in Commander, typically `--unlock-ip` should
 be included in the command. If it is not included, the client device will be
 locked to the IP Address that Commander is using.
 
-Below is an example of how to use theto create a configuration file. The
-configuration is created when Secrets Manager is initialized with a One Time
-Access Token.
-
-Below is in example of using the Keeper Secrets Manager.
-
-The tool can initialize a One Time Access Token and create a configuration.
-
-can be used to initialize a One Time Access Token and create Secrets Manager
-configuration.
-
-Use the `secrets-manager client add` Command with `--config-init` to create a
-configuration. Configurations can be created in json or base64 formats, or in
-integration-specific formats in some cases. (see the  for more information on
-what format each integration accepts)
-
-[ Python SDK ](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk)
-
-[ Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
-
-[Secrets Manager CLI (KSM) ](/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface)
-
-[Commander CLI ](/en/keeperpam/commander-cli/overview)
-
-[integrations documentation](/en/keeperpam/secrets-manager/integrations)
-
-[One Time Access Tokens](/en/keeperpam/secrets-manager/about/one-time-token)
-
 [ client devices](/en/keeperpam/secrets-manager/about/terminology#client-
 device)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F0R4yOre6vH7YIy7c7hyH%252Fimage.png%3Falt%3Dmedia%26token%3D306988c9-4207-4a26-b907-bf1dac42fb2e&width=768&dpr=4&quality=100&sign=d75ba178&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FKtVhHT5wBXRH7GIvItWY%252Fimage.png%3Falt%3Dmedia%26token%3D611661db-1136-40af-8136-62f3e6937b5a&width=768&dpr=4&quality=100&sign=9acfd1f6&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FELVTCYheAKKOqaTG0UcN%252Fimage.png%3Falt%3Dmedia%26token%3Db43706d0-2b3a-4bb8-818a-8ec59d37355d&width=768&dpr=4&quality=100&sign=315c3b49&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJUZwRTrthjUUWhPWAL5z%252Fimage.png%3Falt%3Dmedia%26token%3D7e5f68ba-7f70-4486-9682-050cf07f9e27&width=768&dpr=4&quality=100&sign=43407a42&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FBNxsoCZQKzccpXlg6LBH%252Fimage.png%3Falt%3Dmedia%26token%3Dbe3a50fd-0db2-4ccf-a05f-cb4dde888d47&width=768&dpr=4&quality=100&sign=4fd08380&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

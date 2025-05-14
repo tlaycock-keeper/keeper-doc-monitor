@@ -482,3 +482,9 @@ Encryption Model
 More details about the security and encryption model are [available
 here](/en/keeperpam/secrets-manager/about/security-encryption-model).
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FMsOUZw5soC8Xyi4dSPuT%252Fsecrets-
+manager-
+diagram.png%3Falt%3Dmedia%26token%3Db58ec693-cbe8-4fb9-b08a-2b87d8b9cc14&width=768&dpr=4&quality=100&sign=231c9c66&sv=2)
+

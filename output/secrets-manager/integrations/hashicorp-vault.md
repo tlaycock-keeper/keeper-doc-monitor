@@ -515,7 +515,9 @@ Development Mode
 For testing the plugin or to allow quick development, development mode can be
 used to quickly get the HashiCorp Vault CLI up and running.
 
-WindowsLinux / MacOS
+Windows
+
+Linux / MacOS
 
 ####
 
@@ -573,7 +575,9 @@ Production Mode
 When ready to move to production, the plugin will need to be registered using
 a SHA256 hash of the plugin.
 
-WindowsLinux / MacOS
+Windows
+
+Linux / MacOS
 
 ####
 

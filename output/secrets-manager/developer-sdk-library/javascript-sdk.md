@@ -691,7 +691,9 @@ Retrieve Values From a Secret
 
 **Retrieve a Password**
 
-Get PasswordExample Usage
+Get Password
+
+Example Usage
 
 Copy
 
@@ -716,7 +718,9 @@ Copy
 
 **Retrieve other Fields with Keeper Notation**
 
-Get ValueExample Usage
+Get Value
+
+Example Usage
 
 Copy
 
@@ -785,7 +789,9 @@ any, otherwise undefined.
 
 **Retrieve a TOTP Code**
 
-Get TOTP CodeExample
+Get TOTP Code
+
+Example
 
 Copy
 
@@ -854,7 +860,11 @@ updated record revision)_ so any consecutive updates to an already updated
 record will fail due to **revision** mismatch. Make sure to reload all updated
 records after each update batch.
 
-Update SecretExample UsageTransactional updates
+Update Secret
+
+Example Usage
+
+Transactional updates
 
 Copy
 
@@ -948,7 +958,9 @@ Yes
 
 Generate a Random Password
 
-Generate PasswordExample Usage
+Generate Password
+
+Example Usage
 
 Copy
 
@@ -1250,8 +1262,13 @@ Prerequisites:
 
   * 
 
-Create a RecordCreate Record in Sub-folderLogin Record ExampleCustom Type
-Example
+Create a Record
+
+Create Record in Sub-folder
+
+Login Record Example
+
+Custom Type Example
 
 Copy
 
@@ -1456,7 +1473,9 @@ Delete a Secret
 
 The JavaScript KSM SDK can delete records in the Keeper Vault.
 
-Delete SecretExample
+Delete Secret
+
+Example
 
 Copy
 

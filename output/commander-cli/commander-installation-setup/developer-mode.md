@@ -445,7 +445,7 @@ installation-setup/installation-on-linux)[Next.NET Developer
 Setup](/en/keeperpam/commander-cli/commander-installation-setup/net-developer-
 sdk)
 
-Last updated 5 days ago
+Last updated 6 days ago
 
 Was this helpful?
 
@@ -488,7 +488,9 @@ Install the most recent Python3 installation from .
 
 **Install Virtualenv**
 
-macOS / LinuxWindows
+macOS / Linux
+
+Windows
 
 sudo pip3 install virtualenv
 
@@ -498,7 +500,9 @@ pip install virtualenv
 
 Create and Activate Virtual Environment
 
-macOS / LinuxWindows
+macOS / Linux
+
+Windows
 
 Copy
 

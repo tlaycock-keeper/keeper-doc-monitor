@@ -386,6 +386,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview 
@@ -408,6 +438,15 @@ PDF](/en/keeperpam/~gitbook/pdf?page=JwHgJvf9AUBSg4jvT4Qy&only=yes&limit=100)
 
 Keeper Connections - PostgreSQL Protocol
 
+[PreviousSQL Server Connections](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/sql-server-connections)[NextVNC
+Connections](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/vnc-connections)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -423,8 +462,7 @@ and connected to target databases.
 Prerequisites
 
 Prior to following this guide, familiarize yourself with the prerequisites on
-the Connection's [Getting Started page](/en/keeperpam/privileged-access-
-manager/connections/getting-started).
+the Connection's .
 
 The following PAM records are needed in order to successfully setup this
 protocol:
@@ -450,7 +488,7 @@ to connect to the endpoint
 This guide will use a **PostgreSQL Database**. For more details on how this is
 setup, visit the following page:
 
-  * [Example: PostgreSQL Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database/example-postgresql-database)
+  * 
 
 ##
 
@@ -544,44 +582,12 @@ Insert Configured PAM Settings Pic
 
 Session Recordings - PostgreSQL Protocol
 
-[PreviousSQL Server Connections](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/sql-server-connections)[NextVNC
-Connections](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/vnc-connections)
+[Getting Started page](/en/keeperpam/privileged-access-
+manager/connections/getting-started)
 
-Last updated 3 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+[Example: PostgreSQL Database](/en/keeperpam/privileged-access-
+manager/getting-started/pam-resources/pam-database/example-postgresql-
+database)
 
 For this protocol, both graphical and the full, raw text text content of
 terminal sessions, including timing information, are recorded. For more
@@ -593,6 +599,11 @@ Field
 
 Definition
 
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+
+[Session Recording and Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
+
 PAM Configuration
 
 This is the PAM Configuration that contains the details of your target
@@ -602,11 +613,6 @@ Administrative Credential Record
 
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
-
-[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
-
-[Session Recording and Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)

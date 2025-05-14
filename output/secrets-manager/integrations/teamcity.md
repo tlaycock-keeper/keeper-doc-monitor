@@ -679,14 +679,14 @@ manager/secrets-manager/about/keeper-notation)
 
 [Command Line](https://www.jetbrains.com/help/teamcity/command-line.html)
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
 [_Prerequisites_](/en/keeperpam/secrets-
 manager/integrations/teamcity#prerequisites)
 
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 Adding connection of type Keeper Vault
 

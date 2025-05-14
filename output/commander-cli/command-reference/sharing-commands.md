@@ -555,7 +555,7 @@ Path(s) or UID(s) of folder(s)
 
 **Switches:**
 
--a, --action <{_grant, revoke, remove_}> permission to set for folder(s) / record(s)
+-a, --action <{_grant, remove_}> permission to set for folder(s) / record(s)
 
 -e, --email <EMAIL, TEAM, *>
 
@@ -575,13 +575,13 @@ Path(s) or UID(s) of folder(s)
 
   * @existing/@current - apply permissions to all records currently contained by the specified shared folder(s)
 
--p, --manage-records allow managing records. Users/teams only
+-p, --manage-records toggles the permission to manage records with `on` or `off`. Users/teams only
 
--o, --manage-users allow managing users. Users/teams only
+-o, --manage-users toggles the permission to manage users with `on` or `off`. Users/teams only
 
--s, --can-share allow sharing records. Records only
+-s, --can-share toggles the permission to share records with `on` or `off`. Records only
 
--d, --can-edit allow modifying records in the folder. Records only
+-d, --can-edit toggles the permission to modify records with `on` or `off`. Records only
 
 -f, --force apply permissions changes ignoring default folder permissions
 
@@ -591,37 +591,30 @@ hh:mm:ss])
 \--expire-in PERIOD share expiration: "never" or period
 (<NUMBER>[(y)ears|(mo)nths|(d)ays|(h)ours(mi)nutes])
 
-Shared folder permissions are _additive._ If the default folder permissions
-allow a permission, all users and teams that folder is shared with will have
-that permission unless it is specifically revoked using `-a revoke`
-
 **Examples:**
 
 Copy
 
     
     
-    share-folder memberships -e Jane.Smith@gmail.com -p 
-    sf memberships -r memberships/gym -a revoke --can-share
-    sf jdrkYEaf03bG0ShCGlnKww -e DB_ADMINS -p
-    sf "Team Passwords" -e "Marketing Team" -a grant -o
-    sf * -e DB_ADMINS -p
+    share-folder memberships -e Jane.Smith@gmail.com -p off
+    sf jdrkYEaf03bG0ShCGlnKww -e DB_ADMINS -p on
+    sf "Team Passwords" -e "Marketing Team" -a grant -o on
+    sf * -e DB_ADMINS -p on
     sf -a remove -e Jane.Smith@gmail.com memberships
     sf -e Jane.Smith@gmail.com --expire-in 5h memberships
 
   1. Share the "memberships" shared folder with user Jane.Smith@gmail.com. Allow the user to manage records
 
-  2. Revoke "Can Share" permission from the "gym" record in the "memberships" shared folder
+  2. Share the folder with the given UID with the "DB_ADMINS" team and allow them to manage records in the shared folder
 
-  3. Share the folder with the given UID with the "DB_ADMINS" team and allow them to manage records in the shared folder
+  3. Share a "Team Passwords" folder with a team called "Marketing Team" and give permission to manage users
 
-  4. Share a "Team Passwords" folder with a team called "Marketing Team" and give permission to manage users
+  4. Share all shared folders with the "DB_ADMINS" team and allow them to manage records in the shared folder 
 
-  5. Share all shared folders with the "DB_ADMINS" team and allow them to manage records in the shared folder 
+  5. Remove all access to "memberships" shared folder for user _**Jane.Smith@gmail**_
 
-  6. Remove all access to "memberships" shared folder for user _**Jane.Smith@gmail**_
-
-  7. Grant user read-only access to "memberships" shared-folder, valid only for the next 5 hours
+  6. Grant user read-only access to "memberships" shared-folder, valid only for the next 5 hours
 
 ####
 
@@ -638,8 +631,8 @@ Copy
 
     
     
-    sf --action=grant --email=* --manage-user --manage-records jdrkYEaf03bG0ShCGlnKww
-    sf --action=grant --record=* --can-share --can-edit jdrkYEaf03bG0ShCGlnKww
+    sf --email=* --manage-users on --manage-records on jdrkYEaf03bG0ShCGlnKww
+    sf --record=* --can-share on --can-edit on jdrkYEaf03bG0ShCGlnKww
 
 Hint: You can also apply the same permissions used to set a shared folder's
 default settings (as in the examples above) to records/users currently
@@ -648,11 +641,12 @@ specifying the value "@current" or "@existing" for the appropriate option/s
 (-r for records, -e for users). Using examples similar to the ones above, we
 have the following:
 
-`sf -e * --manage-user --manage-records` -e `@existing`
-`jdrkYEaf03bG0ShCGlnKww`
+Copy
 
-`sf -r * -r @existing --can-share --can-edit -e @existing
-jdrkYEaf03bG0ShCGlnKww`
+    
+    
+    sf -e * --manage-users on --manage-records on -e @existing memberships
+    sf -r * --can-share on --can-edit on -r @existing -e @existing memberships
 
 In the 1st example, we set both the default user permissions and the
 permissions granted to current users assigned to the shared folder to "can
@@ -963,7 +957,7 @@ command call to perform the desired action, like so:
 reference/record-commands/default-record-types)[NextKeeperPAM
 Commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
 
-Last updated 2 months ago
+Last updated 2 days ago
 
 Was this helpful?
 
@@ -1012,11 +1006,11 @@ command)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel02MSVQayPfXmhqbT%252Fimage.png%3Falt%3Dmedia%26token%3D4813048e-99f3-4238-ab10-aacf9ce446d4&width=768&dpr=4&quality=100&sign=ecf067f8&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mekzvgfxbk98bpbGFh_%252Fimage.png%3Falt%3Dmedia%26token%3D32c6aa29-85cd-4de6-a2d7-318085088a5f&width=768&dpr=4&quality=100&sign=dad9d873&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel0U6AJJFYFrnwhdyL%252Fimage.png%3Falt%3Dmedia%26token%3D14e6b9f2-53fe-4c82-9c99-d6b477732436&width=768&dpr=4&quality=100&sign=684ea3d&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel02MSVQayPfXmhqbT%252Fimage.png%3Falt%3Dmedia%26token%3D4813048e-99f3-4238-ab10-aacf9ce446d4&width=768&dpr=4&quality=100&sign=ecf067f8&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -1029,9 +1023,9 @@ files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-MekzeE
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mekzvgfxbk98bpbGFh_%252Fimage.png%3Falt%3Dmedia%26token%3D32c6aa29-85cd-4de6-a2d7-318085088a5f&width=768&dpr=4&quality=100&sign=dad9d873&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel0Z9xJp1m7dxf1H8C%252Fimage.png%3Falt%3Dmedia%26token%3D0c2a9f0e-5f49-4a4b-8fd1-235a3094af72&width=768&dpr=4&quality=100&sign=378b1d3d&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel0Z9xJp1m7dxf1H8C%252Fimage.png%3Falt%3Dmedia%26token%3D0c2a9f0e-5f49-4a4b-8fd1-235a3094af72&width=768&dpr=4&quality=100&sign=378b1d3d&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel0U6AJJFYFrnwhdyL%252Fimage.png%3Falt%3Dmedia%26token%3D14e6b9f2-53fe-4c82-9c99-d6b477732436&width=768&dpr=4&quality=100&sign=684ea3d&sv=2)
 

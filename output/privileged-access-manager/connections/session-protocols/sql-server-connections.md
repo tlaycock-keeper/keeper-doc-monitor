@@ -581,16 +581,6 @@ Insert Configured PAM Settings Pic
 
 Session Recordings - SQL Server Protocol
 
-Field
-
-Definition
-
-For this protocol, both graphical and the full, raw text text content of
-terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this .
-
-  * Learn more about 
-
 [Getting Started page](/en/keeperpam/privileged-access-
 manager/connections/getting-started)
 
@@ -598,10 +588,20 @@ manager/connections/getting-started)
 manager/getting-started/pam-resources/pam-database/example-microsoft-sql-
 server-database)
 
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this .
+
+  * Learn more about 
+
 [page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
 
 [Session Recording and Playback](/en/keeperpam/privileged-access-
 manager/session-recording-and-playback)
+
+Field
+
+Definition
 
 PAM Configuration
 

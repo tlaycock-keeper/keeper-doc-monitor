@@ -386,6 +386,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Download and Installation
@@ -419,6 +449,14 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-Mg6hkOAroPk6q73LlFs&only=yes&limit=100)
 
 Detailed Python SDK docs for Keeper Secrets Manager
 
+[PreviousDeveloper SDKs](/en/keeperpam/secrets-manager/developer-sdk-
+library)[NextJava/Kotlin SDK](/en/keeperpam/secrets-manager/developer-sdk-
+library/java-sdk)
+
+Last updated 1 month ago
+
+Was this helpful?
+
 ##
 
 Download and Installation
@@ -437,9 +475,7 @@ Copy
 
 Source Code
 
-Find the Python source code in the [GitHub
-repository](https://github.com/Keeper-Security/secrets-
-manager/tree/master/sdk/python)
+Find the Python source code in the
 
 ##
 
@@ -452,7 +488,9 @@ Initialize
 Using token only to generate a new config (for later usage) requires at least
 one read operation to bind the token and fully populate `config.json`
 
-Secrets ManagerExample Usage
+Secrets Manager
+
+Example Usage
 
 Copy
 
@@ -506,7 +544,11 @@ Storage Configuration
 
 Retrieve Secrets
 
-Get SecretsExample: Get All SecretsExample: Get Secrets With a Filter
+Get Secrets
+
+Example: Get All Secrets
+
+Example: Get Secrets With a Filter
 
 Copy
 
@@ -590,7 +632,9 @@ Retrieve a Password
 This shortcut gets the password of a secret once that secret has been
 retrieved from Keeper Secrets Manager.
 
-Get PasswordExample Usage
+Get Password
+
+Example Usage
 
 Copy
 
@@ -621,7 +665,9 @@ Copy
 
 Retrieve Standard Fields
 
-FieldExample Usage
+Field
+
+Example Usage
 
 Copy
 
@@ -690,7 +736,9 @@ If passed, set the value of the field to the given value
 
 Retrieve Custom Fields
 
-Custom FieldExample Usage
+Custom Field
+
+Example Usage
 
 Copy
 
@@ -780,7 +828,9 @@ the value or values of the field.**** Will be a single value only if the
 
 Retrieve Secrets by Title
 
-Records by TitleExample Usage
+Records by Title
+
+Example Usage
 
 Copy
 
@@ -829,7 +879,9 @@ Record title to search for
 
 Retrieve Values using Keeper Notation
 
-Get NotationExample Usage
+Get Notation
+
+Example Usage
 
 Copy
 
@@ -855,10 +907,6 @@ Copy
     
     # get a specific custom field with Keeper Notation
     custom_field_value = secrets_manager.get_notation('EG6KdJaaLG7esRZbMnfbFA/custom_field/my_field')
-
-See [Keeper Notation documentation](/en/keeperpam/secrets-
-manager/about/keeper-notation) to learn about Keeper Notation format and
-capabilities
 
 Parameter
 
@@ -890,7 +938,9 @@ The value of the queried field
 
 Retrieve a TOTP Code
 
-Get TOTP CodeExample Usage
+Get TOTP Code
+
+Example Usage
 
 Copy
 
@@ -948,7 +998,11 @@ records after each update batch.
 
 **Save Changes to a Secret**
 
-Save SecretExample UsageTransactional updates
+Save Secret
+
+Example Usage
+
+Transactional updates
 
 Copy
 
@@ -1020,7 +1074,9 @@ Storage and query configuration
 
 Update a Standard Field Value
 
-FieldExample Usage
+Field
+
+Example Usage
 
 Copy
 
@@ -1092,7 +1148,9 @@ If passed, set the value of the field to the given value
 
 Update a Custom Field Value
 
-Custom FieldExample Usage
+Custom Field
+
+Example Usage
 
 Copy
 
@@ -1176,7 +1234,9 @@ If passed, set the value of the field to the given value
 
 Generate a Random Password
 
-Generate PasswordExample Usage
+Generate Password
+
+Example Usage
 
 Copy
 
@@ -1265,7 +1325,9 @@ include.
 
 Download a File
 
-Save FileExample
+Save File
+
+Example
 
 Copy
 
@@ -1314,7 +1376,9 @@ Create folders in the file_path if not present
 
 Upload a File
 
-Upload FileExample
+Upload File
+
+Example
 
 Upload File:
 
@@ -1461,8 +1525,13 @@ Prerequisites:
 
   * 
 
-Create a RecordCreate Record in Sub-folderLogin Record ExampleCustom Type
-Example
+Create a Record
+
+Create Record in Sub-folder
+
+Login Record Example
+
+Custom Type Example
 
 Copy
 
@@ -1634,7 +1703,9 @@ Delete a Secret
 
 The Python KSM SDK can delete records in the Keeper Vault.
 
-Delete SecretExample
+Delete Secret
+
+Example
 
 Copy
 
@@ -1935,49 +2006,13 @@ Copy
     secrets_manager = SecretsManager(config=FileKeyValueStorage('ksm-config.json'))
     secrets_manager.delete_folder(["[FOLDER_UID1]", "[FOLDER_UID2]"], True)
 
-[PreviousDeveloper SDKs](/en/keeperpam/secrets-manager/developer-sdk-
-library)[NextJava/Kotlin SDK](/en/keeperpam/secrets-manager/developer-sdk-
-library/java-sdk)
-
-Last updated 1 month ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 Fields are found by type, for a list of field types see the  documentation.
 
 Custom fields are any field that is not part of the record type definition,
 but can be added by users. For a list of fields in each standard record type,
 see the  documentation.
+
+See  to learn about Keeper Notation format and capabilities
 
 Set field values using the method.
 
@@ -1990,6 +2025,12 @@ Fields are found by type, for a list of field types see the  documentation.
 See the  for expected field formats for each record type
 
 After record creation, you can upload file attachments using
+
+[GitHub repository](https://github.com/Keeper-Security/secrets-
+manager/tree/master/sdk/python)
+
+[Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
+notation)
 
 [field ](/en/keeperpam/secrets-manager/developer-sdk-library/python-
 sdk#retrieve-field-values-from-a-secret)

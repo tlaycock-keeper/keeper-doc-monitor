@@ -467,7 +467,9 @@ Download and Installation
 
 Install With Maven or Gradle
 
-GradleMaven
+Gradle
+
+Maven
 
 build.gradle
 
@@ -778,7 +780,9 @@ Retrieve a Password
 This shortcut gets the password of a secret once that secret has been
 retrieved from Keeper Secrets Manager.
 
-Get PasswordExample Usage
+Get Password
+
+Example Usage
 
 Copy
 
@@ -814,7 +818,9 @@ Copy
 
 Retrieve Fields
 
-Get FieldExample Usage
+Get Field
+
+Example Usage
 
 Copy
 
@@ -849,7 +855,9 @@ Copy
 
 **Keeper Notation**
 
-Get ValueExample Usage
+Get Value
+
+Example Usage
 
 Copy
 
@@ -906,7 +914,9 @@ Dot notation query of desired field
 
 Get TOTP Code
 
-Get TOTP CodeExample Usage
+Get TOTP Code
+
+Example Usage
 
 Copy
 
@@ -965,7 +975,11 @@ records after each update batch.
 
 **Update Secret**
 
-Update SecretExample UsageTransactional updates
+Update Secret
+
+Example Usage
+
+Transactional updates
 
 Copy
 
@@ -1062,7 +1076,9 @@ Record to update
 
 **Update** **Password**
 
-Update PasswordExample Usage
+Update Password
+
+Example Usage
 
 Copy
 
@@ -1115,7 +1131,9 @@ New password to set
 
 **Update other fields**
 
-Set ValueExample Usage
+Set Value
+
+Example Usage
 
 Copy
 
@@ -1148,7 +1166,9 @@ the one value in the values list.
 
 Generate a Random Password
 
-Generate PasswordExample Usage
+Generate Password
+
+Example Usage
 
 Copy
 
@@ -1233,7 +1253,9 @@ include.
 
 Download a File
 
-Download FileExample Usage
+Download File
+
+Example Usage
 
 Copy
 
@@ -1292,7 +1314,9 @@ ByteArray of file for download
 
 Download a **Thumbnail**
 
-Download ThumbnailExample Usage
+Download Thumbnail
+
+Example Usage
 
 Copy
 
@@ -1523,8 +1547,13 @@ Prerequisites:
 
   * 
 
-Create a RecordCreate Record in Sub-folderLogin Record ExampleCustom Type
-Example
+Create a Record
+
+Create Record in Sub-folder
+
+Login Record Example
+
+Custom Type Example
 
 Copy
 
@@ -1718,7 +1747,9 @@ Delete a Secret
 
 The Java/Kotlin KSM SDK can delete records in the Keeper Vault.
 
-Delete SecretExample
+Delete Secret
+
+Example
 
 Copy
 

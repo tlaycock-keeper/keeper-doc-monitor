@@ -423,9 +423,12 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=Zk7ZDLqiN9gpzApd7Oxe&only=yes&limit=100)
 
-Last updated 3 months ago
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
 
-Was this helpful?
+# Setting up SQL Server
+
+Allowing the Keeper Gateway to access Microsoft SQL Server on port 1433
 
 Below is the PowerShell commands to open up port 1433 on the SQL Server
 instance.
@@ -450,15 +453,12 @@ Copy
     # Verify the rules were created
     Get-NetFirewallRule -DisplayName "Allow SQL Server*"
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
-
-# Setting up SQL Server
-
-Allowing the Keeper Gateway to access Microsoft SQL Server on port 1433
-
 [PreviousSetting up WinRM](/en/keeperpam/privileged-access-
 manager/references/setting-up-winrm)[NextDatabase Import and
 Export](/en/keeperpam/privileged-access-manager/references/database-import-
 and-export)
+
+Last updated 3 months ago
+
+Was this helpful?
 

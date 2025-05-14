@@ -418,25 +418,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * What is Keeper Connection Manager On-Prem?
-  * Integration with KeeperPAM
-  * Install KCM
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=jY0Y6A1qOAai0XdtNuj4&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# On-Prem Connection Manager
-
-Manage a self-hosted version of Keeper Connection Manager
-
-[PreviousDiscovery using the Vault](/en/keeperpam/privileged-access-
-manager/discovery/discovery-using-the-
-vault)[NextReferences](/en/keeperpam/privileged-access-manager/references)
 
 Last updated 1 month ago
 
@@ -509,6 +494,21 @@ an integration with Keeper Secrets Manager.
 Install KCM
 
 To learn more about Keeper Connection Manager (on-prem) please visit:
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# On-Prem Connection Manager
+
+Manage a self-hosted version of Keeper Connection Manager
+
+[PreviousDiscovery using the Vault](/en/keeperpam/privileged-access-
+manager/discovery/discovery-using-the-
+vault)[NextReferences](/en/keeperpam/privileged-access-manager/references)
+
+  * Overview
+  * What is Keeper Connection Manager On-Prem?
+  * Integration with KeeperPAM
+  * Install KCM
 
 <https://docs.keeper.io/en/keeper-connection-
 manager>[](https://docs.keeper.io/en/keeper-connection-manager)

@@ -638,6 +638,9 @@ rotation)
 [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
 commands)
 
+[documentation](/en/keeperpam/commander-cli/command-
+reference/plugins/password-rotation#rotate-command)
+
 [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
 cli#typed-vs-untyped-records-v3-vs-v2)
 
@@ -653,7 +656,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FoNT8pQ2Yx
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf4OShy7nCcxJc2f8TN%252Fimage.png%3Falt%3Dmedia%26token%3Dca9f94cf-
 dead-4143-a5a3-ba85cdf257aa&width=768&dpr=4&quality=100&sign=b335ad28&sv=2)
-
-[documentation](/en/keeperpam/commander-cli/command-
-reference/plugins/password-rotation#rotate-command)
 

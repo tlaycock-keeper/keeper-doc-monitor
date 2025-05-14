@@ -447,7 +447,7 @@ Sync secrets from the Keeper Vault with GCP Secret Manager
 plugin)[NextGoogle Cloud Key Management Encryption](/en/keeperpam/secrets-
 manager/integrations/google-cloud-key-management-encryption)
 
-Last updated 28 days ago
+Last updated 29 days ago
 
 Was this helpful?
 
@@ -699,9 +699,6 @@ adc)
 [Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
 notation)
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
 [`sync` command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/sync-command)
 
@@ -731,6 +728,9 @@ x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDv0DO19I0jKIRbiGG8lc%252Fksm-
 sync-
 gcp3.png%3Falt%3Dmedia%26token%3D2521f2f0-6658-4043-a8d9-5b5f2402b1d2&width=768&dpr=4&quality=100&sign=c4c4edd6&sv=2)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)

@@ -446,7 +446,7 @@ manager/connections/session-protocols)[NextRDP
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/rdp-connections)
 
-Last updated 22 days ago
+Last updated 23 days ago
 
 Was this helpful?
 
@@ -648,41 +648,9 @@ PowerShell commands or other administrative actions.
 
 Session Recordings - SSH Protocol
 
-Learn more on how to
-
-[activate SSH on Windows](/en/keeperpam/privileged-access-
-manager/references/setting-up-ssh#windows)
-
-[Getting Started page](/en/keeperpam/privileged-access-
-manager/connections/getting-started)
-
-For this protocol, both graphical and the full, raw text text content of
-terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this .
-
-  * Learn more about 
-
-[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
-
-[Session Recording and Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
-
 Field
 
 Definition
-
-PAM Configuration
-
-This is the PAM Configuration that contains the details of your target
-infrastructure and provides access to the target configured on the PAM Record
-
-Administrative Credential Record
-
-This is the linked  that will be used to authenticate to the target and
-perform administrative operations on it.
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
 
 SSH Session Launching
 
@@ -692,7 +660,15 @@ SFTP File Transfer Options
 
 File Upload Status
 
+Learn more on how to
+
 SSH Session Recordings
+
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this .
+
+  * Learn more about 
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -725,6 +701,30 @@ progress.png%3Falt%3Dmedia%26token%3D50307229-bdbe-4704-bd53-f8485bda7681&width=
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fm3ujLVowAlLGqlZ6ecVJ%252FScreenshot%25202025-01-21%2520at%252012.17.55%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D3bac50e6-864a-4deb-
 ab79-e0b8a871a8ae&width=768&dpr=4&quality=100&sign=62f9e671&sv=2)
+
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+
+[Session Recording and Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
+
+[activate SSH on Windows](/en/keeperpam/privileged-access-
+manager/references/setting-up-ssh#windows)
+
+[Getting Started page](/en/keeperpam/privileged-access-
+manager/connections/getting-started)
+
+PAM Configuration
+
+This is the PAM Configuration that contains the details of your target
+infrastructure and provides access to the target configured on the PAM Record
+
+Administrative Credential Record
+
+This is the linked  that will be used to authenticate to the target and
+perform administrative operations on it.
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
 
 PAM Record
 

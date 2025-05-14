@@ -589,7 +589,11 @@ type: **make sure to convert it to PAM User**.
 
 Setting Up the Rotation in the Keeper Vault
 
-Using AWS Instance RoleUsing AWS PAM ConfigUsing Another Keeper Record
+Using AWS Instance Role
+
+Using AWS PAM Config
+
+Using Another Keeper Record
 
 When the gateway runs in an EC2 instance, you don’t need to provide an admin
 access key to the script. The gateway will leverage the AWS Instance Role

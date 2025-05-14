@@ -418,10 +418,26 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * What are Keeper Tunnels? 
+  * How do Keeper Tunnels work? 
+  * Why Use Keeper Tunnels? 
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=PSb02o2M4zNmZnVHJgxn&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Tunnels
+
+Create a secure and encrypted TCP/IP connection to your target endpoint from
+your Vault
+
+[PreviousPostgreSQL Protocol - PostgreSQL Database](/en/keeperpam/privileged-
+access-manager/connections/examples/postgresql-protocol-postgresql-
+database)[NextSetting up Tunnels](/en/keeperpam/privileged-access-
+manager/tunnels/setting-up-tunnels)
 
 Last updated 2 months ago
 
@@ -479,22 +495,6 @@ version 17.1 or newer to use Tunnels
 For more details on the security model, see the  page.
 
 To get started with Keeper Tunnels, proceed to the .
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# Tunnels
-
-Create a secure and encrypted TCP/IP connection to your target endpoint from
-your Vault
-
-[PreviousPostgreSQL Protocol - PostgreSQL Database](/en/keeperpam/privileged-
-access-manager/connections/examples/postgresql-protocol-postgresql-
-database)[NextSetting up Tunnels](/en/keeperpam/privileged-access-
-manager/tunnels/setting-up-tunnels)
-
-  * What are Keeper Tunnels? 
-  * How do Keeper Tunnels work? 
-  * Why Use Keeper Tunnels? 
 
 [Download the Keeper Desktop](https://www.keepersecurity.com/download.html)
 
