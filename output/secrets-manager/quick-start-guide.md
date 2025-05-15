@@ -386,36 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Video Overview
@@ -459,6 +429,36 @@ manager/overview)[NextAbout KSM](/en/keeperpam/secrets-manager/about)
 Last updated 4 months ago
 
 Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -974,7 +974,7 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9wMASX6k3
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJbmBKgn2PNTZcVMz6j1T%252Fcreate%2520new.png%3Falt%3Dmedia%26token%3Da06314ec-e95d-4326-9838-2bca06b1f726&width=768&dpr=4&quality=100&sign=e9a556ca&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNhfADxuH7QR80MwgKsYO%252FScreen%2520Shot%25202022-01-07%2520at%25201.28.07%2520PM.png%3Falt%3Dmedia%26token%3D0c8a4bb6-ce0f-4a76-8823-2d8612865bcd&width=768&dpr=4&quality=100&sign=e4337abe&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MgS3wjqgG-LoAx-
@@ -983,11 +983,7 @@ overview.png%3Falt%3Dmedia%26token%3D0100630b-af34-462a-874f-1dbf183fb726&width=
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNhfADxuH7QR80MwgKsYO%252FScreen%2520Shot%25202022-01-07%2520at%25201.28.07%2520PM.png%3Falt%3Dmedia%26token%3D0c8a4bb6-ce0f-4a76-8823-2d8612865bcd&width=768&dpr=4&quality=100&sign=e4337abe&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYt6M4J0MAswGiBeuWLld%252Fadd%2520role.png%3Falt%3Dmedia%26token%3D3a2ef309-44a5-4220-8df9-6772a9a6002d&width=768&dpr=4&quality=100&sign=48844f32&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJbmBKgn2PNTZcVMz6j1T%252Fcreate%2520new.png%3Falt%3Dmedia%26token%3Da06314ec-e95d-4326-9838-2bca06b1f726&width=768&dpr=4&quality=100&sign=e9a556ca&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -995,7 +991,15 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIMcLUmOJo
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYt6M4J0MAswGiBeuWLld%252Fadd%2520role.png%3Falt%3Dmedia%26token%3D3a2ef309-44a5-4220-8df9-6772a9a6002d&width=768&dpr=4&quality=100&sign=48844f32&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fv2HrzBxHe3F1tME28i9X%252Fshared%2520folder%2520form.png%3Falt%3Dmedia%26token%3D1972fbed-e232-4af0-aba3-4e7628cfe09e&width=768&dpr=4&quality=100&sign=3fcc504e&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlezLERMM1S1hgmJHBQlF%252Fcreate%2520new%2520record%2520highlighted.png%3Falt%3Dmedia%26token%3D118f7956-8cef-4494-9d87-c087a9f31b4f&width=768&dpr=4&quality=100&sign=981df805&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -1003,7 +1007,15 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5b6n9UPDg
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfS3uOY84OsE1zXFoyYR8%252Fapp%2520form%2520choose%2520folder.png%3Falt%3Dmedia%26token%3D8636a87c-2030-419e-a1a2-3d70955e288f&width=768&dpr=4&quality=100&sign=6ede5864&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYA7K1sEdaLVyojGuEPqR%252Fcraete%2520app.png%3Falt%3Dmedia%26token%3D55e51694-9fa4-4628-a340-38942c26ec1f&width=768&dpr=4&quality=100&sign=d99717ea&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPgDwQiCrwyCzynqZniPp%252Fdevice%2520form%2520one%2520time%2520token.png%3Falt%3Dmedia%26token%3D8e7db73c-643b-42c2-a6bc-82dc64b629b1&width=768&dpr=4&quality=100&sign=6d2301e3&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -1012,17 +1024,5 @@ da8ff914fb9d&width=768&dpr=4&quality=100&sign=7dd41e6b&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfS3uOY84OsE1zXFoyYR8%252Fapp%2520form%2520choose%2520folder.png%3Falt%3Dmedia%26token%3D8636a87c-2030-419e-a1a2-3d70955e288f&width=768&dpr=4&quality=100&sign=6ede5864&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlezLERMM1S1hgmJHBQlF%252Fcreate%2520new%2520record%2520highlighted.png%3Falt%3Dmedia%26token%3D118f7956-8cef-4494-9d87-c087a9f31b4f&width=768&dpr=4&quality=100&sign=981df805&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSmttTfmZfAzSmQ7BbE83%252Fapp%2520form%2520filled.png%3Falt%3Dmedia%26token%3De48cf671-35e1-4ed7-9754-9c211c162d38&width=768&dpr=4&quality=100&sign=8e39d8fd&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPgDwQiCrwyCzynqZniPp%252Fdevice%2520form%2520one%2520time%2520token.png%3Falt%3Dmedia%26token%3D8e7db73c-643b-42c2-a6bc-82dc64b629b1&width=768&dpr=4&quality=100&sign=6d2301e3&sv=2)
 

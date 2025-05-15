@@ -386,6 +386,44 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=9KivwNIHN952SKcG5LGp&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+
+# Connection Commands
+
+##
+
+About
+
+Commander can use credentials from your vault to facilitate connections
+directly from the CLI.
+
+See the nested pages for more information on Commander's connection
+capability.
+
+[SSH](/en/keeperpam/commander-cli/command-reference/connection-
+commands/ssh)[SSH Agent](/en/keeperpam/commander-cli/command-
+reference/connection-commands/ssh-agent)[RDP](/en/keeperpam/commander-
+cli/command-reference/connection-commands/rdp)[Connect
+Command](/en/keeperpam/commander-cli/command-reference/connection-
+commands/connection-to-hosts)[SFTP Sync](/en/keeperpam/commander-cli/command-
+reference/connection-commands/sftp-sync)
+
+[PreviousKeeperPAM Commands](/en/keeperpam/commander-cli/command-
+reference/keeperpam-commands)[NextSSH](/en/keeperpam/commander-cli/command-
+reference/connection-commands/ssh)
+
+Last updated 7 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -415,47 +453,4 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=9KivwNIHN952SKcG5LGp&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-
-# Connection Commands
-
-[PreviousKeeperPAM Commands](/en/keeperpam/commander-cli/command-
-reference/keeperpam-commands)[NextSSH](/en/keeperpam/commander-cli/command-
-reference/connection-commands/ssh)
-
-Last updated 7 months ago
-
-Was this helpful?
-
-##
-
-About
-
-Commander can use credentials from your vault to facilitate connections
-directly from the CLI.
-
-See the nested pages for more information on Commander's connection
-capability.
-
-[SSH](/en/keeperpam/commander-cli/command-reference/connection-commands/ssh)
-
-[SSH Agent](/en/keeperpam/commander-cli/command-reference/connection-
-commands/ssh-agent)
-
-[RDP](/en/keeperpam/commander-cli/command-reference/connection-commands/rdp)
-
-[Connect Command](/en/keeperpam/commander-cli/command-reference/connection-
-commands/connection-to-hosts)
-
-[SFTP Sync](/en/keeperpam/commander-cli/command-reference/connection-
-commands/sftp-sync)
 

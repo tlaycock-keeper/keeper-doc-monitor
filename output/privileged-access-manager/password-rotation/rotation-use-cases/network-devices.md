@@ -402,6 +402,20 @@ PDF](/en/keeperpam/~gitbook/pdf?page=OsdnLDXKxa10qr7MoiGZ&only=yes&limit=100)
 
 # Network Devices
 
+###
+
+Rotating Users on Cisco IOS XE
+
+[Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/network-devices/cisco-ios-xe)
+
+###
+
+Rotating Users on Cisco Meraki
+
+[Cisco Meraki](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/network-devices/cisco-meraki)
+
 [PreviousRotate Credential via REST API](/en/keeperpam/privileged-access-
 manager/password-rotation/rotation-use-cases/saas-accounts/rotate-credential-
 via-rest-api)[NextCisco IOS XE](/en/keeperpam/privileged-access-
@@ -440,18 +454,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-###
-
-Rotating Users on Cisco IOS XE
-
-###
-
-Rotating Users on Cisco Meraki
-
-[Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/network-devices/cisco-ios-xe)
-
-[Cisco Meraki](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/network-devices/cisco-meraki)
 

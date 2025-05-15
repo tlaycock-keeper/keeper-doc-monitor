@@ -446,7 +446,7 @@ manager/connections/examples)[NextRDP Protocol - Azure Virtual
 Machine](/en/keeperpam/privileged-access-manager/connections/examples/rdp-
 protocol-azure-virtual-machine)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

@@ -638,11 +638,11 @@ rotation)
 [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
 commands)
 
-[documentation](/en/keeperpam/commander-cli/command-
-reference/plugins/password-rotation#rotate-command)
-
 [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
 cli#typed-vs-untyped-records-v3-vs-v2)
+
+[documentation](/en/keeperpam/commander-cli/command-
+reference/plugins/password-rotation#rotate-command)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

@@ -446,7 +446,7 @@ manager/connections/examples/ssh-protocol-linux-machine)[NextMySQL Protocol -
 MySQL Database](/en/keeperpam/privileged-access-
 manager/connections/examples/mysql-protocol-mysql-database)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

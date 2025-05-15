@@ -418,10 +418,32 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Access Denied
+  * Enabling the Secrets Manager Add On
+  * Enabling the Secrets Manager Enforcement Policy
+  * Record UID Starts With "-"
+  * Record not Found
+  * Share Records with Secrets Manager
+  * Identify Typed Records
+  * Create Typed Records
+  * Convert Untyped Records
+  * Throttling
+  * Details of the rate limits:
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=8CA1mDEqyo6hswqSTffS&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+
+# Troubleshooting
+
+Solutions to common Secrets Manager issues
+
+[PreviousXSOAR](/en/keeperpam/secrets-
+manager/integrations/xsoar)[NextCommander Overview](/en/keeperpam/commander-
+cli/overview)
 
 Last updated 5 months ago
 
@@ -467,10 +489,22 @@ Enabling Secrets Manager with Keeper Commander
 You must have Keeper account administrative permissions to create and edit
 roles.
 
+Copy
+
+    
+    
+    er --enforcement="allow_secrets_manager:true" "<ROLE NAME>"
+
 Replace <ROLE NAME> with the role you would like to set the enforcement policy
 to.
 
 For example, to set the enforcement on the Keeper Administrator role:
+
+Copy
+
+    
+    
+    er --enforcement="allow_secrets_manager:true" "Keeper Administrator"
 
 ##
 
@@ -511,6 +545,12 @@ give access to all records in that folder.
 To share records or shared folders with a Secrets Manager Application, in
 Commander use the following command:
 
+Copy
+
+    
+    
+    sm share add -a <APPLICATION NAME> -s <RECORD OR FOLDER UID>
+
 ###
 
 Identify Typed Records
@@ -521,8 +561,29 @@ be found.
 
 To identify if a record is typed in Commander, use the `get` command
 
+Copy
+
+    
+    
+    get <UID>
+
 If the record has a type (and is compatible with Secrets Manager) it will be
 displayed in the record information
+
+Copy
+
+    
+    
+    my vault> get pICzm4iw9sW454m2ZR4mmQ
+    
+                     UID: pICzm4iw9sW454m2ZR4mmQ
+                    Type: login
+                   Title: My Login
+                 (login): john.doe
+              (password): N*3s.kk/Ji20}cJ7
+                  Shared: False
+           Last Modified: 2021-10-18 16:08:04
+                Revision: 887800170
 
 If the record is not typed (and not compatible with Secrets Manager) it will
 not have a Type field.
@@ -530,6 +591,24 @@ not have a Type field.
 Additionally, you can view all records in the current folder using the `ls -l`
 command. The resulting table has a type column. Any records which are blank in
 the type column are non typed records.
+
+Copy
+
+    
+    
+    My Vault> ls -l
+      #  Folder UID              Name               Flags
+    ---  ----------------------  -----------------  -------
+      1  RpdmergF5lpsaID3TcHu8A  Devops Secrets     S
+      2  461XtX26R1SggIyQDFGfZg  Secrets            S
+      3  ZDw67iL28d6-YqUVwBHAug  Social
+    
+      #  Record UID              Type                 Title                    Login                  URL
+    ---  ----------------------  -------------------  -----------------------  ---------------------  -------------------
+      1  FyP2it0DzwIDPSbch2WyHw  address              Bank Address 1
+      2  pICzm4iw9sWS_4m2ZR4mmQ  login                breached                 john.doe@example.com    keepersecurity.com
+      3  qUX4gSlmDRfM1Kq9lrQi-w  databaseCredentials  MySQL Database           SQL_Admin
+      4  rlr04tiSxFmLmRNjEC7h7Q                       NonTyped Record          legacy                  test.com
 
 In the above example, the bottom record (#4) is not typed, and not compatible
 with Secrets Manager
@@ -566,6 +645,12 @@ Format:
 `convert <UID> --type <TYPE>`
 
 Example:
+
+Copy
+
+    
+    
+    convert Dtvb84zwkBmZgxrUByUfpg --type login
 
 The convert command can use patterns to find all relevant records, can
 recursively apply the conversion to all sub-folders, and supports all record
@@ -618,91 +703,6 @@ using the  in Commander.
 
 For more information on using the `convert` command, see the
 
-Copy
-
-    
-    
-    er --enforcement="allow_secrets_manager:true" "<ROLE NAME>"
-
-Copy
-
-    
-    
-    er --enforcement="allow_secrets_manager:true" "Keeper Administrator"
-
-Copy
-
-    
-    
-    sm share add -a <APPLICATION NAME> -s <RECORD OR FOLDER UID>
-
-Copy
-
-    
-    
-    get <UID>
-
-Copy
-
-    
-    
-    my vault> get pICzm4iw9sW454m2ZR4mmQ
-    
-                     UID: pICzm4iw9sW454m2ZR4mmQ
-                    Type: login
-                   Title: My Login
-                 (login): john.doe
-              (password): N*3s.kk/Ji20}cJ7
-                  Shared: False
-           Last Modified: 2021-10-18 16:08:04
-                Revision: 887800170
-
-Copy
-
-    
-    
-    My Vault> ls -l
-      #  Folder UID              Name               Flags
-    ---  ----------------------  -----------------  -------
-      1  RpdmergF5lpsaID3TcHu8A  Devops Secrets     S
-      2  461XtX26R1SggIyQDFGfZg  Secrets            S
-      3  ZDw67iL28d6-YqUVwBHAug  Social
-    
-      #  Record UID              Type                 Title                    Login                  URL
-    ---  ----------------------  -------------------  -----------------------  ---------------------  -------------------
-      1  FyP2it0DzwIDPSbch2WyHw  address              Bank Address 1
-      2  pICzm4iw9sWS_4m2ZR4mmQ  login                breached                 john.doe@example.com    keepersecurity.com
-      3  qUX4gSlmDRfM1Kq9lrQi-w  databaseCredentials  MySQL Database           SQL_Admin
-      4  rlr04tiSxFmLmRNjEC7h7Q                       NonTyped Record          legacy                  test.com
-
-Copy
-
-    
-    
-    convert Dtvb84zwkBmZgxrUByUfpg --type login
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-
-# Troubleshooting
-
-Solutions to common Secrets Manager issues
-
-[PreviousXSOAR](/en/keeperpam/secrets-
-manager/integrations/xsoar)[NextCommander Overview](/en/keeperpam/commander-
-cli/overview)
-
-  * Access Denied
-  * Enabling the Secrets Manager Add On
-  * Enabling the Secrets Manager Enforcement Policy
-  * Record UID Starts With "-"
-  * Record not Found
-  * Share Records with Secrets Manager
-  * Identify Typed Records
-  * Create Typed Records
-  * Convert Untyped Records
-  * Throttling
-  * Details of the rate limits:
-
 [Keeper Commander](/en/keeperpam/commander-cli/overview)
 
 [Enterprise Management Commands documentation](/en/keeperpam/commander-
@@ -732,9 +732,9 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRJAbUfRGI
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZI8uVnbFAttuJSrHO6bu%252Fimage.png%3Falt%3Dmedia%26token%3Da7f8f60a-9acb-46c1-acbc-7d1373a5202c&width=768&dpr=4&quality=100&sign=50dc6ac1&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTG9RqjA7M6aC9SgkAQdp%252Fimage.png%3Falt%3Dmedia%26token%3D6567844a-f602-4c8a-9548-5deeeb24e6d8&width=768&dpr=4&quality=100&sign=5a9ae30b&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTG9RqjA7M6aC9SgkAQdp%252Fimage.png%3Falt%3Dmedia%26token%3D6567844a-f602-4c8a-9548-5deeeb24e6d8&width=768&dpr=4&quality=100&sign=5a9ae30b&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZI8uVnbFAttuJSrHO6bu%252Fimage.png%3Falt%3Dmedia%26token%3Da7f8f60a-9acb-46c1-acbc-7d1373a5202c&width=768&dpr=4&quality=100&sign=50dc6ac1&sv=2)
 

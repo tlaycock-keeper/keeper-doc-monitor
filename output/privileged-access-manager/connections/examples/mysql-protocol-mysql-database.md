@@ -447,7 +447,7 @@ machine)[NextPostgreSQL Protocol - PostgreSQL
 Database](/en/keeperpam/privileged-access-
 manager/connections/examples/postgresql-protocol-postgresql-database)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

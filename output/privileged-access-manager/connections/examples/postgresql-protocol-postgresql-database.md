@@ -445,7 +445,7 @@ Establish a connection to a PostgreSQL Database directly from your Vault
 manager/connections/examples/mysql-protocol-mysql-
 database)[NextTunnels](/en/keeperpam/privileged-access-manager/tunnels)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

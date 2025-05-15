@@ -386,6 +386,32 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Prerequisites
+  * Features
+  * GitHub Authentication
+  * Signing Commits
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=e89A5oy3ecBtC0tegIz1&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [SSH Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
+
+# Integration with Git
+
+Keeper SSH Agent integration for Git Authentication and Commit Signing
+
+[PreviousSSH Agent](/en/keeperpam/privileged-access-manager/ssh-
+agent)[NextDiscovery](/en/keeperpam/privileged-access-manager/discovery)
+
+Last updated 26 days ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -415,32 +441,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Prerequisites
-  * Features
-  * GitHub Authentication
-  * Signing Commits
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=e89A5oy3ecBtC0tegIz1&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [SSH Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
-
-# Integration with Git
-
-Keeper SSH Agent integration for Git Authentication and Commit Signing
-
-[PreviousSSH Agent](/en/keeperpam/privileged-access-manager/ssh-
-agent)[NextDiscovery](/en/keeperpam/privileged-access-manager/discovery)
-
-Last updated 25 days ago
-
-Was this helpful?
 
 Keeper's SSH Agent integrates seamlessly with Git for authentication and
 commit signing, ensuring private keys are securely stored in the Keeper Vault

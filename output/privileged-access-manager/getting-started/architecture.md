@@ -434,7 +434,7 @@ Technical details on the KeeperPAM platform architecture
 started)[NextArchitecture Diagram](/en/keeperpam/privileged-access-
 manager/getting-started/architecture/system-architecture)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

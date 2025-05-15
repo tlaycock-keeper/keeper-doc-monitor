@@ -496,11 +496,11 @@ gateway.
 
 Email alerts contain event information
 
-[Reporting, Alerts & SIEM integration](https://docs.keeper.io/en/enterprise-
-guide/event-reporting)
-
 [Keeper Commander](/en/keeperpam/commander-cli/command-reference/reporting-
 commands#audit-report-command)
+
+[Reporting, Alerts & SIEM integration](https://docs.keeper.io/en/enterprise-
+guide/event-reporting)
 
 KeeperPAM Events
 

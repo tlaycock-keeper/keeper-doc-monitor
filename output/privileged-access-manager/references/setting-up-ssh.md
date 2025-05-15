@@ -575,7 +575,7 @@ Note:
 manager/references/port-mapping)[NextSetting up
 WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

@@ -418,25 +418,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Setup KSM
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=3Uoyio5gnT7neL5zeZFT&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
-
-# Creating KSM App for Rotation
-
-Steps to create a Keeper Secrets Manager application for rotation of passwords
-
-[PreviousInstalling Docker on Linux](/en/keeperpam/privileged-access-
-manager/references/installing-docker-on-linux)[NextActive Directory Least
-Privilege](/en/keeperpam/privileged-access-manager/references/active-
-directory-least-privilege)
 
 Last updated 4 months ago
 
@@ -470,6 +455,21 @@ Setup KSM
 You can safely ignore the first One-Time Access Token generated for the newly
 created KSM application. When creating a Keeper Gateway device, a different
 One-Time Access Token will be created.
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
+
+# Creating KSM App for Rotation
+
+Steps to create a Keeper Secrets Manager application for rotation of passwords
+
+[PreviousInstalling Docker on Linux](/en/keeperpam/privileged-access-
+manager/references/installing-docker-on-linux)[NextActive Directory Least
+Privilege](/en/keeperpam/privileged-access-manager/references/active-
+directory-least-privilege)
+
+  * Overview
+  * Setup KSM
 
 [About KSM](/en/keeperpam/secrets-manager/about)
 

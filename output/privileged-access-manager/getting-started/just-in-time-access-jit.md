@@ -718,9 +718,6 @@ contact your Keeper Security account manager or email .
 
 [pam@keepersecurity.com](mailto:pam@keepersecurity.com)
 
-[Time-Limited Access](https://docs.keeper.io/en/enterprise-guide/sharing/time-
-limited-access)
-
 Just-In-Time Ephemeral Account Creation during PAM Sessions
 
 Just-In-Time Role Elevation during Privileged Sessions
@@ -757,4 +754,7 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGk3XjDE5O
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWkIRRG35dLvClY5Rnq4J%252FPAM%2520Settings%2520-%2520Workflow.png%3Falt%3Dmedia%26token%3De7d0e549-6267-40c8-bbcf-
 cb929b534bc0&width=768&dpr=4&quality=100&sign=88359820&sv=2)
+
+[Time-Limited Access](https://docs.keeper.io/en/enterprise-guide/sharing/time-
+limited-access)
 

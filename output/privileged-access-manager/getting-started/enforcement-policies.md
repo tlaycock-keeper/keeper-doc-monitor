@@ -447,7 +447,7 @@ Role-based enforcement policy settings for KeeperPAM
 started/keeperpam-licensing)[NextVault Structure](/en/keeperpam/privileged-
 access-manager/getting-started/vault-structure)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

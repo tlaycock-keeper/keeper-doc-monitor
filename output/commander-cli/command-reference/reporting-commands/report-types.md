@@ -386,36 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * About
@@ -544,24 +514,54 @@ Command
 
 Explanation
 
+[`action-report`](/en/keeperpam/commander-cli/command-reference/reporting-
+commands#action-report-command)
+
 Show users that haven't performed a specific action in a given number of days
+
+[`aging-report`](/en/keeperpam/commander-cli/command-reference/reporting-
+commands#aging-report-command)
 
 Display a report of password changes and search for records that have NOT been
 changed
 
+[`audit-log`](/en/keeperpam/commander-cli/command-reference/reporting-
+commands#audit-log-command)
+
 Export the enterprise audit and event logs
+
+[`audit-report`](/en/keeperpam/commander-cli/command-reference/reporting-
+commands#audit-report-command)
 
 Show a customized report of audit events
 
+[`compliance-report`](/en/keeperpam/commander-cli/command-reference/reporting-
+commands#compliance-report-command)
+
 See information about records in vaults of users across the enterprise
+
+[`msp-license-report`](/en/keeperpam/commander-cli/command-
+reference/reporting-commands#msp-license-report-command)
 
 Display information on managed company plans and available licenses
 
+[`security-audit-report`](/en/keeperpam/commander-cli/command-
+reference/reporting-commands#security-audit-report-command)
+
 Show report of password security strength for each user in the enterprise
+
+[`shared-records-report`](/en/keeperpam/commander-cli/command-
+reference/reporting-commands#shared-records-report-command)
 
 Display information about shared records
 
+[`share-report`](/en/keeperpam/commander-cli/command-reference/reporting-
+commands#share-report-command)
+
 Show a report of shared records in the logged-in Keeper vault
+
+[`user-report`](/en/keeperpam/commander-cli/command-reference/reporting-
+commands#user-report-command)
 
 Show a report of user logins
 
@@ -773,33 +773,33 @@ Last updated 10 months ago
 
 Was this helpful?
 
-[`action-report`](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#action-report-command)
+#### Company
 
-[`aging-report`](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#aging-report-command)
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-[`audit-log`](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#audit-log-command)
+#### Support
 
-[`audit-report`](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#audit-report-command)
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-[`compliance-report`](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#compliance-report-command)
+#### Solutions
 
-[`msp-license-report`](/en/keeperpam/commander-cli/command-
-reference/reporting-commands#msp-license-report-command)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-[`security-audit-report`](/en/keeperpam/commander-cli/command-
-reference/reporting-commands#security-audit-report-command)
+#### Pricing
 
-[`shared-records-report`](/en/keeperpam/commander-cli/command-
-reference/reporting-commands#shared-records-report-command)
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
-[`share-report`](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#share-report-command)
-
-[`user-report`](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#user-report-command)
+© 2025 Keeper Security, Inc.
 

@@ -887,13 +887,13 @@ manager/about/terminology#application)
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
 
+[Configuration Documentation](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration#creating-a-secrets-manager-configuration)
+
 [Releases · Keeper-Security/secrets-managerGitHub](https://github.com/Keeper-
 Security/secrets-manager/releases)
 
 Secrets Manager Releases
-
-[Configuration Documentation](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration#creating-a-secrets-manager-configuration)
 
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
 

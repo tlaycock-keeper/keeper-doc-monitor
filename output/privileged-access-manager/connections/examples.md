@@ -435,7 +435,7 @@ manager/connections/session-protocols/telnet-connections)[NextSSH Protocol -
 Linux Machine](/en/keeperpam/privileged-access-
 manager/connections/examples/ssh-protocol-linux-machine)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

@@ -438,7 +438,7 @@ Quickly and easily get started with a pre-configured PAM setup in your vault
 steps)[NextGetting Started](/en/keeperpam/privileged-access-manager/getting-
 started)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

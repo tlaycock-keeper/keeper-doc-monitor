@@ -418,31 +418,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * About
-  * Features
-  * Prerequisites
-  * Setup
-  * Vault
-  * KSM
-  * AWS Config
-  * Usage
-  * Feature Request / Report an Issue
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=gAb10j5dTXD4YGUMOksM&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# AWS CLI Credential Process
-
-Protect your AWS Access Keys with Keeper Secrets Manager
-
-[PreviousAnsible Tower](/en/keeperpam/secrets-
-manager/integrations/ansible/ansible-tower)[NextAWS Secrets Manager
-Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
 
 Last updated 4 months ago
 
@@ -513,14 +492,6 @@ Now in your AWS configuration file, which is usually located at
 `~/.aws/config`, add the following line to any profile you are using via the
 CLI.
 
-Copy
-
-    
-    
-    # Add the UID for your AWS Access Key
-    #credential_process = /path/to/keeper-aws-credential-process --uid <Record UID>
-    credential_process = /opt/keeper-aws-credential-process-v0.1.1_linux_amd64  --uid <Record UID>
-
 ##
 
 Usage
@@ -528,13 +499,6 @@ Usage
 Once configured as above, the AWS CLI will automatically fetch your
 authentication credential from the Keeper Vault. You can test that it works by
 using any CLI command in which you have an appropriate IAM role for, such as:
-
-Copy
-
-    
-    
-    # List all s3 buckets
-    aws s3 ls
 
 If the command completes without error, congratulations, you are now fully set
 up.
@@ -573,6 +537,42 @@ up automatically or on credential process misconfiguration.
 
 This Credential Process is . If you need to report a bug or would like to
 request a feature to support more authentication use cases, please .
+
+Copy
+
+    
+    
+    # Add the UID for your AWS Access Key
+    #credential_process = /path/to/keeper-aws-credential-process --uid <Record UID>
+    credential_process = /opt/keeper-aws-credential-process-v0.1.1_linux_amd64  --uid <Record UID>
+
+Copy
+
+    
+    
+    # List all s3 buckets
+    aws s3 ls
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# AWS CLI Credential Process
+
+Protect your AWS Access Keys with Keeper Secrets Manager
+
+[PreviousAnsible Tower](/en/keeperpam/secrets-
+manager/integrations/ansible/ansible-tower)[NextAWS Secrets Manager
+Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+
+  * About
+  * Features
+  * Prerequisites
+  * Setup
+  * Vault
+  * KSM
+  * AWS Config
+  * Usage
+  * Feature Request / Report an Issue
 
 [Quick Start Guide](https://docs.keeper.io/secrets-manager/secrets-
 manager/quick-start-guide)

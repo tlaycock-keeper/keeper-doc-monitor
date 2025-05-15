@@ -478,8 +478,6 @@ Discovery Enforcement Policies
 On the Admin Console, the following Enforcement Policies affect the user's
 ability to run Discovery jobs.
 
-Enable Discovery Policy
-
 Enforcement Policy
 
 Enforcement Policy
@@ -744,6 +742,8 @@ manager/discovery/discovery-using-commander)
 [Discovery using the Vault](/en/keeperpam/privileged-access-
 manager/discovery/discovery-using-the-vault)
 
+[learn more](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
+
 [Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
 manager-commands#overview)
 
@@ -753,10 +753,10 @@ started/enforcement-policies)
 [Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
 started/gateways)
 
+Enable Discovery Policy
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FpIEvx3uoWPQt4DOxWMXR%252FScreenshot%25202025-03-17%2520at%25208.00.04%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D216d6d74-3f07-4395-a9ad-
 cf1e0a76c43b&width=768&dpr=4&quality=100&sign=120cbe29&sv=2)
-
-[learn more](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
 

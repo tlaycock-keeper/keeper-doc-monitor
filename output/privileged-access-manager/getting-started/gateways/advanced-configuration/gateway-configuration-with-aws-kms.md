@@ -447,7 +447,7 @@ Configuration with Custom Fields](/en/keeperpam/privileged-access-
 manager/getting-started/gateways/advanced-configuration/gateway-configuration-
 with-custom-fields)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 
@@ -622,6 +622,12 @@ Copy
     
     systemctl status keeper-gateway.service
 
+[Docker Installation](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/docker-installation)
+
+[Linux Installation](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/linux-installation)
+
 Select Configuration Method
 
 Copy the Base64 Configuration
@@ -631,12 +637,6 @@ Create Secret using Plaintext formatting
 Secret Name and Description
 
 View Secrets
-
-[Docker Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/docker-installation)
-
-[Linux Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/linux-installation)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

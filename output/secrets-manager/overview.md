@@ -436,7 +436,7 @@ Overview of Keeper Secrets Manager (KSM) for IT Admins, DevOps & Developers
 [PreviousFAQs](/en/keeperpam/faqs)[NextQuick Start
 Guide](/en/keeperpam/secrets-manager/quick-start-guide)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

@@ -749,6 +749,8 @@ Was this helpful?
 
 _Find more information in the_
 
+User invite email
+
 Before getting started, be sure that you have the most up-to-date version of
 Commander. Find the most recent release on the .
 
@@ -768,8 +770,6 @@ email-addresses-in-a-file)
 
 [_documentation page_](/en/keeperpam/commander-cli/commander-installation-
 setup/logging-in#persistent-login)
-
-User invite email
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
