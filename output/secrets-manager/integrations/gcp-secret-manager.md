@@ -668,12 +668,6 @@ account principal to sync.
 Service Account Credentials are used. By default, GCP clients use  which can
 be created using
 
-GCP Credentials Record Type Definition
-
-GCP Credentials Record Create
-
-GCP Credentials fields as custom fields
-
 See the  for more information
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
@@ -702,6 +696,18 @@ notation)
 [`sync` command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/sync-command)
 
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
+GCP Credentials Record Type Definition
+
+GCP Credentials Record Create
+
+GCP Credentials fields as custom fields
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FmqGoDtyLNTaLkl9bVfCi%252Fdatasource-
@@ -728,10 +734,4 @@ x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDv0DO19I0jKIRbiGG8lc%252Fksm-
 sync-
 gcp3.png%3Falt%3Dmedia%26token%3D2521f2f0-6658-4043-a8d9-5b5f2402b1d2&width=768&dpr=4&quality=100&sign=c4c4edd6&sv=2)
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 

@@ -447,7 +447,7 @@ Installing the Keeper Commander PowerShell Module
 installation-setup/net-developer-sdk)[NextLogging in](/en/keeperpam/commander-
 cli/commander-installation-setup/logging-in)
 
-Last updated 29 days ago
+Last updated 1 month ago
 
 Was this helpful?
 

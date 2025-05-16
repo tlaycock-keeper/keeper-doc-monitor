@@ -386,6 +386,29 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=4EmNwhLtN0xVuuHLgUmV&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+
+# Automating with Windows Task
+
+Running Commander CLI commands using Windows Task automation
+
+[PreviousAWS Key Management Service](/en/keeperpam/commander-cli/commander-
+installation-setup/configuration/aws-key-management-service)[NextAutomating
+with AWS Lambda](/en/keeperpam/commander-cli/commander-installation-
+setup/using-commander-with-aws-lambda)
+
+Last updated 9 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -415,29 +438,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=4EmNwhLtN0xVuuHLgUmV&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
-
-# Automating with Windows Task
-
-Running Commander CLI commands using Windows Task automation
-
-[PreviousAWS Key Management Service](/en/keeperpam/commander-cli/commander-
-installation-setup/configuration/aws-key-management-service)[NextAutomating
-with AWS Lambda](/en/keeperpam/commander-cli/commander-installation-
-setup/using-commander-with-aws-lambda)
-
-Last updated 9 months ago
-
-Was this helpful?
 
 To set up a scheduled task in Windows to run a specific Keeper Commander CLI
 command on a scheduled basis, you can use the Task Scheduler tool.

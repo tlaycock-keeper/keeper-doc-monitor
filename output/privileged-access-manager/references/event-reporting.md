@@ -453,6 +453,8 @@ Events related to Secrets Management and Privileged Access Management are
 included in the Advanced Reporting & Alerts module within the Keeper Admin
 Console.
 
+Secrets Manager events in the Keeper Admin Console
+
 ##
 
 SIEM Events
@@ -473,21 +475,6 @@ To receive immediate feedback on any rotation related events, Keeper's
 "Alerts" capability can push these events to email, SMS, webhooks, Slack,
 Teams, etc.
 
-To learn more about the Keeper Advanced Reporting & Alerts module .
-
-[at this link](https://docs.keeper.io/enterprise-guide/event-reporting)
-
-SIEM Event List
-
-[Reporting, Alerts & SIEMEnterprise Guide](https://docs.keeper.io/enterprise-
-guide/event-reporting)
-
-![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F1748446847-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fspaces%252F-LO5CAzpxoaEquZJBpYz%252Favatar.png%3Fgeneration%3D1562027743273411%26alt%3Dmedia&width=20&dpr=4&quality=100&sign=25d608c4&sv=2)
-
-Secrets Manager events in the Keeper Admin Console
-
 Privileged Access Manager events in the Admin Console
 
 Secrets Manager Events
@@ -495,6 +482,10 @@ Secrets Manager Events
 Keeper Connection Manager (KCM) Cloud Events
 
 Keeper Alerts
+
+To learn more about the Keeper Advanced Reporting & Alerts module .
+
+[at this link](https://docs.keeper.io/enterprise-guide/event-reporting)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -516,4 +507,13 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9UlOIDIJF
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfbbwP0Kfmg8fItMr7SXn%252FScreenshot%25202023-05-05%2520at%25202.50.59%2520PM.jpg%3Falt%3Dmedia%26token%3Dff7730d9-a7c1-4424-bf53-acd860d18638&width=768&dpr=4&quality=100&sign=592f9d98&sv=2)
+
+SIEM Event List
+
+[Reporting, Alerts & SIEMEnterprise Guide](https://docs.keeper.io/enterprise-
+guide/event-reporting)
+
+![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F1748446847-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fspaces%252F-LO5CAzpxoaEquZJBpYz%252Favatar.png%3Fgeneration%3D1562027743273411%26alt%3Dmedia&width=20&dpr=4&quality=100&sign=25d608c4&sv=2)
 

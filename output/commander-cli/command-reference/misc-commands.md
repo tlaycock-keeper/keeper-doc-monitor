@@ -1170,7 +1170,7 @@ Copy
 reference/msp-management-commands)[NextPassword
 Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
 
-Last updated 9 months ago
+Last updated 10 months ago
 
 Was this helpful?
 

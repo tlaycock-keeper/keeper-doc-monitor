@@ -697,10 +697,6 @@ examples/rotate-credential-via-rest-api#step-5-python-environment-setup)
 [Python script](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/saas-accounts/snowflake-user#python-script)
 
-[https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
-Scripts/tree/main/snowflakegithub.com](https://github.com/Keeper-
-Security/Zero-Trust-KeeperPAM-Scripts/tree/main/snowflake)
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FUI8vAZN6xBsDYn7gu62X%252Fkeeper%252BSnowflake.jpg%3Falt%3Dmedia%26token%3Df8c63b08-243b-4712-9588-0cbfc0080416&width=768&dpr=4&quality=100&sign=cdf71a1f&sv=2)
@@ -708,4 +704,8 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FUI8vAZN6x
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIxh4Ka8jKKWfzcljvTnM%252Fsnowflake%2520record.png%3Falt%3Dmedia%26token%3Dd7fbbe85-0000-485d-a306-a67e6375c17c&width=768&dpr=4&quality=100&sign=762e11f2&sv=2)
+
+[https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
+Scripts/tree/main/snowflakegithub.com](https://github.com/Keeper-
+Security/Zero-Trust-KeeperPAM-Scripts/tree/main/snowflake)
 

@@ -386,36 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview
@@ -452,6 +422,36 @@ Last updated 1 month ago
 
 Was this helpful?
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ###
 
 Overview
@@ -467,9 +467,9 @@ Prior to using Discovery, make sure to have the following:
 
   * An active license of KeeperPAM
 
-  * Activate  on the Admin Console to enable discovery
+  * Activate [Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-policies) on the Admin Console to enable discovery
 
-  * Deploy a  using the latest version
+  * Deploy a [Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) using the latest version
 
 ###
 
@@ -486,6 +486,12 @@ Definition
 
 Can run discovery
 
+Copy
+
+    
+    
+    ALLOW_PAM_DISCOVERY
+
 Allow users to run discovery jobs
 
 Copy
@@ -498,13 +504,30 @@ Copy
 
 Installing the Keeper Gateway
 
+The [Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
+started/gateways) is a service that is installed on the customer's network to
+enabled zero-trust access to target infrastructure. This service is installed
+on a Docker, Linux or Windows environment in each of the networks under
+management.
+
 ###
 
 Populating PAM User records
 
+Before running a Discovery job, it is recommended to create [PAM
+User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user) records for any administrative credentials you expect to
+use. Save these credentials as **PAM User** record types within the Shared
+Folder that is associated with your Application and Keeper Gateway.
+
 ###
 
 PAM Configuration
+
+To get started with Discovery, you need a [PAM
+Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration) set up for your target infrastructure. The PAM Configuration
+directs the discovery process where to locate resources.
 
 ###
 
@@ -680,78 +703,36 @@ for any Windows services running as the PAM User, and restart the service.
 Keeper will also update the credential of any scheduled task running as that
 user on the target machine.
 
+To learn more and set up this capability, see the [Service
+Management](/en/keeperpam/privileged-access-manager/password-rotation/service-
+management) page.
+
 ###
 
 Activating PAM Features
+
+After a Discovery process has been completed, you can edit the vault records
+to activate advanced features such as [**Rotation**](/en/keeperpam/secrets-
+manager/password-rotation), [**Connections**](/en/keeperpam/privileged-access-
+manager/connections), and [**Tunnels**](/en/keeperpam/privileged-access-
+manager/tunnels).
 
 ###
 
 Next Steps:
 
-  *   * 
+  * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
+
+  * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
 Discovery can also be enabled on the  using the `enterprise-role` command:
 
-The  is a service that is installed on the customer's network to enabled zero-
-trust access to target infrastructure. This service is installed on a Docker,
-Linux or Windows environment in each of the networks under management.
-
-Before running a Discovery job, it is recommended to create  records for any
-administrative credentials you expect to use. Save these credentials as **PAM
-User** record types within the Shared Folder that is associated with your
-Application and Keeper Gateway.
-
-To get started with Discovery, you need a  set up for your target
-infrastructure. The PAM Configuration directs the discovery process where to
-locate resources.
-
 Ex: `192.168.0.15/24` about CIDR
-
-To learn more and set up this capability, see the  page.
-
-After a Discovery process has been completed, you can edit the vault records
-to activate advanced features such as , , and .
-
-Copy
-
-    
-    
-    ALLOW_PAM_DISCOVERY
-
-[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
-[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
-
-[Service Management](/en/keeperpam/privileged-access-manager/password-
-rotation/service-management)
-
-[**Rotation**](/en/keeperpam/secrets-manager/password-rotation)
-
-[**Connections**](/en/keeperpam/privileged-access-manager/connections)
-
-[**Tunnels**](/en/keeperpam/privileged-access-manager/tunnels)
-
-[Discovery using Commander](/en/keeperpam/privileged-access-
-manager/discovery/discovery-using-commander)
-
-[Discovery using the Vault](/en/keeperpam/privileged-access-
-manager/discovery/discovery-using-the-vault)
 
 [learn more](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
 
 [Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
 manager-commands#overview)
-
-[Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-
-started/enforcement-policies)
-
-[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)
 
 Enable Discovery Policy
 

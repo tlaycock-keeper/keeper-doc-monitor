@@ -624,16 +624,16 @@ up-winrm)
 [Service Management](/en/keeperpam/privileged-access-manager/password-
 rotation/service-management)
 
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
-
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJJUyNlAuOLGSc9meujzP%252FWindows%2520User.jpg%3Falt%3Dmedia%26token%3Db707eba0-2b0a-4221-aaca-29c4986aa384&width=768&dpr=4&quality=100&sign=ff349027&sv=2)
 
 [page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
 cases/local-network#rotation-on-the-local-network)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJJUyNlAuOLGSc9meujzP%252FWindows%2520User.jpg%3Falt%3Dmedia%26token%3Db707eba0-2b0a-4221-aaca-29c4986aa384&width=768&dpr=4&quality=100&sign=ff349027&sv=2)
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
+
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
 

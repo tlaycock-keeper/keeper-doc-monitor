@@ -765,6 +765,70 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FpdccmtxqP
 
 ###
 
+Connecting to the Host Instance
+
+A very useful capability of the Keeper Gateway is being able to open
+connections and tunnels to the host machine. By adding the `extra_hosts`
+section to your docker compose file with a value of
+`host.docker.internal:host-gateway`, you can open sessions directly to the
+host.
+
+Example docker compose with the Gateway container:
+
+Copy
+
+    
+    
+    services:
+          keeper-gateway:
+            platform: linux/amd64
+            image: keeper/gateway:latest
+            shm_size: 2g
+            restart: always
+            extra_hosts:
+              - "host.docker.internal:host-gateway"
+            security_opt:
+              - "seccomp:docker-seccomp.json"
+            environment:
+              ACCEPT_EULA: Y
+              GATEWAY_CONFIG: xxxxxxxx
+
+Enabling this option allows you to establish a Connection to the host. For
+example, to open an SSH connection:
+
+  *   *   * 
+
+###
+
+Upgrading the Keeper Gateway service through the host
+
+If you use KeeperPAM to SSH over to the host service, you can upgrade the
+container by running the container update of the gateway in the background:
+
+Copy
+
+    
+    
+    docker-compose pull
+    nohup docker-compose up -d keeper-gateway &
+
+Create a  record with the SSH private key
+
+Create a  record with the hostname to `host.docker.internal` and port `22`
+
+Activate the  in PAM settings referencing the PAM User
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
+[PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
+
+[SSH connection](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/ssh-connections)
+
+###
+
 Network Configuration
 
 The Gateway establishes outbound-only connections to the following:
@@ -797,68 +861,4 @@ Needed to establish outbound access over the designated port ranges
 The Gateway preserves zero knowledge by performing all encryption and
 decryption of data locally. Keeper Secrets Manager APIs are used to
 communicate with the Keeper cloud.
-
-###
-
-Connecting to the Host Instance
-
-A very useful capability of the Keeper Gateway is being able to open
-connections and tunnels to the host machine. By adding the `extra_hosts`
-section to your docker compose file with a value of
-`host.docker.internal:host-gateway`, you can open sessions directly to the
-host.
-
-Example docker compose with the Gateway container:
-
-Enabling this option allows you to establish a Connection to the host. For
-example, to open an SSH connection:
-
-  *   *   * 
-
-###
-
-Upgrading the Keeper Gateway service through the host
-
-If you use KeeperPAM to SSH over to the host service, you can upgrade the
-container by running the container update of the gateway in the background:
-
-Create a  record with the SSH private key
-
-Create a  record with the hostname to `host.docker.internal` and port `22`
-
-Activate the  in PAM settings referencing the PAM User
-
-Copy
-
-    
-    
-    services:
-          keeper-gateway:
-            platform: linux/amd64
-            image: keeper/gateway:latest
-            shm_size: 2g
-            restart: always
-            extra_hosts:
-              - "host.docker.internal:host-gateway"
-            security_opt:
-              - "seccomp:docker-seccomp.json"
-            environment:
-              ACCEPT_EULA: Y
-              GATEWAY_CONFIG: xxxxxxxx
-
-Copy
-
-    
-    
-    docker-compose pull
-    nohup docker-compose up -d keeper-gateway &
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
-[PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
-[SSH connection](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/ssh-connections)
 

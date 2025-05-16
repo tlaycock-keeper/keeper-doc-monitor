@@ -603,11 +603,11 @@ trial.html)
 [here](/en/keeperpam/privileged-access-manager/getting-started/keeperpam-
 licensing#features-included-with-keeperpam)
 
-[page](/en/keeperpam#keeperpam-vs.-kcm)
-
 [MSP Consumption Model](https://docs.keeper.io/en/enterprise-guide/keeper-
 msp/consumption-based-billing)
 
 [Secure Add-On](https://docs.keeper.io/en/enterprise-guide/keeper-
 msp/consumption-based-billing/secure-add-ons)
+
+[page](/en/keeperpam#keeperpam-vs.-kcm)
 

@@ -418,10 +418,34 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * Pre-requisites
+  * Step 1: Obtain REST API Token or Access Token
+  * Step 2: Set Up Rotation Record
+  * Step 3: Add PAM Script
+  * Step 4: Configure Password Rotation Settings
+  * Step 5: Python Environment Setup
+  * Python Script
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=MVu1N6YfVwflfPc39zsy&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [SaaS Accounts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
+
+# Rotate Credential via REST API
+
+Automatically rotate any cloud-based account using a REST API with Keeper
+Secrets Manager
+
+[PreviousSnowflake User](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-accounts/snowflake-user)[NextNetwork
+Devices](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/network-devices)
 
 Last updated 3 months ago
 
@@ -519,9 +543,6 @@ Python Script
 The Python script is well-commented and follows best practices. It imports
 necessary modules, initializes variables, and defines a rotation function to
 call an arbitrary REST API that changes user's password.
-
-Attach the below  that will perform the password rotation. The script has
-additional comments inside that describe each line.
 
 Copy
 
@@ -640,29 +661,8 @@ Copy
         print(f"# \n# Response from the API:")
         print(f"# {response}")
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [SaaS Accounts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
-
-# Rotate Credential via REST API
-
-Automatically rotate any cloud-based account using a REST API with Keeper
-Secrets Manager
-
-[PreviousSnowflake User](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/saas-accounts/snowflake-user)[NextNetwork
-Devices](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/network-devices)
-
-  * Overview
-  * Pre-requisites
-  * Step 1: Obtain REST API Token or Access Token
-  * Step 2: Set Up Rotation Record
-  * Step 3: Add PAM Script
-  * Step 4: Configure Password Rotation Settings
-  * Step 5: Python Environment Setup
-  * Python Script
+Attach the below  that will perform the password rotation. The script has
+additional comments inside that describe each line.
 
 [Python script](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/saas-accounts/rotate-credential-via-rest-

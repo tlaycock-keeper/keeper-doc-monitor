@@ -442,7 +442,7 @@ Connect to RDP and SSH servers from the Commander CLI
 commands/rdp)[NextSFTP Sync](/en/keeperpam/commander-cli/command-
 reference/connection-commands/sftp-sync)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

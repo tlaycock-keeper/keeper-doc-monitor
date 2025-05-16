@@ -386,30 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=vuR0nkPtuYuYCbBZ65r2&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
-
-# Keepass Import
-
-Automatic migration of your Keepass vault
-
-[PreviousDelinea / Thycotic Secret Server Import](/en/keeperpam/commander-
-cli/command-reference/import-and-export-commands/delinea-thycotic-secret-
-server-import)[NextManageEngine Import](/en/keeperpam/commander-cli/command-
-reference/import-and-export-commands/manageengine-import)
-
-Last updated 5 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -440,15 +416,37 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=vuR0nkPtuYuYCbBZ65r2&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
+
+# Keepass Import
+
+Automatic migration of your Keepass vault
+
+[PreviousDelinea / Thycotic Secret Server Import](/en/keeperpam/commander-
+cli/command-reference/import-and-export-commands/delinea-thycotic-secret-
+server-import)[NextManageEngine Import](/en/keeperpam/commander-cli/command-
+reference/import-and-export-commands/manageengine-import)
+
+Last updated 5 months ago
+
+Was this helpful?
+
 ##
 
 **Keepass Import**
 
 Keeper Commander supports importing the record and folder structure directly
 from an encrypted Keepass file. File attachments are also supported. Make sure
-to first follow [these instructions](https://github.com/Keeper-
-Security/Commander/blob/master/keepercommander/importer/keepass/README.md) to
-install the necessary keepass modules.
+to first follow  to install the necessary keepass modules.
 
 Copy
 
@@ -472,6 +470,9 @@ Copy
     
     
     $ keeper help import
+
+[these instructions](https://github.com/Keeper-
+Security/Commander/blob/master/keepercommander/importer/keepass/README.md)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

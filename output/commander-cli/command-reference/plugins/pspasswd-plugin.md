@@ -443,7 +443,7 @@ Rotate remote admin passwords with PSPasswd
 reference/plugins/postgresql-plugin)[NextSSH Plugin](/en/keeperpam/commander-
 cli/command-reference/plugins/ssh-plugin)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

@@ -442,7 +442,7 @@ reference/plugins/mysql-plugin)[NextPostgreSQL
 Plugin](/en/keeperpam/commander-cli/command-reference/plugins/postgresql-
 plugin)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

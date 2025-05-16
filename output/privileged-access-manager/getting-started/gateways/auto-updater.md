@@ -794,7 +794,7 @@ manager/getting-started/gateways/windows-installation)[NextAlerts and SIEM
 Integration](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/alerts-and-siem-integration)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

@@ -386,6 +386,35 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Importing Accounts
+  * Using a search string to limit the imported Accounts
+  * Using a custom query string
+  * PowerShell Method
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=uLz7A2RXPQAQ6vUmo7dh&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
+
+# CyberArk Import
+
+Migrating CyberArk Accounts to Keeper
+
+[PreviousImport/Export Commands](/en/keeperpam/commander-cli/command-
+reference/import-and-export-commands/import-export-commands)[NextLastPass Data
+Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands/lastpass-import)
+
+Last updated 15 hours ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -415,34 +444,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Using a search string to limit results
-  * Error handling
-  * PowerShell Method
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=uLz7A2RXPQAQ6vUmo7dh&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
-
-# CyberArk Import
-
-Migrating CyberArk Accounts to Keeper
-
-[PreviousImport/Export Commands](/en/keeperpam/commander-cli/command-
-reference/import-and-export-commands/import-export-commands)[NextLastPass Data
-Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands/lastpass-import)
-
-Last updated 1 month ago
-
-Was this helpful?
 
 Keeper Commander will log on to CyberArk Privilege Cloud Web Portal or the
 self-hosted Password Vault Web Access (PVWA), retrieve accounts and their
@@ -477,13 +478,31 @@ Copy
     CyberArk username: myusername
     CyberArk password: 
 
-A Server record will be created for every CyberArk Account available to the
-logon. The Account's _address_ will be used as the Hostname/IP of the
-corresponding Server record in Keeper.
+CyberArk Accounts based on Platforms in the _Windows_ and _*NIX_ groups will
+be imported as Server records. Accounts based on the _Business Website p_
+latform, i.e., CyberArk Workforce Password Management Accounts, will import as
+Login records.
 
 ###
 
-Using a search string to limit results
+Importing Accounts
+
+The process will list the Accounts to be imported, including the ID, Name, and
+Safe. It will also show a progress meter with a timer and ETA. If password
+retrieval fails for an Account, a Retry, Skip, or Skip All dialog is
+presented. The process can retry the request, skip the Account, or skip all
+Accounts that trigger the same HTTP status.
+
+####
+
+Skipped Accounts
+
+The skipped Accounts will be listed after processing is complete. The list
+includes the _ID_ , _Name_ , _Safe_ , and the _Error_ code and message.
+
+###
+
+Using a search string to limit the imported Accounts
 
 The process will import all Accounts by default; however, appending a question
 mark (?) followed by the search string will limit processing to Accounts that
@@ -497,18 +516,26 @@ Copy
 
 ###
 
-Error handling
+Using a custom query string
 
-The process will exit by raising an Exception upon the first occurrence of any
-error; it will _not_ continue on failure, e.g., if getting the password for
-any one account generates an error.
+Alternatively, if the search string contains '=', the process will pass it to
+the CyberArk Get Accounts endpoint as a query string. E.g.,
+
+Copy
+
+    
+    
+    keeper import --format=cyberark example.cyberark.cloud?limit=10&offset=20
+
+passes the limit and offset parameters to the Accounts endpoint, causing it to
+page the accounts 10 at a time, starting at the 20th account.
 
 ###
 
 PowerShell Method
 
 The Identity Tenant ID is the first part of the login URL, e.g.,
-https://_abc12345_.cyberark.cloud/...
+https://_abc12345_.id.cyberark.cloud/...
 
 Use **LDAP** (not Windows) to log in with an **Active Directory** account
 
@@ -523,9 +550,16 @@ so it only works on self-hosted servers.
 [end-user guide](https://docs.keeper.io/en/user-guides/import-
 records-1/import-from-cyberark)
 
+A dialog resulting from a 400 (Bad Request) HTTP response from the password
+API endpoint.
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVx3vcawaXEus29CaFi0G%252FImport-
 Keeper-
 Cyberark.jpg%3Falt%3Dmedia%26token%3D5feb06a1-909a-4200-bad0-80848f2b5841&width=768&dpr=4&quality=100&sign=7f7cc05d&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNHpxOei0QP7CkkJqpiuc%252FScreenshot%25202025-05-07%2520154348.png%3Falt%3Dmedia%26token%3D6df12176-7d8e-45f6-919a-75ebd48e5359&width=768&dpr=4&quality=100&sign=8850bc9a&sv=2)
 

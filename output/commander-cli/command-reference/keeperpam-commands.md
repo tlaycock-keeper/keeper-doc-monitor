@@ -444,7 +444,7 @@ Connections and Tunneling
 reference/sharing-commands)[NextConnection Commands](/en/keeperpam/commander-
 cli/command-reference/connection-commands)
 
-Last updated 5 days ago
+Last updated 6 days ago
 
 Was this helpful?
 

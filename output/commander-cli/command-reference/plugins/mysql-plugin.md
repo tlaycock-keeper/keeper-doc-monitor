@@ -444,7 +444,7 @@ Rotate and Connect to MySQL databases with Keeper Commander
 reference/plugins/microsoft-sql-server-plugin)[NextOracle
 Plugin](/en/keeperpam/commander-cli/command-reference/plugins/oracle-plugin)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 
@@ -661,14 +661,14 @@ For more information on the `connect` command, see the
 [documentation](/en/keeperpam/commander-cli/command-
 reference/plugins/password-rotation#connect-command)
 
-[command documentation](/en/keeperpam/commander-cli/command-reference/record-
-commands#edit-command-record-types)
-
 [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
 rotation)
 
 [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
 commands)
+
+[command documentation](/en/keeperpam/commander-cli/command-reference/record-
+commands#edit-command-record-types)
 
 Creating a record in the Keeper Vault
 
@@ -690,12 +690,12 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FxndkXzyAk
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4TNMCZKhejp3vlE8tBCN%252Fimage.png%3Falt%3Dmedia%26token%3D4cfaa6bd-a624-4e25-aea3-38d59984e901&width=768&dpr=4&quality=100&sign=c058d501&sv=2)
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fraw.githubusercontent.com%2FKeeper-
+Security%2FCommander%2Fmaster%2Fkeepercommander%2Fimages%2Fconnect_mysql_screenshot.png&width=768&dpr=4&quality=100&sign=c97e338d&sv=2)
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MiNPEavIrI4-C-d6yeX%252F-MiNSHLjGNieJbKyeNnB%252Fimage.png%3Falt%3Dmedia%26token%3D4cb9461d-4b81-45d0-b93a-c541187d592f&width=768&dpr=4&quality=100&sign=698ed78f&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fraw.githubusercontent.com%2FKeeper-
-Security%2FCommander%2Fmaster%2Fkeepercommander%2Fimages%2Fconnect_mysql_screenshot.png&width=768&dpr=4&quality=100&sign=c97e338d&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

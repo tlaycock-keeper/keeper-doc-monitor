@@ -439,7 +439,7 @@ Commander can run an SSH Agent service for establishing remote connections.
 commands/ssh)[NextRDP](/en/keeperpam/commander-cli/command-
 reference/connection-commands/rdp)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

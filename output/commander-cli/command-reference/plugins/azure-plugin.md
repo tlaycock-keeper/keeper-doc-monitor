@@ -443,7 +443,7 @@ reference/plugins/aws-plugin)[NextMicrosoft SQL Server
 Plugin](/en/keeperpam/commander-cli/command-reference/plugins/microsoft-sql-
 server-plugin)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 
@@ -633,11 +633,11 @@ commands)
 Python](https://github.com/AzureAD/microsoft-authentication-library-for-
 python)
 
-[password complexity rules](https://github.com/Keeper-
-Security/Commander/tree/master/keepercommander/plugins/password_rules.md)
-
 [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
 cli#typed-vs-untyped-records-v3-vs-v2)
+
+[password complexity rules](https://github.com/Keeper-
+Security/Commander/tree/master/keepercommander/plugins/password_rules.md)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

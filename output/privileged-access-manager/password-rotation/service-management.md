@@ -386,36 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Prerequisites
-  * Setup
-  * Using Discovery
-  * Using the Commander CLI
-  * Troubleshooting
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=S62bTbKdjo5TP4f6m4aE&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-
-# Service Management
-
-Managing the credentials of Windows services and scheduled tasks
-
-[PreviousCisco Meraki](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/network-devices/cisco-meraki)[NextPost-Rotation
-Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-
-rotation-scripts)
-
-Last updated 28 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -446,6 +416,36 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Overview
+  * Prerequisites
+  * Setup
+  * Using Discovery
+  * Using the Commander CLI
+  * Troubleshooting
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=S62bTbKdjo5TP4f6m4aE&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+
+# Service Management
+
+Managing the credentials of Windows services and scheduled tasks
+
+[PreviousCisco Meraki](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/network-devices/cisco-meraki)[NextPost-Rotation
+Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-
+rotation-scripts)
+
+Last updated 29 days ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -459,23 +459,17 @@ the associated PAM Machine, and restart the services. One **PAM User** record
 can be associated to any number of **PAM Machine** records, allowing you to
 update the services and scheduled tasks across a fleet of servers.
 
+Windows Service Management
+
 ##
 
 Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  * [Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-started/enforcement-policies) are configured for your role
+  *   *   *   * The Keeper Gateway can communicate over WinRM or SSH to the target machine:
 
-  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
-
-  * Your [Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is online
-
-  * The Keeper Gateway can communicate over WinRM or SSH to the target machine:
-
-    * **WinRM:** Enabled and running on port 5986. Verification: Run `winrm get winrm/config` to verify that WinRM is running. See [WinRM setup page](/en/keeperpam/privileged-access-manager/references/setting-up-winrm) for installation help. **OR...**
-
-    * **SSH:** Enabled and running on port 22. Verification: Run `ssh [your-user]@[your-machine] -p 22` to verify that SSH is running.
+    *     * **SSH:** Enabled and running on port 22. Verification: Run `ssh [your-user]@[your-machine] -p 22` to verify that SSH is running.
 
   * Any Windows-based PAM Machine record being managed needs to have the operating system field set to `windows`
 
@@ -497,10 +491,6 @@ Machine that is associated to the same PAM User.
 
 Using Discovery
 
-When running a [Discovery job](/en/keeperpam/privileged-access-
-manager/discovery), Keeper will automatically locate any services or scheduled
-tasks that require update when a password is rotated.
-
 If you don't use Discovery, this can be managed directly through the Commander
 CLI interface using the `pam action service` commands.
 
@@ -515,9 +505,6 @@ restart of the service.
 ####
 
 Installing Commander
-
-If you haven't set up Keeper Commander yet, please follow the [installation
-instructions](/en/keeperpam/commander-cli/commander-installation-setup).
 
 ####
 
@@ -671,11 +658,41 @@ the following:
 
   * Ensure that you are using a PAM Machine record to manage services and scheduled tasks.
 
-Windows Service Management
+are configured for your role
+
+A Keeper Secrets Manager  has been created
+
+Your  is online
+
+**WinRM:** Enabled and running on port 5986. Verification: Run `winrm get
+winrm/config` to verify that WinRM is running. See  for installation help.
+**OR...**
+
+When running a , Keeper will automatically locate any services or scheduled
+tasks that require update when a password is rotated.
+
+If you haven't set up Keeper Commander yet, please follow the .
 
 Find the Record UID
 
 Rotate the Windows Credential
+
+[Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-
+started/enforcement-policies)
+
+[application](/en/keeperpam/privileged-access-manager/getting-
+started/applications)
+
+[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
+started/gateways)
+
+[WinRM setup page](/en/keeperpam/privileged-access-manager/references/setting-
+up-winrm)
+
+[Discovery job](/en/keeperpam/privileged-access-manager/discovery)
+
+[installation instructions](/en/keeperpam/commander-cli/commander-
+installation-setup)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

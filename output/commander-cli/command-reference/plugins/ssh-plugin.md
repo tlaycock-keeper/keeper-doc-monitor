@@ -447,7 +447,7 @@ reference/plugins/pspasswd-plugin)[NextUnix Passwd
 Plugin](/en/keeperpam/commander-cli/command-reference/plugins/unix-passwd-
 plugin)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 
@@ -641,9 +641,6 @@ commands)
 [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
 cli#typed-vs-untyped-records-v3-vs-v2)
 
-[documentation](/en/keeperpam/commander-cli/command-
-reference/plugins/password-rotation#rotate-command)
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FE4X6qOhCPWsssZVp37JT%252Fimage.png%3Falt%3Dmedia%26token%3D8c9a7887-a5b8-4950-ba38-9c56d484905e&width=768&dpr=4&quality=100&sign=798657fc&sv=2)
@@ -651,6 +648,9 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FE4X6qOhCP
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FoNT8pQ2YxiSOv8OBWv6W%252Fimage.png%3Falt%3Dmedia%26token%3D5f362713-c5ec-4d56-b515-2eded5aa51cc&width=768&dpr=4&quality=100&sign=750f352&sv=2)
+
+[documentation](/en/keeperpam/commander-cli/command-
+reference/plugins/password-rotation#rotate-command)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

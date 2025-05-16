@@ -442,7 +442,7 @@ Rotate AWS Passwords and Keys
 reference/plugins/password-rotation)[NextAzure
 Plugin](/en/keeperpam/commander-cli/command-reference/plugins/azure-plugin)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 
