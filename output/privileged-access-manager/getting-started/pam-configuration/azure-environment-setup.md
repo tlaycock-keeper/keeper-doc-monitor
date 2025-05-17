@@ -644,14 +644,26 @@ After creating the PAM configuration, visit the following pages to:
 
   *   *   *   *   * 
 
+Create Application
+
 Next, go to Home > General > Subscriptions and get your subscription ID. Copy
 the subscription ID into the Keeper PAM Configuration "Subscription ID" field.
 For more information on how to get your subscription ID, visit this .
+
+Client Secret
 
 \- Can change the password for any user, including a Global Administrator
 user.
 
 \- Can change the password for any user, except a Global Administrator user.
+
+Assign Administrator Role to Keeper Application
+
+Role
+
+Create Azure Custom Role
+
+Assign Role to Keeper Secrets Manager application member
 
 Configure
 
@@ -683,18 +695,6 @@ administrator)
 [Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
 
 [Discovery](/en/keeperpam/privileged-access-manager/discovery)
-
-Create Application
-
-Client Secret
-
-Assign Administrator Role to Keeper Application
-
-Role
-
-Create Azure Custom Role
-
-Assign Role to Keeper Secrets Manager application member
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

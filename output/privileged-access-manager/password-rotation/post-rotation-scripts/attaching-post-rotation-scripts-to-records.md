@@ -386,6 +386,30 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=0HKqc5nrihdSnYkSFAIv&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Post-Rotation Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts)
+
+# Attaching Scripts
+
+Attaching post-rotation scripts to PAM resource records
+
+[PreviousInputs and Outputs](/en/keeperpam/privileged-access-manager/password-
+rotation/post-rotation-scripts/parameters)[NextCode
+Examples](/en/keeperpam/privileged-access-manager/password-rotation/post-
+rotation-scripts/accessing-parameters)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -415,30 +439,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=0HKqc5nrihdSnYkSFAIv&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Post-Rotation Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts)
-
-# Attaching Scripts
-
-Attaching post-rotation scripts to PAM resource records
-
-[PreviousInputs and Outputs](/en/keeperpam/privileged-access-manager/password-
-rotation/post-rotation-scripts/parameters)[NextCode
-Examples](/en/keeperpam/privileged-access-manager/password-rotation/post-
-rotation-scripts/accessing-parameters)
-
-Last updated 3 months ago
-
-Was this helpful?
 
 ##
 

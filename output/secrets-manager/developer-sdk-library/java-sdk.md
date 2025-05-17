@@ -455,7 +455,7 @@ Detailed Java and Kotlin SDK docs for Keeper Secrets Manager
 library/python-sdk)[NextRecord Field Classes](/en/keeperpam/secrets-
 manager/developer-sdk-library/java-sdk/record-field-classes)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

@@ -432,7 +432,7 @@ PDF](/en/keeperpam/~gitbook/pdf?page=9KivwNIHN952SKcG5LGp&only=yes&limit=100)
 reference/keeperpam-commands)[NextSSH](/en/keeperpam/commander-cli/command-
 reference/connection-commands/ssh)
 
-Last updated 7 months ago
+Last updated 8 months ago
 
 Was this helpful?
 

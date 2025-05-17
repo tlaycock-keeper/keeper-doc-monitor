@@ -386,46 +386,28 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
+
+  * Overview 
+  * Prerequisites
+  * PAM Settings - Configuring RDP Protocol
+  * Accessing Connection Settings
+  * Configuring Connection Settings
+  * Troubleshooting Connections
+  * Session Recordings - RDP Protocol
 
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=XIBliCeQFLhXyHlm2D0y&only=yes&limit=100)
 
-Last updated 3 months ago
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
 
-Was this helpful?
+# RDP Connections
+
+Keeper Connections - RDP Protocol
 
 ##
 
@@ -442,7 +424,8 @@ directly to target devices.
 Prerequisites
 
 Prior to following this guide, familiarize yourself with the prerequisites on
-the Connection's .
+the Connection's [Getting Started page](/en/keeperpam/privileged-access-
+manager/connections/getting-started).
 
 The following PAM records are needed in order to successfully setup this
 protocol:
@@ -451,8 +434,28 @@ PAM Record
 
 Definition
 
+[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)
+
+The PAM Configuration contains information of your target infrastructure
+
+[PAM Machine Record](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-machine)
+
+The PAM Machine record contains information of the endpoint you want to
+establish an RDP protocol connection to.
+
+[PAM User Record](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
+The PAM User record contains the user credentials that will be used to connect
+to the endpoint
+
 This guide will use a **Azure VM** as an example. For more details on how this
 is setup on the PAM Machine Record, visit the following page:
+
+[Example: Azure Windows VM](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-machine/example-azure-windows-vm)
 
 ##
 
@@ -482,29 +485,9 @@ following fields are all **required** and need to be configured:
 The following table lists all the configurable settings for the RDP protocol
 on the PAM Settings:
 
-###
-
-Troubleshooting Connections
-
-When troubleshooting authentication and connection issues, check the
-following:
-
-  * Ensure the user specified in the linked PAM User record has the rights to RDP to the target machine.
-
-  * Adjust your group policy or add the user to the "Remote Desktop Users" group on Windows to grant access.
-
-  * 
-
-##
-
-Session Recordings - RDP Protocol
-
 Field
 
 Definition
-
-For additional troubleshooting, refer to the Gateway logs which will contain
-additional information. The location of the Gateway logs depends on the .
 
 Protocol
 
@@ -605,52 +588,64 @@ Audio output is always enabled by default. If you are concerned about
 bandwidth usage, or audio is causing problems, you can explicitly disable
 audio output
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
+###
 
-# RDP Connections
+Troubleshooting Connections
 
-Keeper Connections - RDP Protocol
+When troubleshooting authentication and connection issues, check the
+following:
+
+  * Ensure the user specified in the linked PAM User record has the rights to RDP to the target machine.
+
+  * Adjust your group policy or add the user to the "Remote Desktop Users" group on Windows to grant access.
+
+  * For additional troubleshooting, refer to the Gateway logs which will contain additional information. The location of the Gateway logs depends on the [installation method](/en/keeperpam/privileged-access-manager/getting-started/gateways).
+
+##
+
+Session Recordings - RDP Protocol
 
 [PreviousSSH Connections](/en/keeperpam/privileged-access-
 manager/connections/session-protocols/ssh-connections)[NextRBI
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/rbi-connections)
 
-  * Overview 
-  * Prerequisites
-  * PAM Settings - Configuring RDP Protocol
-  * Accessing Connection Settings
-  * Configuring Connection Settings
-  * Troubleshooting Connections
-  * Session Recordings - RDP Protocol
+Last updated 3 months ago
 
-[installation method](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)
+Was this helpful?
 
-The PAM Configuration contains information of your target infrastructure
+#### Company
 
-The PAM Machine record contains information of the endpoint you want to
-establish an RDP protocol connection to.
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-The PAM User record contains the user credentials that will be used to connect
-to the endpoint
+#### Support
 
-[Getting Started page](/en/keeperpam/privileged-access-
-manager/connections/getting-started)
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-[Example: Azure Windows VM](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-machine/example-azure-windows-vm)
+#### Solutions
 
-[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-[PAM Machine Record](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-machine)
+#### Pricing
 
-[PAM User Record](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+For this protocol, graphical data, including timing information, is recorded.
+For more details on the recordings and how to access them, see the  docs.
 
 Field
 
@@ -666,14 +661,11 @@ Administrative Credential Record
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
 
-For this protocol, graphical data, including timing information, is recorded.
-For more details on the recordings and how to access them, see the  docs.
+[Session Recording & Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
-
-[Session Recording & Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
 
 RDP Session Recordings
 

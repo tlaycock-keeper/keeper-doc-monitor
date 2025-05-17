@@ -386,6 +386,32 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Quick Start Wizard
+  * Records Created
+  * Quick Start Video
+  * Screenshots
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=R2Buql2ywlhAxad9Ru4u&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Quick Start: Sandbox
+
+Quickly and easily get started with a pre-configured PAM setup in your vault
+
+[PreviousSetup Steps](/en/keeperpam/privileged-access-manager/setup-
+steps)[NextGetting Started](/en/keeperpam/privileged-access-manager/getting-
+started)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -416,32 +442,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-  * Quick Start Wizard
-  * Records Created
-  * Quick Start Video
-  * Screenshots
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=R2Buql2ywlhAxad9Ru4u&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# Quick Start: Sandbox
-
-Quickly and easily get started with a pre-configured PAM setup in your vault
-
-[PreviousSetup Steps](/en/keeperpam/privileged-access-manager/setup-
-steps)[NextGetting Started](/en/keeperpam/privileged-access-manager/getting-
-started)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 ##
 
 Quick Start Wizard
@@ -466,13 +466,23 @@ URL
 
 **US**
 
+<https://keepersecurity.com/console>[](https://keepersecurity.com/console)
+
 **EU**
+
+<https://keepersecurity.eu/console>[](https://keepersecurity.eu/console)
 
 **AU**
 
+<https://keepersecurity.com.au/console>[](https://keepersecurity.com.au/console)
+
 **JP**
 
+<https://keepersecurity.jp/console>[](https://keepersecurity.jp/console)
+
 **GOV**
+
+<https://govcloud.keepersecurity.us/console>[](https://govcloud.keepersecurity.us/console)
 
   * Under **Admin** > **Roles** , create a new role for PAM or modify an existing role
 
@@ -488,7 +498,9 @@ URL
 
 Run the New Gateway Wizard
 
-  *   * Click on **Create New** > **Gateway**
+  * Login to the [Keeper Vault](https://keepersecurity.com/vault). If the policies are active, you'll see a **Secrets Manager** tab on the left side.
+
+  * Click on **Create New** > **Gateway**
 
   * Enter a name for the project, such as "**My Infrastructure Demo** "
 
@@ -508,7 +520,9 @@ Run the Docker Environment
 
   * Set up a VM which supports Docker. It can be a Linux instance or Windows running Docker Desktop. The instance can exist anywhere, even on your local computer.
 
-  *   * Transfer the Docker Compose and Seccomp files from Step 2 to the VM.
+  * If necessary, Install Docker per the [Docker installation instructions](https://docs.docker.com/engine/install/).
+
+  * Transfer the Docker Compose and Seccomp files from Step 2 to the VM.
 
   * Run `docker compose up -d` from the folder where the files are saved.
 
@@ -561,25 +575,6 @@ We've created a helpful Keeper 101 video to set up your sandbox environment:
 Screenshots
 
 Below are screenshots of the Quick Start Wizard from start to finish.
-
-Login to the . If the policies are active, you'll see a **Secrets Manager**
-tab on the left side.
-
-If necessary, Install Docker per the .
-
-[Keeper Vault](https://keepersecurity.com/vault)
-
-[Docker installation instructions](https://docs.docker.com/engine/install/)
-
-<https://keepersecurity.com/console>[](https://keepersecurity.com/console)
-
-<https://keepersecurity.eu/console>[](https://keepersecurity.eu/console)
-
-<https://keepersecurity.com.au/console>[](https://keepersecurity.com.au/console)
-
-<https://keepersecurity.jp/console>[](https://keepersecurity.jp/console)
-
-<https://govcloud.keepersecurity.us/console>[](https://govcloud.keepersecurity.us/console)
 
 Create a Gateway
 

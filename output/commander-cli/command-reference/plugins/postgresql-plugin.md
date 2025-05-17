@@ -566,9 +566,6 @@ Here's a screenshot of the Keeper Vault record for this use case:
 
 For more information on the `connect` command, see the
 
-[documentation](/en/keeperpam/commander-cli/command-
-reference/plugins/password-rotation#connect-command)
-
 [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
 rotation)
 
@@ -577,6 +574,9 @@ commands)
 
 [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
 cli#typed-vs-untyped-records-v3-vs-v2)
+
+[documentation](/en/keeperpam/commander-cli/command-
+reference/plugins/password-rotation#connect-command)
 
 Commander will use the login and password to login to the PostgreSQL account
 

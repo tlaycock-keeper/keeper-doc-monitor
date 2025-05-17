@@ -494,11 +494,11 @@ An initialized Keeper
 [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-
 manager-configuration)
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 [Vault IntegrationKeeper Connection Manager](https://docs.keeper.io/keeper-
 connection-manager/vault-integration)

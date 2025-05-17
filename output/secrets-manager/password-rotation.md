@@ -423,6 +423,15 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=l6HcnN1otHc20n7EcNSv&only=yes&limit=100)
 
+Last updated 3 months ago
+
+Was this helpful?
+
+Keeper Password Rotation allows Keeper customers to securely rotate
+credentials in any cloud-based or on-prem environment.
+
+  * Go to the  documentation in KeeperPAM to learn more.
+
   1. [Secrets Manager](/en/keeperpam/secrets-manager)
 
 # Password Rotation
@@ -432,15 +441,6 @@ Automatically rotate secrets in the cloud and on-prem with KeeperPAM
 [PreviousCustom Record Types](/en/keeperpam/secrets-manager/secrets-manager-
 command-line-interface/custom-record-types)[NextDeveloper
 SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
-
-Last updated 3 months ago
-
-Was this helpful?
-
-Keeper Password Rotation allows Keeper customers to securely rotate
-credentials in any cloud-based or on-prem environment.
-
-  * Go to the  documentation in KeeperPAM to learn more.
 
 [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
 

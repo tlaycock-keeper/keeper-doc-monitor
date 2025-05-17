@@ -634,17 +634,9 @@ Keeper Vault operates independently and does not require direct connectivity
 to the database, leveraging Keeper's zero-trust network access model to
 securely manage access through the Gateway. See the  for more details.
 
-Create a PAM Database
-
-PAM Settings and Administrative Credentials
-
 **Required** Visit this  for more details
 
 See
-
-PAM Settings on Database resource
-
-PAM Database with Connections and Tunnels activated
 
 [network architecture diagram](/en/keeperpam/privileged-access-
 manager/getting-started/architecture/system-architecture)
@@ -658,6 +650,20 @@ started/pam-resources/pam-database/example-postgresql-database)
 [Microsoft SQL Server Database](/en/keeperpam/privileged-access-
 manager/getting-started/pam-resources/pam-database/example-microsoft-sql-
 server-database)
+
+[session recording](/en/keeperpam/privileged-access-manager/session-recording-
+and-playback)
+
+[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database#pam-settings-and-administrative-credentials)
+
+Create a PAM Database
+
+PAM Settings and Administrative Credentials
+
+PAM Settings on Database resource
+
+PAM Database with Connections and Tunnels activated
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -679,10 +685,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FQDnmwlO5p
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVSwnnpOvh75YONo6GSFD%252FScreenshot%25202025-01-01%2520at%25209.53.35%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D0bbbe72f-3230-4d03-98b7-71f52edd1469&width=768&dpr=4&quality=100&sign=ff984fa2&sv=2)
-
-[session recording](/en/keeperpam/privileged-access-manager/session-recording-
-and-playback)
-
-[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database#pam-settings-and-administrative-credentials)
 

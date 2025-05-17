@@ -418,28 +418,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * AWS Environment Overview 
-  * EC2 IAM Role Policy
-  * Minimum AWS Policy to Manage IAM users
-  * IAM User Policy
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=7LH7nq7UkUQSzsxjXLTt&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
-
-# AWS Environment Setup
-
-Setting up your AWS environment to work with KeeperPAM
-
-[PreviousPAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)[NextAzure Environment
-Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/azure-environment-setup)
 
 Last updated 4 months ago
 
@@ -472,6 +454,58 @@ For KeeperPAM to have the authority to rotate IAM users and RDS databases, the
 following inline role policy should be modified to meet your needs and ensure
 least privilege.
 
+To ensure least privilege, the JSON policy should be modified based on which
+target resources that KeeperPAM will be managing through the "Action" and
+"Resource" attributes.
+
+Follow these steps to create a new role and apply the policy:
+
+  1. Create role with JSON specified above, or click on IAM > Roles > Create Role > Select "AWS Service" with "EC2 use case".
+
+  2. Attach the policy JSON to the role.
+
+  3. From EC2 > Instances, select the instance with the gateway and go to Actions > Security > Modify IAM Role > Select your new role.
+
+###
+
+Minimum AWS Policy to Manage IAM users
+
+* * *
+
+##
+
+IAM User Policy
+
+Using EC2 instance role policy is preferred, however the AWS Access Key ID and
+Secret Access Key can be directly set in the PAM Configuration. The IAM Admin
+account needs to be created with the appropriate policy settings configured to
+access the target resource in AWS.
+
+An sample policy is below.
+
+To ensure least privilege, the JSON policy should be modified based on which
+target resources that KeeperPAM will be managing through the "Action" and
+"Resource" attributes.
+
+The steps to create the access keys is below:
+
+  1. Create a new IAM user or select an existing user
+
+  2. Attach the policy to the user
+
+  3. Open the IAM user > Security credentials > Create access key
+
+  4. Select "Application running outside AWS"
+
+  5. Save the provided Access Key ID / Secret Access Key into the PAM Configuration
+
+Managed User Type
+
+IAM Policy
+
+In addition to these policies, we recommend protecting the Gateway
+Configuration secrets .
+
 Copy
 
     
@@ -500,26 +534,6 @@ Copy
             }
         ]
     }
-
-To ensure least privilege, the JSON policy should be modified based on which
-target resources that KeeperPAM will be managing through the "Action" and
-"Resource" attributes.
-
-Follow these steps to create a new role and apply the policy:
-
-  1. Create role with JSON specified above, or click on IAM > Roles > Create Role > Select "AWS Service" with "EC2 use case".
-
-  2. Attach the policy JSON to the role.
-
-  3. From EC2 > Instances, select the instance with the gateway and go to Actions > Security > Modify IAM Role > Select your new role.
-
-###
-
-Minimum AWS Policy to Manage IAM users
-
-Managed User Type
-
-IAM Policy
 
 EC2 User
 
@@ -546,19 +560,6 @@ Rotation uses AWS APIs for PAM User records and requires:
 
 **iam:SimulatePrincipalPolicy iam:UpdateLoginProfile iam:GetUser**
 
-* * *
-
-##
-
-IAM User Policy
-
-Using EC2 instance role policy is preferred, however the AWS Access Key ID and
-Secret Access Key can be directly set in the PAM Configuration. The IAM Admin
-account needs to be created with the appropriate policy settings configured to
-access the target resource in AWS.
-
-An sample policy is below.
-
 Copy
 
     
@@ -588,26 +589,23 @@ Copy
         ]
     }
 
-To ensure least privilege, the JSON policy should be modified based on which
-target resources that KeeperPAM will be managing through the "Action" and
-"Resource" attributes.
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
 
-The steps to create the access keys is below:
+# AWS Environment Setup
 
-  1. Create a new IAM user or select an existing user
+Setting up your AWS environment to work with KeeperPAM
 
-  2. Attach the policy to the user
+[PreviousPAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)[NextAzure Environment
+Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration/azure-environment-setup)
 
-  3. Open the IAM user > Security credentials > Create access key
-
-  4. Select "Application running outside AWS"
-
-  5. Save the provided Access Key ID / Secret Access Key into the PAM Configuration
-
-AWS Rotation Hierarchy
-
-In addition to these policies, we recommend protecting the Gateway
-Configuration secrets .
+  * AWS Environment Overview 
+  * EC2 IAM Role Policy
+  * Minimum AWS Policy to Manage IAM users
+  * IAM User Policy
 
 [using the AWS KMS](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/advanced-configuration/gateway-configuration-with-aws-kms)
@@ -617,6 +615,8 @@ configuration/aws-environment-setup#ec2-role)
 
 [IAM User Policy](/en/keeperpam/privileged-access-manager/getting-started/pam-
 configuration/aws-environment-setup#iam-admin-user-1)
+
+AWS Rotation Hierarchy
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

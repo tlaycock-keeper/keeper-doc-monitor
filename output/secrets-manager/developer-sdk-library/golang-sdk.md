@@ -454,7 +454,7 @@ Detailed Go SDK docs for Keeper Secrets Manager
 sdk)[NextRecord Field Classes](/en/keeperpam/secrets-manager/developer-sdk-
 library/golang-sdk/record-field-classes)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 
@@ -1783,9 +1783,6 @@ go>[](https://github.com/Keeper-Security/secrets-manager-go)
 [Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
 notation)
 
-[UploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/golang-
-sdk#upload-a-file)
-
 [Record Types](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
 
@@ -1794,4 +1791,7 @@ commands/default-record-types#field-types)
 
 [documentation](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
+
+[UploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/golang-
+sdk#upload-a-file)
 
