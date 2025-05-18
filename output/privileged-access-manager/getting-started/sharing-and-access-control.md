@@ -386,6 +386,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -420,36 +450,6 @@ access-jit)
 Last updated 3 months ago
 
 Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
 
 ##
 
@@ -495,9 +495,7 @@ limited to only using resources assigned to them.
 A more in-depth look at Admin Console nodes, roles and permissions can be
 found in the Keeper Enterprise admin guide:
 
-  * [Nodes and Organizational Structure](https://docs.keeper.io/en/enterprise-guide/nodes-and-organizational-structure)
-
-  * [Roles, RBAC and Permissions](https://docs.keeper.io/en/enterprise-guide/roles)
+  *   * 
 
 ###
 
@@ -507,7 +505,7 @@ The PAM Configuration acts as a set of "parental controls" for PAM records. It
 enables or disables specific PAM features for all resources using the
 configuration.
 
-  * More information on [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
+  * 
 
 ###
 
@@ -553,14 +551,6 @@ A Shared Folder contains PAM Resources, such as:
   * PAM Remote Browser
 
   * PAM User
-
-To ensure least privilege, we recommend splitting the PAM Users into a
-separate shared folder, in order to restrict what users and devices can access
-the underlying secrets. When launching our [Quick Start
-Sandbox](/en/keeperpam/privileged-access-manager/quick-start-sandbox) or using
-our [Gateway wizard](/en/keeperpam/privileged-access-manager/getting-
-started/gateways), Keeper will automatically place the resources and users
-into separate shared folders.
 
 For example, this demo environment as seen below provides full access to
 DevOps, but limits access to only viewing and using resources to the
@@ -613,7 +603,7 @@ Managing ownership and permissions of resources and records within the Keeper
 Vault can be delegated to other Keeper admins through the Share Admin
 permission.
 
-  * Read more about the [Share Admin feature](https://docs.keeper.io/en/enterprise-guide/sharing/share-admin) in the Keeper Enterprise docs
+  * 
 
 ###
 
@@ -627,7 +617,7 @@ underlying credentials.
 
   * Sharing a resource to a user with view-only access only gives them the ability to launch connections and tunnels.
 
-  * Keeper's [zero-trust architecture](/en/keeperpam/privileged-access-manager/getting-started/architecture) provides access to the target systems without sharing the credential, ensuring least privilege access.
+  * 
 
 In the example below, a PAM Database is linked to a specific user `sqluser`.
 Connections to the database using that account is available to users without
@@ -678,6 +668,39 @@ Automatic Rotation after Share Expiration
 If you have a use case where a PAM User credential needs to be shared to
 another user, you have the option of automatically rotating the credential
 after the sharing has expired.
+
+More information on
+
+To ensure least privilege, we recommend splitting the PAM Users into a
+separate shared folder, in order to restrict what users and devices can access
+the underlying secrets. When launching our  or using our , Keeper will
+automatically place the resources and users into separate shared folders.
+
+Read more about the  in the Keeper Enterprise docs
+
+Keeper's  provides access to the target systems without sharing the
+credential, ensuring least privilege access.
+
+[Nodes and Organizational Structure](https://docs.keeper.io/en/enterprise-
+guide/nodes-and-organizational-structure)
+
+[Roles, RBAC and Permissions](https://docs.keeper.io/en/enterprise-
+guide/roles)
+
+[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)
+
+[Quick Start Sandbox](/en/keeperpam/privileged-access-manager/quick-start-
+sandbox)
+
+[Gateway wizard](/en/keeperpam/privileged-access-manager/getting-
+started/gateways)
+
+[Share Admin feature](https://docs.keeper.io/en/enterprise-
+guide/sharing/share-admin)
+
+[zero-trust architecture](/en/keeperpam/privileged-access-manager/getting-
+started/architecture)
 
 [Planning your Deployment](/en/keeperpam/privileged-access-manager/getting-
 started/sharing-and-access-control#planning-your-deployment)

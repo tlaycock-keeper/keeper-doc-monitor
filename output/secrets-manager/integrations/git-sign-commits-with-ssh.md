@@ -447,7 +447,7 @@ Sign your git commits using an SSH key stored in your Keeper Vault
 manager/integrations/entrust-hsm)[NextGitHub Actions](/en/keeperpam/secrets-
 manager/integrations/github-actions)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

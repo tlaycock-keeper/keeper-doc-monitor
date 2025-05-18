@@ -386,36 +386,54 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
+#### Company
 
-  * About 
-  * Notation
-  * Fetching Records by Name
-  * Escaping notation characters
-  * Using Name to Simplify Environment Switching
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+On this page
 
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-MkhHwC6PB3pqh132phe&only=yes&limit=100)
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [About KSM](/en/keeperpam/secrets-manager/about)
+Last updated 6 months ago
 
-# Keeper Notation
-
-Query format used for getting fields of a secret
+Was this helpful?
 
 ##
 
 About
 
-Keeper notation is used by Keeper Secrets Manager[
-SDKs](/en/keeperpam/secrets-manager/developer-sdk-library) and
-[integrations](/en/keeperpam/secrets-manager/integrations) to query fields in
+Keeper notation is used by Keeper Secrets Manager and  to query fields in
 Keeper records. To view the different types of records and the field names
-available, [click here](/en/keeperpam/secrets-manager/about/field-record-
-types).
+available, .
 
 ##
 
@@ -472,21 +490,6 @@ be returned.
 
 **Sub Fields** Some field values are made up of other sub fields. For example:
 
-Copy
-
-    
-    
-    "fields": [
-        { "type": "name", "value": [ 
-            {"first:": "John", "last": "Doe"},
-            {"first:": "Jane", "last": "Doe"} ]
-        },
-        { "type": "phone", "value": [
-            {"number": "555-5555555", "ext": "55"}, 
-            {"number": "777-7777777", "ext": "77"} ]
-        }
-    ]
-
 To access sub fields, include the name of the field as an alphanumeric
 predicate. For example `name[0][first]` will find "John" in the example above,
 and `name[1][first]`__ will find "Jane".
@@ -494,17 +497,6 @@ and `name[1][first]`__ will find "Jane".
 **Mixed**
 
 Some values are a combination of the arrays and Sub Fields. For example:
-
-Copy
-
-    
-    
-    [
-        {"number": "555-5555555", "ext": "55"}, 
-        {"number": "777-7777777", "ext": "77"}, 
-        {"number": "888-8888888", "ext": "", "type": "Home"}, 
-        {"number": "999-9999999", "type": "Work"}
-    ]
 
 To get a specific value you can use the first numeric predicate to get the
 whole value - ex. `phone[1] `will return the full value for the second phone
@@ -566,15 +558,6 @@ Get all phone numbers on the record as an array
 
 _returns:_
 
-Copy
-
-    
-    
-    [
-      {"number": "123-456-7890", "type": "work"},
-      {"number": "555-555-5555", "type": "home"}
-    ]
-
 ##
 
 Fetching Records by Name
@@ -624,43 +607,63 @@ associated to the Dev folder (in this case "Development Environment"). Then to
 build for production, simply change the associated Secrets Manager application
 to "Production Environment" no change in code or scripts needed.
 
+Copy
+
+    
+    
+    "fields": [
+        { "type": "name", "value": [ 
+            {"first:": "John", "last": "Doe"},
+            {"first:": "Jane", "last": "Doe"} ]
+        },
+        { "type": "phone", "value": [
+            {"number": "555-5555555", "ext": "55"}, 
+            {"number": "777-7777777", "ext": "77"} ]
+        }
+    ]
+
+Copy
+
+    
+    
+    [
+        {"number": "555-5555555", "ext": "55"}, 
+        {"number": "777-7777777", "ext": "77"}, 
+        {"number": "888-8888888", "ext": "", "type": "Home"}, 
+        {"number": "999-9999999", "type": "Work"}
+    ]
+
+Copy
+
+    
+    
+    [
+      {"number": "123-456-7890", "type": "work"},
+      {"number": "555-555-5555", "type": "home"}
+    ]
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [About KSM](/en/keeperpam/secrets-manager/about)
+
+# Keeper Notation
+
+Query format used for getting fields of a secret
+
 [PreviousSecrets Manager Configuration](/en/keeperpam/secrets-
 manager/about/secrets-manager-configuration)[NextEvent
 Reporting](/en/keeperpam/secrets-manager/about/event-reporting)
 
-Last updated 6 months ago
+  * About 
+  * Notation
+  * Fetching Records by Name
+  * Escaping notation characters
+  * Using Name to Simplify Environment Switching
 
-Was this helpful?
+[ SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
 
-#### Company
+[integrations](/en/keeperpam/secrets-manager/integrations)
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+[click here](/en/keeperpam/secrets-manager/about/field-record-types)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

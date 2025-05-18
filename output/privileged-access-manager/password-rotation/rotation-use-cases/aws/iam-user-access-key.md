@@ -585,13 +585,6 @@ could also import the csv file below. It will create a template record you can
 amend and duplicate as needed. Importing the file will generate a Login record
 type: **make sure to convert it to PAM User**.
 
-[213BPAM User
-template.csv](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FYR6dnIzAWf8lqZdK0QYo%2FPAM%20User%20template.csv?alt=media&token=33d35c09-b0f3-47c0-b6ab-877ee1d1250f)
-
-CSV file to easily create a PAM User template record via an import in the
-vault
-
 ##
 
 Setting Up the Rotation in the Keeper Vault
@@ -811,12 +804,6 @@ way it usually does without this extra field.
 ##
 
 Python Script
-
-[10KBRotateAWSAccessKeys.py](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FjbAzV7zvd4doh46XBOmN%2FRotateAWSAccessKeys.py?alt=media&token=e1c688cf-c4c1-4d2d-a402-37330962e9da)
-
-Download script
 
 Copy
 
@@ -1049,41 +1036,17 @@ Last updated 3 months ago
 
 Was this helpful?
 
-PAM User record example
-
 Go to the .
 
-Create a policy in AWS
+Create a PAM User record in the shared folder with the fields and custom
+fields described .
 
-Create an IAM role in AWS
-
-Attach the policy to the role in AWS
-
-EC2 Instance contextual menu
-
-Assign IAM role to EC2 instance
+Edit the PAM User record previously described in this :
 
 Create a PAM User record in the shared folder with the fields and custom
 fields described .
 
-PAM Configuration without providing an AWS access key
-
 Edit the PAM User record previously described in this :
-
-Attach PAM script with a script command
-
-Create a PAM User record in the shared folder with the fields and custom
-fields described .
-
-PAM User record in the shared folder
-
-AWS PAM Config
-
-Edit the PAM User record previously described in this :
-
-Attach PAM script with a script command
-
-Attach Rotation Credentials to a PAM Script
 
 Using the PAM User record type to store the admin access key allows you to
 also **automate the rotation of the admin access key**. Make sure to follow
@@ -1166,6 +1129,43 @@ requirements)
 [those requirements](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-
 requirements)
+
+[213BPAM User
+template.csv](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FYR6dnIzAWf8lqZdK0QYo%2FPAM%20User%20template.csv?alt=media&token=33d35c09-b0f3-47c0-b6ab-877ee1d1250f)
+
+CSV file to easily create a PAM User template record via an import in the
+vault
+
+[10KBRotateAWSAccessKeys.py](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
+x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FjbAzV7zvd4doh46XBOmN%2FRotateAWSAccessKeys.py?alt=media&token=e1c688cf-c4c1-4d2d-a402-37330962e9da)
+
+Download script
+
+PAM User record example
+
+Create a policy in AWS
+
+Create an IAM role in AWS
+
+Attach the policy to the role in AWS
+
+EC2 Instance contextual menu
+
+Assign IAM role to EC2 instance
+
+PAM Configuration without providing an AWS access key
+
+Attach PAM script with a script command
+
+PAM User record in the shared folder
+
+AWS PAM Config
+
+Attach PAM script with a script command
+
+Attach Rotation Credentials to a PAM Script
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

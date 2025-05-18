@@ -418,27 +418,14 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Commands
-  * Sharing Commands
-  * share-record command
-  * share-folder command
-  * record-permission command
-  * share Command
-  * external-shares-report command
-  * Bulk Record Permission Changes
-  * Bulk Record-Ownership Transfer
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-McBBUr2gfUfRJ9k_ufi&only=yes&limit=100)
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+Last updated 5 days ago
 
-# Sharing Commands
-
-Commands related to sharing records and shared folders
+Was this helpful?
 
 ##
 
@@ -459,20 +446,6 @@ To get help on a particular command, run:
 ###
 
 **Sharing Commands**
-
-Command
-
-Explanation
-
-Grant or revoke user access to a record
-
-Change shared folder permissions
-
-Change record permissions of a folder
-
-Manage one-time shares
-
-Display or revoke shares to external users
 
 ###
 
@@ -513,18 +486,6 @@ domains with matching usernames if needed
 -f, --force skip confirmation prompts
 
 **Examples:**
-
-Copy
-
-    
-    
-    share-record memberships/Gym -e john.smith@gmail.com
-    sr g6rvo2-Uv-BC16ZM33CF3w -e john.smith@gmail.com --share
-    sr social/Twitter -e john.smith@gmail.com --action owner
-    sr --recursive -e john.smith@gmail.com "My Shared Folder" 
-    sr --expire-at "2050-01-01 00:00:01" -e john.smith@gmail.com memberships/Gym
-    sr --expire-in 3d -e john.smith@gmail.com social/Twitter
-    sr --contacts-only -e bob.dobb@wrongdomain.com 'Wifi Credentials'
 
   1. Share the "Gym" record in the "memberships" folder with user John Smith
 
@@ -593,17 +554,6 @@ hh:mm:ss])
 
 **Examples:**
 
-Copy
-
-    
-    
-    share-folder memberships -e Jane.Smith@gmail.com -p off
-    sf jdrkYEaf03bG0ShCGlnKww -e DB_ADMINS -p on
-    sf "Team Passwords" -e "Marketing Team" -a grant -o on
-    sf * -e DB_ADMINS -p on
-    sf -a remove -e Jane.Smith@gmail.com memberships
-    sf -e Jane.Smith@gmail.com --expire-in 5h memberships
-
   1. Share the "memberships" shared folder with user Jane.Smith@gmail.com. Allow the user to manage records
 
   2. Share the folder with the given UID with the "DB_ADMINS" team and allow them to manage records in the shared folder
@@ -627,26 +577,12 @@ use the [*] symbol.
 For example, to set user defaults to "Can Manage Users & Records" and to set
 record defaults to "Can Edit & Share" on the Shared Folder based on a UID:
 
-Copy
-
-    
-    
-    sf --email=* --manage-users on --manage-records on jdrkYEaf03bG0ShCGlnKww
-    sf --record=* --can-share on --can-edit on jdrkYEaf03bG0ShCGlnKww
-
 Hint: You can also apply the same permissions used to set a shared folder's
 default settings (as in the examples above) to records/users currently
 assigned to that shared folder within the same command call by simply
 specifying the value "@current" or "@existing" for the appropriate option/s
 (-r for records, -e for users). Using examples similar to the ones above, we
 have the following:
-
-Copy
-
-    
-    
-    sf -e * --manage-users on --manage-records on -e @existing memberships
-    sf -r * --can-share on --can-edit on -r @existing -e @existing memberships
 
 In the 1st example, we set both the default user permissions and the
 permissions granted to current users assigned to the shared folder to "can
@@ -687,14 +623,6 @@ changing the permissions
 \--share-folder change a folder's sharing permissions
 
 **Examples:**
-
-Copy
-
-    
-    
-    record-permission memberships --action grant --can-share
-    record-permission jdrkYEaf03bG0ShCGlnKww -a revoke -d -R
-    record-permission social -a grant -s --dry-run
 
   1. Grant sharing permission to all records in the "memberships" shared folder
 
@@ -763,34 +691,9 @@ format: <NUMBER>[(mi)nutes|(h)ours|(d)ays] e.g. `1h` for 1 hour
 
 **List**
 
-Copy
-
-    
-    
-    My Vault> one-time-share list -R /
-    My Vault> ots list dIGd46nq2uE_q1fXlAQGkw --all
-    Record UID              Name         Share Link ID            Generated            Opened    Expires              Status
-    ----------------------  -----------  -----------------------  -------------------  --------  -------------------  ---------
-    dIGyf6nq2uE_q1fXlAQGkw  MyShare      vhSIl2fnjp5tTaE4w9DC...  2022-04-29 11:01:19            2022-04-29 12:01:19  Expired
-    dIGyf6nq2uE_q1fXlAQGkw  LwIdbnYa160  bOuAQzCoYL8XIcQpz2KU...  2022-04-29 15:38:27            2022-04-29 16:38:27  Generated
-
 **Create**
 
-Copy
-
-    
-    
-    My Vault> share create dIGyf6nq2uE_q1fXlAQGkw -e 1h
-           URL : https://keepersecurity.com/vault/share#s4iSKc7TP[...]
-
 **Remove**
-
-Copy
-
-    
-    
-    My Vault> share remove dIGyf6nq2uE_q1fXlAQGkw MyShare
-    One-time share "MyShare" is removed from record "dIGyf6nq2uE_q1fXlAQGkw"
 
 ###
 
@@ -818,17 +721,6 @@ omitted
 \--refresh-data, -r refresh local user and record data before running
 
 **Examples:**
-
-Copy
-
-    
-    
-    external-shares-report
-    external-shares-report -r
-    esr --output external_shares.json --format json
-    external-shares-report -a remove
-    esr -a remove -f
-    external-shares-report --share-type shared-folder
 
   1. Show records and shared-folders shared to users outside of the enterprise
 
@@ -953,20 +845,6 @@ command call to perform the desired action, like so:
 `**share-record --action owner --email john.smith@gmail.com --recursive --
 -FHdesR_GSERHUwBg4vTXw**`
 
-[ PreviousCreating Record Types](/en/keeperpam/commander-cli/command-
-reference/record-commands/default-record-types)[NextKeeperPAM
-Commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
-
-Last updated 5 days ago
-
-Was this helpful?
-
-or `sr`
-
-or `sf`
-
-or `esr`
-
 See the command for details on creating shared folders
 
 **Detail:** Create, list, or remove a one-time shares for a given record. For
@@ -978,6 +856,108 @@ available for Enterprise admin accounts.
 See previous  for details on how to do this. For this example, we'll be using
 the shared folder with UID `**-FHdesR_GSERHUwBg4vTXw**`
 
+Copy
+
+    
+    
+    share-record memberships/Gym -e john.smith@gmail.com
+    sr g6rvo2-Uv-BC16ZM33CF3w -e john.smith@gmail.com --share
+    sr social/Twitter -e john.smith@gmail.com --action owner
+    sr --recursive -e john.smith@gmail.com "My Shared Folder" 
+    sr --expire-at "2050-01-01 00:00:01" -e john.smith@gmail.com memberships/Gym
+    sr --expire-in 3d -e john.smith@gmail.com social/Twitter
+    sr --contacts-only -e bob.dobb@wrongdomain.com 'Wifi Credentials'
+
+Copy
+
+    
+    
+    share-folder memberships -e Jane.Smith@gmail.com -p off
+    sf jdrkYEaf03bG0ShCGlnKww -e DB_ADMINS -p on
+    sf "Team Passwords" -e "Marketing Team" -a grant -o on
+    sf * -e DB_ADMINS -p on
+    sf -a remove -e Jane.Smith@gmail.com memberships
+    sf -e Jane.Smith@gmail.com --expire-in 5h memberships
+
+Copy
+
+    
+    
+    sf --email=* --manage-users on --manage-records on jdrkYEaf03bG0ShCGlnKww
+    sf --record=* --can-share on --can-edit on jdrkYEaf03bG0ShCGlnKww
+
+Copy
+
+    
+    
+    sf -e * --manage-users on --manage-records on -e @existing memberships
+    sf -r * --can-share on --can-edit on -r @existing -e @existing memberships
+
+Copy
+
+    
+    
+    record-permission memberships --action grant --can-share
+    record-permission jdrkYEaf03bG0ShCGlnKww -a revoke -d -R
+    record-permission social -a grant -s --dry-run
+
+Copy
+
+    
+    
+    My Vault> one-time-share list -R /
+    My Vault> ots list dIGd46nq2uE_q1fXlAQGkw --all
+    Record UID              Name         Share Link ID            Generated            Opened    Expires              Status
+    ----------------------  -----------  -----------------------  -------------------  --------  -------------------  ---------
+    dIGyf6nq2uE_q1fXlAQGkw  MyShare      vhSIl2fnjp5tTaE4w9DC...  2022-04-29 11:01:19            2022-04-29 12:01:19  Expired
+    dIGyf6nq2uE_q1fXlAQGkw  LwIdbnYa160  bOuAQzCoYL8XIcQpz2KU...  2022-04-29 15:38:27            2022-04-29 16:38:27  Generated
+
+Copy
+
+    
+    
+    My Vault> share create dIGyf6nq2uE_q1fXlAQGkw -e 1h
+           URL : https://keepersecurity.com/vault/share#s4iSKc7TP[...]
+
+Copy
+
+    
+    
+    My Vault> share remove dIGyf6nq2uE_q1fXlAQGkw MyShare
+    One-time share "MyShare" is removed from record "dIGyf6nq2uE_q1fXlAQGkw"
+
+Copy
+
+    
+    
+    external-shares-report
+    external-shares-report -r
+    esr --output external_shares.json --format json
+    external-shares-report -a remove
+    esr -a remove -f
+    external-shares-report --share-type shared-folder
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+
+# Sharing Commands
+
+Commands related to sharing records and shared folders
+
+[PreviousCreating Record Types](/en/keeperpam/commander-cli/command-
+reference/record-commands/default-record-types)[NextKeeperPAM
+Commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
+
+  * Commands
+  * Sharing Commands
+  * share-record command
+  * share-folder command
+  * record-permission command
+  * share Command
+  * external-shares-report command
+  * Bulk Record Permission Changes
+  * Bulk Record-Ownership Transfer
+
 [click here](https://docs.keeper.io/enterprise-guide/one-time-share)
 
 [Compliance Reporting](https://docs.keeper.io/enterprise-guide/compliance-
@@ -985,6 +965,26 @@ reports)
 
 [example](/en/keeperpam/commander-cli/command-reference/sharing-
 commands#1.-identify-shared-folder-uid)
+
+Command
+
+Explanation
+
+Grant or revoke user access to a record
+
+Change shared folder permissions
+
+Change record permissions of a folder
+
+Manage one-time shares
+
+Display or revoke shares to external users
+
+or `sr`
+
+or `sf`
+
+or `esr`
 
 [`share-record`](/en/keeperpam/commander-cli/command-reference/sharing-
 commands#share-record-command)
@@ -1010,7 +1010,7 @@ files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mekzvg
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel0U6AJJFYFrnwhdyL%252Fimage.png%3Falt%3Dmedia%26token%3D14e6b9f2-53fe-4c82-9c99-d6b477732436&width=768&dpr=4&quality=100&sign=684ea3d&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel0Z9xJp1m7dxf1H8C%252Fimage.png%3Falt%3Dmedia%26token%3D0c2a9f0e-5f49-4a4b-8fd1-235a3094af72&width=768&dpr=4&quality=100&sign=378b1d3d&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -1019,7 +1019,7 @@ _yS8GDbOy4_Cd0W%252Fimage.png%3Falt%3Dmedia%26token%3D3ff3d195-2db6-4d93-91ab-97
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel0Z9xJp1m7dxf1H8C%252Fimage.png%3Falt%3Dmedia%26token%3D0c2a9f0e-5f49-4a4b-8fd1-235a3094af72&width=768&dpr=4&quality=100&sign=378b1d3d&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-MekzeEjeziNtK3guRXA%252Fimage.png%3Falt%3Dmedia%26token%3D033f1c23-92c6-4f8c-a1f7-9415d9e96463&width=768&dpr=4&quality=100&sign=1f8bce6a&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -1027,5 +1027,5 @@ files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel02M
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-MekzeEjeziNtK3guRXA%252Fimage.png%3Falt%3Dmedia%26token%3D033f1c23-92c6-4f8c-a1f7-9415d9e96463&width=768&dpr=4&quality=100&sign=1f8bce6a&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MejtIk9t2VrzvkI15rE%252F-Mel0U6AJJFYFrnwhdyL%252Fimage.png%3Falt%3Dmedia%26token%3D14e6b9f2-53fe-4c82-9c99-d6b477732436&width=768&dpr=4&quality=100&sign=684ea3d&sv=2)
 

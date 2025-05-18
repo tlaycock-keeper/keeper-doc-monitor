@@ -386,6 +386,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview 
@@ -419,36 +449,6 @@ isolation)
 Last updated 3 months ago
 
 Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
 
 ##
 
@@ -489,29 +489,13 @@ Definition
 
 Can configure tunnel settings
 
-Copy
-
-    
-    
-    ALLOW_CONFIGURE_PAM_TUNNELING_SETTINGS
-
 Allow users to configure Tunnel settings on PAM Machine, PAM Directory, PAM
 Database and PAM Configuration Records Types
 
 Can start tunnels
 
-Copy
-
-    
-    
-    ALLOW_LAUNCH_PAM_TUNNELS
-
 Allow users to start tunnels on PAM Machine, PAM Directory and PAM Database
 Record Types
-
-Tunnels can also be enabled on the [Keeper Commander
-CLI](/en/keeperpam/commander-cli/command-reference/secrets-manager-
-commands#overview) using the `enterprise-role` command:
 
 Copy
 
@@ -540,19 +524,9 @@ customer's network to enabled zero-trust access to target infrastructure.
 Typically this service is installed on a Linux or Docker environment in each
 of the networks that requires access.
 
-For more details on installing and setting up your gateway, visit this
-[page](/en/keeperpam/privileged-access-manager/getting-started/gateways).
-
 ###
 
 PAM Configuration
-
-The **PAM Configuration** contains essential information of your target
-infrastructure, settings and [Keeper Gateway](/en/keeperpam/privileged-access-
-manager/getting-started/gateways). Setting up a PAM Configuration for your
-infrastructure is **required**. For more information on creating and
-configuring the PAM Configuration, visit this [page](/en/keeperpam/privileged-
-access-manager/getting-started/pam-configuration).
 
 ###
 
@@ -566,18 +540,9 @@ PAM Record Type
 
 Target Endpoint type
 
-[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
 Windows/MacOS/Linux Machines, EC2 Instances, Azure VMs
 
-[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database)
-
 MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
-
-[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-directory)
 
 Active Directory, OpenLDAP
 
@@ -674,12 +639,9 @@ Copy
 
 Commander CLI
 
-[Keeper Commander](/en/keeperpam/commander-cli/overview) provides Tunneling
-capabilities in addition to using the Keeper Desktop UI.
-
 Related commands:
 
-  * [`pam tunnel`](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
+  * 
 
 ####
 
@@ -710,18 +672,74 @@ authentication required for a protocol, such as a password or SSH key must be
 available to the user on their local device. Keeper does not intercept the
 protocol layer.
 
-If tunnels are provided to users along with the necessary credentials, we
-recommend automatic rotation of the credential to ensure that the credentials
-are ephemeral and invalidated on a scheduled basis. For more information about
-rotation, see the [Password Rotation](/en/keeperpam/secrets-manager/password-
-rotation) section.
-
 KeeperPAM provides two methods of accessing remote infrastructure without the
 need to share credentials:
 
-  * [Connections](/en/keeperpam/privileged-access-manager/connections) to establish interactive sessions across many different protocols
+  *   * 
 
-  * [Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-isolation) with Autofill to establish web-based interactive sessions
+Tunnels can also be enabled on the  using the `enterprise-role` command:
+
+For more details on installing and setting up your gateway, visit this .
+
+The **PAM Configuration** contains essential information of your target
+infrastructure, settings and . Setting up a PAM Configuration for your
+infrastructure is **required**. For more information on creating and
+configuring the PAM Configuration, visit this .
+
+provides Tunneling capabilities in addition to using the Keeper Desktop UI.
+
+If tunnels are provided to users along with the necessary credentials, we
+recommend automatic rotation of the credential to ensure that the credentials
+are ephemeral and invalidated on a scheduled basis. For more information about
+rotation, see the  section.
+
+to establish interactive sessions across many different protocols
+
+with Autofill to establish web-based interactive sessions
+
+Copy
+
+    
+    
+    ALLOW_CONFIGURE_PAM_TUNNELING_SETTINGS
+
+Copy
+
+    
+    
+    ALLOW_LAUNCH_PAM_TUNNELS
+
+[page](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
+started/gateways)
+
+[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration)
+
+[Keeper Commander](/en/keeperpam/commander-cli/overview)
+
+[`pam tunnel`](/en/keeperpam/commander-cli/command-reference/keeperpam-
+commands)
+
+[Password Rotation](/en/keeperpam/secrets-manager/password-rotation)
+
+[Connections](/en/keeperpam/privileged-access-manager/connections)
+
+[Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-
+browser-isolation)
+
+[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
+
+[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database)
+
+[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-directory)
+
+[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
+manager-commands#overview)
 
 An active license is required in order to use the features available with
 KeeperPAM. This license is available for both business and enterprise

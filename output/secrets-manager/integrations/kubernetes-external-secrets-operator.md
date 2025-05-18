@@ -883,6 +883,9 @@ external-secrets-operator#create-externalsecret)
 
 [External Secrets Operator](https://charts.external-secrets.io)
 
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
@@ -891,7 +894,4 @@ x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTuTzLzBatbwf6hlcKEGt%252Fksm-
 externalsecrets-
 kubernetes.jpg%3Falt%3Dmedia%26token%3D16302139-00a4-4e61-8c25-8d24f83c911b&width=768&dpr=4&quality=100&sign=daa2aa25&sv=2)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 

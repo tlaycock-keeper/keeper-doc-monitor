@@ -727,11 +727,11 @@ manager/integrations/ansible/ansible-plugin)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjIMOCZkeFkzS23r75wOS%252Fimage.png%3Falt%3Dmedia%26token%3D20566d61-8116-4b33-85b2-01ddd77d3c8e&width=768&dpr=4&quality=100&sign=5085d78a&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FQmR5XLrVZDAtFVZf1xOF%252FScreen%2520Shot%25202022-02-01%2520at%25203.16.22%2520PM.png%3Falt%3Dmedia%26token%3D80c57357-607e-4b71-8b77-3590e8b82232&width=768&dpr=4&quality=100&sign=c89383df&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FQmR5XLrVZDAtFVZf1xOF%252FScreen%2520Shot%25202022-02-01%2520at%25203.16.22%2520PM.png%3Falt%3Dmedia%26token%3D80c57357-607e-4b71-8b77-3590e8b82232&width=768&dpr=4&quality=100&sign=c89383df&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjIMOCZkeFkzS23r75wOS%252Fimage.png%3Falt%3Dmedia%26token%3D20566d61-8116-4b33-85b2-01ddd77d3c8e&width=768&dpr=4&quality=100&sign=5085d78a&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

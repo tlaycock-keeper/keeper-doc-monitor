@@ -440,7 +440,7 @@ Creating a Keeper Gateway
 started/gateways)[NextDocker Installation](/en/keeperpam/privileged-access-
 manager/getting-started/gateways/docker-installation)
 
-Last updated 25 days ago
+Last updated 26 days ago
 
 Was this helpful?
 

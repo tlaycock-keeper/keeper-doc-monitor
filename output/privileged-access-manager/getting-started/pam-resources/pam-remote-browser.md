@@ -386,38 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * What is Remote Browser Isolation
-  * Features Available
-  * Creating a Remote Browser Isolation Record
-  * PAM Remote Browser Record Type Fields
-  * PAM Settings and Administrative Credentials 
-  * PAM Settings
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=7AHsnpdzarKPrJVcpQRz&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [PAM Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-resources)
-
-# PAM Remote Browser
-
-KeeperPAM resource for managing remote browser isolation access to a protected
-web application
-
-[PreviousPAM Directory](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-directory)[NextPAM User](/en/keeperpam/privileged-
-access-manager/getting-started/pam-resources/pam-user)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -447,6 +415,38 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Overview
+  * What is Remote Browser Isolation
+  * Features Available
+  * Creating a Remote Browser Isolation Record
+  * PAM Remote Browser Record Type Fields
+  * PAM Settings and Administrative Credentials 
+  * PAM Settings
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=7AHsnpdzarKPrJVcpQRz&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [PAM Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-resources)
+
+# PAM Remote Browser
+
+KeeperPAM resource for managing remote browser isolation access to a protected
+web application
+
+[PreviousPAM Directory](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-directory)[NextPAM User](/en/keeperpam/privileged-
+access-manager/getting-started/pam-resources/pam-user)
+
+Last updated 4 months ago
+
+Was this helpful?
 
 ##
 
@@ -490,14 +490,6 @@ The PAM Remote Browser resource supports the following features:
   * URL AllowList patterns
 
   * Navigation bar
-
-Connecting to the protected web application requires only that the Keeper
-Gateway has access to the target website. The Keeper Vault operates
-independently and does not require direct connectivity to the website,
-leveraging Keeper's zero-trust network access model to securely manage access
-through the Gateway. See the [network architecture
-diagram](/en/keeperpam/privileged-access-manager/getting-
-started/architecture/system-architecture) for more details.
 
 ##
 
@@ -587,12 +579,23 @@ Browser Settings (multiple)
 
 Browser-specific protocol settings
 
-Additional information on Remote Browser Isolation is [available at this
-page](/en/keeperpam/privileged-access-manager/remote-browser-isolation).
+Connecting to the protected web application requires only that the Keeper
+Gateway has access to the target website. The Keeper Vault operates
+independently and does not require direct connectivity to the website,
+leveraging Keeper's zero-trust network access model to securely manage access
+through the Gateway. See the  for more details.
 
 See
 
 See
+
+Additional information on Remote Browser Isolation is .
+
+[network architecture diagram](/en/keeperpam/privileged-access-
+manager/getting-started/architecture/system-architecture)
+
+[available at this page](/en/keeperpam/privileged-access-manager/remote-
+browser-isolation)
 
 [session recording](/en/keeperpam/privileged-access-manager/session-recording-
 and-playback)

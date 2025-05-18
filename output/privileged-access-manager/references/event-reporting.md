@@ -431,6 +431,8 @@ Privileged Access Manager events in the Admin Console
 
 SIEM Events
 
+SIEM Event List
+
 ###
 
 Secrets Manager Events
@@ -506,8 +508,6 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-SIEM Event List
 
 [Reporting, Alerts & SIEMEnterprise Guide](https://docs.keeper.io/enterprise-
 guide/event-reporting)

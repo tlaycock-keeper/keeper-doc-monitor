@@ -778,13 +778,13 @@ security/page/product/credentials/concept/c_ExternalCredentialStorage.html)
 manager/about/secrets-manager-configuration#creating-a-secrets-manager-
 configuration)
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FEzNiRnYQFy6ZdkIAjTDw%252Fkeeper%252Bservicenow.jpg%3Falt%3Dmedia%26token%3D220f17f1-fd62-4c9b-b528-afdf43ab9096&width=768&dpr=4&quality=100&sign=77fca440&sv=2)
+
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FEzNiRnYQFy6ZdkIAjTDw%252Fkeeper%252Bservicenow.jpg%3Falt%3Dmedia%26token%3D220f17f1-fd62-4c9b-b528-afdf43ab9096&width=768&dpr=4&quality=100&sign=77fca440&sv=2)
 

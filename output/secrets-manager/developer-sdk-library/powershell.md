@@ -423,17 +423,6 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=wz0O7fcw1wsdcgngnbs4&only=yes&limit=100)
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Developer SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
-
-# PowerShell
-
-PowerShell docs for Keeper Secrets Manager
-
-[PreviousRecord Field Classes](/en/keeperpam/secrets-manager/developer-sdk-
-library/golang-sdk/record-field-classes)[NextVault
-SDKs](/en/keeperpam/secrets-manager/developer-sdk-library/vault-sdks)
-
 Last updated 6 months ago
 
 Was this helpful?
@@ -451,6 +440,17 @@ Features
   * Get files from the Keeper vault
 
 Please refer to the  documented in the Integrations section:
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Developer SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
+
+# PowerShell
+
+PowerShell docs for Keeper Secrets Manager
+
+[PreviousRecord Field Classes](/en/keeperpam/secrets-manager/developer-sdk-
+library/golang-sdk/record-field-classes)[NextVault
+SDKs](/en/keeperpam/secrets-manager/developer-sdk-library/vault-sdks)
 
 [Keeper PowerShell module](/en/keeperpam/secrets-
 manager/integrations/powershell-plugin)
