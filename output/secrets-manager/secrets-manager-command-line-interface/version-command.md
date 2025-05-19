@@ -470,7 +470,7 @@ command-line-interface/config-command)[NextMisc
 Commands](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/vault-admin-commands)
 
-Last updated 6 months ago
+Last updated 7 months ago
 
 Was this helpful?
 

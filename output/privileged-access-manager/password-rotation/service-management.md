@@ -459,8 +459,6 @@ the associated PAM Machine, and restart the services. One **PAM User** record
 can be associated to any number of **PAM Machine** records, allowing you to
 update the services and scheduled tasks across a fleet of servers.
 
-Windows Service Management
-
 ##
 
 Prerequisites
@@ -673,10 +671,6 @@ tasks that require update when a password is rotated.
 
 If you haven't set up Keeper Commander yet, please follow the .
 
-Find the Record UID
-
-Rotate the Windows Credential
-
 [Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-
 started/enforcement-policies)
 
@@ -693,6 +687,12 @@ up-winrm)
 
 [installation instructions](/en/keeperpam/commander-cli/commander-
 installation-setup)
+
+Windows Service Management
+
+Find the Record UID
+
+Rotate the Windows Credential
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

@@ -418,10 +418,23 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * What is Keeper Commander?
+  * Use Cases
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-MelQpkkGGH4hTYr4d8u&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+
+# Commander Overview
+
+Overview of Keeper Commander CLI for IT Admins, DevOps & Developers
+
+[PreviousTroubleshooting](/en/keeperpam/secrets-
+manager/troubleshooting)[NextInstallation and Setup](/en/keeperpam/commander-
+cli/commander-installation-setup)
 
 Last updated 3 months ago
 
@@ -473,19 +486,6 @@ If you need any assistance or require specific functionality not supported in
 Commander yet, please contact us at .
 
 To download or fork the Commander CLI source code, visit the Github repo:
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-
-# Commander Overview
-
-Overview of Keeper Commander CLI for IT Admins, DevOps & Developers
-
-[PreviousTroubleshooting](/en/keeperpam/secrets-
-manager/troubleshooting)[NextInstallation and Setup](/en/keeperpam/commander-
-cli/commander-installation-setup)
-
-  * What is Keeper Commander?
-  * Use Cases
 
 [commander@keepersecurity.com](mailto:commander@keepersecurity.com)
 

@@ -386,6 +386,32 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=l6HcnN1otHc20n7EcNSv&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+
+# Password Rotation
+
+Automatically rotate secrets in the cloud and on-prem with KeeperPAM
+
+Keeper Password Rotation allows Keeper customers to securely rotate
+credentials in any cloud-based or on-prem environment.
+
+  * Go to the [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation) documentation in KeeperPAM to learn more.
+
+[PreviousCustom Record Types](/en/keeperpam/secrets-manager/secrets-manager-
+command-line-interface/custom-record-types)[NextDeveloper
+SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -415,32 +441,4 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=l6HcnN1otHc20n7EcNSv&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-
-# Password Rotation
-
-Automatically rotate secrets in the cloud and on-prem with KeeperPAM
-
-[PreviousCustom Record Types](/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface/custom-record-types)[NextDeveloper
-SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
-
-Last updated 3 months ago
-
-Was this helpful?
-
-Keeper Password Rotation allows Keeper customers to securely rotate
-credentials in any cloud-based or on-prem environment.
-
-  * Go to the  documentation in KeeperPAM to learn more.
-
-[Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
 

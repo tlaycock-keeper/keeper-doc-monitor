@@ -452,8 +452,6 @@ encryption between the end-user's device and the target infrastructure.
 Keeper's servers have no ability to decrypt or intercept the underlying
 sessions.
 
-KeeperPAM Architecture
-
 ###
 
 Components
@@ -541,6 +539,8 @@ encrypted ciphertext to the API in a  format.
 [WebRTC](https://en.wikipedia.org/wiki/WebRTC)
 
 [Protocol Buffer](https://en.wikipedia.org/wiki/Protocol_Buffers)
+
+KeeperPAM Architecture
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

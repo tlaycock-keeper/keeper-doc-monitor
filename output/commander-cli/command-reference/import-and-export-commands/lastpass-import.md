@@ -925,9 +925,6 @@ commands/default-record-types)
 
 [share admins](https://docs.keeper.io/enterprise-guide/share-admin)
 
-[record-permission](/en/keeperpam/commander-cli/command-reference/sharing-
-commands#record-permission-command)
-
 [Download Keeper Password Manager for iOS, Android, Mac, PC and moreKeeper®
 Password Manager & Digital Vault](https://keepersecurity.com/download)
 
@@ -946,4 +943,7 @@ LastPass.jpg%3Falt%3Dmedia%26token%3Dbf14ebf6-7463-4582-a1d7-a811f98d2e39&width=
 
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fwww.keepersecurity.com%2Fassets%2Fbranding%2Fandroid-
 icon-192x192.png&width=20&dpr=4&quality=100&sign=71acf559&sv=2)
+
+[record-permission](/en/keeperpam/commander-cli/command-reference/sharing-
+commands#record-permission-command)
 

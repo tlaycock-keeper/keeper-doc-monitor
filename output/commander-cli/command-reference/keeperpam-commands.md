@@ -386,36 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview
@@ -440,22 +410,16 @@ PDF](/en/keeperpam/~gitbook/pdf?page=CNh269hY8C70Qg5Ga6Kv&only=yes&limit=100)
 Management of KeeperPAM functionality including Discovery, Rotation,
 Connections and Tunneling
 
-[PreviousSharing Commands](/en/keeperpam/commander-cli/command-
-reference/sharing-commands)[NextConnection Commands](/en/keeperpam/commander-
-cli/command-reference/connection-commands)
-
-Last updated 8 days ago
-
-Was this helpful?
-
 ##
 
 Overview
 
 KeeperPAM including discovery, password rotation, PAM Configuration and Keeper
 Gateway configuration can be controlled and managed through Commander using
-the `pam` command and sub-commands. These commands support the  and
-capabilities of Keeper Secrets Manager and KeeperPAM.
+the `pam` command and sub-commands. These commands support the [Password
+Rotation](/en/keeperpam/secrets-manager/password-rotation) and
+[Discovery](/en/keeperpam/privileged-access-manager/discovery) capabilities of
+Keeper Secrets Manager and KeeperPAM.
 
 ##
 
@@ -484,6 +448,10 @@ Copy
 
 **Sub-Command: gateway**
 
+**Detail:** View, create and remove Keeper Gateway services. To learn more
+about the Keeper Gateway [click here](/en/keeperpam/privileged-access-
+manager/getting-started/gateways).
+
 Copy
 
     
@@ -500,6 +468,10 @@ Copy
 ###
 
 **Sub-Command: config**
+
+**Detail:** View, create, edit and remove Keeper PAM Configurations. To learn
+more about PAM Configurations [click here](/en/keeperpam/privileged-access-
+manager/getting-started/pam-configuration).
 
 Copy
 
@@ -686,7 +658,9 @@ The following are the valid schedule types.
 
   * `time` \- A 24 hours formatted time when the jobs should be triggered.
 
-  *   * `intervalCount` \- Optional; The number of days between triggers. Allows ability to skip days.
+  * `tz` \- You local [IANA](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) time zone. (i.e., America/Chicago)
+
+  * `intervalCount` \- Optional; The number of days between triggers. Allows ability to skip days.
 
 ####
 
@@ -714,7 +688,9 @@ The job is triggered every week.
 
   * `time` \- A 24 hours formatted time when the jobs should be triggered.
 
-  *   * `intervalCount` \- Optional; If set to a value greater than 1, `weekday` will be ignored. The job will be triggers the multiple times per week starting on Sunday. The day will be based on the value of `intervalCount` .
+  * `tz` \- You local [IANA](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) time zone. (i.e., America/Chicago)
+
+  * `intervalCount` \- Optional; If set to a value greater than 1, `weekday` will be ignored. The job will be triggers the multiple times per week starting on Sunday. The day will be based on the value of `intervalCount` .
 
 ####
 
@@ -728,7 +704,9 @@ The job is triggered every month on a specific month day.
 
   * `time` \- A 24 hours formatted time when the jobs should be triggered.
 
-  *   * `intervalCount` \- Optional; If set to a value greater than 1, the job will trigger on the `monthDay` and will re-trigger every `intervalCount` days.
+  * `tz` \- You local [IANA](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) time zone. (i.e., America/Chicago)
+
+  * `intervalCount` \- Optional; If set to a value greater than 1, the job will trigger on the `monthDay` and will re-trigger every `intervalCount` days.
 
 ####
 
@@ -768,7 +746,9 @@ The job is triggered every month on a specific week day and time.
 
   * `time` \- A 24 hours formatted time when the jobs should be triggered.
 
-  *   * `intervalCount` \- Optional; If set, and set to value other than 1, the trigger will start on the `weekday` and then trigger every `intervalCount` weeks.
+  * `tz` \- You local [IANA](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) time zone. (i.e., America/Chicago)
+
+  * `intervalCount` \- Optional; If set, and set to value other than 1, the trigger will start on the `weekday` and then trigger every `intervalCount` weeks.
 
 ####
 
@@ -808,7 +788,9 @@ The job is triggered yearly on a specific month, day and time.
 
   * `time` \- A 24 hours formatted time when the jobs should be triggered.
 
-  *   * `intervalCount` \- Optional; If set, and set to value other than 1, every `intervalCount` year will be triggered.
+  * `tz` \- You local [IANA](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) time zone. (i.e., America/Chicago)
+
+  * `intervalCount` \- Optional; If set, and set to value other than 1, every `intervalCount` year will be triggered.
 
 ####
 
@@ -1324,38 +1306,41 @@ Copy
       --remove-tunneling-override-port, -rtop
                             Remove tunneling override port
 
-**Detail:** View, create and remove Keeper Gateway services. To learn more
-about the Keeper Gateway .
+[PreviousSharing Commands](/en/keeperpam/commander-cli/command-
+reference/sharing-commands)[NextConnection Commands](/en/keeperpam/commander-
+cli/command-reference/connection-commands)
 
-**Detail:** View, create, edit and remove Keeper PAM Configurations. To learn
-more about PAM Configurations .
+Last updated 9 days ago
 
-`tz` \- You local  time zone. (i.e., America/Chicago)
+Was this helpful?
 
-`tz` \- You local  time zone. (i.e., America/Chicago)
+#### Company
 
-`tz` \- You local  time zone. (i.e., America/Chicago)
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-`tz` \- You local  time zone. (i.e., America/Chicago)
+#### Support
 
-`tz` \- You local  time zone. (i.e., America/Chicago)
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-[Password Rotation](/en/keeperpam/secrets-manager/password-rotation)
+#### Solutions
 
-[Discovery](/en/keeperpam/privileged-access-manager/discovery)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-[click here](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+#### Pricing
 
-[click here](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration)
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
-[IANA](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
-
-[IANA](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
-
-[IANA](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
-
-[IANA](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
-
-[IANA](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+© 2025 Keeper Security, Inc.
 

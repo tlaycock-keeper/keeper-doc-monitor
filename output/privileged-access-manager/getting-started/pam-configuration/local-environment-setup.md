@@ -386,37 +386,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Local Environment Overview 
-  * Prerequisites 
-  * Creating PAM Configuration
-  * PAM Configuration Fields - Local Environment 
-  * PAM Features
-  * Configuring PAM Features on PAM Record Types
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=GNLhTsCwVlJ0KMusi2lz&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
-
-# Local Environment Setup
-
-Setting up your Local environment to work with KeeperPAM
-
-[PreviousAzure Environment Setup](/en/keeperpam/privileged-access-
-manager/getting-started/pam-configuration/azure-environment-setup)[NextPAM
-Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -446,6 +415,17 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=GNLhTsCwVlJ0KMusi2lz&only=yes&limit=100)
+
+Last updated 4 months ago
+
+Was this helpful?
 
 ##
 
@@ -488,6 +468,101 @@ Description
 
 Notes
 
+For Discovery, the following fields are required, otherwise they are optional:
+
+###
+
+PAM Features
+
+The **"PAM Features Allowed"** and **"Session Recording Types Allowed"**
+sections in the PAM Configuration allow owners to enable or disable KeeperPAM
+features for resources managed through the PAM configuration:
+
+##
+
+Configuring PAM Features on PAM Record Types
+
+After creating the PAM configuration, visit the following pages to:
+
+  *   *   *   *   * 
+
+Field
+
+Description
+
+Notes
+
+Field
+
+Description
+
+Configure
+
+Configure
+
+Configure
+
+Configure
+
+Configure
+
+Rotation
+
+If enabled, allow rotations on privileged user users managed by this PAM
+configuration
+
+Connections
+
+If enabled, allow connections on resources managed by this PAM configuration
+
+Remote Browser Isolation (RBI)
+
+If enabled, allow RBI sessions on resources managed by this PAM configuration
+
+Tunneling
+
+If enabled, allow tunnels on resources managed by this PAM configuration
+
+Graphical Session Recording
+
+If enabled, visual playback sessions will be recorded for all connections and
+RBI sessions
+
+Text Session Recording (TypeScript)
+
+If enabled, text input and output logs will be logged for all connections and
+RBI sessions
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
+
+# Local Environment Setup
+
+Setting up your Local environment to work with KeeperPAM
+
+[PreviousAzure Environment Setup](/en/keeperpam/privileged-access-
+manager/getting-started/pam-configuration/azure-environment-setup)[NextPAM
+Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources)
+
+  * Local Environment Overview 
+  * Prerequisites 
+  * Creating PAM Configuration
+  * PAM Configuration Fields - Local Environment 
+  * PAM Features
+  * Configuring PAM Features on PAM Record Types
+
+[Rotation](/en/keeperpam/secrets-manager/password-rotation)
+
+[Connections](/en/keeperpam/privileged-access-manager/connections)
+
+[RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
+
+[Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
+
+[Discovery](/en/keeperpam/privileged-access-manager/discovery)
+
 Title (Required)
 
 Name of PAM configuration record
@@ -525,13 +600,8 @@ Port Mapping
 
 Define alternative default ports
 
-For Discovery, the following fields are required, otherwise they are optional:
-
-Field
-
-Description
-
-Notes
+[install and configure your Keeper Gateway](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/one-time-access-token)
 
 Network ID
 
@@ -545,53 +615,6 @@ Network CIDR
 
 Subnet of the IP address
 
-###
-
-PAM Features
-
-The **"PAM Features Allowed"** and **"Session Recording Types Allowed"**
-sections in the PAM Configuration allow owners to enable or disable KeeperPAM
-features for resources managed through the PAM configuration:
-
-Field
-
-Description
-
-Rotation
-
-If enabled, allow rotations on privileged user users managed by this PAM
-configuration
-
-Connections
-
-If enabled, allow connections on resources managed by this PAM configuration
-
-Remote Browser Isolation (RBI)
-
-If enabled, allow RBI sessions on resources managed by this PAM configuration
-
-Tunneling
-
-If enabled, allow tunnels on resources managed by this PAM configuration
-
-Graphical Session Recording
-
-If enabled, visual playback sessions will be recorded for all connections and
-RBI sessions
-
-Text Session Recording (TypeScript)
-
-If enabled, text input and output logs will be logged for all connections and
-RBI sessions
-
-##
-
-Configuring PAM Features on PAM Record Types
-
-After creating the PAM configuration, visit the following pages to:
-
-  *   *   *   *   * 
-
 See  for more info
 
 See  for more info
@@ -599,29 +622,6 @@ See  for more info
 Ex: `3307=mysql `See  docs
 
 Ex: `192.168.0.15/24` Refer to for more info
-
-Configure
-
-Configure
-
-Configure
-
-Configure
-
-Configure
-
-[install and configure your Keeper Gateway](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/one-time-access-token)
-
-[Rotation](/en/keeperpam/secrets-manager/password-rotation)
-
-[Connections](/en/keeperpam/privileged-access-manager/connections)
-
-[RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
-
-[Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
-
-[Discovery](/en/keeperpam/privileged-access-manager/discovery)
 
 [docs](/en/keeperpam/privileged-access-manager/getting-started/gateways)
 

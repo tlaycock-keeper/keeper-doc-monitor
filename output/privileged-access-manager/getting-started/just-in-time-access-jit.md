@@ -703,19 +703,9 @@ surface. By implementing these capabilities across your infrastructure, you
 can ensure that privileged access is strictly controlled, properly approved,
 and thoroughly audited.
 
-Just-In-Time Ephemeral Account Creation during PAM Sessions
-
-Just-In-Time Role Elevation during Privileged Sessions
-
 extends JIT capabilities to end-user devices, allowing for precise privilege
 elevation for specific processes, applications, or tasks without granting full
 administrative access.
-
-Just-In-Time Access with Keeper Privilege Manager
-
-Time-Limited Access
-
-Workflow and Requests for Approval
 
 For more information on specific JIT use cases or implementation guidance,
 contact your Keeper Security account manager or email .
@@ -727,6 +717,16 @@ contact your Keeper Security account manager or email .
 [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
 
 [pam@keepersecurity.com](mailto:pam@keepersecurity.com)
+
+Just-In-Time Ephemeral Account Creation during PAM Sessions
+
+Just-In-Time Role Elevation during Privileged Sessions
+
+Just-In-Time Access with Keeper Privilege Manager
+
+Time-Limited Access
+
+Workflow and Requests for Approval
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

@@ -434,7 +434,7 @@ Utilizing custom record types in the Keeper Secrets Manager CLI
 command-line-interface/docker-container)[NextPassword
 Rotation](/en/keeperpam/secrets-manager/password-rotation)
 
-Last updated 6 months ago
+Last updated 7 months ago
 
 Was this helpful?
 

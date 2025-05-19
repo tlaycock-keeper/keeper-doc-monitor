@@ -744,14 +744,14 @@ manager/discovery/discovery-using-the-vault)
 
 [learn more](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
 
-[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
-manager-commands#overview)
-
 [Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-
 started/enforcement-policies)
 
 [Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
 started/gateways)
+
+[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
+manager-commands#overview)
 
 Enable Discovery Policy
 

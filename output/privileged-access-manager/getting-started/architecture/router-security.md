@@ -405,45 +405,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=8GtcVPaBpbtNbgES8DZB&only=yes&limit=100)
 
 Security and encryption model of the Keeper Router
 
-[PreviousVault Security](/en/keeperpam/privileged-access-manager/getting-
-started/architecture/vault-security)[NextGateway
-Security](/en/keeperpam/privileged-access-manager/getting-
-started/architecture/gateway-security)
-
-Last updated 4 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 Overview
@@ -489,11 +450,11 @@ discovery job or remote connection, the message flow is the following:
 
   * The Router relays the command to the destination gateway through the existing WebSocket connection.
 
-  * The Gateway retrieves secrets, admin credentials, record details and other private data by using . API requests to the Keeper Cloud are sent with a Client Device Identifier and a request body that is signed with the Client Device Private Key. The server checks the ECDSA signature of the request for the given Client Device Identifier using the Client Public Key of the device. The Client Device decrypts the ciphertext response from the server with the Application Private Key, which decrypts the Record Keys and Shared Folder Keys. The Shared Folder Keys decrypt the Record Keys, and the Record Keys decrypt the individual Record secrets.
+  * The Gateway retrieves secrets, admin credentials, record details and other private data by using [Keeper Secrets Manager APIs](/en/keeperpam/secrets-manager/developer-sdk-library). API requests to the Keeper Cloud are sent with a Client Device Identifier and a request body that is signed with the Client Device Private Key. The server checks the ECDSA signature of the request for the given Client Device Identifier using the Client Public Key of the device. The Client Device decrypts the ciphertext response from the server with the Application Private Key, which decrypts the Record Keys and Shared Folder Keys. The Shared Folder Keys decrypt the Record Keys, and the Record Keys decrypt the individual Record secrets.
 
   * The Gateway uses Keeper Secrets Manager "update" commands to update the user's vault with any password or discovery job updates.
 
-  * After a rotation or discovery job is complete, the Gateway informs the Router that the job is complete.  are triggered by the Router.
+  * After a rotation or discovery job is complete, the Gateway informs the Router that the job is complete. [ARAM event logs](https://docs.keeper.io/en/enterprise-guide/event-reporting) are triggered by the Router.
 
 The Keeper Router architecture is Zero Knowledge, and Keeper's infrastructure
 never has the ability to access or decrypt any of the customer's stored vault
@@ -556,8 +517,42 @@ within an encrypted “PAM Configuration” record in the administrator's vault.
 This way, the Keeper vault record knows which Gateway must be used to perform
 the requested rotation, discovery or connection features.
 
-[Keeper Secrets Manager APIs](/en/keeperpam/secrets-manager/developer-sdk-
-library)
+[PreviousVault Security](/en/keeperpam/privileged-access-manager/getting-
+started/architecture/vault-security)[NextGateway
+Security](/en/keeperpam/privileged-access-manager/getting-
+started/architecture/gateway-security)
 
-[ARAM event logs](https://docs.keeper.io/en/enterprise-guide/event-reporting)
+Last updated 4 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

@@ -543,7 +543,7 @@ Copy
 line-interface/sync-command)[NextConfig Command](/en/keeperpam/secrets-
 manager/secrets-manager-command-line-interface/config-command)
 
-Last updated 6 months ago
+Last updated 7 months ago
 
 Was this helpful?
 

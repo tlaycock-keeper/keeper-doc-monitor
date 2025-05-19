@@ -454,20 +454,13 @@ connectivity, while never exposing underlying credentials or secrets.
 
 This security content will cover the key areas of KeeperPAM:
 
-  *   *   *   *   * 
+  * [Architecture Diagram](/en/keeperpam/privileged-access-manager/getting-started/architecture/system-architecture)
 
-[Architecture Diagram](/en/keeperpam/privileged-access-manager/getting-
-started/architecture/system-architecture)
+  * [Vault Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/vault-security)
 
-[Vault Security](/en/keeperpam/privileged-access-manager/getting-
-started/architecture/vault-security)
+  * [Router Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/router-security)
 
-[Router Security](/en/keeperpam/privileged-access-manager/getting-
-started/architecture/router-security)
+  * [Gateway Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/gateway-security)
 
-[Gateway Security](/en/keeperpam/privileged-access-manager/getting-
-started/architecture/gateway-security)
-
-[Connection and Tunnel Security](/en/keeperpam/privileged-access-
-manager/getting-started/architecture/connection-and-tunnel-security)
+  * [Connection and Tunnel Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/connection-and-tunnel-security)
 

@@ -1030,13 +1030,13 @@ Security/Commander/tree/master/examples)
 
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
 
-![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fa0.awsstatic.com%2Flibra-
-css%2Fimages%2Fsite%2Ftouch-icon-
-ipad-144-smile.png&width=20&dpr=4&quality=100&sign=f36475b9&sv=2)
-
 [2KBpackage_layer_content.sh](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
 x-
 prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FgxJz7bvtfe4hTfuTA0cc%2Fpackage_layer_content.sh?alt=media&token=f624bf70-327c-4b10-9f18-a1f1ae06ecc1)
 
 Bash script for packaging `keepercommander` Lambda Layer content
+
+![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fa0.awsstatic.com%2Flibra-
+css%2Fimages%2Fsite%2Ftouch-icon-
+ipad-144-smile.png&width=20&dpr=4&quality=100&sign=f36475b9&sv=2)
 

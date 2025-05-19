@@ -1968,6 +1968,9 @@ When adding other users or teams to a shared folder, they will be given the
 default permissions of that folder, unless the permission is specifically
 revoked or added when sharing. See the  command for more details.
 
+[share-folder](/en/keeperpam/commander-cli/command-reference/sharing-
+commands#share-folder-command)
+
 [`list`](/en/keeperpam/commander-cli/command-reference/record-commands#list-
 command)
 
@@ -2021,7 +2024,4 @@ commands#password-report-command)
 
 [`find-ownerless`](/en/keeperpam/commander-cli/command-reference/record-
 commands#find-ownerless)
-
-[share-folder](/en/keeperpam/commander-cli/command-reference/sharing-
-commands#share-folder-command)
 

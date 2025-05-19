@@ -386,6 +386,40 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview 
+  * Records, Record Types and Resources
+  * Folders and Shared Folders
+  * Application
+  * Device
+  * Gateway
+  * Configuration
+  * PAM Resources
+  * PAM Users
+  * Activating PAM Features
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=L6p8QWE1dUUedIuZelpF&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+# Vault Structure
+
+Understanding the Keeper Vault structure and organization for KeeperPAM
+
+[PreviousEnforcement Policies](/en/keeperpam/privileged-access-
+manager/getting-started/enforcement-policies)[NextRecord
+Linking](/en/keeperpam/privileged-access-manager/getting-started/record-
+linking)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -416,17 +450,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=L6p8QWE1dUUedIuZelpF&only=yes&limit=100)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 ##
 
 Overview
@@ -442,7 +465,9 @@ When the Role-based Enforcement Policies are activated from the Keeper Admin
 Console, those designated users can work with KeeperPAM functionality directly
 with the vault.
 
-  *   * 
+  * [Accessing the KeeperPAM Console and Vault](/en/keeperpam/privileged-access-manager/setup-steps)
+
+  * [Activating Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-policies)
 
 * * *
 
@@ -496,6 +521,12 @@ At the Shared Folder level, both human users and applications can be assigned
 with access rights. This allows least privilege enforcement across employees
 and machines.
 
+The fastest way to understand the relationship between records, folders,
+applications and configurations is using the [Quick Start
+Wizard](/en/keeperpam/privileged-access-manager/quick-start-sandbox). This
+wizard instantly creates a sandbox environment where you can work with the
+different resources and vault records.
+
 * * *
 
 ###
@@ -517,7 +548,7 @@ the vault. An example of an Application might be "Azure DevOps Pipeline" or
 
 For more information on Applications:
 
-  * 
+  * [Applications](/en/keeperpam/privileged-access-manager/getting-started/applications)
 
 * * *
 
@@ -534,7 +565,7 @@ interface.
 
 For more information on Devices:
 
-  * 
+  * [Devices](/en/keeperpam/privileged-access-manager/getting-started/devices)
 
 * * *
 
@@ -554,7 +585,7 @@ may deploy 500 Keeper Gateways.
 The architecture of the Keeper Gateway deployments is based on your use case
 and can be reviewed with our implementation team.
 
-  * 
+  * [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
 
 * * *
 
@@ -575,7 +606,7 @@ We recommend defining only **one** Configuration for each Gateway.
 
 More information about PAM Configuration records:
 
-  * 
+  * [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
 
 * * *
 
@@ -591,6 +622,20 @@ When creating a resource, you can select from various targets, such as
 Machine, Database, Directory, etc.
 
 Visit the pages linked below to learn more about each PAM Resource:
+
+PAM Record Type
+
+Supported Assets
+
+Windows, Linux, macOS devices, VMs, EC2 instances, Azure VMs, Network devices
+and other operating systems.
+
+MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
+
+Active Directory, Azure AD, OpenLDAP
+
+Web-based Applications, self-hosted apps, cloud apps, any http or https
+target.
 
 * * *
 
@@ -611,7 +656,7 @@ A PAM User record can be configured for on-demand and automatic rotation.
 
 More information on PAM Users is found here:
 
-  * 
+  * [PAM Users](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
 * * *
 
@@ -622,82 +667,15 @@ Activating PAM Features
 Now that you understand the basic structure of the vault, activating and
 utilizing PAM features is described in the below sections.
 
-  *   *   *   *   * 
+  * [Password Rotation](/en/keeperpam/secrets-manager/password-rotation)
 
-The fastest way to understand the relationship between records, folders,
-applications and configurations is using the . This wizard instantly creates a
-sandbox environment where you can work with the different resources and vault
-records.
+  * [Connections](/en/keeperpam/privileged-access-manager/connections)
 
-PAM Record Type
+  * [Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
 
-Supported Assets
+  * [Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-
-# Vault Structure
-
-Understanding the Keeper Vault structure and organization for KeeperPAM
-
-[PreviousEnforcement Policies](/en/keeperpam/privileged-access-
-manager/getting-started/enforcement-policies)[NextRecord
-Linking](/en/keeperpam/privileged-access-manager/getting-started/record-
-linking)
-
-  * Overview 
-  * Records, Record Types and Resources
-  * Folders and Shared Folders
-  * Application
-  * Device
-  * Gateway
-  * Configuration
-  * PAM Resources
-  * PAM Users
-  * Activating PAM Features
-
-[Accessing the KeeperPAM Console and Vault](/en/keeperpam/privileged-access-
-manager/setup-steps)
-
-[Activating Enforcement Policies](/en/keeperpam/privileged-access-
-manager/getting-started/enforcement-policies)
-
-[Quick Start Wizard](/en/keeperpam/privileged-access-manager/quick-start-
-sandbox)
-
-[Applications](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
-
-[Devices](/en/keeperpam/privileged-access-manager/getting-started/devices)
-
-[Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
-
-[PAM Users](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
-[Password Rotation](/en/keeperpam/secrets-manager/password-rotation)
-
-[Connections](/en/keeperpam/privileged-access-manager/connections)
-
-[Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
-
-[Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-
-browser-isolation)
-
-[Discovery](/en/keeperpam/privileged-access-manager/discovery)
-
-Windows, Linux, macOS devices, VMs, EC2 instances, Azure VMs, Network devices
-and other operating systems.
-
-MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
-
-Active Directory, Azure AD, OpenLDAP
-
-Web-based Applications, self-hosted apps, cloud apps, any http or https
-target.
+  * [Discovery](/en/keeperpam/privileged-access-manager/discovery)
 
 [PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-machine)

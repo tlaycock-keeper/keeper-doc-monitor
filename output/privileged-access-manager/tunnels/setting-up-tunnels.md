@@ -418,33 +418,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview 
-  * Prerequisites
-  * Tunnel Enforcement Policies
-  * Installing the Keeper Gateway
-  * PAM Configuration
-  * PAM Machine, PAM Database, or PAM Directory
-  * PAM Settings - Tunnel Settings
-  * Starting a Tunnel
-  * Using the Tunnel
-  * Commander CLI
-  * Tunnels versus Connections
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=59GJPlGc3sR522Fh9ovD&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
-
-# Setting up Tunnels
-
-Setting up Tunnels in your Desktop Vault
-
-[PreviousTunnels](/en/keeperpam/privileged-access-manager/tunnels)[NextRemote
-Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation)
 
 Last updated 3 months ago
 
@@ -481,29 +458,6 @@ Enforcement policies for KeeperPAM are managed in the Keeper Admin Console
 under **Admin** > **Roles** > **Enforcement Policies** > **Privileged Access
 Manager**.
 
-Enforcement Policy
-
-Commander Enforcement Policy
-
-Definition
-
-Can configure tunnel settings
-
-Allow users to configure Tunnel settings on PAM Machine, PAM Directory, PAM
-Database and PAM Configuration Records Types
-
-Can start tunnels
-
-Allow users to start tunnels on PAM Machine, PAM Directory and PAM Database
-Record Types
-
-Copy
-
-    
-    
-    enterprise-role "My Role" --enforcement "ALLOW_CONFIGURE_PAM_TUNNELING_SETTINGS":true
-    enterprise-role "My Role" --enforcement "ALLOW_LAUNCH_PAM_TUNNELS":true
-
 ####
 
 Enforcement Policy Use Cases
@@ -536,16 +490,6 @@ PAM Machine, PAM Database, or PAM Directory
 your vault client to the target endpoint. The target endpoint needs to be
 defined on one of the following PAM Record types:
 
-PAM Record Type
-
-Target Endpoint type
-
-Windows/MacOS/Linux Machines, EC2 Instances, Azure VMs
-
-MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
-
-Active Directory, OpenLDAP
-
 Depending on your target endpoint, visit the corresponding PAM Record Type
 page for more information on setup.
 
@@ -565,33 +509,6 @@ screen by:
 
 After navigating to the Tunnel Section on the PAM Settings screen. The
 following table lists all the configurable fields for Tunnels:
-
-Field
-
-Definition
-
-PAM Configuration
-
-**Required**
-
-This is the PAM Configuration that contains the details of your target
-infrastructure and provides access to the target configured on the PAM Record
-
-Enable Tunnel
-
-**Required** When checked, enable tunnels for this record
-
-Reuse Last Port
-
-When checked, the last used tunnel port will be reused. This ensures that the
-port number doesn't change every time.
-
-Tunneling Port
-
-The port which is used to connect from the Keeper Gateway to the target
-infrastructure. If not specified, the gateway will use the "rotation port"
-specified in the Keeper record view. If the specified port is in use, Tunnels
-will fail to start.
 
 The following image shows a PAM Machine record where:
 
@@ -629,12 +546,6 @@ database:
 Likewise, using the CLI on the local device can initiate a connection to the
 database using this command:
 
-Copy
-
-    
-    
-    mysql --host=127.0.0.1 --port=59644 --user=admin --password
-
 ##
 
 Commander CLI
@@ -646,20 +557,6 @@ Related commands:
 ####
 
 Example:
-
-Copy
-
-    
-    
-    My Vault> pam tunnel start s0W1v6R4SUTJYMlu4jTZw
-    Establishing tunnel between Commander and Gateway. Please wait...
-    
-    +------------------------------------------------------------------+
-    | Endpoint pbxV4snkAP9KGCUhSb6aQ==: Listening on: 127.0.0.1:49152 |
-    +------------------------------------------------------------------+
-    View all open tunnels   : pam tunnel list
-    Tail logs on open tunnel: pam tunnel tail pbxV4snkAP9KGCUhSb6aQ==
-    Stop a tunnel           : pam tunnel stop pbxV4snkAP9KGCUhSb6aQ==
 
 ##
 
@@ -677,6 +574,12 @@ need to share credentials:
 
   *   * 
 
+Enforcement Policy
+
+Commander Enforcement Policy
+
+Definition
+
 Tunnels can also be enabled on the  using the `enterprise-role` command:
 
 For more details on installing and setting up your gateway, visit this .
@@ -685,6 +588,14 @@ The **PAM Configuration** contains essential information of your target
 infrastructure, settings and . Setting up a PAM Configuration for your
 infrastructure is **required**. For more information on creating and
 configuring the PAM Configuration, visit this .
+
+PAM Record Type
+
+Target Endpoint type
+
+Field
+
+Definition
 
 provides Tunneling capabilities in addition to using the Keeper Desktop UI.
 
@@ -697,17 +608,100 @@ to establish interactive sessions across many different protocols
 
 with Autofill to establish web-based interactive sessions
 
+Can configure tunnel settings
+
 Copy
 
     
     
     ALLOW_CONFIGURE_PAM_TUNNELING_SETTINGS
 
+Allow users to configure Tunnel settings on PAM Machine, PAM Directory, PAM
+Database and PAM Configuration Records Types
+
+Can start tunnels
+
 Copy
 
     
     
     ALLOW_LAUNCH_PAM_TUNNELS
+
+Allow users to start tunnels on PAM Machine, PAM Directory and PAM Database
+Record Types
+
+Copy
+
+    
+    
+    enterprise-role "My Role" --enforcement "ALLOW_CONFIGURE_PAM_TUNNELING_SETTINGS":true
+    enterprise-role "My Role" --enforcement "ALLOW_LAUNCH_PAM_TUNNELS":true
+
+PAM Configuration
+
+**Required**
+
+This is the PAM Configuration that contains the details of your target
+infrastructure and provides access to the target configured on the PAM Record
+
+Enable Tunnel
+
+**Required** When checked, enable tunnels for this record
+
+Reuse Last Port
+
+When checked, the last used tunnel port will be reused. This ensures that the
+port number doesn't change every time.
+
+Tunneling Port
+
+The port which is used to connect from the Keeper Gateway to the target
+infrastructure. If not specified, the gateway will use the "rotation port"
+specified in the Keeper record view. If the specified port is in use, Tunnels
+will fail to start.
+
+Copy
+
+    
+    
+    mysql --host=127.0.0.1 --port=59644 --user=admin --password
+
+Copy
+
+    
+    
+    My Vault> pam tunnel start s0W1v6R4SUTJYMlu4jTZw
+    Establishing tunnel between Commander and Gateway. Please wait...
+    
+    +------------------------------------------------------------------+
+    | Endpoint pbxV4snkAP9KGCUhSb6aQ==: Listening on: 127.0.0.1:49152 |
+    +------------------------------------------------------------------+
+    View all open tunnels   : pam tunnel list
+    Tail logs on open tunnel: pam tunnel tail pbxV4snkAP9KGCUhSb6aQ==
+    Stop a tunnel           : pam tunnel stop pbxV4snkAP9KGCUhSb6aQ==
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
+
+# Setting up Tunnels
+
+Setting up Tunnels in your Desktop Vault
+
+[PreviousTunnels](/en/keeperpam/privileged-access-manager/tunnels)[NextRemote
+Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-
+isolation)
+
+  * Overview 
+  * Prerequisites
+  * Tunnel Enforcement Policies
+  * Installing the Keeper Gateway
+  * PAM Configuration
+  * PAM Machine, PAM Database, or PAM Directory
+  * PAM Settings - Tunnel Settings
+  * Starting a Tunnel
+  * Using the Tunnel
+  * Commander CLI
+  * Tunnels versus Connections
 
 [page](/en/keeperpam/privileged-access-manager/getting-started/gateways)
 
@@ -729,6 +723,18 @@ commands)
 [Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-
 browser-isolation)
 
+Windows/MacOS/Linux Machines, EC2 Instances, Azure VMs
+
+MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
+
+Active Directory, OpenLDAP
+
+An active license is required in order to use the features available with
+KeeperPAM. This license is available for both business and enterprise
+customers.
+
+  *   *   * 
+
 [PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-machine)
 
@@ -740,12 +746,6 @@ resources/pam-directory)
 
 [Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
 manager-commands#overview)
-
-An active license is required in order to use the features available with
-KeeperPAM. This license is available for both business and enterprise
-customers.
-
-  *   *   * 
 
 [KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-
 management/)

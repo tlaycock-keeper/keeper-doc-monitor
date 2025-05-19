@@ -648,7 +648,7 @@ Copy
 line-interface/exec-command)[NextVersion Command](/en/keeperpam/secrets-
 manager/secrets-manager-command-line-interface/version-command)
 
-Last updated 6 months ago
+Last updated 7 months ago
 
 Was this helpful?
 

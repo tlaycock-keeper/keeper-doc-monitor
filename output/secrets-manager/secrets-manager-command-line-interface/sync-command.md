@@ -438,7 +438,7 @@ command-line-interface/folder-command)[NextExec
 Command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/exec-command)
 
-Last updated 6 months ago
+Last updated 7 months ago
 
 Was this helpful?
 
