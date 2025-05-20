@@ -387,6 +387,196 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * Prerequisites
+  * PAM Settings - Configuring Kubernetes Protocol
+  * Accessing Connection Settings
+  * Configuring Connection Settings
+  * Session Recordings - Kubernetes Protocol
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=iLrVE58hGJ6APE6fkSym&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
+
+# Kubernetes
+
+Keeper Connections - Kubernetes
+
+##
+
+Overview
+
+KeeperPAM enabled zero-trust privileged session management for Kubernetes
+containers using Kubernetes' REST API. This guide shows how to configure
+Kubernetes connections on your PAM Machine Records in the Keeper Vault. Secure
+Kubernetes sessions are established from the Vault, through the Keeper
+Gateway, and directly to the target container.
+
+##
+
+Prerequisites
+
+Prior to following this guide, familiarize yourself with the prerequisites on
+the Connection's [Getting Started](/en/keeperpam/privileged-access-
+manager/connections/getting-started) page.
+
+The following PAM records are needed in order to successfully setup this
+protocol:
+
+PAM Record
+
+Definition
+
+[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)
+
+The PAM Configuration contains information of your target infrastructure
+
+[PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine) Record
+
+The PAM Machine record contains information of the endpoint you want to
+establish a Kubernetes REST API connection to.
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user) Record
+
+The PAM User record contains the user credentials that will be used to connect
+to the endpoint
+
+##
+
+PAM Settings - Configuring Kubernetes Protocol
+
+###
+
+Accessing Connection Settings
+
+After creating a PAM Record Type (PAM Machine, PAM Database, or PAM Directory)
+with your target endpoint, navigate to the Connection Section on the PAM
+Settings screen by:
+
+  1. Editing the PAM Record
+
+  2. Clicking on "Set Up" in the PAM Settings section
+
+  3. Navigate to the "Connection" section in the prompted window
+
+###
+
+Configuring Connection Settings
+
+Prior to configuring the Kubernetes protocol settings on the PAM Settings
+screen, the following fields are all **required** and need to be configured:
+
+The following table lists all the configurable connection settings for the
+Kubernetes protocol on the PAM Settings:
+
+Field
+
+Definition
+
+Protocol
+
+**Required** The protocol to be configured on the record. The protocol
+settings will be populated based on the selected protocol. In this guide, the
+Kubernetes protocol should be selected
+
+Enable Connection
+
+**Required** To enable connection for this record, this toggle needs to be
+enabled
+
+Graphical Session Recording
+
+When enabled, graphical session recordings will be enabled for this record
+
+Text Session Recording (Typescript)
+
+When enabled, text session recordings (typescript) will be enabled for this
+record
+
+Include Key Events
+
+Connection Port
+
+The port used to establish the selected protocol connection. By default, this
+will be the port value defined on the PAM Machine record. The port specified
+here will override the default port. For Kubernetes, the port is 8080.
+
+Namespace
+
+The name of the Kubernetes namespace of the pod containing the container being
+attached to. If omitted, the namespace "default" will be used.
+
+Pod Name
+
+The name of the Kubernetes pod with the container being attached to.
+
+Container Name
+
+The name of the container to attach to. If omitted, the first container in the
+pod will be used.
+
+Ignore Server Certificate
+
+If checked, the validity of the SSL/TLS certificate used by the Kubernetes
+server will be ignored if it cannot be validated. By default, SSL/TLS
+certificates are validated.
+
+Certificate Authority Certificate
+
+The certificate of the certificate authority that signed the certificate of
+the Kubernetes server, in PEM format. If omitted, verification of the
+Kubernetes server certificate will use only [system-wide certificate
+authorities.](https://access.redhat.com/documentation/en-
+us/red_hat_enterprise_linux/7/html/security_guide/sec-shared-system-
+certificates)
+
+Client Certificate
+
+The certificate to use if performing SSL/TLS client authentication to
+authenticate with the Kubernetes server, in PEM format. If omitted, SSL client
+authentication will not be performed.
+
+Client Key
+
+The key to use if performing SSL/TLS client authentication to authenticate
+with the Kubernetes server, in PEM format. If omitted, SSL client
+authentication will not be performed.
+
+Color Scheme
+
+The color scheme to use for the terminal emulator used by Kubernetes
+connections. Each color scheme dictates the default foreground and background
+color of the terminal. Programs which specify colors when printing text will
+override these defaults.
+
+Font Size
+
+The size of the font to use, in points. By default, the size of rendered text
+will be 12 point.
+
+##
+
+Session Recordings - Kubernetes Protocol
+
+[PreviousTelnet Connections](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/telnet-connections)[NextRBI
+Connections](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/rbi-connections)
+
+Last updated 18 hours ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -417,475 +607,31 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this .
 
-  * Overview
-  * Key Features
-  * Downloads
-  * Storing Keys in Keeper
-  * Benefits of SSH Agent
-  * Activating the SSH Agent
-  * Using SSH Agent
-  * Using SSH Agent with Git
-  * Using SSH Agent with Tunnels
-  * Environment Setup
-  * Linux and macOS
-  * Windows
-  * Rotation of SSH Keys
+  * Learn more about 
 
-Was this helpful?
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
 
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=vQsOJxrMLWwGa6F7vcBP&only=yes&limit=100)
+[Session Recording and Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+Field
 
-# SSH Agent
+Definition
 
-Streamline SSH access to your managed infrastructure with Keeper's built-in
-SSH agent
+PAM Configuration
 
-[PreviousSession Recording & Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)[NextIntegration with
-Git](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-git)
+This is the PAM Configuration that contains the details of your target
+infrastructure and provides access to the target configured on the PAM Record.
 
-Last updated 28 days ago
+Administrative Credential Record
 
-Was this helpful?
+This is the linked  that will be used to authenticate to the target and
+perform administrative operations on it.
 
-##
-
-Overview
-
-The Keeper Desktop application includes a built-in SSH agent, enhancing the
-security and convenience of managing SSH keys and connections. This feature
-simplifies secure access to target systems, eliminates the need to store SSH
-keys locally, and supports seamless integration with Keeper's robust key
-management and rotation capabilities. This SSH Agent capability is available
-to all Keeper users.
-
-Keeper Desktop and SSH Agent is available for all platforms:
-
-  * Windows
-
-  * macOS
-
-  * Linux
-
-##
-
-Key Features
-
-  * **Built-in SSH Agent** : Automatically embedded into the Keeper Desktop application for any private keys, eliminating the need for third-party SSH agents.
-
-  * **No Local Key Storage** : SSH keys are securely stored and managed in Keeper, removing the risk of key exposure on local machines.
-
-  * **Seamless Authorization** : Securely authorize SSH access to target systems when the Keeper vault is unlocked.
-
-  *   * **Git Integration** : Authenticate with Github and Gitlab, and sign your Git commits without having to store private keys locally on the workstation.
-
-  * **Encrypted keys** : SSH private keys held in Keeper can be encrypted with a passphrase, adding an additional layer of protection. Keeper enhances this by allowing the record's password field to act as the passphrase, ensuring seamless security and usability.
-
-  * **Key Rotation** : Keeper's automatic SSH key rotation works seamlessly with the SSH agent to ensure that the latest keys are always available for use.
-
-##
-
-Downloads
-
-##
-
-Storing Keys in Keeper
-
-In the Keeper vault, you can store the SSH private key two ways:
-
-  * Added as a custom field
-
-  * Attached as a file
-
-In both scenarios, Keeper supports password-protected keys as long as the
-password is saved to the record password field.
-
-####
-
-**PEM (Privacy-Enhanced Mail)**
-
-A base64-encoded format typically used for private keys. It is commonly used
-with OpenSSL and older OpenSSH versions. Example:
-
-Copy
-
-    
-    
-    -----BEGIN RSA PRIVATE KEY-----
-    (Base64-encoded data)
-    -----END RSA PRIVATE KEY-----
-
-####
-
-**OpenSSH**
-
-The default format for keys generated by the `ssh-keygen` utility in modern
-versions of OpenSSH (>=7.8). It uses a custom serialization format for private
-keys. Example:
-
-Copy
-
-    
-    
-    -----BEGIN OPENSSH PRIVATE KEY-----
-    (Base64-encoded data)
-    -----END OPENSSH PRIVATE KEY-----
-
-####
-
-**PKCS#8**
-
-A standardized format for encoding private keys that supports multiple key
-types. Often used with OpenSSL or for interoperability. Example:
-
-Copy
-
-    
-    
-    -----BEGIN PRIVATE KEY-----
-    (Base64-encoded data)
-    -----END PRIVATE KEY-----
-
-##
-
-Benefits of SSH Agent
-
-The SSH Agent embedded within the Keeper application allows keys stored
-securely in Keeper to be seamlessly used by your computer.
-
-The SSH protocol works by cycling through all loaded keys in the agent until
-it finds a match with the server. However, OpenSSH imposes a default limit on
-the number of keys the agent can try during a single authentication attempt,
-which is typically **6 keys**. This limitation is defined by the
-`MaxAuthTries` parameter in SSH configurations and is not something Keeper can
-directly control.
-
-To address this, Keeper has implemented enhancements to optimize key usage.
-For example, when you activate a Tunnel associated with a specific resource,
-Keeper ensures that the key for that Tunnel is immediately activated by the
-agent. If the maximum limit of active keys is reached, Keeper prioritizes the
-relevant key by moving it to the top of the agent's list, ensuring it is used
-for the connection.
-
-##
-
-Activating the SSH Agent
-
-From the Keeper Desktop application, visit the **Settings** > **Developer**
-screen and manage the SSH Agent from this screen.
-
-When you enable the SSH Agent, all of the specified SSH keys stored in Keeper
-will be available to your local machine while the vault is unlocked.
-
-Select "**Launch SSH Agent on startup** " to activate the SSH agent upon every
-login.
-
-To enable SSH agent on specific keys, select those keys from the provided
-drop-down.
-
-  * 
-
-##
-
-Using SSH Agent
-
-In its simplest use case, you can store the SSH key in Keeper. When you use an
-SSH client on your computer for any operation requiring a private key,
-Keeper's SSH Agent—integrated into the Keeper desktop application—will
-activate and prompt the user to authorize the request, provided the vault is
-unlocked.
-
-##
-
-Using SSH Agent with Git
-
-  * 
-
-##
-
-Using SSH Agent with Tunnels
-
-After a tunnel has been activated on a PAM resource, the SSH Command will
-display beneath the tunnel information.
-
-If the Keeper SSH Agent has not yet been activated, clicking on the SSH
-Command `(?)` help dialog will display a link to open the SSH Agent
-configuration screen.
-
-From the local terminal, paste the SSH command.
-
-On your desktop computer, the Keeper Desktop will launch an authorization
-request that contains the key which is being requested. To authorize the
-request, click Authorize. To authorize subsequent requests for this key,
-select the "Don't ask again" option.
-
-After access has been granted, the SSH connection is instantly established to
-the target system, through the encrypted Keeper tunnel.
-
-* * *
-
-##
-
-Environment Setup
-
-###
-
-Linux and macOS
-
-On macOS and Linux, Keeper’s SSH Agent runs as a background process when the
-user unlocks their vault. To enable communication with SSH tools like `ssh`,
-`git`, or `ssh-add`, the user must set the `SSH_AUTH_SOCK` environment
-variable to point to the Keeper Agent’s Unix domain socket.
-
-To use the Keeper SSH Agent from Linux or macOS environments, copy and paste
-the command to your shell's startup file:
-
-For example:
-
-Copy
-
-    
-    
-    export SSH_AUTH_SOCK='/path/to/keeper-ssh-agent.sock'
-
-**zsh (macOS)**
-
-  * Edit the file `~/.zshrc`
-
-  * Apply changes: `source ~/.zshrc`
-
-####
-
-**bash**
-
-  * Edit the file `~/.bashrc`
-
-  * Apply changes: `source ~/.bashrc`
-
-####
-
-**fish shell**
-
-  * Edit the file `~/.config/fish/config.fish`
-
-  * Add this line and save:
-
-Copy
-
-    
-    
-    set -x SSH_AUTH_SOCK /path/to/keeper-ssh-agent.sock
-
-  * Apply changes:
-
-Copy
-
-    
-    
-    source ~/.config/fish/config.fish
-
-####
-
-**Verify the Configuration:**
-
-Copy
-
-    
-    
-    echo $SSH_AUTH_SOCK
-
-You should see: `/path/to/keeper-ssh-agent.sock`
-
-You may need to open a new shell for this to take effect.
-
-* * *
-
-###
-
-Windows
-
-Keeper’s SSH Agent integrates with the Windows OpenSSH client by implementing
-the standard `**ssh-agent**`**protocol** over a **named pipe** , just like the
-native OpenSSH agent on Windows.
-
-When the Keeper vault is unlocked:
-
-  * The agent starts and listens on a Windows named pipe.
-
-  * OpenSSH-based tools like `ssh`, `ssh-add`, `git`, and others detect the pipe and interact with Keeper's agent without needing local key files.
-
-  * The agent responds to authentication requests, signing operations, and key listings as defined by the standard `ssh-agent` protocol.
-
-This provides full OpenSSH compatibility on Windows, enabling:
-
-  * Agent forwarding
-
-  * SSH key signing
-
-  * Passwordless login using keys stored securely in Keeper
-
-  * Git commit signing and similar dev workflows
-
-The Windows SSH Agent service will start up as soon as it is activated from
-The Keeper Desktop SSH Agent screen.
-
-When establishing a connection to the target through PowerShell, Keeper will
-prompt for permission.
-
-####
-
-Windows Note on SSH Agent Conflicts
-
-If the OpenSSH Agent service is currently running on Windows, you’ll need to
-stop it before using Keeper’s SSH Agent. Both agents listen on the same named
-pipe (`\\.\pipe\openssh-ssh-agent`), and only one can be active at a time.
-
-To stop the built-in OpenSSH agent:
-
-Copy
-
-    
-    
-    Stop-Service ssh-agent
-    Set-Service ssh-agent -StartupType Disabled
-
-Once stopped, Keeper’s agent will take over and handle all `ssh` and `git`
-operations using keys stored securely in your vault.
-
-* * *
-
-##
-
-Rotation of SSH Keys
-
-KeeperPAM provides automatic rotation of SSH keys on-demand or on a scheduled
-basis.
-
-  * 
-
-**Local and Remote Use** : Supports SSH connections to line-of-sight targets
-in addition to managed systems via KeeperPAM .
-
-The Keeper Desktop application is available from the  of our website.
-
-In order to work with the local operating system (Linux, macOS and Windows),
-follow the  to enable SSH Agent for your operating system.
-
-See
-
-The Keeper SSH Agent allows you to seamlessly authenticate into services like
-GitHub and securely sign Git commits. To help you get started, we've created a
-step-by-step guide on setting up  and  using Keeper.
-
-For zero-trust  connections through a target resource, Keeper's SSH agent will
-automatically authenticate the session.
-
-See the  section and the  SSH Key use case
-
-[tunnels](/en/keeperpam/privileged-access-manager/tunnels)
-
-[Download Page](https://www.keepersecurity.com/download.html)
-
-[Integration with Git](/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git)
-
-[Tunnel](/en/keeperpam/privileged-access-manager/tunnels)
-
-[Password Rotation](/en/keeperpam/secrets-manager/password-rotation)
-
-[Linux User](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/linux-user)
-
-[guide below](/en/keeperpam/privileged-access-manager/ssh-agent#environment-
-setup)
-
-[Environment Setup](/en/keeperpam/privileged-access-manager/ssh-
-agent#environment-setup)
-
-[authentication with GitHub](/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git#github-authentication)
-
-[signing Git commits](/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git#signing-commits)
-
-Custom Field Example
-
-File Attachment Example
-
-Developer Settings
-
-SSH Agent Settings
-
-Limit SSH access to records
-
-SSH Agent with Tunnels
-
-SSH Command
-
-SSH Agent Authorization Dialog
-
-Tunnel established with SSH Agent
-
-Terminal Setup Command
-
-SSH Agent on Windows
-
-Allow Access Dialog
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOMBgMljAUIwOY0NYaRib%252FKeeperPAM%2520SSH%2520Agent.jpg%3Falt%3Dmedia%26token%3D30d59853-901c-45cd-8af3-a14913d8622b&width=768&dpr=4&quality=100&sign=721a85ff&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFWSp9bdo2FRGkjW4tEoX%252FScreenshot%25202025-04-21%2520at%25203.21.27%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D7a052ea2-99b0-4ce4-a33f-8a528f6bb2d2&width=768&dpr=4&quality=100&sign=13db54e8&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXe45tup0aQCj9Rgoz4XW%252FScreenshot%25202025-04-21%2520at%25203.10.26%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db1a139f0-27bc-46b1-9b3f-0abad427f93c&width=768&dpr=4&quality=100&sign=85a4e5b8&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfMFIV2kN0sDGDXUcwj9X%252FScreenshot%25202025-01-15%2520at%25204.10.40%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dd55e9c34-8fe8-4050-be6f-2dcf58ac30ae&width=768&dpr=4&quality=100&sign=9f320a0e&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2IGRZKypxZTxlnrjopCi%252FScreenshot%25202025-01-15%2520at%25204.11.05%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D82453973-fe5d-4b94-938d-00fd6c5b767b&width=768&dpr=4&quality=100&sign=9d928564&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJtaxqdt8Yp7eBZOqCZIL%252FScreenshot%25202025-01-15%2520at%25204.11.48%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D1e8d9961-86b0-49d6-a43b-c29f05d1d9b6&width=768&dpr=4&quality=100&sign=15e60c6&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWh0kRV89Gs99tEExiCwo%252FScreenshot%25202025-01-14%2520at%25205.02.22%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D03b6f8ae-2d92-4baa-8880-b9fd4779c12f&width=768&dpr=4&quality=100&sign=8730ff&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FgKbHucoofXqg1YASFlZU%252FScreenshot%25202025-01-15%2520at%25204.01.13%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D375c9b97-2f41-44d1-b200-80d39415b48b&width=768&dpr=4&quality=100&sign=77503dff&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9qYfjuOv4nsPnGpf2uZS%252FScreenshot%25202025-01-15%2520at%25204.00.22%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dc3e802fc-d61d-4214-a010-b8f25380a13a&width=768&dpr=4&quality=100&sign=954338f5&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fhw3QEpl8wfPPvAjP5iDG%252FScreenshot%25202025-01-15%2520at%25204.02.11%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D0d41c2b7-aab6-4440-8380-72d566d1b644&width=768&dpr=4&quality=100&sign=5b1b31e&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8O4k4x6kcHobpRi1tIyi%252FScreenshot%25202025-01-28%2520at%252011.58.22%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D3505fef5-2518-49f9-860b-9063a1bad537&width=768&dpr=4&quality=100&sign=5e3b5321&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FzECb607mvom1IDLsNWHZ%252F2025-04-21_15-30-48.PNG%3Falt%3Dmedia%26token%3D27740c2d-154e-4bd7-95c5-106a6c8375d7&width=768&dpr=4&quality=100&sign=683900ac&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fu9epGh8KgKlqb5rwXnnf%252F2025-04-21_15-33-14.PNG%3Falt%3Dmedia%26token%3Dc2436c49-850d-4279-b905-dbf73ce0010d&width=768&dpr=4&quality=100&sign=2cd1fac2&sv=2)
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
 

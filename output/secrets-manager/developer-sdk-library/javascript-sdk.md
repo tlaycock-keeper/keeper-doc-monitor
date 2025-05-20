@@ -146,12 +146,13 @@ KeeperPAM and Secrets Manager
 
         * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
         * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
-        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
         * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
         * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
         * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
         * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
         * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+        * [Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-protocols/kubernetes)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
 
       * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
@@ -1768,12 +1769,12 @@ notation)
 [Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
 notation)
 
-[uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-
-sdk#upload-a-file)
-
 [Record Types](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
 
 [documentation](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
+
+[uploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/javascript-
+sdk#upload-a-file)
 

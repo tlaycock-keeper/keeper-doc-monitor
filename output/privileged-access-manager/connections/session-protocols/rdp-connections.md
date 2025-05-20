@@ -146,12 +146,13 @@ KeeperPAM and Secrets Manager
 
         * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
         * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
-        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
         * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
         * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
         * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
         * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
         * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+        * [Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-protocols/kubernetes)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
 
       * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
@@ -418,33 +419,12 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview 
-  * Prerequisites
-  * PAM Settings - Configuring RDP Protocol
-  * Accessing Connection Settings
-  * Configuring Connection Settings
-  * Troubleshooting Connections
-  * Session Recordings - RDP Protocol
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=XIBliCeQFLhXyHlm2D0y&only=yes&limit=100)
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
-
-# RDP Connections
-
-Keeper Connections - RDP Protocol
-
-[PreviousSSH Connections](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/ssh-connections)[NextRBI
-Connections](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/rbi-connections)
-
-Last updated 3 months ago
+Last updated 18 hours ago
 
 Was this helpful?
 
@@ -471,14 +451,6 @@ protocol:
 PAM Record
 
 Definition
-
-The PAM Configuration contains information of your target infrastructure
-
-The PAM Machine record contains information of the endpoint you want to
-establish an RDP protocol connection to.
-
-The PAM User record contains the user credentials that will be used to connect
-to the endpoint
 
 This guide will use a **Azure VM** as an example. For more details on how this
 is setup on the PAM Machine Record, visit the following page:
@@ -511,9 +483,29 @@ following fields are all **required** and need to be configured:
 The following table lists all the configurable settings for the RDP protocol
 on the PAM Settings:
 
+###
+
+Troubleshooting Connections
+
+When troubleshooting authentication and connection issues, check the
+following:
+
+  * Ensure the user specified in the linked PAM User record has the rights to RDP to the target machine.
+
+  * Adjust your group policy or add the user to the "Remote Desktop Users" group on Windows to grant access.
+
+  * 
+
+##
+
+Session Recordings - RDP Protocol
+
 Field
 
 Definition
+
+For additional troubleshooting, refer to the Gateway logs which will contain
+additional information. The location of the Gateway logs depends on the .
 
 Protocol
 
@@ -532,6 +524,11 @@ To enable connection for this record, this toggle needs to be enabled
 Graphical Session Recording
 
 When enabled, graphical session recordings will be enabled for this record
+
+Include Key Events
+
+When enabled, the individual keystroke data will be included in the session
+playback. Note: This will include any secrets potentially typed by the user.
 
 Connection Port
 
@@ -614,34 +611,43 @@ Audio output is always enabled by default. If you are concerned about
 bandwidth usage, or audio is causing problems, you can explicitly disable
 audio output
 
-###
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
 
-Troubleshooting Connections
+# RDP Connections
 
-When troubleshooting authentication and connection issues, check the
-following:
+Keeper Connections - RDP Protocol
 
-  * Ensure the user specified in the linked PAM User record has the rights to RDP to the target machine.
+[PreviousSSH Connections](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/ssh-connections)[NextMySQL
+Connections](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/mysql-connections)
 
-  * Adjust your group policy or add the user to the "Remote Desktop Users" group on Windows to grant access.
+  * Overview 
+  * Prerequisites
+  * PAM Settings - Configuring RDP Protocol
+  * Accessing Connection Settings
+  * Configuring Connection Settings
+  * Troubleshooting Connections
+  * Session Recordings - RDP Protocol
 
-  * 
+[installation method](/en/keeperpam/privileged-access-manager/getting-
+started/gateways)
 
-##
+The PAM Configuration contains information of your target infrastructure
 
-Session Recordings - RDP Protocol
+The PAM Machine record contains information of the endpoint you want to
+establish an RDP protocol connection to.
 
-For additional troubleshooting, refer to the Gateway logs which will contain
-additional information. The location of the Gateway logs depends on the .
+The PAM User record contains the user credentials that will be used to connect
+to the endpoint
 
 [Getting Started page](/en/keeperpam/privileged-access-
 manager/connections/getting-started)
 
 [Example: Azure Windows VM](/en/keeperpam/privileged-access-manager/getting-
 started/pam-resources/pam-machine/example-azure-windows-vm)
-
-[installation method](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)
 
 [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
 started/pam-configuration)
@@ -652,12 +658,6 @@ started/pam-resources/pam-machine)
 [PAM User Record](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
 
-RDP Session Recordings
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9HnosSdfjm4CmdFzsv8T%252FScreenshot%25202025-01-21%2520at%252012.18.55%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D21d7ad18-e6bc-48c5-9a8e-9ac8b10b9fea&width=768&dpr=4&quality=100&sign=9535f205&sv=2)
-
 Field
 
 Definition
@@ -665,19 +665,25 @@ Definition
 PAM Configuration
 
 This is the PAM Configuration that contains the details of your target
-infrastructure and provides access to the target configured on the PAM Record
+infrastructure and provides access to the target configured on the PAM Record.
 
 Administrative Credential Record
 
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
 
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
 For this protocol, graphical data, including timing information, is recorded.
 For more details on the recordings and how to access them, see the  docs.
 
 [Session Recording & Playback](/en/keeperpam/privileged-access-
 manager/session-recording-and-playback)
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
+RDP Session Recordings
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9HnosSdfjm4CmdFzsv8T%252FScreenshot%25202025-01-21%2520at%252012.18.55%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D21d7ad18-e6bc-48c5-9a8e-9ac8b10b9fea&width=768&dpr=4&quality=100&sign=9535f205&sv=2)
 

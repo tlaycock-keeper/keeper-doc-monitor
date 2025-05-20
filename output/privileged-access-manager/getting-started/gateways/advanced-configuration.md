@@ -146,12 +146,13 @@ KeeperPAM and Secrets Manager
 
         * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
         * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
-        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
         * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
         * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
         * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
         * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
         * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+        * [Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-protocols/kubernetes)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
 
       * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
@@ -386,50 +387,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Support Configurations
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=0n5yjJyt6o3BaKp37gao&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-# Advanced Configuration
-
-Advanced Keeper Gateway Configurations
-
-##
-
-Overview
-
-This section will cover additional configurations to modify the Keeper
-Gateway's default behavior.
-
-##
-
-Support Configurations
-
-The following are supported configurations for the Keeper Gateway:
-
-  * [Storing Gateway Configuration in AWS KMS](/en/keeperpam/privileged-access-manager/getting-started/gateways/advanced-configuration/gateway-configuration-with-aws-kms)
-
-  * [Gateway Configuration with Custom Fields](/en/keeperpam/privileged-access-manager/getting-started/gateways/advanced-configuration/gateway-configuration-with-custom-fields)
-
-[PreviousAlerts and SIEM Integration](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/alerts-and-siem-integration)[NextGateway
-Configuration with AWS KMS](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/advanced-configuration/gateway-configuration-with-aws-kms)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -459,4 +416,54 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Overview
+  * Support Configurations
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=0n5yjJyt6o3BaKp37gao&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+# Advanced Configuration
+
+Advanced Keeper Gateway Configurations
+
+[PreviousAlerts and SIEM Integration](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/alerts-and-siem-integration)[NextGateway
+Configuration with AWS KMS](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/advanced-configuration/gateway-configuration-with-aws-kms)
+
+Last updated 4 months ago
+
+Was this helpful?
+
+##
+
+Overview
+
+This section will cover additional configurations to modify the Keeper
+Gateway's default behavior.
+
+##
+
+Support Configurations
+
+The following are supported configurations for the Keeper Gateway:
+
+  *   * 
+
+[Storing Gateway Configuration in AWS KMS](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/advanced-configuration/gateway-configuration-
+with-aws-kms)
+
+[Gateway Configuration with Custom Fields](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/advanced-configuration/gateway-configuration-
+with-custom-fields)
 

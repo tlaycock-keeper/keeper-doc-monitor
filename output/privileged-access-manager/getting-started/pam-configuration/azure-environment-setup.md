@@ -146,12 +146,13 @@ KeeperPAM and Secrets Manager
 
         * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
         * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
-        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
         * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
         * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
         * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
         * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
         * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+        * [Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-protocols/kubernetes)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
 
       * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
@@ -386,36 +387,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Azure Environment Overview
@@ -447,6 +418,36 @@ Last updated 4 months ago
 
 Was this helpful?
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ##
 
 Azure Environment Overview
@@ -475,6 +476,12 @@ is shown. This is the **Client Id** field of the Keeper PAM Configuration
 record. The **Directory (tenant) ID** is also shown. This is the **Tenant Id**
 field of the Keeper PAM Configuration record. Save these values for later.
 
+Next, go to Home > General > Subscriptions and get your subscription ID. Copy
+the subscription ID into the Keeper PAM Configuration "Subscription ID" field.
+For more information on how to get your subscription ID, visit this
+[page](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-
+tenant-id).
+
 Next, click on the **Add a certification or secret** for **Client
 credentials**. On the next page, click on New client secret, give the client
 secret a Description, and select a desired Expires date, and click **Add**.
@@ -501,7 +508,9 @@ privileges are needed for your use case. Custom roles can be used.
 
   * **Global Administrator** \- It is not recommended to use a Global Administrator on a service principal. However, it will allow both administrator and user passwords to be rotated.
 
-  *   * 
+  * [**Privileged Authentication Administrator**](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#privileged-authentication-administrator) \- Can change the password for any user, including a Global Administrator user.
+
+  * [**Authentication Administrator**](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#authentication-administrator) \- Can change the password for any user, except a Global Administrator user.
 
 To add the application, click **Add assignments** and **Search** for the
 service principal/application that was created, click it, and then **Add**.
@@ -642,20 +651,19 @@ Configuring PAM Features on PAM Record Types
 
 After creating the PAM configuration, visit the following pages to:
 
-  *   *   *   *   * 
+  * Configure [Rotation](/en/keeperpam/secrets-manager/password-rotation)
+
+  * Configure [Connections](/en/keeperpam/privileged-access-manager/connections)
+
+  * Configure [RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
+
+  * Configure [Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
+
+  * Configure [Discovery](/en/keeperpam/privileged-access-manager/discovery)
 
 Create Application
 
-Next, go to Home > General > Subscriptions and get your subscription ID. Copy
-the subscription ID into the Keeper PAM Configuration "Subscription ID" field.
-For more information on how to get your subscription ID, visit this .
-
 Client Secret
-
-\- Can change the password for any user, including a Global Administrator
-user.
-
-\- Can change the password for any user, except a Global Administrator user.
 
 Assign Administrator Role to Keeper Application
 
@@ -664,37 +672,6 @@ Role
 Create Azure Custom Role
 
 Assign Role to Keeper Secrets Manager application member
-
-Configure
-
-Configure
-
-Configure
-
-Configure
-
-Configure
-
-[page](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-
-tenant-id)
-
-[**Privileged Authentication Administrator**](https://learn.microsoft.com/en-
-us/azure/active-directory/roles/permissions-reference#privileged-
-authentication-administrator)
-
-[**Authentication Administrator**](https://learn.microsoft.com/en-
-us/azure/active-directory/roles/permissions-reference#authentication-
-administrator)
-
-[Rotation](/en/keeperpam/secrets-manager/password-rotation)
-
-[Connections](/en/keeperpam/privileged-access-manager/connections)
-
-[RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
-
-[Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
-
-[Discovery](/en/keeperpam/privileged-access-manager/discovery)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

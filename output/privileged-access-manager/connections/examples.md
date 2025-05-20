@@ -146,12 +146,13 @@ KeeperPAM and Secrets Manager
 
         * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
         * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
-        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
         * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
         * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
         * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
         * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
         * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+        * [Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-protocols/kubernetes)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
 
       * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
@@ -430,8 +431,8 @@ PDF](/en/keeperpam/~gitbook/pdf?page=Y8j5mnC0QbPc7AlyX1Qx&only=yes&limit=100)
 
 Example connection records
 
-[PreviousTelnet Connections](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/telnet-connections)[NextSSH Protocol -
+[PreviousRBI Connections](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/rbi-connections)[NextSSH Protocol -
 Linux Machine](/en/keeperpam/privileged-access-
 manager/connections/examples/ssh-protocol-linux-machine)
 

@@ -146,12 +146,13 @@ KeeperPAM and Secrets Manager
 
         * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
         * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
-        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
         * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
         * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
         * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
         * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
         * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+        * [Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-protocols/kubernetes)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
 
       * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
@@ -386,36 +387,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Common Setup Steps
@@ -446,6 +417,36 @@ Last updated 4 months ago
 
 Was this helpful?
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 For identity providers that don't support SCIM, customers can utilize the
 Keeper Commander  command to provision users and teams.
 
@@ -453,7 +454,9 @@ Keeper Commander  command to provision users and teams.
 
 Common Setup Steps
 
-Prerequisites: please be familiar with
+Prerequisites: please be familiar with [User and Team
+provisioning](https://docs.keeper.io/enterprise-guide/user-and-team-
+provisioning)
 
   1. Create a SCIM provisioning for your enterprise with the Admin Console or Commander
 
@@ -470,7 +473,9 @@ Google Workspace
 The setup steps in this section allow you to provision users and teams from
 your Google Workspace account.
 
-Prerequisites:  subscription and  account
+Prerequisites: [Active Google Workspace](https://admin.google.com)
+subscription and [Google Cloud Platform](https://console.cloud.google.com/)
+account
 
 Commander installed with `pip:` Make sure Google API Client Python package is
 installed
@@ -481,9 +486,9 @@ Copy
     
     (keeper) % pip install google-api-python-client
 
-  1. : Create a project or chose an existing one
+  1. [Google Cloud Platform](https://console.cloud.google.com/): Create a project or chose an existing one
 
-  2. : Enable `Admin SDK API` for your project
+  2. [Google Cloud Platform](https://console.cloud.google.com/): Enable `Admin SDK API` for your project
 
      * in the `APIs & Services` click `+ENABLE APIS AND SERVICES`
 
@@ -491,7 +496,7 @@ Copy
 
      * click `ENABLE`
 
-  3. : Create a Service Account
+  3. [Google Cloud Platform](https://console.cloud.google.com/): Create a Service Account
 
      * In the `IAM and Admin` menu select `Service accounts`
 
@@ -507,11 +512,15 @@ Copy
 
   4. Grant the Service Account access to your Google Workspace Directory
 
-     *        * Navigate to your Service Account and select `DETAILS` tab
+     * [Google Cloud Platform](https://console.cloud.google.com/)
+
+       * Navigate to your Service Account and select `DETAILS` tab
 
        * in the `Domain-wide delegation` section copy the `Client ID`. You will need to grant this Client ID access to the Google Workspace Directory
 
-     *        * Navigate to `Security` -> `API controls`
+     * [Google Workspace Admin Console](https://admin.google.com/)
+
+       * Navigate to `Security` -> `API controls`
 
        * Under the `Domain wide delegation` click `MANAGE DOMAIN WIDE DELEGATION`
 
@@ -523,7 +532,7 @@ Copy
 
        * Click `AUTHORIZE` \- These scopes grant Service Account read-only access to Google Workspace Directory Users, Groups and Membership
 
-  5. : Provider Keeper with the `Service Account`
+  5. [Google Workspace Admin Console](https://admin.google.com/): Provider Keeper with the `Service Account`
 
      * In Google, navigate to `Account` -> `Account settings`
 
@@ -531,7 +540,7 @@ Copy
 
      * Paste this email into the login field of your Google SCIM configuration record in Keeper
 
-  6. : create a group that holds users to be exported to Keeper. 
+  6. [Google Workspace Admin Console](https://admin.google.com/): create a group that holds users to be exported to Keeper. 
 
      * Optional: skip this step if you want all user accounts to be imported
 
@@ -688,27 +697,6 @@ Copy
     
     
     scim push <SCIM ID> --source=ad --record=<RECORD UID>
-
-[User and Team provisioning](https://docs.keeper.io/enterprise-guide/user-and-
-team-provisioning)
-
-[Active Google Workspace](https://admin.google.com)
-
-[Google Cloud Platform](https://console.cloud.google.com/)
-
-[Google Cloud Platform](https://console.cloud.google.com/)
-
-[Google Cloud Platform](https://console.cloud.google.com/)
-
-[Google Cloud Platform](https://console.cloud.google.com/)
-
-[Google Cloud Platform](https://console.cloud.google.com/)
-
-[Google Workspace Admin Console](https://admin.google.com/)
-
-[Google Workspace Admin Console](https://admin.google.com/)
-
-[Google Workspace Admin Console](https://admin.google.com/)
 
 [Google Workspace User and Group Provisioning with Cloud FunctionSSO Connect
 Cloud](https://docs.keeper.io/sso-connect-cloud/identity-provider-

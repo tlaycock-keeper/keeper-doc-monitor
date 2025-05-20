@@ -146,12 +146,13 @@ KeeperPAM and Secrets Manager
 
         * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
         * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
-        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
         * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
         * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
         * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
         * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
         * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+        * [Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-protocols/kubernetes)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
 
       * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
@@ -418,10 +419,29 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * Eligible Credentials
+  * Autofill Targets
+  * Field Identification
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=JtIYNW80QVx3YzJQZ5Bi&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
+  3. [Setting up RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation/setting-up-rbi)
+
+# Browser Autofill
+
+Autofill credentials into Remote Browser Isolation sessions
+
+[PreviousURL Patterns & Resource URL Patterns](/en/keeperpam/privileged-
+access-manager/remote-browser-isolation/setting-up-rbi/url-patterns-and-
+resource-url-patterns)[NextSession Recording &
+Playback](/en/keeperpam/privileged-access-manager/session-recording-and-
+playback)
 
 Last updated 1 month ago
 
@@ -487,16 +507,58 @@ and one or more of the following properties:
 
 Basic Example: A single page web application with a Login and Password field:
 
+Copy
+
+    
+    
+    - page: "http://172.31.8.134:8080/login"
+      username-field: "input[name='j_username']"
+      password-field: "input[name='j_password']"
+
 Some login flows will require multiple rules. For example, the Microsoft Azure
 Portal login flow would be an example of this.
 
 Here's a YAML example of the autofill rules that would be necessary for
 Microsoft Azure:
 
+Copy
+
+    
+    
+    - page: "login.microsoftonline.com"
+      username-field: "input[autocomplete='username']"
+    
+    - page: "login.live.com"
+      password-field: "input[autocomplete='current-password']"
+
 Here's the equivalent, formatted as JSON:
+
+Copy
+
+    
+    
+    [
+        {
+            "page": "login.microsoftonline.com",
+            "username-field": "input[autocomplete='username']"
+        },
+        {
+            "page": "login.live.com",
+            "password-field": "input[autocomplete='current-password']"
+        }
+    ]
 
 A common example where you would not want Keeper automatically submitting is
 when there's a captcha on the page. An example of this is below:
+
+Copy
+
+    
+    
+    - page: "https://dash.cloudflare.com/login"
+      username-field: "input[id='email']"
+      password-field: "input[id='password']"
+      cannot-submit: "div[data-testid=challenge-widget-container]"
 
 For unusually complex pages where CSS is not sufficient, XPath expressions may
 be used instead. Any such XPath expression must be constructed with a leading
@@ -549,75 +611,14 @@ javascript command.
 
 For example, type the below and press <enter>:
 
-If the field is found, the DOM element will be displayed. Otherwise, an error
-will be displayed.
-
-Copy
-
-    
-    
-    - page: "http://172.31.8.134:8080/login"
-      username-field: "input[name='j_username']"
-      password-field: "input[name='j_password']"
-
-Copy
-
-    
-    
-    - page: "login.microsoftonline.com"
-      username-field: "input[autocomplete='username']"
-    
-    - page: "login.live.com"
-      password-field: "input[autocomplete='current-password']"
-
-Copy
-
-    
-    
-    [
-        {
-            "page": "login.microsoftonline.com",
-            "username-field": "input[autocomplete='username']"
-        },
-        {
-            "page": "login.live.com",
-            "password-field": "input[autocomplete='current-password']"
-        }
-    ]
-
-Copy
-
-    
-    
-    - page: "https://dash.cloudflare.com/login"
-      username-field: "input[id='email']"
-      password-field: "input[id='password']"
-      cannot-submit: "div[data-testid=challenge-widget-container]"
-
 Copy
 
     
     
     document.querySelector("input[type='password']")
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
-  3. [Setting up RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation/setting-up-rbi)
-
-# Browser Autofill
-
-Autofill credentials into Remote Browser Isolation sessions
-
-[PreviousURL Patterns & Resource URL Patterns](/en/keeperpam/privileged-
-access-manager/remote-browser-isolation/setting-up-rbi/url-patterns-and-
-resource-url-patterns)[NextSession Recording &
-Playback](/en/keeperpam/privileged-access-manager/session-recording-and-
-playback)
-
-  * Overview
-  * Eligible Credentials
-  * Autofill Targets
-  * Field Identification
+If the field is found, the DOM element will be displayed. Otherwise, an error
+will be displayed.
 
 Remote Browser Isolation Record
 

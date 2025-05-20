@@ -146,12 +146,13 @@ KeeperPAM and Secrets Manager
 
         * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
         * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
-        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
         * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
         * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
         * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
         * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
         * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+        * [Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-protocols/kubernetes)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
 
       * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
@@ -438,12 +439,12 @@ PDF](/en/keeperpam/~gitbook/pdf?page=Z3Wn0ZslIoLyRuK4Uy2d&only=yes&limit=100)
 
 Keeper Connections - Remote Browser Isolation (http/https) Protocol
 
-[PreviousRDP Connections](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/rdp-connections)[NextMySQL
-Connections](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/mysql-connections)
+[PreviousKubernetes](/en/keeperpam/privileged-access-
+manager/connections/session-
+protocols/kubernetes)[NextExamples](/en/keeperpam/privileged-access-
+manager/connections/examples)
 
-Last updated 3 months ago
+Last updated 18 hours ago
 
 Was this helpful?
 
@@ -522,31 +523,58 @@ Enable Remote Browser Isolation
 
 **Required**
 
-To enable connection for this record, this toggle needs to be enabled
+To enable connection for this record, this toggle needs to be enabled.
 
 Graphical Session Recording
 
-When enabled, graphical session recordings will be enabled for this record
+When enabled, graphical session recordings will be enabled for this record.
+
+Include Key Events
+
+When enabled, the individual keystroke data will be included in the session
+playback. Note: This will include any secrets potentially typed by the user.
 
 Allow navigation via direct URL manipulation
 
+Shows a website address tool in the user interface that allows the user to
+navigate.
+
 Ignore server certificate
+
+Instructs RBI to ignore invalid or expired SSL certificates on the website
+that is explicitly set in the URL field for the record. Certificates are
+required for any other domains during the session.
 
 Allowed URL Patterns
 
+The patterns of all URLs that the user should be allowed to visit, regardless
+of whether via manual navigation (URL bar) or interacting with the current
+page. Multiple patterns may be specified, separated by newlines. If specified,
+only pages matching patterns in the list are permitted. By default, all URLs
+are permitted.
+
 Allowed Resource URL Patterns
+
+The patterns of all URLs that the a page should be allowed to load as a
+resource, such as an image, script, stylesheet, font, etc. Multiple patterns
+may be specified, separated by newlines. If specified, only resources matching
+patterns in the list are permitted to be loaded. By default, no restrictions
+are imposed on resources loaded by pages.
 
 Can copy to clipboard
 
 If enabled, text copied within the connected protocol session will be
-accessible by the user
+accessible by the user.
 
 Can paste from clipboard
 
 If enabled, user can paste text from clipboard within the connected protocol
-session
+session.
 
 Browser Autofill
+
+KeeperPAM provides the capability of autofilling a username, password and TOTP
+code into a target website login screen.
 
 ##
 
@@ -554,23 +582,6 @@ Session Recordings - RBI Protocol
 
 [Getting Started page](/en/keeperpam/privileged-access-
 manager/connections/getting-started)
-
-Field
-
-Definition
-
-PAM Configuration
-
-This is the PAM Configuration that contains the details of your target
-infrastructure and provides access to the target configured on the PAM Record
-
-Administrative Credential Record
-
-This is the linked  that will be used to authenticate to the target and
-perform administrative operations on it.
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
 
 For this protocol, graphical data, including timing information, is recorded.
 For more details on the recordings and how to access them, see the  docs.
@@ -583,4 +594,21 @@ RBI Session Recordings
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLo99ArUgaunD381ym1VQ%252FScreenshot%25202025-01-21%2520at%252012.14.54%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D04024b72-bcf7-4da1-8c33-ca47ca04bd05&width=768&dpr=4&quality=100&sign=11804dd8&sv=2)
+
+Field
+
+Definition
+
+PAM Configuration
+
+This is the PAM Configuration that contains the details of your target
+infrastructure and provides access to the target configured on the PAM Record.
+
+Administrative Credential Record
+
+This is the linked  that will be used to authenticate to the target and
+perform administrative operations on it.
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
 

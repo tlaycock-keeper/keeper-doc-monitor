@@ -146,12 +146,13 @@ KeeperPAM and Secrets Manager
 
         * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
         * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
-        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
         * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
         * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
         * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
         * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
         * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+        * [Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-protocols/kubernetes)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
 
       * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
@@ -881,13 +882,19 @@ manager-configuration)
 [HashiCorp Vault
 documentation](https://learn.hashicorp.com/collections/vault/getting-started)
 
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
+[Configuration Documentation](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration#creating-a-secrets-manager-configuration)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
 [Releases · Keeper-Security/secrets-managerGitHub](https://github.com/Keeper-
 Security/secrets-manager/releases)
 
 Secrets Manager Releases
-
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
 
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
 
@@ -896,10 +903,4 @@ x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVbvni8ZH5LSuDcwtynn9%252Fdatasource-
 ksm-
 hashicorp.jpg%3Falt%3Dmedia%26token%3D776d562b-07e3-4d89-b8a4-e1434e649190&width=768&dpr=4&quality=100&sign=d8c8ff8a&sv=2)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
-[Configuration Documentation](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration#creating-a-secrets-manager-configuration)
 

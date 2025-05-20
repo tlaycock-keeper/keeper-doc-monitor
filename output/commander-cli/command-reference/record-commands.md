@@ -146,12 +146,13 @@ KeeperPAM and Secrets Manager
 
         * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
         * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
-        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
         * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
         * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
         * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
         * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
         * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+        * [Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-protocols/kubernetes)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
 
       * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
@@ -1968,9 +1969,6 @@ When adding other users or teams to a shared folder, they will be given the
 default permissions of that folder, unless the permission is specifically
 revoked or added when sharing. See the  command for more details.
 
-[share-folder](/en/keeperpam/commander-cli/command-reference/sharing-
-commands#share-folder-command)
-
 [`list`](/en/keeperpam/commander-cli/command-reference/record-commands#list-
 command)
 
@@ -2024,4 +2022,7 @@ commands#password-report-command)
 
 [`find-ownerless`](/en/keeperpam/commander-cli/command-reference/record-
 commands#find-ownerless)
+
+[share-folder](/en/keeperpam/commander-cli/command-reference/sharing-
+commands#share-folder-command)
 

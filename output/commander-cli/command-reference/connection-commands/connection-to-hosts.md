@@ -146,12 +146,13 @@ KeeperPAM and Secrets Manager
 
         * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
         * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
-        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
         * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
         * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
         * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
         * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
         * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+        * [Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-protocols/kubernetes)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
 
       * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
@@ -386,36 +387,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Connect Command 
-  * connect command:
-  * Examples
-  * SSH to a Server via Gateway
-  * SSH using SSH Agent
-  * Remote Desktop (RDP) Launcher Example
-
-Was this helpful?
-
-[Export as PDF](/en/keeperpam/~gitbook/pdf?page=-McBFak3iaiQSfg-
-luNA&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Connection Commands](/en/keeperpam/commander-cli/command-reference/connection-commands)
-
-# Connect Command
-
-Connect to RDP and SSH servers from the Commander CLI
-
-[PreviousRDP](/en/keeperpam/commander-cli/command-reference/connection-
-commands/rdp)[NextSFTP Sync](/en/keeperpam/commander-cli/command-
-reference/connection-commands/sftp-sync)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -445,6 +416,36 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Connect Command 
+  * connect command:
+  * Examples
+  * SSH to a Server via Gateway
+  * SSH using SSH Agent
+  * Remote Desktop (RDP) Launcher Example
+
+Was this helpful?
+
+[Export as PDF](/en/keeperpam/~gitbook/pdf?page=-McBFak3iaiQSfg-
+luNA&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Connection Commands](/en/keeperpam/commander-cli/command-reference/connection-commands)
+
+# Connect Command
+
+Connect to RDP and SSH servers from the Commander CLI
+
+[PreviousRDP](/en/keeperpam/commander-cli/command-reference/connection-
+commands/rdp)[NextSFTP Sync](/en/keeperpam/commander-cli/command-
+reference/connection-commands/sftp-sync)
+
+Last updated 4 months ago
+
+Was this helpful?
 
 The connect command is deprecated from Commander versions 16.5.8 and later.
 

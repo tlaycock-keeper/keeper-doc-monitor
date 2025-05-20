@@ -146,12 +146,13 @@ KeeperPAM and Secrets Manager
 
         * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
         * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
-        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
         * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
         * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
         * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
         * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
         * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+        * [Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-protocols/kubernetes)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
 
       * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
@@ -386,6 +387,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -419,36 +450,6 @@ use-cases/saas-accounts/rotate-credential-via-rest-api)
 Last updated 3 months ago
 
 Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
 
 ##
 
@@ -488,12 +489,6 @@ gateway environment and run the following command:
 
 pip install snowflake-connector-python
 
-**NOTE: If you want to use a virtual environment, add a shebang line at the
-top of the script as documented here**[**Python Environment
-Setup**](https://docs.keeper.io/en/v/secrets-manager/secrets-manager/password-
-rotation/post-rotation-scripts/use-case-examples/rotate-credential-via-rest-
-api#step-5-python-environment-setup)
-
 ##
 
 Rotating Setup for Snowflake User credentials
@@ -515,9 +510,7 @@ will be rotated.
 
 Step 2: Add PAM Script
 
-  * Attach the below [Python script](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/snowflake-user#python-script) that will perform the password rotation. The script has additional comments inside that describe each line.
-
-  * Enable No-Operation (NOOP) atomic execution:
+  *   * Enable No-Operation (NOOP) atomic execution:
 
     * In the current PAM User record where user's details are stored, create a new custom text field labeled `NOOP` and set its value to `True`.
 
@@ -684,10 +677,6 @@ Copy
 The above script for the Snowflake Post-Rotation Script can be also found
 here:
 
-[https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
-Scripts/tree/main/snowflakegithub.com](https://github.com/Keeper-
-Security/Zero-Trust-KeeperPAM-Scripts/tree/main/snowflake)
-
 ##
 
 Rotating Snowflake User Credentials
@@ -695,6 +684,23 @@ Rotating Snowflake User Credentials
 After successfully setting up Rotation for your Snowflake User Credentials on
 the PAM User Record, clicking on "Run Scripts Only" will rotate the
 credential:
+
+**NOTE: If you want to use a virtual environment, add a shebang line at the
+top of the script as documented here**
+
+Attach the below  that will perform the password rotation. The script has
+additional comments inside that describe each line.
+
+[**Python Environment Setup**](https://docs.keeper.io/en/v/secrets-
+manager/secrets-manager/password-rotation/post-rotation-scripts/use-case-
+examples/rotate-credential-via-rest-api#step-5-python-environment-setup)
+
+[Python script](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-accounts/snowflake-user#python-script)
+
+[https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
+Scripts/tree/main/snowflakegithub.com](https://github.com/Keeper-
+Security/Zero-Trust-KeeperPAM-Scripts/tree/main/snowflake)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

@@ -146,12 +146,13 @@ KeeperPAM and Secrets Manager
 
         * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
         * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
-        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
         * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
         * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
         * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
         * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
         * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+        * [Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-protocols/kubernetes)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
 
       * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
@@ -436,7 +437,7 @@ manager/connections/getting-started)[NextSSH
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/ssh-connections)
 
-Last updated 3 months ago
+Last updated 18 hours ago
 
 Was this helpful?
 
@@ -489,6 +490,10 @@ PAM Machine
 Connecting to the target defined on the PAM Machine Record with the Telnet
 connection protocol
 
+PAM Machine
+
+Connecting to the target defined on the PAM Machine record with K8s
+
 PAM Remote Browser
 
 Connecting to the target defined on the PAM Machine Record with http or https
@@ -514,6 +519,9 @@ protocols/vnc-connections)
 
 [Telnet](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/telnet-connections)
+
+[Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/kubernetes)
 
 [RBI](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/rbi-connections)

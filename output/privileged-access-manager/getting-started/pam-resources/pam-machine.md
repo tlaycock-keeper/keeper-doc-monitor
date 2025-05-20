@@ -146,12 +146,13 @@ KeeperPAM and Secrets Manager
 
         * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
         * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
-        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
         * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
         * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
         * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
         * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
         * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+        * [Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-protocols/kubernetes)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
 
       * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
@@ -483,13 +484,6 @@ The PAM Machine resource supports the following features:
 
   * File transfer through drag-and-drop
 
-Connecting to the PAM machine requires only that the Keeper Gateway has access
-to the target machine. The Keeper Vault operates independently and does not
-require direct connectivity to the machine, leveraging Keeper's zero-trust
-network access model to securely manage access through the Gateway. See the
-[network architecture diagram](/en/keeperpam/privileged-access-
-manager/getting-started/architecture/system-architecture) for more details.
-
 ##
 
 Creating a PAM Machine
@@ -630,9 +624,6 @@ Session Recording
 
 Options for recording sessions and typescripts
 
-See [session recording](/en/keeperpam/privileged-access-manager/session-
-recording-and-playback)
-
 Connection Parameters (multiple)
 
 Connection-specific protocol settings which can vary based on the protocol
@@ -650,13 +641,31 @@ Examples
 
 Visit the following pages to set up:
 
-  * [Linux Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-machine/example-linux-machine)
+  *   * 
 
-  * [Azure Virtual Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-machine/example-azure-windows-vm)
+Connecting to the PAM machine requires only that the Keeper Gateway has access
+to the target machine. The Keeper Vault operates independently and does not
+require direct connectivity to the machine, leveraging Keeper's zero-trust
+network access model to securely manage access through the Gateway. See the
+for more details.
 
 **Required** Visit this  for more details
 
 **Required** Visit this  for more details
+
+See
+
+[network architecture diagram](/en/keeperpam/privileged-access-
+manager/getting-started/architecture/system-architecture)
+
+[Linux Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine/example-linux-machine)
+
+[Azure Virtual Machine](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-machine/example-azure-windows-vm)
+
+[session recording](/en/keeperpam/privileged-access-manager/session-recording-
+and-playback)
 
 [section](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-machine#pam-settings-and-administrative-credentials)

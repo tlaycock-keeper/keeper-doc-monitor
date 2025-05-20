@@ -146,12 +146,13 @@ KeeperPAM and Secrets Manager
 
         * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
         * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
-        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
         * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
         * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
         * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
         * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
         * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+        * [Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-protocols/kubernetes)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
 
       * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
@@ -418,14 +419,23 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * Linux
+  * Windows
+  * Windows Shell
+  * MacOS
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=Htl8IAakuBMmJKZE6R5W&only=yes&limit=100)
 
-Last updated 4 months ago
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
 
-Was this helpful?
+# Setting up SSH
+
+Example guide for setting up SSH on target machines
 
 ##
 
@@ -451,8 +461,22 @@ started, and added to the list of services to be started upon reboot.
 To verify that ssh is running on your Linux system, invoke the following
 command:
 
+Copy
+
+    
+    
+    ps aux | grep sshd
+
 If ssh is not running, you may need to install OpenSSH or/and enable ssh. The
 following commands demonstrate this in Ubuntu:
+
+Copy
+
+    
+    
+    apt-get install openssh-server
+    systemctl enable ssh
+    systemctl start ssh
 
 Note:
 
@@ -475,51 +499,6 @@ The following PowerShell script will:
 
   * Ensure the firewall allows SSH connections
 
-Once connected, PowerShell Commands can be executed by typing
-`powershell.exe`:
-
-###
-
-Windows Shell
-
-Windows SSH can either default to PowerShell or CMD. Keeper Rotation uses
-PowerShell commands. If the default shell is CMD, Keeper Rotation will invoke
-rotation commands via `PowerShell Invoke-Command -ScriptBlock { COMMANDS }`.
-To change the default shell to PowerShell, invoke the following PowerShell
-command:
-
-##
-
-MacOS
-
-SSH is installed on macOS and usually not turned on for the user.
-
-To enable it via the UI, enable **Remote Login** on the **General**
-->**Sharing** panel.
-
-To enable it via the command line, invoke the following command:
-
-Note:
-
-  * you will require **Full Disk Access** privileges for this command line method.
-
-To connect through SSH, simply create a new  record and set the connection
-protocol to SSH.
-
-Copy
-
-    
-    
-    ps aux | grep sshd
-
-Copy
-
-    
-    
-    apt-get install openssh-server
-    systemctl enable ssh
-    systemctl start ssh
-
 Copy
 
     
@@ -539,6 +518,9 @@ Copy
         Write-Output "Firewall rule 'OpenSSH-Server-In-TCP' has been created and exists."
     }
 
+Once connected, PowerShell Commands can be executed by typing
+`powershell.exe`:
+
 Copy
 
     
@@ -550,6 +532,16 @@ Copy
     
     PS C:\Users\Administrator\Desktop> 
 
+###
+
+Windows Shell
+
+Windows SSH can either default to PowerShell or CMD. Keeper Rotation uses
+PowerShell commands. If the default shell is CMD, Keeper Rotation will invoke
+rotation commands via `PowerShell Invoke-Command -ScriptBlock { COMMANDS }`.
+To change the default shell to PowerShell, invoke the following PowerShell
+command:
+
 Copy
 
     
@@ -559,28 +551,37 @@ Copy
       -Value "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" `
       -PropertyType String -Force
 
+##
+
+MacOS
+
+SSH is installed on macOS and usually not turned on for the user.
+
+To enable it via the UI, enable **Remote Login** on the **General**
+->**Sharing** panel.
+
+To enable it via the command line, invoke the following command:
+
 Copy
 
     
     
     $ sudo systemsetup -setremotelogin on
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
+Note:
 
-# Setting up SSH
-
-Example guide for setting up SSH on target machines
+  * you will require **Full Disk Access** privileges for this command line method.
 
 [PreviousPort Mapping](/en/keeperpam/privileged-access-
 manager/references/port-mapping)[NextSetting up
 WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
 
-  * Overview
-  * Linux
-  * Windows
-  * Windows Shell
-  * MacOS
+Last updated 4 months ago
+
+Was this helpful?
+
+To connect through SSH, simply create a new  record and set the connection
+protocol to SSH.
 
 [PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-machine)

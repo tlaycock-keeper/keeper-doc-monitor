@@ -146,12 +146,13 @@ KeeperPAM and Secrets Manager
 
         * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
         * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
-        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
         * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
         * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
         * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
         * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
         * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+        * [Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-protocols/kubernetes)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
 
       * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
@@ -443,7 +444,7 @@ manager/connections/session-protocols/mysql-connections)[NextPostgreSQL
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/postgresql-connections)
 
-Last updated 3 months ago
+Last updated 18 hours ago
 
 Was this helpful?
 
@@ -545,6 +546,11 @@ Text Session Recording (Typescript)
 When enabled, text session recordings (typescript) will be enabled for this
 record
 
+Include Key Events
+
+When enabled, the individual keystroke data will be included in the session
+playback. Note: This will include any secrets potentially typed by the user.
+
 Connection Port
 
 The port used to establish the selected protocol connection. By Default, this
@@ -588,6 +594,23 @@ manager/connections/getting-started)
 manager/getting-started/pam-resources/pam-database/example-microsoft-sql-
 server-database)
 
+Field
+
+Definition
+
+PAM Configuration
+
+This is the PAM Configuration that contains the details of your target
+infrastructure and provides access to the target configured on the PAM Record.
+
+Administrative Credential Record
+
+This is the linked  that will be used to authenticate to the target and
+perform administrative operations on it.
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
 For this protocol, both graphical and the full, raw text text content of
 terminal sessions, including timing information, are recorded. For more
 information on recordings and how to access these recordings, visit this .
@@ -598,21 +621,4 @@ information on recordings and how to access these recordings, visit this .
 
 [Session Recording and Playback](/en/keeperpam/privileged-access-
 manager/session-recording-and-playback)
-
-Field
-
-Definition
-
-PAM Configuration
-
-This is the PAM Configuration that contains the details of your target
-infrastructure and provides access to the target configured on the PAM Record
-
-Administrative Credential Record
-
-This is the linked  that will be used to authenticate to the target and
-perform administrative operations on it.
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
 

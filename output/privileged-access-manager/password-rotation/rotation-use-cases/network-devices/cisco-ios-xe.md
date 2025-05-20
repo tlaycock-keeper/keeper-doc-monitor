@@ -146,12 +146,13 @@ KeeperPAM and Secrets Manager
 
         * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
         * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
-        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
         * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
         * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
         * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
         * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
         * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+        * [Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-protocols/kubernetes)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
 
       * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
@@ -667,7 +668,7 @@ be rotated.
 
 Step 2: Add PAM Script
 
-  * Attach the below [Python script ](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-ios-xe#python-script)that will perform the password rotation. The script has additional comments inside that describe each line.
+  * 
 
 ###
 
@@ -876,11 +877,6 @@ Copy
 
 The above script for the Cisco Post-Rotation Script can be also found here:
 
-[https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
-Scripts/blob/main/cisco-ios-xe/update-cisco-
-user.pygithub.com](https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
-Scripts/blob/main/cisco-ios-xe/update-cisco-user.py)
-
 ##
 
 Rotating Cisco IOS XE Network User Credentials
@@ -891,6 +887,17 @@ user management portal, the authorized option should be selected as 'Yes'].
 
 After successfully setting up Rotation for your Cisco User Credentials on the
 PAM User Record, clicking on "Run Scripts Only" will rotate the credential:
+
+Attach the below that will perform the password rotation. The script has
+additional comments inside that describe each line.
+
+[https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
+Scripts/blob/main/cisco-ios-xe/update-cisco-
+user.pygithub.com](https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
+Scripts/blob/main/cisco-ios-xe/update-cisco-user.py)
+
+[Python script ](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/network-devices/cisco-ios-xe#python-script)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

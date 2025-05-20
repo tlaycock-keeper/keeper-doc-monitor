@@ -146,12 +146,13 @@ KeeperPAM and Secrets Manager
 
         * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
         * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
-        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
         * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
         * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
         * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
         * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
         * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+        * [Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-protocols/kubernetes)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
 
       * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
@@ -443,7 +444,7 @@ manager/connections/session-protocols/postgresql-connections)[NextTelnet
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/telnet-connections)
 
-Last updated 3 months ago
+Last updated 18 hours ago
 
 Was this helpful?
 
@@ -538,6 +539,11 @@ Graphical Session Recording
 
 When enabled, graphical session recordings will be enabled for this record
 
+Include Key Events
+
+When enabled, the individual keystroke data will be included in the session
+playback. Note: This will include any secrets potentially typed by the user.
+
 Connection Port
 
 The port used to establish the selected protocol connection. By Default, this
@@ -572,23 +578,17 @@ session
 
 Session Recordings - VNC Protocol
 
+For this protocol, graphical data, including timing information, is recorded.
+For more details on the recordings and how to access them, see the  docs.
+
 [Getting Started page](/en/keeperpam/privileged-access-
 manager/connections/getting-started)
 
 [Example: Azure Windows VM](/en/keeperpam/privileged-access-manager/getting-
 started/pam-resources/pam-machine/example-azure-windows-vm)
 
-For this protocol, graphical data, including timing information, is recorded.
-For more details on the recordings and how to access them, see the  docs.
-
 [Session Recording & Playback](/en/keeperpam/privileged-access-
 manager/session-recording-and-playback)
-
-VNC Session Recordings
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fe3uCXEZO7iUuITKSNU21%252FScreenshot%25202025-01-21%2520at%252012.35.50%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db88e8ce5-78ac-4bce-b40f-1c8331249eaf&width=768&dpr=4&quality=100&sign=feb5fdb1&sv=2)
 
 Field
 
@@ -597,7 +597,7 @@ Definition
 PAM Configuration
 
 This is the PAM Configuration that contains the details of your target
-infrastructure and provides access to the target configured on the PAM Record
+infrastructure and provides access to the target configured on the PAM Record.
 
 Administrative Credential Record
 
@@ -606,4 +606,10 @@ perform administrative operations on it.
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
+
+VNC Session Recordings
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fe3uCXEZO7iUuITKSNU21%252FScreenshot%25202025-01-21%2520at%252012.35.50%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db88e8ce5-78ac-4bce-b40f-1c8331249eaf&width=768&dpr=4&quality=100&sign=feb5fdb1&sv=2)
 

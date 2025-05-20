@@ -146,12 +146,13 @@ KeeperPAM and Secrets Manager
 
         * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
         * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
-        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
         * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
         * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
         * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
         * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
         * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+        * [Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-protocols/kubernetes)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
 
       * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
@@ -680,16 +681,16 @@ x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FUdGWGw0HPCgjF3kRVs77%252Fimage.png%3Falt%3Dmedia%26token%3D2a244b08-0dff-4f95-9a59-8dc72927085c&width=768&dpr=4&quality=100&sign=bfe28d34&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG6FEOq6NQs-V7faS%252F-MkdGVZHNVs_7DXooyJA%252Fgitlab-
-plugin-
-header.jpg%3Falt%3Dmedia%26token%3D8473ec29-d8e7-4c89-b437-12740e205265&width=768&dpr=4&quality=100&sign=548e4ce&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYhpG7ahqgd8iL1Gqltkw%252Fimage.png%3Falt%3Dmedia%26token%3D0f3c3393-4db1-4a8c-a10c-c7bb6b6a6a10&width=768&dpr=4&quality=100&sign=b2937de4&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FMoIVhziuwjV7UcqTqqmk%252Fimage.png%3Falt%3Dmedia%26token%3D3668afc8-81e5-4825-aa44-e76f23e7d5ee&width=768&dpr=4&quality=100&sign=ec2a95cc&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG6FEOq6NQs-V7faS%252F-MkdGVZHNVs_7DXooyJA%252Fgitlab-
+plugin-
+header.jpg%3Falt%3Dmedia%26token%3D8473ec29-d8e7-4c89-b437-12740e205265&width=768&dpr=4&quality=100&sign=548e4ce&sv=2)
 

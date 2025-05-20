@@ -146,12 +146,13 @@ KeeperPAM and Secrets Manager
 
         * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
         * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
-        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
         * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
         * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
         * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
         * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
         * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+        * [Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-protocols/kubernetes)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
 
       * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
@@ -1048,6 +1049,12 @@ For support or feature requests, please contact:
 If you would like to request additional features or setup guides for Commander
 Service Mode, please reach out.
 
+Commander Service Mode record
+
+HTTP Body Configuration in Postman
+
+Header Configuration in Postman
+
 To use Commander Service Mode with Ngrok, sign up on  and generate an Auth
 token from
 
@@ -1075,12 +1082,6 @@ Email:
 [commander@keepersecurity.com](mailto:commander@keepersecurity.com)
 
 [Command List](/en/keeperpam/commander-cli/service-mode-rest-api#command-list)
-
-Commander Service Mode record
-
-HTTP Body Configuration in Postman
-
-Header Configuration in Postman
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

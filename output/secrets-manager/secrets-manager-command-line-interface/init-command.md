@@ -146,12 +146,13 @@ KeeperPAM and Secrets Manager
 
         * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
         * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
-        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
         * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
         * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
         * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
         * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
         * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+        * [Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-protocols/kubernetes)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
 
       * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
@@ -418,14 +419,21 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * init command
+  * default
+  * k8s
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=l1gV1Ra8b6F1fx93pTXz&only=yes&limit=100)
 
-Last updated 11 months ago
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
 
-Was this helpful?
+# Init Command
+
+Initialize
 
 ##
 
@@ -440,6 +448,18 @@ Sub-command to run
 format: `**ksm init <sub-command>**`
 
 **Sub-Commands:**
+
+Sub-Command
+
+Description
+
+`default`
+
+Return the redeemed token as base64 encoded JSON
+
+`k8s`
+
+Return the redeemed token as Kubernetes secret script.
 
 ###
 
@@ -460,6 +480,14 @@ optional parameters:
   * `-h, --hostname` change the hostname
 
   * `--skip-ssl-verify` \- Do not verify the remote SSL certificate.
+
+Copy
+
+    
+    
+    $ ksm init default XX:XXXX
+    
+    ewogICAgImNsaWVudElkIjogInd ... U1R4eUQrU3ZNbkhrMTVLUHRGS2MrZlZJOGtlOUtL==
 
 ###
 
@@ -483,26 +511,6 @@ optional parameters:
 
   * `--skip-ssl-verify` \- Do not verify the remote SSL certificate.
 
-Sub-Command
-
-Description
-
-`default`
-
-Return the redeemed token as base64 encoded JSON
-
-`k8s`
-
-Return the redeemed token as Kubernetes secret script.
-
-Copy
-
-    
-    
-    $ ksm init default XX:XXXX
-    
-    ewogICAgImNsaWVudElkIjogInd ... U1R4eUQrU3ZNbkhrMTVLUHRGS2MrZlZJOGtlOUtL==
-
 Copy
 
     
@@ -518,19 +526,12 @@ Copy
       namespace: default
     type: Opaque
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
-
-# Init Command
-
-Initialize
-
 [PreviousProfile Command](/en/keeperpam/secrets-manager/secrets-manager-
 command-line-interface/profile-command)[NextSecret
 Command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/secret-command)
 
-  * init command
-  * default
-  * k8s
+Last updated 11 months ago
+
+Was this helpful?
 

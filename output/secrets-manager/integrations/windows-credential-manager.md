@@ -146,12 +146,13 @@ KeeperPAM and Secrets Manager
 
         * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
         * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
-        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
         * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
         * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
         * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
         * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
         * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+        * [Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-protocols/kubernetes)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
 
       * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
@@ -418,31 +419,12 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Usage - Executable
-  * Downloading the Executable
-  * Using the Executable
-  * set
-  * get
-  * Example
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=4uAYMim9oyLDLik5qeu2&only=yes&limit=100)
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Windows Credential Manager
-
-Store and Retrieve Secrets from the Windows Credential Manager
-
-[PreviousTerraform Plugin](/en/keeperpam/secrets-
-manager/integrations/terraform)[NextXSOAR](/en/keeperpam/secrets-
-manager/integrations/xsoar)
-
-Last updated 1 month ago
+Last updated 2 months ago
 
 Was this helpful?
 
@@ -522,6 +504,11 @@ zero` exit code and write to `stderr`.
 
 Example
 
+deploy the pre-built binary from the
+
+Download the latest version executable from the  and optionally add it to PATH
+to get started.
+
 Copy
 
     
@@ -534,10 +521,24 @@ Copy
     # Retrieve a secret
     wcu get APPNAME
 
-deploy the pre-built binary from the
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
 
-Download the latest version executable from the  and optionally add it to PATH
-to get started.
+# Windows Credential Manager
+
+Store and Retrieve Secrets from the Windows Credential Manager
+
+[PreviousTerraform Plugin](/en/keeperpam/secrets-
+manager/integrations/terraform)[NextXSOAR](/en/keeperpam/secrets-
+manager/integrations/xsoar)
+
+  * Overview
+  * Usage - Executable
+  * Downloading the Executable
+  * Using the Executable
+  * set
+  * get
+  * Example
 
 [releases page](https://github.com/Keeper-Security/windows-credential-
 utility/releases)

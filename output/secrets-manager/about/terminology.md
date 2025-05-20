@@ -146,12 +146,13 @@ KeeperPAM and Secrets Manager
 
         * [SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/ssh-connections)
         * [RDP Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rdp-connections)
-        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
         * [MySQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/mysql-connections)
         * [SQL Server Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/sql-server-connections)
         * [PostgreSQL Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/postgresql-connections)
         * [VNC Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/vnc-connections)
         * [Telnet Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/telnet-connections)
+        * [Kubernetes](/en/keeperpam/privileged-access-manager/connections/session-protocols/kubernetes)
+        * [RBI Connections](/en/keeperpam/privileged-access-manager/connections/session-protocols/rbi-connections)
 
       * [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
 
@@ -510,13 +511,15 @@ A Secrets Manager "Configuration" is a set of tokens that includes encryption
 keys, client identifiers and destination server information used to
 authenticate and decrypt data from the Keeper Secrets Manager APIs.
 
-Secrets Manager configurations are created from [One Time Access
-Tokens](/en/keeperpam/secrets-manager/about/one-time-token) and have a one to
-one relationship with [client devices](/en/keeperpam/secrets-
-manager/about/terminology#client-device).
-
 A configuration can be stored as a text file with JSON, or it can be encoded
 into a single line string.
+
+Secrets Manager configurations are created from [One Time Access
+Tokens](/en/keeperpam/secrets-manager/about/one-time-token) and have a one to
+one relationship with .
+
+[client devices](/en/keeperpam/secrets-manager/about/terminology#client-
+device)
 
 Keeper Secrets Manager Structure
 
