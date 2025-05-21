@@ -569,13 +569,16 @@ About this Guide
 
 This guide on Privilege Manager is broken down into the following sections:
 
-  * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+  *   *   *   * 
 
-  * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+[Setup](/en/keeperpam/endpoint-privilege-manager/setup)
 
-  * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+[Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
 
-  * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+[Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+[Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-
+requests)
 
 Keeper Privilege Manager
 

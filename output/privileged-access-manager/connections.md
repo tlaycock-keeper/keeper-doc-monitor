@@ -442,7 +442,7 @@ Vault
 rotation/post-rotation-scripts/accessing-parameters)[NextGetting
 Started](/en/keeperpam/privileged-access-manager/connections/getting-started)
 
-Last updated 28 days ago
+Last updated 29 days ago
 
 Was this helpful?
 
@@ -540,6 +540,14 @@ and**clientless** architecture. Organizations need to install only a  in each
 managed environment. This streamlined approach simplifies deployment and
 enhances security by centralizing access management.
 
+Connecting to a Windows Machine
+
+Connecting to a Linux Machine
+
+Connection Dock
+
+Connection Dock Minimized
+
 For more information on the architecture, see this .
 
 To get started with Keeper Connections, proceed to the .
@@ -551,14 +559,6 @@ started/gateways)
 
 [next section](/en/keeperpam/privileged-access-manager/connections/getting-
 started)
-
-Connecting to a Windows Machine
-
-Connecting to a Linux Machine
-
-Connection Dock
-
-Connection Dock Minimized
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

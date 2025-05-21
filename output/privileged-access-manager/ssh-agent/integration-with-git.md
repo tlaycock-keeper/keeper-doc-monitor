@@ -457,7 +457,9 @@ further strengthening your security posture.
 
 Prerequisites
 
-  *   * 
+  * Ensure that [SSH Agent is active](/en/keeperpam/privileged-access-manager/ssh-agent) on the Keeper Desktop
+
+  * [Terminal Configuration](/en/keeperpam/privileged-access-manager/ssh-agent#terminal-configuration) is performed
 
 ##
 
@@ -767,20 +769,11 @@ Copy
 
 Setup is complete.
 
-Ensure that  on the Keeper Desktop
-
-is performed
-
-[SSH Agent is active](/en/keeperpam/privileged-access-manager/ssh-agent)
-
 [GitHub Authentication](/en/keeperpam/privileged-access-manager/ssh-
 agent/integration-with-git#github-authentication)
 
 [Signing Commits](/en/keeperpam/privileged-access-manager/ssh-
 agent/integration-with-git#signing-commits)
-
-[Terminal Configuration](/en/keeperpam/privileged-access-manager/ssh-
-agent#terminal-configuration)
 
 Keeper SSH Key for Github Authentication
 

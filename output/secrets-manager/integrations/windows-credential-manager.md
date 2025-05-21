@@ -419,10 +419,29 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * Usage - Executable
+  * Downloading the Executable
+  * Using the Executable
+  * set
+  * get
+  * Example
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=4uAYMim9oyLDLik5qeu2&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Windows Credential Manager
+
+Store and Retrieve Secrets from the Windows Credential Manager
+
+[PreviousTerraform Plugin](/en/keeperpam/secrets-
+manager/integrations/terraform)[NextXSOAR](/en/keeperpam/secrets-
+manager/integrations/xsoar)
 
 Last updated 2 months ago
 
@@ -504,11 +523,6 @@ zero` exit code and write to `stderr`.
 
 Example
 
-deploy the pre-built binary from the
-
-Download the latest version executable from the  and optionally add it to PATH
-to get started.
-
 Copy
 
     
@@ -521,30 +535,20 @@ Copy
     # Retrieve a secret
     wcu get APPNAME
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+deploy the pre-built binary from the
 
-# Windows Credential Manager
-
-Store and Retrieve Secrets from the Windows Credential Manager
-
-[PreviousTerraform Plugin](/en/keeperpam/secrets-
-manager/integrations/terraform)[NextXSOAR](/en/keeperpam/secrets-
-manager/integrations/xsoar)
-
-  * Overview
-  * Usage - Executable
-  * Downloading the Executable
-  * Using the Executable
-  * set
-  * get
-  * Example
+Download the latest version executable from the  and optionally add it to PATH
+to get started.
 
 [releases page](https://github.com/Keeper-Security/windows-credential-
 utility/releases)
 
 [releases page](https://github.com/Keeper-Security/windows-credential-
 utility/releases)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRyTRac0AjyXOOaXRHkgj%252FKeeper%2520and%2520Windows%2520Credential%2520Manager.jpg%3Falt%3Dmedia%26token%3Db2c57103-674c-4f02-9896-e05a85ef56d1&width=768&dpr=4&quality=100&sign=d8f8874e&sv=2)
 
 [GitHub - Keeper-Security/windows-credential-utility: A utility for natively
 interacting with Windows Credential ManagerGitHub](https://github.com/Keeper-
@@ -557,8 +561,4 @@ utility/releases)
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
 
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRyTRac0AjyXOOaXRHkgj%252FKeeper%2520and%2520Windows%2520Credential%2520Manager.jpg%3Falt%3Dmedia%26token%3Db2c57103-674c-4f02-9896-e05a85ef56d1&width=768&dpr=4&quality=100&sign=d8f8874e&sv=2)
 

@@ -444,7 +444,7 @@ manager/connections/session-protocols/sql-server-connections)[NextVNC
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/vnc-connections)
 
-Last updated 18 hours ago
+Last updated 1 day ago
 
 Was this helpful?
 

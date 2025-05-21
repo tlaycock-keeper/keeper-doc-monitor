@@ -1019,11 +1019,11 @@ installation-setup/logging-in#commander-configuration-file)
 [Invoking Lambda functions - AWS LambdaAWS
 Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
 
-![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fdocs.aws.amazon.com%2Fassets%2Fimages%2Ffavicon.ico&width=20&dpr=4&quality=100&sign=ecb3c813&sv=2)
-
 [Send email using Lambda and Amazon SESAmazon Web Services,
 Inc.](https://aws.amazon.com/premiumsupport/knowledge-center/lambda-send-
 email-ses/)
+
+![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fdocs.aws.amazon.com%2Fassets%2Fimages%2Ffavicon.ico&width=20&dpr=4&quality=100&sign=ecb3c813&sv=2)
 
 [Commander/examples at master · Keeper-
 Security/CommanderGitHub](https://github.com/Keeper-

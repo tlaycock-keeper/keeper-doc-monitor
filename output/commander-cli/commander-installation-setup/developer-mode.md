@@ -419,12 +419,34 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Installation
+  * Clone the Commander Repository 
+  * Install Python
+  * Install Virtualenv
+  * Create and Activate Virtual Environment
+  * Install Dependencies and Set Up in Dev Mode
+  * Setup Complete
+  * Sample Python Code
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-MKeAkHBb9f5P9-OQ2KX&only=yes&limit=100)
 
-Last updated 12 days ago
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+
+# Python Developer Setup
+
+Instructions for installation of Python-based Commander with the intent on
+modifying source code
+
+[PreviousCLI Installation on Linux](/en/keeperpam/commander-cli/commander-
+installation-setup/installation-on-linux)[Next.NET Developer
+Setup](/en/keeperpam/commander-cli/commander-installation-setup/net-developer-
+sdk)
+
+Last updated 13 days ago
 
 Was this helpful?
 
@@ -441,8 +463,21 @@ Clone the Commander Repository
 
 Clone the GitHub repository to your local machine:****
 
+Copy
+
+    
+    
+    git clone https://github.com/Keeper-Security/Commander
+    cd Commander
+
 The "master" branch will mirror the production release. The "release" branch
 references the upcoming release. To optionally switch to the release branch:
+
+Copy
+
+    
+    
+    git checkout release
 
 ###
 
@@ -470,9 +505,30 @@ macOS / Linux
 
 Windows
 
+Copy
+
+    
+    
+    virtualenv -p python3 venv
+    source venv/bin/activate
+
+Copy
+
+    
+    
+    python -m venv venv
+    .\venv\Scripts\activate
+
 ###
 
 Install Dependencies and Set Up in Dev Mode
+
+Copy
+
+    
+    
+    pip install -r requirements.txt
+    pip install -e .
 
 ###
 
@@ -480,11 +536,28 @@ Install Dependencies and Set Up in Dev Mode
 
 You can now launch the Commander CLI:
 
+Copy
+
+    
+    
+    keeper shell
+
 * * *
 
 ###
 
 Sample Python Code
+
+Copy
+
+    
+    
+    from keepercommander.__main__ import get_params_from_config
+    from keepercommander import cli
+    
+    my_params = get_params_from_config("{{path_to_config_file}}")
+    
+    cli.do_command(my_params, "{{cli_command}}")
 
 See the  section to understand the authentication process.  all of the
 Commands available.
@@ -500,79 +573,6 @@ Alternatively, you can leverage the full scope of the Commander SDK by using
 its internal classes and functions. Several standalone python scripts can be
 found , with examples for searching records, creating teams and sharing
 folders, and more.
-
-Copy
-
-    
-    
-    pip install -r requirements.txt
-    pip install -e .
-
-Copy
-
-    
-    
-    keeper shell
-
-Copy
-
-    
-    
-    from keepercommander.__main__ import get_params_from_config
-    from keepercommander import cli
-    
-    my_params = get_params_from_config("{{path_to_config_file}}")
-    
-    cli.do_command(my_params, "{{cli_command}}")
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
-
-# Python Developer Setup
-
-Instructions for installation of Python-based Commander with the intent on
-modifying source code
-
-[PreviousCLI Installation on Linux](/en/keeperpam/commander-cli/commander-
-installation-setup/installation-on-linux)[Next.NET Developer
-Setup](/en/keeperpam/commander-cli/commander-installation-setup/net-developer-
-sdk)
-
-  * Installation
-  * Clone the Commander Repository 
-  * Install Python
-  * Install Virtualenv
-  * Create and Activate Virtual Environment
-  * Install Dependencies and Set Up in Dev Mode
-  * Setup Complete
-  * Sample Python Code
-
-Copy
-
-    
-    
-    git clone https://github.com/Keeper-Security/Commander
-    cd Commander
-
-Copy
-
-    
-    
-    git checkout release
-
-Copy
-
-    
-    
-    virtualenv -p python3 venv
-    source venv/bin/activate
-
-Copy
-
-    
-    
-    python -m venv venv
-    .\venv\Scripts\activate
 
 <https://github.com/Keeper-Security/Commander>[](https://github.com/Keeper-
 Security/Commander)

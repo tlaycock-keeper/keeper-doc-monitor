@@ -420,6 +420,8 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 On this page
 
   * Overview
+  * Keeper Secrets Manager Commands
+  * Example API Flow
   * Create an application
   * Create a New Secret
   * Share the Folder to the Secrets Manager Application
@@ -430,6 +432,8 @@ On this page
   * secrets-manager app create command
   * secrets-manager app get command
   * secrets-manager app remove command
+  * secrets-manager app share command
+  * secrets-manager app unshare command
   * secrets-manager app list command
   * secrets-manager share add command
   * secrets-manager share remove command
@@ -462,8 +466,10 @@ accounts. Common use cases for Secrets Manager include:
 
   * Providing vault access to machines and applications.
 
+  * Rotating service account credentials on-demand or on a schedule
+
 In Keeper Secrets Manager, an "Application" is created for every target
-environment which needs access to a specific folder in the Keeper Vault. An
+environment which needs access to specific folders in the Keeper Vault. An
 Application can be granted access to one ore more Shared Folders or records
 within the vault. An Application can be utilized by one or more "Clients"
 which are individually authenticated and managed by the Secrets Manager
@@ -476,6 +482,83 @@ ID and a Private Key which is used to sign the request.
 
 The commands in this document can be used to configure the Keeper Secrets
 Manager applications and client devices.
+
+###
+
+Keeper Secrets Manager Commands
+
+Whether using the interactive shell, CLI or JSON config file, Keeper supports
+the following commands, each command supports additional parameters and
+options.
+
+To get help on a particular command, run:
+
+`help <command>`
+
+**secrets-manager Command Format**
+
+Keeper Secrets Manager commands follow the format:
+
+`secrets-manager <command> <sub command>`
+
+For example to list all apps use the following command:
+
+`secrets-manager app list`
+
+A list of all secrets-manager commands and details about each are below:
+
+Secrets Manager CLI Command
+
+Description
+
+`secrets-manager app list`
+
+List all Secrets Manager applications to view the App UID, last access and
+number of records/folders assigned.
+
+`secrets-manager app get`
+
+Retrieve detailed information about the application including devices
+
+`secrets-manager app create`
+
+Create a new application
+
+`secrets-manager app remove`
+
+Delete an application
+
+`secrets-manager app share`
+
+Share an application and associated gateways and configurations with another
+user.
+
+`secrets-manager app unshare`
+
+Unshare an application from a user
+
+`secrets-manager client add`
+
+Create a device or machine identity associated with an application
+
+`secrets-manager client remove`
+
+Remove a device
+
+`secrets-manager share add`
+
+Associate a folder or record with an application
+
+`secrets-manager share remove`
+
+Remove a folder or record from an application
+
+###
+
+Example API Flow
+
+Below is an example of creating an application, assigning secrets and creating
+machine devices.
 
 ###
 
@@ -587,70 +670,6 @@ Copy
 
 Commands
 
-####
-
-Keeper Command Reference
-
-Whether using the interactive shell, CLI or JSON config file, Keeper supports
-the following commands, each command supports additional parameters and
-options.
-
-To get help on a particular command, run:
-
-`help <command>`
-
-**secrets-manager Command Format**
-
-Keeper Secrets Manager commands follow the format:
-
-`secrets-manager <command> <sub command>`
-
-For example to list all apps use the following command:
-
-`secrets-manager app list`
-
-A list of all secrets-manager commands and details about each are below
-
-####
-
-All commands associated with Keeper Secrets Manager
-
-Command
-
-Explanation
-
-`secrets-manager app create`
-
-Create an application
-
-`secrets-manager app get`
-
-Display information about a specified application
-
-`secrets-manager app remove`
-
-Remove an application
-
-`secrets-manager app list`
-
-List all applications
-
-`secrets-manager share add`
-
-Add secrets (records or shared folder) to an application
-
-`secrets-manager share remove`
-
-Remove secrets (records or shared folder) from an application
-
-`secrets-manager client add`
-
-Add client to an application
-
-`secrets-manager client remove`
-
-Remove a client from an application
-
 ###
 
 secrets-manager app create command
@@ -743,7 +762,54 @@ Copy
     	Are you sure you want to delete this application [y/n]: >? y
     >? y
     Removed Application uid: KtU4eAzor5IpqRW3x4A8FA
+
+###
+
+secrets-manager app share command
+
+Sharing an application to a user provides them with access to Gateways,
+Devices and Folders associated
+
+**Command:**`secrets-manager app share`
+
+**Detail:** Share an application and associated gateways and configurations
+with another user.
+
+**Parameters:**
+
+  * Name or UID of the application
+
+  * Email of the user to share with
+
+**Examples:**
+
+Copy
+
     
+    
+    secrets-manager app share KtU4eAzor5IpqRW3x4A8FA --email user@company.com
+
+###
+
+secrets-manager app unshare command
+
+**Command:**`secrets-manager app unshare`
+
+**Detail:** Unshare an application from a user.
+
+**Parameters:**
+
+  * Name or UID of the application
+
+  * Email of the user to remove from the application
+
+**Examples:**
+
+Copy
+
+    
+    
+    secrets-manager app unshare KtU4eAzor5IpqRW3x4A8FA --email user@company.com
 
 ###
 
@@ -955,7 +1021,7 @@ Copy
 commands/sftp-sync)[NextMSP Management Commands](/en/keeperpam/commander-
 cli/command-reference/msp-management-commands)
 
-Last updated 4 months ago
+Last updated 2 hours ago
 
 Was this helpful?
 

@@ -451,7 +451,7 @@ Keeper Secrets Manager plugin for accessing secrets in TeamCity builds
 manager/integrations/servicenow)[NextTeller](/en/keeperpam/secrets-
 manager/integrations/teller)
 
-Last updated 5 months ago
+Last updated 6 months ago
 
 Was this helpful?
 

@@ -419,14 +419,40 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Commands
+  * audit-log command
+  * audit-report command
+  * user-report command
+  * security-audit-report command
+  * breachwatch report command
+  * share-report command
+  * shared-records-report command
+  * external-shares-report command
+  * msp-legacy-report command
+  * aging-report command
+  * risk-management command
+  * action-report command
+  * compliance-report command
+  * Compliance Team Report
+  * Compliance Record-Access Report
+  * Event Logging to SIEM
+  * Export of Event Logs in Syslog Format
+  * Splunk HTTP Event Collector Push
+  * Sumo Logic HTTP Event Collector Push
+  * Export of Event Logs in JSON Format
+  * Azure Log Analytics
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-McBBp0BzA7bQUJVBZ3N&only=yes&limit=100)
 
-Last updated 6 months ago
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
 
-Was this helpful?
+# Reporting Commands
+
+Commands for audit logging and reporting capabilities
 
 ##
 
@@ -449,6 +475,32 @@ To get help on a particular command, run:
 Command
 
 Explanation
+
+Show users that haven't performed a specific action in a given number of days
+
+Determine which record passwords have NOT been changed in X days
+
+Export the enterprise audit and event logs
+
+Show a customized report of audit events
+
+See information about records in vaults of users across the enterprise
+
+Display information about records shared with external accounts
+
+Display information on managed company plans and available licenses
+
+Show report of password security strength for each user in the enterprise
+
+Show report of Breachwatch security scores for each user in the enterprise
+
+Display information about shared records
+
+Show a report of shared records
+
+Show a report of user logins
+
+Risk Management Reports
 
 ###
 
@@ -502,6 +554,15 @@ record and sets new field value.
 
 **Examples** :
 
+Copy
+
+    
+    
+    audit-log --target=splunk
+    audit-log --record BhRRhjeL4armInSMqv2_zQ --target=json
+    audit-log --record=audit-log-json --target=json --days=30 --node-id=368009977790518
+    audit-log --shared-folder-uid=8oGAJPplH2DFUQ0obwox7Q --target=splunk --record=Splunk-Log
+
   1. Download all event data and push to Splunk endpoint HTTP event collector. Will be prompted to enter Splunk HEC endpoint.
 
   2. Download all event data referencing the record UID and output in JSON format.
@@ -520,6 +581,26 @@ audit-report command
 and summarized formats.
 
 **Event Properties:**
+
+Copy
+
+    
+    
+      id                event ID
+      created           event time
+      username          user that created audit event
+      to_username       user that is audit event target
+      from_username     user that is audit event source
+      ip_address        IP address
+      geo_location      location
+      audit_event_type  audit event type
+      keeper_version    Keeper application
+      channel           2FA channel
+      status            Keeper API result_code
+      record_uid        Record UID
+      shared_folder_uid Shared Folder UID
+      node_id           Node ID (enterprise events only)
+      team_uid          Team UID (enterprise events only)
 
 **Parameters:**
 
@@ -603,6 +684,12 @@ available columns:
 
 Usage: use the full switch for each column
 
+Copy
+
+    
+    
+    audit-report --report-type day --columns username --columns ip_address
+
 \--aggregate <{_occurrences, first_created, last_created_}> aggregated value.
 Can be repeated. (ignored for raw reports)
 
@@ -613,6 +700,12 @@ Can be repeated. (ignored for raw reports)
   * last_created - show the time the most recent occurrence of the event type took place
 
 Usage: use the full switch for each aggregation you would like to show
+
+Copy
+
+    
+    
+    audit-report --report-type day --aggregate occurrences --aggregate last_created
 
 \--timezone <TIMEZONE> return results for specific timezone
 
@@ -660,6 +753,12 @@ example: `"between 2022-01-01 and 2022-06-01"`
 \--geo-location <GEO LOCATION> filter by geo location. Run the following
 command to get the list of available geo locations
 
+Copy
+
+    
+    
+    audit-report --report-type=dim --columns=geo_location
+
 \--ip-address <IP Address> filter by IP Address
 
 Geo location filter has format "[[City, ] State,] Country"
@@ -675,7 +774,19 @@ Example:
 \--ip-address <IP Address> filter by the user's IP Address. For example, to
 find the last 5,000 events coming from a particular IP:
 
+Copy
+
+    
+    
+    audit-report --report-type raw --format csv --limit 5000 --ip-address 11.22.33.44
+
 \--device-type <DEVICE TYPE> Keeper device/application and optional version
+
+Copy
+
+    
+    
+    audit-report --report-type=dim --columns=device_type
 
 Device type filter has format "DeviceType[, Version]"
 
@@ -691,6 +802,19 @@ Example:
 found in local cache
 
 **Examples**
+
+Copy
+
+    
+    
+    audit-report --report-type raw --limit 5000
+    audit-report --report-type raw --report-format fields
+    audit-report --report-type dim --column audit_event_type
+    audit-report --report-type day --column username --column audit_event_type
+    audit-report --report-type hour --aggregate occurrences --column audit_event_type --created today
+    audit-report --report-type=span --event-type=record_add --event-type=record_update --username=user@mydomain.com --column=record_uid --created=last_30_days
+    audit-report --format=table --report-type=day --event-type=open_record --columns username --columns ip_address --columns record_uid --columns record_title --created today
+    audit-report --report-type=span --event-type=open_record --column=username --column=record_title --column=record_url --aggregate=last_created --max-record-details
 
   1. Display an audit report with all events, including messages for each event, showing the last 5000 events.
 
@@ -728,6 +852,14 @@ user-report command
 
 **Examples:**
 
+Copy
+
+    
+    
+    user-report
+    user-report --format csv --output logins.csv --days 30
+    user-report --format csv --output last-logins.csv 
+
   1. Show user login report for the past 365 days
 
   2. Create a user report of the last 30 days and output it in csv format to a file named "logins.csv"
@@ -744,6 +876,25 @@ security-audit-report command
 enterprise
 
 **Report Columns:**
+
+Copy
+
+    
+    
+    My Vault> security-audit-report --syntax-help
+    
+    Security Audit Report Command Syntax Description:
+    
+    Column Name       Description
+      username          user name
+      email             e-mail address
+      weak              number of records whose password strength is in the weak category
+      medium            number of records whose password strength is in the medium category
+      strong            number of records whose password strength is in the strong category
+      reused            number of reused passwords
+      unique            number of unique passwords
+      securityScore     security score
+      twoFactorChannel  2FA - ON/OFF
 
 **Switches:**
 
@@ -779,6 +930,18 @@ is no need to also include the former).
 
 **Examples:**
 
+Copy
+
+    
+    
+    security-audit-report
+    security-audit-report --format json --output security_score.json
+    security-audit-report -b
+    security-audit-report -su
+    security-audit-report -s
+    sar -n Node1
+    security-audit-report --score-type=strong_passwords --save
+
   1. Show security audit report - password strength for each user in the enterprise
 
   2. Create a security audit report and output it in json format to a file named "security_score.json"
@@ -809,6 +972,13 @@ enterprise
 \--output <FILENAME> output to the given filename
 
 **Examples:**
+
+Copy
+
+    
+    
+    breachwatch report
+    bw report --format csv --output breachwatch_report.csv
 
   1. Show Breachwatch-specific security scores
 
@@ -854,6 +1024,17 @@ reports for their company
 
 **Examples:**
 
+Copy
+
+    
+    
+    share-report
+    share-report --record 5R7Ued8#JctulYbBLwM$
+    share-report --format csv --output share_report.csv
+    share-report -e john.doe@gmail.com --owner --share-date -v
+    share-report -o -v Team1_Folder Za2aspMQG9De5In28sc3KA
+    share-report --folders
+
   1. Display shared records report
 
   2. Display share report for the record with the given UID
@@ -891,6 +1072,15 @@ team folders
 
 **Examples:**
 
+Copy
+
+    
+    
+    shared-records-report
+    shared-records-report --format csv
+    shared-records-report --show-team-users 
+    srr --format json -o shared_records.json 'My Shares' Team1/Shares _qsA0AA0XwJkeTVQdijmEg
+
   1. Display information about shared records in table format
 
   2. Display information about shared records in csv format
@@ -923,6 +1113,18 @@ the enterprise. Optionally, delete all external shares.
 -r, --refresh-data Sync and fetch latest data before running report
 
 **Examples:**
+
+Copy
+
+    
+    
+    external-shares-report
+    external-shares-report --format csv --output share_report.csv
+    external-shares-report -a remove
+    external-shares-report -a remove -t direct
+    external-shares-report -a remove -t shared-folder
+    external-shares-report -a remove -f 
+    external-shares-report -r
 
   1. Display all externally shared folders and records
 
@@ -966,6 +1168,15 @@ format: `YYYY-mm-dd` ex. `2021-07-08`
 \--output <FILENAME> file to output the report to
 
 **Examples:**
+
+Copy
+
+    
+    
+    msp-legacy-report
+    msp-legacy-report --range last_30_days
+    msp-legacy-report --from 2021-02-01 --to 2021-03-01
+    msp-legacy-report --format csv --output licenses.csv
 
   1. Show a report of the currently allocated and remaining company licenses
 
@@ -1017,6 +1228,17 @@ longer command execution times)
 
 **Examples:**
 
+Copy
+
+    
+    
+    aging-report --rebuild
+    aging-report --period=1y
+    aging-report --period=3m --format=table --username user@company.com
+    aging-report --exclude-deleted
+    aging-report --in-shared-folder
+    aging-report --cutoff-date 12/31/2020
+
   1. Rebuild the audit and compliance data locally
 
   2. Generate password aging report for passwords not updated in over 1 year period
@@ -1037,6 +1259,17 @@ risk-management command
 
 **Details** : Generate Risk Management reports
 
+Copy
+
+    
+    
+    My Vault> risk-management --help
+    Command    Description
+    ---------  ---------------------------------
+    user       Show Risk Management user report
+    alert      Show Risk management alert report
+    
+
 **Switches:**
 
 `--format <{``_table,json,csv_``}>` format of the report
@@ -1044,6 +1277,13 @@ risk-management command
 `--output <FILENAME>` if you want to save the results to a file
 
 **Examples** :
+
+Copy
+
+    
+    
+    My Vault> risk-management user
+    My Vault> risk-management alert --format=json
 
 ###
 
@@ -1091,15 +1331,51 @@ only to "delete" and "transfer" administrative actions)
 
   1. Show a list of users that haven't logged in within the last 45 days
 
+Copy
+
+    
+    
+    action-report --target no-logon --days-since 45
+
   1. Show a list of user accounts that have remained in a locked status for 60+ days
+
+Copy
+
+    
+    
+    action-report --target locked --days-since 60
 
   1. Show a list of users who have been in an invited status for 15+ days.
 
+Copy
+
+    
+    
+    action-report -t invited -d 15
+
   1. Show a list of users that haven't updated any records in the last 35 days
+
+Copy
+
+    
+    
+    action-report --target no-update --days-since 35
 
   1. Show users that have not set/changed their account security questions within the default timeframe (the last 30 days)
 
+Copy
+
+    
+    
+    action-report -t no-security-question-update
+
   1. Generate a report of users who have not logged in to their account within the last 30 days (the default timeframe when none is specified) that includes the 2fa status, # of teams assigned, # of roles assigned, assigned node, and full name for each user in the report.
+
+Copy
+
+    
+    
+    action-report -t=no-logon --columns=2fa_enabled,team_count,role_count,node,name
 
 ####
 
@@ -1107,9 +1383,27 @@ only to "delete" and "transfer" administrative actions)
 
   1. Delete any users whose accounts have been in invited status for more than 90 days:
 
+Copy
+
+    
+    
+    action-report -t invited -a delete -d 90
+
   1. 
 
+Copy
+
+    
+    
+    action-report -t locked -d 90 -a transfer --target-user destination.vault@email.com
+
   1. Lock all users who haven't logged in within 180 days.
+
+Copy
+
+    
+    
+    action-report -t no-logon -d 180 -a lock
 
 ###
 
@@ -1161,6 +1455,17 @@ flag)
 
 **Examples:**
 
+Copy
+
+    
+    
+    compliance-report
+    compliance-report -u "user@company.com"
+    compliance-report --node "Chicago" -jt "Manager"
+    compliance-report -u "user@company.com" --shared
+    compliance-report --nr --record="AWS MySQL Administrator"  
+    compliance-report --active-items
+
   1. Show the sharing status of all records for all users in the enterprise
 
   2. show the sharing status of records in the vault of user: "user@company.com"
@@ -1200,6 +1505,14 @@ permissions
 -tu, --show-team-users show individual members of each team in the report
 
 **Examples:**
+
+Copy
+
+    
+    
+    compliance team-report
+    compliance team-report --format csv --output "team-report.csv"
+    compliance team-report --show-team-users
 
   1. Show the compliance team report
 
@@ -1244,6 +1557,14 @@ the report
 
 **Examples:**
 
+Copy
+
+    
+    
+    compliance record-access-report user@company.com
+    compliance rar --report-type vault --format csv --output "all_vaults.csv" @all
+    compliance rar --report-type vault --aging user1@company.com user2@company.com
+
   1. Show list of all records that user@company.com has ever accessed
 
   2. Export a CSV file listing all records currently in each user's vault for all users
@@ -1269,7 +1590,26 @@ Commander can export all event logs to a local file in syslog format, or
 export data in incremental files. A Keeper record in your vault is used to
 store a reference to the last event
 
+Copy
+
+    
+    
+    $ keeper shell
+
 To export all events and start tracking the last event time exported:
+
+Copy
+
+    
+    
+    My Vault> audit-log --target=syslog
+    Do you want to create a Keeper record to store audit log settings? [y/n]: y
+    Choose the title for audit log record [Default: Audit Log: Syslog]: 
+    Enter filename for syslog messages.
+    ...              Syslog file name: all_events.log
+    ...          Gzip messages? (y/N): n
+    Exported 3952 audit events
+    My Vault>
 
 This creates a record in your vault (titled "Audit Log: Syslog" in this
 example) which tracks the timestamp of the last exported event and the output
@@ -1278,12 +1618,46 @@ format.
 
 Each subsequent audit log export can be performed with this command:
 
+Copy
+
+    
+    
+    $ keeper audit-log --format=syslog --record=<your record UID>
+
 or from the shell:
+
+Copy
+
+    
+    
+    My Vault> audit-log --target=syslog --record=<your record UID>
 
 To automate the syslog event export every 5 minutes, create a JSON
 configuration file such as this:
 
+Copy
+
+    
+    
+    {
+        "server":"https://keepersecurity.com",
+        "user":"user@company.com",
+        "password":"your_password_here",
+        "mfa_token":"filled_in_by_commander",
+        "mfa_type":"device_token",
+        "debug":false,
+        "plugins":[],
+        "commands":["sync-down","audit-log --target=syslog"],
+        "timedelay":600
+    }
+
 Then run Commander using the config parameter. For example:
+
+Copy
+
+    
+    
+    $ keeper --config=my_config_file.json
 
 ###
 
@@ -1302,23 +1676,88 @@ Please follow the below steps:
 
   * Login to Keeper Commander shell
 
+Copy
+
+    
+    
+    $ keeper shell
+
 Next set up the Splunk integration with Commander. Commander will create a
 record in your vault that stores the provided token and Splunk HTTP Event
 Collector. This will be used to also track the last event captured so that
 subsequent execution will pick up where it left off. Note that the default
 port for HEC is 8088.
 
+Copy
+
+    
+    
+    $ keeper audit-log --format=splunk
+    
+    Do you want to create a Keeper record to store audit log settings? [y/n]: y
+    Choose the title for audit log record [Default: Audit Log: Splunk]: <enter> 
+    
+    Enter HTTP Event Collector (HEC) endpoint in format [host:port].
+    Example: splunk.company.com:8088
+    ...           Splunk HEC endpoint: 192.168.51.41:8088
+    Testing 'https://192.168.51.41:8088/services/collector' ...Found.
+    ...                  Splunk Token: e2449233-4hfe-4449-912c-4923kjf599de
+
 You can find the record UID of the Splunk record for subsequent audit log
 exports:
 
+Copy
+
+    
+    
+    My Vault> search splunk
+    
+      #  Record UID              Title              Login    URL
+    ---  ----------------------  -----------------  -------  -----
+      1  schQd2fOWwNchuSsDEXfEg  Audit Log: Splunk
+
 Each subsequent audit log export can be performed with this command:
 
+Copy
+
+    
+    
+    $ keeper audit-log --format=splunk --record=<your record UID>
+
 or from the shell:
+
+Copy
+
+    
+    
+    My Vault> audit-log --target=splunk --record=<your record UID>
 
 To automate the push of Splunk events every 5 minutes, create a JSON
 configuration file such as this:
 
+Copy
+
+    
+    
+    {
+        "server":"https://keepersecurity.com",
+        "user":"user@company.com",
+        "password":"your_password_here",
+        "mfa_token":"filled_in_by_commander",
+        "mfa_type":"device_token",
+        "debug":false,
+        "plugins":[],
+        "commands":["sync-down","audit-log --target=splunk"],
+        "timedelay":600
+    }
+
 Then run Commander using the config parameter. For example:
+
+Copy
+
+    
+    
+    $ keeper --config=my_config_file.json
 
 ###
 
@@ -1339,10 +1778,22 @@ the below steps:
 
   * Login to Keeper Commander shell
 
+Copy
+
+    
+    
+    $ keeper shell
+
 Next set up the Sumo Logic integration with Commander. Commander will create a
 record in your vault that stores the HTTP Collector information. This will be
 used to also track the last event captured so that subsequent execution will
 pick up where it left off.
+
+Copy
+
+    
+    
+    $ keeper audit-log --format=sumo
 
 When asked for “HTTP Collector URL:” paste the URL captured from the Sumo
 interface above.
@@ -1351,14 +1802,58 @@ After this step, there will be a record in your vault used for tracking the
 event data integration. You can find the record UID of the Sumo record for
 subsequent audit log exports:
 
+Copy
+
+    
+    
+    My Vault> search sumo
+    
+      #  Record UID              Title              Login    URL
+    ---  ----------------------  -----------------  -------  -----
+      1  schQd2fOWwNchuSsDEXfEg  Audit Log: Sumo
+
 Each subsequent audit log export can be performed with this command:
 
+Copy
+
+    
+    
+    $ keeper audit-log --format=sumo --record=<your record UID>
+
 or from the shell:
+
+Copy
+
+    
+    
+    My Vault> audit-log --target=sumo --record=<your record UID>
 
 To automate the push of Sumo Logic events every 5 minutes, create a JSON
 configuration file such as this:
 
+Copy
+
+    
+    
+    {
+        "server":"https://keepersecurity.com",
+        "user":"user@company.com",
+        "password":"your_password_here",
+        "mfa_token":"filled_in_by_commander",
+        "mfa_type":"device_token",
+        "debug":false,
+        "plugins":[],
+        "commands":["sync-down","audit-log --target=sumo"],
+        "timedelay":600
+    }
+
 Then run Commander using the config parameter. For example:
+
+Copy
+
+    
+    
+    $ keeper --config=my_config_file.json
 
 ###
 
@@ -1369,7 +1864,24 @@ file is overwritten with every run of Commander. This kind of export can be
 used with conjunction with other application that process the file. A Keeper
 record in your vault is used to store a reference to the last event.
 
+Copy
+
+    
+    
+    $ keeper shell
+
 To export all events and start tracking the last event time exported:
+
+Copy
+
+    
+    
+    My Vault> audit-log --target=json
+    Do you want to create a Keeper record to store audit log settings? [y/n]: y
+    Choose the title for audit log record [Default: Audit Log: JSON]:
+    JSON file name: all_events.json
+    Exported 3952 audit events
+    My Vault>
 
 This creates a record in your vault (titled "Audit Log: JSON" in this example)
 which tracks the timestamp of the last exported event and the output filename.
@@ -1377,12 +1889,46 @@ Then the event data is exported to the file.
 
 Each subsequent audit log export can be performed with this command:
 
+Copy
+
+    
+    
+    $ keeper audit-log --format=json --record=<your record UID>
+
 or from the shell:
+
+Copy
+
+    
+    
+    My Vault> audit-log --target=json --record=<your record UID>
 
 To automate the JSON event export every 5 minutes, create a JSON configuration
 file such as this:
 
+Copy
+
+    
+    
+    {
+        "server":"https://keepersecurity.com",
+        "user":"user@company.com",
+        "password":"your_password_here",
+        "mfa_token":"filled_in_by_commander",
+        "mfa_type":"device_token",
+        "debug":false,
+        "plugins":[],
+        "commands":["sync-down","audit-log --target=json"],
+        "timedelay":600
+    }
+
 Then run Commander using the config parameter. For example:
+
+Copy
+
+    
+    
+    $ keeper --config=my_config_file.json
 
 ###
 
@@ -1399,10 +1945,22 @@ Please follow the below steps:
 
   * Login to Keeper Commander shell
 
+Copy
+
+    
+    
+    $ keeper shell
+
 Next set up the Log Analytics integration with Commander. Commander will
 create a record in your vault that stores the Log Analytics access
 information. This will be used to also track the last event captured so that
 subsequent execution will pick up where it left off.
+
+Copy
+
+    
+    
+    $ keeper audit-log --format=azure-la
 
 When asked for “Workspace ID:” paste Workspace ID captured from the Advanced
 settings interface above. When asked for “Key:” paste Primary or Secondary key
@@ -1412,14 +1970,66 @@ After this step, there will be a record in your vault used for tracking the
 event data integration. You can find the record UID of the Log Analytics
 record for subsequent audit log exports:
 
+Copy
+
+    
+    
+    My Vault> search analytics
+    
+      #  Record UID              Title                           Login                                 URL
+    ---  ----------------------  ------------------------------  ------------------------------------  -----
+      1  schQd2fOWwNchuSsDEXfEg  Audit Log: Azure Log Analytics  <WORKSPACE GUID>
+
 Each subsequent audit log export can be performed with this command:
 
+Copy
+
+    
+    
+    $ keeper audit-log --format=azure-la --record=<your record UID>
+
 or from the shell:
+
+Copy
+
+    
+    
+    My Vault> audit-log --target=azure-la --record=<your record UID>
 
 To automate the push of events to Azure Log Analytics every 5 minutes, create
 a JSON configuration file such as this:
 
+Copy
+
+    
+    
+    {
+        "server":"https://keepersecurity.com",
+        "user":"user@company.com",
+        "password":"your_password_here",
+        "mfa_token":"filled_in_by_commander",
+        "mfa_type":"device_token",
+        "debug":false,
+        "plugins":[],
+        "commands":["sync-down","audit-log --target=azure-la"],
+        "timedelay":600
+    }
+
 Then run Commander using the config parameter. For example:
+
+Copy
+
+    
+    
+    $ keeper --config=my_config_file.json
+
+[PreviousJSON Import](/en/keeperpam/commander-cli/command-reference/import-
+and-export-commands/json-import)[NextReport Types](/en/keeperpam/commander-
+cli/command-reference/reporting-commands/report-types)
+
+Last updated 6 months ago
+
+Was this helpful?
 
 **Detail:** Download event data from the Advanced Reporting & Alerts Module
 ("ARAM") to your local Commander instance, and then push the events to a SIEM
@@ -1464,590 +2074,6 @@ data into your SIEM solution but it requires that you are utilizing a cloud-
 based SIEM solution. If you need assistance in integrating Keeper into your
 SIEM solution without Commander, please contact our business support team at .
 
-Copy
-
-    
-    
-    audit-log --target=splunk
-    audit-log --record BhRRhjeL4armInSMqv2_zQ --target=json
-    audit-log --record=audit-log-json --target=json --days=30 --node-id=368009977790518
-    audit-log --shared-folder-uid=8oGAJPplH2DFUQ0obwox7Q --target=splunk --record=Splunk-Log
-
-Copy
-
-    
-    
-      id                event ID
-      created           event time
-      username          user that created audit event
-      to_username       user that is audit event target
-      from_username     user that is audit event source
-      ip_address        IP address
-      geo_location      location
-      audit_event_type  audit event type
-      keeper_version    Keeper application
-      channel           2FA channel
-      status            Keeper API result_code
-      record_uid        Record UID
-      shared_folder_uid Shared Folder UID
-      node_id           Node ID (enterprise events only)
-      team_uid          Team UID (enterprise events only)
-
-Copy
-
-    
-    
-    audit-report --report-type day --columns username --columns ip_address
-
-Copy
-
-    
-    
-    audit-report --report-type day --aggregate occurrences --aggregate last_created
-
-Copy
-
-    
-    
-    audit-report --report-type=dim --columns=geo_location
-
-Copy
-
-    
-    
-    audit-report --report-type raw --format csv --limit 5000 --ip-address 11.22.33.44
-
-Copy
-
-    
-    
-    audit-report --report-type=dim --columns=device_type
-
-Copy
-
-    
-    
-    audit-report --report-type raw --limit 5000
-    audit-report --report-type raw --report-format fields
-    audit-report --report-type dim --column audit_event_type
-    audit-report --report-type day --column username --column audit_event_type
-    audit-report --report-type hour --aggregate occurrences --column audit_event_type --created today
-    audit-report --report-type=span --event-type=record_add --event-type=record_update --username=user@mydomain.com --column=record_uid --created=last_30_days
-    audit-report --format=table --report-type=day --event-type=open_record --columns username --columns ip_address --columns record_uid --columns record_title --created today
-    audit-report --report-type=span --event-type=open_record --column=username --column=record_title --column=record_url --aggregate=last_created --max-record-details
-
-Copy
-
-    
-    
-    user-report
-    user-report --format csv --output logins.csv --days 30
-    user-report --format csv --output last-logins.csv 
-
-Copy
-
-    
-    
-    My Vault> security-audit-report --syntax-help
-    
-    Security Audit Report Command Syntax Description:
-    
-    Column Name       Description
-      username          user name
-      email             e-mail address
-      weak              number of records whose password strength is in the weak category
-      medium            number of records whose password strength is in the medium category
-      strong            number of records whose password strength is in the strong category
-      reused            number of reused passwords
-      unique            number of unique passwords
-      securityScore     security score
-      twoFactorChannel  2FA - ON/OFF
-
-Copy
-
-    
-    
-    security-audit-report
-    security-audit-report --format json --output security_score.json
-    security-audit-report -b
-    security-audit-report -su
-    security-audit-report -s
-    sar -n Node1
-    security-audit-report --score-type=strong_passwords --save
-
-Copy
-
-    
-    
-    breachwatch report
-    bw report --format csv --output breachwatch_report.csv
-
-Copy
-
-    
-    
-    share-report
-    share-report --record 5R7Ued8#JctulYbBLwM$
-    share-report --format csv --output share_report.csv
-    share-report -e john.doe@gmail.com --owner --share-date -v
-    share-report -o -v Team1_Folder Za2aspMQG9De5In28sc3KA
-    share-report --folders
-
-Copy
-
-    
-    
-    shared-records-report
-    shared-records-report --format csv
-    shared-records-report --show-team-users 
-    srr --format json -o shared_records.json 'My Shares' Team1/Shares _qsA0AA0XwJkeTVQdijmEg
-
-Copy
-
-    
-    
-    external-shares-report
-    external-shares-report --format csv --output share_report.csv
-    external-shares-report -a remove
-    external-shares-report -a remove -t direct
-    external-shares-report -a remove -t shared-folder
-    external-shares-report -a remove -f 
-    external-shares-report -r
-
-Copy
-
-    
-    
-    msp-legacy-report
-    msp-legacy-report --range last_30_days
-    msp-legacy-report --from 2021-02-01 --to 2021-03-01
-    msp-legacy-report --format csv --output licenses.csv
-
-Copy
-
-    
-    
-    aging-report --rebuild
-    aging-report --period=1y
-    aging-report --period=3m --format=table --username user@company.com
-    aging-report --exclude-deleted
-    aging-report --in-shared-folder
-    aging-report --cutoff-date 12/31/2020
-
-Copy
-
-    
-    
-    My Vault> risk-management --help
-    Command    Description
-    ---------  ---------------------------------
-    user       Show Risk Management user report
-    alert      Show Risk management alert report
-    
-
-Copy
-
-    
-    
-    My Vault> risk-management user
-    My Vault> risk-management alert --format=json
-
-Copy
-
-    
-    
-    action-report --target no-logon --days-since 45
-
-Copy
-
-    
-    
-    action-report --target locked --days-since 60
-
-Copy
-
-    
-    
-    action-report -t invited -d 15
-
-Copy
-
-    
-    
-    action-report --target no-update --days-since 35
-
-Copy
-
-    
-    
-    action-report -t no-security-question-update
-
-Copy
-
-    
-    
-    action-report -t=no-logon --columns=2fa_enabled,team_count,role_count,node,name
-
-Copy
-
-    
-    
-    action-report -t invited -a delete -d 90
-
-Copy
-
-    
-    
-    action-report -t locked -d 90 -a transfer --target-user destination.vault@email.com
-
-Copy
-
-    
-    
-    action-report -t no-logon -d 180 -a lock
-
-Copy
-
-    
-    
-    compliance-report
-    compliance-report -u "user@company.com"
-    compliance-report --node "Chicago" -jt "Manager"
-    compliance-report -u "user@company.com" --shared
-    compliance-report --nr --record="AWS MySQL Administrator"  
-    compliance-report --active-items
-
-Copy
-
-    
-    
-    compliance team-report
-    compliance team-report --format csv --output "team-report.csv"
-    compliance team-report --show-team-users
-
-Copy
-
-    
-    
-    compliance record-access-report user@company.com
-    compliance rar --report-type vault --format csv --output "all_vaults.csv" @all
-    compliance rar --report-type vault --aging user1@company.com user2@company.com
-
-Copy
-
-    
-    
-    $ keeper shell
-
-Copy
-
-    
-    
-    My Vault> audit-log --target=syslog
-    Do you want to create a Keeper record to store audit log settings? [y/n]: y
-    Choose the title for audit log record [Default: Audit Log: Syslog]: 
-    Enter filename for syslog messages.
-    ...              Syslog file name: all_events.log
-    ...          Gzip messages? (y/N): n
-    Exported 3952 audit events
-    My Vault>
-
-Copy
-
-    
-    
-    $ keeper audit-log --format=syslog --record=<your record UID>
-
-Copy
-
-    
-    
-    My Vault> audit-log --target=syslog --record=<your record UID>
-
-Copy
-
-    
-    
-    {
-        "server":"https://keepersecurity.com",
-        "user":"user@company.com",
-        "password":"your_password_here",
-        "mfa_token":"filled_in_by_commander",
-        "mfa_type":"device_token",
-        "debug":false,
-        "plugins":[],
-        "commands":["sync-down","audit-log --target=syslog"],
-        "timedelay":600
-    }
-
-Copy
-
-    
-    
-    $ keeper --config=my_config_file.json
-
-Copy
-
-    
-    
-    $ keeper shell
-
-Copy
-
-    
-    
-    $ keeper audit-log --format=splunk
-    
-    Do you want to create a Keeper record to store audit log settings? [y/n]: y
-    Choose the title for audit log record [Default: Audit Log: Splunk]: <enter> 
-    
-    Enter HTTP Event Collector (HEC) endpoint in format [host:port].
-    Example: splunk.company.com:8088
-    ...           Splunk HEC endpoint: 192.168.51.41:8088
-    Testing 'https://192.168.51.41:8088/services/collector' ...Found.
-    ...                  Splunk Token: e2449233-4hfe-4449-912c-4923kjf599de
-
-Copy
-
-    
-    
-    My Vault> search splunk
-    
-      #  Record UID              Title              Login    URL
-    ---  ----------------------  -----------------  -------  -----
-      1  schQd2fOWwNchuSsDEXfEg  Audit Log: Splunk
-
-Copy
-
-    
-    
-    $ keeper audit-log --format=splunk --record=<your record UID>
-
-Copy
-
-    
-    
-    My Vault> audit-log --target=splunk --record=<your record UID>
-
-Copy
-
-    
-    
-    {
-        "server":"https://keepersecurity.com",
-        "user":"user@company.com",
-        "password":"your_password_here",
-        "mfa_token":"filled_in_by_commander",
-        "mfa_type":"device_token",
-        "debug":false,
-        "plugins":[],
-        "commands":["sync-down","audit-log --target=splunk"],
-        "timedelay":600
-    }
-
-Copy
-
-    
-    
-    $ keeper --config=my_config_file.json
-
-Copy
-
-    
-    
-    $ keeper shell
-
-Copy
-
-    
-    
-    $ keeper audit-log --format=sumo
-
-Copy
-
-    
-    
-    My Vault> search sumo
-    
-      #  Record UID              Title              Login    URL
-    ---  ----------------------  -----------------  -------  -----
-      1  schQd2fOWwNchuSsDEXfEg  Audit Log: Sumo
-
-Copy
-
-    
-    
-    $ keeper audit-log --format=sumo --record=<your record UID>
-
-Copy
-
-    
-    
-    My Vault> audit-log --target=sumo --record=<your record UID>
-
-Copy
-
-    
-    
-    {
-        "server":"https://keepersecurity.com",
-        "user":"user@company.com",
-        "password":"your_password_here",
-        "mfa_token":"filled_in_by_commander",
-        "mfa_type":"device_token",
-        "debug":false,
-        "plugins":[],
-        "commands":["sync-down","audit-log --target=sumo"],
-        "timedelay":600
-    }
-
-Copy
-
-    
-    
-    $ keeper --config=my_config_file.json
-
-Copy
-
-    
-    
-    $ keeper shell
-
-Copy
-
-    
-    
-    My Vault> audit-log --target=json
-    Do you want to create a Keeper record to store audit log settings? [y/n]: y
-    Choose the title for audit log record [Default: Audit Log: JSON]:
-    JSON file name: all_events.json
-    Exported 3952 audit events
-    My Vault>
-
-Copy
-
-    
-    
-    $ keeper audit-log --format=json --record=<your record UID>
-
-Copy
-
-    
-    
-    My Vault> audit-log --target=json --record=<your record UID>
-
-Copy
-
-    
-    
-    {
-        "server":"https://keepersecurity.com",
-        "user":"user@company.com",
-        "password":"your_password_here",
-        "mfa_token":"filled_in_by_commander",
-        "mfa_type":"device_token",
-        "debug":false,
-        "plugins":[],
-        "commands":["sync-down","audit-log --target=json"],
-        "timedelay":600
-    }
-
-Copy
-
-    
-    
-    $ keeper --config=my_config_file.json
-
-Copy
-
-    
-    
-    $ keeper shell
-
-Copy
-
-    
-    
-    $ keeper audit-log --format=azure-la
-
-Copy
-
-    
-    
-    My Vault> search analytics
-    
-      #  Record UID              Title                           Login                                 URL
-    ---  ----------------------  ------------------------------  ------------------------------------  -----
-      1  schQd2fOWwNchuSsDEXfEg  Audit Log: Azure Log Analytics  <WORKSPACE GUID>
-
-Copy
-
-    
-    
-    $ keeper audit-log --format=azure-la --record=<your record UID>
-
-Copy
-
-    
-    
-    My Vault> audit-log --target=azure-la --record=<your record UID>
-
-Copy
-
-    
-    
-    {
-        "server":"https://keepersecurity.com",
-        "user":"user@company.com",
-        "password":"your_password_here",
-        "mfa_token":"filled_in_by_commander",
-        "mfa_type":"device_token",
-        "debug":false,
-        "plugins":[],
-        "commands":["sync-down","audit-log --target=azure-la"],
-        "timedelay":600
-    }
-
-Copy
-
-    
-    
-    $ keeper --config=my_config_file.json
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-
-# Reporting Commands
-
-Commands for audit logging and reporting capabilities
-
-[PreviousJSON Import](/en/keeperpam/commander-cli/command-reference/import-
-and-export-commands/json-import)[NextReport Types](/en/keeperpam/commander-
-cli/command-reference/reporting-commands/report-types)
-
-  * Commands
-  * audit-log command
-  * audit-report command
-  * user-report command
-  * security-audit-report command
-  * breachwatch report command
-  * share-report command
-  * shared-records-report command
-  * external-shares-report command
-  * msp-legacy-report command
-  * aging-report command
-  * risk-management command
-  * action-report command
-  * compliance-report command
-  * Compliance Team Report
-  * Compliance Record-Access Report
-  * Event Logging to SIEM
-  * Export of Event Logs in Syslog Format
-  * Splunk HTTP Event Collector Push
-  * Sumo Logic HTTP Event Collector Push
-  * Export of Event Logs in JSON Format
-  * Azure Log Analytics
-
 [SIEM export](https://docs.keeper.io/enterprise-guide/event-reporting)
 
 [see this link](https://docs.keeper.io/enterprise-guide/event-reporting)
@@ -2090,32 +2116,6 @@ reference/enterprise-management-commands/compliance-commands)
 reporting>[](https://docs.keeper.io/enterprise-guide/event-reporting)
 
 [business.support@keepersecurity.com](mailto:business.support@keepersecurity.com)
-
-Show users that haven't performed a specific action in a given number of days
-
-Determine which record passwords have NOT been changed in X days
-
-Export the enterprise audit and event logs
-
-Show a customized report of audit events
-
-See information about records in vaults of users across the enterprise
-
-Display information about records shared with external accounts
-
-Display information on managed company plans and available licenses
-
-Show report of password security strength for each user in the enterprise
-
-Show report of Breachwatch security scores for each user in the enterprise
-
-Display information about shared records
-
-Show a report of shared records
-
-Show a report of user logins
-
-Risk Management Reports
 
 [`breachwatch report`](https://docs.keeper.io/secrets-manager/commander-
 cli/command-reference/reporting-commands#breachwatch-report-command)

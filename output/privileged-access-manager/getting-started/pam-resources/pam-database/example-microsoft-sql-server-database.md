@@ -387,36 +387,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview
@@ -443,15 +413,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=o86nMLW9svWr2eZdKeiv&only=yes&limit=100)
 
 Configuring Microsoft SQL Server DB as a PAM Database Record
 
-[PreviousExample: PostgreSQL Database](/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-database/example-postgresql-
-database)[NextPAM Directory](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-directory)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 ##
 
 Overview
@@ -465,7 +426,9 @@ Prerequisites
 
 Prior to proceeding with this guide, make sure you have
 
-  1.   2. 
+  1. [Installed and configured the Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways/one-time-access-token)
+
+  2. [Set up a PAM Configuration for your target Environment ](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
 
 ##
 
@@ -607,6 +570,10 @@ The **Admin Credential Record** in the PAM Database links a user to the PAM
 Database record in your Keeper Vault. This linked user is used for
 authenticating the connection when clicking "Launch".
 
+User Accounts are configured on the PAM User record. Visit this
+[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user) for more information.
+
 ####
 
 Setting a Non Admin User as the Administrative Credential Record
@@ -628,7 +595,7 @@ be shared. For example, if the PAM Database is configured with a Microsoft SQL
 Database, the recipient can connect to the database without having direct
 access to the linked credentials.
 
-  * 
+  * Learn more about [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
 
 ###
 
@@ -638,29 +605,51 @@ The Microsoft SQL Database record is set up. The user with the ability to
 launch connections can now launch an interactive SQL connection or tunnel to
 the target database.
 
+[PreviousExample: PostgreSQL Database](/en/keeperpam/privileged-access-
+manager/getting-started/pam-resources/pam-database/example-postgresql-
+database)[NextPAM Directory](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-directory)
+
+Last updated 3 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 **Required** Visit this  for more details
 
 See
 
 See this  for SQL Server protocol settings We recommend specifying the
 **Connection Port** at a minimum. E.g. "**1433** " for SQL Server.
-
-User Accounts are configured on the PAM User record. Visit this  for more
-information.
-
-Learn more about
-
-[Installed and configured the Keeper Gateway](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/one-time-access-token)
-
-[Set up a PAM Configuration for your target Environment
-](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
-
-[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
-[Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-
-started/sharing-and-access-control)
 
 [session recording](/en/keeperpam/privileged-access-manager/session-recording-
 and-playback)

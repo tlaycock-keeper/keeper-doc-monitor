@@ -444,7 +444,7 @@ Graphical and Text Based Session Recordings
 browser-isolation/setting-up-rbi/browser-autofill)[NextSSH
 Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
 
-Last updated 12 days ago
+Last updated 13 days ago
 
 Was this helpful?
 
@@ -674,9 +674,23 @@ enforcement policies need to be turned on:
 
 For more information on PAM enforcement policies, visit this .
 
+Enforcement Policies to configure session recording
+
 To enable session recordings, the  needs to permit graphical and text session
 recording. Go to Secrets Manager > PAM Configurations and edit the
 configuration associated with your resources.
+
+Allow Session Recording from PAM Configuration
+
+Edit PAM Settings
+
+Edit Session Recording Features
+
+View Session Recordings
+
+Session Recording History
+
+View Session Recording
 
 [PAM Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-
 started/enforcement-policies)
@@ -691,20 +705,6 @@ started/pam-configuration)
 
 [**Remote Browser Isolation (RBI)**](/en/keeperpam/privileged-access-
 manager/remote-browser-isolation)
-
-Enforcement Policies to configure session recording
-
-Allow Session Recording from PAM Configuration
-
-Edit PAM Settings
-
-Edit Session Recording Features
-
-View Session Recordings
-
-Session Recording History
-
-View Session Recording
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

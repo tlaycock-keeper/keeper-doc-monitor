@@ -387,36 +387,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview
@@ -533,7 +503,9 @@ Setup
 
   * Update Commander
 
-    *   * Set Persistent Login
+    * Before getting started, be sure that you have the most up-to-date version of Commander. Find the most recent release on the [GitHub releases page](https://github.com/Keeper-Security/Commander/releases).
+
+  * Set Persistent Login
 
     * Persistent login will allow Commander to run commands without needing you to login between each call. To enable persistent login, run the following commands in Keeper Commander:
 
@@ -719,6 +691,12 @@ creating a new enterprise.
 
 Creating User Accounts From a File
 
+To use the `create-user` command with a list of email addresses from a file,
+follow the [steps above](/en/keeperpam/commander-cli/command-
+reference/enterprise-management-commands/creating-and-inviting-users#example-
+invite-users-from-email-addresses-in-a-file) for the `enterprise-user` command
+and swap out that command with `create-user`
+
 For example:
 
 Windows Command Prompt
@@ -748,37 +726,54 @@ Last updated 1 year ago
 
 Was this helpful?
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 _Find more information in the_
 
-Before getting started, be sure that you have the most up-to-date version of
-Commander. Find the most recent release on the .
-
-_For more information on persistent login and options, see the_ _._
+ _For more information on persistent login and options, see the_ _._
 
 _See more information about this command in the_
 
-To use the `create-user` command with a list of email addresses from a file,
-follow the  for the `enterprise-user` command and swap out that command with
-`create-user`
-
-[GitHub releases page](https://github.com/Keeper-Security/Commander/releases)
-
-[steps above](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands/creating-and-inviting-users#example-invite-users-from-
-email-addresses-in-a-file)
-
 [_documentation page_](/en/keeperpam/commander-cli/commander-installation-
 setup/logging-in#persistent-login)
-
-User invite email
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9PQAwVuLYXbONMjioaMg%252Fimage.png%3Falt%3Dmedia%26token%3D999cd7c4-3b38-4081-9fe3-857919c24c9d&width=768&dpr=4&quality=100&sign=a890c97c&sv=2)
 
 [_command documentation._](/en/keeperpam/commander-cli/command-
 reference/enterprise-management-commands#enterprise-user-command)
 
 [_command documentation_](/en/keeperpam/commander-cli/command-
 reference/enterprise-management-commands#create-user-command)
+
+User invite email
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9PQAwVuLYXbONMjioaMg%252Fimage.png%3Falt%3Dmedia%26token%3D999cd7c4-3b38-4081-9fe3-857919c24c9d&width=768&dpr=4&quality=100&sign=a890c97c&sv=2)
 

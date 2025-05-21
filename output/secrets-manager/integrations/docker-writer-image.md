@@ -445,7 +445,7 @@ A general purpose docker image to retrieve secrets.
 runtime)[NextEntrust HSM Encryption](/en/keeperpam/secrets-
 manager/integrations/entrust-hsm)
 
-Last updated 2 months ago
+Last updated 3 months ago
 
 Was this helpful?
 

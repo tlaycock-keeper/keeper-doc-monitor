@@ -424,18 +424,6 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-Mf4pGN5y0sCTAGU3WgV&only=yes&limit=100)
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
-
-# Automatic Execution
-
-Automatic password rotation with Commander
-
-[PreviousActive Directory Plugin](/en/keeperpam/commander-cli/command-
-reference/plugins/active-directory-plugin)[NextService Mode REST
-API](/en/keeperpam/commander-cli/service-mode-rest-api)
-
 Last updated 4 months ago
 
 Was this helpful?
@@ -451,6 +439,27 @@ Commander configuration file
 
 **Example:**
 
+In this example, we are telling Commander to first download and decrypt
+records, then rotate the password (record UID iaOXP1fnApRh5DbaRd7MWA) using
+the plugin programmed into the record. To locate the Record UID, simply view
+it on the commander interactive shell or view it on the Keeper Web Vault and
+Desktop App (as seen below).
+
+For more information on running Commander commands with a configuration file,
+see the
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
+
+# Automatic Execution
+
+Automatic password rotation with Commander
+
+[PreviousActive Directory Plugin](/en/keeperpam/commander-cli/command-
+reference/plugins/active-directory-plugin)[NextService Mode REST
+API](/en/keeperpam/commander-cli/service-mode-rest-api)
+
 Copy
 
     
@@ -461,25 +470,16 @@ Copy
         "commands":["d", "r iaOXP1fnApRh5DbaRd7MWA"]
     }
 
-In this example, we are telling Commander to first download and decrypt
-records, then rotate the password (record UID iaOXP1fnApRh5DbaRd7MWA) using
-the plugin programmed into the record. To locate the Record UID, simply view
-it on the commander interactive shell or view it on the Keeper Web Vault and
-Desktop App (as seen below).
-
-Locate Record UID
-
-For more information on running Commander commands with a configuration file,
-see the
-
-[documentation](/en/keeperpam/commander-cli/commander-installation-
-setup/logging-in#running-commands-from-the-configuration-file)
-
 [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
 rotation)
 
 [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
 commands)
+
+[documentation](/en/keeperpam/commander-cli/commander-installation-
+setup/logging-in#running-commands-from-the-configuration-file)
+
+Locate Record UID
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

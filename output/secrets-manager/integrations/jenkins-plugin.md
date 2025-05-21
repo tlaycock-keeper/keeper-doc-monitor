@@ -415,7 +415,7 @@ Keeper Secrets Manager integration into Jenkins for dynamic secrets retrieval
 Connection Manager](/en/keeperpam/secrets-manager/integrations/keeper-
 connection-manager)
 
-Last updated 5 months ago
+Last updated 6 months ago
 
 Was this helpful?
 
@@ -475,7 +475,9 @@ utilize this integration, you will need:
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * [A One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
+  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
+
+    *   * [A One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
 
 The plugin uses **SecureRandom** which can be slow on certain systems due too
 low entropy. On Linux, executing `cat /proc/sys/kernel/random/entropy_avail`
@@ -699,21 +701,16 @@ The environmental variables containing the secrets are only accessible within
 the **withKsm** block where they are defined. Once you exit the block, the
 secrets are not accessible.
 
-A Keeper  with secrets shared to it
-
 See the  for instructions on creating an Application
 
 For more information on creating Secrets Manager Applications and Clients, see
 the  documentation.
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 [Secrets Manager Commands](/en/keeperpam/commander-cli/command-
 reference/secrets-manager-commands#overview)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -734,12 +731,12 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fa4n3YHq8m
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkEQ5PBLojjvL1P8vo5%252F-MkEQP2hhyxKSU0SVFoL%252Fjenkins-
-plugin-
-header.jpg%3Falt%3Dmedia%26token%3D7f925417-5968-47b7-a39c-883ef7fbc555&width=768&dpr=4&quality=100&sign=95b5cb1c&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MlMTSx8rstZWwFAz2Sd%252F-MlMTsJ1VgQqwrC2mEPd%252Fcred_add.png%3Falt%3Dmedia%26token%3D8b50d7cd-
+adc7-4a49-8109-097f63e77c76&width=768&dpr=4&quality=100&sign=6befa0ca&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MlMTSx8rstZWwFAz2Sd%252F-MlMTsJ1VgQqwrC2mEPd%252Fcred_add.png%3Falt%3Dmedia%26token%3D8b50d7cd-
-adc7-4a49-8109-097f63e77c76&width=768&dpr=4&quality=100&sign=6befa0ca&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkEQ5PBLojjvL1P8vo5%252F-MkEQP2hhyxKSU0SVFoL%252Fjenkins-
+plugin-
+header.jpg%3Falt%3Dmedia%26token%3D7f925417-5968-47b7-a39c-883ef7fbc555&width=768&dpr=4&quality=100&sign=95b5cb1c&sv=2)
 

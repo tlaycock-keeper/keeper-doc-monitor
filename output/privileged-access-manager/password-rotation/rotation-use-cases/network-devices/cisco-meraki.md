@@ -919,6 +919,12 @@ examples/rotate-credential-via-rest-api#step-5-python-environment-setup)
 [Python script ](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/network-devices/cisco-meraki#python-script)
 
+[https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
+Scripts/blob/main/cisco-
+meraki/update_meraki_user.pygithub.com](https://github.com/Keeper-
+Security/Zero-Trust-KeeperPAM-Scripts/blob/main/cisco-
+meraki/update_meraki_user.py)
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNVZBigfLQkEqpo7NRbCm%252Fkeeper%252Bcisco.jpg%3Falt%3Dmedia%26token%3D0c55f048-b8f9-4a31-b85a-a35704785196&width=768&dpr=4&quality=100&sign=d38663cf&sv=2)
@@ -950,10 +956,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRoVLFYb2o
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNJlysf3o7YpCNYYAcOIj%252FmerakiRecord2.png%3Falt%3Dmedia%26token%3D3dfdf243-12cd-4fcd-a737-21d0c43f5653&width=768&dpr=4&quality=100&sign=888d0fa6&sv=2)
-
-[https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
-Scripts/blob/main/cisco-
-meraki/update_meraki_user.pygithub.com](https://github.com/Keeper-
-Security/Zero-Trust-KeeperPAM-Scripts/blob/main/cisco-
-meraki/update_meraki_user.py)
 

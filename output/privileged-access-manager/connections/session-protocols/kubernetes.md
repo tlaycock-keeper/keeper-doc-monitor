@@ -434,19 +434,10 @@ PAM Record
 
 Definition
 
-[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
-
 The PAM Configuration contains information of your target infrastructure
-
-[PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine) Record
 
 The PAM Machine record contains information of the endpoint you want to
 establish a Kubernetes REST API connection to.
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user) Record
 
 The PAM User record contains the user credentials that will be used to connect
 to the endpoint
@@ -533,13 +524,6 @@ certificates are validated.
 
 Certificate Authority Certificate
 
-The certificate of the certificate authority that signed the certificate of
-the Kubernetes server, in PEM format. If omitted, verification of the
-Kubernetes server certificate will use only [system-wide certificate
-authorities.](https://access.redhat.com/documentation/en-
-us/red_hat_enterprise_linux/7/html/security_guide/sec-shared-system-
-certificates)
-
 Client Certificate
 
 The certificate to use if performing SSL/TLS client authentication to
@@ -573,7 +557,7 @@ manager/connections/session-protocols/telnet-connections)[NextRBI
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/rbi-connections)
 
-Last updated 18 hours ago
+Last updated 1 day ago
 
 Was this helpful?
 
@@ -607,16 +591,27 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
-For this protocol, both graphical and the full, raw text text content of
-terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this .
+Record
 
-  * Learn more about 
+Record
 
-[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+The certificate of the certificate authority that signed the certificate of
+the Kubernetes server, in PEM format. If omitted, verification of the
+Kubernetes server certificate will use only
 
-[Session Recording and Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
+[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)
+
+[PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
+[system-wide certificate
+authorities.](https://access.redhat.com/documentation/en-
+us/red_hat_enterprise_linux/7/html/security_guide/sec-shared-system-
+certificates)
 
 Field
 
@@ -631,6 +626,17 @@ Administrative Credential Record
 
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
+
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this .
+
+  * Learn more about 
+
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+
+[Session Recording and Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)

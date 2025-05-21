@@ -419,33 +419,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview 
-  * Records, Record Types and Resources
-  * Folders and Shared Folders
-  * Application
-  * Device
-  * Gateway
-  * Configuration
-  * PAM Resources
-  * PAM Users
-  * Activating PAM Features
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=L6p8QWE1dUUedIuZelpF&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-
-# Vault Structure
-
-Understanding the Keeper Vault structure and organization for KeeperPAM
-
-[PreviousEnforcement Policies](/en/keeperpam/privileged-access-
-manager/getting-started/enforcement-policies)[NextRecord
-Linking](/en/keeperpam/privileged-access-manager/getting-started/record-
-linking)
 
 Last updated 3 months ago
 
@@ -616,20 +593,6 @@ Machine, Database, Directory, etc.
 
 Visit the pages linked below to learn more about each PAM Resource:
 
-PAM Record Type
-
-Supported Assets
-
-Windows, Linux, macOS devices, VMs, EC2 instances, Azure VMs, Network devices
-and other operating systems.
-
-MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
-
-Active Directory, Azure AD, OpenLDAP
-
-Web-based Applications, self-hosted apps, cloud apps, any http or https
-target.
-
 * * *
 
 ###
@@ -662,32 +625,37 @@ utilizing PAM features is described in the below sections.
 
   *   *   *   *   * 
 
-Typical Folder Setup for KeeperPAM
-
-Linked Credentials in the Users folder
-
-Human users with access to a Shared Folder
-
-Applications and Machines with access to a Shared Folder
-
 The fastest way to understand the relationship between records, folders,
 applications and configurations is using the . This wizard instantly creates a
 sandbox environment where you can work with the different resources and vault
 records.
 
-Secrets Manager Applications
+PAM Record Type
 
-Devices
+Supported Assets
 
-Keeper Gateway
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
 
-PAM Configuration
+# Vault Structure
 
-Creating a PAM Resource
+Understanding the Keeper Vault structure and organization for KeeperPAM
 
-PAM User linked to PAM Resource
+[PreviousEnforcement Policies](/en/keeperpam/privileged-access-
+manager/getting-started/enforcement-policies)[NextRecord
+Linking](/en/keeperpam/privileged-access-manager/getting-started/record-
+linking)
 
-PAM User settings
+  * Overview 
+  * Records, Record Types and Resources
+  * Folders and Shared Folders
+  * Application
+  * Device
+  * Gateway
+  * Configuration
+  * PAM Resources
+  * PAM Users
+  * Activating PAM Features
 
 [Accessing the KeeperPAM Console and Vault](/en/keeperpam/privileged-access-
 manager/setup-steps)
@@ -721,6 +689,50 @@ resources/pam-user)
 browser-isolation)
 
 [Discovery](/en/keeperpam/privileged-access-manager/discovery)
+
+Windows, Linux, macOS devices, VMs, EC2 instances, Azure VMs, Network devices
+and other operating systems.
+
+MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
+
+Active Directory, Azure AD, OpenLDAP
+
+Web-based Applications, self-hosted apps, cloud apps, any http or https
+target.
+
+[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
+
+[PAM Database ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database)
+
+[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-directory)
+
+[PAM Remote Browser ](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-remote-browser)
+
+Typical Folder Setup for KeeperPAM
+
+Linked Credentials in the Users folder
+
+Human users with access to a Shared Folder
+
+Applications and Machines with access to a Shared Folder
+
+Secrets Manager Applications
+
+Devices
+
+Keeper Gateway
+
+PAM Configuration
+
+Creating a PAM Resource
+
+PAM User linked to PAM Resource
+
+PAM User settings
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -773,16 +785,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCIJ4xtf2T
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuUwDOjhl0r67wyzFe4wc%252FScreenshot%25202024-12-26%2520at%25201.53.33%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D62dfded2-1db2-4075-9fa9-8c5a5f95bc67&width=768&dpr=4&quality=100&sign=e69a750d&sv=2)
-
-[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
-[PAM Database ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database)
-
-[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-directory)
-
-[PAM Remote Browser ](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-remote-browser)
 

@@ -544,13 +544,13 @@ Output
 After rotation is completed, the new password will be stored in the `Password`
 field of the record
 
-Keeper Record setup for Unix passwd rotation
-
 [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
 rotation)
 
 [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
 commands)
+
+Keeper Record setup for Unix passwd rotation
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
