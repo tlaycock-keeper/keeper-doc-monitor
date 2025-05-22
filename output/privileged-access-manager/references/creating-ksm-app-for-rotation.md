@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -387,32 +388,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Setup KSM
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=3Uoyio5gnT7neL5zeZFT&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
-
-# Creating KSM App for Rotation
-
-Steps to create a Keeper Secrets Manager application for rotation of passwords
-
-[PreviousInstalling Docker on Linux](/en/keeperpam/privileged-access-
-manager/references/installing-docker-on-linux)[NextActive Directory Least
-Privilege](/en/keeperpam/privileged-access-manager/references/active-
-directory-least-privilege)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -443,6 +418,32 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Overview
+  * Setup KSM
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=3Uoyio5gnT7neL5zeZFT&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
+
+# Creating KSM App for Rotation
+
+Steps to create a Keeper Secrets Manager application for rotation of passwords
+
+[PreviousInstalling Docker on Linux](/en/keeperpam/privileged-access-
+manager/references/installing-docker-on-linux)[NextActive Directory Least
+Privilege](/en/keeperpam/privileged-access-manager/references/active-
+directory-least-privilege)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -450,13 +451,11 @@ Overview
 Prior to working with Rotation, you need to create a KSM application. For more
 information on KSM, visit:
 
-[About KSM](/en/keeperpam/secrets-manager/about)
-
 ##
 
 Setup KSM
 
-  1. In the Keeper Web Vault or Desktop App user interface, create a shared folder. This shared folder will contain the PAM records you will create as you are working through the [use-case](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases) guides.
+  1. In the Keeper Web Vault or Desktop App user interface, create a shared folder. This shared folder will contain the PAM records you will create as you are working through the  guides.
 
   2. Navigate to the "Secret Managers" tab on the left and click on "Create Application" to create a KSM application
 
@@ -473,6 +472,11 @@ Setup KSM
 You can safely ignore the first One-Time Access Token generated for the newly
 created KSM application. When creating a Keeper Gateway device, a different
 One-Time Access Token will be created.
+
+[About KSM](/en/keeperpam/secrets-manager/about)
+
+[use-case](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases)
 
 Create a KSM Application
 

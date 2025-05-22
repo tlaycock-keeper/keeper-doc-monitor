@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -425,6 +426,7 @@ On this page
   * Enforcement Policies
   * Activating Session Recording
   * Connections - Session Playback
+  * AI Session Activity
   * Playback Graphical Session Recordings
   * Playback Text Session Recordings (Typescript)
   * Encryption of Session Recordings
@@ -444,7 +446,7 @@ Graphical and Text Based Session Recordings
 browser-isolation/setting-up-rbi/browser-autofill)[NextSSH
 Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
 
-Last updated 13 days ago
+Last updated 7 hours ago
 
 Was this helpful?
 
@@ -609,6 +611,10 @@ sessions. Each session includes:
 
 ###
 
+AI Session Activity
+
+###
+
 Playback Graphical Session Recordings
 
 To playback Graphical Session recordings, click the **Play** icon next to the
@@ -674,11 +680,30 @@ enforcement policies need to be turned on:
 
 For more information on PAM enforcement policies, visit this .
 
-Enforcement Policies to configure session recording
-
 To enable session recordings, the  needs to permit graphical and text session
 recording. Go to Secrets Manager > PAM Configurations and edit the
 configuration associated with your resources.
+
+When  is activated on a resource, Keeper provides additional searching and
+analysis of the session activity.
+
+[PAM Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-
+started/enforcement-policies)
+
+[page](/en/keeperpam/privileged-access-manager/getting-started/enforcement-
+policies)
+
+[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)
+
+[KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
+
+[**Keeper Connections**](/en/keeperpam/privileged-access-manager/connections)
+
+[**Remote Browser Isolation (RBI)**](/en/keeperpam/privileged-access-
+manager/remote-browser-isolation)
+
+Enforcement Policies to configure session recording
 
 Allow Session Recording from PAM Configuration
 
@@ -691,20 +716,6 @@ View Session Recordings
 Session Recording History
 
 View Session Recording
-
-[PAM Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-
-started/enforcement-policies)
-
-[page](/en/keeperpam/privileged-access-manager/getting-started/enforcement-
-policies)
-
-[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
-
-[**Keeper Connections**](/en/keeperpam/privileged-access-manager/connections)
-
-[**Remote Browser Isolation (RBI)**](/en/keeperpam/privileged-access-
-manager/remote-browser-isolation)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

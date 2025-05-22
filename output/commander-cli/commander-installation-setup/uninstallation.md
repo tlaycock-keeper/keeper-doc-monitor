@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -505,12 +506,12 @@ to uninstall:
 and-programs-in-
 windows-4b55f974-2cc6-2d2b-d092-5905080eaf98#ID0EBD=Windows_10)
 
+[binary](/en/keeperpam/commander-cli/commander-installation-
+setup/installation-on-mac#binary-installation-recommended)
+
 [Windows binary,](/en/keeperpam/commander-cli/commander-installation-
 setup/installation-on-windows#typical-binary-installation-recommended)
 
 [pip3](/en/keeperpam/commander-cli/commander-installation-setup/installation-
 on-linux#installing-python)
-
-[binary](/en/keeperpam/commander-cli/commander-installation-
-setup/installation-on-mac#binary-installation-recommended)
 

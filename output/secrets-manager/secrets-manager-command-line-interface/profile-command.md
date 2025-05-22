@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -544,6 +545,10 @@ Usage of `KSM_CLI_TOKEN` environment variable to provide one-time token allows
 for selecting a custom INI file and custom profile _(to create/overwrite)_ and
 can be overridden by `--token` option from command line.
 
+As described in the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-
+start-guide), you can create a token from the Commander CLI or from the Keeper
+Vault interface. For example:
+
 Copy
 
     
@@ -570,6 +575,13 @@ There are 3 ways of integrating with external storage providers like AWS:
 ####
 
 Method 1: EC2 instance role
+
+For this method, you need to install Keeper Secrets Manager CLI on a EC2
+instance which has been configured with a role that has permission to read
+specific AWS Secrets Manager secrets. We recommend setting up an EC2 role
+policy that has the least permission available, to only read specific keys.
+[Learn more](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-
+and-access.html) about AWS Secrets Manager access controls.
 
 To initialize the KSM CLI profile on an EC2 instance using the AWS EC2
 instance role:
@@ -608,6 +620,16 @@ Copy
 
 Method 2: AWS profile credentials
 
+The KSM CLI can be configured to use a specific AWS profile that has been
+previously initialized on this device with the `aws configure`
+[command](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-
+quickstart.html#getting-started-quickstart-new).
+
+For this method, the AWS profile credentials should be assigned to a role
+which is limited to only read specific keys from the AWS Secrets Manager.
+[Learn more](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-
+and-access.html) about AWS Secrets Manager access controls.
+
 For example:
 
 Copy
@@ -639,6 +661,13 @@ fail.
 ####
 
 Finishing the KSM CLI setup
+
+To complete the setup, a base64 KSM configuration value must be generated from
+the Keeper Vault interface or the Keeper Commander CLI. This is described in
+the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide).
+
+For example, using the [Commander CLI](/en/keeperpam/commander-cli/overview),
+this can be generated using a command such as the one below:
 
 Copy
 
@@ -831,42 +860,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-As described in the , you can create a token from the Commander CLI or from
-the Keeper Vault interface. For example:
-
-For this method, you need to install Keeper Secrets Manager CLI on a EC2
-instance which has been configured with a role that has permission to read
-specific AWS Secrets Manager secrets. We recommend setting up an EC2 role
-policy that has the least permission available, to only read specific keys.
-about AWS Secrets Manager access controls.
-
-The KSM CLI can be configured to use a specific AWS profile that has been
-previously initialized on this device with the `aws configure` .
-
-For this method, the AWS profile credentials should be assigned to a role
-which is limited to only read specific keys from the AWS Secrets Manager.
-about AWS Secrets Manager access controls.
-
-To complete the setup, a base64 KSM configuration value must be generated from
-the Keeper Vault interface or the Keeper Commander CLI. This is described in
-the .
-
-For example, using the , this can be generated using a command such as the one
-below:
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
-
-[Learn more](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-
-and-access.html)
-
-[command](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-
-quickstart.html#getting-started-quickstart-new)
-
-[Learn more](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-
-and-access.html)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
-
-[Commander CLI](/en/keeperpam/commander-cli/overview)
 

@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -655,9 +656,15 @@ be named differently)_ , remove it.
 Remove the plugin package from the `<``>/plugins` directory and restart the
 TeamCity server.
 
+Adding connection of type Keeper Vault
+
 Specify the token - paste a valid KSM config _(see_ _)_.
 
+Configure Keeper Vault Connection
+
 Configure a TeamCity parameter that resolves the secret using
+
+Adding New Parameter
 
 Choose the  runner type.
 
@@ -683,18 +690,6 @@ manager/secrets-manager/about/keeper-notation)
 [_Prerequisites_](/en/keeperpam/secrets-
 manager/integrations/teamcity#prerequisites)
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
-Adding connection of type Keeper Vault
-
-Configure Keeper Vault Connection
-
-Adding New Parameter
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkN1xTeS7z68jeRshgStj%252Fkeeper%2520and%2520Team%2520City.jpg%3Falt%3Dmedia%26token%3D41e1f272-9736-495e-9f51-7b76baaf6850&width=768&dpr=4&quality=100&sign=ba4c85ef&sv=2)
@@ -716,4 +711,10 @@ x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCyNRIxtU170myoD55VNF%252Fteamcity-
 ksm-
 parameter.png%3Falt%3Dmedia%26token%3D5a523ab3-59d1-49a7-95e4-20dee93bc31f&width=768&dpr=4&quality=100&sign=b860834f&sv=2)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 

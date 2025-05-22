@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -569,16 +570,13 @@ About this Guide
 
 This guide on Privilege Manager is broken down into the following sections:
 
-  *   *   *   * 
+  * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
 
-[Setup](/en/keeperpam/endpoint-privilege-manager/setup)
+  * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
 
-[Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+  * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
 
-[Policies](/en/keeperpam/endpoint-privilege-manager/policies)
-
-[Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-
-requests)
+  * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
 
 Keeper Privilege Manager
 

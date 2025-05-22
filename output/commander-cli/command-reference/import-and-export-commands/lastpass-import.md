@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -926,14 +927,20 @@ commands/default-record-types)
 
 [share admins](https://docs.keeper.io/enterprise-guide/share-admin)
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FisBbJe3YNOoyNvSgF0XD%252FImport-
+Keeper-
+LastPass.jpg%3Falt%3Dmedia%26token%3Dbf14ebf6-7463-4582-a1d7-a811f98d2e39&width=768&dpr=4&quality=100&sign=b3f0a619&sv=2)
+
+[record-permission](/en/keeperpam/commander-cli/command-reference/sharing-
+commands#record-permission-command)
+
 [Download Keeper Password Manager for iOS, Android, Mac, PC and moreKeeper®
 Password Manager & Digital Vault](https://keepersecurity.com/download)
 
 [Desktop ApplicationsEnterprise Guide](https://docs.keeper.io/enterprise-
 guide/deploying-keeper-to-end-users/desktop-application)
-
-[record-permission](/en/keeperpam/commander-cli/command-reference/sharing-
-commands#record-permission-command)
 
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F1748446847-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
@@ -941,10 +948,4 @@ files%2Fo%2Fspaces%252F-LO5CAzpxoaEquZJBpYz%252Favatar.png%3Fgeneration%3D156202
 
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fwww.keepersecurity.com%2Fassets%2Fbranding%2Fandroid-
 icon-192x192.png&width=20&dpr=4&quality=100&sign=71acf559&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FisBbJe3YNOoyNvSgF0XD%252FImport-
-Keeper-
-LastPass.jpg%3Falt%3Dmedia%26token%3Dbf14ebf6-7463-4582-a1d7-a811f98d2e39&width=768&dpr=4&quality=100&sign=b3f0a619&sv=2)
 

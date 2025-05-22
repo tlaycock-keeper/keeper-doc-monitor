@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -414,296 +415,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=RwOEZG4h2pK4pTOdk6Ff&only=yes&limit=100)
 
 Role-based enforcement policy settings for KeeperPAM
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHAQZMfu5ZSg6QAGqOJiF%252FEnforcement%2520Policies.jpg%3Falt%3Dmedia%26token%3D926aec64-b51a-4117-9f66-6e47da3f221b&width=768&dpr=4&quality=100&sign=ec40800c&sv=2)
-
-##
-
-Overview
-
-Role-based Access Controls (RBAC) provide your organization the ability to
-define enforcements based on a user's job responsibility as well as provide
-delegated administrative functions. Prior to proceeding with this guide,
-familiarize yourself with roles and enforcement policies.
-
-###
-
-Enable PAM Policies
-
-From the Admin Console, enable the corresponding PAM Enforcement Policies.
-
-  * Login to the Keeper Admin Console for your region.
-
-  * Under **Admin** > **Roles** , create a new role for PAM or modify an existing role.
-
-  * Go to **Enforcement Policies** and open the "**Privileged Access Manager** " section.
-
-  * Enable all the [PAM enforcement policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-policies) to use the new features.
-
-##
-
-Privileged Access Manager Policies
-
-###
-
-Secrets Manager
-
-Policy
-
-Definition
-
-Commander CLI
-
-Can create applications and manage secrets
-
-Allow users to create and manage KSM application
-
-Copy
-
-    
-    
-    ALLOW_SECRETS_MANAGER
-
-###
-
-Keeper Gateway
-
-Policy
-
-Definition
-
-Commander CLI
-
-Can create, deploy, and manage Keeper Gateways
-
-Allow users to create, setup, and manage Keeper Gateways
-
-Copy
-
-    
-    
-    ALLOW_PAM_GATEWAY
-
-###
-
-Keeper Rotation
-
-Policy
-
-Definition
-
-Commander CLI
-
-Can configure rotation settings
-
-Allow users to configure Rotation settings on PAM User and PAM Configuration
-Record Types
-
-Copy
-
-    
-    
-    ALLOW_CONFIGURE_ROTATION_SETTINGS
-
-Can rotate credentials
-
-Allow users to rotate credentials on PAM User Record Types
-
-Copy
-
-    
-    
-    ALLOW_ROTATE_CREDENTIALS
-
-###
-
-Keeper Connection Manager (KCM)
-
-Policy
-
-Definition
-
-Commander CLI
-
-Can configure connection and session recording
-
-Allow users to configure Connection and Session Recordings settings on PAM
-Machine, PAM Directory, PAM Database and PAM Configuration Record Types
-
-Copy
-
-    
-    
-    ALLOW_CONFIGURE_PAM_CLOUD_CONNECTION_SETTINGS
-
-Can launch connections
-
-Allow users to launch connections on PAM Machine, PAM Directory, PAM Database
-Record Types
-
-Copy
-
-    
-    
-    ALLOW_LAUNCH_PAM_ON_CLOUD_CONNECTION
-
-Can view session recordings
-
-Allow users to view Session Recordings
-
-Copy
-
-    
-    
-    ALLOW_VIEW_KCM_RECORDINGS
-
-###
-
-Keeper Tunnels
-
-Policy
-
-Definition
-
-Commander CLI
-
-Can configure tunnel settings
-
-Allow users to configure Tunnel settings on PAM Machine, PAM Directory, PAM
-Database and PAM Configuration Record Types
-
-Copy
-
-    
-    
-    ALLOW_CONFIGURE_PAM_TUNNELING_SETTINGS
-
-Can start tunnels
-
-Allow users to start tunnels on PAM Machine, PAM Directory, PAM Database
-Record Types
-
-Copy
-
-    
-    
-    ALLOW_LAUNCH_PAM_TUNNELS
-
-###
-
-Remote Browser Isolation (RBI)
-
-Policy
-
-Definition
-
-Commander CLI
-
-Can configure remote browsing and session recording
-
-Allow users to configure Remote Browser and Session Recordings settings on PAM
-Remote Browsing and Configuration Record Types
-
-Copy
-
-    
-    
-    ALLOW_CONFIGURE_RBI
-
-Can launch remote browsing
-
-Allow users to launch remote browsing on PAM Remote Browsing Record Types
-
-Copy
-
-    
-    
-    ALLOW_LAUNCH_RBI
-
-Can view RBI session recordings
-
-Allow users to view RBI Session Recordings
-
-Copy
-
-    
-    
-    ALLOW_VIEW_RBI_RECORDINGS
-
-###
-
-Discovery
-
-Discovery is currently only available on Keeper Commander. The UI is coming
-soon.
-
-Policy
-
-Definition
-
-Commander CLI
-
-Can run discovery
-
-Allow users to run discovery
-
-Copy
-
-    
-    
-    ALLOW_PAM_DISCOVERY
-
-###
-
-Legacy Policies
-
-These policies are not required moving forward, but they exist for support of
-legacy features.
-
-Policy
-
-Definition
-
-Commander CLI
-
-Legacy allow rotation
-
-Allow users to perform password rotation
-
-Copy
-
-    
-    
-    ALLOW_PAM_ROTATION
-
-###
-
-Commander CLI
-
-The [Keeper Commander](/en/keeperpam/commander-cli/overview) CLI `enterprise-
-role` command can be used to set these policies through automation. The list
-of policies related to PAM functionality is listed below.
-
-Copy
-
-    
-    
-    enterprise-role ROLE_ID --enforcement "ALLOW_SECRETS_MANAGER:True"
-    enterprise-role ROLE_ID --enforcement "ALLOW_PAM_ROTATION:True"
-    enterprise-role ROLE_ID --enforcement "ALLOW_PAM_DISCOVERY:True"
-    enterprise-role ROLE_ID --enforcement "ALLOW_PAM_GATEWAY:True"
-    enterprise-role ROLE_ID --enforcement "ALLOW_CONFIGURE_ROTATION_SETTINGS:True"
-    enterprise-role ROLE_ID --enforcement "ALLOW_ROTATE_CREDENTIALS:True"
-    enterprise-role ROLE_ID --enforcement "ALLOW_CONFIGURE_PAM_CLOUD_CONNECTION_SETTINGS:True"
-    enterprise-role ROLE_ID --enforcement "ALLOW_LAUNCH_PAM_ON_CLOUD_CONNECTION:True"
-    enterprise-role ROLE_ID --enforcement "ALLOW_CONFIGURE_PAM_TUNNELING_SETTINGS:True"
-    enterprise-role ROLE_ID --enforcement "ALLOW_LAUNCH_PAM_TUNNELS:True"
-    enterprise-role ROLE_ID --enforcement "ALLOW_LAUNCH_RBI:True"
-    enterprise-role ROLE_ID --enforcement "ALLOW_CONFIGURE_RBI:True"
-    enterprise-role ROLE_ID --enforcement "ALLOW_VIEW_KCM_RECORDINGS:True"
-    enterprise-role ROLE_ID --enforcement "ALLOW_VIEW_RBI_RECORDINGS:True"
-
 [PreviousKeeperPAM Licensing](/en/keeperpam/privileged-access-manager/getting-
 started/keeperpam-licensing)[NextVault Structure](/en/keeperpam/privileged-
 access-manager/getting-started/vault-structure)
@@ -741,4 +452,300 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+##
+
+Overview
+
+Role-based Access Controls (RBAC) provide your organization the ability to
+define enforcements based on a user's job responsibility as well as provide
+delegated administrative functions. Prior to proceeding with this guide,
+familiarize yourself with roles and enforcement policies.
+
+###
+
+Enable PAM Policies
+
+From the Admin Console, enable the corresponding PAM Enforcement Policies.
+
+  * Login to the Keeper Admin Console for your region.
+
+  * Under **Admin** > **Roles** , create a new role for PAM or modify an existing role.
+
+  * Go to **Enforcement Policies** and open the "**Privileged Access Manager** " section.
+
+  * 
+
+##
+
+Privileged Access Manager Policies
+
+###
+
+Secrets Manager
+
+Policy
+
+Definition
+
+Commander CLI
+
+Can create applications and manage secrets
+
+Allow users to create and manage KSM application
+
+###
+
+Keeper Gateway
+
+Policy
+
+Definition
+
+Commander CLI
+
+Can create, deploy, and manage Keeper Gateways
+
+Allow users to create, setup, and manage Keeper Gateways
+
+###
+
+Keeper Rotation
+
+Policy
+
+Definition
+
+Commander CLI
+
+Can configure rotation settings
+
+Allow users to configure Rotation settings on PAM User and PAM Configuration
+Record Types
+
+Can rotate credentials
+
+Allow users to rotate credentials on PAM User Record Types
+
+###
+
+Keeper Connection Manager (KCM)
+
+Policy
+
+Definition
+
+Commander CLI
+
+Can configure connection and session recording
+
+Allow users to configure Connection and Session Recordings settings on PAM
+Machine, PAM Directory, PAM Database and PAM Configuration Record Types
+
+Can launch connections
+
+Allow users to launch connections on PAM Machine, PAM Directory, PAM Database
+Record Types
+
+Can view session recordings
+
+Allow users to view Session Recordings
+
+###
+
+Keeper Tunnels
+
+Policy
+
+Definition
+
+Commander CLI
+
+Can configure tunnel settings
+
+Allow users to configure Tunnel settings on PAM Machine, PAM Directory, PAM
+Database and PAM Configuration Record Types
+
+Can start tunnels
+
+Allow users to start tunnels on PAM Machine, PAM Directory, PAM Database
+Record Types
+
+###
+
+Remote Browser Isolation (RBI)
+
+Policy
+
+Definition
+
+Commander CLI
+
+Can configure remote browsing and session recording
+
+Allow users to configure Remote Browser and Session Recordings settings on PAM
+Remote Browsing and Configuration Record Types
+
+Can launch remote browsing
+
+Allow users to launch remote browsing on PAM Remote Browsing Record Types
+
+Can view RBI session recordings
+
+Allow users to view RBI Session Recordings
+
+###
+
+Discovery
+
+Discovery is currently only available on Keeper Commander. The UI is coming
+soon.
+
+Policy
+
+Definition
+
+Commander CLI
+
+Can run discovery
+
+Allow users to run discovery
+
+###
+
+Legacy Policies
+
+These policies are not required moving forward, but they exist for support of
+legacy features.
+
+Policy
+
+Definition
+
+Commander CLI
+
+Legacy allow rotation
+
+Allow users to perform password rotation
+
+###
+
+Commander CLI
+
+Copy
+
+    
+    
+    enterprise-role ROLE_ID --enforcement "ALLOW_SECRETS_MANAGER:True"
+    enterprise-role ROLE_ID --enforcement "ALLOW_PAM_ROTATION:True"
+    enterprise-role ROLE_ID --enforcement "ALLOW_PAM_DISCOVERY:True"
+    enterprise-role ROLE_ID --enforcement "ALLOW_PAM_GATEWAY:True"
+    enterprise-role ROLE_ID --enforcement "ALLOW_CONFIGURE_ROTATION_SETTINGS:True"
+    enterprise-role ROLE_ID --enforcement "ALLOW_ROTATE_CREDENTIALS:True"
+    enterprise-role ROLE_ID --enforcement "ALLOW_CONFIGURE_PAM_CLOUD_CONNECTION_SETTINGS:True"
+    enterprise-role ROLE_ID --enforcement "ALLOW_LAUNCH_PAM_ON_CLOUD_CONNECTION:True"
+    enterprise-role ROLE_ID --enforcement "ALLOW_CONFIGURE_PAM_TUNNELING_SETTINGS:True"
+    enterprise-role ROLE_ID --enforcement "ALLOW_LAUNCH_PAM_TUNNELS:True"
+    enterprise-role ROLE_ID --enforcement "ALLOW_LAUNCH_RBI:True"
+    enterprise-role ROLE_ID --enforcement "ALLOW_CONFIGURE_RBI:True"
+    enterprise-role ROLE_ID --enforcement "ALLOW_VIEW_KCM_RECORDINGS:True"
+    enterprise-role ROLE_ID --enforcement "ALLOW_VIEW_RBI_RECORDINGS:True"
+
+Enable all the  to use the new features.
+
+The  CLI `enterprise-role` command can be used to set these policies through
+automation. The list of policies related to PAM functionality is listed below.
+
+Copy
+
+    
+    
+    ALLOW_SECRETS_MANAGER
+
+Copy
+
+    
+    
+    ALLOW_PAM_GATEWAY
+
+Copy
+
+    
+    
+    ALLOW_CONFIGURE_ROTATION_SETTINGS
+
+Copy
+
+    
+    
+    ALLOW_ROTATE_CREDENTIALS
+
+Copy
+
+    
+    
+    ALLOW_CONFIGURE_PAM_CLOUD_CONNECTION_SETTINGS
+
+Copy
+
+    
+    
+    ALLOW_LAUNCH_PAM_ON_CLOUD_CONNECTION
+
+Copy
+
+    
+    
+    ALLOW_VIEW_KCM_RECORDINGS
+
+Copy
+
+    
+    
+    ALLOW_CONFIGURE_PAM_TUNNELING_SETTINGS
+
+Copy
+
+    
+    
+    ALLOW_LAUNCH_PAM_TUNNELS
+
+Copy
+
+    
+    
+    ALLOW_CONFIGURE_RBI
+
+Copy
+
+    
+    
+    ALLOW_LAUNCH_RBI
+
+Copy
+
+    
+    
+    ALLOW_VIEW_RBI_RECORDINGS
+
+Copy
+
+    
+    
+    ALLOW_PAM_DISCOVERY
+
+Copy
+
+    
+    
+    ALLOW_PAM_ROTATION
+
+[PAM enforcement policies](/en/keeperpam/privileged-access-manager/getting-
+started/enforcement-policies)
+
+[Keeper Commander](/en/keeperpam/commander-cli/overview)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHAQZMfu5ZSg6QAGqOJiF%252FEnforcement%2520Policies.jpg%3Falt%3Dmedia%26token%3D926aec64-b51a-4117-9f66-6e47da3f221b&width=768&dpr=4&quality=100&sign=ec40800c&sv=2)
 

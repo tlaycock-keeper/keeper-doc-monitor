@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -435,9 +436,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=jY0Y6A1qOAai0XdtNuj4&only=yes&limit=100)
 
 Manage a self-hosted version of Keeper Connection Manager
 
-[PreviousDiscovery using the Vault](/en/keeperpam/privileged-access-
-manager/discovery/discovery-using-the-
-vault)[NextReferences](/en/keeperpam/privileged-access-manager/references)
+[PreviousKeeperAI](/en/keeperpam/privileged-access-
+manager/keeperai)[NextReferences](/en/keeperpam/privileged-access-
+manager/references)
 
 Last updated 2 months ago
 

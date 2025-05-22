@@ -420,608 +420,331 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * About
-  * The compliance-report command
-  * Cache
-  * Filters
-  * Outputting to a File
-  * The compliance command
-  * Compliance Team Report
-  * Compliance Record-Access Report
-  * Compliance Summary Report
-  * Compliance Shared-Folder Report
+  * Overview
+  * Key Features
+  * Supported Protocols
+  * Getting Started
+  * Threat Detection and Response
+  * Advanced Configuration
+  * Troubleshooting
+  * FAQ
 
 Was this helpful?
 
 [Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=EhC8JpK6T1iKszWPwZCq&only=yes&limit=100)
+PDF](/en/keeperpam/~gitbook/pdf?page=hPhvWPKEYG0crNdsO2JO&only=yes&limit=100)
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Enterprise Management Commands](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands)
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
 
-# Compliance Commands
+# KeeperAI
 
-Keeper Commander compliance reporting commands
+AI-powered threat detection for KeeperPAM privileged sessions
 
-[PreviousCreating and Inviting Users](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands/creating-and-inviting-
-users)[NextBreachwatch Commands](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands/breachwatch-commands)
+[PreviousDiscovery using the Vault](/en/keeperpam/privileged-access-
+manager/discovery/discovery-using-the-vault)[NextOn-Prem Connection
+Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
 
-Last updated 1 month ago
+Last updated 7 hours ago
 
 Was this helpful?
 
-##
+###
 
-About
+Overview
 
-Requires  add-on
-
-Compliance reports let account administrators adhere to regulations by
-providing on-demand visibility to access permissions on records and
-credentials across the enterprise.
-
-Using Commander, compliance reports can be scheduled and automated, and
-results can be exported to a CSV file or JSON.
-
-For more information about Compliance Reports, see the Compliance Reports
-documentation:
-
-##
-
-The `compliance-report `command
-
-The `compliance-report` command allows you to run reports just as you would in
-the Keeper Admin Console. See record permissions by node, user and title,
-filter by owned or shared records and output results to a file.
+KeeperAI is an AI-powered threat detection system that automatically monitors
+and analyzes user sessions to identify suspicious or malicious behavior. The
+system works at the gateway level to generate real-time risk analyses from
+session recordings, helping security teams quickly detect potential threats.
 
 ###
 
-Cache
+Key Features
 
-The `compliance-report` command relies on a cache in order to improve
-performance across multiple report queries.
+  * **Automated Session Analysis** : Analyze session metadata, keystroke logs, and command execution logs to detect unusual behavior
 
-**This means that the first call to**`**compliance-report**`**may take several
-minutes as the system pulls in the required data.**
+  * **Search:** Provides searching across the sessions to locate specific keywords or activity
 
-During this time, Commander will display messaging explaining the current
-step.
+  * **Threat Classification** : Automatically categorize detected threats and assign risk levels
 
-Additionally, a manual rebuild of the cache can be performed with the `-r`
-flag. Do this to see recent changes in the compliance data.
+  * **Flexible Deployment** : Support for both cloud-based and on-premises LLM inference
 
-`compliance-report -r`
-
-By default (so that the generated report reflects reasonably current and
-accurate data), **locally-cached data older than 1 day are automatically
-refreshed** via the process described above. As a result, any call to
-`compliance-report` that occurs more than 1 day after a previous call to the
-same command will result in another data-fetching operation that may take some
-time to finish (as described above for first-time calls) .
-
-To manually override this default behavior, see the next section.
-
-Conversely, if you would like to circumvent the automatic cache-refresh
-behavior described above and generate a report based solely on previously
-cached data (resulting in possibly stale results but nevertheless useful for
-avoiding the possibly long loading times required to refresh the cache), you
-can do so with the `-nr` or `--no-rebuild `flag. Do this to quickly perform
-queries on compliance data in cases where you can be fairly confident that the
-relevant data have not changed significantly since the last command call /
-cache refresh.
-
-`compliance-report -nr`
-
-**Removing the Cache**
-
-The compliance report cache can be removed manually with the `--no-cache`
-flag. When run, this completely removes all cached compliance report
-information from your machine.
-
-`compliance-report --no-cache`
-
-Alternatively, you can delete the cache file locally on disk from the location
-where you ran Commander. Delete the file called `sox_<ID>.db` which contains
-the encrypted compliance data.
+  * **Customizable Configuration** : Adjust risk parameters and detection rules to your environment
 
 ###
 
-Filters
-
-The compliance report can be filtered by Node, User, Job Title and if the
-record is shared, deleted, or active.
-
-Filter by Node
+Supported Protocols
 
 ####
 
-Format
+Current Support (MVP)
 
-`--node [NODE NAME or ID]` or `-n [NODE NAME or ID]`
-
-**Example**
-
-`compliance-report --node "Chicago Office"`
+  * SSH
 
 ####
 
-About
+Coming Soon
 
-Filters the record results to only records that exist in Keeper Vaults in the
-given Node. By default this uses the root enterprise node and searches all
-vaults.
+  * Database protocols
 
-Filter by Username
+  * RDP
 
-####
+  * VNC
 
-Format
-
-`--username [USER EMAIL]` or `-u [USER EMAIL]`
-
-**Example**
-
-`compliance-report --username "Craig@keepersecurity.com"`
-
-####
-
-About
-
-Filters the record results to only records that exist in the Keeper Vault of
-the given username
-
-Filter by Record
-
-####
-
-Format
-
-`--record [UID or TITLE]` or `-r [UID or TITLE]`
-
-**Example**
-
-`compliance-report --record "Twitter Login"`
-
-####
-
-About
-
-Filters the results to the record with the given UID or title
-
-Filter by URL
-
-####
-
-Format
-
-`--url [URL]`
-
-**Example**
-
-`compliance-report --url "https://www.twitter.com"`
-
-####
-
-About
-
-Filters the results to records with the given URL value
-
-Filter by Job Title
-
-####
-
-Format
-
-`--job-title [TITLE]` or `-jt [TITLE]`
-
-**Example**
-
-`compliance-report --job-title "Engineers"`
-
-####
-
-About
-
-Filters the record results to only records that exist in Keeper Vaults owned
-by users with the given title
-
-Filter by Shared Records
-
-####
-
-Format
-
-`--shared`
-
-**Example**
-
-`compliance-report --shared`
-
-####
-
-About
-
-Only shows records that have been shared
-
-Filter by Deleted Records
-
-####
-
-Format
-
-`--deleted-items`
-
-**Example**
-
-`compliance-report --deleted-items`
-
-####
-
-About
-
-Only shows records that have been deleted (not valid with `--active-items`
-flag)
-
-Filter by Active Records
-
-####
-
-Format
-
-`--active-items`
-
-**Example**
-
-`compliance-report --active-items`
-
-####
-
-About
-
-Only shows records that are active (not valid with `--deleted-items` flag)
-
-Filter by Record
-
- _Requires Commander version 16.7.5+_
-
-**Format**
-
-`--team <TEAM NAME>`
-
-**Example**
-
-`compliance-report --team "Engineering"`
-
-**About**
-
-Show only users which are in the given team
-
-Filter by Team
-
- _Requires Commander version 16.7.5+_
-
-**Format**
-
-`--record <RECORD NAME or UID>`
-
-**Example**
-
-`compliance-report --record "Twitter Login"`
-
-**About**
-
-Show report for the given record
-
-Using Multiple Filters Together
-
-The filter flags can be used together to create advanced reports
-
-**Example**
-
-`compliance-report --node "Chicago" --job-title "Managers" --shared`
-
-This example shows a report of records that have been shared from Vaults owned
-by Managers in the Chicago Node.
-
-**The same filter can also be used multiple times**
-
-`compliance-report -u "user1@example.com" -u "user2@example.com"`
-
-This example retrieves records for both users "user1@example.com" and
-"user2@example.com"
-
-####
-
-About
-
-Filters the record results to only records that exist in Keeper Vaults in the
-given Node
+  * RBI
 
 ###
 
-Outputting to a File
-
-Like many Commander reports, the compliance report results can be saved to a
-file. To do this use the `--output` and `--format` options.
-
-**Output**
-
-`--output [FILE PATH]`
-
-Tells Commander to write results to a file at the given location. If no file
-exists it will be created.
-
-**Format**
-
-\--format [csv, json, table]
-
-Tells Commander the format to write the report results as. The default result
-is in table format, which displays a formatted table of results. The other
-options are Comma Separated Values (CSV), JavaScript Object Notation (JSON).
-
-If the `--format` flag is added without the `--output` flag, the results will
-be shown in Commander in the the given format
-
-Save results to CSV (Excel)
-
-To save compliance report results as a CSV file viewable in Excel, use the
-following flags:
-
-`--format csv` and `--output /path/to/file.csv`
+Getting Started
 
 ####
 
-Example
+Prerequisites
 
-`compliance-report --username "Craig@keepersecurity.com" --format csv --output
-"./craig_compliance.csv"`
+  * PAM Gateway version 1.5.4 or newer
 
-The results will be saved as a csv formatted file at the given location
+  * Docker environment for on-premises deployments
 
-Save results to JSON
-
-To save compliance report results as a CSV file to use in code or scripting,
-use the following flags:
-
-`--format json` and `--output /path/to/file.json`
+  * Access to cloud-based LLM services (if using cloud deployment)
 
 ####
 
-Example
+Activation
 
-`compliance-report --username "Craig@keepersecurity.com" --format csv --output
-"./craig_compliance.json"`
+**Activating KeeperAI on a Resource**
 
-The results will be saved as a json formatted file at the given location
+  1. Log in to the Vault UI as an administrator
 
-##
+  2. Navigate to the resource management section
 
-The `compliance` command
+  3. Select the SSH-based resource you want to protect
 
-In addition to enabling users in generating custom reports, Commander also
-provides users the ability to generate specific reports with the `compliance`
-command. These specific reports can be generated by invoking the `compliance`
-command's supported sub-commands.
+  4. Find the "KeeperAI" section and toggle the activation switch to "On"
 
-The `compliance` command supports the following sub commands:
+  5. Save your changes
 
-  *   *   *   * 
+> **Note** : For protocols not yet supported, the UI will indicate that
+> classification models for these protocols are coming soon.
 
-Refer to the sub command's section for more information.
+####
 
-###
+Deployment Options
 
-Compliance Team Report
+**Cloud-Based LLM Deployment**
 
-Shared folders can be shared to Keeper Teams as well as individuals. The
-compliance report can display a report of the access that each team has to
-these shared folders.
+For cloud-based deployments, ... #TODO
 
-To run the Compliance Team Report, use the following command in Commander:
-
-`compliance team-report`
-
-The report shows each team that has access to a shared folder, and what access
-it has to that shared folder.
+  1. 
 
 Copy
 
     
     
-    My Vault> compliance team-report
-    Team Name    Team UID                Shared Folder Name  Shared Folder UID       Permissions            Records
-    -----------  ----------------------  ------------------  ----------------------  -------------------  ---------
-    Engineering  qLoY4YptKEs30VK_D8px1A  Devops Secrets      YZaagndh8CQToqlhuvv95Q  Read Only                    1
-    Marketing    XWLBkyN_HnwJKA4BYWrByw  Website Logins      -IcFcSgrFPEW9aP1-noiWw  Can Share, Can Edit          2
+      litellm:
+        image: ghcr.io/berriai/litellm:main-stable
+        container_name: ${LITELLM_CONTAINER_NAME}
+        volumes:
+         - ./config.yaml:/app/config.yaml
+        command:
+         - "--config=/app/config.yaml"
+        ports:
+          - "${LITELLM_PORT}:${LITELLM_PORT}"
+        env_file:
+          - .env
+        depends_on:
+          - litellm-db
+        healthcheck:
+          test: [ "CMD", "curl", "-f", "http://localhost:${LITELLM_PORT}/health/liveliness || exit 1" ]
+          interval: 30s
+          timeout: 10s
+          retries: 3
+          start_period: 10s
+        networks:
+          - keeper-example-net
+    
+      litellm-db:
+        image: postgres:16
+        restart: always
+        container_name: ${POSTGRES_CONTAINER_NAME}
+        env_file:
+          - .env
+        environment:
+          PGPORT: 5433
+        ports:
+          - "${POSTGRES_PORT}:${POSTGRES_PORT}"
+        volumes:
+          - litellm_postgres_data:/var/lib/postgresql/data
+        healthcheck:
+          test: ["CMD-SHELL", "pg_isready -d ${POSTGRES_DB} -U ${POSTGRES_USER}"]
+          interval: 1s
+          timeout: 5s
+          retries: 10
+        networks:
+          - keeper-example-net      
 
-If you would like to include team-membership information (i.e., which users
-belong to each team) in the report, you can include the optional flag `--show-
-team-users`/`-tu `in your command call, as illustrated in the following
-example:
+  1. Ensure your Gateway has the appropriate permissions to access your cloud LLM service
 
-`compliance team-report -tu `
-
-Please note that, as a result of the additional flag in the above command
-call, a column titled "Team Users" (in which the usernames of all members of
-each relevant team can be found) will be added to the generated report.
-
-###
-
-Compliance Record-Access Report
-
-The compliance record-access report displays a list of all records that either
-a) have been accessed by, or b) are currently accessible to any given user(s),
-along with other relevant information (e.g., app used, IP address, event
-timestamp, etc.).
-
-To run the Compliance Record-Access Report and show a user's record-access
-history, run the following command in Commander:
-
-`compliance record-access-report --email user1@company.com`
-
-where `user1@company.com` is the user whose record-access activity we'd like
-to audit, with the resulting output being something like the following:
+  2. No additional configuration is required as the Gateway will use the instance role
 
 Copy
 
     
     
-    My Vault> compliance record-access-report --email user1@company.com
-    Vault Owner       Record UID              Record Title  Record URL     Has Attachments    In Trash    Record Owner       IP Address     Device             Last Access
-    ----------------- ----------------------  ------------  -------------  -----------------  ----------  -----------------  -------------  -----------------  -------------------
-    user1@company.com LDUw6M6jNcUmEkuArp4LXQ  User1-Login   domain.com     False              False       user1@company.com  172.158.8.18   Web App 16.10.2    2023-05-30 17:04:23
-                      5U4DK0MmJ5ZVui-o6JcDQw  User2-Login   google.com     True               False       user2@company.com  172.158.8.18   Web App 16.10.2    2023-01-24 17:04:18
-                      MMhu6YQ5gKtYbgPiVD41UQ  User3-Login   hotmail.com    False              False       user3@company.com  172.158.8.18   Web App 16.10.2    2022-11-31 14:35:23
+    environment:
+      KEEPER_GATEWAY_SENTRY_BASE_URL: "http://litellm:4000/v1"
+      KEEPER_GATEWAY_SENTRY_API_KEY: "your-api-key"
+      KEEPER_GATEWAY_SENTRY_MODEL: "bedrock-meta.llama3-3-70b-instruct-v1:0"
 
-Similarly, to show a list of all records that are currently accessible by that
-same user (i.e., all records currently in the user's vault), run the following
-command:
+**On-Premises LLM Deployment**
 
-`compliance record-access-report --report-type=vault
---email=user1@company.com`
-
-The output of the above command should look similar to the previous example,
-but will exclude records that are not currently in the user's vault and may
-include records that have never been accessed by that user.
-
-Additionally, if you would like to run this report for multiple users, you may
-do so by 1) specifying each username / ID separately, 2) by using the "@all"
-shorthand to indicate that you would like to run the report for all users or
-3) by not providing a user — yet a more concise way to include all users in
-the report. This is illustrated in the following corresponding examples:
-
-`compliance record-access-report -e user1@company.com -e user2@company.com`
-
-`compliance record-access-report --email @all`
-
-`compliance record-access-report`
-
-###
-
-Compliance Summary Report
-
-The compliance summary report displays aggregate information about records
-within the enterprise (grouped by record-owner by default for now, but support
-for grouping by other entities may be added to this feature later)
-
-To run the Compliance Summary Report, run the following command in Commander:
-
-`compliance summary-report`
-
-or
-
-`compliance stats`
-
-with the resulting output being something like the following:
+For on-premises deployments, configure the Gateway with the following
+environment variables in your Docker Compose file:
 
 Copy
 
     
     
-    My Vault> compliance summary-report
-    
-    Email                             Total Items    Total Owned    Active Owned    Deleted Owned
-    ------------------------------- -------------  -------------  --------------  ---------------
-    bob.loblaw@keeperdemo.io                   22             14              12                2
-    jose.rizal@keeperdemo.io                   49             42              33                9
-    tyrion.lannister@keeperdemo.io              3              3               3                0
-    doogie.howzer@keeperdemo.io                15              5               5                0
-    alan.turing@keeperdemo.io                  17             13               4                9
-    richard.feynmann@keeperdemo.io              4              1               1                0
-    TOTAL                                                     78              58               20
+    environment:
+      KEEPER_GATEWAY_SENTRY_BASE_URL: "http://litellm:4000/v1"
+      KEEPER_GATEWAY_SENTRY_API_KEY: "your-api-key"
+      KEEPER_GATEWAY_SENTRY_MODEL: "bedrock-meta.llama3-3-70b-instruct-v1:0"
+
+> **Note** : You may need to run the LiteLLM docker container in your local
+> docker compose. Refer to the installation guide for detailed setup
+> instructions.
 
 ###
 
-Compliance Shared-Folder Report
+Threat Detection and Response
 
-Similar to `compliance team-report`, this command outputs a report detailing
-the access that all entities (teams as well as individual users) have to all
-shared folders within the enterprise.
+####
 
-To run the Compliance Shared-Folder Report, run the following command in
-Commander:
+Risk Classification
 
-`compliance shared-folder-report`
+KeeperAI uses a proprietary classifier to categorize threats into risk levels:
 
-or
+  * **Critical** : Severe security threats requiring immediate action
 
-`compliance sfr`
+  * **High** : Significant security concerns that should be addressed promptly
 
-with the corresponding output:
+  * **Medium** : Potential security issues requiring monitoring
 
-Copy
+####
 
-    
-    
-    My Vault> compliance sfr
-    Loading record information....
-    Loading compliance data....:
-    Shared Folder UID       Team UID                Team Name    Record UID              Email
-    ----------------------  ----------------------  ------------ ----------------------  ------------------------------
-    y01GmuTipqHGLdd0NkM4qw                                       PG7MELDIOaNMQkDiw--JoQ  bob.loblaw@keeperdemo.io
-                                                                 1JDuc5ZcJDpt8SbhYnD0HA  nate.hawthorne@keeperdemo.io
-    YZaagndh8CQToqlhuvv95Q  qLoY4YptKEs30VK_D8px1A  Engineering  IOYb8jAmDsaIGtTwZB5Biw  samuel.clemens@keeperdemo.io
-                                                                                         w.b.yeats@keeperdemo.io
-    -IcFcSgrFPEW9aP1-noiWw  XWLBkyN_HnwJKA4BYWrByw  Marketing    O69TWFDnPCG_dpg9wpABqg  e.hemmingway@keeperdemo.io
-                            qLoY4YptKEs30VK_D8px1A  Engineering  f46BWlqg5SoWraVlEFFSDA
-    0qpDTAWuznWrInnednG3Xw  XWLBkyN_HnwJKA4BYWrByw  Marketing    EnqP808xakJA9hOpjhYb9A  e.hemmingway@keeperdemo.io
+Automatic Response Actions
 
-Similar to the `compliance team-report` command described above, this command
-also accepts an optional `--show-team-users`/`-tu` flag indicating that team-
-membership data be included (where appropriate) in the resulting report. Here
-is an example of its usage:
+You can configure automatic responses based on detected threat levels:
 
-`compliance sfr -tu`
+  1. Navigate to the KeeperAI configuration section
 
-Please note that, in contrast to the output of `compliance team-report -tu`,
-the resulting report generated by the above command will include the
-appropriate additional team-membership data in the existing column named
-"Email" and each username associated with a team will by preceded by "(TU)" to
-denote it as such.
+  2. Define pattern matching keywords using regex
 
-or
+  3. Assign these patterns to Critical, High, or Medium threat levels
 
-This report uses the  described above.
+  4. Optionally enable automatic session termination for specific threat levels
 
-See the  for other reports available in Commander
+####
 
-[Reporting Documentation](/en/keeperpam/commander-cli/command-
-reference/reporting-commands)
+Reviewing Session Summaries
 
-[`team-report`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands/compliance-commands#compliance-team-report)
+Each analyzed session receives an AI-generated summary:
 
-[`record-access-report`](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands/compliance-commands#compliance-
-record-access-report)
+  1. Access the Session Recordings section in the Vault UI
 
-[`summary-reports`](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands/compliance-commands#compliance-summary-report)
+  2. Select a session with KeeperAI analysis
 
-[`stats`](/en/keeperpam/commander-cli/command-reference/enterprise-management-
-commands/compliance-commands#compliance-summary-report)
+  3. View the risk assessment, including:
 
-[`shared-folder-report`](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands/compliance-commands#compliance-
-shared-folder-report)
+     * Overall risk level
 
-[compliance report cache](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands/compliance-commands#cache)
+     * Detected threat categories
+
+     * Detailed session summary
+
+     * Timeline of suspicious activities
+
+###
+
+Advanced Configuration
+
+####
+
+Customizing Detection Parameters
+
+Adjust the sensitivity and specifics of threat detection:
+
+  1. Access the KeeperAI configuration page
+
+  2. Modify the threshold settings for different threat categories
+
+  3. Update keyword patterns for specific threats
+
+  4. Save your configuration changes
+
+####
+
+Integration with ARAM Events
+
+KeeperAI automatically generates ARAM events for detected threats, enabling
+integration with your existing security workflow.
+
+###
+
+Troubleshooting
+
+####
+
+Common Issues
+
+  * **Missed Detections** : Adjust sensitivity thresholds or add custom keyword patterns
+
+  * **False Positives** : Refine pattern matching rules or adjust risk thresholds
+
+  * **Performance Issues** : Check resource allocation for on-premises LLM deployments
+
+####
+
+Support Resources
+
+For additional assistance with KeeperAI:
+
+  * Contact Technical Support
+
+  * Visit the Knowledge Base
+
+  * Join the Community Forum
+
+###
+
+FAQ
+
+**Q: Can I use my own LLM model with KeeperAI?** A: Yes, KeeperAI supports any
+LLM model that conforms to the OpenAI API specifications.
+
+**Q: Does KeeperAI work in real-time?** A: Yes, KeeperAI can analyze both
+real-time sessions and completed session recordings using the same analysis
+logic.
+
+**Q: How does KeeperAI handle sensitive information?** A: In a later release,
+KeeperAI will include Personal Information (PI) detection and removal from
+session summaries.
+
+* * *
+
+_This documentation is for KeeperAI version 1.0.0, released as part of PAM
+Gateway v17.3 Early Access_
+
+Add the  to your Docker Compose file:
+
+[litellm proxy server](https://hub.docker.com/r/litellm/litellm)
+
+KeeperAI in PAM Settings
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjzCfUVzEze2IAKuJDhS6%252Fimage.png%3Falt%3Dmedia%26token%3D235eb0c1-407d-4d24-a7dc-d65cca157bac&width=768&dpr=4&quality=100&sign=db5ae4e&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7rQtwjXJlA3ddCR7ztE5%252FKeeperAI.png%3Falt%3Dmedia%26token%3D53ec3b12-b6fd-451d-9cc1-c0c5da9c81a5&width=768&dpr=4&quality=100&sign=34555b30&sv=2)
 
-[Compliance Reporting](https://docs.keeper.io/enterprise-guide/compliance-
-reports)
-
-[Compliance ReportsEnterprise Guide](https://docs.keeper.io/enterprise-
-guide/compliance-reports)
-
-![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F1748446847-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fspaces%252F-LO5CAzpxoaEquZJBpYz%252Favatar.png%3Fgeneration%3D1562027743273411%26alt%3Dmedia&width=20&dpr=4&quality=100&sign=25d608c4&sv=2)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkSLpDA92uPgWRpn725eQ%252FScreenshot%25202025-05-21%2520at%252012.18.10%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D0d46bc20-1de7-4455-b952-cc114cc21b1a&width=768&dpr=4&quality=100&sign=3dc5e51e&sv=2)
 

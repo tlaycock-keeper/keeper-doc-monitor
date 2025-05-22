@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -387,6 +388,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -411,9 +442,14 @@ PDF](/en/keeperpam/~gitbook/pdf?page=nn8HrHzuazylmRVQLjGi&only=yes&limit=100)
 
 Rotating Admin/Regular AWS Oracle Database Users with Keeper
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F1LhbAKVmnSSyU2S65nxf%252FAWS%2520RDS%2520for%2520Oracle.jpg%3Falt%3Dmedia%26token%3D28f568ab-98bc-4773-94a8-a36566bc681a&width=768&dpr=4&quality=100&sign=d7477c99&sv=2)
+[PreviousAWS RDS for MariaDB](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-
+mariadb)[NextLocal Network](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network)
+
+Last updated 3 months ago
+
+Was this helpful?
 
 ##
 
@@ -436,15 +472,7 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  * Keeper Secrets Manager is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
-
-  * Keeper Rotation is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
-
-  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
-
-  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is able to communicate with your AWS Oracle Database
-
-  * Your AWS environment is [configured](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup) per our documentation
+  *   *   *   *   * 
 
 ##
 
@@ -473,8 +501,6 @@ Keeper record title Ex: `AWS Oracle Admin`
 The RDS Endpoint i.e. `rdsdb.ckivswes.us-east-2.rds.amazonaws.com`
 
 **Port**
-
-The RDS Port, for default ports see port mapping i.e. `1521`
 
 **Use SSL**
 
@@ -565,10 +591,6 @@ Set this field to `USE_INSTANCE_ROLE` if you are using EC2 role policy
 Set this field to `USE_INSTANCE_ROLE` if you are using EC2 role policy
 (default). Otherwise use a specific Secret Access Key.
 
-For more details on all the configurable fields in the PAM Configuration
-record, visit this [page](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration).
-
 ##
 
 3\. Set up PAM User Records
@@ -623,42 +645,42 @@ Select the**PAM User** record(s) from Step 3, edit the record and open the
 Any user with `edit` rights to a **PAM User** record has the ability to setup
 rotation for that record.
 
-[PreviousAWS RDS for MariaDB](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-
-mariadb)[NextLocal Network](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network)
+Keeper Secrets Manager is enabled for your
 
-Last updated 3 months ago
+Keeper Rotation is enabled for your
 
-Was this helpful?
+A Keeper Secrets Manager  has been created
 
-#### Company
+A Keeper Rotation  is already installed, running, and is able to communicate
+with your AWS Oracle Database
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+Your AWS environment is  per our documentation
 
-#### Support
+The RDS Port, for default ports see  i.e. `1521`
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+For more details on all the configurable fields in the PAM Configuration
+record, visit this .
 
-#### Solutions
+[application](/en/keeperpam/privileged-access-manager/getting-
+started/applications)
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
 
-#### Pricing
+[configured](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration/aws-environment-setup)
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration)
 
-© 2025 Keeper Security, Inc.
+port mapping
+
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
+
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F1LhbAKVmnSSyU2S65nxf%252FAWS%2520RDS%2520for%2520Oracle.jpg%3Falt%3Dmedia%26token%3D28f568ab-98bc-4773-94a8-a36566bc681a&width=768&dpr=4&quality=100&sign=d7477c99&sv=2)
 

@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -419,10 +420,27 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Prerequisites
+  * Prepare Records for Rotation
+  * Create a Record for Rotation
+  * Rotate
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-Mf3aG3Ff6AIZtaEIq_R&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
+
+# Microsoft SQL Server Plugin
+
+Rotate SQL Server passwords
+
+[PreviousAzure Plugin](/en/keeperpam/commander-cli/command-
+reference/plugins/azure-plugin)[NextMySQL Plugin](/en/keeperpam/commander-
+cli/command-reference/plugins/mysql-plugin)
 
 Last updated 4 months ago
 
@@ -443,6 +461,12 @@ Prerequisites
 ####
 
 Install pymssql
+
+Copy
+
+    
+    
+    pip3 install pymssql
 
 ##
 
@@ -494,30 +518,6 @@ Optional Custom Fields
 Instead of using the fields above, custom fields can be added with the shown
 label
 
-####
-
-Record Example using Optional Fields
-
-##
-
-Rotate
-
-To rotate MSSQL passwords, use the `rotate` command in Commander. Pass the
-command a record title or UID (or use `--match` with a regular expression to
-rotate several records at once)
-
-The plugin can be supplied to the command as shown here added to a record
-field, or automatically assigned based on the port number (see options above).
-Adding the plugin type to the record makes it possible to rotate several
-records at once with different plugins.
-
-####
-
-Output
-
-After rotation is completed, the new password will be stored in the `Password`
-field of the record
-
 Label
 
 Value
@@ -543,34 +543,35 @@ cmdr:rules
 
 Password generation rules
 
+####
+
+Record Example using Optional Fields
+
+##
+
+Rotate
+
+To rotate MSSQL passwords, use the `rotate` command in Commander. Pass the
+command a record title or UID (or use `--match` with a regular expression to
+rotate several records at once)
+
 Copy
 
     
     
     rotate "MSSQL Example" --plugin mssql
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
+The plugin can be supplied to the command as shown here added to a record
+field, or automatically assigned based on the port number (see options above).
+Adding the plugin type to the record makes it possible to rotate several
+records at once with different plugins.
 
-# Microsoft SQL Server Plugin
+####
 
-Rotate SQL Server passwords
+Output
 
-[PreviousAzure Plugin](/en/keeperpam/commander-cli/command-
-reference/plugins/azure-plugin)[NextMySQL Plugin](/en/keeperpam/commander-
-cli/command-reference/plugins/mysql-plugin)
-
-  * Prerequisites
-  * Prepare Records for Rotation
-  * Create a Record for Rotation
-  * Rotate
-
-Copy
-
-    
-    
-    pip3 install pymssql
+After rotation is completed, the new password will be stored in the `Password`
+field of the record
 
 [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
 rotation)

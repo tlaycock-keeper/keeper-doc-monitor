@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -387,6 +388,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Azure Environment Overview
@@ -418,36 +449,6 @@ Last updated 4 months ago
 
 Was this helpful?
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 Azure Environment Overview
@@ -476,12 +477,6 @@ is shown. This is the **Client Id** field of the Keeper PAM Configuration
 record. The **Directory (tenant) ID** is also shown. This is the **Tenant Id**
 field of the Keeper PAM Configuration record. Save these values for later.
 
-Next, go to Home > General > Subscriptions and get your subscription ID. Copy
-the subscription ID into the Keeper PAM Configuration "Subscription ID" field.
-For more information on how to get your subscription ID, visit this
-[page](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-
-tenant-id).
-
 Next, click on the **Add a certification or secret** for **Client
 credentials**. On the next page, click on New client secret, give the client
 secret a Description, and select a desired Expires date, and click **Add**.
@@ -508,9 +503,7 @@ privileges are needed for your use case. Custom roles can be used.
 
   * **Global Administrator** \- It is not recommended to use a Global Administrator on a service principal. However, it will allow both administrator and user passwords to be rotated.
 
-  * [**Privileged Authentication Administrator**](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#privileged-authentication-administrator) \- Can change the password for any user, including a Global Administrator user.
-
-  * [**Authentication Administrator**](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#authentication-administrator) \- Can change the password for any user, except a Global Administrator user.
+  *   * 
 
 To add the application, click **Add assignments** and **Search** for the
 service principal/application that was created, click it, and then **Add**.
@@ -651,15 +644,47 @@ Configuring PAM Features on PAM Record Types
 
 After creating the PAM configuration, visit the following pages to:
 
-  * Configure [Rotation](/en/keeperpam/secrets-manager/password-rotation)
+  *   *   *   *   * 
 
-  * Configure [Connections](/en/keeperpam/privileged-access-manager/connections)
+Next, go to Home > General > Subscriptions and get your subscription ID. Copy
+the subscription ID into the Keeper PAM Configuration "Subscription ID" field.
+For more information on how to get your subscription ID, visit this .
 
-  * Configure [RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
+\- Can change the password for any user, including a Global Administrator
+user.
 
-  * Configure [Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
+\- Can change the password for any user, except a Global Administrator user.
 
-  * Configure [Discovery](/en/keeperpam/privileged-access-manager/discovery)
+Configure
+
+Configure
+
+Configure
+
+Configure
+
+Configure
+
+[page](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-
+tenant-id)
+
+[**Privileged Authentication Administrator**](https://learn.microsoft.com/en-
+us/azure/active-directory/roles/permissions-reference#privileged-
+authentication-administrator)
+
+[**Authentication Administrator**](https://learn.microsoft.com/en-
+us/azure/active-directory/roles/permissions-reference#authentication-
+administrator)
+
+[Rotation](/en/keeperpam/secrets-manager/password-rotation)
+
+[Connections](/en/keeperpam/privileged-access-manager/connections)
+
+[RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
+
+[Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
+
+[Discovery](/en/keeperpam/privileged-access-manager/discovery)
 
 Create Application
 

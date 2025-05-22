@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -419,10 +420,26 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * SSH Agent
+  * ssh-agent command
+  * Examples
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=9hjjGEmuyOZvFY38eOpa&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Connection Commands](/en/keeperpam/commander-cli/command-reference/connection-commands)
+
+# SSH Agent
+
+Commander can run an SSH Agent service for establishing remote connections.
+
+[PreviousSSH](/en/keeperpam/commander-cli/command-reference/connection-
+commands/ssh)[NextRDP](/en/keeperpam/commander-cli/command-
+reference/connection-commands/rdp)
 
 Last updated 4 months ago
 
@@ -478,7 +495,19 @@ Examples
 
 Starting the SSH Agent Service from the Commander CLI
 
+Copy
+
+    
+    
+    ssh-agent start
+
 Directly starting the SSH Agent without the shell:
+
+Copy
+
+    
+    
+    keeper ssh-agent start
 
 To use the SSH Agent from your favorite terminal or connection tool, the
 environmental variable SSH_AUTH_SOCK must be set in the terminal or in your
@@ -492,35 +521,7 @@ Copy
 
     
     
-    ssh-agent start
-
-Copy
-
-    
-    
-    keeper ssh-agent start
-
-Copy
-
-    
-    
     ssh-agent stop
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Connection Commands](/en/keeperpam/commander-cli/command-reference/connection-commands)
-
-# SSH Agent
-
-Commander can run an SSH Agent service for establishing remote connections.
-
-[PreviousSSH](/en/keeperpam/commander-cli/command-reference/connection-
-commands/ssh)[NextRDP](/en/keeperpam/commander-cli/command-
-reference/connection-commands/rdp)
-
-  * SSH Agent
-  * ssh-agent command
-  * Examples
 
 [KeeperPAM platform](/en/keeperpam)
 

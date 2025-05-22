@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -419,10 +420,34 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Secret Server Import
+  * Pre-requisites
+  * Adjust Session Timeout
+  * Step 1. Download Team and Shared Folder Structure
+  * Step 2. Import Shared Folders
+  * Step 3. Export TOTP Codes
+  * Step 4. Import the Secret Server Vault
+  * Step 5. Applying Memberships 
+  * Step 6. End-Users are invited to Keeper
+  * Receiving Shared Folders
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=MlvFjGfajCiV2JGixc1w&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
+
+# Delinea / Thycotic Secret Server Import
+
+Automatic migration of your Delinea (Thycotic) Secret Server vault
+
+[PreviousLastPass Data Import](/en/keeperpam/commander-cli/command-
+reference/import-and-export-commands/lastpass-import)[NextKeepass
+Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands/keepass-import)
 
 Last updated 1 month ago
 
@@ -473,7 +498,20 @@ Prior to running the above code snippet, make sure to:
 
 In Keeper Commander, the Keeper/Thycotic Administrator will run the following:
 
+Copy
+
+    
+    
+    download-membership --source=thycotic
+
 You will then be prompted with the following:
+
+Copy
+
+    
+    
+    ...     Thycotic Host or URL: https://xyz.acme.com/secretserver
+    ...     Thycotic Username: acme.com\user
 
 Executing the above code snippet will perform the following 3 functions:
 
@@ -506,6 +544,12 @@ Step 2. Import Shared Folders
 Before importing records, we will first create the shared folder structure on
 the Keeper side. Run the below command:
 
+Copy
+
+    
+    
+    import --format=json shared_folder_membership.json
+
 ###
 
 Step 3. Export TOTP Codes
@@ -532,6 +576,14 @@ Step 4. Import the Secret Server Vault
 
 In Keeper Commander, the Keeper/Thycotic Administrator will run the following
 command to perform the import of data using the Secret Server API:
+
+Copy
+
+    
+    
+    import --format=thycotic https://your-secret-server-hostname
+    or
+    import --format=thycotic username@your-secret-server-hostname
 
 This command will take several minutes (or more) to complete, depending on the
 number of vault records and users. A large Secret Server instance could take
@@ -565,6 +617,12 @@ corresponding teams. You can create missing teams through:
   * Commander's `create-team` command
 
 In Keeper Commander, the Keeper/Thycotic Administrator will run the following:
+
+Copy
+
+    
+    
+    apply-membership
 
 This will read the file called "shared_folder_membership.json" from Step 1 and
 apply the shared folder permissions for any users and teams in the Keeper
@@ -605,63 +663,6 @@ Due to the number of steps, we recommend performing a pilot test with a few
 users before rolling out to the entire organization.
 
 If you have any questions, please email commander@keepersecurity.com.
-
-Copy
-
-    
-    
-    download-membership --source=thycotic
-
-Copy
-
-    
-    
-    ...     Thycotic Host or URL: https://xyz.acme.com/secretserver
-    ...     Thycotic Username: acme.com\user
-
-Copy
-
-    
-    
-    import --format=json shared_folder_membership.json
-
-Copy
-
-    
-    
-    import --format=thycotic https://your-secret-server-hostname
-    or
-    import --format=thycotic username@your-secret-server-hostname
-
-Copy
-
-    
-    
-    apply-membership
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
-
-# Delinea / Thycotic Secret Server Import
-
-Automatic migration of your Delinea (Thycotic) Secret Server vault
-
-[PreviousLastPass Data Import](/en/keeperpam/commander-cli/command-
-reference/import-and-export-commands/lastpass-import)[NextKeepass
-Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands/keepass-import)
-
-  * Secret Server Import
-  * Pre-requisites
-  * Adjust Session Timeout
-  * Step 1. Download Team and Shared Folder Structure
-  * Step 2. Import Shared Folders
-  * Step 3. Export TOTP Codes
-  * Step 4. Import the Secret Server Vault
-  * Step 5. Applying Memberships 
-  * Step 6. End-Users are invited to Keeper
-  * Receiving Shared Folders
 
 Session Timeout
 

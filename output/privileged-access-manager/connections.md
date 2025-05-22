@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -442,7 +443,7 @@ Vault
 rotation/post-rotation-scripts/accessing-parameters)[NextGetting
 Started](/en/keeperpam/privileged-access-manager/connections/getting-started)
 
-Last updated 29 days ago
+Last updated 1 month ago
 
 Was this helpful?
 
@@ -540,14 +541,6 @@ and**clientless** architecture. Organizations need to install only a  in each
 managed environment. This streamlined approach simplifies deployment and
 enhances security by centralizing access management.
 
-Connecting to a Windows Machine
-
-Connecting to a Linux Machine
-
-Connection Dock
-
-Connection Dock Minimized
-
 For more information on the architecture, see this .
 
 To get started with Keeper Connections, proceed to the .
@@ -559,6 +552,14 @@ started/gateways)
 
 [next section](/en/keeperpam/privileged-access-manager/connections/getting-
 started)
+
+Connecting to a Windows Machine
+
+Connecting to a Linux Machine
+
+Connection Dock
+
+Connection Dock Minimized
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

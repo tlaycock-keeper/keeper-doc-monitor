@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -651,7 +652,15 @@ independently and does not require direct connectivity to the service,
 leveraging Keeper's zero-trust network access model to securely manage access
 through the Gateway. See the  for more details.
 
+Creating a PAM Directory
+
+PAM Settings
+
 See
+
+PAM Settings
+
+PAM Directory with Connection, Rotation and Tunnel Enabled
 
 [network architecture diagram](/en/keeperpam/privileged-access-
 manager/getting-started/architecture/system-architecture)
@@ -659,17 +668,6 @@ manager/getting-started/architecture/system-architecture)
 [Keeper Connections](/en/keeperpam/privileged-access-manager/connections)
 
 [Keeper Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
-
-[session recording](/en/keeperpam/privileged-access-manager/session-recording-
-and-playback)
-
-Creating a PAM Directory
-
-PAM Settings
-
-PAM Settings
-
-PAM Directory with Connection, Rotation and Tunnel Enabled
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -691,4 +689,7 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkmMyMNsM7
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FN889gw5Jl0rhnS1MqRsI%252FScreenshot%25202025-01-14%2520at%25209.15.20%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Df56979d9-6e19-4fc3-a1c6-15936bb6c512&width=768&dpr=4&quality=100&sign=3a9e809f&sv=2)
+
+[session recording](/en/keeperpam/privileged-access-manager/session-recording-
+and-playback)
 

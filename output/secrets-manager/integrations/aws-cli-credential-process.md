@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -562,6 +563,8 @@ alone.
 In order to create **new** custom Record Types, the user must be in an
 Administrative role with the "**Manage Record Types in Vault** " .
 
+An example of the minimum fields needed for the custom record.
+
 For help in obtaining a KSM configuration in JSON format, . After creating a
 new device get corresponding `config.json` and copy it into user's home folder
 as `aws-credential-process.json`
@@ -611,8 +614,6 @@ Security/aws-credential-process)
 
 [create a GitHub issue](https://github.com/Keeper-Security/aws-credential-
 process/issues)
-
-An example of the minimum fields needed for the custom record.
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

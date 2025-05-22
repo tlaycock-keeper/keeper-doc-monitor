@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -1089,10 +1090,17 @@ manager/integrations/kubernetes-external-secrets-operator)
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
 [Kubernetes External Secrets Operator](/en/keeperpam/secrets-
 manager/integrations/kubernetes-external-secrets-operator)
 
 Example Web Application displaying Keeper secrets
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fdy9FYgLsLsgtiFVY5RGh%252FScreen%2520Shot%25202021-12-13%2520at%252011.13.18%2520AM.png%3Falt%3Dmedia%26token%3D7a1a0a7a-ce97-4d5f-ad26-5b817ddfc178&width=768&dpr=4&quality=100&sign=25762f75&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -1111,11 +1119,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6TQeKxdHn
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FBWcNIoRMf6uNGoiDBVo5%252FScreen%2520Shot%25202021-12-13%2520at%252010.32.10%2520AM.png%3Falt%3Dmedia%26token%3Defdf29b3-c17f-4f19-bd49-5003f2de86df&width=768&dpr=4&quality=100&sign=54d25ebc&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fdy9FYgLsLsgtiFVY5RGh%252FScreen%2520Shot%25202021-12-13%2520at%252011.13.18%2520AM.png%3Falt%3Dmedia%26token%3D7a1a0a7a-ce97-4d5f-ad26-5b817ddfc178&width=768&dpr=4&quality=100&sign=25762f75&sv=2)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 

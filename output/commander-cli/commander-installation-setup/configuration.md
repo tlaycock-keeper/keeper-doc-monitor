@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -387,36 +388,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Commander Configuration File
@@ -523,7 +494,9 @@ https://keepersecurity.jp
 
   * `plugins` Set which password rotation plugin will be loaded. 
 
-    *   * `commands` Comma-separated list of Keeper commands to run 
+    * [Learn more](https://github.com/Keeper-Security/Commander/tree/master/keepercommander/plugins) about password rotation plugins for Commander. 
+
+  * `commands` Comma-separated list of Keeper commands to run 
 
   * `timedelay` Run the specified commands every X seconds. 
 
@@ -677,6 +650,11 @@ Copy
         "server": "keepersecurity.com"
     }
 
+The configuration file can be modified to include auto-execution of commands
+or other features. See the [configuration
+documentation](/en/keeperpam/commander-cli/commander-installation-
+setup/configuration#commander-configuration-file) for more details.
+
 You can create any number of persistent login sessions. However, the
 persistent session option is not intended for dynamic multi-server
 environments. If you share the exact configuration file on multiple servers,
@@ -773,6 +751,11 @@ Copy
 
 Combining Batch Mode and Persistent Login
 
+By setting up a persistent login configuration (as described in the [previous
+section](/en/keeperpam/commander-cli/commander-installation-
+setup/configuration#persistent-login-sessions)), you can execute a series of
+batch commands without any prompt for login. For example:
+
 Copy
 
     
@@ -819,7 +802,9 @@ section below for storage URL format.
 
 Commander supports the following protected storages:
 
-  *   * 
+  * [AWS Secrets Manager](/en/keeperpam/commander-cli/commander-installation-setup/configuration/aws-secrets-manager)
+
+  * [AWS Key Management Service](/en/keeperpam/commander-cli/commander-installation-setup/configuration/aws-key-management-service)
 
 [PreviousLogging in](/en/keeperpam/commander-cli/commander-installation-
 setup/logging-in)[NextAWS Secrets Manager](/en/keeperpam/commander-
@@ -829,26 +814,33 @@ Last updated 10 months ago
 
 Was this helpful?
 
-about password rotation plugins for Commander.
+#### Company
 
-The configuration file can be modified to include auto-execution of commands
-or other features. See the  for more details.
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-By setting up a persistent login configuration (as described in the ), you can
-execute a series of batch commands without any prompt for login. For example:
+#### Support
 
-[Learn more](https://github.com/Keeper-
-Security/Commander/tree/master/keepercommander/plugins)
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-[AWS Secrets Manager](/en/keeperpam/commander-cli/commander-installation-
-setup/configuration/aws-secrets-manager)
+#### Solutions
 
-[AWS Key Management Service](/en/keeperpam/commander-cli/commander-
-installation-setup/configuration/aws-key-management-service)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-[configuration documentation](/en/keeperpam/commander-cli/commander-
-installation-setup/configuration#commander-configuration-file)
+#### Pricing
 
-[previous section](/en/keeperpam/commander-cli/commander-installation-
-setup/configuration#persistent-login-sessions)
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

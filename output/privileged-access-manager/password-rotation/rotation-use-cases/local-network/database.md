@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -387,50 +388,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=ysr2NYCZBG4ktfBTtEjz&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
-
-# Database
-
-DB credential Rotation in the Local Environment
-
-In this section, you will learn how to rotate **database user** credentials
-within your local network.
-
-###
-
-Databases Supported
-
-  * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
-
-  * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
-
-  * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
-
-  * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
-
-  * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
-
-  * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
-
-[PreviousmacOS User](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/macos-user)[NextNative
-MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/local-network/database/mysql)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -460,4 +417,56 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=ysr2NYCZBG4ktfBTtEjz&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
+
+# Database
+
+DB credential Rotation in the Local Environment
+
+[PreviousmacOS User](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/macos-user)[NextNative
+MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/local-network/database/mysql)
+
+Last updated 4 months ago
+
+Was this helpful?
+
+In this section, you will learn how to rotate **database user** credentials
+within your local network.
+
+###
+
+Databases Supported
+
+  *   *   *   *   *   * 
+
+[Native MySQL](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/database/mysql)
+
+[Native MariaDB](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/database/mariadb)
+
+[Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/database/postgresql)
+
+[Native MongoDB](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/database/mongodb)
+
+[Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/database/ms-sql-server)
+
+[Native Oracle](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/database/oracle)
 

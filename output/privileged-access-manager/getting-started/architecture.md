@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -387,28 +388,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=ZM6e8hogz5utnJbqQsx4&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-
-# Architecture
-
-Technical details on the KeeperPAM platform architecture
-
-[PreviousGetting Started](/en/keeperpam/privileged-access-manager/getting-
-started)[NextArchitecture Diagram](/en/keeperpam/privileged-access-
-manager/getting-started/architecture/system-architecture)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -439,6 +418,28 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=ZM6e8hogz5utnJbqQsx4&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+# Architecture
+
+Technical details on the KeeperPAM platform architecture
+
+[PreviousGetting Started](/en/keeperpam/privileged-access-manager/getting-
+started)[NextArchitecture Diagram](/en/keeperpam/privileged-access-
+manager/getting-started/architecture/system-architecture)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -455,13 +456,20 @@ connectivity, while never exposing underlying credentials or secrets.
 
 This security content will cover the key areas of KeeperPAM:
 
-  * [Architecture Diagram](/en/keeperpam/privileged-access-manager/getting-started/architecture/system-architecture)
+  *   *   *   *   * 
 
-  * [Vault Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/vault-security)
+[Architecture Diagram](/en/keeperpam/privileged-access-manager/getting-
+started/architecture/system-architecture)
 
-  * [Router Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/router-security)
+[Vault Security](/en/keeperpam/privileged-access-manager/getting-
+started/architecture/vault-security)
 
-  * [Gateway Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/gateway-security)
+[Router Security](/en/keeperpam/privileged-access-manager/getting-
+started/architecture/router-security)
 
-  * [Connection and Tunnel Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/connection-and-tunnel-security)
+[Gateway Security](/en/keeperpam/privileged-access-manager/getting-
+started/architecture/gateway-security)
+
+[Connection and Tunnel Security](/en/keeperpam/privileged-access-
+manager/getting-started/architecture/connection-and-tunnel-security)
 

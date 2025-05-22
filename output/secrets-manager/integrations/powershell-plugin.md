@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -387,6 +388,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Features
@@ -422,36 +453,6 @@ Last updated 6 months ago
 
 Was this helpful?
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 Features
@@ -464,9 +465,6 @@ Features
 
   * Get files from the Keeper vault
 
-For a complete list of Keeper Secrets Manager features see the [Overview
-](/en/keeperpam/secrets-manager/overview)
-
 ##
 
 Prerequisites
@@ -478,23 +476,13 @@ Secrets Manager requires **PowerShell version 6 or greater**. Microsoft
 distributes PowerShell version 6+ as a separate application from versions 5
 and earlier.
 
-See [Microsoft's Documentation](https://docs.microsoft.com/en-
-us/powershell/scripting/install/installing-powershell?view=powershell-7.1) for
-installation details
-
   * **PowerShell Version 6.0 or later**
 
-    * See [Microsoft's Documentation](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.1) for installation details
-
-  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
-
-    * Secrets Manager addon enabled for your Keeper account
+    *   *     * Secrets Manager addon enabled for your Keeper account
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
-
-    *   * [A One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
+  *     *   * 
 
 ##
 
@@ -506,9 +494,6 @@ PowerShell scripts.
 
 The Keeper Secrets Manager extension can be easily configured added as a
 secret vault into new or existing PowerShell Secret Management workflows.
-
-For more information about PowerShell Secret Management, see the [PowerShell
-docs](https://github.com/powershell/SecretManagement) on their GitHub page.
 
 ##
 
@@ -529,10 +514,6 @@ Copy
     
     Install-Module -Name Microsoft.PowerShell.SecretManagement
 
-See [PowerShell
-Gallery](https://www.powershellgallery.com/packages/Microsoft.PowerShell.SecretManagement/1.1.0)
-for other installation options
-
 ####
 
 2\. Install Keeper Secrets Manager for PowerShell
@@ -546,12 +527,6 @@ Copy
     
     Install-Module -Name SecretManagement.Keeper
 
-See the [PowerShell Gallery
-page](https://www.powershellgallery.com/packages/SecretManagement.Keeper) for
-more installation options, or find the source code in
-[GitHub](https://github.com/Keeper-Security/secrets-
-manager/tree/master/sdk/dotNet/SecretManagement.Keeper).
-
 To update SecretManagement, use the command: `Update-Module -Name
 SecretManagement.Keeper`
 
@@ -564,11 +539,6 @@ can skip this step
 
 The Keeper Secrets Manager PowerShell plugin will need a secret management
 extension to store the plugin configuration locally to your machine.
-
-Keeper recommends
-[Microsoft.Powershell.SecretStore](https://www.powershellgallery.com/packages/Microsoft.PowerShell.SecretStore)
-or
-[SecretManagement.KeyChain](https://www.powershellgallery.com/packages/SecretManagement.KeyChain)
 
 SecretStore
 
@@ -673,20 +643,12 @@ The Keeper Secrets Manager PowerShell Plugin is now ready to be used
 
 Source Code
 
-Find the Keeper Secrets Manager PowerShell Plugin source code in the [GitHub
-repository](https://github.com/Keeper-Security/secrets-
-manager/tree/master/sdk/dotNet/SecretManagement.Keeper).
-
 ##
 
 Usage
 
 Find descriptions and examples of the most common usage of the Keeper Secrets
 Manager PowerShell plugin below.
-
-For more information about PowerShell Secret Management commands, see the
-[PowerShell docs](https://github.com/powershell/SecretManagement) on their
-GitHub page.
 
 Starting with version 16.6.6 `Get/Set` commands allow use of `\` as and escape
 character for dots in title. Use escape character only if there's dot in
@@ -761,10 +723,6 @@ shows them as a `SecureString`
 ###
 
 Get a Value From a Secret
-
-Utilize [Keeper Dot Notation](/en/keeperpam/secrets-manager/about/keeper-
-notation) to identify a field to access. Note that you do not need the
-'keeper://' prefix.
 
 Command
 
@@ -847,7 +805,71 @@ Copy
 The specified file will be downloaded to the path location given to `Set-
 Content`
 
+For a complete list of Keeper Secrets Manager features see the
+
+See  for installation details
+
+See  for installation details
+
+Keeper Secrets Manager access (See the  for more details)
+
+A Keeper  with secrets shared to it
+
 See the  for instructions on creating an Application
+
+For more information about PowerShell Secret Management, see the  on their
+GitHub page.
+
+See  for other installation options
+
+See the  for more installation options, or find the source code in .
+
+Keeper recommends  or
+
+Find the Keeper Secrets Manager PowerShell Plugin source code in the .
+
+For more information about PowerShell Secret Management commands, see the  on
+their GitHub page.
+
+Utilize  to identify a field to access. Note that you do not need the
+'keeper://' prefix.
+
+[Overview ](/en/keeperpam/secrets-manager/overview)
+
+[Microsoft's Documentation](https://docs.microsoft.com/en-
+us/powershell/scripting/install/installing-powershell?view=powershell-7.1)
+
+[Microsoft's Documentation](https://docs.microsoft.com/en-
+us/powershell/scripting/install/installing-powershell?view=powershell-7.1)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+[A One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
+
+[PowerShell docs](https://github.com/powershell/SecretManagement)
+
+[PowerShell
+Gallery](https://www.powershellgallery.com/packages/Microsoft.PowerShell.SecretManagement/1.1.0)
+
+[PowerShell Gallery
+page](https://www.powershellgallery.com/packages/SecretManagement.Keeper)
+
+[GitHub](https://github.com/Keeper-Security/secrets-
+manager/tree/master/sdk/dotNet/SecretManagement.Keeper)
+
+[Microsoft.Powershell.SecretStore](https://www.powershellgallery.com/packages/Microsoft.PowerShell.SecretStore)
+
+[SecretManagement.KeyChain](https://www.powershellgallery.com/packages/SecretManagement.KeyChain)
+
+[GitHub repository](https://github.com/Keeper-Security/secrets-
+manager/tree/master/sdk/dotNet/SecretManagement.Keeper)
+
+[PowerShell docs](https://github.com/powershell/SecretManagement)
+
+[Keeper Dot Notation](/en/keeperpam/secrets-manager/about/keeper-notation)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)

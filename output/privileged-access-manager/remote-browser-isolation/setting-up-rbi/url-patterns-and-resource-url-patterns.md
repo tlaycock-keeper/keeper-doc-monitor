@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -477,6 +478,10 @@ beneath “/foo”. Requests must be made to the standard port for HTTPS.
 This would allow any protocol or path from `google.com` root domain, but does
 not allow a subdomain.
 
+In the next section, we'll cover the [autofill
+capabilities](/en/keeperpam/privileged-access-manager/remote-browser-
+isolation/setting-up-rbi/browser-autofill).
+
 [PreviousSetting up RBI](/en/keeperpam/privileged-access-manager/remote-
 browser-isolation/setting-up-rbi)[NextBrowser
 Autofill](/en/keeperpam/privileged-access-manager/remote-browser-
@@ -515,9 +520,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-In the next section, we'll cover the .
-
-[autofill capabilities](/en/keeperpam/privileged-access-manager/remote-
-browser-isolation/setting-up-rbi/browser-autofill)
 

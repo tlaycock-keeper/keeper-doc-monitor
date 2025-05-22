@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -445,7 +446,7 @@ installation-setup/automating-with-windows-
 task)[NextUninstallation](/en/keeperpam/commander-cli/commander-installation-
 setup/uninstallation)
 
-Last updated 6 months ago
+Last updated 7 months ago
 
 Was this helpful?
 
@@ -1013,29 +1014,29 @@ installation-setup)
 
 [Command Reference](/en/keeperpam/commander-cli/command-reference)
 
-[ config file documentation ](/en/keeperpam/commander-cli/commander-
-installation-setup/logging-in#commander-configuration-file)
-
 [Invoking Lambda functions - AWS LambdaAWS
 Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
+
+![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fdocs.aws.amazon.com%2Fassets%2Fimages%2Ffavicon.ico&width=20&dpr=4&quality=100&sign=ecb3c813&sv=2)
 
 [Send email using Lambda and Amazon SESAmazon Web Services,
 Inc.](https://aws.amazon.com/premiumsupport/knowledge-center/lambda-send-
 email-ses/)
 
-![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fdocs.aws.amazon.com%2Fassets%2Fimages%2Ffavicon.ico&width=20&dpr=4&quality=100&sign=ecb3c813&sv=2)
-
 [Commander/examples at master · Keeper-
 Security/CommanderGitHub](https://github.com/Keeper-
 Security/Commander/tree/master/examples)
 
-![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
+[ config file documentation ](/en/keeperpam/commander-cli/commander-
+installation-setup/logging-in#commander-configuration-file)
 
 [2KBpackage_layer_content.sh](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
 x-
 prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FgxJz7bvtfe4hTfuTA0cc%2Fpackage_layer_content.sh?alt=media&token=f624bf70-327c-4b10-9f18-a1f1ae06ecc1)
 
 Bash script for packaging `keepercommander` Lambda Layer content
+
+![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
 
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fa0.awsstatic.com%2Flibra-
 css%2Fimages%2Fsite%2Ftouch-icon-

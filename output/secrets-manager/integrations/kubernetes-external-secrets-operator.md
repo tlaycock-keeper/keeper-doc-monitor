@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -873,6 +874,9 @@ record-types)
 [Record's field's Type](https://docs.keeper.io/secrets-manager/secrets-
 manager/about/field-record-types)
 
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
 [Kubernetes Secret](/en/keeperpam/secrets-manager/integrations/kubernetes-
 external-secrets-operator#create-kubernetes-secret-to-store-base64-ksm-config)
 
@@ -886,9 +890,6 @@ external-secrets-operator#create-externalsecret)
 
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

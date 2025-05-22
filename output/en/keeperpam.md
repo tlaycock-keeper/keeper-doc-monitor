@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -419,10 +420,23 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * About this Documentation
+  * KeeperPAM vs. Keeper Connection Manager
+  * Features
+  * Contact the Keeper Team
+  * Next Steps
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-MJXO_hpAODecU2amxqS&only=yes&limit=100)
+
+# KeeperPAM
+
+KeeperPAM is a modern, cloud-based Privileged Access Manager
+
+[NextSetup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
 
 Last updated 1 month ago
 
@@ -531,19 +545,6 @@ of KeeperPAM
 Launch the
 
 Deep dive into the
-
-# KeeperPAM
-
-KeeperPAM is a modern, cloud-based Privileged Access Manager
-
-[NextSetup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
-
-  * Overview
-  * About this Documentation
-  * KeeperPAM vs. Keeper Connection Manager
-  * Features
-  * Contact the Keeper Team
-  * Next Steps
 
 [**KeeperPAM Website**](https://www.keepersecurity.com/privileged-access-
 management/)

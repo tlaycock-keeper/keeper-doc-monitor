@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -418,7 +419,7 @@ Applying least privilege policies to your users and machines
 manager/deployment)[NextManaging Requests](/en/keeperpam/endpoint-privilege-
 manager/managing-requests)
 
-Last updated 1 month ago
+Last updated 7 hours ago
 
 Was this helpful?
 
@@ -458,8 +459,9 @@ Policy Overview
 
 Endpoint Privilege Manager can apply least privilege policies to users and
 machines across the fleet of endpoints which are running the Keeper agent.
-Policies are applied to collections, and the policy is customized by the Admin
-based on your organization's requirements.
+Policies can be applied to collections of users, groups, machines,
+applications and date/time ranges. The policy is customized by the Admin based
+on the organization's requirements.
 
 ###
 
@@ -485,6 +487,8 @@ Keeper supports the following policy types:
   * **Least Privilege** : Removes local users from the admin role.
 
   * **File Access** : Controls access to executables and sensitive files.
+
+  * **Command Line** : For controlling sudo on unix based systems.
 
 ###
 
@@ -574,6 +578,12 @@ Offline Access
 Policies created by the Keeper Admin are pushed to the end-user devices and
 cached locally. Policies are then evaluated on the device while offline.
 
+  * If justification is required, the user's justification message is cached offline until the agent is online again and sent to the server. If the policy only requires justification, execution is permitted.
+
+  * If MFA is required, the user will be able to execute the action only when online.
+
+  * If approval is required, the user can initiate the approval only when online.
+
 ###
 
 Commander CLI
@@ -605,8 +615,6 @@ Copy
 
 Policies
 
-Create Policy
-
 Policy Editor
 
 Advanced Policy Editor
@@ -623,7 +631,7 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5iLgF8VeC
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIt7D3CBJxQaLndrqHR27%252FCreate%2520Policy.png%3Falt%3Dmedia%26token%3D752738d6-b4a6-45a6-a93f-6931ad9b6366&width=768&dpr=4&quality=100&sign=e99c48d5&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FK6LpJEGxm9x9K2Bh2cMI%252FScreenshot%25202025-05-21%2520at%25209.26.54%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D40f36fc2-1f3e-4659-8b9c-6fc2ae4ce43e&width=768&dpr=4&quality=100&sign=8da684bd&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

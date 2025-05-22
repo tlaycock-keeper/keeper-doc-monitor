@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -387,34 +388,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Using the Gateway Wizard 
-  * Using Keeper Secrets Manager
-  * Using Commander CLI
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=LuE8qRgdmKqbHNA40Y9O&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-# Creating a Gateway
-
-Creating a Keeper Gateway
-
-[PreviousGateways](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)[NextDocker Installation](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/docker-installation)
-
-Last updated 29 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -445,6 +418,34 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Overview
+  * Using the Gateway Wizard 
+  * Using Keeper Secrets Manager
+  * Using Commander CLI
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=LuE8qRgdmKqbHNA40Y9O&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+# Creating a Gateway
+
+Creating a Keeper Gateway
+
+[PreviousGateways](/en/keeperpam/privileged-access-manager/getting-
+started/gateways)[NextDocker Installation](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/docker-installation)
+
+Last updated 1 month ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -472,7 +473,7 @@ Gateway Wizard. From the Web Vault or Desktop App, click on **Create New** >
 The below link describes how to create a sandbox environment in just a few
 steps:
 
-  * [Quick Start: Sandbox](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
+  * 
 
 ##
 
@@ -562,28 +563,35 @@ Copy
 
 Create a Gateway
 
-To initialize a Gateway for [Linux](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/linux-installation) or
-[Windows](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/windows-installation) native install methods, the one-time
-token method is used:
-
 Copy
 
     
     
     pam gateway new -n "My Demo Gateway" -a "My Infrastructure"
 
-To initialize a Gateway using Docker, the base64 configuration is provided as
-`GATEWAY_CONFIG` environment variable as described in the [Docker
-Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/docker-installation) instructions.
-
 Copy
 
     
     
     pam gateway new -n "My Demo Gateway" -a "My Infrastructure" -c b64
+
+To initialize a Gateway for  or  native install methods, the one-time token
+method is used:
+
+To initialize a Gateway using Docker, the base64 configuration is provided as
+`GATEWAY_CONFIG` environment variable as described in the  instructions.
+
+[Quick Start: Sandbox](/en/keeperpam/privileged-access-manager/quick-start-
+sandbox)
+
+[Linux](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/linux-installation)
+
+[Windows](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/windows-installation)
+
+[Docker Installation](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/docker-installation)
 
 Creating a Gateway
 

@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -387,6 +388,33 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * What's an Application?
+  * Creating an Application
+  * Generating a One-Time Access Token
+  * Assigning Gateways to Applications
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=yQtvlKUgUA2k4m0c7v5k&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+# Applications
+
+Secrets Manager Applications with KeeperPAM
+
+[PreviousRecord Linking](/en/keeperpam/privileged-access-manager/getting-
+started/record-linking)[NextDevices](/en/keeperpam/privileged-access-
+manager/getting-started/devices)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -416,33 +444,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * What's an Application?
-  * Creating an Application
-  * Generating a One-Time Access Token
-  * Assigning Gateways to Applications
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=yQtvlKUgUA2k4m0c7v5k&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-
-# Applications
-
-Secrets Manager Applications with KeeperPAM
-
-[PreviousRecord Linking](/en/keeperpam/privileged-access-manager/getting-
-started/record-linking)[NextDevices](/en/keeperpam/privileged-access-
-manager/getting-started/devices)
-
-Last updated 4 months ago
-
-Was this helpful?
 
 ###
 

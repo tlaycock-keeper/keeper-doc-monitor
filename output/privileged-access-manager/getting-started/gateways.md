@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -419,10 +420,27 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * Platforms Supported
+  * Platform Specific Capabilities
+  * System Requirements
+  * Installation Steps
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=YVitXRsJWzo14VlLdwoR&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+# Gateways
+
+Installation and setup of the Keeper Gateway
+
+[PreviousDevices](/en/keeperpam/privileged-access-manager/getting-
+started/devices)[NextCreating a Gateway](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/one-time-access-token)
 
 Last updated 1 month ago
 
@@ -451,6 +469,34 @@ Platform Specific Capabilities
 The Keeper Gateway offers different feature capabilities based on the
 underlying operating system and hardware. We recommend using Docker on a Linux
 or Windows host with x86 CPUs for full feature support and ease of management.
+
+Platform
+
+Compatibility
+
+**Docker** (Linux or Windows host w/ x86)
+
+  * All features supported
+
+**Linux** (RHEL 8, Rocky Linux 8)
+
+  * All features supported
+
+**Docker** (Linux host on ARM)
+
+  * No Remote Browser Isolation
+
+**Linux** **Binary Install** (Ubuntu, Debian)
+
+  * No Remote Browser Isolation
+
+  * Limited connection protocols
+
+**Windows Binary Install**
+
+  * No Remote Browser Isolation
+
+  * No database connections
 
 Note: EL9 which includes Rocky Linux 9 and RHEL 9 support is coming soon.
 
@@ -505,54 +551,9 @@ the Keeper Gateway:
 
 Additional Installation Configurations
 
-Platform
-
-Compatibility
-
 If you are installing on an EC2 instance in AWS, the Keeper Gateway can be
 configured to use the instance role for pulling its configuration from AWS
 Secrets Manager. Detailed instructions on this setup can be .
-
-**Docker** (Linux or Windows host w/ x86)
-
-  * All features supported
-
-**Linux** (RHEL 8, Rocky Linux 8)
-
-  * All features supported
-
-**Docker** (Linux host on ARM)
-
-  * No Remote Browser Isolation
-
-**Linux** **Binary Install** (Ubuntu, Debian)
-
-  * No Remote Browser Isolation
-
-  * Limited connection protocols
-
-**Windows Binary Install**
-
-  * No Remote Browser Isolation
-
-  * No database connections
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-
-# Gateways
-
-Installation and setup of the Keeper Gateway
-
-[PreviousDevices](/en/keeperpam/privileged-access-manager/getting-
-started/devices)[NextCreating a Gateway](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/one-time-access-token)
-
-  * Overview
-  * Platforms Supported
-  * Platform Specific Capabilities
-  * System Requirements
-  * Installation Steps
 
 [**Docker**](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/docker-installation)

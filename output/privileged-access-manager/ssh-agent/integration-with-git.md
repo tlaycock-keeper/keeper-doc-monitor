@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -459,7 +460,7 @@ Prerequisites
 
   * Ensure that [SSH Agent is active](/en/keeperpam/privileged-access-manager/ssh-agent) on the Keeper Desktop
 
-  * [Terminal Configuration](/en/keeperpam/privileged-access-manager/ssh-agent#terminal-configuration) is performed
+  * 
 
 ##
 
@@ -769,11 +770,16 @@ Copy
 
 Setup is complete.
 
+is performed
+
 [GitHub Authentication](/en/keeperpam/privileged-access-manager/ssh-
 agent/integration-with-git#github-authentication)
 
 [Signing Commits](/en/keeperpam/privileged-access-manager/ssh-
 agent/integration-with-git#signing-commits)
+
+[Terminal Configuration](/en/keeperpam/privileged-access-manager/ssh-
+agent#terminal-configuration)
 
 Keeper SSH Key for Github Authentication
 

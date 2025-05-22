@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -450,6 +451,8 @@ development teams with a fully cloud-based, Zero-Knowledge platform for
 managing all of your infrastructure secrets such as API keys, Database
 passwords, access keys, certificates and any type of confidential data.
 
+Secrets Manager Video Demo
+
 Common use cases for Secrets Manager include:
 
   * Removing hard-coded credentials from source code
@@ -514,8 +517,6 @@ Get Started
 
 Ready to get started with Keeper Secrets Manager? [Proceed to the Setup
 Instructions](/en/keeperpam/secrets-manager/quick-start-guide).
-
-Secrets Manager Video Demo
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

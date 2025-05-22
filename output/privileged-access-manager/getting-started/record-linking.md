@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -472,6 +473,8 @@ This update guides users to transition their rotating credentials into the
 more secure **PAM User** record type for enhanced security and proper
 separation of credentials from resources.
 
+Splitting Resource and Credentials
+
 By clicking "Convert Now", you'll be asked to confirm the change and the
 credentials will be separated from the resource and placed in the same folder.
 
@@ -480,8 +483,6 @@ in the same folder will contain the linked credential.
 
 Once the resource has been split, PAM capabilities including connections,
 tunnels and rotations can be enabled.
-
-Splitting Resource and Credentials
 
 Finish Record Splitting
 

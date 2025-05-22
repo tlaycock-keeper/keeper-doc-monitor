@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -424,6 +425,18 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=nmFaBJWoWQ32fLahhDHX&only=yes&limit=100)
 
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
+
+# ManageEngine Import
+
+Automatic migration of your ManageEngine vault
+
+[PreviousKeepass Import](/en/keeperpam/commander-cli/command-reference/import-
+and-export-commands/keepass-import)[NextMyki Import](/en/keeperpam/commander-
+cli/command-reference/import-and-export-commands/myki-import)
+
 Last updated 5 months ago
 
 Was this helpful?
@@ -437,26 +450,14 @@ ManageEngine Password Manager Pro server. Importing file attachments from a
 File Store resource is also supported. You will need a ManageEngine user with
 API access and a generated token to use this import functionality.
 
-Substitute `https://localhost:7272` with your server URL and port. You will
-then need to enter your ManageEngine API token.
-
 Copy
 
     
     
     $ keeper import --format=manageengine https://localhost:7272
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
-
-# ManageEngine Import
-
-Automatic migration of your ManageEngine vault
-
-[PreviousKeepass Import](/en/keeperpam/commander-cli/command-reference/import-
-and-export-commands/keepass-import)[NextMyki Import](/en/keeperpam/commander-
-cli/command-reference/import-and-export-commands/myki-import)
+Substitute `https://localhost:7272` with your server URL and port. You will
+then need to enter your ManageEngine API token.
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

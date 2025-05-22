@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -469,7 +470,7 @@ manager/references/database-import-and-export)[NextInstalling Docker on
 Linux](/en/keeperpam/privileged-access-manager/references/installing-docker-
 on-linux)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

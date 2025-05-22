@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -424,6 +425,17 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=BMjdtCP9NKJa8lm8DJaW&only=yes&limit=100)
 
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
+
+# Custom Record Types
+
+Utilizing custom record types in the Keeper Secrets Manager CLI
+
+[PreviousDocker Container](/en/keeperpam/secrets-manager/secrets-manager-
+command-line-interface/docker-container)[NextPassword
+Rotation](/en/keeperpam/secrets-manager/password-rotation)
+
 Last updated 7 months ago
 
 Was this helpful?
@@ -444,6 +456,12 @@ using .
 
 The below will export the "My Custom" record type, as JSON, to the file
 `my_record_type.json`.
+
+Copy
+
+    
+    
+    My Vault> rti --format json -lr "My Custom" --output my_record_type.json
 
 The JSON file should be copied into a directory called `record_type`. The
 location of the `record_type` directory is the same as the location of the
@@ -477,25 +495,14 @@ for the `keeper.ini`.
 
     * `$env:ProgramFiles/Keeper`
 
-Once the file is copied into the `record_type` directory, it will be visible
-in the list of available record types.
-
-At this point the custom record type can be used to create a new record.
-
-If the custom record type name contains spaces, the name will need to be
-surrounded by quotes.
-
-All custom record type name need to be unique. An error will occur if a record
-type with the same name has already been imported. You also cannot override
-the default record types.
-
-An alternative directory can be set via the .
-
 Copy
 
     
     
     $ ksm config record-type-dir -d /path/to/my/record/type/schemas
+
+Once the file is copied into the `record_type` directory, it will be visible
+in the list of available record types.
 
 Copy
 
@@ -510,6 +517,8 @@ Copy
      ...
      My Custom
 
+At this point the custom record type can be used to create a new record.
+
 Copy
 
     
@@ -517,22 +526,14 @@ Copy
     $ ksm secret add field --sf XXXX --rt "My Custom" -t "My Record" \
         "login=jsmith" "password=XXXX" "url=https://localhost"
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
+If the custom record type name contains spaces, the name will need to be
+surrounded by quotes.
 
-# Custom Record Types
+All custom record type name need to be unique. An error will occur if a record
+type with the same name has already been imported. You also cannot override
+the default record types.
 
-Utilizing custom record types in the Keeper Secrets Manager CLI
-
-[PreviousDocker Container](/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface/docker-container)[NextPassword
-Rotation](/en/keeperpam/secrets-manager/password-rotation)
-
-Copy
-
-    
-    
-    My Vault> rti --format json -lr "My Custom" --output my_record_type.json
+An alternative directory can be set via the .
 
 [Enterprise Guide](https://docs.keeper.io/en/enterprise-guide/record-types)
 

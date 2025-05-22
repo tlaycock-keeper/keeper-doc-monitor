@@ -183,6 +183,7 @@ KeeperPAM and Secrets Manager
       * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
       * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
+    * [KeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
     * [On-Prem Connection Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
     * [References](/en/keeperpam/privileged-access-manager/references)
 
@@ -419,10 +420,27 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Commands
+  * record-type-info command:
+  * record-type command:
+  * convert command:
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-MeV_c6NElhHx7ttfoS1&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Record Commands](/en/keeperpam/commander-cli/command-reference/record-commands)
+
+# Record Type Commands
+
+Commands for creating and managing Record Types and Custom Templates
+
+[PreviousRecord Commands](/en/keeperpam/commander-cli/command-
+reference/record-commands)[NextCreating Record Types](/en/keeperpam/commander-
+cli/command-reference/record-commands/default-record-types)
 
 Last updated 4 months ago
 
@@ -450,6 +468,22 @@ To get help on a particular command, run:
 ####
 
 All commands associated with record types
+
+Command
+
+Explanation
+
+`record-type-info` or `rti`
+
+List record types or see information about a specific record type
+
+`record-type` or `rt`
+
+Add, edit, or delete custom record types
+
+`convert`
+
+Convert legacy records to record-typed records
 
 ###
 
@@ -481,6 +515,18 @@ with -lr or -lf
 format is used
 
 **Examples:**
+
+Copy
+
+    
+    
+    rti
+    rti -lr login
+    rti -lf name
+    rti -lf *
+    rti -lr passport -e
+    rti --syntax-help
+    rti --output logs/record-types.csv --format csv
 
   1. show list of record types
 
@@ -524,11 +570,52 @@ Format:
 
 Record types utilize the following formatting:
 
+Copy
+
+    
+    
+        { "$id": <record type name>,
+         "fields": [ 
+           { "$ref": <field type>}, 
+           { "$ref": <field type>, "label": <foeld label(optional)>, required: <true/false (optional) }
+          ] }
+
 Example:
+
+Copy
+
+    
+    
+    {
+       "$id":"My Record Type",
+       "fields": [
+          {
+            "$ref":"login",
+            "label":"AppLogin",
+            "required":true
+          },
+          {
+            "$ref":"name",
+            "label":"Your name"
+          },
+          {
+            "$ref":"address",
+            "required":true
+          }
+        ]
+    }
 
   *   * Use the following command to see a list of available field types: `rti -lf *`
 
  **Examples:**
+
+Copy
+
+    
+    
+    rt --action add --data '{"$id":"My Record Type", "fields": [{"$ref":"login","label":"AppLogin","required":true},{"$ref":"name","label":"Your name"},{"$ref":"address","required":true}]}'
+    rt 102 -a update --data '{"$id":"My Record Type", "fields": [{"$ref":"login","label":"AppLogin","required":true},{"$ref":"name","label":"Your name"}]}'
+    rt 102 -a remove
 
   1. Add a new record type named "My Record Type"
 
@@ -579,6 +666,16 @@ account
 
 **Examples:**
 
+Copy
+
+    
+    
+    convert Dtvb84zwkBmZgxrUByUfpg --record-type login
+    convert * --record-type login --recursive --dry-run
+    convert * -t login -r
+    convert *sql* -t databaseCredentials 
+    convert *ssh-? -t sshKeys --recursive
+
   1. Convert the untyped record with the given UID to a login type record
 
   2. Perform a dry-run of conversion of all records in the vault and display what records would be converted. (will match all records if performed at the root directory)
@@ -596,102 +693,6 @@ See a list of all field types
 To convert the type of a typed record, use the  command.
 
 see  for a list of all standard record types
-
-Copy
-
-    
-    
-    rti
-    rti -lr login
-    rti -lf name
-    rti -lf *
-    rti -lr passport -e
-    rti --syntax-help
-    rti --output logs/record-types.csv --format csv
-
-Copy
-
-    
-    
-        { "$id": <record type name>,
-         "fields": [ 
-           { "$ref": <field type>}, 
-           { "$ref": <field type>, "label": <foeld label(optional)>, required: <true/false (optional) }
-          ] }
-
-Copy
-
-    
-    
-    {
-       "$id":"My Record Type",
-       "fields": [
-          {
-            "$ref":"login",
-            "label":"AppLogin",
-            "required":true
-          },
-          {
-            "$ref":"name",
-            "label":"Your name"
-          },
-          {
-            "$ref":"address",
-            "required":true
-          }
-        ]
-    }
-
-Copy
-
-    
-    
-    rt --action add --data '{"$id":"My Record Type", "fields": [{"$ref":"login","label":"AppLogin","required":true},{"$ref":"name","label":"Your name"},{"$ref":"address","required":true}]}'
-    rt 102 -a update --data '{"$id":"My Record Type", "fields": [{"$ref":"login","label":"AppLogin","required":true},{"$ref":"name","label":"Your name"}]}'
-    rt 102 -a remove
-
-Copy
-
-    
-    
-    convert Dtvb84zwkBmZgxrUByUfpg --record-type login
-    convert * --record-type login --recursive --dry-run
-    convert * -t login -r
-    convert *sql* -t databaseCredentials 
-    convert *ssh-? -t sshKeys --recursive
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Record Commands](/en/keeperpam/commander-cli/command-reference/record-commands)
-
-# Record Type Commands
-
-Commands for creating and managing Record Types and Custom Templates
-
-[PreviousRecord Commands](/en/keeperpam/commander-cli/command-
-reference/record-commands)[NextCreating Record Types](/en/keeperpam/commander-
-cli/command-reference/record-commands/default-record-types)
-
-  * Commands
-  * record-type-info command:
-  * record-type command:
-  * convert command:
-
-Command
-
-Explanation
-
-`record-type-info` or `rti`
-
-List record types or see information about a specific record type
-
-`record-type` or `rt`
-
-Add, edit, or delete custom record types
-
-`convert`
-
-Convert legacy records to record-typed records
 
 [Creating Record Types](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types)
