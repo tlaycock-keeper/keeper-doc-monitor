@@ -606,8 +606,6 @@ The steps to create the access keys is below:
 
   5. Save the provided Access Key ID / Secret Access Key into the PAM Configuration
 
-AWS Rotation Hierarchy
-
 In addition to these policies, we recommend protecting the Gateway
 Configuration secrets .
 
@@ -619,6 +617,8 @@ configuration/aws-environment-setup#ec2-role)
 
 [IAM User Policy](/en/keeperpam/privileged-access-manager/getting-started/pam-
 configuration/aws-environment-setup#iam-admin-user-1)
+
+AWS Rotation Hierarchy
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

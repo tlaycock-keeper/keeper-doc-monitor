@@ -388,6 +388,28 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=ZM6e8hogz5utnJbqQsx4&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+# Architecture
+
+Technical details on the KeeperPAM platform architecture
+
+[PreviousGetting Started](/en/keeperpam/privileged-access-manager/getting-
+started)[NextArchitecture Diagram](/en/keeperpam/privileged-access-
+manager/getting-started/architecture/system-architecture)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -418,28 +440,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=ZM6e8hogz5utnJbqQsx4&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-
-# Architecture
-
-Technical details on the KeeperPAM platform architecture
-
-[PreviousGetting Started](/en/keeperpam/privileged-access-manager/getting-
-started)[NextArchitecture Diagram](/en/keeperpam/privileged-access-
-manager/getting-started/architecture/system-architecture)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 ##
 
 Overview
@@ -456,20 +456,13 @@ connectivity, while never exposing underlying credentials or secrets.
 
 This security content will cover the key areas of KeeperPAM:
 
-  *   *   *   *   * 
+  * [Architecture Diagram](/en/keeperpam/privileged-access-manager/getting-started/architecture/system-architecture)
 
-[Architecture Diagram](/en/keeperpam/privileged-access-manager/getting-
-started/architecture/system-architecture)
+  * [Vault Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/vault-security)
 
-[Vault Security](/en/keeperpam/privileged-access-manager/getting-
-started/architecture/vault-security)
+  * [Router Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/router-security)
 
-[Router Security](/en/keeperpam/privileged-access-manager/getting-
-started/architecture/router-security)
+  * [Gateway Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/gateway-security)
 
-[Gateway Security](/en/keeperpam/privileged-access-manager/getting-
-started/architecture/gateway-security)
-
-[Connection and Tunnel Security](/en/keeperpam/privileged-access-
-manager/getting-started/architecture/connection-and-tunnel-security)
+  * [Connection and Tunnel Security](/en/keeperpam/privileged-access-manager/getting-started/architecture/connection-and-tunnel-security)
 

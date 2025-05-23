@@ -482,8 +482,6 @@ a new role, open the "Enforcement Policies" settings and navigate to the
 "Keeper Secrets Manager" tab to allow or disallow Secrets Manager for the
 role.
 
-The Keeper Secrets Manager Enforcement Policy in the Keeper Admin Console
-
 Any users that are in a role with Secrets Manager allowed will be able to see
 the Secrets Manager tab in their Keeper Vault, and create and manage Secrets
 Manager Applications and Devices.
@@ -705,10 +703,6 @@ see the .
 Typed records can be created in by clicking "Create New" in the vault, or
 using the  in Commander.
 
-Login type records have the same fields as legacy Keeper records
-
-Copy fields and files into the new typed record
-
 For more information on using the `convert` command, see the
 
 [Keeper Commander](/en/keeperpam/commander-cli/overview)
@@ -722,6 +716,12 @@ started-with-keeper-admin-console)
 [Keeper Admin Console](https://docs.keeper.io/enterprise-guide/getting-
 started-with-keeper-admin-console)
 
+The Keeper Secrets Manager Enforcement Policy in the Keeper Admin Console
+
+Login type records have the same fields as legacy Keeper records
+
+Copy fields and files into the new typed record
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRJAbUfRGI218uHTdsATU%252Fimage.png%3Falt%3Dmedia%26token%3Deae27457-3a99-4eb2-b8a4-1a1b9182f514&width=768&dpr=4&quality=100&sign=5416c8e1&sv=2)
@@ -729,14 +729,14 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRJAbUfRGI
 [Commander documentation.](/en/keeperpam/commander-cli/command-
 reference/record-commands/record-type-commands#convert-command)
 
-[add command](/en/keeperpam/commander-cli/command-reference/record-
-commands#add-command-record-types)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZI8uVnbFAttuJSrHO6bu%252Fimage.png%3Falt%3Dmedia%26token%3Da7f8f60a-9acb-46c1-acbc-7d1373a5202c&width=768&dpr=4&quality=100&sign=50dc6ac1&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTG9RqjA7M6aC9SgkAQdp%252Fimage.png%3Falt%3Dmedia%26token%3D6567844a-f602-4c8a-9548-5deeeb24e6d8&width=768&dpr=4&quality=100&sign=5a9ae30b&sv=2)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZI8uVnbFAttuJSrHO6bu%252Fimage.png%3Falt%3Dmedia%26token%3Da7f8f60a-9acb-46c1-acbc-7d1373a5202c&width=768&dpr=4&quality=100&sign=50dc6ac1&sv=2)
+[add command](/en/keeperpam/commander-cli/command-reference/record-
+commands#add-command-record-types)
 

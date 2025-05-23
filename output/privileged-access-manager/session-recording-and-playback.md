@@ -446,7 +446,7 @@ Graphical and Text Based Session Recordings
 browser-isolation/setting-up-rbi/browser-autofill)[NextSSH
 Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
 
-Last updated 7 hours ago
+Last updated 21 hours ago
 
 Was this helpful?
 

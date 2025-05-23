@@ -420,33 +420,12 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview 
-  * Prerequisites
-  * PAM Settings - Configuring RDP Protocol
-  * Accessing Connection Settings
-  * Configuring Connection Settings
-  * Troubleshooting Connections
-  * Session Recordings - RDP Protocol
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=XIBliCeQFLhXyHlm2D0y&only=yes&limit=100)
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
-
-# RDP Connections
-
-Keeper Connections - RDP Protocol
-
-[PreviousSSH Connections](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/ssh-connections)[NextMySQL
-Connections](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/mysql-connections)
-
-Last updated 2 days ago
+Last updated 3 days ago
 
 Was this helpful?
 
@@ -473,14 +452,6 @@ protocol:
 PAM Record
 
 Definition
-
-The PAM Configuration contains information of your target infrastructure
-
-The PAM Machine record contains information of the endpoint you want to
-establish an RDP protocol connection to.
-
-The PAM User record contains the user credentials that will be used to connect
-to the endpoint
 
 This guide will use a **Azure VM** as an example. For more details on how this
 is setup on the PAM Machine Record, visit the following page:
@@ -513,9 +484,29 @@ following fields are all **required** and need to be configured:
 The following table lists all the configurable settings for the RDP protocol
 on the PAM Settings:
 
+###
+
+Troubleshooting Connections
+
+When troubleshooting authentication and connection issues, check the
+following:
+
+  * Ensure the user specified in the linked PAM User record has the rights to RDP to the target machine.
+
+  * Adjust your group policy or add the user to the "Remote Desktop Users" group on Windows to grant access.
+
+  * 
+
+##
+
+Session Recordings - RDP Protocol
+
 Field
 
 Definition
+
+For additional troubleshooting, refer to the Gateway logs which will contain
+additional information. The location of the Gateway logs depends on the .
 
 Protocol
 
@@ -621,34 +612,43 @@ Audio output is always enabled by default. If you are concerned about
 bandwidth usage, or audio is causing problems, you can explicitly disable
 audio output
 
-###
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
 
-Troubleshooting Connections
+# RDP Connections
 
-When troubleshooting authentication and connection issues, check the
-following:
+Keeper Connections - RDP Protocol
 
-  * Ensure the user specified in the linked PAM User record has the rights to RDP to the target machine.
+[PreviousSSH Connections](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/ssh-connections)[NextMySQL
+Connections](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/mysql-connections)
 
-  * Adjust your group policy or add the user to the "Remote Desktop Users" group on Windows to grant access.
+  * Overview 
+  * Prerequisites
+  * PAM Settings - Configuring RDP Protocol
+  * Accessing Connection Settings
+  * Configuring Connection Settings
+  * Troubleshooting Connections
+  * Session Recordings - RDP Protocol
 
-  * 
+[installation method](/en/keeperpam/privileged-access-manager/getting-
+started/gateways)
 
-##
+The PAM Configuration contains information of your target infrastructure
 
-Session Recordings - RDP Protocol
+The PAM Machine record contains information of the endpoint you want to
+establish an RDP protocol connection to.
 
-For additional troubleshooting, refer to the Gateway logs which will contain
-additional information. The location of the Gateway logs depends on the .
+The PAM User record contains the user credentials that will be used to connect
+to the endpoint
 
 [Getting Started page](/en/keeperpam/privileged-access-
 manager/connections/getting-started)
 
 [Example: Azure Windows VM](/en/keeperpam/privileged-access-manager/getting-
 started/pam-resources/pam-machine/example-azure-windows-vm)
-
-[installation method](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)
 
 [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
 started/pam-configuration)
@@ -659,15 +659,15 @@ started/pam-resources/pam-machine)
 [PAM User Record](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
 
-Field
-
-Definition
-
 For this protocol, graphical data, including timing information, is recorded.
 For more details on the recordings and how to access them, see the  docs.
 
 [Session Recording & Playback](/en/keeperpam/privileged-access-
 manager/session-recording-and-playback)
+
+Field
+
+Definition
 
 PAM Configuration
 

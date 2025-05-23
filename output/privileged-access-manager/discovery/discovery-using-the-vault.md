@@ -420,31 +420,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Prerequisites 
-  * Discovery
-  * Create a Discovery Job
-  * Discovery Rules
-  * Job Queue
-  * Process Results
-  * Publish Found Resources
-  * Next Steps
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=mEqrws5aL2q4iEcsxjFh&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Discovery](/en/keeperpam/privileged-access-manager/discovery)
-
-# Discovery using the Vault
-
-Running Discovery using the Keeper Vault user interface
-
-[PreviousDiscovery using Commander](/en/keeperpam/privileged-access-
-manager/discovery/discovery-using-
-commander)[NextKeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
 
 Last updated 2 months ago
 
@@ -550,6 +529,27 @@ Now that the Discovery is complete, additional resources can be found by
 running another job against the same Gateway and PAM Configuration. If Admin
 Credentials have been linked to KeeperPAM Resources, these credentials will be
 used to discover local user accounts within each resource.
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Discovery](/en/keeperpam/privileged-access-manager/discovery)
+
+# Discovery using the Vault
+
+Running Discovery using the Keeper Vault user interface
+
+[PreviousDiscovery using Commander](/en/keeperpam/privileged-access-
+manager/discovery/discovery-using-
+commander)[NextKeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
+
+  * Overview
+  * Prerequisites 
+  * Discovery
+  * Create a Discovery Job
+  * Discovery Rules
+  * Job Queue
+  * Process Results
+  * Publish Found Resources
+  * Next Steps
 
 [Discovery Basics](/en/keeperpam/privileged-access-
 manager/discovery/discovery-basics)

@@ -388,6 +388,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * list command:
@@ -450,9 +480,6 @@ Command
 
 Explanation
 
-[`list`](/en/keeperpam/commander-cli/command-reference/record-commands#list-
-command) or `l`
-
 List all records or search via a regular expression.
 
 `search` or `s`
@@ -463,54 +490,27 @@ Search all records via a regular expression.
 
 List folder contents
 
-[`tree`](/en/keeperpam/commander-cli/command-reference/record-commands#tree-
-command)
-
 Display entire folder structure as a tree
 
 `cd`
 
 Change current folder
 
-[`get`](/en/keeperpam/commander-cli/command-reference/record-commands#get-
-command) or `g`
-
 Retrieve and display a Keeper Record/Folder/Team in printable or JSON format.
 
-[`find-password`](/en/keeperpam/commander-cli/command-reference/record-
-commands#find-password-command)
-
 Display the specified Keeper Record password field to the system output
-
-[`clipboard-copy`](/en/keeperpam/commander-cli/command-reference/record-
-commands#clipboard-copy-command)
 
 Copy the specified Keeper Record password field to the clipboard or send to
 stdout
 
-[`record-history`](/en/keeperpam/commander-cli/command-reference/record-
-commands#record-history-command) or `rh`
-
 Show the history or a record's modifications
-
-[`totp`](/en/keeperpam/commander-cli/command-reference/record-commands#totp-
-command)
 
 Display the Two Factor code for a given record, or show a list of records with
 Two Factor codes if no record is specified
 
-[`download-attachment`](/en/keeperpam/commander-cli/command-reference/record-
-commands#download-attachment-command)
-
 Download all attachments of a specified record
 
-[`upload-attachment`](/en/keeperpam/commander-cli/command-reference/record-
-commands#upload-attachment-command)
-
 Upload and attach a file to a given record
-
-[`delete-attachment`](/en/keeperpam/commander-cli/command-reference/record-
-commands#delete-attachment-command)
 
 Delete an attachment from a given record
 
@@ -528,33 +528,21 @@ List all teams that you have access to
 
 `add` or `a`
 
-Deprecated: use [record-add](/en/keeperpam/commander-cli/command-
-reference/record-commands#record-add-and-record-update-commands)
-
 `record-add `or` ra`
 
 Add a record
 
 `edit`
 
-Deprecated: use [record-update](/en/keeperpam/commander-cli/command-
-reference/record-commands#record-add-and-record-update-commands)
-
 `record-update` or `ru`
 
 Edit an existing record
-
-[`rm`](/en/keeperpam/commander-cli/command-reference/record-commands#rm-
-command)
 
 Remove a record
 
 `append-notes` or `an`
 
 Append notes to a record
-
-[`mkdir`](/en/keeperpam/commander-cli/command-reference/record-commands#mkdir-
-command)
 
 Create a folder or shared folder
 
@@ -570,9 +558,6 @@ Move a record to or folder
 
 Create a link between records or folders
 
-[`find-duplicate`](/en/keeperpam/commander-cli/command-reference/record-
-commands#find-duplicate-command)
-
 Locate duplicate records in the vault (or several) based on specified
 attributes and fields.
 
@@ -580,22 +565,13 @@ attributes and fields.
 
 List or manage record shortcuts
 
-[`transform-folder`](/en/keeperpam/commander-cli/command-reference/record-
-commands#transform-folder-command)
-
 Transform a folder from a shared folder to a personal folder and vice versa
 
 `trash`
 
 List and manage deleted records in the trash
 
-[`password-report`](/en/keeperpam/commander-cli/command-reference/record-
-commands#password-report-command)
-
 Display password report
-
-[`find-ownerless`](/en/keeperpam/commander-cli/command-reference/record-
-commands#find-ownerless)
 
 List (and, optionally, claim) records in the vault that currently do not have
 an owner
@@ -1980,39 +1956,73 @@ Last updated 2 months ago
 
 Was this helpful?
 
-#### Company
+or `l`
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+or `g`
 
-#### Support
+or `rh`
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+Deprecated: use
 
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+Deprecated: use
 
 When adding other users or teams to a shared folder, they will be given the
 default permissions of that folder, unless the permission is specifically
 revoked or added when sharing. See the  command for more details.
+
+[`list`](/en/keeperpam/commander-cli/command-reference/record-commands#list-
+command)
+
+[`tree`](/en/keeperpam/commander-cli/command-reference/record-commands#tree-
+command)
+
+[`get`](/en/keeperpam/commander-cli/command-reference/record-commands#get-
+command)
+
+[`find-password`](/en/keeperpam/commander-cli/command-reference/record-
+commands#find-password-command)
+
+[`clipboard-copy`](/en/keeperpam/commander-cli/command-reference/record-
+commands#clipboard-copy-command)
+
+[`record-history`](/en/keeperpam/commander-cli/command-reference/record-
+commands#record-history-command)
+
+[`totp`](/en/keeperpam/commander-cli/command-reference/record-commands#totp-
+command)
+
+[`download-attachment`](/en/keeperpam/commander-cli/command-reference/record-
+commands#download-attachment-command)
+
+[`upload-attachment`](/en/keeperpam/commander-cli/command-reference/record-
+commands#upload-attachment-command)
+
+[`delete-attachment`](/en/keeperpam/commander-cli/command-reference/record-
+commands#delete-attachment-command)
+
+[record-add](/en/keeperpam/commander-cli/command-reference/record-
+commands#record-add-and-record-update-commands)
+
+[record-update](/en/keeperpam/commander-cli/command-reference/record-
+commands#record-add-and-record-update-commands)
+
+[`rm`](/en/keeperpam/commander-cli/command-reference/record-commands#rm-
+command)
+
+[`mkdir`](/en/keeperpam/commander-cli/command-reference/record-commands#mkdir-
+command)
+
+[`find-duplicate`](/en/keeperpam/commander-cli/command-reference/record-
+commands#find-duplicate-command)
+
+[`transform-folder`](/en/keeperpam/commander-cli/command-reference/record-
+commands#transform-folder-command)
+
+[`password-report`](/en/keeperpam/commander-cli/command-reference/record-
+commands#password-report-command)
+
+[`find-ownerless`](/en/keeperpam/commander-cli/command-reference/record-
+commands#find-ownerless)
 
 [share-folder](/en/keeperpam/commander-cli/command-reference/sharing-
 commands#share-folder-command)

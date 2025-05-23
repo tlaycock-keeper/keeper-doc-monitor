@@ -449,7 +449,7 @@ manager/getting-started/pam-resources/pam-database/example-postgresql-
 database)[NextPAM Directory](/en/keeperpam/privileged-access-manager/getting-
 started/pam-resources/pam-directory)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

@@ -420,28 +420,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Rotation Options
-  * Order of Execution
-  * Common Use Cases
-  * Documentation included
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=L2aoHEHPl4mak6HpvI9z&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-
-# Post-Rotation Scripts
-
-Perform privileged automation tasks with Post-Rotation scripts and password
-rotation
-
-[PreviousService Management](/en/keeperpam/privileged-access-manager/password-
-rotation/service-management)[NextInputs and Outputs](/en/keeperpam/privileged-
-access-manager/password-rotation/post-rotation-scripts/parameters)
 
 Last updated 3 months ago
 
@@ -459,30 +441,6 @@ remote host where password rotation occurred.
 
 The following table shows all the available PAM Records and where the attached
 script will execute:
-
-Record Type
-
-Attached Post Execution Script will execute on
-
-PAM Configuration
-
-Gateway
-
-PAM Machine
-
-The Machine specified in the record
-
-PAM Database
-
-Gateway
-
-PAM Directory
-
-Gateway
-
-PAM User
-
-Gateway
 
 ###
 
@@ -541,6 +499,48 @@ Scripts:
 Documentation included
 
   *   *   * 
+
+Record Type
+
+Attached Post Execution Script will execute on
+
+PAM Configuration
+
+Gateway
+
+PAM Machine
+
+The Machine specified in the record
+
+PAM Database
+
+Gateway
+
+PAM Directory
+
+Gateway
+
+PAM User
+
+Gateway
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+
+# Post-Rotation Scripts
+
+Perform privileged automation tasks with Post-Rotation scripts and password
+rotation
+
+[PreviousService Management](/en/keeperpam/privileged-access-manager/password-
+rotation/service-management)[NextInputs and Outputs](/en/keeperpam/privileged-
+access-manager/password-rotation/post-rotation-scripts/parameters)
+
+  * Overview
+  * Rotation Options
+  * Order of Execution
+  * Common Use Cases
+  * Documentation included
 
 [Inputs and outputs](/en/keeperpam/privileged-access-manager/password-
 rotation/post-rotation-scripts/parameters)

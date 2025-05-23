@@ -388,36 +388,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Encryption
-  * Deployment Package
-  * Deployment Collections
-  * Managing Deployments
-  * Device Collections
-  * Commander CLI
-  * Next Steps
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=KEkG5ky7xq0IniHT6zVE&only=yes&limit=100)
-
-  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
-
-# Deployment
-
-Deploying the Keeper Agent to your endpoints
-
-[PreviousSetup](/en/keeperpam/endpoint-privilege-
-manager/setup)[NextPolicies](/en/keeperpam/endpoint-privilege-
-manager/policies)
-
-Last updated 1 month ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -448,6 +418,37 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Overview
+  * Requirements
+  * Encryption
+  * Deployment Package
+  * Deployment Collections
+  * Managing Deployments
+  * Device Collections
+  * Commander CLI
+  * Next Steps
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=KEkG5ky7xq0IniHT6zVE&only=yes&limit=100)
+
+  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
+
+# Deployment
+
+Deploying the Keeper Agent to your endpoints
+
+[PreviousSetup](/en/keeperpam/endpoint-privilege-
+manager/setup)[NextPolicies](/en/keeperpam/endpoint-privilege-
+manager/policies)
+
+Last updated 15 hours ago
+
+Was this helpful?
+
 ###
 
 Overview
@@ -459,6 +460,16 @@ registers itself with the Keeper tenant and starts collecting basic
 information about the endpoint, including the executables and local user
 accounts. By default, the Keeper agent goes into a "monitoring" mode, and no
 action is taken.
+
+###
+
+Requirements
+
+  * **macOS** : Sequoia, Sonoma
+
+  * **Linux** : RedHat 9.4+, Ubuntu 20.04+, Amazon Linux 2, Rocky Linux 9+, Debian 11, 12, SUSE 15sp 2+, AlmaLinux 9.4+
+
+  * **Windows** : 11, Server 2022 and 2025
 
 ###
 
@@ -544,11 +555,6 @@ is included.
 
 Collections can not contain different resource types. For example a User Group
 collection can not contain a Machine resource.
-
-Policies can be applied to device collections and deployment collections to
-control privilege on all of the endpoints. Visit the
-[Policies](/en/keeperpam/endpoint-privilege-manager/policies) page to learn
-more.
 
 ###
 
@@ -644,8 +650,14 @@ Copy
 
 Next Steps
 
-Once you have deployed the agent, it's time to set up
-[policies](/en/keeperpam/endpoint-privilege-manager/policies).
+Policies can be applied to device collections and deployment collections to
+control privilege on all of the endpoints. Visit the  page to learn more.
+
+Once you have deployed the agent, it's time to set up .
+
+[Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+[policies](/en/keeperpam/endpoint-privilege-manager/policies)
 
 Creating a Deployment Package
 

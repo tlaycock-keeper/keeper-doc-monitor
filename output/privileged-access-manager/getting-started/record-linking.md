@@ -473,8 +473,6 @@ This update guides users to transition their rotating credentials into the
 more secure **PAM User** record type for enhanced security and proper
 separation of credentials from resources.
 
-Splitting Resource and Credentials
-
 By clicking "Convert Now", you'll be asked to confirm the change and the
 credentials will be separated from the resource and placed in the same folder.
 
@@ -483,6 +481,8 @@ in the same folder will contain the linked credential.
 
 Once the resource has been split, PAM capabilities including connections,
 tunnels and rotations can be enabled.
+
+Splitting Resource and Credentials
 
 Finish Record Splitting
 

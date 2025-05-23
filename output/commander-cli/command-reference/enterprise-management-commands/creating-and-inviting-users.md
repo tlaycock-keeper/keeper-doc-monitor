@@ -751,8 +751,6 @@ Was this helpful?
 
 _Find more information in the_
 
-User invite email
-
 Before getting started, be sure that you have the most up-to-date version of
 Commander. Find the most recent release on the .
 
@@ -766,16 +764,18 @@ follow the  for the `enterprise-user` command and swap out that command with
 
 [GitHub releases page](https://github.com/Keeper-Security/Commander/releases)
 
-[_documentation page_](/en/keeperpam/commander-cli/commander-installation-
-setup/logging-in#persistent-login)
-
 [steps above](/en/keeperpam/commander-cli/command-reference/enterprise-
 management-commands/creating-and-inviting-users#example-invite-users-from-
 email-addresses-in-a-file)
 
+User invite email
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9PQAwVuLYXbONMjioaMg%252Fimage.png%3Falt%3Dmedia%26token%3D999cd7c4-3b38-4081-9fe3-857919c24c9d&width=768&dpr=4&quality=100&sign=a890c97c&sv=2)
+
+[_documentation page_](/en/keeperpam/commander-cli/commander-installation-
+setup/logging-in#persistent-login)
 
 [_command documentation._](/en/keeperpam/commander-cli/command-
 reference/enterprise-management-commands#enterprise-user-command)

@@ -445,7 +445,7 @@ manager/connections/session-protocols/mysql-connections)[NextPostgreSQL
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/postgresql-connections)
 
-Last updated 2 days ago
+Last updated 3 days ago
 
 Was this helpful?
 

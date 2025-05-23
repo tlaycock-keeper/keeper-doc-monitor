@@ -388,6 +388,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -435,36 +465,6 @@ use-cases/network-devices/cisco-meraki)
 Last updated 3 months ago
 
 Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
 
 ##
 
@@ -518,19 +518,11 @@ Steps to Test Cisco Device
 Following these steps will allow you to test the Cisco device and create a new
 user in the Cisco sandbox environment.
 
-> **Note:** If you want to use a virtual environment, add a shebang line at
-> the top of the script as documented here in the [Python Environment
-> Setup](https://docs.keeper.io/en/v/secrets-manager/secrets-manager/password-
-> rotation/post-rotation-scripts/use-case-examples/rotate-credential-via-rest-
-> api#step-5-python-environment-setup).
-
-###
+> ###
 
 1\. Login to Cisco Sandbox
 
-  * Go to the [Cisco DevNet Sandbox](https://devnetsandbox.cisco.com/)
-
-  * Log in with your Cisco account credentials.
+  *   * Log in with your Cisco account credentials.
 
   * Select and launch the sandbox.
 
@@ -557,7 +549,7 @@ details or find them in the DevNet Environment under Quick Access.
 
   * Download and install the Cisco AnyConnect Secure Mobility Client.
 
-  * Get detailed connection instructions [here](https://developer.cisco.com/docs/sandbox/getting-started/#support).
+  * 
 
 ###
 
@@ -889,8 +881,23 @@ user management portal, the authorized option should be selected as 'Yes'].
 After successfully setting up Rotation for your Cisco User Credentials on the
 PAM User Record, clicking on "Run Scripts Only" will rotate the credential:
 
+**Note:** If you want to use a virtual environment, add a shebang line at the
+top of the script as documented here in the .
+
+Go to the
+
+Get detailed connection instructions .
+
 Attach the below that will perform the password rotation. The script has
 additional comments inside that describe each line.
+
+[Python Environment Setup](https://docs.keeper.io/en/v/secrets-
+manager/secrets-manager/password-rotation/post-rotation-scripts/use-case-
+examples/rotate-credential-via-rest-api#step-5-python-environment-setup)
+
+[Cisco DevNet Sandbox](https://devnetsandbox.cisco.com/)
+
+[here](https://developer.cisco.com/docs/sandbox/getting-started/#support)
 
 [Python script ](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/network-devices/cisco-ios-xe#python-script)

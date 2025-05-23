@@ -388,28 +388,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MerbOkoCVRpO3uCliua&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [About KSM](/en/keeperpam/secrets-manager/about)
-
-# Event Reporting
-
-Integration with the Keeper Advanced Reporting & Alerts Module
-
-[PreviousKeeper Notation](/en/keeperpam/secrets-manager/about/keeper-
-notation)[NextField/Record Types](/en/keeperpam/secrets-manager/about/field-
-record-types)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -440,15 +418,37 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MerbOkoCVRpO3uCliua&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [About KSM](/en/keeperpam/secrets-manager/about)
+
+# Event Reporting
+
+Integration with the Keeper Advanced Reporting & Alerts Module
+
+[PreviousKeeper Notation](/en/keeperpam/secrets-manager/about/keeper-
+notation)[NextField/Record Types](/en/keeperpam/secrets-manager/about/field-
+record-types)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 Keeper Secrets Manager generates several events in the Advanced Reporting &
 Alerts Module. These events are available for analysis in several places
 including:
 
-  * Keeper Admin Console ([Learn More ](https://docs.keeper.io/enterprise-guide/event-reporting)about the Event Reporting & Alerts Module): <https://docs.keeper.io/enterprise-guide/event-reporting>[](https://docs.keeper.io/enterprise-guide/event-reporting)
+  * Keeper Admin Console (about the Event Reporting & Alerts Module): 
 
-  * SIEM Export to Splunk and other common providers: <https://docs.keeper.io/enterprise-guide/event-reporting/splunk>[](https://docs.keeper.io/enterprise-guide/event-reporting/splunk)
+  * SIEM Export to Splunk and other common providers: 
 
-  * Webhooks such as Slack and Teams: <https://docs.keeper.io/enterprise-guide/webhooks>[](https://docs.keeper.io/enterprise-guide/webhooks)
+  * Webhooks such as Slack and Teams: 
 
   * Commander  CLI command and  CLI command
 
@@ -546,9 +546,22 @@ ${device_ip}
 Device with an IP that is different from the IP lock attempts to access a
 secret
 
-For a list of all events, visit: <https://docs.keeper.io/enterprise-
-guide/event-reporting>[](https://docs.keeper.io/enterprise-guide/event-
-reporting)
+For a list of all events, visit:
+
+<https://docs.keeper.io/enterprise-guide/event-
+reporting>[](https://docs.keeper.io/enterprise-guide/event-reporting)
+
+[Learn More ](https://docs.keeper.io/enterprise-guide/event-reporting)
+
+<https://docs.keeper.io/enterprise-guide/event-
+reporting>[](https://docs.keeper.io/enterprise-guide/event-reporting)
+
+<https://docs.keeper.io/enterprise-guide/event-
+reporting/splunk>[](https://docs.keeper.io/enterprise-guide/event-
+reporting/splunk)
+
+<https://docs.keeper.io/enterprise-
+guide/webhooks>[](https://docs.keeper.io/enterprise-guide/webhooks)
 
 [audit-report](/en/keeperpam/commander-cli/command-reference/reporting-
 commands#audit-report-command)

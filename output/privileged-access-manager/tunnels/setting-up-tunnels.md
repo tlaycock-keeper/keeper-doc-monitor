@@ -740,9 +740,6 @@ resources/pam-database)
 [PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-directory)
 
-[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
-manager-commands#overview)
-
 Enforcement Policies for Tunnels
 
 Tunnel Settings in a KeeperPAM Resource
@@ -789,4 +786,7 @@ management/)
 [Request a Demo](https://www.keepersecurity.com/contact.html?t=b&r=sales)
 
 [Contact Support](https://www.keepersecurity.com/support.html)
+
+[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
+manager-commands#overview)
 

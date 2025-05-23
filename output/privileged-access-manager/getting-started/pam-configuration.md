@@ -447,7 +447,7 @@ configuration-with-custom-fields)[NextAWS Environment
 Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-
 configuration/aws-environment-setup)
 
-Last updated 12 days ago
+Last updated 13 days ago
 
 Was this helpful?
 
@@ -756,10 +756,6 @@ configuration#aws-environment)
 [Domain Controller](/en/keeperpam/privileged-access-manager/getting-
 started/pam-configuration#domain-controller-environment)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGEDJmvpUaT8ImnYLgjLV%252FKeeperPAM%2520Configuration.jpg%3Falt%3Dmedia%26token%3D657572ec-45bc-4e1a-a219-2402c655252a&width=768&dpr=4&quality=100&sign=8009b119&sv=2)
-
 [docs](/en/keeperpam/privileged-access-manager/getting-started/gateways)
 
 [port mapping](/en/keeperpam/privileged-access-manager/references/port-
@@ -769,4 +765,8 @@ mapping)
 
 [this section](/en/keeperpam/privileged-access-manager/getting-started/pam-
 configuration#pam-features-on-pam-configuration)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGEDJmvpUaT8ImnYLgjLV%252FKeeperPAM%2520Configuration.jpg%3Falt%3Dmedia%26token%3D657572ec-45bc-4e1a-a219-2402c655252a&width=768&dpr=4&quality=100&sign=8009b119&sv=2)
 

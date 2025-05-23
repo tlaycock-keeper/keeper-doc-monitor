@@ -505,11 +505,11 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FviMYAuRTM
 kcm-
 header.jpg%3Falt%3Dmedia%26token%3Dadf247a9-990a-4cab-98f5-fae4ed853fb7&width=768&dpr=4&quality=100&sign=248848a5&sv=2)
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
 [Vault IntegrationKeeper Connection Manager](https://docs.keeper.io/keeper-
 connection-manager/vault-integration)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F1748446847-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

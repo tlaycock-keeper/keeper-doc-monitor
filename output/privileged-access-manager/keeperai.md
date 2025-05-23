@@ -424,6 +424,11 @@ On this page
   * Key Features
   * Supported Protocols
   * Getting Started
+  * Prerequisites
+  * Activation
+  * LLM Integration
+  * Overview
+  * Supported LLM Providers
   * Threat Detection and Response
   * Advanced Configuration
   * Troubleshooting
@@ -444,11 +449,11 @@ AI-powered threat detection for KeeperPAM privileged sessions
 manager/discovery/discovery-using-the-vault)[NextOn-Prem Connection
 Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
 
-Last updated 7 hours ago
+Last updated 3 hours ago
 
 Was this helpful?
 
-###
+##
 
 Overview
 
@@ -457,7 +462,7 @@ and analyzes user sessions to identify suspicious or malicious behavior. The
 system works at the gateway level to generate real-time risk analyses from
 session recordings, helping security teams quickly detect potential threats.
 
-###
+##
 
 Key Features
 
@@ -471,19 +476,15 @@ Key Features
 
   * **Customizable Configuration** : Adjust risk parameters and detection rules to your environment
 
-###
+##
 
 Supported Protocols
 
-####
-
-Current Support (MVP)
+**Current Support (MVP)**
 
   * SSH
 
-####
-
-Coming Soon
+**Coming Soon**
 
   * Database protocols
 
@@ -493,11 +494,11 @@ Coming Soon
 
   * RBI
 
-###
+##
 
 Getting Started
 
-####
+###
 
 Prerequisites
 
@@ -507,7 +508,7 @@ Prerequisites
 
   * Access to cloud-based LLM services (if using cloud deployment)
 
-####
+###
 
 Activation
 
@@ -526,92 +527,76 @@ Activation
 > **Note** : For protocols not yet supported, the UI will indicate that
 > classification models for these protocols are coming soon.
 
+##
+
+LLM Integration
+
+###
+
+Overview
+
+KeeperAI leverages Large Language Models (LLMs) to power its threat detection
+capabilities. The PAM Gateway communicates with an LLM to analyze session data
+and generate intelligent security insights. This integration is fundamental to
+KeeperAI's ability to detect suspicious patterns and provide detailed session
+summaries.
+
+###
+
+**Supported LLM Providers**
+
+KeeperAI is designed to work with multiple LLM providers, giving you
+flexibility in your deployment:
+
 ####
 
-Deployment Options
+**Amazon Bedrock**
 
-**Cloud-Based LLM Deployment**
+  * Fully integrated support for Amazon Bedrock models
 
-For cloud-based deployments, ... #TODO
+  * Utilizes secure AWS authentication mechanisms
 
-  1. 
+  * Optimized for enterprise-grade security and compliance
+
+**Configuration**
+
+  1. Ensure that the IAM role for the Gateway has the `AmazonBedrockFullAccess` policy attached
+
+  2.   3. Configure the Gateway with the following environment variables for the gateway service in your Docker Compose file:
 
 Copy
 
     
     
-      litellm:
-        image: ghcr.io/berriai/litellm:main-stable
-        container_name: ${LITELLM_CONTAINER_NAME}
-        volumes:
-         - ./config.yaml:/app/config.yaml
-        command:
-         - "--config=/app/config.yaml"
-        ports:
-          - "${LITELLM_PORT}:${LITELLM_PORT}"
-        env_file:
-          - .env
-        depends_on:
-          - litellm-db
-        healthcheck:
-          test: [ "CMD", "curl", "-f", "http://localhost:${LITELLM_PORT}/health/liveliness || exit 1" ]
-          interval: 30s
-          timeout: 10s
-          retries: 3
-          start_period: 10s
-        networks:
-          - keeper-example-net
-    
-      litellm-db:
-        image: postgres:16
-        restart: always
-        container_name: ${POSTGRES_CONTAINER_NAME}
-        env_file:
-          - .env
-        environment:
-          PGPORT: 5433
-        ports:
-          - "${POSTGRES_PORT}:${POSTGRES_PORT}"
-        volumes:
-          - litellm_postgres_data:/var/lib/postgresql/data
-        healthcheck:
-          test: ["CMD-SHELL", "pg_isready -d ${POSTGRES_DB} -U ${POSTGRES_USER}"]
-          interval: 1s
-          timeout: 5s
-          retries: 10
-        networks:
-          - keeper-example-net      
+    environment:
+      KEEPER_GATEWAY_SENTRY_LLM_CLIENT: "aws-bedrock"
+      KEEPER_GATEWAY_SENTRY_MODEL: "<your-model-id>"
+
+####
+
+**OpenAI-Compatible Endpoints**
+
+  * Support for any provider implementing the OpenAI `/chat/completions` API endpoint
+
+  * Compatible with self-hosted models using frameworks like LiteLLM
+
+  * Works with alternative commercial providers that maintain OpenAI API compatibility
+
+**Configuration**
 
   1. Ensure your Gateway has the appropriate permissions to access your cloud LLM service
 
-  2. No additional configuration is required as the Gateway will use the instance role
+  2. Configure the Gateway with the following environment variables for the gateway service in your Docker Compose file:
 
 Copy
 
     
     
     environment:
-      KEEPER_GATEWAY_SENTRY_BASE_URL: "http://litellm:4000/v1"
-      KEEPER_GATEWAY_SENTRY_API_KEY: "your-api-key"
-      KEEPER_GATEWAY_SENTRY_MODEL: "bedrock-meta.llama3-3-70b-instruct-v1:0"
-
-**On-Premises LLM Deployment**
-
-For on-premises deployments, configure the Gateway with the following
-environment variables in your Docker Compose file:
-
-Copy
-
-    
-    
-    environment:
-      KEEPER_GATEWAY_SENTRY_BASE_URL: "http://litellm:4000/v1"
-      KEEPER_GATEWAY_SENTRY_API_KEY: "your-api-key"
-      KEEPER_GATEWAY_SENTRY_MODEL: "bedrock-meta.llama3-3-70b-instruct-v1:0"
-
-> **Note** : You may need to run the LiteLLM docker container in your local
-> docker compose. Refer to the installation guide for detailed setup
-> instructions.
+      KEEPER_GATEWAY_SENTRY_LLM_CLIENT: "openai-generic"
+      KEEPER_GATEWAY_SENTRY_BASE_URL: "<your-base-url>"
+      KEEPER_GATEWAY_SENTRY_API_KEY: "<your-api-key>"
+      KEEPER_GATEWAY_SENTRY_MODEL: "<your-model-id>"
 
 ###
 
@@ -706,39 +691,36 @@ Common Issues
 
 Support Resources
 
-For additional assistance with KeeperAI:
-
-  * Contact Technical Support
-
-  * Visit the Knowledge Base
-
-  * Join the Community Forum
+For additional assistance with KeeperAI, email **pam@keepersecurity.com**.
 
 ###
 
 FAQ
 
 **Q: Can I use my own LLM model with KeeperAI?** A: Yes, KeeperAI supports any
-LLM model that conforms to the OpenAI API specifications.
+provider implementing the OpenAI `/chat/completions` API endpoint
 
 **Q: Does KeeperAI work in real-time?** A: Yes, KeeperAI can analyze both
 real-time sessions and completed session recordings using the same analysis
 logic.
 
 **Q: How does KeeperAI handle sensitive information?** A: In a later release,
-KeeperAI will include Personal Information (PI) detection and removal from
-session summaries.
+KeeperAI will include Personally Identifiable Information (PII) detection and
+removal from session summaries.
 
 * * *
 
 _This documentation is for KeeperAI version 1.0.0, released as part of PAM
 Gateway v17.3 Early Access_
 
-Add the  to your Docker Compose file:
+Select a model from the  and note the corresponding model ID.
 
-[litellm proxy server](https://hub.docker.com/r/litellm/litellm)
+[supported list](https://docs.aws.amazon.com/bedrock/latest/userguide/models-
+supported.html)
 
 KeeperAI in PAM Settings
+
+AI Session Summary and Risk Assessment
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -747,4 +729,8 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7rQtwjXJl
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkSLpDA92uPgWRpn725eQ%252FScreenshot%25202025-05-21%2520at%252012.18.10%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D0d46bc20-1de7-4455-b952-cc114cc21b1a&width=768&dpr=4&quality=100&sign=3dc5e51e&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJ2IjxIvhzwqndDWi8tV0%252FScreenshot%25202025-05-21%2520at%25209.06.41%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dbd524388-c21a-4cde-b0d1-693583cbe759&width=768&dpr=4&quality=100&sign=1e7ef5fc&sv=2)
 

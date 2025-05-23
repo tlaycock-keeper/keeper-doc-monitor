@@ -388,36 +388,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Supported Operating systems
-  * Video Overview
-  * Binary installation
-  * Python PIP3 installation
-  * Pre-requisites
-  * Instructions
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MJXfHZXiFwS7h9M_VdV&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
-
-# CLI Installation on macOS
-
-How to install Keeper Commander on macOS
-
-[PreviousCLI Installation on Windows](/en/keeperpam/commander-cli/commander-
-installation-setup/installation-on-windows)[NextCLI Installation on
-Linux](/en/keeperpam/commander-cli/commander-installation-setup/installation-
-on-linux)
-
-Last updated 7 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -448,6 +418,36 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Supported Operating systems
+  * Video Overview
+  * Binary installation
+  * Python PIP3 installation
+  * Pre-requisites
+  * Instructions
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MJXfHZXiFwS7h9M_VdV&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+
+# CLI Installation on macOS
+
+How to install Keeper Commander on macOS
+
+[PreviousCLI Installation on Windows](/en/keeperpam/commander-cli/commander-
+installation-setup/installation-on-windows)[NextCLI Installation on
+Linux](/en/keeperpam/commander-cli/commander-installation-setup/installation-
+on-linux)
+
+Last updated 7 months ago
+
+Was this helpful?
+
 ###
 
 **Supported Operating systems**
@@ -463,10 +463,6 @@ Watch the video below to learn how to install and log in to Keeper Commander.
 ###
 
 Binary installation
-
-On the Commander Github page, the current commander build is always available
-via the [releases link](https://github.com/Keeper-
-Security/Commander/releases).
 
 For mac installs download and install the file named: `keeper-commander-mac-
 vx.xx.pkg`
@@ -490,9 +486,6 @@ Download and install Python and pip3
 ####
 
 Installing Python:
-
-Download the current version of Python from:
-[https://www.python.org/](https://www.python.org/downloads/)
 
 Depending on your operating system security settings you may need to "Allow"
 the application to run or install. To do this open "System Preferences" >
@@ -544,6 +537,15 @@ Copy
 
 Note, for your first time logging into a new device or a new location, you may
 have to perform device authorization through email or other 2FA methods.
+
+On the Commander Github page, the current commander build is always available
+via the .
+
+Download the current version of Python from:
+
+[releases link](https://github.com/Keeper-Security/Commander/releases)
+
+[https://www.python.org/](https://www.python.org/downloads/)
 
 Keeper Commander – Installing and Loggin In
 

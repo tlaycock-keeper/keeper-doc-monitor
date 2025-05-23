@@ -388,33 +388,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Supported Operating systems
-  * Video Overview
-  * Typical Binary Installation (recommended)
-  * Python (PIP) installation
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MJXWW3ypcK5uBpBl08R&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
-
-# CLI Installation on Windows
-
-How to install Keeper Commander CLI on Microsoft Windows
-
-[PreviousInstallation and Setup](/en/keeperpam/commander-cli/commander-
-installation-setup)[NextCLI Installation on macOS](/en/keeperpam/commander-
-cli/commander-installation-setup/installation-on-mac)
-
-Last updated 7 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -445,6 +418,33 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Supported Operating systems
+  * Video Overview
+  * Typical Binary Installation (recommended)
+  * Python (PIP) installation
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MJXWW3ypcK5uBpBl08R&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+
+# CLI Installation on Windows
+
+How to install Keeper Commander CLI on Microsoft Windows
+
+[PreviousInstallation and Setup](/en/keeperpam/commander-cli/commander-
+installation-setup)[NextCLI Installation on macOS](/en/keeperpam/commander-
+cli/commander-installation-setup/installation-on-mac)
+
+Last updated 7 months ago
+
+Was this helpful?
+
 ###
 
 **Supported Operating systems**
@@ -463,13 +463,6 @@ Watch the video below to learn how to install and log in to Keeper Commander.
 
 Typical Binary Installation (recommended)
 
-⬇️ [**Download Keeper Commander .exe file from
-GitHub**](https://github.com/Keeper-Security/Commander/releases)
-
-On the Commander Github page, the current commander build is always available
-via the [releases link](https://github.com/Keeper-
-Security/Commander/releases).
-
 The binary download is the file named: `keeper-commander-windows-vX.XX.exe`
 
 Note about Windows installs: \- You may have to right click on the executable
@@ -484,9 +477,6 @@ Python (PIP) installation
 ####
 
 Setup with Python3:
-
-Download the current version of Python from
-<https://www.python.org/>[](https://www.python.org/)
 
 Recommended releases:
 
@@ -539,6 +529,20 @@ Copy
 
 Note, for your first time logging into a new device or a new location, you may
 have to perform device authorization through email or other 2FA methods.
+
+On the Commander Github page, the current commander build is always available
+via the .
+
+Download the current version of Python from
+
+⬇️
+
+[**Download Keeper Commander .exe file from
+GitHub**](https://github.com/Keeper-Security/Commander/releases)
+
+[releases link](https://github.com/Keeper-Security/Commander/releases)
+
+<https://www.python.org/>[](https://www.python.org/)
 
 Keeper Commander – Installing and Loggin In
 

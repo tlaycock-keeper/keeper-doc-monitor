@@ -388,6 +388,32 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * Setup KSM
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=3Uoyio5gnT7neL5zeZFT&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
+
+# Creating KSM App for Rotation
+
+Steps to create a Keeper Secrets Manager application for rotation of passwords
+
+[PreviousInstalling Docker on Linux](/en/keeperpam/privileged-access-
+manager/references/installing-docker-on-linux)[NextActive Directory Least
+Privilege](/en/keeperpam/privileged-access-manager/references/active-
+directory-least-privilege)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -417,32 +443,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Overview
-  * Setup KSM
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=3Uoyio5gnT7neL5zeZFT&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
-
-# Creating KSM App for Rotation
-
-Steps to create a Keeper Secrets Manager application for rotation of passwords
-
-[PreviousInstalling Docker on Linux](/en/keeperpam/privileged-access-
-manager/references/installing-docker-on-linux)[NextActive Directory Least
-Privilege](/en/keeperpam/privileged-access-manager/references/active-
-directory-least-privilege)
-
-Last updated 4 months ago
-
-Was this helpful?
 
 ##
 

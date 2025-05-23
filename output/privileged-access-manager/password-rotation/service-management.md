@@ -420,29 +420,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Prerequisites
-  * Setup
-  * Using Discovery
-  * Using the Commander CLI
-  * Troubleshooting
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=S62bTbKdjo5TP4f6m4aE&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-
-# Service Management
-
-Managing the credentials of Windows services and scheduled tasks
-
-[PreviousCisco Meraki](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/network-devices/cisco-meraki)[NextPost-Rotation
-Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-
-rotation-scripts)
 
 Last updated 1 month ago
 
@@ -514,19 +495,6 @@ Use the `pam gateway list` command to locate the Gateway UID which manages the
 machine containing the services and scheduled tasks. You'll need this for the
 next step.
 
-Copy
-
-    
-    
-    My Vault> pam gateway list
-    
-    KSM Application Name (UID)   Gateway Name    Gateway UID             Status
-    --------------------------   ------------    ----------------------  --------
-    My Application1              East Cost       oVCr3n7qV8uARjwSqBQBBw  ONLINE
-    My Application2              West Coast      qSiGWa55QVaGEv3_xAO3UA  ONLINE
-    My Application3              GovCloud        31t78gWKRQeY54l0u1sbMA  ONLINE
-    My Application4              Tokyo           2XT9aKlYTLOyTnVlpny-dA  ONLINE
-
 ####
 
 Locate PAM Machine and PAM User UID
@@ -544,32 +512,12 @@ Use the `pam action service` command to instruct Keeper to update services and
 scheduled tasks on a particular machine, for a particular user, within a
 network.
 
-Copy
-
-    
-    
-    My Vault> pam action service
-    pam command [--options]
-    
-    Command    Description
-    ---------  ------------------------------------------
-    list       List all mappings
-    add        Add a user and machine to the mapping
-    remove     Remove a user and machine from the mapping
-
 ####
 
 Adding a Service
 
 To instruct Keeper to update and restart services and scheduled tasks on a
 particular machine, use the syntax below:
-
-Copy
-
-    
-    
-    pam action service add -g <Gateway_UID> -m <Machine_UID> -u <User_UID> -t service
-    pam action service add -g <Gateway_UID> -m <Machine_UID> -u <User_UID> -t task
 
 ####
 
@@ -578,13 +526,6 @@ Removing a Service
 To instruct Keeper to remove the associations of services and scheduled tasks
 on a machine:
 
-Copy
-
-    
-    
-    pam action service remove -g <Gateway_UID> -m <Machine_UID> -u <User_UID) -t service
-    pam action service remove -g <Gateway_UID> -m <Machine_UID> -u <User_UID) -t task
-
 ####
 
 Listing all Mappings
@@ -592,17 +533,6 @@ Listing all Mappings
 To display the current mappings between Gateway, Machine and User accounts
 where services and tasks need to be managed, use the `pam action service list`
 command.
-
-Copy
-
-    
-    
-    My Vault> pam action service list -g oVCr3n7qV8uARjwSqBQBBw
-    
-    User Mapping
-      Local service user - testuser (pEFr_dJn5EAc3MT_v30DQw)
-        * Lureydemo.com Server (CrvdntH-f9mIcraY1InGiw) : Services, Scheduled Tasks
-        * Windows 2022 Server  (U3fHEK2i7LIkWZAzANz2sA) : Services, Scheduled Tasks
 
 ####
 
@@ -613,28 +543,8 @@ button from the vault user interface.
 
 To perform the rotation from Commander, run `pam action rotate` :
 
-Copy
-
-    
-    
-    My Vault> pam action rotate -r pEFr_dJn5EAc3MT_v30DQw
-    Scheduled action id: +dXjf690oGKgg==
-
 To view the status of the rotation job, check the Vault UI or run the `pam
 action job-info` command as instructed:
-
-Copy
-
-    
-    
-    My Vault> pam action job-info +dXjf690oGKgg== --gateway=oVCr3n7qV8uARjwSqBQBBw
-    Job id to check [+dXjf690oGKgg==]
-    
-    Execution Details
-    -------------------------
-    Status              : finished
-    Duration            : 0:01:01.923147
-    Response Message    : Rotation completed for record uid XXX with post-execution
 
 ###
 
@@ -672,6 +582,96 @@ When running a , Keeper will automatically locate any services or scheduled
 tasks that require update when a password is rotated.
 
 If you haven't set up Keeper Commander yet, please follow the .
+
+Copy
+
+    
+    
+    My Vault> pam gateway list
+    
+    KSM Application Name (UID)   Gateway Name    Gateway UID             Status
+    --------------------------   ------------    ----------------------  --------
+    My Application1              East Cost       oVCr3n7qV8uARjwSqBQBBw  ONLINE
+    My Application2              West Coast      qSiGWa55QVaGEv3_xAO3UA  ONLINE
+    My Application3              GovCloud        31t78gWKRQeY54l0u1sbMA  ONLINE
+    My Application4              Tokyo           2XT9aKlYTLOyTnVlpny-dA  ONLINE
+
+Copy
+
+    
+    
+    My Vault> pam action service
+    pam command [--options]
+    
+    Command    Description
+    ---------  ------------------------------------------
+    list       List all mappings
+    add        Add a user and machine to the mapping
+    remove     Remove a user and machine from the mapping
+
+Copy
+
+    
+    
+    pam action service add -g <Gateway_UID> -m <Machine_UID> -u <User_UID> -t service
+    pam action service add -g <Gateway_UID> -m <Machine_UID> -u <User_UID> -t task
+
+Copy
+
+    
+    
+    pam action service remove -g <Gateway_UID> -m <Machine_UID> -u <User_UID) -t service
+    pam action service remove -g <Gateway_UID> -m <Machine_UID> -u <User_UID) -t task
+
+Copy
+
+    
+    
+    My Vault> pam action service list -g oVCr3n7qV8uARjwSqBQBBw
+    
+    User Mapping
+      Local service user - testuser (pEFr_dJn5EAc3MT_v30DQw)
+        * Lureydemo.com Server (CrvdntH-f9mIcraY1InGiw) : Services, Scheduled Tasks
+        * Windows 2022 Server  (U3fHEK2i7LIkWZAzANz2sA) : Services, Scheduled Tasks
+
+Copy
+
+    
+    
+    My Vault> pam action rotate -r pEFr_dJn5EAc3MT_v30DQw
+    Scheduled action id: +dXjf690oGKgg==
+
+Copy
+
+    
+    
+    My Vault> pam action job-info +dXjf690oGKgg== --gateway=oVCr3n7qV8uARjwSqBQBBw
+    Job id to check [+dXjf690oGKgg==]
+    
+    Execution Details
+    -------------------------
+    Status              : finished
+    Duration            : 0:01:01.923147
+    Response Message    : Rotation completed for record uid XXX with post-execution
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+
+# Service Management
+
+Managing the credentials of Windows services and scheduled tasks
+
+[PreviousCisco Meraki](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/network-devices/cisco-meraki)[NextPost-Rotation
+Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-
+rotation-scripts)
+
+  * Overview
+  * Prerequisites
+  * Setup
+  * Using Discovery
+  * Using the Commander CLI
+  * Troubleshooting
 
 [Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-
 started/enforcement-policies)

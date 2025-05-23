@@ -1011,10 +1011,6 @@ shared-folder-report)
 [compliance report cache](/en/keeperpam/commander-cli/command-
 reference/enterprise-management-commands/compliance-commands#cache)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjzCfUVzEze2IAKuJDhS6%252Fimage.png%3Falt%3Dmedia%26token%3D235eb0c1-407d-4d24-a7dc-d65cca157bac&width=768&dpr=4&quality=100&sign=db5ae4e&sv=2)
-
 [Compliance Reporting](https://docs.keeper.io/enterprise-guide/compliance-
 reports)
 
@@ -1024,4 +1020,8 @@ guide/compliance-reports)
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F1748446847-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fspaces%252F-LO5CAzpxoaEquZJBpYz%252Favatar.png%3Fgeneration%3D1562027743273411%26alt%3Dmedia&width=20&dpr=4&quality=100&sign=25d608c4&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjzCfUVzEze2IAKuJDhS6%252Fimage.png%3Falt%3Dmedia%26token%3D235eb0c1-407d-4d24-a7dc-d65cca157bac&width=768&dpr=4&quality=100&sign=db5ae4e&sv=2)
 
