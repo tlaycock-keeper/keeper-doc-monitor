@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -635,11 +640,11 @@ commands)
 Python](https://github.com/AzureAD/microsoft-authentication-library-for-
 python)
 
-[password complexity rules](https://github.com/Keeper-
-Security/Commander/tree/master/keepercommander/plugins/password_rules.md)
-
 [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
 cli#typed-vs-untyped-records-v3-vs-v2)
+
+[password complexity rules](https://github.com/Keeper-
+Security/Commander/tree/master/keepercommander/plugins/password_rules.md)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

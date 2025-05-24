@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -623,17 +628,20 @@ by-step-guide-to-setup-ldaps-on-windows-
 server/>[](https://blogs.msdn.microsoft.com/microsoftrservertigerteam/2017/04/10/step-
 by-step-guide-to-setup-ldaps-on-windows-server/)
 
-[Distinguished name](https://msdn.microsoft.com/en-
-us/library/windows/desktop/aa366101.aspx)
-
-[password complexity rules](https://github.com/Keeper-
-Security/Commander/tree/master/keepercommander/plugins/password_rules.md)
-
 [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
 rotation)
 
 [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
 commands)
+
+[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
+cli#typed-vs-untyped-records-v3-vs-v2)
+
+[Distinguished name](https://msdn.microsoft.com/en-
+us/library/windows/desktop/aa366101.aspx)
+
+[password complexity rules](https://github.com/Keeper-
+Security/Commander/tree/master/keepercommander/plugins/password_rules.md)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -642,7 +650,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FhvLF8beyM
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fe5jiWMkFQPzwi5UDLvp1%252Fimage.png%3Falt%3Dmedia%26token%3D90c83a72-367e-4398-9cb6-bcc916432de0&width=768&dpr=4&quality=100&sign=fa5991f7&sv=2)
-
-[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
-cli#typed-vs-untyped-records-v3-vs-v2)
 

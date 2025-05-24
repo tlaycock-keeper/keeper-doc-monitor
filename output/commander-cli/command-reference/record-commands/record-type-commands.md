@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -697,12 +702,12 @@ see  for a list of all standard record types
 [Creating Record Types](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types)
 
+[edit](/en/keeperpam/commander-cli/command-reference/record-commands#edit-
+command-record-types)
+
 [here](/en/keeperpam/commander-cli/command-reference/record-commands/default-
 record-types#field-types)
 
 [record types documentation](/en/keeperpam/commander-cli/command-
 reference/record-commands/default-record-types#standard-record-types)
-
-[edit](/en/keeperpam/commander-cli/command-reference/record-commands#edit-
-command-record-types)
 

@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -440,7 +445,7 @@ Secrets Manager High Level Architecture
 manager/about)[NextTerminology](/en/keeperpam/secrets-
 manager/about/terminology)
 
-Last updated 4 months ago
+Last updated 5 months ago
 
 Was this helpful?
 

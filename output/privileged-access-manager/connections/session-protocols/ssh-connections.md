@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -388,6 +393,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview 
@@ -418,39 +453,9 @@ manager/connections/session-protocols)[NextRDP
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/rdp-connections)
 
-Last updated 3 days ago
+Last updated 4 days ago
 
 Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
 
 ##
 
@@ -663,42 +668,6 @@ manager/connections/getting-started)
 [activate SSH on Windows](/en/keeperpam/privileged-access-
 manager/references/setting-up-ssh#windows)
 
-PAM Record
-
-Definition
-
-The PAM Configuration contains information of your target infrastructure
-
-Record
-
-The PAM Machine record contains information of the endpoint you want to
-establish an SSH protocol connection to.
-
-Record
-
-The PAM User record contains the user credentials that will be used to connect
-to the endpoint
-
-[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
-
-[PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
-For this protocol, both graphical and the full, raw text text content of
-terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this .
-
-  * Learn more about 
-
-[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
-
-[Session Recording and Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
-
 Field
 
 Definition
@@ -757,4 +726,40 @@ progress.png%3Falt%3Dmedia%26token%3D50307229-bdbe-4704-bd53-f8485bda7681&width=
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fm3ujLVowAlLGqlZ6ecVJ%252FScreenshot%25202025-01-21%2520at%252012.17.55%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D3bac50e6-864a-4deb-
 ab79-e0b8a871a8ae&width=768&dpr=4&quality=100&sign=62f9e671&sv=2)
+
+PAM Record
+
+Definition
+
+The PAM Configuration contains information of your target infrastructure
+
+Record
+
+The PAM Machine record contains information of the endpoint you want to
+establish an SSH protocol connection to.
+
+Record
+
+The PAM User record contains the user credentials that will be used to connect
+to the endpoint
+
+[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)
+
+[PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this .
+
+  * Learn more about 
+
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+
+[Session Recording and Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
 

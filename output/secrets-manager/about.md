@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -388,6 +393,63 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * Common Functionality
+  * Additional Resources
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MlB9Mu0mTscXAt-4zv-&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+
+# About KSM
+
+Select a section to learn more about Keeper Secrets Manager
+
+###
+
+Overview
+
+Information about how Keeper Secrets Manager works.
+
+[Architecture](/en/keeperpam/secrets-
+manager/about/architecture)[Terminology](/en/keeperpam/secrets-
+manager/about/terminology)[Security & Encryption Model](/en/keeperpam/secrets-
+manager/about/security-encryption-model)
+
+###
+
+Common Functionality
+
+Additional details about aspects of Keeper Secrets Manager which are used
+across many integrations and SDKs.
+
+[One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-
+token)[Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-
+notation)[Secrets Manager Configuration](/en/keeperpam/secrets-
+manager/about/secrets-manager-configuration)
+
+###
+
+Additional Resources
+
+Information about other Keeper systems that impact Secrets Manager users.
+
+[Event Reporting](/en/keeperpam/secrets-manager/about/event-
+reporting)[Field/Record Types](/en/keeperpam/secrets-manager/about/field-
+record-types)
+
+[PreviousQuick Start Guide](/en/keeperpam/secrets-manager/quick-start-
+guide)[NextArchitecture](/en/keeperpam/secrets-manager/about/architecture)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -417,65 +479,4 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Overview
-  * Common Functionality
-  * Additional Resources
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MlB9Mu0mTscXAt-4zv-&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-
-# About KSM
-
-Select a section to learn more about Keeper Secrets Manager
-
-[PreviousQuick Start Guide](/en/keeperpam/secrets-manager/quick-start-
-guide)[NextArchitecture](/en/keeperpam/secrets-manager/about/architecture)
-
-Last updated 4 months ago
-
-Was this helpful?
-
-###
-
-Overview
-
-Information about how Keeper Secrets Manager works.
-
-###
-
-Common Functionality
-
-Additional details about aspects of Keeper Secrets Manager which are used
-across many integrations and SDKs.
-
-###
-
-Additional Resources
-
-Information about other Keeper systems that impact Secrets Manager users.
-
-[Architecture](/en/keeperpam/secrets-manager/about/architecture)
-
-[Terminology](/en/keeperpam/secrets-manager/about/terminology)
-
-[Security & Encryption Model](/en/keeperpam/secrets-manager/about/security-
-encryption-model)
-
-[One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
-
-[Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-notation)
-
-[Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration)
-
-[Event Reporting](/en/keeperpam/secrets-manager/about/event-reporting)
-
-[Field/Record Types](/en/keeperpam/secrets-manager/about/field-record-types)
 

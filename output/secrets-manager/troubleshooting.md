@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -716,6 +721,12 @@ started-with-keeper-admin-console)
 [Keeper Admin Console](https://docs.keeper.io/enterprise-guide/getting-
 started-with-keeper-admin-console)
 
+[Commander documentation.](/en/keeperpam/commander-cli/command-
+reference/record-commands/record-type-commands#convert-command)
+
+[add command](/en/keeperpam/commander-cli/command-reference/record-
+commands#add-command-record-types)
+
 The Keeper Secrets Manager Enforcement Policy in the Keeper Admin Console
 
 Login type records have the same fields as legacy Keeper records
@@ -726,17 +737,11 @@ Copy fields and files into the new typed record
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRJAbUfRGI218uHTdsATU%252Fimage.png%3Falt%3Dmedia%26token%3Deae27457-3a99-4eb2-b8a4-1a1b9182f514&width=768&dpr=4&quality=100&sign=5416c8e1&sv=2)
 
-[Commander documentation.](/en/keeperpam/commander-cli/command-
-reference/record-commands/record-type-commands#convert-command)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZI8uVnbFAttuJSrHO6bu%252Fimage.png%3Falt%3Dmedia%26token%3Da7f8f60a-9acb-46c1-acbc-7d1373a5202c&width=768&dpr=4&quality=100&sign=50dc6ac1&sv=2)
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTG9RqjA7M6aC9SgkAQdp%252Fimage.png%3Falt%3Dmedia%26token%3D6567844a-f602-4c8a-9548-5deeeb24e6d8&width=768&dpr=4&quality=100&sign=5a9ae30b&sv=2)
 
-[add command](/en/keeperpam/commander-cli/command-reference/record-
-commands#add-command-record-types)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZI8uVnbFAttuJSrHO6bu%252Fimage.png%3Falt%3Dmedia%26token%3Da7f8f60a-9acb-46c1-acbc-7d1373a5202c&width=768&dpr=4&quality=100&sign=50dc6ac1&sv=2)
 

@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -388,6 +393,32 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Quick Start Wizard
+  * Records Created
+  * Quick Start Video
+  * Screenshots
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=R2Buql2ywlhAxad9Ru4u&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Quick Start: Sandbox
+
+Quickly and easily get started with a pre-configured PAM setup in your vault
+
+[PreviousSetup Steps](/en/keeperpam/privileged-access-manager/setup-
+steps)[NextGetting Started](/en/keeperpam/privileged-access-manager/getting-
+started)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -418,17 +449,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=R2Buql2ywlhAxad9Ru4u&only=yes&limit=100)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 ##
 
 Quick Start Wizard
@@ -446,6 +466,20 @@ minutes.
 Activate KeeperPAM
 
   * Login to the Admin Console in your region:
+
+Region
+
+URL
+
+**US**
+
+**EU**
+
+**AU**
+
+**JP**
+
+**GOV**
 
   * Under **Admin** > **Roles** , create a new role for PAM or modify an existing role
 
@@ -535,43 +569,14 @@ Screenshots
 
 Below are screenshots of the Quick Start Wizard from start to finish.
 
-Region
-
-URL
-
 Login to the . If the policies are active, you'll see a **Secrets Manager**
 tab on the left side.
 
 If necessary, Install Docker per the .
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# Quick Start: Sandbox
-
-Quickly and easily get started with a pre-configured PAM setup in your vault
-
-[PreviousSetup Steps](/en/keeperpam/privileged-access-manager/setup-
-steps)[NextGetting Started](/en/keeperpam/privileged-access-manager/getting-
-started)
-
-  * Quick Start Wizard
-  * Records Created
-  * Quick Start Video
-  * Screenshots
-
 [Keeper Vault](https://keepersecurity.com/vault)
 
 [Docker installation instructions](https://docs.docker.com/engine/install/)
-
-**US**
-
-**EU**
-
-**AU**
-
-**JP**
-
-**GOV**
 
 <https://keepersecurity.com/console>[](https://keepersecurity.com/console)
 

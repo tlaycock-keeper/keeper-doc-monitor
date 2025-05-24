@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -420,10 +425,31 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * AWS RDS for MySQL:
+  * AWS RDS for SQL Server:
+  * AWS RDS for PostgreSQL
+  * AWS RDS for MariaDB
+  * AWS RDS for Oracle:
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=VkYioqxh7Y7lzoJLjkd5&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [AWS](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws)
+
+# Managed Database
+
+Rotating AWS RDS accounts with Keeper
+
+[PreviousIAM User Access Key](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/aws/iam-user-access-key)[NextAWS
+RDS for MySQL](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mysql)
 
 Last updated 4 months ago
 
@@ -457,31 +483,8 @@ AWS RDS for MariaDB
 AWS RDS for Oracle:
 
 If you are running a database directly on an EC2 instance in your AWS
-environment instead of using a managed service, refer to the  documentation
-for rotating passwords.
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [AWS](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws)
-
-# Managed Database
-
-Rotating AWS RDS accounts with Keeper
-
-[PreviousIAM User Access Key](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/aws/iam-user-access-key)[NextAWS
-RDS for MySQL](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mysql)
-
-  * Overview
-  * AWS RDS for MySQL:
-  * AWS RDS for SQL Server:
-  * AWS RDS for PostgreSQL
-  * AWS RDS for MariaDB
-  * AWS RDS for Oracle:
-
-Local Network > Database
+environment instead of using a managed service, refer to the Local Network >
+Database documentation for rotating passwords.
 
 [AWS RDS for MySQL](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mysql)

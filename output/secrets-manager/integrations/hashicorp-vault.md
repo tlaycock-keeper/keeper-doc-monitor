@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -883,25 +888,25 @@ manager-configuration)
 [HashiCorp Vault
 documentation](https://learn.hashicorp.com/collections/vault/getting-started)
 
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVbvni8ZH5LSuDcwtynn9%252Fdatasource-
-ksm-
-hashicorp.jpg%3Falt%3Dmedia%26token%3D776d562b-07e3-4d89-b8a4-e1434e649190&width=768&dpr=4&quality=100&sign=d8c8ff8a&sv=2)
+[Configuration Documentation](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration#creating-a-secrets-manager-configuration)
 
 [Releases · Keeper-Security/secrets-managerGitHub](https://github.com/Keeper-
 Security/secrets-manager/releases)
 
 Secrets Manager Releases
 
-[Configuration Documentation](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration#creating-a-secrets-manager-configuration)
-
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVbvni8ZH5LSuDcwtynn9%252Fdatasource-
+ksm-
+hashicorp.jpg%3Falt%3Dmedia%26token%3D776d562b-07e3-4d89-b8a4-e1434e649190&width=768&dpr=4&quality=100&sign=d8c8ff8a&sv=2)
 

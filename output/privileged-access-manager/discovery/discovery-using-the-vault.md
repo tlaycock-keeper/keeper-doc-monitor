@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -388,6 +393,38 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * Prerequisites 
+  * Discovery
+  * Create a Discovery Job
+  * Discovery Rules
+  * Job Queue
+  * Process Results
+  * Publish Found Resources
+  * Next Steps
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=mEqrws5aL2q4iEcsxjFh&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Discovery](/en/keeperpam/privileged-access-manager/discovery)
+
+# Discovery using the Vault
+
+Running Discovery using the Keeper Vault user interface
+
+[PreviousDiscovery using Commander](/en/keeperpam/privileged-access-
+manager/discovery/discovery-using-
+commander)[NextKeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -418,17 +455,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=mEqrws5aL2q4iEcsxjFh&only=yes&limit=100)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 ###
 
 Overview
@@ -440,7 +466,9 @@ infrastructure using Discovery with the Keeper Vault and Desktop App.
 
 Prerequisites
 
-Prior to using Discovery, make sure to review the  documentation.
+Prior to using Discovery, make sure to review the [Discovery
+Basics](/en/keeperpam/privileged-access-manager/discovery/discovery-basics)
+documentation.
 
 ###
 
@@ -529,30 +557,6 @@ Now that the Discovery is complete, additional resources can be found by
 running another job against the same Gateway and PAM Configuration. If Admin
 Credentials have been linked to KeeperPAM Resources, these credentials will be
 used to discover local user accounts within each resource.
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Discovery](/en/keeperpam/privileged-access-manager/discovery)
-
-# Discovery using the Vault
-
-Running Discovery using the Keeper Vault user interface
-
-[PreviousDiscovery using Commander](/en/keeperpam/privileged-access-
-manager/discovery/discovery-using-
-commander)[NextKeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
-
-  * Overview
-  * Prerequisites 
-  * Discovery
-  * Create a Discovery Job
-  * Discovery Rules
-  * Job Queue
-  * Process Results
-  * Publish Found Resources
-  * Next Steps
-
-[Discovery Basics](/en/keeperpam/privileged-access-
-manager/discovery/discovery-basics)
 
 Empty State - Discovery Module
 

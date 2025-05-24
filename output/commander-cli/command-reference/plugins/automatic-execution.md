@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -425,6 +430,18 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-Mf4pGN5y0sCTAGU3WgV&only=yes&limit=100)
 
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
+
+# Automatic Execution
+
+Automatic password rotation with Commander
+
+[PreviousActive Directory Plugin](/en/keeperpam/commander-cli/command-
+reference/plugins/active-directory-plugin)[NextService Mode REST
+API](/en/keeperpam/commander-cli/service-mode-rest-api)
+
 Last updated 4 months ago
 
 Was this helpful?
@@ -440,27 +457,6 @@ Commander configuration file
 
 **Example:**
 
-In this example, we are telling Commander to first download and decrypt
-records, then rotate the password (record UID iaOXP1fnApRh5DbaRd7MWA) using
-the plugin programmed into the record. To locate the Record UID, simply view
-it on the commander interactive shell or view it on the Keeper Web Vault and
-Desktop App (as seen below).
-
-For more information on running Commander commands with a configuration file,
-see the
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
-
-# Automatic Execution
-
-Automatic password rotation with Commander
-
-[PreviousActive Directory Plugin](/en/keeperpam/commander-cli/command-
-reference/plugins/active-directory-plugin)[NextService Mode REST
-API](/en/keeperpam/commander-cli/service-mode-rest-api)
-
 Copy
 
     
@@ -470,6 +466,15 @@ Copy
         "password":"somereallystrongpassword",
         "commands":["d", "r iaOXP1fnApRh5DbaRd7MWA"]
     }
+
+In this example, we are telling Commander to first download and decrypt
+records, then rotate the password (record UID iaOXP1fnApRh5DbaRd7MWA) using
+the plugin programmed into the record. To locate the Record UID, simply view
+it on the commander interactive shell or view it on the Keeper Web Vault and
+Desktop App (as seen below).
+
+For more information on running Commander commands with a configuration file,
+see the
 
 [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
 rotation)

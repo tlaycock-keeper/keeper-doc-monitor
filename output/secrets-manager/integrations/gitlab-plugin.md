@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -420,33 +425,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Features
-  * Prerequisites
-  * About
-  * Setup
-  * Save Configuration as a Secret Variable
-  * Usage
-  * Prepare the Pipeline for Secrets Manager
-  * Get Secrets
-  * Set Secret as Environment Variable
-  *   * Create a File from a Secret
-  * Complete Example
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-MkdGFOKqlxew9z0KHiO&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# GitLab
-
-Keeper Secrets Manager integration into GitLab for dynamic secrets retrieval
-
-[PreviousGitHub Actions](/en/keeperpam/secrets-manager/integrations/github-
-actions)[NextGoogle Cloud Secret Manager Sync](/en/keeperpam/secrets-
-manager/integrations/gcp-secret-manager)
 
 Last updated 4 months ago
 
@@ -522,21 +504,8 @@ In order to use Keeper Secrets Manager with GitLab, first we need to install
 it from the PyPi registry. This can be achieved by adding following line to
 the `before_script` area:
 
-Copy
-
-    
-    
-    before_script:
-      - python3 -m pip install keeper-secrets-manager-cli
-
 If you did not set the Secrets Manager Configuration variable to the name
 `KSM_CONFIG` you need to set it here in the `before_script` area
-
-Copy
-
-    
-    
-      - export KSM_CONFIG=$<SECRETS MANAGER CONFIG VARIABLE>
 
 ###
 
@@ -544,12 +513,6 @@ Get Secrets
 
 Inside the GitLab job, retrieve a secrets from the Keeper Vault using the
 following format:
-
-Copy
-
-    
-    
-    $(ksm secret notation <KEEPER NOTATION>)
 
 After getting a secret, you can set it as an environment variable or file.
 
@@ -565,16 +528,6 @@ a secret to an environment variable
 The following job sets a password secret as an environment variable named
 `MY_PWD` and a custom 'isbncode' record field to the environment variable
 named `MY _ISBNCODE`
-
-Copy
-
-    
-    
-    job1:
-      stage: build
-      script:
-        - export MY_PWD=$(ksm secret notation keeper://XXX/field/password)
-        - export MY_ISBNCODE=$(ksm secret notation keeper://XXX/custom_field/isbncode)
 
 Replace `XXX` with a record UID in the above example.
 
@@ -597,15 +550,6 @@ The following job gets a file named "mykey.pub" that is attached to a Keeper
 record and saves its contents into file name "mykey.pub" in the local "tmp"
 folder
 
-Copy
-
-    
-    
-    job1:
-      stage: build
-      script:
-       - ksm secret download -u XXX --name "mykey.pub" --file-output "/tmp/mykey.pub"
-
 Replace `XXX` with a record UID in the above example.
 
 Keeper Secrets Manager can be used in any job stage. This example uses the
@@ -616,23 +560,6 @@ Keeper Secrets Manager can be used in any job stage. This example uses the
 Complete Example
 
 The example below shows all available functionality of this integration
-
-Copy
-
-    
-    
-    image: python:latest
-    
-    before_script:
-      - python3 -m pip install keeper-secrets-manager-cli
-    
-    job1:
-      stage: build
-      script:
-        - export MY_PWD=$(ksm secret notation keeper://XXX/field/password)
-        - export MY_ISBNCODE=$(ksm secret notation keeper://XXX/custom_field/isbncode)
-        - ksm secret download -u XXX--name "mykey.pub" --file-output "/tmp/mykey.pub"
-        - file /tmp/mykey.pub
 
 Replace `XXX` in the example above with a record UID.
 
@@ -652,6 +579,84 @@ A keeper  is required to utilize the GitLab integration.
 The GitLab integration supports **Base64** and **JSON** configurations.
 
 This utilizes the  to get secrets using .
+
+Copy
+
+    
+    
+    before_script:
+      - python3 -m pip install keeper-secrets-manager-cli
+
+Copy
+
+    
+    
+      - export KSM_CONFIG=$<SECRETS MANAGER CONFIG VARIABLE>
+
+Copy
+
+    
+    
+    $(ksm secret notation <KEEPER NOTATION>)
+
+Copy
+
+    
+    
+    job1:
+      stage: build
+      script:
+        - export MY_PWD=$(ksm secret notation keeper://XXX/field/password)
+        - export MY_ISBNCODE=$(ksm secret notation keeper://XXX/custom_field/isbncode)
+
+Copy
+
+    
+    
+    job1:
+      stage: build
+      script:
+       - ksm secret download -u XXX --name "mykey.pub" --file-output "/tmp/mykey.pub"
+
+Copy
+
+    
+    
+    image: python:latest
+    
+    before_script:
+      - python3 -m pip install keeper-secrets-manager-cli
+    
+    job1:
+      stage: build
+      script:
+        - export MY_PWD=$(ksm secret notation keeper://XXX/field/password)
+        - export MY_ISBNCODE=$(ksm secret notation keeper://XXX/custom_field/isbncode)
+        - ksm secret download -u XXX--name "mykey.pub" --file-output "/tmp/mykey.pub"
+        - file /tmp/mykey.pub
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# GitLab
+
+Keeper Secrets Manager integration into GitLab for dynamic secrets retrieval
+
+[PreviousGitHub Actions](/en/keeperpam/secrets-manager/integrations/github-
+actions)[NextGoogle Cloud Secret Manager Sync](/en/keeperpam/secrets-
+manager/integrations/gcp-secret-manager)
+
+  * Features
+  * Prerequisites
+  * About
+  * Setup
+  * Save Configuration as a Secret Variable
+  * Usage
+  * Prepare the Pipeline for Secrets Manager
+  * Get Secrets
+  * Set Secret as Environment Variable
+  *   * Create a File from a Secret
+  * Complete Example
 
 [Overview ](/en/keeperpam/secrets-manager/overview)
 
@@ -678,14 +683,8 @@ manager/about/terminology#application)
 an-application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG6FEOq6NQs-V7faS%252F-MkdGVZHNVs_7DXooyJA%252Fgitlab-
-plugin-
-header.jpg%3Falt%3Dmedia%26token%3D8473ec29-d8e7-4c89-b437-12740e205265&width=768&dpr=4&quality=100&sign=548e4ce&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FMoIVhziuwjV7UcqTqqmk%252Fimage.png%3Falt%3Dmedia%26token%3D3668afc8-81e5-4825-aa44-e76f23e7d5ee&width=768&dpr=4&quality=100&sign=ec2a95cc&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FUdGWGw0HPCgjF3kRVs77%252Fimage.png%3Falt%3Dmedia%26token%3D2a244b08-0dff-4f95-9a59-8dc72927085c&width=768&dpr=4&quality=100&sign=bfe28d34&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -693,5 +692,11 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYhpG7ahqg
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FUdGWGw0HPCgjF3kRVs77%252Fimage.png%3Falt%3Dmedia%26token%3D2a244b08-0dff-4f95-9a59-8dc72927085c&width=768&dpr=4&quality=100&sign=bfe28d34&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FMoIVhziuwjV7UcqTqqmk%252Fimage.png%3Falt%3Dmedia%26token%3D3668afc8-81e5-4825-aa44-e76f23e7d5ee&width=768&dpr=4&quality=100&sign=ec2a95cc&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG6FEOq6NQs-V7faS%252F-MkdGVZHNVs_7DXooyJA%252Fgitlab-
+plugin-
+header.jpg%3Falt%3Dmedia%26token%3D8473ec29-d8e7-4c89-b437-12740e205265&width=768&dpr=4&quality=100&sign=548e4ce&sv=2)
 

@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -388,6 +393,33 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * Features
+  * Architecture
+  * How does Password Rotation Work?
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=wMNTMS1fpwa1c1jcKTpn&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Password Rotation
+
+Keeper password rotation capabilities with Keeper Secrets Manager
+
+[PreviousJust-In-Time Access (JIT)](/en/keeperpam/privileged-access-
+manager/getting-started/just-in-time-access-jit)[NextRotation
+Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -417,33 +449,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Overview
-  * Features
-  * Architecture
-  * How does Password Rotation Work?
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=wMNTMS1fpwa1c1jcKTpn&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# Password Rotation
-
-Keeper password rotation capabilities with Keeper Secrets Manager
-
-[PreviousJust-In-Time Access (JIT)](/en/keeperpam/privileged-access-
-manager/getting-started/just-in-time-access-jit)[NextRotation
-Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview)
-
-Last updated 3 months ago
-
-Was this helpful?
 
 ##
 
@@ -490,16 +495,13 @@ How does Password Rotation Work?
 
 In KeeperPAM, the way Password Rotation works is as follows:
 
-  *   * The Rotation Settings of the PAM User record references a specific PAM Machine, PAM Database or PAM Directory resource. This is the target resource where the rotation is performed.
+  * The [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user) record holds the credential that is being rotated.
+
+  * The Rotation Settings of the PAM User record references a specific PAM Machine, PAM Database or PAM Directory resource. This is the target resource where the rotation is performed.
 
   * The Keeper Gateway uses the Admin Credential associated to the PAM Machine, PAM Database or PAM Directory resource to perform the rotation with native protocols.
 
   * For AWS and Azure managed resources, Keeper uses Instance Role permission of the Gateway, or specific PAM Configuration secrets to perform the rotation with APIs.
-
-The  record holds the credential that is being rotated.
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
 
 Password Rotation System Architecture Diagram
 

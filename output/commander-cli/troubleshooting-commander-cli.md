@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -388,6 +393,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * UID Starts With '-'
@@ -484,9 +519,6 @@ What is a Typed Record (V3)
 Records which have a record type are considered 'typed' or sometimes referred
 to as 'V3'. These records have a malleable structure which can be defined and
 customized as well as an updated encryption model with heightened security.
-
-Typed records are required for some features, such as [Keeper Secrets
-Manager](/en/keeperpam/secrets-manager/overview).
 
 What is a Legacy Record (V2)
 
@@ -734,11 +766,6 @@ Copy
     
     security-audit sync --hard @all
 
-To complete the process, have the owner of each affected vault log in to their
-account using the latest version of Commander (installer available for
-download [here](https://github.com/Keeper-Security/Commander/releases/latest)
-under the "Assets" heading).
-
 Please be aware that immediately following either of the command calls
 described above, you may see inaccurate security audit scores for the
 corresponding vaults.
@@ -777,19 +804,9 @@ on the firewall outbound.
 
 Found a Bug?
 
-Please let us know. Send an email to commander@keepersecurity.com or open a
-ticket on our [Github Repo](https://github.com/Keeper-
-Security/Commander/issues).
-
 ##
 
 Vulnerability Disclosure Program
-
-Keeper has partnered with Bugcrowd to manage our vulnerability disclosure
-program. Please submit reports through
-<https://bugcrowd.com/keepersecurity>[](https://bugcrowd.com/keepersecurity)
-or send an email to
-[security@keepersecurity.com](mailto:security@keepersecurity.com).
 
 [PreviousService Mode REST API](/en/keeperpam/commander-cli/service-mode-rest-
 api)
@@ -798,35 +815,27 @@ Last updated 4 months ago
 
 Was this helpful?
 
-#### Company
+Typed records are required for some features, such as .
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+To complete the process, have the owner of each affected vault log in to their
+account using the latest version of Commander (installer available for
+download  under the "Assets" heading).
 
-#### Support
+Please let us know. Send an email to commander@keepersecurity.com or open a
+ticket on our .
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+Keeper has partnered with Bugcrowd to manage our vulnerability disclosure
+program. Please submit reports through  or send an email to .
 
-#### Solutions
+[Keeper Secrets Manager](/en/keeperpam/secrets-manager/overview)
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+[here](https://github.com/Keeper-Security/Commander/releases/latest)
 
-#### Pricing
+[Github Repo](https://github.com/Keeper-Security/Commander/issues)
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+<https://bugcrowd.com/keepersecurity>[](https://bugcrowd.com/keepersecurity)
 
-© 2025 Keeper Security, Inc.
+[security@keepersecurity.com](mailto:security@keepersecurity.com)
 
 [Enforcement PoliciesEnterprise Guide](https://docs.keeper.io/enterprise-
 guide/roles/enforcement-policies)

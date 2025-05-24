@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -420,42 +425,14 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Auto Updater Installation
-  * Prerequisites
-  * Docker
-  * Linux
-  * Windows 
-  * Auto Updater Status
-  * Prerequisites
-  * Status on Linux
-  * Status on Windows
-  * Auto Updater Configuration
-  * Configuration on Linux
-  * Configuration on Windows
-  * Auto Updater Removal
-  * Prerequisites
-  * Removal on Linux
-  * Removal on Windows
-  * Troubleshooting
-  * Check the status of the Auto Update
-  * Logging in the Gateway Auto Updater
-  * Linux
-  * Windows
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=be4aBTS5VnjN5sWfZ7ED&only=yes&limit=100)
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+Last updated 3 months ago
 
-# Auto Updater
-
-Instructions for installing and configuring the Auto Updater for the Keeper
-Gateway.
+Was this helpful?
 
 ##
 
@@ -493,43 +470,11 @@ the below commands from a cron job or your CI/CD tools.
 
 As an example, create a file called `update_gateway.sh` that contains:
 
-Copy
-
-    
-    
-    #!/bin/bash
-    set -e  # Exit immediately if a command fails
-    
-    # Navigate to the directory containing your docker-compose.yml file
-    cd /path/to/your/docker-compose-directory
-    
-    # Pull the latest image and update the Gateway container
-    docker compose pull
-    docker compose up -d keeper-gateway
-
 Make the script executable:
-
-Copy
-
-    
-    
-    chmod +x update_gateway.sh
 
 Edit the crontab:
 
-Copy
-
-    
-    
-    crontab -e
-
 Add a line to schedule the script. For example, to run it every day at 3 AM:
-
-Copy
-
-    
-    
-    0 3 * * * /path/to/update_gateway.sh >> /var/log/update_gateway.log 2>&1
 
 ###
 
@@ -545,13 +490,6 @@ auto update enabled.
 The `--autoupdate` parameter activates the auto updater in addition to the
 Keeper Gateway.
 
-Copy
-
-    
-    
-    curl -fsSL https://keepersecurity.com/pam/install | \
-      sudo bash -s -- --autoupdate
-
 ####
 
 **Existing Keeper Gateway**
@@ -559,22 +497,10 @@ Copy
 Activate the Auto Updater on an existing installation by executing the
 following Keeper Gateway command:
 
-Copy
-
-    
-    
-    sudo keeper-gateway autoupdate enable
-
 **Verify Installation (Optional)**
 
 Verify that the Auto Updater has been installed successfully by executing the
 following Keeper Gateway command:
-
-Copy
-
-    
-    
-    sudo keeper-gateway autoupdate status
 
 ###
 
@@ -596,23 +522,11 @@ New Gateway
 
   * Install Auto Updater with the following Keeper Gateway command:
 
-Copy
-
-    
-    
-    keeper-gateway autoupdate enable
-
 **Verify Installation (Optional)**
 
   * Open a command prompt as Administrator.
 
   * Verify that Auto Updater has been installed successfully by executing the following Keeper Gateway command:
-
-Copy
-
-    
-    
-    keeper-gateway autoupdate status
 
 ##
 
@@ -633,12 +547,6 @@ Status on Linux
 Check the Auto Updater status by executing the following Keeper Gateway
 command:
 
-Copy
-
-    
-    
-    sudo keeper-gateway autoupdate status
-
 ###
 
 Status on Windows
@@ -646,12 +554,6 @@ Status on Windows
   * Open a command prompt as Administrator
 
   * Check the Auto Updater status by executing the following Keeper Gateway command:
-
-Copy
-
-    
-    
-    keeper-gateway autoupdate status
 
 ##
 
@@ -663,20 +565,8 @@ Configuration on Linux
 
 Edit the crontab that runs Auto Updater.
 
-Copy
-
-    
-    
-    sudo crontab -e
-
 Here is an example of the default crontab entry that checks for updates every
 hour:
-
-Copy
-
-    
-    
-    0 * * * * /usr/local/bin/keeper-gateway-update --trust
 
   * The first part `0 * * * *` is the crontab expression which will cause execution to occur every hour at 0 minutes.
 
@@ -716,12 +606,6 @@ Removal on Linux
 
 Remove Auto Updater by executing the following Keeper Gateway command:
 
-Copy
-
-    
-    
-    sudo keeper-gateway autoupdate disable
-
 ###
 
 Removal on Windows
@@ -732,12 +616,6 @@ Remove Auto Updater with the following steps:
 
   * Remove Auto Updater with the following Keeper Gateway command:
 
-Copy
-
-    
-    
-    keeper-gateway autoupdate disable
-
 ##
 
 Troubleshooting
@@ -745,12 +623,6 @@ Troubleshooting
 ###
 
 Check the status of the Auto Update
-
-Copy
-
-    
-    
-    keeper-gateway autoupdate status
 
 ###
 
@@ -791,14 +663,147 @@ The log files for the Gateway Auto Updater are located in
 
   * **Last Update Check** : The file `last-update-check.log` contains information regarding the most recent check for updates.
 
+Copy
+
+    
+    
+    #!/bin/bash
+    set -e  # Exit immediately if a command fails
+    
+    # Navigate to the directory containing your docker-compose.yml file
+    cd /path/to/your/docker-compose-directory
+    
+    # Pull the latest image and update the Gateway container
+    docker compose pull
+    docker compose up -d keeper-gateway
+
+Copy
+
+    
+    
+    chmod +x update_gateway.sh
+
+Copy
+
+    
+    
+    crontab -e
+
+Copy
+
+    
+    
+    0 3 * * * /path/to/update_gateway.sh >> /var/log/update_gateway.log 2>&1
+
+Copy
+
+    
+    
+    curl -fsSL https://keepersecurity.com/pam/install | \
+      sudo bash -s -- --autoupdate
+
+Copy
+
+    
+    
+    sudo keeper-gateway autoupdate enable
+
+Copy
+
+    
+    
+    sudo keeper-gateway autoupdate status
+
+Copy
+
+    
+    
+    keeper-gateway autoupdate enable
+
+Copy
+
+    
+    
+    keeper-gateway autoupdate status
+
+Copy
+
+    
+    
+    sudo keeper-gateway autoupdate status
+
+Copy
+
+    
+    
+    keeper-gateway autoupdate status
+
+Copy
+
+    
+    
+    sudo crontab -e
+
+Copy
+
+    
+    
+    0 * * * * /usr/local/bin/keeper-gateway-update --trust
+
+Copy
+
+    
+    
+    sudo keeper-gateway autoupdate disable
+
+Copy
+
+    
+    
+    keeper-gateway autoupdate disable
+
+Copy
+
+    
+    
+    keeper-gateway autoupdate status
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+# Auto Updater
+
+Instructions for installing and configuring the Auto Updater for the Keeper
+Gateway.
+
 [PreviousWindows Installation](/en/keeperpam/privileged-access-
 manager/getting-started/gateways/windows-installation)[NextAlerts and SIEM
 Integration](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/alerts-and-siem-integration)
 
-Last updated 3 months ago
-
-Was this helpful?
+  * Overview
+  * Auto Updater Installation
+  * Prerequisites
+  * Docker
+  * Linux
+  * Windows 
+  * Auto Updater Status
+  * Prerequisites
+  * Status on Linux
+  * Status on Windows
+  * Auto Updater Configuration
+  * Configuration on Linux
+  * Configuration on Windows
+  * Auto Updater Removal
+  * Prerequisites
+  * Removal on Linux
+  * Removal on Windows
+  * Troubleshooting
+  * Check the status of the Auto Update
+  * Logging in the Gateway Auto Updater
+  * Linux
+  * Windows
 
 Windows Automatic Updates
 

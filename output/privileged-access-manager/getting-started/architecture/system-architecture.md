@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -420,10 +425,26 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Architecture Diagram
+  * Components
+  * Data Flow
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=7hOeF6CJRxPgE4RqgOVB&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [Architecture](/en/keeperpam/privileged-access-manager/getting-started/architecture)
+
+# Architecture Diagram
+
+Keeper Password Rotation architecture diagram and data flow
+
+[PreviousArchitecture](/en/keeperpam/privileged-access-manager/getting-
+started/architecture)[NextVault Security](/en/keeperpam/privileged-access-
+manager/getting-started/architecture/vault-security)
 
 Last updated 4 months ago
 
@@ -521,22 +542,6 @@ the customer-hosted Keeper Gateway service.
 Keeper's Backend API is the endpoint which all Keeper client applications
 communicate with. Client applications encrypt data locally and transmit
 encrypted ciphertext to the API in a  format.
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [Architecture](/en/keeperpam/privileged-access-manager/getting-started/architecture)
-
-# Architecture Diagram
-
-Keeper Password Rotation architecture diagram and data flow
-
-[PreviousArchitecture](/en/keeperpam/privileged-access-manager/getting-
-started/architecture)[NextVault Security](/en/keeperpam/privileged-access-
-manager/getting-started/architecture/vault-security)
-
-  * Architecture Diagram
-  * Components
-  * Data Flow
 
 [WebRTC](https://en.wikipedia.org/wiki/WebRTC)
 

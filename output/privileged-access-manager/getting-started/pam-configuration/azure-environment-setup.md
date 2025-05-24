@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -445,13 +450,16 @@ manager/getting-started/pam-configuration/aws-environment-setup)[NextLocal
 Environment Setup](/en/keeperpam/privileged-access-manager/getting-
 started/pam-configuration/local-environment-setup)
 
-Last updated 4 months ago
+Last updated 12 minutes ago
 
 Was this helpful?
 
 ##
 
 Azure Environment Overview
+
+Resources in your Azure environment can be managed by a Keeper Gateway using
+Azure App policies and client IDs configured in the PAM Configuration record.
 
 In order to set up your Azure environment, the following steps must be taken:
 

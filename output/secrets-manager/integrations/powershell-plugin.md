@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -871,11 +876,11 @@ manager/tree/master/sdk/dotNet/SecretManagement.Keeper)
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mkx-
 lxHNSwOix9K5_-J%252F-Mkx9u3Z-bE-LQokynFC%252Fpowershell-plugin-
 header.jpg%3Falt%3Dmedia%26token%3Dff821ba5-92f0-43b6-8768-198012a8450d&width=768&dpr=4&quality=100&sign=21639efc&sv=2)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 

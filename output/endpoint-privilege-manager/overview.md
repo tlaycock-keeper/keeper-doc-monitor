@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -444,7 +449,7 @@ Endpoint Privilege Manager is a Privileged Elevation and Delegation Management
 manager/references/preview-access)[NextSetup](/en/keeperpam/endpoint-
 privilege-manager/setup)
 
-Last updated 1 month ago
+Last updated 1 hour ago
 
 Was this helpful?
 
@@ -457,16 +462,16 @@ Endpoint Privilege Manager
 Introduction
 
 Endpoint Privilege Manager is an advanced Privileged Elevation and Delegation
-Management (PEDM) solution that provides secure, just-in-time privileged
-access across your IT environments.
+Management (PEDM) solution that provides secure, just-in-time elevated
+privileges across your IT environments.
 
 This comprehensive documentation will guide you through the setup, deployment,
 and management of Endpoint Privilege Manager.
 
 By implementing Endpoint Privilege Manager, your organization can enforce
-least-privilege policies, eliminate standing admin rights, and provide just-
-in-time access at both the process and machine levels, protecting against data
-breaches and cyber attacks.
+least-privilege policies, eliminate standing admin rights and provide just-in-
+time elevated access at both the process and machine levels, protecting
+against data breaches and cyber attacks.
 
 Contact your Keeper customer success team to learn more about Endpoint
 Privilege Manager
@@ -489,6 +494,8 @@ your endpoints through privilege management:
   * **Process-level privilege management** for granular access control
 
   * **Just-in-time (JIT) access** at both process and machine levels
+
+  * **Elevation requests** with approvals and escalation workflows
 
   * **Flexible policy management** based on your organization's risk tolerance
 

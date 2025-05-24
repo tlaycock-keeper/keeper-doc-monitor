@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -388,38 +393,10 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
+  * How does Endpoint Privilege Manager work?
+  * How does the Keeper Agent communicate to the backend service?
   * Does Keeper have endpoint access?
   * Do Keeper's servers know what programs my employees are running?
   * How does Keeper provide Just-in-Time access when approval is required?
@@ -442,6 +419,37 @@ PDF](/en/keeperpam/~gitbook/pdf?page=YWHXoMq4daKex1SrcMQT&only=yes&limit=100)
 # FAQs
 
 Frequently Asked Questions regarding Keeper Privilege Manager
+
+###
+
+How does Endpoint Privilege Manager work?
+
+On Windows, Keeper Endpoint Privilege Manager is installed as an agent under
+system privilege, running as a service. The agent performs application hooking
+to intercept every process creation in Windows under the user session. We do
+not hook system processes or other security products.
+
+When an application executable is launched, Keeper evaluates each subprocess
+request individually against policy before execution. This allows us to either
+require MFA, require justification, deny or request approval prior to
+elevation of a subprocess. When the process is executed, it is performed under
+an ephemeral account that is destroyed post-execution.
+
+On macOS, Keeper is an approved Apple system extension. On Linux, we use a
+"pluggable authentication module" which handles process elevation.
+
+System extensions on macOS provide a way for developers to extend the
+functionality of the operating system, running in user space rather than the
+kernel, which improves security and stability.
+
+###
+
+How does the Keeper Agent communicate to the backend service?
+
+By default, the Keeper agent communicates to the Keeper backend infrastructure
+using a zero-knowledge encrypted messaging protocol. If the customer leverages
+a SPIFFE server in their environment, Keeper supports a SPIFFE plugin that can
+be registered to talk to the customer's SPIFFE agent with signed payloads.
 
 ###
 
@@ -617,11 +625,40 @@ usage. The admin can specify if justification is required, MFA required or
 approval required for executing the sudo command. This policy can then be
 applied to collections of users, groups and machines.
 
-[PreviousManaging Requests](/en/keeperpam/endpoint-privilege-manager/managing-
-requests)[NextSecrets Manager Overview](/en/keeperpam/secrets-
-manager/overview)
+[PreviousBest Practices](/en/keeperpam/best-practices)[NextSecrets Manager
+Overview](/en/keeperpam/secrets-manager/overview)
 
-Last updated 15 hours ago
+Last updated 1 day ago
 
 Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

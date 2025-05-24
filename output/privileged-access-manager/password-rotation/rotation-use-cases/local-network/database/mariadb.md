@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -616,10 +621,10 @@ overview#enabling-rotation-on-the-admin-console)
 [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 overview#enabling-rotation-on-the-admin-console)
 
+[page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/local-network#rotation-on-the-local-network)
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FdhD6D9I1nwDLWy7tcyxP%252FMariaDB%2520Local%2520Network.jpg%3Falt%3Dmedia%26token%3Db5e88662-a274-4396-8726-d9a4828e3d64&width=768&dpr=4&quality=100&sign=4a1c1993&sv=2)
-
-[page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/local-network#rotation-on-the-local-network)
 

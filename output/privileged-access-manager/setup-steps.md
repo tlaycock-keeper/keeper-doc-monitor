@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -420,10 +425,23 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Setup Steps
+  * Notes
+  * Feedback 
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=PR2hkE7TmA365mTVpHE3&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Setup Steps
+
+Accessing the KeeperPAM platform
+
+[PreviousKeeperPAM](/en/keeperpam)[NextQuick Start:
+Sandbox](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
 
 Last updated 2 months ago
 
@@ -484,6 +502,21 @@ available will differ.
 
 Use the basic `docker-compose.yml` file as shown below:
 
+Copy
+
+    
+    
+    services:
+          keeper-gateway:
+            platform: linux/amd64
+            image: keeper/gateway:latest
+            shm_size: 2g
+            security_opt:
+              - "seccomp:docker-seccomp.json"
+            environment:
+              ACCEPT_EULA: Y
+              GATEWAY_CONFIG: XXXXXXXXXXXX
+
 Download the file called `docker-seccomp.json` and place it in the same folder
 as your Docker Compose file.
 
@@ -500,6 +533,12 @@ as your Docker Compose file.
 **Linux**
 
 To update an existing Gateway on Linux:
+
+Copy
+
+    
+    
+    curl -fsSL https://keepersecurity.com/pam/install | sudo bash -s --
 
 ####
 
@@ -553,40 +592,6 @@ connection types.
 
 We recommend setting up a Keeper Gateway using the new . This provides a
 customized Docker Compose file that provides an instant sandbox for testing.
-
-Copy
-
-    
-    
-    services:
-          keeper-gateway:
-            platform: linux/amd64
-            image: keeper/gateway:latest
-            shm_size: 2g
-            security_opt:
-              - "seccomp:docker-seccomp.json"
-            environment:
-              ACCEPT_EULA: Y
-              GATEWAY_CONFIG: XXXXXXXXXXXX
-
-Copy
-
-    
-    
-    curl -fsSL https://keepersecurity.com/pam/install | sudo bash -s --
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# Setup Steps
-
-Accessing the KeeperPAM platform
-
-[PreviousKeeperPAM](/en/keeperpam)[NextQuick Start:
-Sandbox](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
-
-  * Setup Steps
-  * Notes
-  * Feedback 
 
 [start a free trial](https://www.keepersecurity.com/password-manager-free-
 trial-sign-up.html)

@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -2389,12 +2394,12 @@ library#initialization)
 [Record Type](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types)
 
+[Record Fields](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types#field-types)
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mjk7Db0Wlkkp831N5I2%252F-Mjk7Tug3FxVG9QLp5qG%252Fdeveloper-
 sdk-
 header.jpg%3Falt%3Dmedia%26token%3Da5073936-e3ff-4481-aaef-f7a95e42704c&width=768&dpr=4&quality=100&sign=7077e7ab&sv=2)
-
-[Record Fields](/en/keeperpam/commander-cli/command-reference/record-
-commands/default-record-types#field-types)
 

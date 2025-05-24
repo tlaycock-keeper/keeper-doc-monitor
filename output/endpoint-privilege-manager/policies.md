@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -433,6 +438,7 @@ On this page
   * Policy Timing
   * Offline Access
   * Commander CLI
+  * Next Steps
 
 Was this helpful?
 
@@ -445,11 +451,11 @@ PDF](/en/keeperpam/~gitbook/pdf?page=vDbSrpaFEyRgJGVFRYIn&only=yes&limit=100)
 
 Applying least privilege policies to your users and machines
 
-[PreviousDeployment](/en/keeperpam/endpoint-privilege-
-manager/deployment)[NextManaging Requests](/en/keeperpam/endpoint-privilege-
-manager/managing-requests)
+[PreviousCollections](/en/keeperpam/endpoint-privilege-
+manager/collections)[NextExample Policies](/en/keeperpam/endpoint-privilege-
+manager/policies/example-policies)
 
-Last updated 21 hours ago
+Last updated 8 hours ago
 
 Was this helpful?
 
@@ -457,11 +463,22 @@ Was this helpful?
 
 Policy Overview
 
-Endpoint Privilege Manager can apply least privilege policies to users and
-machines across the fleet of endpoints which are running the Keeper agent.
-Policies can be applied to collections of users, groups, machines,
-applications and date/time ranges. The policy is customized by the Admin based
-on the organization's requirements.
+Endpoint Privilege Manager can apply least privilege policies to applications,
+users and machines across the fleet of endpoints which are running the Keeper
+agent. Policies can be applied to any collections in the tenant. The policy is
+customized by the Admin based on the organization's requirements.
+
+Policies are applied based on:
+
+  * **Collection of resources**
+
+  * **Policy Type**
+
+  * **Controls**
+
+  * **Attributes**
+
+The Policies screen displays all active enforcements in the tenant.
 
 ###
 
@@ -613,6 +630,18 @@ Copy
     assign     Assign collections to policy
     delete     Delete PEDM policy
 
+###
+
+Next Steps
+
+Set up a few , or learn about .
+
+[policies by example](/en/keeperpam/endpoint-privilege-
+manager/policies/example-policies)
+
+[managing requests](/en/keeperpam/endpoint-privilege-manager/managing-
+requests)
+
 Policies
 
 Policy Editor
@@ -627,7 +656,7 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FClVsHWgmy
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5iLgF8VeCfELdqLImMKD%252FPolicies.png%3Falt%3Dmedia%26token%3D8d2db699-9500-4790-9445-8fb482a473f5&width=768&dpr=4&quality=100&sign=c812813d&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9AgSVRMVxr0n1wfXR3rD%252FScreenshot%25202025-05-23%2520at%252012.03.04%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D193ebdb8-648b-4984-9524-b562f2c24ef1&width=768&dpr=4&quality=100&sign=4418f304&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -388,36 +393,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * What is Keeper Discovery?
@@ -439,13 +414,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=8G0YDtlJoBhGZpfEnLqO&only=yes&limit=100)
 Discover machines, databases, accounts and services across your on-prem and
 cloud infrastructure
 
-[PreviousIntegration with Git](/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git)[NextDiscovery Basics](/en/keeperpam/privileged-
-access-manager/discovery/discovery-basics)
-
-Last updated 2 months ago
-
-Was this helpful?
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FbtqVxeRc08f4ry5Aa7Et%252FKeeperPAM%2520discovery.jpg%3Falt%3Dmedia%26token%3D191ceece-e875-4ee0-81af-1bd20bc6439a&width=768&dpr=4&quality=100&sign=aa18d418&sv=2)
 
 ##
 
@@ -495,7 +466,7 @@ within the customer's environment. The gateway encrypts findings and securely
 exchanges data with the Keeper Vault and privileged users via the Keeper
 Secrets Manager APIs.
 
-  * 
+  * For more information, see the [Architecture](/en/keeperpam/secrets-manager/about/architecture) section
 
 ##
 
@@ -527,7 +498,13 @@ After locating resources, a rules engine converts the findings into Keeper
 records and adds those resources to Shared Folders. The types of Keeper
 Records that can be created are:
 
-  *   *   *   * 
+  * [PAM Machines](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-machine)
+
+  * [PAM Databases](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database)
+
+  * [PAM Directories](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-directory)
+
+  * [PAM Users](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
 Once resources are discovered, the interactive discovery process enables users
 to link administrative credentials, such as username/password combinations or
@@ -547,36 +524,49 @@ How to use Discovery
 
 Discovery can be managed through the Keeper Commander CLI and the Vault UI.
 
-  *   *   * 
+  * [Discovery Basics](/en/keeperpam/privileged-access-manager/discovery/discovery-basics)
+
+  * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
+
+  * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
 
 The next section covers the basics on performing discovery with KeeperPAM.
 
-For more information, see the  section
+[PreviousIntegration with Git](/en/keeperpam/privileged-access-manager/ssh-
+agent/integration-with-git)[NextDiscovery Basics](/en/keeperpam/privileged-
+access-manager/discovery/discovery-basics)
 
-[Architecture](/en/keeperpam/secrets-manager/about/architecture)
+Last updated 2 months ago
 
-[PAM Machines](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
+Was this helpful?
 
-[PAM Databases](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database)
+#### Company
 
-[PAM Directories](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-directory)
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-[PAM Users](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
+#### Support
 
-[Discovery Basics](/en/keeperpam/privileged-access-
-manager/discovery/discovery-basics)
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-[Discovery using Commander](/en/keeperpam/privileged-access-
-manager/discovery/discovery-using-commander)
+#### Solutions
 
-[Discovery using the Vault](/en/keeperpam/privileged-access-
-manager/discovery/discovery-using-the-vault)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FbtqVxeRc08f4ry5Aa7Et%252FKeeperPAM%2520discovery.jpg%3Falt%3Dmedia%26token%3D191ceece-e875-4ee0-81af-1bd20bc6439a&width=768&dpr=4&quality=100&sign=aa18d418&sv=2)
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

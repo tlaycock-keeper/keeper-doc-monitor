@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -388,6 +393,35 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * What is Keeper Remote Browser Isolation (RBI)?
+  * Use Cases
+  * How does Keeper Remote Browser Isolation Work? 
+  * Why Use Keeper Remote Browser Isolation? 
+  * Keeper Remote Browser Isolation Features 
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=zOFd8ti3gLBcoQ9ASEhv&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Remote Browser Isolation
+
+Securely access web-based applications through a rendered, isolated browser
+experience
+
+[PreviousSetting up Tunnels](/en/keeperpam/privileged-access-
+manager/tunnels/setting-up-tunnels)[NextSetting up
+RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation/setting-
+up-rbi)
+
+Last updated 1 month ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -417,35 +451,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * What is Keeper Remote Browser Isolation (RBI)?
-  * Use Cases
-  * How does Keeper Remote Browser Isolation Work? 
-  * Why Use Keeper Remote Browser Isolation? 
-  * Keeper Remote Browser Isolation Features 
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=zOFd8ti3gLBcoQ9ASEhv&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# Remote Browser Isolation
-
-Securely access web-based applications through a rendered, isolated browser
-experience
-
-[PreviousSetting up Tunnels](/en/keeperpam/privileged-access-
-manager/tunnels/setting-up-tunnels)[NextSetting up
-RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation/setting-
-up-rbi)
-
-Last updated 1 month ago
-
-Was this helpful?
 
 ##
 
@@ -526,10 +531,9 @@ Keeper Remote Browser Isolation Features
 
   * **Credential Autofill** \- Keeper's remote browser isolation protocol can automatically inject credentials, submit forms and control the target web application without ever sending the credentials to the user's device.
 
-To get started with Remote Browser Isolation, proceed to the next .
-
+To get started with Remote Browser Isolation, proceed to the next
 [section](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation/setting-up-rbi)
+isolation/setting-up-rbi).
 
 Remote Browser Isolation demonstrating the PgAdmin Web UI
 

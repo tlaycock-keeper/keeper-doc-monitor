@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -388,6 +393,122 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Example 1: Adding PAM Resources to a PAM Configuration
+  * Example 2: Assign Rotation Settings to PAM Machine records
+  * Example 3: Assign Rotation Settings in JSON Notation 
+  * Example 4: Assign Rotation Settings for All Records
+  * Batch Mode
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=Ah8xHf0dPGaMnYXxmpAO&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
+
+# Managing Rotation via CLI
+
+Managing rotation settings on individual and bulk records using Keeper
+Commander
+
+Keeper Commander can perform individual or bulk updates on PAM resource
+records, such as adding rotation to a whole set of records in a folder.
+
+####
+
+Prerequisites:
+
+  * All of your rotation records are imported to the appropriate folders
+
+  * You have at least one Keeper Gateway installed and running
+
+  * You have at least one active PAM Configuration
+
+###
+
+Example 1: Adding PAM Resources to a PAM Configuration
+
+To attach a PAM Machine resource record to an existing PAM Configuration, and
+to assign a default rotation schedule, use the sample Commander CLI commands
+below:
+
+Copy
+
+    
+    
+    sync-down
+    pam config edit -c "<PAM_Config_UID>" --resource-record "<Machine1_UID>" --schedule Daily
+    pam config edit -c "<PAM_Config_UID>" --resource-record "<Machine2_UID>" --schedule Daily
+
+Note 1: The PAM Configuration UID can be found by typing: `pam config list`
+
+Note 2: Machine UIDs can be found by navigating to the folder and using `ls
+-l`
+
+Copy
+
+    
+    
+    My Vault> cd "My Folder"
+    My Vault> ls -l
+
+###
+
+Example 2: Assign Rotation Settings to PAM Machine records
+
+The commands below will assign a scheduled rotation to the specific PAM
+Machine records, and it also sets the resource record to
+
+Copy
+
+    
+    
+    sync-down
+    pam rotation set --record="<Machine1_UID>" --config="<PAM_Config_UID>" --resource="<Machine1_UID>" --schedulecron "0 3 * * 2" --enable --force
+    pam rotation set --record="<Machine2_UID>" --config="<PAM_Config_UID>" --resource="<Machine2_UID>" --schedulecron "0 3 * * 2" --enable --force
+
+###
+
+Example 3: Assign Rotation Settings in JSON Notation
+
+The below command will assign a resource and set up a rotation schedule using
+JSON notation:
+
+Copy
+
+    
+    
+    pam rotation set --record="<Machine1_UID>" --config="<PAM_Config_UID>" --resource="<Machine1_UID>" -sj '{"type":"DAILY","tz":"Etc/UTC","time":"03:00:00","intervalCount":60}' --enable --force
+
+###
+
+Example 4: Assign Rotation Settings for All Records
+
+The below command will assign rotation capabilities in bulk for all records
+within a specific folder. In this case the folder is a sub-folder beneath a
+Shared Folder.
+
+Copy
+
+    
+    
+    pam rotation set --folder="/ShareFolder1/PrivateFolder2" --config="<PAM_CONFIG_UID>" --resource="<PAM_Machine_UID>" --schedulecron "0 3 * * 2" --enable --force
+
+###
+
+Batch Mode
+
+[PreviousImporting PAM Records](/en/keeperpam/privileged-access-
+manager/references/importing-pam-records)[NextCommander
+SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
+
+Last updated 11 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -418,123 +539,7 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=Ah8xHf0dPGaMnYXxmpAO&only=yes&limit=100)
-
-Last updated 11 months ago
-
-Was this helpful?
-
-Keeper Commander can perform individual or bulk updates on PAM resource
-records, such as adding rotation to a whole set of records in a folder.
-
-####
-
-Prerequisites:
-
-  * All of your rotation records are imported to the appropriate folders
-
-  * You have at least one Keeper Gateway installed and running
-
-  * You have at least one active PAM Configuration
-
-###
-
-Example 1: Adding PAM Resources to a PAM Configuration
-
-To attach a PAM Machine resource record to an existing PAM Configuration, and
-to assign a default rotation schedule, use the sample Commander CLI commands
-below:
-
-Note 1: The PAM Configuration UID can be found by typing: `pam config list`
-
-Note 2: Machine UIDs can be found by navigating to the folder and using `ls
--l`
-
-###
-
-Example 2: Assign Rotation Settings to PAM Machine records
-
-The commands below will assign a scheduled rotation to the specific PAM
-Machine records, and it also sets the resource record to
-
-###
-
-Example 3: Assign Rotation Settings in JSON Notation
-
-The below command will assign a resource and set up a rotation schedule using
-JSON notation:
-
-###
-
-Example 4: Assign Rotation Settings for All Records
-
-The below command will assign rotation capabilities in bulk for all records
-within a specific folder. In this case the folder is a sub-folder beneath a
-Shared Folder.
-
-###
-
-Batch Mode
-
 To run a large number of commands in a batch mode, see Keeper's  command.
-
-Copy
-
-    
-    
-    sync-down
-    pam config edit -c "<PAM_Config_UID>" --resource-record "<Machine1_UID>" --schedule Daily
-    pam config edit -c "<PAM_Config_UID>" --resource-record "<Machine2_UID>" --schedule Daily
-
-Copy
-
-    
-    
-    My Vault> cd "My Folder"
-    My Vault> ls -l
-
-Copy
-
-    
-    
-    sync-down
-    pam rotation set --record="<Machine1_UID>" --config="<PAM_Config_UID>" --resource="<Machine1_UID>" --schedulecron "0 3 * * 2" --enable --force
-    pam rotation set --record="<Machine2_UID>" --config="<PAM_Config_UID>" --resource="<Machine2_UID>" --schedulecron "0 3 * * 2" --enable --force
-
-Copy
-
-    
-    
-    pam rotation set --record="<Machine1_UID>" --config="<PAM_Config_UID>" --resource="<Machine1_UID>" -sj '{"type":"DAILY","tz":"Etc/UTC","time":"03:00:00","intervalCount":60}' --enable --force
-
-Copy
-
-    
-    
-    pam rotation set --folder="/ShareFolder1/PrivateFolder2" --config="<PAM_CONFIG_UID>" --resource="<PAM_Machine_UID>" --schedulecron "0 3 * * 2" --enable --force
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
-
-# Managing Rotation via CLI
-
-Managing rotation settings on individual and bulk records using Keeper
-Commander
-
-[PreviousImporting PAM Records](/en/keeperpam/privileged-access-
-manager/references/importing-pam-records)[NextCommander
-SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
-
-  * Example 1: Adding PAM Resources to a PAM Configuration
-  * Example 2: Assign Rotation Settings to PAM Machine records
-  * Example 3: Assign Rotation Settings in JSON Notation 
-  * Example 4: Assign Rotation Settings for All Records
-  * Batch Mode
 
 [Batch Mode](/en/keeperpam/commander-cli/command-reference/misc-commands#run-
 batch-command)

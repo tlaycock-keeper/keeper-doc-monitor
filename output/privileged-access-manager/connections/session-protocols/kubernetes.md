@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -388,36 +393,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview
@@ -465,10 +440,19 @@ PAM Record
 
 Definition
 
+[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)
+
 The PAM Configuration contains information of your target infrastructure
+
+[PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine) Record
 
 The PAM Machine record contains information of the endpoint you want to
 establish a Kubernetes REST API connection to.
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user) Record
 
 The PAM User record contains the user credentials that will be used to connect
 to the endpoint
@@ -555,6 +539,13 @@ certificates are validated.
 
 Certificate Authority Certificate
 
+The certificate of the certificate authority that signed the certificate of
+the Kubernetes server, in PEM format. If omitted, verification of the
+Kubernetes server certificate will use only [system-wide certificate
+authorities.](https://access.redhat.com/documentation/en-
+us/red_hat_enterprise_linux/7/html/security_guide/sec-shared-system-
+certificates)
+
 Client Certificate
 
 The certificate to use if performing SSL/TLS client authentication to
@@ -588,42 +579,39 @@ manager/connections/session-protocols/telnet-connections)[NextRBI
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/rbi-connections)
 
-Last updated 3 days ago
+Last updated 4 days ago
 
 Was this helpful?
 
-Record
+#### Company
 
-Record
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-The certificate of the certificate authority that signed the certificate of
-the Kubernetes server, in PEM format. If omitted, verification of the
-Kubernetes server certificate will use only
+#### Support
 
-[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-[PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
+#### Solutions
 
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-[system-wide certificate
-authorities.](https://access.redhat.com/documentation/en-
-us/red_hat_enterprise_linux/7/html/security_guide/sec-shared-system-
-certificates)
+#### Pricing
 
-For this protocol, both graphical and the full, raw text text content of
-terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this .
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
-  * Learn more about 
-
-[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
-
-[Session Recording and Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
+© 2025 Keeper Security, Inc.
 
 Field
 
@@ -638,6 +626,17 @@ Administrative Credential Record
 
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
+
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this .
+
+  * Learn more about 
+
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+
+[Session Recording and Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)

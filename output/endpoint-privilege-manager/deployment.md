@@ -208,8 +208,13 @@ KeeperPAM and Secrets Manager
     * [Overview](/en/keeperpam/endpoint-privilege-manager/overview)
     * [Setup](/en/keeperpam/endpoint-privilege-manager/setup)
     * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
+    * [Collections](/en/keeperpam/endpoint-privilege-manager/collections)
     * [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+      * [Example Policies](/en/keeperpam/endpoint-privilege-manager/policies/example-policies)
+
     * [Managing Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Best Practices](/en/keeperpam/best-practices)
   * [FAQs](/en/keeperpam/faqs)
   * Secrets Manager
 
@@ -388,6 +393,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * Requirements
+  * Encryption
+  * Deployment Package
+  * Deployment Collections
+  * Discovery of Inventory Data
+  * Commander CLI
+  * Next Steps
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=KEkG5ky7xq0IniHT6zVE&only=yes&limit=100)
+
+  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
+
+# Deployment
+
+Deploying the Keeper Agent to your endpoints
+
+[PreviousSetup](/en/keeperpam/endpoint-privilege-
+manager/setup)[NextCollections](/en/keeperpam/endpoint-privilege-
+manager/collections)
+
+Last updated 17 hours ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -417,37 +452,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Overview
-  * Requirements
-  * Encryption
-  * Deployment Package
-  * Deployment Collections
-  * Managing Deployments
-  * Device Collections
-  * Commander CLI
-  * Next Steps
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=KEkG5ky7xq0IniHT6zVE&only=yes&limit=100)
-
-  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
-
-# Deployment
-
-Deploying the Keeper Agent to your endpoints
-
-[PreviousSetup](/en/keeperpam/endpoint-privilege-
-manager/setup)[NextPolicies](/en/keeperpam/endpoint-privilege-
-manager/policies)
-
-Last updated 15 hours ago
-
-Was this helpful?
 
 ###
 
@@ -503,11 +507,19 @@ or use case.
 
 ###
 
-Managing Deployments
+Discovery of Inventory Data
 
-As the agent is installed and deployed to the endpoints, the Keeper Admin
-Console will receive the encrypted telemetry information about the endpoint
-including:
+When the agent is installed and deployed to the endpoints, there are 3 types
+of discovery that is performed on the endpoint:
+
+  * **Basic Inventory** : Operating system, version, type
+
+  * **Account Inventory** : Local users and groups
+
+  * **File Inventory** : All executables on the system
+
+The Keeper Admin Console will receive the discovered inventory as encrypted
+telemetry data, containing information about the endpoint including:
 
   * Computer name and type
 
@@ -518,6 +530,10 @@ including:
   * Local group account information
 
   * Installed applications
+
+When deploying Keeper, we recommend installing the agent on reference machines
+in order to collect as much standardized inventory data as possible, before
+deploying to your fleet of devices.
 
 The Deployment page displays the endpoint stats organized by collection.
 
@@ -530,38 +546,10 @@ policies.
 
 ###
 
-Device Collections
-
-When agents are deployed and aggregating information about the endpoints,
-Keeper automatically creates device collections. A collection is a group of
-resources. Collections are categorized by the following types:
-
-  * **Applications**
-
-  * **Machines**
-
-  * **Operating Systems**
-
-  * **User Groups**
-
-Admins can also create their own custom collections within each category.
-Click on **New Collection** to create a collection and assign attributes. For
-example, a custom collection "Developers" can be created which includes all
-software engineers. Or a custom collection of type "Machines" might be called
-"Web Servers" where only web servers are added to the collection. Or as
-another example, a custom collection of type "Applications" might be called
-"Developer Tools" where applications such as GitHub.exe or Visual Studio Code
-is included.
-
-Collections can not contain different resource types. For example a User Group
-collection can not contain a Machine resource.
-
-###
-
 Commander CLI
 
-Keeper Commander supports Deployment and Collection management through our
-command-line interface and Python SDK.
+Keeper Commander supports Deployment management through our command-line
+interface and Python SDK.
 
 ####
 
@@ -607,29 +595,6 @@ Copy
 
 ####
 
-Collections
-
-The `pedm collection` command provides management over collections.
-
-Copy
-
-    
-    
-    My Vault> pedm collection -h
-    pedm command [--options]
-    
-    Command     Description
-    ----------  ----------------------------------
-    list        List PEDM collections
-    view        Show PEDM collection details
-    add         Creates PEDM collection
-    update      Update PEDM collections
-    delete      Delete PEDM collections
-    connect     Link agent, policy, resource to PEDM collections
-    disconnect  Unlink agent, policy, resource from PEDM collections
-
-####
-
 Reports
 
 The `pedm report` command provides event logs and event reports.
@@ -650,14 +615,8 @@ Copy
 
 Next Steps
 
-Policies can be applied to device collections and deployment collections to
-control privilege on all of the endpoints. Visit the  page to learn more.
-
-Once you have deployed the agent, it's time to set up .
-
-[Policies](/en/keeperpam/endpoint-privilege-manager/policies)
-
-[policies](/en/keeperpam/endpoint-privilege-manager/policies)
+Once you have deployed the agent, discovery kicks in and generates
+[collections](/en/keeperpam/endpoint-privilege-manager/collections).
 
 Creating a Deployment Package
 
@@ -666,10 +625,6 @@ Deployment Dashboard
 Enable or Disable Collections of Endpoints
 
 Enable or Disable individual endpoints
-
-Device Collections
-
-Custom Collections
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -690,12 +645,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FxyLobktuo
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2IONbTXWloBmdQp9K1yd%252FSelected%2520deployment%2520endpoints.png%3Falt%3Dmedia%26token%3D193a06aa-33ba-49a4-9cc7-f93f97b3ebb9&width=768&dpr=4&quality=100&sign=2339b0e4&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FD05v9ILHqYrAmbu50byx%252FCollections%2520-%2520Filled.png%3Falt%3Dmedia%26token%3De2c0c040-bb2f-4a6e-8316-38036b19c5d7&width=768&dpr=4&quality=100&sign=729f7b5a&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuqKqVbY2FgzxQMmtareU%252FEdit%2520Collection.png%3Falt%3Dmedia%26token%3Db74bbc60-8fd6-4edd-9593-6c6a65bcccae&width=768&dpr=4&quality=100&sign=1c2f19e8&sv=2)
 
