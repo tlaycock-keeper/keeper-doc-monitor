@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -393,36 +394,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Prerequisites
@@ -454,6 +425,36 @@ Last updated 1 month ago
 
 Was this helpful?
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 In this guide, you will learn how to rotate AWS EC2 Virtual Machine (VM)
 Accounts on your AWS Environment using Keeper Rotation. The EC2 VM is an AWS
 managed resource where the EC2 VM Admin Credentials are linked to the **PAM
@@ -470,7 +471,11 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   *   *   * 
+  *   *   * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+
+  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is able to [communicate via SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh) or [WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm) with your target AWS Virtual Machine(s).
+
+  * Your AWS environment is [configured](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup) per our documentation
 
 ##
 
@@ -541,7 +546,11 @@ for this environment.
 
 Make sure the following items are completed:
 
-  *   *   * PAM Machine records have been created for each target machine
+  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+
+  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is provisioned in the Keeper Secrets Manager application you created.
+
+  * PAM Machine records have been created for each target machine
 
 If you are creating a new PAM Configuration, login to the Keeper Vault and
 select "Secrets Manager", then select the "PAM Configurations" tab, and click
@@ -585,6 +594,10 @@ Set this field to `USE_INSTANCE_ROLE` if you are using EC2 role policy
 
 Set this field to `USE_INSTANCE_ROLE` if you are using EC2 role policy
 (default). Otherwise use a specific Secret Access Key.
+
+For more details on all the configurable fields in the PAM Configuration
+record, visit this [page](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration).
 
 ##
 
@@ -642,47 +655,39 @@ Keeper Secrets Manager is enabled for your
 
 Keeper Rotation is enabled for your
 
-A Keeper Secrets Manager  has been created
-
-A Keeper Rotation  is already installed, running, and is able to  or  with
-your target AWS Virtual Machine(s).
-
-Your AWS environment is  per our documentation
-
-A Keeper Secrets Manager  has been created
-
-A Keeper Rotation  is already installed, running, and is provisioned in the
-Keeper Secrets Manager application you created.
-
-For more details on all the configurable fields in the PAM Configuration
-record, visit this .
-
-[application](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
-
-[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-[communicate via SSH](/en/keeperpam/privileged-access-
-manager/references/setting-up-ssh)
-
-[WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
-
-[configured](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/aws-environment-setup)
-
-[application](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
-
-[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration)
-
 [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 overview#enabling-rotation-on-the-admin-console)
 
 [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 overview#enabling-rotation-on-the-admin-console)
+
+PAM Machine record
+
+PAM Configuration for AWS
+
+Linux PAM User record
+
+Password Rotation Settings on AWS Instance User
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F0Y2y9l0gTfNdoE3FA4YV%252FEC2%2520Virtual%2520Machine%2520User.jpg%3Falt%3Dmedia%26token%3D78a5e94c-1223-4849-9b63-90bf78b952a2&width=768&dpr=4&quality=100&sign=8b34b487&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHV1tsZY8VyyuTJV23jAa%252FScreenshot%25202025-02-08%2520at%252012.08.32%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D511de53e-9868-4185-915c-8b61f6282e5d&width=768&dpr=4&quality=100&sign=ba6d9f0b&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F73xYUEcQoMEflLLtu70W%252FScreenshot%25202025-02-08%2520at%252012.10.29%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3De2ff5fdd-2db2-4474-9e33-569a8923bd02&width=768&dpr=4&quality=100&sign=f1e3a71f&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuDPuGpWsVg5WOw5WEFwe%252FScreenshot%25202025-02-08%2520at%25204.08.08%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D3e1c1d5b-e559-4cef-9095-12215dfa40fb&width=768&dpr=4&quality=100&sign=64aee45b&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2OqJSlntStvwCncNSgyK%252FScreenshot%25202023-05-11%2520at%252010.56.07%2520AM.jpg%3Falt%3Dmedia%26token%3Df96c49e7-b923-46d1-97c0-4554e80adf32&width=768&dpr=4&quality=100&sign=349b3e89&sv=2)
 
 ##
 
@@ -740,32 +745,4 @@ exists. If the value is FALSE, the private key will not be rotated.
 
 For Linux user rotations, password-encrypted PEM files are not currently
 supported.
-
-PAM Machine record
-
-PAM Configuration for AWS
-
-Linux PAM User record
-
-Password Rotation Settings on AWS Instance User
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F0Y2y9l0gTfNdoE3FA4YV%252FEC2%2520Virtual%2520Machine%2520User.jpg%3Falt%3Dmedia%26token%3D78a5e94c-1223-4849-9b63-90bf78b952a2&width=768&dpr=4&quality=100&sign=8b34b487&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHV1tsZY8VyyuTJV23jAa%252FScreenshot%25202025-02-08%2520at%252012.08.32%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D511de53e-9868-4185-915c-8b61f6282e5d&width=768&dpr=4&quality=100&sign=ba6d9f0b&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F73xYUEcQoMEflLLtu70W%252FScreenshot%25202025-02-08%2520at%252012.10.29%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3De2ff5fdd-2db2-4474-9e33-569a8923bd02&width=768&dpr=4&quality=100&sign=f1e3a71f&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuDPuGpWsVg5WOw5WEFwe%252FScreenshot%25202025-02-08%2520at%25204.08.08%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D3e1c1d5b-e559-4cef-9095-12215dfa40fb&width=768&dpr=4&quality=100&sign=64aee45b&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2OqJSlntStvwCncNSgyK%252FScreenshot%25202023-05-11%2520at%252010.56.07%2520AM.jpg%3Falt%3Dmedia%26token%3Df96c49e7-b923-46d1-97c0-4554e80adf32&width=768&dpr=4&quality=100&sign=349b3e89&sv=2)
 

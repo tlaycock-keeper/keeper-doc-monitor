@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -393,6 +394,84 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * sync command
+  * Sync Types
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=xatPhjOOmgV2nj3wjv9p&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
+
+# Sync Command
+
+Synchronizes selected keys from Keeper Vault to an external secrets manager
+
+Synchronization is one way only, using Keeper as a source of truth _(read
+only)_ and updates only the remote key-value pairs in the external secrets
+manager.
+
+##
+
+`sync` command
+
+**Description:** Import and synchronize secrets from the Keeper Vault with
+external secrets management systems
+
+`ksm sync --credentials <UID> --type [aws|azure|gcp|json] [--dry-run]
+[--preserve-missing] --map <KEY NOTATION>...`
+
+Requires a Secrets Manager profile that has been initialized with: `ksm
+profile init <TOKEN> See` the [Profile Documentation](/en/keeperpam/secrets-
+manager/secrets-manager-command-line-interface/profile-command) for more
+information
+
+parameters:
+
+  * `-t, --type ` Type of the target key/value storage. Available types are:
+
+    * `aws` \- AWS Secrets Manager
+
+    * `azure`\- Azure Key Vault
+
+    * `gcp` \- GCP Secret Manager
+
+    * `json` \- lists all pending sync operations including both source and destination values
+
+  * `-m, --map `<KEY NOTATION>`...` Map destination key names to values using [notation ](/en/keeperpam/secrets-manager/about/keeper-notation)URI
+
+  * `-c, --credentials <uid>` UID of Keeper record with credentials to access destination key/value storage. The specified record must be shared with the Keeper Secrets Manager Application 
+
+optional parameters:
+
+  * `-n, --dry-run` Perform a trial run with no changes made.
+
+  * `-p, --preserve-missing` Preserve destination value when source value is deleted.
+
+##
+
+Sync Types
+
+Select an external provider below to learn more about the integration.
+
+[AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-
+secrets-manager)[Azure Key Vault Sync](/en/keeperpam/secrets-
+manager/integrations/azure-key-vault)[Google Cloud Secret Manager
+Sync](/en/keeperpam/secrets-manager/integrations/gcp-secret-manager)
+
+[PreviousFolder Command](/en/keeperpam/secrets-manager/secrets-manager-
+command-line-interface/folder-command)[NextExec
+Command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/exec-command)
+
+Last updated 7 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -422,89 +501,4 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * sync command
-  * Sync Types
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=xatPhjOOmgV2nj3wjv9p&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
-
-# Sync Command
-
-Synchronizes selected keys from Keeper Vault to an external secrets manager
-
-[PreviousFolder Command](/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface/folder-command)[NextExec
-Command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/exec-command)
-
-Last updated 7 months ago
-
-Was this helpful?
-
-Synchronization is one way only, using Keeper as a source of truth _(read
-only)_ and updates only the remote key-value pairs in the external secrets
-manager.
-
-##
-
-`sync` command
-
-**Description:** Import and synchronize secrets from the Keeper Vault with
-external secrets management systems
-
-`ksm sync --credentials <UID> --type [aws|azure|gcp|json] [--dry-run]
-[--preserve-missing] --map <KEY NOTATION>...`
-
-Requires a Secrets Manager profile that has been initialized with: `ksm
-profile init <TOKEN> See` the  for more information
-
-parameters:
-
-  * `-t, --type ` Type of the target key/value storage. Available types are:
-
-    * `aws` \- AWS Secrets Manager
-
-    * `azure`\- Azure Key Vault
-
-    * `gcp` \- GCP Secret Manager
-
-    * `json` \- lists all pending sync operations including both source and destination values
-
-  * `-m, --map `<KEY NOTATION>`...` Map destination key names to values using URI
-
-  * `-c, --credentials <uid>` UID of Keeper record with credentials to access destination key/value storage. The specified record must be shared with the Keeper Secrets Manager Application 
-
-optional parameters:
-
-  * `-n, --dry-run` Perform a trial run with no changes made.
-
-  * `-p, --preserve-missing` Preserve destination value when source value is deleted.
-
-##
-
-Sync Types
-
-Select an external provider below to learn more about the integration.
-
-[Profile Documentation](/en/keeperpam/secrets-manager/secrets-manager-command-
-line-interface/profile-command)
-
-[notation ](/en/keeperpam/secrets-manager/about/keeper-notation)
-
-[AWS Secrets Manager Sync](/en/keeperpam/secrets-manager/integrations/aws-
-secrets-manager)
-
-[Azure Key Vault Sync](/en/keeperpam/secrets-manager/integrations/azure-key-
-vault)
-
-[Google Cloud Secret Manager Sync](/en/keeperpam/secrets-
-manager/integrations/gcp-secret-manager)
 

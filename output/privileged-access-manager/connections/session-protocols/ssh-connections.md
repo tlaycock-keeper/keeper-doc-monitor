@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -453,7 +454,7 @@ manager/connections/session-protocols)[NextRDP
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/rdp-connections)
 
-Last updated 4 days ago
+Last updated 5 days ago
 
 Was this helpful?
 
@@ -662,11 +663,22 @@ Session Recordings - SSH Protocol
 
 Learn more on how to
 
-[Getting Started page](/en/keeperpam/privileged-access-
-manager/connections/getting-started)
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this .
+
+  * Learn more about 
+
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+
+[Session Recording and Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
 
 [activate SSH on Windows](/en/keeperpam/privileged-access-
 manager/references/setting-up-ssh#windows)
+
+[Getting Started page](/en/keeperpam/privileged-access-
+manager/connections/getting-started)
 
 Field
 
@@ -751,15 +763,4 @@ resources/pam-machine)
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
-
-For this protocol, both graphical and the full, raw text text content of
-terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this .
-
-  * Learn more about 
-
-[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
-
-[Session Recording and Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
 

@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -393,6 +394,35 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * AWS Environment Overview 
+  * EC2 IAM Role Policy
+  * Minimum AWS Policy to Manage IAM users
+  * IAM User Policy
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=7LH7nq7UkUQSzsxjXLTt&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
+
+# AWS Environment Setup
+
+Setting up your AWS environment to work with KeeperPAM
+
+[PreviousPAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)[NextAzure Environment
+Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration/azure-environment-setup)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -423,35 +453,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-  * AWS Environment Overview 
-  * EC2 IAM Role Policy
-  * Minimum AWS Policy to Manage IAM users
-  * IAM User Policy
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=7LH7nq7UkUQSzsxjXLTt&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
-
-# AWS Environment Setup
-
-Setting up your AWS environment to work with KeeperPAM
-
-[PreviousPAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)[NextAzure Environment
-Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/azure-environment-setup)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 ##
 
 AWS Environment Overview
@@ -463,7 +464,9 @@ configured in the PAM Configuration record.
 The role policy must be configured appropriately to enable access to the
 target AWS resources:
 
-  *   * 
+  * [EC2 Role Policy](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup#ec2-role)
+
+  * [IAM User Policy](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup#iam-admin-user-1)
 
 The following diagram shows the AWS environment hierarchy:
 
@@ -612,16 +615,9 @@ The steps to create the access keys is below:
   5. Save the provided Access Key ID / Secret Access Key into the PAM Configuration
 
 In addition to these policies, we recommend protecting the Gateway
-Configuration secrets .
-
-[using the AWS KMS](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/advanced-configuration/gateway-configuration-with-aws-kms)
-
-[EC2 Role Policy](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/aws-environment-setup#ec2-role)
-
-[IAM User Policy](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/aws-environment-setup#iam-admin-user-1)
+Configuration secrets [using the AWS KMS](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/advanced-configuration/gateway-configuration-
+with-aws-kms).
 
 AWS Rotation Hierarchy
 

@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -1790,9 +1791,6 @@ go>[](https://github.com/Keeper-Security/secrets-manager-go)
 [Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
 notation)
 
-[UploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/golang-
-sdk#upload-a-file)
-
 [Record Types](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
 
@@ -1801,4 +1799,7 @@ commands/default-record-types#field-types)
 
 [documentation](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#field-types)
+
+[UploadFile](/en/keeperpam/secrets-manager/developer-sdk-library/golang-
+sdk#upload-a-file)
 

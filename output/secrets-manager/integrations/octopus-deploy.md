@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -425,31 +426,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Features
-  * Prerequisites
-  * About
-  * Installation
-  * Community Step Template
-  * Custom Step Template
-  * Step Configuration
-  * Settings
-  * Parameters
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=dSjHRoYO5aq55jqwaTHQ&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Octopus Deploy
-
-Keeper Secrets Manager Step Template for accessing secrets in Octopus Deploy
-
-[PreviousLinux Keyring](/en/keeperpam/secrets-manager/integrations/linux-
-keyring)[NextOracle Key Vault Encryption](/en/keeperpam/secrets-
-manager/integrations/oracle-key-vault)
 
 Last updated 4 months ago
 
@@ -524,15 +504,6 @@ Parameters
 
  _Multiple fields can be retrieved by entering each one on a new line. The line format is_ `Notation | variable` _, where the variable name part is optional and if omitted auto generated variable names are used in the form of KsmSecret1, KsmSecret2, ...etc._
 
-Copy
-
-    
-    
-    V8lFbio0Bs0LuvaSD5DDHA/field/login | MyLogin
-    V8lFbio0Bs0LuvaSD5DDHA/field/password | MyPass
-    V8lFbio0Bs0LuvaSD5DDHA/custom_field/phone[1][number] | MyOtherPhoneNum
-    V8lFbio0Bs0LuvaSD5DDHA/file/IMG_0036.png | MyImageBase64
-
 For a complete list of Keeper Secrets Manager features see the
 
 Keeper Secrets Manager access (See the  for more details)
@@ -573,6 +544,36 @@ dynamically_.
 `#{Keeper.SecretsManager.RetrieveSecrets.PrintVariableNames} `Write out the
 Octopus  names to the task log. Default: `False`
 
+Copy
+
+    
+    
+    V8lFbio0Bs0LuvaSD5DDHA/field/login | MyLogin
+    V8lFbio0Bs0LuvaSD5DDHA/field/password | MyPass
+    V8lFbio0Bs0LuvaSD5DDHA/custom_field/phone[1][number] | MyOtherPhoneNum
+    V8lFbio0Bs0LuvaSD5DDHA/file/IMG_0036.png | MyImageBase64
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Octopus Deploy
+
+Keeper Secrets Manager Step Template for accessing secrets in Octopus Deploy
+
+[PreviousLinux Keyring](/en/keeperpam/secrets-manager/integrations/linux-
+keyring)[NextOracle Key Vault Encryption](/en/keeperpam/secrets-
+manager/integrations/oracle-key-vault)
+
+  * Features
+  * Prerequisites
+  * About
+  * Installation
+  * Community Step Template
+  * Custom Step Template
+  * Step Configuration
+  * Settings
+  * Parameters
+
 [Overview ](/en/keeperpam/secrets-manager/overview)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
@@ -608,11 +609,11 @@ variables)
 [output variable](https://octopus.com/docs/projects/variables/output-
 variables)
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 Octopus Deploy Integration with Keeper Secrets Manager
 

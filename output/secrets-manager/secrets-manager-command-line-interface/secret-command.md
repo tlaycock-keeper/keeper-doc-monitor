@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -1458,7 +1459,10 @@ Example:
 
  _*The UID in this example is not a real record UID_
 
-[ PreviousInit Command](/en/keeperpam/secrets-manager/secrets-manager-command-
+See the [Troubleshooting section](/en/keeperpam/secrets-
+manager/troubleshooting#record-uid-starts-with) for more details
+
+[PreviousInit Command](/en/keeperpam/secrets-manager/secrets-manager-command-
 line-interface/init-command)[NextFolder Command](/en/keeperpam/secrets-
 manager/secrets-manager-command-line-interface/folder-command)
 
@@ -1495,9 +1499,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-See the  for more details
-
-[Troubleshooting section](/en/keeperpam/secrets-
-manager/troubleshooting#record-uid-starts-with)
 

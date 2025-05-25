@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -1996,6 +1997,12 @@ plugin](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/copy
 playbook?](https://docs.ansible.com/ansible/latest/reference_appendices/faq.html#keep-
 secret-data)
 
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
+[One-Time Access Token](/en/keeperpam/secrets-manager/quick-start-
+guide#create-a-secrets-manager-client-device-1)
+
 [prerequisites](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
 plugin#prerequisites)
 
@@ -2007,12 +2014,6 @@ configuration)
 
 [Ansible variable](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
 plugin#ansible-variables)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
-[One-Time Access Token](/en/keeperpam/secrets-manager/quick-start-
-guide#create-a-secrets-manager-client-device-1)
 
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)

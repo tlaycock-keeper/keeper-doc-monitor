@@ -394,6 +394,247 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * 1\. Secret Retrieval via Keeper Secrets Manager
+  * 2\. Access Assignment via Keeper Commander CLI
+  * 3\. Commander Service Mode REST API
+  * Integration Summary
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=aZ9uOgNOBsiIfAGW09Ow&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
+
+# ITSM Integration
+
+Integrating KeeperPAM with ITSM platforms such as ServiceNow
+
+##
+
+Overview
+
+KeeperPAM integrates seamlessly with ITSM platforms (such as ServiceNow) to
+automate privileged access management within IT service workflows, eliminating
+manual credential handling and reducing security risks.
+
+Examples include:
+
+  * Automated secret retrieval and credential rotation
+
+  * User provisioning and team/role assignments
+
+  * Time-based access grants to servers and applications
+
+  * Shared folder creation and user assignments
+
+  * Compliance reporting and audit event retrieval
+
+Below are the primary integration methods supported by KeeperPAM.
+
+* * *
+
+###
+
+1\. Secret Retrieval via Keeper Secrets Manager
+
+Keeper provides a native integration with ServiceNow MID Servers that allows
+secure retrieval of secrets from Keeper Secrets Manager.
+
+**Setup Overview:**
+
+  * Install Keeper Secrets Manager SDK and plugin on the ServiceNow MID Server
+
+  * Use a configured Secrets Manager Application with scoped access
+
+  * Authenticate the MID server using a One-Time Access Token (OTA) or application credentials
+
+  * Use secrets in orchestration scripts and automation tasks
+
+**Benefits:**
+
+  * Secrets are never stored in ServiceNow
+
+  * Zero-trust access to secrets using Keeper’s cloud vault
+
+  * Supports audit logging, fine-grained access, and secret rotation
+
+For more details, see the [ServiceNow integration](/en/keeperpam/secrets-
+manager/integrations/servicenow) for Keeper Secrets Manager
+
+* * *
+
+###
+
+2\. Access Assignment via Keeper Commander CLI
+
+ITSM platforms like ServiceNow can assign access to privileged resources or
+perform password rotation using Keeper Commander CLI, executed from a MID
+Server.
+
+**Setup Steps:**
+
+  1. Install a ServiceNow MID Server on a Windows or Linux machine
+
+  2. Install Keeper Commander
+
+  3. Authenticate Keeper Commander with a persistent session
+
+  4. In ServiceNow Flow Designer, use a Run PowerShell or Run Command activity. 
+
+####
+
+Example Commands:
+
+To grant a user with 1-hour access to a Linux server:
+
+Copy
+
+    
+    
+    share-record --expire-in 1h -e user@company.com servers/Linux001
+
+Rotate a specific password:
+
+Copy
+
+    
+    
+    pam action rotate --record-uid <RECORD_UID>
+
+Invite a user to Keeper
+
+Copy
+
+    
+    
+    enterprise-user --add user@example.com
+
+Create a Shared Folder and Add User
+
+Copy
+
+    
+    
+    mkdir some_team_folder -sf -s
+    share-folder some_team_folder -e user@example.com -p off
+
+**Benefits:**
+
+  * Automates just-in-time access provisioning
+
+  * No secrets stored in ServiceNow
+
+  * Integrates with approval flows and service catalog items
+
+This method offers the most flexibility. Any Keeper Commander action can be
+scripted and triggered via the MID Server.
+
+For more information on this method, see the [Keeper
+Commander](/en/keeperpam/commander-cli/overview) setup guide and see the list
+of [available commands](/en/keeperpam/commander-cli/command-reference).
+
+* * *
+
+###
+
+3\. Commander Service Mode REST API
+
+Customers can enable Commander Service Mode to expose a secure internal REST
+API that accepts HTTP commands for executing Keeper actions.
+
+**Setup Summary:**
+
+  * Install Keeper Commander and run in Service Mode
+
+  * Restrict access to the API on internal networks only
+
+  * Create a Service Mode configuration that defines which commands are allowed
+
+  * Use HTTPS requests to trigger actions like:
+
+    * Inviting users to Keeper
+
+    * Adding or removing users from teams
+
+    * Rotating passwords
+
+    * Initiating BreachWatch scans
+
+    * Sharing access to vault records
+
+**Benefits:**
+
+  * REST API for ITSM, ticketing, and custom automation platforms
+
+  * Full command support via HTTPS
+
+  * Flexible and platform-agnostic
+
+Security note: This API is self-hosted by the customer and should be secured
+with internal-only access and firewall restrictions.
+
+For more information, see the [Commander Service
+Mode](/en/keeperpam/commander-cli/service-mode-rest-api) setup guide.
+
+* * *
+
+###
+
+Integration Summary
+
+Integration Type
+
+Use Case
+
+Platform
+
+Setup Location
+
+Security Model
+
+Secrets Manager MID Server
+
+Securely retrieve secrets
+
+ServiceNow
+
+MID Server
+
+Zero-trust vault access
+
+Commander CLI via Flow Designer
+
+Access assignment, password rotation
+
+Any ITSM platform.
+
+MID Server
+
+CLI-based automation
+
+Commander Service Mode API
+
+REST-based command execution
+
+Any ITSM platform.
+
+Internal server
+
+Internal-only REST interface
+
+[PreviousManaging Rotation via CLI](/en/keeperpam/privileged-access-
+manager/references/managing-rotation-via-cli)[NextCommander
+SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
+
+Last updated 11 hours ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -423,293 +664,4 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Overview 
-  * Prerequisites 
-  * Connection Enforcement Policies 
-  * Session Recordings 
-  * Installing the Keeper Gateway
-  * PAM Configuration 
-  * PAM Machine, PAM Database and PAM Directory
-  * Supported Connection Protocols 
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=2mJIjXr2FETaepff4yC5&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-
-# Getting Started
-
-Getting Started with configuring connections on your PAM Record types
-
-[PreviousConnections](/en/keeperpam/privileged-access-
-manager/connections)[NextSession Protocols](/en/keeperpam/privileged-access-
-manager/connections/session-protocols)
-
-Last updated 4 months ago
-
-Was this helpful?
-
-##
-
-Overview
-
-In this guide, you will learn how to setup connections for all the supported
-protocols on your PAM Record types in your Keeper Vault.
-
-An active license is required in order to use the features available with
-KeeperPAM. This license is available for both business and enterprise
-customers.
-
-  *   *   * 
-
-##
-
-Prerequisites
-
-Prior to configuring Connections, make sure to have the following:
-
-###
-
-Connection Enforcement Policies
-
-The following Enforcement Policies affect user's permissions to use
-Connections and need to be enabled.
-
-Enforcement policies for KeeperPAM are managed in the Keeper Admin Console
-under **Admin** > **Roles** > **Enforcement Policies** > **Privileged Access
-Manager**.
-
-Enforcement Policy
-
-Commander Enforcement Policy
-
-Definition
-
-Can configure connection settings
-
-Allow users to configure Tunnel settings on PAM Machine, PAM Directory, PAM
-Database and PAM Configuration Records Types
-
-Can start connections
-
-Allow users to start tunnels on PAM Machine, PAM Directory and PAM Database
-Record Types
-
-Can view recordings
-
-Allow users to view session Recordings.
-
-Copy
-
-    
-    
-    enterprise-role "My Role" --enforcement "ALLOW_CONFIGURE_PAM_CLOUD_CONNECTION_SETTINGS":true
-    enterprise-role "My Role" --enforcement "ALLOW_LAUNCH_PAM_ON_CLOUD_CONNECTION":true
-    enterprise-role "My Role" --enforcement "ALLOW_VIEW_KCM_RECORDINGS":true
-
-####
-
-Enforcement Policy Use Cases
-
-If a user should only have access to launching connections and not configuring
-connections, then only "Can start connections" policy should be enabled for
-the user.
-
-In addition to launching connections, If a user should also have access to
-configure connections, then "Can configure connections settings" and "Can
-start connections" should be enabled for the user.
-
-###
-
-Session Recordings
-
-###
-
-Installing the Keeper Gateway
-
-The Keeper Gateway is a hosted agentless service that is installed on the
-customer's network to enabled zero-trust access to target infrastructure.
-Typically this service is installed on a Linux or Docker environment in each
-of the networks that requires access.
-
-###
-
-PAM Configuration
-
-###
-
-PAM Machine, PAM Database and PAM Directory
-
-A **Keeper Connection** is a secure, encrypted interactive session established
-between your vault client to the target endpoint. The target endpoint needs to
-be defined on one of the following PAM Record types:
-
-PAM Record Type
-
-Target Endpoint type
-
-Windows/MacOS/Linux Machines, EC2 Instances, Azure VMs
-
-MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
-
-Active Directory, OpenLDAP
-
-Web-based applications
-
-Depending on your target endpoint, visit the corresponding PAM Record Type
-page for more information on setup.
-
-##
-
-Supported Connection Protocols
-
-The following table lists all the supported connection protocol that can be
-configured in your Keeper Vault. Visit the associated link for each protocol
-for more details on configuration.
-
-Protocol
-
-PAM Record Type
-
-Definition
-
-PAM Machine
-
-Connecting to the target defined on the PAM Machine Record with the SSH
-connection protocol
-
-PAM Machine
-
-Connecting to the target defined on the PAM Machine Record with the RDP
-connection protocol
-
-PAM Browser
-
-Connecting to the URL defined in the PAM Browser Record with the Remote
-Browser Isolation (http/https) protocol
-
-PAM Database
-
-Connecting to the target defined on the PAM Database Record with the MySQL
-connection protocol
-
-PAM Database
-
-Connecting to the target defined on the PAM Database Record with the SQL
-Server connection protocol
-
-PAM Database
-
-Connecting to the target defined on the PAM Database Record with the
-PostgreSQL connection protocol
-
-PAM Machine
-
-Connecting to the target defined on the PAM Machine Record with the VNC
-connection protocol
-
-PAM Machine
-
-Connecting to the target defined on the PAM Machine Record with the Telnet
-connection protocol
-
-Tunnels can also be enabled on the  using the `enterprise-role` command:
-
-Launched connections can also be recorded. These recordings are available on
-the PAM Machine, PAM Database, or PAM Directory record types and can be played
-back on your Vault. For more details on session recording and playback, visit
-this .
-
-For more details on installing and setting up your gateway, visit this .
-
-The **PAM Configuration** contains essential information of your target
-infrastructure, settings and . Setting up a PAM Configuration for your
-infrastructure is required. For more information on creating and configuring
-the PAM Configuration, visit this .
-
-Copy
-
-    
-    
-    ALLOW_CONFIGURE_PAM_CLOUD_CONNECTION_SETTINGS
-
-Copy
-
-    
-    
-    ALLOW_LAUNCH_PAM_ON_CLOUD_CONNECTION
-
-Copy
-
-    
-    
-    ALLOW_VIEW_KCM_RECORDINGS
-
-[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
-
-[page](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)
-
-[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration)
-
-[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
-manager-commands#overview)
-
-[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
-[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database)
-
-[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-directory)
-
-[PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-remote-browser)
-
-[SSH](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/ssh-connections)
-
-[RDP](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/rdp-connections)
-
-[RBI](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/rbi-connections)
-
-[MySQL](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/mysql-connections)
-
-[SQL Server](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/sql-server-connections)
-
-[PostgreSQL](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/postgresql-connections)
-
-[VNC](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/vnc-connections)
-
-[Telnet](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/telnet-connections)
-
-[KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-
-management/)
-
-[Request a Demo](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-
-[Contact Support](https://www.keepersecurity.com/support.html)
-
-KeeperPAM Enforcement Policies
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWjChJvfoO14GjFwRqbVj%252FScreenshot%25202025-01-21%2520at%252011.50.51%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D979ba299-1710-4c92-adfc-36437e9631ce&width=768&dpr=4&quality=100&sign=ad11a445&sv=2)
 

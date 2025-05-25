@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -393,36 +394,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview
@@ -453,6 +424,36 @@ Last updated 1 month ago
 
 Was this helpful?
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ##
 
 Overview
@@ -472,9 +473,17 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   *   * The Keeper Gateway can communicate over WinRM or SSH to the target machine:
+  * [Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-started/enforcement-policies) are configured for your role
 
-    *     * **SSH:** Enabled and running on port 22. Verification: Run `ssh [your-user]@[your-machine] -p 22` to verify that SSH is running.
+  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+
+  * Your [Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is online
+
+  * The Keeper Gateway can communicate over WinRM or SSH to the target machine:
+
+    * **WinRM:** Enabled and running on port 5986. Verification: Run `winrm get winrm/config` to verify that WinRM is running. See [WinRM setup page](/en/keeperpam/privileged-access-manager/references/setting-up-winrm) for installation help. **OR...**
+
+    * **SSH:** Enabled and running on port 22. Verification: Run `ssh [your-user]@[your-machine] -p 22` to verify that SSH is running.
 
   * Any Windows-based PAM Machine record being managed needs to have the operating system field set to `windows`
 
@@ -496,6 +505,10 @@ Machine that is associated to the same PAM User.
 
 Using Discovery
 
+When running a [Discovery job](/en/keeperpam/privileged-access-
+manager/discovery), Keeper will automatically locate any services or scheduled
+tasks that require update when a password is rotated.
+
 If you don't use Discovery, this can be managed directly through the Commander
 CLI interface using the `pam action service` commands.
 
@@ -510,6 +523,9 @@ restart of the service.
 ####
 
 Installing Commander
+
+If you haven't set up Keeper Commander yet, please follow the [installation
+instructions](/en/keeperpam/commander-cli/commander-installation-setup).
 
 ####
 
@@ -662,38 +678,6 @@ the following:
   * Check the Event Viewer > Windows Logs > Application events for any error messages
 
   * Ensure that you are using a PAM Machine record to manage services and scheduled tasks.
-
-are configured for your role
-
-A Keeper Secrets Manager  has been created
-
-Your  is online
-
-**WinRM:** Enabled and running on port 5986. Verification: Run `winrm get
-winrm/config` to verify that WinRM is running. See  for installation help.
-**OR...**
-
-When running a , Keeper will automatically locate any services or scheduled
-tasks that require update when a password is rotated.
-
-If you haven't set up Keeper Commander yet, please follow the .
-
-[Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-
-started/enforcement-policies)
-
-[application](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
-
-[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)
-
-[WinRM setup page](/en/keeperpam/privileged-access-manager/references/setting-
-up-winrm)
-
-[Discovery job](/en/keeperpam/privileged-access-manager/discovery)
-
-[installation instructions](/en/keeperpam/commander-cli/commander-
-installation-setup)
 
 Windows Service Management
 

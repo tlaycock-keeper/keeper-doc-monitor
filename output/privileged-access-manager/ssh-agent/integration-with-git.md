@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -465,13 +466,15 @@ Prerequisites
 
   * Ensure that [SSH Agent is active](/en/keeperpam/privileged-access-manager/ssh-agent) on the Keeper Desktop
 
-  * 
+  * [Terminal Configuration](/en/keeperpam/privileged-access-manager/ssh-agent#terminal-configuration) is performed
 
 ##
 
 Features
 
-  *   * 
+  * [GitHub Authentication](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-git#github-authentication)
+
+  * [Signing Commits](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-git#signing-commits)
 
 ##
 
@@ -774,17 +777,6 @@ Copy
         Test commit with SSH signing
 
 Setup is complete.
-
-is performed
-
-[GitHub Authentication](/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git#github-authentication)
-
-[Signing Commits](/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git#signing-commits)
-
-[Terminal Configuration](/en/keeperpam/privileged-access-manager/ssh-
-agent#terminal-configuration)
 
 Keeper SSH Key for Github Authentication
 

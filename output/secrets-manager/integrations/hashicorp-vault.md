@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -425,36 +426,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * About
-  * Features
-  * Prerequisites
-  * Installation
-  * 1\. Download the Secrets Manager Plugin
-  * 2\. Register the Plugin with HashiCorp Vault
-  * 3\. Configure a Secrets Manager Connection
-  * Using the Plugin
-  * List Secrets
-  * Get a Single Secret
-  * Read TOTP Code
-  * Update a Secret
-  * Create a Secret
-  * Delete a Secret
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=UOcqxLxWJHCDqBVG0fHg&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Hashicorp Vault
-
-Use Keeper Secrets Manager with HashiCorp Vault as a Data Source
-
-[PreviousGoogle Cloud Key Management Encryption](/en/keeperpam/secrets-
-manager/integrations/google-cloud-key-management-
-encryption)[NextHeroku](/en/keeperpam/secrets-manager/integrations/heroku)
 
 Last updated 9 months ago
 
@@ -530,45 +505,21 @@ Linux / MacOS
 
 Start the HashiCorp Vault in dev mode
 
-Copy
-
-    
-    
-    vault server -dev -dev-plugin-dir=C:\vault\plugins
-
 ####
 
 ####
 
 Enable the Secrets Manager Plugin
-
-Copy
-
-    
-    
-    vault secrets enable -path=ksm vault-plugin-secrets-ksm.exe
 
 ####
 
 Start the HashiCorp Vault in dev mode
 
-Copy
-
-    
-    
-    vault server -dev -dev-plugin-dir=/etc/vault/vault_plugins
-
 ####
 
 ####
 
 Enable the Secrets Manager Plugin
-
-Copy
-
-    
-    
-    vault secrets enable -path=ksm vault-plugin-secrets-ksm
 
 HashiCorp Vault CLI development mode utilizes volatile in-memory storage. Any
 actions taken on secrets in the Keeper Vault are immediate, but the plugin
@@ -590,13 +541,6 @@ Linux / MacOS
 
 Register and Enable the Secrets Manager Plugin
 
-Copy
-
-    
-    
-    vault plugin register -command=vault-plugin-secrets-ksm.exe -sha256=<SHA256> secret vault-plugin-secrets-ksm
-    vault secrets enable -path=ksm vault-plugin-secrets-ksm
-
 ####
 
 ####
@@ -611,22 +555,9 @@ used to generate the SHA256 hash. This example will show how to generate a SHA
 hash using CertUtil, but any tool that can generate a file hash in SHA256 will
 work.
 
-Copy
-
-    
-    
-    CertUtil -hashfile C:\vault\plugins\vault-plugin-secrets-ksm.exe SHA256
-
 ####
 
 Register and Enable the Secrets Manager Plugin
-
-Copy
-
-    
-    
-    vault plugin register -sha256=<SHA256> secret vault-plugin-secrets-ksm
-    vault secrets enable -path=ksm vault-plugin-secrets-ksm
 
 ####
 
@@ -637,19 +568,7 @@ Vault servers. This hash can be generated for the Secrets Manager plugin.
 
 Using the built-in shasum function this can be generated like this:
 
-Copy
-
-    
-    
-    shasum -a 256 /etc/vault/vault_plugins/vault-plugin-secrets-ksm
-
 Depending on your OS, you may use the `sha256sum` command instead
-
-Copy
-
-    
-    
-    sha256sum /etc/vault/vault_plugins/vault-plugin-secrets-ksm
 
 ###
 
@@ -667,12 +586,6 @@ Create a Secrets Manager Configuration
 Once a configuration has been generated, set it to a variable to be used by
 the Vault Plugin.
 
-Copy
-
-    
-    
-    vault write ksm/config ksm_config=<BASE64_CONFIG...>
-
 ##
 
 Using the Plugin
@@ -681,13 +594,139 @@ Using the Plugin
 
 List Secrets
 
+The records will be shown in the following format:
+
+Example:
+
+###
+
+Get a Single Secret
+
+Example:
+
+###
+
+Read TOTP Code
+
+Example:
+
+###
+
+Update a Secret
+
+To update an existing secret, use the following command, passing in JSON data
+that represents the updated secret's information. The corresponding record in
+the Keeper Vault will be updated to match the JSON data passed.
+
+In this example, the updated data is passed in from a file, this is
+recommended for cleaner and more simple CLI commands. The JSON data can be
+passed in on the command line, but quotes will need to be escaped.
+
+Example data file:
+
+TIP You can see the current values of a secret in JSON format with this
+command: `vault read -field=data -format=json ksm/record uid=<UID>`
+
+###
+
+Create a Secret
+
+Similar to updating a secret, create a new secret by passing JSON data to the
+following command:
+
+In this example, the updated data is passed in from a file, this is
+recommended for cleaner and more simple CLI commands. The JSON data can be
+passed in on the command line, but quotes will need to be escaped.
+
+Example data file:
+
+###
+
+Delete a Secret
+
+For a complete list of Keeper Secrets Manager features see the
+
+Keeper Secrets Manager access (See the  for more details)
+
+A Keeper  with secrets shared to it
+
+See the  for instructions on creating an Application
+
+An initialized Keeper
+
+See the  for how to install
+
+A Secrets Manager configuration can be created using Keeper Commander or the
+Secrets Manager CLI. See the  for more information on creating a
+configuration.
+
+Copy
+
+    
+    
+    vault server -dev -dev-plugin-dir=C:\vault\plugins
+
+Copy
+
+    
+    
+    vault secrets enable -path=ksm vault-plugin-secrets-ksm.exe
+
+Copy
+
+    
+    
+    vault server -dev -dev-plugin-dir=/etc/vault/vault_plugins
+
+Copy
+
+    
+    
+    vault secrets enable -path=ksm vault-plugin-secrets-ksm
+
+Copy
+
+    
+    
+    vault plugin register -command=vault-plugin-secrets-ksm.exe -sha256=<SHA256> secret vault-plugin-secrets-ksm
+    vault secrets enable -path=ksm vault-plugin-secrets-ksm
+
+Copy
+
+    
+    
+    CertUtil -hashfile C:\vault\plugins\vault-plugin-secrets-ksm.exe SHA256
+
+Copy
+
+    
+    
+    vault plugin register -sha256=<SHA256> secret vault-plugin-secrets-ksm
+    vault secrets enable -path=ksm vault-plugin-secrets-ksm
+
+Copy
+
+    
+    
+    shasum -a 256 /etc/vault/vault_plugins/vault-plugin-secrets-ksm
+
+Copy
+
+    
+    
+    sha256sum /etc/vault/vault_plugins/vault-plugin-secrets-ksm
+
+Copy
+
+    
+    
+    vault write ksm/config ksm_config=<BASE64_CONFIG...>
+
 Copy
 
     
     
     vault list ksm/records
-
-The records will be shown in the following format:
 
 Copy
 
@@ -696,8 +735,6 @@ Copy
     Keys
     ----
     UID RECORDTYPE: RECORDTITLE
-
-Example:
 
 Copy
 
@@ -712,17 +749,11 @@ Copy
     YDx58Q94dE1k9B367ZVz1w  databaseCredentials:    MySQL Credentials
     qe3EWYn840uR0bOMyZ2b0Q  login:  Dropbox Login
 
-###
-
-Get a Single Secret
-
 Copy
 
     
     
     vault read ksm/record uid=<UID>
-
-Example:
 
 Copy
 
@@ -736,17 +767,11 @@ Copy
     title     Sample KSM Record
     type      login
 
-###
-
-Read TOTP Code
-
 Copy
 
     
     
     vault read ksm/record/totp uid=<UID>
-
-Example:
 
 Copy
 
@@ -758,25 +783,11 @@ Copy
     TOTP   [map[token:392528 ttl:22 url:otpauth://totp/Generator:?secret=JBSWY3DPEZAK3PXP&issuer=Generator&algorithm=SHA1&digits=6&period=30]] 
     UID    32t82-oRu-79yplIAZ6jmA
 
-###
-
-Update a Secret
-
-To update an existing secret, use the following command, passing in JSON data
-that represents the updated secret's information. The corresponding record in
-the Keeper Vault will be updated to match the JSON data passed.
-
 Copy
 
     
     
     vault write -format=json ksm/record uid=<UID> data=@update.json
-
-In this example, the updated data is passed in from a file, this is
-recommended for cleaner and more simple CLI commands. The JSON data can be
-passed in on the command line, but quotes will need to be escaped.
-
-Example data file:
 
 update.json
 
@@ -804,27 +815,11 @@ Copy
       "type": "login"
     }
 
-TIP You can see the current values of a secret in JSON format with this
-command: `vault read -field=data -format=json ksm/record uid=<UID>`
-
-###
-
-Create a Secret
-
-Similar to updating a secret, create a new secret by passing JSON data to the
-following command:
-
 Copy
 
     
     
     vault write -format=json ksm/record/create folder_uid=<UID> data=@data.json
-
-In this example, the updated data is passed in from a file, this is
-recommended for cleaner and more simple CLI commands. The JSON data can be
-passed in on the command line, but quotes will need to be escaped.
-
-Example data file:
 
 data.json
 
@@ -852,31 +847,43 @@ Copy
       "type": "login"
     }
 
-###
-
-Delete a Secret
-
 Copy
 
     
     
     vault delete ksm/record uid=Oq3fFu14hZY00d7sp3EYNA
 
-For a complete list of Keeper Secrets Manager features see the
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
 
-Keeper Secrets Manager access (See the  for more details)
+# Hashicorp Vault
 
-A Keeper  with secrets shared to it
+Use Keeper Secrets Manager with HashiCorp Vault as a Data Source
 
-See the  for instructions on creating an Application
+[PreviousGoogle Cloud Key Management Encryption](/en/keeperpam/secrets-
+manager/integrations/google-cloud-key-management-
+encryption)[NextHeroku](/en/keeperpam/secrets-manager/integrations/heroku)
 
-An initialized Keeper
+  * About
+  * Features
+  * Prerequisites
+  * Installation
+  * 1\. Download the Secrets Manager Plugin
+  * 2\. Register the Plugin with HashiCorp Vault
+  * 3\. Configure a Secrets Manager Connection
+  * Using the Plugin
+  * List Secrets
+  * Get a Single Secret
+  * Read TOTP Code
+  * Update a Secret
+  * Create a Secret
+  * Delete a Secret
 
-See the  for how to install
-
-A Secrets Manager configuration can be created using Keeper Commander or the
-Secrets Manager CLI. See the  for more information on creating a
-configuration.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVbvni8ZH5LSuDcwtynn9%252Fdatasource-
+ksm-
+hashicorp.jpg%3Falt%3Dmedia%26token%3D776d562b-07e3-4d89-b8a4-e1434e649190&width=768&dpr=4&quality=100&sign=d8c8ff8a&sv=2)
 
 [Overview ](/en/keeperpam/secrets-manager/overview)
 
@@ -888,14 +895,14 @@ manager-configuration)
 [HashiCorp Vault
 documentation](https://learn.hashicorp.com/collections/vault/getting-started)
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
 [Configuration Documentation](/en/keeperpam/secrets-manager/about/secrets-
 manager-configuration#creating-a-secrets-manager-configuration)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 [Releases · Keeper-Security/secrets-managerGitHub](https://github.com/Keeper-
 Security/secrets-manager/releases)
@@ -903,10 +910,4 @@ Security/secrets-manager/releases)
 Secrets Manager Releases
 
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVbvni8ZH5LSuDcwtynn9%252Fdatasource-
-ksm-
-hashicorp.jpg%3Falt%3Dmedia%26token%3D776d562b-07e3-4d89-b8a4-e1434e649190&width=768&dpr=4&quality=100&sign=d8c8ff8a&sv=2)
 

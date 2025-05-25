@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -393,6 +394,34 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Managing Elevation Requests
+  * Accessing the Requests Dashboard
+  * Working with the Request Queue
+  * Reviewing Request Details
+  * Taking Action on Requests
+  * Managing Request Volumes
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=QIQbTK1rKnhe3S1JB3Lu&only=yes&limit=100)
+
+  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
+
+# Managing Requests
+
+Day to day management of Keeper Privilege Manager elevation requests
+
+[PreviousExample Policies](/en/keeperpam/endpoint-privilege-
+manager/policies/example-policies)[NextBest Practices](/en/keeperpam/best-
+practices)
+
+Last updated 1 month ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -422,34 +451,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Managing Elevation Requests
-  * Accessing the Requests Dashboard
-  * Working with the Request Queue
-  * Reviewing Request Details
-  * Taking Action on Requests
-  * Managing Request Volumes
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=QIQbTK1rKnhe3S1JB3Lu&only=yes&limit=100)
-
-  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
-
-# Managing Requests
-
-Day to day management of Keeper Privilege Manager elevation requests
-
-[PreviousExample Policies](/en/keeperpam/endpoint-privilege-
-manager/policies/example-policies)[NextBest Practices](/en/keeperpam/best-
-practices)
-
-Last updated 1 month ago
-
-Was this helpful?
 
 ##
 
@@ -516,11 +517,7 @@ For organizations with high volumes of elevation requests:
 
   * **Delegation** : Configure multiple approvers across different teams or regions
 
-  * 
-
-**Auto-Approval Rules** : Set up  to automatically approve routine requests
-
-[policies](/en/keeperpam/endpoint-privilege-manager/policies)
+  * **Auto-Approval Rules** : Set up [policies](/en/keeperpam/endpoint-privilege-manager/policies) to automatically approve routine requests
 
 Endpoint**** Privilege Manager Requests Dashboard
 

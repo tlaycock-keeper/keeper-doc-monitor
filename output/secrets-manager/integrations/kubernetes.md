@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -1065,8 +1066,6 @@ the Developer SDKs. For this example, it will being using the Python SDK. A
 simple Flask application with one endpoint will display the HTML that contains
 the Vault record secrets. The secrets are retrieved using the  syntax.
 
-Example Web Application displaying Keeper secrets
-
 Documentation for the Keeper Secrets Manager Writer can be found .
 
 At this point, you can now integrate Keeper Secrets Manager into your K8s
@@ -1094,14 +1093,22 @@ manager/integrations/kubernetes-external-secrets-operator)
 
 [Secrets Manager SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
 [Kubernetes External Secrets Operator](/en/keeperpam/secrets-
 manager/integrations/kubernetes-external-secrets-operator)
+
+Example Web Application displaying Keeper secrets
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MktCpUkVepMUI2ry2UO%252F-MktD28kvZqqUuAoO5kD%252Fkubernetes-
+plugin-
+header.jpg%3Falt%3Dmedia%26token%3D19f48711-5185-45a7-96c4-efc7d11b34cc&width=768&dpr=4&quality=100&sign=6770b66&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -1110,12 +1117,6 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6TQeKxdHn
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FhMaZVLZ1ulGe9Ub1hDB7%252Fimage.png%3Falt%3Dmedia%26token%3D2c2f355d-6c5f-4abf-8779-2285fc87ce00&width=768&dpr=4&quality=100&sign=7385b406&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MktCpUkVepMUI2ry2UO%252F-MktD28kvZqqUuAoO5kD%252Fkubernetes-
-plugin-
-header.jpg%3Falt%3Dmedia%26token%3D19f48711-5185-45a7-96c4-efc7d11b34cc&width=768&dpr=4&quality=100&sign=6770b66&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

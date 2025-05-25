@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -412,7 +413,7 @@ by-step guidance
 manager/policies)[NextManaging Requests](/en/keeperpam/endpoint-privilege-
 manager/managing-requests)
 
-Last updated 15 hours ago
+Last updated 1 day ago
 
 Was this helpful?
 
@@ -462,8 +463,6 @@ Create Collection
 Create a "Protected Files" collection which will hold the protected file
 resources.
 
-Create a new Collection of Protected Files
-
 2
 
 ###
@@ -472,8 +471,6 @@ Add Item to Collection
 
 Click on "Manually define resource" and add the `netlogon.inf` file to the
 collection.
-
-Add Item to Collection
 
 3
 
@@ -495,15 +492,19 @@ From the Policy tab, click on Create Policy and select:
 
 **Applications** : Select the "Protected Files" collection as defined above.
 
-Create Policy
-
 To require approval by an admin for accessing the file resource, select
 "Requires Approval" and then select the approver(s).
 
-Require Approval on File Access
-
 After saving the policy, it will apply to all affected machines within a few
 minutes.
+
+Create a new Collection of Protected Files
+
+Add Item to Collection
+
+Create Policy
+
+Require Approval on File Access
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

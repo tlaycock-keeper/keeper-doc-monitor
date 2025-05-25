@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -692,6 +693,9 @@ manager/integrations/teamcity#prerequisites)
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
 Adding connection of type Keeper Vault
 
 Configure Keeper Vault Connection
@@ -719,7 +723,4 @@ x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCyNRIxtU170myoD55VNF%252Fteamcity-
 ksm-
 parameter.png%3Falt%3Dmedia%26token%3D5a523ab3-59d1-49a7-95e4-20dee93bc31f&width=768&dpr=4&quality=100&sign=b860834f&sv=2)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 

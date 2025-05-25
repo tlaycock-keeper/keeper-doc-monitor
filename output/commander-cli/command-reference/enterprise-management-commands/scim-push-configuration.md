@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -393,36 +394,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Common Setup Steps
-  * Google Workspace 
-  * Pushing Provisioning Data
-  * Automatic Provisioning of Google Workspace
-  * Active Directory
-  * Pushing Provisioning Data
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=EjlGOqvF9K3iIWZ1GR1p&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Enterprise Management Commands](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands)
-
-# SCIM Push Configuration
-
-Use Commander to push SCIM messages to the Keeper backend API
-
-[PreviousBreachwatch Commands](/en/keeperpam/commander-cli/command-
-reference/enterprise-management-commands/breachwatch-commands)[NextRecord
-Commands](/en/keeperpam/commander-cli/command-reference/record-commands)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -452,6 +423,36 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Common Setup Steps
+  * Google Workspace 
+  * Pushing Provisioning Data
+  * Automatic Provisioning of Google Workspace
+  * Active Directory
+  * Pushing Provisioning Data
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=EjlGOqvF9K3iIWZ1GR1p&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Enterprise Management Commands](/en/keeperpam/commander-cli/command-reference/enterprise-management-commands)
+
+# SCIM Push Configuration
+
+Use Commander to push SCIM messages to the Keeper backend API
+
+[PreviousBreachwatch Commands](/en/keeperpam/commander-cli/command-
+reference/enterprise-management-commands/breachwatch-commands)[NextRecord
+Commands](/en/keeperpam/commander-cli/command-reference/record-commands)
+
+Last updated 4 months ago
+
+Was this helpful?
 
 For identity providers that don't support SCIM, customers can utilize the
 Keeper Commander  command to provision users and teams.

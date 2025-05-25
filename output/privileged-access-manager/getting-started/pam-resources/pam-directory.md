@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -635,9 +636,6 @@ Session Recording
 
 Options for recording sessions and typescripts
 
-See [session recording](/en/keeperpam/privileged-access-manager/session-
-recording-and-playback)
-
 Connection Parameters (multiple)
 
 Connection-specific protocol settings which can vary based on the protocol
@@ -663,6 +661,11 @@ rotation, and not required for Tunnels.
 
 The following screenshot is a PAM Directory Record with LDAPS rotation, RDP
 connections and LDAPS tunnels enabled:
+
+See
+
+[session recording](/en/keeperpam/privileged-access-manager/session-recording-
+and-playback)
 
 Creating a PAM Directory
 

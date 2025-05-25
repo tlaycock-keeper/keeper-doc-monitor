@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -465,8 +466,7 @@ Overview
 
 This document contains information on how to install, configure, and update
 your Keeper Gateway on Docker. The Docker container is built upon the base
-image of Rocky Linux 8 and it is hosted in
-[DockerHub](https://hub.docker.com/r/keeper/gateway).
+image of Rocky Linux 8 and it is hosted in .
 
 For full PAM capabilities, use a **Linux host with a x86 AMD processor**.
 
@@ -476,7 +476,7 @@ Prerequisites
 
   * A Linux host with a x86 AMD processor
 
-  * `docker` and `docker-compose` installed (see [Docker Install](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux) for help)
+  * 
 
 Note: The syntax is `docker-compose` for servers, but on a local Docker
 Desktop it might be `docker compose` (with no space).
@@ -729,9 +729,26 @@ Copy
 
 References:
 
-  * DockerHub listing: <https://hub.docker.com/r/keeper/gateway>[](https://hub.docker.com/r/keeper/gateway)
+  *   * 
 
-  * Quick reference for [Installing Docker](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux)[ and Docker Compose on Linux](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux)
+`docker` and `docker-compose` installed (see  for help)
+
+DockerHub listing:
+
+Quick reference for
+
+[Docker Install](/en/keeperpam/privileged-access-
+manager/references/installing-docker-on-linux)
+
+<https://hub.docker.com/r/keeper/gateway>[](https://hub.docker.com/r/keeper/gateway)
+
+[Installing Docker](/en/keeperpam/privileged-access-
+manager/references/installing-docker-on-linux)
+
+[ and Docker Compose on Linux](/en/keeperpam/privileged-access-
+manager/references/installing-docker-on-linux)
+
+[DockerHub](https://hub.docker.com/r/keeper/gateway)
 
 ###
 
@@ -780,24 +797,6 @@ host.
 
 Example docker compose with the Gateway container:
 
-Enabling this option allows you to establish a Connection to the host. For
-example, to open an SSH connection:
-
-  *   *   * 
-
-###
-
-Upgrading the Keeper Gateway service through the host
-
-If you use KeeperPAM to SSH over to the host service, you can upgrade the
-container by running the container update of the gateway in the background:
-
-Create a  record with the SSH private key
-
-Create a  record with the hostname to `host.docker.internal` and port `22`
-
-Activate the  in PAM settings referencing the PAM User
-
 Copy
 
     
@@ -816,12 +815,30 @@ Copy
               ACCEPT_EULA: Y
               GATEWAY_CONFIG: xxxxxxxx
 
+Enabling this option allows you to establish a Connection to the host. For
+example, to open an SSH connection:
+
+  *   *   * 
+
+###
+
+Upgrading the Keeper Gateway service through the host
+
+If you use KeeperPAM to SSH over to the host service, you can upgrade the
+container by running the container update of the gateway in the background:
+
 Copy
 
     
     
     docker-compose pull
     nohup docker-compose up -d keeper-gateway &
+
+Create a  record with the SSH private key
+
+Create a  record with the hostname to `host.docker.internal` and port `22`
+
+Activate the  in PAM settings referencing the PAM User
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)

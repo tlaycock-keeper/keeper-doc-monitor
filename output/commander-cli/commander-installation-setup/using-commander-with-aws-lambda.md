@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -595,6 +596,12 @@ Copy
     rm -rf $LIB_DIR
     rm -rf $VENV
     
+
+[2KBpackage_layer_content.sh](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
+x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FgxJz7bvtfe4hTfuTA0cc%2Fpackage_layer_content.sh?alt=media&token=f624bf70-327c-4b10-9f18-a1f1ae06ecc1)
+
+Bash script for packaging `keepercommander` Lambda Layer content
 
 To use the script provided above, perform the following steps after
 downloading the file:
@@ -1022,26 +1029,20 @@ installation-setup)
 [ config file documentation ](/en/keeperpam/commander-cli/commander-
 installation-setup/logging-in#commander-configuration-file)
 
-[Commander/examples at master · Keeper-
-Security/CommanderGitHub](https://github.com/Keeper-
-Security/Commander/tree/master/examples)
+[Invoking Lambda functions - AWS LambdaAWS
+Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
+
+![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fdocs.aws.amazon.com%2Fassets%2Fimages%2Ffavicon.ico&width=20&dpr=4&quality=100&sign=ecb3c813&sv=2)
 
 [Send email using Lambda and Amazon SESAmazon Web Services,
 Inc.](https://aws.amazon.com/premiumsupport/knowledge-center/lambda-send-
 email-ses/)
 
-[2KBpackage_layer_content.sh](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FgxJz7bvtfe4hTfuTA0cc%2Fpackage_layer_content.sh?alt=media&token=f624bf70-327c-4b10-9f18-a1f1ae06ecc1)
-
-Bash script for packaging `keepercommander` Lambda Layer content
+[Commander/examples at master · Keeper-
+Security/CommanderGitHub](https://github.com/Keeper-
+Security/Commander/tree/master/examples)
 
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
-
-[Invoking Lambda functions - AWS LambdaAWS
-Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
-
-![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fdocs.aws.amazon.com%2Fassets%2Fimages%2Ffavicon.ico&width=20&dpr=4&quality=100&sign=ecb3c813&sv=2)
 
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fa0.awsstatic.com%2Flibra-
 css%2Fimages%2Fsite%2Ftouch-icon-

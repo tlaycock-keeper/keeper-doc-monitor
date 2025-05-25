@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -700,11 +701,11 @@ adc)
 [Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
 notation)
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
 [`sync` command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/sync-command)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)

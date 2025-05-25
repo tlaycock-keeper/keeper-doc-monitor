@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -393,41 +394,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview 
-  * Prerequisites 
-  * Remote Browser Isolation Enforcement Policies 
-  * Session Recordings 
-  * Installing the Keeper Gateway
-  * PAM Configuration 
-  * PAM Remote Browser
-  * PAM Settings - Remote Browser Isolation
-  * Accessing RBI Settings
-  * Configuring RBI Settings
-  * Session Recordings - RBI 
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=mdsrwkxAwaA6cmgj0tBg&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
-
-# Setting up RBI
-
-Setting up Tunnels in your Desktop Vault
-
-[PreviousRemote Browser Isolation](/en/keeperpam/privileged-access-
-manager/remote-browser-isolation)[NextURL Patterns & Resource URL
-Patterns](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation/setting-up-rbi/url-patterns-and-resource-url-patterns)
-
-Last updated 1 month ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -458,6 +424,17 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=mdsrwkxAwaA6cmgj0tBg&only=yes&limit=100)
+
+Last updated 1 month ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -482,9 +459,94 @@ Manager**.
 The following Enforcement Policies affect user's permissions to use Remote
 Browser Isolation and need to be enabled:
 
+####
+
+Enforcement Policy Use Cases
+
+If a user should only have access to launch RBI sessions and not configuring
+RBI settings, then only "Can launch remote browsing" policy should be enabled
+for the user.
+
+In addition to launching RBI sessions, If a user should also have access to
+configure RBI settings, then "Can configure remote browsing settings" and "Can
+launch remote browsing" policies should be enabled for the user.
+
+To allow users to view RBI session recordings, then "Can configure remote
+browsing settings" policy should be enabled for the user.
+
+###
+
+Session Recordings
+
+###
+
+Installing the Keeper Gateway
+
+The Keeper Gateway is a hosted agentless service that is installed on the
+customer's network to enabled zero-trust access to target infrastructure.
+Typically this service is installed on a Linux or Docker environment in each
+of the networks that requires access.
+
+###
+
+PAM Configuration
+
+###
+
+PAM Remote Browser
+
+##
+
+PAM Settings - Remote Browser Isolation
+
+###
+
+**Accessing RBI Settings**
+
+After creating a PAM Browser Settings with the target URL, navigate to the PAM
+Settings by:
+
+  1. Editing the PAM Browser Record
+
+  2. Clicking on "Set Up" in the PAM Settings section
+
+###
+
+Configuring RBI Settings
+
+After opening up the PAM Settings screen. The following table lists all the
+configurable fields for RBI:
+
+##
+
+Session Recordings - RBI
+
 Enforcement Policy
 
 Commander Enforcement Policy
+
+Definition
+
+The above enforcement policies can also be enabled on the  using the
+`enterprise-role` command:
+
+Launched RBI sessions can also be recorded. These recordings are available on
+the PAM Browser record types and can be played back on your Vault. For more
+details on session recording and playback, visit this .
+
+For more details on installing and setting up your gateway, visit this .
+
+The **PAM Configuration** contains essential information of your target
+infrastructure, settings and . Setting up a PAM Configuration for your
+infrastructure is **required**. For more information on creating and
+configuring the PAM Configuration, visit this .
+
+When launching an RBI session, the Web and Desktop Vault Client will render a
+chromium browser window with a established connection to the specified URL
+defined on the PAM Browser record. For more information on how to setting up
+the PAM Browser Record, visit this .
+
+Field
 
 Definition
 
@@ -527,89 +589,42 @@ Copy
     enterprise-role "My Role" --enforcement "ALLOW_LAUNCH_RBI":true
     enterprise-role "My Role" --enforcement "ALLOW_VIEW_RBI_RECORDINGS":true
 
-####
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
 
-Enforcement Policy Use Cases
+# Setting up RBI
 
-If a user should only have access to launch RBI sessions and not configuring
-RBI settings, then only "Can launch remote browsing" policy should be enabled
-for the user.
+Setting up Tunnels in your Desktop Vault
 
-In addition to launching RBI sessions, If a user should also have access to
-configure RBI settings, then "Can configure remote browsing settings" and "Can
-launch remote browsing" policies should be enabled for the user.
+[PreviousRemote Browser Isolation](/en/keeperpam/privileged-access-
+manager/remote-browser-isolation)[NextURL Patterns & Resource URL
+Patterns](/en/keeperpam/privileged-access-manager/remote-browser-
+isolation/setting-up-rbi/url-patterns-and-resource-url-patterns)
 
-To allow users to view RBI session recordings, then "Can configure remote
-browsing settings" policy should be enabled for the user.
+  * Overview 
+  * Prerequisites 
+  * Remote Browser Isolation Enforcement Policies 
+  * Session Recordings 
+  * Installing the Keeper Gateway
+  * PAM Configuration 
+  * PAM Remote Browser
+  * PAM Settings - Remote Browser Isolation
+  * Accessing RBI Settings
+  * Configuring RBI Settings
+  * Session Recordings - RBI 
 
-###
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
 
-Session Recordings
+[page](/en/keeperpam/privileged-access-manager/getting-started/gateways)
 
-Launched RBI sessions can also be recorded. These recordings are available on
-the PAM Browser record types and can be played back on your Vault. For more
-details on session recording and playback, visit this
-[page](/en/keeperpam/privileged-access-manager/session-recording-and-
-playback).
+[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
+started/gateways)
 
-###
+[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration)
 
-Installing the Keeper Gateway
-
-The Keeper Gateway is a hosted agentless service that is installed on the
-customer's network to enabled zero-trust access to target infrastructure.
-Typically this service is installed on a Linux or Docker environment in each
-of the networks that requires access.
-
-For more details on installing and setting up your gateway, visit this
-[page](/en/keeperpam/privileged-access-manager/getting-started/gateways).
-
-###
-
-PAM Configuration
-
-The **PAM Configuration** contains essential information of your target
-infrastructure, settings and [Keeper Gateway](/en/keeperpam/privileged-access-
-manager/getting-started/gateways). Setting up a PAM Configuration for your
-infrastructure is **required**. For more information on creating and
-configuring the PAM Configuration, visit this [page](/en/keeperpam/privileged-
-access-manager/getting-started/pam-configuration).
-
-###
-
-PAM Remote Browser
-
-When launching an RBI session, the Web and Desktop Vault Client will render a
-chromium browser window with a established connection to the specified URL
-defined on the PAM Browser record. For more information on how to setting up
-the PAM Browser Record, visit this [page](/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-remote-browser).
-
-##
-
-PAM Settings - Remote Browser Isolation
-
-###
-
-**Accessing RBI Settings**
-
-After creating a PAM Browser Settings with the target URL, navigate to the PAM
-Settings by:
-
-  1. Editing the PAM Browser Record
-
-  2. Clicking on "Set Up" in the PAM Settings section
-
-###
-
-Configuring RBI Settings
-
-After opening up the PAM Settings screen. The following table lists all the
-configurable fields for RBI:
-
-Field
-
-Definition
+[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-remote-browser)
 
 PAM Configuration
 
@@ -670,13 +685,6 @@ Can paste from clipboard
 If enabled, user can paste text from clipboard within the connected RBI
 session.
 
-##
-
-Session Recordings - RBI
-
-The above enforcement policies can also be enabled on the  using the
-`enterprise-role` command:
-
 By default, all URLs are permitted. Detailed Information
 
 By default, no restrictions are imposed on resources loaded by pages. Detailed
@@ -708,14 +716,14 @@ isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
 [here](/en/keeperpam/privileged-access-manager/remote-browser-
 isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
 
-For this protocol, graphical data, including timing information, is recorded.
-For more details on the recordings and how to access them, see the  docs.
-
 An active license is required in order to use the features available with
 KeeperPAM. This license is available for both business and enterprise
 customers.
 
   *   *   * 
+
+For this protocol, graphical data, including timing information, is recorded.
+For more details on the recordings and how to access them, see the  docs.
 
 [Session Recording & Playback](/en/keeperpam/privileged-access-
 manager/session-recording-and-playback)

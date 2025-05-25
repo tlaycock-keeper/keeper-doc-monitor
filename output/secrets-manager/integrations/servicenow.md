@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -436,7 +437,9 @@ On this page
   * 1\. External Credential Storage (requires admin role)
   * 2\. Installing Keeper Credential Resolver
   * 3\. Configuring discovery credentials
-  * Throttles and cache
+  * Creating a secret in Keeper vault and mapping fields
+  * Finding credentials in the Keeper Vault
+  * Caching Requests and Throttles
   * Troubleshooting
 
 Was this helpful?
@@ -455,7 +458,7 @@ Keeper credential storage integration with ServiceNow
 manager/integrations/powershell-plugin)[NextTeamCity](/en/keeperpam/secrets-
 manager/integrations/teamcity)
 
-Last updated 4 months ago
+Last updated 12 hours ago
 
 Was this helpful?
 
@@ -549,7 +552,7 @@ Setup
 System property:
 
 A property called Enable External Credential Storage
-`[com.snc.use_external_credentials] `enables or disables the External
+`[com.snc.use_external_credentials]` enables or disables the External
 Credential Storage plugin after it is activated. This property is located in
 **Discovery Definition > Properties and Orchestration > MID Server
 Properties**, and is enabled when you activate the plugin.
@@ -578,18 +581,17 @@ each credential record manually.
 
     * **Optional:** Set the property `ext.cred.keeper.use_ksm_cache` to `"true"` to enable caching _(use when you expect at least a few thousand requests per 10 seconds)_
 
-Alternatively you can edit `config.xml` directly (_by default in_
-`/opt/servicenow/mid/agent/)`add the keys and restart the server _(setting the
-label prefix is optional - the default prefix is shown below)_` <parameter
-name="ext.cred.keeper.ksm_config" secure="true"
-value="[KSM_CONFIG_BASE64_STRING]"/>`
+    * **Alternatively** , you can edit `config.xml` directly (_by default in_ `/opt/servicenow/mid/agent/)` by adding the keys and restarting the server _(setting the label prefix is optional - the default prefix is shown below)_
 
-`<!-- optional --> <parameter name="ext.cred.keeper.ksm_label_prefix"
-value="mid_"/>`
+Copy
 
-`<!-- optional -->`
-
-`<parameter name="ext.cred.keeper.use_ksm_cache" value="true"/> `
+    
+    
+    <parameter name="ext.cred.keeper.ksm_config" secure="true" value="[KSM_CONFIG_BASE64_STRING]"/>
+    <!-- optional -->
+    <parameter name="ext.cred.keeper.ksm_label_prefix" value="mid_"/>
+    <!-- optional -->
+    <parameter name="ext.cred.keeper.use_ksm_cache" value="true"/>
 
 Use _secure="true"_ option for all sensitive parameters and remember to
 restart the server to encrypt the values.
@@ -604,46 +606,47 @@ To consume Keeper vault credentials from your MID server, you will need to:
 
   * Configure the resolver to use that secret
 
-####
+###
 
 Creating a secret in Keeper vault and mapping fields
 
 Keeper record types are dynamic and easy to customize, and there are no
 specific record types matching corresponding credential types in ServiceNow.
+
 Keeper External Credential Resolver uses custom field labels to match record
-data with MID Server's table columns (`discovery_credential` _table_) just
+data with MID Server's table columns (`discovery_credential` _table_). Just
 label all required custom fields to match the table columns for a given
 credential type and prefix that label with "mid_" _(see below how to configure
-custom prefix)_ Credential types that require username/password should use
-records of type Login, and add any custom fields required by the credential
-type - _ex. type=hidden, label="mid_pkey"_ Any other types that may not have
-username/password is best to use File/Photo records which don't have any
-standard fields and that makes it easier to navigate the custom fields. To
-change the custom field labels prefix update the _config.xml_ in MID Server
-with the parameters below and restart the MID Server. `<parameter
-name="ext.cred.keeper.ksm_label_prefix" value="mid_"/>`
+custom prefix)_
 
-Use custom fields with type `text`, `multiline` or `hidden` depending on the
-visibility you want in your Keeper Vault.
+Credential types that require username/password should use records of type
+Login, and add any custom fields required by the credential type - _ex.
+type=hidden, label="mid_pkey"_
 
-When Login record type is used any custom fields for username/password **are
-ignored** _(even if properly labeled mid_user, mid_pswd)_ as these values
-always come from the Login record type standard fields - Login/Password.
+Any other types that may not have username/password is best to use File/Photo
+records which don't have any standard fields and that makes it easier to
+navigate the custom fields.
 
-When used with **"External credential store"** option the map keys returned
-from resolve method must conform to **IExternalCredential** interface from
-`snc-automation-api.jar` _(values start with VAL_ prefix)_. Supported key
-values in current version (Utah): _user, pswd, passphrase, pkey, authprotocol,
-authkey, privprotocol, privkey, secret_key, client_id, tenant_id, email -_
-corresponding field labels should be prefixed with `mid_` in Keeper records to
-be extracted and mapped properly.
+To change the custom field labels prefix update the _config.xml_ in MID Server
+with the parameters below and restart the MID Server.
 
-When used as Custom External Credential Resolver any custom field could be
-mapped **if properly prefixed** in Keeper vault and present in corresponding
-credential type. The credential map returned from the resolve method is
-expected to have keys matching with the column names in
-**discovery_credential** table _ex. sn_cfg_ansible,
-sn_disco_certmgmt_certificate_ca, cfg_chef_credentials, etc._
+Copy
+
+    
+    
+    <parameter name="ext.cred.keeper.ksm_label_prefix" value="mid_"/>
+
+  * You may use custom fields with type `text`, `multiline` or `hidden` depending on the visibility you want in your Keeper Vault.
+
+  * When Login record type is used, any custom fields for username/password **are ignored** _(even if properly labeled mid_user, mid_pswd)_ as these values always come from the Login record type standard fields - Login/Password.
+
+  * When used with **"External credential store"** option the map keys returned from resolve method must conform to **IExternalCredential** interface from `snc-automation-api.jar` _(values start with VAL_ prefix)_. 
+
+    * Supported key values in current version (Utah): _user, pswd, passphrase, pkey, authprotocol, authkey, privprotocol, privkey, secret_key, client_id, tenant_id, email -_ corresponding field labels should be prefixed with `mid_` in Keeper records to be extracted and mapped properly.
+
+  * When used as Custom External Credential Resolver, any custom field could be mapped **if properly prefixed** in Keeper vault and present in corresponding credential type. The credential map returned from the resolve method is expected to have keys matching with the column names in **discovery_credential** table _ex. sn_cfg_ansible, sn_disco_certmgmt_certificate_ca, cfg_chef_credentials, etc._
+
+####
 
 **Examples:**
 
@@ -653,24 +656,31 @@ sn_disco_certmgmt_certificate_ca, cfg_chef_credentials, etc._
 
   * Credential type `gcp` \- map to Keeper record type `File Attachment/Photo` and manually add the required custom fields `mid_email` \- _text_ , `mid_secret_key` \- _hidden_.
 
+###
+
+Finding credentials in the Keeper Vault
+
+The Credential ID passed from MID Server to the Credential Resolver must be
+either a valid record UID _(22 alphanumeric characters incl. "-" and "_")_ or
+in the following format `type:title`
+
+The type:title format allows searching by record type or by title _(or both,
+but single ":" is an invalid combination)_
+
+When using the `type:title` format for the credential, please make sure
+there's only one matching record, since multiple matches will result in an
+error.
+
+Using record UID for matching is recommended to guarantee a single record
+match, and to avoid downloading all records with every single request to do
+local searches by type:title _(due to the zero knowledge nature of the Keeper
+vault - searches must be local)_.
+
 ####
 
-Finding credentials in Keeper vault
+**Examples**
 
-Credential ID passed from MID Server to Credential Resolver must be either a
-valid record UID _(22 alphanumeric characters incl. "-" and "_")_ or in the
-following format `type:title` The second format also allows searches by record
-type only or by title only _(or both, but single ":" is invalid combination)_
-
-When using `type:title` format for the credential make sure there's only one
-matching record, since multiple matches result in error.
-
-Using record UID is recommended to guarantee a single record match, and to
-avoid downloading all records with every single request to do local searches
-by type:title _(due to the zero knowledge nature of the Keeper vault -
-searches must be local)_.
-
-**Examples** _(zero or two or more matches result in an error)_
+_Note: Zero or two or more matches result in an error_
 
   * Find by Record UID - Credential ID: `ABCDABCDABCDABCDABCDAB`
 
@@ -690,7 +700,7 @@ In the ServiceNow UI:
 
     * Select a credential type from the list
 
-    * Tick "External credential store" check box. _The Username and Password fields disappear, and the Credential ID field and Credential storage vault menu appear._
+    * Tick the "External credential store" check box. _The Username and Password fields disappear, and the Credential ID field and Credential storage vault menu appear._
 
     * Fill in a meaningful name
 
@@ -704,20 +714,23 @@ In the ServiceNow UI:
 
     * **Optional:** Click "Test credential" and select a MID server and a target to test against to test everything is working
 
-##
+###
 
-Throttles and cache
+Caching Requests and Throttles
 
-The plugin will try to resolve _"throttled"_ errors by default by adding a
-random delays and retrying later, which works well for up to 1000-3000
-requests per 10 sec interval _(throttles start after 300-600 requests/10 sec)_
+If too many requests are sent to Keeper within a certain time period, we will
+respond with a throttle error response. The plugin will try to resolve
+_"throttled"_ errors by default by adding a random delays and retrying later,
+which works well for up to 1000-3000 requests per 10 sec interval _(throttles
+start after 300-600 requests/10 sec)._
+
 If you expect 5000+ requests in less than 10 seconds we recommend to enable
 caching by setting `ext.cred.keeper.use_ksm_cache` parameter to `"true"` in
 config.xml and restarting the MID Server. Cached data is stored in an
 encrypted file `ksm_cache.dat` in MID Server's work folder. Cache is updated
 at most once every 5 minutes or with the next request.
 
-##
+###
 
 Troubleshooting
 
@@ -740,11 +753,11 @@ communicate with Keeper vault.
 
 ####
 
-Use the Test credential feature
+Use the Test Credential feature
 
 When creating or configuring a credential in the ServiceNow UI, you should be
 able to click "Test credential" to perform a quick targeted test. Select the
-MID server that should query Keeper vault, and select a target that the
+MID server that should query the Keeper vault, and select a target that the
 credential should work for to check that everything works as expected. If it
 doesn't, check the logs for errors and debug information as detailed above.
 

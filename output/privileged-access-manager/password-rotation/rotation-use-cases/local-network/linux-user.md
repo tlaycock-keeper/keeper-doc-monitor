@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -622,13 +623,6 @@ overview#enabling-rotation-on-the-admin-console)
 [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 overview#enabling-rotation-on-the-admin-console)
 
-[page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/local-network#rotation-on-the-local-network)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTGfUZqdne8CG2AAaaaXH%252FLinux%2520User.jpg%3Falt%3Dmedia%26token%3Df2855b88-826b-490d-b7b7-9041d5946c1c&width=768&dpr=4&quality=100&sign=3f02e86d&sv=2)
-
 ##
 
 SSH Key Rotation Notes
@@ -639,14 +633,6 @@ key. The first time that a rotation occurs, the old public key is left intact
 in order to prevent system lockout. The second public key added to the file
 contains a comment that serves as an identifier for future rotations. For
 example:
-
-Copy
-
-    
-    
-    [ec2-user@host .ssh]$ cat authorized_keys
-    ssh-rsa AAAAB3NzaC1...11xZrfOxYXG6RV84mCZ3uldesEyV/ghLxAb7Fcz awsdemo
-    ssh-rsa AAAAB3NzaC...un+frl9Q== keeper-security-ec2user
 
 By default, Keeper will **not** remove other keys from the
 `.ssh/authorized_keys` file since some providers will place in their own keys
@@ -685,4 +671,19 @@ exists. If the value is FALSE, the private key will not be rotated.
 
 For Linux user rotations, password-encrypted PEM files are not currently
 supported.
+
+[page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/local-network#rotation-on-the-local-network)
+
+Copy
+
+    
+    
+    [ec2-user@host .ssh]$ cat authorized_keys
+    ssh-rsa AAAAB3NzaC1...11xZrfOxYXG6RV84mCZ3uldesEyV/ghLxAb7Fcz awsdemo
+    ssh-rsa AAAAB3NzaC...un+frl9Q== keeper-security-ec2user
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTGfUZqdne8CG2AAaaaXH%252FLinux%2520User.jpg%3Falt%3Dmedia%26token%3Df2855b88-826b-490d-b7b7-9041d5946c1c&width=768&dpr=4&quality=100&sign=3f02e86d&sv=2)
 

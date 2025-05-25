@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -501,10 +502,6 @@ Copy
 
 Allow users to run discovery jobs
 
-Discovery can also be enabled on the [Keeper Commander
-CLI](/en/keeperpam/commander-cli/command-reference/secrets-manager-
-commands#overview) using the `enterprise-role` command:
-
 Copy
 
     
@@ -738,6 +735,11 @@ Next Steps:
   * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
 
   * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
+
+Discovery can also be enabled on the  using the `enterprise-role` command:
+
+[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
+manager-commands#overview)
 
 Enable Discovery Policy
 

@@ -199,6 +199,7 @@ KeeperPAM and Secrets Manager
       * [Event Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
+      * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -393,6 +394,35 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * Features
+  * KeeperPAM Events
+  * Recommended Alerts
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=n7N9m0jqA1BbRWfUyZO2&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+# Alerts and SIEM Integration
+
+Monitoring Gateway events and integrating with your SIEM
+
+[PreviousAuto Updater](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/auto-updater)[NextAdvanced
+Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/advanced-configuration)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -422,35 +452,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Overview
-  * Features
-  * KeeperPAM Events
-  * Recommended Alerts
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=n7N9m0jqA1BbRWfUyZO2&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-# Alerts and SIEM Integration
-
-Monitoring Gateway events and integrating with your SIEM
-
-[PreviousAuto Updater](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/auto-updater)[NextAdvanced
-Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/advanced-configuration)
-
-Last updated 2 months ago
-
-Was this helpful?
 
 ###
 
