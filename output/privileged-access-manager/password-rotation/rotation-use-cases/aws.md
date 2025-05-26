@@ -394,36 +394,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * KeeperPAM Record Types
-  * Prerequisites
-  * Setup Steps 
-  * Use Cases
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=AZHlgB3x9RU83c63iX2v&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-
-# AWS
-
-Password Rotation in the AWS Environment
-
-[PreviousAzure App Secret Rotation](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-
-rotation)[NextIAM User Password](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/aws/iam-user)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -453,6 +423,36 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Overview
+  * KeeperPAM Record Types
+  * Prerequisites
+  * Setup Steps 
+  * Use Cases
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=AZHlgB3x9RU83c63iX2v&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+
+# AWS
+
+Password Rotation in the AWS Environment
+
+[PreviousAzure App Secret Rotation](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/azure/azure-app-secret-
+rotation)[NextIAM User Password](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/aws/iam-user)
+
+Last updated 4 months ago
+
+Was this helpful?
 
 ##
 

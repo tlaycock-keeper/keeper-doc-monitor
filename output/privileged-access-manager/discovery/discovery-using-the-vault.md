@@ -418,166 +418,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=mEqrws5aL2q4iEcsxjFh&only=yes&limit=100)
 
 Running Discovery using the Keeper Vault user interface
 
-###
-
-Overview
-
-In this guide, you will learn how to discover resources within your target
-infrastructure using Discovery with the Keeper Vault and Desktop App.
-
-###
-
-Prerequisites
-
-Prior to using Discovery, make sure to review the [Discovery
-Basics](/en/keeperpam/privileged-access-manager/discovery/discovery-basics)
-documentation.
-
-###
-
-Discovery
-
-From the Keeper Vault, click on the Discovery section. Click on "Create
-Discovery Job" to start a discovery process.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6tXEG8fFAM6XtuHyh1tc%252FJobs%2520Empty%2520State.png%3Falt%3Dmedia%26token%3Da322d003-2c64-4d4b-92aa-
-ba279d0cd806&width=768&dpr=4&quality=100&sign=4d615a85&sv=2)
-
-Empty State - Discovery Module
-
-When discovery jobs are either running, failed, or completed states, the jobs
-will display on the Discovery screen.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDszJNATZe9GMRw1NHSLu%252FRollover.png%3Falt%3Dmedia%26token%3D0c9be181-66b3-4e8c-8615-85a19aeea889&width=768&dpr=4&quality=100&sign=d9f401cc&sv=2)
-
-Discovery Status
-
-###
-
-Create a Discovery Job
-
-To create a discovery job, select the Keeper Gateway which will perform the
-discovery. The Gateway is associated to a PAM Configuration, which tells the
-gateway what type of environment is being scanned.
-
-If the PAM Configuration is lacking details about the environment such as CIDR
-or cloud secrets, the user is prompted to enter this information.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FMH6R6dvPbCMEqaAusrpG%252FDiscovery%2520Modal%2520-%2520Gateway%2520Selected.png%3Falt%3Dmedia%26token%3De3c8a2e2-6be0-45ac-870f-0ca573eea71b&width=768&dpr=4&quality=100&sign=e23865b1&sv=2)
-
-New Discovery Job
-
-###
-
-Discovery Rules
-
-If prior discovery jobs have created discovery rules, the rules can be viewed
-and managed. A Discovery Rule saves time in the discovery process by ignoring
-certain findings. For example, if you want to ignore a certain resource.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNoiAjQuAyYhtRiKMWyuX%252FDiscovery%2520Modal%2520-%2520Manage%2520Discovery%2520Rules.png%3Falt%3Dmedia%26token%3Dddaf7bbc-4122-4282-91c0-aa0cfbaeb972&width=768&dpr=4&quality=100&sign=cc34a289&sv=2)
-
-Discovery Rules
-
-###
-
-Job Queue
-
-Discovery jobs can be run in parallel across Keeper Gateways, but a single
-gateway can only run a single job at a time. If a job on a particular gateway
-is still running, you will receive an error message and you are giving the
-opportunity to cancel the job.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FpfN0rlCfIdJ0zPFSbzz3%252FCurrent%2520Job%2520being%2520processed.png%3Falt%3Dmedia%26token%3D0bcaeea5-8ec5-42aa-b2c2-4bbaea5039ad&width=768&dpr=4&quality=100&sign=66afb6e5&sv=2)
-
-Job is Currently Running
-
-###
-
-Process Results
-
-After a discovery job is in a "Completed" state, clicking the Job will allow
-you to process the findings interactively. You can multi-select or iterate
-through the findings, and add the findings to a queue before it is finalized.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOQzM17r2OQc6Ejtzvtfo%252FDiscovery%2520Job%2520Detail.png%3Falt%3Dmedia%26token%3D19246d2d-2fa4-4797-b11e-207c2257f468&width=768&dpr=4&quality=100&sign=da64b57&sv=2)
-
-Processing Discovery Results
-
-When iterating through the discovery results, you can either Ignore, Skip or
-Queue the result to the final batch of results.
-
-  * **Ignore** : Skip the resource now and for future jobs, creating a Rule for this resource
-
-  * **Skip** : Only skips the resource during this session, but will be found again in subsequent scans
-
-  * **Queue to Folder** : Add the resource to the queue, and finalize all findings at the end
-
-When iterating through the results, you can select the location in the vault
-where the resource will be stored, and you can immediately assign the Admin
-Credentials associated to the resource. The Admin Credentials which are linked
-to the resource server several purposes:
-
-  * **Finding user accounts** : Subsequent discovery jobs will be able to use the Admin Credentials to remotely access the target resource and discover local user accounts.
-
-  * **Password Rotation** : The Admin Credential is used for performing on-demand and scheduled password rotations on any found accounts.
-
-  * **Just-In-Time Access** : Keeper JIT enables role and group elevation for the duration of privileged sessions.
-
-  * **Ephemeral Accounts** : Keeper JIT capabilities include creation of temporary accounts under a certain role or group, for the duration of privileged sessions.
-
-PAM Resources can have Connections and Tunneling activated to simplify the
-process of establishing access to the targets. PAM Users found during
-discovery can be enabled for automatic rotation.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlxqmgcbOE4s2uIZmwV9z%252FQueue%2520to%2520Folder.png%3Falt%3Dmedia%26token%3Dec97a61b-6eef-482d-88e9-539af1c85082&width=768&dpr=4&quality=100&sign=a5c5241&sv=2)
-
-Queue PAM Resources to Folder
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLoo4hRsj5G3kDhDtlAZW%252FNon-
-first%2520instance.png%3Falt%3Dmedia%26token%3D8489a10c-3249-48e9-9aca-
-eece9f701840&width=768&dpr=4&quality=100&sign=9f7dfd26&sv=2)
-
-Queue PAM Users to Folder
-
-###
-
-Publish Found Resources
-
-After processing through the findings, the queued resources can be published
-to the vault in the specified Shared Folder locations.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FF36rwrGdgPLgF8s9cZ4e%252FPublish%2520Conformation%2520Modal.png%3Falt%3Dmedia%26token%3Ddbfd7944-0f34-4c47-9f95-ec8f50f621d3&width=768&dpr=4&quality=100&sign=af5c8ad5&sv=2)
-
-Publish Findings
-
-###
-
-Next Steps
-
-Now that the Discovery is complete, additional resources can be found by
-running another job against the same Gateway and PAM Configuration. If Admin
-Credentials have been linked to KeeperPAM Resources, these credentials will be
-used to discover local user accounts within each resource.
-
 [PreviousDiscovery using Commander](/en/keeperpam/privileged-access-
 manager/discovery/discovery-using-
 commander)[NextKeeperAI](/en/keeperpam/privileged-access-manager/keeperai)
@@ -615,4 +455,164 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+###
+
+Overview
+
+In this guide, you will learn how to discover resources within your target
+infrastructure using Discovery with the Keeper Vault and Desktop App.
+
+###
+
+Prerequisites
+
+Prior to using Discovery, make sure to review the [Discovery
+Basics](/en/keeperpam/privileged-access-manager/discovery/discovery-basics)
+documentation.
+
+###
+
+Discovery
+
+From the Keeper Vault, click on the Discovery section. Click on "Create
+Discovery Job" to start a discovery process.
+
+When discovery jobs are either running, failed, or completed states, the jobs
+will display on the Discovery screen.
+
+###
+
+Create a Discovery Job
+
+To create a discovery job, select the Keeper Gateway which will perform the
+discovery. The Gateway is associated to a PAM Configuration, which tells the
+gateway what type of environment is being scanned.
+
+If the PAM Configuration is lacking details about the environment such as CIDR
+or cloud secrets, the user is prompted to enter this information.
+
+###
+
+Discovery Rules
+
+If prior discovery jobs have created discovery rules, the rules can be viewed
+and managed. A Discovery Rule saves time in the discovery process by ignoring
+certain findings. For example, if you want to ignore a certain resource.
+
+###
+
+Job Queue
+
+Discovery jobs can be run in parallel across Keeper Gateways, but a single
+gateway can only run a single job at a time. If a job on a particular gateway
+is still running, you will receive an error message and you are giving the
+opportunity to cancel the job.
+
+###
+
+Process Results
+
+After a discovery job is in a "Completed" state, clicking the Job will allow
+you to process the findings interactively. You can multi-select or iterate
+through the findings, and add the findings to a queue before it is finalized.
+
+When iterating through the discovery results, you can either Ignore, Skip or
+Queue the result to the final batch of results.
+
+  * **Ignore** : Skip the resource now and for future jobs, creating a Rule for this resource
+
+  * **Skip** : Only skips the resource during this session, but will be found again in subsequent scans
+
+  * **Queue to Folder** : Add the resource to the queue, and finalize all findings at the end
+
+When iterating through the results, you can select the location in the vault
+where the resource will be stored, and you can immediately assign the Admin
+Credentials associated to the resource. The Admin Credentials which are linked
+to the resource server several purposes:
+
+  * **Finding user accounts** : Subsequent discovery jobs will be able to use the Admin Credentials to remotely access the target resource and discover local user accounts.
+
+  * **Password Rotation** : The Admin Credential is used for performing on-demand and scheduled password rotations on any found accounts.
+
+  * **Just-In-Time Access** : Keeper JIT enables role and group elevation for the duration of privileged sessions.
+
+  * **Ephemeral Accounts** : Keeper JIT capabilities include creation of temporary accounts under a certain role or group, for the duration of privileged sessions.
+
+PAM Resources can have Connections and Tunneling activated to simplify the
+process of establishing access to the targets. PAM Users found during
+discovery can be enabled for automatic rotation.
+
+###
+
+Publish Found Resources
+
+After processing through the findings, the queued resources can be published
+to the vault in the specified Shared Folder locations.
+
+###
+
+Next Steps
+
+Now that the Discovery is complete, additional resources can be found by
+running another job against the same Gateway and PAM Configuration. If Admin
+Credentials have been linked to KeeperPAM Resources, these credentials will be
+used to discover local user accounts within each resource.
+
+Empty State - Discovery Module
+
+Discovery Status
+
+New Discovery Job
+
+Discovery Rules
+
+Job is Currently Running
+
+Processing Discovery Results
+
+Queue PAM Resources to Folder
+
+Queue PAM Users to Folder
+
+Publish Findings
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6tXEG8fFAM6XtuHyh1tc%252FJobs%2520Empty%2520State.png%3Falt%3Dmedia%26token%3Da322d003-2c64-4d4b-92aa-
+ba279d0cd806&width=768&dpr=4&quality=100&sign=4d615a85&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDszJNATZe9GMRw1NHSLu%252FRollover.png%3Falt%3Dmedia%26token%3D0c9be181-66b3-4e8c-8615-85a19aeea889&width=768&dpr=4&quality=100&sign=d9f401cc&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FMH6R6dvPbCMEqaAusrpG%252FDiscovery%2520Modal%2520-%2520Gateway%2520Selected.png%3Falt%3Dmedia%26token%3De3c8a2e2-6be0-45ac-870f-0ca573eea71b&width=768&dpr=4&quality=100&sign=e23865b1&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNoiAjQuAyYhtRiKMWyuX%252FDiscovery%2520Modal%2520-%2520Manage%2520Discovery%2520Rules.png%3Falt%3Dmedia%26token%3Dddaf7bbc-4122-4282-91c0-aa0cfbaeb972&width=768&dpr=4&quality=100&sign=cc34a289&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FpfN0rlCfIdJ0zPFSbzz3%252FCurrent%2520Job%2520being%2520processed.png%3Falt%3Dmedia%26token%3D0bcaeea5-8ec5-42aa-b2c2-4bbaea5039ad&width=768&dpr=4&quality=100&sign=66afb6e5&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOQzM17r2OQc6Ejtzvtfo%252FDiscovery%2520Job%2520Detail.png%3Falt%3Dmedia%26token%3D19246d2d-2fa4-4797-b11e-207c2257f468&width=768&dpr=4&quality=100&sign=da64b57&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlxqmgcbOE4s2uIZmwV9z%252FQueue%2520to%2520Folder.png%3Falt%3Dmedia%26token%3Dec97a61b-6eef-482d-88e9-539af1c85082&width=768&dpr=4&quality=100&sign=a5c5241&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLoo4hRsj5G3kDhDtlAZW%252FNon-
+first%2520instance.png%3Falt%3Dmedia%26token%3D8489a10c-3249-48e9-9aca-
+eece9f701840&width=768&dpr=4&quality=100&sign=9f7dfd26&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FF36rwrGdgPLgF8s9cZ4e%252FPublish%2520Conformation%2520Modal.png%3Falt%3Dmedia%26token%3Ddbfd7944-0f34-4c47-9f95-ec8f50f621d3&width=768&dpr=4&quality=100&sign=af5c8ad5&sv=2)
 

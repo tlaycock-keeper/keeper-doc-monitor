@@ -394,6 +394,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -421,9 +451,13 @@ PDF](/en/keeperpam/~gitbook/pdf?page=hPhvWPKEYG0crNdsO2JO&only=yes&limit=100)
 
 AI-powered threat detection for KeeperPAM privileged sessions
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7rQtwjXJlA3ddCR7ztE5%252FKeeperAI.png%3Falt%3Dmedia%26token%3D53ec3b12-b6fd-451d-9cc1-c0c5da9c81a5&width=768&dpr=4&quality=100&sign=34555b30&sv=2)
+[PreviousDiscovery using the Vault](/en/keeperpam/privileged-access-
+manager/discovery/discovery-using-the-vault)[NextOn-Prem Connection
+Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
+
+Last updated 1 day ago
+
+Was this helpful?
 
 ##
 
@@ -496,12 +530,6 @@ Activation
 
   5. Save your changes
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkSLpDA92uPgWRpn725eQ%252FScreenshot%25202025-05-21%2520at%252012.18.10%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D0d46bc20-1de7-4455-b952-cc114cc21b1a&width=768&dpr=4&quality=100&sign=3dc5e51e&sv=2)
-
-KeeperAI in PAM Settings
-
 > **Note** : For protocols not yet supported, the UI will indicate that
 > classification models for these protocols are coming soon.
 
@@ -540,9 +568,7 @@ flexibility in your deployment:
 
   1. Ensure that the IAM role for the Gateway has the `AmazonBedrockFullAccess` policy attached
 
-  2. Select a model from the [supported list](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html) and note the corresponding model ID.
-
-  3. Configure the Gateway with the following environment variables for the gateway service in your Docker Compose file:
+  2.   3. Configure the Gateway with the following environment variables for the gateway service in your Docker Compose file:
 
 Copy
 
@@ -628,12 +654,6 @@ Each analyzed session receives an AI-generated summary:
 
      * Timeline of suspicious activities
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJ2IjxIvhzwqndDWi8tV0%252FScreenshot%25202025-05-21%2520at%25209.06.41%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dbd524388-c21a-4cde-b0d1-693583cbe759&width=768&dpr=4&quality=100&sign=1e7ef5fc&sv=2)
-
-AI Session Summary and Risk Assessment
-
 ###
 
 Advanced Configuration
@@ -694,41 +714,24 @@ logic.
 KeeperAI will include Personally Identifiable Information (PII) detection and
 removal from session summaries.
 
-[PreviousDiscovery using the Vault](/en/keeperpam/privileged-access-
-manager/discovery/discovery-using-the-vault)[NextOn-Prem Connection
-Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
+Select a model from the  and note the corresponding model ID.
 
-Last updated 11 hours ago
+[supported list](https://docs.aws.amazon.com/bedrock/latest/userguide/models-
+supported.html)
 
-Was this helpful?
+KeeperAI in PAM Settings
 
-#### Company
+AI Session Summary and Risk Assessment
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7rQtwjXJlA3ddCR7ztE5%252FKeeperAI.png%3Falt%3Dmedia%26token%3D53ec3b12-b6fd-451d-9cc1-c0c5da9c81a5&width=768&dpr=4&quality=100&sign=34555b30&sv=2)
 
-#### Support
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkSLpDA92uPgWRpn725eQ%252FScreenshot%25202025-05-21%2520at%252012.18.10%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D0d46bc20-1de7-4455-b952-cc114cc21b1a&width=768&dpr=4&quality=100&sign=3dc5e51e&sv=2)
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJ2IjxIvhzwqndDWi8tV0%252FScreenshot%25202025-05-21%2520at%25209.06.41%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dbd524388-c21a-4cde-b0d1-693583cbe759&width=768&dpr=4&quality=100&sign=1e7ef5fc&sv=2)
 

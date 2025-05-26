@@ -444,7 +444,7 @@ Select a section to learn more about Keeper Secrets Manager
 [PreviousQuick Start Guide](/en/keeperpam/secrets-manager/quick-start-
 guide)[NextArchitecture](/en/keeperpam/secrets-manager/about/architecture)
 
-Last updated 4 months ago
+Last updated 5 months ago
 
 Was this helpful?
 

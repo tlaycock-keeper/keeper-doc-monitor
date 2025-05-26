@@ -394,6 +394,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview 
@@ -428,36 +458,6 @@ Last updated 3 months ago
 
 Was this helpful?
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 Overview
@@ -468,12 +468,6 @@ They enable just-in-time access by establishing encrypted tunnels for RDP,
 SSH, LDAPS, databases, and other protocols. Users can authenticate through the
 KeeperPAM platform, which brokers the connection and ensures strict policy
 enforcement.
-
-An active license is required in order to use the features available with
-KeeperPAM. This license is available for both business and enterprise
-customers.
-
-  *   *   * 
 
 ##
 
@@ -752,13 +746,6 @@ resources/pam-database)
 [PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-directory)
 
-[KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-
-management/)
-
-[Request a Demo](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-
-[Contact Support](https://www.keepersecurity.com/support.html)
-
 [Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
 manager-commands#overview)
 
@@ -771,10 +758,6 @@ Record View with the Start Tunnel action
 Active Tunnel
 
 MySQL Workbench with a Local Tunnel
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7qh2srRpGVVCcvTTt2Fr%252FScreenshot%25202025-01-21%2520at%252011.59.32%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D20a4c885-1eb9-4a8d-89fe-3aa9b6948e92&width=768&dpr=4&quality=100&sign=42a0ffbb&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -795,4 +778,21 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4bsuT2Ol9
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FG45mktqPR9PKR9mkjvqi%252FScreenshot%25202025-01-15%2520at%25202.32.27%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D9bfdd81b-d39d-404d-a2a3-16826cfa7323&width=768&dpr=4&quality=100&sign=7fa9028b&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7qh2srRpGVVCcvTTt2Fr%252FScreenshot%25202025-01-21%2520at%252011.59.32%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D20a4c885-1eb9-4a8d-89fe-3aa9b6948e92&width=768&dpr=4&quality=100&sign=42a0ffbb&sv=2)
+
+An active license is required in order to use the features available with
+KeeperPAM. This license is available for both business and enterprise
+customers.
+
+  *   *   * 
+
+[KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-
+management/)
+
+[Request a Demo](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+
+[Contact Support](https://www.keepersecurity.com/support.html)
 

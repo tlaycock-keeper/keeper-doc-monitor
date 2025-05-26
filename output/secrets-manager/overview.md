@@ -394,6 +394,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * What is Keeper Secrets Manager?
@@ -411,9 +441,12 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MeXQpBNa9pJqpPkixr9&only=yes&limit=100)
 
 Overview of Keeper Secrets Manager (KSM) for IT Admins, DevOps & Developers
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fn3vG2nrg5HGtXfO8n42h%252FKSM%2520Overview.jpg%3Falt%3Dmedia%26token%3Da9ff6c09-6287-412b-97fc-76bc8a34ac62&width=768&dpr=4&quality=100&sign=62d47c88&sv=2)
+[PreviousFAQs](/en/keeperpam/faqs)[NextQuick Start
+Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+Last updated 4 months ago
+
+Was this helpful?
 
 ##
 
@@ -442,15 +475,7 @@ Common use cases for Secrets Manager include:
 
 Features
 
-**Keeper Secrets Manager** is part of the [Keeper Password Security
-platform](https://keepersecurity.com). With millions of users worldwide,
-Keeper Password Manager + Keeper Secrets Manager provides numerous benefits
-over using Hashicorp Vault, Delinea, Cyberark and other "legacy" Secrets
-Management products:
-
-  * Superior Zero-Knowledge encryption model ([learn more](https://docs.keeper.io/enterprise-guide/keeper-encryption-model))
-
-  * No hosted software or VMs to configure and manage (100% Cloud-based)
+  *   * No hosted software or VMs to configure and manage (100% Cloud-based)
 
   * Secure and user-friendly Web Vault and Browser Extensions for secrets management
 
@@ -486,45 +511,25 @@ Management products:
 
 Get Started
 
-Ready to get started with Keeper Secrets Manager? [Proceed to the Setup
-Instructions](/en/keeperpam/secrets-manager/quick-start-guide).
+**Keeper Secrets Manager** is part of the . With millions of users worldwide,
+Keeper Password Manager + Keeper Secrets Manager provides numerous benefits
+over using Hashicorp Vault, Delinea, Cyberark and other "legacy" Secrets
+Management products:
 
-[PreviousFAQs](/en/keeperpam/faqs)[NextQuick Start
-Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+Superior Zero-Knowledge encryption model ()
 
-Last updated 4 months ago
+Ready to get started with Keeper Secrets Manager? .
 
-Was this helpful?
+[Keeper Password Security platform](https://keepersecurity.com)
 
-#### Company
+[learn more](https://docs.keeper.io/enterprise-guide/keeper-encryption-model)
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+[Proceed to the Setup Instructions](/en/keeperpam/secrets-manager/quick-start-
+guide)
 
 Secrets Manager Video Demo
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fn3vG2nrg5HGtXfO8n42h%252FKSM%2520Overview.jpg%3Falt%3Dmedia%26token%3Da9ff6c09-6287-412b-97fc-76bc8a34ac62&width=768&dpr=4&quality=100&sign=62d47c88&sv=2)
 

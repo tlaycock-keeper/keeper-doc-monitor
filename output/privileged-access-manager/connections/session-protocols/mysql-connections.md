@@ -451,7 +451,7 @@ manager/connections/session-protocols/rdp-connections)[NextSQL Server
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/sql-server-connections)
 
-Last updated 5 days ago
+Last updated 6 days ago
 
 Was this helpful?
 
@@ -592,15 +592,15 @@ protocol session
 
 Session Recordings - MySQL Protocol
 
-Field
-
-Definition
-
 [Getting Started page](/en/keeperpam/privileged-access-
 manager/connections/getting-started)
 
 [Example: MySQL Database](/en/keeperpam/privileged-access-manager/getting-
 started/pam-resources/pam-database/example-mysql-database)
+
+Field
+
+Definition
 
 PAM Configuration
 

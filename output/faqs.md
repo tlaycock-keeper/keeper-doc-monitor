@@ -629,7 +629,7 @@ applied to collections of users, groups and machines.
 [PreviousBest Practices](/en/keeperpam/best-practices)[NextSecrets Manager
 Overview](/en/keeperpam/secrets-manager/overview)
 
-Last updated 2 days ago
+Last updated 3 days ago
 
 Was this helpful?
 

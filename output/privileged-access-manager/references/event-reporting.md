@@ -419,7 +419,7 @@ manager/references/active-directory-least-privilege)[NextImporting PAM
 Records](/en/keeperpam/privileged-access-manager/references/importing-pam-
 records)
 
-Last updated 4 months ago
+Last updated 5 months ago
 
 Was this helpful?
 

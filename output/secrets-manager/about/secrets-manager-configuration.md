@@ -394,34 +394,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * About
-  * Creating a Secrets Manager Configuration
-  * In the Keeper Vault
-  * Using a SDK/Integration
-  * Using a CLI Tool
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=t41fd23FFoTrc6UKtieT&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [About KSM](/en/keeperpam/secrets-manager/about)
-
-# Secrets Manager Configuration
-
-Information about Keeper Secrets Manager configuration files
-
-[PreviousOne Time Access Token](/en/keeperpam/secrets-manager/about/one-time-
-token)[NextKeeper Notation](/en/keeperpam/secrets-manager/about/keeper-
-notation)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -451,6 +423,34 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * About
+  * Creating a Secrets Manager Configuration
+  * In the Keeper Vault
+  * Using a SDK/Integration
+  * Using a CLI Tool
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=t41fd23FFoTrc6UKtieT&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [About KSM](/en/keeperpam/secrets-manager/about)
+
+# Secrets Manager Configuration
+
+Information about Keeper Secrets Manager configuration files
+
+[PreviousOne Time Access Token](/en/keeperpam/secrets-manager/about/one-time-
+token)[NextKeeper Notation](/en/keeperpam/secrets-manager/about/keeper-
+notation)
+
+Last updated 4 months ago
+
+Was this helpful?
 
 ##
 

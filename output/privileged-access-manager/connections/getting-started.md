@@ -462,12 +462,6 @@ Overview
 In this guide, you will learn how to setup connections for all the supported
 protocols on your PAM Record types in your Keeper Vault.
 
-An active license is required in order to use the features available with
-KeeperPAM. This license is available for both business and enterprise
-customers.
-
-  *   *   * 
-
 ##
 
 Prerequisites
@@ -661,9 +655,6 @@ started/gateways)
 [page](/en/keeperpam/privileged-access-manager/getting-started/pam-
 configuration)
 
-[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
-manager-commands#overview)
-
 [PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-machine)
 
@@ -699,6 +690,15 @@ protocols/vnc-connections)
 
 [Telnet](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/telnet-connections)
+
+[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
+manager-commands#overview)
+
+An active license is required in order to use the features available with
+KeeperPAM. This license is available for both business and enterprise
+customers.
+
+  *   *   * 
 
 [KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-
 management/)

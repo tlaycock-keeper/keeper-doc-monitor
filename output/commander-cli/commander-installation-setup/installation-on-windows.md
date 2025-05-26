@@ -394,130 +394,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Supported Operating systems
-  * Video Overview
-  * Typical Binary Installation (recommended)
-  * Python (PIP) installation
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MJXWW3ypcK5uBpBl08R&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
-
-# CLI Installation on Windows
-
-How to install Keeper Commander CLI on Microsoft Windows
-
-###
-
-**Supported Operating systems**
-
-  * Windows 10 (1903 and above)
-
-  * Windows Server 2016 (1803 and above) 
-
-###
-
-Video Overview
-
-Watch the video below to learn how to install and log in to Keeper Commander.
-
-Keeper Commander – Installing and Loggin In
-
-###
-
-Typical Binary Installation (recommended)
-
-⬇️ [**Download Keeper Commander .exe file from
-GitHub**](https://github.com/Keeper-Security/Commander/releases)
-
-On the Commander Github page, the current commander build is always available
-via the [releases link](https://github.com/Keeper-
-Security/Commander/releases).
-
-The binary download is the file named: `keeper-commander-windows-vX.XX.exe`
-
-Note about Windows installs: \- You may have to right click on the executable
-and go to properties to unblock the file. \- You need to have admin rights to
-install Commander \- Sometimes antivirus may block the files, create a one
-time exception to install as needed
-
-###
-
-Python (PIP) installation
-
-####
-
-Setup with Python3:
-
-Download the current version of Python from
-<https://www.python.org/>[](https://www.python.org/)
-
-Recommended releases:
-
-Windows 11 - Python 3.10.8
-
-Windows 10 - Python 3.10.8
-
-Server 2018 - Python 3.10.8
-
-Server 2016 - Python 3.9.13
-
-On the first screen of the installation, opt-in to include python.exe in the
-PATH
-
-Validate Python is correctly installed by checking the installed version from
-launching the cmd prompt.
-
-Copy
-
-    
-    
-    C:\>pip3 --version
-
-From the command prompt, install Keeper Commander with pip3:
-
-Copy
-
-    
-    
-    pip3 install keepercommander
-
-Once installed, ensure you have the latest version by upgrading Commander:
-
-Copy
-
-    
-    
-    pip3 install --upgrade keepercommander
-
-Please validate all updates in your test environment as commands and
-functionality is under rapid development.
-
-Login to Keeper in order to validate Keeper Commander is properly installed:
-
-Copy
-
-    
-    
-    keeper shell
-
-Note, for your first time logging into a new device or a new location, you may
-have to perform device authorization through email or other 2FA methods.
-
-[PreviousInstallation and Setup](/en/keeperpam/commander-cli/commander-
-installation-setup)[NextCLI Installation on macOS](/en/keeperpam/commander-
-cli/commander-installation-setup/installation-on-mac)
-
-Last updated 7 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -547,6 +423,134 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MJXWW3ypcK5uBpBl08R&only=yes&limit=100)
+
+Last updated 7 months ago
+
+Was this helpful?
+
+###
+
+**Supported Operating systems**
+
+  * Windows 10 (1903 and above)
+
+  * Windows Server 2016 (1803 and above) 
+
+###
+
+Video Overview
+
+Watch the video below to learn how to install and log in to Keeper Commander.
+
+###
+
+Typical Binary Installation (recommended)
+
+The binary download is the file named: `keeper-commander-windows-vX.XX.exe`
+
+Note about Windows installs: \- You may have to right click on the executable
+and go to properties to unblock the file. \- You need to have admin rights to
+install Commander \- Sometimes antivirus may block the files, create a one
+time exception to install as needed
+
+###
+
+Python (PIP) installation
+
+####
+
+Setup with Python3:
+
+Recommended releases:
+
+Windows 11 - Python 3.10.8
+
+Windows 10 - Python 3.10.8
+
+Server 2018 - Python 3.10.8
+
+Server 2016 - Python 3.9.13
+
+On the first screen of the installation, opt-in to include python.exe in the
+PATH
+
+Validate Python is correctly installed by checking the installed version from
+launching the cmd prompt.
+
+From the command prompt, install Keeper Commander with pip3:
+
+Once installed, ensure you have the latest version by upgrading Commander:
+
+Please validate all updates in your test environment as commands and
+functionality is under rapid development.
+
+Login to Keeper in order to validate Keeper Commander is properly installed:
+
+Note, for your first time logging into a new device or a new location, you may
+have to perform device authorization through email or other 2FA methods.
+
+On the Commander Github page, the current commander build is always available
+via the .
+
+Download the current version of Python from
+
+Copy
+
+    
+    
+    C:\>pip3 --version
+
+Copy
+
+    
+    
+    pip3 install keepercommander
+
+Copy
+
+    
+    
+    pip3 install --upgrade keepercommander
+
+Copy
+
+    
+    
+    keeper shell
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+
+# CLI Installation on Windows
+
+How to install Keeper Commander CLI on Microsoft Windows
+
+[PreviousInstallation and Setup](/en/keeperpam/commander-cli/commander-
+installation-setup)[NextCLI Installation on macOS](/en/keeperpam/commander-
+cli/commander-installation-setup/installation-on-mac)
+
+  * Supported Operating systems
+  * Video Overview
+  * Typical Binary Installation (recommended)
+  * Python (PIP) installation
+
+⬇️
+
+[**Download Keeper Commander .exe file from
+GitHub**](https://github.com/Keeper-Security/Commander/releases)
+
+[releases link](https://github.com/Keeper-Security/Commander/releases)
+
+<https://www.python.org/>[](https://www.python.org/)
+
+Keeper Commander – Installing and Loggin In
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

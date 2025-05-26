@@ -418,6 +418,44 @@ PDF](/en/keeperpam/~gitbook/pdf?page=ZOw1h57EJFFv0YlSSTHp&only=yes&limit=100)
 
 Managing groups of protected resources for endpoint privilege manager
 
+[PreviousDeployment](/en/keeperpam/endpoint-privilege-
+manager/deployment)[NextPolicies](/en/keeperpam/endpoint-privilege-
+manager/policies)
+
+Last updated 2 days ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ###
 
 Collections Overview
@@ -433,13 +471,6 @@ collections. Collections are categorized into the following types:
   * **Users**
 
   * **Operating Systems**
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCZyYMyTf4NujtWOrLJRC%252FScreenshot%25202025-05-23%2520at%252011.42.32%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D7e415509-b3e7-4ebf-
-abe3-0ad03039e846&width=768&dpr=4&quality=100&sign=8d132840&sv=2)
-
-Collections
 
 ###
 
@@ -459,18 +490,6 @@ software engineers. Or a custom collection of type "Machines" might be called
 another example, a custom collection of type "Applications" might be called
 "Developer Tools" where applications such as GitHub.exe or Visual Studio Code
 is included.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FocLb9wVE57JlqaB1LAiG%252FScreenshot%25202025-05-23%2520at%252010.12.38%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dd85de7fd-e8d5-48e2-b81c-75a3c3981ad2&width=768&dpr=4&quality=100&sign=62d2beff&sv=2)
-
-Creating a New Collection
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuqKqVbY2FgzxQMmtareU%252FEdit%2520Collection.png%3Falt%3Dmedia%26token%3Db74bbc60-8fd6-4edd-9593-6c6a65bcccae&width=768&dpr=4&quality=100&sign=1c2f19e8&sv=2)
-
-Custom Collections
 
 Collections can not contain different resource types. For example a User Group
 collection can not contain a Machine resource.
@@ -494,10 +513,6 @@ Application objects contain information such as:
 
   * Publisher Certificate
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjfbYU66WmJhUEKVku0Ps%252FScreenshot%25202025-05-23%2520at%252011.06.41%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D7a03dbec-e6c3-4166-a9c1-0bb0e2ca0125&width=768&dpr=4&quality=100&sign=499af8d1&sv=2)
-
 ####
 
 Custom Application Resources
@@ -505,12 +520,6 @@ Custom Application Resources
 A custom application resource can be defined by the Admin, such as a specific
 executable. Click on "Add Item to Collection" and select "Manually define
 resource" to submit the information.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FvauBcQ0OA9oe8OFRnHLT%252FScreenshot%25202025-05-23%2520at%252011.13.47%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D5f79a875-b99f-416d-b176-9b9a39be70b0&width=768&dpr=4&quality=100&sign=473163f5&sv=2)
-
-Custom Application Resource
 
 ###
 
@@ -530,18 +539,6 @@ process.
 
 Deployment Collections are also automatically added as an available sub-
 collection inside of Machines.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPVgdc1AQdnqGyTz1nPRs%252FScreenshot%25202025-05-23%2520at%252011.48.37%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D26168789-1a6b-4503-9156-0f78af3702d3&width=768&dpr=4&quality=100&sign=73348259&sv=2)
-
-Machine and Deployment Collections
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FcC0ntxO9FajKRBYgMGDe%252FScreenshot%25202025-05-23%2520at%252011.07.38%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D2c793244-2343-4529-be7f-3512f0dbb3e9&width=768&dpr=4&quality=100&sign=9a1e4f27&sv=2)
-
-Individual Machine Resources
 
 ###
 
@@ -563,24 +560,6 @@ The Keeper agent discovers all of the local users and groups across the fleet
 of endpoints. They are aggregated and built into "User" collections. Inside of
 the User collection are sub-collections including "User Groups" and "All
 Accounts" which are read-only.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGOaG9ojwG4i8CELafCvz%252FScreenshot%25202025-05-23%2520at%252011.08.26%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dc4614856-0333-4466-93e8-05bee24fb953&width=768&dpr=4&quality=100&sign=e904f7f4&sv=2)
-
-User Collection
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FI80wYT6UCxucNCNVCpOf%252FScreenshot%25202025-05-23%2520at%252011.08.42%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Df85c2d92-d468-4f67-974b-8f9026b2f427&width=768&dpr=4&quality=100&sign=fbeac94a&sv=2)
-
-User Resources
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fd5RfnfjmB70U31453mE2%252FScreenshot%25202025-05-23%2520at%252011.44.20%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D4510f8b6-e053-4db7-a48c-c09be22951d1&width=768&dpr=4&quality=100&sign=14627e45&sv=2)
-
-User Group resources
 
 ###
 
@@ -629,41 +608,62 @@ Next Steps
 Once you have deployed the agent and set up collections, it's time to apply
 [policies](/en/keeperpam/endpoint-privilege-manager/policies).
 
-[PreviousDeployment](/en/keeperpam/endpoint-privilege-
-manager/deployment)[NextPolicies](/en/keeperpam/endpoint-privilege-
-manager/policies)
+Collections
 
-Last updated 1 day ago
+Creating a New Collection
 
-Was this helpful?
+Custom Collections
 
-#### Company
+Custom Application Resource
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+Machine and Deployment Collections
 
-#### Support
+Individual Machine Resources
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+User Collection
 
-#### Solutions
+User Resources
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+User Group resources
 
-#### Pricing
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCZyYMyTf4NujtWOrLJRC%252FScreenshot%25202025-05-23%2520at%252011.42.32%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D7e415509-b3e7-4ebf-
+abe3-0ad03039e846&width=768&dpr=4&quality=100&sign=8d132840&sv=2)
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FocLb9wVE57JlqaB1LAiG%252FScreenshot%25202025-05-23%2520at%252010.12.38%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dd85de7fd-e8d5-48e2-b81c-75a3c3981ad2&width=768&dpr=4&quality=100&sign=62d2beff&sv=2)
 
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuqKqVbY2FgzxQMmtareU%252FEdit%2520Collection.png%3Falt%3Dmedia%26token%3Db74bbc60-8fd6-4edd-9593-6c6a65bcccae&width=768&dpr=4&quality=100&sign=1c2f19e8&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjfbYU66WmJhUEKVku0Ps%252FScreenshot%25202025-05-23%2520at%252011.06.41%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D7a03dbec-e6c3-4166-a9c1-0bb0e2ca0125&width=768&dpr=4&quality=100&sign=499af8d1&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FvauBcQ0OA9oe8OFRnHLT%252FScreenshot%25202025-05-23%2520at%252011.13.47%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D5f79a875-b99f-416d-b176-9b9a39be70b0&width=768&dpr=4&quality=100&sign=473163f5&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPVgdc1AQdnqGyTz1nPRs%252FScreenshot%25202025-05-23%2520at%252011.48.37%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D26168789-1a6b-4503-9156-0f78af3702d3&width=768&dpr=4&quality=100&sign=73348259&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FcC0ntxO9FajKRBYgMGDe%252FScreenshot%25202025-05-23%2520at%252011.07.38%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D2c793244-2343-4529-be7f-3512f0dbb3e9&width=768&dpr=4&quality=100&sign=9a1e4f27&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGOaG9ojwG4i8CELafCvz%252FScreenshot%25202025-05-23%2520at%252011.08.26%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dc4614856-0333-4466-93e8-05bee24fb953&width=768&dpr=4&quality=100&sign=e904f7f4&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FI80wYT6UCxucNCNVCpOf%252FScreenshot%25202025-05-23%2520at%252011.08.42%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Df85c2d92-d468-4f67-974b-8f9026b2f427&width=768&dpr=4&quality=100&sign=fbeac94a&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fd5RfnfjmB70U31453mE2%252FScreenshot%25202025-05-23%2520at%252011.44.20%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D4510f8b6-e053-4db7-a48c-c09be22951d1&width=768&dpr=4&quality=100&sign=14627e45&sv=2)
 

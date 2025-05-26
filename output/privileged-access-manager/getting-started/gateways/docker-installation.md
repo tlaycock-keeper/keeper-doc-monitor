@@ -466,7 +466,8 @@ Overview
 
 This document contains information on how to install, configure, and update
 your Keeper Gateway on Docker. The Docker container is built upon the base
-image of Rocky Linux 8 and it is hosted in .
+image of Rocky Linux 8 and it is hosted in
+[DockerHub](https://hub.docker.com/r/keeper/gateway).
 
 For full PAM capabilities, use a **Linux host with a x86 AMD processor**.
 
@@ -476,7 +477,7 @@ Prerequisites
 
   * A Linux host with a x86 AMD processor
 
-  * 
+  * `docker` and `docker-compose` installed (see [Docker Install](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux) for help)
 
 Note: The syntax is `docker-compose` for servers, but on a local Docker
 Desktop it might be `docker compose` (with no space).
@@ -729,26 +730,9 @@ Copy
 
 References:
 
-  *   * 
+  * DockerHub listing: <https://hub.docker.com/r/keeper/gateway>[](https://hub.docker.com/r/keeper/gateway)
 
-`docker` and `docker-compose` installed (see  for help)
-
-DockerHub listing:
-
-Quick reference for
-
-[Docker Install](/en/keeperpam/privileged-access-
-manager/references/installing-docker-on-linux)
-
-<https://hub.docker.com/r/keeper/gateway>[](https://hub.docker.com/r/keeper/gateway)
-
-[Installing Docker](/en/keeperpam/privileged-access-
-manager/references/installing-docker-on-linux)
-
-[ and Docker Compose on Linux](/en/keeperpam/privileged-access-
-manager/references/installing-docker-on-linux)
-
-[DockerHub](https://hub.docker.com/r/keeper/gateway)
+  * Quick reference for [Installing Docker](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux)[ and Docker Compose on Linux](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux)
 
 ###
 

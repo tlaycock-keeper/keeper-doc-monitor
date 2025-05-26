@@ -394,6 +394,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Preview Updates
@@ -465,10 +495,6 @@ Copy
 
 Windows Binary Preview Installers
 
-Download the latest installer: [64-bit
-Installer](https://keepersecurity.com/pam/beta/gateway/keeper-
-gateway_windows_x86_64.exe)
-
 * * *
 
 ###
@@ -479,33 +505,13 @@ Vault Preview
 
 Web Vault
 
-  * **US:** <https://keepersecurity.com/vault/preview>[](https://keepersecurity.com/vault/preview)
-
-  * **EU:** <https://keepersecurity.eu/vault/preview>[](https://keepersecurity.eu/vault/preview)
-
-  * **AU:** <https://keepersecurity.com.au/vault/preview>[](https://keepersecurity.com.au/vault/preview)
-
-  * **CA:** <https://keepersecurity.ca/vault/preview>[](https://keepersecurity.ca/vault/preview)
-
-  * **JP:** <https://keepersecurity.jp/vault/preview>[](https://keepersecurity.jp/vault/preview)
+  *   *   *   *   * 
 
 ####
 
 Desktop App
 
-  * Mac (.dmg) - [Download](https://keepersecurity.com/desktop_electron/preview/keeper-password-manager-preview.dmg)
-
-  * Mac (.pkg) - [Download](https://keepersecurity.com/desktop_electron/preview/keeper-password-manager-preview.pkg)
-
-  * Windows (.appx) - [Download](https://keepersecurity.com/desktop_electron/preview/keeper-password-manager-preview.appx)
-
-  * Windows (.msix) - [Download](https://keepersecurity.com/desktop_electron/preview/keeper-password-manager-preview.msixbundle)
-
-  * Windows (.msi) - [Download](https://keepersecurity.com/desktop_electron/preview/keeper-password-manager-preview.msi)
-
-  * Linux (.rpm) - [Download](https://keepersecurity.com/desktop_electron/preview/keeper-password-manager-preview.rpm)
-
-  * Linux (.deb) - [Download](https://keepersecurity.com/desktop_electron/preview/keeper-password-manager-preview.deb)
+  *   *   *   *   *   *   * 
 
 Note: the Desktop App preview **does not** auto-update. On Windows computers,
 a new version of the preview version requires a full uninstall and re-install
@@ -515,17 +521,7 @@ of Keeper. This does not affect stored data.
 
 Admin Console Preview
 
-  * **US:** <https://keepersecurity.com/console/preview>[](https://keepersecurity.com/console/preview)
-
-  * **EU:** <https://keepersecurity.eu/console/preview>[](https://keepersecurity.eu/console/preview)
-
-  * **AU:** <https://keepersecurity.com.au/console/preview>[](https://keepersecurity.com.au/console/preview)
-
-  * **CA:** <https://keepersecurity.ca/console/preview>[](https://keepersecurity.ca/console/preview)
-
-  * **JP:** <https://keepersecurity.jp/console/preview>[](https://keepersecurity.jp/console/preview)
-
-  * **GOV** : Not available for preview, use commercial environment
+  *   *   *   *   *   * **GOV** : Not available for preview, use commercial environment
 
 [PreviousCron Spec](/en/keeperpam/privileged-access-manager/references/cron-
 spec)[NextOverview](/en/keeperpam/endpoint-privilege-manager/overview)
@@ -534,33 +530,83 @@ Last updated 1 month ago
 
 Was this helpful?
 
-#### Company
+Download the latest installer:
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+**US:**
 
-#### Support
+**EU:**
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+**AU:**
 
-#### Solutions
+**CA:**
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+**JP:**
 
-#### Pricing
+Mac (.dmg) -
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+Mac (.pkg) -
 
-© 2025 Keeper Security, Inc.
+Windows (.appx) -
+
+Windows (.msix) -
+
+Windows (.msi) -
+
+Linux (.rpm) -
+
+Linux (.deb) -
+
+**US:**
+
+**EU:**
+
+**AU:**
+
+**CA:**
+
+**JP:**
+
+[64-bit Installer](https://keepersecurity.com/pam/beta/gateway/keeper-
+gateway_windows_x86_64.exe)
+
+<https://keepersecurity.com/vault/preview>[](https://keepersecurity.com/vault/preview)
+
+<https://keepersecurity.eu/vault/preview>[](https://keepersecurity.eu/vault/preview)
+
+<https://keepersecurity.com.au/vault/preview>[](https://keepersecurity.com.au/vault/preview)
+
+<https://keepersecurity.ca/vault/preview>[](https://keepersecurity.ca/vault/preview)
+
+<https://keepersecurity.jp/vault/preview>[](https://keepersecurity.jp/vault/preview)
+
+[Download](https://keepersecurity.com/desktop_electron/preview/keeper-
+password-manager-preview.dmg)
+
+[Download](https://keepersecurity.com/desktop_electron/preview/keeper-
+password-manager-preview.pkg)
+
+[Download](https://keepersecurity.com/desktop_electron/preview/keeper-
+password-manager-preview.appx)
+
+[Download](https://keepersecurity.com/desktop_electron/preview/keeper-
+password-manager-preview.msixbundle)
+
+[Download](https://keepersecurity.com/desktop_electron/preview/keeper-
+password-manager-preview.msi)
+
+[Download](https://keepersecurity.com/desktop_electron/preview/keeper-
+password-manager-preview.rpm)
+
+[Download](https://keepersecurity.com/desktop_electron/preview/keeper-
+password-manager-preview.deb)
+
+<https://keepersecurity.com/console/preview>[](https://keepersecurity.com/console/preview)
+
+<https://keepersecurity.eu/console/preview>[](https://keepersecurity.eu/console/preview)
+
+<https://keepersecurity.com.au/console/preview>[](https://keepersecurity.com.au/console/preview)
+
+<https://keepersecurity.ca/console/preview>[](https://keepersecurity.ca/console/preview)
+
+<https://keepersecurity.jp/console/preview>[](https://keepersecurity.jp/console/preview)
 

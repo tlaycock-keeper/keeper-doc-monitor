@@ -394,45 +394,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Rotating Users on Cisco IOS XE
-  * Rotating Users on Cisco Meraki
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=OsdnLDXKxa10qr7MoiGZ&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-
-# Network Devices
-
-###
-
-Rotating Users on Cisco IOS XE
-
-[Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/network-devices/cisco-ios-xe)
-
-###
-
-Rotating Users on Cisco Meraki
-
-[Cisco Meraki](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/network-devices/cisco-meraki)
-
-[PreviousRotate Credential via REST API](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/saas-accounts/rotate-credential-
-via-rest-api)[NextCisco IOS XE](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/network-devices/cisco-ios-xe)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -462,4 +423,43 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=OsdnLDXKxa10qr7MoiGZ&only=yes&limit=100)
+
+Last updated 4 months ago
+
+Was this helpful?
+
+###
+
+Rotating Users on Cisco IOS XE
+
+###
+
+Rotating Users on Cisco Meraki
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+
+# Network Devices
+
+[PreviousRotate Credential via REST API](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/saas-accounts/rotate-credential-
+via-rest-api)[NextCisco IOS XE](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/network-devices/cisco-ios-xe)
+
+  * Rotating Users on Cisco IOS XE
+  * Rotating Users on Cisco Meraki
+
+[Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/network-devices/cisco-ios-xe)
+
+[Cisco Meraki](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/network-devices/cisco-meraki)
 

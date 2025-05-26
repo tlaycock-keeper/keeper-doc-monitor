@@ -394,34 +394,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Supported Operating systems:
-  * Video Overview
-  * Pre-requisites
-  * Instructions
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MJXfMZXEdPkvtXzMcQ-&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
-
-# CLI Installation on Linux
-
-How to install the Keeper Commander CLI on Linux
-
-[PreviousCLI Installation on macOS](/en/keeperpam/commander-cli/commander-
-installation-setup/installation-on-mac)[NextPython Developer
-Setup](/en/keeperpam/commander-cli/commander-installation-setup/developer-
-mode)
-
-Last updated 7 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -451,6 +423,34 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Supported Operating systems:
+  * Video Overview
+  * Pre-requisites
+  * Instructions
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MJXfMZXEdPkvtXzMcQ-&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+
+# CLI Installation on Linux
+
+How to install the Keeper Commander CLI on Linux
+
+[PreviousCLI Installation on macOS](/en/keeperpam/commander-cli/commander-
+installation-setup/installation-on-mac)[NextPython Developer
+Setup](/en/keeperpam/commander-cli/commander-installation-setup/developer-
+mode)
+
+Last updated 7 months ago
+
+Was this helpful?
 
 ###
 

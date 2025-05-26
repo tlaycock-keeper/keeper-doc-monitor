@@ -502,14 +502,14 @@ An initialized Keeper
 [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-
 manager-configuration)
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
 [Vault IntegrationKeeper Connection Manager](https://docs.keeper.io/keeper-
 connection-manager/vault-integration)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F1748446847-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

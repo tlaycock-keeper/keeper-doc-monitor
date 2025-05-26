@@ -678,8 +678,8 @@ keys.html)
 [Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
 notation)
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 [`sync` command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/sync-command)
@@ -702,6 +702,6 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FoOaFzhmKu
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FS1qSqpXQ74npJ4ZMWwTP%252Fimage.png%3Falt%3Dmedia%26token%3D99c001ae-982d-4d5c-b267-bd95cd6c9ab7&width=768&dpr=4&quality=100&sign=a548ddb8&sv=2)
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 

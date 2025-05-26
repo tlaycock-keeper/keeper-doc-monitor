@@ -394,39 +394,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Just-In-Time Access and Zero Standing Privilege
-  * Introduction
-  * Understanding JIT and ZSP
-  * Use Cases
-  * Just-in-Time Elevated Access to Infrastructure
-  * Just-in-Time Elevated Access on Endpoints using PEDM
-  * Time-Limited Access with Automated Credential Rotation
-  * Workflow and Requests for Approval
-  * Implementation Best Practices
-  * Conclusion
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=P4mxhHJo4uLZTG8oXksk&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-
-# Just-In-Time Access (JIT)
-
-KeeperPAM Just-In-Time Access and Zero Standing Privilege
-
-[PreviousSharing and Access Control](/en/keeperpam/privileged-access-
-manager/getting-started/sharing-and-access-control)[NextPassword
-Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-
-Last updated 1 day ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -456,6 +423,39 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Just-In-Time Access and Zero Standing Privilege
+  * Introduction
+  * Understanding JIT and ZSP
+  * Use Cases
+  * Just-in-Time Elevated Access to Infrastructure
+  * Just-in-Time Elevated Access on Endpoints using PEDM
+  * Time-Limited Access with Automated Credential Rotation
+  * Workflow and Requests for Approval
+  * Implementation Best Practices
+  * Conclusion
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=P4mxhHJo4uLZTG8oXksk&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+# Just-In-Time Access (JIT)
+
+KeeperPAM Just-In-Time Access and Zero Standing Privilege
+
+[PreviousSharing and Access Control](/en/keeperpam/privileged-access-
+manager/getting-started/sharing-and-access-control)[NextPassword
+Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+
+Last updated 2 days ago
+
+Was this helpful?
 
 ##
 
@@ -585,11 +585,6 @@ and for AWS this would be the full ARN (e.g. `arn:aws:iam::12345:role/Admin`).
 
 Just-in-Time Elevated Access on Endpoints using PEDM
 
-[Keeper Privilege Manager](/en/keeperpam/endpoint-privilege-manager/overview)
-extends JIT capabilities to end-user devices, allowing for precise privilege
-elevation for specific processes, applications, or tasks without granting full
-administrative access.
-
 **Key Features:**
 
   * Process-level privilege management across Windows, macOS, and Linux
@@ -614,7 +609,7 @@ administrative access.
 
 For more information see:
 
-  * [Keeper Privilege Manager](/en/keeperpam/endpoint-privilege-manager/overview)
+  * 
 
 * * *
 
@@ -651,7 +646,7 @@ Expiration**.
 
 For more information see:
 
-  *   * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  *   * 
 
 ###
 
@@ -714,9 +709,20 @@ surface. By implementing these capabilities across your infrastructure, you
 can ensure that privileged access is strictly controlled, properly approved,
 and thoroughly audited.
 
+extends JIT capabilities to end-user devices, allowing for precise privilege
+elevation for specific processes, applications, or tasks without granting full
+administrative access.
+
 For more information on specific JIT use cases or implementation guidance,
-contact your Keeper Security account manager or email
-[pam@keepersecurity.com](mailto:pam@keepersecurity.com).
+contact your Keeper Security account manager or email .
+
+[Keeper Privilege Manager](/en/keeperpam/endpoint-privilege-manager/overview)
+
+[Keeper Privilege Manager](/en/keeperpam/endpoint-privilege-manager/overview)
+
+[Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+
+[pam@keepersecurity.com](mailto:pam@keepersecurity.com)
 
 [Time-Limited Access](https://docs.keeper.io/en/enterprise-guide/sharing/time-
 limited-access)

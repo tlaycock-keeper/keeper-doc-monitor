@@ -1997,12 +1997,6 @@ plugin](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/copy
 playbook?](https://docs.ansible.com/ansible/latest/reference_appendices/faq.html#keep-
 secret-data)
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
-[One-Time Access Token](/en/keeperpam/secrets-manager/quick-start-
-guide#create-a-secrets-manager-client-device-1)
-
 [prerequisites](/en/keeperpam/secrets-manager/integrations/ansible/ansible-
 plugin#prerequisites)
 
@@ -2017,6 +2011,12 @@ plugin#ansible-variables)
 
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
+[One-Time Access Token](/en/keeperpam/secrets-manager/quick-start-
+guide#create-a-secrets-manager-client-device-1)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG-
