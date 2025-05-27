@@ -397,30 +397,95 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Features
-  * KeeperPAM Events
-  * Recommended Alerts
+  * Keeper Secrets Manager - AI Integration with Model Context Protocol (MCP)
+  * Key Benefits
+  * What Can AI Assistants Do?
+  * Installation
 
 Was this helpful?
 
 [Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=n7N9m0jqA1BbRWfUyZO2&only=yes&limit=100)
+PDF](/en/keeperpam/~gitbook/pdf?page=IqMgUsBLfaiZ1fRLEjrt&only=yes&limit=100)
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
 
-# Alerts and SIEM Integration
+# MCP (Model Context Protocol)
 
-Monitoring Gateway events and integrating with your SIEM
+Integrate Keeper Secrets Manager into AI agents
 
-[PreviousAuto Updater](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/auto-updater)[NextAdvanced
-Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/advanced-configuration)
+##
 
-Last updated 3 months ago
+Keeper Secrets Manager - AI Integration with Model Context Protocol (MCP)
+
+Keeper Secrets Manager works with AI agents through the Model Context Protocol
+(MCP), enabling AI assistants like Claude to securely interact with your
+secrets without exposing sensitive credentials. This integration provides a
+zero-trust architecture where AI agents are explicitly allowed to access
+designated information from the Keeper Vault.
+
+The Model Context Protocol integration acts as a secure bridge between AI
+assistants and Keeper Secrets Manager. It allows AI tools to help you manage
+secrets while maintaining the highest security standards through human-in-the-
+loop confirmations for sensitive operations.
+
+###
+
+Key Benefits
+
+**Zero Trust Architecture** : AI agents are assigned specific folders in the
+vault **Human-in-the-Loop** : Confirmation prompts for sensitive operations
+**Enterprise Ready** : Comprehensive audit logging and compliance features
+**Multi-Platform** : Works on Linux, macOS, and Windows **Docker Native** :
+Easy deployment with container support
+
+###
+
+What Can AI Assistants Do?
+
+With KSM MCP integration, AI assistants can help you:
+
+####
+
+Secret Operations
+
+**List secrets** \- Browse your accessible secrets **Search secrets** \- Find
+secrets by title, URL, username, or other fields **Retrieve secrets** \- Get
+specific secret values (with confirmation for unmasked data) **Create
+secrets** \- Generate new secret entries **Update secrets** \- Modify existing
+secret information **Delete secrets** \- Remove secrets (with confirmation)
+
+####
+
+File Management
+
+**List attachments** \- View file attachments on secrets **Upload files** \-
+Add file attachments to secrets **Download files** \- Retrieve file
+attachments **Delete files** \- Remove file attachments
+
+####
+
+Utilities
+
+**Generate passwords** \- Create secure passwords with customizable parameters
+**Get TOTP codes** \- Retrieve current time-based one-time passwords **Execute
+KSM notation queries** \- Use Keeper's notation system for complex operations
+**Health checks** \- Monitor server status and connectivity
+
+###
+
+Installation
+
+See: <https://github.com/Keeper-Security/ksm-mcp>[](https://github.com/Keeper-
+Security/ksm-mcp)
+
+(Please contact **pam@keepersecurity.com** to access this repository)
+
+[PreviousLinux Keyring](/en/keeperpam/secrets-manager/integrations/linux-
+keyring)[NextOctopus Deploy](/en/keeperpam/secrets-
+manager/integrations/octopus-deploy)
+
+Last updated 15 hours ago
 
 Was this helpful?
 
@@ -453,85 +518,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-###
-
-Overview
-
-KeeperPAM supports integration with your SIEM provider to provide real-time
-event logging and monitoring of all privileged access management activity. In
-the Keeper Admin Console, alerts can also be configured based on any event.
-
-For more information on activating SIEM integration from the Keeper Enterprise
-guide:
-
-  * See 
-
-###
-
-Features
-
-  * Push over 200 different event types to any connected SIEM provider
-
-  * Send alerts to email, SMS, Webhook, Slack or Microsoft Teams on any event trigger
-
-  * Run custom reports from the Keeper Admin Console or  CLI
-
-###
-
-KeeperPAM Events
-
-Events related to KeeperPAM include:
-
-  * Starting and stopping sessions, tunnels, remote browser isolation
-
-  * Gateway lifecycle (online, offline, added/removed)
-
-  * Connection lifecycle (creation, editing and deleting PAM resources)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7HKEvnUmuwxtqzWrtAEH%252FScreenshot%25202025-02-22%2520at%25205.52.13%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D317f6374-5d64-4e14-9f35-14a73822541c&width=768&dpr=4&quality=100&sign=355aa33a&sv=2)
-
-KeeperPAM Events
-
-###
-
-Recommended Alerts
-
-As a KeeperPAM administrator, it is useful to receive alerts related to
-Gateway actions, such as when a Gateway goes offline (in case of server outage
-or system restart).
-
-From the Admin Console, go to Reporting & Alerts > Alerts > select Event Types
-and set the recipient information.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCTid6ZraCYRFA0ZppXsp%252FScreenshot%25202025-02-22%2520at%25206.49.59%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D72c05446-21cc-41d5-9afb-b9e82be1de2e&width=768&dpr=4&quality=100&sign=b6a77551&sv=2)
-
-Set Alert for Gateway Offline
-
-Event alert details will include the name and UID of the affected Keeper
-gateway.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3dh5GtgJnyDtzJ0hjTfS%252FScreenshot%25202025-02-22%2520at%25206.47.09%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db298b1d3-c69a-40b8-b14a-2ac845ac79a5&width=768&dpr=4&quality=100&sign=65e20a70&sv=2)
-
-Gateway Offline Alert
-
-Email alerts contain event information
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJI6cxiJgIuhgFKkkKuYV%252FScreenshot%25202025-02-23%2520at%25207.43.17%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dccf0ad22-a732-430a-b206-5b7d36df3cb6&width=768&dpr=4&quality=100&sign=e80cc5c5&sv=2)
-
-Email Alert for Gateway Offline
-
-[Keeper Commander](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#audit-report-command)
-
-[Reporting, Alerts & SIEM integration](https://docs.keeper.io/en/enterprise-
-guide/event-reporting)
 

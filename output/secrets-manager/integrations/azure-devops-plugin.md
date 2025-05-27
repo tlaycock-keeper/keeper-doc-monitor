@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -900,6 +901,17 @@ plugin#keeper-secret-queries)
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHuh9CWdwe0laT7gQ3SBe%252Fchoose%2520org.png%3Falt%3Dmedia%26token%3Dbf61e101-20a2-4229-9dde-11f3532cc616&width=768&dpr=4&quality=100&sign=697f4bb&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVvqLlBdgCg8KCBGkcqeM%252Fmarketplace%2520image%2520cropped.png%3Falt%3Dmedia%26token%3Dcff51556-9ff4-4e05-8f7b-bb374d16f36f&width=768&dpr=4&quality=100&sign=74fdcea6&sv=2)
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdGjPJbTbFffW4s1-f%252F-MkdGtOxU6O3kUM7r2jV%252Fazuredevops-
@@ -908,20 +920,9 @@ header.jpg%3Falt%3Dmedia%26token%3D151310a1-d682-4973-ab09-b9815c8cf9cb&width=76
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVvqLlBdgCg8KCBGkcqeM%252Fmarketplace%2520image%2520cropped.png%3Falt%3Dmedia%26token%3Dcff51556-9ff4-4e05-8f7b-bb374d16f36f&width=768&dpr=4&quality=100&sign=74fdcea6&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHuh9CWdwe0laT7gQ3SBe%252Fchoose%2520org.png%3Falt%3Dmedia%26token%3Dbf61e101-20a2-4229-9dde-11f3532cc616&width=768&dpr=4&quality=100&sign=697f4bb&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSIUOkIjVALVzmtOYLF18%252Ffind%2520task.png%3Falt%3Dmedia%26token%3D75fa26c0-83a9-48e8-b9c0-ebe8de0eb48c&width=768&dpr=4&quality=100&sign=7d4de9b&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWIoTCReEZPjRwPEB64hS%252Ffill%2520task.png%3Falt%3Dmedia%26token%3D2ae6fb1d-ed5d-4f84-8a7a-a512f1b0b24e&width=768&dpr=4&quality=100&sign=c2593a17&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSIUOkIjVALVzmtOYLF18%252Ffind%2520task.png%3Falt%3Dmedia%26token%3D75fa26c0-83a9-48e8-b9c0-ebe8de0eb48c&width=768&dpr=4&quality=100&sign=7d4de9b&sv=2)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 

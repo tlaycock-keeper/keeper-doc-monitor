@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -781,10 +782,6 @@ that are needed. For more notation examples .
 **Step 1:** Set Environmental Variables with Keeper notation for the secrets
 that are needed. For more notation examples .
 
-Create Record with Secret File Attachments
-
-Copy the Record UID
-
 When the docker image is built, it will be fully configured with SSL, keystore
 file and passphrase that are managed by the Keeper Vault.
 
@@ -813,6 +810,13 @@ images/build_enhancements/)
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
+[here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface#initialize-the-client-device)
+
+Create Record with Secret File Attachments
+
+Copy the Record UID
+
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
 
@@ -824,14 +828,11 @@ header.jpg%3Falt%3Dmedia%26token%3D7a6601b7-9799-4319-8b0e-02937fcbfae1&width=76
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf_vL6i3tZYNyKHhWjl%252F-Mfa28rVYp_0HX3A8ubN%252FScreen%2520Shot%25202021-07-26%2520at%252011.38.56%2520PM.png%3Falt%3Dmedia%26token%3Dfd71d60e-548c-4ae9-a58a-e1323af10077&width=768&dpr=4&quality=100&sign=92e981fa&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf_vL6i3tZYNyKHhWjl%252F-Mfa1VlyrOY-z9yejZBY%252FScreen%2520Shot%25202021-07-26%2520at%252011.37.25%2520PM.png%3Falt%3Dmedia%26token%3D376a94a4-5a2e-4638-b844-f730ff7d150b&width=768&dpr=4&quality=100&sign=2e3941a0&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf_vL6i3tZYNyKHhWjl%252F-Mfa1VlyrOY-z9yejZBY%252FScreen%2520Shot%25202021-07-26%2520at%252011.37.25%2520PM.png%3Falt%3Dmedia%26token%3D376a94a4-5a2e-4638-b844-f730ff7d150b&width=768&dpr=4&quality=100&sign=2e3941a0&sv=2)
-
-[here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface#initialize-the-client-device)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf_vL6i3tZYNyKHhWjl%252F-Mfa28rVYp_0HX3A8ubN%252FScreen%2520Shot%25202021-07-26%2520at%252011.38.56%2520PM.png%3Falt%3Dmedia%26token%3Dfd71d60e-548c-4ae9-a58a-e1323af10077&width=768&dpr=4&quality=100&sign=92e981fa&sv=2)
 
 [click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/exec-command#notation)

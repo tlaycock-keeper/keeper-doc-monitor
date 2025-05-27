@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -426,23 +427,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Common Functionality
-  * Additional Resources
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-MlB9Mu0mTscXAt-4zv-&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-
-# About KSM
-
-Select a section to learn more about Keeper Secrets Manager
-
-[PreviousQuick Start Guide](/en/keeperpam/secrets-manager/quick-start-
-guide)[NextArchitecture](/en/keeperpam/secrets-manager/about/architecture)
 
 Last updated 5 months ago
 
@@ -466,6 +454,19 @@ across many integrations and SDKs.
 Additional Resources
 
 Information about other Keeper systems that impact Secrets Manager users.
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+
+# About KSM
+
+Select a section to learn more about Keeper Secrets Manager
+
+[PreviousQuick Start Guide](/en/keeperpam/secrets-manager/quick-start-
+guide)[NextArchitecture](/en/keeperpam/secrets-manager/about/architecture)
+
+  * Overview
+  * Common Functionality
+  * Additional Resources
 
 [Architecture](/en/keeperpam/secrets-manager/about/architecture)
 

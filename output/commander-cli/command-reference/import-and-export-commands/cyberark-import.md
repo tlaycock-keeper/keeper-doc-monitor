@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -426,12 +427,30 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Importing Accounts
+  * Using a search string to limit the imported Accounts
+  * Using a custom query string
+  * PowerShell Method
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=uLz7A2RXPQAQ6vUmo7dh&only=yes&limit=100)
 
-Last updated 10 days ago
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
+
+# CyberArk Import
+
+Migrating CyberArk Accounts to Keeper
+
+[PreviousImport/Export Commands](/en/keeperpam/commander-cli/command-
+reference/import-and-export-commands/import-export-commands)[NextLastPass Data
+Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands/lastpass-import)
+
+Last updated 11 days ago
 
 Was this helpful?
 
@@ -439,12 +458,34 @@ Keeper Commander will log on to CyberArk Privilege Cloud Web Portal or the
 self-hosted Password Vault Web Access (PVWA), retrieve accounts and their
 passwords, and automatically create corresponding Server records in Keeper.
 
+Copy
+
+    
+    
+    keeper import --format=cyberark server.domain
+
 If the server is a CyberArk Privilege Cloud Web Portal, i.e., it ends in
 ".cyberark.cloud," then it will prompt for the CyberArk Identity Tenant ID and
 CyberArk Service User credentials:
 
+Copy
+
+    
+    
+    CyberArk Identity Tenant ID: abc12345
+    CyberArk service user name: myserviceuser
+    Cyberark service user password:
+
 If the server is any other hostname or IP address, then it will prompt for the
 authentication method, username, and password for PVWA:
+
+Copy
+
+    
+    
+    CyberArk logon type (Cyberark, LDAP, RADIUS or Windows): LDAP
+    CyberArk username: myusername
+    CyberArk password: 
 
 CyberArk Accounts based on Platforms in the _Windows_ and _*NIX_ groups will
 be imported as Server records. Accounts based on the _Business Website p_
@@ -476,12 +517,24 @@ The process will import all Accounts by default; however, appending a question
 mark (?) followed by the search string will limit processing to Accounts that
 match the search.
 
+Copy
+
+    
+    
+    keeper import --format=cyberark 10.11.12.13?WinDomain
+
 ###
 
 Using a custom query string
 
 Alternatively, if the search string contains '=', the process will pass it to
 the CyberArk Get Accounts endpoint as a query string. E.g.,
+
+Copy
+
+    
+    
+    keeper import --format=cyberark example.cyberark.cloud?limit=10&offset=20
 
 passes the limit and offset parameters to the Accounts endpoint, causing it to
 page the accounts 10 at a time, starting at the 20th account.
@@ -495,55 +548,12 @@ https://_abc12345_.id.cyberark.cloud/...
 
 Use **LDAP** (not Windows) to log in with an **Active Directory** account
 
+A dialog resulting from a 400 (Bad Request) HTTP response from the password
+API endpoint.
+
 The  includes a process to import data into Keeper from Cyberark using a
 PowerShell script. Note, however, that it accesses the Vault server directly,
 so it only works on self-hosted servers.
-
-Copy
-
-    
-    
-    CyberArk Identity Tenant ID: abc12345
-    CyberArk service user name: myserviceuser
-    Cyberark service user password:
-
-Copy
-
-    
-    
-    CyberArk logon type (Cyberark, LDAP, RADIUS or Windows): LDAP
-    CyberArk username: myusername
-    CyberArk password: 
-
-Copy
-
-    
-    
-    keeper import --format=cyberark 10.11.12.13?WinDomain
-
-Copy
-
-    
-    
-    keeper import --format=cyberark example.cyberark.cloud?limit=10&offset=20
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
-
-# CyberArk Import
-
-Migrating CyberArk Accounts to Keeper
-
-[PreviousImport/Export Commands](/en/keeperpam/commander-cli/command-
-reference/import-and-export-commands/import-export-commands)[NextLastPass Data
-Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands/lastpass-import)
-
-  * Importing Accounts
-  * Using a search string to limit the imported Accounts
-  * Using a custom query string
-  * PowerShell Method
 
 ℹ️
 
@@ -551,15 +561,6 @@ commands/lastpass-import)
 
 [end-user guide](https://docs.keeper.io/en/user-guides/import-
 records-1/import-from-cyberark)
-
-Copy
-
-    
-    
-    keeper import --format=cyberark server.domain
-
-A dialog resulting from a 400 (Bad Request) HTTP response from the password
-API endpoint.
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

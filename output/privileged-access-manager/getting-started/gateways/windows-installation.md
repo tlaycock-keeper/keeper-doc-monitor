@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -705,6 +706,8 @@ To uninstall the service:
 
 Prior to proceeding with this document, make sure you .
 
+Keeper Gateway for Windows
+
 Upon installation of the service, select "Enter a Keeper One-Time Access
 Token" and supply the token provided by when you  on the Vault. After
 installation, the service will automatically start up and register with the
@@ -716,14 +719,20 @@ will be used.
 Turn on debug logging - Enable  on the gateway log files. NOT recommended for
 production environments. Only use this when debugging with Keeper support.
 
+Service Account Setup
+
 The final step prior to successfully installing the Keeper Gateway as service
 is to enter the  Token provided from the Keeper Vault.
+
+Keeper Gateway Service
 
 The Keeper Gateway configuration file contains a set of tokens that includes
 encryption keys, client identifiers, and tenant server information used to
 authenticate and decrypt data from the Keeper Secrets Manager APIs. This
 configuration file is created from the One-Time Access Token generated when
 you .
+
+Verbose Logging Mode
 
 [created a Gateway device](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/one-time-access-token)
@@ -747,14 +756,6 @@ account-optional)
 
 [verbose logging](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/windows-installation#verbose-logging)
-
-Keeper Gateway for Windows
-
-Service Account Setup
-
-Keeper Gateway Service
-
-Verbose Logging Mode
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -780,39 +781,6 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRPmmLYEln
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNqfhdJpjRCJbgs6RfYjP%252Fimage.png%3Falt%3Dmedia%26token%3D88ee8691-e886-48b8-99ec-1e2ff1fe4f6c&width=768&dpr=4&quality=100&sign=aa608a9c&sv=2)
-
-###
-
-Checksum Verification
-
-Keeper Gateway SHA256 hashes for the latest version are published at the below
-location:
-
-Calculating and verifying the checksum:
-
-####
-
-Linux
-
-Copy
-
-    
-    
-    sha256sum keeper-gateway_linux_x86_64
-    cat keeper-gateway_X.X.X_SHA256SUMS | grep keeper-gateway_linux_x86_64
-
-####
-
-PowerShell
-
-Copy
-
-    
-    
-    Get-FileHash -Algorithm SHA256 keeper-gateway_windows_x86_64.exe | Format-List
-    Get-Content keeper-gateway_X.X.X_SHA256SUMS | Select-String keeper-gateway_windows_x86_64.exe
-
-<https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
 
 ###
 
@@ -848,4 +816,37 @@ Needed to establish outbound access over the designated port ranges
 The Gateway preserves zero knowledge by performing all encryption and
 decryption of data locally. Keeper Secrets Manager APIs are used to
 communicate with the Keeper cloud.
+
+###
+
+Checksum Verification
+
+Keeper Gateway SHA256 hashes for the latest version are published at the below
+location:
+
+Calculating and verifying the checksum:
+
+####
+
+Linux
+
+Copy
+
+    
+    
+    sha256sum keeper-gateway_linux_x86_64
+    cat keeper-gateway_X.X.X_SHA256SUMS | grep keeper-gateway_linux_x86_64
+
+####
+
+PowerShell
+
+Copy
+
+    
+    
+    Get-FileHash -Algorithm SHA256 keeper-gateway_windows_x86_64.exe | Format-List
+    Get-Content keeper-gateway_X.X.X_SHA256SUMS | Select-String keeper-gateway_windows_x86_64.exe
+
+<https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
 

@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -426,21 +427,14 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * URL Patterns & Resource URL Patterns
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=awHU6IJPTVQT21eCOAjZ&only=yes&limit=100)
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
-  3. [Setting up RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation/setting-up-rbi)
+Last updated 3 months ago
 
-# URL Patterns & Resource URL Patterns
-
-Allowed URLs and Resources in the Remote Browser Isolation session
+Was this helpful?
 
 ##
 
@@ -473,6 +467,8 @@ according to the following criteria:
   * A `*` wildcard may be used in place of a port number to indicate that any port is allowed.
 
 For example:
+
+In the next section, we'll cover the .
 
 Pattern
 
@@ -514,16 +510,21 @@ beneath “/foo”. Requests must be made to the standard port for HTTPS.
 This would allow any protocol or path from `google.com` root domain, but does
 not allow a subdomain.
 
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
+  3. [Setting up RBI](/en/keeperpam/privileged-access-manager/remote-browser-isolation/setting-up-rbi)
+
+# URL Patterns & Resource URL Patterns
+
+Allowed URLs and Resources in the Remote Browser Isolation session
+
 [PreviousSetting up RBI](/en/keeperpam/privileged-access-manager/remote-
 browser-isolation/setting-up-rbi)[NextBrowser
 Autofill](/en/keeperpam/privileged-access-manager/remote-browser-
 isolation/setting-up-rbi/browser-autofill)
 
-Last updated 3 months ago
-
-Was this helpful?
-
-In the next section, we'll cover the .
+  * Overview
+  * URL Patterns & Resource URL Patterns
 
 [autofill capabilities](/en/keeperpam/privileged-access-manager/remote-
 browser-isolation/setting-up-rbi/browser-autofill)

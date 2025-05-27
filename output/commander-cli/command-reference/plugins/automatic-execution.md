@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -394,6 +395,64 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-Mf4pGN5y0sCTAGU3WgV&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
+
+# Automatic Execution
+
+Automatic password rotation with Commander
+
+Keeper has also launched a zero-trust Password Rotation feature with
+KeeperPAM. This new capability is recommended for most password rotation use
+cases. The Documentation is linked below:
+
+  * [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-rotation)
+
+  * Commander [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
+
+You can automate password resets using Commander plugins, with a custom
+Commander configuration file
+
+**Example:**
+
+Copy
+
+    
+    
+    {                                                                               
+        "user":"admin@company.com",
+        "password":"somereallystrongpassword",
+        "commands":["d", "r iaOXP1fnApRh5DbaRd7MWA"]
+    }
+
+In this example, we are telling Commander to first download and decrypt
+records, then rotate the password (record UID iaOXP1fnApRh5DbaRd7MWA) using
+the plugin programmed into the record. To locate the Record UID, simply view
+it on the commander interactive shell or view it on the Keeper Web Vault and
+Desktop App (as seen below).
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPqATiBJd0Hm2VlwX6CIw%252FScreen%2520Shot%25202022-12-19%2520at%25203.20.51%2520PM.jpg%3Falt%3Dmedia%26token%3D8123a39a-aa45-402d-8b94-1e4899d1e16d&width=768&dpr=4&quality=100&sign=49cd02a6&sv=2)
+
+Locate Record UID
+
+[PreviousActive Directory Plugin](/en/keeperpam/commander-cli/command-
+reference/plugins/active-directory-plugin)[NextService Mode REST
+API](/en/keeperpam/commander-cli/service-mode-rest-api)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -424,70 +483,8 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-Mf4pGN5y0sCTAGU3WgV&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
-
-# Automatic Execution
-
-Automatic password rotation with Commander
-
-[PreviousActive Directory Plugin](/en/keeperpam/commander-cli/command-
-reference/plugins/active-directory-plugin)[NextService Mode REST
-API](/en/keeperpam/commander-cli/service-mode-rest-api)
-
-Last updated 4 months ago
-
-Was this helpful?
-
-Keeper has also launched a zero-trust Password Rotation feature with
-KeeperPAM. This new capability is recommended for most password rotation use
-cases. The Documentation is linked below:
-
-  *   * Commander 
-
-You can automate password resets using Commander plugins, with a custom
-Commander configuration file
-
-**Example:**
-
-Copy
-
-    
-    
-    {                                                                               
-        "user":"admin@company.com",
-        "password":"somereallystrongpassword",
-        "commands":["d", "r iaOXP1fnApRh5DbaRd7MWA"]
-    }
-
-In this example, we are telling Commander to first download and decrypt
-records, then rotate the password (record UID iaOXP1fnApRh5DbaRd7MWA) using
-the plugin programmed into the record. To locate the Record UID, simply view
-it on the commander interactive shell or view it on the Keeper Web Vault and
-Desktop App (as seen below).
-
-Locate Record UID
-
 For more information on running Commander commands with a configuration file,
 see the
-
-[Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
-rotation)
-
-[KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
-commands)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPqATiBJd0Hm2VlwX6CIw%252FScreen%2520Shot%25202022-12-19%2520at%25203.20.51%2520PM.jpg%3Falt%3Dmedia%26token%3D8123a39a-aa45-402d-8b94-1e4899d1e16d&width=768&dpr=4&quality=100&sign=49cd02a6&sv=2)
 
 [documentation](/en/keeperpam/commander-cli/commander-installation-
 setup/logging-in#running-commands-from-the-configuration-file)

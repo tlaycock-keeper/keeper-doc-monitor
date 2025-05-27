@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -453,8 +454,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=IlQNYrLHQjYkgclmxW4C&only=yes&limit=100)
 Store and Retrieve Secrets from the Linux Keyring
 
 [PreviousKubernetes (alternative)](/en/keeperpam/secrets-
-manager/integrations/kubernetes)[NextOctopus Deploy](/en/keeperpam/secrets-
-manager/integrations/octopus-deploy)
+manager/integrations/kubernetes)[NextMCP (Model Context
+Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-
+protocol)
 
 Last updated 6 months ago
 
@@ -702,6 +704,10 @@ service/latest/)
 utility/blob/main/Keeper-Security/linux-keyring-
 utility/blob/main/pkg/dbus_secrets/dbus_secrets.go#L41)
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FenXG3KtnCHKwizsBriY2%252Fkeeper%2520and%2520Linux%2520Keyring.jpg%3Falt%3Dmedia%26token%3D0ffa15d9-bd01-4e1b-9d7e-2374a6265670&width=768&dpr=4&quality=100&sign=72d9d879&sv=2)
+
 [GitHub - Keeper-Security/linux-keyring-utility: A utility for natively
 interacting with the Linux KeyringGitHub](https://github.com/Keeper-
 Security/linux-keyring-utility)
@@ -713,8 +719,4 @@ utility/releases)
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
 
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FenXG3KtnCHKwizsBriY2%252Fkeeper%2520and%2520Linux%2520Keyring.jpg%3Falt%3Dmedia%26token%3D0ffa15d9-bd01-4e1b-9d7e-2374a6265670&width=768&dpr=4&quality=100&sign=72d9d879&sv=2)
 

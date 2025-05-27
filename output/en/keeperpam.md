@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -426,23 +427,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * About this Documentation
-  * KeeperPAM vs. Keeper Connection Manager
-  * Features
-  * Contact the Keeper Team
-  * Next Steps
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-MJXO_hpAODecU2amxqS&only=yes&limit=100)
-
-# KeeperPAM
-
-KeeperPAM is a modern, cloud-based Privileged Access Manager
-
-[NextSetup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
 
 Last updated 1 month ago
 
@@ -551,6 +539,19 @@ of KeeperPAM
 Launch the
 
 Deep dive into the
+
+# KeeperPAM
+
+KeeperPAM is a modern, cloud-based Privileged Access Manager
+
+[NextSetup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
+
+  * Overview
+  * About this Documentation
+  * KeeperPAM vs. Keeper Connection Manager
+  * Features
+  * Contact the Keeper Team
+  * Next Steps
 
 [**KeeperPAM Website**](https://www.keepersecurity.com/privileged-access-
 management/)

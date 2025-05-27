@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -407,6 +408,11 @@ PDF](/en/keeperpam/~gitbook/pdf?page=l6HcnN1otHc20n7EcNSv&only=yes&limit=100)
 
 Automatically rotate secrets in the cloud and on-prem with KeeperPAM
 
+Keeper Password Rotation allows Keeper customers to securely rotate
+credentials in any cloud-based or on-prem environment.
+
+  * Go to the [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation) documentation in KeeperPAM to learn more.
+
 [PreviousCustom Record Types](/en/keeperpam/secrets-manager/secrets-manager-
 command-line-interface/custom-record-types)[NextDeveloper
 SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
@@ -444,11 +450,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-Keeper Password Rotation allows Keeper customers to securely rotate
-credentials in any cloud-based or on-prem environment.
-
-  * Go to the  documentation in KeeperPAM to learn more.
-
-[Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
 

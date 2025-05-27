@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -431,25 +432,15 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=X0BugCzwu7kXau1YGpOT&only=yes&limit=100)
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
-  3. [Configuration and Usage](/en/keeperpam/commander-cli/commander-installation-setup/configuration)
+Last updated 4 months ago
 
-# AWS Key Management Service
-
-Protecting configuration with AWS Secrets Manager
+Was this helpful?
 
 Amazon AWS Key Management Service can be utilized on an EC2 instance hosting
 Keeper Commander in order to protect and store the configuration data.
 
 The AWS Key Management Service protected storage resource URL format is as
 follows:
-
-Copy
-
-    
-    
-    aws-kms://<KEY-REGION>/<KEY ID or ALIAS>
 
 **Example** :
 
@@ -462,12 +453,22 @@ The secret name should contain URL-safe characters
 Keeper Commander requires "key users policy" to be granted to AWS user or
 role.
 
+Copy
+
+    
+    
+    aws-kms://<KEY-REGION>/<KEY ID or ALIAS>
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+  3. [Configuration and Usage](/en/keeperpam/commander-cli/commander-installation-setup/configuration)
+
+# AWS Key Management Service
+
+Protecting configuration with AWS Secrets Manager
+
 [PreviousAWS Secrets Manager](/en/keeperpam/commander-cli/commander-
 installation-setup/configuration/aws-secrets-manager)[NextAutomating with
 Windows Task](/en/keeperpam/commander-cli/commander-installation-
 setup/automating-with-windows-task)
-
-Last updated 4 months ago
-
-Was this helpful?
 

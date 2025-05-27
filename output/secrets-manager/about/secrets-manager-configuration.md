@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -394,6 +395,34 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * About
+  * Creating a Secrets Manager Configuration
+  * In the Keeper Vault
+  * Using a SDK/Integration
+  * Using a CLI Tool
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=t41fd23FFoTrc6UKtieT&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [About KSM](/en/keeperpam/secrets-manager/about)
+
+# Secrets Manager Configuration
+
+Information about Keeper Secrets Manager configuration files
+
+[PreviousOne Time Access Token](/en/keeperpam/secrets-manager/about/one-time-
+token)[NextKeeper Notation](/en/keeperpam/secrets-manager/about/keeper-
+notation)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -424,34 +453,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-  * About
-  * Creating a Secrets Manager Configuration
-  * In the Keeper Vault
-  * Using a SDK/Integration
-  * Using a CLI Tool
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=t41fd23FFoTrc6UKtieT&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [About KSM](/en/keeperpam/secrets-manager/about)
-
-# Secrets Manager Configuration
-
-Information about Keeper Secrets Manager configuration files
-
-[PreviousOne Time Access Token](/en/keeperpam/secrets-manager/about/one-time-
-token)[NextKeeper Notation](/en/keeperpam/secrets-manager/about/keeper-
-notation)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 ##
 
 About
@@ -460,8 +461,10 @@ Each Keeper Secrets Manager SDK and integration uses a "configuration" to
 store connection tokens, encryption keys, identifiers and domain information
 used to authenticate and decrypt data from the Keeper Secrets Manager APIs.
 
-Secrets Manager configurations are created from  and have a one to one
-relationship with.
+Secrets Manager configurations are created from [One Time Access
+Tokens](/en/keeperpam/secrets-manager/about/one-time-token) and have a one to
+one relationship with[ client devices](/en/keeperpam/secrets-
+manager/about/terminology#client-device).
 
 ####
 
@@ -517,6 +520,11 @@ configuration is created automatically.
 
 SDK Example
 
+Below is an example of how to use the[ Python SDK ](/en/keeperpam/secrets-
+manager/developer-sdk-library/python-sdk)to create a configuration file. The
+configuration is created when Secrets Manager is initialized with a One Time
+Access Token.
+
 Copy
 
     
@@ -540,6 +548,9 @@ use the file to initialize the SDK and remove the One Time Access Token.
 
 Integration Example
 
+Below is in example of using the Keeper Secrets Manager[ Jenkins
+Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin).
+
 The Jenkins plugin takes a One Time Access Token to initialize and creates a
 configuration automatically behind-the-scenes. In this example, simply enter a
 One Time Access Token in the form and click 'OK'.
@@ -557,6 +568,10 @@ cases.
 ####
 
 Secrets Manager CLI
+
+The [Secrets Manager CLI (KSM) ](/en/keeperpam/secrets-manager/secrets-
+manager-command-line-interface)tool can initialize a One Time Access Token and
+create a configuration.
 
 To do this, run the `init` command
 
@@ -594,6 +609,15 @@ Copy
 
 Commander CLI
 
+[Commander CLI ](/en/keeperpam/commander-cli/overview)can be used to
+initialize a One Time Access Token and create Secrets Manager configuration.
+
+Use the `secrets-manager client add` Command with `--config-init` to create a
+configuration. Configurations can be created in json or base64 formats, or in
+integration-specific formats in some cases. (see the [integrations
+documentation](/en/keeperpam/secrets-manager/integrations) for more
+information on what format each integration accepts)
+
 Format
 
 Example
@@ -620,38 +644,6 @@ Copy
 When initializing a configuration in Commander, typically `--unlock-ip` should
 be included in the command. If it is not included, the client device will be
 locked to the IP Address that Commander is using.
-
-Below is an example of how to use theto create a configuration file. The
-configuration is created when Secrets Manager is initialized with a One Time
-Access Token.
-
-Below is in example of using the Keeper Secrets Manager.
-
-The tool can initialize a One Time Access Token and create a configuration.
-
-can be used to initialize a One Time Access Token and create Secrets Manager
-configuration.
-
-Use the `secrets-manager client add` Command with `--config-init` to create a
-configuration. Configurations can be created in json or base64 formats, or in
-integration-specific formats in some cases. (see the  for more information on
-what format each integration accepts)
-
-[ Python SDK ](/en/keeperpam/secrets-manager/developer-sdk-library/python-sdk)
-
-[ Jenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
-
-[Secrets Manager CLI (KSM) ](/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface)
-
-[Commander CLI ](/en/keeperpam/commander-cli/overview)
-
-[integrations documentation](/en/keeperpam/secrets-manager/integrations)
-
-[One Time Access Tokens](/en/keeperpam/secrets-manager/about/one-time-token)
-
-[ client devices](/en/keeperpam/secrets-manager/about/terminology#client-
-device)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

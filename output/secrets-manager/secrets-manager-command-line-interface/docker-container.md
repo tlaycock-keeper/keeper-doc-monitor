@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -525,6 +526,16 @@ The `init` service will load the CLI docker. The container will start, display
 a CLI splash screen, and then exit. Even though the container has stopped, the
 `/cli` volume is still accessible.
 
+The `main` service will mount the CLI docker's volume under the directory
+`/cli` using `volumes_from`. The `command` is overridden to run the GLIBC
+version of the KSM CLI. The `command` is using the `exec` function of the CLI.
+That will replace environment variables environment variable, that use the
+[Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-notation), with a
+secret value. The `exec` command, of the CLI, is running the `printenv`
+application. That will print the environment variable, **MY_LOGIN** , that has
+been set to Keeper Notation, and has had its value replaced with a secret by
+the `exec` command.
+
 Copy
 
     
@@ -588,15 +599,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-The `main` service will mount the CLI docker's volume under the directory
-`/cli` using `volumes_from`. The `command` is overridden to run the GLIBC
-version of the KSM CLI. The `command` is using the `exec` function of the CLI.
-That will replace environment variables environment variable, that use the ,
-with a secret value. The `exec` command, of the CLI, is running the `printenv`
-application. That will print the environment variable, **MY_LOGIN** , that has
-been set to Keeper Notation, and has had its value replaced with a secret by
-the `exec` command.
-
-[Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-notation)
 

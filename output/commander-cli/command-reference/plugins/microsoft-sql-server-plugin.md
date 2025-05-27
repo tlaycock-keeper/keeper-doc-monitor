@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -426,27 +427,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Prerequisites
-  * Prepare Records for Rotation
-  * Create a Record for Rotation
-  * Rotate
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-Mf3aG3Ff6AIZtaEIq_R&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
-
-# Microsoft SQL Server Plugin
-
-Rotate SQL Server passwords
-
-[PreviousAzure Plugin](/en/keeperpam/commander-cli/command-
-reference/plugins/azure-plugin)[NextMySQL Plugin](/en/keeperpam/commander-
-cli/command-reference/plugins/mysql-plugin)
 
 Last updated 4 months ago
 
@@ -468,12 +452,6 @@ Prerequisites
 
 Install pymssql
 
-Copy
-
-    
-    
-    pip3 install pymssql
-
 ##
 
 Prepare Records for Rotation
@@ -487,8 +465,6 @@ type field is required. Additional fields may be added depending on the
 rotation type as well. See the instructions below.
 
 See the section for more information on legacy vs typed records
-
-Complete record example. Follow steps below to setup a record for rotation
 
 ####
 
@@ -526,6 +502,30 @@ Optional Custom Fields
 Instead of using the fields above, custom fields can be added with the shown
 label
 
+####
+
+Record Example using Optional Fields
+
+##
+
+Rotate
+
+To rotate MSSQL passwords, use the `rotate` command in Commander. Pass the
+command a record title or UID (or use `--match` with a regular expression to
+rotate several records at once)
+
+The plugin can be supplied to the command as shown here added to a record
+field, or automatically assigned based on the port number (see options above).
+Adding the plugin type to the record makes it possible to rotate several
+records at once with different plugins.
+
+####
+
+Output
+
+After rotation is completed, the new password will be stored in the `Password`
+field of the record
+
 Label
 
 Value
@@ -551,37 +551,51 @@ cmdr:rules
 
 Password generation rules
 
-####
-
-Record Example using Optional Fields
-
-##
-
-Rotate
-
-To rotate MSSQL passwords, use the `rotate` command in Commander. Pass the
-command a record title or UID (or use `--match` with a regular expression to
-rotate several records at once)
-
 Copy
 
     
     
     rotate "MSSQL Example" --plugin mssql
 
-The plugin can be supplied to the command as shown here added to a record
-field, or automatically assigned based on the port number (see options above).
-Adding the plugin type to the record makes it possible to rotate several
-records at once with different plugins.
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
 
-####
+# Microsoft SQL Server Plugin
 
-Output
+Rotate SQL Server passwords
 
-After rotation is completed, the new password will be stored in the `Password`
-field of the record
+[PreviousAzure Plugin](/en/keeperpam/commander-cli/command-
+reference/plugins/azure-plugin)[NextMySQL Plugin](/en/keeperpam/commander-
+cli/command-reference/plugins/mysql-plugin)
+
+  * Prerequisites
+  * Prepare Records for Rotation
+  * Create a Record for Rotation
+  * Rotate
+
+Copy
+
+    
+    
+    pip3 install pymssql
+
+[Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
+rotation)
+
+[KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
+commands)
+
+[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
+cli#typed-vs-untyped-records-v3-vs-v2)
+
+Complete record example. Follow steps below to setup a record for rotation
 
 A Keeper Record that is setup for MSSQL rotation
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwjleYChSFGLucHbo6EfP%252Fimage.png%3Falt%3Dmedia%26token%3D36515408-7f70-4286-9b12-a8b17ff489a2&width=768&dpr=4&quality=100&sign=8c5b22b8&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -595,19 +609,6 @@ ad43-4432-af6b-bd1d43433e00&width=768&dpr=4&quality=100&sign=a6b356d0&sv=2)
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8McEnYBUn4wIzSL5LyJQ%252Fimage.png%3Falt%3Dmedia%26token%3D980b32e7-350b-4a65-9eef-02f901ab2f4c&width=768&dpr=4&quality=100&sign=8c1b0c81&sv=2)
-
-[Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
-rotation)
-
-[KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
-commands)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwjleYChSFGLucHbo6EfP%252Fimage.png%3Falt%3Dmedia%26token%3D36515408-7f70-4286-9b12-a8b17ff489a2&width=768&dpr=4&quality=100&sign=8c5b22b8&sv=2)
-
-[Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
-cli#typed-vs-untyped-records-v3-vs-v2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

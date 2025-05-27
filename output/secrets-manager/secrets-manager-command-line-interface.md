@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -394,6 +395,39 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * Core Features
+  * Application and Client Device Setup
+  * Secrets Manager CLI Installation
+  * Binary Install Method
+  * Docker Install Method
+  * Pip3 and Python3 Install Method
+  * Source Code
+  * Usage
+  * Create a local Client Device
+  * Execution of Commands
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MczJk6xZwREQu8LleMt&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+
+# Secrets Manager CLI
+
+The Secrets Manager CLI provides shell access to vault secrets
+
+[PreviousField/Record Types](/en/keeperpam/secrets-manager/about/field-record-
+types)[NextProfile Command](/en/keeperpam/secrets-manager/secrets-manager-
+command-line-interface/profile-command)
+
+Last updated 7 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -424,39 +458,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-  * Overview
-  * Core Features
-  * Application and Client Device Setup
-  * Secrets Manager CLI Installation
-  * Binary Install Method
-  * Docker Install Method
-  * Pip3 and Python3 Install Method
-  * Source Code
-  * Usage
-  * Create a local Client Device
-  * Execution of Commands
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MczJk6xZwREQu8LleMt&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-
-# Secrets Manager CLI
-
-The Secrets Manager CLI provides shell access to vault secrets
-
-[PreviousField/Record Types](/en/keeperpam/secrets-manager/about/field-record-
-types)[NextProfile Command](/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface/profile-command)
-
-Last updated 6 months ago
-
-Was this helpful?
-
 ##
 
 Overview
@@ -479,9 +480,18 @@ Core Features
 
   * Replace environment variables with Keeper secrets in scripts and containers
 
+Keeper provides 2 different CLI tools. The Secrets Manager CLI is targeted to
+machine-based secrets management. The [Commander CLI](/en/keeperpam/commander-
+cli/overview) is more focused on administrative capabilities.
+
 ##
 
 Application and Client Device Setup
+
+In order to use the Secrets Manager CLI, or environment variable substitutions
+for accessing secrets stored in the Keeper Vault, you must first have an
+Application and Client Device configured. Check out the [Quick Start
+Guide](/en/keeperpam/secrets-manager/quick-start-guide) to set this up.
 
 ##
 
@@ -494,6 +504,14 @@ pip3 install for any Python environment.
 
 Binary Install Method
 
+The latest binary release can be found on the [GitHub
+repository](https://github.com/Keeper-Security/secrets-
+manager/releases?q=cli&expanded=true). Download the installer based on your
+operating system.
+
+⬇️ [**Download the Secrets Manager CLI Binary**](https://github.com/Keeper-
+Security/secrets-manager/releases?q=cli&expanded=true)
+
 When launching the CLI in Windows or macOS, the CLI will run in a shell mode.
 The `ksm` command is still available via the command line.
 
@@ -503,6 +521,10 @@ the **PATH**.
 ###
 
 Docker Install Method
+
+See the [Docker Container](/en/keeperpam/secrets-manager/secrets-manager-
+command-line-interface/docker-container) page for installation and setup from
+Keeper's Docker image.
 
 ###
 
@@ -583,6 +605,10 @@ Copy
 ###
 
 Source Code
+
+Find the Keeper Secrets Manager CLI source code in the [GitHub
+repository](https://github.com/Keeper-Security/secrets-
+manager/tree/master/integration/keeper_secrets_manager_cli).
 
 ###
 
@@ -801,39 +827,6 @@ following directories for the _keeper.ini_ file.
 
 `--cache/--no-cache` Enable or disable using the record cache for this command
 instance.
-
-Keeper provides 2 different CLI tools. The Secrets Manager CLI is targeted to
-machine-based secrets management. The  is more focused on administrative
-capabilities.
-
-In order to use the Secrets Manager CLI, or environment variable substitutions
-for accessing secrets stored in the Keeper Vault, you must first have an
-Application and Client Device configured. Check out the  to set this up.
-
-The latest binary release can be found on the . Download the installer based
-on your operating system.
-
-See the  page for installation and setup from Keeper's Docker image.
-
-Find the Keeper Secrets Manager CLI source code in the .
-
-[Commander CLI](/en/keeperpam/commander-cli/overview)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
-
-[GitHub repository](https://github.com/Keeper-Security/secrets-
-manager/releases?q=cli&expanded=true)
-
-⬇️
-
-[**Download the Secrets Manager CLI Binary**](https://github.com/Keeper-
-Security/secrets-manager/releases?q=cli&expanded=true)
-
-[Docker Container](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/docker-container)
-
-[GitHub repository](https://github.com/Keeper-Security/secrets-
-manager/tree/master/integration/keeper_secrets_manager_cli)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

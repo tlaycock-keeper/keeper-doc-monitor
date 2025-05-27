@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -891,14 +892,20 @@ pipe/src/master/README.md)
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
+[configuration documentation](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration#creating-a-secrets-manager-configuration)
+
+[configuration documentation](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration#creating-a-secrets-manager-configuration)
+
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
 
-[configuration documentation](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration#creating-a-secrets-manager-configuration)
-
-[configuration documentation](/en/keeperpam/secrets-manager/about/secrets-
-manager-configuration#creating-a-secrets-manager-configuration)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG_XIkldQnp9MV2kj%252F-MkdGfsG5Xki1qYqnKe6%252Fbitbucket-
+plugin-
+header.jpg%3Falt%3Dmedia%26token%3Da1d0792b-3951-44f1-a7be-657b00a543f2&width=768&dpr=4&quality=100&sign=1b209bc5&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -906,7 +913,7 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FECT7H9rIz
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHxpNKxYvEfBGnuFCPGOy%252FScreen%2520Shot%25202021-11-01%2520at%25204.16.04%2520PM.png%3Falt%3Dmedia%26token%3D34c39cae-b40d-4bc4-ad1f-6e1bd201f713&width=768&dpr=4&quality=100&sign=9aa4eb7f&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXA3sVeoGMCD2PZeB4Rij%252FScreen%2520Shot%25202021-10-19%2520at%25202.39.08%2520PM.png%3Falt%3Dmedia%26token%3Dd3b61789-85a8-4403-ac85-db999a44ab4f&width=768&dpr=4&quality=100&sign=f0f0a0f4&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -914,11 +921,5 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtBve4dEQO
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FXA3sVeoGMCD2PZeB4Rij%252FScreen%2520Shot%25202021-10-19%2520at%25202.39.08%2520PM.png%3Falt%3Dmedia%26token%3Dd3b61789-85a8-4403-ac85-db999a44ab4f&width=768&dpr=4&quality=100&sign=f0f0a0f4&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG_XIkldQnp9MV2kj%252F-MkdGfsG5Xki1qYqnKe6%252Fbitbucket-
-plugin-
-header.jpg%3Falt%3Dmedia%26token%3Da1d0792b-3951-44f1-a7be-657b00a543f2&width=768&dpr=4&quality=100&sign=1b209bc5&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHxpNKxYvEfBGnuFCPGOy%252FScreen%2520Shot%25202021-11-01%2520at%25204.16.04%2520PM.png%3Falt%3Dmedia%26token%3D34c39cae-b40d-4bc4-ad1f-6e1bd201f713&width=768&dpr=4&quality=100&sign=9aa4eb7f&sv=2)
 

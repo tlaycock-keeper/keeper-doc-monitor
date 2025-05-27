@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -426,33 +427,12 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * pam command
-  * Sub-Command: gateway
-  * Sub-Command: config
-  * Sub-Command: connection
-  * Sub-Command: rotation
-  * Sub-Command: action
-  * Sub-Command: tunnel
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=CNh269hY8C70Qg5Ga6Kv&only=yes&limit=100)
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-
-# KeeperPAM Commands
-
-Management of KeeperPAM functionality including Discovery, Rotation,
-Connections and Tunneling
-
-[PreviousSharing Commands](/en/keeperpam/commander-cli/command-
-reference/sharing-commands)[NextConnection Commands](/en/keeperpam/commander-
-cli/command-reference/connection-commands)
-
-Last updated 16 days ago
+Last updated 17 days ago
 
 Was this helpful?
 
@@ -473,55 +453,13 @@ pam**command**
 
 **Detail:** Perform KeeperPAM controls.
 
-Copy
-
-    
-    
-    My Vault> pam --help
-    pam command [--options]
-    
-    Command    Description
-    ---------  -----------------------------
-    gateway    Manage Gateways
-    config     Manage PAM Configurations
-    rotation   Manage Rotations
-    action     Execute action on the Gateway
-    tunnel     Manage Tunnels
-
 ###
 
 **Sub-Command: gateway**
 
-Copy
-
-    
-    
-    My Vault> pam gateway help
-    pam command [--options]
-    
-    Command    Description
-    ---------  ------------------
-    list       List Gateways
-    new        Create new Gateway
-    remove     Remove Gateway
-
 ###
 
 **Sub-Command: config**
-
-Copy
-
-    
-    
-    My Vault> pam config help
-    pam command [--options]
-    
-    Command    Description
-    ---------  -------------------------------------------------------------
-    new        Create new PAM Configuration
-    edit       Edit PAM Configuration
-    list       List available PAM Configurations associated with the Gateway
-    remove     Remove a PAM Configuration
 
 ###
 
@@ -538,57 +476,9 @@ bulk with the **run-batch** command.
 
 edit
 
-Copy
-
-    
-    
-    usage: pam connection edit [-h] [--configuration CONFIG] [--admin-user ADMIN]
-                               [--protocol {,http,kubernetes,mysql,postgresql,rdp,sql-server,ssh,telnet,vnc}]
-                               [--connections {on,off,default}] [--connections-recording {on,off,default}]
-                               [--typescript-recording {on,off,default}]
-                               [--connections-override-port CONNECTIONS_OVERRIDE_PORT] [--silent]
-                               record
-    
-    positional arguments:
-      record                The record UID or path of the PAM resource record with network information to use for
-                            connections
-    
-    options:
-      -h, --help            show this help message and exit
-      --configuration CONFIG, -c CONFIG
-                            The PAM Configuration UID or path to use for connections. Use command `pam config list` to
-                            view available PAM Configurations.
-      --admin-user ADMIN, -a ADMIN
-                            The record path or UID of the PAM User record to configure the admin credential on the PAM
-                            Resource
-      --protocol {,http,kubernetes,mysql,postgresql,rdp,sql-server,ssh,telnet,vnc}, -p {,http,kubernetes,mysql,postgresql,rdp,sql-server,ssh,telnet,vnc}
-                            Set connection protocol
-      --connections {on,off,default}, -cn {on,off,default}
-                            Set connections permissions
-      --connections-recording {on,off,default}, -cr {on,off,default}
-                            Set recording connections permissions for the resource
-      --typescript-recording {on,off,default}, -tr {on,off,default}
-                            Set TypeScript recording permissions for the resource
-      --connections-override-port CONNECTIONS_OVERRIDE_PORT, -cop CONNECTIONS_OVERRIDE_PORT
-                            Port to use for connections. If not provided, the port from the record will be used.
-      --silent, -s          Silent mode - don't print PAM User, PAM Config etc.
-
 ####
 
 examples:
-
-Copy
-
-    
-    
-    1. My Vault> pam connection edit "/Share Folder Name/Record Name" -c ocYDOuzwt3n0iYXuYk0lHw 
-    -a "/Share Folder Name/Record Name" -p=rdp -cn=on -cr=on -cop=3389
-    
-    2. My Vault> pam connection edit "/{{ Email }}/{{ Email }} SSH" -c ocYDOuzwt3n0iYXuYk0lHw 
-    -a "/Share Folder Name/Record Name" -p=ssh -cn=on -cr=on -cop=22 -s
-    
-    3. My Vault> pam connection edit "/{{ Email }}/{{ Email }} MSSQL" -c ocYDOuzwt3n0iYXuYk0lHw 
-    -a "/Share Folder Name/Record Name" -p=sql-server -cn=on -tr=on -cop=1433
 
 **example 1:** Creates an RDP connection and assigns an administrative
 credential and PAM configuration. Activates the connection and screen
@@ -608,59 +498,9 @@ recording.
 
 **Detail:** View and create Keeper Rotation configuration for records.
 
-Copy
-
-    
-    
-    My Vault> pam rotation help
-    pam command [--options]
-    
-    Command    Description
-    ---------  -----------------------------------
-    edit       Edits Record Rotation configuration
-    list       List Record Rotation configuration
-    info       Get Rotation Info
-    script     Add, delete, or edit script field
-
 ####
 
 edit
-
-Copy
-
-    
-    
-    My Vault> pam rotation edit --help
-    usage: pam rotation edit [-h] (--record RECORD_NAME | --folder FOLDER_NAME) [--force] [--config CONFIG] [--iam-aad-config IAM_AAD_CONFIG_UID] [--resource RESOURCE]
-                             [--schedulejson SCHEDULE_JSON_DATA | --schedulecron SCHEDULE_CRON_DATA | --on-demand | --schedule-config] [--complexity PWD_COMPLEXITY]
-                             [--admin-user ADMIN] [--enable | --disable]
-    
-    options:
-      -h, --help            show this help message and exit
-      --record RECORD_NAME, -r RECORD_NAME
-                            Record UID, name, or pattern to be rotated manually or via schedule
-      --folder FOLDER_NAME, -fd FOLDER_NAME
-                            Used for bulk rotation setup. The folder UID or name that holds records to be configured
-      --force, -f           Do not ask for confirmation
-      --config CONFIG, -c CONFIG
-                            UID or path of the configuration record.
-      --iam-aad-config IAM_AAD_CONFIG_UID, -iac IAM_AAD_CONFIG_UID
-                            UID of a PAM Configuration. Used for an IAM or Azure AD user in place of --resource.
-      --resource RESOURCE, -rs RESOURCE
-                            UID or path of the resource record.
-      --schedulejson SCHEDULE_JSON_DATA, -sj SCHEDULE_JSON_DATA
-                            JSON of the scheduler. Example: -sj '{"type": "WEEKLY", "utcTime": "15:44", "weekday": "SUNDAY", "intervalCount": 1}'
-      --schedulecron SCHEDULE_CRON_DATA, -sc SCHEDULE_CRON_DATA
-                            Cron tab string of the scheduler. Example: to run job daily at 5:56PM UTC enter following cron -sc "56 17 * * *"
-      --on-demand, -od      Schedule On Demand
-      --schedule-config, -sf
-                            Schedule from Configuration
-      --complexity PWD_COMPLEXITY, -x PWD_COMPLEXITY
-                            Password complexity: length, upper, lower, digits, symbols. Ex. 32,5,5,5,5[,SPECIAL CHARS]
-      --admin-user ADMIN, -a ADMIN
-                            UID or path for the PAMUser record to configure the admin credential on the PAM Resource as the Admin when rotating
-      --enable, -e          Enable rotation
-      --disable, -d         Disable rotation
 
 ####
 
@@ -670,19 +510,7 @@ The `--schedulejson`or `-sj` params are used to set the schedule via JSON.
 
 Rotate the PAM User record every month, on the 1st, at 4:00AM my time.
 
-Copy
-
-    
-    
-    pam rotation edit -r XXXX -sj '{"type": "MONTHLY_BY_DAY", "monthDay": 1, "time": "04:00", "tz": "America/Chicago"}'
-
 Rotate the PAM User record every week on a Saturday, at 10:00PM my time.
-
-Copy
-
-    
-    
-    pam rotation edit -r XXXX -sj '{"type": "WEEKLY", "weekday": "SATURDAY", "time": "22:00", "tz": "America/New_York"}'code
 
 The following are the valid schedule types.
 
@@ -828,12 +656,6 @@ Set the password complexity to create a 20 character password with a minimum
 of 1 uppercase letter, 4 lowercase letters, 2 digits, and 2 symbols from the
 symbol set `.=+-` .
 
-Copy
-
-    
-    
-    pam rotation edit -r XXXX -x 20,1,4,2,2,.=+-
-
 The value is a comma separated value (CSV) style value with the following
 parts:
 
@@ -849,14 +671,272 @@ parts:
 
   6. Special set. After last comma, just type the special characters you would like. You are limited to symbols in the following set. If left blank, this symbol set will be used.
 
-Copy
-
-         
-         !@#$%^?();',.=+[]<>{}-_/\\*&:"`~|
-
 ####
 
 **list**
+
+####
+
+**info**
+
+####
+
+**script**
+
+###
+
+**Sub-Command: action**
+
+**Detail:** Discovery, rotation and service account management of PAM
+Resources
+
+####
+
+gateway-info
+
+####
+
+discover
+
+####
+
+discover start
+
+####
+
+discover status
+
+####
+
+discover remove
+
+####
+
+discover process
+
+####
+
+discover rule
+
+####
+
+discover rule add
+
+####
+
+rotate
+
+####
+
+job-info
+
+####
+
+job-cancel
+
+####
+
+service list
+
+####
+
+service add
+
+####
+
+service remove
+
+###
+
+**Sub-Command: tunnel**
+
+**Detail:** View and create Keeper Tunnels from the local machine to target
+infrastructure.
+
+####
+
+start
+
+####
+
+list
+
+####
+
+stop
+
+####
+
+tail
+
+####
+
+edit
+
+**Detail:** View, create and remove Keeper Gateway services. To learn more
+about the Keeper Gateway .
+
+**Detail:** View, create, edit and remove Keeper PAM Configurations. To learn
+more about PAM Configurations .
+
+`tz` \- You local  time zone. (i.e., America/Chicago)
+
+`tz` \- You local  time zone. (i.e., America/Chicago)
+
+`tz` \- You local  time zone. (i.e., America/Chicago)
+
+`tz` \- You local  time zone. (i.e., America/Chicago)
+
+`tz` \- You local  time zone. (i.e., America/Chicago)
+
+Copy
+
+    
+    
+    My Vault> pam gateway help
+    pam command [--options]
+    
+    Command    Description
+    ---------  ------------------
+    list       List Gateways
+    new        Create new Gateway
+    remove     Remove Gateway
+
+Copy
+
+    
+    
+    My Vault> pam config help
+    pam command [--options]
+    
+    Command    Description
+    ---------  -------------------------------------------------------------
+    new        Create new PAM Configuration
+    edit       Edit PAM Configuration
+    list       List available PAM Configurations associated with the Gateway
+    remove     Remove a PAM Configuration
+
+Copy
+
+    
+    
+    usage: pam connection edit [-h] [--configuration CONFIG] [--admin-user ADMIN]
+                               [--protocol {,http,kubernetes,mysql,postgresql,rdp,sql-server,ssh,telnet,vnc}]
+                               [--connections {on,off,default}] [--connections-recording {on,off,default}]
+                               [--typescript-recording {on,off,default}]
+                               [--connections-override-port CONNECTIONS_OVERRIDE_PORT] [--silent]
+                               record
+    
+    positional arguments:
+      record                The record UID or path of the PAM resource record with network information to use for
+                            connections
+    
+    options:
+      -h, --help            show this help message and exit
+      --configuration CONFIG, -c CONFIG
+                            The PAM Configuration UID or path to use for connections. Use command `pam config list` to
+                            view available PAM Configurations.
+      --admin-user ADMIN, -a ADMIN
+                            The record path or UID of the PAM User record to configure the admin credential on the PAM
+                            Resource
+      --protocol {,http,kubernetes,mysql,postgresql,rdp,sql-server,ssh,telnet,vnc}, -p {,http,kubernetes,mysql,postgresql,rdp,sql-server,ssh,telnet,vnc}
+                            Set connection protocol
+      --connections {on,off,default}, -cn {on,off,default}
+                            Set connections permissions
+      --connections-recording {on,off,default}, -cr {on,off,default}
+                            Set recording connections permissions for the resource
+      --typescript-recording {on,off,default}, -tr {on,off,default}
+                            Set TypeScript recording permissions for the resource
+      --connections-override-port CONNECTIONS_OVERRIDE_PORT, -cop CONNECTIONS_OVERRIDE_PORT
+                            Port to use for connections. If not provided, the port from the record will be used.
+      --silent, -s          Silent mode - don't print PAM User, PAM Config etc.
+
+Copy
+
+    
+    
+    1. My Vault> pam connection edit "/Share Folder Name/Record Name" -c ocYDOuzwt3n0iYXuYk0lHw 
+    -a "/Share Folder Name/Record Name" -p=rdp -cn=on -cr=on -cop=3389
+    
+    2. My Vault> pam connection edit "/{{ Email }}/{{ Email }} SSH" -c ocYDOuzwt3n0iYXuYk0lHw 
+    -a "/Share Folder Name/Record Name" -p=ssh -cn=on -cr=on -cop=22 -s
+    
+    3. My Vault> pam connection edit "/{{ Email }}/{{ Email }} MSSQL" -c ocYDOuzwt3n0iYXuYk0lHw 
+    -a "/Share Folder Name/Record Name" -p=sql-server -cn=on -tr=on -cop=1433
+
+Copy
+
+    
+    
+    My Vault> pam rotation help
+    pam command [--options]
+    
+    Command    Description
+    ---------  -----------------------------------
+    edit       Edits Record Rotation configuration
+    list       List Record Rotation configuration
+    info       Get Rotation Info
+    script     Add, delete, or edit script field
+
+Copy
+
+    
+    
+    My Vault> pam rotation edit --help
+    usage: pam rotation edit [-h] (--record RECORD_NAME | --folder FOLDER_NAME) [--force] [--config CONFIG] [--iam-aad-config IAM_AAD_CONFIG_UID] [--resource RESOURCE]
+                             [--schedulejson SCHEDULE_JSON_DATA | --schedulecron SCHEDULE_CRON_DATA | --on-demand | --schedule-config] [--complexity PWD_COMPLEXITY]
+                             [--admin-user ADMIN] [--enable | --disable]
+    
+    options:
+      -h, --help            show this help message and exit
+      --record RECORD_NAME, -r RECORD_NAME
+                            Record UID, name, or pattern to be rotated manually or via schedule
+      --folder FOLDER_NAME, -fd FOLDER_NAME
+                            Used for bulk rotation setup. The folder UID or name that holds records to be configured
+      --force, -f           Do not ask for confirmation
+      --config CONFIG, -c CONFIG
+                            UID or path of the configuration record.
+      --iam-aad-config IAM_AAD_CONFIG_UID, -iac IAM_AAD_CONFIG_UID
+                            UID of a PAM Configuration. Used for an IAM or Azure AD user in place of --resource.
+      --resource RESOURCE, -rs RESOURCE
+                            UID or path of the resource record.
+      --schedulejson SCHEDULE_JSON_DATA, -sj SCHEDULE_JSON_DATA
+                            JSON of the scheduler. Example: -sj '{"type": "WEEKLY", "utcTime": "15:44", "weekday": "SUNDAY", "intervalCount": 1}'
+      --schedulecron SCHEDULE_CRON_DATA, -sc SCHEDULE_CRON_DATA
+                            Cron tab string of the scheduler. Example: to run job daily at 5:56PM UTC enter following cron -sc "56 17 * * *"
+      --on-demand, -od      Schedule On Demand
+      --schedule-config, -sf
+                            Schedule from Configuration
+      --complexity PWD_COMPLEXITY, -x PWD_COMPLEXITY
+                            Password complexity: length, upper, lower, digits, symbols. Ex. 32,5,5,5,5[,SPECIAL CHARS]
+      --admin-user ADMIN, -a ADMIN
+                            UID or path for the PAMUser record to configure the admin credential on the PAM Resource as the Admin when rotating
+      --enable, -e          Enable rotation
+      --disable, -d         Disable rotation
+
+Copy
+
+    
+    
+    pam rotation edit -r XXXX -sj '{"type": "MONTHLY_BY_DAY", "monthDay": 1, "time": "04:00", "tz": "America/Chicago"}'
+
+Copy
+
+    
+    
+    pam rotation edit -r XXXX -sj '{"type": "WEEKLY", "weekday": "SATURDAY", "time": "22:00", "tz": "America/New_York"}'code
+
+Copy
+
+    
+    
+    pam rotation edit -r XXXX -x 20,1,4,2,2,.=+-
+
+Copy
+
+    
+    
+    !@#$%^?();',.=+[]<>{}-_/\\*&:"`~|
 
 Copy
 
@@ -869,10 +949,6 @@ Copy
       -h, --help     show this help message and exit
       --verbose, -v  Verbose output
 
-####
-
-**info**
-
 Copy
 
     
@@ -884,10 +960,6 @@ Copy
       -h, --help            show this help message and exit
       --record-uid RECORD_UID, -r RECORD_UID
                             Record UID to rotate
-
-####
-
-**script**
 
 Copy
 
@@ -902,13 +974,6 @@ Copy
     add        List Record Rotation Schedulers
     edit       Add, delete, or edit script field
     delete     Delete script field
-
-###
-
-**Sub-Command: action**
-
-**Detail:** Discovery, rotation and service account management of PAM
-Resources
 
 Copy
 
@@ -927,10 +992,6 @@ Copy
     service       Manage services and scheduled tasks
     debug         PAM debug information
 
-####
-
-gateway-info
-
 Copy
 
     
@@ -943,10 +1004,6 @@ Copy
       --gateway GATEWAY_UID, -g GATEWAY_UID
                             Gateway UID
       --verbose, -v         Verbose Output
-
-####
-
-discover
 
 Copy
 
@@ -962,10 +1019,6 @@ Copy
     remove     Cancel or remove of discovery jobs
     process    Process discovered items
     rule       Manage discovery rules
-
-####
-
-discover start
 
 Copy
 
@@ -995,10 +1048,6 @@ Copy
       --cred-file CREDENTIAL_FILE
                             A JSON file containing list of credentials.
 
-####
-
-discover status
-
 Copy
 
     
@@ -1015,10 +1064,6 @@ Copy
       --history             Show history
     
 
-####
-
-discover remove
-
 Copy
 
     
@@ -1030,10 +1075,6 @@ Copy
       -h, --help            show this help message and exit
       --job-id JOB_ID, -j JOB_ID
                             Discovery job id.
-
-####
-
-discover process
 
 Copy
 
@@ -1050,10 +1091,6 @@ Copy
       --debug-gs-level DEBUG_LEVEL
                             GraphSync debug level. Default is 0
 
-####
-
-discover rule
-
 Copy
 
     
@@ -1067,10 +1104,6 @@ Copy
     list       List all rules
     remove     Remove a rule
     update     Update a rule
-
-####
-
-discover rule add
 
 Copy
 
@@ -1094,10 +1127,6 @@ Copy
       --statement STATEMENT, -s STATEMENT
                             Rule statement
 
-####
-
-rotate
-
 Copy
 
     
@@ -1109,10 +1138,6 @@ Copy
       -h, --help            show this help message and exit
       --record-uid RECORD_UID, -r RECORD_UID
                             Record UID to rotate
-
-####
-
-job-info
 
 Copy
 
@@ -1128,10 +1153,6 @@ Copy
       -h, --help            show this help message and exit
       --gateway GATEWAY_UID, -g GATEWAY_UID
                             Gateway UID. Needed only if there are more than one gateway running
-
-####
-
-job-cancel
 
 Copy
 
@@ -1149,10 +1170,6 @@ Copy
                             Gateway UID. Needed only if there are more than one gateway running
     
 
-####
-
-service list
-
 Copy
 
     
@@ -1164,10 +1181,6 @@ Copy
       -h, --help            show this help message and exit
       --gateway GATEWAY, -g GATEWAY
                             Gateway name or UID
-
-####
-
-service add
 
 Copy
 
@@ -1188,10 +1201,6 @@ Copy
       --type {service,task}, -t {service,task}
                             Relationship to add [service, task]
 
-####
-
-service remove
-
 Copy
 
     
@@ -1211,13 +1220,6 @@ Copy
       --type {service,task}, -t {service,task}
                             Relationship to remove [service, task]
 
-###
-
-**Sub-Command: tunnel**
-
-**Detail:** View and create Keeper Tunnels from the local machine to target
-infrastructure.
-
 Copy
 
     
@@ -1232,10 +1234,6 @@ Copy
     stop       Stop Tunnel to the server
     tail       View Tunnel Log
     edit       Edit Tunnel settings
-
-####
-
-start
 
 Copy
 
@@ -1254,10 +1252,6 @@ Copy
       --port PORT, -p PORT  The port number on which the server will be listening for incoming connections. If not set, random
                             open port on the machine will be used.
 
-####
-
-list
-
 Copy
 
     
@@ -1267,10 +1261,6 @@ Copy
     
     options:
       -h, --help  show this help message and exit
-
-####
-
-stop
 
 Copy
 
@@ -1285,10 +1275,6 @@ Copy
     options:
       -h, --help  show this help message and exit
 
-####
-
-tail
-
 Copy
 
     
@@ -1301,10 +1287,6 @@ Copy
     
     options:
       -h, --help  show this help message and exit
-
-####
-
-edit
 
 Copy
 
@@ -1332,21 +1314,41 @@ Copy
       --remove-tunneling-override-port, -rtop
                             Remove tunneling override port
 
-**Detail:** View, create and remove Keeper Gateway services. To learn more
-about the Keeper Gateway .
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
 
-**Detail:** View, create, edit and remove Keeper PAM Configurations. To learn
-more about PAM Configurations .
+# KeeperPAM Commands
 
-`tz` \- You local  time zone. (i.e., America/Chicago)
+Management of KeeperPAM functionality including Discovery, Rotation,
+Connections and Tunneling
 
-`tz` \- You local  time zone. (i.e., America/Chicago)
+[PreviousSharing Commands](/en/keeperpam/commander-cli/command-
+reference/sharing-commands)[NextConnection Commands](/en/keeperpam/commander-
+cli/command-reference/connection-commands)
 
-`tz` \- You local  time zone. (i.e., America/Chicago)
+  * Overview
+  * pam command
+  * Sub-Command: gateway
+  * Sub-Command: config
+  * Sub-Command: connection
+  * Sub-Command: rotation
+  * Sub-Command: action
+  * Sub-Command: tunnel
 
-`tz` \- You local  time zone. (i.e., America/Chicago)
+Copy
 
-`tz` \- You local  time zone. (i.e., America/Chicago)
+    
+    
+    My Vault> pam --help
+    pam command [--options]
+    
+    Command    Description
+    ---------  -----------------------------
+    gateway    Manage Gateways
+    config     Manage PAM Configurations
+    rotation   Manage Rotations
+    action     Execute action on the Gateway
+    tunnel     Manage Tunnels
 
 [Password Rotation](/en/keeperpam/secrets-manager/password-rotation)
 

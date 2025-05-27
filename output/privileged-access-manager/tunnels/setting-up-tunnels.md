@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -488,6 +489,8 @@ permissions to use Keeper Tunnels and need to be enabled.
 Enforcement policies for KeeperPAM are managed in the Keeper Admin Console
 under **Admin** > **Roles** > **Enforcement Policies** > **Privileged Access
 Manager**.
+
+Enforcement Policies for Tunnels
 
 Enforcement Policy
 
@@ -694,6 +697,14 @@ infrastructure, settings and . Setting up a PAM Configuration for your
 infrastructure is **required**. For more information on creating and
 configuring the PAM Configuration, visit this .
 
+Tunnel Settings in a KeeperPAM Resource
+
+Record View with the Start Tunnel action
+
+Active Tunnel
+
+MySQL Workbench with a Local Tunnel
+
 provides Tunneling capabilities in addition to using the Keeper Desktop UI.
 
 If tunnels are provided to users along with the necessary credentials, we
@@ -737,28 +748,6 @@ commands)
 [Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-
 browser-isolation)
 
-[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
-[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database)
-
-[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-directory)
-
-[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
-manager-commands#overview)
-
-Enforcement Policies for Tunnels
-
-Tunnel Settings in a KeeperPAM Resource
-
-Record View with the Start Tunnel action
-
-Active Tunnel
-
-MySQL Workbench with a Local Tunnel
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8AuVoynRnwZ1XYt2dHPD%252FtunnelPAMSettings.png%3Falt%3Dmedia%26token%3D0b12cab7-ce68-43b1-a63f-7e65fc994b58&width=768&dpr=4&quality=100&sign=aa11178f&sv=2)
@@ -778,6 +767,18 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4bsuT2Ol9
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FG45mktqPR9PKR9mkjvqi%252FScreenshot%25202025-01-15%2520at%25202.32.27%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D9bfdd81b-d39d-404d-a2a3-16826cfa7323&width=768&dpr=4&quality=100&sign=7fa9028b&sv=2)
+
+[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
+
+[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database)
+
+[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-directory)
+
+[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
+manager-commands#overview)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

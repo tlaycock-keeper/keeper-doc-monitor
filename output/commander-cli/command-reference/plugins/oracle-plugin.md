@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -586,6 +587,8 @@ Output
 After rotation is completed, the new password will be stored in the `Password`
 field of the record
 
+A Keeper Record setup for Oracle password rotation
+
 [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
 rotation)
 
@@ -599,14 +602,12 @@ client/index-097480.html)
 [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
 cli#typed-vs-untyped-records-v3-vs-v2)
 
-A Keeper Record setup for Oracle password rotation
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf3jhRTdO6IbKc4VLLY%252Fimage.png%3Falt%3Dmedia%26token%3Dc8958294-77b9-4c1d-af8b-323c0566424e&width=768&dpr=4&quality=100&sign=77fe2edc&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf4-Wp_-
 ZiTEjiYaqYL%252Fimage.png%3Falt%3Dmedia%26token%3Dee97abf8-7126-4064-a38e-d837de304dfc&width=768&dpr=4&quality=100&sign=94f4d84b&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf3jhRTdO6IbKc4VLLY%252Fimage.png%3Falt%3Dmedia%26token%3Dc8958294-77b9-4c1d-af8b-323c0566424e&width=768&dpr=4&quality=100&sign=77fe2edc&sv=2)
 

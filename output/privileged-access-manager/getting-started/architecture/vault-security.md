@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -394,30 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=mWAIZaLPKEjJeZYuNSby&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [Architecture](/en/keeperpam/privileged-access-manager/getting-started/architecture)
-
-# Vault Security
-
-Security and encryption model of the Keeper Vault
-
-[PreviousArchitecture Diagram](/en/keeperpam/privileged-access-
-manager/getting-started/architecture/system-architecture)[NextRouter
-Security](/en/keeperpam/privileged-access-manager/getting-
-started/architecture/router-security)
-
-Last updated 5 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -448,6 +425,30 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=mWAIZaLPKEjJeZYuNSby&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [Architecture](/en/keeperpam/privileged-access-manager/getting-started/architecture)
+
+# Vault Security
+
+Security and encryption model of the Keeper Vault
+
+[PreviousArchitecture Diagram](/en/keeperpam/privileged-access-
+manager/getting-started/architecture/system-architecture)[NextRouter
+Security](/en/keeperpam/privileged-access-manager/getting-
+started/architecture/router-security)
+
+Last updated 5 months ago
+
+Was this helpful?
+
 Keeper's platform is built with End-to-End Encryption (E2EE) across all
 devices and endpoints.
 
@@ -460,11 +461,12 @@ devices and endpoints.
   * Data in transit is encrypted with TLS and additional layers of transmission encryption which protects against access MITM, service providers and untrusted networks.
 
 A full and detailed disclosure of all encryption related to data at rest, data
-in transit, cloud architecture and certifications can be found on the [Keeper
-Enterprise Encryption Model page](https://docs.keeper.io/en/enterprise-
-guide/keeper-encryption-model).
+in transit, cloud architecture and certifications can be found on the .
 
 A video covering this model is below.
+
+[Keeper Enterprise Encryption Model
+page](https://docs.keeper.io/en/enterprise-guide/keeper-encryption-model)
 
 Vault Encryption & Security Model
 

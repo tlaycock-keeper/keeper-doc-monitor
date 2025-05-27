@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -394,36 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Video Overview
@@ -461,12 +432,10 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MeRAVfQmDBzKQBC0f_c&only=yes&limit=100)
 
 This quick start guide will get you set up with Keeper Secrets Manager
 
-[PreviousSecrets Manager Overview](/en/keeperpam/secrets-
-manager/overview)[NextAbout KSM](/en/keeperpam/secrets-manager/about)
-
-Last updated 5 months ago
-
-Was this helpful?
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MgS3wjqgG-LoAx-
+Tl9-%252F-MgS40qGR4FFUBKmA81F%252Fsm-
+overview.png%3Falt%3Dmedia%26token%3D0100630b-af34-462a-874f-1dbf183fb726&width=768&dpr=4&quality=100&sign=3d912f07&sv=2)
 
 ##
 
@@ -482,13 +451,20 @@ Prerequisites
 
 Keeper Business License
 
+Secrets Manager is available for Business accounts. If you are not a Keeper
+customer yet, you can [start a free
+trial](https://www.keepersecurity.com/password-manager-free-trial-sign-
+up.html) from our website.
+
 ###
 
 On your workstation:
 
-  *   * PIP version 21+ (Included in Python)
+  * You'll need the ability to install [Python version](http://www.python.org/downloads) (3.6+)
 
-  * 
+  * PIP version 21+ (Included in Python)
+
+  * [Keeper Commander CLI](https://github.com/Keeper-Security/Commander/releases) (Make sure you can [login](/en/keeperpam/commander-cli/commander-installation-setup/logging-in))
 
 ##
 
@@ -503,6 +479,18 @@ Enable Secrets Manager
 
 To activate your trial of Keeper Secrets Manager, login to the Admin Console
 and click on "Secrets Manager".
+
+Follow the links below to access the Keeper Admin Console: US:
+<https://keepersecurity.com/console>[](https://keepersecurity.com/console) EU:
+<https://keepersecurity.eu/console>[](https://keepersecurity.eu/console) AU:
+<https://keepersecurity.com.au/console>[](https://keepersecurity.com.au/console)
+CA: <https://keepersecurity.ca/console>[](https://keepersecurity.ca/console)
+JP: <https://keepersecurity.jp/console>[](https://keepersecurity.jp/console)
+US_GOV:
+<https://govcloud.keepersecurity.us/console>[](https://govcloud.keepersecurity.us/console)
+
+(Or open [KeeperSecurity.com](https://keepersecurity.com) >**Login** > **Admin
+Console**)
 
 ###
 
@@ -528,6 +516,15 @@ policies.
 
   4. Enable Keeper Secrets Manager policies as required
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9wMASX6k3ZiGRVx7m2oE%252FScreenshot%25202024-12-26%2520at%252012.04.24%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Df85ce4fe-7a5c-4e63-a78d-fc39f4d5d9d6&width=768&dpr=4&quality=100&sign=b67431fe&sv=2)
+
+Secrets Manager enforcement policies
+
+Note: This screenshot is based on the new [Preview
+Console](/en/keeperpam/privileged-access-manager/setup-steps).
+
 ##
 
 Setup Secrets Manager
@@ -536,12 +533,21 @@ In this exercise you will setup **Secrets** , create an **Application** , and
 configure a **Client** in order to access your secrets using Keeper Secrets
 Manager.
 
+From here, Secrets Manager can be setup using the Keeper Vault, or Keeper
+Commander. The following instructions show the steps for using the Keeper
+Vault. For Commander CLI steps, see [the instructions at the bottom of this
+page](/en/keeperpam/secrets-manager/quick-start-guide#setup-using-keeper-
+commander-cli).
+
 ###
 
 Create a Secret
 
 > Secrets are stored as records in the Keeper Vault and are typically stored
 > as attachments or fields in these records.
+
+[_Learn more about Secrets Manager Secrets_](/en/keeperpam/secrets-
+manager/about/terminology#secret)
 
 In the Keeper Web Vault or Desktop App user interface, create a Shared Folder
 and then add Secrets to the folder.
@@ -558,6 +564,11 @@ With the new shared folder selected, click the "Create New" button and select
 ###
 
 Create a Secrets Manager Application
+
+Secrets are shared to Applications as records or shared folders. Applications
+maintain client devices, permissions, audit trail, and history. [_Learn more
+about Secrets Manager Applications_](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 In the Keeper Vault, navigate to the Secrets Manager tab to see a list of
 Secrets Manager applications. Then click "Create Application"
@@ -579,6 +590,11 @@ create the first Secrets Manager Client Device.
 
 Create a Secrets Manager Client Device
 
+A Client Device is any endpoint that needs to access secrets associated with
+an Application. This can be a physical, virtual, or cloud-based device.
+[_Learn more about Secrets Manager Client Devices_](/en/keeperpam/secrets-
+manager/about/terminology#client)
+
 When a Secrets Manager Application is created in the Keeper Vault, a Secrets
 Manager Client Device is also created.
 
@@ -596,6 +612,10 @@ Create Additional Client Devices (optional)
 Once the Secrets Manager Application is created, more Client Devices can be
 created for the Application.
 
+See the [documented instructions](/en/keeperpam/secrets-manager/about/one-
+time-token#with-an-existing-application) to create additional Client Devices
+and One-Time Access Token
+
 Secrets Manager is now setup and ready to use!
 
 ##
@@ -605,6 +625,15 @@ View Secrets
 Next we'll view the secrets from the Keeper Vault shared with Secrets Manager
 using the Secrets Manager CLI.
 
+Secrets Manager has [SDKs in various languages](/en/keeperpam/secrets-
+manager/developer-sdk-library) and many[ pre-built
+integrations](/en/keeperpam/secrets-manager/integrations) which can be used to
+access secrets.
+
+For this example we will use the [Secrets Manager CLI](/en/keeperpam/secrets-
+manager/secrets-manager-command-line-interface) tool (`ksm`) to fetch and view
+secrets from the Keeper Vault.
+
 ###
 
 **Install the Secrets Manager CLI**
@@ -612,6 +641,11 @@ using the Secrets Manager CLI.
 ####
 
 Installing using binary release
+
+The latest binary release can be found on the [GitHub
+repository](https://github.com/Keeper-Security/secrets-
+manager/releases?q=cli&expanded=true). Download the installer based on your
+operating system and click to install, or unarchive, to use.
 
 When launching the CLI in Windows or macOS, via the UI, the CLI will run in a
 shell mode. The `ksm` command is still available via the command line.
@@ -653,6 +687,11 @@ Copy
     
     $ ksm profile init --token PASTE_TOKEN_HERE
 
+If the KSM profile is not initialized successfully, the One Time Access Token
+may have expired. Try [creating a new Client Device](/en/keeperpam/secrets-
+manager/about/one-time-token#with-an-existing-application) to generate a new
+One-Time Access Token.
+
 ###
 
 Access Your Secrets
@@ -679,9 +718,15 @@ Copy
      bf3dg-99-JuhoaeswgtFxg  login                My Secret
      3FXqmP5nFKwju0H8pl0DmQ  databaseCredentials  MySQL Credentials
 
+For more detailed usage information about the Secrets Manager CLI, see the
+[Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-
+line-interface) page.
+
 ##
 
 Finishing Up
+
+🎉**Congratulations! You have completed the basic setup**
 
 ###
 
@@ -689,7 +734,13 @@ Next steps:
 
   * Schedule time with the Secrets Manager team to discuss your use case
 
-  *   *   * 
+  * Learn about integrating Keeper Secrets Manager with your software using the [SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
+
+  * Learn more about the [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
+
+  * Learn about accessing secrets from CI/CD systems with [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+Have questions? Contact [sm@keepersecurity.com](mailto:sm@keepersecurity.com)
 
 ##
 
@@ -698,6 +749,9 @@ Setup Using Keeper Commander CLI
 If preferred, Secrets Manager can be setup using Keeper's command line tool
 Commander instead of the Keeper Vault. Follow these steps to setup Secrets
 Manager using Keeper Commander.
+
+See the [Commander Documentation](/en/keeperpam/commander-cli/commander-
+installation-setup) for installation instructions.
 
 ###
 
@@ -721,6 +775,9 @@ Create a Secret
 
 > Secrets are stored as records in the Keeper Vault and are typically stored
 > as attachments or fields in these records.
+
+[_Learn more about Secrets Manager Secrets_](/en/keeperpam/secrets-
+manager/about/terminology#secret)
 
 Run Keeper Commander by typing `keeper shell` then login with your Keeper
 email:
@@ -766,6 +823,9 @@ Create a Secrets Manager Application
 > Secrets are shared to Applications as records or shared folders.
 > Applications maintain client devices, permissions, audit trail, and history.
 
+[_Learn more about Secrets Manager Applications_](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
 In the example below, replace `XXX` with the Shared Folder UID or Record UID
 from your vault.
 
@@ -776,12 +836,20 @@ Copy
     My Vault> secrets-manager app create MyApplication
     My Vault> secrets-manager share add --app MyApplication --secret XXX
 
+Keeper Commander can be used to perform many Secrets Manager actions. For more
+detailed usage information about the Secrets Manager commands see the
+[Commands documentation](/en/keeperpam/commander-cli/command-
+reference/secrets-manager-commands)
+
 ###
 
 Create a Secrets Manager Client Device
 
 > A Client Device is any endpoint that needs to access secrets associated with
 > an Application. This can be a physical, virtual, or cloud-based device.
+
+[_Learn more about Secrets Manager Client Devices_](/en/keeperpam/secrets-
+manager/about/terminology#client)
 
 Create a client device to generate a One Time Access Token, which is used to
 initialize a device.
@@ -806,149 +874,51 @@ Continue Quick Start Guide
 
 Secrets Manager is now setup and ready to use!
 
-Secrets Manager is available for Business accounts. If you are not a Keeper
-customer yet, you can  from our website.
+From this point forward, follow the [instructions
+above](/en/keeperpam/secrets-manager/quick-start-guide#access-secrets-with-
+secrets-manager) to access Secrets using Secrets Manager and complete this
+guide.
 
-You'll need the ability to install  (3.6+)
+[PreviousSecrets Manager Overview](/en/keeperpam/secrets-
+manager/overview)[NextAbout KSM](/en/keeperpam/secrets-manager/about)
 
-(Make sure you can )
+Last updated 5 months ago
 
-Follow the links below to access the Keeper Admin Console: US:  EU:  AU:  CA:
-JP:  US_GOV:
+Was this helpful?
 
-(Or open  >**Login** > **Admin Console**)
+#### Company
 
-Note: This screenshot is based on the new .
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-From here, Secrets Manager can be setup using the Keeper Vault, or Keeper
-Commander. The following instructions show the steps for using the Keeper
-Vault. For Commander CLI steps, see .
+#### Support
 
-Secrets are shared to Applications as records or shared folders. Applications
-maintain client devices, permissions, audit trail, and history.
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-A Client Device is any endpoint that needs to access secrets associated with
-an Application. This can be a physical, virtual, or cloud-based device.
+#### Solutions
 
-See the  to create additional Client Devices and One-Time Access Token
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-Secrets Manager has  and many which can be used to access secrets.
+#### Pricing
 
-For this example we will use the  tool (`ksm`) to fetch and view secrets from
-the Keeper Vault.
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
-The latest binary release can be found on the . Download the installer based
-on your operating system and click to install, or unarchive, to use.
-
-If the KSM profile is not initialized successfully, the One Time Access Token
-may have expired. Try  to generate a new One-Time Access Token.
-
-For more detailed usage information about the Secrets Manager CLI, see the
-page.
-
-**Congratulations! You have completed the basic setup**
-
-Learn about integrating Keeper Secrets Manager with your software using the
-
-Learn more about the
-
-Learn about accessing secrets from CI/CD systems with
-
-Have questions? Contact
-
-See the  for installation instructions.
-
-Keeper Commander can be used to perform many Secrets Manager actions. For more
-detailed usage information about the Secrets Manager commands see the
-
-From this point forward, follow the  to access Secrets using Secrets Manager
-and complete this guide.
-
-🎉
-
-[start a free trial](https://www.keepersecurity.com/password-manager-free-
-trial-sign-up.html)
-
-[Python version](http://www.python.org/downloads)
-
-[Keeper Commander CLI](https://github.com/Keeper-Security/Commander/releases)
-
-[login](/en/keeperpam/commander-cli/commander-installation-setup/logging-in)
-
-<https://keepersecurity.com/console>[](https://keepersecurity.com/console)
-
-<https://keepersecurity.eu/console>[](https://keepersecurity.eu/console)
-
-<https://keepersecurity.com.au/console>[](https://keepersecurity.com.au/console)
-
-<https://keepersecurity.ca/console>[](https://keepersecurity.ca/console)
-
-<https://keepersecurity.jp/console>[](https://keepersecurity.jp/console)
-
-<https://govcloud.keepersecurity.us/console>[](https://govcloud.keepersecurity.us/console)
-
-[KeeperSecurity.com](https://keepersecurity.com)
-
-[Preview Console](/en/keeperpam/privileged-access-manager/setup-steps)
-
-[SDKs in various languages](/en/keeperpam/secrets-manager/developer-sdk-
-library)
-
-[ pre-built integrations](/en/keeperpam/secrets-manager/integrations)
-
-[Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-
-line-interface)
-
-[GitHub repository](https://github.com/Keeper-Security/secrets-
-manager/releases?q=cli&expanded=true)
-
-[Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-
-line-interface)
-
-[SDKs](/en/keeperpam/secrets-manager/developer-sdk-library)
-
-[Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-
-line-interface)
-
-[Integrations](/en/keeperpam/secrets-manager/integrations)
-
-[sm@keepersecurity.com](mailto:sm@keepersecurity.com)
-
-[Commander Documentation](/en/keeperpam/commander-cli/commander-installation-
-setup)
-
-[Commands documentation](/en/keeperpam/commander-cli/command-
-reference/secrets-manager-commands)
-
-[the instructions at the bottom of this page](/en/keeperpam/secrets-
-manager/quick-start-guide#setup-using-keeper-commander-cli)
-
-[instructions above](/en/keeperpam/secrets-manager/quick-start-guide#access-
-secrets-with-secrets-manager)
-
-[_Learn more about Secrets Manager Secrets_](/en/keeperpam/secrets-
-manager/about/terminology#secret)
-
-[_Learn more about Secrets Manager Applications_](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
-[_Learn more about Secrets Manager Client Devices_](/en/keeperpam/secrets-
-manager/about/terminology#client)
-
-[_Learn more about Secrets Manager Secrets_](/en/keeperpam/secrets-
-manager/about/terminology#secret)
-
-[_Learn more about Secrets Manager Applications_](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
-[_Learn more about Secrets Manager Client Devices_](/en/keeperpam/secrets-
-manager/about/terminology#client)
+© 2025 Keeper Security, Inc.
 
 Start Free Trial
 
 Add a Keeper role
-
-Secrets Manager enforcement policies
 
 Create New button in the Keeper vault
 
@@ -972,13 +942,7 @@ A One-Time Access Token is generated when a Client Device is created
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9wMASX6k3ZiGRVx7m2oE%252FScreenshot%25202024-12-26%2520at%252012.04.24%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Df85ce4fe-7a5c-4e63-a78d-fc39f4d5d9d6&width=768&dpr=4&quality=100&sign=b67431fe&sv=2)
-
-[documented instructions](/en/keeperpam/secrets-manager/about/one-time-
-token#with-an-existing-application)
-
-[creating a new Client Device](/en/keeperpam/secrets-manager/about/one-time-
-token#with-an-existing-application)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYt6M4J0MAswGiBeuWLld%252Fadd%2520role.png%3Falt%3Dmedia%26token%3D3a2ef309-44a5-4220-8df9-6772a9a6002d&width=768&dpr=4&quality=100&sign=48844f32&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -986,32 +950,23 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIMcLUmOJo
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJbmBKgn2PNTZcVMz6j1T%252Fcreate%2520new.png%3Falt%3Dmedia%26token%3Da06314ec-e95d-4326-9838-2bca06b1f726&width=768&dpr=4&quality=100&sign=e9a556ca&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYt6M4J0MAswGiBeuWLld%252Fadd%2520role.png%3Falt%3Dmedia%26token%3D3a2ef309-44a5-4220-8df9-6772a9a6002d&width=768&dpr=4&quality=100&sign=48844f32&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fv2HrzBxHe3F1tME28i9X%252Fshared%2520folder%2520form.png%3Falt%3Dmedia%26token%3D1972fbed-e232-4af0-aba3-4e7628cfe09e&width=768&dpr=4&quality=100&sign=3fcc504e&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNhfADxuH7QR80MwgKsYO%252FScreen%2520Shot%25202022-01-07%2520at%25201.28.07%2520PM.png%3Falt%3Dmedia%26token%3D0c8a4bb6-ce0f-4a76-8823-2d8612865bcd&width=768&dpr=4&quality=100&sign=e4337abe&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MgS3wjqgG-LoAx-
-Tl9-%252F-MgS40qGR4FFUBKmA81F%252Fsm-
-overview.png%3Falt%3Dmedia%26token%3D0100630b-af34-462a-874f-1dbf183fb726&width=768&dpr=4&quality=100&sign=3d912f07&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fv2HrzBxHe3F1tME28i9X%252Fshared%2520folder%2520form.png%3Falt%3Dmedia%26token%3D1972fbed-e232-4af0-aba3-4e7628cfe09e&width=768&dpr=4&quality=100&sign=3fcc504e&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYA7K1sEdaLVyojGuEPqR%252Fcraete%2520app.png%3Falt%3Dmedia%26token%3D55e51694-9fa4-4628-a340-38942c26ec1f&width=768&dpr=4&quality=100&sign=d99717ea&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJbmBKgn2PNTZcVMz6j1T%252Fcreate%2520new.png%3Falt%3Dmedia%26token%3Da06314ec-e95d-4326-9838-2bca06b1f726&width=768&dpr=4&quality=100&sign=e9a556ca&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5b6n9UPDgvlimaWMUasI%252FSM%2520tab.png%3Falt%3Dmedia%26token%3D6c9e14a2-6bca-4c0a-9001-700b55b9271e&width=768&dpr=4&quality=100&sign=7e4c45f9&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYA7K1sEdaLVyojGuEPqR%252Fcraete%2520app.png%3Falt%3Dmedia%26token%3D55e51694-9fa4-4628-a340-38942c26ec1f&width=768&dpr=4&quality=100&sign=d99717ea&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -1028,9 +983,9 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfS3uOY84O
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSmttTfmZfAzSmQ7BbE83%252Fapp%2520form%2520filled.png%3Falt%3Dmedia%26token%3De48cf671-35e1-4ed7-9754-9c211c162d38&width=768&dpr=4&quality=100&sign=8e39d8fd&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPgDwQiCrwyCzynqZniPp%252Fdevice%2520form%2520one%2520time%2520token.png%3Falt%3Dmedia%26token%3D8e7db73c-643b-42c2-a6bc-82dc64b629b1&width=768&dpr=4&quality=100&sign=6d2301e3&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPgDwQiCrwyCzynqZniPp%252Fdevice%2520form%2520one%2520time%2520token.png%3Falt%3Dmedia%26token%3D8e7db73c-643b-42c2-a6bc-82dc64b629b1&width=768&dpr=4&quality=100&sign=6d2301e3&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSmttTfmZfAzSmQ7BbE83%252Fapp%2520form%2520filled.png%3Falt%3Dmedia%26token%3De48cf671-35e1-4ed7-9754-9c211c162d38&width=768&dpr=4&quality=100&sign=8e39d8fd&sv=2)
 

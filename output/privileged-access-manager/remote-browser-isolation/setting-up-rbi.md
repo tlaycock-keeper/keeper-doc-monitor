@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -466,6 +467,12 @@ Overview
 In this guide, you will learn how to setup Remote Browser Isolation (RBI) in
 your Keeper Vault. RBI works from both Web Vault and Desktop App.
 
+An active license is required in order to use the features available with
+KeeperPAM. This license is available for both business and enterprise
+customers.
+
+  *   *   * 
+
 ##
 
 Prerequisites
@@ -519,6 +526,10 @@ Copy
     ALLOW_VIEW_RBI_RECORDINGS
 
 Allow users to view RBI Session Recordings.
+
+The above enforcement policies can also be enabled on the [Keeper Commander
+CLI](/en/keeperpam/commander-cli/command-reference/secrets-manager-
+commands#overview) using the `enterprise-role` command:
 
 Copy
 
@@ -660,7 +671,20 @@ loaded.
 
 Browser Autofill - Credentials
 
+RBI sessions launched from the Keeper Vault provides the capability of
+autofilling a username and password into a target website login screen. A
+vault record that is shared to a KSM application can be linked here. The
+credentials on this linked record will be autofilled in the target website
+login screen based on the autofill rules defined in the Autofill Targets
+section. Detailed Information [here](/en/keeperpam/privileged-access-
+manager/remote-browser-isolation/setting-up-rbi/browser-autofill)
+
 Browser Autofill - Autofill Targets
+
+This section will contain the autofill rules, which are a JSON/YAML array of
+objects, where each object specifies contains an autofill rule. Detailed
+Information [here](/en/keeperpam/privileged-access-manager/remote-browser-
+isolation/setting-up-rbi/browser-autofill)
 
 Can copy to clipboard
 
@@ -675,51 +699,16 @@ session.
 
 Session Recordings - RBI
 
-The above enforcement policies can also be enabled on the  using the
-`enterprise-role` command:
-
 By default, all URLs are permitted. Detailed Information
 
 By default, no restrictions are imposed on resources loaded by pages. Detailed
 Information
 
-RBI sessions launched from the Keeper Vault provides the capability of
-autofilling a username and password into a target website login screen. A
-vault record that is shared to a KSM application can be linked here. The
-credentials on this linked record will be autofilled in the target website
-login screen based on the autofill rules defined in the Autofill Targets
-section. Detailed Information
-
-This section will contain the autofill rules, which are a JSON/YAML array of
-objects, where each object specifies contains an autofill rule. Detailed
-Information
-
-[here](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation/setting-up-rbi/browser-autofill)
-
-[here](/en/keeperpam/privileged-access-manager/remote-browser-
-isolation/setting-up-rbi/browser-autofill)
-
-[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
-manager-commands#overview)
-
-An active license is required in order to use the features available with
-KeeperPAM. This license is available for both business and enterprise
-customers.
-
-  *   *   * 
-
-For this protocol, graphical data, including timing information, is recorded.
-For more details on the recordings and how to access them, see the  docs.
-
 [here](/en/keeperpam/privileged-access-manager/remote-browser-
 isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
 
 [here](/en/keeperpam/privileged-access-manager/remote-browser-
 isolation/setting-up-rbi/url-patterns-and-resource-url-patterns#overview)
-
-[Session Recording & Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
 
 [KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-
 management/)
@@ -727,6 +716,12 @@ management/)
 [Request a Demo](https://www.keepersecurity.com/contact.html?t=b&r=sales)
 
 [Contact Support](https://www.keepersecurity.com/support.html)
+
+For this protocol, graphical data, including timing information, is recorded.
+For more details on the recordings and how to access them, see the  docs.
+
+[Session Recording & Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
 
 Remote Browser Isolation Policies
 

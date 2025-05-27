@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -757,8 +758,6 @@ Was this helpful?
 
 _Find more information in the_
 
-User invite email
-
 Before getting started, be sure that you have the most up-to-date version of
 Commander. Find the most recent release on the .
 
@@ -772,12 +771,14 @@ follow the  for the `enterprise-user` command and swap out that command with
 
 [GitHub releases page](https://github.com/Keeper-Security/Commander/releases)
 
-[_documentation page_](/en/keeperpam/commander-cli/commander-installation-
-setup/logging-in#persistent-login)
-
 [steps above](/en/keeperpam/commander-cli/command-reference/enterprise-
 management-commands/creating-and-inviting-users#example-invite-users-from-
 email-addresses-in-a-file)
+
+[_documentation page_](/en/keeperpam/commander-cli/commander-installation-
+setup/logging-in#persistent-login)
+
+User invite email
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

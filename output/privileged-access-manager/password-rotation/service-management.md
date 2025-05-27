@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -466,6 +467,8 @@ Gateway will update the credentials for all services and scheduled tasks on
 the associated PAM Machine, and restart the services. One **PAM User** record
 can be associated to any number of **PAM Machine** records, allowing you to
 update the services and scheduled tasks across a fleet of servers.
+
+Windows Service Management
 
 ##
 
@@ -679,6 +682,10 @@ tasks that require update when a password is rotated.
 
 If you haven't set up Keeper Commander yet, please follow the .
 
+Find the Record UID
+
+Rotate the Windows Credential
+
 [Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-
 started/enforcement-policies)
 
@@ -695,12 +702,6 @@ up-winrm)
 
 [installation instructions](/en/keeperpam/commander-cli/commander-
 installation-setup)
-
-Windows Service Management
-
-Find the Record UID
-
-Rotate the Windows Credential
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

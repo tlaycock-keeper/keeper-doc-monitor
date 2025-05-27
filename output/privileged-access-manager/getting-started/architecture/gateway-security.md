@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -426,36 +427,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * What is the Keeper Gateway?
-  * Authentication of the Gateway
-  * How does a Gateway fetch instructions?
-  * How is the local KSM Configuration secured?
-  * Docker Install
-  * Linux Install
-  * Windows Install
-  * Data Caching
-  * The Gateway Shell
-  * Commander Remote Troubleshooting
-  * Secrets and Logging
-  * Post-Rotation Scripts
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=yf07eQ6miVwsM9IcJolm&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [Architecture](/en/keeperpam/privileged-access-manager/getting-started/architecture)
-
-# Gateway Security
-
-Security and encryption model of the Keeper Gateway service
-
-[PreviousRouter Security](/en/keeperpam/privileged-access-manager/getting-
-started/architecture/router-security)[NextConnection and Tunnel
-Security](/en/keeperpam/privileged-access-manager/getting-
-started/architecture/connection-and-tunnel-security)
 
 Last updated 4 months ago
 
@@ -661,6 +636,32 @@ In AWS environments, the configuration can be .
 
 If a Post-Rotation script requires access to other secrets beyond those passed
 in automatically, users are strongly encouraged to use the  or the  tool.
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [Architecture](/en/keeperpam/privileged-access-manager/getting-started/architecture)
+
+# Gateway Security
+
+Security and encryption model of the Keeper Gateway service
+
+[PreviousRouter Security](/en/keeperpam/privileged-access-manager/getting-
+started/architecture/router-security)[NextConnection and Tunnel
+Security](/en/keeperpam/privileged-access-manager/getting-
+started/architecture/connection-and-tunnel-security)
+
+  * What is the Keeper Gateway?
+  * Authentication of the Gateway
+  * How does a Gateway fetch instructions?
+  * How is the local KSM Configuration secured?
+  * Docker Install
+  * Linux Install
+  * Windows Install
+  * Data Caching
+  * The Gateway Shell
+  * Commander Remote Troubleshooting
+  * Secrets and Logging
+  * Post-Rotation Scripts
 
 [zero-knowledge protocols](/en/keeperpam/secrets-manager/about/security-
 encryption-model)

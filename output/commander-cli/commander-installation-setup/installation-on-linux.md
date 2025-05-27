@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -394,6 +395,34 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Supported Operating systems:
+  * Video Overview
+  * Pre-requisites
+  * Instructions
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MJXfMZXEdPkvtXzMcQ-&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+
+# CLI Installation on Linux
+
+How to install the Keeper Commander CLI on Linux
+
+[PreviousCLI Installation on macOS](/en/keeperpam/commander-cli/commander-
+installation-setup/installation-on-mac)[NextPython Developer
+Setup](/en/keeperpam/commander-cli/commander-installation-setup/developer-
+mode)
+
+Last updated 7 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -423,34 +452,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Supported Operating systems:
-  * Video Overview
-  * Pre-requisites
-  * Instructions
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MJXfMZXEdPkvtXzMcQ-&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
-
-# CLI Installation on Linux
-
-How to install the Keeper Commander CLI on Linux
-
-[PreviousCLI Installation on macOS](/en/keeperpam/commander-cli/commander-
-installation-setup/installation-on-mac)[NextPython Developer
-Setup](/en/keeperpam/commander-cli/commander-installation-setup/developer-
-mode)
-
-Last updated 7 months ago
-
-Was this helpful?
 
 ###
 
@@ -564,13 +565,13 @@ Copy
 
 You should see:
 
-Note, for your first time logging into a new device or a new location, you may
-have to perform device approval through email or other 2FA methods.
-
-Keeper Commander – Installing and Logging In
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FijsE6IrCJmLZkurhwQKo%252Fkeeper-
 commander_BBNOqSVfEO.png%3Falt%3Dmedia%26token%3D9f80084e-6f49-46be-a52c-0bbb0b7737d4&width=768&dpr=4&quality=100&sign=8c8fadbc&sv=2)
+
+Note, for your first time logging into a new device or a new location, you may
+have to perform device approval through email or other 2FA methods.
+
+Keeper Commander – Installing and Logging In
 

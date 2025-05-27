@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -416,43 +417,9 @@ PDF](/en/keeperpam/~gitbook/pdf?page=KEkG5ky7xq0IniHT6zVE&only=yes&limit=100)
 
 Deploying the Keeper Agent to your endpoints
 
-[PreviousSetup](/en/keeperpam/endpoint-privilege-
-manager/setup)[NextCollections](/en/keeperpam/endpoint-privilege-
-manager/collections)
-
-Last updated 2 days ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlUpBOmu2uDZvJY4Rn2gH%252FPEDM%2520Deployment.jpg%3Falt%3Dmedia%26token%3D16f4e1dd-d3fe-4c31-aa0d-30e33c0a7d78&width=768&dpr=4&quality=100&sign=80b39d&sv=2)
 
 ###
 
@@ -506,6 +473,12 @@ referenced throughout the privilege manager when applying policies. The
 collection name typically refers to a group of users sharing a common platform
 or use case.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FnQMX0Aq14RxRHDSEtsWk%252FDeployment%2520Package.png%3Falt%3Dmedia%26token%3Dd0ae0f7a-0d5d-4d49-995f-16b362f0cefc&width=768&dpr=4&quality=100&sign=2418395a&sv=2)
+
+Creating a Deployment Package
+
 ###
 
 Discovery of Inventory Data
@@ -538,12 +511,30 @@ deploying to your fleet of devices.
 
 The Deployment page displays the endpoint stats organized by collection.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWsTCPdSYW6TeEseLXCrY%252FDeployments.png%3Falt%3Dmedia%26token%3D296276e8-ed56-4b8b-b7a0-b3e3d913eee6&width=768&dpr=4&quality=100&sign=45e825a0&sv=2)
+
+Deployment Dashboard
+
 The collection can be enabled or disabled from the dashboard. When a
 collection is disabled, the policy engine will no longer apply to those
 devices.
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FxyLobktuoVLLtVyWAkpm%252FDeployments%2520-%2520enable%2520disable.png%3Falt%3Dmedia%26token%3Dd659e3da-7e72-47e9-b4d5-1309523d90f0&width=768&dpr=4&quality=100&sign=5125be6b&sv=2)
+
+Enable or Disable Collections of Endpoints
+
 Individual endpoints can also be disabled, to prevent the agent from applying
 policies.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2IONbTXWloBmdQp9K1yd%252FSelected%2520deployment%2520endpoints.png%3Falt%3Dmedia%26token%3D193a06aa-33ba-49a4-9cc7-f93f97b3ebb9&width=768&dpr=4&quality=100&sign=2339b0e4&sv=2)
+
+Enable or Disable individual endpoints
 
 ###
 
@@ -619,31 +610,41 @@ Next Steps
 Once you have deployed the agent, discovery kicks in and generates
 [collections](/en/keeperpam/endpoint-privilege-manager/collections).
 
-Creating a Deployment Package
+[PreviousSetup](/en/keeperpam/endpoint-privilege-
+manager/setup)[NextCollections](/en/keeperpam/endpoint-privilege-
+manager/collections)
 
-Deployment Dashboard
+Last updated 3 days ago
 
-Enable or Disable Collections of Endpoints
+Was this helpful?
 
-Enable or Disable individual endpoints
+#### Company
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlUpBOmu2uDZvJY4Rn2gH%252FPEDM%2520Deployment.jpg%3Falt%3Dmedia%26token%3D16f4e1dd-d3fe-4c31-aa0d-30e33c0a7d78&width=768&dpr=4&quality=100&sign=80b39d&sv=2)
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FnQMX0Aq14RxRHDSEtsWk%252FDeployment%2520Package.png%3Falt%3Dmedia%26token%3Dd0ae0f7a-0d5d-4d49-995f-16b362f0cefc&width=768&dpr=4&quality=100&sign=2418395a&sv=2)
+#### Support
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWsTCPdSYW6TeEseLXCrY%252FDeployments.png%3Falt%3Dmedia%26token%3D296276e8-ed56-4b8b-b7a0-b3e3d913eee6&width=768&dpr=4&quality=100&sign=45e825a0&sv=2)
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FxyLobktuoVLLtVyWAkpm%252FDeployments%2520-%2520enable%2520disable.png%3Falt%3Dmedia%26token%3Dd659e3da-7e72-47e9-b4d5-1309523d90f0&width=768&dpr=4&quality=100&sign=5125be6b&sv=2)
+#### Solutions
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2IONbTXWloBmdQp9K1yd%252FSelected%2520deployment%2520endpoints.png%3Falt%3Dmedia%26token%3D193a06aa-33ba-49a4-9cc7-f93f97b3ebb9&width=768&dpr=4&quality=100&sign=2339b0e4&sv=2)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

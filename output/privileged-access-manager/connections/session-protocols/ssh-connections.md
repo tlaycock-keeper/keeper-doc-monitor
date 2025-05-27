@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -454,7 +455,7 @@ manager/connections/session-protocols)[NextRDP
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/rdp-connections)
 
-Last updated 6 days ago
+Last updated 7 days ago
 
 Was this helpful?
 
@@ -697,6 +698,31 @@ information on recordings and how to access these recordings, visit this .
 [Session Recording and Playback](/en/keeperpam/privileged-access-
 manager/session-recording-and-playback)
 
+PAM Record
+
+Definition
+
+The PAM Configuration contains information of your target infrastructure
+
+Record
+
+The PAM Machine record contains information of the endpoint you want to
+establish an SSH protocol connection to.
+
+Record
+
+The PAM User record contains the user credentials that will be used to connect
+to the endpoint
+
+[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)
+
+[PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
 SSH Session Launching
 
 SSH Session Active
@@ -738,29 +764,4 @@ progress.png%3Falt%3Dmedia%26token%3D50307229-bdbe-4704-bd53-f8485bda7681&width=
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fm3ujLVowAlLGqlZ6ecVJ%252FScreenshot%25202025-01-21%2520at%252012.17.55%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D3bac50e6-864a-4deb-
 ab79-e0b8a871a8ae&width=768&dpr=4&quality=100&sign=62f9e671&sv=2)
-
-PAM Record
-
-Definition
-
-The PAM Configuration contains information of your target infrastructure
-
-Record
-
-The PAM Machine record contains information of the endpoint you want to
-establish an SSH protocol connection to.
-
-Record
-
-The PAM User record contains the user credentials that will be used to connect
-to the endpoint
-
-[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
-
-[PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
 

@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -426,12 +427,32 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview 
+  * Prerequisites
+  * PAM Settings - Configuring Telnet Protocol
+  * Accessing Connection Settings
+  * Configuring Connection Settings
+  * Session Recordings - Telnet Protocol
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=MXC4G5wXaqWiXZDJuEWg&only=yes&limit=100)
 
-Last updated 6 days ago
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
+
+# Telnet Connections
+
+Keeper Connections - Telnet Protocol
+
+[PreviousVNC Connections](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/vnc-
+connections)[NextKubernetes](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/kubernetes)
+
+Last updated 7 days ago
 
 Was this helpful?
 
@@ -458,6 +479,20 @@ protocol:
 PAM Record
 
 Definition
+
+PAM Configuration
+
+The PAM Configuration contains information of your target infrastructure
+
+PAM Machine Record
+
+The PAM Machine record contains information of the endpoint you want to
+establish an Telnet protocol connection to.
+
+PAM User Record
+
+The PAM User record contains the user credentials that will be used to connect
+to the endpoint
 
 This guide will use a **Linux Machine**. For more details on how this is setup
 on the PAM Machine Record, visit the following page:
@@ -489,10 +524,6 @@ the following fields are all **required** and need to be configured:
 
 The following table lists all the configurable connection settings for the
 Telnet protocol on the PAM Settings:
-
-##
-
-Session Recordings - Telnet Protocol
 
 Field
 
@@ -589,39 +620,9 @@ defaults. Legal values are:
 
 Default value is "white-black"
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
+##
 
-# Telnet Connections
-
-Keeper Connections - Telnet Protocol
-
-[PreviousVNC Connections](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/vnc-
-connections)[NextKubernetes](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/kubernetes)
-
-  * Overview 
-  * Prerequisites
-  * PAM Settings - Configuring Telnet Protocol
-  * Accessing Connection Settings
-  * Configuring Connection Settings
-  * Session Recordings - Telnet Protocol
-
-PAM Configuration
-
-The PAM Configuration contains information of your target infrastructure
-
-PAM Machine Record
-
-The PAM Machine record contains information of the endpoint you want to
-establish an Telnet protocol connection to.
-
-PAM User Record
-
-The PAM User record contains the user credentials that will be used to connect
-to the endpoint
+Session Recordings - Telnet Protocol
 
 [Getting Started page](/en/keeperpam/privileged-access-
 manager/connections/getting-started)

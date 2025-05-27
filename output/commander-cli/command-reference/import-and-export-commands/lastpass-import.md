@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -933,6 +934,12 @@ commands/default-record-types)
 
 [share admins](https://docs.keeper.io/enterprise-guide/share-admin)
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FisBbJe3YNOoyNvSgF0XD%252FImport-
+Keeper-
+LastPass.jpg%3Falt%3Dmedia%26token%3Dbf14ebf6-7463-4582-a1d7-a811f98d2e39&width=768&dpr=4&quality=100&sign=b3f0a619&sv=2)
+
 [record-permission](/en/keeperpam/commander-cli/command-reference/sharing-
 commands#record-permission-command)
 
@@ -945,12 +952,6 @@ guide/deploying-keeper-to-end-users/desktop-application)
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F1748446847-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fspaces%252F-LO5CAzpxoaEquZJBpYz%252Favatar.png%3Fgeneration%3D1562027743273411%26alt%3Dmedia&width=20&dpr=4&quality=100&sign=25d608c4&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FisBbJe3YNOoyNvSgF0XD%252FImport-
-Keeper-
-LastPass.jpg%3Falt%3Dmedia%26token%3Dbf14ebf6-7463-4582-a1d7-a811f98d2e39&width=768&dpr=4&quality=100&sign=b3f0a619&sv=2)
 
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fwww.keepersecurity.com%2Fassets%2Fbranding%2Fandroid-
 icon-192x192.png&width=20&dpr=4&quality=100&sign=71acf559&sv=2)

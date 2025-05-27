@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -394,6 +395,32 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * What's a Device?
+  * Creating a Device
+  * Device Initialization
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=ymuC24xXELvr6ZoC4PNi&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+# Devices
+
+Keeper Secrets Manager Devices with KeeperPAM
+
+[PreviousApplications](/en/keeperpam/privileged-access-manager/getting-
+started/applications)[NextGateways](/en/keeperpam/privileged-access-
+manager/getting-started/gateways)
+
+Last updated 5 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -423,32 +450,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * What's a Device?
-  * Creating a Device
-  * Device Initialization
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=ymuC24xXELvr6ZoC4PNi&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-
-# Devices
-
-Keeper Secrets Manager Devices with KeeperPAM
-
-[PreviousApplications](/en/keeperpam/privileged-access-manager/getting-
-started/applications)[NextGateways](/en/keeperpam/privileged-access-
-manager/getting-started/gateways)
-
-Last updated 4 months ago
-
-Was this helpful?
 
 ###
 
@@ -569,6 +570,16 @@ Copy
 
 See the  of a Device
 
+Create a Device
+
+Add a device using One-Time Access Token and IP Lockdown
+
+Access Token Generated
+
+Creating a new device with Configuration File method
+
+Device created with Configuration method
+
 See more details on the
 
 [Security & Encryption Model](/en/keeperpam/secrets-manager/about/security-
@@ -582,16 +593,6 @@ manager/about/secrets-manager-configuration)
 
 [secrets-manager Commander CLI command](/en/keeperpam/commander-cli/command-
 reference/secrets-manager-commands)
-
-Create a Device
-
-Add a device using One-Time Access Token and IP Lockdown
-
-Access Token Generated
-
-Creating a new device with Configuration File method
-
-Device created with Configuration method
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

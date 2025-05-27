@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -411,6 +412,51 @@ PDF](/en/keeperpam/~gitbook/pdf?page=XAOypgoGLsBP5JRTrN5D&only=yes&limit=100)
 
 Granting a service account the minimum permissions to rotate
 
+###
+
+Overview
+
+When creating a PAM Directory Resource, it is recommended that you use a
+service account with the least required privileges to perform rotation.
+
+The following steps show you how to enable a service account to rotate
+credentials using Active Directory's Delegation of Control feature.
+
+Before starting, create a service account for password rotation whose
+credentials you will store in the Keeper resource record.
+
+###
+
+Procedure
+
+  1. Launch Active Directory Users and Computers
+
+  2. In the directory tree, select a node for which password rotation should be allowed.
+
+  3. Right-click on the node, then click Delegate Control.
+
+  4. In the Delegation of Control Wizard, click 'Add'.
+
+  5. Locate your chosen service account, then click 'OK'.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWvqmDHT3H2WPFXS81LST%252Fimage.png%3Falt%3Dmedia%26token%3D8594dced-2b6c-414e-bfe2-c64c9314d1bc&width=768&dpr=4&quality=100&sign=2303e050&sv=2)
+
+Selecting a service account to perform rotation
+
+  1. Click 'Next' to advance to permission selection.
+
+  2. In 'Delegate the following common tasks', check the option for 'Reset user passwords and force password change at next logon', then click 'Next'.
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FbAX2oTrapAHXZA9hZ8mC%252Fimage.png%3Falt%3Dmedia%26token%3D1c8d3866-5b33-4554-9b69-c95169913a9c&width=768&dpr=4&quality=100&sign=8d03bf2&sv=2)
+
+Delegating permission to reset user passwords
+
+  1. Add the service account's login and password to the Resource Record for the AD instance.
+
 [PreviousCreating KSM App for Rotation](/en/keeperpam/privileged-access-
 manager/references/creating-ksm-app-for-rotation)[NextEvent
 Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
@@ -448,49 +494,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-###
-
-Overview
-
-When creating a PAM Directory Resource, it is recommended that you use a
-service account with the least required privileges to perform rotation.
-
-The following steps show you how to enable a service account to rotate
-credentials using Active Directory's Delegation of Control feature.
-
-Before starting, create a service account for password rotation whose
-credentials you will store in the Keeper resource record.
-
-###
-
-Procedure
-
-  1. Launch Active Directory Users and Computers
-
-  2. In the directory tree, select a node for which password rotation should be allowed.
-
-  3. Right-click on the node, then click Delegate Control.
-
-  4. In the Delegation of Control Wizard, click 'Add'.
-
-  5. Locate your chosen service account, then click 'OK'.
-
-  1. Click 'Next' to advance to permission selection.
-
-  2. In 'Delegate the following common tasks', check the option for 'Reset user passwords and force password change at next logon', then click 'Next'.
-
-  1. Add the service account's login and password to the Resource Record for the AD instance.
-
-Selecting a service account to perform rotation
-
-Delegating permission to reset user passwords
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FWvqmDHT3H2WPFXS81LST%252Fimage.png%3Falt%3Dmedia%26token%3D8594dced-2b6c-414e-bfe2-c64c9314d1bc&width=768&dpr=4&quality=100&sign=2303e050&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FbAX2oTrapAHXZA9hZ8mC%252Fimage.png%3Falt%3Dmedia%26token%3D1c8d3866-5b33-4554-9b69-c95169913a9c&width=768&dpr=4&quality=100&sign=8d03bf2&sv=2)
 

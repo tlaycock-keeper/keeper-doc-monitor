@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -394,36 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Endpoint Privilege Manager Deployment Best Practices
@@ -443,13 +414,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=kgh9q3gh3j3pfrfOJ2Qb&only=yes&limit=100)
 # Best Practices
 
 Implementation of Endpoint Privilege Manager
-
-[PreviousManaging Requests](/en/keeperpam/endpoint-privilege-manager/managing-
-requests)[NextFAQs](/en/keeperpam/faqs)
-
-Last updated 2 days ago
-
-Was this helpful?
 
 ##
 
@@ -479,6 +443,12 @@ you to understand baseline privilege usage without disrupting user workflows.
 
   * Focus on diverse endpoint types: developer workstations, standard user machines, and servers
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtkKlyXtCrqZrnmRPQMT2%252FScreenshot%25202025-05-23%2520at%25204.54.28%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dab6b201c-9815-4480-a034-2d68904331e3&width=768&dpr=4&quality=100&sign=5c2f22a8&sv=2)
+
+Monitor Mode Policy
+
 ####
 
 Analyze Privilege Usage Patterns
@@ -492,6 +462,12 @@ During the monitoring phase, examine the dashboard for:
   * **Legitimate business processes** : Operations that require admin rights for valid reasons
 
   * **Anomalous activity** : Unusual privilege requests that may indicate security risks
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDQsvth3QNAIBzLYY1XXT%252FMonitoring%2520Mode.png%3Falt%3Dmedia%26token%3Dda8d693d-2c43-4d5c-b50e-a0130a4a87e3&width=768&dpr=4&quality=100&sign=bd34ca12&sv=2)
+
+Monitoring Mode
 
 ####
 
@@ -716,15 +692,40 @@ Endpoint Privilege Manager while maintaining operational continuity and user
 satisfaction. The key is to move gradually, monitor continuously, and adjust
 based on real-world usage patterns and feedback.
 
-Monitor Mode Policy
+[PreviousManaging Requests](/en/keeperpam/endpoint-privilege-manager/managing-
+requests)[NextFAQs](/en/keeperpam/faqs)
 
-Monitoring Mode
+Last updated 3 days ago
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtkKlyXtCrqZrnmRPQMT2%252FScreenshot%25202025-05-23%2520at%25204.54.28%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dab6b201c-9815-4480-a034-2d68904331e3&width=768&dpr=4&quality=100&sign=5c2f22a8&sv=2)
+Was this helpful?
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FDQsvth3QNAIBzLYY1XXT%252FMonitoring%2520Mode.png%3Falt%3Dmedia%26token%3Dda8d693d-2c43-4d5c-b50e-a0130a4a87e3&width=768&dpr=4&quality=100&sign=bd34ca12&sv=2)
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

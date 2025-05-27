@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -426,27 +427,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Using the Gateway Wizard 
-  * Using Keeper Secrets Manager
-  * Using Commander CLI
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=LuE8qRgdmKqbHNA40Y9O&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-# Creating a Gateway
-
-Creating a Keeper Gateway
-
-[PreviousGateways](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)[NextDocker Installation](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/docker-installation)
 
 Last updated 1 month ago
 
@@ -536,15 +520,29 @@ folders and other resources before creating a Gateway instance.
 
 Create an Application
 
+####
+
+Create Folders
+
+####
+
+Share the KSM app to the Shared Folders
+
+####
+
+Create a Gateway
+
+To initialize a Gateway for  or  native install methods, the one-time token
+method is used:
+
+To initialize a Gateway using Docker, the base64 configuration is provided as
+`GATEWAY_CONFIG` environment variable as described in the  instructions.
+
 Copy
 
     
     
     secrets-manager app create "My Infrastructure"
-
-####
-
-Create Folders
 
 Copy
 
@@ -554,20 +552,12 @@ Copy
     mkdir -sf -a "My Infrastructure/Resources"
     mkdir -sf -a "My Infrastructure/Users"
 
-####
-
-Share the KSM app to the Shared Folders
-
 Copy
 
     
     
     secrets-manager share add --app "My Infrastructure" --secret <Resources folder UID>
     secrets-manager share add --app "My Infrastructure" --secret <Users folder UID>
-
-####
-
-Create a Gateway
 
 Copy
 
@@ -581,11 +571,41 @@ Copy
     
     pam gateway new -n "My Demo Gateway" -a "My Infrastructure" -c b64
 
-To initialize a Gateway for  or  native install methods, the one-time token
-method is used:
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
 
-To initialize a Gateway using Docker, the base64 configuration is provided as
-`GATEWAY_CONFIG` environment variable as described in the  instructions.
+# Creating a Gateway
+
+Creating a Keeper Gateway
+
+[PreviousGateways](/en/keeperpam/privileged-access-manager/getting-
+started/gateways)[NextDocker Installation](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/docker-installation)
+
+  * Overview
+  * Using the Gateway Wizard 
+  * Using Keeper Secrets Manager
+  * Using Commander CLI
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FrperdEulgHMqKZAh4itn%252FScreenshot%25202025-04-19%2520at%25207.46.13%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dfcadc16c-003b-46f2-b6b7-8666d91c27a2&width=768&dpr=4&quality=100&sign=24efc03d&sv=2)
+
+Creating a Gateway
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGfrKhg3EYK2mAtfmsq1x%252FScreenshot%25202023-05-01%2520at%252011.37.56%2520AM.jpg%3Falt%3Dmedia%26token%3D21236241-e0f2-4b54-b7dd-9f3cea8ab53c&width=768&dpr=4&quality=100&sign=2355f5&sv=2)
+
+Create a KSM Application
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJKAv2CyVdxhUf7m7k7TY%252FScreenshot%25202023-09-14%2520at%25205.46.20%2520PM.png%3Falt%3Dmedia%26token%3Db1b3336b-b34d-4faa-
+aa75-1b5f54170233&width=768&dpr=4&quality=100&sign=8097b719&sv=2)
+
+Windows Gateway
 
 [Quick Start: Sandbox](/en/keeperpam/privileged-access-manager/quick-start-
 sandbox)
@@ -598,23 +618,4 @@ started/gateways/windows-installation)
 
 [Docker Installation](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/docker-installation)
-
-Creating a Gateway
-
-Create a KSM Application
-
-Windows Gateway
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FrperdEulgHMqKZAh4itn%252FScreenshot%25202025-04-19%2520at%25207.46.13%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dfcadc16c-003b-46f2-b6b7-8666d91c27a2&width=768&dpr=4&quality=100&sign=24efc03d&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGfrKhg3EYK2mAtfmsq1x%252FScreenshot%25202023-05-01%2520at%252011.37.56%2520AM.jpg%3Falt%3Dmedia%26token%3D21236241-e0f2-4b54-b7dd-9f3cea8ab53c&width=768&dpr=4&quality=100&sign=2355f5&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJKAv2CyVdxhUf7m7k7TY%252FScreenshot%25202023-09-14%2520at%25205.46.20%2520PM.png%3Falt%3Dmedia%26token%3Db1b3336b-b34d-4faa-
-aa75-1b5f54170233&width=768&dpr=4&quality=100&sign=8097b719&sv=2)
 

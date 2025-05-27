@@ -395,35 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Features
-  * KeeperPAM Events
-  * Recommended Alerts
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=n7N9m0jqA1BbRWfUyZO2&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-# Alerts and SIEM Integration
-
-Monitoring Gateway events and integrating with your SIEM
-
-[PreviousAuto Updater](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/auto-updater)[NextAdvanced
-Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/advanced-configuration)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -454,84 +425,479 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
-###
+On this page
+
+  * Overview
+  * Planning your Deployment
+  * Vault KSM Application Sharing
+  * Role-Based Enforcement Policies
+  * PAM Configuration Settings
+  * Application and Device Access Control
+  * Device and Gateway IP Locking
+  * PAM Resource Sharing and Permissions
+  * Record Linking
+  * Time-Limited Access
+  * Revoking Access
+  * Automatic Rotation after Share Expiration
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=z551MwFLTYCCCN0XRF25&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+# Access Controls
+
+KeeperPAM Access Control Implementation
+
+[PreviousPAM User](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-user)[NextJust-In-Time Access
+(JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-
+access-jit)
+
+Last updated 1 hour ago
+
+Was this helpful?
+
+##
 
 Overview
 
-KeeperPAM supports integration with your SIEM provider to provide real-time
-event logging and monitoring of all privileged access management activity. In
-the Keeper Admin Console, alerts can also be configured based on any event.
+Access to resources and features in KeeperPAM is governed by a robust cloud-
+based access control plane, leveraging multiple layers of policies and
+configuration settings. Devices and gateways are assigned specific
+permissions, enabling them to access and decrypt data allocated to them from
+the vault. Users with KeeperPAM management privileges can assign access rights
+to managed resources with flexibility, offering permanent, time-limited, or
+just-in-time (JIT) access based on organizational needs.
 
-For more information on activating SIEM integration from the Keeper Enterprise
-guide:
-
-  * See 
-
-###
-
-Features
-
-  * Push over 200 different event types to any connected SIEM provider
-
-  * Send alerts to email, SMS, Webhook, Slack or Microsoft Teams on any event trigger
-
-  * Run custom reports from the Keeper Admin Console or  CLI
+  *   *   *   *   *   *   *   *   *   * 
 
 ###
 
-KeeperPAM Events
+Planning your Deployment
 
-Events related to KeeperPAM include:
-
-  * Starting and stopping sessions, tunnels, remote browser isolation
-
-  * Gateway lifecycle (online, offline, added/removed)
-
-  * Connection lifecycle (creation, editing and deleting PAM resources)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7HKEvnUmuwxtqzWrtAEH%252FScreenshot%25202025-02-22%2520at%25205.52.13%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D317f6374-5d64-4e14-9f35-14a73822541c&width=768&dpr=4&quality=100&sign=355aa33a&sv=2)
-
-KeeperPAM Events
+For optimal use of KeeperPAM, it is recommended to create a dedicated service
+account user within the Keeper Admin Console. This account will oversee the
+creation and management of Applications, Shared Folders, Gateways, Resources
+and their associated rights and permissions.
 
 ###
 
-Recommended Alerts
+Vault KSM Application Sharing
 
-As a KeeperPAM administrator, it is useful to receive alerts related to
-Gateway actions, such as when a Gateway goes offline (in case of server outage
-or system restart).
+Keeper Commander and Vault version 17.3+ support "Application Sharing", which
+allows multiple administrators to share applications and gateways.
 
-From the Admin Console, go to Reporting & Alerts > Alerts > select Event Types
-and set the recipient information.
+Go to Secrets Manager > Applications > Edit and select the administrators who
+require management of the application, devices and gateways.
+
+  * **Application** Admin: Can manage application folders, users, all devices and gateways
+
+  * **Application Viewer** : Can view and use the application and gateways
+
+####
+
+Keeper Commander
+
+Sharing and unsharing applications is available in the Keeper Commander CLI
+and SDK.
+
+###
+
+**Role-Based Enforcement Policies**
+
+Enforcement Policies determine what overall permissions a user has associated
+to their role. A role can have administrative abilities, or they can be
+limited to only using resources assigned to them.
+
+  * From the Admin Console, visit **Admin** > **Roles**
+
+  * Either create a new role or modify an existing role
+
+  * Under Enforcement Policies, visit the "**Privileged Access Manager** " tab
+
+A more in-depth look at Admin Console nodes, roles and permissions can be
+found in the Keeper Enterprise admin guide:
+
+  *   * 
+
+###
+
+**PAM Configuration Settings**
+
+The PAM Configuration acts as a set of "parental controls" for PAM records. It
+enables or disables specific PAM features for all resources using the
+configuration.
+
+  * 
+
+###
+
+Application and Device Access Control
+
+When creating an application with its devices and gateways, the admin assigns
+access to specific shared folders with record permissions. This setup allows
+controlled vault access for both the gateways and the connected devices
+interacting with the Keeper vault. By managing permissions at both the
+application and gateway levels, an extra security layer is added.
+
+Multiple applications can be associated to a Shared Folder with different
+levels of permission.
+
+###
+
+Device and Gateway IP Locking
+
+When creating a new Device or Gateway on a Windows or Linux-based installation
+method, Keeper provides the option to apply IP locking upon first access. This
+added security measure is layered on top of the existing device authorization
+model.
+
+###
+
+PAM Resource Sharing and Permissions
+
+As a zero-knowledge platform, Keeper provides resource-level access control
+through our secure sharing technology, powered by strong encryption. Access to
+a resource is controlled through both policy (RBAC, ABAC) in addition to
+encryption. In order to access a resource, the user must be able to decrypt
+the record in their vault. The decryption process allows the user to establish
+a zero trust connection to the target system, or simply access a secret.
+
+In the Keeper Vault, Shared Folders control access to any resource managed by
+KeeperPAM. Resources can be placed inside shared folders just like any other
+Keeper record.
+
+One of the key benefits of the KeeperPAM platform is the ability to share
+access to a resource without exposing credentials to the recipient.
+
+A Shared Folder contains PAM Resources, such as:
+
+  * **PAM Machine**
+
+  * **PAM Database**
+
+  * **PAM Directory**
+
+  * **PAM Remote Browser**
+
+  * **PAM User**
+
+For example, this demo environment as seen below provides full access to
+DevOps, but limits access to only viewing and using resources to the
+Developers team:
+
+In this scenario, only the DevOps team has access to the Users folder. The
+Developers are restricted from accessing these credentials.
+
+####
+
+Record Level Permissions
+
+Resource-level permissions in a shared folder limit members from editing or
+sharing records. Users with view-only access can still use PAM features, like
+launching sessions, if their role allows it.
+
+To ensure least privilege access, the recommendation is to reduce record-level
+permissions in a Shared Folder to "View Only". Only the Keeper service account
+user responsible for building Applications and Gateways should have full
+administrative capabilities.
+
+####
+
+Direct Resource Sharing
+
+A record can be shared to an individual user with persistent or time-limited
+access.
+
+To share an individual record, click on **Share** and then select the user.
+Providing view-only access to a resource allows the recipient to launch
+connections and tunnels to the target without having access to the underlying
+credentials.
+
+A user can be assigned standing access or time-limited access to a resource.
+
+####
+
+Team Level Permissions
+
+From the Admin Console, a team can optionally be restricted in their ability
+to edit or re-share records that have been provisioned to the team via shared
+folders across the entire environment. This only applies to shared folders
+that have been assigned to a specific team.
+
+####
+
+Share Admin Permissions
+
+Managing ownership and permissions of resources and records within the Keeper
+Vault can be delegated to other Keeper admins through the Share Admin
+permission.
+
+  * 
+
+###
+
+Record Linking
+
+A PAM User record containing credentials can be "linked" to a PAM Resource.
+Sharing a PAM Resource record to another user **does not** automatically share
+the linked credentials. This allows the recipient with view-only access with
+the ability to launch zero-trust connections without having access to the
+underlying credentials.
+
+  * Sharing a resource to a user with view-only access only gives them the ability to launch connections and tunnels.
+
+  * 
+
+In the example below, a PAM Database is linked to a specific user `sqluser`.
+Connections to the database using that account is available to users without
+access to the actual credential.
+
+Here's another example which provides SSH access to a Linux machine without
+sharing the key:
+
+###
+
+Time-Limited Access
+
+Folder and record access can be either persistent or time-limited.
+
+Access to the resource can be revoked at a specific date and time.
+
+###
+
+Revoking Access
+
+Removing a user from a Shared Folder or removing the user from a direct share
+of the resource will immediately destroy any active sessions or tunnels.
+
+To remove a user from a Shared Folder:
+
+  * Select the Shared Folder
+
+  * Select "Edit" and then remove the user or team from the "Users" tab
+
+  * Click Save
+
+To remove a user from an individual resource
+
+  * Select the record
+
+  * Click on "Sharing"
+
+  * Delete the share
+
+If you select "Remove ... from all your shared records", this will revoke
+access to all resources and destroy any active sessions or tunnels for that
+user.
+
+###
+
+Automatic Rotation after Share Expiration
+
+If you have a use case where a PAM User credential needs to be shared to
+another user, you have the option of automatically rotating the credential
+after the sharing has expired.
+
+See the  command.
+
+More information on
+
+To ensure least privilege, we recommend splitting the PAM Users into a
+separate shared folder, in order to restrict what users and devices can access
+the underlying secrets. When launching our  or using our , Keeper will
+automatically place the resources and users into separate shared folders.
+
+Read more about the  in the Keeper Enterprise docs
+
+Keeper's  provides access to the target systems without sharing the
+credential, ensuring least privilege access.
+
+[Nodes and Organizational Structure](https://docs.keeper.io/en/enterprise-
+guide/nodes-and-organizational-structure)
+
+[Roles, RBAC and Permissions](https://docs.keeper.io/en/enterprise-
+guide/roles)
+
+[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)
+
+[Quick Start Sandbox](/en/keeperpam/privileged-access-manager/quick-start-
+sandbox)
+
+[Gateway wizard](/en/keeperpam/privileged-access-manager/getting-
+started/gateways)
+
+[Share Admin feature](https://docs.keeper.io/en/enterprise-
+guide/sharing/share-admin)
+
+[zero-trust architecture](/en/keeperpam/privileged-access-manager/getting-
+started/architecture)
+
+[Planning your Deployment](/en/keeperpam/privileged-access-manager/getting-
+started/access-controls#planning-your-deployment)
+
+[Role-Based Enforcement Policies](/en/keeperpam/privileged-access-
+manager/getting-started/access-controls#role-based-enforcement-policies)
+
+[PAM Configuration Settings](/en/keeperpam/privileged-access-manager/getting-
+started/access-controls#pam-configuration)
+
+[Application and Device Access Control](/en/keeperpam/privileged-access-
+manager/getting-started/access-controls#application-and-device-access-control)
+
+[Device and Gateway IP Locking](/en/keeperpam/privileged-access-
+manager/getting-started/access-controls#device-and-gateway-ip-locking)
+
+[PAM Resource Sharing and Permissions](/en/keeperpam/privileged-access-
+manager/getting-started/access-controls#pam-resource-sharing-and-permissions)
+
+[Record Linking](/en/keeperpam/privileged-access-manager/getting-
+started/access-controls#record-linking)
+
+[Zero-Trust Access through Connection Sharing](/en/keeperpam/privileged-
+access-manager/getting-started/access-controls#zero-trust-access-through-
+record-sharing)
+
+[Time-limited Access](/en/keeperpam/privileged-access-manager/getting-
+started/access-controls#time-limited-access)
+
+[Revoking Access](/en/keeperpam/privileged-access-manager/getting-
+started/access-controls#revoking-access)
+
+[`secrets-manager app share`](/en/keeperpam/commander-cli/command-
+reference/secrets-manager-commands#secrets-manager-app-share-command)
+
+Application Sharing
+
+PAM Roles
+
+Example of role with KeeperPAM administration capabilities
+
+Example of a role with the ability to only launch connections and tunnels
+
+PAM Configuration
+
+Application Permissions
+
+Adding multiple applications to a shared folder
+
+Device and Gateway IP Locking
+
+Managing access to PAM Resources
+
+Managing access to PAM Users
+
+Record-level permissions on PAM Resources
+
+Share an Individual Resource
+
+Sharing with Time-limited Access
+
+Restricting Permissions on Teams
+
+Share Admin Permissions
+
+Linking a PAM User to a Resource
+
+SSH Access to a machine without the key
+
+Time-limited Access
+
+Removing access
+
+Rotate password upon expiration
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCTid6ZraCYRFA0ZppXsp%252FScreenshot%25202025-02-22%2520at%25206.49.59%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D72c05446-21cc-41d5-9afb-b9e82be1de2e&width=768&dpr=4&quality=100&sign=b6a77551&sv=2)
-
-Set Alert for Gateway Offline
-
-Event alert details will include the name and UID of the affected Keeper
-gateway.
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fo3JZ3XsfotkypZRWXhGD%252FSharing%2520and%2520Access%2520Control.jpg%3Falt%3Dmedia%26token%3D09307a13-81b1-4c0b-b353-2b9704a1f7bf&width=768&dpr=4&quality=100&sign=63ddaeb&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3dh5GtgJnyDtzJ0hjTfS%252FScreenshot%25202025-02-22%2520at%25206.47.09%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db298b1d3-c69a-40b8-b14a-2ac845ac79a5&width=768&dpr=4&quality=100&sign=65e20a70&sv=2)
-
-Gateway Offline Alert
-
-Email alerts contain event information
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FQpOPl4BgG78R5Dlly69T%252FScreenshot%25202025-05-26%2520at%25201.48.25%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D1516f192-a005-4bc3-8b44-d9dae4e7db80&width=768&dpr=4&quality=100&sign=c700a7de&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJI6cxiJgIuhgFKkkKuYV%252FScreenshot%25202025-02-23%2520at%25207.43.17%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dccf0ad22-a732-430a-b206-5b7d36df3cb6&width=768&dpr=4&quality=100&sign=e80cc5c5&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRWbdYOqnrytlLo8KIVrc%252FScreenshot%25202024-12-29%2520at%25209.32.58%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D23bb2a5e-c32b-48c0-aa91-1475713c48ef&width=768&dpr=4&quality=100&sign=6c9f236e&sv=2)
 
-Email Alert for Gateway Offline
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fp3lGAjckjMuLTOr8ks7x%252FScreenshot%25202024-12-29%2520at%25209.31.41%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D4b396f38-e43e-44b5-9315-d01c773c8a3b&width=768&dpr=4&quality=100&sign=1af68525&sv=2)
 
-[Keeper Commander](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#audit-report-command)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FdmgPLpJqmqpbpmQqdVPl%252FScreenshot%25202024-12-29%2520at%25209.40.58%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D3ec9a8f6-63c8-46fc-867d-6455b84b1af1&width=768&dpr=4&quality=100&sign=7b55da63&sv=2)
 
-[Reporting, Alerts & SIEM integration](https://docs.keeper.io/en/enterprise-
-guide/event-reporting)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLUTiz0SYEVSdb9HSUHL1%252FScreenshot%25202024-12-29%2520at%252010.59.17%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D9c931196-46fa-44c0-a8e6-de7739f248e4&width=768&dpr=4&quality=100&sign=d88841ef&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FAQznDwDEokpAkogOXP4I%252FScreenshot%25202024-12-29%2520at%252011.04.23%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dc5d44aba-8c6e-40ac-8a29-a9fac70b5d6b&width=768&dpr=4&quality=100&sign=e1d5c650&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FrSJkj42udq93p4WQ8f0k%252FScreenshot%25202024-12-29%2520at%252012.04.07%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dab5e8ec8-968b-408d-93b3-4f560ceff388&width=768&dpr=4&quality=100&sign=9479cce0&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4bUd1cwiF0FmzZs2JavY%252FScreenshot%25202024-12-29%2520at%252011.08.57%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D1e4e8967-d44e-41c1-aeed-54252ac8a34f&width=768&dpr=4&quality=100&sign=6ed67638&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHjTtsmcWnXmBrSmYOJvx%252FScreenshot%25202024-12-29%2520at%252012.11.25%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db7958c97-3f7b-4aff-8f4b-510bde522001&width=768&dpr=4&quality=100&sign=4464e6df&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FxVKiADDvqF1xKkxhT19g%252FScreenshot%25202024-12-29%2520at%252012.10.45%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D2e4833e7-9d5e-4bec-b9c7-e073003d2a5b&width=768&dpr=4&quality=100&sign=66cce91c&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FyLIuHEMw6981YYXBB3BE%252FScreenshot%25202024-12-29%2520at%252012.18.03%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D2beee8fc-3b2a-4f9e-b50d-1cdf32bcb2ef&width=768&dpr=4&quality=100&sign=8ffdb783&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fw4x2k7YmPF0GIRSmbSCM%252FScreenshot%25202024-12-29%2520at%25208.16.03%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D71092ba4-9100-40aa-9707-4e60acf58e6e&width=768&dpr=4&quality=100&sign=6ee33659&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fr21NeuvUzV2M098yCdkS%252FScreenshot%25202024-12-29%2520at%25207.46.01%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Da1d04f7b-ee47-43c8-9883-5c6ff9f06f37&width=768&dpr=4&quality=100&sign=4666f2e7&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FKFtduQm5AbJCmSTCSdnh%252FScreenshot%25202024-12-29%2520at%252012.20.32%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dc872bbdf-f5cb-49b4-885d-f447bb0b4dfd&width=768&dpr=4&quality=100&sign=7efdc13e&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F0dgFjJlkmF8LsMC5klC8%252FScreenshot%25202024-12-29%2520at%252012.41.56%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Da4a57303-b642-402b-8120-9894d3ca1295&width=768&dpr=4&quality=100&sign=a6b733e9&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FM8MOOP4ezDWek1ARFCT9%252FScreenshot%25202024-12-29%2520at%252012.57.15%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D7d5387df-d443-4fbd-8f35-f45c277bd5c6&width=768&dpr=4&quality=100&sign=43584524&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FvpMHYlc5dYECZ6ZOUJzs%252FScreenshot%25202024-12-29%2520at%25205.34.43%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dc1984a44-96b0-4d8e-9c55-a2792317cf00&width=768&dpr=4&quality=100&sign=bb2497e8&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FP5lDpHHLKKd5HVvFIsZ5%252FScreenshot%25202024-12-29%2520at%25207.46.12%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D61132bac-
+ded6-444f-8384-af8636715957&width=768&dpr=4&quality=100&sign=57657606&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGloxaBWrEbb1dLDBPn3i%252FScreenshot%25202024-12-29%2520at%25208.21.39%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D78e55651-9464-476c-ad32-3b10a64242d2&width=768&dpr=4&quality=100&sign=97da3cfd&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTDSctq3jorBX8Z92AdRW%252FScreenshot%25202024-12-29%2520at%25208.23.51%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3De3632323-d302-4a68-8fd1-e884de3fa928&width=768&dpr=4&quality=100&sign=212d246c&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FhAKz204kkaYBMcjGqB7D%252FScreenshot%25202025-01-30%2520at%252010.11.31%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dfd8439d7-d9bb-436b-a233-fc9f8110831c&width=768&dpr=4&quality=100&sign=472955b2&sv=2)
 

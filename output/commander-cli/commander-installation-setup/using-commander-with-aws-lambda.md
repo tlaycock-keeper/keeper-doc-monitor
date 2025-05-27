@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -596,6 +597,12 @@ Copy
     rm -rf $LIB_DIR
     rm -rf $VENV
     
+
+[2KBpackage_layer_content.sh](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
+x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FgxJz7bvtfe4hTfuTA0cc%2Fpackage_layer_content.sh?alt=media&token=f624bf70-327c-4b10-9f18-a1f1ae06ecc1)
+
+Bash script for packaging `keepercommander` Lambda Layer content
 
 To use the script provided above, perform the following steps after
 downloading the file:
@@ -1020,6 +1027,9 @@ installation-setup)
 
 [Command Reference](/en/keeperpam/commander-cli/command-reference)
 
+[ config file documentation ](/en/keeperpam/commander-cli/commander-
+installation-setup/logging-in#commander-configuration-file)
+
 [Invoking Lambda functions - AWS LambdaAWS
 Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
 
@@ -1033,16 +1043,7 @@ email-ses/)
 Security/CommanderGitHub](https://github.com/Keeper-
 Security/Commander/tree/master/examples)
 
-[ config file documentation ](/en/keeperpam/commander-cli/commander-
-installation-setup/logging-in#commander-configuration-file)
-
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
-
-[2KBpackage_layer_content.sh](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FgxJz7bvtfe4hTfuTA0cc%2Fpackage_layer_content.sh?alt=media&token=f624bf70-327c-4b10-9f18-a1f1ae06ecc1)
-
-Bash script for packaging `keepercommander` Lambda Layer content
 
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fa0.awsstatic.com%2Flibra-
 css%2Fimages%2Fsite%2Ftouch-icon-

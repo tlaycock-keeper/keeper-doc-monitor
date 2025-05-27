@@ -71,7 +71,7 @@ KeeperPAM and Secrets Manager
         * [PAM Remote Browser](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-remote-browser)
         * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
-      * [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/sharing-and-access-control)
+      * [Access Controls](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
       * [Just-In-Time Access (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-access-jit)
 
     * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
@@ -293,6 +293,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
+      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -452,7 +453,7 @@ Graphical and Text Based Session Recordings
 browser-isolation/setting-up-rbi/browser-autofill)[NextSSH
 Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
 
-Last updated 4 days ago
+Last updated 5 days ago
 
 Was this helpful?
 
@@ -686,9 +687,23 @@ enforcement policies need to be turned on:
 
 For more information on PAM enforcement policies, visit this .
 
+Enforcement Policies to configure session recording
+
 To enable session recordings, the  needs to permit graphical and text session
 recording. Go to Secrets Manager > PAM Configurations and edit the
 configuration associated with your resources.
+
+Allow Session Recording from PAM Configuration
+
+Edit PAM Settings
+
+Edit Session Recording Features
+
+View Session Recordings
+
+Session Recording History
+
+View Session Recording
 
 When  is activated on a resource, Keeper provides additional searching and
 analysis of the session activity.
@@ -708,20 +723,6 @@ started/pam-configuration)
 
 [**Remote Browser Isolation (RBI)**](/en/keeperpam/privileged-access-
 manager/remote-browser-isolation)
-
-Enforcement Policies to configure session recording
-
-Allow Session Recording from PAM Configuration
-
-Edit PAM Settings
-
-Edit Session Recording Features
-
-View Session Recordings
-
-Session Recording History
-
-View Session Recording
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
