@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en)
 
 Ask or search...
 
@@ -79,6 +79,21 @@ KeeperPAM and Secrets Manager
       * [Rotation Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview)
       * [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
 
+        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
+
+          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
+          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
+          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
+          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
+          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
+
+            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
+            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
+            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
+            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
+            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
+            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
+
         * [Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure)
 
           * [Azure AD Users](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-ad-users)
@@ -106,31 +121,14 @@ KeeperPAM and Secrets Manager
             * [AWS RDS for MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mariadb)
             * [AWS RDS for Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-oracle)
 
-        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
-
-          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
-          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
-          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
-          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
-          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
-
-            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
-            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
-            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
-            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
-            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
-            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
-
-        * [SaaS Accounts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
+        * [SaaS Rotation Plugins](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-rotation-plugins)
+        * [Custom Scripts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
 
           * [Okta User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/okta-user)
           * [Snowflake User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/snowflake-user)
           * [Rotate Credential via REST API](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/rotate-credential-via-rest-api)
-
-        * [Network Devices](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices)
-
-          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-ios-xe)
-          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-meraki)
+          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-ios-xe)
+          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-meraki)
 
       * [Service Management](/en/keeperpam/privileged-access-manager/password-rotation/service-management)
       * [Post-Rotation Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts)
@@ -200,6 +198,7 @@ KeeperPAM and Secrets Manager
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
       * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
+      * [Vendor Privileged Access Management](/en/keeperpam/privileged-access-manager/references/vendor-privileged-access-management)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -293,7 +292,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
+      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -395,6 +394,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Features
@@ -427,36 +456,6 @@ Last updated 6 months ago
 
 Was this helpful?
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 Features
@@ -467,9 +466,6 @@ Features
 
   * Get files from the Keeper vault
 
-For a complete list of Keeper Secrets Manager features see the [Overview
-](/en/keeperpam/secrets-manager/overview)
-
 ##
 
 Prerequisites
@@ -477,15 +473,11 @@ Prerequisites
 This page documents the Secrets Manager Jenkins integration. In order to
 utilize this integration, you will need:
 
-  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
-
-    * Secrets Manager add-on enabled for your Keeper account
+  *     * Secrets Manager add-on enabled for your Keeper account
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  * A Keeper [Secrets Manager Application](/en/keeperpam/secrets-manager/about/terminology#application) with secrets shared to it 
-
-    *   * [A One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
+  *     *   * 
 
 The plugin uses **SecureRandom** which can be slow on certain systems due too
 low entropy. On Linux, executing `cat /proc/sys/kernel/random/entropy_avail`
@@ -520,16 +512,9 @@ Plugins->Installed**click the **Uninstall** button. It will not show up on the
 
 Source Code
 
-Find the Keeper Secrets Manager Jenkins Plugin source code in the [GitHub
-repository](https://github.com/jenkinsci/keeper-secrets-manager-plugin)
-
 ##
 
 Create a Secrets Manager Client
-
-If you haven't done so already, follow the [Quick Start
-Guide](/en/keeperpam/secrets-manager/quick-start-guide) and create a Secrets
-Manager application and Client Device specifically for Jenkins usage.
 
 Using Keeper Commander, generate a Client Device for Jenkins. Make note of the
 One Time Access Token.
@@ -695,12 +680,6 @@ Copy
       }
     }
 
-The Keeper Secrets Manager snippet can be created using the **Pipeline
-Syntax** [snipper editor](https://www.jenkins.io/doc/book/pipeline/getting-
-started/#snippet-generator) inside of Jenkins. Select **withKsm** from the
-**Sample Step** dropdown, then add a Keeper Secrets Manager Application, which
-will allow you to select the credentials and add secrets.
-
 When you are finished setting up your application, credentials, and secrets,
 you can click the **Generate Pipeline Script** to generate the **withKsm**
 block. This snippet can then be added to your Jenkinsfile.
@@ -709,13 +688,49 @@ The environmental variables containing the secrets are only accessible within
 the **withKsm** block where they are defined. Once you exit the block, the
 secrets are not accessible.
 
+For a complete list of Keeper Secrets Manager features see the
+
+Keeper Secrets Manager access (See the  for more details)
+
+A Keeper  with secrets shared to it
+
 See the  for instructions on creating an Application
+
+Find the Keeper Secrets Manager Jenkins Plugin source code in the
+
+If you haven't done so already, follow the  and create a Secrets Manager
+application and Client Device specifically for Jenkins usage.
 
 For more information on creating Secrets Manager Applications and Clients, see
 the  documentation.
 
+The Keeper Secrets Manager snippet can be created using the **Pipeline
+Syntax** inside of Jenkins. Select **withKsm** from the **Sample Step**
+dropdown, then add a Keeper Secrets Manager Application, which will allow you
+to select the credentials and add secrets.
+
+[Overview ](/en/keeperpam/secrets-manager/overview)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+[A One Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
+
+[GitHub repository](https://github.com/jenkinsci/keeper-secrets-manager-
+plugin)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+[snipper editor](https://www.jenkins.io/doc/book/pipeline/getting-
+started/#snippet-generator)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
+
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
+
+[Secrets Manager Commands](/en/keeperpam/commander-cli/command-
+reference/secrets-manager-commands#overview)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -736,15 +751,12 @@ files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkOBmofZ4fb5Gz02mFQ%252F-MkODWu
 ze1%252FScreen%2520Shot%25202021-09-24%2520at%25202.13.24%2520PM.png%3Falt%3Dmedia%26token%3D036d3485-e1a0-464f-975e-c2e88fba0a17&width=768&dpr=4&quality=100&sign=79745923&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fa4n3YHq8mVkQcwSTgJeu%252FScreen%2520Shot%25202021-11-17%2520at%25209.45.40%2520AM.png%3Falt%3Dmedia%26token%3D8e3d298f-6b83-492a-8998-bebdebfe535f&width=768&dpr=4&quality=100&sign=517cdd1c&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkEQ5PBLojjvL1P8vo5%252F-MkEQP2hhyxKSU0SVFoL%252Fjenkins-
 plugin-
 header.jpg%3Falt%3Dmedia%26token%3D7f925417-5968-47b7-a39c-883ef7fbc555&width=768&dpr=4&quality=100&sign=95b5cb1c&sv=2)
 
-[Secrets Manager Commands](/en/keeperpam/commander-cli/command-
-reference/secrets-manager-commands#overview)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fa4n3YHq8mVkQcwSTgJeu%252FScreen%2520Shot%25202021-11-17%2520at%25209.45.40%2520AM.png%3Falt%3Dmedia%26token%3D8e3d298f-6b83-492a-8998-bebdebfe535f&width=768&dpr=4&quality=100&sign=517cdd1c&sv=2)
 

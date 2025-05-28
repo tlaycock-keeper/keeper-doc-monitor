@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en)
 
 Ask or search...
 
@@ -79,6 +79,21 @@ KeeperPAM and Secrets Manager
       * [Rotation Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview)
       * [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
 
+        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
+
+          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
+          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
+          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
+          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
+          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
+
+            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
+            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
+            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
+            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
+            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
+            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
+
         * [Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure)
 
           * [Azure AD Users](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-ad-users)
@@ -106,31 +121,14 @@ KeeperPAM and Secrets Manager
             * [AWS RDS for MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mariadb)
             * [AWS RDS for Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-oracle)
 
-        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
-
-          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
-          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
-          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
-          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
-          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
-
-            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
-            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
-            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
-            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
-            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
-            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
-
-        * [SaaS Accounts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
+        * [SaaS Rotation Plugins](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-rotation-plugins)
+        * [Custom Scripts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
 
           * [Okta User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/okta-user)
           * [Snowflake User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/snowflake-user)
           * [Rotate Credential via REST API](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/rotate-credential-via-rest-api)
-
-        * [Network Devices](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices)
-
-          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-ios-xe)
-          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-meraki)
+          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-ios-xe)
+          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-meraki)
 
       * [Service Management](/en/keeperpam/privileged-access-manager/password-rotation/service-management)
       * [Post-Rotation Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts)
@@ -200,6 +198,7 @@ KeeperPAM and Secrets Manager
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
       * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
+      * [Vendor Privileged Access Management](/en/keeperpam/privileged-access-manager/references/vendor-privileged-access-management)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -293,7 +292,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
+      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -395,30 +394,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Setup Steps
-  * Notes
-  * Feedback 
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=PR2hkE7TmA365mTVpHE3&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# Setup Steps
-
-Accessing the KeeperPAM platform
-
-[PreviousKeeperPAM](/en/keeperpam)[NextQuick Start:
-Sandbox](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
-
-Last updated 2 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -449,6 +424,30 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Setup Steps
+  * Notes
+  * Feedback 
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=PR2hkE7TmA365mTVpHE3&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Setup Steps
+
+Accessing the KeeperPAM platform
+
+[PreviousKeeperPAM](/en/keeperpam)[NextQuick Start:
+Sandbox](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 ##
 
 Setup Steps
@@ -460,11 +459,6 @@ Follow the below steps to start using KeeperPAM.
 ###
 
 Keeper Enterprise license
-
-If you are not a Keeper customer or do not have the required license, you can
-[start a free trial](https://www.keepersecurity.com/password-manager-free-
-trial-sign-up.html) from our website. The free trial includes KeeperPAM full
-capabilities.
 
 2
 
@@ -490,9 +484,7 @@ From the Admin Console, enable the corresponding PAM Enforcement Policies.
 
   * Go to **Enforcement Policies** and open the "**Privileged Access Manager** " section.
 
-  * Enable all the [PAM enforcement policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-policies) to use the new features.
-
-  * Assign yourself or your test user account to this role.
+  *   * Assign yourself or your test user account to this role.
 
 4
 
@@ -533,9 +525,7 @@ as your Docker Compose file.
 
 **Windows**
 
-  * Download the latest installer: [**64-bit Installer**](https://keepersecurity.com/pam/gateway/keeper-gateway_windows_x86_64.exe)
-
-  * You'll be asked to confirm uninstalling the previous Gateway, this is OK
+  *   * You'll be asked to confirm uninstalling the previous Gateway, this is OK
 
   * Ensure the "Enter one-time access token" selection is **NOT selected**
 
@@ -565,31 +555,13 @@ string from: `/etc/keeper-gateway/gateway-config.json` on Linux or
 
 New Customers: Create a new Gateway and Sandbox
 
-Follow the step by step guide in the [Getting
-Started](/en/keeperpam/privileged-access-manager/getting-started) section of
-this documentation. A new [Quick Start Wizard](/en/keeperpam/privileged-
-access-manager/quick-start-sandbox) is available to instantly create a sandbox
-for testing out a few of the connection types.
-
 6
 
 ###
 
 Explore new features
 
-  * [Quick Start Sandbox](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
-
-  * [Connections](/en/keeperpam/privileged-access-manager/connections)
-
-  * [Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
-
-  * [Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
-
-  * [Session Recording & Playback](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
-
-  * [SSH Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
-
-  * [Discovery](/en/keeperpam/privileged-access-manager/discovery)
+  *   *   *   *   *   *   * 
 
 ###
 
@@ -599,7 +571,7 @@ Notes
 
   * For a full range of features, use the Docker installation method, or Linux installation method on Rocky Linux or RHEL8.
 
-  * We recommend setting up a Keeper Gateway using the new [Quick Start Sandbox](/en/keeperpam/secrets-manager/quick-start-guide). This provides a customized Docker Compose file that provides an instant sandbox for testing.
+  * 
 
 ###
 
@@ -607,6 +579,53 @@ Feedback
 
 Please email us at **pam@keepersecurity.com** with your feedback and we'll
 quickly assist you with any questions.
+
+If you are not a Keeper customer or do not have the required license, you can
+from our website. The free trial includes KeeperPAM full capabilities.
+
+Enable all the  to use the new features.
+
+Download the latest installer:
+
+Follow the step by step guide in the  section of this documentation. A new  is
+available to instantly create a sandbox for testing out a few of the
+connection types.
+
+We recommend setting up a Keeper Gateway using the new . This provides a
+customized Docker Compose file that provides an instant sandbox for testing.
+
+[start a free trial](https://www.keepersecurity.com/password-manager-free-
+trial-sign-up.html)
+
+[PAM enforcement policies](/en/keeperpam/privileged-access-manager/getting-
+started/enforcement-policies)
+
+[**64-bit Installer**](https://keepersecurity.com/pam/gateway/keeper-
+gateway_windows_x86_64.exe)
+
+[Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+[Quick Start Wizard](/en/keeperpam/privileged-access-manager/quick-start-
+sandbox)
+
+[Quick Start Sandbox](/en/keeperpam/privileged-access-manager/quick-start-
+sandbox)
+
+[Connections](/en/keeperpam/privileged-access-manager/connections)
+
+[Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
+
+[Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-
+browser-isolation)
+
+[Session Recording & Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
+
+[SSH Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
+
+[Discovery](/en/keeperpam/privileged-access-manager/discovery)
+
+[Quick Start Sandbox](/en/keeperpam/secrets-manager/quick-start-guide)
 
 [15KBdocker-
 seccomp.json](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-

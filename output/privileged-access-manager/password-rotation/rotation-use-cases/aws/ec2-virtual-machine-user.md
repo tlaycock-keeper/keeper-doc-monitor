@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en)
 
 Ask or search...
 
@@ -79,6 +79,21 @@ KeeperPAM and Secrets Manager
       * [Rotation Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview)
       * [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
 
+        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
+
+          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
+          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
+          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
+          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
+          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
+
+            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
+            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
+            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
+            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
+            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
+            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
+
         * [Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure)
 
           * [Azure AD Users](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-ad-users)
@@ -106,31 +121,14 @@ KeeperPAM and Secrets Manager
             * [AWS RDS for MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mariadb)
             * [AWS RDS for Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-oracle)
 
-        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
-
-          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
-          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
-          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
-          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
-          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
-
-            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
-            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
-            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
-            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
-            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
-            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
-
-        * [SaaS Accounts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
+        * [SaaS Rotation Plugins](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-rotation-plugins)
+        * [Custom Scripts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
 
           * [Okta User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/okta-user)
           * [Snowflake User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/snowflake-user)
           * [Rotate Credential via REST API](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/rotate-credential-via-rest-api)
-
-        * [Network Devices](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices)
-
-          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-ios-xe)
-          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-meraki)
+          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-ios-xe)
+          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-meraki)
 
       * [Service Management](/en/keeperpam/privileged-access-manager/password-rotation/service-management)
       * [Post-Rotation Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts)
@@ -200,6 +198,7 @@ KeeperPAM and Secrets Manager
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
       * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
+      * [Vendor Privileged Access Management](/en/keeperpam/privileged-access-manager/references/vendor-privileged-access-management)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -293,7 +292,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
+      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -472,7 +471,11 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   *   *   * 
+  *   *   * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+
+  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is able to [communicate via SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh) or [WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm) with your target AWS Virtual Machine(s).
+
+  * Your AWS environment is [configured](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup) per our documentation
 
 ##
 
@@ -543,7 +546,11 @@ for this environment.
 
 Make sure the following items are completed:
 
-  *   *   * PAM Machine records have been created for each target machine
+  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+
+  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is provisioned in the Keeper Secrets Manager application you created.
+
+  * PAM Machine records have been created for each target machine
 
 If you are creating a new PAM Configuration, login to the Keeper Vault and
 select "Secrets Manager", then select the "PAM Configurations" tab, and click
@@ -587,6 +594,10 @@ Set this field to `USE_INSTANCE_ROLE` if you are using EC2 role policy
 
 Set this field to `USE_INSTANCE_ROLE` if you are using EC2 role policy
 (default). Otherwise use a specific Secret Access Key.
+
+For more details on all the configurable fields in the PAM Configuration
+record, visit this [page](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration).
 
 ##
 
@@ -643,70 +654,6 @@ rotation for that record.
 Keeper Secrets Manager is enabled for your
 
 Keeper Rotation is enabled for your
-
-A Keeper Secrets Manager  has been created
-
-A Keeper Rotation  is already installed, running, and is able to  or  with
-your target AWS Virtual Machine(s).
-
-Your AWS environment is  per our documentation
-
-PAM Machine record
-
-A Keeper Secrets Manager  has been created
-
-A Keeper Rotation  is already installed, running, and is provisioned in the
-Keeper Secrets Manager application you created.
-
-For more details on all the configurable fields in the PAM Configuration
-record, visit this .
-
-PAM Configuration for AWS
-
-Linux PAM User record
-
-Password Rotation Settings on AWS Instance User
-
-[application](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
-
-[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-[communicate via SSH](/en/keeperpam/privileged-access-
-manager/references/setting-up-ssh)
-
-[WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
-
-[configured](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/aws-environment-setup)
-
-[application](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
-
-[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F0Y2y9l0gTfNdoE3FA4YV%252FEC2%2520Virtual%2520Machine%2520User.jpg%3Falt%3Dmedia%26token%3D78a5e94c-1223-4849-9b63-90bf78b952a2&width=768&dpr=4&quality=100&sign=8b34b487&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHV1tsZY8VyyuTJV23jAa%252FScreenshot%25202025-02-08%2520at%252012.08.32%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D511de53e-9868-4185-915c-8b61f6282e5d&width=768&dpr=4&quality=100&sign=ba6d9f0b&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F73xYUEcQoMEflLLtu70W%252FScreenshot%25202025-02-08%2520at%252012.10.29%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3De2ff5fdd-2db2-4474-9e33-569a8923bd02&width=768&dpr=4&quality=100&sign=f1e3a71f&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuDPuGpWsVg5WOw5WEFwe%252FScreenshot%25202025-02-08%2520at%25204.08.08%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D3e1c1d5b-e559-4cef-9095-12215dfa40fb&width=768&dpr=4&quality=100&sign=64aee45b&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2OqJSlntStvwCncNSgyK%252FScreenshot%25202023-05-11%2520at%252010.56.07%2520AM.jpg%3Falt%3Dmedia%26token%3Df96c49e7-b923-46d1-97c0-4554e80adf32&width=768&dpr=4&quality=100&sign=349b3e89&sv=2)
 
 [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 overview#enabling-rotation-on-the-admin-console)
@@ -770,4 +717,32 @@ exists. If the value is FALSE, the private key will not be rotated.
 
 For Linux user rotations, password-encrypted PEM files are not currently
 supported.
+
+PAM Machine record
+
+PAM Configuration for AWS
+
+Linux PAM User record
+
+Password Rotation Settings on AWS Instance User
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F0Y2y9l0gTfNdoE3FA4YV%252FEC2%2520Virtual%2520Machine%2520User.jpg%3Falt%3Dmedia%26token%3D78a5e94c-1223-4849-9b63-90bf78b952a2&width=768&dpr=4&quality=100&sign=8b34b487&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHV1tsZY8VyyuTJV23jAa%252FScreenshot%25202025-02-08%2520at%252012.08.32%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D511de53e-9868-4185-915c-8b61f6282e5d&width=768&dpr=4&quality=100&sign=ba6d9f0b&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F73xYUEcQoMEflLLtu70W%252FScreenshot%25202025-02-08%2520at%252012.10.29%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3De2ff5fdd-2db2-4474-9e33-569a8923bd02&width=768&dpr=4&quality=100&sign=f1e3a71f&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuDPuGpWsVg5WOw5WEFwe%252FScreenshot%25202025-02-08%2520at%25204.08.08%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D3e1c1d5b-e559-4cef-9095-12215dfa40fb&width=768&dpr=4&quality=100&sign=64aee45b&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2OqJSlntStvwCncNSgyK%252FScreenshot%25202023-05-11%2520at%252010.56.07%2520AM.jpg%3Falt%3Dmedia%26token%3Df96c49e7-b923-46d1-97c0-4554e80adf32&width=768&dpr=4&quality=100&sign=349b3e89&sv=2)
 

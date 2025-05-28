@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en)
 
 Ask or search...
 
@@ -79,6 +79,21 @@ KeeperPAM and Secrets Manager
       * [Rotation Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview)
       * [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
 
+        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
+
+          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
+          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
+          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
+          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
+          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
+
+            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
+            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
+            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
+            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
+            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
+            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
+
         * [Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure)
 
           * [Azure AD Users](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-ad-users)
@@ -106,31 +121,14 @@ KeeperPAM and Secrets Manager
             * [AWS RDS for MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mariadb)
             * [AWS RDS for Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-oracle)
 
-        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
-
-          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
-          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
-          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
-          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
-          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
-
-            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
-            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
-            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
-            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
-            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
-            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
-
-        * [SaaS Accounts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
+        * [SaaS Rotation Plugins](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-rotation-plugins)
+        * [Custom Scripts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
 
           * [Okta User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/okta-user)
           * [Snowflake User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/snowflake-user)
           * [Rotate Credential via REST API](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/rotate-credential-via-rest-api)
-
-        * [Network Devices](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices)
-
-          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-ios-xe)
-          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-meraki)
+          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-ios-xe)
+          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-meraki)
 
       * [Service Management](/en/keeperpam/privileged-access-manager/password-rotation/service-management)
       * [Post-Rotation Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts)
@@ -200,6 +198,7 @@ KeeperPAM and Secrets Manager
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
       * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
+      * [Vendor Privileged Access Management](/en/keeperpam/privileged-access-manager/references/vendor-privileged-access-management)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -293,7 +292,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
+      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -432,19 +431,6 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=Zu7jJt6qM6i7YInl8ObP&only=yes&limit=100)
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
-
-# CSV Import
-
-Automatic migration of passwords from a CSV file
-
-[PreviousProton Pass Import](/en/keeperpam/commander-cli/command-
-reference/import-and-export-commands/proton-pass-import)[NextJSON
-Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands/json-import)
-
 Last updated 6 months ago
 
 Was this helpful?
@@ -461,13 +447,31 @@ Use this order of fields shown below with commas separating each value (and no
 spaces around the commas). Not all fields are required; some can be left
 blank.
 
-myimport.csv
+Custom fields begin with the name in the 8th field, (column H). The custom
+field value goes in the next field (column I).
 
-Copy
+  * To specify subfolders, use backslash "\" between folder names
 
-    
-    
-    Folder,Title,Login,Password,Website Address,Notes,Shared Folder,Custom Field1 Name,Custom Field1 Value,Custom Field2 Name,Custom Field2 Value
+  * To set shared folder permission on the record, use the #edit or #reshare tags as seen below
+
+  * Enclose fields in quotes for multi-line or special characters
+
+  * Ensure files are UTF-8 encoded for support of international or double-byte characters
+
+Below is an example csv file that showcases several import features including
+personal folders, shared folders, subfolders, special characters and multi-
+line fields.
+
+To import this file as "login" records:
+
+The resulting vault will look like this:
+
+Here is a list of some record types (you may have more if you have custom
+record types, or less if you are restricting some record types):
+
+Below is a list of all possible field types (including custom fields). **You
+can use these as a custom field names such as**`**$oneTimeCode**`**as shown
+below.**
 
 Position
 
@@ -476,6 +480,47 @@ Column
 Value
 
 Description / Format
+
+Folder
+
+Title
+
+Login
+
+Password
+
+Website Address
+
+Notes
+
+Shared Folder
+
+Custom Field1 Name
+
+Custom Field1 Value
+
+Custom Field2 Name
+
+Custom Field2 Value
+
+Custom Field3 Name
+
+Custom Field3 Value
+
+Custom Field4 Name
+
+Custom Field4 Value
+
+More advanced import options are available using the  format described in the
+next section.
+
+myimport.csv
+
+Copy
+
+    
+    
+    Folder,Title,Login,Password,Website Address,Notes,Shared Folder,Custom Field1 Name,Custom Field1 Value,Custom Field2 Name,Custom Field2 Value
 
 1
 
@@ -565,21 +610,6 @@ Custom Field 2 Value
 
 login
 
-Custom fields begin with the name in the 8th field, (column H). The custom
-field value goes in the next field (column I).
-
-  * To specify subfolders, use backslash "\" between folder names
-
-  * To set shared folder permission on the record, use the #edit or #reshare tags as seen below
-
-  * Enclose fields in quotes for multi-line or special characters
-
-  * Ensure files are UTF-8 encoded for support of international or double-byte characters
-
-Below is an example csv file that showcases several import features including
-personal folders, shared folders, subfolders, special characters and multi-
-line fields.
-
 Copy
 
     
@@ -591,52 +621,27 @@ Copy
     Account Number 449128
     This is multi-line",Shared Accounts#edit#reshare,2FA Phone Number,+19165551212
 
-To import this file as "login" records:
-
 Copy
 
     
     
     keeper import --format=csv --login-type test.csv
 
-The resulting vault will look like this:
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
 
-Here is a list of some record types (you may have more if you have custom
-record types, or less if you are restricting some record types):
+# CSV Import
 
-Below is a list of all possible field types (including custom fields). **You
-can use these as a custom field names such as**`**$oneTimeCode**`**as shown
-below.**
+Automatic migration of passwords from a CSV file
 
-Folder
+[PreviousProton Pass Import](/en/keeperpam/commander-cli/command-
+reference/import-and-export-commands/proton-pass-import)[NextJSON
+Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands/json-import)
 
-Title
-
-Login
-
-Password
-
-Website Address
-
-Notes
-
-Shared Folder
-
-Custom Field1 Name
-
-Custom Field1 Value
-
-Custom Field2 Name
-
-Custom Field2 Value
-
-Custom Field3 Name
-
-Custom Field3 Value
-
-Custom Field4 Name
-
-Custom Field4 Value
+[JSON Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands/json-import)
 
 Folder1\subfolder
 
@@ -664,18 +669,16 @@ $host
 
 $url
 
+[www.google.com](http://www.google.com/)
+
+[www.example.com](http://www.example.com/)
+
 CSV Import Sample
 
 Record types can be listed as a custom field value when the custom field name
 is $type
 
 All Field Types that can be used as Custom Field Name $oneTimeCode
-
-More advanced import options are available using the  format described in the
-next section.
-
-[JSON Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands/json-import)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -694,8 +697,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqorAIVkSE
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFGSYxcuPALAx9F6enlfT%252FWindowsTerminal_myNZzFQtif.png%3Falt%3Dmedia%26token%3D309856f4-e8d8-48c5-858e-103e9d471c1f&width=768&dpr=4&quality=100&sign=e87d127b&sv=2)
-
-[www.google.com](http://www.google.com/)
-
-[www.example.com](http://www.example.com/)
 

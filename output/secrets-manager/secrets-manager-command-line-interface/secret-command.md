@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en)
 
 Ask or search...
 
@@ -79,6 +79,21 @@ KeeperPAM and Secrets Manager
       * [Rotation Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview)
       * [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
 
+        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
+
+          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
+          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
+          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
+          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
+          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
+
+            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
+            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
+            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
+            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
+            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
+            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
+
         * [Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure)
 
           * [Azure AD Users](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-ad-users)
@@ -106,31 +121,14 @@ KeeperPAM and Secrets Manager
             * [AWS RDS for MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mariadb)
             * [AWS RDS for Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-oracle)
 
-        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
-
-          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
-          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
-          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
-          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
-          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
-
-            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
-            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
-            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
-            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
-            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
-            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
-
-        * [SaaS Accounts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
+        * [SaaS Rotation Plugins](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-rotation-plugins)
+        * [Custom Scripts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
 
           * [Okta User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/okta-user)
           * [Snowflake User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/snowflake-user)
           * [Rotate Credential via REST API](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/rotate-credential-via-rest-api)
-
-        * [Network Devices](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices)
-
-          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-ios-xe)
-          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-meraki)
+          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-ios-xe)
+          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-meraki)
 
       * [Service Management](/en/keeperpam/privileged-access-manager/password-rotation/service-management)
       * [Post-Rotation Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts)
@@ -200,6 +198,7 @@ KeeperPAM and Secrets Manager
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
       * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
+      * [Vendor Privileged Access Management](/en/keeperpam/privileged-access-manager/references/vendor-privileged-access-management)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -293,7 +292,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
+      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -394,6 +393,36 @@ KeeperPAM and Secrets Manager
 
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 On this page
 
@@ -510,11 +539,6 @@ optional parameters:
 
   * `-v, --show-value` print matching value instead of the record title when using JSON Path query.
 
-The **\--query** switch uses JSONPath, a query syntax based on
-XPath****[**https://tools.ietf.org/id/draft-goessner-dispatch-
-jsonpath-00.html**](https://tools.ietf.org/id/draft-goessner-dispatch-
-jsonpath-00.html)
-
 **Example 1:** Tabular format
 
 Copy
@@ -618,11 +642,6 @@ optional parameters:
 
 If your Record UID start with a dash ("-"), add "--" before to get the record
 `ksm secret get -- <RECORD UID> `
-
-The **\--query** switch uses JSONPath, a query syntax based on
-XPath****[**https://tools.ietf.org/id/draft-goessner-dispatch-
-jsonpath-00.html**](https://tools.ietf.org/id/draft-goessner-dispatch-
-jsonpath-00.html)
 
 **Example 1:** Returning a Secret to the console with tabular format
 
@@ -764,14 +783,6 @@ out. There may be additional text, which is in standard error.
 
 Editor
 
-The editor command will launch an editor application with a record with
-placeholder values. Replace the placeholder values or remove the value all
-together. The editor application can be set via [`ksm config
-editor`](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/config-command) or it will use the editor specified by the
-**EDITOR** environment variable. If the editor is not set, the CLI will
-attempt to find an installed editor.
-
 An editor with a UI can be set. For Windows and MacOS blocking may need to be
 enabled if the the editor instantly warns about placeholder still existing in
 the record template. This is because, without blocking, the CLI will attempt
@@ -780,12 +791,6 @@ to process the record before you are finished editing.
 On MacOS, blocking will wait until the application fully exits before
 processing the record data. This mean the application is closed and no longer
 in the dock, not that the editor window is closed.
-
-On Windows, blocking will wait until the process is no longer in the task
-list. If the application is launched via a .bat or .cmd file, the process name
-will be different from the application that was launch. To properly handle
-this use [`ksm config editor`](/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface/config-command) to set up the editor.
 
 If the editor doesn't block, and a message about template markers is shown,
 the file can be rechecked by entering **r**. This can be done when the edit of
@@ -1099,13 +1104,6 @@ Copy
 
 Update an existing field within an existing secret.
 
-Some field types are complex. This means the value contains arrays and/or
-dictionaries for the value. If you are using a field type that is complex, you
-will need to use the` --field-json` and `--custom-field-json` to set the
-values. The JSON structures can be found
-[here](https://docs.keeper.io/secrets-manager/commander-cli/using-
-commander/default-record-types).
-
 `ksm secret update --uid <RECORD UID>`
 
 Optional Parameters:
@@ -1371,10 +1369,6 @@ Copy
     $ ksm secret notation keeper://oxhtLx9qrQIzeSXBtvQj2Q/field/password
     H=cBcl(u6%Ouv]mXpkPU>u]C;P0>E%yrcML
 
-For more details about environmental variable substitution, see the [Exec
-Command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/exec-command).
-
 If your Record UID start with a dash ("-"), add "--" before the UID to get the
 field with notation `ksm secret notation -- <RECORD UID>/field/password`
 
@@ -1468,37 +1462,49 @@ Last updated 7 months ago
 
 Was this helpful?
 
-#### Company
+The **\--query** switch uses JSONPath, a query syntax based on XPath****
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+The **\--query** switch uses JSONPath, a query syntax based on XPath****
 
-#### Support
+The editor command will launch an editor application with a record with
+placeholder values. Replace the placeholder values or remove the value all
+together. The editor application can be set via  or it will use the editor
+specified by the **EDITOR** environment variable. If the editor is not set,
+the CLI will attempt to find an installed editor.
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+On Windows, blocking will wait until the process is no longer in the task
+list. If the application is launched via a .bat or .cmd file, the process name
+will be different from the application that was launch. To properly handle
+this use  to set up the editor.
 
-#### Solutions
+Some field types are complex. This means the value contains arrays and/or
+dictionaries for the value. If you are using a field type that is complex, you
+will need to use the` --field-json` and `--custom-field-json` to set the
+values. The JSON structures can be found .
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+For more details about environmental variable substitution, see the .
 
 See the  for more details
+
+[**https://tools.ietf.org/id/draft-goessner-dispatch-
+jsonpath-00.html**](https://tools.ietf.org/id/draft-goessner-dispatch-
+jsonpath-00.html)
+
+[**https://tools.ietf.org/id/draft-goessner-dispatch-
+jsonpath-00.html**](https://tools.ietf.org/id/draft-goessner-dispatch-
+jsonpath-00.html)
+
+[`ksm config editor`](/en/keeperpam/secrets-manager/secrets-manager-command-
+line-interface/config-command)
+
+[`ksm config editor`](/en/keeperpam/secrets-manager/secrets-manager-command-
+line-interface/config-command)
+
+[here](https://docs.keeper.io/secrets-manager/commander-cli/using-
+commander/default-record-types)
+
+[Exec Command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/exec-command)
 
 [Troubleshooting section](/en/keeperpam/secrets-
 manager/troubleshooting#record-uid-starts-with)

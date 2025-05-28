@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en)
 
 Ask or search...
 
@@ -79,6 +79,21 @@ KeeperPAM and Secrets Manager
       * [Rotation Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview)
       * [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
 
+        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
+
+          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
+          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
+          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
+          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
+          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
+
+            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
+            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
+            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
+            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
+            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
+            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
+
         * [Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure)
 
           * [Azure AD Users](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-ad-users)
@@ -106,31 +121,14 @@ KeeperPAM and Secrets Manager
             * [AWS RDS for MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mariadb)
             * [AWS RDS for Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-oracle)
 
-        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
-
-          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
-          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
-          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
-          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
-          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
-
-            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
-            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
-            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
-            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
-            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
-            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
-
-        * [SaaS Accounts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
+        * [SaaS Rotation Plugins](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-rotation-plugins)
+        * [Custom Scripts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
 
           * [Okta User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/okta-user)
           * [Snowflake User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/snowflake-user)
           * [Rotate Credential via REST API](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/rotate-credential-via-rest-api)
-
-        * [Network Devices](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices)
-
-          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-ios-xe)
-          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-meraki)
+          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-ios-xe)
+          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-meraki)
 
       * [Service Management](/en/keeperpam/privileged-access-manager/password-rotation/service-management)
       * [Post-Rotation Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts)
@@ -200,6 +198,7 @@ KeeperPAM and Secrets Manager
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
       * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
+      * [Vendor Privileged Access Management](/en/keeperpam/privileged-access-manager/references/vendor-privileged-access-management)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -293,7 +292,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
+      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -427,36 +426,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Linux Keyring Utility
-  * Interface
-  * Usage - Importing it into your codebase
-  * Example (get)
-  * Example (set)
-  * Usage - Binary Interface (CLI)
-  * Base64 encoding
-  * Errors
-  * No keyring
-  * No matching secret
-  * No D-Bus Session
-  * No D-Bus
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=IlQNYrLHQjYkgclmxW4C&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Linux Keyring
-
-Store and Retrieve Secrets from the Linux Keyring
-
-[PreviousKubernetes (alternative)](/en/keeperpam/secrets-
-manager/integrations/kubernetes)[NextMCP (Model Context
-Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-
-protocol)
 
 Last updated 6 months ago
 
@@ -503,29 +476,6 @@ first two accept and return `string` data.
 
 Example (get)
 
-Copy
-
-    
-    
-    package main
-    
-    import (
-        "os"
-        sc "github.com/Keeper-Security/linux-keyring-utility/pkg/secret_collection"
-    )
-    
-    func doit() {
-        if collection, err := sc.DefaultCollection(); err == nil {
-            if err := collection.Unlock(); err == nil {
-                if secret, err := collection.Get("myapp", "mysecret"); err == nil {
-                    print(string(secret))
-                    os.Exit(0)
-                }
-            }
-        }
-        os.Exit(1)
-    }
-
 The `.DefaultCollection()` returns whatever collection the _default_ _alias_
 refers to. It will generate an error if the _default_ alias is not set. It
 usually points to the _login_ keyring. Most Linux Keyring interfaces allow the
@@ -539,14 +489,6 @@ Example (set)
 
 Set takes the data as a parameter and only returns an error or `nil` on
 success. It does not restrict the content or length of the secret data.
-
-Copy
-
-    
-    
-    if err := collection.Set("myapp", "mysecret", "mysecretdata"); err == nil {
-        // success
-    }
 
 ##
 
@@ -585,6 +527,86 @@ will generate an error.
 
 Examples
 
+##
+
+Errors
+
+Error output goes to `stderr` so adding `2>/dev/null` to the end of a command
+will suppress it.
+
+###
+
+**No keyring**
+
+The login collection does not exist because the keyring does not exist. KDE
+may create _kdewallet_ instead of _login_ like GNOME.
+
+###
+
+**No matching secret**
+
+###
+
+**No D-Bus Session**
+
+There may not be a D-Bus Session to host the Secret Service. This happens when
+the user is not logged into the GUI.
+
+###
+
+**No D-Bus**
+
+The system may not host D-Bus. Several lightweight linux distributions ship
+without it by default.
+
+Keeper provides a utility, the Linux Keyring Utility, that interacts with the
+native Linux APIs to store and retrieve secrets from the Keyring using the .
+This utility can be used by any integration, plugin, or code base to store and
+retrieve credentials, secrets, and passwords in any Linux Keyring simply and
+natively.
+
+deploy the pre-built binary from the
+
+The Linux Keyring Utility gets and sets _secrets_ in a Linux  using the  .
+
+It has been tested with  and . It _should_ work with any implementation of the
+D-Bus Secrets Service.
+
+A secret may not be returned even though a secret with the same label exists.
+If the secret was not created with lkru, it may not have the same . Namely
+'Agent', 'Application', and 'Id'.
+
+Copy
+
+    
+    
+    package main
+    
+    import (
+        "os"
+        sc "github.com/Keeper-Security/linux-keyring-utility/pkg/secret_collection"
+    )
+    
+    func doit() {
+        if collection, err := sc.DefaultCollection(); err == nil {
+            if err := collection.Unlock(); err == nil {
+                if secret, err := collection.Get("myapp", "mysecret"); err == nil {
+                    print(string(secret))
+                    os.Exit(0)
+                }
+            }
+        }
+        os.Exit(1)
+    }
+
+Copy
+
+    
+    
+    if err := collection.Set("myapp", "mysecret", "mysecretdata"); err == nil {
+        // success
+    }
+
 Copy
 
     
@@ -609,29 +631,11 @@ Copy
     lkru get root_cred3
     ewogICJ1c2VybmFtZSI6ICJhZGFtIiwKICAicGFzc3dvcmQiOiAicGFzc3dvcmQxMjMuIgp9
 
-##
-
-Errors
-
-Error output goes to `stderr` so adding `2>/dev/null` to the end of a command
-will suppress it.
-
-###
-
-**No keyring**
-
-The login collection does not exist because the keyring does not exist. KDE
-may create _kdewallet_ instead of _login_ like GNOME.
-
 Copy
 
     
     
     Unable to get secret 'test_cred': Unable to retrieve secret 'test_cred' for application 'lkru' from collection '/org/freedesktop/secrets/collection/login': Object does not exist at path “/org/freedesktop/secrets/collection/login”
-
-###
-
-**No matching secret**
 
 Copy
 
@@ -639,25 +643,11 @@ Copy
     
     Unable to get secret 'test_cred': Unable to retrieve secret 'test_cred' for application 'lkru' from collection '/org/freedesktop/secrets/aliases/default': org.freedesktop.Secret.Collection.SearchItems returned nothing
 
-###
-
-**No D-Bus Session**
-
-There may not be a D-Bus Session to host the Secret Service. This happens when
-the user is not logged into the GUI.
-
 Copy
 
     
     
     Unable to get the default keyring: Unable to open a D-Bus session: The name org.freedesktop.secrets was not provided by any .service files
-
-###
-
-**No D-Bus**
-
-The system may not host D-Bus. Several lightweight linux distributions ship
-without it by default.
 
 Copy
 
@@ -665,22 +655,31 @@ Copy
     
     Unable to get the default keyring: Unable to connect to the D-Bus Session Bus: exec: "dbus-launch": executable file not found in $PATH
 
-Keeper provides a utility, the Linux Keyring Utility, that interacts with the
-native Linux APIs to store and retrieve secrets from the Keyring using the .
-This utility can be used by any integration, plugin, or code base to store and
-retrieve credentials, secrets, and passwords in any Linux Keyring simply and
-natively.
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
 
-deploy the pre-built binary from the
+# Linux Keyring
 
-The Linux Keyring Utility gets and sets _secrets_ in a Linux  using the  .
+Store and Retrieve Secrets from the Linux Keyring
 
-It has been tested with  and . It _should_ work with any implementation of the
-D-Bus Secrets Service.
+[PreviousKubernetes (alternative)](/en/keeperpam/secrets-
+manager/integrations/kubernetes)[NextModel Context Protocol (MCP) for AI
+Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-
+for-ai-agents)
 
-A secret may not be returned even though a secret with the same label exists.
-If the secret was not created with lkru, it may not have the same . Namely
-'Agent', 'Application', and 'Id'.
+  * Overview
+  * Linux Keyring Utility
+  * Interface
+  * Usage - Importing it into your codebase
+  * Example (get)
+  * Example (set)
+  * Usage - Binary Interface (CLI)
+  * Base64 encoding
+  * Errors
+  * No keyring
+  * No matching secret
+  * No D-Bus Session
+  * No D-Bus
 
 [Secret Service
 API](https://www.gnu.org/software/emacs/manual/html_node/auth/Secret-Service-
@@ -704,10 +703,6 @@ service/latest/)
 utility/blob/main/Keeper-Security/linux-keyring-
 utility/blob/main/pkg/dbus_secrets/dbus_secrets.go#L41)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FenXG3KtnCHKwizsBriY2%252Fkeeper%2520and%2520Linux%2520Keyring.jpg%3Falt%3Dmedia%26token%3D0ffa15d9-bd01-4e1b-9d7e-2374a6265670&width=768&dpr=4&quality=100&sign=72d9d879&sv=2)
-
 [GitHub - Keeper-Security/linux-keyring-utility: A utility for natively
 interacting with the Linux KeyringGitHub](https://github.com/Keeper-
 Security/linux-keyring-utility)
@@ -719,4 +714,8 @@ utility/releases)
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
 
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FenXG3KtnCHKwizsBriY2%252Fkeeper%2520and%2520Linux%2520Keyring.jpg%3Falt%3Dmedia%26token%3D0ffa15d9-bd01-4e1b-9d7e-2374a6265670&width=768&dpr=4&quality=100&sign=72d9d879&sv=2)
 

@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en)
 
 Ask or search...
 
@@ -79,6 +79,21 @@ KeeperPAM and Secrets Manager
       * [Rotation Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview)
       * [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
 
+        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
+
+          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
+          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
+          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
+          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
+          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
+
+            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
+            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
+            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
+            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
+            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
+            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
+
         * [Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure)
 
           * [Azure AD Users](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-ad-users)
@@ -106,31 +121,14 @@ KeeperPAM and Secrets Manager
             * [AWS RDS for MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mariadb)
             * [AWS RDS for Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-oracle)
 
-        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
-
-          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
-          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
-          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
-          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
-          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
-
-            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
-            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
-            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
-            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
-            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
-            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
-
-        * [SaaS Accounts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
+        * [SaaS Rotation Plugins](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-rotation-plugins)
+        * [Custom Scripts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
 
           * [Okta User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/okta-user)
           * [Snowflake User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/snowflake-user)
           * [Rotate Credential via REST API](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/rotate-credential-via-rest-api)
-
-        * [Network Devices](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices)
-
-          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-ios-xe)
-          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-meraki)
+          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-ios-xe)
+          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-meraki)
 
       * [Service Management](/en/keeperpam/privileged-access-manager/password-rotation/service-management)
       * [Post-Rotation Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts)
@@ -200,6 +198,7 @@ KeeperPAM and Secrets Manager
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
       * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
+      * [Vendor Privileged Access Management](/en/keeperpam/privileged-access-manager/references/vendor-privileged-access-management)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -293,7 +292,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
+      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -420,6 +419,174 @@ PDF](/en/keeperpam/~gitbook/pdf?page=64cMa7TYPLuBlBTe33Ho&only=yes&limit=100)
 
 Establish a connection to a Linux Machine directly from your Vault
 
+##
+
+Overview
+
+In this guide, you will learn how to configure a Linux Machine on your **PAM
+Machine** and configure the **SSH protocol** to successfully launch a zero-
+trust connection to the Linux Machine — directly from your Keeper Vault.
+
+###
+
+Summary
+
+For this setup, you need to do the following:
+
+  1. [Enable the Connection Enforcement Policies](/en/keeperpam/privileged-access-manager/connections/examples/ssh-protocol-linux-machine#step-1-enable-connection-enforcement-policies)
+
+  2. [Install and Configure the Keeper Gateway](/en/keeperpam/privileged-access-manager/connections/examples/ssh-protocol-linux-machine#step-2-install-and-configure-the-keeper-gateway)
+
+  3. [Create and configure the PAM Configuration File](/en/keeperpam/privileged-access-manager/connections/examples/ssh-protocol-linux-machine#step-3-configuring-the-pam-configuration)
+
+  4. [Create the PAM Machine and PAM User record types](/en/keeperpam/privileged-access-manager/connections/examples/ssh-protocol-linux-machine#step-4-create-and-configure-pam-machine-and-pam-user-s-records)
+
+  5. [Configure PAM Settings and the SSH Connection Protocol](/en/keeperpam/privileged-access-manager/connections/examples/ssh-protocol-linux-machine#step-5-configuring-pam-settings-and-ssh-protocol)
+
+After completing the above, you can launch zero-trust connections to the Linux
+Machine directly from your Keeper Vault.
+
+##
+
+Step 1 - Enable Connection Enforcement Policies
+
+From the Admin Console, enable the corresponding [PAM Enforcement
+Policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-
+policies) for connections:
+
+Policy
+
+Definition
+
+Commander CLI
+
+Can configure connection and session recording
+
+Allow users to configure Connection and Session Recordings settings on PAM
+Machine, PAM Directory, PAM Database and PAM Configuration Record Types
+
+Copy
+
+    
+    
+    ALLOW_CONFIGURE_PAM_CLOUD_CONNECTION_SETTINGS
+
+Can launch connections
+
+Allow users to launch connections on PAM Machine, PAM Directory, PAM Database
+Record Types
+
+Copy
+
+    
+    
+    ALLOW_LAUNCH_PAM_ON_CLOUD_CONNECTION
+
+Can view session recordings
+
+Allow users to view Session Recordings
+
+Copy
+
+    
+    
+    ALLOW_VIEW_KCM_RECORDINGS
+
+##
+
+Step 2 - Install and configure the Keeper Gateway
+
+Prior to creating the PAM Record types in your Vault, the Keeper Gateway needs
+to be installed in your infrastructure. Visit the following guides based on
+your needs:
+
+  * [Windows Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/windows-installation)
+
+  * [Linux Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/linux-installation)
+
+  * [Docker Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/docker-installation)
+
+Additionally, the Keeper Gateways needs to be configured with the Gateway
+token. For more information, visit this [page](/en/keeperpam/privileged-
+access-manager/getting-started/gateways/one-time-access-token).
+
+Steps 3 and Step 4 can be automated with the Gateway Wizard. For more
+information, visit this [page](/en/keeperpam/privileged-access-manager/quick-
+start-sandbox).
+
+##
+
+Step 3 - Configuring the PAM Configuration
+
+The [PAM Configuration ](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)contains critical information on your
+infrastructure, settings and associated Keeper Gateway. Visit the following
+pages for more details based on your target infrastructure:
+
+  * [Setting up Local Environment on the PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/local-environment-setup)
+
+  * [Setting up AWS Environment on the PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup)
+
+  * [Setting up Azure Environment on the PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/azure-environment-setup)
+
+##
+
+Step 4 - Create and Configure PAM Machine and PAM User(s) Records
+
+After setting up your Gateway and PAM Configuration Record, the Linux Machine
+and its users need to be configured on PAM Record types in your Vault:
+
+  * [PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-machine) \- The Linux machine is configured on this record type
+
+  * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user) \- The Linux User is configured on this record type
+
+Refer to this example on how to configure Linux Machine on a PAM Machine
+record type:
+
+[Example: Linux Machine](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-machine/example-linux-machine)
+
+##
+
+Step 5 - Configuring PAM Settings and SSH Protocol
+
+The PAM Machine record type contains the necessary information required for
+the Keeper Gateway to locate and establish a connection with the machine,
+while the PAM User record type contains the necessary information to
+authenticate the connection.
+
+The PAM Settings need to be configured to enable connections or tunnels on the
+target defined on the PAM Machine Record. To configure the SSH protocol, visit
+the following page:
+
+[SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/ssh-connections)
+
+##
+
+Launching Connections
+
+Once you have configured the SSH Protocol connection on your PAM Machine
+Record, your record will contain the following connection banner with the
+"Launch" Button:
+
+In the above image, a Linux Machine has been configured on the PAM Machine
+Record. When clicking launch, the Vault Client will render a window with the
+established connection protocol to the specified target:
+
+##
+
+Sharing PAM Machine Records
+
+PAM Machine records can be shared with other Keeper users within your
+organization. However, the recipient must have the appropriate PAM enforcement
+policies in place to utilize KeeperPAM features on the shared PAM records.
+
+When sharing a PAM Machine record, the linked admin credentials will **not**
+be shared. For example, if the PAM Machine is configured with a Linux Machine,
+the recipient can connect to the Linux Machine on the PAM Machine record
+without having direct access to the linked credentials.
+
 [PreviousExamples](/en/keeperpam/privileged-access-
 manager/connections/examples)[NextRDP Protocol - Azure Virtual
 Machine](/en/keeperpam/privileged-access-manager/connections/examples/rdp-
@@ -458,213 +625,6 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-##
-
-Overview
-
-In this guide, you will learn how to configure a Linux Machine on your **PAM
-Machine** and configure the **SSH protocol** to successfully launch a zero-
-trust connection to the Linux Machine — directly from your Keeper Vault.
-
-###
-
-Summary
-
-For this setup, you need to do the following:
-
-  1.   2.   3.   4.   5. 
-
-After completing the above, you can launch zero-trust connections to the Linux
-Machine directly from your Keeper Vault.
-
-##
-
-Step 1 - Enable Connection Enforcement Policies
-
-From the Admin Console, enable the corresponding  for connections:
-
-Policy
-
-Definition
-
-Commander CLI
-
-Can configure connection and session recording
-
-Allow users to configure Connection and Session Recordings settings on PAM
-Machine, PAM Directory, PAM Database and PAM Configuration Record Types
-
-Can launch connections
-
-Allow users to launch connections on PAM Machine, PAM Directory, PAM Database
-Record Types
-
-Can view session recordings
-
-Allow users to view Session Recordings
-
-##
-
-Step 2 - Install and configure the Keeper Gateway
-
-Prior to creating the PAM Record types in your Vault, the Keeper Gateway needs
-to be installed in your infrastructure. Visit the following guides based on
-your needs:
-
-  *   *   * 
-
-##
-
-Step 3 - Configuring the PAM Configuration
-
-  *   *   * 
-
-##
-
-Step 4 - Create and Configure PAM Machine and PAM User(s) Records
-
-After setting up your Gateway and PAM Configuration Record, the Linux Machine
-and its users need to be configured on PAM Record types in your Vault:
-
-  *   * 
-
-Refer to this example on how to configure Linux Machine on a PAM Machine
-record type:
-
-##
-
-Step 5 - Configuring PAM Settings and SSH Protocol
-
-The PAM Machine record type contains the necessary information required for
-the Keeper Gateway to locate and establish a connection with the machine,
-while the PAM User record type contains the necessary information to
-authenticate the connection.
-
-The PAM Settings need to be configured to enable connections or tunnels on the
-target defined on the PAM Machine Record. To configure the SSH protocol, visit
-the following page:
-
-##
-
-Launching Connections
-
-Once you have configured the SSH Protocol connection on your PAM Machine
-Record, your record will contain the following connection banner with the
-"Launch" Button:
-
-In the above image, a Linux Machine has been configured on the PAM Machine
-Record. When clicking launch, the Vault Client will render a window with the
-established connection protocol to the specified target:
-
-##
-
-Sharing PAM Machine Records
-
-PAM Machine records can be shared with other Keeper users within your
-organization. However, the recipient must have the appropriate PAM enforcement
-policies in place to utilize KeeperPAM features on the shared PAM records.
-
-When sharing a PAM Machine record, the linked admin credentials will **not**
-be shared. For example, if the PAM Machine is configured with a Linux Machine,
-the recipient can connect to the Linux Machine on the PAM Machine record
-without having direct access to the linked credentials.
-
-Additionally, the Keeper Gateways needs to be configured with the Gateway
-token. For more information, visit this .
-
-Steps 3 and Step 4 can be automated with the Gateway Wizard. For more
-information, visit this .
-
-The contains critical information on your infrastructure, settings and
-associated Keeper Gateway. Visit the following pages for more details based on
-your target infrastructure:
-
-\- The Linux machine is configured on this record type
-
-\- The Linux User is configured on this record type
-
-Copy
-
-    
-    
-    ALLOW_CONFIGURE_PAM_CLOUD_CONNECTION_SETTINGS
-
-Copy
-
-    
-    
-    ALLOW_LAUNCH_PAM_ON_CLOUD_CONNECTION
-
-Copy
-
-    
-    
-    ALLOW_VIEW_KCM_RECORDINGS
-
-[Windows Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/windows-installation)
-
-[Linux Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/linux-installation)
-
-[Docker Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/docker-installation)
-
-[page](/en/keeperpam/privileged-access-manager/getting-started/gateways/one-
-time-access-token)
-
-[page](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
-
-[PAM Configuration ](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
-
-[Setting up Local Environment on the PAM
-Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/local-environment-setup)
-
-[Setting up AWS Environment on the PAM
-Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/aws-environment-setup)
-
-[Setting up Azure Environment on the PAM
-Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/azure-environment-setup)
-
-[PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
-[Example: Linux Machine](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-machine/example-linux-machine)
-
-[SSH Connections](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/ssh-connections)
-
-[PAM Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-
-started/enforcement-policies)
-
-[Enable the Connection Enforcement Policies](/en/keeperpam/privileged-access-
-manager/connections/examples/ssh-protocol-linux-machine#step-1-enable-
-connection-enforcement-policies)
-
-[Install and Configure the Keeper Gateway](/en/keeperpam/privileged-access-
-manager/connections/examples/ssh-protocol-linux-machine#step-2-install-and-
-configure-the-keeper-gateway)
-
-[Create and configure the PAM Configuration File](/en/keeperpam/privileged-
-access-manager/connections/examples/ssh-protocol-linux-
-machine#step-3-configuring-the-pam-configuration)
-
-[Create the PAM Machine and PAM User record types](/en/keeperpam/privileged-
-access-manager/connections/examples/ssh-protocol-linux-machine#step-4-create-
-and-configure-pam-machine-and-pam-user-s-records)
-
-[Configure PAM Settings and the SSH Connection
-Protocol](/en/keeperpam/privileged-access-manager/connections/examples/ssh-
-protocol-linux-machine#step-5-configuring-pam-settings-and-ssh-protocol)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

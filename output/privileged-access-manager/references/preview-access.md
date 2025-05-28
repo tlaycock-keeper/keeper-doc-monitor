@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en)
 
 Ask or search...
 
@@ -79,6 +79,21 @@ KeeperPAM and Secrets Manager
       * [Rotation Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview)
       * [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
 
+        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
+
+          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
+          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
+          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
+          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
+          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
+
+            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
+            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
+            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
+            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
+            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
+            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
+
         * [Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure)
 
           * [Azure AD Users](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-ad-users)
@@ -106,31 +121,14 @@ KeeperPAM and Secrets Manager
             * [AWS RDS for MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mariadb)
             * [AWS RDS for Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-oracle)
 
-        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
-
-          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
-          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
-          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
-          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
-          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
-
-            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
-            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
-            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
-            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
-            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
-            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
-
-        * [SaaS Accounts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
+        * [SaaS Rotation Plugins](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-rotation-plugins)
+        * [Custom Scripts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
 
           * [Okta User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/okta-user)
           * [Snowflake User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/snowflake-user)
           * [Rotate Credential via REST API](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/rotate-credential-via-rest-api)
-
-        * [Network Devices](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices)
-
-          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-ios-xe)
-          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-meraki)
+          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-ios-xe)
+          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-meraki)
 
       * [Service Management](/en/keeperpam/privileged-access-manager/password-rotation/service-management)
       * [Post-Rotation Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts)
@@ -200,6 +198,7 @@ KeeperPAM and Secrets Manager
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
       * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
+      * [Vendor Privileged Access Management](/en/keeperpam/privileged-access-manager/references/vendor-privileged-access-management)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -293,7 +292,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
+      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -395,146 +394,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Preview Updates
-  * Gateway Preview
-  * Vault Preview
-  * Admin Console Preview
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=sb8ynVq2H5QoaPB1CH6r&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
-
-# Preview Access
-
-How to access the Preview version of KeeperPAM
-
-##
-
-Preview Updates
-
-The KeeperPAM Preview offers customers early access to test and prepare for
-upcoming changes.
-
-###
-
-Gateway Preview
-
-####
-
-Docker Installation
-
-For Docker environments, you can reference the tag `keeper/gateway:preview` to
-get the preview version.
-
-Copy
-
-    
-    
-    services:
-          keeper-gateway:
-            platform: linux/amd64
-            image: keeper/gateway:preview
-
-####
-
-Linux Binary Preview
-
-To update an existing Gateway on Linux:
-
-Copy
-
-    
-    
-    curl -fsSL https://keepersecurity.com/pam/beta/install | \
-      sudo bash -s -- --preview
-
-Executing the following command will uninstall the Keeper Gateway Preview:
-
-Copy
-
-    
-    
-    curl -fsSL https://keepersecurity.com/pam/beta/uninstall | sudo bash -s -- --preview
-
-####
-
-Windows Binary Preview Installers
-
-Download the latest installer: [64-bit
-Installer](https://keepersecurity.com/pam/beta/gateway/keeper-
-gateway_windows_x86_64.exe)
-
-* * *
-
-###
-
-Vault Preview
-
-####
-
-Web Vault
-
-  * **US:** <https://keepersecurity.com/vault/preview>[](https://keepersecurity.com/vault/preview)
-
-  * **EU:** <https://keepersecurity.eu/vault/preview>[](https://keepersecurity.eu/vault/preview)
-
-  * **AU:** <https://keepersecurity.com.au/vault/preview>[](https://keepersecurity.com.au/vault/preview)
-
-  * **CA:** <https://keepersecurity.ca/vault/preview>[](https://keepersecurity.ca/vault/preview)
-
-  * **JP:** <https://keepersecurity.jp/vault/preview>[](https://keepersecurity.jp/vault/preview)
-
-####
-
-Desktop App
-
-  * Mac (.dmg) - [Download](https://keepersecurity.com/desktop_electron/preview/keeper-password-manager-preview.dmg)
-
-  * Mac (.pkg) - [Download](https://keepersecurity.com/desktop_electron/preview/keeper-password-manager-preview.pkg)
-
-  * Windows (.appx) - [Download](https://keepersecurity.com/desktop_electron/preview/keeper-password-manager-preview.appx)
-
-  * Windows (.msix) - [Download](https://keepersecurity.com/desktop_electron/preview/keeper-password-manager-preview.msixbundle)
-
-  * Windows (.msi) - [Download](https://keepersecurity.com/desktop_electron/preview/keeper-password-manager-preview.msi)
-
-  * Linux (.rpm) - [Download](https://keepersecurity.com/desktop_electron/preview/keeper-password-manager-preview.rpm)
-
-  * Linux (.deb) - [Download](https://keepersecurity.com/desktop_electron/preview/keeper-password-manager-preview.deb)
-
-Note: the Desktop App preview **does not** auto-update. On Windows computers,
-a new version of the preview version requires a full uninstall and re-install
-of Keeper. This does not affect stored data.
-
-###
-
-Admin Console Preview
-
-  * **US:** <https://keepersecurity.com/console/preview>[](https://keepersecurity.com/console/preview)
-
-  * **EU:** <https://keepersecurity.eu/console/preview>[](https://keepersecurity.eu/console/preview)
-
-  * **AU:** <https://keepersecurity.com.au/console/preview>[](https://keepersecurity.com.au/console/preview)
-
-  * **CA:** <https://keepersecurity.ca/console/preview>[](https://keepersecurity.ca/console/preview)
-
-  * **JP:** <https://keepersecurity.jp/console/preview>[](https://keepersecurity.jp/console/preview)
-
-  * **GOV** : Not available for preview, use commercial environment
-
-[PreviousCron Spec](/en/keeperpam/privileged-access-manager/references/cron-
-spec)[NextOverview](/en/keeperpam/endpoint-privilege-manager/overview)
-
-Last updated 1 month ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -564,4 +423,190 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=sb8ynVq2H5QoaPB1CH6r&only=yes&limit=100)
+
+Last updated 2 months ago
+
+Was this helpful?
+
+##
+
+Preview Updates
+
+The KeeperPAM Preview offers customers early access to test and prepare for
+upcoming changes.
+
+###
+
+Gateway Preview
+
+####
+
+Docker Installation
+
+For Docker environments, you can reference the tag `keeper/gateway:preview` to
+get the preview version.
+
+####
+
+Linux Binary Preview
+
+To update an existing Gateway on Linux:
+
+Executing the following command will uninstall the Keeper Gateway Preview:
+
+####
+
+Windows Binary Preview Installers
+
+* * *
+
+###
+
+Vault Preview
+
+####
+
+Web Vault
+
+  *   *   *   *   * 
+
+####
+
+Desktop App
+
+  *   *   *   *   *   *   * 
+
+Note: the Desktop App preview **does not** auto-update. On Windows computers,
+a new version of the preview version requires a full uninstall and re-install
+of Keeper. This does not affect stored data.
+
+###
+
+Admin Console Preview
+
+  *   *   *   *   *   * **GOV** : Not available for preview, use commercial environment
+
+Download the latest installer:
+
+**US:**
+
+**EU:**
+
+**AU:**
+
+**CA:**
+
+**JP:**
+
+Mac (.dmg) -
+
+Mac (.pkg) -
+
+Windows (.appx) -
+
+Windows (.msix) -
+
+Windows (.msi) -
+
+Linux (.rpm) -
+
+Linux (.deb) -
+
+**US:**
+
+**EU:**
+
+**AU:**
+
+**CA:**
+
+**JP:**
+
+Copy
+
+    
+    
+    services:
+          keeper-gateway:
+            platform: linux/amd64
+            image: keeper/gateway:preview
+
+Copy
+
+    
+    
+    curl -fsSL https://keepersecurity.com/pam/beta/install | \
+      sudo bash -s -- --preview
+
+Copy
+
+    
+    
+    curl -fsSL https://keepersecurity.com/pam/beta/uninstall | sudo bash -s -- --preview
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
+
+# Preview Access
+
+How to access the Preview version of KeeperPAM
+
+[PreviousCron Spec](/en/keeperpam/privileged-access-manager/references/cron-
+spec)[NextOverview](/en/keeperpam/endpoint-privilege-manager/overview)
+
+  * Preview Updates
+  * Gateway Preview
+  * Vault Preview
+  * Admin Console Preview
+
+[64-bit Installer](https://keepersecurity.com/pam/beta/gateway/keeper-
+gateway_windows_x86_64.exe)
+
+<https://keepersecurity.com/vault/preview>[](https://keepersecurity.com/vault/preview)
+
+<https://keepersecurity.eu/vault/preview>[](https://keepersecurity.eu/vault/preview)
+
+<https://keepersecurity.com.au/vault/preview>[](https://keepersecurity.com.au/vault/preview)
+
+<https://keepersecurity.ca/vault/preview>[](https://keepersecurity.ca/vault/preview)
+
+<https://keepersecurity.jp/vault/preview>[](https://keepersecurity.jp/vault/preview)
+
+[Download](https://keepersecurity.com/desktop_electron/preview/keeper-
+password-manager-preview.dmg)
+
+[Download](https://keepersecurity.com/desktop_electron/preview/keeper-
+password-manager-preview.pkg)
+
+[Download](https://keepersecurity.com/desktop_electron/preview/keeper-
+password-manager-preview.appx)
+
+[Download](https://keepersecurity.com/desktop_electron/preview/keeper-
+password-manager-preview.msixbundle)
+
+[Download](https://keepersecurity.com/desktop_electron/preview/keeper-
+password-manager-preview.msi)
+
+[Download](https://keepersecurity.com/desktop_electron/preview/keeper-
+password-manager-preview.rpm)
+
+[Download](https://keepersecurity.com/desktop_electron/preview/keeper-
+password-manager-preview.deb)
+
+<https://keepersecurity.com/console/preview>[](https://keepersecurity.com/console/preview)
+
+<https://keepersecurity.eu/console/preview>[](https://keepersecurity.eu/console/preview)
+
+<https://keepersecurity.com.au/console/preview>[](https://keepersecurity.com.au/console/preview)
+
+<https://keepersecurity.ca/console/preview>[](https://keepersecurity.ca/console/preview)
+
+<https://keepersecurity.jp/console/preview>[](https://keepersecurity.jp/console/preview)
 

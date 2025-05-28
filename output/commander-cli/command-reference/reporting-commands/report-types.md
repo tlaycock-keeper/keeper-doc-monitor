@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en)
 
 Ask or search...
 
@@ -79,6 +79,21 @@ KeeperPAM and Secrets Manager
       * [Rotation Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview)
       * [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
 
+        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
+
+          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
+          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
+          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
+          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
+          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
+
+            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
+            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
+            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
+            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
+            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
+            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
+
         * [Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure)
 
           * [Azure AD Users](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-ad-users)
@@ -106,31 +121,14 @@ KeeperPAM and Secrets Manager
             * [AWS RDS for MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mariadb)
             * [AWS RDS for Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-oracle)
 
-        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
-
-          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
-          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
-          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
-          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
-          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
-
-            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
-            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
-            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
-            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
-            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
-            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
-
-        * [SaaS Accounts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
+        * [SaaS Rotation Plugins](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-rotation-plugins)
+        * [Custom Scripts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
 
           * [Okta User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/okta-user)
           * [Snowflake User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/snowflake-user)
           * [Rotate Credential via REST API](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/rotate-credential-via-rest-api)
-
-        * [Network Devices](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices)
-
-          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-ios-xe)
-          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-meraki)
+          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-ios-xe)
+          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-meraki)
 
       * [Service Management](/en/keeperpam/privileged-access-manager/password-rotation/service-management)
       * [Post-Rotation Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts)
@@ -200,6 +198,7 @@ KeeperPAM and Secrets Manager
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
       * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
+      * [Vendor Privileged Access Management](/en/keeperpam/privileged-access-manager/references/vendor-privileged-access-management)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -293,7 +292,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
+      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -427,10 +426,31 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * About
+  * Common Reports
+  * Saving Reports to a File
+  * Examples
+  * Report Types
+  * Common Reports in Detail
+  * Find Users that have not Logged in
+  * See the last time each user logged in
+  * Find users that have not created or updated any records
+  * See all records accessed by a user
+  * See What Shared Folders Teams Have Access To
+  * Determine which record passwords have NOT been changed
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=6y7PqTPzebHpNknpShRe&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Reporting Commands](/en/keeperpam/commander-cli/command-reference/reporting-commands)
+
+# Report Types
+
+Learn about reporting with Commander
 
 ##
 
@@ -477,7 +497,19 @@ Examples
 
 Save a report as a CSV for use with Microsoft Excel or Google Sheets.
 
+Copy
+
+    
+    
+    share-report --shared-folders --format csv --output "shared_folder_report_results.csv"
+
 Save a report as a json file for use with scripts
+
+Copy
+
+    
+    
+    user-report --format json --output "user_report.json"
 
 Where are files saved?
 
@@ -516,250 +548,9 @@ Report Types
 Learn more about the reports that Commander can run. Click an option from this
 list to see the command documentation.
 
-##
-
-Common Reports in Detail
-
-###
-
-Find Users that have not Logged in
-
-Requires the ARAM add-on
-
-By default this looks back 30 days (results are all users that have not logged
-in in 30 days). The number of days to look back for can be changed with the
-flag: `--days X` where "X" is the number of days to use.
-
-Example
-
-##
-
-See the last time each user logged in
-
-To include more details, such as the user's team(s) and Node run `user-report`
-without `--last-login`
-
-Example
-
-##
-
-Find users that have not created or updated any records
-
-Requires the ARAM add-on
-
-By default this looks back 30 days (results are all users that have not
-created or updated records in 30 days). The number of days to look back for
-can be changed with the flag: `--days X` where "X" is the number of days to
-use.
-
-Example
-
-##
-
-See all records accessed by a user
-
-Requires ARAM add-on and Compliance Reports add-on
-
-Replace <USERNAME> with the username or email address of the user to see
-access history of.
-
-Example
-
-##
-
-See What Shared Folders Teams Have Access To
-
-Requires Compliance Reports add-on
-
-Example
-
-##
-
-Determine which record passwords have NOT been changed
-
-Requires Compliance Reports add-on
-
-Example
-
-Last updated 11 months ago
-
-Was this helpful?
-
 Command
 
 Explanation
-
-Copy
-
-    
-    
-    share-report --shared-folders --format csv --output "shared_folder_report_results.csv"
-
-Copy
-
-    
-    
-    user-report --format json --output "user_report.json"
-
-Copy
-
-    
-    
-    action-report --target no-logon
-
-Copy
-
-    
-    
-    My Vault> action-report --target no-logon
-    
-    Admin Action Taken:
-            COMMAND: None
-            STATUS: n/a
-            SERVER MESSAGE: n/a
-            AFFECTED: 0
-    
-    3 Users With "no-logon" Status Older Than 30 Day(s):
-    
-    username
-    -----------------------------------------
-    john.smith@examplecorp.com
-    jane.doe@examplecorp.com
-    chris.apple@examplecorp.com
-
-Copy
-
-    
-    
-    user-report --last-login
-
-Copy
-
-    
-    
-    My Vault> user-report --last-login
-    Querying latest login for the last 365 days
-    Email                                      Name                                       Status    Transfer Status    Last Login
-    -----------------------------------------  -----------------------------------------  --------  -----------------  -------------------------
-    john.smith@examplecorp.com                 John Smith                                 Active                       2022-08-22 12:33:03-05:00
-    chris.apple@examplecorp.com                Chris Apple                                Invited
-    sam.strong@examplecorp.com                 Samantha Strong                            Active                       2022-08-09 13:03:31-05:00
-    jane.doe@examplecorp.com                   Jane Doe                                   Active                       2022-10-10 09:07:34-05:00
-    admin+comms@examplecorp.com                Communication Admin                        Active
-
-Copy
-
-    
-    
-    action-report --target no-update
-
-Copy
-
-    
-    
-    My Vault> action-report --target no-update
-    
-    Admin Action Taken:
-            COMMAND: None
-            STATUS: n/a
-            SERVER MESSAGE: n/a
-            AFFECTED: 0
-    
-    3 Users With "no-update" Status Older Than 30 Day(s):
-    
-    username
-    -----------------------------------------
-    john.smith@examplecorp.com
-    jane.doe@examplecorp.com
-    chris.apple@examplecorp.com
-
-Copy
-
-    
-    
-    compliance record-access-report <USERNAME>
-
-Copy
-
-    
-    
-    My Vault> compliance record-access-report john.smith@examplecorp.com
-    Loading record information.....
-    Record UID              Record Title                       Record URL                         Record Owner                IP Address       Device             Last Access
-    ----------------------  ---------------------------------  ---------------------------------  -------------------------   ---------------  -----------------  -------------------
-    x4AOxLwR5tSA7u5R9Bwplw  wifi details                                                          john.smith@examplecorp.com  11.00.001.001    Web App 16.7.3     2022-10-13 12:38:33
-    xrnnK1HWSLMVh_irjIGAJw  SAP Connect                                                           john.smith@examplecorp.com  11.00.001.001    Commander 16.7.0   2022-10-13 12:12:46
-    xB36NT_lPxestkuCCg_35w                                                                                                    11.00.001.001    Web App 16.8.0     2022-10-07 09:39:10
-    U7YOaZv4pmLXGfTHPXuvaA                                                                                                    11.00.001.001    Commander 16.7.0   2022-10-05 15:09:43
-    a9TshEIoSluKXAccdJhHIQ  Dropbox                            dropbox.com/login                  sam.strong@examplecorp.com  11.00.001.001    Commander 16.7.0   2022-10-05 15:09:31
-    6wSYfG9UeHTzDDSIGeuiyg  Twitter                            https://www.twitter.com            john.smith@examplecorp.com  11.00.001.001    Commander 16.7.0   2022-10-05 15:09:25
-    o6BJUKCGLa7mmMApzPjw4A  KCM Connect SSH                    127.0.0.1                          john.smith@examplecorp.com  11.00.001.001    Commander 16.7.0   2022-10-05 15:09:14
-
-Copy
-
-    
-    
-    compliance team-report
-
-Copy
-
-    
-    
-    My Vault> compliance team-report
-    Loading compliance data....:...:...:...:...:...:...:...:...:...:...:...:...:
-    
-    Team Name    Shared Folder Name     Shared Folder UID       Permissions
-    -----------  --------------------   ----------------------  -------------
-    Comms-Team   Comms Team Logins      8-2gk4cde5hWN5q7ENwpCA  read-only
-    Engineering  Deployment Credentials 3kf9kd4e5hWdN5q7Ed9fS0  can-edit
-    Management   Finances Logins        dO9S0cMQ_kPYAsUYILVlSA  can-share
-
-Copy
-
-    
-    
-    aging-report
-
-Copy
-
-    
-    
-    My Vault> aging-report --format=table --period=1y
-    
-    Owner            Record Title  Last Password Change    Shared    Record URL
-    ---------------  ------------  ----------------------  --------  ----------
-    user1@company.com  Hilton      2020-05-14 12:41:48     False     https://...
-    user1@company.com  AlienVault  2020-02-04 12:30:35     True      https://...             
-    user1@company.com  TripAdvisor 2020-07-08 15:22:55     False     https://...             
-    user2@company.com  Amazon      ---                     False     https://...                
-    user2@company.com  Kayak       2021-05-25 09:13:56     False     https://...             
-    user2@company.com  Amazon      ---                     False     https://...
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Reporting Commands](/en/keeperpam/commander-cli/command-reference/reporting-commands)
-
-# Report Types
-
-Learn about reporting with Commander
-
-[PreviousReporting Commands](/en/keeperpam/commander-cli/command-
-reference/reporting-commands)[NextEnterprise Management
-Commands](/en/keeperpam/commander-cli/command-reference/enterprise-management-
-commands)
-
-  * About
-  * Common Reports
-  * Saving Reports to a File
-  * Examples
-  * Report Types
-  * Common Reports in Detail
-  * Find Users that have not Logged in
-  * See the last time each user logged in
-  * Find users that have not created or updated any records
-  * See all records accessed by a user
-  * See What Shared Folders Teams Have Access To
-  * Determine which record passwords have NOT been changed
 
 Show users that haven't performed a specific action in a given number of days
 
@@ -781,6 +572,214 @@ Display information about shared records
 Show a report of shared records in the logged-in Keeper vault
 
 Show a report of user logins
+
+##
+
+Common Reports in Detail
+
+###
+
+Find Users that have not Logged in
+
+Requires the ARAM add-on
+
+Copy
+
+    
+    
+    action-report --target no-logon
+
+By default this looks back 30 days (results are all users that have not logged
+in in 30 days). The number of days to look back for can be changed with the
+flag: `--days X` where "X" is the number of days to use.
+
+Example
+
+Copy
+
+    
+    
+    My Vault> action-report --target no-logon
+    
+    Admin Action Taken:
+            COMMAND: None
+            STATUS: n/a
+            SERVER MESSAGE: n/a
+            AFFECTED: 0
+    
+    3 Users With "no-logon" Status Older Than 30 Day(s):
+    
+    username
+    -----------------------------------------
+    john.smith@examplecorp.com
+    jane.doe@examplecorp.com
+    chris.apple@examplecorp.com
+
+##
+
+See the last time each user logged in
+
+Copy
+
+    
+    
+    user-report --last-login
+
+To include more details, such as the user's team(s) and Node run `user-report`
+without `--last-login`
+
+Example
+
+Copy
+
+    
+    
+    My Vault> user-report --last-login
+    Querying latest login for the last 365 days
+    Email                                      Name                                       Status    Transfer Status    Last Login
+    -----------------------------------------  -----------------------------------------  --------  -----------------  -------------------------
+    john.smith@examplecorp.com                 John Smith                                 Active                       2022-08-22 12:33:03-05:00
+    chris.apple@examplecorp.com                Chris Apple                                Invited
+    sam.strong@examplecorp.com                 Samantha Strong                            Active                       2022-08-09 13:03:31-05:00
+    jane.doe@examplecorp.com                   Jane Doe                                   Active                       2022-10-10 09:07:34-05:00
+    admin+comms@examplecorp.com                Communication Admin                        Active
+
+##
+
+Find users that have not created or updated any records
+
+Requires the ARAM add-on
+
+Copy
+
+    
+    
+    action-report --target no-update
+
+By default this looks back 30 days (results are all users that have not
+created or updated records in 30 days). The number of days to look back for
+can be changed with the flag: `--days X` where "X" is the number of days to
+use.
+
+Example
+
+Copy
+
+    
+    
+    My Vault> action-report --target no-update
+    
+    Admin Action Taken:
+            COMMAND: None
+            STATUS: n/a
+            SERVER MESSAGE: n/a
+            AFFECTED: 0
+    
+    3 Users With "no-update" Status Older Than 30 Day(s):
+    
+    username
+    -----------------------------------------
+    john.smith@examplecorp.com
+    jane.doe@examplecorp.com
+    chris.apple@examplecorp.com
+
+##
+
+See all records accessed by a user
+
+Requires ARAM add-on and Compliance Reports add-on
+
+Copy
+
+    
+    
+    compliance record-access-report <USERNAME>
+
+Replace <USERNAME> with the username or email address of the user to see
+access history of.
+
+Example
+
+Copy
+
+    
+    
+    My Vault> compliance record-access-report john.smith@examplecorp.com
+    Loading record information.....
+    Record UID              Record Title                       Record URL                         Record Owner                IP Address       Device             Last Access
+    ----------------------  ---------------------------------  ---------------------------------  -------------------------   ---------------  -----------------  -------------------
+    x4AOxLwR5tSA7u5R9Bwplw  wifi details                                                          john.smith@examplecorp.com  11.00.001.001    Web App 16.7.3     2022-10-13 12:38:33
+    xrnnK1HWSLMVh_irjIGAJw  SAP Connect                                                           john.smith@examplecorp.com  11.00.001.001    Commander 16.7.0   2022-10-13 12:12:46
+    xB36NT_lPxestkuCCg_35w                                                                                                    11.00.001.001    Web App 16.8.0     2022-10-07 09:39:10
+    U7YOaZv4pmLXGfTHPXuvaA                                                                                                    11.00.001.001    Commander 16.7.0   2022-10-05 15:09:43
+    a9TshEIoSluKXAccdJhHIQ  Dropbox                            dropbox.com/login                  sam.strong@examplecorp.com  11.00.001.001    Commander 16.7.0   2022-10-05 15:09:31
+    6wSYfG9UeHTzDDSIGeuiyg  Twitter                            https://www.twitter.com            john.smith@examplecorp.com  11.00.001.001    Commander 16.7.0   2022-10-05 15:09:25
+    o6BJUKCGLa7mmMApzPjw4A  KCM Connect SSH                    127.0.0.1                          john.smith@examplecorp.com  11.00.001.001    Commander 16.7.0   2022-10-05 15:09:14
+
+##
+
+See What Shared Folders Teams Have Access To
+
+Requires Compliance Reports add-on
+
+Copy
+
+    
+    
+    compliance team-report
+
+Example
+
+Copy
+
+    
+    
+    My Vault> compliance team-report
+    Loading compliance data....:...:...:...:...:...:...:...:...:...:...:...:...:
+    
+    Team Name    Shared Folder Name     Shared Folder UID       Permissions
+    -----------  --------------------   ----------------------  -------------
+    Comms-Team   Comms Team Logins      8-2gk4cde5hWN5q7ENwpCA  read-only
+    Engineering  Deployment Credentials 3kf9kd4e5hWdN5q7Ed9fS0  can-edit
+    Management   Finances Logins        dO9S0cMQ_kPYAsUYILVlSA  can-share
+
+##
+
+Determine which record passwords have NOT been changed
+
+Requires Compliance Reports add-on
+
+Copy
+
+    
+    
+    aging-report
+
+Example
+
+Copy
+
+    
+    
+    My Vault> aging-report --format=table --period=1y
+    
+    Owner            Record Title  Last Password Change    Shared    Record URL
+    ---------------  ------------  ----------------------  --------  ----------
+    user1@company.com  Hilton      2020-05-14 12:41:48     False     https://...
+    user1@company.com  AlienVault  2020-02-04 12:30:35     True      https://...             
+    user1@company.com  TripAdvisor 2020-07-08 15:22:55     False     https://...             
+    user2@company.com  Amazon      ---                     False     https://...                
+    user2@company.com  Kayak       2021-05-25 09:13:56     False     https://...             
+    user2@company.com  Amazon      ---                     False     https://...
+
+[PreviousReporting Commands](/en/keeperpam/commander-cli/command-
+reference/reporting-commands)[NextEnterprise Management
+Commands](/en/keeperpam/commander-cli/command-reference/enterprise-management-
+commands)
+
+Last updated 11 months ago
+
+Was this helpful?
 
 [`action-report`](/en/keeperpam/commander-cli/command-reference/reporting-
 commands#action-report-command)

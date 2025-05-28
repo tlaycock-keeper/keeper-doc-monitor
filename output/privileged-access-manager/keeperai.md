@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en)
 
 Ask or search...
 
@@ -79,6 +79,21 @@ KeeperPAM and Secrets Manager
       * [Rotation Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview)
       * [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
 
+        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
+
+          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
+          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
+          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
+          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
+          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
+
+            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
+            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
+            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
+            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
+            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
+            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
+
         * [Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure)
 
           * [Azure AD Users](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-ad-users)
@@ -106,31 +121,14 @@ KeeperPAM and Secrets Manager
             * [AWS RDS for MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mariadb)
             * [AWS RDS for Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-oracle)
 
-        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
-
-          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
-          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
-          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
-          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
-          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
-
-            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
-            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
-            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
-            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
-            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
-            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
-
-        * [SaaS Accounts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
+        * [SaaS Rotation Plugins](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-rotation-plugins)
+        * [Custom Scripts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
 
           * [Okta User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/okta-user)
           * [Snowflake User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/snowflake-user)
           * [Rotate Credential via REST API](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/rotate-credential-via-rest-api)
-
-        * [Network Devices](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices)
-
-          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-ios-xe)
-          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-meraki)
+          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-ios-xe)
+          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-meraki)
 
       * [Service Management](/en/keeperpam/privileged-access-manager/password-rotation/service-management)
       * [Post-Rotation Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts)
@@ -200,6 +198,7 @@ KeeperPAM and Secrets Manager
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
       * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
+      * [Vendor Privileged Access Management](/en/keeperpam/privileged-access-manager/references/vendor-privileged-access-management)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -293,7 +292,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
+      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -395,6 +394,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -426,39 +455,9 @@ AI-powered threat detection for KeeperPAM privileged sessions
 manager/discovery/discovery-using-the-vault)[NextOn-Prem Connection
 Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
 
-Last updated 2 days ago
+Last updated 9 hours ago
 
 Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
 
 ##
 
@@ -513,7 +512,7 @@ Prerequisites
 
   * Docker environment for on-premises deployments
 
-  * Access to cloud-based LLM services (if using cloud deployment)
+  * Access to LLM inference services (See supported LLM provider options below)
 
 ###
 
@@ -555,45 +554,45 @@ summaries.
 KeeperAI is designed to work with multiple LLM providers, giving you
 flexibility in your deployment:
 
-####
+OpenAI-Compatible API
 
-**Amazon Bedrock**
+Support for any API providers implementing that use OpenAI’s request and
+response formats for the `/chat/completions` endpoint. A non-exhaustive list
+of providers you can use:
 
-  * Fully integrated support for Amazon Bedrock models
+Inference Provider
 
-  * Utilizes secure AWS authentication mechanisms
+Docs
 
-  * Optimized for enterprise-grade security and compliance
+Azure AI Foundary
+
+Cerebras
+
+Groq
+
+Hugging Face
+
+Keywords AI
+
+Litellm
+
+LM Studio
+
+Ollama
+
+OpenRouter
+
+Tinfoil
+
+TogetherAI
+
+Unify AI
+
+vLLM
 
 **Configuration**
 
-  1. Ensure that the IAM role for the Gateway has the `AmazonBedrockFullAccess` policy attached
-
-  2. Select a model from the [supported list](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html) and note the corresponding model ID.
-
-  3. Configure the Gateway with the following environment variables for the gateway service in your Docker Compose file:
-
-Copy
-
-    
-    
-    environment:
-      KEEPER_GATEWAY_SENTRY_LLM_CLIENT: "aws-bedrock"
-      KEEPER_GATEWAY_SENTRY_MODEL: "<your-model-id>"
-
-####
-
-**OpenAI-Compatible Endpoints**
-
-  * Support for any provider implementing the OpenAI `/chat/completions` API endpoint
-
-  * Compatible with self-hosted models using frameworks like LiteLLM
-
-  * Works with alternative commercial providers that maintain OpenAI API compatibility
-
-**Configuration**
-
-  1. Ensure your Gateway has the appropriate permissions to access your cloud LLM service
+  1. Ensure your Gateway has the appropriate permissions to access the LLM service
 
   2. Configure the Gateway with the following environment variables for the gateway service in your Docker Compose file:
 
@@ -602,10 +601,119 @@ Copy
     
     
     environment:
-      KEEPER_GATEWAY_SENTRY_LLM_CLIENT: "openai-generic"
+      KEEPER_GATEWAY_SENTRY_LLM_PROVIDER: "openai-generic"
       KEEPER_GATEWAY_SENTRY_BASE_URL: "<your-base-url>"
       KEEPER_GATEWAY_SENTRY_API_KEY: "<your-api-key>"
       KEEPER_GATEWAY_SENTRY_MODEL: "<your-model-id>"
+
+AWS Bedrock
+
+You can get started quickly, privately customize foundation models with your
+own data, and easily and securely integrate and deploy them into your
+applications using AWS tools without having to manage any infrastructure.
+
+**Configuration**
+
+  1. Ensure that the IAM role for the Gateway has the `AmazonBedrockFullAccess` policy attached
+
+  2.   3.   4. Configure the Gateway with the following environment variables for the gateway service in your Docker Compose file:
+
+Copy
+
+    
+    
+    environment:
+      KEEPER_GATEWAY_SENTRY_LLM_PROVIDER: "aws-bedrock"
+      KEEPER_GATEWAY_SENTRY_MODEL: "<your-model-id>"
+
+Anthropic
+
+**Configuration**
+
+  1. Configure the Gateway with the following environment variables for the gateway service in your Docker Compose file:
+
+Copy
+
+    
+    
+    environment:
+      KEEPER_GATEWAY_SENTRY_LLM_PROVIDER: "anthropic"
+      KEEPER_GATEWAY_SENTRY_API_KEY: "<your-api-key>"
+      KEEPER_GATEWAY_SENTRY_MODEL: "<your-model-id>"
+
+Google AI: Gemini
+
+**Configuration**
+
+  1. Configure the Gateway with the following environment variables for the gateway service in your Docker Compose file:
+
+Copy
+
+    
+    
+    environment:
+      KEEPER_GATEWAY_SENTRY_LLM_PROVIDER: "google-ai"
+      KEEPER_GATEWAY_SENTRY_API_KEY: "<your-api-key>"
+      KEEPER_GATEWAY_SENTRY_MODEL: "<your-model-id>"
+
+Google: Vertex
+
+You need to use an account with a `ProjectID` that has been authorized to use
+Vertex. When administering your Google Cloud account, be sure to enable
+Vertex, and specify your project’s ID when authenticating with `gcloud auth`:
+
+Copy
+
+    
+    
+    gcloud auth application-default login --project MY_PROJECT_ID
+
+  *   * 
+
+**Configuration**
+
+  1. Configure the Gateway with the following environment variables for the gateway service in your Docker Compose file:
+
+Copy
+
+    
+    
+    environment:
+      KEEPER_GATEWAY_SENTRY_LLM_PROVIDER: "vertex-ai"
+      KEEPER_GATEWAY_SENTRY_MODEL: "<your-model-id>"
+      KEEPER_GATEWAY_SENTRY_LOCATION: "<your-location>"
+
+OpenAI
+
+**Configuration**
+
+  1. Configure the Gateway with the following environment variables for the gateway service in your Docker Compose file:
+
+Copy
+
+    
+    
+    environment:
+      KEEPER_GATEWAY_SENTRY_LLM_PROVIDER: "openai"
+      KEEPER_GATEWAY_SENTRY_API_KEY: "<your-api-key>"
+      KEEPER_GATEWAY_SENTRY_MODEL: "<your-model-id>"
+
+Azure OpenAI
+
+**Configuration**
+
+  1. Configure the Gateway with the following environment variables for the gateway service in your Docker Compose file:
+
+Copy
+
+    
+    
+    environment:
+      KEEPER_GATEWAY_SENTRY_LLM_PROVIDER: "azure-openai"
+      KEEPER_GATEWAY_SENTRY_RESOURCE_NAME: "<your-resource-name>"
+      KEEPER_GATEWAY_SENTRY_DEPLOYMENT_ID: "<your-deployment-id>"
+      KEEPER_GATEWAY_SENTRY_API_VERSION: "<your-api-version>"
+      KEEPER_GATEWAY_SENTRY_API_KEY: "<your-model-id>"
 
 ###
 
@@ -716,6 +824,70 @@ logic.
 **Q: How does KeeperAI handle sensitive information?** A: In a later release,
 KeeperAI will include Personally Identifiable Information (PII) detection and
 removal from session summaries.
+
+through AWS Console to an Amazon Bedrock foundation model
+
+Select a model from the  and note the corresponding model ID.
+
+Before you begin, .
+
+Before you begin, .
+
+If you’re using Google Cloud , you can expect authentication to work out of
+the box.
+
+Setting  will take precedence and force `vertex-ai` to load service account
+credentials from that file path.
+
+Before you begin, .
+
+[Request access](https://docs.aws.amazon.com/bedrock/latest/userguide/getting-
+started.html#getting-started-model-access)
+
+[supported list](https://docs.aws.amazon.com/bedrock/latest/userguide/models-
+supported.html)
+
+[create an API key in the Anthropic
+Console](https://console.anthropic.com/settings/keys)
+
+[create an API key in the Google AI
+dashboard](https://aistudio.google.com/apikey)
+
+[application default
+credentials](https://cloud.google.com/docs/authentication/application-default-
+credentials)
+
+[`options.credentials`](https://docs.boundaryml.com/ref/llm-client-
+providers/google-vertex#credentials)
+
+[create an API key in the Open AI Platform
+dashboard](https://platform.openai.com/api-keys)
+
+[Azure AI Foundary](https://ai.azure.com/)
+
+[Cerebras](https://inference-docs.cerebras.ai/resources/openai)
+
+[Groq](https://groq.com/)
+
+[Hugging Face](https://huggingface.co/inference-endpoints/dedicated)
+
+[Keywords AI](https://www.keywordsai.co/)
+
+[Litellm](https://www.litellm.ai/)
+
+[LM Studio](https://lmstudio.ai/docs)
+
+[Ollama](https://ollama.com/)
+
+[OpenRouter](https://openrouter.ai/)
+
+[Tinfoil](https://tinfoil.sh/)
+
+[TogetherAI](https://www.together.ai/)
+
+[Unify AI](https://www.unify.ai/)
+
+[vLLM](https://docs.vllm.ai/)
 
 KeeperAI in PAM Settings
 

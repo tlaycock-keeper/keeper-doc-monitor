@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en)
 
 Ask or search...
 
@@ -79,6 +79,21 @@ KeeperPAM and Secrets Manager
       * [Rotation Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview)
       * [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
 
+        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
+
+          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
+          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
+          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
+          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
+          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
+
+            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
+            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
+            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
+            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
+            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
+            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
+
         * [Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure)
 
           * [Azure AD Users](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-ad-users)
@@ -106,31 +121,14 @@ KeeperPAM and Secrets Manager
             * [AWS RDS for MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mariadb)
             * [AWS RDS for Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-oracle)
 
-        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
-
-          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
-          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
-          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
-          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
-          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
-
-            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
-            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
-            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
-            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
-            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
-            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
-
-        * [SaaS Accounts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
+        * [SaaS Rotation Plugins](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-rotation-plugins)
+        * [Custom Scripts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
 
           * [Okta User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/okta-user)
           * [Snowflake User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/snowflake-user)
           * [Rotate Credential via REST API](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/rotate-credential-via-rest-api)
-
-        * [Network Devices](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices)
-
-          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-ios-xe)
-          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-meraki)
+          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-ios-xe)
+          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-meraki)
 
       * [Service Management](/en/keeperpam/privileged-access-manager/password-rotation/service-management)
       * [Post-Rotation Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts)
@@ -200,6 +198,7 @@ KeeperPAM and Secrets Manager
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
       * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
+      * [Vendor Privileged Access Management](/en/keeperpam/privileged-access-manager/references/vendor-privileged-access-management)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -293,7 +292,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
+      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -395,117 +394,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Managing Elevation Requests
-  * Accessing the Requests Dashboard
-  * Working with the Request Queue
-  * Reviewing Request Details
-  * Taking Action on Requests
-  * Managing Request Volumes
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=QIQbTK1rKnhe3S1JB3Lu&only=yes&limit=100)
-
-  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
-
-# Managing Requests
-
-Day to day management of Keeper Privilege Manager elevation requests
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqZHIrunXfmyLDah9lx44%252FPEDM%2520Managing%2520Requests.jpg%3Falt%3Dmedia%26token%3Da04e8a43-30b7-40cb-a40c-0c7756aef09c&width=768&dpr=4&quality=100&sign=8a3cc8e0&sv=2)
-
-##
-
-Managing Elevation Requests
-
-As end-users generate elevation requests, administrators can efficiently
-manage these requests through the Keeper Admin Console. This interface
-provides a streamlined process for approving or denying requests in real-time,
-ensuring that legitimate user needs are met while maintaining security.
-
-###
-
-Accessing the Requests Dashboard
-
-To manage elevation requests:
-
-  1. Log in to the Keeper Admin Console
-
-  2. Navigate to **Endpoint** **Privilege Manager > Requests** tab
-
-###
-
-Working with the Request Queue
-
-The requests dashboard displays all pending elevation requests across your
-environment. By default, requests are sorted by wait time and priority,
-ensuring that users are processed in the order received.
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOSIU7ZuOJXSON8ZhgyfA%252FRequests.png%3Falt%3Dmedia%26token%3Deecb623a-7f69-47d7-ab24-66a710dee8a9&width=768&dpr=4&quality=100&sign=e7213101&sv=2)
-
-Endpoint**** Privilege Manager Requests Dashboard
-
-###
-
-Reviewing Request Details
-
-To review a specific request:
-
-  1. Click on any request in the queue to open its details
-
-  2. Review the detailed information provided:
-
-     * Application information
-
-     * User's justification message
-
-     * Endpoint details (IP address, device name, operating system)
-
-     * Request timestamp and duration
-
-     * Associated policies
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fp5spsEQatbV45TrPovnC%252FApplication%2520Metadata%2520-%2520Expanded%2520Example.png%3Falt%3Dmedia%26token%3De9450959-dd4c-4fc3-a7cb-091a19d79f98&width=768&dpr=4&quality=100&sign=7013b474&sv=2)
-
-Detailed View of an Elevation Request
-
-###
-
-Taking Action on Requests
-
-For each request, administrators can:
-
-  * **Approve** : Grant temporary elevated privileges for the requested process
-
-  * **Deny** : Reject the elevation request with an optional explanation
-
-###
-
-Managing Request Volumes
-
-For organizations with high volumes of elevation requests:
-
-  * **Delegation** : Configure multiple approvers across different teams or regions
-
-  * **Auto-Approval Rules** : Set up [policies](/en/keeperpam/endpoint-privilege-manager/policies) to automatically approve routine requests
-
-[PreviousExample Policies](/en/keeperpam/endpoint-privilege-
-manager/policies/example-policies)[NextBest Practices](/en/keeperpam/best-
-practices)
-
-Last updated 1 month ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -535,4 +423,119 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Managing Elevation Requests
+  * Accessing the Requests Dashboard
+  * Working with the Request Queue
+  * Reviewing Request Details
+  * Taking Action on Requests
+  * Managing Request Volumes
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=QIQbTK1rKnhe3S1JB3Lu&only=yes&limit=100)
+
+  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
+
+# Managing Requests
+
+Day to day management of Keeper Privilege Manager elevation requests
+
+[PreviousExample Policies](/en/keeperpam/endpoint-privilege-
+manager/policies/example-policies)[NextBest Practices](/en/keeperpam/best-
+practices)
+
+Last updated 1 month ago
+
+Was this helpful?
+
+##
+
+Managing Elevation Requests
+
+As end-users generate elevation requests, administrators can efficiently
+manage these requests through the Keeper Admin Console. This interface
+provides a streamlined process for approving or denying requests in real-time,
+ensuring that legitimate user needs are met while maintaining security.
+
+###
+
+Accessing the Requests Dashboard
+
+To manage elevation requests:
+
+  1. Log in to the Keeper Admin Console
+
+  2. Navigate to **Endpoint** **Privilege Manager > Requests** tab
+
+###
+
+Working with the Request Queue
+
+The requests dashboard displays all pending elevation requests across your
+environment. By default, requests are sorted by wait time and priority,
+ensuring that users are processed in the order received.
+
+###
+
+Reviewing Request Details
+
+To review a specific request:
+
+  1. Click on any request in the queue to open its details
+
+  2. Review the detailed information provided:
+
+     * Application information
+
+     * User's justification message
+
+     * Endpoint details (IP address, device name, operating system)
+
+     * Request timestamp and duration
+
+     * Associated policies
+
+###
+
+Taking Action on Requests
+
+For each request, administrators can:
+
+  * **Approve** : Grant temporary elevated privileges for the requested process
+
+  * **Deny** : Reject the elevation request with an optional explanation
+
+###
+
+Managing Request Volumes
+
+For organizations with high volumes of elevation requests:
+
+  * **Delegation** : Configure multiple approvers across different teams or regions
+
+  * 
+
+**Auto-Approval Rules** : Set up  to automatically approve routine requests
+
+[policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+Endpoint**** Privilege Manager Requests Dashboard
+
+Detailed View of an Elevation Request
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqZHIrunXfmyLDah9lx44%252FPEDM%2520Managing%2520Requests.jpg%3Falt%3Dmedia%26token%3Da04e8a43-30b7-40cb-a40c-0c7756aef09c&width=768&dpr=4&quality=100&sign=8a3cc8e0&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOSIU7ZuOJXSON8ZhgyfA%252FRequests.png%3Falt%3Dmedia%26token%3Deecb623a-7f69-47d7-ab24-66a710dee8a9&width=768&dpr=4&quality=100&sign=e7213101&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fp5spsEQatbV45TrPovnC%252FApplication%2520Metadata%2520-%2520Expanded%2520Example.png%3Falt%3Dmedia%26token%3De9450959-dd4c-4fc3-a7cb-091a19d79f98&width=768&dpr=4&quality=100&sign=7013b474&sv=2)
 

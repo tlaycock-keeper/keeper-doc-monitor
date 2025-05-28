@@ -4,7 +4,7 @@ prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fp7my2BdDymT5
 x-
 prod.appspot.com%2Fo%2Fspaces%252FOthZEjvFH25YbgTBe0jT%252Flogo%252Fqe0JYUjJDoQWioecglOW%252Fkeeper-
 no-
-tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en/)
+tag.png%3Falt%3Dmedia%26token%3D29dff9f6-9c7e-41f4-80a3-e879ee78667c&width=260&dpr=4&quality=100&sign=1e0a5ac8&sv=2)](https://docs.keeper.io/en)
 
 Ask or search...
 
@@ -79,6 +79,21 @@ KeeperPAM and Secrets Manager
       * [Rotation Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview)
       * [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
 
+        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
+
+          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
+          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
+          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
+          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
+          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
+
+            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
+            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
+            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
+            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
+            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
+            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
+
         * [Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure)
 
           * [Azure AD Users](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-ad-users)
@@ -106,31 +121,14 @@ KeeperPAM and Secrets Manager
             * [AWS RDS for MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mariadb)
             * [AWS RDS for Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-oracle)
 
-        * [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
-
-          * [Active Directory or OpenLDAP User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
-          * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
-          * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
-          * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
-          * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
-
-            * [Native MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
-            * [Native MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
-            * [Native PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
-            * [Native MongoDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
-            * [Native MS SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
-            * [Native Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
-
-        * [SaaS Accounts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
+        * [SaaS Rotation Plugins](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-rotation-plugins)
+        * [Custom Scripts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts)
 
           * [Okta User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/okta-user)
           * [Snowflake User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/snowflake-user)
           * [Rotate Credential via REST API](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/rotate-credential-via-rest-api)
-
-        * [Network Devices](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices)
-
-          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-ios-xe)
-          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/network-devices/cisco-meraki)
+          * [Cisco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-ios-xe)
+          * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-meraki)
 
       * [Service Management](/en/keeperpam/privileged-access-manager/password-rotation/service-management)
       * [Post-Rotation Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts)
@@ -200,6 +198,7 @@ KeeperPAM and Secrets Manager
       * [Importing PAM Records](/en/keeperpam/privileged-access-manager/references/importing-pam-records)
       * [Managing Rotation via CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-cli)
       * [ITSM Integration](/en/keeperpam/privileged-access-manager/references/itsm-integration)
+      * [Vendor Privileged Access Management](/en/keeperpam/privileged-access-manager/references/vendor-privileged-access-management)
       * [Commander SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
       * [Cron Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
       * [Preview Access](/en/keeperpam/privileged-access-manager/references/preview-access)
@@ -293,7 +292,7 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [MCP (Model Context Protocol)](/en/keeperpam/secrets-manager/integrations/mcp-model-context-protocol)
+      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -395,36 +394,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview
@@ -457,9 +426,39 @@ started/pam-resources/pam-user)[NextJust-In-Time Access
 (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-
 access-jit)
 
-Last updated 1 hour ago
+Last updated 1 day ago
 
 Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -473,7 +472,25 @@ the vault. Users with KeeperPAM management privileges can assign access rights
 to managed resources with flexibility, offering permanent, time-limited, or
 just-in-time (JIT) access based on organizational needs.
 
-  *   *   *   *   *   *   *   *   *   * 
+  * [Planning your Deployment](/en/keeperpam/privileged-access-manager/getting-started/access-controls#planning-your-deployment)
+
+  * [Role-Based Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-started/access-controls#role-based-enforcement-policies)
+
+  * [PAM Configuration Settings](/en/keeperpam/privileged-access-manager/getting-started/access-controls#pam-configuration)
+
+  * [Application and Device Access Control](/en/keeperpam/privileged-access-manager/getting-started/access-controls#application-and-device-access-control)
+
+  * [Device and Gateway IP Locking](/en/keeperpam/privileged-access-manager/getting-started/access-controls#device-and-gateway-ip-locking)
+
+  * [PAM Resource Sharing and Permissions](/en/keeperpam/privileged-access-manager/getting-started/access-controls#pam-resource-sharing-and-permissions)
+
+  * [Record Linking](/en/keeperpam/privileged-access-manager/getting-started/access-controls#record-linking)
+
+  * [Zero-Trust Access through Connection Sharing](/en/keeperpam/privileged-access-manager/getting-started/access-controls#zero-trust-access-through-record-sharing)
+
+  * [Time-limited Access](/en/keeperpam/privileged-access-manager/getting-started/access-controls#time-limited-access)
+
+  * [Revoking Access](/en/keeperpam/privileged-access-manager/getting-started/access-controls#revoking-access)
 
 ###
 
@@ -505,6 +522,9 @@ Keeper Commander
 Sharing and unsharing applications is available in the Keeper Commander CLI
 and SDK.
 
+See the [`secrets-manager app share`](/en/keeperpam/commander-cli/command-
+reference/secrets-manager-commands#secrets-manager-app-share-command) command.
+
 ###
 
 **Role-Based Enforcement Policies**
@@ -522,7 +542,9 @@ limited to only using resources assigned to them.
 A more in-depth look at Admin Console nodes, roles and permissions can be
 found in the Keeper Enterprise admin guide:
 
-  *   * 
+  * [Nodes and Organizational Structure](https://docs.keeper.io/en/enterprise-guide/nodes-and-organizational-structure)
+
+  * [Roles, RBAC and Permissions](https://docs.keeper.io/en/enterprise-guide/roles)
 
 ###
 
@@ -532,7 +554,7 @@ The PAM Configuration acts as a set of "parental controls" for PAM records. It
 enables or disables specific PAM features for all resources using the
 configuration.
 
-  * 
+  * More information on [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
 
 ###
 
@@ -586,6 +608,14 @@ A Shared Folder contains PAM Resources, such as:
 
   * **PAM User**
 
+To ensure least privilege, we recommend splitting the PAM Users into a
+separate shared folder, in order to restrict what users and devices can access
+the underlying secrets. When launching our [Quick Start
+Sandbox](/en/keeperpam/privileged-access-manager/quick-start-sandbox) or using
+our [Gateway wizard](/en/keeperpam/privileged-access-manager/getting-
+started/gateways), Keeper will automatically place the resources and users
+into separate shared folders.
+
 For example, this demo environment as seen below provides full access to
 DevOps, but limits access to only viewing and using resources to the
 Developers team:
@@ -637,7 +667,7 @@ Managing ownership and permissions of resources and records within the Keeper
 Vault can be delegated to other Keeper admins through the Share Admin
 permission.
 
-  * 
+  * Read more about the [Share Admin feature](https://docs.keeper.io/en/enterprise-guide/sharing/share-admin) in the Keeper Enterprise docs
 
 ###
 
@@ -651,7 +681,7 @@ underlying credentials.
 
   * Sharing a resource to a user with view-only access only gives them the ability to launch connections and tunnels.
 
-  * 
+  * Keeper's [zero-trust architecture](/en/keeperpam/privileged-access-manager/getting-started/architecture) provides access to the target systems without sharing the credential, ensuring least privilege access.
 
 In the example below, a PAM Database is linked to a specific user `sqluser`.
 Connections to the database using that account is available to users without
@@ -702,75 +732,6 @@ Automatic Rotation after Share Expiration
 If you have a use case where a PAM User credential needs to be shared to
 another user, you have the option of automatically rotating the credential
 after the sharing has expired.
-
-See the  command.
-
-More information on
-
-To ensure least privilege, we recommend splitting the PAM Users into a
-separate shared folder, in order to restrict what users and devices can access
-the underlying secrets. When launching our  or using our , Keeper will
-automatically place the resources and users into separate shared folders.
-
-Read more about the  in the Keeper Enterprise docs
-
-Keeper's  provides access to the target systems without sharing the
-credential, ensuring least privilege access.
-
-[Nodes and Organizational Structure](https://docs.keeper.io/en/enterprise-
-guide/nodes-and-organizational-structure)
-
-[Roles, RBAC and Permissions](https://docs.keeper.io/en/enterprise-
-guide/roles)
-
-[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
-
-[Quick Start Sandbox](/en/keeperpam/privileged-access-manager/quick-start-
-sandbox)
-
-[Gateway wizard](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)
-
-[Share Admin feature](https://docs.keeper.io/en/enterprise-
-guide/sharing/share-admin)
-
-[zero-trust architecture](/en/keeperpam/privileged-access-manager/getting-
-started/architecture)
-
-[Planning your Deployment](/en/keeperpam/privileged-access-manager/getting-
-started/access-controls#planning-your-deployment)
-
-[Role-Based Enforcement Policies](/en/keeperpam/privileged-access-
-manager/getting-started/access-controls#role-based-enforcement-policies)
-
-[PAM Configuration Settings](/en/keeperpam/privileged-access-manager/getting-
-started/access-controls#pam-configuration)
-
-[Application and Device Access Control](/en/keeperpam/privileged-access-
-manager/getting-started/access-controls#application-and-device-access-control)
-
-[Device and Gateway IP Locking](/en/keeperpam/privileged-access-
-manager/getting-started/access-controls#device-and-gateway-ip-locking)
-
-[PAM Resource Sharing and Permissions](/en/keeperpam/privileged-access-
-manager/getting-started/access-controls#pam-resource-sharing-and-permissions)
-
-[Record Linking](/en/keeperpam/privileged-access-manager/getting-
-started/access-controls#record-linking)
-
-[Zero-Trust Access through Connection Sharing](/en/keeperpam/privileged-
-access-manager/getting-started/access-controls#zero-trust-access-through-
-record-sharing)
-
-[Time-limited Access](/en/keeperpam/privileged-access-manager/getting-
-started/access-controls#time-limited-access)
-
-[Revoking Access](/en/keeperpam/privileged-access-manager/getting-
-started/access-controls#revoking-access)
-
-[`secrets-manager app share`](/en/keeperpam/commander-cli/command-
-reference/secrets-manager-commands#secrets-manager-app-share-command)
 
 Application Sharing
 

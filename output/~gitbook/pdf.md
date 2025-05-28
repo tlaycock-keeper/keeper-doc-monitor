@@ -1,4 +1,4 @@
-[](https://docs.keeper.io/en/keeperpam/ "Go back to content")
+[](https://docs.keeper.io/en/keeperpam "Go back to content")
 
 [All pages](?limit=300)
 
