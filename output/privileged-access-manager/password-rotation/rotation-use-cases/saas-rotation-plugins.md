@@ -394,36 +394,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * KeeperPAM SaaS Rotation Plugins
@@ -455,9 +425,39 @@ rotation/rotation-use-cases/aws/managed-database/aws-rds-for-
 oracle)[NextCustom Scripts](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/saas-accounts)
 
-Last updated 9 hours ago
+Last updated 1 day ago
 
 Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -496,11 +496,15 @@ KeeperPAM includes pre-built integrations for popular services:
 
 Public SaaS Integrations
 
+In Keeper's [SaaS Github Repository](https://github.com/Keeper-
+Security/discovery-and-rotation-saas-dev), several new rotation plugins have
+been created, including:
+
   * **AWS Cognito**
 
   * **Cisco APIC**
 
-  * 
+  * **and**[**More**](https://github.com/Keeper-Security/discovery-and-rotation-saas-dev/tree/main/integrations)
 
 ###
 
@@ -701,6 +705,9 @@ In addition to built-in integrations, you can use custom plugins for
 additional services. Keeper maintains a repository of community-contributed
 plugins:
 
+**GitHub Repository:** [discovery-and-rotation-saas-
+dev](https://github.com/Keeper-Security/discovery-and-rotation-saas-dev)
+
 Check the `integrations/` folder for available plugins, which may include:
 
   * Additional cloud services
@@ -795,6 +802,10 @@ repository includes:
 
   * Testing framework
 
+Visit the [repository README](https://github.com/Keeper-Security/discovery-
+and-rotation-saas-dev) for detailed development instructions. To contribute to
+the community rotation plugin directory, submit a pull request.
+
 ###
 
 Best Practices
@@ -847,32 +858,9 @@ Support and Resources
 
   * **Enterprise Support:** Contact your Keeper representative for assistance with custom integrations
 
-In Keeper's , several new rotation plugins have been created, including:
-
-**and**
-
-**GitHub Repository:**
-
-Visit the  for detailed development instructions. To contribute to the
-community rotation plugin directory, submit a pull request.
-
 For the most up-to-date list of available plugins and integration examples,
-regularly check the .
-
-[SaaS Github Repository](https://github.com/Keeper-Security/discovery-and-
-rotation-saas-dev)
-
-[**More**](https://github.com/Keeper-Security/discovery-and-rotation-saas-
-dev/tree/main/integrations)
-
-[discovery-and-rotation-saas-dev](https://github.com/Keeper-
-Security/discovery-and-rotation-saas-dev)
-
-[repository README](https://github.com/Keeper-Security/discovery-and-rotation-
-saas-dev)
-
-[GitHub repository](https://github.com/Keeper-Security/discovery-and-rotation-
-saas-dev)
+regularly check the [GitHub repository](https://github.com/Keeper-
+Security/discovery-and-rotation-saas-dev).
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

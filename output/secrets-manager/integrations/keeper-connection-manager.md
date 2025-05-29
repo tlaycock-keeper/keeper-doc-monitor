@@ -394,33 +394,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Features
-  * Prerequisites
-  * Installation
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=5UXqCzvz7hKMYxnhrbo5&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Keeper Connection Manager
-
-Keeper Secrets Manager integration into Keeper Connection Manager for dynamic
-secrets retrieval
-
-[PreviousJenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-
-plugin)[NextKubernetes External Secrets Operator](/en/keeperpam/secrets-
-manager/integrations/kubernetes-external-secrets-operator)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -450,6 +423,33 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Features
+  * Prerequisites
+  * Installation
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=5UXqCzvz7hKMYxnhrbo5&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Keeper Connection Manager
+
+Keeper Secrets Manager integration into Keeper Connection Manager for dynamic
+secrets retrieval
+
+[PreviousJenkins Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-
+plugin)[NextKubernetes External Secrets Operator](/en/keeperpam/secrets-
+manager/integrations/kubernetes-external-secrets-operator)
+
+Last updated 4 months ago
+
+Was this helpful?
 
 ##
 
@@ -505,11 +505,11 @@ manager-configuration)
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
-[Vault IntegrationKeeper Connection Manager](https://docs.keeper.io/keeper-
-connection-manager/vault-integration)
-
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
+
+[Vault IntegrationKeeper Connection Manager](https://docs.keeper.io/keeper-
+connection-manager/vault-integration)
 
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F1748446847-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

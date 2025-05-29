@@ -426,10 +426,28 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Prepare a Record for Rotation
+  * Create a Record for Rotation
+  * Set the Login Name
+  * Rotate
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-Mf4ooIm9OOeZ4dfpuGw&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
+
+# Windows Plugin
+
+Rotate Windows user passwords with Commander
+
+[PreviousUnix Passwd Plugin](/en/keeperpam/commander-cli/command-
+reference/plugins/unix-passwd-plugin)[NextActive Directory
+Plugin](/en/keeperpam/commander-cli/command-reference/plugins/active-
+directory-plugin)
 
 Last updated 4 months ago
 
@@ -474,25 +492,6 @@ field.
 Add the following Custom Fields to the record that you want to rotate within
 Keeper
 
-##
-
-Rotate
-
-To rotate Windows passwords, use the `rotate` command in Commander. Pass the
-command a record title or UID (or use `--match` with a regular expression to
-rotate several records at once)
-
-The plugin can be supplied to the command as shown here, or added to a record
-field (see options above). Adding the plugin type to the record makes it
-possible to rotate several records at once with different plugins.
-
-####
-
-Output
-
-After rotation is completed, the new password will be stored in the `Password`
-field of the record
-
 Label
 
 Value
@@ -514,29 +513,30 @@ cmdr:rules
 
 (Optional) Password generation rules
 
+##
+
+Rotate
+
+To rotate Windows passwords, use the `rotate` command in Commander. Pass the
+command a record title or UID (or use `--match` with a regular expression to
+rotate several records at once)
+
 Copy
 
     
     
     rotate "Windows Example" --plugin windows
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
+The plugin can be supplied to the command as shown here, or added to a record
+field (see options above). Adding the plugin type to the record makes it
+possible to rotate several records at once with different plugins.
 
-# Windows Plugin
+####
 
-Rotate Windows user passwords with Commander
+Output
 
-[PreviousUnix Passwd Plugin](/en/keeperpam/commander-cli/command-
-reference/plugins/unix-passwd-plugin)[NextActive Directory
-Plugin](/en/keeperpam/commander-cli/command-reference/plugins/active-
-directory-plugin)
-
-  * Prepare a Record for Rotation
-  * Create a Record for Rotation
-  * Set the Login Name
-  * Rotate
+After rotation is completed, the new password will be stored in the `Password`
+field of the record
 
 [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
 rotation)

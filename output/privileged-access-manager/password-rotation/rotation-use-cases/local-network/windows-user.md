@@ -471,15 +471,9 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+  *   *   *   *   * The Keeper Gateway can communicate over WinRM or SSH to the target machine:
 
-  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed and showing online
-
-  * The Keeper Gateway can communicate over WinRM or SSH to the target machine:
-
-    * **WinRM:** Enabled and running on port 5986. Verification: Run `winrm get winrm/config` to verify that WinRM is running. See [WinRM setup page](/en/keeperpam/privileged-access-manager/references/setting-up-winrm) for installation help. **OR...**
-
-    * **SSH:** Enabled and running on port 22. Verification: Run `ssh [your-user]@[your-machine] -p 22` to verify that SSH is running.
+    *     * **SSH:** Enabled and running on port 22. Verification: Run `ssh [your-user]@[your-machine] -p 22` to verify that SSH is running.
 
 ##
 
@@ -613,22 +607,39 @@ credentials for any Windows services running as the PAM User, and restart the
 service. Keeper will also update the credential of any scheduled task running
 as that user on the target machine.
 
-To learn more and set up this capability, see the [Service
-Management](/en/keeperpam/privileged-access-manager/password-rotation/service-
-management) page.
-
 Keeper Secrets Manager is enabled for your
 
 Keeper Rotation is enabled for your
 
+A Keeper Secrets Manager  has been created
+
+A Keeper Rotation  is already installed and showing online
+
+**WinRM:** Enabled and running on port 5986. Verification: Run `winrm get
+winrm/config` to verify that WinRM is running. See  for installation help.
+**OR...**
+
+To learn more and set up this capability, see the  page.
+
+[application](/en/keeperpam/privileged-access-manager/getting-
+started/applications)
+
+[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+[WinRM setup page](/en/keeperpam/privileged-access-manager/references/setting-
+up-winrm)
+
+[Service Management](/en/keeperpam/privileged-access-manager/password-
+rotation/service-management)
+
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
+
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
+
 [page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
 cases/local-network#rotation-on-the-local-network)
-
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
-
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

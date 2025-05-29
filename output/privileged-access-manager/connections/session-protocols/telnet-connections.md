@@ -451,7 +451,7 @@ manager/connections/session-protocols/vnc-
 connections)[NextKubernetes](/en/keeperpam/privileged-access-
 manager/connections/session-protocols/kubernetes)
 
-Last updated 8 days ago
+Last updated 9 days ago
 
 Was this helpful?
 
@@ -629,6 +629,17 @@ manager/connections/getting-started)
 [Example: Linux Machine](/en/keeperpam/privileged-access-manager/getting-
 started/pam-resources/pam-machine/example-linux-machine)
 
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this .
+
+  * Learn more about 
+
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+
+[Session Recording and Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
+
 Field
 
 Definition
@@ -642,17 +653,6 @@ Administrative Credential Record
 
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
-
-For this protocol, both graphical and the full, raw text text content of
-terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this .
-
-  * Learn more about 
-
-[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
-
-[Session Recording and Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)

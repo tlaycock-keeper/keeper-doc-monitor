@@ -449,7 +449,7 @@ Step by step guides for performing rotation on any target system
 rotation/rotation-overview)[NextLocal Network](/en/keeperpam/privileged-
 access-manager/password-rotation/rotation-use-cases/local-network)
 
-Last updated 11 hours ago
+Last updated 1 day ago
 
 Was this helpful?
 

@@ -451,7 +451,7 @@ manager/connections/session-protocols/postgresql-connections)[NextTelnet
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/telnet-connections)
 
-Last updated 8 days ago
+Last updated 9 days ago
 
 Was this helpful?
 
@@ -591,6 +591,12 @@ manager/connections/getting-started)
 [Example: Azure Windows VM](/en/keeperpam/privileged-access-manager/getting-
 started/pam-resources/pam-machine/example-azure-windows-vm)
 
+For this protocol, graphical data, including timing information, is recorded.
+For more details on the recordings and how to access them, see the  docs.
+
+[Session Recording & Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
+
 Field
 
 Definition
@@ -607,12 +613,6 @@ perform administrative operations on it.
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
-
-For this protocol, graphical data, including timing information, is recorded.
-For more details on the recordings and how to access them, see the  docs.
-
-[Session Recording & Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
 
 VNC Session Recordings
 

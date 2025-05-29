@@ -452,7 +452,7 @@ Managing groups of protected resources for endpoint privilege manager
 manager/deployment)[NextPolicies](/en/keeperpam/endpoint-privilege-
 manager/policies)
 
-Last updated 4 days ago
+Last updated 5 days ago
 
 Was this helpful?
 

@@ -426,12 +426,31 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * Requirements
+  * Encryption
+  * Deployment Package
+  * Deployment Collections
+  * Discovery of Inventory Data
+  * Commander CLI
+  * Next Steps
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=KEkG5ky7xq0IniHT6zVE&only=yes&limit=100)
 
-Last updated 4 days ago
+  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
+
+# Deployment
+
+Deploying the Keeper Agent to your endpoints
+
+[PreviousSetup](/en/keeperpam/endpoint-privilege-
+manager/setup)[NextCollections](/en/keeperpam/endpoint-privilege-
+manager/collections)
+
+Last updated 5 days ago
 
 Was this helpful?
 
@@ -540,24 +559,6 @@ Agent Management
 The `pedm agent` command provides management over individual agents running on
 the endpoint.
 
-####
-
-Deployment
-
-The `pedm deployment` command provides management over agent deployments.
-
-####
-
-Reports
-
-The `pedm report` command provides event logs and event reports.
-
-###
-
-Next Steps
-
-Once you have deployed the agent, discovery kicks in and generates .
-
 Copy
 
     
@@ -571,6 +572,12 @@ Copy
     edit        Update PEDM agents
     delete      Delete PEDM agents
     collection  List PEDM agent resources
+
+####
+
+Deployment
+
+The `pedm deployment` command provides management over agent deployments.
 
 Copy
 
@@ -587,6 +594,12 @@ Copy
     delete     Delete PEDM deployment
     download   Download PEDM deployment package
 
+####
+
+Reports
+
+The `pedm report` command provides event logs and event reports.
+
 Copy
 
     
@@ -599,24 +612,11 @@ Copy
     event      Run audit event reports
     summary    Run audit summary reports
 
-  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
+###
 
-# Deployment
+Next Steps
 
-Deploying the Keeper Agent to your endpoints
-
-[PreviousSetup](/en/keeperpam/endpoint-privilege-
-manager/setup)[NextCollections](/en/keeperpam/endpoint-privilege-
-manager/collections)
-
-  * Overview
-  * Requirements
-  * Encryption
-  * Deployment Package
-  * Deployment Collections
-  * Discovery of Inventory Data
-  * Commander CLI
-  * Next Steps
+Once you have deployed the agent, discovery kicks in and generates .
 
 [collections](/en/keeperpam/endpoint-privilege-manager/collections)
 

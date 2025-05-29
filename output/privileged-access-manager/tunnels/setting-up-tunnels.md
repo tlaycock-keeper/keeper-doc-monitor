@@ -746,19 +746,6 @@ resources/pam-database)
 [PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-directory)
 
-An active license is required in order to use the features available with
-KeeperPAM. This license is available for both business and enterprise
-customers.
-
-  *   *   * 
-
-[KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-
-management/)
-
-[Request a Demo](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-
-[Contact Support](https://www.keepersecurity.com/support.html)
-
 Enforcement Policies for Tunnels
 
 Tunnel Settings in a KeeperPAM Resource
@@ -768,10 +755,6 @@ Record View with the Start Tunnel action
 Active Tunnel
 
 MySQL Workbench with a Local Tunnel
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7qh2srRpGVVCcvTTt2Fr%252FScreenshot%25202025-01-21%2520at%252011.59.32%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D20a4c885-1eb9-4a8d-89fe-3aa9b6948e92&width=768&dpr=4&quality=100&sign=42a0ffbb&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -792,6 +775,23 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4bsuT2Ol9
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FG45mktqPR9PKR9mkjvqi%252FScreenshot%25202025-01-15%2520at%25202.32.27%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D9bfdd81b-d39d-404d-a2a3-16826cfa7323&width=768&dpr=4&quality=100&sign=7fa9028b&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7qh2srRpGVVCcvTTt2Fr%252FScreenshot%25202025-01-21%2520at%252011.59.32%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D20a4c885-1eb9-4a8d-89fe-3aa9b6948e92&width=768&dpr=4&quality=100&sign=42a0ffbb&sv=2)
+
+An active license is required in order to use the features available with
+KeeperPAM. This license is available for both business and enterprise
+customers.
+
+  *   *   * 
+
+[KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-
+management/)
+
+[Request a Demo](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+
+[Contact Support](https://www.keepersecurity.com/support.html)
 
 [Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
 manager-commands#overview)

@@ -394,35 +394,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Features
-  * KeeperPAM Events
-  * Recommended Alerts
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=n7N9m0jqA1BbRWfUyZO2&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-# Alerts and SIEM Integration
-
-Monitoring Gateway events and integrating with your SIEM
-
-[PreviousAuto Updater](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/auto-updater)[NextAdvanced
-Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/advanced-configuration)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -452,6 +423,17 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=n7N9m0jqA1BbRWfUyZO2&only=yes&limit=100)
+
+Last updated 3 months ago
+
+Was this helpful?
 
 ###
 
@@ -504,11 +486,29 @@ gateway.
 
 Email alerts contain event information
 
-[Keeper Commander](/en/keeperpam/commander-cli/command-reference/reporting-
-commands#audit-report-command)
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+# Alerts and SIEM Integration
+
+Monitoring Gateway events and integrating with your SIEM
+
+[PreviousAuto Updater](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/auto-updater)[NextAdvanced
+Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/advanced-configuration)
+
+  * Overview
+  * Features
+  * KeeperPAM Events
+  * Recommended Alerts
 
 [Reporting, Alerts & SIEM integration](https://docs.keeper.io/en/enterprise-
 guide/event-reporting)
+
+[Keeper Commander](/en/keeperpam/commander-cli/command-reference/reporting-
+commands#audit-report-command)
 
 KeeperPAM Events
 

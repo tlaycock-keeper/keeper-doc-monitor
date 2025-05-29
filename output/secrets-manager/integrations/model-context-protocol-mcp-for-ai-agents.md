@@ -447,7 +447,7 @@ Integrate Keeper Secrets Manager into AI agents
 keyring)[NextOctopus Deploy](/en/keeperpam/secrets-
 manager/integrations/octopus-deploy)
 
-Last updated 5 hours ago
+Last updated 1 day ago
 
 Was this helpful?
 

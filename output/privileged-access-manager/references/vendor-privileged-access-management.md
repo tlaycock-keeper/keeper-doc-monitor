@@ -433,6 +433,7 @@ On this page
   * Example Use Cases
   * Get Started
   * Screenshots
+  * Additional Info
 
 Was this helpful?
 
@@ -445,6 +446,14 @@ PDF](/en/keeperpam/~gitbook/pdf?page=bxgLe7jIArcxXmkYoe3r&only=yes&limit=100)
 # Vendor Privileged Access Management
 
 How KeeperPAM provides Vendor Privileged Access (VPAM)
+
+[PreviousITSM Integration](/en/keeperpam/privileged-access-
+manager/references/itsm-integration)[NextCommander
+SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
+
+Last updated 9 hours ago
+
+Was this helpful?
 
 ##
 
@@ -541,7 +550,7 @@ How It Works
 
   2. **Vendor Authentication**
 
-     * Invite the vendor to join your Keeper tenant
+     * Invite the vendor to join your Keeper tenant using SSO or email/password/MFA
 
      * Assign the vendor to a role
 
@@ -600,25 +609,50 @@ Screenshots
 The below screenshots walk through the basic process of provisioning resources
 to a third-party vendor or contractor.
 
-Creating a Vendor Access role:
+Invite the Vendor through your identity provider, AD, SSO or SCIM connection.
+Alternatively, you can create a Node in your Keeper tenant that is associated
+to a different directory.
 
-Enforce MFA on every login, with a hardware-based FIDO2 security key:
+Vendors can be provisioned through AD/LDAP, SSO, SCIM or manual method.
 
-Disable the ability to create records or folders (only receive shared items):
+RBAC is applied to vendors through Role Enforcement policies:
 
-Only permit launching connections and tunnels:
+Role policies can be configured to enforce MFA on every login, with a
+hardware-based FIDO2 security key, TOTP or other methods.
 
-Assigning the contractor to a Shared Folder with no permissions:
+Typically, the vendor will have limited ability to create records or folders -
+in this case, they can only receive shared items.
 
-Activating Session Recording and JIT:
+Privileged Access Manager enforcement policies can then be limited to allow
+only launching connections and tunnels.
 
-[PreviousITSM Integration](/en/keeperpam/privileged-access-
-manager/references/itsm-integration)[NextCommander
-SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
+From the vault, the admin can assign the contractor to a Shared Folder with no
+permissions, or to individual resources as needed.
 
-Last updated 48 minutes ago
+Within each resource, session recording, JIT and other capabilities are
+configured.
 
-Was this helpful?
+The vendor then logs in to their vault with MFA and can launch into the
+session. Credentials are not exposed. In this example, they have been provided
+access to a MySQL database.
+
+Vendor launches the connection to the resource (in this case, a database),
+with one click. All session activity is recorded and logged.
+
+Admin Console event logs are generated for session launch activity.
+
+###
+
+Additional Info
+
+Vendor Privileged Access Management (VPAM) is included by default in all
+KeeperPAM environments—**no separate license is required**. External vendor
+accounts are treated the same as internal users in terms of licensing.
+
+Depending on your organization’s policies, external vendors can also benefit
+from additional Keeper capabilities, including:
+
+  *   *   *   * 
 
 through your identity provider
 
@@ -631,6 +665,15 @@ Create  in the Keeper Vault
 Activate PAM settings on the resource such as ,  and
 
 to the resource through time-limited access without sharing the credentials
+
+**Accessing target systems from their own device** using
+
+**Federated identity support** , allowing  with the vendor’s identity provider
+
+**Delegated Administration** to designated  to specific nodes
+
+**Deploying Keeper Connection Manager (self-hosted)** for remote access with a
+custom interface, session joining and  methods.
 
 [Activate KeeperPAM](/en/keeperpam/privileged-access-manager/setup-steps)
 
@@ -650,7 +693,52 @@ and-playback)
 [Share access](/en/keeperpam/privileged-access-manager/getting-started/access-
 controls)
 
-Add Role
+[Keeper Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
+
+[Provision the vendor](https://docs.keeper.io/en/enterprise-guide/user-and-
+team-provisioning)
+
+[role policies](https://docs.keeper.io/en/enterprise-guide/roles)
+
+[SSO integration](https://docs.keeper.io/en/enterprise-guide/sso-saml-
+integration)
+
+[limited admin rights](https://docs.keeper.io/en/enterprise-guide/delegated-
+administration)
+
+Creating a Vendor Node
+
+Provisioning Method
+
+Add Vendor Role
+
+MFA Enforcement
+
+Sharing Enforcement
+
+PAM Enforcements
+
+Shared Folder
+
+PAM Settings
+
+MFA into the Keeper Vault
+
+Launching a connection
+
+Event Logs
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfzXSmnmRNppDzhDZIGKt%252Fvendorpam.png%3Falt%3Dmedia%26token%3D28cb2545-c99e-4b1e-8b8a-43f3af4528a3&width=768&dpr=4&quality=100&sign=be2f61d0&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FS5t6beZ8AEdXxzJcw52N%252FScreenshot%25202025-05-28%2520at%25207.29.25%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D41d151c4-07d6-447b-976a-7a2d3dcc9081&width=768&dpr=4&quality=100&sign=596ccbf9&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkP8pCOUKg0AA5jBRTJBe%252FScreenshot%25202025-05-28%2520at%25208.10.59%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D80945498-d29a-4061-a265-9e6b64c83635&width=768&dpr=4&quality=100&sign=6d4d7d4a&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -677,8 +765,19 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuK5NfKOJK
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSMUO3GapZNeNdAPEazum%252FScreenshot%25202025-05-27%2520at%25207.35.15%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dac759f69-d612-47e9-ab23-998cbd4395ec&width=768&dpr=4&quality=100&sign=36c8f33b&sv=2)
 
-[Provision the vendor](https://docs.keeper.io/en/enterprise-guide/user-and-
-team-provisioning)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNwXHT8LxCqqSAfzYSTf2%252FScreenshot%25202025-05-27%2520at%25207.40.25%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dbde49feb-50b3-4cff-
+bc38-4e2869b443b9&width=768&dpr=4&quality=100&sign=6310e743&sv=2)
 
-[role policies](https://docs.keeper.io/en/enterprise-guide/roles)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfEc1cE2geYusWm5eSCG5%252FScreenshot%25202025-05-27%2520at%25207.40.47%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D37db58b3-22b3-49a8-9485-a4293623e916&width=768&dpr=4&quality=100&sign=132d8177&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5pZoQXuyuRA4oS9zLhTp%252FScreenshot%25202025-05-28%2520at%25208.18.48%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dda40678f-f7b8-441d-afc2-7e6526a410b0&width=768&dpr=4&quality=100&sign=a4a8e13&sv=2)
+
+[advanced integration](https://docs.keeper.io/en/keeper-connection-
+manager/using-keeper-connection-manager/launching-connections)
 

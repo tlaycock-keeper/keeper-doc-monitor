@@ -426,20 +426,14 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Using Port Mappings
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=Ax7er5mBNVgdfkFoyybz&only=yes&limit=100)
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
+Last updated 5 months ago
 
-# Port Mapping
-
-Defining alternative ports in PAM Configurations
+Was this helpful?
 
 ##
 
@@ -462,6 +456,24 @@ Resource Type
 Connection Type
 
 Standard Port
+
+##
+
+Using Port Mappings
+
+To use a non-standard port, specify the alternative port in two places:
+
+  * In the PAM Configuration port mapping field, enter `{port}=`{`connection}`, for example,` 32636=ldaps.`
+
+  * For `{connection}`: refer to the labels under Standard Port in the standard ports table.
+
+  * In the PAM Machine/Directory/Database record, enter the chosen port in the port field
+
+For example, to connect to a MySQL database using port 3307, your PAM
+Configuration should have `3307=mysql` under port mapping, and your PAM
+Database record should reference port 3307.
+
+Multiple port mappings are newline-separated in the PAM Configuration.
 
 PAM Machine
 
@@ -523,29 +535,17 @@ MongoDB
 
 27017=mongodb
 
-##
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
 
-Using Port Mappings
+# Port Mapping
 
-To use a non-standard port, specify the alternative port in two places:
-
-  * In the PAM Configuration port mapping field, enter `{port}=`{`connection}`, for example,` 32636=ldaps.`
-
-  * For `{connection}`: refer to the labels under Standard Port in the standard ports table.
-
-  * In the PAM Machine/Directory/Database record, enter the chosen port in the port field
-
-For example, to connect to a MySQL database using port 3307, your PAM
-Configuration should have `3307=mysql` under port mapping, and your PAM
-Database record should reference port 3307.
-
-Multiple port mappings are newline-separated in the PAM Configuration.
+Defining alternative ports in PAM Configurations
 
 [PreviousReferences](/en/keeperpam/privileged-access-
 manager/references)[NextSetting up SSH](/en/keeperpam/privileged-access-
 manager/references/setting-up-ssh)
 
-Last updated 5 months ago
-
-Was this helpful?
+  * Overview
+  * Using Port Mappings
 

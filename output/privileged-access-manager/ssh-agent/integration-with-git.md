@@ -472,7 +472,9 @@ Prerequisites
 
 Features
 
-  *   * 
+  * [GitHub Authentication](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-git#github-authentication)
+
+  * [Signing Commits](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-git#signing-commits)
 
 ##
 
@@ -777,12 +779,6 @@ Copy
 Setup is complete.
 
 is performed
-
-[GitHub Authentication](/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git#github-authentication)
-
-[Signing Commits](/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git#signing-commits)
 
 [Terminal Configuration](/en/keeperpam/privileged-access-manager/ssh-
 agent#terminal-configuration)

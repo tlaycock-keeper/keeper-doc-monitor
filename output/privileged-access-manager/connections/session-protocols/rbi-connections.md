@@ -451,7 +451,7 @@ manager/connections/session-
 protocols/kubernetes)[NextExamples](/en/keeperpam/privileged-access-
 manager/connections/examples)
 
-Last updated 8 days ago
+Last updated 9 days ago
 
 Was this helpful?
 
@@ -590,6 +590,12 @@ Session Recordings - RBI Protocol
 [Getting Started page](/en/keeperpam/privileged-access-
 manager/connections/getting-started)
 
+For this protocol, graphical data, including timing information, is recorded.
+For more details on the recordings and how to access them, see the  docs.
+
+[Session Recording & Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
+
 Field
 
 Definition
@@ -604,14 +610,8 @@ Administrative Credential Record
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
 
-For this protocol, graphical data, including timing information, is recorded.
-For more details on the recordings and how to access them, see the  docs.
-
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
-
-[Session Recording & Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
 
 RBI Session Recordings
 

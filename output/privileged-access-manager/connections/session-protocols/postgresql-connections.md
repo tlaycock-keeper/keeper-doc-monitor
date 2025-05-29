@@ -426,12 +426,32 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview 
+  * Prerequisites
+  * PAM Settings - PostgreSQL Protocol
+  * Accessing Connection Settings
+  * Configuring Connection Settings
+  * Session Recordings - PostgreSQL Protocol
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=JwHgJvf9AUBSg4jvT4Qy&only=yes&limit=100)
 
-Last updated 8 days ago
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
+
+# PostgreSQL Connections
+
+Keeper Connections - PostgreSQL Protocol
+
+[PreviousSQL Server Connections](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/sql-server-connections)[NextVNC
+Connections](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/vnc-connections)
+
+Last updated 3 hours ago
 
 Was this helpful?
 
@@ -458,6 +478,20 @@ protocol:
 PAM Record
 
 Definition
+
+PAM Configuration
+
+The PAM Configuration contains information of your target infrastructure
+
+PAM Database Record
+
+The PAM Database record contains information of the endpoint you want to
+establish an PostgreSQL protocol connection to.
+
+PAM User Record
+
+The PAM User record contains the PostgreSQL user credentials that will be used
+to connect to the endpoint
 
 This guide will use a **PostgreSQL Database**. For more details on how this is
 setup, visit the following page:
@@ -491,12 +525,6 @@ screen, the following fields are all **required** and need to be configured:
 
 The following table lists all the configurable connection settings for the SQL
 Server protocol on the PAM Settings:
-
-Insert Configured PAM Settings Pic
-
-##
-
-Session Recordings - PostgreSQL Protocol
 
 Field
 
@@ -561,39 +589,9 @@ Can paste from clipboard
 If enabled, user can paste text from local clipboard into the connected
 protocol session
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
+##
 
-# PostgreSQL Connections
-
-Keeper Connections - PostgreSQL Protocol
-
-[PreviousSQL Server Connections](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/sql-server-connections)[NextVNC
-Connections](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/vnc-connections)
-
-  * Overview 
-  * Prerequisites
-  * PAM Settings - PostgreSQL Protocol
-  * Accessing Connection Settings
-  * Configuring Connection Settings
-  * Session Recordings - PostgreSQL Protocol
-
-PAM Configuration
-
-The PAM Configuration contains information of your target infrastructure
-
-PAM Database Record
-
-The PAM Database record contains information of the endpoint you want to
-establish an PostgreSQL protocol connection to.
-
-PAM User Record
-
-The PAM User record contains the PostgreSQL user credentials that will be used
-to connect to the endpoint
+Session Recordings - PostgreSQL Protocol
 
 [Getting Started page](/en/keeperpam/privileged-access-
 manager/connections/getting-started)
@@ -608,6 +606,11 @@ information on recordings and how to access these recordings, visit this .
 
   * Learn more about 
 
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+
+[Session Recording and Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
+
 Field
 
 Definition
@@ -621,11 +624,6 @@ Administrative Credential Record
 
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
-
-[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
-
-[Session Recording and Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)

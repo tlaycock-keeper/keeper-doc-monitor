@@ -426,10 +426,26 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Supported Operating systems
+  * Video Overview
+  * Typical Binary Installation (recommended)
+  * Python (PIP) installation
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-MJXWW3ypcK5uBpBl08R&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
+
+# CLI Installation on Windows
+
+How to install Keeper Commander CLI on Microsoft Windows
+
+[PreviousInstallation and Setup](/en/keeperpam/commander-cli/commander-
+installation-setup)[NextCLI Installation on macOS](/en/keeperpam/commander-
+cli/commander-installation-setup/installation-on-mac)
 
 Last updated 7 months ago
 
@@ -484,14 +500,38 @@ PATH
 Validate Python is correctly installed by checking the installed version from
 launching the cmd prompt.
 
+Copy
+
+    
+    
+    C:\>pip3 --version
+
 From the command prompt, install Keeper Commander with pip3:
 
+Copy
+
+    
+    
+    pip3 install keepercommander
+
 Once installed, ensure you have the latest version by upgrading Commander:
+
+Copy
+
+    
+    
+    pip3 install --upgrade keepercommander
 
 Please validate all updates in your test environment as commands and
 functionality is under rapid development.
 
 Login to Keeper in order to validate Keeper Commander is properly installed:
+
+Copy
+
+    
+    
+    keeper shell
 
 Note, for your first time logging into a new device or a new location, you may
 have to perform device authorization through email or other 2FA methods.
@@ -500,46 +540,6 @@ On the Commander Github page, the current commander build is always available
 via the .
 
 Download the current version of Python from
-
-Copy
-
-    
-    
-    C:\>pip3 --version
-
-Copy
-
-    
-    
-    pip3 install keepercommander
-
-Copy
-
-    
-    
-    pip3 install --upgrade keepercommander
-
-Copy
-
-    
-    
-    keeper shell
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Installation and Setup](/en/keeperpam/commander-cli/commander-installation-setup)
-
-# CLI Installation on Windows
-
-How to install Keeper Commander CLI on Microsoft Windows
-
-[PreviousInstallation and Setup](/en/keeperpam/commander-cli/commander-
-installation-setup)[NextCLI Installation on macOS](/en/keeperpam/commander-
-cli/commander-installation-setup/installation-on-mac)
-
-  * Supported Operating systems
-  * Video Overview
-  * Typical Binary Installation (recommended)
-  * Python (PIP) installation
 
 ⬇️
 

@@ -491,9 +491,6 @@ Records which have a record type are considered 'typed' or sometimes referred
 to as 'V3'. These records have a malleable structure which can be defined and
 customized as well as an updated encryption model with heightened security.
 
-Typed records are required for some features, such as [Keeper Secrets
-Manager](/en/keeperpam/secrets-manager/overview).
-
 What is a Legacy Record (V2)
 
 Older records which were created before the release of record types are called
@@ -740,11 +737,6 @@ Copy
     
     security-audit sync --hard @all
 
-To complete the process, have the owner of each affected vault log in to their
-account using the latest version of Commander (installer available for
-download [here](https://github.com/Keeper-Security/Commander/releases/latest)
-under the "Assets" heading).
-
 Please be aware that immediately following either of the command calls
 described above, you may see inaccurate security audit scores for the
 corresponding vaults.
@@ -783,19 +775,9 @@ on the firewall outbound.
 
 Found a Bug?
 
-Please let us know. Send an email to commander@keepersecurity.com or open a
-ticket on our [Github Repo](https://github.com/Keeper-
-Security/Commander/issues).
-
 ##
 
 Vulnerability Disclosure Program
-
-Keeper has partnered with Bugcrowd to manage our vulnerability disclosure
-program. Please submit reports through
-<https://bugcrowd.com/keepersecurity>[](https://bugcrowd.com/keepersecurity)
-or send an email to
-[security@keepersecurity.com](mailto:security@keepersecurity.com).
 
 [PreviousService Mode REST API](/en/keeperpam/commander-cli/service-mode-rest-
 api)
@@ -833,6 +815,28 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+Typed records are required for some features, such as .
+
+To complete the process, have the owner of each affected vault log in to their
+account using the latest version of Commander (installer available for
+download  under the "Assets" heading).
+
+Please let us know. Send an email to commander@keepersecurity.com or open a
+ticket on our .
+
+Keeper has partnered with Bugcrowd to manage our vulnerability disclosure
+program. Please submit reports through  or send an email to .
+
+[Keeper Secrets Manager](/en/keeperpam/secrets-manager/overview)
+
+[here](https://github.com/Keeper-Security/Commander/releases/latest)
+
+[Github Repo](https://github.com/Keeper-Security/Commander/issues)
+
+<https://bugcrowd.com/keepersecurity>[](https://bugcrowd.com/keepersecurity)
+
+[security@keepersecurity.com](mailto:security@keepersecurity.com)
 
 [Enforcement PoliciesEnterprise Guide](https://docs.keeper.io/enterprise-
 guide/roles/enforcement-policies)

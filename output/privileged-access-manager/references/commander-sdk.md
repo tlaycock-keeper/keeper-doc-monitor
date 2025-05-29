@@ -431,17 +431,6 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=wWwX1Q3z6gc41bf7F2WU&only=yes&limit=100)
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
-
-# Commander SDK
-
-Managing rotation with the Commander CLI / SDK interface
-
-[PreviousVendor Privileged Access Management](/en/keeperpam/privileged-access-
-manager/references/vendor-privileged-access-management)[NextCron
-Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
-
 Last updated 11 months ago
 
 Was this helpful?
@@ -458,6 +447,17 @@ PAM capabilities including:
   * Managing jobs
 
 For more information see the .
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
+
+# Commander SDK
+
+Managing rotation with the Commander CLI / SDK interface
+
+[PreviousVendor Privileged Access Management](/en/keeperpam/privileged-access-
+manager/references/vendor-privileged-access-management)[NextCron
+Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
 
 [KeeperPAM "pam" command documentation](/en/keeperpam/commander-cli/command-
 reference/keeperpam-commands)

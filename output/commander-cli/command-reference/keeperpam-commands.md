@@ -452,7 +452,7 @@ Connections and Tunneling
 reference/sharing-commands)[NextConnection Commands](/en/keeperpam/commander-
 cli/command-reference/connection-commands)
 
-Last updated 18 days ago
+Last updated 15 hours ago
 
 Was this helpful?
 
@@ -545,33 +545,30 @@ Copy
     usage: pam connection edit [-h] [--configuration CONFIG] [--admin-user ADMIN]
                                [--protocol {,http,kubernetes,mysql,postgresql,rdp,sql-server,ssh,telnet,vnc}]
                                [--connections {on,off,default}] [--connections-recording {on,off,default}]
-                               [--typescript-recording {on,off,default}]
-                               [--connections-override-port CONNECTIONS_OVERRIDE_PORT] [--silent]
+                               [--typescript-recording {on,off,default}] [--connections-override-port CONNECTIONS_OVERRIDE_PORT]
+                               [--silent]
                                record
     
     positional arguments:
-      record                The record UID or path of the PAM resource record with network information to use for
-                            connections
+      record                The record UID or path of the PAM resource record with network information to use for connections
     
     options:
       -h, --help            show this help message and exit
-      --configuration CONFIG, -c CONFIG
-                            The PAM Configuration UID or path to use for connections. Use command `pam config list` to
-                            view available PAM Configurations.
-      --admin-user ADMIN, -a ADMIN
-                            The record path or UID of the PAM User record to configure the admin credential on the PAM
-                            Resource
-      --protocol {,http,kubernetes,mysql,postgresql,rdp,sql-server,ssh,telnet,vnc}, -p {,http,kubernetes,mysql,postgresql,rdp,sql-server,ssh,telnet,vnc}
+      --configuration, -c CONFIG
+                            The PAM Configuration UID or path to use for connections. Use command `pam config list` to view available
+                            PAM Configurations.
+      --admin-user, -a ADMIN
+                            The record path or UID of the PAM User record to configure the admin credential on the PAM Resource
+      --protocol, -p {,http,kubernetes,mysql,postgresql,rdp,sql-server,ssh,telnet,vnc}
                             Set connection protocol
-      --connections {on,off,default}, -cn {on,off,default}
+      --connections, -cn {on,off,default}
                             Set connections permissions
-      --connections-recording {on,off,default}, -cr {on,off,default}
+      --connections-recording, -cr {on,off,default}
                             Set recording connections permissions for the resource
-      --typescript-recording {on,off,default}, -tr {on,off,default}
+      --typescript-recording, -tr {on,off,default}
                             Set TypeScript recording permissions for the resource
-      --connections-override-port CONNECTIONS_OVERRIDE_PORT, -cop CONNECTIONS_OVERRIDE_PORT
+      --connections-override-port, -cop CONNECTIONS_OVERRIDE_PORT
                             Port to use for connections. If not provided, the port from the record will be used.
-      --silent, -s          Silent mode - don't print PAM User, PAM Config etc.
 
 ####
 
@@ -631,34 +628,37 @@ Copy
     
     
     My Vault> pam rotation edit --help
-    usage: pam rotation edit [-h] (--record RECORD_NAME | --folder FOLDER_NAME) [--force] [--config CONFIG] [--iam-aad-config IAM_AAD_CONFIG_UID] [--resource RESOURCE]
-                             [--schedulejson SCHEDULE_JSON_DATA | --schedulecron SCHEDULE_CRON_DATA | --on-demand | --schedule-config] [--complexity PWD_COMPLEXITY]
+    usage: pam rotation edit [-h] (--record RECORD_NAME | --folder FOLDER_NAME) [--force] [--config CONFIG]
+                             [--iam-aad-config IAM_AAD_CONFIG_UID] [--resource RESOURCE] [--schedulejson SCHEDULE_JSON_DATA |
+                             --schedulecron SCHEDULE_CRON_DATA | --on-demand | --schedule-config] [--complexity PWD_COMPLEXITY]
                              [--admin-user ADMIN] [--enable | --disable]
     
     options:
       -h, --help            show this help message and exit
-      --record RECORD_NAME, -r RECORD_NAME
+      --record, -r RECORD_NAME
                             Record UID, name, or pattern to be rotated manually or via schedule
-      --folder FOLDER_NAME, -fd FOLDER_NAME
+      --folder, -fd FOLDER_NAME
                             Used for bulk rotation setup. The folder UID or name that holds records to be configured
       --force, -f           Do not ask for confirmation
-      --config CONFIG, -c CONFIG
-                            UID or path of the configuration record.
-      --iam-aad-config IAM_AAD_CONFIG_UID, -iac IAM_AAD_CONFIG_UID
+      --config, -c CONFIG   UID or path of the configuration record.
+      --iam-aad-config, -iac IAM_AAD_CONFIG_UID
                             UID of a PAM Configuration. Used for an IAM or Azure AD user in place of --resource.
-      --resource RESOURCE, -rs RESOURCE
+      --resource, -rs RESOURCE
                             UID or path of the resource record.
-      --schedulejson SCHEDULE_JSON_DATA, -sj SCHEDULE_JSON_DATA
-                            JSON of the scheduler. Example: -sj '{"type": "WEEKLY", "utcTime": "15:44", "weekday": "SUNDAY", "intervalCount": 1}'
-      --schedulecron SCHEDULE_CRON_DATA, -sc SCHEDULE_CRON_DATA
-                            Cron tab string of the scheduler. Example: to run job daily at 5:56PM UTC enter following cron -sc "56 17 * * *"
+      --schedulejson, -sj SCHEDULE_JSON_DATA
+                            JSON of the scheduler. Example: -sj '{"type": "WEEKLY", "utcTime": "15:44", "weekday": "SUNDAY",
+                            "intervalCount": 1}'
+      --schedulecron, -sc SCHEDULE_CRON_DATA
+                            Cron tab string of the scheduler. Example: to run job daily at 5:56PM UTC enter following cron -sc "56 17
+                            * * *"
       --on-demand, -od      Schedule On Demand
       --schedule-config, -sf
                             Schedule from Configuration
-      --complexity PWD_COMPLEXITY, -x PWD_COMPLEXITY
+      --complexity, -x PWD_COMPLEXITY
                             Password complexity: length, upper, lower, digits, symbols. Ex. 32,5,5,5,5[,SPECIAL CHARS]
-      --admin-user ADMIN, -a ADMIN
-                            UID or path for the PAMUser record to configure the admin credential on the PAM Resource as the Admin when rotating
+      --admin-user, -a ADMIN
+                            UID or path for the PAMUser record to configure the admin credential on the PAM Resource as the Admin when
+                            rotating
       --enable, -e          Enable rotation
       --disable, -d         Disable rotation
 
@@ -858,6 +858,8 @@ Copy
 
 **list**
 
+Display a list of all resources configured for rotation
+
 Copy
 
     
@@ -872,6 +874,8 @@ Copy
 ####
 
 **info**
+
+Display information about the rotation settings for a particular resource.
 
 Copy
 
@@ -888,6 +892,8 @@ Copy
 ####
 
 **script**
+
+Manage post-rotation PAM scripts
 
 Copy
 
@@ -931,6 +937,8 @@ Copy
 
 gateway-info
 
+Display information about the specific Keeper Gateway.
+
 Copy
 
     
@@ -947,6 +955,8 @@ Copy
 ####
 
 discover
+
+Manage Discovery jobs
 
 Copy
 
@@ -966,6 +976,8 @@ Copy
 ####
 
 discover start
+
+Start a discovery job
 
 Copy
 
@@ -999,6 +1011,8 @@ Copy
 
 discover status
 
+Display the status of a discovery job
+
 Copy
 
     
@@ -1019,6 +1033,8 @@ Copy
 
 discover remove
 
+Stop a running discovery job
+
 Copy
 
     
@@ -1034,6 +1050,8 @@ Copy
 ####
 
 discover process
+
+Process the findings of a discovery job
 
 Copy
 
@@ -1054,6 +1072,8 @@ Copy
 
 discover rule
 
+Manage discovery rules
+
 Copy
 
     
@@ -1072,47 +1092,56 @@ Copy
 
 discover rule add
 
+Add a discovery rule
+
 Copy
 
     
     
     My Vault> pam action discover rule add --help
-    usage: dr-discover-rule-add [-h] --gateway GATEWAY --action {add,ignore,prompt} --priority PRIORITY [--ignore-case] [--shared-folder-uid SHARED_FOLDER_UID]
-                                --statement STATEMENT
+    usage: pam-action-discover-rule-add [-h] --gateway GATEWAY --action {add,ignore,prompt} --priority PRIORITY [--ignore-case]
+                                        [--shared-folder-uid SHARED_FOLDER_UID] --statement STATEMENT
     
     options:
       -h, --help            show this help message and exit
-      --gateway GATEWAY, -g GATEWAY
+      --gateway, -g GATEWAY
                             Gateway name of UID.
-      --action {add,ignore,prompt}, -a {add,ignore,prompt}
+      --action, -a {add,ignore,prompt}
                             Action to take if rule matches
-      --priority PRIORITY, -p PRIORITY
+      --priority, -p PRIORITY
                             Rule execute priority
       --ignore-case         Ignore value case. Rule value must be in lowercase.
       --shared-folder-uid SHARED_FOLDER_UID
                             Folder to place record.
-      --statement STATEMENT, -s STATEMENT
+      --statement, -s STATEMENT
                             Rule statement
 
 ####
 
 rotate
 
+Issue a credential rotation on the specific resource, folder of resources, or
+pattern in the resource title.
+
 Copy
 
     
     
     My Vault> pam action rotate --help
-    usage: dr-rotate-command [-h] --record-uid RECORD_UID
+    usage: pam action rotate [-h] [--record-uid RECORD_UID] [--folder FOLDER] [--dry-run]
     
-    optional arguments:
+    options:
       -h, --help            show this help message and exit
-      --record-uid RECORD_UID, -r RECORD_UID
+      --record-uid, -r RECORD_UID
                             Record UID to rotate
+      --folder, -f FOLDER   Shared folder UID or title pattern to rotate
+      --dry-run, -n         Enable dry-run mode
 
 ####
 
 job-info
+
+Display information about the running job
 
 Copy
 
@@ -1132,6 +1161,8 @@ Copy
 ####
 
 job-cancel
+
+Cancel a running job
 
 Copy
 
@@ -1153,6 +1184,9 @@ Copy
 
 service list
 
+Display the services and scheduled tasks associated to a specific Keeper
+Gateway
+
 Copy
 
     
@@ -1168,6 +1202,10 @@ Copy
 ####
 
 service add
+
+Add an association for a service to a specific Keeper Gateway and PAM Machine.
+Once associated, Keeper will update the credentials for that service, on the
+specific PAM Machine, and restart the service (if running).
 
 Copy
 
@@ -1191,6 +1229,8 @@ Copy
 ####
 
 service remove
+
+Remove an association for a service on a specific PAM Machine.
 
 Copy
 
@@ -1237,6 +1277,8 @@ Copy
 
 start
 
+Start a tunnel from the local device to the target resource
+
 Copy
 
     
@@ -1258,6 +1300,8 @@ Copy
 
 list
 
+Display a list of all available tunnels running
+
 Copy
 
     
@@ -1271,6 +1315,8 @@ Copy
 ####
 
 stop
+
+Stop a tunnel that is currently running
 
 Copy
 
@@ -1289,6 +1335,8 @@ Copy
 
 tail
 
+Display information in the Keeper tunnel
+
 Copy
 
     
@@ -1305,6 +1353,8 @@ Copy
 ####
 
 edit
+
+Edit the configuration of an existing Tunnel
 
 Copy
 

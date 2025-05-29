@@ -431,12 +431,9 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=fJaW4f6xbTPfW73Nw4UE&only=yes&limit=100)
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
+Last updated 4 months ago
 
-# Installing sqlcmd on Linux
-
-Installing sqlcmd for accessing SQL Server from a Linux machine
+Was this helpful?
 
 ####
 
@@ -444,21 +441,21 @@ Amazon Linux
 
 Import the Microsoft GPG keys
 
+Add the Microsoft SQL Server Tools repository
+
+Install Command
+
 Copy
 
     
     
     sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
-Add the Microsoft SQL Server Tools repository
-
 Copy
 
     
     
     sudo curl -o /etc/yum.repos.d/mssql-tools.repo https://packages.microsoft.com/config/rhel/7/prod.repo
-
-Install Command
 
 Copy
 
@@ -471,12 +468,15 @@ Copy
     echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile
     source ~/.bash_profile
 
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
+
+# Installing sqlcmd on Linux
+
+Installing sqlcmd for accessing SQL Server from a Linux machine
+
 [PreviousDatabase Import and Export](/en/keeperpam/privileged-access-
 manager/references/database-import-and-export)[NextInstalling Docker on
 Linux](/en/keeperpam/privileged-access-manager/references/installing-docker-
 on-linux)
-
-Last updated 4 months ago
-
-Was this helpful?
 

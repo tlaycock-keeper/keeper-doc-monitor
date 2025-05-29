@@ -447,7 +447,7 @@ manager/getting-started/just-in-time-access-jit)[NextRotation
 Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 overview)
 
-Last updated 11 hours ago
+Last updated 1 day ago
 
 Was this helpful?
 

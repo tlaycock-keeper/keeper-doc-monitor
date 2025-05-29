@@ -461,6 +461,11 @@ Follow the below steps to start using Endpoint Privilege Manager.
 
 Keeper Enterprise license
 
+If you are not a Keeper customer or do not have the required license, you can
+[start a free trial](https://www.keepersecurity.com/password-manager-free-
+trial-sign-up.html) from our website. The free trial includes KeeperPAM full
+capabilities.
+
 2
 
 ###
@@ -496,23 +501,11 @@ Next Steps
 
 Now that Endpoint Privilege Manager is activated, the next steps are:
 
-  *   *   * 
+  * [Deployment](/en/keeperpam/endpoint-privilege-manager/deployment) of the Agent
 
-If you are not a Keeper customer or do not have the required license, you can
-from our website. The free trial includes KeeperPAM full capabilities.
+  * [Set Policies](/en/keeperpam/endpoint-privilege-manager/policies) and
 
-of the Agent
-
-and
-
-[start a free trial](https://www.keepersecurity.com/password-manager-free-
-trial-sign-up.html)
-
-[Deployment](/en/keeperpam/endpoint-privilege-manager/deployment)
-
-[Set Policies](/en/keeperpam/endpoint-privilege-manager/policies)
-
-[Manage Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
+  * [Manage Requests](/en/keeperpam/endpoint-privilege-manager/managing-requests)
 
 Activating the Privilege Manager permissions in the Admin Console
 

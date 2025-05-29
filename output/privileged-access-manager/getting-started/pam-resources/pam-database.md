@@ -394,38 +394,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Features Available
-  * Creating a PAM Database
-  * PAM Database Record Type Fields
-  * PAM Settings and Administrative Credentials 
-  * PAM Settings
-  * Examples
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=HRI2VkFUX0Hb1eZSFQ4n&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [PAM Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-resources)
-
-# PAM Database
-
-KeeperPAM resource for managing databases either on-prem or in the cloud
-
-[PreviousExample: Azure Windows VM](/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-machine/example-azure-windows-
-vm)[NextExample: MySQL Database](/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-database/example-mysql-database)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -456,20 +424,23 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=HRI2VkFUX0Hb1eZSFQ4n&only=yes&limit=100)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 ##
 
 Overview
 
 In your Keeper Vault, the following assets can be configured on the PAM
 Database record type:
-
-PAM Record Type
-
-Supported Assets
-
-PAM Database
-
-MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
 
 This guide will cover the **PAM Database** Record type in more details.
 
@@ -490,14 +461,6 @@ The PAM Database resource supports the following features:
   * Text session recording (Typescript)
 
   * Sharing access without sharing credentials
-
-Connecting to the PAM database requires only that the Keeper Gateway has
-access to the database either through native protocols or AWS/Azure APIs. The
-Keeper Vault operates independently and does not require direct connectivity
-to the database, leveraging Keeper's zero-trust network access model to
-securely manage access through the Gateway. See the [network architecture
-diagram](/en/keeperpam/privileged-access-manager/getting-
-started/architecture/system-architecture) for more details.
 
 ##
 
@@ -533,11 +496,55 @@ PAM Database Record Type Fields
 The following table lists all the configurable fields on the PAM Database
 Record Type:
 
+##
+
+PAM Settings and Administrative Credentials
+
+On the "PAM Settings" section of the vault record, you can configure the
+KeeperPAM Connection and Tunnel settings and link a PAM User credential for
+performing rotations and connections. Tunnels do not require a linked
+credential.
+
+###
+
+PAM Settings
+
+Below is an example of a PAM Database record with Connections and Tunnels
+activated.
+
+##
+
+Examples
+
+Visit the following pages to set up:
+
+  *   *   * 
+
+PAM Record Type
+
+Supported Assets
+
+Connecting to the PAM database requires only that the Keeper Gateway has
+access to the database either through native protocols or AWS/Azure APIs. The
+Keeper Vault operates independently and does not require direct connectivity
+to the database, leveraging Keeper's zero-trust network access model to
+securely manage access through the Gateway. See the  for more details.
+
 Field
 
 Description
 
 Notes
+
+Field
+
+Description
+
+Required
+
+PAM Database
+
+MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
 
 Hostname or IP Address
 
@@ -587,24 +594,39 @@ Azure or AWS Provider Region
 
 **Required** if a managed AWS or Azure Database
 
-##
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [PAM Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-resources)
 
-PAM Settings and Administrative Credentials
+# PAM Database
 
-On the "PAM Settings" section of the vault record, you can configure the
-KeeperPAM Connection and Tunnel settings and link a PAM User credential for
-performing rotations and connections. Tunnels do not require a linked
-credential.
+KeeperPAM resource for managing databases either on-prem or in the cloud
 
-###
+[PreviousExample: Azure Windows VM](/en/keeperpam/privileged-access-
+manager/getting-started/pam-resources/pam-machine/example-azure-windows-
+vm)[NextExample: MySQL Database](/en/keeperpam/privileged-access-
+manager/getting-started/pam-resources/pam-database/example-mysql-database)
 
-PAM Settings
+  * Overview
+  * Features Available
+  * Creating a PAM Database
+  * PAM Database Record Type Fields
+  * PAM Settings and Administrative Credentials 
+  * PAM Settings
+  * Examples
 
-Field
+[network architecture diagram](/en/keeperpam/privileged-access-
+manager/getting-started/architecture/system-architecture)
 
-Description
+[MySQL Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database/example-mysql-database)
 
-Required
+[PostgreSQL Database](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-database/example-postgresql-database)
+
+[Microsoft SQL Server Database](/en/keeperpam/privileged-access-
+manager/getting-started/pam-resources/pam-database/example-microsoft-sql-
+server-database)
 
 PAM Configuration
 
@@ -632,21 +654,6 @@ Connection-specific protocol settings which can vary based on the protocol
 type
 
 Depends on protocol
-
-Below is an example of a PAM Database record with Connections and Tunnels
-activated.
-
-##
-
-Examples
-
-Visit the following pages to set up:
-
-  * [MySQL Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database/example-mysql-database)
-
-  * [PostgreSQL Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database/example-postgresql-database)
-
-  * [Microsoft SQL Server Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database/example-microsoft-sql-server-database)
 
 **Required** Visit this  for more details
 

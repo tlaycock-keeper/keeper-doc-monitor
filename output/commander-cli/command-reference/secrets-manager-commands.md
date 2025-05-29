@@ -1028,7 +1028,7 @@ Copy
 commands/sftp-sync)[NextMSP Management Commands](/en/keeperpam/commander-
 cli/command-reference/msp-management-commands)
 
-Last updated 7 days ago
+Last updated 8 days ago
 
 Was this helpful?
 
