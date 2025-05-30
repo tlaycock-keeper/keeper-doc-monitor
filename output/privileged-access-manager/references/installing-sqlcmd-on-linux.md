@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -431,9 +432,12 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=fJaW4f6xbTPfW73Nw4UE&only=yes&limit=100)
 
-Last updated 4 months ago
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
 
-Was this helpful?
+# Installing sqlcmd on Linux
+
+Installing sqlcmd for accessing SQL Server from a Linux machine
 
 ####
 
@@ -441,21 +445,21 @@ Amazon Linux
 
 Import the Microsoft GPG keys
 
-Add the Microsoft SQL Server Tools repository
-
-Install Command
-
 Copy
 
     
     
     sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
+Add the Microsoft SQL Server Tools repository
+
 Copy
 
     
     
     sudo curl -o /etc/yum.repos.d/mssql-tools.repo https://packages.microsoft.com/config/rhel/7/prod.repo
+
+Install Command
 
 Copy
 
@@ -468,15 +472,12 @@ Copy
     echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile
     source ~/.bash_profile
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
-
-# Installing sqlcmd on Linux
-
-Installing sqlcmd for accessing SQL Server from a Linux machine
-
 [PreviousDatabase Import and Export](/en/keeperpam/privileged-access-
 manager/references/database-import-and-export)[NextInstalling Docker on
 Linux](/en/keeperpam/privileged-access-manager/references/installing-docker-
 on-linux)
+
+Last updated 4 months ago
+
+Was this helpful?
 

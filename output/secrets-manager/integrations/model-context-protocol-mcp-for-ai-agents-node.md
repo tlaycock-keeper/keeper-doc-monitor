@@ -427,532 +427,689 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Summary of Steps
-  * Step 1. Download Team and Shared Folder Membership
-  * Step 2. Import Shared Folders
-  * Share Permissions
-  * Step 3. Apply Shared Folder and Team Memberships
-  * Step 4. End-Users migrate with Keeper Desktop
-  * Receiving Shared Folders
-  * Advanced Features
-  * Transforming Email Domains for Sharing
-  * Override Imported Shared Folder Permissions
-  * Import Top Level Folders as Shared Folders
-  * Attachment Files Cache
-  * Record Size Limit
-  * Import to a Specified Folder
-  * Import from a Specified LastPass Folder
-  * Locating Duplicates
-  * Changing Record Permissions
+  * AI Agent Integration with Model Context Protocol (MCP)
+  * Key Benefits
+  * What Can AI Assistants Do?
+  * Setup and Installation
+  * Usage with MCP Clients
+  * Available Tools
+  * Troubleshooting
 
 Was this helpful?
 
 [Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MkszbPLxHsxbwpbItVW&only=yes&limit=100)
+PDF](/en/keeperpam/~gitbook/pdf?page=lfFziFdDSrS7Fbr2LCgR&only=yes&limit=100)
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
 
-# LastPass Data Import
+# Model Context Protocol (MCP) for AI Agents (Node)
 
-Automatic migration of your LastPass vault and shared folders
+Integrate Keeper Secrets Manager into AI agents using Node
 
-[PreviousCyberArk Import](/en/keeperpam/commander-cli/command-
-reference/import-and-export-commands/cyberark-import)[NextDelinea / Thycotic
-Secret Server Import](/en/keeperpam/commander-cli/command-reference/import-
-and-export-commands/delinea-thycotic-secret-server-import)
+[PreviousModel Context Protocol (MCP) for AI Agents
+(Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-
+mcp-for-ai-agents-docker)[NextOctopus Deploy](/en/keeperpam/secrets-
+manager/integrations/octopus-deploy)
 
-Last updated 6 months ago
+Last updated 15 hours ago
 
 Was this helpful?
 
 ##
 
-Overview
+AI Agent Integration with Model Context Protocol (MCP)
 
-This document outlines the process for automatically and seamlessly migrating
-LastPass data into Keeper. Keeper supports automatic import of your LastPass
-vault with Master Password and MFA. Keeper also supports federated logins to
-LastPass from Okta/Azure/Google, and this is explained in detail below.
+Keeper Secrets Manager works with AI agents through the Model Context Protocol
+(MCP), enabling AI Agents to securely interact with specific vault folders.
+This integration provides a zero-trust architecture where AI agents are
+explicitly allowed to access designated information from the Keeper Vault.
 
-LastPass > Keeper Transfer Supported Data:
+The Model Context Protocol integration acts as a secure bridge between AI
+assistants and Keeper Secrets Manager. It allows AI tools to help you manage
+secrets while maintaining the highest security standards through human-in-the-
+loop confirmations for sensitive operations.
 
-  * Transfer of Passwords
+###
 
-  * Transfer of Folders
+Key Benefits
 
-  * Transfer of Shared Folders
+**Zero Trust Architecture** : AI agents are assigned specific folders in the
+vault **Human-in-the-Loop** : Confirmation prompts for sensitive operations
+**Enterprise Ready** : Comprehensive audit logging and compliance features
+**Multi-Platform** : Works on Linux, macOS, and Windows
 
-  * Transfer of Shared Folder permissions (users and teams)
+###
 
-  * Transfer of custom fields, TOTP seeds
+What Can AI Assistants Do?
 
-  * Transfer of File Attachments
-
-##
-
-Summary of Steps
-
-The steps we recommend to importing an entire organization from LastPass to
-Keeper are the following:
-
-  1. Admin **downloads the membership** of the Shared Folders data to json file
-
-  2. Admin **imports** their shared folders and non-shared passwords
-
-  3. Admin **applies** shared folder membership (includes permissions) for users who already exist in Keeper
-
-  4. End-users migrate their vaults over using the Keeper Desktop application.
-
-  5. Admins continue to periodically **apply membership** as more users join Keeper
-
-Note: Federated logins with SSO from Okta/Azure/Google are supported from the
-Keeper Desktop Application for the end-users to transfer their vaults. Keeper
-Commander CLI is used by the administrator and does not support federated
-login. Please use a LastPass admin account with a Master Password login for
-performing steps 1-3.
-
-##
-
-Step 1. Download Team and Shared Folder Membership
-
-In Keeper Commander, the Keeper/LastPass Administrator will run the following:
-
-Copy
-
-    
-    
-    download-membership --source=lastpass
-
-This will perform the following 3 functions:
-
-  * Download all Shared Folder information
-
-  * Download Shared Folder permissions
-
-This step downloads a file locally called "`shared_folder_membership.json`"
-which contains the shared folder structure. The location of this file on
-Windows is typically C:\Users\username\shared_folder_membership.json. On
-Linux/Mac, it will be in the location where you run Commander.
-
-The download-membership command basically produces a local file containing the
-share relationships. You can simply edit this file in a text editor and make
-any permission changes needed before proceeding to the next step.
-
-##
-
-Step 2. Import Shared Folders
-
-In Keeper Commander, the Admin will run the following command to perform the
-import of shared folders and data.
-
-Copy
-
-    
-    
-    import --format=lastpass lastpass@example.com
-
-The first time the import command is run, you may get the following notice
-that LastPass wants to verify the device from which you are connecting.
-
-Copy
-
-    
-    
-    Try again OR look for an email from LastPass to verify it's you.
-
-Check the email address associated with your LastPass account and click
-"verify" to allow Keeper to access the records in your LastPass account.
-
-The `import` command will migrate and populate regular folders, shared folders
-and records within the folders. This will NOT import the private folders of
-_other_ users within LastPass. This step will only import the information
-available to the admin.
+With KSM MCP integration, AI assistants can help you:
 
 ####
 
-Record Type Mapping
+Secret Operations
 
-Typed LastPass items are automatically imported as Keeper records with
-corresponding record types if your Enterprise environment has Record Types
-activated.
+**List secrets** \- Browse your accessible secrets **Search secrets** \- Find
+secrets by title, URL, username, or other fields **Retrieve secrets** \- Get
+specific secret values (with confirmation for unmasked data) **Create
+secrets** \- Generate new secret entries **Update secrets** \- Modify existing
+secret information **Delete secrets** \- Remove secrets (with confirmation)
 
-See the LastPass Item Type and corresponding Keeper Record Type in the table
-below.
+####
 
-LastPass Item Type
+File Management
 
-Keeper Record Type
+**List attachments** \- View file attachments on secrets **Upload files** \-
+Add file attachments to secrets **Download files** \- Retrieve file
+attachments **Delete files** \- Remove file attachments
 
-Bank Account
+####
 
-Bank Account
+Utilities
 
-Credit Card
-
-Bank Card
-
-Address
-
-Address
-
-Driver's License
-
-Driver's License
-
-Passport
-
-Passport
-
-Social Security
-
-SSN Card
-
-Health Insurance
-
-Health Insurance
-
-Insurance
-
-Health Insurance
-
-Membership
-
-Membership
-
-Email Account
-
-Login
-
-Instant Messenger
-
-Login
-
-Database
-
-Database Credentials
-
-Server
-
-Server Credentials
-
-SSH Key
-
-SSH Keys
-
-Software License
-
-Software License
+**Generate passwords** \- Create secure passwords with customizable parameters
+**Get TOTP codes** \- Retrieve current time-based one-time passwords **Execute
+KSM notation queries** \- Use Keeper's notation system for complex operations
+**Health checks** \- Monitor server status and connectivity
 
 ###
 
-Share Permissions
+Setup and Installation
 
-If a folder is shared with another user or team in LastPass, the import will
-apply the same sharing permissions to Keeper teams with the same name, and
-Keeper users with the same email address.
+####
 
-Shared folder permissions can be re-applied and applied if a new Keeper user
-or team is added after the initial import.
+(1) Create Secrets Manager Application
 
-##
+From Keeper Secrets Manager, create an Application or use an existing
+application.
 
-Step 3. Apply Shared Folder and Team Memberships
+####
 
-To assign Share Permissions to your imported passwords from LastPass, use the
-`apply-membership` command:
+(2) Create a Device Token
+
+Discard the first Device token, and click on "Add Device" to generate a new
+Base64 configuration that will be provided to your AI agent.
+
+####
+
+(3) Configure the MCP Server
+
+You have two options for providing your Keeper configuration:
+
+####
+
+**Option A: Configuration File (Recommended)**
+
+Place your downloaded configuration file in one of these locations:
+
+  * `~/.keeper/ksm-config.json` (recommended)
+
+  * `./ksm-config.json` (in the current directory)
+
+####
+
+**Option B: One-Time Token**
+
+If you have a one-time token instead:
 
 Copy
 
     
     
-    apply-membership
+    export KSM_TOKEN="US:YOUR_ONE_TIME_TOKEN_HERE"
 
-This will read the file called "`shared_folder_membership.json`" from Step 1
-and apply the shared folder permissions for any users and team which exist in
-the Keeper enterprise environment. This command is safe to run over and over
-again, and it will not generate duplicates.
+The server will use this token to generate and save a configuration file
+automatically.
 
-**Explanation:** When users are invited/created through SSO or your invitation
-process, their public keys are created. Therefore, Keeper cannot apply
-membership until the users exist.
+####
 
-For this reason, the Keeper Admin needs to run the "apply-membership" command
-on a daily basis, hourly, or on demand, when users are created in Keeper.
+(4) Test the Server
 
-If you would like to be notified as soon as users migrate to Keeper, use the
-Advanced Reporting & Alerts module in the Keeper Admin Console to set up an
-Alert when a user has been created.
-
-##
-
-Step 4. End-Users migrate with Keeper Desktop
-
-The Keeper Admin will invite users through one of the following methods:
-
-  * Just-in-time provisioning through SSO login
-
-  * Invite through the Admin Console
-
-  * SCIM
-
-When the user registers to create their vault, they will generate a
-public/private key pair. At this point, they will be able to receive shared
-folders, as outlined in the next step.
-
-For transferring the user's LastPass private folders and records, we recommend
-directing the user to install the Keeper Desktop application.
-
-Here's the link to the public / latest version:
-
-To automatically deploy Keeper Desktop to your users through group policy,
-see:
-
-##
-
-Receiving Shared Folders
-
-Once users create their Keeper vaults, they can then be added to a team and/or
-a folder. The next time that the Admin runs the `apply-membership` command,
-any new Keeper users will receive access to their Shared Folders.
-
-You can run apply-membership repeatedly as more users are onboarded to keeper.
-It will apply the memberships to users that exist in Keeper.
-
-Due to the number of steps, we recommend performing a pilot test with a few
-users before rolling out to the entire organization.
-
-If you have any questions please contact your Keeper sales engineer or email
-commander@keepersecurity.com.
-
-##
-
-Advanced Features
-
-###
-
-Transforming Email Domains for Sharing
-
-If your LastPass email domain has changed and you would like to transition to
-a new email domain when transferring share permissions, you can use the
-`--old-domain` and `--new-domain` optional parameters. Example below:
-
-Example
+Run the server directly to test:
 
 Copy
 
     
     
-    download-membership --source=lastpass --old-domain=acme-old.com --new-domain=acme-demo.com lastpass@example.com
+    npm start
+
+You should see: `Keeper MCP server is running`
 
 ###
 
-Override Imported Shared Folder Permissions
+Usage with MCP Clients
 
-The LastPass `download-membership` applies the shared folder permissions from
-LastPass users to your Keeper shared folders, but the permission settings can
-be overridden during membership download.
+####
 
-To override the "manage records" and "manage users" permissions for all users
-on all imported shared folders, use the `--permissions` or `--restrictions`
-options.
+Claude Desktop
 
-`--permissions` allows the permission(s) for all users on all imported shared
-folder.
-
-`--restrictions` denies the permission(s) for all users on all imported shared
-folders.
-
-To set for "manage records" pass `r`, for "manage users" pass `u` for both use
-`ru`
+Add to your Claude Desktop configuration (`~/Library/Application
+Support/Claude/claude_desktop_config.json`):
 
 Copy
 
     
     
-    // override enable manage records permission
-    download-membership --source=lastpass --permissions=r
-    
-    // override disable manage users permission
-    download-membership --source=lastpass --restrictions=u
-    
-    // override enable manage records and manage users permissions
-    download-membership --source=lastpass --permissions=ru
+    {
+      "mcpServers": {
+        "keeper": {
+          "command": "node",
+          "args": ["/path/to/keeper-mcp-node/dist/index.js"]
+        }
+      }
+    }
 
-###
+####
 
-Import Top Level Folders as Shared Folders
+Postman
 
-You can optionally make all top level folders shared folders with specified
-permissions by passing the `--shared` and `--permissions=<PERMISSIONS>` flags.
+  1. In Postman, go to the API Network tab
 
-The available permissions options are:
+  2. Create or select an MCP request
 
-  * U - manage users permission granted
+  3. Configure the stdio connection:
 
-  * R - manage records permission granted
+     * Command: `node`
 
-  * E - edit records permission granted
+     * Arguments: `/path/to/keeper-mcp-node/dist/index.js`
 
-  * S - share permission granted
+####
 
-  * A - all permissions granted
+Other MCP Clients
 
-  * N - no permissions granted
-
-Use the letters corresponding to the permissions you want to grant with no
-spaces or characters in between.
-
-Example
+The server communicates via stdio, so you can integrate it with any MCP-
+compatible client by running:
 
 Copy
 
     
     
-    import --format=lastpass --shared --permissions=URES lastpass@example.com 
+    node /path/to/keeper-mcp-node/dist/index.js
 
 ###
 
-**Attachment Files Cache**
+Available Tools
 
-Attachment files can be cached during import so that they do not have to be
-redownloaded if another import is performed.
+####
 
-To run the import with a file cache, add the `--file-cache <DIR>` flag.
-Specify a directory to use as the cache.
+Secret Operations
 
-To use the cache on a subsequent import, apply the `--file-cache` flag with
-the same directory.
+`**ksm_list_secrets**`
 
-Example
+####
+
+List all secrets accessible to your application (metadata only)
+
+Request:
 
 Copy
 
     
     
-    import --format=lastpass --file-cache tmpDir
+    {
+      "method": "tools/call",
+      "params": {
+        "name": "ksm_list_secrets",
+        "arguments": {}
+      }
+    }
 
-Cached attachment files are encrypted
-
-###
-
-Record Size Limit
-
-Keeper records have a size limit of 5MB (excluding attachments). If a record
-from LastPass is larger than this limit, fields will be converted to a text
-file, starting with the largest field, until the record is smaller than the
-limit.
-
-Created attachments are named in the following format:
-
-`<title of field>_<type of field>_field.txt`
-
-For example a "notes" field titled "Instructions" would be converted to an
-attachment titled:
-
-`Instructions_notes_field.txt`
-
-###
-
-Import to a Specified Folder
-
-The contents of your LastPass vault can be imported into a specified folder in
-your Keeper vault. To do this, use the `--folder` option.
-
-Example
+Response:
 
 Copy
 
     
     
-    import --format lastpass --folder="A Keeper Folder" lastpass@example.com
+    [
+      {
+        "uid": "XXXXXXXXXXXXXXXXXXXXXX",
+        "title": "My Secret",
+        "type": "login"
+      }
+    ]
 
-###
+`**ksm_get_secret**`
 
-Import from a Specified LastPass Folder
+####
 
-You can limit the import of your LastPass vault to a specific folder in
-LastPass by using the `--filter-folder` option. This filters the data from
-LastPass to ONLY the specific folder on the LastPass side.
+Retrieve a complete secret by UID or title (sensitive fields masked by
+default)
 
-Example
-
-Copy
-
-    
-    
-    import --format lastpass --filter-folder="Some Folder In LastPass" lastpass@example.com
-
-###
-
-Locating Duplicates
-
-If you believe there may be duplicate records in your vault after import, you
-can use the `find-duplicate` feature in Commander to locate them.
-
-If you wanted to locate duplicates based on title, login, password for
-example:
+Request:
 
 Copy
 
     
     
-    find-duplicate --title --login --password
+    {
+      "method": "tools/call",
+      "params": {
+        "name": "ksm_get_secret",
+        "arguments": {
+          "identifier": "My Secret",
+          "unmask": false
+        }
+      }
+    }
 
-From the output of this report, you can gather a list of record UIDs to delete
-with the "`rm`" command.
+`**ksm_search_secrets**`
 
-###
+####
 
-Changing Record Permissions
+Search for secrets by title, notes, or other field content
+
+Request:
 
 Copy
 
     
     
-    record-permission -a grant --can-edit --recursive <folder name or UID>
+    {
+      "method": "tools/call",
+      "params": {
+        "name": "ksm_search_secrets",
+        "arguments": {
+          "query": "database"
+        }
+      }
+    }
 
-End-users will migrate their private LastPass data by using the Keeper Desktop
-automated import method. See  for the end-user documentation.
+`**ksm_create_secret**`
 
-See  for more information about Keeper Record Types
+####
 
-By default, records are imported into Shared Folders with "Can View"
-permission. This means that the record is only editable by the owner of the
-record, and any  that have been added to the folder.
+Create a new secret in Keeper Secrets Manager (requires confirmation)
 
-To change the permissions of records inside a shared folder (after the import
-is complete), you can use the  command. For example:
+Request:
 
-[this page](https://docs.keeper.io/user-guides/import-records-1/import-from-
-lastpass)
+Copy
 
-[Record Types](/en/keeperpam/commander-cli/command-reference/record-
-commands/default-record-types)
+    
+    
+    {
+      "method": "tools/call",
+      "params": {
+        "name": "ksm_create_secret",
+        "arguments": {
+          "title": "New Database Credentials",
+          "type": "login",
+          "fields": {
+            "login": "admin",
+            "password": "secure_password",
+            "url": "https://db.example.com"
+          },
+          "notes": "Production database",
+          "folderId": "FOLDER_UID"
+        }
+      }
+    }
 
-[share admins](https://docs.keeper.io/enterprise-guide/share-admin)
+`**ksm_update_secret**`
 
-[record-permission](/en/keeperpam/commander-cli/command-reference/sharing-
-commands#record-permission-command)
+####
 
-[Download Keeper Password Manager for iOS, Android, Mac, PC and moreKeeper®
-Password Manager & Digital Vault](https://keepersecurity.com/download)
+Update an existing secret (requires confirmation)
 
-[Desktop ApplicationsEnterprise Guide](https://docs.keeper.io/enterprise-
-guide/deploying-keeper-to-end-users/desktop-application)
+Request:
 
-![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F1748446847-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fspaces%252F-LO5CAzpxoaEquZJBpYz%252Favatar.png%3Fgeneration%3D1562027743273411%26alt%3Dmedia&width=20&dpr=4&quality=100&sign=25d608c4&sv=2)
+Copy
 
-![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fwww.keepersecurity.com%2Fassets%2Fbranding%2Fandroid-
-icon-192x192.png&width=20&dpr=4&quality=100&sign=71acf559&sv=2)
+    
+    
+    {
+      "method": "tools/call",
+      "params": {
+        "name": "ksm_update_secret",
+        "arguments": {
+          "identifier": "My Secret",
+          "updates": {
+            "title": "Updated Title",
+            "fields": {
+              "password": "new_password"
+            }
+          }
+        }
+      }
+    }
+
+`**ksm_delete_secret**`
+
+####
+
+Delete a secret from Keeper Secrets Manager (requires confirmation)
+
+Request:
+
+Copy
+
+    
+    
+    {
+      "method": "tools/call",
+      "params": {
+        "name": "ksm_delete_secret",
+        "arguments": {
+          "identifier": "My Secret"
+        }
+      }
+    }
+
+`**ksm_get_field**`
+
+####
+
+Get a specific field value from a secret
+
+**Request:**
+
+Copy
+
+    
+    
+    {
+      "method": "tools/call",
+      "params": {
+        "name": "ksm_get_field",
+        "arguments": {
+          "identifier": "My Secret",
+          "field": "password"
+        }
+      }
+    }
+
+Common field names:
+
+  * `password` \- The password field
+
+  * `login` \- Username/email
+
+  * `url` \- Website URL
+
+  * Custom field labels
+
+####
+
+Folder Operations
+
+`**ksm_list_folders**`
+
+####
+
+List all accessible folders in Keeper Secrets Manager
+
+Request:
+
+Copy
+
+    
+    
+    {
+      "method": "tools/call",
+      "params": {
+        "name": "ksm_list_folders",
+        "arguments": {}
+      }
+    }
+
+`**ksm_create_folder**`
+
+####
+
+Create a new folder (requires confirmation; must specify a parent shared
+folder)
+
+Request:
+
+Copy
+
+    
+    
+    {
+      "method": "tools/call",
+      "params": {
+        "name": "ksm_create_folder",
+        "arguments": {
+          "name": "Development Secrets",
+          "parentFolderId": "PARENT_FOLDER_UID"
+        }
+      }
+    }
+
+`**ksm_delete_folder**`
+
+####
+
+Delete a folder (requires confirmation)
+
+Request:
+
+Copy
+
+    
+    
+    {
+      "method": "tools/call",
+      "params": {
+        "name": "ksm_delete_folder",
+        "arguments": {
+          "folderId": "FOLDER_UID",
+          "force": false
+        }
+      }
+    }
+
+####
+
+File Management
+
+`**ksm_upload_file**`
+
+####
+
+Upload a file attachment to a secret (requires confirmation)
+
+Request:
+
+Copy
+
+    
+    
+    {
+      "method": "tools/call",
+      "params": {
+        "name": "ksm_upload_file",
+        "arguments": {
+          "identifier": "My Secret",
+          "filePath": "/path/to/certificate.pem",
+          "fileName": "server-cert.pem"
+        }
+      }
+    }
+
+`**ksm_download_file**`
+
+####
+
+Download a file attachment from a secret
+
+Request:
+
+Copy
+
+    
+    
+    {
+      "method": "tools/call",
+      "params": {
+        "name": "ksm_download_file",
+        "arguments": {
+          "identifier": "My Secret",
+          "fileId": "certificate.pem",
+          "outputPath": "/tmp/downloaded-cert.pem"
+        }
+      }
+    }
+
+####
+
+Utilities
+
+`**ksm_generate_password**`
+
+####
+
+Generate a secure password
+
+Can optionally save to a new secret without exposing it to the AI
+
+Request:
+
+Copy
+
+    
+    
+    {
+      "method": "tools/call",
+      "params": {
+        "name": "ksm_generate_password",
+        "arguments": {
+          "length": 24,
+          "includeUppercase": true,
+          "includeLowercase": true,
+          "includeNumbers": true,
+          "includeSpecial": true,
+          "saveToSecret": {
+            "title": "Generated API Key",
+            "login": "api-user",
+            "url": "https://api.example.com",
+            "notes": "Auto-generated API key"
+          }
+        }
+      }
+    }
+
+`**ksm_get_totp_code**`
+
+####
+
+Get the current TOTP code for a secret that has TOTP configured
+
+Request:
+
+Copy
+
+    
+    
+    {
+      "method": "tools/call",
+      "params": {
+        "name": "ksm_get_totp_code",
+        "arguments": {
+          "identifier": "My 2FA Secret"
+        }
+      }
+    }
+
+`**ksm_get_server_version**`
+
+####
+
+Get the current version of the KSM MCP server
+
+Request:
+
+Copy
+
+    
+    
+    {
+      "method": "tools/call",
+      "params": {
+        "name": "ksm_get_server_version",
+        "arguments": {}
+      }
+    }
+
+`**ksm_health_check**`
+
+####
+
+Check the operational status of the MCP server and its connection to KSM
+
+Request:
+
+Copy
+
+    
+    
+    {
+      "method": "tools/call",
+      "params": {
+        "name": "ksm_health_check",
+        "arguments": {}
+      }
+    }
+
+###
+
+Troubleshooting
+
+####
+
+Error: No Keeper Secrets Manager configuration found
+
+  * Ensure your configuration file is in one of the supported locations
+
+  * Check that the file has proper JSON formatting
+
+  * Verify file permissions (should be readable by your user)
+
+####
+
+Error: Failed to initialize KSM
+
+  * Verify your configuration file contains all required fields
+
+  * Check that your application has access to the shared folders/secrets
+
+  * Ensure your device hasn't been revoked in Keeper
+
+####
+
+Connection Issues
+
+  * Verify you have internet connectivity
+
+  * Check if your organization has IP restrictions enabled
+
+  * Ensure your Keeper subscription includes Secrets Manager
+
+* * *
+
+For additional setup details, see:
+
+<https://github.com/Keeper-Security/keeper-mcp-
+node/>[](https://github.com/Keeper-Security/keeper-mcp-node/)
+
+[GitHub - Keeper-Security/keeper-mcp-node: MCP implementation using Keeper
+Secrets Manager and NodeGitHub](https://github.com/Keeper-Security/keeper-mcp-
+node/)
+
+![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
+
+Create an Application and assign folders
+
+Generate Base64 Token
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FisBbJe3YNOoyNvSgF0XD%252FImport-
-Keeper-
-LastPass.jpg%3Falt%3Dmedia%26token%3Dbf14ebf6-7463-4582-a1d7-a811f98d2e39&width=768&dpr=4&quality=100&sign=b3f0a619&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FEOPQ8h0TMi0HwSY7bbC9%252Fimage.png%3Falt%3Dmedia%26token%3D385e7a3b-388a-4ef4-8078-e6134f61ce7e&width=768&dpr=4&quality=100&sign=3cccddba&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8QSyaSvPjGJIkLSGzBcK%252FScreenshot%25202025-05-26%2520at%25202.34.17%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D814e9b6c-5a46-4ba8-9249-78b3ef6281d1&width=768&dpr=4&quality=100&sign=bb0319f1&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3QRzGtTGmBpTJSt6ULp7%252FScreenshot%25202025-05-26%2520at%25202.35.15%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dd4a936d8-2caa-4f85-8f38-9c13a43a5389&width=768&dpr=4&quality=100&sign=3bf8093e&sv=2)
 

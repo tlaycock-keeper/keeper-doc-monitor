@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -426,10 +427,32 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview 
+  * Summary
+  * Step 1 - Enable Connection Enforcement Policies
+  * Step 2 - Install and configure the Keeper Gateway 
+  * Step 3 - Configuring the PAM Configuration 
+  * Step 4 - Create and Configure PAM Database and PAM User(s) Records
+  * Step 5 - Configuring PAM Settings and PostgreSQL Protocol
+  * Launching Connections
+  * Sharing PAM Database Records
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=8K8amVturAxKYPOcw7kD&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+  3. [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
+
+# PostgreSQL Protocol - PostgreSQL Database
+
+Establish a connection to a PostgreSQL Database directly from your Vault
+
+[PreviousMySQL Protocol - MySQL Database](/en/keeperpam/privileged-access-
+manager/connections/examples/mysql-protocol-mysql-
+database)[NextTunnels](/en/keeperpam/privileged-access-manager/tunnels)
 
 Last updated 3 months ago
 
@@ -474,6 +497,20 @@ Policy
 Definition
 
 Commander CLI
+
+Can configure connection and session recording
+
+Allow users to configure Connection and Session Recordings settings on PAM
+Machine, PAM Directory, PAM Database and PAM Configuration Record Types
+
+Can launch connections
+
+Allow users to launch connections on PAM Machine, PAM Directory, PAM Database
+Record Types
+
+Can view session recordings
+
+Allow users to view Session Recordings
 
 ##
 
@@ -556,53 +593,17 @@ your target infrastructure:
 
 \- The PostgreSQL Database User is configured on this record type
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-  3. [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
-
-# PostgreSQL Protocol - PostgreSQL Database
-
-Establish a connection to a PostgreSQL Database directly from your Vault
-
-[PreviousMySQL Protocol - MySQL Database](/en/keeperpam/privileged-access-
-manager/connections/examples/mysql-protocol-mysql-
-database)[NextTunnels](/en/keeperpam/privileged-access-manager/tunnels)
-
-  * Overview 
-  * Summary
-  * Step 1 - Enable Connection Enforcement Policies
-  * Step 2 - Install and configure the Keeper Gateway 
-  * Step 3 - Configuring the PAM Configuration 
-  * Step 4 - Create and Configure PAM Database and PAM User(s) Records
-  * Step 5 - Configuring PAM Settings and PostgreSQL Protocol
-  * Launching Connections
-  * Sharing PAM Database Records
-
-Can configure connection and session recording
-
-Allow users to configure Connection and Session Recordings settings on PAM
-Machine, PAM Directory, PAM Database and PAM Configuration Record Types
-
 Copy
 
     
     
     ALLOW_CONFIGURE_PAM_CLOUD_CONNECTION_SETTINGS
 
-Can launch connections
-
-Allow users to launch connections on PAM Machine, PAM Directory, PAM Database
-Record Types
-
 Copy
 
     
     
     ALLOW_LAUNCH_PAM_ON_CLOUD_CONNECTION
-
-Can view session recordings
-
-Allow users to view Session Recordings
 
 Copy
 

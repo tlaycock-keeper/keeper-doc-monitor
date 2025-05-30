@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -394,6 +395,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -426,36 +457,6 @@ Last updated 4 months ago
 
 Was this helpful?
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 Overview
@@ -486,14 +487,6 @@ The PAM Machine resource supports the following features:
   * Session recording and playback
 
   * Sharing access without sharing credentials
-
-Connecting to the PAM Directory requires only that the Keeper Gateway has
-access to the target directory service. The Keeper Vault operates
-independently and does not require direct connectivity to the service,
-leveraging Keeper's zero-trust network access model to securely manage access
-through the Gateway. See the [network architecture
-diagram](/en/keeperpam/privileged-access-manager/getting-
-started/architecture/system-architecture) for more details.
 
 ##
 
@@ -655,14 +648,25 @@ rotation, and not required for Tunnels.
 
   3. To configure Keeper Connections and Keeper Tunnels settings, visit the following page:
 
-     1. [Keeper Connections](/en/keeperpam/privileged-access-manager/connections)
-
-     2. [Keeper Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
+     1.      2. 
 
 The following screenshot is a PAM Directory Record with LDAPS rotation, RDP
 connections and LDAPS tunnels enabled:
 
+Connecting to the PAM Directory requires only that the Keeper Gateway has
+access to the target directory service. The Keeper Vault operates
+independently and does not require direct connectivity to the service,
+leveraging Keeper's zero-trust network access model to securely manage access
+through the Gateway. See the  for more details.
+
 See
+
+[network architecture diagram](/en/keeperpam/privileged-access-
+manager/getting-started/architecture/system-architecture)
+
+[Keeper Connections](/en/keeperpam/privileged-access-manager/connections)
+
+[Keeper Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
 
 [session recording](/en/keeperpam/privileged-access-manager/session-recording-
 and-playback)

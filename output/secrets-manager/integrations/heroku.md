@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -394,36 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Features
@@ -453,6 +424,36 @@ Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
 Last updated 4 months ago
 
 Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -737,10 +738,6 @@ manager-configuration#using-a-cli-tool)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FzPZ3aDlEBhivMIKCTiqh%252FScreen%2520Shot%25202022-01-11%2520at%252011.27.52%2520AM.png%3Falt%3Dmedia%26token%3Deabe9c30-2601-4e35-98b7-b70ea824ed48&width=768&dpr=4&quality=100&sign=871df91b&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZVRzT4e8a8BA1j2e1EGk%252FScreen%2520Shot%25202022-01-11%2520at%252011.23.36%2520AM.png%3Falt%3Dmedia%26token%3Debc45e5a-ccb1-4bfd-
 ad2b-7f7c7fd83c20&width=768&dpr=4&quality=100&sign=982c94ba&sv=2)
 
@@ -750,13 +747,17 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FusY03w1uv
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqzUUP3RgdpwwDlkkxwNa%252Fksm-
-header-
-Heroku.png%3Falt%3Dmedia%26token%3Df26aeadb-a920-4922-aa2c-6c3539dace96&width=768&dpr=4&quality=100&sign=c95917eb&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FzPZ3aDlEBhivMIKCTiqh%252FScreen%2520Shot%25202022-01-11%2520at%252011.27.52%2520AM.png%3Falt%3Dmedia%26token%3Deabe9c30-2601-4e35-98b7-b70ea824ed48&width=768&dpr=4&quality=100&sign=871df91b&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRrRhkmhboqtzZuPC2MNe%252FScreen%2520Shot%25202022-01-11%2520at%252011.34.28%2520AM.png%3Falt%3Dmedia%26token%3Da8798656-46cd-4dfb-85a0-287ab1d9ce75&width=768&dpr=4&quality=100&sign=40059f7&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqzUUP3RgdpwwDlkkxwNa%252Fksm-
+header-
+Heroku.png%3Falt%3Dmedia%26token%3Df26aeadb-a920-4922-aa2c-6c3539dace96&width=768&dpr=4&quality=100&sign=c95917eb&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

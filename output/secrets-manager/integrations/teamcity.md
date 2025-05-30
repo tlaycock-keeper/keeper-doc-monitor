@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -693,6 +694,9 @@ manager/integrations/teamcity#prerequisites)
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
 Adding connection of type Keeper Vault
 
 Configure Keeper Vault Connection
@@ -720,7 +724,4 @@ x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCyNRIxtU170myoD55VNF%252Fteamcity-
 ksm-
 parameter.png%3Falt%3Dmedia%26token%3D5a523ab3-59d1-49a7-95e4-20dee93bc31f&width=768&dpr=4&quality=100&sign=b860834f&sv=2)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 

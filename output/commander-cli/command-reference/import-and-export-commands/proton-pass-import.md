@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -394,6 +395,33 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * Export your Proton Pass Data as a JSON File
+  * Import your Proton Pass Data into Keeper
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=z9ZeAVvO36OQbEWh2IFX&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
+
+# Proton Pass Import
+
+Automatic Migration of your Proton Pass Vault
+
+[PreviousMyki Import](/en/keeperpam/commander-cli/command-reference/import-
+and-export-commands/myki-import)[NextCSV Import](/en/keeperpam/commander-
+cli/command-reference/import-and-export-commands/csv-import)
+
+Last updated 6 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -423,33 +451,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Overview
-  * Export your Proton Pass Data as a JSON File
-  * Import your Proton Pass Data into Keeper
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=z9ZeAVvO36OQbEWh2IFX&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
-
-# Proton Pass Import
-
-Automatic Migration of your Proton Pass Vault
-
-[PreviousMyki Import](/en/keeperpam/commander-cli/command-reference/import-
-and-export-commands/myki-import)[NextCSV Import](/en/keeperpam/commander-
-cli/command-reference/import-and-export-commands/csv-import)
-
-Last updated 6 months ago
-
-Was this helpful?
 
 ##
 

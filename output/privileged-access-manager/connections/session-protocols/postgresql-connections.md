@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -451,7 +452,7 @@ manager/connections/session-protocols/sql-server-connections)[NextVNC
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/vnc-connections)
 
-Last updated 3 hours ago
+Last updated 14 hours ago
 
 Was this helpful?
 
@@ -570,13 +571,13 @@ The database schema selected when connecting to the specified database server.
 
 Can export CSV
 
-Disables CSV export of data when using the SQL statement \COPY
+Disables CSV export of data when using the PSQL statement \COPY
 
 FROM "input.csv" With CSV
 
 Can import CSV
 
-Disables CSV import of data when using the SQL statement `\COPY () TO ".csv"
+Disables CSV import of data when using the PSQL statement `\COPY () TO ".csv"
 With CSV HEADER`
 
 Can copy to clipboard

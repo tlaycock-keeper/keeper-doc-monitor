@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -426,14 +427,20 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * Using Port Mappings
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=Ax7er5mBNVgdfkFoyybz&only=yes&limit=100)
 
-Last updated 5 months ago
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
 
-Was this helpful?
+# Port Mapping
+
+Defining alternative ports in PAM Configurations
 
 ##
 
@@ -456,24 +463,6 @@ Resource Type
 Connection Type
 
 Standard Port
-
-##
-
-Using Port Mappings
-
-To use a non-standard port, specify the alternative port in two places:
-
-  * In the PAM Configuration port mapping field, enter `{port}=`{`connection}`, for example,` 32636=ldaps.`
-
-  * For `{connection}`: refer to the labels under Standard Port in the standard ports table.
-
-  * In the PAM Machine/Directory/Database record, enter the chosen port in the port field
-
-For example, to connect to a MySQL database using port 3307, your PAM
-Configuration should have `3307=mysql` under port mapping, and your PAM
-Database record should reference port 3307.
-
-Multiple port mappings are newline-separated in the PAM Configuration.
 
 PAM Machine
 
@@ -535,17 +524,29 @@ MongoDB
 
 27017=mongodb
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
+##
 
-# Port Mapping
+Using Port Mappings
 
-Defining alternative ports in PAM Configurations
+To use a non-standard port, specify the alternative port in two places:
+
+  * In the PAM Configuration port mapping field, enter `{port}=`{`connection}`, for example,` 32636=ldaps.`
+
+  * For `{connection}`: refer to the labels under Standard Port in the standard ports table.
+
+  * In the PAM Machine/Directory/Database record, enter the chosen port in the port field
+
+For example, to connect to a MySQL database using port 3307, your PAM
+Configuration should have `3307=mysql` under port mapping, and your PAM
+Database record should reference port 3307.
+
+Multiple port mappings are newline-separated in the PAM Configuration.
 
 [PreviousReferences](/en/keeperpam/privileged-access-
 manager/references)[NextSetting up SSH](/en/keeperpam/privileged-access-
 manager/references/setting-up-ssh)
 
-  * Overview
-  * Using Port Mappings
+Last updated 5 months ago
+
+Was this helpful?
 

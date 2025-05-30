@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -394,36 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Supported Operating systems
@@ -443,14 +414,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-MJXWW3ypcK5uBpBl08R&only=yes&limit=100)
 
 How to install Keeper Commander CLI on Microsoft Windows
 
-[PreviousInstallation and Setup](/en/keeperpam/commander-cli/commander-
-installation-setup)[NextCLI Installation on macOS](/en/keeperpam/commander-
-cli/commander-installation-setup/installation-on-mac)
-
-Last updated 7 months ago
-
-Was this helpful?
-
 ###
 
 **Supported Operating systems**
@@ -465,9 +428,18 @@ Video Overview
 
 Watch the video below to learn how to install and log in to Keeper Commander.
 
+Keeper Commander – Installing and Loggin In
+
 ###
 
 Typical Binary Installation (recommended)
+
+⬇️ [**Download Keeper Commander .exe file from
+GitHub**](https://github.com/Keeper-Security/Commander/releases)
+
+On the Commander Github page, the current commander build is always available
+via the [releases link](https://github.com/Keeper-
+Security/Commander/releases).
 
 The binary download is the file named: `keeper-commander-windows-vX.XX.exe`
 
@@ -483,6 +455,9 @@ Python (PIP) installation
 ####
 
 Setup with Python3:
+
+Download the current version of Python from
+<https://www.python.org/>[](https://www.python.org/)
 
 Recommended releases:
 
@@ -536,21 +511,43 @@ Copy
 Note, for your first time logging into a new device or a new location, you may
 have to perform device authorization through email or other 2FA methods.
 
-On the Commander Github page, the current commander build is always available
-via the .
+[PreviousInstallation and Setup](/en/keeperpam/commander-cli/commander-
+installation-setup)[NextCLI Installation on macOS](/en/keeperpam/commander-
+cli/commander-installation-setup/installation-on-mac)
 
-Download the current version of Python from
+Last updated 7 months ago
 
-⬇️
+Was this helpful?
 
-[**Download Keeper Commander .exe file from
-GitHub**](https://github.com/Keeper-Security/Commander/releases)
+#### Company
 
-[releases link](https://github.com/Keeper-Security/Commander/releases)
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-<https://www.python.org/>[](https://www.python.org/)
+#### Support
 
-Keeper Commander – Installing and Loggin In
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

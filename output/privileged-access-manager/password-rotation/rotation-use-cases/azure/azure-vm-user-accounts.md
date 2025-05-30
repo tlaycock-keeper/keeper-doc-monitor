@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -465,13 +466,23 @@ Overview
 In this guide, you'll learn how to rotate Azure Virtual Machine local and
 remote user accounts within the Azure environment using KeeperPAM.
 
-  * 
+  * See the [Azure Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure) for a high level overview and getting started with Azure
 
 ##
 
 Prerequisites
 
-  *   *   *   *   *   * `PowerShell` is available on all Windows machines and `bash` on all Linux targets
+  * [Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-started/enforcement-policies) are configured for your role
+
+  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+
+  * Your Azure environment is [configured](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/azure-environment-setup) per our documentation
+
+  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed
+
+  * The Gateway can communicate to the target Windows machine using [WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm) or [SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
+
+  * `PowerShell` is available on all Windows machines and `bash` on all Linux targets
 
 ##
 
@@ -525,7 +536,11 @@ for this environment.
 
 Make sure the following items are completed first:
 
-  *   *   * PAM Machine records have been created for each target machine
+  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+
+  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is provisioned in the Keeper Secrets Manager application you created.
+
+  * PAM Machine records have been created for each target machine
 
 If you are creating a new PAM Configuration, login to the Keeper Vault and
 select "Secrets Manager", then select the "PAM Configurations" tab, and click
@@ -578,6 +593,10 @@ services.
 
 The UUID of the Azure Active Directory
 
+For more details on all the configurable fields in the PAM Configuration
+record, visit this [page](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration).
+
 ##
 
 3\. Set up PAM User records
@@ -628,7 +647,7 @@ rotation for that record.
 
 Helpful Resources
 
-  * 
+  * [Setting up WinRM on your Azure VM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
 
 ##
 
@@ -639,59 +658,9 @@ credentials for any Windows services running as the PAM User, and restart the
 service. Keeper will also update the credential of any scheduled task running
 as that user on the target machine.
 
-See the  for a high level overview and getting started with Azure
-
-are configured for your role
-
-A Keeper Secrets Manager  has been created
-
-Your Azure environment is  per our documentation
-
-A Keeper Rotation  is already installed
-
-The Gateway can communicate to the target Windows machine using  or
-
-A Keeper Secrets Manager  has been created
-
-A Keeper Rotation  is already installed, running, and is provisioned in the
-Keeper Secrets Manager application you created.
-
-For more details on all the configurable fields in the PAM Configuration
-record, visit this .
-
-To learn more and set up this capability, see the  page.
-
-[Azure Overview](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/azure)
-
-[Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-
-started/enforcement-policies)
-
-[application](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
-
-[configured](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/azure-environment-setup)
-
-[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-[WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
-
-[SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
-
-[application](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
-
-[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration)
-
-[Setting up WinRM on your Azure VM](/en/keeperpam/privileged-access-
-manager/references/setting-up-winrm)
-
-[Service Management](/en/keeperpam/privileged-access-manager/password-
-rotation/service-management)
+To learn more and set up this capability, see the [Service
+Management](/en/keeperpam/privileged-access-manager/password-rotation/service-
+management) page.
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

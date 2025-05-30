@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -748,74 +749,6 @@ account-optional)
 [verbose logging](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/windows-installation#verbose-logging)
 
-###
-
-Checksum Verification
-
-Keeper Gateway SHA256 hashes for the latest version are published at the below
-location:
-
-Calculating and verifying the checksum:
-
-####
-
-Linux
-
-Copy
-
-    
-    
-    sha256sum keeper-gateway_linux_x86_64
-    cat keeper-gateway_X.X.X_SHA256SUMS | grep keeper-gateway_linux_x86_64
-
-####
-
-PowerShell
-
-Copy
-
-    
-    
-    Get-FileHash -Algorithm SHA256 keeper-gateway_windows_x86_64.exe | Format-List
-    Get-Content keeper-gateway_X.X.X_SHA256SUMS | Select-String keeper-gateway_windows_x86_64.exe
-
-<https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
-
-###
-
-Network Configuration
-
-The Gateway establishes outbound-only connections to the following:
-
-Destination
-
-Port Needed
-
-More Info
-
-Keeper Cloud (keepersecurity.[com|eu|com.au|ca|us|jp)
-
-TLS Port 443
-
-Outbound access for Vault login and Keeper Secrets Manager APIs.
-
-Keeper Relay (krelay.keepersecurity.[com|eu|com.au|jp|ca|us])
-
-TCP and UDP port 3478
-
-Needed to establish secure & encrypted connections between the user's vault
-and the Gateway service.
-
-Keeper Relay (krelay.keepersecurity.[com|eu|com.au|jp|ca|us])
-
-Outbound access to TCP and UDP ports 49152 through 65535
-
-Needed to establish outbound access over the designated port ranges
-
-The Gateway preserves zero knowledge by performing all encryption and
-decryption of data locally. Keeper Secrets Manager APIs are used to
-communicate with the Keeper cloud.
-
 Keeper Gateway for Windows
 
 Service Account Setup
@@ -848,4 +781,37 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRPmmLYEln
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNqfhdJpjRCJbgs6RfYjP%252Fimage.png%3Falt%3Dmedia%26token%3D88ee8691-e886-48b8-99ec-1e2ff1fe4f6c&width=768&dpr=4&quality=100&sign=aa608a9c&sv=2)
+
+###
+
+Checksum Verification
+
+Keeper Gateway SHA256 hashes for the latest version are published at the below
+location:
+
+Calculating and verifying the checksum:
+
+####
+
+Linux
+
+Copy
+
+    
+    
+    sha256sum keeper-gateway_linux_x86_64
+    cat keeper-gateway_X.X.X_SHA256SUMS | grep keeper-gateway_linux_x86_64
+
+####
+
+PowerShell
+
+Copy
+
+    
+    
+    Get-FileHash -Algorithm SHA256 keeper-gateway_windows_x86_64.exe | Format-List
+    Get-Content keeper-gateway_X.X.X_SHA256SUMS | Select-String keeper-gateway_windows_x86_64.exe
+
+<https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
 

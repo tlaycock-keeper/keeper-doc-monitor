@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -394,36 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as PDF](/en/keeperpam/~gitbook/pdf?page=-Mf8yJS8Oy-
-wUqwOAoUY&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
-
-# Misc Commands
-
-Use the Keeper Commander CLI for hundreds of Vault and Admin Console commands
-
-The Keeper Secrets Manage CLI is focused specifically on retrieving and
-updating secrets in the vault.
-
-For all other commands, please refer to the Keeper Commander CLI:
-
-[Commander CLI](/en/keeperpam/commander-cli/overview)
-
-[PreviousVersion Command](/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface/version-command)[NextDocker
-Container](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/docker-container)
-
-Last updated 11 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -453,4 +424,34 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as PDF](/en/keeperpam/~gitbook/pdf?page=-Mf8yJS8Oy-
+wUqwOAoUY&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
+
+# Misc Commands
+
+Use the Keeper Commander CLI for hundreds of Vault and Admin Console commands
+
+[PreviousVersion Command](/en/keeperpam/secrets-manager/secrets-manager-
+command-line-interface/version-command)[NextDocker
+Container](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/docker-container)
+
+Last updated 11 months ago
+
+Was this helpful?
+
+The Keeper Secrets Manage CLI is focused specifically on retrieving and
+updating secrets in the vault.
+
+For all other commands, please refer to the Keeper Commander CLI:
+
+[Commander CLI](/en/keeperpam/commander-cli/overview)
 

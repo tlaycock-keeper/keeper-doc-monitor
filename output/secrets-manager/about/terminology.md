@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -518,13 +519,15 @@ A Secrets Manager "Configuration" is a set of tokens that includes encryption
 keys, client identifiers and destination server information used to
 authenticate and decrypt data from the Keeper Secrets Manager APIs.
 
-Secrets Manager configurations are created from [One Time Access
-Tokens](/en/keeperpam/secrets-manager/about/one-time-token) and have a one to
-one relationship with [client devices](/en/keeperpam/secrets-
-manager/about/terminology#client-device).
-
 A configuration can be stored as a text file with JSON, or it can be encoded
 into a single line string.
+
+Secrets Manager configurations are created from [One Time Access
+Tokens](/en/keeperpam/secrets-manager/about/one-time-token) and have a one to
+one relationship with .
+
+[client devices](/en/keeperpam/secrets-manager/about/terminology#client-
+device)
 
 Keeper Secrets Manager Structure
 

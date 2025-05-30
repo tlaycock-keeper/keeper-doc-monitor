@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -393,36 +394,6 @@ KeeperPAM and Secrets Manager
 
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
 
 On this page
 
@@ -530,7 +501,9 @@ https://keepersecurity.jp
 
   * `plugins` Set which password rotation plugin will be loaded. 
 
-    *   * `commands` Comma-separated list of Keeper commands to run 
+    * [Learn more](https://github.com/Keeper-Security/Commander/tree/master/keepercommander/plugins) about password rotation plugins for Commander. 
+
+  * `commands` Comma-separated list of Keeper commands to run 
 
   * `timedelay` Run the specified commands every X seconds. 
 
@@ -684,6 +657,11 @@ Copy
         "server": "keepersecurity.com"
     }
 
+The configuration file can be modified to include auto-execution of commands
+or other features. See the [configuration
+documentation](/en/keeperpam/commander-cli/commander-installation-
+setup/configuration#commander-configuration-file) for more details.
+
 You can create any number of persistent login sessions. However, the
 persistent session option is not intended for dynamic multi-server
 environments. If you share the exact configuration file on multiple servers,
@@ -780,6 +758,11 @@ Copy
 
 Combining Batch Mode and Persistent Login
 
+By setting up a persistent login configuration (as described in the [previous
+section](/en/keeperpam/commander-cli/commander-installation-
+setup/configuration#persistent-login-sessions)), you can execute a series of
+batch commands without any prompt for login. For example:
+
 Copy
 
     
@@ -826,7 +809,9 @@ section below for storage URL format.
 
 Commander supports the following protected storages:
 
-  *   * 
+  * [AWS Secrets Manager](/en/keeperpam/commander-cli/commander-installation-setup/configuration/aws-secrets-manager)
+
+  * [AWS Key Management Service](/en/keeperpam/commander-cli/commander-installation-setup/configuration/aws-key-management-service)
 
 [PreviousLogging in](/en/keeperpam/commander-cli/commander-installation-
 setup/logging-in)[NextAWS Secrets Manager](/en/keeperpam/commander-
@@ -836,26 +821,33 @@ Last updated 10 months ago
 
 Was this helpful?
 
-about password rotation plugins for Commander.
+#### Company
 
-The configuration file can be modified to include auto-execution of commands
-or other features. See the  for more details.
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-By setting up a persistent login configuration (as described in the ), you can
-execute a series of batch commands without any prompt for login. For example:
+#### Support
 
-[Learn more](https://github.com/Keeper-
-Security/Commander/tree/master/keepercommander/plugins)
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-[AWS Secrets Manager](/en/keeperpam/commander-cli/commander-installation-
-setup/configuration/aws-secrets-manager)
+#### Solutions
 
-[AWS Key Management Service](/en/keeperpam/commander-cli/commander-
-installation-setup/configuration/aws-key-management-service)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-[configuration documentation](/en/keeperpam/commander-cli/commander-
-installation-setup/configuration#commander-configuration-file)
+#### Pricing
 
-[previous section](/en/keeperpam/commander-cli/commander-installation-
-setup/configuration#persistent-login-sessions)
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

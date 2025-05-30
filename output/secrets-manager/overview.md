@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -394,6 +395,30 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * What is Keeper Secrets Manager?
+  * Features
+  * Get Started
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MeXQpBNa9pJqpPkixr9&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+
+# Secrets Manager Overview
+
+Overview of Keeper Secrets Manager (KSM) for IT Admins, DevOps & Developers
+
+[PreviousFAQs](/en/keeperpam/faqs)[NextQuick Start
+Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -424,17 +449,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MeXQpBNa9pJqpPkixr9&only=yes&limit=100)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 ##
 
 What is Keeper Secrets Manager?
@@ -462,7 +476,15 @@ Common use cases for Secrets Manager include:
 
 Features
 
-  *   * No hosted software or VMs to configure and manage (100% Cloud-based)
+**Keeper Secrets Manager** is part of the [Keeper Password Security
+platform](https://keepersecurity.com). With millions of users worldwide,
+Keeper Password Manager + Keeper Secrets Manager provides numerous benefits
+over using Hashicorp Vault, Delinea, Cyberark and other "legacy" Secrets
+Management products:
+
+  * Superior Zero-Knowledge encryption model ([learn more](https://docs.keeper.io/enterprise-guide/keeper-encryption-model))
+
+  * No hosted software or VMs to configure and manage (100% Cloud-based)
 
   * Secure and user-friendly Web Vault and Browser Extensions for secrets management
 
@@ -498,34 +520,8 @@ Features
 
 Get Started
 
-**Keeper Secrets Manager** is part of the . With millions of users worldwide,
-Keeper Password Manager + Keeper Secrets Manager provides numerous benefits
-over using Hashicorp Vault, Delinea, Cyberark and other "legacy" Secrets
-Management products:
-
-Superior Zero-Knowledge encryption model ()
-
-Ready to get started with Keeper Secrets Manager? .
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-
-# Secrets Manager Overview
-
-Overview of Keeper Secrets Manager (KSM) for IT Admins, DevOps & Developers
-
-[PreviousFAQs](/en/keeperpam/faqs)[NextQuick Start
-Guide](/en/keeperpam/secrets-manager/quick-start-guide)
-
-  * What is Keeper Secrets Manager?
-  * Features
-  * Get Started
-
-[Keeper Password Security platform](https://keepersecurity.com)
-
-[learn more](https://docs.keeper.io/enterprise-guide/keeper-encryption-model)
-
-[Proceed to the Setup Instructions](/en/keeperpam/secrets-manager/quick-start-
-guide)
+Ready to get started with Keeper Secrets Manager? [Proceed to the Setup
+Instructions](/en/keeperpam/secrets-manager/quick-start-guide).
 
 Secrets Manager Video Demo
 

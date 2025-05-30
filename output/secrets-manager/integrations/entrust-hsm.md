@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -426,10 +427,30 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Features
+  * Prerequisites
+  * Setup
+  * 1\. Create and Configure Virtualenv
+  * 2\. Install KSM Storage and nfpython Modules 
+  * 3\. Add Entrust HSM Storage to Your Code
+  * Using Secrets Manager with Entrust HSM
+  * Create an Encryption Key for Testing
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=CjeGp1bCdKjFokibDmg0&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Entrust HSM Encryption
+
+Protect Secrets Manager connection details locally with Entrust HSM
+
+[PreviousDocker Writer Image](/en/keeperpam/secrets-
+manager/integrations/docker-writer-image)[NextGit - Sign Commits with
+SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
 
 Last updated 1 month ago
 
@@ -497,13 +518,31 @@ Activate the virtualenv environment before starting development
 The Secrets Manager HSM modules are located in the Keeper Secrets Manager
 storage module which can be installed using pip
 
+Copy
+
+    
+    
+    pip3 install keeper-secrets-manager-storage
+
 The nfpython package also needs to be installed in order to utilize the
 Entrust HSM. This package is installed as part of the nShield package with
 your Entrust installation.
 
 In Linux:
 
+Copy
+
+    
+    
+    pip install /opt/nfast/python3/additional-packages/nfpython*.whl 
+
 In Windows:
+
+Copy
+
+    
+    
+    pip install c:\Program Files\nCipher\nfast\python3\additional-packages\nfpython*.whl
 
 ###
 
@@ -514,6 +553,22 @@ Use the `HsmNfastKeyValueStorage` as your Secrets Manager storage in the
 
 The `HsmNfastKeyValueStorage` requires the method and identity ("simple" and
 "ksmkey" respectively in this example).
+
+entrust_hsm_example.py
+
+Copy
+
+    
+    
+    from keeper_secrets_manager_core import SecretsManager
+    from keeper_secrets_manager_hsm.storage_hsm_nfast import HsmNfastKeyValueStorage
+    
+    config=HsmNfastKeyValueStorage('simple', 'ksmkey', 'client-config.json')
+    
+    secrets_manager = SecretsManager(config=config, verify_ssl_certs=True)
+    
+    all_records = secrets_manager.get_secrets()
+    
 
 You're all set and ready to use Secrets Manager with Entrust NShield HSM
 
@@ -537,51 +592,13 @@ Replace "ksmkey" in these examples with the identity in your HSM.
 
 in Linux:
 
-in Windows:
-
-Supports the
-
-Check out the  for more examples and functionality
-
-Copy
-
-    
-    
-    pip3 install keeper-secrets-manager-storage
-
-Copy
-
-    
-    
-    pip install /opt/nfast/python3/additional-packages/nfpython*.whl 
-
-Copy
-
-    
-    
-    pip install c:\Program Files\nCipher\nfast\python3\additional-packages\nfpython*.whl
-
-entrust_hsm_example.py
-
-Copy
-
-    
-    
-    from keeper_secrets_manager_core import SecretsManager
-    from keeper_secrets_manager_hsm.storage_hsm_nfast import HsmNfastKeyValueStorage
-    
-    config=HsmNfastKeyValueStorage('simple', 'ksmkey', 'client-config.json')
-    
-    secrets_manager = SecretsManager(config=config, verify_ssl_certs=True)
-    
-    all_records = secrets_manager.get_secrets()
-    
-
 Copy
 
     
     
     opt/nfast/bin/generatekey -b simple protect=module type=AES size=256 ident=ksmkey
+
+in Windows:
 
 Copy
 
@@ -589,25 +606,9 @@ Copy
     
     c:\Program Files\nShield\nfast\bin\generatekey -b simple protect=module type=AES size=256 ident=ksmkey
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+Supports the
 
-# Entrust HSM Encryption
-
-Protect Secrets Manager connection details locally with Entrust HSM
-
-[PreviousDocker Writer Image](/en/keeperpam/secrets-
-manager/integrations/docker-writer-image)[NextGit - Sign Commits with
-SSH](/en/keeperpam/secrets-manager/integrations/git-sign-commits-with-ssh)
-
-  * Features
-  * Prerequisites
-  * Setup
-  * 1\. Create and Configure Virtualenv
-  * 2\. Install KSM Storage and nfpython Modules 
-  * 3\. Add Entrust HSM Storage to Your Code
-  * Using Secrets Manager with Entrust HSM
-  * Create an Encryption Key for Testing
+Check out the  for more examples and functionality
 
 [Python Secrets Manager SDK](/en/keeperpam/secrets-manager/developer-sdk-
 library/python-sdk)

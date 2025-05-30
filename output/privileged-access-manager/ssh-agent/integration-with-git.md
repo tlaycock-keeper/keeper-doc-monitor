@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -466,7 +467,7 @@ Prerequisites
 
   * Ensure that [SSH Agent is active](/en/keeperpam/privileged-access-manager/ssh-agent) on the Keeper Desktop
 
-  * 
+  * [Terminal Configuration](/en/keeperpam/privileged-access-manager/ssh-agent#terminal-configuration) is performed
 
 ##
 
@@ -777,11 +778,6 @@ Copy
         Test commit with SSH signing
 
 Setup is complete.
-
-is performed
-
-[Terminal Configuration](/en/keeperpam/privileged-access-manager/ssh-
-agent#terminal-configuration)
 
 Keeper SSH Key for Github Authentication
 

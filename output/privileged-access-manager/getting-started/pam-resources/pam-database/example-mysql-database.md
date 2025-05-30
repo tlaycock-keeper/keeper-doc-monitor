@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -564,10 +565,18 @@ Session Recording
 
 Options for recording sessions and typescripts
 
+See [session recording](/en/keeperpam/privileged-access-manager/session-
+recording-and-playback)
+
 Connection Parameters
 
 Connection-specific protocol settings which can vary based on the protocol
 type
+
+See this [section](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/mysql-connections) for MySQL protocol
+settings We recommend specifying the **Connection Port** at a minimum. E.g.
+"3306" for MySQL.
 
 ###
 
@@ -652,17 +661,6 @@ Was this helpful?
 © 2025 Keeper Security, Inc.
 
 **Required** Visit this  for more details
-
-See
-
-See this  for MySQL protocol settings We recommend specifying the **Connection
-Port** at a minimum. E.g. "3306" for MySQL.
-
-[session recording](/en/keeperpam/privileged-access-manager/session-recording-
-and-playback)
-
-[section](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/mysql-connections)
 
 [section](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-database/example-mysql-database#administrative-credential-

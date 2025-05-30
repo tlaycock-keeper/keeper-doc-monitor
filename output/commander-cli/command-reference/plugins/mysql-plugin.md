@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -666,20 +667,20 @@ A Keeper Record setup for use with Commander's 'connect' command
 
 For more information on the `connect` command, see the
 
+[documentation](/en/keeperpam/commander-cli/command-
+reference/plugins/password-rotation#connect-command)
+
 [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
 rotation)
 
 [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
 commands)
 
-[documentation](/en/keeperpam/commander-cli/command-
-reference/plugins/password-rotation#connect-command)
+[command documentation](/en/keeperpam/commander-cli/command-reference/record-
+commands#edit-command-record-types)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fraw.githubusercontent.com%2FKeeper-
 Security%2FCommander%2Fmaster%2Fkeepercommander%2Fimages%2Fconnect_mysql_screenshot.png&width=768&dpr=4&quality=100&sign=c97e338d&sv=2)
-
-[command documentation](/en/keeperpam/commander-cli/command-reference/record-
-commands#edit-command-record-types)
 
 Creating a record in the Keeper Vault
 
@@ -703,9 +704,9 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4TNMCZKhe
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MiNaHUls8b8zepgHMnb%252F-MiNgHHcXnjXoz4P1LO9%252Fimage.png%3Falt%3Dmedia%26token%3Dc7bac4e1-0eef-4e3e-9d29-6a74fa18c8d4&width=768&dpr=4&quality=100&sign=47beb160&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MiNPEavIrI4-C-d6yeX%252F-MiNSHLjGNieJbKyeNnB%252Fimage.png%3Falt%3Dmedia%26token%3D4cb9461d-4b81-45d0-b93a-c541187d592f&width=768&dpr=4&quality=100&sign=698ed78f&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MiNPEavIrI4-C-d6yeX%252F-MiNSHLjGNieJbKyeNnB%252Fimage.png%3Falt%3Dmedia%26token%3D4cb9461d-4b81-45d0-b93a-c541187d592f&width=768&dpr=4&quality=100&sign=698ed78f&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MiNaHUls8b8zepgHMnb%252F-MiNgHHcXnjXoz4P1LO9%252Fimage.png%3Falt%3Dmedia%26token%3Dc7bac4e1-0eef-4e3e-9d29-6a74fa18c8d4&width=768&dpr=4&quality=100&sign=47beb160&sv=2)
 

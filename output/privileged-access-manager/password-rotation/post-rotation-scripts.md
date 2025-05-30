@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -394,6 +395,35 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * Rotation Options
+  * Order of Execution
+  * Common Use Cases
+  * Documentation included
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=L2aoHEHPl4mak6HpvI9z&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+
+# Post-Rotation Scripts
+
+Perform privileged automation tasks with Post-Rotation scripts and password
+rotation
+
+[PreviousService Management](/en/keeperpam/privileged-access-manager/password-
+rotation/service-management)[NextInputs and Outputs](/en/keeperpam/privileged-
+access-manager/password-rotation/post-rotation-scripts/parameters)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -424,17 +454,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=L2aoHEHPl4mak6HpvI9z&only=yes&limit=100)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 ##
 
 Overview
@@ -447,6 +466,30 @@ remote host where password rotation occurred.
 
 The following table shows all the available PAM Records and where the attached
 script will execute:
+
+Record Type
+
+Attached Post Execution Script will execute on
+
+PAM Configuration
+
+Gateway
+
+PAM Machine
+
+The Machine specified in the record
+
+PAM Database
+
+Gateway
+
+PAM Directory
+
+Gateway
+
+PAM User
+
+Gateway
 
 ###
 
@@ -504,58 +547,11 @@ Scripts:
 
 Documentation included
 
-  *   *   * 
+  * [Inputs and outputs](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts/parameters)
 
-Record Type
+  * [Attaching scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts/attaching-post-rotation-scripts-to-records)
 
-Attached Post Execution Script will execute on
-
-PAM Configuration
-
-Gateway
-
-PAM Machine
-
-The Machine specified in the record
-
-PAM Database
-
-Gateway
-
-PAM Directory
-
-Gateway
-
-PAM User
-
-Gateway
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-
-# Post-Rotation Scripts
-
-Perform privileged automation tasks with Post-Rotation scripts and password
-rotation
-
-[PreviousService Management](/en/keeperpam/privileged-access-manager/password-
-rotation/service-management)[NextInputs and Outputs](/en/keeperpam/privileged-
-access-manager/password-rotation/post-rotation-scripts/parameters)
-
-  * Overview
-  * Rotation Options
-  * Order of Execution
-  * Common Use Cases
-  * Documentation included
-
-[Inputs and outputs](/en/keeperpam/privileged-access-manager/password-
-rotation/post-rotation-scripts/parameters)
-
-[Attaching scripts](/en/keeperpam/privileged-access-manager/password-
-rotation/post-rotation-scripts/attaching-post-rotation-scripts-to-records)
-
-[Code Examples](/en/keeperpam/privileged-access-manager/password-
-rotation/post-rotation-scripts/accessing-parameters)
+  * [Code Examples](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts/accessing-parameters)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

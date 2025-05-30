@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -394,6 +395,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview 
@@ -416,6 +447,15 @@ PDF](/en/keeperpam/~gitbook/pdf?page=nNCtbGpBTPBs4P9i3Qv3&only=yes&limit=100)
 
 Keeper Connections - SQL Server Protocol
 
+[PreviousMySQL Connections](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/mysql-connections)[NextPostgreSQL
+Connections](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/postgresql-connections)
+
+Last updated 1 day ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -431,8 +471,7 @@ connected to target databases.
 Prerequisites
 
 Prior to following this guide, familiarize yourself with the prerequisites on
-the Connection's [Getting Started page](/en/keeperpam/privileged-access-
-manager/connections/getting-started).
+the Connection's .
 
 The following PAM records are needed in order to successfully setup this
 protocol:
@@ -458,7 +497,7 @@ to connect to the endpoint
 This guide will use a **SQL Database**. This is similar to setting up a MySQL
 database, for more details on how this is setup, visit the following page:
 
-  * [Example: Microsoft SQL Server Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database/example-microsoft-sql-server-database)
+  * 
 
 ##
 
@@ -554,50 +593,12 @@ protocol session
 
 Session Recordings - SQL Server Protocol
 
-[PreviousMySQL Connections](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/mysql-connections)[NextPostgreSQL
-Connections](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/postgresql-connections)
+[Getting Started page](/en/keeperpam/privileged-access-
+manager/connections/getting-started)
 
-Last updated 11 hours ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
-For this protocol, both graphical and the full, raw text text content of
-terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this .
-
-  * Learn more about 
+[Example: Microsoft SQL Server Database](/en/keeperpam/privileged-access-
+manager/getting-started/pam-resources/pam-database/example-microsoft-sql-
+server-database)
 
 Field
 
@@ -613,11 +614,17 @@ Administrative Credential Record
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
 
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this .
+
+  * Learn more about 
+
 [page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
 
 [Session Recording and Playback](/en/keeperpam/privileged-access-
 manager/session-recording-and-playback)
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
 

@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -394,36 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview
@@ -460,6 +431,36 @@ Last updated 1 month ago
 
 Was this helpful?
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ##
 
 Overview
@@ -489,7 +490,9 @@ Key Features
 
   * **Seamless Authorization** : Securely authorize SSH access to target systems when the Keeper vault is unlocked.
 
-  *   * **Git Integration** : Authenticate with Github and Gitlab, and sign your Git commits without having to store private keys locally on the workstation.
+  * **Local and Remote Use** : Supports SSH connections to line-of-sight targets in addition to managed systems via KeeperPAM [tunnels](/en/keeperpam/privileged-access-manager/tunnels).
+
+  * **Git Integration** : Authenticate with Github and Gitlab, and sign your Git commits without having to store private keys locally on the workstation.
 
   * **Encrypted keys** : SSH private keys held in Keeper can be encrypted with a passphrase, adding an additional layer of protection. Keeper enhances this by allowing the record's password field to act as the passphrase, ensuring seamless security and usability.
 
@@ -498,6 +501,9 @@ Key Features
 ##
 
 Downloads
+
+The Keeper Desktop application is available from the [Download
+Page](https://www.keepersecurity.com/download.html) of our website.
 
 ##
 
@@ -595,7 +601,11 @@ login.
 To enable SSH agent on specific keys, select those keys from the provided
 drop-down.
 
-  * 
+In order to work with the local operating system (Linux, macOS and Windows),
+follow the [guide below](/en/keeperpam/privileged-access-manager/ssh-
+agent#environment-setup) to enable SSH Agent for your operating system.
+
+  * See [Environment Setup](/en/keeperpam/privileged-access-manager/ssh-agent#environment-setup)
 
 ##
 
@@ -611,11 +621,22 @@ unlocked.
 
 Using SSH Agent with Git
 
-  * 
+The Keeper SSH Agent allows you to seamlessly authenticate into services like
+GitHub and securely sign Git commits. To help you get started, we've created a
+step-by-step guide on setting up [authentication with
+GitHub](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-
+git#github-authentication) and [signing Git commits](/en/keeperpam/privileged-
+access-manager/ssh-agent/integration-with-git#signing-commits) using Keeper.
+
+  * [Integration with Git](/en/keeperpam/privileged-access-manager/ssh-agent/integration-with-git)
 
 ##
 
 Using SSH Agent with Tunnels
+
+For zero-trust [Tunnel](/en/keeperpam/privileged-access-manager/tunnels)
+connections through a target resource, Keeper's SSH agent will automatically
+authenticate the session.
 
 After a tunnel has been activated on a PAM resource, the SSH Command will
 display beneath the tunnel information.
@@ -773,52 +794,7 @@ Rotation of SSH Keys
 KeeperPAM provides automatic rotation of SSH keys on-demand or on a scheduled
 basis.
 
-  * 
-
-**Local and Remote Use** : Supports SSH connections to line-of-sight targets
-in addition to managed systems via KeeperPAM .
-
-The Keeper Desktop application is available from the  of our website.
-
-In order to work with the local operating system (Linux, macOS and Windows),
-follow the  to enable SSH Agent for your operating system.
-
-See
-
-The Keeper SSH Agent allows you to seamlessly authenticate into services like
-GitHub and securely sign Git commits. To help you get started, we've created a
-step-by-step guide on setting up  and  using Keeper.
-
-For zero-trust  connections through a target resource, Keeper's SSH agent will
-automatically authenticate the session.
-
-See the  section and the  SSH Key use case
-
-[tunnels](/en/keeperpam/privileged-access-manager/tunnels)
-
-[Download Page](https://www.keepersecurity.com/download.html)
-
-[Integration with Git](/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git)
-
-[Tunnel](/en/keeperpam/privileged-access-manager/tunnels)
-
-[Password Rotation](/en/keeperpam/secrets-manager/password-rotation)
-
-[Linux User](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/linux-user)
-
-[guide below](/en/keeperpam/privileged-access-manager/ssh-agent#environment-
-setup)
-
-[Environment Setup](/en/keeperpam/privileged-access-manager/ssh-
-agent#environment-setup)
-
-[authentication with GitHub](/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git#github-authentication)
-
-[signing Git commits](/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git#signing-commits)
+  * See the [Password Rotation](/en/keeperpam/secrets-manager/password-rotation) section and the [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user) SSH Key use case
 
 Custom Field Example
 

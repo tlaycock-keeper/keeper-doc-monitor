@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -454,8 +455,8 @@ Store and Retrieve Secrets from the Linux Keyring
 
 [PreviousKubernetes (alternative)](/en/keeperpam/secrets-
 manager/integrations/kubernetes)[NextModel Context Protocol (MCP) for AI
-Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-
-for-ai-agents)
+Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-
+protocol-mcp-for-ai-agents-docker)
 
 Last updated 6 months ago
 
@@ -703,13 +704,13 @@ service/latest/)
 utility/blob/main/Keeper-Security/linux-keyring-
 utility/blob/main/pkg/dbus_secrets/dbus_secrets.go#L41)
 
-[Releases · Keeper-Security/linux-keyring-
-utilityGitHub](https://github.com/Keeper-Security/linux-keyring-
-utility/releases)
-
 [GitHub - Keeper-Security/linux-keyring-utility: A utility for natively
 interacting with the Linux KeyringGitHub](https://github.com/Keeper-
 Security/linux-keyring-utility)
+
+[Releases · Keeper-Security/linux-keyring-
+utilityGitHub](https://github.com/Keeper-Security/linux-keyring-
+utility/releases)
 
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
 

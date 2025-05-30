@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -451,7 +452,7 @@ manager/connections/session-protocols/postgresql-connections)[NextTelnet
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/telnet-connections)
 
-Last updated 9 days ago
+Last updated 10 days ago
 
 Was this helpful?
 
@@ -594,9 +595,6 @@ started/pam-resources/pam-machine/example-azure-windows-vm)
 For this protocol, graphical data, including timing information, is recorded.
 For more details on the recordings and how to access them, see the  docs.
 
-[Session Recording & Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
-
 Field
 
 Definition
@@ -610,6 +608,9 @@ Administrative Credential Record
 
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
+
+[Session Recording & Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)

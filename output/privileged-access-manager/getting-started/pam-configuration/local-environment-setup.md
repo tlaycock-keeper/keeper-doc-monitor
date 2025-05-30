@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -475,9 +476,6 @@ Gateway (Required)
 
 The configured gateway
 
-See [docs](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-for more info
-
 Application Folder (Required)
 
 The shared folder where the PAM Configuration data will be stored
@@ -499,9 +497,6 @@ Port Mapping
 
 Define alternative default ports
 
-Ex: `3307=mysql `See [port mapping](/en/keeperpam/privileged-access-
-manager/references/port-mapping) docs
-
 For Discovery, the following fields are required, otherwise they are optional:
 
 Field
@@ -521,9 +516,6 @@ Ex: `My Network`
 Network CIDR
 
 Subnet of the IP address
-
-Ex: `192.168.0.15/24` Refer to [this
-](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)for more info
 
 ###
 
@@ -620,6 +612,19 @@ Was this helpful?
 © 2025 Keeper Security, Inc.
 
 See  for more info
+
+See  for more info
+
+Ex: `3307=mysql `See  docs
+
+Ex: `192.168.0.15/24` Refer to for more info
+
+[docs](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+[port mapping](/en/keeperpam/privileged-access-manager/references/port-
+mapping)
+
+[this ](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
 
 [this section](/en/keeperpam/privileged-access-manager/getting-started/pam-
 configuration/local-environment-setup#pam-features)

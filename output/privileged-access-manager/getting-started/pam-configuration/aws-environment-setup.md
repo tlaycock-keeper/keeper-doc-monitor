@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -394,6 +395,35 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * AWS Environment Overview 
+  * EC2 IAM Role Policy
+  * Minimum AWS Policy to Manage IAM users
+  * IAM User Policy
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=7LH7nq7UkUQSzsxjXLTt&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
+
+# AWS Environment Setup
+
+Setting up your AWS environment to work with KeeperPAM
+
+[PreviousPAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)[NextAzure Environment
+Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration/azure-environment-setup)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -423,35 +453,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * AWS Environment Overview 
-  * EC2 IAM Role Policy
-  * Minimum AWS Policy to Manage IAM users
-  * IAM User Policy
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=7LH7nq7UkUQSzsxjXLTt&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
-
-# AWS Environment Setup
-
-Setting up your AWS environment to work with KeeperPAM
-
-[PreviousPAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)[NextAzure Environment
-Setup](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/azure-environment-setup)
-
-Last updated 4 months ago
-
-Was this helpful?
 
 ##
 
@@ -613,10 +614,9 @@ The steps to create the access keys is below:
   5. Save the provided Access Key ID / Secret Access Key into the PAM Configuration
 
 In addition to these policies, we recommend protecting the Gateway
-Configuration secrets .
-
-[using the AWS KMS](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/advanced-configuration/gateway-configuration-with-aws-kms)
+Configuration secrets [using the AWS KMS](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/advanced-configuration/gateway-configuration-
+with-aws-kms).
 
 [EC2 Role Policy](/en/keeperpam/privileged-access-manager/getting-started/pam-
 configuration/aws-environment-setup#ec2-role)

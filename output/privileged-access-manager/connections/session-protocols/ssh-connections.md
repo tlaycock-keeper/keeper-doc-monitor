@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -426,35 +427,12 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview 
-  * Prerequisites
-  * PAM Settings - Configuring SSH Protocol
-  * Accessing Connection Settings
-  * Configuring Connection Settings
-  * Starting a Connection
-  * File Transfers
-  * SSH to Windows Servers
-  * Session Recordings - SSH Protocol
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=LS64LkNXyaXUDsaPbKDL&only=yes&limit=100)
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
-
-# SSH Connections
-
-Keeper Connections - SSH Protocol
-
-[PreviousSession Protocols](/en/keeperpam/privileged-access-
-manager/connections/session-protocols)[NextRDP
-Connections](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/rdp-connections)
-
-Last updated 9 days ago
+Last updated 10 days ago
 
 Was this helpful?
 
@@ -508,9 +486,65 @@ following fields are all **required** and need to be configured:
 The following table lists all the configurable connection settings for the SSH
 protocol on the PAM Settings:
 
+##
+
+Starting a Connection
+
+Once you have configured the SSH Protocol connection on your PAM Machine
+Record, your record will contain the following connection banner with the
+"Launch" Button:
+
+In the above image, a Linux server has been configured on the PAM Machine
+Record. When clicking launch, the Vault Client will render a window with the
+established connection protocol to the specified target:
+
+###
+
+File Transfers
+
+####
+
+Transfer In
+
+If the SFTP file transfer feature is enabled, the user can drag and drop files
+into the terminal session to transfer the files to the machine.
+
+Keeper supports one or more files transferred simultaneously through drag-and-
+drop.
+
+While the files are being uploaded to the target machine, a file transfer
+status is displayed in the dock area of the Keeper Vault:
+
+####
+
+Transfer Out
+
+To transfer files from the SSH remote connection to the local filesystem, you
+can download a tool called `guacctl` into the remote system and use it for
+performing outbound transfers.
+
+Download `guacctl` and set as executable:
+
+Initiate the file download using this syntax:
+
+###
+
+SSH to Windows Servers
+
+The SSH protocol can also be used to access Windows servers for execution of
+PowerShell commands or other administrative actions.
+
+  * 
+
+##
+
+Session Recordings - SSH Protocol
+
 Field
 
 Definition
+
+Learn more on how to
 
 Protocol
 
@@ -594,45 +628,6 @@ Can paste from clipboard
 If enabled, user can paste text from clipboard within the connected protocol
 session.
 
-##
-
-Starting a Connection
-
-Once you have configured the SSH Protocol connection on your PAM Machine
-Record, your record will contain the following connection banner with the
-"Launch" Button:
-
-In the above image, a Linux server has been configured on the PAM Machine
-Record. When clicking launch, the Vault Client will render a window with the
-established connection protocol to the specified target:
-
-###
-
-File Transfers
-
-####
-
-Transfer In
-
-If the SFTP file transfer feature is enabled, the user can drag and drop files
-into the terminal session to transfer the files to the machine.
-
-Keeper supports one or more files transferred simultaneously through drag-and-
-drop.
-
-While the files are being uploaded to the target machine, a file transfer
-status is displayed in the dock area of the Keeper Vault:
-
-####
-
-Transfer Out
-
-To transfer files from the SSH remote connection to the local filesystem, you
-can download a tool called `guacctl` into the remote system and use it for
-performing outbound transfers.
-
-Download `guacctl` and set as executable:
-
 Copy
 
     
@@ -640,28 +635,34 @@ Copy
     wget https://raw.githubusercontent.com/apache/guacamole-server/master/bin/guacctl
     chmod +x guacctl
 
-Initiate the file download using this syntax:
-
 Copy
 
     
     
     ./guacctl -d <filename>
 
-###
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
 
-SSH to Windows Servers
+# SSH Connections
 
-The SSH protocol can also be used to access Windows servers for execution of
-PowerShell commands or other administrative actions.
+Keeper Connections - SSH Protocol
 
-  * 
+[PreviousSession Protocols](/en/keeperpam/privileged-access-
+manager/connections/session-protocols)[NextRDP
+Connections](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/rdp-connections)
 
-##
-
-Session Recordings - SSH Protocol
-
-Learn more on how to
+  * Overview 
+  * Prerequisites
+  * PAM Settings - Configuring SSH Protocol
+  * Accessing Connection Settings
+  * Configuring Connection Settings
+  * Starting a Connection
+  * File Transfers
+  * SSH to Windows Servers
+  * Session Recordings - SSH Protocol
 
 [Getting Started page](/en/keeperpam/privileged-access-
 manager/connections/getting-started)
@@ -669,53 +670,25 @@ manager/connections/getting-started)
 [activate SSH on Windows](/en/keeperpam/privileged-access-
 manager/references/setting-up-ssh#windows)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FF3pvzsbKBHZ8Wj98YiMM%252FconnectionRecord.png%3Falt%3Dmedia%26token%3D9811c113-c5f3-4486-b284-12e54de8b47c&width=768&dpr=4&quality=100&sign=db2f706c&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtiIvkE75oiwZ6sP4iSjH%252FScreenshot%25202024-12-29%2520at%25207.47.48%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dca9a92df-4ad8-4d26-ad5e-35223ebf2f3b&width=768&dpr=4&quality=100&sign=f3b5cb98&sv=2)
-
-SSH Session Launching
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FoGptJrsRae6sNNFv5Mag%252FScreenshot%25202024-12-29%2520at%25205.50.21%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Ddaf886ac-f3c9-43d8-8dbe-1280366f9791&width=768&dpr=4&quality=100&sign=96d9b589&sv=2)
-
-SSH Session Active
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGUHA9hRGHzUZ07N2oMSA%252FScreenshot%25202025-02-09%2520at%25208.15.45%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D55f1b1fa-2a39-430e-b991-cceda12355ad&width=768&dpr=4&quality=100&sign=d9962f96&sv=2)
-
-SFTP File Transfer Options
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F53Sn5P6KscJtt7usRQWh%252Fdrag-
-and-
-drop.png%3Falt%3Dmedia%26token%3De07ef4fa-c6ad-49e0-acb4-64e0a042dd36&width=768&dpr=4&quality=100&sign=a34ca83f&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPAOewYiPjJuOgJsngzSX%252Fupload-
-progress.png%3Falt%3Dmedia%26token%3D50307229-bdbe-4704-bd53-f8485bda7681&width=768&dpr=4&quality=100&sign=b570791&sv=2)
-
-File Upload Status
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fm3ujLVowAlLGqlZ6ecVJ%252FScreenshot%25202025-01-21%2520at%252012.17.55%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D3bac50e6-864a-4deb-
-ab79-e0b8a871a8ae&width=768&dpr=4&quality=100&sign=62f9e671&sv=2)
-
-SSH Session Recordings
-
 For this protocol, both graphical and the full, raw text text content of
 terminal sessions, including timing information, are recorded. For more
 information on recordings and how to access these recordings, visit this .
 
   * Learn more about 
+
+Field
+
+Definition
+
+PAM Configuration
+
+This is the PAM Configuration that contains the details of your target
+infrastructure and provides access to the target configured on the PAM Record.
+
+Administrative Credential Record
+
+This is the linked  that will be used to authenticate to the target and
+perform administrative operations on it.
 
 PAM Record
 
@@ -738,6 +711,9 @@ to the endpoint
 [Session Recording and Playback](/en/keeperpam/privileged-access-
 manager/session-recording-and-playback)
 
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
 [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
 started/pam-configuration)
 
@@ -747,20 +723,45 @@ resources/pam-machine)
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
 
-Field
+SSH Session Launching
 
-Definition
+SSH Session Active
 
-PAM Configuration
+SFTP File Transfer Options
 
-This is the PAM Configuration that contains the details of your target
-infrastructure and provides access to the target configured on the PAM Record.
+File Upload Status
 
-Administrative Credential Record
+SSH Session Recordings
 
-This is the linked  that will be used to authenticate to the target and
-perform administrative operations on it.
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FF3pvzsbKBHZ8Wj98YiMM%252FconnectionRecord.png%3Falt%3Dmedia%26token%3D9811c113-c5f3-4486-b284-12e54de8b47c&width=768&dpr=4&quality=100&sign=db2f706c&sv=2)
 
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtiIvkE75oiwZ6sP4iSjH%252FScreenshot%25202024-12-29%2520at%25207.47.48%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dca9a92df-4ad8-4d26-ad5e-35223ebf2f3b&width=768&dpr=4&quality=100&sign=f3b5cb98&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FoGptJrsRae6sNNFv5Mag%252FScreenshot%25202024-12-29%2520at%25205.50.21%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Ddaf886ac-f3c9-43d8-8dbe-1280366f9791&width=768&dpr=4&quality=100&sign=96d9b589&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGUHA9hRGHzUZ07N2oMSA%252FScreenshot%25202025-02-09%2520at%25208.15.45%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D55f1b1fa-2a39-430e-b991-cceda12355ad&width=768&dpr=4&quality=100&sign=d9962f96&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F53Sn5P6KscJtt7usRQWh%252Fdrag-
+and-
+drop.png%3Falt%3Dmedia%26token%3De07ef4fa-c6ad-49e0-acb4-64e0a042dd36&width=768&dpr=4&quality=100&sign=a34ca83f&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FPAOewYiPjJuOgJsngzSX%252Fupload-
+progress.png%3Falt%3Dmedia%26token%3D50307229-bdbe-4704-bd53-f8485bda7681&width=768&dpr=4&quality=100&sign=b570791&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fm3ujLVowAlLGqlZ6ecVJ%252FScreenshot%25202025-01-21%2520at%252012.17.55%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D3bac50e6-864a-4deb-
+ab79-e0b8a871a8ae&width=768&dpr=4&quality=100&sign=62f9e671&sv=2)
 

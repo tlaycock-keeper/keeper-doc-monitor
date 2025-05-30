@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -1023,12 +1024,6 @@ installation-setup)
 [ config file documentation ](/en/keeperpam/commander-cli/commander-
 installation-setup/logging-in#commander-configuration-file)
 
-[2KBpackage_layer_content.sh](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FgxJz7bvtfe4hTfuTA0cc%2Fpackage_layer_content.sh?alt=media&token=f624bf70-327c-4b10-9f18-a1f1ae06ecc1)
-
-Bash script for packaging `keepercommander` Lambda Layer content
-
 [Invoking Lambda functions - AWS LambdaAWS
 Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
 
@@ -1038,13 +1033,19 @@ Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
 Inc.](https://aws.amazon.com/premiumsupport/knowledge-center/lambda-send-
 email-ses/)
 
-![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fa0.awsstatic.com%2Flibra-
-css%2Fimages%2Fsite%2Ftouch-icon-
-ipad-144-smile.png&width=20&dpr=4&quality=100&sign=f36475b9&sv=2)
-
 [Commander/examples at master · Keeper-
 Security/CommanderGitHub](https://github.com/Keeper-
 Security/Commander/tree/master/examples)
 
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
+
+![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fa0.awsstatic.com%2Flibra-
+css%2Fimages%2Fsite%2Ftouch-icon-
+ipad-144-smile.png&width=20&dpr=4&quality=100&sign=f36475b9&sv=2)
+
+[2KBpackage_layer_content.sh](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-
+x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FgxJz7bvtfe4hTfuTA0cc%2Fpackage_layer_content.sh?alt=media&token=f624bf70-327c-4b10-9f18-a1f1ae06ecc1)
+
+Bash script for packaging `keepercommander` Lambda Layer content
 

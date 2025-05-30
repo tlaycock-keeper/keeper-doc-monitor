@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -426,12 +427,33 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview 
+  * Prerequisites
+  * PAM Settings - Configuring RDP Protocol
+  * Accessing Connection Settings
+  * Configuring Connection Settings
+  * Troubleshooting Connections
+  * Session Recordings - RDP Protocol
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=XIBliCeQFLhXyHlm2D0y&only=yes&limit=100)
 
-Last updated 9 days ago
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
+
+# RDP Connections
+
+Keeper Connections - RDP Protocol
+
+[PreviousSSH Connections](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/ssh-connections)[NextMySQL
+Connections](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/mysql-connections)
+
+Last updated 10 days ago
 
 Was this helpful?
 
@@ -458,6 +480,14 @@ protocol:
 PAM Record
 
 Definition
+
+The PAM Configuration contains information of your target infrastructure
+
+The PAM Machine record contains information of the endpoint you want to
+establish an RDP protocol connection to.
+
+The PAM User record contains the user credentials that will be used to connect
+to the endpoint
 
 This guide will use a **Azure VM** as an example. For more details on how this
 is setup on the PAM Machine Record, visit the following page:
@@ -490,29 +520,9 @@ following fields are all **required** and need to be configured:
 The following table lists all the configurable settings for the RDP protocol
 on the PAM Settings:
 
-###
-
-Troubleshooting Connections
-
-When troubleshooting authentication and connection issues, check the
-following:
-
-  * Ensure the user specified in the linked PAM User record has the rights to RDP to the target machine.
-
-  * Adjust your group policy or add the user to the "Remote Desktop Users" group on Windows to grant access.
-
-  * 
-
-##
-
-Session Recordings - RDP Protocol
-
 Field
 
 Definition
-
-For additional troubleshooting, refer to the Gateway logs which will contain
-additional information. The location of the Gateway logs depends on the .
 
 Protocol
 
@@ -618,43 +628,34 @@ Audio output is always enabled by default. If you are concerned about
 bandwidth usage, or audio is causing problems, you can explicitly disable
 audio output
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
+###
 
-# RDP Connections
+Troubleshooting Connections
 
-Keeper Connections - RDP Protocol
+When troubleshooting authentication and connection issues, check the
+following:
 
-[PreviousSSH Connections](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/ssh-connections)[NextMySQL
-Connections](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/mysql-connections)
+  * Ensure the user specified in the linked PAM User record has the rights to RDP to the target machine.
 
-  * Overview 
-  * Prerequisites
-  * PAM Settings - Configuring RDP Protocol
-  * Accessing Connection Settings
-  * Configuring Connection Settings
-  * Troubleshooting Connections
-  * Session Recordings - RDP Protocol
+  * Adjust your group policy or add the user to the "Remote Desktop Users" group on Windows to grant access.
 
-[installation method](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)
+  * 
 
-The PAM Configuration contains information of your target infrastructure
+##
 
-The PAM Machine record contains information of the endpoint you want to
-establish an RDP protocol connection to.
+Session Recordings - RDP Protocol
 
-The PAM User record contains the user credentials that will be used to connect
-to the endpoint
+For additional troubleshooting, refer to the Gateway logs which will contain
+additional information. The location of the Gateway logs depends on the .
 
 [Getting Started page](/en/keeperpam/privileged-access-
 manager/connections/getting-started)
 
 [Example: Azure Windows VM](/en/keeperpam/privileged-access-manager/getting-
 started/pam-resources/pam-machine/example-azure-windows-vm)
+
+[installation method](/en/keeperpam/privileged-access-manager/getting-
+started/gateways)
 
 [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
 started/pam-configuration)

@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -449,7 +450,8 @@ On this page
   * Keeper Connection Manager
   * Kubernetes
   * Linux Keyring
-  * MCP (Model Context Protocol) Server
+  * Model Context Protocol (MCP) for AI Agents (Docker)
+  * Model Context Protocol (MCP) for AI Agents (Node)
   * Octopus Deploy
   * Oracle Key Vault Encryption
   * PowerShell
@@ -478,7 +480,7 @@ CI/CD Integrations provided with Keeper Secrets Manager
 library/vault-sdks)[NextAnsible](/en/keeperpam/secrets-
 manager/integrations/ansible)
 
-Last updated 2 days ago
+Last updated 15 hours ago
 
 Was this helpful?
 
@@ -639,9 +641,15 @@ Store and retrieve secrets from the Linux Keyring
 
 ###
 
-MCP (Model Context Protocol) Server
+Model Context Protocol (MCP) for AI Agents (Docker)
 
-Integrate Keeper Secrets Manager into AI agents
+Integrate Keeper Secrets Manager into AI agents using this Docker container
+
+###
+
+Model Context Protocol (MCP) for AI Agents (Node)
+
+Integrate Keeper Secrets Manager into AI agents using this Node module
 
 ###
 
@@ -806,8 +814,11 @@ manager/integrations/kubernetes)
 [Go to the Linux Keyring Documentation](/en/keeperpam/secrets-
 manager/integrations/linux-keyring)
 
-[Go to the MCP Documentation](/en/keeperpam/secrets-
-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+[Go to the MCP Documentation for Docker](/en/keeperpam/secrets-
+manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+
+[Go to the MCP Documentation for Node](/en/keeperpam/secrets-
+manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
 
 [Go to Octopus Documentation](/en/keeperpam/secrets-
 manager/integrations/octopus-deploy)

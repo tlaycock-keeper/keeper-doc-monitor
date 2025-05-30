@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -426,10 +427,28 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * Features
+  * KeeperPAM Events
+  * Recommended Alerts
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=n7N9m0jqA1BbRWfUyZO2&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+# Alerts and SIEM Integration
+
+Monitoring Gateway events and integrating with your SIEM
+
+[PreviousAuto Updater](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/auto-updater)[NextAdvanced
+Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/advanced-configuration)
 
 Last updated 3 months ago
 
@@ -485,24 +504,6 @@ Event alert details will include the name and UID of the affected Keeper
 gateway.
 
 Email alerts contain event information
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-# Alerts and SIEM Integration
-
-Monitoring Gateway events and integrating with your SIEM
-
-[PreviousAuto Updater](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/auto-updater)[NextAdvanced
-Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/advanced-configuration)
-
-  * Overview
-  * Features
-  * KeeperPAM Events
-  * Recommended Alerts
 
 [Reporting, Alerts & SIEM integration](https://docs.keeper.io/en/enterprise-
 guide/event-reporting)

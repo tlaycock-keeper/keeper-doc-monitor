@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -1824,9 +1825,6 @@ databaseCredentials", "fields": [{"type": "text", "value": ["SomeText"],
 `custom` \- custom fields and values can be added to records. See  for more
 information on adding custom fields
 
-[add documentation](/en/keeperpam/commander-cli/command-reference/record-
-commands#add-command-new-record-type)
-
 [standard record types](/en/keeperpam/commander-cli/command-reference/record-
 commands/default-record-types#standard-record-types)
 
@@ -1835,4 +1833,7 @@ reference/record-commands/record-type-commands#record-type-command)
 
 [commands documentation](/en/keeperpam/commander-cli/command-reference/record-
 commands/record-type-commands#commands)
+
+[add documentation](/en/keeperpam/commander-cli/command-reference/record-
+commands#add-command-new-record-type)
 

@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -455,7 +456,7 @@ AI-powered threat detection for KeeperPAM privileged sessions
 manager/discovery/discovery-using-the-vault)[NextOn-Prem Connection
 Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
 
-Last updated 1 day ago
+Last updated 20 hours ago
 
 Was this helpful?
 
@@ -463,10 +464,11 @@ Was this helpful?
 
 Overview
 
-KeeperAI is an AI-powered threat detection system that automatically monitors
-and analyzes user sessions to identify suspicious or malicious behavior. The
-system works at the gateway level to generate real-time risk analyses from
-session recordings, helping security teams quickly detect potential threats.
+KeeperAI is an Agentic AI-powered threat detection system that automatically
+monitors and analyzes user sessions to identify suspicious or malicious
+behavior. The system, which is built using a Sovereign AI framework, works at
+the gateway level to generate real-time risk analyses from session recordings,
+helping security teams quickly detect potential threats.
 
 ##
 
@@ -542,10 +544,10 @@ LLM Integration
 Overview
 
 KeeperAI leverages Large Language Models (LLMs) to power its threat detection
-capabilities. The PAM Gateway communicates with an LLM to analyze session data
-and generate intelligent security insights. This integration is fundamental to
-KeeperAI's ability to detect suspicious patterns and provide detailed session
-summaries.
+capabilities. The PAM Gateway communicates with any LLM of your choice to
+analyze session data and generate intelligent security insights. This
+integration is fundamental to KeeperAI's ability to detect suspicious patterns
+and provide detailed session summaries.
 
 ###
 
@@ -564,7 +566,7 @@ Inference Provider
 
 Docs
 
-Azure AI Foundary
+Azure AI Foundry
 
 Cerebras
 
@@ -574,7 +576,7 @@ Hugging Face
 
 Keywords AI
 
-Litellm
+LitelLLM
 
 LM Studio
 
@@ -863,7 +865,7 @@ providers/google-vertex#credentials)
 [create an API key in the Open AI Platform
 dashboard](https://platform.openai.com/api-keys)
 
-[Azure AI Foundary](https://ai.azure.com/)
+[Azure AI Foundry](https://ai.azure.com/)
 
 [Cerebras](https://inference-docs.cerebras.ai/resources/openai)
 
@@ -873,7 +875,7 @@ dashboard](https://platform.openai.com/api-keys)
 
 [Keywords AI](https://www.keywordsai.co/)
 
-[Litellm](https://www.litellm.ai/)
+[LiteLLM](https://www.litellm.ai/)
 
 [LM Studio](https://lmstudio.ai/docs)
 

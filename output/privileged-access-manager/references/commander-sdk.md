@@ -292,7 +292,8 @@ KeeperPAM and Secrets Manager
       * [Kubernetes External Secrets Operator](/en/keeperpam/secrets-manager/integrations/kubernetes-external-secrets-operator)
       * [Kubernetes (alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
       * [Linux Keyring](/en/keeperpam/secrets-manager/integrations/linux-keyring)
-      * [Model Context Protocol (MCP) for AI Agents](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents)
+      * [Model Context Protocol (MCP) for AI Agents (Docker)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-docker)
+      * [Model Context Protocol (MCP) for AI Agents (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-for-ai-agents-node)
       * [Octopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-deploy)
       * [Oracle Key Vault Encryption](/en/keeperpam/secrets-manager/integrations/oracle-key-vault)
       * [PowerShell Plugin](/en/keeperpam/secrets-manager/integrations/powershell-plugin)
@@ -394,6 +395,28 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=wWwX1Q3z6gc41bf7F2WU&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
+
+# Commander SDK
+
+Managing rotation with the Commander CLI / SDK interface
+
+[PreviousVendor Privileged Access Management](/en/keeperpam/privileged-access-
+manager/references/vendor-privileged-access-management)[NextCron
+Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
+
+Last updated 11 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -424,17 +447,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=wWwX1Q3z6gc41bf7F2WU&only=yes&limit=100)
-
-Last updated 11 months ago
-
-Was this helpful?
-
 Keeper Commander commands have been created to automate and manage the Keeper
 PAM capabilities including:
 
@@ -447,17 +459,6 @@ PAM capabilities including:
   * Managing jobs
 
 For more information see the .
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
-
-# Commander SDK
-
-Managing rotation with the Commander CLI / SDK interface
-
-[PreviousVendor Privileged Access Management](/en/keeperpam/privileged-access-
-manager/references/vendor-privileged-access-management)[NextCron
-Spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
 
 [KeeperPAM "pam" command documentation](/en/keeperpam/commander-cli/command-
 reference/keeperpam-commands)
