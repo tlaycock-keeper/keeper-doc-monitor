@@ -395,36 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Just-In-Time Access and Zero Standing Privilege
@@ -454,9 +424,39 @@ KeeperPAM Just-In-Time Access and Zero Standing Privilege
 started/access-controls)[NextPassword Rotation](/en/keeperpam/privileged-
 access-manager/password-rotation)
 
-Last updated 6 days ago
+Last updated 7 days ago
 
 Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -586,6 +586,11 @@ and for AWS this would be the full ARN (e.g. `arn:aws:iam::12345:role/Admin`).
 
 Just-in-Time Elevated Access on Endpoints using PEDM
 
+[Keeper Privilege Manager](/en/keeperpam/endpoint-privilege-manager/overview)
+extends JIT capabilities to end-user devices, allowing for precise privilege
+elevation for specific processes, applications, or tasks without granting full
+administrative access.
+
 **Key Features:**
 
   * Process-level privilege management across Windows, macOS, and Linux
@@ -610,7 +615,7 @@ Just-in-Time Elevated Access on Endpoints using PEDM
 
 For more information see:
 
-  * 
+  * [Keeper Privilege Manager](/en/keeperpam/endpoint-privilege-manager/overview)
 
 * * *
 
@@ -647,7 +652,7 @@ Expiration**.
 
 For more information see:
 
-  *   * 
+  *   * [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
 
 ###
 
@@ -710,20 +715,9 @@ surface. By implementing these capabilities across your infrastructure, you
 can ensure that privileged access is strictly controlled, properly approved,
 and thoroughly audited.
 
-extends JIT capabilities to end-user devices, allowing for precise privilege
-elevation for specific processes, applications, or tasks without granting full
-administrative access.
-
 For more information on specific JIT use cases or implementation guidance,
-contact your Keeper Security account manager or email .
-
-[Keeper Privilege Manager](/en/keeperpam/endpoint-privilege-manager/overview)
-
-[Keeper Privilege Manager](/en/keeperpam/endpoint-privilege-manager/overview)
-
-[Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-
-[pam@keepersecurity.com](mailto:pam@keepersecurity.com)
+contact your Keeper Security account manager or email
+[pam@keepersecurity.com](mailto:pam@keepersecurity.com).
 
 [Time-Limited Access](https://docs.keeper.io/en/enterprise-guide/sharing/time-
 limited-access)

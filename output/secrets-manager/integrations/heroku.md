@@ -395,36 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Features
-  * About
-  * Example - Slack notification using Python SDK
-  * Slack Setup
-  * Keeper Vault setup
-  * Heroku
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=UUVvELpzRrkbbjZPq6x2&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Heroku
-
-Using Keepers Secrets Manager to store your Heroku application sensitive
-secrets.
-
-[PreviousHashicorp Vault](/en/keeperpam/secrets-
-manager/integrations/hashicorp-vault)[NextJenkins
-Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -454,6 +424,36 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Features
+  * About
+  * Example - Slack notification using Python SDK
+  * Slack Setup
+  * Keeper Vault setup
+  * Heroku
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=UUVvELpzRrkbbjZPq6x2&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Heroku
+
+Using Keepers Secrets Manager to store your Heroku application sensitive
+secrets.
+
+[PreviousHashicorp Vault](/en/keeperpam/secrets-
+manager/integrations/hashicorp-vault)[NextJenkins
+Plugin](/en/keeperpam/secrets-manager/integrations/jenkins-plugin)
+
+Last updated 4 months ago
+
+Was this helpful?
 
 ##
 
@@ -738,16 +738,14 @@ manager-configuration#using-a-cli-tool)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqzUUP3RgdpwwDlkkxwNa%252Fksm-
+header-
+Heroku.png%3Falt%3Dmedia%26token%3Df26aeadb-a920-4922-aa2c-6c3539dace96&width=768&dpr=4&quality=100&sign=c95917eb&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZVRzT4e8a8BA1j2e1EGk%252FScreen%2520Shot%25202022-01-11%2520at%252011.23.36%2520AM.png%3Falt%3Dmedia%26token%3Debc45e5a-ccb1-4bfd-
 ad2b-7f7c7fd83c20&width=768&dpr=4&quality=100&sign=982c94ba&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FusY03w1uv3JyjOk48IBy%252FScreen%2520Shot%25202022-01-11%2520at%252011.32.26%2520AM.png%3Falt%3Dmedia%26token%3Dff06b820-bfd7-4b1b-bcb1-4af8cf43001e&width=768&dpr=4&quality=100&sign=e0fa4b4e&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FzPZ3aDlEBhivMIKCTiqh%252FScreen%2520Shot%25202022-01-11%2520at%252011.27.52%2520AM.png%3Falt%3Dmedia%26token%3Deabe9c30-2601-4e35-98b7-b70ea824ed48&width=768&dpr=4&quality=100&sign=871df91b&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -755,9 +753,11 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRrRhkmhbo
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqzUUP3RgdpwwDlkkxwNa%252Fksm-
-header-
-Heroku.png%3Falt%3Dmedia%26token%3Df26aeadb-a920-4922-aa2c-6c3539dace96&width=768&dpr=4&quality=100&sign=c95917eb&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FzPZ3aDlEBhivMIKCTiqh%252FScreen%2520Shot%25202022-01-11%2520at%252011.27.52%2520AM.png%3Falt%3Dmedia%26token%3Deabe9c30-2601-4e35-98b7-b70ea824ed48&width=768&dpr=4&quality=100&sign=871df91b&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FusY03w1uv3JyjOk48IBy%252FScreen%2520Shot%25202022-01-11%2520at%252011.32.26%2520AM.png%3Falt%3Dmedia%26token%3Dff06b820-bfd7-4b1b-bcb1-4af8cf43001e&width=768&dpr=4&quality=100&sign=e0fa4b4e&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -769,9 +769,9 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuQju4v9yh
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSvV9znfj4C2bu150lKU6%252FScreen%2520Shot%25202022-01-12%2520at%25203.48.11%2520PM.png%3Falt%3Dmedia%26token%3D6441a52e-8c8d-4c2d-bc56-dfcbf1b3dda4&width=768&dpr=4&quality=100&sign=be9fb55e&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FChgYjxCTN7N8NaLqvNyS%252FScreen%2520Shot%25202022-01-12%2520at%25202.54.34%2520PM.png%3Falt%3Dmedia%26token%3D7a62c280-9ba2-4bb4-aeb5-a80272430c6f&width=38&dpr=4&quality=100&sign=385956a6&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FChgYjxCTN7N8NaLqvNyS%252FScreen%2520Shot%25202022-01-12%2520at%25202.54.34%2520PM.png%3Falt%3Dmedia%26token%3D7a62c280-9ba2-4bb4-aeb5-a80272430c6f&width=38&dpr=4&quality=100&sign=385956a6&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSvV9znfj4C2bu150lKU6%252FScreen%2520Shot%25202022-01-12%2520at%25203.48.11%2520PM.png%3Falt%3Dmedia%26token%3D6441a52e-8c8d-4c2d-bc56-dfcbf1b3dda4&width=768&dpr=4&quality=100&sign=be9fb55e&sv=2)
 

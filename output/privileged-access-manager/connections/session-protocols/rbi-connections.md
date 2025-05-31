@@ -395,6 +395,37 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview 
+  * Prerequisites
+  * PAM Settings - Configuring RBI
+  * Accessing Connection Settings
+  * Configuring Connection Settings
+  * Session Recordings - RBI Protocol
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=Z3Wn0ZslIoLyRuK4Uy2d&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
+
+# RBI Connections
+
+Keeper Connections - Remote Browser Isolation (http/https) Protocol
+
+[PreviousKubernetes](/en/keeperpam/privileged-access-
+manager/connections/session-
+protocols/kubernetes)[NextExamples](/en/keeperpam/privileged-access-
+manager/connections/examples)
+
+Last updated 11 days ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -424,37 +455,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Overview 
-  * Prerequisites
-  * PAM Settings - Configuring RBI
-  * Accessing Connection Settings
-  * Configuring Connection Settings
-  * Session Recordings - RBI Protocol
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=Z3Wn0ZslIoLyRuK4Uy2d&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
-
-# RBI Connections
-
-Keeper Connections - Remote Browser Isolation (http/https) Protocol
-
-[PreviousKubernetes](/en/keeperpam/privileged-access-
-manager/connections/session-
-protocols/kubernetes)[NextExamples](/en/keeperpam/privileged-access-
-manager/connections/examples)
-
-Last updated 10 days ago
-
-Was this helpful?
 
 ##
 
@@ -591,6 +591,12 @@ Session Recordings - RBI Protocol
 [Getting Started page](/en/keeperpam/privileged-access-
 manager/connections/getting-started)
 
+For this protocol, graphical data, including timing information, is recorded.
+For more details on the recordings and how to access them, see the  docs.
+
+[Session Recording & Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
+
 RBI Session Recordings
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
@@ -613,10 +619,4 @@ perform administrative operations on it.
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
-
-For this protocol, graphical data, including timing information, is recorded.
-For more details on the recordings and how to access them, see the  docs.
-
-[Session Recording & Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
 

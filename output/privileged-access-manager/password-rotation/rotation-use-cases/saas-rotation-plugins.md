@@ -426,7 +426,7 @@ rotation/rotation-use-cases/aws/managed-database/aws-rds-for-
 oracle)[NextCustom Scripts](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/saas-accounts)
 
-Last updated 2 days ago
+Last updated 3 days ago
 
 Was this helpful?
 
@@ -497,15 +497,11 @@ KeeperPAM includes pre-built integrations for popular services:
 
 Public SaaS Integrations
 
-In Keeper's [SaaS Github Repository](https://github.com/Keeper-
-Security/discovery-and-rotation-saas-dev), several new rotation plugins have
-been created, including:
-
   * **AWS Cognito**
 
   * **Cisco APIC**
 
-  * **and**[**More**](https://github.com/Keeper-Security/discovery-and-rotation-saas-dev/tree/main/integrations)
+  * 
 
 ###
 
@@ -706,9 +702,6 @@ In addition to built-in integrations, you can use custom plugins for
 additional services. Keeper maintains a repository of community-contributed
 plugins:
 
-**GitHub Repository:** [discovery-and-rotation-saas-
-dev](https://github.com/Keeper-Security/discovery-and-rotation-saas-dev)
-
 Check the `integrations/` folder for available plugins, which may include:
 
   * Additional cloud services
@@ -803,10 +796,6 @@ repository includes:
 
   * Testing framework
 
-Visit the [repository README](https://github.com/Keeper-Security/discovery-
-and-rotation-saas-dev) for detailed development instructions. To contribute to
-the community rotation plugin directory, submit a pull request.
-
 ###
 
 Best Practices
@@ -859,9 +848,32 @@ Support and Resources
 
   * **Enterprise Support:** Contact your Keeper representative for assistance with custom integrations
 
+In Keeper's , several new rotation plugins have been created, including:
+
+**and**
+
+**GitHub Repository:**
+
+Visit the  for detailed development instructions. To contribute to the
+community rotation plugin directory, submit a pull request.
+
 For the most up-to-date list of available plugins and integration examples,
-regularly check the [GitHub repository](https://github.com/Keeper-
-Security/discovery-and-rotation-saas-dev).
+regularly check the .
+
+[SaaS Github Repository](https://github.com/Keeper-Security/discovery-and-
+rotation-saas-dev)
+
+[**More**](https://github.com/Keeper-Security/discovery-and-rotation-saas-
+dev/tree/main/integrations)
+
+[discovery-and-rotation-saas-dev](https://github.com/Keeper-
+Security/discovery-and-rotation-saas-dev)
+
+[repository README](https://github.com/Keeper-Security/discovery-and-rotation-
+saas-dev)
+
+[GitHub repository](https://github.com/Keeper-Security/discovery-and-rotation-
+saas-dev)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

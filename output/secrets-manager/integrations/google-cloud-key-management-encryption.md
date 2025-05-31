@@ -454,7 +454,7 @@ Protect Secrets Manager connection details with Google Cloud Key Management
 manager/integrations/gcp-secret-manager)[NextHashicorp
 Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
 
-Last updated 1 month ago
+Last updated 12 hours ago
 
 Was this helpful?
 
@@ -641,7 +641,8 @@ Copy
     
     npm install @keeper-security/secrets-manager-gcp
 
-The Secrets Manager OCI KSM module can be installed using pip
+The Secrets Manager Google Cloud Key Management module can be installed using
+pip
 
 Copy
 
@@ -649,8 +650,8 @@ Copy
     
     pip3 install keeper-secrets-manager-storage
 
-The Secrets Manager oracle KSM module can be installed using dotnet nuget
-package manager.
+The Secrets Manager Google Cloud Key Management module can be installed using
+dotnet nuget package manager.
 
 Copy
 
@@ -658,7 +659,8 @@ Copy
     
     dotnet add package Keeper.SecretsManager.GCPKeyManagement
 
-The Secrets Manager oracle KSM module Integration can be installed using
+The Secrets Manager Google Cloud Key Management module Integration can be
+installed using
 
 Copy
 

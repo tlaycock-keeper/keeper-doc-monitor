@@ -470,6 +470,9 @@ Display information on managed company plans and available licenses
 
 Show report of password security strength for each user in the enterprise
 
+[`breachwatch report`](https://docs.keeper.io/secrets-manager/commander-
+cli/command-reference/reporting-commands#breachwatch-report-command)
+
 Show report of Breachwatch security scores for each user in the enterprise
 
 Display information about shared records
@@ -2101,9 +2104,6 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-[`breachwatch report`](https://docs.keeper.io/secrets-manager/commander-
-cli/command-reference/reporting-commands#breachwatch-report-command)
 
 [`action-report`](/en/keeperpam/commander-cli/command-reference/reporting-
 commands#action-report-command)

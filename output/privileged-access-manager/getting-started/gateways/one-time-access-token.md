@@ -395,34 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Using the Gateway Wizard 
-  * Using Keeper Secrets Manager
-  * Using Commander CLI
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=LuE8qRgdmKqbHNA40Y9O&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-# Creating a Gateway
-
-Creating a Keeper Gateway
-
-[PreviousGateways](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)[NextDocker Installation](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/docker-installation)
-
-Last updated 1 month ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -452,6 +424,34 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Overview
+  * Using the Gateway Wizard 
+  * Using Keeper Secrets Manager
+  * Using Commander CLI
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=LuE8qRgdmKqbHNA40Y9O&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+# Creating a Gateway
+
+Creating a Keeper Gateway
+
+[PreviousGateways](/en/keeperpam/privileged-access-manager/getting-
+started/gateways)[NextDocker Installation](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/docker-installation)
+
+Last updated 1 month ago
+
+Was this helpful?
 
 ##
 

@@ -627,13 +627,13 @@ An initialized Keeper
 [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-
 manager-configuration)
 
+[Teller](https://github.com/tellerops/teller)
+
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
-
-[Teller](https://github.com/tellerops/teller)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

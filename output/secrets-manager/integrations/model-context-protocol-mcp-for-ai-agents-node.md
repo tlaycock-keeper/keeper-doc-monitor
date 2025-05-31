@@ -452,7 +452,7 @@ Integrate Keeper Secrets Manager into AI agents using Node
 mcp-for-ai-agents-docker)[NextOctopus Deploy](/en/keeperpam/secrets-
 manager/integrations/octopus-deploy)
 
-Last updated 15 hours ago
+Last updated 1 day ago
 
 Was this helpful?
 

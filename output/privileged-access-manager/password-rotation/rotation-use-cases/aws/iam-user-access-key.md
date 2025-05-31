@@ -395,6 +395,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -517,53 +547,23 @@ Field Type
 
 Description
 
-Copy
-
-    
-    
-    aws_access_key_id
-
 Text
 
 This field will receive the new access key id after the rotation.
 
-Copy
-
-    
-    
-    aws_secret_access_key
-
 Hidden Field
 
 This field will receive the new secret access key after the rotation.
-
-Copy
-
-    
-    
-    CreateDate
 
 Text
 
 This field will contain the timestamp of when the new key has been generated
 by the script.
 
-Copy
-
-    
-    
-    Access_Key_ID_Removed_during_previous_rotation
-
 Text
 
 This field will contain the old access key id(s) removed from the user account
 in AWS during the rotation.
-
-Copy
-
-    
-    
-    delete_all_keys_before_rotating
 
 Text
 
@@ -576,12 +576,6 @@ the user has already 2 access keys setup. AWS will not allow the script to
 create a third one, hence the need to delete the existing keys before adding a
 new one.
 
-Copy
-
-    
-    
-    NOOP
-
 Text
 
 This rotation requires the gateway to only execute the rotation script, and
@@ -589,29 +583,11 @@ not try to rotate something using the built-in rotation features.
 
 The value has to be:
 
-Copy
-
-    
-    
-    True
-
-Copy
-
-    
-    
-    Private Key Type
-
 Text
 
 Second field to enable NOOP.
 
 The value has to be:
-
-Copy
-
-    
-    
-    rsa-ssh
 
 Instead of creating the PAM User record manually using the details above, you
 could also import the csv file below. It will create a template record you can
@@ -644,9 +620,7 @@ Keys:
 
 Step 1: Create a Policy in AWS
 
-  1. Go to the [IAM Management Console](https://console.aws.amazon.com/iam).
-
-  2. Select Policies and click Create policy.
+  1.   2. Select Policies and click Create policy.
 
   3. Select JSON and paste the following, make sure to replace your AWS Account ID:
 
@@ -716,9 +690,7 @@ Rotation Configuration From the Vault:
 
   1. Create a shared folder in the vault
 
-  2. Create a PAM User record in the shared folder with the fields and custom fields described [above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements).
-
-  3. In the Secret Manager tab of the Keeper vault, create a new application for the gateway if there is no gateway yet. 
+  2.   3. In the Secret Manager tab of the Keeper vault, create a new application for the gateway if there is no gateway yet. 
 
   4. Make sure the Application has edit permissions on the shared folder created above.
 
@@ -737,9 +709,7 @@ Copy
 
   3. Select the gateway, select the shared folder and save the PAM configuration.
 
-  1. Edit the PAM User record previously described in this [documentation](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements):
-
-     * Password Rotation Settings: select your desired schedule and the PAM configuration created above.
+  1.      * Password Rotation Settings: select your desired schedule and the PAM configuration created above.
 
      * Add PAM Script to the record: select the provided file below and make sure to specify the script command:
 
@@ -760,7 +730,7 @@ Configuration From the Keeper Vault:
 
   1. Create a shared folder in the vault
 
-  2. Create a PAM User record in the shared folder with the fields and custom fields described [above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements).
+  2. 
 
   1. In the Secret Manager tab of the Keeper vault, create a new application for the gateway if there is no gateway yet. 
 
@@ -779,9 +749,7 @@ Copy
 
   2. Under Environment, please select “AWS”, select the Gateway, select the shared folder, provide the “AWS ID”, the “Access Key” and “Secret Access Key”. This will be the admin access key that the script uses to rotate a user access key.
 
-  1. Edit the PAM User record previously described in this [documentation](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements): 
-
-     * Password Rotation Settings: select your desired schedule and the PAM configuration created above.
+  1.      * Password Rotation Settings: select your desired schedule and the PAM configuration created above.
 
      * Add PAM Script to the record: select the provided file below and make sure to specify the script command:
 
@@ -814,12 +782,6 @@ The attached record could be any record type. It needs at least the two custom
 fields “aws_access_key_id” and “aws_secret_access_key” with the admin access
 key.
 
-Using the PAM User record type to store the admin access key allows you to
-also **automate the rotation of the admin access key**. Make sure to follow
-[those requirements](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-
-requirements) in that case.
-
 ###
 
 Using AWS AssumeRole to rotate user access keys across other AWS accounts
@@ -827,9 +789,6 @@ Using AWS AssumeRole to rotate user access keys across other AWS accounts
 When attaching a record to the PAM script itself to provide an admin AWS
 access keys also allows to leverage AWS AssumeRole to rotate an AWS user
 access key across multiple AWS accounts.
-
-More information about AWS AssumeRole
-[here](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html).
 
 To leverage this feature, you need to add a new custom field to the record
 attached to the PAM script (Rotation Credentials).
@@ -1086,35 +1045,99 @@ Last updated 3 months ago
 
 Was this helpful?
 
-#### Company
+Go to the .
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+Create a PAM User record in the shared folder with the fields and custom
+fields described .
 
-#### Support
+Edit the PAM User record previously described in this :
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+Create a PAM User record in the shared folder with the fields and custom
+fields described .
 
-#### Solutions
+Edit the PAM User record previously described in this :
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+Using the PAM User record type to store the admin access key allows you to
+also **automate the rotation of the admin access key**. Make sure to follow
+in that case.
 
-#### Pricing
+More information about AWS AssumeRole .
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+Copy
 
-© 2025 Keeper Security, Inc.
+    
+    
+    aws_access_key_id
+
+Copy
+
+    
+    
+    aws_secret_access_key
+
+Copy
+
+    
+    
+    CreateDate
+
+Copy
+
+    
+    
+    Access_Key_ID_Removed_during_previous_rotation
+
+Copy
+
+    
+    
+    delete_all_keys_before_rotating
+
+Copy
+
+    
+    
+    NOOP
+
+Copy
+
+    
+    
+    True
+
+Copy
+
+    
+    
+    Private Key Type
+
+Copy
+
+    
+    
+    rsa-ssh
+
+[IAM Management Console](https://console.aws.amazon.com/iam)
+
+[here](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html)
+
+[above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements)
+
+[documentation](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-
+requirements)
+
+[above](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/aws/iam-user-access-key#pam-user-record-fields-requirements)
+
+[documentation](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-
+requirements)
+
+[those requirements](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/iam-user-access-key#pam-user-record-fields-
+requirements)
 
 [213BPAM User
 template.csv](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-

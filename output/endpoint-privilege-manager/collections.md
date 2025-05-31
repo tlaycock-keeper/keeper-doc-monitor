@@ -395,38 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Collections Overview
-  * Custom Collections
-  * Creating a Collection
-  * Application Collections
-  * Machine Collections
-  * Operating System Collections
-  * User Collections
-  * Applying Policies
-  * Commander CLI
-  * Next Steps
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=ZOw1h57EJFFv0YlSSTHp&only=yes&limit=100)
-
-  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
-
-# Collections
-
-Managing groups of protected resources for endpoint privilege manager
-
-[PreviousDeployment](/en/keeperpam/endpoint-privilege-
-manager/deployment)[NextPolicies](/en/keeperpam/endpoint-privilege-
-manager/policies)
-
-Last updated 6 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -456,6 +424,38 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Collections Overview
+  * Custom Collections
+  * Creating a Collection
+  * Application Collections
+  * Machine Collections
+  * Operating System Collections
+  * User Collections
+  * Applying Policies
+  * Commander CLI
+  * Next Steps
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=ZOw1h57EJFFv0YlSSTHp&only=yes&limit=100)
+
+  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
+
+# Collections
+
+Managing groups of protected resources for endpoint privilege manager
+
+[PreviousDeployment](/en/keeperpam/endpoint-privilege-
+manager/deployment)[NextPolicies](/en/keeperpam/endpoint-privilege-
+manager/policies)
+
+Last updated 7 days ago
+
+Was this helpful?
 
 ###
 
@@ -566,12 +566,6 @@ Accounts" which are read-only.
 
 Applying Policies
 
-After collections have been established by the discovery process, policies can
-be applied to device collections and deployment collections to control
-privilege on all of the endpoints. Visit the
-[Policies](/en/keeperpam/endpoint-privilege-manager/policies) page to learn
-more.
-
 ###
 
 Commander CLI
@@ -606,8 +600,15 @@ Copy
 
 Next Steps
 
-Once you have deployed the agent and set up collections, it's time to apply
-[policies](/en/keeperpam/endpoint-privilege-manager/policies).
+After collections have been established by the discovery process, policies can
+be applied to device collections and deployment collections to control
+privilege on all of the endpoints. Visit the  page to learn more.
+
+Once you have deployed the agent and set up collections, it's time to apply .
+
+[Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+[policies](/en/keeperpam/endpoint-privilege-manager/policies)
 
 Collections
 

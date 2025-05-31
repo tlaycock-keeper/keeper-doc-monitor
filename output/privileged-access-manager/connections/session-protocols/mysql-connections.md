@@ -452,7 +452,7 @@ manager/connections/session-protocols/rdp-connections)[NextSQL Server
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/sql-server-connections)
 
-Last updated 10 days ago
+Last updated 11 days ago
 
 Was this helpful?
 
@@ -605,14 +605,14 @@ information on recordings and how to access these recordings, visit this .
 
   * Learn more about 
 
+Field
+
+Definition
+
 [page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
 
 [Session Recording and Playback](/en/keeperpam/privileged-access-
 manager/session-recording-and-playback)
-
-Field
-
-Definition
 
 PAM Configuration
 

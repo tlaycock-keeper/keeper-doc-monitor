@@ -2019,6 +2019,11 @@ an-application)
 [One-Time Access Token](/en/keeperpam/secrets-manager/quick-start-
 guide#create-a-secrets-manager-client-device-1)
 
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG-
+_u0H2AJBEVfeYf%252F-MkdG4aCrzLanoVIXeNo%252Fansible-plugin-
+header.jpg%3Falt%3Dmedia%26token%3D70c9a583-5939-48cc-990b-65c60094663a&width=768&dpr=4&quality=100&sign=e9ef641e&sv=2)
+
 [here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/secret-command#secret-command)
 
@@ -2027,9 +2032,4 @@ interface/secret-command#secret-command)
 
 [learn more](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/secret-command#notation)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG-
-_u0H2AJBEVfeYf%252F-MkdG4aCrzLanoVIXeNo%252Fansible-plugin-
-header.jpg%3Falt%3Dmedia%26token%3D70c9a583-5939-48cc-990b-65c60094663a&width=768&dpr=4&quality=100&sign=e9ef641e&sv=2)
 
