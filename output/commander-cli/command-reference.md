@@ -748,9 +748,6 @@ management-commands#audit-alert-command)
 [breachwatch](/en/keeperpam/commander-cli/command-reference/enterprise-
 management-commands/breachwatch-commands#breachwatch-command)
 
-[compliance](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands/compliance-commands#the-compliance-command)
-
 [secrets-manager app create](/en/keeperpam/commander-cli/command-
 reference/secrets-manager-commands#ksm-app-create-command)
 
@@ -765,6 +762,9 @@ reference/secrets-manager-commands#ksm-share-add-command)
 
 [secrets-manager client add](/en/keeperpam/commander-cli/command-
 reference/secrets-manager-commands#ksm-client-add-command)
+
+[compliance](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands/compliance-commands#the-compliance-command)
 
 [msp-info](/en/keeperpam/commander-cli/command-reference/msp-management-
 commands#msp-info-command)
@@ -801,15 +801,6 @@ commands#msp-copy-role-command)
 
 [distributor](/en/keeperpam/commander-cli/command-reference/msp-management-
 commands#distributor-commands)
-
-[rotate](/en/keeperpam/commander-cli/command-reference/plugins/password-
-rotation#rotate-command)
-
-[set](/en/keeperpam/commander-cli/command-reference/plugins/password-
-rotation#set-command)
-
-[echo](/en/keeperpam/commander-cli/command-reference/plugins/password-
-rotation#echo-command)
 
 [this-device](/en/keeperpam/commander-cli/command-reference/misc-
 commands#this-device-command)
@@ -857,4 +848,13 @@ commands#sync-security-data-command)
 commands#keeper-fill-command)
 
 [2fa](/en/keeperpam/commander-cli/command-reference/misc-commands#2fa-command)
+
+[rotate](/en/keeperpam/commander-cli/command-reference/plugins/password-
+rotation#rotate-command)
+
+[set](/en/keeperpam/commander-cli/command-reference/plugins/password-
+rotation#set-command)
+
+[echo](/en/keeperpam/commander-cli/command-reference/plugins/password-
+rotation#echo-command)
 

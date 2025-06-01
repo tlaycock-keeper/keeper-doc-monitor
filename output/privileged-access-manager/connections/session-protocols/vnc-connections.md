@@ -452,7 +452,7 @@ manager/connections/session-protocols/postgresql-connections)[NextTelnet
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/telnet-connections)
 
-Last updated 11 days ago
+Last updated 12 days ago
 
 Was this helpful?
 

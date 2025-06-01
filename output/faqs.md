@@ -660,7 +660,7 @@ applied to collections of users, groups and machines.
 [PreviousBest Practices](/en/keeperpam/best-practices)[NextSecrets Manager
 Overview](/en/keeperpam/secrets-manager/overview)
 
-Last updated 8 days ago
+Last updated 9 days ago
 
 Was this helpful?
 

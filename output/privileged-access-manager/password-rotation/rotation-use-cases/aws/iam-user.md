@@ -427,31 +427,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Prerequisites
-  * 1\. Create Shared Folder
-  * 2\. Create PAM User Record(s) 
-  * 3\. Set up PAM Configuration
-  * 4\. Configure Rotation on the PAM User Records
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=2cg7y34bmV9oUNBri7sD&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [AWS](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws)
-
-# IAM User Password
-
-Rotating AWS IAM account passwords with Keeper
-
-[PreviousAWS](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/aws)[NextManaged Microsoft AD
-User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/aws/directory-user)
 
 Last updated 3 months ago
 
@@ -499,9 +478,58 @@ to the KSM application created in the prerequisites.
 
 The following table lists all the required**** fields on the PAM User record:
 
+##
+
+3\. Set up PAM Configuration
+
+Note: You can skip this step if you already have a PAM Configuration set up
+for this environment.
+
+In the left menu of the vault, select "Secrets Manager", then select the "PAM
+Configurations" tab, and click on "New Configuration". The following table
+lists all the required**** fields on the **PAM Configuration** Record:
+
+##
+
+4\. Configure Rotation on the PAM User Records
+
+Select the **PAM User** record(s) from Step 2, edit the record and open the
+"Password Rotation Settings".
+
+  * Select "IAM User" as the rotation method, since this uses AWS APIs.
+
+  * The "Rotation Settings" should use the PAM Configuration setup previously. 
+
+  * Select the desired schedule and password complexity.
+
+  * Upon saving, the rotation button will be enabled and available to rotate on demand, or via the selected schedule.
+
+Any user with `edit` rights to a PAM User record has the ability to setup
+rotation for that record.
+
+Note: The user must have AWS Console access and at minimum have a temporary
+password set in the AWS Console before the password can be rotated.
+
+Keeper Secrets Manager is enabled for your
+
+Keeper Rotation is enabled for your
+
+A Keeper Secrets Manager  has been created
+
+A Keeper Rotation  is already installed and running
+
+Your AWS environment is  per our documentation
+
 Field
 
 Description
+
+Field
+
+Description
+
+For more details on all the configurable fields in the PAM Configuration
+record, visit this .
 
 **Title**
 
@@ -520,21 +548,6 @@ field is left blank.
 
 This is the full ARN of the user identity, e.g:
 `arn:aws:iam::123456789:user/TestUser`
-
-##
-
-3\. Set up PAM Configuration
-
-Note: You can skip this step if you already have a PAM Configuration set up
-for this environment.
-
-In the left menu of the vault, select "Secrets Manager", then select the "PAM
-Configurations" tab, and click on "New Configuration". The following table
-lists all the required**** fields on the **PAM Configuration** Record:
-
-Field
-
-Description
 
 **Title**
 
@@ -569,39 +582,26 @@ Set this field to `USE_INSTANCE_ROLE` if you are using EC2 role policy
 Set this field to `USE_INSTANCE_ROLE` if you are using EC2 role policy
 (default). Otherwise use a specific Secret Access Key.
 
-##
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [AWS](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws)
 
-4\. Configure Rotation on the PAM User Records
+# IAM User Password
 
-Select the **PAM User** record(s) from Step 2, edit the record and open the
-"Password Rotation Settings".
+Rotating AWS IAM account passwords with Keeper
 
-  * Select "IAM User" as the rotation method, since this uses AWS APIs.
+[PreviousAWS](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws)[NextManaged Microsoft AD
+User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/aws/directory-user)
 
-  * The "Rotation Settings" should use the PAM Configuration setup previously. 
-
-  * Select the desired schedule and password complexity.
-
-  * Upon saving, the rotation button will be enabled and available to rotate on demand, or via the selected schedule.
-
-Any user with `edit` rights to a PAM User record has the ability to setup
-rotation for that record.
-
-Note: The user must have AWS Console access and at minimum have a temporary
-password set in the AWS Console before the password can be rotated.
-
-Keeper Secrets Manager is enabled for your
-
-Keeper Rotation is enabled for your
-
-A Keeper Secrets Manager  has been created
-
-A Keeper Rotation  is already installed and running
-
-Your AWS environment is  per our documentation
-
-For more details on all the configurable fields in the PAM Configuration
-record, visit this .
+  * Overview
+  * Prerequisites
+  * 1\. Create Shared Folder
+  * 2\. Create PAM User Record(s) 
+  * 3\. Set up PAM Configuration
+  * 4\. Configure Rotation on the PAM User Records
 
 [application](/en/keeperpam/privileged-access-manager/getting-
 started/applications)

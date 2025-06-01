@@ -395,37 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview 
-  * Prerequisites
-  * PAM Settings - Configuring RBI
-  * Accessing Connection Settings
-  * Configuring Connection Settings
-  * Session Recordings - RBI Protocol
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=Z3Wn0ZslIoLyRuK4Uy2d&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
-
-# RBI Connections
-
-Keeper Connections - Remote Browser Isolation (http/https) Protocol
-
-[PreviousKubernetes](/en/keeperpam/privileged-access-
-manager/connections/session-
-protocols/kubernetes)[NextExamples](/en/keeperpam/privileged-access-
-manager/connections/examples)
-
-Last updated 11 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -455,6 +424,37 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Overview 
+  * Prerequisites
+  * PAM Settings - Configuring RBI
+  * Accessing Connection Settings
+  * Configuring Connection Settings
+  * Session Recordings - RBI Protocol
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=Z3Wn0ZslIoLyRuK4Uy2d&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
+
+# RBI Connections
+
+Keeper Connections - Remote Browser Isolation (http/https) Protocol
+
+[PreviousKubernetes](/en/keeperpam/privileged-access-
+manager/connections/session-
+protocols/kubernetes)[NextExamples](/en/keeperpam/privileged-access-
+manager/connections/examples)
+
+Last updated 12 days ago
+
+Was this helpful?
 
 ##
 

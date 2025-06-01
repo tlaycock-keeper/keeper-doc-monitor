@@ -395,35 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * What are Keeper Connections?
-  * Connection User Interface
-  * Connection Dock
-  * How do Keeper Connections Work? 
-  * Why Use Keeper Connections? 
-  * Keeper Connection Features 
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=a8qXkMPc17fQtw6S5u5g&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# Connections
-
-Instantly access your infrastructure with zero-trust security from your Keeper
-Vault
-
-[PreviousCode Examples](/en/keeperpam/privileged-access-manager/password-
-rotation/post-rotation-scripts/accessing-parameters)[NextGetting
-Started](/en/keeperpam/privileged-access-manager/connections/getting-started)
-
-Last updated 3 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -453,6 +424,35 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * What are Keeper Connections?
+  * Connection User Interface
+  * Connection Dock
+  * How do Keeper Connections Work? 
+  * Why Use Keeper Connections? 
+  * Keeper Connection Features 
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=a8qXkMPc17fQtw6S5u5g&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Connections
+
+Instantly access your infrastructure with zero-trust security from your Keeper
+Vault
+
+[PreviousCode Examples](/en/keeperpam/privileged-access-manager/password-
+rotation/post-rotation-scripts/accessing-parameters)[NextGetting
+Started](/en/keeperpam/privileged-access-manager/connections/getting-started)
+
+Last updated 4 days ago
+
+Was this helpful?
 
 ##
 

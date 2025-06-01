@@ -395,6 +395,38 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview 
+  * Prerequisites
+  * PAM Settings - Configuring RDP Protocol
+  * Accessing Connection Settings
+  * Configuring Connection Settings
+  * Troubleshooting Connections
+  * Session Recordings - RDP Protocol
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=XIBliCeQFLhXyHlm2D0y&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
+
+# RDP Connections
+
+Keeper Connections - RDP Protocol
+
+[PreviousSSH Connections](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/ssh-connections)[NextMySQL
+Connections](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/mysql-connections)
+
+Last updated 12 days ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -424,38 +456,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Overview 
-  * Prerequisites
-  * PAM Settings - Configuring RDP Protocol
-  * Accessing Connection Settings
-  * Configuring Connection Settings
-  * Troubleshooting Connections
-  * Session Recordings - RDP Protocol
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=XIBliCeQFLhXyHlm2D0y&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
-
-# RDP Connections
-
-Keeper Connections - RDP Protocol
-
-[PreviousSSH Connections](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/ssh-connections)[NextMySQL
-Connections](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/mysql-connections)
-
-Last updated 11 days ago
-
-Was this helpful?
 
 ##
 
@@ -666,12 +666,6 @@ started/pam-resources/pam-machine)
 [PAM User Record](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
 
-For this protocol, graphical data, including timing information, is recorded.
-For more details on the recordings and how to access them, see the  docs.
-
-[Session Recording & Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
-
 Field
 
 Definition
@@ -685,6 +679,12 @@ Administrative Credential Record
 
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
+
+For this protocol, graphical data, including timing information, is recorded.
+For more details on the recordings and how to access them, see the  docs.
+
+[Session Recording & Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)

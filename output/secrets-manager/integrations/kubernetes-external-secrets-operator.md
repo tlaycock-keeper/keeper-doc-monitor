@@ -427,10 +427,36 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview 
+  * Features 
+  * Prerequisites 
+  * Setup
+  * Install External Secrets With Helm
+  * Create Kubernetes Secret to store Base64 KSM Config 
+  * Create SecretStore 
+  * Create ExternalSecret
+  * Limitations
+  * Push Secrets
+  * Create PushSecret
+  * Verifying Setup 
+  * Conclusion
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=RPjLgrM00UVfnUtodlWt&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Kubernetes External Secrets Operator
+
+Synchronize Secrets from Keeper Secrets Manager with the K8s External Secrets
+Operator
+
+[PreviousKeeper Connection Manager](/en/keeperpam/secrets-
+manager/integrations/keeper-connection-manager)[NextKubernetes
+(alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
 
 Last updated 7 months ago
 
@@ -479,6 +505,17 @@ Install External Secrets With Helm
 
 To install External Secrets with Helm, run the following commands:
 
+Copy
+
+    
+    
+    helm repo add external-secrets https://charts.external-secrets.io
+    
+    helm install external-secrets \
+        external-secrets/external-secrets \
+        -n external-secrets \
+        --create-namespace
+
 ###
 
 Create Kubernetes Secret to store Base64 KSM Config
@@ -489,9 +526,29 @@ against Keeper Security and defined in a regular Kubernetes Secret.
 Invoking the following command will create a Kubernetes Secret which is used
 to authenticate to Keeper Secrets Manager:
 
+Copy
+
+    
+    
+    kubectl apply -f - <<EOF
+    apiVersion: v1
+    kind: Secret
+    metadata:
+      name: ksm-config-secret # name of the k8s Secret where KSM config is stored
+    type: Opaque
+    data:
+      ksm_config: "[REPLACE WITH YOUR BASE64 JSON string]"
+    EOF
+
 **Note:** Lines 2-8 in**** the above code snippet can be stored in a YAML file
 and applied with the command `kubectl apply`. For example, you can store lines
 2-8 in `secrets.yaml` and execute the following:
+
+Copy
+
+    
+    
+    kubectl apply -f secret.yaml
 
 ###
 
@@ -501,6 +558,25 @@ After creating a Kubernetes Secret with `ksm_config` defined to your Base64
 JSON string, you can now create your SecretStore.
 
 Invoking the following command will create your SecretStore:
+
+Copy
+
+    
+    
+    kubectl apply -f - <<EOF
+    apiVersion: external-secrets.io/v1beta1   
+    kind: SecretStore
+    metadata:
+      name: my-external-secrets-secretstore   # name of the SecretStore where retrieved secrets will be stored once fetched from Keeper Secrets Manager (KSM)
+    spec:
+      provider:
+        keepersecurity:                       # name of the SecretStore provider, in this case KeeperSecurity
+          authRef:
+            name: ksm-config-secret           # name of the k8s Secret where KSM config is stored
+            key: ksm_config                   # key in the k8s Secret where KSM config is stored
+          folderID: "[SHARED FOLDER UID]"     # UID of the shared folder in KeeperSecurity where the records 
+                                              #   are stored. Make sure the folder is shared into the KSM Application
+    EOF
 
 In the above code snippet, define `folderID` with the UID of the shared folder
 where the records are stored in your Vault
@@ -512,11 +588,50 @@ In case of a `ClusterSecretStore`, Be sure to provide `namespace` for
 file and applied with the command `kubectl apply`. For example, you can store
 lines 2-13 in `secretstore.yaml` and execute the following:
 
+Copy
+
+    
+    
+    kubectl apply -f secretstore.yaml
+
 ###
 
 Create ExternalSecret
 
 Next, you need to create your ExternalSecret.
+
+Copy
+
+    
+    
+    kubectl apply -f - <<EOF
+    apiVersion: external-secrets.io/v1beta1
+    kind: ExternalSecret
+    metadata:
+     name: ksm-external-secret
+    spec:
+     refreshInterval: 12h               # rate how often SecretManager pulls KeeperSecurity. 
+                                        #   In this case every 12 hours, for the example. 
+                                        #   We recommend this value to be 12h or more.
+     secretStoreRef:                    # reference to the SecretStore defined above to authenticate against Keeper Security
+       kind: SecretStore                # tells External Secrets the type of the secret store, should be same as the one defined above
+       name: my-external-secrets-secretstore  
+    
+     dataFrom:                          # tells External Secrets which record to use to fetch from Keeper Secrets Manager (KSM)
+       - extract:
+           key: "[RECORD UID]"          # UID of the record in Keeper where the secrets are going to be fetched from
+     target:                            # tells External Secrets the target location where to store the secrets once fetched from Keeper Security
+       name: my-external-secrets-values # name of the k8s Secret to be created
+       creationPolicy: Owner            # tells External Secrets to create the k8s Secret if it doesn't exist
+       template:
+         engineVersion: v2          
+         data:
+           username: "{{ .login }}"     # tells External Secrets to store the value of 
+                                        # the login field in Keeper Security into the k8s Secret under the key username
+           password: "{{ .password }}"  # tells External Secrets to store the value of 
+                                        # the password field in Keeper Security into the k8s Secret under the key password
+           name: "{{  (fromJson .name).first }} {{  (fromJson .name).middle }} {{  (fromJson .name).last }}" # decode json string into vars
+    EOF
 
 In the above code snippet, replace "[RECORD UID]" with the UID of your desired
 record
@@ -524,6 +639,12 @@ record
 **Note:** Lines 2-27 in**** the above code snippet can be stored in a YAML
 file and applied with the command `kubectl apply`. For example, you can store
 lines 2-27 in `externalsecret.yaml` and execute the following:
+
+Copy
+
+    
+    
+    kubectl apply -f externalsecret.yaml
 
 ####
 
@@ -599,9 +720,40 @@ Create PushSecret
 To create a Keeper Security record from Kubernetes a `Kind=PushSecret` is
 needed.
 
+Copy
+
+    
+    
+    kubectl apply -f - <<EOF
+    apiVersion: external-secrets.io/v1alpha1
+    kind: PushSecret
+    metadata:
+      name: example
+    spec:
+      secretStoreRefs:
+        - name: keeper
+          kind: SecretStore
+      refreshInterval: "1h"
+      deletionPolicy: Delete
+      selector:
+        secret:
+          name: secret-name # k8s secret to be pushed
+      data:
+        - match:
+            secretKey: secret-key # k8s key within the secret to be pushed
+            remoteRef:
+              remoteKey: remote-secret-name/remote-secret-key # This will create a record called "remote-secret-name" with a key "remote-secret-key"
+    EOF
+
 **Note:** Lines 2-19 in**** the above code snippet can be stored in a YAML
 file and applied with the command `kubectl apply`. For example, you can store
 lines 2-19 in `pushsecret.yaml` and execute the following:
+
+Copy
+
+    
+    
+    kubectl apply -f pushsecret.yaml
 
 Make sure there's only one record with the title `remote-secret-name` in the
 KSM Application in use.
@@ -621,9 +773,31 @@ Verifying Setup
 In the above code snippets, the name of the secret is my-external-secrets-
 values and we store the following record values:
 
+Copy
+
+    
+    
+    data:
+           username: "{{ .login }}"                                      
+           password: "{{ .password }}"
+
 To get the login and password values, invoke the following command:
 
+Copy
+
+    
+    
+    $ kubectl get secret my-external-secrets-values -o jsonpath="{.data}"
+    {"password":"a2lsbCB5b3U=","username":"SSB3aWxs"}
+
 The above response is encoded, to decode, invoke the following:
+
+Copy
+
+    
+    
+    $ kubectl get secret my-external-secrets-values -o jsonpath="{.data.password}" | base64 --decode
+    pAs$w0rd
 
 ##
 
@@ -684,180 +858,6 @@ Fields:
 After setting up your , , and , you can extract secrets with the command
 `kubectl get secrets`
 
-Copy
-
-    
-    
-    helm repo add external-secrets https://charts.external-secrets.io
-    
-    helm install external-secrets \
-        external-secrets/external-secrets \
-        -n external-secrets \
-        --create-namespace
-
-Copy
-
-    
-    
-    kubectl apply -f - <<EOF
-    apiVersion: v1
-    kind: Secret
-    metadata:
-      name: ksm-config-secret # name of the k8s Secret where KSM config is stored
-    type: Opaque
-    data:
-      ksm_config: "[REPLACE WITH YOUR BASE64 JSON string]"
-    EOF
-
-Copy
-
-    
-    
-    kubectl apply -f secret.yaml
-
-Copy
-
-    
-    
-    kubectl apply -f - <<EOF
-    apiVersion: external-secrets.io/v1beta1   
-    kind: SecretStore
-    metadata:
-      name: my-external-secrets-secretstore   # name of the SecretStore where retrieved secrets will be stored once fetched from Keeper Secrets Manager (KSM)
-    spec:
-      provider:
-        keepersecurity:                       # name of the SecretStore provider, in this case KeeperSecurity
-          authRef:
-            name: ksm-config-secret           # name of the k8s Secret where KSM config is stored
-            key: ksm_config                   # key in the k8s Secret where KSM config is stored
-          folderID: "[SHARED FOLDER UID]"     # UID of the shared folder in KeeperSecurity where the records 
-                                              #   are stored. Make sure the folder is shared into the KSM Application
-    EOF
-
-Copy
-
-    
-    
-    kubectl apply -f secretstore.yaml
-
-Copy
-
-    
-    
-    kubectl apply -f - <<EOF
-    apiVersion: external-secrets.io/v1beta1
-    kind: ExternalSecret
-    metadata:
-     name: ksm-external-secret
-    spec:
-     refreshInterval: 12h               # rate how often SecretManager pulls KeeperSecurity. 
-                                        #   In this case every 12 hours, for the example. 
-                                        #   We recommend this value to be 12h or more.
-     secretStoreRef:                    # reference to the SecretStore defined above to authenticate against Keeper Security
-       kind: SecretStore                # tells External Secrets the type of the secret store, should be same as the one defined above
-       name: my-external-secrets-secretstore  
-    
-     dataFrom:                          # tells External Secrets which record to use to fetch from Keeper Secrets Manager (KSM)
-       - extract:
-           key: "[RECORD UID]"          # UID of the record in Keeper where the secrets are going to be fetched from
-     target:                            # tells External Secrets the target location where to store the secrets once fetched from Keeper Security
-       name: my-external-secrets-values # name of the k8s Secret to be created
-       creationPolicy: Owner            # tells External Secrets to create the k8s Secret if it doesn't exist
-       template:
-         engineVersion: v2          
-         data:
-           username: "{{ .login }}"     # tells External Secrets to store the value of 
-                                        # the login field in Keeper Security into the k8s Secret under the key username
-           password: "{{ .password }}"  # tells External Secrets to store the value of 
-                                        # the password field in Keeper Security into the k8s Secret under the key password
-           name: "{{  (fromJson .name).first }} {{  (fromJson .name).middle }} {{  (fromJson .name).last }}" # decode json string into vars
-    EOF
-
-Copy
-
-    
-    
-    kubectl apply -f externalsecret.yaml
-
-Copy
-
-    
-    
-    kubectl apply -f - <<EOF
-    apiVersion: external-secrets.io/v1alpha1
-    kind: PushSecret
-    metadata:
-      name: example
-    spec:
-      secretStoreRefs:
-        - name: keeper
-          kind: SecretStore
-      refreshInterval: "1h"
-      deletionPolicy: Delete
-      selector:
-        secret:
-          name: secret-name # k8s secret to be pushed
-      data:
-        - match:
-            secretKey: secret-key # k8s key within the secret to be pushed
-            remoteRef:
-              remoteKey: remote-secret-name/remote-secret-key # This will create a record called "remote-secret-name" with a key "remote-secret-key"
-    EOF
-
-Copy
-
-    
-    
-    kubectl apply -f pushsecret.yaml
-
-Copy
-
-    
-    
-    data:
-           username: "{{ .login }}"                                      
-           password: "{{ .password }}"
-
-Copy
-
-    
-    
-    $ kubectl get secret my-external-secrets-values -o jsonpath="{.data}"
-    {"password":"a2lsbCB5b3U=","username":"SSB3aWxs"}
-
-Copy
-
-    
-    
-    $ kubectl get secret my-external-secrets-values -o jsonpath="{.data.password}" | base64 --decode
-    pAs$w0rd
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Kubernetes External Secrets Operator
-
-Synchronize Secrets from Keeper Secrets Manager with the K8s External Secrets
-Operator
-
-[PreviousKeeper Connection Manager](/en/keeperpam/secrets-
-manager/integrations/keeper-connection-manager)[NextKubernetes
-(alternative)](/en/keeperpam/secrets-manager/integrations/kubernetes)
-
-  * Overview 
-  * Features 
-  * Prerequisites 
-  * Setup
-  * Install External Secrets With Helm
-  * Create Kubernetes Secret to store Base64 KSM Config 
-  * Create SecretStore 
-  * Create ExternalSecret
-  * Limitations
-  * Push Secrets
-  * Create PushSecret
-  * Verifying Setup 
-  * Conclusion
-
 [at this link](https://external-secrets.io/latest/provider/keeper-security/)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
@@ -890,13 +890,13 @@ secrets-operator#create-secretstore)
 [ExternalSecret](/en/keeperpam/secrets-manager/integrations/kubernetes-
 external-secrets-operator#create-externalsecret)
 
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
 [External Secrets Operator](https://charts.external-secrets.io)
 
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

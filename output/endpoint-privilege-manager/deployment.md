@@ -395,6 +395,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * Requirements
+  * Encryption
+  * Deployment Package
+  * Deployment Collections
+  * Discovery of Inventory Data
+  * Commander CLI
+  * Next Steps
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=KEkG5ky7xq0IniHT6zVE&only=yes&limit=100)
+
+  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
+
+# Deployment
+
+Deploying the Keeper Agent to your endpoints
+
+[PreviousSetup](/en/keeperpam/endpoint-privilege-
+manager/setup)[NextCollections](/en/keeperpam/endpoint-privilege-
+manager/collections)
+
+Last updated 8 days ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -424,36 +454,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Overview
-  * Requirements
-  * Encryption
-  * Deployment Package
-  * Deployment Collections
-  * Discovery of Inventory Data
-  * Commander CLI
-  * Next Steps
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=KEkG5ky7xq0IniHT6zVE&only=yes&limit=100)
-
-  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
-
-# Deployment
-
-Deploying the Keeper Agent to your endpoints
-
-[PreviousSetup](/en/keeperpam/endpoint-privilege-
-manager/setup)[NextCollections](/en/keeperpam/endpoint-privilege-
-manager/collections)
-
-Last updated 7 days ago
-
-Was this helpful?
 
 ###
 
@@ -617,9 +617,8 @@ Copy
 
 Next Steps
 
-Once you have deployed the agent, discovery kicks in and generates .
-
-[collections](/en/keeperpam/endpoint-privilege-manager/collections)
+Once you have deployed the agent, discovery kicks in and generates
+[collections](/en/keeperpam/endpoint-privilege-manager/collections).
 
 Creating a Deployment Package
 

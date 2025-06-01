@@ -517,6 +517,10 @@ Copy
     
      import -h
 
+See the [Keeper Commander](/en/keeperpam/commander-cli/command-
+reference/keeperpam-commands) options for additional PAM automation
+capabilities.
+
 [PreviousEvent Reporting](/en/keeperpam/privileged-access-
 manager/references/event-reporting)[NextManaging Rotation via
 CLI](/en/keeperpam/privileged-access-manager/references/managing-rotation-via-
@@ -555,9 +559,4 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-See the  options for additional PAM automation capabilities.
-
-[Keeper Commander](/en/keeperpam/commander-cli/command-reference/keeperpam-
-commands)
 
