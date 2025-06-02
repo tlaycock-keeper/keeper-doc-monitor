@@ -418,45 +418,6 @@ PDF](/en/keeperpam/~gitbook/pdf?page=XIBliCeQFLhXyHlm2D0y&only=yes&limit=100)
 
 Keeper Connections - RDP Protocol
 
-[PreviousSSH Connections](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/ssh-connections)[NextMySQL
-Connections](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/mysql-connections)
-
-Last updated 12 days ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 Overview
@@ -472,7 +433,8 @@ directly to target devices.
 Prerequisites
 
 Prior to following this guide, familiarize yourself with the prerequisites on
-the Connection's .
+the Connection's [Getting Started page](/en/keeperpam/privileged-access-
+manager/connections/getting-started).
 
 The following PAM records are needed in order to successfully setup this
 protocol:
@@ -491,6 +453,9 @@ to the endpoint
 
 This guide will use a **Azure VM** as an example. For more details on how this
 is setup on the PAM Machine Record, visit the following page:
+
+[Example: Azure Windows VM](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-machine/example-azure-windows-vm)
 
 ##
 
@@ -639,23 +604,50 @@ following:
 
   * Adjust your group policy or add the user to the "Remote Desktop Users" group on Windows to grant access.
 
-  * 
+  * For additional troubleshooting, refer to the Gateway logs which will contain additional information. The location of the Gateway logs depends on the [installation method](/en/keeperpam/privileged-access-manager/getting-started/gateways).
 
 ##
 
 Session Recordings - RDP Protocol
 
-For additional troubleshooting, refer to the Gateway logs which will contain
-additional information. The location of the Gateway logs depends on the .
+[PreviousSSH Connections](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/ssh-connections)[NextMySQL
+Connections](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/mysql-connections)
 
-[Getting Started page](/en/keeperpam/privileged-access-
-manager/connections/getting-started)
+Last updated 13 days ago
 
-[Example: Azure Windows VM](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-machine/example-azure-windows-vm)
+Was this helpful?
 
-[installation method](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
 started/pam-configuration)
@@ -683,11 +675,11 @@ perform administrative operations on it.
 For this protocol, graphical data, including timing information, is recorded.
 For more details on the recordings and how to access them, see the  docs.
 
-[Session Recording & Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
-
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
+
+[Session Recording & Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
 
 RDP Session Recordings
 

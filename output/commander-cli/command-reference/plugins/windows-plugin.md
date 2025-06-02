@@ -395,6 +395,35 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Prepare a Record for Rotation
+  * Create a Record for Rotation
+  * Set the Login Name
+  * Rotate
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-Mf4ooIm9OOeZ4dfpuGw&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
+
+# Windows Plugin
+
+Rotate Windows user passwords with Commander
+
+[PreviousUnix Passwd Plugin](/en/keeperpam/commander-cli/command-
+reference/plugins/unix-passwd-plugin)[NextActive Directory
+Plugin](/en/keeperpam/commander-cli/command-reference/plugins/active-
+directory-plugin)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -425,40 +454,13 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-  * Prepare a Record for Rotation
-  * Create a Record for Rotation
-  * Set the Login Name
-  * Rotate
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-Mf4ooIm9OOeZ4dfpuGw&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
-
-# Windows Plugin
-
-Rotate Windows user passwords with Commander
-
-[PreviousUnix Passwd Plugin](/en/keeperpam/commander-cli/command-
-reference/plugins/unix-passwd-plugin)[NextActive Directory
-Plugin](/en/keeperpam/commander-cli/command-reference/plugins/active-
-directory-plugin)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 Keeper has also launched a zero-trust Password Rotation feature with
 KeeperPAM. This new capability is recommended for most password rotation use
 cases. The Documentation is linked below:
 
-  *   * Commander 
+  * [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-rotation)
+
+  * Commander [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
 
 This plugin allows rotating a windows user's password using the `net user`
 command.
@@ -538,12 +540,6 @@ Output
 
 After rotation is completed, the new password will be stored in the `Password`
 field of the record
-
-[Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
-rotation)
-
-[KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
-commands)
 
 [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
 cli#typed-vs-untyped-records-v3-vs-v2)

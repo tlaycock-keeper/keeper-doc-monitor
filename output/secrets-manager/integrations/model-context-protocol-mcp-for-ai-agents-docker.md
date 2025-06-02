@@ -449,7 +449,7 @@ keyring)[NextModel Context Protocol (MCP) for AI Agents
 (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-
 for-ai-agents-node)
 
-Last updated 2 days ago
+Last updated 3 days ago
 
 Was this helpful?
 
@@ -579,6 +579,13 @@ For additional setup details, see:
 <https://github.com/Keeper-Security/keeper-mcp-golang-
 docker>[](https://github.com/Keeper-Security/keeper-mcp-golang-docker)
 
+[GitHub - Keeper-Security/keeper-mcp-golang-docker: Keeper Secrets Manager -
+MCP (Model Context Protocol) server
+implementationGitHub](https://github.com/Keeper-Security/keeper-mcp-golang-
+docker)
+
+![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
+
 Create an Application and assign folders
 
 Generate Base64 Token
@@ -618,11 +625,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FKKKJ3A6Nc
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTlbAtiwQqlDp2SvxuTz2%252FScreenshot%25202025-05-26%2520at%25202.53.38%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D3608e0c4-c6f8-4404-a8dc-b40a2b6bd33d&width=768&dpr=4&quality=100&sign=b65ef8db&sv=2)
-
-[GitHub - Keeper-Security/keeper-mcp-golang-docker: Keeper Secrets Manager -
-MCP (Model Context Protocol) server
-implementationGitHub](https://github.com/Keeper-Security/keeper-mcp-golang-
-docker)
-
-![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2Fgithub.com%2Ffluidicon.png&width=20&dpr=4&quality=100&sign=f37b335a&sv=2)
 

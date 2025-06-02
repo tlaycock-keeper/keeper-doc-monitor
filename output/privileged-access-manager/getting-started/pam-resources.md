@@ -395,35 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * KeeperPAM Record Types
-  * Record Linking
-  * Creating a PAM Record
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=T0G0fGue5d2tTiFHAQOw&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-
-# PAM Resources
-
-Guide for using PAM Resource Records in the Keeper Vault for privileged access
-functionality.
-
-[PreviousLocal Environment Setup](/en/keeperpam/privileged-access-
-manager/getting-started/pam-configuration/local-environment-setup)[NextPAM
-Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -454,6 +425,35 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Overview
+  * KeeperPAM Record Types
+  * Record Linking
+  * Creating a PAM Record
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=T0G0fGue5d2tTiFHAQOw&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+# PAM Resources
+
+Guide for using PAM Resource Records in the Keeper Vault for privileged access
+functionality.
+
+[PreviousLocal Environment Setup](/en/keeperpam/privileged-access-
+manager/getting-started/pam-configuration/local-environment-setup)[NextPAM
+Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -462,7 +462,7 @@ KeeperPAM Resource records are special record types designed to organize and
 store information of your target infrastructure, machines, web apps, workloads
 and user accounts.
 
-  * [What's a Record Type?](https://docs.keeper.io/en/enterprise-guide/record-types)
+  * 
 
 ###
 
@@ -475,28 +475,13 @@ PAM Record Type
 
 Target Infrastructure
 
-[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
 Windows/macOS/Linux Machines, EC2 Instances, Azure VMs, etc.
-
-[PAM Database ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database)
 
 MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
 
-[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-directory)
-
 Active Directory, OpenLDAP
 
-[PAM Remote Browser ](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-remote-browser)
-
 Web-based Applications, internal apps or cloud apps
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
 
 Any local user, remote user, database credential or admin account. PAM User
 records can also be configured for scheduled or on-demand password rotation.
@@ -505,12 +490,9 @@ records can also be configured for scheduled or on-demand password rotation.
 
 Record Linking
 
-The PAM User record is special because it can be
-[linked](/en/keeperpam/privileged-access-manager/getting-started/record-
-linking) from the other resources. This way, you can [share
-access](/en/keeperpam/privileged-access-manager/getting-started/access-
-controls) to a Machine, Database, Directory or Remote Browser without sharing
-access to the underlying credentials.
+The PAM User record is special because it can be  from the other resources.
+This way, you can  to a Machine, Database, Directory or Remote Browser without
+sharing access to the underlying credentials.
 
 ###
 
@@ -523,6 +505,30 @@ Alternatively, you can right-click on a folder and select Rotation, Tunnel or
 Connection.
 
 The "Target" selection will determine what type of record will be created.
+
+[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
+
+[PAM Database ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database)
+
+[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-directory)
+
+[PAM Remote Browser ](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-remote-browser)
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
+[What's a Record Type?](https://docs.keeper.io/en/enterprise-guide/record-
+types)
+
+[linked](/en/keeperpam/privileged-access-manager/getting-started/record-
+linking)
+
+[share access](/en/keeperpam/privileged-access-manager/getting-started/access-
+controls)
 
 Create a new PAM Resource Record
 

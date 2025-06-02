@@ -457,7 +457,7 @@ started/pam-resources/pam-user)[NextJust-In-Time Access
 (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-
 access-jit)
 
-Last updated 5 days ago
+Last updated 6 days ago
 
 Was this helpful?
 
@@ -769,9 +769,6 @@ started/access-controls#time-limited-access)
 [Revoking Access](/en/keeperpam/privileged-access-manager/getting-
 started/access-controls#revoking-access)
 
-[`secrets-manager app share`](/en/keeperpam/commander-cli/command-
-reference/secrets-manager-commands#secrets-manager-app-share-command)
-
 Application Sharing
 
 PAM Roles
@@ -900,4 +897,7 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTDSctq3jo
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FhAKz204kkaYBMcjGqB7D%252FScreenshot%25202025-01-30%2520at%252010.11.31%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dfd8439d7-d9bb-436b-a233-fc9f8110831c&width=768&dpr=4&quality=100&sign=472955b2&sv=2)
+
+[`secrets-manager app share`](/en/keeperpam/commander-cli/command-
+reference/secrets-manager-commands#secrets-manager-app-share-command)
 

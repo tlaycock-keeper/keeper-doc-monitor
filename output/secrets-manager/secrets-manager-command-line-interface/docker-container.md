@@ -427,14 +427,22 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Getting the image
+  * Running a container
+  * Aliasing
+  * Built-in Binaries
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=g4Mot1fjjuTT1D0gSeBF&only=yes&limit=100)
 
-Last updated 7 months ago
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
 
-Was this helpful?
+# Docker Container
+
+Run the CLI using a Docker container.
 
 ##
 
@@ -442,12 +450,29 @@ Getting the image
 
 The first step is pulling the CLI image.
 
+Copy
+
+    
+    
+    docker pull keeper/keeper-secrets-manager-cli:latest
+
 ##
 
 Running a container
 
 The next step is running the container. By default the container is setup to
 run `ksm` in shell mode.
+
+Copy
+
+    
+    
+    docker run \
+        --rm \
+        -it \
+        -v $PWD:/wd --workdir /wd \
+        -v $HOME/.config:/etc/keeper -e KSM_INI_DIR=/etc/keeper \
+        keeper/keeper-secrets-manager-cli:latest
 
   1. The docker run command. 
 
@@ -468,11 +493,23 @@ Aliasing
 The docker run command can be a little too much to type each time. It is
 recommend that aliases be created.
 
+Copy
+
+    
+    
+    $ alias ksm_shell='docker run --rm -it --workdir $PWD -v $PWD:$PWD -v $HOME/.config:/etc/keeper -e KSM_INI_DIR=/etc/keeper keeper/keeper-secrets-manager-cli:latest'
+
 The above will launch the ksm shell.
 
 The next alias is slightly different. At the end of the run command, the
 application `ksm` is added. This will cause the `ksm` not to start in shell
 mode.
+
+Copy
+
+    
+    
+    $ alias ksm='docker run --rm -it --workdir $PWD -v $PWD:$PWD -v $HOME/.config:/etc/keeper -e KSM_INI_DIR=/etc/keeper keeper/keeper-secrets-manager-cli:latest ksm'
 
 ##
 
@@ -491,48 +528,6 @@ using.
 
 For example, the following is simple framework showing how to access the CLI
 binary.
-
-The `init` service will load the CLI docker. The container will start, display
-a CLI splash screen, and then exit. Even though the container has stopped, the
-`/cli` volume is still accessible.
-
-The `main` service will mount the CLI docker's volume under the directory
-`/cli` using `volumes_from`. The `command` is overridden to run the GLIBC
-version of the KSM CLI. The `command` is using the `exec` function of the CLI.
-That will replace environment variables environment variable, that use the ,
-with a secret value. The `exec` command, of the CLI, is running the `printenv`
-application. That will print the environment variable, **MY_LOGIN** , that has
-been set to Keeper Notation, and has had its value replaced with a secret by
-the `exec` command.
-
-Copy
-
-    
-    
-    docker pull keeper/keeper-secrets-manager-cli:latest
-
-Copy
-
-    
-    
-    docker run \
-        --rm \
-        -it \
-        -v $PWD:/wd --workdir /wd \
-        -v $HOME/.config:/etc/keeper -e KSM_INI_DIR=/etc/keeper \
-        keeper/keeper-secrets-manager-cli:latest
-
-Copy
-
-    
-    
-    $ alias ksm_shell='docker run --rm -it --workdir $PWD -v $PWD:$PWD -v $HOME/.config:/etc/keeper -e KSM_INI_DIR=/etc/keeper keeper/keeper-secrets-manager-cli:latest'
-
-Copy
-
-    
-    
-    $ alias ksm='docker run --rm -it --workdir $PWD -v $PWD:$PWD -v $HOME/.config:/etc/keeper -e KSM_INI_DIR=/etc/keeper keeper/keeper-secrets-manager-cli:latest ksm'
 
 Copy
 
@@ -556,6 +551,10 @@ Copy
         depends_on:
           init:
             condition: service_completed_successfully
+
+The `init` service will load the CLI docker. The container will start, display
+a CLI splash screen, and then exit. Even though the container has stopped, the
+`/cli` volume is still accessible.
 
 Copy
 
@@ -582,22 +581,23 @@ Copy
     example-main-1  | john.smith@localhost
     example-main-1 exited with code 0
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
-
-# Docker Container
-
-Run the CLI using a Docker container.
-
 [PreviousMisc Commands](/en/keeperpam/secrets-manager/secrets-manager-command-
 line-interface/vault-admin-commands)[NextCustom Record
 Types](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/custom-record-types)
 
-  * Getting the image
-  * Running a container
-  * Aliasing
-  * Built-in Binaries
+Last updated 7 months ago
+
+Was this helpful?
+
+The `main` service will mount the CLI docker's volume under the directory
+`/cli` using `volumes_from`. The `command` is overridden to run the GLIBC
+version of the KSM CLI. The `command` is using the `exec` function of the CLI.
+That will replace environment variables environment variable, that use the ,
+with a secret value. The `exec` command, of the CLI, is running the `printenv`
+application. That will print the environment variable, **MY_LOGIN** , that has
+been set to Keeper Notation, and has had its value replaced with a secret by
+the `exec` command.
 
 [Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-notation)
 

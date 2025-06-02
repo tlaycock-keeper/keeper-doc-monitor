@@ -455,7 +455,7 @@ manager/connections/session-protocols)[NextRDP
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/rdp-connections)
 
-Last updated 12 days ago
+Last updated 13 days ago
 
 Was this helpful?
 
@@ -690,13 +690,13 @@ information on recordings and how to access these recordings, visit this .
 
   * Learn more about 
 
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
 [page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
 
 [Session Recording and Playback](/en/keeperpam/privileged-access-
 manager/session-recording-and-playback)
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
 
 SSH Session Launching
 

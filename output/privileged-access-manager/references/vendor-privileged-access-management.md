@@ -395,37 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Vendor Privileged Access Management (VPAM)
-  * Overview
-  * Key Capabilities
-  * How It Works
-  * Example Use Cases
-  * Get Started
-  * Screenshots
-  * Additional Info
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=bxgLe7jIArcxXmkYoe3r&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
-
-# Vendor Privileged Access Management
-
-How KeeperPAM provides Vendor Privileged Access (VPAM)
-
-[PreviousITSM Integration](/en/keeperpam/privileged-access-
-manager/references/itsm-integration)[NextCommander
-SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
-
-Last updated 3 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -455,6 +424,37 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Vendor Privileged Access Management (VPAM)
+  * Overview
+  * Key Capabilities
+  * How It Works
+  * Example Use Cases
+  * Get Started
+  * Screenshots
+  * Additional Info
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=bxgLe7jIArcxXmkYoe3r&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
+
+# Vendor Privileged Access Management
+
+How KeeperPAM provides Vendor Privileged Access (VPAM)
+
+[PreviousITSM Integration](/en/keeperpam/privileged-access-
+manager/references/itsm-integration)[NextCommander
+SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
+
+Last updated 4 days ago
+
+Was this helpful?
 
 ##
 
@@ -601,15 +601,7 @@ Get Started
 
 Vendor PAM is included in the standard KeeperPAM licensing model.
 
-  * [Activate KeeperPAM](/en/keeperpam/privileged-access-manager/setup-steps)
-
-  *   *   * Deploy a [Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-  * Create [PAM resource records](/en/keeperpam/privileged-access-manager/getting-started/pam-resources) in the Keeper Vault
-
-  * Activate PAM settings on the resource such as [connections](/en/keeperpam/privileged-access-manager/connections), [tunnels](/en/keeperpam/privileged-access-manager/tunnels) and [session recording](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
-
-  * [Share access](/en/keeperpam/privileged-access-manager/getting-started/access-controls) to the resource through time-limited access without sharing the credentials
+  *   *   *   *   *   *   * 
 
 ###
 
@@ -661,13 +653,21 @@ accounts are treated the same as internal users in terms of licensing.
 Depending on your organization’s policies, external vendors can also benefit
 from additional Keeper capabilities, including:
 
-  * **Accessing target systems from their own device** using [Keeper Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
-
-  *   *   * 
+  *   *   *   * 
 
 through your identity provider
 
 Assign  to the vendor
+
+Deploy a
+
+Create  in the Keeper Vault
+
+Activate PAM settings on the resource such as ,  and
+
+to the resource through time-limited access without sharing the credentials
+
+**Accessing target systems from their own device** using
 
 **Federated identity support** , allowing  with the vendor’s identity provider
 
@@ -676,19 +676,25 @@ Assign  to the vendor
 **Deploying Keeper Connection Manager (self-hosted)** for remote access with a
 custom interface, session joining and  methods.
 
-[advanced integration](https://docs.keeper.io/en/keeper-connection-
-manager/using-keeper-connection-manager/launching-connections)
+[Activate KeeperPAM](/en/keeperpam/privileged-access-manager/setup-steps)
 
-[Provision the vendor](https://docs.keeper.io/en/enterprise-guide/user-and-
-team-provisioning)
+[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
+started/gateways)
 
-[role policies](https://docs.keeper.io/en/enterprise-guide/roles)
+[PAM resource records](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources)
 
-[SSO integration](https://docs.keeper.io/en/enterprise-guide/sso-saml-
-integration)
+[connections](/en/keeperpam/privileged-access-manager/connections)
 
-[limited admin rights](https://docs.keeper.io/en/enterprise-guide/delegated-
-administration)
+[tunnels](/en/keeperpam/privileged-access-manager/tunnels)
+
+[session recording](/en/keeperpam/privileged-access-manager/session-recording-
+and-playback)
+
+[Share access](/en/keeperpam/privileged-access-manager/getting-started/access-
+controls)
+
+[Keeper Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
 
 Creating a Vendor Node
 
@@ -761,4 +767,18 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfEc1cE2ge
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5pZoQXuyuRA4oS9zLhTp%252FScreenshot%25202025-05-28%2520at%25208.18.48%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dda40678f-f7b8-441d-afc2-7e6526a410b0&width=768&dpr=4&quality=100&sign=a4a8e13&sv=2)
+
+[Provision the vendor](https://docs.keeper.io/en/enterprise-guide/user-and-
+team-provisioning)
+
+[role policies](https://docs.keeper.io/en/enterprise-guide/roles)
+
+[SSO integration](https://docs.keeper.io/en/enterprise-guide/sso-saml-
+integration)
+
+[limited admin rights](https://docs.keeper.io/en/enterprise-guide/delegated-
+administration)
+
+[advanced integration](https://docs.keeper.io/en/keeper-connection-
+manager/using-keeper-connection-manager/launching-connections)
 

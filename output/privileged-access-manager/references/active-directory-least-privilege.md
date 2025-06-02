@@ -416,7 +416,7 @@ Granting a service account the minimum permissions to rotate
 manager/references/creating-ksm-app-for-rotation)[NextEvent
 Reporting](/en/keeperpam/privileged-access-manager/references/event-reporting)
 
-Last updated 4 months ago
+Last updated 5 months ago
 
 Was this helpful?
 

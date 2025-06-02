@@ -453,7 +453,7 @@ manager/password-rotation/rotation-use-cases/aws/iam-user-access-key)[NextAWS
 RDS for MySQL](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mysql)
 
-Last updated 4 months ago
+Last updated 5 months ago
 
 Was this helpful?
 

@@ -395,36 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview
@@ -461,13 +431,44 @@ Last updated 2 months ago
 
 Was this helpful?
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ##
 
 Overview
 
 This document contains information on how to install, configure, and update
 your Keeper Gateway on Docker. The Docker container is built upon the base
-image of Rocky Linux 8 and it is hosted in .
+image of Rocky Linux 8 and it is hosted in
+[DockerHub](https://hub.docker.com/r/keeper/gateway).
 
 For full PAM capabilities, use a **Linux host with a x86 AMD processor**.
 
@@ -477,7 +478,7 @@ Prerequisites
 
   * A Linux host with a x86 AMD processor
 
-  * 
+  * `docker` and `docker-compose` installed (see [Docker Install](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux) for help)
 
 Note: The syntax is `docker-compose` for servers, but on a local Docker
 Desktop it might be `docker compose` (with no space).
@@ -730,47 +731,9 @@ Copy
 
 References:
 
-  *   * 
+  * DockerHub listing: <https://hub.docker.com/r/keeper/gateway>[](https://hub.docker.com/r/keeper/gateway)
 
-`docker` and `docker-compose` installed (see  for help)
-
-DockerHub listing:
-
-Quick reference for
-
-[Docker Install](/en/keeperpam/privileged-access-
-manager/references/installing-docker-on-linux)
-
-<https://hub.docker.com/r/keeper/gateway>[](https://hub.docker.com/r/keeper/gateway)
-
-[Installing Docker](/en/keeperpam/privileged-access-
-manager/references/installing-docker-on-linux)
-
-[ and Docker Compose on Linux](/en/keeperpam/privileged-access-
-manager/references/installing-docker-on-linux)
-
-[DockerHub](https://hub.docker.com/r/keeper/gateway)
-
-[15KBdocker-
-seccomp.json](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-
-prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FMjBgU5aJYkp8Em3ZV9OD%2Fdocker-
-seccomp.json?alt=media&token=73227956-f299-47e5-80aa-764ea2ab9e93)
-
-Docker Logs from Keeper Gateway
-
-Gateway is Online
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZdCwOSIZ90eIqXaHSQ7N%252FDocker%2520Install.jpg%3Falt%3Dmedia%26token%3D577af308-2d82-4423-8d62-a94826e60bc6&width=768&dpr=4&quality=100&sign=8bebeb77&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuLk5SZEF58TniLsYGKII%252FScreenshot%25202024-12-27%2520at%25209.29.10%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3De9a6d790-80d2-4bdc-8ebe-a08cd88119a5&width=768&dpr=4&quality=100&sign=c202035e&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FpdccmtxqPQDtpeTrL7gh%252FScreenshot%25202024-12-27%2520at%25209.38.24%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D3c64598f-c12e-4e6a-9fa9-9a948c605397&width=768&dpr=4&quality=100&sign=bd809e33&sv=2)
+  * Quick reference for [Installing Docker](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux)[ and Docker Compose on Linux](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux)
 
 ###
 
@@ -835,4 +798,25 @@ resources/pam-machine)
 
 [SSH connection](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/ssh-connections)
+
+[15KBdocker-
+seccomp.json](https://762006384-files.gitbook.io/~/files/v0/b/gitbook-x-
+prod.appspot.com/o/spaces%2F-MJXOXEifAmpyvNVL1to%2Fuploads%2FMjBgU5aJYkp8Em3ZV9OD%2Fdocker-
+seccomp.json?alt=media&token=73227956-f299-47e5-80aa-764ea2ab9e93)
+
+Docker Logs from Keeper Gateway
+
+Gateway is Online
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZdCwOSIZ90eIqXaHSQ7N%252FDocker%2520Install.jpg%3Falt%3Dmedia%26token%3D577af308-2d82-4423-8d62-a94826e60bc6&width=768&dpr=4&quality=100&sign=8bebeb77&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuLk5SZEF58TniLsYGKII%252FScreenshot%25202024-12-27%2520at%25209.29.10%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3De9a6d790-80d2-4bdc-8ebe-a08cd88119a5&width=768&dpr=4&quality=100&sign=c202035e&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FpdccmtxqPQDtpeTrL7gh%252FScreenshot%25202024-12-27%2520at%25209.38.24%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D3c64598f-c12e-4e6a-9fa9-9a948c605397&width=768&dpr=4&quality=100&sign=bd809e33&sv=2)
 

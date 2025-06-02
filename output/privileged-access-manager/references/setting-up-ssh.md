@@ -496,10 +496,6 @@ Copy
         Write-Output "Firewall rule 'OpenSSH-Server-In-TCP' has been created and exists."
     }
 
-To connect through SSH, simply create a new [PAM
-Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine) record and set the connection protocol to SSH.
-
 Once connected, PowerShell Commands can be executed by typing
 `powershell.exe`:
 
@@ -591,6 +587,12 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+To connect through SSH, simply create a new  record and set the connection
+protocol to SSH.
+
+[PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

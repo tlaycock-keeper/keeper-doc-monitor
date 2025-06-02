@@ -692,14 +692,14 @@ protocols/vnc-connections)
 [Telnet](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/telnet-connections)
 
+[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
+manager-commands#overview)
+
 An active license is required in order to use the features available with
 KeeperPAM. This license is available for both business and enterprise
 customers.
 
   *   *   * 
-
-[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
-manager-commands#overview)
 
 [KeeperPAM Homepage](https://www.keepersecurity.com/privileged-access-
 management/)
