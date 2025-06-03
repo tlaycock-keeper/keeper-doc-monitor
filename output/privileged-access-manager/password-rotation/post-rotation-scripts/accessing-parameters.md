@@ -462,9 +462,9 @@ found in the Keeper Gateway log file.
 
 Bash
 
-Note: For this example, [jq](https://stedolan.github.io/jq/) needs to be
-installed to parse the JSON. Attach this as a PAM script and perform the
-rotation. The Gateway logfile will contain the output.
+Note: For this example,  needs to be installed to parse the JSON. Attach this
+as a PAM script and perform the rotation. The Gateway logfile will contain the
+output.
 
 decode-and-echo.sh
 
@@ -582,13 +582,6 @@ Copy
 
 Using Keeper Secrets Manager SDKs
 
-The post rotation script is not limited to shell scripts. Applications can be
-written in languages like Python or C# to get the piped parameters. Since the
-UIDs of the Rotation involved records are passed in the params, the post-
-rotation script can use the [Keeper Secrets Manager
-SDKs](/en/keeperpam/secrets-manager/developer-sdk-library) to get additional
-information.
-
 Copy
 
     
@@ -620,6 +613,16 @@ Copy
         resource_records = ksm.get_secrets(params.get('userRecordUid'))[0]
         
         break
+
+The post rotation script is not limited to shell scripts. Applications can be
+written in languages like Python or C# to get the piped parameters. Since the
+UIDs of the Rotation involved records are passed in the params, the post-
+rotation script can use the  to get additional information.
+
+[Keeper Secrets Manager SDKs](/en/keeperpam/secrets-manager/developer-sdk-
+library)
+
+[jq](https://stedolan.github.io/jq/)
 
 [Bash](/en/keeperpam/privileged-access-manager/password-rotation/post-
 rotation-scripts/accessing-parameters#bash-script)

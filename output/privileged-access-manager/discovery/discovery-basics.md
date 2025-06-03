@@ -395,43 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Prerequisites 
-  * Discovery Enforcement Policies 
-  * Installing the Keeper Gateway
-  * Populating PAM User records
-  * PAM Configuration
-  * Network Discovery
-  * AWS Discovery
-  * Azure Discovery
-  * Discovery Workflow
-  * Discovery Types
-  * Services and Scheduled Tasks
-  * Activating PAM Features
-  * Next Steps:
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=Y1ebmy2JcoO4QZ2YGvqH&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Discovery](/en/keeperpam/privileged-access-manager/discovery)
-
-# Discovery Basics
-
-Setting up KeeperPAM for Discovery
-
-[PreviousDiscovery](/en/keeperpam/privileged-access-
-manager/discovery)[NextDiscovery using Commander](/en/keeperpam/privileged-
-access-manager/discovery/discovery-using-commander)
-
-Last updated 5 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -462,6 +425,17 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=Y1ebmy2JcoO4QZ2YGvqH&only=yes&limit=100)
+
+Last updated 6 days ago
+
+Was this helpful?
+
 ###
 
 Overview
@@ -477,9 +451,9 @@ Prior to using Discovery, make sure to have the following:
 
   * An active license of KeeperPAM
 
-  * Activate [Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-policies) on the Admin Console to enable discovery
+  * Activate  on the Admin Console to enable discovery
 
-  * Deploy a [Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) using the latest version
+  * Deploy a  using the latest version
 
 ###
 
@@ -488,56 +462,17 @@ Discovery Enforcement Policies
 On the Admin Console, the following Enforcement Policies affect the user's
 ability to run Discovery jobs.
 
-Enforcement Policy
-
-Enforcement Policy
-
-Definition
-
-Can run discovery
-
-Copy
-
-    
-    
-    ALLOW_PAM_DISCOVERY
-
-Allow users to run discovery jobs
-
-Copy
-
-    
-    
-    enterprise-role "My Role" --enforcement "ALLOW_PAM_DISCOVERY":true
-
 ###
 
 Installing the Keeper Gateway
-
-The [Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
-started/gateways) is a service that is installed on the customer's network to
-enabled zero-trust access to target infrastructure. This service is installed
-on a Docker, Linux or Windows environment in each of the networks under
-management.
 
 ###
 
 Populating PAM User records
 
-Before running a Discovery job, it is recommended to create [PAM
-User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user) records for any administrative credentials you expect to
-use. Save these credentials as **PAM User** record types within the Shared
-Folder that is associated with your Application and Keeper Gateway.
-
 ###
 
 PAM Configuration
-
-To get started with Discovery, you need a [PAM
-Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration) set up for your target infrastructure. The PAM Configuration
-directs the discovery process where to locate resources.
 
 ###
 
@@ -546,31 +481,6 @@ Network Discovery
 Local network discovery utilize a CIDR for scanning. In order for discovery to
 locate a resource, it must be listening on the required port. Below is the PAM
 Configuration data required for a successful discovery.
-
-Field
-
-Description
-
-Notes
-
-Network ID
-
-Unique ID for the network
-
-This is for the user's reference
-
-Ex: `My Network`
-
-Network CIDR
-
-Subnet of the IP address
-
-Port Mapping
-
-If non-standard ports are being used, this ensures that discovery will find
-the resources.
-
-Example: ssh=2222 rdp=3390
 
 ###
 
@@ -589,44 +499,6 @@ security groups as necessary to allow this.
 
 Below is the PAM Configuration data required for a successful discovery.
 
-Field
-
-Description
-
-Notes
-
-AWS ID
-
-Identifier selected by user
-
-This is just used for reference.
-
-Access Key ID
-
-Access Key only when required
-
-If instance role is applied to the Gateway, this is not required.
-
-Secret Access Key
-
-Secret Key only when required
-
-If instance role is applied to the Gateway, this is not required.
-
-Region Names
-
-A list of AWS region names separated by newlines. Discovery will only find
-resources that match.
-
-Example: us-west-1 us-east-2
-
-Port Mapping
-
-If non-standard ports are being used, this ensures that discovery will find
-the resources.
-
-Example: ssh=2222 rdp=3390
-
 ###
 
 Azure Discovery
@@ -643,47 +515,6 @@ the Keeper vault if it can successfully communicate over the port. Adjust your
 Network Security Groups as necessary to allow this.
 
 Below is the PAM Configuration data required for a successful discovery.
-
-Field
-
-Description
-
-Notes
-
-Azure ID
-
-A unique id for your instance of Azure
-
-Required, This is for the user's reference Ex: `Azure-1`
-
-Client ID
-
-The application/client id (UUID) of the Azure application
-
-Required
-
-Client Secret
-
-The client credentials secret for the Azure application
-
-Required
-
-Subscription ID
-
-The UUID of the subscription (i.e. Pay-As-You-GO).
-
-Required
-
-Tenant ID
-
-The UUID of the Azure Active Directory
-
-Required
-
-Resource Groups
-
-A list of resource groups to be checked. If left blank, all resource groups
-will be checked. Newlines should separate each resource group.
 
 ###
 
@@ -784,33 +615,224 @@ for any Windows services running as the PAM User, and restart the service.
 Keeper will also update the credential of any scheduled task running as that
 user on the target machine.
 
-To learn more and set up this capability, see the [Service
-Management](/en/keeperpam/privileged-access-manager/password-rotation/service-
-management) page.
-
 ###
 
 Activating PAM Features
-
-After a Discovery process has been completed, you can edit the vault records
-to activate advanced features such as [**Rotation**](/en/keeperpam/secrets-
-manager/password-rotation), [**Connections**](/en/keeperpam/privileged-access-
-manager/connections), and [**Tunnels**](/en/keeperpam/privileged-access-
-manager/tunnels).
 
 ###
 
 Next Steps:
 
-  * [Discovery using Commander](/en/keeperpam/privileged-access-manager/discovery/discovery-using-commander)
+  *   * 
 
-  * [Discovery using the Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-vault)
+Enforcement Policy
+
+Enforcement Policy
+
+Definition
 
 Discovery can also be enabled on the  using the `enterprise-role` command:
+
+The  is a service that is installed on the customer's network to enabled zero-
+trust access to target infrastructure. This service is installed on a Docker,
+Linux or Windows environment in each of the networks under management.
+
+Before running a Discovery job, it is recommended to create  records for any
+administrative credentials you expect to use. Save these credentials as **PAM
+User** record types within the Shared Folder that is associated with your
+Application and Keeper Gateway.
+
+To get started with Discovery, you need a  set up for your target
+infrastructure. The PAM Configuration directs the discovery process where to
+locate resources.
+
+Field
+
+Description
+
+Notes
+
+Field
+
+Description
+
+Notes
+
+Field
+
+Description
+
+Notes
+
+To learn more and set up this capability, see the  page.
+
+After a Discovery process has been completed, you can edit the vault records
+to activate advanced features such as , , and .
+
+Can run discovery
+
+Copy
+
+    
+    
+    ALLOW_PAM_DISCOVERY
+
+Allow users to run discovery jobs
+
+Copy
+
+    
+    
+    enterprise-role "My Role" --enforcement "ALLOW_PAM_DISCOVERY":true
+
+AWS ID
+
+Identifier selected by user
+
+This is just used for reference.
+
+Access Key ID
+
+Access Key only when required
+
+If instance role is applied to the Gateway, this is not required.
+
+Secret Access Key
+
+Secret Key only when required
+
+If instance role is applied to the Gateway, this is not required.
+
+Region Names
+
+A list of AWS region names separated by newlines. Discovery will only find
+resources that match.
+
+Example: us-west-1 us-east-2
+
+Port Mapping
+
+If non-standard ports are being used, this ensures that discovery will find
+the resources.
+
+Example: ssh=2222 rdp=3390
+
+Azure ID
+
+A unique id for your instance of Azure
+
+Required, This is for the user's reference Ex: `Azure-1`
+
+Client ID
+
+The application/client id (UUID) of the Azure application
+
+Required
+
+Client Secret
+
+The client credentials secret for the Azure application
+
+Required
+
+Subscription ID
+
+The UUID of the subscription (i.e. Pay-As-You-GO).
+
+Required
+
+Tenant ID
+
+The UUID of the Azure Active Directory
+
+Required
+
+Resource Groups
+
+A list of resource groups to be checked. If left blank, all resource groups
+will be checked. Newlines should separate each resource group.
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Discovery](/en/keeperpam/privileged-access-manager/discovery)
+
+# Discovery Basics
+
+Setting up KeeperPAM for Discovery
+
+[PreviousDiscovery](/en/keeperpam/privileged-access-
+manager/discovery)[NextDiscovery using Commander](/en/keeperpam/privileged-
+access-manager/discovery/discovery-using-commander)
+
+  * Overview
+  * Prerequisites 
+  * Discovery Enforcement Policies 
+  * Installing the Keeper Gateway
+  * Populating PAM User records
+  * PAM Configuration
+  * Network Discovery
+  * AWS Discovery
+  * Azure Discovery
+  * Discovery Workflow
+  * Discovery Types
+  * Services and Scheduled Tasks
+  * Activating PAM Features
+  * Next Steps:
+
+[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
+started/gateways)
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
+[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)
+
+[Service Management](/en/keeperpam/privileged-access-manager/password-
+rotation/service-management)
+
+[**Rotation**](/en/keeperpam/secrets-manager/password-rotation)
+
+[**Connections**](/en/keeperpam/privileged-access-manager/connections)
+
+[**Tunnels**](/en/keeperpam/privileged-access-manager/tunnels)
+
+[Discovery using Commander](/en/keeperpam/privileged-access-
+manager/discovery/discovery-using-commander)
+
+[Discovery using the Vault](/en/keeperpam/privileged-access-
+manager/discovery/discovery-using-the-vault)
+
+Network ID
+
+Unique ID for the network
+
+This is for the user's reference
+
+Ex: `My Network`
+
+Network CIDR
+
+Subnet of the IP address
+
+Port Mapping
+
+If non-standard ports are being used, this ensures that discovery will find
+the resources.
+
+Example: ssh=2222 rdp=3390
+
+[Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-
+started/enforcement-policies)
+
+[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
+started/gateways)
 
 Ex: `192.168.0.15/24` about CIDR
 
 [learn more](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
+
+[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
+manager-commands#overview)
 
 Enable Discovery Policy
 
@@ -818,7 +840,4 @@ Enable Discovery Policy
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FpIEvx3uoWPQt4DOxWMXR%252FScreenshot%25202025-03-17%2520at%25208.00.04%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D216d6d74-3f07-4395-a9ad-
 cf1e0a76c43b&width=768&dpr=4&quality=100&sign=120cbe29&sv=2)
-
-[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
-manager-commands#overview)
 

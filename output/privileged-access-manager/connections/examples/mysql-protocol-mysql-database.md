@@ -395,41 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview 
-  * Summary
-  * Step 1 - Enable Connection Enforcement Policies
-  * Step 2 - Install and configure the Keeper Gateway 
-  * Step 3 - Configuring the PAM Configuration 
-  * Step 4 - Create and Configure PAM Database and PAM User(s) Records
-  * Step 5 - Configuring PAM Settings and MySQL Protocol
-  * Launching Connections
-  * Sharing PAM Database Records
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=hSsg7HrSdkyMBy5bnbxE&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-  3. [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
-
-# MySQL Protocol - MySQL Database
-
-Establish a connection to a MySQL Database directly from your Vault
-
-[PreviousRDP Protocol - Azure Virtual Machine](/en/keeperpam/privileged-
-access-manager/connections/examples/rdp-protocol-azure-virtual-
-machine)[NextPostgreSQL Protocol - PostgreSQL
-Database](/en/keeperpam/privileged-access-
-manager/connections/examples/postgresql-protocol-postgresql-database)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -460,6 +425,17 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=hSsg7HrSdkyMBy5bnbxE&only=yes&limit=100)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -483,15 +459,158 @@ Database directly from your Keeper Vault.
 
 Step 1 - Enable Connection Enforcement Policies
 
-From the Admin Console, enable the corresponding [PAM Enforcement
-Policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-
-policies) for connections:
+From the Admin Console, enable the corresponding  for connections:
 
 Policy
 
 Definition
 
 Commander CLI
+
+##
+
+Step 2 - Install and configure the Keeper Gateway
+
+Prior to creating the PAM Record types in your Vault, the Keeper Gateway needs
+to be installed in your infrastructure. Visit the following guides based on
+your needs:
+
+  *   *   * 
+
+##
+
+Step 3 - Configuring the PAM Configuration
+
+  *   *   * 
+
+##
+
+Step 4 - Create and Configure PAM Database and PAM User(s) Records
+
+After setting up your Gateway and PAM Configuration Record, the MySQL Database
+and its users need to be configured on PAM Record types in your Vault:
+
+  *   * 
+
+Refer to this example on how to configure MySQL Database on a PAM Database
+record type:
+
+##
+
+Step 5 - Configuring PAM Settings and MySQL Protocol
+
+The PAM Database record type contains the necessary information required for
+the Keeper Gateway to locate and establish a connection with the database,
+while the PAM User record type contains the necessary information to
+authenticate the connection.
+
+The PAM Settings need to be configured to enable connections or tunnels on the
+target defined on the PAM Database Record. To configure the MySQL protocol,
+visit the following page:
+
+##
+
+Launching Connections
+
+Once you have configured the MySQL Protocol connection on your PAM Database
+Record, your record will contain the following connection banner with the
+"Launch" Button:
+
+In the above image, a MySQL Database has been configured on the PAM Database
+Record. When clicking launch, the Vault Client will render a window with the
+established connection protocol to the specified target.
+
+##
+
+Sharing PAM Database Records
+
+PAM Database records can be shared with other Keeper users within your
+organization. However, the recipient must have the appropriate PAM enforcement
+policies in place to utilize KeeperPAM features on the shared PAM records.
+
+When sharing a PAM Database record, the linked admin credentials will **not**
+be shared. For example, if the PAM Database is configured with a MySQL
+Database, the recipient can connect to the MySQL Database on the PAM Database
+record without having direct access to the linked credentials.
+
+Additionally, the Keeper Gateways needs to be configured with the Gateway
+token. For more information, visit this .
+
+Steps 3 and Step 4 can be automated with the Gateway Wizard. For more
+information, visit this .
+
+The contains critical information on your infrastructure, settings and
+associated Keeper Gateway. Visit the following pages for more details based on
+your target infrastructure:
+
+\- The MySQL Database is configured on this record type
+
+\- The MySQL Database User is configured on this record type
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+  3. [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
+
+# MySQL Protocol - MySQL Database
+
+Establish a connection to a MySQL Database directly from your Vault
+
+[PreviousRDP Protocol - Azure Virtual Machine](/en/keeperpam/privileged-
+access-manager/connections/examples/rdp-protocol-azure-virtual-
+machine)[NextPostgreSQL Protocol - PostgreSQL
+Database](/en/keeperpam/privileged-access-
+manager/connections/examples/postgresql-protocol-postgresql-database)
+
+  * Overview 
+  * Summary
+  * Step 1 - Enable Connection Enforcement Policies
+  * Step 2 - Install and configure the Keeper Gateway 
+  * Step 3 - Configuring the PAM Configuration 
+  * Step 4 - Create and Configure PAM Database and PAM User(s) Records
+  * Step 5 - Configuring PAM Settings and MySQL Protocol
+  * Launching Connections
+  * Sharing PAM Database Records
+
+[Windows Installation](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/windows-installation)
+
+[Linux Installation](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/linux-installation)
+
+[Docker Installation](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/docker-installation)
+
+[page](/en/keeperpam/privileged-access-manager/getting-started/gateways/one-
+time-access-token)
+
+[page](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
+
+[PAM Configuration ](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)
+
+[Setting up Local Environment on the PAM
+Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration/local-environment-setup)
+
+[Setting up AWS Environment on the PAM
+Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration/aws-environment-setup)
+
+[Setting up Azure Environment on the PAM
+Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-
+configuration/azure-environment-setup)
+
+[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database)
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
+[Example: MySQL Database](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-database/example-mysql-database)
+
+[MySQL Connections](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/mysql-connections)
 
 Can configure connection and session recording
 
@@ -525,100 +644,8 @@ Copy
     
     ALLOW_VIEW_KCM_RECORDINGS
 
-##
-
-Step 2 - Install and configure the Keeper Gateway
-
-Prior to creating the PAM Record types in your Vault, the Keeper Gateway needs
-to be installed in your infrastructure. Visit the following guides based on
-your needs:
-
-  * [Windows Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/windows-installation)
-
-  * [Linux Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/linux-installation)
-
-  * [Docker Installation](/en/keeperpam/privileged-access-manager/getting-started/gateways/docker-installation)
-
-Additionally, the Keeper Gateways needs to be configured with the Gateway
-token. For more information, visit this [page](/en/keeperpam/privileged-
-access-manager/getting-started/gateways/one-time-access-token).
-
-Steps 3 and Step 4 can be automated with the Gateway Wizard. For more
-information, visit this [page](/en/keeperpam/privileged-access-manager/quick-
-start-sandbox).
-
-##
-
-Step 3 - Configuring the PAM Configuration
-
-The [PAM Configuration ](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)contains critical information on your
-infrastructure, settings and associated Keeper Gateway. Visit the following
-pages for more details based on your target infrastructure:
-
-  * [Setting up Local Environment on the PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/local-environment-setup)
-
-  * [Setting up AWS Environment on the PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup)
-
-  * [Setting up Azure Environment on the PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/azure-environment-setup)
-
-##
-
-Step 4 - Create and Configure PAM Database and PAM User(s) Records
-
-After setting up your Gateway and PAM Configuration Record, the MySQL Database
-and its users need to be configured on PAM Record types in your Vault:
-
-  * [PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database) \- The MySQL Database is configured on this record type
-
-  * [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user) \- The MySQL Database User is configured on this record type
-
-Refer to this example on how to configure MySQL Database on a PAM Database
-record type:
-
-[Example: MySQL Database](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-database/example-mysql-database)
-
-##
-
-Step 5 - Configuring PAM Settings and MySQL Protocol
-
-The PAM Database record type contains the necessary information required for
-the Keeper Gateway to locate and establish a connection with the database,
-while the PAM User record type contains the necessary information to
-authenticate the connection.
-
-The PAM Settings need to be configured to enable connections or tunnels on the
-target defined on the PAM Database Record. To configure the MySQL protocol,
-visit the following page:
-
-[MySQL Connections](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/mysql-connections)
-
-##
-
-Launching Connections
-
-Once you have configured the MySQL Protocol connection on your PAM Database
-Record, your record will contain the following connection banner with the
-"Launch" Button:
-
-In the above image, a MySQL Database has been configured on the PAM Database
-Record. When clicking launch, the Vault Client will render a window with the
-established connection protocol to the specified target.
-
-##
-
-Sharing PAM Database Records
-
-PAM Database records can be shared with other Keeper users within your
-organization. However, the recipient must have the appropriate PAM enforcement
-policies in place to utilize KeeperPAM features on the shared PAM records.
-
-When sharing a PAM Database record, the linked admin credentials will **not**
-be shared. For example, if the PAM Database is configured with a MySQL
-Database, the recipient can connect to the MySQL Database on the PAM Database
-record without having direct access to the linked credentials.
+[PAM Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-
+started/enforcement-policies)
 
 [Enable the Connection Enforcement Policies](/en/keeperpam/privileged-access-
 manager/connections/examples/mysql-protocol-mysql-database#step-1-enable-

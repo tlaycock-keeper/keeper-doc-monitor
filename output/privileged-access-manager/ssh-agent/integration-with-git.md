@@ -779,14 +779,14 @@ Setup is complete.
 
 is performed
 
+[Terminal Configuration](/en/keeperpam/privileged-access-manager/ssh-
+agent#terminal-configuration)
+
 [GitHub Authentication](/en/keeperpam/privileged-access-manager/ssh-
 agent/integration-with-git#github-authentication)
 
 [Signing Commits](/en/keeperpam/privileged-access-manager/ssh-
 agent/integration-with-git#signing-commits)
-
-[Terminal Configuration](/en/keeperpam/privileged-access-manager/ssh-
-agent#terminal-configuration)
 
 Keeper SSH Key for Github Authentication
 

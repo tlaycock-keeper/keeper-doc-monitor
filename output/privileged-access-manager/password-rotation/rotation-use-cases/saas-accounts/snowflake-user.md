@@ -497,12 +497,6 @@ gateway environment and run the following command:
 
 pip install snowflake-connector-python
 
-**NOTE: If you want to use a virtual environment, add a shebang line at the
-top of the script as documented here**[**Python Environment
-Setup**](https://docs.keeper.io/en/v/secrets-manager/secrets-manager/password-
-rotation/post-rotation-scripts/use-case-examples/rotate-credential-via-rest-
-api#step-5-python-environment-setup)
-
 ##
 
 Rotating Setup for Snowflake User credentials
@@ -699,15 +693,22 @@ After successfully setting up Rotation for your Snowflake User Credentials on
 the PAM User Record, clicking on "Run Scripts Only" will rotate the
 credential:
 
+**NOTE: If you want to use a virtual environment, add a shebang line at the
+top of the script as documented here**
+
 Attach the below  that will perform the password rotation. The script has
 additional comments inside that describe each line.
+
+[**Python Environment Setup**](https://docs.keeper.io/en/v/secrets-
+manager/secrets-manager/password-rotation/post-rotation-scripts/use-case-
+examples/rotate-credential-via-rest-api#step-5-python-environment-setup)
+
+[Python script](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-accounts/snowflake-user#python-script)
 
 [https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
 Scripts/tree/main/snowflakegithub.com](https://github.com/Keeper-
 Security/Zero-Trust-KeeperPAM-Scripts/tree/main/snowflake)
-
-[Python script](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/saas-accounts/snowflake-user#python-script)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

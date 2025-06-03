@@ -395,6 +395,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -430,36 +460,6 @@ Last updated 2 months ago
 
 Was this helpful?
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 Overview
@@ -471,29 +471,19 @@ the Keeper Gateway on Windows.
 
 Prerequisite
 
-Prior to proceeding with this document, make sure you [created a Gateway
-device](/en/keeperpam/privileged-access-manager/getting-started/gateways/one-
-time-access-token).
-
 ###
 
 Installation
 
 The latest Keeper Gateway for Windows is downloaded from here:
 
-  * [**Download the Keeper Gateway for Windows**](https://keepersecurity.com/pam/gateway/keeper-gateway_windows_x86_64.exe)
+  * 
 
 You can run the service under system privilege or use a service account.
 
 ####
 
 New Installs
-
-Upon installation of the service, select "Enter a Keeper One-Time Access
-Token" and supply the token provided by when you [created a
-Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways/one-
-time-access-token) on the Vault. After installation, the service will
-automatically start up and register with the Keeper cloud.
 
 ####
 
@@ -537,11 +527,6 @@ credentials of the desired service account:
 
 One-Time Access Token
 
-The final step prior to successfully installing the Keeper Gateway as service
-is to enter the [One-Time Access](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/one-time-access-token) Token provided from
-the Keeper Vault.
-
 After clicking "Next", click "Install" in the next screen to install the
 Keeper Gateway.
 
@@ -556,13 +541,6 @@ Gateway Service".
 ###
 
 **Configuration File**
-
-The Keeper Gateway configuration file contains a set of tokens that includes
-encryption keys, client identifiers, and tenant server information used to
-authenticate and decrypt data from the Keeper Secrets Manager APIs. This
-configuration file is created from the One-Time Access Token generated when
-you [created the Gateway](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/one-time-access-token).
 
 If the Keeper Gateway is installed and running as a service, the gateway
 configuration file is stored in the following location:
@@ -726,11 +704,43 @@ To uninstall the service:
 
   * If desired, delete the private configuration .json file
 
+Prior to proceeding with this document, make sure you .
+
+Upon installation of the service, select "Enter a Keeper One-Time Access
+Token" and supply the token provided by when you  on the Vault. After
+installation, the service will automatically start up and register with the
+Keeper cloud.
+
 Use service account - Use the , otherwise the account installing the gateway
 will be used.
 
 Turn on debug logging - Enable  on the gateway log files. NOT recommended for
 production environments. Only use this when debugging with Keeper support.
+
+The final step prior to successfully installing the Keeper Gateway as service
+is to enter the  Token provided from the Keeper Vault.
+
+The Keeper Gateway configuration file contains a set of tokens that includes
+encryption keys, client identifiers, and tenant server information used to
+authenticate and decrypt data from the Keeper Secrets Manager APIs. This
+configuration file is created from the One-Time Access Token generated when
+you .
+
+[created a Gateway device](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/one-time-access-token)
+
+[**Download the Keeper Gateway for
+Windows**](https://keepersecurity.com/pam/gateway/keeper-
+gateway_windows_x86_64.exe)
+
+[created a Gateway](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/one-time-access-token)
+
+[One-Time Access](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/one-time-access-token)
+
+[created the Gateway](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/one-time-access-token)
 
 [specified service account](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/windows-installation#specifying-the-keeper-gateway-service-
@@ -738,39 +748,6 @@ account-optional)
 
 [verbose logging](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/windows-installation#verbose-logging)
-
-###
-
-Checksum Verification
-
-Keeper Gateway SHA256 hashes for the latest version are published at the below
-location:
-
-Calculating and verifying the checksum:
-
-####
-
-Linux
-
-Copy
-
-    
-    
-    sha256sum keeper-gateway_linux_x86_64
-    cat keeper-gateway_X.X.X_SHA256SUMS | grep keeper-gateway_linux_x86_64
-
-####
-
-PowerShell
-
-Copy
-
-    
-    
-    Get-FileHash -Algorithm SHA256 keeper-gateway_windows_x86_64.exe | Format-List
-    Get-Content keeper-gateway_X.X.X_SHA256SUMS | Select-String keeper-gateway_windows_x86_64.exe
-
-<https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
 
 Keeper Gateway for Windows
 
@@ -804,4 +781,37 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRPmmLYEln
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNqfhdJpjRCJbgs6RfYjP%252Fimage.png%3Falt%3Dmedia%26token%3D88ee8691-e886-48b8-99ec-1e2ff1fe4f6c&width=768&dpr=4&quality=100&sign=aa608a9c&sv=2)
+
+###
+
+Checksum Verification
+
+Keeper Gateway SHA256 hashes for the latest version are published at the below
+location:
+
+Calculating and verifying the checksum:
+
+####
+
+Linux
+
+Copy
+
+    
+    
+    sha256sum keeper-gateway_linux_x86_64
+    cat keeper-gateway_X.X.X_SHA256SUMS | grep keeper-gateway_linux_x86_64
+
+####
+
+PowerShell
+
+Copy
+
+    
+    
+    Get-FileHash -Algorithm SHA256 keeper-gateway_windows_x86_64.exe | Format-List
+    Get-Content keeper-gateway_X.X.X_SHA256SUMS | Select-String keeper-gateway_windows_x86_64.exe
+
+<https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
 

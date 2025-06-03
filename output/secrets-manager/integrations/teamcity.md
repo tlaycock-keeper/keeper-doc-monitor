@@ -691,11 +691,11 @@ manager/secrets-manager/about/keeper-notation)
 [_Prerequisites_](/en/keeperpam/secrets-
 manager/integrations/teamcity#prerequisites)
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 Adding connection of type Keeper Vault
 

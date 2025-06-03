@@ -673,12 +673,12 @@ configuration)
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdFl3JIXByC2lADPNH%252F-MkdFyUdRSxjKdJTdIPX%252Fgithub-
 actions-plugin-
 header.jpg%3Falt%3Dmedia%26token%3D22669c6b-a368-4a05-afc6-68f5c86e3769&width=768&dpr=4&quality=100&sign=65467b4a&sv=2)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 

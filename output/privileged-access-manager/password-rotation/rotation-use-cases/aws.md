@@ -395,36 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * KeeperPAM Record Types
-  * Prerequisites
-  * Setup Steps 
-  * Use Cases
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=AZHlgB3x9RU83c63iX2v&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-
-# AWS
-
-Password Rotation in the AWS Environment
-
-[PreviousAzure App Secret Rotation](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-
-rotation)[NextIAM User Password](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/aws/iam-user)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -455,6 +425,36 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Overview
+  * KeeperPAM Record Types
+  * Prerequisites
+  * Setup Steps 
+  * Use Cases
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=AZHlgB3x9RU83c63iX2v&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+
+# AWS
+
+Password Rotation in the AWS Environment
+
+[PreviousAzure App Secret Rotation](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/azure/azure-app-secret-
+rotation)[NextIAM User Password](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/aws/iam-user)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -473,15 +473,6 @@ with the AWS system and perform rotation. If instance roles are not defined,
 the AWS Access Key ID and Secret Key can be stored in the PAM Configuration
 record to authenticate and perform rotations.
 
-Configurations for managed resources like EC2, RDS, and Directory Services are
-defined in the [PAM Machine](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-machine), [PAM Database](/en/keeperpam/privileged-
-access-manager/getting-started/pam-resources/pam-database), and [PAM
-Directory](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-directory)**** record types. The following table shows the
-supported AWS managed resources with KeeperPAM and their corresponding PAM
-Record Type:
-
 AWS Managed Resource
 
 Corresponding Record Type
@@ -498,10 +489,6 @@ Directory Service
 
 PAM Directory
 
-Configurations for directory users or IAM users are defined in the [PAM
-User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)**** record type.
-
 ##
 
 Prerequisites
@@ -510,11 +497,7 @@ To successfully rotate IAM User accounts or EC2 local user accounts, the
 Keeper Gateway needs to have the necessary AWS role policies with the
 permissions for performing the password rotation.
 
-  * See the [AWS environment setup guide](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup) for more information.
-
-If you are not using EC2 instance role policies, the following values are
-needed in the [PAM Configuration](/en/keeperpam/privileged-access-
-manager/getting-started/pam-configuration):
+  * 
 
 Field
 
@@ -564,15 +547,53 @@ passwords on your Azure network:
 
 Use Cases
 
-  * [IAM User Password](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user)
+  *   *   *   *   * 
 
-  * [Managed Microsoft AD User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/directory-user)
+Configurations for managed resources like EC2, RDS, and Directory Services are
+defined in the , , and **** record types. The following table shows the
+supported AWS managed resources with KeeperPAM and their corresponding PAM
+Record Type:
 
-  * [EC2 Instance local user](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/ec2-virtual-machine-user)
+Configurations for directory users or IAM users are defined in the **** record
+type.
 
-  * [IAM User Access Key](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user-access-key)
+See the  for more information.
 
-  * [Managed Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database)
+If you are not using EC2 instance role policies, the following values are
+needed in the :
+
+[PAM Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
+
+[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database)
+
+[PAM Directory](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-directory)
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
+
+[AWS environment setup guide](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration/aws-environment-setup)
+
+[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration)
+
+[IAM User Password](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/iam-user)
+
+[Managed Microsoft AD User](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/directory-user)
+
+[EC2 Instance local user](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/ec2-virtual-machine-user)
+
+[IAM User Access Key](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/iam-user-access-key)
+
+[Managed Database](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/managed-database)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

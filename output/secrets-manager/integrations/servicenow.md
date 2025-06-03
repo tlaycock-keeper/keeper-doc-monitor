@@ -459,7 +459,7 @@ Keeper credential storage integration with ServiceNow
 manager/integrations/powershell-plugin)[NextTeamCity](/en/keeperpam/secrets-
 manager/integrations/teamcity)
 
-Last updated 8 days ago
+Last updated 9 days ago
 
 Was this helpful?
 
@@ -799,11 +799,11 @@ security/page/product/credentials/concept/c_ExternalCredentialStorage.html)
 manager/about/secrets-manager-configuration#creating-a-secrets-manager-
 configuration)
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

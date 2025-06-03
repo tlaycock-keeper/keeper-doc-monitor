@@ -395,6 +395,34 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * Setup Steps 
+  * Use Cases
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=bLhEny4oidYf39tG9ERv&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+
+# Local Network
+
+Password Rotation in the Local Network Environment
+
+[PreviousRotation Use Cases](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases)[NextActive Directory or OpenLDAP
+User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/local-network/active-directory)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -424,34 +452,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Overview
-  * Setup Steps 
-  * Use Cases
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=bLhEny4oidYf39tG9ERv&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-
-# Local Network
-
-Password Rotation in the Local Network Environment
-
-[PreviousRotation Use Cases](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases)[NextActive Directory or OpenLDAP
-User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/local-network/active-directory)
-
-Last updated 4 months ago
-
-Was this helpful?
 
 ##
 
@@ -492,22 +492,15 @@ passwords on a network:
 
 Use Cases
 
-  *   *   *   *   * 
+  * [Active Directory User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
 
-[Active Directory User](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/active-directory)
+  * [Windows User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
 
-[Windows User](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/windows-user)
+  * [Linux User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
 
-[Linux User](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/linux-user)
+  * [macOS User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
 
-[macOS User](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/macos-user)
-
-[Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/local-network/database)
+  * [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

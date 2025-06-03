@@ -452,7 +452,7 @@ manager/connections/session-
 protocols/kubernetes)[NextExamples](/en/keeperpam/privileged-access-
 manager/connections/examples)
 
-Last updated 13 days ago
+Last updated 14 days ago
 
 Was this helpful?
 
@@ -591,6 +591,12 @@ Session Recordings - RBI Protocol
 [Getting Started page](/en/keeperpam/privileged-access-
 manager/connections/getting-started)
 
+For this protocol, graphical data, including timing information, is recorded.
+For more details on the recordings and how to access them, see the  docs.
+
+[Session Recording & Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
+
 RBI Session Recordings
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
@@ -613,10 +619,4 @@ perform administrative operations on it.
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
-
-For this protocol, graphical data, including timing information, is recorded.
-For more details on the recordings and how to access them, see the  docs.
-
-[Session Recording & Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
 

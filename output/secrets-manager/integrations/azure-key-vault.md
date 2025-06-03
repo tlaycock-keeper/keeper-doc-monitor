@@ -427,34 +427,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * About
-  * Features
-  * Prerequisites
-  * Setup
-  * 1\. Configure Keeper Secrets Manager CLI
-  * 2\. Set Azure Permissions
-  * 3\. Create Azure Credentials Record
-  * 4\. Create Value Mappings
-  * Run Sync
-  * 1\. Construct the Command
-  * 2\. Run a Dry-Run
-  * 3\. Run the Sync
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=8LqKdN1gExiCxJhy1YW3&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Azure Key Vault Sync
-
-Sync secrets from the Keeper Vault with Azure Key Vault
-
-[PreviousAzure DevOps Extension](/en/keeperpam/secrets-
-manager/integrations/azure-devops-plugin)[NextAzure Key Vault
-Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
 
 Last updated 1 month ago
 
@@ -614,12 +590,6 @@ and value mapping
 Put together the KSM sync command with the Azure type. The format looks like
 the following:
 
-Copy
-
-    
-    
-    ksm sync --type azure --credentials [UID] --map [...] --map [...]
-
 ###
 
 2\. Run a Dry-Run
@@ -629,12 +599,6 @@ that will be made to your Azure Key Vault values without actually pushing the
 values or making changes. Use this to make sure your mapping queries are
 constructed properly.
 
-Copy
-
-    
-    
-    ksm sync --type azure --credentials [UID] --map [...] --map [...] --dry-run
-
 ###
 
 3\. Run the Sync
@@ -643,12 +607,6 @@ When ready, run the sync command without the dry-run option. This will push
 values from your Keeper Vault to Azure Key Vault
 
 TIP: you can use `-m` as short hand for `--map`
-
-Copy
-
-    
-    
-    ksm sync --type azure --credentials [UID] -m [...] -m [...]
 
 Keeper Secrets Manager access (See the  for more details)
 
@@ -662,6 +620,48 @@ Follow the Microsoft guide for setting up a service principal:
 
 See the  for more information
 
+Copy
+
+    
+    
+    ksm sync --type azure --credentials [UID] --map [...] --map [...]
+
+Copy
+
+    
+    
+    ksm sync --type azure --credentials [UID] --map [...] --map [...] --dry-run
+
+Copy
+
+    
+    
+    ksm sync --type azure --credentials [UID] -m [...] -m [...]
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Azure Key Vault Sync
+
+Sync secrets from the Keeper Vault with Azure Key Vault
+
+[PreviousAzure DevOps Extension](/en/keeperpam/secrets-
+manager/integrations/azure-devops-plugin)[NextAzure Key Vault
+Encryption](/en/keeperpam/secrets-manager/integrations/azure-key-vault-ksm)
+
+  * About
+  * Features
+  * Prerequisites
+  * Setup
+  * 1\. Configure Keeper Secrets Manager CLI
+  * 2\. Set Azure Permissions
+  * 3\. Create Azure Credentials Record
+  * 4\. Create Value Mappings
+  * Run Sync
+  * 1\. Construct the Command
+  * 2\. Run a Dry-Run
+  * 3\. Run the Sync
+
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
 
 [profile documentation](/en/keeperpam/secrets-manager/secrets-manager-command-
@@ -674,11 +674,11 @@ directory/develop/app-objects-and-service-principals)
 [Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
 notation)
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
 [`sync` command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/sync-command)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)

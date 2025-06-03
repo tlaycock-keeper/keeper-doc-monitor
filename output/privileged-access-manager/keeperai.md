@@ -456,7 +456,7 @@ AI-powered threat detection for KeeperPAM privileged sessions
 manager/discovery/discovery-using-the-vault)[NextOn-Prem Connection
 Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
 
-Last updated 3 days ago
+Last updated 4 days ago
 
 Was this helpful?
 

@@ -427,10 +427,30 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * Prerequisites
+  * 1\. Set up PAM Configuration
+  * 2\. Set up one or more PAM User Records
+  * 3\. Configure Rotation on the PAM User Records 
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=cpnKyNOYkUxh0pqm8rzi&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure)
+
+# Azure AD Users
+
+Rotating Azure AD Admin and User passwords with Keeper
+
+[PreviousAzure](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/azure)[NextAzure VM User
+Accounts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/azure/azure-vm-user-accounts)
 
 Last updated 3 months ago
 
@@ -473,57 +493,6 @@ In the left menu of the vault, select "Secrets Manager", then select the "PAM
 Configurations" tab, and click on "New Configuration". The following table
 lists all the **required** fields that needs to be filled on the PAM
 Configuration Record with your information:
-
-##
-
-2\. Set up one or more PAM User Records
-
-Keeper Rotation uses the Azure Graph API to rotate the **PAM User** records in
-your Azure environment. The PAM User records need to be in a shared folder
-that is shared to the KSM application created in the pre-requisites.
-
-The following table lists all the required**** fields that needs to be filled
-on the **PAM User** record with your information:
-
-There should only be one PAM User record for each Azure AD user. Having
-multiple PAM User records with the same user/login will cause conflicts.
-
-##
-
-3\. Configure Rotation on the PAM User Records
-
-Select the PAM User record(s) from Step 3, edit the record and open the
-"Password Rotation Settings".
-
-  * Select "IAM User" for the rotation method, since this uses Azure APIs.
-
-  * The "Rotation Settings" should select the **PAM Configuration** setup previously. 
-
-  * Select the desired schedule and password complexity.
-
-  * Upon saving, the rotation button will be enabled and available to rotate on demand, or via the selected schedule.
-
-Any user with `edit` rights to a **PAM User** record has the ability to setup
-rotation for that record.
-
-See the  for a high level overview and getting started with Azure
-
-are configured for your role
-
-A Keeper Secrets Manager  has been created
-
-Your Azure environment is  per our documentation
-
-Your  is online
-
-A Keeper Secrets Manager  has been created
-
-A Keeper Rotation  is already installed, running, and is provisioned in the
-Keeper Secrets Manager application you created.
-
-Field
-
-Description
 
 Field
 
@@ -572,6 +541,21 @@ services.
 
 The UUID of the Azure Active Directory
 
+##
+
+2\. Set up one or more PAM User Records
+
+Keeper Rotation uses the Azure Graph API to rotate the **PAM User** records in
+your Azure environment. The PAM User records need to be in a shared folder
+that is shared to the KSM application created in the pre-requisites.
+
+The following table lists all the required**** fields that needs to be filled
+on the **PAM User** record with your information:
+
+Field
+
+Description
+
 **Title**
 
 Keeper record title i.e. `Azure User1`
@@ -586,25 +570,41 @@ in one of the following formats: `domain\username` `username@domain`
 Providing a password is optional. Performing a rotation will set one if this
 field is left blank.
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure)
+There should only be one PAM User record for each Azure AD user. Having
+multiple PAM User records with the same user/login will cause conflicts.
 
-# Azure AD Users
+##
 
-Rotating Azure AD Admin and User passwords with Keeper
+3\. Configure Rotation on the PAM User Records
 
-[PreviousAzure](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/azure)[NextAzure VM User
-Accounts](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/azure/azure-vm-user-accounts)
+Select the PAM User record(s) from Step 3, edit the record and open the
+"Password Rotation Settings".
 
-  * Overview
-  * Prerequisites
-  * 1\. Set up PAM Configuration
-  * 2\. Set up one or more PAM User Records
-  * 3\. Configure Rotation on the PAM User Records 
+  * Select "IAM User" for the rotation method, since this uses Azure APIs.
+
+  * The "Rotation Settings" should select the **PAM Configuration** setup previously. 
+
+  * Select the desired schedule and password complexity.
+
+  * Upon saving, the rotation button will be enabled and available to rotate on demand, or via the selected schedule.
+
+Any user with `edit` rights to a **PAM User** record has the ability to setup
+rotation for that record.
+
+See the  for a high level overview and getting started with Azure
+
+are configured for your role
+
+A Keeper Secrets Manager  has been created
+
+Your Azure environment is  per our documentation
+
+Your  is online
+
+A Keeper Secrets Manager  has been created
+
+A Keeper Rotation  is already installed, running, and is provisioned in the
+Keeper Secrets Manager application you created.
 
 [Azure Overview](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/azure)

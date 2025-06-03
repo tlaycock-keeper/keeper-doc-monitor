@@ -452,7 +452,7 @@ How KeeperPAM provides Vendor Privileged Access (VPAM)
 manager/references/itsm-integration)[NextCommander
 SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
 
-Last updated 4 days ago
+Last updated 5 days ago
 
 Was this helpful?
 
@@ -768,6 +768,9 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FfEc1cE2ge
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5pZoQXuyuRA4oS9zLhTp%252FScreenshot%25202025-05-28%2520at%25208.18.48%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dda40678f-f7b8-441d-afc2-7e6526a410b0&width=768&dpr=4&quality=100&sign=a4a8e13&sv=2)
 
+[advanced integration](https://docs.keeper.io/en/keeper-connection-
+manager/using-keeper-connection-manager/launching-connections)
+
 [Provision the vendor](https://docs.keeper.io/en/enterprise-guide/user-and-
 team-provisioning)
 
@@ -778,7 +781,4 @@ integration)
 
 [limited admin rights](https://docs.keeper.io/en/enterprise-guide/delegated-
 administration)
-
-[advanced integration](https://docs.keeper.io/en/keeper-connection-
-manager/using-keeper-connection-manager/launching-connections)
 

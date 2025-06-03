@@ -505,6 +505,9 @@ gateway.
 
 Email alerts contain event information
 
+[Reporting, Alerts & SIEM integration](https://docs.keeper.io/en/enterprise-
+guide/event-reporting)
+
 KeeperPAM Events
 
 Set Alert for Gateway Offline
@@ -531,7 +534,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7HKEvnUmu
 
 [Keeper Commander](/en/keeperpam/commander-cli/command-reference/reporting-
 commands#audit-report-command)
-
-[Reporting, Alerts & SIEM integration](https://docs.keeper.io/en/enterprise-
-guide/event-reporting)
 

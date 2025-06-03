@@ -395,6 +395,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -431,44 +461,13 @@ Last updated 2 months ago
 
 Was this helpful?
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 Overview
 
 This document contains information on how to install, configure, and update
 your Keeper Gateway on Docker. The Docker container is built upon the base
-image of Rocky Linux 8 and it is hosted in
-[DockerHub](https://hub.docker.com/r/keeper/gateway).
+image of Rocky Linux 8 and it is hosted in .
 
 For full PAM capabilities, use a **Linux host with a x86 AMD processor**.
 
@@ -478,7 +477,7 @@ Prerequisites
 
   * A Linux host with a x86 AMD processor
 
-  * `docker` and `docker-compose` installed (see [Docker Install](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux) for help)
+  * 
 
 Note: The syntax is `docker-compose` for servers, but on a local Docker
 Desktop it might be `docker compose` (with no space).
@@ -731,9 +730,26 @@ Copy
 
 References:
 
-  * DockerHub listing: <https://hub.docker.com/r/keeper/gateway>[](https://hub.docker.com/r/keeper/gateway)
+  *   * 
 
-  * Quick reference for [Installing Docker](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux)[ and Docker Compose on Linux](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux)
+`docker` and `docker-compose` installed (see  for help)
+
+DockerHub listing:
+
+Quick reference for
+
+[Docker Install](/en/keeperpam/privileged-access-
+manager/references/installing-docker-on-linux)
+
+<https://hub.docker.com/r/keeper/gateway>[](https://hub.docker.com/r/keeper/gateway)
+
+[Installing Docker](/en/keeperpam/privileged-access-
+manager/references/installing-docker-on-linux)
+
+[ and Docker Compose on Linux](/en/keeperpam/privileged-access-
+manager/references/installing-docker-on-linux)
+
+[DockerHub](https://hub.docker.com/r/keeper/gateway)
 
 ###
 
