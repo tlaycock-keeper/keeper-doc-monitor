@@ -427,14 +427,24 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * config command
+  * color
+  * cache
+  * record-type-dir
+  * editor
+  * show
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-Mf8fvT11dcVW5fiSPDD&only=yes&limit=100)
 
-Last updated 7 months ago
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
 
-Was this helpful?
+# Config Command
+
+Configure the local Secrets Manager CLI environment
 
 ##
 
@@ -449,6 +459,30 @@ Sub-command to run
 format: `**ksm config <sub-command>**`
 
 **Sub-Commands:**
+
+Sub-Command
+
+Description
+
+`color`
+
+Turn on or off color display
+
+`cache`
+
+Turn on or off the record cache
+
+`record-type-dir`
+
+Set the directory that hold custom record type schemas.
+
+`editor`
+
+Set an editor for visual adding new records.
+
+`show`
+
+Display current CLI settings
 
 ###
 
@@ -467,6 +501,16 @@ format: `**ksm config <sub-command>**`
 ####
 
 Example:
+
+Copy
+
+    
+    
+    $ ksm config color --disable
+    $ ksm config show
+     Config Item            Value
+     ---------------------- --------------
+     Color Enabled          False
 
 ###
 
@@ -490,6 +534,16 @@ encrypted on local storage.
 
 Example:
 
+Copy
+
+    
+    
+    $ ksm config cache --enable
+    $ ksm config show
+     Config Item            Value
+     ---------------------- -----------
+     Cache Enabled          True
+
 ###
 
 record-type-dir
@@ -508,6 +562,16 @@ files.
 ####
 
 Example:
+
+Copy
+
+    
+    
+    $ ksm config record-type-dir -d /path/to/directory
+    $ ksm config show
+     Config Item            Value
+     ---------------------- -----------
+     Record Type Directory  /path/to/directory
 
 ###
 
@@ -540,6 +604,18 @@ list.
 
 **Example:**
 
+Copy
+
+    
+    
+     ksm config editor --app Code --blocking --proces-name code.exe
+    $ ksm config show
+     Config Item            Value
+     ---------------------- -----------
+     Editor                 Code (code.exe)
+     Editor Blocking        True
+    
+
 Certain applications do not block the CLI when they launch. These are mainly
 editors that have a UI. If the application does not block, the CLI will
 attempt to parse record template before any changes have been made.
@@ -563,72 +639,6 @@ editor.
 
 Example:
 
-Sub-Command
-
-Description
-
-`color`
-
-Turn on or off color display
-
-`cache`
-
-Turn on or off the record cache
-
-`record-type-dir`
-
-Set the directory that hold custom record type schemas.
-
-`editor`
-
-Set an editor for visual adding new records.
-
-`show`
-
-Display current CLI settings
-
-Copy
-
-    
-    
-    $ ksm config color --disable
-    $ ksm config show
-     Config Item            Value
-     ---------------------- --------------
-     Color Enabled          False
-
-Copy
-
-    
-    
-    $ ksm config cache --enable
-    $ ksm config show
-     Config Item            Value
-     ---------------------- -----------
-     Cache Enabled          True
-
-Copy
-
-    
-    
-    $ ksm config record-type-dir -d /path/to/directory
-    $ ksm config show
-     Config Item            Value
-     ---------------------- -----------
-     Record Type Directory  /path/to/directory
-
-Copy
-
-    
-    
-     ksm config editor --app Code --blocking --proces-name code.exe
-    $ ksm config show
-     Config Item            Value
-     ---------------------- -----------
-     Editor                 Code (code.exe)
-     Editor Blocking        True
-    
-
 Copy
 
     
@@ -643,21 +653,11 @@ Copy
      Editor                 vim (NA)
      Editor Blocking        False
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
-
-# Config Command
-
-Configure the local Secrets Manager CLI environment
-
 [PreviousExec Command](/en/keeperpam/secrets-manager/secrets-manager-command-
 line-interface/exec-command)[NextVersion Command](/en/keeperpam/secrets-
 manager/secrets-manager-command-line-interface/version-command)
 
-  * config command
-  * color
-  * cache
-  * record-type-dir
-  * editor
-  * show
+Last updated 7 months ago
+
+Was this helpful?
 

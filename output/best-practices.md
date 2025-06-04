@@ -418,7 +418,7 @@ Implementation of Endpoint Privilege Manager
 [PreviousManaging Requests](/en/keeperpam/endpoint-privilege-manager/managing-
 requests)[NextFAQs](/en/keeperpam/faqs)
 
-Last updated 10 days ago
+Last updated 11 days ago
 
 Was this helpful?
 

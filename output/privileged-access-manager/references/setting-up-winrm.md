@@ -395,36 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
 Was this helpful?
@@ -432,9 +402,12 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=oMRD8RJsDBJZSR1TvqPI&only=yes&limit=100)
 
-Last updated 5 months ago
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
 
-Was this helpful?
+# Setting up WinRM
+
+Example guide for setting up WinRM on target machines
 
 ##
 
@@ -445,27 +418,6 @@ environments. For reference and testing, the below PowerShell script can be
 run on a target machine to enable WinRM with a self-signed certificate. We
 recommend creating a certificate with a public CA in your production
 environment.
-
-Below is a breakdown of what this script performs to configure WinRM on a
-Windows machine:
-
-  1. Set the network connection profile to Private:
-
-  2. Configure and enable WinRM:
-
-  3. Allow non-SSL (unencrypted) traffic on port 5985:
-
-  4. Create a self-signed SSL certificate for encrypted traffic on port 5986:
-
-  5. Create Windows Firewall rules to allow inbound traffic on ports 5985 (non-SSL) and 5986 (SSL):
-
-After running this script, WinRM will be configured to allow both unencrypted
-(port 5985) and encrypted (port 5986) remote connections. Additionally,
-Windows Firewall rules will be created to allow inbound traffic on these
-ports.
-
-From a Windows server, you can test the connectivity to the target machine
-through PowerShell:
 
 Copy
 
@@ -497,48 +449,64 @@ Copy
     New-NetFirewallRule -DisplayName "WinRM Secure" -Group "Windows Remote Management" -Program "System" `
       -Protocol TCP -LocalPort "5986" -Profile Public
 
-Copy
+Below is a breakdown of what this script performs to configure WinRM on a
+Windows machine:
 
-    
-    
-    Set-NetConnectionProfile -NetworkCategory Private
-
-Copy
-
-    
-    
-    winrm quickconfig -force
-    Enable-PSRemoting -force
+  1. Set the network connection profile to Private:
 
 Copy
 
-    
-    
-    winrm set winrm/config/service '@{AllowUnencrypted="true"}'
-    winrm set winrm/config/service/auth '@{Basic="true"}'
-    winrm set winrm/config/client/auth '@{Basic="true"}'
+         
+         Set-NetConnectionProfile -NetworkCategory Private
+
+  2. Configure and enable WinRM:
 
 Copy
 
-    
-    
-    $Hostname = [System.Net.Dns]::GetHostByName($env:computerName).HostName
-    $Thumbprint = (New-SelfSignedCertificate -Subject "CN=$Hostname" -TextExtension '2.5.29.37={text}1.3.6.1.5.5.7.3.1').Thumbprint
-    $A = '@{Hostname="'+$Hostname+'"; CertificateThumbprint="'+$Thumbprint+'"}'
-    winrm create winrm/config/Listener?Address=*+Transport=HTTPS $A
+         
+         winrm quickconfig -force
+         Enable-PSRemoting -force
+
+  3. Allow non-SSL (unencrypted) traffic on port 5985:
 
 Copy
 
-    
-    
-    New-NetFirewallRule -DisplayName "WinRM" -Group "Windows Remote Management" -Program "System" `
-      -Protocol TCP -LocalPort "5985" -Profile Domain,Private
-    New-NetFirewallRule -DisplayName "WinRM" -Group "Windows Remote Management" -Program "System" `
-      -Protocol TCP -LocalPort "5985" -Profile Public
-    New-NetFirewallRule -DisplayName "WinRM Secure" -Group "Windows Remote Management" -Program "System" `
-      -Protocol TCP -LocalPort "5986" -Profile Domain,Private
-    New-NetFirewallRule -DisplayName "WinRM Secure" -Group "Windows Remote Management" -Program "System" `
-      -Protocol TCP -LocalPort "5986" -Profile Public
+         
+         winrm set winrm/config/service '@{AllowUnencrypted="true"}'
+         winrm set winrm/config/service/auth '@{Basic="true"}'
+         winrm set winrm/config/client/auth '@{Basic="true"}'
+
+  4. Create a self-signed SSL certificate for encrypted traffic on port 5986:
+
+Copy
+
+         
+         $Hostname = [System.Net.Dns]::GetHostByName($env:computerName).HostName
+         $Thumbprint = (New-SelfSignedCertificate -Subject "CN=$Hostname" -TextExtension '2.5.29.37={text}1.3.6.1.5.5.7.3.1').Thumbprint
+         $A = '@{Hostname="'+$Hostname+'"; CertificateThumbprint="'+$Thumbprint+'"}'
+         winrm create winrm/config/Listener?Address=*+Transport=HTTPS $A
+
+  5. Create Windows Firewall rules to allow inbound traffic on ports 5985 (non-SSL) and 5986 (SSL):
+
+Copy
+
+         
+         New-NetFirewallRule -DisplayName "WinRM" -Group "Windows Remote Management" -Program "System" `
+           -Protocol TCP -LocalPort "5985" -Profile Domain,Private
+         New-NetFirewallRule -DisplayName "WinRM" -Group "Windows Remote Management" -Program "System" `
+           -Protocol TCP -LocalPort "5985" -Profile Public
+         New-NetFirewallRule -DisplayName "WinRM Secure" -Group "Windows Remote Management" -Program "System" `
+           -Protocol TCP -LocalPort "5986" -Profile Domain,Private
+         New-NetFirewallRule -DisplayName "WinRM Secure" -Group "Windows Remote Management" -Program "System" `
+           -Protocol TCP -LocalPort "5986" -Profile Public
+
+After running this script, WinRM will be configured to allow both unencrypted
+(port 5985) and encrypted (port 5986) remote connections. Additionally,
+Windows Firewall rules will be created to allow inbound traffic on these
+ports.
+
+From a Windows server, you can test the connectivity to the target machine
+through PowerShell:
 
 Copy
 
@@ -546,15 +514,42 @@ Copy
     
     Test-NetConnection -ComputerName <host> -Port <port>
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
-
-# Setting up WinRM
-
-Example guide for setting up WinRM on target machines
-
 [PreviousSetting up SSH](/en/keeperpam/privileged-access-
 manager/references/setting-up-ssh)[NextSetting up SQL
 Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-
 server)
+
+Last updated 5 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

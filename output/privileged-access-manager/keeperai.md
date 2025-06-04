@@ -395,36 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview
@@ -456,9 +426,39 @@ AI-powered threat detection for KeeperPAM privileged sessions
 manager/discovery/discovery-using-the-vault)[NextOn-Prem Connection
 Manager](/en/keeperpam/privileged-access-manager/on-prem-connection-manager)
 
-Last updated 4 days ago
+Last updated 5 days ago
 
 Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 ##
 
@@ -568,29 +568,55 @@ Docs
 
 Azure AI Foundry
 
+[Azure AI Foundry](https://ai.azure.com/)
+
 Cerebras
+
+[Cerebras](https://inference-docs.cerebras.ai/resources/openai)
 
 Groq
 
+[Groq](https://groq.com/)
+
 Hugging Face
+
+[Hugging Face](https://huggingface.co/inference-endpoints/dedicated)
 
 Keywords AI
 
+[Keywords AI](https://www.keywordsai.co/)
+
 LitelLLM
+
+[LiteLLM](https://www.litellm.ai/)
 
 LM Studio
 
+[LM Studio](https://lmstudio.ai/docs)
+
 Ollama
+
+[Ollama](https://ollama.com/)
 
 OpenRouter
 
+[OpenRouter](https://openrouter.ai/)
+
 Tinfoil
+
+[Tinfoil](https://tinfoil.sh/)
 
 TogetherAI
 
+[TogetherAI](https://www.together.ai/)
+
 Unify AI
 
+[Unify AI](https://www.unify.ai/)
+
 vLLM
+
+[vLLM](https://docs.vllm.ai/)
 
 **Configuration**
 
@@ -618,7 +644,11 @@ applications using AWS tools without having to manage any infrastructure.
 
   1. Ensure that the IAM role for the Gateway has the `AmazonBedrockFullAccess` policy attached
 
-  2.   3.   4. Configure the Gateway with the following environment variables for the gateway service in your Docker Compose file:
+  2. [Request access](https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started.html#getting-started-model-access) through AWS Console to an Amazon Bedrock foundation model
+
+  3. Select a model from the [supported list](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html) and note the corresponding model ID.
+
+  4. Configure the Gateway with the following environment variables for the gateway service in your Docker Compose file:
 
 Copy
 
@@ -631,6 +661,9 @@ Copy
 Anthropic
 
 **Configuration**
+
+Before you begin, [create an API key in the Anthropic
+Console](https://console.anthropic.com/settings/keys).
 
   1. Configure the Gateway with the following environment variables for the gateway service in your Docker Compose file:
 
@@ -646,6 +679,9 @@ Copy
 Google AI: Gemini
 
 **Configuration**
+
+Before you begin, [create an API key in the Google AI
+dashboard](https://aistudio.google.com/apikey).
 
   1. Configure the Gateway with the following environment variables for the gateway service in your Docker Compose file:
 
@@ -670,7 +706,9 @@ Copy
     
     gcloud auth application-default login --project MY_PROJECT_ID
 
-  *   * 
+  * If you’re using Google Cloud [application default credentials](https://cloud.google.com/docs/authentication/application-default-credentials), you can expect authentication to work out of the box.
+
+  * Setting [`options.credentials`](https://docs.boundaryml.com/ref/llm-client-providers/google-vertex#credentials) will take precedence and force `vertex-ai` to load service account credentials from that file path.
 
 **Configuration**
 
@@ -688,6 +726,9 @@ Copy
 OpenAI
 
 **Configuration**
+
+Before you begin, [create an API key in the Open AI Platform
+dashboard](https://platform.openai.com/api-keys).
 
   1. Configure the Gateway with the following environment variables for the gateway service in your Docker Compose file:
 
@@ -826,70 +867,6 @@ logic.
 **Q: How does KeeperAI handle sensitive information?** A: In a later release,
 KeeperAI will include Personally Identifiable Information (PII) detection and
 removal from session summaries.
-
-through AWS Console to an Amazon Bedrock foundation model
-
-Select a model from the  and note the corresponding model ID.
-
-Before you begin, .
-
-Before you begin, .
-
-If you’re using Google Cloud , you can expect authentication to work out of
-the box.
-
-Setting  will take precedence and force `vertex-ai` to load service account
-credentials from that file path.
-
-Before you begin, .
-
-[Request access](https://docs.aws.amazon.com/bedrock/latest/userguide/getting-
-started.html#getting-started-model-access)
-
-[supported list](https://docs.aws.amazon.com/bedrock/latest/userguide/models-
-supported.html)
-
-[create an API key in the Anthropic
-Console](https://console.anthropic.com/settings/keys)
-
-[create an API key in the Google AI
-dashboard](https://aistudio.google.com/apikey)
-
-[application default
-credentials](https://cloud.google.com/docs/authentication/application-default-
-credentials)
-
-[`options.credentials`](https://docs.boundaryml.com/ref/llm-client-
-providers/google-vertex#credentials)
-
-[create an API key in the Open AI Platform
-dashboard](https://platform.openai.com/api-keys)
-
-[Azure AI Foundry](https://ai.azure.com/)
-
-[Cerebras](https://inference-docs.cerebras.ai/resources/openai)
-
-[Groq](https://groq.com/)
-
-[Hugging Face](https://huggingface.co/inference-endpoints/dedicated)
-
-[Keywords AI](https://www.keywordsai.co/)
-
-[LiteLLM](https://www.litellm.ai/)
-
-[LM Studio](https://lmstudio.ai/docs)
-
-[Ollama](https://ollama.com/)
-
-[OpenRouter](https://openrouter.ai/)
-
-[Tinfoil](https://tinfoil.sh/)
-
-[TogetherAI](https://www.together.ai/)
-
-[Unify AI](https://www.unify.ai/)
-
-[vLLM](https://docs.vllm.ai/)
 
 KeeperAI in PAM Settings
 

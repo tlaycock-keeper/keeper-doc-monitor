@@ -427,10 +427,25 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Quick Start Wizard
+  * Records Created
+  * Quick Start Video
+  * Screenshots
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=R2Buql2ywlhAxad9Ru4u&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Quick Start: Sandbox
+
+Quickly and easily get started with a pre-configured PAM setup in your vault
+
+[PreviousSetup Steps](/en/keeperpam/privileged-access-manager/setup-
+steps)[NextGetting Started](/en/keeperpam/privileged-access-manager/getting-
+started)
 
 Last updated 3 months ago
 
@@ -453,6 +468,20 @@ minutes.
 Activate KeeperPAM
 
   * Login to the Admin Console in your region:
+
+Region
+
+URL
+
+**US**
+
+**EU**
+
+**AU**
+
+**JP**
+
+**GOV**
 
   * Under **Admin** > **Roles** , create a new role for PAM or modify an existing role
 
@@ -542,43 +571,14 @@ Screenshots
 
 Below are screenshots of the Quick Start Wizard from start to finish.
 
-Region
-
-URL
-
 Login to the . If the policies are active, you'll see a **Secrets Manager**
 tab on the left side.
 
 If necessary, Install Docker per the .
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# Quick Start: Sandbox
-
-Quickly and easily get started with a pre-configured PAM setup in your vault
-
-[PreviousSetup Steps](/en/keeperpam/privileged-access-manager/setup-
-steps)[NextGetting Started](/en/keeperpam/privileged-access-manager/getting-
-started)
-
-  * Quick Start Wizard
-  * Records Created
-  * Quick Start Video
-  * Screenshots
-
 [Keeper Vault](https://keepersecurity.com/vault)
 
 [Docker installation instructions](https://docs.docker.com/engine/install/)
-
-**US**
-
-**EU**
-
-**AU**
-
-**JP**
-
-**GOV**
 
 <https://keepersecurity.com/console>[](https://keepersecurity.com/console)
 

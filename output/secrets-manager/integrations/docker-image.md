@@ -813,14 +813,14 @@ manager/about/terminology#application)
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
 
-[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/exec-command#notation)
-
-[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/exec-command#notation)
-
 [here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface#initialize-the-client-device)
+
+[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/exec-command#notation)
+
+[click here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/exec-command#notation)
 
 Create Record with Secret File Attachments
 

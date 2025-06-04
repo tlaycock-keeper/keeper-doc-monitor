@@ -395,36 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview
@@ -494,6 +464,9 @@ secure retrieval of secrets from Keeper Secrets Manager.
 
   * Supports audit logging, fine-grained access, and secret rotation
 
+For more details, see the [ServiceNow integration](/en/keeperpam/secrets-
+manager/integrations/servicenow) for Keeper Secrets Manager
+
 * * *
 
 ###
@@ -562,6 +535,10 @@ Copy
 This method offers the most flexibility. Any Keeper Commander action can be
 scripted and triggered via the MID Server.
 
+For more information on this method, see the [Keeper
+Commander](/en/keeperpam/commander-cli/overview) setup guide and see the list
+of [available commands](/en/keeperpam/commander-cli/command-reference).
+
 * * *
 
 ###
@@ -601,6 +578,9 @@ API that accepts HTTP commands for executing Keeper actions.
 
 Security note: This API is self-hosted by the customer and should be secured
 with internal-only access and firewall restrictions.
+
+For more information, see the [Commander Service
+Mode](/en/keeperpam/commander-cli/service-mode-rest-api) setup guide.
 
 * * *
 
@@ -653,23 +633,37 @@ manager/references/managing-rotation-via-cli)[NextVendor Privileged Access
 Management](/en/keeperpam/privileged-access-manager/references/vendor-
 privileged-access-management)
 
-Last updated 9 days ago
+Last updated 10 days ago
 
 Was this helpful?
 
-For more details, see the  for Keeper Secrets Manager
+#### Company
 
-For more information on this method, see the  setup guide and see the list of
-.
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-For more information, see the  setup guide.
+#### Support
 
-[ServiceNow integration](/en/keeperpam/secrets-
-manager/integrations/servicenow)
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-[Keeper Commander](/en/keeperpam/commander-cli/overview)
+#### Solutions
 
-[available commands](/en/keeperpam/commander-cli/command-reference)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-[Commander Service Mode](/en/keeperpam/commander-cli/service-mode-rest-api)
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

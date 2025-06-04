@@ -427,10 +427,34 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview 
+  * Summary
+  * Step 1 - Enable Connection Enforcement Policies
+  * Step 2 - Install and configure the Keeper Gateway 
+  * Step 3 - Configuring the PAM Configuration 
+  * Step 4 - Create and Configure PAM Database and PAM User(s) Records
+  * Step 5 - Configuring PAM Settings and MySQL Protocol
+  * Launching Connections
+  * Sharing PAM Database Records
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=hSsg7HrSdkyMBy5bnbxE&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+  3. [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
+
+# MySQL Protocol - MySQL Database
+
+Establish a connection to a MySQL Database directly from your Vault
+
+[PreviousRDP Protocol - Azure Virtual Machine](/en/keeperpam/privileged-
+access-manager/connections/examples/rdp-protocol-azure-virtual-
+machine)[NextPostgreSQL Protocol - PostgreSQL
+Database](/en/keeperpam/privileged-access-
+manager/connections/examples/postgresql-protocol-postgresql-database)
 
 Last updated 3 months ago
 
@@ -466,6 +490,20 @@ Policy
 Definition
 
 Commander CLI
+
+Can configure connection and session recording
+
+Allow users to configure Connection and Session Recordings settings on PAM
+Machine, PAM Directory, PAM Database and PAM Configuration Record Types
+
+Can launch connections
+
+Allow users to launch connections on PAM Machine, PAM Directory, PAM Database
+Record Types
+
+Can view session recordings
+
+Allow users to view Session Recordings
 
 ##
 
@@ -547,29 +585,23 @@ your target infrastructure:
 
 \- The MySQL Database User is configured on this record type
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-  3. [Examples](/en/keeperpam/privileged-access-manager/connections/examples)
+Copy
 
-# MySQL Protocol - MySQL Database
+    
+    
+    ALLOW_CONFIGURE_PAM_CLOUD_CONNECTION_SETTINGS
 
-Establish a connection to a MySQL Database directly from your Vault
+Copy
 
-[PreviousRDP Protocol - Azure Virtual Machine](/en/keeperpam/privileged-
-access-manager/connections/examples/rdp-protocol-azure-virtual-
-machine)[NextPostgreSQL Protocol - PostgreSQL
-Database](/en/keeperpam/privileged-access-
-manager/connections/examples/postgresql-protocol-postgresql-database)
+    
+    
+    ALLOW_LAUNCH_PAM_ON_CLOUD_CONNECTION
 
-  * Overview 
-  * Summary
-  * Step 1 - Enable Connection Enforcement Policies
-  * Step 2 - Install and configure the Keeper Gateway 
-  * Step 3 - Configuring the PAM Configuration 
-  * Step 4 - Create and Configure PAM Database and PAM User(s) Records
-  * Step 5 - Configuring PAM Settings and MySQL Protocol
-  * Launching Connections
-  * Sharing PAM Database Records
+Copy
+
+    
+    
+    ALLOW_VIEW_KCM_RECORDINGS
 
 [Windows Installation](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/windows-installation)
@@ -611,38 +643,6 @@ started/pam-resources/pam-database/example-mysql-database)
 
 [MySQL Connections](/en/keeperpam/privileged-access-
 manager/connections/session-protocols/mysql-connections)
-
-Can configure connection and session recording
-
-Allow users to configure Connection and Session Recordings settings on PAM
-Machine, PAM Directory, PAM Database and PAM Configuration Record Types
-
-Copy
-
-    
-    
-    ALLOW_CONFIGURE_PAM_CLOUD_CONNECTION_SETTINGS
-
-Can launch connections
-
-Allow users to launch connections on PAM Machine, PAM Directory, PAM Database
-Record Types
-
-Copy
-
-    
-    
-    ALLOW_LAUNCH_PAM_ON_CLOUD_CONNECTION
-
-Can view session recordings
-
-Allow users to view Session Recordings
-
-Copy
-
-    
-    
-    ALLOW_VIEW_KCM_RECORDINGS
 
 [PAM Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-
 started/enforcement-policies)

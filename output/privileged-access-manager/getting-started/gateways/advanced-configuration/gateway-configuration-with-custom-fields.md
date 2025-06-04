@@ -395,31 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=0WEWdEWqs0q7rDx9quQB&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-  4. [Advanced Configuration](/en/keeperpam/privileged-access-manager/getting-started/gateways/advanced-configuration)
-
-# Gateway Configuration with Custom Fields
-
-Advanced configuration of the Keeper gateway with Keeper Vault custom fields
-
-[PreviousGateway Configuration with AWS KMS](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/advanced-configuration/gateway-configuration-
-with-aws-kms)[NextPAM Configuration](/en/keeperpam/privileged-access-
-manager/getting-started/pam-configuration)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -449,6 +424,31 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=0WEWdEWqs0q7rDx9quQB&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+  4. [Advanced Configuration](/en/keeperpam/privileged-access-manager/getting-started/gateways/advanced-configuration)
+
+# Gateway Configuration with Custom Fields
+
+Advanced configuration of the Keeper gateway with Keeper Vault custom fields
+
+[PreviousGateway Configuration with AWS KMS](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/advanced-configuration/gateway-configuration-
+with-aws-kms)[NextPAM Configuration](/en/keeperpam/privileged-access-
+manager/getting-started/pam-configuration)
+
+Last updated 4 months ago
+
+Was this helpful?
 
 These configuration capabilities are functional and currently in an
 experimental phase, and we invite users to actively explore and utilize them.

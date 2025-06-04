@@ -455,7 +455,7 @@ manager/connections/session-protocols)[NextRDP
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/rdp-connections)
 
-Last updated 14 days ago
+Last updated 15 days ago
 
 Was this helpful?
 

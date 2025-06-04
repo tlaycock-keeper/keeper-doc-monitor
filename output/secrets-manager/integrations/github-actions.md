@@ -670,6 +670,9 @@ configuration)
 
 [ GitHub repository](https://github.com/Keeper-Security/ksm-action)
 
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
@@ -678,7 +681,4 @@ legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdFl3JIXByC2lADPNH%252F-MkdFyUdRSxjKdJTdIPX%252Fgithub-
 actions-plugin-
 header.jpg%3Falt%3Dmedia%26token%3D22669c6b-a368-4a05-afc6-68f5c86e3769&width=768&dpr=4&quality=100&sign=65467b4a&sv=2)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 

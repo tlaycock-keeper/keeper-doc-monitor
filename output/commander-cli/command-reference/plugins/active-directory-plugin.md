@@ -427,34 +427,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Prerequisites
-  * Prepare Record for Rotation
-  * Create a Record for Rotation
-  * Set the Password Field
-  * Set the Hostname and Port
-  * Add the following required fields
-  * Additional Rotation Settings
-  * Rotate Record
-  * Notes and Troubleshooting:
-  * Connecting to Active Directory
-
 Was this helpful?
 
 [Export as PDF](/en/keeperpam/~gitbook/pdf?page=-Mf3UifEgg4q6ER-
 CAQO&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
-
-# Active Directory Plugin
-
-Active Directory plugin for Keeper Commander rotation
-
-[PreviousWindows Plugin](/en/keeperpam/commander-cli/command-
-reference/plugins/windows-plugin)[NextAutomatic
-Execution](/en/keeperpam/commander-cli/command-reference/plugins/automatic-
-execution)
 
 Last updated 4 months ago
 
@@ -477,12 +453,6 @@ Prerequisites
 ####
 
 Install the ldap3 module
-
-Copy
-
-    
-    
-    pip3 install ldap3
 
 ##
 
@@ -523,20 +493,6 @@ Add the following required fields
 The following fields are required for AD rotation. Create each field with the
 label indicated and supply the required information.
 
-Label
-
-Value
-
-Comment
-
-cmdr:use_ssl
-
-True or False
-
-Whether or not to use SSL connection to AD Server
-
-cmdr:userdn
-
 ###
 
 Additional Rotation Settings
@@ -545,26 +501,6 @@ The following values can customize rotation parameters. Add these options to a
 record as text fields and set the label to correspond to the parameter as
 shown in the table.
 
-Label
-
-Value
-
-Comment
-
-cmdr:plugin
-
-adpasswd
-
-cmdr:host
-
-Host name or IP address of your AD Server
-
-cmdr:port
-
-Optional: Port number of your AD Server. Default value: 389
-
-cmdr:rules
-
 ##
 
 Rotate Record
@@ -572,12 +508,6 @@ Rotate Record
 To rotate Active Directory passwords, use the `rotate` command in Commander.
 Pass the command a record title or UID (or use `--match` with a regular
 expression to rotate several records at once)
-
-Copy
-
-    
-    
-    rotate "AD Password Rotator" --plugin adpasswd
 
 The plugin can be supplied to the command as shown here, or added to a record
 field (see options above). Adding the plugin type to the record makes it
@@ -598,13 +528,6 @@ If you get the error "Error during connection to AD server" try the following:
 
   *   * Check that your Distinguished Name **cmdr:userdn** is set correctly. It needs to be exactly right or else the connection will fail. You can check the value of this from within the Softerra LDAP browser software or you can run the below command prompt utility on the **AD Server:**
 
-Copy
-
-    
-    
-    C:\Users\craig>dsquery user -name Craig*
-    "CN=Craig Lurey,CN=Users,DC=keeper,DC=test,DC=keepersecurity,DC=com"
-
 For connecting as Craig in this scenario, make sure the **cmdr:userdn** custom
 field contains this exact string (without the quotes).
 
@@ -616,12 +539,57 @@ Microsoft Active Directory requires SSL connection in order to change the
 password. The following link explains how to setup a secure connection to
 Active Directory
 
-of the AD user you want to rotate the password on.
+Label
 
-Optional
+Value
+
+Comment
+
+Label
+
+Value
+
+Comment
 
 Verify connectivity to the host server, make sure it is accessible. Download a
 tool such as the  to test if you're able to connect to Active Directory.
+
+Copy
+
+    
+    
+    rotate "AD Password Rotator" --plugin adpasswd
+
+Copy
+
+    
+    
+    C:\Users\craig>dsquery user -name Craig*
+    "CN=Craig Lurey,CN=Users,DC=keeper,DC=test,DC=keepersecurity,DC=com"
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
+
+# Active Directory Plugin
+
+Active Directory plugin for Keeper Commander rotation
+
+[PreviousWindows Plugin](/en/keeperpam/commander-cli/command-
+reference/plugins/windows-plugin)[NextAutomatic
+Execution](/en/keeperpam/commander-cli/command-reference/plugins/automatic-
+execution)
+
+  * Prerequisites
+  * Prepare Record for Rotation
+  * Create a Record for Rotation
+  * Set the Password Field
+  * Set the Hostname and Port
+  * Add the following required fields
+  * Additional Rotation Settings
+  * Rotate Record
+  * Notes and Troubleshooting:
+  * Connecting to Active Directory
 
 [Softerra LDAP Browser](http://www.ldapadministrator.com/download.htm)
 
@@ -630,17 +598,49 @@ by-step-guide-to-setup-ldaps-on-windows-
 server/>[](https://blogs.msdn.microsoft.com/microsoftrservertigerteam/2017/04/10/step-
 by-step-guide-to-setup-ldaps-on-windows-server/)
 
-[Distinguished name](https://msdn.microsoft.com/en-
-us/library/windows/desktop/aa366101.aspx)
+cmdr:use_ssl
 
-[password complexity rules](https://github.com/Keeper-
-Security/Commander/tree/master/keepercommander/plugins/password_rules.md)
+True or False
+
+Whether or not to use SSL connection to AD Server
+
+cmdr:userdn
+
+cmdr:plugin
+
+adpasswd
+
+cmdr:host
+
+Host name or IP address of your AD Server
+
+cmdr:port
+
+Optional: Port number of your AD Server. Default value: 389
+
+cmdr:rules
+
+Copy
+
+    
+    
+    pip3 install ldap3
 
 [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
 rotation)
 
 [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
 commands)
+
+of the AD user you want to rotate the password on.
+
+Optional
+
+[Distinguished name](https://msdn.microsoft.com/en-
+us/library/windows/desktop/aa366101.aspx)
+
+[password complexity rules](https://github.com/Keeper-
+Security/Commander/tree/master/keepercommander/plugins/password_rules.md)
 
 [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
 cli#typed-vs-untyped-records-v3-vs-v2)

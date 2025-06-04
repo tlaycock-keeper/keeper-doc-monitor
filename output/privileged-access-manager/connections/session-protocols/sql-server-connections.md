@@ -427,12 +427,32 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview 
+  * Prerequisites
+  * PAM Settings - SQL Server Protocol
+  * Accessing Connection Settings
+  * Configuring Connection Settings
+  * Session Recordings - SQL Server Protocol
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=nNCtbGpBTPBs4P9i3Qv3&only=yes&limit=100)
 
-Last updated 5 days ago
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
+
+# SQL Server Connections
+
+Keeper Connections - SQL Server Protocol
+
+[PreviousMySQL Connections](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/mysql-connections)[NextPostgreSQL
+Connections](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/postgresql-connections)
+
+Last updated 6 days ago
 
 Was this helpful?
 
@@ -459,6 +479,20 @@ protocol:
 PAM Record
 
 Definition
+
+PAM Configuration
+
+The PAM Configuration contains information of your target infrastructure
+
+PAM Database Record
+
+The PAM Database record contains information of the endpoint you want to
+establish an SQL Server protocol connection to.
+
+PAM User Record
+
+The PAM User record contains the SQL Server user credentials that will be used
+to connect to the endpoint
 
 This guide will use a **SQL Database**. This is similar to setting up a MySQL
 database, for more details on how this is setup, visit the following page:
@@ -492,10 +526,6 @@ screen, the following fields are all **required** and need to be configured:
 
 The following table lists all the configurable connection settings for the SQL
 Server protocol on the PAM Settings:
-
-##
-
-Session Recordings - SQL Server Protocol
 
 Field
 
@@ -559,39 +589,9 @@ Can paste from clipboard
 If enabled, user can paste text from local clipboard into the connected
 protocol session
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
+##
 
-# SQL Server Connections
-
-Keeper Connections - SQL Server Protocol
-
-[PreviousMySQL Connections](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/mysql-connections)[NextPostgreSQL
-Connections](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/postgresql-connections)
-
-  * Overview 
-  * Prerequisites
-  * PAM Settings - SQL Server Protocol
-  * Accessing Connection Settings
-  * Configuring Connection Settings
-  * Session Recordings - SQL Server Protocol
-
-PAM Configuration
-
-The PAM Configuration contains information of your target infrastructure
-
-PAM Database Record
-
-The PAM Database record contains information of the endpoint you want to
-establish an SQL Server protocol connection to.
-
-PAM User Record
-
-The PAM User record contains the SQL Server user credentials that will be used
-to connect to the endpoint
+Session Recordings - SQL Server Protocol
 
 [Getting Started page](/en/keeperpam/privileged-access-
 manager/connections/getting-started)
@@ -599,6 +599,17 @@ manager/connections/getting-started)
 [Example: Microsoft SQL Server Database](/en/keeperpam/privileged-access-
 manager/getting-started/pam-resources/pam-database/example-microsoft-sql-
 server-database)
+
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this .
+
+  * Learn more about 
+
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+
+[Session Recording and Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
 
 Field
 
@@ -613,17 +624,6 @@ Administrative Credential Record
 
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
-
-For this protocol, both graphical and the full, raw text text content of
-terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this .
-
-  * Learn more about 
-
-[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
-
-[Session Recording and Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)

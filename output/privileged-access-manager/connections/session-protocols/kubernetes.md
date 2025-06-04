@@ -595,7 +595,7 @@ manager/connections/session-protocols/telnet-connections)[NextRBI
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/rbi-connections)
 
-Last updated 14 days ago
+Last updated 15 days ago
 
 Was this helpful?
 

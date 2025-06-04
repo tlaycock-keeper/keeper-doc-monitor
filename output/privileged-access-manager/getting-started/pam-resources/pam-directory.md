@@ -427,10 +427,31 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * Features Available
+  * Creating a PAM Directory 
+  * PAM Directory Record Type Fields
+  * PAM Settings and Administrative Credentials
+  * PAM Settings
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=AvUEHA7Tb5C1wR6itR5U&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [PAM Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-resources)
+
+# PAM Directory
+
+KeeperPAM resource for managing directory services, either on-prem or in the
+cloud
+
+[PreviousExample: Microsoft SQL Server Database](/en/keeperpam/privileged-
+access-manager/getting-started/pam-resources/pam-database/example-microsoft-
+sql-server-database)[NextPAM Remote Browser](/en/keeperpam/privileged-access-
+manager/getting-started/pam-resources/pam-remote-browser)
 
 Last updated 4 months ago
 
@@ -442,6 +463,14 @@ Overview
 
 A PAM Directory record is a type of KeeperPAM resource that represents an
 Active Directory or OpenLDAP service, either on-prem or hosted in the cloud.
+
+PAM Record Type
+
+Supported Assets
+
+PAM Directory
+
+Active Directory, OpenLDAP
 
 ##
 
@@ -493,60 +522,11 @@ PAM **Directory** Record Type Fields
 The following table lists all the configurable fields on the PAM Directory
 Record Type:
 
-##
-
-PAM Settings and Administrative Credentials
-
-On the "PAM Settings" section of the vault record, you can configure the
-KeeperPAM Connection and Tunnel settings and link a PAM User credential for
-performing rotations and connections. Tunnels do not require a linked
-credential.
-
-###
-
-PAM Settings
-
-Note: PAM User is only required to successfully configure connections and
-rotation, and not required for Tunnels.
-
-**Configuration Steps:**
-
-  1. On the PAM Database record, navigate to the PAM Settings section
-
-  2. Select the PAM Configuration and Administrative Credential Record
-
-  3. To configure Keeper Connections and Keeper Tunnels settings, visit the following page:
-
-     1.      2. 
-
-The following screenshot is a PAM Directory Record with LDAPS rotation, RDP
-connections and LDAPS tunnels enabled:
-
-PAM Record Type
-
-Supported Assets
-
-Connecting to the PAM Directory requires only that the Keeper Gateway has
-access to the target directory service. The Keeper Vault operates
-independently and does not require direct connectivity to the service,
-leveraging Keeper's zero-trust network access model to securely manage access
-through the Gateway. See the  for more details.
-
 Field
 
 Description
 
 Notes
-
-Field
-
-Description
-
-Required
-
-PAM Directory
-
-Active Directory, OpenLDAP
 
 Hostname or IP Address
 
@@ -608,33 +588,24 @@ AWS region of hosted directory
 
 **Required** for directories hosted in AWS Example: `us-east-2`
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [PAM Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-resources)
+##
 
-# PAM Directory
+PAM Settings and Administrative Credentials
 
-KeeperPAM resource for managing directory services, either on-prem or in the
-cloud
+On the "PAM Settings" section of the vault record, you can configure the
+KeeperPAM Connection and Tunnel settings and link a PAM User credential for
+performing rotations and connections. Tunnels do not require a linked
+credential.
 
-[PreviousExample: Microsoft SQL Server Database](/en/keeperpam/privileged-
-access-manager/getting-started/pam-resources/pam-database/example-microsoft-
-sql-server-database)[NextPAM Remote Browser](/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-remote-browser)
+###
 
-  * Overview
-  * Features Available
-  * Creating a PAM Directory 
-  * PAM Directory Record Type Fields
-  * PAM Settings and Administrative Credentials
-  * PAM Settings
+PAM Settings
 
-[network architecture diagram](/en/keeperpam/privileged-access-
-manager/getting-started/architecture/system-architecture)
+Field
 
-[Keeper Connections](/en/keeperpam/privileged-access-manager/connections)
+Description
 
-[Keeper Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
+Required
 
 PAM Configuration
 
@@ -666,7 +637,36 @@ type
 Depends on protocol. We recommend specifying the **Connection Port** at a
 minimum.
 
+Note: PAM User is only required to successfully configure connections and
+rotation, and not required for Tunnels.
+
+**Configuration Steps:**
+
+  1. On the PAM Database record, navigate to the PAM Settings section
+
+  2. Select the PAM Configuration and Administrative Credential Record
+
+  3. To configure Keeper Connections and Keeper Tunnels settings, visit the following page:
+
+     1.      2. 
+
+The following screenshot is a PAM Directory Record with LDAPS rotation, RDP
+connections and LDAPS tunnels enabled:
+
+Connecting to the PAM Directory requires only that the Keeper Gateway has
+access to the target directory service. The Keeper Vault operates
+independently and does not require direct connectivity to the service,
+leveraging Keeper's zero-trust network access model to securely manage access
+through the Gateway. See the  for more details.
+
 See
+
+[network architecture diagram](/en/keeperpam/privileged-access-
+manager/getting-started/architecture/system-architecture)
+
+[Keeper Connections](/en/keeperpam/privileged-access-manager/connections)
+
+[Keeper Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
 
 [session recording](/en/keeperpam/privileged-access-manager/session-recording-
 and-playback)

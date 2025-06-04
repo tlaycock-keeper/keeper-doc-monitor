@@ -457,7 +457,7 @@ started/pam-resources/pam-user)[NextJust-In-Time Access
 (JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-
 access-jit)
 
-Last updated 7 days ago
+Last updated 8 days ago
 
 Was this helpful?
 
