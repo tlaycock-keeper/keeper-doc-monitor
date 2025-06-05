@@ -395,38 +395,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Features Available
-  * Creating a PAM Machine 
-  * PAM Machine Record Type Fields
-  * PAM Settings and Administrative Credentials 
-  * PAM Settings
-  * Examples
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=XTyf98IFn0oRnCoEILhY&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [PAM Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-resources)
-
-# PAM Machine
-
-KeeperPAM resource for managing machines on-prem or in the cloud
-
-[PreviousPAM Resources](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources)[NextExample: Linux Machine](/en/keeperpam/privileged-
-access-manager/getting-started/pam-resources/pam-machine/example-linux-
-machine)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -457,20 +425,23 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=XTyf98IFn0oRnCoEILhY&only=yes&limit=100)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 ##
 
 Overview
 
 A PAM Machine record is a type of KeeperPAM resource that represents a
 workload, such as a Windows or Linux server.
-
-PAM Record Type
-
-Supported Assets
-
-PAM Machine
-
-Windows/macOS/Linux Machines, EC2 Instances, Azure VMs
 
 ##
 
@@ -526,11 +497,85 @@ PAM Machine Record Type Fields
 The following table lists all the configurable fields on the PAM Machine
 Record Type:
 
+##
+
+PAM Settings and Administrative Credentials
+
+On the "PAM Settings" section of the vault record, you can configure the
+KeeperPAM Connection and Tunnel settings and link a PAM User credential for
+performing rotations and connections. Tunnels do not require a linked
+credential.
+
+###
+
+PAM Settings
+
+Below are a couple examples of PAM Machine records with Connections and
+Tunnels activated.
+
+##
+
+Examples
+
+Visit the following pages to set up:
+
+  *   * 
+
+PAM Record Type
+
+Supported Assets
+
+Connecting to the PAM machine requires only that the Keeper Gateway has access
+to the target machine. The Keeper Vault operates independently and does not
+require direct connectivity to the machine, leveraging Keeper's zero-trust
+network access model to securely manage access through the Gateway. See the
+for more details.
+
 Field
 
 Description
 
 Notes
+
+Field
+
+Description
+
+Required
+
+PAM Machine
+
+Windows/macOS/Linux Machines, EC2 Instances, Azure VMs
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [PAM Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-resources)
+
+# PAM Machine
+
+KeeperPAM resource for managing machines on-prem or in the cloud
+
+[PreviousPAM Resources](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources)[NextExample: Linux Machine](/en/keeperpam/privileged-
+access-manager/getting-started/pam-resources/pam-machine/example-linux-
+machine)
+
+  * Overview
+  * Features Available
+  * Creating a PAM Machine 
+  * PAM Machine Record Type Fields
+  * PAM Settings and Administrative Credentials 
+  * PAM Settings
+  * Examples
+
+[network architecture diagram](/en/keeperpam/privileged-access-
+manager/getting-started/architecture/system-architecture)
+
+[Linux Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine/example-linux-machine)
+
+[Azure Virtual Machine](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-machine/example-azure-windows-vm)
 
 Hostname or IP Address
 
@@ -591,25 +636,6 @@ AWS region of hosted directory
 
 **Required** if AWS Machine
 
-##
-
-PAM Settings and Administrative Credentials
-
-On the "PAM Settings" section of the vault record, you can configure the
-KeeperPAM Connection and Tunnel settings and link a PAM User credential for
-performing rotations and connections. Tunnels do not require a linked
-credential.
-
-###
-
-PAM Settings
-
-Field
-
-Description
-
-Required
-
 PAM Configuration
 
 Associated PAM Configuration record which defines the environment
@@ -640,37 +666,11 @@ type
 Depends on protocol. We recommend specifying the **Connection Port** at a
 minimum.
 
-Below are a couple examples of PAM Machine records with Connections and
-Tunnels activated.
-
-##
-
-Examples
-
-Visit the following pages to set up:
-
-  *   * 
-
-Connecting to the PAM machine requires only that the Keeper Gateway has access
-to the target machine. The Keeper Vault operates independently and does not
-require direct connectivity to the machine, leveraging Keeper's zero-trust
-network access model to securely manage access through the Gateway. See the
-for more details.
-
 **Required** Visit this  for more details
 
 **Required** Visit this  for more details
 
 See
-
-[network architecture diagram](/en/keeperpam/privileged-access-
-manager/getting-started/architecture/system-architecture)
-
-[Linux Machine](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine/example-linux-machine)
-
-[Azure Virtual Machine](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-machine/example-azure-windows-vm)
 
 [session recording](/en/keeperpam/privileged-access-manager/session-recording-
 and-playback)

@@ -675,14 +675,14 @@ keys.html)
 [Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
 notation)
 
+[`sync` command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface/sync-command)
+
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
-
-[`sync` command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface/sync-command)
 
 AWS Credentials Record Type Definition
 

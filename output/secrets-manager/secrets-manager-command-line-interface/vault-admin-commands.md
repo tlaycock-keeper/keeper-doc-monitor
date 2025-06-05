@@ -444,7 +444,7 @@ command-line-interface/version-command)[NextDocker
 Container](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/docker-container)
 
-Last updated 12 months ago
+Last updated 1 year ago
 
 Was this helpful?
 

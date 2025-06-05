@@ -454,7 +454,7 @@ Protect Secrets Manager connection details with Oracle Key Vault
 deploy)[NextPowerShell Plugin](/en/keeperpam/secrets-
 manager/integrations/powershell-plugin)
 
-Last updated 1 month ago
+Last updated 17 hours ago
 
 Was this helpful?
 
@@ -632,7 +632,7 @@ Copy
 
     
     
-    pip3 install keeper-secrets-manager-storage
+    pip3 install keeper-secrets-manager-storage-oracle-kms
 
 oci is a prerequisite for the Oracle Key Vault integration. Install it to your
 machine using pip.
@@ -805,7 +805,7 @@ Copy
 
     
     
-    from keeper_secrets_manager_storage.storage_oci_key_management import  OracleKeyValueStorage,OCISessionConfig
+    from keeper_secrets_manager_storage_oracle_kms import OracleKeyValueStorage, OCISessionConfig
     from keeper_secrets_manager_core import SecretsManager
     config_file_location = "/home/<user>/.oci/config"
     profile = "DEFAULT"
@@ -815,7 +815,7 @@ Copy
     key_version_id = "<key_version_id>"
     config_path = "<path to config json>"
     one_time_token = "<Keeper One Time Token>"
-    oci_session_config = OCISessionConfig(config_file_location, profile, kms_crypto_endpoint, kms_mgmt_endpoint)
+    oci_session_config = OCISessionConfig(config_file_location, profile, kms_crypto_endpoint, kms_management_endpoint)
     storage = OracleKeyValueStorage(key_id=key_id, key_version=key_version_id, config_file_location=config_path, oci_session_config=oci_session_config,logger=None)
     secrets_manager = SecretsManager(one_time_token,config=storage)
     all_records = secrets_manager.get_secrets()

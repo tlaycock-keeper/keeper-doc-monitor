@@ -395,6 +395,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * About
@@ -433,36 +463,6 @@ Last updated 6 months ago
 
 Was this helpful?
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 ##
 
 About
@@ -488,15 +488,11 @@ Features
 
 Prerequisites
 
-  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
-
-    * Secrets Manager add-on enabled for your Keeper subscription
+  *     * Secrets Manager add-on enabled for your Keeper subscription
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
-
-    * The TeamCity plugin accepts Base 64 format configurations
+  *     *   *     * The TeamCity plugin accepts Base 64 format configurations
 
 ##
 
@@ -518,15 +514,13 @@ Installing Plugin from JetBrains Plugins Repository
 
 Installing Plugin via Web UI
 
-  * Download the latest version of TeamCity KSM plugin ZIP file from [here](https://github.com/Keeper-Security/secrets-manager-teamcity/releases/latest).
-
-  * Go to the **Administration | Plugins** page and upload the plugin ZIP archive from your local machine using the corresponding link.
+  *   * Go to the **Administration | Plugins** page and upload the plugin ZIP archive from your local machine using the corresponding link.
 
 ###
 
 Installing Plugin Manually
 
-  * Copy the ZIP plugin package into the`<`[`TeamCity Data Directory`](https://www.jetbrains.com/help/teamcity/teamcity-data-directory.html)`>/plugins` directory. If you have an earlier version of the plugin in the directory _(though the plugin package can be named differently)_ , remove it.
+  * 
 
 ###
 
@@ -546,7 +540,7 @@ Uninstalling Plugin via Web UI
 
 Uninstalling Plugin Manually﻿
 
-  * Remove the plugin package from the `<`[`TeamCity Data Directory`](https://www.jetbrains.com/help/teamcity/teamcity-data-directory.html)`>/plugins` directory and restart the TeamCity server.
+  * 
 
 ##
 
@@ -569,9 +563,7 @@ and configure it as described below.
 
   * Select **Keeper Vault** as the connection type.
 
-  * Specify the token - paste a valid KSM config _(see_[ _Prerequisites_](/en/keeperpam/secrets-manager/integrations/teamcity#prerequisites) _)_.
-
-  * Save the connection.
+  *   * Save the connection.
 
 ###
 
@@ -581,7 +573,7 @@ To consume Keeper vault secrets from your TeamCity server, you will need to:
 
   * Create a secret in Keeper vault and share it to the corresponding KSM Application
 
-  * Configure a TeamCity parameter that resolves the secret using [Secrets Manager Notation URIs](https://docs.keeper.io/secrets-manager/secrets-manager/about/keeper-notation)
+  * 
 
 ###
 
@@ -632,9 +624,7 @@ step.
 
   6. Click **Add build step**.
 
-  7. Choose the [Command Line](https://www.jetbrains.com/help/teamcity/command-line.html) runner type.
-
-  8. In the **Custom script** field, enter the following command: `echo UserName %env.username%`
+  7.   8. In the **Custom script** field, enter the following command: `echo UserName %env.username%`
 
 For a build, this command will be resolved as follows _(note that actual value
 is masked in logs but used in actual commands):_
@@ -656,9 +646,50 @@ variables etc. _Check the examples below._
 
   * Environment variable `env.Secret` \- `keeper://MyRecord1/custom_field/Secret1`
 
+Keeper Secrets Manager access (See the  for more details)
+
 A Keeper  with secrets shared to it
 
 See the  for instructions on creating an Application
+
+An initialized Keeper
+
+Download the latest version of TeamCity KSM plugin ZIP file from .
+
+Copy the ZIP plugin package into the`<``>/plugins` directory. If you have an
+earlier version of the plugin in the directory _(though the plugin package can
+be named differently)_ , remove it.
+
+Remove the plugin package from the `<``>/plugins` directory and restart the
+TeamCity server.
+
+Specify the token - paste a valid KSM config _(see_ _)_.
+
+Configure a TeamCity parameter that resolves the secret using
+
+Choose the  runner type.
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+[Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration)
+
+[here](https://github.com/Keeper-Security/secrets-manager-
+teamcity/releases/latest)
+
+[`TeamCity Data Directory`](https://www.jetbrains.com/help/teamcity/teamcity-
+data-directory.html)
+
+[`TeamCity Data Directory`](https://www.jetbrains.com/help/teamcity/teamcity-
+data-directory.html)
+
+[Secrets Manager Notation URIs](https://docs.keeper.io/secrets-
+manager/secrets-manager/about/keeper-notation)
+
+[Command Line](https://www.jetbrains.com/help/teamcity/command-line.html)
+
+[_Prerequisites_](/en/keeperpam/secrets-
+manager/integrations/teamcity#prerequisites)
 
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)

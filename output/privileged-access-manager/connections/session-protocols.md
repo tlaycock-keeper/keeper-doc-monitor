@@ -445,7 +445,7 @@ manager/connections/getting-started)[NextSSH
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/ssh-connections)
 
-Last updated 15 days ago
+Last updated 16 days ago
 
 Was this helpful?
 

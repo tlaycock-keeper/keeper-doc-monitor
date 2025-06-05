@@ -454,7 +454,7 @@ Protect Secrets Manager connection details with Google Cloud Key Management
 manager/integrations/gcp-secret-manager)[NextHashicorp
 Vault](/en/keeperpam/secrets-manager/integrations/hashicorp-vault)
 
-Last updated 4 days ago
+Last updated 20 hours ago
 
 Was this helpful?
 
@@ -648,7 +648,7 @@ Copy
 
     
     
-    pip3 install keeper-secrets-manager-storage
+    pip3 install keeper-secrets-manager-storage-gcp-kms
 
 The Secrets Manager Google Cloud Key Management module can be installed using
 dotnet nuget package manager.
@@ -788,17 +788,23 @@ Copy
 
     
     
-    from keeper_secrets_manager_storage.storage_gcp_kms import GCPKeyConfig, GCPKeyValueStorage,GCPKMSClientConfig
+    from keeper_secrets_manager_storage_gcp_kms import GCPKeyConfig, GCPKeyValueStorage, GCPKMSClientConfig
     from keeper_secrets_manager_core import SecretsManager
+    
+    # Example key: projects/<project>/locations/<location>/keyRings/<keyring>/cryptoKeys/<key_name>/cryptoKeyVersions/<version>
     gcp_key_config_1 = GCPKeyConfig("<key_resource_uri_1>")
-    gcp_key_config_2 = GCPKeyConfig("<key_resource_uri_1>")
+    gcp_key_config_2 = GCPKeyConfig("<key_resource_uri_2>")
+    
     gcp_cred_file_location_with_name = "<path_with_name_of_gcp_cred_file.json>"
     gcp_session_config = GCPKMSClientConfig().create_client_from_credentials_file(gcp_cred_file_location_with_name)
+    
     config_path = "ksm_config.json"
     one_time_token = "<one_time_token>"
-    storage = GCPKeyValueStorage(config_path, gcp_key_config_2, gcp_session_config)
-    secrets_manager = SecretsManager(token=one_time_token,config=storage)
+    
+    storage = GCPKeyValueStorage(config_path, gcp_key_config_1, gcp_session_config)
+    secrets_manager = SecretsManager(token=one_time_token, config=storage)
     all_records = secrets_manager.get_secrets()
+    
     first_record = all_records[0]
     print(first_record)
 
@@ -929,11 +935,9 @@ Copy
 
     
     
-    storage = GCPKeyValueStorage(config_path, gcp_key_config_2, gcp_session_config)
-    storage.change_key(gcp_key_config_2)
-    gcp_key_config_2 = "<new key id>"
-    isChanged = storage.change_key(gcp_key_config_2)
-    print("Key is changed " + isChanged)
+    storage = GCPKeyValueStorage(config_path, gcp_key_config_1, gcp_session_config)
+    is_changed = storage.change_key(gcp_key_config_2)
+    print("Key is changed:", is_changed)
 
 Copy
 
@@ -999,11 +1003,14 @@ Copy
 
     
     
-    storage = GCPKeyValueStorage(config_path, gcp_key_config_2, gcp_session_config)ig_file_location=config_path, oci_session_config=oci_session_config,logger=None)
-    plaintext = storage.decrypt_config(False) # Set false as a parameter to extract only plaintext.
+    storage = GCPKeyValueStorage(config_path, gcp_key_config_1, gcp_session_config)
+    
+    # Extract only plaintext
+    plaintext = storage.decrypt_config(False)
     print(plaintext)
-    # OR 
-    plaintext = storage.decrypt_config(True) # Set true as a parameter to extract plaintext and save config as a plaintext.
+    
+    # OR extract plaintext and save config as plaintext
+    plaintext = storage.decrypt_config(True)
     print(plaintext)
 
 Copy

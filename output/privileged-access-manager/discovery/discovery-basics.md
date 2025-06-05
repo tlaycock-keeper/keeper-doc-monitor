@@ -458,7 +458,7 @@ Setting up KeeperPAM for Discovery
 manager/discovery)[NextDiscovery using Commander](/en/keeperpam/privileged-
 access-manager/discovery/discovery-using-commander)
 
-Last updated 7 days ago
+Last updated 8 days ago
 
 Was this helpful?
 

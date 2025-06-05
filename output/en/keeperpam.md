@@ -395,6 +395,30 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * About this Documentation
+  * KeeperPAM vs. Keeper Connection Manager
+  * Features
+  * Contact the Keeper Team
+  * Next Steps
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-MJXO_hpAODecU2amxqS&only=yes&limit=100)
+
+# KeeperPAM
+
+KeeperPAM is a modern, cloud-based Privileged Access Manager
+
+[NextSetup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
+
+Last updated 1 month ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -425,30 +449,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-  * Overview
-  * About this Documentation
-  * KeeperPAM vs. Keeper Connection Manager
-  * Features
-  * Contact the Keeper Team
-  * Next Steps
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-MJXO_hpAODecU2amxqS&only=yes&limit=100)
-
-# KeeperPAM
-
-KeeperPAM is a modern, cloud-based Privileged Access Manager
-
-[NextSetup Steps](/en/keeperpam/privileged-access-manager/setup-steps)
-
-Last updated 1 month ago
-
-Was this helpful?
-
 ##
 
 Overview
@@ -464,7 +464,7 @@ unified product.
 
 To learn more about KeeperPAM or sign up for a trial:
 
-  * 
+  * [**KeeperPAM Website**](https://www.keepersecurity.com/privileged-access-management/)
 
 ###
 
@@ -472,11 +472,21 @@ About this Documentation
 
 This documentation is broken out into the following sections:
 
-  *   *   *   * 
+  * [Privileged Access Manager](/en/keeperpam/privileged-access-manager/setup-steps)
+
+  * [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager/overview)
+
+  * [Secrets Manager](/en/keeperpam/secrets-manager/overview)
+
+  * [Commander CLI](/en/keeperpam/commander-cli/overview)
 
 Additional documentation on the Keeper platform can be found here:
 
-  *   *   * 
+  * [Enterprise Admin Guide](https://docs.keeper.io/en/enterprise-guide)
+
+  * [Keeper Connection Manager (self-hosted)](https://docs.keeper.io/en/keeper-connection-manager)
+
+  * [Documentation Home](https://docs.keeper.io/en)
 
 ##
 
@@ -537,7 +547,7 @@ Contact the Keeper Team
 If you are an existing customer, your customer success team can activate
 KeeperPAM in your account.
 
-  * 
+  * [Contact our team](https://www.keepersecurity.com/contact.html?t=b&r=sales)
 
 For technical questions, you can also email **pam@keepersecurity.com**.
 
@@ -545,43 +555,11 @@ For technical questions, you can also email **pam@keepersecurity.com**.
 
 Next Steps
 
-  *   *   * 
+  * [Start the setup](/en/keeperpam/privileged-access-manager/setup-steps) of KeeperPAM
 
-of KeeperPAM
+  * Launch the [Quick Start: Sandbox](/en/keeperpam/privileged-access-manager/quick-start-sandbox)
 
-Launch the
-
-Deep dive into the
-
-[**KeeperPAM Website**](https://www.keepersecurity.com/privileged-access-
-management/)
-
-[Privileged Access Manager](/en/keeperpam/privileged-access-manager/setup-
-steps)
-
-[Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-
-manager/overview)
-
-[Secrets Manager](/en/keeperpam/secrets-manager/overview)
-
-[Commander CLI](/en/keeperpam/commander-cli/overview)
-
-[Enterprise Admin Guide](https://docs.keeper.io/en/enterprise-guide)
-
-[Keeper Connection Manager (self-hosted)](https://docs.keeper.io/en/keeper-
-connection-manager)
-
-[Documentation Home](https://docs.keeper.io/en)
-
-[Contact our team](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-
-[Start the setup](/en/keeperpam/privileged-access-manager/setup-steps)
-
-[Quick Start: Sandbox](/en/keeperpam/privileged-access-manager/quick-start-
-sandbox)
-
-[Getting Started guide for KeeperPAM](/en/keeperpam/privileged-access-
-manager/getting-started)
+  * Deep dive into the [Getting Started guide for KeeperPAM](/en/keeperpam/privileged-access-manager/getting-started)
 
 KeeperPAM Zero-Trust Platform
 

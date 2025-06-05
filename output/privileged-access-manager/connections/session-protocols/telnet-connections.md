@@ -427,32 +427,12 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview 
-  * Prerequisites
-  * PAM Settings - Configuring Telnet Protocol
-  * Accessing Connection Settings
-  * Configuring Connection Settings
-  * Session Recordings - Telnet Protocol
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=MXC4G5wXaqWiXZDJuEWg&only=yes&limit=100)
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
-
-# Telnet Connections
-
-Keeper Connections - Telnet Protocol
-
-[PreviousVNC Connections](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/vnc-
-connections)[NextKubernetes](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/kubernetes)
-
-Last updated 5 days ago
+Last updated 6 days ago
 
 Was this helpful?
 
@@ -479,20 +459,6 @@ protocol:
 PAM Record
 
 Definition
-
-PAM Configuration
-
-The PAM Configuration contains information of your target infrastructure
-
-PAM Machine Record
-
-The PAM Machine record contains information of the endpoint you want to
-establish an Telnet protocol connection to.
-
-PAM User Record
-
-The PAM User record contains the user credentials that will be used to connect
-to the endpoint
 
 This guide will use a **Linux Machine**. For more details on how this is setup
 on the PAM Machine Record, visit the following page:
@@ -524,6 +490,10 @@ the following fields are all **required** and need to be configured:
 
 The following table lists all the configurable connection settings for the
 Telnet protocol on the PAM Settings:
+
+##
+
+Session Recordings - Telnet Protocol
 
 Field
 
@@ -620,9 +590,39 @@ defaults. Legal values are:
 
 Default value is "white-black"
 
-##
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
 
-Session Recordings - Telnet Protocol
+# Telnet Connections
+
+Keeper Connections - Telnet Protocol
+
+[PreviousVNC Connections](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/vnc-
+connections)[NextKubernetes](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/kubernetes)
+
+  * Overview 
+  * Prerequisites
+  * PAM Settings - Configuring Telnet Protocol
+  * Accessing Connection Settings
+  * Configuring Connection Settings
+  * Session Recordings - Telnet Protocol
+
+PAM Configuration
+
+The PAM Configuration contains information of your target infrastructure
+
+PAM Machine Record
+
+The PAM Machine record contains information of the endpoint you want to
+establish an Telnet protocol connection to.
+
+PAM User Record
+
+The PAM User record contains the user credentials that will be used to connect
+to the endpoint
 
 [Getting Started page](/en/keeperpam/privileged-access-
 manager/connections/getting-started)
@@ -630,22 +630,11 @@ manager/connections/getting-started)
 [Example: Linux Machine](/en/keeperpam/privileged-access-manager/getting-
 started/pam-resources/pam-machine/example-linux-machine)
 
-Telnet Session Recordings
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9sq5XKimBU882wtisft8%252FScreenshot%25202025-01-21%2520at%252012.38.15%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dc796bae2-9fd8-4e7c-af80-af4f7bb4bebf&width=768&dpr=4&quality=100&sign=4c95dded&sv=2)
-
 For this protocol, both graphical and the full, raw text text content of
 terminal sessions, including timing information, are recorded. For more
 information on recordings and how to access these recordings, visit this .
 
   * Learn more about 
-
-[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
-
-[Session Recording and Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
 
 Field
 
@@ -661,6 +650,17 @@ Administrative Credential Record
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
 
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+
+[Session Recording and Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
+
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
+
+Telnet Session Recordings
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9sq5XKimBU882wtisft8%252FScreenshot%25202025-01-21%2520at%252012.38.15%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dc796bae2-9fd8-4e7c-af80-af4f7bb4bebf&width=768&dpr=4&quality=100&sign=4c95dded&sv=2)
 

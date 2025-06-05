@@ -539,7 +539,7 @@ command-line-interface/profile-command)[NextSecret
 Command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/secret-command)
 
-Last updated 12 months ago
+Last updated 1 year ago
 
 Was this helpful?
 

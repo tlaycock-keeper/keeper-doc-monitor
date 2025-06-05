@@ -466,8 +466,6 @@ Console.
 
 SIEM Events
 
-SIEM Event List
-
 ###
 
 Secrets Manager Events
@@ -489,6 +487,8 @@ link](https://docs.keeper.io/enterprise-guide/event-reporting).
 
 [Reporting, Alerts & SIEMEnterprise Guide](https://docs.keeper.io/enterprise-
 guide/event-reporting)
+
+SIEM Event List
 
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F1748446847-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

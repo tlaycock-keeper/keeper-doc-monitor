@@ -678,21 +678,11 @@ interface)
 
 [Keeper Notation](/en/keeperpam/secrets-manager/about/keeper-notation)
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
-
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG6FEOq6NQs-V7faS%252F-MkdGVZHNVs_7DXooyJA%252Fgitlab-
-plugin-
-header.jpg%3Falt%3Dmedia%26token%3D8473ec29-d8e7-4c89-b437-12740e205265&width=768&dpr=4&quality=100&sign=548e4ce&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FMoIVhziuwjV7UcqTqqmk%252Fimage.png%3Falt%3Dmedia%26token%3D3668afc8-81e5-4825-aa44-e76f23e7d5ee&width=768&dpr=4&quality=100&sign=ec2a95cc&sv=2)
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -701,4 +691,14 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FUdGWGw0HP
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYhpG7ahqgd8iL1Gqltkw%252Fimage.png%3Falt%3Dmedia%26token%3D0f3c3393-4db1-4a8c-a10c-c7bb6b6a6a10&width=768&dpr=4&quality=100&sign=b2937de4&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FMoIVhziuwjV7UcqTqqmk%252Fimage.png%3Falt%3Dmedia%26token%3D3668afc8-81e5-4825-aa44-e76f23e7d5ee&width=768&dpr=4&quality=100&sign=ec2a95cc&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG6FEOq6NQs-V7faS%252F-MkdGVZHNVs_7DXooyJA%252Fgitlab-
+plugin-
+header.jpg%3Falt%3Dmedia%26token%3D8473ec29-d8e7-4c89-b437-12740e205265&width=768&dpr=4&quality=100&sign=548e4ce&sv=2)
 

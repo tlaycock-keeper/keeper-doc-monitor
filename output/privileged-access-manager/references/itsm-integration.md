@@ -633,7 +633,7 @@ manager/references/managing-rotation-via-cli)[NextVendor Privileged Access
 Management](/en/keeperpam/privileged-access-manager/references/vendor-
 privileged-access-management)
 
-Last updated 10 days ago
+Last updated 11 days ago
 
 Was this helpful?
 

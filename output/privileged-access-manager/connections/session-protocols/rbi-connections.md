@@ -452,7 +452,7 @@ manager/connections/session-
 protocols/kubernetes)[NextExamples](/en/keeperpam/privileged-access-
 manager/connections/examples)
 
-Last updated 15 days ago
+Last updated 16 days ago
 
 Was this helpful?
 
