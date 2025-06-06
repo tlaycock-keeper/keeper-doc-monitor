@@ -188,6 +188,7 @@ KeeperPAM and Secrets Manager
       * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
       * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
       * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Gateway Network Configuration](/en/keeperpam/privileged-access-manager/references/gateway-network-configuration)
       * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
       * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
       * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
@@ -427,30 +428,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * How does Endpoint Privilege Manager work?
-  * How does the Keeper Agent communicate to the backend service?
-  * Does Keeper have endpoint access?
-  * Do Keeper's servers know what programs my employees are running?
-  * How does Keeper provide Just-in-Time access when approval is required?
-  * How does Keeper provide Just-in-Time access when there is no approval required?
-  * How does Keeper allow users to elevate when they are offline and do not have an internet connection?
-  * Using KeeperPAM, Endpoint Privilege Manager and Microsoft LAPS Together
-  * How can Keeper replace LAPS?
-  * How does KeeperPAM manage credentials on the end-user machines?
-  * What approach does Endpoint Privilege Manager take for securing admin access?
-  * What are the options for using Keeper solutions with or without Microsoft LAPS?
-  * Which approach is recommended for maximum security?
-  * Does Keeper prevent shell escapes and the ability to spawn subprocesses?
-  * Does Keeper centrally manage sudo policies?
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=YWHXoMq4daKex1SrcMQT&only=yes&limit=100)
-
-# FAQs
-
-Frequently Asked Questions regarding Keeper Privilege Manager
 
 ###
 
@@ -657,10 +638,30 @@ usage. The admin can specify if justification is required, MFA required or
 approval required for executing the sudo command. This policy can then be
 applied to collections of users, groups and machines.
 
+Last updated 14 days ago
+
+Was this helpful?
+
+# FAQs
+
+Frequently Asked Questions regarding Keeper Privilege Manager
+
 [PreviousBest Practices](/en/keeperpam/best-practices)[NextSecrets Manager
 Overview](/en/keeperpam/secrets-manager/overview)
 
-Last updated 13 days ago
-
-Was this helpful?
+  * How does Endpoint Privilege Manager work?
+  * How does the Keeper Agent communicate to the backend service?
+  * Does Keeper have endpoint access?
+  * Do Keeper's servers know what programs my employees are running?
+  * How does Keeper provide Just-in-Time access when approval is required?
+  * How does Keeper provide Just-in-Time access when there is no approval required?
+  * How does Keeper allow users to elevate when they are offline and do not have an internet connection?
+  * Using KeeperPAM, Endpoint Privilege Manager and Microsoft LAPS Together
+  * How can Keeper replace LAPS?
+  * How does KeeperPAM manage credentials on the end-user machines?
+  * What approach does Endpoint Privilege Manager take for securing admin access?
+  * What are the options for using Keeper solutions with or without Microsoft LAPS?
+  * Which approach is recommended for maximum security?
+  * Does Keeper prevent shell escapes and the ability to spawn subprocesses?
+  * Does Keeper centrally manage sudo policies?
 

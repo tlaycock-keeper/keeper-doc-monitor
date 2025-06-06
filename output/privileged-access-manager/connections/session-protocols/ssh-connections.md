@@ -188,6 +188,7 @@ KeeperPAM and Secrets Manager
       * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
       * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
       * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Gateway Network Configuration](/en/keeperpam/privileged-access-manager/references/gateway-network-configuration)
       * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
       * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
       * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
@@ -455,7 +456,7 @@ manager/connections/session-protocols)[NextRDP
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/rdp-connections)
 
-Last updated 16 days ago
+Last updated 17 days ago
 
 Was this helpful?
 
@@ -664,11 +665,11 @@ Session Recordings - SSH Protocol
 
 Learn more on how to
 
-[Getting Started page](/en/keeperpam/privileged-access-
-manager/connections/getting-started)
-
 [activate SSH on Windows](/en/keeperpam/privileged-access-
 manager/references/setting-up-ssh#windows)
+
+[Getting Started page](/en/keeperpam/privileged-access-
+manager/connections/getting-started)
 
 Field
 
@@ -684,14 +685,14 @@ Administrative Credential Record
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
 
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
 For this protocol, both graphical and the full, raw text text content of
 terminal sessions, including timing information, are recorded. For more
 information on recordings and how to access these recordings, visit this .
 
   * Learn more about 
+
+[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
 
 [page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
 

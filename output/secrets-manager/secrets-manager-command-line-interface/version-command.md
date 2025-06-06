@@ -188,6 +188,7 @@ KeeperPAM and Secrets Manager
       * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
       * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
       * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Gateway Network Configuration](/en/keeperpam/privileged-access-manager/references/gateway-network-configuration)
       * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
       * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
       * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
@@ -432,12 +433,9 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-Mf8gEh2M4RXzBxdqqHE&only=yes&limit=100)
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
+Last updated 7 months ago
 
-# Version Command
-
-Display Keeper Secrets Manager CLI version information
+Was this helpful?
 
 ##
 
@@ -474,12 +472,15 @@ Copy
     Version 16.6.2 is available for the SDK
     
 
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
+
+# Version Command
+
+Display Keeper Secrets Manager CLI version information
+
 [PreviousConfig Command](/en/keeperpam/secrets-manager/secrets-manager-
 command-line-interface/config-command)[NextMisc
 Commands](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/vault-admin-commands)
-
-Last updated 7 months ago
-
-Was this helpful?
 

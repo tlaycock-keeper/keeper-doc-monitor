@@ -188,6 +188,7 @@ KeeperPAM and Secrets Manager
       * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
       * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
       * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Gateway Network Configuration](/en/keeperpam/privileged-access-manager/references/gateway-network-configuration)
       * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
       * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
       * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
@@ -702,11 +703,11 @@ adc)
 [Keeper Notation documentation](/en/keeperpam/secrets-manager/about/keeper-
 notation)
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
-
 [`sync` command](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/sync-command)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)

@@ -188,6 +188,7 @@ KeeperPAM and Secrets Manager
       * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
       * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
       * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Gateway Network Configuration](/en/keeperpam/privileged-access-manager/references/gateway-network-configuration)
       * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
       * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
       * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
@@ -395,33 +396,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Endpoint Privilege Manager Deployment Best Practices
-  * Phase 1: Foundation and Discovery (Week 1-2)
-  * Phase 2: Gradual Policy Implementation (Week 3-6)
-  * Phase 3: Enforcement and Least Privilege (Week 7-12)
-  * Phase 4: Optimization and Full Deployment (Week 13+)
-  * Key Success Factors
-  * Common Pitfalls to Avoid
-  * Measuring Success
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=kgh9q3gh3j3pfrfOJ2Qb&only=yes&limit=100)
-
-# Best Practices
-
-Implementation of Endpoint Privilege Manager
-
-[PreviousManaging Requests](/en/keeperpam/endpoint-privilege-manager/managing-
-requests)[NextFAQs](/en/keeperpam/faqs)
-
-Last updated 12 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -451,6 +425,33 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Endpoint Privilege Manager Deployment Best Practices
+  * Phase 1: Foundation and Discovery (Week 1-2)
+  * Phase 2: Gradual Policy Implementation (Week 3-6)
+  * Phase 3: Enforcement and Least Privilege (Week 7-12)
+  * Phase 4: Optimization and Full Deployment (Week 13+)
+  * Key Success Factors
+  * Common Pitfalls to Avoid
+  * Measuring Success
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=kgh9q3gh3j3pfrfOJ2Qb&only=yes&limit=100)
+
+# Best Practices
+
+Implementation of Endpoint Privilege Manager
+
+[PreviousManaging Requests](/en/keeperpam/endpoint-privilege-manager/managing-
+requests)[NextFAQs](/en/keeperpam/faqs)
+
+Last updated 13 days ago
+
+Was this helpful?
 
 ##
 

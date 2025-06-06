@@ -188,6 +188,7 @@ KeeperPAM and Secrets Manager
       * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
       * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
       * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Gateway Network Configuration](/en/keeperpam/privileged-access-manager/references/gateway-network-configuration)
       * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
       * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
       * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
@@ -456,7 +457,7 @@ started/gateways/linux-installation)[NextAuto
 Updater](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/auto-updater)
 
-Last updated 2 months ago
+Last updated 6 hours ago
 
 Was this helpful?
 
@@ -748,6 +749,39 @@ account-optional)
 
 [verbose logging](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/windows-installation#verbose-logging)
+
+###
+
+Network Configuration
+
+The Keeper Gateway establishes outbound-only connections and does not require
+any inbound firewall rules. The following outbound connections must be
+allowed:
+
+Destination
+
+Port Needed
+
+More Info
+
+Keeper Cloud _(keepersecurity.[com|eu|com.au|jp|ca|us])_
+
+TLS Port 443
+
+Communicates with Keeper Cloud to access target infrastructure via native
+protocols (e.g., SSH, RDP)
+
+Keeper KRelay Server _(krelay.keepersecurity.[com|eu|com.au|jp|ca|us])_
+
+TCP and UDP opened on Port 3478 Outbound access to TCP and UDP ports 49152
+through 65535
+
+Facilitates secure and encrypted relay connections between end-user's vault
+and target systems via the Gateway
+
+The Gateway preserves zero knowledge by performing all encryption and
+decryption of data locally. Keeper Secrets Manager APIs are used to
+communicate with the Keeper cloud.
 
 Keeper Gateway for Windows
 

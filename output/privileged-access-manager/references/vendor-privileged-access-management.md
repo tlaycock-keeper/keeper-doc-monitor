@@ -188,6 +188,7 @@ KeeperPAM and Secrets Manager
       * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
       * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
       * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Gateway Network Configuration](/en/keeperpam/privileged-access-manager/references/gateway-network-configuration)
       * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
       * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
       * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
@@ -422,7 +423,7 @@ How KeeperPAM provides Vendor Privileged Access (VPAM)
 manager/references/itsm-integration)[NextCommander
 SDK](/en/keeperpam/privileged-access-manager/references/commander-sdk)
 
-Last updated 7 days ago
+Last updated 8 days ago
 
 Was this helpful?
 
@@ -676,6 +677,9 @@ Assign  to the vendor
 **Deploying Keeper Connection Manager (self-hosted)** for remote access with a
 custom interface, session joining and  methods.
 
+[advanced integration](https://docs.keeper.io/en/keeper-connection-
+manager/using-keeper-connection-manager/launching-connections)
+
 [Provision the vendor](https://docs.keeper.io/en/enterprise-guide/user-and-
 team-provisioning)
 
@@ -686,9 +690,6 @@ integration)
 
 [limited admin rights](https://docs.keeper.io/en/enterprise-guide/delegated-
 administration)
-
-[advanced integration](https://docs.keeper.io/en/keeper-connection-
-manager/using-keeper-connection-manager/launching-connections)
 
 Creating a Vendor Node
 

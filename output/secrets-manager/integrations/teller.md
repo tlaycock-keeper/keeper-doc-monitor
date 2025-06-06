@@ -188,6 +188,7 @@ KeeperPAM and Secrets Manager
       * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
       * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
       * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Gateway Network Configuration](/en/keeperpam/privileged-access-manager/references/gateway-network-configuration)
       * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
       * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
       * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
@@ -395,36 +396,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Features
-  * Prerequisites
-  * Setup
-  * Getting a Secrets Manager configuration
-  * Creating a Teller configuration
-  * Running from command line
-  * Using a GitHub Action
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=zMwpu8ckOjBjs8KMgOJM&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Teller
-
-Keeper Secrets Manager integration with Teller for dynamic secrets retrieval
-
-[PreviousTeamCity](/en/keeperpam/secrets-
-manager/integrations/teamcity)[NextTerraform Plugin](/en/keeperpam/secrets-
-manager/integrations/terraform)
-
-Last updated 12 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -455,16 +426,43 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Features
+  * Prerequisites
+  * Setup
+  * Getting a Secrets Manager configuration
+  * Creating a Teller configuration
+  * Running from command line
+  * Using a GitHub Action
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=zMwpu8ckOjBjs8KMgOJM&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Teller
+
+Keeper Secrets Manager integration with Teller for dynamic secrets retrieval
+
+[PreviousTeamCity](/en/keeperpam/secrets-
+manager/integrations/teamcity)[NextTerraform Plugin](/en/keeperpam/secrets-
+manager/integrations/terraform)
+
+Last updated 12 months ago
+
+Was this helpful?
+
 ##
 
 Features
 
-  * Retrieve secrets from the Keeper Vault within [Teller](https://github.com/tellerops/teller) environments
+  * Retrieve secrets from the Keeper Vault within  environments
 
   * Set secret credentials as environment variables in Teller
-
-For a complete list of Keeper Secrets Manager features see the [Overview
-](/en/keeperpam/secrets-manager/overview)
 
 ##
 
@@ -473,15 +471,11 @@ Prerequisites
 This page documents the Secrets Manager Teller integration. In order to
 utilize this integration, you will need:
 
-  * Keeper Secrets Manager access (See the [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide) for more details)
-
-    * Secrets Manager addon enabled for your Keeper account
+  *     * Secrets Manager addon enabled for your Keeper account
 
     * Membership in a Role with the Secrets Manager enforcement policy enabled
 
-  *     *   * An initialized Keeper [Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-manager-configuration)
-
-    * The Teller integration accepts Base64 format configurations
+  *     *   *     * The Teller integration accepts Base64 format configurations
 
 ##
 
@@ -617,15 +611,30 @@ Copy
           - name: Run a Teller task (show, scan, run, etc.)
             run: teller run npm run build
 
+For a complete list of Keeper Secrets Manager features see the
+
+Keeper Secrets Manager access (See the  for more details)
+
 A Keeper  with secrets shared to it
 
 See the  for instructions on creating an Application
 
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
+An initialized Keeper
+
+[Overview ](/en/keeperpam/secrets-manager/overview)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
+
+[Secrets Manager Configuration](/en/keeperpam/secrets-manager/about/secrets-
+manager-configuration)
+
+[Teller](https://github.com/tellerops/teller)
 
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
+
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

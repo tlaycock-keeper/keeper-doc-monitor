@@ -188,6 +188,7 @@ KeeperPAM and Secrets Manager
       * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
       * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
       * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Gateway Network Configuration](/en/keeperpam/privileged-access-manager/references/gateway-network-configuration)
       * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
       * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
       * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
@@ -395,46 +396,27 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
+
+  * Overview 
+  * Prerequisites
+  * PAM Settings - Configuring Telnet Protocol
+  * Accessing Connection Settings
+  * Configuring Connection Settings
+  * Session Recordings - Telnet Protocol
 
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=MXC4G5wXaqWiXZDJuEWg&only=yes&limit=100)
 
-Last updated 6 days ago
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
 
-Was this helpful?
+# Telnet Connections
+
+Keeper Connections - Telnet Protocol
 
 ##
 
@@ -451,7 +433,8 @@ directly to target devices.
 Prerequisites
 
 Prior to following this guide, familiarize yourself with the prerequisites on
-the Connection's .
+the Connection's [Getting Started page](/en/keeperpam/privileged-access-
+manager/connections/getting-started).
 
 The following PAM records are needed in order to successfully setup this
 protocol:
@@ -460,8 +443,25 @@ PAM Record
 
 Definition
 
+PAM Configuration
+
+The PAM Configuration contains information of your target infrastructure
+
+PAM Machine Record
+
+The PAM Machine record contains information of the endpoint you want to
+establish an Telnet protocol connection to.
+
+PAM User Record
+
+The PAM User record contains the user credentials that will be used to connect
+to the endpoint
+
 This guide will use a **Linux Machine**. For more details on how this is setup
 on the PAM Machine Record, visit the following page:
+
+[Example: Linux Machine](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-machine/example-linux-machine)
 
 ##
 
@@ -490,10 +490,6 @@ the following fields are all **required** and need to be configured:
 
 The following table lists all the configurable connection settings for the
 Telnet protocol on the PAM Settings:
-
-##
-
-Session Recordings - Telnet Protocol
 
 Field
 
@@ -590,45 +586,48 @@ defaults. Legal values are:
 
 Default value is "white-black"
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
+##
 
-# Telnet Connections
-
-Keeper Connections - Telnet Protocol
+Session Recordings - Telnet Protocol
 
 [PreviousVNC Connections](/en/keeperpam/privileged-access-
 manager/connections/session-protocols/vnc-
 connections)[NextKubernetes](/en/keeperpam/privileged-access-
 manager/connections/session-protocols/kubernetes)
 
-  * Overview 
-  * Prerequisites
-  * PAM Settings - Configuring Telnet Protocol
-  * Accessing Connection Settings
-  * Configuring Connection Settings
-  * Session Recordings - Telnet Protocol
+Last updated 7 days ago
 
-PAM Configuration
+Was this helpful?
 
-The PAM Configuration contains information of your target infrastructure
+#### Company
 
-PAM Machine Record
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
 
-The PAM Machine record contains information of the endpoint you want to
-establish an Telnet protocol connection to.
+#### Support
 
-PAM User Record
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
 
-The PAM User record contains the user credentials that will be used to connect
-to the endpoint
+#### Solutions
 
-[Getting Started page](/en/keeperpam/privileged-access-
-manager/connections/getting-started)
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
 
-[Example: Linux Machine](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-machine/example-linux-machine)
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 For this protocol, both graphical and the full, raw text text content of
 terminal sessions, including timing information, are recorded. For more

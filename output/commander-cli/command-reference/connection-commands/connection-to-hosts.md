@@ -188,6 +188,7 @@ KeeperPAM and Secrets Manager
       * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
       * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
       * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Gateway Network Configuration](/en/keeperpam/privileged-access-manager/references/gateway-network-configuration)
       * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
       * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
       * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
@@ -427,10 +428,29 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Connect Command 
+  * connect command:
+  * Examples
+  * SSH to a Server via Gateway
+  * SSH using SSH Agent
+  * Remote Desktop (RDP) Launcher Example
+
 Was this helpful?
 
 [Export as PDF](/en/keeperpam/~gitbook/pdf?page=-McBFak3iaiQSfg-
 luNA&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Connection Commands](/en/keeperpam/commander-cli/command-reference/connection-commands)
+
+# Connect Command
+
+Connect to RDP and SSH servers from the Commander CLI
+
+[PreviousRDP](/en/keeperpam/commander-cli/command-reference/connection-
+commands/rdp)[NextSFTP Sync](/en/keeperpam/commander-cli/command-
+reference/connection-commands/sftp-sync)
 
 Last updated 4 months ago
 
@@ -490,10 +510,44 @@ SSH to a Server via Gateway
 In this example, we are showing how to connect to a server through a SSH
 gateway. The following custom fields are set inside a Keeper record:
 
+**Custom Field Name**
+
+**Custom Field Value**
+
+connect:xxx:description
+
+Production Server via Gateway
+
+connect:xxx
+
+ssh -o "ProxyCommand ssh -i ${file:gateway.pem} ec2-user@gateway -W %h:%p" -i
+${file:server.pem} ec2-user@server
+
+File Attachment
+
+gateway.pem
+
+File Attachment
+
+server.pem
+
 `xxx` refers to the friendly name which can be referenced when connecting on
 the command line.
 
 To connect to a server, simply run the below command:
+
+Copy
+
+    
+    
+    My Vault> connect my_server
+    Connecting to my_server...
+    
+    Last login: Sat Sep 28 00:25:34 2019 from 12.23.34.5
+    ec2-user@my_server:~$ 
+    ec2-user@my_server:~$ logout
+    Connection to my_server closed.
+    My Vault>                   
 
 If the SSH private key is encrypted with a passphrase, you will be prompted
 every time to type in the passphrase. To avoid this, we recommend using the
@@ -518,9 +572,33 @@ After the session disconnects, the private key is removed.
 To utilize SSH Agent for connecting to a remote system, simply add one
 additional custom field to the Vault record:
 
+**Custom Field Name**
+
+**Custom Field Value**
+
+connect:xxx:ssh-key:yyy
+
+${zzz} ${password}
+
 or SSH key is stored in the file attachment
 
+**Custom Field Name**
+
+**Custom Field Value**
+
+connect:xxx:ssh-key:yyy
+
+${body:zzz} ${password}
+
 or Reference to the record of SSH Key Type
+
+Custom Field Name
+
+Custom Field Value
+
+connect:xxx:ssh-key:yyy
+
+<RECORD UID>
 
 Here, `xxx` is the friendly name of the connection. `yyy` is an optional key
 name used with the SSH agent. `zzz` references either the custom field (see
@@ -533,6 +611,19 @@ parameter references the passphrase used to encrypt the private key.
 
 Connecting to the remote system using an encrypted passphrase is easy. In our
 example, to connect to the server called "example2":
+
+Copy
+
+    
+    
+    My Vault> connect example2
+    Connecting to example2...
+    
+    Last login: Sat Sep 28 00:25:34 2019 from 12.23.34.5
+    craig@example2:~$ 
+    craig@example2:~$ logout
+    Connection to example2 closed.
+    My Vault>                                     
 
 ####
 
@@ -565,106 +656,6 @@ from the credential manager.
 
 Vault Record Fields:
 
-Note: The Default.rdp file is saved from Remote Desktop Connection with your
-desired configuration.
-
-**Supported parameter substitutions**
-
-You can customize the commands with parameter substitutions described below:
-
-**Listing all available connections**
-
-To get a list of available connections, type:
-
-**Initiating connections**
-
-To initiate a connection (using the SSH/RDP examples) from Commander simply
-type:
-
-or
-
-Alternatively, you can execute the connection from the terminal without the
-interactive shell:
-
-Notes:
-
-  * A single vault record can contain any number of connection references, or the connections can be separated one per record.
-
-  * If a system command requires user interaction (e.g. if a passphrase is included on an SSH key file), Commander will prompt for input.
-
-  * Just like any other Keeper vault record, a connection record can be shared among a team, shared to another Keeper user or remain private.
-
-Custom Field Name
-
-Custom Field Value
-
-**Custom Field Name**
-
-**Custom Field Value**
-
-connect:xxx:description
-
-Production Server via Gateway
-
-connect:xxx
-
-ssh -o "ProxyCommand ssh -i ${file:gateway.pem} ec2-user@gateway -W %h:%p" -i
-${file:server.pem} ec2-user@server
-
-File Attachment
-
-gateway.pem
-
-File Attachment
-
-server.pem
-
-Copy
-
-    
-    
-    My Vault> connect my_server
-    Connecting to my_server...
-    
-    Last login: Sat Sep 28 00:25:34 2019 from 12.23.34.5
-    ec2-user@my_server:~$ 
-    ec2-user@my_server:~$ logout
-    Connection to my_server closed.
-    My Vault>                   
-
-**Custom Field Name**
-
-**Custom Field Value**
-
-connect:xxx:ssh-key:yyy
-
-${zzz} ${password}
-
-**Custom Field Name**
-
-**Custom Field Value**
-
-connect:xxx:ssh-key:yyy
-
-${body:zzz} ${password}
-
-connect:xxx:ssh-key:yyy
-
-<RECORD UID>
-
-Copy
-
-    
-    
-    My Vault> connect example2
-    Connecting to example2...
-    
-    Last login: Sat Sep 28 00:25:34 2019 from 12.23.34.5
-    craig@example2:~$ 
-    craig@example2:~$ logout
-    Connection to example2 closed.
-    My Vault>                                     
-
 **Custom Field Name**
 
 **Custom Field Value**
@@ -689,6 +680,13 @@ File Attachment
 
 Default.rdp
 
+Note: The Default.rdp file is saved from Remote Desktop Connection with your
+desired configuration.
+
+**Supported parameter substitutions**
+
+You can customize the commands with parameter substitutions described below:
+
 Copy
 
     
@@ -701,11 +699,20 @@ Copy
     ${file:<attachment_name>}: Stored in temp file during use and deleted after connection close,
     ${body:<attachment_name>}: Raw content of the attachment file.
 
+**Listing all available connections**
+
+To get a list of available connections, type:
+
 Copy
 
     
     
     My Vault> connect
+
+**Initiating connections**
+
+To initiate a connection (using the SSH/RDP examples) from Commander simply
+type:
 
 Copy
 
@@ -713,11 +720,16 @@ Copy
     
     My Vault> connect my_server
 
+or
+
 Copy
 
     
     
     My Vault> connect rdp_demo
+
+Alternatively, you can execute the connection from the terminal without the
+interactive shell:
 
 Copy
 
@@ -725,24 +737,13 @@ Copy
     
     $ keeper connect my_server
 
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Connection Commands](/en/keeperpam/commander-cli/command-reference/connection-commands)
+Notes:
 
-# Connect Command
+  * A single vault record can contain any number of connection references, or the connections can be separated one per record.
 
-Connect to RDP and SSH servers from the Commander CLI
+  * If a system command requires user interaction (e.g. if a passphrase is included on an SSH key file), Commander will prompt for input.
 
-[PreviousRDP](/en/keeperpam/commander-cli/command-reference/connection-
-commands/rdp)[NextSFTP Sync](/en/keeperpam/commander-cli/command-
-reference/connection-commands/sftp-sync)
-
-  * Connect Command 
-  * connect command:
-  * Examples
-  * SSH to a Server via Gateway
-  * SSH using SSH Agent
-  * Remote Desktop (RDP) Launcher Example
+  * Just like any other Keeper vault record, a connection record can be shared among a team, shared to another Keeper user or remain private.
 
 [KeeperPAM platform](/en/keeperpam)
 

@@ -188,6 +188,7 @@ KeeperPAM and Secrets Manager
       * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
       * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
       * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Gateway Network Configuration](/en/keeperpam/privileged-access-manager/references/gateway-network-configuration)
       * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
       * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
       * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
@@ -419,7 +420,7 @@ Information about Keeper Secrets Manager configuration files
 token)[NextKeeper Notation](/en/keeperpam/secrets-manager/about/keeper-
 notation)
 
-Last updated 4 months ago
+Last updated 5 months ago
 
 Was this helpful?
 
@@ -463,8 +464,7 @@ used to authenticate and decrypt data from the Keeper Secrets Manager APIs.
 
 Secrets Manager configurations are created from [One Time Access
 Tokens](/en/keeperpam/secrets-manager/about/one-time-token) and have a one to
-one relationship with[ client devices](/en/keeperpam/secrets-
-manager/about/terminology#client-device).
+one relationship with.
 
 ####
 
@@ -644,6 +644,9 @@ Copy
 When initializing a configuration in Commander, typically `--unlock-ip` should
 be included in the command. If it is not included, the client device will be
 locked to the IP Address that Commander is using.
+
+[ client devices](/en/keeperpam/secrets-manager/about/terminology#client-
+device)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

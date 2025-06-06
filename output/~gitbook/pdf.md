@@ -87,6 +87,28 @@ Loading...
 
 Loading...
 
+# Architecture
+
+Technical details on the KeeperPAM platform architecture
+
+##
+
+Overview
+
+KeeperPAM is a Zero-Knowledge platform, ensuring that encryption and
+decryption of secrets, connections, and tunnels occur locally on the end
+user's device through the Keeper Vault application. Access to resources in the
+vault is restricted to users with explicitly assigned permissions, enabling
+them to establish sessions or tunnels securely.
+
+Keeper's zero-trust connection technology further enhances security by
+providing restricted and monitored access to target systems without direct
+connectivity, while never exposing underlying credentials or secrets.
+
+This security content will cover the key areas of KeeperPAM:
+
+  *   *   *   *   * 
+
 # Router Security
 
 Security and encryption model of the Keeper Router
@@ -201,28 +223,6 @@ within an encrypted “PAM Configuration” record in the administrator's vault.
 This way, the Keeper vault record knows which Gateway must be used to perform
 the requested rotation, discovery or connection features.
 
-# Architecture
-
-Technical details on the KeeperPAM platform architecture
-
-##
-
-Overview
-
-KeeperPAM is a Zero-Knowledge platform, ensuring that encryption and
-decryption of secrets, connections, and tunnels occur locally on the end
-user's device through the Keeper Vault application. Access to resources in the
-vault is restricted to users with explicitly assigned permissions, enabling
-them to establish sessions or tunnels securely.
-
-Keeper's zero-trust connection technology further enhances security by
-providing restricted and monitored access to target systems without direct
-connectivity, while never exposing underlying credentials or secrets.
-
-This security content will cover the key areas of KeeperPAM:
-
-  *   *   *   *   * 
-
 # Vault Security
 
 Security and encryption model of the Keeper Vault
@@ -239,390 +239,6 @@ devices and endpoints.
   * Data in transit is encrypted with TLS and additional layers of transmission encryption which protects against access MITM, service providers and untrusted networks.
 
 A video covering this model is below.
-
-# Architecture Diagram
-
-Keeper Password Rotation architecture diagram and data flow
-
-##
-
-Architecture Diagram
-
-The KeeperPAM infrastructure and security model ensures zero-knowledge
-encryption between the end-user's device and the target infrastructure.
-Keeper's servers have no ability to decrypt or intercept the underlying
-sessions.
-
-###
-
-Components
-
-####
-
-Keeper Gateway
-
-The Keeper Gateway is a service which is installed into the customer's
-environment and communicates outbound to Keeper services. The Gateway performs
-the rotation, discovery and connections to assets on the network. The Gateway
-receives commands from the Keeper Router, then uses Keeper Secrets Manager
-APIs to authenticate, communicate and decrypt data from the Keeper cloud.
-
-####
-
-Keeper Router
-
-The Keeper Router is infrastructure in Keeper's cloud that manages connections
-between Keeper and Rotation Gateways. The Cloud Router provides real-time
-messaging and communication between the Keeper Vault, customer gateway and
-Keeper backend services.
-
-####
-
-Keeper Relay
-
-####
-
-Keeper Backend API
-
-####
-
-Scheduler
-
-Keeper hosted infrastructure that manages timing and logistics around
-scheduled rotation of credentials across the target infrastructure.
-
-####
-
-Admin Console and Control Plane
-
-The Management console used to set and enforce policies across all Keeper
-components.
-
-####
-
-Client Applications
-
-The end-user interface for managing the vault, rotating passwords, running
-discovery jobs, creating connections and managing tunnels.
-
-###
-
-Data Flow
-
-  1. Keeper user performs action (rotation, connection, tunneling, discovery) from the Vault interface, Admin Console, Commander CLI or other endpoint application.
-
-  2. Keeper Gateway establishes an outbound WebSocket connection to the Keeper Router, receives the requests to perform the action. 
-
-  3. The Vault Client application establishes a WebRTC connection to the customer's hosted Keeper Gateway.
-
-  4. The Keeper Gateway pulls the necessary secrets from the vault using Keeper Secrets Manager APIs.
-
-  5. The Keeper Gateway performs the action on the target infrastructure (such as rotating a credential) and updates the relevant Keeper vault records.
-
-  6. The Keeper Gateway runs any required privilege automation scripts on the Gateway or target machines using native protocols and APIs.
-
-  7. Client devices securely retrieve the updated record using Keeper Secrets Manager APIs.
-
-  8. Vault end-users receive push notifications indicating that new data is available for syncing.
-
-  9. The vault performs encrypted syncing to the Keeper cloud to retrieve the latest record content.
-
-  10. Keeper's Advanced Reporting & Alerts module logs all events and triggers alerts.
-
-# Getting Started
-
-Getting Started with KeeperPAM fundamentals
-
-##
-
-The Basics
-
-  *   *   *   *   *   *   *   *   *   *   *   * 
-
-###
-
-KeeperPAM Features
-
-  *   *   *   *   *   *   *   * 
-
-###
-
-Secrets Manager Features
-
-  *   *   * 
-
-###
-
-Commander CLI Features
-
-  *   *   *   *   *   *   *   *   * 
-
-###
-
-Enterprise Password Manager
-
-  * 
-
-The Gateway retrieves secrets, admin credentials, record details and other
-private data by using . API requests to the Keeper Cloud are sent with a
-Client Device Identifier and a request body that is signed with the Client
-Device Private Key. The server checks the ECDSA signature of the request for
-the given Client Device Identifier using the Client Public Key of the device.
-The Client Device decrypts the ciphertext response from the server with the
-Application Private Key, which decrypts the Record Keys and Shared Folder
-Keys. The Shared Folder Keys decrypt the Record Keys, and the Record Keys
-decrypt the individual Record secrets.
-
-After a rotation or discovery job is complete, the Gateway informs the Router
-that the job is complete.  are triggered by the Router.
-
-A full and detailed disclosure of all encryption related to data at rest, data
-in transit, cloud architecture and certifications can be found on the .
-
-The Keeper Relay is infrastructure in Keeper's cloud that is responsible for
-establishing encrypted  connections between the end-user vault interface and
-the customer-hosted Keeper Gateway service.
-
-Keeper's Backend API is the endpoint which all Keeper client applications
-communicate with. Client applications encrypt data locally and transmit
-encrypted ciphertext to the API in a  format.
-
-[Keeper Secrets Manager
-APIs](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
-manager/developer-sdk-library)
-
-[ARAM event logs](https://docs.keeper.io/en/enterprise-guide/event-reporting)
-
-Architecture Diagram
-
-Vault Security
-
-Router Security
-
-Gateway Security
-
-Connection and Tunnel Security
-
-[Keeper Enterprise Encryption Model
-page](https://docs.keeper.io/en/enterprise-guide/keeper-encryption-model)
-
-[WebRTC](https://en.wikipedia.org/wiki/WebRTC)
-
-[Protocol Buffer](https://en.wikipedia.org/wiki/Protocol_Buffers)
-
-Architecture
-
-Licensing
-
-Enforcement policies
-
-Vault structure
-
-Record Linking
-
-Applications
-
-Devices
-
-Gateways
-
-PAM Configuration
-
-PAM Resources
-
-PAM Users
-
-Sharing and Access Control
-
-[Password Rotation](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
-access-manager/password-rotation)
-
-[Connections](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
-access-manager/connections)
-
-[Tunnels](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
-manager/tunnels)
-
-[Remote Browser Isolation
-(RBI)](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
-manager/remote-browser-isolation)
-
-[Session Recording &
-Playback](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
-manager/session-recording-and-playback)
-
-[SSH Agent](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
-manager/ssh-agent)
-
-[Discovery](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
-manager/discovery)
-
-[On-Prem Connection
-Manager](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
-manager/on-prem-connection-manager)
-
-[Secrets Manager CLI](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
-manager/secrets-manager-command-line-interface)
-
-[Developer SDKs](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
-manager/developer-sdk-library)
-
-[Integrations](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
-manager/integrations)
-
-[Import and Export](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-
-cli/command-reference/import-and-export-commands/import-export-commands)
-
-[Reporting](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-
-cli/command-reference/reporting-commands)
-
-[Enterprise
-Management](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-
-cli/command-reference/enterprise-management-commands)
-
-[Record Management](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-
-cli/command-reference/record-commands)
-
-[Sharing](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-
-cli/command-reference/sharing-commands)
-
-[KeeperPAM Commands](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-
-cli/command-reference/keeperpam-commands)
-
-[Secrets Management
-Commands](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-
-cli/command-reference/secrets-manager-commands)
-
-[MSP Management
-Commands](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-
-cli/command-reference/msp-management-commands)
-
-[Miscellaneous
-Commands](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-
-cli/command-reference/misc-commands)
-
-[Enterprise Admin Guide](https://docs.keeper.io/en/enterprise-guide)
-
-# KeeperPAM Licensing
-
-Features included with the PAM License
-
-##
-
-KeeperPAM Licensing Requirements
-
-In order to enable and use KeeperPAM, the following are required:
-
-  *   *     * A minimum of 5 seats 
-
-A Keeper Business or Keeper Enterprise License is required to purchase the
-KeeperPAM add-on.
-
-###
-
-Trial License
-
-##
-
-Features Included with KeeperPAM
-
-With the purchase of the Privileged Access Manager add-on, the following
-features are included:
-
-  * Secrets Manager - Unlimited API Calls
-
-  * Password Rotation 
-
-  * Connections
-
-  * Tunnels
-
-  * Remote Browser Isolation 
-
-  * Session Recordings and Playback 
-
-  * Discovery 
-
-  * Keeper Connection Manager (Self-Hosted)
-
-  * PAM Audit and Reporting
-
-####
-
-What is the difference between KeeperPAM and Keeper Connection Manager (Self-
-Hosted)?
-
-##
-
-KeeperPAM License Model
-
-The KeeperPAM add-on license includes all the advanced PAM Features. The
-number of licenses for the enterprise license and the KeeperPAM license is
-based on:
-
-License Type
-
-License Model
-
-Business or Enterprise License
-
-Number of Users using the Business or Enterprise Features
-
-Privileged Access Manager Add-On
-
-Number of Users using the Business or Enterprise Features AND PAM Features
-
-####
-
-Example
-
-For example, if an organization has 100 Enterprise users and needs PAM
-functionality for only 10 of them, they would purchase:
-
-  * **100 Keeper Enterprise Licenses** for users who only need the enterprise features.
-
-  * **10 Privileged Access Manager** **Add-Ons** , to cover the 10 users that need PAM functionality.
-
-##
-
-MSPs
-
-##
-
-Existing Customers - Updating KSM/KCM Add-Ons
-
-For existing customers, the following existing Add-ons can be upgraded to the
-Privileged Access Manager Add-On:
-
-  * Keeper Secrets Manager Add-On
-
-  * Keeper Connection Manager Add-On
-
-Both the Keeper Secrets Manager and Keeper Connection Manager Add-Ons are
-included as part of the Privileged Access Manager Add-On.
-
-###
-
-Upgrading from Keeper Secrets Manager Add-On
-
-Upgrading to the Privileged Access Manager Add-On from the Keeper Secrets
-Manager Add-On will give you:
-
-  * Access to new KeeperPAM Features
-
-  * Unlimited API Calls 
-
-###
-
-Upgrading from Keeper Connection Manager Add-On
-
-Upgrading to the Privileged Access Manager Add-On from the Keeper Connection
-Manager Add-On will give you new KeeperPAM Features which includes accessing
-both the cloud and self-hosted KCM.
-
-##
-
-**Ready to Upgrade?**
 
 # Gateway Security
 
@@ -807,6 +423,209 @@ the following parameters:
 After the command is executed, Keeper Gateway clears the command line history
 on Linux and Windows instances.
 
+# Getting Started
+
+Getting Started with KeeperPAM fundamentals
+
+##
+
+The Basics
+
+  *   *   *   *   *   *   *   *   *   *   *   * 
+
+###
+
+KeeperPAM Features
+
+  *   *   *   *   *   *   *   * 
+
+###
+
+Secrets Manager Features
+
+  *   *   * 
+
+###
+
+Commander CLI Features
+
+  *   *   *   *   *   *   *   *   * 
+
+###
+
+Enterprise Password Manager
+
+  * 
+
+The Gateway retrieves secrets, admin credentials, record details and other
+private data by using . API requests to the Keeper Cloud are sent with a
+Client Device Identifier and a request body that is signed with the Client
+Device Private Key. The server checks the ECDSA signature of the request for
+the given Client Device Identifier using the Client Public Key of the device.
+The Client Device decrypts the ciphertext response from the server with the
+Application Private Key, which decrypts the Record Keys and Shared Folder
+Keys. The Shared Folder Keys decrypt the Record Keys, and the Record Keys
+decrypt the individual Record secrets.
+
+After a rotation or discovery job is complete, the Gateway informs the Router
+that the job is complete.  are triggered by the Router.
+
+A full and detailed disclosure of all encryption related to data at rest, data
+in transit, cloud architecture and certifications can be found on the .
+
+The Keeper Gateway is a service that is installed on-premise in order to
+execute rotation, discovery and connection tasks. The Keeper Gateway
+communicates outbound to the Keeper Router using WebSockets and Keeper Secrets
+Manager .
+
+For accessing and decrypting vault records, the Keeper Gateway uses standard
+Keeper Secrets Manager APIs which perform client-side encryption and
+decryption of data. The  ensures least privilege and zero knowledge by
+allocating only specific folders and records that can be decrypted by the
+service. API requests to the Keeper Cloud are sent with a Client Device
+Identifier and a request body that is signed with the Client Device Private
+Key. The server checks the ECDSA signature of the request for the given Client
+Device Identifier using the Client Public Key of the device.
+
+The  passes in the configuration through an environment variable in the Docker
+Compose file.
+
+In AWS environments, the configuration can be .
+
+If a Post-Rotation script requires access to other secrets beyond those passed
+in automatically, users are strongly encouraged to use the  or the  tool.
+
+Architecture Diagram
+
+Vault Security
+
+Router Security
+
+Gateway Security
+
+Connection and Tunnel Security
+
+[Keeper Secrets Manager
+APIs](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
+manager/developer-sdk-library)
+
+[ARAM event logs](https://docs.keeper.io/en/enterprise-guide/event-reporting)
+
+[Keeper Enterprise Encryption Model
+page](https://docs.keeper.io/en/enterprise-guide/keeper-encryption-model)
+
+[zero-knowledge
+protocols](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
+manager/about/security-encryption-model)
+
+[security model of Keeper Secrets
+Manager](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
+manager/about/security-encryption-model)
+
+Docker installation method
+
+protected with the AWS KMS
+
+[Keeper Secrets Manager
+SDKs](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
+manager/developer-sdk-library)
+
+[Secrets Manager CLI](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
+manager/secrets-manager-command-line-interface)
+
+Architecture
+
+Licensing
+
+Enforcement policies
+
+Vault structure
+
+Record Linking
+
+Applications
+
+Devices
+
+Gateways
+
+PAM Configuration
+
+PAM Resources
+
+PAM Users
+
+Sharing and Access Control
+
+[Password Rotation](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
+access-manager/password-rotation)
+
+[Connections](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
+access-manager/connections)
+
+[Tunnels](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/tunnels)
+
+[Remote Browser Isolation
+(RBI)](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/remote-browser-isolation)
+
+[Session Recording &
+Playback](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/session-recording-and-playback)
+
+[SSH Agent](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/ssh-agent)
+
+[Discovery](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/discovery)
+
+[On-Prem Connection
+Manager](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/on-prem-connection-manager)
+
+[Secrets Manager CLI](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
+manager/secrets-manager-command-line-interface)
+
+[Developer SDKs](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
+manager/developer-sdk-library)
+
+[Integrations](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
+manager/integrations)
+
+[Import and Export](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-
+cli/command-reference/import-and-export-commands/import-export-commands)
+
+[Reporting](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-
+cli/command-reference/reporting-commands)
+
+[Enterprise
+Management](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-
+cli/command-reference/enterprise-management-commands)
+
+[Record Management](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-
+cli/command-reference/record-commands)
+
+[Sharing](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-
+cli/command-reference/sharing-commands)
+
+[KeeperPAM Commands](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-
+cli/command-reference/keeperpam-commands)
+
+[Secrets Management
+Commands](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-
+cli/command-reference/secrets-manager-commands)
+
+[MSP Management
+Commands](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-
+cli/command-reference/msp-management-commands)
+
+[Miscellaneous
+Commands](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-
+cli/command-reference/misc-commands)
+
+[Enterprise Admin Guide](https://docs.keeper.io/en/enterprise-guide)
+
 # Connection and Tunnel Security
 
 Security and encryption model of Connections and Tunnels
@@ -851,6 +670,216 @@ When the user establishes a connection or tunnel:
   5. For Tunneling features (port forwarding), a local port is opened up on the local device running Keeper Desktop software. Data sent to the local port is transmitted through the WebRTC connection to the Keeper Gateway and subsequently forwarded to the target endpoint defined in the Keeper record.
 
   6. Session recordings of connections are protected by an AES-256 encryption key ("recording key") which is generated on the Keeper Gateway on every session. The recording key is additionally wrapped by a HKDF-derived AES-256 resource key.
+
+# Architecture Diagram
+
+Keeper Password Rotation architecture diagram and data flow
+
+##
+
+Architecture Diagram
+
+The KeeperPAM infrastructure and security model ensures zero-knowledge
+encryption between the end-user's device and the target infrastructure.
+Keeper's servers have no ability to decrypt or intercept the underlying
+sessions.
+
+###
+
+Components
+
+####
+
+Keeper Gateway
+
+The Keeper Gateway is a service which is installed into the customer's
+environment and communicates outbound to Keeper services. The Gateway performs
+the rotation, discovery and connections to assets on the network. The Gateway
+receives commands from the Keeper Router, then uses Keeper Secrets Manager
+APIs to authenticate, communicate and decrypt data from the Keeper cloud.
+
+####
+
+Keeper Router
+
+The Keeper Router is infrastructure in Keeper's cloud that manages connections
+between Keeper and Rotation Gateways. The Cloud Router provides real-time
+messaging and communication between the Keeper Vault, customer gateway and
+Keeper backend services.
+
+####
+
+Keeper Relay
+
+####
+
+Keeper Backend API
+
+####
+
+Scheduler
+
+Keeper hosted infrastructure that manages timing and logistics around
+scheduled rotation of credentials across the target infrastructure.
+
+####
+
+Admin Console and Control Plane
+
+The Management console used to set and enforce policies across all Keeper
+components.
+
+####
+
+Client Applications
+
+The end-user interface for managing the vault, rotating passwords, running
+discovery jobs, creating connections and managing tunnels.
+
+###
+
+Data Flow
+
+  1. Keeper user performs action (rotation, connection, tunneling, discovery) from the Vault interface, Admin Console, Commander CLI or other endpoint application.
+
+  2. Keeper Gateway establishes an outbound WebSocket connection to the Keeper Router, receives the requests to perform the action. 
+
+  3. The Vault Client application establishes a WebRTC connection to the customer's hosted Keeper Gateway.
+
+  4. The Keeper Gateway pulls the necessary secrets from the vault using Keeper Secrets Manager APIs.
+
+  5. The Keeper Gateway performs the action on the target infrastructure (such as rotating a credential) and updates the relevant Keeper vault records.
+
+  6. The Keeper Gateway runs any required privilege automation scripts on the Gateway or target machines using native protocols and APIs.
+
+  7. Client devices securely retrieve the updated record using Keeper Secrets Manager APIs.
+
+  8. Vault end-users receive push notifications indicating that new data is available for syncing.
+
+  9. The vault performs encrypted syncing to the Keeper cloud to retrieve the latest record content.
+
+  10. Keeper's Advanced Reporting & Alerts module logs all events and triggers alerts.
+
+# KeeperPAM Licensing
+
+Features included with the PAM License
+
+##
+
+KeeperPAM Licensing Requirements
+
+In order to enable and use KeeperPAM, the following are required:
+
+  *   *     * A minimum of 5 seats 
+
+A Keeper Business or Keeper Enterprise License is required to purchase the
+KeeperPAM add-on.
+
+###
+
+Trial License
+
+##
+
+Features Included with KeeperPAM
+
+With the purchase of the Privileged Access Manager add-on, the following
+features are included:
+
+  * Secrets Manager - Unlimited API Calls
+
+  * Password Rotation 
+
+  * Connections
+
+  * Tunnels
+
+  * Remote Browser Isolation 
+
+  * Session Recordings and Playback 
+
+  * Discovery 
+
+  * Keeper Connection Manager (Self-Hosted)
+
+  * PAM Audit and Reporting
+
+####
+
+What is the difference between KeeperPAM and Keeper Connection Manager (Self-
+Hosted)?
+
+##
+
+KeeperPAM License Model
+
+The KeeperPAM add-on license includes all the advanced PAM Features. The
+number of licenses for the enterprise license and the KeeperPAM license is
+based on:
+
+License Type
+
+License Model
+
+Business or Enterprise License
+
+Number of Users using the Business or Enterprise Features
+
+Privileged Access Manager Add-On
+
+Number of Users using the Business or Enterprise Features AND PAM Features
+
+####
+
+Example
+
+For example, if an organization has 100 Enterprise users and needs PAM
+functionality for only 10 of them, they would purchase:
+
+  * **100 Keeper Enterprise Licenses** for users who only need the enterprise features.
+
+  * **10 Privileged Access Manager** **Add-Ons** , to cover the 10 users that need PAM functionality.
+
+##
+
+MSPs
+
+##
+
+Existing Customers - Updating KSM/KCM Add-Ons
+
+For existing customers, the following existing Add-ons can be upgraded to the
+Privileged Access Manager Add-On:
+
+  * Keeper Secrets Manager Add-On
+
+  * Keeper Connection Manager Add-On
+
+Both the Keeper Secrets Manager and Keeper Connection Manager Add-Ons are
+included as part of the Privileged Access Manager Add-On.
+
+###
+
+Upgrading from Keeper Secrets Manager Add-On
+
+Upgrading to the Privileged Access Manager Add-On from the Keeper Secrets
+Manager Add-On will give you:
+
+  * Access to new KeeperPAM Features
+
+  * Unlimited API Calls 
+
+###
+
+Upgrading from Keeper Connection Manager Add-On
+
+Upgrading to the Privileged Access Manager Add-On from the Keeper Connection
+Manager Add-On will give you new KeeperPAM Features which includes accessing
+both the cloud and self-hosted KCM.
+
+##
+
+**Ready to Upgrade?**
 
 # Record Linking
 
@@ -1312,6 +1341,277 @@ utilizing PAM features is described in the below sections.
 
   *   *   *   *   * 
 
+# Docker Installation
+
+Instructions for installing Keeper Gateway on Docker
+
+##
+
+Overview
+
+For full PAM capabilities, use a **Linux host with a x86 AMD processor**.
+
+###
+
+Prerequisites
+
+  * A Linux host with a x86 AMD processor
+
+  * 
+
+Note: The syntax is `docker-compose` for servers, but on a local Docker
+Desktop it might be `docker compose` (with no space).
+
+###
+
+Create a Gateway
+
+A new Gateway deployment can be created by clicking on **Create New** >
+**Gateway** from the Web Vault or Desktop App (version 17.1 or newer
+required).
+
+You can also create a Gateway and configuration file from the Commander CLI:
+
+Copy
+
+    
+    
+    pam gateway new -n "<Gateway Name>" -a <Application Name or UID> -c b64
+
+The Application names and UIDs can be found with `secrets-manager app list`
+
+###
+
+Installation
+
+1
+
+###
+
+Docker Compose
+
+A Docker Compose file is provided through the Vault UI. Typically this file
+would be saved in your local environment as `docker-compose.yml` in your
+preferred folder. An example is below:
+
+Copy
+
+    
+    
+    services:
+          keeper-gateway:
+            platform: linux/amd64
+            image: keeper/gateway:latest
+            shm_size: 2g
+            security_opt:
+              - "seccomp:docker-seccomp.json"
+            environment:
+              ACCEPT_EULA: Y
+              GATEWAY_CONFIG: XXXXXXXXXXXXXXXXX
+
+The only required environment variable setting is GATEWAY_CONFIG which is the
+resulting base64-encoded configuration provided when creating a Gateway
+device.
+
+2
+
+###
+
+SecComp File
+
+Download this file called `docker-seccomp.json` and place it in the same
+folder as your Docker Compose file.
+
+3
+
+###
+
+Start the Service
+
+Ensure that you are located in the folder where the `docker-compose.yml` is
+saved. Executing the following command will run the Keeper Gateway container
+in the background, as specified in the docker compose file:
+
+Copy
+
+    
+    
+    docker compose up -d
+
+###
+
+**Logging**
+
+When running the latest version of the Keeper Gateway, you'll see the output
+in the logs like below:
+
+Copy
+
+    
+    
+    docker compose logs keeper-gateway
+
+On the Vault UI in the **Secrets Manager** > **Applications** > **Gateways**
+screen, the Gateway will show Online.
+
+###
+
+Gateway Service Management
+
+####
+
+Starting the service
+
+Copy
+
+    
+    
+    docker compose up -d
+
+####
+
+Stopping the service
+
+Copy
+
+    
+    
+    docker compose stop
+
+####
+
+Restarting the service
+
+Copy
+
+    
+    
+    docker compose restart
+
+####
+
+Connecting to the Gateway container
+
+Copy
+
+    
+    
+    docker compose exec keeper-gateway bash
+
+###
+
+Enable Debugging
+
+If you need to enable verbose debug logs on the Gateway, enable debug logging
+by adding the below `environment` section variables to your Docker Compose
+file:
+
+Copy
+
+    
+    
+    services:
+          keeper-gateway:
+            .....
+            environment:
+              KEEPER_GATEWAY_LOG_LEVEL: "debug" # logs for gateway
+              LOG_LEVEL: "debug" # logs for guacd
+
+After debug is enabled, restart the service with `docker compose restart`
+
+####
+
+Tailing the logs:
+
+Copy
+
+    
+    
+    docker compose logs -f keeper-gateway
+
+###
+
+**Updating**
+
+Executing the following command will update the Keeper Gateway container to
+the latest version and restart the service:
+
+Copy
+
+    
+    
+    docker compose pull
+    docker compose down
+    docker compose up -d
+
+###
+
+Start up automatically
+
+Adding the "restart" parameter in the `docker-compose.yml` file will assign a
+restart policy to the environment:
+
+Copy
+
+    
+    
+    restart: always
+
+###
+
+Starting Gateway on Reboot
+
+If you would like to force the host operating system to automatically start
+the Keeper Gateway on a Docker installation, follow these steps (Linux host).
+
+First, create a `.service` file in `/etc/systemd/system/keeper-
+gateway.service`
+
+Copy
+
+    
+    
+    [Unit]
+    Description=Keeper Gateway Docker Compose
+    Requires=docker.service
+    After=docker.service
+    
+    [Service]
+    Type=oneshot
+    RemainAfterExit=yes
+    WorkingDirectory=/home/ec2-user
+    ExecStart=/usr/local/bin/docker-compose up -d
+    ExecStop=/usr/local/bin/docker-compose down
+    User=ec2-user
+    Group=docker
+    
+    [Install]
+    WantedBy=multi-user.target
+
+NOTE:
+
+  * Replace `/home/ec2-user` with the path to your docker-compose.yml
+
+  * Replace `ec2-user` user with your user running Docker
+
+  * Replace `docker` group with your defined group
+
+Then enable the service:
+
+Copy
+
+    
+    
+    sudo systemctl daemon-reload
+    sudo systemctl enable keeper-gateway.service
+    sudo systemctl start keeper-gateway.service
+
+###
+
+References:
+
+  *   * 
+
 # Applications
 
 Secrets Manager Applications with KeeperPAM
@@ -1410,34 +1710,6 @@ The Keeper Gateway offers different feature capabilities based on the
 underlying operating system and hardware. We recommend using Docker on a Linux
 or Windows host with x86 CPUs for full feature support and ease of management.
 
-Platform
-
-Compatibility
-
-**Docker** (Linux or Windows host w/ x86)
-
-  * All features supported
-
-**Linux** (RHEL 8, Rocky Linux 8)
-
-  * All features supported
-
-**Docker** (Linux host on ARM)
-
-  * No Remote Browser Isolation
-
-**Linux** **Binary Install** (Ubuntu, Debian)
-
-  * No Remote Browser Isolation
-
-  * Limited connection protocols
-
-**Windows Binary Install**
-
-  * No Remote Browser Isolation
-
-  * No database connections
-
 Note: EL9 which includes Rocky Linux 9 and RHEL 9 support is coming soon.
 
 ###
@@ -1490,139 +1762,6 @@ the Keeper Gateway:
 ####
 
 Additional Installation Configurations
-
-# Creating a Gateway
-
-Creating a Keeper Gateway
-
-##
-
-Overview
-
-In order to install and setup a Keeper Gateway device, you need to have a few
-resources set up:
-
-  * Shared Folders to hold the PAM Resources (Machines, Databases, Users, etc)
-
-  * Keeper Secrets Manager application
-
-  * PAM Configuration
-
-To simplify the process, we have a new Gateway wizard which creates all of the
-necessary components. Or, you can run each step individually.
-
-##
-
-Using the Gateway Wizard
-
-The fastest way to create a Gateway and associated resources is using the
-Gateway Wizard. From the Web Vault or Desktop App, click on **Create New** >
-**Gateway.**
-
-The below link describes how to create a sandbox environment in just a few
-steps:
-
-  * 
-
-##
-
-Using Keeper Secrets Manager
-
-To set up a Keeper Gateway manually using the Keeper Secrets Manager
-application resources, follow these steps.
-
-1
-
-###
-
-Create a Secrets Manager Application
-
-  * In the Keeper Web Vault or Desktop App user interface, create a Shared Folder. This Shared Folder will contain the PAM resource records.
-
-  * Navigate to the "Secret Managers" tab on the left and click on "Create Application" to create a KSM application
-
-  * In the prompted window:
-
-    * Enter the name of your KSM application
-
-    * Choose the Shared Folder
-
-    * Set the Record Permissions for Application to "Can Edit"
-
-    * Click on "Generate Access Token" and then click on "OK"
-
-    * You can safely ignore the first One-Time Access Token generated for the newly created KSM application. When creating a Keeper Gateway device, a different One-Time Access Token will be created.
-
-2
-
-##
-
-Generate the Gateway Token
-
-  * From the Application screen, open the **Gateways** tab
-
-  * Click on **Provision Gateway**
-
-  * Select a name for the Gateway and the operating system
-
-  * Follow the on-screen instructions based on the type of install
-
-##
-
-Using Commander CLI
-
-You can also create a Gateway and configuration file from the Commander CLI.
-The below CLI commands will create a Secrets Manager application, shared
-folders and other resources before creating a Gateway instance.
-
-####
-
-Create an Application
-
-Copy
-
-    
-    
-    secrets-manager app create "My Infrastructure"
-
-####
-
-Create Folders
-
-Copy
-
-    
-    
-    mkdir -uf "My Infrastructure"
-    mkdir -sf -a "My Infrastructure/Resources"
-    mkdir -sf -a "My Infrastructure/Users"
-
-####
-
-Share the KSM app to the Shared Folders
-
-Copy
-
-    
-    
-    secrets-manager share add --app "My Infrastructure" --secret <Resources folder UID>
-    secrets-manager share add --app "My Infrastructure" --secret <Users folder UID>
-
-####
-
-Create a Gateway
-
-Copy
-
-    
-    
-    pam gateway new -n "My Demo Gateway" -a "My Infrastructure"
-
-Copy
-
-    
-    
-    pam gateway new -n "My Demo Gateway" -a "My Infrastructure" -c b64
 
 # Devices
 
@@ -1737,13 +1876,107 @@ one-time token
 
 Example:
 
-Copy
+  * 
 
-    
-    
-    secrets-manager client add --app "My Infrastructure App" --unlock-ip
+# Creating a Gateway
+
+Creating a Keeper Gateway
+
+##
+
+Overview
+
+In order to install and setup a Keeper Gateway device, you need to have a few
+resources set up:
+
+  * Shared Folders to hold the PAM Resources (Machines, Databases, Users, etc)
+
+  * Keeper Secrets Manager application
+
+  * PAM Configuration
+
+To simplify the process, we have a new Gateway wizard which creates all of the
+necessary components. Or, you can run each step individually.
+
+##
+
+Using the Gateway Wizard
+
+The fastest way to create a Gateway and associated resources is using the
+Gateway Wizard. From the Web Vault or Desktop App, click on **Create New** >
+**Gateway.**
+
+The below link describes how to create a sandbox environment in just a few
+steps:
 
   * 
+
+##
+
+Using Keeper Secrets Manager
+
+To set up a Keeper Gateway manually using the Keeper Secrets Manager
+application resources, follow these steps.
+
+1
+
+###
+
+Create a Secrets Manager Application
+
+  * In the Keeper Web Vault or Desktop App user interface, create a Shared Folder. This Shared Folder will contain the PAM resource records.
+
+  * Navigate to the "Secret Managers" tab on the left and click on "Create Application" to create a KSM application
+
+  * In the prompted window:
+
+    * Enter the name of your KSM application
+
+    * Choose the Shared Folder
+
+    * Set the Record Permissions for Application to "Can Edit"
+
+    * Click on "Generate Access Token" and then click on "OK"
+
+    * You can safely ignore the first One-Time Access Token generated for the newly created KSM application. When creating a Keeper Gateway device, a different One-Time Access Token will be created.
+
+2
+
+##
+
+Generate the Gateway Token
+
+  * From the Application screen, open the **Gateways** tab
+
+  * Click on **Provision Gateway**
+
+  * Select a name for the Gateway and the operating system
+
+  * Follow the on-screen instructions based on the type of install
+
+##
+
+Using Commander CLI
+
+You can also create a Gateway and configuration file from the Commander CLI.
+The below CLI commands will create a Secrets Manager application, shared
+folders and other resources before creating a Gateway instance.
+
+####
+
+Create an Application
+
+####
+
+Create Folders
+
+####
+
+Share the KSM app to the Shared Folders
+
+####
+
+Create a Gateway
 
 # Linux Installation
 
@@ -1873,194 +2106,6 @@ ensuring it stays up-to-date with the latest version.
 **Uninstalling**
 
 Executing the following command will uninstall the Keeper Gateway:
-
-# Windows Installation
-
-Instructions for installing Keeper Gateway on Windows
-
-##
-
-Overview
-
-This document contains information on how to install, configure, and update
-the Keeper Gateway on Windows.
-
-###
-
-Prerequisite
-
-###
-
-Installation
-
-The latest Keeper Gateway for Windows is downloaded from here:
-
-  * 
-
-You can run the service under system privilege or use a service account.
-
-####
-
-New Installs
-
-####
-
-Upgrading
-
-If you are upgrading an existing Gateway, un-check the "Enter a Keeper One-
-Time Access Token" so that the existing configuration is maintained.
-
-####
-
-**Installation Location**
-
-The default installation location is the following:
-
-####
-
-Setup Options
-
-  * Install Windows service - Installs the gateway as a Windows service.
-
-    *     * Start Windows service - Start the Keeper Gateway service immediately after installation
-
-    * Enable automatic updates
-
-  *   * Remove Keeper Gateway configuration and logs from previous installations
-
-####
-
-Specifying the Keeper Gateway Service Account
-
-If "Use service account" is specified you will be prompted to enter the valid
-credentials of the desired service account:
-
-####
-
-One-Time Access Token
-
-After clicking "Next", click "Install" in the next screen to install the
-Keeper Gateway.
-
-###
-
-Gateway Service Management
-
-After installing and running the Keeper Gateway as a service, this service can
-be accessed and easily managed within the Windows Services Manager as "Keeper
-Gateway Service".
-
-###
-
-**Configuration File**
-
-If the Keeper Gateway is installed and running as a service, the gateway
-configuration file is stored in the following location:
-
-If the Keeper Gateway is installed locally and not running as a service, the
-gateway configuration file is stored in the following location:
-
-###
-
-**Log files**
-
-Logs that contain helpful debugging information are automatically created and
-stored on the local machine.
-
-If the gateway is running as a service, the gateway log files are stored in
-the following location:
-
-If the gateway is not running as a service, the gateway log files are stored
-in the following location:
-
-####
-
-**Verbose Logging**
-
-To activate verbose logging:
-
-  * Go to Windows Services > Keeper Gateway > Properties
-
-  * Stop the service
-
-  * Set the "Start parameters" to: `--debug` or `-d`
-
-  * Start the service by clicking on "Start" _Do not click "OK" without first starting the service as it will not persist the Parameter setting_
-
-###
-
-**Upgrading**
-
-To upgrade, stop the service, install the latest version and then start the
-service.
-
-  * Back up your `gateway-config.json` configuration file
-
-  * Run the latest Keeper Gateway installer
-
-  * During installation **DO NOT** select "Enter a Keeper One-Time Access Token".
-
-###
-
-**Auto Updates**
-
-Select "Enable automatic updates" during the installer process to ensure that
-your Keeper Gateway is automatically updated when there are new versions
-available.
-
-* * *
-
-###
-
-Silent Install
-
-This section provides instructions for performing a silent installation of the
-Keeper Gateway on Windows systems. Silent installation allows the setup
-process to run in the background without displaying any user interface or
-messages.
-
-To install the Keeper Gateway silently, use the following command in your
-command prompt or script:
-
-Replace `<TOKEN>` with the token provided in the Keeper Vault when creating
-the Keeper Gateway.
-
-####
-
-Configuration Options
-
-If you have previously installed Keeper Gateway and wish to use the existing
-configuration, you can bypass the token entry by using:
-
-To generate a log file during the installation process, use the following
-option and specify the desired log file path:
-
-####
-
-**Windows Service Account**
-
-If you prefer to run the Keeper Gateway under a specific Windows service
-account, use the following options to specify the account details:
-
-Replace `<ACCOUNT USERNAME>` and `<ACCOUNT PASSWORD>` with the credentials of
-the service account you intend to use.
-
-####
-
-**Auto Updater**
-
-To enable the Auto Updater feature, allowing Keeper Gateway to automatically
-check for and apply updates, use the following option:
-
-###
-
-Uninstalling
-
-To uninstall the service:
-
-  * Uninstall Keeper Gateway from "Add and remove programs"
-
-  * If desired, delete the private configuration .json file
 
 # Auto Updater
 
@@ -2296,6 +2341,326 @@ The log files for the Gateway Auto Updater are located in
 
   * **Last Update Check** : The file `last-update-check.log` contains information regarding the most recent check for updates.
 
+# Windows Installation
+
+Instructions for installing Keeper Gateway on Windows
+
+##
+
+Overview
+
+This document contains information on how to install, configure, and update
+the Keeper Gateway on Windows.
+
+###
+
+Prerequisite
+
+###
+
+Installation
+
+The latest Keeper Gateway for Windows is downloaded from here:
+
+  * 
+
+You can run the service under system privilege or use a service account.
+
+####
+
+New Installs
+
+####
+
+Upgrading
+
+If you are upgrading an existing Gateway, un-check the "Enter a Keeper One-
+Time Access Token" so that the existing configuration is maintained.
+
+####
+
+**Installation Location**
+
+The default installation location is the following:
+
+####
+
+Setup Options
+
+  * Install Windows service - Installs the gateway as a Windows service.
+
+    *     * Start Windows service - Start the Keeper Gateway service immediately after installation
+
+    * Enable automatic updates
+
+  *   * Remove Keeper Gateway configuration and logs from previous installations
+
+####
+
+Specifying the Keeper Gateway Service Account
+
+If "Use service account" is specified you will be prompted to enter the valid
+credentials of the desired service account:
+
+####
+
+One-Time Access Token
+
+After clicking "Next", click "Install" in the next screen to install the
+Keeper Gateway.
+
+###
+
+Gateway Service Management
+
+After installing and running the Keeper Gateway as a service, this service can
+be accessed and easily managed within the Windows Services Manager as "Keeper
+Gateway Service".
+
+###
+
+**Configuration File**
+
+If the Keeper Gateway is installed and running as a service, the gateway
+configuration file is stored in the following location:
+
+If the Keeper Gateway is installed locally and not running as a service, the
+gateway configuration file is stored in the following location:
+
+###
+
+**Log files**
+
+Logs that contain helpful debugging information are automatically created and
+stored on the local machine.
+
+If the gateway is running as a service, the gateway log files are stored in
+the following location:
+
+If the gateway is not running as a service, the gateway log files are stored
+in the following location:
+
+####
+
+**Verbose Logging**
+
+To activate verbose logging:
+
+  * Go to Windows Services > Keeper Gateway > Properties
+
+  * Stop the service
+
+  * Set the "Start parameters" to: `--debug` or `-d`
+
+  * Start the service by clicking on "Start" _Do not click "OK" without first starting the service as it will not persist the Parameter setting_
+
+###
+
+**Upgrading**
+
+To upgrade, stop the service, install the latest version and then start the
+service.
+
+  * Back up your `gateway-config.json` configuration file
+
+  * Run the latest Keeper Gateway installer
+
+  * During installation **DO NOT** select "Enter a Keeper One-Time Access Token".
+
+###
+
+**Auto Updates**
+
+Select "Enable automatic updates" during the installer process to ensure that
+your Keeper Gateway is automatically updated when there are new versions
+available.
+
+* * *
+
+###
+
+Silent Install
+
+This section provides instructions for performing a silent installation of the
+Keeper Gateway on Windows systems. Silent installation allows the setup
+process to run in the background without displaying any user interface or
+messages.
+
+To install the Keeper Gateway silently, use the following command in your
+command prompt or script:
+
+Replace `<TOKEN>` with the token provided in the Keeper Vault when creating
+the Keeper Gateway.
+
+####
+
+Configuration Options
+
+If you have previously installed Keeper Gateway and wish to use the existing
+configuration, you can bypass the token entry by using:
+
+To generate a log file during the installation process, use the following
+option and specify the desired log file path:
+
+####
+
+**Windows Service Account**
+
+If you prefer to run the Keeper Gateway under a specific Windows service
+account, use the following options to specify the account details:
+
+Replace `<ACCOUNT USERNAME>` and `<ACCOUNT PASSWORD>` with the credentials of
+the service account you intend to use.
+
+####
+
+**Auto Updater**
+
+To enable the Auto Updater feature, allowing Keeper Gateway to automatically
+check for and apply updates, use the following option:
+
+###
+
+Uninstalling
+
+To uninstall the service:
+
+  * Uninstall Keeper Gateway from "Add and remove programs"
+
+  * If desired, delete the private configuration .json file
+
+# Gateway Configuration with Custom Fields
+
+Advanced configuration of the Keeper gateway with Keeper Vault custom fields
+
+These configuration capabilities are functional and currently in an
+experimental phase, and we invite users to actively explore and utilize them.
+We are actively evaluating their functionality and performance, with the
+intention of considering them for official integration into our product in the
+future.
+
+##
+
+Advanced Gateway Configuration with Custom Fields
+
+The additional gateway configurations will be defined with these custom fields
+on the PAM Record Types. The Keeper Gateway will then adjust its behavior
+based on the defined configurations.
+
+The following tables lists all the possible configurations with custom fields:
+
+**Note:**
+
+  * The custom fields values are not case-sensitive.
+
+# Gateway Configuration with AWS KMS
+
+Storing and protecting the Keeper Gateway Configuration using AWS KMS
+
+##
+
+**Overview**
+
+If the Keeper Gateway is installed on an AWS EC2 Instance, the corresponding
+Gateway configuration file can be protected and stored in AWS Secrets Manager.
+This method eliminates the need for storing a configuration file on the
+instance, and instead stores the configuration file with AWS KMS protection.
+
+###
+
+**AWS Key Management Service (KMS) Key**
+
+AWS KMS is a fully managed service that makes it easy for you to create and
+control the cryptographic keys used to encrypt and decrypt your data. The
+service is integrated with other AWS services, making it easier to encrypt
+data and manage keys. You will need a AWS KMS key as part of this process, and
+it is recommended that you follow the principle of least privilege when
+assigning permissions to this key.
+
+###
+
+Prerequisites
+
+In order to use AWS KMS to protect the Gateway configuration secrets, you need
+to install the Keeper Gateway on an EC2 instance which assumes an IAM Role.
+This works on either Docker or Linux install methods.
+
+  *   * 
+
+###
+
+Generate a Configuration
+
+From the Keeper Vault, go to **Secrets Manager** > **Applications** and select
+the application configured with your Gateway. Then select the Gateways tab and
+select "Provision Gateway".
+
+Select the Gateway initialization method of "Configuration" and click Next.
+
+Alternatively, you can generate a One-Time Access Token and then use the
+Keeper Gateway's "gateway ott-init" command:
+
+In either case, you'll be provided with a base64 encoded configuration. Save
+this for the next step.
+
+###
+
+Create Secret in AWS Secrets Manager
+
+From the AWS Console, go to the Secrets Manager and create a new secret.
+
+  * Select "Other type of secret"
+
+  * Select Plaintext and paste the entire base64 value there.
+
+  * Click **Next**.
+
+Enter a **Secret Name** and a description then click **Next** , **Next** and
+**Store**.
+
+###
+
+Assign Policy to Instance Role
+
+The EC2 instance role needs to be assigned a policy which provides read access
+to the specific AWS Secrets Manager key. As an example:
+
+###
+
+Confirming Access
+
+From the EC2 instance, the below command will confirm the policy has been
+applied:
+
+###
+
+Configuration of the Keeper Gateway
+
+####
+
+Docker Install Method
+
+For Docker installations, remove the `GATEWAY_CONFIG` entry and add
+`AWS_KMS_SECRET_NAME` with the value containing the name of the secret from
+the AWS secrets manager.
+
+Then update the service with the new environment:
+
+####
+
+Linux Install Method
+
+Open the Keeper Gateway service unit file:
+
+`/etc/systemd/system/keeper-gateway.service`
+
+Modify the "ExecStart" line as seen below, replacing YourSecretName with your
+assigned name.
+
+Apply changes to the service:
+
+If there are any errors starting up, they can be seen through this command:
+
 # Advanced Configuration
 
 Advanced Keeper Gateway Configurations
@@ -2370,159 +2735,164 @@ gateway.
 
 Email alerts contain event information
 
-# Docker Installation
+# AWS Environment Setup
 
-Instructions for installing Keeper Gateway on Docker
+Setting up your AWS environment to work with KeeperPAM
+
+##
+
+AWS Environment Overview
+
+Resources in your AWS environment can be managed by a Keeper Gateway using EC2
+instance role policy or using a specified Access Key ID / Secret Access Key
+configured in the PAM Configuration record.
+
+The role policy must be configured appropriately to enable access to the
+target AWS resources:
+
+  *   * 
+
+The following diagram shows the AWS environment hierarchy:
+
+##
+
+EC2 IAM Role Policy
+
+To create a EC2 IAM policy which supports PAM features such as password
+rotation and discovery, a role with the appropriate policy settings should be
+configured then attached to the EC2 instance running the Keeper Gateway.
+
+For KeeperPAM to have the authority to rotate IAM users and RDS databases, the
+following inline role policy should be modified to meet your needs and ensure
+least privilege.
+
+To ensure least privilege, the JSON policy should be modified based on which
+target resources that KeeperPAM will be managing through the "Action" and
+"Resource" attributes.
+
+Follow these steps to create a new role and apply the policy:
+
+  1. Create role with JSON specified above, or click on IAM > Roles > Create Role > Select "AWS Service" with "EC2 use case".
+
+  2. Attach the policy JSON to the role.
+
+  3. From EC2 > Instances, select the instance with the gateway and go to Actions > Security > Modify IAM Role > Select your new role.
+
+###
+
+Minimum AWS Policy to Manage IAM users
+
+* * *
+
+##
+
+IAM User Policy
+
+Using EC2 instance role policy is preferred, however the AWS Access Key ID and
+Secret Access Key can be directly set in the PAM Configuration. The IAM Admin
+account needs to be created with the appropriate policy settings configured to
+access the target resource in AWS.
+
+An sample policy is below.
+
+To ensure least privilege, the JSON policy should be modified based on which
+target resources that KeeperPAM will be managing through the "Action" and
+"Resource" attributes.
+
+The steps to create the access keys is below:
+
+  1. Create a new IAM user or select an existing user
+
+  2. Attach the policy to the user
+
+  3. Open the IAM user > Security credentials > Create access key
+
+  4. Select "Application running outside AWS"
+
+  5. Save the provided Access Key ID / Secret Access Key into the PAM Configuration
+
+# PAM Configuration
+
+Creating a PAM Configuration in the Keeper Vault
 
 ##
 
 Overview
 
-For full PAM capabilities, use a **Linux host with a x86 AMD processor**.
+In Keeper, the **PAM Configuration** contains essential information of your
+target infrastructure, settings and associated Keeper Gateway. We recommend
+setting up one PAM Configuration for each Gateway and network being managed.
+
+##
+
+Creating PAM Configuration
+
+To create a new PAM Configuration:
+
+  * Login to the Keeper Vault
+
+  * Select Secrets Manager and the "PAM Configurations" tab
+
+  * Click on "New Configuration"
+
+##
+
+PAM Configuration Fields
+
+When setting up the PAM Configuration, you have the option of choosing one of
+the following environments:
+
+  *   *   *   * 
+
+The following tables provides more details on each configurable fields in the
+PAM Configuration record regardless of the environment you choose:
+
+**Security Note (1)** The PAM Configuration information is stored as a record
+in the vault inside the specified **Application Folder** and may contain
+secrets. Therefore, we recommend that the Application Folder should be limited
+in access to only privileged admins.
+
+The following tables provides more details on each configurable fields in the
+PAM Network Configuration record based on the environment you chose:
 
 ###
 
-Prerequisites
+Local Network Environment
 
-  * A Linux host with a x86 AMD processor
+###
+
+AWS Environment
 
   * 
 
-Note: The syntax is `docker-compose` for servers, but on a local Docker
-Desktop it might be `docker compose` (with no space).
+###
+
+Azure Environment
+
+  * 
 
 ###
 
-Create a Gateway
+Domain Controller Environment
 
-A new Gateway deployment can be created by clicking on **Create New** >
-**Gateway** from the Web Vault or Desktop App (version 17.1 or newer
-required).
+##
 
-You can also create a Gateway and configuration file from the Commander CLI:
+PAM Features on PAM Configuration
 
-The Application names and UIDs can be found with `secrets-manager app list`
+The **"PAM Features Allowed"** and **"Session Recording Types Allowed"**
+sections in the PAM Configuration allow owners to enable or disable KeeperPAM
+features for resources managed through the PAM configuration:
 
-###
+The Keeper Gateway communicates with the Keeper Router through outbound-only
+WebSockets. This is described in detail in the  section.
 
-Installation
+The Keeper Relay is infrastructure in Keeper's cloud that is responsible for
+establishing encrypted  connections between the end-user vault interface and
+the customer-hosted Keeper Gateway service.
 
-1
-
-###
-
-Docker Compose
-
-A Docker Compose file is provided through the Vault UI. Typically this file
-would be saved in your local environment as `docker-compose.yml` in your
-preferred folder. An example is below:
-
-The only required environment variable setting is GATEWAY_CONFIG which is the
-resulting base64-encoded configuration provided when creating a Gateway
-device.
-
-2
-
-###
-
-SecComp File
-
-Download this file called `docker-seccomp.json` and place it in the same
-folder as your Docker Compose file.
-
-3
-
-###
-
-Start the Service
-
-Ensure that you are located in the folder where the `docker-compose.yml` is
-saved. Executing the following command will run the Keeper Gateway container
-in the background, as specified in the docker compose file:
-
-###
-
-**Logging**
-
-When running the latest version of the Keeper Gateway, you'll see the output
-in the logs like below:
-
-On the Vault UI in the **Secrets Manager** > **Applications** > **Gateways**
-screen, the Gateway will show Online.
-
-###
-
-Gateway Service Management
-
-####
-
-Starting the service
-
-####
-
-Stopping the service
-
-####
-
-Restarting the service
-
-####
-
-Connecting to the Gateway container
-
-###
-
-Enable Debugging
-
-If you need to enable verbose debug logs on the Gateway, enable debug logging
-by adding the below `environment` section variables to your Docker Compose
-file:
-
-After debug is enabled, restart the service with `docker compose restart`
-
-####
-
-Tailing the logs:
-
-###
-
-**Updating**
-
-Executing the following command will update the Keeper Gateway container to
-the latest version and restart the service:
-
-###
-
-Start up automatically
-
-Adding the "restart" parameter in the `docker-compose.yml` file will assign a
-restart policy to the environment:
-
-###
-
-Starting Gateway on Reboot
-
-If you would like to force the host operating system to automatically start
-the Keeper Gateway on a Docker installation, follow these steps (Linux host).
-
-First, create a `.service` file in `/etc/systemd/system/keeper-
-gateway.service`
-
-NOTE:
-
-  * Replace `/home/ec2-user` with the path to your docker-compose.yml
-
-  * Replace `ec2-user` user with your user running Docker
-
-  * Replace `docker` group with your defined group
-
-Then enable the service:
-
-###
-
-References:
-
-  *   * 
+Keeper's Backend API is the endpoint which all Keeper client applications
+communicate with. Client applications encrypt data locally and transmit
+encrypted ciphertext to the API in a  format.
 
 or  License
 
@@ -2546,31 +2916,6 @@ Features available with the KeeperPAM Add-On are listed .
 To purchase, upgrade, or if you have any questions, contact your Keeper
 account manager or use our .
 
-The Keeper Gateway is a service that is installed on-premise in order to
-execute rotation, discovery and connection tasks. The Keeper Gateway
-communicates outbound to the Keeper Router using WebSockets and Keeper Secrets
-Manager .
-
-For accessing and decrypting vault records, the Keeper Gateway uses standard
-Keeper Secrets Manager APIs which perform client-side encryption and
-decryption of data. The  ensures least privilege and zero knowledge by
-allocating only specific folders and records that can be decrypted by the
-service. API requests to the Keeper Cloud are sent with a Client Device
-Identifier and a request body that is signed with the Client Device Private
-Key. The server checks the ECDSA signature of the request for the given Client
-Device Identifier using the Client Public Key of the device.
-
-The  passes in the configuration through an environment variable in the Docker
-Compose file.
-
-In AWS environments, the configuration can be .
-
-If a Post-Rotation script requires access to other secrets beyond those passed
-in automatically, users are strongly encouraged to use the  or the  tool.
-
-The Keeper Gateway communicates with the Keeper Router through outbound-only
-WebSockets. This is described in detail in the  section.
-
 Enable all the  to use the new features.
 
 The  CLI `enterprise-role` command can be used to set these policies through
@@ -2581,19 +2926,33 @@ applications and configurations is using the . This wizard instantly creates a
 sandbox environment where you can work with the different resources and vault
 records.
 
+This document contains information on how to install, configure, and update
+your Keeper Gateway on Docker. The Docker container is built upon the base
+image of Rocky Linux 8 and it is hosted in .
+
+`docker` and `docker-compose` installed (see  for help)
+
+DockerHub listing:
+
+Quick reference for
+
+Platform
+
+Compatibility
+
 If you are installing on an EC2 instance in AWS, the Keeper Gateway can be
 configured to use the instance role for pulling its configuration from AWS
 Secrets Manager. Detailed instructions on this setup can be .
+
+See the  of a Device
+
+See more details on the
 
 To initialize a Gateway for  or  native install methods, the one-time token
 method is used:
 
 To initialize a Gateway using Docker, the base64 configuration is provided as
 `GATEWAY_CONFIG` environment variable as described in the  instructions.
-
-See the  of a Device
-
-See more details on the
 
 Prior to proceeding with this document, make sure you .
 
@@ -2627,19 +2986,66 @@ authenticate and decrypt data from the Keeper Secrets Manager APIs. This
 configuration file is created from the One-Time Access Token generated when
 you .
 
+When setting up Rotation in your Keeper Vault, you store the credentials of
+your assets involved in rotation on their corresponding PAM Record Types. On
+these record types, you are able to .
+
+Custom Field Name
+
+Type
+
+Default Value
+
+Description
+
 See
 
 Run custom reports from the Keeper Admin Console or  CLI
 
-This document contains information on how to install, configure, and update
-your Keeper Gateway on Docker. The Docker container is built upon the base
-image of Rocky Linux 8 and it is hosted in .
+Managed User Type
 
-`docker` and `docker-compose` installed (see  for help)
+IAM Policy
 
-DockerHub listing:
+In addition to these policies, we recommend protecting the Gateway
+Configuration secrets .
 
-Quick reference for
+Field
+
+Description
+
+Notes
+
+Field
+
+Description
+
+Notes
+
+Field
+
+Description
+
+Notes
+
+See additional information on
+
+Field
+
+Description
+
+Notes
+
+See additional information on
+
+Field
+
+Description
+
+Required
+
+Field
+
+Description
 
 Copy
 
@@ -2725,6 +3131,12 @@ Copy
     
     ALLOW_PAM_ROTATION
 
+Gateway Security
+
+[WebRTC](https://en.wikipedia.org/wiki/WebRTC)
+
+[Protocol Buffer](https://en.wikipedia.org/wiki/Protocol_Buffers)
+
 [Keeper Business](https://www.keepersecurity.com/business.html)
 
 [Keeper Enterprise](https://www.keepersecurity.com/enterprise.html)
@@ -2736,27 +3148,6 @@ access-management/)
 trial.html)
 
 [online form](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-
-[zero-knowledge
-protocols](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
-manager/about/security-encryption-model)
-
-[security model of Keeper Secrets
-Manager](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
-manager/about/security-encryption-model)
-
-Docker installation method
-
-protected with the AWS KMS
-
-[Keeper Secrets Manager
-SDKs](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
-manager/developer-sdk-library)
-
-[Secrets Manager CLI](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
-manager/secrets-manager-command-line-interface)
-
-Gateway Security
 
 PAM enforcement policies
 
@@ -2799,6 +3190,20 @@ manager/remote-browser-isolation)
 [Discovery](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
 manager/discovery)
 
+[DockerHub](https://hub.docker.com/r/keeper/gateway)
+
+[Docker Install](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
+access-manager/references/installing-docker-on-linux)
+
+<https://hub.docker.com/r/keeper/gateway>[](https://hub.docker.com/r/keeper/gateway)
+
+[Installing Docker](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
+access-manager/references/installing-docker-on-linux)
+
+[ and Docker Compose on
+Linux](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/references/installing-docker-on-linux)
+
 [Secrets Manager CLI](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
 manager/secrets-manager-command-line-interface)
 
@@ -2808,45 +3213,68 @@ manager/developer-sdk-library)
 [Integrations](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
 manager/integrations)
 
-**Docker**
+**Docker** (Linux or Windows host w/ x86)
 
-**Windows**
+  * All features supported
 
-**Linux**
+**Linux** (RHEL 8, Rocky Linux 8)
 
-Docker
+  * All features supported
 
-Linux
+**Docker** (Linux host on ARM)
 
-Windows
+  * No Remote Browser Isolation
 
-found here
+**Linux** **Binary Install** (Ubuntu, Debian)
 
-[Quick Start:
-Sandbox](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
-manager/quick-start-sandbox)
+  * No Remote Browser Isolation
 
-Linux
+  * Limited connection protocols
 
-Windows
+**Windows Binary Install**
 
-Docker Installation
+  * No Remote Browser Isolation
 
-[Security & Encryption
-Model](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
-manager/about/security-encryption-model)
+  * No database connections
 
-[One-Time Access Token
-details](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
-manager/about/one-time-token)
+Copy
 
-[Secrets Manager Configuration
-details](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
-manager/about/secrets-manager-configuration)
+    
+    
+    secrets-manager client add --app "My Infrastructure App" --unlock-ip
 
-[secrets-manager Commander CLI
-command](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-cli/command-
-reference/secrets-manager-commands)
+Copy
+
+    
+    
+    secrets-manager app create "My Infrastructure"
+
+Copy
+
+    
+    
+    mkdir -uf "My Infrastructure"
+    mkdir -sf -a "My Infrastructure/Resources"
+    mkdir -sf -a "My Infrastructure/Users"
+
+Copy
+
+    
+    
+    secrets-manager share add --app "My Infrastructure" --secret <Resources folder UID>
+    secrets-manager share add --app "My Infrastructure" --secret <Users folder UID>
+
+Copy
+
+    
+    
+    pam gateway new -n "My Demo Gateway" -a "My Infrastructure"
+
+Copy
+
+    
+    
+    pam gateway new -n "My Demo Gateway" -a "My Infrastructure" -c b64
 
 Copy
 
@@ -2941,66 +3369,6 @@ Copy
     
     
     curl -fsSL https://keepersecurity.com/pam/uninstall | sudo bash -s --
-
-Copy
-
-    
-    
-    C:\ProgramFiles (x86)\Keeper Gateway\<version>
-
-Copy
-
-    
-    
-    C:\ProgramData\KeeperGateway\config\gateway-config.json
-
-Copy
-
-    
-    
-    C:\Users\<User>\.keeper\gateway-config.json
-
-Copy
-
-    
-    
-    C:\ProgramData\KeeperGateway\logs\
-
-Copy
-
-    
-    
-    C:\Users\<User>\.keeper\logs\
-
-Copy
-
-    
-    
-    keeper-gateway_windows_x86_64.exe /verysilent /suppressmsgboxes /norestart /token=<TOKEN>
-
-Copy
-
-    
-    
-    /existingconfig=1
-
-Copy
-
-    
-    
-    /log=<Optional log file>
-
-Copy
-
-    
-    
-    /mergetasks="service/account" /serviceuser=<ACCOUNT USERNAME> /servicepass=<ACCOUNT PASSWORD>
-
-Copy
-
-    
-    
-    /autoupdate=1
 
 Copy
 
@@ -3111,7 +3479,159 @@ Copy
 
     
     
-    pam gateway new -n "<Gateway Name>" -a <Application Name or UID> -c b64
+    C:\ProgramFiles (x86)\Keeper Gateway\<version>
+
+Copy
+
+    
+    
+    C:\ProgramData\KeeperGateway\config\gateway-config.json
+
+Copy
+
+    
+    
+    C:\Users\<User>\.keeper\gateway-config.json
+
+Copy
+
+    
+    
+    C:\ProgramData\KeeperGateway\logs\
+
+Copy
+
+    
+    
+    C:\Users\<User>\.keeper\logs\
+
+Copy
+
+    
+    
+    keeper-gateway_windows_x86_64.exe /verysilent /suppressmsgboxes /norestart /token=<TOKEN>
+
+Copy
+
+    
+    
+    /existingconfig=1
+
+Copy
+
+    
+    
+    /log=<Optional log file>
+
+Copy
+
+    
+    
+    /mergetasks="service/account" /serviceuser=<ACCOUNT USERNAME> /servicepass=<ACCOUNT PASSWORD>
+
+Copy
+
+    
+    
+    /autoupdate=1
+
+`Shell`
+
+Text
+
+`None`
+
+Allows you to specify a custom shell path that the Gateway will use when
+executing rotation and post-rotation scripts. This gives you control over the
+environment in which these scripts run. Example Value: `C:\MY\SHELL`
+
+`NOOP`
+
+Text
+
+`False`
+
+Allows you to control whether the Gateway performs the primary rotation
+operation or proceeds directly to execution of the post-rotation script.
+
+If set to `True` the Gateway will skip the rotation process and proceed
+directly in executing the post-rotation script(s). Example Value: `True`
+
+`Kerberos`
+
+Text
+
+`False`
+
+Specifically designed for WinRM connections using Kerberos authentication. By
+default, the Gateway automatically decides whether to use Kerberos based on
+certain rules, and If these conditions are met, the Gateway will attempt to
+use Kerberos for WinRM. However, if you encounter issues with this automatic
+detection, setting this field to `True` will override the default behavior and
+force the Gateway to use Kerberos for WinRM. Example Value: `True`
+
+`Private Key Type`
+
+Text
+
+`ssh-rsa`
+
+Gateway Version 1.3.4+ This custom field pertains to the type or algorithm of
+the private key stored in a record. When adding a private key to a record,
+users do not need to take any additional action regarding its type or
+algorithm. The system is designed to automatically recognize and use the same
+algorithm as the existing private key during the rotation process. If the
+algorithm in use is ECDSA, the key size will also be preserved during the
+rotation. Available Options if needed to overwrite the key type: `ssh-rsa`
+(Note: 4096 bits)
+
+`ssh-dss` (Note: 1024 bit, obsolete) `ecdsa-sha2-nistp256`
+
+`ecdsa-sha2-nistp384`
+
+`ecdsa-sha2-nistp521`
+
+`ssh-ed25519`
+
+`Private Key Rotate`
+
+Text
+
+`True`
+
+Gateway Version 1.3.4+
+
+`TRUE` \- (Default) If the custom field doesn't exist, the private key will be
+rotated if it exists.
+
+`FALSE` \- The private key won't be rotated, even if it exists. Users should
+pick this if they wish to retain the private key in the record without any
+rotations.
+
+Copy
+
+    
+    
+    gateway ott-init [ONE-TIME-TOKEN]
+
+Copy
+
+    
+    
+    {
+        "Sid": "SecretsManagerPermissions",
+        "Effect": "Allow",
+        "Action": [
+            "secretsmanager:GetSecretValue"
+         ],
+         "Resource": "arn:aws:secretsmanager:us-west-1:XXX:secret:XXX"
+    }
+
+Copy
+
+    
+    
+    aws secretsmanager get-secret-value --secret-id YourSecretName --query SecretString --output text
 
 Copy
 
@@ -3126,60 +3646,7 @@ Copy
               - "seccomp:docker-seccomp.json"
             environment:
               ACCEPT_EULA: Y
-              GATEWAY_CONFIG: XXXXXXXXXXXXXXXXX
-
-Copy
-
-    
-    
-    docker compose up -d
-
-Copy
-
-    
-    
-    docker compose logs keeper-gateway
-
-Copy
-
-    
-    
-    docker compose up -d
-
-Copy
-
-    
-    
-    docker compose stop
-
-Copy
-
-    
-    
-    docker compose restart
-
-Copy
-
-    
-    
-    docker compose exec keeper-gateway bash
-
-Copy
-
-    
-    
-    services:
-          keeper-gateway:
-            .....
-            environment:
-              KEEPER_GATEWAY_LOG_LEVEL: "debug" # logs for gateway
-              LOG_LEVEL: "debug" # logs for guacd
-
-Copy
-
-    
-    
-    docker compose logs -f keeper-gateway
+              AWS_KMS_SECRET_NAME: "YourSecretName"
 
 Copy
 
@@ -3193,113 +3660,20 @@ Copy
 
     
     
-    restart: always
-
-Copy
-
-    
-    
-    [Unit]
-    Description=Keeper Gateway Docker Compose
-    Requires=docker.service
-    After=docker.service
-    
-    [Service]
-    Type=oneshot
-    RemainAfterExit=yes
-    WorkingDirectory=/home/ec2-user
-    ExecStart=/usr/local/bin/docker-compose up -d
-    ExecStop=/usr/local/bin/docker-compose down
-    User=ec2-user
-    Group=docker
-    
-    [Install]
-    WantedBy=multi-user.target
+    ExecStart=/bin/bash -c "/usr/local/bin/gateway start --service --aws-kms-secret-name="YourSecretName" --log-to-stdout"
 
 Copy
 
     
     
     sudo systemctl daemon-reload
-    sudo systemctl enable keeper-gateway.service
-    sudo systemctl start keeper-gateway.service
+    sudo systemctl restart keeper-gateway
 
-PAM Machine
+Copy
 
-PAM Database
-
-PAM Directory
-
-PAM Remote Browser
-
-created a Gateway device
-
-Docker method
-
-created the Gateway
-
-Activate the Auto Updater
-
-created a Gateway device
-
-[**Download the Keeper Gateway for
-Windows**](https://keepersecurity.com/pam/gateway/keeper-
-gateway_windows_x86_64.exe)
-
-created a Gateway
-
-One-Time Access
-
-created the Gateway
-
-Storing Gateway Configuration in AWS KMS
-
-Gateway Configuration with Custom Fields
-
-[DockerHub](https://hub.docker.com/r/keeper/gateway)
-
-[Docker Install](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
-access-manager/references/installing-docker-on-linux)
-
-<https://hub.docker.com/r/keeper/gateway>[](https://hub.docker.com/r/keeper/gateway)
-
-[Installing Docker](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
-access-manager/references/installing-docker-on-linux)
-
-[ and Docker Compose on
-Linux](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
-manager/references/installing-docker-on-linux)
-
-# AWS Environment Setup
-
-Setting up your AWS environment to work with KeeperPAM
-
-##
-
-AWS Environment Overview
-
-Resources in your AWS environment can be managed by a Keeper Gateway using EC2
-instance role policy or using a specified Access Key ID / Secret Access Key
-configured in the PAM Configuration record.
-
-The role policy must be configured appropriately to enable access to the
-target AWS resources:
-
-  *   * 
-
-The following diagram shows the AWS environment hierarchy:
-
-##
-
-EC2 IAM Role Policy
-
-To create a EC2 IAM policy which supports PAM features such as password
-rotation and discovery, a role with the appropriate policy settings should be
-configured then attached to the EC2 instance running the Keeper Gateway.
-
-For KeeperPAM to have the authority to rotate IAM users and RDS databases, the
-following inline role policy should be modified to meet your needs and ensure
-least privilege.
+    
+    
+    systemctl status keeper-gateway.service
 
 Copy
 
@@ -3329,26 +3703,6 @@ Copy
             }
         ]
     }
-
-To ensure least privilege, the JSON policy should be modified based on which
-target resources that KeeperPAM will be managing through the "Action" and
-"Resource" attributes.
-
-Follow these steps to create a new role and apply the policy:
-
-  1. Create role with JSON specified above, or click on IAM > Roles > Create Role > Select "AWS Service" with "EC2 use case".
-
-  2. Attach the policy JSON to the role.
-
-  3. From EC2 > Instances, select the instance with the gateway and go to Actions > Security > Modify IAM Role > Select your new role.
-
-###
-
-Minimum AWS Policy to Manage IAM users
-
-Managed User Type
-
-IAM Policy
 
 EC2 User
 
@@ -3375,19 +3729,6 @@ Rotation uses AWS APIs for PAM User records and requires:
 
 **iam:SimulatePrincipalPolicy iam:UpdateLoginProfile iam:GetUser**
 
-* * *
-
-##
-
-IAM User Policy
-
-Using EC2 instance role policy is preferred, however the AWS Access Key ID and
-Secret Access Key can be directly set in the PAM Configuration. The IAM Admin
-account needs to be created with the appropriate policy settings configured to
-access the target resource in AWS.
-
-An sample policy is below.
-
 Copy
 
     
@@ -3417,21 +3758,501 @@ Copy
         ]
     }
 
-To ensure least privilege, the JSON policy should be modified based on which
-target resources that KeeperPAM will be managing through the "Action" and
-"Resource" attributes.
+AWS ID
 
-The steps to create the access keys is below:
+A unique id for the instance of AWS
 
-  1. Create a new IAM user or select an existing user
+Required, This is for the user's reference Ex: `AWS-US-EAST-1`
 
-  2. Attach the policy to the user
+Access Key ID
 
-  3. Open the IAM user > Security credentials > Create access key
+From an IAM user account, the Access key ID from the desired Access key.
 
-  4. Select "Application running outside AWS"
+Leave Empty when EC2 instance role is assumed.
 
-  5. Save the provided Access Key ID / Secret Access Key into the PAM Configuration
+Secret Access Key
+
+The secret key for the access key.
+
+Leave Empty when EC2 instance role is assumed.
+
+Region Names
+
+AWS region names used for discovery. Separate newline per region
+
+Ex: us-east-2 us-west-1
+
+Port Mapping
+
+Any non-standard ports referenced. Separate newline per entry
+
+Ex: 2222=ssh 3390=rdp
+
+Azure ID
+
+A unique id for your instance of Azure
+
+Required, This is for the user's reference Ex: `Azure-1`
+
+Client ID
+
+The application/client id (UUID) of the Azure application
+
+Required
+
+Client Secret
+
+The client credentials secret for the Azure application
+
+Required
+
+Subscription ID
+
+The UUID of the subscription (i.e. Pay-As-You-GO).
+
+Required
+
+Tenant ID
+
+The UUID of the Azure Active Directory
+
+Required
+
+Resource Groups
+
+A list of resource groups to be checked. If left blank, all resource groups
+will be checked. Newlines should separate each resource group.
+
+DNS Domain Name
+
+The FQDN domain used by the Domain Controller. For example, EXAMPLE.COM and
+not EXAMPLE.
+
+Yes
+
+Hostname and Port
+
+Hostname and port for the domain controller.
+
+Yes
+
+Use SSL
+
+If using LDAPS (default 636), check the box. If using LDAP (default 389),
+uncheck the box.
+
+Yes
+
+Scan Network
+
+Scan the CIDRs from the domain controller. Default to False.
+
+No
+
+Network CIDR
+
+Scan additional CIDRs from the field.
+
+No
+
+Port Mapping
+
+Define alternative default ports
+
+No
+
+Rotation
+
+If enabled, allow rotations on privileged user users managed by this PAM
+configuration
+
+Connections
+
+If enabled, allow connections on resources managed by this PAM configuration
+
+Remote Browser Isolation (RBI)
+
+If enabled, allow RBI sessions on resources managed by this PAM configuration
+
+Tunneling
+
+If enabled, allow tunnels on resources managed by this PAM configuration
+
+Graphical Session Recording
+
+If enabled, visual playback sessions will be recorded for all connections and
+RBI sessions
+
+Text Session Recording (TypeScript)
+
+If enabled, text input and output logs will be logged for all connections and
+RBI sessions
+
+PAM Machine
+
+PAM Database
+
+PAM Directory
+
+PAM Remote Browser
+
+**Docker**
+
+**Windows**
+
+**Linux**
+
+Docker
+
+Linux
+
+Windows
+
+found here
+
+[Security & Encryption
+Model](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
+manager/about/security-encryption-model)
+
+[One-Time Access Token
+details](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
+manager/about/one-time-token)
+
+[Secrets Manager Configuration
+details](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
+manager/about/secrets-manager-configuration)
+
+[secrets-manager Commander CLI
+command](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-cli/command-
+reference/secrets-manager-commands)
+
+[Quick Start:
+Sandbox](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/quick-start-sandbox)
+
+Linux
+
+Windows
+
+Docker Installation
+
+created a Gateway device
+
+Docker method
+
+created the Gateway
+
+Activate the Auto Updater
+
+created a Gateway device
+
+[**Download the Keeper Gateway for
+Windows**](https://keepersecurity.com/pam/gateway/keeper-
+gateway_windows_x86_64.exe)
+
+created a Gateway
+
+One-Time Access
+
+created the Gateway
+
+[create custom fields](https://docs.keeper.io/enterprise-guide/record-
+types#custom-fields)
+
+Docker Installation
+
+Linux Installation
+
+Storing Gateway Configuration in AWS KMS
+
+Gateway Configuration with Custom Fields
+
+using the AWS KMS
+
+AWS Environment Setup
+
+Azure Environment Setup
+
+specified service account
+
+verbose logging
+
+Title
+
+Name of PAM configuration record
+
+Ex: `US-EAST-1 Config`
+
+Gateway
+
+The configured gateway
+
+Application Folder
+
+The shared folder where the PAM Configuration data will be stored
+
+Best practice is to create a folder with limited access to admins. See
+Security Note (1) below
+
+PAM Settings
+
+List of Zero-Trust KeeperPAM features that should be enabled
+
+Default Rotation Schedule
+
+Specify frequency of Rotation
+
+Ex: `Daily`
+
+Port Mapping
+
+Define alternative default ports
+
+Network ID
+
+Unique ID for the network
+
+This is for the user's reference
+
+Ex: `My Network`
+
+Network CIDR
+
+Subnet of the IP address
+
+# Example: Azure Windows VM
+
+Configuring an Azure Windows VM as a PAM Machine Record
+
+##
+
+Overview
+
+In this example, you'll learn how to configure a Azure Windows VM in your
+Keeper Vault as a PAM Machine record.
+
+##
+
+Prerequisites
+
+Prior to proceeding with this guide, make sure you have
+
+  1.   2. 
+
+##
+
+PAM Machine Record
+
+Machines such as a Azure Virtual Machines can be configured on the PAM Machine
+record type.
+
+###
+
+Creating a PAM Machine
+
+To create a PAM Database:
+
+  * Click on **Create New**
+
+  * Depending on your use case, click on "Rotation", "Tunnel", or "Connection" 
+
+  * On the prompted window:
+
+    * Select "**New Record** " 
+
+    * Select the Shared Folder you want the record to be created in 
+
+    * Specify the Title
+
+    * Select "**Machine** " for the Target 
+
+  * Click "**Next** " and complete all of the required information.
+
+###
+
+Configure a Windows Machine on the PAM Machine Record
+
+Suppose I have a Azure Virtual Machine with the hostname "10.0.1.4", the
+following table lists all the configurable fields and their respective values:
+
+Field
+
+Description
+
+Value
+
+Title (Required)
+
+Title of the PAM Machine Record
+
+`Windows VM`
+
+Hostname or IP Address (Required)
+
+Address or RDP endpoint or Server name of the Machine Resource
+
+`10.0.1.4`
+
+Port (Required)
+
+Port to connect to the Azure VM for rotation. 22 for SSH, 5986 for WinRM
+
+5986
+
+Operating System
+
+The target's Operating System
+
+Set to: `Windows`
+
+Instance Name
+
+Azure or AWS Instance Name
+
+**Required** if AWS/Azure Machine `webserver-prod-01`
+
+Instance ID
+
+Azure or AWS Instance ID
+
+**Required** if AWS/Azure Machine
+
+Provider Group
+
+Azure or AWS Provider Group
+
+**Required** if a managed Azure Machine
+
+Provider Region
+
+Azure or AWS Provider Region
+
+**Required** if a managed AWS Machine
+
+###
+
+Configuring PAM Settings on the PAM Machine
+
+On the "PAM Settings" section of the vault record, you can configure the
+KeeperPAM Connection and Tunnel settings and link a PAM User credential for
+performing rotations and connections. Tunnels do not require a linked
+credential. The following table lists all the configurable fields and their
+respective values for the Azure Virtual Machine:
+
+Field
+
+Description
+
+Required
+
+PAM Configuration
+
+Associated PAM Configuration record which defines the environment
+
+**Required -** This is the PAM configuration you created in the prerequisites
+
+Administrative Credential Record
+
+Linked PAM User credential used for connection and administrative operations
+
+Protocol
+
+Native protocol used for connecting from the Gateway to the target
+
+**Required -** for this example: "RDP"
+
+Session Recording
+
+Options for recording sessions and typescripts
+
+Connection Parameters
+
+Connection-specific protocol settings which can vary based on the protocol
+type
+
+###
+
+Administrative Credential Record
+
+The **Admin Credential Record** in the PAM Machine links the admin user to the
+PAM Machine record in your Keeper Vault. This admin user is used for
+performing password rotations and authenticating connections.
+
+####
+
+Setting a Non Admin User as the Administrative Credential Record
+
+If you prefer not to authenticate a connection using the admin credential, you
+can optionally designate a regular user of the resource as the admin
+credential.
+
+##
+
+Sharing PAM Machine Records
+
+PAM Machine records can be shared with other Keeper users within your
+organization. However, the recipient must have the appropriate PAM enforcement
+policies in place to utilize KeeperPAM features on the shared PAM records.
+
+When sharing a PAM Machine record, the linked admin credentials will **not**
+be shared. For example, if the PAM Machine is configured with a Azure Virtual
+Machine, the recipient can connect to the Azure Virtual Machine on the PAM
+Machine record without having direct access to the linked credentials.
+
+  * 
+
+# PAM Resources
+
+Guide for using PAM Resource Records in the Keeper Vault for privileged access
+functionality.
+
+##
+
+Overview
+
+KeeperPAM Resource records are special record types designed to organize and
+store information of your target infrastructure, machines, web apps, workloads
+and user accounts.
+
+  * 
+
+###
+
+KeeperPAM Record Types
+
+In your Keeper Vault, resources that represent your infrastructure are created
+with the following Record Types:
+
+PAM Record Type
+
+Target Infrastructure
+
+Windows/macOS/Linux Machines, EC2 Instances, Azure VMs, etc.
+
+MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
+
+Active Directory, OpenLDAP
+
+Web-based Applications, internal apps or cloud apps
+
+Any local user, remote user, database credential or admin account. PAM User
+records can also be configured for scheduled or on-demand password rotation.
+
+###
+
+Record Linking
+
+###
+
+Creating a PAM Record
+
+From the Vault UI, click on Create New and select either Rotation, Tunnel or
+Connection.
+
+Alternatively, you can right-click on a folder and select Rotation, Tunnel or
+Connection.
+
+The "Target" selection will determine what type of record will be created.
 
 # Local Environment Setup
 
@@ -3580,285 +4401,381 @@ After creating the PAM configuration, visit the following pages to:
 
   *   *   *   *   * 
 
-# Gateway Configuration with AWS KMS
+# Example: Linux Machine
 
-Storing and protecting the Keeper Gateway Configuration using AWS KMS
+Configuring SSH Server as a PAM Machine Record
 
 ##
 
-**Overview**
+Overview
 
-If the Keeper Gateway is installed on an AWS EC2 Instance, the corresponding
-Gateway configuration file can be protected and stored in AWS Secrets Manager.
-This method eliminates the need for storing a configuration file on the
-instance, and instead stores the configuration file with AWS KMS protection.
+In this example, you'll learn how to configure a Linux Machine in your Keeper
+Vault as a PAM Machine record.
 
-###
-
-**AWS Key Management Service (KMS) Key**
-
-AWS KMS is a fully managed service that makes it easy for you to create and
-control the cryptographic keys used to encrypt and decrypt your data. The
-service is integrated with other AWS services, making it easier to encrypt
-data and manage keys. You will need a AWS KMS key as part of this process, and
-it is recommended that you follow the principle of least privilege when
-assigning permissions to this key.
-
-###
+##
 
 Prerequisites
 
-In order to use AWS KMS to protect the Gateway configuration secrets, you need
-to install the Keeper Gateway on an EC2 instance which assumes an IAM Role.
-This works on either Docker or Linux install methods.
+Prior to proceeding with this guide, make sure you have
 
-  *   * 
-
-###
-
-Generate a Configuration
-
-From the Keeper Vault, go to **Secrets Manager** > **Applications** and select
-the application configured with your Gateway. Then select the Gateways tab and
-select "Provision Gateway".
-
-Select the Gateway initialization method of "Configuration" and click Next.
-
-Alternatively, you can generate a One-Time Access Token and then use the
-Keeper Gateway's "gateway ott-init" command:
-
-Copy
-
-    
-    
-    gateway ott-init [ONE-TIME-TOKEN]
-
-In either case, you'll be provided with a base64 encoded configuration. Save
-this for the next step.
-
-###
-
-Create Secret in AWS Secrets Manager
-
-From the AWS Console, go to the Secrets Manager and create a new secret.
-
-  * Select "Other type of secret"
-
-  * Select Plaintext and paste the entire base64 value there.
-
-  * Click **Next**.
-
-Enter a **Secret Name** and a description then click **Next** , **Next** and
-**Store**.
-
-###
-
-Assign Policy to Instance Role
-
-The EC2 instance role needs to be assigned a policy which provides read access
-to the specific AWS Secrets Manager key. As an example:
-
-Copy
-
-    
-    
-    {
-        "Sid": "SecretsManagerPermissions",
-        "Effect": "Allow",
-        "Action": [
-            "secretsmanager:GetSecretValue"
-         ],
-         "Resource": "arn:aws:secretsmanager:us-west-1:XXX:secret:XXX"
-    }
-
-###
-
-Confirming Access
-
-From the EC2 instance, the below command will confirm the policy has been
-applied:
-
-Copy
-
-    
-    
-    aws secretsmanager get-secret-value --secret-id YourSecretName --query SecretString --output text
-
-###
-
-Configuration of the Keeper Gateway
-
-####
-
-Docker Install Method
-
-For Docker installations, remove the `GATEWAY_CONFIG` entry and add
-`AWS_KMS_SECRET_NAME` with the value containing the name of the secret from
-the AWS secrets manager.
-
-Copy
-
-    
-    
-    services:
-          keeper-gateway:
-            platform: linux/amd64
-            image: keeper/gateway:latest
-            shm_size: 2g
-            security_opt:
-              - "seccomp:docker-seccomp.json"
-            environment:
-              ACCEPT_EULA: Y
-              AWS_KMS_SECRET_NAME: "YourSecretName"
-
-Then update the service with the new environment:
-
-Copy
-
-    
-    
-    docker compose pull
-    docker compose down
-    docker compose up -d
-
-####
-
-Linux Install Method
-
-Open the Keeper Gateway service unit file:
-
-`/etc/systemd/system/keeper-gateway.service`
-
-Modify the "ExecStart" line as seen below, replacing YourSecretName with your
-assigned name.
-
-Copy
-
-    
-    
-    ExecStart=/bin/bash -c "/usr/local/bin/gateway start --service --aws-kms-secret-name="YourSecretName" --log-to-stdout"
-
-Apply changes to the service:
-
-Copy
-
-    
-    
-    sudo systemctl daemon-reload
-    sudo systemctl restart keeper-gateway
-
-If there are any errors starting up, they can be seen through this command:
-
-Copy
-
-    
-    
-    systemctl status keeper-gateway.service
-
-# Gateway Configuration with Custom Fields
-
-Advanced configuration of the Keeper gateway with Keeper Vault custom fields
-
-These configuration capabilities are functional and currently in an
-experimental phase, and we invite users to actively explore and utilize them.
-We are actively evaluating their functionality and performance, with the
-intention of considering them for official integration into our product in the
-future.
+  1.   2. 
 
 ##
 
-Advanced Gateway Configuration with Custom Fields
+PAM Machine Record
 
-The additional gateway configurations will be defined with these custom fields
-on the PAM Record Types. The Keeper Gateway will then adjust its behavior
-based on the defined configurations.
+Machines such as a Linux Machines can be configured on the PAM Machine record
+type.
 
-The following tables lists all the possible configurations with custom fields:
+###
 
-Custom Field Name
+Creating a PAM Machine
 
-Type
+To create a PAM Database:
 
-Default Value
+  * Click on **Create New**
+
+  * Depending on your use case, click on "Rotation", "Tunnel", or "Connection" 
+
+  * On the prompted window:
+
+    * Select "**New Record** " 
+
+    * Select the Shared Folder you want the record to be created in 
+
+    * Specify the Title
+
+    * Select "**Machine** " for the Target 
+
+  * Click "**Next** " and complete all of the required information.
+
+###
+
+Configure a Linux Machine on the PAM Machine Record
+
+Suppose I have a local Linux Virtual Machine with the hostname "linux-
+machine", the following table lists all the configurable fields and their
+respective values:
+
+Field
 
 Description
 
-`Shell`
+Value
 
-Text
+Title (Required)
 
-`None`
+Title of the PAM Machine Record
 
-Allows you to specify a custom shell path that the Gateway will use when
-executing rotation and post-rotation scripts. This gives you control over the
-environment in which these scripts run. Example Value: `C:\MY\SHELL`
+`Linux Machine`
 
-`NOOP`
+Hostname or IP Address (Required)
 
-Text
+Address or RDP endpoint or Server name of the Machine Resource
 
-`False`
+linux-machine
 
-Allows you to control whether the Gateway performs the primary rotation
-operation or proceeds directly to execution of the post-rotation script.
+Port (Required)
 
-If set to `True` the Gateway will skip the rotation process and proceed
-directly in executing the post-rotation script(s). Example Value: `True`
+Port to connect to the Linux Resource
 
-`Kerberos`
+22
 
-Text
+Operating System
 
-`False`
+The target's Operating System
 
-Specifically designed for WinRM connections using Kerberos authentication. By
-default, the Gateway automatically decides whether to use Kerberos based on
-certain rules, and If these conditions are met, the Gateway will attempt to
-use Kerberos for WinRM. However, if you encounter issues with this automatic
-detection, setting this field to `True` will override the default behavior and
-force the Gateway to use Kerberos for WinRM. Example Value: `True`
+`linux`
 
-`Private Key Type`
+Instance Name
 
-Text
+Azure or AWS Instance Name
 
-`ssh-rsa`
+**Required** if AWS/Azure Machine
 
-Gateway Version 1.3.4+ This custom field pertains to the type or algorithm of
-the private key stored in a record. When adding a private key to a record,
-users do not need to take any additional action regarding its type or
-algorithm. The system is designed to automatically recognize and use the same
-algorithm as the existing private key during the rotation process. If the
-algorithm in use is ECDSA, the key size will also be preserved during the
-rotation. Available Options if needed to overwrite the key type: `ssh-rsa`
-(Note: 4096 bits)
+Instance ID
 
-`ssh-dss` (Note: 1024 bit, obsolete) `ecdsa-sha2-nistp256`
+Azure or AWS Instance ID
 
-`ecdsa-sha2-nistp384`
+**Required** if AWS/Azure Machine
 
-`ecdsa-sha2-nistp521`
+Provider Group
 
-`ssh-ed25519`
+Azure or AWS Provider Group
 
-`Private Key Rotate`
+**Required** if a managed Azure Machine
 
-Text
+Provider Region
 
-`True`
+Azure or AWS Provider Region
 
-Gateway Version 1.3.4+
+**Required** if a managed AWS Machine
 
-`TRUE` \- (Default) If the custom field doesn't exist, the private key will be
-rotated if it exists.
+###
 
-`FALSE` \- The private key won't be rotated, even if it exists. Users should
-pick this if they wish to retain the private key in the record without any
-rotations.
+Configuring PAM Settings on the PAM Machine
 
-**Note:**
+On the "PAM Settings" section of the vault record, you can configure the
+KeeperPAM Connection and Tunnel settings and link a PAM User credential for
+performing rotations and connections. Tunnels do not require a linked
+credential. The following table lists all the configurable fields and their
+respective values for the Linux Machine:
 
-  * The custom fields values are not case-sensitive.
+Field
+
+Description
+
+Required
+
+PAM Configuration
+
+Associated PAM Configuration record which defines the environment
+
+**Required -** This is the PAM configuration you created in the prerequisites
+
+Administrative Credential Record
+
+Linked PAM User credential used for connection and administrative operations
+
+Protocol
+
+Native protocol used for creating a session from the Gateway to the target
+
+**Required -** for this example: "SSH"
+
+Session Recording
+
+Options for recording sessions and typescripts
+
+Connection Parameters
+
+Connection-specific protocol settings which can vary based on the protocol
+type.
+
+###
+
+Administrative Credential Record
+
+The **Admin Credential Record** in the PAM Machine links the admin user to the
+PAM Machine record in your Keeper Vault. This admin user is used for
+performing password rotations and authenticating connections.
+
+####
+
+Setting a Non Admin User as the Administrative Credential Record
+
+If you prefer not to authenticate a connection using the admin credential, you
+can optionally designate a regular user of the resource as the admin
+credential.
+
+##
+
+Sharing PAM Machine Records
+
+When sharing a PAM Machine record, the linked admin credentials will **not**
+be shared. For example, if the PAM Machine is configured with a Linux Machine,
+the recipient can connect to the Linux Machine on the PAM Machine record
+without having direct access to the linked credentials.
+
+  * 
+
+# PAM Machine
+
+KeeperPAM resource for managing machines on-prem or in the cloud
+
+##
+
+Overview
+
+A PAM Machine record is a type of KeeperPAM resource that represents a
+workload, such as a Windows or Linux server.
+
+PAM Record Type
+
+Supported Assets
+
+PAM Machine
+
+Windows/macOS/Linux Machines, EC2 Instances, Azure VMs
+
+##
+
+Features Available
+
+The PAM Machine resource supports the following features:
+
+  * Password rotation
+
+  * SSH key rotation
+
+  * Zero-trust Connections using RDP, SSH, VNC, K8s and Telnet protocols
+
+  * TCP Tunnels
+
+  * Session recording
+
+  * Sharing access without sharing credentials
+
+  * File transfer through drag-and-drop
+
+##
+
+Creating a PAM Machine
+
+Prior to creating a PAM Machine, make sure you have already created a PAM
+Configuration. The PAM Configuration contains information of your target
+infrastructure while the PAM Machine contains information of an asset, such as
+a Windows or Linux server.
+
+To create a PAM Machine:
+
+  * Click on **Create New**
+
+  * Depending on your use case, click on "Rotation", "Tunnel", or "Connection" 
+
+  * On the prompted window:
+
+    * Select "**New Record** " 
+
+    * Select the Shared Folder you want the record to be created in 
+
+    * Specify the Title
+
+    * Select "**Machine** " for the Target 
+
+  * Click "**Next** " and complete all of the required information.
+
+##
+
+PAM Machine Record Type Fields
+
+The following table lists all the configurable fields on the PAM Machine
+Record Type:
+
+Field
+
+Description
+
+Notes
+
+Hostname or IP Address
+
+Address of the machine resource
+
+**Required**
+
+Port
+
+Port to connect on. The Gateway uses this to determine connection method.
+
+**Required** Must be a port for SSH or WinRM
+
+Keeper expects 22, 5985, 5986, or an alternative port for SSH or WinRM
+specified in the PAM Configuration port mapping
+
+Administrative Credentials
+
+Linked PAM User credential used for connection and administrative operations
+
+PAM settings
+
+This is where you configure Connection and Tunnel settings for this machine.
+
+Operating System
+
+The target's Operating System
+
+For your reference only
+
+SSL Verification
+
+When checked, verifies certificate of host when connecting with SSH
+
+Only applies to certain databases and directories where SSL is optional
+
+Instance Name
+
+Azure or AWS Instance Name
+
+**Required** if AWS/Azure Machine
+
+Instance Id
+
+Azure or AWS Instance ID
+
+**Required** if AWS/Azure Machine
+
+Provider Group
+
+Provider Group for directories hosted in Azure
+
+**Required** if Azure Machine
+
+Provider Region
+
+AWS region of hosted directory
+
+**Required** if AWS Machine
+
+##
+
+PAM Settings and Administrative Credentials
+
+On the "PAM Settings" section of the vault record, you can configure the
+KeeperPAM Connection and Tunnel settings and link a PAM User credential for
+performing rotations and connections. Tunnels do not require a linked
+credential.
+
+###
+
+PAM Settings
+
+Field
+
+Description
+
+Required
+
+PAM Configuration
+
+Associated PAM Configuration record which defines the environment
+
+**Required**
+
+Administrative Credential Record
+
+Linked PAM User credential used for connection and administrative operations
+
+**Required**
+
+Protocol
+
+Native protocol used for connecting the session from the Gateway to the target
+
+**Required**
+
+Session Recording
+
+Options for recording sessions and typescripts
+
+Connection Parameters (multiple)
+
+Connection-specific protocol settings which can vary based on the protocol
+type
+
+Depends on protocol. We recommend specifying the **Connection Port** at a
+minimum.
+
+Below are a couple examples of PAM Machine records with Connections and
+Tunnels activated.
+
+##
+
+Examples
+
+Visit the following pages to set up:
+
+  *   * 
 
 # Azure Environment Setup
 
@@ -4064,1976 +4981,6 @@ After creating the PAM configuration, visit the following pages to:
 
   *   *   *   *   * 
 
-# PAM Configuration
-
-Creating a PAM Configuration in the Keeper Vault
-
-##
-
-Overview
-
-In Keeper, the **PAM Configuration** contains essential information of your
-target infrastructure, settings and associated Keeper Gateway. We recommend
-setting up one PAM Configuration for each Gateway and network being managed.
-
-##
-
-Creating PAM Configuration
-
-To create a new PAM Configuration:
-
-  * Login to the Keeper Vault
-
-  * Select Secrets Manager and the "PAM Configurations" tab
-
-  * Click on "New Configuration"
-
-##
-
-PAM Configuration Fields
-
-When setting up the PAM Configuration, you have the option of choosing one of
-the following environments:
-
-  *   *   *   * 
-
-The following tables provides more details on each configurable fields in the
-PAM Configuration record regardless of the environment you choose:
-
-Field
-
-Description
-
-Notes
-
-Title
-
-Name of PAM configuration record
-
-Ex: `US-EAST-1 Config`
-
-Gateway
-
-The configured gateway
-
-Application Folder
-
-The shared folder where the PAM Configuration data will be stored
-
-Best practice is to create a folder with limited access to admins. See
-Security Note (1) below
-
-PAM Settings
-
-List of Zero-Trust KeeperPAM features that should be enabled
-
-Default Rotation Schedule
-
-Specify frequency of Rotation
-
-Ex: `Daily`
-
-Port Mapping
-
-Define alternative default ports
-
-**Security Note (1)** The PAM Configuration information is stored as a record
-in the vault inside the specified **Application Folder** and may contain
-secrets. Therefore, we recommend that the Application Folder should be limited
-in access to only privileged admins.
-
-The following tables provides more details on each configurable fields in the
-PAM Network Configuration record based on the environment you chose:
-
-###
-
-Local Network Environment
-
-Field
-
-Description
-
-Notes
-
-Network ID
-
-Unique ID for the network
-
-This is for the user's reference
-
-Ex: `My Network`
-
-Network CIDR
-
-Subnet of the IP address
-
-###
-
-AWS Environment
-
-Field
-
-Description
-
-Notes
-
-AWS ID
-
-A unique id for the instance of AWS
-
-Required, This is for the user's reference Ex: `AWS-US-EAST-1`
-
-Access Key ID
-
-From an IAM user account, the Access key ID from the desired Access key.
-
-Leave Empty when EC2 instance role is assumed.
-
-Secret Access Key
-
-The secret key for the access key.
-
-Leave Empty when EC2 instance role is assumed.
-
-Region Names
-
-AWS region names used for discovery. Separate newline per region
-
-Ex: us-east-2 us-west-1
-
-Port Mapping
-
-Any non-standard ports referenced. Separate newline per entry
-
-Ex: 2222=ssh 3390=rdp
-
-  * 
-
-###
-
-Azure Environment
-
-Field
-
-Description
-
-Notes
-
-Azure ID
-
-A unique id for your instance of Azure
-
-Required, This is for the user's reference Ex: `Azure-1`
-
-Client ID
-
-The application/client id (UUID) of the Azure application
-
-Required
-
-Client Secret
-
-The client credentials secret for the Azure application
-
-Required
-
-Subscription ID
-
-The UUID of the subscription (i.e. Pay-As-You-GO).
-
-Required
-
-Tenant ID
-
-The UUID of the Azure Active Directory
-
-Required
-
-Resource Groups
-
-A list of resource groups to be checked. If left blank, all resource groups
-will be checked. Newlines should separate each resource group.
-
-  * 
-
-###
-
-Domain Controller Environment
-
-Field
-
-Description
-
-Required
-
-DNS Domain Name
-
-The FQDN domain used by the Domain Controller. For example, EXAMPLE.COM and
-not EXAMPLE.
-
-Yes
-
-Hostname and Port
-
-Hostname and port for the domain controller.
-
-Yes
-
-Use SSL
-
-If using LDAPS (default 636), check the box. If using LDAP (default 389),
-uncheck the box.
-
-Yes
-
-Scan Network
-
-Scan the CIDRs from the domain controller. Default to False.
-
-No
-
-Network CIDR
-
-Scan additional CIDRs from the field.
-
-No
-
-Port Mapping
-
-Define alternative default ports
-
-No
-
-##
-
-PAM Features on PAM Configuration
-
-The **"PAM Features Allowed"** and **"Session Recording Types Allowed"**
-sections in the PAM Configuration allow owners to enable or disable KeeperPAM
-features for resources managed through the PAM configuration:
-
-Field
-
-Description
-
-Rotation
-
-If enabled, allow rotations on privileged user users managed by this PAM
-configuration
-
-Connections
-
-If enabled, allow connections on resources managed by this PAM configuration
-
-Remote Browser Isolation (RBI)
-
-If enabled, allow RBI sessions on resources managed by this PAM configuration
-
-Tunneling
-
-If enabled, allow tunnels on resources managed by this PAM configuration
-
-Graphical Session Recording
-
-If enabled, visual playback sessions will be recorded for all connections and
-RBI sessions
-
-Text Session Recording (TypeScript)
-
-If enabled, text input and output logs will be logged for all connections and
-RBI sessions
-
-# PAM Resources
-
-Guide for using PAM Resource Records in the Keeper Vault for privileged access
-functionality.
-
-##
-
-Overview
-
-KeeperPAM Resource records are special record types designed to organize and
-store information of your target infrastructure, machines, web apps, workloads
-and user accounts.
-
-  * 
-
-###
-
-KeeperPAM Record Types
-
-In your Keeper Vault, resources that represent your infrastructure are created
-with the following Record Types:
-
-PAM Record Type
-
-Target Infrastructure
-
-Windows/macOS/Linux Machines, EC2 Instances, Azure VMs, etc.
-
-MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
-
-Active Directory, OpenLDAP
-
-Web-based Applications, internal apps or cloud apps
-
-Any local user, remote user, database credential or admin account. PAM User
-records can also be configured for scheduled or on-demand password rotation.
-
-###
-
-Record Linking
-
-###
-
-Creating a PAM Record
-
-From the Vault UI, click on Create New and select either Rotation, Tunnel or
-Connection.
-
-Alternatively, you can right-click on a folder and select Rotation, Tunnel or
-Connection.
-
-The "Target" selection will determine what type of record will be created.
-
-# PAM Database
-
-KeeperPAM resource for managing databases either on-prem or in the cloud
-
-##
-
-Overview
-
-In your Keeper Vault, the following assets can be configured on the PAM
-Database record type:
-
-PAM Record Type
-
-Supported Assets
-
-PAM Database
-
-MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
-
-This guide will cover the **PAM Database** Record type in more details.
-
-##
-
-Features Available
-
-The PAM Database resource supports the following features:
-
-  * Password rotation
-
-  * Zero-trust Connections
-
-  * TCP Tunnels
-
-  * Graphical session recording
-
-  * Text session recording (Typescript)
-
-  * Sharing access without sharing credentials
-
-##
-
-Creating a PAM Database
-
-Prior to creating a PAM Database, make sure you have already created a PAM
-Configuration. The PAM Configuration contains information of your target
-infrastructure while the PAM Database contains information about the target
-database, such as the hostname, type (MySQL, PostgreSQL, etc) and port number.
-
-To create a PAM Database:
-
-  * Click on **Create New**
-
-  * Depending on your use case, click on "Rotation", "Tunnel", or "Connection" 
-
-  * On the prompted window:
-
-    * Select "**New Record** " 
-
-    * Select the Shared Folder you want the record to be created in 
-
-    * Specify the Title
-
-    * Select "**Database** " for the Target 
-
-  * Click "**Next** " and complete all of the required information.
-
-##
-
-PAM Database Record Type Fields
-
-The following table lists all the configurable fields on the PAM Database
-Record Type:
-
-Field
-
-Description
-
-Notes
-
-Hostname or IP Address
-
-Address of the Database Resource
-
-**Required**
-
-Port
-
-Port to connect to the Database Resource
-
-**Required** Standard ports are: PostgreSQL: 5432 MySQL: 3306 Maria DB: 3306
-Microsoft SQL: 1433 Oracle: 1521 Mongo DB: 27017
-
-Use SSL
-
-Use SSL when connecting
-
-Connect Database
-
-Database name to connect to
-
-**Required** for connecting to PostgreSQL, MongoDB, and MS SQL Server
-
-Database Id
-
-Azure or AWS Resource ID
-
-**Required** if a managed AWS or Azure Database
-
-Database Type
-
-Appropriate database type from supported databases.
-
-If a non-standard port is provided, the Database Type will be used to
-determine connection method.
-
-Provider Group
-
-Azure or AWS Provider Group
-
-**Required** if a managed AWS or Azure Database
-
-Provider Region
-
-Azure or AWS Provider Region
-
-**Required** if a managed AWS or Azure Database
-
-##
-
-PAM Settings and Administrative Credentials
-
-On the "PAM Settings" section of the vault record, you can configure the
-KeeperPAM Connection and Tunnel settings and link a PAM User credential for
-performing rotations and connections. Tunnels do not require a linked
-credential.
-
-###
-
-PAM Settings
-
-Field
-
-Description
-
-Required
-
-PAM Configuration
-
-Associated PAM Configuration record which defines the environment
-
-**Required**
-
-Administrative Credential Record
-
-Linked PAM User credential used for connection and administrative operations
-
-Protocol
-
-Native database protocol used for connecting from the Gateway to the target
-
-**Required**
-
-Session Recording
-
-Options for recording sessions and typescripts
-
-Connection Parameters (multiple)
-
-Connection-specific protocol settings which can vary based on the protocol
-type
-
-Depends on protocol
-
-Below is an example of a PAM Database record with Connections and Tunnels
-activated.
-
-##
-
-Examples
-
-Visit the following pages to set up:
-
-  *   *   * 
-
-# Example: Azure Windows VM
-
-Configuring an Azure Windows VM as a PAM Machine Record
-
-##
-
-Overview
-
-In this example, you'll learn how to configure a Azure Windows VM in your
-Keeper Vault as a PAM Machine record.
-
-##
-
-Prerequisites
-
-Prior to proceeding with this guide, make sure you have
-
-  1.   2. 
-
-##
-
-PAM Machine Record
-
-Machines such as a Azure Virtual Machines can be configured on the PAM Machine
-record type.
-
-###
-
-Creating a PAM Machine
-
-To create a PAM Database:
-
-  * Click on **Create New**
-
-  * Depending on your use case, click on "Rotation", "Tunnel", or "Connection" 
-
-  * On the prompted window:
-
-    * Select "**New Record** " 
-
-    * Select the Shared Folder you want the record to be created in 
-
-    * Specify the Title
-
-    * Select "**Machine** " for the Target 
-
-  * Click "**Next** " and complete all of the required information.
-
-###
-
-Configure a Windows Machine on the PAM Machine Record
-
-Suppose I have a Azure Virtual Machine with the hostname "10.0.1.4", the
-following table lists all the configurable fields and their respective values:
-
-Field
-
-Description
-
-Value
-
-Title (Required)
-
-Title of the PAM Machine Record
-
-`Windows VM`
-
-Hostname or IP Address (Required)
-
-Address or RDP endpoint or Server name of the Machine Resource
-
-`10.0.1.4`
-
-Port (Required)
-
-Port to connect to the Azure VM for rotation. 22 for SSH, 5986 for WinRM
-
-5986
-
-Operating System
-
-The target's Operating System
-
-Set to: `Windows`
-
-Instance Name
-
-Azure or AWS Instance Name
-
-**Required** if AWS/Azure Machine `webserver-prod-01`
-
-Instance ID
-
-Azure or AWS Instance ID
-
-**Required** if AWS/Azure Machine
-
-Provider Group
-
-Azure or AWS Provider Group
-
-**Required** if a managed Azure Machine
-
-Provider Region
-
-Azure or AWS Provider Region
-
-**Required** if a managed AWS Machine
-
-###
-
-Configuring PAM Settings on the PAM Machine
-
-On the "PAM Settings" section of the vault record, you can configure the
-KeeperPAM Connection and Tunnel settings and link a PAM User credential for
-performing rotations and connections. Tunnels do not require a linked
-credential. The following table lists all the configurable fields and their
-respective values for the Azure Virtual Machine:
-
-Field
-
-Description
-
-Required
-
-PAM Configuration
-
-Associated PAM Configuration record which defines the environment
-
-**Required -** This is the PAM configuration you created in the prerequisites
-
-Administrative Credential Record
-
-Linked PAM User credential used for connection and administrative operations
-
-Protocol
-
-Native protocol used for connecting from the Gateway to the target
-
-**Required -** for this example: "RDP"
-
-Session Recording
-
-Options for recording sessions and typescripts
-
-Connection Parameters
-
-Connection-specific protocol settings which can vary based on the protocol
-type
-
-###
-
-Administrative Credential Record
-
-The **Admin Credential Record** in the PAM Machine links the admin user to the
-PAM Machine record in your Keeper Vault. This admin user is used for
-performing password rotations and authenticating connections.
-
-####
-
-Setting a Non Admin User as the Administrative Credential Record
-
-If you prefer not to authenticate a connection using the admin credential, you
-can optionally designate a regular user of the resource as the admin
-credential.
-
-##
-
-Sharing PAM Machine Records
-
-PAM Machine records can be shared with other Keeper users within your
-organization. However, the recipient must have the appropriate PAM enforcement
-policies in place to utilize KeeperPAM features on the shared PAM records.
-
-When sharing a PAM Machine record, the linked admin credentials will **not**
-be shared. For example, if the PAM Machine is configured with a Azure Virtual
-Machine, the recipient can connect to the Azure Virtual Machine on the PAM
-Machine record without having direct access to the linked credentials.
-
-  * 
-
-# Example: Linux Machine
-
-Configuring SSH Server as a PAM Machine Record
-
-##
-
-Overview
-
-In this example, you'll learn how to configure a Linux Machine in your Keeper
-Vault as a PAM Machine record.
-
-##
-
-Prerequisites
-
-Prior to proceeding with this guide, make sure you have
-
-  1.   2. 
-
-##
-
-PAM Machine Record
-
-Machines such as a Linux Machines can be configured on the PAM Machine record
-type.
-
-###
-
-Creating a PAM Machine
-
-To create a PAM Database:
-
-  * Click on **Create New**
-
-  * Depending on your use case, click on "Rotation", "Tunnel", or "Connection" 
-
-  * On the prompted window:
-
-    * Select "**New Record** " 
-
-    * Select the Shared Folder you want the record to be created in 
-
-    * Specify the Title
-
-    * Select "**Machine** " for the Target 
-
-  * Click "**Next** " and complete all of the required information.
-
-###
-
-Configure a Linux Machine on the PAM Machine Record
-
-Suppose I have a local Linux Virtual Machine with the hostname "linux-
-machine", the following table lists all the configurable fields and their
-respective values:
-
-Field
-
-Description
-
-Value
-
-Title (Required)
-
-Title of the PAM Machine Record
-
-`Linux Machine`
-
-Hostname or IP Address (Required)
-
-Address or RDP endpoint or Server name of the Machine Resource
-
-linux-machine
-
-Port (Required)
-
-Port to connect to the Linux Resource
-
-22
-
-Operating System
-
-The target's Operating System
-
-`linux`
-
-Instance Name
-
-Azure or AWS Instance Name
-
-**Required** if AWS/Azure Machine
-
-Instance ID
-
-Azure or AWS Instance ID
-
-**Required** if AWS/Azure Machine
-
-Provider Group
-
-Azure or AWS Provider Group
-
-**Required** if a managed Azure Machine
-
-Provider Region
-
-Azure or AWS Provider Region
-
-**Required** if a managed AWS Machine
-
-###
-
-Configuring PAM Settings on the PAM Machine
-
-On the "PAM Settings" section of the vault record, you can configure the
-KeeperPAM Connection and Tunnel settings and link a PAM User credential for
-performing rotations and connections. Tunnels do not require a linked
-credential. The following table lists all the configurable fields and their
-respective values for the Linux Machine:
-
-Field
-
-Description
-
-Required
-
-PAM Configuration
-
-Associated PAM Configuration record which defines the environment
-
-**Required -** This is the PAM configuration you created in the prerequisites
-
-Administrative Credential Record
-
-Linked PAM User credential used for connection and administrative operations
-
-Protocol
-
-Native protocol used for creating a session from the Gateway to the target
-
-**Required -** for this example: "SSH"
-
-Session Recording
-
-Options for recording sessions and typescripts
-
-Connection Parameters
-
-Connection-specific protocol settings which can vary based on the protocol
-type.
-
-###
-
-Administrative Credential Record
-
-The **Admin Credential Record** in the PAM Machine links the admin user to the
-PAM Machine record in your Keeper Vault. This admin user is used for
-performing password rotations and authenticating connections.
-
-####
-
-Setting a Non Admin User as the Administrative Credential Record
-
-If you prefer not to authenticate a connection using the admin credential, you
-can optionally designate a regular user of the resource as the admin
-credential.
-
-##
-
-Sharing PAM Machine Records
-
-When sharing a PAM Machine record, the linked admin credentials will **not**
-be shared. For example, if the PAM Machine is configured with a Linux Machine,
-the recipient can connect to the Linux Machine on the PAM Machine record
-without having direct access to the linked credentials.
-
-  * 
-
-# Example: MySQL Database
-
-Configuring MySQL DB as a PAM Database Record
-
-##
-
-Overview
-
-In this example, you'll learn how to configure a MySQL DB in your Keeper Vault
-as a PAM Database record.
-
-##
-
-Prerequisites
-
-Prior to proceeding with this guide, make sure you have
-
-  1.   2. 
-
-##
-
-PAM Database Record
-
-Databases such as a MySQL DB can be configured on the PAM Database record
-type.
-
-###
-
-Creating a PAM Database
-
-To create a PAM Database:
-
-  * Click on **Create New**
-
-  * Depending on your use case, click on "Rotation", "Tunnel", or "Connection" 
-
-  * On the prompted window:
-
-    * Select "**New Record** " 
-
-    * Select the Shared Folder you want the record to be created in 
-
-    * Specify the Title
-
-    * Select "**Database** " for the Target 
-
-  * Click "**Next** " and complete all of the required information.
-
-###
-
-Configure a MySQL Database on the PAM Database Record
-
-Suppose I have a database with the hostname "db-mysql-1", the following table
-lists all the configurable fields and their respective values:
-
-Field
-
-Description
-
-Value
-
-Title (Required)
-
-Title of the PAM Database Record
-
-`Local MySQL Database`
-
-Hostname or IP Address (Required)
-
-Address or RDP endpoint or Server name of the Database Resource
-
-db-mysql-1
-
-Port (Required)
-
-Port to connect to the Database Resource
-
-3306
-
-Use SSL (Required)
-
-Check to perform SSL verification before connecting, if your database has SSL
-configured
-
-`Enabled`
-
-Database ID
-
-Azure or AWS Resource ID (if applicable)
-
-**Required** if a managed AWS or Azure Database
-
-Database Type
-
-Appropriate database type from supported databases.
-
-`mysql`
-
-Provider Group
-
-Azure or AWS Provider Group
-
-**Required** if a managed AWS or Azure Database
-
-Provider Region
-
-Azure or AWS Provider Region
-
-**Required** if a managed AWS or Azure Database
-
-###
-
-Configuring PAM Settings on the PAM Database
-
-On the "PAM Settings" section of the vault record, you can configure the
-KeeperPAM Connection and Tunnel settings and link a PAM User credential for
-performing rotations and connections. Tunnels do not require a linked
-credential. The following table lists all the configurable fields and their
-respective values for the MySQL Database:
-
-Field
-
-Description
-
-Required
-
-PAM Configuration
-
-Associated PAM Configuration record which defines the environment
-
-**Required -** This is the PAM configuration you created in the prerequisites
-
-Administrative Credential Record
-
-Linked PAM User credential used for connection and administrative operations
-
-Protocol
-
-Native database protocol used for connecting from the Gateway to the target
-
-**Required -** for this example: "MySQL"
-
-Session Recording
-
-Options for recording sessions and typescripts
-
-Connection Parameters
-
-Connection-specific protocol settings which can vary based on the protocol
-type
-
-###
-
-Administrative Credential Record
-
-The **Admin Credential Record** in the PAM Database links a user to the PAM
-Database record in your Keeper Vault. This linked user is used for
-authenticating the connection when clicking "Launch".
-
-####
-
-Setting a Non Admin User as the Administrative Credential Record
-
-If you prefer not to authenticate a connection using the admin credential, you
-can optionally designate a regular user of the resource as the admin
-credential.
-
-##
-
-Sharing PAM Database Records
-
-PAM Database records can be shared with other Keeper users within your
-organization. However, the recipient must be assigned to a role with the
-appropriate PAM enforcement policies in place to utilize KeeperPAM features.
-
-When sharing a PAM Database record, the linked admin credentials will **not**
-be shared. For example, if the PAM Database is configured with a MySQL
-Database, the recipient can connect to the database without having direct
-access to the linked credentials.
-
-  * 
-
-###
-
-Setup Complete
-
-The MySQL Database record is set up. The user with the ability to launch
-connections can now launch an interactive MySQL connection or tunnel to the
-target database.
-
-# PAM Machine
-
-KeeperPAM resource for managing machines on-prem or in the cloud
-
-##
-
-Overview
-
-A PAM Machine record is a type of KeeperPAM resource that represents a
-workload, such as a Windows or Linux server.
-
-PAM Record Type
-
-Supported Assets
-
-PAM Machine
-
-Windows/macOS/Linux Machines, EC2 Instances, Azure VMs
-
-##
-
-Features Available
-
-The PAM Machine resource supports the following features:
-
-  * Password rotation
-
-  * SSH key rotation
-
-  * Zero-trust Connections using RDP, SSH, VNC, K8s and Telnet protocols
-
-  * TCP Tunnels
-
-  * Session recording
-
-  * Sharing access without sharing credentials
-
-  * File transfer through drag-and-drop
-
-##
-
-Creating a PAM Machine
-
-Prior to creating a PAM Machine, make sure you have already created a PAM
-Configuration. The PAM Configuration contains information of your target
-infrastructure while the PAM Machine contains information of an asset, such as
-a Windows or Linux server.
-
-To create a PAM Machine:
-
-  * Click on **Create New**
-
-  * Depending on your use case, click on "Rotation", "Tunnel", or "Connection" 
-
-  * On the prompted window:
-
-    * Select "**New Record** " 
-
-    * Select the Shared Folder you want the record to be created in 
-
-    * Specify the Title
-
-    * Select "**Machine** " for the Target 
-
-  * Click "**Next** " and complete all of the required information.
-
-##
-
-PAM Machine Record Type Fields
-
-The following table lists all the configurable fields on the PAM Machine
-Record Type:
-
-Field
-
-Description
-
-Notes
-
-Hostname or IP Address
-
-Address of the machine resource
-
-**Required**
-
-Port
-
-Port to connect on. The Gateway uses this to determine connection method.
-
-**Required** Must be a port for SSH or WinRM
-
-Keeper expects 22, 5985, 5986, or an alternative port for SSH or WinRM
-specified in the PAM Configuration port mapping
-
-Administrative Credentials
-
-Linked PAM User credential used for connection and administrative operations
-
-PAM settings
-
-This is where you configure Connection and Tunnel settings for this machine.
-
-Operating System
-
-The target's Operating System
-
-For your reference only
-
-SSL Verification
-
-When checked, verifies certificate of host when connecting with SSH
-
-Only applies to certain databases and directories where SSL is optional
-
-Instance Name
-
-Azure or AWS Instance Name
-
-**Required** if AWS/Azure Machine
-
-Instance Id
-
-Azure or AWS Instance ID
-
-**Required** if AWS/Azure Machine
-
-Provider Group
-
-Provider Group for directories hosted in Azure
-
-**Required** if Azure Machine
-
-Provider Region
-
-AWS region of hosted directory
-
-**Required** if AWS Machine
-
-##
-
-PAM Settings and Administrative Credentials
-
-On the "PAM Settings" section of the vault record, you can configure the
-KeeperPAM Connection and Tunnel settings and link a PAM User credential for
-performing rotations and connections. Tunnels do not require a linked
-credential.
-
-###
-
-PAM Settings
-
-Field
-
-Description
-
-Required
-
-PAM Configuration
-
-Associated PAM Configuration record which defines the environment
-
-**Required**
-
-Administrative Credential Record
-
-Linked PAM User credential used for connection and administrative operations
-
-**Required**
-
-Protocol
-
-Native protocol used for connecting the session from the Gateway to the target
-
-**Required**
-
-Session Recording
-
-Options for recording sessions and typescripts
-
-Connection Parameters (multiple)
-
-Connection-specific protocol settings which can vary based on the protocol
-type
-
-Depends on protocol. We recommend specifying the **Connection Port** at a
-minimum.
-
-Below are a couple examples of PAM Machine records with Connections and
-Tunnels activated.
-
-##
-
-Examples
-
-Visit the following pages to set up:
-
-  *   * 
-
-# Example: PostgreSQL Database
-
-Configuring PostgreSQL DB as a PAM Database Record
-
-##
-
-Overview
-
-In this example, you'll learn how to configure a PostgreSQL DB in your Keeper
-Vault as a PAM Database record.
-
-##
-
-Prerequisites
-
-Prior to proceeding with this guide, make sure you have
-
-  1.   2. 
-
-##
-
-PAM Database Record
-
-Databases such as a PostgreSQL DB can be configured on the PAM Database record
-type.
-
-###
-
-Creating a PAM Database
-
-To create a PAM Database:
-
-  * Click on **Create New**
-
-  * Depending on your use case, click on "Rotation", "Tunnel", or "Connection" 
-
-  * On the prompted window:
-
-    * Select "**New Record** " 
-
-    * Select the Shared Folder you want the record to be created in 
-
-    * Specify the Title
-
-    * Select "**Database** " for the Target 
-
-  * Click "**Next** " and complete all of the required information.
-
-###
-
-Configure a PostgreSQL Database on the PAM Database Record
-
-Suppose I have a database with the hostname "`db-postgres-1`", the following
-table lists all the configurable fields and their respective values:
-
-###
-
-Configuring PAM Settings on the PAM Database
-
-On the "PAM Settings" section of the vault record, you can configure the
-KeeperPAM Connection and Tunnel settings and link a PAM User credential for
-performing rotations and connections. Tunnels do not require a linked
-credential. The following table lists all the configurable fields and their
-respective values for the PostgreSQL Database:
-
-###
-
-Administrative Credential Record
-
-The **Admin Credential Record** in the PAM Database links a user to the PAM
-Database record in your Keeper Vault. This linked user is used for
-authenticating the connection when clicking "Launch".
-
-####
-
-Setting a Non Admin User as the Administrative Credential Record
-
-If you prefer not to authenticate a connection using the admin credential, you
-can optionally designate a regular user of the resource as the admin
-credential.
-
-##
-
-Sharing PAM Database Records
-
-PAM Database records can be shared with other Keeper users within your
-organization. However, the recipient must be assigned to a role with the
-appropriate PAM enforcement policies in place to utilize KeeperPAM features.
-
-When sharing a PAM Database record, the linked admin credentials will **not**
-be shared. For example, if the PAM Database is configured with a PostgreSQL
-Database, the recipient can connect to the database without having direct
-access to the linked credentials.
-
-  * 
-
-###
-
-Setup Complete
-
-The PostgreSQL Database record is set up. The user with the ability to launch
-connections can now launch an interactive PostgreSQL connection or tunnel to
-the target database.
-
-# Example: Microsoft SQL Server Database
-
-Configuring Microsoft SQL Server DB as a PAM Database Record
-
-##
-
-Overview
-
-In this example, you'll learn how to configure a Microsoft SQL Server DB in
-your Keeper Vault as a PAM Database record.
-
-##
-
-Prerequisites
-
-Prior to proceeding with this guide, make sure you have
-
-  1.   2. 
-
-##
-
-PAM Database Record
-
-Databases such as a Microsoft SQL Server DB can be configured on the PAM
-Database record type.
-
-###
-
-Creating a PAM Database
-
-To create a PAM Database:
-
-  * Click on **Create New**
-
-  * Depending on your use case, click on "Rotation", "Tunnel", or "Connection" 
-
-  * On the prompted window:
-
-    * Select "**New Record** " 
-
-    * Select the Shared Folder you want the record to be created in 
-
-    * Specify the Title
-
-    * Select "**Database** " for the Target 
-
-  * Click "**Next** " and complete all of the required information.
-
-###
-
-Configure a Microsoft SQL Server Database on the PAM Database Record
-
-Suppose I have a database with the hostname "`db-mssql-1`", the following
-table lists all the configurable fields and their respective values:
-
-###
-
-Configuring PAM Settings on the PAM Database
-
-On the "PAM Settings" section of the vault record, you can configure the
-KeeperPAM Connection and Tunnel settings and link a PAM User credential for
-performing rotations and connections. Tunnels do not require a linked
-credential. The following table lists all the configurable fields and their
-respective values for the Microsoft SQL Database:
-
-###
-
-Administrative Credential Record
-
-The **Admin Credential Record** in the PAM Database links a user to the PAM
-Database record in your Keeper Vault. This linked user is used for
-authenticating the connection when clicking "Launch".
-
-####
-
-Setting a Non Admin User as the Administrative Credential Record
-
-If you prefer not to authenticate a connection using the admin credential, you
-can optionally designate a regular user of the resource as the admin
-credential.
-
-##
-
-Sharing PAM Database Records
-
-PAM Database records can be shared with other Keeper users within your
-organization. However, the recipient must be assigned to a role with the
-appropriate PAM enforcement policies in place to utilize KeeperPAM features.
-
-When sharing a PAM Database record, the linked admin credentials will **not**
-be shared. For example, if the PAM Database is configured with a Microsoft SQL
-Database, the recipient can connect to the database without having direct
-access to the linked credentials.
-
-  * 
-
-###
-
-Setup Complete
-
-The Microsoft SQL Database record is set up. The user with the ability to
-launch connections can now launch an interactive SQL connection or tunnel to
-the target database.
-
-In addition to these policies, we recommend protecting the Gateway
-Configuration secrets .
-
-Prior to proceeding with this guide, make sure to .
-
-See  for more info
-
-See  for more info
-
-Ex: `3307=mysql `See  docs
-
-Ex: `192.168.0.15/24` Refer to for more info
-
-Configure
-
-Configure
-
-Configure
-
-Configure
-
-Configure
-
-When setting up Rotation in your Keeper Vault, you store the credentials of
-your assets involved in rotation on their corresponding PAM Record Types. On
-these record types, you are able to .
-
-Next, go to Home > General > Subscriptions and get your subscription ID. Copy
-the subscription ID into the Keeper PAM Configuration "Subscription ID" field.
-For more information on how to get your subscription ID, visit this .
-
-\- Can change the password for any user, including a Global Administrator
-user.
-
-\- Can change the password for any user, except a Global Administrator user.
-
-Configure
-
-Configure
-
-Configure
-
-Configure
-
-Configure
-
-See  for more info
-
-See  for more info
-
-Ex: `3307=mysql `See  docs
-
-Ex: `192.168.0.15/24` Refer to for more info
-
-See additional information on
-
-See additional information on
-
-The PAM User record is special because it can be  from the other resources.
-This way, you can  to a Machine, Database, Directory or Remote Browser without
-sharing access to the underlying credentials.
-
-Connecting to the PAM database requires only that the Keeper Gateway has
-access to the database either through native protocols or AWS/Azure APIs. The
-Keeper Vault operates independently and does not require direct connectivity
-to the database, leveraging Keeper's zero-trust network access model to
-securely manage access through the Gateway. See the  for more details.
-
-**Required** Visit this  for more details
-
-See
-
-**Required** Visit this  for more details
-
-See
-
-See this  for RDP protocol settings We recommend specifying the **Connection
-Port** at a minimum. E.g. "3389" for RDP.
-
-User Accounts can be configured on the PAM User record. Visit this  for more
-information.
-
-Learn more about
-
-**Required** Visit this  for more details
-
-See
-
-See this  for SSH protocol settings. We recommend specifying the **Connection
-Port** at a minimum. E.g. "22" for SSH.
-
-User Accounts can be configured on the PAM User record. Visit this  for more
-information on the PAM User.
-
-PAM Machine records can be shared with other Keeper users within your
-organization. However, the recipient must have the  in place to utilize
-KeeperPAM features on the shared PAM records.
-
-Learn more about
-
-**Required** Visit this  for more details
-
-See
-
-See this  for MySQL protocol settings We recommend specifying the **Connection
-Port** at a minimum. E.g. "3306" for MySQL.
-
-User Accounts are configured on the PAM User record. Visit this  for more
-information.
-
-Learn more about
-
-Connecting to the PAM machine requires only that the Keeper Gateway has access
-to the target machine. The Keeper Vault operates independently and does not
-require direct connectivity to the machine, leveraging Keeper's zero-trust
-network access model to securely manage access through the Gateway. See the
-for more details.
-
-**Required** Visit this  for more details
-
-**Required** Visit this  for more details
-
-See
-
-Field
-
-Description
-
-Value
-
-Field
-
-Description
-
-Required
-
-User Accounts are configured on the PAM User record. Visit this  for more
-information.
-
-Learn more about
-
-Field
-
-Description
-
-Value
-
-Field
-
-Description
-
-Required
-
-User Accounts are configured on the PAM User record. Visit this  for more
-information.
-
-Learn more about
-
-using the AWS KMS
-
-install and configure your Keeper Gateway
-
-[Rotation](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
-manager/password-rotation)
-
-[Connections](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
-access-manager/connections)
-
-[RBI](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
-manager/remote-browser-isolation)
-
-[Tunnels](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
-manager/tunnels)
-
-[Discovery](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
-manager/discovery)
-
-Docker Installation
-
-Linux Installation
-
-[create custom fields](https://docs.keeper.io/enterprise-guide/record-
-types#custom-fields)
-
-[page](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-
-tenant-id)
-
-[**Privileged Authentication Administrator**](https://learn.microsoft.com/en-
-us/azure/active-directory/roles/permissions-reference#privileged-
-authentication-administrator)
-
-[**Authentication Administrator**](https://learn.microsoft.com/en-
-us/azure/active-directory/roles/permissions-reference#authentication-
-administrator)
-
-[Rotation](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
-manager/password-rotation)
-
-[Connections](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
-access-manager/connections)
-
-[RBI](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
-manager/remote-browser-isolation)
-
-[Tunnels](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
-manager/tunnels)
-
-[Discovery](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
-manager/discovery)
-
-AWS Environment Setup
-
-Azure Environment Setup
-
-[What's a Record Type?](https://docs.keeper.io/en/enterprise-guide/record-
-types)
-
-linked
-
-share access
-
-network architecture diagram
-
-MySQL Database
-
-PostgreSQL Database
-
-Microsoft SQL Server Database
-
-Installed and configured the Keeper Gateway
-
-Set up a PAM Configuration for your target Environment
-
-page
-
-Sharing and Access Control
-
-Installed and configured the Keeper Gateway
-
-Set up a PAM Configuration for your target Environment
-
-page
-
-appropriate PAM enforcement policies
-
-Sharing and Access Control
-
-Installed and configured the Keeper Gateway
-
-Set up a PAM Configuration for your target Environment
-
-page
-
-Sharing and Access Control
-
-network architecture diagram
-
-Linux Machine
-
-Azure Virtual Machine
-
-Title (Required)
-
-Title of the PAM Database Record
-
-`PostgreSQL Database - postgresuser`
-
-Hostname or IP Address (Required)
-
-Address or RDP endpoint or Server name of the Database Resource
-
-db-postgres-1
-
-Port (Required)
-
-Port to connect to the PostgreSQL DB Resource
-
-5432
-
-Use SSL (Required)
-
-Check to perform SSL verification before connecting, if your database has SSL
-configured
-
-`Enabled`
-
-Database ID
-
-Azure or AWS Resource ID (if applicable)
-
-**Required** if a managed AWS or Azure Database
-
-Database Type
-
-Appropriate database type from supported databases.
-
-`postgresql`
-
-Provider Group
-
-Azure or AWS Provider Group
-
-**Required** if a managed AWS or Azure Database
-
-Provider Region
-
-Azure or AWS Provider Region
-
-**Required** if a managed AWS or Azure Database
-
-Title (Required)
-
-Title of the PAM Database Record
-
-`Local SQL Database`
-
-Hostname or IP Address (Required)
-
-Address or RDP endpoint or Server name of the Database Resource
-
-db-mssql-1
-
-Port (Required)
-
-Port to connect to the Database Resource
-
-3306
-
-Use SSL (Required)
-
-Check to perform SSL verification before connecting, if your database has SSL
-configured
-
-`Enabled`
-
-Database ID
-
-Azure or AWS Resource ID (if applicable)
-
-**Required** if a managed AWS or Azure Database
-
-Database Type
-
-Appropriate database type from supported databases.
-
-`mssql`
-
-Provider Group
-
-Azure or AWS Provider Group
-
-**Required** if a managed AWS or Azure Database
-
-Provider Region
-
-Azure or AWS Provider Region
-
-**Required** if a managed AWS or Azure Database
-
-specified service account
-
-verbose logging
-
-Vault Encryption & Security Model
-
-docs
-
-[port mapping](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
-access-manager/references/port-mapping)
-
-[this ](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
-
-docs
-
-[port mapping](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
-access-manager/references/port-mapping)
-
-[this ](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
-
-PAM Machine
-
-PAM Database
-
-PAM Directory
-
-PAM Remote Browser
-
-PAM User
-
-[session recording](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
-access-manager/session-recording-and-playback)
-
-[session recording](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
-access-manager/session-recording-and-playback)
-
-[section](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
-manager/connections/session-protocols/rdp-connections)
-
-[session recording](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
-access-manager/session-recording-and-playback)
-
-[section](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
-manager/connections/session-protocols/ssh-connections)
-
-[session recording](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
-access-manager/session-recording-and-playback)
-
-[section](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
-manager/connections/session-protocols/mysql-connections)
-
-[session recording](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
-access-manager/session-recording-and-playback)
-
-Installed and configured the Keeper Gateway
-
-Set up a PAM Configuration for your target Environment
-
-page
-
-Sharing and Access Control
-
-Installed and configured the Keeper Gateway
-
-Set up a PAM Configuration for your target Environment
-
-page
-
-Sharing and Access Control
-
-Local Network
-
-AWS
-
-Azure
-
-Domain Controller
-
-this section
-
-this section
-
-section
-
-section
-
-section
-
-[page](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/master)
-
-PAM Configuration
-
-Associated PAM Configuration record which defines the environment
-
-**Required -** This is the PAM configuration you created in the prerequisites
-
-Administrative Credential Record
-
-Linked PAM User credential used for connection and administrative operations
-
-Protocol
-
-Native database protocol used for connecting from the Gateway to the target
-
-**Required -** for this example: "PostgreSQL"
-
-Session Recording
-
-Options for recording sessions and typescripts
-
-Connection Parameters
-
-Connection-specific protocol settings which can vary based on the protocol
-type
-
-PAM Configuration
-
-Associated PAM Configuration record which defines the environment
-
-**Required -** This is the PAM configuration you created in the prerequisites
-
-Administrative Credential Record
-
-Linked PAM User credential used for connection and administrative operations
-
-Protocol
-
-Native database protocol used for connecting from the Gateway to the target
-
-**Required -** for this example: "SQL Server"
-
-Session Recording
-
-Options for recording sessions and typescripts
-
-Connection Parameters
-
-Connection-specific protocol settings which can vary based on the protocol
-type
-
 # PAM Remote Browser
 
 KeeperPAM resource for managing remote browser isolation access to a protected
@@ -6170,6 +5117,584 @@ Browser Settings (multiple)
 
 Browser-specific protocol settings
 
+# Example: PostgreSQL Database
+
+Configuring PostgreSQL DB as a PAM Database Record
+
+##
+
+Overview
+
+In this example, you'll learn how to configure a PostgreSQL DB in your Keeper
+Vault as a PAM Database record.
+
+##
+
+Prerequisites
+
+Prior to proceeding with this guide, make sure you have
+
+  1.   2. 
+
+##
+
+PAM Database Record
+
+Databases such as a PostgreSQL DB can be configured on the PAM Database record
+type.
+
+###
+
+Creating a PAM Database
+
+To create a PAM Database:
+
+  * Click on **Create New**
+
+  * Depending on your use case, click on "Rotation", "Tunnel", or "Connection" 
+
+  * On the prompted window:
+
+    * Select "**New Record** " 
+
+    * Select the Shared Folder you want the record to be created in 
+
+    * Specify the Title
+
+    * Select "**Database** " for the Target 
+
+  * Click "**Next** " and complete all of the required information.
+
+###
+
+Configure a PostgreSQL Database on the PAM Database Record
+
+Suppose I have a database with the hostname "`db-postgres-1`", the following
+table lists all the configurable fields and their respective values:
+
+Field
+
+Description
+
+Value
+
+Title (Required)
+
+Title of the PAM Database Record
+
+`PostgreSQL Database - postgresuser`
+
+Hostname or IP Address (Required)
+
+Address or RDP endpoint or Server name of the Database Resource
+
+db-postgres-1
+
+Port (Required)
+
+Port to connect to the PostgreSQL DB Resource
+
+5432
+
+Use SSL (Required)
+
+Check to perform SSL verification before connecting, if your database has SSL
+configured
+
+`Enabled`
+
+Database ID
+
+Azure or AWS Resource ID (if applicable)
+
+**Required** if a managed AWS or Azure Database
+
+Database Type
+
+Appropriate database type from supported databases.
+
+`postgresql`
+
+Provider Group
+
+Azure or AWS Provider Group
+
+**Required** if a managed AWS or Azure Database
+
+Provider Region
+
+Azure or AWS Provider Region
+
+**Required** if a managed AWS or Azure Database
+
+###
+
+Configuring PAM Settings on the PAM Database
+
+On the "PAM Settings" section of the vault record, you can configure the
+KeeperPAM Connection and Tunnel settings and link a PAM User credential for
+performing rotations and connections. Tunnels do not require a linked
+credential. The following table lists all the configurable fields and their
+respective values for the PostgreSQL Database:
+
+Field
+
+Description
+
+Required
+
+PAM Configuration
+
+Associated PAM Configuration record which defines the environment
+
+**Required -** This is the PAM configuration you created in the prerequisites
+
+Administrative Credential Record
+
+Linked PAM User credential used for connection and administrative operations
+
+Protocol
+
+Native database protocol used for connecting from the Gateway to the target
+
+**Required -** for this example: "PostgreSQL"
+
+Session Recording
+
+Options for recording sessions and typescripts
+
+Connection Parameters
+
+Connection-specific protocol settings which can vary based on the protocol
+type
+
+###
+
+Administrative Credential Record
+
+The **Admin Credential Record** in the PAM Database links a user to the PAM
+Database record in your Keeper Vault. This linked user is used for
+authenticating the connection when clicking "Launch".
+
+####
+
+Setting a Non Admin User as the Administrative Credential Record
+
+If you prefer not to authenticate a connection using the admin credential, you
+can optionally designate a regular user of the resource as the admin
+credential.
+
+##
+
+Sharing PAM Database Records
+
+PAM Database records can be shared with other Keeper users within your
+organization. However, the recipient must be assigned to a role with the
+appropriate PAM enforcement policies in place to utilize KeeperPAM features.
+
+When sharing a PAM Database record, the linked admin credentials will **not**
+be shared. For example, if the PAM Database is configured with a PostgreSQL
+Database, the recipient can connect to the database without having direct
+access to the linked credentials.
+
+  * 
+
+###
+
+Setup Complete
+
+The PostgreSQL Database record is set up. The user with the ability to launch
+connections can now launch an interactive PostgreSQL connection or tunnel to
+the target database.
+
+# Example: MySQL Database
+
+Configuring MySQL DB as a PAM Database Record
+
+##
+
+Overview
+
+In this example, you'll learn how to configure a MySQL DB in your Keeper Vault
+as a PAM Database record.
+
+##
+
+Prerequisites
+
+Prior to proceeding with this guide, make sure you have
+
+  1.   2. 
+
+##
+
+PAM Database Record
+
+Databases such as a MySQL DB can be configured on the PAM Database record
+type.
+
+###
+
+Creating a PAM Database
+
+To create a PAM Database:
+
+  * Click on **Create New**
+
+  * Depending on your use case, click on "Rotation", "Tunnel", or "Connection" 
+
+  * On the prompted window:
+
+    * Select "**New Record** " 
+
+    * Select the Shared Folder you want the record to be created in 
+
+    * Specify the Title
+
+    * Select "**Database** " for the Target 
+
+  * Click "**Next** " and complete all of the required information.
+
+###
+
+Configure a MySQL Database on the PAM Database Record
+
+Suppose I have a database with the hostname "db-mysql-1", the following table
+lists all the configurable fields and their respective values:
+
+###
+
+Configuring PAM Settings on the PAM Database
+
+On the "PAM Settings" section of the vault record, you can configure the
+KeeperPAM Connection and Tunnel settings and link a PAM User credential for
+performing rotations and connections. Tunnels do not require a linked
+credential. The following table lists all the configurable fields and their
+respective values for the MySQL Database:
+
+###
+
+Administrative Credential Record
+
+The **Admin Credential Record** in the PAM Database links a user to the PAM
+Database record in your Keeper Vault. This linked user is used for
+authenticating the connection when clicking "Launch".
+
+####
+
+Setting a Non Admin User as the Administrative Credential Record
+
+If you prefer not to authenticate a connection using the admin credential, you
+can optionally designate a regular user of the resource as the admin
+credential.
+
+##
+
+Sharing PAM Database Records
+
+PAM Database records can be shared with other Keeper users within your
+organization. However, the recipient must be assigned to a role with the
+appropriate PAM enforcement policies in place to utilize KeeperPAM features.
+
+When sharing a PAM Database record, the linked admin credentials will **not**
+be shared. For example, if the PAM Database is configured with a MySQL
+Database, the recipient can connect to the database without having direct
+access to the linked credentials.
+
+  * 
+
+###
+
+Setup Complete
+
+The MySQL Database record is set up. The user with the ability to launch
+connections can now launch an interactive MySQL connection or tunnel to the
+target database.
+
+# Example: Microsoft SQL Server Database
+
+Configuring Microsoft SQL Server DB as a PAM Database Record
+
+##
+
+Overview
+
+In this example, you'll learn how to configure a Microsoft SQL Server DB in
+your Keeper Vault as a PAM Database record.
+
+##
+
+Prerequisites
+
+Prior to proceeding with this guide, make sure you have
+
+  1.   2. 
+
+##
+
+PAM Database Record
+
+Databases such as a Microsoft SQL Server DB can be configured on the PAM
+Database record type.
+
+###
+
+Creating a PAM Database
+
+To create a PAM Database:
+
+  * Click on **Create New**
+
+  * Depending on your use case, click on "Rotation", "Tunnel", or "Connection" 
+
+  * On the prompted window:
+
+    * Select "**New Record** " 
+
+    * Select the Shared Folder you want the record to be created in 
+
+    * Specify the Title
+
+    * Select "**Database** " for the Target 
+
+  * Click "**Next** " and complete all of the required information.
+
+###
+
+Configure a Microsoft SQL Server Database on the PAM Database Record
+
+Suppose I have a database with the hostname "`db-mssql-1`", the following
+table lists all the configurable fields and their respective values:
+
+###
+
+Configuring PAM Settings on the PAM Database
+
+On the "PAM Settings" section of the vault record, you can configure the
+KeeperPAM Connection and Tunnel settings and link a PAM User credential for
+performing rotations and connections. Tunnels do not require a linked
+credential. The following table lists all the configurable fields and their
+respective values for the Microsoft SQL Database:
+
+###
+
+Administrative Credential Record
+
+The **Admin Credential Record** in the PAM Database links a user to the PAM
+Database record in your Keeper Vault. This linked user is used for
+authenticating the connection when clicking "Launch".
+
+####
+
+Setting a Non Admin User as the Administrative Credential Record
+
+If you prefer not to authenticate a connection using the admin credential, you
+can optionally designate a regular user of the resource as the admin
+credential.
+
+##
+
+Sharing PAM Database Records
+
+PAM Database records can be shared with other Keeper users within your
+organization. However, the recipient must be assigned to a role with the
+appropriate PAM enforcement policies in place to utilize KeeperPAM features.
+
+When sharing a PAM Database record, the linked admin credentials will **not**
+be shared. For example, if the PAM Database is configured with a Microsoft SQL
+Database, the recipient can connect to the database without having direct
+access to the linked credentials.
+
+  * 
+
+###
+
+Setup Complete
+
+The Microsoft SQL Database record is set up. The user with the ability to
+launch connections can now launch an interactive SQL connection or tunnel to
+the target database.
+
+# PAM Database
+
+KeeperPAM resource for managing databases either on-prem or in the cloud
+
+##
+
+Overview
+
+In your Keeper Vault, the following assets can be configured on the PAM
+Database record type:
+
+This guide will cover the **PAM Database** Record type in more details.
+
+##
+
+Features Available
+
+The PAM Database resource supports the following features:
+
+  * Password rotation
+
+  * Zero-trust Connections
+
+  * TCP Tunnels
+
+  * Graphical session recording
+
+  * Text session recording (Typescript)
+
+  * Sharing access without sharing credentials
+
+##
+
+Creating a PAM Database
+
+Prior to creating a PAM Database, make sure you have already created a PAM
+Configuration. The PAM Configuration contains information of your target
+infrastructure while the PAM Database contains information about the target
+database, such as the hostname, type (MySQL, PostgreSQL, etc) and port number.
+
+To create a PAM Database:
+
+  * Click on **Create New**
+
+  * Depending on your use case, click on "Rotation", "Tunnel", or "Connection" 
+
+  * On the prompted window:
+
+    * Select "**New Record** " 
+
+    * Select the Shared Folder you want the record to be created in 
+
+    * Specify the Title
+
+    * Select "**Database** " for the Target 
+
+  * Click "**Next** " and complete all of the required information.
+
+##
+
+PAM Database Record Type Fields
+
+The following table lists all the configurable fields on the PAM Database
+Record Type:
+
+##
+
+PAM Settings and Administrative Credentials
+
+On the "PAM Settings" section of the vault record, you can configure the
+KeeperPAM Connection and Tunnel settings and link a PAM User credential for
+performing rotations and connections. Tunnels do not require a linked
+credential.
+
+###
+
+PAM Settings
+
+Below is an example of a PAM Database record with Connections and Tunnels
+activated.
+
+##
+
+Examples
+
+Visit the following pages to set up:
+
+  *   *   * 
+
+# PAM Directory
+
+KeeperPAM resource for managing directory services, either on-prem or in the
+cloud
+
+##
+
+Overview
+
+A PAM Directory record is a type of KeeperPAM resource that represents an
+Active Directory or OpenLDAP service, either on-prem or hosted in the cloud.
+
+##
+
+Features Available
+
+The PAM Machine resource supports the following features:
+
+  * Password rotation using either LDAP, LDAPS or WinRM
+
+  * Connections using RDP
+
+  * TCP Tunnels over any protocol
+
+  * Session recording and playback
+
+  * Sharing access without sharing credentials
+
+##
+
+Creating a PAM Directory
+
+Prior to creating a PAM Directory Record type, make sure you have already
+created a PAM Configuration. The PAM Configuration contains information of
+your target infrastructure while the PAM Directory contains information of an
+asset, such as a Active Directory server, within that target infrastructure.
+
+To create a PAM Directory:
+
+  * Click on **Create New**
+
+  * Depending on your use case, click on "Rotation", "Tunnel", or "Connection" 
+
+  * On the prompted window:
+
+    * Select "**New Record** " 
+
+    * Select the Shared Folder you want the record to be created in 
+
+    * Specify the Title
+
+    * Select "**Directory** " for the Target 
+
+  * Click "**Next** " and complete all of the required information.
+
+##
+
+PAM **Directory** Record Type Fields
+
+The following table lists all the configurable fields on the PAM Directory
+Record Type:
+
+##
+
+PAM Settings and Administrative Credentials
+
+On the "PAM Settings" section of the vault record, you can configure the
+KeeperPAM Connection and Tunnel settings and link a PAM User credential for
+performing rotations and connections. Tunnels do not require a linked
+credential.
+
+###
+
+PAM Settings
+
+Note: PAM User is only required to successfully configure connections and
+rotation, and not required for Tunnels.
+
+**Configuration Steps:**
+
+  1. On the PAM Database record, navigate to the PAM Settings section
+
+  2. Select the PAM Configuration and Administrative Credential Record
+
+  3. To configure Keeper Connections and Keeper Tunnels settings, visit the following page:
+
+     1.      2. 
+
+The following screenshot is a PAM Directory Record with LDAPS rotation, RDP
+connections and LDAPS tunnels enabled:
+
 # PAM User
 
 Record Type Details for PAM User Record Type
@@ -6180,14 +5705,6 @@ Overview
 
 A PAM User is a type of KeeperPAM resource that represents an account
 credential. The PAM User is typically linked from other resources.
-
-PAM Record Type
-
-Supported Assets
-
-PAM User
-
-Account credential, IAM user, password or SSH Key
 
 ##
 
@@ -6242,50 +5759,6 @@ PAM **User** Record Type Fields
 The following table lists all the configurable fields on the PAM Remote
 Browser Record Type:
 
-Field
-
-Description
-
-Notes
-
-Login
-
-**Required** Examples:****`username` `username@domain` `DOMAIN\username`
-
-Password
-
-Password of the user
-
-Can be rotated
-
-Private PEM Key
-
-PEM Key associated with user
-
-Can be rotated
-
-Distinguished Name
-
-Distinguished name; used if associated with a PAM Directory
-
-**Required** only when the User is managed by a directory **** Example:
-CN=Jeff Smith,OU=Sales,DC=demo,DC=COM
-
-If left blank, defaults are attempted depending on the provider type
-
-Managed User
-
-Flag for accounts that are managed by the AWS or Azure IAM systems
-
-Set by Keeper Discovery to indicate that the password cannot be rotated. For
-example, AWS token-based auth.
-
-Connect Database
-
-Used in certain scenarios if a database name is needed
-
-Edge cases, e.g. using LDAP to connect to a MySQL database
-
 ####
 
 Note(1)
@@ -6299,207 +5772,6 @@ When connecting to Windows machines that are domain-joined:
 ###
 
 Configure rotation settings
-
-# PAM Directory
-
-KeeperPAM resource for managing directory services, either on-prem or in the
-cloud
-
-##
-
-Overview
-
-A PAM Directory record is a type of KeeperPAM resource that represents an
-Active Directory or OpenLDAP service, either on-prem or hosted in the cloud.
-
-PAM Record Type
-
-Supported Assets
-
-PAM Directory
-
-Active Directory, OpenLDAP
-
-##
-
-Features Available
-
-The PAM Machine resource supports the following features:
-
-  * Password rotation using either LDAP, LDAPS or WinRM
-
-  * Connections using RDP
-
-  * TCP Tunnels over any protocol
-
-  * Session recording and playback
-
-  * Sharing access without sharing credentials
-
-##
-
-Creating a PAM Directory
-
-Prior to creating a PAM Directory Record type, make sure you have already
-created a PAM Configuration. The PAM Configuration contains information of
-your target infrastructure while the PAM Directory contains information of an
-asset, such as a Active Directory server, within that target infrastructure.
-
-To create a PAM Directory:
-
-  * Click on **Create New**
-
-  * Depending on your use case, click on "Rotation", "Tunnel", or "Connection" 
-
-  * On the prompted window:
-
-    * Select "**New Record** " 
-
-    * Select the Shared Folder you want the record to be created in 
-
-    * Specify the Title
-
-    * Select "**Directory** " for the Target 
-
-  * Click "**Next** " and complete all of the required information.
-
-##
-
-PAM **Directory** Record Type Fields
-
-The following table lists all the configurable fields on the PAM Directory
-Record Type:
-
-Field
-
-Description
-
-Notes
-
-Hostname or IP Address
-
-Address of the directory resource
-
-**Required**
-
-Port
-
-Port to connect on
-
-**Required** Typically **389** or **636**(LDAP/LDAPS) Active Directory only
-supports 636
-
-Use SSL
-
-Use SSL when connecting
-
-Required for Active Directory
-
-Alternative IPs
-
-List of failover IPs for the directory, used for Discovery
-
-Newline separated
-
-Directory ID
-
-Instance ID for AD resource in Azure and AWS hosted environments
-
-**Required** if Azure Active Directory or AWS Directory Service AWS Example:
-"d-9a423d0d3b'
-
-Directory Type
-
-Directory type, used for formatting of messaging
-
-**Required** Must be **Active Directory** or **OpenLDAP**
-
-User Match
-
-Match on OU to filter found users during Discovery
-
-Domain Name
-
-domain managed by the directory
-
-**Required** Example: `some.company.com`
-
-Provider Group
-
-Provider Group for directories hosted in Azure
-
-**Required** for directories hosted in Azure
-
-Provider Region
-
-AWS region of hosted directory
-
-**Required** for directories hosted in AWS Example: `us-east-2`
-
-##
-
-PAM Settings and Administrative Credentials
-
-On the "PAM Settings" section of the vault record, you can configure the
-KeeperPAM Connection and Tunnel settings and link a PAM User credential for
-performing rotations and connections. Tunnels do not require a linked
-credential.
-
-###
-
-PAM Settings
-
-Field
-
-Description
-
-Required
-
-PAM Configuration
-
-Associated PAM Configuration record which defines the environment
-
-**Required**
-
-Administrative Credential Record
-
-Linked PAM User credential used for connection and administrative operations
-
-**Required**
-
-Protocol
-
-Native protocol used for connecting the session from the Gateway to the target
-
-**Required**
-
-Session Recording
-
-Options for recording sessions and typescripts
-
-Connection Parameters (multiple)
-
-Connection-specific protocol settings which can vary based on the protocol
-type
-
-Depends on protocol. We recommend specifying the **Connection Port** at a
-minimum.
-
-Note: PAM User is only required to successfully configure connections and
-rotation, and not required for Tunnels.
-
-**Configuration Steps:**
-
-  1. On the PAM Database record, navigate to the PAM Settings section
-
-  2. Select the PAM Configuration and Administrative Credential Record
-
-  3. To configure Keeper Connections and Keeper Tunnels settings, visit the following page:
-
-     1.      2. 
-
-The following screenshot is a PAM Directory Record with LDAPS rotation, RDP
-connections and LDAPS tunnels enabled:
 
 # Access Controls
 
@@ -6746,6 +6018,799 @@ Automatic Rotation after Share Expiration
 If you have a use case where a PAM User credential needs to be shared to
 another user, you have the option of automatically rotating the credential
 after the sharing has expired.
+
+See  for more info
+
+See  for more info
+
+Ex: `3307=mysql `See  docs
+
+Ex: `192.168.0.15/24` Refer to for more info
+
+**Required** Visit this  for more details
+
+See
+
+See this  for RDP protocol settings We recommend specifying the **Connection
+Port** at a minimum. E.g. "3389" for RDP.
+
+User Accounts can be configured on the PAM User record. Visit this  for more
+information.
+
+Learn more about
+
+The PAM User record is special because it can be  from the other resources.
+This way, you can  to a Machine, Database, Directory or Remote Browser without
+sharing access to the underlying credentials.
+
+Prior to proceeding with this guide, make sure to .
+
+See  for more info
+
+See  for more info
+
+Ex: `3307=mysql `See  docs
+
+Ex: `192.168.0.15/24` Refer to for more info
+
+Configure
+
+Configure
+
+Configure
+
+Configure
+
+Configure
+
+**Required** Visit this  for more details
+
+See
+
+See this  for SSH protocol settings. We recommend specifying the **Connection
+Port** at a minimum. E.g. "22" for SSH.
+
+User Accounts can be configured on the PAM User record. Visit this  for more
+information on the PAM User.
+
+PAM Machine records can be shared with other Keeper users within your
+organization. However, the recipient must have the  in place to utilize
+KeeperPAM features on the shared PAM records.
+
+Learn more about
+
+Connecting to the PAM machine requires only that the Keeper Gateway has access
+to the target machine. The Keeper Vault operates independently and does not
+require direct connectivity to the machine, leveraging Keeper's zero-trust
+network access model to securely manage access through the Gateway. See the
+for more details.
+
+**Required** Visit this  for more details
+
+**Required** Visit this  for more details
+
+See
+
+Next, go to Home > General > Subscriptions and get your subscription ID. Copy
+the subscription ID into the Keeper PAM Configuration "Subscription ID" field.
+For more information on how to get your subscription ID, visit this .
+
+\- Can change the password for any user, including a Global Administrator
+user.
+
+\- Can change the password for any user, except a Global Administrator user.
+
+Configure
+
+Configure
+
+Configure
+
+Configure
+
+Configure
+
+Connecting to the protected web application requires only that the Keeper
+Gateway has access to the target website. The Keeper Vault operates
+independently and does not require direct connectivity to the website,
+leveraging Keeper's zero-trust network access model to securely manage access
+through the Gateway. See the  for more details.
+
+See
+
+See
+
+Additional information on Remote Browser Isolation is .
+
+**Required** Visit this  for more details
+
+See
+
+See this  for PostgreSQL protocol settings We recommend specifying the
+**Connection Port** at a minimum. E.g. "5432" for PostgreSQL.
+
+User Accounts are configured on the PAM User record. Visit this  for more
+information.
+
+Learn more about
+
+Field
+
+Description
+
+Value
+
+Field
+
+Description
+
+Required
+
+User Accounts are configured on the PAM User record. Visit this  for more
+information.
+
+Learn more about
+
+Field
+
+Description
+
+Value
+
+Field
+
+Description
+
+Required
+
+User Accounts are configured on the PAM User record. Visit this  for more
+information.
+
+Learn more about
+
+PAM Record Type
+
+Supported Assets
+
+Connecting to the PAM database requires only that the Keeper Gateway has
+access to the database either through native protocols or AWS/Azure APIs. The
+Keeper Vault operates independently and does not require direct connectivity
+to the database, leveraging Keeper's zero-trust network access model to
+securely manage access through the Gateway. See the  for more details.
+
+Field
+
+Description
+
+Notes
+
+Field
+
+Description
+
+Required
+
+PAM Record Type
+
+Supported Assets
+
+Connecting to the PAM Directory requires only that the Keeper Gateway has
+access to the target directory service. The Keeper Vault operates
+independently and does not require direct connectivity to the service,
+leveraging Keeper's zero-trust network access model to securely manage access
+through the Gateway. See the  for more details.
+
+Field
+
+Description
+
+Notes
+
+Field
+
+Description
+
+Required
+
+PAM Record Type
+
+Supported Assets
+
+Field
+
+Description
+
+Notes
+
+See the  command.
+
+More information on
+
+To ensure least privilege, we recommend splitting the PAM Users into a
+separate shared folder, in order to restrict what users and devices can access
+the underlying secrets. When launching our  or using our , Keeper will
+automatically place the resources and users into separate shared folders.
+
+Read more about the  in the Keeper Enterprise docs
+
+Keeper's  provides access to the target systems without sharing the
+credential, ensuring least privilege access.
+
+docs
+
+[port mapping](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
+access-manager/references/port-mapping)
+
+[this ](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
+
+Installed and configured the Keeper Gateway
+
+Set up a PAM Configuration for your target Environment
+
+page
+
+Sharing and Access Control
+
+[What's a Record Type?](https://docs.keeper.io/en/enterprise-guide/record-
+types)
+
+linked
+
+share access
+
+install and configure your Keeper Gateway
+
+[Rotation](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
+manager/password-rotation)
+
+[Connections](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
+access-manager/connections)
+
+[RBI](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/remote-browser-isolation)
+
+[Tunnels](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/tunnels)
+
+[Discovery](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/discovery)
+
+Installed and configured the Keeper Gateway
+
+Set up a PAM Configuration for your target Environment
+
+page
+
+appropriate PAM enforcement policies
+
+Sharing and Access Control
+
+network architecture diagram
+
+Linux Machine
+
+Azure Virtual Machine
+
+[page](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-
+tenant-id)
+
+[**Privileged Authentication Administrator**](https://learn.microsoft.com/en-
+us/azure/active-directory/roles/permissions-reference#privileged-
+authentication-administrator)
+
+[**Authentication Administrator**](https://learn.microsoft.com/en-
+us/azure/active-directory/roles/permissions-reference#authentication-
+administrator)
+
+[Rotation](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/secrets-
+manager/password-rotation)
+
+[Connections](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
+access-manager/connections)
+
+[RBI](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/remote-browser-isolation)
+
+[Tunnels](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/tunnels)
+
+[Discovery](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/discovery)
+
+network architecture diagram
+
+[available at this
+page](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/remote-browser-isolation)
+
+Installed and configured the Keeper Gateway
+
+Set up a PAM Configuration for your target Environment
+
+page
+
+Sharing and Access Control
+
+Title (Required)
+
+Title of the PAM Database Record
+
+`Local MySQL Database`
+
+Hostname or IP Address (Required)
+
+Address or RDP endpoint or Server name of the Database Resource
+
+db-mysql-1
+
+Port (Required)
+
+Port to connect to the Database Resource
+
+3306
+
+Use SSL (Required)
+
+Check to perform SSL verification before connecting, if your database has SSL
+configured
+
+`Enabled`
+
+Database ID
+
+Azure or AWS Resource ID (if applicable)
+
+**Required** if a managed AWS or Azure Database
+
+Database Type
+
+Appropriate database type from supported databases.
+
+`mysql`
+
+Provider Group
+
+Azure or AWS Provider Group
+
+**Required** if a managed AWS or Azure Database
+
+Provider Region
+
+Azure or AWS Provider Region
+
+**Required** if a managed AWS or Azure Database
+
+Title (Required)
+
+Title of the PAM Database Record
+
+`Local SQL Database`
+
+Hostname or IP Address (Required)
+
+Address or RDP endpoint or Server name of the Database Resource
+
+db-mssql-1
+
+Port (Required)
+
+Port to connect to the Database Resource
+
+3306
+
+Use SSL (Required)
+
+Check to perform SSL verification before connecting, if your database has SSL
+configured
+
+`Enabled`
+
+Database ID
+
+Azure or AWS Resource ID (if applicable)
+
+**Required** if a managed AWS or Azure Database
+
+Database Type
+
+Appropriate database type from supported databases.
+
+`mssql`
+
+Provider Group
+
+Azure or AWS Provider Group
+
+**Required** if a managed AWS or Azure Database
+
+Provider Region
+
+Azure or AWS Provider Region
+
+**Required** if a managed AWS or Azure Database
+
+PAM Database
+
+MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
+
+Hostname or IP Address
+
+Address of the Database Resource
+
+**Required**
+
+Port
+
+Port to connect to the Database Resource
+
+**Required** Standard ports are: PostgreSQL: 5432 MySQL: 3306 Maria DB: 3306
+Microsoft SQL: 1433 Oracle: 1521 Mongo DB: 27017
+
+Use SSL
+
+Use SSL when connecting
+
+Connect Database
+
+Database name to connect to
+
+**Required** for connecting to PostgreSQL, MongoDB, and MS SQL Server
+
+Database Id
+
+Azure or AWS Resource ID
+
+**Required** if a managed AWS or Azure Database
+
+Database Type
+
+Appropriate database type from supported databases.
+
+If a non-standard port is provided, the Database Type will be used to
+determine connection method.
+
+Provider Group
+
+Azure or AWS Provider Group
+
+**Required** if a managed AWS or Azure Database
+
+Provider Region
+
+Azure or AWS Provider Region
+
+**Required** if a managed AWS or Azure Database
+
+PAM Directory
+
+Active Directory, OpenLDAP
+
+Hostname or IP Address
+
+Address of the directory resource
+
+**Required**
+
+Port
+
+Port to connect on
+
+**Required** Typically **389** or **636**(LDAP/LDAPS) Active Directory only
+supports 636
+
+Use SSL
+
+Use SSL when connecting
+
+Required for Active Directory
+
+Alternative IPs
+
+List of failover IPs for the directory, used for Discovery
+
+Newline separated
+
+Directory ID
+
+Instance ID for AD resource in Azure and AWS hosted environments
+
+**Required** if Azure Active Directory or AWS Directory Service AWS Example:
+"d-9a423d0d3b'
+
+Directory Type
+
+Directory type, used for formatting of messaging
+
+**Required** Must be **Active Directory** or **OpenLDAP**
+
+User Match
+
+Match on OU to filter found users during Discovery
+
+Domain Name
+
+domain managed by the directory
+
+**Required** Example: `some.company.com`
+
+Provider Group
+
+Provider Group for directories hosted in Azure
+
+**Required** for directories hosted in Azure
+
+Provider Region
+
+AWS region of hosted directory
+
+**Required** for directories hosted in AWS Example: `us-east-2`
+
+Local Network
+
+AWS
+
+Azure
+
+Domain Controller
+
+this section
+
+EC2 Role Policy
+
+IAM User Policy
+
+PAM User
+
+Account credential, IAM user, password or SSH Key
+
+Vault Encryption & Security Model
+
+[session recording](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
+access-manager/session-recording-and-playback)
+
+[section](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/connections/session-protocols/rdp-connections)
+
+PAM Machine
+
+PAM Database
+
+PAM Directory
+
+PAM Remote Browser
+
+PAM User
+
+docs
+
+[port mapping](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
+access-manager/references/port-mapping)
+
+[this ](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
+
+[session recording](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
+access-manager/session-recording-and-playback)
+
+[section](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/connections/session-protocols/ssh-connections)
+
+[session recording](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
+access-manager/session-recording-and-playback)
+
+[session recording](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
+access-manager/session-recording-and-playback)
+
+[RBI page](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/remote-browser-isolation)
+
+[session recording](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
+access-manager/session-recording-and-playback)
+
+[section](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/connections/session-protocols/postgresql-connections)
+
+Installed and configured the Keeper Gateway
+
+Set up a PAM Configuration for your target Environment
+
+page
+
+Sharing and Access Control
+
+Installed and configured the Keeper Gateway
+
+Set up a PAM Configuration for your target Environment
+
+page
+
+Sharing and Access Control
+
+network architecture diagram
+
+MySQL Database
+
+PostgreSQL Database
+
+Microsoft SQL Server Database
+
+network architecture diagram
+
+[Keeper
+Connections](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/connections)
+
+[Keeper Tunnels](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
+access-manager/tunnels)
+
+[Nodes and Organizational Structure](https://docs.keeper.io/en/enterprise-
+guide/nodes-and-organizational-structure)
+
+[Roles, RBAC and Permissions](https://docs.keeper.io/en/enterprise-
+guide/roles)
+
+PAM Configuration
+
+[Quick Start
+Sandbox](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/quick-start-sandbox)
+
+Gateway wizard
+
+[Share Admin feature](https://docs.keeper.io/en/enterprise-
+guide/sharing/share-admin)
+
+zero-trust architecture
+
+[page](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/master)
+
+here
+
+section
+
+PAM Configuration
+
+Associated PAM Configuration record which defines the environment
+
+**Required -** This is the PAM configuration you created in the prerequisites
+
+Administrative Credential Record
+
+Linked PAM User credential used for connection and administrative operations
+
+Protocol
+
+Native database protocol used for connecting from the Gateway to the target
+
+**Required -** for this example: "MySQL"
+
+Session Recording
+
+Options for recording sessions and typescripts
+
+Connection Parameters
+
+Connection-specific protocol settings which can vary based on the protocol
+type
+
+PAM Configuration
+
+Associated PAM Configuration record which defines the environment
+
+**Required -** This is the PAM configuration you created in the prerequisites
+
+Administrative Credential Record
+
+Linked PAM User credential used for connection and administrative operations
+
+Protocol
+
+Native database protocol used for connecting from the Gateway to the target
+
+**Required -** for this example: "SQL Server"
+
+Session Recording
+
+Options for recording sessions and typescripts
+
+Connection Parameters
+
+Connection-specific protocol settings which can vary based on the protocol
+type
+
+PAM Configuration
+
+Associated PAM Configuration record which defines the environment
+
+**Required**
+
+Administrative Credential Record
+
+Linked PAM User credential used for connection and administrative operations
+
+Protocol
+
+Native database protocol used for connecting from the Gateway to the target
+
+**Required**
+
+Session Recording
+
+Options for recording sessions and typescripts
+
+Connection Parameters (multiple)
+
+Connection-specific protocol settings which can vary based on the protocol
+type
+
+Depends on protocol
+
+PAM Configuration
+
+Associated PAM Configuration record which defines the environment
+
+**Required**
+
+Administrative Credential Record
+
+Linked PAM User credential used for connection and administrative operations
+
+**Required**
+
+Protocol
+
+Native protocol used for connecting the session from the Gateway to the target
+
+**Required**
+
+Session Recording
+
+Options for recording sessions and typescripts
+
+Connection Parameters (multiple)
+
+Connection-specific protocol settings which can vary based on the protocol
+type
+
+Depends on protocol. We recommend specifying the **Connection Port** at a
+minimum.
+
+Login
+
+**Required** Examples:****`username` `username@domain` `DOMAIN\username`
+
+Password
+
+Password of the user
+
+Can be rotated
+
+Private PEM Key
+
+PEM Key associated with user
+
+Can be rotated
+
+Distinguished Name
+
+Distinguished name; used if associated with a PAM Directory
+
+**Required** only when the User is managed by a directory **** Example:
+CN=Jeff Smith,OU=Sales,DC=demo,DC=COM
+
+If left blank, defaults are attempted depending on the provider type
+
+Managed User
+
+Flag for accounts that are managed by the AWS or Azure IAM systems
+
+Set by Keeper Discovery to indicate that the password cannot be rotated. For
+example, AWS token-based auth.
+
+Connect Database
+
+Used in certain scenarios if a database name is needed
+
+Edge cases, e.g. using LDAP to connect to a MySQL database
 
 # Just-In-Time Access (JIT)
 
@@ -7007,8 +7072,8 @@ and thoroughly audited.
 
 See
 
-See this  for PostgreSQL protocol settings We recommend specifying the
-**Connection Port** at a minimum. E.g. "5432" for PostgreSQL.
+See this  for MySQL protocol settings We recommend specifying the **Connection
+Port** at a minimum. E.g. "3306" for MySQL.
 
 **Required** Visit this  for more details
 
@@ -7017,42 +7082,14 @@ See
 See this  for SQL Server protocol settings We recommend specifying the
 **Connection Port** at a minimum. E.g. "**1433** " for SQL Server.
 
-Connecting to the protected web application requires only that the Keeper
-Gateway has access to the target website. The Keeper Vault operates
-independently and does not require direct connectivity to the website,
-leveraging Keeper's zero-trust network access model to securely manage access
-through the Gateway. See the  for more details.
+**Required** Visit this  for more details
 
 See
 
 See
-
-Additional information on Remote Browser Isolation is .
 
 Username; exact context and format depends on the associated resource. See
 below.
-
-Connecting to the PAM Directory requires only that the Keeper Gateway has
-access to the target directory service. The Keeper Vault operates
-independently and does not require direct connectivity to the service,
-leveraging Keeper's zero-trust network access model to securely manage access
-through the Gateway. See the  for more details.
-
-See
-
-See the  command.
-
-More information on
-
-To ensure least privilege, we recommend splitting the PAM Users into a
-separate shared folder, in order to restrict what users and devices can access
-the underlying secrets. When launching our  or using our , Keeper will
-automatically place the resources and users into separate shared folders.
-
-Read more about the  in the Keeper Enterprise docs
-
-Keeper's  provides access to the target systems without sharing the
-credential, ensuring least privilege access.
 
 extends JIT capabilities to end-user devices, allowing for precise privilege
 elevation for specific processes, applications, or tasks without granting full
@@ -7065,7 +7102,7 @@ contact your Keeper Security account manager or email .
 access-manager/session-recording-and-playback)
 
 [section](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
-manager/connections/session-protocols/postgresql-connections)
+manager/connections/session-protocols/mysql-connections)
 
 [session recording](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
 access-manager/session-recording-and-playback)
@@ -7073,39 +7110,11 @@ access-manager/session-recording-and-playback)
 [section](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
 manager/connections/session-protocols/mysql-connections)
 
-network architecture diagram
+[session recording](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
+access-manager/session-recording-and-playback)
 
-[available at this
-page](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
-manager/remote-browser-isolation)
-
-network architecture diagram
-
-[Keeper
-Connections](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
-manager/connections)
-
-[Keeper Tunnels](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
-access-manager/tunnels)
-
-[Nodes and Organizational Structure](https://docs.keeper.io/en/enterprise-
-guide/nodes-and-organizational-structure)
-
-[Roles, RBAC and Permissions](https://docs.keeper.io/en/enterprise-
-guide/roles)
-
-PAM Configuration
-
-[Quick Start
-Sandbox](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
-manager/quick-start-sandbox)
-
-Gateway wizard
-
-[Share Admin feature](https://docs.keeper.io/en/enterprise-
-guide/sharing/share-admin)
-
-zero-trust architecture
+[session recording](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
+access-manager/session-recording-and-playback)
 
 [Keeper Privilege
 Manager](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/endpoint-privilege-
@@ -7120,25 +7129,8 @@ access-manager/password-rotation)
 
 [pam@keepersecurity.com](mailto:pam@keepersecurity.com)
 
-here
-
-section
-
-[session recording](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
-access-manager/session-recording-and-playback)
-
-[RBI page](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
-manager/remote-browser-isolation)
-
-[session recording](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
-access-manager/session-recording-and-playback)
-
 [Keeper Commander](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-
 cli/command-reference/reporting-commands)
-
-section
-
-section
 
 Planning your Deployment
 
@@ -7160,151 +7152,116 @@ Time-limited Access
 
 Revoking Access
 
-EC2 Role Policy
+###
 
-IAM User Policy
+Network Configuration
+
+The Keeper Gateway establishes outbound-only connections and does not require
+any inbound firewall rules. The following outbound connections must be
+allowed:
+
+Destination
+
+Port Needed
+
+More Info
+
+Keeper Cloud _(keepersecurity.[com|eu|com.au|jp|ca|us])_
+
+TLS Port 443
+
+Communicates with Keeper Cloud to access target infrastructure via native
+protocols (e.g., SSH, RDP)
+
+Keeper KRelay Server _(krelay.keepersecurity.[com|eu|com.au|jp|ca|us])_
+
+TCP and UDP opened on Port 3478 Outbound access to TCP and UDP ports 49152
+through 65535
+
+Facilitates secure and encrypted relay connections between end-user's vault
+and target systems via the Gateway
+
+The Gateway preserves zero knowledge by performing all encryption and
+decryption of data locally. Keeper Secrets Manager APIs are used to
+communicate with the Keeper cloud.
+
+###
+
+Network Configuration
+
+The Keeper Gateway establishes outbound-only connections and does not require
+any inbound firewall rules. The following outbound connections must be
+allowed:
+
+Destination
+
+Port Needed
+
+More Info
+
+Keeper Cloud _(keepersecurity.[com|eu|com.au|jp|ca|us])_
+
+TLS Port 443
+
+Communicates with Keeper Cloud to access target infrastructure via native
+protocols (e.g., SSH, RDP)
+
+Keeper KRelay Server _(krelay.keepersecurity.[com|eu|com.au|jp|ca|us])_
+
+TCP and UDP opened on Port 3478 Outbound access to TCP and UDP ports 49152
+through 65535
+
+Facilitates secure and encrypted relay connections between end-user's vault
+and target systems via the Gateway
+
+The Gateway preserves zero knowledge by performing all encryption and
+decryption of data locally. Keeper Secrets Manager APIs are used to
+communicate with the Keeper cloud.
+
+###
+
+Network Configuration
+
+The Keeper Gateway establishes outbound-only connections and does not require
+any inbound firewall rules. The following outbound connections must be
+allowed:
+
+Destination
+
+Port Needed
+
+More Info
+
+Keeper Cloud _(keepersecurity.[com|eu|com.au|jp|ca|us])_
+
+TLS Port 443
+
+Communicates with Keeper Cloud to access target infrastructure via native
+protocols (e.g., SSH, RDP)
+
+Keeper KRelay Server _(krelay.keepersecurity.[com|eu|com.au|jp|ca|us])_
+
+TCP and UDP opened on Port 3478 Outbound access to TCP and UDP ports 49152
+through 65535
+
+Facilitates secure and encrypted relay connections between end-user's vault
+and target systems via the Gateway
+
+The Gateway preserves zero knowledge by performing all encryption and
+decryption of data locally. Keeper Secrets Manager APIs are used to
+communicate with the Keeper cloud.
+
+section
+
+section
 
 Note (1)
 
-###
+section
 
-Connecting to the Host Instance
-
-A very useful capability of the Keeper Gateway is being able to open
-connections and tunnels to the host machine. By adding the `extra_hosts`
-section to your docker compose file with a value of
-`host.docker.internal:host-gateway`, you can open sessions directly to the
-host.
-
-Example docker compose with the Gateway container:
-
-Enabling this option allows you to establish a Connection to the host. For
-example, to open an SSH connection:
-
-  *   *   * 
-
-###
-
-Upgrading the Keeper Gateway service through the host
-
-If you use KeeperPAM to SSH over to the host service, you can upgrade the
-container by running the container update of the gateway in the background:
-
-###
-
-Checksum Verification
-
-Keeper Gateway SHA256 hashes for the latest version are published at the below
-location:
-
-Calculating and verifying the checksum:
-
-####
-
-Linux
-
-####
-
-PowerShell
-
-###
-
-Checksum Verification
-
-Keeper Gateway SHA256 hashes for the latest version are published at the below
-location:
-
-Calculating and verifying the checksum:
-
-####
-
-Linux
-
-####
-
-PowerShell
-
-Create a  record with the SSH private key
-
-Create a  record with the hostname to `host.docker.internal` and port `22`
-
-Activate the  in PAM settings referencing the PAM User
-
-Copy
-
-    
-    
-    services:
-          keeper-gateway:
-            platform: linux/amd64
-            image: keeper/gateway:latest
-            shm_size: 2g
-            restart: always
-            extra_hosts:
-              - "host.docker.internal:host-gateway"
-            security_opt:
-              - "seccomp:docker-seccomp.json"
-            environment:
-              ACCEPT_EULA: Y
-              GATEWAY_CONFIG: xxxxxxxx
-
-Copy
-
-    
-    
-    docker-compose pull
-    nohup docker-compose up -d keeper-gateway &
-
-Copy
-
-    
-    
-    sha256sum keeper-gateway_linux_x86_64
-    cat keeper-gateway_X.X.X_SHA256SUMS | grep keeper-gateway_linux_x86_64
-
-Copy
-
-    
-    
-    Get-FileHash -Algorithm SHA256 keeper-gateway_windows_x86_64.exe | Format-List
-    Get-Content keeper-gateway_X.X.X_SHA256SUMS | Select-String keeper-gateway_windows_x86_64.exe
-
-<https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
-
-Copy
-
-    
-    
-    sha256sum keeper-gateway_linux_x86_64
-    cat keeper-gateway_X.X.X_SHA256SUMS | grep keeper-gateway_linux_x86_64
-
-Copy
-
-    
-    
-    Get-FileHash -Algorithm SHA256 keeper-gateway_windows_x86_64.exe | Format-List
-    Get-Content keeper-gateway_X.X.X_SHA256SUMS | Select-String keeper-gateway_windows_x86_64.exe
-
-<https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
-
-PAM User
-
-PAM Machine
-
-[SSH connection](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
-access-manager/connections/session-protocols/ssh-connections)
-
-[MSP Consumption Model](https://docs.keeper.io/en/enterprise-guide/keeper-
-msp/consumption-based-billing)
-
-[Secure Add-On](https://docs.keeper.io/en/enterprise-guide/keeper-
-msp/consumption-based-billing/secure-add-ons)
-
-[Reporting, Alerts & SIEM integration](https://docs.keeper.io/en/enterprise-
-guide/event-reporting)
-
-[Time-Limited Access](https://docs.keeper.io/en/enterprise-guide/sharing/time-
-limited-access)
+[`secrets-manager app
+share`](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-cli/command-
+reference/secrets-manager-commands)
 
 On the "Rotation Settings" section of the PAM User vault record, you can
 configure how credential rotation is managed.
@@ -7409,15 +7366,161 @@ Below are some examples of PAM User records.
 
   * Azure AD User
 
+###
+
+Connecting to the Host Instance
+
+A very useful capability of the Keeper Gateway is being able to open
+connections and tunnels to the host machine. By adding the `extra_hosts`
+section to your docker compose file with a value of
+`host.docker.internal:host-gateway`, you can open sessions directly to the
+host.
+
+Example docker compose with the Gateway container:
+
+Enabling this option allows you to establish a Connection to the host. For
+example, to open an SSH connection:
+
+  *   *   * 
+
+###
+
+Upgrading the Keeper Gateway service through the host
+
+If you use KeeperPAM to SSH over to the host service, you can upgrade the
+container by running the container update of the gateway in the background:
+
+###
+
+Checksum Verification
+
+Keeper Gateway SHA256 hashes for the latest version are published at the below
+location:
+
+Calculating and verifying the checksum:
+
+####
+
+Linux
+
+Copy
+
+    
+    
+    sha256sum keeper-gateway_linux_x86_64
+    cat keeper-gateway_X.X.X_SHA256SUMS | grep keeper-gateway_linux_x86_64
+
+####
+
+PowerShell
+
+Copy
+
+    
+    
+    Get-FileHash -Algorithm SHA256 keeper-gateway_windows_x86_64.exe | Format-List
+    Get-Content keeper-gateway_X.X.X_SHA256SUMS | Select-String keeper-gateway_windows_x86_64.exe
+
+###
+
+Checksum Verification
+
+Keeper Gateway SHA256 hashes for the latest version are published at the below
+location:
+
+Calculating and verifying the checksum:
+
+####
+
+Linux
+
+Copy
+
+    
+    
+    sha256sum keeper-gateway_linux_x86_64
+    cat keeper-gateway_X.X.X_SHA256SUMS | grep keeper-gateway_linux_x86_64
+
+####
+
+PowerShell
+
+Copy
+
+    
+    
+    Get-FileHash -Algorithm SHA256 keeper-gateway_windows_x86_64.exe | Format-List
+    Get-Content keeper-gateway_X.X.X_SHA256SUMS | Select-String keeper-gateway_windows_x86_64.exe
+
 For advanced scheduling, see the .
 
 The rotation schedule can be set on a specific interval, or using a .
 
-[cron spec](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
-manager/references/cron-spec)
+Create a  record with the SSH private key
+
+Create a  record with the hostname to `host.docker.internal` and port `22`
+
+Activate the  in PAM settings referencing the PAM User
+
+<https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
+
+<https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
 
 [cron spec](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
 manager/references/cron-spec)
+
+Copy
+
+    
+    
+    services:
+          keeper-gateway:
+            platform: linux/amd64
+            image: keeper/gateway:latest
+            shm_size: 2g
+            restart: always
+            extra_hosts:
+              - "host.docker.internal:host-gateway"
+            security_opt:
+              - "seccomp:docker-seccomp.json"
+            environment:
+              ACCEPT_EULA: Y
+              GATEWAY_CONFIG: xxxxxxxx
+
+Copy
+
+    
+    
+    docker-compose pull
+    nohup docker-compose up -d keeper-gateway &
+
+[cron spec](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-access-
+manager/references/cron-spec)
+
+PAM User
+
+PAM Machine
+
+[SSH connection](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/privileged-
+access-manager/connections/session-protocols/ssh-connections)
+
+section
+
+[MSP Consumption Model](https://docs.keeper.io/en/enterprise-guide/keeper-
+msp/consumption-based-billing)
+
+[Secure Add-On](https://docs.keeper.io/en/enterprise-guide/keeper-
+msp/consumption-based-billing/secure-add-ons)
+
+[Reporting, Alerts & SIEM integration](https://docs.keeper.io/en/enterprise-
+guide/event-reporting)
+
+[Time-Limited Access](https://docs.keeper.io/en/enterprise-guide/sharing/time-
+limited-access)
+
+this section
+
+section
 
 section
 
@@ -7458,6 +7561,10 @@ PAM User linked to PAM Resource
 
 PAM User settings
 
+Docker Logs from Keeper Gateway
+
+Gateway is Online
+
 One-Time Access Token
 
 Managing Applications
@@ -7472,12 +7579,6 @@ Create a Gateway and associated applications
 
 Gateway Creation Wizard
 
-Creating a Gateway
-
-Create a KSM Application
-
-Windows Gateway
-
 Create a Device
 
 Add a device using One-Time Access Token and IP Lockdown
@@ -7488,6 +7589,14 @@ Creating a new device with Configuration File method
 
 Device created with Configuration method
 
+Creating a Gateway
+
+Create a KSM Application
+
+Windows Gateway
+
+Windows Automatic Updates
+
 Keeper Gateway for Windows
 
 Service Account Setup
@@ -7495,22 +7604,6 @@ Service Account Setup
 Keeper Gateway Service
 
 Verbose Logging Mode
-
-Windows Automatic Updates
-
-KeeperPAM Events
-
-Set Alert for Gateway Offline
-
-Gateway Offline Alert
-
-Email Alert for Gateway Offline
-
-Docker Logs from Keeper Gateway
-
-Gateway is Online
-
-AWS Rotation Hierarchy
 
 Select Configuration Method
 
@@ -7521,6 +7614,36 @@ Create Secret using Plaintext formatting
 Secret Name and Description
 
 View Secrets
+
+KeeperPAM Events
+
+Set Alert for Gateway Offline
+
+Gateway Offline Alert
+
+Email Alert for Gateway Offline
+
+AWS Rotation Hierarchy
+
+Example of Azure Windows VM
+
+Create a new PAM Resource Record
+
+Right-click to create PAM Resource Records
+
+Selecting a Target
+
+Linux Machine Example
+
+Creating a new PAM Machine record
+
+PAM Settings and Administrative Credentials
+
+PAM Settings for a PAM Machine resource
+
+PAM Machine Record - Windows
+
+PAM Machine Record - Linux
 
 Create Application
 
@@ -7534,23 +7657,25 @@ Create Azure Custom Role
 
 Assign Role to Keeper Secrets Manager application member
 
-Create a new PAM Resource Record
+Creating a Browser Isolation Record
 
-Right-click to create PAM Resource Records
+PAM Settings on a Remote Browser Isolation resource
 
-Selecting a Target
+PAM Settings for Remote Browser Isolation
 
-Create a PAM Database
+Autofill Credentials for Remote Browser Isolation
 
-PAM Settings and Administrative Credentials
+PAM Remote Browser resource
 
-PAM Settings on Database resource
+PostgreSQL PAM Database Record
 
-PAM Database with Connections and Tunnels activated
+Administrative Credential Record
 
-Example of Azure Windows VM
+Sharing a PostgreSQL Database Record
 
-Linux Machine Example
+Launching interactive CLI session to PostgreSQL
+
+Interactive Connection to PostgreSQL Database
 
 PAM Database
 
@@ -7564,26 +7689,6 @@ Connection to MySQL Database
 
 MySQL Interactive Session
 
-Creating a new PAM Machine record
-
-PAM Settings and Administrative Credentials
-
-PAM Settings for a PAM Machine resource
-
-PAM Machine Record - Windows
-
-PAM Machine Record - Linux
-
-PostgreSQL PAM Database Record
-
-Administrative Credential Record
-
-Sharing a PostgreSQL Database Record
-
-Launching interactive CLI session to PostgreSQL
-
-Interactive Connection to PostgreSQL Database
-
 SQL Server PAM Database Record
 
 Administrative Credential Record
@@ -7596,17 +7701,13 @@ Connection to a Microsoft SQL Database
 
 Interactive Session with Microsoft SQL Database
 
-Creating a Browser Isolation Record
+Create a PAM Database
 
-PAM Settings on a Remote Browser Isolation resource
+PAM Settings and Administrative Credentials
 
-PAM Settings for Remote Browser Isolation
+PAM Settings on Database resource
 
-Autofill Credentials for Remote Browser Isolation
-
-PAM Remote Browser resource
-
-Creating a PAM User
+PAM Database with Connections and Tunnels activated
 
 Creating a PAM Directory
 
@@ -7615,6 +7716,8 @@ PAM Settings
 PAM Settings
 
 PAM Directory with Connection, Rotation and Tunnel Enabled
+
+Creating a PAM User
 
 Application Sharing
 
@@ -7692,13 +7795,13 @@ Azure AD User
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9IDMEosXrorfBpUMnr22%252Fkeeperpam-
-system-
-architecture.jpg%3Falt%3Dmedia%26token%3D9afb26d1-5da9-4834-8bba-2366035cc267&width=768&dpr=4&quality=100&sign=8e135273&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FS3qT4Avm5vAU5DlEYPBE%252FGetting%2520Started.jpg%3Falt%3Dmedia%26token%3D8fbdc83a-6ac8-4ae9-8036-0b57c1307745&width=768&dpr=4&quality=100&sign=bd5d513b&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FS3qT4Avm5vAU5DlEYPBE%252FGetting%2520Started.jpg%3Falt%3Dmedia%26token%3D8fbdc83a-6ac8-4ae9-8036-0b57c1307745&width=768&dpr=4&quality=100&sign=bd5d513b&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9IDMEosXrorfBpUMnr22%252Fkeeperpam-
+system-
+architecture.jpg%3Falt%3Dmedia%26token%3D9afb26d1-5da9-4834-8bba-2366035cc267&width=768&dpr=4&quality=100&sign=8e135273&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -7770,6 +7873,18 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuUwDOjhl0
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZdCwOSIZ90eIqXaHSQ7N%252FDocker%2520Install.jpg%3Falt%3Dmedia%26token%3D577af308-2d82-4423-8d62-a94826e60bc6&width=768&dpr=4&quality=100&sign=8bebeb77&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuLk5SZEF58TniLsYGKII%252FScreenshot%25202024-12-27%2520at%25209.29.10%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3De9a6d790-80d2-4bdc-8ebe-a08cd88119a5&width=768&dpr=4&quality=100&sign=c202035e&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FpdccmtxqPQDtpeTrL7gh%252FScreenshot%25202024-12-27%2520at%25209.38.24%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D3c64598f-c12e-4e6a-9fa9-9a948c605397&width=768&dpr=4&quality=100&sign=bd809e33&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlGKhrtW3C17QpVPL2y1U%252FApplications.jpg%3Falt%3Dmedia%26token%3D3a9db568-10db-414c-a954-ec26f8b66dc9&width=768&dpr=4&quality=100&sign=8ecfa768&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
@@ -7812,19 +7927,6 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FakdhgZ76M
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FrperdEulgHMqKZAh4itn%252FScreenshot%25202025-04-19%2520at%25207.46.13%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dfcadc16c-003b-46f2-b6b7-8666d91c27a2&width=768&dpr=4&quality=100&sign=24efc03d&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGfrKhg3EYK2mAtfmsq1x%252FScreenshot%25202023-05-01%2520at%252011.37.56%2520AM.jpg%3Falt%3Dmedia%26token%3D21236241-e0f2-4b54-b7dd-9f3cea8ab53c&width=768&dpr=4&quality=100&sign=2355f5&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJKAv2CyVdxhUf7m7k7TY%252FScreenshot%25202023-09-14%2520at%25205.46.20%2520PM.png%3Falt%3Dmedia%26token%3Db1b3336b-b34d-4faa-
-aa75-1b5f54170233&width=768&dpr=4&quality=100&sign=8097b719&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5ftStQCAmP0Ff6YRT1hO%252FDevices.jpg%3Falt%3Dmedia%26token%3Dcc7439f2-e1e5-4755-be90-d4782bb1923f&width=768&dpr=4&quality=100&sign=a7e9b756&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
@@ -7851,7 +7953,40 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F14KWP5B9H
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FrperdEulgHMqKZAh4itn%252FScreenshot%25202025-04-19%2520at%25207.46.13%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dfcadc16c-003b-46f2-b6b7-8666d91c27a2&width=768&dpr=4&quality=100&sign=24efc03d&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGfrKhg3EYK2mAtfmsq1x%252FScreenshot%25202023-05-01%2520at%252011.37.56%2520AM.jpg%3Falt%3Dmedia%26token%3D21236241-e0f2-4b54-b7dd-9f3cea8ab53c&width=768&dpr=4&quality=100&sign=2355f5&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJKAv2CyVdxhUf7m7k7TY%252FScreenshot%25202023-09-14%2520at%25205.46.20%2520PM.png%3Falt%3Dmedia%26token%3Db1b3336b-b34d-4faa-
+aa75-1b5f54170233&width=768&dpr=4&quality=100&sign=8097b719&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLrkXCEAnkZ5mHSvXvqLE%252FLinux%2520Install.jpg%3Falt%3Dmedia%26token%3D132b3ef1-e943-461b-8c25-753ccce83a38&width=768&dpr=4&quality=100&sign=50ec59bd&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIVb77fSHLENBCICa4kGc%252Fimage.png%3Falt%3Dmedia%26token%3Da74167f2-c46c-4548-bf82-1a44ab719539&width=768&dpr=4&quality=100&sign=5894a0eb&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9R0nfNJVPTwAkHePdcaP%252Fimage.png%3Falt%3Dmedia%26token%3D649c4117-2e17-40c8-a07e-66624d411c19&width=768&dpr=4&quality=100&sign=bff8be29&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fz58USWZNQlLP5Alvonau%252Fimage.png%3Falt%3Dmedia%26token%3D1c645547-8a96-45a0-badb-7ebd2803ff03&width=768&dpr=4&quality=100&sign=3590994f&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8BFeFROeVqmC8KhlQPZL%252Fimage.png%3Falt%3Dmedia%26token%3D27c9dfc8-a8a7-4b83-877f-7a638cd5b710&width=768&dpr=4&quality=100&sign=5f7dd22&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTEpWJKKgJos84Q5jNeZS%252Fimage.png%3Falt%3Dmedia%26token%3D5248f4c6-c27f-41cd-830e-63542633c63e&width=768&dpr=4&quality=100&sign=e3507b53&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -7880,62 +8015,6 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNqfhdJpjR
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIVb77fSHLENBCICa4kGc%252Fimage.png%3Falt%3Dmedia%26token%3Da74167f2-c46c-4548-bf82-1a44ab719539&width=768&dpr=4&quality=100&sign=5894a0eb&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F9R0nfNJVPTwAkHePdcaP%252Fimage.png%3Falt%3Dmedia%26token%3D649c4117-2e17-40c8-a07e-66624d411c19&width=768&dpr=4&quality=100&sign=bff8be29&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fz58USWZNQlLP5Alvonau%252Fimage.png%3Falt%3Dmedia%26token%3D1c645547-8a96-45a0-badb-7ebd2803ff03&width=768&dpr=4&quality=100&sign=3590994f&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F8BFeFROeVqmC8KhlQPZL%252Fimage.png%3Falt%3Dmedia%26token%3D27c9dfc8-a8a7-4b83-877f-7a638cd5b710&width=768&dpr=4&quality=100&sign=5f7dd22&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FTEpWJKKgJos84Q5jNeZS%252Fimage.png%3Falt%3Dmedia%26token%3D5248f4c6-c27f-41cd-830e-63542633c63e&width=768&dpr=4&quality=100&sign=e3507b53&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7HKEvnUmuwxtqzWrtAEH%252FScreenshot%25202025-02-22%2520at%25205.52.13%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D317f6374-5d64-4e14-9f35-14a73822541c&width=768&dpr=4&quality=100&sign=355aa33a&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCTid6ZraCYRFA0ZppXsp%252FScreenshot%25202025-02-22%2520at%25206.49.59%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D72c05446-21cc-41d5-9afb-b9e82be1de2e&width=768&dpr=4&quality=100&sign=b6a77551&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3dh5GtgJnyDtzJ0hjTfS%252FScreenshot%25202025-02-22%2520at%25206.47.09%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db298b1d3-c69a-40b8-b14a-2ac845ac79a5&width=768&dpr=4&quality=100&sign=65e20a70&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJI6cxiJgIuhgFKkkKuYV%252FScreenshot%25202025-02-23%2520at%25207.43.17%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dccf0ad22-a732-430a-b206-5b7d36df3cb6&width=768&dpr=4&quality=100&sign=e80cc5c5&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZdCwOSIZ90eIqXaHSQ7N%252FDocker%2520Install.jpg%3Falt%3Dmedia%26token%3D577af308-2d82-4423-8d62-a94826e60bc6&width=768&dpr=4&quality=100&sign=8bebeb77&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuLk5SZEF58TniLsYGKII%252FScreenshot%25202024-12-27%2520at%25209.29.10%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3De9a6d790-80d2-4bdc-8ebe-a08cd88119a5&width=768&dpr=4&quality=100&sign=c202035e&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FpdccmtxqPQDtpeTrL7gh%252FScreenshot%25202024-12-27%2520at%25209.38.24%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D3c64598f-c12e-4e6a-9fa9-9a948c605397&width=768&dpr=4&quality=100&sign=bd809e33&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F50QZBbFzIooLL6SE2zdl%252FAWS%2520Environment%2520Setup.jpg%3Falt%3Dmedia%26token%3D6def2904-4c7a-4d52-b85c-b3b553cc5657&width=768&dpr=4&quality=100&sign=c822492f&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7iXR9KknebMfnhBcpvnC%252FAWS%2520Rotation%2520Hierarchy.jpg%3Falt%3Dmedia%26token%3Df1e1b0e0-5de4-4c1a-9a38-83877a59d289&width=768&dpr=4&quality=100&sign=14db5526&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FAe5xYSWFNfKaxrHnMvJt%252FScreenshot%25202024-12-31%2520at%25202.46.15%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D55ae2ada-7f86-4d72-aa87-18a61bfdc6d7&width=768&dpr=4&quality=100&sign=cd7223c&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
@@ -7957,6 +8036,80 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCDLKSG2dx
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F58kXg5tcowhN2UJNwtvU%252FScreenshot%25202024-12-31%2520at%25202.59.36%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D88b21981-79eb-462d-b41d-b49fd591d42b&width=768&dpr=4&quality=100&sign=9b3cbef3&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7HKEvnUmuwxtqzWrtAEH%252FScreenshot%25202025-02-22%2520at%25205.52.13%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D317f6374-5d64-4e14-9f35-14a73822541c&width=768&dpr=4&quality=100&sign=355aa33a&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FCTid6ZraCYRFA0ZppXsp%252FScreenshot%25202025-02-22%2520at%25206.49.59%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D72c05446-21cc-41d5-9afb-b9e82be1de2e&width=768&dpr=4&quality=100&sign=b6a77551&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3dh5GtgJnyDtzJ0hjTfS%252FScreenshot%25202025-02-22%2520at%25206.47.09%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db298b1d3-c69a-40b8-b14a-2ac845ac79a5&width=768&dpr=4&quality=100&sign=65e20a70&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FJI6cxiJgIuhgFKkkKuYV%252FScreenshot%25202025-02-23%2520at%25207.43.17%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dccf0ad22-a732-430a-b206-5b7d36df3cb6&width=768&dpr=4&quality=100&sign=e80cc5c5&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F50QZBbFzIooLL6SE2zdl%252FAWS%2520Environment%2520Setup.jpg%3Falt%3Dmedia%26token%3D6def2904-4c7a-4d52-b85c-b3b553cc5657&width=768&dpr=4&quality=100&sign=c822492f&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F7iXR9KknebMfnhBcpvnC%252FAWS%2520Rotation%2520Hierarchy.jpg%3Falt%3Dmedia%26token%3Df1e1b0e0-5de4-4c1a-9a38-83877a59d289&width=768&dpr=4&quality=100&sign=14db5526&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGEDJmvpUaT8ImnYLgjLV%252FKeeperPAM%2520Configuration.jpg%3Falt%3Dmedia%26token%3D657572ec-45bc-4e1a-a219-2402c655252a&width=768&dpr=4&quality=100&sign=8009b119&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fes2MA1KVac2YXpHVcHp5%252FScreenshot%25202025-02-09%2520at%25208.48.45%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D75fb48b0-f924-4ffa-
+aa22-4528c4b0977a&width=768&dpr=4&quality=100&sign=68db9d58&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtnIDbstjLAfq2ECqq9HB%252FScreenshot%25202024-12-28%2520at%25203.01.48%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3De63d20a1-aa96-4fbd-89ed-d0fdd455a830&width=768&dpr=4&quality=100&sign=28fcb001&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FMeo2Pl0F5xDl8iY2NQeK%252FScreenshot%25202024-12-28%2520at%25203.05.53%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D811e735e-6692-4f26-88a7-4e4e02bd2ec4&width=768&dpr=4&quality=100&sign=a57a48e6&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNqfGO32FajbD2yVagIb5%252FScreenshot%25202024-12-28%2520at%25203.01.06%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Df2ba3ce4-b709-403a-824e-37072e227dc8&width=768&dpr=4&quality=100&sign=ca837904&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZEojWQmDX3MsE0EMlM1D%252FScreenshot%25202025-02-09%2520at%25208.49.59%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dd9740e18-2a6b-4ea9-b534-eb67addf8c97&width=768&dpr=4&quality=100&sign=e8aaaba2&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FETnLSTu5qYNj0xwMltI2%252FKeeperPAM%2520Machine.jpg%3Falt%3Dmedia%26token%3D7f69333a-8f02-410f-8542-1882216994b6&width=768&dpr=4&quality=100&sign=5324b381&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYzn7xA4rI6mcsTSwW1pz%252FScreenshot%25202024-12-26%2520at%25205.30.05%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Da4e98fcc-37b0-4906-843e-b1bcd5bf5b4f&width=768&dpr=4&quality=100&sign=b27d3f5f&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHeovfKrm4CXGKwiIqq11%252FScreenshot%25202025-01-01%2520at%25209.27.18%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Db4e0a075-94bf-43da-
+aa25-bf684ab3a00d&width=768&dpr=4&quality=100&sign=68e0a16&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGfUUKJYQrvyHbjH6wLC9%252FScreenshot%25202025-01-01%2520at%25209.31.08%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dacd71242-e88f-4283-8aa9-7d68c5dd96ae&width=768&dpr=4&quality=100&sign=a74e0ae&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FrSy701IpEDZQukD6q7kh%252FScreenshot%25202025-01-01%2520at%25209.39.22%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D35cfb79d-a8b8-4e57-87b3-84921ab720d9&width=768&dpr=4&quality=100&sign=8b7fe257&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3RtXTHeGIFJVRWtkORwj%252FScreenshot%25202025-01-01%2520at%25209.41.18%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3De3686b71-94f2-4d91-b43b-b7c9644142df&width=768&dpr=4&quality=100&sign=2573abaf&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -7989,98 +8142,28 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F00jLNdtID
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGEDJmvpUaT8ImnYLgjLV%252FKeeperPAM%2520Configuration.jpg%3Falt%3Dmedia%26token%3D657572ec-45bc-4e1a-a219-2402c655252a&width=768&dpr=4&quality=100&sign=8009b119&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLKQi1jLQWs8CA7EGR7eD%252FKeeperPAM%2520Remote%2520Browser.jpg%3Falt%3Dmedia%26token%3D711d7db0-b5c2-444f-bf89-5aa444dfbbf8&width=768&dpr=4&quality=100&sign=28beb448&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FtnIDbstjLAfq2ECqq9HB%252FScreenshot%25202024-12-28%2520at%25203.01.48%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3De63d20a1-aa96-4fbd-89ed-d0fdd455a830&width=768&dpr=4&quality=100&sign=28fcb001&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSy3rZi1RT37UGJpbI4J1%252FScreenshot%25202024-12-28%2520at%25207.17.54%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D06802fd6-994b-4c65-a90e-2b93c61be56f&width=768&dpr=4&quality=100&sign=c273f521&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FMeo2Pl0F5xDl8iY2NQeK%252FScreenshot%25202024-12-28%2520at%25203.05.53%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D811e735e-6692-4f26-88a7-4e4e02bd2ec4&width=768&dpr=4&quality=100&sign=a57a48e6&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlizxOCMg4atoYAjhS7WT%252FScreenshot%25202025-01-01%2520at%252010.00.03%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D4ae39ea2-59f3-427e-8128-98b5c6e56ec4&width=768&dpr=4&quality=100&sign=a846f439&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNqfGO32FajbD2yVagIb5%252FScreenshot%25202024-12-28%2520at%25203.01.06%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Df2ba3ce4-b709-403a-824e-37072e227dc8&width=768&dpr=4&quality=100&sign=ca837904&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Flpcb27LMoJVaVdXPPdr1%252FScreenshot%25202025-01-01%2520at%252010.01.51%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dde3f3bad-c944-48f7-a6b0-c90d5657a31d&width=768&dpr=4&quality=100&sign=adca79a0&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FG43gSJCEtSl4zWbGowLm%252FKeeperPAM%2520Database.jpg%3Falt%3Dmedia%26token%3D977d6327-73b4-4fa5-98cd-2783e905db39&width=768&dpr=4&quality=100&sign=9773dba2&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FUIsmTVAwLmoexG3NzXB0%252FScreenshot%25202025-01-01%2520at%252010.02.08%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D8e5a073f-ca59-49ec-
+ab23-11d960f192bb&width=768&dpr=4&quality=100&sign=a1f2454d&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FafSL2rOYf5xNGoajV91A%252FScreenshot%25202024-12-28%2520at%25206.45.24%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dc517c017-ae7c-4b7e-8a1e-5b43aedac786&width=768&dpr=4&quality=100&sign=f60da786&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHeovfKrm4CXGKwiIqq11%252FScreenshot%25202025-01-01%2520at%25209.27.18%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Db4e0a075-94bf-43da-
-aa25-bf684ab3a00d&width=768&dpr=4&quality=100&sign=68e0a16&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FQDnmwlO5pIBfiNFcSqJM%252FScreenshot%25202025-01-01%2520at%25209.48.44%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Df3cd398b-968e-4933-8a6d-7b1219374da4&width=768&dpr=4&quality=100&sign=8eea2be3&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVSwnnpOvh75YONo6GSFD%252FScreenshot%25202025-01-01%2520at%25209.53.35%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D0bbbe72f-3230-4d03-98b7-71f52edd1469&width=768&dpr=4&quality=100&sign=ff984fa2&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fes2MA1KVac2YXpHVcHp5%252FScreenshot%25202025-02-09%2520at%25208.48.45%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D75fb48b0-f924-4ffa-
-aa22-4528c4b0977a&width=768&dpr=4&quality=100&sign=68db9d58&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FZEojWQmDX3MsE0EMlM1D%252FScreenshot%25202025-02-09%2520at%25208.49.59%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dd9740e18-2a6b-4ea9-b534-eb67addf8c97&width=768&dpr=4&quality=100&sign=e8aaaba2&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGMWX8nti9YeFXKMsewLp%252FScreenshot%25202025-01-22%2520at%25208.22.52%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D65ceef4f-099d-48bb-b443-6c72568e2cf1&width=768&dpr=4&quality=100&sign=38313f83&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FD8nqAfaDPIW4WBCW9Rxr%252FScreenshot%25202025-01-22%2520at%25208.53.04%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D06fac322-b21d-4041-b023-bda02e7e509f&width=768&dpr=4&quality=100&sign=1fe67e18&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Ftds8AxVXgjBxUp62XOWO%252FScreenshot%25202025-01-22%2520at%25208.57.23%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3De5b51065-620f-4e11-8e95-565659691a5f&width=768&dpr=4&quality=100&sign=4197fecc&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FgJYt2F84PuVu30sU8vjA%252FScreenshot%25202025-01-22%2520at%25208.58.45%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D3510536e-e225-4627-b500-f131bd092e71&width=768&dpr=4&quality=100&sign=3fcd5b5e&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjzpPPcD5sRb1UohoCaTn%252FScreenshot%25202025-01-22%2520at%25202.39.35%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Da1847cd6-036a-43ca-a220-9221e9ce0e22&width=768&dpr=4&quality=100&sign=12e3e7c4&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOqQstEohDohyhgqfligd%252FScreenshot%25202025-01-22%2520at%25209.00.02%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D38ae8843-15e6-4d46-b9f8-d0617f951f59&width=768&dpr=4&quality=100&sign=c5bc0f5f&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FETnLSTu5qYNj0xwMltI2%252FKeeperPAM%2520Machine.jpg%3Falt%3Dmedia%26token%3D7f69333a-8f02-410f-8542-1882216994b6&width=768&dpr=4&quality=100&sign=5324b381&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FYzn7xA4rI6mcsTSwW1pz%252FScreenshot%25202024-12-26%2520at%25205.30.05%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Da4e98fcc-37b0-4906-843e-b1bcd5bf5b4f&width=768&dpr=4&quality=100&sign=b27d3f5f&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHeovfKrm4CXGKwiIqq11%252FScreenshot%25202025-01-01%2520at%25209.27.18%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Db4e0a075-94bf-43da-
-aa25-bf684ab3a00d&width=768&dpr=4&quality=100&sign=68e0a16&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGfUUKJYQrvyHbjH6wLC9%252FScreenshot%25202025-01-01%2520at%25209.31.08%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dacd71242-e88f-4283-8aa9-7d68c5dd96ae&width=768&dpr=4&quality=100&sign=a74e0ae&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FrSy701IpEDZQukD6q7kh%252FScreenshot%25202025-01-01%2520at%25209.39.22%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D35cfb79d-a8b8-4e57-87b3-84921ab720d9&width=768&dpr=4&quality=100&sign=8b7fe257&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3RtXTHeGIFJVRWtkORwj%252FScreenshot%25202025-01-01%2520at%25209.41.18%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3De3686b71-94f2-4d91-b43b-b7c9644142df&width=768&dpr=4&quality=100&sign=2573abaf&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FC08APnlcrl6pNYeGETKm%252FScreenshot%25202025-01-01%2520at%252010.05.23%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3De51ff4f5-13d6-4693-ba1c-3caf82dc010c&width=768&dpr=4&quality=100&sign=1eeb9c59&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -8108,6 +8191,30 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuV3f6t7N6
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGMWX8nti9YeFXKMsewLp%252FScreenshot%25202025-01-22%2520at%25208.22.52%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D65ceef4f-099d-48bb-b443-6c72568e2cf1&width=768&dpr=4&quality=100&sign=38313f83&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FD8nqAfaDPIW4WBCW9Rxr%252FScreenshot%25202025-01-22%2520at%25208.53.04%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D06fac322-b21d-4041-b023-bda02e7e509f&width=768&dpr=4&quality=100&sign=1fe67e18&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Ftds8AxVXgjBxUp62XOWO%252FScreenshot%25202025-01-22%2520at%25208.57.23%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3De5b51065-620f-4e11-8e95-565659691a5f&width=768&dpr=4&quality=100&sign=4197fecc&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FgJYt2F84PuVu30sU8vjA%252FScreenshot%25202025-01-22%2520at%25208.58.45%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D3510536e-e225-4627-b500-f131bd092e71&width=768&dpr=4&quality=100&sign=3fcd5b5e&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjzpPPcD5sRb1UohoCaTn%252FScreenshot%25202025-01-22%2520at%25202.39.35%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Da1847cd6-036a-43ca-a220-9221e9ce0e22&width=768&dpr=4&quality=100&sign=12e3e7c4&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FOqQstEohDohyhgqfligd%252FScreenshot%25202025-01-22%2520at%25209.00.02%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D38ae8843-15e6-4d46-b9f8-d0617f951f59&width=768&dpr=4&quality=100&sign=c5bc0f5f&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FQr5fyjmlwXwVprNtTU9u%252FScreenshot%25202025-01-22%2520at%252011.30.35%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Db7784f8c-cb10-40ed-8ad6-9da756e4cf9e&width=768&dpr=4&quality=100&sign=3c1d056c&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
@@ -8132,36 +8239,24 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F1fXvbQXyc
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLKQi1jLQWs8CA7EGR7eD%252FKeeperPAM%2520Remote%2520Browser.jpg%3Falt%3Dmedia%26token%3D711d7db0-b5c2-444f-bf89-5aa444dfbbf8&width=768&dpr=4&quality=100&sign=28beb448&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FG43gSJCEtSl4zWbGowLm%252FKeeperPAM%2520Database.jpg%3Falt%3Dmedia%26token%3D977d6327-73b4-4fa5-98cd-2783e905db39&width=768&dpr=4&quality=100&sign=9773dba2&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FSy3rZi1RT37UGJpbI4J1%252FScreenshot%25202024-12-28%2520at%25207.17.54%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D06802fd6-994b-4c65-a90e-2b93c61be56f&width=768&dpr=4&quality=100&sign=c273f521&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FafSL2rOYf5xNGoajV91A%252FScreenshot%25202024-12-28%2520at%25206.45.24%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Dc517c017-ae7c-4b7e-8a1e-5b43aedac786&width=768&dpr=4&quality=100&sign=f60da786&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FlizxOCMg4atoYAjhS7WT%252FScreenshot%25202025-01-01%2520at%252010.00.03%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D4ae39ea2-59f3-427e-8128-98b5c6e56ec4&width=768&dpr=4&quality=100&sign=a846f439&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FHeovfKrm4CXGKwiIqq11%252FScreenshot%25202025-01-01%2520at%25209.27.18%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Db4e0a075-94bf-43da-
+aa25-bf684ab3a00d&width=768&dpr=4&quality=100&sign=68e0a16&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Flpcb27LMoJVaVdXPPdr1%252FScreenshot%25202025-01-01%2520at%252010.01.51%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Dde3f3bad-c944-48f7-a6b0-c90d5657a31d&width=768&dpr=4&quality=100&sign=adca79a0&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FQDnmwlO5pIBfiNFcSqJM%252FScreenshot%25202025-01-01%2520at%25209.48.44%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Df3cd398b-968e-4933-8a6d-7b1219374da4&width=768&dpr=4&quality=100&sign=8eea2be3&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FUIsmTVAwLmoexG3NzXB0%252FScreenshot%25202025-01-01%2520at%252010.02.08%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D8e5a073f-ca59-49ec-
-ab23-11d960f192bb&width=768&dpr=4&quality=100&sign=a1f2454d&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FC08APnlcrl6pNYeGETKm%252FScreenshot%25202025-01-01%2520at%252010.05.23%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3De51ff4f5-13d6-4693-ba1c-3caf82dc010c&width=768&dpr=4&quality=100&sign=1eeb9c59&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkAjqR7emtY9jLtKEyEkg%252FKeeperPAM%2520User.jpg%3Falt%3Dmedia%26token%3Db43bd7ce-e079-4e7e-aabc-592ef88f5e11&width=768&dpr=4&quality=100&sign=8e5923e6&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIRM2u2catMzTjLm3TP6n%252FScreenshot%25202024-12-28%2520at%25207.44.54%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D39192e46-6bd5-44c1-90de-12e3a2f17a18&width=768&dpr=4&quality=100&sign=33e61a6b&sv=2)
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FVSwnnpOvh75YONo6GSFD%252FScreenshot%25202025-01-01%2520at%25209.53.35%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D0bbbe72f-3230-4d03-98b7-71f52edd1469&width=768&dpr=4&quality=100&sign=ff984fa2&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -8183,6 +8278,14 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkmMyMNsM7
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FN889gw5Jl0rhnS1MqRsI%252FScreenshot%25202025-01-14%2520at%25209.15.20%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3Df56979d9-6e19-4fc3-a1c6-15936bb6c512&width=768&dpr=4&quality=100&sign=3a9e809f&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FkAjqR7emtY9jLtKEyEkg%252FKeeperPAM%2520User.jpg%3Falt%3Dmedia%26token%3Db43bd7ce-e079-4e7e-aabc-592ef88f5e11&width=768&dpr=4&quality=100&sign=8e5923e6&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FIRM2u2catMzTjLm3TP6n%252FScreenshot%25202024-12-28%2520at%25207.44.54%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D39192e46-6bd5-44c1-90de-12e3a2f17a18&width=768&dpr=4&quality=100&sign=33e61a6b&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -8348,8 +8451,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwQ8O48hEF
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGzKgObBvzWPED5PdcznT%252FScreenshot%25202025-01-12%2520at%25207.18.52%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D393cb4c4-0d1f-44ad-
 bc09-fc66a93e666f&width=768&dpr=4&quality=100&sign=e3dbf592&sv=2)
-
-[`secrets-manager app
-share`](https://app.gitbook.com/s/-MJXOXEifAmpyvNVL1to/commander-cli/command-
-reference/secrets-manager-commands)
 

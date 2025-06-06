@@ -188,6 +188,7 @@ KeeperPAM and Secrets Manager
       * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
       * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
       * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Gateway Network Configuration](/en/keeperpam/privileged-access-manager/references/gateway-network-configuration)
       * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
       * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
       * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
@@ -427,12 +428,30 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * What are Keeper Connections?
+  * Connection User Interface
+  * Connection Dock
+  * How do Keeper Connections Work? 
+  * Why Use Keeper Connections? 
+  * Keeper Connection Features 
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=a8qXkMPc17fQtw6S5u5g&only=yes&limit=100)
 
-Last updated 8 days ago
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Connections
+
+Instantly access your infrastructure with zero-trust security from your Keeper
+Vault
+
+[PreviousCode Examples](/en/keeperpam/privileged-access-manager/password-
+rotation/post-rotation-scripts/accessing-parameters)[NextGetting
+Started](/en/keeperpam/privileged-access-manager/connections/getting-started)
+
+Last updated 9 days ago
 
 Was this helpful?
 
@@ -538,24 +557,6 @@ enhances security by centralizing access management.
 For more information on the architecture, see this .
 
 To get started with Keeper Connections, proceed to the .
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# Connections
-
-Instantly access your infrastructure with zero-trust security from your Keeper
-Vault
-
-[PreviousCode Examples](/en/keeperpam/privileged-access-manager/password-
-rotation/post-rotation-scripts/accessing-parameters)[NextGetting
-Started](/en/keeperpam/privileged-access-manager/connections/getting-started)
-
-  * What are Keeper Connections?
-  * Connection User Interface
-  * Connection Dock
-  * How do Keeper Connections Work? 
-  * Why Use Keeper Connections? 
-  * Keeper Connection Features 
 
 [Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
 started/gateways)

@@ -188,6 +188,7 @@ KeeperPAM and Secrets Manager
       * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
       * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
       * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Gateway Network Configuration](/en/keeperpam/privileged-access-manager/references/gateway-network-configuration)
       * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
       * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
       * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
@@ -456,7 +457,7 @@ manager/integrations/ansible/ansible-plugin)[NextAWS CLI Credential
 Process](/en/keeperpam/secrets-manager/integrations/aws-cli-credential-
 process)
 
-Last updated 4 months ago
+Last updated 5 months ago
 
 Was this helpful?
 
@@ -748,13 +749,13 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F2iWGDxCtE
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjIMOCZkeFkzS23r75wOS%252Fimage.png%3Falt%3Dmedia%26token%3D20566d61-8116-4b33-85b2-01ddd77d3c8e&width=768&dpr=4&quality=100&sign=5085d78a&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FFrtyMRDKJRNrJhlpXcFV%252FScreen%2520Shot%25202022-02-01%2520at%25203.19.28%2520PM.png%3Falt%3Dmedia%26token%3D7d35df16-61fb-4621-bcda-c762f73da564&width=768&dpr=4&quality=100&sign=e5654f41&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqFX3KLdWRKeIk7X3rNJc%252FScreen%2520Shot%25202022-02-01%2520at%25203.33.11%2520PM.png%3Falt%3Dmedia%26token%3Dce97c20f-f133-4805-9208-523e5f269dbe&width=768&dpr=4&quality=100&sign=d6b9a6&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FjIMOCZkeFkzS23r75wOS%252Fimage.png%3Falt%3Dmedia%26token%3D20566d61-8116-4b33-85b2-01ddd77d3c8e&width=768&dpr=4&quality=100&sign=5085d78a&sv=2)
 

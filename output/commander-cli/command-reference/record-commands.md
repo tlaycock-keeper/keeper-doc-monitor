@@ -188,6 +188,7 @@ KeeperPAM and Secrets Manager
       * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
       * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
       * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Gateway Network Configuration](/en/keeperpam/privileged-access-manager/references/gateway-network-configuration)
       * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
       * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
       * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
@@ -1330,12 +1331,6 @@ records
 `--color <``_{none, red, green, blue, orange, yellow, gray}_``>` sets folder
 color
 
-When adding other users or teams to a shared folder, they will be given the
-default permissions of that folder, unless the permission is specifically
-revoked or added when sharing. See the [share-folder](/en/keeperpam/commander-
-cli/command-reference/sharing-commands#share-folder-command) command for more
-details.
-
 **Examples:**
 
 Copy
@@ -1978,6 +1973,13 @@ or `rh`
 Deprecated: use
 
 Deprecated: use
+
+When adding other users or teams to a shared folder, they will be given the
+default permissions of that folder, unless the permission is specifically
+revoked or added when sharing. See the  command for more details.
+
+[share-folder](/en/keeperpam/commander-cli/command-reference/sharing-
+commands#share-folder-command)
 
 [`list`](/en/keeperpam/commander-cli/command-reference/record-commands#list-
 command)

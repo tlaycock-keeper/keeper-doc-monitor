@@ -396,206 +396,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=LzSYQfhtQV9u6lB8TCLr&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Post-Rotation Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts)
-
-# Code Examples
-
-Examples of post-rotation scripts in KeeperPAM
-
-###
-
-Echo Inputs
-
-The below example post-rotation scripts simply echo the input parameters in
-various languages and platforms. The output of the print statements can be
-found in the Keeper Gateway log file.
-
-  * [Bash](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts/accessing-parameters#bash-script)
-
-  * [PowerShell](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts/accessing-parameters#powershell-script)
-
-  * [Keeper Secrets Manager SDKs](/en/keeperpam/privileged-access-manager/password-rotation/post-rotation-scripts/accessing-parameters#keeper-secrets-manager-sdks)
-
-####
-
-Bash
-
-Note: For this example, [jq](https://stedolan.github.io/jq/) needs to be
-installed to parse the JSON. Attach this as a PAM script and perform the
-rotation. The Gateway logfile will contain the output.
-
-decode-and-echo.sh
-
-Copy
-
-    
-    
-    #!/bin/bash
-    
-    # Read the Base64 encoded JSON input and decode it
-    decoded_json=$(cat | base64 --decode)
-    
-    # Extract the "records" field, which is Base64 encoded, and decode it separately
-    records_base64=$(echo "$decoded_json" | jq -r '.records')
-    
-    # Decode the Base64 "records" field and pretty-print the JSON
-    decoded_records=$(echo "$records_base64" | base64 --decode | jq '.')
-    
-    # Print the entire decoded JSON, replacing "records" with the decoded version
-    echo "$decoded_json" | jq --argjson records "$decoded_records" '.records = $records'
-
-####
-
-PowerShell
-
-Attach this as a PAM script and perform the rotation. The Keeper Gateway
-logfile will contain the output. This script simply echoes the input.
-
-Copy
-
-    
-    
-    Begin {
-        # Executes once before first item in pipeline is processed
-    }
-    
-    Process {
-        # Stop if error. If not set, result value will be True and assumed there
-        # was no problem.
-        $ErrorActionPreference = "Stop"
-    
-        # Executes once for each pipeline object    
-        $JSON = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($_))
-        $Params = ($JSON | ConvertFrom-Json)
-    
-        Write-Output "providerRecordUid=$($Params.providerRecordUid)"
-        Write-Output "resourceRecordUid=$($Params.resourceRecordUid)"
-        Write-Output "userRecordUid=$($Params.userRecordUid)"
-        Write-Output "newPassword=$($Params.newPassword)"
-        Write-Output "oldPassword=$($Params.oldPassword)"
-        Write-Output "user=$($Params.user)"
-    
-        $recordsJSON = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($Params.records))
-        $records = ($recordsJSON | ConvertFrom-Json)
-    
-        # Output full JSON for records
-        Write-Output "Full Records JSON: $recordsJSON"
-    
-        # Extract the provider title from the records
-        $title = ($records | Where-Object {$_.uid -eq $Params.providerRecordUid}).title
-        Write-Output "Provider Title=$title"
-    
-        # Loop through all records and display details
-        foreach ($record in $records) {
-            Write-Output "Record UID=$($record.uid)"
-            Write-Output "Record Title=$($record.title)"
-            Write-Output "Record Type=$($record.type)"
-            Write-Output "Record Details=$($record.details | ConvertTo-Json)"
-        }
-    }
-    
-    End {
-        # Executes once after last pipeline object is processed
-    }
-
-Here's a PowerShell script that sends a Webhook to a 3rd party site.
-
-Copy
-
-    
-    
-    param (
-        [Parameter(ValueFromPipeline=$true)]
-        [string]
-        $Record
-    )
-    
-    # Decode the Base64 input and convert it to a PowerShell object
-    $RecordJsonAsB64 = [System.Text.Encoding]::UTF8.GetString([Convert]::FromBase64String($Record))
-    $Params = $RecordJsonAsB64 | ConvertFrom-Json
-    
-    # Prepare the webhook payload
-    $webhookPayload = @{
-        providerRecordUid=$Params.providerRecordUid
-        resourceRecordUid=$Params.resourceRecordUid
-        userRecordUid=$Params.userRecordUid
-        user=$Params.user
-        timestamp= (Get-Date).ToString("yyyy-MM-ddTHH:mm:ssZ")
-        message= "Post-rotation script executed successfully."
-    } | ConvertTo-Json
-    
-    # Define the webhook URL
-    $webhookUrl = "https://webhook.site/3308ec5a-3fba-4e31-85ad-37b0f643ac82"
-    
-    # Send the POST request to the webhook
-    try {
-        Invoke-RestMethod -Uri $webhookUrl -Method Post -Body $webhookPayload -ContentType 'application/json'
-        Write-Host "Webhook message sent successfully."
-    }
-    catch {
-        Write-Error "Failed to send webhook message: $_"
-    }
-
-####
-
-Using Keeper Secrets Manager SDKs
-
-The post rotation script is not limited to shell scripts. Applications can be
-written in languages like Python or C# to get the piped parameters. Since the
-UIDs of the Rotation involved records are passed in the params, the post-
-rotation script can use the [Keeper Secrets Manager
-SDKs](/en/keeperpam/secrets-manager/developer-sdk-library) to get additional
-information.
-
-Copy
-
-    
-    
-    #!/usr/bin/env python3
-    
-    import sys
-    import base64
-    import json
-    
-    from keeper_secrets_manager_core import SecretsManager
-    
-    # sys.stdin is not an array, it can not subscripted (ie sys.stdin[0])
-    for base64_params in sys.stdin:
-        params = json.loads(base64.b64decode(base64_params).decode())
-            
-        print(f"providerRecordUid={params.get('providerRecordUid')}")
-        print(f"resourceRecordUid={params.get('resourceRecordUid')}")
-        print(f"userRecordUid={params.get('userRecordUid')}")
-        print(f"newPassword={params.get('newPassword')}")
-        print(f"oldPassword={params.get('oldPassword')}")
-        print(f"user={params.get('user')}")
-    
-        records = json.loads(base64.b64decode(params.get('records')).decode())
-        print("Provider Title="
-            f"{next((x for x in records if x['uid'] == params.get('providerRecordUid')), None).get('title')}")
-    
-        ksm = SecretsManager(config=...)
-        resource_records = ksm.get_secrets(params.get('userRecordUid'))[0]
-        
-        break
-
-[PreviousAttaching Scripts](/en/keeperpam/privileged-access-manager/password-
-rotation/post-rotation-scripts/attaching-post-rotation-scripts-to-
-records)[NextConnections](/en/keeperpam/privileged-access-manager/connections)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -625,4 +425,58 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=T9RueDdz2V4uMLn1iUhj&only=yes&limit=100)
+
+Last updated 6 hours ago
+
+Was this helpful?
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
+
+# Gateway Network Configuration
+
+[PreviousSetting up WinRM](/en/keeperpam/privileged-access-
+manager/references/setting-up-winrm)[NextSetting up SQL
+Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-
+server)
+
+###
+
+Network Configuration
+
+The Keeper Gateway establishes outbound-only connections and does not require
+any inbound firewall rules. The following outbound connections must be
+allowed:
+
+Destination
+
+Port Needed
+
+More Info
+
+Keeper Cloud _(keepersecurity.[com|eu|com.au|jp|ca|us])_
+
+TLS Port 443
+
+Communicates with Keeper Cloud to access target infrastructure via native
+protocols (e.g., SSH, RDP)
+
+Keeper KRelay Server _(krelay.keepersecurity.[com|eu|com.au|jp|ca|us])_
+
+TCP and UDP opened on Port 3478 Outbound access to TCP and UDP ports 49152
+through 65535
+
+Facilitates secure and encrypted relay connections between end-user's vault
+and target systems via the Gateway
+
+The Gateway preserves zero knowledge by performing all encryption and
+decryption of data locally. Keeper Secrets Manager APIs are used to
+communicate with the Keeper cloud.
 

@@ -188,6 +188,7 @@ KeeperPAM and Secrets Manager
       * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
       * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
       * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Gateway Network Configuration](/en/keeperpam/privileged-access-manager/references/gateway-network-configuration)
       * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
       * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
       * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
@@ -395,38 +396,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * pam command
-  * Sub-Command: gateway
-  * Sub-Command: config
-  * Sub-Command: connection
-  * Sub-Command: rotation
-  * Sub-Command: action
-  * Sub-Command: tunnel
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=CNh269hY8C70Qg5Ga6Kv&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-
-# KeeperPAM Commands
-
-Management of KeeperPAM functionality including Discovery, Rotation,
-Connections and Tunneling
-
-[PreviousSharing Commands](/en/keeperpam/commander-cli/command-
-reference/sharing-commands)[NextConnection Commands](/en/keeperpam/commander-
-cli/command-reference/connection-commands)
-
-Last updated 7 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -456,6 +425,38 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Overview
+  * pam command
+  * Sub-Command: gateway
+  * Sub-Command: config
+  * Sub-Command: connection
+  * Sub-Command: rotation
+  * Sub-Command: action
+  * Sub-Command: tunnel
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=CNh269hY8C70Qg5Ga6Kv&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+
+# KeeperPAM Commands
+
+Management of KeeperPAM functionality including Discovery, Rotation,
+Connections and Tunneling
+
+[PreviousSharing Commands](/en/keeperpam/commander-cli/command-
+reference/sharing-commands)[NextConnection Commands](/en/keeperpam/commander-
+cli/command-reference/connection-commands)
+
+Last updated 8 days ago
+
+Was this helpful?
 
 ##
 

@@ -188,6 +188,7 @@ KeeperPAM and Secrets Manager
       * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
       * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
       * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Gateway Network Configuration](/en/keeperpam/privileged-access-manager/references/gateway-network-configuration)
       * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
       * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
       * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
@@ -395,6 +396,38 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * What are Session Recordings?
+  * Supported Connection Protocols 
+  * Remote Browser Isolation (RBI)
+  * Enforcement Policies
+  * Activating Session Recording
+  * Connections - Session Playback
+  * AI Session Activity
+  * Playback Graphical Session Recordings
+  * Playback Text Session Recordings (Typescript)
+  * Encryption of Session Recordings
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=m19rR4xhfT5odwSgVjsZ&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Session Recording & Playback
+
+Graphical and Text Based Session Recordings
+
+[PreviousBrowser Autofill](/en/keeperpam/privileged-access-manager/remote-
+browser-isolation/setting-up-rbi/browser-autofill)[NextSSH
+Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
+
+Last updated 15 days ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -424,38 +457,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * What are Session Recordings?
-  * Supported Connection Protocols 
-  * Remote Browser Isolation (RBI)
-  * Enforcement Policies
-  * Activating Session Recording
-  * Connections - Session Playback
-  * AI Session Activity
-  * Playback Graphical Session Recordings
-  * Playback Text Session Recordings (Typescript)
-  * Encryption of Session Recordings
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=m19rR4xhfT5odwSgVjsZ&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# Session Recording & Playback
-
-Graphical and Text Based Session Recordings
-
-[PreviousBrowser Autofill](/en/keeperpam/privileged-access-manager/remote-
-browser-isolation/setting-up-rbi/browser-autofill)[NextSSH
-Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
-
-Last updated 14 days ago
-
-Was this helpful?
 
 ##
 

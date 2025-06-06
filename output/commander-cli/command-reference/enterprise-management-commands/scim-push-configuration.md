@@ -188,6 +188,7 @@ KeeperPAM and Secrets Manager
       * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
       * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
       * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Gateway Network Configuration](/en/keeperpam/privileged-access-manager/references/gateway-network-configuration)
       * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
       * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
       * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
@@ -451,7 +452,7 @@ Use Commander to push SCIM messages to the Keeper backend API
 reference/enterprise-management-commands/breachwatch-commands)[NextRecord
 Commands](/en/keeperpam/commander-cli/command-reference/record-commands)
 
-Last updated 4 months ago
+Last updated 5 months ago
 
 Was this helpful?
 
@@ -728,12 +729,12 @@ function)
 legacy-
 files%2Fo%2Fspaces%252F-MB_i6vKdtG6Z2n6zWgJ%252Favatar-1597678109631.png%3Fgeneration%3D1597678109861766%26alt%3Dmedia&width=20&dpr=4&quality=100&sign=4488b021&sv=2)
 
+[scim push](/en/keeperpam/commander-cli/command-reference/enterprise-
+management-commands#scim-command)
+
 Record in Keeper containing the Google Cloud service account information
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6DJsI6QFbIhARs3Tj7Zp%252FScreen%2520Shot%25202023-06-20%2520at%252010.48.24%2520AM.png%3Falt%3Dmedia%26token%3D50e318aa-556c-42ad-b867-521b2204191d&width=768&dpr=4&quality=100&sign=fed024e2&sv=2)
-
-[scim push](/en/keeperpam/commander-cli/command-reference/enterprise-
-management-commands#scim-command)
 

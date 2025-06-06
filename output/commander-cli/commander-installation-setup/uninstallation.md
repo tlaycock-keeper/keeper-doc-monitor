@@ -188,6 +188,7 @@ KeeperPAM and Secrets Manager
       * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
       * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
       * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Gateway Network Configuration](/en/keeperpam/privileged-access-manager/references/gateway-network-configuration)
       * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
       * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
       * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
@@ -513,12 +514,12 @@ to uninstall:
 and-programs-in-
 windows-4b55f974-2cc6-2d2b-d092-5905080eaf98#ID0EBD=Windows_10)
 
-[binary](/en/keeperpam/commander-cli/commander-installation-
-setup/installation-on-mac#binary-installation-recommended)
-
 [Windows binary,](/en/keeperpam/commander-cli/commander-installation-
 setup/installation-on-windows#typical-binary-installation-recommended)
 
 [pip3](/en/keeperpam/commander-cli/commander-installation-setup/installation-
 on-linux#installing-python)
+
+[binary](/en/keeperpam/commander-cli/commander-installation-
+setup/installation-on-mac#binary-installation-recommended)
 

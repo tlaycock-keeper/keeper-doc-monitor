@@ -188,6 +188,7 @@ KeeperPAM and Secrets Manager
       * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
       * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
       * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Gateway Network Configuration](/en/keeperpam/privileged-access-manager/references/gateway-network-configuration)
       * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
       * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
       * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
@@ -395,41 +396,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * SQL Import and Export
-  * SQL Import
-  * SQL Export
-  * SQL Server Import and Export
-  * SQL Server Import
-  * SQL Server Export
-  * PostgreSQL Import and Export
-  * PostgreSQL Import
-  * PostgreSQL Export
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=LuG3x4bIyHkNa1CEtvmi&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
-
-# Database Import and Export
-
-Data can be imported to a DB connection from a file on your machine, or
-exported and downloaded to you machine.
-
-[PreviousSetting up SQL Server](/en/keeperpam/privileged-access-
-manager/references/setting-up-sql-server)[NextInstalling sqlcmd on
-Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-
-on-linux)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -460,6 +426,17 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=LuG3x4bIyHkNa1CEtvmi&only=yes&limit=100)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -483,13 +460,6 @@ To import data from a csv file, is the `LOAD DATA` MySQL command:
 
 Copy
 
-Copy
-
-    
-    
-    LOAD DATA LOCAL INFILE "input.csv" INTO TABLE <table> FIELDS
-      TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n'
-
 In the example above, "<table>" should be replaced with the SQL table to
 import data into. The other parts of the command are required for CSV-
 formatted files. If your uploaded file uses different termination characters
@@ -510,12 +480,6 @@ machine. To do this, use the following query:
 
 Copy
 
-Copy
-
-    
-    
-     SELECT <query> INTO LOCAL OUTFILE "<name>.csv"
-
 The result of the given <query> will be put into a CSV file with the given
 name and downloaded from the browser to your machine.
 
@@ -532,12 +496,6 @@ Import data from a file on your machine into the SQL Server connection.
 To import data from a csv file, is the `COPY` command:
 
 Copy
-
-Copy
-
-    
-    
-    BULK INSERT <table> FROM LOCAL FILE
 
 In the example above, "<table>" should be replaced with the SQL table to
 import data into. The other parts of the command are required for CSV-
@@ -559,12 +517,6 @@ machine. To do this, use the following query:
 
 Copy
 
-Copy
-
-    
-    
-     SELECT <query> INTO LOCAL OUTFILE "<name>.csv"
-
 The result of the given <query> will be put into a CSV file with the given
 name and downloaded from the browser to your machine.
 
@@ -581,12 +533,6 @@ Import data from a file on your machine into the PostgreSQL connection.
 To import data from a csv file, is the `COPY` command:
 
 Copy
-
-Copy
-
-    
-    
-     \COPY <table> FROM "input.csv" With CSV
 
 In the example above, "<table>" should be replaced with the SQL table to
 import data into. The other parts of the command are required for CSV-
@@ -608,14 +554,69 @@ machine. To do this, use the following query:
 
 Copy
 
+The result of the given <query> will be put into a CSV file with the given
+name and downloaded from the browser to your machine.
+
+Copy
+
+    
+    
+     SELECT <query> INTO LOCAL OUTFILE "<name>.csv"
+
+Copy
+
+    
+    
+    BULK INSERT <table> FROM LOCAL FILE
+
+Copy
+
+    
+    
+     SELECT <query> INTO LOCAL OUTFILE "<name>.csv"
+
+Copy
+
+    
+    
+     \COPY <table> FROM "input.csv" With CSV
+
 Copy
 
     
     
      \COPY (<query>) TO "<name>.csv" With CSV HEADER
 
-The result of the given <query> will be put into a CSV file with the given
-name and downloaded from the browser to your machine.
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
+
+# Database Import and Export
+
+Data can be imported to a DB connection from a file on your machine, or
+exported and downloaded to you machine.
+
+[PreviousSetting up SQL Server](/en/keeperpam/privileged-access-
+manager/references/setting-up-sql-server)[NextInstalling sqlcmd on
+Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-
+on-linux)
+
+  * Overview
+  * SQL Import and Export
+  * SQL Import
+  * SQL Export
+  * SQL Server Import and Export
+  * SQL Server Import
+  * SQL Server Export
+  * PostgreSQL Import and Export
+  * PostgreSQL Import
+  * PostgreSQL Export
+
+Copy
+
+    
+    
+    LOAD DATA LOCAL INFILE "input.csv" INTO TABLE <table> FIELDS
+      TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n'
 
 [MySQL](/en/keeperpam/privileged-access-manager/references/database-import-
 and-export#sql-import-and-export)

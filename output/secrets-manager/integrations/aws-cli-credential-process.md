@@ -188,6 +188,7 @@ KeeperPAM and Secrets Manager
       * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
       * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
       * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Gateway Network Configuration](/en/keeperpam/privileged-access-manager/references/gateway-network-configuration)
       * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
       * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
       * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
@@ -395,6 +396,38 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * About
+  * Features
+  * Prerequisites
+  * Setup
+  * Vault
+  * KSM
+  * AWS Config
+  * Usage
+  * Feature Request / Report an Issue
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=gAb10j5dTXD4YGUMOksM&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# AWS CLI Credential Process
+
+Protect your AWS Access Keys with Keeper Secrets Manager
+
+[PreviousAnsible Tower](/en/keeperpam/secrets-
+manager/integrations/ansible/ansible-tower)[NextAWS Secrets Manager
+Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
+
+Last updated 5 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -424,38 +457,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * About
-  * Features
-  * Prerequisites
-  * Setup
-  * Vault
-  * KSM
-  * AWS Config
-  * Usage
-  * Feature Request / Report an Issue
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=gAb10j5dTXD4YGUMOksM&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# AWS CLI Credential Process
-
-Protect your AWS Access Keys with Keeper Secrets Manager
-
-[PreviousAnsible Tower](/en/keeperpam/secrets-
-manager/integrations/ansible/ansible-tower)[NextAWS Secrets Manager
-Sync](/en/keeperpam/secrets-manager/integrations/aws-secrets-manager)
-
-Last updated 4 months ago
-
-Was this helpful?
 
 ##
 

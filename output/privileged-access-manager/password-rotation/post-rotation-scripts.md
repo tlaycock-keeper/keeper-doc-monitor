@@ -188,6 +188,7 @@ KeeperPAM and Secrets Manager
       * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
       * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
       * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Gateway Network Configuration](/en/keeperpam/privileged-access-manager/references/gateway-network-configuration)
       * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
       * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
       * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
@@ -428,7 +429,7 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 On this page
 
   * Overview
-  * Rotation Options
+  * Rotation Options on PAM User Records
   * Order of Execution
   * Common Use Cases
   * Documentation included
@@ -450,7 +451,7 @@ rotation
 rotation/service-management)[NextInputs and Outputs](/en/keeperpam/privileged-
 access-manager/password-rotation/post-rotation-scripts/parameters)
 
-Last updated 3 months ago
+Last updated 6 hours ago
 
 Was this helpful?
 
@@ -493,10 +494,10 @@ Gateway
 
 ###
 
-Rotation Options
+Rotation Options on PAM User Records
 
-When setting up rotation on a record, you can select from one of the following
-methods:
+When setting up rotation on a record on a PAM User record, you can select from
+one of the following methods:
 
   * General
 
@@ -509,7 +510,8 @@ rotate the credentials using built-in capabilities based on the information
 stored in the record.
 
 When the "Run PAM scripts only" option is selected, Keeper will skip the
-default rotation task and immediately run the attached PAM scripts instead.
+default rotation task and immediately run the attached PAM scripts on the
+gateway.
 
 ###
 
@@ -517,11 +519,11 @@ Order of Execution
 
 Scripts will be executed in the following order:
 
-  1. Scripts attached to PAM User records
+  1. Scripts attached on PAM User records
 
-  2. Scripts attached to PAM Machine, PAM Database, or PAM Directory Record types
+  2. Scripts attached on PAM Machine, PAM Database, or PAM Directory Record types
 
-  3. Scripts attached to PAM Configuration Record types 
+  3. Scripts attached on PAM Configuration Record types 
 
 If multiple scripts are attached to a record, scripts will be executed in the
 order they appear on the PAM Record.

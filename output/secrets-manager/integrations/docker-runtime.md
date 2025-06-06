@@ -188,6 +188,7 @@ KeeperPAM and Secrets Manager
       * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
       * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
       * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Gateway Network Configuration](/en/keeperpam/privileged-access-manager/references/gateway-network-configuration)
       * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
       * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
       * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
@@ -451,7 +452,7 @@ Retrieve secrets from Keeper Secrets Manager at Docker runtime
 image)[NextDocker Writer Image](/en/keeperpam/secrets-
 manager/integrations/docker-writer-image)
 
-Last updated 4 months ago
+Last updated 5 months ago
 
 Was this helpful?
 
@@ -878,11 +879,14 @@ interface/docker-container)
 
 [notation](/en/keeperpam/secrets-manager/about/keeper-notation)
 
-[Secrets Manager Application](/en/keeperpam/secrets-
-manager/about/terminology#application)
+[here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
+interface#initialize-the-client-device)
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
 an-application)
+
+[Secrets Manager Application](/en/keeperpam/secrets-
+manager/about/terminology#application)
 
 Root MySQL DB
 
@@ -906,15 +910,11 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Ff6x6wo9b2
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaGj5OBZC8JJE7mt2L%252FScreen%2520Shot%25202021-07-27%2520at%252012.43.33%2520AM.png%3Falt%3Dmedia%26token%3Df772dd76-5ba1-466b-b656-784f4ba70f19&width=768&dpr=4&quality=100&sign=1406970f&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaGNVzjx_czbCfPevb%252FScreen%2520Shot%25202021-07-27%2520at%252012.42.06%2520AM.png%3Falt%3Dmedia%26token%3D9ff5b9f8-7222-425a-b10c-e69b3208090a&width=768&dpr=4&quality=100&sign=792106f&sv=2)
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaFxHJF5PVR46Excgo%252FScreen%2520Shot%25202021-07-27%2520at%252012.38.36%2520AM.png%3Falt%3Dmedia%26token%3Dcd3734c5-158d-4b1a-bdc8-b76d5472c44f&width=768&dpr=4&quality=100&sign=a893b03b&sv=2)
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaFttUeoqctfkrfD8p%252FScreen%2520Shot%25202021-07-27%2520at%252012.38.59%2520AM.png%3Falt%3Dmedia%26token%3D3003edef-5d7b-4b46-b1a0-6530b0ac2fc1&width=768&dpr=4&quality=100&sign=cdc4ea8e&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -922,8 +922,9 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FLOXFweD2U
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaFttUeoqctfkrfD8p%252FScreen%2520Shot%25202021-07-27%2520at%252012.38.59%2520AM.png%3Falt%3Dmedia%26token%3D3003edef-5d7b-4b46-b1a0-6530b0ac2fc1&width=768&dpr=4&quality=100&sign=cdc4ea8e&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaGj5OBZC8JJE7mt2L%252FScreen%2520Shot%25202021-07-27%2520at%252012.43.33%2520AM.png%3Falt%3Dmedia%26token%3Df772dd76-5ba1-466b-b656-784f4ba70f19&width=768&dpr=4&quality=100&sign=1406970f&sv=2)
 
-[here](/en/keeperpam/secrets-manager/secrets-manager-command-line-
-interface#initialize-the-client-device)
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MfaAbq3VVExTxZzKysm%252F-MfaGNVzjx_czbCfPevb%252FScreen%2520Shot%25202021-07-27%2520at%252012.42.06%2520AM.png%3Falt%3Dmedia%26token%3D9ff5b9f8-7222-425a-b10c-e69b3208090a&width=768&dpr=4&quality=100&sign=792106f&sv=2)
 

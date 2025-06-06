@@ -188,6 +188,7 @@ KeeperPAM and Secrets Manager
       * [Port Mapping](/en/keeperpam/privileged-access-manager/references/port-mapping)
       * [Setting up SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh)
       * [Setting up WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
+      * [Gateway Network Configuration](/en/keeperpam/privileged-access-manager/references/gateway-network-configuration)
       * [Setting up SQL Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-server)
       * [Database Import and Export](/en/keeperpam/privileged-access-manager/references/database-import-and-export)
       * [Installing sqlcmd on Linux](/en/keeperpam/privileged-access-manager/references/installing-sqlcmd-on-linux)
@@ -528,9 +529,9 @@ Ready to get started with Keeper Secrets Manager? .
 [Proceed to the Setup Instructions](/en/keeperpam/secrets-manager/quick-start-
 guide)
 
-Secrets Manager Video Demo
-
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fn3vG2nrg5HGtXfO8n42h%252FKSM%2520Overview.jpg%3Falt%3Dmedia%26token%3Da9ff6c09-6287-412b-97fc-76bc8a34ac62&width=768&dpr=4&quality=100&sign=62d47c88&sv=2)
+
+Secrets Manager Video Demo
 
