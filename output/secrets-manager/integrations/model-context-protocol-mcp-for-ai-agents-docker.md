@@ -396,6 +396,34 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * AI Agent Integration with Model Context Protocol (MCP)
+  * Key Benefits
+  * What Can AI Assistants Do?
+  * Setup and Installation
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=IqMgUsBLfaiZ1fRLEjrt&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Model Context Protocol (MCP) for AI Agents (Docker)
+
+Integrate Keeper Secrets Manager into AI agents using Docker
+
+[PreviousLinux Keyring](/en/keeperpam/secrets-manager/integrations/linux-
+keyring)[NextModel Context Protocol (MCP) for AI Agents
+(Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-
+for-ai-agents-node)
+
+Last updated 8 days ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -425,34 +453,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * AI Agent Integration with Model Context Protocol (MCP)
-  * Key Benefits
-  * What Can AI Assistants Do?
-  * Setup and Installation
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=IqMgUsBLfaiZ1fRLEjrt&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# Model Context Protocol (MCP) for AI Agents (Docker)
-
-Integrate Keeper Secrets Manager into AI agents using Docker
-
-[PreviousLinux Keyring](/en/keeperpam/secrets-manager/integrations/linux-
-keyring)[NextModel Context Protocol (MCP) for AI Agents
-(Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-
-for-ai-agents-node)
-
-Last updated 7 days ago
-
-Was this helpful?
 
 ##
 
@@ -575,10 +575,9 @@ Keeper Admin Console screens.
 
 * * *
 
-For additional setup details, see:
-
-<https://github.com/Keeper-Security/keeper-mcp-golang-
-docker>[](https://github.com/Keeper-Security/keeper-mcp-golang-docker)
+For additional setup details, see: <https://github.com/Keeper-Security/keeper-
+mcp-golang-docker>[](https://github.com/Keeper-Security/keeper-mcp-golang-
+docker)
 
 [GitHub - Keeper-Security/keeper-mcp-golang-docker: Keeper Secrets Manager -
 MCP (Model Context Protocol) server

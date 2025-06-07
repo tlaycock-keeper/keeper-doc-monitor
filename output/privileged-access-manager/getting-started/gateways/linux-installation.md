@@ -428,12 +428,37 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * Prerequisites
+  * Installation
+  * Gateway Service Management
+  * Managing the Gateway Service
+  * Keeper Gateway Configuration File
+  * Keeper Gateway Log files
+  * Verbose Logging
+  * Upgrading
+  * Auto Update
+  * Uninstalling
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=DlgXwj2R4KS2h6fG5rdV&only=yes&limit=100)
 
-Last updated 6 hours ago
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+
+# Linux Installation
+
+Instructions for installing Keeper Gateway on Linux
+
+[PreviousDocker Installation](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/docker-installation)[NextWindows
+Installation](/en/keeperpam/privileged-access-manager/getting-
+started/gateways/windows-installation)
+
+Last updated 1 day ago
 
 Was this helpful?
 
@@ -463,6 +488,13 @@ Installation
 Executing the following command will install the Keeper Gateway, and run it as
 a service:
 
+Copy
+
+    
+    
+    curl -fsSL https://keepersecurity.com/pam/install | \
+      sudo bash -s -- --token XXXXXX
+
   * Replace XXXXX with the One-Time Access Token provided from creating the Keeper Gateway
 
 ####
@@ -471,7 +503,19 @@ a service:
 
 The gateway will be installed in the following location:
 
+Copy
+
+    
+    
+    /usr/local/bin/keeper-gateway
+
 An alias `gateway` is also created in the same directory
+
+Copy
+
+    
+    
+    gateway -> /usr/local/bin/keeper-gateway
 
 ##
 
@@ -489,6 +533,12 @@ the Gateway installation:
 The `keeper-gateway` folder contains the gateway configuration file and is
 created in the following location:
 
+Copy
+
+    
+    
+    /etc/keeper-gateway
+
 **keeper-gw user**
 
 During the gateway installation, a new user, `keeper-gw`, is created and added
@@ -505,6 +555,14 @@ Managing the Gateway Service
 The following commands can be executed to start, restart, or stop the Keeper
 Gateway as a service:
 
+Copy
+
+    
+    
+    sudo systemctl start keeper-gateway
+    sudo systemctl restart keeper-gateway
+    sudo systemctl stop keeper-gateway
+
 ##
 
 **Keeper Gateway Configuration File**
@@ -512,8 +570,20 @@ Gateway as a service:
 If the Keeper Gateway is installed and running as a service, the gateway
 configuration file is stored in the following location:
 
+Copy
+
+    
+    
+    /etc/keeper-gateway/gateway-config.json
+
 If the Keeper Gateway is installed locally and not running as a service, the
 gateway configuration file is stored in the following location:
+
+Copy
+
+    
+    
+    <User>/.keeper/gateway-config.json
 
 ##
 
@@ -525,8 +595,20 @@ stored on the local machine.
 If the Gateway is running as a service, the log files are stored in the
 following location:
 
+Copy
+
+    
+    
+    /var/log/keeper-gateway/
+
 If the Gateway is not running as a service, the log files are stored in the
 following location:
+
+Copy
+
+    
+    
+    <User>/.keeper/logs/
 
 ###
 
@@ -534,11 +616,36 @@ following location:
 
 To add verbose debug logging, modify this file:
 
+Copy
+
+    
+    
+    /etc/systemd/system/keeper-gateway.service
+
 and add the `-d` flag to the "gateway start" command, e.g:
+
+Copy
+
+    
+    
+    ExecStart=/bin/bash -c "/usr/local/bin/gateway start --service -d --config-file /etc/keeper-gateway/gateway-config.json"
 
 Apply changes to the service:
 
+Copy
+
+    
+    
+    sudo systemctl daemon-reload
+    sudo systemctl restart keeper-gateway
+
 **Tailing the Logs**
+
+Copy
+
+    
+    
+    sudo journalctl -u keeper-gateway.service -f
 
 ##
 
@@ -546,6 +653,12 @@ Apply changes to the service:
 
 Executing the following command will upgrade the Keeper Gateway to the latest
 version:
+
+Copy
+
+    
+    
+    curl -fsSL https://keepersecurity.com/pam/install | sudo bash -s --
 
 ##
 
@@ -562,6 +675,12 @@ ensuring it stays up-to-date with the latest version.
 
 Executing the following command will uninstall the Keeper Gateway:
 
+Copy
+
+    
+    
+    curl -fsSL https://keepersecurity.com/pam/uninstall | sudo bash -s --
+
 Prior to proceeding with this document, make sure you .
 
 If you cannot use one of these Linux flavors, please install using the
@@ -571,125 +690,6 @@ encryption keys, client identifiers, and tenant server information used to
 authenticate and decrypt data from the Keeper Secrets Manager APIs. This
 configuration file is created from the One-Time Access Token generated when
 you .
-
-Copy
-
-    
-    
-    curl -fsSL https://keepersecurity.com/pam/install | \
-      sudo bash -s -- --token XXXXXX
-
-Copy
-
-    
-    
-    /usr/local/bin/keeper-gateway
-
-Copy
-
-    
-    
-    gateway -> /usr/local/bin/keeper-gateway
-
-Copy
-
-    
-    
-    /etc/keeper-gateway
-
-Copy
-
-    
-    
-    sudo systemctl start keeper-gateway
-    sudo systemctl restart keeper-gateway
-    sudo systemctl stop keeper-gateway
-
-Copy
-
-    
-    
-    /etc/keeper-gateway/gateway-config.json
-
-Copy
-
-    
-    
-    <User>/.keeper/gateway-config.json
-
-Copy
-
-    
-    
-    /var/log/keeper-gateway/
-
-Copy
-
-    
-    
-    <User>/.keeper/logs/
-
-Copy
-
-    
-    
-    /etc/systemd/system/keeper-gateway.service
-
-Copy
-
-    
-    
-    ExecStart=/bin/bash -c "/usr/local/bin/gateway start --service -d --config-file /etc/keeper-gateway/gateway-config.json"
-
-Copy
-
-    
-    
-    sudo systemctl daemon-reload
-    sudo systemctl restart keeper-gateway
-
-Copy
-
-    
-    
-    sudo journalctl -u keeper-gateway.service -f
-
-Copy
-
-    
-    
-    curl -fsSL https://keepersecurity.com/pam/install | sudo bash -s --
-
-Copy
-
-    
-    
-    curl -fsSL https://keepersecurity.com/pam/uninstall | sudo bash -s --
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-# Linux Installation
-
-Instructions for installing Keeper Gateway on Linux
-
-[PreviousDocker Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/docker-installation)[NextWindows
-Installation](/en/keeperpam/privileged-access-manager/getting-
-started/gateways/windows-installation)
-
-  * Overview
-  * Prerequisites
-  * Installation
-  * Gateway Service Management
-  * Managing the Gateway Service
-  * Keeper Gateway Configuration File
-  * Keeper Gateway Log files
-  * Verbose Logging
-  * Upgrading
-  * Auto Update
-  * Uninstalling
 
 [created a Gateway device](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/one-time-access-token)

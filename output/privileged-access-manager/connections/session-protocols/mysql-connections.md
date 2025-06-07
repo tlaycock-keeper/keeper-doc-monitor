@@ -561,7 +561,7 @@ manager/connections/session-protocols/rdp-connections)[NextSQL Server
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/sql-server-connections)
 
-Last updated 17 days ago
+Last updated 18 days ago
 
 Was this helpful?
 

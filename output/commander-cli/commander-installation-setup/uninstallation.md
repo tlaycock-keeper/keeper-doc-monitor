@@ -514,11 +514,11 @@ to uninstall:
 and-programs-in-
 windows-4b55f974-2cc6-2d2b-d092-5905080eaf98#ID0EBD=Windows_10)
 
-[Windows binary,](/en/keeperpam/commander-cli/commander-installation-
-setup/installation-on-windows#typical-binary-installation-recommended)
-
 [pip3](/en/keeperpam/commander-cli/commander-installation-setup/installation-
 on-linux#installing-python)
+
+[Windows binary,](/en/keeperpam/commander-cli/commander-installation-
+setup/installation-on-windows#typical-binary-installation-recommended)
 
 [binary](/en/keeperpam/commander-cli/commander-installation-
 setup/installation-on-mac#binary-installation-recommended)

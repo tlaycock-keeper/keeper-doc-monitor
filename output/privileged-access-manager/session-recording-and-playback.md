@@ -396,38 +396,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * What are Session Recordings?
-  * Supported Connection Protocols 
-  * Remote Browser Isolation (RBI)
-  * Enforcement Policies
-  * Activating Session Recording
-  * Connections - Session Playback
-  * AI Session Activity
-  * Playback Graphical Session Recordings
-  * Playback Text Session Recordings (Typescript)
-  * Encryption of Session Recordings
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=m19rR4xhfT5odwSgVjsZ&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# Session Recording & Playback
-
-Graphical and Text Based Session Recordings
-
-[PreviousBrowser Autofill](/en/keeperpam/privileged-access-manager/remote-
-browser-isolation/setting-up-rbi/browser-autofill)[NextSSH
-Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
-
-Last updated 15 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -457,6 +425,38 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * What are Session Recordings?
+  * Supported Connection Protocols 
+  * Remote Browser Isolation (RBI)
+  * Enforcement Policies
+  * Activating Session Recording
+  * Connections - Session Playback
+  * AI Session Activity
+  * Playback Graphical Session Recordings
+  * Playback Text Session Recordings (Typescript)
+  * Encryption of Session Recordings
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=m19rR4xhfT5odwSgVjsZ&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Session Recording & Playback
+
+Graphical and Text Based Session Recordings
+
+[PreviousBrowser Autofill](/en/keeperpam/privileged-access-manager/remote-
+browser-isolation/setting-up-rbi/browser-autofill)[NextSSH
+Agent](/en/keeperpam/privileged-access-manager/ssh-agent)
+
+Last updated 16 days ago
+
+Was this helpful?
 
 ##
 

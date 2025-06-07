@@ -451,7 +451,7 @@ rotation
 rotation/service-management)[NextInputs and Outputs](/en/keeperpam/privileged-
 access-manager/password-rotation/post-rotation-scripts/parameters)
 
-Last updated 6 hours ago
+Last updated 1 day ago
 
 Was this helpful?
 

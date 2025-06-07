@@ -396,6 +396,37 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Prerequisites
+  * 1\. Set up PAM Machine Records
+  * 2\. Set up PAM Configuration
+  * 3\. Set up PAM User Records
+  * 4\. Configure Rotation on the Record - AWS VM User
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=FPDBcrpQxc8Hp0jGKUSI&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [AWS](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws)
+
+# EC2 Virtual Machine User
+
+Rotating AWS EC2 Virtual Machine accounts with Keeper
+
+[PreviousManaged Microsoft AD User](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/aws/directory-user)[NextIAM User
+Access Key](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/iam-user-access-key)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -426,37 +457,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-  * Prerequisites
-  * 1\. Set up PAM Machine Records
-  * 2\. Set up PAM Configuration
-  * 3\. Set up PAM User Records
-  * 4\. Configure Rotation on the Record - AWS VM User
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=FPDBcrpQxc8Hp0jGKUSI&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [AWS](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws)
-
-# EC2 Virtual Machine User
-
-Rotating AWS EC2 Virtual Machine accounts with Keeper
-
-[PreviousManaged Microsoft AD User](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/aws/directory-user)[NextIAM User
-Access Key](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/aws/iam-user-access-key)
-
-Last updated 1 month ago
-
-Was this helpful?
-
 In this guide, you will learn how to rotate AWS EC2 Virtual Machine (VM)
 Accounts on your AWS Environment using Keeper Rotation. The EC2 VM is an AWS
 managed resource where the EC2 VM Admin Credentials are linked to the **PAM
@@ -473,7 +473,11 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   *   *   * 
+  *   *   * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+
+  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is able to [communicate via SSH](/en/keeperpam/privileged-access-manager/references/setting-up-ssh) or [WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm) with your target AWS Virtual Machine(s).
+
+  * Your AWS environment is [configured](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/aws-environment-setup) per our documentation
 
 ##
 
@@ -544,7 +548,11 @@ for this environment.
 
 Make sure the following items are completed:
 
-  *   *   * PAM Machine records have been created for each target machine
+  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+
+  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is provisioned in the Keeper Secrets Manager application you created.
+
+  * PAM Machine records have been created for each target machine
 
 If you are creating a new PAM Configuration, login to the Keeper Vault and
 select "Secrets Manager", then select the "PAM Configurations" tab, and click
@@ -588,6 +596,10 @@ Set this field to `USE_INSTANCE_ROLE` if you are using EC2 role policy
 
 Set this field to `USE_INSTANCE_ROLE` if you are using EC2 role policy
 (default). Otherwise use a specific Secret Access Key.
+
+For more details on all the configurable fields in the PAM Configuration
+record, visit this [page](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration).
 
 ##
 
@@ -644,42 +656,6 @@ rotation for that record.
 Keeper Secrets Manager is enabled for your
 
 Keeper Rotation is enabled for your
-
-A Keeper Secrets Manager  has been created
-
-A Keeper Rotation  is already installed, running, and is able to  or  with
-your target AWS Virtual Machine(s).
-
-Your AWS environment is  per our documentation
-
-A Keeper Secrets Manager  has been created
-
-A Keeper Rotation  is already installed, running, and is provisioned in the
-Keeper Secrets Manager application you created.
-
-For more details on all the configurable fields in the PAM Configuration
-record, visit this .
-
-[application](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
-
-[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-[communicate via SSH](/en/keeperpam/privileged-access-
-manager/references/setting-up-ssh)
-
-[WinRM](/en/keeperpam/privileged-access-manager/references/setting-up-winrm)
-
-[configured](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/aws-environment-setup)
-
-[application](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
-
-[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration)
 
 [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 overview#enabling-rotation-on-the-admin-console)

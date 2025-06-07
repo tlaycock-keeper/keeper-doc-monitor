@@ -396,6 +396,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -428,39 +458,9 @@ started/gateways/one-time-access-token)[NextLinux
 Installation](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/linux-installation)
 
-Last updated 2 minutes ago
+Last updated 1 day ago
 
 Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
 
 ##
 
@@ -468,8 +468,7 @@ Overview
 
 This document contains information on how to install, configure, and update
 your Keeper Gateway on Docker. The Docker container is built upon the base
-image of Rocky Linux 8 and it is hosted in
-[DockerHub](https://hub.docker.com/r/keeper/gateway).
+image of Rocky Linux 8 and it is hosted in .
 
 For full PAM capabilities, use a **Linux host with a x86 AMD processor**.
 
@@ -479,7 +478,7 @@ Prerequisites
 
   * A Linux host with a x86 AMD processor
 
-  * `docker` and `docker-compose` installed (see [Docker Install](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux) for help)
+  * 
 
 Note: The syntax is `docker-compose` for servers, but on a local Docker
 Desktop it might be `docker compose` (with no space).
@@ -732,42 +731,26 @@ Copy
 
 References:
 
-  * DockerHub listing: <https://hub.docker.com/r/keeper/gateway>[](https://hub.docker.com/r/keeper/gateway)
+  *   * 
 
-  * Quick reference for [Installing Docker](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux)[ and Docker Compose on Linux](/en/keeperpam/privileged-access-manager/references/installing-docker-on-linux)
+`docker` and `docker-compose` installed (see  for help)
 
-###
+DockerHub listing:
 
-Network Configuration
+Quick reference for
 
-The Keeper Gateway establishes outbound-only connections and does not require
-any inbound firewall rules. The following outbound connections must be
-allowed:
+[Docker Install](/en/keeperpam/privileged-access-
+manager/references/installing-docker-on-linux)
 
-Destination
+<https://hub.docker.com/r/keeper/gateway>[](https://hub.docker.com/r/keeper/gateway)
 
-Port Needed
+[Installing Docker](/en/keeperpam/privileged-access-
+manager/references/installing-docker-on-linux)
 
-More Info
+[ and Docker Compose on Linux](/en/keeperpam/privileged-access-
+manager/references/installing-docker-on-linux)
 
-Keeper Cloud _(keepersecurity.[com|eu|com.au|jp|ca|us])_
-
-TLS Port 443
-
-Communicates with Keeper Cloud to access target infrastructure via native
-protocols (e.g., SSH, RDP)
-
-Keeper KRelay Server _(krelay.keepersecurity.[com|eu|com.au|jp|ca|us])_
-
-TCP and UDP opened on Port 3478 Outbound access to TCP and UDP ports 49152
-through 65535
-
-Facilitates secure and encrypted relay connections between end-user's vault
-and target systems via the Gateway
-
-The Gateway preserves zero knowledge by performing all encryption and
-decryption of data locally. Keeper Secrets Manager APIs are used to
-communicate with the Keeper cloud.
+[DockerHub](https://hub.docker.com/r/keeper/gateway)
 
 ###
 
@@ -853,4 +836,37 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FuLk5SZEF5
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FpdccmtxqPQDtpeTrL7gh%252FScreenshot%25202024-12-27%2520at%25209.38.24%25E2%2580%25AFAM.png%3Falt%3Dmedia%26token%3D3c64598f-c12e-4e6a-9fa9-9a948c605397&width=768&dpr=4&quality=100&sign=bd809e33&sv=2)
+
+###
+
+Network Configuration
+
+The Keeper Gateway establishes outbound-only connections and does not require
+any inbound firewall rules. The following outbound connections must be
+allowed:
+
+Destination
+
+Port Needed
+
+More Info
+
+Keeper Cloud _(keepersecurity.[com|eu|com.au|jp|ca|us])_
+
+TLS Port 443
+
+Communicates with Keeper Cloud to access target infrastructure via native
+protocols (e.g., SSH, RDP)
+
+Keeper KRelay Server _(krelay.keepersecurity.[com|eu|com.au|jp|ca|us])_
+
+TCP and UDP opened on Port 3478 Outbound access to TCP and UDP ports 49152
+through 65535
+
+Facilitates secure and encrypted relay connections between end-user's vault
+and target systems via the Gateway
+
+The Gateway preserves zero knowledge by performing all encryption and
+decryption of data locally. Keeper Secrets Manager APIs are used to
+communicate with the Keeper cloud.
 

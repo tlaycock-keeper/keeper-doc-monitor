@@ -688,13 +688,13 @@ configuration/aws-environment-setup)
 [page](/en/keeperpam/privileged-access-manager/getting-started/pam-
 configuration)
 
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
+
+[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+overview#enabling-rotation-on-the-admin-console)
+
 port mapping
-
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
-
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

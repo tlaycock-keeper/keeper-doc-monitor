@@ -396,36 +396,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview
@@ -461,6 +431,36 @@ Last updated 3 months ago
 
 Was this helpful?
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ##
 
 Overview
@@ -468,15 +468,18 @@ Overview
 In this guide, you'll learn how to rotate passwords for Azure PostgreSQL
 Database Users and Admin accounts on your Azure environment using KeeperPAM.
 Azure PostgreSQL is an Azure managed resource where the PostgreSQL Admin
-Credentials are defined in the  record type and the configurations of the
-PostgreSQL Users are defined in the  record type.
+Credentials are defined in the [PAM Database](/en/keeperpam/privileged-access-
+manager/getting-started/pam-resources/pam-database) record type and the
+configurations of the PostgreSQL Users are defined in the [PAM
+User](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user) record type.
 
 For Azure Managed PostgreSQL database, the Azure SDK will be used to rotate
 the password of Database Admin Accounts. To rotate the passwords of Regular
 Database Users, Keeper connects to the DB instance with the provided admin
 credentials and executes the necessary SQL statements to change the password.
 
-  * 
+  * See the [Azure Overview](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure) for a high level overview and getting started with Azure
 
 ##
 
@@ -484,7 +487,15 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   *   *   * Your Keeper Gateway is able to communicate with the Azure Managed PostgreSQL database
+  * [Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-started/enforcement-policies) are configured for your role
+
+  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+
+  * Your Azure environment is [configured](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration/azure-environment-setup) per our documentation
+
+  * Your [Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is online
+
+  * Your Keeper Gateway is able to communicate with the Azure Managed PostgreSQL database
 
 ##
 
@@ -513,6 +524,8 @@ Keeper record title Ex: `Azure PostgreSQL Admin`
 The Database Server name i.e `testdb-psql.postgresql.database.azure.com`
 
 **Port**
+
+For default ports, see port mapping i.e. `5432`
 
 **Use SSL**
 
@@ -613,6 +626,10 @@ services.
 
 The UUID of the Azure Active Directory
 
+For more details on all the configurable fields in the PAM Configuration
+record, visit this [page](/en/keeperpam/privileged-access-manager/getting-
+started/pam-configuration).
+
 ##
 
 3\. Set up one or more PAM User records
@@ -666,47 +683,6 @@ Select the **PAM User** record(s) from Step 3, edit the record and open the
 
 Any user with `edit` rights to a **PAM User** record has the ability to setup
 rotation for that record.
-
-See the  for a high level overview and getting started with Azure
-
-are configured for your role
-
-A Keeper Secrets Manager  has been created
-
-Your Azure environment is  per our documentation
-
-Your  is online
-
-For default ports, see  i.e. `5432`
-
-For more details on all the configurable fields in the PAM Configuration
-record, visit this .
-
-[Azure Overview](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/azure)
-
-[Rotation enforcements](/en/keeperpam/privileged-access-manager/getting-
-started/enforcement-policies)
-
-[application](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
-
-[configured](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration/azure-environment-setup)
-
-[Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)
-
-[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
-configuration)
-
-port mapping
-
-[PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database)
-
-[PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

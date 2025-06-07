@@ -396,6 +396,35 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * What is Keeper Discovery?
+  * Why use Keeper Discovery?
+  * Encryption and Security Model
+  * Features of Keeper Discovery
+  * Methodology
+  * How to use Discovery
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=8G0YDtlJoBhGZpfEnLqO&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Discovery
+
+Discover machines, databases, accounts and services across your on-prem and
+cloud infrastructure
+
+[PreviousIntegration with Git](/en/keeperpam/privileged-access-manager/ssh-
+agent/integration-with-git)[NextDiscovery Basics](/en/keeperpam/privileged-
+access-manager/discovery/discovery-basics)
+
+Last updated 2 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -425,35 +454,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * What is Keeper Discovery?
-  * Why use Keeper Discovery?
-  * Encryption and Security Model
-  * Features of Keeper Discovery
-  * Methodology
-  * How to use Discovery
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=8G0YDtlJoBhGZpfEnLqO&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# Discovery
-
-Discover machines, databases, accounts and services across your on-prem and
-cloud infrastructure
-
-[PreviousIntegration with Git](/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git)[NextDiscovery Basics](/en/keeperpam/privileged-
-access-manager/discovery/discovery-basics)
-
-Last updated 2 months ago
-
-Was this helpful?
 
 ##
 

@@ -910,6 +910,11 @@ examples/rotate-credential-via-rest-api#step-5-python-environment-setup)
 [Python script ](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/saas-accounts/cisco-ios-xe#python-script)
 
+[https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
+Scripts/blob/main/cisco-ios-xe/update-cisco-
+user.pygithub.com](https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
+Scripts/blob/main/cisco-ios-xe/update-cisco-user.py)
+
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNVZBigfLQkEqpo7NRbCm%252Fkeeper%252Bcisco.jpg%3Falt%3Dmedia%26token%3D0c55f048-b8f9-4a31-b85a-a35704785196&width=768&dpr=4&quality=100&sign=d38663cf&sv=2)
@@ -941,9 +946,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRoVLFYb2o
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRRYBEPpIfPAVvrrKi9eN%252Fiosxerecord2.png%3Falt%3Dmedia%26token%3D0de5352d-e11d-4aa8-b769-4b2019adb1dd&width=768&dpr=4&quality=100&sign=dd923666&sv=2)
-
-[https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
-Scripts/blob/main/cisco-ios-xe/update-cisco-
-user.pygithub.com](https://github.com/Keeper-Security/Zero-Trust-KeeperPAM-
-Scripts/blob/main/cisco-ios-xe/update-cisco-user.py)
 

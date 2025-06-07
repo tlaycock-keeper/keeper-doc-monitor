@@ -396,6 +396,30 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=Zu7jJt6qM6i7YInl8ObP&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
+
+# CSV Import
+
+Automatic migration of passwords from a CSV file
+
+[PreviousProton Pass Import](/en/keeperpam/commander-cli/command-
+reference/import-and-export-commands/proton-pass-import)[NextJSON
+Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands/json-import)
+
+Last updated 6 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -425,30 +449,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=Zu7jJt6qM6i7YInl8ObP&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
-
-# CSV Import
-
-Automatic migration of passwords from a CSV file
-
-[PreviousProton Pass Import](/en/keeperpam/commander-cli/command-
-reference/import-and-export-commands/proton-pass-import)[NextJSON
-Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands/json-import)
-
-Last updated 6 months ago
-
-Was this helpful?
 
 ##
 
@@ -647,6 +647,8 @@ user@example.com
 
 liu.W241Q<q$RGl9r;N1
 
+[www.google.com](http://www.google.com/)
+
 main google account
 
 TeamFolder
@@ -665,15 +667,11 @@ $host
 
 $url
 
-More advanced import options are available using the  format described in the
-next section.
-
-[JSON Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
-commands/json-import)
-
-[www.google.com](http://www.google.com/)
-
 [www.example.com](http://www.example.com/)
+
+More advanced import options are available using the [JSON
+Import](/en/keeperpam/commander-cli/command-reference/import-and-export-
+commands/json-import) format described in the next section.
 
 CSV Import Sample
 

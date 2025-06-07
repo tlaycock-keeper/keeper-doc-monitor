@@ -748,9 +748,6 @@ resources/pam-database)
 [PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-directory)
 
-[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
-manager-commands#overview)
-
 Enforcement Policies for Tunnels
 
 Tunnel Settings in a KeeperPAM Resource
@@ -780,6 +777,9 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F4bsuT2Ol9
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FG45mktqPR9PKR9mkjvqi%252FScreenshot%25202025-01-15%2520at%25202.32.27%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D9bfdd81b-d39d-404d-a2a3-16826cfa7323&width=768&dpr=4&quality=100&sign=7fa9028b&sv=2)
+
+[Keeper Commander CLI](/en/keeperpam/commander-cli/command-reference/secrets-
+manager-commands#overview)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

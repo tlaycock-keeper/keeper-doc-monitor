@@ -396,35 +396,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Local Network
-  * Azure
-  * AWS
-  * SaaS Plugins
-  * Community Plugins
-  * Custom Scripts
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=Zmc03ZWvyQnL8taq5vAo&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-
-# Rotation Use Cases
-
-Step by step guides for performing rotation on any target system
-
-[PreviousRotation Overview](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-overview)[NextLocal Network](/en/keeperpam/privileged-
-access-manager/password-rotation/rotation-use-cases/local-network)
-
-Last updated 9 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -455,130 +426,222 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Local Network
+  * Azure
+  * AWS
+  * SaaS Plugins
+  * Community Plugins
+  * Custom Scripts
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=Zmc03ZWvyQnL8taq5vAo&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+
+# Rotation Use Cases
+
+Step by step guides for performing rotation on any target system
+
+[PreviousRotation Overview](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-overview)[NextLocal Network](/en/keeperpam/privileged-
+access-manager/password-rotation/rotation-use-cases/local-network)
+
+Last updated 10 days ago
+
+Was this helpful?
+
 The setup and configuration of Keeper Rotation is defined by the use case.
 Keeper supports any cloud or on-prem environment.
 
 ##
 
-[Local Network](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network)
+  *   *   *   *   *     *     *     *     *     *     * 
 
-  * [**Active Directory**](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/active-directory)
+  *   *   *   *     *     *     *     * 
 
-  * [**Windows User**](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/windows-user)
+  *   *   *   *   *     *     *     *     *     * 
 
-  * [**Linux User**](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/linux-user)
+  *   *   *   *   *   *   * 
 
-  * [**macOS User**](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/macos-user)
-
-  * [**Database - Admin & Users**](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
-
-    * [MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mysql)
-
-    * [MariaDB ](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mariadb)
-
-    * [PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/postgresql)
-
-    * [MongoDB ](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/mongodb)
-
-    * [MS SQL Server ](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-server)
-
-    * [Oracle ](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database/oracle)
-
-##
-
-[Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/azure)
-
-  * [**Azure AD Domain Services**](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-ad-users)
-
-  * [Azure App Secrets](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-app-secret-rotation)
-
-  * [**Machine - Windows or Linux User**](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/azure-vm-user-accounts)
-
-  * [**Managed Database - Admin & Users**](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database)
-
-    * [Azure SQL User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database/azure-sql)
-
-    * [MySQL User or MySQL Flexible User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database/azure-mysql-single-or-flexible-database)
-
-    * [MariaDB User or MariaDB Flexible User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database/azure-mariadb-database)
-
-    * [PostgreSQL User or PostgreSQL Flexible User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/azure/managed-database/azure-postgresql-single-or-flexible-database)
-
-##
-
-[AWS](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/aws)
-
-  * [**AWS AD Directory Users**](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/directory-user)
-
-  * [**EC2 Virtual Machine User - Linux or Windows**](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/ec2-virtual-machine-user)
-
-  * [**IAM User**](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user)
-
-  * [**IAM User Access Keys**](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/iam-user-access-key)
-
-  * [**AWS Managed Database Admins and Users**](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database)
-
-    * [AWS RDS for MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mysql)
-
-    * [AWS RDS for SQL Server](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-sql-server)
-
-    * [AWS RDS for PostgreSQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-postgresql)
-
-    * [AWS RDS for MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mariadb)
-
-    * [AWS RDS for Oracle](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-oracle)
-
-##
-
-[SaaS Plugins](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/saas-rotation-plugins)
-
-  * [Okta](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-rotation-plugins)
-
-  * [Snowflake](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-rotation-plugins)
-
-  * [REST](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-rotation-plugins)
-
-  * [AWS Access Key](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-rotation-plugins)
-
-  * [Azure Client Secret](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-rotation-plugins)
-
-  * [Cisco IOS EX](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-rotation-plugins)
-
-  * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-rotation-plugins)
-
-###
-
-[Community Plugins](https://github.com/Keeper-Security/discovery-and-rotation-
-saas-dev)
-
-  * [AWS Cognito](https://github.com/Keeper-Security/discovery-and-rotation-saas-dev/tree/main/integrations/cognito)
-
-  * [Cisco APIC](https://github.com/Keeper-Security/discovery-and-rotation-saas-dev/tree/main/integrations/cisco-apic)
-
-  * [AWS IAM User](https://github.com/Keeper-Security/discovery-and-rotation-saas-dev/tree/main/integrations/aws)
-
-  * See the Keeper [SaaS Github Repo](https://github.com/Keeper-Security/discovery-and-rotation-saas-dev) for updates
+  *   *   *   * 
 
 ##
 
 Custom Scripts
 
-  * [Okta User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/okta-user)
-
-  * [Snowflake User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/snowflake-user)
-
-  * [REST API](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/rotate-credential-via-rest-api)
-
-  * [Cisco IOS XE Users](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-ios-xe)
-
-  * [Cisco Meraki Users ](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-meraki)
+  *   *   *   *   * 
 
 Looking for a specific use case we don't cover? Please email
 pam@keepersecurity.com.
+
+##
+
+##
+
+##
+
+###
+
+See the Keeper  for updates
+
+[**Active Directory**](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/active-directory)
+
+[**Windows User**](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/windows-user)
+
+[**Linux User**](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/linux-user)
+
+[**macOS User**](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/macos-user)
+
+[**Database - Admin & Users**](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/local-network/database)
+
+[MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/local-network/database/mysql)
+
+[MariaDB ](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/local-network/database/mariadb)
+
+[PostgreSQL](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/database/postgresql)
+
+[MongoDB ](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/local-network/database/mongodb)
+
+[MS SQL Server ](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/database/ms-sql-server)
+
+[Oracle ](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/local-network/database/oracle)
+
+[Azure](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/azure)
+
+[**Azure AD Domain Services**](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/azure/azure-ad-users)
+
+[Azure App Secrets](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/azure/azure-app-secret-rotation)
+
+[**Machine - Windows or Linux User**](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/azure/azure-vm-user-accounts)
+
+[**Managed Database - Admin & Users**](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/azure/managed-database)
+
+[Azure SQL User](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/azure/managed-database/azure-sql)
+
+[MySQL User or MySQL Flexible User](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/azure/managed-database/azure-
+mysql-single-or-flexible-database)
+
+[MariaDB User or MariaDB Flexible User](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/azure/managed-database/azure-
+mariadb-database)
+
+[PostgreSQL User or PostgreSQL Flexible User](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/azure/managed-database/azure-
+postgresql-single-or-flexible-database)
+
+[AWS](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/aws)
+
+[**AWS AD Directory Users**](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/directory-user)
+
+[**EC2 Virtual Machine User - Linux or Windows**](/en/keeperpam/privileged-
+access-manager/password-rotation/rotation-use-cases/aws/ec2-virtual-machine-
+user)
+
+[**IAM User**](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/iam-user)
+
+[**IAM User Access Keys**](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/iam-user-access-key)
+
+[**AWS Managed Database Admins and Users**](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/aws/managed-database)
+
+[AWS RDS for MySQL](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mysql)
+
+[AWS RDS for SQL Server](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/managed-database/aws-rds-for-sql-server)
+
+[AWS RDS for PostgreSQL](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/managed-database/aws-rds-for-postgresql)
+
+[AWS RDS for MariaDB](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/managed-database/aws-rds-for-mariadb)
+
+[AWS RDS for Oracle](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/aws/managed-database/aws-rds-for-oracle)
+
+[SaaS Plugins](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-rotation-plugins)
+
+[Okta](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/saas-rotation-plugins)
+
+[Snowflake](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-rotation-plugins)
+
+[REST](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/saas-rotation-plugins)
+
+[AWS Access Key](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-rotation-plugins)
+
+[Azure Client Secret](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-rotation-plugins)
+
+[Cisco IOS EX](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-rotation-plugins)
+
+[Cisco Meraki](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-rotation-plugins)
+
+[Community Plugins](https://github.com/Keeper-Security/discovery-and-rotation-
+saas-dev)
+
+[AWS Cognito](https://github.com/Keeper-Security/discovery-and-rotation-saas-
+dev/tree/main/integrations/cognito)
+
+[Cisco APIC](https://github.com/Keeper-Security/discovery-and-rotation-saas-
+dev/tree/main/integrations/cisco-apic)
+
+[AWS IAM User](https://github.com/Keeper-Security/discovery-and-rotation-saas-
+dev/tree/main/integrations/aws)
+
+[SaaS Github Repo](https://github.com/Keeper-Security/discovery-and-rotation-
+saas-dev)
+
+[Okta User](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-accounts/okta-user)
+
+[Snowflake User](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-accounts/snowflake-user)
+
+[REST API](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/saas-accounts/rotate-credential-via-rest-api)
+
+[Cisco IOS XE Users](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-accounts/cisco-ios-xe)
+
+[Cisco Meraki Users ](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-accounts/cisco-meraki)
+
+[Local Network](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

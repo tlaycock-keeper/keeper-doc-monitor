@@ -481,7 +481,7 @@ CI/CD Integrations provided with Keeper Secrets Manager
 library/vault-sdks)[NextAnsible](/en/keeperpam/secrets-
 manager/integrations/ansible)
 
-Last updated 7 days ago
+Last updated 8 days ago
 
 Was this helpful?
 

@@ -450,7 +450,7 @@ manager/password-rotation/rotation-use-cases/saas-rotation-plugins)[NextOkta
 User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
 cases/saas-accounts/okta-user)
 
-Last updated 9 days ago
+Last updated 10 days ago
 
 Was this helpful?
 

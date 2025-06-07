@@ -396,6 +396,27 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=T9RueDdz2V4uMLn1iUhj&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
+
+# Gateway Network Configuration
+
+[PreviousSetting up WinRM](/en/keeperpam/privileged-access-
+manager/references/setting-up-winrm)[NextSetting up SQL
+Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-
+server)
+
+Last updated 1 day ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -425,27 +446,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=T9RueDdz2V4uMLn1iUhj&only=yes&limit=100)
-
-Last updated 6 hours ago
-
-Was this helpful?
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
-
-# Gateway Network Configuration
-
-[PreviousSetting up WinRM](/en/keeperpam/privileged-access-
-manager/references/setting-up-winrm)[NextSetting up SQL
-Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-
-server)
 
 ###
 
