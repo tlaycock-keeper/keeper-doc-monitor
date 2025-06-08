@@ -457,7 +457,7 @@ rotation/rotation-use-cases/aws/managed-database/aws-rds-for-
 oracle)[NextCustom Scripts](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/saas-accounts)
 
-Last updated 10 days ago
+Last updated 11 days ago
 
 Was this helpful?
 

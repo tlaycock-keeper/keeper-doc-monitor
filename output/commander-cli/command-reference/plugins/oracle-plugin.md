@@ -396,36 +396,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Prerequisites
-  * Prepare Record for Rotation
-  * Create a Record for Rotation
-  * Add the following Custom Fields to the record that you want to rotate within Keeper
-  * Rotate
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=-Mf3h9C4TgPnXlyss5xk&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
-
-# Oracle Plugin
-
-Rotate Oracle database passwords with Commander
-
-[PreviousMySQL Plugin](/en/keeperpam/commander-cli/command-
-reference/plugins/mysql-plugin)[NextPostgreSQL
-Plugin](/en/keeperpam/commander-cli/command-reference/plugins/postgresql-
-plugin)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -456,13 +426,41 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+  * Prerequisites
+  * Prepare Record for Rotation
+  * Create a Record for Rotation
+  * Add the following Custom Fields to the record that you want to rotate within Keeper
+  * Rotate
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=-Mf3h9C4TgPnXlyss5xk&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
+
+# Oracle Plugin
+
+Rotate Oracle database passwords with Commander
+
+[PreviousMySQL Plugin](/en/keeperpam/commander-cli/command-
+reference/plugins/mysql-plugin)[NextPostgreSQL
+Plugin](/en/keeperpam/commander-cli/command-reference/plugins/postgresql-
+plugin)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 Keeper has also launched a zero-trust Password Rotation feature with
 KeeperPAM. This new capability is recommended for most password rotation use
 cases. The Documentation is linked below:
 
-  * [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-rotation)
-
-  * Commander [KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-commands)
+  *   * Commander 
 
 This plugin allows rotating a user's password in Oracle Database Server
 
@@ -473,9 +471,6 @@ Prerequisites
 Oracle requires Instant Client setup to enable client applications.
 
 Consult the following page:
-<http://www.oracle.com/technetwork/database/features/instant-
-client/index-097480.html>[](http://www.oracle.com/technetwork/database/features/instant-
-client/index-097480.html)
 
 ####
 
@@ -593,6 +588,16 @@ Output
 After rotation is completed, the new password will be stored in the `Password`
 field of the record
 
+[Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
+rotation)
+
+[KeeperPAM commands](/en/keeperpam/commander-cli/command-reference/keeperpam-
+commands)
+
+<http://www.oracle.com/technetwork/database/features/instant-
+client/index-097480.html>[](http://www.oracle.com/technetwork/database/features/instant-
+client/index-097480.html)
+
 [Troubleshooting ](/en/keeperpam/commander-cli/troubleshooting-commander-
 cli#typed-vs-untyped-records-v3-vs-v2)
 
@@ -600,10 +605,10 @@ A Keeper Record setup for Oracle password rotation
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf3jhRTdO6IbKc4VLLY%252Fimage.png%3Falt%3Dmedia%26token%3Dc8958294-77b9-4c1d-af8b-323c0566424e&width=768&dpr=4&quality=100&sign=77fe2edc&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf4-Wp_-
+ZiTEjiYaqYL%252Fimage.png%3Falt%3Dmedia%26token%3Dee97abf8-7126-4064-a38e-d837de304dfc&width=768&dpr=4&quality=100&sign=94f4d84b&sv=2)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
-files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf4-Wp_-
-ZiTEjiYaqYL%252Fimage.png%3Falt%3Dmedia%26token%3Dee97abf8-7126-4064-a38e-d837de304dfc&width=768&dpr=4&quality=100&sign=94f4d84b&sv=2)
+files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-Mf3OKL0C-A5D2nQFew1%252F-Mf3jhRTdO6IbKc4VLLY%252Fimage.png%3Falt%3Dmedia%26token%3Dc8958294-77b9-4c1d-af8b-323c0566424e&width=768&dpr=4&quality=100&sign=77fe2edc&sv=2)
 

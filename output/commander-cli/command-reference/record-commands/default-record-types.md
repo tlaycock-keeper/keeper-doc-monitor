@@ -396,6 +396,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview
@@ -439,6 +469,14 @@ PDF](/en/keeperpam/~gitbook/pdf?page=-Mctt87HMlrTchW2b5n3&only=yes&limit=100)
 
 Description and examples for using and managing Record Types
 
+[PreviousRecord Type Commands](/en/keeperpam/commander-cli/command-
+reference/record-commands/record-type-commands)[NextSharing
+Commands](/en/keeperpam/commander-cli/command-reference/sharing-commands)
+
+Last updated 5 months ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -449,17 +487,12 @@ Administrator, you can even create custom record type templates. Record Types
 define the fields available to a record. They act as a record blueprint, which
 makes it easy to create and manage records for a variety of different uses.
 
-There is a set of [standard record types](/en/keeperpam/commander-cli/command-
-reference/record-commands/default-record-types#standard-record-types) defined
-by Keeper, these include common types like Login, Passport, and SSH Keys.
+There is a set of  defined by Keeper, these include common types like Login,
+Passport, and SSH Keys.
 
-It is also possible to[ define new record types](/en/keeperpam/commander-
-cli/command-reference/record-commands/record-type-commands#record-type-
-command) to be used by your organization.
+It is also possible to to be used by your organization.
 
-For a list of associate record type commands, see [commands
-documentation](/en/keeperpam/commander-cli/command-reference/record-
-commands/record-type-commands#commands)
+For a list of associate record type commands, see
 
 ##
 
@@ -695,11 +728,6 @@ All record types have the following fields:
 `title` \- what the record is named (required)
 
 `notes` \- text
-
-`custom` \- custom fields and values can be added to records. See [add
-documentation](/en/keeperpam/commander-cli/command-reference/record-
-commands#add-command-new-record-type) for more information on adding custom
-fields
 
 ###
 
@@ -1795,41 +1823,18 @@ databaseCredentials", "fields": [{"type": "text", "value": ["SomeText"],
 "https://www.example.com", "port": "5000"}]}, {"type": "login", "value":
 ["John.Doe"]}, {"type": "password", "value": ["75vf@5JB@o"]}], "custom": []}'`
 
-[PreviousRecord Type Commands](/en/keeperpam/commander-cli/command-
-reference/record-commands/record-type-commands)[NextSharing
-Commands](/en/keeperpam/commander-cli/command-reference/sharing-commands)
+`custom` \- custom fields and values can be added to records. See  for more
+information on adding custom fields
 
-Last updated 5 months ago
+[standard record types](/en/keeperpam/commander-cli/command-reference/record-
+commands/default-record-types#standard-record-types)
 
-Was this helpful?
+[ define new record types](/en/keeperpam/commander-cli/command-
+reference/record-commands/record-type-commands#record-type-command)
 
-#### Company
+[commands documentation](/en/keeperpam/commander-cli/command-reference/record-
+commands/record-type-commands#commands)
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+[add documentation](/en/keeperpam/commander-cli/command-reference/record-
+commands#add-command-new-record-type)
 

@@ -396,6 +396,36 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 On this page
 
   * Overview 
@@ -422,6 +452,15 @@ PDF](/en/keeperpam/~gitbook/pdf?page=aKJCLC4sHx4DPmJg1336&only=yes&limit=100)
 
 Configuring MySQL DB as a PAM Database Record
 
+[PreviousPAM Database](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-database)[NextExample: PostgreSQL
+Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database/example-postgresql-database)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 ##
 
 Overview
@@ -435,9 +474,7 @@ Prerequisites
 
 Prior to proceeding with this guide, make sure you have
 
-  1. [Installed and configured the Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways/one-time-access-token)
-
-  2. [Set up a PAM Configuration for your target Environment ](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
+  1.   2. 
 
 ##
 
@@ -556,10 +593,6 @@ Administrative Credential Record
 
 Linked PAM User credential used for connection and administrative operations
 
-**Required** Visit this [section](/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-database/example-mysql-
-database#administrative-credential-record) for more details
-
 Protocol
 
 Native database protocol used for connecting from the Gateway to the target
@@ -570,18 +603,10 @@ Session Recording
 
 Options for recording sessions and typescripts
 
-See [session recording](/en/keeperpam/privileged-access-manager/session-
-recording-and-playback)
-
 Connection Parameters
 
 Connection-specific protocol settings which can vary based on the protocol
 type
-
-See this [section](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/mysql-connections) for MySQL protocol
-settings We recommend specifying the **Connection Port** at a minimum. E.g.
-"3306" for MySQL.
 
 ###
 
@@ -590,10 +615,6 @@ Administrative Credential Record
 The **Admin Credential Record** in the PAM Database links a user to the PAM
 Database record in your Keeper Vault. This linked user is used for
 authenticating the connection when clicking "Launch".
-
-User Accounts are configured on the PAM User record. Visit this
-[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user) for more information.
 
 ####
 
@@ -616,7 +637,7 @@ be shared. For example, if the PAM Database is configured with a MySQL
 Database, the recipient can connect to the database without having direct
 access to the linked credentials.
 
-  * Learn more about [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
+  * 
 
 ###
 
@@ -626,44 +647,39 @@ The MySQL Database record is set up. The user with the ability to launch
 connections can now launch an interactive MySQL connection or tunnel to the
 target database.
 
-[PreviousPAM Database](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-database)[NextExample: PostgreSQL
-Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database/example-postgresql-database)
+**Required** Visit this  for more details
 
-Last updated 4 months ago
+See
 
-Was this helpful?
+See this  for MySQL protocol settings We recommend specifying the **Connection
+Port** at a minimum. E.g. "3306" for MySQL.
 
-#### Company
+User Accounts are configured on the PAM User record. Visit this  for more
+information.
 
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
+Learn more about
 
-#### Support
+[Installed and configured the Keeper Gateway](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/one-time-access-token)
 
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+[Set up a PAM Configuration for your target Environment
+](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
 
-#### Solutions
+[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user)
 
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+[Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-
+started/access-controls)
 
-#### Pricing
+[session recording](/en/keeperpam/privileged-access-manager/session-recording-
+and-playback)
 
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+[section](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/mysql-connections)
 
-© 2025 Keeper Security, Inc.
+[section](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database/example-mysql-database#administrative-credential-
+record)
 
 PAM Database
 

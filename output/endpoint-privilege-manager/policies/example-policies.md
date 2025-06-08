@@ -396,6 +396,29 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=fxsmJ695pjmnDi6aBLKF&only=yes&limit=100)
+
+  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
+  2. [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
+
+# Example Policies
+
+Example policies that can be enforced in Endpoint Privilege Manager with step-
+by-step guidance
+
+[PreviousPolicies](/en/keeperpam/endpoint-privilege-
+manager/policies)[NextManaging Requests](/en/keeperpam/endpoint-privilege-
+manager/managing-requests)
+
+Last updated 15 days ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -425,29 +448,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=fxsmJ695pjmnDi6aBLKF&only=yes&limit=100)
-
-  1. [Endpoint Privilege Manager](/en/keeperpam/endpoint-privilege-manager)
-  2. [Policies](/en/keeperpam/endpoint-privilege-manager/policies)
-
-# Example Policies
-
-Example policies that can be enforced in Endpoint Privilege Manager with step-
-by-step guidance
-
-[PreviousPolicies](/en/keeperpam/endpoint-privilege-
-manager/policies)[NextManaging Requests](/en/keeperpam/endpoint-privilege-
-manager/managing-requests)
-
-Last updated 14 days ago
-
-Was this helpful?
 
 ###
 

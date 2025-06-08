@@ -453,7 +453,7 @@ manager/connections/session-protocols/postgresql-connections)[NextTelnet
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/telnet-connections)
 
-Last updated 18 days ago
+Last updated 19 days ago
 
 Was this helpful?
 
@@ -593,6 +593,18 @@ manager/connections/getting-started)
 [Example: Azure Windows VM](/en/keeperpam/privileged-access-manager/getting-
 started/pam-resources/pam-machine/example-azure-windows-vm)
 
+For this protocol, graphical data, including timing information, is recorded.
+For more details on the recordings and how to access them, see the  docs.
+
+[Session Recording & Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
+
+VNC Session Recordings
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fe3uCXEZO7iUuITKSNU21%252FScreenshot%25202025-01-21%2520at%252012.35.50%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db88e8ce5-78ac-4bce-b40f-1c8331249eaf&width=768&dpr=4&quality=100&sign=feb5fdb1&sv=2)
+
 Field
 
 Definition
@@ -609,16 +621,4 @@ perform administrative operations on it.
 
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
-
-VNC Session Recordings
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fe3uCXEZO7iUuITKSNU21%252FScreenshot%25202025-01-21%2520at%252012.35.50%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db88e8ce5-78ac-4bce-b40f-1c8331249eaf&width=768&dpr=4&quality=100&sign=feb5fdb1&sv=2)
-
-For this protocol, graphical data, including timing information, is recorded.
-For more details on the recordings and how to access them, see the  docs.
-
-[Session Recording & Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
 

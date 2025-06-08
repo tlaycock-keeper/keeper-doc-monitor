@@ -452,7 +452,7 @@ Deploying the Keeper Agent to your endpoints
 manager/setup)[NextCollections](/en/keeperpam/endpoint-privilege-
 manager/collections)
 
-Last updated 14 days ago
+Last updated 15 days ago
 
 Was this helpful?
 

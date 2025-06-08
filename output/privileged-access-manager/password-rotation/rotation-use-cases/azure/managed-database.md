@@ -447,7 +447,7 @@ manager/password-rotation/rotation-use-cases/azure/azure-vm-user-
 accounts)[NextAzure SQL](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/azure/managed-database/azure-sql)
 
-Last updated 4 months ago
+Last updated 5 months ago
 
 Was this helpful?
 

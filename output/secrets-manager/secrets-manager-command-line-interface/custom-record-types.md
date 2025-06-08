@@ -396,6 +396,28 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=BMjdtCP9NKJa8lm8DJaW&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
+
+# Custom Record Types
+
+Utilizing custom record types in the Keeper Secrets Manager CLI
+
+[PreviousDocker Container](/en/keeperpam/secrets-manager/secrets-manager-
+command-line-interface/docker-container)[NextPassword
+Rotation](/en/keeperpam/secrets-manager/password-rotation)
+
+Last updated 7 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -425,28 +447,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=BMjdtCP9NKJa8lm8DJaW&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
-
-# Custom Record Types
-
-Utilizing custom record types in the Keeper Secrets Manager CLI
-
-[PreviousDocker Container](/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface/docker-container)[NextPassword
-Rotation](/en/keeperpam/secrets-manager/password-rotation)
-
-Last updated 7 months ago
-
-Was this helpful?
 
 ##
 

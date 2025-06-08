@@ -447,7 +447,7 @@ rotation/rotation-use-cases/local-network/macos-user)[NextNative
 MySQL](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
 cases/local-network/database/mysql)
 
-Last updated 4 months ago
+Last updated 5 months ago
 
 Was this helpful?
 

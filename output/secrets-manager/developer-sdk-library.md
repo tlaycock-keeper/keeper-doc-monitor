@@ -462,7 +462,7 @@ Sample code and SDK integration instructions for Keeper Secrets Manager
 rotation)[NextPython SDK](/en/keeperpam/secrets-manager/developer-sdk-
 library/python-sdk)
 
-Last updated 1 month ago
+Last updated 2 months ago
 
 Was this helpful?
 

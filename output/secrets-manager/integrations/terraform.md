@@ -1187,6 +1187,9 @@ security/secretsmanager/latest/docs/data-sources/ssh_keys)
 [SSN Card](https://registry.terraform.io/providers/keeper-
 security/secretsmanager/latest/docs/data-sources/ssn_card)
 
+[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
+an-application)
+
 [Secrets Manager Application](/en/keeperpam/secrets-
 manager/about/terminology#application)
 
@@ -1195,7 +1198,4 @@ legacy-
 files%2Fo%2Fassets%252F-MJXOXEifAmpyvNVL1to%252F-MkdG6FEOq6NQs-V7faS%252F-MkdGAJXHqUijg8Y1JMq%252Fterraform-
 plugin-
 header.jpg%3Falt%3Dmedia%26token%3Dcc0461d8-e6d5-40bc-85e8-24f10947ff8d&width=768&dpr=4&quality=100&sign=42b3fd2&sv=2)
-
-[Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide#2.-create-
-an-application)
 

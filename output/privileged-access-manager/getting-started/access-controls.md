@@ -428,37 +428,12 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Planning your Deployment
-  * Vault KSM Application Sharing
-  * Role-Based Enforcement Policies
-  * PAM Configuration Settings
-  * Application and Device Access Control
-  * Device and Gateway IP Locking
-  * PAM Resource Sharing and Permissions
-  * Record Linking
-  * Time-Limited Access
-  * Revoking Access
-  * Automatic Rotation after Share Expiration
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=z551MwFLTYCCCN0XRF25&only=yes&limit=100)
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-
-# Access Controls
-
-KeeperPAM Access Control Implementation
-
-[PreviousPAM User](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-user)[NextJust-In-Time Access
-(JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-
-access-jit)
-
-Last updated 11 days ago
+Last updated 12 days ago
 
 Was this helpful?
 
@@ -717,6 +692,31 @@ Read more about the  in the Keeper Enterprise docs
 
 Keeper's  provides access to the target systems without sharing the
 credential, ensuring least privilege access.
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+# Access Controls
+
+KeeperPAM Access Control Implementation
+
+[PreviousPAM User](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-user)[NextJust-In-Time Access
+(JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-
+access-jit)
+
+  * Overview
+  * Planning your Deployment
+  * Vault KSM Application Sharing
+  * Role-Based Enforcement Policies
+  * PAM Configuration Settings
+  * Application and Device Access Control
+  * Device and Gateway IP Locking
+  * PAM Resource Sharing and Permissions
+  * Record Linking
+  * Time-Limited Access
+  * Revoking Access
+  * Automatic Rotation after Share Expiration
 
 [Nodes and Organizational Structure](https://docs.keeper.io/en/enterprise-
 guide/nodes-and-organizational-structure)

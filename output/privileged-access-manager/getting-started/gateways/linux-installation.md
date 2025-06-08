@@ -458,7 +458,7 @@ started/gateways/docker-installation)[NextWindows
 Installation](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/windows-installation)
 
-Last updated 1 day ago
+Last updated 2 days ago
 
 Was this helpful?
 
@@ -705,39 +705,6 @@ started/gateways/auto-updater)
 
 ###
 
-Network Configuration
-
-The Keeper Gateway establishes outbound-only connections and does not require
-any inbound firewall rules. The following outbound connections must be
-allowed:
-
-Destination
-
-Port Needed
-
-More Info
-
-Keeper Cloud _(keepersecurity.[com|eu|com.au|jp|ca|us])_
-
-TLS Port 443
-
-Communicates with Keeper Cloud to access target infrastructure via native
-protocols (e.g., SSH, RDP)
-
-Keeper KRelay Server _(krelay.keepersecurity.[com|eu|com.au|jp|ca|us])_
-
-TCP and UDP opened on Port 3478 Outbound access to TCP and UDP ports 49152
-through 65535
-
-Facilitates secure and encrypted relay connections between end-user's vault
-and target systems via the Gateway
-
-The Gateway preserves zero knowledge by performing all encryption and
-decryption of data locally. Keeper Secrets Manager APIs are used to
-communicate with the Keeper cloud.
-
-###
-
 Checksum Verification
 
 Keeper Gateway SHA256 hashes for the latest version are published at the below
@@ -768,6 +735,39 @@ Copy
     Get-Content keeper-gateway_X.X.X_SHA256SUMS | Select-String keeper-gateway_windows_x86_64.exe
 
 <https://keepersecurity.com/pam/latest.txt>[](https://keepersecurity.com/pam/latest.txt)
+
+###
+
+Network Configuration
+
+The Keeper Gateway establishes outbound-only connections and does not require
+any inbound firewall rules. The following outbound connections must be
+allowed:
+
+Destination
+
+Port Needed
+
+More Info
+
+Keeper Cloud _(keepersecurity.[com|eu|com.au|jp|ca|us])_
+
+TLS Port 443
+
+Communicates with Keeper Cloud to access target infrastructure via native
+protocols (e.g., SSH, RDP)
+
+Keeper KRelay Server _(krelay.keepersecurity.[com|eu|com.au|jp|ca|us])_
+
+TCP and UDP opened on Port 3478 Outbound access to TCP and UDP ports 49152
+through 65535
+
+Facilitates secure and encrypted relay connections between end-user's vault
+and target systems via the Gateway
+
+The Gateway preserves zero knowledge by performing all encryption and
+decryption of data locally. Keeper Secrets Manager APIs are used to
+communicate with the Keeper cloud.
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

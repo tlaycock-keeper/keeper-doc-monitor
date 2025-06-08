@@ -396,29 +396,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=nmFaBJWoWQ32fLahhDHX&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
-
-# ManageEngine Import
-
-Automatic migration of your ManageEngine vault
-
-[PreviousKeepass Import](/en/keeperpam/commander-cli/command-reference/import-
-and-export-commands/keepass-import)[NextMyki Import](/en/keeperpam/commander-
-cli/command-reference/import-and-export-commands/myki-import)
-
-Last updated 6 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -448,6 +425,29 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=nmFaBJWoWQ32fLahhDHX&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Import and Export Data](/en/keeperpam/commander-cli/command-reference/import-and-export-commands)
+
+# ManageEngine Import
+
+Automatic migration of your ManageEngine vault
+
+[PreviousKeepass Import](/en/keeperpam/commander-cli/command-reference/import-
+and-export-commands/keepass-import)[NextMyki Import](/en/keeperpam/commander-
+cli/command-reference/import-and-export-commands/myki-import)
+
+Last updated 6 months ago
+
+Was this helpful?
 
 ##
 

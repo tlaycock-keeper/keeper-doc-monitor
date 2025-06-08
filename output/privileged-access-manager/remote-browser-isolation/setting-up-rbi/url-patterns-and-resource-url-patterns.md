@@ -521,7 +521,7 @@ browser-isolation/setting-up-rbi)[NextBrowser
 Autofill](/en/keeperpam/privileged-access-manager/remote-browser-
 isolation/setting-up-rbi/browser-autofill)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

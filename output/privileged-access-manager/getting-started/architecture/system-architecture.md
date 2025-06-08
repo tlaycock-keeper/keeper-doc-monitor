@@ -449,7 +449,7 @@ Keeper Password Rotation architecture diagram and data flow
 started/architecture)[NextVault Security](/en/keeperpam/privileged-access-
 manager/getting-started/architecture/vault-security)
 
-Last updated 4 months ago
+Last updated 5 months ago
 
 Was this helpful?
 

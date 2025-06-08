@@ -428,14 +428,22 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Preview Updates
+  * Gateway Preview
+  * Vault Preview
+  * Admin Console Preview
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=sb8ynVq2H5QoaPB1CH6r&only=yes&limit=100)
 
-Last updated 2 months ago
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
 
-Was this helpful?
+# Preview Access
+
+How to access the Preview version of KeeperPAM
 
 ##
 
@@ -455,13 +463,35 @@ Docker Installation
 For Docker environments, you can reference the tag `keeper/gateway:preview` to
 get the preview version.
 
+Copy
+
+    
+    
+    services:
+          keeper-gateway:
+            platform: linux/amd64
+            image: keeper/gateway:preview
+
 ####
 
 Linux Binary Preview
 
 To update an existing Gateway on Linux:
 
+Copy
+
+    
+    
+    curl -fsSL https://keepersecurity.com/pam/beta/install | \
+      sudo bash -s -- --preview
+
 Executing the following command will uninstall the Keeper Gateway Preview:
+
+Copy
+
+    
+    
+    curl -fsSL https://keepersecurity.com/pam/beta/uninstall | sudo bash -s -- --preview
 
 ####
 
@@ -494,6 +524,13 @@ of Keeper. This does not affect stored data.
 Admin Console Preview
 
   *   *   *   *   *   * **GOV** : Not available for preview, use commercial environment
+
+[PreviousCron Spec](/en/keeperpam/privileged-access-manager/references/cron-
+spec)[NextOverview](/en/keeperpam/endpoint-privilege-manager/overview)
+
+Last updated 2 months ago
+
+Was this helpful?
 
 Download the latest installer:
 
@@ -530,43 +567,6 @@ Linux (.deb) -
 **CA:**
 
 **JP:**
-
-Copy
-
-    
-    
-    services:
-          keeper-gateway:
-            platform: linux/amd64
-            image: keeper/gateway:preview
-
-Copy
-
-    
-    
-    curl -fsSL https://keepersecurity.com/pam/beta/install | \
-      sudo bash -s -- --preview
-
-Copy
-
-    
-    
-    curl -fsSL https://keepersecurity.com/pam/beta/uninstall | sudo bash -s -- --preview
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
-
-# Preview Access
-
-How to access the Preview version of KeeperPAM
-
-[PreviousCron Spec](/en/keeperpam/privileged-access-manager/references/cron-
-spec)[NextOverview](/en/keeperpam/endpoint-privilege-manager/overview)
-
-  * Preview Updates
-  * Gateway Preview
-  * Vault Preview
-  * Admin Console Preview
 
 [64-bit Installer](https://keepersecurity.com/pam/beta/gateway/keeper-
 gateway_windows_x86_64.exe)
