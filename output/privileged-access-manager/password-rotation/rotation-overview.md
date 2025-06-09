@@ -480,7 +480,15 @@ Prior to setting up password rotation, make sure to have the following set up:
 
   * Learn about KeeperPAM in the [Getting Started](/en/keeperpam/privileged-access-manager/getting-started) section
 
-  *   *   *   *   * 
+  * [Enable Enforcement Policies](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enable-enforcement-policies)
+
+  * [Deploy a Keeper Gateway](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#deploy-a-keeper-gateway)
+
+  * [Create a PAM User record](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#create-a-pam-user-record)
+
+  * [Create a PAM Resource](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#create-a-pam-resource)
+
+  * [Configure rotation settings](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#configure-rotation-settings)
 
 ###
 
@@ -730,21 +738,6 @@ Keeper supports importing in bulk from JSON format. See the [Importing PAM
 Records](/en/keeperpam/privileged-access-manager/references/importing-pam-
 records) section for more details.
 
-[Enable Enforcement Policies](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-overview#enable-enforcement-policies)
-
-[Deploy a Keeper Gateway](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-overview#deploy-a-keeper-gateway)
-
-[Create a PAM User record](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-overview#create-a-pam-user-record)
-
-[Create a PAM Resource](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-overview#create-a-pam-resource)
-
-[Configure rotation settings](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-overview#configure-rotation-settings)
-
 KeeperPAM Enforcement Policies
 
 Deploy a Keeper Gateway
@@ -896,17 +889,13 @@ Below are some examples of PAM User records.
 
   * Azure AD User
 
-For advanced scheduling, see the .
-
-The rotation schedule can be set on a specific interval, or using a .
-
-[cron spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
-
-[cron spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
-
 PAM User record editing
 
+For advanced scheduling, see the .
+
 Password Rotation Settings
+
+The rotation schedule can be set on a specific interval, or using a .
 
 Custom Schedule
 
@@ -927,6 +916,8 @@ AWS IAM User
 Database user
 
 Azure AD User
+
+[cron spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
@@ -976,4 +967,6 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FwQ8O48hEF
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FGzKgObBvzWPED5PdcznT%252FScreenshot%25202025-01-12%2520at%25207.18.52%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D393cb4c4-0d1f-44ad-
 bc09-fc66a93e666f&width=768&dpr=4&quality=100&sign=e3dbf592&sv=2)
+
+[cron spec](/en/keeperpam/privileged-access-manager/references/cron-spec)
 

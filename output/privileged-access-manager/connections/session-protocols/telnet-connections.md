@@ -453,7 +453,7 @@ manager/connections/session-protocols/vnc-
 connections)[NextKubernetes](/en/keeperpam/privileged-access-
 manager/connections/session-protocols/kubernetes)
 
-Last updated 9 days ago
+Last updated 10 days ago
 
 Was this helpful?
 

@@ -428,31 +428,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Prerequisites
-  * Prepare Record For Rotation
-  * Create a Record for Rotation
-  * Set the PostgreSQL Login Name and Password
-  * Set the Hostname and Port
-  * Enter the Database Name
-  * Optional Record Fields
-  * Integration with the Keeper Commander's connect command
-
 Was this helpful?
 
 [Export as PDF](/en/keeperpam/~gitbook/pdf?page=-Mf41GCHoQ9XJVPRZ-
 Ql&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
-
-# PostgreSQL Plugin
-
-Rotate PostgreSQL database passwords with Commander
-
-[PreviousOracle Plugin](/en/keeperpam/commander-cli/command-
-reference/plugins/oracle-plugin)[NextPSPasswd Plugin](/en/keeperpam/commander-
-cli/command-reference/plugins/pspasswd-plugin)
 
 Last updated 4 months ago
 
@@ -473,12 +452,6 @@ Prerequisites
 ####
 
 Install psycopg2-binary
-
-Copy
-
-    
-    
-    pip3 install psycopg2-binary
 
 ##
 
@@ -525,11 +498,19 @@ Optional Record Fields
 
 These fields can be added to affect the rotation
 
+##
+
+Integration with the Keeper Commander's `connect` command
+
+Here's a screenshot of the Keeper Vault record for this use case:
+
 Label
 
 Value
 
 Comment
+
+For more information on the `connect` command, see the
 
 cmdr:plugin
 
@@ -555,10 +536,6 @@ cmdr:port
 
 (Optional) PostgreSQL port. 5432 assumed if omitted
 
-##
-
-Integration with the Keeper Commander's `connect` command
-
 Custom Field Name
 
 Custom Field Value
@@ -572,9 +549,32 @@ connect:xxx
 psql --host=${cmdr:host} --port=${cmdr:port} --username=${login}
 --dbname=${cmdr:db} --no-password
 
-Here's a screenshot of the Keeper Vault record for this use case:
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Password Rotation](/en/keeperpam/commander-cli/command-reference/plugins)
 
-For more information on the `connect` command, see the
+# PostgreSQL Plugin
+
+Rotate PostgreSQL database passwords with Commander
+
+[PreviousOracle Plugin](/en/keeperpam/commander-cli/command-
+reference/plugins/oracle-plugin)[NextPSPasswd Plugin](/en/keeperpam/commander-
+cli/command-reference/plugins/pspasswd-plugin)
+
+  * Prerequisites
+  * Prepare Record For Rotation
+  * Create a Record for Rotation
+  * Set the PostgreSQL Login Name and Password
+  * Set the Hostname and Port
+  * Enter the Database Name
+  * Optional Record Fields
+  * Integration with the Keeper Commander's connect command
+
+Copy
+
+    
+    
+    pip3 install psycopg2-binary
 
 [Password Rotation with KeeperPAM](/en/keeperpam/secrets-manager/password-
 rotation)

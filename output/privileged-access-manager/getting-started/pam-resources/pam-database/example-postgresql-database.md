@@ -396,46 +396,31 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
+
+  * Overview 
+  * Prerequisites
+  * PAM Database Record
+  * Creating a PAM Database 
+  * Configure a PostgreSQL Database on the PAM Database Record
+  * Configuring PAM Settings on the PAM Database 
+  * Administrative Credential Record 
+  * Sharing PAM Database Records 
+  * Setup Complete
 
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=ZsW7lP6pj7biIrpBNRLZ&only=yes&limit=100)
 
-Last updated 4 months ago
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [PAM Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-resources)
+  4. [PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database)
 
-Was this helpful?
+# Example: PostgreSQL Database
+
+Configuring PostgreSQL DB as a PAM Database Record
 
 ##
 
@@ -450,7 +435,9 @@ Prerequisites
 
 Prior to proceeding with this guide, make sure you have
 
-  1.   2. 
+  1. [Installed and configured the Keeper Gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways/one-time-access-token)
+
+  2. [Set up a PAM Configuration for your target Environment ](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
 
 ##
 
@@ -488,71 +475,11 @@ Configure a PostgreSQL Database on the PAM Database Record
 Suppose I have a database with the hostname "`db-postgres-1`", the following
 table lists all the configurable fields and their respective values:
 
-###
-
-Configuring PAM Settings on the PAM Database
-
-On the "PAM Settings" section of the vault record, you can configure the
-KeeperPAM Connection and Tunnel settings and link a PAM User credential for
-performing rotations and connections. Tunnels do not require a linked
-credential. The following table lists all the configurable fields and their
-respective values for the PostgreSQL Database:
-
-###
-
-Administrative Credential Record
-
-The **Admin Credential Record** in the PAM Database links a user to the PAM
-Database record in your Keeper Vault. This linked user is used for
-authenticating the connection when clicking "Launch".
-
-####
-
-Setting a Non Admin User as the Administrative Credential Record
-
-If you prefer not to authenticate a connection using the admin credential, you
-can optionally designate a regular user of the resource as the admin
-credential.
-
-##
-
-Sharing PAM Database Records
-
-PAM Database records can be shared with other Keeper users within your
-organization. However, the recipient must be assigned to a role with the
-appropriate PAM enforcement policies in place to utilize KeeperPAM features.
-
-When sharing a PAM Database record, the linked admin credentials will **not**
-be shared. For example, if the PAM Database is configured with a PostgreSQL
-Database, the recipient can connect to the database without having direct
-access to the linked credentials.
-
-  * 
-
-###
-
-Setup Complete
-
-The PostgreSQL Database record is set up. The user with the ability to launch
-connections can now launch an interactive PostgreSQL connection or tunnel to
-the target database.
-
 Field
 
 Description
 
 Value
-
-Field
-
-Description
-
-Required
-
-User Accounts are configured on the PAM User record. Visit this  for more
-information.
-
-Learn more about
 
 Title (Required)
 
@@ -603,42 +530,21 @@ Azure or AWS Provider Region
 
 **Required** if a managed AWS or Azure Database
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [PAM Resources](/en/keeperpam/privileged-access-manager/getting-started/pam-resources)
-  4. [PAM Database](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-database)
+###
 
-# Example: PostgreSQL Database
+Configuring PAM Settings on the PAM Database
 
-Configuring PostgreSQL DB as a PAM Database Record
+On the "PAM Settings" section of the vault record, you can configure the
+KeeperPAM Connection and Tunnel settings and link a PAM User credential for
+performing rotations and connections. Tunnels do not require a linked
+credential. The following table lists all the configurable fields and their
+respective values for the PostgreSQL Database:
 
-[PreviousExample: MySQL Database](/en/keeperpam/privileged-access-
-manager/getting-started/pam-resources/pam-database/example-mysql-
-database)[NextExample: Microsoft SQL Server
-Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database/example-microsoft-sql-server-database)
+Field
 
-  * Overview 
-  * Prerequisites
-  * PAM Database Record
-  * Creating a PAM Database 
-  * Configure a PostgreSQL Database on the PAM Database Record
-  * Configuring PAM Settings on the PAM Database 
-  * Administrative Credential Record 
-  * Sharing PAM Database Records 
-  * Setup Complete
+Description
 
-[Installed and configured the Keeper Gateway](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/one-time-access-token)
-
-[Set up a PAM Configuration for your target Environment
-](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
-
-[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
-[Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-
-started/access-controls)
+Required
 
 PAM Configuration
 
@@ -664,6 +570,89 @@ Connection Parameters
 
 Connection-specific protocol settings which can vary based on the protocol
 type
+
+###
+
+Administrative Credential Record
+
+The **Admin Credential Record** in the PAM Database links a user to the PAM
+Database record in your Keeper Vault. This linked user is used for
+authenticating the connection when clicking "Launch".
+
+User Accounts are configured on the PAM User record. Visit this
+[page](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-user) for more information.
+
+####
+
+Setting a Non Admin User as the Administrative Credential Record
+
+If you prefer not to authenticate a connection using the admin credential, you
+can optionally designate a regular user of the resource as the admin
+credential.
+
+##
+
+Sharing PAM Database Records
+
+PAM Database records can be shared with other Keeper users within your
+organization. However, the recipient must be assigned to a role with the
+appropriate PAM enforcement policies in place to utilize KeeperPAM features.
+
+When sharing a PAM Database record, the linked admin credentials will **not**
+be shared. For example, if the PAM Database is configured with a PostgreSQL
+Database, the recipient can connect to the database without having direct
+access to the linked credentials.
+
+  * Learn more about [Sharing and Access Control](/en/keeperpam/privileged-access-manager/getting-started/access-controls)
+
+###
+
+Setup Complete
+
+The PostgreSQL Database record is set up. The user with the ability to launch
+connections can now launch an interactive PostgreSQL connection or tunnel to
+the target database.
+
+[PreviousExample: MySQL Database](/en/keeperpam/privileged-access-
+manager/getting-started/pam-resources/pam-database/example-mysql-
+database)[NextExample: Microsoft SQL Server
+Database](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database/example-microsoft-sql-server-database)
+
+Last updated 4 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 
 **Required** Visit this  for more details
 

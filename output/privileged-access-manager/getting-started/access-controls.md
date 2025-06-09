@@ -396,6 +396,42 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * Planning your Deployment
+  * Vault KSM Application Sharing
+  * Role-Based Enforcement Policies
+  * PAM Configuration Settings
+  * Application and Device Access Control
+  * Device and Gateway IP Locking
+  * PAM Resource Sharing and Permissions
+  * Record Linking
+  * Time-Limited Access
+  * Revoking Access
+  * Automatic Rotation after Share Expiration
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=z551MwFLTYCCCN0XRF25&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+
+# Access Controls
+
+KeeperPAM Access Control Implementation
+
+[PreviousPAM User](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-user)[NextJust-In-Time Access
+(JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-
+access-jit)
+
+Last updated 13 days ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -425,17 +461,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=z551MwFLTYCCCN0XRF25&only=yes&limit=100)
-
-Last updated 12 days ago
-
-Was this helpful?
 
 ##
 
@@ -498,7 +523,9 @@ limited to only using resources assigned to them.
 A more in-depth look at Admin Console nodes, roles and permissions can be
 found in the Keeper Enterprise admin guide:
 
-  *   * 
+  * [Nodes and Organizational Structure](https://docs.keeper.io/en/enterprise-guide/nodes-and-organizational-structure)
+
+  * [Roles, RBAC and Permissions](https://docs.keeper.io/en/enterprise-guide/roles)
 
 ###
 
@@ -508,7 +535,7 @@ The PAM Configuration acts as a set of "parental controls" for PAM records. It
 enables or disables specific PAM features for all resources using the
 configuration.
 
-  * 
+  * More information on [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
 
 ###
 
@@ -562,6 +589,14 @@ A Shared Folder contains PAM Resources, such as:
 
   * **PAM User**
 
+To ensure least privilege, we recommend splitting the PAM Users into a
+separate shared folder, in order to restrict what users and devices can access
+the underlying secrets. When launching our [Quick Start
+Sandbox](/en/keeperpam/privileged-access-manager/quick-start-sandbox) or using
+our [Gateway wizard](/en/keeperpam/privileged-access-manager/getting-
+started/gateways), Keeper will automatically place the resources and users
+into separate shared folders.
+
 For example, this demo environment as seen below provides full access to
 DevOps, but limits access to only viewing and using resources to the
 Developers team:
@@ -613,7 +648,7 @@ Managing ownership and permissions of resources and records within the Keeper
 Vault can be delegated to other Keeper admins through the Share Admin
 permission.
 
-  * 
+  * Read more about the [Share Admin feature](https://docs.keeper.io/en/enterprise-guide/sharing/share-admin) in the Keeper Enterprise docs
 
 ###
 
@@ -627,7 +662,7 @@ underlying credentials.
 
   * Sharing a resource to a user with view-only access only gives them the ability to launch connections and tunnels.
 
-  * 
+  * Keeper's [zero-trust architecture](/en/keeperpam/privileged-access-manager/getting-started/architecture) provides access to the target systems without sharing the credential, ensuring least privilege access.
 
 In the example below, a PAM Database is linked to a specific user `sqluser`.
 Connections to the database using that account is available to users without
@@ -680,64 +715,6 @@ another user, you have the option of automatically rotating the credential
 after the sharing has expired.
 
 See the  command.
-
-More information on
-
-To ensure least privilege, we recommend splitting the PAM Users into a
-separate shared folder, in order to restrict what users and devices can access
-the underlying secrets. When launching our  or using our , Keeper will
-automatically place the resources and users into separate shared folders.
-
-Read more about the  in the Keeper Enterprise docs
-
-Keeper's  provides access to the target systems without sharing the
-credential, ensuring least privilege access.
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-
-# Access Controls
-
-KeeperPAM Access Control Implementation
-
-[PreviousPAM User](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-user)[NextJust-In-Time Access
-(JIT)](/en/keeperpam/privileged-access-manager/getting-started/just-in-time-
-access-jit)
-
-  * Overview
-  * Planning your Deployment
-  * Vault KSM Application Sharing
-  * Role-Based Enforcement Policies
-  * PAM Configuration Settings
-  * Application and Device Access Control
-  * Device and Gateway IP Locking
-  * PAM Resource Sharing and Permissions
-  * Record Linking
-  * Time-Limited Access
-  * Revoking Access
-  * Automatic Rotation after Share Expiration
-
-[Nodes and Organizational Structure](https://docs.keeper.io/en/enterprise-
-guide/nodes-and-organizational-structure)
-
-[Roles, RBAC and Permissions](https://docs.keeper.io/en/enterprise-
-guide/roles)
-
-[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
-
-[Quick Start Sandbox](/en/keeperpam/privileged-access-manager/quick-start-
-sandbox)
-
-[Gateway wizard](/en/keeperpam/privileged-access-manager/getting-
-started/gateways)
-
-[Share Admin feature](https://docs.keeper.io/en/enterprise-
-guide/sharing/share-admin)
-
-[zero-trust architecture](/en/keeperpam/privileged-access-manager/getting-
-started/architecture)
 
 [Planning your Deployment](/en/keeperpam/privileged-access-manager/getting-
 started/access-controls#planning-your-deployment)

@@ -460,7 +460,7 @@ use-cases/azure/managed-database/azure-postgresql-single-or-flexible-
 database)[NextAWS](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/aws)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

@@ -428,7 +428,7 @@ Applying least privilege policies to your users and machines
 manager/collections)[NextExample Policies](/en/keeperpam/endpoint-privilege-
 manager/policies/example-policies)
 
-Last updated 15 days ago
+Last updated 16 days ago
 
 Was this helpful?
 

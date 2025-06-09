@@ -396,6 +396,37 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview 
+  * Prerequisites
+  * PAM Settings - Configuring VNC Protocol
+  * Accessing Connection Settings
+  * Configuring Connection Settings
+  * Session Recordings - VNC Protocol
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=vUNK9m3K5FwJRVMa363g&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
+  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
+
+# VNC Connections
+
+Keeper Connections - VNC Protocol
+
+[PreviousPostgreSQL Connections](/en/keeperpam/privileged-access-
+manager/connections/session-protocols/postgresql-connections)[NextTelnet
+Connections](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/telnet-connections)
+
+Last updated 20 days ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -425,37 +456,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * Overview 
-  * Prerequisites
-  * PAM Settings - Configuring VNC Protocol
-  * Accessing Connection Settings
-  * Configuring Connection Settings
-  * Session Recordings - VNC Protocol
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=vUNK9m3K5FwJRVMa363g&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Connections](/en/keeperpam/privileged-access-manager/connections)
-  3. [Session Protocols](/en/keeperpam/privileged-access-manager/connections/session-protocols)
-
-# VNC Connections
-
-Keeper Connections - VNC Protocol
-
-[PreviousPostgreSQL Connections](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/postgresql-connections)[NextTelnet
-Connections](/en/keeperpam/privileged-access-manager/connections/session-
-protocols/telnet-connections)
-
-Last updated 19 days ago
-
-Was this helpful?
 
 ##
 
@@ -596,15 +596,6 @@ started/pam-resources/pam-machine/example-azure-windows-vm)
 For this protocol, graphical data, including timing information, is recorded.
 For more details on the recordings and how to access them, see the  docs.
 
-[Session Recording & Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
-
-VNC Session Recordings
-
-![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-x-
-prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fe3uCXEZO7iUuITKSNU21%252FScreenshot%25202025-01-21%2520at%252012.35.50%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db88e8ce5-78ac-4bce-b40f-1c8331249eaf&width=768&dpr=4&quality=100&sign=feb5fdb1&sv=2)
-
 Field
 
 Definition
@@ -619,6 +610,15 @@ Administrative Credential Record
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
 
+[Session Recording & Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
+
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
+
+VNC Session Recordings
+
+![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+x-
+prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fe3uCXEZO7iUuITKSNU21%252FScreenshot%25202025-01-21%2520at%252012.35.50%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Db88e8ce5-78ac-4bce-b40f-1c8331249eaf&width=768&dpr=4&quality=100&sign=feb5fdb1&sv=2)
 

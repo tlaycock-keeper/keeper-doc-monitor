@@ -433,6 +433,15 @@ Was this helpful?
 [Export as PDF](/en/keeperpam/~gitbook/pdf?page=-Mf8yJS8Oy-
 wUqwOAoUY&only=yes&limit=100)
 
+Last updated 1 year ago
+
+Was this helpful?
+
+The Keeper Secrets Manage CLI is focused specifically on retrieving and
+updating secrets in the vault.
+
+For all other commands, please refer to the Keeper Commander CLI:
+
   1. [Secrets Manager](/en/keeperpam/secrets-manager)
   2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
 
@@ -444,15 +453,6 @@ Use the Keeper Commander CLI for hundreds of Vault and Admin Console commands
 command-line-interface/version-command)[NextDocker
 Container](/en/keeperpam/secrets-manager/secrets-manager-command-line-
 interface/docker-container)
-
-Last updated 1 year ago
-
-Was this helpful?
-
-The Keeper Secrets Manage CLI is focused specifically on retrieving and
-updating secrets in the vault.
-
-For all other commands, please refer to the Keeper Commander CLI:
 
 [Commander CLI](/en/keeperpam/commander-cli/overview)
 

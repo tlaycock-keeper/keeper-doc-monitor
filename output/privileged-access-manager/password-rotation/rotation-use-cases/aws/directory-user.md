@@ -455,7 +455,7 @@ rotation/rotation-use-cases/aws/iam-user)[NextEC2 Virtual Machine
 User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
 cases/aws/ec2-virtual-machine-user)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

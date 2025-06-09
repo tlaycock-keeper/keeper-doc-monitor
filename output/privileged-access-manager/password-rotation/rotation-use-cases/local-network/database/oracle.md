@@ -396,6 +396,39 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * Overview
+  * Prerequisites
+  * 1\. Set up a PAM Database Record
+  * 2\. Set up a PAM Configuration
+  * 3\. Set up one or more PAM user records
+  * 4\. Configure Rotation on the PAM User records
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=ib6g3PWFRnN8nUkyhZtI&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
+  5. [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
+
+# Native Oracle
+
+Rotating Local Network Oracle database accounts with Keeper Rotation
+
+[PreviousNative MS SQL Server](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-
+server)[NextAzure](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/azure)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -426,46 +459,15 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 © 2025 Keeper Security, Inc.
 
-On this page
-
-  * Overview
-  * Prerequisites
-  * 1\. Set up a PAM Database Record
-  * 2\. Set up a PAM Configuration
-  * 3\. Set up one or more PAM user records
-  * 4\. Configure Rotation on the PAM User records
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=ib6g3PWFRnN8nUkyhZtI&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
-  5. [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
-
-# Native Oracle
-
-Rotating Local Network Oracle database accounts with Keeper Rotation
-
-[PreviousNative MS SQL Server](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/local-network/database/ms-sql-
-server)[NextAzure](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/azure)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 ##
 
 Overview
 
 In this guide, you'll learn how to rotate Local Oracle Database User and/or
 Admin accounts within your local network using Keeper Rotation. For a high-
-level overview on the rotation process in the local network, visit this .
+level overview on the rotation process in the local network, visit this
+[page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/local-network#rotation-on-the-local-network).
 
 ##
 
@@ -473,7 +475,13 @@ Prerequisites
 
 This guide assumes the following tasks have already taken place:
 
-  *   *   *   * 
+  * Keeper Secrets Manager is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
+
+  * Keeper Rotation is enabled for your [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-overview#enabling-rotation-on-the-admin-console)
+
+  * A Keeper Secrets Manager [application](/en/keeperpam/privileged-access-manager/getting-started/applications) has been created
+
+  * A Keeper Rotation [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways) is already installed, running, and is able to communicate to your Oracle database
 
 ##
 
@@ -500,6 +508,8 @@ Keeper record title Ex: `dbadmin`
 Server address - _doesn't need to be publicly_ routable
 
 **Port**
+
+For default ports, see port mapping Ex: `oracle=1521`
 
 **Use SSL**
 
@@ -600,33 +610,6 @@ Select the **PAM User** record(s) from Step 3, edit the record and open the
 
 Any user with `edit` rights to a **PAM User** record has the ability to setup
 rotation for that record.
-
-Keeper Secrets Manager is enabled for your
-
-Keeper Rotation is enabled for your
-
-A Keeper Secrets Manager  has been created
-
-A Keeper Rotation  is already installed, running, and is able to communicate
-to your Oracle database
-
-For default ports, see  Ex: `oracle=1521`
-
-[application](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
-
-[gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-port mapping
-
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
-
-[role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-overview#enabling-rotation-on-the-admin-console)
-
-[page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/local-network#rotation-on-the-local-network)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

@@ -396,59 +396,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Overview
-  * Example Post-Rotation Scripts
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=JoNKLrllkK3VE7Y3ogdb&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-
-# Custom Scripts
-
-Rotation of passwords for SaaS accounts or REST API endpoints using custom
-scripts
-
-###
-
-Overview
-
-Keeper supports custom scripting for the purpose of rotation or other actions.
-To demonstrate this capability, a few examples have been published.
-
-The new method of custom rotations is using Keeper's new [SaaS
-Rotation](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases/saas-rotation-plugins) capability.
-
-###
-
-Example Post-Rotation Scripts
-
-  * [Okta User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/okta-user)
-
-  * [Snowflake User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/snowflake-user)
-
-  * [REST API](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/rotate-credential-via-rest-api)
-
-  * [CIsco IOS XE](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-ios-xe)
-
-  * [Cisco Meraki](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/saas-accounts/cisco-meraki)
-
-[PreviousSaaS Rotation Plugins](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/saas-rotation-plugins)[NextOkta
-User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/saas-accounts/okta-user)
-
-Last updated 11 days ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -478,4 +425,65 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Overview
+  * Example Post-Rotation Scripts
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=JoNKLrllkK3VE7Y3ogdb&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+
+# Custom Scripts
+
+Rotation of passwords for SaaS accounts or REST API endpoints using custom
+scripts
+
+[PreviousSaaS Rotation Plugins](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/saas-rotation-plugins)[NextOkta
+User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/saas-accounts/okta-user)
+
+Last updated 12 days ago
+
+Was this helpful?
+
+###
+
+Overview
+
+Keeper supports custom scripting for the purpose of rotation or other actions.
+To demonstrate this capability, a few examples have been published.
+
+The new method of custom rotations is using Keeper's new  capability.
+
+###
+
+Example Post-Rotation Scripts
+
+  *   *   *   *   * 
+
+[SaaS Rotation](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-rotation-plugins)
+
+[Okta User](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-accounts/okta-user)
+
+[Snowflake User](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-accounts/snowflake-user)
+
+[REST API](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
+use-cases/saas-accounts/rotate-credential-via-rest-api)
+
+[CIsco IOS XE](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-accounts/cisco-ios-xe)
+
+[Cisco Meraki](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/saas-accounts/cisco-meraki)
 

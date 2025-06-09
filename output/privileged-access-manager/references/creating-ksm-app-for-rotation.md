@@ -459,11 +459,13 @@ Overview
 Prior to working with Rotation, you need to create a KSM application. For more
 information on KSM, visit:
 
+[About KSM](/en/keeperpam/secrets-manager/about)
+
 ##
 
 Setup KSM
 
-  1. In the Keeper Web Vault or Desktop App user interface, create a shared folder. This shared folder will contain the PAM records you will create as you are working through the  guides.
+  1. In the Keeper Web Vault or Desktop App user interface, create a shared folder. This shared folder will contain the PAM records you will create as you are working through the [use-case](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases) guides.
 
   2. Navigate to the "Secret Managers" tab on the left and click on "Create Application" to create a KSM application
 
@@ -480,11 +482,6 @@ Setup KSM
 You can safely ignore the first One-Time Access Token generated for the newly
 created KSM application. When creating a Keeper Gateway device, a different
 One-Time Access Token will be created.
-
-[About KSM](/en/keeperpam/secrets-manager/about)
-
-[use-case](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
-use-cases)
 
 Create a KSM Application
 

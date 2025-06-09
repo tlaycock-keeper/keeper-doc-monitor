@@ -457,7 +457,7 @@ started/gateways/linux-installation)[NextAuto
 Updater](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/auto-updater)
 
-Last updated 2 days ago
+Last updated 3 days ago
 
 Was this helpful?
 
@@ -750,39 +750,6 @@ account-optional)
 [verbose logging](/en/keeperpam/privileged-access-manager/getting-
 started/gateways/windows-installation#verbose-logging)
 
-###
-
-Network Configuration
-
-The Keeper Gateway establishes outbound-only connections and does not require
-any inbound firewall rules. The following outbound connections must be
-allowed:
-
-Destination
-
-Port Needed
-
-More Info
-
-Keeper Cloud _(keepersecurity.[com|eu|com.au|jp|ca|us])_
-
-TLS Port 443
-
-Communicates with Keeper Cloud to access target infrastructure via native
-protocols (e.g., SSH, RDP)
-
-Keeper KRelay Server _(krelay.keepersecurity.[com|eu|com.au|jp|ca|us])_
-
-TCP and UDP opened on Port 3478 Outbound access to TCP and UDP ports 49152
-through 65535
-
-Facilitates secure and encrypted relay connections between end-user's vault
-and target systems via the Gateway
-
-The Gateway preserves zero knowledge by performing all encryption and
-decryption of data locally. Keeper Secrets Manager APIs are used to
-communicate with the Keeper cloud.
-
 Keeper Gateway for Windows
 
 Service Account Setup
@@ -815,6 +782,39 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FRPmmLYEln
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FNqfhdJpjRCJbgs6RfYjP%252Fimage.png%3Falt%3Dmedia%26token%3D88ee8691-e886-48b8-99ec-1e2ff1fe4f6c&width=768&dpr=4&quality=100&sign=aa608a9c&sv=2)
+
+###
+
+Network Configuration
+
+The Keeper Gateway establishes outbound-only connections and does not require
+any inbound firewall rules. The following outbound connections must be
+allowed:
+
+Destination
+
+Port Needed
+
+More Info
+
+Keeper Cloud _(keepersecurity.[com|eu|com.au|jp|ca|us])_
+
+TLS Port 443
+
+Communicates with Keeper Cloud to access target infrastructure via native
+protocols (e.g., SSH, RDP)
+
+Keeper KRelay Server _(krelay.keepersecurity.[com|eu|com.au|jp|ca|us])_
+
+TCP and UDP opened on Port 3478 Outbound access to TCP and UDP ports 49152
+through 65535
+
+Facilitates secure and encrypted relay connections between end-user's vault
+and target systems via the Gateway
+
+The Gateway preserves zero knowledge by performing all encryption and
+decryption of data locally. Keeper Secrets Manager APIs are used to
+communicate with the Keeper cloud.
 
 ###
 

@@ -415,7 +415,7 @@ by-step guidance
 manager/policies)[NextManaging Requests](/en/keeperpam/endpoint-privilege-
 manager/managing-requests)
 
-Last updated 15 days ago
+Last updated 16 days ago
 
 Was this helpful?
 

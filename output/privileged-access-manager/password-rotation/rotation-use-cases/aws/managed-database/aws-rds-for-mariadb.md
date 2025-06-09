@@ -456,7 +456,7 @@ postgresql)[NextAWS RDS for Oracle](/en/keeperpam/privileged-access-
 manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-
 oracle)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

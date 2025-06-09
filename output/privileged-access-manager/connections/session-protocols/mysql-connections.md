@@ -453,7 +453,7 @@ manager/connections/session-protocols/rdp-connections)[NextSQL Server
 Connections](/en/keeperpam/privileged-access-manager/connections/session-
 protocols/sql-server-connections)
 
-Last updated 19 days ago
+Last updated 20 days ago
 
 Was this helpful?
 
@@ -600,6 +600,17 @@ manager/connections/getting-started)
 [Example: MySQL Database](/en/keeperpam/privileged-access-manager/getting-
 started/pam-resources/pam-database/example-mysql-database)
 
+For this protocol, both graphical and the full, raw text text content of
+terminal sessions, including timing information, are recorded. For more
+information on recordings and how to access these recordings, visit this .
+
+  * Learn more about 
+
+[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
+
+[Session Recording and Playback](/en/keeperpam/privileged-access-
+manager/session-recording-and-playback)
+
 Field
 
 Definition
@@ -614,19 +625,8 @@ Administrative Credential Record
 This is the linked  that will be used to authenticate to the target and
 perform administrative operations on it.
 
-For this protocol, both graphical and the full, raw text text content of
-terminal sessions, including timing information, are recorded. For more
-information on recordings and how to access these recordings, visit this .
-
-  * Learn more about 
-
 [PAM User](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-user)
-
-[page](/en/keeperpam/privileged-access-manager/session-recording-and-playback)
-
-[Session Recording and Playback](/en/keeperpam/privileged-access-
-manager/session-recording-and-playback)
 
 MySQL Session Recordings
 

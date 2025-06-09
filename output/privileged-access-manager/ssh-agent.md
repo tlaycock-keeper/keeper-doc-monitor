@@ -816,6 +816,12 @@ setup)
 [Environment Setup](/en/keeperpam/privileged-access-manager/ssh-
 agent#environment-setup)
 
+[authentication with GitHub](/en/keeperpam/privileged-access-manager/ssh-
+agent/integration-with-git#github-authentication)
+
+[signing Git commits](/en/keeperpam/privileged-access-manager/ssh-
+agent/integration-with-git#signing-commits)
+
 Custom Field Example
 
 File Attachment Example
@@ -891,10 +897,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FzECb607mv
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252Fu9epGh8KgKlqb5rwXnnf%252F2025-04-21_15-33-14.PNG%3Falt%3Dmedia%26token%3Dc2436c49-850d-4279-b905-dbf73ce0010d&width=768&dpr=4&quality=100&sign=2cd1fac2&sv=2)
-
-[authentication with GitHub](/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git#github-authentication)
-
-[signing Git commits](/en/keeperpam/privileged-access-manager/ssh-
-agent/integration-with-git#signing-commits)
 

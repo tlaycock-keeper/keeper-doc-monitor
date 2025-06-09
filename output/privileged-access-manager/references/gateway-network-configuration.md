@@ -443,7 +443,7 @@ manager/references/setting-up-winrm)[NextSetting up SQL
 Server](/en/keeperpam/privileged-access-manager/references/setting-up-sql-
 server)
 
-Last updated 2 days ago
+Last updated 3 days ago
 
 Was this helpful?
 

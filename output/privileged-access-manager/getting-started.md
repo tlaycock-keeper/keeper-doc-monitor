@@ -396,33 +396,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * The Basics
-  * KeeperPAM Features
-  * Secrets Manager Features
-  * Commander CLI Features
-  * Enterprise Password Manager
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=luRB0oHezgUTaYPVYi3l&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-
-# Getting Started
-
-Getting Started with KeeperPAM fundamentals
-
-[PreviousQuick Start: Sandbox](/en/keeperpam/privileged-access-manager/quick-
-start-sandbox)[NextArchitecture](/en/keeperpam/privileged-access-
-manager/getting-started/architecture)
-
-Last updated 3 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -453,6 +426,17 @@ Was this helpful?
 
 © 2025 Keeper Security, Inc.
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=luRB0oHezgUTaYPVYi3l&only=yes&limit=100)
+
+Last updated 3 months ago
+
+Was this helpful?
+
 ##
 
 The Basics
@@ -482,6 +466,22 @@ Commander CLI Features
 Enterprise Password Manager
 
   * 
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+
+# Getting Started
+
+Getting Started with KeeperPAM fundamentals
+
+[PreviousQuick Start: Sandbox](/en/keeperpam/privileged-access-manager/quick-
+start-sandbox)[NextArchitecture](/en/keeperpam/privileged-access-
+manager/getting-started/architecture)
+
+  * The Basics
+  * KeeperPAM Features
+  * Secrets Manager Features
+  * Commander CLI Features
+  * Enterprise Password Manager
 
 [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
 

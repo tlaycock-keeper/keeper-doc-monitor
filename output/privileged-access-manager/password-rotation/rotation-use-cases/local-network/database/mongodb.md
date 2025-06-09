@@ -428,12 +428,34 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Overview
+  * Prerequisites
+  * 1\. Set up a PAM Database Record
+  * 2\. Set up a PAM Configuration
+  * 3\. Set up one or more PAM User records
+  * 4\. Configure Rotation on the PAM User records
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=aGE2v3WxmgFathB2xZ0R&only=yes&limit=100)
 
-Last updated 3 months ago
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
+  5. [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
+
+# Native MongoDB
+
+Rotating Local Network MongoDB database accounts with Keeper Rotation
+
+[PreviousNative PostgreSQL](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/database/postgresql)[NextNative MS
+SQL Server](/en/keeperpam/privileged-access-manager/password-
+rotation/rotation-use-cases/local-network/database/ms-sql-server)
+
+Last updated 4 months ago
 
 Was this helpful?
 
@@ -465,6 +487,39 @@ change the credentials of other accounts.
 The following table lists all the **required** fields that needs to be filled
 on the PAM Database Record with your information:
 
+Field
+
+Description
+
+**Title**
+
+Keeper record title Ex: `dbadmin`
+
+**Hostname or IP Address**
+
+Server address - _doesn't need to be publicly_ routable
+
+**Port**
+
+**Use SSL**
+
+Check to perform SSL verification before connecting, if your database has SSL
+configured
+
+**Administrative Credentials**
+
+Linked PAM User record that contains the username and password of the Admin
+account which will perform the rotation.
+
+**Connect Database**
+
+Optional database that will be used when connecting to the database server.
+For example, MongoDB requires a database and so this will default to `admin`.
+
+**Database Type**
+
+`mongodb `
+
 ##
 
 2\. Set up a PAM Configuration
@@ -477,6 +532,29 @@ and select "Secrets Manager", then select the "PAM Configurations" tab, and
 click on "New Configuration". The following table lists all the required****
 fields on the **PAM Configuration** Record:
 
+Field
+
+Description
+
+**Title**
+
+Configuration name, example: `MongoDB LAN Configuration`
+
+**Environment**
+
+Select: `Local Network`
+
+**Gateway**
+
+Select the Gateway that is configured on the Keeper Secrets Manager
+application and has network access to your MongoDB database
+
+**Application Folder**
+
+Select the Shared folder where the PAM Configuration will be stored. We
+recommend placing this in a shared folder with the PAM User records, not the
+database resources.
+
 ##
 
 3\. Set up one or more PAM User records
@@ -488,6 +566,31 @@ application created in the prerequisites.
 
 The following table lists all the required**** fields on the **PAM User**
 record:
+
+Field
+
+Description
+
+**Record Type**
+
+PAM User
+
+**Title**
+
+Keeper record title
+
+**Login**
+
+Case sensitive username of the db account being rotated. Example: `msmith`
+
+**Password**
+
+Account password is optional, rotation will set one if blank
+
+**Connect Database**
+
+Optional database that will be used when connecting to the database server.
+For example: MongoDB requires a database and so this will default to `admin`.
 
 ##
 
@@ -516,127 +619,26 @@ A Keeper Secrets Manager  has been created
 A Keeper Rotation  is already installed, running, and is able to communicate
 to your MongoDB Database
 
-Field
-
-Description
-
-Field
-
-Description
-
-Field
-
-Description
-
-**Title**
-
-Keeper record title Ex: `dbadmin`
-
-**Hostname or IP Address**
-
-Server address - _doesn't need to be publicly_ routable
-
-**Port**
-
-For default ports, see port mapping Ex: `mongodb=27017`
-
-**Use SSL**
-
-Check to perform SSL verification before connecting, if your database has SSL
-configured
-
-**Administrative Credentials**
-
-Linked PAM User record that contains the username and password of the Admin
-account which will perform the rotation.
-
-**Connect Database**
-
-Optional database that will be used when connecting to the database server.
-For example, MongoDB requires a database and so this will default to `admin`.
-
-**Database Type**
-
-`mongodb `
-
-**Title**
-
-Configuration name, example: `MongoDB LAN Configuration`
-
-**Environment**
-
-Select: `Local Network`
-
-**Gateway**
-
-Select the Gateway that is configured on the Keeper Secrets Manager
-application and has network access to your MongoDB database
-
-**Application Folder**
-
-Select the Shared folder where the PAM Configuration will be stored. We
-recommend placing this in a shared folder with the PAM User records, not the
-database resources.
-
-**Record Type**
-
-PAM User
-
-**Title**
-
-Keeper record title
-
-**Login**
-
-Case sensitive username of the db account being rotated. Example: `msmith`
-
-**Password**
-
-Account password is optional, rotation will set one if blank
-
-**Connect Database**
-
-Optional database that will be used when connecting to the database server.
-For example: MongoDB requires a database and so this will default to `admin`.
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [Local Network](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network)
-  5. [Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/local-network/database)
-
-# Native MongoDB
-
-Rotating Local Network MongoDB database accounts with Keeper Rotation
-
-[PreviousNative PostgreSQL](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/database/postgresql)[NextNative MS
-SQL Server](/en/keeperpam/privileged-access-manager/password-
-rotation/rotation-use-cases/local-network/database/ms-sql-server)
-
-  * Overview
-  * Prerequisites
-  * 1\. Set up a PAM Database Record
-  * 2\. Set up a PAM Configuration
-  * 3\. Set up one or more PAM User records
-  * 4\. Configure Rotation on the PAM User records
+For default ports, see  Ex: `mongodb=27017`
 
 [application](/en/keeperpam/privileged-access-manager/getting-
 started/applications)
 
 [gateway](/en/keeperpam/privileged-access-manager/getting-started/gateways)
 
+port mapping
+
 [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 overview#enabling-rotation-on-the-admin-console)
 
 [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 overview#enabling-rotation-on-the-admin-console)
+
+[page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/local-network#rotation-on-the-local-network)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F3NFn9IMoeiFD70nnTkLA%252FAzure%2520mongoDB%2520Database.jpg%3Falt%3Dmedia%26token%3Da91e14f5-10bc-4133-82fc-
 db8c47118e5b&width=768&dpr=4&quality=100&sign=cad863e6&sv=2)
-
-[page](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/local-network#rotation-on-the-local-network)
 

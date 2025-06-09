@@ -428,35 +428,12 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Prerequisites
-  * 1\. Set up a PAM Database Record
-  * 2\. Set up PAM Configuration
-  * 3\. Set up PAM User Records
-  * 4\. Configure Rotation on the PAM User records
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=W26cIjSQmhrrjlFL0YBQ&only=yes&limit=100)
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-  4. [AWS](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws)
-  5. [Managed Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database)
-
-# AWS RDS for PostgreSQL
-
-Rotating Admin/Regular AWS PostgreSQL Database Users with Keeper
-
-[PreviousAWS RDS for SQL Server](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-
-sql-server)[NextAWS RDS for MariaDB](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-
-mariadb)
-
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 
@@ -498,6 +475,80 @@ change the credentials of the database user accounts.
 The following table lists all the **required** fields on the **PAM Database**
 Record:
 
+Note: Adding Provider Region and Database ID will enable managing the PAM
+Database Record through the SDK.
+
+This PAM Database Record with the admin credential needs to be in a shared
+folder that is shared to the KSM application created in the pre-requisites.
+Only the KSM application needs access to this privileged account, it does not
+need to be shared with any users
+
+##
+
+2\. Set up PAM Configuration
+
+Note: You can skip this step if you already have a PAM Configuration set up
+for this environment.
+
+If you are creating a new **PAM Configuration** , login to the Keeper Vault
+and select "Secrets Manager", then select the "PAM Configurations" tab, and
+click on "New Configuration".
+
+The following table lists all the required**** fields on the **PAM
+Configuration** Record:
+
+##
+
+3\. Set up PAM User Records
+
+Keeper Rotation will use the credentials in the **PAM Database** record to
+rotate the **PAM User** records on your AWS environment. The **PAM User**
+credential needs to be in a shared folder that is shared to the KSM
+application created in the prerequisites.
+
+The following table lists all the required**** fields on the **PAM User**
+record:
+
+##
+
+4\. Configure Rotation on the PAM User records
+
+Select the**PAM User** record(s) from Step 3, edit the record and open the
+"Password Rotation Settings".
+
+  * Select the desired schedule and password complexity.
+
+  * The "Rotation Settings" should use the **PAM Configuration** setup previously. 
+
+  * The "Resource Credential" field should select the **PAM Database** credential setup from Step 1.
+
+  * Upon saving, the rotation button will be enabled and available to rotate on demand, or via the selected schedule.
+
+Any user with `edit` rights to a **PAM User** record has the ability to setup
+rotation for that record.
+
+Keeper Secrets Manager is enabled for your
+
+Keeper Rotation is enabled for your
+
+A Keeper Secrets Manager  has been created
+
+A Keeper Rotation  is already installed, running, and is able to communicate
+with your AWS PostgreSQL Database
+
+Your AWS environment is  per our documentation
+
+Field
+
+Description
+
+Field
+
+Description
+
+For more details on all the configurable fields in the PAM Configuration
+record, visit this .
+
 Field
 
 Description
@@ -511,6 +562,8 @@ Keeper record title Ex: `AWS PostgreSQL Admin`
 The RDS Endpoint i.e. `rdsdb.ckivswes.us-east-2.rds.amazonaws.com`
 
 **Port**
+
+The RDS Port, for default ports see port mapping i.e. `5432`
 
 **Use SSL**
 
@@ -542,32 +595,6 @@ The AWS DB instance ID
 **Provider Region**
 
 The region your Amazon RDS instance is using. i.e `us-east-2 `
-
-Note: Adding Provider Region and Database ID will enable managing the PAM
-Database Record through the SDK.
-
-This PAM Database Record with the admin credential needs to be in a shared
-folder that is shared to the KSM application created in the pre-requisites.
-Only the KSM application needs access to this privileged account, it does not
-need to be shared with any users
-
-##
-
-2\. Set up PAM Configuration
-
-Note: You can skip this step if you already have a PAM Configuration set up
-for this environment.
-
-If you are creating a new **PAM Configuration** , login to the Keeper Vault
-and select "Secrets Manager", then select the "PAM Configurations" tab, and
-click on "New Configuration".
-
-The following table lists all the required**** fields on the **PAM
-Configuration** Record:
-
-Field
-
-Description
 
 **Title**
 
@@ -603,22 +630,6 @@ Set this field to `USE_INSTANCE_ROLE` if you are using EC2 role policy
 Set this field to `USE_INSTANCE_ROLE` if you are using EC2 role policy
 (default). Otherwise use a specific Secret Access Key.
 
-##
-
-3\. Set up PAM User Records
-
-Keeper Rotation will use the credentials in the **PAM Database** record to
-rotate the **PAM User** records on your AWS environment. The **PAM User**
-credential needs to be in a shared folder that is shared to the KSM
-application created in the prerequisites.
-
-The following table lists all the required**** fields on the **PAM User**
-record:
-
-Field
-
-Description
-
 **Title**
 
 Keeper record title i.e. `AWS DB User 1`
@@ -639,39 +650,28 @@ Optional database that will be used when connecting to the database server.
 For example: PostgreSQL requires a database and so this will default to
 template1
 
-##
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+  4. [AWS](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws)
+  5. [Managed Database](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases/aws/managed-database)
 
-4\. Configure Rotation on the PAM User records
+# AWS RDS for PostgreSQL
 
-Select the**PAM User** record(s) from Step 3, edit the record and open the
-"Password Rotation Settings".
+Rotating Admin/Regular AWS PostgreSQL Database Users with Keeper
 
-  * Select the desired schedule and password complexity.
+[PreviousAWS RDS for SQL Server](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-
+sql-server)[NextAWS RDS for MariaDB](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/aws/managed-database/aws-rds-for-
+mariadb)
 
-  * The "Rotation Settings" should use the **PAM Configuration** setup previously. 
-
-  * The "Resource Credential" field should select the **PAM Database** credential setup from Step 1.
-
-  * Upon saving, the rotation button will be enabled and available to rotate on demand, or via the selected schedule.
-
-Any user with `edit` rights to a **PAM User** record has the ability to setup
-rotation for that record.
-
-Keeper Secrets Manager is enabled for your
-
-Keeper Rotation is enabled for your
-
-A Keeper Secrets Manager  has been created
-
-A Keeper Rotation  is already installed, running, and is able to communicate
-with your AWS PostgreSQL Database
-
-Your AWS environment is  per our documentation
-
-The RDS Port, for default ports see  i.e. `5432`
-
-For more details on all the configurable fields in the PAM Configuration
-record, visit this .
+  * Overview
+  * Prerequisites
+  * 1\. Set up a PAM Database Record
+  * 2\. Set up PAM Configuration
+  * 3\. Set up PAM User Records
+  * 4\. Configure Rotation on the PAM User records
 
 [application](/en/keeperpam/privileged-access-manager/getting-
 started/applications)
@@ -683,8 +683,6 @@ configuration/aws-environment-setup)
 
 [page](/en/keeperpam/privileged-access-manager/getting-started/pam-
 configuration)
-
-port mapping
 
 [role](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 overview#enabling-rotation-on-the-admin-console)

@@ -456,7 +456,7 @@ rotation/rotation-use-cases/local-network)[NextWindows
 User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
 cases/local-network/windows-user)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

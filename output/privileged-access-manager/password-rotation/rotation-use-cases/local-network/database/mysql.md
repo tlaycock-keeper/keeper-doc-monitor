@@ -455,7 +455,7 @@ rotation/rotation-use-cases/local-network/database)[NextNative
 MariaDB](/en/keeperpam/privileged-access-manager/password-rotation/rotation-
 use-cases/local-network/database/mariadb)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 
