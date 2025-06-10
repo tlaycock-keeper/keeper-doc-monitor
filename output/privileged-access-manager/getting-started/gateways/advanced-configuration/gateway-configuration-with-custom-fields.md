@@ -396,36 +396,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
 Was this helpful?
@@ -433,9 +403,14 @@ Was this helpful?
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=0WEWdEWqs0q7rDx9quQB&only=yes&limit=100)
 
-Last updated 5 months ago
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
+  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
+  4. [Advanced Configuration](/en/keeperpam/privileged-access-manager/getting-started/gateways/advanced-configuration)
 
-Was this helpful?
+# Gateway Configuration with Custom Fields
+
+Advanced configuration of the Keeper gateway with Keeper Vault custom fields
 
 These configuration capabilities are functional and currently in an
 experimental phase, and we invite users to actively explore and utilize them.
@@ -449,7 +424,8 @@ Advanced Gateway Configuration with Custom Fields
 
 When setting up Rotation in your Keeper Vault, you store the credentials of
 your assets involved in rotation on their corresponding PAM Record Types. On
-these record types, you are able to .
+these record types, you are able to [create custom
+fields](https://docs.keeper.io/enterprise-guide/record-types#custom-fields).
 
 The additional gateway configurations will be defined with these custom fields
 on the PAM Record Types. The Keeper Gateway will then adjust its behavior
@@ -464,24 +440,6 @@ Type
 Default Value
 
 Description
-
-**Note:**
-
-  * The custom fields values are not case-sensitive.
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Getting Started](/en/keeperpam/privileged-access-manager/getting-started)
-  3. [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-  4. [Advanced Configuration](/en/keeperpam/privileged-access-manager/getting-started/gateways/advanced-configuration)
-
-# Gateway Configuration with Custom Fields
-
-Advanced configuration of the Keeper gateway with Keeper Vault custom fields
-
-[PreviousGateway Configuration with AWS KMS](/en/keeperpam/privileged-access-
-manager/getting-started/gateways/advanced-configuration/gateway-configuration-
-with-aws-kms)[NextPAM Configuration](/en/keeperpam/privileged-access-
-manager/getting-started/pam-configuration)
 
 `Shell`
 
@@ -556,6 +514,46 @@ rotated if it exists.
 pick this if they wish to retain the private key in the record without any
 rotations.
 
-[create custom fields](https://docs.keeper.io/enterprise-guide/record-
-types#custom-fields)
+**Note:**
+
+  * The custom fields values are not case-sensitive.
+
+[PreviousGateway Configuration with AWS KMS](/en/keeperpam/privileged-access-
+manager/getting-started/gateways/advanced-configuration/gateway-configuration-
+with-aws-kms)[NextPAM Configuration](/en/keeperpam/privileged-access-
+manager/getting-started/pam-configuration)
+
+Last updated 5 months ago
+
+Was this helpful?
+
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
 

@@ -725,10 +725,6 @@ Cloud](https://docs.keeper.io/sso-connect-cloud/identity-provider-
 setup/g-suite-keeper/google-workspace-user-and-group-provisioning-with-cloud-
 function)
 
-![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F1748446847-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
-legacy-
-files%2Fo%2Fspaces%252F-MB_i6vKdtG6Z2n6zWgJ%252Favatar-1597678109631.png%3Fgeneration%3D1597678109861766%26alt%3Dmedia&width=20&dpr=4&quality=100&sign=4488b021&sv=2)
-
 Record in Keeper containing the Google Cloud service account information
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
@@ -737,4 +733,8 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F6DJsI6QFb
 
 [scim push](/en/keeperpam/commander-cli/command-reference/enterprise-
 management-commands#scim-command)
+
+![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F1748446847-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
+legacy-
+files%2Fo%2Fspaces%252F-MB_i6vKdtG6Z2n6zWgJ%252Favatar-1597678109631.png%3Fgeneration%3D1597678109861766%26alt%3Dmedia&width=20&dpr=4&quality=100&sign=4488b021&sv=2)
 

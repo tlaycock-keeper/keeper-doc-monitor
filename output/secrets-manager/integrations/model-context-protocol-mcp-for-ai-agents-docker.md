@@ -450,7 +450,7 @@ keyring)[NextModel Context Protocol (MCP) for AI Agents
 (Node)](/en/keeperpam/secrets-manager/integrations/model-context-protocol-mcp-
 for-ai-agents-node)
 
-Last updated 10 days ago
+Last updated 11 days ago
 
 Was this helpful?
 

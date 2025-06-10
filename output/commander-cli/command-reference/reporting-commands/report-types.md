@@ -428,31 +428,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * About
-  * Common Reports
-  * Saving Reports to a File
-  * Examples
-  * Report Types
-  * Common Reports in Detail
-  * Find Users that have not Logged in
-  * See the last time each user logged in
-  * Find users that have not created or updated any records
-  * See all records accessed by a user
-  * See What Shared Folders Teams Have Access To
-  * Determine which record passwords have NOT been changed
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=6y7PqTPzebHpNknpShRe&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Reporting Commands](/en/keeperpam/commander-cli/command-reference/reporting-commands)
-
-# Report Types
-
-Learn about reporting with Commander
 
 ##
 
@@ -499,19 +478,7 @@ Examples
 
 Save a report as a CSV for use with Microsoft Excel or Google Sheets.
 
-Copy
-
-    
-    
-    share-report --shared-folders --format csv --output "shared_folder_report_results.csv"
-
 Save a report as a json file for use with scripts
-
-Copy
-
-    
-    
-    user-report --format json --output "user_report.json"
 
 Where are files saved?
 
@@ -550,31 +517,6 @@ Report Types
 Learn more about the reports that Commander can run. Click an option from this
 list to see the command documentation.
 
-Command
-
-Explanation
-
-Show users that haven't performed a specific action in a given number of days
-
-Display a report of password changes and search for records that have NOT been
-changed
-
-Export the enterprise audit and event logs
-
-Show a customized report of audit events
-
-See information about records in vaults of users across the enterprise
-
-Display information on managed company plans and available licenses
-
-Show report of password security strength for each user in the enterprise
-
-Display information about shared records
-
-Show a report of shared records in the logged-in Keeper vault
-
-Show a report of user logins
-
 ##
 
 Common Reports in Detail
@@ -585,17 +527,86 @@ Find Users that have not Logged in
 
 Requires the ARAM add-on
 
-Copy
-
-    
-    
-    action-report --target no-logon
-
 By default this looks back 30 days (results are all users that have not logged
 in in 30 days). The number of days to look back for can be changed with the
 flag: `--days X` where "X" is the number of days to use.
 
 Example
+
+##
+
+See the last time each user logged in
+
+To include more details, such as the user's team(s) and Node run `user-report`
+without `--last-login`
+
+Example
+
+##
+
+Find users that have not created or updated any records
+
+Requires the ARAM add-on
+
+By default this looks back 30 days (results are all users that have not
+created or updated records in 30 days). The number of days to look back for
+can be changed with the flag: `--days X` where "X" is the number of days to
+use.
+
+Example
+
+##
+
+See all records accessed by a user
+
+Requires ARAM add-on and Compliance Reports add-on
+
+Replace <USERNAME> with the username or email address of the user to see
+access history of.
+
+Example
+
+##
+
+See What Shared Folders Teams Have Access To
+
+Requires Compliance Reports add-on
+
+Example
+
+##
+
+Determine which record passwords have NOT been changed
+
+Requires Compliance Reports add-on
+
+Example
+
+Last updated 11 months ago
+
+Was this helpful?
+
+Command
+
+Explanation
+
+Copy
+
+    
+    
+    share-report --shared-folders --format csv --output "shared_folder_report_results.csv"
+
+Copy
+
+    
+    
+    user-report --format json --output "user_report.json"
+
+Copy
+
+    
+    
+    action-report --target no-logon
 
 Copy
 
@@ -617,20 +628,11 @@ Copy
     jane.doe@examplecorp.com
     chris.apple@examplecorp.com
 
-##
-
-See the last time each user logged in
-
 Copy
 
     
     
     user-report --last-login
-
-To include more details, such as the user's team(s) and Node run `user-report`
-without `--last-login`
-
-Example
 
 Copy
 
@@ -646,24 +648,11 @@ Copy
     jane.doe@examplecorp.com                   Jane Doe                                   Active                       2022-10-10 09:07:34-05:00
     admin+comms@examplecorp.com                Communication Admin                        Active
 
-##
-
-Find users that have not created or updated any records
-
-Requires the ARAM add-on
-
 Copy
 
     
     
     action-report --target no-update
-
-By default this looks back 30 days (results are all users that have not
-created or updated records in 30 days). The number of days to look back for
-can be changed with the flag: `--days X` where "X" is the number of days to
-use.
-
-Example
 
 Copy
 
@@ -685,22 +674,11 @@ Copy
     jane.doe@examplecorp.com
     chris.apple@examplecorp.com
 
-##
-
-See all records accessed by a user
-
-Requires ARAM add-on and Compliance Reports add-on
-
 Copy
 
     
     
     compliance record-access-report <USERNAME>
-
-Replace <USERNAME> with the username or email address of the user to see
-access history of.
-
-Example
 
 Copy
 
@@ -718,19 +696,11 @@ Copy
     6wSYfG9UeHTzDDSIGeuiyg  Twitter                            https://www.twitter.com            john.smith@examplecorp.com  11.00.001.001    Commander 16.7.0   2022-10-05 15:09:25
     o6BJUKCGLa7mmMApzPjw4A  KCM Connect SSH                    127.0.0.1                          john.smith@examplecorp.com  11.00.001.001    Commander 16.7.0   2022-10-05 15:09:14
 
-##
-
-See What Shared Folders Teams Have Access To
-
-Requires Compliance Reports add-on
-
 Copy
 
     
     
     compliance team-report
-
-Example
 
 Copy
 
@@ -745,19 +715,11 @@ Copy
     Engineering  Deployment Credentials 3kf9kd4e5hWdN5q7Ed9fS0  can-edit
     Management   Finances Logins        dO9S0cMQ_kPYAsUYILVlSA  can-share
 
-##
-
-Determine which record passwords have NOT been changed
-
-Requires Compliance Reports add-on
-
 Copy
 
     
     
     aging-report
-
-Example
 
 Copy
 
@@ -774,14 +736,52 @@ Copy
     user2@company.com  Kayak       2021-05-25 09:13:56     False     https://...             
     user2@company.com  Amazon      ---                     False     https://...
 
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Reporting Commands](/en/keeperpam/commander-cli/command-reference/reporting-commands)
+
+# Report Types
+
+Learn about reporting with Commander
+
 [PreviousReporting Commands](/en/keeperpam/commander-cli/command-
 reference/reporting-commands)[NextEnterprise Management
 Commands](/en/keeperpam/commander-cli/command-reference/enterprise-management-
 commands)
 
-Last updated 11 months ago
+  * About
+  * Common Reports
+  * Saving Reports to a File
+  * Examples
+  * Report Types
+  * Common Reports in Detail
+  * Find Users that have not Logged in
+  * See the last time each user logged in
+  * Find users that have not created or updated any records
+  * See all records accessed by a user
+  * See What Shared Folders Teams Have Access To
+  * Determine which record passwords have NOT been changed
 
-Was this helpful?
+Show users that haven't performed a specific action in a given number of days
+
+Display a report of password changes and search for records that have NOT been
+changed
+
+Export the enterprise audit and event logs
+
+Show a customized report of audit events
+
+See information about records in vaults of users across the enterprise
+
+Display information on managed company plans and available licenses
+
+Show report of password security strength for each user in the enterprise
+
+Display information about shared records
+
+Show a report of shared records in the logged-in Keeper vault
+
+Show a report of user logins
 
 [`action-report`](/en/keeperpam/commander-cli/command-reference/reporting-
 commands#action-report-command)

@@ -396,6 +396,35 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+  * About
+  * Setup
+  * Configure Keeper Secrets Manager on Cortex XSOAR
+  * Available KSM Commands
+  * Using Commands in a Playbook
+  * Example: Get a Password From a Keeper Record
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=vvgGmhnSTRCYbMglgvhO&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# XSOAR
+
+Use Secrets Manager with automated workflows in Cortex XSOAR
+
+[PreviousWindows Credential Manager](/en/keeperpam/secrets-
+manager/integrations/windows-credential-
+manager)[NextTroubleshooting](/en/keeperpam/secrets-manager/troubleshooting)
+
+Last updated 5 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -425,35 +454,6 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-  * About
-  * Setup
-  * Configure Keeper Secrets Manager on Cortex XSOAR
-  * Available KSM Commands
-  * Using Commands in a Playbook
-  * Example: Get a Password From a Keeper Record
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=vvgGmhnSTRCYbMglgvhO&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
-
-# XSOAR
-
-Use Secrets Manager with automated workflows in Cortex XSOAR
-
-[PreviousWindows Credential Manager](/en/keeperpam/secrets-
-manager/integrations/windows-credential-
-manager)[NextTroubleshooting](/en/keeperpam/secrets-manager/troubleshooting)
-
-Last updated 5 months ago
-
-Was this helpful?
 
 ##
 

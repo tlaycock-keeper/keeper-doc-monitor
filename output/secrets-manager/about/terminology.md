@@ -396,34 +396,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * Secrets Manager Structure
-  * Secret
-  * Application
-  * Client Device
-  * Configuration
-
-Was this helpful?
-
-[Export as PDF](/en/keeperpam/~gitbook/pdf?page=-MhzDgoPWX-
-vA6xX6GjX&only=yes&limit=100)
-
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [About KSM](/en/keeperpam/secrets-manager/about)
-
-# Terminology
-
-Common terminology that will be referenced throughout this documentation
-
-[PreviousArchitecture](/en/keeperpam/secrets-
-manager/about/architecture)[NextSecurity & Encryption
-Model](/en/keeperpam/secrets-manager/about/security-encryption-model)
-
-Last updated 1 year ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -453,6 +425,34 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * Secrets Manager Structure
+  * Secret
+  * Application
+  * Client Device
+  * Configuration
+
+Was this helpful?
+
+[Export as PDF](/en/keeperpam/~gitbook/pdf?page=-MhzDgoPWX-
+vA6xX6GjX&only=yes&limit=100)
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [About KSM](/en/keeperpam/secrets-manager/about)
+
+# Terminology
+
+Common terminology that will be referenced throughout this documentation
+
+[PreviousArchitecture](/en/keeperpam/secrets-
+manager/about/architecture)[NextSecurity & Encryption
+Model](/en/keeperpam/secrets-manager/about/security-encryption-model)
+
+Last updated 1 year ago
+
+Was this helpful?
 
 ##
 
@@ -523,9 +523,10 @@ authenticate and decrypt data from the Keeper Secrets Manager APIs.
 A configuration can be stored as a text file with JSON, or it can be encoded
 into a single line string.
 
-Secrets Manager configurations are created from [One Time Access
-Tokens](/en/keeperpam/secrets-manager/about/one-time-token) and have a one to
-one relationship with .
+Secrets Manager configurations are created from  and have a one to one
+relationship with .
+
+[One Time Access Tokens](/en/keeperpam/secrets-manager/about/one-time-token)
 
 [client devices](/en/keeperpam/secrets-manager/about/terminology#client-
 device)

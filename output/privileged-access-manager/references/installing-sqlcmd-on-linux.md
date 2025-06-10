@@ -396,6 +396,62 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
+On this page
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=fJaW4f6xbTPfW73Nw4UE&only=yes&limit=100)
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
+
+# Installing sqlcmd on Linux
+
+Installing sqlcmd for accessing SQL Server from a Linux machine
+
+####
+
+Amazon Linux
+
+Import the Microsoft GPG keys
+
+Copy
+
+    
+    
+    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+
+Add the Microsoft SQL Server Tools repository
+
+Copy
+
+    
+    
+    sudo curl -o /etc/yum.repos.d/mssql-tools.repo https://packages.microsoft.com/config/rhel/7/prod.repo
+
+Install Command
+
+Copy
+
+    
+    
+    sudo yum update -y
+    
+    sudo ACCEPT_EULA=Y yum install -y mssql-tools unixODBC-devel
+    
+    echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile
+    source ~/.bash_profile
+
+[PreviousDatabase Import and Export](/en/keeperpam/privileged-access-
+manager/references/database-import-and-export)[NextInstalling Docker on
+Linux](/en/keeperpam/privileged-access-manager/references/installing-docker-
+on-linux)
+
+Last updated 4 months ago
+
+Was this helpful?
+
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -425,60 +481,4 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
-
-On this page
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=fJaW4f6xbTPfW73Nw4UE&only=yes&limit=100)
-
-Last updated 4 months ago
-
-Was this helpful?
-
-####
-
-Amazon Linux
-
-Import the Microsoft GPG keys
-
-Add the Microsoft SQL Server Tools repository
-
-Install Command
-
-Copy
-
-    
-    
-    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-
-Copy
-
-    
-    
-    sudo curl -o /etc/yum.repos.d/mssql-tools.repo https://packages.microsoft.com/config/rhel/7/prod.repo
-
-Copy
-
-    
-    
-    sudo yum update -y
-    
-    sudo ACCEPT_EULA=Y yum install -y mssql-tools unixODBC-devel
-    
-    echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile
-    source ~/.bash_profile
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
-
-# Installing sqlcmd on Linux
-
-Installing sqlcmd for accessing SQL Server from a Linux machine
-
-[PreviousDatabase Import and Export](/en/keeperpam/privileged-access-
-manager/references/database-import-and-export)[NextInstalling Docker on
-Linux](/en/keeperpam/privileged-access-manager/references/installing-docker-
-on-linux)
 

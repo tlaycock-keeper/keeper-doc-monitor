@@ -396,22 +396,46 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
+#### Company
 
-  * Overview
-  * Using Port Mappings
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
+On this page
 
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=Ax7er5mBNVgdfkFoyybz&only=yes&limit=100)
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [References](/en/keeperpam/privileged-access-manager/references)
+Last updated 6 months ago
 
-# Port Mapping
-
-Defining alternative ports in PAM Configurations
+Was this helpful?
 
 ##
 
@@ -434,6 +458,24 @@ Resource Type
 Connection Type
 
 Standard Port
+
+##
+
+Using Port Mappings
+
+To use a non-standard port, specify the alternative port in two places:
+
+  * In the PAM Configuration port mapping field, enter `{port}=`{`connection}`, for example,` 32636=ldaps.`
+
+  * For `{connection}`: refer to the labels under Standard Port in the standard ports table.
+
+  * In the PAM Machine/Directory/Database record, enter the chosen port in the port field
+
+For example, to connect to a MySQL database using port 3307, your PAM
+Configuration should have `3307=mysql` under port mapping, and your PAM
+Database record should reference port 3307.
+
+Multiple port mappings are newline-separated in the PAM Configuration.
 
 PAM Machine
 
@@ -495,59 +537,17 @@ MongoDB
 
 27017=mongodb
 
-##
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [References](/en/keeperpam/privileged-access-manager/references)
 
-Using Port Mappings
+# Port Mapping
 
-To use a non-standard port, specify the alternative port in two places:
-
-  * In the PAM Configuration port mapping field, enter `{port}=`{`connection}`, for example,` 32636=ldaps.`
-
-  * For `{connection}`: refer to the labels under Standard Port in the standard ports table.
-
-  * In the PAM Machine/Directory/Database record, enter the chosen port in the port field
-
-For example, to connect to a MySQL database using port 3307, your PAM
-Configuration should have `3307=mysql` under port mapping, and your PAM
-Database record should reference port 3307.
-
-Multiple port mappings are newline-separated in the PAM Configuration.
+Defining alternative ports in PAM Configurations
 
 [PreviousReferences](/en/keeperpam/privileged-access-
 manager/references)[NextSetting up SSH](/en/keeperpam/privileged-access-
 manager/references/setting-up-ssh)
 
-Last updated 6 months ago
-
-Was this helpful?
-
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
+  * Overview
+  * Using Port Mappings
 

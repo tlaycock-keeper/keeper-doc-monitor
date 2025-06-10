@@ -565,18 +565,10 @@ Session Recording
 
 Options for recording sessions and typescripts
 
-See [session recording](/en/keeperpam/privileged-access-manager/session-
-recording-and-playback)
-
 Connection Parameters
 
 Connection-specific protocol settings which can vary based on the protocol
 type.
-
-See this [section](/en/keeperpam/privileged-access-
-manager/connections/session-protocols/ssh-connections) for SSH protocol
-settings. We recommend specifying the **Connection Port** at a minimum. E.g.
-"22" for SSH.
 
 ###
 
@@ -620,7 +612,7 @@ started/pam-resources/pam-machine)[NextExample: Azure Windows
 VM](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-
 machine/example-azure-windows-vm)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 
@@ -655,6 +647,17 @@ Was this helpful?
 © 2025 Keeper Security, Inc.
 
 **Required** Visit this  for more details
+
+See
+
+See this  for SSH protocol settings. We recommend specifying the **Connection
+Port** at a minimum. E.g. "22" for SSH.
+
+[session recording](/en/keeperpam/privileged-access-manager/session-recording-
+and-playback)
+
+[section](/en/keeperpam/privileged-access-manager/connections/session-
+protocols/ssh-connections)
 
 [section](/en/keeperpam/privileged-access-manager/getting-started/pam-
 resources/pam-machine/example-linux-machine#administrative-credential-record)

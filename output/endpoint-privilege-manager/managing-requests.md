@@ -420,7 +420,7 @@ Day to day management of Keeper Privilege Manager elevation requests
 manager/policies/example-policies)[NextBest Practices](/en/keeperpam/best-
 practices)
 
-Last updated 1 month ago
+Last updated 2 months ago
 
 Was this helpful?
 

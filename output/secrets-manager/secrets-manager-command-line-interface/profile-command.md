@@ -428,27 +428,14 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * profile command
-  * init
-  * setup
-  * list
-  * export
-  * import
-  * active
-  * Profiles within Containers
-  * Default INI Filename
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-Mf8esoMrZYw5yEb1Mkb&only=yes&limit=100)
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
+Last updated 7 months ago
 
-# Profile Command
-
-Setup and initialization of the Keeper Secrets Manager device profile
+Was this helpful?
 
 ##
 
@@ -466,45 +453,11 @@ format: `**ksm profile <sub-command>**`
 
 **Sub-Commands:**
 
-Sub-Command
-
-Description
-
-`init`
-
-Initialize a new client device profile
-
-`setup`
-
-Setup a new profile from 3rd party external secrets manager like AWS.
-
-`list`
-
-List profiles that have been created, and note active profile
-
-`export`
-
-Export a configuration profile
-
-`import`
-
-Create a new configuration from an exported encrypted profile
-
-`active`
-
-Sets the active configuration profile
-
 ###
 
 **init**
 
 Initialize a client device profile.
-
-Copy
-
-    
-    
-    ksm profile init
 
 The file `keeper.ini` file will be created in your current working directory.
 For the Windows or macOS binary applications, the `keeper.ini` will be created
@@ -564,30 +517,12 @@ Defaults to US region. Customers hosted in other regions must set this value:
 Typically, you will be initializing the KSM CLI with a token created in the
 vault or in Keeper Commander. For example:
 
-Copy
-
-    
-    
-    ksm profile init --token XX:XXXXXXXX
-
 To avoid exposing the token on the command line use `KSM_CLI_TOKEN`
 environment variable. For example:
-
-Copy
-
-    
-    
-    ksm profile init --ini-file=/tmp/custom.ini --profile=non_default
 
 Usage of `KSM_CLI_TOKEN` environment variable to provide one-time token allows
 for selecting a custom INI file and custom profile _(to create/overwrite)_ and
 can be overridden by `--token` option from command line.
-
-Copy
-
-    
-    
-    My Vault> secrets-manager client add --app MyApplicationName
 
 ###
 
@@ -613,47 +548,18 @@ Method 1: EC2 instance role
 To initialize the KSM CLI profile on an EC2 instance using the AWS EC2
 instance role:
 
-Copy
-
-    
-    
-    ksm profile setup --type=aws
-
 This creates a keeper.ini file which defines the secret key in AWS. For
 example:
-
-Copy
-
-    
-    
-    ....
-    
-    [_default]
-    storage = aws
-    provider = ec2instance
-    secret = ksm-config
 
 By default, the secret key is assumed to be called `ksm-config`. You can
 specify a different key value by editing the keeper.ini file or using the
 `--secret` option. Example:
-
-Copy
-
-    
-    
-    ksm profile setup --type=aws --secret my-ksm-config
 
 ####
 
 Method 2: AWS profile credentials
 
 For example:
-
-Copy
-
-    
-    
-    ksm profile setup --type=aws --secret=ksm-config --credentials=profile --credentials-profile=default
 
 ####
 
@@ -665,12 +571,6 @@ in the `keeper.ini` file.
 
 For example:
 
-Copy
-
-    
-    
-    ksm profile setup --type=aws --secret=ksm-config --credentials=keys --aws-access-key-id XXX --aws-secret-access-key XXX --region XXX
-
 An additional flag `--fallback` allows you to specify falling back to the
 default profile (from the AWS local configuration) if the initial credentials
 fail.
@@ -679,43 +579,14 @@ fail.
 
 Finishing the KSM CLI setup
 
-Copy
-
-    
-    
-    My Vault> secrets-manager client add --app "My KSM App" --config-init b64
-    
-    Successfully generated Client Device
-    ====================================
-    
-    Initialized Config: [Base64 Config....]
-
 Copy the provided configuration for use in the next step.
 
 In order for this KSM device to authenticate against Keeper Secrets Manager,
 the KSM configuration value in base64 format must be populated into the AWS
 Secrets Manager. For example, using the AWS CLI:
 
-Copy
-
-    
-    
-    aws secretsmanager create-secret --name ksm-config --secret-string '[Base64 Config]'
-
 Now, you can verify that KSM CLI works and can access secrets from your vault
 using:
-
-Copy
-
-    
-    
-    ksm secret list
-    
-     UID                     Record Type          Title
-     ----------------------- -------------------- --------------------------
-     n9SdOX1cEyMj9Ttj3lsjYQ  pamUser              IAM Account: demouser
-     WfxgS6E_bY_tzdIChYIsAA  login                Amazon AWS - john
-     toAfybW5SsbhRT9LtZ7oyg  serverCredentials    QA Server
 
 ####
 
@@ -734,19 +605,6 @@ List all available profiles for the current Client Device.
 `ksm profile list`
 
 Example:
-
-Copy
-
-    
-    
-    $ ksm profile list
-    
-      Active   Profile
-     ======== ===============
-               Production
-      *        Test Server 1
-               Test Server 2
-               Local Dev
 
 ###
 
@@ -768,12 +626,6 @@ optional parameters:
 
 Example
 
-Copy
-
-    
-    
-    $ ksm profile export my_profile
-
 Note: When using an external storage provider for KSM configuration, the
 profile will not be exportable.
 
@@ -789,12 +641,6 @@ optional parameters:
 
   * `--output-file <INI filename>` Where to create the INI configuration file. If not set, will be create in current directory.
 
-Copy
-
-    
-    
-    $ ksm profile import --output-file=my_profile BASE64_ENC_CONFIG
-
 ###
 
 **active**
@@ -804,14 +650,6 @@ Set the currently active profile for this client device.
 `ksm profile active <PROFILE NAME>`
 
 Example:
-
-Copy
-
-    
-    
-    $ ksm profile active production
-    
-    production is now the active profile.
 
 ###
 
@@ -832,14 +670,6 @@ The default name of the ini file is `keeper.ini` _,_ however this can
 overridden by using the `**KSM_INI_FILE**` environment variable. By using
 `**KSM_INI_DIR**` __ and __`**KSM_INI_FILE**` __ environment variables you can
 completely change the location and name of the INI configuration file.
-
-[PreviousSecrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-
-command-line-interface)[NextInit Command](/en/keeperpam/secrets-
-manager/secrets-manager-command-line-interface/init-command)
-
-Last updated 7 months ago
-
-Was this helpful?
 
 As described in the , you can create a token from the Commander CLI or from
 the Keeper Vault interface. For example:
@@ -863,6 +693,176 @@ the .
 
 For example, using the , this can be generated using a command such as the one
 below:
+
+Sub-Command
+
+Description
+
+`init`
+
+Initialize a new client device profile
+
+`setup`
+
+Setup a new profile from 3rd party external secrets manager like AWS.
+
+`list`
+
+List profiles that have been created, and note active profile
+
+`export`
+
+Export a configuration profile
+
+`import`
+
+Create a new configuration from an exported encrypted profile
+
+`active`
+
+Sets the active configuration profile
+
+Copy
+
+    
+    
+    ksm profile init
+
+Copy
+
+    
+    
+    ksm profile init --token XX:XXXXXXXX
+
+Copy
+
+    
+    
+    ksm profile init --ini-file=/tmp/custom.ini --profile=non_default
+
+Copy
+
+    
+    
+    My Vault> secrets-manager client add --app MyApplicationName
+
+Copy
+
+    
+    
+    ksm profile setup --type=aws
+
+Copy
+
+    
+    
+    ....
+    
+    [_default]
+    storage = aws
+    provider = ec2instance
+    secret = ksm-config
+
+Copy
+
+    
+    
+    ksm profile setup --type=aws --secret my-ksm-config
+
+Copy
+
+    
+    
+    ksm profile setup --type=aws --secret=ksm-config --credentials=profile --credentials-profile=default
+
+Copy
+
+    
+    
+    ksm profile setup --type=aws --secret=ksm-config --credentials=keys --aws-access-key-id XXX --aws-secret-access-key XXX --region XXX
+
+Copy
+
+    
+    
+    My Vault> secrets-manager client add --app "My KSM App" --config-init b64
+    
+    Successfully generated Client Device
+    ====================================
+    
+    Initialized Config: [Base64 Config....]
+
+Copy
+
+    
+    
+    aws secretsmanager create-secret --name ksm-config --secret-string '[Base64 Config]'
+
+Copy
+
+    
+    
+    ksm secret list
+    
+     UID                     Record Type          Title
+     ----------------------- -------------------- --------------------------
+     n9SdOX1cEyMj9Ttj3lsjYQ  pamUser              IAM Account: demouser
+     WfxgS6E_bY_tzdIChYIsAA  login                Amazon AWS - john
+     toAfybW5SsbhRT9LtZ7oyg  serverCredentials    QA Server
+
+Copy
+
+    
+    
+    $ ksm profile list
+    
+      Active   Profile
+     ======== ===============
+               Production
+      *        Test Server 1
+               Test Server 2
+               Local Dev
+
+Copy
+
+    
+    
+    $ ksm profile export my_profile
+
+Copy
+
+    
+    
+    $ ksm profile import --output-file=my_profile BASE64_ENC_CONFIG
+
+Copy
+
+    
+    
+    $ ksm profile active production
+    
+    production is now the active profile.
+
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Secrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-command-line-interface)
+
+# Profile Command
+
+Setup and initialization of the Keeper Secrets Manager device profile
+
+[PreviousSecrets Manager CLI](/en/keeperpam/secrets-manager/secrets-manager-
+command-line-interface)[NextInit Command](/en/keeperpam/secrets-
+manager/secrets-manager-command-line-interface/init-command)
+
+  * profile command
+  * init
+  * setup
+  * list
+  * export
+  * import
+  * active
+  * Profiles within Containers
+  * Default INI Filename
 
 [Quick Start Guide](/en/keeperpam/secrets-manager/quick-start-guide)
 

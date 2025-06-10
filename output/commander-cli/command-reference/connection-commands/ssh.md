@@ -396,33 +396,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-On this page
-
-  * SSH
-  * ssh command
-  * Examples
-
-Was this helpful?
-
-[Export as
-PDF](/en/keeperpam/~gitbook/pdf?page=1j9mMqOpebiFGSrXCi6v&only=yes&limit=100)
-
-  1. [Commander CLI](/en/keeperpam/commander-cli)
-  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
-  3. [Connection Commands](/en/keeperpam/commander-cli/command-reference/connection-commands)
-
-# SSH
-
-Using Keeper Commander with SSH connections
-
-[PreviousConnection Commands](/en/keeperpam/commander-cli/command-
-reference/connection-commands)[NextSSH Agent](/en/keeperpam/commander-
-cli/command-reference/connection-commands/ssh-agent)
-
-Last updated 4 months ago
-
-Was this helpful?
-
 #### Company
 
   * [Keeper Home](https://www.keepersecurity.com/)
@@ -452,6 +425,33 @@ Was this helpful?
   * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
 
 © 2025 Keeper Security, Inc.
+
+On this page
+
+  * SSH
+  * ssh command
+  * Examples
+
+Was this helpful?
+
+[Export as
+PDF](/en/keeperpam/~gitbook/pdf?page=1j9mMqOpebiFGSrXCi6v&only=yes&limit=100)
+
+  1. [Commander CLI](/en/keeperpam/commander-cli)
+  2. [Command Reference](/en/keeperpam/commander-cli/command-reference)
+  3. [Connection Commands](/en/keeperpam/commander-cli/command-reference/connection-commands)
+
+# SSH
+
+Using Keeper Commander with SSH connections
+
+[PreviousConnection Commands](/en/keeperpam/commander-cli/command-
+reference/connection-commands)[NextSSH Agent](/en/keeperpam/commander-
+cli/command-reference/connection-commands/ssh-agent)
+
+Last updated 4 months ago
+
+Was this helpful?
 
 For a full remote connection management tool that supports privileged
 sessions, session recording and other advanced capabilities over zero-trust

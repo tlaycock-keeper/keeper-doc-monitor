@@ -428,31 +428,10 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Prerequisites 
-  * Starting Commander
-  * List the Gateways
-  * Start Discovery Job
-  * View Status of Discovery Job
-  * Process the Discovery Results
-  * Exploring Commander Capabilities
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=Wv8oy2UD83gUCG3GgKV9&only=yes&limit=100)
-
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Discovery](/en/keeperpam/privileged-access-manager/discovery)
-
-# Discovery using Commander
-
-Performing resource discovery through Keeper Commander CLI
-
-[PreviousDiscovery Basics](/en/keeperpam/privileged-access-
-manager/discovery/discovery-basics)[NextDiscovery using the
-Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-
-vault)
 
 Last updated 2 months ago
 
@@ -477,31 +456,11 @@ Starting Commander
 
 Login to Keeper Commander CLI using the `keeper shell` command.
 
-Copy
-
-    
-    
-    $ keeper shell
-
 ###
 
 **List the Gateways**
 
 Run the command `pam gateway list` or `pam g l` command to list all gateways
-
-Copy
-
-    
-    
-    My Vault> pam gateway list
-    KSM Application Name (UID) Gateway Name    Gateway UID             Status
-    -------------------------------------------------------------------------
-    AWS Rotation               Canada AWS      ce_Gg4jGS2a1ywiMo61Sow  ONLINE
-    Azure AD                   Azure useast1   j-xC9HwOQEKCfVsdyfdeLg  ONLINE
-    KeeperPAM US-WEST-1        US-WEST-1       QPkRsR8KQmf_4vnHTcofZA  ONLINE
-    Windows Domain             lureydemo.local rB8bR3drQrqPErKDzbKl9g  ONLINE
-    
-    My Vault>
 
 The Gateway UID is required to start the discovery process.
 
@@ -512,18 +471,52 @@ Start Discovery Job
 Run the `pam action discover start` command to start a discovery job. The
 Gateway UID must be provided with the `-g` option.
 
-Copy
-
-    
-    
-    pam action discover start -g QPkRsR8KQmf_4vnHTcofZA
-
 ###
 
 View Status of Discovery Job
 
 View the status of the active discovery job by with `pam action discover
 status`
+
+After a discovery job is complete, the detailes status information can be
+viewed by running:
+
+Proceed to the next step once the Discovery job's status is COMPLETE.
+Depending on how big your environment is, this may take a few minutes.
+
+###
+
+Process the Discovery Results
+
+Once the discovery job is completed, you can process the findings with the
+provided Job ID.
+
+An interactive CLI session will start where you will be shown information on
+discovered assets and will be able to provision them as PAM Record types in
+your vault.
+
+During the Discovery process, you may be prompted to provide a PAM User record
+or create one on the fly to associate administrative credentials with the
+target resource.
+
+Once the initial process is complete and administrative credentials have been
+supplied, you can run another Discovery job. This subsequent job leverages the
+provided credentials to delve deeper into the target resources, identifying
+local user accounts, services, and scheduled tasks.
+
+###
+
+Exploring Commander Capabilities
+
+Keeper Commander provides many advanced capabilities for managing gateways,
+configurations, rotations and discovery. See the  for a list of all available
+options.
+
+Copy
+
+    
+    
+    pam action discover start -g QPkRsR8KQmf_4vnHTcofZA
 
 Copy
 
@@ -538,34 +531,17 @@ Copy
     There is one COMPLETED job. To process, use the following command.
       pam action discover process -j JOBsR5G0VQBVV0
 
-After a discovery job is complete, the detailes status information can be
-viewed by running:
-
 Copy
 
     
     
     pam action discover status -j JOBsR5G0VQBVV0
 
-Proceed to the next step once the Discovery job's status is COMPLETE.
-Depending on how big your environment is, this may take a few minutes.
-
-###
-
-Process the Discovery Results
-
-Once the discovery job is completed, you can process the findings with the
-provided Job ID.
-
 Copy
 
     
     
     pam action discover process -j JOBsR5G0VQBVV0
-
-An interactive CLI session will start where you will be shown information on
-discovered assets and will be able to provision them as PAM Record types in
-your vault.
 
 Copy
 
@@ -585,22 +561,46 @@ Copy
     [2/2] (E)dit, (A)dd to Resources, Add to (F)older, (S)kip, (I)gnore, (Q)uit> A
     Adding record to save queue.
 
-During the Discovery process, you may be prompted to provide a PAM User record
-or create one on the fly to associate administrative credentials with the
-target resource.
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Discovery](/en/keeperpam/privileged-access-manager/discovery)
 
-Once the initial process is complete and administrative credentials have been
-supplied, you can run another Discovery job. This subsequent job leverages the
-provided credentials to delve deeper into the target resources, identifying
-local user accounts, services, and scheduled tasks.
+# Discovery using Commander
 
-###
+Performing resource discovery through Keeper Commander CLI
 
-Exploring Commander Capabilities
+[PreviousDiscovery Basics](/en/keeperpam/privileged-access-
+manager/discovery/discovery-basics)[NextDiscovery using the
+Vault](/en/keeperpam/privileged-access-manager/discovery/discovery-using-the-
+vault)
 
-Keeper Commander provides many advanced capabilities for managing gateways,
-configurations, rotations and discovery. See the  for a list of all available
-options.
+  * Overview
+  * Prerequisites 
+  * Starting Commander
+  * List the Gateways
+  * Start Discovery Job
+  * View Status of Discovery Job
+  * Process the Discovery Results
+  * Exploring Commander Capabilities
+
+Copy
+
+    
+    
+    $ keeper shell
+
+Copy
+
+    
+    
+    My Vault> pam gateway list
+    KSM Application Name (UID) Gateway Name    Gateway UID             Status
+    -------------------------------------------------------------------------
+    AWS Rotation               Canada AWS      ce_Gg4jGS2a1ywiMo61Sow  ONLINE
+    Azure AD                   Azure useast1   j-xC9HwOQEKCfVsdyfdeLg  ONLINE
+    KeeperPAM US-WEST-1        US-WEST-1       QPkRsR8KQmf_4vnHTcofZA  ONLINE
+    Windows Domain             lureydemo.local rB8bR3drQrqPErKDzbKl9g  ONLINE
+    
+    My Vault>
 
 [Discovery Basics](/en/keeperpam/privileged-access-
 manager/discovery/discovery-basics)

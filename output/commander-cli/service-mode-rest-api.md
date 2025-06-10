@@ -1086,6 +1086,9 @@ Email:
 
 [Command List](/en/keeperpam/commander-cli/service-mode-rest-api#command-list)
 
+[persistent login sessions](/en/keeperpam/commander-cli/commander-
+installation-setup/logging-in#persistent-login-sessions-stay-logged-in)
+
 Commander Service Mode record
 
 HTTP Body Configuration in Postman
@@ -1107,7 +1110,4 @@ prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252FqFYoWXHv5
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-
 prod.appspot.com%2Fo%2Fspaces%252F-MJXOXEifAmpyvNVL1to%252Fuploads%252F5kke9cceH6JAWq389XaO%252FScreenshot%25202025-03-23%2520at%25205.10.39%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3Ddd5bd3e4-fc62-4579-b548-7c1f832a4c73&width=768&dpr=4&quality=100&sign=a07eb9a2&sv=2)
-
-[persistent login sessions](/en/keeperpam/commander-cli/commander-
-installation-setup/logging-in#persistent-login-sessions-stay-logged-in)
 

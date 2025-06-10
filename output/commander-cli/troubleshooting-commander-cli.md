@@ -846,13 +846,13 @@ guide/roles/enforcement-policies)
 [Delegated AdministrationEnterprise Guide](https://docs.keeper.io/enterprise-
 guide/delegated-administration#delegated-admin-via-administrative-permissions)
 
-[Keeper Admin Console OverviewEnterprise
-Guide](https://docs.keeper.io/enterprise-guide/getting-started-with-keeper-
-admin-console#additional-secure-add-ons)
-
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F1748446847-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-
 files%2Fo%2Fspaces%252F-LO5CAzpxoaEquZJBpYz%252Favatar.png%3Fgeneration%3D1562027743273411%26alt%3Dmedia&width=20&dpr=4&quality=100&sign=25d608c4&sv=2)
+
+[Keeper Admin Console OverviewEnterprise
+Guide](https://docs.keeper.io/enterprise-guide/getting-started-with-keeper-
+admin-console#additional-secure-add-ons)
 
 ![Logo](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F1748446847-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 legacy-

@@ -428,12 +428,34 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
+  * Features
+  * Prerequisites
+  * Setup
+  * 1\. Install Module
+  * 2\. Configure Oracle KV Connection
+  * 3\. Add Oracle Key Vault Storage to Your Code
+  * Using Oracle Key Vault Integration
+  * Additional Options
+  * Change Key
+  * Decrypt Config
+
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=5cG5iwNkVeQ0xhQzvy9l&only=yes&limit=100)
 
-Last updated 4 days ago
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+
+# Oracle Key Vault Encryption
+
+Protect Secrets Manager connection details with Oracle Key Vault
+
+[PreviousOctopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-
+deploy)[NextPowerShell Plugin](/en/keeperpam/secrets-
+manager/integrations/powershell-plugin)
+
+Last updated 5 days ago
 
 Was this helpful?
 
@@ -499,188 +521,6 @@ Setting up project using Gradle or Maven
 
 **Gradle**
 
-**Maven**
-
-The Secrets Manager Oracle Key Vault module can be installed using npm
-
-The Secrets Manager OCI KSM module can be installed using pip
-
-oci is a prerequisite for the Oracle Key Vault integration. Install it to your
-machine using pip.
-
-The Secrets Manager oracle KSM module can be installed using dotnet nuget
-package manager.
-
-The Secrets Manager oracle KSM module Integration can be installed using
-
-###
-
-2\. Configure **Oracle KV** Connection
-
-Ensure that you have an Oracle Key Vault instance available, and you know its
-OCID (Oracle Cloud Identifier). By default, the `oci key management` library
-will use the default OCI configuration file (`~/.oci/config`)
-
-See the Oracle documentation for more information on setting up an Oracle
-Keys:
-
-Alternatively, You will need to add the correct configuration for your OCI
-environment, including the details for accessing Oracle Key Vault.
-
-The configuration file should look like this (replace with your actual
-details):
-
-[DEFAULT] user=ocid1.user.oc1..example_unique_id
-fingerprint=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx
-key_file=/path/to/your/private/api/key.pem
-tenancy=ocid1.tenancy.oc1..example_unique_id region=us-phoenix-1
-
-###
-
-3\. Add Oracle Key Vault Storage to Your Code
-
-Once Oracle connection has been configured, You can fetch the Key to encrypt /
-decrypt KSM configuration using integration and you need to tell the Secrets
-Manager SDK to utilize the KMS as storage.
-
-###
-
-Using **Oracle Key Vault Integration**
-
-Once setup, the Secrets Manager Oracle Key Vault integration supports all
-Secrets Manager SDK functionality. Your code will need to be able to access
-the OCI Keys in order to manage the encryption and decryption of the KSM
-configuration file. **Using Specified Connection credentials**
-
-Java
-
-JavaScript
-
-Python
-
-.Net
-
-Go
-
-To do this, create `OracleKeyValueStorage` instance and use this in
-`SecretManagerOptions` constructor.
-
-The `OracleKeyValueStorage` will require the name of the Secrets Manager
-configuration file with profile and configuration.
-
-To do this, use `OracleKeyValueStorage` as your Secrets Manager storage in the
-`SecretsManager` constructor.
-
-The storage will require an `Oracle config file location`, `Oracle
-configuration profile`(if there are multiple profile configurations) and the
-`Oracle KMS Crypto endpoint` , `Oracle KMS Management endpoint` as well as the
-name of the `Secrets Manager configuration file` which will be encrypted by
-Oracle KMS.
-
-To do this, use `OracleKeyValueStorage` as your Secrets Manager storage in the
-`SecretsManager` constructor.
-
-The storage will require a OCI Key ID, key version Id, KMS Crypto endpoint,
-KMS management endpoint, oracle config file location, configuration profile as
-well as the name of the Secrets Manager configuration file which will be
-encrypted by Oracle KMS and OCI session configuration shown below.
-
-To do this, use `OracleKeyValueStorage` as your Secrets Manager storage in the
-`SecretsManager` constructor.
-
-The storage will require a OCI Key ID, key version Id, KMS Crypto endpoint,
-KMS management endpoint, oracle config file location, configuration profile as
-well as the name of the Secrets Manager configuration file which will be
-encrypted by Oracle KMS and OCI session configuration shown below.
-
-To do this, use `NewOracleKeyValueStorage` as your Secrets Manager storage in
-the `SecretsManager` constructor.
-
-The NewOracleKeyVaultStorage requires the following parameters to encrypt the
-KSM configuration using Oracle Vault:
-
-`ksmConfigFileName` : The file name of KSM configuration.
-
-`keyConfig` : Provide oracle key credentials `KeyID` and `KeyVersionID`.
-
-`oracleConfig` : Provide oracle credentials `VaultManagementEndpoint`,
-`VaultCryptoEndpoint`.
-
-By default, the oci-keymanagement library will use the **default OCI
-configuration file** (`~/.oci/config`).
-
-##
-
-Additional Options
-
-###
-
-Change Key
-
-We can change key that is used for encrypting the KSM configuration, examples
-below show the code needed to use it
-
-Java
-
-JavaScript
-
-Python
-
-.Net
-
-GoLang
-
-###
-
-Decrypt Config
-
-We can decrypt the config if current implementation is to be migrated onto a
-different cloud or if you want your raw credentials back. The function accepts
-a boolean which when set to true will save the decrypted configuration to file
-and if it is false, will just return decrypted configuration.
-
-Java
-
-JavaScript
-
-Python
-
-.Net
-
-GoLang
-
-Support the
-
-Required Oracle packages: ,  and .
-
-OCI Key needs `ENCRYPT` and `DECRYPT` .
-
-Supports the
-
-Requires the  package from OCI SDK.
-
-OCI KMS Key needs `ENCRYPT` and `DECRYPT` .
-
-Supports the
-
-Requires `oci`
-
-User credentials to be used will need to have key vault
-
-Supports the .
-
-Requires .
-
-Requires `Encrypt` and `Decrypt` .
-
-Supports the
-
-Requires the package from OCI SDK.
-
-You're ready to use the KSM integration
-
-Check out the  for more examples and functionality
-
 Copy
 
     
@@ -701,6 +541,8 @@ Copy
       implementation("org.slf4j:slf4j-simple:2.0.16")
       implementation("org.bouncycastle:bc-fips:1.0.2.4")
     }
+
+**Maven**
 
 Copy
 
@@ -777,11 +619,15 @@ Copy
        </dependency>
        	
 
+The Secrets Manager Oracle Key Vault module can be installed using npm
+
 Copy
 
     
     
     npm install @keeper-security/secrets-manager-oracle-kv
+
+The Secrets Manager OCI KSM module can be installed using pip
 
 Copy
 
@@ -789,11 +635,17 @@ Copy
     
     pip3 install keeper-secrets-manager-storage-oracle-kms
 
+oci is a prerequisite for the Oracle Key Vault integration. Install it to your
+machine using pip.
+
 Copy
 
     
     
     pip3 install oci
+
+The Secrets Manager oracle KSM module can be installed using dotnet nuget
+package manager.
 
 Copy
 
@@ -801,11 +653,68 @@ Copy
     
     dotnet add package Keeper.SecretsManager.OracleKeyManagement
 
+The Secrets Manager oracle KSM module Integration can be installed using
+
 Copy
 
     
     
     go get github.com/keeper-security/secrets-manager-go/integrations/oracle
+
+###
+
+2\. Configure **Oracle KV** Connection
+
+Ensure that you have an Oracle Key Vault instance available, and you know its
+OCID (Oracle Cloud Identifier). By default, the `oci key management` library
+will use the default OCI configuration file (`~/.oci/config`)
+
+See the Oracle documentation for more information on setting up an Oracle
+Keys:
+
+Alternatively, You will need to add the correct configuration for your OCI
+environment, including the details for accessing Oracle Key Vault.
+
+The configuration file should look like this (replace with your actual
+details):
+
+[DEFAULT] user=ocid1.user.oc1..example_unique_id
+fingerprint=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx
+key_file=/path/to/your/private/api/key.pem
+tenancy=ocid1.tenancy.oc1..example_unique_id region=us-phoenix-1
+
+###
+
+3\. Add Oracle Key Vault Storage to Your Code
+
+Once Oracle connection has been configured, You can fetch the Key to encrypt /
+decrypt KSM configuration using integration and you need to tell the Secrets
+Manager SDK to utilize the KMS as storage.
+
+###
+
+Using **Oracle Key Vault Integration**
+
+Once setup, the Secrets Manager Oracle Key Vault integration supports all
+Secrets Manager SDK functionality. Your code will need to be able to access
+the OCI Keys in order to manage the encryption and decryption of the KSM
+configuration file. **Using Specified Connection credentials**
+
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+Go
+
+To do this, create `OracleKeyValueStorage` instance and use this in
+`SecretManagerOptions` constructor.
+
+The `OracleKeyValueStorage` will require the name of the Secrets Manager
+configuration file with profile and configuration.
 
 Copy
 
@@ -848,6 +757,15 @@ Copy
     }
     
 
+To do this, use `OracleKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require an `Oracle config file location`, `Oracle
+configuration profile`(if there are multiple profile configurations) and the
+`Oracle KMS Crypto endpoint` , `Oracle KMS Management endpoint` as well as the
+name of the `Secrets Manager configuration file` which will be encrypted by
+Oracle KMS.
+
 Copy
 
     
@@ -876,6 +794,14 @@ Copy
         getKeeperRecordsOCI();
     
 
+To do this, use `OracleKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require a OCI Key ID, key version Id, KMS Crypto endpoint,
+KMS management endpoint, oracle config file location, configuration profile as
+well as the name of the Secrets Manager configuration file which will be
+encrypted by Oracle KMS and OCI session configuration shown below.
+
 Copy
 
     
@@ -896,6 +822,14 @@ Copy
     all_records = secrets_manager.get_secrets()
     first_record = all_records[0]
     print(first_record)
+
+To do this, use `OracleKeyValueStorage` as your Secrets Manager storage in the
+`SecretsManager` constructor.
+
+The storage will require a OCI Key ID, key version Id, KMS Crypto endpoint,
+KMS management endpoint, oracle config file location, configuration profile as
+well as the name of the Secrets Manager configuration file which will be
+encrypted by Oracle KMS and OCI session configuration shown below.
 
 Copy
 
@@ -956,6 +890,22 @@ Copy
     	}
     }
 
+To do this, use `NewOracleKeyValueStorage` as your Secrets Manager storage in
+the `SecretsManager` constructor.
+
+The NewOracleKeyVaultStorage requires the following parameters to encrypt the
+KSM configuration using Oracle Vault:
+
+`ksmConfigFileName` : The file name of KSM configuration.
+
+`keyConfig` : Provide oracle key credentials `KeyID` and `KeyVersionID`.
+
+`oracleConfig` : Provide oracle credentials `VaultManagementEndpoint`,
+`VaultCryptoEndpoint`.
+
+By default, the oci-keymanagement library will use the **default OCI
+configuration file** (`~/.oci/config`).
+
 Copy
 
     
@@ -1003,6 +953,27 @@ Copy
     	}
     
     }
+
+##
+
+Additional Options
+
+###
+
+Change Key
+
+We can change key that is used for encrypting the KSM configuration, examples
+below show the code needed to use it
+
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
 
 Copy
 
@@ -1060,6 +1031,25 @@ Copy
     		}
     	isChanged, err := cfg.ChangeKey(updatedKeyConfig, nil)
 
+###
+
+Decrypt Config
+
+We can decrypt the config if current implementation is to be migrated onto a
+different cloud or if you want your raw credentials back. The function accepts
+a boolean which when set to true will save the decrypted configuration to file
+and if it is false, will just return decrypted configuration.
+
+Java
+
+JavaScript
+
+Python
+
+.Net
+
+GoLang
+
 Copy
 
     
@@ -1106,27 +1096,37 @@ Copy
     // Pass true if you want to save decryptconfig in ksm config file, else pass false.
     decryptedConfig, err := cfg.DecryptConfig(true) 
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [Integrations](/en/keeperpam/secrets-manager/integrations)
+Support the
 
-# Oracle Key Vault Encryption
+Required Oracle packages: ,  and .
 
-Protect Secrets Manager connection details with Oracle Key Vault
+OCI Key needs `ENCRYPT` and `DECRYPT` .
 
-[PreviousOctopus Deploy](/en/keeperpam/secrets-manager/integrations/octopus-
-deploy)[NextPowerShell Plugin](/en/keeperpam/secrets-
-manager/integrations/powershell-plugin)
+Supports the
 
-  * Features
-  * Prerequisites
-  * Setup
-  * 1\. Install Module
-  * 2\. Configure Oracle KV Connection
-  * 3\. Add Oracle Key Vault Storage to Your Code
-  * Using Oracle Key Vault Integration
-  * Additional Options
-  * Change Key
-  * Decrypt Config
+Requires the  package from OCI SDK.
+
+OCI KMS Key needs `ENCRYPT` and `DECRYPT` .
+
+Supports the
+
+Requires `oci`
+
+User credentials to be used will need to have key vault
+
+Supports the .
+
+Requires .
+
+Requires `Encrypt` and `Decrypt` .
+
+Supports the
+
+Requires the package from OCI SDK.
+
+You're ready to use the KSM integration
+
+Check out the  for more examples and functionality
 
 👍
 

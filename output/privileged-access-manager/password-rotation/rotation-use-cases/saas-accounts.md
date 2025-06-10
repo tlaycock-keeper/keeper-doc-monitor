@@ -428,29 +428,12 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Example Post-Rotation Scripts
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=JoNKLrllkK3VE7Y3ogdb&only=yes&limit=100)
 
-  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
-  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
-  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
-
-# Custom Scripts
-
-Rotation of passwords for SaaS accounts or REST API endpoints using custom
-scripts
-
-[PreviousSaaS Rotation Plugins](/en/keeperpam/privileged-access-
-manager/password-rotation/rotation-use-cases/saas-rotation-plugins)[NextOkta
-User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
-cases/saas-accounts/okta-user)
-
-Last updated 12 days ago
+Last updated 13 days ago
 
 Was this helpful?
 
@@ -468,6 +451,23 @@ The new method of custom rotations is using Keeper's new  capability.
 Example Post-Rotation Scripts
 
   *   *   *   *   * 
+
+  1. [Privileged Access Manager](/en/keeperpam/privileged-access-manager)
+  2. [Password Rotation](/en/keeperpam/privileged-access-manager/password-rotation)
+  3. [Rotation Use Cases](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-cases)
+
+# Custom Scripts
+
+Rotation of passwords for SaaS accounts or REST API endpoints using custom
+scripts
+
+[PreviousSaaS Rotation Plugins](/en/keeperpam/privileged-access-
+manager/password-rotation/rotation-use-cases/saas-rotation-plugins)[NextOkta
+User](/en/keeperpam/privileged-access-manager/password-rotation/rotation-use-
+cases/saas-accounts/okta-user)
+
+  * Overview
+  * Example Post-Rotation Scripts
 
 [SaaS Rotation](/en/keeperpam/privileged-access-manager/password-
 rotation/rotation-use-cases/saas-rotation-plugins)

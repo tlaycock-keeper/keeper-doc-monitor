@@ -617,7 +617,7 @@ manager/password-rotation/post-rotation-scripts)[NextAttaching
 Scripts](/en/keeperpam/privileged-access-manager/password-rotation/post-
 rotation-scripts/attaching-post-rotation-scripts-to-records)
 
-Last updated 3 months ago
+Last updated 4 months ago
 
 Was this helpful?
 

@@ -396,36 +396,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview 
@@ -460,6 +430,36 @@ Last updated 3 months ago
 
 Was this helpful?
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ##
 
 Overview
@@ -475,7 +475,9 @@ When the Role-based Enforcement Policies are activated from the Keeper Admin
 Console, those designated users can work with KeeperPAM functionality directly
 with the vault.
 
-  *   * 
+  * [Accessing the KeeperPAM Console and Vault](/en/keeperpam/privileged-access-manager/setup-steps)
+
+  * [Activating Enforcement Policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-policies)
 
 * * *
 
@@ -529,6 +531,12 @@ At the Shared Folder level, both human users and applications can be assigned
 with access rights. This allows least privilege enforcement across employees
 and machines.
 
+The fastest way to understand the relationship between records, folders,
+applications and configurations is using the [Quick Start
+Wizard](/en/keeperpam/privileged-access-manager/quick-start-sandbox). This
+wizard instantly creates a sandbox environment where you can work with the
+different resources and vault records.
+
 * * *
 
 ###
@@ -550,7 +558,7 @@ the vault. An example of an Application might be "Azure DevOps Pipeline" or
 
 For more information on Applications:
 
-  * 
+  * [Applications](/en/keeperpam/privileged-access-manager/getting-started/applications)
 
 * * *
 
@@ -567,7 +575,7 @@ interface.
 
 For more information on Devices:
 
-  * 
+  * [Devices](/en/keeperpam/privileged-access-manager/getting-started/devices)
 
 * * *
 
@@ -587,7 +595,7 @@ may deploy 500 Keeper Gateways.
 The architecture of the Keeper Gateway deployments is based on your use case
 and can be reviewed with our implementation team.
 
-  * 
+  * [Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
 
 * * *
 
@@ -608,7 +616,7 @@ We recommend defining only **one** Configuration for each Gateway.
 
 More information about PAM Configuration records:
 
-  * 
+  * [PAM Configuration](/en/keeperpam/privileged-access-manager/getting-started/pam-configuration)
 
 * * *
 
@@ -629,12 +637,24 @@ PAM Record Type
 
 Supported Assets
 
+[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-machine)
+
 Windows, Linux, macOS devices, VMs, EC2 instances, Azure VMs, Network devices
 and other operating systems.
 
+[PAM Database ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-database)
+
 MySQL, PostgreSQL, SQL Server, MongoDB, MariaDB, Oracle
 
+[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
+resources/pam-directory)
+
 Active Directory, Azure AD, OpenLDAP
+
+[PAM Remote Browser ](/en/keeperpam/privileged-access-manager/getting-
+started/pam-resources/pam-remote-browser)
 
 Web-based Applications, self-hosted apps, cloud apps, any http or https
 target.
@@ -658,7 +678,7 @@ A PAM User record can be configured for on-demand and automatic rotation.
 
 More information on PAM Users is found here:
 
-  * 
+  * [PAM Users](/en/keeperpam/privileged-access-manager/getting-started/pam-resources/pam-user)
 
 * * *
 
@@ -669,57 +689,15 @@ Activating PAM Features
 Now that you understand the basic structure of the vault, activating and
 utilizing PAM features is described in the below sections.
 
-  *   *   *   *   * 
+  * [Password Rotation](/en/keeperpam/secrets-manager/password-rotation)
 
-The fastest way to understand the relationship between records, folders,
-applications and configurations is using the . This wizard instantly creates a
-sandbox environment where you can work with the different resources and vault
-records.
+  * [Connections](/en/keeperpam/privileged-access-manager/connections)
 
-[Accessing the KeeperPAM Console and Vault](/en/keeperpam/privileged-access-
-manager/setup-steps)
+  * [Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
 
-[Activating Enforcement Policies](/en/keeperpam/privileged-access-
-manager/getting-started/enforcement-policies)
+  * [Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-browser-isolation)
 
-[Quick Start Wizard](/en/keeperpam/privileged-access-manager/quick-start-
-sandbox)
-
-[Applications](/en/keeperpam/privileged-access-manager/getting-
-started/applications)
-
-[Devices](/en/keeperpam/privileged-access-manager/getting-started/devices)
-
-[Gateways](/en/keeperpam/privileged-access-manager/getting-started/gateways)
-
-[PAM Configuration](/en/keeperpam/privileged-access-manager/getting-
-started/pam-configuration)
-
-[PAM Users](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-user)
-
-[Password Rotation](/en/keeperpam/secrets-manager/password-rotation)
-
-[Connections](/en/keeperpam/privileged-access-manager/connections)
-
-[Tunnels](/en/keeperpam/privileged-access-manager/tunnels)
-
-[Remote Browser Isolation](/en/keeperpam/privileged-access-manager/remote-
-browser-isolation)
-
-[Discovery](/en/keeperpam/privileged-access-manager/discovery)
-
-[PAM Machine ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-machine)
-
-[PAM Database ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-database)
-
-[PAM Directory ](/en/keeperpam/privileged-access-manager/getting-started/pam-
-resources/pam-directory)
-
-[PAM Remote Browser ](/en/keeperpam/privileged-access-manager/getting-
-started/pam-resources/pam-remote-browser)
+  * [Discovery](/en/keeperpam/privileged-access-manager/discovery)
 
 Typical Folder Setup for KeeperPAM
 

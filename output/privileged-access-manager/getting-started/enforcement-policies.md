@@ -396,36 +396,6 @@ KeeperPAM and Secrets Manager
 [Powered by
 GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=-MJXOXEifAmpyvNVL1to)
 
-#### Company
-
-  * [Keeper Home](https://www.keepersecurity.com/)
-  * [About Us](https://www.keepersecurity.com/about.html)
-  * [Careers](https://www.keepersecurity.com/jobs.html)
-  * [Security](https://www.keepersecurity.com/security.html)
-
-#### Support
-
-  * [Help Center](https://www.keepersecurity.com/support.html)
-  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
-  * [System Status](https://statuspage.keeper.io/)
-  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
-
-#### Solutions
-
-  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
-  * [Business Password Management](https://www.keepersecurity.com/business.html)
-  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
-  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
-
-#### Pricing
-
-  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
-  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
-  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
-  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
-
-© 2025 Keeper Security, Inc.
-
 On this page
 
   * Overview
@@ -461,6 +431,36 @@ Last updated 3 months ago
 
 Was this helpful?
 
+#### Company
+
+  * [Keeper Home](https://www.keepersecurity.com/)
+  * [About Us](https://www.keepersecurity.com/about.html)
+  * [Careers](https://www.keepersecurity.com/jobs.html)
+  * [Security](https://www.keepersecurity.com/security.html)
+
+#### Support
+
+  * [Help Center](https://www.keepersecurity.com/support.html)
+  * [Contact Sales](https://www.keepersecurity.com/contact.html?t=b&r=sales)
+  * [System Status](https://statuspage.keeper.io/)
+  * [Terms of Use](https://www.keepersecurity.com/termsofuse.html)
+
+#### Solutions
+
+  * [Enterprise Password Management](https://www.keepersecurity.com/enterprise.html)
+  * [Business Password Management](https://www.keepersecurity.com/business.html)
+  * [Privileged Access Management](https://www.keepersecurity.com/privileged-access-management/)
+  * [Public Sector](https://www.keepersecurity.com/government-cloud/)
+
+#### Pricing
+
+  * [Business and Enterprise](https://www.keepersecurity.com/pricing/business-and-enterprise.html)
+  * [Personal and Family](https://www.keepersecurity.com/pricing/personal-and-family.html)
+  * [Student](https://www.keepersecurity.com/student-discount-50off.html)
+  * [Military and Medical](https://www.keepersecurity.com/id-me-verification.html)
+
+© 2025 Keeper Security, Inc.
+
 ##
 
 Overview
@@ -482,7 +482,7 @@ From the Admin Console, enable the corresponding PAM Enforcement Policies.
 
   * Go to **Enforcement Policies** and open the "**Privileged Access Manager** " section.
 
-  * 
+  * Enable all the [PAM enforcement policies](/en/keeperpam/privileged-access-manager/getting-started/enforcement-policies) to use the new features.
 
 ##
 
@@ -502,6 +502,12 @@ Can create applications and manage secrets
 
 Allow users to create and manage KSM application
 
+Copy
+
+    
+    
+    ALLOW_SECRETS_MANAGER
+
 ###
 
 Keeper Gateway
@@ -515,6 +521,12 @@ Commander CLI
 Can create, deploy, and manage Keeper Gateways
 
 Allow users to create, setup, and manage Keeper Gateways
+
+Copy
+
+    
+    
+    ALLOW_PAM_GATEWAY
 
 ###
 
@@ -531,9 +543,21 @@ Can configure rotation settings
 Allow users to configure Rotation settings on PAM User and PAM Configuration
 Record Types
 
+Copy
+
+    
+    
+    ALLOW_CONFIGURE_ROTATION_SETTINGS
+
 Can rotate credentials
 
 Allow users to rotate credentials on PAM User Record Types
+
+Copy
+
+    
+    
+    ALLOW_ROTATE_CREDENTIALS
 
 ###
 
@@ -550,14 +574,32 @@ Can configure connection and session recording
 Allow users to configure Connection and Session Recordings settings on PAM
 Machine, PAM Directory, PAM Database and PAM Configuration Record Types
 
+Copy
+
+    
+    
+    ALLOW_CONFIGURE_PAM_CLOUD_CONNECTION_SETTINGS
+
 Can launch connections
 
 Allow users to launch connections on PAM Machine, PAM Directory, PAM Database
 Record Types
 
+Copy
+
+    
+    
+    ALLOW_LAUNCH_PAM_ON_CLOUD_CONNECTION
+
 Can view session recordings
 
 Allow users to view Session Recordings
+
+Copy
+
+    
+    
+    ALLOW_VIEW_KCM_RECORDINGS
 
 ###
 
@@ -574,10 +616,22 @@ Can configure tunnel settings
 Allow users to configure Tunnel settings on PAM Machine, PAM Directory, PAM
 Database and PAM Configuration Record Types
 
+Copy
+
+    
+    
+    ALLOW_CONFIGURE_PAM_TUNNELING_SETTINGS
+
 Can start tunnels
 
 Allow users to start tunnels on PAM Machine, PAM Directory, PAM Database
 Record Types
+
+Copy
+
+    
+    
+    ALLOW_LAUNCH_PAM_TUNNELS
 
 ###
 
@@ -594,13 +648,31 @@ Can configure remote browsing and session recording
 Allow users to configure Remote Browser and Session Recordings settings on PAM
 Remote Browsing and Configuration Record Types
 
+Copy
+
+    
+    
+    ALLOW_CONFIGURE_RBI
+
 Can launch remote browsing
 
 Allow users to launch remote browsing on PAM Remote Browsing Record Types
 
+Copy
+
+    
+    
+    ALLOW_LAUNCH_RBI
+
 Can view RBI session recordings
 
 Allow users to view RBI Session Recordings
+
+Copy
+
+    
+    
+    ALLOW_VIEW_RBI_RECORDINGS
 
 ###
 
@@ -619,6 +691,12 @@ Can run discovery
 
 Allow users to run discovery
 
+Copy
+
+    
+    
+    ALLOW_PAM_DISCOVERY
+
 ###
 
 Legacy Policies
@@ -636,9 +714,19 @@ Legacy allow rotation
 
 Allow users to perform password rotation
 
+Copy
+
+    
+    
+    ALLOW_PAM_ROTATION
+
 ###
 
 Commander CLI
+
+The [Keeper Commander](/en/keeperpam/commander-cli/overview) CLI `enterprise-
+role` command can be used to set these policies through automation. The list
+of policies related to PAM functionality is listed below.
 
 Copy
 
@@ -658,100 +746,6 @@ Copy
     enterprise-role ROLE_ID --enforcement "ALLOW_CONFIGURE_RBI:True"
     enterprise-role ROLE_ID --enforcement "ALLOW_VIEW_KCM_RECORDINGS:True"
     enterprise-role ROLE_ID --enforcement "ALLOW_VIEW_RBI_RECORDINGS:True"
-
-Enable all the  to use the new features.
-
-The  CLI `enterprise-role` command can be used to set these policies through
-automation. The list of policies related to PAM functionality is listed below.
-
-Copy
-
-    
-    
-    ALLOW_SECRETS_MANAGER
-
-Copy
-
-    
-    
-    ALLOW_PAM_GATEWAY
-
-Copy
-
-    
-    
-    ALLOW_CONFIGURE_ROTATION_SETTINGS
-
-Copy
-
-    
-    
-    ALLOW_ROTATE_CREDENTIALS
-
-Copy
-
-    
-    
-    ALLOW_CONFIGURE_PAM_CLOUD_CONNECTION_SETTINGS
-
-Copy
-
-    
-    
-    ALLOW_LAUNCH_PAM_ON_CLOUD_CONNECTION
-
-Copy
-
-    
-    
-    ALLOW_VIEW_KCM_RECORDINGS
-
-Copy
-
-    
-    
-    ALLOW_CONFIGURE_PAM_TUNNELING_SETTINGS
-
-Copy
-
-    
-    
-    ALLOW_LAUNCH_PAM_TUNNELS
-
-Copy
-
-    
-    
-    ALLOW_CONFIGURE_RBI
-
-Copy
-
-    
-    
-    ALLOW_LAUNCH_RBI
-
-Copy
-
-    
-    
-    ALLOW_VIEW_RBI_RECORDINGS
-
-Copy
-
-    
-    
-    ALLOW_PAM_DISCOVERY
-
-Copy
-
-    
-    
-    ALLOW_PAM_ROTATION
-
-[PAM enforcement policies](/en/keeperpam/privileged-access-manager/getting-
-started/enforcement-policies)
-
-[Keeper Commander](/en/keeperpam/commander-cli/overview)
 
 ![](https://docs.keeper.io/~gitbook/image?url=https%3A%2F%2F762006384-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-
 x-

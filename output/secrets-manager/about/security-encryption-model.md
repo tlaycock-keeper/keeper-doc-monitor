@@ -428,25 +428,14 @@ GitBook](https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_ca
 
 On this page
 
-  * Overview
-  * Client Device Configuration File
-  * Configuration File Fields
-  * Authentication and Encryption
-  * Protecting Access through IP Lockdown
-  * Additional Information
-  * Vulnerability Disclosure Program
-
 Was this helpful?
 
 [Export as
 PDF](/en/keeperpam/~gitbook/pdf?page=-McBFzIrCaxLyFcdKB7u&only=yes&limit=100)
 
-  1. [Secrets Manager](/en/keeperpam/secrets-manager)
-  2. [About KSM](/en/keeperpam/secrets-manager/about)
+Last updated 5 months ago
 
-# Security & Encryption Model
-
-Keeper Secret Manager Security and Encryption Model
+Was this helpful?
 
 ###
 
@@ -463,6 +452,68 @@ Client Device Configuration File
 The local configuration file (e.g. keeper.ini) for the `ksm` application
 contains the following format:
 
+This file should be protected on your local filesystem. It contains keys can
+authenticate with the Keeper API and decrypt secrets that have been explicitly
+associated with the Application and Client Device.
+
+###
+
+Configuration File Fields
+
+###
+
+Authentication and Encryption
+
+The Client Device only authenticates with the hashed One Time Access Token
+**one time**. The client signs the payload and registers a Client Device
+Public Key with the server on the first authentication. After the first
+authentication, subsequent requests are signed with the Client Device Private
+Key.
+
+API requests to the Keeper Cloud are sent with a Client Device Identifier and
+a request body that is signed with the Client Device Private Key. The server
+checks the ECDSA signature of the request for the given Client Device
+Identifier using the Client Public Key of the device.
+
+The Client Device decrypts the ciphertext response from the server with the
+Application Private Key, which decrypts the Record Keys and Shared Folder
+Keys. The Shared Folder Keys decrypt the Record Keys, and the Record Keys
+decrypt the individual Record secrets.
+
+###
+
+Protecting Access through IP Lockdown
+
+By default, when creating a Client Device profile, IP lockdown is enabled.
+
+For example:
+
+The client which initializes using this token will be locked on IP. To disable
+IP lockdown, an additional parameter must be specified, for example:
+
+It is recommended to allow IP lockdown, unless you are deploying to an
+environment which has a dynamic WAN IP.
+
+###
+
+Additional Information
+
+Keeper utilizes best-in-class security with a Zero-Knowledge security
+architecture and Zero-Trust framework. Technical documentation about Keeper's
+Zero-Knowledge encryption model can be found at the links below:
+
+Keeper is SOC 2 Type 2, ISO27001 certified. Customers may request access to
+our certification reports and technical architecture documentation under
+mutual NDA.
+
+###
+
+Vulnerability Disclosure Program
+
+Keeper has partnered with Bugcrowd to manage our vulnerability disclosure
+program. Please submit reports through  or send an email to
+security@keepersecurity.com.
+
 Copy
 
     
@@ -477,14 +528,6 @@ Copy
     
     [_config]
     active_profile = _default
-
-This file should be protected on your local filesystem. It contains keys can
-authenticate with the Keeper API and decrypt secrets that have been explicitly
-associated with the Application and Client Device.
-
-###
-
-Configuration File Fields
 
 Config Name
 
@@ -515,34 +558,6 @@ serverpublickeyid
 
 Identifier of the Keeper API public key for transmission wrapper
 
-###
-
-Authentication and Encryption
-
-The Client Device only authenticates with the hashed One Time Access Token
-**one time**. The client signs the payload and registers a Client Device
-Public Key with the server on the first authentication. After the first
-authentication, subsequent requests are signed with the Client Device Private
-Key.
-
-API requests to the Keeper Cloud are sent with a Client Device Identifier and
-a request body that is signed with the Client Device Private Key. The server
-checks the ECDSA signature of the request for the given Client Device
-Identifier using the Client Public Key of the device.
-
-The Client Device decrypts the ciphertext response from the server with the
-Application Private Key, which decrypts the Record Keys and Shared Folder
-Keys. The Shared Folder Keys decrypt the Record Keys, and the Record Keys
-decrypt the individual Record secrets.
-
-###
-
-Protecting Access through IP Lockdown
-
-By default, when creating a Client Device profile, IP lockdown is enabled.
-
-For example:
-
 Copy
 
     
@@ -557,44 +572,29 @@ Copy
     Token Expires On: 2021-08-17 21:00:28
     App Access Expires on: Never
 
-The client which initializes using this token will be locked on IP. To disable
-IP lockdown, an additional parameter must be specified, for example:
-
 Copy
 
     
     
     My Vault> secrets-manager client add --app MyApplication --unlock-ip
 
-It is recommended to allow IP lockdown, unless you are deploying to an
-environment which has a dynamic WAN IP.
+  1. [Secrets Manager](/en/keeperpam/secrets-manager)
+  2. [About KSM](/en/keeperpam/secrets-manager/about)
 
-###
+# Security & Encryption Model
 
-Additional Information
-
-Keeper utilizes best-in-class security with a Zero-Knowledge security
-architecture and Zero-Trust framework. Technical documentation about Keeper's
-Zero-Knowledge encryption model can be found at the links below:
-
-Keeper is SOC 2 Type 2, ISO27001 certified. Customers may request access to
-our certification reports and technical architecture documentation under
-mutual NDA.
-
-###
-
-Vulnerability Disclosure Program
+Keeper Secret Manager Security and Encryption Model
 
 [PreviousTerminology](/en/keeperpam/secrets-manager/about/terminology)[NextOne
 Time Access Token](/en/keeperpam/secrets-manager/about/one-time-token)
 
-Last updated 5 months ago
-
-Was this helpful?
-
-Keeper has partnered with Bugcrowd to manage our vulnerability disclosure
-program. Please submit reports through  or send an email to
-security@keepersecurity.com.
+  * Overview
+  * Client Device Configuration File
+  * Configuration File Fields
+  * Authentication and Encryption
+  * Protecting Access through IP Lockdown
+  * Additional Information
+  * Vulnerability Disclosure Program
 
 [Keeper Encryption Model](https://docs.keeper.io/enterprise-guide/keeper-
 encryption-model)
